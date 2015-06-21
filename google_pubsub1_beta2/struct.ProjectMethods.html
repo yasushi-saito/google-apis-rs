@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `ProjectMethods` struct in crate `google_pubsub1_beta2`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, ProjectMethods">
+
+    <title>google_pubsub1_beta2::ProjectMethods - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../main.css">
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <section class="sidebar">
+        
+        <p class='location'><a href='index.html'>google_pubsub1_beta2</a></p><script>window.sidebarCurrent = {name: 'ProjectMethods', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </section>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press 'S' to search, '?' for more options..."
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content struct">
+<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_pubsub1_beta2</a>::<wbr><a class='struct' href=''>ProjectMethods</a><wbr></span><span class='out-of-band'><span id='render-detail'>
+            <a id="collapse-all" href="#">[-]</a>&nbsp;<a id="expand-all" href="#">[+]</a>
+        </span><a id='src-14270' href='../src/google_pubsub1_beta2///home/byron/dev/rust/google-apis-rs/target/debug/build/google-pubsub1_beta2-842305c227820015/out/lib.rs.html#3936-3938'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct ProjectMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
+    // some fields omitted
+}</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>project</em> resources.
+It is not used directly, but through the <code>Pubsub</code> hub.</p>
+
+<h1 id="example" class='section-header'><a
+                           href="#example">Example</a></h1>
+<p>Instantiate a resource builder</p>
+<pre id='rust-example-rendered' class='rust '>
+<span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>hyper</span>;
+<span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>yup_oauth2</span> <span class='kw'>as</span> <span class='ident'>oauth2</span>;
+<span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>google_pubsub1_beta2</span> <span class='kw'>as</span> <span class='ident'>pubsub1_beta2</span>;
+ 
+<span class='kw'>use</span> <span class='ident'>std</span>::<span class='ident'>default</span>::<span class='ident'>Default</span>;
+<span class='kw'>use</span> <span class='ident'>oauth2</span>::{<span class='ident'>Authenticator</span>, <span class='ident'>DefaultAuthenticatorDelegate</span>, <span class='ident'>ApplicationSecret</span>, <span class='ident'>MemoryStorage</span>};
+<span class='kw'>use</span> <span class='ident'>pubsub1_beta2</span>::<span class='ident'>Pubsub</span>;
+ 
+<span class='kw'>let</span> <span class='ident'>secret</span>: <span class='ident'>ApplicationSecret</span> <span class='op'>=</span> <span class='ident'>Default</span>::<span class='ident'>default</span>();
+<span class='kw'>let</span> <span class='ident'>auth</span> <span class='op'>=</span> <span class='ident'>Authenticator</span>::<span class='ident'>new</span>(<span class='kw-2'>&amp;</span><span class='ident'>secret</span>, <span class='ident'>DefaultAuthenticatorDelegate</span>,
+                              <span class='ident'>hyper</span>::<span class='ident'>Client</span>::<span class='ident'>new</span>(),
+                              <span class='op'>&lt;</span><span class='ident'>MemoryStorage</span> <span class='kw'>as</span> <span class='ident'>Default</span><span class='op'>&gt;</span>::<span class='ident'>default</span>(), <span class='prelude-val'>None</span>);
+<span class='kw'>let</span> <span class='kw-2'>mut</span> <span class='ident'>hub</span> <span class='op'>=</span> <span class='ident'>Pubsub</span>::<span class='ident'>new</span>(<span class='ident'>hyper</span>::<span class='ident'>Client</span>::<span class='ident'>new</span>(), <span class='ident'>auth</span>);
+<span class='comment'>// Usually you wouldn&#39;t bind this to a variable, but keep calling *CallBuilders*</span>
+<span class='comment'>// like `subscriptions_acknowledge(...)`, `subscriptions_create(...)`, `subscriptions_delete(...)`, `subscriptions_get(...)`, `subscriptions_list(...)`, `subscriptions_modify_ack_deadline(...)`, `subscriptions_modify_push_config(...)`, `subscriptions_pull(...)`, `topics_create(...)`, `topics_delete(...)`, `topics_get(...)`, `topics_list(...)`, `topics_publish(...)` and `topics_subscriptions_list(...)`</span>
+<span class='comment'>// to build up your call.</span>
+<span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>projects</span>();
+</pre>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_pubsub1_beta2/struct.ProjectMethods.html' title='google_pubsub1_beta2::ProjectMethods'>ProjectMethods</a>&lt;'a, C, A&gt;</code></h3><div class='impl-items'><h4 id='method.topics_list' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.topics_list' class='fnname'>topics_list</a>(&amp;self, project: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_pubsub1_beta2/struct.ProjectTopicListCall.html' title='google_pubsub1_beta2::ProjectTopicListCall'>ProjectTopicListCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Lists matching topics.</p>
+
+<h1 id="arguments" class='section-header'><a
+                           href="#arguments">Arguments</a></h1>
+<ul>
+<li><code>project</code> - No description provided.</li>
+</ul>
+</div><h4 id='method.subscriptions_pull' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.subscriptions_pull' class='fnname'>subscriptions_pull</a>(&amp;self, request: <a class='struct' href='../google_pubsub1_beta2/struct.PullRequest.html' title='google_pubsub1_beta2::PullRequest'>PullRequest</a>, subscription: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_pubsub1_beta2/struct.ProjectSubscriptionPullCall.html' title='google_pubsub1_beta2::ProjectSubscriptionPullCall'>ProjectSubscriptionPullCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Pulls messages from the server. Returns an empty list if there are no messages available in the backlog. The server may return UNAVAILABLE if there are too many concurrent pull requests pending for the given subscription.</p>
+
+<h1 id="arguments" class='section-header'><a
+                           href="#arguments">Arguments</a></h1>
+<ul>
+<li><code>request</code> - No description provided.</li>
+<li><code>subscription</code> - No description provided.</li>
+</ul>
+</div><h4 id='method.topics_create' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.topics_create' class='fnname'>topics_create</a>(&amp;self, request: <a class='struct' href='../google_pubsub1_beta2/struct.Topic.html' title='google_pubsub1_beta2::Topic'>Topic</a>, name: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_pubsub1_beta2/struct.ProjectTopicCreateCall.html' title='google_pubsub1_beta2::ProjectTopicCreateCall'>ProjectTopicCreateCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Creates the given topic with the given name.</p>
+
+<h1 id="arguments" class='section-header'><a
+                           href="#arguments">Arguments</a></h1>
+<ul>
+<li><code>request</code> - No description provided.</li>
+<li><code>name</code> - No description provided.</li>
+</ul>
+</div><h4 id='method.topics_delete' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.topics_delete' class='fnname'>topics_delete</a>(&amp;self, topic: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_pubsub1_beta2/struct.ProjectTopicDeleteCall.html' title='google_pubsub1_beta2::ProjectTopicDeleteCall'>ProjectTopicDeleteCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Deletes the topic with the given name. Returns NOT_FOUND if the topic does not exist. After a topic is deleted, a new topic may be created with the same name; this is an entirely new topic with none of the old configuration or subscriptions. Existing subscriptions to this topic are not deleted.</p>
+
+<h1 id="arguments" class='section-header'><a
+                           href="#arguments">Arguments</a></h1>
+<ul>
+<li><code>topic</code> - No description provided.</li>
+</ul>
+</div><h4 id='method.subscriptions_modify_push_config' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.subscriptions_modify_push_config' class='fnname'>subscriptions_modify_push_config</a>(&amp;self, request: <a class='struct' href='../google_pubsub1_beta2/struct.ModifyPushConfigRequest.html' title='google_pubsub1_beta2::ModifyPushConfigRequest'>ModifyPushConfigRequest</a>, subscription: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_pubsub1_beta2/struct.ProjectSubscriptionModifyPushConfigCall.html' title='google_pubsub1_beta2::ProjectSubscriptionModifyPushConfigCall'>ProjectSubscriptionModifyPushConfigCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Modifies the PushConfig for a specified subscription. This may be used to change a push subscription to a pull one (signified by an empty PushConfig) or vice versa, or change the endpoint URL and other attributes of a push subscription. Messages will accumulate for delivery continuously through the call regardless of changes to the PushConfig.</p>
+
+<h1 id="arguments" class='section-header'><a
+                           href="#arguments">Arguments</a></h1>
+<ul>
+<li><code>request</code> - No description provided.</li>
+<li><code>subscription</code> - No description provided.</li>
+</ul>
+</div><h4 id='method.topics_publish' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.topics_publish' class='fnname'>topics_publish</a>(&amp;self, request: <a class='struct' href='../google_pubsub1_beta2/struct.PublishRequest.html' title='google_pubsub1_beta2::PublishRequest'>PublishRequest</a>, topic: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_pubsub1_beta2/struct.ProjectTopicPublishCall.html' title='google_pubsub1_beta2::ProjectTopicPublishCall'>ProjectTopicPublishCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Adds one or more messages to the topic. Returns NOT_FOUND if the topic does not exist.</p>
+
+<h1 id="arguments" class='section-header'><a
+                           href="#arguments">Arguments</a></h1>
+<ul>
+<li><code>request</code> - No description provided.</li>
+<li><code>topic</code> - No description provided.</li>
+</ul>
+</div><h4 id='method.topics_get' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.topics_get' class='fnname'>topics_get</a>(&amp;self, topic: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_pubsub1_beta2/struct.ProjectTopicGetCall.html' title='google_pubsub1_beta2::ProjectTopicGetCall'>ProjectTopicGetCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Gets the configuration of a topic.</p>
+
+<h1 id="arguments" class='section-header'><a
+                           href="#arguments">Arguments</a></h1>
+<ul>
+<li><code>topic</code> - No description provided.</li>
+</ul>
+</div><h4 id='method.subscriptions_modify_ack_deadline' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.subscriptions_modify_ack_deadline' class='fnname'>subscriptions_modify_ack_deadline</a>(&amp;self, request: <a class='struct' href='../google_pubsub1_beta2/struct.ModifyAckDeadlineRequest.html' title='google_pubsub1_beta2::ModifyAckDeadlineRequest'>ModifyAckDeadlineRequest</a>, subscription: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_pubsub1_beta2/struct.ProjectSubscriptionModifyAckDeadlineCall.html' title='google_pubsub1_beta2::ProjectSubscriptionModifyAckDeadlineCall'>ProjectSubscriptionModifyAckDeadlineCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Modifies the ack deadline for a specific message. This method is useful to indicate that more time is needed to process a message by the subscriber, or to make the message available for redelivery if the processing was interrupted.</p>
+
+<h1 id="arguments" class='section-header'><a
+                           href="#arguments">Arguments</a></h1>
+<ul>
+<li><code>request</code> - No description provided.</li>
+<li><code>subscription</code> - No description provided.</li>
+</ul>
+</div><h4 id='method.subscriptions_acknowledge' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.subscriptions_acknowledge' class='fnname'>subscriptions_acknowledge</a>(&amp;self, request: <a class='struct' href='../google_pubsub1_beta2/struct.AcknowledgeRequest.html' title='google_pubsub1_beta2::AcknowledgeRequest'>AcknowledgeRequest</a>, subscription: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_pubsub1_beta2/struct.ProjectSubscriptionAcknowledgeCall.html' title='google_pubsub1_beta2::ProjectSubscriptionAcknowledgeCall'>ProjectSubscriptionAcknowledgeCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Acknowledges the messages associated with the ack tokens in the AcknowledgeRequest. The Pub/Sub system can remove the relevant messages from the subscription. Acknowledging a message whose ack deadline has expired may succeed, but such a message may be redelivered later. Acknowledging a message more than once will not result in an error.</p>
+
+<h1 id="arguments" class='section-header'><a
+                           href="#arguments">Arguments</a></h1>
+<ul>
+<li><code>request</code> - No description provided.</li>
+<li><code>subscription</code> - No description provided.</li>
+</ul>
+</div><h4 id='method.subscriptions_delete' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.subscriptions_delete' class='fnname'>subscriptions_delete</a>(&amp;self, subscription: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_pubsub1_beta2/struct.ProjectSubscriptionDeleteCall.html' title='google_pubsub1_beta2::ProjectSubscriptionDeleteCall'>ProjectSubscriptionDeleteCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Deletes an existing subscription. All pending messages in the subscription are immediately dropped. Calls to Pull after deletion will return NOT_FOUND. After a subscription is deleted, a new one may be created with the same name, but the new one has no association with the old subscription, or its topic unless the same topic is specified.</p>
+
+<h1 id="arguments" class='section-header'><a
+                           href="#arguments">Arguments</a></h1>
+<ul>
+<li><code>subscription</code> - No description provided.</li>
+</ul>
+</div><h4 id='method.subscriptions_create' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.subscriptions_create' class='fnname'>subscriptions_create</a>(&amp;self, request: <a class='struct' href='../google_pubsub1_beta2/struct.Subscription.html' title='google_pubsub1_beta2::Subscription'>Subscription</a>, name: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_pubsub1_beta2/struct.ProjectSubscriptionCreateCall.html' title='google_pubsub1_beta2::ProjectSubscriptionCreateCall'>ProjectSubscriptionCreateCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Creates a subscription to a given topic for a given subscriber. If the subscription already exists, returns ALREADY_EXISTS. If the corresponding topic doesn&#39;t exist, returns NOT_FOUND. If the name is not provided in the request, the server will assign a random name for this subscription on the same project as the topic.</p>
+
+<h1 id="arguments" class='section-header'><a
+                           href="#arguments">Arguments</a></h1>
+<ul>
+<li><code>request</code> - No description provided.</li>
+<li><code>name</code> - No description provided.</li>
+</ul>
+</div><h4 id='method.subscriptions_get' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.subscriptions_get' class='fnname'>subscriptions_get</a>(&amp;self, subscription: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_pubsub1_beta2/struct.ProjectSubscriptionGetCall.html' title='google_pubsub1_beta2::ProjectSubscriptionGetCall'>ProjectSubscriptionGetCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Gets the configuration details of a subscription.</p>
+
+<h1 id="arguments" class='section-header'><a
+                           href="#arguments">Arguments</a></h1>
+<ul>
+<li><code>subscription</code> - No description provided.</li>
+</ul>
+</div><h4 id='method.topics_subscriptions_list' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.topics_subscriptions_list' class='fnname'>topics_subscriptions_list</a>(&amp;self, topic: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_pubsub1_beta2/struct.ProjectTopicSubscriptionListCall.html' title='google_pubsub1_beta2::ProjectTopicSubscriptionListCall'>ProjectTopicSubscriptionListCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Lists the name of the subscriptions for this topic.</p>
+
+<h1 id="arguments" class='section-header'><a
+                           href="#arguments">Arguments</a></h1>
+<ul>
+<li><code>topic</code> - No description provided.</li>
+</ul>
+</div><h4 id='method.subscriptions_list' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.subscriptions_list' class='fnname'>subscriptions_list</a>(&amp;self, project: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_pubsub1_beta2/struct.ProjectSubscriptionListCall.html' title='google_pubsub1_beta2::ProjectSubscriptionListCall'>ProjectSubscriptionListCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Lists matching subscriptions.</p>
+
+<h1 id="arguments" class='section-header'><a
+                           href="#arguments">Arguments</a></h1>
+<ul>
+<li><code>project</code> - No description provided.</li>
+</ul>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_pubsub1_beta2/trait.MethodsBuilder.html' title='google_pubsub1_beta2::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_pubsub1_beta2/struct.ProjectMethods.html' title='google_pubsub1_beta2::ProjectMethods'>ProjectMethods</a>&lt;'a, C, A&gt;</code></h3><div class='impl-items'></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <div id="help" class="hidden">
+        <div class="shortcuts">
+            <h1>Keyboard shortcuts</h1>
+            <dl>
+                <dt>?</dt>
+                <dd>Show this help dialog</dd>
+                <dt>S</dt>
+                <dd>Focus the search field</dd>
+                <dt>&larrb;</dt>
+                <dd>Move up in search results</dd>
+                <dt>&rarrb;</dt>
+                <dd>Move down in search results</dd>
+                <dt>&#9166;</dt>
+                <dd>Go to active search result</dd>
+            </dl>
+        </div>
+        <div class="infos">
+            <h1>Search tricks</h1>
+            <p>
+                Prefix searches with a type followed by a colon (e.g.
+                <code>fn:</code>) to restrict the search to a given type.
+            </p>
+            <p>
+                Accepted types are: <code>fn</code>, <code>mod</code>,
+                <code>struct</code>, <code>enum</code>,
+                <code>trait</code>, <code>typedef</code> (or
+                <code>tdef</code>).
+            </p>
+        </div>
+    </div>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "google_pubsub1_beta2";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../jquery.js"></script>
+    <script src="../main.js"></script>
+    
+    <script async src="../search-index.js"></script>
+</body>
+</html>

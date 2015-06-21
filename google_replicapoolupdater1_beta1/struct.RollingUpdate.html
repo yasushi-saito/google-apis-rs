@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `RollingUpdate` struct in crate `google_replicapoolupdater1_beta1`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, RollingUpdate">
+
+    <title>google_replicapoolupdater1_beta1::RollingUpdate - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../main.css">
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <section class="sidebar">
+        
+        <p class='location'><a href='index.html'>google_replicapoolupdater1_beta1</a></p><script>window.sidebarCurrent = {name: 'RollingUpdate', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </section>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press 'S' to search, '?' for more options..."
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content struct">
+<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_replicapoolupdater1_beta1</a>::<wbr><a class='struct' href=''>RollingUpdate</a><wbr></span><span class='out-of-band'><span id='render-detail'>
+            <a id="collapse-all" href="#">[-]</a>&nbsp;<a id="expand-all" href="#">[+]</a>
+        </span><a id='src-8356' href='../src/google_replicapoolupdater1_beta1///home/byron/dev/rust/google-apis-rs/target/debug/build/google-replicapoolupdater1_beta1-76e9941904bcc1e0/out/lib.rs.html#2189-2226'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct RollingUpdate {
+    pub status: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub self_link: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub kind: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub description: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub instance_group: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub instance_template: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub action_type: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub user: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub error: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_replicapoolupdater1_beta1/struct.RollingUpdateError.html' title='google_replicapoolupdater1_beta1::RollingUpdateError'>RollingUpdateError</a>&gt;,
+    pub policy: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_replicapoolupdater1_beta1/struct.RollingUpdatePolicy.html' title='google_replicapoolupdater1_beta1::RollingUpdatePolicy'>RollingUpdatePolicy</a>&gt;,
+    pub progress: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>&gt;,
+    pub creation_timestamp: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub id: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub status_message: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub instance_group_manager: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+}</pre><div class='docblock'><p>The following represents a resource describing a single update (rollout) of a group of instances to the given template.</p>
+
+<h1 id="activities" class='section-header'><a
+                           href="#activities">Activities</a></h1>
+<p>This type is used in activities, which are methods you may call on this type or where this type is involved in. 
+The list links the activity name, along with information about where it is used (one of <em>request</em> and <em>response</em>).</p>
+
+<ul>
+<li><a href="struct.RollingUpdatePauseCall.html">pause rolling updates</a> (none)</li>
+<li><a href="struct.RollingUpdateRollbackCall.html">rollback rolling updates</a> (none)</li>
+<li><a href="struct.RollingUpdateGetCall.html">get rolling updates</a> (response)</li>
+<li><a href="struct.RollingUpdateResumeCall.html">resume rolling updates</a> (none)</li>
+<li><a href="struct.RollingUpdateListCall.html">list rolling updates</a> (none)</li>
+<li><a href="struct.RollingUpdateInsertCall.html">insert rolling updates</a> (request)</li>
+<li><a href="struct.RollingUpdateListInstanceUpdateCall.html">list instance updates rolling updates</a> (none)</li>
+<li><a href="struct.RollingUpdateCancelCall.html">cancel rolling updates</a> (none)</li>
+</ul>
+</div><h2 class='fields'>Fields</h2>
+<table><tr><td id='structfield.status'><a class='stability Unmarked' title='No stability level'></a><code>status</code></td><td><div class='docblock'><p>[Output Only] Status of the update. Possible values are:
+- &quot;ROLLING_FORWARD&quot;: The update is going forward. 
+- &quot;ROLLING_BACK&quot;: The update is being rolled back. 
+- &quot;PAUSED&quot;: The update is temporarily paused (inactive). 
+- &quot;ROLLED_OUT&quot;: The update is finished, all instances have been updated successfully. 
+- &quot;ROLLED_BACK&quot;: The update is finished, all instances have been reverted to the previous template. 
+- &quot;CANCELLED&quot;: The update is paused and no longer can be resumed, undefined how many instances are running in which template.</p>
+</div></td></tr><tr><td id='structfield.self_link'><a class='stability Unmarked' title='No stability level'></a><code>self_link</code></td><td><div class='docblock'><p>[Output Only] The fully qualified URL for the resource.</p>
+</div></td></tr><tr><td id='structfield.kind'><a class='stability Unmarked' title='No stability level'></a><code>kind</code></td><td><div class='docblock'><p>[Output Only] Type of the resource.</p>
+</div></td></tr><tr><td id='structfield.description'><a class='stability Unmarked' title='No stability level'></a><code>description</code></td><td><div class='docblock'><p>An optional textual description of the resource; provided by the client when the resource is created.</p>
+</div></td></tr><tr><td id='structfield.instance_group'><a class='stability Unmarked' title='No stability level'></a><code>instance_group</code></td><td><div class='docblock'><p>Fully-qualified URL of an instance group being updated. Exactly one of instanceGroupManager and instanceGroup must be set.</p>
+</div></td></tr><tr><td id='structfield.instance_template'><a class='stability Unmarked' title='No stability level'></a><code>instance_template</code></td><td><div class='docblock'><p>Fully-qualified URL of an instance template to apply.</p>
+</div></td></tr><tr><td id='structfield.action_type'><a class='stability Unmarked' title='No stability level'></a><code>action_type</code></td><td><div class='docblock'><p>Specifies the action to take for each instance within the instance group. This can be RECREATE which will recreate each instance and is only available for managed instance groups. It can also be REBOOT which performs a soft reboot for each instance and is only available for regular (non-managed) instance groups.</p>
+</div></td></tr><tr><td id='structfield.user'><a class='stability Unmarked' title='No stability level'></a><code>user</code></td><td><div class='docblock'><p>[Output Only] User who requested the update, for example: <a href="mailto:user@example.com">user@example.com</a>.</p>
+</div></td></tr><tr><td id='structfield.error'><a class='stability Unmarked' title='No stability level'></a><code>error</code></td><td><div class='docblock'><p>[Output Only] Errors that occurred during the rolling update.</p>
+</div></td></tr><tr><td id='structfield.policy'><a class='stability Unmarked' title='No stability level'></a><code>policy</code></td><td><div class='docblock'><p>Parameters of the update process.</p>
+</div></td></tr><tr><td id='structfield.progress'><a class='stability Unmarked' title='No stability level'></a><code>progress</code></td><td><div class='docblock'><p>[Output Only] An optional progress indicator that ranges from 0 to 100. There is no requirement that this be linear or support any granularity of operations. This should not be used to guess at when the update will be complete. This number should be monotonically increasing as the update progresses.</p>
+</div></td></tr><tr><td id='structfield.creation_timestamp'><a class='stability Unmarked' title='No stability level'></a><code>creation_timestamp</code></td><td><div class='docblock'><p>[Output Only] Creation timestamp in RFC3339 text format.</p>
+</div></td></tr><tr><td id='structfield.id'><a class='stability Unmarked' title='No stability level'></a><code>id</code></td><td><div class='docblock'><p>[Output Only] Unique identifier for the resource; defined by the server.</p>
+</div></td></tr><tr><td id='structfield.status_message'><a class='stability Unmarked' title='No stability level'></a><code>status_message</code></td><td><div class='docblock'><p>[Output Only] An optional textual description of the current status of the update.</p>
+</div></td></tr><tr><td id='structfield.instance_group_manager'><a class='stability Unmarked' title='No stability level'></a><code>instance_group_manager</code></td><td><div class='docblock'><p>Fully-qualified URL of an instance group manager being updated. Exactly one of instanceGroupManager and instanceGroup must be set.</p>
+</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='../google_replicapoolupdater1_beta1/trait.RequestValue.html' title='google_replicapoolupdater1_beta1::RequestValue'>RequestValue</a> for <a class='struct' href='../google_replicapoolupdater1_beta1/struct.RollingUpdate.html' title='google_replicapoolupdater1_beta1::RollingUpdate'>RollingUpdate</a></code></h3><div class='impl-items'></div><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='../google_replicapoolupdater1_beta1/trait.Resource.html' title='google_replicapoolupdater1_beta1::Resource'>Resource</a> for <a class='struct' href='../google_replicapoolupdater1_beta1/struct.RollingUpdate.html' title='google_replicapoolupdater1_beta1::RollingUpdate'>RollingUpdate</a></code></h3><div class='impl-items'></div><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='../google_replicapoolupdater1_beta1/trait.ResponseResult.html' title='google_replicapoolupdater1_beta1::ResponseResult'>ResponseResult</a> for <a class='struct' href='../google_replicapoolupdater1_beta1/struct.RollingUpdate.html' title='google_replicapoolupdater1_beta1::RollingUpdate'>RollingUpdate</a></code></h3><div class='impl-items'></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_replicapoolupdater1_beta1/struct.RollingUpdate.html' title='google_replicapoolupdater1_beta1::RollingUpdate'>RollingUpdate</a></code></h3><div class='impl-items'><h4 id='method.fmt' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#method.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='http://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='http://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
+</div><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_replicapoolupdater1_beta1/struct.RollingUpdate.html' title='google_replicapoolupdater1_beta1::RollingUpdate'>RollingUpdate</a></code></h3><div class='impl-items'><h4 id='method.clone' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_replicapoolupdater1_beta1/struct.RollingUpdate.html' title='google_replicapoolupdater1_beta1::RollingUpdate'>RollingUpdate</a></code></h4>
+<h4 id='method.clone_from' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code></h4>
+</div><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_replicapoolupdater1_beta1/struct.RollingUpdate.html' title='google_replicapoolupdater1_beta1::RollingUpdate'>RollingUpdate</a></code></h3><div class='impl-items'><h4 id='method.default' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/default/trait.Default.html#method.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_replicapoolupdater1_beta1/struct.RollingUpdate.html' title='google_replicapoolupdater1_beta1::RollingUpdate'>RollingUpdate</a></code></h4>
+</div><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='../serde/de/trait.Deserialize.html' title='serde::de::Deserialize'>Deserialize</a> for <a class='struct' href='../google_replicapoolupdater1_beta1/struct.RollingUpdate.html' title='google_replicapoolupdater1_beta1::RollingUpdate'>RollingUpdate</a></code></h3><div class='impl-items'><h4 id='method.deserialize' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='../serde/de/trait.Deserialize.html#method.deserialize' class='fnname'>deserialize</a>&lt;__D&gt;(deserializer: &amp;mut __D) -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../google_replicapoolupdater1_beta1/struct.RollingUpdate.html' title='google_replicapoolupdater1_beta1::RollingUpdate'>RollingUpdate</a>, __D&gt; <span class='where'>where __D: <a class='trait' href='../serde/de/trait.Deserializer.html' title='serde::de::Deserializer'>Deserializer</a></span></code></h4>
+</div><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='../serde/ser/trait.Serialize.html' title='serde::ser::Serialize'>Serialize</a> for <a class='struct' href='../google_replicapoolupdater1_beta1/struct.RollingUpdate.html' title='google_replicapoolupdater1_beta1::RollingUpdate'>RollingUpdate</a></code></h3><div class='impl-items'><h4 id='method.serialize' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='../serde/ser/trait.Serialize.html#method.serialize' class='fnname'>serialize</a>&lt;__S&gt;(&amp;self, serializer: &amp;mut __S) -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, __S&gt; <span class='where'>where __S: <a class='trait' href='../serde/ser/trait.Serializer.html' title='serde::ser::Serializer'>Serializer</a></span></code></h4>
+</div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <div id="help" class="hidden">
+        <div class="shortcuts">
+            <h1>Keyboard shortcuts</h1>
+            <dl>
+                <dt>?</dt>
+                <dd>Show this help dialog</dd>
+                <dt>S</dt>
+                <dd>Focus the search field</dd>
+                <dt>&larrb;</dt>
+                <dd>Move up in search results</dd>
+                <dt>&rarrb;</dt>
+                <dd>Move down in search results</dd>
+                <dt>&#9166;</dt>
+                <dd>Go to active search result</dd>
+            </dl>
+        </div>
+        <div class="infos">
+            <h1>Search tricks</h1>
+            <p>
+                Prefix searches with a type followed by a colon (e.g.
+                <code>fn:</code>) to restrict the search to a given type.
+            </p>
+            <p>
+                Accepted types are: <code>fn</code>, <code>mod</code>,
+                <code>struct</code>, <code>enum</code>,
+                <code>trait</code>, <code>typedef</code> (or
+                <code>tdef</code>).
+            </p>
+        </div>
+    </div>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "google_replicapoolupdater1_beta1";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../jquery.js"></script>
+    <script src="../main.js"></script>
+    
+    <script async src="../search-index.js"></script>
+</body>
+</html>

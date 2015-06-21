@@ -1,0 +1,2181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `google_youtube3` crate.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, google_youtube3">
+
+    <title>google_youtube3 - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../main.css">
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <section class="sidebar">
+        
+        <p class='location'></p><script>window.sidebarCurrent = {name: 'google_youtube3', ty: 'mod', relpath: '../'};</script>
+    </section>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press 'S' to search, '?' for more options..."
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content mod">
+<h1 class='fqn'><span class='in-band'>Crate <a class='mod' href=''>google_youtube3</a><wbr></span><span class='out-of-band'><a href='stability.html'>[stability]</a> <span id='render-detail'>
+            <a id="collapse-all" href="#">[-]</a>&nbsp;<a id="expand-all" href="#">[+]</a>
+        </span><a id='src-0' href='../src/google_youtube3/lib.rs.html#5-250'>[src]</a></span></h1>
+<div class='docblock'><p>This documentation was generated from <em>YouTube</em> crate version <em>0.1.8+20150414</em>, where <em>20150414</em> is the exact revision of the <em>youtube:v3</em> schema built by the <a href="http://www.makotemplates.org/">mako</a> code generator <em>v0.1.8</em>.</p>
+
+<p>Everything else about the <em>YouTube</em> <em>v3</em> API can be found at the
+<a href="https://developers.google.com/youtube/v3">official documentation site</a>.
+The original source code is <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/youtube3">on github</a>.</p>
+
+<h1 id="features" class='section-header'><a
+                           href="#features">Features</a></h1>
+<p>Handle the following <em>Resources</em> with ease from the central <a href="struct.YouTube.html">hub</a> ... </p>
+
+<ul>
+<li><a href="struct.Activity.html">activities</a>
+
+<ul>
+<li><a href="struct.ActivityInsertCall.html"><em>insert</em></a> and <a href="struct.ActivityListCall.html"><em>list</em></a></li>
+</ul></li>
+<li><a href="struct.Caption.html">captions</a>
+
+<ul>
+<li><a href="struct.CaptionDeleteCall.html"><em>delete</em></a>, <a href="struct.CaptionDownloadCall.html"><em>download</em></a>, <a href="struct.CaptionInsertCall.html"><em>insert</em></a>, <a href="struct.CaptionListCall.html"><em>list</em></a> and <a href="struct.CaptionUpdateCall.html"><em>update</em></a></li>
+</ul></li>
+<li>channel banners
+
+<ul>
+<li><a href="struct.ChannelBannerInsertCall.html"><em>insert</em></a></li>
+</ul></li>
+<li><a href="struct.ChannelSection.html">channel sections</a>
+
+<ul>
+<li><a href="struct.ChannelSectionDeleteCall.html"><em>delete</em></a>, <a href="struct.ChannelSectionInsertCall.html"><em>insert</em></a>, <a href="struct.ChannelSectionListCall.html"><em>list</em></a> and <a href="struct.ChannelSectionUpdateCall.html"><em>update</em></a></li>
+</ul></li>
+<li><a href="struct.Channel.html">channels</a>
+
+<ul>
+<li><a href="struct.ChannelListCall.html"><em>list</em></a> and <a href="struct.ChannelUpdateCall.html"><em>update</em></a></li>
+</ul></li>
+<li><a href="struct.CommentThread.html">comment threads</a>
+
+<ul>
+<li><a href="struct.CommentThreadInsertCall.html"><em>insert</em></a>, <a href="struct.CommentThreadListCall.html"><em>list</em></a> and <a href="struct.CommentThreadUpdateCall.html"><em>update</em></a></li>
+</ul></li>
+<li><a href="struct.Comment.html">comments</a>
+
+<ul>
+<li><a href="struct.CommentDeleteCall.html"><em>delete</em></a>, <a href="struct.CommentInsertCall.html"><em>insert</em></a>, <a href="struct.CommentListCall.html"><em>list</em></a>, <a href="struct.CommentMarkAsSpamCall.html"><em>mark as spam</em></a>, <a href="struct.CommentSetModerationStatuCall.html"><em>set moderation status</em></a> and <a href="struct.CommentUpdateCall.html"><em>update</em></a></li>
+</ul></li>
+<li><a href="struct.GuideCategory.html">guide categories</a>
+
+<ul>
+<li><a href="struct.GuideCategoryListCall.html"><em>list</em></a></li>
+</ul></li>
+<li><a href="struct.I18nLanguage.html">i18n languages</a>
+
+<ul>
+<li><a href="struct.I18nLanguageListCall.html"><em>list</em></a></li>
+</ul></li>
+<li><a href="struct.I18nRegion.html">i18n regions</a>
+
+<ul>
+<li><a href="struct.I18nRegionListCall.html"><em>list</em></a></li>
+</ul></li>
+<li><a href="struct.LiveBroadcast.html">live broadcasts</a>
+
+<ul>
+<li><a href="struct.LiveBroadcastBindCall.html"><em>bind</em></a>, <a href="struct.LiveBroadcastControlCall.html"><em>control</em></a>, <a href="struct.LiveBroadcastDeleteCall.html"><em>delete</em></a>, <a href="struct.LiveBroadcastInsertCall.html"><em>insert</em></a>, <a href="struct.LiveBroadcastListCall.html"><em>list</em></a>, <a href="struct.LiveBroadcastTransitionCall.html"><em>transition</em></a> and <a href="struct.LiveBroadcastUpdateCall.html"><em>update</em></a></li>
+</ul></li>
+<li><a href="struct.LiveStream.html">live streams</a>
+
+<ul>
+<li><a href="struct.LiveStreamDeleteCall.html"><em>delete</em></a>, <a href="struct.LiveStreamInsertCall.html"><em>insert</em></a>, <a href="struct.LiveStreamListCall.html"><em>list</em></a> and <a href="struct.LiveStreamUpdateCall.html"><em>update</em></a></li>
+</ul></li>
+<li><a href="struct.PlaylistItem.html">playlist items</a>
+
+<ul>
+<li><a href="struct.PlaylistItemDeleteCall.html"><em>delete</em></a>, <a href="struct.PlaylistItemInsertCall.html"><em>insert</em></a>, <a href="struct.PlaylistItemListCall.html"><em>list</em></a> and <a href="struct.PlaylistItemUpdateCall.html"><em>update</em></a></li>
+</ul></li>
+<li><a href="struct.Playlist.html">playlists</a>
+
+<ul>
+<li><a href="struct.PlaylistDeleteCall.html"><em>delete</em></a>, <a href="struct.PlaylistInsertCall.html"><em>insert</em></a>, <a href="struct.PlaylistListCall.html"><em>list</em></a> and <a href="struct.PlaylistUpdateCall.html"><em>update</em></a></li>
+</ul></li>
+<li>search
+
+<ul>
+<li><a href="struct.SearchListCall.html"><em>list</em></a></li>
+</ul></li>
+<li><a href="struct.Subscription.html">subscriptions</a>
+
+<ul>
+<li><a href="struct.SubscriptionDeleteCall.html"><em>delete</em></a>, <a href="struct.SubscriptionInsertCall.html"><em>insert</em></a> and <a href="struct.SubscriptionListCall.html"><em>list</em></a></li>
+</ul></li>
+<li><a href="struct.Thumbnail.html">thumbnails</a>
+
+<ul>
+<li><a href="struct.ThumbnailSetCall.html"><em>set</em></a></li>
+</ul></li>
+<li><a href="struct.VideoAbuseReportReason.html">video abuse report reasons</a>
+
+<ul>
+<li><a href="struct.VideoAbuseReportReasonListCall.html"><em>list</em></a></li>
+</ul></li>
+<li><a href="struct.VideoCategory.html">video categories</a>
+
+<ul>
+<li><a href="struct.VideoCategoryListCall.html"><em>list</em></a></li>
+</ul></li>
+<li><a href="struct.Video.html">videos</a>
+
+<ul>
+<li><a href="struct.VideoDeleteCall.html"><em>delete</em></a>, <a href="struct.VideoGetRatingCall.html"><em>get rating</em></a>, <a href="struct.VideoInsertCall.html"><em>insert</em></a>, <a href="struct.VideoListCall.html"><em>list</em></a>, <a href="struct.VideoRateCall.html"><em>rate</em></a>, <a href="struct.VideoReportAbuseCall.html"><em>report abuse</em></a> and <a href="struct.VideoUpdateCall.html"><em>update</em></a></li>
+</ul></li>
+<li>watermarks
+
+<ul>
+<li><a href="struct.WatermarkSetCall.html"><em>set</em></a> and <a href="struct.WatermarkUnsetCall.html"><em>unset</em></a></li>
+</ul></li>
+</ul>
+
+<p>Upload supported by ...</p>
+
+<ul>
+<li><a href="struct.WatermarkSetCall.html"><em>set watermarks</em></a></li>
+<li><a href="struct.ChannelBannerInsertCall.html"><em>insert channel banners</em></a></li>
+<li><a href="struct.ThumbnailSetCall.html"><em>set thumbnails</em></a></li>
+<li><a href="struct.CaptionInsertCall.html"><em>insert captions</em></a></li>
+<li><a href="struct.CaptionUpdateCall.html"><em>update captions</em></a></li>
+<li><a href="struct.VideoInsertCall.html"><em>insert videos</em></a></li>
+</ul>
+
+<p>Download supported by ...</p>
+
+<ul>
+<li><a href="struct.CaptionDownloadCall.html"><em>download captions</em></a></li>
+</ul>
+
+<p>Subscription supported by ...</p>
+
+<ul>
+<li><a href="struct.PlaylistItemListCall.html"><em>list playlist items</em></a></li>
+</ul>
+
+<p>Not what you are looking for ? Find all other Google APIs in their Rust <a href="../index.html">documentation index</a>.</p>
+
+<h1 id="structure-of-this-library" class='section-header'><a
+                           href="#structure-of-this-library">Structure of this Library</a></h1>
+<p>The API is structured into the following primary items:</p>
+
+<ul>
+<li><strong><a href="struct.YouTube.html">Hub</a></strong>
+
+<ul>
+<li>a central object to maintain state and allow accessing all <em>Activities</em></li>
+<li>creates <a href="trait.MethodsBuilder.html"><em>Method Builders</em></a> which in turn
+allow access to individual <a href="trait.CallBuilder.html"><em>Call Builders</em></a></li>
+</ul></li>
+<li><strong><a href="trait.Resource.html">Resources</a></strong>
+
+<ul>
+<li>primary types that you can apply <em>Activities</em> to</li>
+<li>a collection of properties and <em>Parts</em></li>
+<li><strong><a href="trait.Part.html">Parts</a></strong>
+
+<ul>
+<li>a collection of properties</li>
+<li>never directly used in <em>Activities</em></li>
+</ul></li>
+</ul></li>
+<li><strong><a href="trait.CallBuilder.html">Activities</a></strong>
+
+<ul>
+<li>operations to apply to <em>Resources</em></li>
+</ul></li>
+</ul>
+
+<p>All <em>structures</em> are marked with applicable traits to further categorize them and ease browsing.</p>
+
+<p>Generally speaking, you can invoke <em>Activities</em> like this:</p>
+<pre id='rust-example-rendered' class='rust '>
+<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>resource</span>().<span class='ident'>activity</span>(...).<span class='ident'>doit</span>()
+</pre>
+
+<p>Or specifically ...</p>
+<pre id='rust-example-rendered' class='rust '>
+<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>videos</span>().<span class='ident'>rate</span>(...).<span class='ident'>doit</span>()
+<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>videos</span>().<span class='ident'>report_abuse</span>(...).<span class='ident'>doit</span>()
+<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>videos</span>().<span class='ident'>get_rating</span>(...).<span class='ident'>doit</span>()
+<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>videos</span>().<span class='ident'>list</span>(...).<span class='ident'>doit</span>()
+<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>videos</span>().<span class='ident'>insert</span>(...).<span class='ident'>doit</span>()
+<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>videos</span>().<span class='ident'>update</span>(...).<span class='ident'>doit</span>()
+<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>videos</span>().<span class='ident'>delete</span>(...).<span class='ident'>doit</span>()
+</pre>
+
+<p>The <code>resource()</code> and <code>activity(...)</code> calls create <a href="http://en.wikipedia.org/wiki/Builder_pattern">builders</a>. The second one dealing with <code>Activities</code> 
+supports various methods to configure the impending operation (not shown here). It is made such that all required arguments have to be 
+specified right away (i.e. <code>(...)</code>), whereas all optional ones can be <a href="http://en.wikipedia.org/wiki/Builder_pattern">build up</a> as desired.
+The <code>doit()</code> method performs the actual communication with the server and returns the respective result.</p>
+
+<h1 id="usage" class='section-header'><a
+                           href="#usage">Usage</a></h1>
+<h2 id="setting-up-your-project" class='section-header'><a
+                           href="#setting-up-your-project">Setting up your Project</a></h2>
+<p>To use this library, you would put the following lines into your <code>Cargo.toml</code> file:</p>
+
+<pre><code class="language-toml">[dependencies]
+google-youtube3 = &quot;*&quot;
+</code></pre>
+
+<h2 id="a-complete-example" class='section-header'><a
+                           href="#a-complete-example">A complete example</a></h2><pre id='rust-example-rendered' class='rust '>
+<span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>hyper</span>;
+<span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>yup_oauth2</span> <span class='kw'>as</span> <span class='ident'>oauth2</span>;
+<span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>google_youtube3</span> <span class='kw'>as</span> <span class='ident'>youtube3</span>;
+<span class='kw'>use</span> <span class='ident'>youtube3</span>::{<span class='prelude-ty'>Result</span>, <span class='ident'>Error</span>};
+<span class='kw'>use</span> <span class='ident'>std</span>::<span class='ident'>default</span>::<span class='ident'>Default</span>;
+<span class='kw'>use</span> <span class='ident'>oauth2</span>::{<span class='ident'>Authenticator</span>, <span class='ident'>DefaultAuthenticatorDelegate</span>, <span class='ident'>ApplicationSecret</span>, <span class='ident'>MemoryStorage</span>};
+<span class='kw'>use</span> <span class='ident'>youtube3</span>::<span class='ident'>YouTube</span>;
+ 
+<span class='comment'>// Get an ApplicationSecret instance by some means. It contains the `client_id` and </span>
+<span class='comment'>// `client_secret`, among other things.</span>
+<span class='kw'>let</span> <span class='ident'>secret</span>: <span class='ident'>ApplicationSecret</span> <span class='op'>=</span> <span class='ident'>Default</span>::<span class='ident'>default</span>();
+<span class='comment'>// Instantiate the authenticator. It will choose a suitable authentication flow for you, </span>
+<span class='comment'>// unless you replace  `None` with the desired Flow.</span>
+<span class='comment'>// Provide your own `AuthenticatorDelegate` to adjust the way it operates and get feedback about </span>
+<span class='comment'>// what&#39;s going on. You probably want to bring in your own `TokenStorage` to persist tokens and</span>
+<span class='comment'>// retrieve them from storage.</span>
+<span class='kw'>let</span> <span class='ident'>auth</span> <span class='op'>=</span> <span class='ident'>Authenticator</span>::<span class='ident'>new</span>(<span class='kw-2'>&amp;</span><span class='ident'>secret</span>, <span class='ident'>DefaultAuthenticatorDelegate</span>,
+                              <span class='ident'>hyper</span>::<span class='ident'>Client</span>::<span class='ident'>new</span>(),
+                              <span class='op'>&lt;</span><span class='ident'>MemoryStorage</span> <span class='kw'>as</span> <span class='ident'>Default</span><span class='op'>&gt;</span>::<span class='ident'>default</span>(), <span class='prelude-val'>None</span>);
+<span class='kw'>let</span> <span class='kw-2'>mut</span> <span class='ident'>hub</span> <span class='op'>=</span> <span class='ident'>YouTube</span>::<span class='ident'>new</span>(<span class='ident'>hyper</span>::<span class='ident'>Client</span>::<span class='ident'>new</span>(), <span class='ident'>auth</span>);
+<span class='comment'>// You can configure optional parameters by calling the respective setters at will, and</span>
+<span class='comment'>// execute the final call using `doit()`.</span>
+<span class='comment'>// Values shown here are possibly random and not representative !</span>
+<span class='kw'>let</span> <span class='ident'>result</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>videos</span>().<span class='ident'>list</span>(<span class='string'>&quot;part&quot;</span>)
+             .<span class='ident'>video_category_id</span>(<span class='string'>&quot;erat&quot;</span>)
+             .<span class='ident'>region_code</span>(<span class='string'>&quot;amet.&quot;</span>)
+             .<span class='ident'>page_token</span>(<span class='string'>&quot;dolores&quot;</span>)
+             .<span class='ident'>on_behalf_of_content_owner</span>(<span class='string'>&quot;dolores&quot;</span>)
+             .<span class='ident'>my_rating</span>(<span class='string'>&quot;et&quot;</span>)
+             .<span class='ident'>max_results</span>(<span class='number'>59</span>)
+             .<span class='ident'>locale</span>(<span class='string'>&quot;et&quot;</span>)
+             .<span class='ident'>id</span>(<span class='string'>&quot;aliquyam&quot;</span>)
+             .<span class='ident'>hl</span>(<span class='string'>&quot;nonumy&quot;</span>)
+             .<span class='ident'>chart</span>(<span class='string'>&quot;sit&quot;</span>)
+             .<span class='ident'>doit</span>();
+ 
+<span class='kw'>match</span> <span class='ident'>result</span> {
+    <span class='prelude-val'>Err</span>(<span class='ident'>e</span>) <span class='op'>=&gt;</span> <span class='kw'>match</span> <span class='ident'>e</span> {
+        <span class='comment'>// The Error enum provides details about what exactly happened.</span>
+        <span class='comment'>// You can also just use its `Debug`, `Display` or `Error` traits</span>
+         <span class='ident'>Error</span>::<span class='ident'>HttpError</span>(_)
+        <span class='op'>|</span><span class='ident'>Error</span>::<span class='ident'>MissingAPIKey</span>
+        <span class='op'>|</span><span class='ident'>Error</span>::<span class='ident'>MissingToken</span>(_)
+        <span class='op'>|</span><span class='ident'>Error</span>::<span class='ident'>Cancelled</span>
+        <span class='op'>|</span><span class='ident'>Error</span>::<span class='ident'>UploadSizeLimitExceeded</span>(_, _)
+        <span class='op'>|</span><span class='ident'>Error</span>::<span class='ident'>Failure</span>(_)
+        <span class='op'>|</span><span class='ident'>Error</span>::<span class='ident'>BadRequest</span>(_)
+        <span class='op'>|</span><span class='ident'>Error</span>::<span class='ident'>FieldClash</span>(_)
+        <span class='op'>|</span><span class='ident'>Error</span>::<span class='ident'>JsonDecodeError</span>(_, _) <span class='op'>=&gt;</span> <span class='macro'>println</span><span class='macro'>!</span>(<span class='string'>&quot;{}&quot;</span>, <span class='ident'>e</span>),
+    },
+    <span class='prelude-val'>Ok</span>(<span class='ident'>res</span>) <span class='op'>=&gt;</span> <span class='macro'>println</span><span class='macro'>!</span>(<span class='string'>&quot;Success: {:?}&quot;</span>, <span class='ident'>res</span>),
+}
+</pre>
+
+<h2 id="handling-errors" class='section-header'><a
+                           href="#handling-errors">Handling Errors</a></h2>
+<p>All errors produced by the system are provided either as <a href="enum.Result.html">Result</a> enumeration as return value of 
+the doit() methods, or handed as possibly intermediate results to either the 
+<a href="trait.Delegate.html">Hub Delegate</a>, or the <a href="../yup-oauth2/trait.AuthenticatorDelegate.html">Authenticator Delegate</a>.</p>
+
+<p>When delegates handle errors or intermediate values, they may have a chance to instruct the system to retry. This 
+makes the system potentially resilient to all kinds of errors.</p>
+
+<h2 id="uploads-and-downloads" class='section-header'><a
+                           href="#uploads-and-downloads">Uploads and Downloads</a></h2>
+<p>If a method supports downloads, the response body, which is part of the <a href="enum.Result.html">Result</a>, should be
+read by you to obtain the media.
+If such a method also supports a <a href="trait.ResponseResult.html">Response Result</a>, it will return that by default.
+You can see it as meta-data for the actual media. To trigger a media download, you will have to set up the builder by making
+this call: <code>.param(&quot;alt&quot;, &quot;media&quot;)</code>.</p>
+
+<p>Methods supporting uploads can do so using up to 2 different protocols: 
+<em>simple</em> and <em>resumable</em>. The distinctiveness of each is represented by customized 
+<code>doit(...)</code> methods, which are then named <code>upload(...)</code> and <code>upload_resumable(...)</code> respectively.</p>
+
+<h2 id="customization-and-callbacks" class='section-header'><a
+                           href="#customization-and-callbacks">Customization and Callbacks</a></h2>
+<p>You may alter the way an <code>doit()</code> method is called by providing a <a href="trait.Delegate.html">delegate</a> to the 
+<a href="trait.CallBuilder.html">Method Builder</a> before making the final <code>doit()</code> call. 
+Respective methods will be called to provide progress information, as well as determine whether the system should 
+retry on failure.</p>
+
+<p>The <a href="trait.Delegate.html">delegate trait</a> is default-implemented, allowing you to customize it with minimal effort.</p>
+
+<h2 id="optional-parts-in-server-requests" class='section-header'><a
+                           href="#optional-parts-in-server-requests">Optional Parts in Server-Requests</a></h2>
+<p>All structures provided by this library are made to be <a href="trait.RequestValue.html">enocodable</a> and 
+<a href="trait.ResponseResult.html">decodable</a> via <em>json</em>. Optionals are used to indicate that partial requests are responses 
+are valid.
+Most optionals are are considered <a href="trait.Part.html">Parts</a> which are identifiable by name, which will be sent to 
+the server to indicate either the set parts of the request or the desired parts in the response.</p>
+
+<h2 id="builder-arguments" class='section-header'><a
+                           href="#builder-arguments">Builder Arguments</a></h2>
+<p>Using <a href="trait.CallBuilder.html">method builders</a>, you are able to prepare an action call by repeatedly calling it&#39;s methods.
+These will always take a single argument, for which the following statements are true.</p>
+
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Plain_old_data_structure">PODs</a> are handed by copy</li>
+<li>strings are passed as <code>&amp;str</code></li>
+<li><a href="trait.RequestValue.html">request values</a> are moved</li>
+</ul>
+
+<p>Arguments will always be copied or cloned into the builder, to make them independent of their original life times.</p>
+</div><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
+<table>
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AccessPolicy.html'
+                               title='google_youtube3::AccessPolicy'>AccessPolicy</a></td>
+                        <td class='docblock short'><p>Rights management policy for YouTube resources.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Activity.html'
+                               title='google_youtube3::Activity'>Activity</a></td>
+                        <td class='docblock short'><p>An activity resource contains information about an action that a particular channel, or user, has taken on YouTube.The actions reported in activity feeds include rating a video, sharing a video, marking a video as a favorite, commenting on a video, uploading a video, and so forth. Each activity resource identifies the type of action, the channel associated with the action, and the resource(s) associated with the action, such as the video that was rated or uploaded.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ActivityContentDetails.html'
+                               title='google_youtube3::ActivityContentDetails'>ActivityContentDetails</a></td>
+                        <td class='docblock short'><p>Details about the content of an activity: the video that was shared, the channel that was subscribed to, etc.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ActivityContentDetailsBulletin.html'
+                               title='google_youtube3::ActivityContentDetailsBulletin'>ActivityContentDetailsBulletin</a></td>
+                        <td class='docblock short'><p>Details about a channel bulletin post.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ActivityContentDetailsChannelItem.html'
+                               title='google_youtube3::ActivityContentDetailsChannelItem'>ActivityContentDetailsChannelItem</a></td>
+                        <td class='docblock short'><p>Details about a resource which was added to a channel.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ActivityContentDetailsComment.html'
+                               title='google_youtube3::ActivityContentDetailsComment'>ActivityContentDetailsComment</a></td>
+                        <td class='docblock short'><p>Information about a resource that received a comment.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ActivityContentDetailsFavorite.html'
+                               title='google_youtube3::ActivityContentDetailsFavorite'>ActivityContentDetailsFavorite</a></td>
+                        <td class='docblock short'><p>Information about a video that was marked as a favorite video.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ActivityContentDetailsLike.html'
+                               title='google_youtube3::ActivityContentDetailsLike'>ActivityContentDetailsLike</a></td>
+                        <td class='docblock short'><p>Information about a resource that received a positive (like) rating.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ActivityContentDetailsPlaylistItem.html'
+                               title='google_youtube3::ActivityContentDetailsPlaylistItem'>ActivityContentDetailsPlaylistItem</a></td>
+                        <td class='docblock short'><p>Information about a new playlist item.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ActivityContentDetailsPromotedItem.html'
+                               title='google_youtube3::ActivityContentDetailsPromotedItem'>ActivityContentDetailsPromotedItem</a></td>
+                        <td class='docblock short'><p>Details about a resource which is being promoted.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ActivityContentDetailsRecommendation.html'
+                               title='google_youtube3::ActivityContentDetailsRecommendation'>ActivityContentDetailsRecommendation</a></td>
+                        <td class='docblock short'><p>Information that identifies the recommended resource.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ActivityContentDetailsSocial.html'
+                               title='google_youtube3::ActivityContentDetailsSocial'>ActivityContentDetailsSocial</a></td>
+                        <td class='docblock short'><p>Details about a social network post.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ActivityContentDetailsSubscription.html'
+                               title='google_youtube3::ActivityContentDetailsSubscription'>ActivityContentDetailsSubscription</a></td>
+                        <td class='docblock short'><p>Information about a channel that a user subscribed to.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ActivityContentDetailsUpload.html'
+                               title='google_youtube3::ActivityContentDetailsUpload'>ActivityContentDetailsUpload</a></td>
+                        <td class='docblock short'><p>Information about the uploaded video.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ActivityInsertCall.html'
+                               title='google_youtube3::ActivityInsertCall'>ActivityInsertCall</a></td>
+                        <td class='docblock short'><p>Posts a bulletin for a specific channel. (The user submitting the request must be authorized to act on the channel&#39;s behalf.)</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ActivityListCall.html'
+                               title='google_youtube3::ActivityListCall'>ActivityListCall</a></td>
+                        <td class='docblock short'><p>Returns a list of channel activity events that match the request criteria. For example, you can retrieve events associated with a particular channel, events associated with the user&#39;s subscriptions and Google+ friends, or the YouTube home page feed, which is customized for each user.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ActivityListResponse.html'
+                               title='google_youtube3::ActivityListResponse'>ActivityListResponse</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ActivityMethods.html'
+                               title='google_youtube3::ActivityMethods'>ActivityMethods</a></td>
+                        <td class='docblock short'><p>A builder providing access to all methods supported on <em>activity</em> resources.
+It is not used directly, but through the <code>YouTube</code> hub.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ActivitySnippet.html'
+                               title='google_youtube3::ActivitySnippet'>ActivitySnippet</a></td>
+                        <td class='docblock short'><p>Basic details about an activity, including title, description, thumbnails, activity type and group.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Caption.html'
+                               title='google_youtube3::Caption'>Caption</a></td>
+                        <td class='docblock short'><p>A caption resource represents a YouTube caption track. A caption track is associated with exactly one YouTube video.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.CaptionDeleteCall.html'
+                               title='google_youtube3::CaptionDeleteCall'>CaptionDeleteCall</a></td>
+                        <td class='docblock short'><p>Deletes a specified caption track.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.CaptionDownloadCall.html'
+                               title='google_youtube3::CaptionDownloadCall'>CaptionDownloadCall</a></td>
+                        <td class='docblock short'><p>Downloads a caption track. The caption track is returned in its original format unless the request specifies a value for the tfmt parameter and in its original language unless the request specifies a value for the tlang parameter.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.CaptionInsertCall.html'
+                               title='google_youtube3::CaptionInsertCall'>CaptionInsertCall</a></td>
+                        <td class='docblock short'><p>Uploads a caption track.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.CaptionListCall.html'
+                               title='google_youtube3::CaptionListCall'>CaptionListCall</a></td>
+                        <td class='docblock short'><p>Returns a list of caption tracks that are associated with a specified video. Note that the API response does not contain the actual captions and that the captions.download method provides the ability to retrieve a caption track.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.CaptionListResponse.html'
+                               title='google_youtube3::CaptionListResponse'>CaptionListResponse</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.CaptionMethods.html'
+                               title='google_youtube3::CaptionMethods'>CaptionMethods</a></td>
+                        <td class='docblock short'><p>A builder providing access to all methods supported on <em>caption</em> resources.
+It is not used directly, but through the <code>YouTube</code> hub.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.CaptionSnippet.html'
+                               title='google_youtube3::CaptionSnippet'>CaptionSnippet</a></td>
+                        <td class='docblock short'><p>Basic details about a caption track, such as its language and name.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.CaptionUpdateCall.html'
+                               title='google_youtube3::CaptionUpdateCall'>CaptionUpdateCall</a></td>
+                        <td class='docblock short'><p>Updates a caption track. When updating a caption track, you can change the track&#39;s draft status, upload a new caption file for the track, or both.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.CdnSettings.html'
+                               title='google_youtube3::CdnSettings'>CdnSettings</a></td>
+                        <td class='docblock short'><p>Brief description of the live stream cdn settings.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Channel.html'
+                               title='google_youtube3::Channel'>Channel</a></td>
+                        <td class='docblock short'><p>A channel resource contains information about a YouTube channel.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ChannelAuditDetails.html'
+                               title='google_youtube3::ChannelAuditDetails'>ChannelAuditDetails</a></td>
+                        <td class='docblock short'><p>The auditDetails object encapsulates channel data that is relevant for YouTube Partners during the audit process.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ChannelBannerInsertCall.html'
+                               title='google_youtube3::ChannelBannerInsertCall'>ChannelBannerInsertCall</a></td>
+                        <td class='docblock short'><p>Uploads a channel banner image to YouTube. This method represents the first two steps in a three-step process to update the banner image for a channel:</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ChannelBannerMethods.html'
+                               title='google_youtube3::ChannelBannerMethods'>ChannelBannerMethods</a></td>
+                        <td class='docblock short'><p>A builder providing access to all methods supported on <em>channelBanner</em> resources.
+It is not used directly, but through the <code>YouTube</code> hub.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ChannelBannerResource.html'
+                               title='google_youtube3::ChannelBannerResource'>ChannelBannerResource</a></td>
+                        <td class='docblock short'><p>A channel banner returned as the response to a channel_banner.insert call.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ChannelBrandingSettings.html'
+                               title='google_youtube3::ChannelBrandingSettings'>ChannelBrandingSettings</a></td>
+                        <td class='docblock short'><p>Branding properties of a YouTube channel.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ChannelContentDetails.html'
+                               title='google_youtube3::ChannelContentDetails'>ChannelContentDetails</a></td>
+                        <td class='docblock short'><p>Details about the content of a channel.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ChannelContentDetailsRelatedPlaylists.html'
+                               title='google_youtube3::ChannelContentDetailsRelatedPlaylists'>ChannelContentDetailsRelatedPlaylists</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ChannelContentOwnerDetails.html'
+                               title='google_youtube3::ChannelContentOwnerDetails'>ChannelContentOwnerDetails</a></td>
+                        <td class='docblock short'><p>The contentOwnerDetails object encapsulates channel data that is relevant for YouTube Partners linked with the channel.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ChannelConversionPing.html'
+                               title='google_youtube3::ChannelConversionPing'>ChannelConversionPing</a></td>
+                        <td class='docblock short'><p>Pings that the app shall fire (authenticated by biscotti cookie). Each ping has a context, in which the app must fire the ping, and a url identifying the ping.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ChannelConversionPings.html'
+                               title='google_youtube3::ChannelConversionPings'>ChannelConversionPings</a></td>
+                        <td class='docblock short'><p>The conversionPings object encapsulates information about conversion pings that need to be respected by the channel.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ChannelId.html'
+                               title='google_youtube3::ChannelId'>ChannelId</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ChannelListCall.html'
+                               title='google_youtube3::ChannelListCall'>ChannelListCall</a></td>
+                        <td class='docblock short'><p>Returns a collection of zero or more channel resources that match the request criteria.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ChannelListResponse.html'
+                               title='google_youtube3::ChannelListResponse'>ChannelListResponse</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ChannelLocalization.html'
+                               title='google_youtube3::ChannelLocalization'>ChannelLocalization</a></td>
+                        <td class='docblock short'><p>Channel localization setting</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ChannelMethods.html'
+                               title='google_youtube3::ChannelMethods'>ChannelMethods</a></td>
+                        <td class='docblock short'><p>A builder providing access to all methods supported on <em>channel</em> resources.
+It is not used directly, but through the <code>YouTube</code> hub.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ChannelSection.html'
+                               title='google_youtube3::ChannelSection'>ChannelSection</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ChannelSectionContentDetails.html'
+                               title='google_youtube3::ChannelSectionContentDetails'>ChannelSectionContentDetails</a></td>
+                        <td class='docblock short'><p>Details about a channelsection, including playlists and channels.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ChannelSectionDeleteCall.html'
+                               title='google_youtube3::ChannelSectionDeleteCall'>ChannelSectionDeleteCall</a></td>
+                        <td class='docblock short'><p>Deletes a channelSection.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ChannelSectionInsertCall.html'
+                               title='google_youtube3::ChannelSectionInsertCall'>ChannelSectionInsertCall</a></td>
+                        <td class='docblock short'><p>Adds a channelSection for the authenticated user&#39;s channel.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ChannelSectionListCall.html'
+                               title='google_youtube3::ChannelSectionListCall'>ChannelSectionListCall</a></td>
+                        <td class='docblock short'><p>Returns channelSection resources that match the API request criteria.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ChannelSectionListResponse.html'
+                               title='google_youtube3::ChannelSectionListResponse'>ChannelSectionListResponse</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ChannelSectionLocalization.html'
+                               title='google_youtube3::ChannelSectionLocalization'>ChannelSectionLocalization</a></td>
+                        <td class='docblock short'><p>ChannelSection localization setting</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ChannelSectionMethods.html'
+                               title='google_youtube3::ChannelSectionMethods'>ChannelSectionMethods</a></td>
+                        <td class='docblock short'><p>A builder providing access to all methods supported on <em>channelSection</em> resources.
+It is not used directly, but through the <code>YouTube</code> hub.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ChannelSectionSnippet.html'
+                               title='google_youtube3::ChannelSectionSnippet'>ChannelSectionSnippet</a></td>
+                        <td class='docblock short'><p>Basic details about a channel section, including title, style and position.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ChannelSectionTargeting.html'
+                               title='google_youtube3::ChannelSectionTargeting'>ChannelSectionTargeting</a></td>
+                        <td class='docblock short'><p>ChannelSection targeting setting.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ChannelSectionUpdateCall.html'
+                               title='google_youtube3::ChannelSectionUpdateCall'>ChannelSectionUpdateCall</a></td>
+                        <td class='docblock short'><p>Update a channelSection.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ChannelSettings.html'
+                               title='google_youtube3::ChannelSettings'>ChannelSettings</a></td>
+                        <td class='docblock short'><p>Branding properties for the channel view.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ChannelSnippet.html'
+                               title='google_youtube3::ChannelSnippet'>ChannelSnippet</a></td>
+                        <td class='docblock short'><p>Basic details about a channel, including title, description and thumbnails.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ChannelStatistics.html'
+                               title='google_youtube3::ChannelStatistics'>ChannelStatistics</a></td>
+                        <td class='docblock short'><p>Statistics about a channel: number of subscribers, number of videos in the channel, etc.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ChannelStatus.html'
+                               title='google_youtube3::ChannelStatus'>ChannelStatus</a></td>
+                        <td class='docblock short'><p>JSON template for the status part of a channel.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ChannelTopicDetails.html'
+                               title='google_youtube3::ChannelTopicDetails'>ChannelTopicDetails</a></td>
+                        <td class='docblock short'><p>Freebase topic information related to the channel.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ChannelUpdateCall.html'
+                               title='google_youtube3::ChannelUpdateCall'>ChannelUpdateCall</a></td>
+                        <td class='docblock short'><p>Updates a channel&#39;s metadata.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Comment.html'
+                               title='google_youtube3::Comment'>Comment</a></td>
+                        <td class='docblock short'><p>A comment represents a single YouTube comment.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.CommentDeleteCall.html'
+                               title='google_youtube3::CommentDeleteCall'>CommentDeleteCall</a></td>
+                        <td class='docblock short'><p>Deletes a comment.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.CommentInsertCall.html'
+                               title='google_youtube3::CommentInsertCall'>CommentInsertCall</a></td>
+                        <td class='docblock short'><p>Creates a new comment.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.CommentListCall.html'
+                               title='google_youtube3::CommentListCall'>CommentListCall</a></td>
+                        <td class='docblock short'><p>Returns a list of comments that match the API request parameters.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.CommentListResponse.html'
+                               title='google_youtube3::CommentListResponse'>CommentListResponse</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.CommentMarkAsSpamCall.html'
+                               title='google_youtube3::CommentMarkAsSpamCall'>CommentMarkAsSpamCall</a></td>
+                        <td class='docblock short'><p>Expresses the caller&#39;s opinion that a comment is spam.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.CommentMethods.html'
+                               title='google_youtube3::CommentMethods'>CommentMethods</a></td>
+                        <td class='docblock short'><p>A builder providing access to all methods supported on <em>comment</em> resources.
+It is not used directly, but through the <code>YouTube</code> hub.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.CommentSetModerationStatuCall.html'
+                               title='google_youtube3::CommentSetModerationStatuCall'>CommentSetModerationStatuCall</a></td>
+                        <td class='docblock short'><p>Sets the moderation status of one or more comments.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.CommentSnippet.html'
+                               title='google_youtube3::CommentSnippet'>CommentSnippet</a></td>
+                        <td class='docblock short'><p>Basic details about a comment, such as its author and text.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.CommentThread.html'
+                               title='google_youtube3::CommentThread'>CommentThread</a></td>
+                        <td class='docblock short'><p>A comment thread represents information that applies to a top level comment and all its replies. It can also include the top level comment itself and some of the replies.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.CommentThreadInsertCall.html'
+                               title='google_youtube3::CommentThreadInsertCall'>CommentThreadInsertCall</a></td>
+                        <td class='docblock short'><p>Creates a new comment thread and top level comment.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.CommentThreadListCall.html'
+                               title='google_youtube3::CommentThreadListCall'>CommentThreadListCall</a></td>
+                        <td class='docblock short'><p>Returns a list of comment threads that match the API request parameters.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.CommentThreadListResponse.html'
+                               title='google_youtube3::CommentThreadListResponse'>CommentThreadListResponse</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.CommentThreadMethods.html'
+                               title='google_youtube3::CommentThreadMethods'>CommentThreadMethods</a></td>
+                        <td class='docblock short'><p>A builder providing access to all methods supported on <em>commentThread</em> resources.
+It is not used directly, but through the <code>YouTube</code> hub.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.CommentThreadReplies.html'
+                               title='google_youtube3::CommentThreadReplies'>CommentThreadReplies</a></td>
+                        <td class='docblock short'><p>Comments written in (direct or indirect) reply to the top level comment.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.CommentThreadSnippet.html'
+                               title='google_youtube3::CommentThreadSnippet'>CommentThreadSnippet</a></td>
+                        <td class='docblock short'><p>Basic details about a comment thread.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.CommentThreadUpdateCall.html'
+                               title='google_youtube3::CommentThreadUpdateCall'>CommentThreadUpdateCall</a></td>
+                        <td class='docblock short'><p>Modifies an existing comment.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.CommentUpdateCall.html'
+                               title='google_youtube3::CommentUpdateCall'>CommentUpdateCall</a></td>
+                        <td class='docblock short'><p>Modifies an existing comment.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ContentRating.html'
+                               title='google_youtube3::ContentRating'>ContentRating</a></td>
+                        <td class='docblock short'><p>Ratings schemes. The country-specific ratings are mostly for movies and shows. NEXT_ID: 65</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.DefaultDelegate.html'
+                               title='google_youtube3::DefaultDelegate'>DefaultDelegate</a></td>
+                        <td class='docblock short'><p>A delegate with a conservative default implementation, which is used if no other delegate is
+set.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ErrorResponse.html'
+                               title='google_youtube3::ErrorResponse'>ErrorResponse</a></td>
+                        <td class='docblock short'><p>A utility to represent detailed errors we might see in case there are BadRequests.
+The latter happen if the sent parameters or request structures are unsound</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.GeoPoint.html'
+                               title='google_youtube3::GeoPoint'>GeoPoint</a></td>
+                        <td class='docblock short'><p>Geographical coordinates of a point, in WGS84.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.GuideCategory.html'
+                               title='google_youtube3::GuideCategory'>GuideCategory</a></td>
+                        <td class='docblock short'><p>A guideCategory resource identifies a category that YouTube algorithmically assigns based on a channel&#39;s content or other indicators, such as the channel&#39;s popularity. The list is similar to video categories, with the difference being that a video&#39;s uploader can assign a video category but only YouTube can assign a channel category.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.GuideCategoryListCall.html'
+                               title='google_youtube3::GuideCategoryListCall'>GuideCategoryListCall</a></td>
+                        <td class='docblock short'><p>Returns a list of categories that can be associated with YouTube channels.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.GuideCategoryListResponse.html'
+                               title='google_youtube3::GuideCategoryListResponse'>GuideCategoryListResponse</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.GuideCategoryMethods.html'
+                               title='google_youtube3::GuideCategoryMethods'>GuideCategoryMethods</a></td>
+                        <td class='docblock short'><p>A builder providing access to all methods supported on <em>guideCategory</em> resources.
+It is not used directly, but through the <code>YouTube</code> hub.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.GuideCategorySnippet.html'
+                               title='google_youtube3::GuideCategorySnippet'>GuideCategorySnippet</a></td>
+                        <td class='docblock short'><p>Basic details about a guide category.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.I18nLanguage.html'
+                               title='google_youtube3::I18nLanguage'>I18nLanguage</a></td>
+                        <td class='docblock short'><p>An i18nLanguage resource identifies a UI language currently supported by YouTube.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.I18nLanguageListCall.html'
+                               title='google_youtube3::I18nLanguageListCall'>I18nLanguageListCall</a></td>
+                        <td class='docblock short'><p>Returns a list of supported languages.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.I18nLanguageListResponse.html'
+                               title='google_youtube3::I18nLanguageListResponse'>I18nLanguageListResponse</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.I18nLanguageMethods.html'
+                               title='google_youtube3::I18nLanguageMethods'>I18nLanguageMethods</a></td>
+                        <td class='docblock short'><p>A builder providing access to all methods supported on <em>i18nLanguage</em> resources.
+It is not used directly, but through the <code>YouTube</code> hub.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.I18nLanguageSnippet.html'
+                               title='google_youtube3::I18nLanguageSnippet'>I18nLanguageSnippet</a></td>
+                        <td class='docblock short'><p>Basic details about an i18n language, such as language code and human-readable name.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.I18nRegion.html'
+                               title='google_youtube3::I18nRegion'>I18nRegion</a></td>
+                        <td class='docblock short'><p>A i18nRegion resource identifies a region where YouTube is available.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.I18nRegionListCall.html'
+                               title='google_youtube3::I18nRegionListCall'>I18nRegionListCall</a></td>
+                        <td class='docblock short'><p>Returns a list of supported regions.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.I18nRegionListResponse.html'
+                               title='google_youtube3::I18nRegionListResponse'>I18nRegionListResponse</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.I18nRegionMethods.html'
+                               title='google_youtube3::I18nRegionMethods'>I18nRegionMethods</a></td>
+                        <td class='docblock short'><p>A builder providing access to all methods supported on <em>i18nRegion</em> resources.
+It is not used directly, but through the <code>YouTube</code> hub.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.I18nRegionSnippet.html'
+                               title='google_youtube3::I18nRegionSnippet'>I18nRegionSnippet</a></td>
+                        <td class='docblock short'><p>Basic details about an i18n region, such as region code and human-readable name.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ImageSettings.html'
+                               title='google_youtube3::ImageSettings'>ImageSettings</a></td>
+                        <td class='docblock short'><p>Branding properties for images associated with the channel.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.IngestionInfo.html'
+                               title='google_youtube3::IngestionInfo'>IngestionInfo</a></td>
+                        <td class='docblock short'><p>Describes information necessary for ingesting an RTMP or an HTTP stream.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.InvideoBranding.html'
+                               title='google_youtube3::InvideoBranding'>InvideoBranding</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.InvideoPosition.html'
+                               title='google_youtube3::InvideoPosition'>InvideoPosition</a></td>
+                        <td class='docblock short'><p>Describes the spatial position of a visual widget inside a video. It is a union of various position types, out of which only will be set one.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.InvideoPromotion.html'
+                               title='google_youtube3::InvideoPromotion'>InvideoPromotion</a></td>
+                        <td class='docblock short'><p>Describes an invideo promotion campaign consisting of multiple promoted items. A campaign belongs to a single channel_id.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.InvideoTiming.html'
+                               title='google_youtube3::InvideoTiming'>InvideoTiming</a></td>
+                        <td class='docblock short'><p>Describes a temporal position of a visual widget inside a video.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.LanguageTag.html'
+                               title='google_youtube3::LanguageTag'>LanguageTag</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.LiveBroadcast.html'
+                               title='google_youtube3::LiveBroadcast'>LiveBroadcast</a></td>
+                        <td class='docblock short'><p>A liveBroadcast resource represents an event that will be streamed, via live video, on YouTube.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.LiveBroadcastBindCall.html'
+                               title='google_youtube3::LiveBroadcastBindCall'>LiveBroadcastBindCall</a></td>
+                        <td class='docblock short'><p>Binds a YouTube broadcast to a stream or removes an existing binding between a broadcast and a stream. A broadcast can only be bound to one video stream.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.LiveBroadcastContentDetails.html'
+                               title='google_youtube3::LiveBroadcastContentDetails'>LiveBroadcastContentDetails</a></td>
+                        <td class='docblock short'><p>Detailed settings of a broadcast.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.LiveBroadcastControlCall.html'
+                               title='google_youtube3::LiveBroadcastControlCall'>LiveBroadcastControlCall</a></td>
+                        <td class='docblock short'><p>Controls the settings for a slate that can be displayed in the broadcast stream.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.LiveBroadcastDeleteCall.html'
+                               title='google_youtube3::LiveBroadcastDeleteCall'>LiveBroadcastDeleteCall</a></td>
+                        <td class='docblock short'><p>Deletes a broadcast.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.LiveBroadcastInsertCall.html'
+                               title='google_youtube3::LiveBroadcastInsertCall'>LiveBroadcastInsertCall</a></td>
+                        <td class='docblock short'><p>Creates a broadcast.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.LiveBroadcastListCall.html'
+                               title='google_youtube3::LiveBroadcastListCall'>LiveBroadcastListCall</a></td>
+                        <td class='docblock short'><p>Returns a list of YouTube broadcasts that match the API request parameters.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.LiveBroadcastListResponse.html'
+                               title='google_youtube3::LiveBroadcastListResponse'>LiveBroadcastListResponse</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.LiveBroadcastMethods.html'
+                               title='google_youtube3::LiveBroadcastMethods'>LiveBroadcastMethods</a></td>
+                        <td class='docblock short'><p>A builder providing access to all methods supported on <em>liveBroadcast</em> resources.
+It is not used directly, but through the <code>YouTube</code> hub.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.LiveBroadcastSnippet.html'
+                               title='google_youtube3::LiveBroadcastSnippet'>LiveBroadcastSnippet</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.LiveBroadcastStatus.html'
+                               title='google_youtube3::LiveBroadcastStatus'>LiveBroadcastStatus</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.LiveBroadcastTransitionCall.html'
+                               title='google_youtube3::LiveBroadcastTransitionCall'>LiveBroadcastTransitionCall</a></td>
+                        <td class='docblock short'><p>Changes the status of a YouTube live broadcast and initiates any processes associated with the new status. For example, when you transition a broadcast&#39;s status to testing, YouTube starts to transmit video to that broadcast&#39;s monitor stream. Before calling this method, you should confirm that the value of the status.streamStatus property for the stream bound to your broadcast is active.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.LiveBroadcastUpdateCall.html'
+                               title='google_youtube3::LiveBroadcastUpdateCall'>LiveBroadcastUpdateCall</a></td>
+                        <td class='docblock short'><p>Updates a broadcast. For example, you could modify the broadcast settings defined in the liveBroadcast resource&#39;s contentDetails object.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.LiveStream.html'
+                               title='google_youtube3::LiveStream'>LiveStream</a></td>
+                        <td class='docblock short'><p>A live stream describes a live ingestion point.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.LiveStreamContentDetails.html'
+                               title='google_youtube3::LiveStreamContentDetails'>LiveStreamContentDetails</a></td>
+                        <td class='docblock short'><p>Detailed settings of a stream.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.LiveStreamDeleteCall.html'
+                               title='google_youtube3::LiveStreamDeleteCall'>LiveStreamDeleteCall</a></td>
+                        <td class='docblock short'><p>Deletes a video stream.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.LiveStreamInsertCall.html'
+                               title='google_youtube3::LiveStreamInsertCall'>LiveStreamInsertCall</a></td>
+                        <td class='docblock short'><p>Creates a video stream. The stream enables you to send your video to YouTube, which can then broadcast the video to your audience.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.LiveStreamListCall.html'
+                               title='google_youtube3::LiveStreamListCall'>LiveStreamListCall</a></td>
+                        <td class='docblock short'><p>Returns a list of video streams that match the API request parameters.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.LiveStreamListResponse.html'
+                               title='google_youtube3::LiveStreamListResponse'>LiveStreamListResponse</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.LiveStreamMethods.html'
+                               title='google_youtube3::LiveStreamMethods'>LiveStreamMethods</a></td>
+                        <td class='docblock short'><p>A builder providing access to all methods supported on <em>liveStream</em> resources.
+It is not used directly, but through the <code>YouTube</code> hub.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.LiveStreamSnippet.html'
+                               title='google_youtube3::LiveStreamSnippet'>LiveStreamSnippet</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.LiveStreamStatus.html'
+                               title='google_youtube3::LiveStreamStatus'>LiveStreamStatus</a></td>
+                        <td class='docblock short'><p>Brief description of the live stream status.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.LiveStreamUpdateCall.html'
+                               title='google_youtube3::LiveStreamUpdateCall'>LiveStreamUpdateCall</a></td>
+                        <td class='docblock short'><p>Updates a video stream. If the properties that you want to change cannot be updated, then you need to create a new stream with the proper settings.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.LocalizedProperty.html'
+                               title='google_youtube3::LocalizedProperty'>LocalizedProperty</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.LocalizedString.html'
+                               title='google_youtube3::LocalizedString'>LocalizedString</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.MethodInfo.html'
+                               title='google_youtube3::MethodInfo'>MethodInfo</a></td>
+                        <td class='docblock short'><p>Contains information about an API request.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.MonitorStreamInfo.html'
+                               title='google_youtube3::MonitorStreamInfo'>MonitorStreamInfo</a></td>
+                        <td class='docblock short'><p>Settings and Info of the monitor stream</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.MultiPartReader.html'
+                               title='google_youtube3::MultiPartReader'>MultiPartReader</a></td>
+                        <td class='docblock short'><p>Provides a <code>Read</code> interface that converts multiple parts into the protocol
+identified by <a href="https://tools.ietf.org/html/rfc2387">RFC2387</a>.
+<strong>Note</strong>: This implementation is just as rich as it needs to be to perform uploads
+to google APIs, and might not be a fully-featured implementation.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.PageInfo.html'
+                               title='google_youtube3::PageInfo'>PageInfo</a></td>
+                        <td class='docblock short'><p>Paging details for lists of resources, including total number of items available and number of resources returned in a single page.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Playlist.html'
+                               title='google_youtube3::Playlist'>Playlist</a></td>
+                        <td class='docblock short'><p>A playlist resource represents a YouTube playlist. A playlist is a collection of videos that can be viewed sequentially and shared with other users. A playlist can contain up to 200 videos, and YouTube does not limit the number of playlists that each user creates. By default, playlists are publicly visible to other users, but playlists can be public or private.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.PlaylistContentDetails.html'
+                               title='google_youtube3::PlaylistContentDetails'>PlaylistContentDetails</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.PlaylistDeleteCall.html'
+                               title='google_youtube3::PlaylistDeleteCall'>PlaylistDeleteCall</a></td>
+                        <td class='docblock short'><p>Deletes a playlist.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.PlaylistInsertCall.html'
+                               title='google_youtube3::PlaylistInsertCall'>PlaylistInsertCall</a></td>
+                        <td class='docblock short'><p>Creates a playlist.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.PlaylistItem.html'
+                               title='google_youtube3::PlaylistItem'>PlaylistItem</a></td>
+                        <td class='docblock short'><p>A playlistItem resource identifies another resource, such as a video, that is included in a playlist. In addition, the playlistItem  resource contains details about the included resource that pertain specifically to how that resource is used in that playlist.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.PlaylistItemContentDetails.html'
+                               title='google_youtube3::PlaylistItemContentDetails'>PlaylistItemContentDetails</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.PlaylistItemDeleteCall.html'
+                               title='google_youtube3::PlaylistItemDeleteCall'>PlaylistItemDeleteCall</a></td>
+                        <td class='docblock short'><p>Deletes a playlist item.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.PlaylistItemInsertCall.html'
+                               title='google_youtube3::PlaylistItemInsertCall'>PlaylistItemInsertCall</a></td>
+                        <td class='docblock short'><p>Adds a resource to a playlist.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.PlaylistItemListCall.html'
+                               title='google_youtube3::PlaylistItemListCall'>PlaylistItemListCall</a></td>
+                        <td class='docblock short'><p>Returns a collection of playlist items that match the API request parameters. You can retrieve all of the playlist items in a specified playlist or retrieve one or more playlist items by their unique IDs.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.PlaylistItemListResponse.html'
+                               title='google_youtube3::PlaylistItemListResponse'>PlaylistItemListResponse</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.PlaylistItemMethods.html'
+                               title='google_youtube3::PlaylistItemMethods'>PlaylistItemMethods</a></td>
+                        <td class='docblock short'><p>A builder providing access to all methods supported on <em>playlistItem</em> resources.
+It is not used directly, but through the <code>YouTube</code> hub.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.PlaylistItemSnippet.html'
+                               title='google_youtube3::PlaylistItemSnippet'>PlaylistItemSnippet</a></td>
+                        <td class='docblock short'><p>Basic details about a playlist, including title, description and thumbnails.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.PlaylistItemStatus.html'
+                               title='google_youtube3::PlaylistItemStatus'>PlaylistItemStatus</a></td>
+                        <td class='docblock short'><p>Information about the playlist item&#39;s privacy status.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.PlaylistItemUpdateCall.html'
+                               title='google_youtube3::PlaylistItemUpdateCall'>PlaylistItemUpdateCall</a></td>
+                        <td class='docblock short'><p>Modifies a playlist item. For example, you could update the item&#39;s position in the playlist.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.PlaylistListCall.html'
+                               title='google_youtube3::PlaylistListCall'>PlaylistListCall</a></td>
+                        <td class='docblock short'><p>Returns a collection of playlists that match the API request parameters. For example, you can retrieve all playlists that the authenticated user owns, or you can retrieve one or more playlists by their unique IDs.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.PlaylistListResponse.html'
+                               title='google_youtube3::PlaylistListResponse'>PlaylistListResponse</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.PlaylistLocalization.html'
+                               title='google_youtube3::PlaylistLocalization'>PlaylistLocalization</a></td>
+                        <td class='docblock short'><p>Playlist localization setting</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.PlaylistMethods.html'
+                               title='google_youtube3::PlaylistMethods'>PlaylistMethods</a></td>
+                        <td class='docblock short'><p>A builder providing access to all methods supported on <em>playlist</em> resources.
+It is not used directly, but through the <code>YouTube</code> hub.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.PlaylistPlayer.html'
+                               title='google_youtube3::PlaylistPlayer'>PlaylistPlayer</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.PlaylistSnippet.html'
+                               title='google_youtube3::PlaylistSnippet'>PlaylistSnippet</a></td>
+                        <td class='docblock short'><p>Basic details about a playlist, including title, description and thumbnails.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.PlaylistStatus.html'
+                               title='google_youtube3::PlaylistStatus'>PlaylistStatus</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.PlaylistUpdateCall.html'
+                               title='google_youtube3::PlaylistUpdateCall'>PlaylistUpdateCall</a></td>
+                        <td class='docblock short'><p>Modifies a playlist. For example, you could change a playlist&#39;s title, description, or privacy status.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.PromotedItem.html'
+                               title='google_youtube3::PromotedItem'>PromotedItem</a></td>
+                        <td class='docblock short'><p>Describes a single promoted item.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.PromotedItemId.html'
+                               title='google_youtube3::PromotedItemId'>PromotedItemId</a></td>
+                        <td class='docblock short'><p>Describes a single promoted item id. It is a union of various possible types.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.PropertyValue.html'
+                               title='google_youtube3::PropertyValue'>PropertyValue</a></td>
+                        <td class='docblock short'><p>A pair Property / Value.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ResourceId.html'
+                               title='google_youtube3::ResourceId'>ResourceId</a></td>
+                        <td class='docblock short'><p>A resource id is a generic reference that points to another YouTube resource.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.SearchListCall.html'
+                               title='google_youtube3::SearchListCall'>SearchListCall</a></td>
+                        <td class='docblock short'><p>Returns a collection of search results that match the query parameters specified in the API request. By default, a search result set identifies matching video, channel, and playlist resources, but you can also configure queries to only retrieve a specific type of resource.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.SearchListResponse.html'
+                               title='google_youtube3::SearchListResponse'>SearchListResponse</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.SearchMethods.html'
+                               title='google_youtube3::SearchMethods'>SearchMethods</a></td>
+                        <td class='docblock short'><p>A builder providing access to all methods supported on <em>search</em> resources.
+It is not used directly, but through the <code>YouTube</code> hub.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.SearchResult.html'
+                               title='google_youtube3::SearchResult'>SearchResult</a></td>
+                        <td class='docblock short'><p>A search result contains information about a YouTube video, channel, or playlist that matches the search parameters specified in an API request. While a search result points to a uniquely identifiable resource, like a video, it does not have its own persistent data.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.SearchResultSnippet.html'
+                               title='google_youtube3::SearchResultSnippet'>SearchResultSnippet</a></td>
+                        <td class='docblock short'><p>Basic details about a search result, including title, description and thumbnails of the item referenced by the search result.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Subscription.html'
+                               title='google_youtube3::Subscription'>Subscription</a></td>
+                        <td class='docblock short'><p>A subscription resource contains information about a YouTube user subscription. A subscription notifies a user when new videos are added to a channel or when another user takes one of several actions on YouTube, such as uploading a video, rating a video, or commenting on a video.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.SubscriptionContentDetails.html'
+                               title='google_youtube3::SubscriptionContentDetails'>SubscriptionContentDetails</a></td>
+                        <td class='docblock short'><p>Details about the content to witch a subscription refers.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.SubscriptionDeleteCall.html'
+                               title='google_youtube3::SubscriptionDeleteCall'>SubscriptionDeleteCall</a></td>
+                        <td class='docblock short'><p>Deletes a subscription.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.SubscriptionInsertCall.html'
+                               title='google_youtube3::SubscriptionInsertCall'>SubscriptionInsertCall</a></td>
+                        <td class='docblock short'><p>Adds a subscription for the authenticated user&#39;s channel.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.SubscriptionListCall.html'
+                               title='google_youtube3::SubscriptionListCall'>SubscriptionListCall</a></td>
+                        <td class='docblock short'><p>Returns subscription resources that match the API request criteria.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.SubscriptionListResponse.html'
+                               title='google_youtube3::SubscriptionListResponse'>SubscriptionListResponse</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.SubscriptionMethods.html'
+                               title='google_youtube3::SubscriptionMethods'>SubscriptionMethods</a></td>
+                        <td class='docblock short'><p>A builder providing access to all methods supported on <em>subscription</em> resources.
+It is not used directly, but through the <code>YouTube</code> hub.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.SubscriptionSnippet.html'
+                               title='google_youtube3::SubscriptionSnippet'>SubscriptionSnippet</a></td>
+                        <td class='docblock short'><p>Basic details about a subscription, including title, description and thumbnails of the subscribed item.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.SubscriptionSubscriberSnippet.html'
+                               title='google_youtube3::SubscriptionSubscriberSnippet'>SubscriptionSubscriberSnippet</a></td>
+                        <td class='docblock short'><p>Basic details about a subscription&#39;s subscriber including title, description, channel ID and thumbnails.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Thumbnail.html'
+                               title='google_youtube3::Thumbnail'>Thumbnail</a></td>
+                        <td class='docblock short'><p>A thumbnail is an image representing a YouTube resource.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ThumbnailDetails.html'
+                               title='google_youtube3::ThumbnailDetails'>ThumbnailDetails</a></td>
+                        <td class='docblock short'><p>Internal representation of thumbnails for a YouTube resource.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ThumbnailMethods.html'
+                               title='google_youtube3::ThumbnailMethods'>ThumbnailMethods</a></td>
+                        <td class='docblock short'><p>A builder providing access to all methods supported on <em>thumbnail</em> resources.
+It is not used directly, but through the <code>YouTube</code> hub.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ThumbnailSetCall.html'
+                               title='google_youtube3::ThumbnailSetCall'>ThumbnailSetCall</a></td>
+                        <td class='docblock short'><p>Uploads a custom video thumbnail to YouTube and sets it for a video.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ThumbnailSetResponse.html'
+                               title='google_youtube3::ThumbnailSetResponse'>ThumbnailSetResponse</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.TokenPagination.html'
+                               title='google_youtube3::TokenPagination'>TokenPagination</a></td>
+                        <td class='docblock short'><p>Stub token pagination template to suppress results.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Video.html'
+                               title='google_youtube3::Video'>Video</a></td>
+                        <td class='docblock short'><p>A video resource represents a YouTube video.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.VideoAbuseReport.html'
+                               title='google_youtube3::VideoAbuseReport'>VideoAbuseReport</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.VideoAbuseReportReason.html'
+                               title='google_youtube3::VideoAbuseReportReason'>VideoAbuseReportReason</a></td>
+                        <td class='docblock short'><p>A videoAbuseReportReason resource identifies a reason that a video could be reported as abusive. Video abuse report reasons are used with video.ReportAbuse.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.VideoAbuseReportReasonId.html'
+                               title='google_youtube3::VideoAbuseReportReasonId'>VideoAbuseReportReasonId</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.VideoAbuseReportReasonListCall.html'
+                               title='google_youtube3::VideoAbuseReportReasonListCall'>VideoAbuseReportReasonListCall</a></td>
+                        <td class='docblock short'><p>Returns a list of abuse reasons that can be used for reporting abusive videos.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.VideoAbuseReportReasonListResponse.html'
+                               title='google_youtube3::VideoAbuseReportReasonListResponse'>VideoAbuseReportReasonListResponse</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.VideoAbuseReportReasonMethods.html'
+                               title='google_youtube3::VideoAbuseReportReasonMethods'>VideoAbuseReportReasonMethods</a></td>
+                        <td class='docblock short'><p>A builder providing access to all methods supported on <em>videoAbuseReportReason</em> resources.
+It is not used directly, but through the <code>YouTube</code> hub.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.VideoAbuseReportReasonSnippet.html'
+                               title='google_youtube3::VideoAbuseReportReasonSnippet'>VideoAbuseReportReasonSnippet</a></td>
+                        <td class='docblock short'><p>Basic details about a video category, such as its localized title.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.VideoAbuseReportSecondaryReason.html'
+                               title='google_youtube3::VideoAbuseReportSecondaryReason'>VideoAbuseReportSecondaryReason</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.VideoAgeGating.html'
+                               title='google_youtube3::VideoAgeGating'>VideoAgeGating</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.VideoCategory.html'
+                               title='google_youtube3::VideoCategory'>VideoCategory</a></td>
+                        <td class='docblock short'><p>A videoCategory resource identifies a category that has been or could be associated with uploaded videos.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.VideoCategoryListCall.html'
+                               title='google_youtube3::VideoCategoryListCall'>VideoCategoryListCall</a></td>
+                        <td class='docblock short'><p>Returns a list of categories that can be associated with YouTube videos.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.VideoCategoryListResponse.html'
+                               title='google_youtube3::VideoCategoryListResponse'>VideoCategoryListResponse</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.VideoCategoryMethods.html'
+                               title='google_youtube3::VideoCategoryMethods'>VideoCategoryMethods</a></td>
+                        <td class='docblock short'><p>A builder providing access to all methods supported on <em>videoCategory</em> resources.
+It is not used directly, but through the <code>YouTube</code> hub.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.VideoCategorySnippet.html'
+                               title='google_youtube3::VideoCategorySnippet'>VideoCategorySnippet</a></td>
+                        <td class='docblock short'><p>Basic details about a video category, such as its localized title.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.VideoContentDetails.html'
+                               title='google_youtube3::VideoContentDetails'>VideoContentDetails</a></td>
+                        <td class='docblock short'><p>Details about the content of a YouTube Video.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.VideoContentDetailsRegionRestriction.html'
+                               title='google_youtube3::VideoContentDetailsRegionRestriction'>VideoContentDetailsRegionRestriction</a></td>
+                        <td class='docblock short'><p>DEPRECATED Region restriction of the video.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.VideoConversionPing.html'
+                               title='google_youtube3::VideoConversionPing'>VideoConversionPing</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.VideoConversionPings.html'
+                               title='google_youtube3::VideoConversionPings'>VideoConversionPings</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.VideoDeleteCall.html'
+                               title='google_youtube3::VideoDeleteCall'>VideoDeleteCall</a></td>
+                        <td class='docblock short'><p>Deletes a YouTube video.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.VideoFileDetails.html'
+                               title='google_youtube3::VideoFileDetails'>VideoFileDetails</a></td>
+                        <td class='docblock short'><p>Describes original video file properties, including technical details about audio and video streams, but also metadata information like content length, digitization time, or geotagging information.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.VideoFileDetailsAudioStream.html'
+                               title='google_youtube3::VideoFileDetailsAudioStream'>VideoFileDetailsAudioStream</a></td>
+                        <td class='docblock short'><p>Information about an audio stream.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.VideoFileDetailsVideoStream.html'
+                               title='google_youtube3::VideoFileDetailsVideoStream'>VideoFileDetailsVideoStream</a></td>
+                        <td class='docblock short'><p>Information about a video stream.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.VideoGetRatingCall.html'
+                               title='google_youtube3::VideoGetRatingCall'>VideoGetRatingCall</a></td>
+                        <td class='docblock short'><p>Retrieves the ratings that the authorized user gave to a list of specified videos.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.VideoGetRatingResponse.html'
+                               title='google_youtube3::VideoGetRatingResponse'>VideoGetRatingResponse</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.VideoInsertCall.html'
+                               title='google_youtube3::VideoInsertCall'>VideoInsertCall</a></td>
+                        <td class='docblock short'><p>Uploads a video to YouTube and optionally sets the video&#39;s metadata.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.VideoListCall.html'
+                               title='google_youtube3::VideoListCall'>VideoListCall</a></td>
+                        <td class='docblock short'><p>Returns a list of videos that match the API request parameters.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.VideoListResponse.html'
+                               title='google_youtube3::VideoListResponse'>VideoListResponse</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.VideoLiveStreamingDetails.html'
+                               title='google_youtube3::VideoLiveStreamingDetails'>VideoLiveStreamingDetails</a></td>
+                        <td class='docblock short'><p>Details about the live streaming metadata.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.VideoLocalization.html'
+                               title='google_youtube3::VideoLocalization'>VideoLocalization</a></td>
+                        <td class='docblock short'><p>Localized versions of certain video properties (e.g. title).</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.VideoMethods.html'
+                               title='google_youtube3::VideoMethods'>VideoMethods</a></td>
+                        <td class='docblock short'><p>A builder providing access to all methods supported on <em>video</em> resources.
+It is not used directly, but through the <code>YouTube</code> hub.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.VideoMonetizationDetails.html'
+                               title='google_youtube3::VideoMonetizationDetails'>VideoMonetizationDetails</a></td>
+                        <td class='docblock short'><p>Details about monetization of a YouTube Video.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.VideoPlayer.html'
+                               title='google_youtube3::VideoPlayer'>VideoPlayer</a></td>
+                        <td class='docblock short'><p>Player to be used for a video playback.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.VideoProcessingDetails.html'
+                               title='google_youtube3::VideoProcessingDetails'>VideoProcessingDetails</a></td>
+                        <td class='docblock short'><p>Describes processing status and progress and availability of some other Video resource parts.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.VideoProcessingDetailsProcessingProgress.html'
+                               title='google_youtube3::VideoProcessingDetailsProcessingProgress'>VideoProcessingDetailsProcessingProgress</a></td>
+                        <td class='docblock short'><p>Video processing progress and completion time estimate.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.VideoProjectDetails.html'
+                               title='google_youtube3::VideoProjectDetails'>VideoProjectDetails</a></td>
+                        <td class='docblock short'><p>Project specific details about the content of a YouTube Video.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.VideoRateCall.html'
+                               title='google_youtube3::VideoRateCall'>VideoRateCall</a></td>
+                        <td class='docblock short'><p>Add a like or dislike rating to a video or remove a rating from a video.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.VideoRating.html'
+                               title='google_youtube3::VideoRating'>VideoRating</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.VideoRecordingDetails.html'
+                               title='google_youtube3::VideoRecordingDetails'>VideoRecordingDetails</a></td>
+                        <td class='docblock short'><p>Recording information associated with the video.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.VideoReportAbuseCall.html'
+                               title='google_youtube3::VideoReportAbuseCall'>VideoReportAbuseCall</a></td>
+                        <td class='docblock short'><p>Report abuse for a video.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.VideoSnippet.html'
+                               title='google_youtube3::VideoSnippet'>VideoSnippet</a></td>
+                        <td class='docblock short'><p>Basic details about a video, including title, description, uploader, thumbnails and category.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.VideoStatistics.html'
+                               title='google_youtube3::VideoStatistics'>VideoStatistics</a></td>
+                        <td class='docblock short'><p>Statistics about the video, such as the number of times the video was viewed or liked.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.VideoStatus.html'
+                               title='google_youtube3::VideoStatus'>VideoStatus</a></td>
+                        <td class='docblock short'><p>Basic details about a video category, such as its localized title.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.VideoSuggestions.html'
+                               title='google_youtube3::VideoSuggestions'>VideoSuggestions</a></td>
+                        <td class='docblock short'><p>Specifies suggestions on how to improve video content, including encoding hints, tag suggestions, and editor suggestions.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.VideoSuggestionsTagSuggestion.html'
+                               title='google_youtube3::VideoSuggestionsTagSuggestion'>VideoSuggestionsTagSuggestion</a></td>
+                        <td class='docblock short'><p>A single tag suggestion with it&#39;s relevance information.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.VideoTopicDetails.html'
+                               title='google_youtube3::VideoTopicDetails'>VideoTopicDetails</a></td>
+                        <td class='docblock short'><p>Freebase topic information related to the video.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.VideoUpdateCall.html'
+                               title='google_youtube3::VideoUpdateCall'>VideoUpdateCall</a></td>
+                        <td class='docblock short'><p>Updates a video&#39;s metadata.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.WatchSettings.html'
+                               title='google_youtube3::WatchSettings'>WatchSettings</a></td>
+                        <td class='docblock short'><p>Branding properties for the watch.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.WatermarkMethods.html'
+                               title='google_youtube3::WatermarkMethods'>WatermarkMethods</a></td>
+                        <td class='docblock short'><p>A builder providing access to all methods supported on <em>watermark</em> resources.
+It is not used directly, but through the <code>YouTube</code> hub.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.WatermarkSetCall.html'
+                               title='google_youtube3::WatermarkSetCall'>WatermarkSetCall</a></td>
+                        <td class='docblock short'><p>Uploads a watermark image to YouTube and sets it for a channel.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.WatermarkUnsetCall.html'
+                               title='google_youtube3::WatermarkUnsetCall'>WatermarkUnsetCall</a></td>
+                        <td class='docblock short'><p>Deletes a watermark.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.YouTube.html'
+                               title='google_youtube3::YouTube'>YouTube</a></td>
+                        <td class='docblock short'><p>Central instance to access all YouTube related resource activities</p>
+</td>
+                    </tr>
+                </table><h2 id='enums' class='section-header'><a href="#enums">Enums</a></h2>
+<table>
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='enum' href='enum.Error.html'
+                               title='google_youtube3::Error'>Error</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='enum' href='enum.Scope.html'
+                               title='google_youtube3::Scope'>Scope</a></td>
+                        <td class='docblock short'><p>Identifies the an OAuth2 authorization scope.
+A scope is needed when requesting an
+<a href="https://developers.google.com/youtube/v3/guides/authentication">authorization token</a>.</p>
+</td>
+                    </tr>
+                </table><h2 id='traits' class='section-header'><a href="#traits">Traits</a></h2>
+<table>
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.CallBuilder.html'
+                               title='google_youtube3::CallBuilder'>CallBuilder</a></td>
+                        <td class='docblock short'><p>Identifies types which represent builders for a particular resource method</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.Delegate.html'
+                               title='google_youtube3::Delegate'>Delegate</a></td>
+                        <td class='docblock short'><p>A trait specifying functionality to help controlling any request performed by the API.
+The trait has a conservative default implementation.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.Hub.html'
+                               title='google_youtube3::Hub'>Hub</a></td>
+                        <td class='docblock short'><p>Identifies the Hub. There is only one per library, this trait is supposed
+to make intended use more explicit.
+The hub allows to access all resource methods more easily.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.MethodsBuilder.html'
+                               title='google_youtube3::MethodsBuilder'>MethodsBuilder</a></td>
+                        <td class='docblock short'><p>Identifies types for building methods of a particular resource type</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.NestedType.html'
+                               title='google_youtube3::NestedType'>NestedType</a></td>
+                        <td class='docblock short'><p>Identifies types which are only used by other types internally.
+They have no special meaning, this trait just marks them for completeness.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.Part.html'
+                               title='google_youtube3::Part'>Part</a></td>
+                        <td class='docblock short'><p>Identifies types which are only used as part of other types, which
+usually are carrying the <code>Resource</code> trait.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.ReadSeek.html'
+                               title='google_youtube3::ReadSeek'>ReadSeek</a></td>
+                        <td class='docblock short'><p>A utility to specify reader types which provide seeking capabilities too</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.RequestValue.html'
+                               title='google_youtube3::RequestValue'>RequestValue</a></td>
+                        <td class='docblock short'><p>Identifies types which are used in API requests.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.Resource.html'
+                               title='google_youtube3::Resource'>Resource</a></td>
+                        <td class='docblock short'><p>Identifies types which can be inserted and deleted.
+Types with this trait are most commonly used by clients of this API.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.ResponseResult.html'
+                               title='google_youtube3::ResponseResult'>ResponseResult</a></td>
+                        <td class='docblock short'><p>Identifies types which are used in API responses.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.ToParts.html'
+                               title='google_youtube3::ToParts'>ToParts</a></td>
+                        <td class='docblock short'><p>A trait for all types that can convert themselves into a <em>parts</em> string</p>
+</td>
+                    </tr>
+                </table><h2 id='functions' class='section-header'><a href="#functions">Functions</a></h2>
+<table>
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.remove_json_null_values.html'
+                               title='google_youtube3::remove_json_null_values'>remove_json_null_values</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                </table><h2 id='types' class='section-header'><a href="#types">Type Definitions</a></h2>
+<table>
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='type' href='type.Result.html'
+                               title='google_youtube3::Result'>Result</a></td>
+                        <td class='docblock short'><p>A universal result type used as return for all calls.</p>
+</td>
+                    </tr>
+                </table></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <div id="help" class="hidden">
+        <div class="shortcuts">
+            <h1>Keyboard shortcuts</h1>
+            <dl>
+                <dt>?</dt>
+                <dd>Show this help dialog</dd>
+                <dt>S</dt>
+                <dd>Focus the search field</dd>
+                <dt>&larrb;</dt>
+                <dd>Move up in search results</dd>
+                <dt>&rarrb;</dt>
+                <dd>Move down in search results</dd>
+                <dt>&#9166;</dt>
+                <dd>Go to active search result</dd>
+            </dl>
+        </div>
+        <div class="infos">
+            <h1>Search tricks</h1>
+            <p>
+                Prefix searches with a type followed by a colon (e.g.
+                <code>fn:</code>) to restrict the search to a given type.
+            </p>
+            <p>
+                Accepted types are: <code>fn</code>, <code>mod</code>,
+                <code>struct</code>, <code>enum</code>,
+                <code>trait</code>, <code>typedef</code> (or
+                <code>tdef</code>).
+            </p>
+        </div>
+    </div>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "google_youtube3";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../jquery.js"></script>
+    <script src="../main.js"></script>
+    
+    <script async src="../search-index.js"></script>
+</body>
+</html>

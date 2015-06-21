@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `google_bigquery2` crate.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, google_bigquery2">
+
+    <title>google_bigquery2 - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../main.css">
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <section class="sidebar">
+        
+        <p class='location'></p><script>window.sidebarCurrent = {name: 'google_bigquery2', ty: 'mod', relpath: '../'};</script>
+    </section>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press 'S' to search, '?' for more options..."
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content mod">
+<h1 class='fqn'><span class='in-band'>Crate <a class='mod' href=''>google_bigquery2</a><wbr></span><span class='out-of-band'><a href='stability.html'>[stability]</a> <span id='render-detail'>
+            <a id="collapse-all" href="#">[-]</a>&nbsp;<a id="expand-all" href="#">[+]</a>
+        </span><a id='src-0' href='../src/google_bigquery2/lib.rs.html#5-200'>[src]</a></span></h1>
+<div class='docblock'><p>This documentation was generated from <em>bigquery</em> crate version <em>0.1.8+20150326</em>, where <em>20150326</em> is the exact revision of the <em>bigquery:v2</em> schema built by the <a href="http://www.makotemplates.org/">mako</a> code generator <em>v0.1.8</em>.</p>
+
+<p>Everything else about the <em>bigquery</em> <em>v2</em> API can be found at the
+<a href="https://cloud.google.com/bigquery/">official documentation site</a>.
+The original source code is <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/bigquery2">on github</a>.</p>
+
+<h1 id="features" class='section-header'><a
+                           href="#features">Features</a></h1>
+<p>Handle the following <em>Resources</em> with ease from the central <a href="struct.Bigquery.html">hub</a> ... </p>
+
+<ul>
+<li><a href="struct.Dataset.html">datasets</a>
+
+<ul>
+<li><a href="struct.DatasetDeleteCall.html"><em>delete</em></a>, <a href="struct.DatasetGetCall.html"><em>get</em></a>, <a href="struct.DatasetInsertCall.html"><em>insert</em></a>, <a href="struct.DatasetListCall.html"><em>list</em></a>, <a href="struct.DatasetPatchCall.html"><em>patch</em></a> and <a href="struct.DatasetUpdateCall.html"><em>update</em></a></li>
+</ul></li>
+<li><a href="struct.Job.html">jobs</a>
+
+<ul>
+<li><a href="struct.JobGetCall.html"><em>get</em></a>, <a href="struct.JobGetQueryResultCall.html"><em>get query results</em></a>, <a href="struct.JobInsertCall.html"><em>insert</em></a>, <a href="struct.JobListCall.html"><em>list</em></a> and <a href="struct.JobQueryCall.html"><em>query</em></a></li>
+</ul></li>
+<li>projects
+
+<ul>
+<li><a href="struct.ProjectListCall.html"><em>list</em></a></li>
+</ul></li>
+<li>tabledata
+
+<ul>
+<li><a href="struct.TabledataInsertAllCall.html"><em>insert all</em></a> and <a href="struct.TabledataListCall.html"><em>list</em></a></li>
+</ul></li>
+<li><a href="struct.Table.html">tables</a>
+
+<ul>
+<li><a href="struct.TableDeleteCall.html"><em>delete</em></a>, <a href="struct.TableGetCall.html"><em>get</em></a>, <a href="struct.TableInsertCall.html"><em>insert</em></a>, <a href="struct.TableListCall.html"><em>list</em></a>, <a href="struct.TablePatchCall.html"><em>patch</em></a> and <a href="struct.TableUpdateCall.html"><em>update</em></a></li>
+</ul></li>
+</ul>
+
+<p>Upload supported by ...</p>
+
+<ul>
+<li><a href="struct.JobInsertCall.html"><em>insert jobs</em></a></li>
+</ul>
+
+<p>Not what you are looking for ? Find all other Google APIs in their Rust <a href="../index.html">documentation index</a>.</p>
+
+<h1 id="structure-of-this-library" class='section-header'><a
+                           href="#structure-of-this-library">Structure of this Library</a></h1>
+<p>The API is structured into the following primary items:</p>
+
+<ul>
+<li><strong><a href="struct.Bigquery.html">Hub</a></strong>
+
+<ul>
+<li>a central object to maintain state and allow accessing all <em>Activities</em></li>
+<li>creates <a href="trait.MethodsBuilder.html"><em>Method Builders</em></a> which in turn
+allow access to individual <a href="trait.CallBuilder.html"><em>Call Builders</em></a></li>
+</ul></li>
+<li><strong><a href="trait.Resource.html">Resources</a></strong>
+
+<ul>
+<li>primary types that you can apply <em>Activities</em> to</li>
+<li>a collection of properties and <em>Parts</em></li>
+<li><strong><a href="trait.Part.html">Parts</a></strong>
+
+<ul>
+<li>a collection of properties</li>
+<li>never directly used in <em>Activities</em></li>
+</ul></li>
+</ul></li>
+<li><strong><a href="trait.CallBuilder.html">Activities</a></strong>
+
+<ul>
+<li>operations to apply to <em>Resources</em></li>
+</ul></li>
+</ul>
+
+<p>All <em>structures</em> are marked with applicable traits to further categorize them and ease browsing.</p>
+
+<p>Generally speaking, you can invoke <em>Activities</em> like this:</p>
+<pre id='rust-example-rendered' class='rust '>
+<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>resource</span>().<span class='ident'>activity</span>(...).<span class='ident'>doit</span>()
+</pre>
+
+<p>Or specifically ...</p>
+<pre id='rust-example-rendered' class='rust '>
+<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>tables</span>().<span class='ident'>update</span>(...).<span class='ident'>doit</span>()
+<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>tables</span>().<span class='ident'>insert</span>(...).<span class='ident'>doit</span>()
+<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>tables</span>().<span class='ident'>list</span>(...).<span class='ident'>doit</span>()
+<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>tables</span>().<span class='ident'>delete</span>(...).<span class='ident'>doit</span>()
+<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>tables</span>().<span class='ident'>get</span>(...).<span class='ident'>doit</span>()
+<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>tables</span>().<span class='ident'>patch</span>(...).<span class='ident'>doit</span>()
+</pre>
+
+<p>The <code>resource()</code> and <code>activity(...)</code> calls create <a href="http://en.wikipedia.org/wiki/Builder_pattern">builders</a>. The second one dealing with <code>Activities</code> 
+supports various methods to configure the impending operation (not shown here). It is made such that all required arguments have to be 
+specified right away (i.e. <code>(...)</code>), whereas all optional ones can be <a href="http://en.wikipedia.org/wiki/Builder_pattern">build up</a> as desired.
+The <code>doit()</code> method performs the actual communication with the server and returns the respective result.</p>
+
+<h1 id="usage" class='section-header'><a
+                           href="#usage">Usage</a></h1>
+<h2 id="setting-up-your-project" class='section-header'><a
+                           href="#setting-up-your-project">Setting up your Project</a></h2>
+<p>To use this library, you would put the following lines into your <code>Cargo.toml</code> file:</p>
+
+<pre><code class="language-toml">[dependencies]
+google-bigquery2 = &quot;*&quot;
+</code></pre>
+
+<h2 id="a-complete-example" class='section-header'><a
+                           href="#a-complete-example">A complete example</a></h2><pre id='rust-example-rendered' class='rust '>
+<span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>hyper</span>;
+<span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>yup_oauth2</span> <span class='kw'>as</span> <span class='ident'>oauth2</span>;
+<span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>google_bigquery2</span> <span class='kw'>as</span> <span class='ident'>bigquery2</span>;
+<span class='kw'>use</span> <span class='ident'>bigquery2</span>::<span class='ident'>Table</span>;
+<span class='kw'>use</span> <span class='ident'>bigquery2</span>::{<span class='prelude-ty'>Result</span>, <span class='ident'>Error</span>};
+<span class='kw'>use</span> <span class='ident'>std</span>::<span class='ident'>default</span>::<span class='ident'>Default</span>;
+<span class='kw'>use</span> <span class='ident'>oauth2</span>::{<span class='ident'>Authenticator</span>, <span class='ident'>DefaultAuthenticatorDelegate</span>, <span class='ident'>ApplicationSecret</span>, <span class='ident'>MemoryStorage</span>};
+<span class='kw'>use</span> <span class='ident'>bigquery2</span>::<span class='ident'>Bigquery</span>;
+ 
+<span class='comment'>// Get an ApplicationSecret instance by some means. It contains the `client_id` and </span>
+<span class='comment'>// `client_secret`, among other things.</span>
+<span class='kw'>let</span> <span class='ident'>secret</span>: <span class='ident'>ApplicationSecret</span> <span class='op'>=</span> <span class='ident'>Default</span>::<span class='ident'>default</span>();
+<span class='comment'>// Instantiate the authenticator. It will choose a suitable authentication flow for you, </span>
+<span class='comment'>// unless you replace  `None` with the desired Flow.</span>
+<span class='comment'>// Provide your own `AuthenticatorDelegate` to adjust the way it operates and get feedback about </span>
+<span class='comment'>// what&#39;s going on. You probably want to bring in your own `TokenStorage` to persist tokens and</span>
+<span class='comment'>// retrieve them from storage.</span>
+<span class='kw'>let</span> <span class='ident'>auth</span> <span class='op'>=</span> <span class='ident'>Authenticator</span>::<span class='ident'>new</span>(<span class='kw-2'>&amp;</span><span class='ident'>secret</span>, <span class='ident'>DefaultAuthenticatorDelegate</span>,
+                              <span class='ident'>hyper</span>::<span class='ident'>Client</span>::<span class='ident'>new</span>(),
+                              <span class='op'>&lt;</span><span class='ident'>MemoryStorage</span> <span class='kw'>as</span> <span class='ident'>Default</span><span class='op'>&gt;</span>::<span class='ident'>default</span>(), <span class='prelude-val'>None</span>);
+<span class='kw'>let</span> <span class='kw-2'>mut</span> <span class='ident'>hub</span> <span class='op'>=</span> <span class='ident'>Bigquery</span>::<span class='ident'>new</span>(<span class='ident'>hyper</span>::<span class='ident'>Client</span>::<span class='ident'>new</span>(), <span class='ident'>auth</span>);
+<span class='comment'>// As the method needs a request, you would usually fill it with the desired information</span>
+<span class='comment'>// into the respective structure. Some of the parts shown here might not be applicable !</span>
+<span class='comment'>// Values shown here are possibly random and not representative !</span>
+<span class='kw'>let</span> <span class='kw-2'>mut</span> <span class='ident'>req</span> <span class='op'>=</span> <span class='ident'>Table</span>::<span class='ident'>default</span>();
+ 
+<span class='comment'>// You can configure optional parameters by calling the respective setters at will, and</span>
+<span class='comment'>// execute the final call using `doit()`.</span>
+<span class='comment'>// Values shown here are possibly random and not representative !</span>
+<span class='kw'>let</span> <span class='ident'>result</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>tables</span>().<span class='ident'>update</span>(<span class='ident'>req</span>, <span class='string'>&quot;projectId&quot;</span>, <span class='string'>&quot;datasetId&quot;</span>, <span class='string'>&quot;tableId&quot;</span>)
+             .<span class='ident'>doit</span>();
+ 
+<span class='kw'>match</span> <span class='ident'>result</span> {
+    <span class='prelude-val'>Err</span>(<span class='ident'>e</span>) <span class='op'>=&gt;</span> <span class='kw'>match</span> <span class='ident'>e</span> {
+        <span class='comment'>// The Error enum provides details about what exactly happened.</span>
+        <span class='comment'>// You can also just use its `Debug`, `Display` or `Error` traits</span>
+         <span class='ident'>Error</span>::<span class='ident'>HttpError</span>(_)
+        <span class='op'>|</span><span class='ident'>Error</span>::<span class='ident'>MissingAPIKey</span>
+        <span class='op'>|</span><span class='ident'>Error</span>::<span class='ident'>MissingToken</span>(_)
+        <span class='op'>|</span><span class='ident'>Error</span>::<span class='ident'>Cancelled</span>
+        <span class='op'>|</span><span class='ident'>Error</span>::<span class='ident'>UploadSizeLimitExceeded</span>(_, _)
+        <span class='op'>|</span><span class='ident'>Error</span>::<span class='ident'>Failure</span>(_)
+        <span class='op'>|</span><span class='ident'>Error</span>::<span class='ident'>BadRequest</span>(_)
+        <span class='op'>|</span><span class='ident'>Error</span>::<span class='ident'>FieldClash</span>(_)
+        <span class='op'>|</span><span class='ident'>Error</span>::<span class='ident'>JsonDecodeError</span>(_, _) <span class='op'>=&gt;</span> <span class='macro'>println</span><span class='macro'>!</span>(<span class='string'>&quot;{}&quot;</span>, <span class='ident'>e</span>),
+    },
+    <span class='prelude-val'>Ok</span>(<span class='ident'>res</span>) <span class='op'>=&gt;</span> <span class='macro'>println</span><span class='macro'>!</span>(<span class='string'>&quot;Success: {:?}&quot;</span>, <span class='ident'>res</span>),
+}
+</pre>
+
+<h2 id="handling-errors" class='section-header'><a
+                           href="#handling-errors">Handling Errors</a></h2>
+<p>All errors produced by the system are provided either as <a href="enum.Result.html">Result</a> enumeration as return value of 
+the doit() methods, or handed as possibly intermediate results to either the 
+<a href="trait.Delegate.html">Hub Delegate</a>, or the <a href="../yup-oauth2/trait.AuthenticatorDelegate.html">Authenticator Delegate</a>.</p>
+
+<p>When delegates handle errors or intermediate values, they may have a chance to instruct the system to retry. This 
+makes the system potentially resilient to all kinds of errors.</p>
+
+<h2 id="uploads-and-downloads" class='section-header'><a
+                           href="#uploads-and-downloads">Uploads and Downloads</a></h2>
+<p>If a method supports downloads, the response body, which is part of the <a href="enum.Result.html">Result</a>, should be
+read by you to obtain the media.
+If such a method also supports a <a href="trait.ResponseResult.html">Response Result</a>, it will return that by default.
+You can see it as meta-data for the actual media. To trigger a media download, you will have to set up the builder by making
+this call: <code>.param(&quot;alt&quot;, &quot;media&quot;)</code>.</p>
+
+<p>Methods supporting uploads can do so using up to 2 different protocols: 
+<em>simple</em> and <em>resumable</em>. The distinctiveness of each is represented by customized 
+<code>doit(...)</code> methods, which are then named <code>upload(...)</code> and <code>upload_resumable(...)</code> respectively.</p>
+
+<h2 id="customization-and-callbacks" class='section-header'><a
+                           href="#customization-and-callbacks">Customization and Callbacks</a></h2>
+<p>You may alter the way an <code>doit()</code> method is called by providing a <a href="trait.Delegate.html">delegate</a> to the 
+<a href="trait.CallBuilder.html">Method Builder</a> before making the final <code>doit()</code> call. 
+Respective methods will be called to provide progress information, as well as determine whether the system should 
+retry on failure.</p>
+
+<p>The <a href="trait.Delegate.html">delegate trait</a> is default-implemented, allowing you to customize it with minimal effort.</p>
+
+<h2 id="optional-parts-in-server-requests" class='section-header'><a
+                           href="#optional-parts-in-server-requests">Optional Parts in Server-Requests</a></h2>
+<p>All structures provided by this library are made to be <a href="trait.RequestValue.html">enocodable</a> and 
+<a href="trait.ResponseResult.html">decodable</a> via <em>json</em>. Optionals are used to indicate that partial requests are responses 
+are valid.
+Most optionals are are considered <a href="trait.Part.html">Parts</a> which are identifiable by name, which will be sent to 
+the server to indicate either the set parts of the request or the desired parts in the response.</p>
+
+<h2 id="builder-arguments" class='section-header'><a
+                           href="#builder-arguments">Builder Arguments</a></h2>
+<p>Using <a href="trait.CallBuilder.html">method builders</a>, you are able to prepare an action call by repeatedly calling it&#39;s methods.
+These will always take a single argument, for which the following statements are true.</p>
+
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Plain_old_data_structure">PODs</a> are handed by copy</li>
+<li>strings are passed as <code>&amp;str</code></li>
+<li><a href="trait.RequestValue.html">request values</a> are moved</li>
+</ul>
+
+<p>Arguments will always be copied or cloned into the builder, to make them independent of their original life times.</p>
+</div><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
+<table>
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Bigquery.html'
+                               title='google_bigquery2::Bigquery'>Bigquery</a></td>
+                        <td class='docblock short'><p>Central instance to access all Bigquery related resource activities</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.CsvOptions.html'
+                               title='google_bigquery2::CsvOptions'>CsvOptions</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Dataset.html'
+                               title='google_bigquery2::Dataset'>Dataset</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.DatasetAccess.html'
+                               title='google_bigquery2::DatasetAccess'>DatasetAccess</a></td>
+                        <td class='docblock short'><p>[Optional] An array of objects that define dataset access for one or more entities. You can set this property when inserting or updating a dataset in order to control who is allowed to access the data. If unspecified at dataset creation time, BigQuery adds default dataset access for the following entities: access.specialGroup: projectReaders; access.role: READER; access.specialGroup: projectWriters; access.role: WRITER; access.specialGroup: projectOwners; access.role: OWNER; access.userByEmail: [dataset creator email]; access.role: OWNER;</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.DatasetDeleteCall.html'
+                               title='google_bigquery2::DatasetDeleteCall'>DatasetDeleteCall</a></td>
+                        <td class='docblock short'><p>Deletes the dataset specified by the datasetId value. Before you can delete a dataset, you must delete all its tables, either manually or by specifying deleteContents. Immediately after deletion, you can create another dataset with the same name.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.DatasetGetCall.html'
+                               title='google_bigquery2::DatasetGetCall'>DatasetGetCall</a></td>
+                        <td class='docblock short'><p>Returns the dataset specified by datasetID.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.DatasetInsertCall.html'
+                               title='google_bigquery2::DatasetInsertCall'>DatasetInsertCall</a></td>
+                        <td class='docblock short'><p>Creates a new empty dataset.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.DatasetList.html'
+                               title='google_bigquery2::DatasetList'>DatasetList</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.DatasetListCall.html'
+                               title='google_bigquery2::DatasetListCall'>DatasetListCall</a></td>
+                        <td class='docblock short'><p>Lists all datasets in the specified project to which you have been granted the READER dataset role.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.DatasetListDatasets.html'
+                               title='google_bigquery2::DatasetListDatasets'>DatasetListDatasets</a></td>
+                        <td class='docblock short'><p>An array of the dataset resources in the project. Each resource contains basic information. For full information about a particular dataset resource, use the Datasets: get method. This property is omitted when there are no datasets in the project.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.DatasetMethods.html'
+                               title='google_bigquery2::DatasetMethods'>DatasetMethods</a></td>
+                        <td class='docblock short'><p>A builder providing access to all methods supported on <em>dataset</em> resources.
+It is not used directly, but through the <code>Bigquery</code> hub.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.DatasetPatchCall.html'
+                               title='google_bigquery2::DatasetPatchCall'>DatasetPatchCall</a></td>
+                        <td class='docblock short'><p>Updates information in an existing dataset. The update method replaces the entire dataset resource, whereas the patch method only replaces fields that are provided in the submitted dataset resource. This method supports patch semantics.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.DatasetReference.html'
+                               title='google_bigquery2::DatasetReference'>DatasetReference</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.DatasetUpdateCall.html'
+                               title='google_bigquery2::DatasetUpdateCall'>DatasetUpdateCall</a></td>
+                        <td class='docblock short'><p>Updates information in an existing dataset. The update method replaces the entire dataset resource, whereas the patch method only replaces fields that are provided in the submitted dataset resource.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.DefaultDelegate.html'
+                               title='google_bigquery2::DefaultDelegate'>DefaultDelegate</a></td>
+                        <td class='docblock short'><p>A delegate with a conservative default implementation, which is used if no other delegate is
+set.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ErrorProto.html'
+                               title='google_bigquery2::ErrorProto'>ErrorProto</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ErrorResponse.html'
+                               title='google_bigquery2::ErrorResponse'>ErrorResponse</a></td>
+                        <td class='docblock short'><p>A utility to represent detailed errors we might see in case there are BadRequests.
+The latter happen if the sent parameters or request structures are unsound</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ExternalDataConfiguration.html'
+                               title='google_bigquery2::ExternalDataConfiguration'>ExternalDataConfiguration</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.GetQueryResultsResponse.html'
+                               title='google_bigquery2::GetQueryResultsResponse'>GetQueryResultsResponse</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Job.html'
+                               title='google_bigquery2::Job'>Job</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.JobConfiguration.html'
+                               title='google_bigquery2::JobConfiguration'>JobConfiguration</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.JobConfigurationExtract.html'
+                               title='google_bigquery2::JobConfigurationExtract'>JobConfigurationExtract</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.JobConfigurationLink.html'
+                               title='google_bigquery2::JobConfigurationLink'>JobConfigurationLink</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.JobConfigurationLoad.html'
+                               title='google_bigquery2::JobConfigurationLoad'>JobConfigurationLoad</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.JobConfigurationQuery.html'
+                               title='google_bigquery2::JobConfigurationQuery'>JobConfigurationQuery</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.JobConfigurationTableCopy.html'
+                               title='google_bigquery2::JobConfigurationTableCopy'>JobConfigurationTableCopy</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.JobGetCall.html'
+                               title='google_bigquery2::JobGetCall'>JobGetCall</a></td>
+                        <td class='docblock short'><p>Returns information about a specific job. Job information is available for a six month period after creation. Requires that you&#39;re the person who ran the job, or have the Is Owner project role.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.JobGetQueryResultCall.html'
+                               title='google_bigquery2::JobGetQueryResultCall'>JobGetQueryResultCall</a></td>
+                        <td class='docblock short'><p>Retrieves the results of a query job.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.JobInsertCall.html'
+                               title='google_bigquery2::JobInsertCall'>JobInsertCall</a></td>
+                        <td class='docblock short'><p>Starts a new asynchronous job. Requires the Can View project role.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.JobList.html'
+                               title='google_bigquery2::JobList'>JobList</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.JobListCall.html'
+                               title='google_bigquery2::JobListCall'>JobListCall</a></td>
+                        <td class='docblock short'><p>Lists all jobs that you started in the specified project. The job list returns in reverse chronological order of when the jobs were created, starting with the most recent job created. Requires the Can View project role, or the Is Owner project role if you set the allUsers property.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.JobListJobs.html'
+                               title='google_bigquery2::JobListJobs'>JobListJobs</a></td>
+                        <td class='docblock short'><p>List of jobs that were requested.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.JobMethods.html'
+                               title='google_bigquery2::JobMethods'>JobMethods</a></td>
+                        <td class='docblock short'><p>A builder providing access to all methods supported on <em>job</em> resources.
+It is not used directly, but through the <code>Bigquery</code> hub.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.JobQueryCall.html'
+                               title='google_bigquery2::JobQueryCall'>JobQueryCall</a></td>
+                        <td class='docblock short'><p>Runs a BigQuery SQL query synchronously and returns query results if the query completes within a specified timeout.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.JobReference.html'
+                               title='google_bigquery2::JobReference'>JobReference</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.JobStatistics.html'
+                               title='google_bigquery2::JobStatistics'>JobStatistics</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.JobStatistics2.html'
+                               title='google_bigquery2::JobStatistics2'>JobStatistics2</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.JobStatistics3.html'
+                               title='google_bigquery2::JobStatistics3'>JobStatistics3</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.JobStatistics4.html'
+                               title='google_bigquery2::JobStatistics4'>JobStatistics4</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.JobStatus.html'
+                               title='google_bigquery2::JobStatus'>JobStatus</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.JsonObject.html'
+                               title='google_bigquery2::JsonObject'>JsonObject</a></td>
+                        <td class='docblock short'><p>Represents a single JSON object.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.JsonValue.html'
+                               title='google_bigquery2::JsonValue'>JsonValue</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.MethodInfo.html'
+                               title='google_bigquery2::MethodInfo'>MethodInfo</a></td>
+                        <td class='docblock short'><p>Contains information about an API request.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.MultiPartReader.html'
+                               title='google_bigquery2::MultiPartReader'>MultiPartReader</a></td>
+                        <td class='docblock short'><p>Provides a <code>Read</code> interface that converts multiple parts into the protocol
+identified by <a href="https://tools.ietf.org/html/rfc2387">RFC2387</a>.
+<strong>Note</strong>: This implementation is just as rich as it needs to be to perform uploads
+to google APIs, and might not be a fully-featured implementation.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ProjectList.html'
+                               title='google_bigquery2::ProjectList'>ProjectList</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ProjectListCall.html'
+                               title='google_bigquery2::ProjectListCall'>ProjectListCall</a></td>
+                        <td class='docblock short'><p>Lists all projects to which you have been granted any project role.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ProjectListProjects.html'
+                               title='google_bigquery2::ProjectListProjects'>ProjectListProjects</a></td>
+                        <td class='docblock short'><p>Projects to which you have at least READ access.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ProjectMethods.html'
+                               title='google_bigquery2::ProjectMethods'>ProjectMethods</a></td>
+                        <td class='docblock short'><p>A builder providing access to all methods supported on <em>project</em> resources.
+It is not used directly, but through the <code>Bigquery</code> hub.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ProjectReference.html'
+                               title='google_bigquery2::ProjectReference'>ProjectReference</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.QueryRequest.html'
+                               title='google_bigquery2::QueryRequest'>QueryRequest</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.QueryResponse.html'
+                               title='google_bigquery2::QueryResponse'>QueryResponse</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Table.html'
+                               title='google_bigquery2::Table'>Table</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.TableCell.html'
+                               title='google_bigquery2::TableCell'>TableCell</a></td>
+                        <td class='docblock short'><p>Represents a single cell in the result set. Users of the java client can detect whether their value result is null by calling &#39;com.google.api.client.util.Data.isNull(cell.getV())&#39;.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.TableDataInsertAllRequest.html'
+                               title='google_bigquery2::TableDataInsertAllRequest'>TableDataInsertAllRequest</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.TableDataInsertAllRequestRows.html'
+                               title='google_bigquery2::TableDataInsertAllRequestRows'>TableDataInsertAllRequestRows</a></td>
+                        <td class='docblock short'><p>The rows to insert.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.TableDataInsertAllResponse.html'
+                               title='google_bigquery2::TableDataInsertAllResponse'>TableDataInsertAllResponse</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.TableDataInsertAllResponseInsertErrors.html'
+                               title='google_bigquery2::TableDataInsertAllResponseInsertErrors'>TableDataInsertAllResponseInsertErrors</a></td>
+                        <td class='docblock short'><p>An array of errors for rows that were not inserted.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.TableDataList.html'
+                               title='google_bigquery2::TableDataList'>TableDataList</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.TableDeleteCall.html'
+                               title='google_bigquery2::TableDeleteCall'>TableDeleteCall</a></td>
+                        <td class='docblock short'><p>Deletes the table specified by tableId from the dataset. If the table contains data, all the data will be deleted.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.TableFieldSchema.html'
+                               title='google_bigquery2::TableFieldSchema'>TableFieldSchema</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.TableGetCall.html'
+                               title='google_bigquery2::TableGetCall'>TableGetCall</a></td>
+                        <td class='docblock short'><p>Gets the specified table resource by table ID. This method does not return the data in the table, it only returns the table resource, which describes the structure of this table.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.TableInsertCall.html'
+                               title='google_bigquery2::TableInsertCall'>TableInsertCall</a></td>
+                        <td class='docblock short'><p>Creates a new, empty table in the dataset.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.TableList.html'
+                               title='google_bigquery2::TableList'>TableList</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.TableListCall.html'
+                               title='google_bigquery2::TableListCall'>TableListCall</a></td>
+                        <td class='docblock short'><p>Lists all tables in the specified dataset. Requires the READER dataset role.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.TableListTables.html'
+                               title='google_bigquery2::TableListTables'>TableListTables</a></td>
+                        <td class='docblock short'><p>Tables in the requested dataset.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.TableMethods.html'
+                               title='google_bigquery2::TableMethods'>TableMethods</a></td>
+                        <td class='docblock short'><p>A builder providing access to all methods supported on <em>table</em> resources.
+It is not used directly, but through the <code>Bigquery</code> hub.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.TablePatchCall.html'
+                               title='google_bigquery2::TablePatchCall'>TablePatchCall</a></td>
+                        <td class='docblock short'><p>Updates information in an existing table. The update method replaces the entire table resource, whereas the patch method only replaces fields that are provided in the submitted table resource. This method supports patch semantics.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.TableReference.html'
+                               title='google_bigquery2::TableReference'>TableReference</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.TableRow.html'
+                               title='google_bigquery2::TableRow'>TableRow</a></td>
+                        <td class='docblock short'><p>Represents a single row in the result set, consisting of one or more fields.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.TableSchema.html'
+                               title='google_bigquery2::TableSchema'>TableSchema</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.TableUpdateCall.html'
+                               title='google_bigquery2::TableUpdateCall'>TableUpdateCall</a></td>
+                        <td class='docblock short'><p>Updates information in an existing table. The update method replaces the entire table resource, whereas the patch method only replaces fields that are provided in the submitted table resource.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.TabledataInsertAllCall.html'
+                               title='google_bigquery2::TabledataInsertAllCall'>TabledataInsertAllCall</a></td>
+                        <td class='docblock short'><p>Streams data into BigQuery one record at a time without needing to run a load job. Requires the WRITER dataset role.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.TabledataListCall.html'
+                               title='google_bigquery2::TabledataListCall'>TabledataListCall</a></td>
+                        <td class='docblock short'><p>Retrieves table data from a specified set of rows. Requires the READER dataset role.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.TabledataMethods.html'
+                               title='google_bigquery2::TabledataMethods'>TabledataMethods</a></td>
+                        <td class='docblock short'><p>A builder providing access to all methods supported on <em>tabledata</em> resources.
+It is not used directly, but through the <code>Bigquery</code> hub.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ViewDefinition.html'
+                               title='google_bigquery2::ViewDefinition'>ViewDefinition</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                </table><h2 id='enums' class='section-header'><a href="#enums">Enums</a></h2>
+<table>
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='enum' href='enum.Error.html'
+                               title='google_bigquery2::Error'>Error</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='enum' href='enum.Scope.html'
+                               title='google_bigquery2::Scope'>Scope</a></td>
+                        <td class='docblock short'><p>Identifies the an OAuth2 authorization scope.
+A scope is needed when requesting an
+<a href="https://developers.google.com/youtube/v3/guides/authentication">authorization token</a>.</p>
+</td>
+                    </tr>
+                </table><h2 id='traits' class='section-header'><a href="#traits">Traits</a></h2>
+<table>
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.CallBuilder.html'
+                               title='google_bigquery2::CallBuilder'>CallBuilder</a></td>
+                        <td class='docblock short'><p>Identifies types which represent builders for a particular resource method</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.Delegate.html'
+                               title='google_bigquery2::Delegate'>Delegate</a></td>
+                        <td class='docblock short'><p>A trait specifying functionality to help controlling any request performed by the API.
+The trait has a conservative default implementation.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.Hub.html'
+                               title='google_bigquery2::Hub'>Hub</a></td>
+                        <td class='docblock short'><p>Identifies the Hub. There is only one per library, this trait is supposed
+to make intended use more explicit.
+The hub allows to access all resource methods more easily.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.MethodsBuilder.html'
+                               title='google_bigquery2::MethodsBuilder'>MethodsBuilder</a></td>
+                        <td class='docblock short'><p>Identifies types for building methods of a particular resource type</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.NestedType.html'
+                               title='google_bigquery2::NestedType'>NestedType</a></td>
+                        <td class='docblock short'><p>Identifies types which are only used by other types internally.
+They have no special meaning, this trait just marks them for completeness.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.Part.html'
+                               title='google_bigquery2::Part'>Part</a></td>
+                        <td class='docblock short'><p>Identifies types which are only used as part of other types, which
+usually are carrying the <code>Resource</code> trait.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.ReadSeek.html'
+                               title='google_bigquery2::ReadSeek'>ReadSeek</a></td>
+                        <td class='docblock short'><p>A utility to specify reader types which provide seeking capabilities too</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.RequestValue.html'
+                               title='google_bigquery2::RequestValue'>RequestValue</a></td>
+                        <td class='docblock short'><p>Identifies types which are used in API requests.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.Resource.html'
+                               title='google_bigquery2::Resource'>Resource</a></td>
+                        <td class='docblock short'><p>Identifies types which can be inserted and deleted.
+Types with this trait are most commonly used by clients of this API.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.ResponseResult.html'
+                               title='google_bigquery2::ResponseResult'>ResponseResult</a></td>
+                        <td class='docblock short'><p>Identifies types which are used in API responses.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.ToParts.html'
+                               title='google_bigquery2::ToParts'>ToParts</a></td>
+                        <td class='docblock short'><p>A trait for all types that can convert themselves into a <em>parts</em> string</p>
+</td>
+                    </tr>
+                </table><h2 id='functions' class='section-header'><a href="#functions">Functions</a></h2>
+<table>
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.remove_json_null_values.html'
+                               title='google_bigquery2::remove_json_null_values'>remove_json_null_values</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                </table><h2 id='types' class='section-header'><a href="#types">Type Definitions</a></h2>
+<table>
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='type' href='type.Result.html'
+                               title='google_bigquery2::Result'>Result</a></td>
+                        <td class='docblock short'><p>A universal result type used as return for all calls.</p>
+</td>
+                    </tr>
+                </table></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <div id="help" class="hidden">
+        <div class="shortcuts">
+            <h1>Keyboard shortcuts</h1>
+            <dl>
+                <dt>?</dt>
+                <dd>Show this help dialog</dd>
+                <dt>S</dt>
+                <dd>Focus the search field</dd>
+                <dt>&larrb;</dt>
+                <dd>Move up in search results</dd>
+                <dt>&rarrb;</dt>
+                <dd>Move down in search results</dd>
+                <dt>&#9166;</dt>
+                <dd>Go to active search result</dd>
+            </dl>
+        </div>
+        <div class="infos">
+            <h1>Search tricks</h1>
+            <p>
+                Prefix searches with a type followed by a colon (e.g.
+                <code>fn:</code>) to restrict the search to a given type.
+            </p>
+            <p>
+                Accepted types are: <code>fn</code>, <code>mod</code>,
+                <code>struct</code>, <code>enum</code>,
+                <code>trait</code>, <code>typedef</code> (or
+                <code>tdef</code>).
+            </p>
+        </div>
+    </div>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "google_bigquery2";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../jquery.js"></script>
+    <script src="../main.js"></script>
+    
+    <script async src="../search-index.js"></script>
+</body>
+</html>

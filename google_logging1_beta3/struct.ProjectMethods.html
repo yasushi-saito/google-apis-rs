@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `ProjectMethods` struct in crate `google_logging1_beta3`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, ProjectMethods">
+
+    <title>google_logging1_beta3::ProjectMethods - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../main.css">
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <section class="sidebar">
+        
+        <p class='location'><a href='index.html'>google_logging1_beta3</a></p><script>window.sidebarCurrent = {name: 'ProjectMethods', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </section>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press 'S' to search, '?' for more options..."
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content struct">
+<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_logging1_beta3</a>::<wbr><a class='struct' href=''>ProjectMethods</a><wbr></span><span class='out-of-band'><span id='render-detail'>
+            <a id="collapse-all" href="#">[-]</a>&nbsp;<a id="expand-all" href="#">[+]</a>
+        </span><a id='src-14930' href='../src/google_logging1_beta3///home/byron/dev/rust/google-apis-rs/target/debug/build/google-logging1_beta3-9cb84c8dba86eecd/out/lib.rs.html#3971-3973'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct ProjectMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
+    // some fields omitted
+}</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>project</em> resources.
+It is not used directly, but through the <code>Logging</code> hub.</p>
+
+<h1 id="example" class='section-header'><a
+                           href="#example">Example</a></h1>
+<p>Instantiate a resource builder</p>
+<pre id='rust-example-rendered' class='rust '>
+<span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>hyper</span>;
+<span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>yup_oauth2</span> <span class='kw'>as</span> <span class='ident'>oauth2</span>;
+<span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>google_logging1_beta3</span> <span class='kw'>as</span> <span class='ident'>logging1_beta3</span>;
+ 
+<span class='kw'>use</span> <span class='ident'>std</span>::<span class='ident'>default</span>::<span class='ident'>Default</span>;
+<span class='kw'>use</span> <span class='ident'>oauth2</span>::{<span class='ident'>Authenticator</span>, <span class='ident'>DefaultAuthenticatorDelegate</span>, <span class='ident'>ApplicationSecret</span>, <span class='ident'>MemoryStorage</span>};
+<span class='kw'>use</span> <span class='ident'>logging1_beta3</span>::<span class='ident'>Logging</span>;
+ 
+<span class='kw'>let</span> <span class='ident'>secret</span>: <span class='ident'>ApplicationSecret</span> <span class='op'>=</span> <span class='ident'>Default</span>::<span class='ident'>default</span>();
+<span class='kw'>let</span> <span class='ident'>auth</span> <span class='op'>=</span> <span class='ident'>Authenticator</span>::<span class='ident'>new</span>(<span class='kw-2'>&amp;</span><span class='ident'>secret</span>, <span class='ident'>DefaultAuthenticatorDelegate</span>,
+                              <span class='ident'>hyper</span>::<span class='ident'>Client</span>::<span class='ident'>new</span>(),
+                              <span class='op'>&lt;</span><span class='ident'>MemoryStorage</span> <span class='kw'>as</span> <span class='ident'>Default</span><span class='op'>&gt;</span>::<span class='ident'>default</span>(), <span class='prelude-val'>None</span>);
+<span class='kw'>let</span> <span class='kw-2'>mut</span> <span class='ident'>hub</span> <span class='op'>=</span> <span class='ident'>Logging</span>::<span class='ident'>new</span>(<span class='ident'>hyper</span>::<span class='ident'>Client</span>::<span class='ident'>new</span>(), <span class='ident'>auth</span>);
+<span class='comment'>// Usually you wouldn&#39;t bind this to a variable, but keep calling *CallBuilders*</span>
+<span class='comment'>// like `log_services_indexes_list(...)`, `log_services_list(...)`, `log_services_sinks_create(...)`, `log_services_sinks_delete(...)`, `log_services_sinks_get(...)`, `log_services_sinks_list(...)`, `log_services_sinks_update(...)`, `logs_delete(...)`, `logs_entries_write(...)`, `logs_list(...)`, `logs_sinks_create(...)`, `logs_sinks_delete(...)`, `logs_sinks_get(...)`, `logs_sinks_list(...)` and `logs_sinks_update(...)`</span>
+<span class='comment'>// to build up your call.</span>
+<span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>projects</span>();
+</pre>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_logging1_beta3/struct.ProjectMethods.html' title='google_logging1_beta3::ProjectMethods'>ProjectMethods</a>&lt;'a, C, A&gt;</code></h3><div class='impl-items'><h4 id='method.log_services_list' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.log_services_list' class='fnname'>log_services_list</a>(&amp;self, projects_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_logging1_beta3/struct.ProjectLogServiceListCall.html' title='google_logging1_beta3::ProjectLogServiceListCall'>ProjectLogServiceListCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Lists log services associated with log entries ingested for a project.</p>
+
+<h1 id="arguments" class='section-header'><a
+                           href="#arguments">Arguments</a></h1>
+<ul>
+<li><code>projectsId</code> - Part of <code>projectName</code>. The project resource whose services are to be listed.</li>
+</ul>
+</div><h4 id='method.logs_list' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.logs_list' class='fnname'>logs_list</a>(&amp;self, projects_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_logging1_beta3/struct.ProjectLogListCall.html' title='google_logging1_beta3::ProjectLogListCall'>ProjectLogListCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Lists log resources belonging to the specified project.</p>
+
+<h1 id="arguments" class='section-header'><a
+                           href="#arguments">Arguments</a></h1>
+<ul>
+<li><code>projectsId</code> - Part of <code>projectName</code>. The project name for which to list the log resources.</li>
+</ul>
+</div><h4 id='method.logs_sinks_get' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.logs_sinks_get' class='fnname'>logs_sinks_get</a>(&amp;self, projects_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, logs_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, sinks_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_logging1_beta3/struct.ProjectLogSinkGetCall.html' title='google_logging1_beta3::ProjectLogSinkGetCall'>ProjectLogSinkGetCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Gets the specified log sink resource.</p>
+
+<h1 id="arguments" class='section-header'><a
+                           href="#arguments">Arguments</a></h1>
+<ul>
+<li><code>projectsId</code> - Part of <code>sinkName</code>. The name of the sink resource to return.</li>
+<li><code>logsId</code> - Part of <code>sinkName</code>. See documentation of <code>projectsId</code>.</li>
+<li><code>sinksId</code> - Part of <code>sinkName</code>. See documentation of <code>projectsId</code>.</li>
+</ul>
+</div><h4 id='method.log_services_sinks_update' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.log_services_sinks_update' class='fnname'>log_services_sinks_update</a>(&amp;self, request: <a class='struct' href='../google_logging1_beta3/struct.LogSink.html' title='google_logging1_beta3::LogSink'>LogSink</a>, projects_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, log_services_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, sinks_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_logging1_beta3/struct.ProjectLogServiceSinkUpdateCall.html' title='google_logging1_beta3::ProjectLogServiceSinkUpdateCall'>ProjectLogServiceSinkUpdateCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Creates or update the specified log service sink resource.</p>
+
+<h1 id="arguments" class='section-header'><a
+                           href="#arguments">Arguments</a></h1>
+<ul>
+<li><code>request</code> - No description provided.</li>
+<li><code>projectsId</code> - Part of <code>sinkName</code>. The name of the sink to update.</li>
+<li><code>logServicesId</code> - Part of <code>sinkName</code>. See documentation of <code>projectsId</code>.</li>
+<li><code>sinksId</code> - Part of <code>sinkName</code>. See documentation of <code>projectsId</code>.</li>
+</ul>
+</div><h4 id='method.logs_entries_write' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.logs_entries_write' class='fnname'>logs_entries_write</a>(&amp;self, request: <a class='struct' href='../google_logging1_beta3/struct.WriteLogEntriesRequest.html' title='google_logging1_beta3::WriteLogEntriesRequest'>WriteLogEntriesRequest</a>, projects_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, logs_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_logging1_beta3/struct.ProjectLogEntryWriteCall.html' title='google_logging1_beta3::ProjectLogEntryWriteCall'>ProjectLogEntryWriteCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Creates one or more log entries in a log. You must supply a list of <code>LogEntry</code> objects, named <code>entries</code>. Each <code>LogEntry</code> object must contain a payload object and a <code>LogEntryMetadata</code> object that describes the entry. You must fill in all the fields of the entry, metadata, and payload. You can also supply a map, <code>commonLabels</code>, that supplies default (key, value) data for the <code>entries[].metadata.labels</code> maps, saving you the trouble of creating identical copies for each entry.</p>
+
+<h1 id="arguments" class='section-header'><a
+                           href="#arguments">Arguments</a></h1>
+<ul>
+<li><code>request</code> - No description provided.</li>
+<li><code>projectsId</code> - Part of <code>logName</code>. The name of the log resource into which to insert the log entries.</li>
+<li><code>logsId</code> - Part of <code>logName</code>. See documentation of <code>projectsId</code>.</li>
+</ul>
+</div><h4 id='method.log_services_sinks_delete' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.log_services_sinks_delete' class='fnname'>log_services_sinks_delete</a>(&amp;self, projects_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, log_services_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, sinks_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_logging1_beta3/struct.ProjectLogServiceSinkDeleteCall.html' title='google_logging1_beta3::ProjectLogServiceSinkDeleteCall'>ProjectLogServiceSinkDeleteCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Deletes the specified log service sink.</p>
+
+<h1 id="arguments" class='section-header'><a
+                           href="#arguments">Arguments</a></h1>
+<ul>
+<li><code>projectsId</code> - Part of <code>sinkName</code>. The name of the sink to delete.</li>
+<li><code>logServicesId</code> - Part of <code>sinkName</code>. See documentation of <code>projectsId</code>.</li>
+<li><code>sinksId</code> - Part of <code>sinkName</code>. See documentation of <code>projectsId</code>.</li>
+</ul>
+</div><h4 id='method.log_services_indexes_list' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.log_services_indexes_list' class='fnname'>log_services_indexes_list</a>(&amp;self, projects_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, log_services_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_logging1_beta3/struct.ProjectLogServiceIndexeListCall.html' title='google_logging1_beta3::ProjectLogServiceIndexeListCall'>ProjectLogServiceIndexeListCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Lists log service indexes associated with a log service.</p>
+
+<h1 id="arguments" class='section-header'><a
+                           href="#arguments">Arguments</a></h1>
+<ul>
+<li><code>projectsId</code> - Part of <code>serviceName</code>. A log service resource of the form <code>/projects/*/logServices/*</code>. The service indexes of the log service are returned. Example: <code>&quot;/projects/myProj/logServices/appengine.googleapis.com&quot;</code>.</li>
+<li><code>logServicesId</code> - Part of <code>serviceName</code>. See documentation of <code>projectsId</code>.</li>
+</ul>
+</div><h4 id='method.logs_sinks_list' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.logs_sinks_list' class='fnname'>logs_sinks_list</a>(&amp;self, projects_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, logs_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_logging1_beta3/struct.ProjectLogSinkListCall.html' title='google_logging1_beta3::ProjectLogSinkListCall'>ProjectLogSinkListCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Lists log sinks associated with the specified log.</p>
+
+<h1 id="arguments" class='section-header'><a
+                           href="#arguments">Arguments</a></h1>
+<ul>
+<li><code>projectsId</code> - Part of <code>logName</code>. The log for which to list sinks.</li>
+<li><code>logsId</code> - Part of <code>logName</code>. See documentation of <code>projectsId</code>.</li>
+</ul>
+</div><h4 id='method.logs_sinks_update' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.logs_sinks_update' class='fnname'>logs_sinks_update</a>(&amp;self, request: <a class='struct' href='../google_logging1_beta3/struct.LogSink.html' title='google_logging1_beta3::LogSink'>LogSink</a>, projects_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, logs_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, sinks_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_logging1_beta3/struct.ProjectLogSinkUpdateCall.html' title='google_logging1_beta3::ProjectLogSinkUpdateCall'>ProjectLogSinkUpdateCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Creates or updates the specified log sink resource.</p>
+
+<h1 id="arguments" class='section-header'><a
+                           href="#arguments">Arguments</a></h1>
+<ul>
+<li><code>request</code> - No description provided.</li>
+<li><code>projectsId</code> - Part of <code>sinkName</code>. The name of the sink to update.</li>
+<li><code>logsId</code> - Part of <code>sinkName</code>. See documentation of <code>projectsId</code>.</li>
+<li><code>sinksId</code> - Part of <code>sinkName</code>. See documentation of <code>projectsId</code>.</li>
+</ul>
+</div><h4 id='method.log_services_sinks_create' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.log_services_sinks_create' class='fnname'>log_services_sinks_create</a>(&amp;self, request: <a class='struct' href='../google_logging1_beta3/struct.LogSink.html' title='google_logging1_beta3::LogSink'>LogSink</a>, projects_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, log_services_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_logging1_beta3/struct.ProjectLogServiceSinkCreateCall.html' title='google_logging1_beta3::ProjectLogServiceSinkCreateCall'>ProjectLogServiceSinkCreateCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Creates the specified log service sink resource.</p>
+
+<h1 id="arguments" class='section-header'><a
+                           href="#arguments">Arguments</a></h1>
+<ul>
+<li><code>request</code> - No description provided.</li>
+<li><code>projectsId</code> - Part of <code>serviceName</code>. The name of the service in which to create a sink.</li>
+<li><code>logServicesId</code> - Part of <code>serviceName</code>. See documentation of <code>projectsId</code>.</li>
+</ul>
+</div><h4 id='method.logs_sinks_delete' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.logs_sinks_delete' class='fnname'>logs_sinks_delete</a>(&amp;self, projects_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, logs_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, sinks_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_logging1_beta3/struct.ProjectLogSinkDeleteCall.html' title='google_logging1_beta3::ProjectLogSinkDeleteCall'>ProjectLogSinkDeleteCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Deletes the specified log sink resource.</p>
+
+<h1 id="arguments" class='section-header'><a
+                           href="#arguments">Arguments</a></h1>
+<ul>
+<li><code>projectsId</code> - Part of <code>sinkName</code>. The name of the sink to delete.</li>
+<li><code>logsId</code> - Part of <code>sinkName</code>. See documentation of <code>projectsId</code>.</li>
+<li><code>sinksId</code> - Part of <code>sinkName</code>. See documentation of <code>projectsId</code>.</li>
+</ul>
+</div><h4 id='method.logs_sinks_create' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.logs_sinks_create' class='fnname'>logs_sinks_create</a>(&amp;self, request: <a class='struct' href='../google_logging1_beta3/struct.LogSink.html' title='google_logging1_beta3::LogSink'>LogSink</a>, projects_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, logs_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_logging1_beta3/struct.ProjectLogSinkCreateCall.html' title='google_logging1_beta3::ProjectLogSinkCreateCall'>ProjectLogSinkCreateCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Creates the specified log sink resource.</p>
+
+<h1 id="arguments" class='section-header'><a
+                           href="#arguments">Arguments</a></h1>
+<ul>
+<li><code>request</code> - No description provided.</li>
+<li><code>projectsId</code> - Part of <code>logName</code>. The log in which to create a sink resource.</li>
+<li><code>logsId</code> - Part of <code>logName</code>. See documentation of <code>projectsId</code>.</li>
+</ul>
+</div><h4 id='method.log_services_sinks_get' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.log_services_sinks_get' class='fnname'>log_services_sinks_get</a>(&amp;self, projects_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, log_services_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, sinks_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_logging1_beta3/struct.ProjectLogServiceSinkGetCall.html' title='google_logging1_beta3::ProjectLogServiceSinkGetCall'>ProjectLogServiceSinkGetCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Gets the specified log service sink resource.</p>
+
+<h1 id="arguments" class='section-header'><a
+                           href="#arguments">Arguments</a></h1>
+<ul>
+<li><code>projectsId</code> - Part of <code>sinkName</code>. The name of the sink to return.</li>
+<li><code>logServicesId</code> - Part of <code>sinkName</code>. See documentation of <code>projectsId</code>.</li>
+<li><code>sinksId</code> - Part of <code>sinkName</code>. See documentation of <code>projectsId</code>.</li>
+</ul>
+</div><h4 id='method.log_services_sinks_list' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.log_services_sinks_list' class='fnname'>log_services_sinks_list</a>(&amp;self, projects_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, log_services_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_logging1_beta3/struct.ProjectLogServiceSinkListCall.html' title='google_logging1_beta3::ProjectLogServiceSinkListCall'>ProjectLogServiceSinkListCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Lists log service sinks associated with the specified service.</p>
+
+<h1 id="arguments" class='section-header'><a
+                           href="#arguments">Arguments</a></h1>
+<ul>
+<li><code>projectsId</code> - Part of <code>serviceName</code>. The name of the service for which to list sinks.</li>
+<li><code>logServicesId</code> - Part of <code>serviceName</code>. See documentation of <code>projectsId</code>.</li>
+</ul>
+</div><h4 id='method.logs_delete' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.logs_delete' class='fnname'>logs_delete</a>(&amp;self, projects_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, logs_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_logging1_beta3/struct.ProjectLogDeleteCall.html' title='google_logging1_beta3::ProjectLogDeleteCall'>ProjectLogDeleteCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Deletes the specified log resource and all log entries contained in it.</p>
+
+<h1 id="arguments" class='section-header'><a
+                           href="#arguments">Arguments</a></h1>
+<ul>
+<li><code>projectsId</code> - Part of <code>logName</code>. The log resource to delete.</li>
+<li><code>logsId</code> - Part of <code>logName</code>. See documentation of <code>projectsId</code>.</li>
+</ul>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_logging1_beta3/trait.MethodsBuilder.html' title='google_logging1_beta3::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_logging1_beta3/struct.ProjectMethods.html' title='google_logging1_beta3::ProjectMethods'>ProjectMethods</a>&lt;'a, C, A&gt;</code></h3><div class='impl-items'></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <div id="help" class="hidden">
+        <div class="shortcuts">
+            <h1>Keyboard shortcuts</h1>
+            <dl>
+                <dt>?</dt>
+                <dd>Show this help dialog</dd>
+                <dt>S</dt>
+                <dd>Focus the search field</dd>
+                <dt>&larrb;</dt>
+                <dd>Move up in search results</dd>
+                <dt>&rarrb;</dt>
+                <dd>Move down in search results</dd>
+                <dt>&#9166;</dt>
+                <dd>Go to active search result</dd>
+            </dl>
+        </div>
+        <div class="infos">
+            <h1>Search tricks</h1>
+            <p>
+                Prefix searches with a type followed by a colon (e.g.
+                <code>fn:</code>) to restrict the search to a given type.
+            </p>
+            <p>
+                Accepted types are: <code>fn</code>, <code>mod</code>,
+                <code>struct</code>, <code>enum</code>,
+                <code>trait</code>, <code>typedef</code> (or
+                <code>tdef</code>).
+            </p>
+        </div>
+    </div>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "google_logging1_beta3";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../jquery.js"></script>
+    <script src="../main.js"></script>
+    
+    <script async src="../search-index.js"></script>
+</body>
+</html>

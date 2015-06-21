@@ -1,0 +1,1342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `google_drive2` crate.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, google_drive2">
+
+    <title>google_drive2 - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../main.css">
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <section class="sidebar">
+        
+        <p class='location'></p><script>window.sidebarCurrent = {name: 'google_drive2', ty: 'mod', relpath: '../'};</script>
+    </section>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press 'S' to search, '?' for more options..."
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content mod">
+<h1 class='fqn'><span class='in-band'>Crate <a class='mod' href=''>google_drive2</a><wbr></span><span class='out-of-band'><a href='stability.html'>[stability]</a> <span id='render-detail'>
+            <a id="collapse-all" href="#">[-]</a>&nbsp;<a id="expand-all" href="#">[+]</a>
+        </span><a id='src-0' href='../src/google_drive2/lib.rs.html#5-250'>[src]</a></span></h1>
+<div class='docblock'><p>This documentation was generated from <em>drive</em> crate version <em>0.1.8+20150326</em>, where <em>20150326</em> is the exact revision of the <em>drive:v2</em> schema built by the <a href="http://www.makotemplates.org/">mako</a> code generator <em>v0.1.8</em>.</p>
+
+<p>Everything else about the <em>drive</em> <em>v2</em> API can be found at the
+<a href="https://developers.google.com/drive/">official documentation site</a>.
+The original source code is <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/drive2">on github</a>.</p>
+
+<h1 id="features" class='section-header'><a
+                           href="#features">Features</a></h1>
+<p>Handle the following <em>Resources</em> with ease from the central <a href="struct.Drive.html">hub</a> ... </p>
+
+<ul>
+<li><a href="struct.About.html">about</a>
+
+<ul>
+<li><a href="struct.AboutGetCall.html"><em>get</em></a></li>
+</ul></li>
+<li><a href="struct.App.html">apps</a>
+
+<ul>
+<li><a href="struct.AppGetCall.html"><em>get</em></a> and <a href="struct.AppListCall.html"><em>list</em></a></li>
+</ul></li>
+<li><a href="struct.Change.html">changes</a>
+
+<ul>
+<li><a href="struct.ChangeGetCall.html"><em>get</em></a>, <a href="struct.ChangeListCall.html"><em>list</em></a> and <a href="struct.ChangeWatchCall.html"><em>watch</em></a></li>
+</ul></li>
+<li><a href="struct.Channel.html">channels</a>
+
+<ul>
+<li><a href="struct.ChannelStopCall.html"><em>stop</em></a></li>
+</ul></li>
+<li>children
+
+<ul>
+<li><a href="struct.ChildrenDeleteCall.html"><em>delete</em></a>, <a href="struct.ChildrenGetCall.html"><em>get</em></a>, <a href="struct.ChildrenInsertCall.html"><em>insert</em></a> and <a href="struct.ChildrenListCall.html"><em>list</em></a></li>
+</ul></li>
+<li><a href="struct.Comment.html">comments</a>
+
+<ul>
+<li><a href="struct.CommentDeleteCall.html"><em>delete</em></a>, <a href="struct.CommentGetCall.html"><em>get</em></a>, <a href="struct.CommentInsertCall.html"><em>insert</em></a>, <a href="struct.CommentListCall.html"><em>list</em></a>, <a href="struct.CommentPatchCall.html"><em>patch</em></a> and <a href="struct.CommentUpdateCall.html"><em>update</em></a></li>
+</ul></li>
+<li><a href="struct.File.html">files</a>
+
+<ul>
+<li><a href="struct.FileCopyCall.html"><em>copy</em></a>, <a href="struct.FileDeleteCall.html"><em>delete</em></a>, <a href="struct.FileEmptyTrashCall.html"><em>empty trash</em></a>, <a href="struct.FileGetCall.html"><em>get</em></a>, <a href="struct.FileInsertCall.html"><em>insert</em></a>, <a href="struct.FileListCall.html"><em>list</em></a>, <a href="struct.FilePatchCall.html"><em>patch</em></a>, <a href="struct.FileTouchCall.html"><em>touch</em></a>, <a href="struct.FileTrashCall.html"><em>trash</em></a>, <a href="struct.FileUntrashCall.html"><em>untrash</em></a>, <a href="struct.FileUpdateCall.html"><em>update</em></a> and <a href="struct.FileWatchCall.html"><em>watch</em></a></li>
+</ul></li>
+<li>parents
+
+<ul>
+<li><a href="struct.ParentDeleteCall.html"><em>delete</em></a>, <a href="struct.ParentGetCall.html"><em>get</em></a>, <a href="struct.ParentInsertCall.html"><em>insert</em></a> and <a href="struct.ParentListCall.html"><em>list</em></a></li>
+</ul></li>
+<li><a href="struct.Permission.html">permissions</a>
+
+<ul>
+<li><a href="struct.PermissionDeleteCall.html"><em>delete</em></a>, <a href="struct.PermissionGetCall.html"><em>get</em></a>, <a href="struct.PermissionGetIdForEmailCall.html"><em>get id for email</em></a>, <a href="struct.PermissionInsertCall.html"><em>insert</em></a>, <a href="struct.PermissionListCall.html"><em>list</em></a>, <a href="struct.PermissionPatchCall.html"><em>patch</em></a> and <a href="struct.PermissionUpdateCall.html"><em>update</em></a></li>
+</ul></li>
+<li><a href="struct.Property.html">properties</a>
+
+<ul>
+<li><a href="struct.PropertyDeleteCall.html"><em>delete</em></a>, <a href="struct.PropertyGetCall.html"><em>get</em></a>, <a href="struct.PropertyInsertCall.html"><em>insert</em></a>, <a href="struct.PropertyListCall.html"><em>list</em></a>, <a href="struct.PropertyPatchCall.html"><em>patch</em></a> and <a href="struct.PropertyUpdateCall.html"><em>update</em></a></li>
+</ul></li>
+<li>realtime
+
+<ul>
+<li><a href="struct.RealtimeGetCall.html"><em>get</em></a> and <a href="struct.RealtimeUpdateCall.html"><em>update</em></a></li>
+</ul></li>
+<li>replies
+
+<ul>
+<li><a href="struct.ReplyDeleteCall.html"><em>delete</em></a>, <a href="struct.ReplyGetCall.html"><em>get</em></a>, <a href="struct.ReplyInsertCall.html"><em>insert</em></a>, <a href="struct.ReplyListCall.html"><em>list</em></a>, <a href="struct.ReplyPatchCall.html"><em>patch</em></a> and <a href="struct.ReplyUpdateCall.html"><em>update</em></a></li>
+</ul></li>
+<li><a href="struct.Revision.html">revisions</a>
+
+<ul>
+<li><a href="struct.RevisionDeleteCall.html"><em>delete</em></a>, <a href="struct.RevisionGetCall.html"><em>get</em></a>, <a href="struct.RevisionListCall.html"><em>list</em></a>, <a href="struct.RevisionPatchCall.html"><em>patch</em></a> and <a href="struct.RevisionUpdateCall.html"><em>update</em></a></li>
+</ul></li>
+</ul>
+
+<p>Upload supported by ...</p>
+
+<ul>
+<li><a href="struct.FileInsertCall.html"><em>insert files</em></a></li>
+<li><a href="struct.RealtimeUpdateCall.html"><em>update realtime</em></a></li>
+<li><a href="struct.FileUpdateCall.html"><em>update files</em></a></li>
+</ul>
+
+<p>Download supported by ...</p>
+
+<ul>
+<li><a href="struct.FileWatchCall.html"><em>watch files</em></a></li>
+<li><a href="struct.FileGetCall.html"><em>get files</em></a></li>
+<li><a href="struct.RealtimeGetCall.html"><em>get realtime</em></a></li>
+</ul>
+
+<p>Subscription supported by ...</p>
+
+<ul>
+<li><a href="struct.FileWatchCall.html"><em>watch files</em></a></li>
+<li><a href="struct.FileGetCall.html"><em>get files</em></a></li>
+<li><a href="struct.ChangeWatchCall.html"><em>watch changes</em></a></li>
+<li><a href="struct.FileInsertCall.html"><em>insert files</em></a></li>
+<li><a href="struct.ChangeListCall.html"><em>list changes</em></a></li>
+</ul>
+
+<p>Not what you are looking for ? Find all other Google APIs in their Rust <a href="../index.html">documentation index</a>.</p>
+
+<h1 id="structure-of-this-library" class='section-header'><a
+                           href="#structure-of-this-library">Structure of this Library</a></h1>
+<p>The API is structured into the following primary items:</p>
+
+<ul>
+<li><strong><a href="struct.Drive.html">Hub</a></strong>
+
+<ul>
+<li>a central object to maintain state and allow accessing all <em>Activities</em></li>
+<li>creates <a href="trait.MethodsBuilder.html"><em>Method Builders</em></a> which in turn
+allow access to individual <a href="trait.CallBuilder.html"><em>Call Builders</em></a></li>
+</ul></li>
+<li><strong><a href="trait.Resource.html">Resources</a></strong>
+
+<ul>
+<li>primary types that you can apply <em>Activities</em> to</li>
+<li>a collection of properties and <em>Parts</em></li>
+<li><strong><a href="trait.Part.html">Parts</a></strong>
+
+<ul>
+<li>a collection of properties</li>
+<li>never directly used in <em>Activities</em></li>
+</ul></li>
+</ul></li>
+<li><strong><a href="trait.CallBuilder.html">Activities</a></strong>
+
+<ul>
+<li>operations to apply to <em>Resources</em></li>
+</ul></li>
+</ul>
+
+<p>All <em>structures</em> are marked with applicable traits to further categorize them and ease browsing.</p>
+
+<p>Generally speaking, you can invoke <em>Activities</em> like this:</p>
+<pre id='rust-example-rendered' class='rust '>
+<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>resource</span>().<span class='ident'>activity</span>(...).<span class='ident'>doit</span>()
+</pre>
+
+<p>Or specifically ...</p>
+<pre id='rust-example-rendered' class='rust '>
+<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>files</span>().<span class='ident'>watch</span>(...).<span class='ident'>doit</span>()
+<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>files</span>().<span class='ident'>empty_trash</span>(...).<span class='ident'>doit</span>()
+<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>files</span>().<span class='ident'>copy</span>(...).<span class='ident'>doit</span>()
+<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>files</span>().<span class='ident'>list</span>(...).<span class='ident'>doit</span>()
+<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>files</span>().<span class='ident'>delete</span>(...).<span class='ident'>doit</span>()
+<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>files</span>().<span class='ident'>patch</span>(...).<span class='ident'>doit</span>()
+<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>files</span>().<span class='ident'>update</span>(...).<span class='ident'>doit</span>()
+<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>files</span>().<span class='ident'>insert</span>(...).<span class='ident'>doit</span>()
+<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>files</span>().<span class='ident'>untrash</span>(...).<span class='ident'>doit</span>()
+<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>files</span>().<span class='ident'>trash</span>(...).<span class='ident'>doit</span>()
+<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>files</span>().<span class='ident'>touch</span>(...).<span class='ident'>doit</span>()
+<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>files</span>().<span class='ident'>get</span>(...).<span class='ident'>doit</span>()
+</pre>
+
+<p>The <code>resource()</code> and <code>activity(...)</code> calls create <a href="http://en.wikipedia.org/wiki/Builder_pattern">builders</a>. The second one dealing with <code>Activities</code> 
+supports various methods to configure the impending operation (not shown here). It is made such that all required arguments have to be 
+specified right away (i.e. <code>(...)</code>), whereas all optional ones can be <a href="http://en.wikipedia.org/wiki/Builder_pattern">build up</a> as desired.
+The <code>doit()</code> method performs the actual communication with the server and returns the respective result.</p>
+
+<h1 id="usage" class='section-header'><a
+                           href="#usage">Usage</a></h1>
+<h2 id="setting-up-your-project" class='section-header'><a
+                           href="#setting-up-your-project">Setting up your Project</a></h2>
+<p>To use this library, you would put the following lines into your <code>Cargo.toml</code> file:</p>
+
+<pre><code class="language-toml">[dependencies]
+google-drive2 = &quot;*&quot;
+</code></pre>
+
+<h2 id="a-complete-example" class='section-header'><a
+                           href="#a-complete-example">A complete example</a></h2><pre id='rust-example-rendered' class='rust '>
+<span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>hyper</span>;
+<span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>yup_oauth2</span> <span class='kw'>as</span> <span class='ident'>oauth2</span>;
+<span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>google_drive2</span> <span class='kw'>as</span> <span class='ident'>drive2</span>;
+<span class='kw'>use</span> <span class='ident'>drive2</span>::<span class='ident'>File</span>;
+<span class='kw'>use</span> <span class='ident'>drive2</span>::{<span class='prelude-ty'>Result</span>, <span class='ident'>Error</span>};
+<span class='kw'>use</span> <span class='ident'>std</span>::<span class='ident'>default</span>::<span class='ident'>Default</span>;
+<span class='kw'>use</span> <span class='ident'>oauth2</span>::{<span class='ident'>Authenticator</span>, <span class='ident'>DefaultAuthenticatorDelegate</span>, <span class='ident'>ApplicationSecret</span>, <span class='ident'>MemoryStorage</span>};
+<span class='kw'>use</span> <span class='ident'>drive2</span>::<span class='ident'>Drive</span>;
+ 
+<span class='comment'>// Get an ApplicationSecret instance by some means. It contains the `client_id` and </span>
+<span class='comment'>// `client_secret`, among other things.</span>
+<span class='kw'>let</span> <span class='ident'>secret</span>: <span class='ident'>ApplicationSecret</span> <span class='op'>=</span> <span class='ident'>Default</span>::<span class='ident'>default</span>();
+<span class='comment'>// Instantiate the authenticator. It will choose a suitable authentication flow for you, </span>
+<span class='comment'>// unless you replace  `None` with the desired Flow.</span>
+<span class='comment'>// Provide your own `AuthenticatorDelegate` to adjust the way it operates and get feedback about </span>
+<span class='comment'>// what&#39;s going on. You probably want to bring in your own `TokenStorage` to persist tokens and</span>
+<span class='comment'>// retrieve them from storage.</span>
+<span class='kw'>let</span> <span class='ident'>auth</span> <span class='op'>=</span> <span class='ident'>Authenticator</span>::<span class='ident'>new</span>(<span class='kw-2'>&amp;</span><span class='ident'>secret</span>, <span class='ident'>DefaultAuthenticatorDelegate</span>,
+                              <span class='ident'>hyper</span>::<span class='ident'>Client</span>::<span class='ident'>new</span>(),
+                              <span class='op'>&lt;</span><span class='ident'>MemoryStorage</span> <span class='kw'>as</span> <span class='ident'>Default</span><span class='op'>&gt;</span>::<span class='ident'>default</span>(), <span class='prelude-val'>None</span>);
+<span class='kw'>let</span> <span class='kw-2'>mut</span> <span class='ident'>hub</span> <span class='op'>=</span> <span class='ident'>Drive</span>::<span class='ident'>new</span>(<span class='ident'>hyper</span>::<span class='ident'>Client</span>::<span class='ident'>new</span>(), <span class='ident'>auth</span>);
+<span class='comment'>// As the method needs a request, you would usually fill it with the desired information</span>
+<span class='comment'>// into the respective structure. Some of the parts shown here might not be applicable !</span>
+<span class='comment'>// Values shown here are possibly random and not representative !</span>
+<span class='kw'>let</span> <span class='kw-2'>mut</span> <span class='ident'>req</span> <span class='op'>=</span> <span class='ident'>File</span>::<span class='ident'>default</span>();
+ 
+<span class='comment'>// You can configure optional parameters by calling the respective setters at will, and</span>
+<span class='comment'>// execute the final call using `doit()`.</span>
+<span class='comment'>// Values shown here are possibly random and not representative !</span>
+<span class='kw'>let</span> <span class='ident'>result</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>files</span>().<span class='ident'>patch</span>(<span class='ident'>req</span>, <span class='string'>&quot;fileId&quot;</span>)
+             .<span class='ident'>use_content_as_indexable_text</span>(<span class='boolval'>true</span>)
+             .<span class='ident'>update_viewed_date</span>(<span class='boolval'>false</span>)
+             .<span class='ident'>timed_text_track_name</span>(<span class='string'>&quot;sea&quot;</span>)
+             .<span class='ident'>timed_text_language</span>(<span class='string'>&quot;consetetur&quot;</span>)
+             .<span class='ident'>set_modified_date</span>(<span class='boolval'>false</span>)
+             .<span class='ident'>remove_parents</span>(<span class='string'>&quot;accusam&quot;</span>)
+             .<span class='ident'>pinned</span>(<span class='boolval'>false</span>)
+             .<span class='ident'>ocr_language</span>(<span class='string'>&quot;consetetur&quot;</span>)
+             .<span class='ident'>ocr</span>(<span class='boolval'>false</span>)
+             .<span class='ident'>new_revision</span>(<span class='boolval'>false</span>)
+             .<span class='ident'>convert</span>(<span class='boolval'>false</span>)
+             .<span class='ident'>add_parents</span>(<span class='string'>&quot;ea&quot;</span>)
+             .<span class='ident'>doit</span>();
+ 
+<span class='kw'>match</span> <span class='ident'>result</span> {
+    <span class='prelude-val'>Err</span>(<span class='ident'>e</span>) <span class='op'>=&gt;</span> <span class='kw'>match</span> <span class='ident'>e</span> {
+        <span class='comment'>// The Error enum provides details about what exactly happened.</span>
+        <span class='comment'>// You can also just use its `Debug`, `Display` or `Error` traits</span>
+         <span class='ident'>Error</span>::<span class='ident'>HttpError</span>(_)
+        <span class='op'>|</span><span class='ident'>Error</span>::<span class='ident'>MissingAPIKey</span>
+        <span class='op'>|</span><span class='ident'>Error</span>::<span class='ident'>MissingToken</span>(_)
+        <span class='op'>|</span><span class='ident'>Error</span>::<span class='ident'>Cancelled</span>
+        <span class='op'>|</span><span class='ident'>Error</span>::<span class='ident'>UploadSizeLimitExceeded</span>(_, _)
+        <span class='op'>|</span><span class='ident'>Error</span>::<span class='ident'>Failure</span>(_)
+        <span class='op'>|</span><span class='ident'>Error</span>::<span class='ident'>BadRequest</span>(_)
+        <span class='op'>|</span><span class='ident'>Error</span>::<span class='ident'>FieldClash</span>(_)
+        <span class='op'>|</span><span class='ident'>Error</span>::<span class='ident'>JsonDecodeError</span>(_, _) <span class='op'>=&gt;</span> <span class='macro'>println</span><span class='macro'>!</span>(<span class='string'>&quot;{}&quot;</span>, <span class='ident'>e</span>),
+    },
+    <span class='prelude-val'>Ok</span>(<span class='ident'>res</span>) <span class='op'>=&gt;</span> <span class='macro'>println</span><span class='macro'>!</span>(<span class='string'>&quot;Success: {:?}&quot;</span>, <span class='ident'>res</span>),
+}
+</pre>
+
+<h2 id="handling-errors" class='section-header'><a
+                           href="#handling-errors">Handling Errors</a></h2>
+<p>All errors produced by the system are provided either as <a href="enum.Result.html">Result</a> enumeration as return value of 
+the doit() methods, or handed as possibly intermediate results to either the 
+<a href="trait.Delegate.html">Hub Delegate</a>, or the <a href="../yup-oauth2/trait.AuthenticatorDelegate.html">Authenticator Delegate</a>.</p>
+
+<p>When delegates handle errors or intermediate values, they may have a chance to instruct the system to retry. This 
+makes the system potentially resilient to all kinds of errors.</p>
+
+<h2 id="uploads-and-downloads" class='section-header'><a
+                           href="#uploads-and-downloads">Uploads and Downloads</a></h2>
+<p>If a method supports downloads, the response body, which is part of the <a href="enum.Result.html">Result</a>, should be
+read by you to obtain the media.
+If such a method also supports a <a href="trait.ResponseResult.html">Response Result</a>, it will return that by default.
+You can see it as meta-data for the actual media. To trigger a media download, you will have to set up the builder by making
+this call: <code>.param(&quot;alt&quot;, &quot;media&quot;)</code>.</p>
+
+<p>Methods supporting uploads can do so using up to 2 different protocols: 
+<em>simple</em> and <em>resumable</em>. The distinctiveness of each is represented by customized 
+<code>doit(...)</code> methods, which are then named <code>upload(...)</code> and <code>upload_resumable(...)</code> respectively.</p>
+
+<h2 id="customization-and-callbacks" class='section-header'><a
+                           href="#customization-and-callbacks">Customization and Callbacks</a></h2>
+<p>You may alter the way an <code>doit()</code> method is called by providing a <a href="trait.Delegate.html">delegate</a> to the 
+<a href="trait.CallBuilder.html">Method Builder</a> before making the final <code>doit()</code> call. 
+Respective methods will be called to provide progress information, as well as determine whether the system should 
+retry on failure.</p>
+
+<p>The <a href="trait.Delegate.html">delegate trait</a> is default-implemented, allowing you to customize it with minimal effort.</p>
+
+<h2 id="optional-parts-in-server-requests" class='section-header'><a
+                           href="#optional-parts-in-server-requests">Optional Parts in Server-Requests</a></h2>
+<p>All structures provided by this library are made to be <a href="trait.RequestValue.html">enocodable</a> and 
+<a href="trait.ResponseResult.html">decodable</a> via <em>json</em>. Optionals are used to indicate that partial requests are responses 
+are valid.
+Most optionals are are considered <a href="trait.Part.html">Parts</a> which are identifiable by name, which will be sent to 
+the server to indicate either the set parts of the request or the desired parts in the response.</p>
+
+<h2 id="builder-arguments" class='section-header'><a
+                           href="#builder-arguments">Builder Arguments</a></h2>
+<p>Using <a href="trait.CallBuilder.html">method builders</a>, you are able to prepare an action call by repeatedly calling it&#39;s methods.
+These will always take a single argument, for which the following statements are true.</p>
+
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Plain_old_data_structure">PODs</a> are handed by copy</li>
+<li>strings are passed as <code>&amp;str</code></li>
+<li><a href="trait.RequestValue.html">request values</a> are moved</li>
+</ul>
+
+<p>Arguments will always be copied or cloned into the builder, to make them independent of their original life times.</p>
+</div><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
+<table>
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.About.html'
+                               title='google_drive2::About'>About</a></td>
+                        <td class='docblock short'><p>An item with user information and settings.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AboutAdditionalRoleInfo.html'
+                               title='google_drive2::AboutAdditionalRoleInfo'>AboutAdditionalRoleInfo</a></td>
+                        <td class='docblock short'><p>Information about supported additional roles per file type. The most specific type takes precedence.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AboutAdditionalRoleInfoRoleSets.html'
+                               title='google_drive2::AboutAdditionalRoleInfoRoleSets'>AboutAdditionalRoleInfoRoleSets</a></td>
+                        <td class='docblock short'><p>The supported additional roles per primary role.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AboutExportFormats.html'
+                               title='google_drive2::AboutExportFormats'>AboutExportFormats</a></td>
+                        <td class='docblock short'><p>The allowable export formats.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AboutFeatures.html'
+                               title='google_drive2::AboutFeatures'>AboutFeatures</a></td>
+                        <td class='docblock short'><p>List of additional features enabled on this account.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AboutGetCall.html'
+                               title='google_drive2::AboutGetCall'>AboutGetCall</a></td>
+                        <td class='docblock short'><p>Gets the information about the current user along with Drive API settings</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AboutImportFormats.html'
+                               title='google_drive2::AboutImportFormats'>AboutImportFormats</a></td>
+                        <td class='docblock short'><p>The allowable import formats.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AboutMaxUploadSizes.html'
+                               title='google_drive2::AboutMaxUploadSizes'>AboutMaxUploadSizes</a></td>
+                        <td class='docblock short'><p>List of max upload sizes for each file type. The most specific type takes precedence.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AboutMethods.html'
+                               title='google_drive2::AboutMethods'>AboutMethods</a></td>
+                        <td class='docblock short'><p>A builder providing access to all methods supported on <em>about</em> resources.
+It is not used directly, but through the <code>Drive</code> hub.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AboutQuotaBytesByService.html'
+                               title='google_drive2::AboutQuotaBytesByService'>AboutQuotaBytesByService</a></td>
+                        <td class='docblock short'><p>The amount of storage quota used by different Google services.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.App.html'
+                               title='google_drive2::App'>App</a></td>
+                        <td class='docblock short'><p>The apps resource provides a list of the apps that a user has installed, with information about each app&#39;s supported MIME types, file extensions, and other details.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AppGetCall.html'
+                               title='google_drive2::AppGetCall'>AppGetCall</a></td>
+                        <td class='docblock short'><p>Gets a specific app.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AppIcons.html'
+                               title='google_drive2::AppIcons'>AppIcons</a></td>
+                        <td class='docblock short'><p>The various icons for the app.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AppList.html'
+                               title='google_drive2::AppList'>AppList</a></td>
+                        <td class='docblock short'><p>A list of third-party applications which the user has installed or given access to Google Drive.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AppListCall.html'
+                               title='google_drive2::AppListCall'>AppListCall</a></td>
+                        <td class='docblock short'><p>Lists a user&#39;s installed apps.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AppMethods.html'
+                               title='google_drive2::AppMethods'>AppMethods</a></td>
+                        <td class='docblock short'><p>A builder providing access to all methods supported on <em>app</em> resources.
+It is not used directly, but through the <code>Drive</code> hub.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Change.html'
+                               title='google_drive2::Change'>Change</a></td>
+                        <td class='docblock short'><p>Representation of a change to a file.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ChangeGetCall.html'
+                               title='google_drive2::ChangeGetCall'>ChangeGetCall</a></td>
+                        <td class='docblock short'><p>Gets a specific change.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ChangeList.html'
+                               title='google_drive2::ChangeList'>ChangeList</a></td>
+                        <td class='docblock short'><p>A list of changes for a user.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ChangeListCall.html'
+                               title='google_drive2::ChangeListCall'>ChangeListCall</a></td>
+                        <td class='docblock short'><p>Lists the changes for a user.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ChangeMethods.html'
+                               title='google_drive2::ChangeMethods'>ChangeMethods</a></td>
+                        <td class='docblock short'><p>A builder providing access to all methods supported on <em>change</em> resources.
+It is not used directly, but through the <code>Drive</code> hub.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ChangeWatchCall.html'
+                               title='google_drive2::ChangeWatchCall'>ChangeWatchCall</a></td>
+                        <td class='docblock short'><p>Subscribe to changes for a user.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Channel.html'
+                               title='google_drive2::Channel'>Channel</a></td>
+                        <td class='docblock short'><p>An notification channel used to watch for resource changes.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ChannelMethods.html'
+                               title='google_drive2::ChannelMethods'>ChannelMethods</a></td>
+                        <td class='docblock short'><p>A builder providing access to all methods supported on <em>channel</em> resources.
+It is not used directly, but through the <code>Drive</code> hub.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ChannelStopCall.html'
+                               title='google_drive2::ChannelStopCall'>ChannelStopCall</a></td>
+                        <td class='docblock short'><p>Stop watching resources through this channel</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ChildList.html'
+                               title='google_drive2::ChildList'>ChildList</a></td>
+                        <td class='docblock short'><p>A list of children of a file.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ChildReference.html'
+                               title='google_drive2::ChildReference'>ChildReference</a></td>
+                        <td class='docblock short'><p>A reference to a folder&#39;s child.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ChildrenDeleteCall.html'
+                               title='google_drive2::ChildrenDeleteCall'>ChildrenDeleteCall</a></td>
+                        <td class='docblock short'><p>Removes a child from a folder.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ChildrenGetCall.html'
+                               title='google_drive2::ChildrenGetCall'>ChildrenGetCall</a></td>
+                        <td class='docblock short'><p>Gets a specific child reference.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ChildrenInsertCall.html'
+                               title='google_drive2::ChildrenInsertCall'>ChildrenInsertCall</a></td>
+                        <td class='docblock short'><p>Inserts a file into a folder.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ChildrenListCall.html'
+                               title='google_drive2::ChildrenListCall'>ChildrenListCall</a></td>
+                        <td class='docblock short'><p>Lists a folder&#39;s children.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ChildrenMethods.html'
+                               title='google_drive2::ChildrenMethods'>ChildrenMethods</a></td>
+                        <td class='docblock short'><p>A builder providing access to all methods supported on <em>children</em> resources.
+It is not used directly, but through the <code>Drive</code> hub.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Comment.html'
+                               title='google_drive2::Comment'>Comment</a></td>
+                        <td class='docblock short'><p>A JSON representation of a comment on a file in Google Drive.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.CommentContext.html'
+                               title='google_drive2::CommentContext'>CommentContext</a></td>
+                        <td class='docblock short'><p>The context of the file which is being commented on.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.CommentDeleteCall.html'
+                               title='google_drive2::CommentDeleteCall'>CommentDeleteCall</a></td>
+                        <td class='docblock short'><p>Deletes a comment.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.CommentGetCall.html'
+                               title='google_drive2::CommentGetCall'>CommentGetCall</a></td>
+                        <td class='docblock short'><p>Gets a comment by ID.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.CommentInsertCall.html'
+                               title='google_drive2::CommentInsertCall'>CommentInsertCall</a></td>
+                        <td class='docblock short'><p>Creates a new comment on the given file.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.CommentList.html'
+                               title='google_drive2::CommentList'>CommentList</a></td>
+                        <td class='docblock short'><p>A JSON representation of a list of comments on a file in Google Drive.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.CommentListCall.html'
+                               title='google_drive2::CommentListCall'>CommentListCall</a></td>
+                        <td class='docblock short'><p>Lists a file&#39;s comments.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.CommentMethods.html'
+                               title='google_drive2::CommentMethods'>CommentMethods</a></td>
+                        <td class='docblock short'><p>A builder providing access to all methods supported on <em>comment</em> resources.
+It is not used directly, but through the <code>Drive</code> hub.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.CommentPatchCall.html'
+                               title='google_drive2::CommentPatchCall'>CommentPatchCall</a></td>
+                        <td class='docblock short'><p>Updates an existing comment. This method supports patch semantics.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.CommentReply.html'
+                               title='google_drive2::CommentReply'>CommentReply</a></td>
+                        <td class='docblock short'><p>A JSON representation of a reply to a comment on a file in Google Drive.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.CommentReplyList.html'
+                               title='google_drive2::CommentReplyList'>CommentReplyList</a></td>
+                        <td class='docblock short'><p>A JSON representation of a list of replies to a comment on a file in Google Drive.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.CommentUpdateCall.html'
+                               title='google_drive2::CommentUpdateCall'>CommentUpdateCall</a></td>
+                        <td class='docblock short'><p>Updates an existing comment.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.DefaultDelegate.html'
+                               title='google_drive2::DefaultDelegate'>DefaultDelegate</a></td>
+                        <td class='docblock short'><p>A delegate with a conservative default implementation, which is used if no other delegate is
+set.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Drive.html'
+                               title='google_drive2::Drive'>Drive</a></td>
+                        <td class='docblock short'><p>Central instance to access all Drive related resource activities</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ErrorResponse.html'
+                               title='google_drive2::ErrorResponse'>ErrorResponse</a></td>
+                        <td class='docblock short'><p>A utility to represent detailed errors we might see in case there are BadRequests.
+The latter happen if the sent parameters or request structures are unsound</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.File.html'
+                               title='google_drive2::File'>File</a></td>
+                        <td class='docblock short'><p>The metadata for a file.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.FileCopyCall.html'
+                               title='google_drive2::FileCopyCall'>FileCopyCall</a></td>
+                        <td class='docblock short'><p>Creates a copy of the specified file.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.FileDeleteCall.html'
+                               title='google_drive2::FileDeleteCall'>FileDeleteCall</a></td>
+                        <td class='docblock short'><p>Permanently deletes a file by ID. Skips the trash. The currently authenticated user must own the file.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.FileEmptyTrashCall.html'
+                               title='google_drive2::FileEmptyTrashCall'>FileEmptyTrashCall</a></td>
+                        <td class='docblock short'><p>Permanently deletes all of the user&#39;s trashed files.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.FileGetCall.html'
+                               title='google_drive2::FileGetCall'>FileGetCall</a></td>
+                        <td class='docblock short'><p>Gets a file&#39;s metadata by ID.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.FileImageMediaMetadata.html'
+                               title='google_drive2::FileImageMediaMetadata'>FileImageMediaMetadata</a></td>
+                        <td class='docblock short'><p>Metadata about image media. This will only be present for image types, and its contents will depend on what can be parsed from the image content.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.FileImageMediaMetadataLocation.html'
+                               title='google_drive2::FileImageMediaMetadataLocation'>FileImageMediaMetadataLocation</a></td>
+                        <td class='docblock short'><p>Geographic location information stored in the image.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.FileIndexableText.html'
+                               title='google_drive2::FileIndexableText'>FileIndexableText</a></td>
+                        <td class='docblock short'><p>Indexable text attributes for the file (can only be written)</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.FileInsertCall.html'
+                               title='google_drive2::FileInsertCall'>FileInsertCall</a></td>
+                        <td class='docblock short'><p>Insert a new file.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.FileLabels.html'
+                               title='google_drive2::FileLabels'>FileLabels</a></td>
+                        <td class='docblock short'><p>A group of labels for the file.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.FileList.html'
+                               title='google_drive2::FileList'>FileList</a></td>
+                        <td class='docblock short'><p>A list of files.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.FileListCall.html'
+                               title='google_drive2::FileListCall'>FileListCall</a></td>
+                        <td class='docblock short'><p>Lists the user&#39;s files.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.FileMethods.html'
+                               title='google_drive2::FileMethods'>FileMethods</a></td>
+                        <td class='docblock short'><p>A builder providing access to all methods supported on <em>file</em> resources.
+It is not used directly, but through the <code>Drive</code> hub.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.FilePatchCall.html'
+                               title='google_drive2::FilePatchCall'>FilePatchCall</a></td>
+                        <td class='docblock short'><p>Updates file metadata and/or content. This method supports patch semantics.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.FileThumbnail.html'
+                               title='google_drive2::FileThumbnail'>FileThumbnail</a></td>
+                        <td class='docblock short'><p>Thumbnail for the file. Only accepted on upload and for files that are not already thumbnailed by Google.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.FileTouchCall.html'
+                               title='google_drive2::FileTouchCall'>FileTouchCall</a></td>
+                        <td class='docblock short'><p>Set the file&#39;s updated time to the current server time.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.FileTrashCall.html'
+                               title='google_drive2::FileTrashCall'>FileTrashCall</a></td>
+                        <td class='docblock short'><p>Moves a file to the trash.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.FileUntrashCall.html'
+                               title='google_drive2::FileUntrashCall'>FileUntrashCall</a></td>
+                        <td class='docblock short'><p>Restores a file from the trash.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.FileUpdateCall.html'
+                               title='google_drive2::FileUpdateCall'>FileUpdateCall</a></td>
+                        <td class='docblock short'><p>Updates file metadata and/or content.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.FileVideoMediaMetadata.html'
+                               title='google_drive2::FileVideoMediaMetadata'>FileVideoMediaMetadata</a></td>
+                        <td class='docblock short'><p>Metadata about video media. This will only be present for video types.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.FileWatchCall.html'
+                               title='google_drive2::FileWatchCall'>FileWatchCall</a></td>
+                        <td class='docblock short'><p>Subscribe to changes on a file</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.MethodInfo.html'
+                               title='google_drive2::MethodInfo'>MethodInfo</a></td>
+                        <td class='docblock short'><p>Contains information about an API request.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.MultiPartReader.html'
+                               title='google_drive2::MultiPartReader'>MultiPartReader</a></td>
+                        <td class='docblock short'><p>Provides a <code>Read</code> interface that converts multiple parts into the protocol
+identified by <a href="https://tools.ietf.org/html/rfc2387">RFC2387</a>.
+<strong>Note</strong>: This implementation is just as rich as it needs to be to perform uploads
+to google APIs, and might not be a fully-featured implementation.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ParentDeleteCall.html'
+                               title='google_drive2::ParentDeleteCall'>ParentDeleteCall</a></td>
+                        <td class='docblock short'><p>Removes a parent from a file.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ParentGetCall.html'
+                               title='google_drive2::ParentGetCall'>ParentGetCall</a></td>
+                        <td class='docblock short'><p>Gets a specific parent reference.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ParentInsertCall.html'
+                               title='google_drive2::ParentInsertCall'>ParentInsertCall</a></td>
+                        <td class='docblock short'><p>Adds a parent folder for a file.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ParentList.html'
+                               title='google_drive2::ParentList'>ParentList</a></td>
+                        <td class='docblock short'><p>A list of a file&#39;s parents.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ParentListCall.html'
+                               title='google_drive2::ParentListCall'>ParentListCall</a></td>
+                        <td class='docblock short'><p>Lists a file&#39;s parents.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ParentMethods.html'
+                               title='google_drive2::ParentMethods'>ParentMethods</a></td>
+                        <td class='docblock short'><p>A builder providing access to all methods supported on <em>parent</em> resources.
+It is not used directly, but through the <code>Drive</code> hub.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ParentReference.html'
+                               title='google_drive2::ParentReference'>ParentReference</a></td>
+                        <td class='docblock short'><p>A reference to a file&#39;s parent.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Permission.html'
+                               title='google_drive2::Permission'>Permission</a></td>
+                        <td class='docblock short'><p>A permission for a file.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.PermissionDeleteCall.html'
+                               title='google_drive2::PermissionDeleteCall'>PermissionDeleteCall</a></td>
+                        <td class='docblock short'><p>Deletes a permission from a file.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.PermissionGetCall.html'
+                               title='google_drive2::PermissionGetCall'>PermissionGetCall</a></td>
+                        <td class='docblock short'><p>Gets a permission by ID.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.PermissionGetIdForEmailCall.html'
+                               title='google_drive2::PermissionGetIdForEmailCall'>PermissionGetIdForEmailCall</a></td>
+                        <td class='docblock short'><p>Returns the permission ID for an email address.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.PermissionId.html'
+                               title='google_drive2::PermissionId'>PermissionId</a></td>
+                        <td class='docblock short'><p>An ID for a user or group as seen in Permission items.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.PermissionInsertCall.html'
+                               title='google_drive2::PermissionInsertCall'>PermissionInsertCall</a></td>
+                        <td class='docblock short'><p>Inserts a permission for a file.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.PermissionList.html'
+                               title='google_drive2::PermissionList'>PermissionList</a></td>
+                        <td class='docblock short'><p>A list of permissions associated with a file.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.PermissionListCall.html'
+                               title='google_drive2::PermissionListCall'>PermissionListCall</a></td>
+                        <td class='docblock short'><p>Lists a file&#39;s permissions.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.PermissionMethods.html'
+                               title='google_drive2::PermissionMethods'>PermissionMethods</a></td>
+                        <td class='docblock short'><p>A builder providing access to all methods supported on <em>permission</em> resources.
+It is not used directly, but through the <code>Drive</code> hub.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.PermissionPatchCall.html'
+                               title='google_drive2::PermissionPatchCall'>PermissionPatchCall</a></td>
+                        <td class='docblock short'><p>Updates a permission. This method supports patch semantics.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.PermissionUpdateCall.html'
+                               title='google_drive2::PermissionUpdateCall'>PermissionUpdateCall</a></td>
+                        <td class='docblock short'><p>Updates a permission.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Property.html'
+                               title='google_drive2::Property'>Property</a></td>
+                        <td class='docblock short'><p>A key-value pair attached to a file that is either public or private to an application.
+The following limits apply to file properties:<br>
+- Maximum of 100 properties total per file
+- Maximum of 30 private properties per app
+- Maximum of 30 public properties
+- Maximum of 124 bytes size limit on (key + value) string in UTF-8 encoding for a single property.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.PropertyDeleteCall.html'
+                               title='google_drive2::PropertyDeleteCall'>PropertyDeleteCall</a></td>
+                        <td class='docblock short'><p>Deletes a property.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.PropertyGetCall.html'
+                               title='google_drive2::PropertyGetCall'>PropertyGetCall</a></td>
+                        <td class='docblock short'><p>Gets a property by its key.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.PropertyInsertCall.html'
+                               title='google_drive2::PropertyInsertCall'>PropertyInsertCall</a></td>
+                        <td class='docblock short'><p>Adds a property to a file.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.PropertyList.html'
+                               title='google_drive2::PropertyList'>PropertyList</a></td>
+                        <td class='docblock short'><p>A collection of properties, key-value pairs that are either public or private to an application.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.PropertyListCall.html'
+                               title='google_drive2::PropertyListCall'>PropertyListCall</a></td>
+                        <td class='docblock short'><p>Lists a file&#39;s properties.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.PropertyMethods.html'
+                               title='google_drive2::PropertyMethods'>PropertyMethods</a></td>
+                        <td class='docblock short'><p>A builder providing access to all methods supported on <em>property</em> resources.
+It is not used directly, but through the <code>Drive</code> hub.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.PropertyPatchCall.html'
+                               title='google_drive2::PropertyPatchCall'>PropertyPatchCall</a></td>
+                        <td class='docblock short'><p>Updates a property. This method supports patch semantics.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.PropertyUpdateCall.html'
+                               title='google_drive2::PropertyUpdateCall'>PropertyUpdateCall</a></td>
+                        <td class='docblock short'><p>Updates a property.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.RealtimeGetCall.html'
+                               title='google_drive2::RealtimeGetCall'>RealtimeGetCall</a></td>
+                        <td class='docblock short'><p>Exports the contents of the Realtime API data model associated with this file as JSON.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.RealtimeMethods.html'
+                               title='google_drive2::RealtimeMethods'>RealtimeMethods</a></td>
+                        <td class='docblock short'><p>A builder providing access to all methods supported on <em>realtime</em> resources.
+It is not used directly, but through the <code>Drive</code> hub.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.RealtimeUpdateCall.html'
+                               title='google_drive2::RealtimeUpdateCall'>RealtimeUpdateCall</a></td>
+                        <td class='docblock short'><p>Overwrites the Realtime API data model associated with this file with the provided JSON data model.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ReplyDeleteCall.html'
+                               title='google_drive2::ReplyDeleteCall'>ReplyDeleteCall</a></td>
+                        <td class='docblock short'><p>Deletes a reply.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ReplyGetCall.html'
+                               title='google_drive2::ReplyGetCall'>ReplyGetCall</a></td>
+                        <td class='docblock short'><p>Gets a reply.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ReplyInsertCall.html'
+                               title='google_drive2::ReplyInsertCall'>ReplyInsertCall</a></td>
+                        <td class='docblock short'><p>Creates a new reply to the given comment.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ReplyListCall.html'
+                               title='google_drive2::ReplyListCall'>ReplyListCall</a></td>
+                        <td class='docblock short'><p>Lists all of the replies to a comment.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ReplyMethods.html'
+                               title='google_drive2::ReplyMethods'>ReplyMethods</a></td>
+                        <td class='docblock short'><p>A builder providing access to all methods supported on <em>reply</em> resources.
+It is not used directly, but through the <code>Drive</code> hub.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ReplyPatchCall.html'
+                               title='google_drive2::ReplyPatchCall'>ReplyPatchCall</a></td>
+                        <td class='docblock short'><p>Updates an existing reply. This method supports patch semantics.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ReplyUpdateCall.html'
+                               title='google_drive2::ReplyUpdateCall'>ReplyUpdateCall</a></td>
+                        <td class='docblock short'><p>Updates an existing reply.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Revision.html'
+                               title='google_drive2::Revision'>Revision</a></td>
+                        <td class='docblock short'><p>A revision of a file.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.RevisionDeleteCall.html'
+                               title='google_drive2::RevisionDeleteCall'>RevisionDeleteCall</a></td>
+                        <td class='docblock short'><p>Removes a revision.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.RevisionGetCall.html'
+                               title='google_drive2::RevisionGetCall'>RevisionGetCall</a></td>
+                        <td class='docblock short'><p>Gets a specific revision.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.RevisionList.html'
+                               title='google_drive2::RevisionList'>RevisionList</a></td>
+                        <td class='docblock short'><p>A list of revisions of a file.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.RevisionListCall.html'
+                               title='google_drive2::RevisionListCall'>RevisionListCall</a></td>
+                        <td class='docblock short'><p>Lists a file&#39;s revisions.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.RevisionMethods.html'
+                               title='google_drive2::RevisionMethods'>RevisionMethods</a></td>
+                        <td class='docblock short'><p>A builder providing access to all methods supported on <em>revision</em> resources.
+It is not used directly, but through the <code>Drive</code> hub.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.RevisionPatchCall.html'
+                               title='google_drive2::RevisionPatchCall'>RevisionPatchCall</a></td>
+                        <td class='docblock short'><p>Updates a revision. This method supports patch semantics.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.RevisionUpdateCall.html'
+                               title='google_drive2::RevisionUpdateCall'>RevisionUpdateCall</a></td>
+                        <td class='docblock short'><p>Updates a revision.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.User.html'
+                               title='google_drive2::User'>User</a></td>
+                        <td class='docblock short'><p>The JSON template for a user.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.UserPicture.html'
+                               title='google_drive2::UserPicture'>UserPicture</a></td>
+                        <td class='docblock short'><p>The user&#39;s profile picture.</p>
+</td>
+                    </tr>
+                </table><h2 id='enums' class='section-header'><a href="#enums">Enums</a></h2>
+<table>
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='enum' href='enum.Error.html'
+                               title='google_drive2::Error'>Error</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='enum' href='enum.Scope.html'
+                               title='google_drive2::Scope'>Scope</a></td>
+                        <td class='docblock short'><p>Identifies the an OAuth2 authorization scope.
+A scope is needed when requesting an
+<a href="https://developers.google.com/youtube/v3/guides/authentication">authorization token</a>.</p>
+</td>
+                    </tr>
+                </table><h2 id='traits' class='section-header'><a href="#traits">Traits</a></h2>
+<table>
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.CallBuilder.html'
+                               title='google_drive2::CallBuilder'>CallBuilder</a></td>
+                        <td class='docblock short'><p>Identifies types which represent builders for a particular resource method</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.Delegate.html'
+                               title='google_drive2::Delegate'>Delegate</a></td>
+                        <td class='docblock short'><p>A trait specifying functionality to help controlling any request performed by the API.
+The trait has a conservative default implementation.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.Hub.html'
+                               title='google_drive2::Hub'>Hub</a></td>
+                        <td class='docblock short'><p>Identifies the Hub. There is only one per library, this trait is supposed
+to make intended use more explicit.
+The hub allows to access all resource methods more easily.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.MethodsBuilder.html'
+                               title='google_drive2::MethodsBuilder'>MethodsBuilder</a></td>
+                        <td class='docblock short'><p>Identifies types for building methods of a particular resource type</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.NestedType.html'
+                               title='google_drive2::NestedType'>NestedType</a></td>
+                        <td class='docblock short'><p>Identifies types which are only used by other types internally.
+They have no special meaning, this trait just marks them for completeness.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.Part.html'
+                               title='google_drive2::Part'>Part</a></td>
+                        <td class='docblock short'><p>Identifies types which are only used as part of other types, which
+usually are carrying the <code>Resource</code> trait.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.ReadSeek.html'
+                               title='google_drive2::ReadSeek'>ReadSeek</a></td>
+                        <td class='docblock short'><p>A utility to specify reader types which provide seeking capabilities too</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.RequestValue.html'
+                               title='google_drive2::RequestValue'>RequestValue</a></td>
+                        <td class='docblock short'><p>Identifies types which are used in API requests.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.Resource.html'
+                               title='google_drive2::Resource'>Resource</a></td>
+                        <td class='docblock short'><p>Identifies types which can be inserted and deleted.
+Types with this trait are most commonly used by clients of this API.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.ResponseResult.html'
+                               title='google_drive2::ResponseResult'>ResponseResult</a></td>
+                        <td class='docblock short'><p>Identifies types which are used in API responses.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.ToParts.html'
+                               title='google_drive2::ToParts'>ToParts</a></td>
+                        <td class='docblock short'><p>A trait for all types that can convert themselves into a <em>parts</em> string</p>
+</td>
+                    </tr>
+                </table><h2 id='functions' class='section-header'><a href="#functions">Functions</a></h2>
+<table>
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.remove_json_null_values.html'
+                               title='google_drive2::remove_json_null_values'>remove_json_null_values</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                </table><h2 id='types' class='section-header'><a href="#types">Type Definitions</a></h2>
+<table>
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='type' href='type.Result.html'
+                               title='google_drive2::Result'>Result</a></td>
+                        <td class='docblock short'><p>A universal result type used as return for all calls.</p>
+</td>
+                    </tr>
+                </table></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <div id="help" class="hidden">
+        <div class="shortcuts">
+            <h1>Keyboard shortcuts</h1>
+            <dl>
+                <dt>?</dt>
+                <dd>Show this help dialog</dd>
+                <dt>S</dt>
+                <dd>Focus the search field</dd>
+                <dt>&larrb;</dt>
+                <dd>Move up in search results</dd>
+                <dt>&rarrb;</dt>
+                <dd>Move down in search results</dd>
+                <dt>&#9166;</dt>
+                <dd>Go to active search result</dd>
+            </dl>
+        </div>
+        <div class="infos">
+            <h1>Search tricks</h1>
+            <p>
+                Prefix searches with a type followed by a colon (e.g.
+                <code>fn:</code>) to restrict the search to a given type.
+            </p>
+            <p>
+                Accepted types are: <code>fn</code>, <code>mod</code>,
+                <code>struct</code>, <code>enum</code>,
+                <code>trait</code>, <code>typedef</code> (or
+                <code>tdef</code>).
+            </p>
+        </div>
+    </div>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "google_drive2";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../jquery.js"></script>
+    <script src="../main.js"></script>
+    
+    <script async src="../search-index.js"></script>
+</body>
+</html>

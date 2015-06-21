@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `Operation` struct in crate `google_sqladmin1_beta4`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, Operation">
+
+    <title>google_sqladmin1_beta4::Operation - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../main.css">
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <section class="sidebar">
+        
+        <p class='location'><a href='index.html'>google_sqladmin1_beta4</a></p><script>window.sidebarCurrent = {name: 'Operation', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </section>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press 'S' to search, '?' for more options..."
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content struct">
+<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_sqladmin1_beta4</a>::<wbr><a class='struct' href=''>Operation</a><wbr></span><span class='out-of-band'><span id='render-detail'>
+            <a id="collapse-all" href="#">[-]</a>&nbsp;<a id="expand-all" href="#">[+]</a>
+        </span><a id='src-38459' href='../src/google_sqladmin1_beta4///home/byron/dev/rust/google-apis-rs/target/debug/build/google-sqladmin1_beta4-692be849bb577812/out/lib.rs.html#9847-9878'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct Operation {
+    pub status: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub import_context: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_sqladmin1_beta4/struct.ImportContext.html' title='google_sqladmin1_beta4::ImportContext'>ImportContext</a>&gt;,
+    pub kind: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub name: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub export_context: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_sqladmin1_beta4/struct.ExportContext.html' title='google_sqladmin1_beta4::ExportContext'>ExportContext</a>&gt;,
+    pub target_project: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub target_id: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub operation_type: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub insert_time: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub target_link: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub start_time: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub error: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_sqladmin1_beta4/struct.OperationErrors.html' title='google_sqladmin1_beta4::OperationErrors'>OperationErrors</a>&gt;,
+    pub end_time: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub self_link: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub user: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+}</pre><div class='docblock'><p>An Operations resource contains information about database instance operations such as create, delete, and restart. Operations resources are created in response to operations that were initiated; you never create them directly.</p>
+
+<h1 id="activities" class='section-header'><a
+                           href="#activities">Activities</a></h1>
+<p>This type is used in activities, which are methods you may call on this type or where this type is involved in. 
+The list links the activity name, along with information about where it is used (one of <em>request</em> and <em>response</em>).</p>
+
+<ul>
+<li><a href="struct.SslCertDeleteCall.html">delete ssl certs</a> (response)</li>
+<li><a href="struct.UserDeleteCall.html">delete users</a> (response)</li>
+<li><a href="struct.DatabaseDeleteCall.html">delete databases</a> (response)</li>
+<li><a href="struct.DatabasePatchCall.html">patch databases</a> (response)</li>
+<li><a href="struct.InstanceResetSslConfigCall.html">reset ssl config instances</a> (response)</li>
+<li><a href="struct.InstancePromoteReplicaCall.html">promote replica instances</a> (response)</li>
+<li><a href="struct.DatabaseUpdateCall.html">update databases</a> (response)</li>
+<li><a href="struct.OperationListCall.html">list operations</a> (none)</li>
+<li><a href="struct.UserUpdateCall.html">update users</a> (response)</li>
+<li><a href="struct.DatabaseInsertCall.html">insert databases</a> (response)</li>
+<li><a href="struct.InstancePatchCall.html">patch instances</a> (response)</li>
+<li><a href="struct.InstanceCloneCall.html">clone instances</a> (response)</li>
+<li><a href="struct.InstanceDeleteCall.html">delete instances</a> (response)</li>
+<li><a href="struct.OperationGetCall.html">get operations</a> (response)</li>
+<li><a href="struct.InstanceStopReplicaCall.html">stop replica instances</a> (response)</li>
+<li><a href="struct.InstanceStartReplicaCall.html">start replica instances</a> (response)</li>
+<li><a href="struct.UserInsertCall.html">insert users</a> (response)</li>
+<li><a href="struct.InstanceInsertCall.html">insert instances</a> (response)</li>
+<li><a href="struct.InstanceImportCall.html">import instances</a> (response)</li>
+<li><a href="struct.InstanceUpdateCall.html">update instances</a> (response)</li>
+<li><a href="struct.InstanceRestartCall.html">restart instances</a> (response)</li>
+<li><a href="struct.InstanceExportCall.html">export instances</a> (response)</li>
+<li><a href="struct.InstanceRestoreBackupCall.html">restore backup instances</a> (response)</li>
+</ul>
+</div><h2 class='fields'>Fields</h2>
+<table><tr><td id='structfield.status'><a class='stability Unmarked' title='No stability level'></a><code>status</code></td><td><div class='docblock'><p>The status of an operation. Valid values are PENDING, RUNNING, DONE, UNKNOWN.</p>
+</div></td></tr><tr><td id='structfield.import_context'><a class='stability Unmarked' title='No stability level'></a><code>import_context</code></td><td><div class='docblock'><p>The context for import operation, if applicable.</p>
+</div></td></tr><tr><td id='structfield.kind'><a class='stability Unmarked' title='No stability level'></a><code>kind</code></td><td><div class='docblock'><p>This is always sql#operation.</p>
+</div></td></tr><tr><td id='structfield.name'><a class='stability Unmarked' title='No stability level'></a><code>name</code></td><td><div class='docblock'><p>An identifier that uniquely identifies the operation. You can use this identifier to retrieve the Operations resource that has information about the operation.</p>
+</div></td></tr><tr><td id='structfield.export_context'><a class='stability Unmarked' title='No stability level'></a><code>export_context</code></td><td><div class='docblock'><p>The context for export operation, if applicable.</p>
+</div></td></tr><tr><td id='structfield.target_project'><a class='stability Unmarked' title='No stability level'></a><code>target_project</code></td><td><div class='docblock'><p>The project ID of the target instance related to this operation.</p>
+</div></td></tr><tr><td id='structfield.target_id'><a class='stability Unmarked' title='No stability level'></a><code>target_id</code></td><td><div class='docblock'><p>Name of the database instance related to this operation.</p>
+</div></td></tr><tr><td id='structfield.operation_type'><a class='stability Unmarked' title='No stability level'></a><code>operation_type</code></td><td><div class='docblock'><p>The type of the operation. Valid values are CREATE, DELETE, UPDATE, RESTART, IMPORT, EXPORT, BACKUP_VOLUME, RESTORE_VOLUME, CREATE_USER, DELETE_USER, CREATE_DATABASE, DELETE_DATABASE .</p>
+</div></td></tr><tr><td id='structfield.insert_time'><a class='stability Unmarked' title='No stability level'></a><code>insert_time</code></td><td><div class='docblock'><p>The time this operation was enqueued in UTC timezone in RFC 3339 format, for example 2012-11-15T16:19:00.094Z.</p>
+</div></td></tr><tr><td id='structfield.target_link'><a class='stability Unmarked' title='No stability level'></a><code>target_link</code></td><td><div class='docblock'><p>The URI of the instance related to the operation.</p>
+</div></td></tr><tr><td id='structfield.start_time'><a class='stability Unmarked' title='No stability level'></a><code>start_time</code></td><td><div class='docblock'><p>The time this operation actually started in UTC timezone in RFC 3339 format, for example 2012-11-15T16:19:00.094Z.</p>
+</div></td></tr><tr><td id='structfield.error'><a class='stability Unmarked' title='No stability level'></a><code>error</code></td><td><div class='docblock'><p>no description provided</p>
+</div></td></tr><tr><td id='structfield.end_time'><a class='stability Unmarked' title='No stability level'></a><code>end_time</code></td><td><div class='docblock'><p>The time this operation finished in UTC timezone in RFC 3339 format, for example 2012-11-15T16:19:00.094Z.</p>
+</div></td></tr><tr><td id='structfield.self_link'><a class='stability Unmarked' title='No stability level'></a><code>self_link</code></td><td><div class='docblock'><p>The URI of this resource.</p>
+</div></td></tr><tr><td id='structfield.user'><a class='stability Unmarked' title='No stability level'></a><code>user</code></td><td><div class='docblock'><p>The email address of the user who initiated this operation.</p>
+</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='../google_sqladmin1_beta4/trait.Resource.html' title='google_sqladmin1_beta4::Resource'>Resource</a> for <a class='struct' href='../google_sqladmin1_beta4/struct.Operation.html' title='google_sqladmin1_beta4::Operation'>Operation</a></code></h3><div class='impl-items'></div><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='../google_sqladmin1_beta4/trait.ResponseResult.html' title='google_sqladmin1_beta4::ResponseResult'>ResponseResult</a> for <a class='struct' href='../google_sqladmin1_beta4/struct.Operation.html' title='google_sqladmin1_beta4::Operation'>Operation</a></code></h3><div class='impl-items'></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_sqladmin1_beta4/struct.Operation.html' title='google_sqladmin1_beta4::Operation'>Operation</a></code></h3><div class='impl-items'><h4 id='method.fmt' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#method.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='http://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='http://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
+</div><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_sqladmin1_beta4/struct.Operation.html' title='google_sqladmin1_beta4::Operation'>Operation</a></code></h3><div class='impl-items'><h4 id='method.clone' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_sqladmin1_beta4/struct.Operation.html' title='google_sqladmin1_beta4::Operation'>Operation</a></code></h4>
+<h4 id='method.clone_from' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code></h4>
+</div><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_sqladmin1_beta4/struct.Operation.html' title='google_sqladmin1_beta4::Operation'>Operation</a></code></h3><div class='impl-items'><h4 id='method.default' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/default/trait.Default.html#method.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_sqladmin1_beta4/struct.Operation.html' title='google_sqladmin1_beta4::Operation'>Operation</a></code></h4>
+</div><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='../serde/de/trait.Deserialize.html' title='serde::de::Deserialize'>Deserialize</a> for <a class='struct' href='../google_sqladmin1_beta4/struct.Operation.html' title='google_sqladmin1_beta4::Operation'>Operation</a></code></h3><div class='impl-items'><h4 id='method.deserialize' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='../serde/de/trait.Deserialize.html#method.deserialize' class='fnname'>deserialize</a>&lt;__D&gt;(deserializer: &amp;mut __D) -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../google_sqladmin1_beta4/struct.Operation.html' title='google_sqladmin1_beta4::Operation'>Operation</a>, __D&gt; <span class='where'>where __D: <a class='trait' href='../serde/de/trait.Deserializer.html' title='serde::de::Deserializer'>Deserializer</a></span></code></h4>
+</div><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='../serde/ser/trait.Serialize.html' title='serde::ser::Serialize'>Serialize</a> for <a class='struct' href='../google_sqladmin1_beta4/struct.Operation.html' title='google_sqladmin1_beta4::Operation'>Operation</a></code></h3><div class='impl-items'><h4 id='method.serialize' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='../serde/ser/trait.Serialize.html#method.serialize' class='fnname'>serialize</a>&lt;__S&gt;(&amp;self, serializer: &amp;mut __S) -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, __S&gt; <span class='where'>where __S: <a class='trait' href='../serde/ser/trait.Serializer.html' title='serde::ser::Serializer'>Serializer</a></span></code></h4>
+</div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <div id="help" class="hidden">
+        <div class="shortcuts">
+            <h1>Keyboard shortcuts</h1>
+            <dl>
+                <dt>?</dt>
+                <dd>Show this help dialog</dd>
+                <dt>S</dt>
+                <dd>Focus the search field</dd>
+                <dt>&larrb;</dt>
+                <dd>Move up in search results</dd>
+                <dt>&rarrb;</dt>
+                <dd>Move down in search results</dd>
+                <dt>&#9166;</dt>
+                <dd>Go to active search result</dd>
+            </dl>
+        </div>
+        <div class="infos">
+            <h1>Search tricks</h1>
+            <p>
+                Prefix searches with a type followed by a colon (e.g.
+                <code>fn:</code>) to restrict the search to a given type.
+            </p>
+            <p>
+                Accepted types are: <code>fn</code>, <code>mod</code>,
+                <code>struct</code>, <code>enum</code>,
+                <code>trait</code>, <code>typedef</code> (or
+                <code>tdef</code>).
+            </p>
+        </div>
+    </div>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "google_sqladmin1_beta4";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../jquery.js"></script>
+    <script src="../main.js"></script>
+    
+    <script async src="../search-index.js"></script>
+</body>
+</html>

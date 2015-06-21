@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `PlacementGroup` struct in crate `google_dfareporting2d1`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, PlacementGroup">
+
+    <title>google_dfareporting2d1::PlacementGroup - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../main.css">
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <section class="sidebar">
+        
+        <p class='location'><a href='index.html'>google_dfareporting2d1</a></p><script>window.sidebarCurrent = {name: 'PlacementGroup', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </section>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press 'S' to search, '?' for more options..."
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content struct">
+<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_dfareporting2d1</a>::<wbr><a class='struct' href=''>PlacementGroup</a><wbr></span><span class='out-of-band'><span id='render-detail'>
+            <a id="collapse-all" href="#">[-]</a>&nbsp;<a id="expand-all" href="#">[+]</a>
+        </span><a id='src-154999' href='../src/google_dfareporting2d1///home/byron/dev/rust/google-apis-rs/target/debug/build/google-dfareporting2d1-085be61ce312d762/out/lib.rs.html#38942-38997'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct PlacementGroup {
+    pub comment: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub primary_placement_id: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub campaign_id: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub primary_placement_id_dimension_value: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_dfareporting2d1/struct.DimensionValue.html' title='google_dfareporting2d1::DimensionValue'>DimensionValue</a>&gt;,
+    pub directory_site_id_dimension_value: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_dfareporting2d1/struct.DimensionValue.html' title='google_dfareporting2d1::DimensionValue'>DimensionValue</a>&gt;,
+    pub advertiser_id: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub directory_site_id: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub create_info: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_dfareporting2d1/struct.LastModifiedInfo.html' title='google_dfareporting2d1::LastModifiedInfo'>LastModifiedInfo</a>&gt;,
+    pub site_id: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub pricing_schedule: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_dfareporting2d1/struct.PricingSchedule.html' title='google_dfareporting2d1::PricingSchedule'>PricingSchedule</a>&gt;,
+    pub site_id_dimension_value: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_dfareporting2d1/struct.DimensionValue.html' title='google_dfareporting2d1::DimensionValue'>DimensionValue</a>&gt;,
+    pub placement_group_type: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub advertiser_id_dimension_value: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_dfareporting2d1/struct.DimensionValue.html' title='google_dfareporting2d1::DimensionValue'>DimensionValue</a>&gt;,
+    pub archived: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt;,
+    pub id: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub placement_strategy_id: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub account_id: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub programmatic_setting: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_dfareporting2d1/struct.ProgrammaticSetting.html' title='google_dfareporting2d1::ProgrammaticSetting'>ProgrammaticSetting</a>&gt;,
+    pub campaign_id_dimension_value: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_dfareporting2d1/struct.DimensionValue.html' title='google_dfareporting2d1::DimensionValue'>DimensionValue</a>&gt;,
+    pub subaccount_id: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub name: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub child_placement_ids: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;&gt;,
+    pub last_modified_info: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_dfareporting2d1/struct.LastModifiedInfo.html' title='google_dfareporting2d1::LastModifiedInfo'>LastModifiedInfo</a>&gt;,
+    pub kind: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub content_category_id: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub external_id: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub id_dimension_value: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_dfareporting2d1/struct.DimensionValue.html' title='google_dfareporting2d1::DimensionValue'>DimensionValue</a>&gt;,
+}</pre><div class='docblock'><p>Contains properties of a package or roadblock.</p>
+
+<h1 id="activities" class='section-header'><a
+                           href="#activities">Activities</a></h1>
+<p>This type is used in activities, which are methods you may call on this type or where this type is involved in. 
+The list links the activity name, along with information about where it is used (one of <em>request</em> and <em>response</em>).</p>
+
+<ul>
+<li><a href="struct.PlacementGroupUpdateCall.html">update placement groups</a> (request|response)</li>
+<li><a href="struct.PlacementGroupPatchCall.html">patch placement groups</a> (request|response)</li>
+<li><a href="struct.PlacementGroupGetCall.html">get placement groups</a> (response)</li>
+<li><a href="struct.PlacementGroupInsertCall.html">insert placement groups</a> (request|response)</li>
+<li><a href="struct.PlacementGroupListCall.html">list placement groups</a> (none)</li>
+</ul>
+</div><h2 class='fields'>Fields</h2>
+<table><tr><td id='structfield.comment'><a class='stability Unmarked' title='No stability level'></a><code>comment</code></td><td><div class='docblock'><p>Comments for this placement group.</p>
+</div></td></tr><tr><td id='structfield.primary_placement_id'><a class='stability Unmarked' title='No stability level'></a><code>primary_placement_id</code></td><td><div class='docblock'><p>ID of the primary placement, used to calculate the media cost of a roadblock (placement group). Modifying this field will automatically modify the primary field on all affected roadblock child placements.</p>
+</div></td></tr><tr><td id='structfield.campaign_id'><a class='stability Unmarked' title='No stability level'></a><code>campaign_id</code></td><td><div class='docblock'><p>Campaign ID of this placement group. This field is required on insertion.</p>
+</div></td></tr><tr><td id='structfield.primary_placement_id_dimension_value'><a class='stability Unmarked' title='No stability level'></a><code>primary_placement_id_dimension_value</code></td><td><div class='docblock'><p>Dimension value for the ID of the primary placement. This is a read-only, auto-generated field.</p>
+</div></td></tr><tr><td id='structfield.directory_site_id_dimension_value'><a class='stability Unmarked' title='No stability level'></a><code>directory_site_id_dimension_value</code></td><td><div class='docblock'><p>Dimension value for the ID of the directory site. This is a read-only, auto-generated field.</p>
+</div></td></tr><tr><td id='structfield.advertiser_id'><a class='stability Unmarked' title='No stability level'></a><code>advertiser_id</code></td><td><div class='docblock'><p>Advertiser ID of this placement group. This is a required field on insertion.</p>
+</div></td></tr><tr><td id='structfield.directory_site_id'><a class='stability Unmarked' title='No stability level'></a><code>directory_site_id</code></td><td><div class='docblock'><p>Directory site ID associated with this placement group. On insert, you must set either this field or the site_id field to specify the site associated with this placement group. This is a required field that is read-only after insertion.</p>
+</div></td></tr><tr><td id='structfield.create_info'><a class='stability Unmarked' title='No stability level'></a><code>create_info</code></td><td><div class='docblock'><p>Information about the creation of this placement group. This is a read-only field.</p>
+</div></td></tr><tr><td id='structfield.site_id'><a class='stability Unmarked' title='No stability level'></a><code>site_id</code></td><td><div class='docblock'><p>Site ID associated with this placement group. On insert, you must set either this field or the directorySiteId field to specify the site associated with this placement group. This is a required field that is read-only after insertion.</p>
+</div></td></tr><tr><td id='structfield.pricing_schedule'><a class='stability Unmarked' title='No stability level'></a><code>pricing_schedule</code></td><td><div class='docblock'><p>Pricing schedule of this placement group. This field is required on insertion.</p>
+</div></td></tr><tr><td id='structfield.site_id_dimension_value'><a class='stability Unmarked' title='No stability level'></a><code>site_id_dimension_value</code></td><td><div class='docblock'><p>Dimension value for the ID of the site. This is a read-only, auto-generated field.</p>
+</div></td></tr><tr><td id='structfield.placement_group_type'><a class='stability Unmarked' title='No stability level'></a><code>placement_group_type</code></td><td><div class='docblock'><p>Type of this placement group. A package is a simple group of placements that acts as a single pricing point for a group of tags. A roadblock is a group of placements that not only acts as a single pricing point, but also assumes that all the tags in it will be served at the same time. A roadblock requires one of its assigned placements to be marked as primary for reporting. This field is required on insertion.</p>
+</div></td></tr><tr><td id='structfield.advertiser_id_dimension_value'><a class='stability Unmarked' title='No stability level'></a><code>advertiser_id_dimension_value</code></td><td><div class='docblock'><p>Dimension value for the ID of the advertiser. This is a read-only, auto-generated field.</p>
+</div></td></tr><tr><td id='structfield.archived'><a class='stability Unmarked' title='No stability level'></a><code>archived</code></td><td><div class='docblock'><p>Whether this placement group is archived.</p>
+</div></td></tr><tr><td id='structfield.id'><a class='stability Unmarked' title='No stability level'></a><code>id</code></td><td><div class='docblock'><p>ID of this placement group. This is a read-only, auto-generated field.</p>
+</div></td></tr><tr><td id='structfield.placement_strategy_id'><a class='stability Unmarked' title='No stability level'></a><code>placement_strategy_id</code></td><td><div class='docblock'><p>ID of the placement strategy assigned to this placement group.</p>
+</div></td></tr><tr><td id='structfield.account_id'><a class='stability Unmarked' title='No stability level'></a><code>account_id</code></td><td><div class='docblock'><p>Account ID of this placement group. This is a read-only field that can be left blank.</p>
+</div></td></tr><tr><td id='structfield.programmatic_setting'><a class='stability Unmarked' title='No stability level'></a><code>programmatic_setting</code></td><td><div class='docblock'><p>Settings for a programmatic placement.</p>
+</div></td></tr><tr><td id='structfield.campaign_id_dimension_value'><a class='stability Unmarked' title='No stability level'></a><code>campaign_id_dimension_value</code></td><td><div class='docblock'><p>Dimension value for the ID of the campaign. This is a read-only, auto-generated field.</p>
+</div></td></tr><tr><td id='structfield.subaccount_id'><a class='stability Unmarked' title='No stability level'></a><code>subaccount_id</code></td><td><div class='docblock'><p>Subaccount ID of this placement group. This is a read-only field that can be left blank.</p>
+</div></td></tr><tr><td id='structfield.name'><a class='stability Unmarked' title='No stability level'></a><code>name</code></td><td><div class='docblock'><p>Name of this placement group. This is a required field and must be less than 256 characters long.</p>
+</div></td></tr><tr><td id='structfield.child_placement_ids'><a class='stability Unmarked' title='No stability level'></a><code>child_placement_ids</code></td><td><div class='docblock'><p>IDs of placements which are assigned to this placement group. This is a read-only, auto-generated field.</p>
+</div></td></tr><tr><td id='structfield.last_modified_info'><a class='stability Unmarked' title='No stability level'></a><code>last_modified_info</code></td><td><div class='docblock'><p>Information about the most recent modification of this placement group. This is a read-only field.</p>
+</div></td></tr><tr><td id='structfield.kind'><a class='stability Unmarked' title='No stability level'></a><code>kind</code></td><td><div class='docblock'><p>Identifies what kind of resource this is. Value: the fixed string &quot;dfareporting#placementGroup&quot;.</p>
+</div></td></tr><tr><td id='structfield.content_category_id'><a class='stability Unmarked' title='No stability level'></a><code>content_category_id</code></td><td><div class='docblock'><p>ID of the content category assigned to this placement group.</p>
+</div></td></tr><tr><td id='structfield.external_id'><a class='stability Unmarked' title='No stability level'></a><code>external_id</code></td><td><div class='docblock'><p>External ID for this placement.</p>
+</div></td></tr><tr><td id='structfield.id_dimension_value'><a class='stability Unmarked' title='No stability level'></a><code>id_dimension_value</code></td><td><div class='docblock'><p>Dimension value for the ID of this placement group. This is a read-only, auto-generated field.</p>
+</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='../google_dfareporting2d1/trait.RequestValue.html' title='google_dfareporting2d1::RequestValue'>RequestValue</a> for <a class='struct' href='../google_dfareporting2d1/struct.PlacementGroup.html' title='google_dfareporting2d1::PlacementGroup'>PlacementGroup</a></code></h3><div class='impl-items'></div><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='../google_dfareporting2d1/trait.Resource.html' title='google_dfareporting2d1::Resource'>Resource</a> for <a class='struct' href='../google_dfareporting2d1/struct.PlacementGroup.html' title='google_dfareporting2d1::PlacementGroup'>PlacementGroup</a></code></h3><div class='impl-items'></div><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='../google_dfareporting2d1/trait.ResponseResult.html' title='google_dfareporting2d1::ResponseResult'>ResponseResult</a> for <a class='struct' href='../google_dfareporting2d1/struct.PlacementGroup.html' title='google_dfareporting2d1::PlacementGroup'>PlacementGroup</a></code></h3><div class='impl-items'></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_dfareporting2d1/struct.PlacementGroup.html' title='google_dfareporting2d1::PlacementGroup'>PlacementGroup</a></code></h3><div class='impl-items'><h4 id='method.fmt' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#method.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='http://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='http://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
+</div><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_dfareporting2d1/struct.PlacementGroup.html' title='google_dfareporting2d1::PlacementGroup'>PlacementGroup</a></code></h3><div class='impl-items'><h4 id='method.clone' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.PlacementGroup.html' title='google_dfareporting2d1::PlacementGroup'>PlacementGroup</a></code></h4>
+<h4 id='method.clone_from' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code></h4>
+</div><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_dfareporting2d1/struct.PlacementGroup.html' title='google_dfareporting2d1::PlacementGroup'>PlacementGroup</a></code></h3><div class='impl-items'><h4 id='method.default' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/default/trait.Default.html#method.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_dfareporting2d1/struct.PlacementGroup.html' title='google_dfareporting2d1::PlacementGroup'>PlacementGroup</a></code></h4>
+</div><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='../serde/de/trait.Deserialize.html' title='serde::de::Deserialize'>Deserialize</a> for <a class='struct' href='../google_dfareporting2d1/struct.PlacementGroup.html' title='google_dfareporting2d1::PlacementGroup'>PlacementGroup</a></code></h3><div class='impl-items'><h4 id='method.deserialize' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='../serde/de/trait.Deserialize.html#method.deserialize' class='fnname'>deserialize</a>&lt;__D&gt;(deserializer: &amp;mut __D) -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../google_dfareporting2d1/struct.PlacementGroup.html' title='google_dfareporting2d1::PlacementGroup'>PlacementGroup</a>, __D&gt; <span class='where'>where __D: <a class='trait' href='../serde/de/trait.Deserializer.html' title='serde::de::Deserializer'>Deserializer</a></span></code></h4>
+</div><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='../serde/ser/trait.Serialize.html' title='serde::ser::Serialize'>Serialize</a> for <a class='struct' href='../google_dfareporting2d1/struct.PlacementGroup.html' title='google_dfareporting2d1::PlacementGroup'>PlacementGroup</a></code></h3><div class='impl-items'><h4 id='method.serialize' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='../serde/ser/trait.Serialize.html#method.serialize' class='fnname'>serialize</a>&lt;__S&gt;(&amp;self, serializer: &amp;mut __S) -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, __S&gt; <span class='where'>where __S: <a class='trait' href='../serde/ser/trait.Serializer.html' title='serde::ser::Serializer'>Serializer</a></span></code></h4>
+</div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <div id="help" class="hidden">
+        <div class="shortcuts">
+            <h1>Keyboard shortcuts</h1>
+            <dl>
+                <dt>?</dt>
+                <dd>Show this help dialog</dd>
+                <dt>S</dt>
+                <dd>Focus the search field</dd>
+                <dt>&larrb;</dt>
+                <dd>Move up in search results</dd>
+                <dt>&rarrb;</dt>
+                <dd>Move down in search results</dd>
+                <dt>&#9166;</dt>
+                <dd>Go to active search result</dd>
+            </dl>
+        </div>
+        <div class="infos">
+            <h1>Search tricks</h1>
+            <p>
+                Prefix searches with a type followed by a colon (e.g.
+                <code>fn:</code>) to restrict the search to a given type.
+            </p>
+            <p>
+                Accepted types are: <code>fn</code>, <code>mod</code>,
+                <code>struct</code>, <code>enum</code>,
+                <code>trait</code>, <code>typedef</code> (or
+                <code>tdef</code>).
+            </p>
+        </div>
+    </div>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "google_dfareporting2d1";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../jquery.js"></script>
+    <script src="../main.js"></script>
+    
+    <script async src="../search-index.js"></script>
+</body>
+</html>

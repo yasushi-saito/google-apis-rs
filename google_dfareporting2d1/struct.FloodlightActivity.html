@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `FloodlightActivity` struct in crate `google_dfareporting2d1`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, FloodlightActivity">
+
+    <title>google_dfareporting2d1::FloodlightActivity - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../main.css">
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <section class="sidebar">
+        
+        <p class='location'><a href='index.html'>google_dfareporting2d1</a></p><script>window.sidebarCurrent = {name: 'FloodlightActivity', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </section>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press 'S' to search, '?' for more options..."
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content struct">
+<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_dfareporting2d1</a>::<wbr><a class='struct' href=''>FloodlightActivity</a><wbr></span><span class='out-of-band'><span id='render-detail'>
+            <a id="collapse-all" href="#">[-]</a>&nbsp;<a id="expand-all" href="#">[+]</a>
+        </span><a id='src-135827' href='../src/google_dfareporting2d1///home/byron/dev/rust/google-apis-rs/target/debug/build/google-dfareporting2d1-085be61ce312d762/out/lib.rs.html#34145-34223'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct FloodlightActivity {
+    pub secure: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt;,
+    pub id_dimension_value: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_dfareporting2d1/struct.DimensionValue.html' title='google_dfareporting2d1::DimensionValue'>DimensionValue</a>&gt;,
+    pub floodlight_activity_group_name: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub image_tag_enabled: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt;,
+    pub advertiser_id: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub cache_busting_type: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub advertiser_id_dimension_value: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_dfareporting2d1/struct.DimensionValue.html' title='google_dfareporting2d1::DimensionValue'>DimensionValue</a>&gt;,
+    pub floodlight_activity_group_id: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub user_defined_variable_types: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;&gt;,
+    pub tag_string: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub floodlight_activity_group_tag_string: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub expected_url: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub kind: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub subaccount_id: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub name: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub publisher_tags: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='../google_dfareporting2d1/struct.FloodlightActivityPublisherDynamicTag.html' title='google_dfareporting2d1::FloodlightActivityPublisherDynamicTag'>FloodlightActivityPublisherDynamicTag</a>&gt;&gt;,
+    pub ssl_compliant: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt;,
+    pub notes: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub floodlight_configuration_id: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub id: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub counting_method: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub default_tags: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='../google_dfareporting2d1/struct.FloodlightActivityDynamicTag.html' title='google_dfareporting2d1::FloodlightActivityDynamicTag'>FloodlightActivityDynamicTag</a>&gt;&gt;,
+    pub floodlight_configuration_id_dimension_value: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_dfareporting2d1/struct.DimensionValue.html' title='google_dfareporting2d1::DimensionValue'>DimensionValue</a>&gt;,
+    pub tag_format: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub hidden: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt;,
+    pub account_id: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub ssl_required: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt;,
+    pub floodlight_activity_group_type: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+}</pre><div class='docblock'><p>Contains properties of a Floodlight activity.</p>
+
+<h1 id="activities" class='section-header'><a
+                           href="#activities">Activities</a></h1>
+<p>This type is used in activities, which are methods you may call on this type or where this type is involved in. 
+The list links the activity name, along with information about where it is used (one of <em>request</em> and <em>response</em>).</p>
+
+<ul>
+<li><a href="struct.FloodlightActivityGetCall.html">get floodlight activities</a> (response)</li>
+<li><a href="struct.FloodlightActivityInsertCall.html">insert floodlight activities</a> (request|response)</li>
+<li><a href="struct.FloodlightActivityPatchCall.html">patch floodlight activities</a> (request|response)</li>
+<li><a href="struct.FloodlightActivityUpdateCall.html">update floodlight activities</a> (request|response)</li>
+</ul>
+</div><h2 class='fields'>Fields</h2>
+<table><tr><td id='structfield.secure'><a class='stability Unmarked' title='No stability level'></a><code>secure</code></td><td><div class='docblock'><p>Whether this tag should use SSL.</p>
+</div></td></tr><tr><td id='structfield.id_dimension_value'><a class='stability Unmarked' title='No stability level'></a><code>id_dimension_value</code></td><td><div class='docblock'><p>Dimension value for the ID of this floodlight activity. This is a read-only, auto-generated field.</p>
+</div></td></tr><tr><td id='structfield.floodlight_activity_group_name'><a class='stability Unmarked' title='No stability level'></a><code>floodlight_activity_group_name</code></td><td><div class='docblock'><p>Name of the associated floodlight activity group. This is a read-only field.</p>
+</div></td></tr><tr><td id='structfield.image_tag_enabled'><a class='stability Unmarked' title='No stability level'></a><code>image_tag_enabled</code></td><td><div class='docblock'><p>Whether the image tag is enabled for this activity.</p>
+</div></td></tr><tr><td id='structfield.advertiser_id'><a class='stability Unmarked' title='No stability level'></a><code>advertiser_id</code></td><td><div class='docblock'><p>Advertiser ID of this floodlight activity. If this field is left blank, the value will be copied over either from the activity group&#39;s advertiser or the existing activity&#39;s advertiser.</p>
+</div></td></tr><tr><td id='structfield.cache_busting_type'><a class='stability Unmarked' title='No stability level'></a><code>cache_busting_type</code></td><td><div class='docblock'><p>Code type used for cache busting in the generated tag.</p>
+</div></td></tr><tr><td id='structfield.advertiser_id_dimension_value'><a class='stability Unmarked' title='No stability level'></a><code>advertiser_id_dimension_value</code></td><td><div class='docblock'><p>Dimension value for the ID of the advertiser. This is a read-only, auto-generated field.</p>
+</div></td></tr><tr><td id='structfield.floodlight_activity_group_id'><a class='stability Unmarked' title='No stability level'></a><code>floodlight_activity_group_id</code></td><td><div class='docblock'><p>Floodlight activity group ID of this floodlight activity. This is a required field.</p>
+</div></td></tr><tr><td id='structfield.user_defined_variable_types'><a class='stability Unmarked' title='No stability level'></a><code>user_defined_variable_types</code></td><td><div class='docblock'><p>List of the user-defined variables used by this conversion tag. These map to the &quot;u[1-20]=&quot; in the tags. Each of these can have a user defined type.
+Acceptable values are:
+- &quot;U1&quot;
+- &quot;U2&quot;
+- &quot;U3&quot;
+- &quot;U4&quot;
+- &quot;U5&quot;
+- &quot;U6&quot;
+- &quot;U7&quot;
+- &quot;U8&quot;
+- &quot;U9&quot;
+- &quot;U10&quot;
+- &quot;U11&quot;
+- &quot;U12&quot;
+- &quot;U13&quot;
+- &quot;U14&quot;
+- &quot;U15&quot;
+- &quot;U16&quot;
+- &quot;U17&quot;
+- &quot;U18&quot;
+- &quot;U19&quot;
+- &quot;U20&quot;</p>
+</div></td></tr><tr><td id='structfield.tag_string'><a class='stability Unmarked' title='No stability level'></a><code>tag_string</code></td><td><div class='docblock'><p>Value of the cat= paramter in the floodlight tag, which the ad servers use to identify the activity. This is optional: if empty, a new tag string will be generated for you. This string must be 1 to 8 characters long, with valid characters being [a-z][A-Z][0-9][-][ _ ]. This tag string must also be unique among activities of the same activity group. This field is read-only after insertion.</p>
+</div></td></tr><tr><td id='structfield.floodlight_activity_group_tag_string'><a class='stability Unmarked' title='No stability level'></a><code>floodlight_activity_group_tag_string</code></td><td><div class='docblock'><p>Tag string of the associated floodlight activity group. This is a read-only field.</p>
+</div></td></tr><tr><td id='structfield.expected_url'><a class='stability Unmarked' title='No stability level'></a><code>expected_url</code></td><td><div class='docblock'><p>URL where this tag will be deployed. If specified, must be less than 256 characters long.</p>
+</div></td></tr><tr><td id='structfield.kind'><a class='stability Unmarked' title='No stability level'></a><code>kind</code></td><td><div class='docblock'><p>Identifies what kind of resource this is. Value: the fixed string &quot;dfareporting#floodlightActivity&quot;.</p>
+</div></td></tr><tr><td id='structfield.subaccount_id'><a class='stability Unmarked' title='No stability level'></a><code>subaccount_id</code></td><td><div class='docblock'><p>Subaccount ID of this floodlight activity. This is a read-only field that can be left blank.</p>
+</div></td></tr><tr><td id='structfield.name'><a class='stability Unmarked' title='No stability level'></a><code>name</code></td><td><div class='docblock'><p>Name of this floodlight activity. This is a required field. Must be less than 129 characters long and cannot contain quotes.</p>
+</div></td></tr><tr><td id='structfield.publisher_tags'><a class='stability Unmarked' title='No stability level'></a><code>publisher_tags</code></td><td><div class='docblock'><p>Publisher dynamic floodlight tags.</p>
+</div></td></tr><tr><td id='structfield.ssl_compliant'><a class='stability Unmarked' title='No stability level'></a><code>ssl_compliant</code></td><td><div class='docblock'><p>Whether the floodlight activity is SSL-compliant. This is a read-only field, its value detected by the system from the floodlight tags.</p>
+</div></td></tr><tr><td id='structfield.notes'><a class='stability Unmarked' title='No stability level'></a><code>notes</code></td><td><div class='docblock'><p>General notes or implementation instructions for the tag.</p>
+</div></td></tr><tr><td id='structfield.floodlight_configuration_id'><a class='stability Unmarked' title='No stability level'></a><code>floodlight_configuration_id</code></td><td><div class='docblock'><p>Floodlight configuration ID of this floodlight activity. If this field is left blank, the value will be copied over either from the activity group&#39;s floodlight configuration or from the existing activity&#39;s floodlight configuration.</p>
+</div></td></tr><tr><td id='structfield.id'><a class='stability Unmarked' title='No stability level'></a><code>id</code></td><td><div class='docblock'><p>ID of this floodlight activity. This is a read-only, auto-generated field.</p>
+</div></td></tr><tr><td id='structfield.counting_method'><a class='stability Unmarked' title='No stability level'></a><code>counting_method</code></td><td><div class='docblock'><p>Counting method for conversions for this floodlight activity. This is a required field.</p>
+</div></td></tr><tr><td id='structfield.default_tags'><a class='stability Unmarked' title='No stability level'></a><code>default_tags</code></td><td><div class='docblock'><p>Dynamic floodlight tags.</p>
+</div></td></tr><tr><td id='structfield.floodlight_configuration_id_dimension_value'><a class='stability Unmarked' title='No stability level'></a><code>floodlight_configuration_id_dimension_value</code></td><td><div class='docblock'><p>Dimension value for the ID of the floodlight configuration. This is a read-only, auto-generated field.</p>
+</div></td></tr><tr><td id='structfield.tag_format'><a class='stability Unmarked' title='No stability level'></a><code>tag_format</code></td><td><div class='docblock'><p>Tag format type for the floodlight activity. If left blank, the tag format will default to HTML.</p>
+</div></td></tr><tr><td id='structfield.hidden'><a class='stability Unmarked' title='No stability level'></a><code>hidden</code></td><td><div class='docblock'><p>Whether this activity is archived.</p>
+</div></td></tr><tr><td id='structfield.account_id'><a class='stability Unmarked' title='No stability level'></a><code>account_id</code></td><td><div class='docblock'><p>Account ID of this floodlight activity. This is a read-only field that can be left blank.</p>
+</div></td></tr><tr><td id='structfield.ssl_required'><a class='stability Unmarked' title='No stability level'></a><code>ssl_required</code></td><td><div class='docblock'><p>Whether this floodlight activity must be SSL-compliant.</p>
+</div></td></tr><tr><td id='structfield.floodlight_activity_group_type'><a class='stability Unmarked' title='No stability level'></a><code>floodlight_activity_group_type</code></td><td><div class='docblock'><p>Type of the associated floodlight activity group. This is a read-only field.</p>
+</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='../google_dfareporting2d1/trait.RequestValue.html' title='google_dfareporting2d1::RequestValue'>RequestValue</a> for <a class='struct' href='../google_dfareporting2d1/struct.FloodlightActivity.html' title='google_dfareporting2d1::FloodlightActivity'>FloodlightActivity</a></code></h3><div class='impl-items'></div><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='../google_dfareporting2d1/trait.ResponseResult.html' title='google_dfareporting2d1::ResponseResult'>ResponseResult</a> for <a class='struct' href='../google_dfareporting2d1/struct.FloodlightActivity.html' title='google_dfareporting2d1::FloodlightActivity'>FloodlightActivity</a></code></h3><div class='impl-items'></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_dfareporting2d1/struct.FloodlightActivity.html' title='google_dfareporting2d1::FloodlightActivity'>FloodlightActivity</a></code></h3><div class='impl-items'><h4 id='method.fmt' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#method.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='http://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='http://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
+</div><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_dfareporting2d1/struct.FloodlightActivity.html' title='google_dfareporting2d1::FloodlightActivity'>FloodlightActivity</a></code></h3><div class='impl-items'><h4 id='method.clone' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.FloodlightActivity.html' title='google_dfareporting2d1::FloodlightActivity'>FloodlightActivity</a></code></h4>
+<h4 id='method.clone_from' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code></h4>
+</div><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_dfareporting2d1/struct.FloodlightActivity.html' title='google_dfareporting2d1::FloodlightActivity'>FloodlightActivity</a></code></h3><div class='impl-items'><h4 id='method.default' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/default/trait.Default.html#method.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_dfareporting2d1/struct.FloodlightActivity.html' title='google_dfareporting2d1::FloodlightActivity'>FloodlightActivity</a></code></h4>
+</div><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='../serde/de/trait.Deserialize.html' title='serde::de::Deserialize'>Deserialize</a> for <a class='struct' href='../google_dfareporting2d1/struct.FloodlightActivity.html' title='google_dfareporting2d1::FloodlightActivity'>FloodlightActivity</a></code></h3><div class='impl-items'><h4 id='method.deserialize' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='../serde/de/trait.Deserialize.html#method.deserialize' class='fnname'>deserialize</a>&lt;__D&gt;(deserializer: &amp;mut __D) -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../google_dfareporting2d1/struct.FloodlightActivity.html' title='google_dfareporting2d1::FloodlightActivity'>FloodlightActivity</a>, __D&gt; <span class='where'>where __D: <a class='trait' href='../serde/de/trait.Deserializer.html' title='serde::de::Deserializer'>Deserializer</a></span></code></h4>
+</div><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='../serde/ser/trait.Serialize.html' title='serde::ser::Serialize'>Serialize</a> for <a class='struct' href='../google_dfareporting2d1/struct.FloodlightActivity.html' title='google_dfareporting2d1::FloodlightActivity'>FloodlightActivity</a></code></h3><div class='impl-items'><h4 id='method.serialize' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='../serde/ser/trait.Serialize.html#method.serialize' class='fnname'>serialize</a>&lt;__S&gt;(&amp;self, serializer: &amp;mut __S) -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, __S&gt; <span class='where'>where __S: <a class='trait' href='../serde/ser/trait.Serializer.html' title='serde::ser::Serializer'>Serializer</a></span></code></h4>
+</div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <div id="help" class="hidden">
+        <div class="shortcuts">
+            <h1>Keyboard shortcuts</h1>
+            <dl>
+                <dt>?</dt>
+                <dd>Show this help dialog</dd>
+                <dt>S</dt>
+                <dd>Focus the search field</dd>
+                <dt>&larrb;</dt>
+                <dd>Move up in search results</dd>
+                <dt>&rarrb;</dt>
+                <dd>Move down in search results</dd>
+                <dt>&#9166;</dt>
+                <dd>Go to active search result</dd>
+            </dl>
+        </div>
+        <div class="infos">
+            <h1>Search tricks</h1>
+            <p>
+                Prefix searches with a type followed by a colon (e.g.
+                <code>fn:</code>) to restrict the search to a given type.
+            </p>
+            <p>
+                Accepted types are: <code>fn</code>, <code>mod</code>,
+                <code>struct</code>, <code>enum</code>,
+                <code>trait</code>, <code>typedef</code> (or
+                <code>tdef</code>).
+            </p>
+        </div>
+    </div>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "google_dfareporting2d1";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../jquery.js"></script>
+    <script src="../main.js"></script>
+    
+    <script async src="../search-index.js"></script>
+</body>
+</html>

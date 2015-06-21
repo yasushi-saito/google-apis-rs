@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `ActivityListCall` struct in crate `google_appsactivity1`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, ActivityListCall">
+
+    <title>google_appsactivity1::ActivityListCall - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../main.css">
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <section class="sidebar">
+        
+        <p class='location'><a href='index.html'>google_appsactivity1</a></p><script>window.sidebarCurrent = {name: 'ActivityListCall', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </section>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press 'S' to search, '?' for more options..."
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content struct">
+<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_appsactivity1</a>::<wbr><a class='struct' href=''>ActivityListCall</a><wbr></span><span class='out-of-band'><span id='render-detail'>
+            <a id="collapse-all" href="#">[-]</a>&nbsp;<a id="expand-all" href="#">[+]</a>
+        </span><a id='src-13651' href='../src/google_appsactivity1///home/byron/dev/rust/google-apis-rs/target/debug/build/google-appsactivity1-381372b6ee7b61b7/out/lib.rs.html#3595-3607'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct ActivityListCall&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
+    // some fields omitted
+}</pre><div class='docblock'><p>Returns a list of activities visible to the current logged in user. Visible activities are determined by the visiblity settings of the object that was acted on, e.g. Drive files a user can see. An activity is a record of past events. Multiple events may be merged if they are similar. A request is scoped to activities from a given Google service using the source parameter.</p>
+
+<p>A builder for the <em>list</em> method supported by a <em>activity</em> resource.
+It is not used directly, but through a <code>ActivityMethods</code> instance.</p>
+
+<h1 id="example" class='section-header'><a
+                           href="#example">Example</a></h1>
+<p>Instantiate a resource method builder</p>
+<pre id='rust-example-rendered' class='rust '>
+ 
+<span class='comment'>// You can configure optional parameters by calling the respective setters at will, and</span>
+<span class='comment'>// execute the final call using `doit()`.</span>
+<span class='comment'>// Values shown here are possibly random and not representative !</span>
+<span class='kw'>let</span> <span class='ident'>result</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>activities</span>().<span class='ident'>list</span>()
+             .<span class='ident'>user_id</span>(<span class='string'>&quot;nonumy&quot;</span>)
+             .<span class='ident'>source</span>(<span class='string'>&quot;dolores&quot;</span>)
+             .<span class='ident'>page_token</span>(<span class='string'>&quot;gubergren&quot;</span>)
+             .<span class='ident'>page_size</span>(<span class='op'>-</span><span class='number'>95</span>)
+             .<span class='ident'>grouping_strategy</span>(<span class='string'>&quot;aliquyam&quot;</span>)
+             .<span class='ident'>drive_file_id</span>(<span class='string'>&quot;ea&quot;</span>)
+             .<span class='ident'>drive_ancestor_id</span>(<span class='string'>&quot;no&quot;</span>)
+             .<span class='ident'>doit</span>();
+</pre>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_appsactivity1/struct.ActivityListCall.html' title='google_appsactivity1::ActivityListCall'>ActivityListCall</a>&lt;'a, C, A&gt; <span class='where'>where C: <a class='trait' href='http://doc.rust-lang.org/nightly/collections/borrow/trait.BorrowMut.html' title='collections::borrow::BorrowMut'>BorrowMut</a>&lt;<a class='struct' href='../hyper/client/struct.Client.html' title='hyper::client::Client'>Client</a>&gt;, A: <a class='trait' href='../yup_oauth2/helper/trait.GetToken.html' title='yup_oauth2::helper::GetToken'>GetToken</a></span></code></h3><div class='impl-items'><h4 id='method.doit' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.doit' class='fnname'>doit</a>(self) -&gt; <a class='type' href='../google_appsactivity1/type.Result.html' title='google_appsactivity1::Result'>Result</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.tuple.html'>(<a class='struct' href='../hyper/client/response/struct.Response.html' title='hyper::client::response::Response'>Response</a>, <a class='struct' href='../google_appsactivity1/struct.ListActivitiesResponse.html' title='google_appsactivity1::ListActivitiesResponse'>ListActivitiesResponse</a>)</a>&gt;</code></h4>
+<div class='docblock'><p>Perform the operation you have build so far.</p>
+</div><h4 id='method.user_id' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.user_id' class='fnname'>user_id</a>(self, new_value: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_appsactivity1/struct.ActivityListCall.html' title='google_appsactivity1::ActivityListCall'>ActivityListCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Indicates the user to return activity for. Use the special value me to indicate the currently authenticated user.</p>
+
+<p>Sets the <em>user id</em> query property to the given value.</p>
+</div><h4 id='method.source' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.source' class='fnname'>source</a>(self, new_value: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_appsactivity1/struct.ActivityListCall.html' title='google_appsactivity1::ActivityListCall'>ActivityListCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>The Google service from which to return activities. Possible values of source are:
+- drive.google.com</p>
+
+<p>Sets the <em>source</em> query property to the given value.</p>
+</div><h4 id='method.page_token' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.page_token' class='fnname'>page_token</a>(self, new_value: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_appsactivity1/struct.ActivityListCall.html' title='google_appsactivity1::ActivityListCall'>ActivityListCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>A token to retrieve a specific page of results.</p>
+
+<p>Sets the <em>page token</em> query property to the given value.</p>
+</div><h4 id='method.page_size' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.page_size' class='fnname'>page_size</a>(self, new_value: <a href='http://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>) -&gt; <a class='struct' href='../google_appsactivity1/struct.ActivityListCall.html' title='google_appsactivity1::ActivityListCall'>ActivityListCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>The maximum number of events to return on a page. The response includes a continuation token if there are more events.</p>
+
+<p>Sets the <em>page size</em> query property to the given value.</p>
+</div><h4 id='method.grouping_strategy' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.grouping_strategy' class='fnname'>grouping_strategy</a>(self, new_value: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_appsactivity1/struct.ActivityListCall.html' title='google_appsactivity1::ActivityListCall'>ActivityListCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Indicates the strategy to use when grouping singleEvents items in the associated combinedEvent object.</p>
+
+<p>Sets the <em>grouping strategy</em> query property to the given value.</p>
+</div><h4 id='method.drive_file_id' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.drive_file_id' class='fnname'>drive_file_id</a>(self, new_value: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_appsactivity1/struct.ActivityListCall.html' title='google_appsactivity1::ActivityListCall'>ActivityListCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Identifies the Drive item to return activities for.</p>
+
+<p>Sets the <em>drive.file id</em> query property to the given value.</p>
+</div><h4 id='method.drive_ancestor_id' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.drive_ancestor_id' class='fnname'>drive_ancestor_id</a>(self, new_value: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_appsactivity1/struct.ActivityListCall.html' title='google_appsactivity1::ActivityListCall'>ActivityListCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Identifies the Drive folder containing the items for which to return activities.</p>
+
+<p>Sets the <em>drive.ancestor id</em> query property to the given value.</p>
+</div><h4 id='method.delegate' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.delegate' class='fnname'>delegate</a>(self, new_value: &amp;'a mut <a class='trait' href='../google_appsactivity1/trait.Delegate.html' title='google_appsactivity1::Delegate'>Delegate</a>) -&gt; <a class='struct' href='../google_appsactivity1/struct.ActivityListCall.html' title='google_appsactivity1::ActivityListCall'>ActivityListCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>The delegate implementation is consulted whenever there is an intermediate result, or if something goes wrong
+while executing the actual API request.</p>
+
+<p>It should be used to handle progress information, and to implement a certain level of resilience.</p>
+
+<p>Sets the <em>delegate</em> property to the given value.</p>
+</div><h4 id='method.param' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.param' class='fnname'>param</a>&lt;T&gt;(self, name: T, value: T) -&gt; <a class='struct' href='../google_appsactivity1/struct.ActivityListCall.html' title='google_appsactivity1::ActivityListCall'>ActivityListCall</a>&lt;'a, C, A&gt; <span class='where'>where T: <a class='trait' href='http://doc.rust-lang.org/nightly/core/convert/trait.AsRef.html' title='core::convert::AsRef'>AsRef</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>&gt;</span></code></h4>
+<div class='docblock'><p>Set any additional parameter of the query string used in the request.
+It should be used to set parameters which are not yet available through their own 
+setters.</p>
+
+<p>Please note that this method must not be used to set any of the known paramters
+which have their own setter method. If done anyway, the request will fail.</p>
+
+<h1 id="additional-parameters" class='section-header'><a
+                           href="#additional-parameters">Additional Parameters</a></h1>
+<ul>
+<li><em>quotaUser</em> (query-string) - Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. Overrides userIp if both are provided.</li>
+<li><em>oauth_token</em> (query-string) - OAuth 2.0 token for the current user.</li>
+<li><em>key</em> (query-string) - API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token.</li>
+<li><em>prettyPrint</em> (query-boolean) - Returns response with indentations and line breaks.</li>
+<li><em>userIp</em> (query-string) - IP address of the site where the request originates. Use this if you want to enforce per-user limits.</li>
+<li><em>fields</em> (query-string) - Selector specifying which fields to include in a partial response.</li>
+<li><em>alt</em> (query-string) - Data format for the response.</li>
+</ul>
+</div><h4 id='method.add_scope' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.add_scope' class='fnname'>add_scope</a>&lt;T&gt;(self, scope: T) -&gt; <a class='struct' href='../google_appsactivity1/struct.ActivityListCall.html' title='google_appsactivity1::ActivityListCall'>ActivityListCall</a>&lt;'a, C, A&gt; <span class='where'>where T: <a class='trait' href='http://doc.rust-lang.org/nightly/core/convert/trait.AsRef.html' title='core::convert::AsRef'>AsRef</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>&gt;</span></code></h4>
+<div class='docblock'><p>Identifies the authorization scope for the method you are building.</p>
+
+<p>Use this method to actively specify which scope should be used, instead the default <code>Scope</code> variant
+<code>Scope::DriveMetadataReadonly</code>.</p>
+
+<p>The <code>scope</code> will be added to a set of scopes. This is important as one can maintain access
+tokens for more than one scope.</p>
+
+<p>Usually there is more than one suitable scope to authorize an operation, some of which may
+encompass more rights than others. For example, for listing resources, a <em>read-only</em> scope will be
+sufficient, a read-write scope will do as well.</p>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_appsactivity1/trait.CallBuilder.html' title='google_appsactivity1::CallBuilder'>CallBuilder</a> for <a class='struct' href='../google_appsactivity1/struct.ActivityListCall.html' title='google_appsactivity1::ActivityListCall'>ActivityListCall</a>&lt;'a, C, A&gt;</code></h3><div class='impl-items'></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <div id="help" class="hidden">
+        <div class="shortcuts">
+            <h1>Keyboard shortcuts</h1>
+            <dl>
+                <dt>?</dt>
+                <dd>Show this help dialog</dd>
+                <dt>S</dt>
+                <dd>Focus the search field</dd>
+                <dt>&larrb;</dt>
+                <dd>Move up in search results</dd>
+                <dt>&rarrb;</dt>
+                <dd>Move down in search results</dd>
+                <dt>&#9166;</dt>
+                <dd>Go to active search result</dd>
+            </dl>
+        </div>
+        <div class="infos">
+            <h1>Search tricks</h1>
+            <p>
+                Prefix searches with a type followed by a colon (e.g.
+                <code>fn:</code>) to restrict the search to a given type.
+            </p>
+            <p>
+                Accepted types are: <code>fn</code>, <code>mod</code>,
+                <code>struct</code>, <code>enum</code>,
+                <code>trait</code>, <code>typedef</code> (or
+                <code>tdef</code>).
+            </p>
+        </div>
+    </div>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "google_appsactivity1";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../jquery.js"></script>
+    <script src="../main.js"></script>
+    
+    <script async src="../search-index.js"></script>
+</body>
+</html>

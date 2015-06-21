@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `ResultPageStats` struct in crate `google_pagespeedonline2`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, ResultPageStats">
+
+    <title>google_pagespeedonline2::ResultPageStats - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../main.css">
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <section class="sidebar">
+        
+        <p class='location'><a href='index.html'>google_pagespeedonline2</a></p><script>window.sidebarCurrent = {name: 'ResultPageStats', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </section>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press 'S' to search, '?' for more options..."
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content struct">
+<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_pagespeedonline2</a>::<wbr><a class='struct' href=''>ResultPageStats</a><wbr></span><span class='out-of-band'><span id='render-detail'>
+            <a id="collapse-all" href="#">[-]</a>&nbsp;<a id="expand-all" href="#">[+]</a>
+        </span><a id='src-8322' href='../src/google_pagespeedonline2///home/byron/dev/rust/google-apis-rs/target/debug/build/google-pagespeedonline2-5d61622cfe4010b3/out/lib.rs.html#2196-2223'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct ResultPageStats {
+    pub flash_response_bytes: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub total_request_bytes: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub number_css_resources: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>&gt;,
+    pub text_response_bytes: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub number_resources: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>&gt;,
+    pub other_response_bytes: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub image_response_bytes: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub number_hosts: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>&gt;,
+    pub javascript_response_bytes: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub html_response_bytes: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub css_response_bytes: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub number_js_resources: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>&gt;,
+    pub number_static_resources: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>&gt;,
+}</pre><div class='docblock'><p>Summary statistics for the page, such as number of JavaScript bytes, number of HTML bytes, etc.</p>
+
+<p>This type is not used in any activity, and only used as <em>part</em> of another schema.</p>
+</div><h2 class='fields'>Fields</h2>
+<table><tr><td id='structfield.flash_response_bytes'><a class='stability Unmarked' title='No stability level'></a><code>flash_response_bytes</code></td><td><div class='docblock'><p>Number of response bytes for flash resources on the page.</p>
+</div></td></tr><tr><td id='structfield.total_request_bytes'><a class='stability Unmarked' title='No stability level'></a><code>total_request_bytes</code></td><td><div class='docblock'><p>Total size of all request bytes sent by the page.</p>
+</div></td></tr><tr><td id='structfield.number_css_resources'><a class='stability Unmarked' title='No stability level'></a><code>number_css_resources</code></td><td><div class='docblock'><p>Number of CSS resources referenced by the page.</p>
+</div></td></tr><tr><td id='structfield.text_response_bytes'><a class='stability Unmarked' title='No stability level'></a><code>text_response_bytes</code></td><td><div class='docblock'><p>Number of uncompressed response bytes for text resources not covered by other statistics (i.e non-HTML, non-script, non-CSS resources) on the page.</p>
+</div></td></tr><tr><td id='structfield.number_resources'><a class='stability Unmarked' title='No stability level'></a><code>number_resources</code></td><td><div class='docblock'><p>Number of HTTP resources loaded by the page.</p>
+</div></td></tr><tr><td id='structfield.other_response_bytes'><a class='stability Unmarked' title='No stability level'></a><code>other_response_bytes</code></td><td><div class='docblock'><p>Number of response bytes for other resources on the page.</p>
+</div></td></tr><tr><td id='structfield.image_response_bytes'><a class='stability Unmarked' title='No stability level'></a><code>image_response_bytes</code></td><td><div class='docblock'><p>Number of response bytes for image resources on the page.</p>
+</div></td></tr><tr><td id='structfield.number_hosts'><a class='stability Unmarked' title='No stability level'></a><code>number_hosts</code></td><td><div class='docblock'><p>Number of unique hosts referenced by the page.</p>
+</div></td></tr><tr><td id='structfield.javascript_response_bytes'><a class='stability Unmarked' title='No stability level'></a><code>javascript_response_bytes</code></td><td><div class='docblock'><p>Number of uncompressed response bytes for JS resources on the page.</p>
+</div></td></tr><tr><td id='structfield.html_response_bytes'><a class='stability Unmarked' title='No stability level'></a><code>html_response_bytes</code></td><td><div class='docblock'><p>Number of uncompressed response bytes for the main HTML document and all iframes on the page.</p>
+</div></td></tr><tr><td id='structfield.css_response_bytes'><a class='stability Unmarked' title='No stability level'></a><code>css_response_bytes</code></td><td><div class='docblock'><p>Number of uncompressed response bytes for CSS resources on the page.</p>
+</div></td></tr><tr><td id='structfield.number_js_resources'><a class='stability Unmarked' title='No stability level'></a><code>number_js_resources</code></td><td><div class='docblock'><p>Number of JavaScript resources referenced by the page.</p>
+</div></td></tr><tr><td id='structfield.number_static_resources'><a class='stability Unmarked' title='No stability level'></a><code>number_static_resources</code></td><td><div class='docblock'><p>Number of static (i.e. cacheable) resources on the page.</p>
+</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='../google_pagespeedonline2/trait.NestedType.html' title='google_pagespeedonline2::NestedType'>NestedType</a> for <a class='struct' href='../google_pagespeedonline2/struct.ResultPageStats.html' title='google_pagespeedonline2::ResultPageStats'>ResultPageStats</a></code></h3><div class='impl-items'></div><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='../google_pagespeedonline2/trait.Part.html' title='google_pagespeedonline2::Part'>Part</a> for <a class='struct' href='../google_pagespeedonline2/struct.ResultPageStats.html' title='google_pagespeedonline2::ResultPageStats'>ResultPageStats</a></code></h3><div class='impl-items'></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_pagespeedonline2/struct.ResultPageStats.html' title='google_pagespeedonline2::ResultPageStats'>ResultPageStats</a></code></h3><div class='impl-items'><h4 id='method.fmt' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#method.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='http://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='http://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
+</div><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_pagespeedonline2/struct.ResultPageStats.html' title='google_pagespeedonline2::ResultPageStats'>ResultPageStats</a></code></h3><div class='impl-items'><h4 id='method.clone' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_pagespeedonline2/struct.ResultPageStats.html' title='google_pagespeedonline2::ResultPageStats'>ResultPageStats</a></code></h4>
+<h4 id='method.clone_from' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code></h4>
+</div><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_pagespeedonline2/struct.ResultPageStats.html' title='google_pagespeedonline2::ResultPageStats'>ResultPageStats</a></code></h3><div class='impl-items'><h4 id='method.default' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/default/trait.Default.html#method.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_pagespeedonline2/struct.ResultPageStats.html' title='google_pagespeedonline2::ResultPageStats'>ResultPageStats</a></code></h4>
+</div><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='../serde/de/trait.Deserialize.html' title='serde::de::Deserialize'>Deserialize</a> for <a class='struct' href='../google_pagespeedonline2/struct.ResultPageStats.html' title='google_pagespeedonline2::ResultPageStats'>ResultPageStats</a></code></h3><div class='impl-items'><h4 id='method.deserialize' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='../serde/de/trait.Deserialize.html#method.deserialize' class='fnname'>deserialize</a>&lt;__D&gt;(deserializer: &amp;mut __D) -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../google_pagespeedonline2/struct.ResultPageStats.html' title='google_pagespeedonline2::ResultPageStats'>ResultPageStats</a>, __D&gt; <span class='where'>where __D: <a class='trait' href='../serde/de/trait.Deserializer.html' title='serde::de::Deserializer'>Deserializer</a></span></code></h4>
+</div><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='../serde/ser/trait.Serialize.html' title='serde::ser::Serialize'>Serialize</a> for <a class='struct' href='../google_pagespeedonline2/struct.ResultPageStats.html' title='google_pagespeedonline2::ResultPageStats'>ResultPageStats</a></code></h3><div class='impl-items'><h4 id='method.serialize' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='../serde/ser/trait.Serialize.html#method.serialize' class='fnname'>serialize</a>&lt;__S&gt;(&amp;self, serializer: &amp;mut __S) -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, __S&gt; <span class='where'>where __S: <a class='trait' href='../serde/ser/trait.Serializer.html' title='serde::ser::Serializer'>Serializer</a></span></code></h4>
+</div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <div id="help" class="hidden">
+        <div class="shortcuts">
+            <h1>Keyboard shortcuts</h1>
+            <dl>
+                <dt>?</dt>
+                <dd>Show this help dialog</dd>
+                <dt>S</dt>
+                <dd>Focus the search field</dd>
+                <dt>&larrb;</dt>
+                <dd>Move up in search results</dd>
+                <dt>&rarrb;</dt>
+                <dd>Move down in search results</dd>
+                <dt>&#9166;</dt>
+                <dd>Go to active search result</dd>
+            </dl>
+        </div>
+        <div class="infos">
+            <h1>Search tricks</h1>
+            <p>
+                Prefix searches with a type followed by a colon (e.g.
+                <code>fn:</code>) to restrict the search to a given type.
+            </p>
+            <p>
+                Accepted types are: <code>fn</code>, <code>mod</code>,
+                <code>struct</code>, <code>enum</code>,
+                <code>trait</code>, <code>typedef</code> (or
+                <code>tdef</code>).
+            </p>
+        </div>
+    </div>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "google_pagespeedonline2";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../jquery.js"></script>
+    <script src="../main.js"></script>
+    
+    <script async src="../search-index.js"></script>
+</body>
+</html>

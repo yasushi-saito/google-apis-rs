@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `EventListCall` struct in crate `google_gan1_beta1`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, EventListCall">
+
+    <title>google_gan1_beta1::EventListCall - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../main.css">
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <section class="sidebar">
+        
+        <p class='location'><a href='index.html'>google_gan1_beta1</a></p><script>window.sidebarCurrent = {name: 'EventListCall', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </section>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press 'S' to search, '?' for more options..."
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content struct">
+<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_gan1_beta1</a>::<wbr><a class='struct' href=''>EventListCall</a><wbr></span><span class='out-of-band'><span id='render-detail'>
+            <a id="collapse-all" href="#">[-]</a>&nbsp;<a id="expand-all" href="#">[+]</a>
+        </span><a id='src-43062' href='../src/google_gan1_beta1///home/byron/dev/rust/google-apis-rs/target/debug/build/google-gan1_beta1-ff296d31fa5fe98f/out/lib.rs.html#12101-12123'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct EventListCall&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
+    // some fields omitted
+}</pre><div class='docblock'><p>Retrieves event data for a given advertiser/publisher.</p>
+
+<p>A builder for the <em>list</em> method supported by a <em>event</em> resource.
+It is not used directly, but through a <code>EventMethods</code> instance.</p>
+
+<h1 id="example" class='section-header'><a
+                           href="#example">Example</a></h1>
+<p>Instantiate a resource method builder</p>
+<pre id='rust-example-rendered' class='rust '>
+ 
+<span class='comment'>// You can configure optional parameters by calling the respective setters at will, and</span>
+<span class='comment'>// execute the final call using `doit()`.</span>
+<span class='comment'>// Values shown here are possibly random and not representative !</span>
+<span class='kw'>let</span> <span class='ident'>result</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>events</span>().<span class='ident'>list</span>(<span class='string'>&quot;role&quot;</span>, <span class='string'>&quot;roleId&quot;</span>)
+             .<span class='ident'>type_</span>(<span class='string'>&quot;At&quot;</span>)
+             .<span class='ident'>status</span>(<span class='string'>&quot;labore&quot;</span>)
+             .<span class='ident'>sku</span>(<span class='string'>&quot;invidunt&quot;</span>)
+             .<span class='ident'>publisher_id</span>(<span class='string'>&quot;ea&quot;</span>)
+             .<span class='ident'>product_category</span>(<span class='string'>&quot;sadipscing&quot;</span>)
+             .<span class='ident'>page_token</span>(<span class='string'>&quot;rebum.&quot;</span>)
+             .<span class='ident'>order_id</span>(<span class='string'>&quot;dolore&quot;</span>)
+             .<span class='ident'>modify_date_min</span>(<span class='string'>&quot;nonumy&quot;</span>)
+             .<span class='ident'>modify_date_max</span>(<span class='string'>&quot;sed&quot;</span>)
+             .<span class='ident'>member_id</span>(<span class='string'>&quot;aliquyam&quot;</span>)
+             .<span class='ident'>max_results</span>(<span class='number'>48</span>)
+             .<span class='ident'>link_id</span>(<span class='string'>&quot;eirmod&quot;</span>)
+             .<span class='ident'>event_date_min</span>(<span class='string'>&quot;consetetur&quot;</span>)
+             .<span class='ident'>event_date_max</span>(<span class='string'>&quot;labore&quot;</span>)
+             .<span class='ident'>charge_type</span>(<span class='string'>&quot;sed&quot;</span>)
+             .<span class='ident'>advertiser_id</span>(<span class='string'>&quot;ea&quot;</span>)
+             .<span class='ident'>doit</span>();
+</pre>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_gan1_beta1/struct.EventListCall.html' title='google_gan1_beta1::EventListCall'>EventListCall</a>&lt;'a, C, A&gt; <span class='where'>where C: <a class='trait' href='http://doc.rust-lang.org/nightly/collections/borrow/trait.BorrowMut.html' title='collections::borrow::BorrowMut'>BorrowMut</a>&lt;<a class='struct' href='../hyper/client/struct.Client.html' title='hyper::client::Client'>Client</a>&gt;, A: <a class='trait' href='../yup_oauth2/helper/trait.GetToken.html' title='yup_oauth2::helper::GetToken'>GetToken</a></span></code></h3><div class='impl-items'><h4 id='method.doit' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.doit' class='fnname'>doit</a>(self) -&gt; <a class='type' href='../google_gan1_beta1/type.Result.html' title='google_gan1_beta1::Result'>Result</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.tuple.html'>(<a class='struct' href='../hyper/client/response/struct.Response.html' title='hyper::client::response::Response'>Response</a>, <a class='struct' href='../google_gan1_beta1/struct.Events.html' title='google_gan1_beta1::Events'>Events</a>)</a>&gt;</code></h4>
+<div class='docblock'><p>Perform the operation you have build so far.</p>
+</div><h4 id='method.role' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.role' class='fnname'>role</a>(self, new_value: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gan1_beta1/struct.EventListCall.html' title='google_gan1_beta1::EventListCall'>EventListCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>The role of the requester. Valid values: &#39;advertisers&#39; or &#39;publishers&#39;.</p>
+
+<p>Sets the <em>role</em> path property to the given value.</p>
+
+<p>Even though the property as already been set when instantiating this call, 
+we provide this method for API completeness.</p>
+</div><h4 id='method.role_id' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.role_id' class='fnname'>role_id</a>(self, new_value: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gan1_beta1/struct.EventListCall.html' title='google_gan1_beta1::EventListCall'>EventListCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>The ID of the requesting advertiser or publisher.</p>
+
+<p>Sets the <em>role id</em> path property to the given value.</p>
+
+<p>Even though the property as already been set when instantiating this call, 
+we provide this method for API completeness.</p>
+</div><h4 id='method.type_' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.type_' class='fnname'>type_</a>(self, new_value: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gan1_beta1/struct.EventListCall.html' title='google_gan1_beta1::EventListCall'>EventListCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Filters out all events that are not of the given type. Valid values: &#39;action&#39;, &#39;transaction&#39;, &#39;charge&#39;. Optional.</p>
+
+<p>Sets the <em>type</em> query property to the given value.</p>
+</div><h4 id='method.status' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.status' class='fnname'>status</a>(self, new_value: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gan1_beta1/struct.EventListCall.html' title='google_gan1_beta1::EventListCall'>EventListCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Filters out all events that do not have the given status. Valid values: &#39;active&#39;, &#39;canceled&#39;. Optional.</p>
+
+<p>Sets the <em>status</em> query property to the given value.</p>
+</div><h4 id='method.sku' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.sku' class='fnname'>sku</a>(self, new_value: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gan1_beta1/struct.EventListCall.html' title='google_gan1_beta1::EventListCall'>EventListCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Caret(<sup>)</sup> delimited list of SKUs. Filters out all events that do not reference one of the given SKU. Optional.</p>
+
+<p>Sets the <em>sku</em> query property to the given value.</p>
+</div><h4 id='method.publisher_id' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.publisher_id' class='fnname'>publisher_id</a>(self, new_value: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gan1_beta1/struct.EventListCall.html' title='google_gan1_beta1::EventListCall'>EventListCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Caret(<sup>)</sup> delimited list of publisher IDs. Filters out all events that do not reference one of the given publishers IDs. Only used when under advertiser role. Optional.</p>
+
+<p>Sets the <em>publisher id</em> query property to the given value.</p>
+</div><h4 id='method.product_category' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.product_category' class='fnname'>product_category</a>(self, new_value: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gan1_beta1/struct.EventListCall.html' title='google_gan1_beta1::EventListCall'>EventListCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Caret(<sup>)</sup> delimited list of product categories. Filters out all events that do not reference a product in one of the given product categories. Optional.</p>
+
+<p>Sets the <em>product category</em> query property to the given value.</p>
+</div><h4 id='method.page_token' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.page_token' class='fnname'>page_token</a>(self, new_value: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gan1_beta1/struct.EventListCall.html' title='google_gan1_beta1::EventListCall'>EventListCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>The value of &#39;nextPageToken&#39; from the previous page. Optional.</p>
+
+<p>Sets the <em>page token</em> query property to the given value.</p>
+</div><h4 id='method.order_id' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.order_id' class='fnname'>order_id</a>(self, new_value: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gan1_beta1/struct.EventListCall.html' title='google_gan1_beta1::EventListCall'>EventListCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Caret(<sup>)</sup> delimited list of order IDs. Filters out all events that do not reference one of the given order IDs. Optional.</p>
+
+<p>Sets the <em>order id</em> query property to the given value.</p>
+</div><h4 id='method.modify_date_min' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.modify_date_min' class='fnname'>modify_date_min</a>(self, new_value: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gan1_beta1/struct.EventListCall.html' title='google_gan1_beta1::EventListCall'>EventListCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Filters out all events modified earlier than given date. Optional. Defaults to 24 hours before the current modifyDateMax, if modifyDateMax is explicitly set.</p>
+
+<p>Sets the <em>modify date min</em> query property to the given value.</p>
+</div><h4 id='method.modify_date_max' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.modify_date_max' class='fnname'>modify_date_max</a>(self, new_value: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gan1_beta1/struct.EventListCall.html' title='google_gan1_beta1::EventListCall'>EventListCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Filters out all events modified later than given date. Optional. Defaults to 24 hours after modifyDateMin, if modifyDateMin is explicitly set.</p>
+
+<p>Sets the <em>modify date max</em> query property to the given value.</p>
+</div><h4 id='method.member_id' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.member_id' class='fnname'>member_id</a>(self, new_value: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gan1_beta1/struct.EventListCall.html' title='google_gan1_beta1::EventListCall'>EventListCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Caret(<sup>)</sup> delimited list of member IDs. Filters out all events that do not reference one of the given member IDs. Optional.</p>
+
+<p>Sets the <em>member id</em> query property to the given value.</p>
+</div><h4 id='method.max_results' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.max_results' class='fnname'>max_results</a>(self, new_value: <a href='http://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>) -&gt; <a class='struct' href='../google_gan1_beta1/struct.EventListCall.html' title='google_gan1_beta1::EventListCall'>EventListCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Max number of offers to return in this page. Optional. Defaults to 20.</p>
+
+<p>Sets the <em>max results</em> query property to the given value.</p>
+</div><h4 id='method.link_id' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.link_id' class='fnname'>link_id</a>(self, new_value: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gan1_beta1/struct.EventListCall.html' title='google_gan1_beta1::EventListCall'>EventListCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Caret(<sup>)</sup> delimited list of link IDs. Filters out all events that do not reference one of the given link IDs. Optional.</p>
+
+<p>Sets the <em>link id</em> query property to the given value.</p>
+</div><h4 id='method.event_date_min' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.event_date_min' class='fnname'>event_date_min</a>(self, new_value: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gan1_beta1/struct.EventListCall.html' title='google_gan1_beta1::EventListCall'>EventListCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Filters out all events earlier than given date. Optional. Defaults to 24 hours from current date/time.</p>
+
+<p>Sets the <em>event date min</em> query property to the given value.</p>
+</div><h4 id='method.event_date_max' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.event_date_max' class='fnname'>event_date_max</a>(self, new_value: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gan1_beta1/struct.EventListCall.html' title='google_gan1_beta1::EventListCall'>EventListCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Filters out all events later than given date. Optional. Defaults to 24 hours after eventMin.</p>
+
+<p>Sets the <em>event date max</em> query property to the given value.</p>
+</div><h4 id='method.charge_type' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.charge_type' class='fnname'>charge_type</a>(self, new_value: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gan1_beta1/struct.EventListCall.html' title='google_gan1_beta1::EventListCall'>EventListCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Filters out all charge events that are not of the given charge type. Valid values: &#39;other&#39;, &#39;slotting_fee&#39;, &#39;monthly_minimum&#39;, &#39;tier_bonus&#39;, &#39;credit&#39;, &#39;debit&#39;. Optional.</p>
+
+<p>Sets the <em>charge type</em> query property to the given value.</p>
+</div><h4 id='method.advertiser_id' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.advertiser_id' class='fnname'>advertiser_id</a>(self, new_value: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gan1_beta1/struct.EventListCall.html' title='google_gan1_beta1::EventListCall'>EventListCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Caret(<sup>)</sup> delimited list of advertiser IDs. Filters out all events that do not reference one of the given advertiser IDs. Only used when under publishers role. Optional.</p>
+
+<p>Sets the <em>advertiser id</em> query property to the given value.</p>
+</div><h4 id='method.delegate' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.delegate' class='fnname'>delegate</a>(self, new_value: &amp;'a mut <a class='trait' href='../google_gan1_beta1/trait.Delegate.html' title='google_gan1_beta1::Delegate'>Delegate</a>) -&gt; <a class='struct' href='../google_gan1_beta1/struct.EventListCall.html' title='google_gan1_beta1::EventListCall'>EventListCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>The delegate implementation is consulted whenever there is an intermediate result, or if something goes wrong
+while executing the actual API request.</p>
+
+<p>It should be used to handle progress information, and to implement a certain level of resilience.</p>
+
+<p>Sets the <em>delegate</em> property to the given value.</p>
+</div><h4 id='method.param' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.param' class='fnname'>param</a>&lt;T&gt;(self, name: T, value: T) -&gt; <a class='struct' href='../google_gan1_beta1/struct.EventListCall.html' title='google_gan1_beta1::EventListCall'>EventListCall</a>&lt;'a, C, A&gt; <span class='where'>where T: <a class='trait' href='http://doc.rust-lang.org/nightly/core/convert/trait.AsRef.html' title='core::convert::AsRef'>AsRef</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>&gt;</span></code></h4>
+<div class='docblock'><p>Set any additional parameter of the query string used in the request.
+It should be used to set parameters which are not yet available through their own 
+setters.</p>
+
+<p>Please note that this method must not be used to set any of the known paramters
+which have their own setter method. If done anyway, the request will fail.</p>
+
+<h1 id="additional-parameters" class='section-header'><a
+                           href="#additional-parameters">Additional Parameters</a></h1>
+<ul>
+<li><em>quotaUser</em> (query-string) - Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. Overrides userIp if both are provided.</li>
+<li><em>oauth_token</em> (query-string) - OAuth 2.0 token for the current user.</li>
+<li><em>key</em> (query-string) - API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token.</li>
+<li><em>prettyPrint</em> (query-boolean) - Returns response with indentations and line breaks.</li>
+<li><em>userIp</em> (query-string) - IP address of the site where the request originates. Use this if you want to enforce per-user limits.</li>
+<li><em>fields</em> (query-string) - Selector specifying which fields to include in a partial response.</li>
+<li><em>alt</em> (query-string) - Data format for the response.</li>
+</ul>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_gan1_beta1/trait.CallBuilder.html' title='google_gan1_beta1::CallBuilder'>CallBuilder</a> for <a class='struct' href='../google_gan1_beta1/struct.EventListCall.html' title='google_gan1_beta1::EventListCall'>EventListCall</a>&lt;'a, C, A&gt;</code></h3><div class='impl-items'></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <div id="help" class="hidden">
+        <div class="shortcuts">
+            <h1>Keyboard shortcuts</h1>
+            <dl>
+                <dt>?</dt>
+                <dd>Show this help dialog</dd>
+                <dt>S</dt>
+                <dd>Focus the search field</dd>
+                <dt>&larrb;</dt>
+                <dd>Move up in search results</dd>
+                <dt>&rarrb;</dt>
+                <dd>Move down in search results</dd>
+                <dt>&#9166;</dt>
+                <dd>Go to active search result</dd>
+            </dl>
+        </div>
+        <div class="infos">
+            <h1>Search tricks</h1>
+            <p>
+                Prefix searches with a type followed by a colon (e.g.
+                <code>fn:</code>) to restrict the search to a given type.
+            </p>
+            <p>
+                Accepted types are: <code>fn</code>, <code>mod</code>,
+                <code>struct</code>, <code>enum</code>,
+                <code>trait</code>, <code>typedef</code> (or
+                <code>tdef</code>).
+            </p>
+        </div>
+    </div>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "google_gan1_beta1";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../jquery.js"></script>
+    <script src="../main.js"></script>
+    
+    <script async src="../search-index.js"></script>
+</body>
+</html>

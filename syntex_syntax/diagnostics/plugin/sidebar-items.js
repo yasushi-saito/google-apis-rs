@@ -1,0 +1,1 @@
+initSidebarItems({"type":[["ErrorMap","Mapping from error codes to metadata."]],"fn":[["expand_build_diagnostic_array",""],["expand_diagnostic_used",""],["expand_register_diagnostic",""]],"struct":[["ErrorInfo","Error information type."]]});

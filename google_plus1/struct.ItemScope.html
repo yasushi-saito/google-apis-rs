@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `ItemScope` struct in crate `google_plus1`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, ItemScope">
+
+    <title>google_plus1::ItemScope - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../main.css">
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <section class="sidebar">
+        
+        <p class='location'><a href='index.html'>google_plus1</a></p><script>window.sidebarCurrent = {name: 'ItemScope', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </section>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press 'S' to search, '?' for more options..."
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content struct">
+<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_plus1</a>::<wbr><a class='struct' href=''>ItemScope</a><wbr></span><span class='out-of-band'><span id='render-detail'>
+            <a id="collapse-all" href="#">[-]</a>&nbsp;<a id="expand-all" href="#">[+]</a>
+        </span><a id='src-14351' href='../src/google_plus1///home/byron/dev/rust/google-apis-rs/target/debug/build/google-plus1-5815fc91b8f39218/out/lib.rs.html#3666-3777'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct ItemScope {
+    pub start_date: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub end_date: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub text: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub image: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub review_rating: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/alloc/boxed/struct.Box.html' title='alloc::boxed::Box'>Box</a>&lt;<a class='struct' href='../google_plus1/struct.ItemScope.html' title='google_plus1::ItemScope'>ItemScope</a>&gt;&gt;&gt;,
+    pub birth_date: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub date_published: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub address_locality: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub duration: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub additional_name: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;&gt;,
+    pub worst_rating: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub contributor: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='../google_plus1/struct.ItemScope.html' title='google_plus1::ItemScope'>ItemScope</a>&gt;&gt;,
+    pub thumbnail_url: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub id: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub post_office_box_number: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub attendees: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='../google_plus1/struct.ItemScope.html' title='google_plus1::ItemScope'>ItemScope</a>&gt;&gt;,
+    pub author: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='../google_plus1/struct.ItemScope.html' title='google_plus1::ItemScope'>ItemScope</a>&gt;&gt;,
+    pub associated_media: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='../google_plus1/struct.ItemScope.html' title='google_plus1::ItemScope'>ItemScope</a>&gt;&gt;,
+    pub best_rating: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub address_country: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.i64.html'>i64</a>&gt;,
+    pub width: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub street_address: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub location: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/alloc/boxed/struct.Box.html' title='alloc::boxed::Box'>Box</a>&lt;<a class='struct' href='../google_plus1/struct.ItemScope.html' title='google_plus1::ItemScope'>ItemScope</a>&gt;&gt;&gt;,
+    pub latitude: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.f64.html'>f64</a>&gt;,
+    pub by_artist: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/alloc/boxed/struct.Box.html' title='alloc::boxed::Box'>Box</a>&lt;<a class='struct' href='../google_plus1/struct.ItemScope.html' title='google_plus1::ItemScope'>ItemScope</a>&gt;&gt;&gt;,
+    pub type_: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub date_modified: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub content_size: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub content_url: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub family_name: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub description: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub part_of_tv_series: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/alloc/boxed/struct.Box.html' title='alloc::boxed::Box'>Box</a>&lt;<a class='struct' href='../google_plus1/struct.ItemScope.html' title='google_plus1::ItemScope'>ItemScope</a>&gt;&gt;&gt;,
+    pub about: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/alloc/boxed/struct.Box.html' title='alloc::boxed::Box'>Box</a>&lt;<a class='struct' href='../google_plus1/struct.ItemScope.html' title='google_plus1::ItemScope'>ItemScope</a>&gt;&gt;&gt;,
+    pub date_created: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub postal_code: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub attendee_count: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>&gt;,
+    pub in_album: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/alloc/boxed/struct.Box.html' title='alloc::boxed::Box'>Box</a>&lt;<a class='struct' href='../google_plus1/struct.ItemScope.html' title='google_plus1::ItemScope'>ItemScope</a>&gt;&gt;&gt;,
+    pub address: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/alloc/boxed/struct.Box.html' title='alloc::boxed::Box'>Box</a>&lt;<a class='struct' href='../google_plus1/struct.ItemScope.html' title='google_plus1::ItemScope'>ItemScope</a>&gt;&gt;&gt;,
+    pub height: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub geo: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/alloc/boxed/struct.Box.html' title='alloc::boxed::Box'>Box</a>&lt;<a class='struct' href='../google_plus1/struct.ItemScope.html' title='google_plus1::ItemScope'>ItemScope</a>&gt;&gt;&gt;,
+    pub embed_url: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub ticker_symbol: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub name: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub kind: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub audio: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/alloc/boxed/struct.Box.html' title='alloc::boxed::Box'>Box</a>&lt;<a class='struct' href='../google_plus1/struct.ItemScope.html' title='google_plus1::ItemScope'>ItemScope</a>&gt;&gt;&gt;,
+    pub player_type: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub performers: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='../google_plus1/struct.ItemScope.html' title='google_plus1::ItemScope'>ItemScope</a>&gt;&gt;,
+    pub url: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub gender: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub longitude: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.f64.html'>f64</a>&gt;,
+    pub thumbnail: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/alloc/boxed/struct.Box.html' title='alloc::boxed::Box'>Box</a>&lt;<a class='struct' href='../google_plus1/struct.ItemScope.html' title='google_plus1::ItemScope'>ItemScope</a>&gt;&gt;&gt;,
+    pub address_region: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub caption: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub rating_value: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub given_name: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+}</pre><div class='docblock'><p>There is no detailed description.</p>
+
+<p>This type is not used in any activity, and only used as <em>part</em> of another schema.</p>
+</div><h2 class='fields'>Fields</h2>
+<table><tr><td id='structfield.start_date'><a class='stability Unmarked' title='No stability level'></a><code>start_date</code></td><td><div class='docblock'><p>The start date and time of the event (in ISO 8601 date format).</p>
+</div></td></tr><tr><td id='structfield.end_date'><a class='stability Unmarked' title='No stability level'></a><code>end_date</code></td><td><div class='docblock'><p>The end date and time of the event (in ISO 8601 date format).</p>
+</div></td></tr><tr><td id='structfield.text'><a class='stability Unmarked' title='No stability level'></a><code>text</code></td><td><div class='docblock'><p>The text that is the result of the app activity. For example, if a user leaves a review of a restaurant, this might be the text of the review.</p>
+</div></td></tr><tr><td id='structfield.image'><a class='stability Unmarked' title='No stability level'></a><code>image</code></td><td><div class='docblock'><p>A URL to the image that represents this result. For example, if a user writes a review of a restaurant and attaches a photo of their meal, you might use that photo as the result.image.</p>
+</div></td></tr><tr><td id='structfield.review_rating'><a class='stability Unmarked' title='No stability level'></a><code>review_rating</code></td><td><div class='docblock'><p>Review rating.</p>
+</div></td></tr><tr><td id='structfield.birth_date'><a class='stability Unmarked' title='No stability level'></a><code>birth_date</code></td><td><div class='docblock'><p>Date of birth.</p>
+</div></td></tr><tr><td id='structfield.date_published'><a class='stability Unmarked' title='No stability level'></a><code>date_published</code></td><td><div class='docblock'><p>The initial date that the result was published. For example, a user writes a comment on a blog, which has a result.dateCreated of when they submit it. If the blog users comment moderation, the result.datePublished value would match the date when the owner approved the message.</p>
+</div></td></tr><tr><td id='structfield.address_locality'><a class='stability Unmarked' title='No stability level'></a><code>address_locality</code></td><td><div class='docblock'><p>Address locality.</p>
+</div></td></tr><tr><td id='structfield.duration'><a class='stability Unmarked' title='No stability level'></a><code>duration</code></td><td><div class='docblock'><p>The duration of the item (movie, audio recording, event, etc.) in ISO 8601 date format.</p>
+</div></td></tr><tr><td id='structfield.additional_name'><a class='stability Unmarked' title='No stability level'></a><code>additional_name</code></td><td><div class='docblock'><p>An additional name for a Person, can be used for a middle name.</p>
+</div></td></tr><tr><td id='structfield.worst_rating'><a class='stability Unmarked' title='No stability level'></a><code>worst_rating</code></td><td><div class='docblock'><p>Worst possible rating value that a result might obtain. This property defines the lower bound for the ratingValue.</p>
+</div></td></tr><tr><td id='structfield.contributor'><a class='stability Unmarked' title='No stability level'></a><code>contributor</code></td><td><div class='docblock'><p>A list of contributors to this result.</p>
+</div></td></tr><tr><td id='structfield.thumbnail_url'><a class='stability Unmarked' title='No stability level'></a><code>thumbnail_url</code></td><td><div class='docblock'><p>A URL to a thumbnail image that represents this result.</p>
+</div></td></tr><tr><td id='structfield.id'><a class='stability Unmarked' title='No stability level'></a><code>id</code></td><td><div class='docblock'><p>An identifier for the object. Your app can choose how to identify objects. The object.id is required if you are writing an action that does not have a corresponding web page or object.url property.</p>
+</div></td></tr><tr><td id='structfield.post_office_box_number'><a class='stability Unmarked' title='No stability level'></a><code>post_office_box_number</code></td><td><div class='docblock'><p>Post office box number.</p>
+</div></td></tr><tr><td id='structfield.attendees'><a class='stability Unmarked' title='No stability level'></a><code>attendees</code></td><td><div class='docblock'><p>A person attending the event.</p>
+</div></td></tr><tr><td id='structfield.author'><a class='stability Unmarked' title='No stability level'></a><code>author</code></td><td><div class='docblock'><p>The person or persons who created this result. In the example of restaurant reviews, this might be the reviewer&#39;s name.</p>
+</div></td></tr><tr><td id='structfield.associated_media'><a class='stability Unmarked' title='No stability level'></a><code>associated_media</code></td><td><div class='docblock'><p>The encoding.</p>
+</div></td></tr><tr><td id='structfield.best_rating'><a class='stability Unmarked' title='No stability level'></a><code>best_rating</code></td><td><div class='docblock'><p>Best possible rating value that a result might obtain. This property defines the upper bound for the ratingValue. For example, you might have a 5 star rating scale, you would provide 5 as the value for this property.</p>
+</div></td></tr><tr><td id='structfield.address_country'><a class='stability Unmarked' title='No stability level'></a><code>address_country</code></td><td><div class='docblock'><p>Address country.</p>
+</div></td></tr><tr><td id='structfield.width'><a class='stability Unmarked' title='No stability level'></a><code>width</code></td><td><div class='docblock'><p>The width of the media object.</p>
+</div></td></tr><tr><td id='structfield.street_address'><a class='stability Unmarked' title='No stability level'></a><code>street_address</code></td><td><div class='docblock'><p>Street address.</p>
+</div></td></tr><tr><td id='structfield.location'><a class='stability Unmarked' title='No stability level'></a><code>location</code></td><td><div class='docblock'><p>The location of the event or organization.</p>
+</div></td></tr><tr><td id='structfield.latitude'><a class='stability Unmarked' title='No stability level'></a><code>latitude</code></td><td><div class='docblock'><p>Latitude.</p>
+</div></td></tr><tr><td id='structfield.by_artist'><a class='stability Unmarked' title='No stability level'></a><code>by_artist</code></td><td><div class='docblock'><p>From <a href="http://schema.org/MusicRecording">http://schema.org/MusicRecording</a>, the artist that performed this recording.</p>
+</div></td></tr><tr><td id='structfield.type_'><a class='stability Unmarked' title='No stability level'></a><code>type_</code></td><td><div class='docblock'><p>The schema.org URL that best describes the referenced object and matches the type of moment.</p>
+</div></td></tr><tr><td id='structfield.date_modified'><a class='stability Unmarked' title='No stability level'></a><code>date_modified</code></td><td><div class='docblock'><p>The date the result was last modified such as the date that a review was last edited.</p>
+</div></td></tr><tr><td id='structfield.content_size'><a class='stability Unmarked' title='No stability level'></a><code>content_size</code></td><td><div class='docblock'><p>File size in (mega/kilo) bytes.</p>
+</div></td></tr><tr><td id='structfield.content_url'><a class='stability Unmarked' title='No stability level'></a><code>content_url</code></td><td><div class='docblock'><p>Actual bytes of the media object, for example the image file or video file.</p>
+</div></td></tr><tr><td id='structfield.family_name'><a class='stability Unmarked' title='No stability level'></a><code>family_name</code></td><td><div class='docblock'><p>Family name. This property can be used with givenName instead of the name property.</p>
+</div></td></tr><tr><td id='structfield.description'><a class='stability Unmarked' title='No stability level'></a><code>description</code></td><td><div class='docblock'><p>The string that describes the content of the result.</p>
+</div></td></tr><tr><td id='structfield.part_of_tv_series'><a class='stability Unmarked' title='No stability level'></a><code>part_of_tv_series</code></td><td><div class='docblock'><p>Property of <a href="http://schema.org/TVEpisode">http://schema.org/TVEpisode</a> indicating which series the episode belongs to.</p>
+</div></td></tr><tr><td id='structfield.about'><a class='stability Unmarked' title='No stability level'></a><code>about</code></td><td><div class='docblock'><p>The subject matter of the content.</p>
+</div></td></tr><tr><td id='structfield.date_created'><a class='stability Unmarked' title='No stability level'></a><code>date_created</code></td><td><div class='docblock'><p>The date the result was created such as the date that a review was first created.</p>
+</div></td></tr><tr><td id='structfield.postal_code'><a class='stability Unmarked' title='No stability level'></a><code>postal_code</code></td><td><div class='docblock'><p>Postal code.</p>
+</div></td></tr><tr><td id='structfield.attendee_count'><a class='stability Unmarked' title='No stability level'></a><code>attendee_count</code></td><td><div class='docblock'><p>Number of attendees.</p>
+</div></td></tr><tr><td id='structfield.in_album'><a class='stability Unmarked' title='No stability level'></a><code>in_album</code></td><td><div class='docblock'><p>From <a href="http://schema.org/MusicRecording">http://schema.org/MusicRecording</a>, which album a song is in.</p>
+</div></td></tr><tr><td id='structfield.address'><a class='stability Unmarked' title='No stability level'></a><code>address</code></td><td><div class='docblock'><p>Postal address.</p>
+</div></td></tr><tr><td id='structfield.height'><a class='stability Unmarked' title='No stability level'></a><code>height</code></td><td><div class='docblock'><p>The height of the media object.</p>
+</div></td></tr><tr><td id='structfield.geo'><a class='stability Unmarked' title='No stability level'></a><code>geo</code></td><td><div class='docblock'><p>Geo coordinates.</p>
+</div></td></tr><tr><td id='structfield.embed_url'><a class='stability Unmarked' title='No stability level'></a><code>embed_url</code></td><td><div class='docblock'><p>A URL pointing to a player for a specific video. In general, this is the information in the src element of an embed tag and should not be the same as the content of the loc tag.</p>
+</div></td></tr><tr><td id='structfield.ticker_symbol'><a class='stability Unmarked' title='No stability level'></a><code>ticker_symbol</code></td><td><div class='docblock'><p>The exchange traded instrument associated with a Corporation object. The tickerSymbol is expressed as an exchange and an instrument name separated by a space character. For the exchange component of the tickerSymbol attribute, we recommend using the controlled vocabulary of Market Identifier Codes (MIC) specified in ISO15022.</p>
+</div></td></tr><tr><td id='structfield.name'><a class='stability Unmarked' title='No stability level'></a><code>name</code></td><td><div class='docblock'><p>The name of the result. In the example of a restaurant review, this might be the summary the user gave their review such as &quot;Great ambiance, but overpriced.&quot;</p>
+</div></td></tr><tr><td id='structfield.kind'><a class='stability Unmarked' title='No stability level'></a><code>kind</code></td><td><div class='docblock'><p>Identifies this resource as an itemScope.</p>
+</div></td></tr><tr><td id='structfield.audio'><a class='stability Unmarked' title='No stability level'></a><code>audio</code></td><td><div class='docblock'><p>From <a href="http://schema.org/MusicRecording">http://schema.org/MusicRecording</a>, the audio file.</p>
+</div></td></tr><tr><td id='structfield.player_type'><a class='stability Unmarked' title='No stability level'></a><code>player_type</code></td><td><div class='docblock'><p>Player type that is required. For example: Flash or Silverlight.</p>
+</div></td></tr><tr><td id='structfield.performers'><a class='stability Unmarked' title='No stability level'></a><code>performers</code></td><td><div class='docblock'><p>The main performer or performers of the event-for example, a presenter, musician, or actor.</p>
+</div></td></tr><tr><td id='structfield.url'><a class='stability Unmarked' title='No stability level'></a><code>url</code></td><td><div class='docblock'><p>The URL that points to the result object. For example, a permalink directly to a restaurant reviewer&#39;s comment.</p>
+</div></td></tr><tr><td id='structfield.gender'><a class='stability Unmarked' title='No stability level'></a><code>gender</code></td><td><div class='docblock'><p>Gender of the person.</p>
+</div></td></tr><tr><td id='structfield.longitude'><a class='stability Unmarked' title='No stability level'></a><code>longitude</code></td><td><div class='docblock'><p>Longitude.</p>
+</div></td></tr><tr><td id='structfield.thumbnail'><a class='stability Unmarked' title='No stability level'></a><code>thumbnail</code></td><td><div class='docblock'><p>Thumbnail image for an image or video.</p>
+</div></td></tr><tr><td id='structfield.address_region'><a class='stability Unmarked' title='No stability level'></a><code>address_region</code></td><td><div class='docblock'><p>Address region.</p>
+</div></td></tr><tr><td id='structfield.caption'><a class='stability Unmarked' title='No stability level'></a><code>caption</code></td><td><div class='docblock'><p>The caption for this object.</p>
+</div></td></tr><tr><td id='structfield.rating_value'><a class='stability Unmarked' title='No stability level'></a><code>rating_value</code></td><td><div class='docblock'><p>Rating value.</p>
+</div></td></tr><tr><td id='structfield.given_name'><a class='stability Unmarked' title='No stability level'></a><code>given_name</code></td><td><div class='docblock'><p>Given name. This property can be used with familyName instead of the name property.</p>
+</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='../google_plus1/trait.Part.html' title='google_plus1::Part'>Part</a> for <a class='struct' href='../google_plus1/struct.ItemScope.html' title='google_plus1::ItemScope'>ItemScope</a></code></h3><div class='impl-items'></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_plus1/struct.ItemScope.html' title='google_plus1::ItemScope'>ItemScope</a></code></h3><div class='impl-items'><h4 id='method.fmt' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#method.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='http://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='http://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
+</div><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_plus1/struct.ItemScope.html' title='google_plus1::ItemScope'>ItemScope</a></code></h3><div class='impl-items'><h4 id='method.clone' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_plus1/struct.ItemScope.html' title='google_plus1::ItemScope'>ItemScope</a></code></h4>
+<h4 id='method.clone_from' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code></h4>
+</div><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_plus1/struct.ItemScope.html' title='google_plus1::ItemScope'>ItemScope</a></code></h3><div class='impl-items'><h4 id='method.default' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/default/trait.Default.html#method.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_plus1/struct.ItemScope.html' title='google_plus1::ItemScope'>ItemScope</a></code></h4>
+</div><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='../serde/de/trait.Deserialize.html' title='serde::de::Deserialize'>Deserialize</a> for <a class='struct' href='../google_plus1/struct.ItemScope.html' title='google_plus1::ItemScope'>ItemScope</a></code></h3><div class='impl-items'><h4 id='method.deserialize' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='../serde/de/trait.Deserialize.html#method.deserialize' class='fnname'>deserialize</a>&lt;__D&gt;(deserializer: &amp;mut __D) -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../google_plus1/struct.ItemScope.html' title='google_plus1::ItemScope'>ItemScope</a>, __D&gt; <span class='where'>where __D: <a class='trait' href='../serde/de/trait.Deserializer.html' title='serde::de::Deserializer'>Deserializer</a></span></code></h4>
+</div><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='../serde/ser/trait.Serialize.html' title='serde::ser::Serialize'>Serialize</a> for <a class='struct' href='../google_plus1/struct.ItemScope.html' title='google_plus1::ItemScope'>ItemScope</a></code></h3><div class='impl-items'><h4 id='method.serialize' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='../serde/ser/trait.Serialize.html#method.serialize' class='fnname'>serialize</a>&lt;__S&gt;(&amp;self, serializer: &amp;mut __S) -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, __S&gt; <span class='where'>where __S: <a class='trait' href='../serde/ser/trait.Serializer.html' title='serde::ser::Serializer'>Serializer</a></span></code></h4>
+</div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <div id="help" class="hidden">
+        <div class="shortcuts">
+            <h1>Keyboard shortcuts</h1>
+            <dl>
+                <dt>?</dt>
+                <dd>Show this help dialog</dd>
+                <dt>S</dt>
+                <dd>Focus the search field</dd>
+                <dt>&larrb;</dt>
+                <dd>Move up in search results</dd>
+                <dt>&rarrb;</dt>
+                <dd>Move down in search results</dd>
+                <dt>&#9166;</dt>
+                <dd>Go to active search result</dd>
+            </dl>
+        </div>
+        <div class="infos">
+            <h1>Search tricks</h1>
+            <p>
+                Prefix searches with a type followed by a colon (e.g.
+                <code>fn:</code>) to restrict the search to a given type.
+            </p>
+            <p>
+                Accepted types are: <code>fn</code>, <code>mod</code>,
+                <code>struct</code>, <code>enum</code>,
+                <code>trait</code>, <code>typedef</code> (or
+                <code>tdef</code>).
+            </p>
+        </div>
+    </div>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "google_plus1";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../jquery.js"></script>
+    <script src="../main.js"></script>
+    
+    <script async src="../search-index.js"></script>
+</body>
+</html>

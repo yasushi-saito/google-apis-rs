@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `VolumeVolumeInfo` struct in crate `google_books1`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, VolumeVolumeInfo">
+
+    <title>google_books1::VolumeVolumeInfo - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../main.css">
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <section class="sidebar">
+        
+        <p class='location'><a href='index.html'>google_books1</a></p><script>window.sidebarCurrent = {name: 'VolumeVolumeInfo', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </section>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press 'S' to search, '?' for more options..."
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content struct">
+<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_books1</a>::<wbr><a class='struct' href=''>VolumeVolumeInfo</a><wbr></span><span class='out-of-band'><span id='render-detail'>
+            <a id="collapse-all" href="#">[-]</a>&nbsp;<a id="expand-all" href="#">[+]</a>
+        </span><a id='src-9379' href='../src/google_books1///home/byron/dev/rust/google-apis-rs/target/debug/build/google-books1-82596db85c46e6f3/out/lib.rs.html#2413-2462'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct VolumeVolumeInfo {
+    pub subtitle: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub description: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub page_count: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>&gt;,
+    pub image_links: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_books1/struct.VolumeVolumeInfoImageLinks.html' title='google_books1::VolumeVolumeInfoImageLinks'>VolumeVolumeInfoImageLinks</a>&gt;,
+    pub ratings_count: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>&gt;,
+    pub main_category: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub authors: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;&gt;,
+    pub categories: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;&gt;,
+    pub publisher: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub dimensions: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_books1/struct.VolumeVolumeInfoDimensions.html' title='google_books1::VolumeVolumeInfoDimensions'>VolumeVolumeInfoDimensions</a>&gt;,
+    pub language: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub preview_link: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub maturity_rating: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub published_date: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub print_type: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub sample_page_count: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>&gt;,
+    pub reading_modes: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub content_version: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub printed_page_count: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>&gt;,
+    pub industry_identifiers: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='../google_books1/struct.VolumeVolumeInfoIndustryIdentifiers.html' title='google_books1::VolumeVolumeInfoIndustryIdentifiers'>VolumeVolumeInfoIndustryIdentifiers</a>&gt;&gt;,
+    pub title: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub average_rating: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.f64.html'>f64</a>&gt;,
+    pub info_link: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub canonical_volume_link: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+}</pre><div class='docblock'><p>General volume information.</p>
+
+<p>This type is not used in any activity, and only used as <em>part</em> of another schema.</p>
+</div><h2 class='fields'>Fields</h2>
+<table><tr><td id='structfield.subtitle'><a class='stability Unmarked' title='No stability level'></a><code>subtitle</code></td><td><div class='docblock'><p>Volume subtitle. (In LITE projection.)</p>
+</div></td></tr><tr><td id='structfield.description'><a class='stability Unmarked' title='No stability level'></a><code>description</code></td><td><div class='docblock'><p>A synopsis of the volume. The text of the description is formatted in HTML and includes simple formatting elements, such as b, i, and br tags. (In LITE projection.)</p>
+</div></td></tr><tr><td id='structfield.page_count'><a class='stability Unmarked' title='No stability level'></a><code>page_count</code></td><td><div class='docblock'><p>Total number of pages as per publisher metadata.</p>
+</div></td></tr><tr><td id='structfield.image_links'><a class='stability Unmarked' title='No stability level'></a><code>image_links</code></td><td><div class='docblock'><p>A list of image links for all the sizes that are available. (In LITE projection.)</p>
+</div></td></tr><tr><td id='structfield.ratings_count'><a class='stability Unmarked' title='No stability level'></a><code>ratings_count</code></td><td><div class='docblock'><p>The number of review ratings for this volume.</p>
+</div></td></tr><tr><td id='structfield.main_category'><a class='stability Unmarked' title='No stability level'></a><code>main_category</code></td><td><div class='docblock'><p>The main category to which this volume belongs. It will be the category from the categories list returned below that has the highest weight.</p>
+</div></td></tr><tr><td id='structfield.authors'><a class='stability Unmarked' title='No stability level'></a><code>authors</code></td><td><div class='docblock'><p>The names of the authors and/or editors for this volume. (In LITE projection)</p>
+</div></td></tr><tr><td id='structfield.categories'><a class='stability Unmarked' title='No stability level'></a><code>categories</code></td><td><div class='docblock'><p>A list of subject categories, such as &quot;Fiction&quot;, &quot;Suspense&quot;, etc.</p>
+</div></td></tr><tr><td id='structfield.publisher'><a class='stability Unmarked' title='No stability level'></a><code>publisher</code></td><td><div class='docblock'><p>Publisher of this volume. (In LITE projection.)</p>
+</div></td></tr><tr><td id='structfield.dimensions'><a class='stability Unmarked' title='No stability level'></a><code>dimensions</code></td><td><div class='docblock'><p>Physical dimensions of this volume.</p>
+</div></td></tr><tr><td id='structfield.language'><a class='stability Unmarked' title='No stability level'></a><code>language</code></td><td><div class='docblock'><p>Best language for this volume (based on content). It is the two-letter ISO 639-1 code such as &#39;fr&#39;, &#39;en&#39;, etc.</p>
+</div></td></tr><tr><td id='structfield.preview_link'><a class='stability Unmarked' title='No stability level'></a><code>preview_link</code></td><td><div class='docblock'><p>URL to preview this volume on the Google Books site.</p>
+</div></td></tr><tr><td id='structfield.maturity_rating'><a class='stability Unmarked' title='No stability level'></a><code>maturity_rating</code></td><td><div class='docblock'><p>no description provided</p>
+</div></td></tr><tr><td id='structfield.published_date'><a class='stability Unmarked' title='No stability level'></a><code>published_date</code></td><td><div class='docblock'><p>Date of publication. (In LITE projection.)</p>
+</div></td></tr><tr><td id='structfield.print_type'><a class='stability Unmarked' title='No stability level'></a><code>print_type</code></td><td><div class='docblock'><p>Type of publication of this volume. Possible values are BOOK or MAGAZINE.</p>
+</div></td></tr><tr><td id='structfield.sample_page_count'><a class='stability Unmarked' title='No stability level'></a><code>sample_page_count</code></td><td><div class='docblock'><p>Total number of sample pages as per publisher metadata.</p>
+</div></td></tr><tr><td id='structfield.reading_modes'><a class='stability Unmarked' title='No stability level'></a><code>reading_modes</code></td><td><div class='docblock'><p>The reading modes available for this volume.</p>
+</div></td></tr><tr><td id='structfield.content_version'><a class='stability Unmarked' title='No stability level'></a><code>content_version</code></td><td><div class='docblock'><p>An identifier for the version of the volume content (text &amp; images). (In LITE projection)</p>
+</div></td></tr><tr><td id='structfield.printed_page_count'><a class='stability Unmarked' title='No stability level'></a><code>printed_page_count</code></td><td><div class='docblock'><p>Total number of printed pages in generated pdf representation.</p>
+</div></td></tr><tr><td id='structfield.industry_identifiers'><a class='stability Unmarked' title='No stability level'></a><code>industry_identifiers</code></td><td><div class='docblock'><p>Industry standard identifiers for this volume.</p>
+</div></td></tr><tr><td id='structfield.title'><a class='stability Unmarked' title='No stability level'></a><code>title</code></td><td><div class='docblock'><p>Volume title. (In LITE projection.)</p>
+</div></td></tr><tr><td id='structfield.average_rating'><a class='stability Unmarked' title='No stability level'></a><code>average_rating</code></td><td><div class='docblock'><p>The mean review rating for this volume. (min = 1.0, max = 5.0)</p>
+</div></td></tr><tr><td id='structfield.info_link'><a class='stability Unmarked' title='No stability level'></a><code>info_link</code></td><td><div class='docblock'><p>URL to view information about this volume on the Google Books site. (In LITE projection)</p>
+</div></td></tr><tr><td id='structfield.canonical_volume_link'><a class='stability Unmarked' title='No stability level'></a><code>canonical_volume_link</code></td><td><div class='docblock'><p>Canonical URL for a volume. (In LITE projection.)</p>
+</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='../google_books1/trait.NestedType.html' title='google_books1::NestedType'>NestedType</a> for <a class='struct' href='../google_books1/struct.VolumeVolumeInfo.html' title='google_books1::VolumeVolumeInfo'>VolumeVolumeInfo</a></code></h3><div class='impl-items'></div><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='../google_books1/trait.Part.html' title='google_books1::Part'>Part</a> for <a class='struct' href='../google_books1/struct.VolumeVolumeInfo.html' title='google_books1::VolumeVolumeInfo'>VolumeVolumeInfo</a></code></h3><div class='impl-items'></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_books1/struct.VolumeVolumeInfo.html' title='google_books1::VolumeVolumeInfo'>VolumeVolumeInfo</a></code></h3><div class='impl-items'><h4 id='method.fmt' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#method.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='http://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='http://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
+</div><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_books1/struct.VolumeVolumeInfo.html' title='google_books1::VolumeVolumeInfo'>VolumeVolumeInfo</a></code></h3><div class='impl-items'><h4 id='method.clone' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_books1/struct.VolumeVolumeInfo.html' title='google_books1::VolumeVolumeInfo'>VolumeVolumeInfo</a></code></h4>
+<h4 id='method.clone_from' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code></h4>
+</div><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_books1/struct.VolumeVolumeInfo.html' title='google_books1::VolumeVolumeInfo'>VolumeVolumeInfo</a></code></h3><div class='impl-items'><h4 id='method.default' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/default/trait.Default.html#method.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_books1/struct.VolumeVolumeInfo.html' title='google_books1::VolumeVolumeInfo'>VolumeVolumeInfo</a></code></h4>
+</div><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='../serde/de/trait.Deserialize.html' title='serde::de::Deserialize'>Deserialize</a> for <a class='struct' href='../google_books1/struct.VolumeVolumeInfo.html' title='google_books1::VolumeVolumeInfo'>VolumeVolumeInfo</a></code></h3><div class='impl-items'><h4 id='method.deserialize' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='../serde/de/trait.Deserialize.html#method.deserialize' class='fnname'>deserialize</a>&lt;__D&gt;(deserializer: &amp;mut __D) -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../google_books1/struct.VolumeVolumeInfo.html' title='google_books1::VolumeVolumeInfo'>VolumeVolumeInfo</a>, __D&gt; <span class='where'>where __D: <a class='trait' href='../serde/de/trait.Deserializer.html' title='serde::de::Deserializer'>Deserializer</a></span></code></h4>
+</div><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='../serde/ser/trait.Serialize.html' title='serde::ser::Serialize'>Serialize</a> for <a class='struct' href='../google_books1/struct.VolumeVolumeInfo.html' title='google_books1::VolumeVolumeInfo'>VolumeVolumeInfo</a></code></h3><div class='impl-items'><h4 id='method.serialize' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='../serde/ser/trait.Serialize.html#method.serialize' class='fnname'>serialize</a>&lt;__S&gt;(&amp;self, serializer: &amp;mut __S) -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, __S&gt; <span class='where'>where __S: <a class='trait' href='../serde/ser/trait.Serializer.html' title='serde::ser::Serializer'>Serializer</a></span></code></h4>
+</div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <div id="help" class="hidden">
+        <div class="shortcuts">
+            <h1>Keyboard shortcuts</h1>
+            <dl>
+                <dt>?</dt>
+                <dd>Show this help dialog</dd>
+                <dt>S</dt>
+                <dd>Focus the search field</dd>
+                <dt>&larrb;</dt>
+                <dd>Move up in search results</dd>
+                <dt>&rarrb;</dt>
+                <dd>Move down in search results</dd>
+                <dt>&#9166;</dt>
+                <dd>Go to active search result</dd>
+            </dl>
+        </div>
+        <div class="infos">
+            <h1>Search tricks</h1>
+            <p>
+                Prefix searches with a type followed by a colon (e.g.
+                <code>fn:</code>) to restrict the search to a given type.
+            </p>
+            <p>
+                Accepted types are: <code>fn</code>, <code>mod</code>,
+                <code>struct</code>, <code>enum</code>,
+                <code>trait</code>, <code>typedef</code> (or
+                <code>tdef</code>).
+            </p>
+        </div>
+    </div>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "google_books1";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../jquery.js"></script>
+    <script src="../main.js"></script>
+    
+    <script async src="../search-index.js"></script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `Layer` struct in crate `google_mapsengine1`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, Layer">
+
+    <title>google_mapsengine1::Layer - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../main.css">
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <section class="sidebar">
+        
+        <p class='location'><a href='index.html'>google_mapsengine1</a></p><script>window.sidebarCurrent = {name: 'Layer', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </section>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press 'S' to search, '?' for more options..."
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content struct">
+<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_mapsengine1</a>::<wbr><a class='struct' href=''>Layer</a><wbr></span><span class='out-of-band'><span id='render-detail'>
+            <a id="collapse-all" href="#">[-]</a>&nbsp;<a id="expand-all" href="#">[+]</a>
+        </span><a id='src-33712' href='../src/google_mapsengine1///home/byron/dev/rust/google-apis-rs/target/debug/build/google-mapsengine1-43ca578f7c40678a/out/lib.rs.html#8716-8757'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct Layer {
+    pub datasources: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_mapsengine1/struct.Datasources.html' title='google_mapsengine1::Datasources'>Datasources</a>&gt;,
+    pub tags: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_mapsengine1/struct.Tags.html' title='google_mapsengine1::Tags'>Tags</a>&gt;,
+    pub draft_access_list: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub datasource_type: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub writers_can_edit_permissions: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt;,
+    pub creator_email: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub bbox: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.f64.html'>f64</a>&gt;&gt;,
+    pub last_modifier_email: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub last_modified_time: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub id: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub description: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub style: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_mapsengine1/struct.VectorStyle.html' title='google_mapsengine1::VectorStyle'>VectorStyle</a>&gt;,
+    pub name: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub processing_status: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub project_id: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub creation_time: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub publishing_status: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub etag: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub layer_type: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub published_access_list: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+}</pre><div class='docblock'><p>A Layer combines multiple datasources, with styling information, for presentation on a map.</p>
+
+<h1 id="activities" class='section-header'><a
+                           href="#activities">Activities</a></h1>
+<p>This type is used in activities, which are methods you may call on this type or where this type is involved in. 
+The list links the activity name, along with information about where it is used (one of <em>request</em> and <em>response</em>).</p>
+
+<ul>
+<li><a href="struct.LayerDeleteCall.html">delete layers</a> (none)</li>
+<li><a href="struct.LayerGetCall.html">get layers</a> (response)</li>
+<li><a href="struct.LayerCancelProcessingCall.html">cancel processing layers</a> (none)</li>
+<li><a href="struct.LayerPublishCall.html">publish layers</a> (none)</li>
+<li><a href="struct.LayerPermissionBatchDeleteCall.html">permissions batch delete layers</a> (none)</li>
+<li><a href="struct.LayerListPublishedCall.html">list published layers</a> (none)</li>
+<li><a href="struct.LayerCreateCall.html">create layers</a> (request|response)</li>
+<li><a href="struct.LayerPatchCall.html">patch layers</a> (request)</li>
+<li><a href="struct.LayerPermissionBatchUpdateCall.html">permissions batch update layers</a> (none)</li>
+<li><a href="struct.LayerPermissionListCall.html">permissions list layers</a> (none)</li>
+<li><a href="struct.LayerListCall.html">list layers</a> (none)</li>
+<li><a href="struct.LayerProcesCall.html">process layers</a> (none)</li>
+<li><a href="struct.LayerParentListCall.html">parents list layers</a> (none)</li>
+<li><a href="struct.LayerGetPublishedCall.html">get published layers</a> (none)</li>
+<li><a href="struct.LayerUnpublishCall.html">unpublish layers</a> (none)</li>
+</ul>
+</div><h2 class='fields'>Fields</h2>
+<table><tr><td id='structfield.datasources'><a class='stability Unmarked' title='No stability level'></a><code>datasources</code></td><td><div class='docblock'><p>An array of datasources used to build this layer. If layerType is &quot;image&quot;, or layerType is not specified and datasourceType is &quot;image&quot;, then each element in this array is a reference to an Image or RasterCollection. If layerType is &quot;vector&quot;, or layerType is not specified and datasourceType is &quot;table&quot; then each element in this array is a reference to a Vector Table.</p>
+</div></td></tr><tr><td id='structfield.tags'><a class='stability Unmarked' title='No stability level'></a><code>tags</code></td><td><div class='docblock'><p>Tags of this Layer.</p>
+</div></td></tr><tr><td id='structfield.draft_access_list'><a class='stability Unmarked' title='No stability level'></a><code>draft_access_list</code></td><td><div class='docblock'><p>Deprecated: The name of an access list of the Map Editor type. The user on whose behalf the request is being sent must be an editor on that access list. Note: Google Maps Engine no longer uses access lists. Instead, each asset has its own list of permissions. For backward compatibility, the API still accepts access lists for projects that are already using access lists. If you created a GME account/project after July 14th, 2014, you will not be able to send API requests that include access lists. Note: This is an input field only. It is not returned in response to a list or get request.</p>
+</div></td></tr><tr><td id='structfield.datasource_type'><a class='stability Unmarked' title='No stability level'></a><code>datasource_type</code></td><td><div class='docblock'><p>Deprecated: The type of the datasources used to build this Layer. Note: This has been replaced by layerType, but is still available for now to maintain backward compatibility.</p>
+</div></td></tr><tr><td id='structfield.writers_can_edit_permissions'><a class='stability Unmarked' title='No stability level'></a><code>writers_can_edit_permissions</code></td><td><div class='docblock'><p>If true, WRITERs of the asset are able to edit the asset permissions.</p>
+</div></td></tr><tr><td id='structfield.creator_email'><a class='stability Unmarked' title='No stability level'></a><code>creator_email</code></td><td><div class='docblock'><p>The email address of the creator of this layer. This is only returned on GET requests and not LIST requests.</p>
+</div></td></tr><tr><td id='structfield.bbox'><a class='stability Unmarked' title='No stability level'></a><code>bbox</code></td><td><div class='docblock'><p>A rectangular bounding box which contains all of the data in this Layer. The box is expressed as \&quot;west, south, east, north\&quot;. The numbers represent latitude and longitude in decimal degrees.</p>
+</div></td></tr><tr><td id='structfield.last_modifier_email'><a class='stability Unmarked' title='No stability level'></a><code>last_modifier_email</code></td><td><div class='docblock'><p>The email address of the last modifier of this layer. This is only returned on GET requests and not LIST requests.</p>
+</div></td></tr><tr><td id='structfield.last_modified_time'><a class='stability Unmarked' title='No stability level'></a><code>last_modified_time</code></td><td><div class='docblock'><p>The last modified time of this layer. The value is an RFC 3339 formatted date-time value (e.g. 1970-01-01T00:00:00Z).</p>
+</div></td></tr><tr><td id='structfield.id'><a class='stability Unmarked' title='No stability level'></a><code>id</code></td><td><div class='docblock'><p>A globally unique ID, used to refer to this Layer.</p>
+</div></td></tr><tr><td id='structfield.description'><a class='stability Unmarked' title='No stability level'></a><code>description</code></td><td><div class='docblock'><p>The description of this Layer, supplied by the author.</p>
+</div></td></tr><tr><td id='structfield.style'><a class='stability Unmarked' title='No stability level'></a><code>style</code></td><td><div class='docblock'><p>The styling information for a vector layer. Note: Style information is returned in response to a get request but not a list request. After requesting a list of layers, you&#39;ll need to send a get request to retrieve the VectorStyles for each layer.</p>
+</div></td></tr><tr><td id='structfield.name'><a class='stability Unmarked' title='No stability level'></a><code>name</code></td><td><div class='docblock'><p>The name of this Layer, supplied by the author.</p>
+</div></td></tr><tr><td id='structfield.processing_status'><a class='stability Unmarked' title='No stability level'></a><code>processing_status</code></td><td><div class='docblock'><p>The processing status of this layer.</p>
+</div></td></tr><tr><td id='structfield.project_id'><a class='stability Unmarked' title='No stability level'></a><code>project_id</code></td><td><div class='docblock'><p>The ID of the project that this Layer is in.</p>
+</div></td></tr><tr><td id='structfield.creation_time'><a class='stability Unmarked' title='No stability level'></a><code>creation_time</code></td><td><div class='docblock'><p>The creation time of this layer. The value is an RFC 3339 formatted date-time value (e.g. 1970-01-01T00:00:00Z).</p>
+</div></td></tr><tr><td id='structfield.publishing_status'><a class='stability Unmarked' title='No stability level'></a><code>publishing_status</code></td><td><div class='docblock'><p>The publishing status of this layer.</p>
+</div></td></tr><tr><td id='structfield.etag'><a class='stability Unmarked' title='No stability level'></a><code>etag</code></td><td><div class='docblock'><p>The ETag, used to refer to the current version of the asset.</p>
+</div></td></tr><tr><td id='structfield.layer_type'><a class='stability Unmarked' title='No stability level'></a><code>layer_type</code></td><td><div class='docblock'><p>The type of the datasources used to build this Layer. This should be used instead of datasourceType. At least one of layerType and datasourceType and must be specified, but layerType takes precedence.</p>
+</div></td></tr><tr><td id='structfield.published_access_list'><a class='stability Unmarked' title='No stability level'></a><code>published_access_list</code></td><td><div class='docblock'><p>Deprecated: The access list to whom view permissions are granted. The value must be the name of a Maps Engine access list of the Map Viewer type, and the user must be a viewer on that list. Note: Google Maps Engine no longer uses access lists. Instead, each asset has its own list of permissions. For backward compatibility, the API still accepts access lists for projects that are already using access lists. If you created a GME account/project after July 14th, 2014, you will not be able to send API requests that include access lists. Note: This is an input field only. It is not returned in response to a list or get request.</p>
+</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='../google_mapsengine1/trait.RequestValue.html' title='google_mapsengine1::RequestValue'>RequestValue</a> for <a class='struct' href='../google_mapsengine1/struct.Layer.html' title='google_mapsengine1::Layer'>Layer</a></code></h3><div class='impl-items'></div><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='../google_mapsengine1/trait.Resource.html' title='google_mapsengine1::Resource'>Resource</a> for <a class='struct' href='../google_mapsengine1/struct.Layer.html' title='google_mapsengine1::Layer'>Layer</a></code></h3><div class='impl-items'></div><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='../google_mapsengine1/trait.ResponseResult.html' title='google_mapsengine1::ResponseResult'>ResponseResult</a> for <a class='struct' href='../google_mapsengine1/struct.Layer.html' title='google_mapsengine1::Layer'>Layer</a></code></h3><div class='impl-items'></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_mapsengine1/struct.Layer.html' title='google_mapsengine1::Layer'>Layer</a></code></h3><div class='impl-items'><h4 id='method.fmt' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#method.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='http://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='http://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
+</div><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_mapsengine1/struct.Layer.html' title='google_mapsengine1::Layer'>Layer</a></code></h3><div class='impl-items'><h4 id='method.clone' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_mapsengine1/struct.Layer.html' title='google_mapsengine1::Layer'>Layer</a></code></h4>
+<h4 id='method.clone_from' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code></h4>
+</div><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_mapsengine1/struct.Layer.html' title='google_mapsengine1::Layer'>Layer</a></code></h3><div class='impl-items'><h4 id='method.default' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/default/trait.Default.html#method.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_mapsengine1/struct.Layer.html' title='google_mapsengine1::Layer'>Layer</a></code></h4>
+</div><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='../serde/de/trait.Deserialize.html' title='serde::de::Deserialize'>Deserialize</a> for <a class='struct' href='../google_mapsengine1/struct.Layer.html' title='google_mapsengine1::Layer'>Layer</a></code></h3><div class='impl-items'><h4 id='method.deserialize' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='../serde/de/trait.Deserialize.html#method.deserialize' class='fnname'>deserialize</a>&lt;__D&gt;(deserializer: &amp;mut __D) -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../google_mapsengine1/struct.Layer.html' title='google_mapsengine1::Layer'>Layer</a>, __D&gt; <span class='where'>where __D: <a class='trait' href='../serde/de/trait.Deserializer.html' title='serde::de::Deserializer'>Deserializer</a></span></code></h4>
+</div><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='../serde/ser/trait.Serialize.html' title='serde::ser::Serialize'>Serialize</a> for <a class='struct' href='../google_mapsengine1/struct.Layer.html' title='google_mapsengine1::Layer'>Layer</a></code></h3><div class='impl-items'><h4 id='method.serialize' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='../serde/ser/trait.Serialize.html#method.serialize' class='fnname'>serialize</a>&lt;__S&gt;(&amp;self, serializer: &amp;mut __S) -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, __S&gt; <span class='where'>where __S: <a class='trait' href='../serde/ser/trait.Serializer.html' title='serde::ser::Serializer'>Serializer</a></span></code></h4>
+</div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <div id="help" class="hidden">
+        <div class="shortcuts">
+            <h1>Keyboard shortcuts</h1>
+            <dl>
+                <dt>?</dt>
+                <dd>Show this help dialog</dd>
+                <dt>S</dt>
+                <dd>Focus the search field</dd>
+                <dt>&larrb;</dt>
+                <dd>Move up in search results</dd>
+                <dt>&rarrb;</dt>
+                <dd>Move down in search results</dd>
+                <dt>&#9166;</dt>
+                <dd>Go to active search result</dd>
+            </dl>
+        </div>
+        <div class="infos">
+            <h1>Search tricks</h1>
+            <p>
+                Prefix searches with a type followed by a colon (e.g.
+                <code>fn:</code>) to restrict the search to a given type.
+            </p>
+            <p>
+                Accepted types are: <code>fn</code>, <code>mod</code>,
+                <code>struct</code>, <code>enum</code>,
+                <code>trait</code>, <code>typedef</code> (or
+                <code>tdef</code>).
+            </p>
+        </div>
+    </div>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "google_mapsengine1";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../jquery.js"></script>
+    <script src="../main.js"></script>
+    
+    <script async src="../search-index.js"></script>
+</body>
+</html>

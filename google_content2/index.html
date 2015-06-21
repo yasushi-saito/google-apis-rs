@@ -1,0 +1,1497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `google_content2` crate.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, google_content2">
+
+    <title>google_content2 - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../main.css">
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <section class="sidebar">
+        
+        <p class='location'></p><script>window.sidebarCurrent = {name: 'google_content2', ty: 'mod', relpath: '../'};</script>
+    </section>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press 'S' to search, '?' for more options..."
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content mod">
+<h1 class='fqn'><span class='in-band'>Crate <a class='mod' href=''>google_content2</a><wbr></span><span class='out-of-band'><a href='stability.html'>[stability]</a> <span id='render-detail'>
+            <a id="collapse-all" href="#">[-]</a>&nbsp;<a id="expand-all" href="#">[+]</a>
+        </span><a id='src-0' href='../src/google_content2/lib.rs.html#5-206'>[src]</a></span></h1>
+<div class='docblock'><p>This documentation was generated from <em>Shopping Content</em> crate version <em>0.1.8+20150421</em>, where <em>20150421</em> is the exact revision of the <em>content:v2</em> schema built by the <a href="http://www.makotemplates.org/">mako</a> code generator <em>v0.1.8</em>.</p>
+
+<p>Everything else about the <em>Shopping Content</em> <em>v2</em> API can be found at the
+<a href="https://developers.google.com/shopping-content/v2/">official documentation site</a>.
+The original source code is <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/content2">on github</a>.</p>
+
+<h1 id="features" class='section-header'><a
+                           href="#features">Features</a></h1>
+<p>Handle the following <em>Resources</em> with ease from the central <a href="struct.ShoppingContent.html">hub</a> ... </p>
+
+<ul>
+<li><a href="struct.Account.html">accounts</a>
+
+<ul>
+<li><a href="struct.AccountAuthinfoCall.html"><em>authinfo</em></a>, <a href="struct.AccountCustombatchCall.html"><em>custombatch</em></a>, <a href="struct.AccountDeleteCall.html"><em>delete</em></a>, <a href="struct.AccountGetCall.html"><em>get</em></a>, <a href="struct.AccountInsertCall.html"><em>insert</em></a>, <a href="struct.AccountListCall.html"><em>list</em></a>, <a href="struct.AccountPatchCall.html"><em>patch</em></a> and <a href="struct.AccountUpdateCall.html"><em>update</em></a></li>
+</ul></li>
+<li>accountshipping
+
+<ul>
+<li><a href="struct.AccountshippingCustombatchCall.html"><em>custombatch</em></a>, <a href="struct.AccountshippingGetCall.html"><em>get</em></a>, <a href="struct.AccountshippingListCall.html"><em>list</em></a>, <a href="struct.AccountshippingPatchCall.html"><em>patch</em></a> and <a href="struct.AccountshippingUpdateCall.html"><em>update</em></a></li>
+</ul></li>
+<li>accountstatuses
+
+<ul>
+<li><a href="struct.AccountstatuseCustombatchCall.html"><em>custombatch</em></a>, <a href="struct.AccountstatuseGetCall.html"><em>get</em></a> and <a href="struct.AccountstatuseListCall.html"><em>list</em></a></li>
+</ul></li>
+<li>accounttax
+
+<ul>
+<li><a href="struct.AccounttaxCustombatchCall.html"><em>custombatch</em></a>, <a href="struct.AccounttaxGetCall.html"><em>get</em></a>, <a href="struct.AccounttaxListCall.html"><em>list</em></a>, <a href="struct.AccounttaxPatchCall.html"><em>patch</em></a> and <a href="struct.AccounttaxUpdateCall.html"><em>update</em></a></li>
+</ul></li>
+<li><a href="struct.Datafeed.html">datafeeds</a>
+
+<ul>
+<li><a href="struct.DatafeedCustombatchCall.html"><em>custombatch</em></a>, <a href="struct.DatafeedDeleteCall.html"><em>delete</em></a>, <a href="struct.DatafeedGetCall.html"><em>get</em></a>, <a href="struct.DatafeedInsertCall.html"><em>insert</em></a>, <a href="struct.DatafeedListCall.html"><em>list</em></a>, <a href="struct.DatafeedPatchCall.html"><em>patch</em></a> and <a href="struct.DatafeedUpdateCall.html"><em>update</em></a></li>
+</ul></li>
+<li>datafeedstatuses
+
+<ul>
+<li><a href="struct.DatafeedstatuseCustombatchCall.html"><em>custombatch</em></a>, <a href="struct.DatafeedstatuseGetCall.html"><em>get</em></a> and <a href="struct.DatafeedstatuseListCall.html"><em>list</em></a></li>
+</ul></li>
+<li><a href="struct.Inventory.html">inventory</a>
+
+<ul>
+<li><a href="struct.InventoryCustombatchCall.html"><em>custombatch</em></a> and <a href="struct.InventorySetCall.html"><em>set</em></a></li>
+</ul></li>
+<li><a href="struct.Product.html">products</a>
+
+<ul>
+<li><a href="struct.ProductCustombatchCall.html"><em>custombatch</em></a>, <a href="struct.ProductDeleteCall.html"><em>delete</em></a>, <a href="struct.ProductGetCall.html"><em>get</em></a>, <a href="struct.ProductInsertCall.html"><em>insert</em></a> and <a href="struct.ProductListCall.html"><em>list</em></a></li>
+</ul></li>
+<li>productstatuses
+
+<ul>
+<li><a href="struct.ProductstatuseCustombatchCall.html"><em>custombatch</em></a>, <a href="struct.ProductstatuseGetCall.html"><em>get</em></a> and <a href="struct.ProductstatuseListCall.html"><em>list</em></a></li>
+</ul></li>
+</ul>
+
+<p>Not what you are looking for ? Find all other Google APIs in their Rust <a href="../index.html">documentation index</a>.</p>
+
+<h1 id="structure-of-this-library" class='section-header'><a
+                           href="#structure-of-this-library">Structure of this Library</a></h1>
+<p>The API is structured into the following primary items:</p>
+
+<ul>
+<li><strong><a href="struct.ShoppingContent.html">Hub</a></strong>
+
+<ul>
+<li>a central object to maintain state and allow accessing all <em>Activities</em></li>
+<li>creates <a href="trait.MethodsBuilder.html"><em>Method Builders</em></a> which in turn
+allow access to individual <a href="trait.CallBuilder.html"><em>Call Builders</em></a></li>
+</ul></li>
+<li><strong><a href="trait.Resource.html">Resources</a></strong>
+
+<ul>
+<li>primary types that you can apply <em>Activities</em> to</li>
+<li>a collection of properties and <em>Parts</em></li>
+<li><strong><a href="trait.Part.html">Parts</a></strong>
+
+<ul>
+<li>a collection of properties</li>
+<li>never directly used in <em>Activities</em></li>
+</ul></li>
+</ul></li>
+<li><strong><a href="trait.CallBuilder.html">Activities</a></strong>
+
+<ul>
+<li>operations to apply to <em>Resources</em></li>
+</ul></li>
+</ul>
+
+<p>All <em>structures</em> are marked with applicable traits to further categorize them and ease browsing.</p>
+
+<p>Generally speaking, you can invoke <em>Activities</em> like this:</p>
+<pre id='rust-example-rendered' class='rust '>
+<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>resource</span>().<span class='ident'>activity</span>(...).<span class='ident'>doit</span>()
+</pre>
+
+<p>Or specifically ...</p>
+<pre id='rust-example-rendered' class='rust '>
+<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>accounts</span>().<span class='ident'>custombatch</span>(...).<span class='ident'>doit</span>()
+<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>accounts</span>().<span class='ident'>patch</span>(...).<span class='ident'>doit</span>()
+<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>accounts</span>().<span class='ident'>get</span>(...).<span class='ident'>doit</span>()
+<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>accounts</span>().<span class='ident'>update</span>(...).<span class='ident'>doit</span>()
+<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>accounts</span>().<span class='ident'>list</span>(...).<span class='ident'>doit</span>()
+<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>accounts</span>().<span class='ident'>authinfo</span>(...).<span class='ident'>doit</span>()
+<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>accounts</span>().<span class='ident'>delete</span>(...).<span class='ident'>doit</span>()
+<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>accounts</span>().<span class='ident'>insert</span>(...).<span class='ident'>doit</span>()
+</pre>
+
+<p>The <code>resource()</code> and <code>activity(...)</code> calls create <a href="http://en.wikipedia.org/wiki/Builder_pattern">builders</a>. The second one dealing with <code>Activities</code> 
+supports various methods to configure the impending operation (not shown here). It is made such that all required arguments have to be 
+specified right away (i.e. <code>(...)</code>), whereas all optional ones can be <a href="http://en.wikipedia.org/wiki/Builder_pattern">build up</a> as desired.
+The <code>doit()</code> method performs the actual communication with the server and returns the respective result.</p>
+
+<h1 id="usage" class='section-header'><a
+                           href="#usage">Usage</a></h1>
+<h2 id="setting-up-your-project" class='section-header'><a
+                           href="#setting-up-your-project">Setting up your Project</a></h2>
+<p>To use this library, you would put the following lines into your <code>Cargo.toml</code> file:</p>
+
+<pre><code class="language-toml">[dependencies]
+google-content2 = &quot;*&quot;
+</code></pre>
+
+<h2 id="a-complete-example" class='section-header'><a
+                           href="#a-complete-example">A complete example</a></h2><pre id='rust-example-rendered' class='rust '>
+<span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>hyper</span>;
+<span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>yup_oauth2</span> <span class='kw'>as</span> <span class='ident'>oauth2</span>;
+<span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>google_content2</span> <span class='kw'>as</span> <span class='ident'>content2</span>;
+<span class='kw'>use</span> <span class='ident'>content2</span>::<span class='ident'>Account</span>;
+<span class='kw'>use</span> <span class='ident'>content2</span>::{<span class='prelude-ty'>Result</span>, <span class='ident'>Error</span>};
+<span class='kw'>use</span> <span class='ident'>std</span>::<span class='ident'>default</span>::<span class='ident'>Default</span>;
+<span class='kw'>use</span> <span class='ident'>oauth2</span>::{<span class='ident'>Authenticator</span>, <span class='ident'>DefaultAuthenticatorDelegate</span>, <span class='ident'>ApplicationSecret</span>, <span class='ident'>MemoryStorage</span>};
+<span class='kw'>use</span> <span class='ident'>content2</span>::<span class='ident'>ShoppingContent</span>;
+ 
+<span class='comment'>// Get an ApplicationSecret instance by some means. It contains the `client_id` and </span>
+<span class='comment'>// `client_secret`, among other things.</span>
+<span class='kw'>let</span> <span class='ident'>secret</span>: <span class='ident'>ApplicationSecret</span> <span class='op'>=</span> <span class='ident'>Default</span>::<span class='ident'>default</span>();
+<span class='comment'>// Instantiate the authenticator. It will choose a suitable authentication flow for you, </span>
+<span class='comment'>// unless you replace  `None` with the desired Flow.</span>
+<span class='comment'>// Provide your own `AuthenticatorDelegate` to adjust the way it operates and get feedback about </span>
+<span class='comment'>// what&#39;s going on. You probably want to bring in your own `TokenStorage` to persist tokens and</span>
+<span class='comment'>// retrieve them from storage.</span>
+<span class='kw'>let</span> <span class='ident'>auth</span> <span class='op'>=</span> <span class='ident'>Authenticator</span>::<span class='ident'>new</span>(<span class='kw-2'>&amp;</span><span class='ident'>secret</span>, <span class='ident'>DefaultAuthenticatorDelegate</span>,
+                              <span class='ident'>hyper</span>::<span class='ident'>Client</span>::<span class='ident'>new</span>(),
+                              <span class='op'>&lt;</span><span class='ident'>MemoryStorage</span> <span class='kw'>as</span> <span class='ident'>Default</span><span class='op'>&gt;</span>::<span class='ident'>default</span>(), <span class='prelude-val'>None</span>);
+<span class='kw'>let</span> <span class='kw-2'>mut</span> <span class='ident'>hub</span> <span class='op'>=</span> <span class='ident'>ShoppingContent</span>::<span class='ident'>new</span>(<span class='ident'>hyper</span>::<span class='ident'>Client</span>::<span class='ident'>new</span>(), <span class='ident'>auth</span>);
+<span class='comment'>// As the method needs a request, you would usually fill it with the desired information</span>
+<span class='comment'>// into the respective structure. Some of the parts shown here might not be applicable !</span>
+<span class='comment'>// Values shown here are possibly random and not representative !</span>
+<span class='kw'>let</span> <span class='kw-2'>mut</span> <span class='ident'>req</span> <span class='op'>=</span> <span class='ident'>Account</span>::<span class='ident'>default</span>();
+ 
+<span class='comment'>// You can configure optional parameters by calling the respective setters at will, and</span>
+<span class='comment'>// execute the final call using `doit()`.</span>
+<span class='comment'>// Values shown here are possibly random and not representative !</span>
+<span class='kw'>let</span> <span class='ident'>result</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>accounts</span>().<span class='ident'>patch</span>(<span class='ident'>req</span>, <span class='string'>&quot;merchantId&quot;</span>, <span class='string'>&quot;accountId&quot;</span>)
+             .<span class='ident'>doit</span>();
+ 
+<span class='kw'>match</span> <span class='ident'>result</span> {
+    <span class='prelude-val'>Err</span>(<span class='ident'>e</span>) <span class='op'>=&gt;</span> <span class='kw'>match</span> <span class='ident'>e</span> {
+        <span class='comment'>// The Error enum provides details about what exactly happened.</span>
+        <span class='comment'>// You can also just use its `Debug`, `Display` or `Error` traits</span>
+         <span class='ident'>Error</span>::<span class='ident'>HttpError</span>(_)
+        <span class='op'>|</span><span class='ident'>Error</span>::<span class='ident'>MissingAPIKey</span>
+        <span class='op'>|</span><span class='ident'>Error</span>::<span class='ident'>MissingToken</span>(_)
+        <span class='op'>|</span><span class='ident'>Error</span>::<span class='ident'>Cancelled</span>
+        <span class='op'>|</span><span class='ident'>Error</span>::<span class='ident'>UploadSizeLimitExceeded</span>(_, _)
+        <span class='op'>|</span><span class='ident'>Error</span>::<span class='ident'>Failure</span>(_)
+        <span class='op'>|</span><span class='ident'>Error</span>::<span class='ident'>BadRequest</span>(_)
+        <span class='op'>|</span><span class='ident'>Error</span>::<span class='ident'>FieldClash</span>(_)
+        <span class='op'>|</span><span class='ident'>Error</span>::<span class='ident'>JsonDecodeError</span>(_, _) <span class='op'>=&gt;</span> <span class='macro'>println</span><span class='macro'>!</span>(<span class='string'>&quot;{}&quot;</span>, <span class='ident'>e</span>),
+    },
+    <span class='prelude-val'>Ok</span>(<span class='ident'>res</span>) <span class='op'>=&gt;</span> <span class='macro'>println</span><span class='macro'>!</span>(<span class='string'>&quot;Success: {:?}&quot;</span>, <span class='ident'>res</span>),
+}
+</pre>
+
+<h2 id="handling-errors" class='section-header'><a
+                           href="#handling-errors">Handling Errors</a></h2>
+<p>All errors produced by the system are provided either as <a href="enum.Result.html">Result</a> enumeration as return value of 
+the doit() methods, or handed as possibly intermediate results to either the 
+<a href="trait.Delegate.html">Hub Delegate</a>, or the <a href="../yup-oauth2/trait.AuthenticatorDelegate.html">Authenticator Delegate</a>.</p>
+
+<p>When delegates handle errors or intermediate values, they may have a chance to instruct the system to retry. This 
+makes the system potentially resilient to all kinds of errors.</p>
+
+<h2 id="uploads-and-downloads" class='section-header'><a
+                           href="#uploads-and-downloads">Uploads and Downloads</a></h2>
+<p>If a method supports downloads, the response body, which is part of the <a href="enum.Result.html">Result</a>, should be
+read by you to obtain the media.
+If such a method also supports a <a href="trait.ResponseResult.html">Response Result</a>, it will return that by default.
+You can see it as meta-data for the actual media. To trigger a media download, you will have to set up the builder by making
+this call: <code>.param(&quot;alt&quot;, &quot;media&quot;)</code>.</p>
+
+<p>Methods supporting uploads can do so using up to 2 different protocols: 
+<em>simple</em> and <em>resumable</em>. The distinctiveness of each is represented by customized 
+<code>doit(...)</code> methods, which are then named <code>upload(...)</code> and <code>upload_resumable(...)</code> respectively.</p>
+
+<h2 id="customization-and-callbacks" class='section-header'><a
+                           href="#customization-and-callbacks">Customization and Callbacks</a></h2>
+<p>You may alter the way an <code>doit()</code> method is called by providing a <a href="trait.Delegate.html">delegate</a> to the 
+<a href="trait.CallBuilder.html">Method Builder</a> before making the final <code>doit()</code> call. 
+Respective methods will be called to provide progress information, as well as determine whether the system should 
+retry on failure.</p>
+
+<p>The <a href="trait.Delegate.html">delegate trait</a> is default-implemented, allowing you to customize it with minimal effort.</p>
+
+<h2 id="optional-parts-in-server-requests" class='section-header'><a
+                           href="#optional-parts-in-server-requests">Optional Parts in Server-Requests</a></h2>
+<p>All structures provided by this library are made to be <a href="trait.RequestValue.html">enocodable</a> and 
+<a href="trait.ResponseResult.html">decodable</a> via <em>json</em>. Optionals are used to indicate that partial requests are responses 
+are valid.
+Most optionals are are considered <a href="trait.Part.html">Parts</a> which are identifiable by name, which will be sent to 
+the server to indicate either the set parts of the request or the desired parts in the response.</p>
+
+<h2 id="builder-arguments" class='section-header'><a
+                           href="#builder-arguments">Builder Arguments</a></h2>
+<p>Using <a href="trait.CallBuilder.html">method builders</a>, you are able to prepare an action call by repeatedly calling it&#39;s methods.
+These will always take a single argument, for which the following statements are true.</p>
+
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Plain_old_data_structure">PODs</a> are handed by copy</li>
+<li>strings are passed as <code>&amp;str</code></li>
+<li><a href="trait.RequestValue.html">request values</a> are moved</li>
+</ul>
+
+<p>Arguments will always be copied or cloned into the builder, to make them independent of their original life times.</p>
+</div><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
+<table>
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Account.html'
+                               title='google_content2::Account'>Account</a></td>
+                        <td class='docblock short'><p>Account data.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AccountAdwordsLink.html'
+                               title='google_content2::AccountAdwordsLink'>AccountAdwordsLink</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AccountAuthinfoCall.html'
+                               title='google_content2::AccountAuthinfoCall'>AccountAuthinfoCall</a></td>
+                        <td class='docblock short'><p>Returns information about the authenticated user.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AccountCustombatchCall.html'
+                               title='google_content2::AccountCustombatchCall'>AccountCustombatchCall</a></td>
+                        <td class='docblock short'><p>Retrieves, inserts, updates, and deletes multiple Merchant Center (sub-)accounts in a single request.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AccountDeleteCall.html'
+                               title='google_content2::AccountDeleteCall'>AccountDeleteCall</a></td>
+                        <td class='docblock short'><p>Deletes a Merchant Center sub-account.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AccountGetCall.html'
+                               title='google_content2::AccountGetCall'>AccountGetCall</a></td>
+                        <td class='docblock short'><p>Retrieves a Merchant Center account.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AccountIdentifier.html'
+                               title='google_content2::AccountIdentifier'>AccountIdentifier</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AccountInsertCall.html'
+                               title='google_content2::AccountInsertCall'>AccountInsertCall</a></td>
+                        <td class='docblock short'><p>Creates a Merchant Center sub-account.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AccountListCall.html'
+                               title='google_content2::AccountListCall'>AccountListCall</a></td>
+                        <td class='docblock short'><p>Lists the sub-accounts in your Merchant Center account.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AccountMethods.html'
+                               title='google_content2::AccountMethods'>AccountMethods</a></td>
+                        <td class='docblock short'><p>A builder providing access to all methods supported on <em>account</em> resources.
+It is not used directly, but through the <code>ShoppingContent</code> hub.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AccountPatchCall.html'
+                               title='google_content2::AccountPatchCall'>AccountPatchCall</a></td>
+                        <td class='docblock short'><p>Updates a Merchant Center account. This method supports patch semantics.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AccountShipping.html'
+                               title='google_content2::AccountShipping'>AccountShipping</a></td>
+                        <td class='docblock short'><p>The shipping settings of a merchant account.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AccountShippingCarrierRate.html'
+                               title='google_content2::AccountShippingCarrierRate'>AccountShippingCarrierRate</a></td>
+                        <td class='docblock short'><p>A carrier-calculated shipping rate.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AccountShippingCondition.html'
+                               title='google_content2::AccountShippingCondition'>AccountShippingCondition</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AccountShippingLocationGroup.html'
+                               title='google_content2::AccountShippingLocationGroup'>AccountShippingLocationGroup</a></td>
+                        <td class='docblock short'><p>A user-defined locations group in a given country. All the locations of the group must be of the same type.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AccountShippingPostalCodeRange.html'
+                               title='google_content2::AccountShippingPostalCodeRange'>AccountShippingPostalCodeRange</a></td>
+                        <td class='docblock short'><p>A postal code range, that can be either:
+- A range of postal codes (e.g., start=12340, end=12359)
+- A range of postal codes prefixes (e.g., start=1234* end=1235*). Prefixes must be of the same length (e.g., start=12* end=2* is invalid).</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AccountShippingRateTable.html'
+                               title='google_content2::AccountShippingRateTable'>AccountShippingRateTable</a></td>
+                        <td class='docblock short'><p>A single or bi-dimensional table of shipping rates. Each dimension is defined in terms of consecutive price/weight ranges, delivery locations, or shipping labels.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AccountShippingRateTableCell.html'
+                               title='google_content2::AccountShippingRateTableCell'>AccountShippingRateTableCell</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AccountShippingShippingService.html'
+                               title='google_content2::AccountShippingShippingService'>AccountShippingShippingService</a></td>
+                        <td class='docblock short'><p>Shipping services provided in a country.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AccountShippingShippingServiceCalculationMethod.html'
+                               title='google_content2::AccountShippingShippingServiceCalculationMethod'>AccountShippingShippingServiceCalculationMethod</a></td>
+                        <td class='docblock short'><p>Shipping cost calculation method. Exactly one of the field is set.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AccountShippingShippingServiceCostRule.html'
+                               title='google_content2::AccountShippingShippingServiceCostRule'>AccountShippingShippingServiceCostRule</a></td>
+                        <td class='docblock short'><p>Building block of the cost calculation decision tree.
+- The tree root should have no condition and no calculation method.
+- All the children must have a condition on the same dimension. The first child matching a condition is entered, therefore, price and weight conditions form contiguous intervals.
+- The last child of an element must have no condition and matches all elements not previously matched.
+- Children and calculation method are mutually exclusive, and exactly one of them must be defined; the root must only have children.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AccountStatus.html'
+                               title='google_content2::AccountStatus'>AccountStatus</a></td>
+                        <td class='docblock short'><p>The status of an account, i.e., information about its products, which is computed offline and not returned immediately at insertion time.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AccountStatusDataQualityIssue.html'
+                               title='google_content2::AccountStatusDataQualityIssue'>AccountStatusDataQualityIssue</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AccountStatusExampleItem.html'
+                               title='google_content2::AccountStatusExampleItem'>AccountStatusExampleItem</a></td>
+                        <td class='docblock short'><p>An example of an item that has poor data quality. An item value on the landing page differs from what is submitted, or conflicts with a policy.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AccountTax.html'
+                               title='google_content2::AccountTax'>AccountTax</a></td>
+                        <td class='docblock short'><p>The tax settings of a merchant account.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AccountTaxTaxRule.html'
+                               title='google_content2::AccountTaxTaxRule'>AccountTaxTaxRule</a></td>
+                        <td class='docblock short'><p>Tax calculation rule to apply in a state or province (USA only).</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AccountUpdateCall.html'
+                               title='google_content2::AccountUpdateCall'>AccountUpdateCall</a></td>
+                        <td class='docblock short'><p>Updates a Merchant Center account.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AccountUser.html'
+                               title='google_content2::AccountUser'>AccountUser</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AccountsAuthInfoResponse.html'
+                               title='google_content2::AccountsAuthInfoResponse'>AccountsAuthInfoResponse</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AccountsCustomBatchRequest.html'
+                               title='google_content2::AccountsCustomBatchRequest'>AccountsCustomBatchRequest</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AccountsCustomBatchRequestEntry.html'
+                               title='google_content2::AccountsCustomBatchRequestEntry'>AccountsCustomBatchRequestEntry</a></td>
+                        <td class='docblock short'><p>A batch entry encoding a single non-batch accounts request.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AccountsCustomBatchResponse.html'
+                               title='google_content2::AccountsCustomBatchResponse'>AccountsCustomBatchResponse</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AccountsCustomBatchResponseEntry.html'
+                               title='google_content2::AccountsCustomBatchResponseEntry'>AccountsCustomBatchResponseEntry</a></td>
+                        <td class='docblock short'><p>A batch entry encoding a single non-batch accounts response.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AccountsListResponse.html'
+                               title='google_content2::AccountsListResponse'>AccountsListResponse</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AccountshippingCustomBatchRequest.html'
+                               title='google_content2::AccountshippingCustomBatchRequest'>AccountshippingCustomBatchRequest</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AccountshippingCustomBatchRequestEntry.html'
+                               title='google_content2::AccountshippingCustomBatchRequestEntry'>AccountshippingCustomBatchRequestEntry</a></td>
+                        <td class='docblock short'><p>A batch entry encoding a single non-batch accountshipping request.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AccountshippingCustomBatchResponse.html'
+                               title='google_content2::AccountshippingCustomBatchResponse'>AccountshippingCustomBatchResponse</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AccountshippingCustomBatchResponseEntry.html'
+                               title='google_content2::AccountshippingCustomBatchResponseEntry'>AccountshippingCustomBatchResponseEntry</a></td>
+                        <td class='docblock short'><p>A batch entry encoding a single non-batch accountshipping response.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AccountshippingCustombatchCall.html'
+                               title='google_content2::AccountshippingCustombatchCall'>AccountshippingCustombatchCall</a></td>
+                        <td class='docblock short'><p>Retrieves and updates the shipping settings of multiple accounts in a single request.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AccountshippingGetCall.html'
+                               title='google_content2::AccountshippingGetCall'>AccountshippingGetCall</a></td>
+                        <td class='docblock short'><p>Retrieves the shipping settings of the account.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AccountshippingListCall.html'
+                               title='google_content2::AccountshippingListCall'>AccountshippingListCall</a></td>
+                        <td class='docblock short'><p>Lists the shipping settings of the sub-accounts in your Merchant Center account.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AccountshippingListResponse.html'
+                               title='google_content2::AccountshippingListResponse'>AccountshippingListResponse</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AccountshippingMethods.html'
+                               title='google_content2::AccountshippingMethods'>AccountshippingMethods</a></td>
+                        <td class='docblock short'><p>A builder providing access to all methods supported on <em>accountshipping</em> resources.
+It is not used directly, but through the <code>ShoppingContent</code> hub.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AccountshippingPatchCall.html'
+                               title='google_content2::AccountshippingPatchCall'>AccountshippingPatchCall</a></td>
+                        <td class='docblock short'><p>Updates the shipping settings of the account. This method supports patch semantics.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AccountshippingUpdateCall.html'
+                               title='google_content2::AccountshippingUpdateCall'>AccountshippingUpdateCall</a></td>
+                        <td class='docblock short'><p>Updates the shipping settings of the account.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AccountstatuseCustombatchCall.html'
+                               title='google_content2::AccountstatuseCustombatchCall'>AccountstatuseCustombatchCall</a></td>
+                        <td class='docblock short'><p>A builder for the <em>custombatch</em> method supported by a <em>accountstatuse</em> resource.
+It is not used directly, but through a <code>AccountstatuseMethods</code> instance.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AccountstatuseGetCall.html'
+                               title='google_content2::AccountstatuseGetCall'>AccountstatuseGetCall</a></td>
+                        <td class='docblock short'><p>Retrieves the status of a Merchant Center account.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AccountstatuseListCall.html'
+                               title='google_content2::AccountstatuseListCall'>AccountstatuseListCall</a></td>
+                        <td class='docblock short'><p>Lists the statuses of the sub-accounts in your Merchant Center account.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AccountstatuseMethods.html'
+                               title='google_content2::AccountstatuseMethods'>AccountstatuseMethods</a></td>
+                        <td class='docblock short'><p>A builder providing access to all methods supported on <em>accountstatuse</em> resources.
+It is not used directly, but through the <code>ShoppingContent</code> hub.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AccountstatusesCustomBatchRequest.html'
+                               title='google_content2::AccountstatusesCustomBatchRequest'>AccountstatusesCustomBatchRequest</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AccountstatusesCustomBatchRequestEntry.html'
+                               title='google_content2::AccountstatusesCustomBatchRequestEntry'>AccountstatusesCustomBatchRequestEntry</a></td>
+                        <td class='docblock short'><p>A batch entry encoding a single non-batch accountstatuses request.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AccountstatusesCustomBatchResponse.html'
+                               title='google_content2::AccountstatusesCustomBatchResponse'>AccountstatusesCustomBatchResponse</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AccountstatusesCustomBatchResponseEntry.html'
+                               title='google_content2::AccountstatusesCustomBatchResponseEntry'>AccountstatusesCustomBatchResponseEntry</a></td>
+                        <td class='docblock short'><p>A batch entry encoding a single non-batch accountstatuses response.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AccountstatusesListResponse.html'
+                               title='google_content2::AccountstatusesListResponse'>AccountstatusesListResponse</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AccounttaxCustomBatchRequest.html'
+                               title='google_content2::AccounttaxCustomBatchRequest'>AccounttaxCustomBatchRequest</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AccounttaxCustomBatchRequestEntry.html'
+                               title='google_content2::AccounttaxCustomBatchRequestEntry'>AccounttaxCustomBatchRequestEntry</a></td>
+                        <td class='docblock short'><p>A batch entry encoding a single non-batch accounttax request.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AccounttaxCustomBatchResponse.html'
+                               title='google_content2::AccounttaxCustomBatchResponse'>AccounttaxCustomBatchResponse</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AccounttaxCustomBatchResponseEntry.html'
+                               title='google_content2::AccounttaxCustomBatchResponseEntry'>AccounttaxCustomBatchResponseEntry</a></td>
+                        <td class='docblock short'><p>A batch entry encoding a single non-batch accounttax response.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AccounttaxCustombatchCall.html'
+                               title='google_content2::AccounttaxCustombatchCall'>AccounttaxCustombatchCall</a></td>
+                        <td class='docblock short'><p>Retrieves and updates tax settings of multiple accounts in a single request.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AccounttaxGetCall.html'
+                               title='google_content2::AccounttaxGetCall'>AccounttaxGetCall</a></td>
+                        <td class='docblock short'><p>Retrieves the tax settings of the account.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AccounttaxListCall.html'
+                               title='google_content2::AccounttaxListCall'>AccounttaxListCall</a></td>
+                        <td class='docblock short'><p>Lists the tax settings of the sub-accounts in your Merchant Center account.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AccounttaxListResponse.html'
+                               title='google_content2::AccounttaxListResponse'>AccounttaxListResponse</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AccounttaxMethods.html'
+                               title='google_content2::AccounttaxMethods'>AccounttaxMethods</a></td>
+                        <td class='docblock short'><p>A builder providing access to all methods supported on <em>accounttax</em> resources.
+It is not used directly, but through the <code>ShoppingContent</code> hub.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AccounttaxPatchCall.html'
+                               title='google_content2::AccounttaxPatchCall'>AccounttaxPatchCall</a></td>
+                        <td class='docblock short'><p>Updates the tax settings of the account. This method supports patch semantics.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AccounttaxUpdateCall.html'
+                               title='google_content2::AccounttaxUpdateCall'>AccounttaxUpdateCall</a></td>
+                        <td class='docblock short'><p>Updates the tax settings of the account.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Datafeed.html'
+                               title='google_content2::Datafeed'>Datafeed</a></td>
+                        <td class='docblock short'><p>Datafeed data.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.DatafeedCustombatchCall.html'
+                               title='google_content2::DatafeedCustombatchCall'>DatafeedCustombatchCall</a></td>
+                        <td class='docblock short'><p>A builder for the <em>custombatch</em> method supported by a <em>datafeed</em> resource.
+It is not used directly, but through a <code>DatafeedMethods</code> instance.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.DatafeedDeleteCall.html'
+                               title='google_content2::DatafeedDeleteCall'>DatafeedDeleteCall</a></td>
+                        <td class='docblock short'><p>Deletes a datafeed from your Merchant Center account.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.DatafeedFetchSchedule.html'
+                               title='google_content2::DatafeedFetchSchedule'>DatafeedFetchSchedule</a></td>
+                        <td class='docblock short'><p>The required fields vary based on the frequency of fetching. For a monthly fetch schedule, day_of_month and hour are required. For a weekly fetch schedule, weekday and hour are required. For a daily fetch schedule, only hour is required.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.DatafeedFormat.html'
+                               title='google_content2::DatafeedFormat'>DatafeedFormat</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.DatafeedGetCall.html'
+                               title='google_content2::DatafeedGetCall'>DatafeedGetCall</a></td>
+                        <td class='docblock short'><p>Retrieves a datafeed from your Merchant Center account.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.DatafeedInsertCall.html'
+                               title='google_content2::DatafeedInsertCall'>DatafeedInsertCall</a></td>
+                        <td class='docblock short'><p>Registers a datafeed with your Merchant Center account.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.DatafeedListCall.html'
+                               title='google_content2::DatafeedListCall'>DatafeedListCall</a></td>
+                        <td class='docblock short'><p>Lists the datafeeds in your Merchant Center account.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.DatafeedMethods.html'
+                               title='google_content2::DatafeedMethods'>DatafeedMethods</a></td>
+                        <td class='docblock short'><p>A builder providing access to all methods supported on <em>datafeed</em> resources.
+It is not used directly, but through the <code>ShoppingContent</code> hub.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.DatafeedPatchCall.html'
+                               title='google_content2::DatafeedPatchCall'>DatafeedPatchCall</a></td>
+                        <td class='docblock short'><p>Updates a datafeed of your Merchant Center account. This method supports patch semantics.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.DatafeedStatus.html'
+                               title='google_content2::DatafeedStatus'>DatafeedStatus</a></td>
+                        <td class='docblock short'><p>The status of a datafeed, i.e., the result of the last retrieval of the datafeed computed asynchronously when the feed processing is finished.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.DatafeedStatusError.html'
+                               title='google_content2::DatafeedStatusError'>DatafeedStatusError</a></td>
+                        <td class='docblock short'><p>An error occurring in the feed, like &quot;invalid price&quot;.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.DatafeedStatusExample.html'
+                               title='google_content2::DatafeedStatusExample'>DatafeedStatusExample</a></td>
+                        <td class='docblock short'><p>An example occurrence for a particular error.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.DatafeedUpdateCall.html'
+                               title='google_content2::DatafeedUpdateCall'>DatafeedUpdateCall</a></td>
+                        <td class='docblock short'><p>Updates a datafeed of your Merchant Center account.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.DatafeedsCustomBatchRequest.html'
+                               title='google_content2::DatafeedsCustomBatchRequest'>DatafeedsCustomBatchRequest</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.DatafeedsCustomBatchRequestEntry.html'
+                               title='google_content2::DatafeedsCustomBatchRequestEntry'>DatafeedsCustomBatchRequestEntry</a></td>
+                        <td class='docblock short'><p>A batch entry encoding a single non-batch datafeeds request.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.DatafeedsCustomBatchResponse.html'
+                               title='google_content2::DatafeedsCustomBatchResponse'>DatafeedsCustomBatchResponse</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.DatafeedsCustomBatchResponseEntry.html'
+                               title='google_content2::DatafeedsCustomBatchResponseEntry'>DatafeedsCustomBatchResponseEntry</a></td>
+                        <td class='docblock short'><p>A batch entry encoding a single non-batch datafeeds response.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.DatafeedsListResponse.html'
+                               title='google_content2::DatafeedsListResponse'>DatafeedsListResponse</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.DatafeedstatuseCustombatchCall.html'
+                               title='google_content2::DatafeedstatuseCustombatchCall'>DatafeedstatuseCustombatchCall</a></td>
+                        <td class='docblock short'><p>A builder for the <em>custombatch</em> method supported by a <em>datafeedstatuse</em> resource.
+It is not used directly, but through a <code>DatafeedstatuseMethods</code> instance.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.DatafeedstatuseGetCall.html'
+                               title='google_content2::DatafeedstatuseGetCall'>DatafeedstatuseGetCall</a></td>
+                        <td class='docblock short'><p>Retrieves the status of a datafeed from your Merchant Center account.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.DatafeedstatuseListCall.html'
+                               title='google_content2::DatafeedstatuseListCall'>DatafeedstatuseListCall</a></td>
+                        <td class='docblock short'><p>Lists the statuses of the datafeeds in your Merchant Center account.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.DatafeedstatuseMethods.html'
+                               title='google_content2::DatafeedstatuseMethods'>DatafeedstatuseMethods</a></td>
+                        <td class='docblock short'><p>A builder providing access to all methods supported on <em>datafeedstatuse</em> resources.
+It is not used directly, but through the <code>ShoppingContent</code> hub.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.DatafeedstatusesCustomBatchRequest.html'
+                               title='google_content2::DatafeedstatusesCustomBatchRequest'>DatafeedstatusesCustomBatchRequest</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.DatafeedstatusesCustomBatchRequestEntry.html'
+                               title='google_content2::DatafeedstatusesCustomBatchRequestEntry'>DatafeedstatusesCustomBatchRequestEntry</a></td>
+                        <td class='docblock short'><p>A batch entry encoding a single non-batch datafeedstatuses request.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.DatafeedstatusesCustomBatchResponse.html'
+                               title='google_content2::DatafeedstatusesCustomBatchResponse'>DatafeedstatusesCustomBatchResponse</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.DatafeedstatusesCustomBatchResponseEntry.html'
+                               title='google_content2::DatafeedstatusesCustomBatchResponseEntry'>DatafeedstatusesCustomBatchResponseEntry</a></td>
+                        <td class='docblock short'><p>A batch entry encoding a single non-batch datafeedstatuses response.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.DatafeedstatusesListResponse.html'
+                               title='google_content2::DatafeedstatusesListResponse'>DatafeedstatusesListResponse</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.DefaultDelegate.html'
+                               title='google_content2::DefaultDelegate'>DefaultDelegate</a></td>
+                        <td class='docblock short'><p>A delegate with a conservative default implementation, which is used if no other delegate is
+set.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ErrorResponse.html'
+                               title='google_content2::ErrorResponse'>ErrorResponse</a></td>
+                        <td class='docblock short'><p>A utility to represent detailed errors we might see in case there are BadRequests.
+The latter happen if the sent parameters or request structures are unsound</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ErrorType.html'
+                               title='google_content2::ErrorType'>ErrorType</a></td>
+                        <td class='docblock short'><p>An error returned by the API.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Errors.html'
+                               title='google_content2::Errors'>Errors</a></td>
+                        <td class='docblock short'><p>A list of errors returned by a failed batch entry.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Inventory.html'
+                               title='google_content2::Inventory'>Inventory</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.InventoryCustomBatchRequest.html'
+                               title='google_content2::InventoryCustomBatchRequest'>InventoryCustomBatchRequest</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.InventoryCustomBatchRequestEntry.html'
+                               title='google_content2::InventoryCustomBatchRequestEntry'>InventoryCustomBatchRequestEntry</a></td>
+                        <td class='docblock short'><p>A batch entry encoding a single non-batch inventory request.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.InventoryCustomBatchResponse.html'
+                               title='google_content2::InventoryCustomBatchResponse'>InventoryCustomBatchResponse</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.InventoryCustomBatchResponseEntry.html'
+                               title='google_content2::InventoryCustomBatchResponseEntry'>InventoryCustomBatchResponseEntry</a></td>
+                        <td class='docblock short'><p>A batch entry encoding a single non-batch inventory response.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.InventoryCustombatchCall.html'
+                               title='google_content2::InventoryCustombatchCall'>InventoryCustombatchCall</a></td>
+                        <td class='docblock short'><p>Updates price and availability for multiple products or stores in a single request.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.InventoryMethods.html'
+                               title='google_content2::InventoryMethods'>InventoryMethods</a></td>
+                        <td class='docblock short'><p>A builder providing access to all methods supported on <em>inventory</em> resources.
+It is not used directly, but through the <code>ShoppingContent</code> hub.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.InventorySetCall.html'
+                               title='google_content2::InventorySetCall'>InventorySetCall</a></td>
+                        <td class='docblock short'><p>Updates price and availability of a product in your Merchant Center account.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.InventorySetRequest.html'
+                               title='google_content2::InventorySetRequest'>InventorySetRequest</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.InventorySetResponse.html'
+                               title='google_content2::InventorySetResponse'>InventorySetResponse</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.LoyaltyPoints.html'
+                               title='google_content2::LoyaltyPoints'>LoyaltyPoints</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.MethodInfo.html'
+                               title='google_content2::MethodInfo'>MethodInfo</a></td>
+                        <td class='docblock short'><p>Contains information about an API request.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.MultiPartReader.html'
+                               title='google_content2::MultiPartReader'>MultiPartReader</a></td>
+                        <td class='docblock short'><p>Provides a <code>Read</code> interface that converts multiple parts into the protocol
+identified by <a href="https://tools.ietf.org/html/rfc2387">RFC2387</a>.
+<strong>Note</strong>: This implementation is just as rich as it needs to be to perform uploads
+to google APIs, and might not be a fully-featured implementation.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Price.html'
+                               title='google_content2::Price'>Price</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Product.html'
+                               title='google_content2::Product'>Product</a></td>
+                        <td class='docblock short'><p>Product data.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ProductAspect.html'
+                               title='google_content2::ProductAspect'>ProductAspect</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ProductCustomAttribute.html'
+                               title='google_content2::ProductCustomAttribute'>ProductCustomAttribute</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ProductCustomGroup.html'
+                               title='google_content2::ProductCustomGroup'>ProductCustomGroup</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ProductCustombatchCall.html'
+                               title='google_content2::ProductCustombatchCall'>ProductCustombatchCall</a></td>
+                        <td class='docblock short'><p>Retrieves, inserts, and deletes multiple products in a single request.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ProductDeleteCall.html'
+                               title='google_content2::ProductDeleteCall'>ProductDeleteCall</a></td>
+                        <td class='docblock short'><p>Deletes a product from your Merchant Center account.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ProductDestination.html'
+                               title='google_content2::ProductDestination'>ProductDestination</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ProductGetCall.html'
+                               title='google_content2::ProductGetCall'>ProductGetCall</a></td>
+                        <td class='docblock short'><p>Retrieves a product from your Merchant Center account.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ProductInsertCall.html'
+                               title='google_content2::ProductInsertCall'>ProductInsertCall</a></td>
+                        <td class='docblock short'><p>Uploads a product to your Merchant Center account.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ProductInstallment.html'
+                               title='google_content2::ProductInstallment'>ProductInstallment</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ProductListCall.html'
+                               title='google_content2::ProductListCall'>ProductListCall</a></td>
+                        <td class='docblock short'><p>Lists the products in your Merchant Center account.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ProductMethods.html'
+                               title='google_content2::ProductMethods'>ProductMethods</a></td>
+                        <td class='docblock short'><p>A builder providing access to all methods supported on <em>product</em> resources.
+It is not used directly, but through the <code>ShoppingContent</code> hub.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ProductShipping.html'
+                               title='google_content2::ProductShipping'>ProductShipping</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ProductShippingDimension.html'
+                               title='google_content2::ProductShippingDimension'>ProductShippingDimension</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ProductShippingWeight.html'
+                               title='google_content2::ProductShippingWeight'>ProductShippingWeight</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ProductStatus.html'
+                               title='google_content2::ProductStatus'>ProductStatus</a></td>
+                        <td class='docblock short'><p>The status of a product, i.e., information about a product computed asynchronously by the data quality analysis.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ProductStatusDataQualityIssue.html'
+                               title='google_content2::ProductStatusDataQualityIssue'>ProductStatusDataQualityIssue</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ProductStatusDestinationStatus.html'
+                               title='google_content2::ProductStatusDestinationStatus'>ProductStatusDestinationStatus</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ProductTax.html'
+                               title='google_content2::ProductTax'>ProductTax</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ProductUnitPricingBaseMeasure.html'
+                               title='google_content2::ProductUnitPricingBaseMeasure'>ProductUnitPricingBaseMeasure</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ProductUnitPricingMeasure.html'
+                               title='google_content2::ProductUnitPricingMeasure'>ProductUnitPricingMeasure</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ProductsCustomBatchRequest.html'
+                               title='google_content2::ProductsCustomBatchRequest'>ProductsCustomBatchRequest</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ProductsCustomBatchRequestEntry.html'
+                               title='google_content2::ProductsCustomBatchRequestEntry'>ProductsCustomBatchRequestEntry</a></td>
+                        <td class='docblock short'><p>A batch entry encoding a single non-batch products request.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ProductsCustomBatchResponse.html'
+                               title='google_content2::ProductsCustomBatchResponse'>ProductsCustomBatchResponse</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ProductsCustomBatchResponseEntry.html'
+                               title='google_content2::ProductsCustomBatchResponseEntry'>ProductsCustomBatchResponseEntry</a></td>
+                        <td class='docblock short'><p>A batch entry encoding a single non-batch products response.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ProductsListResponse.html'
+                               title='google_content2::ProductsListResponse'>ProductsListResponse</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ProductstatuseCustombatchCall.html'
+                               title='google_content2::ProductstatuseCustombatchCall'>ProductstatuseCustombatchCall</a></td>
+                        <td class='docblock short'><p>Gets the statuses of multiple products in a single request.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ProductstatuseGetCall.html'
+                               title='google_content2::ProductstatuseGetCall'>ProductstatuseGetCall</a></td>
+                        <td class='docblock short'><p>Gets the status of a product from your Merchant Center account.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ProductstatuseListCall.html'
+                               title='google_content2::ProductstatuseListCall'>ProductstatuseListCall</a></td>
+                        <td class='docblock short'><p>Lists the statuses of the products in your Merchant Center account.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ProductstatuseMethods.html'
+                               title='google_content2::ProductstatuseMethods'>ProductstatuseMethods</a></td>
+                        <td class='docblock short'><p>A builder providing access to all methods supported on <em>productstatuse</em> resources.
+It is not used directly, but through the <code>ShoppingContent</code> hub.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ProductstatusesCustomBatchRequest.html'
+                               title='google_content2::ProductstatusesCustomBatchRequest'>ProductstatusesCustomBatchRequest</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ProductstatusesCustomBatchRequestEntry.html'
+                               title='google_content2::ProductstatusesCustomBatchRequestEntry'>ProductstatusesCustomBatchRequestEntry</a></td>
+                        <td class='docblock short'><p>A batch entry encoding a single non-batch productstatuses request.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ProductstatusesCustomBatchResponse.html'
+                               title='google_content2::ProductstatusesCustomBatchResponse'>ProductstatusesCustomBatchResponse</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ProductstatusesCustomBatchResponseEntry.html'
+                               title='google_content2::ProductstatusesCustomBatchResponseEntry'>ProductstatusesCustomBatchResponseEntry</a></td>
+                        <td class='docblock short'><p>A batch entry encoding a single non-batch productstatuses response.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ProductstatusesListResponse.html'
+                               title='google_content2::ProductstatusesListResponse'>ProductstatusesListResponse</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ShoppingContent.html'
+                               title='google_content2::ShoppingContent'>ShoppingContent</a></td>
+                        <td class='docblock short'><p>Central instance to access all ShoppingContent related resource activities</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Weight.html'
+                               title='google_content2::Weight'>Weight</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                </table><h2 id='enums' class='section-header'><a href="#enums">Enums</a></h2>
+<table>
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='enum' href='enum.Error.html'
+                               title='google_content2::Error'>Error</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='enum' href='enum.Scope.html'
+                               title='google_content2::Scope'>Scope</a></td>
+                        <td class='docblock short'><p>Identifies the an OAuth2 authorization scope.
+A scope is needed when requesting an
+<a href="https://developers.google.com/youtube/v3/guides/authentication">authorization token</a>.</p>
+</td>
+                    </tr>
+                </table><h2 id='traits' class='section-header'><a href="#traits">Traits</a></h2>
+<table>
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.CallBuilder.html'
+                               title='google_content2::CallBuilder'>CallBuilder</a></td>
+                        <td class='docblock short'><p>Identifies types which represent builders for a particular resource method</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.Delegate.html'
+                               title='google_content2::Delegate'>Delegate</a></td>
+                        <td class='docblock short'><p>A trait specifying functionality to help controlling any request performed by the API.
+The trait has a conservative default implementation.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.Hub.html'
+                               title='google_content2::Hub'>Hub</a></td>
+                        <td class='docblock short'><p>Identifies the Hub. There is only one per library, this trait is supposed
+to make intended use more explicit.
+The hub allows to access all resource methods more easily.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.MethodsBuilder.html'
+                               title='google_content2::MethodsBuilder'>MethodsBuilder</a></td>
+                        <td class='docblock short'><p>Identifies types for building methods of a particular resource type</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.NestedType.html'
+                               title='google_content2::NestedType'>NestedType</a></td>
+                        <td class='docblock short'><p>Identifies types which are only used by other types internally.
+They have no special meaning, this trait just marks them for completeness.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.Part.html'
+                               title='google_content2::Part'>Part</a></td>
+                        <td class='docblock short'><p>Identifies types which are only used as part of other types, which
+usually are carrying the <code>Resource</code> trait.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.ReadSeek.html'
+                               title='google_content2::ReadSeek'>ReadSeek</a></td>
+                        <td class='docblock short'><p>A utility to specify reader types which provide seeking capabilities too</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.RequestValue.html'
+                               title='google_content2::RequestValue'>RequestValue</a></td>
+                        <td class='docblock short'><p>Identifies types which are used in API requests.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.Resource.html'
+                               title='google_content2::Resource'>Resource</a></td>
+                        <td class='docblock short'><p>Identifies types which can be inserted and deleted.
+Types with this trait are most commonly used by clients of this API.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.ResponseResult.html'
+                               title='google_content2::ResponseResult'>ResponseResult</a></td>
+                        <td class='docblock short'><p>Identifies types which are used in API responses.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.ToParts.html'
+                               title='google_content2::ToParts'>ToParts</a></td>
+                        <td class='docblock short'><p>A trait for all types that can convert themselves into a <em>parts</em> string</p>
+</td>
+                    </tr>
+                </table><h2 id='functions' class='section-header'><a href="#functions">Functions</a></h2>
+<table>
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.remove_json_null_values.html'
+                               title='google_content2::remove_json_null_values'>remove_json_null_values</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                </table><h2 id='types' class='section-header'><a href="#types">Type Definitions</a></h2>
+<table>
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='type' href='type.Result.html'
+                               title='google_content2::Result'>Result</a></td>
+                        <td class='docblock short'><p>A universal result type used as return for all calls.</p>
+</td>
+                    </tr>
+                </table></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <div id="help" class="hidden">
+        <div class="shortcuts">
+            <h1>Keyboard shortcuts</h1>
+            <dl>
+                <dt>?</dt>
+                <dd>Show this help dialog</dd>
+                <dt>S</dt>
+                <dd>Focus the search field</dd>
+                <dt>&larrb;</dt>
+                <dd>Move up in search results</dd>
+                <dt>&rarrb;</dt>
+                <dd>Move down in search results</dd>
+                <dt>&#9166;</dt>
+                <dd>Go to active search result</dd>
+            </dl>
+        </div>
+        <div class="infos">
+            <h1>Search tricks</h1>
+            <p>
+                Prefix searches with a type followed by a colon (e.g.
+                <code>fn:</code>) to restrict the search to a given type.
+            </p>
+            <p>
+                Accepted types are: <code>fn</code>, <code>mod</code>,
+                <code>struct</code>, <code>enum</code>,
+                <code>trait</code>, <code>typedef</code> (or
+                <code>tdef</code>).
+            </p>
+        </div>
+    </div>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "google_content2";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../jquery.js"></script>
+    <script src="../main.js"></script>
+    
+    <script async src="../search-index.js"></script>
+</body>
+</html>

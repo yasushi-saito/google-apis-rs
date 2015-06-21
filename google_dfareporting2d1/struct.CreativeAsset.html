@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `CreativeAsset` struct in crate `google_dfareporting2d1`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, CreativeAsset">
+
+    <title>google_dfareporting2d1::CreativeAsset - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../main.css">
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <section class="sidebar">
+        
+        <p class='location'><a href='index.html'>google_dfareporting2d1</a></p><script>window.sidebarCurrent = {name: 'CreativeAsset', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </section>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press 'S' to search, '?' for more options..."
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content struct">
+<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_dfareporting2d1</a>::<wbr><a class='struct' href=''>CreativeAsset</a><wbr></span><span class='out-of-band'><span id='render-detail'>
+            <a id="collapse-all" href="#">[-]</a>&nbsp;<a id="expand-all" href="#">[+]</a>
+        </span><a id='src-78315' href='../src/google_dfareporting2d1///home/byron/dev/rust/google-apis-rs/target/debug/build/google-dfareporting2d1-085be61ce312d762/out/lib.rs.html#19649-19742'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct CreativeAsset {
+    pub mime_type: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub artwork_type: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub position_left_unit: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub collapsed_size: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_dfareporting2d1/struct.Size.html' title='google_dfareporting2d1::Size'>Size</a>&gt;,
+    pub flash_version: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>&gt;,
+    pub pushdown: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt;,
+    pub hide_flash_objects: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt;,
+    pub detected_features: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;&gt;,
+    pub duration: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>&gt;,
+    pub position_top_unit: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub id: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub alignment: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub size: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_dfareporting2d1/struct.Size.html' title='google_dfareporting2d1::Size'>Size</a>&gt;,
+    pub horizontally_locked: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt;,
+    pub start_time_type: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub display_type: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub expanded_dimension: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_dfareporting2d1/struct.Size.html' title='google_dfareporting2d1::Size'>Size</a>&gt;,
+    pub vertically_locked: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt;,
+    pub role: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub zip_filesize: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub bit_rate: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>&gt;,
+    pub window_mode: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub progressive_serving_url: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub duration_type: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub video_duration: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.f32.html'>f32</a>&gt;,
+    pub file_size: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub offset: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_dfareporting2d1/struct.OffsetPosition.html' title='google_dfareporting2d1::OffsetPosition'>OffsetPosition</a>&gt;,
+    pub active: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt;,
+    pub original_backup: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt;,
+    pub hide_selection_boxes: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt;,
+    pub streaming_serving_url: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub z_index: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>&gt;,
+    pub child_asset_type: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub backup_image_exit: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_dfareporting2d1/struct.CreativeCustomEvent.html' title='google_dfareporting2d1::CreativeCustomEvent'>CreativeCustomEvent</a>&gt;,
+    pub action_script3: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt;,
+    pub pushdown_duration: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.f32.html'>f32</a>&gt;,
+    pub asset_identifier: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_dfareporting2d1/struct.CreativeAssetId.html' title='google_dfareporting2d1::CreativeAssetId'>CreativeAssetId</a>&gt;,
+    pub transparency: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt;,
+    pub ssl_compliant: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt;,
+    pub position: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_dfareporting2d1/struct.OffsetPosition.html' title='google_dfareporting2d1::OffsetPosition'>OffsetPosition</a>&gt;,
+    pub custom_start_time_value: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>&gt;,
+    pub zip_filename: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+}</pre><div class='docblock'><p>Creative Asset.</p>
+
+<h1 id="activities" class='section-header'><a
+                           href="#activities">Activities</a></h1>
+<p>This type is used in activities, which are methods you may call on this type or where this type is involved in. 
+The list links the activity name, along with information about where it is used (one of <em>request</em> and <em>response</em>).</p>
+
+<ul>
+<li><a href="struct.CreativeAssetInsertCall.html">insert creative assets</a> (none)</li>
+</ul>
+</div><h2 class='fields'>Fields</h2>
+<table><tr><td id='structfield.mime_type'><a class='stability Unmarked' title='No stability level'></a><code>mime_type</code></td><td><div class='docblock'><p>Detected MIME type for video asset. This is a read-only field. Applicable to the following creative types: INSTREAM_VIDEO and all VPAID.</p>
+</div></td></tr><tr><td id='structfield.artwork_type'><a class='stability Unmarked' title='No stability level'></a><code>artwork_type</code></td><td><div class='docblock'><p>Artwork type of rich media creative. This is a read-only field. Applicable to the following creative types: all RICH_MEDIA.</p>
+</div></td></tr><tr><td id='structfield.position_left_unit'><a class='stability Unmarked' title='No stability level'></a><code>position_left_unit</code></td><td><div class='docblock'><p>Offset left unit for an asset. This is a read-only field. Applicable to the following creative types: all RICH_MEDIA.</p>
+</div></td></tr><tr><td id='structfield.collapsed_size'><a class='stability Unmarked' title='No stability level'></a><code>collapsed_size</code></td><td><div class='docblock'><p>Size of an asset when collapsed. This is a read-only field. Applicable to the following creative types: all RICH_MEDIA and all VPAID. Additionally, applicable to assets whose displayType is ASSET_DISPLAY_TYPE_EXPANDING or ASSET_DISPLAY_TYPE_PEEL_DOWN.</p>
+</div></td></tr><tr><td id='structfield.flash_version'><a class='stability Unmarked' title='No stability level'></a><code>flash_version</code></td><td><div class='docblock'><p>Flash version of the asset. This is a read-only field. Applicable to the following creative types: FLASH_INPAGE, ENHANCED_BANNER, all RICH_MEDIA, and all VPAID.</p>
+</div></td></tr><tr><td id='structfield.pushdown'><a class='stability Unmarked' title='No stability level'></a><code>pushdown</code></td><td><div class='docblock'><p>Whether the asset pushes down other content. Applicable to the following creative types: all RICH_MEDIA. Additionally, only applicable when the asset offsets are 0, the collapsedSize.width matches size.width, and the collapsedSize.height is less than size.height.</p>
+</div></td></tr><tr><td id='structfield.hide_flash_objects'><a class='stability Unmarked' title='No stability level'></a><code>hide_flash_objects</code></td><td><div class='docblock'><p>Whether to hide Flash objects flag for an asset. Applicable to the following creative types: all RICH_MEDIA.</p>
+</div></td></tr><tr><td id='structfield.detected_features'><a class='stability Unmarked' title='No stability level'></a><code>detected_features</code></td><td><div class='docblock'><p>List of feature dependencies for the creative asset that are detected by DCM. Feature dependencies are features that a browser must be able to support in order to render your HTML5 creative correctly. This is a read-only, auto-generated field. Applicable to the following creative types: ENHANCED_BANNER and HTML5_BANNER.</p>
+</div></td></tr><tr><td id='structfield.duration'><a class='stability Unmarked' title='No stability level'></a><code>duration</code></td><td><div class='docblock'><p>Duration in seconds for which an asset will be displayed. Applicable to the following creative types: INSTREAM_VIDEO and VPAID_LINEAR.</p>
+</div></td></tr><tr><td id='structfield.position_top_unit'><a class='stability Unmarked' title='No stability level'></a><code>position_top_unit</code></td><td><div class='docblock'><p>Offset top unit for an asset. This is a read-only field if the asset displayType is ASSET_DISPLAY_TYPE_OVERLAY. Applicable to the following creative types: all RICH_MEDIA.</p>
+</div></td></tr><tr><td id='structfield.id'><a class='stability Unmarked' title='No stability level'></a><code>id</code></td><td><div class='docblock'><p>Numeric ID of this creative asset. This is a required field and should not be modified. Applicable to all but the following creative types: all REDIRECT and TRACKING_TEXT.</p>
+</div></td></tr><tr><td id='structfield.alignment'><a class='stability Unmarked' title='No stability level'></a><code>alignment</code></td><td><div class='docblock'><p>Possible alignments for an asset. This is a read-only field. Applicable to the following creative types: RICH_MEDIA_MULTI_FLOATING.</p>
+</div></td></tr><tr><td id='structfield.size'><a class='stability Unmarked' title='No stability level'></a><code>size</code></td><td><div class='docblock'><p>Size associated with this creative asset. This is a required field when applicable; however for IMAGE and FLASH_INPAGE creatives, if left blank, this field will be automatically set using the actual size of the associated image asset. Applicable to the following creative types: ENHANCED_BANNER, ENHANCED_IMAGE, FLASH_INPAGE, HTML5_BANNER, IMAGE, and all RICH_MEDIA.</p>
+</div></td></tr><tr><td id='structfield.horizontally_locked'><a class='stability Unmarked' title='No stability level'></a><code>horizontally_locked</code></td><td><div class='docblock'><p>Whether the asset is horizontally locked. This is a read-only field. Applicable to the following creative types: all RICH_MEDIA.</p>
+</div></td></tr><tr><td id='structfield.start_time_type'><a class='stability Unmarked' title='No stability level'></a><code>start_time_type</code></td><td><div class='docblock'><p>Initial wait time type before making the asset visible. Applicable to the following creative types: all RICH_MEDIA.</p>
+</div></td></tr><tr><td id='structfield.display_type'><a class='stability Unmarked' title='No stability level'></a><code>display_type</code></td><td><div class='docblock'><p>Type of rich media asset. This is a read-only field. Applicable to the following creative types: all RICH_MEDIA.</p>
+</div></td></tr><tr><td id='structfield.expanded_dimension'><a class='stability Unmarked' title='No stability level'></a><code>expanded_dimension</code></td><td><div class='docblock'><p>Detected expanded dimension for video asset. This is a read-only field. Applicable to the following creative types: INSTREAM_VIDEO and all VPAID.</p>
+</div></td></tr><tr><td id='structfield.vertically_locked'><a class='stability Unmarked' title='No stability level'></a><code>vertically_locked</code></td><td><div class='docblock'><p>Whether the asset is vertically locked. This is a read-only field. Applicable to the following creative types: all RICH_MEDIA.</p>
+</div></td></tr><tr><td id='structfield.role'><a class='stability Unmarked' title='No stability level'></a><code>role</code></td><td><div class='docblock'><p>Role of the asset in relation to creative. Applicable to all but the following creative types: all REDIRECT and TRACKING_TEXT. This is a required field.
+PRIMARY applies to ENHANCED_BANNER, FLASH_INPAGE, HTML5_BANNER, IMAGE, IMAGE_GALLERY, all RICH_MEDIA (which may contain multiple primary assets), and all VPAID creatives.
+BACKUP_IMAGE applies to ENHANCED_BANNER, FLASH_INPAGE, HTML5_BANNER, all RICH_MEDIA, and all VPAID creatives.
+ADDITIONAL_IMAGE and ADDITIONAL_FLASH apply to FLASH_INPAGE creatives.
+OTHER refers to assets from sources other than DCM, such as Studio uploaded assets, applicable to all RICH_MEDIA and all VPAID creatives.
+PARENT_VIDEO refers to videos uploaded by the user in DCM and is applicable to INSTREAM_VIDEO and VPAID_LINEAR creatives.
+TRANSCODED_VIDEO refers to videos transcoded by DCM from PARENT_VIDEO assets and is applicable to INSTREAM_VIDEO and VPAID_LINEAR creatives.
+ALTERNATE_VIDEO refers to the DCM representation of child asset videos from Studio, and is applicable to VPAID_LINEAR creatives. These cannot be added or removed within DCM.
+For VPAID_LINEAR creatives, PARENT_VIDEO, TRANSCODED_VIDEO and ALTERNATE_VIDEO assets that are marked active serve as backup in case the VPAID creative cannot be served. Only PARENT_VIDEO assets can be added or removed for an INSTREAM_VIDEO or VPAID_LINEAR creative.</p>
+</div></td></tr><tr><td id='structfield.zip_filesize'><a class='stability Unmarked' title='No stability level'></a><code>zip_filesize</code></td><td><div class='docblock'><p>Size of zip file. This is a read-only field. Applicable to the following creative types: HTML5_BANNER.</p>
+</div></td></tr><tr><td id='structfield.bit_rate'><a class='stability Unmarked' title='No stability level'></a><code>bit_rate</code></td><td><div class='docblock'><p>Detected bit-rate for video asset. This is a read-only field. Applicable to the following creative types: INSTREAM_VIDEO and all VPAID.</p>
+</div></td></tr><tr><td id='structfield.window_mode'><a class='stability Unmarked' title='No stability level'></a><code>window_mode</code></td><td><div class='docblock'><p>Window mode options for flash assets. Applicable to the following creative types: FLASH_INPAGE, RICH_MEDIA_EXPANDING, RICH_MEDIA_IM_EXPAND, RICH_MEDIA_INPAGE, and RICH_MEDIA_INPAGE_FLOATING.</p>
+</div></td></tr><tr><td id='structfield.progressive_serving_url'><a class='stability Unmarked' title='No stability level'></a><code>progressive_serving_url</code></td><td><div class='docblock'><p>Progressive URL for video asset. This is a read-only field. Applicable to the following creative types: INSTREAM_VIDEO and all VPAID.</p>
+</div></td></tr><tr><td id='structfield.duration_type'><a class='stability Unmarked' title='No stability level'></a><code>duration_type</code></td><td><div class='docblock'><p>Duration type for which an asset will be displayed. Applicable to the following creative types: all RICH_MEDIA.</p>
+</div></td></tr><tr><td id='structfield.video_duration'><a class='stability Unmarked' title='No stability level'></a><code>video_duration</code></td><td><div class='docblock'><p>Detected video duration for video asset. This is a read-only field. Applicable to the following creative types: INSTREAM_VIDEO and all VPAID.</p>
+</div></td></tr><tr><td id='structfield.file_size'><a class='stability Unmarked' title='No stability level'></a><code>file_size</code></td><td><div class='docblock'><p>File size associated with this creative asset. This is a read-only field. Applicable to all but the following creative types: all REDIRECT and TRACKING_TEXT.</p>
+</div></td></tr><tr><td id='structfield.offset'><a class='stability Unmarked' title='No stability level'></a><code>offset</code></td><td><div class='docblock'><p>Offset position for an asset in collapsed mode. This is a read-only field. Applicable to the following creative types: all RICH_MEDIA and all VPAID. Additionally, only applicable to assets whose displayType is ASSET_DISPLAY_TYPE_EXPANDING or ASSET_DISPLAY_TYPE_PEEL_DOWN.</p>
+</div></td></tr><tr><td id='structfield.active'><a class='stability Unmarked' title='No stability level'></a><code>active</code></td><td><div class='docblock'><p>Whether the video asset is active. This is a read-only field for VPAID_NON_LINEAR assets. Applicable to the following creative types: INSTREAM_VIDEO and all VPAID.</p>
+</div></td></tr><tr><td id='structfield.original_backup'><a class='stability Unmarked' title='No stability level'></a><code>original_backup</code></td><td><div class='docblock'><p>Whether the backup asset is original or changed by the user in DCM. Applicable to the following creative types: all RICH_MEDIA.</p>
+</div></td></tr><tr><td id='structfield.hide_selection_boxes'><a class='stability Unmarked' title='No stability level'></a><code>hide_selection_boxes</code></td><td><div class='docblock'><p>Whether to hide selection boxes flag for an asset. Applicable to the following creative types: all RICH_MEDIA.</p>
+</div></td></tr><tr><td id='structfield.streaming_serving_url'><a class='stability Unmarked' title='No stability level'></a><code>streaming_serving_url</code></td><td><div class='docblock'><p>Streaming URL for video asset. This is a read-only field. Applicable to the following creative types: INSTREAM_VIDEO and all VPAID.</p>
+</div></td></tr><tr><td id='structfield.z_index'><a class='stability Unmarked' title='No stability level'></a><code>z_index</code></td><td><div class='docblock'><p>zIndex value of an asset. This is a read-only field. Applicable to the following creative types: all RICH_MEDIA.Additionally, only applicable to assets whose displayType is NOT one of the following types: ASSET_DISPLAY_TYPE_INPAGE or ASSET_DISPLAY_TYPE_OVERLAY.</p>
+</div></td></tr><tr><td id='structfield.child_asset_type'><a class='stability Unmarked' title='No stability level'></a><code>child_asset_type</code></td><td><div class='docblock'><p>Rich media child asset type. This is a read-only field. Applicable to the following creative types: all VPAID.</p>
+</div></td></tr><tr><td id='structfield.backup_image_exit'><a class='stability Unmarked' title='No stability level'></a><code>backup_image_exit</code></td><td><div class='docblock'><p>Exit event configured for the backup image. Applicable to the following creative types: all RICH_MEDIA.</p>
+</div></td></tr><tr><td id='structfield.action_script3'><a class='stability Unmarked' title='No stability level'></a><code>action_script3</code></td><td><div class='docblock'><p>Whether ActionScript3 is enabled for the flash asset. This is a read-only field. Applicable to the following creative types: FLASH_INPAGE and ENHANCED_BANNER.</p>
+</div></td></tr><tr><td id='structfield.pushdown_duration'><a class='stability Unmarked' title='No stability level'></a><code>pushdown_duration</code></td><td><div class='docblock'><p>Pushdown duration in seconds for an asset. Must be between 0 and 9.99. Applicable to the following creative types: all RICH_MEDIA.Additionally, only applicable when the asset pushdown field is true, the offsets are 0, the collapsedSize.width matches size.width, and the collapsedSize.height is less than size.height.</p>
+</div></td></tr><tr><td id='structfield.asset_identifier'><a class='stability Unmarked' title='No stability level'></a><code>asset_identifier</code></td><td><div class='docblock'><p>Identifier of this asset. This is the same identifier returned during creative asset insert operation. This is a required field. Applicable to all but the following creative types: all REDIRECT and TRACKING_TEXT.</p>
+</div></td></tr><tr><td id='structfield.transparency'><a class='stability Unmarked' title='No stability level'></a><code>transparency</code></td><td><div class='docblock'><p>Whether the asset is transparent. Applicable to the following creative types: all RICH_MEDIA. Additionally, only applicable to HTML5 assets.</p>
+</div></td></tr><tr><td id='structfield.ssl_compliant'><a class='stability Unmarked' title='No stability level'></a><code>ssl_compliant</code></td><td><div class='docblock'><p>Whether the asset is SSL-compliant. This is a read-only field. Applicable to all but the following creative types: all REDIRECT and TRACKING_TEXT.</p>
+</div></td></tr><tr><td id='structfield.position'><a class='stability Unmarked' title='No stability level'></a><code>position</code></td><td><div class='docblock'><p>Offset position for an asset. Applicable to the following creative types: all RICH_MEDIA.</p>
+</div></td></tr><tr><td id='structfield.custom_start_time_value'><a class='stability Unmarked' title='No stability level'></a><code>custom_start_time_value</code></td><td><div class='docblock'><p>Custom start time in seconds for making the asset visible. Applicable to the following creative types: all RICH_MEDIA.</p>
+</div></td></tr><tr><td id='structfield.zip_filename'><a class='stability Unmarked' title='No stability level'></a><code>zip_filename</code></td><td><div class='docblock'><p>File name of zip file. This is a read-only field. Applicable to the following creative types: HTML5_BANNER.</p>
+</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='../google_dfareporting2d1/trait.Resource.html' title='google_dfareporting2d1::Resource'>Resource</a> for <a class='struct' href='../google_dfareporting2d1/struct.CreativeAsset.html' title='google_dfareporting2d1::CreativeAsset'>CreativeAsset</a></code></h3><div class='impl-items'></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_dfareporting2d1/struct.CreativeAsset.html' title='google_dfareporting2d1::CreativeAsset'>CreativeAsset</a></code></h3><div class='impl-items'><h4 id='method.fmt' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#method.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='http://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='http://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
+</div><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_dfareporting2d1/struct.CreativeAsset.html' title='google_dfareporting2d1::CreativeAsset'>CreativeAsset</a></code></h3><div class='impl-items'><h4 id='method.clone' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.CreativeAsset.html' title='google_dfareporting2d1::CreativeAsset'>CreativeAsset</a></code></h4>
+<h4 id='method.clone_from' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code></h4>
+</div><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_dfareporting2d1/struct.CreativeAsset.html' title='google_dfareporting2d1::CreativeAsset'>CreativeAsset</a></code></h3><div class='impl-items'><h4 id='method.default' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/default/trait.Default.html#method.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_dfareporting2d1/struct.CreativeAsset.html' title='google_dfareporting2d1::CreativeAsset'>CreativeAsset</a></code></h4>
+</div><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='../serde/de/trait.Deserialize.html' title='serde::de::Deserialize'>Deserialize</a> for <a class='struct' href='../google_dfareporting2d1/struct.CreativeAsset.html' title='google_dfareporting2d1::CreativeAsset'>CreativeAsset</a></code></h3><div class='impl-items'><h4 id='method.deserialize' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='../serde/de/trait.Deserialize.html#method.deserialize' class='fnname'>deserialize</a>&lt;__D&gt;(deserializer: &amp;mut __D) -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../google_dfareporting2d1/struct.CreativeAsset.html' title='google_dfareporting2d1::CreativeAsset'>CreativeAsset</a>, __D&gt; <span class='where'>where __D: <a class='trait' href='../serde/de/trait.Deserializer.html' title='serde::de::Deserializer'>Deserializer</a></span></code></h4>
+</div><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='../serde/ser/trait.Serialize.html' title='serde::ser::Serialize'>Serialize</a> for <a class='struct' href='../google_dfareporting2d1/struct.CreativeAsset.html' title='google_dfareporting2d1::CreativeAsset'>CreativeAsset</a></code></h3><div class='impl-items'><h4 id='method.serialize' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='../serde/ser/trait.Serialize.html#method.serialize' class='fnname'>serialize</a>&lt;__S&gt;(&amp;self, serializer: &amp;mut __S) -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, __S&gt; <span class='where'>where __S: <a class='trait' href='../serde/ser/trait.Serializer.html' title='serde::ser::Serializer'>Serializer</a></span></code></h4>
+</div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <div id="help" class="hidden">
+        <div class="shortcuts">
+            <h1>Keyboard shortcuts</h1>
+            <dl>
+                <dt>?</dt>
+                <dd>Show this help dialog</dd>
+                <dt>S</dt>
+                <dd>Focus the search field</dd>
+                <dt>&larrb;</dt>
+                <dd>Move up in search results</dd>
+                <dt>&rarrb;</dt>
+                <dd>Move down in search results</dd>
+                <dt>&#9166;</dt>
+                <dd>Go to active search result</dd>
+            </dl>
+        </div>
+        <div class="infos">
+            <h1>Search tricks</h1>
+            <p>
+                Prefix searches with a type followed by a colon (e.g.
+                <code>fn:</code>) to restrict the search to a given type.
+            </p>
+            <p>
+                Accepted types are: <code>fn</code>, <code>mod</code>,
+                <code>struct</code>, <code>enum</code>,
+                <code>trait</code>, <code>typedef</code> (or
+                <code>tdef</code>).
+            </p>
+        </div>
+    </div>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "google_dfareporting2d1";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../jquery.js"></script>
+    <script src="../main.js"></script>
+    
+    <script async src="../search-index.js"></script>
+</body>
+</html>

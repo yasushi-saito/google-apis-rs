@@ -1,0 +1,1663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `google_mapsengine1` crate.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, google_mapsengine1">
+
+    <title>google_mapsengine1 - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../main.css">
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <section class="sidebar">
+        
+        <p class='location'></p><script>window.sidebarCurrent = {name: 'google_mapsengine1', ty: 'mod', relpath: '../'};</script>
+    </section>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press 'S' to search, '?' for more options..."
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content mod">
+<h1 class='fqn'><span class='in-band'>Crate <a class='mod' href=''>google_mapsengine1</a><wbr></span><span class='out-of-band'><a href='stability.html'>[stability]</a> <span id='render-detail'>
+            <a id="collapse-all" href="#">[-]</a>&nbsp;<a id="expand-all" href="#">[+]</a>
+        </span><a id='src-0' href='../src/google_mapsengine1/lib.rs.html#5-228'>[src]</a></span></h1>
+<div class='docblock'><p>This documentation was generated from <em>Maps Engine</em> crate version <em>0.1.8+20150414</em>, where <em>20150414</em> is the exact revision of the <em>mapsengine:v1</em> schema built by the <a href="http://www.makotemplates.org/">mako</a> code generator <em>v0.1.8</em>.</p>
+
+<p>Everything else about the <em>Maps Engine</em> <em>v1</em> API can be found at the
+<a href="https://developers.google.com/maps-engine/">official documentation site</a>.
+The original source code is <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/mapsengine1">on github</a>.</p>
+
+<h1 id="features" class='section-header'><a
+                           href="#features">Features</a></h1>
+<p>Handle the following <em>Resources</em> with ease from the central <a href="struct.MapsEngine.html">hub</a> ... </p>
+
+<ul>
+<li><a href="struct.Asset.html">assets</a>
+
+<ul>
+<li><a href="struct.AssetGetCall.html"><em>get</em></a>, <a href="struct.AssetListCall.html"><em>list</em></a>, <a href="struct.AssetParentListCall.html"><em>parents list</em></a> and <a href="struct.AssetPermissionListCall.html"><em>permissions list</em></a></li>
+</ul></li>
+<li><a href="struct.Layer.html">layers</a>
+
+<ul>
+<li><a href="struct.LayerCancelProcessingCall.html"><em>cancel processing</em></a>, <a href="struct.LayerCreateCall.html"><em>create</em></a>, <a href="struct.LayerDeleteCall.html"><em>delete</em></a>, <a href="struct.LayerGetCall.html"><em>get</em></a>, <a href="struct.LayerGetPublishedCall.html"><em>get published</em></a>, <a href="struct.LayerListCall.html"><em>list</em></a>, <a href="struct.LayerListPublishedCall.html"><em>list published</em></a>, <a href="struct.LayerParentListCall.html"><em>parents list</em></a>, <a href="struct.LayerPatchCall.html"><em>patch</em></a>, <a href="struct.LayerPermissionBatchDeleteCall.html"><em>permissions batch delete</em></a>, <a href="struct.LayerPermissionBatchUpdateCall.html"><em>permissions batch update</em></a>, <a href="struct.LayerPermissionListCall.html"><em>permissions list</em></a>, <a href="struct.LayerProcesCall.html"><em>process</em></a>, <a href="struct.LayerPublishCall.html"><em>publish</em></a> and <a href="struct.LayerUnpublishCall.html"><em>unpublish</em></a></li>
+</ul></li>
+<li><a href="struct.Map.html">maps</a>
+
+<ul>
+<li><a href="struct.MapCreateCall.html"><em>create</em></a>, <a href="struct.MapDeleteCall.html"><em>delete</em></a>, <a href="struct.MapGetCall.html"><em>get</em></a>, <a href="struct.MapGetPublishedCall.html"><em>get published</em></a>, <a href="struct.MapListCall.html"><em>list</em></a>, <a href="struct.MapListPublishedCall.html"><em>list published</em></a>, <a href="struct.MapPatchCall.html"><em>patch</em></a>, <a href="struct.MapPermissionBatchDeleteCall.html"><em>permissions batch delete</em></a>, <a href="struct.MapPermissionBatchUpdateCall.html"><em>permissions batch update</em></a>, <a href="struct.MapPermissionListCall.html"><em>permissions list</em></a>, <a href="struct.MapPublishCall.html"><em>publish</em></a> and <a href="struct.MapUnpublishCall.html"><em>unpublish</em></a></li>
+</ul></li>
+<li><a href="struct.Project.html">projects</a>
+
+<ul>
+<li><a href="struct.ProjectIconCreateCall.html"><em>icons create</em></a>, <a href="struct.ProjectIconGetCall.html"><em>icons get</em></a>, <a href="struct.ProjectIconListCall.html"><em>icons list</em></a> and <a href="struct.ProjectListCall.html"><em>list</em></a></li>
+</ul></li>
+<li><a href="struct.RasterCollection.html">raster collections</a>
+
+<ul>
+<li><a href="struct.RasterCollectionCancelProcessingCall.html"><em>cancel processing</em></a>, <a href="struct.RasterCollectionCreateCall.html"><em>create</em></a>, <a href="struct.RasterCollectionDeleteCall.html"><em>delete</em></a>, <a href="struct.RasterCollectionGetCall.html"><em>get</em></a>, <a href="struct.RasterCollectionListCall.html"><em>list</em></a>, <a href="struct.RasterCollectionParentListCall.html"><em>parents list</em></a>, <a href="struct.RasterCollectionPatchCall.html"><em>patch</em></a>, <a href="struct.RasterCollectionPermissionBatchDeleteCall.html"><em>permissions batch delete</em></a>, <a href="struct.RasterCollectionPermissionBatchUpdateCall.html"><em>permissions batch update</em></a>, <a href="struct.RasterCollectionPermissionListCall.html"><em>permissions list</em></a>, <a href="struct.RasterCollectionProcesCall.html"><em>process</em></a>, <a href="struct.RasterCollectionRasterBatchDeleteCall.html"><em>rasters batch delete</em></a>, <a href="struct.RasterCollectionRasterBatchInsertCall.html"><em>rasters batch insert</em></a> and <a href="struct.RasterCollectionRasterListCall.html"><em>rasters list</em></a></li>
+</ul></li>
+<li><a href="struct.Raster.html">rasters</a>
+
+<ul>
+<li><a href="struct.RasterDeleteCall.html"><em>delete</em></a>, <a href="struct.RasterFileInsertCall.html"><em>files insert</em></a>, <a href="struct.RasterGetCall.html"><em>get</em></a>, <a href="struct.RasterListCall.html"><em>list</em></a>, <a href="struct.RasterParentListCall.html"><em>parents list</em></a>, <a href="struct.RasterPatchCall.html"><em>patch</em></a>, <a href="struct.RasterPermissionBatchDeleteCall.html"><em>permissions batch delete</em></a>, <a href="struct.RasterPermissionBatchUpdateCall.html"><em>permissions batch update</em></a>, <a href="struct.RasterPermissionListCall.html"><em>permissions list</em></a>, <a href="struct.RasterProcesCall.html"><em>process</em></a> and <a href="struct.RasterUploadCall.html"><em>upload</em></a></li>
+</ul></li>
+<li><a href="struct.Table.html">tables</a>
+
+<ul>
+<li><a href="struct.TableCreateCall.html"><em>create</em></a>, <a href="struct.TableDeleteCall.html"><em>delete</em></a>, <a href="struct.TableFeatureBatchDeleteCall.html"><em>features batch delete</em></a>, <a href="struct.TableFeatureBatchInsertCall.html"><em>features batch insert</em></a>, <a href="struct.TableFeatureBatchPatchCall.html"><em>features batch patch</em></a>, <a href="struct.TableFeatureGetCall.html"><em>features get</em></a>, <a href="struct.TableFeatureListCall.html"><em>features list</em></a>, <a href="struct.TableFileInsertCall.html"><em>files insert</em></a>, <a href="struct.TableGetCall.html"><em>get</em></a>, <a href="struct.TableListCall.html"><em>list</em></a>, <a href="struct.TableParentListCall.html"><em>parents list</em></a>, <a href="struct.TablePatchCall.html"><em>patch</em></a>, <a href="struct.TablePermissionBatchDeleteCall.html"><em>permissions batch delete</em></a>, <a href="struct.TablePermissionBatchUpdateCall.html"><em>permissions batch update</em></a>, <a href="struct.TablePermissionListCall.html"><em>permissions list</em></a>, <a href="struct.TableProcesCall.html"><em>process</em></a> and <a href="struct.TableUploadCall.html"><em>upload</em></a></li>
+</ul></li>
+</ul>
+
+<p>Upload supported by ...</p>
+
+<ul>
+<li><a href="struct.ProjectIconCreateCall.html"><em>icons create projects</em></a></li>
+<li><a href="struct.TableFileInsertCall.html"><em>files insert tables</em></a></li>
+<li><a href="struct.RasterFileInsertCall.html"><em>files insert rasters</em></a></li>
+</ul>
+
+<p>Download supported by ...</p>
+
+<ul>
+<li><a href="struct.ProjectIconGetCall.html"><em>icons get projects</em></a></li>
+</ul>
+
+<p>Not what you are looking for ? Find all other Google APIs in their Rust <a href="../index.html">documentation index</a>.</p>
+
+<h1 id="structure-of-this-library" class='section-header'><a
+                           href="#structure-of-this-library">Structure of this Library</a></h1>
+<p>The API is structured into the following primary items:</p>
+
+<ul>
+<li><strong><a href="struct.MapsEngine.html">Hub</a></strong>
+
+<ul>
+<li>a central object to maintain state and allow accessing all <em>Activities</em></li>
+<li>creates <a href="trait.MethodsBuilder.html"><em>Method Builders</em></a> which in turn
+allow access to individual <a href="trait.CallBuilder.html"><em>Call Builders</em></a></li>
+</ul></li>
+<li><strong><a href="trait.Resource.html">Resources</a></strong>
+
+<ul>
+<li>primary types that you can apply <em>Activities</em> to</li>
+<li>a collection of properties and <em>Parts</em></li>
+<li><strong><a href="trait.Part.html">Parts</a></strong>
+
+<ul>
+<li>a collection of properties</li>
+<li>never directly used in <em>Activities</em></li>
+</ul></li>
+</ul></li>
+<li><strong><a href="trait.CallBuilder.html">Activities</a></strong>
+
+<ul>
+<li>operations to apply to <em>Resources</em></li>
+</ul></li>
+</ul>
+
+<p>All <em>structures</em> are marked with applicable traits to further categorize them and ease browsing.</p>
+
+<p>Generally speaking, you can invoke <em>Activities</em> like this:</p>
+<pre id='rust-example-rendered' class='rust '>
+<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>resource</span>().<span class='ident'>activity</span>(...).<span class='ident'>doit</span>()
+</pre>
+
+<p>Or specifically ...</p>
+<pre id='rust-example-rendered' class='rust '>
+<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>tables</span>().<span class='ident'>features_batch_insert</span>(...).<span class='ident'>doit</span>()
+<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>tables</span>().<span class='ident'>list</span>(...).<span class='ident'>doit</span>()
+<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>tables</span>().<span class='ident'>patch</span>(...).<span class='ident'>doit</span>()
+<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>tables</span>().<span class='ident'>get</span>(...).<span class='ident'>doit</span>()
+<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>tables</span>().<span class='ident'>files_insert</span>(...).<span class='ident'>doit</span>()
+<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>tables</span>().<span class='ident'>features_batch_delete</span>(...).<span class='ident'>doit</span>()
+<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>tables</span>().<span class='ident'>permissions_batch_delete</span>(...).<span class='ident'>doit</span>()
+<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>tables</span>().<span class='ident'>permissions_batch_update</span>(...).<span class='ident'>doit</span>()
+<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>tables</span>().<span class='ident'>features_list</span>(...).<span class='ident'>doit</span>()
+<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>tables</span>().<span class='ident'>process</span>(...).<span class='ident'>doit</span>()
+<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>tables</span>().<span class='ident'>upload</span>(...).<span class='ident'>doit</span>()
+<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>tables</span>().<span class='ident'>delete</span>(...).<span class='ident'>doit</span>()
+<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>tables</span>().<span class='ident'>parents_list</span>(...).<span class='ident'>doit</span>()
+<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>tables</span>().<span class='ident'>features_batch_patch</span>(...).<span class='ident'>doit</span>()
+<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>tables</span>().<span class='ident'>permissions_list</span>(...).<span class='ident'>doit</span>()
+<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>tables</span>().<span class='ident'>features_get</span>(...).<span class='ident'>doit</span>()
+<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>tables</span>().<span class='ident'>create</span>(...).<span class='ident'>doit</span>()
+</pre>
+
+<p>The <code>resource()</code> and <code>activity(...)</code> calls create <a href="http://en.wikipedia.org/wiki/Builder_pattern">builders</a>. The second one dealing with <code>Activities</code> 
+supports various methods to configure the impending operation (not shown here). It is made such that all required arguments have to be 
+specified right away (i.e. <code>(...)</code>), whereas all optional ones can be <a href="http://en.wikipedia.org/wiki/Builder_pattern">build up</a> as desired.
+The <code>doit()</code> method performs the actual communication with the server and returns the respective result.</p>
+
+<h1 id="usage" class='section-header'><a
+                           href="#usage">Usage</a></h1>
+<h2 id="setting-up-your-project" class='section-header'><a
+                           href="#setting-up-your-project">Setting up your Project</a></h2>
+<p>To use this library, you would put the following lines into your <code>Cargo.toml</code> file:</p>
+
+<pre><code class="language-toml">[dependencies]
+google-mapsengine1 = &quot;*&quot;
+</code></pre>
+
+<h2 id="a-complete-example" class='section-header'><a
+                           href="#a-complete-example">A complete example</a></h2><pre id='rust-example-rendered' class='rust '>
+<span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>hyper</span>;
+<span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>yup_oauth2</span> <span class='kw'>as</span> <span class='ident'>oauth2</span>;
+<span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>google_mapsengine1</span> <span class='kw'>as</span> <span class='ident'>mapsengine1</span>;
+<span class='kw'>use</span> <span class='ident'>mapsengine1</span>::{<span class='prelude-ty'>Result</span>, <span class='ident'>Error</span>};
+<span class='kw'>use</span> <span class='ident'>std</span>::<span class='ident'>default</span>::<span class='ident'>Default</span>;
+<span class='kw'>use</span> <span class='ident'>oauth2</span>::{<span class='ident'>Authenticator</span>, <span class='ident'>DefaultAuthenticatorDelegate</span>, <span class='ident'>ApplicationSecret</span>, <span class='ident'>MemoryStorage</span>};
+<span class='kw'>use</span> <span class='ident'>mapsengine1</span>::<span class='ident'>MapsEngine</span>;
+ 
+<span class='comment'>// Get an ApplicationSecret instance by some means. It contains the `client_id` and </span>
+<span class='comment'>// `client_secret`, among other things.</span>
+<span class='kw'>let</span> <span class='ident'>secret</span>: <span class='ident'>ApplicationSecret</span> <span class='op'>=</span> <span class='ident'>Default</span>::<span class='ident'>default</span>();
+<span class='comment'>// Instantiate the authenticator. It will choose a suitable authentication flow for you, </span>
+<span class='comment'>// unless you replace  `None` with the desired Flow.</span>
+<span class='comment'>// Provide your own `AuthenticatorDelegate` to adjust the way it operates and get feedback about </span>
+<span class='comment'>// what&#39;s going on. You probably want to bring in your own `TokenStorage` to persist tokens and</span>
+<span class='comment'>// retrieve them from storage.</span>
+<span class='kw'>let</span> <span class='ident'>auth</span> <span class='op'>=</span> <span class='ident'>Authenticator</span>::<span class='ident'>new</span>(<span class='kw-2'>&amp;</span><span class='ident'>secret</span>, <span class='ident'>DefaultAuthenticatorDelegate</span>,
+                              <span class='ident'>hyper</span>::<span class='ident'>Client</span>::<span class='ident'>new</span>(),
+                              <span class='op'>&lt;</span><span class='ident'>MemoryStorage</span> <span class='kw'>as</span> <span class='ident'>Default</span><span class='op'>&gt;</span>::<span class='ident'>default</span>(), <span class='prelude-val'>None</span>);
+<span class='kw'>let</span> <span class='kw-2'>mut</span> <span class='ident'>hub</span> <span class='op'>=</span> <span class='ident'>MapsEngine</span>::<span class='ident'>new</span>(<span class='ident'>hyper</span>::<span class='ident'>Client</span>::<span class='ident'>new</span>(), <span class='ident'>auth</span>);
+<span class='comment'>// You can configure optional parameters by calling the respective setters at will, and</span>
+<span class='comment'>// execute the final call using `doit()`.</span>
+<span class='comment'>// Values shown here are possibly random and not representative !</span>
+<span class='kw'>let</span> <span class='ident'>result</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>tables</span>().<span class='ident'>list</span>()
+             .<span class='ident'>tags</span>(<span class='string'>&quot;Lorem&quot;</span>)
+             .<span class='ident'>search</span>(<span class='string'>&quot;consetetur&quot;</span>)
+             .<span class='ident'>role</span>(<span class='string'>&quot;consetetur&quot;</span>)
+             .<span class='ident'>project_id</span>(<span class='string'>&quot;eirmod&quot;</span>)
+             .<span class='ident'>processing_status</span>(<span class='string'>&quot;labore&quot;</span>)
+             .<span class='ident'>page_token</span>(<span class='string'>&quot;gubergren&quot;</span>)
+             .<span class='ident'>modified_before</span>(<span class='string'>&quot;et&quot;</span>)
+             .<span class='ident'>modified_after</span>(<span class='string'>&quot;sadipscing&quot;</span>)
+             .<span class='ident'>max_results</span>(<span class='number'>28</span>)
+             .<span class='ident'>creator_email</span>(<span class='string'>&quot;magna&quot;</span>)
+             .<span class='ident'>created_before</span>(<span class='string'>&quot;Lorem&quot;</span>)
+             .<span class='ident'>created_after</span>(<span class='string'>&quot;rebum.&quot;</span>)
+             .<span class='ident'>bbox</span>(<span class='string'>&quot;et&quot;</span>)
+             .<span class='ident'>doit</span>();
+ 
+<span class='kw'>match</span> <span class='ident'>result</span> {
+    <span class='prelude-val'>Err</span>(<span class='ident'>e</span>) <span class='op'>=&gt;</span> <span class='kw'>match</span> <span class='ident'>e</span> {
+        <span class='comment'>// The Error enum provides details about what exactly happened.</span>
+        <span class='comment'>// You can also just use its `Debug`, `Display` or `Error` traits</span>
+         <span class='ident'>Error</span>::<span class='ident'>HttpError</span>(_)
+        <span class='op'>|</span><span class='ident'>Error</span>::<span class='ident'>MissingAPIKey</span>
+        <span class='op'>|</span><span class='ident'>Error</span>::<span class='ident'>MissingToken</span>(_)
+        <span class='op'>|</span><span class='ident'>Error</span>::<span class='ident'>Cancelled</span>
+        <span class='op'>|</span><span class='ident'>Error</span>::<span class='ident'>UploadSizeLimitExceeded</span>(_, _)
+        <span class='op'>|</span><span class='ident'>Error</span>::<span class='ident'>Failure</span>(_)
+        <span class='op'>|</span><span class='ident'>Error</span>::<span class='ident'>BadRequest</span>(_)
+        <span class='op'>|</span><span class='ident'>Error</span>::<span class='ident'>FieldClash</span>(_)
+        <span class='op'>|</span><span class='ident'>Error</span>::<span class='ident'>JsonDecodeError</span>(_, _) <span class='op'>=&gt;</span> <span class='macro'>println</span><span class='macro'>!</span>(<span class='string'>&quot;{}&quot;</span>, <span class='ident'>e</span>),
+    },
+    <span class='prelude-val'>Ok</span>(<span class='ident'>res</span>) <span class='op'>=&gt;</span> <span class='macro'>println</span><span class='macro'>!</span>(<span class='string'>&quot;Success: {:?}&quot;</span>, <span class='ident'>res</span>),
+}
+</pre>
+
+<h2 id="handling-errors" class='section-header'><a
+                           href="#handling-errors">Handling Errors</a></h2>
+<p>All errors produced by the system are provided either as <a href="enum.Result.html">Result</a> enumeration as return value of 
+the doit() methods, or handed as possibly intermediate results to either the 
+<a href="trait.Delegate.html">Hub Delegate</a>, or the <a href="../yup-oauth2/trait.AuthenticatorDelegate.html">Authenticator Delegate</a>.</p>
+
+<p>When delegates handle errors or intermediate values, they may have a chance to instruct the system to retry. This 
+makes the system potentially resilient to all kinds of errors.</p>
+
+<h2 id="uploads-and-downloads" class='section-header'><a
+                           href="#uploads-and-downloads">Uploads and Downloads</a></h2>
+<p>If a method supports downloads, the response body, which is part of the <a href="enum.Result.html">Result</a>, should be
+read by you to obtain the media.
+If such a method also supports a <a href="trait.ResponseResult.html">Response Result</a>, it will return that by default.
+You can see it as meta-data for the actual media. To trigger a media download, you will have to set up the builder by making
+this call: <code>.param(&quot;alt&quot;, &quot;media&quot;)</code>.</p>
+
+<p>Methods supporting uploads can do so using up to 2 different protocols: 
+<em>simple</em> and <em>resumable</em>. The distinctiveness of each is represented by customized 
+<code>doit(...)</code> methods, which are then named <code>upload(...)</code> and <code>upload_resumable(...)</code> respectively.</p>
+
+<h2 id="customization-and-callbacks" class='section-header'><a
+                           href="#customization-and-callbacks">Customization and Callbacks</a></h2>
+<p>You may alter the way an <code>doit()</code> method is called by providing a <a href="trait.Delegate.html">delegate</a> to the 
+<a href="trait.CallBuilder.html">Method Builder</a> before making the final <code>doit()</code> call. 
+Respective methods will be called to provide progress information, as well as determine whether the system should 
+retry on failure.</p>
+
+<p>The <a href="trait.Delegate.html">delegate trait</a> is default-implemented, allowing you to customize it with minimal effort.</p>
+
+<h2 id="optional-parts-in-server-requests" class='section-header'><a
+                           href="#optional-parts-in-server-requests">Optional Parts in Server-Requests</a></h2>
+<p>All structures provided by this library are made to be <a href="trait.RequestValue.html">enocodable</a> and 
+<a href="trait.ResponseResult.html">decodable</a> via <em>json</em>. Optionals are used to indicate that partial requests are responses 
+are valid.
+Most optionals are are considered <a href="trait.Part.html">Parts</a> which are identifiable by name, which will be sent to 
+the server to indicate either the set parts of the request or the desired parts in the response.</p>
+
+<h2 id="builder-arguments" class='section-header'><a
+                           href="#builder-arguments">Builder Arguments</a></h2>
+<p>Using <a href="trait.CallBuilder.html">method builders</a>, you are able to prepare an action call by repeatedly calling it&#39;s methods.
+These will always take a single argument, for which the following statements are true.</p>
+
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Plain_old_data_structure">PODs</a> are handed by copy</li>
+<li>strings are passed as <code>&amp;str</code></li>
+<li><a href="trait.RequestValue.html">request values</a> are moved</li>
+</ul>
+
+<p>Arguments will always be copied or cloned into the builder, to make them independent of their original life times.</p>
+</div><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
+<table>
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AcquisitionTime.html'
+                               title='google_mapsengine1::AcquisitionTime'>AcquisitionTime</a></td>
+                        <td class='docblock short'><p>Acquisition time represents acquired time of a raster.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Asset.html'
+                               title='google_mapsengine1::Asset'>Asset</a></td>
+                        <td class='docblock short'><p>An asset is any Google Maps Engine resource that has a globally unique ID. Assets include maps, layers, vector tables, raster collections, and rasters. Projects and features are not considered assets.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AssetGetCall.html'
+                               title='google_mapsengine1::AssetGetCall'>AssetGetCall</a></td>
+                        <td class='docblock short'><p>Return metadata for a particular asset.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AssetListCall.html'
+                               title='google_mapsengine1::AssetListCall'>AssetListCall</a></td>
+                        <td class='docblock short'><p>Return all assets readable by the current user.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AssetMethods.html'
+                               title='google_mapsengine1::AssetMethods'>AssetMethods</a></td>
+                        <td class='docblock short'><p>A builder providing access to all methods supported on <em>asset</em> resources.
+It is not used directly, but through the <code>MapsEngine</code> hub.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AssetParentListCall.html'
+                               title='google_mapsengine1::AssetParentListCall'>AssetParentListCall</a></td>
+                        <td class='docblock short'><p>Return all parent ids of the specified asset.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AssetPermissionListCall.html'
+                               title='google_mapsengine1::AssetPermissionListCall'>AssetPermissionListCall</a></td>
+                        <td class='docblock short'><p>Return all of the permissions for the specified asset.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AssetsListResponse.html'
+                               title='google_mapsengine1::AssetsListResponse'>AssetsListResponse</a></td>
+                        <td class='docblock short'><p>The response returned by a call to resources.List.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Border.html'
+                               title='google_mapsengine1::Border'>Border</a></td>
+                        <td class='docblock short'><p>Border in line style. Both color and width are required.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Color.html'
+                               title='google_mapsengine1::Color'>Color</a></td>
+                        <td class='docblock short'><p>Basic color used in styling.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Datasource.html'
+                               title='google_mapsengine1::Datasource'>Datasource</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Datasources.html'
+                               title='google_mapsengine1::Datasources'>Datasources</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.DefaultDelegate.html'
+                               title='google_mapsengine1::DefaultDelegate'>DefaultDelegate</a></td>
+                        <td class='docblock short'><p>A delegate with a conservative default implementation, which is used if no other delegate is
+set.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.DisplayRule.html'
+                               title='google_mapsengine1::DisplayRule'>DisplayRule</a></td>
+                        <td class='docblock short'><p>A display rule of the vector style.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ErrorResponse.html'
+                               title='google_mapsengine1::ErrorResponse'>ErrorResponse</a></td>
+                        <td class='docblock short'><p>A utility to represent detailed errors we might see in case there are BadRequests.
+The latter happen if the sent parameters or request structures are unsound</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Feature.html'
+                               title='google_mapsengine1::Feature'>Feature</a></td>
+                        <td class='docblock short'><p>A feature within a table.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.FeatureInfo.html'
+                               title='google_mapsengine1::FeatureInfo'>FeatureInfo</a></td>
+                        <td class='docblock short'><p>A feature info contains information about individual feature.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.FeaturesBatchDeleteRequest.html'
+                               title='google_mapsengine1::FeaturesBatchDeleteRequest'>FeaturesBatchDeleteRequest</a></td>
+                        <td class='docblock short'><p>The request sent to features.BatchDelete.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.FeaturesBatchInsertRequest.html'
+                               title='google_mapsengine1::FeaturesBatchInsertRequest'>FeaturesBatchInsertRequest</a></td>
+                        <td class='docblock short'><p>The request sent to features.Insert.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.FeaturesBatchPatchRequest.html'
+                               title='google_mapsengine1::FeaturesBatchPatchRequest'>FeaturesBatchPatchRequest</a></td>
+                        <td class='docblock short'><p>The request sent to features.BatchPatch.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.FeaturesListResponse.html'
+                               title='google_mapsengine1::FeaturesListResponse'>FeaturesListResponse</a></td>
+                        <td class='docblock short'><p>The response returned by a call to features.List.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.File.html'
+                               title='google_mapsengine1::File'>File</a></td>
+                        <td class='docblock short'><p>A single File, which is a component of an Asset.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Filter.html'
+                               title='google_mapsengine1::Filter'>Filter</a></td>
+                        <td class='docblock short'><p>Conditions for filtering features.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.GeoJsonGeometryCollection.html'
+                               title='google_mapsengine1::GeoJsonGeometryCollection'>GeoJsonGeometryCollection</a></td>
+                        <td class='docblock short'><p>A heterogenous collection of GeoJsonGeometry objects.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.GeoJsonLineString.html'
+                               title='google_mapsengine1::GeoJsonLineString'>GeoJsonLineString</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.GeoJsonMultiLineString.html'
+                               title='google_mapsengine1::GeoJsonMultiLineString'>GeoJsonMultiLineString</a></td>
+                        <td class='docblock short'><p>Multi Line String</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.GeoJsonMultiPoint.html'
+                               title='google_mapsengine1::GeoJsonMultiPoint'>GeoJsonMultiPoint</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.GeoJsonMultiPolygon.html'
+                               title='google_mapsengine1::GeoJsonMultiPolygon'>GeoJsonMultiPolygon</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.GeoJsonPoint.html'
+                               title='google_mapsengine1::GeoJsonPoint'>GeoJsonPoint</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.GeoJsonPolygon.html'
+                               title='google_mapsengine1::GeoJsonPolygon'>GeoJsonPolygon</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.GeoJsonPosition.html'
+                               title='google_mapsengine1::GeoJsonPosition'>GeoJsonPosition</a></td>
+                        <td class='docblock short'><p>A position represents a geographical position as an array containing a longitude and a latitude, and optionally an altitude, in that order. All Geometry objects make use of positions to represent geometries as nested arrays. The structure of the array is governed by the type of the geometry.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.GeoJsonProperties.html'
+                               title='google_mapsengine1::GeoJsonProperties'>GeoJsonProperties</a></td>
+                        <td class='docblock short'><p>The properties associated with a feature.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Icon.html'
+                               title='google_mapsengine1::Icon'>Icon</a></td>
+                        <td class='docblock short'><p>An icon is a user-uploaded image that can be used to style point geometries.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.IconStyle.html'
+                               title='google_mapsengine1::IconStyle'>IconStyle</a></td>
+                        <td class='docblock short'><p>Style for icon, this is part of point style.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.IconsListResponse.html'
+                               title='google_mapsengine1::IconsListResponse'>IconsListResponse</a></td>
+                        <td class='docblock short'><p>The response returned by a call to icons.List.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.LabelStyle.html'
+                               title='google_mapsengine1::LabelStyle'>LabelStyle</a></td>
+                        <td class='docblock short'><p>Text label style.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.LatLngBox.html'
+                               title='google_mapsengine1::LatLngBox'>LatLngBox</a></td>
+                        <td class='docblock short'><p>A rectangular geographic bounds.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Layer.html'
+                               title='google_mapsengine1::Layer'>Layer</a></td>
+                        <td class='docblock short'><p>A Layer combines multiple datasources, with styling information, for presentation on a map.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.LayerCancelProcessingCall.html'
+                               title='google_mapsengine1::LayerCancelProcessingCall'>LayerCancelProcessingCall</a></td>
+                        <td class='docblock short'><p>Cancel processing on a layer asset.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.LayerCreateCall.html'
+                               title='google_mapsengine1::LayerCreateCall'>LayerCreateCall</a></td>
+                        <td class='docblock short'><p>Create a layer asset.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.LayerDeleteCall.html'
+                               title='google_mapsengine1::LayerDeleteCall'>LayerDeleteCall</a></td>
+                        <td class='docblock short'><p>Delete a layer.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.LayerGetCall.html'
+                               title='google_mapsengine1::LayerGetCall'>LayerGetCall</a></td>
+                        <td class='docblock short'><p>Return metadata for a particular layer.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.LayerGetPublishedCall.html'
+                               title='google_mapsengine1::LayerGetPublishedCall'>LayerGetPublishedCall</a></td>
+                        <td class='docblock short'><p>Return the published metadata for a particular layer.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.LayerListCall.html'
+                               title='google_mapsengine1::LayerListCall'>LayerListCall</a></td>
+                        <td class='docblock short'><p>Return all layers readable by the current user.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.LayerListPublishedCall.html'
+                               title='google_mapsengine1::LayerListPublishedCall'>LayerListPublishedCall</a></td>
+                        <td class='docblock short'><p>Return all published layers readable by the current user.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.LayerMethods.html'
+                               title='google_mapsengine1::LayerMethods'>LayerMethods</a></td>
+                        <td class='docblock short'><p>A builder providing access to all methods supported on <em>layer</em> resources.
+It is not used directly, but through the <code>MapsEngine</code> hub.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.LayerParentListCall.html'
+                               title='google_mapsengine1::LayerParentListCall'>LayerParentListCall</a></td>
+                        <td class='docblock short'><p>Return all parent ids of the specified layer.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.LayerPatchCall.html'
+                               title='google_mapsengine1::LayerPatchCall'>LayerPatchCall</a></td>
+                        <td class='docblock short'><p>Mutate a layer asset.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.LayerPermissionBatchDeleteCall.html'
+                               title='google_mapsengine1::LayerPermissionBatchDeleteCall'>LayerPermissionBatchDeleteCall</a></td>
+                        <td class='docblock short'><p>Remove permission entries from an already existing asset.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.LayerPermissionBatchUpdateCall.html'
+                               title='google_mapsengine1::LayerPermissionBatchUpdateCall'>LayerPermissionBatchUpdateCall</a></td>
+                        <td class='docblock short'><p>Add or update permission entries to an already existing asset.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.LayerPermissionListCall.html'
+                               title='google_mapsengine1::LayerPermissionListCall'>LayerPermissionListCall</a></td>
+                        <td class='docblock short'><p>Return all of the permissions for the specified asset.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.LayerProcesCall.html'
+                               title='google_mapsengine1::LayerProcesCall'>LayerProcesCall</a></td>
+                        <td class='docblock short'><p>Process a layer asset.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.LayerPublishCall.html'
+                               title='google_mapsengine1::LayerPublishCall'>LayerPublishCall</a></td>
+                        <td class='docblock short'><p>Publish a layer asset.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.LayerUnpublishCall.html'
+                               title='google_mapsengine1::LayerUnpublishCall'>LayerUnpublishCall</a></td>
+                        <td class='docblock short'><p>Unpublish a layer asset.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.LayersListResponse.html'
+                               title='google_mapsengine1::LayersListResponse'>LayersListResponse</a></td>
+                        <td class='docblock short'><p>The response returned by a call to layers.List. Note: The list response does not include all the fields available in a layer. Refer to the layer resource description for details of the fields that are not included. You&#39;ll need to send a get request to retrieve the additional fields for each layer.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.LineStyle.html'
+                               title='google_mapsengine1::LineStyle'>LineStyle</a></td>
+                        <td class='docblock short'><p>Style for lines.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.LineStyleStroke.html'
+                               title='google_mapsengine1::LineStyleStroke'>LineStyleStroke</a></td>
+                        <td class='docblock short'><p>Stroke of the line.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Map.html'
+                               title='google_mapsengine1::Map'>Map</a></td>
+                        <td class='docblock short'><p>A Map is a collection of Layers, optionally contained within folders.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.MapContents.html'
+                               title='google_mapsengine1::MapContents'>MapContents</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.MapCreateCall.html'
+                               title='google_mapsengine1::MapCreateCall'>MapCreateCall</a></td>
+                        <td class='docblock short'><p>Create a map asset.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.MapDeleteCall.html'
+                               title='google_mapsengine1::MapDeleteCall'>MapDeleteCall</a></td>
+                        <td class='docblock short'><p>Delete a map.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.MapFolder.html'
+                               title='google_mapsengine1::MapFolder'>MapFolder</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.MapGetCall.html'
+                               title='google_mapsengine1::MapGetCall'>MapGetCall</a></td>
+                        <td class='docblock short'><p>Return metadata for a particular map.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.MapGetPublishedCall.html'
+                               title='google_mapsengine1::MapGetPublishedCall'>MapGetPublishedCall</a></td>
+                        <td class='docblock short'><p>Return the published metadata for a particular map.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.MapKmlLink.html'
+                               title='google_mapsengine1::MapKmlLink'>MapKmlLink</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.MapLayer.html'
+                               title='google_mapsengine1::MapLayer'>MapLayer</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.MapListCall.html'
+                               title='google_mapsengine1::MapListCall'>MapListCall</a></td>
+                        <td class='docblock short'><p>Return all maps readable by the current user.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.MapListPublishedCall.html'
+                               title='google_mapsengine1::MapListPublishedCall'>MapListPublishedCall</a></td>
+                        <td class='docblock short'><p>Return all published maps readable by the current user.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.MapMethods.html'
+                               title='google_mapsengine1::MapMethods'>MapMethods</a></td>
+                        <td class='docblock short'><p>A builder providing access to all methods supported on <em>map</em> resources.
+It is not used directly, but through the <code>MapsEngine</code> hub.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.MapPatchCall.html'
+                               title='google_mapsengine1::MapPatchCall'>MapPatchCall</a></td>
+                        <td class='docblock short'><p>Mutate a map asset.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.MapPermissionBatchDeleteCall.html'
+                               title='google_mapsengine1::MapPermissionBatchDeleteCall'>MapPermissionBatchDeleteCall</a></td>
+                        <td class='docblock short'><p>Remove permission entries from an already existing asset.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.MapPermissionBatchUpdateCall.html'
+                               title='google_mapsengine1::MapPermissionBatchUpdateCall'>MapPermissionBatchUpdateCall</a></td>
+                        <td class='docblock short'><p>Add or update permission entries to an already existing asset.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.MapPermissionListCall.html'
+                               title='google_mapsengine1::MapPermissionListCall'>MapPermissionListCall</a></td>
+                        <td class='docblock short'><p>Return all of the permissions for the specified asset.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.MapPublishCall.html'
+                               title='google_mapsengine1::MapPublishCall'>MapPublishCall</a></td>
+                        <td class='docblock short'><p>Publish a map asset.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.MapUnpublishCall.html'
+                               title='google_mapsengine1::MapUnpublishCall'>MapUnpublishCall</a></td>
+                        <td class='docblock short'><p>Unpublish a map asset.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.MapsEngine.html'
+                               title='google_mapsengine1::MapsEngine'>MapsEngine</a></td>
+                        <td class='docblock short'><p>Central instance to access all MapsEngine related resource activities</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.MapsListResponse.html'
+                               title='google_mapsengine1::MapsListResponse'>MapsListResponse</a></td>
+                        <td class='docblock short'><p>The response returned by a call to maps.List.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.MethodInfo.html'
+                               title='google_mapsengine1::MethodInfo'>MethodInfo</a></td>
+                        <td class='docblock short'><p>Contains information about an API request.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.MultiPartReader.html'
+                               title='google_mapsengine1::MultiPartReader'>MultiPartReader</a></td>
+                        <td class='docblock short'><p>Provides a <code>Read</code> interface that converts multiple parts into the protocol
+identified by <a href="https://tools.ietf.org/html/rfc2387">RFC2387</a>.
+<strong>Note</strong>: This implementation is just as rich as it needs to be to perform uploads
+to google APIs, and might not be a fully-featured implementation.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Parent.html'
+                               title='google_mapsengine1::Parent'>Parent</a></td>
+                        <td class='docblock short'><p>A list of the parents of an asset.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ParentsListResponse.html'
+                               title='google_mapsengine1::ParentsListResponse'>ParentsListResponse</a></td>
+                        <td class='docblock short'><p>The response returned by a call to parents.List.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Permission.html'
+                               title='google_mapsengine1::Permission'>Permission</a></td>
+                        <td class='docblock short'><p>A permission defines the user or group that has access to an asset, and the type of access they have.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.PermissionsBatchDeleteRequest.html'
+                               title='google_mapsengine1::PermissionsBatchDeleteRequest'>PermissionsBatchDeleteRequest</a></td>
+                        <td class='docblock short'><p>The request sent to mapsengine.permissions.batchDelete.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.PermissionsBatchDeleteResponse.html'
+                               title='google_mapsengine1::PermissionsBatchDeleteResponse'>PermissionsBatchDeleteResponse</a></td>
+                        <td class='docblock short'><p>The response returned by a call to mapsengine.permissions.batchDelete.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.PermissionsBatchUpdateRequest.html'
+                               title='google_mapsengine1::PermissionsBatchUpdateRequest'>PermissionsBatchUpdateRequest</a></td>
+                        <td class='docblock short'><p>The request sent to mapsengine.permissions.batchUpdate.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.PermissionsBatchUpdateResponse.html'
+                               title='google_mapsengine1::PermissionsBatchUpdateResponse'>PermissionsBatchUpdateResponse</a></td>
+                        <td class='docblock short'><p>The response returned by a call to mapsengine.permissions.batchUpdate.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.PermissionsListResponse.html'
+                               title='google_mapsengine1::PermissionsListResponse'>PermissionsListResponse</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.PointStyle.html'
+                               title='google_mapsengine1::PointStyle'>PointStyle</a></td>
+                        <td class='docblock short'><p>Style for points.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.PolygonStyle.html'
+                               title='google_mapsengine1::PolygonStyle'>PolygonStyle</a></td>
+                        <td class='docblock short'><p>Style for polygons.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ProcessResponse.html'
+                               title='google_mapsengine1::ProcessResponse'>ProcessResponse</a></td>
+                        <td class='docblock short'><p>The response returned by a call to any asset&#39;s Process method.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Project.html'
+                               title='google_mapsengine1::Project'>Project</a></td>
+                        <td class='docblock short'><p>A Maps Engine project groups a collection of resources.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ProjectIconCreateCall.html'
+                               title='google_mapsengine1::ProjectIconCreateCall'>ProjectIconCreateCall</a></td>
+                        <td class='docblock short'><p>Create an icon.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ProjectIconGetCall.html'
+                               title='google_mapsengine1::ProjectIconGetCall'>ProjectIconGetCall</a></td>
+                        <td class='docblock short'><p>Return an icon or its associated metadata</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ProjectIconListCall.html'
+                               title='google_mapsengine1::ProjectIconListCall'>ProjectIconListCall</a></td>
+                        <td class='docblock short'><p>Return all icons in the current project</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ProjectListCall.html'
+                               title='google_mapsengine1::ProjectListCall'>ProjectListCall</a></td>
+                        <td class='docblock short'><p>Return all projects readable by the current user.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ProjectMethods.html'
+                               title='google_mapsengine1::ProjectMethods'>ProjectMethods</a></td>
+                        <td class='docblock short'><p>A builder providing access to all methods supported on <em>project</em> resources.
+It is not used directly, but through the <code>MapsEngine</code> hub.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ProjectsListResponse.html'
+                               title='google_mapsengine1::ProjectsListResponse'>ProjectsListResponse</a></td>
+                        <td class='docblock short'><p>The response returned by a call to projects.List.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.PublishResponse.html'
+                               title='google_mapsengine1::PublishResponse'>PublishResponse</a></td>
+                        <td class='docblock short'><p>The response returned by a call to any asset&#39;s Publish method.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.PublishedLayer.html'
+                               title='google_mapsengine1::PublishedLayer'>PublishedLayer</a></td>
+                        <td class='docblock short'><p>The published version of a layer.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.PublishedLayersListResponse.html'
+                               title='google_mapsengine1::PublishedLayersListResponse'>PublishedLayersListResponse</a></td>
+                        <td class='docblock short'><p>The response returned by a call to layers.List.published.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.PublishedMap.html'
+                               title='google_mapsengine1::PublishedMap'>PublishedMap</a></td>
+                        <td class='docblock short'><p>The published version of a map asset.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.PublishedMapsListResponse.html'
+                               title='google_mapsengine1::PublishedMapsListResponse'>PublishedMapsListResponse</a></td>
+                        <td class='docblock short'><p>The response returned by a call to maps.List.published.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Raster.html'
+                               title='google_mapsengine1::Raster'>Raster</a></td>
+                        <td class='docblock short'><p>A geo-referenced raster.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.RasterCollection.html'
+                               title='google_mapsengine1::RasterCollection'>RasterCollection</a></td>
+                        <td class='docblock short'><p>A raster collection groups multiple Raster resources for inclusion in a Layer.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.RasterCollectionCancelProcessingCall.html'
+                               title='google_mapsengine1::RasterCollectionCancelProcessingCall'>RasterCollectionCancelProcessingCall</a></td>
+                        <td class='docblock short'><p>Cancel processing on a raster collection asset.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.RasterCollectionCreateCall.html'
+                               title='google_mapsengine1::RasterCollectionCreateCall'>RasterCollectionCreateCall</a></td>
+                        <td class='docblock short'><p>Create a raster collection asset.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.RasterCollectionDeleteCall.html'
+                               title='google_mapsengine1::RasterCollectionDeleteCall'>RasterCollectionDeleteCall</a></td>
+                        <td class='docblock short'><p>Delete a raster collection.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.RasterCollectionGetCall.html'
+                               title='google_mapsengine1::RasterCollectionGetCall'>RasterCollectionGetCall</a></td>
+                        <td class='docblock short'><p>Return metadata for a particular raster collection.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.RasterCollectionListCall.html'
+                               title='google_mapsengine1::RasterCollectionListCall'>RasterCollectionListCall</a></td>
+                        <td class='docblock short'><p>Return all raster collections readable by the current user.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.RasterCollectionMethods.html'
+                               title='google_mapsengine1::RasterCollectionMethods'>RasterCollectionMethods</a></td>
+                        <td class='docblock short'><p>A builder providing access to all methods supported on <em>rasterCollection</em> resources.
+It is not used directly, but through the <code>MapsEngine</code> hub.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.RasterCollectionParentListCall.html'
+                               title='google_mapsengine1::RasterCollectionParentListCall'>RasterCollectionParentListCall</a></td>
+                        <td class='docblock short'><p>Return all parent ids of the specified raster collection.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.RasterCollectionPatchCall.html'
+                               title='google_mapsengine1::RasterCollectionPatchCall'>RasterCollectionPatchCall</a></td>
+                        <td class='docblock short'><p>Mutate a raster collection asset.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.RasterCollectionPermissionBatchDeleteCall.html'
+                               title='google_mapsengine1::RasterCollectionPermissionBatchDeleteCall'>RasterCollectionPermissionBatchDeleteCall</a></td>
+                        <td class='docblock short'><p>Remove permission entries from an already existing asset.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.RasterCollectionPermissionBatchUpdateCall.html'
+                               title='google_mapsengine1::RasterCollectionPermissionBatchUpdateCall'>RasterCollectionPermissionBatchUpdateCall</a></td>
+                        <td class='docblock short'><p>Add or update permission entries to an already existing asset.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.RasterCollectionPermissionListCall.html'
+                               title='google_mapsengine1::RasterCollectionPermissionListCall'>RasterCollectionPermissionListCall</a></td>
+                        <td class='docblock short'><p>Return all of the permissions for the specified asset.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.RasterCollectionProcesCall.html'
+                               title='google_mapsengine1::RasterCollectionProcesCall'>RasterCollectionProcesCall</a></td>
+                        <td class='docblock short'><p>Process a raster collection asset.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.RasterCollectionRasterBatchDeleteCall.html'
+                               title='google_mapsengine1::RasterCollectionRasterBatchDeleteCall'>RasterCollectionRasterBatchDeleteCall</a></td>
+                        <td class='docblock short'><p>Remove rasters from an existing raster collection.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.RasterCollectionRasterBatchInsertCall.html'
+                               title='google_mapsengine1::RasterCollectionRasterBatchInsertCall'>RasterCollectionRasterBatchInsertCall</a></td>
+                        <td class='docblock short'><p>Add rasters to an existing raster collection. Rasters must be successfully processed in order to be added to a raster collection.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.RasterCollectionRasterListCall.html'
+                               title='google_mapsengine1::RasterCollectionRasterListCall'>RasterCollectionRasterListCall</a></td>
+                        <td class='docblock short'><p>Return all rasters within a raster collection.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.RasterCollectionsListResponse.html'
+                               title='google_mapsengine1::RasterCollectionsListResponse'>RasterCollectionsListResponse</a></td>
+                        <td class='docblock short'><p>The response returned by a call to raster_collections.List. Note: The list response does not include all the fields available in a raster collection. Refer to the RasterCollection resource description for details of the fields that are not included. You&#39;ll need to send a get request to retrieve the additional fields for each raster collection.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.RasterCollectionsRaster.html'
+                               title='google_mapsengine1::RasterCollectionsRaster'>RasterCollectionsRaster</a></td>
+                        <td class='docblock short'><p>A raster resource.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.RasterCollectionsRasterBatchDeleteRequest.html'
+                               title='google_mapsengine1::RasterCollectionsRasterBatchDeleteRequest'>RasterCollectionsRasterBatchDeleteRequest</a></td>
+                        <td class='docblock short'><p>The request sent to rasterCollections.Rasters.BatchDelete.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.RasterCollectionsRastersBatchDeleteResponse.html'
+                               title='google_mapsengine1::RasterCollectionsRastersBatchDeleteResponse'>RasterCollectionsRastersBatchDeleteResponse</a></td>
+                        <td class='docblock short'><p>The response returned by a call to rasterCollections.rasters.batchDelete.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.RasterCollectionsRastersBatchInsertRequest.html'
+                               title='google_mapsengine1::RasterCollectionsRastersBatchInsertRequest'>RasterCollectionsRastersBatchInsertRequest</a></td>
+                        <td class='docblock short'><p>The request sent to rasterCollections.Rasters.BatchInsert.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.RasterCollectionsRastersBatchInsertResponse.html'
+                               title='google_mapsengine1::RasterCollectionsRastersBatchInsertResponse'>RasterCollectionsRastersBatchInsertResponse</a></td>
+                        <td class='docblock short'><p>The response returned by a call to rasterCollections.rasters.batchInsert.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.RasterCollectionsRastersListResponse.html'
+                               title='google_mapsengine1::RasterCollectionsRastersListResponse'>RasterCollectionsRastersListResponse</a></td>
+                        <td class='docblock short'><p>The response returned by a call to rasterCollections.rasters.List.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.RasterDeleteCall.html'
+                               title='google_mapsengine1::RasterDeleteCall'>RasterDeleteCall</a></td>
+                        <td class='docblock short'><p>Delete a raster.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.RasterFileInsertCall.html'
+                               title='google_mapsengine1::RasterFileInsertCall'>RasterFileInsertCall</a></td>
+                        <td class='docblock short'><p>Upload a file to a raster asset.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.RasterGetCall.html'
+                               title='google_mapsengine1::RasterGetCall'>RasterGetCall</a></td>
+                        <td class='docblock short'><p>Return metadata for a single raster.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.RasterListCall.html'
+                               title='google_mapsengine1::RasterListCall'>RasterListCall</a></td>
+                        <td class='docblock short'><p>Return all rasters readable by the current user.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.RasterMethods.html'
+                               title='google_mapsengine1::RasterMethods'>RasterMethods</a></td>
+                        <td class='docblock short'><p>A builder providing access to all methods supported on <em>raster</em> resources.
+It is not used directly, but through the <code>MapsEngine</code> hub.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.RasterParentListCall.html'
+                               title='google_mapsengine1::RasterParentListCall'>RasterParentListCall</a></td>
+                        <td class='docblock short'><p>Return all parent ids of the specified rasters.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.RasterPatchCall.html'
+                               title='google_mapsengine1::RasterPatchCall'>RasterPatchCall</a></td>
+                        <td class='docblock short'><p>Mutate a raster asset.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.RasterPermissionBatchDeleteCall.html'
+                               title='google_mapsengine1::RasterPermissionBatchDeleteCall'>RasterPermissionBatchDeleteCall</a></td>
+                        <td class='docblock short'><p>Remove permission entries from an already existing asset.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.RasterPermissionBatchUpdateCall.html'
+                               title='google_mapsengine1::RasterPermissionBatchUpdateCall'>RasterPermissionBatchUpdateCall</a></td>
+                        <td class='docblock short'><p>Add or update permission entries to an already existing asset.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.RasterPermissionListCall.html'
+                               title='google_mapsengine1::RasterPermissionListCall'>RasterPermissionListCall</a></td>
+                        <td class='docblock short'><p>Return all of the permissions for the specified asset.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.RasterProcesCall.html'
+                               title='google_mapsengine1::RasterProcesCall'>RasterProcesCall</a></td>
+                        <td class='docblock short'><p>Process a raster asset.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.RasterUploadCall.html'
+                               title='google_mapsengine1::RasterUploadCall'>RasterUploadCall</a></td>
+                        <td class='docblock short'><p>Create a skeleton raster asset for upload.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.RastersListResponse.html'
+                               title='google_mapsengine1::RastersListResponse'>RastersListResponse</a></td>
+                        <td class='docblock short'><p>The response returned by a call to rasters.List.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ScaledShape.html'
+                               title='google_mapsengine1::ScaledShape'>ScaledShape</a></td>
+                        <td class='docblock short'><p>Parameters for styling points as scaled shapes.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ScalingFunction.html'
+                               title='google_mapsengine1::ScalingFunction'>ScalingFunction</a></td>
+                        <td class='docblock short'><p>Parameters for scaling scaled shapes.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Schema.html'
+                               title='google_mapsengine1::Schema'>Schema</a></td>
+                        <td class='docblock short'><p>A schema indicating the properties which may be associated with features within a Table, and the types of those properties.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.SizeRange.html'
+                               title='google_mapsengine1::SizeRange'>SizeRange</a></td>
+                        <td class='docblock short'><p>Scaled shape size range in pixels. For circles, size corresponds to diameter.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Table.html'
+                               title='google_mapsengine1::Table'>Table</a></td>
+                        <td class='docblock short'><p>A collection of geographic features, and associated metadata.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.TableColumn.html'
+                               title='google_mapsengine1::TableColumn'>TableColumn</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.TableCreateCall.html'
+                               title='google_mapsengine1::TableCreateCall'>TableCreateCall</a></td>
+                        <td class='docblock short'><p>Create a table asset.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.TableDeleteCall.html'
+                               title='google_mapsengine1::TableDeleteCall'>TableDeleteCall</a></td>
+                        <td class='docblock short'><p>Delete a table.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.TableFeatureBatchDeleteCall.html'
+                               title='google_mapsengine1::TableFeatureBatchDeleteCall'>TableFeatureBatchDeleteCall</a></td>
+                        <td class='docblock short'><p>Delete all features matching the given IDs.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.TableFeatureBatchInsertCall.html'
+                               title='google_mapsengine1::TableFeatureBatchInsertCall'>TableFeatureBatchInsertCall</a></td>
+                        <td class='docblock short'><p>Append features to an existing table.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.TableFeatureBatchPatchCall.html'
+                               title='google_mapsengine1::TableFeatureBatchPatchCall'>TableFeatureBatchPatchCall</a></td>
+                        <td class='docblock short'><p>Update the supplied features.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.TableFeatureGetCall.html'
+                               title='google_mapsengine1::TableFeatureGetCall'>TableFeatureGetCall</a></td>
+                        <td class='docblock short'><p>Return a single feature, given its ID.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.TableFeatureListCall.html'
+                               title='google_mapsengine1::TableFeatureListCall'>TableFeatureListCall</a></td>
+                        <td class='docblock short'><p>Return all features readable by the current user.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.TableFileInsertCall.html'
+                               title='google_mapsengine1::TableFileInsertCall'>TableFileInsertCall</a></td>
+                        <td class='docblock short'><p>Upload a file to a placeholder table asset. See Table Upload in the Developer&#39;s Guide for more information.
+Supported file types are listed in the Supported data formats and limits article of the Google Maps Engine help center.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.TableGetCall.html'
+                               title='google_mapsengine1::TableGetCall'>TableGetCall</a></td>
+                        <td class='docblock short'><p>Return metadata for a particular table, including the schema.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.TableListCall.html'
+                               title='google_mapsengine1::TableListCall'>TableListCall</a></td>
+                        <td class='docblock short'><p>Return all tables readable by the current user.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.TableMethods.html'
+                               title='google_mapsengine1::TableMethods'>TableMethods</a></td>
+                        <td class='docblock short'><p>A builder providing access to all methods supported on <em>table</em> resources.
+It is not used directly, but through the <code>MapsEngine</code> hub.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.TableParentListCall.html'
+                               title='google_mapsengine1::TableParentListCall'>TableParentListCall</a></td>
+                        <td class='docblock short'><p>Return all parent ids of the specified table.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.TablePatchCall.html'
+                               title='google_mapsengine1::TablePatchCall'>TablePatchCall</a></td>
+                        <td class='docblock short'><p>Mutate a table asset.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.TablePermissionBatchDeleteCall.html'
+                               title='google_mapsengine1::TablePermissionBatchDeleteCall'>TablePermissionBatchDeleteCall</a></td>
+                        <td class='docblock short'><p>Remove permission entries from an already existing asset.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.TablePermissionBatchUpdateCall.html'
+                               title='google_mapsengine1::TablePermissionBatchUpdateCall'>TablePermissionBatchUpdateCall</a></td>
+                        <td class='docblock short'><p>Add or update permission entries to an already existing asset.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.TablePermissionListCall.html'
+                               title='google_mapsengine1::TablePermissionListCall'>TablePermissionListCall</a></td>
+                        <td class='docblock short'><p>Return all of the permissions for the specified asset.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.TableProcesCall.html'
+                               title='google_mapsengine1::TableProcesCall'>TableProcesCall</a></td>
+                        <td class='docblock short'><p>Process a table asset.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.TableUploadCall.html'
+                               title='google_mapsengine1::TableUploadCall'>TableUploadCall</a></td>
+                        <td class='docblock short'><p>Create a placeholder table asset to which table files can be uploaded.
+Once the placeholder has been created, files are uploaded to the <a href="https://www.googleapis.com/upload/mapsengine/v1/tables/table_id/files">https://www.googleapis.com/upload/mapsengine/v1/tables/table_id/files</a> endpoint.
+See Table Upload in the Developer&#39;s Guide or Table.files: insert in the reference documentation for more information.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.TablesListResponse.html'
+                               title='google_mapsengine1::TablesListResponse'>TablesListResponse</a></td>
+                        <td class='docblock short'><p>The response returned by a call to tables.List. Note: The list response does not include all the fields available in a table. Refer to the table resource description for details of the fields that are not included. You&#39;ll need to send a get request to retrieve the additional fields for each table.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Tags.html'
+                               title='google_mapsengine1::Tags'>Tags</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ValueRange.html'
+                               title='google_mapsengine1::ValueRange'>ValueRange</a></td>
+                        <td class='docblock short'><p>Range of values used for scaling shapes. The min/max values will be drawn as shapes with the min/max size.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.VectorStyle.html'
+                               title='google_mapsengine1::VectorStyle'>VectorStyle</a></td>
+                        <td class='docblock short'><p>A vector style contains styling information for vector layer.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ZoomLevels.html'
+                               title='google_mapsengine1::ZoomLevels'>ZoomLevels</a></td>
+                        <td class='docblock short'><p>Zoom level range. Zoom levels are restricted between 0 and 24, inclusive.</p>
+</td>
+                    </tr>
+                </table><h2 id='enums' class='section-header'><a href="#enums">Enums</a></h2>
+<table>
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='enum' href='enum.Error.html'
+                               title='google_mapsengine1::Error'>Error</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='enum' href='enum.GeoJsonGeometry.html'
+                               title='google_mapsengine1::GeoJsonGeometry'>GeoJsonGeometry</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='enum' href='enum.MapItem.html'
+                               title='google_mapsengine1::MapItem'>MapItem</a></td>
+                        <td class='docblock short'><p>There is no detailed description.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='enum' href='enum.Scope.html'
+                               title='google_mapsengine1::Scope'>Scope</a></td>
+                        <td class='docblock short'><p>Identifies the an OAuth2 authorization scope.
+A scope is needed when requesting an
+<a href="https://developers.google.com/youtube/v3/guides/authentication">authorization token</a>.</p>
+</td>
+                    </tr>
+                </table><h2 id='traits' class='section-header'><a href="#traits">Traits</a></h2>
+<table>
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.CallBuilder.html'
+                               title='google_mapsengine1::CallBuilder'>CallBuilder</a></td>
+                        <td class='docblock short'><p>Identifies types which represent builders for a particular resource method</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.Delegate.html'
+                               title='google_mapsengine1::Delegate'>Delegate</a></td>
+                        <td class='docblock short'><p>A trait specifying functionality to help controlling any request performed by the API.
+The trait has a conservative default implementation.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.Hub.html'
+                               title='google_mapsengine1::Hub'>Hub</a></td>
+                        <td class='docblock short'><p>Identifies the Hub. There is only one per library, this trait is supposed
+to make intended use more explicit.
+The hub allows to access all resource methods more easily.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.MethodsBuilder.html'
+                               title='google_mapsengine1::MethodsBuilder'>MethodsBuilder</a></td>
+                        <td class='docblock short'><p>Identifies types for building methods of a particular resource type</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.NestedType.html'
+                               title='google_mapsengine1::NestedType'>NestedType</a></td>
+                        <td class='docblock short'><p>Identifies types which are only used by other types internally.
+They have no special meaning, this trait just marks them for completeness.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.Part.html'
+                               title='google_mapsengine1::Part'>Part</a></td>
+                        <td class='docblock short'><p>Identifies types which are only used as part of other types, which
+usually are carrying the <code>Resource</code> trait.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.ReadSeek.html'
+                               title='google_mapsengine1::ReadSeek'>ReadSeek</a></td>
+                        <td class='docblock short'><p>A utility to specify reader types which provide seeking capabilities too</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.RequestValue.html'
+                               title='google_mapsengine1::RequestValue'>RequestValue</a></td>
+                        <td class='docblock short'><p>Identifies types which are used in API requests.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.Resource.html'
+                               title='google_mapsengine1::Resource'>Resource</a></td>
+                        <td class='docblock short'><p>Identifies types which can be inserted and deleted.
+Types with this trait are most commonly used by clients of this API.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.ResponseResult.html'
+                               title='google_mapsengine1::ResponseResult'>ResponseResult</a></td>
+                        <td class='docblock short'><p>Identifies types which are used in API responses.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.ToParts.html'
+                               title='google_mapsengine1::ToParts'>ToParts</a></td>
+                        <td class='docblock short'><p>A trait for all types that can convert themselves into a <em>parts</em> string</p>
+</td>
+                    </tr>
+                </table><h2 id='functions' class='section-header'><a href="#functions">Functions</a></h2>
+<table>
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.remove_json_null_values.html'
+                               title='google_mapsengine1::remove_json_null_values'>remove_json_null_values</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                </table><h2 id='types' class='section-header'><a href="#types">Type Definitions</a></h2>
+<table>
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='type' href='type.Result.html'
+                               title='google_mapsengine1::Result'>Result</a></td>
+                        <td class='docblock short'><p>A universal result type used as return for all calls.</p>
+</td>
+                    </tr>
+                </table></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <div id="help" class="hidden">
+        <div class="shortcuts">
+            <h1>Keyboard shortcuts</h1>
+            <dl>
+                <dt>?</dt>
+                <dd>Show this help dialog</dd>
+                <dt>S</dt>
+                <dd>Focus the search field</dd>
+                <dt>&larrb;</dt>
+                <dd>Move up in search results</dd>
+                <dt>&rarrb;</dt>
+                <dd>Move down in search results</dd>
+                <dt>&#9166;</dt>
+                <dd>Go to active search result</dd>
+            </dl>
+        </div>
+        <div class="infos">
+            <h1>Search tricks</h1>
+            <p>
+                Prefix searches with a type followed by a colon (e.g.
+                <code>fn:</code>) to restrict the search to a given type.
+            </p>
+            <p>
+                Accepted types are: <code>fn</code>, <code>mod</code>,
+                <code>struct</code>, <code>enum</code>,
+                <code>trait</code>, <code>typedef</code> (or
+                <code>tdef</code>).
+            </p>
+        </div>
+    </div>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "google_mapsengine1";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../jquery.js"></script>
+    <script src="../main.js"></script>
+    
+    <script async src="../search-index.js"></script>
+</body>
+</html>

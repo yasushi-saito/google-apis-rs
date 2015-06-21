@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `ActivityObject` struct in crate `google_plus1`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, ActivityObject">
+
+    <title>google_plus1::ActivityObject - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../main.css">
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <section class="sidebar">
+        
+        <p class='location'><a href='index.html'>google_plus1</a></p><script>window.sidebarCurrent = {name: 'ActivityObject', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </section>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press 'S' to search, '?' for more options..."
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content struct">
+<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_plus1</a>::<wbr><a class='struct' href=''>ActivityObject</a><wbr></span><span class='out-of-band'><span id='render-detail'>
+            <a id="collapse-all" href="#">[-]</a>&nbsp;<a id="expand-all" href="#">[+]</a>
+        </span><a id='src-50535' href='../src/google_plus1///home/byron/dev/rust/google-apis-rs/target/debug/build/google-plus1-5815fc91b8f39218/out/lib.rs.html#12226-12249'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct ActivityObject {
+    pub content: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub attachments: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='../google_plus1/struct.ActivityObjectAttachments.html' title='google_plus1::ActivityObjectAttachments'>ActivityObjectAttachments</a>&gt;&gt;,
+    pub original_content: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub plusoners: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_plus1/struct.ActivityObjectPlusoners.html' title='google_plus1::ActivityObjectPlusoners'>ActivityObjectPlusoners</a>&gt;,
+    pub actor: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_plus1/struct.ActivityObjectActor.html' title='google_plus1::ActivityObjectActor'>ActivityObjectActor</a>&gt;,
+    pub resharers: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_plus1/struct.ActivityObjectResharers.html' title='google_plus1::ActivityObjectResharers'>ActivityObjectResharers</a>&gt;,
+    pub url: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub replies: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_plus1/struct.ActivityObjectReplies.html' title='google_plus1::ActivityObjectReplies'>ActivityObjectReplies</a>&gt;,
+    pub id: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub object_type: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+}</pre><div class='docblock'><p>The object of this activity.</p>
+
+<p>This type is not used in any activity, and only used as <em>part</em> of another schema.</p>
+</div><h2 class='fields'>Fields</h2>
+<table><tr><td id='structfield.content'><a class='stability Unmarked' title='No stability level'></a><code>content</code></td><td><div class='docblock'><p>The HTML-formatted content, which is suitable for display.</p>
+</div></td></tr><tr><td id='structfield.attachments'><a class='stability Unmarked' title='No stability level'></a><code>attachments</code></td><td><div class='docblock'><p>The media objects attached to this activity.</p>
+</div></td></tr><tr><td id='structfield.original_content'><a class='stability Unmarked' title='No stability level'></a><code>original_content</code></td><td><div class='docblock'><p>The content (text) as provided by the author, which is stored without any HTML formatting. When creating or updating an activity, this value must be supplied as plain text in the request.</p>
+</div></td></tr><tr><td id='structfield.plusoners'><a class='stability Unmarked' title='No stability level'></a><code>plusoners</code></td><td><div class='docblock'><p>People who +1&#39;d this activity.</p>
+</div></td></tr><tr><td id='structfield.actor'><a class='stability Unmarked' title='No stability level'></a><code>actor</code></td><td><div class='docblock'><p>If this activity&#39;s object is itself another activity, such as when a person reshares an activity, this property specifies the original activity&#39;s actor.</p>
+</div></td></tr><tr><td id='structfield.resharers'><a class='stability Unmarked' title='No stability level'></a><code>resharers</code></td><td><div class='docblock'><p>People who reshared this activity.</p>
+</div></td></tr><tr><td id='structfield.url'><a class='stability Unmarked' title='No stability level'></a><code>url</code></td><td><div class='docblock'><p>The URL that points to the linked resource.</p>
+</div></td></tr><tr><td id='structfield.replies'><a class='stability Unmarked' title='No stability level'></a><code>replies</code></td><td><div class='docblock'><p>Comments in reply to this activity.</p>
+</div></td></tr><tr><td id='structfield.id'><a class='stability Unmarked' title='No stability level'></a><code>id</code></td><td><div class='docblock'><p>The ID of the object. When resharing an activity, this is the ID of the activity that is being reshared.</p>
+</div></td></tr><tr><td id='structfield.object_type'><a class='stability Unmarked' title='No stability level'></a><code>object_type</code></td><td><div class='docblock'><p>The type of the object. Possible values include, but are not limited to, the following values:
+- &quot;note&quot; - Textual content. 
+- &quot;activity&quot; - A Google+ activity.</p>
+</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='../google_plus1/trait.NestedType.html' title='google_plus1::NestedType'>NestedType</a> for <a class='struct' href='../google_plus1/struct.ActivityObject.html' title='google_plus1::ActivityObject'>ActivityObject</a></code></h3><div class='impl-items'></div><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='../google_plus1/trait.Part.html' title='google_plus1::Part'>Part</a> for <a class='struct' href='../google_plus1/struct.ActivityObject.html' title='google_plus1::ActivityObject'>ActivityObject</a></code></h3><div class='impl-items'></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_plus1/struct.ActivityObject.html' title='google_plus1::ActivityObject'>ActivityObject</a></code></h3><div class='impl-items'><h4 id='method.fmt' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#method.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='http://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='http://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
+</div><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_plus1/struct.ActivityObject.html' title='google_plus1::ActivityObject'>ActivityObject</a></code></h3><div class='impl-items'><h4 id='method.clone' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_plus1/struct.ActivityObject.html' title='google_plus1::ActivityObject'>ActivityObject</a></code></h4>
+<h4 id='method.clone_from' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code></h4>
+</div><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_plus1/struct.ActivityObject.html' title='google_plus1::ActivityObject'>ActivityObject</a></code></h3><div class='impl-items'><h4 id='method.default' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/default/trait.Default.html#method.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_plus1/struct.ActivityObject.html' title='google_plus1::ActivityObject'>ActivityObject</a></code></h4>
+</div><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='../serde/de/trait.Deserialize.html' title='serde::de::Deserialize'>Deserialize</a> for <a class='struct' href='../google_plus1/struct.ActivityObject.html' title='google_plus1::ActivityObject'>ActivityObject</a></code></h3><div class='impl-items'><h4 id='method.deserialize' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='../serde/de/trait.Deserialize.html#method.deserialize' class='fnname'>deserialize</a>&lt;__D&gt;(deserializer: &amp;mut __D) -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../google_plus1/struct.ActivityObject.html' title='google_plus1::ActivityObject'>ActivityObject</a>, __D&gt; <span class='where'>where __D: <a class='trait' href='../serde/de/trait.Deserializer.html' title='serde::de::Deserializer'>Deserializer</a></span></code></h4>
+</div><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='../serde/ser/trait.Serialize.html' title='serde::ser::Serialize'>Serialize</a> for <a class='struct' href='../google_plus1/struct.ActivityObject.html' title='google_plus1::ActivityObject'>ActivityObject</a></code></h3><div class='impl-items'><h4 id='method.serialize' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='../serde/ser/trait.Serialize.html#method.serialize' class='fnname'>serialize</a>&lt;__S&gt;(&amp;self, serializer: &amp;mut __S) -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, __S&gt; <span class='where'>where __S: <a class='trait' href='../serde/ser/trait.Serializer.html' title='serde::ser::Serializer'>Serializer</a></span></code></h4>
+</div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <div id="help" class="hidden">
+        <div class="shortcuts">
+            <h1>Keyboard shortcuts</h1>
+            <dl>
+                <dt>?</dt>
+                <dd>Show this help dialog</dd>
+                <dt>S</dt>
+                <dd>Focus the search field</dd>
+                <dt>&larrb;</dt>
+                <dd>Move up in search results</dd>
+                <dt>&rarrb;</dt>
+                <dd>Move down in search results</dd>
+                <dt>&#9166;</dt>
+                <dd>Go to active search result</dd>
+            </dl>
+        </div>
+        <div class="infos">
+            <h1>Search tricks</h1>
+            <p>
+                Prefix searches with a type followed by a colon (e.g.
+                <code>fn:</code>) to restrict the search to a given type.
+            </p>
+            <p>
+                Accepted types are: <code>fn</code>, <code>mod</code>,
+                <code>struct</code>, <code>enum</code>,
+                <code>trait</code>, <code>typedef</code> (or
+                <code>tdef</code>).
+            </p>
+        </div>
+    </div>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "google_plus1";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../jquery.js"></script>
+    <script src="../main.js"></script>
+    
+    <script async src="../search-index.js"></script>
+</body>
+</html>

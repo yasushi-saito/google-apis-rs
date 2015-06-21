@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `FilterExpression` struct in crate `google_analytics3`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, FilterExpression">
+
+    <title>google_analytics3::FilterExpression - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../main.css">
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <section class="sidebar">
+        
+        <p class='location'><a href='index.html'>google_analytics3</a></p><script>window.sidebarCurrent = {name: 'FilterExpression', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </section>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press 'S' to search, '?' for more options..."
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content struct">
+<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_analytics3</a>::<wbr><a class='struct' href=''>FilterExpression</a><wbr></span><span class='out-of-band'><span id='render-detail'>
+            <a id="collapse-all" href="#">[-]</a>&nbsp;<a id="expand-all" href="#">[+]</a>
+        </span><a id='src-62053' href='../src/google_analytics3///home/byron/dev/rust/google-apis-rs/target/debug/build/google-analytics3-43470eb15e67bd4e/out/lib.rs.html#14993-15088'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct FilterExpression {
+    pub case_sensitive: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt;,
+    pub kind: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub match_type: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub expression_value: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub field: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+}</pre><div class='docblock'><p>JSON template for an Analytics filter expression.</p>
+
+<p>This type is not used in any activity, and only used as <em>part</em> of another schema.</p>
+</div><h2 class='fields'>Fields</h2>
+<table><tr><td id='structfield.case_sensitive'><a class='stability Unmarked' title='No stability level'></a><code>case_sensitive</code></td><td><div class='docblock'><p>Determines if the filter is case sensitive.</p>
+</div></td></tr><tr><td id='structfield.kind'><a class='stability Unmarked' title='No stability level'></a><code>kind</code></td><td><div class='docblock'><p>Kind value for filter expression</p>
+</div></td></tr><tr><td id='structfield.match_type'><a class='stability Unmarked' title='No stability level'></a><code>match_type</code></td><td><div class='docblock'><p>Match type for this filter. Possible values are BEGINS_WITH, EQUAL, ENDS_WITH, CONTAINS, MATCHES. Include and Exclude filters can use any match type. Match type is not applicable to Upper case and Lower case filters. Search and Replace expressions in the Search and Replace filter and all filter expressions in the Advanced filter default to MATCHES. User should not set match type for those filters.</p>
+</div></td></tr><tr><td id='structfield.expression_value'><a class='stability Unmarked' title='No stability level'></a><code>expression_value</code></td><td><div class='docblock'><p>Filter expression value</p>
+</div></td></tr><tr><td id='structfield.field'><a class='stability Unmarked' title='No stability level'></a><code>field</code></td><td><div class='docblock'><p>Field to filter. Possible values:
+- Content and Traffic<br>
+- PAGE_REQUEST_URI, 
+- PAGE_HOSTNAME, 
+- PAGE_TITLE, 
+- REFERRAL, 
+- COST_DATA_URI (Campaign target URL), 
+- HIT_TYPE, 
+- INTERNAL_SEARCH_TERM, 
+- INTERNAL_SEARCH_TYPE, 
+- SOURCE_PROPERTY_TRACKING_ID,<br>
+- Campaign or AdGroup<br>
+- CAMPAIGN_SOURCE, 
+- CAMPAIGN_MEDIUM, 
+- CAMPAIGN_NAME, 
+- CAMPAIGN_AD_GROUP, 
+- CAMPAIGN_TERM, 
+- CAMPAIGN_CONTENT, 
+- CAMPAIGN_CODE, 
+- CAMPAIGN_REFERRAL_PATH,<br>
+- E-Commerce<br>
+- TRANSACTION_COUNTRY, 
+- TRANSACTION_REGION, 
+- TRANSACTION_CITY, 
+- TRANSACTION_AFFILIATION (Store or order location), 
+- ITEM_NAME, 
+- ITEM_CODE, 
+- ITEM_VARIATION, 
+- TRANSACTION_ID, 
+- TRANSACTION_CURRENCY_CODE, 
+- PRODUCT_ACTION_TYPE,<br>
+- Audience/Users<br>
+- BROWSER, 
+- BROWSER_VERSION, 
+- BROWSER_SIZE, 
+- PLATFORM, 
+- PLATFORM_VERSION, 
+- LANGUAGE, 
+- SCREEN_RESOLUTION, 
+- SCREEN_COLORS, 
+- JAVA_ENABLED (Boolean Field), 
+- FLASH_VERSION, 
+- GEO_SPEED (Connection speed), 
+- VISITOR_TYPE, 
+- GEO_ORGANIZATION (ISP organization), 
+- GEO_DOMAIN, 
+- GEO_IP_ADDRESS, 
+- GEO_IP_VERSION,<br>
+- Location<br>
+- GEO_COUNTRY, 
+- GEO_REGION, 
+- GEO_CITY,<br>
+- Event<br>
+- EVENT_CATEGORY, 
+- EVENT_ACTION, 
+- EVENT_LABEL,<br>
+- Other<br>
+- CUSTOM_FIELD_1, 
+- CUSTOM_FIELD_2, 
+- USER_DEFINED_VALUE,<br>
+- Application<br>
+- APP_ID, 
+- APP_INSTALLER_ID, 
+- APP_NAME, 
+- APP_VERSION, 
+- SCREEN, 
+- IS_APP (Boolean Field), 
+- IS_FATAL_EXCEPTION (Boolean Field), 
+- EXCEPTION_DESCRIPTION,<br>
+- Mobile device<br>
+- IS_MOBILE (Boolean Field, Deprecated. Use DEVICE_CATEGORY=mobile), 
+- IS_TABLET (Boolean Field, Deprecated. Use DEVICE_CATEGORY=tablet), 
+- DEVICE_CATEGORY, 
+- MOBILE_HAS_QWERTY_KEYBOARD (Boolean Field), 
+- MOBILE_HAS_NFC_SUPPORT (Boolean Field), 
+- MOBILE_HAS_CELLULAR_RADIO (Boolean Field), 
+- MOBILE_HAS_WIFI_SUPPORT (Boolean Field), 
+- MOBILE_BRAND_NAME, 
+- MOBILE_MODEL_NAME, 
+- MOBILE_MARKETING_NAME, 
+- MOBILE_POINTING_METHOD,<br>
+- Social<br>
+- SOCIAL_NETWORK, 
+- SOCIAL_ACTION, 
+- SOCIAL_ACTION_TARGET,</p>
+</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='../google_analytics3/trait.Part.html' title='google_analytics3::Part'>Part</a> for <a class='struct' href='../google_analytics3/struct.FilterExpression.html' title='google_analytics3::FilterExpression'>FilterExpression</a></code></h3><div class='impl-items'></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_analytics3/struct.FilterExpression.html' title='google_analytics3::FilterExpression'>FilterExpression</a></code></h3><div class='impl-items'><h4 id='method.fmt' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#method.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='http://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='http://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
+</div><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_analytics3/struct.FilterExpression.html' title='google_analytics3::FilterExpression'>FilterExpression</a></code></h3><div class='impl-items'><h4 id='method.clone' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_analytics3/struct.FilterExpression.html' title='google_analytics3::FilterExpression'>FilterExpression</a></code></h4>
+<h4 id='method.clone_from' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code></h4>
+</div><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_analytics3/struct.FilterExpression.html' title='google_analytics3::FilterExpression'>FilterExpression</a></code></h3><div class='impl-items'><h4 id='method.default' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/default/trait.Default.html#method.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_analytics3/struct.FilterExpression.html' title='google_analytics3::FilterExpression'>FilterExpression</a></code></h4>
+</div><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='../serde/de/trait.Deserialize.html' title='serde::de::Deserialize'>Deserialize</a> for <a class='struct' href='../google_analytics3/struct.FilterExpression.html' title='google_analytics3::FilterExpression'>FilterExpression</a></code></h3><div class='impl-items'><h4 id='method.deserialize' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='../serde/de/trait.Deserialize.html#method.deserialize' class='fnname'>deserialize</a>&lt;__D&gt;(deserializer: &amp;mut __D) -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../google_analytics3/struct.FilterExpression.html' title='google_analytics3::FilterExpression'>FilterExpression</a>, __D&gt; <span class='where'>where __D: <a class='trait' href='../serde/de/trait.Deserializer.html' title='serde::de::Deserializer'>Deserializer</a></span></code></h4>
+</div><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='../serde/ser/trait.Serialize.html' title='serde::ser::Serialize'>Serialize</a> for <a class='struct' href='../google_analytics3/struct.FilterExpression.html' title='google_analytics3::FilterExpression'>FilterExpression</a></code></h3><div class='impl-items'><h4 id='method.serialize' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='../serde/ser/trait.Serialize.html#method.serialize' class='fnname'>serialize</a>&lt;__S&gt;(&amp;self, serializer: &amp;mut __S) -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, __S&gt; <span class='where'>where __S: <a class='trait' href='../serde/ser/trait.Serializer.html' title='serde::ser::Serializer'>Serializer</a></span></code></h4>
+</div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <div id="help" class="hidden">
+        <div class="shortcuts">
+            <h1>Keyboard shortcuts</h1>
+            <dl>
+                <dt>?</dt>
+                <dd>Show this help dialog</dd>
+                <dt>S</dt>
+                <dd>Focus the search field</dd>
+                <dt>&larrb;</dt>
+                <dd>Move up in search results</dd>
+                <dt>&rarrb;</dt>
+                <dd>Move down in search results</dd>
+                <dt>&#9166;</dt>
+                <dd>Go to active search result</dd>
+            </dl>
+        </div>
+        <div class="infos">
+            <h1>Search tricks</h1>
+            <p>
+                Prefix searches with a type followed by a colon (e.g.
+                <code>fn:</code>) to restrict the search to a given type.
+            </p>
+            <p>
+                Accepted types are: <code>fn</code>, <code>mod</code>,
+                <code>struct</code>, <code>enum</code>,
+                <code>trait</code>, <code>typedef</code> (or
+                <code>tdef</code>).
+            </p>
+        </div>
+    </div>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "google_analytics3";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../jquery.js"></script>
+    <script src="../main.js"></script>
+    
+    <script async src="../search-index.js"></script>
+</body>
+</html>

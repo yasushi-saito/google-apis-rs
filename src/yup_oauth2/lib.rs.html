@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="Source to the Rust file `/home/byron/.multirust/toolchains/stable/cargo/registry/src/github.com-0a35038f75765ae4/yup-oauth2-0.5.0/src/lib.rs`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang">
+
+    <title>lib.rs.html -- source</title>
+
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <section class="sidebar">
+        
+        
+    </section>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press 'S' to search, '?' for more options..."
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content source"><pre class="line-numbers"><span id="1"> 1</span>
+<span id="2"> 2</span>
+<span id="3"> 3</span>
+<span id="4"> 4</span>
+<span id="5"> 5</span>
+<span id="6"> 6</span>
+<span id="7"> 7</span>
+<span id="8"> 8</span>
+<span id="9"> 9</span>
+<span id="10">10</span>
+<span id="11">11</span>
+<span id="12">12</span>
+<span id="13">13</span>
+<span id="14">14</span>
+<span id="15">15</span>
+<span id="16">16</span>
+<span id="17">17</span>
+<span id="18">18</span>
+<span id="19">19</span>
+<span id="20">20</span>
+<span id="21">21</span>
+<span id="22">22</span>
+<span id="23">23</span>
+<span id="24">24</span>
+<span id="25">25</span>
+<span id="26">26</span>
+<span id="27">27</span>
+<span id="28">28</span>
+<span id="29">29</span>
+<span id="30">30</span>
+<span id="31">31</span>
+<span id="32">32</span>
+<span id="33">33</span>
+<span id="34">34</span>
+<span id="35">35</span>
+<span id="36">36</span>
+<span id="37">37</span>
+<span id="38">38</span>
+<span id="39">39</span>
+<span id="40">40</span>
+<span id="41">41</span>
+<span id="42">42</span>
+<span id="43">43</span>
+<span id="44">44</span>
+<span id="45">45</span>
+<span id="46">46</span>
+<span id="47">47</span>
+<span id="48">48</span>
+<span id="49">49</span>
+<span id="50">50</span>
+<span id="51">51</span>
+<span id="52">52</span>
+<span id="53">53</span>
+<span id="54">54</span>
+<span id="55">55</span>
+<span id="56">56</span>
+<span id="57">57</span>
+<span id="58">58</span>
+<span id="59">59</span>
+<span id="60">60</span>
+<span id="61">61</span>
+<span id="62">62</span>
+<span id="63">63</span>
+<span id="64">64</span>
+<span id="65">65</span>
+<span id="66">66</span>
+<span id="67">67</span>
+<span id="68">68</span>
+<span id="69">69</span>
+<span id="70">70</span>
+</pre><pre class='rust '>
+<span class='doccomment'>//! This library can be used to acquire oauth2.0 authentication for services.</span>
+<span class='doccomment'>//! At the time of writing, only one way of doing so is implemented, the [device flow](https://developers.google.com/youtube/v3/guides/authentication#devices), along with a flow </span>
+<span class='doccomment'>//! for [refreshing tokens](https://developers.google.com/youtube/v3/guides/authentication#devices)</span>
+<span class='doccomment'>//! </span>
+<span class='doccomment'>//! For your application to use this library, you will have to obtain an application</span>
+<span class='doccomment'>//! id and secret by [following this guide](https://developers.google.com/youtube/registering_an_application).</span>
+<span class='doccomment'>//! </span>
+<span class='doccomment'>//! # Device Flow Usage</span>
+<span class='doccomment'>//! As the `DeviceFlow` involves polling, the `DeviceFlowHelper` should be used</span>
+<span class='doccomment'>//! as means to adhere to the protocol, and remain resilient to all kinds of errors</span>
+<span class='doccomment'>//! that can occour on the way.</span>
+<span class='doccomment'>//!</span>
+<span class='doccomment'>//! The returned `Token` should be stored permanently to authorize future API requests.</span>
+<span class='doccomment'>//!</span>
+<span class='doccomment'>//! ```test_harness,no_run</span>
+<span class='doccomment'>//! #![cfg_attr(feature = &quot;nightly&quot;, feature(custom_derive, custom_attribute, plugin))]</span>
+<span class='doccomment'>//! #![cfg_attr(feature = &quot;nightly&quot;, plugin(serde_macros))]</span>
+<span class='doccomment'>//! extern crate hyper;</span>
+<span class='doccomment'>//! extern crate yup_oauth2 as oauth2;</span>
+<span class='doccomment'>//! extern crate serde;</span>
+<span class='doccomment'>//! </span>
+<span class='doccomment'>//! use oauth2::{Authenticator, DefaultAuthenticatorDelegate, PollInformation, ConsoleApplicationSecret, MemoryStorage, GetToken};</span>
+<span class='doccomment'>//! use serde::json;</span>
+<span class='doccomment'>//! use std::default::Default;</span>
+<span class='doccomment'>//! # const SECRET: &amp;&#39;static str = &quot;{\&quot;installed\&quot;:{\&quot;auth_uri\&quot;:\&quot;https://accounts.google.com/o/oauth2/auth\&quot;,\&quot;client_secret\&quot;:\&quot;UqkDJd5RFwnHoiG5x5Rub8SI\&quot;,\&quot;token_uri\&quot;:\&quot;https://accounts.google.com/o/oauth2/token\&quot;,\&quot;client_email\&quot;:\&quot;\&quot;,\&quot;redirect_uris\&quot;:[\&quot;urn:ietf:wg:oauth:2.0:oob\&quot;,\&quot;oob\&quot;],\&quot;client_x509_cert_url\&quot;:\&quot;\&quot;,\&quot;client_id\&quot;:\&quot;14070749909-vgip2f1okm7bkvajhi9jugan6126io9v.apps.googleusercontent.com\&quot;,\&quot;auth_provider_x509_cert_url\&quot;:\&quot;https://www.googleapis.com/oauth2/v1/certs\&quot;}}&quot;;</span>
+<span class='doccomment'>//!</span>
+<span class='doccomment'>//! # #[test] fn device() {</span>
+<span class='doccomment'>//! let secret = json::from_str::&lt;ConsoleApplicationSecret&gt;(SECRET).unwrap().installed.unwrap();</span>
+<span class='doccomment'>//! let res = Authenticator::new(&amp;secret, DefaultAuthenticatorDelegate,</span>
+<span class='doccomment'>//!                         hyper::Client::new(),</span>
+<span class='doccomment'>//!                         &lt;MemoryStorage as Default&gt;::default(), None)</span>
+<span class='doccomment'>//!                         .token(&amp;[&quot;https://www.googleapis.com/auth/youtube.upload&quot;]);</span>
+<span class='doccomment'>//! match res {</span>
+<span class='doccomment'>//!     Ok(t) =&gt; {</span>
+<span class='doccomment'>//!     // now you can use t.access_token to authenticate API calls within your</span>
+<span class='doccomment'>//!     // given scopes. It will not be valid forever, which is when you have to </span>
+<span class='doccomment'>//!     // refresh it using the `RefreshFlow`</span>
+<span class='doccomment'>//!     },</span>
+<span class='doccomment'>//!     Err(err) =&gt; println!(&quot;Failed to acquire token: {}&quot;, err),</span>
+<span class='doccomment'>//! }</span>
+<span class='doccomment'>//! # }</span>
+<span class='doccomment'>//! ```</span>
+<span class='doccomment'>//!</span>
+<span class='doccomment'>//! # Refresh Flow Usage</span>
+<span class='doccomment'>//! As the `Token` you retrieved previously will only be valid for a certain time, you will have</span>
+<span class='doccomment'>//! to use the information from the `Token.refresh_token` field to get a new `access_token`.</span>
+<span class='doccomment'>//!</span>
+<span class='doccomment'>//! ```test_harness,no_run</span>
+<span class='doccomment'>//! extern crate hyper;</span>
+<span class='doccomment'>//! extern crate yup_oauth2 as oauth2;</span>
+<span class='doccomment'>//! use oauth2::{RefreshFlow, FlowType, RefreshResult};</span>
+<span class='doccomment'>//!</span>
+<span class='doccomment'>//! # #[test] fn refresh() {</span>
+<span class='doccomment'>//! let mut f = RefreshFlow::new(hyper::Client::new());</span>
+<span class='doccomment'>//! let new_token = match *f.refresh_token(FlowType::Device,</span>
+<span class='doccomment'>//!                                        &quot;my_client_id&quot;, &quot;my_secret&quot;,</span>
+<span class='doccomment'>//!                                        &quot;my_refresh_token&quot;) {</span>
+<span class='doccomment'>//!                        RefreshResult::Success(ref t) =&gt; t,</span>
+<span class='doccomment'>//!                        _ =&gt; panic!(&quot;bad luck ;)&quot;)</span>
+<span class='doccomment'>//!                };</span>
+<span class='doccomment'>//! # }</span>
+<span class='doccomment'>//! ```</span>
+<span class='attribute'>#<span class='op'>!</span>[<span class='ident'>cfg_attr</span>(<span class='ident'>feature</span> <span class='op'>=</span> <span class='string'>&quot;nightly&quot;</span>, <span class='ident'>feature</span>(<span class='ident'>custom_derive</span>, <span class='ident'>custom_attribute</span>, <span class='ident'>plugin</span>))]</span>
+<span class='attribute'>#<span class='op'>!</span>[<span class='ident'>cfg_attr</span>(<span class='ident'>feature</span> <span class='op'>=</span> <span class='string'>&quot;nightly&quot;</span>, <span class='ident'>plugin</span>(<span class='ident'>serde_macros</span>))]</span>
+
+<span class='attribute'>#[<span class='ident'>cfg</span>(<span class='ident'>feature</span> <span class='op'>=</span> <span class='string'>&quot;nightly&quot;</span>)]</span>
+<span class='macro'>include</span><span class='macro'>!</span>(<span class='string'>&quot;lib.rs.in&quot;</span>);
+
+<span class='attribute'>#[<span class='ident'>cfg</span>(<span class='ident'>feature</span> <span class='op'>=</span> <span class='string'>&quot;with_syntex&quot;</span>)]</span>
+<span class='macro'>include</span><span class='macro'>!</span>(<span class='macro'>concat</span><span class='macro'>!</span>(<span class='macro'>env</span><span class='macro'>!</span>(<span class='string'>&quot;OUT_DIR&quot;</span>), <span class='string'>&quot;/lib.rs&quot;</span>));
+</pre>
+</section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <div id="help" class="hidden">
+        <div class="shortcuts">
+            <h1>Keyboard shortcuts</h1>
+            <dl>
+                <dt>?</dt>
+                <dd>Show this help dialog</dd>
+                <dt>S</dt>
+                <dd>Focus the search field</dd>
+                <dt>&larrb;</dt>
+                <dd>Move up in search results</dd>
+                <dt>&rarrb;</dt>
+                <dd>Move down in search results</dd>
+                <dt>&#9166;</dt>
+                <dd>Go to active search result</dd>
+            </dl>
+        </div>
+        <div class="infos">
+            <h1>Search tricks</h1>
+            <p>
+                Prefix searches with a type followed by a colon (e.g.
+                <code>fn:</code>) to restrict the search to a given type.
+            </p>
+            <p>
+                Accepted types are: <code>fn</code>, <code>mod</code>,
+                <code>struct</code>, <code>enum</code>,
+                <code>trait</code>, <code>typedef</code> (or
+                <code>tdef</code>).
+            </p>
+        </div>
+    </div>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "yup_oauth2";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../../jquery.js"></script>
+    <script src="../../main.js"></script>
+    
+    <script async src="../../search-index.js"></script>
+</body>
+</html>

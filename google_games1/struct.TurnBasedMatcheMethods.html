@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `TurnBasedMatcheMethods` struct in crate `google_games1`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, TurnBasedMatcheMethods">
+
+    <title>google_games1::TurnBasedMatcheMethods - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../main.css">
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <section class="sidebar">
+        
+        <p class='location'><a href='index.html'>google_games1</a></p><script>window.sidebarCurrent = {name: 'TurnBasedMatcheMethods', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </section>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press 'S' to search, '?' for more options..."
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content struct">
+<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_games1</a>::<wbr><a class='struct' href=''>TurnBasedMatcheMethods</a><wbr></span><span class='out-of-band'><span id='render-detail'>
+            <a id="collapse-all" href="#">[-]</a>&nbsp;<a id="expand-all" href="#">[+]</a>
+        </span><a id='src-95355' href='../src/google_games1///home/byron/dev/rust/google-apis-rs/target/debug/build/google-games1-1aaadfb50d4e76c5/out/lib.rs.html#24441-24443'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct TurnBasedMatcheMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
+    // some fields omitted
+}</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>turnBasedMatche</em> resources.
+It is not used directly, but through the <code>Games</code> hub.</p>
+
+<h1 id="example" class='section-header'><a
+                           href="#example">Example</a></h1>
+<p>Instantiate a resource builder</p>
+<pre id='rust-example-rendered' class='rust '>
+<span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>hyper</span>;
+<span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>yup_oauth2</span> <span class='kw'>as</span> <span class='ident'>oauth2</span>;
+<span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>google_games1</span> <span class='kw'>as</span> <span class='ident'>games1</span>;
+ 
+<span class='kw'>use</span> <span class='ident'>std</span>::<span class='ident'>default</span>::<span class='ident'>Default</span>;
+<span class='kw'>use</span> <span class='ident'>oauth2</span>::{<span class='ident'>Authenticator</span>, <span class='ident'>DefaultAuthenticatorDelegate</span>, <span class='ident'>ApplicationSecret</span>, <span class='ident'>MemoryStorage</span>};
+<span class='kw'>use</span> <span class='ident'>games1</span>::<span class='ident'>Games</span>;
+ 
+<span class='kw'>let</span> <span class='ident'>secret</span>: <span class='ident'>ApplicationSecret</span> <span class='op'>=</span> <span class='ident'>Default</span>::<span class='ident'>default</span>();
+<span class='kw'>let</span> <span class='ident'>auth</span> <span class='op'>=</span> <span class='ident'>Authenticator</span>::<span class='ident'>new</span>(<span class='kw-2'>&amp;</span><span class='ident'>secret</span>, <span class='ident'>DefaultAuthenticatorDelegate</span>,
+                              <span class='ident'>hyper</span>::<span class='ident'>Client</span>::<span class='ident'>new</span>(),
+                              <span class='op'>&lt;</span><span class='ident'>MemoryStorage</span> <span class='kw'>as</span> <span class='ident'>Default</span><span class='op'>&gt;</span>::<span class='ident'>default</span>(), <span class='prelude-val'>None</span>);
+<span class='kw'>let</span> <span class='kw-2'>mut</span> <span class='ident'>hub</span> <span class='op'>=</span> <span class='ident'>Games</span>::<span class='ident'>new</span>(<span class='ident'>hyper</span>::<span class='ident'>Client</span>::<span class='ident'>new</span>(), <span class='ident'>auth</span>);
+<span class='comment'>// Usually you wouldn&#39;t bind this to a variable, but keep calling *CallBuilders*</span>
+<span class='comment'>// like `cancel(...)`, `create(...)`, `decline(...)`, `dismiss(...)`, `finish(...)`, `get(...)`, `join(...)`, `leave(...)`, `leave_turn(...)`, `list(...)`, `rematch(...)`, `sync(...)` and `take_turn(...)`</span>
+<span class='comment'>// to build up your call.</span>
+<span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>turn_based_matches</span>();
+</pre>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_games1/struct.TurnBasedMatcheMethods.html' title='google_games1::TurnBasedMatcheMethods'>TurnBasedMatcheMethods</a>&lt;'a, C, A&gt;</code></h3><div class='impl-items'><h4 id='method.dismiss' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.dismiss' class='fnname'>dismiss</a>(&amp;self, match_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_games1/struct.TurnBasedMatcheDismisCall.html' title='google_games1::TurnBasedMatcheDismisCall'>TurnBasedMatcheDismisCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Dismiss a turn-based match from the match list. The match will no longer show up in the list and will not generate notifications.</p>
+
+<h1 id="arguments" class='section-header'><a
+                           href="#arguments">Arguments</a></h1>
+<ul>
+<li><code>matchId</code> - The ID of the match.</li>
+</ul>
+</div><h4 id='method.sync' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.sync' class='fnname'>sync</a>(&amp;self) -&gt; <a class='struct' href='../google_games1/struct.TurnBasedMatcheSyncCall.html' title='google_games1::TurnBasedMatcheSyncCall'>TurnBasedMatcheSyncCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Returns turn-based matches the player is or was involved in that changed since the last sync call, with the least recent changes coming first. Matches that should be removed from the local cache will have a status of MATCH_DELETED.</p>
+</div><h4 id='method.decline' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.decline' class='fnname'>decline</a>(&amp;self, match_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_games1/struct.TurnBasedMatcheDeclineCall.html' title='google_games1::TurnBasedMatcheDeclineCall'>TurnBasedMatcheDeclineCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Decline an invitation to play a turn-based match.</p>
+
+<h1 id="arguments" class='section-header'><a
+                           href="#arguments">Arguments</a></h1>
+<ul>
+<li><code>matchId</code> - The ID of the match.</li>
+</ul>
+</div><h4 id='method.get' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, match_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_games1/struct.TurnBasedMatcheGetCall.html' title='google_games1::TurnBasedMatcheGetCall'>TurnBasedMatcheGetCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Get the data for a turn-based match.</p>
+
+<h1 id="arguments" class='section-header'><a
+                           href="#arguments">Arguments</a></h1>
+<ul>
+<li><code>matchId</code> - The ID of the match.</li>
+</ul>
+</div><h4 id='method.create' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.create' class='fnname'>create</a>(&amp;self, request: <a class='struct' href='../google_games1/struct.TurnBasedMatchCreateRequest.html' title='google_games1::TurnBasedMatchCreateRequest'>TurnBasedMatchCreateRequest</a>) -&gt; <a class='struct' href='../google_games1/struct.TurnBasedMatcheCreateCall.html' title='google_games1::TurnBasedMatcheCreateCall'>TurnBasedMatcheCreateCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Create a turn-based match.</p>
+
+<h1 id="arguments" class='section-header'><a
+                           href="#arguments">Arguments</a></h1>
+<ul>
+<li><code>request</code> - No description provided.</li>
+</ul>
+</div><h4 id='method.join' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.join' class='fnname'>join</a>(&amp;self, match_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_games1/struct.TurnBasedMatcheJoinCall.html' title='google_games1::TurnBasedMatcheJoinCall'>TurnBasedMatcheJoinCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Join a turn-based match.</p>
+
+<h1 id="arguments" class='section-header'><a
+                           href="#arguments">Arguments</a></h1>
+<ul>
+<li><code>matchId</code> - The ID of the match.</li>
+</ul>
+</div><h4 id='method.leave_turn' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.leave_turn' class='fnname'>leave_turn</a>(&amp;self, match_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, match_version: <a href='http://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>) -&gt; <a class='struct' href='../google_games1/struct.TurnBasedMatcheLeaveTurnCall.html' title='google_games1::TurnBasedMatcheLeaveTurnCall'>TurnBasedMatcheLeaveTurnCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Leave a turn-based match during the current player&#39;s turn, without canceling the match.</p>
+
+<h1 id="arguments" class='section-header'><a
+                           href="#arguments">Arguments</a></h1>
+<ul>
+<li><code>matchId</code> - The ID of the match.</li>
+<li><code>matchVersion</code> - The version of the match being updated.</li>
+</ul>
+</div><h4 id='method.cancel' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.cancel' class='fnname'>cancel</a>(&amp;self, match_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_games1/struct.TurnBasedMatcheCancelCall.html' title='google_games1::TurnBasedMatcheCancelCall'>TurnBasedMatcheCancelCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Cancel a turn-based match.</p>
+
+<h1 id="arguments" class='section-header'><a
+                           href="#arguments">Arguments</a></h1>
+<ul>
+<li><code>matchId</code> - The ID of the match.</li>
+</ul>
+</div><h4 id='method.finish' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.finish' class='fnname'>finish</a>(&amp;self, request: <a class='struct' href='../google_games1/struct.TurnBasedMatchResults.html' title='google_games1::TurnBasedMatchResults'>TurnBasedMatchResults</a>, match_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_games1/struct.TurnBasedMatcheFinishCall.html' title='google_games1::TurnBasedMatcheFinishCall'>TurnBasedMatcheFinishCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Finish a turn-based match. Each player should make this call once, after all results are in. Only the player whose turn it is may make the first call to Finish, and can pass in the final match state.</p>
+
+<h1 id="arguments" class='section-header'><a
+                           href="#arguments">Arguments</a></h1>
+<ul>
+<li><code>request</code> - No description provided.</li>
+<li><code>matchId</code> - The ID of the match.</li>
+</ul>
+</div><h4 id='method.leave' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.leave' class='fnname'>leave</a>(&amp;self, match_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_games1/struct.TurnBasedMatcheLeaveCall.html' title='google_games1::TurnBasedMatcheLeaveCall'>TurnBasedMatcheLeaveCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Leave a turn-based match when it is not the current player&#39;s turn, without canceling the match.</p>
+
+<h1 id="arguments" class='section-header'><a
+                           href="#arguments">Arguments</a></h1>
+<ul>
+<li><code>matchId</code> - The ID of the match.</li>
+</ul>
+</div><h4 id='method.list' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self) -&gt; <a class='struct' href='../google_games1/struct.TurnBasedMatcheListCall.html' title='google_games1::TurnBasedMatcheListCall'>TurnBasedMatcheListCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Returns turn-based matches the player is or was involved in.</p>
+</div><h4 id='method.take_turn' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.take_turn' class='fnname'>take_turn</a>(&amp;self, request: <a class='struct' href='../google_games1/struct.TurnBasedMatchTurn.html' title='google_games1::TurnBasedMatchTurn'>TurnBasedMatchTurn</a>, match_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_games1/struct.TurnBasedMatcheTakeTurnCall.html' title='google_games1::TurnBasedMatcheTakeTurnCall'>TurnBasedMatcheTakeTurnCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Commit the results of a player turn.</p>
+
+<h1 id="arguments" class='section-header'><a
+                           href="#arguments">Arguments</a></h1>
+<ul>
+<li><code>request</code> - No description provided.</li>
+<li><code>matchId</code> - The ID of the match.</li>
+</ul>
+</div><h4 id='method.rematch' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.rematch' class='fnname'>rematch</a>(&amp;self, match_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_games1/struct.TurnBasedMatcheRematchCall.html' title='google_games1::TurnBasedMatcheRematchCall'>TurnBasedMatcheRematchCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Create a rematch of a match that was previously completed, with the same participants. This can be called by only one player on a match still in their list; the player must have called Finish first. Returns the newly created match; it will be the caller&#39;s turn.</p>
+
+<h1 id="arguments" class='section-header'><a
+                           href="#arguments">Arguments</a></h1>
+<ul>
+<li><code>matchId</code> - The ID of the match.</li>
+</ul>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_games1/trait.MethodsBuilder.html' title='google_games1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_games1/struct.TurnBasedMatcheMethods.html' title='google_games1::TurnBasedMatcheMethods'>TurnBasedMatcheMethods</a>&lt;'a, C, A&gt;</code></h3><div class='impl-items'></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <div id="help" class="hidden">
+        <div class="shortcuts">
+            <h1>Keyboard shortcuts</h1>
+            <dl>
+                <dt>?</dt>
+                <dd>Show this help dialog</dd>
+                <dt>S</dt>
+                <dd>Focus the search field</dd>
+                <dt>&larrb;</dt>
+                <dd>Move up in search results</dd>
+                <dt>&rarrb;</dt>
+                <dd>Move down in search results</dd>
+                <dt>&#9166;</dt>
+                <dd>Go to active search result</dd>
+            </dl>
+        </div>
+        <div class="infos">
+            <h1>Search tricks</h1>
+            <p>
+                Prefix searches with a type followed by a colon (e.g.
+                <code>fn:</code>) to restrict the search to a given type.
+            </p>
+            <p>
+                Accepted types are: <code>fn</code>, <code>mod</code>,
+                <code>struct</code>, <code>enum</code>,
+                <code>trait</code>, <code>typedef</code> (or
+                <code>tdef</code>).
+            </p>
+        </div>
+    </div>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "google_games1";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../jquery.js"></script>
+    <script src="../main.js"></script>
+    
+    <script async src="../search-index.js"></script>
+</body>
+</html>
