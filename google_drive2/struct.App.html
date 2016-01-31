@@ -9,6 +9,7 @@
 
     <title>google_drive2::App - Rust</title>
 
+    <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
 
     
@@ -24,55 +25,56 @@
 
     
 
-    <section class="sidebar">
+    <nav class="sidebar">
         
         <p class='location'><a href='index.html'>google_drive2</a></p><script>window.sidebarCurrent = {name: 'App', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
-    </section>
+    </nav>
 
     <nav class="sub">
         <form class="search-form js-only">
             <div class="search-container">
                 <input class="search-input" name="search"
                        autocomplete="off"
-                       placeholder="Click or press 'S' to search, '?' for more options..."
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
                        type="search">
             </div>
         </form>
     </nav>
 
     <section id='main' class="content struct">
-<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_drive2</a>::<wbr><a class='struct' href=''>App</a><wbr></span><span class='out-of-band'><span id='render-detail'>
-            <a id="collapse-all" href="#">[-]</a>&nbsp;<a id="expand-all" href="#">[+]</a>
-        </span><a id='src-40070' href='../src/google_drive2///home/byron/dev/rust/google-apis-rs/target/debug/build/google-drive2-9dd2c9f7d7a6c91b/out/lib.rs.html#9567-9616'>[src]</a></span></h1>
+<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_drive2</a>::<wbr><a class='struct' href=''>App</a></span><span class='out-of-band'><span id='render-detail'>
+            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                [<span class='inner'>&#x2212;</span>]
+            </a>
+        </span><a id='src-7216' class='srclink' href='../src/google_drive2///Users/byron/dev/rs/google-apis-rs/target/debug/build/google-drive2-6658037b670a9eb5/out/lib.rs.html#12769-12818' title='goto source code'>[src]</a></span></h1>
 <pre class='rust struct'>pub struct App {
-    pub secondary_mime_types: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;&gt;,
-    pub use_by_default: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt;,
-    pub installed: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt;,
-    pub product_url: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub supports_import: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt;,
-    pub supports_create: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt;,
-    pub long_description: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub short_description: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub id: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub has_drive_wide_scope: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt;,
-    pub object_type: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub kind: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub primary_file_extensions: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;&gt;,
-    pub primary_mime_types: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;&gt;,
-    pub create_url: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub icons: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='../google_drive2/struct.AppIcons.html' title='google_drive2::AppIcons'>AppIcons</a>&gt;&gt;,
-    pub supports_offline_create: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt;,
-    pub secondary_file_extensions: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;&gt;,
-    pub name: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub authorized: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt;,
-    pub supports_multi_open: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt;,
-    pub create_in_folder_template: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub open_url_template: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub product_id: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub secondary_mime_types: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;&gt;,
+    pub use_by_default: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt;,
+    pub installed: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt;,
+    pub product_url: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub supports_import: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt;,
+    pub supports_create: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt;,
+    pub long_description: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub short_description: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub id: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub has_drive_wide_scope: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt;,
+    pub object_type: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub kind: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub primary_file_extensions: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;&gt;,
+    pub primary_mime_types: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;&gt;,
+    pub create_url: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub icons: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='../google_drive2/struct.AppIcons.html' title='google_drive2::AppIcons'>AppIcons</a>&gt;&gt;,
+    pub supports_offline_create: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt;,
+    pub secondary_file_extensions: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;&gt;,
+    pub name: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub authorized: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt;,
+    pub supports_multi_open: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt;,
+    pub create_in_folder_template: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub open_url_template: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub product_id: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
 }</pre><div class='docblock'><p>The apps resource provides a list of the apps that a user has installed, with information about each app&#39;s supported MIME types, file extensions, and other details.</p>
 
-<h1 id="activities" class='section-header'><a
-                           href="#activities">Activities</a></h1>
+<h1 id='activities' class='section-header'><a href='#activities'>Activities</a></h1>
 <p>This type is used in activities, which are methods you may call on this type or where this type is involved in. 
 The list links the activity name, along with information about where it is used (one of <em>request</em> and <em>response</em>).</p>
 
@@ -81,71 +83,108 @@ The list links the activity name, along with information about where it is used 
 <li><a href="struct.AppListCall.html">list apps</a> (none)</li>
 </ul>
 </div><h2 class='fields'>Fields</h2>
-<table><tr><td id='structfield.secondary_mime_types'><a class='stability Unmarked' title='No stability level'></a><code>secondary_mime_types</code></td><td><div class='docblock'><p>The list of secondary mime types.</p>
-</div></td></tr><tr><td id='structfield.use_by_default'><a class='stability Unmarked' title='No stability level'></a><code>use_by_default</code></td><td><div class='docblock'><p>Whether the app is selected as the default handler for the types it supports.</p>
-</div></td></tr><tr><td id='structfield.installed'><a class='stability Unmarked' title='No stability level'></a><code>installed</code></td><td><div class='docblock'><p>Whether the app is installed.</p>
-</div></td></tr><tr><td id='structfield.product_url'><a class='stability Unmarked' title='No stability level'></a><code>product_url</code></td><td><div class='docblock'><p>A link to the product listing for this app.</p>
-</div></td></tr><tr><td id='structfield.supports_import'><a class='stability Unmarked' title='No stability level'></a><code>supports_import</code></td><td><div class='docblock'><p>Whether this app supports importing Google Docs.</p>
-</div></td></tr><tr><td id='structfield.supports_create'><a class='stability Unmarked' title='No stability level'></a><code>supports_create</code></td><td><div class='docblock'><p>Whether this app supports creating new objects.</p>
-</div></td></tr><tr><td id='structfield.long_description'><a class='stability Unmarked' title='No stability level'></a><code>long_description</code></td><td><div class='docblock'><p>A long description of the app.</p>
-</div></td></tr><tr><td id='structfield.short_description'><a class='stability Unmarked' title='No stability level'></a><code>short_description</code></td><td><div class='docblock'><p>A short description of the app.</p>
-</div></td></tr><tr><td id='structfield.id'><a class='stability Unmarked' title='No stability level'></a><code>id</code></td><td><div class='docblock'><p>The ID of the app.</p>
-</div></td></tr><tr><td id='structfield.has_drive_wide_scope'><a class='stability Unmarked' title='No stability level'></a><code>has_drive_wide_scope</code></td><td><div class='docblock'><p>Whether the app has drive-wide scope. An app with drive-wide scope can access all files in the user&#39;s drive.</p>
-</div></td></tr><tr><td id='structfield.object_type'><a class='stability Unmarked' title='No stability level'></a><code>object_type</code></td><td><div class='docblock'><p>The type of object this app creates (e.g. Chart). If empty, the app name should be used instead.</p>
-</div></td></tr><tr><td id='structfield.kind'><a class='stability Unmarked' title='No stability level'></a><code>kind</code></td><td><div class='docblock'><p>This is always drive#app.</p>
-</div></td></tr><tr><td id='structfield.primary_file_extensions'><a class='stability Unmarked' title='No stability level'></a><code>primary_file_extensions</code></td><td><div class='docblock'><p>The list of primary file extensions.</p>
-</div></td></tr><tr><td id='structfield.primary_mime_types'><a class='stability Unmarked' title='No stability level'></a><code>primary_mime_types</code></td><td><div class='docblock'><p>The list of primary mime types.</p>
-</div></td></tr><tr><td id='structfield.create_url'><a class='stability Unmarked' title='No stability level'></a><code>create_url</code></td><td><div class='docblock'><p>The url to create a new file with this app.</p>
-</div></td></tr><tr><td id='structfield.icons'><a class='stability Unmarked' title='No stability level'></a><code>icons</code></td><td><div class='docblock'><p>The various icons for the app.</p>
-</div></td></tr><tr><td id='structfield.supports_offline_create'><a class='stability Unmarked' title='No stability level'></a><code>supports_offline_create</code></td><td><div class='docblock'><p>Whether this app supports creating new files when offline.</p>
-</div></td></tr><tr><td id='structfield.secondary_file_extensions'><a class='stability Unmarked' title='No stability level'></a><code>secondary_file_extensions</code></td><td><div class='docblock'><p>The list of secondary file extensions.</p>
-</div></td></tr><tr><td id='structfield.name'><a class='stability Unmarked' title='No stability level'></a><code>name</code></td><td><div class='docblock'><p>The name of the app.</p>
-</div></td></tr><tr><td id='structfield.authorized'><a class='stability Unmarked' title='No stability level'></a><code>authorized</code></td><td><div class='docblock'><p>Whether the app is authorized to access data on the user&#39;s Drive.</p>
-</div></td></tr><tr><td id='structfield.supports_multi_open'><a class='stability Unmarked' title='No stability level'></a><code>supports_multi_open</code></td><td><div class='docblock'><p>Whether this app supports opening more than one file.</p>
-</div></td></tr><tr><td id='structfield.create_in_folder_template'><a class='stability Unmarked' title='No stability level'></a><code>create_in_folder_template</code></td><td><div class='docblock'><p>The template url to create a new file with this app in a given folder. The template will contain {folderId} to be replaced by the folder to create the new file in.</p>
-</div></td></tr><tr><td id='structfield.open_url_template'><a class='stability Unmarked' title='No stability level'></a><code>open_url_template</code></td><td><div class='docblock'><p>The template url for opening files with this app. The template will contain {ids} and/or {exportIds} to be replaced by the actual file ids. See  Open Files  for the full documentation.</p>
-</div></td></tr><tr><td id='structfield.product_id'><a class='stability Unmarked' title='No stability level'></a><code>product_id</code></td><td><div class='docblock'><p>The ID of the product listing for this app.</p>
-</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='../google_drive2/trait.Resource.html' title='google_drive2::Resource'>Resource</a> for <a class='struct' href='../google_drive2/struct.App.html' title='google_drive2::App'>App</a></code></h3><div class='impl-items'></div><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='../google_drive2/trait.ResponseResult.html' title='google_drive2::ResponseResult'>ResponseResult</a> for <a class='struct' href='../google_drive2/struct.App.html' title='google_drive2::App'>App</a></code></h3><div class='impl-items'></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_drive2/struct.App.html' title='google_drive2::App'>App</a></code></h3><div class='impl-items'><h4 id='method.fmt' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#method.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='http://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='http://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
-</div><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_drive2/struct.App.html' title='google_drive2::App'>App</a></code></h3><div class='impl-items'><h4 id='method.clone' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_drive2/struct.App.html' title='google_drive2::App'>App</a></code></h4>
-<h4 id='method.clone_from' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code></h4>
-</div><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_drive2/struct.App.html' title='google_drive2::App'>App</a></code></h3><div class='impl-items'><h4 id='method.default' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/default/trait.Default.html#method.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_drive2/struct.App.html' title='google_drive2::App'>App</a></code></h4>
-</div><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='../serde/de/trait.Deserialize.html' title='serde::de::Deserialize'>Deserialize</a> for <a class='struct' href='../google_drive2/struct.App.html' title='google_drive2::App'>App</a></code></h3><div class='impl-items'><h4 id='method.deserialize' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='../serde/de/trait.Deserialize.html#method.deserialize' class='fnname'>deserialize</a>&lt;__D&gt;(deserializer: &amp;mut __D) -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../google_drive2/struct.App.html' title='google_drive2::App'>App</a>, __D&gt; <span class='where'>where __D: <a class='trait' href='../serde/de/trait.Deserializer.html' title='serde::de::Deserializer'>Deserializer</a></span></code></h4>
-</div><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='../serde/ser/trait.Serialize.html' title='serde::ser::Serialize'>Serialize</a> for <a class='struct' href='../google_drive2/struct.App.html' title='google_drive2::App'>App</a></code></h3><div class='impl-items'><h4 id='method.serialize' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='../serde/ser/trait.Serialize.html#method.serialize' class='fnname'>serialize</a>&lt;__S&gt;(&amp;self, serializer: &amp;mut __S) -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, __S&gt; <span class='where'>where __S: <a class='trait' href='../serde/ser/trait.Serializer.html' title='serde::ser::Serializer'>Serializer</a></span></code></h4>
+<table><tr class='stab '>
+                                  <td id='structfield.secondary_mime_types'><code>secondary_mime_types</code></td><td><div class='docblock'><p>The list of secondary mime types.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.use_by_default'><code>use_by_default</code></td><td><div class='docblock'><p>Whether the app is selected as the default handler for the types it supports.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.installed'><code>installed</code></td><td><div class='docblock'><p>Whether the app is installed.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.product_url'><code>product_url</code></td><td><div class='docblock'><p>A link to the product listing for this app.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.supports_import'><code>supports_import</code></td><td><div class='docblock'><p>Whether this app supports importing Google Docs.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.supports_create'><code>supports_create</code></td><td><div class='docblock'><p>Whether this app supports creating new objects.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.long_description'><code>long_description</code></td><td><div class='docblock'><p>A long description of the app.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.short_description'><code>short_description</code></td><td><div class='docblock'><p>A short description of the app.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.id'><code>id</code></td><td><div class='docblock'><p>The ID of the app.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.has_drive_wide_scope'><code>has_drive_wide_scope</code></td><td><div class='docblock'><p>Whether the app has drive-wide scope. An app with drive-wide scope can access all files in the user&#39;s drive.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.object_type'><code>object_type</code></td><td><div class='docblock'><p>The type of object this app creates (e.g. Chart). If empty, the app name should be used instead.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.kind'><code>kind</code></td><td><div class='docblock'><p>This is always drive#app.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.primary_file_extensions'><code>primary_file_extensions</code></td><td><div class='docblock'><p>The list of primary file extensions.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.primary_mime_types'><code>primary_mime_types</code></td><td><div class='docblock'><p>The list of primary mime types.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.create_url'><code>create_url</code></td><td><div class='docblock'><p>The url to create a new file with this app.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.icons'><code>icons</code></td><td><div class='docblock'><p>The various icons for the app.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.supports_offline_create'><code>supports_offline_create</code></td><td><div class='docblock'><p>Whether this app supports creating new files when offline.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.secondary_file_extensions'><code>secondary_file_extensions</code></td><td><div class='docblock'><p>The list of secondary file extensions.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.name'><code>name</code></td><td><div class='docblock'><p>The name of the app.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.authorized'><code>authorized</code></td><td><div class='docblock'><p>Whether the app is authorized to access data on the user&#39;s Drive.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.supports_multi_open'><code>supports_multi_open</code></td><td><div class='docblock'><p>Whether this app supports opening more than one file.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.create_in_folder_template'><code>create_in_folder_template</code></td><td><div class='docblock'><p>The template url to create a new file with this app in a given folder. The template will contain {folderId} to be replaced by the folder to create the new file in.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.open_url_template'><code>open_url_template</code></td><td><div class='docblock'><p>The template url for opening files with this app. The template will contain {ids} and/or {exportIds} to be replaced by the actual file ids. See  Open Files  for the full documentation.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.product_id'><code>product_id</code></td><td><div class='docblock'><p>The ID of the product listing for this app.</p>
+</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl <a class='trait' href='../serde/de/trait.Deserialize.html' title='serde::de::Deserialize'>Deserialize</a> for <a class='struct' href='../google_drive2/struct.App.html' title='google_drive2::App'>App</a></code></h3><div class='impl-items'><h4 id='method.deserialize' class='method'><code>fn <a href='../serde/de/trait.Deserialize.html#method.deserialize' class='fnname'>deserialize</a>&lt;__D&gt;(deserializer: &amp;mut __D) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../google_drive2/struct.App.html' title='google_drive2::App'>App</a>, __D::Error&gt; <span class='where'>where __D: <a class='trait' href='../serde/de/trait.Deserializer.html' title='serde::de::Deserializer'>Deserializer</a></span></code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='../serde/ser/trait.Serialize.html' title='serde::ser::Serialize'>Serialize</a> for <a class='struct' href='../google_drive2/struct.App.html' title='google_drive2::App'>App</a></code></h3><div class='impl-items'><h4 id='method.serialize' class='method'><code>fn <a href='../serde/ser/trait.Serialize.html#method.serialize' class='fnname'>serialize</a>&lt;__S&gt;(&amp;self, serializer: &amp;mut __S) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, __S::Error&gt; <span class='where'>where __S: <a class='trait' href='../serde/ser/trait.Serializer.html' title='serde::ser::Serializer'>Serializer</a></span></code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='../google_drive2/trait.Resource.html' title='google_drive2::Resource'>Resource</a> for <a class='struct' href='../google_drive2/struct.App.html' title='google_drive2::App'>App</a></code></h3><div class='impl-items'></div><h3 class='impl'><code>impl <a class='trait' href='../google_drive2/trait.ResponseResult.html' title='google_drive2::ResponseResult'>ResponseResult</a> for <a class='struct' href='../google_drive2/struct.App.html' title='google_drive2::App'>App</a></code></h3><div class='impl-items'></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_drive2/struct.App.html' title='google_drive2::App'>App</a></code></h3><div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#method.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_drive2/struct.App.html' title='google_drive2::App'>App</a></code></h3><div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_drive2/struct.App.html' title='google_drive2::App'>App</a></code></h4>
+<h4 id='method.clone_from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_drive2/struct.App.html' title='google_drive2::App'>App</a></code></h3><div class='impl-items'><h4 id='method.default' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#method.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_drive2/struct.App.html' title='google_drive2::App'>App</a></code></h4>
 </div></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
 
-    <div id="help" class="hidden">
-        <div class="shortcuts">
-            <h1>Keyboard shortcuts</h1>
-            <dl>
-                <dt>?</dt>
-                <dd>Show this help dialog</dd>
-                <dt>S</dt>
-                <dd>Focus the search field</dd>
-                <dt>&larrb;</dt>
-                <dd>Move up in search results</dd>
-                <dt>&rarrb;</dt>
-                <dd>Move down in search results</dd>
-                <dt>&#9166;</dt>
-                <dd>Go to active search result</dd>
-            </dl>
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code>)
+                </p>
+            </div>
         </div>
-        <div class="infos">
-            <h1>Search tricks</h1>
-            <p>
-                Prefix searches with a type followed by a colon (e.g.
-                <code>fn:</code>) to restrict the search to a given type.
-            </p>
-            <p>
-                Accepted types are: <code>fn</code>, <code>mod</code>,
-                <code>struct</code>, <code>enum</code>,
-                <code>trait</code>, <code>typedef</code> (or
-                <code>tdef</code>).
-            </p>
-        </div>
-    </div>
+    </aside>
 
     
 
@@ -157,6 +196,6 @@ The list links the activity name, along with information about where it is used 
     <script src="../jquery.js"></script>
     <script src="../main.js"></script>
     
-    <script async src="../search-index.js"></script>
+    <script defer src="../search-index.js"></script>
 </body>
 </html>

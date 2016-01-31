@@ -9,6 +9,7 @@
 
     <title>lib.rs.html -- source</title>
 
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../../main.css">
 
     
@@ -24,17 +25,17 @@
 
     
 
-    <section class="sidebar">
+    <nav class="sidebar">
         
         
-    </section>
+    </nav>
 
     <nav class="sub">
         <form class="search-form js-only">
             <div class="search-container">
                 <input class="search-input" name="search"
                        autocomplete="off"
-                       placeholder="Click or press 'S' to search, '?' for more options..."
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
                        type="search">
             </div>
         </form>
@@ -290,12 +291,14 @@
 <span id="248">248</span>
 <span id="249">249</span>
 <span id="250">250</span>
+<span id="251">251</span>
+<span id="252">252</span>
 </pre><pre class='rust '>
 <span class='comment'>// DO NOT EDIT !</span>
 <span class='comment'>// This file was generated automatically from &#39;src/mako/api/lib.rs.mako&#39;</span>
 <span class='comment'>// DO NOT EDIT !</span>
 
-<span class='doccomment'>//! This documentation was generated from *drive* crate version *0.1.8+20150326*, where *20150326* is the exact revision of the *drive:v2* schema built by the [mako](http://www.makotemplates.org/) code generator *v0.1.8*.</span>
+<span class='doccomment'>//! This documentation was generated from *drive* crate version *0.1.11+20160126*, where *20160126* is the exact revision of the *drive:v2* schema built by the [mako](http://www.makotemplates.org/) code generator *v0.1.11*.</span>
 <span class='doccomment'>//! </span>
 <span class='doccomment'>//! Everything else about the *drive* *v2* API can be found at the</span>
 <span class='doccomment'>//! [official documentation site](https://developers.google.com/drive/).</span>
@@ -317,7 +320,7 @@
 <span class='doccomment'>//! * [comments](struct.Comment.html)</span>
 <span class='doccomment'>//!  * [*delete*](struct.CommentDeleteCall.html), [*get*](struct.CommentGetCall.html), [*insert*](struct.CommentInsertCall.html), [*list*](struct.CommentListCall.html), [*patch*](struct.CommentPatchCall.html) and [*update*](struct.CommentUpdateCall.html)</span>
 <span class='doccomment'>//! * [files](struct.File.html)</span>
-<span class='doccomment'>//!  * [*copy*](struct.FileCopyCall.html), [*delete*](struct.FileDeleteCall.html), [*empty trash*](struct.FileEmptyTrashCall.html), [*get*](struct.FileGetCall.html), [*insert*](struct.FileInsertCall.html), [*list*](struct.FileListCall.html), [*patch*](struct.FilePatchCall.html), [*touch*](struct.FileTouchCall.html), [*trash*](struct.FileTrashCall.html), [*untrash*](struct.FileUntrashCall.html), [*update*](struct.FileUpdateCall.html) and [*watch*](struct.FileWatchCall.html)</span>
+<span class='doccomment'>//!  * [*copy*](struct.FileCopyCall.html), [*delete*](struct.FileDeleteCall.html), [*empty trash*](struct.FileEmptyTrashCall.html), [*generate ids*](struct.FileGenerateIdCall.html), [*get*](struct.FileGetCall.html), [*insert*](struct.FileInsertCall.html), [*list*](struct.FileListCall.html), [*patch*](struct.FilePatchCall.html), [*touch*](struct.FileTouchCall.html), [*trash*](struct.FileTrashCall.html), [*untrash*](struct.FileUntrashCall.html), [*update*](struct.FileUpdateCall.html) and [*watch*](struct.FileWatchCall.html)</span>
 <span class='doccomment'>//! * parents</span>
 <span class='doccomment'>//!  * [*delete*](struct.ParentDeleteCall.html), [*get*](struct.ParentGetCall.html), [*insert*](struct.ParentInsertCall.html) and [*list*](struct.ParentListCall.html)</span>
 <span class='doccomment'>//! * [permissions](struct.Permission.html)</span>
@@ -341,16 +344,16 @@
 <span class='doccomment'>//! Download supported by ...</span>
 <span class='doccomment'>//! </span>
 <span class='doccomment'>//! * [*watch files*](struct.FileWatchCall.html)</span>
-<span class='doccomment'>//! * [*get files*](struct.FileGetCall.html)</span>
 <span class='doccomment'>//! * [*get realtime*](struct.RealtimeGetCall.html)</span>
+<span class='doccomment'>//! * [*get files*](struct.FileGetCall.html)</span>
 <span class='doccomment'>//! </span>
 <span class='doccomment'>//! Subscription supported by ...</span>
 <span class='doccomment'>//! </span>
 <span class='doccomment'>//! * [*watch files*](struct.FileWatchCall.html)</span>
-<span class='doccomment'>//! * [*get files*](struct.FileGetCall.html)</span>
 <span class='doccomment'>//! * [*watch changes*](struct.ChangeWatchCall.html)</span>
 <span class='doccomment'>//! * [*insert files*](struct.FileInsertCall.html)</span>
 <span class='doccomment'>//! * [*list changes*](struct.ChangeListCall.html)</span>
+<span class='doccomment'>//! * [*get files*](struct.FileGetCall.html)</span>
 <span class='doccomment'>//! </span>
 <span class='doccomment'>//! </span>
 <span class='doccomment'>//! </span>
@@ -386,6 +389,7 @@
 <span class='doccomment'>//! ```ignore</span>
 <span class='doccomment'>//! let r = hub.files().watch(...).doit()</span>
 <span class='doccomment'>//! let r = hub.files().empty_trash(...).doit()</span>
+<span class='doccomment'>//! let r = hub.files().generate_ids(...).doit()</span>
 <span class='doccomment'>//! let r = hub.files().copy(...).doit()</span>
 <span class='doccomment'>//! let r = hub.files().list(...).doit()</span>
 <span class='doccomment'>//! let r = hub.files().delete(...).doit()</span>
@@ -449,17 +453,18 @@
 <span class='doccomment'>//! // Values shown here are possibly random and not representative !</span>
 <span class='doccomment'>//! let result = hub.files().patch(req, &quot;fileId&quot;)</span>
 <span class='doccomment'>//!              .use_content_as_indexable_text(true)</span>
-<span class='doccomment'>//!              .update_viewed_date(false)</span>
-<span class='doccomment'>//!              .timed_text_track_name(&quot;sea&quot;)</span>
-<span class='doccomment'>//!              .timed_text_language(&quot;consetetur&quot;)</span>
+<span class='doccomment'>//!              .update_viewed_date(true)</span>
+<span class='doccomment'>//!              .timed_text_track_name(&quot;Stet&quot;)</span>
+<span class='doccomment'>//!              .timed_text_language(&quot;sed&quot;)</span>
 <span class='doccomment'>//!              .set_modified_date(false)</span>
-<span class='doccomment'>//!              .remove_parents(&quot;accusam&quot;)</span>
-<span class='doccomment'>//!              .pinned(false)</span>
-<span class='doccomment'>//!              .ocr_language(&quot;consetetur&quot;)</span>
+<span class='doccomment'>//!              .remove_parents(&quot;sanctus&quot;)</span>
+<span class='doccomment'>//!              .pinned(true)</span>
+<span class='doccomment'>//!              .ocr_language(&quot;Lorem&quot;)</span>
 <span class='doccomment'>//!              .ocr(false)</span>
-<span class='doccomment'>//!              .new_revision(false)</span>
-<span class='doccomment'>//!              .convert(false)</span>
-<span class='doccomment'>//!              .add_parents(&quot;ea&quot;)</span>
+<span class='doccomment'>//!              .new_revision(true)</span>
+<span class='doccomment'>//!              .modified_date_behavior(&quot;eirmod&quot;)</span>
+<span class='doccomment'>//!              .convert(true)</span>
+<span class='doccomment'>//!              .add_parents(&quot;gubergren&quot;)</span>
 <span class='doccomment'>//!              .doit();</span>
 <span class='doccomment'>//! </span>
 <span class='doccomment'>//! match result {</span>
@@ -540,43 +545,55 @@
 <span class='comment'>// unused imports in fully featured APIs. Same with unused_mut ... .</span>
 <span class='attribute'>#<span class='op'>!</span>[<span class='ident'>allow</span>(<span class='ident'>unused_imports</span>, <span class='ident'>unused_mut</span>, <span class='ident'>dead_code</span>)]</span>
 
-<span class='macro'>include</span><span class='macro'>!</span>(<span class='macro'>concat</span><span class='macro'>!</span>(<span class='macro'>env</span><span class='macro'>!</span>(<span class='string'>&quot;OUT_DIR&quot;</span>), <span class='string'>&quot;/lib.rs&quot;</span>));
-</pre>
+<span class='macro'>include</span><span class='macro'>!</span>(<span class='macro'>concat</span><span class='macro'>!</span>(<span class='macro'>env</span><span class='macro'>!</span>(<span class='string'>&quot;OUT_DIR&quot;</span>), <span class='string'>&quot;/lib.rs&quot;</span>));</pre>
 </section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
 
-    <div id="help" class="hidden">
-        <div class="shortcuts">
-            <h1>Keyboard shortcuts</h1>
-            <dl>
-                <dt>?</dt>
-                <dd>Show this help dialog</dd>
-                <dt>S</dt>
-                <dd>Focus the search field</dd>
-                <dt>&larrb;</dt>
-                <dd>Move up in search results</dd>
-                <dt>&rarrb;</dt>
-                <dd>Move down in search results</dd>
-                <dt>&#9166;</dt>
-                <dd>Go to active search result</dd>
-            </dl>
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code>)
+                </p>
+            </div>
         </div>
-        <div class="infos">
-            <h1>Search tricks</h1>
-            <p>
-                Prefix searches with a type followed by a colon (e.g.
-                <code>fn:</code>) to restrict the search to a given type.
-            </p>
-            <p>
-                Accepted types are: <code>fn</code>, <code>mod</code>,
-                <code>struct</code>, <code>enum</code>,
-                <code>trait</code>, <code>typedef</code> (or
-                <code>tdef</code>).
-            </p>
-        </div>
-    </div>
+    </aside>
 
     
 
@@ -588,6 +605,6 @@
     <script src="../../jquery.js"></script>
     <script src="../../main.js"></script>
     
-    <script async src="../../search-index.js"></script>
+    <script defer src="../../search-index.js"></script>
 </body>
 </html>

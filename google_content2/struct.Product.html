@@ -9,6 +9,7 @@
 
     <title>google_content2::Product - Rust</title>
 
+    <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
 
     
@@ -24,100 +25,102 @@
 
     
 
-    <section class="sidebar">
+    <nav class="sidebar">
         
         <p class='location'><a href='index.html'>google_content2</a></p><script>window.sidebarCurrent = {name: 'Product', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
-    </section>
+    </nav>
 
     <nav class="sub">
         <form class="search-form js-only">
             <div class="search-container">
                 <input class="search-input" name="search"
                        autocomplete="off"
-                       placeholder="Click or press 'S' to search, '?' for more options..."
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
                        type="search">
             </div>
         </form>
     </nav>
 
     <section id='main' class="content struct">
-<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_content2</a>::<wbr><a class='struct' href=''>Product</a><wbr></span><span class='out-of-band'><span id='render-detail'>
-            <a id="collapse-all" href="#">[-]</a>&nbsp;<a id="expand-all" href="#">[+]</a>
-        </span><a id='src-61335' href='../src/google_content2///home/byron/dev/rust/google-apis-rs/target/debug/build/google-content2-463a031e99003086/out/lib.rs.html#15928-16067'>[src]</a></span></h1>
+<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_content2</a>::<wbr><a class='struct' href=''>Product</a></span><span class='out-of-band'><span id='render-detail'>
+            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                [<span class='inner'>&#x2212;</span>]
+            </a>
+        </span><a id='src-20356' class='srclink' href='../src/google_content2///Users/byron/dev/rs/google-apis-rs/target/debug/build/google-content2-e88f5f3910857369/out/lib.rs.html#35704-35845' title='goto source code'>[src]</a></span></h1>
 <pre class='rust struct'>pub struct Product {
-    pub adult: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt;,
-    pub color: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub adwords_labels: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;&gt;,
-    pub item_group_id: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub expiration_date: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub availability: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub adwords_grouping: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub destinations: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='../google_content2/struct.ProductDestination.html' title='google_content2::ProductDestination'>ProductDestination</a>&gt;&gt;,
-    pub target_country: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.i64.html'>i64</a>&gt;,
-    pub custom_label4: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub title: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub online_only: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt;,
-    pub mobile_link: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub aspects: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='../google_content2/struct.ProductAspect.html' title='google_content2::ProductAspect'>ProductAspect</a>&gt;&gt;,
-    pub shipping_height: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_content2/struct.ProductShippingDimension.html' title='google_content2::ProductShippingDimension'>ProductShippingDimension</a>&gt;,
-    pub content_language: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub mpn: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub sale_price_effective_date: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub brand: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub material: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub link: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub adwords_redirect: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub energy_efficiency_class: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub size_system: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub size_type: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub custom_label3: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub custom_label2: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub condition: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub custom_label0: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub kind: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub installment: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_content2/struct.ProductInstallment.html' title='google_content2::ProductInstallment'>ProductInstallment</a>&gt;,
-    pub sizes: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;&gt;,
-    pub gender: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub taxes: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='../google_content2/struct.ProductTax.html' title='google_content2::ProductTax'>ProductTax</a>&gt;&gt;,
-    pub identifier_exists: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt;,
-    pub sale_price: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_content2/struct.Price.html' title='google_content2::Price'>Price</a>&gt;,
-    pub product_type: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub display_ads_similar_ids: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;&gt;,
-    pub custom_label1: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub age_group: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub additional_image_links: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;&gt;,
-    pub offer_id: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub gtin: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub shipping_label: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub google_product_category: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub multipack: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub display_ads_id: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub display_ads_value: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.f64.html'>f64</a>&gt;,
-    pub id: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub shipping_width: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_content2/struct.ProductShippingDimension.html' title='google_content2::ProductShippingDimension'>ProductShippingDimension</a>&gt;,
-    pub pattern: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub unit_pricing_measure: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_content2/struct.ProductUnitPricingMeasure.html' title='google_content2::ProductUnitPricingMeasure'>ProductUnitPricingMeasure</a>&gt;,
-    pub custom_attributes: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='../google_content2/struct.ProductCustomAttribute.html' title='google_content2::ProductCustomAttribute'>ProductCustomAttribute</a>&gt;&gt;,
-    pub availability_date: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub is_bundle: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt;,
-    pub channel: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub description: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub warnings: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='../google_content2/struct.ErrorType.html' title='google_content2::ErrorType'>ErrorType</a>&gt;&gt;,
-    pub price: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_content2/struct.Price.html' title='google_content2::Price'>Price</a>&gt;,
-    pub shipping_length: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_content2/struct.ProductShippingDimension.html' title='google_content2::ProductShippingDimension'>ProductShippingDimension</a>&gt;,
-    pub display_ads_link: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub validated_destinations: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;&gt;,
-    pub custom_groups: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='../google_content2/struct.ProductCustomGroup.html' title='google_content2::ProductCustomGroup'>ProductCustomGroup</a>&gt;&gt;,
-    pub loyalty_points: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_content2/struct.LoyaltyPoints.html' title='google_content2::LoyaltyPoints'>LoyaltyPoints</a>&gt;,
-    pub unit_pricing_base_measure: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_content2/struct.ProductUnitPricingBaseMeasure.html' title='google_content2::ProductUnitPricingBaseMeasure'>ProductUnitPricingBaseMeasure</a>&gt;,
-    pub shipping: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='../google_content2/struct.ProductShipping.html' title='google_content2::ProductShipping'>ProductShipping</a>&gt;&gt;,
-    pub shipping_weight: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_content2/struct.ProductShippingWeight.html' title='google_content2::ProductShippingWeight'>ProductShippingWeight</a>&gt;,
-    pub image_link: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub display_ads_title: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub adult: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt;,
+    pub color: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub adwords_labels: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;&gt;,
+    pub item_group_id: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub expiration_date: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub availability: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub adwords_grouping: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub destinations: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='../google_content2/struct.ProductDestination.html' title='google_content2::ProductDestination'>ProductDestination</a>&gt;&gt;,
+    pub target_country: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i64.html'>i64</a>&gt;,
+    pub custom_label4: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub title: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub online_only: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt;,
+    pub mobile_link: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub aspects: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='../google_content2/struct.ProductAspect.html' title='google_content2::ProductAspect'>ProductAspect</a>&gt;&gt;,
+    pub shipping_height: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_content2/struct.ProductShippingDimension.html' title='google_content2::ProductShippingDimension'>ProductShippingDimension</a>&gt;,
+    pub content_language: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub mpn: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub sale_price_effective_date: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub brand: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub material: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub link: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub adwords_redirect: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub energy_efficiency_class: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub size_system: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub size_type: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub custom_label3: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub custom_label2: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub condition: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub custom_label0: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub kind: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub installment: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_content2/struct.Installment.html' title='google_content2::Installment'>Installment</a>&gt;,
+    pub sizes: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;&gt;,
+    pub gender: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub taxes: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='../google_content2/struct.ProductTax.html' title='google_content2::ProductTax'>ProductTax</a>&gt;&gt;,
+    pub identifier_exists: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt;,
+    pub sale_price: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_content2/struct.Price.html' title='google_content2::Price'>Price</a>&gt;,
+    pub product_type: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub display_ads_similar_ids: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;&gt;,
+    pub custom_label1: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub age_group: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub additional_image_links: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;&gt;,
+    pub offer_id: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub gtin: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub shipping_label: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub google_product_category: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub multipack: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub display_ads_id: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub display_ads_value: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f64.html'>f64</a>&gt;,
+    pub id: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub shipping_width: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_content2/struct.ProductShippingDimension.html' title='google_content2::ProductShippingDimension'>ProductShippingDimension</a>&gt;,
+    pub pattern: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub unit_pricing_measure: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_content2/struct.ProductUnitPricingMeasure.html' title='google_content2::ProductUnitPricingMeasure'>ProductUnitPricingMeasure</a>&gt;,
+    pub custom_attributes: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='../google_content2/struct.ProductCustomAttribute.html' title='google_content2::ProductCustomAttribute'>ProductCustomAttribute</a>&gt;&gt;,
+    pub availability_date: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub is_bundle: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt;,
+    pub channel: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub description: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub warnings: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='../google_content2/struct.ErrorType.html' title='google_content2::ErrorType'>ErrorType</a>&gt;&gt;,
+    pub price: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_content2/struct.Price.html' title='google_content2::Price'>Price</a>&gt;,
+    pub shipping_length: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_content2/struct.ProductShippingDimension.html' title='google_content2::ProductShippingDimension'>ProductShippingDimension</a>&gt;,
+    pub sell_on_google_quantity: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub display_ads_link: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub validated_destinations: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;&gt;,
+    pub custom_groups: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='../google_content2/struct.ProductCustomGroup.html' title='google_content2::ProductCustomGroup'>ProductCustomGroup</a>&gt;&gt;,
+    pub loyalty_points: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_content2/struct.LoyaltyPoints.html' title='google_content2::LoyaltyPoints'>LoyaltyPoints</a>&gt;,
+    pub unit_pricing_base_measure: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_content2/struct.ProductUnitPricingBaseMeasure.html' title='google_content2::ProductUnitPricingBaseMeasure'>ProductUnitPricingBaseMeasure</a>&gt;,
+    pub shipping: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='../google_content2/struct.ProductShipping.html' title='google_content2::ProductShipping'>ProductShipping</a>&gt;&gt;,
+    pub shipping_weight: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_content2/struct.ProductShippingWeight.html' title='google_content2::ProductShippingWeight'>ProductShippingWeight</a>&gt;,
+    pub image_link: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub display_ads_title: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
 }</pre><div class='docblock'><p>Product data.</p>
 
-<h1 id="activities" class='section-header'><a
-                           href="#activities">Activities</a></h1>
+<h1 id='activities' class='section-header'><a href='#activities'>Activities</a></h1>
 <p>This type is used in activities, which are methods you may call on this type or where this type is involved in. 
 The list links the activity name, along with information about where it is used (one of <em>request</em> and <em>response</em>).</p>
 
@@ -129,116 +132,200 @@ The list links the activity name, along with information about where it is used 
 <li><a href="struct.ProductInsertCall.html">insert products</a> (request|response)</li>
 </ul>
 </div><h2 class='fields'>Fields</h2>
-<table><tr><td id='structfield.adult'><a class='stability Unmarked' title='No stability level'></a><code>adult</code></td><td><div class='docblock'><p>Set to true if the item is targeted towards adults.</p>
-</div></td></tr><tr><td id='structfield.color'><a class='stability Unmarked' title='No stability level'></a><code>color</code></td><td><div class='docblock'><p>Color of the item.</p>
-</div></td></tr><tr><td id='structfield.adwords_labels'><a class='stability Unmarked' title='No stability level'></a><code>adwords_labels</code></td><td><div class='docblock'><p>Similar to adwords_grouping, but only works on CPC.</p>
-</div></td></tr><tr><td id='structfield.item_group_id'><a class='stability Unmarked' title='No stability level'></a><code>item_group_id</code></td><td><div class='docblock'><p>Shared identifier for all variants of the same product.</p>
-</div></td></tr><tr><td id='structfield.expiration_date'><a class='stability Unmarked' title='No stability level'></a><code>expiration_date</code></td><td><div class='docblock'><p>Date on which the item should expire, as specified upon insertion, in ISO 8601 format. The actual expiration date in Google Shopping is exposed in productstatuses as googleExpirationDate and might be earlier if expirationDate is too far in the future.</p>
-</div></td></tr><tr><td id='structfield.availability'><a class='stability Unmarked' title='No stability level'></a><code>availability</code></td><td><div class='docblock'><p>Availability status of the item.</p>
-</div></td></tr><tr><td id='structfield.adwords_grouping'><a class='stability Unmarked' title='No stability level'></a><code>adwords_grouping</code></td><td><div class='docblock'><p>Used to group items in an arbitrary way. Only for CPA%, discouraged otherwise.</p>
-</div></td></tr><tr><td id='structfield.destinations'><a class='stability Unmarked' title='No stability level'></a><code>destinations</code></td><td><div class='docblock'><p>Specifies the intended destinations for the product.</p>
-</div></td></tr><tr><td id='structfield.target_country'><a class='stability Unmarked' title='No stability level'></a><code>target_country</code></td><td><div class='docblock'><p>The two-letter ISO 3166 country code for the item.</p>
-</div></td></tr><tr><td id='structfield.custom_label4'><a class='stability Unmarked' title='No stability level'></a><code>custom_label4</code></td><td><div class='docblock'><p>Custom label 4 for custom grouping of items in a Shopping campaign.</p>
-</div></td></tr><tr><td id='structfield.title'><a class='stability Unmarked' title='No stability level'></a><code>title</code></td><td><div class='docblock'><p>Title of the item.</p>
-</div></td></tr><tr><td id='structfield.online_only'><a class='stability Unmarked' title='No stability level'></a><code>online_only</code></td><td><div class='docblock'><p>Whether an item is available for purchase only online.</p>
-</div></td></tr><tr><td id='structfield.mobile_link'><a class='stability Unmarked' title='No stability level'></a><code>mobile_link</code></td><td><div class='docblock'><p>Link to a mobile-optimized version of the landing page.</p>
-</div></td></tr><tr><td id='structfield.aspects'><a class='stability Unmarked' title='No stability level'></a><code>aspects</code></td><td><div class='docblock'><p>Specifies the intended aspects for the product.</p>
-</div></td></tr><tr><td id='structfield.shipping_height'><a class='stability Unmarked' title='No stability level'></a><code>shipping_height</code></td><td><div class='docblock'><p>Height of the item for shipping.</p>
-</div></td></tr><tr><td id='structfield.content_language'><a class='stability Unmarked' title='No stability level'></a><code>content_language</code></td><td><div class='docblock'><p>The two-letter ISO 639-1 language code for the item.</p>
-</div></td></tr><tr><td id='structfield.mpn'><a class='stability Unmarked' title='No stability level'></a><code>mpn</code></td><td><div class='docblock'><p>Manufacturer Part Number (MPN) of the item.</p>
-</div></td></tr><tr><td id='structfield.sale_price_effective_date'><a class='stability Unmarked' title='No stability level'></a><code>sale_price_effective_date</code></td><td><div class='docblock'><p>Date range during which the item is on sale (see product feed specifications).</p>
-</div></td></tr><tr><td id='structfield.brand'><a class='stability Unmarked' title='No stability level'></a><code>brand</code></td><td><div class='docblock'><p>Brand of the item.</p>
-</div></td></tr><tr><td id='structfield.material'><a class='stability Unmarked' title='No stability level'></a><code>material</code></td><td><div class='docblock'><p>The material of which the item is made.</p>
-</div></td></tr><tr><td id='structfield.link'><a class='stability Unmarked' title='No stability level'></a><code>link</code></td><td><div class='docblock'><p>URL directly linking to your item&#39;s page on your website.</p>
-</div></td></tr><tr><td id='structfield.adwords_redirect'><a class='stability Unmarked' title='No stability level'></a><code>adwords_redirect</code></td><td><div class='docblock'><p>Allows advertisers to override the item URL when the product is shown within the context of Product Ads.</p>
-</div></td></tr><tr><td id='structfield.energy_efficiency_class'><a class='stability Unmarked' title='No stability level'></a><code>energy_efficiency_class</code></td><td><div class='docblock'><p>The energy efficiency class as defined in EU directive 2010/30/EU.</p>
-</div></td></tr><tr><td id='structfield.size_system'><a class='stability Unmarked' title='No stability level'></a><code>size_system</code></td><td><div class='docblock'><p>System in which the size is specified. Recommended for apparel items.</p>
-</div></td></tr><tr><td id='structfield.size_type'><a class='stability Unmarked' title='No stability level'></a><code>size_type</code></td><td><div class='docblock'><p>The cut of the item. Recommended for apparel items.</p>
-</div></td></tr><tr><td id='structfield.custom_label3'><a class='stability Unmarked' title='No stability level'></a><code>custom_label3</code></td><td><div class='docblock'><p>Custom label 3 for custom grouping of items in a Shopping campaign.</p>
-</div></td></tr><tr><td id='structfield.custom_label2'><a class='stability Unmarked' title='No stability level'></a><code>custom_label2</code></td><td><div class='docblock'><p>Custom label 2 for custom grouping of items in a Shopping campaign.</p>
-</div></td></tr><tr><td id='structfield.condition'><a class='stability Unmarked' title='No stability level'></a><code>condition</code></td><td><div class='docblock'><p>Condition or state of the item.</p>
-</div></td></tr><tr><td id='structfield.custom_label0'><a class='stability Unmarked' title='No stability level'></a><code>custom_label0</code></td><td><div class='docblock'><p>Custom label 0 for custom grouping of items in a Shopping campaign.</p>
-</div></td></tr><tr><td id='structfield.kind'><a class='stability Unmarked' title='No stability level'></a><code>kind</code></td><td><div class='docblock'><p>Identifies what kind of resource this is. Value: the fixed string &quot;content#product&quot;.</p>
-</div></td></tr><tr><td id='structfield.installment'><a class='stability Unmarked' title='No stability level'></a><code>installment</code></td><td><div class='docblock'><p>Number and amount of installments to pay for an item. Brazil only.</p>
-</div></td></tr><tr><td id='structfield.sizes'><a class='stability Unmarked' title='No stability level'></a><code>sizes</code></td><td><div class='docblock'><p>Size of the item.</p>
-</div></td></tr><tr><td id='structfield.gender'><a class='stability Unmarked' title='No stability level'></a><code>gender</code></td><td><div class='docblock'><p>Target gender of the item.</p>
-</div></td></tr><tr><td id='structfield.taxes'><a class='stability Unmarked' title='No stability level'></a><code>taxes</code></td><td><div class='docblock'><p>Tax information.</p>
-</div></td></tr><tr><td id='structfield.identifier_exists'><a class='stability Unmarked' title='No stability level'></a><code>identifier_exists</code></td><td><div class='docblock'><p>False when the item does not have unique product identifiers appropriate to its category, such as GTIN, MPN, and brand. Required according to the Unique Product Identifier Rules for all target countries except for Canada.</p>
-</div></td></tr><tr><td id='structfield.sale_price'><a class='stability Unmarked' title='No stability level'></a><code>sale_price</code></td><td><div class='docblock'><p>Advertised sale price of the item.</p>
-</div></td></tr><tr><td id='structfield.product_type'><a class='stability Unmarked' title='No stability level'></a><code>product_type</code></td><td><div class='docblock'><p>Your category of the item (formatted as in product feeds specification).</p>
-</div></td></tr><tr><td id='structfield.display_ads_similar_ids'><a class='stability Unmarked' title='No stability level'></a><code>display_ads_similar_ids</code></td><td><div class='docblock'><p>Advertiser-specified recommendations.</p>
-</div></td></tr><tr><td id='structfield.custom_label1'><a class='stability Unmarked' title='No stability level'></a><code>custom_label1</code></td><td><div class='docblock'><p>Custom label 1 for custom grouping of items in a Shopping campaign.</p>
-</div></td></tr><tr><td id='structfield.age_group'><a class='stability Unmarked' title='No stability level'></a><code>age_group</code></td><td><div class='docblock'><p>Target age group of the item.</p>
-</div></td></tr><tr><td id='structfield.additional_image_links'><a class='stability Unmarked' title='No stability level'></a><code>additional_image_links</code></td><td><div class='docblock'><p>Additional URLs of images of the item.</p>
-</div></td></tr><tr><td id='structfield.offer_id'><a class='stability Unmarked' title='No stability level'></a><code>offer_id</code></td><td><div class='docblock'><p>An identifier of the item.</p>
-</div></td></tr><tr><td id='structfield.gtin'><a class='stability Unmarked' title='No stability level'></a><code>gtin</code></td><td><div class='docblock'><p>Global Trade Item Number (GTIN) of the item.</p>
-</div></td></tr><tr><td id='structfield.shipping_label'><a class='stability Unmarked' title='No stability level'></a><code>shipping_label</code></td><td><div class='docblock'><p>The shipping label of the product, used to group product in account-level shipping rules.</p>
-</div></td></tr><tr><td id='structfield.google_product_category'><a class='stability Unmarked' title='No stability level'></a><code>google_product_category</code></td><td><div class='docblock'><p>Google&#39;s category of the item (see Google product taxonomy).</p>
-</div></td></tr><tr><td id='structfield.multipack'><a class='stability Unmarked' title='No stability level'></a><code>multipack</code></td><td><div class='docblock'><p>The number of identical products in a merchant-defined multipack.</p>
-</div></td></tr><tr><td id='structfield.display_ads_id'><a class='stability Unmarked' title='No stability level'></a><code>display_ads_id</code></td><td><div class='docblock'><p>An identifier for an item for dynamic remarketing campaigns.</p>
-</div></td></tr><tr><td id='structfield.display_ads_value'><a class='stability Unmarked' title='No stability level'></a><code>display_ads_value</code></td><td><div class='docblock'><p>Offer margin for dynamic remarketing campaigns.</p>
-</div></td></tr><tr><td id='structfield.id'><a class='stability Unmarked' title='No stability level'></a><code>id</code></td><td><div class='docblock'><p>The REST id of the product.</p>
-</div></td></tr><tr><td id='structfield.shipping_width'><a class='stability Unmarked' title='No stability level'></a><code>shipping_width</code></td><td><div class='docblock'><p>Width of the item for shipping.</p>
-</div></td></tr><tr><td id='structfield.pattern'><a class='stability Unmarked' title='No stability level'></a><code>pattern</code></td><td><div class='docblock'><p>The item&#39;s pattern (e.g. polka dots).</p>
-</div></td></tr><tr><td id='structfield.unit_pricing_measure'><a class='stability Unmarked' title='No stability level'></a><code>unit_pricing_measure</code></td><td><div class='docblock'><p>The measure and dimension of an item.</p>
-</div></td></tr><tr><td id='structfield.custom_attributes'><a class='stability Unmarked' title='No stability level'></a><code>custom_attributes</code></td><td><div class='docblock'><p>A list of custom (merchant-provided) attributes. It can also be used for submitting any attribute of the feed specification in its generic form (e.g., { &quot;name&quot;: &quot;size type&quot;, &quot;type&quot;: &quot;text&quot;, &quot;value&quot;: &quot;regular&quot; }). This is useful for submitting attributes not explicitly exposed by the API.</p>
-</div></td></tr><tr><td id='structfield.availability_date'><a class='stability Unmarked' title='No stability level'></a><code>availability_date</code></td><td><div class='docblock'><p>The day a pre-ordered product becomes available for delivery, in ISO 8601 format.</p>
-</div></td></tr><tr><td id='structfield.is_bundle'><a class='stability Unmarked' title='No stability level'></a><code>is_bundle</code></td><td><div class='docblock'><p>Whether the item is a merchant-defined bundle. A bundle is a custom grouping of different products sold by a merchant for a single price.</p>
-</div></td></tr><tr><td id='structfield.channel'><a class='stability Unmarked' title='No stability level'></a><code>channel</code></td><td><div class='docblock'><p>The item&#39;s channel (online or local).</p>
-</div></td></tr><tr><td id='structfield.description'><a class='stability Unmarked' title='No stability level'></a><code>description</code></td><td><div class='docblock'><p>Description of the item.</p>
-</div></td></tr><tr><td id='structfield.warnings'><a class='stability Unmarked' title='No stability level'></a><code>warnings</code></td><td><div class='docblock'><p>Read-only warnings.</p>
-</div></td></tr><tr><td id='structfield.price'><a class='stability Unmarked' title='No stability level'></a><code>price</code></td><td><div class='docblock'><p>Price of the item.</p>
-</div></td></tr><tr><td id='structfield.shipping_length'><a class='stability Unmarked' title='No stability level'></a><code>shipping_length</code></td><td><div class='docblock'><p>Length of the item for shipping.</p>
-</div></td></tr><tr><td id='structfield.display_ads_link'><a class='stability Unmarked' title='No stability level'></a><code>display_ads_link</code></td><td><div class='docblock'><p>URL directly to your item&#39;s landing page for dynamic remarketing campaigns.</p>
-</div></td></tr><tr><td id='structfield.validated_destinations'><a class='stability Unmarked' title='No stability level'></a><code>validated_destinations</code></td><td><div class='docblock'><p>The read-only list of intended destinations which passed validation.</p>
-</div></td></tr><tr><td id='structfield.custom_groups'><a class='stability Unmarked' title='No stability level'></a><code>custom_groups</code></td><td><div class='docblock'><p>A list of custom (merchant-provided) custom attribute groups.</p>
-</div></td></tr><tr><td id='structfield.loyalty_points'><a class='stability Unmarked' title='No stability level'></a><code>loyalty_points</code></td><td><div class='docblock'><p>Loyalty points that users receive after purchasing the item. Japan only.</p>
-</div></td></tr><tr><td id='structfield.unit_pricing_base_measure'><a class='stability Unmarked' title='No stability level'></a><code>unit_pricing_base_measure</code></td><td><div class='docblock'><p>The preference of the denominator of the unit price.</p>
-</div></td></tr><tr><td id='structfield.shipping'><a class='stability Unmarked' title='No stability level'></a><code>shipping</code></td><td><div class='docblock'><p>Shipping rules.</p>
-</div></td></tr><tr><td id='structfield.shipping_weight'><a class='stability Unmarked' title='No stability level'></a><code>shipping_weight</code></td><td><div class='docblock'><p>Weight of the item for shipping.</p>
-</div></td></tr><tr><td id='structfield.image_link'><a class='stability Unmarked' title='No stability level'></a><code>image_link</code></td><td><div class='docblock'><p>URL of an image of the item.</p>
-</div></td></tr><tr><td id='structfield.display_ads_title'><a class='stability Unmarked' title='No stability level'></a><code>display_ads_title</code></td><td><div class='docblock'><p>Title of an item for dynamic remarketing campaigns.</p>
-</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='../google_content2/trait.RequestValue.html' title='google_content2::RequestValue'>RequestValue</a> for <a class='struct' href='../google_content2/struct.Product.html' title='google_content2::Product'>Product</a></code></h3><div class='impl-items'></div><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='../google_content2/trait.Resource.html' title='google_content2::Resource'>Resource</a> for <a class='struct' href='../google_content2/struct.Product.html' title='google_content2::Product'>Product</a></code></h3><div class='impl-items'></div><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='../google_content2/trait.ResponseResult.html' title='google_content2::ResponseResult'>ResponseResult</a> for <a class='struct' href='../google_content2/struct.Product.html' title='google_content2::Product'>Product</a></code></h3><div class='impl-items'></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_content2/struct.Product.html' title='google_content2::Product'>Product</a></code></h3><div class='impl-items'><h4 id='method.fmt' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#method.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='http://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='http://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
-</div><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_content2/struct.Product.html' title='google_content2::Product'>Product</a></code></h3><div class='impl-items'><h4 id='method.clone' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_content2/struct.Product.html' title='google_content2::Product'>Product</a></code></h4>
-<h4 id='method.clone_from' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code></h4>
-</div><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_content2/struct.Product.html' title='google_content2::Product'>Product</a></code></h3><div class='impl-items'><h4 id='method.default' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/default/trait.Default.html#method.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_content2/struct.Product.html' title='google_content2::Product'>Product</a></code></h4>
-</div><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='../serde/de/trait.Deserialize.html' title='serde::de::Deserialize'>Deserialize</a> for <a class='struct' href='../google_content2/struct.Product.html' title='google_content2::Product'>Product</a></code></h3><div class='impl-items'><h4 id='method.deserialize' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='../serde/de/trait.Deserialize.html#method.deserialize' class='fnname'>deserialize</a>&lt;__D&gt;(deserializer: &amp;mut __D) -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../google_content2/struct.Product.html' title='google_content2::Product'>Product</a>, __D&gt; <span class='where'>where __D: <a class='trait' href='../serde/de/trait.Deserializer.html' title='serde::de::Deserializer'>Deserializer</a></span></code></h4>
-</div><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='../serde/ser/trait.Serialize.html' title='serde::ser::Serialize'>Serialize</a> for <a class='struct' href='../google_content2/struct.Product.html' title='google_content2::Product'>Product</a></code></h3><div class='impl-items'><h4 id='method.serialize' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='../serde/ser/trait.Serialize.html#method.serialize' class='fnname'>serialize</a>&lt;__S&gt;(&amp;self, serializer: &amp;mut __S) -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, __S&gt; <span class='where'>where __S: <a class='trait' href='../serde/ser/trait.Serializer.html' title='serde::ser::Serializer'>Serializer</a></span></code></h4>
+<table><tr class='stab '>
+                                  <td id='structfield.adult'><code>adult</code></td><td><div class='docblock'><p>Set to true if the item is targeted towards adults.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.color'><code>color</code></td><td><div class='docblock'><p>Color of the item.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.adwords_labels'><code>adwords_labels</code></td><td><div class='docblock'><p>Similar to adwords_grouping, but only works on CPC.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.item_group_id'><code>item_group_id</code></td><td><div class='docblock'><p>Shared identifier for all variants of the same product.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.expiration_date'><code>expiration_date</code></td><td><div class='docblock'><p>Date on which the item should expire, as specified upon insertion, in ISO 8601 format. The actual expiration date in Google Shopping is exposed in productstatuses as googleExpirationDate and might be earlier if expirationDate is too far in the future.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.availability'><code>availability</code></td><td><div class='docblock'><p>Availability status of the item.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.adwords_grouping'><code>adwords_grouping</code></td><td><div class='docblock'><p>Used to group items in an arbitrary way. Only for CPA%, discouraged otherwise.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.destinations'><code>destinations</code></td><td><div class='docblock'><p>Specifies the intended destinations for the product.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.target_country'><code>target_country</code></td><td><div class='docblock'><p>The CLDR territory code for the item.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.custom_label4'><code>custom_label4</code></td><td><div class='docblock'><p>Custom label 4 for custom grouping of items in a Shopping campaign.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.title'><code>title</code></td><td><div class='docblock'><p>Title of the item.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.online_only'><code>online_only</code></td><td><div class='docblock'><p>Whether an item is available for purchase only online.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.mobile_link'><code>mobile_link</code></td><td><div class='docblock'><p>Link to a mobile-optimized version of the landing page.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.aspects'><code>aspects</code></td><td><div class='docblock'><p>Specifies the intended aspects for the product.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.shipping_height'><code>shipping_height</code></td><td><div class='docblock'><p>Height of the item for shipping.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.content_language'><code>content_language</code></td><td><div class='docblock'><p>The two-letter ISO 639-1 language code for the item.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.mpn'><code>mpn</code></td><td><div class='docblock'><p>Manufacturer Part Number (MPN) of the item.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.sale_price_effective_date'><code>sale_price_effective_date</code></td><td><div class='docblock'><p>Date range during which the item is on sale (see product feed specifications).</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.brand'><code>brand</code></td><td><div class='docblock'><p>Brand of the item.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.material'><code>material</code></td><td><div class='docblock'><p>The material of which the item is made.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.link'><code>link</code></td><td><div class='docblock'><p>URL directly linking to your item&#39;s page on your website.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.adwords_redirect'><code>adwords_redirect</code></td><td><div class='docblock'><p>Allows advertisers to override the item URL when the product is shown within the context of Product Ads.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.energy_efficiency_class'><code>energy_efficiency_class</code></td><td><div class='docblock'><p>The energy efficiency class as defined in EU directive 2010/30/EU.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.size_system'><code>size_system</code></td><td><div class='docblock'><p>System in which the size is specified. Recommended for apparel items.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.size_type'><code>size_type</code></td><td><div class='docblock'><p>The cut of the item. Recommended for apparel items.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.custom_label3'><code>custom_label3</code></td><td><div class='docblock'><p>Custom label 3 for custom grouping of items in a Shopping campaign.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.custom_label2'><code>custom_label2</code></td><td><div class='docblock'><p>Custom label 2 for custom grouping of items in a Shopping campaign.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.condition'><code>condition</code></td><td><div class='docblock'><p>Condition or state of the item.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.custom_label0'><code>custom_label0</code></td><td><div class='docblock'><p>Custom label 0 for custom grouping of items in a Shopping campaign.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.kind'><code>kind</code></td><td><div class='docblock'><p>Identifies what kind of resource this is. Value: the fixed string &quot;content#product&quot;.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.installment'><code>installment</code></td><td><div class='docblock'><p>Number and amount of installments to pay for an item. Brazil only.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.sizes'><code>sizes</code></td><td><div class='docblock'><p>Size of the item.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.gender'><code>gender</code></td><td><div class='docblock'><p>Target gender of the item.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.taxes'><code>taxes</code></td><td><div class='docblock'><p>Tax information.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.identifier_exists'><code>identifier_exists</code></td><td><div class='docblock'><p>False when the item does not have unique product identifiers appropriate to its category, such as GTIN, MPN, and brand. Required according to the Unique Product Identifier Rules for all target countries except for Canada.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.sale_price'><code>sale_price</code></td><td><div class='docblock'><p>Advertised sale price of the item.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.product_type'><code>product_type</code></td><td><div class='docblock'><p>Your category of the item (formatted as in product feeds specification).</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.display_ads_similar_ids'><code>display_ads_similar_ids</code></td><td><div class='docblock'><p>Advertiser-specified recommendations.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.custom_label1'><code>custom_label1</code></td><td><div class='docblock'><p>Custom label 1 for custom grouping of items in a Shopping campaign.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.age_group'><code>age_group</code></td><td><div class='docblock'><p>Target age group of the item.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.additional_image_links'><code>additional_image_links</code></td><td><div class='docblock'><p>Additional URLs of images of the item.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.offer_id'><code>offer_id</code></td><td><div class='docblock'><p>An identifier of the item.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.gtin'><code>gtin</code></td><td><div class='docblock'><p>Global Trade Item Number (GTIN) of the item.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.shipping_label'><code>shipping_label</code></td><td><div class='docblock'><p>The shipping label of the product, used to group product in account-level shipping rules.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.google_product_category'><code>google_product_category</code></td><td><div class='docblock'><p>Google&#39;s category of the item (see Google product taxonomy).</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.multipack'><code>multipack</code></td><td><div class='docblock'><p>The number of identical products in a merchant-defined multipack.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.display_ads_id'><code>display_ads_id</code></td><td><div class='docblock'><p>An identifier for an item for dynamic remarketing campaigns.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.display_ads_value'><code>display_ads_value</code></td><td><div class='docblock'><p>Offer margin for dynamic remarketing campaigns.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.id'><code>id</code></td><td><div class='docblock'><p>The REST id of the product.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.shipping_width'><code>shipping_width</code></td><td><div class='docblock'><p>Width of the item for shipping.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.pattern'><code>pattern</code></td><td><div class='docblock'><p>The item&#39;s pattern (e.g. polka dots).</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.unit_pricing_measure'><code>unit_pricing_measure</code></td><td><div class='docblock'><p>The measure and dimension of an item.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.custom_attributes'><code>custom_attributes</code></td><td><div class='docblock'><p>A list of custom (merchant-provided) attributes. It can also be used for submitting any attribute of the feed specification in its generic form (e.g., { &quot;name&quot;: &quot;size type&quot;, &quot;type&quot;: &quot;text&quot;, &quot;value&quot;: &quot;regular&quot; }). This is useful for submitting attributes not explicitly exposed by the API.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.availability_date'><code>availability_date</code></td><td><div class='docblock'><p>The day a pre-ordered product becomes available for delivery, in ISO 8601 format.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.is_bundle'><code>is_bundle</code></td><td><div class='docblock'><p>Whether the item is a merchant-defined bundle. A bundle is a custom grouping of different products sold by a merchant for a single price.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.channel'><code>channel</code></td><td><div class='docblock'><p>The item&#39;s channel (online or local).</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.description'><code>description</code></td><td><div class='docblock'><p>Description of the item.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.warnings'><code>warnings</code></td><td><div class='docblock'><p>Read-only warnings.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.price'><code>price</code></td><td><div class='docblock'><p>Price of the item.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.shipping_length'><code>shipping_length</code></td><td><div class='docblock'><p>Length of the item for shipping.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.sell_on_google_quantity'><code>sell_on_google_quantity</code></td><td><div class='docblock'><p>The quantity of the product that is reserved for sell-on-google ads.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.display_ads_link'><code>display_ads_link</code></td><td><div class='docblock'><p>URL directly to your item&#39;s landing page for dynamic remarketing campaigns.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.validated_destinations'><code>validated_destinations</code></td><td><div class='docblock'><p>The read-only list of intended destinations which passed validation.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.custom_groups'><code>custom_groups</code></td><td><div class='docblock'><p>A list of custom (merchant-provided) custom attribute groups.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.loyalty_points'><code>loyalty_points</code></td><td><div class='docblock'><p>Loyalty points that users receive after purchasing the item. Japan only.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.unit_pricing_base_measure'><code>unit_pricing_base_measure</code></td><td><div class='docblock'><p>The preference of the denominator of the unit price.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.shipping'><code>shipping</code></td><td><div class='docblock'><p>Shipping rules.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.shipping_weight'><code>shipping_weight</code></td><td><div class='docblock'><p>Weight of the item for shipping.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.image_link'><code>image_link</code></td><td><div class='docblock'><p>URL of an image of the item.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.display_ads_title'><code>display_ads_title</code></td><td><div class='docblock'><p>Title of an item for dynamic remarketing campaigns.</p>
+</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl <a class='trait' href='../serde/de/trait.Deserialize.html' title='serde::de::Deserialize'>Deserialize</a> for <a class='struct' href='../google_content2/struct.Product.html' title='google_content2::Product'>Product</a></code></h3><div class='impl-items'><h4 id='method.deserialize' class='method'><code>fn <a href='../serde/de/trait.Deserialize.html#method.deserialize' class='fnname'>deserialize</a>&lt;__D&gt;(deserializer: &amp;mut __D) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../google_content2/struct.Product.html' title='google_content2::Product'>Product</a>, __D::Error&gt; <span class='where'>where __D: <a class='trait' href='../serde/de/trait.Deserializer.html' title='serde::de::Deserializer'>Deserializer</a></span></code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='../serde/ser/trait.Serialize.html' title='serde::ser::Serialize'>Serialize</a> for <a class='struct' href='../google_content2/struct.Product.html' title='google_content2::Product'>Product</a></code></h3><div class='impl-items'><h4 id='method.serialize' class='method'><code>fn <a href='../serde/ser/trait.Serialize.html#method.serialize' class='fnname'>serialize</a>&lt;__S&gt;(&amp;self, serializer: &amp;mut __S) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, __S::Error&gt; <span class='where'>where __S: <a class='trait' href='../serde/ser/trait.Serializer.html' title='serde::ser::Serializer'>Serializer</a></span></code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='../google_content2/trait.RequestValue.html' title='google_content2::RequestValue'>RequestValue</a> for <a class='struct' href='../google_content2/struct.Product.html' title='google_content2::Product'>Product</a></code></h3><div class='impl-items'></div><h3 class='impl'><code>impl <a class='trait' href='../google_content2/trait.Resource.html' title='google_content2::Resource'>Resource</a> for <a class='struct' href='../google_content2/struct.Product.html' title='google_content2::Product'>Product</a></code></h3><div class='impl-items'></div><h3 class='impl'><code>impl <a class='trait' href='../google_content2/trait.ResponseResult.html' title='google_content2::ResponseResult'>ResponseResult</a> for <a class='struct' href='../google_content2/struct.Product.html' title='google_content2::Product'>Product</a></code></h3><div class='impl-items'></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_content2/struct.Product.html' title='google_content2::Product'>Product</a></code></h3><div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#method.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_content2/struct.Product.html' title='google_content2::Product'>Product</a></code></h3><div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_content2/struct.Product.html' title='google_content2::Product'>Product</a></code></h4>
+<h4 id='method.clone_from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_content2/struct.Product.html' title='google_content2::Product'>Product</a></code></h3><div class='impl-items'><h4 id='method.default' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#method.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_content2/struct.Product.html' title='google_content2::Product'>Product</a></code></h4>
 </div></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
 
-    <div id="help" class="hidden">
-        <div class="shortcuts">
-            <h1>Keyboard shortcuts</h1>
-            <dl>
-                <dt>?</dt>
-                <dd>Show this help dialog</dd>
-                <dt>S</dt>
-                <dd>Focus the search field</dd>
-                <dt>&larrb;</dt>
-                <dd>Move up in search results</dd>
-                <dt>&rarrb;</dt>
-                <dd>Move down in search results</dd>
-                <dt>&#9166;</dt>
-                <dd>Go to active search result</dd>
-            </dl>
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code>)
+                </p>
+            </div>
         </div>
-        <div class="infos">
-            <h1>Search tricks</h1>
-            <p>
-                Prefix searches with a type followed by a colon (e.g.
-                <code>fn:</code>) to restrict the search to a given type.
-            </p>
-            <p>
-                Accepted types are: <code>fn</code>, <code>mod</code>,
-                <code>struct</code>, <code>enum</code>,
-                <code>trait</code>, <code>typedef</code> (or
-                <code>tdef</code>).
-            </p>
-        </div>
-    </div>
+    </aside>
 
     
 
@@ -250,6 +337,6 @@ The list links the activity name, along with information about where it is used 
     <script src="../jquery.js"></script>
     <script src="../main.js"></script>
     
-    <script async src="../search-index.js"></script>
+    <script defer src="../search-index.js"></script>
 </body>
 </html>

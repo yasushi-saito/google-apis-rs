@@ -9,6 +9,7 @@
 
     <title>google_admin1_directory::Directory - Rust</title>
 
+    <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
 
     
@@ -24,34 +25,35 @@
 
     
 
-    <section class="sidebar">
+    <nav class="sidebar">
         
         <p class='location'><a href='index.html'>google_admin1_directory</a></p><script>window.sidebarCurrent = {name: 'Directory', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
-    </section>
+    </nav>
 
     <nav class="sub">
         <form class="search-form js-only">
             <div class="search-container">
                 <input class="search-input" name="search"
                        autocomplete="off"
-                       placeholder="Click or press 'S' to search, '?' for more options..."
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
                        type="search">
             </div>
         </form>
     </nav>
 
     <section id='main' class="content struct">
-<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_admin1_directory</a>::<wbr><a class='struct' href=''>Directory</a><wbr></span><span class='out-of-band'><span id='render-detail'>
-            <a id="collapse-all" href="#">[-]</a>&nbsp;<a id="expand-all" href="#">[+]</a>
-        </span><a id='src-6189' href='../src/google_admin1_directory///home/byron/dev/rust/google-apis-rs/target/debug/build/google-admin1_directory-afecc50a8c303db7/out/lib.rs.html#1558-1562'>[src]</a></span></h1>
+<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_admin1_directory</a>::<wbr><a class='struct' href=''>Directory</a></span><span class='out-of-band'><span id='render-detail'>
+            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                [<span class='inner'>&#x2212;</span>]
+            </a>
+        </span><a id='src-1026' class='srclink' href='../src/google_admin1_directory///Users/byron/dev/rs/google-apis-rs/target/debug/build/google-admin1_directory-e6f96de456ac1295/out/lib.rs.html#1739-1743' title='goto source code'>[src]</a></span></h1>
 <pre class='rust struct'>pub struct Directory&lt;C, A&gt; {
     // some fields omitted
 }</pre><div class='docblock'><p>Central instance to access all Directory related resource activities</p>
 
-<h1 id="examples" class='section-header'><a
-                           href="#examples">Examples</a></h1>
+<h1 id='examples' class='section-header'><a href='#examples'>Examples</a></h1>
 <p>Instantiate a new hub</p>
-<pre id='rust-example-rendered' class='rust '>
+<pre class='rust rust-example-rendered'>
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>hyper</span>;
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>yup_oauth2</span> <span class='kw'>as</span> <span class='ident'>oauth2</span>;
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>google_admin1_directory</span> <span class='kw'>as</span> <span class='ident'>admin1_directory</span>;
@@ -111,61 +113,80 @@
         <span class='op'>|</span><span class='ident'>Error</span>::<span class='ident'>JsonDecodeError</span>(_, _) <span class='op'>=&gt;</span> <span class='macro'>println</span><span class='macro'>!</span>(<span class='string'>&quot;{}&quot;</span>, <span class='ident'>e</span>),
     },
     <span class='prelude-val'>Ok</span>(<span class='ident'>res</span>) <span class='op'>=&gt;</span> <span class='macro'>println</span><span class='macro'>!</span>(<span class='string'>&quot;Success: {:?}&quot;</span>, <span class='ident'>res</span>),
-}
-</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_admin1_directory/struct.Directory.html' title='google_admin1_directory::Directory'>Directory</a>&lt;C, A&gt; <span class='where'>where C: <a class='trait' href='http://doc.rust-lang.org/nightly/collections/borrow/trait.BorrowMut.html' title='collections::borrow::BorrowMut'>BorrowMut</a>&lt;<a class='struct' href='../hyper/client/struct.Client.html' title='hyper::client::Client'>Client</a>&gt;, A: <a class='trait' href='../yup_oauth2/helper/trait.GetToken.html' title='yup_oauth2::helper::GetToken'>GetToken</a></span></code></h3><div class='impl-items'><h4 id='method.new' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.new' class='fnname'>new</a>(client: C, authenticator: A) -&gt; <a class='struct' href='../google_admin1_directory/struct.Directory.html' title='google_admin1_directory::Directory'>Directory</a>&lt;C, A&gt;</code></h4>
-<h4 id='method.asps' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.asps' class='fnname'>asps</a>(&amp;'a self) -&gt; <a class='struct' href='../google_admin1_directory/struct.AspMethods.html' title='google_admin1_directory::AspMethods'>AspMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.channels' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.channels' class='fnname'>channels</a>(&amp;'a self) -&gt; <a class='struct' href='../google_admin1_directory/struct.ChannelMethods.html' title='google_admin1_directory::ChannelMethods'>ChannelMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.chromeosdevices' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.chromeosdevices' class='fnname'>chromeosdevices</a>(&amp;'a self) -&gt; <a class='struct' href='../google_admin1_directory/struct.ChromeosdeviceMethods.html' title='google_admin1_directory::ChromeosdeviceMethods'>ChromeosdeviceMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.groups' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.groups' class='fnname'>groups</a>(&amp;'a self) -&gt; <a class='struct' href='../google_admin1_directory/struct.GroupMethods.html' title='google_admin1_directory::GroupMethods'>GroupMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.members' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.members' class='fnname'>members</a>(&amp;'a self) -&gt; <a class='struct' href='../google_admin1_directory/struct.MemberMethods.html' title='google_admin1_directory::MemberMethods'>MemberMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.mobiledevices' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.mobiledevices' class='fnname'>mobiledevices</a>(&amp;'a self) -&gt; <a class='struct' href='../google_admin1_directory/struct.MobiledeviceMethods.html' title='google_admin1_directory::MobiledeviceMethods'>MobiledeviceMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.notifications' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.notifications' class='fnname'>notifications</a>(&amp;'a self) -&gt; <a class='struct' href='../google_admin1_directory/struct.NotificationMethods.html' title='google_admin1_directory::NotificationMethods'>NotificationMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.orgunits' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.orgunits' class='fnname'>orgunits</a>(&amp;'a self) -&gt; <a class='struct' href='../google_admin1_directory/struct.OrgunitMethods.html' title='google_admin1_directory::OrgunitMethods'>OrgunitMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.schemas' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.schemas' class='fnname'>schemas</a>(&amp;'a self) -&gt; <a class='struct' href='../google_admin1_directory/struct.SchemaMethods.html' title='google_admin1_directory::SchemaMethods'>SchemaMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.tokens' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.tokens' class='fnname'>tokens</a>(&amp;'a self) -&gt; <a class='struct' href='../google_admin1_directory/struct.TokenMethods.html' title='google_admin1_directory::TokenMethods'>TokenMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.users' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.users' class='fnname'>users</a>(&amp;'a self) -&gt; <a class='struct' href='../google_admin1_directory/struct.UserMethods.html' title='google_admin1_directory::UserMethods'>UserMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.verification_codes' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.verification_codes' class='fnname'>verification_codes</a>(&amp;'a self) -&gt; <a class='struct' href='../google_admin1_directory/struct.VerificationCodeMethods.html' title='google_admin1_directory::VerificationCodeMethods'>VerificationCodeMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.user_agent' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.user_agent' class='fnname'>user_agent</a>(&amp;mut self, agent_name: <a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>) -&gt; <a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a></code></h4>
+}</pre>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_admin1_directory/struct.Directory.html' title='google_admin1_directory::Directory'>Directory</a>&lt;C, A&gt; <span class='where'>where C: <a class='trait' href='https://doc.rust-lang.org/nightly/core/borrow/trait.BorrowMut.html' title='core::borrow::BorrowMut'>BorrowMut</a>&lt;<a class='struct' href='../hyper/client/struct.Client.html' title='hyper::client::Client'>Client</a>&gt;, A: <a class='trait' href='../yup_oauth2/helper/trait.GetToken.html' title='yup_oauth2::helper::GetToken'>GetToken</a></span></code></h3><div class='impl-items'><h4 id='method.new' class='method'><code>fn <a href='#method.new' class='fnname'>new</a>(client: C, authenticator: A) -&gt; <a class='struct' href='../google_admin1_directory/struct.Directory.html' title='google_admin1_directory::Directory'>Directory</a>&lt;C, A&gt;</code></h4>
+<h4 id='method.asps' class='method'><code>fn <a href='#method.asps' class='fnname'>asps</a>(&amp;'a self) -&gt; <a class='struct' href='../google_admin1_directory/struct.AspMethods.html' title='google_admin1_directory::AspMethods'>AspMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.channels' class='method'><code>fn <a href='#method.channels' class='fnname'>channels</a>(&amp;'a self) -&gt; <a class='struct' href='../google_admin1_directory/struct.ChannelMethods.html' title='google_admin1_directory::ChannelMethods'>ChannelMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.chromeosdevices' class='method'><code>fn <a href='#method.chromeosdevices' class='fnname'>chromeosdevices</a>(&amp;'a self) -&gt; <a class='struct' href='../google_admin1_directory/struct.ChromeosdeviceMethods.html' title='google_admin1_directory::ChromeosdeviceMethods'>ChromeosdeviceMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.customers' class='method'><code>fn <a href='#method.customers' class='fnname'>customers</a>(&amp;'a self) -&gt; <a class='struct' href='../google_admin1_directory/struct.CustomerMethods.html' title='google_admin1_directory::CustomerMethods'>CustomerMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.domain_aliases' class='method'><code>fn <a href='#method.domain_aliases' class='fnname'>domain_aliases</a>(&amp;'a self) -&gt; <a class='struct' href='../google_admin1_directory/struct.DomainAliaseMethods.html' title='google_admin1_directory::DomainAliaseMethods'>DomainAliaseMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.domains' class='method'><code>fn <a href='#method.domains' class='fnname'>domains</a>(&amp;'a self) -&gt; <a class='struct' href='../google_admin1_directory/struct.DomainMethods.html' title='google_admin1_directory::DomainMethods'>DomainMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.groups' class='method'><code>fn <a href='#method.groups' class='fnname'>groups</a>(&amp;'a self) -&gt; <a class='struct' href='../google_admin1_directory/struct.GroupMethods.html' title='google_admin1_directory::GroupMethods'>GroupMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.members' class='method'><code>fn <a href='#method.members' class='fnname'>members</a>(&amp;'a self) -&gt; <a class='struct' href='../google_admin1_directory/struct.MemberMethods.html' title='google_admin1_directory::MemberMethods'>MemberMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.mobiledevices' class='method'><code>fn <a href='#method.mobiledevices' class='fnname'>mobiledevices</a>(&amp;'a self) -&gt; <a class='struct' href='../google_admin1_directory/struct.MobiledeviceMethods.html' title='google_admin1_directory::MobiledeviceMethods'>MobiledeviceMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.notifications' class='method'><code>fn <a href='#method.notifications' class='fnname'>notifications</a>(&amp;'a self) -&gt; <a class='struct' href='../google_admin1_directory/struct.NotificationMethods.html' title='google_admin1_directory::NotificationMethods'>NotificationMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.orgunits' class='method'><code>fn <a href='#method.orgunits' class='fnname'>orgunits</a>(&amp;'a self) -&gt; <a class='struct' href='../google_admin1_directory/struct.OrgunitMethods.html' title='google_admin1_directory::OrgunitMethods'>OrgunitMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.privileges' class='method'><code>fn <a href='#method.privileges' class='fnname'>privileges</a>(&amp;'a self) -&gt; <a class='struct' href='../google_admin1_directory/struct.PrivilegeMethods.html' title='google_admin1_directory::PrivilegeMethods'>PrivilegeMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.resources' class='method'><code>fn <a href='#method.resources' class='fnname'>resources</a>(&amp;'a self) -&gt; <a class='struct' href='../google_admin1_directory/struct.ResourceMethods.html' title='google_admin1_directory::ResourceMethods'>ResourceMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.role_assignments' class='method'><code>fn <a href='#method.role_assignments' class='fnname'>role_assignments</a>(&amp;'a self) -&gt; <a class='struct' href='../google_admin1_directory/struct.RoleAssignmentMethods.html' title='google_admin1_directory::RoleAssignmentMethods'>RoleAssignmentMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.roles' class='method'><code>fn <a href='#method.roles' class='fnname'>roles</a>(&amp;'a self) -&gt; <a class='struct' href='../google_admin1_directory/struct.RoleMethods.html' title='google_admin1_directory::RoleMethods'>RoleMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.schemas' class='method'><code>fn <a href='#method.schemas' class='fnname'>schemas</a>(&amp;'a self) -&gt; <a class='struct' href='../google_admin1_directory/struct.SchemaMethods.html' title='google_admin1_directory::SchemaMethods'>SchemaMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.tokens' class='method'><code>fn <a href='#method.tokens' class='fnname'>tokens</a>(&amp;'a self) -&gt; <a class='struct' href='../google_admin1_directory/struct.TokenMethods.html' title='google_admin1_directory::TokenMethods'>TokenMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.users' class='method'><code>fn <a href='#method.users' class='fnname'>users</a>(&amp;'a self) -&gt; <a class='struct' href='../google_admin1_directory/struct.UserMethods.html' title='google_admin1_directory::UserMethods'>UserMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.verification_codes' class='method'><code>fn <a href='#method.verification_codes' class='fnname'>verification_codes</a>(&amp;'a self) -&gt; <a class='struct' href='../google_admin1_directory/struct.VerificationCodeMethods.html' title='google_admin1_directory::VerificationCodeMethods'>VerificationCodeMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.user_agent' class='method'><code>fn <a href='#method.user_agent' class='fnname'>user_agent</a>(&amp;mut self, agent_name: <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>) -&gt; <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a></code></h4>
 <div class='docblock'><p>Set the user-agent header field to use in all requests to the server.
-It defaults to <code>google-api-rust-client/0.1.8</code>.</p>
+It defaults to <code>google-api-rust-client/0.1.11</code>.</p>
 
 <p>Returns the previously set user-agent.</p>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_admin1_directory/trait.Hub.html' title='google_admin1_directory::Hub'>Hub</a> for <a class='struct' href='../google_admin1_directory/struct.Directory.html' title='google_admin1_directory::Directory'>Directory</a>&lt;C, A&gt;</code></h3><div class='impl-items'></div></section>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_admin1_directory/trait.Hub.html' title='google_admin1_directory::Hub'>Hub</a> for <a class='struct' href='../google_admin1_directory/struct.Directory.html' title='google_admin1_directory::Directory'>Directory</a>&lt;C, A&gt;</code></h3><div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
 
-    <div id="help" class="hidden">
-        <div class="shortcuts">
-            <h1>Keyboard shortcuts</h1>
-            <dl>
-                <dt>?</dt>
-                <dd>Show this help dialog</dd>
-                <dt>S</dt>
-                <dd>Focus the search field</dd>
-                <dt>&larrb;</dt>
-                <dd>Move up in search results</dd>
-                <dt>&rarrb;</dt>
-                <dd>Move down in search results</dd>
-                <dt>&#9166;</dt>
-                <dd>Go to active search result</dd>
-            </dl>
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code>)
+                </p>
+            </div>
         </div>
-        <div class="infos">
-            <h1>Search tricks</h1>
-            <p>
-                Prefix searches with a type followed by a colon (e.g.
-                <code>fn:</code>) to restrict the search to a given type.
-            </p>
-            <p>
-                Accepted types are: <code>fn</code>, <code>mod</code>,
-                <code>struct</code>, <code>enum</code>,
-                <code>trait</code>, <code>typedef</code> (or
-                <code>tdef</code>).
-            </p>
-        </div>
-    </div>
+    </aside>
 
     
 
@@ -177,6 +198,6 @@ It defaults to <code>google-api-rust-client/0.1.8</code>.</p>
     <script src="../jquery.js"></script>
     <script src="../main.js"></script>
     
-    <script async src="../search-index.js"></script>
+    <script defer src="../search-index.js"></script>
 </body>
 </html>

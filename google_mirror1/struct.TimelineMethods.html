@@ -9,6 +9,7 @@
 
     <title>google_mirror1::TimelineMethods - Rust</title>
 
+    <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
 
     
@@ -24,35 +25,36 @@
 
     
 
-    <section class="sidebar">
+    <nav class="sidebar">
         
         <p class='location'><a href='index.html'>google_mirror1</a></p><script>window.sidebarCurrent = {name: 'TimelineMethods', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
-    </section>
+    </nav>
 
     <nav class="sub">
         <form class="search-form js-only">
             <div class="search-container">
                 <input class="search-input" name="search"
                        autocomplete="off"
-                       placeholder="Click or press 'S' to search, '?' for more options..."
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
                        type="search">
             </div>
         </form>
     </nav>
 
     <section id='main' class="content struct">
-<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_mirror1</a>::<wbr><a class='struct' href=''>TimelineMethods</a><wbr></span><span class='out-of-band'><span id='render-detail'>
-            <a id="collapse-all" href="#">[-]</a>&nbsp;<a id="expand-all" href="#">[+]</a>
-        </span><a id='src-24663' href='../src/google_mirror1///home/byron/dev/rust/google-apis-rs/target/debug/build/google-mirror1-ca1cb8209d126f65/out/lib.rs.html#6314-6316'>[src]</a></span></h1>
+<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_mirror1</a>::<wbr><a class='struct' href=''>TimelineMethods</a></span><span class='out-of-band'><span id='render-detail'>
+            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                [<span class='inner'>&#x2212;</span>]
+            </a>
+        </span><a id='src-4627' class='srclink' href='../src/google_mirror1///Users/byron/dev/rs/google-apis-rs/target/debug/build/google-mirror1-ccb6a00137bd8cef/out/lib.rs.html#8084-8086' title='goto source code'>[src]</a></span></h1>
 <pre class='rust struct'>pub struct TimelineMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>timeline</em> resources.
 It is not used directly, but through the <code>Mirror</code> hub.</p>
 
-<h1 id="example" class='section-header'><a
-                           href="#example">Example</a></h1>
+<h1 id='example' class='section-header'><a href='#example'>Example</a></h1>
 <p>Instantiate a resource builder</p>
-<pre id='rust-example-rendered' class='rust '>
+<pre class='rust rust-example-rendered'>
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>hyper</span>;
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>yup_oauth2</span> <span class='kw'>as</span> <span class='ident'>oauth2</span>;
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>google_mirror1</span> <span class='kw'>as</span> <span class='ident'>mirror1</span>;
@@ -69,141 +71,144 @@ It is not used directly, but through the <code>Mirror</code> hub.</p>
 <span class='comment'>// Usually you wouldn&#39;t bind this to a variable, but keep calling *CallBuilders*</span>
 <span class='comment'>// like `attachments_delete(...)`, `attachments_get(...)`, `attachments_insert(...)`, `attachments_list(...)`, `delete(...)`, `get(...)`, `insert(...)`, `list(...)`, `patch(...)` and `update(...)`</span>
 <span class='comment'>// to build up your call.</span>
-<span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>timeline</span>();
-</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_mirror1/struct.TimelineMethods.html' title='google_mirror1::TimelineMethods'>TimelineMethods</a>&lt;'a, C, A&gt;</code></h3><div class='impl-items'><h4 id='method.attachments_list' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.attachments_list' class='fnname'>attachments_list</a>(&amp;self, item_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_mirror1/struct.TimelineAttachmentListCall.html' title='google_mirror1::TimelineAttachmentListCall'>TimelineAttachmentListCall</a>&lt;'a, C, A&gt;</code></h4>
+<span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>timeline</span>();</pre>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_mirror1/struct.TimelineMethods.html' title='google_mirror1::TimelineMethods'>TimelineMethods</a>&lt;'a, C, A&gt;</code></h3><div class='impl-items'><h4 id='method.attachments_list' class='method'><code>fn <a href='#method.attachments_list' class='fnname'>attachments_list</a>(&amp;self, item_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_mirror1/struct.TimelineAttachmentListCall.html' title='google_mirror1::TimelineAttachmentListCall'>TimelineAttachmentListCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Returns a list of attachments for a timeline item.</p>
 
-<h1 id="arguments" class='section-header'><a
-                           href="#arguments">Arguments</a></h1>
+<h1 id='arguments' class='section-header'><a href='#arguments'>Arguments</a></h1>
 <ul>
 <li><code>itemId</code> - The ID of the timeline item whose attachments should be listed.</li>
 </ul>
-</div><h4 id='method.insert' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.insert' class='fnname'>insert</a>(&amp;self, request: <a class='struct' href='../google_mirror1/struct.TimelineItem.html' title='google_mirror1::TimelineItem'>TimelineItem</a>) -&gt; <a class='struct' href='../google_mirror1/struct.TimelineInsertCall.html' title='google_mirror1::TimelineInsertCall'>TimelineInsertCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.insert' class='method'><code>fn <a href='#method.insert' class='fnname'>insert</a>(&amp;self, request: <a class='struct' href='../google_mirror1/struct.TimelineItem.html' title='google_mirror1::TimelineItem'>TimelineItem</a>) -&gt; <a class='struct' href='../google_mirror1/struct.TimelineInsertCall.html' title='google_mirror1::TimelineInsertCall'>TimelineInsertCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Inserts a new item into the timeline.</p>
 
-<h1 id="arguments" class='section-header'><a
-                           href="#arguments">Arguments</a></h1>
+<h1 id='arguments-1' class='section-header'><a href='#arguments-1'>Arguments</a></h1>
 <ul>
 <li><code>request</code> - No description provided.</li>
 </ul>
-</div><h4 id='method.patch' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.patch' class='fnname'>patch</a>(&amp;self, request: <a class='struct' href='../google_mirror1/struct.TimelineItem.html' title='google_mirror1::TimelineItem'>TimelineItem</a>, id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_mirror1/struct.TimelinePatchCall.html' title='google_mirror1::TimelinePatchCall'>TimelinePatchCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.patch' class='method'><code>fn <a href='#method.patch' class='fnname'>patch</a>(&amp;self, request: <a class='struct' href='../google_mirror1/struct.TimelineItem.html' title='google_mirror1::TimelineItem'>TimelineItem</a>, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_mirror1/struct.TimelinePatchCall.html' title='google_mirror1::TimelinePatchCall'>TimelinePatchCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Updates a timeline item in place. This method supports patch semantics.</p>
 
-<h1 id="arguments" class='section-header'><a
-                           href="#arguments">Arguments</a></h1>
+<h1 id='arguments-2' class='section-header'><a href='#arguments-2'>Arguments</a></h1>
 <ul>
 <li><code>request</code> - No description provided.</li>
 <li><code>id</code> - The ID of the timeline item.</li>
 </ul>
-</div><h4 id='method.list' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self) -&gt; <a class='struct' href='../google_mirror1/struct.TimelineListCall.html' title='google_mirror1::TimelineListCall'>TimelineListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self) -&gt; <a class='struct' href='../google_mirror1/struct.TimelineListCall.html' title='google_mirror1::TimelineListCall'>TimelineListCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Retrieves a list of timeline items for the authenticated user.</p>
-</div><h4 id='method.attachments_insert' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.attachments_insert' class='fnname'>attachments_insert</a>(&amp;self, item_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_mirror1/struct.TimelineAttachmentInsertCall.html' title='google_mirror1::TimelineAttachmentInsertCall'>TimelineAttachmentInsertCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.attachments_insert' class='method'><code>fn <a href='#method.attachments_insert' class='fnname'>attachments_insert</a>(&amp;self, item_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_mirror1/struct.TimelineAttachmentInsertCall.html' title='google_mirror1::TimelineAttachmentInsertCall'>TimelineAttachmentInsertCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Adds a new attachment to a timeline item.</p>
 
-<h1 id="arguments" class='section-header'><a
-                           href="#arguments">Arguments</a></h1>
+<h1 id='arguments-3' class='section-header'><a href='#arguments-3'>Arguments</a></h1>
 <ul>
 <li><code>itemId</code> - The ID of the timeline item the attachment belongs to.</li>
 </ul>
-</div><h4 id='method.attachments_delete' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.attachments_delete' class='fnname'>attachments_delete</a>(&amp;self, item_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, attachment_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_mirror1/struct.TimelineAttachmentDeleteCall.html' title='google_mirror1::TimelineAttachmentDeleteCall'>TimelineAttachmentDeleteCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.attachments_delete' class='method'><code>fn <a href='#method.attachments_delete' class='fnname'>attachments_delete</a>(&amp;self, item_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, attachment_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_mirror1/struct.TimelineAttachmentDeleteCall.html' title='google_mirror1::TimelineAttachmentDeleteCall'>TimelineAttachmentDeleteCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Deletes an attachment from a timeline item.</p>
 
-<h1 id="arguments" class='section-header'><a
-                           href="#arguments">Arguments</a></h1>
+<h1 id='arguments-4' class='section-header'><a href='#arguments-4'>Arguments</a></h1>
 <ul>
 <li><code>itemId</code> - The ID of the timeline item the attachment belongs to.</li>
 <li><code>attachmentId</code> - The ID of the attachment.</li>
 </ul>
-</div><h4 id='method.delete' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.delete' class='fnname'>delete</a>(&amp;self, id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_mirror1/struct.TimelineDeleteCall.html' title='google_mirror1::TimelineDeleteCall'>TimelineDeleteCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.delete' class='method'><code>fn <a href='#method.delete' class='fnname'>delete</a>(&amp;self, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_mirror1/struct.TimelineDeleteCall.html' title='google_mirror1::TimelineDeleteCall'>TimelineDeleteCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Deletes a timeline item.</p>
 
-<h1 id="arguments" class='section-header'><a
-                           href="#arguments">Arguments</a></h1>
+<h1 id='arguments-5' class='section-header'><a href='#arguments-5'>Arguments</a></h1>
 <ul>
 <li><code>id</code> - The ID of the timeline item.</li>
 </ul>
-</div><h4 id='method.update' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.update' class='fnname'>update</a>(&amp;self, request: <a class='struct' href='../google_mirror1/struct.TimelineItem.html' title='google_mirror1::TimelineItem'>TimelineItem</a>, id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_mirror1/struct.TimelineUpdateCall.html' title='google_mirror1::TimelineUpdateCall'>TimelineUpdateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.update' class='method'><code>fn <a href='#method.update' class='fnname'>update</a>(&amp;self, request: <a class='struct' href='../google_mirror1/struct.TimelineItem.html' title='google_mirror1::TimelineItem'>TimelineItem</a>, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_mirror1/struct.TimelineUpdateCall.html' title='google_mirror1::TimelineUpdateCall'>TimelineUpdateCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Updates a timeline item in place.</p>
 
-<h1 id="arguments" class='section-header'><a
-                           href="#arguments">Arguments</a></h1>
+<h1 id='arguments-6' class='section-header'><a href='#arguments-6'>Arguments</a></h1>
 <ul>
 <li><code>request</code> - No description provided.</li>
 <li><code>id</code> - The ID of the timeline item.</li>
 </ul>
-</div><h4 id='method.attachments_get' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.attachments_get' class='fnname'>attachments_get</a>(&amp;self, item_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, attachment_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_mirror1/struct.TimelineAttachmentGetCall.html' title='google_mirror1::TimelineAttachmentGetCall'>TimelineAttachmentGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.attachments_get' class='method'><code>fn <a href='#method.attachments_get' class='fnname'>attachments_get</a>(&amp;self, item_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, attachment_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_mirror1/struct.TimelineAttachmentGetCall.html' title='google_mirror1::TimelineAttachmentGetCall'>TimelineAttachmentGetCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Retrieves an attachment on a timeline item by item ID and attachment ID.</p>
 
-<h1 id="arguments" class='section-header'><a
-                           href="#arguments">Arguments</a></h1>
+<h1 id='arguments-7' class='section-header'><a href='#arguments-7'>Arguments</a></h1>
 <ul>
 <li><code>itemId</code> - The ID of the timeline item the attachment belongs to.</li>
 <li><code>attachmentId</code> - The ID of the attachment.</li>
 </ul>
-</div><h4 id='method.get' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_mirror1/struct.TimelineGetCall.html' title='google_mirror1::TimelineGetCall'>TimelineGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_mirror1/struct.TimelineGetCall.html' title='google_mirror1::TimelineGetCall'>TimelineGetCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Gets a single timeline item by ID.</p>
 
-<h1 id="arguments" class='section-header'><a
-                           href="#arguments">Arguments</a></h1>
+<h1 id='arguments-8' class='section-header'><a href='#arguments-8'>Arguments</a></h1>
 <ul>
 <li><code>id</code> - The ID of the timeline item.</li>
 </ul>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_mirror1/trait.MethodsBuilder.html' title='google_mirror1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_mirror1/struct.TimelineMethods.html' title='google_mirror1::TimelineMethods'>TimelineMethods</a>&lt;'a, C, A&gt;</code></h3><div class='impl-items'></div></section>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_mirror1/trait.MethodsBuilder.html' title='google_mirror1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_mirror1/struct.TimelineMethods.html' title='google_mirror1::TimelineMethods'>TimelineMethods</a>&lt;'a, C, A&gt;</code></h3><div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
 
-    <div id="help" class="hidden">
-        <div class="shortcuts">
-            <h1>Keyboard shortcuts</h1>
-            <dl>
-                <dt>?</dt>
-                <dd>Show this help dialog</dd>
-                <dt>S</dt>
-                <dd>Focus the search field</dd>
-                <dt>&larrb;</dt>
-                <dd>Move up in search results</dd>
-                <dt>&rarrb;</dt>
-                <dd>Move down in search results</dd>
-                <dt>&#9166;</dt>
-                <dd>Go to active search result</dd>
-            </dl>
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code>)
+                </p>
+            </div>
         </div>
-        <div class="infos">
-            <h1>Search tricks</h1>
-            <p>
-                Prefix searches with a type followed by a colon (e.g.
-                <code>fn:</code>) to restrict the search to a given type.
-            </p>
-            <p>
-                Accepted types are: <code>fn</code>, <code>mod</code>,
-                <code>struct</code>, <code>enum</code>,
-                <code>trait</code>, <code>typedef</code> (or
-                <code>tdef</code>).
-            </p>
-        </div>
-    </div>
+    </aside>
 
     
 
@@ -215,6 +220,6 @@ It is not used directly, but through the <code>Mirror</code> hub.</p>
     <script src="../jquery.js"></script>
     <script src="../main.js"></script>
     
-    <script async src="../search-index.js"></script>
+    <script defer src="../search-index.js"></script>
 </body>
 </html>

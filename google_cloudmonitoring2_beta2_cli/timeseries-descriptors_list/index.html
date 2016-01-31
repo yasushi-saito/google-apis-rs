@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>List - Cloud Monitoring v0.3.0+20150401</title>
+  <title>List - Cloud Monitoring v0.3.3+20160124</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -17,6 +17,12 @@
   <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
   <link rel="stylesheet" href="../css/highlight.css">
 
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "List";
+  </script>
+  
   <script src="../js/jquery-2.1.1.min.js"></script>
   <script src="../js/modernizr-2.8.3.min.js"></script>
   <script type="text/javascript" src="../js/highlight.pack.js"></script>
@@ -32,95 +38,115 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Cloud Monitoring v0.3.0+20150401</a>
-        
+        <a href=".." class="icon icon-home"> Cloud Monitoring v0.3.3+20160124</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-      <ul class="current">
-    
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="..">Home</a>
         
-            <li class="toctree-l1 ">
-                <a class="" href="..">Home</a>
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Metric Descriptors</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../metric-descriptors_create/">Create</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../metric-descriptors_delete/">Delete</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../metric-descriptors_list/">List</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Timeseries</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../timeseries_list/">List</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../timeseries_write/">Write</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Timeseries Descriptors</span></li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">List</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#scopes">Scopes</a></li>
                 
-            </li>
+            
+                <li class="toctree-l3"><a href="#required-scalar-arguments">Required Scalar Arguments</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#required-request-value">Required Request Value</a></li>
+                
+                    <li><a class="toctree-l4" href="#about-cursors">About Cursors</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#optional-output-flags">Optional Output Flags</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#optional-method-properties">Optional Method Properties</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#optional-general-properties">Optional General Properties</a></li>
+                
+            
+            </ul>
         
+    </li>
 
-    
         
-            <span>Metric Descriptors</span>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../metric-descriptors_create/">Create</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../metric-descriptors_delete/">Delete</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../metric-descriptors_list/">List</a>
-                    
-                </li>
-            
-        
-
-    
-        
-            <span>Timeseries</span>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../timeseries_list/">List</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../timeseries_write/">Write</a>
-                    
-                </li>
-            
-        
-
-    
-        
-            <span>Timeseries Descriptors</span>
-            
-                <li class="toctree-l2 current">
-                    <a class="current" href="./">List</a>
-                    
-                        <ul>
-                        
-                            <li class="toctree-l3"><a href="#scopes">Scopes</a></li>
-                            
-                        
-                            <li class="toctree-l3"><a href="#required-scalar-arguments">Required Scalar Arguments</a></li>
-                            
-                        
-                            <li class="toctree-l3"><a href="#required-request-value">Required Request Value</a></li>
-                            
-                                <li><a class="toctree-l4" href="#about-cursors">About Cursors</a></li>
-                            
-                        
-                            <li class="toctree-l3"><a href="#optional-output-flags">Optional Output Flags</a></li>
-                            
-                        
-                            <li class="toctree-l3"><a href="#optional-method-properties">Optional Method Properties</a></li>
-                            
-                        
-                            <li class="toctree-l3"><a href="#optional-general-properties">Optional General Properties</a></li>
-                            
-                        
-                        </ul>
-                    
-                </li>
-            
-        
-
-    
-</ul>
-
+    </ul>
+<li>
+          
+        </ul>
       </div>
       &nbsp;
     </nav>
@@ -130,7 +156,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Cloud Monitoring v0.3.0+20150401</a>
+        <a href="..">Cloud Monitoring v0.3.3+20160124</a>
       </nav>
 
       
@@ -141,26 +167,33 @@
     <li><a href="..">Docs</a> &raquo;</li>
     
       
-        <li>Timeseries Descriptors &raquo;</li>
+        
+          <li>Timeseries Descriptors &raquo;</li>
+        
       
     
     <li>List</li>
-      <li class="wy-breadcrumbs-aside">
+    <li class="wy-breadcrumbs-aside">
+      
         
-          
-            <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/cloudmonitoring2_beta2-cli" class="icon icon-github"> Edit on GitHub</a>
-          
+          <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/cloudmonitoring2_beta2-cli" class="icon icon-github"> Edit on GitHub</a>
         
-      </li>
+      
+    </li>
   </ul>
   <hr/>
 </div>
           <div role="main">
             <div class="section">
-              <p>List the descriptors of the time series that match the metric and labels values and that have data points in the interval. Large responses are paginated; use the nextPageToken returned in the response to request subsequent pages of results by setting the pageToken query parameter to the value of the nextPageToken.</p>
+              
+                <p>List the descriptors of the time series that match the metric and labels values and that have data points in the interval. Large responses are paginated; use the nextPageToken returned in the response to request subsequent pages of results by setting the pageToken query parameter to the value of the nextPageToken.</p>
 <h1 id="scopes">Scopes</h1>
-<p>You will need authorization for the <em>https://www.googleapis.com/auth/monitoring</em> scope to make a valid call.</p>
-<p>If unset, the scope for this method defaults to <em>https://www.googleapis.com/auth/monitoring</em>.
+<p>You will need authorization for at least one of the following scopes to make a valid call:</p>
+<ul>
+<li><em>https://www.googleapis.com/auth/cloud-platform</em></li>
+<li><em>https://www.googleapis.com/auth/monitoring</em></li>
+</ul>
+<p>If unset, the scope for this method defaults to <em>https://www.googleapis.com/auth/cloud-platform</em>.
 You can set the scope for this method like this: <code>cloudmonitoring2-beta2 --scope &lt;scope&gt; timeseries-descriptors list ...</code></p>
 <h1 id="required-scalar-arguments">Required Scalar Arguments</h1>
 <ul>
@@ -218,18 +251,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p page-token=string</strong></p>
-<ul>
-<li>The pagination token, which is used to page through large result sets. Set this value to the value of the nextPageToken to retrieve the next page of results.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p oldest=string</strong></p>
-<ul>
-<li>Start of the time interval (exclusive), which is expressed as an RFC 3339 timestamp. If neither oldest nor timespan is specified, the default time interval will be (youngest - 4 hours, youngest]</li>
-</ul>
-</li>
-<li>
 <p><strong>-p window=string</strong></p>
 <ul>
 <li>The sampling window. At most one data point will be returned for each window in the requested time interval. This parameter is only valid for non-cumulative metric types. Units:  <ul>
@@ -242,9 +263,28 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p count=integer</strong></p>
+<p><strong>-p page-token=string</strong></p>
 <ul>
-<li>Maximum number of time series descriptors per page. Used for pagination. If not specified, count = 100.</li>
+<li>The pagination token, which is used to page through large result sets. Set this value to the value of the nextPageToken to retrieve the next page of results.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p labels=string</strong></p>
+<ul>
+<li>A collection of labels for the matching time series, which are represented as:  <ul>
+<li>key==value: key equals the value </li>
+<li>key=~value: key regex matches the value </li>
+<li>key!=value: key does not equal the value </li>
+<li>key!~value: key regex does not match the value  For example, to list all of the time series descriptors for the region us-central1, you could specify:
+label=cloud.googleapis.com%2Flocation=~us-central1.*</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>-p oldest=string</strong></p>
+<ul>
+<li>Start of the time interval (exclusive), which is expressed as an RFC 3339 timestamp. If neither oldest nor timespan is specified, the default time interval will be (youngest - 4 hours, youngest]</li>
 </ul>
 </li>
 <li>
@@ -264,16 +304,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p labels=string</strong></p>
+<p><strong>-p count=integer</strong></p>
 <ul>
-<li>A collection of labels for the matching time series, which are represented as:  <ul>
-<li>key==value: key equals the value </li>
-<li>key=~value: key regex matches the value </li>
-<li>key!=value: key does not equal the value </li>
-<li>key!~value: key regex does not match the value  For example, to list all of the time series descriptors for the region us-central1, you could specify:
-label=cloud.googleapis.com%2Flocation=~us-central1.*</li>
-</ul>
-</li>
+<li>Maximum number of time series descriptors per page. Used for pagination. If not specified, count = 100.</li>
 </ul>
 </li>
 <li>
@@ -329,6 +362,7 @@ label=cloud.googleapis.com%2Flocation=~us-central1.*</li>
 </ul>
 </li>
 </ul>
+              
             </div>
           </div>
           <footer>
@@ -344,9 +378,10 @@ label=cloud.googleapis.com%2Flocation=~us-central1.*</li>
   <hr/>
 
   <div role="contentinfo">
-    <p>
     <!-- Copyright etc -->
-    </p>
+    
+      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+    
   </div>
 
   Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
@@ -361,17 +396,15 @@ label=cloud.googleapis.com%2Flocation=~us-central1.*</li>
 
 <div class="rst-versions" role="note" style="cursor: pointer">
     <span class="rst-current-version" data-toggle="rst-current-version">
-        
-            <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/cloudmonitoring2_beta2-cli" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
-        
-      <span><a href="../timeseries_write/" style="color: #fcfcfc;">&laquo; Previous</a></span>
-      <span style="margin-left: 15px"><a href="" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+          <a class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../timeseries_write/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
     </span>
 </div>
 
-<!--
-MkDocs version  : 0.12.2
-Docs Build Date : 2015-06-21 14:29:45.005835
--->
 </body>
 </html>

@@ -9,6 +9,7 @@
 
     <title>google_analytics3::ManagementCustomMetricListCall - Rust</title>
 
+    <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
 
     
@@ -24,26 +25,28 @@
 
     
 
-    <section class="sidebar">
+    <nav class="sidebar">
         
         <p class='location'><a href='index.html'>google_analytics3</a></p><script>window.sidebarCurrent = {name: 'ManagementCustomMetricListCall', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
-    </section>
+    </nav>
 
     <nav class="sub">
         <form class="search-form js-only">
             <div class="search-container">
                 <input class="search-input" name="search"
                        autocomplete="off"
-                       placeholder="Click or press 'S' to search, '?' for more options..."
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
                        type="search">
             </div>
         </form>
     </nav>
 
     <section id='main' class="content struct">
-<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_analytics3</a>::<wbr><a class='struct' href=''>ManagementCustomMetricListCall</a><wbr></span><span class='out-of-band'><span id='render-detail'>
-            <a id="collapse-all" href="#">[-]</a>&nbsp;<a id="expand-all" href="#">[+]</a>
-        </span><a id='src-154558' href='../src/google_analytics3///home/byron/dev/rust/google-apis-rs/target/debug/build/google-analytics3-43470eb15e67bd4e/out/lib.rs.html#46940-46949'>[src]</a></span></h1>
+<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_analytics3</a>::<wbr><a class='struct' href=''>ManagementCustomMetricListCall</a></span><span class='out-of-band'><span id='render-detail'>
+            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                [<span class='inner'>&#x2212;</span>]
+            </a>
+        </span><a id='src-25425' class='srclink' href='../src/google_analytics3///Users/byron/dev/rs/google-apis-rs/target/debug/build/google-analytics3-3d07a092e6056a65/out/lib.rs.html#51486-51495' title='goto source code'>[src]</a></span></h1>
 <pre class='rust struct'>pub struct ManagementCustomMetricListCall&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>Lists custom metrics to which the user has access.</p>
@@ -51,60 +54,57 @@
 <p>A builder for the <em>customMetrics.list</em> method supported by a <em>management</em> resource.
 It is not used directly, but through a <code>ManagementMethods</code> instance.</p>
 
-<h1 id="example" class='section-header'><a
-                           href="#example">Example</a></h1>
+<h1 id='example' class='section-header'><a href='#example'>Example</a></h1>
 <p>Instantiate a resource method builder</p>
-<pre id='rust-example-rendered' class='rust '>
+<pre class='rust rust-example-rendered'>
  
 <span class='comment'>// You can configure optional parameters by calling the respective setters at will, and</span>
 <span class='comment'>// execute the final call using `doit()`.</span>
 <span class='comment'>// Values shown here are possibly random and not representative !</span>
 <span class='kw'>let</span> <span class='ident'>result</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>management</span>().<span class='ident'>custom_metrics_list</span>(<span class='string'>&quot;accountId&quot;</span>, <span class='string'>&quot;webPropertyId&quot;</span>)
-             .<span class='ident'>start_index</span>(<span class='op'>-</span><span class='number'>26</span>)
-             .<span class='ident'>max_results</span>(<span class='op'>-</span><span class='number'>36</span>)
-             .<span class='ident'>doit</span>();
-</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_analytics3/struct.ManagementCustomMetricListCall.html' title='google_analytics3::ManagementCustomMetricListCall'>ManagementCustomMetricListCall</a>&lt;'a, C, A&gt; <span class='where'>where C: <a class='trait' href='http://doc.rust-lang.org/nightly/collections/borrow/trait.BorrowMut.html' title='collections::borrow::BorrowMut'>BorrowMut</a>&lt;<a class='struct' href='../hyper/client/struct.Client.html' title='hyper::client::Client'>Client</a>&gt;, A: <a class='trait' href='../yup_oauth2/helper/trait.GetToken.html' title='yup_oauth2::helper::GetToken'>GetToken</a></span></code></h3><div class='impl-items'><h4 id='method.doit' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.doit' class='fnname'>doit</a>(self) -&gt; <a class='type' href='../google_analytics3/type.Result.html' title='google_analytics3::Result'>Result</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.tuple.html'>(<a class='struct' href='../hyper/client/response/struct.Response.html' title='hyper::client::response::Response'>Response</a>, <a class='struct' href='../google_analytics3/struct.CustomMetrics.html' title='google_analytics3::CustomMetrics'>CustomMetrics</a>)</a>&gt;</code></h4>
+             .<span class='ident'>start_index</span>(<span class='op'>-</span><span class='number'>55</span>)
+             .<span class='ident'>max_results</span>(<span class='op'>-</span><span class='number'>20</span>)
+             .<span class='ident'>doit</span>();</pre>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_analytics3/struct.ManagementCustomMetricListCall.html' title='google_analytics3::ManagementCustomMetricListCall'>ManagementCustomMetricListCall</a>&lt;'a, C, A&gt; <span class='where'>where C: <a class='trait' href='https://doc.rust-lang.org/nightly/core/borrow/trait.BorrowMut.html' title='core::borrow::BorrowMut'>BorrowMut</a>&lt;<a class='struct' href='../hyper/client/struct.Client.html' title='hyper::client::Client'>Client</a>&gt;, A: <a class='trait' href='../yup_oauth2/helper/trait.GetToken.html' title='yup_oauth2::helper::GetToken'>GetToken</a></span></code></h3><div class='impl-items'><h4 id='method.doit' class='method'><code>fn <a href='#method.doit' class='fnname'>doit</a>(self) -&gt; <a class='type' href='../google_analytics3/type.Result.html' title='google_analytics3::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>(<a class='struct' href='../hyper/client/response/struct.Response.html' title='hyper::client::response::Response'>Response</a>, <a class='struct' href='../google_analytics3/struct.CustomMetrics.html' title='google_analytics3::CustomMetrics'>CustomMetrics</a>)</a>&gt;</code></h4>
 <div class='docblock'><p>Perform the operation you have build so far.</p>
-</div><h4 id='method.account_id' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.account_id' class='fnname'>account_id</a>(self, new_value: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementCustomMetricListCall.html' title='google_analytics3::ManagementCustomMetricListCall'>ManagementCustomMetricListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.account_id' class='method'><code>fn <a href='#method.account_id' class='fnname'>account_id</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementCustomMetricListCall.html' title='google_analytics3::ManagementCustomMetricListCall'>ManagementCustomMetricListCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>Account ID for the custom metrics to retrieve.</p>
 
 <p>Sets the <em>account id</em> path property to the given value.</p>
 
-<p>Even though the property as already been set when instantiating this call, 
+<p>Even though the property as already been set when instantiating this call,
 we provide this method for API completeness.</p>
-</div><h4 id='method.web_property_id' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.web_property_id' class='fnname'>web_property_id</a>(self, new_value: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementCustomMetricListCall.html' title='google_analytics3::ManagementCustomMetricListCall'>ManagementCustomMetricListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.web_property_id' class='method'><code>fn <a href='#method.web_property_id' class='fnname'>web_property_id</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementCustomMetricListCall.html' title='google_analytics3::ManagementCustomMetricListCall'>ManagementCustomMetricListCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>Web property ID for the custom metrics to retrieve.</p>
 
 <p>Sets the <em>web property id</em> path property to the given value.</p>
 
-<p>Even though the property as already been set when instantiating this call, 
+<p>Even though the property as already been set when instantiating this call,
 we provide this method for API completeness.</p>
-</div><h4 id='method.start_index' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.start_index' class='fnname'>start_index</a>(self, new_value: <a href='http://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementCustomMetricListCall.html' title='google_analytics3::ManagementCustomMetricListCall'>ManagementCustomMetricListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.start_index' class='method'><code>fn <a href='#method.start_index' class='fnname'>start_index</a>(self, new_value: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementCustomMetricListCall.html' title='google_analytics3::ManagementCustomMetricListCall'>ManagementCustomMetricListCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>An index of the first entity to retrieve. Use this parameter as a pagination mechanism along with the max-results parameter.</p>
 
 <p>Sets the <em>start-index</em> query property to the given value.</p>
-</div><h4 id='method.max_results' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.max_results' class='fnname'>max_results</a>(self, new_value: <a href='http://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementCustomMetricListCall.html' title='google_analytics3::ManagementCustomMetricListCall'>ManagementCustomMetricListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.max_results' class='method'><code>fn <a href='#method.max_results' class='fnname'>max_results</a>(self, new_value: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementCustomMetricListCall.html' title='google_analytics3::ManagementCustomMetricListCall'>ManagementCustomMetricListCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>The maximum number of custom metrics to include in this response.</p>
 
 <p>Sets the <em>max-results</em> query property to the given value.</p>
-</div><h4 id='method.delegate' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.delegate' class='fnname'>delegate</a>(self, new_value: &amp;'a mut <a class='trait' href='../google_analytics3/trait.Delegate.html' title='google_analytics3::Delegate'>Delegate</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementCustomMetricListCall.html' title='google_analytics3::ManagementCustomMetricListCall'>ManagementCustomMetricListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.delegate' class='method'><code>fn <a href='#method.delegate' class='fnname'>delegate</a>(self, new_value: &amp;'a mut <a class='trait' href='../google_analytics3/trait.Delegate.html' title='google_analytics3::Delegate'>Delegate</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementCustomMetricListCall.html' title='google_analytics3::ManagementCustomMetricListCall'>ManagementCustomMetricListCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>The delegate implementation is consulted whenever there is an intermediate result, or if something goes wrong
 while executing the actual API request.</p>
 
 <p>It should be used to handle progress information, and to implement a certain level of resilience.</p>
 
 <p>Sets the <em>delegate</em> property to the given value.</p>
-</div><h4 id='method.param' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.param' class='fnname'>param</a>&lt;T&gt;(self, name: T, value: T) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementCustomMetricListCall.html' title='google_analytics3::ManagementCustomMetricListCall'>ManagementCustomMetricListCall</a>&lt;'a, C, A&gt; <span class='where'>where T: <a class='trait' href='http://doc.rust-lang.org/nightly/core/convert/trait.AsRef.html' title='core::convert::AsRef'>AsRef</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>&gt;</span></code></h4>
+</div><h4 id='method.param' class='method'><code>fn <a href='#method.param' class='fnname'>param</a>&lt;T&gt;(self, name: T, value: T) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementCustomMetricListCall.html' title='google_analytics3::ManagementCustomMetricListCall'>ManagementCustomMetricListCall</a>&lt;'a, C, A&gt; <span class='where'>where T: <a class='trait' href='https://doc.rust-lang.org/nightly/core/convert/trait.AsRef.html' title='core::convert::AsRef'>AsRef</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>&gt;</span></code></h4>
 <div class='docblock'><p>Set any additional parameter of the query string used in the request.
-It should be used to set parameters which are not yet available through their own 
+It should be used to set parameters which are not yet available through their own
 setters.</p>
 
 <p>Please note that this method must not be used to set any of the known paramters
 which have their own setter method. If done anyway, the request will fail.</p>
 
-<h1 id="additional-parameters" class='section-header'><a
-                           href="#additional-parameters">Additional Parameters</a></h1>
+<h1 id='additional-parameters' class='section-header'><a href='#additional-parameters'>Additional Parameters</a></h1>
 <ul>
 <li><em>quotaUser</em> (query-string) - Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. Overrides userIp if both are provided.</li>
 <li><em>oauth_token</em> (query-string) - OAuth 2.0 token for the current user.</li>
@@ -114,7 +114,7 @@ which have their own setter method. If done anyway, the request will fail.</p>
 <li><em>fields</em> (query-string) - Selector specifying which fields to include in a partial response.</li>
 <li><em>alt</em> (query-string) - Data format for the response.</li>
 </ul>
-</div><h4 id='method.add_scope' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.add_scope' class='fnname'>add_scope</a>&lt;T&gt;(self, scope: T) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementCustomMetricListCall.html' title='google_analytics3::ManagementCustomMetricListCall'>ManagementCustomMetricListCall</a>&lt;'a, C, A&gt; <span class='where'>where T: <a class='trait' href='http://doc.rust-lang.org/nightly/core/convert/trait.AsRef.html' title='core::convert::AsRef'>AsRef</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>&gt;</span></code></h4>
+</div><h4 id='method.add_scope' class='method'><code>fn <a href='#method.add_scope' class='fnname'>add_scope</a>&lt;T&gt;(self, scope: T) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementCustomMetricListCall.html' title='google_analytics3::ManagementCustomMetricListCall'>ManagementCustomMetricListCall</a>&lt;'a, C, A&gt; <span class='where'>where T: <a class='trait' href='https://doc.rust-lang.org/nightly/core/convert/trait.AsRef.html' title='core::convert::AsRef'>AsRef</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>&gt;</span></code></h4>
 <div class='docblock'><p>Identifies the authorization scope for the method you are building.</p>
 
 <p>Use this method to actively specify which scope should be used, instead the default <code>Scope</code> variant
@@ -126,41 +126,54 @@ tokens for more than one scope.</p>
 <p>Usually there is more than one suitable scope to authorize an operation, some of which may
 encompass more rights than others. For example, for listing resources, a <em>read-only</em> scope will be
 sufficient, a read-write scope will do as well.</p>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_analytics3/trait.CallBuilder.html' title='google_analytics3::CallBuilder'>CallBuilder</a> for <a class='struct' href='../google_analytics3/struct.ManagementCustomMetricListCall.html' title='google_analytics3::ManagementCustomMetricListCall'>ManagementCustomMetricListCall</a>&lt;'a, C, A&gt;</code></h3><div class='impl-items'></div></section>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_analytics3/trait.CallBuilder.html' title='google_analytics3::CallBuilder'>CallBuilder</a> for <a class='struct' href='../google_analytics3/struct.ManagementCustomMetricListCall.html' title='google_analytics3::ManagementCustomMetricListCall'>ManagementCustomMetricListCall</a>&lt;'a, C, A&gt;</code></h3><div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
 
-    <div id="help" class="hidden">
-        <div class="shortcuts">
-            <h1>Keyboard shortcuts</h1>
-            <dl>
-                <dt>?</dt>
-                <dd>Show this help dialog</dd>
-                <dt>S</dt>
-                <dd>Focus the search field</dd>
-                <dt>&larrb;</dt>
-                <dd>Move up in search results</dd>
-                <dt>&rarrb;</dt>
-                <dd>Move down in search results</dd>
-                <dt>&#9166;</dt>
-                <dd>Go to active search result</dd>
-            </dl>
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code>)
+                </p>
+            </div>
         </div>
-        <div class="infos">
-            <h1>Search tricks</h1>
-            <p>
-                Prefix searches with a type followed by a colon (e.g.
-                <code>fn:</code>) to restrict the search to a given type.
-            </p>
-            <p>
-                Accepted types are: <code>fn</code>, <code>mod</code>,
-                <code>struct</code>, <code>enum</code>,
-                <code>trait</code>, <code>typedef</code> (or
-                <code>tdef</code>).
-            </p>
-        </div>
-    </div>
+    </aside>
 
     
 
@@ -172,6 +185,6 @@ sufficient, a read-write scope will do as well.</p>
     <script src="../jquery.js"></script>
     <script src="../main.js"></script>
     
-    <script async src="../search-index.js"></script>
+    <script defer src="../search-index.js"></script>
 </body>
 </html>

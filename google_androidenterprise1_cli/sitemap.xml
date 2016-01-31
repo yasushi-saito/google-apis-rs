@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-androidenterprise1-cli/</loc>
+     <lastmod>2016-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-androidenterprise1-cli/collections_delete/</loc>
+     <lastmod>2016-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-androidenterprise1-cli/collections_get/</loc>
+     <lastmod>2016-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-androidenterprise1-cli/collections_insert/</loc>
+     <lastmod>2016-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-androidenterprise1-cli/collections_list/</loc>
+     <lastmod>2016-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-androidenterprise1-cli/collections_patch/</loc>
+     <lastmod>2016-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-androidenterprise1-cli/collections_update/</loc>
+     <lastmod>2016-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-androidenterprise1-cli/collectionviewers_delete/</loc>
+     <lastmod>2016-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-androidenterprise1-cli/collectionviewers_get/</loc>
+     <lastmod>2016-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-androidenterprise1-cli/collectionviewers_list/</loc>
+     <lastmod>2016-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-androidenterprise1-cli/collectionviewers_patch/</loc>
+     <lastmod>2016-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-androidenterprise1-cli/collectionviewers_update/</loc>
+     <lastmod>2016-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-androidenterprise1-cli/devices_get/</loc>
+     <lastmod>2016-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-androidenterprise1-cli/devices_get-state/</loc>
+     <lastmod>2016-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-androidenterprise1-cli/devices_list/</loc>
+     <lastmod>2016-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-androidenterprise1-cli/devices_set-state/</loc>
+     <lastmod>2016-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-androidenterprise1-cli/enterprises_delete/</loc>
+     <lastmod>2016-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-androidenterprise1-cli/enterprises_enroll/</loc>
+     <lastmod>2016-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-androidenterprise1-cli/enterprises_get/</loc>
+     <lastmod>2016-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-androidenterprise1-cli/enterprises_get-store-layout/</loc>
+     <lastmod>2016-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-androidenterprise1-cli/enterprises_insert/</loc>
+     <lastmod>2016-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-androidenterprise1-cli/enterprises_list/</loc>
+     <lastmod>2016-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-androidenterprise1-cli/enterprises_send-test-push-notification/</loc>
+     <lastmod>2016-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-androidenterprise1-cli/enterprises_set-account/</loc>
+     <lastmod>2016-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-androidenterprise1-cli/enterprises_set-store-layout/</loc>
+     <lastmod>2016-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-androidenterprise1-cli/enterprises_unenroll/</loc>
+     <lastmod>2016-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-androidenterprise1-cli/entitlements_delete/</loc>
+     <lastmod>2016-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-androidenterprise1-cli/entitlements_get/</loc>
+     <lastmod>2016-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-androidenterprise1-cli/entitlements_list/</loc>
+     <lastmod>2016-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-androidenterprise1-cli/entitlements_patch/</loc>
+     <lastmod>2016-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-androidenterprise1-cli/entitlements_update/</loc>
+     <lastmod>2016-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-androidenterprise1-cli/grouplicenses_get/</loc>
+     <lastmod>2016-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-androidenterprise1-cli/grouplicenses_list/</loc>
+     <lastmod>2016-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-androidenterprise1-cli/grouplicenseusers_list/</loc>
+     <lastmod>2016-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-androidenterprise1-cli/installs_delete/</loc>
+     <lastmod>2016-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-androidenterprise1-cli/installs_get/</loc>
+     <lastmod>2016-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-androidenterprise1-cli/installs_list/</loc>
+     <lastmod>2016-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-androidenterprise1-cli/installs_patch/</loc>
+     <lastmod>2016-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-androidenterprise1-cli/installs_update/</loc>
+     <lastmod>2016-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-androidenterprise1-cli/permissions_get/</loc>
+     <lastmod>2016-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-androidenterprise1-cli/products_approve/</loc>
+     <lastmod>2016-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-androidenterprise1-cli/products_generate-approval-url/</loc>
+     <lastmod>2016-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-androidenterprise1-cli/products_get/</loc>
+     <lastmod>2016-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-androidenterprise1-cli/products_get-app-restrictions-schema/</loc>
+     <lastmod>2016-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-androidenterprise1-cli/products_get-permissions/</loc>
+     <lastmod>2016-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-androidenterprise1-cli/products_update-permissions/</loc>
+     <lastmod>2016-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-androidenterprise1-cli/storelayoutclusters_delete/</loc>
+     <lastmod>2016-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-androidenterprise1-cli/storelayoutclusters_get/</loc>
+     <lastmod>2016-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-androidenterprise1-cli/storelayoutclusters_insert/</loc>
+     <lastmod>2016-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-androidenterprise1-cli/storelayoutclusters_list/</loc>
+     <lastmod>2016-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-androidenterprise1-cli/storelayoutclusters_patch/</loc>
+     <lastmod>2016-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-androidenterprise1-cli/storelayoutclusters_update/</loc>
+     <lastmod>2016-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-androidenterprise1-cli/storelayoutpages_delete/</loc>
+     <lastmod>2016-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-androidenterprise1-cli/storelayoutpages_get/</loc>
+     <lastmod>2016-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-androidenterprise1-cli/storelayoutpages_insert/</loc>
+     <lastmod>2016-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-androidenterprise1-cli/storelayoutpages_list/</loc>
+     <lastmod>2016-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-androidenterprise1-cli/storelayoutpages_patch/</loc>
+     <lastmod>2016-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-androidenterprise1-cli/storelayoutpages_update/</loc>
+     <lastmod>2016-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-androidenterprise1-cli/users_generate-token/</loc>
+     <lastmod>2016-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-androidenterprise1-cli/users_get/</loc>
+     <lastmod>2016-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-androidenterprise1-cli/users_get-available-product-set/</loc>
+     <lastmod>2016-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-androidenterprise1-cli/users_list/</loc>
+     <lastmod>2016-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-androidenterprise1-cli/users_revoke-token/</loc>
+     <lastmod>2016-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-androidenterprise1-cli/users_set-available-product-set/</loc>
+     <lastmod>2016-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+</urlset>

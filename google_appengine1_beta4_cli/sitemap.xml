@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-appengine1_beta4-cli/</loc>
+     <lastmod>2016-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-appengine1_beta4-cli/apps_get/</loc>
+     <lastmod>2016-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-appengine1_beta4-cli/apps_modules-delete/</loc>
+     <lastmod>2016-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-appengine1_beta4-cli/apps_modules-get/</loc>
+     <lastmod>2016-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-appengine1_beta4-cli/apps_modules-list/</loc>
+     <lastmod>2016-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-appengine1_beta4-cli/apps_modules-patch/</loc>
+     <lastmod>2016-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-appengine1_beta4-cli/apps_modules-versions-create/</loc>
+     <lastmod>2016-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-appengine1_beta4-cli/apps_modules-versions-delete/</loc>
+     <lastmod>2016-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-appengine1_beta4-cli/apps_modules-versions-get/</loc>
+     <lastmod>2016-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-appengine1_beta4-cli/apps_modules-versions-list/</loc>
+     <lastmod>2016-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-appengine1_beta4-cli/apps_operations-get/</loc>
+     <lastmod>2016-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-appengine1_beta4-cli/apps_operations-list/</loc>
+     <lastmod>2016-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+</urlset>

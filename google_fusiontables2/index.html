@@ -9,6 +9,7 @@
 
     <title>google_fusiontables2 - Rust</title>
 
+    <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
 
     
@@ -24,34 +25,35 @@
 
     
 
-    <section class="sidebar">
+    <nav class="sidebar">
         
         <p class='location'></p><script>window.sidebarCurrent = {name: 'google_fusiontables2', ty: 'mod', relpath: '../'};</script>
-    </section>
+    </nav>
 
     <nav class="sub">
         <form class="search-form js-only">
             <div class="search-container">
                 <input class="search-input" name="search"
                        autocomplete="off"
-                       placeholder="Click or press 'S' to search, '?' for more options..."
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
                        type="search">
             </div>
         </form>
     </nav>
 
     <section id='main' class="content mod">
-<h1 class='fqn'><span class='in-band'>Crate <a class='mod' href=''>google_fusiontables2</a><wbr></span><span class='out-of-band'><a href='stability.html'>[stability]</a> <span id='render-detail'>
-            <a id="collapse-all" href="#">[-]</a>&nbsp;<a id="expand-all" href="#">[+]</a>
-        </span><a id='src-0' href='../src/google_fusiontables2/lib.rs.html#5-206'>[src]</a></span></h1>
-<div class='docblock'><p>This documentation was generated from <em>fusiontables</em> crate version <em>0.1.8+20150326</em>, where <em>20150326</em> is the exact revision of the <em>fusiontables:v2</em> schema built by the <a href="http://www.makotemplates.org/">mako</a> code generator <em>v0.1.8</em>.</p>
+<h1 class='fqn'><span class='in-band'>Crate <a class='mod' href=''>google_fusiontables2</a></span><span class='out-of-band'><span id='render-detail'>
+            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                [<span class='inner'>&#x2212;</span>]
+            </a>
+        </span><a id='src-0' class='srclink' href='../src/google_fusiontables2/lib.rs.html#5-206' title='goto source code'>[src]</a></span></h1>
+<div class='docblock'><p>This documentation was generated from <em>fusiontables</em> crate version <em>0.1.11+20150618</em>, where <em>20150618</em> is the exact revision of the <em>fusiontables:v2</em> schema built by the <a href="http://www.makotemplates.org/">mako</a> code generator <em>v0.1.11</em>.</p>
 
 <p>Everything else about the <em>fusiontables</em> <em>v2</em> API can be found at the
 <a href="https://developers.google.com/fusiontables">official documentation site</a>.
 The original source code is <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/fusiontables2">on github</a>.</p>
 
-<h1 id="features" class='section-header'><a
-                           href="#features">Features</a></h1>
+<h1 id='features' class='section-header'><a href='#features'>Features</a></h1>
 <p>Handle the following <em>Resources</em> with ease from the central <a href="struct.Fusiontables.html">hub</a> ... </p>
 
 <ul>
@@ -104,8 +106,7 @@ The original source code is <a href="https://github.com/Byron/google-apis-rs/tre
 
 <p>Not what you are looking for ? Find all other Google APIs in their Rust <a href="../index.html">documentation index</a>.</p>
 
-<h1 id="structure-of-this-library" class='section-header'><a
-                           href="#structure-of-this-library">Structure of this Library</a></h1>
+<h1 id='structure-of-this-library' class='section-header'><a href='#structure-of-this-library'>Structure of this Library</a></h1>
 <p>The API is structured into the following primary items:</p>
 
 <ul>
@@ -138,37 +139,32 @@ allow access to individual <a href="trait.CallBuilder.html"><em>Call Builders</e
 <p>All <em>structures</em> are marked with applicable traits to further categorize them and ease browsing.</p>
 
 <p>Generally speaking, you can invoke <em>Activities</em> like this:</p>
-<pre id='rust-example-rendered' class='rust '>
-<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>resource</span>().<span class='ident'>activity</span>(...).<span class='ident'>doit</span>()
-</pre>
+<pre class='rust rust-example-rendered'>
+<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>resource</span>().<span class='ident'>activity</span>(...).<span class='ident'>doit</span>()</pre>
 
 <p>Or specifically ...</p>
-<pre id='rust-example-rendered' class='rust '>
+<pre class='rust rust-example-rendered'>
 <span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>table</span>().<span class='ident'>import_table</span>(...).<span class='ident'>doit</span>()
 <span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>table</span>().<span class='ident'>patch</span>(...).<span class='ident'>doit</span>()
 <span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>table</span>().<span class='ident'>get</span>(...).<span class='ident'>doit</span>()
 <span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>table</span>().<span class='ident'>copy</span>(...).<span class='ident'>doit</span>()
 <span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>table</span>().<span class='ident'>insert</span>(...).<span class='ident'>doit</span>()
-<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>table</span>().<span class='ident'>update</span>(...).<span class='ident'>doit</span>()
-</pre>
+<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>table</span>().<span class='ident'>update</span>(...).<span class='ident'>doit</span>()</pre>
 
 <p>The <code>resource()</code> and <code>activity(...)</code> calls create <a href="http://en.wikipedia.org/wiki/Builder_pattern">builders</a>. The second one dealing with <code>Activities</code> 
 supports various methods to configure the impending operation (not shown here). It is made such that all required arguments have to be 
 specified right away (i.e. <code>(...)</code>), whereas all optional ones can be <a href="http://en.wikipedia.org/wiki/Builder_pattern">build up</a> as desired.
 The <code>doit()</code> method performs the actual communication with the server and returns the respective result.</p>
 
-<h1 id="usage" class='section-header'><a
-                           href="#usage">Usage</a></h1>
-<h2 id="setting-up-your-project" class='section-header'><a
-                           href="#setting-up-your-project">Setting up your Project</a></h2>
+<h1 id='usage' class='section-header'><a href='#usage'>Usage</a></h1>
+<h2 id='setting-up-your-project' class='section-header'><a href='#setting-up-your-project'>Setting up your Project</a></h2>
 <p>To use this library, you would put the following lines into your <code>Cargo.toml</code> file:</p>
 
 <pre><code class="language-toml">[dependencies]
 google-fusiontables2 = &quot;*&quot;
 </code></pre>
 
-<h2 id="a-complete-example" class='section-header'><a
-                           href="#a-complete-example">A complete example</a></h2><pre id='rust-example-rendered' class='rust '>
+<h2 id='a-complete-example' class='section-header'><a href='#a-complete-example'>A complete example</a></h2><pre class='rust rust-example-rendered'>
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>hyper</span>;
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>yup_oauth2</span> <span class='kw'>as</span> <span class='ident'>oauth2</span>;
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>google_fusiontables2</span> <span class='kw'>as</span> <span class='ident'>fusiontables2</span>;
@@ -213,11 +209,9 @@ google-fusiontables2 = &quot;*&quot;
         <span class='op'>|</span><span class='ident'>Error</span>::<span class='ident'>JsonDecodeError</span>(_, _) <span class='op'>=&gt;</span> <span class='macro'>println</span><span class='macro'>!</span>(<span class='string'>&quot;{}&quot;</span>, <span class='ident'>e</span>),
     },
     <span class='prelude-val'>Ok</span>(<span class='ident'>res</span>) <span class='op'>=&gt;</span> <span class='macro'>println</span><span class='macro'>!</span>(<span class='string'>&quot;Success: {:?}&quot;</span>, <span class='ident'>res</span>),
-}
-</pre>
+}</pre>
 
-<h2 id="handling-errors" class='section-header'><a
-                           href="#handling-errors">Handling Errors</a></h2>
+<h2 id='handling-errors' class='section-header'><a href='#handling-errors'>Handling Errors</a></h2>
 <p>All errors produced by the system are provided either as <a href="enum.Result.html">Result</a> enumeration as return value of 
 the doit() methods, or handed as possibly intermediate results to either the 
 <a href="trait.Delegate.html">Hub Delegate</a>, or the <a href="../yup-oauth2/trait.AuthenticatorDelegate.html">Authenticator Delegate</a>.</p>
@@ -225,8 +219,7 @@ the doit() methods, or handed as possibly intermediate results to either the
 <p>When delegates handle errors or intermediate values, they may have a chance to instruct the system to retry. This 
 makes the system potentially resilient to all kinds of errors.</p>
 
-<h2 id="uploads-and-downloads" class='section-header'><a
-                           href="#uploads-and-downloads">Uploads and Downloads</a></h2>
+<h2 id='uploads-and-downloads' class='section-header'><a href='#uploads-and-downloads'>Uploads and Downloads</a></h2>
 <p>If a method supports downloads, the response body, which is part of the <a href="enum.Result.html">Result</a>, should be
 read by you to obtain the media.
 If such a method also supports a <a href="trait.ResponseResult.html">Response Result</a>, it will return that by default.
@@ -237,8 +230,7 @@ this call: <code>.param(&quot;alt&quot;, &quot;media&quot;)</code>.</p>
 <em>simple</em> and <em>resumable</em>. The distinctiveness of each is represented by customized 
 <code>doit(...)</code> methods, which are then named <code>upload(...)</code> and <code>upload_resumable(...)</code> respectively.</p>
 
-<h2 id="customization-and-callbacks" class='section-header'><a
-                           href="#customization-and-callbacks">Customization and Callbacks</a></h2>
+<h2 id='customization-and-callbacks' class='section-header'><a href='#customization-and-callbacks'>Customization and Callbacks</a></h2>
 <p>You may alter the way an <code>doit()</code> method is called by providing a <a href="trait.Delegate.html">delegate</a> to the 
 <a href="trait.CallBuilder.html">Method Builder</a> before making the final <code>doit()</code> call. 
 Respective methods will be called to provide progress information, as well as determine whether the system should 
@@ -246,16 +238,14 @@ retry on failure.</p>
 
 <p>The <a href="trait.Delegate.html">delegate trait</a> is default-implemented, allowing you to customize it with minimal effort.</p>
 
-<h2 id="optional-parts-in-server-requests" class='section-header'><a
-                           href="#optional-parts-in-server-requests">Optional Parts in Server-Requests</a></h2>
+<h2 id='optional-parts-in-server-requests' class='section-header'><a href='#optional-parts-in-server-requests'>Optional Parts in Server-Requests</a></h2>
 <p>All structures provided by this library are made to be <a href="trait.RequestValue.html">enocodable</a> and 
 <a href="trait.ResponseResult.html">decodable</a> via <em>json</em>. Optionals are used to indicate that partial requests are responses 
 are valid.
 Most optionals are are considered <a href="trait.Part.html">Parts</a> which are identifiable by name, which will be sent to 
 the server to indicate either the set parts of the request or the desired parts in the response.</p>
 
-<h2 id="builder-arguments" class='section-header'><a
-                           href="#builder-arguments">Builder Arguments</a></h2>
+<h2 id='builder-arguments' class='section-header'><a href='#builder-arguments'>Builder Arguments</a></h2>
 <p>Using <a href="trait.CallBuilder.html">method builders</a>, you are able to prepare an action call by repeatedly calling it&#39;s methods.
 These will always take a single argument, for which the following statements are true.</p>
 
@@ -268,164 +258,207 @@ These will always take a single argument, for which the following statements are
 <p>Arguments will always be copied or cloned into the builder, to make them independent of their original life times.</p>
 </div><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
 <table>
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Bucket.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.Bucket.html'
                                title='google_fusiontables2::Bucket'>Bucket</a></td>
-                        <td class='docblock short'><p>Specifies the minimum and maximum values, the color, opacity, icon and weight of a bucket within a StyleSetting.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Specifies the minimum and maximum values, the color, opacity, icon and weight of a bucket within a StyleSetting.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Column.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.Column.html'
                                title='google_fusiontables2::Column'>Column</a></td>
-                        <td class='docblock short'><p>Specifies the details of a column in a table.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Specifies the details of a column in a table.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ColumnBaseColumn.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.ColumnBaseColumn.html'
                                title='google_fusiontables2::ColumnBaseColumn'>ColumnBaseColumn</a></td>
-                        <td class='docblock short'><p>Identifier of the base column. If present, this column is derived from the specified base column.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Identifier of the base column. If present, this column is derived from the specified base column.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ColumnDeleteCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.ColumnDeleteCall.html'
                                title='google_fusiontables2::ColumnDeleteCall'>ColumnDeleteCall</a></td>
-                        <td class='docblock short'><p>Deletes the specified column.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Deletes the specified column.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ColumnGetCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.ColumnGetCall.html'
                                title='google_fusiontables2::ColumnGetCall'>ColumnGetCall</a></td>
-                        <td class='docblock short'><p>Retrieves a specific column by its ID.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Retrieves a specific column by its ID.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ColumnInsertCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.ColumnInsertCall.html'
                                title='google_fusiontables2::ColumnInsertCall'>ColumnInsertCall</a></td>
-                        <td class='docblock short'><p>Adds a new column to the table.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Adds a new column to the table.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ColumnList.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.ColumnList.html'
                                title='google_fusiontables2::ColumnList'>ColumnList</a></td>
-                        <td class='docblock short'><p>Represents a list of columns in a table.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Represents a list of columns in a table.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ColumnListCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.ColumnListCall.html'
                                title='google_fusiontables2::ColumnListCall'>ColumnListCall</a></td>
-                        <td class='docblock short'><p>Retrieves a list of columns.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Retrieves a list of columns.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ColumnMethods.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.ColumnMethods.html'
                                title='google_fusiontables2::ColumnMethods'>ColumnMethods</a></td>
-                        <td class='docblock short'><p>A builder providing access to all methods supported on <em>column</em> resources.
+                        <td class='docblock short'>
+                             <p>A builder providing access to all methods supported on <em>column</em> resources.
 It is not used directly, but through the <code>Fusiontables</code> hub.</p>
-</td>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ColumnPatchCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.ColumnPatchCall.html'
                                title='google_fusiontables2::ColumnPatchCall'>ColumnPatchCall</a></td>
-                        <td class='docblock short'><p>Updates the name or type of an existing column. This method supports patch semantics.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Updates the name or type of an existing column. This method supports patch semantics.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ColumnUpdateCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.ColumnUpdateCall.html'
                                title='google_fusiontables2::ColumnUpdateCall'>ColumnUpdateCall</a></td>
-                        <td class='docblock short'><p>Updates the name or type of an existing column.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Updates the name or type of an existing column.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.DefaultDelegate.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.DefaultDelegate.html'
                                title='google_fusiontables2::DefaultDelegate'>DefaultDelegate</a></td>
-                        <td class='docblock short'><p>A delegate with a conservative default implementation, which is used if no other delegate is
+                        <td class='docblock short'>
+                             <p>A delegate with a conservative default implementation, which is used if no other delegate is
 set.</p>
-</td>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ErrorResponse.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.ErrorResponse.html'
                                title='google_fusiontables2::ErrorResponse'>ErrorResponse</a></td>
-                        <td class='docblock short'><p>A utility to represent detailed errors we might see in case there are BadRequests.
+                        <td class='docblock short'>
+                             <p>A utility to represent detailed errors we might see in case there are BadRequests.
 The latter happen if the sent parameters or request structures are unsound</p>
-</td>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Fusiontables.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.Fusiontables.html'
                                title='google_fusiontables2::Fusiontables'>Fusiontables</a></td>
-                        <td class='docblock short'><p>Central instance to access all Fusiontables related resource activities</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Central instance to access all Fusiontables related resource activities</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Import.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.Import.html'
                                title='google_fusiontables2::Import'>Import</a></td>
-                        <td class='docblock short'><p>Represents an import request.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Represents an import request.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.LineStyle.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.LineStyle.html'
                                title='google_fusiontables2::LineStyle'>LineStyle</a></td>
-                        <td class='docblock short'><p>Represents a LineStyle within a StyleSetting</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Represents a LineStyle within a StyleSetting</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.MethodInfo.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.MethodInfo.html'
                                title='google_fusiontables2::MethodInfo'>MethodInfo</a></td>
-                        <td class='docblock short'><p>Contains information about an API request.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Contains information about an API request.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.MultiPartReader.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.MultiPartReader.html'
                                title='google_fusiontables2::MultiPartReader'>MultiPartReader</a></td>
-                        <td class='docblock short'><p>Provides a <code>Read</code> interface that converts multiple parts into the protocol
+                        <td class='docblock short'>
+                             <p>Provides a <code>Read</code> interface that converts multiple parts into the protocol
 identified by <a href="https://tools.ietf.org/html/rfc2387">RFC2387</a>.
 <strong>Note</strong>: This implementation is just as rich as it needs to be to perform uploads
 to google APIs, and might not be a fully-featured implementation.</p>
-</td>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.PointStyle.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.PointStyle.html'
                                title='google_fusiontables2::PointStyle'>PointStyle</a></td>
-                        <td class='docblock short'><p>Represents a PointStyle within a StyleSetting</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Represents a PointStyle within a StyleSetting</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.PolygonStyle.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.PolygonStyle.html'
                                title='google_fusiontables2::PolygonStyle'>PolygonStyle</a></td>
-                        <td class='docblock short'><p>Represents a PolygonStyle within a StyleSetting</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Represents a PolygonStyle within a StyleSetting</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.QueryMethods.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.QueryMethods.html'
                                title='google_fusiontables2::QueryMethods'>QueryMethods</a></td>
-                        <td class='docblock short'><p>A builder providing access to all methods supported on <em>query</em> resources.
+                        <td class='docblock short'>
+                             <p>A builder providing access to all methods supported on <em>query</em> resources.
 It is not used directly, but through the <code>Fusiontables</code> hub.</p>
-</td>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.QuerySqlCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.QuerySqlCall.html'
                                title='google_fusiontables2::QuerySqlCall'>QuerySqlCall</a></td>
-                        <td class='docblock short'><p>Executes a Fusion Tables SQL statement, which can be any of
+                        <td class='docblock short'>
+                             <p>Executes a Fusion Tables SQL statement, which can be any of
 - SELECT
 - INSERT
 - UPDATE
@@ -433,459 +466,587 @@ It is not used directly, but through the <code>Fusiontables</code> hub.</p>
 - SHOW
 - DESCRIBE
 - CREATE statement.</p>
-</td>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.QuerySqlGetCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.QuerySqlGetCall.html'
                                title='google_fusiontables2::QuerySqlGetCall'>QuerySqlGetCall</a></td>
-                        <td class='docblock short'><p>Executes a SQL statement which can be any of
+                        <td class='docblock short'>
+                             <p>Executes a SQL statement which can be any of
 - SELECT
 - SHOW
 - DESCRIBE</p>
-</td>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Sqlresponse.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.Sqlresponse.html'
                                title='google_fusiontables2::Sqlresponse'>Sqlresponse</a></td>
-                        <td class='docblock short'><p>Represents a response to a SQL statement.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Represents a response to a SQL statement.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.StyleDeleteCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.StyleDeleteCall.html'
                                title='google_fusiontables2::StyleDeleteCall'>StyleDeleteCall</a></td>
-                        <td class='docblock short'><p>Deletes a style.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Deletes a style.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.StyleFunction.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.StyleFunction.html'
                                title='google_fusiontables2::StyleFunction'>StyleFunction</a></td>
-                        <td class='docblock short'><p>Represents a StyleFunction within a StyleSetting</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Represents a StyleFunction within a StyleSetting</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.StyleFunctionGradient.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.StyleFunctionGradient.html'
                                title='google_fusiontables2::StyleFunctionGradient'>StyleFunctionGradient</a></td>
-                        <td class='docblock short'><p>Gradient function that interpolates a range of colors based on column value.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Gradient function that interpolates a range of colors based on column value.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.StyleFunctionGradientColors.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.StyleFunctionGradientColors.html'
                                title='google_fusiontables2::StyleFunctionGradientColors'>StyleFunctionGradientColors</a></td>
-                        <td class='docblock short'><p>Array with two or more colors.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Array with two or more colors.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.StyleGetCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.StyleGetCall.html'
                                title='google_fusiontables2::StyleGetCall'>StyleGetCall</a></td>
-                        <td class='docblock short'><p>Gets a specific style.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Gets a specific style.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.StyleInsertCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.StyleInsertCall.html'
                                title='google_fusiontables2::StyleInsertCall'>StyleInsertCall</a></td>
-                        <td class='docblock short'><p>Adds a new style for the table.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Adds a new style for the table.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.StyleListCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.StyleListCall.html'
                                title='google_fusiontables2::StyleListCall'>StyleListCall</a></td>
-                        <td class='docblock short'><p>Retrieves a list of styles.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Retrieves a list of styles.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.StyleMethods.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.StyleMethods.html'
                                title='google_fusiontables2::StyleMethods'>StyleMethods</a></td>
-                        <td class='docblock short'><p>A builder providing access to all methods supported on <em>style</em> resources.
+                        <td class='docblock short'>
+                             <p>A builder providing access to all methods supported on <em>style</em> resources.
 It is not used directly, but through the <code>Fusiontables</code> hub.</p>
-</td>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.StylePatchCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.StylePatchCall.html'
                                title='google_fusiontables2::StylePatchCall'>StylePatchCall</a></td>
-                        <td class='docblock short'><p>Updates an existing style. This method supports patch semantics.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Updates an existing style. This method supports patch semantics.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.StyleSetting.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.StyleSetting.html'
                                title='google_fusiontables2::StyleSetting'>StyleSetting</a></td>
-                        <td class='docblock short'><p>Represents a complete StyleSettings object. The primary key is a combination of the tableId and a styleId.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Represents a complete StyleSettings object. The primary key is a combination of the tableId and a styleId.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.StyleSettingList.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.StyleSettingList.html'
                                title='google_fusiontables2::StyleSettingList'>StyleSettingList</a></td>
-                        <td class='docblock short'><p>Represents a list of styles for a given table.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Represents a list of styles for a given table.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.StyleUpdateCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.StyleUpdateCall.html'
                                title='google_fusiontables2::StyleUpdateCall'>StyleUpdateCall</a></td>
-                        <td class='docblock short'><p>Updates an existing style.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Updates an existing style.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Table.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.Table.html'
                                title='google_fusiontables2::Table'>Table</a></td>
-                        <td class='docblock short'><p>Represents a table.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Represents a table.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.TableCopyCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.TableCopyCall.html'
                                title='google_fusiontables2::TableCopyCall'>TableCopyCall</a></td>
-                        <td class='docblock short'><p>Copies a table.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Copies a table.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.TableDeleteCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.TableDeleteCall.html'
                                title='google_fusiontables2::TableDeleteCall'>TableDeleteCall</a></td>
-                        <td class='docblock short'><p>Deletes a table.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Deletes a table.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.TableGetCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.TableGetCall.html'
                                title='google_fusiontables2::TableGetCall'>TableGetCall</a></td>
-                        <td class='docblock short'><p>Retrieves a specific table by its ID.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Retrieves a specific table by its ID.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.TableImportRowCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.TableImportRowCall.html'
                                title='google_fusiontables2::TableImportRowCall'>TableImportRowCall</a></td>
-                        <td class='docblock short'><p>Imports more rows into a table.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Imports more rows into a table.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.TableImportTableCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.TableImportTableCall.html'
                                title='google_fusiontables2::TableImportTableCall'>TableImportTableCall</a></td>
-                        <td class='docblock short'><p>Imports a new table.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Imports a new table.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.TableInsertCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.TableInsertCall.html'
                                title='google_fusiontables2::TableInsertCall'>TableInsertCall</a></td>
-                        <td class='docblock short'><p>Creates a new table.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Creates a new table.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.TableList.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.TableList.html'
                                title='google_fusiontables2::TableList'>TableList</a></td>
-                        <td class='docblock short'><p>Represents a list of tables.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Represents a list of tables.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.TableListCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.TableListCall.html'
                                title='google_fusiontables2::TableListCall'>TableListCall</a></td>
-                        <td class='docblock short'><p>Retrieves a list of tables a user owns.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Retrieves a list of tables a user owns.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.TableMethods.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.TableMethods.html'
                                title='google_fusiontables2::TableMethods'>TableMethods</a></td>
-                        <td class='docblock short'><p>A builder providing access to all methods supported on <em>table</em> resources.
+                        <td class='docblock short'>
+                             <p>A builder providing access to all methods supported on <em>table</em> resources.
 It is not used directly, but through the <code>Fusiontables</code> hub.</p>
-</td>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.TablePatchCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.TablePatchCall.html'
                                title='google_fusiontables2::TablePatchCall'>TablePatchCall</a></td>
-                        <td class='docblock short'><p>Updates an existing table. Unless explicitly requested, only the name, description, and attribution will be updated. This method supports patch semantics.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Updates an existing table. Unless explicitly requested, only the name, description, and attribution will be updated. This method supports patch semantics.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.TableReplaceRowCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.TableReplaceRowCall.html'
                                title='google_fusiontables2::TableReplaceRowCall'>TableReplaceRowCall</a></td>
-                        <td class='docblock short'><p>Replaces rows of an existing table. Current rows remain visible until all replacement rows are ready.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Replaces rows of an existing table. Current rows remain visible until all replacement rows are ready.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.TableUpdateCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.TableUpdateCall.html'
                                title='google_fusiontables2::TableUpdateCall'>TableUpdateCall</a></td>
-                        <td class='docblock short'><p>Updates an existing table. Unless explicitly requested, only the name, description, and attribution will be updated.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Updates an existing table. Unless explicitly requested, only the name, description, and attribution will be updated.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Task.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.Task.html'
                                title='google_fusiontables2::Task'>Task</a></td>
-                        <td class='docblock short'><p>A background task on a table, initiated for time- or resource-consuming operations such as changing column types or deleting all rows.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>A background task on a table, initiated for time- or resource-consuming operations such as changing column types or deleting all rows.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.TaskDeleteCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.TaskDeleteCall.html'
                                title='google_fusiontables2::TaskDeleteCall'>TaskDeleteCall</a></td>
-                        <td class='docblock short'><p>Deletes a specific task by its ID, unless that task has already started running.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Deletes a specific task by its ID, unless that task has already started running.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.TaskGetCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.TaskGetCall.html'
                                title='google_fusiontables2::TaskGetCall'>TaskGetCall</a></td>
-                        <td class='docblock short'><p>Retrieves a specific task by its ID.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Retrieves a specific task by its ID.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.TaskList.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.TaskList.html'
                                title='google_fusiontables2::TaskList'>TaskList</a></td>
-                        <td class='docblock short'><p>Represents a list of tasks for a table.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Represents a list of tasks for a table.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.TaskListCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.TaskListCall.html'
                                title='google_fusiontables2::TaskListCall'>TaskListCall</a></td>
-                        <td class='docblock short'><p>Retrieves a list of tasks.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Retrieves a list of tasks.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.TaskMethods.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.TaskMethods.html'
                                title='google_fusiontables2::TaskMethods'>TaskMethods</a></td>
-                        <td class='docblock short'><p>A builder providing access to all methods supported on <em>task</em> resources.
+                        <td class='docblock short'>
+                             <p>A builder providing access to all methods supported on <em>task</em> resources.
 It is not used directly, but through the <code>Fusiontables</code> hub.</p>
-</td>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Template.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.Template.html'
                                title='google_fusiontables2::Template'>Template</a></td>
-                        <td class='docblock short'><p>Represents the contents of InfoWindow templates.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Represents the contents of InfoWindow templates.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.TemplateDeleteCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.TemplateDeleteCall.html'
                                title='google_fusiontables2::TemplateDeleteCall'>TemplateDeleteCall</a></td>
-                        <td class='docblock short'><p>Deletes a template</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Deletes a template</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.TemplateGetCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.TemplateGetCall.html'
                                title='google_fusiontables2::TemplateGetCall'>TemplateGetCall</a></td>
-                        <td class='docblock short'><p>Retrieves a specific template by its id</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Retrieves a specific template by its id</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.TemplateInsertCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.TemplateInsertCall.html'
                                title='google_fusiontables2::TemplateInsertCall'>TemplateInsertCall</a></td>
-                        <td class='docblock short'><p>Creates a new template for the table.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Creates a new template for the table.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.TemplateList.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.TemplateList.html'
                                title='google_fusiontables2::TemplateList'>TemplateList</a></td>
-                        <td class='docblock short'><p>Represents a list of templates for a given table.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Represents a list of templates for a given table.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.TemplateListCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.TemplateListCall.html'
                                title='google_fusiontables2::TemplateListCall'>TemplateListCall</a></td>
-                        <td class='docblock short'><p>Retrieves a list of templates.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Retrieves a list of templates.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.TemplateMethods.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.TemplateMethods.html'
                                title='google_fusiontables2::TemplateMethods'>TemplateMethods</a></td>
-                        <td class='docblock short'><p>A builder providing access to all methods supported on <em>template</em> resources.
+                        <td class='docblock short'>
+                             <p>A builder providing access to all methods supported on <em>template</em> resources.
 It is not used directly, but through the <code>Fusiontables</code> hub.</p>
-</td>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.TemplatePatchCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.TemplatePatchCall.html'
                                title='google_fusiontables2::TemplatePatchCall'>TemplatePatchCall</a></td>
-                        <td class='docblock short'><p>Updates an existing template. This method supports patch semantics.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Updates an existing template. This method supports patch semantics.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.TemplateUpdateCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.TemplateUpdateCall.html'
                                title='google_fusiontables2::TemplateUpdateCall'>TemplateUpdateCall</a></td>
-                        <td class='docblock short'><p>Updates an existing template</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Updates an existing template</p>
+
+                        </td>
                     </tr>
                 </table><h2 id='enums' class='section-header'><a href="#enums">Enums</a></h2>
 <table>
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='enum' href='enum.Error.html'
+                    <tr class=' module-item'>
+                        <td><a class='enum' href='enum.Error.html'
                                title='google_fusiontables2::Error'>Error</a></td>
-                        <td class='docblock short'></td>
+                        <td class='docblock short'>
+                             
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='enum' href='enum.Scope.html'
+                    <tr class=' module-item'>
+                        <td><a class='enum' href='enum.Scope.html'
                                title='google_fusiontables2::Scope'>Scope</a></td>
-                        <td class='docblock short'><p>Identifies the an OAuth2 authorization scope.
+                        <td class='docblock short'>
+                             <p>Identifies the an OAuth2 authorization scope.
 A scope is needed when requesting an
 <a href="https://developers.google.com/youtube/v3/guides/authentication">authorization token</a>.</p>
-</td>
+
+                        </td>
                     </tr>
                 </table><h2 id='traits' class='section-header'><a href="#traits">Traits</a></h2>
 <table>
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.CallBuilder.html'
+                    <tr class=' module-item'>
+                        <td><a class='trait' href='trait.CallBuilder.html'
                                title='google_fusiontables2::CallBuilder'>CallBuilder</a></td>
-                        <td class='docblock short'><p>Identifies types which represent builders for a particular resource method</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Identifies types which represent builders for a particular resource method</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.Delegate.html'
+                    <tr class=' module-item'>
+                        <td><a class='trait' href='trait.Delegate.html'
                                title='google_fusiontables2::Delegate'>Delegate</a></td>
-                        <td class='docblock short'><p>A trait specifying functionality to help controlling any request performed by the API.
+                        <td class='docblock short'>
+                             <p>A trait specifying functionality to help controlling any request performed by the API.
 The trait has a conservative default implementation.</p>
-</td>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.Hub.html'
+                    <tr class=' module-item'>
+                        <td><a class='trait' href='trait.Hub.html'
                                title='google_fusiontables2::Hub'>Hub</a></td>
-                        <td class='docblock short'><p>Identifies the Hub. There is only one per library, this trait is supposed
+                        <td class='docblock short'>
+                             <p>Identifies the Hub. There is only one per library, this trait is supposed
 to make intended use more explicit.
 The hub allows to access all resource methods more easily.</p>
-</td>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.MethodsBuilder.html'
+                    <tr class=' module-item'>
+                        <td><a class='trait' href='trait.MethodsBuilder.html'
                                title='google_fusiontables2::MethodsBuilder'>MethodsBuilder</a></td>
-                        <td class='docblock short'><p>Identifies types for building methods of a particular resource type</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Identifies types for building methods of a particular resource type</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.NestedType.html'
+                    <tr class=' module-item'>
+                        <td><a class='trait' href='trait.NestedType.html'
                                title='google_fusiontables2::NestedType'>NestedType</a></td>
-                        <td class='docblock short'><p>Identifies types which are only used by other types internally.
+                        <td class='docblock short'>
+                             <p>Identifies types which are only used by other types internally.
 They have no special meaning, this trait just marks them for completeness.</p>
-</td>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.Part.html'
+                    <tr class=' module-item'>
+                        <td><a class='trait' href='trait.Part.html'
                                title='google_fusiontables2::Part'>Part</a></td>
-                        <td class='docblock short'><p>Identifies types which are only used as part of other types, which
+                        <td class='docblock short'>
+                             <p>Identifies types which are only used as part of other types, which
 usually are carrying the <code>Resource</code> trait.</p>
-</td>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.ReadSeek.html'
+                    <tr class=' module-item'>
+                        <td><a class='trait' href='trait.ReadSeek.html'
                                title='google_fusiontables2::ReadSeek'>ReadSeek</a></td>
-                        <td class='docblock short'><p>A utility to specify reader types which provide seeking capabilities too</p>
-</td>
+                        <td class='docblock short'>
+                             <p>A utility to specify reader types which provide seeking capabilities too</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.RequestValue.html'
+                    <tr class=' module-item'>
+                        <td><a class='trait' href='trait.RequestValue.html'
                                title='google_fusiontables2::RequestValue'>RequestValue</a></td>
-                        <td class='docblock short'><p>Identifies types which are used in API requests.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Identifies types which are used in API requests.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.Resource.html'
+                    <tr class=' module-item'>
+                        <td><a class='trait' href='trait.Resource.html'
                                title='google_fusiontables2::Resource'>Resource</a></td>
-                        <td class='docblock short'><p>Identifies types which can be inserted and deleted.
+                        <td class='docblock short'>
+                             <p>Identifies types which can be inserted and deleted.
 Types with this trait are most commonly used by clients of this API.</p>
-</td>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.ResponseResult.html'
+                    <tr class=' module-item'>
+                        <td><a class='trait' href='trait.ResponseResult.html'
                                title='google_fusiontables2::ResponseResult'>ResponseResult</a></td>
-                        <td class='docblock short'><p>Identifies types which are used in API responses.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Identifies types which are used in API responses.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.ToParts.html'
+                    <tr class=' module-item'>
+                        <td><a class='trait' href='trait.ToParts.html'
                                title='google_fusiontables2::ToParts'>ToParts</a></td>
-                        <td class='docblock short'><p>A trait for all types that can convert themselves into a <em>parts</em> string</p>
-</td>
+                        <td class='docblock short'>
+                             <p>A trait for all types that can convert themselves into a <em>parts</em> string</p>
+
+                        </td>
                     </tr>
                 </table><h2 id='functions' class='section-header'><a href="#functions">Functions</a></h2>
 <table>
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.remove_json_null_values.html'
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.remove_json_null_values.html'
                                title='google_fusiontables2::remove_json_null_values'>remove_json_null_values</a></td>
-                        <td class='docblock short'></td>
+                        <td class='docblock short'>
+                             
+                        </td>
                     </tr>
                 </table><h2 id='types' class='section-header'><a href="#types">Type Definitions</a></h2>
 <table>
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='type' href='type.Result.html'
+                    <tr class=' module-item'>
+                        <td><a class='type' href='type.Result.html'
                                title='google_fusiontables2::Result'>Result</a></td>
-                        <td class='docblock short'><p>A universal result type used as return for all calls.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>A universal result type used as return for all calls.</p>
+
+                        </td>
                     </tr>
                 </table></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
 
-    <div id="help" class="hidden">
-        <div class="shortcuts">
-            <h1>Keyboard shortcuts</h1>
-            <dl>
-                <dt>?</dt>
-                <dd>Show this help dialog</dd>
-                <dt>S</dt>
-                <dd>Focus the search field</dd>
-                <dt>&larrb;</dt>
-                <dd>Move up in search results</dd>
-                <dt>&rarrb;</dt>
-                <dd>Move down in search results</dd>
-                <dt>&#9166;</dt>
-                <dd>Go to active search result</dd>
-            </dl>
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code>)
+                </p>
+            </div>
         </div>
-        <div class="infos">
-            <h1>Search tricks</h1>
-            <p>
-                Prefix searches with a type followed by a colon (e.g.
-                <code>fn:</code>) to restrict the search to a given type.
-            </p>
-            <p>
-                Accepted types are: <code>fn</code>, <code>mod</code>,
-                <code>struct</code>, <code>enum</code>,
-                <code>trait</code>, <code>typedef</code> (or
-                <code>tdef</code>).
-            </p>
-        </div>
-    </div>
+    </aside>
 
     
 
@@ -897,6 +1058,6 @@ Types with this trait are most commonly used by clients of this API.</p>
     <script src="../jquery.js"></script>
     <script src="../main.js"></script>
     
-    <script async src="../search-index.js"></script>
+    <script defer src="../search-index.js"></script>
 </body>
 </html>

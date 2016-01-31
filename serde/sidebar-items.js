@@ -1,1 +1,1 @@
-initSidebarItems({"mod":[["bytes","Helper module to enable serializing bytes more efficiently"],["de","Generic deserialization framework."],["iter",""],["json","JSON and serialization"],["ser","Generic serialization framework."]]});
+initSidebarItems({"mod":[["bytes","Helper module to enable serializing bytes more efficiently"],["de","Generic deserialization framework."],["iter","Module that contains helper iterators."],["ser","Generic serialization framework."]]});

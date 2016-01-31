@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `Beacon` struct in crate `google_proximitybeacon1_beta1`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, Beacon">
+
+    <title>google_proximitybeacon1_beta1::Beacon - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../main.css">
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='index.html'>google_proximitybeacon1_beta1</a></p><script>window.sidebarCurrent = {name: 'Beacon', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content struct">
+<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_proximitybeacon1_beta1</a>::<wbr><a class='struct' href=''>Beacon</a></span><span class='out-of-band'><span id='render-detail'>
+            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                [<span class='inner'>&#x2212;</span>]
+            </a>
+        </span><a id='src-2654' class='srclink' href='../src/google_proximitybeacon1_beta1///Users/byron/dev/rs/google-apis-rs/target/debug/build/google-proximitybeacon1_beta1-16be8f2bd72ceb52/out/lib.rs.html#4439-4458' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct Beacon {
+    pub status: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub description: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub indoor_level: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_proximitybeacon1_beta1/struct.IndoorLevel.html' title='google_proximitybeacon1_beta1::IndoorLevel'>IndoorLevel</a>&gt;,
+    pub lat_lng: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_proximitybeacon1_beta1/struct.LatLng.html' title='google_proximitybeacon1_beta1::LatLng'>LatLng</a>&gt;,
+    pub place_id: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub advertised_id: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_proximitybeacon1_beta1/struct.AdvertisedId.html' title='google_proximitybeacon1_beta1::AdvertisedId'>AdvertisedId</a>&gt;,
+    pub beacon_name: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub expected_stability: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub properties: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/std/collections/hash/map/struct.HashMap.html' title='std::collections::hash::map::HashMap'>HashMap</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>, <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;&gt;,
+}</pre><div class='docblock'><p>Details of a beacon device.</p>
+
+<h1 id='activities' class='section-header'><a href='#activities'>Activities</a></h1>
+<p>This type is used in activities, which are methods you may call on this type or where this type is involved in. 
+The list links the activity name, along with information about where it is used (one of <em>request</em> and <em>response</em>).</p>
+
+<ul>
+<li><a href="struct.BeaconAttachmentListCall.html">attachments list beacons</a> (none)</li>
+<li><a href="struct.BeaconGetCall.html">get beacons</a> (response)</li>
+<li><a href="struct.BeaconAttachmentCreateCall.html">attachments create beacons</a> (none)</li>
+<li><a href="struct.BeaconDecommissionCall.html">decommission beacons</a> (none)</li>
+<li><a href="struct.BeaconActivateCall.html">activate beacons</a> (none)</li>
+<li><a href="struct.BeaconListCall.html">list beacons</a> (none)</li>
+<li><a href="struct.BeaconUpdateCall.html">update beacons</a> (request|response)</li>
+<li><a href="struct.BeaconAttachmentDeleteCall.html">attachments delete beacons</a> (none)</li>
+<li><a href="struct.BeaconDeactivateCall.html">deactivate beacons</a> (none)</li>
+<li><a href="struct.BeaconRegisterCall.html">register beacons</a> (request|response)</li>
+<li><a href="struct.BeaconDiagnosticListCall.html">diagnostics list beacons</a> (none)</li>
+<li><a href="struct.BeaconAttachmentBatchDeleteCall.html">attachments batch delete beacons</a> (none)</li>
+</ul>
+</div><h2 class='fields'>Fields</h2>
+<table><tr class='stab '>
+                                  <td id='structfield.status'><code>status</code></td><td><div class='docblock'><p>Current status of the beacon. Required.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.description'><code>description</code></td><td><div class='docblock'><p>Free text used to identify and describe the beacon. Maximum length 140 characters. Optional.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.indoor_level'><code>indoor_level</code></td><td><div class='docblock'><p>The indoor level information for this beacon, if known. As returned by the Google Maps API. Optional.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.lat_lng'><code>lat_lng</code></td><td><div class='docblock'><p>The location of the beacon, expressed as a latitude and longitude pair. This location is given when the beacon is registered or updated. It does not necessarily indicate the actual current location of the beacon. Optional.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.place_id'><code>place_id</code></td><td><div class='docblock'><p>The <a href="/places/place-id">Google Places API</a> Place ID of the place where the beacon is deployed. This is given when the beacon is registered or updated, not automatically detected in any way. Optional.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.advertised_id'><code>advertised_id</code></td><td><div class='docblock'><p>The identifier of a beacon as advertised by it. This field must be populated when registering. It may be empty when updating a beacon record because it is ignored in updates.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.beacon_name'><code>beacon_name</code></td><td><div class='docblock'><p>Resource name of this beacon. A beacon name has the format &quot;beacons/N!beaconId&quot; where the beaconId is the base16 ID broadcast by the beacon and N is a code for the beacon&#39;s type. Possible values are <code>3</code> for Eddystone, <code>1</code> for iBeacon, or <code>5</code> for AltBeacon. This field must be left empty when registering. After reading a beacon, clients can use the name for future operations.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.expected_stability'><code>expected_stability</code></td><td><div class='docblock'><p>Expected location stability. This is set when the beacon is registered or updated, not automatically detected in any way. Optional.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.properties'><code>properties</code></td><td><div class='docblock'><p>Properties of the beacon device, for example battery type or firmware version. Optional.</p>
+</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl <a class='trait' href='../serde/de/trait.Deserialize.html' title='serde::de::Deserialize'>Deserialize</a> for <a class='struct' href='../google_proximitybeacon1_beta1/struct.Beacon.html' title='google_proximitybeacon1_beta1::Beacon'>Beacon</a></code></h3><div class='impl-items'><h4 id='method.deserialize' class='method'><code>fn <a href='../serde/de/trait.Deserialize.html#method.deserialize' class='fnname'>deserialize</a>&lt;__D&gt;(deserializer: &amp;mut __D) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../google_proximitybeacon1_beta1/struct.Beacon.html' title='google_proximitybeacon1_beta1::Beacon'>Beacon</a>, __D::Error&gt; <span class='where'>where __D: <a class='trait' href='../serde/de/trait.Deserializer.html' title='serde::de::Deserializer'>Deserializer</a></span></code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='../serde/ser/trait.Serialize.html' title='serde::ser::Serialize'>Serialize</a> for <a class='struct' href='../google_proximitybeacon1_beta1/struct.Beacon.html' title='google_proximitybeacon1_beta1::Beacon'>Beacon</a></code></h3><div class='impl-items'><h4 id='method.serialize' class='method'><code>fn <a href='../serde/ser/trait.Serialize.html#method.serialize' class='fnname'>serialize</a>&lt;__S&gt;(&amp;self, serializer: &amp;mut __S) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, __S::Error&gt; <span class='where'>where __S: <a class='trait' href='../serde/ser/trait.Serializer.html' title='serde::ser::Serializer'>Serializer</a></span></code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='../google_proximitybeacon1_beta1/trait.RequestValue.html' title='google_proximitybeacon1_beta1::RequestValue'>RequestValue</a> for <a class='struct' href='../google_proximitybeacon1_beta1/struct.Beacon.html' title='google_proximitybeacon1_beta1::Beacon'>Beacon</a></code></h3><div class='impl-items'></div><h3 class='impl'><code>impl <a class='trait' href='../google_proximitybeacon1_beta1/trait.Resource.html' title='google_proximitybeacon1_beta1::Resource'>Resource</a> for <a class='struct' href='../google_proximitybeacon1_beta1/struct.Beacon.html' title='google_proximitybeacon1_beta1::Beacon'>Beacon</a></code></h3><div class='impl-items'></div><h3 class='impl'><code>impl <a class='trait' href='../google_proximitybeacon1_beta1/trait.ResponseResult.html' title='google_proximitybeacon1_beta1::ResponseResult'>ResponseResult</a> for <a class='struct' href='../google_proximitybeacon1_beta1/struct.Beacon.html' title='google_proximitybeacon1_beta1::Beacon'>Beacon</a></code></h3><div class='impl-items'></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_proximitybeacon1_beta1/struct.Beacon.html' title='google_proximitybeacon1_beta1::Beacon'>Beacon</a></code></h3><div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#method.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_proximitybeacon1_beta1/struct.Beacon.html' title='google_proximitybeacon1_beta1::Beacon'>Beacon</a></code></h3><div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_proximitybeacon1_beta1/struct.Beacon.html' title='google_proximitybeacon1_beta1::Beacon'>Beacon</a></code></h4>
+<h4 id='method.clone_from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_proximitybeacon1_beta1/struct.Beacon.html' title='google_proximitybeacon1_beta1::Beacon'>Beacon</a></code></h3><div class='impl-items'><h4 id='method.default' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#method.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_proximitybeacon1_beta1/struct.Beacon.html' title='google_proximitybeacon1_beta1::Beacon'>Beacon</a></code></h4>
+</div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "google_proximitybeacon1_beta1";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../jquery.js"></script>
+    <script src="../main.js"></script>
+    
+    <script defer src="../search-index.js"></script>
+</body>
+</html>

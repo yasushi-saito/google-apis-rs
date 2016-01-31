@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Insert - replicapoolupdater v0.3.0+20150326</title>
+  <title>Insert - replicapoolupdater v0.3.3+20160107</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -17,6 +17,12 @@
   <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
   <link rel="stylesheet" href="../css/highlight.css">
 
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Insert";
+  </script>
+  
   <script src="../js/jquery-2.1.1.min.js"></script>
   <script src="../js/modernizr-2.8.3.min.js"></script>
   <script type="text/javascript" src="../js/highlight.pack.js"></script>
@@ -32,101 +38,132 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> replicapoolupdater v0.3.0+20150326</a>
-        
+        <a href=".." class="icon icon-home"> replicapoolupdater v0.3.3+20160107</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-      <ul class="current">
-    
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="..">Home</a>
         
-            <li class="toctree-l1 ">
-                <a class="" href="..">Home</a>
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Rolling Updates</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../rolling-updates_cancel/">Cancel</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../rolling-updates_get/">Get</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Insert</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#scopes">Scopes</a></li>
                 
-            </li>
+            
+                <li class="toctree-l3"><a href="#required-scalar-arguments">Required Scalar Arguments</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#required-request-value">Required Request Value</a></li>
+                
+                    <li><a class="toctree-l4" href="#about-cursors">About Cursors</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#optional-output-flags">Optional Output Flags</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#optional-general-properties">Optional General Properties</a></li>
+                
+            
+            </ul>
         
+    </li>
 
-    
         
-            <span>Rolling Updates</span>
             
-                <li class="toctree-l2 ">
-                    <a class="" href="../rolling-updates_cancel/">Cancel</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../rolling-updates_get/">Get</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 current">
-                    <a class="current" href="./">Insert</a>
-                    
-                        <ul>
-                        
-                            <li class="toctree-l3"><a href="#scopes">Scopes</a></li>
-                            
-                        
-                            <li class="toctree-l3"><a href="#required-scalar-arguments">Required Scalar Arguments</a></li>
-                            
-                        
-                            <li class="toctree-l3"><a href="#required-request-value">Required Request Value</a></li>
-                            
-                                <li><a class="toctree-l4" href="#about-cursors">About Cursors</a></li>
-                            
-                        
-                            <li class="toctree-l3"><a href="#optional-output-flags">Optional Output Flags</a></li>
-                            
-                        
-                            <li class="toctree-l3"><a href="#optional-general-properties">Optional General Properties</a></li>
-                            
-                        
-                        </ul>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../rolling-updates_list/">List</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../rolling-updates_list-instance-updates/">List Instance Updates</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../rolling-updates_pause/">Pause</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../rolling-updates_resume/">Resume</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../rolling-updates_rollback/">Rollback</a>
-                    
-                </li>
-            
+    <li class="toctree-l1 ">
+        <a class="" href="../rolling-updates_list/">List</a>
         
+    </li>
 
-    
         
-            <span>Zone Operations</span>
             
-                <li class="toctree-l2 ">
-                    <a class="" href="../zone-operations_get/">Get</a>
-                    
-                </li>
-            
+    <li class="toctree-l1 ">
+        <a class="" href="../rolling-updates_list-instance-updates/">List Instance Updates</a>
         
+    </li>
 
-    
-</ul>
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../rolling-updates_pause/">Pause</a>
+        
+    </li>
 
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../rolling-updates_resume/">Resume</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../rolling-updates_rollback/">Rollback</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Zone Operations</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../zone-operations_get/">Get</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../zone-operations_list/">List</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+        </ul>
       </div>
       &nbsp;
     </nav>
@@ -136,7 +173,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">replicapoolupdater v0.3.0+20150326</a>
+        <a href="..">replicapoolupdater v0.3.3+20160107</a>
       </nav>
 
       
@@ -147,23 +184,26 @@
     <li><a href="..">Docs</a> &raquo;</li>
     
       
-        <li>Rolling Updates &raquo;</li>
+        
+          <li>Rolling Updates &raquo;</li>
+        
       
     
     <li>Insert</li>
-      <li class="wy-breadcrumbs-aside">
+    <li class="wy-breadcrumbs-aside">
+      
         
-          
-            <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/replicapoolupdater1_beta1-cli" class="icon icon-github"> Edit on GitHub</a>
-          
+          <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/replicapoolupdater1_beta1-cli" class="icon icon-github"> Edit on GitHub</a>
         
-      </li>
+      
+    </li>
   </ul>
   <hr/>
 </div>
           <div role="main">
             <div class="section">
-              <p>Inserts and starts a new update.</p>
+              
+                <p>Inserts and starts a new update.</p>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for at least one of the following scopes to make a valid call:</p>
 <ul>
@@ -196,6 +236,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   instance-group-manager: string
   instance-template: string
   kind: string
+  old-instance-template: string
   policy:
     auto-pause-after-instances: integer
     instance-startup-timeout-sec: integer
@@ -244,39 +285,43 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>[Output Only] Type of the resource.</li>
 </ul>
 </li>
-<li><code>policy    auto-pause-after-instances=93</code><ul>
+<li><code>old-instance-template=takimata</code><ul>
+<li>Fully-qualified URL of the instance template encountered while starting the update.</li>
+</ul>
+</li>
+<li><code>policy    auto-pause-after-instances=31</code><ul>
 <li>Number of instances to update before the updater pauses the rolling update.</li>
 </ul>
 </li>
-<li><code>instance-startup-timeout-sec=31</code><ul>
+<li><code>instance-startup-timeout-sec=100</code><ul>
 <li>The maximum amount of time that the updater waits for a HEALTHY state after all of the update steps are complete. If the HEALTHY state is not received before the deadline, the instance update is considered a failure.</li>
 </ul>
 </li>
-<li><code>max-num-concurrent-instances=100</code><ul>
+<li><code>max-num-concurrent-instances=20</code><ul>
 <li>The maximum number of instances that can be updated simultaneously. An instance update is considered complete only after the instance is restarted and initialized.</li>
 </ul>
 </li>
-<li><code>max-num-failed-instances=20</code><ul>
+<li><code>max-num-failed-instances=66</code><ul>
 <li>The maximum number of instance updates that can fail before the group update is considered a failure. An instance update is considered failed if any of its update actions (e.g. Stop call on Instance resource in Rolling Reboot) failed with permanent failure, or if the instance is in an UNHEALTHY state after it finishes all of the update actions.</li>
 </ul>
 </li>
 <li>
-<p><code>min-instance-update-time-sec=66</code></p>
+<p><code>min-instance-update-time-sec=92</code></p>
 <ul>
 <li>The minimum amount of time that the updater spends to update each instance. Update time is the time it takes to complete all update actions (e.g. Stop call on Instance resource in Rolling Reboot), reboot, and initialize. If the instance update finishes early, the updater pauses for the remainder of the time before it starts the next instance update.</li>
 </ul>
 </li>
 <li>
-<p><code>..    progress=92</code></p>
+<p><code>..    progress=11</code></p>
 <ul>
 <li>[Output Only] An optional progress indicator that ranges from 0 to 100. There is no requirement that this be linear or support any granularity of operations. This should not be used to guess at when the update will be complete. This number should be monotonically increasing as the update progresses.</li>
 </ul>
 </li>
-<li><code>self-link=nonumy</code><ul>
+<li><code>self-link=dolores</code><ul>
 <li>[Output Only] The fully qualified URL for the resource.</li>
 </ul>
 </li>
-<li><code>status=dolores</code><ul>
+<li><code>status=gubergren</code><ul>
 <li>[Output Only] Status of the update. Possible values are:  <ul>
 <li>&#34;ROLLING_FORWARD&#34;: The update is going forward. </li>
 <li>&#34;ROLLING_BACK&#34;: The update is being rolled back. </li>
@@ -288,11 +333,11 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </li>
 </ul>
 </li>
-<li><code>status-message=gubergren</code><ul>
+<li><code>status-message=sadipscing</code><ul>
 <li>[Output Only] An optional textual description of the current status of the update.</li>
 </ul>
 </li>
-<li><code>user=sadipscing</code><ul>
+<li><code>user=aliquyam</code><ul>
 <li>[Output Only] User who requested the update, for example: user@example.com.</li>
 </ul>
 </li>
@@ -362,6 +407,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 </ul>
+              
             </div>
           </div>
           <footer>
@@ -379,9 +425,10 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   <hr/>
 
   <div role="contentinfo">
-    <p>
     <!-- Copyright etc -->
-    </p>
+    
+      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+    
   </div>
 
   Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
@@ -396,17 +443,17 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <div class="rst-versions" role="note" style="cursor: pointer">
     <span class="rst-current-version" data-toggle="rst-current-version">
-        
-            <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/replicapoolupdater1_beta1-cli" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
-        
-      <span><a href="../rolling-updates_get/" style="color: #fcfcfc;">&laquo; Previous</a></span>
-      <span style="margin-left: 15px"><a href="../rolling-updates_list/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+          <a class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../rolling-updates_get/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../rolling-updates_list/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
     </span>
 </div>
 
-<!--
-MkDocs version  : 0.12.2
-Docs Build Date : 2015-06-21 14:30:00.562722
--->
 </body>
 </html>

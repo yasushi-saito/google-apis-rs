@@ -9,6 +9,7 @@
 
     <title>google_mapsengine1::RasterCollection - Rust</title>
 
+    <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
 
     
@@ -24,48 +25,49 @@
 
     
 
-    <section class="sidebar">
+    <nav class="sidebar">
         
         <p class='location'><a href='index.html'>google_mapsengine1</a></p><script>window.sidebarCurrent = {name: 'RasterCollection', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
-    </section>
+    </nav>
 
     <nav class="sub">
         <form class="search-form js-only">
             <div class="search-container">
                 <input class="search-input" name="search"
                        autocomplete="off"
-                       placeholder="Click or press 'S' to search, '?' for more options..."
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
                        type="search">
             </div>
         </form>
     </nav>
 
     <section id='main' class="content struct">
-<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_mapsengine1</a>::<wbr><a class='struct' href=''>RasterCollection</a><wbr></span><span class='out-of-band'><span id='render-detail'>
-            <a id="collapse-all" href="#">[-]</a>&nbsp;<a id="expand-all" href="#">[+]</a>
-        </span><a id='src-24340' href='../src/google_mapsengine1///home/byron/dev/rust/google-apis-rs/target/debug/build/google-mapsengine1-43ca578f7c40678a/out/lib.rs.html#6304-6339'>[src]</a></span></h1>
+<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_mapsengine1</a>::<wbr><a class='struct' href=''>RasterCollection</a></span><span class='out-of-band'><span id='render-detail'>
+            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                [<span class='inner'>&#x2212;</span>]
+            </a>
+        </span><a id='src-4510' class='srclink' href='../src/google_mapsengine1///Users/byron/dev/rs/google-apis-rs/target/debug/build/google-mapsengine1-2abd141d5fea4370/out/lib.rs.html#7794-7829' title='goto source code'>[src]</a></span></h1>
 <pre class='rust struct'>pub struct RasterCollection {
-    pub attribution: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub description: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub tags: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_mapsengine1/struct.Tags.html' title='google_mapsengine1::Tags'>Tags</a>&gt;,
-    pub draft_access_list: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub writers_can_edit_permissions: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt;,
-    pub creator_email: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub bbox: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.f64.html'>f64</a>&gt;&gt;,
-    pub last_modifier_email: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub last_modified_time: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub id: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub mosaic: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt;,
-    pub name: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub processing_status: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub project_id: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub creation_time: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub etag: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub raster_type: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub attribution: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub description: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub tags: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_mapsengine1/struct.Tags.html' title='google_mapsengine1::Tags'>Tags</a>&gt;,
+    pub draft_access_list: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub writers_can_edit_permissions: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt;,
+    pub creator_email: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub bbox: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f64.html'>f64</a>&gt;&gt;,
+    pub last_modifier_email: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub last_modified_time: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub id: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub mosaic: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt;,
+    pub name: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub processing_status: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub project_id: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub creation_time: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub etag: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub raster_type: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
 }</pre><div class='docblock'><p>A raster collection groups multiple Raster resources for inclusion in a Layer.</p>
 
-<h1 id="activities" class='section-header'><a
-                           href="#activities">Activities</a></h1>
+<h1 id='activities' class='section-header'><a href='#activities'>Activities</a></h1>
 <p>This type is used in activities, which are methods you may call on this type or where this type is involved in. 
 The list links the activity name, along with information about where it is used (one of <em>request</em> and <em>response</em>).</p>
 
@@ -86,64 +88,94 @@ The list links the activity name, along with information about where it is used 
 <li><a href="struct.RasterCollectionRasterListCall.html">rasters list raster collections</a> (none)</li>
 </ul>
 </div><h2 class='fields'>Fields</h2>
-<table><tr><td id='structfield.attribution'><a class='stability Unmarked' title='No stability level'></a><code>attribution</code></td><td><div class='docblock'><p>The name of the attribution to be used for this RasterCollection. Note: Attribution is returned in response to a get request but not a list request. After requesting a list of raster collections, you&#39;ll need to send a get request to retrieve the attribution for each raster collection.</p>
-</div></td></tr><tr><td id='structfield.description'><a class='stability Unmarked' title='No stability level'></a><code>description</code></td><td><div class='docblock'><p>The description of this RasterCollection, supplied by the author.</p>
-</div></td></tr><tr><td id='structfield.tags'><a class='stability Unmarked' title='No stability level'></a><code>tags</code></td><td><div class='docblock'><p>Tags of this RasterCollection.</p>
-</div></td></tr><tr><td id='structfield.draft_access_list'><a class='stability Unmarked' title='No stability level'></a><code>draft_access_list</code></td><td><div class='docblock'><p>Deprecated: The name of an access list of the Map Editor type. The user on whose behalf the request is being sent must be an editor on that access list. Note: Google Maps Engine no longer uses access lists. Instead, each asset has its own list of permissions. For backward compatibility, the API still accepts access lists for projects that are already using access lists. If you created a GME account/project after July 14th, 2014, you will not be able to send API requests that include access lists. Note: This is an input field only. It is not returned in response to a list or get request.</p>
-</div></td></tr><tr><td id='structfield.writers_can_edit_permissions'><a class='stability Unmarked' title='No stability level'></a><code>writers_can_edit_permissions</code></td><td><div class='docblock'><p>If true, WRITERs of the asset are able to edit the asset permissions.</p>
-</div></td></tr><tr><td id='structfield.creator_email'><a class='stability Unmarked' title='No stability level'></a><code>creator_email</code></td><td><div class='docblock'><p>The email address of the creator of this raster collection. This is only returned on GET requests and not LIST requests.</p>
-</div></td></tr><tr><td id='structfield.bbox'><a class='stability Unmarked' title='No stability level'></a><code>bbox</code></td><td><div class='docblock'><p>A rectangular bounding box which contains all of the data in this RasterCollection. The box is expressed as \&quot;west, south, east, north\&quot;. The numbers represent latitude and longitude in decimal degrees.</p>
-</div></td></tr><tr><td id='structfield.last_modifier_email'><a class='stability Unmarked' title='No stability level'></a><code>last_modifier_email</code></td><td><div class='docblock'><p>The email address of the last modifier of this raster collection. This is only returned on GET requests and not LIST requests.</p>
-</div></td></tr><tr><td id='structfield.last_modified_time'><a class='stability Unmarked' title='No stability level'></a><code>last_modified_time</code></td><td><div class='docblock'><p>The last modified time of this RasterCollection. The value is an RFC 3339 formatted date-time value (e.g. 1970-01-01T00:00:00Z).</p>
-</div></td></tr><tr><td id='structfield.id'><a class='stability Unmarked' title='No stability level'></a><code>id</code></td><td><div class='docblock'><p>A globally unique ID, used to refer to this RasterCollection.</p>
-</div></td></tr><tr><td id='structfield.mosaic'><a class='stability Unmarked' title='No stability level'></a><code>mosaic</code></td><td><div class='docblock'><p>True if this RasterCollection is a mosaic.</p>
-</div></td></tr><tr><td id='structfield.name'><a class='stability Unmarked' title='No stability level'></a><code>name</code></td><td><div class='docblock'><p>The name of this RasterCollection, supplied by the author.</p>
-</div></td></tr><tr><td id='structfield.processing_status'><a class='stability Unmarked' title='No stability level'></a><code>processing_status</code></td><td><div class='docblock'><p>The processing status of this RasterCollection.</p>
-</div></td></tr><tr><td id='structfield.project_id'><a class='stability Unmarked' title='No stability level'></a><code>project_id</code></td><td><div class='docblock'><p>The ID of the project that this RasterCollection is in.</p>
-</div></td></tr><tr><td id='structfield.creation_time'><a class='stability Unmarked' title='No stability level'></a><code>creation_time</code></td><td><div class='docblock'><p>The creation time of this RasterCollection. The value is an RFC 3339 formatted date-time value (e.g. 1970-01-01T00:00:00Z).</p>
-</div></td></tr><tr><td id='structfield.etag'><a class='stability Unmarked' title='No stability level'></a><code>etag</code></td><td><div class='docblock'><p>The ETag, used to refer to the current version of the asset.</p>
-</div></td></tr><tr><td id='structfield.raster_type'><a class='stability Unmarked' title='No stability level'></a><code>raster_type</code></td><td><div class='docblock'><p>The type of rasters contained within this RasterCollection.</p>
-</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='../google_mapsengine1/trait.RequestValue.html' title='google_mapsengine1::RequestValue'>RequestValue</a> for <a class='struct' href='../google_mapsengine1/struct.RasterCollection.html' title='google_mapsengine1::RasterCollection'>RasterCollection</a></code></h3><div class='impl-items'></div><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='../google_mapsengine1/trait.Resource.html' title='google_mapsengine1::Resource'>Resource</a> for <a class='struct' href='../google_mapsengine1/struct.RasterCollection.html' title='google_mapsengine1::RasterCollection'>RasterCollection</a></code></h3><div class='impl-items'></div><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='../google_mapsengine1/trait.ResponseResult.html' title='google_mapsengine1::ResponseResult'>ResponseResult</a> for <a class='struct' href='../google_mapsengine1/struct.RasterCollection.html' title='google_mapsengine1::RasterCollection'>RasterCollection</a></code></h3><div class='impl-items'></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_mapsengine1/struct.RasterCollection.html' title='google_mapsengine1::RasterCollection'>RasterCollection</a></code></h3><div class='impl-items'><h4 id='method.fmt' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#method.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='http://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='http://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
-</div><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_mapsengine1/struct.RasterCollection.html' title='google_mapsengine1::RasterCollection'>RasterCollection</a></code></h3><div class='impl-items'><h4 id='method.clone' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_mapsengine1/struct.RasterCollection.html' title='google_mapsengine1::RasterCollection'>RasterCollection</a></code></h4>
-<h4 id='method.clone_from' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code></h4>
-</div><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_mapsengine1/struct.RasterCollection.html' title='google_mapsengine1::RasterCollection'>RasterCollection</a></code></h3><div class='impl-items'><h4 id='method.default' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/default/trait.Default.html#method.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_mapsengine1/struct.RasterCollection.html' title='google_mapsengine1::RasterCollection'>RasterCollection</a></code></h4>
-</div><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='../serde/de/trait.Deserialize.html' title='serde::de::Deserialize'>Deserialize</a> for <a class='struct' href='../google_mapsengine1/struct.RasterCollection.html' title='google_mapsengine1::RasterCollection'>RasterCollection</a></code></h3><div class='impl-items'><h4 id='method.deserialize' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='../serde/de/trait.Deserialize.html#method.deserialize' class='fnname'>deserialize</a>&lt;__D&gt;(deserializer: &amp;mut __D) -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../google_mapsengine1/struct.RasterCollection.html' title='google_mapsengine1::RasterCollection'>RasterCollection</a>, __D&gt; <span class='where'>where __D: <a class='trait' href='../serde/de/trait.Deserializer.html' title='serde::de::Deserializer'>Deserializer</a></span></code></h4>
-</div><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='../serde/ser/trait.Serialize.html' title='serde::ser::Serialize'>Serialize</a> for <a class='struct' href='../google_mapsengine1/struct.RasterCollection.html' title='google_mapsengine1::RasterCollection'>RasterCollection</a></code></h3><div class='impl-items'><h4 id='method.serialize' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='../serde/ser/trait.Serialize.html#method.serialize' class='fnname'>serialize</a>&lt;__S&gt;(&amp;self, serializer: &amp;mut __S) -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, __S&gt; <span class='where'>where __S: <a class='trait' href='../serde/ser/trait.Serializer.html' title='serde::ser::Serializer'>Serializer</a></span></code></h4>
+<table><tr class='stab '>
+                                  <td id='structfield.attribution'><code>attribution</code></td><td><div class='docblock'><p>The name of the attribution to be used for this RasterCollection. Note: Attribution is returned in response to a get request but not a list request. After requesting a list of raster collections, you&#39;ll need to send a get request to retrieve the attribution for each raster collection.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.description'><code>description</code></td><td><div class='docblock'><p>The description of this RasterCollection, supplied by the author.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.tags'><code>tags</code></td><td><div class='docblock'><p>Tags of this RasterCollection.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.draft_access_list'><code>draft_access_list</code></td><td><div class='docblock'><p>Deprecated: The name of an access list of the Map Editor type. The user on whose behalf the request is being sent must be an editor on that access list. Note: Google Maps Engine no longer uses access lists. Instead, each asset has its own list of permissions. For backward compatibility, the API still accepts access lists for projects that are already using access lists. If you created a GME account/project after July 14th, 2014, you will not be able to send API requests that include access lists. Note: This is an input field only. It is not returned in response to a list or get request.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.writers_can_edit_permissions'><code>writers_can_edit_permissions</code></td><td><div class='docblock'><p>If true, WRITERs of the asset are able to edit the asset permissions.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.creator_email'><code>creator_email</code></td><td><div class='docblock'><p>The email address of the creator of this raster collection. This is only returned on GET requests and not LIST requests.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.bbox'><code>bbox</code></td><td><div class='docblock'><p>A rectangular bounding box which contains all of the data in this RasterCollection. The box is expressed as &quot;west, south, east, north&quot;. The numbers represent latitude and longitude in decimal degrees.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.last_modifier_email'><code>last_modifier_email</code></td><td><div class='docblock'><p>The email address of the last modifier of this raster collection. This is only returned on GET requests and not LIST requests.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.last_modified_time'><code>last_modified_time</code></td><td><div class='docblock'><p>The last modified time of this RasterCollection. The value is an RFC 3339 formatted date-time value (e.g. 1970-01-01T00:00:00Z).</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.id'><code>id</code></td><td><div class='docblock'><p>A globally unique ID, used to refer to this RasterCollection.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.mosaic'><code>mosaic</code></td><td><div class='docblock'><p>True if this RasterCollection is a mosaic.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.name'><code>name</code></td><td><div class='docblock'><p>The name of this RasterCollection, supplied by the author.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.processing_status'><code>processing_status</code></td><td><div class='docblock'><p>The processing status of this RasterCollection.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.project_id'><code>project_id</code></td><td><div class='docblock'><p>The ID of the project that this RasterCollection is in.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.creation_time'><code>creation_time</code></td><td><div class='docblock'><p>The creation time of this RasterCollection. The value is an RFC 3339 formatted date-time value (e.g. 1970-01-01T00:00:00Z).</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.etag'><code>etag</code></td><td><div class='docblock'><p>The ETag, used to refer to the current version of the asset.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.raster_type'><code>raster_type</code></td><td><div class='docblock'><p>The type of rasters contained within this RasterCollection.</p>
+</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl <a class='trait' href='../serde/de/trait.Deserialize.html' title='serde::de::Deserialize'>Deserialize</a> for <a class='struct' href='../google_mapsengine1/struct.RasterCollection.html' title='google_mapsengine1::RasterCollection'>RasterCollection</a></code></h3><div class='impl-items'><h4 id='method.deserialize' class='method'><code>fn <a href='../serde/de/trait.Deserialize.html#method.deserialize' class='fnname'>deserialize</a>&lt;__D&gt;(deserializer: &amp;mut __D) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../google_mapsengine1/struct.RasterCollection.html' title='google_mapsengine1::RasterCollection'>RasterCollection</a>, __D::Error&gt; <span class='where'>where __D: <a class='trait' href='../serde/de/trait.Deserializer.html' title='serde::de::Deserializer'>Deserializer</a></span></code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='../serde/ser/trait.Serialize.html' title='serde::ser::Serialize'>Serialize</a> for <a class='struct' href='../google_mapsengine1/struct.RasterCollection.html' title='google_mapsengine1::RasterCollection'>RasterCollection</a></code></h3><div class='impl-items'><h4 id='method.serialize' class='method'><code>fn <a href='../serde/ser/trait.Serialize.html#method.serialize' class='fnname'>serialize</a>&lt;__S&gt;(&amp;self, serializer: &amp;mut __S) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, __S::Error&gt; <span class='where'>where __S: <a class='trait' href='../serde/ser/trait.Serializer.html' title='serde::ser::Serializer'>Serializer</a></span></code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='../google_mapsengine1/trait.RequestValue.html' title='google_mapsengine1::RequestValue'>RequestValue</a> for <a class='struct' href='../google_mapsengine1/struct.RasterCollection.html' title='google_mapsengine1::RasterCollection'>RasterCollection</a></code></h3><div class='impl-items'></div><h3 class='impl'><code>impl <a class='trait' href='../google_mapsengine1/trait.Resource.html' title='google_mapsengine1::Resource'>Resource</a> for <a class='struct' href='../google_mapsengine1/struct.RasterCollection.html' title='google_mapsengine1::RasterCollection'>RasterCollection</a></code></h3><div class='impl-items'></div><h3 class='impl'><code>impl <a class='trait' href='../google_mapsengine1/trait.ResponseResult.html' title='google_mapsengine1::ResponseResult'>ResponseResult</a> for <a class='struct' href='../google_mapsengine1/struct.RasterCollection.html' title='google_mapsengine1::RasterCollection'>RasterCollection</a></code></h3><div class='impl-items'></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_mapsengine1/struct.RasterCollection.html' title='google_mapsengine1::RasterCollection'>RasterCollection</a></code></h3><div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#method.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_mapsengine1/struct.RasterCollection.html' title='google_mapsengine1::RasterCollection'>RasterCollection</a></code></h3><div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_mapsengine1/struct.RasterCollection.html' title='google_mapsengine1::RasterCollection'>RasterCollection</a></code></h4>
+<h4 id='method.clone_from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_mapsengine1/struct.RasterCollection.html' title='google_mapsengine1::RasterCollection'>RasterCollection</a></code></h3><div class='impl-items'><h4 id='method.default' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#method.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_mapsengine1/struct.RasterCollection.html' title='google_mapsengine1::RasterCollection'>RasterCollection</a></code></h4>
 </div></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
 
-    <div id="help" class="hidden">
-        <div class="shortcuts">
-            <h1>Keyboard shortcuts</h1>
-            <dl>
-                <dt>?</dt>
-                <dd>Show this help dialog</dd>
-                <dt>S</dt>
-                <dd>Focus the search field</dd>
-                <dt>&larrb;</dt>
-                <dd>Move up in search results</dd>
-                <dt>&rarrb;</dt>
-                <dd>Move down in search results</dd>
-                <dt>&#9166;</dt>
-                <dd>Go to active search result</dd>
-            </dl>
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code>)
+                </p>
+            </div>
         </div>
-        <div class="infos">
-            <h1>Search tricks</h1>
-            <p>
-                Prefix searches with a type followed by a colon (e.g.
-                <code>fn:</code>) to restrict the search to a given type.
-            </p>
-            <p>
-                Accepted types are: <code>fn</code>, <code>mod</code>,
-                <code>struct</code>, <code>enum</code>,
-                <code>trait</code>, <code>typedef</code> (or
-                <code>tdef</code>).
-            </p>
-        </div>
-    </div>
+    </aside>
 
     
 
@@ -155,6 +187,6 @@ The list links the activity name, along with information about where it is used 
     <script src="../jquery.js"></script>
     <script src="../main.js"></script>
     
-    <script async src="../search-index.js"></script>
+    <script defer src="../search-index.js"></script>
 </body>
 </html>

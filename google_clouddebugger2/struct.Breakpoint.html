@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `Breakpoint` struct in crate `google_clouddebugger2`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, Breakpoint">
+
+    <title>google_clouddebugger2::Breakpoint - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../main.css">
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='index.html'>google_clouddebugger2</a></p><script>window.sidebarCurrent = {name: 'Breakpoint', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content struct">
+<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_clouddebugger2</a>::<wbr><a class='struct' href=''>Breakpoint</a></span><span class='out-of-band'><span id='render-detail'>
+            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                [<span class='inner'>&#x2212;</span>]
+            </a>
+        </span><a id='src-3782' class='srclink' href='../src/google_clouddebugger2///Users/byron/dev/rs/google-apis-rs/target/debug/build/google-clouddebugger2-56049137333f6169/out/lib.rs.html#6330-6361' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct Breakpoint {
+    pub status: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_clouddebugger2/struct.StatusMessage.html' title='google_clouddebugger2::StatusMessage'>StatusMessage</a>&gt;,
+    pub variable_table: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='../google_clouddebugger2/struct.Variable.html' title='google_clouddebugger2::Variable'>Variable</a>&gt;&gt;,
+    pub user_email: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub log_level: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub id: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub log_message_format: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub stack_frames: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='../google_clouddebugger2/struct.StackFrame.html' title='google_clouddebugger2::StackFrame'>StackFrame</a>&gt;&gt;,
+    pub location: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_clouddebugger2/struct.SourceLocation.html' title='google_clouddebugger2::SourceLocation'>SourceLocation</a>&gt;,
+    pub final_time: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub action: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub expressions: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;&gt;,
+    pub is_final_state: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt;,
+    pub evaluated_expressions: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='../google_clouddebugger2/struct.Variable.html' title='google_clouddebugger2::Variable'>Variable</a>&gt;&gt;,
+    pub create_time: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub condition: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+}</pre><div class='docblock'><p>Represents the breakpoint specification, status and results.</p>
+
+<h1 id='activities' class='section-header'><a href='#activities'>Activities</a></h1>
+<p>This type is used in activities, which are methods you may call on this type or where this type is involved in. 
+The list links the activity name, along with information about where it is used (one of <em>request</em> and <em>response</em>).</p>
+
+<ul>
+<li><a href="struct.DebuggerDebuggeeBreakpointSetCall.html">debuggees breakpoints set debugger</a> (request)</li>
+</ul>
+</div><h2 class='fields'>Fields</h2>
+<table><tr class='stab '>
+                                  <td id='structfield.status'><code>status</code></td><td><div class='docblock'><p>Breakpoint status. The status includes an error flag and a human readable message. This field is usually unset. The message can be either informational or an error message. Regardless, clients should always display the text message back to the user. Error status indicates complete failure of the breakpoint. Example (non-final state): <code>Still loading symbols...</code> Examples (final state): * <code>Invalid line number</code> referring to location * <code>Field f not found in class C</code> referring to condition</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.variable_table'><code>variable_table</code></td><td><div class='docblock'><p>The <code>variable_table</code> exists to aid with computation, memory and network traffic optimization. It enables storing a variable once and reference it from multiple variables, including variables stored in the <code>variable_table</code> itself. For example, the same <code>this</code> object, which may appear at many levels of the stack, can have all of its data stored once in this table. The stack frame variables then would hold only a reference to it. The variable <code>var_table_index</code> field is an index into this repeated field. The stored objects are nameless and get their name from the referencing variable. The effective variable is a merge of the referencing veariable and the referenced variable.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.user_email'><code>user_email</code></td><td><div class='docblock'><p>E-mail address of the user that created this breakpoint</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.log_level'><code>log_level</code></td><td><div class='docblock'><p>Indicates the severity of the log. Only relevant when action is <code>LOG</code>.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.id'><code>id</code></td><td><div class='docblock'><p>Breakpoint identifier, unique in the scope of the debuggee.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.log_message_format'><code>log_message_format</code></td><td><div class='docblock'><p>Only relevant when action is <code>LOG</code>. Defines the message to log when the breakpoint hits. The message may include parameter placeholders <code>$0</code>, <code>$1</code>, etc. These placeholders are replaced with the evaluated value of the appropriate expression. Expressions not referenced in <code>log_message_format</code> are not logged. Example: <code>Message received, id = $0, count = $1</code> with <code>expressions</code> = <code>[ message.id, message.count ]</code>.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.stack_frames'><code>stack_frames</code></td><td><div class='docblock'><p>The stack at breakpoint time.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.location'><code>location</code></td><td><div class='docblock'><p>Breakpoint source location.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.final_time'><code>final_time</code></td><td><div class='docblock'><p>Time this breakpoint was finalized as seen by the server in seconds resolution.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.action'><code>action</code></td><td><div class='docblock'><p>Action that the agent should perform when the code at the breakpoint location is hit.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.expressions'><code>expressions</code></td><td><div class='docblock'><p>List of read-only expressions to evaluate at the breakpoint location. The expressions are composed using expressions in the programming language at the source location. If the breakpoint action is <code>LOG</code>, the evaluated expressions are included in log statements.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.is_final_state'><code>is_final_state</code></td><td><div class='docblock'><p>When true, indicates that this is a final result and the breakpoint state will not change from here on.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.evaluated_expressions'><code>evaluated_expressions</code></td><td><div class='docblock'><p>Values of evaluated expressions at breakpoint time. The evaluated expressions appear in exactly the same order they are listed in the <code>expressions</code> field. The <code>name</code> field holds the original expression text, the <code>value</code> or <code>members</code> field holds the result of the evaluated expression. If the expression cannot be evaluated, the <code>status</code> inside the <code>Variable</code> will indicate an error and contain the error text.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.create_time'><code>create_time</code></td><td><div class='docblock'><p>Time this breakpoint was created by the server in seconds resolution.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.condition'><code>condition</code></td><td><div class='docblock'><p>Condition that triggers the breakpoint. The condition is a compound boolean expression composed using expressions in a programming language at the source location.</p>
+</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl <a class='trait' href='../serde/de/trait.Deserialize.html' title='serde::de::Deserialize'>Deserialize</a> for <a class='struct' href='../google_clouddebugger2/struct.Breakpoint.html' title='google_clouddebugger2::Breakpoint'>Breakpoint</a></code></h3><div class='impl-items'><h4 id='method.deserialize' class='method'><code>fn <a href='../serde/de/trait.Deserialize.html#method.deserialize' class='fnname'>deserialize</a>&lt;__D&gt;(deserializer: &amp;mut __D) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../google_clouddebugger2/struct.Breakpoint.html' title='google_clouddebugger2::Breakpoint'>Breakpoint</a>, __D::Error&gt; <span class='where'>where __D: <a class='trait' href='../serde/de/trait.Deserializer.html' title='serde::de::Deserializer'>Deserializer</a></span></code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='../serde/ser/trait.Serialize.html' title='serde::ser::Serialize'>Serialize</a> for <a class='struct' href='../google_clouddebugger2/struct.Breakpoint.html' title='google_clouddebugger2::Breakpoint'>Breakpoint</a></code></h3><div class='impl-items'><h4 id='method.serialize' class='method'><code>fn <a href='../serde/ser/trait.Serialize.html#method.serialize' class='fnname'>serialize</a>&lt;__S&gt;(&amp;self, serializer: &amp;mut __S) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, __S::Error&gt; <span class='where'>where __S: <a class='trait' href='../serde/ser/trait.Serializer.html' title='serde::ser::Serializer'>Serializer</a></span></code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='../google_clouddebugger2/trait.RequestValue.html' title='google_clouddebugger2::RequestValue'>RequestValue</a> for <a class='struct' href='../google_clouddebugger2/struct.Breakpoint.html' title='google_clouddebugger2::Breakpoint'>Breakpoint</a></code></h3><div class='impl-items'></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_clouddebugger2/struct.Breakpoint.html' title='google_clouddebugger2::Breakpoint'>Breakpoint</a></code></h3><div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#method.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_clouddebugger2/struct.Breakpoint.html' title='google_clouddebugger2::Breakpoint'>Breakpoint</a></code></h3><div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_clouddebugger2/struct.Breakpoint.html' title='google_clouddebugger2::Breakpoint'>Breakpoint</a></code></h4>
+<h4 id='method.clone_from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_clouddebugger2/struct.Breakpoint.html' title='google_clouddebugger2::Breakpoint'>Breakpoint</a></code></h3><div class='impl-items'><h4 id='method.default' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#method.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_clouddebugger2/struct.Breakpoint.html' title='google_clouddebugger2::Breakpoint'>Breakpoint</a></code></h4>
+</div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "google_clouddebugger2";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../jquery.js"></script>
+    <script src="../main.js"></script>
+    
+    <script defer src="../search-index.js"></script>
+</body>
+</html>

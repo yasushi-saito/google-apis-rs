@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Patch - coordinate v0.3.0+20141215</title>
+  <title>Patch - coordinate v0.3.3+20150811</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -17,6 +17,12 @@
   <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
   <link rel="stylesheet" href="../css/highlight.css">
 
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Patch";
+  </script>
+  
   <script src="../js/jquery-2.1.1.min.js"></script>
   <script src="../js/modernizr-2.8.3.min.js"></script>
   <script type="text/javascript" src="../js/highlight.pack.js"></script>
@@ -32,143 +38,181 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> coordinate v0.3.0+20141215</a>
-        
+        <a href=".." class="icon icon-home"> coordinate v0.3.3+20150811</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-      <ul class="current">
-    
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="..">Home</a>
         
-            <li class="toctree-l1 ">
-                <a class="" href="..">Home</a>
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Custom Field Def</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../custom-field-def_list/">List</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Jobs</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../jobs_get/">Get</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../jobs_insert/">Insert</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../jobs_list/">List</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Patch</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#scopes">Scopes</a></li>
                 
-            </li>
+            
+                <li class="toctree-l3"><a href="#required-scalar-arguments">Required Scalar Arguments</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#required-request-value">Required Request Value</a></li>
+                
+                    <li><a class="toctree-l4" href="#about-cursors">About Cursors</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#optional-output-flags">Optional Output Flags</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#optional-method-properties">Optional Method Properties</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#optional-general-properties">Optional General Properties</a></li>
+                
+            
+            </ul>
         
+    </li>
 
-    
         
-            <span>Custom Field Def</span>
             
-                <li class="toctree-l2 ">
-                    <a class="" href="../custom-field-def_list/">List</a>
-                    
-                </li>
-            
+    <li class="toctree-l1 ">
+        <a class="" href="../jobs_update/">Update</a>
         
+    </li>
 
-    
         
-            <span>Jobs</span>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../jobs_get/">Get</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../jobs_insert/">Insert</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../jobs_list/">List</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 current">
-                    <a class="current" href="./">Patch</a>
-                    
-                        <ul>
-                        
-                            <li class="toctree-l3"><a href="#scopes">Scopes</a></li>
-                            
-                        
-                            <li class="toctree-l3"><a href="#required-scalar-arguments">Required Scalar Arguments</a></li>
-                            
-                        
-                            <li class="toctree-l3"><a href="#required-request-value">Required Request Value</a></li>
-                            
-                                <li><a class="toctree-l4" href="#about-cursors">About Cursors</a></li>
-                            
-                        
-                            <li class="toctree-l3"><a href="#optional-output-flags">Optional Output Flags</a></li>
-                            
-                        
-                            <li class="toctree-l3"><a href="#optional-method-properties">Optional Method Properties</a></li>
-                            
-                        
-                            <li class="toctree-l3"><a href="#optional-general-properties">Optional General Properties</a></li>
-                            
-                        
-                        </ul>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../jobs_update/">Update</a>
-                    
-                </li>
-            
-        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Location</span></li>
 
-    
         
-            <span>Location</span>
             
-                <li class="toctree-l2 ">
-                    <a class="" href="../location_list/">List</a>
-                    
-                </li>
-            
+    <li class="toctree-l1 ">
+        <a class="" href="../location_list/">List</a>
         
+    </li>
 
-    
         
-            <span>Schedule</span>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../schedule_get/">Get</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../schedule_patch/">Patch</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../schedule_update/">Update</a>
-                    
-                </li>
-            
-        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Schedule</span></li>
 
-    
         
-            <span>Team</span>
             
-                <li class="toctree-l2 ">
-                    <a class="" href="../team_list/">List</a>
-                    
-                </li>
-            
+    <li class="toctree-l1 ">
+        <a class="" href="../schedule_get/">Get</a>
         
+    </li>
 
-    
         
-            <span>Worker</span>
             
-                <li class="toctree-l2 ">
-                    <a class="" href="../worker_list/">List</a>
-                    
-                </li>
-            
+    <li class="toctree-l1 ">
+        <a class="" href="../schedule_patch/">Patch</a>
         
+    </li>
 
-    
-</ul>
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../schedule_update/">Update</a>
+        
+    </li>
 
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Team</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../team_list/">List</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Worker</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../worker_list/">List</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+        </ul>
       </div>
       &nbsp;
     </nav>
@@ -178,7 +222,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">coordinate v0.3.0+20141215</a>
+        <a href="..">coordinate v0.3.3+20150811</a>
       </nav>
 
       
@@ -189,23 +233,26 @@
     <li><a href="..">Docs</a> &raquo;</li>
     
       
-        <li>Jobs &raquo;</li>
+        
+          <li>Jobs &raquo;</li>
+        
       
     
     <li>Patch</li>
-      <li class="wy-breadcrumbs-aside">
+    <li class="wy-breadcrumbs-aside">
+      
         
-          
-            <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/coordinate1-cli" class="icon icon-github"> Edit on GitHub</a>
-          
+          <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/coordinate1-cli" class="icon icon-github"> Edit on GitHub</a>
         
-      </li>
+      
+    </li>
   </ul>
   <hr/>
 </div>
           <div role="main">
             <div class="section">
-              <p>Updates a job. Fields that are set in the job state will be updated. This method supports patch semantics.</p>
+              
+                <p>Updates a job. Fields that are set in the job state will be updated. This method supports patch semantics.</p>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for the <em>https://www.googleapis.com/auth/coordinate</em> scope to make a valid call.</p>
 <p>If unset, the scope for this method defaults to <em>https://www.googleapis.com/auth/coordinate</em>.
@@ -340,39 +387,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p customer-name=string</strong></p>
+<p><strong>-p address=string</strong></p>
 <ul>
-<li>Customer name</li>
-</ul>
-</li>
-<li>
-<p><strong>-p lng=number</strong></p>
-<ul>
-<li>The longitude coordinate of this job&#39;s location.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p custom-field=string</strong></p>
-<ul>
-<li>Sets the value of custom fields. To set a custom field, pass the field id (from /team/teamId/custom_fields), a URL escaped &#39;=&#39; character, and the desired value as a parameter. For example, customField=12%3DAlice. Repeat the parameter for each custom field. Note that &#39;=&#39; cannot appear in the parameter value. Specifying an invalid, or inactive enum field will result in an error 500.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p assignee=string</strong></p>
-<ul>
-<li>Assignee email address, or empty string to unassign.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p note=string</strong></p>
-<ul>
-<li>Job note as newline (Unix) separated string</li>
-</ul>
-</li>
-<li>
-<p><strong>-p customer-phone-number=string</strong></p>
-<ul>
-<li>Customer phone number</li>
+<li>Job address as newline (Unix) separated string</li>
 </ul>
 </li>
 <li>
@@ -382,9 +399,27 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
+<p><strong>-p customer-name=string</strong></p>
+<ul>
+<li>Customer name</li>
+</ul>
+</li>
+<li>
 <p><strong>-p lat=number</strong></p>
 <ul>
 <li>The latitude coordinate of this job&#39;s location.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p customer-phone-number=string</strong></p>
+<ul>
+<li>Customer phone number</li>
+</ul>
+</li>
+<li>
+<p><strong>-p note=string</strong></p>
+<ul>
+<li>Job note as newline (Unix) separated string</li>
 </ul>
 </li>
 <li>
@@ -394,9 +429,21 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p address=string</strong></p>
+<p><strong>-p assignee=string</strong></p>
 <ul>
-<li>Job address as newline (Unix) separated string</li>
+<li>Assignee email address, or empty string to unassign.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p custom-field=string</strong></p>
+<ul>
+<li>Sets the value of custom fields. To set a custom field, pass the field id (from /team/teamId/custom_fields), a URL escaped &#39;=&#39; character, and the desired value as a parameter. For example, customField=12%3DAlice. Repeat the parameter for each custom field. Note that &#39;=&#39; cannot appear in the parameter value. Specifying an invalid, or inactive enum field will result in an error 500.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p lng=number</strong></p>
+<ul>
+<li>The longitude coordinate of this job&#39;s location.</li>
 </ul>
 </li>
 </ul>
@@ -446,6 +493,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 </ul>
+              
             </div>
           </div>
           <footer>
@@ -463,9 +511,10 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
   <hr/>
 
   <div role="contentinfo">
-    <p>
     <!-- Copyright etc -->
-    </p>
+    
+      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+    
   </div>
 
   Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
@@ -480,17 +529,17 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 
 <div class="rst-versions" role="note" style="cursor: pointer">
     <span class="rst-current-version" data-toggle="rst-current-version">
-        
-            <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/coordinate1-cli" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
-        
-      <span><a href="../jobs_list/" style="color: #fcfcfc;">&laquo; Previous</a></span>
-      <span style="margin-left: 15px"><a href="../jobs_update/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+          <a class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../jobs_list/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../jobs_update/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
     </span>
 </div>
 
-<!--
-MkDocs version  : 0.12.2
-Docs Build Date : 2015-06-21 14:31:23.085121
--->
 </body>
 </html>

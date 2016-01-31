@@ -9,6 +9,7 @@
 
     <title>google_youtube3::ActivityContentDetails - Rust</title>
 
+    <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
 
     
@@ -24,94 +25,120 @@
 
     
 
-    <section class="sidebar">
+    <nav class="sidebar">
         
         <p class='location'><a href='index.html'>google_youtube3</a></p><script>window.sidebarCurrent = {name: 'ActivityContentDetails', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
-    </section>
+    </nav>
 
     <nav class="sub">
         <form class="search-form js-only">
             <div class="search-container">
                 <input class="search-input" name="search"
                        autocomplete="off"
-                       placeholder="Click or press 'S' to search, '?' for more options..."
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
                        type="search">
             </div>
         </form>
     </nav>
 
     <section id='main' class="content struct">
-<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_youtube3</a>::<wbr><a class='struct' href=''>ActivityContentDetails</a><wbr></span><span class='out-of-band'><span id='render-detail'>
-            <a id="collapse-all" href="#">[-]</a>&nbsp;<a id="expand-all" href="#">[+]</a>
-        </span><a id='src-105696' href='../src/google_youtube3///home/byron/dev/rust/google-apis-rs/target/debug/build/google-youtube3-db203c02da0a6afc/out/lib.rs.html#25918-25941'>[src]</a></span></h1>
+<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_youtube3</a>::<wbr><a class='struct' href=''>ActivityContentDetails</a></span><span class='out-of-band'><span id='render-detail'>
+            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                [<span class='inner'>&#x2212;</span>]
+            </a>
+        </span><a id='src-22059' class='srclink' href='../src/google_youtube3///Users/byron/dev/rs/google-apis-rs/target/debug/build/google-youtube3-4efca17fcf3e49e3/out/lib.rs.html#39336-39359' title='goto source code'>[src]</a></span></h1>
 <pre class='rust struct'>pub struct ActivityContentDetails {
-    pub comment: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_youtube3/struct.ActivityContentDetailsComment.html' title='google_youtube3::ActivityContentDetailsComment'>ActivityContentDetailsComment</a>&gt;,
-    pub playlist_item: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_youtube3/struct.ActivityContentDetailsPlaylistItem.html' title='google_youtube3::ActivityContentDetailsPlaylistItem'>ActivityContentDetailsPlaylistItem</a>&gt;,
-    pub like: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_youtube3/struct.ActivityContentDetailsLike.html' title='google_youtube3::ActivityContentDetailsLike'>ActivityContentDetailsLike</a>&gt;,
-    pub promoted_item: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_youtube3/struct.ActivityContentDetailsPromotedItem.html' title='google_youtube3::ActivityContentDetailsPromotedItem'>ActivityContentDetailsPromotedItem</a>&gt;,
-    pub recommendation: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_youtube3/struct.ActivityContentDetailsRecommendation.html' title='google_youtube3::ActivityContentDetailsRecommendation'>ActivityContentDetailsRecommendation</a>&gt;,
-    pub favorite: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_youtube3/struct.ActivityContentDetailsFavorite.html' title='google_youtube3::ActivityContentDetailsFavorite'>ActivityContentDetailsFavorite</a>&gt;,
-    pub upload: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_youtube3/struct.ActivityContentDetailsUpload.html' title='google_youtube3::ActivityContentDetailsUpload'>ActivityContentDetailsUpload</a>&gt;,
-    pub social: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_youtube3/struct.ActivityContentDetailsSocial.html' title='google_youtube3::ActivityContentDetailsSocial'>ActivityContentDetailsSocial</a>&gt;,
-    pub channel_item: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_youtube3/struct.ActivityContentDetailsChannelItem.html' title='google_youtube3::ActivityContentDetailsChannelItem'>ActivityContentDetailsChannelItem</a>&gt;,
-    pub bulletin: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_youtube3/struct.ActivityContentDetailsBulletin.html' title='google_youtube3::ActivityContentDetailsBulletin'>ActivityContentDetailsBulletin</a>&gt;,
-    pub subscription: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_youtube3/struct.ActivityContentDetailsSubscription.html' title='google_youtube3::ActivityContentDetailsSubscription'>ActivityContentDetailsSubscription</a>&gt;,
+    pub comment: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_youtube3/struct.ActivityContentDetailsComment.html' title='google_youtube3::ActivityContentDetailsComment'>ActivityContentDetailsComment</a>&gt;,
+    pub playlist_item: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_youtube3/struct.ActivityContentDetailsPlaylistItem.html' title='google_youtube3::ActivityContentDetailsPlaylistItem'>ActivityContentDetailsPlaylistItem</a>&gt;,
+    pub like: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_youtube3/struct.ActivityContentDetailsLike.html' title='google_youtube3::ActivityContentDetailsLike'>ActivityContentDetailsLike</a>&gt;,
+    pub promoted_item: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_youtube3/struct.ActivityContentDetailsPromotedItem.html' title='google_youtube3::ActivityContentDetailsPromotedItem'>ActivityContentDetailsPromotedItem</a>&gt;,
+    pub recommendation: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_youtube3/struct.ActivityContentDetailsRecommendation.html' title='google_youtube3::ActivityContentDetailsRecommendation'>ActivityContentDetailsRecommendation</a>&gt;,
+    pub favorite: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_youtube3/struct.ActivityContentDetailsFavorite.html' title='google_youtube3::ActivityContentDetailsFavorite'>ActivityContentDetailsFavorite</a>&gt;,
+    pub upload: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_youtube3/struct.ActivityContentDetailsUpload.html' title='google_youtube3::ActivityContentDetailsUpload'>ActivityContentDetailsUpload</a>&gt;,
+    pub social: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_youtube3/struct.ActivityContentDetailsSocial.html' title='google_youtube3::ActivityContentDetailsSocial'>ActivityContentDetailsSocial</a>&gt;,
+    pub channel_item: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_youtube3/struct.ActivityContentDetailsChannelItem.html' title='google_youtube3::ActivityContentDetailsChannelItem'>ActivityContentDetailsChannelItem</a>&gt;,
+    pub bulletin: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_youtube3/struct.ActivityContentDetailsBulletin.html' title='google_youtube3::ActivityContentDetailsBulletin'>ActivityContentDetailsBulletin</a>&gt;,
+    pub subscription: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_youtube3/struct.ActivityContentDetailsSubscription.html' title='google_youtube3::ActivityContentDetailsSubscription'>ActivityContentDetailsSubscription</a>&gt;,
 }</pre><div class='docblock'><p>Details about the content of an activity: the video that was shared, the channel that was subscribed to, etc.</p>
 
 <p>This type is not used in any activity, and only used as <em>part</em> of another schema.</p>
 </div><h2 class='fields'>Fields</h2>
-<table><tr><td id='structfield.comment'><a class='stability Unmarked' title='No stability level'></a><code>comment</code></td><td><div class='docblock'><p>The comment object contains information about a resource that received a comment. This property is only present if the snippet.type is comment.</p>
-</div></td></tr><tr><td id='structfield.playlist_item'><a class='stability Unmarked' title='No stability level'></a><code>playlist_item</code></td><td><div class='docblock'><p>The playlistItem object contains information about a new playlist item. This property is only present if the snippet.type is playlistItem.</p>
-</div></td></tr><tr><td id='structfield.like'><a class='stability Unmarked' title='No stability level'></a><code>like</code></td><td><div class='docblock'><p>The like object contains information about a resource that received a positive (like) rating. This property is only present if the snippet.type is like.</p>
-</div></td></tr><tr><td id='structfield.promoted_item'><a class='stability Unmarked' title='No stability level'></a><code>promoted_item</code></td><td><div class='docblock'><p>The promotedItem object contains details about a resource which is being promoted. This property is only present if the snippet.type is promotedItem.</p>
-</div></td></tr><tr><td id='structfield.recommendation'><a class='stability Unmarked' title='No stability level'></a><code>recommendation</code></td><td><div class='docblock'><p>The recommendation object contains information about a recommended resource. This property is only present if the snippet.type is recommendation.</p>
-</div></td></tr><tr><td id='structfield.favorite'><a class='stability Unmarked' title='No stability level'></a><code>favorite</code></td><td><div class='docblock'><p>The favorite object contains information about a video that was marked as a favorite video. This property is only present if the snippet.type is favorite.</p>
-</div></td></tr><tr><td id='structfield.upload'><a class='stability Unmarked' title='No stability level'></a><code>upload</code></td><td><div class='docblock'><p>The upload object contains information about the uploaded video. This property is only present if the snippet.type is upload.</p>
-</div></td></tr><tr><td id='structfield.social'><a class='stability Unmarked' title='No stability level'></a><code>social</code></td><td><div class='docblock'><p>The social object contains details about a social network post. This property is only present if the snippet.type is social.</p>
-</div></td></tr><tr><td id='structfield.channel_item'><a class='stability Unmarked' title='No stability level'></a><code>channel_item</code></td><td><div class='docblock'><p>The channelItem object contains details about a resource which was added to a channel. This property is only present if the snippet.type is channelItem.</p>
-</div></td></tr><tr><td id='structfield.bulletin'><a class='stability Unmarked' title='No stability level'></a><code>bulletin</code></td><td><div class='docblock'><p>The bulletin object contains details about a channel bulletin post. This object is only present if the snippet.type is bulletin.</p>
-</div></td></tr><tr><td id='structfield.subscription'><a class='stability Unmarked' title='No stability level'></a><code>subscription</code></td><td><div class='docblock'><p>The subscription object contains information about a channel that a user subscribed to. This property is only present if the snippet.type is subscription.</p>
-</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='../google_youtube3/trait.Part.html' title='google_youtube3::Part'>Part</a> for <a class='struct' href='../google_youtube3/struct.ActivityContentDetails.html' title='google_youtube3::ActivityContentDetails'>ActivityContentDetails</a></code></h3><div class='impl-items'></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_youtube3/struct.ActivityContentDetails.html' title='google_youtube3::ActivityContentDetails'>ActivityContentDetails</a></code></h3><div class='impl-items'><h4 id='method.fmt' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#method.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='http://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='http://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
-</div><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_youtube3/struct.ActivityContentDetails.html' title='google_youtube3::ActivityContentDetails'>ActivityContentDetails</a></code></h3><div class='impl-items'><h4 id='method.clone' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_youtube3/struct.ActivityContentDetails.html' title='google_youtube3::ActivityContentDetails'>ActivityContentDetails</a></code></h4>
-<h4 id='method.clone_from' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code></h4>
-</div><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_youtube3/struct.ActivityContentDetails.html' title='google_youtube3::ActivityContentDetails'>ActivityContentDetails</a></code></h3><div class='impl-items'><h4 id='method.default' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/default/trait.Default.html#method.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_youtube3/struct.ActivityContentDetails.html' title='google_youtube3::ActivityContentDetails'>ActivityContentDetails</a></code></h4>
-</div><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='../serde/de/trait.Deserialize.html' title='serde::de::Deserialize'>Deserialize</a> for <a class='struct' href='../google_youtube3/struct.ActivityContentDetails.html' title='google_youtube3::ActivityContentDetails'>ActivityContentDetails</a></code></h3><div class='impl-items'><h4 id='method.deserialize' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='../serde/de/trait.Deserialize.html#method.deserialize' class='fnname'>deserialize</a>&lt;__D&gt;(deserializer: &amp;mut __D) -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../google_youtube3/struct.ActivityContentDetails.html' title='google_youtube3::ActivityContentDetails'>ActivityContentDetails</a>, __D&gt; <span class='where'>where __D: <a class='trait' href='../serde/de/trait.Deserializer.html' title='serde::de::Deserializer'>Deserializer</a></span></code></h4>
-</div><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='../serde/ser/trait.Serialize.html' title='serde::ser::Serialize'>Serialize</a> for <a class='struct' href='../google_youtube3/struct.ActivityContentDetails.html' title='google_youtube3::ActivityContentDetails'>ActivityContentDetails</a></code></h3><div class='impl-items'><h4 id='method.serialize' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='../serde/ser/trait.Serialize.html#method.serialize' class='fnname'>serialize</a>&lt;__S&gt;(&amp;self, serializer: &amp;mut __S) -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, __S&gt; <span class='where'>where __S: <a class='trait' href='../serde/ser/trait.Serializer.html' title='serde::ser::Serializer'>Serializer</a></span></code></h4>
+<table><tr class='stab '>
+                                  <td id='structfield.comment'><code>comment</code></td><td><div class='docblock'><p>The comment object contains information about a resource that received a comment. This property is only present if the snippet.type is comment.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.playlist_item'><code>playlist_item</code></td><td><div class='docblock'><p>The playlistItem object contains information about a new playlist item. This property is only present if the snippet.type is playlistItem.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.like'><code>like</code></td><td><div class='docblock'><p>The like object contains information about a resource that received a positive (like) rating. This property is only present if the snippet.type is like.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.promoted_item'><code>promoted_item</code></td><td><div class='docblock'><p>The promotedItem object contains details about a resource which is being promoted. This property is only present if the snippet.type is promotedItem.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.recommendation'><code>recommendation</code></td><td><div class='docblock'><p>The recommendation object contains information about a recommended resource. This property is only present if the snippet.type is recommendation.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.favorite'><code>favorite</code></td><td><div class='docblock'><p>The favorite object contains information about a video that was marked as a favorite video. This property is only present if the snippet.type is favorite.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.upload'><code>upload</code></td><td><div class='docblock'><p>The upload object contains information about the uploaded video. This property is only present if the snippet.type is upload.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.social'><code>social</code></td><td><div class='docblock'><p>The social object contains details about a social network post. This property is only present if the snippet.type is social.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.channel_item'><code>channel_item</code></td><td><div class='docblock'><p>The channelItem object contains details about a resource which was added to a channel. This property is only present if the snippet.type is channelItem.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.bulletin'><code>bulletin</code></td><td><div class='docblock'><p>The bulletin object contains details about a channel bulletin post. This object is only present if the snippet.type is bulletin.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.subscription'><code>subscription</code></td><td><div class='docblock'><p>The subscription object contains information about a channel that a user subscribed to. This property is only present if the snippet.type is subscription.</p>
+</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl <a class='trait' href='../serde/de/trait.Deserialize.html' title='serde::de::Deserialize'>Deserialize</a> for <a class='struct' href='../google_youtube3/struct.ActivityContentDetails.html' title='google_youtube3::ActivityContentDetails'>ActivityContentDetails</a></code></h3><div class='impl-items'><h4 id='method.deserialize' class='method'><code>fn <a href='../serde/de/trait.Deserialize.html#method.deserialize' class='fnname'>deserialize</a>&lt;__D&gt;(deserializer: &amp;mut __D) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../google_youtube3/struct.ActivityContentDetails.html' title='google_youtube3::ActivityContentDetails'>ActivityContentDetails</a>, __D::Error&gt; <span class='where'>where __D: <a class='trait' href='../serde/de/trait.Deserializer.html' title='serde::de::Deserializer'>Deserializer</a></span></code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='../serde/ser/trait.Serialize.html' title='serde::ser::Serialize'>Serialize</a> for <a class='struct' href='../google_youtube3/struct.ActivityContentDetails.html' title='google_youtube3::ActivityContentDetails'>ActivityContentDetails</a></code></h3><div class='impl-items'><h4 id='method.serialize' class='method'><code>fn <a href='../serde/ser/trait.Serialize.html#method.serialize' class='fnname'>serialize</a>&lt;__S&gt;(&amp;self, serializer: &amp;mut __S) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, __S::Error&gt; <span class='where'>where __S: <a class='trait' href='../serde/ser/trait.Serializer.html' title='serde::ser::Serializer'>Serializer</a></span></code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='../google_youtube3/trait.Part.html' title='google_youtube3::Part'>Part</a> for <a class='struct' href='../google_youtube3/struct.ActivityContentDetails.html' title='google_youtube3::ActivityContentDetails'>ActivityContentDetails</a></code></h3><div class='impl-items'></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_youtube3/struct.ActivityContentDetails.html' title='google_youtube3::ActivityContentDetails'>ActivityContentDetails</a></code></h3><div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#method.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_youtube3/struct.ActivityContentDetails.html' title='google_youtube3::ActivityContentDetails'>ActivityContentDetails</a></code></h3><div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_youtube3/struct.ActivityContentDetails.html' title='google_youtube3::ActivityContentDetails'>ActivityContentDetails</a></code></h4>
+<h4 id='method.clone_from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_youtube3/struct.ActivityContentDetails.html' title='google_youtube3::ActivityContentDetails'>ActivityContentDetails</a></code></h3><div class='impl-items'><h4 id='method.default' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#method.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_youtube3/struct.ActivityContentDetails.html' title='google_youtube3::ActivityContentDetails'>ActivityContentDetails</a></code></h4>
 </div></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
 
-    <div id="help" class="hidden">
-        <div class="shortcuts">
-            <h1>Keyboard shortcuts</h1>
-            <dl>
-                <dt>?</dt>
-                <dd>Show this help dialog</dd>
-                <dt>S</dt>
-                <dd>Focus the search field</dd>
-                <dt>&larrb;</dt>
-                <dd>Move up in search results</dd>
-                <dt>&rarrb;</dt>
-                <dd>Move down in search results</dd>
-                <dt>&#9166;</dt>
-                <dd>Go to active search result</dd>
-            </dl>
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code>)
+                </p>
+            </div>
         </div>
-        <div class="infos">
-            <h1>Search tricks</h1>
-            <p>
-                Prefix searches with a type followed by a colon (e.g.
-                <code>fn:</code>) to restrict the search to a given type.
-            </p>
-            <p>
-                Accepted types are: <code>fn</code>, <code>mod</code>,
-                <code>struct</code>, <code>enum</code>,
-                <code>trait</code>, <code>typedef</code> (or
-                <code>tdef</code>).
-            </p>
-        </div>
-    </div>
+    </aside>
 
     
 
@@ -123,6 +150,6 @@
     <script src="../jquery.js"></script>
     <script src="../main.js"></script>
     
-    <script async src="../search-index.js"></script>
+    <script defer src="../search-index.js"></script>
 </body>
 </html>

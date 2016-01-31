@@ -9,6 +9,7 @@
 
     <title>google_gamesconfiguration1_configuration::LeaderboardConfigurationMethods - Rust</title>
 
+    <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
 
     
@@ -24,35 +25,36 @@
 
     
 
-    <section class="sidebar">
+    <nav class="sidebar">
         
         <p class='location'><a href='index.html'>google_gamesconfiguration1_configuration</a></p><script>window.sidebarCurrent = {name: 'LeaderboardConfigurationMethods', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
-    </section>
+    </nav>
 
     <nav class="sub">
         <form class="search-form js-only">
             <div class="search-container">
                 <input class="search-input" name="search"
                        autocomplete="off"
-                       placeholder="Click or press 'S' to search, '?' for more options..."
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
                        type="search">
             </div>
         </form>
     </nav>
 
     <section id='main' class="content struct">
-<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_gamesconfiguration1_configuration</a>::<wbr><a class='struct' href=''>LeaderboardConfigurationMethods</a><wbr></span><span class='out-of-band'><span id='render-detail'>
-            <a id="collapse-all" href="#">[-]</a>&nbsp;<a id="expand-all" href="#">[+]</a>
-        </span><a id='src-15831' href='../src/google_gamesconfiguration1_configuration///home/byron/dev/rust/google-apis-rs/target/debug/build/google-gamesconfiguration1_configuration-0c331f7b9d598938/out/lib.rs.html#4200-4202'>[src]</a></span></h1>
+<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_gamesconfiguration1_configuration</a>::<wbr><a class='struct' href=''>LeaderboardConfigurationMethods</a></span><span class='out-of-band'><span id='render-detail'>
+            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                [<span class='inner'>&#x2212;</span>]
+            </a>
+        </span><a id='src-2969' class='srclink' href='../src/google_gamesconfiguration1_configuration///Users/byron/dev/rs/google-apis-rs/target/debug/build/google-gamesconfiguration1_configuration-f27febc4aabf3cc6/out/lib.rs.html#5231-5233' title='goto source code'>[src]</a></span></h1>
 <pre class='rust struct'>pub struct LeaderboardConfigurationMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>leaderboardConfiguration</em> resources.
 It is not used directly, but through the <code>GamesConfiguration</code> hub.</p>
 
-<h1 id="example" class='section-header'><a
-                           href="#example">Example</a></h1>
+<h1 id='example' class='section-header'><a href='#example'>Example</a></h1>
 <p>Instantiate a resource builder</p>
-<pre id='rust-example-rendered' class='rust '>
+<pre class='rust rust-example-rendered'>
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>hyper</span>;
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>yup_oauth2</span> <span class='kw'>as</span> <span class='ident'>oauth2</span>;
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>google_gamesconfiguration1_configuration</span> <span class='kw'>as</span> <span class='ident'>gamesconfiguration1_configuration</span>;
@@ -69,106 +71,112 @@ It is not used directly, but through the <code>GamesConfiguration</code> hub.</p
 <span class='comment'>// Usually you wouldn&#39;t bind this to a variable, but keep calling *CallBuilders*</span>
 <span class='comment'>// like `delete(...)`, `get(...)`, `insert(...)`, `list(...)`, `patch(...)` and `update(...)`</span>
 <span class='comment'>// to build up your call.</span>
-<span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>leaderboard_configurations</span>();
-</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_gamesconfiguration1_configuration/struct.LeaderboardConfigurationMethods.html' title='google_gamesconfiguration1_configuration::LeaderboardConfigurationMethods'>LeaderboardConfigurationMethods</a>&lt;'a, C, A&gt;</code></h3><div class='impl-items'><h4 id='method.insert' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.insert' class='fnname'>insert</a>(&amp;self, request: <a class='struct' href='../google_gamesconfiguration1_configuration/struct.LeaderboardConfiguration.html' title='google_gamesconfiguration1_configuration::LeaderboardConfiguration'>LeaderboardConfiguration</a>, application_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gamesconfiguration1_configuration/struct.LeaderboardConfigurationInsertCall.html' title='google_gamesconfiguration1_configuration::LeaderboardConfigurationInsertCall'>LeaderboardConfigurationInsertCall</a>&lt;'a, C, A&gt;</code></h4>
+<span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>leaderboard_configurations</span>();</pre>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_gamesconfiguration1_configuration/struct.LeaderboardConfigurationMethods.html' title='google_gamesconfiguration1_configuration::LeaderboardConfigurationMethods'>LeaderboardConfigurationMethods</a>&lt;'a, C, A&gt;</code></h3><div class='impl-items'><h4 id='method.insert' class='method'><code>fn <a href='#method.insert' class='fnname'>insert</a>(&amp;self, request: <a class='struct' href='../google_gamesconfiguration1_configuration/struct.LeaderboardConfiguration.html' title='google_gamesconfiguration1_configuration::LeaderboardConfiguration'>LeaderboardConfiguration</a>, application_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gamesconfiguration1_configuration/struct.LeaderboardConfigurationInsertCall.html' title='google_gamesconfiguration1_configuration::LeaderboardConfigurationInsertCall'>LeaderboardConfigurationInsertCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Insert a new leaderboard configuration in this application.</p>
 
-<h1 id="arguments" class='section-header'><a
-                           href="#arguments">Arguments</a></h1>
+<h1 id='arguments' class='section-header'><a href='#arguments'>Arguments</a></h1>
 <ul>
 <li><code>request</code> - No description provided.</li>
 <li><code>applicationId</code> - The application ID from the Google Play developer console.</li>
 </ul>
-</div><h4 id='method.get' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, leaderboard_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gamesconfiguration1_configuration/struct.LeaderboardConfigurationGetCall.html' title='google_gamesconfiguration1_configuration::LeaderboardConfigurationGetCall'>LeaderboardConfigurationGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, leaderboard_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gamesconfiguration1_configuration/struct.LeaderboardConfigurationGetCall.html' title='google_gamesconfiguration1_configuration::LeaderboardConfigurationGetCall'>LeaderboardConfigurationGetCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Retrieves the metadata of the leaderboard configuration with the given ID.</p>
 
-<h1 id="arguments" class='section-header'><a
-                           href="#arguments">Arguments</a></h1>
+<h1 id='arguments-1' class='section-header'><a href='#arguments-1'>Arguments</a></h1>
 <ul>
 <li><code>leaderboardId</code> - The ID of the leaderboard.</li>
 </ul>
-</div><h4 id='method.patch' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.patch' class='fnname'>patch</a>(&amp;self, request: <a class='struct' href='../google_gamesconfiguration1_configuration/struct.LeaderboardConfiguration.html' title='google_gamesconfiguration1_configuration::LeaderboardConfiguration'>LeaderboardConfiguration</a>, leaderboard_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gamesconfiguration1_configuration/struct.LeaderboardConfigurationPatchCall.html' title='google_gamesconfiguration1_configuration::LeaderboardConfigurationPatchCall'>LeaderboardConfigurationPatchCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.patch' class='method'><code>fn <a href='#method.patch' class='fnname'>patch</a>(&amp;self, request: <a class='struct' href='../google_gamesconfiguration1_configuration/struct.LeaderboardConfiguration.html' title='google_gamesconfiguration1_configuration::LeaderboardConfiguration'>LeaderboardConfiguration</a>, leaderboard_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gamesconfiguration1_configuration/struct.LeaderboardConfigurationPatchCall.html' title='google_gamesconfiguration1_configuration::LeaderboardConfigurationPatchCall'>LeaderboardConfigurationPatchCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Update the metadata of the leaderboard configuration with the given ID. This method supports patch semantics.</p>
 
-<h1 id="arguments" class='section-header'><a
-                           href="#arguments">Arguments</a></h1>
+<h1 id='arguments-2' class='section-header'><a href='#arguments-2'>Arguments</a></h1>
 <ul>
 <li><code>request</code> - No description provided.</li>
 <li><code>leaderboardId</code> - The ID of the leaderboard.</li>
 </ul>
-</div><h4 id='method.update' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.update' class='fnname'>update</a>(&amp;self, request: <a class='struct' href='../google_gamesconfiguration1_configuration/struct.LeaderboardConfiguration.html' title='google_gamesconfiguration1_configuration::LeaderboardConfiguration'>LeaderboardConfiguration</a>, leaderboard_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gamesconfiguration1_configuration/struct.LeaderboardConfigurationUpdateCall.html' title='google_gamesconfiguration1_configuration::LeaderboardConfigurationUpdateCall'>LeaderboardConfigurationUpdateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.update' class='method'><code>fn <a href='#method.update' class='fnname'>update</a>(&amp;self, request: <a class='struct' href='../google_gamesconfiguration1_configuration/struct.LeaderboardConfiguration.html' title='google_gamesconfiguration1_configuration::LeaderboardConfiguration'>LeaderboardConfiguration</a>, leaderboard_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gamesconfiguration1_configuration/struct.LeaderboardConfigurationUpdateCall.html' title='google_gamesconfiguration1_configuration::LeaderboardConfigurationUpdateCall'>LeaderboardConfigurationUpdateCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Update the metadata of the leaderboard configuration with the given ID.</p>
 
-<h1 id="arguments" class='section-header'><a
-                           href="#arguments">Arguments</a></h1>
+<h1 id='arguments-3' class='section-header'><a href='#arguments-3'>Arguments</a></h1>
 <ul>
 <li><code>request</code> - No description provided.</li>
 <li><code>leaderboardId</code> - The ID of the leaderboard.</li>
 </ul>
-</div><h4 id='method.list' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self, application_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gamesconfiguration1_configuration/struct.LeaderboardConfigurationListCall.html' title='google_gamesconfiguration1_configuration::LeaderboardConfigurationListCall'>LeaderboardConfigurationListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self, application_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gamesconfiguration1_configuration/struct.LeaderboardConfigurationListCall.html' title='google_gamesconfiguration1_configuration::LeaderboardConfigurationListCall'>LeaderboardConfigurationListCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Returns a list of the leaderboard configurations in this application.</p>
 
-<h1 id="arguments" class='section-header'><a
-                           href="#arguments">Arguments</a></h1>
+<h1 id='arguments-4' class='section-header'><a href='#arguments-4'>Arguments</a></h1>
 <ul>
 <li><code>applicationId</code> - The application ID from the Google Play developer console.</li>
 </ul>
-</div><h4 id='method.delete' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.delete' class='fnname'>delete</a>(&amp;self, leaderboard_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gamesconfiguration1_configuration/struct.LeaderboardConfigurationDeleteCall.html' title='google_gamesconfiguration1_configuration::LeaderboardConfigurationDeleteCall'>LeaderboardConfigurationDeleteCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.delete' class='method'><code>fn <a href='#method.delete' class='fnname'>delete</a>(&amp;self, leaderboard_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gamesconfiguration1_configuration/struct.LeaderboardConfigurationDeleteCall.html' title='google_gamesconfiguration1_configuration::LeaderboardConfigurationDeleteCall'>LeaderboardConfigurationDeleteCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Delete the leaderboard configuration with the given ID.</p>
 
-<h1 id="arguments" class='section-header'><a
-                           href="#arguments">Arguments</a></h1>
+<h1 id='arguments-5' class='section-header'><a href='#arguments-5'>Arguments</a></h1>
 <ul>
 <li><code>leaderboardId</code> - The ID of the leaderboard.</li>
 </ul>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_gamesconfiguration1_configuration/trait.MethodsBuilder.html' title='google_gamesconfiguration1_configuration::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_gamesconfiguration1_configuration/struct.LeaderboardConfigurationMethods.html' title='google_gamesconfiguration1_configuration::LeaderboardConfigurationMethods'>LeaderboardConfigurationMethods</a>&lt;'a, C, A&gt;</code></h3><div class='impl-items'></div></section>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_gamesconfiguration1_configuration/trait.MethodsBuilder.html' title='google_gamesconfiguration1_configuration::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_gamesconfiguration1_configuration/struct.LeaderboardConfigurationMethods.html' title='google_gamesconfiguration1_configuration::LeaderboardConfigurationMethods'>LeaderboardConfigurationMethods</a>&lt;'a, C, A&gt;</code></h3><div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
 
-    <div id="help" class="hidden">
-        <div class="shortcuts">
-            <h1>Keyboard shortcuts</h1>
-            <dl>
-                <dt>?</dt>
-                <dd>Show this help dialog</dd>
-                <dt>S</dt>
-                <dd>Focus the search field</dd>
-                <dt>&larrb;</dt>
-                <dd>Move up in search results</dd>
-                <dt>&rarrb;</dt>
-                <dd>Move down in search results</dd>
-                <dt>&#9166;</dt>
-                <dd>Go to active search result</dd>
-            </dl>
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code>)
+                </p>
+            </div>
         </div>
-        <div class="infos">
-            <h1>Search tricks</h1>
-            <p>
-                Prefix searches with a type followed by a colon (e.g.
-                <code>fn:</code>) to restrict the search to a given type.
-            </p>
-            <p>
-                Accepted types are: <code>fn</code>, <code>mod</code>,
-                <code>struct</code>, <code>enum</code>,
-                <code>trait</code>, <code>typedef</code> (or
-                <code>tdef</code>).
-            </p>
-        </div>
-    </div>
+    </aside>
 
     
 
@@ -180,6 +188,6 @@ It is not used directly, but through the <code>GamesConfiguration</code> hub.</p
     <script src="../jquery.js"></script>
     <script src="../main.js"></script>
     
-    <script async src="../search-index.js"></script>
+    <script defer src="../search-index.js"></script>
 </body>
 </html>

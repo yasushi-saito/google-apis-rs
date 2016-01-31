@@ -9,6 +9,7 @@
 
     <title>google_youtube3::YouTube - Rust</title>
 
+    <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
 
     
@@ -24,34 +25,35 @@
 
     
 
-    <section class="sidebar">
+    <nav class="sidebar">
         
         <p class='location'><a href='index.html'>google_youtube3</a></p><script>window.sidebarCurrent = {name: 'YouTube', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
-    </section>
+    </nav>
 
     <nav class="sub">
         <form class="search-form js-only">
             <div class="search-container">
                 <input class="search-input" name="search"
                        autocomplete="off"
-                       placeholder="Click or press 'S' to search, '?' for more options..."
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
                        type="search">
             </div>
         </form>
     </nav>
 
     <section id='main' class="content struct">
-<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_youtube3</a>::<wbr><a class='struct' href=''>YouTube</a><wbr></span><span class='out-of-band'><span id='render-detail'>
-            <a id="collapse-all" href="#">[-]</a>&nbsp;<a id="expand-all" href="#">[+]</a>
-        </span><a id='src-5786' href='../src/google_youtube3///home/byron/dev/rust/google-apis-rs/target/debug/build/google-youtube3-db203c02da0a6afc/out/lib.rs.html#1483-1487'>[src]</a></span></h1>
+<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_youtube3</a>::<wbr><a class='struct' href=''>YouTube</a></span><span class='out-of-band'><span id='render-detail'>
+            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                [<span class='inner'>&#x2212;</span>]
+            </a>
+        </span><a id='src-1005' class='srclink' href='../src/google_youtube3///Users/byron/dev/rs/google-apis-rs/target/debug/build/google-youtube3-4efca17fcf3e49e3/out/lib.rs.html#1624-1628' title='goto source code'>[src]</a></span></h1>
 <pre class='rust struct'>pub struct YouTube&lt;C, A&gt; {
     // some fields omitted
 }</pre><div class='docblock'><p>Central instance to access all YouTube related resource activities</p>
 
-<h1 id="examples" class='section-header'><a
-                           href="#examples">Examples</a></h1>
+<h1 id='examples' class='section-header'><a href='#examples'>Examples</a></h1>
 <p>Instantiate a new hub</p>
-<pre id='rust-example-rendered' class='rust '>
+<pre class='rust rust-example-rendered'>
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>hyper</span>;
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>yup_oauth2</span> <span class='kw'>as</span> <span class='ident'>oauth2</span>;
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>google_youtube3</span> <span class='kw'>as</span> <span class='ident'>youtube3</span>;
@@ -103,70 +105,87 @@
         <span class='op'>|</span><span class='ident'>Error</span>::<span class='ident'>JsonDecodeError</span>(_, _) <span class='op'>=&gt;</span> <span class='macro'>println</span><span class='macro'>!</span>(<span class='string'>&quot;{}&quot;</span>, <span class='ident'>e</span>),
     },
     <span class='prelude-val'>Ok</span>(<span class='ident'>res</span>) <span class='op'>=&gt;</span> <span class='macro'>println</span><span class='macro'>!</span>(<span class='string'>&quot;Success: {:?}&quot;</span>, <span class='ident'>res</span>),
-}
-</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_youtube3/struct.YouTube.html' title='google_youtube3::YouTube'>YouTube</a>&lt;C, A&gt; <span class='where'>where C: <a class='trait' href='http://doc.rust-lang.org/nightly/collections/borrow/trait.BorrowMut.html' title='collections::borrow::BorrowMut'>BorrowMut</a>&lt;<a class='struct' href='../hyper/client/struct.Client.html' title='hyper::client::Client'>Client</a>&gt;, A: <a class='trait' href='../yup_oauth2/helper/trait.GetToken.html' title='yup_oauth2::helper::GetToken'>GetToken</a></span></code></h3><div class='impl-items'><h4 id='method.new' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.new' class='fnname'>new</a>(client: C, authenticator: A) -&gt; <a class='struct' href='../google_youtube3/struct.YouTube.html' title='google_youtube3::YouTube'>YouTube</a>&lt;C, A&gt;</code></h4>
-<h4 id='method.activities' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.activities' class='fnname'>activities</a>(&amp;'a self) -&gt; <a class='struct' href='../google_youtube3/struct.ActivityMethods.html' title='google_youtube3::ActivityMethods'>ActivityMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.captions' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.captions' class='fnname'>captions</a>(&amp;'a self) -&gt; <a class='struct' href='../google_youtube3/struct.CaptionMethods.html' title='google_youtube3::CaptionMethods'>CaptionMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.channel_banners' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.channel_banners' class='fnname'>channel_banners</a>(&amp;'a self) -&gt; <a class='struct' href='../google_youtube3/struct.ChannelBannerMethods.html' title='google_youtube3::ChannelBannerMethods'>ChannelBannerMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.channel_sections' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.channel_sections' class='fnname'>channel_sections</a>(&amp;'a self) -&gt; <a class='struct' href='../google_youtube3/struct.ChannelSectionMethods.html' title='google_youtube3::ChannelSectionMethods'>ChannelSectionMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.channels' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.channels' class='fnname'>channels</a>(&amp;'a self) -&gt; <a class='struct' href='../google_youtube3/struct.ChannelMethods.html' title='google_youtube3::ChannelMethods'>ChannelMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.comment_threads' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.comment_threads' class='fnname'>comment_threads</a>(&amp;'a self) -&gt; <a class='struct' href='../google_youtube3/struct.CommentThreadMethods.html' title='google_youtube3::CommentThreadMethods'>CommentThreadMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.comments' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.comments' class='fnname'>comments</a>(&amp;'a self) -&gt; <a class='struct' href='../google_youtube3/struct.CommentMethods.html' title='google_youtube3::CommentMethods'>CommentMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.guide_categories' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.guide_categories' class='fnname'>guide_categories</a>(&amp;'a self) -&gt; <a class='struct' href='../google_youtube3/struct.GuideCategoryMethods.html' title='google_youtube3::GuideCategoryMethods'>GuideCategoryMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.i18n_languages' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.i18n_languages' class='fnname'>i18n_languages</a>(&amp;'a self) -&gt; <a class='struct' href='../google_youtube3/struct.I18nLanguageMethods.html' title='google_youtube3::I18nLanguageMethods'>I18nLanguageMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.i18n_regions' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.i18n_regions' class='fnname'>i18n_regions</a>(&amp;'a self) -&gt; <a class='struct' href='../google_youtube3/struct.I18nRegionMethods.html' title='google_youtube3::I18nRegionMethods'>I18nRegionMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.live_broadcasts' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.live_broadcasts' class='fnname'>live_broadcasts</a>(&amp;'a self) -&gt; <a class='struct' href='../google_youtube3/struct.LiveBroadcastMethods.html' title='google_youtube3::LiveBroadcastMethods'>LiveBroadcastMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.live_streams' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.live_streams' class='fnname'>live_streams</a>(&amp;'a self) -&gt; <a class='struct' href='../google_youtube3/struct.LiveStreamMethods.html' title='google_youtube3::LiveStreamMethods'>LiveStreamMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.playlist_items' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.playlist_items' class='fnname'>playlist_items</a>(&amp;'a self) -&gt; <a class='struct' href='../google_youtube3/struct.PlaylistItemMethods.html' title='google_youtube3::PlaylistItemMethods'>PlaylistItemMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.playlists' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.playlists' class='fnname'>playlists</a>(&amp;'a self) -&gt; <a class='struct' href='../google_youtube3/struct.PlaylistMethods.html' title='google_youtube3::PlaylistMethods'>PlaylistMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.search' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.search' class='fnname'>search</a>(&amp;'a self) -&gt; <a class='struct' href='../google_youtube3/struct.SearchMethods.html' title='google_youtube3::SearchMethods'>SearchMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.subscriptions' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.subscriptions' class='fnname'>subscriptions</a>(&amp;'a self) -&gt; <a class='struct' href='../google_youtube3/struct.SubscriptionMethods.html' title='google_youtube3::SubscriptionMethods'>SubscriptionMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.thumbnails' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.thumbnails' class='fnname'>thumbnails</a>(&amp;'a self) -&gt; <a class='struct' href='../google_youtube3/struct.ThumbnailMethods.html' title='google_youtube3::ThumbnailMethods'>ThumbnailMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.video_abuse_report_reasons' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.video_abuse_report_reasons' class='fnname'>video_abuse_report_reasons</a>(&amp;'a self) -&gt; <a class='struct' href='../google_youtube3/struct.VideoAbuseReportReasonMethods.html' title='google_youtube3::VideoAbuseReportReasonMethods'>VideoAbuseReportReasonMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.video_categories' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.video_categories' class='fnname'>video_categories</a>(&amp;'a self) -&gt; <a class='struct' href='../google_youtube3/struct.VideoCategoryMethods.html' title='google_youtube3::VideoCategoryMethods'>VideoCategoryMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.videos' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.videos' class='fnname'>videos</a>(&amp;'a self) -&gt; <a class='struct' href='../google_youtube3/struct.VideoMethods.html' title='google_youtube3::VideoMethods'>VideoMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.watermarks' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.watermarks' class='fnname'>watermarks</a>(&amp;'a self) -&gt; <a class='struct' href='../google_youtube3/struct.WatermarkMethods.html' title='google_youtube3::WatermarkMethods'>WatermarkMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.user_agent' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.user_agent' class='fnname'>user_agent</a>(&amp;mut self, agent_name: <a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>) -&gt; <a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a></code></h4>
+}</pre>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_youtube3/struct.YouTube.html' title='google_youtube3::YouTube'>YouTube</a>&lt;C, A&gt; <span class='where'>where C: <a class='trait' href='https://doc.rust-lang.org/nightly/core/borrow/trait.BorrowMut.html' title='core::borrow::BorrowMut'>BorrowMut</a>&lt;<a class='struct' href='../hyper/client/struct.Client.html' title='hyper::client::Client'>Client</a>&gt;, A: <a class='trait' href='../yup_oauth2/helper/trait.GetToken.html' title='yup_oauth2::helper::GetToken'>GetToken</a></span></code></h3><div class='impl-items'><h4 id='method.new' class='method'><code>fn <a href='#method.new' class='fnname'>new</a>(client: C, authenticator: A) -&gt; <a class='struct' href='../google_youtube3/struct.YouTube.html' title='google_youtube3::YouTube'>YouTube</a>&lt;C, A&gt;</code></h4>
+<h4 id='method.activities' class='method'><code>fn <a href='#method.activities' class='fnname'>activities</a>(&amp;'a self) -&gt; <a class='struct' href='../google_youtube3/struct.ActivityMethods.html' title='google_youtube3::ActivityMethods'>ActivityMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.captions' class='method'><code>fn <a href='#method.captions' class='fnname'>captions</a>(&amp;'a self) -&gt; <a class='struct' href='../google_youtube3/struct.CaptionMethods.html' title='google_youtube3::CaptionMethods'>CaptionMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.channel_banners' class='method'><code>fn <a href='#method.channel_banners' class='fnname'>channel_banners</a>(&amp;'a self) -&gt; <a class='struct' href='../google_youtube3/struct.ChannelBannerMethods.html' title='google_youtube3::ChannelBannerMethods'>ChannelBannerMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.channel_sections' class='method'><code>fn <a href='#method.channel_sections' class='fnname'>channel_sections</a>(&amp;'a self) -&gt; <a class='struct' href='../google_youtube3/struct.ChannelSectionMethods.html' title='google_youtube3::ChannelSectionMethods'>ChannelSectionMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.channels' class='method'><code>fn <a href='#method.channels' class='fnname'>channels</a>(&amp;'a self) -&gt; <a class='struct' href='../google_youtube3/struct.ChannelMethods.html' title='google_youtube3::ChannelMethods'>ChannelMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.comment_threads' class='method'><code>fn <a href='#method.comment_threads' class='fnname'>comment_threads</a>(&amp;'a self) -&gt; <a class='struct' href='../google_youtube3/struct.CommentThreadMethods.html' title='google_youtube3::CommentThreadMethods'>CommentThreadMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.comments' class='method'><code>fn <a href='#method.comments' class='fnname'>comments</a>(&amp;'a self) -&gt; <a class='struct' href='../google_youtube3/struct.CommentMethods.html' title='google_youtube3::CommentMethods'>CommentMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.fan_funding_events' class='method'><code>fn <a href='#method.fan_funding_events' class='fnname'>fan_funding_events</a>(&amp;'a self) -&gt; <a class='struct' href='../google_youtube3/struct.FanFundingEventMethods.html' title='google_youtube3::FanFundingEventMethods'>FanFundingEventMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.guide_categories' class='method'><code>fn <a href='#method.guide_categories' class='fnname'>guide_categories</a>(&amp;'a self) -&gt; <a class='struct' href='../google_youtube3/struct.GuideCategoryMethods.html' title='google_youtube3::GuideCategoryMethods'>GuideCategoryMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.i18n_languages' class='method'><code>fn <a href='#method.i18n_languages' class='fnname'>i18n_languages</a>(&amp;'a self) -&gt; <a class='struct' href='../google_youtube3/struct.I18nLanguageMethods.html' title='google_youtube3::I18nLanguageMethods'>I18nLanguageMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.i18n_regions' class='method'><code>fn <a href='#method.i18n_regions' class='fnname'>i18n_regions</a>(&amp;'a self) -&gt; <a class='struct' href='../google_youtube3/struct.I18nRegionMethods.html' title='google_youtube3::I18nRegionMethods'>I18nRegionMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.live_broadcasts' class='method'><code>fn <a href='#method.live_broadcasts' class='fnname'>live_broadcasts</a>(&amp;'a self) -&gt; <a class='struct' href='../google_youtube3/struct.LiveBroadcastMethods.html' title='google_youtube3::LiveBroadcastMethods'>LiveBroadcastMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.live_chat_bans' class='method'><code>fn <a href='#method.live_chat_bans' class='fnname'>live_chat_bans</a>(&amp;'a self) -&gt; <a class='struct' href='../google_youtube3/struct.LiveChatBanMethods.html' title='google_youtube3::LiveChatBanMethods'>LiveChatBanMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.live_chat_messages' class='method'><code>fn <a href='#method.live_chat_messages' class='fnname'>live_chat_messages</a>(&amp;'a self) -&gt; <a class='struct' href='../google_youtube3/struct.LiveChatMessageMethods.html' title='google_youtube3::LiveChatMessageMethods'>LiveChatMessageMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.live_chat_moderators' class='method'><code>fn <a href='#method.live_chat_moderators' class='fnname'>live_chat_moderators</a>(&amp;'a self) -&gt; <a class='struct' href='../google_youtube3/struct.LiveChatModeratorMethods.html' title='google_youtube3::LiveChatModeratorMethods'>LiveChatModeratorMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.live_streams' class='method'><code>fn <a href='#method.live_streams' class='fnname'>live_streams</a>(&amp;'a self) -&gt; <a class='struct' href='../google_youtube3/struct.LiveStreamMethods.html' title='google_youtube3::LiveStreamMethods'>LiveStreamMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.playlist_items' class='method'><code>fn <a href='#method.playlist_items' class='fnname'>playlist_items</a>(&amp;'a self) -&gt; <a class='struct' href='../google_youtube3/struct.PlaylistItemMethods.html' title='google_youtube3::PlaylistItemMethods'>PlaylistItemMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.playlists' class='method'><code>fn <a href='#method.playlists' class='fnname'>playlists</a>(&amp;'a self) -&gt; <a class='struct' href='../google_youtube3/struct.PlaylistMethods.html' title='google_youtube3::PlaylistMethods'>PlaylistMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.search' class='method'><code>fn <a href='#method.search' class='fnname'>search</a>(&amp;'a self) -&gt; <a class='struct' href='../google_youtube3/struct.SearchMethods.html' title='google_youtube3::SearchMethods'>SearchMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.sponsors' class='method'><code>fn <a href='#method.sponsors' class='fnname'>sponsors</a>(&amp;'a self) -&gt; <a class='struct' href='../google_youtube3/struct.SponsorMethods.html' title='google_youtube3::SponsorMethods'>SponsorMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.subscriptions' class='method'><code>fn <a href='#method.subscriptions' class='fnname'>subscriptions</a>(&amp;'a self) -&gt; <a class='struct' href='../google_youtube3/struct.SubscriptionMethods.html' title='google_youtube3::SubscriptionMethods'>SubscriptionMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.thumbnails' class='method'><code>fn <a href='#method.thumbnails' class='fnname'>thumbnails</a>(&amp;'a self) -&gt; <a class='struct' href='../google_youtube3/struct.ThumbnailMethods.html' title='google_youtube3::ThumbnailMethods'>ThumbnailMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.video_abuse_report_reasons' class='method'><code>fn <a href='#method.video_abuse_report_reasons' class='fnname'>video_abuse_report_reasons</a>(&amp;'a self) -&gt; <a class='struct' href='../google_youtube3/struct.VideoAbuseReportReasonMethods.html' title='google_youtube3::VideoAbuseReportReasonMethods'>VideoAbuseReportReasonMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.video_categories' class='method'><code>fn <a href='#method.video_categories' class='fnname'>video_categories</a>(&amp;'a self) -&gt; <a class='struct' href='../google_youtube3/struct.VideoCategoryMethods.html' title='google_youtube3::VideoCategoryMethods'>VideoCategoryMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.videos' class='method'><code>fn <a href='#method.videos' class='fnname'>videos</a>(&amp;'a self) -&gt; <a class='struct' href='../google_youtube3/struct.VideoMethods.html' title='google_youtube3::VideoMethods'>VideoMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.watermarks' class='method'><code>fn <a href='#method.watermarks' class='fnname'>watermarks</a>(&amp;'a self) -&gt; <a class='struct' href='../google_youtube3/struct.WatermarkMethods.html' title='google_youtube3::WatermarkMethods'>WatermarkMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.user_agent' class='method'><code>fn <a href='#method.user_agent' class='fnname'>user_agent</a>(&amp;mut self, agent_name: <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>) -&gt; <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a></code></h4>
 <div class='docblock'><p>Set the user-agent header field to use in all requests to the server.
-It defaults to <code>google-api-rust-client/0.1.8</code>.</p>
+It defaults to <code>google-api-rust-client/0.1.11</code>.</p>
 
 <p>Returns the previously set user-agent.</p>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_youtube3/trait.Hub.html' title='google_youtube3::Hub'>Hub</a> for <a class='struct' href='../google_youtube3/struct.YouTube.html' title='google_youtube3::YouTube'>YouTube</a>&lt;C, A&gt;</code></h3><div class='impl-items'></div></section>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_youtube3/trait.Hub.html' title='google_youtube3::Hub'>Hub</a> for <a class='struct' href='../google_youtube3/struct.YouTube.html' title='google_youtube3::YouTube'>YouTube</a>&lt;C, A&gt;</code></h3><div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
 
-    <div id="help" class="hidden">
-        <div class="shortcuts">
-            <h1>Keyboard shortcuts</h1>
-            <dl>
-                <dt>?</dt>
-                <dd>Show this help dialog</dd>
-                <dt>S</dt>
-                <dd>Focus the search field</dd>
-                <dt>&larrb;</dt>
-                <dd>Move up in search results</dd>
-                <dt>&rarrb;</dt>
-                <dd>Move down in search results</dd>
-                <dt>&#9166;</dt>
-                <dd>Go to active search result</dd>
-            </dl>
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code>)
+                </p>
+            </div>
         </div>
-        <div class="infos">
-            <h1>Search tricks</h1>
-            <p>
-                Prefix searches with a type followed by a colon (e.g.
-                <code>fn:</code>) to restrict the search to a given type.
-            </p>
-            <p>
-                Accepted types are: <code>fn</code>, <code>mod</code>,
-                <code>struct</code>, <code>enum</code>,
-                <code>trait</code>, <code>typedef</code> (or
-                <code>tdef</code>).
-            </p>
-        </div>
-    </div>
+    </aside>
 
     
 
@@ -178,6 +197,6 @@ It defaults to <code>google-api-rust-client/0.1.8</code>.</p>
     <script src="../jquery.js"></script>
     <script src="../main.js"></script>
     
-    <script async src="../search-index.js"></script>
+    <script defer src="../search-index.js"></script>
 </body>
 </html>

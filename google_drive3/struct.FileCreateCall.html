@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `FileCreateCall` struct in crate `google_drive3`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, FileCreateCall">
+
+    <title>google_drive3::FileCreateCall - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../main.css">
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='index.html'>google_drive3</a></p><script>window.sidebarCurrent = {name: 'FileCreateCall', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content struct">
+<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_drive3</a>::<wbr><a class='struct' href=''>FileCreateCall</a></span><span class='out-of-band'><span id='render-detail'>
+            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                [<span class='inner'>&#x2212;</span>]
+            </a>
+        </span><a id='src-7419' class='srclink' href='../src/google_drive3///Users/byron/dev/rs/google-apis-rs/target/debug/build/google-drive3-1b69a84e5375ee87/out/lib.rs.html#14295-14305' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct FileCreateCall&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
+    // some fields omitted
+}</pre><div class='docblock'><p>Creates a new file.</p>
+
+<p>A builder for the <em>create</em> method supported by a <em>file</em> resource.
+It is not used directly, but through a <code>FileMethods</code> instance.</p>
+
+<h1 id='example' class='section-header'><a href='#example'>Example</a></h1>
+<p>Instantiate a resource method builder</p>
+<pre class='rust rust-example-rendered'>
+<span class='kw'>use</span> <span class='ident'>drive3</span>::<span class='ident'>File</span>;
+<span class='kw'>use</span> <span class='ident'>std</span>::<span class='ident'>fs</span>;
+ 
+<span class='comment'>// As the method needs a request, you would usually fill it with the desired information</span>
+<span class='comment'>// into the respective structure. Some of the parts shown here might not be applicable !</span>
+<span class='comment'>// Values shown here are possibly random and not representative !</span>
+<span class='kw'>let</span> <span class='kw-2'>mut</span> <span class='ident'>req</span> <span class='op'>=</span> <span class='ident'>File</span>::<span class='ident'>default</span>();
+ 
+<span class='comment'>// You can configure optional parameters by calling the respective setters at will, and</span>
+<span class='comment'>// execute the final call using `upload_resumable(...)`.</span>
+<span class='comment'>// Values shown here are possibly random and not representative !</span>
+<span class='kw'>let</span> <span class='ident'>result</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>files</span>().<span class='ident'>create</span>(<span class='ident'>req</span>)
+             .<span class='ident'>use_content_as_indexable_text</span>(<span class='boolval'>false</span>)
+             .<span class='ident'>ocr_language</span>(<span class='string'>&quot;sadipscing&quot;</span>)
+             .<span class='ident'>keep_revision_forever</span>(<span class='boolval'>true</span>)
+             .<span class='ident'>ignore_default_visibility</span>(<span class='boolval'>true</span>)
+             .<span class='ident'>upload_resumable</span>(<span class='ident'>fs</span>::<span class='ident'>File</span>::<span class='ident'>open</span>(<span class='string'>&quot;file.ext&quot;</span>).<span class='ident'>unwrap</span>(), <span class='string'>&quot;application/octet-stream&quot;</span>.<span class='ident'>parse</span>().<span class='ident'>unwrap</span>());</pre>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_drive3/struct.FileCreateCall.html' title='google_drive3::FileCreateCall'>FileCreateCall</a>&lt;'a, C, A&gt; <span class='where'>where C: <a class='trait' href='https://doc.rust-lang.org/nightly/core/borrow/trait.BorrowMut.html' title='core::borrow::BorrowMut'>BorrowMut</a>&lt;<a class='struct' href='../hyper/client/struct.Client.html' title='hyper::client::Client'>Client</a>&gt;, A: <a class='trait' href='../yup_oauth2/helper/trait.GetToken.html' title='yup_oauth2::helper::GetToken'>GetToken</a></span></code></h3><div class='impl-items'><h4 id='method.upload' class='method'><code>fn <a href='#method.upload' class='fnname'>upload</a>&lt;RS&gt;(self, stream: RS, mime_type: <a class='struct' href='../mime/struct.Mime.html' title='mime::Mime'>Mime</a>) -&gt; <a class='type' href='../google_drive3/type.Result.html' title='google_drive3::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>(<a class='struct' href='../hyper/client/response/struct.Response.html' title='hyper::client::response::Response'>Response</a>, <a class='struct' href='../google_drive3/struct.File.html' title='google_drive3::File'>File</a>)</a>&gt; <span class='where'>where RS: <a class='trait' href='../google_drive3/trait.ReadSeek.html' title='google_drive3::ReadSeek'>ReadSeek</a></span></code></h4>
+<div class='docblock'><p>Upload media all at once.
+If the upload fails for whichever reason, all progress is lost.</p>
+
+<ul>
+<li><em>max size</em>: 5120GB</li>
+<li><em>multipart</em>: yes</li>
+<li><em>valid mime types</em>: &#39;*/*&#39;</li>
+</ul>
+</div><h4 id='method.upload_resumable' class='method'><code>fn <a href='#method.upload_resumable' class='fnname'>upload_resumable</a>&lt;RS&gt;(self, resumeable_stream: RS, mime_type: <a class='struct' href='../mime/struct.Mime.html' title='mime::Mime'>Mime</a>) -&gt; <a class='type' href='../google_drive3/type.Result.html' title='google_drive3::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>(<a class='struct' href='../hyper/client/response/struct.Response.html' title='hyper::client::response::Response'>Response</a>, <a class='struct' href='../google_drive3/struct.File.html' title='google_drive3::File'>File</a>)</a>&gt; <span class='where'>where RS: <a class='trait' href='../google_drive3/trait.ReadSeek.html' title='google_drive3::ReadSeek'>ReadSeek</a></span></code></h4>
+<div class='docblock'><p>Upload media in a resumable fashion.
+Even if the upload fails or is interrupted, it can be resumed for a
+certain amount of time as the server maintains state temporarily.</p>
+
+<p>The delegate will be asked for an <code>upload_url()</code>, and if not provided, will be asked to store an upload URL
+that was provided by the server, using <code>store_upload_url(...)</code>. The upload will be done in chunks, the delegate
+may specify the <code>chunk_size()</code> and may cancel the operation before each chunk is uploaded, using
+<code>cancel_chunk_upload(...)</code>.</p>
+
+<ul>
+<li><em>max size</em>: 5120GB</li>
+<li><em>multipart</em>: yes</li>
+<li><em>valid mime types</em>: &#39;*/*&#39;</li>
+</ul>
+</div><h4 id='method.request' class='method'><code>fn <a href='#method.request' class='fnname'>request</a>(self, new_value: <a class='struct' href='../google_drive3/struct.File.html' title='google_drive3::File'>File</a>) -&gt; <a class='struct' href='../google_drive3/struct.FileCreateCall.html' title='google_drive3::FileCreateCall'>FileCreateCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Sets the <em>request</em> property to the given value.</p>
+
+<p>Even though the property as already been set when instantiating this call,
+we provide this method for API completeness.</p>
+</div><h4 id='method.use_content_as_indexable_text' class='method'><code>fn <a href='#method.use_content_as_indexable_text' class='fnname'>use_content_as_indexable_text</a>(self, new_value: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>) -&gt; <a class='struct' href='../google_drive3/struct.FileCreateCall.html' title='google_drive3::FileCreateCall'>FileCreateCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Whether to use the uploaded content as indexable text.</p>
+
+<p>Sets the <em>use content as indexable text</em> query property to the given value.</p>
+</div><h4 id='method.ocr_language' class='method'><code>fn <a href='#method.ocr_language' class='fnname'>ocr_language</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_drive3/struct.FileCreateCall.html' title='google_drive3::FileCreateCall'>FileCreateCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>A language hint for OCR processing during image import (ISO 639-1 code).</p>
+
+<p>Sets the <em>ocr language</em> query property to the given value.</p>
+</div><h4 id='method.keep_revision_forever' class='method'><code>fn <a href='#method.keep_revision_forever' class='fnname'>keep_revision_forever</a>(self, new_value: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>) -&gt; <a class='struct' href='../google_drive3/struct.FileCreateCall.html' title='google_drive3::FileCreateCall'>FileCreateCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Whether to set the &#39;keepForever&#39; field in the new head revision. This is only applicable to files with binary content in Drive.</p>
+
+<p>Sets the <em>keep revision forever</em> query property to the given value.</p>
+</div><h4 id='method.ignore_default_visibility' class='method'><code>fn <a href='#method.ignore_default_visibility' class='fnname'>ignore_default_visibility</a>(self, new_value: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>) -&gt; <a class='struct' href='../google_drive3/struct.FileCreateCall.html' title='google_drive3::FileCreateCall'>FileCreateCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Whether to ignore the domain&#39;s default visibility settings for the created file. Domain administrators can choose to make all uploaded files visible to the domain by default; this parameter bypasses that behavior for the request. Permissions are still inherited from parent folders.</p>
+
+<p>Sets the <em>ignore default visibility</em> query property to the given value.</p>
+</div><h4 id='method.delegate' class='method'><code>fn <a href='#method.delegate' class='fnname'>delegate</a>(self, new_value: &amp;'a mut <a class='trait' href='../google_drive3/trait.Delegate.html' title='google_drive3::Delegate'>Delegate</a>) -&gt; <a class='struct' href='../google_drive3/struct.FileCreateCall.html' title='google_drive3::FileCreateCall'>FileCreateCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>The delegate implementation is consulted whenever there is an intermediate result, or if something goes wrong
+while executing the actual API request.</p>
+
+<p>It should be used to handle progress information, and to implement a certain level of resilience.</p>
+
+<p>Sets the <em>delegate</em> property to the given value.</p>
+</div><h4 id='method.param' class='method'><code>fn <a href='#method.param' class='fnname'>param</a>&lt;T&gt;(self, name: T, value: T) -&gt; <a class='struct' href='../google_drive3/struct.FileCreateCall.html' title='google_drive3::FileCreateCall'>FileCreateCall</a>&lt;'a, C, A&gt; <span class='where'>where T: <a class='trait' href='https://doc.rust-lang.org/nightly/core/convert/trait.AsRef.html' title='core::convert::AsRef'>AsRef</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>&gt;</span></code></h4>
+<div class='docblock'><p>Set any additional parameter of the query string used in the request.
+It should be used to set parameters which are not yet available through their own
+setters.</p>
+
+<p>Please note that this method must not be used to set any of the known paramters
+which have their own setter method. If done anyway, the request will fail.</p>
+
+<h1 id='additional-parameters' class='section-header'><a href='#additional-parameters'>Additional Parameters</a></h1>
+<ul>
+<li><em>quotaUser</em> (query-string) - Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. Overrides userIp if both are provided.</li>
+<li><em>oauth_token</em> (query-string) - OAuth 2.0 token for the current user.</li>
+<li><em>key</em> (query-string) - API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token.</li>
+<li><em>prettyPrint</em> (query-boolean) - Returns response with indentations and line breaks.</li>
+<li><em>userIp</em> (query-string) - IP address of the site where the request originates. Use this if you want to enforce per-user limits.</li>
+<li><em>fields</em> (query-string) - Selector specifying which fields to include in a partial response.</li>
+<li><em>alt</em> (query-string) - Data format for the response.</li>
+</ul>
+</div><h4 id='method.add_scope' class='method'><code>fn <a href='#method.add_scope' class='fnname'>add_scope</a>&lt;T&gt;(self, scope: T) -&gt; <a class='struct' href='../google_drive3/struct.FileCreateCall.html' title='google_drive3::FileCreateCall'>FileCreateCall</a>&lt;'a, C, A&gt; <span class='where'>where T: <a class='trait' href='https://doc.rust-lang.org/nightly/core/convert/trait.AsRef.html' title='core::convert::AsRef'>AsRef</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>&gt;</span></code></h4>
+<div class='docblock'><p>Identifies the authorization scope for the method you are building.</p>
+
+<p>Use this method to actively specify which scope should be used, instead the default <code>Scope</code> variant
+<code>Scope::Full</code>.</p>
+
+<p>The <code>scope</code> will be added to a set of scopes. This is important as one can maintain access
+tokens for more than one scope.</p>
+
+<p>Usually there is more than one suitable scope to authorize an operation, some of which may
+encompass more rights than others. For example, for listing resources, a <em>read-only</em> scope will be
+sufficient, a read-write scope will do as well.</p>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_drive3/trait.CallBuilder.html' title='google_drive3::CallBuilder'>CallBuilder</a> for <a class='struct' href='../google_drive3/struct.FileCreateCall.html' title='google_drive3::FileCreateCall'>FileCreateCall</a>&lt;'a, C, A&gt;</code></h3><div class='impl-items'></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "google_drive3";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../jquery.js"></script>
+    <script src="../main.js"></script>
+    
+    <script defer src="../search-index.js"></script>
+</body>
+</html>

@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Import - calendar v0.3.0+20150326</title>
+  <title>Import - calendar v0.3.3+20160110</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -17,6 +17,12 @@
   <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
   <link rel="stylesheet" href="../css/highlight.css">
 
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Import";
+  </script>
+  
   <script src="../js/jquery-2.1.1.min.js"></script>
   <script src="../js/modernizr-2.8.3.min.js"></script>
   <script type="text/javascript" src="../js/highlight.pack.js"></script>
@@ -32,277 +38,372 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> calendar v0.3.0+20150326</a>
-        
+        <a href=".." class="icon icon-home"> calendar v0.3.3+20160110</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-      <ul class="current">
-    
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="..">Home</a>
         
-            <li class="toctree-l1 ">
-                <a class="" href="..">Home</a>
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Acl</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../acl_delete/">Delete</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../acl_get/">Get</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../acl_insert/">Insert</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../acl_list/">List</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../acl_patch/">Patch</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../acl_update/">Update</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../acl_watch/">Watch</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Calendar List</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../calendar-list_delete/">Delete</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../calendar-list_get/">Get</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../calendar-list_insert/">Insert</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../calendar-list_list/">List</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../calendar-list_patch/">Patch</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../calendar-list_update/">Update</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../calendar-list_watch/">Watch</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Calendars</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../calendars_clear/">Clear</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../calendars_delete/">Delete</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../calendars_get/">Get</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../calendars_insert/">Insert</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../calendars_patch/">Patch</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../calendars_update/">Update</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Channels</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../channels_stop/">Stop</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Colors</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../colors_get/">Get</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Events</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../events_delete/">Delete</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../events_get/">Get</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Import</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#scopes">Scopes</a></li>
                 
-            </li>
+            
+                <li class="toctree-l3"><a href="#required-scalar-argument">Required Scalar Argument</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#required-request-value">Required Request Value</a></li>
+                
+                    <li><a class="toctree-l4" href="#about-cursors">About Cursors</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#optional-output-flags">Optional Output Flags</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#optional-method-properties">Optional Method Properties</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#optional-general-properties">Optional General Properties</a></li>
+                
+            
+            </ul>
         
+    </li>
 
-    
         
-            <span>Acl</span>
             
-                <li class="toctree-l2 ">
-                    <a class="" href="../acl_delete/">Delete</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../acl_get/">Get</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../acl_insert/">Insert</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../acl_list/">List</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../acl_patch/">Patch</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../acl_update/">Update</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../acl_watch/">Watch</a>
-                    
-                </li>
-            
+    <li class="toctree-l1 ">
+        <a class="" href="../events_insert/">Insert</a>
         
+    </li>
 
-    
         
-            <span>Calendar List</span>
             
-                <li class="toctree-l2 ">
-                    <a class="" href="../calendar-list_delete/">Delete</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../calendar-list_get/">Get</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../calendar-list_insert/">Insert</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../calendar-list_list/">List</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../calendar-list_patch/">Patch</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../calendar-list_update/">Update</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../calendar-list_watch/">Watch</a>
-                    
-                </li>
-            
+    <li class="toctree-l1 ">
+        <a class="" href="../events_instances/">Instances</a>
         
+    </li>
 
-    
         
-            <span>Calendars</span>
             
-                <li class="toctree-l2 ">
-                    <a class="" href="../calendars_clear/">Clear</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../calendars_delete/">Delete</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../calendars_get/">Get</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../calendars_insert/">Insert</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../calendars_patch/">Patch</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../calendars_update/">Update</a>
-                    
-                </li>
-            
+    <li class="toctree-l1 ">
+        <a class="" href="../events_list/">List</a>
         
+    </li>
 
-    
         
-            <span>Channels</span>
             
-                <li class="toctree-l2 ">
-                    <a class="" href="../channels_stop/">Stop</a>
-                    
-                </li>
-            
+    <li class="toctree-l1 ">
+        <a class="" href="../events_move/">Move</a>
         
+    </li>
 
-    
         
-            <span>Colors</span>
             
-                <li class="toctree-l2 ">
-                    <a class="" href="../colors_get/">Get</a>
-                    
-                </li>
-            
+    <li class="toctree-l1 ">
+        <a class="" href="../events_patch/">Patch</a>
         
+    </li>
 
-    
         
-            <span>Events</span>
             
-                <li class="toctree-l2 ">
-                    <a class="" href="../events_delete/">Delete</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../events_get/">Get</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 current">
-                    <a class="current" href="./">Import</a>
-                    
-                        <ul>
-                        
-                            <li class="toctree-l3"><a href="#scopes">Scopes</a></li>
-                            
-                        
-                            <li class="toctree-l3"><a href="#required-scalar-argument">Required Scalar Argument</a></li>
-                            
-                        
-                            <li class="toctree-l3"><a href="#required-request-value">Required Request Value</a></li>
-                            
-                                <li><a class="toctree-l4" href="#about-cursors">About Cursors</a></li>
-                            
-                        
-                            <li class="toctree-l3"><a href="#optional-output-flags">Optional Output Flags</a></li>
-                            
-                        
-                            <li class="toctree-l3"><a href="#optional-general-properties">Optional General Properties</a></li>
-                            
-                        
-                        </ul>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../events_insert/">Insert</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../events_instances/">Instances</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../events_list/">List</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../events_move/">Move</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../events_patch/">Patch</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../events_quick-add/">Quick Add</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../events_update/">Update</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../events_watch/">Watch</a>
-                    
-                </li>
-            
+    <li class="toctree-l1 ">
+        <a class="" href="../events_quick-add/">Quick Add</a>
         
+    </li>
 
-    
         
-            <span>Freebusy</span>
             
-                <li class="toctree-l2 ">
-                    <a class="" href="../freebusy_query/">Query</a>
-                    
-                </li>
-            
+    <li class="toctree-l1 ">
+        <a class="" href="../events_update/">Update</a>
         
+    </li>
 
-    
         
-            <span>Settings</span>
             
-                <li class="toctree-l2 ">
-                    <a class="" href="../settings_get/">Get</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../settings_list/">List</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../settings_watch/">Watch</a>
-                    
-                </li>
-            
+    <li class="toctree-l1 ">
+        <a class="" href="../events_watch/">Watch</a>
         
+    </li>
 
-    
-</ul>
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Freebusy</span></li>
 
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../freebusy_query/">Query</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Settings</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../settings_get/">Get</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../settings_list/">List</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../settings_watch/">Watch</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+        </ul>
       </div>
       &nbsp;
     </nav>
@@ -312,7 +413,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">calendar v0.3.0+20150326</a>
+        <a href="..">calendar v0.3.3+20160110</a>
       </nav>
 
       
@@ -323,23 +424,26 @@
     <li><a href="..">Docs</a> &raquo;</li>
     
       
-        <li>Events &raquo;</li>
+        
+          <li>Events &raquo;</li>
+        
       
     
     <li>Import</li>
-      <li class="wy-breadcrumbs-aside">
+    <li class="wy-breadcrumbs-aside">
+      
         
-          
-            <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/calendar3-cli" class="icon icon-github"> Edit on GitHub</a>
-          
+          <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/calendar3-cli" class="icon icon-github"> Edit on GitHub</a>
         
-      </li>
+      
+    </li>
   </ul>
   <hr/>
 </div>
           <div role="main">
             <div class="section">
-              <p>Imports an event. This operation is used to add a private copy of an existing event to a calendar.</p>
+              
+                <p>Imports an event. This operation is used to add a private copy of an existing event to a calendar.</p>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for the <em>https://www.googleapis.com/auth/calendar</em> scope to make a valid call.</p>
 <p>If unset, the scope for this method defaults to <em>https://www.googleapis.com/auth/calendar</em>.
@@ -347,7 +451,7 @@ You can set the scope for this method like this: <code>calendar3 --scope &lt;sco
 <h1 id="required-scalar-argument">Required Scalar Argument</h1>
 <ul>
 <li><strong>&lt;calendar-id&gt;</strong> <em>(string)</em><ul>
-<li>Calendar identifier.</li>
+<li>Calendar identifier. To retrieve calendar IDs call the calendarList.list method. If you want to access the primary calendar of the currently logged in user, use the &#34;primary&#34; keyword.</li>
 </ul>
 </li>
 </ul>
@@ -427,7 +531,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
 <li><code>-r .    anyone-can-add-self=false</code><ul>
-<li>Whether anyone can invite themselves to the event. Optional. The default is False.</li>
+<li>Whether anyone can invite themselves to the event (currently works for Google+ events only). Optional. The default is False.</li>
 </ul>
 </li>
 <li><code>attendees-omitted=false</code><ul>
@@ -439,7 +543,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li><code>created=ut</code><ul>
-<li>Creation time of the event (as a RFC 3339 timestamp). Read-only.</li>
+<li>Creation time of the event (as a RFC3339 timestamp). Read-only.</li>
 </ul>
 </li>
 <li><code>creator    display-name=justo</code><ul>
@@ -451,7 +555,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li><code>id=amet</code><ul>
-<li>The creator&#39;s Profile ID, if available.</li>
+<li>The creator&#39;s Profile ID, if available. It corresponds to theid field in the People collection of the Google+ API</li>
 </ul>
 </li>
 <li>
@@ -471,7 +575,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li><code>date-time=justo</code><ul>
-<li>The time, as a combined date-time value (formatted according to RFC 3339). A time zone offset is required unless a time zone is explicitly specified in timeZone.</li>
+<li>The time, as a combined date-time value (formatted according to RFC3339). A time zone offset is required unless a time zone is explicitly specified in timeZone.</li>
 </ul>
 </li>
 <li>
@@ -513,15 +617,15 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li><code>height=23</code><ul>
-<li>The gadget&#39;s height in pixels. Optional.</li>
+<li>The gadget&#39;s height in pixels. The height must be an integer greater than 0. Optional.</li>
 </ul>
 </li>
 <li><code>icon-link=duo</code><ul>
-<li>The gadget&#39;s icon URL.</li>
+<li>The gadget&#39;s icon URL. The URL scheme must be HTTPS.</li>
 </ul>
 </li>
 <li><code>link=sed</code><ul>
-<li>The gadget&#39;s URL.</li>
+<li>The gadget&#39;s URL. The URL scheme must be HTTPS.</li>
 </ul>
 </li>
 <li><code>preferences=key=aliquyam</code><ul>
@@ -540,7 +644,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>
 <p><code>width=27</code></p>
 <ul>
-<li>The gadget&#39;s width in pixels. Optional.</li>
+<li>The gadget&#39;s width in pixels. The width must be an integer greater than 0. Optional.</li>
 </ul>
 </li>
 <li>
@@ -566,14 +670,17 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li><code>i-cal-uid=lorem</code><ul>
-<li>Event ID in the iCalendar format.</li>
+<li>Event unique identifier as defined in RFC5545. It is used to uniquely identify events accross calendaring systems and must be supplied when importing events via the import method.
+    Note that the icalUID and the id are not identical and only one of them should be supplied at event creation time. One difference in their semantics is that in recurring events, all occurrences of one event have different ids while they all share the same icalUIDs.</li>
 </ul>
 </li>
 <li><code>id=clita</code><ul>
-<li>Identifier of the event. When creating new single or recurring events, you can specify their IDs. Provided IDs must follow these rules:  <ul>
+<li>Opaque identifier of the event. When creating new single or recurring events, you can specify their IDs. Provided IDs must follow these rules:  <ul>
 <li>characters allowed in the ID are those used in base32hex encoding, i.e. lowercase letters a-v and digits 0-9, see section 3.1.2 in RFC2938 </li>
 <li>the length of the ID must be between 5 and 1024 characters </li>
-<li>the ID must be unique per calendar  Due to the globally distributed nature of the system, we cannot guarantee that ID collisions will be detected at event creation time. To minimize the risk of collisions we recommend using an established UUID algorithm such as one described in RFC4122.</li>
+<li>the ID must be unique per calendar  Due to the globally distributed nature of the system, we cannot guarantee that ID collisions will be detected at event creation time. To minimize the risk of collisions we recommend using an established UUID algorithm such as one described in RFC4122.
+If you do not specify an ID, it will be automatically generated by the server.
+Note that the icalUID and the id are not identical and only one of them should be supplied at event creation time. One difference in their semantics is that in recurring events, all occurrences of one event have different ids while they all share the same icalUIDs.</li>
 </ul>
 </li>
 </ul>
@@ -595,11 +702,11 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li><code>email=et</code><ul>
-<li>The organizer&#39;s email address, if available.</li>
+<li>The organizer&#39;s email address, if available. It must be a valid email address as per RFC5322.</li>
 </ul>
 </li>
 <li><code>id=sed</code><ul>
-<li>The organizer&#39;s Profile ID, if available.</li>
+<li>The organizer&#39;s Profile ID, if available. It corresponds to theid field in the People collection of the Google+ API</li>
 </ul>
 </li>
 <li>
@@ -615,7 +722,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li><code>date-time=elitr</code><ul>
-<li>The time, as a combined date-time value (formatted according to RFC 3339). A time zone offset is required unless a time zone is explicitly specified in timeZone.</li>
+<li>The time, as a combined date-time value (formatted according to RFC3339). A time zone offset is required unless a time zone is explicitly specified in timeZone.</li>
 </ul>
 </li>
 <li>
@@ -631,12 +738,12 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li><code>recurrence=lorem</code><ul>
-<li>List of RRULE, EXRULE, RDATE and EXDATE lines for a recurring event. This field is omitted for single events or instances of recurring events.</li>
+<li>List of RRULE, EXRULE, RDATE and EXDATE lines for a recurring event, as specified in RFC5545. Note that DTSTART and DTEND lines are not allowed in this field; event start and end times are specified in the start and end fields. This field is omitted for single events or instances of recurring events.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
 <li><code>recurring-event-id=lorem</code><ul>
-<li>For an instance of a recurring event, this is the event ID of the recurring event itself. Immutable.</li>
+<li>For an instance of a recurring event, this is the id of the recurring event to which this instance belongs. Immutable.</li>
 </ul>
 </li>
 <li>
@@ -658,7 +765,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>
 <p><code>url=amet.</code></p>
 <ul>
-<li>URL of the source pointing to a resource. URL&#39;s protocol must be HTTP or HTTPS.</li>
+<li>URL of the source pointing to a resource. The URL scheme must be HTTP or HTTPS.</li>
 </ul>
 </li>
 <li>
@@ -668,7 +775,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li><code>date-time=ut</code><ul>
-<li>The time, as a combined date-time value (formatted according to RFC 3339). A time zone offset is required unless a time zone is explicitly specified in timeZone.</li>
+<li>The time, as a combined date-time value (formatted according to RFC3339). A time zone offset is required unless a time zone is explicitly specified in timeZone.</li>
 </ul>
 </li>
 <li>
@@ -701,7 +808,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li><code>updated=sanctus</code><ul>
-<li>Last modification time of the event (as a RFC 3339 timestamp). Read-only.</li>
+<li>Last modification time of the event (as a RFC3339 timestamp). Read-only.</li>
 </ul>
 </li>
 <li><code>visibility=voluptua.</code><ul>
@@ -731,6 +838,16 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   It will be a JSON-encoded structure.
   The <em>destination</em> may be <code>-</code> to indicate standard output, or a filepath that is to contain the received bytes.
   If unset, it defaults to standard output.</li>
+</ul>
+</li>
+</ul>
+<h1 id="optional-method-properties">Optional Method Properties</h1>
+<p>You may set the following properties to further configure the call. Please note that <code>-p</code> is followed by one 
+or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> even though the listing below repeats the
+<code>-p</code> for completeness.</p>
+<ul>
+<li><strong>-p supports-attachments=boolean</strong><ul>
+<li>Whether API client performing operation supports event attachments. Optional. The default is False.</li>
 </ul>
 </li>
 </ul>
@@ -780,6 +897,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 </ul>
+              
             </div>
           </div>
           <footer>
@@ -797,9 +915,10 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   <hr/>
 
   <div role="contentinfo">
-    <p>
     <!-- Copyright etc -->
-    </p>
+    
+      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+    
   </div>
 
   Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
@@ -814,17 +933,17 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <div class="rst-versions" role="note" style="cursor: pointer">
     <span class="rst-current-version" data-toggle="rst-current-version">
-        
-            <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/calendar3-cli" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
-        
-      <span><a href="../events_get/" style="color: #fcfcfc;">&laquo; Previous</a></span>
-      <span style="margin-left: 15px"><a href="../events_insert/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+          <a class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../events_get/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../events_insert/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
     </span>
 </div>
 
-<!--
-MkDocs version  : 0.12.2
-Docs Build Date : 2015-06-21 14:30:40.009682
--->
 </body>
 </html>

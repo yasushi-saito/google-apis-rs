@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-oauth2_v2-cli/</loc>
+     <lastmod>2016-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-oauth2_v2-cli/methods_get-cert-for-open-id-connect/</loc>
+     <lastmod>2016-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-oauth2_v2-cli/methods_tokeninfo/</loc>
+     <lastmod>2016-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-oauth2_v2-cli/userinfo_get/</loc>
+     <lastmod>2016-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-oauth2_v2-cli/userinfo_v2-me-get/</loc>
+     <lastmod>2016-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+</urlset>

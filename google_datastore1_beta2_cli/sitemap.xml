@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-datastore1_beta2-cli/</loc>
+     <lastmod>2016-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-datastore1_beta2-cli/datasets_allocate-ids/</loc>
+     <lastmod>2016-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-datastore1_beta2-cli/datasets_begin-transaction/</loc>
+     <lastmod>2016-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-datastore1_beta2-cli/datasets_commit/</loc>
+     <lastmod>2016-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-datastore1_beta2-cli/datasets_lookup/</loc>
+     <lastmod>2016-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-datastore1_beta2-cli/datasets_rollback/</loc>
+     <lastmod>2016-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-datastore1_beta2-cli/datasets_run-query/</loc>
+     <lastmod>2016-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+</urlset>

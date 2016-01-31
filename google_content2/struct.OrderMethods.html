@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `OrderMethods` struct in crate `google_content2`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, OrderMethods">
+
+    <title>google_content2::OrderMethods - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../main.css">
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='index.html'>google_content2</a></p><script>window.sidebarCurrent = {name: 'OrderMethods', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content struct">
+<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_content2</a>::<wbr><a class='struct' href=''>OrderMethods</a></span><span class='out-of-band'><span id='render-detail'>
+            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                [<span class='inner'>&#x2212;</span>]
+            </a>
+        </span><a id='src-25431' class='srclink' href='../src/google_content2///Users/byron/dev/rs/google-apis-rs/target/debug/build/google-content2-e88f5f3910857369/out/lib.rs.html#45440-45442' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct OrderMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
+    // some fields omitted
+}</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>order</em> resources.
+It is not used directly, but through the <code>ShoppingContent</code> hub.</p>
+
+<h1 id='example' class='section-header'><a href='#example'>Example</a></h1>
+<p>Instantiate a resource builder</p>
+<pre class='rust rust-example-rendered'>
+<span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>hyper</span>;
+<span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>yup_oauth2</span> <span class='kw'>as</span> <span class='ident'>oauth2</span>;
+<span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>google_content2</span> <span class='kw'>as</span> <span class='ident'>content2</span>;
+ 
+<span class='kw'>use</span> <span class='ident'>std</span>::<span class='ident'>default</span>::<span class='ident'>Default</span>;
+<span class='kw'>use</span> <span class='ident'>oauth2</span>::{<span class='ident'>Authenticator</span>, <span class='ident'>DefaultAuthenticatorDelegate</span>, <span class='ident'>ApplicationSecret</span>, <span class='ident'>MemoryStorage</span>};
+<span class='kw'>use</span> <span class='ident'>content2</span>::<span class='ident'>ShoppingContent</span>;
+ 
+<span class='kw'>let</span> <span class='ident'>secret</span>: <span class='ident'>ApplicationSecret</span> <span class='op'>=</span> <span class='ident'>Default</span>::<span class='ident'>default</span>();
+<span class='kw'>let</span> <span class='ident'>auth</span> <span class='op'>=</span> <span class='ident'>Authenticator</span>::<span class='ident'>new</span>(<span class='kw-2'>&amp;</span><span class='ident'>secret</span>, <span class='ident'>DefaultAuthenticatorDelegate</span>,
+                              <span class='ident'>hyper</span>::<span class='ident'>Client</span>::<span class='ident'>new</span>(),
+                              <span class='op'>&lt;</span><span class='ident'>MemoryStorage</span> <span class='kw'>as</span> <span class='ident'>Default</span><span class='op'>&gt;</span>::<span class='ident'>default</span>(), <span class='prelude-val'>None</span>);
+<span class='kw'>let</span> <span class='kw-2'>mut</span> <span class='ident'>hub</span> <span class='op'>=</span> <span class='ident'>ShoppingContent</span>::<span class='ident'>new</span>(<span class='ident'>hyper</span>::<span class='ident'>Client</span>::<span class='ident'>new</span>(), <span class='ident'>auth</span>);
+<span class='comment'>// Usually you wouldn&#39;t bind this to a variable, but keep calling *CallBuilders*</span>
+<span class='comment'>// like `acknowledge(...)`, `advancetestorder(...)`, `cancel(...)`, `cancellineitem(...)`, `createtestorder(...)`, `custombatch(...)`, `get(...)`, `getbymerchantorderid(...)`, `gettestordertemplate(...)`, `list(...)`, `refund(...)`, `returnlineitem(...)`, `shiplineitems(...)`, `updatemerchantorderid(...)` and `updateshipment(...)`</span>
+<span class='comment'>// to build up your call.</span>
+<span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>orders</span>();</pre>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_content2/struct.OrderMethods.html' title='google_content2::OrderMethods'>OrderMethods</a>&lt;'a, C, A&gt;</code></h3><div class='impl-items'><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self, merchant_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_content2/struct.OrderListCall.html' title='google_content2::OrderListCall'>OrderListCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Lists the orders in your Merchant Center account.</p>
+
+<h1 id='arguments' class='section-header'><a href='#arguments'>Arguments</a></h1>
+<ul>
+<li><code>merchantId</code> - The ID of the managing account.</li>
+</ul>
+</div><h4 id='method.gettestordertemplate' class='method'><code>fn <a href='#method.gettestordertemplate' class='fnname'>gettestordertemplate</a>(&amp;self, merchant_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, template_name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_content2/struct.OrderGettestordertemplateCall.html' title='google_content2::OrderGettestordertemplateCall'>OrderGettestordertemplateCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Sandbox only. Retrieves an order template that can be used to quickly create a new order in sandbox.</p>
+
+<h1 id='arguments-1' class='section-header'><a href='#arguments-1'>Arguments</a></h1>
+<ul>
+<li><code>merchantId</code> - The ID of the managing account.</li>
+<li><code>templateName</code> - The name of the template to retrieve.</li>
+</ul>
+</div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, merchant_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, order_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_content2/struct.OrderGetCall.html' title='google_content2::OrderGetCall'>OrderGetCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Retrieves an order from your Merchant Center account.</p>
+
+<h1 id='arguments-2' class='section-header'><a href='#arguments-2'>Arguments</a></h1>
+<ul>
+<li><code>merchantId</code> - The ID of the managing account.</li>
+<li><code>orderId</code> - The ID of the order.</li>
+</ul>
+</div><h4 id='method.refund' class='method'><code>fn <a href='#method.refund' class='fnname'>refund</a>(&amp;self, request: <a class='struct' href='../google_content2/struct.OrdersRefundRequest.html' title='google_content2::OrdersRefundRequest'>OrdersRefundRequest</a>, merchant_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, order_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_content2/struct.OrderRefundCall.html' title='google_content2::OrderRefundCall'>OrderRefundCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Refund a portion of the order, up to the full amount paid.</p>
+
+<h1 id='arguments-3' class='section-header'><a href='#arguments-3'>Arguments</a></h1>
+<ul>
+<li><code>request</code> - No description provided.</li>
+<li><code>merchantId</code> - The ID of the managing account.</li>
+<li><code>orderId</code> - The ID of the order to refund.</li>
+</ul>
+</div><h4 id='method.acknowledge' class='method'><code>fn <a href='#method.acknowledge' class='fnname'>acknowledge</a>(&amp;self, request: <a class='struct' href='../google_content2/struct.OrdersAcknowledgeRequest.html' title='google_content2::OrdersAcknowledgeRequest'>OrdersAcknowledgeRequest</a>, merchant_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, order_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_content2/struct.OrderAcknowledgeCall.html' title='google_content2::OrderAcknowledgeCall'>OrderAcknowledgeCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Marks an order as acknowledged.</p>
+
+<h1 id='arguments-4' class='section-header'><a href='#arguments-4'>Arguments</a></h1>
+<ul>
+<li><code>request</code> - No description provided.</li>
+<li><code>merchantId</code> - The ID of the managing account.</li>
+<li><code>orderId</code> - The ID of the order.</li>
+</ul>
+</div><h4 id='method.updatemerchantorderid' class='method'><code>fn <a href='#method.updatemerchantorderid' class='fnname'>updatemerchantorderid</a>(&amp;self, request: <a class='struct' href='../google_content2/struct.OrdersUpdateMerchantOrderIdRequest.html' title='google_content2::OrdersUpdateMerchantOrderIdRequest'>OrdersUpdateMerchantOrderIdRequest</a>, merchant_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, order_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_content2/struct.OrderUpdatemerchantorderidCall.html' title='google_content2::OrderUpdatemerchantorderidCall'>OrderUpdatemerchantorderidCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Updates the merchant order ID for a given order.</p>
+
+<h1 id='arguments-5' class='section-header'><a href='#arguments-5'>Arguments</a></h1>
+<ul>
+<li><code>request</code> - No description provided.</li>
+<li><code>merchantId</code> - The ID of the managing account.</li>
+<li><code>orderId</code> - The ID of the order.</li>
+</ul>
+</div><h4 id='method.advancetestorder' class='method'><code>fn <a href='#method.advancetestorder' class='fnname'>advancetestorder</a>(&amp;self, merchant_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, order_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_content2/struct.OrderAdvancetestorderCall.html' title='google_content2::OrderAdvancetestorderCall'>OrderAdvancetestorderCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Sandbox only. Moves a test order from state &quot;inProgress&quot; to state &quot;pendingShipment&quot;.</p>
+
+<h1 id='arguments-6' class='section-header'><a href='#arguments-6'>Arguments</a></h1>
+<ul>
+<li><code>merchantId</code> - The ID of the managing account.</li>
+<li><code>orderId</code> - The ID of the test order to modify.</li>
+</ul>
+</div><h4 id='method.createtestorder' class='method'><code>fn <a href='#method.createtestorder' class='fnname'>createtestorder</a>(&amp;self, request: <a class='struct' href='../google_content2/struct.OrdersCreateTestOrderRequest.html' title='google_content2::OrdersCreateTestOrderRequest'>OrdersCreateTestOrderRequest</a>, merchant_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_content2/struct.OrderCreatetestorderCall.html' title='google_content2::OrderCreatetestorderCall'>OrderCreatetestorderCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Sandbox only. Creates a test order.</p>
+
+<h1 id='arguments-7' class='section-header'><a href='#arguments-7'>Arguments</a></h1>
+<ul>
+<li><code>request</code> - No description provided.</li>
+<li><code>merchantId</code> - The ID of the managing account.</li>
+</ul>
+</div><h4 id='method.returnlineitem' class='method'><code>fn <a href='#method.returnlineitem' class='fnname'>returnlineitem</a>(&amp;self, request: <a class='struct' href='../google_content2/struct.OrdersReturnLineItemRequest.html' title='google_content2::OrdersReturnLineItemRequest'>OrdersReturnLineItemRequest</a>, merchant_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, order_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_content2/struct.OrderReturnlineitemCall.html' title='google_content2::OrderReturnlineitemCall'>OrderReturnlineitemCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Returns a line item.</p>
+
+<h1 id='arguments-8' class='section-header'><a href='#arguments-8'>Arguments</a></h1>
+<ul>
+<li><code>request</code> - No description provided.</li>
+<li><code>merchantId</code> - The ID of the managing account.</li>
+<li><code>orderId</code> - The ID of the order.</li>
+</ul>
+</div><h4 id='method.getbymerchantorderid' class='method'><code>fn <a href='#method.getbymerchantorderid' class='fnname'>getbymerchantorderid</a>(&amp;self, merchant_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, merchant_order_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_content2/struct.OrderGetbymerchantorderidCall.html' title='google_content2::OrderGetbymerchantorderidCall'>OrderGetbymerchantorderidCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Retrieves an order using merchant order id.</p>
+
+<h1 id='arguments-9' class='section-header'><a href='#arguments-9'>Arguments</a></h1>
+<ul>
+<li><code>merchantId</code> - The ID of the managing account.</li>
+<li><code>merchantOrderId</code> - The merchant order id to be looked for.</li>
+</ul>
+</div><h4 id='method.custombatch' class='method'><code>fn <a href='#method.custombatch' class='fnname'>custombatch</a>(&amp;self, request: <a class='struct' href='../google_content2/struct.OrdersCustomBatchRequest.html' title='google_content2::OrdersCustomBatchRequest'>OrdersCustomBatchRequest</a>) -&gt; <a class='struct' href='../google_content2/struct.OrderCustombatchCall.html' title='google_content2::OrderCustombatchCall'>OrderCustombatchCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Retrieves or modifies multiple orders in a single request.</p>
+
+<h1 id='arguments-10' class='section-header'><a href='#arguments-10'>Arguments</a></h1>
+<ul>
+<li><code>request</code> - No description provided.</li>
+</ul>
+</div><h4 id='method.shiplineitems' class='method'><code>fn <a href='#method.shiplineitems' class='fnname'>shiplineitems</a>(&amp;self, request: <a class='struct' href='../google_content2/struct.OrdersShipLineItemsRequest.html' title='google_content2::OrdersShipLineItemsRequest'>OrdersShipLineItemsRequest</a>, merchant_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, order_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_content2/struct.OrderShiplineitemCall.html' title='google_content2::OrderShiplineitemCall'>OrderShiplineitemCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Marks line item(s) as shipped.</p>
+
+<h1 id='arguments-11' class='section-header'><a href='#arguments-11'>Arguments</a></h1>
+<ul>
+<li><code>request</code> - No description provided.</li>
+<li><code>merchantId</code> - The ID of the managing account.</li>
+<li><code>orderId</code> - The ID of the order.</li>
+</ul>
+</div><h4 id='method.updateshipment' class='method'><code>fn <a href='#method.updateshipment' class='fnname'>updateshipment</a>(&amp;self, request: <a class='struct' href='../google_content2/struct.OrdersUpdateShipmentRequest.html' title='google_content2::OrdersUpdateShipmentRequest'>OrdersUpdateShipmentRequest</a>, merchant_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, order_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_content2/struct.OrderUpdateshipmentCall.html' title='google_content2::OrderUpdateshipmentCall'>OrderUpdateshipmentCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Updates a shipment&#39;s status, carrier, and/or tracking ID.</p>
+
+<h1 id='arguments-12' class='section-header'><a href='#arguments-12'>Arguments</a></h1>
+<ul>
+<li><code>request</code> - No description provided.</li>
+<li><code>merchantId</code> - The ID of the managing account.</li>
+<li><code>orderId</code> - The ID of the order.</li>
+</ul>
+</div><h4 id='method.cancellineitem' class='method'><code>fn <a href='#method.cancellineitem' class='fnname'>cancellineitem</a>(&amp;self, request: <a class='struct' href='../google_content2/struct.OrdersCancelLineItemRequest.html' title='google_content2::OrdersCancelLineItemRequest'>OrdersCancelLineItemRequest</a>, merchant_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, order_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_content2/struct.OrderCancellineitemCall.html' title='google_content2::OrderCancellineitemCall'>OrderCancellineitemCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Cancels a line item.</p>
+
+<h1 id='arguments-13' class='section-header'><a href='#arguments-13'>Arguments</a></h1>
+<ul>
+<li><code>request</code> - No description provided.</li>
+<li><code>merchantId</code> - The ID of the managing account.</li>
+<li><code>orderId</code> - The ID of the order.</li>
+</ul>
+</div><h4 id='method.cancel' class='method'><code>fn <a href='#method.cancel' class='fnname'>cancel</a>(&amp;self, request: <a class='struct' href='../google_content2/struct.OrdersCancelRequest.html' title='google_content2::OrdersCancelRequest'>OrdersCancelRequest</a>, merchant_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, order_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_content2/struct.OrderCancelCall.html' title='google_content2::OrderCancelCall'>OrderCancelCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Cancels all line items in an order.</p>
+
+<h1 id='arguments-14' class='section-header'><a href='#arguments-14'>Arguments</a></h1>
+<ul>
+<li><code>request</code> - No description provided.</li>
+<li><code>merchantId</code> - The ID of the managing account.</li>
+<li><code>orderId</code> - The ID of the order to cancel.</li>
+</ul>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_content2/trait.MethodsBuilder.html' title='google_content2::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_content2/struct.OrderMethods.html' title='google_content2::OrderMethods'>OrderMethods</a>&lt;'a, C, A&gt;</code></h3><div class='impl-items'></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "google_content2";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../jquery.js"></script>
+    <script src="../main.js"></script>
+    
+    <script defer src="../search-index.js"></script>
+</body>
+</html>

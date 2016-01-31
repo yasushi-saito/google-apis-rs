@@ -9,6 +9,7 @@
 
     <title>google_fusiontables2::TableReplaceRowCall - Rust</title>
 
+    <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
 
     
@@ -24,26 +25,28 @@
 
     
 
-    <section class="sidebar">
+    <nav class="sidebar">
         
         <p class='location'><a href='index.html'>google_fusiontables2</a></p><script>window.sidebarCurrent = {name: 'TableReplaceRowCall', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
-    </section>
+    </nav>
 
     <nav class="sub">
         <form class="search-form js-only">
             <div class="search-container">
                 <input class="search-input" name="search"
                        autocomplete="off"
-                       placeholder="Click or press 'S' to search, '?' for more options..."
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
                        type="search">
             </div>
         </form>
     </nav>
 
     <section id='main' class="content struct">
-<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_fusiontables2</a>::<wbr><a class='struct' href=''>TableReplaceRowCall</a><wbr></span><span class='out-of-band'><span id='render-detail'>
-            <a id="collapse-all" href="#">[-]</a>&nbsp;<a id="expand-all" href="#">[+]</a>
-        </span><a id='src-46216' href='../src/google_fusiontables2///home/byron/dev/rust/google-apis-rs/target/debug/build/google-fusiontables2-e8cd8c8732328efd/out/lib.rs.html#15447-15458'>[src]</a></span></h1>
+<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_fusiontables2</a>::<wbr><a class='struct' href=''>TableReplaceRowCall</a></span><span class='out-of-band'><span id='render-detail'>
+            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                [<span class='inner'>&#x2212;</span>]
+            </a>
+        </span><a id='src-7033' class='srclink' href='../src/google_fusiontables2///Users/byron/dev/rs/google-apis-rs/target/debug/build/google-fusiontables2-3e82ba101e5eb968/out/lib.rs.html#14788-14799' title='goto source code'>[src]</a></span></h1>
 <pre class='rust struct'>pub struct TableReplaceRowCall&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>Replaces rows of an existing table. Current rows remain visible until all replacement rows are ready.</p>
@@ -51,10 +54,9 @@
 <p>A builder for the <em>replaceRows</em> method supported by a <em>table</em> resource.
 It is not used directly, but through a <code>TableMethods</code> instance.</p>
 
-<h1 id="example" class='section-header'><a
-                           href="#example">Example</a></h1>
+<h1 id='example' class='section-header'><a href='#example'>Example</a></h1>
 <p>Instantiate a resource method builder</p>
-<pre id='rust-example-rendered' class='rust '>
+<pre class='rust rust-example-rendered'>
 <span class='kw'>use</span> <span class='ident'>std</span>::<span class='ident'>fs</span>;
  
 <span class='comment'>// You can configure optional parameters by calling the respective setters at will, and</span>
@@ -66,9 +68,8 @@ It is not used directly, but through a <code>TableMethods</code> instance.</p>
              .<span class='ident'>end_line</span>(<span class='op'>-</span><span class='number'>3</span>)
              .<span class='ident'>encoding</span>(<span class='string'>&quot;dolor&quot;</span>)
              .<span class='ident'>delimiter</span>(<span class='string'>&quot;dolor&quot;</span>)
-             .<span class='ident'>upload_resumable</span>(<span class='ident'>fs</span>::<span class='ident'>File</span>::<span class='ident'>open</span>(<span class='string'>&quot;file.ext&quot;</span>).<span class='ident'>unwrap</span>(), <span class='string'>&quot;application/octet-stream&quot;</span>.<span class='ident'>parse</span>().<span class='ident'>unwrap</span>());
-</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_fusiontables2/struct.TableReplaceRowCall.html' title='google_fusiontables2::TableReplaceRowCall'>TableReplaceRowCall</a>&lt;'a, C, A&gt; <span class='where'>where C: <a class='trait' href='http://doc.rust-lang.org/nightly/collections/borrow/trait.BorrowMut.html' title='collections::borrow::BorrowMut'>BorrowMut</a>&lt;<a class='struct' href='../hyper/client/struct.Client.html' title='hyper::client::Client'>Client</a>&gt;, A: <a class='trait' href='../yup_oauth2/helper/trait.GetToken.html' title='yup_oauth2::helper::GetToken'>GetToken</a></span></code></h3><div class='impl-items'><h4 id='method.upload' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.upload' class='fnname'>upload</a>&lt;RS&gt;(self, stream: RS, mime_type: <a class='struct' href='../mime/struct.Mime.html' title='mime::Mime'>Mime</a>) -&gt; <a class='type' href='../google_fusiontables2/type.Result.html' title='google_fusiontables2::Result'>Result</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.tuple.html'>(<a class='struct' href='../hyper/client/response/struct.Response.html' title='hyper::client::response::Response'>Response</a>, <a class='struct' href='../google_fusiontables2/struct.Task.html' title='google_fusiontables2::Task'>Task</a>)</a>&gt; <span class='where'>where RS: <a class='trait' href='../google_fusiontables2/trait.ReadSeek.html' title='google_fusiontables2::ReadSeek'>ReadSeek</a></span></code></h4>
+             .<span class='ident'>upload_resumable</span>(<span class='ident'>fs</span>::<span class='ident'>File</span>::<span class='ident'>open</span>(<span class='string'>&quot;file.ext&quot;</span>).<span class='ident'>unwrap</span>(), <span class='string'>&quot;application/octet-stream&quot;</span>.<span class='ident'>parse</span>().<span class='ident'>unwrap</span>());</pre>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_fusiontables2/struct.TableReplaceRowCall.html' title='google_fusiontables2::TableReplaceRowCall'>TableReplaceRowCall</a>&lt;'a, C, A&gt; <span class='where'>where C: <a class='trait' href='https://doc.rust-lang.org/nightly/core/borrow/trait.BorrowMut.html' title='core::borrow::BorrowMut'>BorrowMut</a>&lt;<a class='struct' href='../hyper/client/struct.Client.html' title='hyper::client::Client'>Client</a>&gt;, A: <a class='trait' href='../yup_oauth2/helper/trait.GetToken.html' title='yup_oauth2::helper::GetToken'>GetToken</a></span></code></h3><div class='impl-items'><h4 id='method.upload' class='method'><code>fn <a href='#method.upload' class='fnname'>upload</a>&lt;RS&gt;(self, stream: RS, mime_type: <a class='struct' href='../mime/struct.Mime.html' title='mime::Mime'>Mime</a>) -&gt; <a class='type' href='../google_fusiontables2/type.Result.html' title='google_fusiontables2::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>(<a class='struct' href='../hyper/client/response/struct.Response.html' title='hyper::client::response::Response'>Response</a>, <a class='struct' href='../google_fusiontables2/struct.Task.html' title='google_fusiontables2::Task'>Task</a>)</a>&gt; <span class='where'>where RS: <a class='trait' href='../google_fusiontables2/trait.ReadSeek.html' title='google_fusiontables2::ReadSeek'>ReadSeek</a></span></code></h4>
 <div class='docblock'><p>Upload media all at once.
 If the upload fails for whichever reason, all progress is lost.</p>
 
@@ -77,12 +78,12 @@ If the upload fails for whichever reason, all progress is lost.</p>
 <li><em>multipart</em>: yes</li>
 <li><em>valid mime types</em>: &#39;application/octet-stream&#39;</li>
 </ul>
-</div><h4 id='method.upload_resumable' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.upload_resumable' class='fnname'>upload_resumable</a>&lt;RS&gt;(self, resumeable_stream: RS, mime_type: <a class='struct' href='../mime/struct.Mime.html' title='mime::Mime'>Mime</a>) -&gt; <a class='type' href='../google_fusiontables2/type.Result.html' title='google_fusiontables2::Result'>Result</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.tuple.html'>(<a class='struct' href='../hyper/client/response/struct.Response.html' title='hyper::client::response::Response'>Response</a>, <a class='struct' href='../google_fusiontables2/struct.Task.html' title='google_fusiontables2::Task'>Task</a>)</a>&gt; <span class='where'>where RS: <a class='trait' href='../google_fusiontables2/trait.ReadSeek.html' title='google_fusiontables2::ReadSeek'>ReadSeek</a></span></code></h4>
+</div><h4 id='method.upload_resumable' class='method'><code>fn <a href='#method.upload_resumable' class='fnname'>upload_resumable</a>&lt;RS&gt;(self, resumeable_stream: RS, mime_type: <a class='struct' href='../mime/struct.Mime.html' title='mime::Mime'>Mime</a>) -&gt; <a class='type' href='../google_fusiontables2/type.Result.html' title='google_fusiontables2::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>(<a class='struct' href='../hyper/client/response/struct.Response.html' title='hyper::client::response::Response'>Response</a>, <a class='struct' href='../google_fusiontables2/struct.Task.html' title='google_fusiontables2::Task'>Task</a>)</a>&gt; <span class='where'>where RS: <a class='trait' href='../google_fusiontables2/trait.ReadSeek.html' title='google_fusiontables2::ReadSeek'>ReadSeek</a></span></code></h4>
 <div class='docblock'><p>Upload media in a resumable fashion.
-Even if the upload fails or is interrupted, it can be resumed for a 
+Even if the upload fails or is interrupted, it can be resumed for a
 certain amount of time as the server maintains state temporarily.</p>
 
-<p>The delegate will be asked for an <code>upload_url()</code>, and if not provided, will be asked to store an upload URL 
+<p>The delegate will be asked for an <code>upload_url()</code>, and if not provided, will be asked to store an upload URL
 that was provided by the server, using <code>store_upload_url(...)</code>. The upload will be done in chunks, the delegate
 may specify the <code>chunk_size()</code> and may cancel the operation before each chunk is uploaded, using
 <code>cancel_chunk_upload(...)</code>.</p>
@@ -92,50 +93,49 @@ may specify the <code>chunk_size()</code> and may cancel the operation before ea
 <li><em>multipart</em>: yes</li>
 <li><em>valid mime types</em>: &#39;application/octet-stream&#39;</li>
 </ul>
-</div><h4 id='method.table_id' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.table_id' class='fnname'>table_id</a>(self, new_value: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_fusiontables2/struct.TableReplaceRowCall.html' title='google_fusiontables2::TableReplaceRowCall'>TableReplaceRowCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.table_id' class='method'><code>fn <a href='#method.table_id' class='fnname'>table_id</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_fusiontables2/struct.TableReplaceRowCall.html' title='google_fusiontables2::TableReplaceRowCall'>TableReplaceRowCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>Table whose rows will be replaced.</p>
 
 <p>Sets the <em>table id</em> path property to the given value.</p>
 
-<p>Even though the property as already been set when instantiating this call, 
+<p>Even though the property as already been set when instantiating this call,
 we provide this method for API completeness.</p>
-</div><h4 id='method.start_line' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.start_line' class='fnname'>start_line</a>(self, new_value: <a href='http://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>) -&gt; <a class='struct' href='../google_fusiontables2/struct.TableReplaceRowCall.html' title='google_fusiontables2::TableReplaceRowCall'>TableReplaceRowCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.start_line' class='method'><code>fn <a href='#method.start_line' class='fnname'>start_line</a>(self, new_value: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>) -&gt; <a class='struct' href='../google_fusiontables2/struct.TableReplaceRowCall.html' title='google_fusiontables2::TableReplaceRowCall'>TableReplaceRowCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>The index of the first line from which to start importing, inclusive. Default is 0.</p>
 
 <p>Sets the <em>start line</em> query property to the given value.</p>
-</div><h4 id='method.is_strict' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.is_strict' class='fnname'>is_strict</a>(self, new_value: <a href='http://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>) -&gt; <a class='struct' href='../google_fusiontables2/struct.TableReplaceRowCall.html' title='google_fusiontables2::TableReplaceRowCall'>TableReplaceRowCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.is_strict' class='method'><code>fn <a href='#method.is_strict' class='fnname'>is_strict</a>(self, new_value: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>) -&gt; <a class='struct' href='../google_fusiontables2/struct.TableReplaceRowCall.html' title='google_fusiontables2::TableReplaceRowCall'>TableReplaceRowCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>Whether the imported CSV must have the same number of column values for each row. If true, throws an exception if the CSV does not have the same number of columns. If false, rows with fewer column values will be padded with empty values. Default is true.</p>
 
 <p>Sets the <em>is strict</em> query property to the given value.</p>
-</div><h4 id='method.end_line' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.end_line' class='fnname'>end_line</a>(self, new_value: <a href='http://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>) -&gt; <a class='struct' href='../google_fusiontables2/struct.TableReplaceRowCall.html' title='google_fusiontables2::TableReplaceRowCall'>TableReplaceRowCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.end_line' class='method'><code>fn <a href='#method.end_line' class='fnname'>end_line</a>(self, new_value: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>) -&gt; <a class='struct' href='../google_fusiontables2/struct.TableReplaceRowCall.html' title='google_fusiontables2::TableReplaceRowCall'>TableReplaceRowCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>The index of the line up to which data will be imported. Default is to import the entire file. If endLine is negative, it is an offset from the end of the file; the imported content will exclude the last endLine lines.</p>
 
 <p>Sets the <em>end line</em> query property to the given value.</p>
-</div><h4 id='method.encoding' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.encoding' class='fnname'>encoding</a>(self, new_value: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_fusiontables2/struct.TableReplaceRowCall.html' title='google_fusiontables2::TableReplaceRowCall'>TableReplaceRowCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.encoding' class='method'><code>fn <a href='#method.encoding' class='fnname'>encoding</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_fusiontables2/struct.TableReplaceRowCall.html' title='google_fusiontables2::TableReplaceRowCall'>TableReplaceRowCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>The encoding of the content. Default is UTF-8. Use &#39;auto-detect&#39; if you are unsure of the encoding.</p>
 
 <p>Sets the <em>encoding</em> query property to the given value.</p>
-</div><h4 id='method.delimiter' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.delimiter' class='fnname'>delimiter</a>(self, new_value: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_fusiontables2/struct.TableReplaceRowCall.html' title='google_fusiontables2::TableReplaceRowCall'>TableReplaceRowCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.delimiter' class='method'><code>fn <a href='#method.delimiter' class='fnname'>delimiter</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_fusiontables2/struct.TableReplaceRowCall.html' title='google_fusiontables2::TableReplaceRowCall'>TableReplaceRowCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>The delimiter used to separate cell values. This can only consist of a single character. Default is ,.</p>
 
 <p>Sets the <em>delimiter</em> query property to the given value.</p>
-</div><h4 id='method.delegate' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.delegate' class='fnname'>delegate</a>(self, new_value: &amp;'a mut <a class='trait' href='../google_fusiontables2/trait.Delegate.html' title='google_fusiontables2::Delegate'>Delegate</a>) -&gt; <a class='struct' href='../google_fusiontables2/struct.TableReplaceRowCall.html' title='google_fusiontables2::TableReplaceRowCall'>TableReplaceRowCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.delegate' class='method'><code>fn <a href='#method.delegate' class='fnname'>delegate</a>(self, new_value: &amp;'a mut <a class='trait' href='../google_fusiontables2/trait.Delegate.html' title='google_fusiontables2::Delegate'>Delegate</a>) -&gt; <a class='struct' href='../google_fusiontables2/struct.TableReplaceRowCall.html' title='google_fusiontables2::TableReplaceRowCall'>TableReplaceRowCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>The delegate implementation is consulted whenever there is an intermediate result, or if something goes wrong
 while executing the actual API request.</p>
 
 <p>It should be used to handle progress information, and to implement a certain level of resilience.</p>
 
 <p>Sets the <em>delegate</em> property to the given value.</p>
-</div><h4 id='method.param' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.param' class='fnname'>param</a>&lt;T&gt;(self, name: T, value: T) -&gt; <a class='struct' href='../google_fusiontables2/struct.TableReplaceRowCall.html' title='google_fusiontables2::TableReplaceRowCall'>TableReplaceRowCall</a>&lt;'a, C, A&gt; <span class='where'>where T: <a class='trait' href='http://doc.rust-lang.org/nightly/core/convert/trait.AsRef.html' title='core::convert::AsRef'>AsRef</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>&gt;</span></code></h4>
+</div><h4 id='method.param' class='method'><code>fn <a href='#method.param' class='fnname'>param</a>&lt;T&gt;(self, name: T, value: T) -&gt; <a class='struct' href='../google_fusiontables2/struct.TableReplaceRowCall.html' title='google_fusiontables2::TableReplaceRowCall'>TableReplaceRowCall</a>&lt;'a, C, A&gt; <span class='where'>where T: <a class='trait' href='https://doc.rust-lang.org/nightly/core/convert/trait.AsRef.html' title='core::convert::AsRef'>AsRef</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>&gt;</span></code></h4>
 <div class='docblock'><p>Set any additional parameter of the query string used in the request.
-It should be used to set parameters which are not yet available through their own 
+It should be used to set parameters which are not yet available through their own
 setters.</p>
 
 <p>Please note that this method must not be used to set any of the known paramters
 which have their own setter method. If done anyway, the request will fail.</p>
 
-<h1 id="additional-parameters" class='section-header'><a
-                           href="#additional-parameters">Additional Parameters</a></h1>
+<h1 id='additional-parameters' class='section-header'><a href='#additional-parameters'>Additional Parameters</a></h1>
 <ul>
 <li><em>quotaUser</em> (query-string) - Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. Overrides userIp if both are provided.</li>
 <li><em>oauth_token</em> (query-string) - OAuth 2.0 token for the current user.</li>
@@ -145,7 +145,7 @@ which have their own setter method. If done anyway, the request will fail.</p>
 <li><em>fields</em> (query-string) - Selector specifying which fields to include in a partial response.</li>
 <li><em>alt</em> (query-string) - Data format for the response.</li>
 </ul>
-</div><h4 id='method.add_scope' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.add_scope' class='fnname'>add_scope</a>&lt;T&gt;(self, scope: T) -&gt; <a class='struct' href='../google_fusiontables2/struct.TableReplaceRowCall.html' title='google_fusiontables2::TableReplaceRowCall'>TableReplaceRowCall</a>&lt;'a, C, A&gt; <span class='where'>where T: <a class='trait' href='http://doc.rust-lang.org/nightly/core/convert/trait.AsRef.html' title='core::convert::AsRef'>AsRef</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>&gt;</span></code></h4>
+</div><h4 id='method.add_scope' class='method'><code>fn <a href='#method.add_scope' class='fnname'>add_scope</a>&lt;T&gt;(self, scope: T) -&gt; <a class='struct' href='../google_fusiontables2/struct.TableReplaceRowCall.html' title='google_fusiontables2::TableReplaceRowCall'>TableReplaceRowCall</a>&lt;'a, C, A&gt; <span class='where'>where T: <a class='trait' href='https://doc.rust-lang.org/nightly/core/convert/trait.AsRef.html' title='core::convert::AsRef'>AsRef</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>&gt;</span></code></h4>
 <div class='docblock'><p>Identifies the authorization scope for the method you are building.</p>
 
 <p>Use this method to actively specify which scope should be used, instead the default <code>Scope</code> variant
@@ -157,41 +157,54 @@ tokens for more than one scope.</p>
 <p>Usually there is more than one suitable scope to authorize an operation, some of which may
 encompass more rights than others. For example, for listing resources, a <em>read-only</em> scope will be
 sufficient, a read-write scope will do as well.</p>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_fusiontables2/trait.CallBuilder.html' title='google_fusiontables2::CallBuilder'>CallBuilder</a> for <a class='struct' href='../google_fusiontables2/struct.TableReplaceRowCall.html' title='google_fusiontables2::TableReplaceRowCall'>TableReplaceRowCall</a>&lt;'a, C, A&gt;</code></h3><div class='impl-items'></div></section>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_fusiontables2/trait.CallBuilder.html' title='google_fusiontables2::CallBuilder'>CallBuilder</a> for <a class='struct' href='../google_fusiontables2/struct.TableReplaceRowCall.html' title='google_fusiontables2::TableReplaceRowCall'>TableReplaceRowCall</a>&lt;'a, C, A&gt;</code></h3><div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
 
-    <div id="help" class="hidden">
-        <div class="shortcuts">
-            <h1>Keyboard shortcuts</h1>
-            <dl>
-                <dt>?</dt>
-                <dd>Show this help dialog</dd>
-                <dt>S</dt>
-                <dd>Focus the search field</dd>
-                <dt>&larrb;</dt>
-                <dd>Move up in search results</dd>
-                <dt>&rarrb;</dt>
-                <dd>Move down in search results</dd>
-                <dt>&#9166;</dt>
-                <dd>Go to active search result</dd>
-            </dl>
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code>)
+                </p>
+            </div>
         </div>
-        <div class="infos">
-            <h1>Search tricks</h1>
-            <p>
-                Prefix searches with a type followed by a colon (e.g.
-                <code>fn:</code>) to restrict the search to a given type.
-            </p>
-            <p>
-                Accepted types are: <code>fn</code>, <code>mod</code>,
-                <code>struct</code>, <code>enum</code>,
-                <code>trait</code>, <code>typedef</code> (or
-                <code>tdef</code>).
-            </p>
-        </div>
-    </div>
+    </aside>
 
     
 
@@ -203,6 +216,6 @@ sufficient, a read-write scope will do as well.</p>
     <script src="../jquery.js"></script>
     <script src="../main.js"></script>
     
-    <script async src="../search-index.js"></script>
+    <script defer src="../search-index.js"></script>
 </body>
 </html>

@@ -1,1 +1,0 @@
-initSidebarItems({"struct":[["StringReader",""],["TokenAndSpan",""]],"fn":[["is_block_doc_comment",""],["is_doc_comment",""],["is_whitespace",""]],"mod":[["comments",""]],"trait":[["Reader",""]]});

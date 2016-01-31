@@ -9,6 +9,7 @@
 
     <title>google_androidenterprise1 - Rust</title>
 
+    <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
 
     
@@ -24,31 +25,35 @@
 
     
 
-    <section class="sidebar">
+    <nav class="sidebar">
         
         <p class='location'></p><script>window.sidebarCurrent = {name: 'google_androidenterprise1', ty: 'mod', relpath: '../'};</script>
-    </section>
+    </nav>
 
     <nav class="sub">
         <form class="search-form js-only">
             <div class="search-container">
                 <input class="search-input" name="search"
                        autocomplete="off"
-                       placeholder="Click or press 'S' to search, '?' for more options..."
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
                        type="search">
             </div>
         </form>
     </nav>
 
     <section id='main' class="content mod">
-<h1 class='fqn'><span class='in-band'>Crate <a class='mod' href=''>google_androidenterprise1</a><wbr></span><span class='out-of-band'><a href='stability.html'>[stability]</a> <span id='render-detail'>
-            <a id="collapse-all" href="#">[-]</a>&nbsp;<a id="expand-all" href="#">[+]</a>
-        </span><a id='src-0' href='../src/google_androidenterprise1/lib.rs.html#5-206'>[src]</a></span></h1>
-<div class='docblock'><p>This documentation was generated from <em>Android Enterprise</em> crate version <em>0.1.8+20150309</em>, where <em>20150309</em> is the exact revision of the <em>androidenterprise:v1</em> schema built by the <a href="http://www.makotemplates.org/">mako</a> code generator <em>v0.1.8</em>.
+<h1 class='fqn'><span class='in-band'>Crate <a class='mod' href=''>google_androidenterprise1</a></span><span class='out-of-band'><span id='render-detail'>
+            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                [<span class='inner'>&#x2212;</span>]
+            </a>
+        </span><a id='src-0' class='srclink' href='../src/google_androidenterprise1/lib.rs.html#5-216' title='goto source code'>[src]</a></span></h1>
+<div class='docblock'><p>This documentation was generated from <em>Android Enterprise</em> crate version <em>0.1.11+20160106</em>, where <em>20160106</em> is the exact revision of the <em>androidenterprise:v1</em> schema built by the <a href="http://www.makotemplates.org/">mako</a> code generator <em>v0.1.11</em>.</p>
+
+<p>Everything else about the <em>Android Enterprise</em> <em>v1</em> API can be found at the
+<a href="https://developers.google.com/android/work/play/emm-api">official documentation site</a>.
 The original source code is <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/androidenterprise1">on github</a>.</p>
 
-<h1 id="features" class='section-header'><a
-                           href="#features">Features</a></h1>
+<h1 id='features' class='section-header'><a href='#features'>Features</a></h1>
 <p>Handle the following <em>Resources</em> with ease from the central <a href="struct.AndroidEnterprise.html">hub</a> ... </p>
 
 <ul>
@@ -70,7 +75,7 @@ The original source code is <a href="https://github.com/Byron/google-apis-rs/tre
 <li><a href="struct.Enterprise.html">enterprises</a>
 
 <ul>
-<li><a href="struct.EnterpriseDeleteCall.html"><em>delete</em></a>, <a href="struct.EnterpriseEnrollCall.html"><em>enroll</em></a>, <a href="struct.EnterpriseGetCall.html"><em>get</em></a>, <a href="struct.EnterpriseInsertCall.html"><em>insert</em></a>, <a href="struct.EnterpriseListCall.html"><em>list</em></a>, <a href="struct.EnterpriseSetAccountCall.html"><em>set account</em></a> and <a href="struct.EnterpriseUnenrollCall.html"><em>unenroll</em></a></li>
+<li><a href="struct.EnterpriseDeleteCall.html"><em>delete</em></a>, <a href="struct.EnterpriseEnrollCall.html"><em>enroll</em></a>, <a href="struct.EnterpriseGetCall.html"><em>get</em></a>, <a href="struct.EnterpriseGetStoreLayoutCall.html"><em>get store layout</em></a>, <a href="struct.EnterpriseInsertCall.html"><em>insert</em></a>, <a href="struct.EnterpriseListCall.html"><em>list</em></a>, <a href="struct.EnterpriseSendTestPushNotificationCall.html"><em>send test push notification</em></a>, <a href="struct.EnterpriseSetAccountCall.html"><em>set account</em></a>, <a href="struct.EnterpriseSetStoreLayoutCall.html"><em>set store layout</em></a> and <a href="struct.EnterpriseUnenrollCall.html"><em>unenroll</em></a></li>
 </ul></li>
 <li><a href="struct.Entitlement.html">entitlements</a>
 
@@ -100,19 +105,28 @@ The original source code is <a href="https://github.com/Byron/google-apis-rs/tre
 <li><a href="struct.Product.html">products</a>
 
 <ul>
-<li><a href="struct.ProductGetCall.html"><em>get</em></a>, <a href="struct.ProductGetAppRestrictionsSchemaCall.html"><em>get app restrictions schema</em></a>, <a href="struct.ProductGetPermissionCall.html"><em>get permissions</em></a> and <a href="struct.ProductUpdatePermissionCall.html"><em>update permissions</em></a></li>
+<li><a href="struct.ProductApproveCall.html"><em>approve</em></a>, <a href="struct.ProductGenerateApprovalUrlCall.html"><em>generate approval url</em></a>, <a href="struct.ProductGetCall.html"><em>get</em></a>, <a href="struct.ProductGetAppRestrictionsSchemaCall.html"><em>get app restrictions schema</em></a>, <a href="struct.ProductGetPermissionCall.html"><em>get permissions</em></a> and <a href="struct.ProductUpdatePermissionCall.html"><em>update permissions</em></a></li>
+</ul></li>
+<li>storelayoutclusters
+
+<ul>
+<li><a href="struct.StorelayoutclusterDeleteCall.html"><em>delete</em></a>, <a href="struct.StorelayoutclusterGetCall.html"><em>get</em></a>, <a href="struct.StorelayoutclusterInsertCall.html"><em>insert</em></a>, <a href="struct.StorelayoutclusterListCall.html"><em>list</em></a>, <a href="struct.StorelayoutclusterPatchCall.html"><em>patch</em></a> and <a href="struct.StorelayoutclusterUpdateCall.html"><em>update</em></a></li>
+</ul></li>
+<li>storelayoutpages
+
+<ul>
+<li><a href="struct.StorelayoutpageDeleteCall.html"><em>delete</em></a>, <a href="struct.StorelayoutpageGetCall.html"><em>get</em></a>, <a href="struct.StorelayoutpageInsertCall.html"><em>insert</em></a>, <a href="struct.StorelayoutpageListCall.html"><em>list</em></a>, <a href="struct.StorelayoutpagePatchCall.html"><em>patch</em></a> and <a href="struct.StorelayoutpageUpdateCall.html"><em>update</em></a></li>
 </ul></li>
 <li><a href="struct.User.html">users</a>
 
 <ul>
-<li><a href="struct.UserGenerateTokenCall.html"><em>generate token</em></a>, <a href="struct.UserGetCall.html"><em>get</em></a>, <a href="struct.UserListCall.html"><em>list</em></a> and <a href="struct.UserRevokeTokenCall.html"><em>revoke token</em></a></li>
+<li><a href="struct.UserGenerateTokenCall.html"><em>generate token</em></a>, <a href="struct.UserGetCall.html"><em>get</em></a>, <a href="struct.UserGetAvailableProductSetCall.html"><em>get available product set</em></a>, <a href="struct.UserListCall.html"><em>list</em></a>, <a href="struct.UserRevokeTokenCall.html"><em>revoke token</em></a> and <a href="struct.UserSetAvailableProductSetCall.html"><em>set available product set</em></a></li>
 </ul></li>
 </ul>
 
 <p>Not what you are looking for ? Find all other Google APIs in their Rust <a href="../index.html">documentation index</a>.</p>
 
-<h1 id="structure-of-this-library" class='section-header'><a
-                           href="#structure-of-this-library">Structure of this Library</a></h1>
+<h1 id='structure-of-this-library' class='section-header'><a href='#structure-of-this-library'>Structure of this Library</a></h1>
 <p>The API is structured into the following primary items:</p>
 
 <ul>
@@ -145,42 +159,40 @@ allow access to individual <a href="trait.CallBuilder.html"><em>Call Builders</e
 <p>All <em>structures</em> are marked with applicable traits to further categorize them and ease browsing.</p>
 
 <p>Generally speaking, you can invoke <em>Activities</em> like this:</p>
-<pre id='rust-example-rendered' class='rust '>
-<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>resource</span>().<span class='ident'>activity</span>(...).<span class='ident'>doit</span>()
-</pre>
+<pre class='rust rust-example-rendered'>
+<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>resource</span>().<span class='ident'>activity</span>(...).<span class='ident'>doit</span>()</pre>
 
 <p>Or specifically ...</p>
-<pre id='rust-example-rendered' class='rust '>
-<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>enterprises</span>().<span class='ident'>insert</span>(...).<span class='ident'>doit</span>()
+<pre class='rust rust-example-rendered'>
+<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>enterprises</span>().<span class='ident'>send_test_push_notification</span>(...).<span class='ident'>doit</span>()
+<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>enterprises</span>().<span class='ident'>set_store_layout</span>(...).<span class='ident'>doit</span>()
+<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>enterprises</span>().<span class='ident'>get_store_layout</span>(...).<span class='ident'>doit</span>()
 <span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>enterprises</span>().<span class='ident'>list</span>(...).<span class='ident'>doit</span>()
 <span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>enterprises</span>().<span class='ident'>unenroll</span>(...).<span class='ident'>doit</span>()
 <span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>enterprises</span>().<span class='ident'>set_account</span>(...).<span class='ident'>doit</span>()
-<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>enterprises</span>().<span class='ident'>enroll</span>(...).<span class='ident'>doit</span>()
 <span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>enterprises</span>().<span class='ident'>delete</span>(...).<span class='ident'>doit</span>()
-<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>enterprises</span>().<span class='ident'>get</span>(...).<span class='ident'>doit</span>()
-</pre>
+<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>enterprises</span>().<span class='ident'>enroll</span>(...).<span class='ident'>doit</span>()
+<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>enterprises</span>().<span class='ident'>insert</span>(...).<span class='ident'>doit</span>()
+<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>enterprises</span>().<span class='ident'>get</span>(...).<span class='ident'>doit</span>()</pre>
 
 <p>The <code>resource()</code> and <code>activity(...)</code> calls create <a href="http://en.wikipedia.org/wiki/Builder_pattern">builders</a>. The second one dealing with <code>Activities</code> 
 supports various methods to configure the impending operation (not shown here). It is made such that all required arguments have to be 
 specified right away (i.e. <code>(...)</code>), whereas all optional ones can be <a href="http://en.wikipedia.org/wiki/Builder_pattern">build up</a> as desired.
 The <code>doit()</code> method performs the actual communication with the server and returns the respective result.</p>
 
-<h1 id="usage" class='section-header'><a
-                           href="#usage">Usage</a></h1>
-<h2 id="setting-up-your-project" class='section-header'><a
-                           href="#setting-up-your-project">Setting up your Project</a></h2>
+<h1 id='usage' class='section-header'><a href='#usage'>Usage</a></h1>
+<h2 id='setting-up-your-project' class='section-header'><a href='#setting-up-your-project'>Setting up your Project</a></h2>
 <p>To use this library, you would put the following lines into your <code>Cargo.toml</code> file:</p>
 
 <pre><code class="language-toml">[dependencies]
 google-androidenterprise1 = &quot;*&quot;
 </code></pre>
 
-<h2 id="a-complete-example" class='section-header'><a
-                           href="#a-complete-example">A complete example</a></h2><pre id='rust-example-rendered' class='rust '>
+<h2 id='a-complete-example' class='section-header'><a href='#a-complete-example'>A complete example</a></h2><pre class='rust rust-example-rendered'>
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>hyper</span>;
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>yup_oauth2</span> <span class='kw'>as</span> <span class='ident'>oauth2</span>;
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>google_androidenterprise1</span> <span class='kw'>as</span> <span class='ident'>androidenterprise1</span>;
-<span class='kw'>use</span> <span class='ident'>androidenterprise1</span>::<span class='ident'>Enterprise</span>;
+<span class='kw'>use</span> <span class='ident'>androidenterprise1</span>::<span class='ident'>StoreLayout</span>;
 <span class='kw'>use</span> <span class='ident'>androidenterprise1</span>::{<span class='prelude-ty'>Result</span>, <span class='ident'>Error</span>};
 <span class='kw'>use</span> <span class='ident'>std</span>::<span class='ident'>default</span>::<span class='ident'>Default</span>;
 <span class='kw'>use</span> <span class='ident'>oauth2</span>::{<span class='ident'>Authenticator</span>, <span class='ident'>DefaultAuthenticatorDelegate</span>, <span class='ident'>ApplicationSecret</span>, <span class='ident'>MemoryStorage</span>};
@@ -201,12 +213,12 @@ google-androidenterprise1 = &quot;*&quot;
 <span class='comment'>// As the method needs a request, you would usually fill it with the desired information</span>
 <span class='comment'>// into the respective structure. Some of the parts shown here might not be applicable !</span>
 <span class='comment'>// Values shown here are possibly random and not representative !</span>
-<span class='kw'>let</span> <span class='kw-2'>mut</span> <span class='ident'>req</span> <span class='op'>=</span> <span class='ident'>Enterprise</span>::<span class='ident'>default</span>();
+<span class='kw'>let</span> <span class='kw-2'>mut</span> <span class='ident'>req</span> <span class='op'>=</span> <span class='ident'>StoreLayout</span>::<span class='ident'>default</span>();
  
 <span class='comment'>// You can configure optional parameters by calling the respective setters at will, and</span>
 <span class='comment'>// execute the final call using `doit()`.</span>
 <span class='comment'>// Values shown here are possibly random and not representative !</span>
-<span class='kw'>let</span> <span class='ident'>result</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>enterprises</span>().<span class='ident'>insert</span>(<span class='ident'>req</span>, <span class='string'>&quot;token&quot;</span>)
+<span class='kw'>let</span> <span class='ident'>result</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>enterprises</span>().<span class='ident'>set_store_layout</span>(<span class='ident'>req</span>, <span class='string'>&quot;enterpriseId&quot;</span>)
              .<span class='ident'>doit</span>();
  
 <span class='kw'>match</span> <span class='ident'>result</span> {
@@ -224,11 +236,9 @@ google-androidenterprise1 = &quot;*&quot;
         <span class='op'>|</span><span class='ident'>Error</span>::<span class='ident'>JsonDecodeError</span>(_, _) <span class='op'>=&gt;</span> <span class='macro'>println</span><span class='macro'>!</span>(<span class='string'>&quot;{}&quot;</span>, <span class='ident'>e</span>),
     },
     <span class='prelude-val'>Ok</span>(<span class='ident'>res</span>) <span class='op'>=&gt;</span> <span class='macro'>println</span><span class='macro'>!</span>(<span class='string'>&quot;Success: {:?}&quot;</span>, <span class='ident'>res</span>),
-}
-</pre>
+}</pre>
 
-<h2 id="handling-errors" class='section-header'><a
-                           href="#handling-errors">Handling Errors</a></h2>
+<h2 id='handling-errors' class='section-header'><a href='#handling-errors'>Handling Errors</a></h2>
 <p>All errors produced by the system are provided either as <a href="enum.Result.html">Result</a> enumeration as return value of 
 the doit() methods, or handed as possibly intermediate results to either the 
 <a href="trait.Delegate.html">Hub Delegate</a>, or the <a href="../yup-oauth2/trait.AuthenticatorDelegate.html">Authenticator Delegate</a>.</p>
@@ -236,8 +246,7 @@ the doit() methods, or handed as possibly intermediate results to either the
 <p>When delegates handle errors or intermediate values, they may have a chance to instruct the system to retry. This 
 makes the system potentially resilient to all kinds of errors.</p>
 
-<h2 id="uploads-and-downloads" class='section-header'><a
-                           href="#uploads-and-downloads">Uploads and Downloads</a></h2>
+<h2 id='uploads-and-downloads' class='section-header'><a href='#uploads-and-downloads'>Uploads and Downloads</a></h2>
 <p>If a method supports downloads, the response body, which is part of the <a href="enum.Result.html">Result</a>, should be
 read by you to obtain the media.
 If such a method also supports a <a href="trait.ResponseResult.html">Response Result</a>, it will return that by default.
@@ -248,8 +257,7 @@ this call: <code>.param(&quot;alt&quot;, &quot;media&quot;)</code>.</p>
 <em>simple</em> and <em>resumable</em>. The distinctiveness of each is represented by customized 
 <code>doit(...)</code> methods, which are then named <code>upload(...)</code> and <code>upload_resumable(...)</code> respectively.</p>
 
-<h2 id="customization-and-callbacks" class='section-header'><a
-                           href="#customization-and-callbacks">Customization and Callbacks</a></h2>
+<h2 id='customization-and-callbacks' class='section-header'><a href='#customization-and-callbacks'>Customization and Callbacks</a></h2>
 <p>You may alter the way an <code>doit()</code> method is called by providing a <a href="trait.Delegate.html">delegate</a> to the 
 <a href="trait.CallBuilder.html">Method Builder</a> before making the final <code>doit()</code> call. 
 Respective methods will be called to provide progress information, as well as determine whether the system should 
@@ -257,16 +265,14 @@ retry on failure.</p>
 
 <p>The <a href="trait.Delegate.html">delegate trait</a> is default-implemented, allowing you to customize it with minimal effort.</p>
 
-<h2 id="optional-parts-in-server-requests" class='section-header'><a
-                           href="#optional-parts-in-server-requests">Optional Parts in Server-Requests</a></h2>
+<h2 id='optional-parts-in-server-requests' class='section-header'><a href='#optional-parts-in-server-requests'>Optional Parts in Server-Requests</a></h2>
 <p>All structures provided by this library are made to be <a href="trait.RequestValue.html">enocodable</a> and 
 <a href="trait.ResponseResult.html">decodable</a> via <em>json</em>. Optionals are used to indicate that partial requests are responses 
 are valid.
 Most optionals are are considered <a href="trait.Part.html">Parts</a> which are identifiable by name, which will be sent to 
 the server to indicate either the set parts of the request or the desired parts in the response.</p>
 
-<h2 id="builder-arguments" class='section-header'><a
-                           href="#builder-arguments">Builder Arguments</a></h2>
+<h2 id='builder-arguments' class='section-header'><a href='#builder-arguments'>Builder Arguments</a></h2>
 <p>Using <a href="trait.CallBuilder.html">method builders</a>, you are able to prepare an action call by repeatedly calling it&#39;s methods.
 These will always take a single argument, for which the following statements are true.</p>
 
@@ -279,773 +285,1287 @@ These will always take a single argument, for which the following statements are
 <p>Arguments will always be copied or cloned into the builder, to make them independent of their original life times.</p>
 </div><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
 <table>
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AndroidEnterprise.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.AndroidEnterprise.html'
                                title='google_androidenterprise1::AndroidEnterprise'>AndroidEnterprise</a></td>
-                        <td class='docblock short'><p>Central instance to access all AndroidEnterprise related resource activities</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Central instance to access all AndroidEnterprise related resource activities</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AppRestrictionsSchema.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.AppRestrictionsSchema.html'
                                title='google_androidenterprise1::AppRestrictionsSchema'>AppRestrictionsSchema</a></td>
-                        <td class='docblock short'><p>Represents the list of app restrictions available to be pre-configured for the product.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Represents the list of app restrictions available to be pre-configured for the product.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AppRestrictionsSchemaRestriction.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.AppRestrictionsSchemaRestriction.html'
                                title='google_androidenterprise1::AppRestrictionsSchemaRestriction'>AppRestrictionsSchemaRestriction</a></td>
-                        <td class='docblock short'><p>A restriction in the App Restriction Schema represents a piece of configuration that may be pre-applied.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>A restriction in the App Restriction Schema represents a piece of configuration that may be pre-applied.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AppRestrictionsSchemaRestrictionRestrictionValue.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.AppRestrictionsSchemaRestrictionRestrictionValue.html'
                                title='google_androidenterprise1::AppRestrictionsSchemaRestrictionRestrictionValue'>AppRestrictionsSchemaRestrictionRestrictionValue</a></td>
-                        <td class='docblock short'><p>A typed value for the restriction.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>A typed value for the restriction.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Collection.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.AppVersion.html'
+                               title='google_androidenterprise1::AppVersion'>AppVersion</a></td>
+                        <td class='docblock short'>
+                             <p>This represents a single version of the app.</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.ApprovalUrlInfo.html'
+                               title='google_androidenterprise1::ApprovalUrlInfo'>ApprovalUrlInfo</a></td>
+                        <td class='docblock short'>
+                             <p>Information on an approval URL.</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.Collection.html'
                                title='google_androidenterprise1::Collection'>Collection</a></td>
-                        <td class='docblock short'><p>A collection resource defines a named set of apps that is visible to a set of users in the Google Play Store app running on those users&#39; managed devices. Those users can then install any of those apps if they wish (which will trigger creation of install and entitlement resources). A user cannot install an app on a managed device unless the app is listed in at least one collection that is visible to that user.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>A collection resource defines a named set of apps that is visible to a set of users in the Google Play Store app running on those users&#39; managed devices. Those users can then install any of those apps if they wish (which will trigger creation of install and entitlement resources). A user cannot install an app on a managed device unless the app is listed in at least one collection that is visible to that user.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.CollectionDeleteCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.CollectionDeleteCall.html'
                                title='google_androidenterprise1::CollectionDeleteCall'>CollectionDeleteCall</a></td>
-                        <td class='docblock short'><p>Deletes a collection.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Deletes a collection.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.CollectionGetCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.CollectionGetCall.html'
                                title='google_androidenterprise1::CollectionGetCall'>CollectionGetCall</a></td>
-                        <td class='docblock short'><p>Retrieves the details of a collection.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Retrieves the details of a collection.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.CollectionInsertCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.CollectionInsertCall.html'
                                title='google_androidenterprise1::CollectionInsertCall'>CollectionInsertCall</a></td>
-                        <td class='docblock short'><p>Creates a new collection.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Creates a new collection.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.CollectionListCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.CollectionListCall.html'
                                title='google_androidenterprise1::CollectionListCall'>CollectionListCall</a></td>
-                        <td class='docblock short'><p>Retrieves the IDs of all the collections for an enterprise.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Retrieves the IDs of all the collections for an enterprise.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.CollectionMethods.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.CollectionMethods.html'
                                title='google_androidenterprise1::CollectionMethods'>CollectionMethods</a></td>
-                        <td class='docblock short'><p>A builder providing access to all methods supported on <em>collection</em> resources.
+                        <td class='docblock short'>
+                             <p>A builder providing access to all methods supported on <em>collection</em> resources.
 It is not used directly, but through the <code>AndroidEnterprise</code> hub.</p>
-</td>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.CollectionPatchCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.CollectionPatchCall.html'
                                title='google_androidenterprise1::CollectionPatchCall'>CollectionPatchCall</a></td>
-                        <td class='docblock short'><p>Updates a collection. This method supports patch semantics.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Updates a collection. This method supports patch semantics.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.CollectionUpdateCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.CollectionUpdateCall.html'
                                title='google_androidenterprise1::CollectionUpdateCall'>CollectionUpdateCall</a></td>
-                        <td class='docblock short'><p>Updates a collection.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Updates a collection.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.CollectionViewersListResponse.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.CollectionViewersListResponse.html'
                                title='google_androidenterprise1::CollectionViewersListResponse'>CollectionViewersListResponse</a></td>
-                        <td class='docblock short'><p>The user resources for the collection.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>The user resources for the collection.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.CollectionsListResponse.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.CollectionsListResponse.html'
                                title='google_androidenterprise1::CollectionsListResponse'>CollectionsListResponse</a></td>
-                        <td class='docblock short'><p>The collection resources for the enterprise.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>The collection resources for the enterprise.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.CollectionviewerDeleteCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.CollectionviewerDeleteCall.html'
                                title='google_androidenterprise1::CollectionviewerDeleteCall'>CollectionviewerDeleteCall</a></td>
-                        <td class='docblock short'><p>Removes the user from the list of those specifically allowed to see the collection. If the collection&#39;s visibility is set to viewersOnly then only such users will see the collection.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Removes the user from the list of those specifically allowed to see the collection. If the collection&#39;s visibility is set to viewersOnly then only such users will see the collection.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.CollectionviewerGetCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.CollectionviewerGetCall.html'
                                title='google_androidenterprise1::CollectionviewerGetCall'>CollectionviewerGetCall</a></td>
-                        <td class='docblock short'><p>Retrieves the ID of the user if they have been specifically allowed to see the collection. If the collection&#39;s visibility is set to viewersOnly then only these users will see the collection.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Retrieves the ID of the user if they have been specifically allowed to see the collection. If the collection&#39;s visibility is set to viewersOnly then only these users will see the collection.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.CollectionviewerListCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.CollectionviewerListCall.html'
                                title='google_androidenterprise1::CollectionviewerListCall'>CollectionviewerListCall</a></td>
-                        <td class='docblock short'><p>Retrieves the IDs of the users who have been specifically allowed to see the collection. If the collection&#39;s visibility is set to viewersOnly then only these users will see the collection.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Retrieves the IDs of the users who have been specifically allowed to see the collection. If the collection&#39;s visibility is set to viewersOnly then only these users will see the collection.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.CollectionviewerMethods.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.CollectionviewerMethods.html'
                                title='google_androidenterprise1::CollectionviewerMethods'>CollectionviewerMethods</a></td>
-                        <td class='docblock short'><p>A builder providing access to all methods supported on <em>collectionviewer</em> resources.
+                        <td class='docblock short'>
+                             <p>A builder providing access to all methods supported on <em>collectionviewer</em> resources.
 It is not used directly, but through the <code>AndroidEnterprise</code> hub.</p>
-</td>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.CollectionviewerPatchCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.CollectionviewerPatchCall.html'
                                title='google_androidenterprise1::CollectionviewerPatchCall'>CollectionviewerPatchCall</a></td>
-                        <td class='docblock short'><p>Adds the user to the list of those specifically allowed to see the collection. If the collection&#39;s visibility is set to viewersOnly then only such users will see the collection. This method supports patch semantics.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Adds the user to the list of those specifically allowed to see the collection. If the collection&#39;s visibility is set to viewersOnly then only such users will see the collection. This method supports patch semantics.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.CollectionviewerUpdateCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.CollectionviewerUpdateCall.html'
                                title='google_androidenterprise1::CollectionviewerUpdateCall'>CollectionviewerUpdateCall</a></td>
-                        <td class='docblock short'><p>Adds the user to the list of those specifically allowed to see the collection. If the collection&#39;s visibility is set to viewersOnly then only such users will see the collection.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Adds the user to the list of those specifically allowed to see the collection. If the collection&#39;s visibility is set to viewersOnly then only such users will see the collection.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.DefaultDelegate.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.DefaultDelegate.html'
                                title='google_androidenterprise1::DefaultDelegate'>DefaultDelegate</a></td>
-                        <td class='docblock short'><p>A delegate with a conservative default implementation, which is used if no other delegate is
+                        <td class='docblock short'>
+                             <p>A delegate with a conservative default implementation, which is used if no other delegate is
 set.</p>
-</td>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Device.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.Device.html'
                                title='google_androidenterprise1::Device'>Device</a></td>
-                        <td class='docblock short'><p>A device resource represents a mobile device managed by the MDM and belonging to a specific enterprise user.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>A device resource represents a mobile device managed by the MDM and belonging to a specific enterprise user.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.DeviceGetCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.DeviceGetCall.html'
                                title='google_androidenterprise1::DeviceGetCall'>DeviceGetCall</a></td>
-                        <td class='docblock short'><p>Retrieves the details of a device.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Retrieves the details of a device.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.DeviceGetStateCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.DeviceGetStateCall.html'
                                title='google_androidenterprise1::DeviceGetStateCall'>DeviceGetStateCall</a></td>
-                        <td class='docblock short'><p>Retrieves whether a device is enabled or disabled for access by the user to Google services. The device state takes effect only if enforcing EMM policies on Android devices is enabled in the Google Admin Console. Otherwise, the device state is ignored and all devices are allowed access to Google services.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Retrieves whether a device is enabled or disabled for access by the user to Google services. The device state takes effect only if enforcing EMM policies on Android devices is enabled in the Google Admin Console. Otherwise, the device state is ignored and all devices are allowed access to Google services.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.DeviceListCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.DeviceListCall.html'
                                title='google_androidenterprise1::DeviceListCall'>DeviceListCall</a></td>
-                        <td class='docblock short'><p>Retrieves the IDs of all of a user&#39;s devices.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Retrieves the IDs of all of a user&#39;s devices.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.DeviceMethods.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.DeviceMethods.html'
                                title='google_androidenterprise1::DeviceMethods'>DeviceMethods</a></td>
-                        <td class='docblock short'><p>A builder providing access to all methods supported on <em>device</em> resources.
+                        <td class='docblock short'>
+                             <p>A builder providing access to all methods supported on <em>device</em> resources.
 It is not used directly, but through the <code>AndroidEnterprise</code> hub.</p>
-</td>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.DeviceSetStateCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.DeviceSetStateCall.html'
                                title='google_androidenterprise1::DeviceSetStateCall'>DeviceSetStateCall</a></td>
-                        <td class='docblock short'><p>Sets whether a device is enabled or disabled for access by the user to Google services. The device state takes effect only if enforcing EMM policies on Android devices is enabled in the Google Admin Console. Otherwise, the device state is ignored and all devices are allowed access to Google services.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Sets whether a device is enabled or disabled for access by the user to Google services. The device state takes effect only if enforcing EMM policies on Android devices is enabled in the Google Admin Console. Otherwise, the device state is ignored and all devices are allowed access to Google services.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.DeviceState.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.DeviceState.html'
                                title='google_androidenterprise1::DeviceState'>DeviceState</a></td>
-                        <td class='docblock short'><p>The state of a user&#39;s device, as accessed by the getState and setState methods on device resources.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>The state of a user&#39;s device, as accessed by the getState and setState methods on device resources.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.DevicesListResponse.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.DevicesListResponse.html'
                                title='google_androidenterprise1::DevicesListResponse'>DevicesListResponse</a></td>
-                        <td class='docblock short'><p>The device resources for the user.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>The device resources for the user.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Enterprise.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.Enterprise.html'
                                title='google_androidenterprise1::Enterprise'>Enterprise</a></td>
-                        <td class='docblock short'><p>An enterprise resource represents a binding between an organisation and their MDM.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>An enterprise resource represents a binding between an organisation and their MDM.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.EnterpriseAccount.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.EnterpriseAccount.html'
                                title='google_androidenterprise1::EnterpriseAccount'>EnterpriseAccount</a></td>
-                        <td class='docblock short'><p>A service account that can be used to authenticate as the enterprise to API calls that require such authentication.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>A service account that can be used to authenticate as the enterprise to API calls that require such authentication.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.EnterpriseDeleteCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.EnterpriseDeleteCall.html'
                                title='google_androidenterprise1::EnterpriseDeleteCall'>EnterpriseDeleteCall</a></td>
-                        <td class='docblock short'><p>Deletes the binding between the MDM and enterprise. This is now deprecated; use this to unenroll customers that were previously enrolled with the &#39;insert&#39; call, then enroll them again with the &#39;enroll&#39; call.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Deletes the binding between the MDM and enterprise. This is now deprecated; use this to unenroll customers that were previously enrolled with the &#39;insert&#39; call, then enroll them again with the &#39;enroll&#39; call.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.EnterpriseEnrollCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.EnterpriseEnrollCall.html'
                                title='google_androidenterprise1::EnterpriseEnrollCall'>EnterpriseEnrollCall</a></td>
-                        <td class='docblock short'><p>Enrolls an enterprise with the calling MDM.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Enrolls an enterprise with the calling MDM.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.EnterpriseGetCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.EnterpriseGetCall.html'
                                title='google_androidenterprise1::EnterpriseGetCall'>EnterpriseGetCall</a></td>
-                        <td class='docblock short'><p>Retrieves the name and domain of an enterprise.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Retrieves the name and domain of an enterprise.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.EnterpriseInsertCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.EnterpriseGetStoreLayoutCall.html'
+                               title='google_androidenterprise1::EnterpriseGetStoreLayoutCall'>EnterpriseGetStoreLayoutCall</a></td>
+                        <td class='docblock short'>
+                             <p>Returns the store layout resource.</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.EnterpriseInsertCall.html'
                                title='google_androidenterprise1::EnterpriseInsertCall'>EnterpriseInsertCall</a></td>
-                        <td class='docblock short'><p>Establishes the binding between the MDM and an enterprise. This is now deprecated; use enroll instead.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Establishes the binding between the MDM and an enterprise. This is now deprecated; use enroll instead.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.EnterpriseListCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.EnterpriseListCall.html'
                                title='google_androidenterprise1::EnterpriseListCall'>EnterpriseListCall</a></td>
-                        <td class='docblock short'><p>Looks up an enterprise by domain name.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Looks up an enterprise by domain name.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.EnterpriseMethods.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.EnterpriseMethods.html'
                                title='google_androidenterprise1::EnterpriseMethods'>EnterpriseMethods</a></td>
-                        <td class='docblock short'><p>A builder providing access to all methods supported on <em>enterprise</em> resources.
+                        <td class='docblock short'>
+                             <p>A builder providing access to all methods supported on <em>enterprise</em> resources.
 It is not used directly, but through the <code>AndroidEnterprise</code> hub.</p>
-</td>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.EnterpriseSetAccountCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.EnterpriseSendTestPushNotificationCall.html'
+                               title='google_androidenterprise1::EnterpriseSendTestPushNotificationCall'>EnterpriseSendTestPushNotificationCall</a></td>
+                        <td class='docblock short'>
+                             <p>Sends a test push notification to validate the MDM integration with the Google Cloud Pub/Sub service for this enterprise.</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.EnterpriseSetAccountCall.html'
                                title='google_androidenterprise1::EnterpriseSetAccountCall'>EnterpriseSetAccountCall</a></td>
-                        <td class='docblock short'><p>Set the account that will be used to authenticate to the API as the enterprise.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Set the account that will be used to authenticate to the API as the enterprise.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.EnterpriseUnenrollCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.EnterpriseSetStoreLayoutCall.html'
+                               title='google_androidenterprise1::EnterpriseSetStoreLayoutCall'>EnterpriseSetStoreLayoutCall</a></td>
+                        <td class='docblock short'>
+                             <p>Sets the store layout resource.</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.EnterpriseUnenrollCall.html'
                                title='google_androidenterprise1::EnterpriseUnenrollCall'>EnterpriseUnenrollCall</a></td>
-                        <td class='docblock short'><p>Unenrolls an enterprise from the calling MDM.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Unenrolls an enterprise from the calling MDM.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.EnterprisesListResponse.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.EnterprisesListResponse.html'
                                title='google_androidenterprise1::EnterprisesListResponse'>EnterprisesListResponse</a></td>
-                        <td class='docblock short'><p>The matching enterprise resources.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>The matching enterprise resources.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Entitlement.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.EnterprisesSendTestPushNotificationResponse.html'
+                               title='google_androidenterprise1::EnterprisesSendTestPushNotificationResponse'>EnterprisesSendTestPushNotificationResponse</a></td>
+                        <td class='docblock short'>
+                             <p>There is no detailed description.</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.Entitlement.html'
                                title='google_androidenterprise1::Entitlement'>Entitlement</a></td>
-                        <td class='docblock short'><p>The existence of an entitlement resource means that a user has the right to use a particular app on any of their devices. This might be because the app is free or because they have been allocated a license to the app from a group license purchased by the enterprise.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>The existence of an entitlement resource means that a user has the right to use a particular app on any of their devices. This might be because the app is free or because they have been allocated a license to the app from a group license purchased by the enterprise.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.EntitlementDeleteCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.EntitlementDeleteCall.html'
                                title='google_androidenterprise1::EntitlementDeleteCall'>EntitlementDeleteCall</a></td>
-                        <td class='docblock short'><p>Removes an entitlement to an app for a user and uninstalls it.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Removes an entitlement to an app for a user and uninstalls it.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.EntitlementGetCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.EntitlementGetCall.html'
                                title='google_androidenterprise1::EntitlementGetCall'>EntitlementGetCall</a></td>
-                        <td class='docblock short'><p>Retrieves details of an entitlement.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Retrieves details of an entitlement.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.EntitlementListCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.EntitlementListCall.html'
                                title='google_androidenterprise1::EntitlementListCall'>EntitlementListCall</a></td>
-                        <td class='docblock short'><p>List of all entitlements for the specified user. Only the ID is set.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>List of all entitlements for the specified user. Only the ID is set.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.EntitlementMethods.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.EntitlementMethods.html'
                                title='google_androidenterprise1::EntitlementMethods'>EntitlementMethods</a></td>
-                        <td class='docblock short'><p>A builder providing access to all methods supported on <em>entitlement</em> resources.
+                        <td class='docblock short'>
+                             <p>A builder providing access to all methods supported on <em>entitlement</em> resources.
 It is not used directly, but through the <code>AndroidEnterprise</code> hub.</p>
-</td>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.EntitlementPatchCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.EntitlementPatchCall.html'
                                title='google_androidenterprise1::EntitlementPatchCall'>EntitlementPatchCall</a></td>
-                        <td class='docblock short'><p>Adds or updates an entitlement to an app for a user. This method supports patch semantics.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Adds or updates an entitlement to an app for a user. This method supports patch semantics.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.EntitlementUpdateCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.EntitlementUpdateCall.html'
                                title='google_androidenterprise1::EntitlementUpdateCall'>EntitlementUpdateCall</a></td>
-                        <td class='docblock short'><p>Adds or updates an entitlement to an app for a user.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Adds or updates an entitlement to an app for a user.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.EntitlementsListResponse.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.EntitlementsListResponse.html'
                                title='google_androidenterprise1::EntitlementsListResponse'>EntitlementsListResponse</a></td>
-                        <td class='docblock short'><p>The entitlement resources for the user.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>The entitlement resources for the user.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ErrorResponse.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.ErrorResponse.html'
                                title='google_androidenterprise1::ErrorResponse'>ErrorResponse</a></td>
-                        <td class='docblock short'><p>A utility to represent detailed errors we might see in case there are BadRequests.
+                        <td class='docblock short'>
+                             <p>A utility to represent detailed errors we might see in case there are BadRequests.
 The latter happen if the sent parameters or request structures are unsound</p>
-</td>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.GroupLicense.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.GroupLicense.html'
                                title='google_androidenterprise1::GroupLicense'>GroupLicense</a></td>
-                        <td class='docblock short'><p>A group license object indicates a product that an enterprise admin has approved for use in the enterprise. The product may be free or paid. For free products, a group license object is created in these cases: if the enterprise admin approves a product in Google Play, if the product is added to a collection, or if an entitlement for the product is created for a user via the API. For paid products, a group license object is only created as part of the first bulk purchase of that product in Google Play done by the enterprise admin.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>A group license object indicates a product that an enterprise admin has approved for use in the enterprise. The product may be free or paid. For free products, a group license object is created in these cases: if the enterprise admin approves a product in Google Play, if the product is added to a collection, or if an entitlement for the product is created for a user via the API. For paid products, a group license object is only created as part of the first bulk purchase of that product in Google Play by the enterprise admin.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.GroupLicenseUsersListResponse.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.GroupLicenseUsersListResponse.html'
                                title='google_androidenterprise1::GroupLicenseUsersListResponse'>GroupLicenseUsersListResponse</a></td>
-                        <td class='docblock short'><p>The user resources for the group license.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>The user resources for the group license.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.GroupLicensesListResponse.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.GroupLicensesListResponse.html'
                                title='google_androidenterprise1::GroupLicensesListResponse'>GroupLicensesListResponse</a></td>
-                        <td class='docblock short'><p>The grouplicense resources for the enterprise.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>The grouplicense resources for the enterprise.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.GrouplicenseGetCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.GrouplicenseGetCall.html'
                                title='google_androidenterprise1::GrouplicenseGetCall'>GrouplicenseGetCall</a></td>
-                        <td class='docblock short'><p>Retrieves details of an enterprise&#39;s group license for a product.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Retrieves details of an enterprise&#39;s group license for a product.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.GrouplicenseListCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.GrouplicenseListCall.html'
                                title='google_androidenterprise1::GrouplicenseListCall'>GrouplicenseListCall</a></td>
-                        <td class='docblock short'><p>Retrieves IDs of all products for which the enterprise has a group license.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Retrieves IDs of all products for which the enterprise has a group license.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.GrouplicenseMethods.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.GrouplicenseMethods.html'
                                title='google_androidenterprise1::GrouplicenseMethods'>GrouplicenseMethods</a></td>
-                        <td class='docblock short'><p>A builder providing access to all methods supported on <em>grouplicense</em> resources.
+                        <td class='docblock short'>
+                             <p>A builder providing access to all methods supported on <em>grouplicense</em> resources.
 It is not used directly, but through the <code>AndroidEnterprise</code> hub.</p>
-</td>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.GrouplicenseuserListCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.GrouplicenseuserListCall.html'
                                title='google_androidenterprise1::GrouplicenseuserListCall'>GrouplicenseuserListCall</a></td>
-                        <td class='docblock short'><p>Retrieves the IDs of the users who have been granted entitlements under the license.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Retrieves the IDs of the users who have been granted entitlements under the license.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.GrouplicenseuserMethods.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.GrouplicenseuserMethods.html'
                                title='google_androidenterprise1::GrouplicenseuserMethods'>GrouplicenseuserMethods</a></td>
-                        <td class='docblock short'><p>A builder providing access to all methods supported on <em>grouplicenseuser</em> resources.
+                        <td class='docblock short'>
+                             <p>A builder providing access to all methods supported on <em>grouplicenseuser</em> resources.
 It is not used directly, but through the <code>AndroidEnterprise</code> hub.</p>
-</td>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Install.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.Install.html'
                                title='google_androidenterprise1::Install'>Install</a></td>
-                        <td class='docblock short'><p>The existence of an install resource indicates that an app is installed on a particular device (or that an install is pending).</p>
-</td>
+                        <td class='docblock short'>
+                             <p>The existence of an install resource indicates that an app is installed on a particular device (or that an install is pending).</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.InstallDeleteCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.InstallDeleteCall.html'
                                title='google_androidenterprise1::InstallDeleteCall'>InstallDeleteCall</a></td>
-                        <td class='docblock short'><p>Requests to remove an app from a device. A call to get or list will still show the app as installed on the device until it is actually removed.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Requests to remove an app from a device. A call to get or list will still show the app as installed on the device until it is actually removed.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.InstallGetCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.InstallGetCall.html'
                                title='google_androidenterprise1::InstallGetCall'>InstallGetCall</a></td>
-                        <td class='docblock short'><p>Retrieves details of an installation of an app on a device.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Retrieves details of an installation of an app on a device.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.InstallListCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.InstallListCall.html'
                                title='google_androidenterprise1::InstallListCall'>InstallListCall</a></td>
-                        <td class='docblock short'><p>Retrieves the details of all apps installed on the specified device.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Retrieves the details of all apps installed on the specified device.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.InstallMethods.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.InstallMethods.html'
                                title='google_androidenterprise1::InstallMethods'>InstallMethods</a></td>
-                        <td class='docblock short'><p>A builder providing access to all methods supported on <em>install</em> resources.
+                        <td class='docblock short'>
+                             <p>A builder providing access to all methods supported on <em>install</em> resources.
 It is not used directly, but through the <code>AndroidEnterprise</code> hub.</p>
-</td>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.InstallPatchCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.InstallPatchCall.html'
                                title='google_androidenterprise1::InstallPatchCall'>InstallPatchCall</a></td>
-                        <td class='docblock short'><p>Requests to install the latest version of an app to a device. If the app is already installed then it is updated to the latest version if necessary. This method supports patch semantics.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Requests to install the latest version of an app to a device. If the app is already installed then it is updated to the latest version if necessary. This method supports patch semantics.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.InstallUpdateCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.InstallUpdateCall.html'
                                title='google_androidenterprise1::InstallUpdateCall'>InstallUpdateCall</a></td>
-                        <td class='docblock short'><p>Requests to install the latest version of an app to a device. If the app is already installed then it is updated to the latest version if necessary.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Requests to install the latest version of an app to a device. If the app is already installed then it is updated to the latest version if necessary.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.InstallsListResponse.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.InstallsListResponse.html'
                                title='google_androidenterprise1::InstallsListResponse'>InstallsListResponse</a></td>
-                        <td class='docblock short'><p>The install resources for the device.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>The install resources for the device.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.MethodInfo.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.LocalizedText.html'
+                               title='google_androidenterprise1::LocalizedText'>LocalizedText</a></td>
+                        <td class='docblock short'>
+                             <p>A localized string with its locale.</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.MethodInfo.html'
                                title='google_androidenterprise1::MethodInfo'>MethodInfo</a></td>
-                        <td class='docblock short'><p>Contains information about an API request.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Contains information about an API request.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.MultiPartReader.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.MultiPartReader.html'
                                title='google_androidenterprise1::MultiPartReader'>MultiPartReader</a></td>
-                        <td class='docblock short'><p>Provides a <code>Read</code> interface that converts multiple parts into the protocol
+                        <td class='docblock short'>
+                             <p>Provides a <code>Read</code> interface that converts multiple parts into the protocol
 identified by <a href="https://tools.ietf.org/html/rfc2387">RFC2387</a>.
 <strong>Note</strong>: This implementation is just as rich as it needs to be to perform uploads
 to google APIs, and might not be a fully-featured implementation.</p>
-</td>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Permission.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.Permission.html'
                                title='google_androidenterprise1::Permission'>Permission</a></td>
-                        <td class='docblock short'><p>A permission represents some extra capability, to be granted to an Android app, which requires explicit consent. An enterprise admin must consent to these permissions on behalf of their users before an entitlement for the app can be created.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>A permission represents some extra capability, to be granted to an Android app, which requires explicit consent. An enterprise admin must consent to these permissions on behalf of their users before an entitlement for the app can be created.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.PermissionGetCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.PermissionGetCall.html'
                                title='google_androidenterprise1::PermissionGetCall'>PermissionGetCall</a></td>
-                        <td class='docblock short'><p>Retrieves details of an Android app permission for display to an enterprise admin.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Retrieves details of an Android app permission for display to an enterprise admin.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.PermissionMethods.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.PermissionMethods.html'
                                title='google_androidenterprise1::PermissionMethods'>PermissionMethods</a></td>
-                        <td class='docblock short'><p>A builder providing access to all methods supported on <em>permission</em> resources.
+                        <td class='docblock short'>
+                             <p>A builder providing access to all methods supported on <em>permission</em> resources.
 It is not used directly, but through the <code>AndroidEnterprise</code> hub.</p>
-</td>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Product.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.Product.html'
                                title='google_androidenterprise1::Product'>Product</a></td>
-                        <td class='docblock short'><p>A product represents an app in the Google Play Store that is available to at least some users in the enterprise. (Some apps are restricted to a single enterprise, and no information about them is made available outside that enterprise.)</p>
-</td>
+                        <td class='docblock short'>
+                             <p>A product represents an app in the Google Play Store that is available to at least some users in the enterprise. (Some apps are restricted to a single enterprise, and no information about them is made available outside that enterprise.)</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ProductGetAppRestrictionsSchemaCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.ProductApproveCall.html'
+                               title='google_androidenterprise1::ProductApproveCall'>ProductApproveCall</a></td>
+                        <td class='docblock short'>
+                             <p>Approves the specified product (and the relevant app permissions, if any).</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.ProductGenerateApprovalUrlCall.html'
+                               title='google_androidenterprise1::ProductGenerateApprovalUrlCall'>ProductGenerateApprovalUrlCall</a></td>
+                        <td class='docblock short'>
+                             <p>Generates a URL that can be rendered in an iframe to display the permissions (if any) of a product. An enterprise admin must view these permissions and accept them on behalf of their organization in order to approve that product.</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.ProductGetAppRestrictionsSchemaCall.html'
                                title='google_androidenterprise1::ProductGetAppRestrictionsSchemaCall'>ProductGetAppRestrictionsSchemaCall</a></td>
-                        <td class='docblock short'><p>Retrieves the schema defining app restrictions configurable for this product. All products have a schema, but this may be empty if no app restrictions are defined.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Retrieves the schema defining app restrictions configurable for this product. All products have a schema, but this may be empty if no app restrictions are defined.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ProductGetCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.ProductGetCall.html'
                                title='google_androidenterprise1::ProductGetCall'>ProductGetCall</a></td>
-                        <td class='docblock short'><p>Retrieves details of a product for display to an enterprise admin.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Retrieves details of a product for display to an enterprise admin.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ProductGetPermissionCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.ProductGetPermissionCall.html'
                                title='google_androidenterprise1::ProductGetPermissionCall'>ProductGetPermissionCall</a></td>
-                        <td class='docblock short'><p>Retrieves the Android app permissions required by this app.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Retrieves the Android app permissions required by this app.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ProductMethods.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.ProductMethods.html'
                                title='google_androidenterprise1::ProductMethods'>ProductMethods</a></td>
-                        <td class='docblock short'><p>A builder providing access to all methods supported on <em>product</em> resources.
+                        <td class='docblock short'>
+                             <p>A builder providing access to all methods supported on <em>product</em> resources.
 It is not used directly, but through the <code>AndroidEnterprise</code> hub.</p>
-</td>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ProductPermission.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.ProductPermission.html'
                                title='google_androidenterprise1::ProductPermission'>ProductPermission</a></td>
-                        <td class='docblock short'><p>A product permissions resource represents the set of permissions required by a specific app and whether or not they have been accepted by an enterprise admin.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>A product permissions resource represents the set of permissions required by a specific app and whether or not they have been accepted by an enterprise admin.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ProductPermissions.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.ProductPermissions.html'
                                title='google_androidenterprise1::ProductPermissions'>ProductPermissions</a></td>
-                        <td class='docblock short'><p>Information about the permissions required by a specific app and whether they have been accepted by the enterprise.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Information about the permissions required by a specific app and whether they have been accepted by the enterprise.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ProductUpdatePermissionCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.ProductSet.html'
+                               title='google_androidenterprise1::ProductSet'>ProductSet</a></td>
+                        <td class='docblock short'>
+                             <p>A set of products.</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.ProductUpdatePermissionCall.html'
                                title='google_androidenterprise1::ProductUpdatePermissionCall'>ProductUpdatePermissionCall</a></td>
-                        <td class='docblock short'><p>Updates the set of Android app permissions for this app that have been accepted by the enterprise.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Updates the set of Android app permissions for this app that have been accepted by the enterprise.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.User.html'
-                               title='google_androidenterprise1::User'>User</a></td>
-                        <td class='docblock short'><p>A user resource represents an individual user within the enterprise&#39;s domain.</p>
-</td>
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.ProductsApproveRequest.html'
+                               title='google_androidenterprise1::ProductsApproveRequest'>ProductsApproveRequest</a></td>
+                        <td class='docblock short'>
+                             <p>There is no detailed description.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.UserGenerateTokenCall.html'
-                               title='google_androidenterprise1::UserGenerateTokenCall'>UserGenerateTokenCall</a></td>
-                        <td class='docblock short'><p>Generates a token (activation code) to allow this user to configure their work account in the Android Setup Wizard. Revokes any previously generated token.</p>
-</td>
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.ProductsGenerateApprovalUrlResponse.html'
+                               title='google_androidenterprise1::ProductsGenerateApprovalUrlResponse'>ProductsGenerateApprovalUrlResponse</a></td>
+                        <td class='docblock short'>
+                             <p>There is no detailed description.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.UserGetCall.html'
-                               title='google_androidenterprise1::UserGetCall'>UserGetCall</a></td>
-                        <td class='docblock short'><p>Retrieves a user&#39;s details.</p>
-</td>
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.StoreCluster.html'
+                               title='google_androidenterprise1::StoreCluster'>StoreCluster</a></td>
+                        <td class='docblock short'>
+                             <p>Definition of a Google Play for Work store cluster, a list of products displayed as part of a store page.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.UserListCall.html'
-                               title='google_androidenterprise1::UserListCall'>UserListCall</a></td>
-                        <td class='docblock short'><p>Looks up a user by email address.</p>
-</td>
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.StoreLayout.html'
+                               title='google_androidenterprise1::StoreLayout'>StoreLayout</a></td>
+                        <td class='docblock short'>
+                             <p>General setting for the Google Play for Work store layout, currently only specifying the page to display the first time the store is opened.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.UserMethods.html'
-                               title='google_androidenterprise1::UserMethods'>UserMethods</a></td>
-                        <td class='docblock short'><p>A builder providing access to all methods supported on <em>user</em> resources.
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.StoreLayoutClustersListResponse.html'
+                               title='google_androidenterprise1::StoreLayoutClustersListResponse'>StoreLayoutClustersListResponse</a></td>
+                        <td class='docblock short'>
+                             <p>The store page resources for the enterprise.</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.StoreLayoutPagesListResponse.html'
+                               title='google_androidenterprise1::StoreLayoutPagesListResponse'>StoreLayoutPagesListResponse</a></td>
+                        <td class='docblock short'>
+                             <p>The store page resources for the enterprise.</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.StorePage.html'
+                               title='google_androidenterprise1::StorePage'>StorePage</a></td>
+                        <td class='docblock short'>
+                             <p>Definition of a Google Play for Work store page, made of a localized name and links to other pages. A page also contains clusters defined as a subcollection.</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.StorelayoutclusterDeleteCall.html'
+                               title='google_androidenterprise1::StorelayoutclusterDeleteCall'>StorelayoutclusterDeleteCall</a></td>
+                        <td class='docblock short'>
+                             <p>Deletes a cluster.</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.StorelayoutclusterGetCall.html'
+                               title='google_androidenterprise1::StorelayoutclusterGetCall'>StorelayoutclusterGetCall</a></td>
+                        <td class='docblock short'>
+                             <p>Retrieves details of a cluster.</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.StorelayoutclusterInsertCall.html'
+                               title='google_androidenterprise1::StorelayoutclusterInsertCall'>StorelayoutclusterInsertCall</a></td>
+                        <td class='docblock short'>
+                             <p>Inserts a new cluster in a page.</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.StorelayoutclusterListCall.html'
+                               title='google_androidenterprise1::StorelayoutclusterListCall'>StorelayoutclusterListCall</a></td>
+                        <td class='docblock short'>
+                             <p>Retrieves the details of all clusters on the specified page.</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.StorelayoutclusterMethods.html'
+                               title='google_androidenterprise1::StorelayoutclusterMethods'>StorelayoutclusterMethods</a></td>
+                        <td class='docblock short'>
+                             <p>A builder providing access to all methods supported on <em>storelayoutcluster</em> resources.
 It is not used directly, but through the <code>AndroidEnterprise</code> hub.</p>
-</td>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.UserRevokeTokenCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.StorelayoutclusterPatchCall.html'
+                               title='google_androidenterprise1::StorelayoutclusterPatchCall'>StorelayoutclusterPatchCall</a></td>
+                        <td class='docblock short'>
+                             <p>Updates a cluster. This method supports patch semantics.</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.StorelayoutclusterUpdateCall.html'
+                               title='google_androidenterprise1::StorelayoutclusterUpdateCall'>StorelayoutclusterUpdateCall</a></td>
+                        <td class='docblock short'>
+                             <p>Updates a cluster.</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.StorelayoutpageDeleteCall.html'
+                               title='google_androidenterprise1::StorelayoutpageDeleteCall'>StorelayoutpageDeleteCall</a></td>
+                        <td class='docblock short'>
+                             <p>Deletes a store page.</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.StorelayoutpageGetCall.html'
+                               title='google_androidenterprise1::StorelayoutpageGetCall'>StorelayoutpageGetCall</a></td>
+                        <td class='docblock short'>
+                             <p>Retrieves details of a store page.</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.StorelayoutpageInsertCall.html'
+                               title='google_androidenterprise1::StorelayoutpageInsertCall'>StorelayoutpageInsertCall</a></td>
+                        <td class='docblock short'>
+                             <p>Inserts a new store page.</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.StorelayoutpageListCall.html'
+                               title='google_androidenterprise1::StorelayoutpageListCall'>StorelayoutpageListCall</a></td>
+                        <td class='docblock short'>
+                             <p>Retrieves the details of all pages in the store.</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.StorelayoutpageMethods.html'
+                               title='google_androidenterprise1::StorelayoutpageMethods'>StorelayoutpageMethods</a></td>
+                        <td class='docblock short'>
+                             <p>A builder providing access to all methods supported on <em>storelayoutpage</em> resources.
+It is not used directly, but through the <code>AndroidEnterprise</code> hub.</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.StorelayoutpagePatchCall.html'
+                               title='google_androidenterprise1::StorelayoutpagePatchCall'>StorelayoutpagePatchCall</a></td>
+                        <td class='docblock short'>
+                             <p>Updates the content of a store page. This method supports patch semantics.</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.StorelayoutpageUpdateCall.html'
+                               title='google_androidenterprise1::StorelayoutpageUpdateCall'>StorelayoutpageUpdateCall</a></td>
+                        <td class='docblock short'>
+                             <p>Updates the content of a store page.</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.User.html'
+                               title='google_androidenterprise1::User'>User</a></td>
+                        <td class='docblock short'>
+                             <p>A user resource represents an individual user within the enterprise&#39;s domain.</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.UserGenerateTokenCall.html'
+                               title='google_androidenterprise1::UserGenerateTokenCall'>UserGenerateTokenCall</a></td>
+                        <td class='docblock short'>
+                             <p>Generates a token (activation code) to allow this user to configure their work account in the Android Setup Wizard. Revokes any previously generated token.</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.UserGetAvailableProductSetCall.html'
+                               title='google_androidenterprise1::UserGetAvailableProductSetCall'>UserGetAvailableProductSetCall</a></td>
+                        <td class='docblock short'>
+                             <p>Retrieves the set of products a user is entitled to access.</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.UserGetCall.html'
+                               title='google_androidenterprise1::UserGetCall'>UserGetCall</a></td>
+                        <td class='docblock short'>
+                             <p>Retrieves a user&#39;s details.</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.UserListCall.html'
+                               title='google_androidenterprise1::UserListCall'>UserListCall</a></td>
+                        <td class='docblock short'>
+                             <p>Looks up a user by email address. This only works for Google managed users.</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.UserMethods.html'
+                               title='google_androidenterprise1::UserMethods'>UserMethods</a></td>
+                        <td class='docblock short'>
+                             <p>A builder providing access to all methods supported on <em>user</em> resources.
+It is not used directly, but through the <code>AndroidEnterprise</code> hub.</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.UserRevokeTokenCall.html'
                                title='google_androidenterprise1::UserRevokeTokenCall'>UserRevokeTokenCall</a></td>
-                        <td class='docblock short'><p>Revokes a previously generated token (activation code) for the user.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Revokes a previously generated token (activation code) for the user.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.UserToken.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.UserSetAvailableProductSetCall.html'
+                               title='google_androidenterprise1::UserSetAvailableProductSetCall'>UserSetAvailableProductSetCall</a></td>
+                        <td class='docblock short'>
+                             <p>Modifies the set of products a user is entitled to access.</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.UserToken.html'
                                title='google_androidenterprise1::UserToken'>UserToken</a></td>
-                        <td class='docblock short'><p>A UserToken is used by a user when setting up a managed device or profile with their work account on a device. When the user enters their email address and token (activation code) the appropriate MDM app can be automatically downloaded.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>A UserToken is used by a user when setting up a managed device or profile with their work account on a device. When the user enters their email address and token (activation code) the appropriate MDM app can be automatically downloaded.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.UsersListResponse.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.UsersListResponse.html'
                                title='google_androidenterprise1::UsersListResponse'>UsersListResponse</a></td>
-                        <td class='docblock short'><p>The matching user resources.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>The matching user resources.</p>
+
+                        </td>
                     </tr>
                 </table><h2 id='enums' class='section-header'><a href="#enums">Enums</a></h2>
 <table>
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='enum' href='enum.Error.html'
+                    <tr class=' module-item'>
+                        <td><a class='enum' href='enum.Error.html'
                                title='google_androidenterprise1::Error'>Error</a></td>
-                        <td class='docblock short'></td>
+                        <td class='docblock short'>
+                             
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='enum' href='enum.Scope.html'
+                    <tr class=' module-item'>
+                        <td><a class='enum' href='enum.Scope.html'
                                title='google_androidenterprise1::Scope'>Scope</a></td>
-                        <td class='docblock short'><p>Identifies the an OAuth2 authorization scope.
+                        <td class='docblock short'>
+                             <p>Identifies the an OAuth2 authorization scope.
 A scope is needed when requesting an
 <a href="https://developers.google.com/youtube/v3/guides/authentication">authorization token</a>.</p>
-</td>
+
+                        </td>
                     </tr>
                 </table><h2 id='traits' class='section-header'><a href="#traits">Traits</a></h2>
 <table>
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.CallBuilder.html'
+                    <tr class=' module-item'>
+                        <td><a class='trait' href='trait.CallBuilder.html'
                                title='google_androidenterprise1::CallBuilder'>CallBuilder</a></td>
-                        <td class='docblock short'><p>Identifies types which represent builders for a particular resource method</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Identifies types which represent builders for a particular resource method</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.Delegate.html'
+                    <tr class=' module-item'>
+                        <td><a class='trait' href='trait.Delegate.html'
                                title='google_androidenterprise1::Delegate'>Delegate</a></td>
-                        <td class='docblock short'><p>A trait specifying functionality to help controlling any request performed by the API.
+                        <td class='docblock short'>
+                             <p>A trait specifying functionality to help controlling any request performed by the API.
 The trait has a conservative default implementation.</p>
-</td>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.Hub.html'
+                    <tr class=' module-item'>
+                        <td><a class='trait' href='trait.Hub.html'
                                title='google_androidenterprise1::Hub'>Hub</a></td>
-                        <td class='docblock short'><p>Identifies the Hub. There is only one per library, this trait is supposed
+                        <td class='docblock short'>
+                             <p>Identifies the Hub. There is only one per library, this trait is supposed
 to make intended use more explicit.
 The hub allows to access all resource methods more easily.</p>
-</td>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.MethodsBuilder.html'
+                    <tr class=' module-item'>
+                        <td><a class='trait' href='trait.MethodsBuilder.html'
                                title='google_androidenterprise1::MethodsBuilder'>MethodsBuilder</a></td>
-                        <td class='docblock short'><p>Identifies types for building methods of a particular resource type</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Identifies types for building methods of a particular resource type</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.NestedType.html'
+                    <tr class=' module-item'>
+                        <td><a class='trait' href='trait.NestedType.html'
                                title='google_androidenterprise1::NestedType'>NestedType</a></td>
-                        <td class='docblock short'><p>Identifies types which are only used by other types internally.
+                        <td class='docblock short'>
+                             <p>Identifies types which are only used by other types internally.
 They have no special meaning, this trait just marks them for completeness.</p>
-</td>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.Part.html'
+                    <tr class=' module-item'>
+                        <td><a class='trait' href='trait.Part.html'
                                title='google_androidenterprise1::Part'>Part</a></td>
-                        <td class='docblock short'><p>Identifies types which are only used as part of other types, which
+                        <td class='docblock short'>
+                             <p>Identifies types which are only used as part of other types, which
 usually are carrying the <code>Resource</code> trait.</p>
-</td>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.ReadSeek.html'
+                    <tr class=' module-item'>
+                        <td><a class='trait' href='trait.ReadSeek.html'
                                title='google_androidenterprise1::ReadSeek'>ReadSeek</a></td>
-                        <td class='docblock short'><p>A utility to specify reader types which provide seeking capabilities too</p>
-</td>
+                        <td class='docblock short'>
+                             <p>A utility to specify reader types which provide seeking capabilities too</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.RequestValue.html'
+                    <tr class=' module-item'>
+                        <td><a class='trait' href='trait.RequestValue.html'
                                title='google_androidenterprise1::RequestValue'>RequestValue</a></td>
-                        <td class='docblock short'><p>Identifies types which are used in API requests.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Identifies types which are used in API requests.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.Resource.html'
+                    <tr class=' module-item'>
+                        <td><a class='trait' href='trait.Resource.html'
                                title='google_androidenterprise1::Resource'>Resource</a></td>
-                        <td class='docblock short'><p>Identifies types which can be inserted and deleted.
+                        <td class='docblock short'>
+                             <p>Identifies types which can be inserted and deleted.
 Types with this trait are most commonly used by clients of this API.</p>
-</td>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.ResponseResult.html'
+                    <tr class=' module-item'>
+                        <td><a class='trait' href='trait.ResponseResult.html'
                                title='google_androidenterprise1::ResponseResult'>ResponseResult</a></td>
-                        <td class='docblock short'><p>Identifies types which are used in API responses.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Identifies types which are used in API responses.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.ToParts.html'
+                    <tr class=' module-item'>
+                        <td><a class='trait' href='trait.ToParts.html'
                                title='google_androidenterprise1::ToParts'>ToParts</a></td>
-                        <td class='docblock short'><p>A trait for all types that can convert themselves into a <em>parts</em> string</p>
-</td>
+                        <td class='docblock short'>
+                             <p>A trait for all types that can convert themselves into a <em>parts</em> string</p>
+
+                        </td>
                     </tr>
                 </table><h2 id='functions' class='section-header'><a href="#functions">Functions</a></h2>
 <table>
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.remove_json_null_values.html'
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.remove_json_null_values.html'
                                title='google_androidenterprise1::remove_json_null_values'>remove_json_null_values</a></td>
-                        <td class='docblock short'></td>
+                        <td class='docblock short'>
+                             
+                        </td>
                     </tr>
                 </table><h2 id='types' class='section-header'><a href="#types">Type Definitions</a></h2>
 <table>
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='type' href='type.Result.html'
+                    <tr class=' module-item'>
+                        <td><a class='type' href='type.Result.html'
                                title='google_androidenterprise1::Result'>Result</a></td>
-                        <td class='docblock short'><p>A universal result type used as return for all calls.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>A universal result type used as return for all calls.</p>
+
+                        </td>
                     </tr>
                 </table></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
 
-    <div id="help" class="hidden">
-        <div class="shortcuts">
-            <h1>Keyboard shortcuts</h1>
-            <dl>
-                <dt>?</dt>
-                <dd>Show this help dialog</dd>
-                <dt>S</dt>
-                <dd>Focus the search field</dd>
-                <dt>&larrb;</dt>
-                <dd>Move up in search results</dd>
-                <dt>&rarrb;</dt>
-                <dd>Move down in search results</dd>
-                <dt>&#9166;</dt>
-                <dd>Go to active search result</dd>
-            </dl>
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code>)
+                </p>
+            </div>
         </div>
-        <div class="infos">
-            <h1>Search tricks</h1>
-            <p>
-                Prefix searches with a type followed by a colon (e.g.
-                <code>fn:</code>) to restrict the search to a given type.
-            </p>
-            <p>
-                Accepted types are: <code>fn</code>, <code>mod</code>,
-                <code>struct</code>, <code>enum</code>,
-                <code>trait</code>, <code>typedef</code> (or
-                <code>tdef</code>).
-            </p>
-        </div>
-    </div>
+    </aside>
 
     
 
@@ -1057,6 +1577,6 @@ Types with this trait are most commonly used by clients of this API.</p>
     <script src="../jquery.js"></script>
     <script src="../main.js"></script>
     
-    <script async src="../search-index.js"></script>
+    <script defer src="../search-index.js"></script>
 </body>
 </html>

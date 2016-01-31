@@ -9,6 +9,7 @@
 
     <title>lib.rs.html -- source</title>
 
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../../main.css">
 
     
@@ -24,17 +25,17 @@
 
     
 
-    <section class="sidebar">
+    <nav class="sidebar">
         
         
-    </section>
+    </nav>
 
     <nav class="sub">
         <form class="search-form js-only">
             <div class="search-container">
                 <input class="search-input" name="search"
                        autocomplete="off"
-                       placeholder="Click or press 'S' to search, '?' for more options..."
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
                        type="search">
             </div>
         </form>
@@ -262,19 +263,12 @@
 <span id="220">220</span>
 <span id="221">221</span>
 <span id="222">222</span>
-<span id="223">223</span>
-<span id="224">224</span>
-<span id="225">225</span>
-<span id="226">226</span>
-<span id="227">227</span>
-<span id="228">228</span>
-<span id="229">229</span>
 </pre><pre class='rust '>
 <span class='comment'>// DO NOT EDIT !</span>
 <span class='comment'>// This file was generated automatically from &#39;src/mako/api/lib.rs.mako&#39;</span>
 <span class='comment'>// DO NOT EDIT !</span>
 
-<span class='doccomment'>//! This documentation was generated from *Tag Manager* crate version *0.1.8+20150121*, where *20150121* is the exact revision of the *tagmanager:v1* schema built by the [mako](http://www.makotemplates.org/) code generator *v0.1.8*.</span>
+<span class='doccomment'>//! This documentation was generated from *Tag Manager* crate version *0.1.11+20151112*, where *20151112* is the exact revision of the *tagmanager:v1* schema built by the [mako](http://www.makotemplates.org/) code generator *v0.1.11*.</span>
 <span class='doccomment'>//! </span>
 <span class='doccomment'>//! Everything else about the *Tag Manager* *v1* API can be found at the</span>
 <span class='doccomment'>//! [official documentation site](https://developers.google.com/tag-manager/api/v1/).</span>
@@ -284,7 +278,7 @@
 <span class='doccomment'>//! Handle the following *Resources* with ease from the central [hub](struct.TagManager.html) ... </span>
 <span class='doccomment'>//! </span>
 <span class='doccomment'>//! * [accounts](struct.Account.html)</span>
-<span class='doccomment'>//!  * [*containers create*](struct.AccountContainerCreateCall.html), [*containers delete*](struct.AccountContainerDeleteCall.html), [*containers get*](struct.AccountContainerGetCall.html), [*containers list*](struct.AccountContainerListCall.html), [*containers macros create*](struct.AccountContainerMacroCreateCall.html), [*containers macros delete*](struct.AccountContainerMacroDeleteCall.html), [*containers macros get*](struct.AccountContainerMacroGetCall.html), [*containers macros list*](struct.AccountContainerMacroListCall.html), [*containers macros update*](struct.AccountContainerMacroUpdateCall.html), [*containers rules create*](struct.AccountContainerRuleCreateCall.html), [*containers rules delete*](struct.AccountContainerRuleDeleteCall.html), [*containers rules get*](struct.AccountContainerRuleGetCall.html), [*containers rules list*](struct.AccountContainerRuleListCall.html), [*containers rules update*](struct.AccountContainerRuleUpdateCall.html), [*containers tags create*](struct.AccountContainerTagCreateCall.html), [*containers tags delete*](struct.AccountContainerTagDeleteCall.html), [*containers tags get*](struct.AccountContainerTagGetCall.html), [*containers tags list*](struct.AccountContainerTagListCall.html), [*containers tags update*](struct.AccountContainerTagUpdateCall.html), [*containers triggers create*](struct.AccountContainerTriggerCreateCall.html), [*containers triggers delete*](struct.AccountContainerTriggerDeleteCall.html), [*containers triggers get*](struct.AccountContainerTriggerGetCall.html), [*containers triggers list*](struct.AccountContainerTriggerListCall.html), [*containers triggers update*](struct.AccountContainerTriggerUpdateCall.html), [*containers update*](struct.AccountContainerUpdateCall.html), [*containers variables create*](struct.AccountContainerVariableCreateCall.html), [*containers variables delete*](struct.AccountContainerVariableDeleteCall.html), [*containers variables get*](struct.AccountContainerVariableGetCall.html), [*containers variables list*](struct.AccountContainerVariableListCall.html), [*containers variables update*](struct.AccountContainerVariableUpdateCall.html), [*containers versions create*](struct.AccountContainerVersionCreateCall.html), [*containers versions delete*](struct.AccountContainerVersionDeleteCall.html), [*containers versions get*](struct.AccountContainerVersionGetCall.html), [*containers versions list*](struct.AccountContainerVersionListCall.html), [*containers versions publish*](struct.AccountContainerVersionPublishCall.html), [*containers versions restore*](struct.AccountContainerVersionRestoreCall.html), [*containers versions undelete*](struct.AccountContainerVersionUndeleteCall.html), [*containers versions update*](struct.AccountContainerVersionUpdateCall.html), [*get*](struct.AccountGetCall.html), [*list*](struct.AccountListCall.html), [*permissions create*](struct.AccountPermissionCreateCall.html), [*permissions delete*](struct.AccountPermissionDeleteCall.html), [*permissions get*](struct.AccountPermissionGetCall.html), [*permissions list*](struct.AccountPermissionListCall.html), [*permissions update*](struct.AccountPermissionUpdateCall.html) and [*update*](struct.AccountUpdateCall.html)</span>
+<span class='doccomment'>//!  * [*containers create*](struct.AccountContainerCreateCall.html), [*containers delete*](struct.AccountContainerDeleteCall.html), [*containers folders create*](struct.AccountContainerFolderCreateCall.html), [*containers folders delete*](struct.AccountContainerFolderDeleteCall.html), [*containers folders entities list*](struct.AccountContainerFolderEntityListCall.html), [*containers folders get*](struct.AccountContainerFolderGetCall.html), [*containers folders list*](struct.AccountContainerFolderListCall.html), [*containers folders update*](struct.AccountContainerFolderUpdateCall.html), [*containers get*](struct.AccountContainerGetCall.html), [*containers list*](struct.AccountContainerListCall.html), [*containers move_folders update*](struct.AccountContainerMoveFolderUpdateCall.html), [*containers tags create*](struct.AccountContainerTagCreateCall.html), [*containers tags delete*](struct.AccountContainerTagDeleteCall.html), [*containers tags get*](struct.AccountContainerTagGetCall.html), [*containers tags list*](struct.AccountContainerTagListCall.html), [*containers tags update*](struct.AccountContainerTagUpdateCall.html), [*containers triggers create*](struct.AccountContainerTriggerCreateCall.html), [*containers triggers delete*](struct.AccountContainerTriggerDeleteCall.html), [*containers triggers get*](struct.AccountContainerTriggerGetCall.html), [*containers triggers list*](struct.AccountContainerTriggerListCall.html), [*containers triggers update*](struct.AccountContainerTriggerUpdateCall.html), [*containers update*](struct.AccountContainerUpdateCall.html), [*containers variables create*](struct.AccountContainerVariableCreateCall.html), [*containers variables delete*](struct.AccountContainerVariableDeleteCall.html), [*containers variables get*](struct.AccountContainerVariableGetCall.html), [*containers variables list*](struct.AccountContainerVariableListCall.html), [*containers variables update*](struct.AccountContainerVariableUpdateCall.html), [*containers versions create*](struct.AccountContainerVersionCreateCall.html), [*containers versions delete*](struct.AccountContainerVersionDeleteCall.html), [*containers versions get*](struct.AccountContainerVersionGetCall.html), [*containers versions list*](struct.AccountContainerVersionListCall.html), [*containers versions publish*](struct.AccountContainerVersionPublishCall.html), [*containers versions restore*](struct.AccountContainerVersionRestoreCall.html), [*containers versions undelete*](struct.AccountContainerVersionUndeleteCall.html), [*containers versions update*](struct.AccountContainerVersionUpdateCall.html), [*get*](struct.AccountGetCall.html), [*list*](struct.AccountListCall.html), [*permissions create*](struct.AccountPermissionCreateCall.html), [*permissions delete*](struct.AccountPermissionDeleteCall.html), [*permissions get*](struct.AccountPermissionGetCall.html), [*permissions list*](struct.AccountPermissionListCall.html), [*permissions update*](struct.AccountPermissionUpdateCall.html) and [*update*](struct.AccountUpdateCall.html)</span>
 <span class='doccomment'>//! </span>
 <span class='doccomment'>//! </span>
 <span class='doccomment'>//! </span>
@@ -321,7 +315,7 @@
 <span class='doccomment'>//! ```ignore</span>
 <span class='doccomment'>//! let r = hub.accounts().containers_list(...).doit()</span>
 <span class='doccomment'>//! let r = hub.accounts().permissions_list(...).doit()</span>
-<span class='doccomment'>//! let r = hub.accounts().containers_versions_undelete(...).doit()</span>
+<span class='doccomment'>//! let r = hub.accounts().containers_create(...).doit()</span>
 <span class='doccomment'>//! let r = hub.accounts().permissions_create(...).doit()</span>
 <span class='doccomment'>//! let r = hub.accounts().permissions_delete(...).doit()</span>
 <span class='doccomment'>//! let r = hub.accounts().containers_get(...).doit()</span>
@@ -329,39 +323,36 @@
 <span class='doccomment'>//! let r = hub.accounts().containers_triggers_update(...).doit()</span>
 <span class='doccomment'>//! let r = hub.accounts().containers_triggers_get(...).doit()</span>
 <span class='doccomment'>//! let r = hub.accounts().containers_delete(...).doit()</span>
-<span class='doccomment'>//! let r = hub.accounts().containers_create(...).doit()</span>
+<span class='doccomment'>//! let r = hub.accounts().containers_folders_delete(...).doit()</span>
 <span class='doccomment'>//! let r = hub.accounts().containers_tags_delete(...).doit()</span>
-<span class='doccomment'>//! let r = hub.accounts().containers_rules_update(...).doit()</span>
-<span class='doccomment'>//! let r = hub.accounts().containers_rules_delete(...).doit()</span>
+<span class='doccomment'>//! let r = hub.accounts().containers_folders_entities_list(...).doit()</span>
+<span class='doccomment'>//! let r = hub.accounts().containers_versions_undelete(...).doit()</span>
 <span class='doccomment'>//! let r = hub.accounts().containers_tags_list(...).doit()</span>
 <span class='doccomment'>//! let r = hub.accounts().containers_versions_publish(...).doit()</span>
+<span class='doccomment'>//! let r = hub.accounts().containers_folders_get(...).doit()</span>
 <span class='doccomment'>//! let r = hub.accounts().containers_tags_create(...).doit()</span>
 <span class='doccomment'>//! let r = hub.accounts().containers_triggers_list(...).doit()</span>
 <span class='doccomment'>//! let r = hub.accounts().containers_versions_delete(...).doit()</span>
 <span class='doccomment'>//! let r = hub.accounts().update(...).doit()</span>
-<span class='doccomment'>//! let r = hub.accounts().containers_macros_delete(...).doit()</span>
 <span class='doccomment'>//! let r = hub.accounts().containers_versions_create(...).doit()</span>
 <span class='doccomment'>//! let r = hub.accounts().permissions_get(...).doit()</span>
-<span class='doccomment'>//! let r = hub.accounts().containers_rules_create(...).doit()</span>
+<span class='doccomment'>//! let r = hub.accounts().containers_move_folders_update(...).doit()</span>
 <span class='doccomment'>//! let r = hub.accounts().containers_versions_restore(...).doit()</span>
-<span class='doccomment'>//! let r = hub.accounts().containers_rules_get(...).doit()</span>
 <span class='doccomment'>//! let r = hub.accounts().containers_variables_create(...).doit()</span>
 <span class='doccomment'>//! let r = hub.accounts().containers_variables_list(...).doit()</span>
-<span class='doccomment'>//! let r = hub.accounts().containers_macros_create(...).doit()</span>
 <span class='doccomment'>//! let r = hub.accounts().containers_tags_get(...).doit()</span>
 <span class='doccomment'>//! let r = hub.accounts().containers_variables_get(...).doit()</span>
 <span class='doccomment'>//! let r = hub.accounts().containers_triggers_delete(...).doit()</span>
-<span class='doccomment'>//! let r = hub.accounts().containers_macros_list(...).doit()</span>
 <span class='doccomment'>//! let r = hub.accounts().containers_triggers_create(...).doit()</span>
-<span class='doccomment'>//! let r = hub.accounts().containers_macros_update(...).doit()</span>
+<span class='doccomment'>//! let r = hub.accounts().containers_folders_update(...).doit()</span>
 <span class='doccomment'>//! let r = hub.accounts().list(...).doit()</span>
 <span class='doccomment'>//! let r = hub.accounts().permissions_update(...).doit()</span>
 <span class='doccomment'>//! let r = hub.accounts().containers_variables_delete(...).doit()</span>
 <span class='doccomment'>//! let r = hub.accounts().get(...).doit()</span>
 <span class='doccomment'>//! let r = hub.accounts().containers_update(...).doit()</span>
-<span class='doccomment'>//! let r = hub.accounts().containers_rules_list(...).doit()</span>
 <span class='doccomment'>//! let r = hub.accounts().containers_tags_update(...).doit()</span>
-<span class='doccomment'>//! let r = hub.accounts().containers_macros_get(...).doit()</span>
+<span class='doccomment'>//! let r = hub.accounts().containers_folders_create(...).doit()</span>
+<span class='doccomment'>//! let r = hub.accounts().containers_folders_list(...).doit()</span>
 <span class='doccomment'>//! let r = hub.accounts().containers_versions_update(...).doit()</span>
 <span class='doccomment'>//! let r = hub.accounts().containers_variables_update(...).doit()</span>
 <span class='doccomment'>//! let r = hub.accounts().containers_versions_get(...).doit()</span>
@@ -389,7 +380,6 @@
 <span class='doccomment'>//! extern crate hyper;</span>
 <span class='doccomment'>//! extern crate yup_oauth2 as oauth2;</span>
 <span class='doccomment'>//! extern crate google_tagmanager1 as tagmanager1;</span>
-<span class='doccomment'>//! use tagmanager1::Trigger;</span>
 <span class='doccomment'>//! use tagmanager1::{Result, Error};</span>
 <span class='doccomment'>//! # #[test] fn egal() {</span>
 <span class='doccomment'>//! use std::default::Default;</span>
@@ -408,16 +398,13 @@
 <span class='doccomment'>//!                               hyper::Client::new(),</span>
 <span class='doccomment'>//!                               &lt;MemoryStorage as Default&gt;::default(), None);</span>
 <span class='doccomment'>//! let mut hub = TagManager::new(hyper::Client::new(), auth);</span>
-<span class='doccomment'>//! // As the method needs a request, you would usually fill it with the desired information</span>
-<span class='doccomment'>//! // into the respective structure. Some of the parts shown here might not be applicable !</span>
-<span class='doccomment'>//! // Values shown here are possibly random and not representative !</span>
-<span class='doccomment'>//! let mut req = Trigger::default();</span>
-<span class='doccomment'>//! </span>
 <span class='doccomment'>//! // You can configure optional parameters by calling the respective setters at will, and</span>
 <span class='doccomment'>//! // execute the final call using `doit()`.</span>
 <span class='doccomment'>//! // Values shown here are possibly random and not representative !</span>
-<span class='doccomment'>//! let result = hub.accounts().containers_triggers_update(req, &quot;accountId&quot;, &quot;containerId&quot;, &quot;triggerId&quot;)</span>
-<span class='doccomment'>//!              .fingerprint(&quot;diam&quot;)</span>
+<span class='doccomment'>//! let result = hub.accounts().containers_move_folders_update(&quot;accountId&quot;, &quot;containerId&quot;, &quot;folderId&quot;)</span>
+<span class='doccomment'>//!              .add_variable_id(&quot;diam&quot;)</span>
+<span class='doccomment'>//!              .add_trigger_id(&quot;justo&quot;)</span>
+<span class='doccomment'>//!              .add_tag_id(&quot;est&quot;)</span>
 <span class='doccomment'>//!              .doit();</span>
 <span class='doccomment'>//! </span>
 <span class='doccomment'>//! match result {</span>
@@ -498,43 +485,55 @@
 <span class='comment'>// unused imports in fully featured APIs. Same with unused_mut ... .</span>
 <span class='attribute'>#<span class='op'>!</span>[<span class='ident'>allow</span>(<span class='ident'>unused_imports</span>, <span class='ident'>unused_mut</span>, <span class='ident'>dead_code</span>)]</span>
 
-<span class='macro'>include</span><span class='macro'>!</span>(<span class='macro'>concat</span><span class='macro'>!</span>(<span class='macro'>env</span><span class='macro'>!</span>(<span class='string'>&quot;OUT_DIR&quot;</span>), <span class='string'>&quot;/lib.rs&quot;</span>));
-</pre>
+<span class='macro'>include</span><span class='macro'>!</span>(<span class='macro'>concat</span><span class='macro'>!</span>(<span class='macro'>env</span><span class='macro'>!</span>(<span class='string'>&quot;OUT_DIR&quot;</span>), <span class='string'>&quot;/lib.rs&quot;</span>));</pre>
 </section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
 
-    <div id="help" class="hidden">
-        <div class="shortcuts">
-            <h1>Keyboard shortcuts</h1>
-            <dl>
-                <dt>?</dt>
-                <dd>Show this help dialog</dd>
-                <dt>S</dt>
-                <dd>Focus the search field</dd>
-                <dt>&larrb;</dt>
-                <dd>Move up in search results</dd>
-                <dt>&rarrb;</dt>
-                <dd>Move down in search results</dd>
-                <dt>&#9166;</dt>
-                <dd>Go to active search result</dd>
-            </dl>
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code>)
+                </p>
+            </div>
         </div>
-        <div class="infos">
-            <h1>Search tricks</h1>
-            <p>
-                Prefix searches with a type followed by a colon (e.g.
-                <code>fn:</code>) to restrict the search to a given type.
-            </p>
-            <p>
-                Accepted types are: <code>fn</code>, <code>mod</code>,
-                <code>struct</code>, <code>enum</code>,
-                <code>trait</code>, <code>typedef</code> (or
-                <code>tdef</code>).
-            </p>
-        </div>
-    </div>
+    </aside>
 
     
 
@@ -546,6 +545,6 @@
     <script src="../../jquery.js"></script>
     <script src="../../main.js"></script>
     
-    <script async src="../../search-index.js"></script>
+    <script defer src="../../search-index.js"></script>
 </body>
 </html>

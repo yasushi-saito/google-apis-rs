@@ -9,6 +9,7 @@
 
     <title>lib.rs.html -- source</title>
 
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../../main.css">
 
     
@@ -24,17 +25,17 @@
 
     
 
-    <section class="sidebar">
+    <nav class="sidebar">
         
         
-    </section>
+    </nav>
 
     <nav class="sub">
         <form class="search-form js-only">
             <div class="search-container">
                 <input class="search-input" name="search"
                        autocomplete="off"
-                       placeholder="Click or press 'S' to search, '?' for more options..."
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
                        type="search">
             </div>
         </form>
@@ -229,13 +230,12 @@
 <span id="187">187</span>
 <span id="188">188</span>
 <span id="189">189</span>
-<span id="190">190</span>
 </pre><pre class='rust '>
 <span class='comment'>// DO NOT EDIT !</span>
 <span class='comment'>// This file was generated automatically from &#39;src/mako/api/lib.rs.mako&#39;</span>
 <span class='comment'>// DO NOT EDIT !</span>
 
-<span class='doccomment'>//! This documentation was generated from *replicapoolupdater* crate version *0.1.8+20150326*, where *20150326* is the exact revision of the *replicapoolupdater:v1beta1* schema built by the [mako](http://www.makotemplates.org/) code generator *v0.1.8*.</span>
+<span class='doccomment'>//! This documentation was generated from *replicapoolupdater* crate version *0.1.11+20160107*, where *20160107* is the exact revision of the *replicapoolupdater:v1beta1* schema built by the [mako](http://www.makotemplates.org/) code generator *v0.1.11*.</span>
 <span class='doccomment'>//! </span>
 <span class='doccomment'>//! Everything else about the *replicapoolupdater* *v1_beta1* API can be found at the</span>
 <span class='doccomment'>//! [official documentation site](https://cloud.google.com/compute/docs/instance-groups/manager/#applying_rolling_updates_using_the_updater_service).</span>
@@ -247,7 +247,7 @@
 <span class='doccomment'>//! * [rolling updates](struct.RollingUpdate.html)</span>
 <span class='doccomment'>//!  * [*cancel*](struct.RollingUpdateCancelCall.html), [*get*](struct.RollingUpdateGetCall.html), [*insert*](struct.RollingUpdateInsertCall.html), [*list*](struct.RollingUpdateListCall.html), [*list instance updates*](struct.RollingUpdateListInstanceUpdateCall.html), [*pause*](struct.RollingUpdatePauseCall.html), [*resume*](struct.RollingUpdateResumeCall.html) and [*rollback*](struct.RollingUpdateRollbackCall.html)</span>
 <span class='doccomment'>//! * zone operations</span>
-<span class='doccomment'>//!  * [*get*](struct.ZoneOperationGetCall.html)</span>
+<span class='doccomment'>//!  * [*get*](struct.ZoneOperationGetCall.html) and [*list*](struct.ZoneOperationListCall.html)</span>
 <span class='doccomment'>//! </span>
 <span class='doccomment'>//! </span>
 <span class='doccomment'>//! </span>
@@ -335,11 +335,10 @@
 <span class='doccomment'>//! // You can configure optional parameters by calling the respective setters at will, and</span>
 <span class='doccomment'>//! // execute the final call using `doit()`.</span>
 <span class='doccomment'>//! // Values shown here are possibly random and not representative !</span>
-<span class='doccomment'>//! let result = hub.rolling_updates().list(&quot;project&quot;, &quot;zone&quot;)</span>
-<span class='doccomment'>//!              .page_token(&quot;accusam&quot;)</span>
-<span class='doccomment'>//!              .max_results(45)</span>
-<span class='doccomment'>//!              .instance_group_manager(&quot;sea&quot;)</span>
-<span class='doccomment'>//!              .filter(&quot;et&quot;)</span>
+<span class='doccomment'>//! let result = hub.rolling_updates().list_instance_updates(&quot;project&quot;, &quot;zone&quot;, &quot;rollingUpdate&quot;)</span>
+<span class='doccomment'>//!              .page_token(&quot;et&quot;)</span>
+<span class='doccomment'>//!              .max_results(61)</span>
+<span class='doccomment'>//!              .filter(&quot;sanctus&quot;)</span>
 <span class='doccomment'>//!              .doit();</span>
 <span class='doccomment'>//! </span>
 <span class='doccomment'>//! match result {</span>
@@ -420,43 +419,55 @@
 <span class='comment'>// unused imports in fully featured APIs. Same with unused_mut ... .</span>
 <span class='attribute'>#<span class='op'>!</span>[<span class='ident'>allow</span>(<span class='ident'>unused_imports</span>, <span class='ident'>unused_mut</span>, <span class='ident'>dead_code</span>)]</span>
 
-<span class='macro'>include</span><span class='macro'>!</span>(<span class='macro'>concat</span><span class='macro'>!</span>(<span class='macro'>env</span><span class='macro'>!</span>(<span class='string'>&quot;OUT_DIR&quot;</span>), <span class='string'>&quot;/lib.rs&quot;</span>));
-</pre>
+<span class='macro'>include</span><span class='macro'>!</span>(<span class='macro'>concat</span><span class='macro'>!</span>(<span class='macro'>env</span><span class='macro'>!</span>(<span class='string'>&quot;OUT_DIR&quot;</span>), <span class='string'>&quot;/lib.rs&quot;</span>));</pre>
 </section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
 
-    <div id="help" class="hidden">
-        <div class="shortcuts">
-            <h1>Keyboard shortcuts</h1>
-            <dl>
-                <dt>?</dt>
-                <dd>Show this help dialog</dd>
-                <dt>S</dt>
-                <dd>Focus the search field</dd>
-                <dt>&larrb;</dt>
-                <dd>Move up in search results</dd>
-                <dt>&rarrb;</dt>
-                <dd>Move down in search results</dd>
-                <dt>&#9166;</dt>
-                <dd>Go to active search result</dd>
-            </dl>
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code>)
+                </p>
+            </div>
         </div>
-        <div class="infos">
-            <h1>Search tricks</h1>
-            <p>
-                Prefix searches with a type followed by a colon (e.g.
-                <code>fn:</code>) to restrict the search to a given type.
-            </p>
-            <p>
-                Accepted types are: <code>fn</code>, <code>mod</code>,
-                <code>struct</code>, <code>enum</code>,
-                <code>trait</code>, <code>typedef</code> (or
-                <code>tdef</code>).
-            </p>
-        </div>
-    </div>
+    </aside>
 
     
 
@@ -468,6 +479,6 @@
     <script src="../../jquery.js"></script>
     <script src="../../main.js"></script>
     
-    <script async src="../../search-index.js"></script>
+    <script defer src="../../search-index.js"></script>
 </body>
 </html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `InstanceGroupManager` struct in crate `google_compute1`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, InstanceGroupManager">
+
+    <title>google_compute1::InstanceGroupManager - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../main.css">
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='index.html'>google_compute1</a></p><script>window.sidebarCurrent = {name: 'InstanceGroupManager', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content struct">
+<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_compute1</a>::<wbr><a class='struct' href=''>InstanceGroupManager</a></span><span class='out-of-band'><span id='render-detail'>
+            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                [<span class='inner'>&#x2212;</span>]
+            </a>
+        </span><a id='src-5430' class='srclink' href='../src/google_compute1///Users/byron/dev/rs/google-apis-rs/target/debug/build/google-compute1-8ef555a5d87f7ad5/out/lib.rs.html#9354-9385' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct InstanceGroupManager {
+    pub current_actions: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_compute1/struct.InstanceGroupManagerActionsSummary.html' title='google_compute1::InstanceGroupManagerActionsSummary'>InstanceGroupManagerActionsSummary</a>&gt;,
+    pub description: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub zone: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub name: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub fingerprint: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub instance_group: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub target_size: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>&gt;,
+    pub id: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub base_instance_name: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub target_pools: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;&gt;,
+    pub instance_template: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub creation_timestamp: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub kind: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub self_link: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub named_ports: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='../google_compute1/struct.NamedPort.html' title='google_compute1::NamedPort'>NamedPort</a>&gt;&gt;,
+}</pre><div class='docblock'><p>InstanceGroupManagers</p>
+
+<p>Next available tag: 20</p>
+
+<h1 id='activities' class='section-header'><a href='#activities'>Activities</a></h1>
+<p>This type is used in activities, which are methods you may call on this type or where this type is involved in. 
+The list links the activity name, along with information about where it is used (one of <em>request</em> and <em>response</em>).</p>
+
+<ul>
+<li><a href="struct.InstanceGroupManagerListManagedInstanceCall.html">list managed instances instance group managers</a> (none)</li>
+<li><a href="struct.InstanceGroupManagerResizeCall.html">resize instance group managers</a> (none)</li>
+<li><a href="struct.InstanceGroupManagerAggregatedListCall.html">aggregated list instance group managers</a> (none)</li>
+<li><a href="struct.InstanceGroupManagerDeleteInstanceCall.html">delete instances instance group managers</a> (none)</li>
+<li><a href="struct.InstanceGroupManagerDeleteCall.html">delete instance group managers</a> (none)</li>
+<li><a href="struct.InstanceGroupManagerAbandonInstanceCall.html">abandon instances instance group managers</a> (none)</li>
+<li><a href="struct.InstanceGroupManagerGetCall.html">get instance group managers</a> (response)</li>
+<li><a href="struct.InstanceGroupManagerSetInstanceTemplateCall.html">set instance template instance group managers</a> (none)</li>
+<li><a href="struct.InstanceGroupManagerListCall.html">list instance group managers</a> (none)</li>
+<li><a href="struct.InstanceGroupManagerInsertCall.html">insert instance group managers</a> (request)</li>
+<li><a href="struct.InstanceGroupManagerSetTargetPoolCall.html">set target pools instance group managers</a> (none)</li>
+<li><a href="struct.InstanceGroupManagerRecreateInstanceCall.html">recreate instances instance group managers</a> (none)</li>
+</ul>
+</div><h2 class='fields'>Fields</h2>
+<table><tr class='stab '>
+                                  <td id='structfield.current_actions'><code>current_actions</code></td><td><div class='docblock'><p>[Output Only] The list of instance actions and the number of instances in this managed instance group that are scheduled for each of those actions.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.description'><code>description</code></td><td><div class='docblock'><p>An optional description of this resource. Provide this property when you create the resource.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.zone'><code>zone</code></td><td><div class='docblock'><p>The name of the zone where the managed instance group is located.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.name'><code>name</code></td><td><div class='docblock'><p>The name of the managed instance group. The name must be 1-63 characters long, and comply with RFC1035.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.fingerprint'><code>fingerprint</code></td><td><div class='docblock'><p>[Output Only] The fingerprint of the target pools information. You can use this optional field for optimistic locking when you update the target pool entries.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.instance_group'><code>instance_group</code></td><td><div class='docblock'><p>[Output Only] The URL of the Instance Group resource.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.target_size'><code>target_size</code></td><td><div class='docblock'><p>The target number of running instances for this managed instance group. Deleting or abandoning instances reduces this number. Resizing the group changes this number.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.id'><code>id</code></td><td><div class='docblock'><p>[Output Only] A unique identifier for this resource type. The server generates this identifier.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.base_instance_name'><code>base_instance_name</code></td><td><div class='docblock'><p>The base instance name to use for instances in this group. The value must be 1-58 characters long. Instances are named by appending a hyphen and a random four-character string to the base instance name. The base instance name must comply with RFC1035.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.target_pools'><code>target_pools</code></td><td><div class='docblock'><p>The URLs for all TargetPool resources to which instances in the instanceGroup field are added. The target pools automatically apply to all of the instances in the managed instance group.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.instance_template'><code>instance_template</code></td><td><div class='docblock'><p>The URL of the instance template that is specified for this managed instance group. The group uses this template to create all new instances in the managed instance group.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.creation_timestamp'><code>creation_timestamp</code></td><td><div class='docblock'><p>[Output Only] The creation timestamp for this managed instance group in RFC3339 text format.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.kind'><code>kind</code></td><td><div class='docblock'><p>[Output Only] The resource type, which is always compute#instanceGroupManager for managed instance groups.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.self_link'><code>self_link</code></td><td><div class='docblock'><p>[Output Only] The URL for this managed instance group. The server defines this URL.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.named_ports'><code>named_ports</code></td><td><div class='docblock'><p>Named ports configured for the Instance Groups complementary to this Instance Group Manager.</p>
+</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl <a class='trait' href='../serde/de/trait.Deserialize.html' title='serde::de::Deserialize'>Deserialize</a> for <a class='struct' href='../google_compute1/struct.InstanceGroupManager.html' title='google_compute1::InstanceGroupManager'>InstanceGroupManager</a></code></h3><div class='impl-items'><h4 id='method.deserialize' class='method'><code>fn <a href='../serde/de/trait.Deserialize.html#method.deserialize' class='fnname'>deserialize</a>&lt;__D&gt;(deserializer: &amp;mut __D) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../google_compute1/struct.InstanceGroupManager.html' title='google_compute1::InstanceGroupManager'>InstanceGroupManager</a>, __D::Error&gt; <span class='where'>where __D: <a class='trait' href='../serde/de/trait.Deserializer.html' title='serde::de::Deserializer'>Deserializer</a></span></code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='../serde/ser/trait.Serialize.html' title='serde::ser::Serialize'>Serialize</a> for <a class='struct' href='../google_compute1/struct.InstanceGroupManager.html' title='google_compute1::InstanceGroupManager'>InstanceGroupManager</a></code></h3><div class='impl-items'><h4 id='method.serialize' class='method'><code>fn <a href='../serde/ser/trait.Serialize.html#method.serialize' class='fnname'>serialize</a>&lt;__S&gt;(&amp;self, serializer: &amp;mut __S) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, __S::Error&gt; <span class='where'>where __S: <a class='trait' href='../serde/ser/trait.Serializer.html' title='serde::ser::Serializer'>Serializer</a></span></code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='../google_compute1/trait.RequestValue.html' title='google_compute1::RequestValue'>RequestValue</a> for <a class='struct' href='../google_compute1/struct.InstanceGroupManager.html' title='google_compute1::InstanceGroupManager'>InstanceGroupManager</a></code></h3><div class='impl-items'></div><h3 class='impl'><code>impl <a class='trait' href='../google_compute1/trait.Resource.html' title='google_compute1::Resource'>Resource</a> for <a class='struct' href='../google_compute1/struct.InstanceGroupManager.html' title='google_compute1::InstanceGroupManager'>InstanceGroupManager</a></code></h3><div class='impl-items'></div><h3 class='impl'><code>impl <a class='trait' href='../google_compute1/trait.ResponseResult.html' title='google_compute1::ResponseResult'>ResponseResult</a> for <a class='struct' href='../google_compute1/struct.InstanceGroupManager.html' title='google_compute1::InstanceGroupManager'>InstanceGroupManager</a></code></h3><div class='impl-items'></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_compute1/struct.InstanceGroupManager.html' title='google_compute1::InstanceGroupManager'>InstanceGroupManager</a></code></h3><div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#method.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_compute1/struct.InstanceGroupManager.html' title='google_compute1::InstanceGroupManager'>InstanceGroupManager</a></code></h3><div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_compute1/struct.InstanceGroupManager.html' title='google_compute1::InstanceGroupManager'>InstanceGroupManager</a></code></h4>
+<h4 id='method.clone_from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_compute1/struct.InstanceGroupManager.html' title='google_compute1::InstanceGroupManager'>InstanceGroupManager</a></code></h3><div class='impl-items'><h4 id='method.default' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#method.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_compute1/struct.InstanceGroupManager.html' title='google_compute1::InstanceGroupManager'>InstanceGroupManager</a></code></h4>
+</div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "google_compute1";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../jquery.js"></script>
+    <script src="../main.js"></script>
+    
+    <script defer src="../search-index.js"></script>
+</body>
+</html>

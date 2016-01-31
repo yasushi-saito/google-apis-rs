@@ -9,6 +9,7 @@
 
     <title>lib.rs.html -- source</title>
 
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../../main.css">
 
     
@@ -24,17 +25,17 @@
 
     
 
-    <section class="sidebar">
+    <nav class="sidebar">
         
         
-    </section>
+    </nav>
 
     <nav class="sub">
         <form class="search-form js-only">
             <div class="search-container">
                 <input class="search-input" name="search"
                        autocomplete="off"
-                       placeholder="Click or press 'S' to search, '?' for more options..."
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
                        type="search">
             </div>
         </form>
@@ -246,12 +247,25 @@
 <span id="204">204</span>
 <span id="205">205</span>
 <span id="206">206</span>
+<span id="207">207</span>
+<span id="208">208</span>
+<span id="209">209</span>
+<span id="210">210</span>
+<span id="211">211</span>
+<span id="212">212</span>
+<span id="213">213</span>
+<span id="214">214</span>
+<span id="215">215</span>
+<span id="216">216</span>
 </pre><pre class='rust '>
 <span class='comment'>// DO NOT EDIT !</span>
 <span class='comment'>// This file was generated automatically from &#39;src/mako/api/lib.rs.mako&#39;</span>
 <span class='comment'>// DO NOT EDIT !</span>
 
-<span class='doccomment'>//! This documentation was generated from *Android Enterprise* crate version *0.1.8+20150309*, where *20150309* is the exact revision of the *androidenterprise:v1* schema built by the [mako](http://www.makotemplates.org/) code generator *v0.1.8*.</span>
+<span class='doccomment'>//! This documentation was generated from *Android Enterprise* crate version *0.1.11+20160106*, where *20160106* is the exact revision of the *androidenterprise:v1* schema built by the [mako](http://www.makotemplates.org/) code generator *v0.1.11*.</span>
+<span class='doccomment'>//! </span>
+<span class='doccomment'>//! Everything else about the *Android Enterprise* *v1* API can be found at the</span>
+<span class='doccomment'>//! [official documentation site](https://developers.google.com/android/work/play/emm-api).</span>
 <span class='doccomment'>//! The original source code is [on github](https://github.com/Byron/google-apis-rs/tree/master/gen/androidenterprise1).</span>
 <span class='doccomment'>//! # Features</span>
 <span class='doccomment'>//! </span>
@@ -264,7 +278,7 @@
 <span class='doccomment'>//! * [devices](struct.Device.html)</span>
 <span class='doccomment'>//!  * [*get*](struct.DeviceGetCall.html), [*get state*](struct.DeviceGetStateCall.html), [*list*](struct.DeviceListCall.html) and [*set state*](struct.DeviceSetStateCall.html)</span>
 <span class='doccomment'>//! * [enterprises](struct.Enterprise.html)</span>
-<span class='doccomment'>//!  * [*delete*](struct.EnterpriseDeleteCall.html), [*enroll*](struct.EnterpriseEnrollCall.html), [*get*](struct.EnterpriseGetCall.html), [*insert*](struct.EnterpriseInsertCall.html), [*list*](struct.EnterpriseListCall.html), [*set account*](struct.EnterpriseSetAccountCall.html) and [*unenroll*](struct.EnterpriseUnenrollCall.html)</span>
+<span class='doccomment'>//!  * [*delete*](struct.EnterpriseDeleteCall.html), [*enroll*](struct.EnterpriseEnrollCall.html), [*get*](struct.EnterpriseGetCall.html), [*get store layout*](struct.EnterpriseGetStoreLayoutCall.html), [*insert*](struct.EnterpriseInsertCall.html), [*list*](struct.EnterpriseListCall.html), [*send test push notification*](struct.EnterpriseSendTestPushNotificationCall.html), [*set account*](struct.EnterpriseSetAccountCall.html), [*set store layout*](struct.EnterpriseSetStoreLayoutCall.html) and [*unenroll*](struct.EnterpriseUnenrollCall.html)</span>
 <span class='doccomment'>//! * [entitlements](struct.Entitlement.html)</span>
 <span class='doccomment'>//!  * [*delete*](struct.EntitlementDeleteCall.html), [*get*](struct.EntitlementGetCall.html), [*list*](struct.EntitlementListCall.html), [*patch*](struct.EntitlementPatchCall.html) and [*update*](struct.EntitlementUpdateCall.html)</span>
 <span class='doccomment'>//! * grouplicenses</span>
@@ -276,9 +290,13 @@
 <span class='doccomment'>//! * [permissions](struct.Permission.html)</span>
 <span class='doccomment'>//!  * [*get*](struct.PermissionGetCall.html)</span>
 <span class='doccomment'>//! * [products](struct.Product.html)</span>
-<span class='doccomment'>//!  * [*get*](struct.ProductGetCall.html), [*get app restrictions schema*](struct.ProductGetAppRestrictionsSchemaCall.html), [*get permissions*](struct.ProductGetPermissionCall.html) and [*update permissions*](struct.ProductUpdatePermissionCall.html)</span>
+<span class='doccomment'>//!  * [*approve*](struct.ProductApproveCall.html), [*generate approval url*](struct.ProductGenerateApprovalUrlCall.html), [*get*](struct.ProductGetCall.html), [*get app restrictions schema*](struct.ProductGetAppRestrictionsSchemaCall.html), [*get permissions*](struct.ProductGetPermissionCall.html) and [*update permissions*](struct.ProductUpdatePermissionCall.html)</span>
+<span class='doccomment'>//! * storelayoutclusters</span>
+<span class='doccomment'>//!  * [*delete*](struct.StorelayoutclusterDeleteCall.html), [*get*](struct.StorelayoutclusterGetCall.html), [*insert*](struct.StorelayoutclusterInsertCall.html), [*list*](struct.StorelayoutclusterListCall.html), [*patch*](struct.StorelayoutclusterPatchCall.html) and [*update*](struct.StorelayoutclusterUpdateCall.html)</span>
+<span class='doccomment'>//! * storelayoutpages</span>
+<span class='doccomment'>//!  * [*delete*](struct.StorelayoutpageDeleteCall.html), [*get*](struct.StorelayoutpageGetCall.html), [*insert*](struct.StorelayoutpageInsertCall.html), [*list*](struct.StorelayoutpageListCall.html), [*patch*](struct.StorelayoutpagePatchCall.html) and [*update*](struct.StorelayoutpageUpdateCall.html)</span>
 <span class='doccomment'>//! * [users](struct.User.html)</span>
-<span class='doccomment'>//!  * [*generate token*](struct.UserGenerateTokenCall.html), [*get*](struct.UserGetCall.html), [*list*](struct.UserListCall.html) and [*revoke token*](struct.UserRevokeTokenCall.html)</span>
+<span class='doccomment'>//!  * [*generate token*](struct.UserGenerateTokenCall.html), [*get*](struct.UserGetCall.html), [*get available product set*](struct.UserGetAvailableProductSetCall.html), [*list*](struct.UserListCall.html), [*revoke token*](struct.UserRevokeTokenCall.html) and [*set available product set*](struct.UserSetAvailableProductSetCall.html)</span>
 <span class='doccomment'>//! </span>
 <span class='doccomment'>//! </span>
 <span class='doccomment'>//! </span>
@@ -313,12 +331,15 @@
 <span class='doccomment'>//! Or specifically ...</span>
 <span class='doccomment'>//! </span>
 <span class='doccomment'>//! ```ignore</span>
-<span class='doccomment'>//! let r = hub.enterprises().insert(...).doit()</span>
+<span class='doccomment'>//! let r = hub.enterprises().send_test_push_notification(...).doit()</span>
+<span class='doccomment'>//! let r = hub.enterprises().set_store_layout(...).doit()</span>
+<span class='doccomment'>//! let r = hub.enterprises().get_store_layout(...).doit()</span>
 <span class='doccomment'>//! let r = hub.enterprises().list(...).doit()</span>
 <span class='doccomment'>//! let r = hub.enterprises().unenroll(...).doit()</span>
 <span class='doccomment'>//! let r = hub.enterprises().set_account(...).doit()</span>
-<span class='doccomment'>//! let r = hub.enterprises().enroll(...).doit()</span>
 <span class='doccomment'>//! let r = hub.enterprises().delete(...).doit()</span>
+<span class='doccomment'>//! let r = hub.enterprises().enroll(...).doit()</span>
+<span class='doccomment'>//! let r = hub.enterprises().insert(...).doit()</span>
 <span class='doccomment'>//! let r = hub.enterprises().get(...).doit()</span>
 <span class='doccomment'>//! ```</span>
 <span class='doccomment'>//! </span>
@@ -344,7 +365,7 @@
 <span class='doccomment'>//! extern crate hyper;</span>
 <span class='doccomment'>//! extern crate yup_oauth2 as oauth2;</span>
 <span class='doccomment'>//! extern crate google_androidenterprise1 as androidenterprise1;</span>
-<span class='doccomment'>//! use androidenterprise1::Enterprise;</span>
+<span class='doccomment'>//! use androidenterprise1::StoreLayout;</span>
 <span class='doccomment'>//! use androidenterprise1::{Result, Error};</span>
 <span class='doccomment'>//! # #[test] fn egal() {</span>
 <span class='doccomment'>//! use std::default::Default;</span>
@@ -366,12 +387,12 @@
 <span class='doccomment'>//! // As the method needs a request, you would usually fill it with the desired information</span>
 <span class='doccomment'>//! // into the respective structure. Some of the parts shown here might not be applicable !</span>
 <span class='doccomment'>//! // Values shown here are possibly random and not representative !</span>
-<span class='doccomment'>//! let mut req = Enterprise::default();</span>
+<span class='doccomment'>//! let mut req = StoreLayout::default();</span>
 <span class='doccomment'>//! </span>
 <span class='doccomment'>//! // You can configure optional parameters by calling the respective setters at will, and</span>
 <span class='doccomment'>//! // execute the final call using `doit()`.</span>
 <span class='doccomment'>//! // Values shown here are possibly random and not representative !</span>
-<span class='doccomment'>//! let result = hub.enterprises().insert(req, &quot;token&quot;)</span>
+<span class='doccomment'>//! let result = hub.enterprises().set_store_layout(req, &quot;enterpriseId&quot;)</span>
 <span class='doccomment'>//!              .doit();</span>
 <span class='doccomment'>//! </span>
 <span class='doccomment'>//! match result {</span>
@@ -452,43 +473,55 @@
 <span class='comment'>// unused imports in fully featured APIs. Same with unused_mut ... .</span>
 <span class='attribute'>#<span class='op'>!</span>[<span class='ident'>allow</span>(<span class='ident'>unused_imports</span>, <span class='ident'>unused_mut</span>, <span class='ident'>dead_code</span>)]</span>
 
-<span class='macro'>include</span><span class='macro'>!</span>(<span class='macro'>concat</span><span class='macro'>!</span>(<span class='macro'>env</span><span class='macro'>!</span>(<span class='string'>&quot;OUT_DIR&quot;</span>), <span class='string'>&quot;/lib.rs&quot;</span>));
-</pre>
+<span class='macro'>include</span><span class='macro'>!</span>(<span class='macro'>concat</span><span class='macro'>!</span>(<span class='macro'>env</span><span class='macro'>!</span>(<span class='string'>&quot;OUT_DIR&quot;</span>), <span class='string'>&quot;/lib.rs&quot;</span>));</pre>
 </section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
 
-    <div id="help" class="hidden">
-        <div class="shortcuts">
-            <h1>Keyboard shortcuts</h1>
-            <dl>
-                <dt>?</dt>
-                <dd>Show this help dialog</dd>
-                <dt>S</dt>
-                <dd>Focus the search field</dd>
-                <dt>&larrb;</dt>
-                <dd>Move up in search results</dd>
-                <dt>&rarrb;</dt>
-                <dd>Move down in search results</dd>
-                <dt>&#9166;</dt>
-                <dd>Go to active search result</dd>
-            </dl>
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code>)
+                </p>
+            </div>
         </div>
-        <div class="infos">
-            <h1>Search tricks</h1>
-            <p>
-                Prefix searches with a type followed by a colon (e.g.
-                <code>fn:</code>) to restrict the search to a given type.
-            </p>
-            <p>
-                Accepted types are: <code>fn</code>, <code>mod</code>,
-                <code>struct</code>, <code>enum</code>,
-                <code>trait</code>, <code>typedef</code> (or
-                <code>tdef</code>).
-            </p>
-        </div>
-    </div>
+    </aside>
 
     
 
@@ -500,6 +533,6 @@
     <script src="../../jquery.js"></script>
     <script src="../../main.js"></script>
     
-    <script async src="../../search-index.js"></script>
+    <script defer src="../../search-index.js"></script>
 </body>
 </html>

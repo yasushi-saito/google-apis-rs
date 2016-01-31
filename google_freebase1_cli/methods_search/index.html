@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Search - freebase v0.3.0+20150330</title>
+  <title>Search - freebase v0.3.3+20150728</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -17,6 +17,12 @@
   <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
   <link rel="stylesheet" href="../css/highlight.css">
 
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Search";
+  </script>
+  
   <script src="../js/jquery-2.1.1.min.js"></script>
   <script src="../js/modernizr-2.8.3.min.js"></script>
   <script type="text/javascript" src="../js/highlight.pack.js"></script>
@@ -32,52 +38,60 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> freebase v0.3.0+20150330</a>
-        
+        <a href=".." class="icon icon-home"> freebase v0.3.3+20150728</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-      <ul class="current">
-    
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="..">Home</a>
         
-            <li class="toctree-l1 ">
-                <a class="" href="..">Home</a>
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Methods</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../methods_reconcile/">Reconcile</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Search</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#optional-output-flags">Optional Output Flags</a></li>
                 
-            </li>
-        
-
-    
-        
-            <span>Methods</span>
             
-                <li class="toctree-l2 ">
-                    <a class="" href="../methods_reconcile/">Reconcile</a>
-                    
-                </li>
+                <li class="toctree-l3"><a href="#optional-method-properties">Optional Method Properties</a></li>
+                
             
-                <li class="toctree-l2 current">
-                    <a class="current" href="./">Search</a>
-                    
-                        <ul>
-                        
-                            <li class="toctree-l3"><a href="#optional-output-flags">Optional Output Flags</a></li>
-                            
-                        
-                            <li class="toctree-l3"><a href="#optional-method-properties">Optional Method Properties</a></li>
-                            
-                        
-                            <li class="toctree-l3"><a href="#optional-general-properties">Optional General Properties</a></li>
-                            
-                        
-                        </ul>
-                    
-                </li>
+                <li class="toctree-l3"><a href="#optional-general-properties">Optional General Properties</a></li>
+                
             
+            </ul>
         
+    </li>
 
-    
-</ul>
-
+        
+    </ul>
+<li>
+          
+        </ul>
       </div>
       &nbsp;
     </nav>
@@ -87,7 +101,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">freebase v0.3.0+20150330</a>
+        <a href="..">freebase v0.3.3+20150728</a>
       </nav>
 
       
@@ -98,23 +112,26 @@
     <li><a href="..">Docs</a> &raquo;</li>
     
       
-        <li>Methods &raquo;</li>
+        
+          <li>Methods &raquo;</li>
+        
       
     
     <li>Search</li>
-      <li class="wy-breadcrumbs-aside">
+    <li class="wy-breadcrumbs-aside">
+      
         
-          
-            <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/freebase1-cli" class="icon icon-github"> Edit on GitHub</a>
-          
+          <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/freebase1-cli" class="icon icon-github"> Edit on GitHub</a>
         
-      </li>
+      
+    </li>
   </ul>
   <hr/>
 </div>
           <div role="main">
             <div class="section">
-              <p>Search Freebase open data.</p>
+              
+                <p>Search Freebase open data.</p>
 <h1 id="optional-output-flags">Optional Output Flags</h1>
 <p>The method's return value is a byte stream of the downloadable resource.</p>
 <ul>
@@ -144,21 +161,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p domain=string</strong></p>
+<p><strong>-p lang=string</strong></p>
 <ul>
-<li>Restrict to topics with this Freebase domain id.</li>
+<li>The code of the language to run the query with. Default is &#39;en&#39;.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p format=string</strong></p>
+<p><strong>-p filter=string</strong></p>
 <ul>
-<li>Structural format of the json response.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p spell=string</strong></p>
-<ul>
-<li>Request &#39;did you mean&#39; suggestions</li>
+<li>A filter to apply to the query.</li>
 </ul>
 </li>
 <li>
@@ -168,15 +179,27 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p query=string</strong></p>
+<p><strong>-p format=string</strong></p>
 <ul>
-<li>Query term to search for.</li>
+<li>Structural format of the json response.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p lang=string</strong></p>
+<p><strong>-p domain=string</strong></p>
 <ul>
-<li>The code of the language to run the query with. Default is &#39;en&#39;.</li>
+<li>Restrict to topics with this Freebase domain id.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p without=string</strong></p>
+<ul>
+<li>A rule to not match against.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p query=string</strong></p>
+<ul>
+<li>Query term to search for.</li>
 </ul>
 </li>
 <li>
@@ -192,21 +215,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p filter=string</strong></p>
+<p><strong>-p spell=string</strong></p>
 <ul>
-<li>A filter to apply to the query.</li>
+<li>Request &#39;did you mean&#39; suggestions</li>
 </ul>
 </li>
 <li>
-<p><strong>-p indent=boolean</strong></p>
+<p><strong>-p cursor=integer</strong></p>
 <ul>
-<li>Whether to indent the json results or not.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p prefixed=boolean</strong></p>
-<ul>
-<li>Prefix match against names and aliases.</li>
+<li>The cursor value to use for the next page of results.</li>
 </ul>
 </li>
 <li>
@@ -222,9 +239,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p cursor=integer</strong></p>
+<p><strong>-p prefixed=boolean</strong></p>
 <ul>
-<li>The cursor value to use for the next page of results.</li>
+<li>Prefix match against names and aliases.</li>
 </ul>
 </li>
 <li>
@@ -234,9 +251,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p without=string</strong></p>
+<p><strong>-p indent=boolean</strong></p>
 <ul>
-<li>A rule to not match against.</li>
+<li>Whether to indent the json results or not.</li>
 </ul>
 </li>
 <li>
@@ -316,6 +333,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 </ul>
+              
             </div>
           </div>
           <footer>
@@ -331,9 +349,10 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
   <hr/>
 
   <div role="contentinfo">
-    <p>
     <!-- Copyright etc -->
-    </p>
+    
+      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+    
   </div>
 
   Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
@@ -348,17 +367,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 
 <div class="rst-versions" role="note" style="cursor: pointer">
     <span class="rst-current-version" data-toggle="rst-current-version">
-        
-            <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/freebase1-cli" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
-        
-      <span><a href="../methods_reconcile/" style="color: #fcfcfc;">&laquo; Previous</a></span>
-      <span style="margin-left: 15px"><a href="" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+          <a class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../methods_reconcile/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
     </span>
 </div>
 
-<!--
-MkDocs version  : 0.12.2
-Docs Build Date : 2015-06-21 14:30:17.146070
--->
 </body>
 </html>

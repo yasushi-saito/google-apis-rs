@@ -9,6 +9,7 @@
 
     <title>lib.rs.html -- source</title>
 
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../../main.css">
 
     
@@ -24,17 +25,17 @@
 
     
 
-    <section class="sidebar">
+    <nav class="sidebar">
         
         
-    </section>
+    </nav>
 
     <nav class="sub">
         <form class="search-form js-only">
             <div class="search-container">
                 <input class="search-input" name="search"
                        autocomplete="off"
-                       placeholder="Click or press 'S' to search, '?' for more options..."
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
                        type="search">
             </div>
         </form>
@@ -347,12 +348,56 @@
 <span id="305">305</span>
 <span id="306">306</span>
 <span id="307">307</span>
+<span id="308">308</span>
+<span id="309">309</span>
+<span id="310">310</span>
+<span id="311">311</span>
+<span id="312">312</span>
+<span id="313">313</span>
+<span id="314">314</span>
+<span id="315">315</span>
+<span id="316">316</span>
+<span id="317">317</span>
+<span id="318">318</span>
+<span id="319">319</span>
+<span id="320">320</span>
+<span id="321">321</span>
+<span id="322">322</span>
+<span id="323">323</span>
+<span id="324">324</span>
+<span id="325">325</span>
+<span id="326">326</span>
+<span id="327">327</span>
+<span id="328">328</span>
+<span id="329">329</span>
+<span id="330">330</span>
+<span id="331">331</span>
+<span id="332">332</span>
+<span id="333">333</span>
+<span id="334">334</span>
+<span id="335">335</span>
+<span id="336">336</span>
+<span id="337">337</span>
+<span id="338">338</span>
+<span id="339">339</span>
+<span id="340">340</span>
+<span id="341">341</span>
+<span id="342">342</span>
+<span id="343">343</span>
+<span id="344">344</span>
+<span id="345">345</span>
+<span id="346">346</span>
+<span id="347">347</span>
+<span id="348">348</span>
+<span id="349">349</span>
+<span id="350">350</span>
+<span id="351">351</span>
 </pre><pre class='rust '>
 <span class='comment'>// DO NOT EDIT !</span>
 <span class='comment'>// This file was generated automatically from &#39;src/mako/api/lib.rs.mako&#39;</span>
 <span class='comment'>// DO NOT EDIT !</span>
 
-<span class='doccomment'>//! This documentation was generated from *compute* crate version *0.1.8+20150326*, where *20150326* is the exact revision of the *compute:v1* schema built by the [mako](http://www.makotemplates.org/) code generator *v0.1.8*.</span>
+<span class='doccomment'>//! This documentation was generated from *compute* crate version *0.1.11+20160120*, where *20160120* is the exact revision of the *compute:v1* schema built by the [mako](http://www.makotemplates.org/) code generator *v0.1.11*.</span>
 <span class='doccomment'>//! </span>
 <span class='doccomment'>//! Everything else about the *compute* *v1* API can be found at the</span>
 <span class='doccomment'>//! [official documentation site](https://developers.google.com/compute/docs/reference/latest/).</span>
@@ -363,6 +408,8 @@
 <span class='doccomment'>//! </span>
 <span class='doccomment'>//! * addresses</span>
 <span class='doccomment'>//!  * [*aggregated list*](struct.AddresseAggregatedListCall.html), [*delete*](struct.AddresseDeleteCall.html), [*get*](struct.AddresseGetCall.html), [*insert*](struct.AddresseInsertCall.html) and [*list*](struct.AddresseListCall.html)</span>
+<span class='doccomment'>//! * [autoscalers](struct.Autoscaler.html)</span>
+<span class='doccomment'>//!  * [*aggregated list*](struct.AutoscalerAggregatedListCall.html), [*delete*](struct.AutoscalerDeleteCall.html), [*get*](struct.AutoscalerGetCall.html), [*insert*](struct.AutoscalerInsertCall.html), [*list*](struct.AutoscalerListCall.html), [*patch*](struct.AutoscalerPatchCall.html) and [*update*](struct.AutoscalerUpdateCall.html)</span>
 <span class='doccomment'>//! * [backend services](struct.BackendService.html)</span>
 <span class='doccomment'>//!  * [*delete*](struct.BackendServiceDeleteCall.html), [*get*](struct.BackendServiceGetCall.html), [*get health*](struct.BackendServiceGetHealthCall.html), [*insert*](struct.BackendServiceInsertCall.html), [*list*](struct.BackendServiceListCall.html), [*patch*](struct.BackendServicePatchCall.html) and [*update*](struct.BackendServiceUpdateCall.html)</span>
 <span class='doccomment'>//! * [disk types](struct.DiskType.html)</span>
@@ -381,12 +428,18 @@
 <span class='doccomment'>//!  * [*aggregated list*](struct.GlobalOperationAggregatedListCall.html), [*delete*](struct.GlobalOperationDeleteCall.html), [*get*](struct.GlobalOperationGetCall.html) and [*list*](struct.GlobalOperationListCall.html)</span>
 <span class='doccomment'>//! * [http health checks](struct.HttpHealthCheck.html)</span>
 <span class='doccomment'>//!  * [*delete*](struct.HttpHealthCheckDeleteCall.html), [*get*](struct.HttpHealthCheckGetCall.html), [*insert*](struct.HttpHealthCheckInsertCall.html), [*list*](struct.HttpHealthCheckListCall.html), [*patch*](struct.HttpHealthCheckPatchCall.html) and [*update*](struct.HttpHealthCheckUpdateCall.html)</span>
+<span class='doccomment'>//! * [https health checks](struct.HttpsHealthCheck.html)</span>
+<span class='doccomment'>//!  * [*delete*](struct.HttpsHealthCheckDeleteCall.html), [*get*](struct.HttpsHealthCheckGetCall.html), [*insert*](struct.HttpsHealthCheckInsertCall.html), [*list*](struct.HttpsHealthCheckListCall.html), [*patch*](struct.HttpsHealthCheckPatchCall.html) and [*update*](struct.HttpsHealthCheckUpdateCall.html)</span>
 <span class='doccomment'>//! * [images](struct.Image.html)</span>
 <span class='doccomment'>//!  * [*delete*](struct.ImageDeleteCall.html), [*deprecate*](struct.ImageDeprecateCall.html), [*get*](struct.ImageGetCall.html), [*insert*](struct.ImageInsertCall.html) and [*list*](struct.ImageListCall.html)</span>
+<span class='doccomment'>//! * [instance group managers](struct.InstanceGroupManager.html)</span>
+<span class='doccomment'>//!  * [*abandon instances*](struct.InstanceGroupManagerAbandonInstanceCall.html), [*aggregated list*](struct.InstanceGroupManagerAggregatedListCall.html), [*delete*](struct.InstanceGroupManagerDeleteCall.html), [*delete instances*](struct.InstanceGroupManagerDeleteInstanceCall.html), [*get*](struct.InstanceGroupManagerGetCall.html), [*insert*](struct.InstanceGroupManagerInsertCall.html), [*list*](struct.InstanceGroupManagerListCall.html), [*list managed instances*](struct.InstanceGroupManagerListManagedInstanceCall.html), [*recreate instances*](struct.InstanceGroupManagerRecreateInstanceCall.html), [*resize*](struct.InstanceGroupManagerResizeCall.html), [*set instance template*](struct.InstanceGroupManagerSetInstanceTemplateCall.html) and [*set target pools*](struct.InstanceGroupManagerSetTargetPoolCall.html)</span>
+<span class='doccomment'>//! * [instance groups](struct.InstanceGroup.html)</span>
+<span class='doccomment'>//!  * [*add instances*](struct.InstanceGroupAddInstanceCall.html), [*aggregated list*](struct.InstanceGroupAggregatedListCall.html), [*delete*](struct.InstanceGroupDeleteCall.html), [*get*](struct.InstanceGroupGetCall.html), [*insert*](struct.InstanceGroupInsertCall.html), [*list*](struct.InstanceGroupListCall.html), [*list instances*](struct.InstanceGroupListInstanceCall.html), [*remove instances*](struct.InstanceGroupRemoveInstanceCall.html) and [*set named ports*](struct.InstanceGroupSetNamedPortCall.html)</span>
 <span class='doccomment'>//! * [instance templates](struct.InstanceTemplate.html)</span>
 <span class='doccomment'>//!  * [*delete*](struct.InstanceTemplateDeleteCall.html), [*get*](struct.InstanceTemplateGetCall.html), [*insert*](struct.InstanceTemplateInsertCall.html) and [*list*](struct.InstanceTemplateListCall.html)</span>
 <span class='doccomment'>//! * [instances](struct.Instance.html)</span>
-<span class='doccomment'>//!  * [*add access config*](struct.InstanceAddAccessConfigCall.html), [*aggregated list*](struct.InstanceAggregatedListCall.html), [*attach disk*](struct.InstanceAttachDiskCall.html), [*delete*](struct.InstanceDeleteCall.html), [*delete access config*](struct.InstanceDeleteAccessConfigCall.html), [*detach disk*](struct.InstanceDetachDiskCall.html), [*get*](struct.InstanceGetCall.html), [*get serial port output*](struct.InstanceGetSerialPortOutputCall.html), [*insert*](struct.InstanceInsertCall.html), [*list*](struct.InstanceListCall.html), [*reset*](struct.InstanceResetCall.html), [*set disk auto delete*](struct.InstanceSetDiskAutoDeleteCall.html), [*set metadata*](struct.InstanceSetMetadataCall.html), [*set scheduling*](struct.InstanceSetSchedulingCall.html), [*set tags*](struct.InstanceSetTagCall.html), [*start*](struct.InstanceStartCall.html) and [*stop*](struct.InstanceStopCall.html)</span>
+<span class='doccomment'>//!  * [*add access config*](struct.InstanceAddAccessConfigCall.html), [*aggregated list*](struct.InstanceAggregatedListCall.html), [*attach disk*](struct.InstanceAttachDiskCall.html), [*delete*](struct.InstanceDeleteCall.html), [*delete access config*](struct.InstanceDeleteAccessConfigCall.html), [*detach disk*](struct.InstanceDetachDiskCall.html), [*get*](struct.InstanceGetCall.html), [*get serial port output*](struct.InstanceGetSerialPortOutputCall.html), [*insert*](struct.InstanceInsertCall.html), [*list*](struct.InstanceListCall.html), [*reset*](struct.InstanceResetCall.html), [*set disk auto delete*](struct.InstanceSetDiskAutoDeleteCall.html), [*set machine type*](struct.InstanceSetMachineTypeCall.html), [*set metadata*](struct.InstanceSetMetadataCall.html), [*set scheduling*](struct.InstanceSetSchedulingCall.html), [*set tags*](struct.InstanceSetTagCall.html), [*start*](struct.InstanceStartCall.html) and [*stop*](struct.InstanceStopCall.html)</span>
 <span class='doccomment'>//! * [licenses](struct.License.html)</span>
 <span class='doccomment'>//!  * [*get*](struct.LicenseGetCall.html)</span>
 <span class='doccomment'>//! * [machine types](struct.MachineType.html)</span>
@@ -403,8 +456,14 @@
 <span class='doccomment'>//!  * [*delete*](struct.RouteDeleteCall.html), [*get*](struct.RouteGetCall.html), [*insert*](struct.RouteInsertCall.html) and [*list*](struct.RouteListCall.html)</span>
 <span class='doccomment'>//! * [snapshots](struct.Snapshot.html)</span>
 <span class='doccomment'>//!  * [*delete*](struct.SnapshotDeleteCall.html), [*get*](struct.SnapshotGetCall.html) and [*list*](struct.SnapshotListCall.html)</span>
+<span class='doccomment'>//! * [ssl certificates](struct.SslCertificate.html)</span>
+<span class='doccomment'>//!  * [*delete*](struct.SslCertificateDeleteCall.html), [*get*](struct.SslCertificateGetCall.html), [*insert*](struct.SslCertificateInsertCall.html) and [*list*](struct.SslCertificateListCall.html)</span>
+<span class='doccomment'>//! * [subnetworks](struct.Subnetwork.html)</span>
+<span class='doccomment'>//!  * [*aggregated list*](struct.SubnetworkAggregatedListCall.html), [*delete*](struct.SubnetworkDeleteCall.html), [*get*](struct.SubnetworkGetCall.html), [*insert*](struct.SubnetworkInsertCall.html) and [*list*](struct.SubnetworkListCall.html)</span>
 <span class='doccomment'>//! * [target http proxies](struct.TargetHttpProxy.html)</span>
 <span class='doccomment'>//!  * [*delete*](struct.TargetHttpProxyDeleteCall.html), [*get*](struct.TargetHttpProxyGetCall.html), [*insert*](struct.TargetHttpProxyInsertCall.html), [*list*](struct.TargetHttpProxyListCall.html) and [*set url map*](struct.TargetHttpProxySetUrlMapCall.html)</span>
+<span class='doccomment'>//! * [target https proxies](struct.TargetHttpsProxy.html)</span>
+<span class='doccomment'>//!  * [*delete*](struct.TargetHttpsProxyDeleteCall.html), [*get*](struct.TargetHttpsProxyGetCall.html), [*insert*](struct.TargetHttpsProxyInsertCall.html), [*list*](struct.TargetHttpsProxyListCall.html), [*set ssl certificates*](struct.TargetHttpsProxySetSslCertificateCall.html) and [*set url map*](struct.TargetHttpsProxySetUrlMapCall.html)</span>
 <span class='doccomment'>//! * [target instances](struct.TargetInstance.html)</span>
 <span class='doccomment'>//!  * [*aggregated list*](struct.TargetInstanceAggregatedListCall.html), [*delete*](struct.TargetInstanceDeleteCall.html), [*get*](struct.TargetInstanceGetCall.html), [*insert*](struct.TargetInstanceInsertCall.html) and [*list*](struct.TargetInstanceListCall.html)</span>
 <span class='doccomment'>//! * [target pools](struct.TargetPool.html)</span>
@@ -453,81 +512,111 @@
 <span class='doccomment'>//! Or specifically ...</span>
 <span class='doccomment'>//! </span>
 <span class='doccomment'>//! ```ignore</span>
-<span class='doccomment'>//! let r = hub.target_instances().delete(...).doit()</span>
-<span class='doccomment'>//! let r = hub.instances().stop(...).doit()</span>
-<span class='doccomment'>//! let r = hub.target_pools().add_instance(...).doit()</span>
-<span class='doccomment'>//! let r = hub.target_pools().add_health_check(...).doit()</span>
-<span class='doccomment'>//! let r = hub.target_pools().remove_health_check(...).doit()</span>
-<span class='doccomment'>//! let r = hub.backend_services().update(...).doit()</span>
-<span class='doccomment'>//! let r = hub.target_pools().delete(...).doit()</span>
-<span class='doccomment'>//! let r = hub.firewalls().update(...).doit()</span>
-<span class='doccomment'>//! let r = hub.networks().insert(...).doit()</span>
-<span class='doccomment'>//! let r = hub.addresses().insert(...).doit()</span>
-<span class='doccomment'>//! let r = hub.backend_services().patch(...).doit()</span>
-<span class='doccomment'>//! let r = hub.instances().set_tags(...).doit()</span>
-<span class='doccomment'>//! let r = hub.instances().set_disk_auto_delete(...).doit()</span>
-<span class='doccomment'>//! let r = hub.target_http_proxies().insert(...).doit()</span>
-<span class='doccomment'>//! let r = hub.projects().set_usage_export_bucket(...).doit()</span>
-<span class='doccomment'>//! let r = hub.url_maps().update(...).doit()</span>
-<span class='doccomment'>//! let r = hub.instance_templates().insert(...).doit()</span>
+<span class='doccomment'>//! let r = hub.instance_group_managers().resize(...).doit()</span>
+<span class='doccomment'>//! let r = hub.ssl_certificates().delete(...).doit()</span>
+<span class='doccomment'>//! let r = hub.autoscalers().patch(...).doit()</span>
+<span class='doccomment'>//! let r = hub.target_https_proxies().delete(...).doit()</span>
 <span class='doccomment'>//! let r = hub.firewalls().patch(...).doit()</span>
 <span class='doccomment'>//! let r = hub.vpn_tunnels().delete(...).doit()</span>
-<span class='doccomment'>//! let r = hub.firewalls().delete(...).doit()</span>
-<span class='doccomment'>//! let r = hub.instances().detach_disk(...).doit()</span>
-<span class='doccomment'>//! let r = hub.instances().delete_access_config(...).doit()</span>
 <span class='doccomment'>//! let r = hub.backend_services().delete(...).doit()</span>
-<span class='doccomment'>//! let r = hub.instances().insert(...).doit()</span>
 <span class='doccomment'>//! let r = hub.global_forwarding_rules().set_target(...).doit()</span>
+<span class='doccomment'>//! let r = hub.instances().insert(...).doit()</span>
+<span class='doccomment'>//! let r = hub.global_forwarding_rules().delete(...).doit()</span>
+<span class='doccomment'>//! let r = hub.vpn_tunnels().insert(...).doit()</span>
+<span class='doccomment'>//! let r = hub.disks().delete(...).doit()</span>
+<span class='doccomment'>//! let r = hub.instance_groups().add_instances(...).doit()</span>
+<span class='doccomment'>//! let r = hub.target_http_proxies().delete(...).doit()</span>
+<span class='doccomment'>//! let r = hub.instances().set_scheduling(...).doit()</span>
+<span class='doccomment'>//! let r = hub.instances().delete(...).doit()</span>
+<span class='doccomment'>//! let r = hub.target_pools().add_health_check(...).doit()</span>
+<span class='doccomment'>//! let r = hub.instance_group_managers().insert(...).doit()</span>
+<span class='doccomment'>//! let r = hub.global_addresses().insert(...).doit()</span>
+<span class='doccomment'>//! let r = hub.https_health_checks().delete(...).doit()</span>
+<span class='doccomment'>//! let r = hub.autoscalers().insert(...).doit()</span>
+<span class='doccomment'>//! let r = hub.instance_groups().insert(...).doit()</span>
+<span class='doccomment'>//! let r = hub.instances().set_tags(...).doit()</span>
+<span class='doccomment'>//! let r = hub.instance_group_managers().delete_instances(...).doit()</span>
+<span class='doccomment'>//! let r = hub.instance_group_managers().set_instance_template(...).doit()</span>
+<span class='doccomment'>//! let r = hub.target_pools().insert(...).doit()</span>
+<span class='doccomment'>//! let r = hub.instances().set_disk_auto_delete(...).doit()</span>
+<span class='doccomment'>//! let r = hub.instance_group_managers().set_target_pools(...).doit()</span>
+<span class='doccomment'>//! let r = hub.disks().insert(...).doit()</span>
+<span class='doccomment'>//! let r = hub.https_health_checks().insert(...).doit()</span>
+<span class='doccomment'>//! let r = hub.target_pools().remove_health_check(...).doit()</span>
+<span class='doccomment'>//! let r = hub.target_https_proxies().set_url_map(...).doit()</span>
+<span class='doccomment'>//! let r = hub.instances().set_machine_type(...).doit()</span>
 <span class='doccomment'>//! let r = hub.url_maps().insert(...).doit()</span>
 <span class='doccomment'>//! let r = hub.instances().add_access_config(...).doit()</span>
-<span class='doccomment'>//! let r = hub.target_vpn_gateways().delete(...).doit()</span>
-<span class='doccomment'>//! let r = hub.region_operations().get(...).doit()</span>
-<span class='doccomment'>//! let r = hub.backend_services().insert(...).doit()</span>
-<span class='doccomment'>//! let r = hub.global_operations().get(...).doit()</span>
-<span class='doccomment'>//! let r = hub.disks().insert(...).doit()</span>
-<span class='doccomment'>//! let r = hub.instance_templates().delete(...).doit()</span>
-<span class='doccomment'>//! let r = hub.global_forwarding_rules().delete(...).doit()</span>
+<span class='doccomment'>//! let r = hub.addresses().insert(...).doit()</span>
 <span class='doccomment'>//! let r = hub.global_forwarding_rules().insert(...).doit()</span>
-<span class='doccomment'>//! let r = hub.disks().delete(...).doit()</span>
-<span class='doccomment'>//! let r = hub.global_addresses().delete(...).doit()</span>
-<span class='doccomment'>//! let r = hub.projects().set_common_instance_metadata(...).doit()</span>
-<span class='doccomment'>//! let r = hub.target_pools().insert(...).doit()</span>
-<span class='doccomment'>//! let r = hub.target_http_proxies().delete(...).doit()</span>
-<span class='doccomment'>//! let r = hub.networks().delete(...).doit()</span>
-<span class='doccomment'>//! let r = hub.target_vpn_gateways().insert(...).doit()</span>
-<span class='doccomment'>//! let r = hub.url_maps().delete(...).doit()</span>
-<span class='doccomment'>//! let r = hub.instances().set_scheduling(...).doit()</span>
-<span class='doccomment'>//! let r = hub.instances().attach_disk(...).doit()</span>
+<span class='doccomment'>//! let r = hub.global_operations().get(...).doit()</span>
 <span class='doccomment'>//! let r = hub.addresses().delete(...).doit()</span>
-<span class='doccomment'>//! let r = hub.instances().reset(...).doit()</span>
-<span class='doccomment'>//! let r = hub.target_http_proxies().set_url_map(...).doit()</span>
+<span class='doccomment'>//! let r = hub.target_vpn_gateways().insert(...).doit()</span>
 <span class='doccomment'>//! let r = hub.disks().create_snapshot(...).doit()</span>
-<span class='doccomment'>//! let r = hub.routes().insert(...).doit()</span>
-<span class='doccomment'>//! let r = hub.global_addresses().insert(...).doit()</span>
-<span class='doccomment'>//! let r = hub.images().deprecate(...).doit()</span>
-<span class='doccomment'>//! let r = hub.http_health_checks().patch(...).doit()</span>
-<span class='doccomment'>//! let r = hub.http_health_checks().delete(...).doit()</span>
+<span class='doccomment'>//! let r = hub.instance_groups().remove_instances(...).doit()</span>
 <span class='doccomment'>//! let r = hub.instances().set_metadata(...).doit()</span>
-<span class='doccomment'>//! let r = hub.http_health_checks().insert(...).doit()</span>
-<span class='doccomment'>//! let r = hub.images().delete(...).doit()</span>
-<span class='doccomment'>//! let r = hub.snapshots().delete(...).doit()</span>
 <span class='doccomment'>//! let r = hub.forwarding_rules().insert(...).doit()</span>
-<span class='doccomment'>//! let r = hub.images().insert(...).doit()</span>
 <span class='doccomment'>//! let r = hub.instances().start(...).doit()</span>
-<span class='doccomment'>//! let r = hub.target_pools().set_backup(...).doit()</span>
+<span class='doccomment'>//! let r = hub.instance_group_managers().delete(...).doit()</span>
 <span class='doccomment'>//! let r = hub.target_instances().insert(...).doit()</span>
-<span class='doccomment'>//! let r = hub.forwarding_rules().delete(...).doit()</span>
-<span class='doccomment'>//! let r = hub.projects().move_instance(...).doit()</span>
 <span class='doccomment'>//! let r = hub.forwarding_rules().set_target(...).doit()</span>
 <span class='doccomment'>//! let r = hub.projects().move_disk(...).doit()</span>
-<span class='doccomment'>//! let r = hub.vpn_tunnels().insert(...).doit()</span>
 <span class='doccomment'>//! let r = hub.firewalls().insert(...).doit()</span>
+<span class='doccomment'>//! let r = hub.target_pools().set_backup(...).doit()</span>
+<span class='doccomment'>//! let r = hub.routes().insert(...).doit()</span>
+<span class='doccomment'>//! let r = hub.instance_groups().delete(...).doit()</span>
+<span class='doccomment'>//! let r = hub.instances().delete_access_config(...).doit()</span>
+<span class='doccomment'>//! let r = hub.target_https_proxies().set_ssl_certificates(...).doit()</span>
+<span class='doccomment'>//! let r = hub.networks().insert(...).doit()</span>
+<span class='doccomment'>//! let r = hub.instance_group_managers().abandon_instances(...).doit()</span>
+<span class='doccomment'>//! let r = hub.subnetworks().insert(...).doit()</span>
+<span class='doccomment'>//! let r = hub.snapshots().delete(...).doit()</span>
+<span class='doccomment'>//! let r = hub.target_https_proxies().insert(...).doit()</span>
+<span class='doccomment'>//! let r = hub.instances().detach_disk(...).doit()</span>
+<span class='doccomment'>//! let r = hub.backend_services().update(...).doit()</span>
+<span class='doccomment'>//! let r = hub.instance_group_managers().recreate_instances(...).doit()</span>
+<span class='doccomment'>//! let r = hub.images().delete(...).doit()</span>
+<span class='doccomment'>//! let r = hub.projects().set_common_instance_metadata(...).doit()</span>
+<span class='doccomment'>//! let r = hub.region_operations().get(...).doit()</span>
+<span class='doccomment'>//! let r = hub.backend_services().patch(...).doit()</span>
+<span class='doccomment'>//! let r = hub.target_http_proxies().set_url_map(...).doit()</span>
+<span class='doccomment'>//! let r = hub.images().deprecate(...).doit()</span>
+<span class='doccomment'>//! let r = hub.http_health_checks().patch(...).doit()</span>
+<span class='doccomment'>//! let r = hub.images().insert(...).doit()</span>
+<span class='doccomment'>//! let r = hub.instance_groups().set_named_ports(...).doit()</span>
+<span class='doccomment'>//! let r = hub.ssl_certificates().insert(...).doit()</span>
+<span class='doccomment'>//! let r = hub.projects().move_instance(...).doit()</span>
+<span class='doccomment'>//! let r = hub.autoscalers().delete(...).doit()</span>
+<span class='doccomment'>//! let r = hub.https_health_checks().update(...).doit()</span>
+<span class='doccomment'>//! let r = hub.url_maps().patch(...).doit()</span>
+<span class='doccomment'>//! let r = hub.subnetworks().delete(...).doit()</span>
+<span class='doccomment'>//! let r = hub.instances().stop(...).doit()</span>
+<span class='doccomment'>//! let r = hub.target_pools().add_instance(...).doit()</span>
 <span class='doccomment'>//! let r = hub.target_pools().remove_instance(...).doit()</span>
-<span class='doccomment'>//! let r = hub.instances().delete(...).doit()</span>
+<span class='doccomment'>//! let r = hub.target_pools().delete(...).doit()</span>
+<span class='doccomment'>//! let r = hub.firewalls().update(...).doit()</span>
+<span class='doccomment'>//! let r = hub.instance_templates().delete(...).doit()</span>
+<span class='doccomment'>//! let r = hub.projects().set_usage_export_bucket(...).doit()</span>
+<span class='doccomment'>//! let r = hub.target_http_proxies().insert(...).doit()</span>
+<span class='doccomment'>//! let r = hub.url_maps().update(...).doit()</span>
+<span class='doccomment'>//! let r = hub.instance_templates().insert(...).doit()</span>
+<span class='doccomment'>//! let r = hub.target_instances().delete(...).doit()</span>
+<span class='doccomment'>//! let r = hub.target_vpn_gateways().delete(...).doit()</span>
+<span class='doccomment'>//! let r = hub.global_addresses().delete(...).doit()</span>
+<span class='doccomment'>//! let r = hub.https_health_checks().patch(...).doit()</span>
+<span class='doccomment'>//! let r = hub.networks().delete(...).doit()</span>
+<span class='doccomment'>//! let r = hub.url_maps().delete(...).doit()</span>
+<span class='doccomment'>//! let r = hub.instances().reset(...).doit()</span>
+<span class='doccomment'>//! let r = hub.backend_services().insert(...).doit()</span>
+<span class='doccomment'>//! let r = hub.http_health_checks().delete(...).doit()</span>
+<span class='doccomment'>//! let r = hub.http_health_checks().insert(...).doit()</span>
+<span class='doccomment'>//! let r = hub.instances().attach_disk(...).doit()</span>
+<span class='doccomment'>//! let r = hub.autoscalers().update(...).doit()</span>
+<span class='doccomment'>//! let r = hub.forwarding_rules().delete(...).doit()</span>
+<span class='doccomment'>//! let r = hub.firewalls().delete(...).doit()</span>
 <span class='doccomment'>//! let r = hub.zone_operations().get(...).doit()</span>
 <span class='doccomment'>//! let r = hub.http_health_checks().update(...).doit()</span>
 <span class='doccomment'>//! let r = hub.routes().delete(...).doit()</span>
-<span class='doccomment'>//! let r = hub.url_maps().patch(...).doit()</span>
 <span class='doccomment'>//! ```</span>
 <span class='doccomment'>//! </span>
 <span class='doccomment'>//! The `resource()` and `activity(...)` calls create [builders][builder-pattern]. The second one dealing with `Activities` </span>
@@ -654,43 +743,55 @@
 <span class='comment'>// unused imports in fully featured APIs. Same with unused_mut ... .</span>
 <span class='attribute'>#<span class='op'>!</span>[<span class='ident'>allow</span>(<span class='ident'>unused_imports</span>, <span class='ident'>unused_mut</span>, <span class='ident'>dead_code</span>)]</span>
 
-<span class='macro'>include</span><span class='macro'>!</span>(<span class='macro'>concat</span><span class='macro'>!</span>(<span class='macro'>env</span><span class='macro'>!</span>(<span class='string'>&quot;OUT_DIR&quot;</span>), <span class='string'>&quot;/lib.rs&quot;</span>));
-</pre>
+<span class='macro'>include</span><span class='macro'>!</span>(<span class='macro'>concat</span><span class='macro'>!</span>(<span class='macro'>env</span><span class='macro'>!</span>(<span class='string'>&quot;OUT_DIR&quot;</span>), <span class='string'>&quot;/lib.rs&quot;</span>));</pre>
 </section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
 
-    <div id="help" class="hidden">
-        <div class="shortcuts">
-            <h1>Keyboard shortcuts</h1>
-            <dl>
-                <dt>?</dt>
-                <dd>Show this help dialog</dd>
-                <dt>S</dt>
-                <dd>Focus the search field</dd>
-                <dt>&larrb;</dt>
-                <dd>Move up in search results</dd>
-                <dt>&rarrb;</dt>
-                <dd>Move down in search results</dd>
-                <dt>&#9166;</dt>
-                <dd>Go to active search result</dd>
-            </dl>
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code>)
+                </p>
+            </div>
         </div>
-        <div class="infos">
-            <h1>Search tricks</h1>
-            <p>
-                Prefix searches with a type followed by a colon (e.g.
-                <code>fn:</code>) to restrict the search to a given type.
-            </p>
-            <p>
-                Accepted types are: <code>fn</code>, <code>mod</code>,
-                <code>struct</code>, <code>enum</code>,
-                <code>trait</code>, <code>typedef</code> (or
-                <code>tdef</code>).
-            </p>
-        </div>
-    </div>
+    </aside>
 
     
 
@@ -702,6 +803,6 @@
     <script src="../../jquery.js"></script>
     <script src="../../main.js"></script>
     
-    <script async src="../../search-index.js"></script>
+    <script defer src="../../search-index.js"></script>
 </body>
 </html>

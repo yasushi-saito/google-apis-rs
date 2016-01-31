@@ -9,6 +9,7 @@
 
     <title>google_androidpublisher2::ExternallyHostedApk - Rust</title>
 
+    <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
 
     
@@ -24,102 +25,132 @@
 
     
 
-    <section class="sidebar">
+    <nav class="sidebar">
         
         <p class='location'><a href='index.html'>google_androidpublisher2</a></p><script>window.sidebarCurrent = {name: 'ExternallyHostedApk', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
-    </section>
+    </nav>
 
     <nav class="sub">
         <form class="search-form js-only">
             <div class="search-container">
                 <input class="search-input" name="search"
                        autocomplete="off"
-                       placeholder="Click or press 'S' to search, '?' for more options..."
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
                        type="search">
             </div>
         </form>
     </nav>
 
     <section id='main' class="content struct">
-<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_androidpublisher2</a>::<wbr><a class='struct' href=''>ExternallyHostedApk</a><wbr></span><span class='out-of-band'><span id='render-detail'>
-            <a id="collapse-all" href="#">[-]</a>&nbsp;<a id="expand-all" href="#">[+]</a>
-        </span><a id='src-16027' href='../src/google_androidpublisher2///home/byron/dev/rust/google-apis-rs/target/debug/build/google-androidpublisher2-0e513831f3de9e04/out/lib.rs.html#4306-4337'>[src]</a></span></h1>
+<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_androidpublisher2</a>::<wbr><a class='struct' href=''>ExternallyHostedApk</a></span><span class='out-of-band'><span id='render-detail'>
+            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                [<span class='inner'>&#x2212;</span>]
+            </a>
+        </span><a id='src-3417' class='srclink' href='../src/google_androidpublisher2///Users/byron/dev/rs/google-apis-rs/target/debug/build/google-androidpublisher2-4f265ef7a8e8b173/out/lib.rs.html#5798-5829' title='goto source code'>[src]</a></span></h1>
 <pre class='rust struct'>pub struct ExternallyHostedApk {
-    pub icon_base64: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub certificate_base64s: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;&gt;,
-    pub externally_hosted_url: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub maximum_sdk: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>&gt;,
-    pub file_sha256_base64: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub uses_permissions: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='../google_androidpublisher2/struct.ExternallyHostedApkUsesPermission.html' title='google_androidpublisher2::ExternallyHostedApkUsesPermission'>ExternallyHostedApkUsesPermission</a>&gt;&gt;,
-    pub file_sha1_base64: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub uses_features: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;&gt;,
-    pub native_codes: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;&gt;,
-    pub file_size: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub version_name: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub version_code: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>&gt;,
-    pub minimum_sdk: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>&gt;,
-    pub application_label: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub package_name: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub icon_base64: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub certificate_base64s: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;&gt;,
+    pub externally_hosted_url: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub maximum_sdk: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>&gt;,
+    pub file_sha256_base64: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub uses_permissions: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='../google_androidpublisher2/struct.ExternallyHostedApkUsesPermission.html' title='google_androidpublisher2::ExternallyHostedApkUsesPermission'>ExternallyHostedApkUsesPermission</a>&gt;&gt;,
+    pub file_sha1_base64: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub uses_features: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;&gt;,
+    pub native_codes: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;&gt;,
+    pub file_size: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub version_name: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub version_code: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>&gt;,
+    pub minimum_sdk: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>&gt;,
+    pub application_label: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub package_name: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
 }</pre><div class='docblock'><p>Defines an APK available for this application that is hosted externally and not uploaded to Google Play. This function is only available to enterprises who are using Google Play for Work, and whos application is restricted to the enterprise private channel</p>
 
 <p>This type is not used in any activity, and only used as <em>part</em> of another schema.</p>
 </div><h2 class='fields'>Fields</h2>
-<table><tr><td id='structfield.icon_base64'><a class='stability Unmarked' title='No stability level'></a><code>icon_base64</code></td><td><div class='docblock'><p>The icon image from the APK, as a base64 encoded byte array.</p>
-</div></td></tr><tr><td id='structfield.certificate_base64s'><a class='stability Unmarked' title='No stability level'></a><code>certificate_base64s</code></td><td><div class='docblock'><p>A certificate (or array of certificates if a certificate-chain is used) used to signed this APK, represented as a base64 encoded byte array.</p>
-</div></td></tr><tr><td id='structfield.externally_hosted_url'><a class='stability Unmarked' title='No stability level'></a><code>externally_hosted_url</code></td><td><div class='docblock'><p>The URL at which the APK is hosted. This must be an https URL.</p>
-</div></td></tr><tr><td id='structfield.maximum_sdk'><a class='stability Unmarked' title='No stability level'></a><code>maximum_sdk</code></td><td><div class='docblock'><p>The maximum SDK supported by this APK (optional).</p>
-</div></td></tr><tr><td id='structfield.file_sha256_base64'><a class='stability Unmarked' title='No stability level'></a><code>file_sha256_base64</code></td><td><div class='docblock'><p>The SHA256 checksum of this APK, represented as a base64 encoded byte array.</p>
-</div></td></tr><tr><td id='structfield.uses_permissions'><a class='stability Unmarked' title='No stability level'></a><code>uses_permissions</code></td><td><div class='docblock'><p>The permissions requested by this APK.</p>
-</div></td></tr><tr><td id='structfield.file_sha1_base64'><a class='stability Unmarked' title='No stability level'></a><code>file_sha1_base64</code></td><td><div class='docblock'><p>The SHA1 checksum of this APK, represented as a base64 encoded byte array.</p>
-</div></td></tr><tr><td id='structfield.uses_features'><a class='stability Unmarked' title='No stability level'></a><code>uses_features</code></td><td><div class='docblock'><p>The features required by this APK (optional).</p>
-</div></td></tr><tr><td id='structfield.native_codes'><a class='stability Unmarked' title='No stability level'></a><code>native_codes</code></td><td><div class='docblock'><p>The native code environments supported by this APK (optional).</p>
-</div></td></tr><tr><td id='structfield.file_size'><a class='stability Unmarked' title='No stability level'></a><code>file_size</code></td><td><div class='docblock'><p>The file size in bytes of this APK.</p>
-</div></td></tr><tr><td id='structfield.version_name'><a class='stability Unmarked' title='No stability level'></a><code>version_name</code></td><td><div class='docblock'><p>The version name of this APK.</p>
-</div></td></tr><tr><td id='structfield.version_code'><a class='stability Unmarked' title='No stability level'></a><code>version_code</code></td><td><div class='docblock'><p>The version code of this APK.</p>
-</div></td></tr><tr><td id='structfield.minimum_sdk'><a class='stability Unmarked' title='No stability level'></a><code>minimum_sdk</code></td><td><div class='docblock'><p>The minimum SDK targeted by this APK.</p>
-</div></td></tr><tr><td id='structfield.application_label'><a class='stability Unmarked' title='No stability level'></a><code>application_label</code></td><td><div class='docblock'><p>The application label.</p>
-</div></td></tr><tr><td id='structfield.package_name'><a class='stability Unmarked' title='No stability level'></a><code>package_name</code></td><td><div class='docblock'><p>The package name.</p>
-</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='../google_androidpublisher2/trait.Part.html' title='google_androidpublisher2::Part'>Part</a> for <a class='struct' href='../google_androidpublisher2/struct.ExternallyHostedApk.html' title='google_androidpublisher2::ExternallyHostedApk'>ExternallyHostedApk</a></code></h3><div class='impl-items'></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_androidpublisher2/struct.ExternallyHostedApk.html' title='google_androidpublisher2::ExternallyHostedApk'>ExternallyHostedApk</a></code></h3><div class='impl-items'><h4 id='method.fmt' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#method.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='http://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='http://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
-</div><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_androidpublisher2/struct.ExternallyHostedApk.html' title='google_androidpublisher2::ExternallyHostedApk'>ExternallyHostedApk</a></code></h3><div class='impl-items'><h4 id='method.clone' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_androidpublisher2/struct.ExternallyHostedApk.html' title='google_androidpublisher2::ExternallyHostedApk'>ExternallyHostedApk</a></code></h4>
-<h4 id='method.clone_from' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code></h4>
-</div><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_androidpublisher2/struct.ExternallyHostedApk.html' title='google_androidpublisher2::ExternallyHostedApk'>ExternallyHostedApk</a></code></h3><div class='impl-items'><h4 id='method.default' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/default/trait.Default.html#method.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_androidpublisher2/struct.ExternallyHostedApk.html' title='google_androidpublisher2::ExternallyHostedApk'>ExternallyHostedApk</a></code></h4>
-</div><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='../serde/de/trait.Deserialize.html' title='serde::de::Deserialize'>Deserialize</a> for <a class='struct' href='../google_androidpublisher2/struct.ExternallyHostedApk.html' title='google_androidpublisher2::ExternallyHostedApk'>ExternallyHostedApk</a></code></h3><div class='impl-items'><h4 id='method.deserialize' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='../serde/de/trait.Deserialize.html#method.deserialize' class='fnname'>deserialize</a>&lt;__D&gt;(deserializer: &amp;mut __D) -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../google_androidpublisher2/struct.ExternallyHostedApk.html' title='google_androidpublisher2::ExternallyHostedApk'>ExternallyHostedApk</a>, __D&gt; <span class='where'>where __D: <a class='trait' href='../serde/de/trait.Deserializer.html' title='serde::de::Deserializer'>Deserializer</a></span></code></h4>
-</div><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='../serde/ser/trait.Serialize.html' title='serde::ser::Serialize'>Serialize</a> for <a class='struct' href='../google_androidpublisher2/struct.ExternallyHostedApk.html' title='google_androidpublisher2::ExternallyHostedApk'>ExternallyHostedApk</a></code></h3><div class='impl-items'><h4 id='method.serialize' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='../serde/ser/trait.Serialize.html#method.serialize' class='fnname'>serialize</a>&lt;__S&gt;(&amp;self, serializer: &amp;mut __S) -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, __S&gt; <span class='where'>where __S: <a class='trait' href='../serde/ser/trait.Serializer.html' title='serde::ser::Serializer'>Serializer</a></span></code></h4>
+<table><tr class='stab '>
+                                  <td id='structfield.icon_base64'><code>icon_base64</code></td><td><div class='docblock'><p>The icon image from the APK, as a base64 encoded byte array.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.certificate_base64s'><code>certificate_base64s</code></td><td><div class='docblock'><p>A certificate (or array of certificates if a certificate-chain is used) used to signed this APK, represented as a base64 encoded byte array.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.externally_hosted_url'><code>externally_hosted_url</code></td><td><div class='docblock'><p>The URL at which the APK is hosted. This must be an https URL.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.maximum_sdk'><code>maximum_sdk</code></td><td><div class='docblock'><p>The maximum SDK supported by this APK (optional).</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.file_sha256_base64'><code>file_sha256_base64</code></td><td><div class='docblock'><p>The SHA256 checksum of this APK, represented as a base64 encoded byte array.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.uses_permissions'><code>uses_permissions</code></td><td><div class='docblock'><p>The permissions requested by this APK.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.file_sha1_base64'><code>file_sha1_base64</code></td><td><div class='docblock'><p>The SHA1 checksum of this APK, represented as a base64 encoded byte array.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.uses_features'><code>uses_features</code></td><td><div class='docblock'><p>The features required by this APK (optional).</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.native_codes'><code>native_codes</code></td><td><div class='docblock'><p>The native code environments supported by this APK (optional).</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.file_size'><code>file_size</code></td><td><div class='docblock'><p>The file size in bytes of this APK.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.version_name'><code>version_name</code></td><td><div class='docblock'><p>The version name of this APK.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.version_code'><code>version_code</code></td><td><div class='docblock'><p>The version code of this APK.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.minimum_sdk'><code>minimum_sdk</code></td><td><div class='docblock'><p>The minimum SDK targeted by this APK.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.application_label'><code>application_label</code></td><td><div class='docblock'><p>The application label.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.package_name'><code>package_name</code></td><td><div class='docblock'><p>The package name.</p>
+</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl <a class='trait' href='../serde/de/trait.Deserialize.html' title='serde::de::Deserialize'>Deserialize</a> for <a class='struct' href='../google_androidpublisher2/struct.ExternallyHostedApk.html' title='google_androidpublisher2::ExternallyHostedApk'>ExternallyHostedApk</a></code></h3><div class='impl-items'><h4 id='method.deserialize' class='method'><code>fn <a href='../serde/de/trait.Deserialize.html#method.deserialize' class='fnname'>deserialize</a>&lt;__D&gt;(deserializer: &amp;mut __D) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../google_androidpublisher2/struct.ExternallyHostedApk.html' title='google_androidpublisher2::ExternallyHostedApk'>ExternallyHostedApk</a>, __D::Error&gt; <span class='where'>where __D: <a class='trait' href='../serde/de/trait.Deserializer.html' title='serde::de::Deserializer'>Deserializer</a></span></code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='../serde/ser/trait.Serialize.html' title='serde::ser::Serialize'>Serialize</a> for <a class='struct' href='../google_androidpublisher2/struct.ExternallyHostedApk.html' title='google_androidpublisher2::ExternallyHostedApk'>ExternallyHostedApk</a></code></h3><div class='impl-items'><h4 id='method.serialize' class='method'><code>fn <a href='../serde/ser/trait.Serialize.html#method.serialize' class='fnname'>serialize</a>&lt;__S&gt;(&amp;self, serializer: &amp;mut __S) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, __S::Error&gt; <span class='where'>where __S: <a class='trait' href='../serde/ser/trait.Serializer.html' title='serde::ser::Serializer'>Serializer</a></span></code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='../google_androidpublisher2/trait.Part.html' title='google_androidpublisher2::Part'>Part</a> for <a class='struct' href='../google_androidpublisher2/struct.ExternallyHostedApk.html' title='google_androidpublisher2::ExternallyHostedApk'>ExternallyHostedApk</a></code></h3><div class='impl-items'></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_androidpublisher2/struct.ExternallyHostedApk.html' title='google_androidpublisher2::ExternallyHostedApk'>ExternallyHostedApk</a></code></h3><div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#method.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_androidpublisher2/struct.ExternallyHostedApk.html' title='google_androidpublisher2::ExternallyHostedApk'>ExternallyHostedApk</a></code></h3><div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_androidpublisher2/struct.ExternallyHostedApk.html' title='google_androidpublisher2::ExternallyHostedApk'>ExternallyHostedApk</a></code></h4>
+<h4 id='method.clone_from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_androidpublisher2/struct.ExternallyHostedApk.html' title='google_androidpublisher2::ExternallyHostedApk'>ExternallyHostedApk</a></code></h3><div class='impl-items'><h4 id='method.default' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#method.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_androidpublisher2/struct.ExternallyHostedApk.html' title='google_androidpublisher2::ExternallyHostedApk'>ExternallyHostedApk</a></code></h4>
 </div></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
 
-    <div id="help" class="hidden">
-        <div class="shortcuts">
-            <h1>Keyboard shortcuts</h1>
-            <dl>
-                <dt>?</dt>
-                <dd>Show this help dialog</dd>
-                <dt>S</dt>
-                <dd>Focus the search field</dd>
-                <dt>&larrb;</dt>
-                <dd>Move up in search results</dd>
-                <dt>&rarrb;</dt>
-                <dd>Move down in search results</dd>
-                <dt>&#9166;</dt>
-                <dd>Go to active search result</dd>
-            </dl>
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code>)
+                </p>
+            </div>
         </div>
-        <div class="infos">
-            <h1>Search tricks</h1>
-            <p>
-                Prefix searches with a type followed by a colon (e.g.
-                <code>fn:</code>) to restrict the search to a given type.
-            </p>
-            <p>
-                Accepted types are: <code>fn</code>, <code>mod</code>,
-                <code>struct</code>, <code>enum</code>,
-                <code>trait</code>, <code>typedef</code> (or
-                <code>tdef</code>).
-            </p>
-        </div>
-    </div>
+    </aside>
 
     
 
@@ -131,6 +162,6 @@
     <script src="../jquery.js"></script>
     <script src="../main.js"></script>
     
-    <script async src="../search-index.js"></script>
+    <script defer src="../search-index.js"></script>
 </body>
 </html>

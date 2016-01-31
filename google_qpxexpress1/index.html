@@ -9,6 +9,7 @@
 
     <title>google_qpxexpress1 - Rust</title>
 
+    <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
 
     
@@ -24,34 +25,35 @@
 
     
 
-    <section class="sidebar">
+    <nav class="sidebar">
         
         <p class='location'></p><script>window.sidebarCurrent = {name: 'google_qpxexpress1', ty: 'mod', relpath: '../'};</script>
-    </section>
+    </nav>
 
     <nav class="sub">
         <form class="search-form js-only">
             <div class="search-container">
                 <input class="search-input" name="search"
                        autocomplete="off"
-                       placeholder="Click or press 'S' to search, '?' for more options..."
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
                        type="search">
             </div>
         </form>
     </nav>
 
     <section id='main' class="content mod">
-<h1 class='fqn'><span class='in-band'>Crate <a class='mod' href=''>google_qpxexpress1</a><wbr></span><span class='out-of-band'><a href='stability.html'>[stability]</a> <span id='render-detail'>
-            <a id="collapse-all" href="#">[-]</a>&nbsp;<a id="expand-all" href="#">[+]</a>
-        </span><a id='src-0' href='../src/google_qpxexpress1/lib.rs.html#5-183'>[src]</a></span></h1>
-<div class='docblock'><p>This documentation was generated from <em>QPX Express</em> crate version <em>0.1.8+20140321</em>, where <em>20140321</em> is the exact revision of the <em>qpxExpress:v1</em> schema built by the <a href="http://www.makotemplates.org/">mako</a> code generator <em>v0.1.8</em>.</p>
+<h1 class='fqn'><span class='in-band'>Crate <a class='mod' href=''>google_qpxexpress1</a></span><span class='out-of-band'><span id='render-detail'>
+            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                [<span class='inner'>&#x2212;</span>]
+            </a>
+        </span><a id='src-0' class='srclink' href='../src/google_qpxexpress1/lib.rs.html#5-183' title='goto source code'>[src]</a></span></h1>
+<div class='docblock'><p>This documentation was generated from <em>QPX Express</em> crate version <em>0.1.11+20140321</em>, where <em>20140321</em> is the exact revision of the <em>qpxExpress:v1</em> schema built by the <a href="http://www.makotemplates.org/">mako</a> code generator <em>v0.1.11</em>.</p>
 
 <p>Everything else about the <em>QPX Express</em> <em>v1</em> API can be found at the
 <a href="http://developers.google.com/qpx-express">official documentation site</a>.
 The original source code is <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/qpxexpress1">on github</a>.</p>
 
-<h1 id="features" class='section-header'><a
-                           href="#features">Features</a></h1>
+<h1 id='features' class='section-header'><a href='#features'>Features</a></h1>
 <p>Handle the following <em>Resources</em> with ease from the central <a href="struct.QPXExpress.html">hub</a> ... </p>
 
 <ul>
@@ -64,8 +66,7 @@ The original source code is <a href="https://github.com/Byron/google-apis-rs/tre
 
 <p>Not what you are looking for ? Find all other Google APIs in their Rust <a href="../index.html">documentation index</a>.</p>
 
-<h1 id="structure-of-this-library" class='section-header'><a
-                           href="#structure-of-this-library">Structure of this Library</a></h1>
+<h1 id='structure-of-this-library' class='section-header'><a href='#structure-of-this-library'>Structure of this Library</a></h1>
 <p>The API is structured into the following primary items:</p>
 
 <ul>
@@ -98,32 +99,27 @@ allow access to individual <a href="trait.CallBuilder.html"><em>Call Builders</e
 <p>All <em>structures</em> are marked with applicable traits to further categorize them and ease browsing.</p>
 
 <p>Generally speaking, you can invoke <em>Activities</em> like this:</p>
-<pre id='rust-example-rendered' class='rust '>
-<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>resource</span>().<span class='ident'>activity</span>(...).<span class='ident'>doit</span>()
-</pre>
+<pre class='rust rust-example-rendered'>
+<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>resource</span>().<span class='ident'>activity</span>(...).<span class='ident'>doit</span>()</pre>
 
 <p>Or specifically ...</p>
-<pre id='rust-example-rendered' class='rust '>
-<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>trips</span>().<span class='ident'>search</span>(...).<span class='ident'>doit</span>()
-</pre>
+<pre class='rust rust-example-rendered'>
+<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>trips</span>().<span class='ident'>search</span>(...).<span class='ident'>doit</span>()</pre>
 
 <p>The <code>resource()</code> and <code>activity(...)</code> calls create <a href="http://en.wikipedia.org/wiki/Builder_pattern">builders</a>. The second one dealing with <code>Activities</code> 
 supports various methods to configure the impending operation (not shown here). It is made such that all required arguments have to be 
 specified right away (i.e. <code>(...)</code>), whereas all optional ones can be <a href="http://en.wikipedia.org/wiki/Builder_pattern">build up</a> as desired.
 The <code>doit()</code> method performs the actual communication with the server and returns the respective result.</p>
 
-<h1 id="usage" class='section-header'><a
-                           href="#usage">Usage</a></h1>
-<h2 id="setting-up-your-project" class='section-header'><a
-                           href="#setting-up-your-project">Setting up your Project</a></h2>
+<h1 id='usage' class='section-header'><a href='#usage'>Usage</a></h1>
+<h2 id='setting-up-your-project' class='section-header'><a href='#setting-up-your-project'>Setting up your Project</a></h2>
 <p>To use this library, you would put the following lines into your <code>Cargo.toml</code> file:</p>
 
 <pre><code class="language-toml">[dependencies]
 google-qpxexpress1 = &quot;*&quot;
 </code></pre>
 
-<h2 id="a-complete-example" class='section-header'><a
-                           href="#a-complete-example">A complete example</a></h2><pre id='rust-example-rendered' class='rust '>
+<h2 id='a-complete-example' class='section-header'><a href='#a-complete-example'>A complete example</a></h2><pre class='rust rust-example-rendered'>
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>hyper</span>;
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>yup_oauth2</span> <span class='kw'>as</span> <span class='ident'>oauth2</span>;
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>google_qpxexpress1</span> <span class='kw'>as</span> <span class='ident'>qpxexpress1</span>;
@@ -171,11 +167,9 @@ google-qpxexpress1 = &quot;*&quot;
         <span class='op'>|</span><span class='ident'>Error</span>::<span class='ident'>JsonDecodeError</span>(_, _) <span class='op'>=&gt;</span> <span class='macro'>println</span><span class='macro'>!</span>(<span class='string'>&quot;{}&quot;</span>, <span class='ident'>e</span>),
     },
     <span class='prelude-val'>Ok</span>(<span class='ident'>res</span>) <span class='op'>=&gt;</span> <span class='macro'>println</span><span class='macro'>!</span>(<span class='string'>&quot;Success: {:?}&quot;</span>, <span class='ident'>res</span>),
-}
-</pre>
+}</pre>
 
-<h2 id="handling-errors" class='section-header'><a
-                           href="#handling-errors">Handling Errors</a></h2>
+<h2 id='handling-errors' class='section-header'><a href='#handling-errors'>Handling Errors</a></h2>
 <p>All errors produced by the system are provided either as <a href="enum.Result.html">Result</a> enumeration as return value of 
 the doit() methods, or handed as possibly intermediate results to either the 
 <a href="trait.Delegate.html">Hub Delegate</a>, or the <a href="../yup-oauth2/trait.AuthenticatorDelegate.html">Authenticator Delegate</a>.</p>
@@ -183,8 +177,7 @@ the doit() methods, or handed as possibly intermediate results to either the
 <p>When delegates handle errors or intermediate values, they may have a chance to instruct the system to retry. This 
 makes the system potentially resilient to all kinds of errors.</p>
 
-<h2 id="uploads-and-downloads" class='section-header'><a
-                           href="#uploads-and-downloads">Uploads and Downloads</a></h2>
+<h2 id='uploads-and-downloads' class='section-header'><a href='#uploads-and-downloads'>Uploads and Downloads</a></h2>
 <p>If a method supports downloads, the response body, which is part of the <a href="enum.Result.html">Result</a>, should be
 read by you to obtain the media.
 If such a method also supports a <a href="trait.ResponseResult.html">Response Result</a>, it will return that by default.
@@ -195,8 +188,7 @@ this call: <code>.param(&quot;alt&quot;, &quot;media&quot;)</code>.</p>
 <em>simple</em> and <em>resumable</em>. The distinctiveness of each is represented by customized 
 <code>doit(...)</code> methods, which are then named <code>upload(...)</code> and <code>upload_resumable(...)</code> respectively.</p>
 
-<h2 id="customization-and-callbacks" class='section-header'><a
-                           href="#customization-and-callbacks">Customization and Callbacks</a></h2>
+<h2 id='customization-and-callbacks' class='section-header'><a href='#customization-and-callbacks'>Customization and Callbacks</a></h2>
 <p>You may alter the way an <code>doit()</code> method is called by providing a <a href="trait.Delegate.html">delegate</a> to the 
 <a href="trait.CallBuilder.html">Method Builder</a> before making the final <code>doit()</code> call. 
 Respective methods will be called to provide progress information, as well as determine whether the system should 
@@ -204,16 +196,14 @@ retry on failure.</p>
 
 <p>The <a href="trait.Delegate.html">delegate trait</a> is default-implemented, allowing you to customize it with minimal effort.</p>
 
-<h2 id="optional-parts-in-server-requests" class='section-header'><a
-                           href="#optional-parts-in-server-requests">Optional Parts in Server-Requests</a></h2>
+<h2 id='optional-parts-in-server-requests' class='section-header'><a href='#optional-parts-in-server-requests'>Optional Parts in Server-Requests</a></h2>
 <p>All structures provided by this library are made to be <a href="trait.RequestValue.html">enocodable</a> and 
 <a href="trait.ResponseResult.html">decodable</a> via <em>json</em>. Optionals are used to indicate that partial requests are responses 
 are valid.
 Most optionals are are considered <a href="trait.Part.html">Parts</a> which are identifiable by name, which will be sent to 
 the server to indicate either the set parts of the request or the desired parts in the response.</p>
 
-<h2 id="builder-arguments" class='section-header'><a
-                           href="#builder-arguments">Builder Arguments</a></h2>
+<h2 id='builder-arguments' class='section-header'><a href='#builder-arguments'>Builder Arguments</a></h2>
 <p>Using <a href="trait.CallBuilder.html">method builders</a>, you are able to prepare an action call by repeatedly calling it&#39;s methods.
 These will always take a single argument, for which the following statements are true.</p>
 
@@ -226,371 +216,474 @@ These will always take a single argument, for which the following statements are
 <p>Arguments will always be copied or cloned into the builder, to make them independent of their original life times.</p>
 </div><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
 <table>
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AircraftData.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.AircraftData.html'
                                title='google_qpxexpress1::AircraftData'>AircraftData</a></td>
-                        <td class='docblock short'><p>The make, model, and type of an aircraft.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>The make, model, and type of an aircraft.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AirportData.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.AirportData.html'
                                title='google_qpxexpress1::AirportData'>AirportData</a></td>
-                        <td class='docblock short'><p>An airport.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>An airport.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.BagDescriptor.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.BagDescriptor.html'
                                title='google_qpxexpress1::BagDescriptor'>BagDescriptor</a></td>
-                        <td class='docblock short'><p>Information about an item of baggage.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Information about an item of baggage.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.CarrierData.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.CarrierData.html'
                                title='google_qpxexpress1::CarrierData'>CarrierData</a></td>
-                        <td class='docblock short'><p>Information about a carrier (ie. an airline, bus line, railroad, etc) that might be useful to display to an end-user.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Information about a carrier (ie. an airline, bus line, railroad, etc) that might be useful to display to an end-user.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.CityData.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.CityData.html'
                                title='google_qpxexpress1::CityData'>CityData</a></td>
-                        <td class='docblock short'><p>Information about a city that might be useful to an end-user; typically the city of an airport.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Information about a city that might be useful to an end-user; typically the city of an airport.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Data.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.Data.html'
                                title='google_qpxexpress1::Data'>Data</a></td>
-                        <td class='docblock short'><p>Detailed information about components found in the solutions of this response, including a trip&#39;s airport, city, taxes, airline, and aircraft.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Detailed information about components found in the solutions of this response, including a trip&#39;s airport, city, taxes, airline, and aircraft.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.DefaultDelegate.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.DefaultDelegate.html'
                                title='google_qpxexpress1::DefaultDelegate'>DefaultDelegate</a></td>
-                        <td class='docblock short'><p>A delegate with a conservative default implementation, which is used if no other delegate is
+                        <td class='docblock short'>
+                             <p>A delegate with a conservative default implementation, which is used if no other delegate is
 set.</p>
-</td>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ErrorResponse.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.ErrorResponse.html'
                                title='google_qpxexpress1::ErrorResponse'>ErrorResponse</a></td>
-                        <td class='docblock short'><p>A utility to represent detailed errors we might see in case there are BadRequests.
+                        <td class='docblock short'>
+                             <p>A utility to represent detailed errors we might see in case there are BadRequests.
 The latter happen if the sent parameters or request structures are unsound</p>
-</td>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.FareInfo.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.FareInfo.html'
                                title='google_qpxexpress1::FareInfo'>FareInfo</a></td>
-                        <td class='docblock short'><p>Complete information about a fare used in the solution to a low-fare search query. In the airline industry a fare is a price an airline charges for one-way travel between two points. A fare typically contains a carrier code, two city codes, a price, and a fare basis. (A fare basis is a one-to-eight character alphanumeric code used to identify a fare.)</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Complete information about a fare used in the solution to a low-fare search query. In the airline industry a fare is a price an airline charges for one-way travel between two points. A fare typically contains a carrier code, two city codes, a price, and a fare basis. (A fare basis is a one-to-eight character alphanumeric code used to identify a fare.)</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.FlightInfo.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.FlightInfo.html'
                                title='google_qpxexpress1::FlightInfo'>FlightInfo</a></td>
-                        <td class='docblock short'><p>A flight is a sequence of legs with the same airline carrier and flight number. (A leg is the smallest unit of travel, in the case of a flight a takeoff immediately followed by a landing at two set points on a particular carrier with a particular flight number.) The naive view is that a flight is scheduled travel of an aircraft between two points, with possibly intermediate stops, but carriers will frequently list flights that require a change of aircraft between legs.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>A flight is a sequence of legs with the same airline carrier and flight number. (A leg is the smallest unit of travel, in the case of a flight a takeoff immediately followed by a landing at two set points on a particular carrier with a particular flight number.) The naive view is that a flight is scheduled travel of an aircraft between two points, with possibly intermediate stops, but carriers will frequently list flights that require a change of aircraft between legs.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.FreeBaggageAllowance.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.FreeBaggageAllowance.html'
                                title='google_qpxexpress1::FreeBaggageAllowance'>FreeBaggageAllowance</a></td>
-                        <td class='docblock short'><p>Information about free baggage allowed on one segment of a trip.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Information about free baggage allowed on one segment of a trip.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.LegInfo.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.LegInfo.html'
                                title='google_qpxexpress1::LegInfo'>LegInfo</a></td>
-                        <td class='docblock short'><p>Information about a leg. (A leg is the smallest unit of travel, in the case of a flight a takeoff immediately followed by a landing at two set points on a particular carrier with a particular flight number.)</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Information about a leg. (A leg is the smallest unit of travel, in the case of a flight a takeoff immediately followed by a landing at two set points on a particular carrier with a particular flight number.)</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.MethodInfo.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.MethodInfo.html'
                                title='google_qpxexpress1::MethodInfo'>MethodInfo</a></td>
-                        <td class='docblock short'><p>Contains information about an API request.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Contains information about an API request.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.MultiPartReader.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.MultiPartReader.html'
                                title='google_qpxexpress1::MultiPartReader'>MultiPartReader</a></td>
-                        <td class='docblock short'><p>Provides a <code>Read</code> interface that converts multiple parts into the protocol
+                        <td class='docblock short'>
+                             <p>Provides a <code>Read</code> interface that converts multiple parts into the protocol
 identified by <a href="https://tools.ietf.org/html/rfc2387">RFC2387</a>.
 <strong>Note</strong>: This implementation is just as rich as it needs to be to perform uploads
 to google APIs, and might not be a fully-featured implementation.</p>
-</td>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.PassengerCounts.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.PassengerCounts.html'
                                title='google_qpxexpress1::PassengerCounts'>PassengerCounts</a></td>
-                        <td class='docblock short'><p>The number and type of passengers. Unfortunately the definition of an infant, child, adult, and senior citizen varies across carriers and reservation systems.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>The number and type of passengers. Unfortunately the definition of an infant, child, adult, and senior citizen varies across carriers and reservation systems.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.PricingInfo.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.PricingInfo.html'
                                title='google_qpxexpress1::PricingInfo'>PricingInfo</a></td>
-                        <td class='docblock short'><p>The price of one or more travel segments. The currency used to purchase tickets is usually determined by the sale/ticketing city or the sale/ticketing country, unless none are specified, in which case it defaults to that of the journey origin country.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>The price of one or more travel segments. The currency used to purchase tickets is usually determined by the sale/ticketing city or the sale/ticketing country, unless none are specified, in which case it defaults to that of the journey origin country.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.QPXExpress.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.QPXExpress.html'
                                title='google_qpxexpress1::QPXExpress'>QPXExpress</a></td>
-                        <td class='docblock short'><p>Central instance to access all QPXExpress related resource activities</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Central instance to access all QPXExpress related resource activities</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.SegmentInfo.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.SegmentInfo.html'
                                title='google_qpxexpress1::SegmentInfo'>SegmentInfo</a></td>
-                        <td class='docblock short'><p>Details of a segment of a flight; a segment is one or more consecutive legs on the same flight. For example a hypothetical flight ZZ001, from DFW to OGG, would have one segment with two legs: DFW to HNL (leg 1), HNL to OGG (leg 2), and DFW to OGG (legs 1 and 2).</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Details of a segment of a flight; a segment is one or more consecutive legs on the same flight. For example a hypothetical flight ZZ001, from DFW to OGG, would have one segment with two legs: DFW to HNL (leg 1), HNL to OGG (leg 2), and DFW to OGG (legs 1 and 2).</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.SegmentPricing.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.SegmentPricing.html'
                                title='google_qpxexpress1::SegmentPricing'>SegmentPricing</a></td>
-                        <td class='docblock short'><p>The price of this segment.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>The price of this segment.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.SliceInfo.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.SliceInfo.html'
                                title='google_qpxexpress1::SliceInfo'>SliceInfo</a></td>
-                        <td class='docblock short'><p>Information about a slice. A slice represents a traveller&#39;s intent, the portion of a low-fare search corresponding to a traveler&#39;s request to get between two points. One-way journeys are generally expressed using 1 slice, round-trips using 2. For example, if a traveler specifies the following trip in a user interface:
+                        <td class='docblock short'>
+                             <p>Information about a slice. A slice represents a traveller&#39;s intent, the portion of a low-fare search corresponding to a traveler&#39;s request to get between two points. One-way journeys are generally expressed using 1 slice, round-trips using 2. For example, if a traveler specifies the following trip in a user interface:
 | Origin | Destination | Departure Date | | BOS | LAX | March 10, 2007 | | LAX | SYD | March 17, 2007 | | SYD | BOS | March 22, 2007 |
 then this is a three slice trip.</p>
-</td>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.SliceInput.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.SliceInput.html'
                                title='google_qpxexpress1::SliceInput'>SliceInput</a></td>
-                        <td class='docblock short'><p>Criteria a desired slice must satisfy.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Criteria a desired slice must satisfy.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.TaxData.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.TaxData.html'
                                title='google_qpxexpress1::TaxData'>TaxData</a></td>
-                        <td class='docblock short'><p>Tax data.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Tax data.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.TaxInfo.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.TaxInfo.html'
                                title='google_qpxexpress1::TaxInfo'>TaxInfo</a></td>
-                        <td class='docblock short'><p>Tax information.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Tax information.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.TimeOfDayRange.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.TimeOfDayRange.html'
                                title='google_qpxexpress1::TimeOfDayRange'>TimeOfDayRange</a></td>
-                        <td class='docblock short'><p>Two times in a single day defining a time range.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Two times in a single day defining a time range.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.TripMethods.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.TripMethods.html'
                                title='google_qpxexpress1::TripMethods'>TripMethods</a></td>
-                        <td class='docblock short'><p>A builder providing access to all methods supported on <em>trip</em> resources.
+                        <td class='docblock short'>
+                             <p>A builder providing access to all methods supported on <em>trip</em> resources.
 It is not used directly, but through the <code>QPXExpress</code> hub.</p>
-</td>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.TripOption.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.TripOption.html'
                                title='google_qpxexpress1::TripOption'>TripOption</a></td>
-                        <td class='docblock short'><p>Trip information.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Trip information.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.TripOptionsRequest.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.TripOptionsRequest.html'
                                title='google_qpxexpress1::TripOptionsRequest'>TripOptionsRequest</a></td>
-                        <td class='docblock short'><p>A QPX Express search request, which will yield one or more solutions.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>A QPX Express search request, which will yield one or more solutions.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.TripOptionsResponse.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.TripOptionsResponse.html'
                                title='google_qpxexpress1::TripOptionsResponse'>TripOptionsResponse</a></td>
-                        <td class='docblock short'><p>A QPX Express search response.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>A QPX Express search response.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.TripSearchCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.TripSearchCall.html'
                                title='google_qpxexpress1::TripSearchCall'>TripSearchCall</a></td>
-                        <td class='docblock short'><p>Returns a list of flights.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Returns a list of flights.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.TripsSearchRequest.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.TripsSearchRequest.html'
                                title='google_qpxexpress1::TripsSearchRequest'>TripsSearchRequest</a></td>
-                        <td class='docblock short'><p>A QPX Express search request.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>A QPX Express search request.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.TripsSearchResponse.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.TripsSearchResponse.html'
                                title='google_qpxexpress1::TripsSearchResponse'>TripsSearchResponse</a></td>
-                        <td class='docblock short'><p>A QPX Express search response.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>A QPX Express search response.</p>
+
+                        </td>
                     </tr>
                 </table><h2 id='enums' class='section-header'><a href="#enums">Enums</a></h2>
 <table>
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='enum' href='enum.Error.html'
+                    <tr class=' module-item'>
+                        <td><a class='enum' href='enum.Error.html'
                                title='google_qpxexpress1::Error'>Error</a></td>
-                        <td class='docblock short'></td>
+                        <td class='docblock short'>
+                             
+                        </td>
                     </tr>
                 </table><h2 id='traits' class='section-header'><a href="#traits">Traits</a></h2>
 <table>
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.CallBuilder.html'
+                    <tr class=' module-item'>
+                        <td><a class='trait' href='trait.CallBuilder.html'
                                title='google_qpxexpress1::CallBuilder'>CallBuilder</a></td>
-                        <td class='docblock short'><p>Identifies types which represent builders for a particular resource method</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Identifies types which represent builders for a particular resource method</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.Delegate.html'
+                    <tr class=' module-item'>
+                        <td><a class='trait' href='trait.Delegate.html'
                                title='google_qpxexpress1::Delegate'>Delegate</a></td>
-                        <td class='docblock short'><p>A trait specifying functionality to help controlling any request performed by the API.
+                        <td class='docblock short'>
+                             <p>A trait specifying functionality to help controlling any request performed by the API.
 The trait has a conservative default implementation.</p>
-</td>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.Hub.html'
+                    <tr class=' module-item'>
+                        <td><a class='trait' href='trait.Hub.html'
                                title='google_qpxexpress1::Hub'>Hub</a></td>
-                        <td class='docblock short'><p>Identifies the Hub. There is only one per library, this trait is supposed
+                        <td class='docblock short'>
+                             <p>Identifies the Hub. There is only one per library, this trait is supposed
 to make intended use more explicit.
 The hub allows to access all resource methods more easily.</p>
-</td>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.MethodsBuilder.html'
+                    <tr class=' module-item'>
+                        <td><a class='trait' href='trait.MethodsBuilder.html'
                                title='google_qpxexpress1::MethodsBuilder'>MethodsBuilder</a></td>
-                        <td class='docblock short'><p>Identifies types for building methods of a particular resource type</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Identifies types for building methods of a particular resource type</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.NestedType.html'
+                    <tr class=' module-item'>
+                        <td><a class='trait' href='trait.NestedType.html'
                                title='google_qpxexpress1::NestedType'>NestedType</a></td>
-                        <td class='docblock short'><p>Identifies types which are only used by other types internally.
+                        <td class='docblock short'>
+                             <p>Identifies types which are only used by other types internally.
 They have no special meaning, this trait just marks them for completeness.</p>
-</td>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.Part.html'
+                    <tr class=' module-item'>
+                        <td><a class='trait' href='trait.Part.html'
                                title='google_qpxexpress1::Part'>Part</a></td>
-                        <td class='docblock short'><p>Identifies types which are only used as part of other types, which
+                        <td class='docblock short'>
+                             <p>Identifies types which are only used as part of other types, which
 usually are carrying the <code>Resource</code> trait.</p>
-</td>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.ReadSeek.html'
+                    <tr class=' module-item'>
+                        <td><a class='trait' href='trait.ReadSeek.html'
                                title='google_qpxexpress1::ReadSeek'>ReadSeek</a></td>
-                        <td class='docblock short'><p>A utility to specify reader types which provide seeking capabilities too</p>
-</td>
+                        <td class='docblock short'>
+                             <p>A utility to specify reader types which provide seeking capabilities too</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.RequestValue.html'
+                    <tr class=' module-item'>
+                        <td><a class='trait' href='trait.RequestValue.html'
                                title='google_qpxexpress1::RequestValue'>RequestValue</a></td>
-                        <td class='docblock short'><p>Identifies types which are used in API requests.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Identifies types which are used in API requests.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.Resource.html'
+                    <tr class=' module-item'>
+                        <td><a class='trait' href='trait.Resource.html'
                                title='google_qpxexpress1::Resource'>Resource</a></td>
-                        <td class='docblock short'><p>Identifies types which can be inserted and deleted.
+                        <td class='docblock short'>
+                             <p>Identifies types which can be inserted and deleted.
 Types with this trait are most commonly used by clients of this API.</p>
-</td>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.ResponseResult.html'
+                    <tr class=' module-item'>
+                        <td><a class='trait' href='trait.ResponseResult.html'
                                title='google_qpxexpress1::ResponseResult'>ResponseResult</a></td>
-                        <td class='docblock short'><p>Identifies types which are used in API responses.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Identifies types which are used in API responses.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.ToParts.html'
+                    <tr class=' module-item'>
+                        <td><a class='trait' href='trait.ToParts.html'
                                title='google_qpxexpress1::ToParts'>ToParts</a></td>
-                        <td class='docblock short'><p>A trait for all types that can convert themselves into a <em>parts</em> string</p>
-</td>
+                        <td class='docblock short'>
+                             <p>A trait for all types that can convert themselves into a <em>parts</em> string</p>
+
+                        </td>
                     </tr>
                 </table><h2 id='functions' class='section-header'><a href="#functions">Functions</a></h2>
 <table>
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.remove_json_null_values.html'
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.remove_json_null_values.html'
                                title='google_qpxexpress1::remove_json_null_values'>remove_json_null_values</a></td>
-                        <td class='docblock short'></td>
+                        <td class='docblock short'>
+                             
+                        </td>
                     </tr>
                 </table><h2 id='types' class='section-header'><a href="#types">Type Definitions</a></h2>
 <table>
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='type' href='type.Result.html'
+                    <tr class=' module-item'>
+                        <td><a class='type' href='type.Result.html'
                                title='google_qpxexpress1::Result'>Result</a></td>
-                        <td class='docblock short'><p>A universal result type used as return for all calls.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>A universal result type used as return for all calls.</p>
+
+                        </td>
                     </tr>
                 </table></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
 
-    <div id="help" class="hidden">
-        <div class="shortcuts">
-            <h1>Keyboard shortcuts</h1>
-            <dl>
-                <dt>?</dt>
-                <dd>Show this help dialog</dd>
-                <dt>S</dt>
-                <dd>Focus the search field</dd>
-                <dt>&larrb;</dt>
-                <dd>Move up in search results</dd>
-                <dt>&rarrb;</dt>
-                <dd>Move down in search results</dd>
-                <dt>&#9166;</dt>
-                <dd>Go to active search result</dd>
-            </dl>
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code>)
+                </p>
+            </div>
         </div>
-        <div class="infos">
-            <h1>Search tricks</h1>
-            <p>
-                Prefix searches with a type followed by a colon (e.g.
-                <code>fn:</code>) to restrict the search to a given type.
-            </p>
-            <p>
-                Accepted types are: <code>fn</code>, <code>mod</code>,
-                <code>struct</code>, <code>enum</code>,
-                <code>trait</code>, <code>typedef</code> (or
-                <code>tdef</code>).
-            </p>
-        </div>
-    </div>
+    </aside>
 
     
 
@@ -602,6 +695,6 @@ Types with this trait are most commonly used by clients of this API.</p>
     <script src="../jquery.js"></script>
     <script src="../main.js"></script>
     
-    <script async src="../search-index.js"></script>
+    <script defer src="../search-index.js"></script>
 </body>
 </html>

@@ -9,6 +9,7 @@
 
     <title>google_games1::TurnBasedMatch - Rust</title>
 
+    <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
 
     
@@ -24,51 +25,52 @@
 
     
 
-    <section class="sidebar">
+    <nav class="sidebar">
         
         <p class='location'><a href='index.html'>google_games1</a></p><script>window.sidebarCurrent = {name: 'TurnBasedMatch', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
-    </section>
+    </nav>
 
     <nav class="sub">
         <form class="search-form js-only">
             <div class="search-container">
                 <input class="search-input" name="search"
                        autocomplete="off"
-                       placeholder="Click or press 'S' to search, '?' for more options..."
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
                        type="search">
             </div>
         </form>
     </nav>
 
     <section id='main' class="content struct">
-<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_games1</a>::<wbr><a class='struct' href=''>TurnBasedMatch</a><wbr></span><span class='out-of-band'><span id='render-detail'>
-            <a id="collapse-all" href="#">[-]</a>&nbsp;<a id="expand-all" href="#">[+]</a>
-        </span><a id='src-83914' href='../src/google_games1///home/byron/dev/rust/google-apis-rs/target/debug/build/google-games1-1aaadfb50d4e76c5/out/lib.rs.html#21277-21330'>[src]</a></span></h1>
+<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_games1</a>::<wbr><a class='struct' href=''>TurnBasedMatch</a></span><span class='out-of-band'><span id='render-detail'>
+            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                [<span class='inner'>&#x2212;</span>]
+            </a>
+        </span><a id='src-16124' class='srclink' href='../src/google_games1///Users/byron/dev/rs/google-apis-rs/target/debug/build/google-games1-47fadb9d815ee43e/out/lib.rs.html#28449-28502' title='goto source code'>[src]</a></span></h1>
 <pre class='rust struct'>pub struct TurnBasedMatch {
-    pub status: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub auto_matching_criteria: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_games1/struct.TurnBasedAutoMatchingCriteria.html' title='google_games1::TurnBasedAutoMatchingCriteria'>TurnBasedAutoMatchingCriteria</a>&gt;,
-    pub inviter_id: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub match_version: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>&gt;,
-    pub variant: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>&gt;,
-    pub match_id: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub rematch_id: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub results: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='../google_games1/struct.ParticipantResult.html' title='google_games1::ParticipantResult'>ParticipantResult</a>&gt;&gt;,
-    pub match_number: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>&gt;,
-    pub previous_match_data: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_games1/struct.TurnBasedMatchData.html' title='google_games1::TurnBasedMatchData'>TurnBasedMatchData</a>&gt;,
-    pub application_id: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub description: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub with_participant_id: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub kind: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub creation_details: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_games1/struct.TurnBasedMatchModification.html' title='google_games1::TurnBasedMatchModification'>TurnBasedMatchModification</a>&gt;,
-    pub user_match_status: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub data: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_games1/struct.TurnBasedMatchData.html' title='google_games1::TurnBasedMatchData'>TurnBasedMatchData</a>&gt;,
-    pub participants: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='../google_games1/struct.TurnBasedMatchParticipant.html' title='google_games1::TurnBasedMatchParticipant'>TurnBasedMatchParticipant</a>&gt;&gt;,
-    pub pending_participant_id: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub last_update_details: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_games1/struct.TurnBasedMatchModification.html' title='google_games1::TurnBasedMatchModification'>TurnBasedMatchModification</a>&gt;,
+    pub status: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub auto_matching_criteria: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_games1/struct.TurnBasedAutoMatchingCriteria.html' title='google_games1::TurnBasedAutoMatchingCriteria'>TurnBasedAutoMatchingCriteria</a>&gt;,
+    pub inviter_id: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub match_version: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>&gt;,
+    pub variant: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>&gt;,
+    pub match_id: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub rematch_id: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub results: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='../google_games1/struct.ParticipantResult.html' title='google_games1::ParticipantResult'>ParticipantResult</a>&gt;&gt;,
+    pub match_number: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>&gt;,
+    pub previous_match_data: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_games1/struct.TurnBasedMatchData.html' title='google_games1::TurnBasedMatchData'>TurnBasedMatchData</a>&gt;,
+    pub application_id: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub description: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub with_participant_id: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub kind: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub creation_details: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_games1/struct.TurnBasedMatchModification.html' title='google_games1::TurnBasedMatchModification'>TurnBasedMatchModification</a>&gt;,
+    pub user_match_status: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub data: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_games1/struct.TurnBasedMatchData.html' title='google_games1::TurnBasedMatchData'>TurnBasedMatchData</a>&gt;,
+    pub participants: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='../google_games1/struct.TurnBasedMatchParticipant.html' title='google_games1::TurnBasedMatchParticipant'>TurnBasedMatchParticipant</a>&gt;&gt;,
+    pub pending_participant_id: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub last_update_details: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_games1/struct.TurnBasedMatchModification.html' title='google_games1::TurnBasedMatchModification'>TurnBasedMatchModification</a>&gt;,
 }</pre><div class='docblock'><p>This is a JSON template for a turn-based match resource object.</p>
 
-<h1 id="activities" class='section-header'><a
-                           href="#activities">Activities</a></h1>
+<h1 id='activities' class='section-header'><a href='#activities'>Activities</a></h1>
 <p>This type is used in activities, which are methods you may call on this type or where this type is involved in. 
 The list links the activity name, along with information about where it is used (one of <em>request</em> and <em>response</em>).</p>
 
@@ -83,7 +85,8 @@ The list links the activity name, along with information about where it is used 
 <li><a href="struct.TurnBasedMatcheGetCall.html">get turn based matches</a> (response)</li>
 </ul>
 </div><h2 class='fields'>Fields</h2>
-<table><tr><td id='structfield.status'><a class='stability Unmarked' title='No stability level'></a><code>status</code></td><td><div class='docblock'><p>The status of the match.
+<table><tr class='stab '>
+                                  <td id='structfield.status'><code>status</code></td><td><div class='docblock'><p>The status of the match.
 Possible values are:<br>
 - &quot;MATCH_AUTO_MATCHING&quot; - One or more slots need to be filled by auto-matching; the match cannot be established until they are filled. 
 - &quot;MATCH_ACTIVE&quot; - The match has started. 
@@ -91,71 +94,103 @@ Possible values are:<br>
 - &quot;MATCH_CANCELED&quot; - The match was canceled. 
 - &quot;MATCH_EXPIRED&quot; - The match expired due to inactivity. 
 - &quot;MATCH_DELETED&quot; - The match should no longer be shown on the client. Returned only for tombstones for matches when sync is called.</p>
-</div></td></tr><tr><td id='structfield.auto_matching_criteria'><a class='stability Unmarked' title='No stability level'></a><code>auto_matching_criteria</code></td><td><div class='docblock'><p>Criteria for auto-matching players into this match.</p>
-</div></td></tr><tr><td id='structfield.inviter_id'><a class='stability Unmarked' title='No stability level'></a><code>inviter_id</code></td><td><div class='docblock'><p>The ID of the participant that invited the user to the match. Not set if the user was not invited to the match.</p>
-</div></td></tr><tr><td id='structfield.match_version'><a class='stability Unmarked' title='No stability level'></a><code>match_version</code></td><td><div class='docblock'><p>The version of this match: an increasing counter, used to avoid out-of-date updates to the match.</p>
-</div></td></tr><tr><td id='structfield.variant'><a class='stability Unmarked' title='No stability level'></a><code>variant</code></td><td><div class='docblock'><p>The variant / mode of the application being played; can be any integer value, or left blank.</p>
-</div></td></tr><tr><td id='structfield.match_id'><a class='stability Unmarked' title='No stability level'></a><code>match_id</code></td><td><div class='docblock'><p>Globally unique ID for a turn-based match.</p>
-</div></td></tr><tr><td id='structfield.rematch_id'><a class='stability Unmarked' title='No stability level'></a><code>rematch_id</code></td><td><div class='docblock'><p>The ID of a rematch of this match. Only set for completed matches that have been rematched.</p>
-</div></td></tr><tr><td id='structfield.results'><a class='stability Unmarked' title='No stability level'></a><code>results</code></td><td><div class='docblock'><p>The results reported for this match.</p>
-</div></td></tr><tr><td id='structfield.match_number'><a class='stability Unmarked' title='No stability level'></a><code>match_number</code></td><td><div class='docblock'><p>The number of the match in a chain of rematches. Will be set to 1 for the first match and incremented by 1 for each rematch.</p>
-</div></td></tr><tr><td id='structfield.previous_match_data'><a class='stability Unmarked' title='No stability level'></a><code>previous_match_data</code></td><td><div class='docblock'><p>The data / game state for the previous match; set for the first turn of rematches only.</p>
-</div></td></tr><tr><td id='structfield.application_id'><a class='stability Unmarked' title='No stability level'></a><code>application_id</code></td><td><div class='docblock'><p>The ID of the application being played.</p>
-</div></td></tr><tr><td id='structfield.description'><a class='stability Unmarked' title='No stability level'></a><code>description</code></td><td><div class='docblock'><p>This short description is generated by our servers based on turn state and is localized and worded relative to the player requesting the match. It is intended to be displayed when the match is shown in a list.</p>
-</div></td></tr><tr><td id='structfield.with_participant_id'><a class='stability Unmarked' title='No stability level'></a><code>with_participant_id</code></td><td><div class='docblock'><p>The ID of another participant in the match that can be used when describing the participants the user is playing with.</p>
-</div></td></tr><tr><td id='structfield.kind'><a class='stability Unmarked' title='No stability level'></a><code>kind</code></td><td><div class='docblock'><p>Uniquely identifies the type of this resource. Value is always the fixed string games#turnBasedMatch.</p>
-</div></td></tr><tr><td id='structfield.creation_details'><a class='stability Unmarked' title='No stability level'></a><code>creation_details</code></td><td><div class='docblock'><p>Details about the match creation.</p>
-</div></td></tr><tr><td id='structfield.user_match_status'><a class='stability Unmarked' title='No stability level'></a><code>user_match_status</code></td><td><div class='docblock'><p>The status of the current user in the match. Derived from the match type, match status, the user&#39;s participant status, and the pending participant for the match.
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.auto_matching_criteria'><code>auto_matching_criteria</code></td><td><div class='docblock'><p>Criteria for auto-matching players into this match.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.inviter_id'><code>inviter_id</code></td><td><div class='docblock'><p>The ID of the participant that invited the user to the match. Not set if the user was not invited to the match.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.match_version'><code>match_version</code></td><td><div class='docblock'><p>The version of this match: an increasing counter, used to avoid out-of-date updates to the match.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.variant'><code>variant</code></td><td><div class='docblock'><p>The variant / mode of the application being played; can be any integer value, or left blank.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.match_id'><code>match_id</code></td><td><div class='docblock'><p>Globally unique ID for a turn-based match.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.rematch_id'><code>rematch_id</code></td><td><div class='docblock'><p>The ID of a rematch of this match. Only set for completed matches that have been rematched.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.results'><code>results</code></td><td><div class='docblock'><p>The results reported for this match.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.match_number'><code>match_number</code></td><td><div class='docblock'><p>The number of the match in a chain of rematches. Will be set to 1 for the first match and incremented by 1 for each rematch.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.previous_match_data'><code>previous_match_data</code></td><td><div class='docblock'><p>The data / game state for the previous match; set for the first turn of rematches only.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.application_id'><code>application_id</code></td><td><div class='docblock'><p>The ID of the application being played.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.description'><code>description</code></td><td><div class='docblock'><p>This short description is generated by our servers based on turn state and is localized and worded relative to the player requesting the match. It is intended to be displayed when the match is shown in a list.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.with_participant_id'><code>with_participant_id</code></td><td><div class='docblock'><p>The ID of another participant in the match that can be used when describing the participants the user is playing with.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.kind'><code>kind</code></td><td><div class='docblock'><p>Uniquely identifies the type of this resource. Value is always the fixed string games#turnBasedMatch.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.creation_details'><code>creation_details</code></td><td><div class='docblock'><p>Details about the match creation.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.user_match_status'><code>user_match_status</code></td><td><div class='docblock'><p>The status of the current user in the match. Derived from the match type, match status, the user&#39;s participant status, and the pending participant for the match.
 Possible values are:<br>
 - &quot;USER_INVITED&quot; - The user has been invited to join the match and has not responded yet. 
 - &quot;USER_AWAITING_TURN&quot; - The user is waiting for their turn. 
 - &quot;USER_TURN&quot; - The user has an action to take in the match. 
 - &quot;USER_MATCH_COMPLETED&quot; - The match has ended (it is completed, canceled, or expired.)</p>
-</div></td></tr><tr><td id='structfield.data'><a class='stability Unmarked' title='No stability level'></a><code>data</code></td><td><div class='docblock'><p>The data / game state for this match.</p>
-</div></td></tr><tr><td id='structfield.participants'><a class='stability Unmarked' title='No stability level'></a><code>participants</code></td><td><div class='docblock'><p>The participants involved in the match, along with their statuses. Includes participants who have left or declined invitations.</p>
-</div></td></tr><tr><td id='structfield.pending_participant_id'><a class='stability Unmarked' title='No stability level'></a><code>pending_participant_id</code></td><td><div class='docblock'><p>The ID of the participant that is taking a turn.</p>
-</div></td></tr><tr><td id='structfield.last_update_details'><a class='stability Unmarked' title='No stability level'></a><code>last_update_details</code></td><td><div class='docblock'><p>Details about the last update to the match.</p>
-</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='../google_games1/trait.ResponseResult.html' title='google_games1::ResponseResult'>ResponseResult</a> for <a class='struct' href='../google_games1/struct.TurnBasedMatch.html' title='google_games1::TurnBasedMatch'>TurnBasedMatch</a></code></h3><div class='impl-items'></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_games1/struct.TurnBasedMatch.html' title='google_games1::TurnBasedMatch'>TurnBasedMatch</a></code></h3><div class='impl-items'><h4 id='method.fmt' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#method.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='http://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='http://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
-</div><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_games1/struct.TurnBasedMatch.html' title='google_games1::TurnBasedMatch'>TurnBasedMatch</a></code></h3><div class='impl-items'><h4 id='method.clone' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_games1/struct.TurnBasedMatch.html' title='google_games1::TurnBasedMatch'>TurnBasedMatch</a></code></h4>
-<h4 id='method.clone_from' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code></h4>
-</div><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_games1/struct.TurnBasedMatch.html' title='google_games1::TurnBasedMatch'>TurnBasedMatch</a></code></h3><div class='impl-items'><h4 id='method.default' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/default/trait.Default.html#method.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_games1/struct.TurnBasedMatch.html' title='google_games1::TurnBasedMatch'>TurnBasedMatch</a></code></h4>
-</div><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='../serde/de/trait.Deserialize.html' title='serde::de::Deserialize'>Deserialize</a> for <a class='struct' href='../google_games1/struct.TurnBasedMatch.html' title='google_games1::TurnBasedMatch'>TurnBasedMatch</a></code></h3><div class='impl-items'><h4 id='method.deserialize' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='../serde/de/trait.Deserialize.html#method.deserialize' class='fnname'>deserialize</a>&lt;__D&gt;(deserializer: &amp;mut __D) -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../google_games1/struct.TurnBasedMatch.html' title='google_games1::TurnBasedMatch'>TurnBasedMatch</a>, __D&gt; <span class='where'>where __D: <a class='trait' href='../serde/de/trait.Deserializer.html' title='serde::de::Deserializer'>Deserializer</a></span></code></h4>
-</div><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='../serde/ser/trait.Serialize.html' title='serde::ser::Serialize'>Serialize</a> for <a class='struct' href='../google_games1/struct.TurnBasedMatch.html' title='google_games1::TurnBasedMatch'>TurnBasedMatch</a></code></h3><div class='impl-items'><h4 id='method.serialize' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='../serde/ser/trait.Serialize.html#method.serialize' class='fnname'>serialize</a>&lt;__S&gt;(&amp;self, serializer: &amp;mut __S) -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, __S&gt; <span class='where'>where __S: <a class='trait' href='../serde/ser/trait.Serializer.html' title='serde::ser::Serializer'>Serializer</a></span></code></h4>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.data'><code>data</code></td><td><div class='docblock'><p>The data / game state for this match.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.participants'><code>participants</code></td><td><div class='docblock'><p>The participants involved in the match, along with their statuses. Includes participants who have left or declined invitations.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.pending_participant_id'><code>pending_participant_id</code></td><td><div class='docblock'><p>The ID of the participant that is taking a turn.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.last_update_details'><code>last_update_details</code></td><td><div class='docblock'><p>Details about the last update to the match.</p>
+</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl <a class='trait' href='../serde/de/trait.Deserialize.html' title='serde::de::Deserialize'>Deserialize</a> for <a class='struct' href='../google_games1/struct.TurnBasedMatch.html' title='google_games1::TurnBasedMatch'>TurnBasedMatch</a></code></h3><div class='impl-items'><h4 id='method.deserialize' class='method'><code>fn <a href='../serde/de/trait.Deserialize.html#method.deserialize' class='fnname'>deserialize</a>&lt;__D&gt;(deserializer: &amp;mut __D) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../google_games1/struct.TurnBasedMatch.html' title='google_games1::TurnBasedMatch'>TurnBasedMatch</a>, __D::Error&gt; <span class='where'>where __D: <a class='trait' href='../serde/de/trait.Deserializer.html' title='serde::de::Deserializer'>Deserializer</a></span></code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='../serde/ser/trait.Serialize.html' title='serde::ser::Serialize'>Serialize</a> for <a class='struct' href='../google_games1/struct.TurnBasedMatch.html' title='google_games1::TurnBasedMatch'>TurnBasedMatch</a></code></h3><div class='impl-items'><h4 id='method.serialize' class='method'><code>fn <a href='../serde/ser/trait.Serialize.html#method.serialize' class='fnname'>serialize</a>&lt;__S&gt;(&amp;self, serializer: &amp;mut __S) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, __S::Error&gt; <span class='where'>where __S: <a class='trait' href='../serde/ser/trait.Serializer.html' title='serde::ser::Serializer'>Serializer</a></span></code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='../google_games1/trait.ResponseResult.html' title='google_games1::ResponseResult'>ResponseResult</a> for <a class='struct' href='../google_games1/struct.TurnBasedMatch.html' title='google_games1::TurnBasedMatch'>TurnBasedMatch</a></code></h3><div class='impl-items'></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_games1/struct.TurnBasedMatch.html' title='google_games1::TurnBasedMatch'>TurnBasedMatch</a></code></h3><div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#method.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_games1/struct.TurnBasedMatch.html' title='google_games1::TurnBasedMatch'>TurnBasedMatch</a></code></h3><div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_games1/struct.TurnBasedMatch.html' title='google_games1::TurnBasedMatch'>TurnBasedMatch</a></code></h4>
+<h4 id='method.clone_from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_games1/struct.TurnBasedMatch.html' title='google_games1::TurnBasedMatch'>TurnBasedMatch</a></code></h3><div class='impl-items'><h4 id='method.default' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#method.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_games1/struct.TurnBasedMatch.html' title='google_games1::TurnBasedMatch'>TurnBasedMatch</a></code></h4>
 </div></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
 
-    <div id="help" class="hidden">
-        <div class="shortcuts">
-            <h1>Keyboard shortcuts</h1>
-            <dl>
-                <dt>?</dt>
-                <dd>Show this help dialog</dd>
-                <dt>S</dt>
-                <dd>Focus the search field</dd>
-                <dt>&larrb;</dt>
-                <dd>Move up in search results</dd>
-                <dt>&rarrb;</dt>
-                <dd>Move down in search results</dd>
-                <dt>&#9166;</dt>
-                <dd>Go to active search result</dd>
-            </dl>
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code>)
+                </p>
+            </div>
         </div>
-        <div class="infos">
-            <h1>Search tricks</h1>
-            <p>
-                Prefix searches with a type followed by a colon (e.g.
-                <code>fn:</code>) to restrict the search to a given type.
-            </p>
-            <p>
-                Accepted types are: <code>fn</code>, <code>mod</code>,
-                <code>struct</code>, <code>enum</code>,
-                <code>trait</code>, <code>typedef</code> (or
-                <code>tdef</code>).
-            </p>
-        </div>
-    </div>
+    </aside>
 
     
 
@@ -167,6 +202,6 @@ Possible values are:<br>
     <script src="../jquery.js"></script>
     <script src="../main.js"></script>
     
-    <script async src="../search-index.js"></script>
+    <script defer src="../search-index.js"></script>
 </body>
 </html>

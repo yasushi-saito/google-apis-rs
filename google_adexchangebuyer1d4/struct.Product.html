@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `Product` struct in crate `google_adexchangebuyer1d4`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, Product">
+
+    <title>google_adexchangebuyer1d4::Product - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../main.css">
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='index.html'>google_adexchangebuyer1d4</a></p><script>window.sidebarCurrent = {name: 'Product', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content struct">
+<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_adexchangebuyer1d4</a>::<wbr><a class='struct' href=''>Product</a></span><span class='out-of-band'><span id='render-detail'>
+            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                [<span class='inner'>&#x2212;</span>]
+            </a>
+        </span><a id='src-3517' class='srclink' href='../src/google_adexchangebuyer1d4///Users/byron/dev/rs/google-apis-rs/target/debug/build/google-adexchangebuyer1d4-27c9b9bbcc56c76f/out/lib.rs.html#6108-6145' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct Product {
+    pub creator_contacts: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='../google_adexchangebuyer1d4/struct.ContactInformation.html' title='google_adexchangebuyer1d4::ContactInformation'>ContactInformation</a>&gt;&gt;,
+    pub shared_targetings: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='../google_adexchangebuyer1d4/struct.SharedTargeting.html' title='google_adexchangebuyer1d4::SharedTargeting'>SharedTargeting</a>&gt;&gt;,
+    pub terms: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_adexchangebuyer1d4/struct.DealTerms.html' title='google_adexchangebuyer1d4::DealTerms'>DealTerms</a>&gt;,
+    pub flight_end_time_ms: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub labels: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='../google_adexchangebuyer1d4/struct.MarketplaceLabel.html' title='google_adexchangebuyer1d4::MarketplaceLabel'>MarketplaceLabel</a>&gt;&gt;,
+    pub inventory_source: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub last_update_time_ms: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub revision_number: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub kind: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub name: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub syndication_product: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub seller: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_adexchangebuyer1d4/struct.Seller.html' title='google_adexchangebuyer1d4::Seller'>Seller</a>&gt;,
+    pub web_property_code: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub state: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub flight_start_time_ms: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub has_creator_signed_off: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt;,
+    pub creation_time_ms: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub product_id: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+}</pre><div class='docblock'><p>A product is segment of inventory that a seller wishes to sell. It is associated with certain terms and targeting information which helps buyer know more about the inventory. Each field in a product can have one of the following setting:</p>
+
+<p>(readonly) - It is an error to try and set this field. (buyer-readonly) - Only the seller can set this field. (seller-readonly) - Only the buyer can set this field. (updatable) - The field is updatable at all times by either buyer or the seller.</p>
+
+<h1 id='activities' class='section-header'><a href='#activities'>Activities</a></h1>
+<p>This type is used in activities, which are methods you may call on this type or where this type is involved in. 
+The list links the activity name, along with information about where it is used (one of <em>request</em> and <em>response</em>).</p>
+
+<ul>
+<li><a href="struct.ProductSearchCall.html">search products</a> (none)</li>
+<li><a href="struct.ProductGetCall.html">get products</a> (response)</li>
+</ul>
+</div><h2 class='fields'>Fields</h2>
+<table><tr class='stab '>
+                                  <td id='structfield.creator_contacts'><code>creator_contacts</code></td><td><div class='docblock'><p>Optional contact information for the creator of this product. (buyer-readonly)</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.shared_targetings'><code>shared_targetings</code></td><td><div class='docblock'><p>Targeting that is shared between the buyer and the seller. Each targeting criteria has a specified key and for each key there is a list of inclusion value or exclusion values. (buyer-readonly)</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.terms'><code>terms</code></td><td><div class='docblock'><p>The negotiable terms of the deal (buyer-readonly)</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.flight_end_time_ms'><code>flight_end_time_ms</code></td><td><div class='docblock'><p>The proposed end time for the deal (ms since epoch) (buyer-readonly)</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.labels'><code>labels</code></td><td><div class='docblock'><p>Optional List of labels for the product (optional, buyer-readonly).</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.inventory_source'><code>inventory_source</code></td><td><div class='docblock'><p>What exchange will provide this inventory (readonly, except on create).</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.last_update_time_ms'><code>last_update_time_ms</code></td><td><div class='docblock'><p>Time of last update in ms. since epoch (readonly)</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.revision_number'><code>revision_number</code></td><td><div class='docblock'><p>The revision number of the product. (readonly)</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.kind'><code>kind</code></td><td><div class='docblock'><p>Identifies what kind of resource this is. Value: the fixed string &quot;adexchangebuyer#product&quot;.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.name'><code>name</code></td><td><div class='docblock'><p>The name for this product as set by the seller. (buyer-readonly)</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.syndication_product'><code>syndication_product</code></td><td><div class='docblock'><p>The syndication product associated with the deal. (readonly, except on create)</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.seller'><code>seller</code></td><td><div class='docblock'><p>Information about the seller that created this product (readonly, except on create)</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.web_property_code'><code>web_property_code</code></td><td><div class='docblock'><p>no description provided</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.state'><code>state</code></td><td><div class='docblock'><p>The state of the product. (buyer-readonly)</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.flight_start_time_ms'><code>flight_start_time_ms</code></td><td><div class='docblock'><p>Inventory availability dates. (times are in ms since epoch) The granularity is generally in the order of seconds. (buyer-readonly)</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.has_creator_signed_off'><code>has_creator_signed_off</code></td><td><div class='docblock'><p>If the creator has already signed off on the product, then the buyer can finalize the deal by accepting the product as is. When copying to a proposal, if any of the terms are changed, then auto_finalize is automatically set to false.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.creation_time_ms'><code>creation_time_ms</code></td><td><div class='docblock'><p>Creation time in ms. since epoch (readonly)</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.product_id'><code>product_id</code></td><td><div class='docblock'><p>The unique id for the product (readonly)</p>
+</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl <a class='trait' href='../serde/de/trait.Deserialize.html' title='serde::de::Deserialize'>Deserialize</a> for <a class='struct' href='../google_adexchangebuyer1d4/struct.Product.html' title='google_adexchangebuyer1d4::Product'>Product</a></code></h3><div class='impl-items'><h4 id='method.deserialize' class='method'><code>fn <a href='../serde/de/trait.Deserialize.html#method.deserialize' class='fnname'>deserialize</a>&lt;__D&gt;(deserializer: &amp;mut __D) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../google_adexchangebuyer1d4/struct.Product.html' title='google_adexchangebuyer1d4::Product'>Product</a>, __D::Error&gt; <span class='where'>where __D: <a class='trait' href='../serde/de/trait.Deserializer.html' title='serde::de::Deserializer'>Deserializer</a></span></code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='../serde/ser/trait.Serialize.html' title='serde::ser::Serialize'>Serialize</a> for <a class='struct' href='../google_adexchangebuyer1d4/struct.Product.html' title='google_adexchangebuyer1d4::Product'>Product</a></code></h3><div class='impl-items'><h4 id='method.serialize' class='method'><code>fn <a href='../serde/ser/trait.Serialize.html#method.serialize' class='fnname'>serialize</a>&lt;__S&gt;(&amp;self, serializer: &amp;mut __S) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, __S::Error&gt; <span class='where'>where __S: <a class='trait' href='../serde/ser/trait.Serializer.html' title='serde::ser::Serializer'>Serializer</a></span></code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='../google_adexchangebuyer1d4/trait.Resource.html' title='google_adexchangebuyer1d4::Resource'>Resource</a> for <a class='struct' href='../google_adexchangebuyer1d4/struct.Product.html' title='google_adexchangebuyer1d4::Product'>Product</a></code></h3><div class='impl-items'></div><h3 class='impl'><code>impl <a class='trait' href='../google_adexchangebuyer1d4/trait.ResponseResult.html' title='google_adexchangebuyer1d4::ResponseResult'>ResponseResult</a> for <a class='struct' href='../google_adexchangebuyer1d4/struct.Product.html' title='google_adexchangebuyer1d4::Product'>Product</a></code></h3><div class='impl-items'></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_adexchangebuyer1d4/struct.Product.html' title='google_adexchangebuyer1d4::Product'>Product</a></code></h3><div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#method.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_adexchangebuyer1d4/struct.Product.html' title='google_adexchangebuyer1d4::Product'>Product</a></code></h3><div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_adexchangebuyer1d4/struct.Product.html' title='google_adexchangebuyer1d4::Product'>Product</a></code></h4>
+<h4 id='method.clone_from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_adexchangebuyer1d4/struct.Product.html' title='google_adexchangebuyer1d4::Product'>Product</a></code></h3><div class='impl-items'><h4 id='method.default' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#method.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_adexchangebuyer1d4/struct.Product.html' title='google_adexchangebuyer1d4::Product'>Product</a></code></h4>
+</div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "google_adexchangebuyer1d4";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../jquery.js"></script>
+    <script src="../main.js"></script>
+    
+    <script defer src="../search-index.js"></script>
+</body>
+</html>

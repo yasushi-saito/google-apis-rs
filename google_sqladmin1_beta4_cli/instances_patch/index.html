@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Patch - SQL Admin v0.3.0+20150305</title>
+  <title>Patch - SQL Admin v0.3.3+20151201</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -17,6 +17,12 @@
   <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
   <link rel="stylesheet" href="../css/highlight.css">
 
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Patch";
+  </script>
+  
   <script src="../js/jquery-2.1.1.min.js"></script>
   <script src="../js/modernizr-2.8.3.min.js"></script>
   <script type="text/javascript" src="../js/highlight.pack.js"></script>
@@ -32,267 +38,376 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> SQL Admin v0.3.0+20150305</a>
-        
+        <a href=".." class="icon icon-home"> SQL Admin v0.3.3+20151201</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-      <ul class="current">
-    
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="..">Home</a>
         
-            <li class="toctree-l1 ">
-                <a class="" href="..">Home</a>
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Backup Runs</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../backup-runs_delete/">Delete</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../backup-runs_get/">Get</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../backup-runs_list/">List</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Databases</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../databases_delete/">Delete</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../databases_get/">Get</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../databases_insert/">Insert</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../databases_list/">List</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../databases_patch/">Patch</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../databases_update/">Update</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Flags</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../flags_list/">List</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Instances</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../instances_clone/">Clone</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../instances_delete/">Delete</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../instances_export/">Export</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../instances_failover/">Failover</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../instances_get/">Get</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../instances_import/">Import</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../instances_insert/">Insert</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../instances_list/">List</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Patch</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#scopes">Scopes</a></li>
                 
-            </li>
+            
+                <li class="toctree-l3"><a href="#required-scalar-arguments">Required Scalar Arguments</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#required-request-value">Required Request Value</a></li>
+                
+                    <li><a class="toctree-l4" href="#about-cursors">About Cursors</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#optional-output-flags">Optional Output Flags</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#optional-general-properties">Optional General Properties</a></li>
+                
+            
+            </ul>
         
+    </li>
 
-    
         
-            <span>Backup Runs</span>
             
-                <li class="toctree-l2 ">
-                    <a class="" href="../backup-runs_get/">Get</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../backup-runs_list/">List</a>
-                    
-                </li>
-            
+    <li class="toctree-l1 ">
+        <a class="" href="../instances_promote-replica/">Promote Replica</a>
         
+    </li>
 
-    
         
-            <span>Databases</span>
             
-                <li class="toctree-l2 ">
-                    <a class="" href="../databases_delete/">Delete</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../databases_get/">Get</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../databases_insert/">Insert</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../databases_list/">List</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../databases_patch/">Patch</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../databases_update/">Update</a>
-                    
-                </li>
-            
+    <li class="toctree-l1 ">
+        <a class="" href="../instances_reset-ssl-config/">Reset Ssl Config</a>
         
+    </li>
 
-    
         
-            <span>Flags</span>
             
-                <li class="toctree-l2 ">
-                    <a class="" href="../flags_list/">List</a>
-                    
-                </li>
-            
+    <li class="toctree-l1 ">
+        <a class="" href="../instances_restart/">Restart</a>
         
+    </li>
 
-    
         
-            <span>Instances</span>
             
-                <li class="toctree-l2 ">
-                    <a class="" href="../instances_clone/">Clone</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../instances_delete/">Delete</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../instances_export/">Export</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../instances_get/">Get</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../instances_import/">Import</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../instances_insert/">Insert</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../instances_list/">List</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 current">
-                    <a class="current" href="./">Patch</a>
-                    
-                        <ul>
-                        
-                            <li class="toctree-l3"><a href="#scopes">Scopes</a></li>
-                            
-                        
-                            <li class="toctree-l3"><a href="#required-scalar-arguments">Required Scalar Arguments</a></li>
-                            
-                        
-                            <li class="toctree-l3"><a href="#required-request-value">Required Request Value</a></li>
-                            
-                                <li><a class="toctree-l4" href="#about-cursors">About Cursors</a></li>
-                            
-                        
-                            <li class="toctree-l3"><a href="#optional-output-flags">Optional Output Flags</a></li>
-                            
-                        
-                            <li class="toctree-l3"><a href="#optional-general-properties">Optional General Properties</a></li>
-                            
-                        
-                        </ul>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../instances_promote-replica/">Promote Replica</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../instances_reset-ssl-config/">Reset Ssl Config</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../instances_restart/">Restart</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../instances_restore-backup/">Restore Backup</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../instances_start-replica/">Start Replica</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../instances_stop-replica/">Stop Replica</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../instances_update/">Update</a>
-                    
-                </li>
-            
+    <li class="toctree-l1 ">
+        <a class="" href="../instances_restore-backup/">Restore Backup</a>
         
+    </li>
 
-    
         
-            <span>Operations</span>
             
-                <li class="toctree-l2 ">
-                    <a class="" href="../operations_get/">Get</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../operations_list/">List</a>
-                    
-                </li>
-            
+    <li class="toctree-l1 ">
+        <a class="" href="../instances_start-replica/">Start Replica</a>
         
+    </li>
 
-    
         
-            <span>Ssl Certs</span>
             
-                <li class="toctree-l2 ">
-                    <a class="" href="../ssl-certs_delete/">Delete</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../ssl-certs_get/">Get</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../ssl-certs_insert/">Insert</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../ssl-certs_list/">List</a>
-                    
-                </li>
-            
+    <li class="toctree-l1 ">
+        <a class="" href="../instances_stop-replica/">Stop Replica</a>
         
+    </li>
 
-    
         
-            <span>Tiers</span>
             
-                <li class="toctree-l2 ">
-                    <a class="" href="../tiers_list/">List</a>
-                    
-                </li>
-            
+    <li class="toctree-l1 ">
+        <a class="" href="../instances_update/">Update</a>
         
+    </li>
 
-    
         
-            <span>Users</span>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../users_delete/">Delete</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../users_insert/">Insert</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../users_list/">List</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../users_update/">Update</a>
-                    
-                </li>
-            
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Operations</span></li>
+
         
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../operations_get/">Get</a>
+        
+    </li>
 
-    
-</ul>
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../operations_list/">List</a>
+        
+    </li>
 
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Ssl Certs</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../ssl-certs_create-ephemeral/">Create Ephemeral</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../ssl-certs_delete/">Delete</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../ssl-certs_get/">Get</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../ssl-certs_insert/">Insert</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../ssl-certs_list/">List</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Tiers</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../tiers_list/">List</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Users</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../users_delete/">Delete</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../users_insert/">Insert</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../users_list/">List</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../users_update/">Update</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+        </ul>
       </div>
       &nbsp;
     </nav>
@@ -302,7 +417,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">SQL Admin v0.3.0+20150305</a>
+        <a href="..">SQL Admin v0.3.3+20151201</a>
       </nav>
 
       
@@ -313,23 +428,26 @@
     <li><a href="..">Docs</a> &raquo;</li>
     
       
-        <li>Instances &raquo;</li>
+        
+          <li>Instances &raquo;</li>
+        
       
     
     <li>Patch</li>
-      <li class="wy-breadcrumbs-aside">
+    <li class="wy-breadcrumbs-aside">
+      
         
-          
-            <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/sqladmin1_beta4-cli" class="icon icon-github"> Edit on GitHub</a>
-          
+          <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/sqladmin1_beta4-cli" class="icon icon-github"> Edit on GitHub</a>
         
-      </li>
+      
+    </li>
   </ul>
   <hr/>
 </div>
           <div role="main">
             <div class="section">
-              <p>Updates settings of a Cloud SQL instance. Caution: This is not a partial update, so you must include values for all the settings that you want to retain. For partial updates, use patch.. This method supports patch semantics.</p>
+              
+                <p>Updates settings of a Cloud SQL instance. Caution: This is not a partial update, so you must include values for all the settings that you want to retain. For partial updates, use patch.. This method supports patch semantics.</p>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for at least one of the following scopes to make a valid call:</p>
 <ul>
@@ -357,6 +475,9 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   current-disk-size: string
   database-version: string
   etag: string
+  failover-replica:
+    available: boolean
+    name: string
   instance-type: string
   ipv6-address: string
   kind: string
@@ -369,6 +490,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   project: string
   region: string
   replica-configuration:
+    failover-target: boolean
     kind: string
     mysql-replica-configuration:
       ca-certificate: string
@@ -404,6 +526,8 @@ In the latter case it is advised to set the field-cursor to the data-structure's
       kind: string
       start-time: string
     crash-safe-replication-enabled: boolean
+    data-disk-size-gb: string
+    data-disk-type: string
     database-replication-enabled: boolean
     ip-configuration:
       ipv4-enabled: boolean
@@ -413,6 +537,11 @@ In the latter case it is advised to set the field-cursor to the data-structure's
       follow-gae-application: string
       kind: string
       zone: string
+    maintenance-window:
+      day: integer
+      hour: integer
+      kind: string
+      update-track: string
     pricing-plan: string
     replication-type: string
     settings-version: string
@@ -423,26 +552,38 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    current-disk-size=sadipscing</code><ul>
+<li><code>-r .    current-disk-size=gubergren</code><ul>
 <li>The current disk usage of the instance in bytes.</li>
 </ul>
 </li>
-<li><code>database-version=rebum.</code><ul>
+<li><code>database-version=aliquyam</code><ul>
 <li>The database engine type and version. Can be MYSQL_5_5 or MYSQL_5_6. Defaults to MYSQL_5_5. The databaseVersion can not be changed after instance creation.</li>
 </ul>
 </li>
-<li><code>etag=dolore</code><ul>
+<li><code>etag=eos</code><ul>
 <li>HTTP 1.1 Entity tag for the resource.</li>
 </ul>
 </li>
-<li><code>instance-type=nonumy</code><ul>
+<li><code>failover-replica    available=true</code><ul>
+<li>No description provided.</li>
+</ul>
+</li>
+<li>
+<p><code>name=sea</code></p>
+<ul>
+<li>No description provided.</li>
+</ul>
+</li>
+<li>
+<p><code>..    instance-type=labore</code></p>
+<ul>
 <li>The instance type. This can be one of the following.
     CLOUD_SQL_INSTANCE: A Cloud SQL instance that is not replicating from a master.
     ON_PREMISES_INSTANCE: An instance running on the customer&#39;s premises.
     READ_REPLICA_INSTANCE: A Cloud SQL instance configured as a read-replica.</li>
 </ul>
 </li>
-<li><code>ipv6-address=sed</code><ul>
+<li><code>ipv6-address=ipsum</code><ul>
 <li>The IPv6 address assigned to the instance.</li>
 </ul>
 </li>
@@ -450,63 +591,68 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>This is always sql#instance.</li>
 </ul>
 </li>
-<li><code>master-instance-name=sit</code><ul>
+<li><code>master-instance-name=dolores</code><ul>
 <li>The name of the instance which will act as master in the replication setup.</li>
 </ul>
 </li>
-<li><code>max-disk-size=eirmod</code><ul>
+<li><code>max-disk-size=sit</code><ul>
 <li>The maximum disk size of the instance in bytes.</li>
 </ul>
 </li>
-<li><code>name=consetetur</code><ul>
+<li><code>name=diam</code><ul>
 <li>Name of the Cloud SQL instance. This does not include the project ID.</li>
 </ul>
 </li>
-<li><code>on-premises-configuration    host-port=labore</code><ul>
+<li><code>on-premises-configuration    host-port=ut</code><ul>
 <li>The host and port of the on-premises instance in host:port format</li>
 </ul>
 </li>
 <li>
-<p><code>kind=sed</code></p>
+<p><code>kind=justo</code></p>
 <ul>
 <li>This is always sql#onPremisesConfiguration.</li>
 </ul>
 </li>
 <li>
-<p><code>..    project=ea</code></p>
+<p><code>..    project=est</code></p>
 <ul>
 <li>The project ID of the project containing the Cloud SQL instance. The Google apps domain is prefixed if applicable.</li>
 </ul>
 </li>
-<li><code>region=gubergren</code><ul>
+<li><code>region=amet</code><ul>
 <li>The geographical region. Can be us-central, asia-east1 or europe-west1. Defaults to us-central. The region can not be changed after instance creation.</li>
 </ul>
 </li>
-<li><code>replica-configuration    kind=aliquyam</code><ul>
+<li><code>replica-configuration    failover-target=true</code><ul>
+<li>Specifies if the replica is the failover target. If the field is set to true the replica will be designated as a failover replica. In case the master instance fails, the replica instance will be promoted as the new master instance.
+    Only one replica can be specified as failover target, and the replica has to be in different zone with the master instance.</li>
+</ul>
+</li>
+<li><code>kind=clita</code><ul>
 <li>This is always sql#replicaConfiguration.</li>
 </ul>
 </li>
-<li><code>mysql-replica-configuration    ca-certificate=eos</code><ul>
+<li><code>mysql-replica-configuration    ca-certificate=diam</code><ul>
 <li>PEM representation of the trusted CA&#39;s x509 certificate.</li>
 </ul>
 </li>
-<li><code>client-certificate=tempor</code><ul>
+<li><code>client-certificate=justo</code><ul>
 <li>PEM representation of the slave&#39;s x509 certificate.</li>
 </ul>
 </li>
-<li><code>client-key=sea</code><ul>
+<li><code>client-key=est</code><ul>
 <li>PEM representation of the slave&#39;s private key. The corresponsing public key is encoded in the client&#39;s certificate.</li>
 </ul>
 </li>
-<li><code>connect-retry-interval=16</code><ul>
+<li><code>connect-retry-interval=38</code><ul>
 <li>Seconds to wait between connect retries. MySQL&#39;s default is 60 seconds.</li>
 </ul>
 </li>
-<li><code>dump-file-path=ipsum</code><ul>
+<li><code>dump-file-path=invidunt</code><ul>
 <li>Path to a SQL dump file in Google Cloud Storage from which the slave instance is to be created. The URI is in the form gs://bucketName/fileName. Compressed gzip files (.gz) are also supported. Dumps should have the binlog co-ordinates from which replication should begin. This can be accomplished by setting --master-data to 1 when using mysqldump.</li>
 </ul>
 </li>
-<li><code>kind=aliquyam</code><ul>
+<li><code>kind=ut</code><ul>
 <li>This is always sql#mysqlReplicaConfiguration.</li>
 </ul>
 </li>
@@ -514,15 +660,15 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>Interval in milliseconds between replication heartbeats.</li>
 </ul>
 </li>
-<li><code>password=sit</code><ul>
+<li><code>password=eos</code><ul>
 <li>The password for the replication connection.</li>
 </ul>
 </li>
-<li><code>ssl-cipher=diam</code><ul>
+<li><code>ssl-cipher=voluptua.</code><ul>
 <li>A list of permissible ciphers to use for SSL encryption.</li>
 </ul>
 </li>
-<li><code>username=ut</code><ul>
+<li><code>username=duo</code><ul>
 <li>The username for the replication connection.</li>
 </ul>
 </li>
@@ -533,68 +679,68 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
-<p><code>...    replica-names=est</code></p>
+<p><code>...    replica-names=aliquyam</code></p>
 <ul>
 <li>The replicas of the instance.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>self-link=amet</code><ul>
+<li><code>self-link=ea</code><ul>
 <li>The URI of this resource.</li>
 </ul>
 </li>
-<li><code>server-ca-cert    cert=accusam</code><ul>
+<li><code>server-ca-cert    cert=ea</code><ul>
 <li>PEM representation.</li>
 </ul>
 </li>
-<li><code>cert-serial-number=clita</code><ul>
+<li><code>cert-serial-number=et</code><ul>
 <li>Serial number, as extracted from the certificate.</li>
 </ul>
 </li>
-<li><code>common-name=diam</code><ul>
+<li><code>common-name=dolor</code><ul>
 <li>User supplied name. Constrained to [a-zA-Z.-_ ]+.</li>
 </ul>
 </li>
-<li><code>create-time=justo</code><ul>
+<li><code>create-time=diam</code><ul>
 <li>The time when the certificate was created in RFC 3339 format, for example 2012-11-15T16:19:00.094Z</li>
 </ul>
 </li>
-<li><code>expiration-time=est</code><ul>
+<li><code>expiration-time=kasd</code><ul>
 <li>The time when the certificate expires in RFC 3339 format, for example 2012-11-15T16:19:00.094Z.</li>
 </ul>
 </li>
-<li><code>instance=clita</code><ul>
+<li><code>instance=invidunt</code><ul>
 <li>Name of the database instance.</li>
 </ul>
 </li>
-<li><code>kind=invidunt</code><ul>
+<li><code>kind=rebum.</code><ul>
 <li>This is always sql#sslCert.</li>
 </ul>
 </li>
-<li><code>self-link=ut</code><ul>
-<li>No description provided.</li>
+<li><code>self-link=lorem</code><ul>
+<li>The URI of this resource.</li>
 </ul>
 </li>
 <li>
-<p><code>sha1-fingerprint=dolores</code></p>
+<p><code>sha1-fingerprint=clita</code></p>
 <ul>
 <li>Sha1 Fingerprint.</li>
 </ul>
 </li>
 <li>
-<p><code>..    service-account-email-address=eos</code></p>
+<p><code>..    service-account-email-address=invidunt</code></p>
 <ul>
 <li>The service account email address assigned to the instance.</li>
 </ul>
 </li>
-<li><code>settings    activation-policy=voluptua.</code><ul>
+<li><code>settings    activation-policy=eirmod</code><ul>
 <li>The activation policy for this instance. This specifies when the instance should be activated and is applicable only when the instance state is RUNNABLE. This can be one of the following.
     ALWAYS: The instance should always be active.
     NEVER: The instance should never be activated.
     ON_DEMAND: The instance is activated upon receiving requests.</li>
 </ul>
 </li>
-<li><code>authorized-gae-applications=duo</code><ul>
+<li><code>authorized-gae-applications=at</code><ul>
 <li>The App Engine app IDs that can access this instance.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
@@ -607,20 +753,28 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>Whether this configuration is enabled.</li>
 </ul>
 </li>
-<li><code>kind=ea</code><ul>
+<li><code>kind=sed</code><ul>
 <li>This is always sql#backupConfiguration.</li>
 </ul>
 </li>
 <li>
-<p><code>start-time=ea</code></p>
+<p><code>start-time=sit</code></p>
 <ul>
 <li>Start time for the daily backup configuration in UTC timezone in the 24 hour format - HH:MM.</li>
 </ul>
 </li>
 <li>
-<p><code>..    crash-safe-replication-enabled=false</code></p>
+<p><code>..    crash-safe-replication-enabled=true</code></p>
 <ul>
 <li>Configuration specific to read replica instances. Indicates whether database flags for crash-safe replication are enabled.</li>
+</ul>
+</li>
+<li><code>data-disk-size-gb=elitr</code><ul>
+<li>The size of data disk, in GB. Only supported for 2nd Generation instances. The data disk size minimum is 10GB.</li>
+</ul>
+</li>
+<li><code>data-disk-type=nonumy</code><ul>
+<li>The type of data disk. Only supported for 2nd Generation instances. The default type is SSD.</li>
 </ul>
 </li>
 <li><code>database-replication-enabled=true</code><ul>
@@ -632,33 +786,53 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
-<p><code>require-ssl=false</code></p>
+<p><code>require-ssl=true</code></p>
 <ul>
 <li>Whether the mysqld should default to &#39;REQUIRE X509&#39; for users connecting over IP.</li>
 </ul>
 </li>
 <li>
-<p><code>..    kind=invidunt</code></p>
+<p><code>..    kind=diam</code></p>
 <ul>
 <li>This is always sql#settings.</li>
 </ul>
 </li>
-<li><code>location-preference    follow-gae-application=rebum.</code><ul>
+<li><code>location-preference    follow-gae-application=ut</code><ul>
 <li>The AppEngine application to follow, it must be in the same region as the Cloud SQL instance.</li>
 </ul>
 </li>
-<li><code>kind=lorem</code><ul>
+<li><code>kind=ut</code><ul>
 <li>This is always sql#locationPreference.</li>
 </ul>
 </li>
 <li>
-<p><code>zone=clita</code></p>
+<p><code>zone=amet.</code></p>
 <ul>
 <li>The preferred Compute Engine zone (e.g. us-centra1-a, us-central1-b, etc.).</li>
 </ul>
 </li>
 <li>
-<p><code>..    pricing-plan=invidunt</code></p>
+<p><code>..maintenance-window    day=1</code></p>
+<ul>
+<li>day of week (1-7), starting on Monday.</li>
+</ul>
+</li>
+<li><code>hour=14</code><ul>
+<li>hour of day - 0 to 23.</li>
+</ul>
+</li>
+<li><code>kind=dolor</code><ul>
+<li>This is always sql#maintenanceWindow.</li>
+</ul>
+</li>
+<li>
+<p><code>update-track=sea</code></p>
+<ul>
+<li>No description provided.</li>
+</ul>
+</li>
+<li>
+<p><code>..    pricing-plan=ut</code></p>
 <ul>
 <li>The pricing plan for this instance. This can be either PER_USE or PACKAGE.</li>
 </ul>
@@ -667,24 +841,25 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>The type of replication this instance uses. This can be either ASYNCHRONOUS or SYNCHRONOUS.</li>
 </ul>
 </li>
-<li><code>settings-version=at</code><ul>
+<li><code>settings-version=sanctus</code><ul>
 <li>The version of instance settings. This is a required field for update method to make sure concurrent updates are handled properly. During update, use the most recent settingsVersion value for this instance and do not try to update this value.</li>
 </ul>
 </li>
 <li>
-<p><code>tier=consetetur</code></p>
+<p><code>tier=voluptua.</code></p>
 <ul>
 <li>The tier of service for this instance, for example D1, D2. For more information, see pricing.</li>
 </ul>
 </li>
 <li>
-<p><code>..    state=et</code></p>
+<p><code>..    state=dolor</code></p>
 <ul>
 <li>The current serving state of the Cloud SQL instance. This can be one of the following.
     RUNNABLE: The instance is running, or is ready to run when accessed.
     SUSPENDED: The instance is not available, for example due to problems with billing.
     PENDING_CREATE: The instance is being created.
     MAINTENANCE: The instance is down for maintenance.
+    FAILED: The instance creation failed.
     UNKNOWN_STATE: The state of the instance is unknown.</li>
 </ul>
 </li>
@@ -754,6 +929,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 </ul>
+              
             </div>
           </div>
           <footer>
@@ -771,9 +947,10 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   <hr/>
 
   <div role="contentinfo">
-    <p>
     <!-- Copyright etc -->
-    </p>
+    
+      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+    
   </div>
 
   Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
@@ -788,17 +965,17 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <div class="rst-versions" role="note" style="cursor: pointer">
     <span class="rst-current-version" data-toggle="rst-current-version">
-        
-            <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/sqladmin1_beta4-cli" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
-        
-      <span><a href="../instances_list/" style="color: #fcfcfc;">&laquo; Previous</a></span>
-      <span style="margin-left: 15px"><a href="../instances_promote-replica/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+          <a class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../instances_list/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../instances_promote-replica/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
     </span>
 </div>
 
-<!--
-MkDocs version  : 0.12.2
-Docs Build Date : 2015-06-21 14:29:47.146114
--->
 </body>
 </html>

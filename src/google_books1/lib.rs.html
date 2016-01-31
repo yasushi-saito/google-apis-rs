@@ -9,6 +9,7 @@
 
     <title>lib.rs.html -- source</title>
 
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../../main.css">
 
     
@@ -24,17 +25,17 @@
 
     
 
-    <section class="sidebar">
+    <nav class="sidebar">
         
         
-    </section>
+    </nav>
 
     <nav class="sub">
         <form class="search-form js-only">
             <div class="search-container">
                 <input class="search-input" name="search"
                        autocomplete="off"
-                       placeholder="Click or press 'S' to search, '?' for more options..."
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
                        type="search">
             </div>
         </form>
@@ -252,12 +253,18 @@
 <span id="210">210</span>
 <span id="211">211</span>
 <span id="212">212</span>
+<span id="213">213</span>
+<span id="214">214</span>
+<span id="215">215</span>
+<span id="216">216</span>
+<span id="217">217</span>
+<span id="218">218</span>
 </pre><pre class='rust '>
 <span class='comment'>// DO NOT EDIT !</span>
 <span class='comment'>// This file was generated automatically from &#39;src/mako/api/lib.rs.mako&#39;</span>
 <span class='comment'>// DO NOT EDIT !</span>
 
-<span class='doccomment'>//! This documentation was generated from *books* crate version *0.1.8+20150401*, where *20150401* is the exact revision of the *books:v1* schema built by the [mako](http://www.makotemplates.org/) code generator *v0.1.8*.</span>
+<span class='doccomment'>//! This documentation was generated from *books* crate version *0.1.11+20151218*, where *20151218* is the exact revision of the *books:v1* schema built by the [mako](http://www.makotemplates.org/) code generator *v0.1.11*.</span>
 <span class='doccomment'>//! </span>
 <span class='doccomment'>//! Everything else about the *books* *v1* API can be found at the</span>
 <span class='doccomment'>//! [official documentation site](https://developers.google.com/books/docs/v1/getting_started).</span>
@@ -278,10 +285,16 @@
 <span class='doccomment'>//!  * [*get user settings*](struct.MyconfigGetUserSettingCall.html), [*release download access*](struct.MyconfigReleaseDownloadAccesCall.html), [*request access*](struct.MyconfigRequestAccesCall.html), [*sync volume licenses*](struct.MyconfigSyncVolumeLicenseCall.html) and [*update user settings*](struct.MyconfigUpdateUserSettingCall.html)</span>
 <span class='doccomment'>//! * mylibrary</span>
 <span class='doccomment'>//!  * [*annotations delete*](struct.MylibraryAnnotationDeleteCall.html), [*annotations insert*](struct.MylibraryAnnotationInsertCall.html), [*annotations list*](struct.MylibraryAnnotationListCall.html), [*annotations summary*](struct.MylibraryAnnotationSummaryCall.html), [*annotations update*](struct.MylibraryAnnotationUpdateCall.html), [*bookshelves add volume*](struct.MylibraryBookshelveAddVolumeCall.html), [*bookshelves clear volumes*](struct.MylibraryBookshelveClearVolumeCall.html), [*bookshelves get*](struct.MylibraryBookshelveGetCall.html), [*bookshelves list*](struct.MylibraryBookshelveListCall.html), [*bookshelves move volume*](struct.MylibraryBookshelveMoveVolumeCall.html), [*bookshelves remove volume*](struct.MylibraryBookshelveRemoveVolumeCall.html), [*bookshelves volumes list*](struct.MylibraryBookshelveVolumeListCall.html), [*readingpositions get*](struct.MylibraryReadingpositionGetCall.html) and [*readingpositions set position*](struct.MylibraryReadingpositionSetPositionCall.html)</span>
+<span class='doccomment'>//! * [notification](struct.Notification.html)</span>
+<span class='doccomment'>//!  * [*get*](struct.NotificationGetCall.html)</span>
 <span class='doccomment'>//! * onboarding</span>
 <span class='doccomment'>//!  * [*list categories*](struct.OnboardingListCategoryCall.html) and [*list category volumes*](struct.OnboardingListCategoryVolumeCall.html)</span>
+<span class='doccomment'>//! * personalizedstream</span>
+<span class='doccomment'>//!  * [*get*](struct.PersonalizedstreamGetCall.html)</span>
 <span class='doccomment'>//! * promooffer</span>
 <span class='doccomment'>//!  * [*accept*](struct.PromoofferAcceptCall.html), [*dismiss*](struct.PromoofferDismisCall.html) and [*get*](struct.PromoofferGetCall.html)</span>
+<span class='doccomment'>//! * series</span>
+<span class='doccomment'>//!  * [*get*](struct.SeryGetCall.html) and [*membership get*](struct.SeryMembershipGetCall.html)</span>
 <span class='doccomment'>//! * [volumes](struct.Volume.html)</span>
 <span class='doccomment'>//!  * [*associated list*](struct.VolumeAssociatedListCall.html), [*get*](struct.VolumeGetCall.html), [*list*](struct.VolumeListCall.html), [*mybooks list*](struct.VolumeMybookListCall.html), [*recommended list*](struct.VolumeRecommendedListCall.html), [*recommended rate*](struct.VolumeRecommendedRateCall.html) and [*useruploaded list*](struct.VolumeUseruploadedListCall.html)</span>
 <span class='doccomment'>//! </span>
@@ -372,18 +385,18 @@
 <span class='doccomment'>//! // execute the final call using `doit()`.</span>
 <span class='doccomment'>//! // Values shown here are possibly random and not representative !</span>
 <span class='doccomment'>//! let result = hub.volumes().list(&quot;q&quot;)</span>
-<span class='doccomment'>//!              .start_index(76)</span>
-<span class='doccomment'>//!              .source(&quot;consetetur&quot;)</span>
-<span class='doccomment'>//!              .show_preorders(true)</span>
-<span class='doccomment'>//!              .projection(&quot;justo&quot;)</span>
-<span class='doccomment'>//!              .print_type(&quot;tempor&quot;)</span>
-<span class='doccomment'>//!              .partner(&quot;gubergren&quot;)</span>
-<span class='doccomment'>//!              .order_by(&quot;dolore&quot;)</span>
-<span class='doccomment'>//!              .max_results(50)</span>
-<span class='doccomment'>//!              .library_restrict(&quot;dolore&quot;)</span>
-<span class='doccomment'>//!              .lang_restrict(&quot;magna&quot;)</span>
-<span class='doccomment'>//!              .filter(&quot;elitr&quot;)</span>
-<span class='doccomment'>//!              .download(&quot;magna&quot;)</span>
+<span class='doccomment'>//!              .start_index(8)</span>
+<span class='doccomment'>//!              .source(&quot;diam&quot;)</span>
+<span class='doccomment'>//!              .show_preorders(false)</span>
+<span class='doccomment'>//!              .projection(&quot;dolor&quot;)</span>
+<span class='doccomment'>//!              .print_type(&quot;Lorem&quot;)</span>
+<span class='doccomment'>//!              .partner(&quot;dolor&quot;)</span>
+<span class='doccomment'>//!              .order_by(&quot;vero&quot;)</span>
+<span class='doccomment'>//!              .max_results(10)</span>
+<span class='doccomment'>//!              .library_restrict(&quot;takimata&quot;)</span>
+<span class='doccomment'>//!              .lang_restrict(&quot;dolores&quot;)</span>
+<span class='doccomment'>//!              .filter(&quot;consetetur&quot;)</span>
+<span class='doccomment'>//!              .download(&quot;erat&quot;)</span>
 <span class='doccomment'>//!              .doit();</span>
 <span class='doccomment'>//! </span>
 <span class='doccomment'>//! match result {</span>
@@ -464,43 +477,55 @@
 <span class='comment'>// unused imports in fully featured APIs. Same with unused_mut ... .</span>
 <span class='attribute'>#<span class='op'>!</span>[<span class='ident'>allow</span>(<span class='ident'>unused_imports</span>, <span class='ident'>unused_mut</span>, <span class='ident'>dead_code</span>)]</span>
 
-<span class='macro'>include</span><span class='macro'>!</span>(<span class='macro'>concat</span><span class='macro'>!</span>(<span class='macro'>env</span><span class='macro'>!</span>(<span class='string'>&quot;OUT_DIR&quot;</span>), <span class='string'>&quot;/lib.rs&quot;</span>));
-</pre>
+<span class='macro'>include</span><span class='macro'>!</span>(<span class='macro'>concat</span><span class='macro'>!</span>(<span class='macro'>env</span><span class='macro'>!</span>(<span class='string'>&quot;OUT_DIR&quot;</span>), <span class='string'>&quot;/lib.rs&quot;</span>));</pre>
 </section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
 
-    <div id="help" class="hidden">
-        <div class="shortcuts">
-            <h1>Keyboard shortcuts</h1>
-            <dl>
-                <dt>?</dt>
-                <dd>Show this help dialog</dd>
-                <dt>S</dt>
-                <dd>Focus the search field</dd>
-                <dt>&larrb;</dt>
-                <dd>Move up in search results</dd>
-                <dt>&rarrb;</dt>
-                <dd>Move down in search results</dd>
-                <dt>&#9166;</dt>
-                <dd>Go to active search result</dd>
-            </dl>
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code>)
+                </p>
+            </div>
         </div>
-        <div class="infos">
-            <h1>Search tricks</h1>
-            <p>
-                Prefix searches with a type followed by a colon (e.g.
-                <code>fn:</code>) to restrict the search to a given type.
-            </p>
-            <p>
-                Accepted types are: <code>fn</code>, <code>mod</code>,
-                <code>struct</code>, <code>enum</code>,
-                <code>trait</code>, <code>typedef</code> (or
-                <code>tdef</code>).
-            </p>
-        </div>
-    </div>
+    </aside>
 
     
 
@@ -512,6 +537,6 @@
     <script src="../../jquery.js"></script>
     <script src="../../main.js"></script>
     
-    <script async src="../../search-index.js"></script>
+    <script defer src="../../search-index.js"></script>
 </body>
 </html>

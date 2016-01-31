@@ -9,6 +9,7 @@
 
     <title>google_reseller1_sandbox::SubscriptionMethods - Rust</title>
 
+    <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
 
     
@@ -24,35 +25,36 @@
 
     
 
-    <section class="sidebar">
+    <nav class="sidebar">
         
         <p class='location'><a href='index.html'>google_reseller1_sandbox</a></p><script>window.sidebarCurrent = {name: 'SubscriptionMethods', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
-    </section>
+    </nav>
 
     <nav class="sub">
         <form class="search-form js-only">
             <div class="search-container">
                 <input class="search-input" name="search"
                        autocomplete="off"
-                       placeholder="Click or press 'S' to search, '?' for more options..."
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
                        type="search">
             </div>
         </form>
     </nav>
 
     <section id='main' class="content struct">
-<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_reseller1_sandbox</a>::<wbr><a class='struct' href=''>SubscriptionMethods</a><wbr></span><span class='out-of-band'><span id='render-detail'>
-            <a id="collapse-all" href="#">[-]</a>&nbsp;<a id="expand-all" href="#">[+]</a>
-        </span><a id='src-15907' href='../src/google_reseller1_sandbox///home/byron/dev/rust/google-apis-rs/target/debug/build/google-reseller1_sandbox-02463febd8f81994/out/lib.rs.html#4145-4147'>[src]</a></span></h1>
+<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_reseller1_sandbox</a>::<wbr><a class='struct' href=''>SubscriptionMethods</a></span><span class='out-of-band'><span id='render-detail'>
+            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                [<span class='inner'>&#x2212;</span>]
+            </a>
+        </span><a id='src-3008' class='srclink' href='../src/google_reseller1_sandbox///Users/byron/dev/rs/google-apis-rs/target/debug/build/google-reseller1_sandbox-7962a31c278e9e2b/out/lib.rs.html#5247-5249' title='goto source code'>[src]</a></span></h1>
 <pre class='rust struct'>pub struct SubscriptionMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>subscription</em> resources.
 It is not used directly, but through the <code>Reseller</code> hub.</p>
 
-<h1 id="example" class='section-header'><a
-                           href="#example">Example</a></h1>
+<h1 id='example' class='section-header'><a href='#example'>Example</a></h1>
 <p>Instantiate a resource builder</p>
-<pre id='rust-example-rendered' class='rust '>
+<pre class='rust rust-example-rendered'>
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>hyper</span>;
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>yup_oauth2</span> <span class='kw'>as</span> <span class='ident'>oauth2</span>;
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>google_reseller1_sandbox</span> <span class='kw'>as</span> <span class='ident'>reseller1_sandbox</span>;
@@ -69,150 +71,153 @@ It is not used directly, but through the <code>Reseller</code> hub.</p>
 <span class='comment'>// Usually you wouldn&#39;t bind this to a variable, but keep calling *CallBuilders*</span>
 <span class='comment'>// like `activate(...)`, `change_plan(...)`, `change_renewal_settings(...)`, `change_seats(...)`, `delete(...)`, `get(...)`, `insert(...)`, `list(...)`, `start_paid_service(...)` and `suspend(...)`</span>
 <span class='comment'>// to build up your call.</span>
-<span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>subscriptions</span>();
-</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_reseller1_sandbox/struct.SubscriptionMethods.html' title='google_reseller1_sandbox::SubscriptionMethods'>SubscriptionMethods</a>&lt;'a, C, A&gt;</code></h3><div class='impl-items'><h4 id='method.insert' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.insert' class='fnname'>insert</a>(&amp;self, request: <a class='struct' href='../google_reseller1_sandbox/struct.Subscription.html' title='google_reseller1_sandbox::Subscription'>Subscription</a>, customer_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_reseller1_sandbox/struct.SubscriptionInsertCall.html' title='google_reseller1_sandbox::SubscriptionInsertCall'>SubscriptionInsertCall</a>&lt;'a, C, A&gt;</code></h4>
+<span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>subscriptions</span>();</pre>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_reseller1_sandbox/struct.SubscriptionMethods.html' title='google_reseller1_sandbox::SubscriptionMethods'>SubscriptionMethods</a>&lt;'a, C, A&gt;</code></h3><div class='impl-items'><h4 id='method.insert' class='method'><code>fn <a href='#method.insert' class='fnname'>insert</a>(&amp;self, request: <a class='struct' href='../google_reseller1_sandbox/struct.Subscription.html' title='google_reseller1_sandbox::Subscription'>Subscription</a>, customer_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_reseller1_sandbox/struct.SubscriptionInsertCall.html' title='google_reseller1_sandbox::SubscriptionInsertCall'>SubscriptionInsertCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Creates/Transfers a subscription for the customer.</p>
 
-<h1 id="arguments" class='section-header'><a
-                           href="#arguments">Arguments</a></h1>
+<h1 id='arguments' class='section-header'><a href='#arguments'>Arguments</a></h1>
 <ul>
 <li><code>request</code> - No description provided.</li>
 <li><code>customerId</code> - Id of the Customer</li>
 </ul>
-</div><h4 id='method.delete' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.delete' class='fnname'>delete</a>(&amp;self, customer_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, subscription_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, deletion_type: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_reseller1_sandbox/struct.SubscriptionDeleteCall.html' title='google_reseller1_sandbox::SubscriptionDeleteCall'>SubscriptionDeleteCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.delete' class='method'><code>fn <a href='#method.delete' class='fnname'>delete</a>(&amp;self, customer_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, subscription_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, deletion_type: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_reseller1_sandbox/struct.SubscriptionDeleteCall.html' title='google_reseller1_sandbox::SubscriptionDeleteCall'>SubscriptionDeleteCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Cancels/Downgrades a subscription.</p>
 
-<h1 id="arguments" class='section-header'><a
-                           href="#arguments">Arguments</a></h1>
+<h1 id='arguments-1' class='section-header'><a href='#arguments-1'>Arguments</a></h1>
 <ul>
 <li><code>customerId</code> - Id of the Customer</li>
 <li><code>subscriptionId</code> - Id of the subscription, which is unique for a customer</li>
 <li><code>deletionType</code> - Whether the subscription is to be fully cancelled or downgraded</li>
 </ul>
-</div><h4 id='method.get' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, customer_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, subscription_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_reseller1_sandbox/struct.SubscriptionGetCall.html' title='google_reseller1_sandbox::SubscriptionGetCall'>SubscriptionGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, customer_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, subscription_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_reseller1_sandbox/struct.SubscriptionGetCall.html' title='google_reseller1_sandbox::SubscriptionGetCall'>SubscriptionGetCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Gets a subscription of the customer.</p>
 
-<h1 id="arguments" class='section-header'><a
-                           href="#arguments">Arguments</a></h1>
+<h1 id='arguments-2' class='section-header'><a href='#arguments-2'>Arguments</a></h1>
 <ul>
 <li><code>customerId</code> - Id of the Customer</li>
 <li><code>subscriptionId</code> - Id of the subscription, which is unique for a customer</li>
 </ul>
-</div><h4 id='method.list' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self) -&gt; <a class='struct' href='../google_reseller1_sandbox/struct.SubscriptionListCall.html' title='google_reseller1_sandbox::SubscriptionListCall'>SubscriptionListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self) -&gt; <a class='struct' href='../google_reseller1_sandbox/struct.SubscriptionListCall.html' title='google_reseller1_sandbox::SubscriptionListCall'>SubscriptionListCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Lists subscriptions of a reseller, optionally filtered by a customer name prefix.</p>
-</div><h4 id='method.change_renewal_settings' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.change_renewal_settings' class='fnname'>change_renewal_settings</a>(&amp;self, request: <a class='struct' href='../google_reseller1_sandbox/struct.RenewalSettings.html' title='google_reseller1_sandbox::RenewalSettings'>RenewalSettings</a>, customer_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, subscription_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_reseller1_sandbox/struct.SubscriptionChangeRenewalSettingCall.html' title='google_reseller1_sandbox::SubscriptionChangeRenewalSettingCall'>SubscriptionChangeRenewalSettingCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.change_renewal_settings' class='method'><code>fn <a href='#method.change_renewal_settings' class='fnname'>change_renewal_settings</a>(&amp;self, request: <a class='struct' href='../google_reseller1_sandbox/struct.RenewalSettings.html' title='google_reseller1_sandbox::RenewalSettings'>RenewalSettings</a>, customer_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, subscription_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_reseller1_sandbox/struct.SubscriptionChangeRenewalSettingCall.html' title='google_reseller1_sandbox::SubscriptionChangeRenewalSettingCall'>SubscriptionChangeRenewalSettingCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Changes the renewal settings of a subscription</p>
 
-<h1 id="arguments" class='section-header'><a
-                           href="#arguments">Arguments</a></h1>
+<h1 id='arguments-3' class='section-header'><a href='#arguments-3'>Arguments</a></h1>
 <ul>
 <li><code>request</code> - No description provided.</li>
 <li><code>customerId</code> - Id of the Customer</li>
 <li><code>subscriptionId</code> - Id of the subscription, which is unique for a customer</li>
 </ul>
-</div><h4 id='method.start_paid_service' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.start_paid_service' class='fnname'>start_paid_service</a>(&amp;self, customer_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, subscription_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_reseller1_sandbox/struct.SubscriptionStartPaidServiceCall.html' title='google_reseller1_sandbox::SubscriptionStartPaidServiceCall'>SubscriptionStartPaidServiceCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.start_paid_service' class='method'><code>fn <a href='#method.start_paid_service' class='fnname'>start_paid_service</a>(&amp;self, customer_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, subscription_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_reseller1_sandbox/struct.SubscriptionStartPaidServiceCall.html' title='google_reseller1_sandbox::SubscriptionStartPaidServiceCall'>SubscriptionStartPaidServiceCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Starts paid service of a trial subscription</p>
 
-<h1 id="arguments" class='section-header'><a
-                           href="#arguments">Arguments</a></h1>
+<h1 id='arguments-4' class='section-header'><a href='#arguments-4'>Arguments</a></h1>
 <ul>
 <li><code>customerId</code> - Id of the Customer</li>
 <li><code>subscriptionId</code> - Id of the subscription, which is unique for a customer</li>
 </ul>
-</div><h4 id='method.change_seats' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.change_seats' class='fnname'>change_seats</a>(&amp;self, request: <a class='struct' href='../google_reseller1_sandbox/struct.Seats.html' title='google_reseller1_sandbox::Seats'>Seats</a>, customer_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, subscription_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_reseller1_sandbox/struct.SubscriptionChangeSeatCall.html' title='google_reseller1_sandbox::SubscriptionChangeSeatCall'>SubscriptionChangeSeatCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.change_seats' class='method'><code>fn <a href='#method.change_seats' class='fnname'>change_seats</a>(&amp;self, request: <a class='struct' href='../google_reseller1_sandbox/struct.Seats.html' title='google_reseller1_sandbox::Seats'>Seats</a>, customer_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, subscription_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_reseller1_sandbox/struct.SubscriptionChangeSeatCall.html' title='google_reseller1_sandbox::SubscriptionChangeSeatCall'>SubscriptionChangeSeatCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Changes the seats configuration of a subscription</p>
 
-<h1 id="arguments" class='section-header'><a
-                           href="#arguments">Arguments</a></h1>
+<h1 id='arguments-5' class='section-header'><a href='#arguments-5'>Arguments</a></h1>
 <ul>
 <li><code>request</code> - No description provided.</li>
 <li><code>customerId</code> - Id of the Customer</li>
 <li><code>subscriptionId</code> - Id of the subscription, which is unique for a customer</li>
 </ul>
-</div><h4 id='method.suspend' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.suspend' class='fnname'>suspend</a>(&amp;self, customer_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, subscription_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_reseller1_sandbox/struct.SubscriptionSuspendCall.html' title='google_reseller1_sandbox::SubscriptionSuspendCall'>SubscriptionSuspendCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.suspend' class='method'><code>fn <a href='#method.suspend' class='fnname'>suspend</a>(&amp;self, customer_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, subscription_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_reseller1_sandbox/struct.SubscriptionSuspendCall.html' title='google_reseller1_sandbox::SubscriptionSuspendCall'>SubscriptionSuspendCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Suspends an active subscription</p>
 
-<h1 id="arguments" class='section-header'><a
-                           href="#arguments">Arguments</a></h1>
+<h1 id='arguments-6' class='section-header'><a href='#arguments-6'>Arguments</a></h1>
 <ul>
 <li><code>customerId</code> - Id of the Customer</li>
 <li><code>subscriptionId</code> - Id of the subscription, which is unique for a customer</li>
 </ul>
-</div><h4 id='method.activate' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.activate' class='fnname'>activate</a>(&amp;self, customer_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, subscription_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_reseller1_sandbox/struct.SubscriptionActivateCall.html' title='google_reseller1_sandbox::SubscriptionActivateCall'>SubscriptionActivateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.activate' class='method'><code>fn <a href='#method.activate' class='fnname'>activate</a>(&amp;self, customer_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, subscription_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_reseller1_sandbox/struct.SubscriptionActivateCall.html' title='google_reseller1_sandbox::SubscriptionActivateCall'>SubscriptionActivateCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Activates a subscription previously suspended by the reseller</p>
 
-<h1 id="arguments" class='section-header'><a
-                           href="#arguments">Arguments</a></h1>
+<h1 id='arguments-7' class='section-header'><a href='#arguments-7'>Arguments</a></h1>
 <ul>
 <li><code>customerId</code> - Id of the Customer</li>
 <li><code>subscriptionId</code> - Id of the subscription, which is unique for a customer</li>
 </ul>
-</div><h4 id='method.change_plan' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.change_plan' class='fnname'>change_plan</a>(&amp;self, request: <a class='struct' href='../google_reseller1_sandbox/struct.ChangePlanRequest.html' title='google_reseller1_sandbox::ChangePlanRequest'>ChangePlanRequest</a>, customer_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, subscription_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_reseller1_sandbox/struct.SubscriptionChangePlanCall.html' title='google_reseller1_sandbox::SubscriptionChangePlanCall'>SubscriptionChangePlanCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.change_plan' class='method'><code>fn <a href='#method.change_plan' class='fnname'>change_plan</a>(&amp;self, request: <a class='struct' href='../google_reseller1_sandbox/struct.ChangePlanRequest.html' title='google_reseller1_sandbox::ChangePlanRequest'>ChangePlanRequest</a>, customer_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, subscription_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_reseller1_sandbox/struct.SubscriptionChangePlanCall.html' title='google_reseller1_sandbox::SubscriptionChangePlanCall'>SubscriptionChangePlanCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Changes the plan of a subscription</p>
 
-<h1 id="arguments" class='section-header'><a
-                           href="#arguments">Arguments</a></h1>
+<h1 id='arguments-8' class='section-header'><a href='#arguments-8'>Arguments</a></h1>
 <ul>
 <li><code>request</code> - No description provided.</li>
 <li><code>customerId</code> - Id of the Customer</li>
 <li><code>subscriptionId</code> - Id of the subscription, which is unique for a customer</li>
 </ul>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_reseller1_sandbox/trait.MethodsBuilder.html' title='google_reseller1_sandbox::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_reseller1_sandbox/struct.SubscriptionMethods.html' title='google_reseller1_sandbox::SubscriptionMethods'>SubscriptionMethods</a>&lt;'a, C, A&gt;</code></h3><div class='impl-items'></div></section>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_reseller1_sandbox/trait.MethodsBuilder.html' title='google_reseller1_sandbox::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_reseller1_sandbox/struct.SubscriptionMethods.html' title='google_reseller1_sandbox::SubscriptionMethods'>SubscriptionMethods</a>&lt;'a, C, A&gt;</code></h3><div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
 
-    <div id="help" class="hidden">
-        <div class="shortcuts">
-            <h1>Keyboard shortcuts</h1>
-            <dl>
-                <dt>?</dt>
-                <dd>Show this help dialog</dd>
-                <dt>S</dt>
-                <dd>Focus the search field</dd>
-                <dt>&larrb;</dt>
-                <dd>Move up in search results</dd>
-                <dt>&rarrb;</dt>
-                <dd>Move down in search results</dd>
-                <dt>&#9166;</dt>
-                <dd>Go to active search result</dd>
-            </dl>
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code>)
+                </p>
+            </div>
         </div>
-        <div class="infos">
-            <h1>Search tricks</h1>
-            <p>
-                Prefix searches with a type followed by a colon (e.g.
-                <code>fn:</code>) to restrict the search to a given type.
-            </p>
-            <p>
-                Accepted types are: <code>fn</code>, <code>mod</code>,
-                <code>struct</code>, <code>enum</code>,
-                <code>trait</code>, <code>typedef</code> (or
-                <code>tdef</code>).
-            </p>
-        </div>
-    </div>
+    </aside>
 
     
 
@@ -224,6 +229,6 @@ It is not used directly, but through the <code>Reseller</code> hub.</p>
     <script src="../jquery.js"></script>
     <script src="../main.js"></script>
     
-    <script async src="../search-index.js"></script>
+    <script defer src="../search-index.js"></script>
 </body>
 </html>

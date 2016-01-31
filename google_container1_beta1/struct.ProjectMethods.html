@@ -9,6 +9,7 @@
 
     <title>google_container1_beta1::ProjectMethods - Rust</title>
 
+    <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
 
     
@@ -24,35 +25,36 @@
 
     
 
-    <section class="sidebar">
+    <nav class="sidebar">
         
         <p class='location'><a href='index.html'>google_container1_beta1</a></p><script>window.sidebarCurrent = {name: 'ProjectMethods', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
-    </section>
+    </nav>
 
     <nav class="sub">
         <form class="search-form js-only">
             <div class="search-container">
                 <input class="search-input" name="search"
                        autocomplete="off"
-                       placeholder="Click or press 'S' to search, '?' for more options..."
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
                        type="search">
             </div>
         </form>
     </nav>
 
     <section id='main' class="content struct">
-<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_container1_beta1</a>::<wbr><a class='struct' href=''>ProjectMethods</a><wbr></span><span class='out-of-band'><span id='render-detail'>
-            <a id="collapse-all" href="#">[-]</a>&nbsp;<a id="expand-all" href="#">[+]</a>
-        </span><a id='src-14129' href='../src/google_container1_beta1///home/byron/dev/rust/google-apis-rs/target/debug/build/google-container1_beta1-51bc33fb84762cd3/out/lib.rs.html#3731-3733'>[src]</a></span></h1>
+<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_container1_beta1</a>::<wbr><a class='struct' href=''>ProjectMethods</a></span><span class='out-of-band'><span id='render-detail'>
+            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                [<span class='inner'>&#x2212;</span>]
+            </a>
+        </span><a id='src-2656' class='srclink' href='../src/google_container1_beta1///Users/byron/dev/rs/google-apis-rs/target/debug/build/google-container1_beta1-77e34b9bace8b7e6/out/lib.rs.html#4565-4567' title='goto source code'>[src]</a></span></h1>
 <pre class='rust struct'>pub struct ProjectMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>project</em> resources.
 It is not used directly, but through the <code>Container</code> hub.</p>
 
-<h1 id="example" class='section-header'><a
-                           href="#example">Example</a></h1>
+<h1 id='example' class='section-header'><a href='#example'>Example</a></h1>
 <p>Instantiate a resource builder</p>
-<pre id='rust-example-rendered' class='rust '>
+<pre class='rust rust-example-rendered'>
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>hyper</span>;
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>yup_oauth2</span> <span class='kw'>as</span> <span class='ident'>oauth2</span>;
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>google_container1_beta1</span> <span class='kw'>as</span> <span class='ident'>container1_beta1</span>;
@@ -67,105 +69,83 @@ It is not used directly, but through the <code>Container</code> hub.</p>
                               <span class='op'>&lt;</span><span class='ident'>MemoryStorage</span> <span class='kw'>as</span> <span class='ident'>Default</span><span class='op'>&gt;</span>::<span class='ident'>default</span>(), <span class='prelude-val'>None</span>);
 <span class='kw'>let</span> <span class='kw-2'>mut</span> <span class='ident'>hub</span> <span class='op'>=</span> <span class='ident'>Container</span>::<span class='ident'>new</span>(<span class='ident'>hyper</span>::<span class='ident'>Client</span>::<span class='ident'>new</span>(), <span class='ident'>auth</span>);
 <span class='comment'>// Usually you wouldn&#39;t bind this to a variable, but keep calling *CallBuilders*</span>
-<span class='comment'>// like `clusters_list(...)`, `operations_list(...)`, `zones_clusters_create(...)`, `zones_clusters_delete(...)`, `zones_clusters_get(...)`, `zones_clusters_list(...)`, `zones_operations_get(...)`, `zones_operations_list(...)` and `zones_tokens_get(...)`</span>
+<span class='comment'>// like `clusters_list(...)`, `operations_list(...)`, `zones_clusters_create(...)`, `zones_clusters_delete(...)`, `zones_clusters_get(...)`, `zones_clusters_list(...)`, `zones_operations_get(...)` and `zones_operations_list(...)`</span>
 <span class='comment'>// to build up your call.</span>
-<span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>projects</span>();
-</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_container1_beta1/struct.ProjectMethods.html' title='google_container1_beta1::ProjectMethods'>ProjectMethods</a>&lt;'a, C, A&gt;</code></h3><div class='impl-items'><h4 id='method.zones_clusters_get' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.zones_clusters_get' class='fnname'>zones_clusters_get</a>(&amp;self, project_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, zone_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, cluster_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_container1_beta1/struct.ProjectZoneClusterGetCall.html' title='google_container1_beta1::ProjectZoneClusterGetCall'>ProjectZoneClusterGetCall</a>&lt;'a, C, A&gt;</code></h4>
+<span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>projects</span>();</pre>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_container1_beta1/struct.ProjectMethods.html' title='google_container1_beta1::ProjectMethods'>ProjectMethods</a>&lt;'a, C, A&gt;</code></h3><div class='impl-items'><h4 id='method.zones_clusters_get' class='method'><code>fn <a href='#method.zones_clusters_get' class='fnname'>zones_clusters_get</a>(&amp;self, project_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, zone_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, cluster_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_container1_beta1/struct.ProjectZoneClusterGetCall.html' title='google_container1_beta1::ProjectZoneClusterGetCall'>ProjectZoneClusterGetCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Gets a specific cluster.</p>
 
-<h1 id="arguments" class='section-header'><a
-                           href="#arguments">Arguments</a></h1>
+<h1 id='arguments' class='section-header'><a href='#arguments'>Arguments</a></h1>
 <ul>
 <li><code>projectId</code> - The Google Developers Console project ID or  project number.</li>
 <li><code>zoneId</code> - The name of the Google Compute Engine zone in which the cluster resides.</li>
 <li><code>clusterId</code> - The name of the cluster to retrieve.</li>
 </ul>
-</div><h4 id='method.operations_list' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.operations_list' class='fnname'>operations_list</a>(&amp;self, project_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_container1_beta1/struct.ProjectOperationListCall.html' title='google_container1_beta1::ProjectOperationListCall'>ProjectOperationListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.operations_list' class='method'><code>fn <a href='#method.operations_list' class='fnname'>operations_list</a>(&amp;self, project_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_container1_beta1/struct.ProjectOperationListCall.html' title='google_container1_beta1::ProjectOperationListCall'>ProjectOperationListCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Lists all operations in a project, across all zones.</p>
 
-<h1 id="arguments" class='section-header'><a
-                           href="#arguments">Arguments</a></h1>
+<h1 id='arguments-1' class='section-header'><a href='#arguments-1'>Arguments</a></h1>
 <ul>
 <li><code>projectId</code> - The Google Developers Console project ID or  project number.</li>
 </ul>
-</div><h4 id='method.zones_tokens_get' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.zones_tokens_get' class='fnname'>zones_tokens_get</a>(&amp;self, master_project_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, zone_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, project_number: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, cluster_name: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_container1_beta1/struct.ProjectZoneTokenGetCall.html' title='google_container1_beta1::ProjectZoneTokenGetCall'>ProjectZoneTokenGetCall</a>&lt;'a, C, A&gt;</code></h4>
-<div class='docblock'><p>Create a builder to help you perform the following task:</p>
-
-<p>Gets a compute-rw scoped OAuth2 access token for
-. Authentication is performed to ensure that the caller is a member of  and that the request is coming from the expected master VM for the specified cluster. See go/gke-cross-project-auth for more details.</p>
-
-<h1 id="arguments" class='section-header'><a
-                           href="#arguments">Arguments</a></h1>
-<ul>
-<li><code>masterProjectId</code> - The hosted master project from which this request is coming.</li>
-<li><code>zoneId</code> - The zone of the specified cluster.</li>
-<li><code>projectNumber</code> - The project number for which the access token is being requested.</li>
-<li><code>clusterName</code> - The name of the specified cluster.</li>
-</ul>
-</div><h4 id='method.zones_clusters_delete' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.zones_clusters_delete' class='fnname'>zones_clusters_delete</a>(&amp;self, project_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, zone_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, cluster_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_container1_beta1/struct.ProjectZoneClusterDeleteCall.html' title='google_container1_beta1::ProjectZoneClusterDeleteCall'>ProjectZoneClusterDeleteCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.zones_clusters_delete' class='method'><code>fn <a href='#method.zones_clusters_delete' class='fnname'>zones_clusters_delete</a>(&amp;self, project_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, zone_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, cluster_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_container1_beta1/struct.ProjectZoneClusterDeleteCall.html' title='google_container1_beta1::ProjectZoneClusterDeleteCall'>ProjectZoneClusterDeleteCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Deletes the cluster, including the Kubernetes master and all worker nodes.</p>
 
 <p>Firewalls and routes that were configured at cluster creation are also deleted.</p>
 
-<h1 id="arguments" class='section-header'><a
-                           href="#arguments">Arguments</a></h1>
+<h1 id='arguments-2' class='section-header'><a href='#arguments-2'>Arguments</a></h1>
 <ul>
 <li><code>projectId</code> - The Google Developers Console project ID or  project number.</li>
 <li><code>zoneId</code> - The name of the Google Compute Engine zone in which the cluster resides.</li>
 <li><code>clusterId</code> - The name of the cluster to delete.</li>
 </ul>
-</div><h4 id='method.clusters_list' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.clusters_list' class='fnname'>clusters_list</a>(&amp;self, project_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_container1_beta1/struct.ProjectClusterListCall.html' title='google_container1_beta1::ProjectClusterListCall'>ProjectClusterListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.clusters_list' class='method'><code>fn <a href='#method.clusters_list' class='fnname'>clusters_list</a>(&amp;self, project_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_container1_beta1/struct.ProjectClusterListCall.html' title='google_container1_beta1::ProjectClusterListCall'>ProjectClusterListCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Lists all clusters owned by a project across all zones.</p>
 
-<h1 id="arguments" class='section-header'><a
-                           href="#arguments">Arguments</a></h1>
+<h1 id='arguments-3' class='section-header'><a href='#arguments-3'>Arguments</a></h1>
 <ul>
 <li><code>projectId</code> - The Google Developers Console project ID or  project number.</li>
 </ul>
-</div><h4 id='method.zones_operations_get' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.zones_operations_get' class='fnname'>zones_operations_get</a>(&amp;self, project_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, zone_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, operation_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_container1_beta1/struct.ProjectZoneOperationGetCall.html' title='google_container1_beta1::ProjectZoneOperationGetCall'>ProjectZoneOperationGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.zones_operations_get' class='method'><code>fn <a href='#method.zones_operations_get' class='fnname'>zones_operations_get</a>(&amp;self, project_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, zone_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, operation_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_container1_beta1/struct.ProjectZoneOperationGetCall.html' title='google_container1_beta1::ProjectZoneOperationGetCall'>ProjectZoneOperationGetCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Gets the specified operation.</p>
 
-<h1 id="arguments" class='section-header'><a
-                           href="#arguments">Arguments</a></h1>
+<h1 id='arguments-4' class='section-header'><a href='#arguments-4'>Arguments</a></h1>
 <ul>
 <li><code>projectId</code> - The Google Developers Console project ID or  project number.</li>
 <li><code>zoneId</code> - The name of the Google Compute Engine zone in which the operation resides. This is always the same zone as the cluster with which the operation is associated.</li>
 <li><code>operationId</code> - The server-assigned name of the operation.</li>
 </ul>
-</div><h4 id='method.zones_operations_list' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.zones_operations_list' class='fnname'>zones_operations_list</a>(&amp;self, project_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, zone_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_container1_beta1/struct.ProjectZoneOperationListCall.html' title='google_container1_beta1::ProjectZoneOperationListCall'>ProjectZoneOperationListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.zones_operations_list' class='method'><code>fn <a href='#method.zones_operations_list' class='fnname'>zones_operations_list</a>(&amp;self, project_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, zone_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_container1_beta1/struct.ProjectZoneOperationListCall.html' title='google_container1_beta1::ProjectZoneOperationListCall'>ProjectZoneOperationListCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Lists all operations in a project in a specific zone.</p>
 
-<h1 id="arguments" class='section-header'><a
-                           href="#arguments">Arguments</a></h1>
+<h1 id='arguments-5' class='section-header'><a href='#arguments-5'>Arguments</a></h1>
 <ul>
 <li><code>projectId</code> - The Google Developers Console project ID or  project number.</li>
 <li><code>zoneId</code> - The name of the Google Compute Engine zone to return operations for.</li>
 </ul>
-</div><h4 id='method.zones_clusters_list' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.zones_clusters_list' class='fnname'>zones_clusters_list</a>(&amp;self, project_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, zone_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_container1_beta1/struct.ProjectZoneClusterListCall.html' title='google_container1_beta1::ProjectZoneClusterListCall'>ProjectZoneClusterListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.zones_clusters_list' class='method'><code>fn <a href='#method.zones_clusters_list' class='fnname'>zones_clusters_list</a>(&amp;self, project_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, zone_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_container1_beta1/struct.ProjectZoneClusterListCall.html' title='google_container1_beta1::ProjectZoneClusterListCall'>ProjectZoneClusterListCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Lists all clusters owned by a project in the specified zone.</p>
 
-<h1 id="arguments" class='section-header'><a
-                           href="#arguments">Arguments</a></h1>
+<h1 id='arguments-6' class='section-header'><a href='#arguments-6'>Arguments</a></h1>
 <ul>
 <li><code>projectId</code> - The Google Developers Console project ID or  project number.</li>
 <li><code>zoneId</code> - The name of the Google Compute Engine zone in which the cluster resides.</li>
 </ul>
-</div><h4 id='method.zones_clusters_create' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.zones_clusters_create' class='fnname'>zones_clusters_create</a>(&amp;self, request: <a class='struct' href='../google_container1_beta1/struct.CreateClusterRequest.html' title='google_container1_beta1::CreateClusterRequest'>CreateClusterRequest</a>, project_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, zone_id: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_container1_beta1/struct.ProjectZoneClusterCreateCall.html' title='google_container1_beta1::ProjectZoneClusterCreateCall'>ProjectZoneClusterCreateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.zones_clusters_create' class='method'><code>fn <a href='#method.zones_clusters_create' class='fnname'>zones_clusters_create</a>(&amp;self, request: <a class='struct' href='../google_container1_beta1/struct.CreateClusterRequest.html' title='google_container1_beta1::CreateClusterRequest'>CreateClusterRequest</a>, project_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, zone_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_container1_beta1/struct.ProjectZoneClusterCreateCall.html' title='google_container1_beta1::ProjectZoneClusterCreateCall'>ProjectZoneClusterCreateCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Creates a cluster, consisting of the specified number and type of Google Compute Engine instances, plus a Kubernetes master instance.</p>
@@ -174,50 +154,62 @@ It is not used directly, but through the <code>Container</code> hub.</p>
 
 <p>A firewall is added that allows traffic into port 443 on the master, which enables HTTPS. A firewall and a route is added for each node to allow the containers on that node to communicate with all other instances in the cluster.</p>
 
-<p>Finally, a route named k8s-iproute-10-xx-0-0 is created to track that the cluster&#39;s 10.xx.0.0/16 CIDR has been assigned.</p>
+<p>Finally, an entry is added to the project&#39;s global metadata indicating which CIDR range is being used by the cluster.</p>
 
-<h1 id="arguments" class='section-header'><a
-                           href="#arguments">Arguments</a></h1>
+<h1 id='arguments-7' class='section-header'><a href='#arguments-7'>Arguments</a></h1>
 <ul>
 <li><code>request</code> - No description provided.</li>
 <li><code>projectId</code> - The Google Developers Console project ID or  project number.</li>
 <li><code>zoneId</code> - The name of the Google Compute Engine zone in which the cluster resides.</li>
 </ul>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_container1_beta1/trait.MethodsBuilder.html' title='google_container1_beta1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_container1_beta1/struct.ProjectMethods.html' title='google_container1_beta1::ProjectMethods'>ProjectMethods</a>&lt;'a, C, A&gt;</code></h3><div class='impl-items'></div></section>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_container1_beta1/trait.MethodsBuilder.html' title='google_container1_beta1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_container1_beta1/struct.ProjectMethods.html' title='google_container1_beta1::ProjectMethods'>ProjectMethods</a>&lt;'a, C, A&gt;</code></h3><div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
 
-    <div id="help" class="hidden">
-        <div class="shortcuts">
-            <h1>Keyboard shortcuts</h1>
-            <dl>
-                <dt>?</dt>
-                <dd>Show this help dialog</dd>
-                <dt>S</dt>
-                <dd>Focus the search field</dd>
-                <dt>&larrb;</dt>
-                <dd>Move up in search results</dd>
-                <dt>&rarrb;</dt>
-                <dd>Move down in search results</dd>
-                <dt>&#9166;</dt>
-                <dd>Go to active search result</dd>
-            </dl>
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code>)
+                </p>
+            </div>
         </div>
-        <div class="infos">
-            <h1>Search tricks</h1>
-            <p>
-                Prefix searches with a type followed by a colon (e.g.
-                <code>fn:</code>) to restrict the search to a given type.
-            </p>
-            <p>
-                Accepted types are: <code>fn</code>, <code>mod</code>,
-                <code>struct</code>, <code>enum</code>,
-                <code>trait</code>, <code>typedef</code> (or
-                <code>tdef</code>).
-            </p>
-        </div>
-    </div>
+    </aside>
 
     
 
@@ -229,6 +221,6 @@ It is not used directly, but through the <code>Container</code> hub.</p>
     <script src="../jquery.js"></script>
     <script src="../main.js"></script>
     
-    <script async src="../search-index.js"></script>
+    <script defer src="../search-index.js"></script>
 </body>
 </html>

@@ -9,6 +9,7 @@
 
     <title>chrono::format::strftime - Rust</title>
 
+    <link rel="stylesheet" type="text/css" href="../../../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../../../main.css">
 
     
@@ -24,39 +25,43 @@
 
     
 
-    <section class="sidebar">
+    <nav class="sidebar">
         
         <p class='location'><a href='../../index.html'>chrono</a>::<wbr><a href='../index.html'>format</a></p><script>window.sidebarCurrent = {name: 'strftime', ty: 'mod', relpath: '../'};</script><script defer src="../sidebar-items.js"></script>
-    </section>
+    </nav>
 
     <nav class="sub">
         <form class="search-form js-only">
             <div class="search-container">
                 <input class="search-input" name="search"
                        autocomplete="off"
-                       placeholder="Click or press 'S' to search, '?' for more options..."
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
                        type="search">
             </div>
         </form>
     </nav>
 
     <section id='main' class="content mod">
-<h1 class='fqn'><span class='in-band'>Module <a href='../../index.html'>chrono</a>::<wbr><a href='../index.html'>format</a>::<wbr><a class='mod' href=''>strftime</a><wbr></span><span class='out-of-band'><span id='render-detail'>
-            <a id="collapse-all" href="#">[-]</a>&nbsp;<a id="expand-all" href="#">[+]</a>
-        </span><a id='src-27880' href='../../../src/chrono/format/strftime.rs.html#5-271'>[src]</a></span></h1>
+<h1 class='fqn'><span class='in-band'>Module <a href='../../index.html'>chrono</a>::<wbr><a href='../index.html'>format</a>::<wbr><a class='mod' href=''>strftime</a></span><span class='out-of-band'><span id='render-detail'>
+            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                [<span class='inner'>&#x2212;</span>]
+            </a>
+        </span><a id='src-3660' class='srclink' href='../../../src/chrono/format/strftime.rs.html#5-435' title='goto source code'>[src]</a></span></h1>
 <div class='docblock'><p><code>strftime</code>/<code>strptime</code>-inspired date and time formatting syntax.</p>
 
-<h2 id="specifiers" class='section-header'><a
-                           href="#specifiers">Specifiers</a></h2>
+<h2 id='specifiers' class='section-header'><a href='#specifiers'>Specifiers</a></h2>
 <p>The following specifiers are available both to formatting and parsing.</p>
 
-<table><thead>
+<table>
+<thead>
 <tr>
 <th>Spec.</th>
 <th>Example</th>
 <th>Description</th>
 </tr>
-</thead><tbody>
+</thead>
+
+<tbody>
 <tr>
 <td></td>
 <td></td>
@@ -115,7 +120,7 @@
 <tr>
 <td><code>%e</code></td>
 <td><code>8</code></td>
-<td>Same to <code>%d</code> but space-padded.</td>
+<td>Same to <code>%d</code> but space-padded. Same to <code>%_d</code>.</td>
 </tr>
 <tr>
 <td></td>
@@ -194,12 +199,12 @@
 </tr>
 <tr>
 <td><code>%D</code></td>
-<td><code>08/07/2001</code></td>
-<td>Month-day-year format. Same to <code>%m/%d/%Y</code>.</td>
+<td><code>07/08/01</code></td>
+<td>Month-day-year format. Same to <code>%m/%d/%y</code>.</td>
 </tr>
 <tr>
 <td><code>%x</code></td>
-<td><code>08/07/2001</code></td>
+<td><code>07/08/01</code></td>
 <td>Same to <code>%D</code>.</td>
 </tr>
 <tr>
@@ -209,7 +214,7 @@
 </tr>
 <tr>
 <td><code>%v</code></td>
-<td><code>7-Jul-2001</code></td>
+<td><code>8-Jul-2001</code></td>
 <td>Day-month-year format. Same to <code>%e-%b-%Y</code>.</td>
 </tr>
 <tr>
@@ -230,7 +235,7 @@
 <tr>
 <td><code>%k</code></td>
 <td><code>0</code></td>
-<td>Same to <code>%H</code> but space-padded.</td>
+<td>Same to <code>%H</code> but space-padded. Same to <code>%_H</code>.</td>
 </tr>
 <tr>
 <td><code>%I</code></td>
@@ -240,7 +245,7 @@
 <tr>
 <td><code>%l</code></td>
 <td><code>12</code></td>
-<td>Same to <code>%I</code> but space-padded.</td>
+<td>Same to <code>%I</code> but space-padded. Same to <code>%_I</code>.</td>
 </tr>
 <tr>
 <td></td>
@@ -274,8 +279,28 @@
 </tr>
 <tr>
 <td><code>%f</code></td>
-<td><code>026413966</code></td>
-<td>The number of nanoseconds since last whole second, zero-padded to 9 digits.</td>
+<td><code>026490000</code></td>
+<td>The fractional seconds (in nanoseconds) since last whole second. [8]</td>
+</tr>
+<tr>
+<td><code>%.f</code></td>
+<td><code>.026490</code></td>
+<td>Similar to <code>.%f</code> but left-aligned. [8]</td>
+</tr>
+<tr>
+<td><code>%.3f</code></td>
+<td><code>.026</code></td>
+<td>Similar to <code>.%f</code> but left-aligned but fixed to a length of 3. [8]</td>
+</tr>
+<tr>
+<td><code>%.6f</code></td>
+<td><code>.026490</code></td>
+<td>Similar to <code>.%f</code> but left-aligned but fixed to a length of 6. [8]</td>
+</tr>
+<tr>
+<td><code>%.9f</code></td>
+<td><code>.026490000</code></td>
+<td>Similar to <code>.%f</code> but left-aligned but fixed to a length of 9. [8]</td>
 </tr>
 <tr>
 <td></td>
@@ -293,7 +318,7 @@
 <td>Hour-minute-second format. Same to <code>%H:%M:%S</code>.</td>
 </tr>
 <tr>
-<td><code>%x</code></td>
+<td><code>%X</code></td>
 <td><code>00:34:60</code></td>
 <td>Same to <code>%T</code>.</td>
 </tr>
@@ -315,12 +340,17 @@
 <tr>
 <td><code>%Z</code></td>
 <td><code>ACST</code></td>
-<td>Local time zone name.</td>
+<td><em>Formatting only:</em> Local time zone name.</td>
 </tr>
 <tr>
 <td><code>%z</code></td>
+<td><code>+0930</code></td>
+<td>Offset from the local time to UTC (with UTC being <code>+0000</code>).</td>
+</tr>
+<tr>
+<td><code>%:z</code></td>
 <td><code>+09:30</code></td>
-<td>Offset from the local time to UTC (with UTC being <code>+00:00</code>).</td>
+<td>Same to <code>%z</code> but with a colon.</td>
 </tr>
 <tr>
 <td></td>
@@ -339,8 +369,8 @@
 </tr>
 <tr>
 <td><code>%+</code></td>
-<td><code>2001-07-08T00:34:60+09:30</code></td>
-<td>ISO 8601 date &amp; time format. Close to <code>%Y-%m-%dT%H:%M:%S%z</code>.</td>
+<td><code>2001-07-08T00:34:60.026490+09:30</code></td>
+<td>ISO 8601 / RFC 3339 date &amp; time format. [6]</td>
 </tr>
 <tr>
 <td></td>
@@ -349,8 +379,8 @@
 </tr>
 <tr>
 <td><code>%s</code></td>
-<td><code>994485899</code></td>
-<td>UNIX timestamp, the number of seconds since 1970-01-01 00:00 UTC. [6]</td>
+<td><code>994518299</code></td>
+<td>UNIX timestamp, the number of seconds since 1970-01-01 00:00 UTC. [7]</td>
 </tr>
 <tr>
 <td></td>
@@ -377,7 +407,35 @@
 <td></td>
 <td>Literal percent sign.</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+
+<p>It is possible to override the default padding behavior of numeric specifiers <code>%?</code>.
+This is not allowed for other specifiers and will result in the <code>BAD_FORMAT</code> error.</p>
+
+<table>
+<thead>
+<tr>
+<th>Modifier</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>%-?</code></td>
+<td>Suppresses any padding including spaces and zeroes. (e.g. <code>%j</code> = <code>012</code>, <code>%-j</code> = <code>12</code>)</td>
+</tr>
+<tr>
+<td><code>%_?</code></td>
+<td>Uses spaces as a padding. (e.g. <code>%j</code> = <code>012</code>, <code>%_j</code> = <code>12</code>)</td>
+</tr>
+<tr>
+<td><code>%0?</code></td>
+<td>Uses zeroes as a padding. (e.g. <code>%e</code> = <code>9</code>, <code>%0e</code> = <code>09</code>)</td>
+</tr>
+</tbody>
+</table>
 
 <p>Notes:</p>
 
@@ -394,54 +452,90 @@ Week 1 is the first week with at least 4 days in that year.
 Week 0 does not exist, so this should be used with <code>%G</code> or <code>%g</code>.</p></li>
 <li><p><code>%S</code>:
 It accounts for leap seconds, so <code>60</code> is possible.</p></li>
+<li><p><code>%+</code>:
+This one is close to, but not identical to, <code>%Y-%m-%dT%H:%M:%S%.f%z</code>.
+The main differences are a colon in <code>%z</code>.</p></li>
 <li><p><code>%s</code>:
 This is not padded and can be negative.
 For the purpose of Chrono, it only accounts for non-leap seconds
 so it slightly differs from ISO C <code>strftime</code> behavior.</p></li>
+<li><p><code>%f</code>, <code>%.f</code>, <code>%.3f</code>, <code>%.6f</code>, <code>%.9f</code>:</p>
+
+<p>The default <code>%f</code> is right-aligned and always zero-padded to 9 digits
+for the compatibility with glibc and others,
+so it always counts the number of nanoseconds since the last whole second.
+E.g. 7ms after the last second will print <code>007000000</code>, and parsing <code>7000000</code> will yield the same.</p>
+
+<p>The variant <code>%.f</code> is left-aligned and print 0, 3, 6 or 9 fractional digits
+according to the precision. E.g. 70ms after the last second under <code>%.f</code> will print <code>.070</code>
+(note: not <code>.07</code>), and parsing <code>.07</code>, <code>.070000</code> etc. will yield the same.
+Note that they can print or read nothing if the fractional part is zero or
+the next character is not <code>.</code>.</p>
+
+<p>The variant <code>%.3f</code>, <code>%.3f</code> and <code>%.3f</code> are left-aligned and print 3, 6 or 9 fractional digits
+according to the number preceding <code>f</code>. E.g. 70ms after the last second under <code>%.3f</code> will print <code>.070</code>
+(note: not <code>.07</code>), and parsing <code>.07</code>, <code>.070000</code> etc. will yield the same.
+Note that they can read nothing if the fractional part is zero or
+the next character is not <code>.</code> however will print with the specified length.</p></li>
 </ol>
 </div><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
 <table>
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.StrftimeItems.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.StrftimeItems.html'
                                title='chrono::format::strftime::StrftimeItems'>StrftimeItems</a></td>
-                        <td class='docblock short'><p>Parsing iterator for <code>strftime</code>-like format strings.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Parsing iterator for <code>strftime</code>-like format strings.</p>
+
+                        </td>
                     </tr>
                 </table></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
 
-    <div id="help" class="hidden">
-        <div class="shortcuts">
-            <h1>Keyboard shortcuts</h1>
-            <dl>
-                <dt>?</dt>
-                <dd>Show this help dialog</dd>
-                <dt>S</dt>
-                <dd>Focus the search field</dd>
-                <dt>&larrb;</dt>
-                <dd>Move up in search results</dd>
-                <dt>&rarrb;</dt>
-                <dd>Move down in search results</dd>
-                <dt>&#9166;</dt>
-                <dd>Go to active search result</dd>
-            </dl>
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code>)
+                </p>
+            </div>
         </div>
-        <div class="infos">
-            <h1>Search tricks</h1>
-            <p>
-                Prefix searches with a type followed by a colon (e.g.
-                <code>fn:</code>) to restrict the search to a given type.
-            </p>
-            <p>
-                Accepted types are: <code>fn</code>, <code>mod</code>,
-                <code>struct</code>, <code>enum</code>,
-                <code>trait</code>, <code>typedef</code> (or
-                <code>tdef</code>).
-            </p>
-        </div>
-    </div>
+    </aside>
 
     
 
@@ -453,6 +547,6 @@ so it slightly differs from ISO C <code>strftime</code> behavior.</p></li>
     <script src="../../../jquery.js"></script>
     <script src="../../../main.js"></script>
     
-    <script async src="../../../search-index.js"></script>
+    <script defer src="../../../search-index.js"></script>
 </body>
 </html>

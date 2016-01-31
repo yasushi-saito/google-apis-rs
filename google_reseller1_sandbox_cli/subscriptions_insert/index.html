@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Insert - reseller v0.3.0+20141112</title>
+  <title>Insert - reseller v0.3.3+20151110</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -17,6 +17,12 @@
   <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
   <link rel="stylesheet" href="../css/highlight.css">
 
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Insert";
+  </script>
+  
   <script src="../js/jquery-2.1.1.min.js"></script>
   <script src="../js/modernizr-2.8.3.min.js"></script>
   <script type="text/javascript" src="../js/highlight.pack.js"></script>
@@ -32,129 +38,163 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> reseller v0.3.0+20141112</a>
-        
+        <a href=".." class="icon icon-home"> reseller v0.3.3+20151110</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-      <ul class="current">
-    
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="..">Home</a>
         
-            <li class="toctree-l1 ">
-                <a class="" href="..">Home</a>
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Customers</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../customers_get/">Get</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../customers_insert/">Insert</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../customers_patch/">Patch</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../customers_update/">Update</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Subscriptions</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../subscriptions_activate/">Activate</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../subscriptions_change-plan/">Change Plan</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../subscriptions_change-renewal-settings/">Change Renewal Settings</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../subscriptions_change-seats/">Change Seats</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../subscriptions_delete/">Delete</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../subscriptions_get/">Get</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Insert</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#scopes">Scopes</a></li>
                 
-            </li>
+            
+                <li class="toctree-l3"><a href="#required-scalar-argument">Required Scalar Argument</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#required-request-value">Required Request Value</a></li>
+                
+                    <li><a class="toctree-l4" href="#about-cursors">About Cursors</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#optional-output-flags">Optional Output Flags</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#optional-method-properties">Optional Method Properties</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#optional-general-properties">Optional General Properties</a></li>
+                
+            
+            </ul>
         
+    </li>
 
-    
         
-            <span>Customers</span>
             
-                <li class="toctree-l2 ">
-                    <a class="" href="../customers_get/">Get</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../customers_insert/">Insert</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../customers_patch/">Patch</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../customers_update/">Update</a>
-                    
-                </li>
-            
+    <li class="toctree-l1 ">
+        <a class="" href="../subscriptions_list/">List</a>
         
+    </li>
 
-    
         
-            <span>Subscriptions</span>
             
-                <li class="toctree-l2 ">
-                    <a class="" href="../subscriptions_activate/">Activate</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../subscriptions_change-plan/">Change Plan</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../subscriptions_change-renewal-settings/">Change Renewal Settings</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../subscriptions_change-seats/">Change Seats</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../subscriptions_delete/">Delete</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../subscriptions_get/">Get</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 current">
-                    <a class="current" href="./">Insert</a>
-                    
-                        <ul>
-                        
-                            <li class="toctree-l3"><a href="#scopes">Scopes</a></li>
-                            
-                        
-                            <li class="toctree-l3"><a href="#required-scalar-argument">Required Scalar Argument</a></li>
-                            
-                        
-                            <li class="toctree-l3"><a href="#required-request-value">Required Request Value</a></li>
-                            
-                                <li><a class="toctree-l4" href="#about-cursors">About Cursors</a></li>
-                            
-                        
-                            <li class="toctree-l3"><a href="#optional-output-flags">Optional Output Flags</a></li>
-                            
-                        
-                            <li class="toctree-l3"><a href="#optional-method-properties">Optional Method Properties</a></li>
-                            
-                        
-                            <li class="toctree-l3"><a href="#optional-general-properties">Optional General Properties</a></li>
-                            
-                        
-                        </ul>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../subscriptions_list/">List</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../subscriptions_start-paid-service/">Start Paid Service</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../subscriptions_suspend/">Suspend</a>
-                    
-                </li>
-            
+    <li class="toctree-l1 ">
+        <a class="" href="../subscriptions_start-paid-service/">Start Paid Service</a>
         
+    </li>
 
-    
-</ul>
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../subscriptions_suspend/">Suspend</a>
+        
+    </li>
 
+        
+    </ul>
+<li>
+          
+        </ul>
       </div>
       &nbsp;
     </nav>
@@ -164,7 +204,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">reseller v0.3.0+20141112</a>
+        <a href="..">reseller v0.3.3+20151110</a>
       </nav>
 
       
@@ -175,23 +215,26 @@
     <li><a href="..">Docs</a> &raquo;</li>
     
       
-        <li>Subscriptions &raquo;</li>
+        
+          <li>Subscriptions &raquo;</li>
+        
       
     
     <li>Insert</li>
-      <li class="wy-breadcrumbs-aside">
+    <li class="wy-breadcrumbs-aside">
+      
         
-          
-            <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/reseller1_sandbox-cli" class="icon icon-github"> Edit on GitHub</a>
-          
+          <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/reseller1_sandbox-cli" class="icon icon-github"> Edit on GitHub</a>
         
-      </li>
+      
+    </li>
   </ul>
   <hr/>
 </div>
           <div role="main">
             <div class="section">
-              <p>Creates/Transfers a subscription for the customer.</p>
+              
+                <p>Creates/Transfers a subscription for the customer.</p>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for the <em>https://www.googleapis.com/auth/apps.order</em> scope to make a valid call.</p>
 <p>If unset, the scope for this method defaults to <em>https://www.googleapis.com/auth/apps.order</em>.
@@ -231,6 +274,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   sku-id: string
   status: string
   subscription-id: string
+  suspension-reasons: [string]
   transfer-info:
     minimum-transferable-seats: integer
     transferability-expiration-time: string
@@ -242,28 +286,28 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    billing-method=dolor</code><ul>
+<li><code>-r .    billing-method=et</code><ul>
 <li>Billing method of this subscription.</li>
 </ul>
 </li>
-<li><code>creation-time=dolor</code><ul>
+<li><code>creation-time=consetetur</code><ul>
 <li>Creation time of this subscription in milliseconds since Unix epoch.</li>
 </ul>
 </li>
-<li><code>customer-id=dolor</code><ul>
+<li><code>customer-id=amet.</code><ul>
 <li>The id of the customer to whom the subscription belongs.</li>
 </ul>
 </li>
-<li><code>kind=et</code><ul>
+<li><code>kind=voluptua.</code><ul>
 <li>Identifies the resource as a Subscription.</li>
 </ul>
 </li>
-<li><code>plan.commitment-interval    end-time=consetetur</code><ul>
+<li><code>plan.commitment-interval    end-time=lorem</code><ul>
 <li>End time of the commitment interval in milliseconds since Unix epoch.</li>
 </ul>
 </li>
 <li>
-<p><code>start-time=amet.</code></p>
+<p><code>start-time=gubergren</code></p>
 <ul>
 <li>Start time of the commitment interval in milliseconds since Unix epoch.</li>
 </ul>
@@ -275,71 +319,83 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
-<p><code>plan-name=lorem</code></p>
+<p><code>plan-name=sit</code></p>
 <ul>
 <li>The plan name of this subscription&#39;s plan.</li>
 </ul>
 </li>
 <li>
-<p><code>..    purchase-order-id=gubergren</code></p>
+<p><code>..    purchase-order-id=vero</code></p>
 <ul>
 <li>Purchase order id for your order tracking purposes.</li>
 </ul>
 </li>
-<li><code>renewal-settings    kind=justo</code><ul>
+<li><code>renewal-settings    kind=diam</code><ul>
 <li>Identifies the resource as a subscription renewal setting.</li>
 </ul>
 </li>
 <li>
-<p><code>renewal-type=sit</code></p>
+<p><code>renewal-type=rebum.</code></p>
 <ul>
 <li>Subscription renewal type.</li>
 </ul>
 </li>
 <li>
-<p><code>..    resource-ui-url=vero</code></p>
+<p><code>..    resource-ui-url=consetetur</code></p>
 <ul>
 <li>Ui url for subscription resource.</li>
 </ul>
 </li>
-<li><code>seats    kind=diam</code><ul>
+<li><code>seats    kind=sadipscing</code><ul>
 <li>Identifies the resource as a subscription change plan request.</li>
 </ul>
 </li>
-<li><code>licensed-number-of-seats=35</code><ul>
+<li><code>licensed-number-of-seats=25</code><ul>
 <li>Read-only field containing the current number of licensed seats for FLEXIBLE Google-Apps subscriptions and secondary subscriptions such as Google-Vault and Drive-storage.</li>
 </ul>
 </li>
-<li><code>maximum-number-of-seats=56</code><ul>
+<li><code>maximum-number-of-seats=6</code><ul>
 <li>Maximum number of seats that can be purchased. This needs to be provided only for a non-commitment plan. For a commitment plan it is decided by the contract.</li>
 </ul>
 </li>
 <li>
-<p><code>number-of-seats=57</code></p>
+<p><code>number-of-seats=13</code></p>
 <ul>
 <li>Number of seats to purchase. This is applicable only for a commitment plan.</li>
 </ul>
 </li>
 <li>
-<p><code>..    sku-id=vero</code></p>
+<p><code>..    sku-id=consetetur</code></p>
 <ul>
 <li>Name of the sku for which this subscription is purchased.</li>
 </ul>
 </li>
-<li><code>status=sadipscing</code><ul>
+<li><code>status=dolore</code><ul>
 <li>Status of the subscription.</li>
 </ul>
 </li>
-<li><code>subscription-id=invidunt</code><ul>
+<li><code>subscription-id=duo</code><ul>
 <li>The id of the subscription.</li>
 </ul>
 </li>
-<li><code>transfer-info    minimum-transferable-seats=5</code><ul>
+<li><code>suspension-reasons=aliquyam</code><ul>
+<li>field listing all current reasons the subscription is suspended. It is possible for a subscription to have multiple suspension reasons. A subscription&#39;s status is SUSPENDED until all pending suspensions are removed. Possible options include:  <ul>
+<li>PENDING_TOS_ACCEPTANCE — The customer has not logged in and accepted the Google Apps Resold Terms of Services.  </li>
+<li>RENEWAL_WITH_TYPE_CANCEL — The customer&#39;s commitment ended and their service was cancelled at the end of their term.  </li>
+<li>RESELLER_INITIATED — A manual suspension invoked by a Reseller.  </li>
+<li>TRIAL_ENDED — The customer&#39;s trial expired without a plan selected.  </li>
+<li>OTHER — The customer is suspended for an internal Google reason (e.g. abuse or otherwise).</li>
+</ul>
+</li>
+<li>Each invocation of this argument appends the given value to the array.</li>
+</ul>
+</li>
+<li><code>transfer-info    minimum-transferable-seats=96</code><ul>
 <li>No description provided.</li>
 </ul>
 </li>
 <li>
-<p><code>transferability-expiration-time=dolore</code></p>
+<p><code>transferability-expiration-time=et</code></p>
 <ul>
 <li>Time when transfer token or intent to transfer will expire.</li>
 </ul>
@@ -350,7 +406,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>Whether the subscription is in trial.</li>
 </ul>
 </li>
-<li><code>trial-end-time=aliquyam</code><ul>
+<li><code>trial-end-time=consetetur</code><ul>
 <li>End time of the trial in milliseconds since Unix epoch.</li>
 </ul>
 </li>
@@ -430,6 +486,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 </ul>
+              
             </div>
           </div>
           <footer>
@@ -447,9 +504,10 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
   <hr/>
 
   <div role="contentinfo">
-    <p>
     <!-- Copyright etc -->
-    </p>
+    
+      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+    
   </div>
 
   Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
@@ -464,17 +522,17 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 
 <div class="rst-versions" role="note" style="cursor: pointer">
     <span class="rst-current-version" data-toggle="rst-current-version">
-        
-            <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/reseller1_sandbox-cli" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
-        
-      <span><a href="../subscriptions_get/" style="color: #fcfcfc;">&laquo; Previous</a></span>
-      <span style="margin-left: 15px"><a href="../subscriptions_list/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+          <a class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../subscriptions_get/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../subscriptions_list/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
     </span>
 </div>
 
-<!--
-MkDocs version  : 0.12.2
-Docs Build Date : 2015-06-21 14:31:04.411440
--->
 </body>
 </html>

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `File` struct in crate `google_drive3`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, File">
+
+    <title>google_drive3::File - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../main.css">
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='index.html'>google_drive3</a></p><script>window.sidebarCurrent = {name: 'File', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content struct">
+<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_drive3</a>::<wbr><a class='struct' href=''>File</a></span><span class='out-of-band'><span id='render-detail'>
+            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                [<span class='inner'>&#x2212;</span>]
+            </a>
+        </span><a id='src-5037' class='srclink' href='../src/google_drive3///Users/byron/dev/rs/google-apis-rs/target/debug/build/google-drive3-1b69a84e5375ee87/out/lib.rs.html#8794-8889' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct File {
+    pub mime_type: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub modified_by_me_time: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub thumbnail_link: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub explicitly_trashed: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt;,
+    pub writers_can_share: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt;,
+    pub owned_by_me: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt;,
+    pub viewed_by_me_time: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub id: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub sharing_user: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_drive3/struct.User.html' title='google_drive3::User'>User</a>&gt;,
+    pub size: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub video_media_metadata: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_drive3/struct.FileVideoMediaMetadata.html' title='google_drive3::FileVideoMediaMetadata'>FileVideoMediaMetadata</a>&gt;,
+    pub last_modifying_user: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_drive3/struct.User.html' title='google_drive3::User'>User</a>&gt;,
+    pub folder_color_rgb: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub app_properties: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/std/collections/hash/map/struct.HashMap.html' title='std::collections::hash::map::HashMap'>HashMap</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>, <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;&gt;,
+    pub capabilities: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_drive3/struct.FileCapabilities.html' title='google_drive3::FileCapabilities'>FileCapabilities</a>&gt;,
+    pub web_view_link: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub version: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub parents: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;&gt;,
+    pub md5_checksum: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub shared: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt;,
+    pub icon_link: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub full_file_extension: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub original_filename: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub image_media_metadata: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_drive3/struct.FileImageMediaMetadata.html' title='google_drive3::FileImageMediaMetadata'>FileImageMediaMetadata</a>&gt;,
+    pub description: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub modified_time: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub viewed_by_me: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt;,
+    pub kind: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub created_time: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub quota_bytes_used: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub properties: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/std/collections/hash/map/struct.HashMap.html' title='std::collections::hash::map::HashMap'>HashMap</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>, <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;&gt;,
+    pub shared_with_me_time: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub permissions: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='../google_drive3/struct.Permission.html' title='google_drive3::Permission'>Permission</a>&gt;&gt;,
+    pub viewers_can_copy_content: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt;,
+    pub owners: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='../google_drive3/struct.User.html' title='google_drive3::User'>User</a>&gt;&gt;,
+    pub name: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub web_content_link: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub spaces: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;&gt;,
+    pub trashed: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt;,
+    pub content_hints: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_drive3/struct.FileContentHints.html' title='google_drive3::FileContentHints'>FileContentHints</a>&gt;,
+    pub file_extension: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub starred: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt;,
+    pub head_revision_id: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+}</pre><div class='docblock'><p>The metadata for a file.</p>
+
+<h1 id='activities' class='section-header'><a href='#activities'>Activities</a></h1>
+<p>This type is used in activities, which are methods you may call on this type or where this type is involved in. 
+The list links the activity name, along with information about where it is used (one of <em>request</em> and <em>response</em>).</p>
+
+<ul>
+<li><a href="struct.FileWatchCall.html">watch files</a> (none)</li>
+<li><a href="struct.FileEmptyTrashCall.html">empty trash files</a> (none)</li>
+<li><a href="struct.FileGenerateIdCall.html">generate ids files</a> (none)</li>
+<li><a href="struct.FileCopyCall.html">copy files</a> (request|response)</li>
+<li><a href="struct.FileCreateCall.html">create files</a> (request|response)</li>
+<li><a href="struct.FileListCall.html">list files</a> (none)</li>
+<li><a href="struct.FileDeleteCall.html">delete files</a> (none)</li>
+<li><a href="struct.FileUpdateCall.html">update files</a> (request|response)</li>
+<li><a href="struct.FileGetCall.html">get files</a> (response)</li>
+<li><a href="struct.FileExportCall.html">export files</a> (none)</li>
+</ul>
+</div><h2 class='fields'>Fields</h2>
+<table><tr class='stab '>
+                                  <td id='structfield.mime_type'><code>mime_type</code></td><td><div class='docblock'><p>The MIME type of the file.
+Drive will attempt to automatically detect an appropriate value from uploaded content if no value is provided. The value cannot be changed unless a new revision is uploaded.
+If a file is created with a Google Doc MIME type, the uploaded content will be imported if possible. The supported import formats are published in the About resource.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.modified_by_me_time'><code>modified_by_me_time</code></td><td><div class='docblock'><p>The last time the file was modified by the user (RFC 3339 date-time).</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.thumbnail_link'><code>thumbnail_link</code></td><td><div class='docblock'><p>A short-lived link to the file&#39;s thumbnail, if available. Typically lasts on the order of hours.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.explicitly_trashed'><code>explicitly_trashed</code></td><td><div class='docblock'><p>Whether the file has been explicitly trashed, as opposed to recursively trashed from a parent folder.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.writers_can_share'><code>writers_can_share</code></td><td><div class='docblock'><p>Whether users with only writer permission can modify the file&#39;s permissions.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.owned_by_me'><code>owned_by_me</code></td><td><div class='docblock'><p>Whether the user owns the file.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.viewed_by_me_time'><code>viewed_by_me_time</code></td><td><div class='docblock'><p>The last time the file was viewed by the user (RFC 3339 date-time).</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.id'><code>id</code></td><td><div class='docblock'><p>The ID of the file.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.sharing_user'><code>sharing_user</code></td><td><div class='docblock'><p>The user who shared the file with the requesting user, if applicable.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.size'><code>size</code></td><td><div class='docblock'><p>The size of the file&#39;s content in bytes. This is only applicable to files with binary content in Drive.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.video_media_metadata'><code>video_media_metadata</code></td><td><div class='docblock'><p>Additional metadata about video media. This may not be available immediately upon upload.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.last_modifying_user'><code>last_modifying_user</code></td><td><div class='docblock'><p>The last user to modify the file.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.folder_color_rgb'><code>folder_color_rgb</code></td><td><div class='docblock'><p>The color for a folder as an RGB hex string. The supported colors are published in the folderColorPalette field of the About resource.
+If an unsupported color is specified, the closest color in the palette will be used instead.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.app_properties'><code>app_properties</code></td><td><div class='docblock'><p>A collection of arbitrary key-value pairs which are private to the requesting app.
+Entries with null values are cleared in update and copy requests.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.capabilities'><code>capabilities</code></td><td><div class='docblock'><p>Capabilities the current user has on the file.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.web_view_link'><code>web_view_link</code></td><td><div class='docblock'><p>A link for opening the file in a relevant Google editor or viewer in a browser.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.version'><code>version</code></td><td><div class='docblock'><p>A monotonically increasing version number for the file. This reflects every change made to the file on the server, even those not visible to the user.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.parents'><code>parents</code></td><td><div class='docblock'><p>The IDs of the parent folders which contain the file.
+If not specified as part of a create request, the file will be placed directly in the My Drive folder. Update requests must use the addParents and removeParents parameters to modify the values.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.md5_checksum'><code>md5_checksum</code></td><td><div class='docblock'><p>The MD5 checksum for the content of the file. This is only applicable to files with binary content in Drive.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.shared'><code>shared</code></td><td><div class='docblock'><p>Whether the file has been shared.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.icon_link'><code>icon_link</code></td><td><div class='docblock'><p>A static, unauthenticated link to the file&#39;s icon.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.full_file_extension'><code>full_file_extension</code></td><td><div class='docblock'><p>The full file extension extracted from the name field. May contain multiple concatenated extensions, such as &quot;tar.gz&quot;. This is only available for files with binary content in Drive.
+This is automatically updated when the name field changes, however it is not cleared if the new name does not contain a valid extension.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.original_filename'><code>original_filename</code></td><td><div class='docblock'><p>The original filename of the uploaded content if available, or else the original value of the name field. This is only available for files with binary content in Drive.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.image_media_metadata'><code>image_media_metadata</code></td><td><div class='docblock'><p>Additional metadata about image media, if available.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.description'><code>description</code></td><td><div class='docblock'><p>A short description of the file.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.modified_time'><code>modified_time</code></td><td><div class='docblock'><p>The last time the file was modified by anyone (RFC 3339 date-time).
+Note that setting modifiedTime will also update modifiedByMeTime for the user.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.viewed_by_me'><code>viewed_by_me</code></td><td><div class='docblock'><p>Whether the file has been viewed by this user.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.kind'><code>kind</code></td><td><div class='docblock'><p>This is always drive#file.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.created_time'><code>created_time</code></td><td><div class='docblock'><p>The time at which the file was created (RFC 3339 date-time).</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.quota_bytes_used'><code>quota_bytes_used</code></td><td><div class='docblock'><p>The number of storage quota bytes used by the file. This includes the head revision as well as previous revisions with keepForever enabled.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.properties'><code>properties</code></td><td><div class='docblock'><p>A collection of arbitrary key-value pairs which are visible to all apps.
+Entries with null values are cleared in update and copy requests.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.shared_with_me_time'><code>shared_with_me_time</code></td><td><div class='docblock'><p>The time at which the file was shared with the user, if applicable (RFC 3339 date-time).</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.permissions'><code>permissions</code></td><td><div class='docblock'><p>The full list of permissions for the file. This is only available if the requesting user can share the file.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.viewers_can_copy_content'><code>viewers_can_copy_content</code></td><td><div class='docblock'><p>Whether users with only reader or commenter permission can copy the file&#39;s content. This affects copy, download, and print operations.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.owners'><code>owners</code></td><td><div class='docblock'><p>The owners of the file. Currently, only certain legacy files may have more than one owner.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.name'><code>name</code></td><td><div class='docblock'><p>The name of the file. This is not necessarily unique within a folder.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.web_content_link'><code>web_content_link</code></td><td><div class='docblock'><p>A link for downloading the content of the file in a browser. This is only available for files with binary content in Drive.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.spaces'><code>spaces</code></td><td><div class='docblock'><p>The list of spaces which contain the file. The currently supported values are &#39;drive&#39;, &#39;appDataFolder&#39; and &#39;photos&#39;.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.trashed'><code>trashed</code></td><td><div class='docblock'><p>Whether the file has been trashed, either explicitly or from a trashed parent folder. Only the owner may trash a file, and other users cannot see files in the owner&#39;s trash.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.content_hints'><code>content_hints</code></td><td><div class='docblock'><p>Additional information about the content of the file. These fields are never populated in responses.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.file_extension'><code>file_extension</code></td><td><div class='docblock'><p>The final component of fullFileExtension. This is only available for files with binary content in Drive.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.starred'><code>starred</code></td><td><div class='docblock'><p>Whether the user has starred the file.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.head_revision_id'><code>head_revision_id</code></td><td><div class='docblock'><p>The ID of the file&#39;s head revision. This is currently only available for files with binary content in Drive.</p>
+</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl <a class='trait' href='../serde/de/trait.Deserialize.html' title='serde::de::Deserialize'>Deserialize</a> for <a class='struct' href='../google_drive3/struct.File.html' title='google_drive3::File'>File</a></code></h3><div class='impl-items'><h4 id='method.deserialize' class='method'><code>fn <a href='../serde/de/trait.Deserialize.html#method.deserialize' class='fnname'>deserialize</a>&lt;__D&gt;(deserializer: &amp;mut __D) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../google_drive3/struct.File.html' title='google_drive3::File'>File</a>, __D::Error&gt; <span class='where'>where __D: <a class='trait' href='../serde/de/trait.Deserializer.html' title='serde::de::Deserializer'>Deserializer</a></span></code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='../serde/ser/trait.Serialize.html' title='serde::ser::Serialize'>Serialize</a> for <a class='struct' href='../google_drive3/struct.File.html' title='google_drive3::File'>File</a></code></h3><div class='impl-items'><h4 id='method.serialize' class='method'><code>fn <a href='../serde/ser/trait.Serialize.html#method.serialize' class='fnname'>serialize</a>&lt;__S&gt;(&amp;self, serializer: &amp;mut __S) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, __S::Error&gt; <span class='where'>where __S: <a class='trait' href='../serde/ser/trait.Serializer.html' title='serde::ser::Serializer'>Serializer</a></span></code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='../google_drive3/trait.RequestValue.html' title='google_drive3::RequestValue'>RequestValue</a> for <a class='struct' href='../google_drive3/struct.File.html' title='google_drive3::File'>File</a></code></h3><div class='impl-items'></div><h3 class='impl'><code>impl <a class='trait' href='../google_drive3/trait.Resource.html' title='google_drive3::Resource'>Resource</a> for <a class='struct' href='../google_drive3/struct.File.html' title='google_drive3::File'>File</a></code></h3><div class='impl-items'></div><h3 class='impl'><code>impl <a class='trait' href='../google_drive3/trait.ResponseResult.html' title='google_drive3::ResponseResult'>ResponseResult</a> for <a class='struct' href='../google_drive3/struct.File.html' title='google_drive3::File'>File</a></code></h3><div class='impl-items'></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_drive3/struct.File.html' title='google_drive3::File'>File</a></code></h3><div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#method.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_drive3/struct.File.html' title='google_drive3::File'>File</a></code></h3><div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_drive3/struct.File.html' title='google_drive3::File'>File</a></code></h4>
+<h4 id='method.clone_from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_drive3/struct.File.html' title='google_drive3::File'>File</a></code></h3><div class='impl-items'><h4 id='method.default' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#method.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_drive3/struct.File.html' title='google_drive3::File'>File</a></code></h4>
+</div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "google_drive3";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../jquery.js"></script>
+    <script src="../main.js"></script>
+    
+    <script defer src="../search-index.js"></script>
+</body>
+</html>

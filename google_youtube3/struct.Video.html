@@ -9,6 +9,7 @@
 
     <title>google_youtube3::Video - Rust</title>
 
+    <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
 
     
@@ -24,50 +25,50 @@
 
     
 
-    <section class="sidebar">
+    <nav class="sidebar">
         
         <p class='location'><a href='index.html'>google_youtube3</a></p><script>window.sidebarCurrent = {name: 'Video', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
-    </section>
+    </nav>
 
     <nav class="sub">
         <form class="search-form js-only">
             <div class="search-container">
                 <input class="search-input" name="search"
                        autocomplete="off"
-                       placeholder="Click or press 'S' to search, '?' for more options..."
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
                        type="search">
             </div>
         </form>
     </nav>
 
     <section id='main' class="content struct">
-<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_youtube3</a>::<wbr><a class='struct' href=''>Video</a><wbr></span><span class='out-of-band'><span id='render-detail'>
-            <a id="collapse-all" href="#">[-]</a>&nbsp;<a id="expand-all" href="#">[+]</a>
-        </span><a id='src-113874' href='../src/google_youtube3///home/byron/dev/rust/google-apis-rs/target/debug/build/google-youtube3-db203c02da0a6afc/out/lib.rs.html#27995-28036'>[src]</a></span></h1>
+<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_youtube3</a>::<wbr><a class='struct' href=''>Video</a></span><span class='out-of-band'><span id='render-detail'>
+            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                [<span class='inner'>&#x2212;</span>]
+            </a>
+        </span><a id='src-23519' class='srclink' href='../src/google_youtube3///Users/byron/dev/rs/google-apis-rs/target/debug/build/google-youtube3-4efca17fcf3e49e3/out/lib.rs.html#41882-41921' title='goto source code'>[src]</a></span></h1>
 <pre class='rust struct'>pub struct Video {
-    pub status: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_youtube3/struct.VideoStatus.html' title='google_youtube3::VideoStatus'>VideoStatus</a>&gt;,
-    pub topic_details: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_youtube3/struct.VideoTopicDetails.html' title='google_youtube3::VideoTopicDetails'>VideoTopicDetails</a>&gt;,
-    pub monetization_details: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_youtube3/struct.VideoMonetizationDetails.html' title='google_youtube3::VideoMonetizationDetails'>VideoMonetizationDetails</a>&gt;,
-    pub suggestions: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_youtube3/struct.VideoSuggestions.html' title='google_youtube3::VideoSuggestions'>VideoSuggestions</a>&gt;,
-    pub age_gating: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_youtube3/struct.VideoAgeGating.html' title='google_youtube3::VideoAgeGating'>VideoAgeGating</a>&gt;,
-    pub file_details: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_youtube3/struct.VideoFileDetails.html' title='google_youtube3::VideoFileDetails'>VideoFileDetails</a>&gt;,
-    pub player: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_youtube3/struct.VideoPlayer.html' title='google_youtube3::VideoPlayer'>VideoPlayer</a>&gt;,
-    pub id: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub localizations: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/std/collections/hash/map/struct.HashMap.html' title='std::collections::hash::map::HashMap'>HashMap</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>, <a class='struct' href='../google_youtube3/struct.VideoLocalization.html' title='google_youtube3::VideoLocalization'>VideoLocalization</a>&gt;&gt;,
-    pub live_streaming_details: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_youtube3/struct.VideoLiveStreamingDetails.html' title='google_youtube3::VideoLiveStreamingDetails'>VideoLiveStreamingDetails</a>&gt;,
-    pub snippet: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_youtube3/struct.VideoSnippet.html' title='google_youtube3::VideoSnippet'>VideoSnippet</a>&gt;,
-    pub kind: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub statistics: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_youtube3/struct.VideoStatistics.html' title='google_youtube3::VideoStatistics'>VideoStatistics</a>&gt;,
-    pub project_details: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_youtube3/struct.VideoProjectDetails.html' title='google_youtube3::VideoProjectDetails'>VideoProjectDetails</a>&gt;,
-    pub conversion_pings: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_youtube3/struct.VideoConversionPings.html' title='google_youtube3::VideoConversionPings'>VideoConversionPings</a>&gt;,
-    pub processing_details: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_youtube3/struct.VideoProcessingDetails.html' title='google_youtube3::VideoProcessingDetails'>VideoProcessingDetails</a>&gt;,
-    pub etag: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub content_details: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_youtube3/struct.VideoContentDetails.html' title='google_youtube3::VideoContentDetails'>VideoContentDetails</a>&gt;,
-    pub recording_details: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_youtube3/struct.VideoRecordingDetails.html' title='google_youtube3::VideoRecordingDetails'>VideoRecordingDetails</a>&gt;,
+    pub status: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_youtube3/struct.VideoStatus.html' title='google_youtube3::VideoStatus'>VideoStatus</a>&gt;,
+    pub topic_details: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_youtube3/struct.VideoTopicDetails.html' title='google_youtube3::VideoTopicDetails'>VideoTopicDetails</a>&gt;,
+    pub monetization_details: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_youtube3/struct.VideoMonetizationDetails.html' title='google_youtube3::VideoMonetizationDetails'>VideoMonetizationDetails</a>&gt;,
+    pub suggestions: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_youtube3/struct.VideoSuggestions.html' title='google_youtube3::VideoSuggestions'>VideoSuggestions</a>&gt;,
+    pub age_gating: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_youtube3/struct.VideoAgeGating.html' title='google_youtube3::VideoAgeGating'>VideoAgeGating</a>&gt;,
+    pub file_details: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_youtube3/struct.VideoFileDetails.html' title='google_youtube3::VideoFileDetails'>VideoFileDetails</a>&gt;,
+    pub player: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_youtube3/struct.VideoPlayer.html' title='google_youtube3::VideoPlayer'>VideoPlayer</a>&gt;,
+    pub id: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub localizations: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/std/collections/hash/map/struct.HashMap.html' title='std::collections::hash::map::HashMap'>HashMap</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>, <a class='struct' href='../google_youtube3/struct.VideoLocalization.html' title='google_youtube3::VideoLocalization'>VideoLocalization</a>&gt;&gt;,
+    pub live_streaming_details: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_youtube3/struct.VideoLiveStreamingDetails.html' title='google_youtube3::VideoLiveStreamingDetails'>VideoLiveStreamingDetails</a>&gt;,
+    pub snippet: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_youtube3/struct.VideoSnippet.html' title='google_youtube3::VideoSnippet'>VideoSnippet</a>&gt;,
+    pub kind: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub statistics: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_youtube3/struct.VideoStatistics.html' title='google_youtube3::VideoStatistics'>VideoStatistics</a>&gt;,
+    pub project_details: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_youtube3/struct.VideoProjectDetails.html' title='google_youtube3::VideoProjectDetails'>VideoProjectDetails</a>&gt;,
+    pub processing_details: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_youtube3/struct.VideoProcessingDetails.html' title='google_youtube3::VideoProcessingDetails'>VideoProcessingDetails</a>&gt;,
+    pub etag: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub content_details: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_youtube3/struct.VideoContentDetails.html' title='google_youtube3::VideoContentDetails'>VideoContentDetails</a>&gt;,
+    pub recording_details: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_youtube3/struct.VideoRecordingDetails.html' title='google_youtube3::VideoRecordingDetails'>VideoRecordingDetails</a>&gt;,
 }</pre><div class='docblock'><p>A video resource represents a YouTube video.</p>
 
-<h1 id="activities" class='section-header'><a
-                           href="#activities">Activities</a></h1>
+<h1 id='activities' class='section-header'><a href='#activities'>Activities</a></h1>
 <p>This type is used in activities, which are methods you may call on this type or where this type is involved in. 
 The list links the activity name, along with information about where it is used (one of <em>request</em> and <em>response</em>).</p>
 
@@ -81,72 +82,99 @@ The list links the activity name, along with information about where it is used 
 <li><a href="struct.VideoDeleteCall.html">delete videos</a> (none)</li>
 </ul>
 </div><h2 class='fields'>Fields</h2>
-<table><tr><td id='structfield.status'><a class='stability Unmarked' title='No stability level'></a><code>status</code></td><td><div class='docblock'><p>The status object contains information about the video&#39;s uploading, processing, and privacy statuses.</p>
-</div></td></tr><tr><td id='structfield.topic_details'><a class='stability Unmarked' title='No stability level'></a><code>topic_details</code></td><td><div class='docblock'><p>The topicDetails object encapsulates information about Freebase topics associated with the video.</p>
-</div></td></tr><tr><td id='structfield.monetization_details'><a class='stability Unmarked' title='No stability level'></a><code>monetization_details</code></td><td><div class='docblock'><p>The monetizationDetails object encapsulates information about the monetization status of the video.</p>
-</div></td></tr><tr><td id='structfield.suggestions'><a class='stability Unmarked' title='No stability level'></a><code>suggestions</code></td><td><div class='docblock'><p>The suggestions object encapsulates suggestions that identify opportunities to improve the video quality or the metadata for the uploaded video. This data can only be retrieved by the video owner.</p>
-</div></td></tr><tr><td id='structfield.age_gating'><a class='stability Unmarked' title='No stability level'></a><code>age_gating</code></td><td><div class='docblock'><p>Age restriction details related to a video.</p>
-</div></td></tr><tr><td id='structfield.file_details'><a class='stability Unmarked' title='No stability level'></a><code>file_details</code></td><td><div class='docblock'><p>The fileDetails object encapsulates information about the video file that was uploaded to YouTube, including the file&#39;s resolution, duration, audio and video codecs, stream bitrates, and more. This data can only be retrieved by the video owner.</p>
-</div></td></tr><tr><td id='structfield.player'><a class='stability Unmarked' title='No stability level'></a><code>player</code></td><td><div class='docblock'><p>The player object contains information that you would use to play the video in an embedded player.</p>
-</div></td></tr><tr><td id='structfield.id'><a class='stability Unmarked' title='No stability level'></a><code>id</code></td><td><div class='docblock'><p>The ID that YouTube uses to uniquely identify the video.</p>
-</div></td></tr><tr><td id='structfield.localizations'><a class='stability Unmarked' title='No stability level'></a><code>localizations</code></td><td><div class='docblock'><p>List with all localizations.</p>
-</div></td></tr><tr><td id='structfield.live_streaming_details'><a class='stability Unmarked' title='No stability level'></a><code>live_streaming_details</code></td><td><div class='docblock'><p>The liveStreamingDetails object contains metadata about a live video broadcast. The object will only be present in a video resource if the video is an upcoming, live, or completed live broadcast.</p>
-</div></td></tr><tr><td id='structfield.snippet'><a class='stability Unmarked' title='No stability level'></a><code>snippet</code></td><td><div class='docblock'><p>The snippet object contains basic details about the video, such as its title, description, and category.</p>
-</div></td></tr><tr><td id='structfield.kind'><a class='stability Unmarked' title='No stability level'></a><code>kind</code></td><td><div class='docblock'><p>Identifies what kind of resource this is. Value: the fixed string &quot;youtube#video&quot;.</p>
-</div></td></tr><tr><td id='structfield.statistics'><a class='stability Unmarked' title='No stability level'></a><code>statistics</code></td><td><div class='docblock'><p>The statistics object contains statistics about the video.</p>
-</div></td></tr><tr><td id='structfield.project_details'><a class='stability Unmarked' title='No stability level'></a><code>project_details</code></td><td><div class='docblock'><p>The projectDetails object contains information about the project specific video metadata.</p>
-</div></td></tr><tr><td id='structfield.conversion_pings'><a class='stability Unmarked' title='No stability level'></a><code>conversion_pings</code></td><td><div class='docblock'><p>The conversionPings object encapsulates information about url pings that need to be respected by the App in different video contexts.</p>
-</div></td></tr><tr><td id='structfield.processing_details'><a class='stability Unmarked' title='No stability level'></a><code>processing_details</code></td><td><div class='docblock'><p>The processingProgress object encapsulates information about YouTube&#39;s progress in processing the uploaded video file. The properties in the object identify the current processing status and an estimate of the time remaining until YouTube finishes processing the video. This part also indicates whether different types of data or content, such as file details or thumbnail images, are available for the video.</p>
+<table><tr class='stab '>
+                                  <td id='structfield.status'><code>status</code></td><td><div class='docblock'><p>The status object contains information about the video&#39;s uploading, processing, and privacy statuses.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.topic_details'><code>topic_details</code></td><td><div class='docblock'><p>The topicDetails object encapsulates information about Freebase topics associated with the video.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.monetization_details'><code>monetization_details</code></td><td><div class='docblock'><p>The monetizationDetails object encapsulates information about the monetization status of the video.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.suggestions'><code>suggestions</code></td><td><div class='docblock'><p>The suggestions object encapsulates suggestions that identify opportunities to improve the video quality or the metadata for the uploaded video. This data can only be retrieved by the video owner.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.age_gating'><code>age_gating</code></td><td><div class='docblock'><p>Age restriction details related to a video. This data can only be retrieved by the video owner.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.file_details'><code>file_details</code></td><td><div class='docblock'><p>The fileDetails object encapsulates information about the video file that was uploaded to YouTube, including the file&#39;s resolution, duration, audio and video codecs, stream bitrates, and more. This data can only be retrieved by the video owner.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.player'><code>player</code></td><td><div class='docblock'><p>The player object contains information that you would use to play the video in an embedded player.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.id'><code>id</code></td><td><div class='docblock'><p>The ID that YouTube uses to uniquely identify the video.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.localizations'><code>localizations</code></td><td><div class='docblock'><p>List with all localizations.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.live_streaming_details'><code>live_streaming_details</code></td><td><div class='docblock'><p>The liveStreamingDetails object contains metadata about a live video broadcast. The object will only be present in a video resource if the video is an upcoming, live, or completed live broadcast.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.snippet'><code>snippet</code></td><td><div class='docblock'><p>The snippet object contains basic details about the video, such as its title, description, and category.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.kind'><code>kind</code></td><td><div class='docblock'><p>Identifies what kind of resource this is. Value: the fixed string &quot;youtube#video&quot;.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.statistics'><code>statistics</code></td><td><div class='docblock'><p>The statistics object contains statistics about the video.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.project_details'><code>project_details</code></td><td><div class='docblock'><p>The projectDetails object contains information about the project specific video metadata.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.processing_details'><code>processing_details</code></td><td><div class='docblock'><p>The processingProgress object encapsulates information about YouTube&#39;s progress in processing the uploaded video file. The properties in the object identify the current processing status and an estimate of the time remaining until YouTube finishes processing the video. This part also indicates whether different types of data or content, such as file details or thumbnail images, are available for the video.</p>
 
 <p>The processingProgress object is designed to be polled so that the video uploaded can track the progress that YouTube has made in processing the uploaded video file. This data can only be retrieved by the video owner.</p>
-</div></td></tr><tr><td id='structfield.etag'><a class='stability Unmarked' title='No stability level'></a><code>etag</code></td><td><div class='docblock'><p>Etag of this resource.</p>
-</div></td></tr><tr><td id='structfield.content_details'><a class='stability Unmarked' title='No stability level'></a><code>content_details</code></td><td><div class='docblock'><p>The contentDetails object contains information about the video content, including the length of the video and its aspect ratio.</p>
-</div></td></tr><tr><td id='structfield.recording_details'><a class='stability Unmarked' title='No stability level'></a><code>recording_details</code></td><td><div class='docblock'><p>The recordingDetails object encapsulates information about the location, date and address where the video was recorded.</p>
-</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='../google_youtube3/trait.RequestValue.html' title='google_youtube3::RequestValue'>RequestValue</a> for <a class='struct' href='../google_youtube3/struct.Video.html' title='google_youtube3::Video'>Video</a></code></h3><div class='impl-items'></div><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='../google_youtube3/trait.Resource.html' title='google_youtube3::Resource'>Resource</a> for <a class='struct' href='../google_youtube3/struct.Video.html' title='google_youtube3::Video'>Video</a></code></h3><div class='impl-items'></div><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='../google_youtube3/trait.ResponseResult.html' title='google_youtube3::ResponseResult'>ResponseResult</a> for <a class='struct' href='../google_youtube3/struct.Video.html' title='google_youtube3::Video'>Video</a></code></h3><div class='impl-items'></div><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='../google_youtube3/trait.ToParts.html' title='google_youtube3::ToParts'>ToParts</a> for <a class='struct' href='../google_youtube3/struct.Video.html' title='google_youtube3::Video'>Video</a></code></h3><div class='impl-items'><h4 id='method.to_parts' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='../google_youtube3/trait.ToParts.html#method.to_parts' class='fnname'>to_parts</a>(&amp;self) -&gt; <a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a></code></h4>
-<div class='docblock'><p>Return a comma separated list of members that are currently set, i.e. for which <code>self.member.is_some()</code>.
-The produced string is suitable for use as a parts list that indicates the parts you are sending, and/or
-the parts you want to see in the server response.</p>
-</div></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_youtube3/struct.Video.html' title='google_youtube3::Video'>Video</a></code></h3><div class='impl-items'><h4 id='method.fmt' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#method.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='http://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='http://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
-</div><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_youtube3/struct.Video.html' title='google_youtube3::Video'>Video</a></code></h3><div class='impl-items'><h4 id='method.clone' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_youtube3/struct.Video.html' title='google_youtube3::Video'>Video</a></code></h4>
-<h4 id='method.clone_from' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code></h4>
-</div><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_youtube3/struct.Video.html' title='google_youtube3::Video'>Video</a></code></h3><div class='impl-items'><h4 id='method.default' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/default/trait.Default.html#method.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_youtube3/struct.Video.html' title='google_youtube3::Video'>Video</a></code></h4>
-</div><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='../serde/de/trait.Deserialize.html' title='serde::de::Deserialize'>Deserialize</a> for <a class='struct' href='../google_youtube3/struct.Video.html' title='google_youtube3::Video'>Video</a></code></h3><div class='impl-items'><h4 id='method.deserialize' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='../serde/de/trait.Deserialize.html#method.deserialize' class='fnname'>deserialize</a>&lt;__D&gt;(deserializer: &amp;mut __D) -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../google_youtube3/struct.Video.html' title='google_youtube3::Video'>Video</a>, __D&gt; <span class='where'>where __D: <a class='trait' href='../serde/de/trait.Deserializer.html' title='serde::de::Deserializer'>Deserializer</a></span></code></h4>
-</div><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='../serde/ser/trait.Serialize.html' title='serde::ser::Serialize'>Serialize</a> for <a class='struct' href='../google_youtube3/struct.Video.html' title='google_youtube3::Video'>Video</a></code></h3><div class='impl-items'><h4 id='method.serialize' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='../serde/ser/trait.Serialize.html#method.serialize' class='fnname'>serialize</a>&lt;__S&gt;(&amp;self, serializer: &amp;mut __S) -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, __S&gt; <span class='where'>where __S: <a class='trait' href='../serde/ser/trait.Serializer.html' title='serde::ser::Serializer'>Serializer</a></span></code></h4>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.etag'><code>etag</code></td><td><div class='docblock'><p>Etag of this resource.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.content_details'><code>content_details</code></td><td><div class='docblock'><p>The contentDetails object contains information about the video content, including the length of the video and its aspect ratio.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.recording_details'><code>recording_details</code></td><td><div class='docblock'><p>The recordingDetails object encapsulates information about the location, date and address where the video was recorded.</p>
+</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl <a class='trait' href='../serde/de/trait.Deserialize.html' title='serde::de::Deserialize'>Deserialize</a> for <a class='struct' href='../google_youtube3/struct.Video.html' title='google_youtube3::Video'>Video</a></code></h3><div class='impl-items'><h4 id='method.deserialize' class='method'><code>fn <a href='../serde/de/trait.Deserialize.html#method.deserialize' class='fnname'>deserialize</a>&lt;__D&gt;(deserializer: &amp;mut __D) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../google_youtube3/struct.Video.html' title='google_youtube3::Video'>Video</a>, __D::Error&gt; <span class='where'>where __D: <a class='trait' href='../serde/de/trait.Deserializer.html' title='serde::de::Deserializer'>Deserializer</a></span></code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='../serde/ser/trait.Serialize.html' title='serde::ser::Serialize'>Serialize</a> for <a class='struct' href='../google_youtube3/struct.Video.html' title='google_youtube3::Video'>Video</a></code></h3><div class='impl-items'><h4 id='method.serialize' class='method'><code>fn <a href='../serde/ser/trait.Serialize.html#method.serialize' class='fnname'>serialize</a>&lt;__S&gt;(&amp;self, serializer: &amp;mut __S) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, __S::Error&gt; <span class='where'>where __S: <a class='trait' href='../serde/ser/trait.Serializer.html' title='serde::ser::Serializer'>Serializer</a></span></code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='../google_youtube3/trait.RequestValue.html' title='google_youtube3::RequestValue'>RequestValue</a> for <a class='struct' href='../google_youtube3/struct.Video.html' title='google_youtube3::Video'>Video</a></code></h3><div class='impl-items'></div><h3 class='impl'><code>impl <a class='trait' href='../google_youtube3/trait.Resource.html' title='google_youtube3::Resource'>Resource</a> for <a class='struct' href='../google_youtube3/struct.Video.html' title='google_youtube3::Video'>Video</a></code></h3><div class='impl-items'></div><h3 class='impl'><code>impl <a class='trait' href='../google_youtube3/trait.ResponseResult.html' title='google_youtube3::ResponseResult'>ResponseResult</a> for <a class='struct' href='../google_youtube3/struct.Video.html' title='google_youtube3::Video'>Video</a></code></h3><div class='impl-items'></div><h3 class='impl'><code>impl <a class='trait' href='../google_youtube3/trait.ToParts.html' title='google_youtube3::ToParts'>ToParts</a> for <a class='struct' href='../google_youtube3/struct.Video.html' title='google_youtube3::Video'>Video</a></code></h3><div class='impl-items'><h4 id='method.to_parts' class='method'><code>fn <a href='../google_youtube3/trait.ToParts.html#method.to_parts' class='fnname'>to_parts</a>(&amp;self) -&gt; <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a></code></h4>
+</div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_youtube3/struct.Video.html' title='google_youtube3::Video'>Video</a></code></h3><div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#method.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_youtube3/struct.Video.html' title='google_youtube3::Video'>Video</a></code></h3><div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_youtube3/struct.Video.html' title='google_youtube3::Video'>Video</a></code></h4>
+<h4 id='method.clone_from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_youtube3/struct.Video.html' title='google_youtube3::Video'>Video</a></code></h3><div class='impl-items'><h4 id='method.default' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#method.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_youtube3/struct.Video.html' title='google_youtube3::Video'>Video</a></code></h4>
 </div></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
 
-    <div id="help" class="hidden">
-        <div class="shortcuts">
-            <h1>Keyboard shortcuts</h1>
-            <dl>
-                <dt>?</dt>
-                <dd>Show this help dialog</dd>
-                <dt>S</dt>
-                <dd>Focus the search field</dd>
-                <dt>&larrb;</dt>
-                <dd>Move up in search results</dd>
-                <dt>&rarrb;</dt>
-                <dd>Move down in search results</dd>
-                <dt>&#9166;</dt>
-                <dd>Go to active search result</dd>
-            </dl>
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code>)
+                </p>
+            </div>
         </div>
-        <div class="infos">
-            <h1>Search tricks</h1>
-            <p>
-                Prefix searches with a type followed by a colon (e.g.
-                <code>fn:</code>) to restrict the search to a given type.
-            </p>
-            <p>
-                Accepted types are: <code>fn</code>, <code>mod</code>,
-                <code>struct</code>, <code>enum</code>,
-                <code>trait</code>, <code>typedef</code> (or
-                <code>tdef</code>).
-            </p>
-        </div>
-    </div>
+    </aside>
 
     
 
@@ -158,6 +186,6 @@ the parts you want to see in the server response.</p>
     <script src="../jquery.js"></script>
     <script src="../main.js"></script>
     
-    <script async src="../search-index.js"></script>
+    <script defer src="../search-index.js"></script>
 </body>
 </html>

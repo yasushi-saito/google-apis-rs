@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Topics Create - pubsub v0.3.0+20150326</title>
+  <title>Topics Create - pubsub v0.3.3+20151103</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -17,6 +17,12 @@
   <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
   <link rel="stylesheet" href="../css/highlight.css">
 
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Topics Create";
+  </script>
+  
   <script src="../js/jquery-2.1.1.min.js"></script>
   <script src="../js/modernizr-2.8.3.min.js"></script>
   <script type="text/javascript" src="../js/highlight.pack.js"></script>
@@ -32,120 +38,194 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> pubsub v0.3.0+20150326</a>
-        
+        <a href=".." class="icon icon-home"> pubsub v0.3.3+20151103</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-      <ul class="current">
-    
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="..">Home</a>
         
-            <li class="toctree-l1 ">
-                <a class="" href="..">Home</a>
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Projects</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../projects_subscriptions-acknowledge/">Subscriptions Acknowledge</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../projects_subscriptions-create/">Subscriptions Create</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../projects_subscriptions-delete/">Subscriptions Delete</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../projects_subscriptions-get/">Subscriptions Get</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../projects_subscriptions-get-iam-policy/">Subscriptions Get Iam Policy</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../projects_subscriptions-list/">Subscriptions List</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../projects_subscriptions-modify-ack-deadline/">Subscriptions Modify Ack Deadline</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../projects_subscriptions-modify-push-config/">Subscriptions Modify Push Config</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../projects_subscriptions-pull/">Subscriptions Pull</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../projects_subscriptions-set-iam-policy/">Subscriptions Set Iam Policy</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../projects_subscriptions-test-iam-permissions/">Subscriptions Test Iam Permissions</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Topics Create</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#scopes">Scopes</a></li>
                 
-            </li>
+            
+                <li class="toctree-l3"><a href="#required-scalar-argument">Required Scalar Argument</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#required-request-value">Required Request Value</a></li>
+                
+                    <li><a class="toctree-l4" href="#about-cursors">About Cursors</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#optional-output-flags">Optional Output Flags</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#optional-general-properties">Optional General Properties</a></li>
+                
+            
+            </ul>
         
+    </li>
 
-    
         
-            <span>Projects</span>
             
-                <li class="toctree-l2 ">
-                    <a class="" href="../projects_subscriptions-acknowledge/">Subscriptions Acknowledge</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../projects_subscriptions-create/">Subscriptions Create</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../projects_subscriptions-delete/">Subscriptions Delete</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../projects_subscriptions-get/">Subscriptions Get</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../projects_subscriptions-list/">Subscriptions List</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../projects_subscriptions-modify-ack-deadline/">Subscriptions Modify Ack Deadline</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../projects_subscriptions-modify-push-config/">Subscriptions Modify Push Config</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../projects_subscriptions-pull/">Subscriptions Pull</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 current">
-                    <a class="current" href="./">Topics Create</a>
-                    
-                        <ul>
-                        
-                            <li class="toctree-l3"><a href="#scopes">Scopes</a></li>
-                            
-                        
-                            <li class="toctree-l3"><a href="#required-scalar-argument">Required Scalar Argument</a></li>
-                            
-                        
-                            <li class="toctree-l3"><a href="#required-request-value">Required Request Value</a></li>
-                            
-                                <li><a class="toctree-l4" href="#about-cursors">About Cursors</a></li>
-                            
-                        
-                            <li class="toctree-l3"><a href="#optional-output-flags">Optional Output Flags</a></li>
-                            
-                        
-                            <li class="toctree-l3"><a href="#optional-general-properties">Optional General Properties</a></li>
-                            
-                        
-                        </ul>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../projects_topics-delete/">Topics Delete</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../projects_topics-get/">Topics Get</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../projects_topics-list/">Topics List</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../projects_topics-publish/">Topics Publish</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../projects_topics-subscriptions-list/">Topics Subscriptions List</a>
-                    
-                </li>
-            
+    <li class="toctree-l1 ">
+        <a class="" href="../projects_topics-delete/">Topics Delete</a>
         
+    </li>
 
-    
-</ul>
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../projects_topics-get/">Topics Get</a>
+        
+    </li>
 
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../projects_topics-get-iam-policy/">Topics Get Iam Policy</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../projects_topics-list/">Topics List</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../projects_topics-publish/">Topics Publish</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../projects_topics-set-iam-policy/">Topics Set Iam Policy</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../projects_topics-subscriptions-list/">Topics Subscriptions List</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../projects_topics-test-iam-permissions/">Topics Test Iam Permissions</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+        </ul>
       </div>
       &nbsp;
     </nav>
@@ -155,7 +235,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">pubsub v0.3.0+20150326</a>
+        <a href="..">pubsub v0.3.3+20151103</a>
       </nav>
 
       
@@ -166,23 +246,26 @@
     <li><a href="..">Docs</a> &raquo;</li>
     
       
-        <li>Projects &raquo;</li>
+        
+          <li>Projects &raquo;</li>
+        
       
     
     <li>Topics Create</li>
-      <li class="wy-breadcrumbs-aside">
+    <li class="wy-breadcrumbs-aside">
+      
         
-          
-            <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/pubsub1_beta2-cli" class="icon icon-github"> Edit on GitHub</a>
-          
+          <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/pubsub1_beta2-cli" class="icon icon-github"> Edit on GitHub</a>
         
-      </li>
+      
+    </li>
   </ul>
   <hr/>
 </div>
           <div role="main">
             <div class="section">
-              <p>Creates the given topic with the given name.</p>
+              
+                <p>Creates the given topic with the given name.</p>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for at least one of the following scopes to make a valid call:</p>
 <ul>
@@ -194,7 +277,7 @@ You can set the scope for this method like this: <code>pubsub1-beta2 --scope &lt
 <h1 id="required-scalar-argument">Required Scalar Argument</h1>
 <ul>
 <li><strong>&lt;name&gt;</strong> <em>(string)</em><ul>
-<li>No description provided.</li>
+<li>The name of the topic. It must have the format <code>&amp;#34;projects/{project}/topics/{topic}&amp;#34;</code>. <code>{topic}</code> must start with a letter, and contain only letters (<code>[A-Za-z]</code>), numbers (<code>[0-9]</code>), dashes (<code>-</code>), underscores (<code>_</code>), periods (<code>.</code>), tildes (<code>~</code>), plus (<code>+</code>) or percent signs (<code>%</code>). It must be between 3 and 255 characters in length, and it must not start with <code>&amp;#34;goog&amp;#34;</code>.</li>
 </ul>
 </li>
 </ul>
@@ -209,8 +292,8 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    name=labore</code><ul>
-<li>No description provided.</li>
+<li><code>-r .    name=gubergren</code><ul>
+<li>The name of the topic. It must have the format <code>&amp;#34;projects/{project}/topics/{topic}&amp;#34;</code>. <code>{topic}</code> must start with a letter, and contain only letters (<code>[A-Za-z]</code>), numbers (<code>[0-9]</code>), dashes (<code>-</code>), underscores (<code>_</code>), periods (<code>.</code>), tildes (<code>~</code>), plus (<code>+</code>) or percent signs (<code>%</code>). It must be between 3 and 255 characters in length, and it must not start with <code>&amp;#34;goog&amp;#34;</code>.</li>
 </ul>
 </li>
 </ul>
@@ -237,9 +320,33 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <p>The following properties can configure any call, and are not specific to this method.</p>
 <ul>
 <li>
+<p><strong>-p $-xgafv=string</strong></p>
+<ul>
+<li>V1 error format.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p access-token=string</strong></p>
+<ul>
+<li>OAuth access token.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p alt=string</strong></p>
 <ul>
-<li>Data format for the response.</li>
+<li>Data format for response.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p bearer-token=string</strong></p>
+<ul>
+<li>OAuth bearer token.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p callback=string</strong></p>
+<ul>
+<li>JSONP</li>
 </ul>
 </li>
 <li>
@@ -261,6 +368,12 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
+<p><strong>-p pp=boolean</strong></p>
+<ul>
+<li>Pretty-print response.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p pretty-print=boolean</strong></p>
 <ul>
 <li>Returns response with indentations and line breaks.</li>
@@ -269,16 +382,23 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>
 <p><strong>-p quota-user=string</strong></p>
 <ul>
-<li>Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. Overrides userIp if both are provided.</li>
+<li>Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p user-ip=string</strong></p>
+<p><strong>-p upload-type=string</strong></p>
 <ul>
-<li>IP address of the site where the request originates. Use this if you want to enforce per-user limits.</li>
+<li>Legacy upload protocol for media (e.g. &#34;media&#34;, &#34;multipart&#34;).</li>
+</ul>
+</li>
+<li>
+<p><strong>-p upload-protocol=string</strong></p>
+<ul>
+<li>Upload protocol for media (e.g. &#34;raw&#34;, &#34;multipart&#34;).</li>
 </ul>
 </li>
 </ul>
+              
             </div>
           </div>
           <footer>
@@ -288,7 +408,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
         <a href="../projects_topics-delete/" class="btn btn-neutral float-right" title="Topics Delete"/>Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../projects_subscriptions-pull/" class="btn btn-neutral" title="Subscriptions Pull"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../projects_subscriptions-test-iam-permissions/" class="btn btn-neutral" title="Subscriptions Test Iam Permissions"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -296,9 +416,10 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   <hr/>
 
   <div role="contentinfo">
-    <p>
     <!-- Copyright etc -->
-    </p>
+    
+      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+    
   </div>
 
   Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
@@ -313,17 +434,17 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <div class="rst-versions" role="note" style="cursor: pointer">
     <span class="rst-current-version" data-toggle="rst-current-version">
-        
-            <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/pubsub1_beta2-cli" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
-        
-      <span><a href="../projects_subscriptions-pull/" style="color: #fcfcfc;">&laquo; Previous</a></span>
-      <span style="margin-left: 15px"><a href="../projects_topics-delete/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+          <a class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../projects_subscriptions-test-iam-permissions/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../projects_topics-delete/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
     </span>
 </div>
 
-<!--
-MkDocs version  : 0.12.2
-Docs Build Date : 2015-06-21 14:30:13.440591
--->
 </body>
 </html>

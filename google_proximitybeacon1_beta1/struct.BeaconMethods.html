@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `BeaconMethods` struct in crate `google_proximitybeacon1_beta1`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, BeaconMethods">
+
+    <title>google_proximitybeacon1_beta1::BeaconMethods - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../main.css">
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='index.html'>google_proximitybeacon1_beta1</a></p><script>window.sidebarCurrent = {name: 'BeaconMethods', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content struct">
+<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_proximitybeacon1_beta1</a>::<wbr><a class='struct' href=''>BeaconMethods</a></span><span class='out-of-band'><span id='render-detail'>
+            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                [<span class='inner'>&#x2212;</span>]
+            </a>
+        </span><a id='src-3370' class='srclink' href='../src/google_proximitybeacon1_beta1///Users/byron/dev/rs/google-apis-rs/target/debug/build/google-proximitybeacon1_beta1-16be8f2bd72ceb52/out/lib.rs.html#5710-5712' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct BeaconMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
+    // some fields omitted
+}</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>beacon</em> resources.
+It is not used directly, but through the <code>Proximitybeacon</code> hub.</p>
+
+<h1 id='example' class='section-header'><a href='#example'>Example</a></h1>
+<p>Instantiate a resource builder</p>
+<pre class='rust rust-example-rendered'>
+<span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>hyper</span>;
+<span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>yup_oauth2</span> <span class='kw'>as</span> <span class='ident'>oauth2</span>;
+<span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>google_proximitybeacon1_beta1</span> <span class='kw'>as</span> <span class='ident'>proximitybeacon1_beta1</span>;
+ 
+<span class='kw'>use</span> <span class='ident'>std</span>::<span class='ident'>default</span>::<span class='ident'>Default</span>;
+<span class='kw'>use</span> <span class='ident'>oauth2</span>::{<span class='ident'>Authenticator</span>, <span class='ident'>DefaultAuthenticatorDelegate</span>, <span class='ident'>ApplicationSecret</span>, <span class='ident'>MemoryStorage</span>};
+<span class='kw'>use</span> <span class='ident'>proximitybeacon1_beta1</span>::<span class='ident'>Proximitybeacon</span>;
+ 
+<span class='kw'>let</span> <span class='ident'>secret</span>: <span class='ident'>ApplicationSecret</span> <span class='op'>=</span> <span class='ident'>Default</span>::<span class='ident'>default</span>();
+<span class='kw'>let</span> <span class='ident'>auth</span> <span class='op'>=</span> <span class='ident'>Authenticator</span>::<span class='ident'>new</span>(<span class='kw-2'>&amp;</span><span class='ident'>secret</span>, <span class='ident'>DefaultAuthenticatorDelegate</span>,
+                              <span class='ident'>hyper</span>::<span class='ident'>Client</span>::<span class='ident'>new</span>(),
+                              <span class='op'>&lt;</span><span class='ident'>MemoryStorage</span> <span class='kw'>as</span> <span class='ident'>Default</span><span class='op'>&gt;</span>::<span class='ident'>default</span>(), <span class='prelude-val'>None</span>);
+<span class='kw'>let</span> <span class='kw-2'>mut</span> <span class='ident'>hub</span> <span class='op'>=</span> <span class='ident'>Proximitybeacon</span>::<span class='ident'>new</span>(<span class='ident'>hyper</span>::<span class='ident'>Client</span>::<span class='ident'>new</span>(), <span class='ident'>auth</span>);
+<span class='comment'>// Usually you wouldn&#39;t bind this to a variable, but keep calling *CallBuilders*</span>
+<span class='comment'>// like `activate(...)`, `attachments_batch_delete(...)`, `attachments_create(...)`, `attachments_delete(...)`, `attachments_list(...)`, `deactivate(...)`, `decommission(...)`, `diagnostics_list(...)`, `get(...)`, `list(...)`, `register(...)` and `update(...)`</span>
+<span class='comment'>// to build up your call.</span>
+<span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>beacons</span>();</pre>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_proximitybeacon1_beta1/struct.BeaconMethods.html' title='google_proximitybeacon1_beta1::BeaconMethods'>BeaconMethods</a>&lt;'a, C, A&gt;</code></h3><div class='impl-items'><h4 id='method.attachments_list' class='method'><code>fn <a href='#method.attachments_list' class='fnname'>attachments_list</a>(&amp;self, beacon_name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_proximitybeacon1_beta1/struct.BeaconAttachmentListCall.html' title='google_proximitybeacon1_beta1::BeaconAttachmentListCall'>BeaconAttachmentListCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Returns the attachments for the specified beacon that match the specified namespaced-type pattern. To control which namespaced types are returned, you add the <code>namespacedType</code> query parameter to the request. You must either use <code>*/*</code>, to return all attachments, or the namespace must be one of the ones returned from the <code>namespaces</code> endpoint.</p>
+
+<h1 id='arguments' class='section-header'><a href='#arguments'>Arguments</a></h1>
+<ul>
+<li><code>beaconName</code> - The beacon whose attachments are to be fetched. Required.</li>
+</ul>
+</div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, beacon_name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_proximitybeacon1_beta1/struct.BeaconGetCall.html' title='google_proximitybeacon1_beta1::BeaconGetCall'>BeaconGetCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Returns detailed information about the specified beacon.</p>
+
+<h1 id='arguments-1' class='section-header'><a href='#arguments-1'>Arguments</a></h1>
+<ul>
+<li><code>beaconName</code> - Beacon that is requested.</li>
+</ul>
+</div><h4 id='method.attachments_create' class='method'><code>fn <a href='#method.attachments_create' class='fnname'>attachments_create</a>(&amp;self, request: <a class='struct' href='../google_proximitybeacon1_beta1/struct.BeaconAttachment.html' title='google_proximitybeacon1_beta1::BeaconAttachment'>BeaconAttachment</a>, beacon_name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_proximitybeacon1_beta1/struct.BeaconAttachmentCreateCall.html' title='google_proximitybeacon1_beta1::BeaconAttachmentCreateCall'>BeaconAttachmentCreateCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Associates the given data with the specified beacon. Attachment data must contain two parts:<br>
+- A namespaced type. 
+- The actual attachment data itself.  The namespaced type consists of two parts, the namespace and the type. The namespace must be one of the values returned by the <code>namespaces</code> endpoint, while the type can be a string of any characters except for the forward slash (<code>/</code>) up to 100 characters in length. Attachment data can be up to 1024 bytes long.</p>
+
+<h1 id='arguments-2' class='section-header'><a href='#arguments-2'>Arguments</a></h1>
+<ul>
+<li><code>request</code> - No description provided.</li>
+<li><code>beaconName</code> - The beacon on which the attachment should be created. Required.</li>
+</ul>
+</div><h4 id='method.decommission' class='method'><code>fn <a href='#method.decommission' class='fnname'>decommission</a>(&amp;self, beacon_name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_proximitybeacon1_beta1/struct.BeaconDecommissionCall.html' title='google_proximitybeacon1_beta1::BeaconDecommissionCall'>BeaconDecommissionCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Decommissions the specified beacon in the service. This beacon will no longer be returned from <code>beaconinfo.getforobserved</code>. This operation is permanent -- you will not be able to re-register a beacon with this ID again.</p>
+
+<h1 id='arguments-3' class='section-header'><a href='#arguments-3'>Arguments</a></h1>
+<ul>
+<li><code>beaconName</code> - Beacon that should be decommissioned. Required.</li>
+</ul>
+</div><h4 id='method.activate' class='method'><code>fn <a href='#method.activate' class='fnname'>activate</a>(&amp;self, beacon_name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_proximitybeacon1_beta1/struct.BeaconActivateCall.html' title='google_proximitybeacon1_beta1::BeaconActivateCall'>BeaconActivateCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>(Re)activates a beacon. A beacon that is active will return information and attachment data when queried via <code>beaconinfo.getforobserved</code>. Calling this method on an already active beacon will do nothing (but will return a successful response code).</p>
+
+<h1 id='arguments-4' class='section-header'><a href='#arguments-4'>Arguments</a></h1>
+<ul>
+<li><code>beaconName</code> - The beacon to activate. Required.</li>
+</ul>
+</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self) -&gt; <a class='struct' href='../google_proximitybeacon1_beta1/struct.BeaconListCall.html' title='google_proximitybeacon1_beta1::BeaconListCall'>BeaconListCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Searches the beacon registry for beacons that match the given search criteria. Only those beacons that the client has permission to list will be returned.</p>
+</div><h4 id='method.update' class='method'><code>fn <a href='#method.update' class='fnname'>update</a>(&amp;self, request: <a class='struct' href='../google_proximitybeacon1_beta1/struct.Beacon.html' title='google_proximitybeacon1_beta1::Beacon'>Beacon</a>, beacon_name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_proximitybeacon1_beta1/struct.BeaconUpdateCall.html' title='google_proximitybeacon1_beta1::BeaconUpdateCall'>BeaconUpdateCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Updates the information about the specified beacon. <strong>Any field that you do not populate in the submitted beacon will be permanently erased</strong>, so you should follow the &quot;read, modify, write&quot; pattern to avoid inadvertently destroying data. Changes to the beacon status via this method will be silently ignored. To update beacon status, use the separate methods on this API for (de)activation and decommissioning.</p>
+
+<h1 id='arguments-5' class='section-header'><a href='#arguments-5'>Arguments</a></h1>
+<ul>
+<li><code>request</code> - No description provided.</li>
+<li><code>beaconName</code> - Resource name of this beacon. A beacon name has the format &quot;beacons/N!beaconId&quot; where the beaconId is the base16 ID broadcast by the beacon and N is a code for the beacon&#39;s type. Possible values are <code>3</code> for Eddystone, <code>1</code> for iBeacon, or <code>5</code> for AltBeacon. This field must be left empty when registering. After reading a beacon, clients can use the name for future operations.</li>
+</ul>
+</div><h4 id='method.attachments_delete' class='method'><code>fn <a href='#method.attachments_delete' class='fnname'>attachments_delete</a>(&amp;self, attachment_name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_proximitybeacon1_beta1/struct.BeaconAttachmentDeleteCall.html' title='google_proximitybeacon1_beta1::BeaconAttachmentDeleteCall'>BeaconAttachmentDeleteCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Deletes the specified attachment for the given beacon. Each attachment has a unique attachment name (<code>attachmentName</code>) which is returned when you fetch the attachment data via this API. You specify this with the delete request to control which attachment is removed. This operation cannot be undone.</p>
+
+<h1 id='arguments-6' class='section-header'><a href='#arguments-6'>Arguments</a></h1>
+<ul>
+<li><code>attachmentName</code> - The attachment name (<code>attachmentName</code>) of the attachment to remove. For example: <code>beacons/3!893737abc9/attachments/c5e937-af0-494-959-ec49d12738</code> Required.</li>
+</ul>
+</div><h4 id='method.deactivate' class='method'><code>fn <a href='#method.deactivate' class='fnname'>deactivate</a>(&amp;self, beacon_name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_proximitybeacon1_beta1/struct.BeaconDeactivateCall.html' title='google_proximitybeacon1_beta1::BeaconDeactivateCall'>BeaconDeactivateCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Deactivates a beacon. Once deactivated, the API will not return information nor attachment data for the beacon when queried via <code>beaconinfo.getforobserved</code>. Calling this method on an already inactive beacon will do nothing (but will return a successful response code).</p>
+
+<h1 id='arguments-7' class='section-header'><a href='#arguments-7'>Arguments</a></h1>
+<ul>
+<li><code>beaconName</code> - The beacon name of this beacon.</li>
+</ul>
+</div><h4 id='method.register' class='method'><code>fn <a href='#method.register' class='fnname'>register</a>(&amp;self, request: <a class='struct' href='../google_proximitybeacon1_beta1/struct.Beacon.html' title='google_proximitybeacon1_beta1::Beacon'>Beacon</a>) -&gt; <a class='struct' href='../google_proximitybeacon1_beta1/struct.BeaconRegisterCall.html' title='google_proximitybeacon1_beta1::BeaconRegisterCall'>BeaconRegisterCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Registers a previously unregistered beacon given its <code>advertisedId</code>. These IDs are unique within the system. An ID can be registered only once.</p>
+
+<h1 id='arguments-8' class='section-header'><a href='#arguments-8'>Arguments</a></h1>
+<ul>
+<li><code>request</code> - No description provided.</li>
+</ul>
+</div><h4 id='method.diagnostics_list' class='method'><code>fn <a href='#method.diagnostics_list' class='fnname'>diagnostics_list</a>(&amp;self, beacon_name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_proximitybeacon1_beta1/struct.BeaconDiagnosticListCall.html' title='google_proximitybeacon1_beta1::BeaconDiagnosticListCall'>BeaconDiagnosticListCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>List the diagnostics for a single beacon. You can also list diagnostics for all the beacons owned by your Google Developers Console project by using the beacon name <code>beacons/-</code>.</p>
+
+<h1 id='arguments-9' class='section-header'><a href='#arguments-9'>Arguments</a></h1>
+<ul>
+<li><code>beaconName</code> - Beacon that the diagnostics are for.</li>
+</ul>
+</div><h4 id='method.attachments_batch_delete' class='method'><code>fn <a href='#method.attachments_batch_delete' class='fnname'>attachments_batch_delete</a>(&amp;self, beacon_name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_proximitybeacon1_beta1/struct.BeaconAttachmentBatchDeleteCall.html' title='google_proximitybeacon1_beta1::BeaconAttachmentBatchDeleteCall'>BeaconAttachmentBatchDeleteCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Deletes multiple attachments on a given beacon. This operation is permanent and cannot be undone. You can optionally specify <code>namespacedType</code> to choose which attachments should be deleted. If you do not specify <code>namespacedType</code>, all your attachments on the given beacon will be deleted. You also may explicitly specify <code>*/*</code> to delete all.</p>
+
+<h1 id='arguments-10' class='section-header'><a href='#arguments-10'>Arguments</a></h1>
+<ul>
+<li><code>beaconName</code> - The beacon whose attachments are to be deleted. Required.</li>
+</ul>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_proximitybeacon1_beta1/trait.MethodsBuilder.html' title='google_proximitybeacon1_beta1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_proximitybeacon1_beta1/struct.BeaconMethods.html' title='google_proximitybeacon1_beta1::BeaconMethods'>BeaconMethods</a>&lt;'a, C, A&gt;</code></h3><div class='impl-items'></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "google_proximitybeacon1_beta1";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../jquery.js"></script>
+    <script src="../main.js"></script>
+    
+    <script defer src="../search-index.js"></script>
+</body>
+</html>

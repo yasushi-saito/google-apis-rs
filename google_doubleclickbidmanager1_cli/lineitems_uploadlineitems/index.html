@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Uploadlineitems - DoubleClick Bid Manager v0.3.0+20150326</title>
+  <title>Uploadlineitems - DoubleClick Bid Manager v0.3.3+20160120</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -17,6 +17,12 @@
   <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
   <link rel="stylesheet" href="../css/highlight.css">
 
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Uploadlineitems";
+  </script>
+  
   <script src="../js/jquery-2.1.1.min.js"></script>
   <script src="../js/modernizr-2.8.3.min.js"></script>
   <script type="text/javascript" src="../js/highlight.pack.js"></script>
@@ -32,96 +38,135 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> DoubleClick Bid Manager v0.3.0+20150326</a>
-        
+        <a href=".." class="icon icon-home"> DoubleClick Bid Manager v0.3.3+20160120</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-      <ul class="current">
-    
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="..">Home</a>
         
-            <li class="toctree-l1 ">
-                <a class="" href="..">Home</a>
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Lineitems</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../lineitems_downloadlineitems/">Downloadlineitems</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Uploadlineitems</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#required-request-value">Required Request Value</a></li>
                 
-            </li>
+                    <li><a class="toctree-l4" href="#about-cursors">About Cursors</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#optional-output-flags">Optional Output Flags</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#optional-general-properties">Optional General Properties</a></li>
+                
+            
+            </ul>
         
+    </li>
 
-    
         
-            <span>Lineitems</span>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../lineitems_downloadlineitems/">Downloadlineitems</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 current">
-                    <a class="current" href="./">Uploadlineitems</a>
-                    
-                        <ul>
-                        
-                            <li class="toctree-l3"><a href="#required-request-value">Required Request Value</a></li>
-                            
-                                <li><a class="toctree-l4" href="#about-cursors">About Cursors</a></li>
-                            
-                        
-                            <li class="toctree-l3"><a href="#optional-output-flags">Optional Output Flags</a></li>
-                            
-                        
-                            <li class="toctree-l3"><a href="#optional-general-properties">Optional General Properties</a></li>
-                            
-                        
-                        </ul>
-                    
-                </li>
-            
-        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Queries</span></li>
 
-    
         
-            <span>Queries</span>
             
-                <li class="toctree-l2 ">
-                    <a class="" href="../queries_createquery/">Createquery</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../queries_deletequery/">Deletequery</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../queries_getquery/">Getquery</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../queries_listqueries/">Listqueries</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../queries_runquery/">Runquery</a>
-                    
-                </li>
-            
+    <li class="toctree-l1 ">
+        <a class="" href="../queries_createquery/">Createquery</a>
         
+    </li>
 
-    
         
-            <span>Reports</span>
             
-                <li class="toctree-l2 ">
-                    <a class="" href="../reports_listreports/">Listreports</a>
-                    
-                </li>
-            
+    <li class="toctree-l1 ">
+        <a class="" href="../queries_deletequery/">Deletequery</a>
         
+    </li>
 
-    
-</ul>
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../queries_getquery/">Getquery</a>
+        
+    </li>
 
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../queries_listqueries/">Listqueries</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../queries_runquery/">Runquery</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Reports</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../reports_listreports/">Listreports</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Rubicon</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../rubicon_notifyproposalchange/">Notifyproposalchange</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+        </ul>
       </div>
       &nbsp;
     </nav>
@@ -131,7 +176,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">DoubleClick Bid Manager v0.3.0+20150326</a>
+        <a href="..">DoubleClick Bid Manager v0.3.3+20160120</a>
       </nav>
 
       
@@ -142,23 +187,26 @@
     <li><a href="..">Docs</a> &raquo;</li>
     
       
-        <li>Lineitems &raquo;</li>
+        
+          <li>Lineitems &raquo;</li>
+        
       
     
     <li>Uploadlineitems</li>
-      <li class="wy-breadcrumbs-aside">
+    <li class="wy-breadcrumbs-aside">
+      
         
-          
-            <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/doubleclickbidmanager1-cli" class="icon icon-github"> Edit on GitHub</a>
-          
+          <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/doubleclickbidmanager1-cli" class="icon icon-github"> Edit on GitHub</a>
         
-      </li>
+      
+    </li>
   </ul>
   <hr/>
 </div>
           <div role="main">
             <div class="section">
-              <p>Uploads line items in CSV format.</p>
+              
+                <p>Uploads line items in CSV format.</p>
 <h1 id="required-request-value">Required Request Value</h1>
 <p>The request value is a data-structure with various fields. Each field may be a simple scalar or another data-structure.
 In the latter case it is advised to set the field-cursor to the data-structure's field to specify values more concisely.</p>
@@ -172,15 +220,15 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    dry-run=true</code><ul>
+<li><code>-r .    dry-run=false</code><ul>
 <li>Set to true to get upload status without actually persisting the line items.</li>
 </ul>
 </li>
-<li><code>format=et</code><ul>
+<li><code>format=dolores</code><ul>
 <li>Format the line items are in. Default to CSV.</li>
 </ul>
 </li>
-<li><code>line-items=dolores</code><ul>
+<li><code>line-items=kasd</code><ul>
 <li>Line items in CSV to upload. Refer to  Entity Write File Format for more information on file format.</li>
 </ul>
 </li>
@@ -250,6 +298,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 </ul>
+              
             </div>
           </div>
           <footer>
@@ -267,9 +316,10 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   <hr/>
 
   <div role="contentinfo">
-    <p>
     <!-- Copyright etc -->
-    </p>
+    
+      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+    
   </div>
 
   Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
@@ -284,17 +334,17 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <div class="rst-versions" role="note" style="cursor: pointer">
     <span class="rst-current-version" data-toggle="rst-current-version">
-        
-            <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/doubleclickbidmanager1-cli" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
-        
-      <span><a href="../lineitems_downloadlineitems/" style="color: #fcfcfc;">&laquo; Previous</a></span>
-      <span style="margin-left: 15px"><a href="../queries_createquery/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+          <a class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../lineitems_downloadlineitems/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../queries_createquery/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
     </span>
 </div>
 
-<!--
-MkDocs version  : 0.12.2
-Docs Build Date : 2015-06-21 14:30:10.705348
--->
 </body>
 </html>

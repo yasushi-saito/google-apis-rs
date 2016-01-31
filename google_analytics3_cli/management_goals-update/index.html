@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Goals Update - analytics v0.3.0+20150305</title>
+  <title>Goals Update - analytics v0.3.3+20151215</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -17,6 +17,12 @@
   <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
   <link rel="stylesheet" href="../css/highlight.css">
 
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Goals Update";
+  </script>
+  
   <script src="../js/jquery-2.1.1.min.js"></script>
   <script src="../js/modernizr-2.8.3.min.js"></script>
   <script type="text/javascript" src="../js/highlight.pack.js"></script>
@@ -32,458 +38,631 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> analytics v0.3.0+20150305</a>
-        
+        <a href=".." class="icon icon-home"> analytics v0.3.3+20151215</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-      <ul class="current">
-    
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="..">Home</a>
         
-            <li class="toctree-l1 ">
-                <a class="" href="..">Home</a>
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Data</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../data_ga-get/">Ga Get</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../data_mcf-get/">Mcf Get</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../data_realtime-get/">Realtime Get</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Management</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../management_account-summaries-list/">Account Summaries List</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../management_account-user-links-delete/">Account User Links Delete</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../management_account-user-links-insert/">Account User Links Insert</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../management_account-user-links-list/">Account User Links List</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../management_account-user-links-update/">Account User Links Update</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../management_accounts-list/">Accounts List</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../management_custom-data-sources-list/">Custom Data Sources List</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../management_custom-dimensions-get/">Custom Dimensions Get</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../management_custom-dimensions-insert/">Custom Dimensions Insert</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../management_custom-dimensions-list/">Custom Dimensions List</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../management_custom-dimensions-patch/">Custom Dimensions Patch</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../management_custom-dimensions-update/">Custom Dimensions Update</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../management_custom-metrics-get/">Custom Metrics Get</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../management_custom-metrics-insert/">Custom Metrics Insert</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../management_custom-metrics-list/">Custom Metrics List</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../management_custom-metrics-patch/">Custom Metrics Patch</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../management_custom-metrics-update/">Custom Metrics Update</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../management_experiments-delete/">Experiments Delete</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../management_experiments-get/">Experiments Get</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../management_experiments-insert/">Experiments Insert</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../management_experiments-list/">Experiments List</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../management_experiments-patch/">Experiments Patch</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../management_experiments-update/">Experiments Update</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../management_filters-delete/">Filters Delete</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../management_filters-get/">Filters Get</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../management_filters-insert/">Filters Insert</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../management_filters-list/">Filters List</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../management_filters-patch/">Filters Patch</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../management_filters-update/">Filters Update</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../management_goals-get/">Goals Get</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../management_goals-insert/">Goals Insert</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../management_goals-list/">Goals List</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../management_goals-patch/">Goals Patch</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Goals Update</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#scopes">Scopes</a></li>
                 
-            </li>
+            
+                <li class="toctree-l3"><a href="#required-scalar-arguments">Required Scalar Arguments</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#required-request-value">Required Request Value</a></li>
+                
+                    <li><a class="toctree-l4" href="#about-cursors">About Cursors</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#optional-output-flags">Optional Output Flags</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#optional-general-properties">Optional General Properties</a></li>
+                
+            
+            </ul>
         
+    </li>
 
-    
         
-            <span>Data</span>
             
-                <li class="toctree-l2 ">
-                    <a class="" href="../data_ga-get/">Ga Get</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../data_mcf-get/">Mcf Get</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../data_realtime-get/">Realtime Get</a>
-                    
-                </li>
-            
+    <li class="toctree-l1 ">
+        <a class="" href="../management_profile-filter-links-delete/">Profile Filter Links Delete</a>
         
+    </li>
 
-    
         
-            <span>Management</span>
             
-                <li class="toctree-l2 ">
-                    <a class="" href="../management_account-summaries-list/">Account Summaries List</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../management_account-user-links-delete/">Account User Links Delete</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../management_account-user-links-insert/">Account User Links Insert</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../management_account-user-links-list/">Account User Links List</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../management_account-user-links-update/">Account User Links Update</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../management_accounts-list/">Accounts List</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../management_custom-data-sources-list/">Custom Data Sources List</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../management_custom-dimensions-get/">Custom Dimensions Get</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../management_custom-dimensions-insert/">Custom Dimensions Insert</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../management_custom-dimensions-list/">Custom Dimensions List</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../management_custom-dimensions-patch/">Custom Dimensions Patch</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../management_custom-dimensions-update/">Custom Dimensions Update</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../management_custom-metrics-get/">Custom Metrics Get</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../management_custom-metrics-insert/">Custom Metrics Insert</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../management_custom-metrics-list/">Custom Metrics List</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../management_custom-metrics-patch/">Custom Metrics Patch</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../management_custom-metrics-update/">Custom Metrics Update</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../management_experiments-delete/">Experiments Delete</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../management_experiments-get/">Experiments Get</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../management_experiments-insert/">Experiments Insert</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../management_experiments-list/">Experiments List</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../management_experiments-patch/">Experiments Patch</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../management_experiments-update/">Experiments Update</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../management_filters-delete/">Filters Delete</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../management_filters-get/">Filters Get</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../management_filters-insert/">Filters Insert</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../management_filters-list/">Filters List</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../management_filters-patch/">Filters Patch</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../management_filters-update/">Filters Update</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../management_goals-get/">Goals Get</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../management_goals-insert/">Goals Insert</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../management_goals-list/">Goals List</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../management_goals-patch/">Goals Patch</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 current">
-                    <a class="current" href="./">Goals Update</a>
-                    
-                        <ul>
-                        
-                            <li class="toctree-l3"><a href="#scopes">Scopes</a></li>
-                            
-                        
-                            <li class="toctree-l3"><a href="#required-scalar-arguments">Required Scalar Arguments</a></li>
-                            
-                        
-                            <li class="toctree-l3"><a href="#required-request-value">Required Request Value</a></li>
-                            
-                                <li><a class="toctree-l4" href="#about-cursors">About Cursors</a></li>
-                            
-                        
-                            <li class="toctree-l3"><a href="#optional-output-flags">Optional Output Flags</a></li>
-                            
-                        
-                            <li class="toctree-l3"><a href="#optional-general-properties">Optional General Properties</a></li>
-                            
-                        
-                        </ul>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../management_profile-filter-links-delete/">Profile Filter Links Delete</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../management_profile-filter-links-get/">Profile Filter Links Get</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../management_profile-filter-links-insert/">Profile Filter Links Insert</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../management_profile-filter-links-list/">Profile Filter Links List</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../management_profile-filter-links-patch/">Profile Filter Links Patch</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../management_profile-filter-links-update/">Profile Filter Links Update</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../management_profile-user-links-delete/">Profile User Links Delete</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../management_profile-user-links-insert/">Profile User Links Insert</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../management_profile-user-links-list/">Profile User Links List</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../management_profile-user-links-update/">Profile User Links Update</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../management_profiles-delete/">Profiles Delete</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../management_profiles-get/">Profiles Get</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../management_profiles-insert/">Profiles Insert</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../management_profiles-list/">Profiles List</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../management_profiles-patch/">Profiles Patch</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../management_profiles-update/">Profiles Update</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../management_segments-list/">Segments List</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../management_unsampled-reports-get/">Unsampled Reports Get</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../management_unsampled-reports-insert/">Unsampled Reports Insert</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../management_unsampled-reports-list/">Unsampled Reports List</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../management_uploads-delete-upload-data/">Uploads Delete Upload Data</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../management_uploads-get/">Uploads Get</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../management_uploads-list/">Uploads List</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../management_uploads-upload-data/">Uploads Upload Data</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../management_web-property-ad-words-links-delete/">Web Property Ad Words Links Delete</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../management_web-property-ad-words-links-get/">Web Property Ad Words Links Get</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../management_web-property-ad-words-links-insert/">Web Property Ad Words Links Insert</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../management_web-property-ad-words-links-list/">Web Property Ad Words Links List</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../management_web-property-ad-words-links-patch/">Web Property Ad Words Links Patch</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../management_web-property-ad-words-links-update/">Web Property Ad Words Links Update</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../management_webproperties-get/">Webproperties Get</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../management_webproperties-insert/">Webproperties Insert</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../management_webproperties-list/">Webproperties List</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../management_webproperties-patch/">Webproperties Patch</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../management_webproperties-update/">Webproperties Update</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../management_webproperty-user-links-delete/">Webproperty User Links Delete</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../management_webproperty-user-links-insert/">Webproperty User Links Insert</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../management_webproperty-user-links-list/">Webproperty User Links List</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../management_webproperty-user-links-update/">Webproperty User Links Update</a>
-                    
-                </li>
-            
+    <li class="toctree-l1 ">
+        <a class="" href="../management_profile-filter-links-get/">Profile Filter Links Get</a>
         
+    </li>
 
-    
         
-            <span>Metadata</span>
             
-                <li class="toctree-l2 ">
-                    <a class="" href="../metadata_columns-list/">Columns List</a>
-                    
-                </li>
-            
+    <li class="toctree-l1 ">
+        <a class="" href="../management_profile-filter-links-insert/">Profile Filter Links Insert</a>
         
+    </li>
 
-    
         
-            <span>Provisioning</span>
             
-                <li class="toctree-l2 ">
-                    <a class="" href="../provisioning_create-account-ticket/">Create Account Ticket</a>
-                    
-                </li>
-            
+    <li class="toctree-l1 ">
+        <a class="" href="../management_profile-filter-links-list/">Profile Filter Links List</a>
         
+    </li>
 
-    
-</ul>
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../management_profile-filter-links-patch/">Profile Filter Links Patch</a>
+        
+    </li>
 
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../management_profile-filter-links-update/">Profile Filter Links Update</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../management_profile-user-links-delete/">Profile User Links Delete</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../management_profile-user-links-insert/">Profile User Links Insert</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../management_profile-user-links-list/">Profile User Links List</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../management_profile-user-links-update/">Profile User Links Update</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../management_profiles-delete/">Profiles Delete</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../management_profiles-get/">Profiles Get</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../management_profiles-insert/">Profiles Insert</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../management_profiles-list/">Profiles List</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../management_profiles-patch/">Profiles Patch</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../management_profiles-update/">Profiles Update</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../management_segments-list/">Segments List</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../management_unsampled-reports-delete/">Unsampled Reports Delete</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../management_unsampled-reports-get/">Unsampled Reports Get</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../management_unsampled-reports-insert/">Unsampled Reports Insert</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../management_unsampled-reports-list/">Unsampled Reports List</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../management_uploads-delete-upload-data/">Uploads Delete Upload Data</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../management_uploads-get/">Uploads Get</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../management_uploads-list/">Uploads List</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../management_uploads-upload-data/">Uploads Upload Data</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../management_web-property-ad-words-links-delete/">Web Property Ad Words Links Delete</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../management_web-property-ad-words-links-get/">Web Property Ad Words Links Get</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../management_web-property-ad-words-links-insert/">Web Property Ad Words Links Insert</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../management_web-property-ad-words-links-list/">Web Property Ad Words Links List</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../management_web-property-ad-words-links-patch/">Web Property Ad Words Links Patch</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../management_web-property-ad-words-links-update/">Web Property Ad Words Links Update</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../management_webproperties-get/">Webproperties Get</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../management_webproperties-insert/">Webproperties Insert</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../management_webproperties-list/">Webproperties List</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../management_webproperties-patch/">Webproperties Patch</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../management_webproperties-update/">Webproperties Update</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../management_webproperty-user-links-delete/">Webproperty User Links Delete</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../management_webproperty-user-links-insert/">Webproperty User Links Insert</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../management_webproperty-user-links-list/">Webproperty User Links List</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../management_webproperty-user-links-update/">Webproperty User Links Update</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Metadata</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../metadata_columns-list/">Columns List</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Provisioning</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../provisioning_create-account-ticket/">Create Account Ticket</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+        </ul>
       </div>
       &nbsp;
     </nav>
@@ -493,7 +672,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">analytics v0.3.0+20150305</a>
+        <a href="..">analytics v0.3.3+20151215</a>
       </nav>
 
       
@@ -504,23 +683,26 @@
     <li><a href="..">Docs</a> &raquo;</li>
     
       
-        <li>Management &raquo;</li>
+        
+          <li>Management &raquo;</li>
+        
       
     
     <li>Goals Update</li>
-      <li class="wy-breadcrumbs-aside">
+    <li class="wy-breadcrumbs-aside">
+      
         
-          
-            <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/analytics3-cli" class="icon icon-github"> Edit on GitHub</a>
-          
+          <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/analytics3-cli" class="icon icon-github"> Edit on GitHub</a>
         
-      </li>
+      
+    </li>
   </ul>
   <hr/>
 </div>
           <div role="main">
             <div class="section">
-              <p>Updates an existing view (profile).</p>
+              
+                <p>Updates an existing view (profile).</p>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for the <em>https://www.googleapis.com/auth/analytics.edit</em> scope to make a valid call.</p>
 <p>If unset, the scope for this method defaults to <em>https://www.googleapis.com/auth/analytics.edit</em>.
@@ -583,7 +765,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    account-id=elitr</code><ul>
+<li><code>-r .    account-id=sanctus</code><ul>
 <li>Account ID to which this goal belongs.</li>
 </ul>
 </li>
@@ -591,7 +773,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>Determines whether this goal is active.</li>
 </ul>
 </li>
-<li><code>created=vero</code><ul>
+<li><code>created=labore</code><ul>
 <li>Time this goal was created.</li>
 </ul>
 </li>
@@ -602,48 +784,48 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
-<p><code>..    id=sed</code></p>
+<p><code>..    id=erat</code></p>
 <ul>
 <li>Goal ID.</li>
 </ul>
 </li>
-<li><code>internal-web-property-id=vero</code><ul>
+<li><code>internal-web-property-id=voluptua.</code><ul>
 <li>Internal ID for the web property to which this goal belongs.</li>
 </ul>
 </li>
-<li><code>kind=nonumy</code><ul>
+<li><code>kind=est</code><ul>
 <li>Resource type for an Analytics goal.</li>
 </ul>
 </li>
-<li><code>name=magna</code><ul>
+<li><code>name=consetetur</code><ul>
 <li>Goal name.</li>
 </ul>
 </li>
-<li><code>parent-link    href=ea</code><ul>
+<li><code>parent-link    href=tempor</code><ul>
 <li>Link to the view (profile) to which this goal belongs.</li>
 </ul>
 </li>
 <li>
-<p><code>type=sea</code></p>
+<p><code>type=amet</code></p>
 <ul>
 <li>Value is &#34;analytics#profile&#34;.</li>
 </ul>
 </li>
 <li>
-<p><code>..    profile-id=ipsum</code></p>
+<p><code>..    profile-id=lorem</code></p>
 <ul>
 <li>View (Profile) ID to which this goal belongs.</li>
 </ul>
 </li>
-<li><code>self-link=labore</code><ul>
+<li><code>self-link=eirmod</code><ul>
 <li>Link for this goal.</li>
 </ul>
 </li>
-<li><code>type=lorem</code><ul>
+<li><code>type=elitr</code><ul>
 <li>Goal type. Possible values are URL_DESTINATION, VISIT_TIME_ON_SITE, VISIT_NUM_PAGES, AND EVENT.</li>
 </ul>
 </li>
-<li><code>updated=aliquyam</code><ul>
+<li><code>updated=clita</code><ul>
 <li>Time this goal was last modified.</li>
 </ul>
 </li>
@@ -655,7 +837,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>Determines if the first step in this goal is required.</li>
 </ul>
 </li>
-<li><code>match-type=consetetur</code><ul>
+<li><code>match-type=ea</code><ul>
 <li>Match type for the goal URL. Possible values are HEAD, EXACT, or REGEX.</li>
 </ul>
 </li>
@@ -666,17 +848,17 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
-<p><code>..    value=0.30294758896</code></p>
+<p><code>..    value=0.710770400639</code></p>
 <ul>
 <li>Goal value.</li>
 </ul>
 </li>
-<li><code>visit-num-pages-details    comparison-type=kasd</code><ul>
+<li><code>visit-num-pages-details    comparison-type=sanctus</code><ul>
 <li>Type of comparison. Possible values are LESS_THAN, GREATER_THAN, or EQUAL.</li>
 </ul>
 </li>
 <li>
-<p><code>comparison-value=kasd</code></p>
+<p><code>comparison-value=sea</code></p>
 <ul>
 <li>Value used for this comparison.</li>
 </ul>
@@ -688,13 +870,13 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
-<p><code>comparison-value=eos</code></p>
+<p><code>comparison-value=gubergren</code></p>
 <ul>
 <li>Value used for this comparison.</li>
 </ul>
 </li>
 <li>
-<p><code>..    web-property-id=nonumy</code></p>
+<p><code>..    web-property-id=eos</code></p>
 <ul>
 <li>Web property ID to which this goal belongs. The web property ID is of the form UA-XXXXX-YY.</li>
 </ul>
@@ -765,6 +947,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 </ul>
+              
             </div>
           </div>
           <footer>
@@ -782,9 +965,10 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   <hr/>
 
   <div role="contentinfo">
-    <p>
     <!-- Copyright etc -->
-    </p>
+    
+      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+    
   </div>
 
   Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
@@ -799,17 +983,17 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <div class="rst-versions" role="note" style="cursor: pointer">
     <span class="rst-current-version" data-toggle="rst-current-version">
-        
-            <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/analytics3-cli" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
-        
-      <span><a href="../management_goals-patch/" style="color: #fcfcfc;">&laquo; Previous</a></span>
-      <span style="margin-left: 15px"><a href="../management_profile-filter-links-delete/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+          <a class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../management_goals-patch/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../management_profile-filter-links-delete/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
     </span>
 </div>
 
-<!--
-MkDocs version  : 0.12.2
-Docs Build Date : 2015-06-21 14:30:31.691467
--->
 </body>
 </html>

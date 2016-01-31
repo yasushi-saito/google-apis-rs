@@ -9,6 +9,7 @@
 
     <title>lib.rs.html -- source</title>
 
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../../main.css">
 
     
@@ -24,17 +25,17 @@
 
     
 
-    <section class="sidebar">
+    <nav class="sidebar">
         
         
-    </section>
+    </nav>
 
     <nav class="sub">
         <form class="search-form js-only">
             <div class="search-container">
                 <input class="search-input" name="search"
                        autocomplete="off"
-                       placeholder="Click or press 'S' to search, '?' for more options..."
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
                        type="search">
             </div>
         </form>
@@ -290,12 +291,22 @@
 <span id="248">248</span>
 <span id="249">249</span>
 <span id="250">250</span>
+<span id="251">251</span>
+<span id="252">252</span>
+<span id="253">253</span>
+<span id="254">254</span>
+<span id="255">255</span>
+<span id="256">256</span>
+<span id="257">257</span>
+<span id="258">258</span>
+<span id="259">259</span>
+<span id="260">260</span>
 </pre><pre class='rust '>
 <span class='comment'>// DO NOT EDIT !</span>
 <span class='comment'>// This file was generated automatically from &#39;src/mako/api/lib.rs.mako&#39;</span>
 <span class='comment'>// DO NOT EDIT !</span>
 
-<span class='doccomment'>//! This documentation was generated from *YouTube* crate version *0.1.8+20150414*, where *20150414* is the exact revision of the *youtube:v3* schema built by the [mako](http://www.makotemplates.org/) code generator *v0.1.8*.</span>
+<span class='doccomment'>//! This documentation was generated from *YouTube* crate version *0.1.11+20160111*, where *20160111* is the exact revision of the *youtube:v3* schema built by the [mako](http://www.makotemplates.org/) code generator *v0.1.11*.</span>
 <span class='doccomment'>//! </span>
 <span class='doccomment'>//! Everything else about the *YouTube* *v3* API can be found at the</span>
 <span class='doccomment'>//! [official documentation site](https://developers.google.com/youtube/v3).</span>
@@ -318,6 +329,8 @@
 <span class='doccomment'>//!  * [*insert*](struct.CommentThreadInsertCall.html), [*list*](struct.CommentThreadListCall.html) and [*update*](struct.CommentThreadUpdateCall.html)</span>
 <span class='doccomment'>//! * [comments](struct.Comment.html)</span>
 <span class='doccomment'>//!  * [*delete*](struct.CommentDeleteCall.html), [*insert*](struct.CommentInsertCall.html), [*list*](struct.CommentListCall.html), [*mark as spam*](struct.CommentMarkAsSpamCall.html), [*set moderation status*](struct.CommentSetModerationStatuCall.html) and [*update*](struct.CommentUpdateCall.html)</span>
+<span class='doccomment'>//! * [fan funding events](struct.FanFundingEvent.html)</span>
+<span class='doccomment'>//!  * [*list*](struct.FanFundingEventListCall.html)</span>
 <span class='doccomment'>//! * [guide categories](struct.GuideCategory.html)</span>
 <span class='doccomment'>//!  * [*list*](struct.GuideCategoryListCall.html)</span>
 <span class='doccomment'>//! * [i18n languages](struct.I18nLanguage.html)</span>
@@ -326,6 +339,12 @@
 <span class='doccomment'>//!  * [*list*](struct.I18nRegionListCall.html)</span>
 <span class='doccomment'>//! * [live broadcasts](struct.LiveBroadcast.html)</span>
 <span class='doccomment'>//!  * [*bind*](struct.LiveBroadcastBindCall.html), [*control*](struct.LiveBroadcastControlCall.html), [*delete*](struct.LiveBroadcastDeleteCall.html), [*insert*](struct.LiveBroadcastInsertCall.html), [*list*](struct.LiveBroadcastListCall.html), [*transition*](struct.LiveBroadcastTransitionCall.html) and [*update*](struct.LiveBroadcastUpdateCall.html)</span>
+<span class='doccomment'>//! * [live chat bans](struct.LiveChatBan.html)</span>
+<span class='doccomment'>//!  * [*delete*](struct.LiveChatBanDeleteCall.html) and [*insert*](struct.LiveChatBanInsertCall.html)</span>
+<span class='doccomment'>//! * [live chat messages](struct.LiveChatMessage.html)</span>
+<span class='doccomment'>//!  * [*delete*](struct.LiveChatMessageDeleteCall.html), [*insert*](struct.LiveChatMessageInsertCall.html) and [*list*](struct.LiveChatMessageListCall.html)</span>
+<span class='doccomment'>//! * [live chat moderators](struct.LiveChatModerator.html)</span>
+<span class='doccomment'>//!  * [*delete*](struct.LiveChatModeratorDeleteCall.html), [*insert*](struct.LiveChatModeratorInsertCall.html) and [*list*](struct.LiveChatModeratorListCall.html)</span>
 <span class='doccomment'>//! * [live streams](struct.LiveStream.html)</span>
 <span class='doccomment'>//!  * [*delete*](struct.LiveStreamDeleteCall.html), [*insert*](struct.LiveStreamInsertCall.html), [*list*](struct.LiveStreamListCall.html) and [*update*](struct.LiveStreamUpdateCall.html)</span>
 <span class='doccomment'>//! * [playlist items](struct.PlaylistItem.html)</span>
@@ -334,6 +353,8 @@
 <span class='doccomment'>//!  * [*delete*](struct.PlaylistDeleteCall.html), [*insert*](struct.PlaylistInsertCall.html), [*list*](struct.PlaylistListCall.html) and [*update*](struct.PlaylistUpdateCall.html)</span>
 <span class='doccomment'>//! * search</span>
 <span class='doccomment'>//!  * [*list*](struct.SearchListCall.html)</span>
+<span class='doccomment'>//! * [sponsors](struct.Sponsor.html)</span>
+<span class='doccomment'>//!  * [*list*](struct.SponsorListCall.html)</span>
 <span class='doccomment'>//! * [subscriptions](struct.Subscription.html)</span>
 <span class='doccomment'>//!  * [*delete*](struct.SubscriptionDeleteCall.html), [*insert*](struct.SubscriptionInsertCall.html) and [*list*](struct.SubscriptionListCall.html)</span>
 <span class='doccomment'>//! * [thumbnails](struct.Thumbnail.html)</span>
@@ -350,12 +371,12 @@
 <span class='doccomment'>//! </span>
 <span class='doccomment'>//! Upload supported by ...</span>
 <span class='doccomment'>//! </span>
-<span class='doccomment'>//! * [*set watermarks*](struct.WatermarkSetCall.html)</span>
-<span class='doccomment'>//! * [*insert channel banners*](struct.ChannelBannerInsertCall.html)</span>
 <span class='doccomment'>//! * [*set thumbnails*](struct.ThumbnailSetCall.html)</span>
 <span class='doccomment'>//! * [*insert captions*](struct.CaptionInsertCall.html)</span>
-<span class='doccomment'>//! * [*update captions*](struct.CaptionUpdateCall.html)</span>
 <span class='doccomment'>//! * [*insert videos*](struct.VideoInsertCall.html)</span>
+<span class='doccomment'>//! * [*set watermarks*](struct.WatermarkSetCall.html)</span>
+<span class='doccomment'>//! * [*insert channel banners*](struct.ChannelBannerInsertCall.html)</span>
+<span class='doccomment'>//! * [*update captions*](struct.CaptionUpdateCall.html)</span>
 <span class='doccomment'>//! </span>
 <span class='doccomment'>//! Download supported by ...</span>
 <span class='doccomment'>//! </span>
@@ -450,16 +471,16 @@
 <span class='doccomment'>//! // execute the final call using `doit()`.</span>
 <span class='doccomment'>//! // Values shown here are possibly random and not representative !</span>
 <span class='doccomment'>//! let result = hub.videos().list(&quot;part&quot;)</span>
-<span class='doccomment'>//!              .video_category_id(&quot;erat&quot;)</span>
-<span class='doccomment'>//!              .region_code(&quot;amet.&quot;)</span>
-<span class='doccomment'>//!              .page_token(&quot;dolores&quot;)</span>
-<span class='doccomment'>//!              .on_behalf_of_content_owner(&quot;dolores&quot;)</span>
-<span class='doccomment'>//!              .my_rating(&quot;et&quot;)</span>
-<span class='doccomment'>//!              .max_results(59)</span>
-<span class='doccomment'>//!              .locale(&quot;et&quot;)</span>
-<span class='doccomment'>//!              .id(&quot;aliquyam&quot;)</span>
-<span class='doccomment'>//!              .hl(&quot;nonumy&quot;)</span>
-<span class='doccomment'>//!              .chart(&quot;sit&quot;)</span>
+<span class='doccomment'>//!              .video_category_id(&quot;sit&quot;)</span>
+<span class='doccomment'>//!              .region_code(&quot;amet&quot;)</span>
+<span class='doccomment'>//!              .page_token(&quot;eirmod&quot;)</span>
+<span class='doccomment'>//!              .on_behalf_of_content_owner(&quot;sanctus&quot;)</span>
+<span class='doccomment'>//!              .my_rating(&quot;Lorem&quot;)</span>
+<span class='doccomment'>//!              .max_results(100)</span>
+<span class='doccomment'>//!              .locale(&quot;diam&quot;)</span>
+<span class='doccomment'>//!              .id(&quot;eirmod&quot;)</span>
+<span class='doccomment'>//!              .hl(&quot;sadipscing&quot;)</span>
+<span class='doccomment'>//!              .chart(&quot;Lorem&quot;)</span>
 <span class='doccomment'>//!              .doit();</span>
 <span class='doccomment'>//! </span>
 <span class='doccomment'>//! match result {</span>
@@ -540,43 +561,55 @@
 <span class='comment'>// unused imports in fully featured APIs. Same with unused_mut ... .</span>
 <span class='attribute'>#<span class='op'>!</span>[<span class='ident'>allow</span>(<span class='ident'>unused_imports</span>, <span class='ident'>unused_mut</span>, <span class='ident'>dead_code</span>)]</span>
 
-<span class='macro'>include</span><span class='macro'>!</span>(<span class='macro'>concat</span><span class='macro'>!</span>(<span class='macro'>env</span><span class='macro'>!</span>(<span class='string'>&quot;OUT_DIR&quot;</span>), <span class='string'>&quot;/lib.rs&quot;</span>));
-</pre>
+<span class='macro'>include</span><span class='macro'>!</span>(<span class='macro'>concat</span><span class='macro'>!</span>(<span class='macro'>env</span><span class='macro'>!</span>(<span class='string'>&quot;OUT_DIR&quot;</span>), <span class='string'>&quot;/lib.rs&quot;</span>));</pre>
 </section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
 
-    <div id="help" class="hidden">
-        <div class="shortcuts">
-            <h1>Keyboard shortcuts</h1>
-            <dl>
-                <dt>?</dt>
-                <dd>Show this help dialog</dd>
-                <dt>S</dt>
-                <dd>Focus the search field</dd>
-                <dt>&larrb;</dt>
-                <dd>Move up in search results</dd>
-                <dt>&rarrb;</dt>
-                <dd>Move down in search results</dd>
-                <dt>&#9166;</dt>
-                <dd>Go to active search result</dd>
-            </dl>
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code>)
+                </p>
+            </div>
         </div>
-        <div class="infos">
-            <h1>Search tricks</h1>
-            <p>
-                Prefix searches with a type followed by a colon (e.g.
-                <code>fn:</code>) to restrict the search to a given type.
-            </p>
-            <p>
-                Accepted types are: <code>fn</code>, <code>mod</code>,
-                <code>struct</code>, <code>enum</code>,
-                <code>trait</code>, <code>typedef</code> (or
-                <code>tdef</code>).
-            </p>
-        </div>
-    </div>
+    </aside>
 
     
 
@@ -588,6 +621,6 @@
     <script src="../../jquery.js"></script>
     <script src="../../main.js"></script>
     
-    <script async src="../../search-index.js"></script>
+    <script defer src="../../search-index.js"></script>
 </body>
 </html>

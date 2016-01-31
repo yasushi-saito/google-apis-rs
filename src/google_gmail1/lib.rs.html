@@ -9,6 +9,7 @@
 
     <title>lib.rs.html -- source</title>
 
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../../main.css">
 
     
@@ -24,17 +25,17 @@
 
     
 
-    <section class="sidebar">
+    <nav class="sidebar">
         
         
-    </section>
+    </nav>
 
     <nav class="sub">
         <form class="search-form js-only">
             <div class="search-container">
                 <input class="search-input" name="search"
                        autocomplete="off"
-                       placeholder="Click or press 'S' to search, '?' for more options..."
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
                        type="search">
             </div>
         </form>
@@ -249,7 +250,7 @@
 <span class='comment'>// This file was generated automatically from &#39;src/mako/api/lib.rs.mako&#39;</span>
 <span class='comment'>// DO NOT EDIT !</span>
 
-<span class='doccomment'>//! This documentation was generated from *gmail* crate version *0.1.8+20150303*, where *20150303* is the exact revision of the *gmail:v1* schema built by the [mako](http://www.makotemplates.org/) code generator *v0.1.8*.</span>
+<span class='doccomment'>//! This documentation was generated from *gmail* crate version *0.1.11+20151214*, where *20151214* is the exact revision of the *gmail:v1* schema built by the [mako](http://www.makotemplates.org/) code generator *v0.1.11*.</span>
 <span class='doccomment'>//! </span>
 <span class='doccomment'>//! Everything else about the *gmail* *v1* API can be found at the</span>
 <span class='doccomment'>//! [official documentation site](https://developers.google.com/gmail/api/).</span>
@@ -259,7 +260,7 @@
 <span class='doccomment'>//! Handle the following *Resources* with ease from the central [hub](struct.Gmail.html) ... </span>
 <span class='doccomment'>//! </span>
 <span class='doccomment'>//! * users</span>
-<span class='doccomment'>//!  * [*drafts create*](struct.UserDraftCreateCall.html), [*drafts delete*](struct.UserDraftDeleteCall.html), [*drafts get*](struct.UserDraftGetCall.html), [*drafts list*](struct.UserDraftListCall.html), [*drafts send*](struct.UserDraftSendCall.html), [*drafts update*](struct.UserDraftUpdateCall.html), [*get profile*](struct.UserGetProfileCall.html), [*history list*](struct.UserHistoryListCall.html), [*labels create*](struct.UserLabelCreateCall.html), [*labels delete*](struct.UserLabelDeleteCall.html), [*labels get*](struct.UserLabelGetCall.html), [*labels list*](struct.UserLabelListCall.html), [*labels patch*](struct.UserLabelPatchCall.html), [*labels update*](struct.UserLabelUpdateCall.html), [*messages attachments get*](struct.UserMessageAttachmentGetCall.html), [*messages delete*](struct.UserMessageDeleteCall.html), [*messages get*](struct.UserMessageGetCall.html), [*messages import*](struct.UserMessageImportCall.html), [*messages insert*](struct.UserMessageInsertCall.html), [*messages list*](struct.UserMessageListCall.html), [*messages modify*](struct.UserMessageModifyCall.html), [*messages send*](struct.UserMessageSendCall.html), [*messages trash*](struct.UserMessageTrashCall.html), [*messages untrash*](struct.UserMessageUntrashCall.html), [*threads delete*](struct.UserThreadDeleteCall.html), [*threads get*](struct.UserThreadGetCall.html), [*threads list*](struct.UserThreadListCall.html), [*threads modify*](struct.UserThreadModifyCall.html), [*threads trash*](struct.UserThreadTrashCall.html) and [*threads untrash*](struct.UserThreadUntrashCall.html)</span>
+<span class='doccomment'>//!  * [*drafts create*](struct.UserDraftCreateCall.html), [*drafts delete*](struct.UserDraftDeleteCall.html), [*drafts get*](struct.UserDraftGetCall.html), [*drafts list*](struct.UserDraftListCall.html), [*drafts send*](struct.UserDraftSendCall.html), [*drafts update*](struct.UserDraftUpdateCall.html), [*get profile*](struct.UserGetProfileCall.html), [*history list*](struct.UserHistoryListCall.html), [*labels create*](struct.UserLabelCreateCall.html), [*labels delete*](struct.UserLabelDeleteCall.html), [*labels get*](struct.UserLabelGetCall.html), [*labels list*](struct.UserLabelListCall.html), [*labels patch*](struct.UserLabelPatchCall.html), [*labels update*](struct.UserLabelUpdateCall.html), [*messages attachments get*](struct.UserMessageAttachmentGetCall.html), [*messages delete*](struct.UserMessageDeleteCall.html), [*messages get*](struct.UserMessageGetCall.html), [*messages import*](struct.UserMessageImportCall.html), [*messages insert*](struct.UserMessageInsertCall.html), [*messages list*](struct.UserMessageListCall.html), [*messages modify*](struct.UserMessageModifyCall.html), [*messages send*](struct.UserMessageSendCall.html), [*messages trash*](struct.UserMessageTrashCall.html), [*messages untrash*](struct.UserMessageUntrashCall.html), [*stop*](struct.UserStopCall.html), [*threads delete*](struct.UserThreadDeleteCall.html), [*threads get*](struct.UserThreadGetCall.html), [*threads list*](struct.UserThreadListCall.html), [*threads modify*](struct.UserThreadModifyCall.html), [*threads trash*](struct.UserThreadTrashCall.html), [*threads untrash*](struct.UserThreadUntrashCall.html) and [*watch*](struct.UserWatchCall.html)</span>
 <span class='doccomment'>//! </span>
 <span class='doccomment'>//! </span>
 <span class='doccomment'>//! Upload supported by ...</span>
@@ -267,8 +268,8 @@
 <span class='doccomment'>//! * [*messages import users*](struct.UserMessageImportCall.html)</span>
 <span class='doccomment'>//! * [*drafts create users*](struct.UserDraftCreateCall.html)</span>
 <span class='doccomment'>//! * [*drafts send users*](struct.UserDraftSendCall.html)</span>
-<span class='doccomment'>//! * [*messages send users*](struct.UserMessageSendCall.html)</span>
 <span class='doccomment'>//! * [*drafts update users*](struct.UserDraftUpdateCall.html)</span>
+<span class='doccomment'>//! * [*messages send users*](struct.UserMessageSendCall.html)</span>
 <span class='doccomment'>//! * [*messages insert users*](struct.UserMessageInsertCall.html)</span>
 <span class='doccomment'>//! </span>
 <span class='doccomment'>//! </span>
@@ -365,9 +366,9 @@
 <span class='doccomment'>//! // Values shown here are possibly random and not representative !</span>
 <span class='doccomment'>//! let result = hub.users().messages_import(req, &quot;userId&quot;)</span>
 <span class='doccomment'>//!              .process_for_calendar(true)</span>
-<span class='doccomment'>//!              .never_mark_spam(false)</span>
-<span class='doccomment'>//!              .internal_date_source(&quot;nonumy&quot;)</span>
-<span class='doccomment'>//!              .deleted(true)</span>
+<span class='doccomment'>//!              .never_mark_spam(true)</span>
+<span class='doccomment'>//!              .internal_date_source(&quot;sanctus&quot;)</span>
+<span class='doccomment'>//!              .deleted(false)</span>
 <span class='doccomment'>//!              .upload(fs::File::open(&quot;file.ext&quot;).unwrap(), &quot;application/octet-stream&quot;.parse().unwrap());</span>
 <span class='doccomment'>//! </span>
 <span class='doccomment'>//! match result {</span>
@@ -448,43 +449,55 @@
 <span class='comment'>// unused imports in fully featured APIs. Same with unused_mut ... .</span>
 <span class='attribute'>#<span class='op'>!</span>[<span class='ident'>allow</span>(<span class='ident'>unused_imports</span>, <span class='ident'>unused_mut</span>, <span class='ident'>dead_code</span>)]</span>
 
-<span class='macro'>include</span><span class='macro'>!</span>(<span class='macro'>concat</span><span class='macro'>!</span>(<span class='macro'>env</span><span class='macro'>!</span>(<span class='string'>&quot;OUT_DIR&quot;</span>), <span class='string'>&quot;/lib.rs&quot;</span>));
-</pre>
+<span class='macro'>include</span><span class='macro'>!</span>(<span class='macro'>concat</span><span class='macro'>!</span>(<span class='macro'>env</span><span class='macro'>!</span>(<span class='string'>&quot;OUT_DIR&quot;</span>), <span class='string'>&quot;/lib.rs&quot;</span>));</pre>
 </section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
 
-    <div id="help" class="hidden">
-        <div class="shortcuts">
-            <h1>Keyboard shortcuts</h1>
-            <dl>
-                <dt>?</dt>
-                <dd>Show this help dialog</dd>
-                <dt>S</dt>
-                <dd>Focus the search field</dd>
-                <dt>&larrb;</dt>
-                <dd>Move up in search results</dd>
-                <dt>&rarrb;</dt>
-                <dd>Move down in search results</dd>
-                <dt>&#9166;</dt>
-                <dd>Go to active search result</dd>
-            </dl>
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code>)
+                </p>
+            </div>
         </div>
-        <div class="infos">
-            <h1>Search tricks</h1>
-            <p>
-                Prefix searches with a type followed by a colon (e.g.
-                <code>fn:</code>) to restrict the search to a given type.
-            </p>
-            <p>
-                Accepted types are: <code>fn</code>, <code>mod</code>,
-                <code>struct</code>, <code>enum</code>,
-                <code>trait</code>, <code>typedef</code> (or
-                <code>tdef</code>).
-            </p>
-        </div>
-    </div>
+    </aside>
 
     
 
@@ -496,6 +509,6 @@
     <script src="../../jquery.js"></script>
     <script src="../../main.js"></script>
     
-    <script async src="../../search-index.js"></script>
+    <script defer src="../../search-index.js"></script>
 </body>
 </html>

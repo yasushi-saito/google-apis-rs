@@ -1,1 +1,0 @@
-initSidebarItems({"type":[["Pass",""]],"struct":[["Registry",""]]});

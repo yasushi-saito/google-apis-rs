@@ -9,6 +9,7 @@
 
     <title>google_books1 - Rust</title>
 
+    <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
 
     
@@ -24,34 +25,35 @@
 
     
 
-    <section class="sidebar">
+    <nav class="sidebar">
         
         <p class='location'></p><script>window.sidebarCurrent = {name: 'google_books1', ty: 'mod', relpath: '../'};</script>
-    </section>
+    </nav>
 
     <nav class="sub">
         <form class="search-form js-only">
             <div class="search-container">
                 <input class="search-input" name="search"
                        autocomplete="off"
-                       placeholder="Click or press 'S' to search, '?' for more options..."
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
                        type="search">
             </div>
         </form>
     </nav>
 
     <section id='main' class="content mod">
-<h1 class='fqn'><span class='in-band'>Crate <a class='mod' href=''>google_books1</a><wbr></span><span class='out-of-band'><a href='stability.html'>[stability]</a> <span id='render-detail'>
-            <a id="collapse-all" href="#">[-]</a>&nbsp;<a id="expand-all" href="#">[+]</a>
-        </span><a id='src-0' href='../src/google_books1/lib.rs.html#5-212'>[src]</a></span></h1>
-<div class='docblock'><p>This documentation was generated from <em>books</em> crate version <em>0.1.8+20150401</em>, where <em>20150401</em> is the exact revision of the <em>books:v1</em> schema built by the <a href="http://www.makotemplates.org/">mako</a> code generator <em>v0.1.8</em>.</p>
+<h1 class='fqn'><span class='in-band'>Crate <a class='mod' href=''>google_books1</a></span><span class='out-of-band'><span id='render-detail'>
+            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                [<span class='inner'>&#x2212;</span>]
+            </a>
+        </span><a id='src-0' class='srclink' href='../src/google_books1/lib.rs.html#5-218' title='goto source code'>[src]</a></span></h1>
+<div class='docblock'><p>This documentation was generated from <em>books</em> crate version <em>0.1.11+20151218</em>, where <em>20151218</em> is the exact revision of the <em>books:v1</em> schema built by the <a href="http://www.makotemplates.org/">mako</a> code generator <em>v0.1.11</em>.</p>
 
 <p>Everything else about the <em>books</em> <em>v1</em> API can be found at the
 <a href="https://developers.google.com/books/docs/v1/getting_started">official documentation site</a>.
 The original source code is <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/books1">on github</a>.</p>
 
-<h1 id="features" class='section-header'><a
-                           href="#features">Features</a></h1>
+<h1 id='features' class='section-header'><a href='#features'>Features</a></h1>
 <p>Handle the following <em>Resources</em> with ease from the central <a href="struct.Books.html">hub</a> ... </p>
 
 <ul>
@@ -85,15 +87,30 @@ The original source code is <a href="https://github.com/Byron/google-apis-rs/tre
 <ul>
 <li><a href="struct.MylibraryAnnotationDeleteCall.html"><em>annotations delete</em></a>, <a href="struct.MylibraryAnnotationInsertCall.html"><em>annotations insert</em></a>, <a href="struct.MylibraryAnnotationListCall.html"><em>annotations list</em></a>, <a href="struct.MylibraryAnnotationSummaryCall.html"><em>annotations summary</em></a>, <a href="struct.MylibraryAnnotationUpdateCall.html"><em>annotations update</em></a>, <a href="struct.MylibraryBookshelveAddVolumeCall.html"><em>bookshelves add volume</em></a>, <a href="struct.MylibraryBookshelveClearVolumeCall.html"><em>bookshelves clear volumes</em></a>, <a href="struct.MylibraryBookshelveGetCall.html"><em>bookshelves get</em></a>, <a href="struct.MylibraryBookshelveListCall.html"><em>bookshelves list</em></a>, <a href="struct.MylibraryBookshelveMoveVolumeCall.html"><em>bookshelves move volume</em></a>, <a href="struct.MylibraryBookshelveRemoveVolumeCall.html"><em>bookshelves remove volume</em></a>, <a href="struct.MylibraryBookshelveVolumeListCall.html"><em>bookshelves volumes list</em></a>, <a href="struct.MylibraryReadingpositionGetCall.html"><em>readingpositions get</em></a> and <a href="struct.MylibraryReadingpositionSetPositionCall.html"><em>readingpositions set position</em></a></li>
 </ul></li>
+<li><a href="struct.Notification.html">notification</a>
+
+<ul>
+<li><a href="struct.NotificationGetCall.html"><em>get</em></a></li>
+</ul></li>
 <li>onboarding
 
 <ul>
 <li><a href="struct.OnboardingListCategoryCall.html"><em>list categories</em></a> and <a href="struct.OnboardingListCategoryVolumeCall.html"><em>list category volumes</em></a></li>
 </ul></li>
+<li>personalizedstream
+
+<ul>
+<li><a href="struct.PersonalizedstreamGetCall.html"><em>get</em></a></li>
+</ul></li>
 <li>promooffer
 
 <ul>
 <li><a href="struct.PromoofferAcceptCall.html"><em>accept</em></a>, <a href="struct.PromoofferDismisCall.html"><em>dismiss</em></a> and <a href="struct.PromoofferGetCall.html"><em>get</em></a></li>
+</ul></li>
+<li>series
+
+<ul>
+<li><a href="struct.SeryGetCall.html"><em>get</em></a> and <a href="struct.SeryMembershipGetCall.html"><em>membership get</em></a></li>
 </ul></li>
 <li><a href="struct.Volume.html">volumes</a>
 
@@ -104,8 +121,7 @@ The original source code is <a href="https://github.com/Byron/google-apis-rs/tre
 
 <p>Not what you are looking for ? Find all other Google APIs in their Rust <a href="../index.html">documentation index</a>.</p>
 
-<h1 id="structure-of-this-library" class='section-header'><a
-                           href="#structure-of-this-library">Structure of this Library</a></h1>
+<h1 id='structure-of-this-library' class='section-header'><a href='#structure-of-this-library'>Structure of this Library</a></h1>
 <p>The API is structured into the following primary items:</p>
 
 <ul>
@@ -138,12 +154,11 @@ allow access to individual <a href="trait.CallBuilder.html"><em>Call Builders</e
 <p>All <em>structures</em> are marked with applicable traits to further categorize them and ease browsing.</p>
 
 <p>Generally speaking, you can invoke <em>Activities</em> like this:</p>
-<pre id='rust-example-rendered' class='rust '>
-<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>resource</span>().<span class='ident'>activity</span>(...).<span class='ident'>doit</span>()
-</pre>
+<pre class='rust rust-example-rendered'>
+<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>resource</span>().<span class='ident'>activity</span>(...).<span class='ident'>doit</span>()</pre>
 
 <p>Or specifically ...</p>
-<pre id='rust-example-rendered' class='rust '>
+<pre class='rust rust-example-rendered'>
 <span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>volumes</span>().<span class='ident'>useruploaded_list</span>(...).<span class='ident'>doit</span>()
 <span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>myconfig</span>().<span class='ident'>sync_volume_licenses</span>(...).<span class='ident'>doit</span>()
 <span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>volumes</span>().<span class='ident'>list</span>(...).<span class='ident'>doit</span>()
@@ -151,26 +166,22 @@ allow access to individual <a href="trait.CallBuilder.html"><em>Call Builders</e
 <span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>bookshelves</span>().<span class='ident'>volumes_list</span>(...).<span class='ident'>doit</span>()
 <span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>volumes</span>().<span class='ident'>recommended_list</span>(...).<span class='ident'>doit</span>()
 <span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>mylibrary</span>().<span class='ident'>bookshelves_volumes_list</span>(...).<span class='ident'>doit</span>()
-<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>volumes</span>().<span class='ident'>mybooks_list</span>(...).<span class='ident'>doit</span>()
-</pre>
+<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>volumes</span>().<span class='ident'>mybooks_list</span>(...).<span class='ident'>doit</span>()</pre>
 
 <p>The <code>resource()</code> and <code>activity(...)</code> calls create <a href="http://en.wikipedia.org/wiki/Builder_pattern">builders</a>. The second one dealing with <code>Activities</code> 
 supports various methods to configure the impending operation (not shown here). It is made such that all required arguments have to be 
 specified right away (i.e. <code>(...)</code>), whereas all optional ones can be <a href="http://en.wikipedia.org/wiki/Builder_pattern">build up</a> as desired.
 The <code>doit()</code> method performs the actual communication with the server and returns the respective result.</p>
 
-<h1 id="usage" class='section-header'><a
-                           href="#usage">Usage</a></h1>
-<h2 id="setting-up-your-project" class='section-header'><a
-                           href="#setting-up-your-project">Setting up your Project</a></h2>
+<h1 id='usage' class='section-header'><a href='#usage'>Usage</a></h1>
+<h2 id='setting-up-your-project' class='section-header'><a href='#setting-up-your-project'>Setting up your Project</a></h2>
 <p>To use this library, you would put the following lines into your <code>Cargo.toml</code> file:</p>
 
 <pre><code class="language-toml">[dependencies]
 google-books1 = &quot;*&quot;
 </code></pre>
 
-<h2 id="a-complete-example" class='section-header'><a
-                           href="#a-complete-example">A complete example</a></h2><pre id='rust-example-rendered' class='rust '>
+<h2 id='a-complete-example' class='section-header'><a href='#a-complete-example'>A complete example</a></h2><pre class='rust rust-example-rendered'>
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>hyper</span>;
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>yup_oauth2</span> <span class='kw'>as</span> <span class='ident'>oauth2</span>;
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>google_books1</span> <span class='kw'>as</span> <span class='ident'>books1</span>;
@@ -195,18 +206,18 @@ google-books1 = &quot;*&quot;
 <span class='comment'>// execute the final call using `doit()`.</span>
 <span class='comment'>// Values shown here are possibly random and not representative !</span>
 <span class='kw'>let</span> <span class='ident'>result</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>volumes</span>().<span class='ident'>list</span>(<span class='string'>&quot;q&quot;</span>)
-             .<span class='ident'>start_index</span>(<span class='number'>76</span>)
-             .<span class='ident'>source</span>(<span class='string'>&quot;consetetur&quot;</span>)
-             .<span class='ident'>show_preorders</span>(<span class='boolval'>true</span>)
-             .<span class='ident'>projection</span>(<span class='string'>&quot;justo&quot;</span>)
-             .<span class='ident'>print_type</span>(<span class='string'>&quot;tempor&quot;</span>)
-             .<span class='ident'>partner</span>(<span class='string'>&quot;gubergren&quot;</span>)
-             .<span class='ident'>order_by</span>(<span class='string'>&quot;dolore&quot;</span>)
-             .<span class='ident'>max_results</span>(<span class='number'>50</span>)
-             .<span class='ident'>library_restrict</span>(<span class='string'>&quot;dolore&quot;</span>)
-             .<span class='ident'>lang_restrict</span>(<span class='string'>&quot;magna&quot;</span>)
-             .<span class='ident'>filter</span>(<span class='string'>&quot;elitr&quot;</span>)
-             .<span class='ident'>download</span>(<span class='string'>&quot;magna&quot;</span>)
+             .<span class='ident'>start_index</span>(<span class='number'>8</span>)
+             .<span class='ident'>source</span>(<span class='string'>&quot;diam&quot;</span>)
+             .<span class='ident'>show_preorders</span>(<span class='boolval'>false</span>)
+             .<span class='ident'>projection</span>(<span class='string'>&quot;dolor&quot;</span>)
+             .<span class='ident'>print_type</span>(<span class='string'>&quot;Lorem&quot;</span>)
+             .<span class='ident'>partner</span>(<span class='string'>&quot;dolor&quot;</span>)
+             .<span class='ident'>order_by</span>(<span class='string'>&quot;vero&quot;</span>)
+             .<span class='ident'>max_results</span>(<span class='number'>10</span>)
+             .<span class='ident'>library_restrict</span>(<span class='string'>&quot;takimata&quot;</span>)
+             .<span class='ident'>lang_restrict</span>(<span class='string'>&quot;dolores&quot;</span>)
+             .<span class='ident'>filter</span>(<span class='string'>&quot;consetetur&quot;</span>)
+             .<span class='ident'>download</span>(<span class='string'>&quot;erat&quot;</span>)
              .<span class='ident'>doit</span>();
  
 <span class='kw'>match</span> <span class='ident'>result</span> {
@@ -224,11 +235,9 @@ google-books1 = &quot;*&quot;
         <span class='op'>|</span><span class='ident'>Error</span>::<span class='ident'>JsonDecodeError</span>(_, _) <span class='op'>=&gt;</span> <span class='macro'>println</span><span class='macro'>!</span>(<span class='string'>&quot;{}&quot;</span>, <span class='ident'>e</span>),
     },
     <span class='prelude-val'>Ok</span>(<span class='ident'>res</span>) <span class='op'>=&gt;</span> <span class='macro'>println</span><span class='macro'>!</span>(<span class='string'>&quot;Success: {:?}&quot;</span>, <span class='ident'>res</span>),
-}
-</pre>
+}</pre>
 
-<h2 id="handling-errors" class='section-header'><a
-                           href="#handling-errors">Handling Errors</a></h2>
+<h2 id='handling-errors' class='section-header'><a href='#handling-errors'>Handling Errors</a></h2>
 <p>All errors produced by the system are provided either as <a href="enum.Result.html">Result</a> enumeration as return value of 
 the doit() methods, or handed as possibly intermediate results to either the 
 <a href="trait.Delegate.html">Hub Delegate</a>, or the <a href="../yup-oauth2/trait.AuthenticatorDelegate.html">Authenticator Delegate</a>.</p>
@@ -236,8 +245,7 @@ the doit() methods, or handed as possibly intermediate results to either the
 <p>When delegates handle errors or intermediate values, they may have a chance to instruct the system to retry. This 
 makes the system potentially resilient to all kinds of errors.</p>
 
-<h2 id="uploads-and-downloads" class='section-header'><a
-                           href="#uploads-and-downloads">Uploads and Downloads</a></h2>
+<h2 id='uploads-and-downloads' class='section-header'><a href='#uploads-and-downloads'>Uploads and Downloads</a></h2>
 <p>If a method supports downloads, the response body, which is part of the <a href="enum.Result.html">Result</a>, should be
 read by you to obtain the media.
 If such a method also supports a <a href="trait.ResponseResult.html">Response Result</a>, it will return that by default.
@@ -248,8 +256,7 @@ this call: <code>.param(&quot;alt&quot;, &quot;media&quot;)</code>.</p>
 <em>simple</em> and <em>resumable</em>. The distinctiveness of each is represented by customized 
 <code>doit(...)</code> methods, which are then named <code>upload(...)</code> and <code>upload_resumable(...)</code> respectively.</p>
 
-<h2 id="customization-and-callbacks" class='section-header'><a
-                           href="#customization-and-callbacks">Customization and Callbacks</a></h2>
+<h2 id='customization-and-callbacks' class='section-header'><a href='#customization-and-callbacks'>Customization and Callbacks</a></h2>
 <p>You may alter the way an <code>doit()</code> method is called by providing a <a href="trait.Delegate.html">delegate</a> to the 
 <a href="trait.CallBuilder.html">Method Builder</a> before making the final <code>doit()</code> call. 
 Respective methods will be called to provide progress information, as well as determine whether the system should 
@@ -257,16 +264,14 @@ retry on failure.</p>
 
 <p>The <a href="trait.Delegate.html">delegate trait</a> is default-implemented, allowing you to customize it with minimal effort.</p>
 
-<h2 id="optional-parts-in-server-requests" class='section-header'><a
-                           href="#optional-parts-in-server-requests">Optional Parts in Server-Requests</a></h2>
+<h2 id='optional-parts-in-server-requests' class='section-header'><a href='#optional-parts-in-server-requests'>Optional Parts in Server-Requests</a></h2>
 <p>All structures provided by this library are made to be <a href="trait.RequestValue.html">enocodable</a> and 
 <a href="trait.ResponseResult.html">decodable</a> via <em>json</em>. Optionals are used to indicate that partial requests are responses 
 are valid.
 Most optionals are are considered <a href="trait.Part.html">Parts</a> which are identifiable by name, which will be sent to 
 the server to indicate either the set parts of the request or the desired parts in the response.</p>
 
-<h2 id="builder-arguments" class='section-header'><a
-                           href="#builder-arguments">Builder Arguments</a></h2>
+<h2 id='builder-arguments' class='section-header'><a href='#builder-arguments'>Builder Arguments</a></h2>
 <p>Using <a href="trait.CallBuilder.html">method builders</a>, you are able to prepare an action call by repeatedly calling it&#39;s methods.
 These will always take a single argument, for which the following statements are true.</p>
 
@@ -279,998 +284,1453 @@ These will always take a single argument, for which the following statements are
 <p>Arguments will always be copied or cloned into the builder, to make them independent of their original life times.</p>
 </div><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
 <table>
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Annotation.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.Annotation.html'
                                title='google_books1::Annotation'>Annotation</a></td>
-                        <td class='docblock short'><p>There is no detailed description.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>There is no detailed description.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AnnotationClientVersionRanges.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.AnnotationClientVersionRanges.html'
                                title='google_books1::AnnotationClientVersionRanges'>AnnotationClientVersionRanges</a></td>
-                        <td class='docblock short'><p>Selection ranges sent from the client.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Selection ranges sent from the client.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AnnotationCurrentVersionRanges.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.AnnotationCurrentVersionRanges.html'
                                title='google_books1::AnnotationCurrentVersionRanges'>AnnotationCurrentVersionRanges</a></td>
-                        <td class='docblock short'><p>Selection ranges for the most recent content version.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Selection ranges for the most recent content version.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AnnotationLayerSummary.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.AnnotationLayerSummary.html'
                                title='google_books1::AnnotationLayerSummary'>AnnotationLayerSummary</a></td>
-                        <td class='docblock short'><p>There is no detailed description.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>There is no detailed description.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Annotationdata.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.Annotationdata.html'
                                title='google_books1::Annotationdata'>Annotationdata</a></td>
-                        <td class='docblock short'><p>There is no detailed description.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>There is no detailed description.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Annotations.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.Annotations.html'
                                title='google_books1::Annotations'>Annotations</a></td>
-                        <td class='docblock short'><p>There is no detailed description.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>There is no detailed description.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AnnotationsSummary.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.AnnotationsSummary.html'
                                title='google_books1::AnnotationsSummary'>AnnotationsSummary</a></td>
-                        <td class='docblock short'><p>There is no detailed description.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>There is no detailed description.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AnnotationsSummaryLayers.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.AnnotationsSummaryLayers.html'
                                title='google_books1::AnnotationsSummaryLayers'>AnnotationsSummaryLayers</a></td>
-                        <td class='docblock short'><p>There is no detailed description.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>There is no detailed description.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Annotationsdata.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.Annotationsdata.html'
                                title='google_books1::Annotationsdata'>Annotationsdata</a></td>
-                        <td class='docblock short'><p>There is no detailed description.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>There is no detailed description.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Books.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.Books.html'
                                title='google_books1::Books'>Books</a></td>
-                        <td class='docblock short'><p>Central instance to access all Books related resource activities</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Central instance to access all Books related resource activities</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.BooksAnnotationsRange.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.BooksAnnotationsRange.html'
                                title='google_books1::BooksAnnotationsRange'>BooksAnnotationsRange</a></td>
-                        <td class='docblock short'><p>There is no detailed description.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>There is no detailed description.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.BooksCloudloadingResource.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.BooksCloudloadingResource.html'
                                title='google_books1::BooksCloudloadingResource'>BooksCloudloadingResource</a></td>
-                        <td class='docblock short'><p>There is no detailed description.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>There is no detailed description.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.BooksVolumesRecommendedRateResponse.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.BooksVolumesRecommendedRateResponse.html'
                                title='google_books1::BooksVolumesRecommendedRateResponse'>BooksVolumesRecommendedRateResponse</a></td>
-                        <td class='docblock short'><p>There is no detailed description.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>There is no detailed description.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Bookshelf.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.Bookshelf.html'
                                title='google_books1::Bookshelf'>Bookshelf</a></td>
-                        <td class='docblock short'><p>There is no detailed description.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>There is no detailed description.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.BookshelveGetCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.BookshelveGetCall.html'
                                title='google_books1::BookshelveGetCall'>BookshelveGetCall</a></td>
-                        <td class='docblock short'><p>Retrieves metadata for a specific bookshelf for the specified user.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Retrieves metadata for a specific bookshelf for the specified user.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.BookshelveListCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.BookshelveListCall.html'
                                title='google_books1::BookshelveListCall'>BookshelveListCall</a></td>
-                        <td class='docblock short'><p>Retrieves a list of public bookshelves for the specified user.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Retrieves a list of public bookshelves for the specified user.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.BookshelveMethods.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.BookshelveMethods.html'
                                title='google_books1::BookshelveMethods'>BookshelveMethods</a></td>
-                        <td class='docblock short'><p>A builder providing access to all methods supported on <em>bookshelve</em> resources.
+                        <td class='docblock short'>
+                             <p>A builder providing access to all methods supported on <em>bookshelve</em> resources.
 It is not used directly, but through the <code>Books</code> hub.</p>
-</td>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.BookshelveVolumeListCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.BookshelveVolumeListCall.html'
                                title='google_books1::BookshelveVolumeListCall'>BookshelveVolumeListCall</a></td>
-                        <td class='docblock short'><p>Retrieves volumes in a specific bookshelf for the specified user.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Retrieves volumes in a specific bookshelf for the specified user.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Bookshelves.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.Bookshelves.html'
                                title='google_books1::Bookshelves'>Bookshelves</a></td>
-                        <td class='docblock short'><p>There is no detailed description.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>There is no detailed description.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Category.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.Category.html'
                                title='google_books1::Category'>Category</a></td>
-                        <td class='docblock short'><p>There is no detailed description.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>There is no detailed description.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.CategoryItems.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.CategoryItems.html'
                                title='google_books1::CategoryItems'>CategoryItems</a></td>
-                        <td class='docblock short'><p>A list of onboarding categories.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>A list of onboarding categories.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.CloudloadingAddBookCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.CloudloadingAddBookCall.html'
                                title='google_books1::CloudloadingAddBookCall'>CloudloadingAddBookCall</a></td>
-                        <td class='docblock short'></td>
+                        <td class='docblock short'>
+                             
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.CloudloadingDeleteBookCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.CloudloadingDeleteBookCall.html'
                                title='google_books1::CloudloadingDeleteBookCall'>CloudloadingDeleteBookCall</a></td>
-                        <td class='docblock short'><p>Remove the book and its contents</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Remove the book and its contents</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.CloudloadingMethods.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.CloudloadingMethods.html'
                                title='google_books1::CloudloadingMethods'>CloudloadingMethods</a></td>
-                        <td class='docblock short'><p>A builder providing access to all methods supported on <em>cloudloading</em> resources.
+                        <td class='docblock short'>
+                             <p>A builder providing access to all methods supported on <em>cloudloading</em> resources.
 It is not used directly, but through the <code>Books</code> hub.</p>
-</td>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.CloudloadingUpdateBookCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.CloudloadingUpdateBookCall.html'
                                title='google_books1::CloudloadingUpdateBookCall'>CloudloadingUpdateBookCall</a></td>
-                        <td class='docblock short'></td>
+                        <td class='docblock short'>
+                             
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ConcurrentAccessRestriction.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.ConcurrentAccessRestriction.html'
                                title='google_books1::ConcurrentAccessRestriction'>ConcurrentAccessRestriction</a></td>
-                        <td class='docblock short'><p>There is no detailed description.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>There is no detailed description.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.DefaultDelegate.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.DefaultDelegate.html'
                                title='google_books1::DefaultDelegate'>DefaultDelegate</a></td>
-                        <td class='docblock short'><p>A delegate with a conservative default implementation, which is used if no other delegate is
+                        <td class='docblock short'>
+                             <p>A delegate with a conservative default implementation, which is used if no other delegate is
 set.</p>
-</td>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.DictionaryListOfflineMetadataCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.DictionaryListOfflineMetadataCall.html'
                                title='google_books1::DictionaryListOfflineMetadataCall'>DictionaryListOfflineMetadataCall</a></td>
-                        <td class='docblock short'><p>Returns a list of offline dictionary meatadata available</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Returns a list of offline dictionary metadata available</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.DictionaryMethods.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.DictionaryMethods.html'
                                title='google_books1::DictionaryMethods'>DictionaryMethods</a></td>
-                        <td class='docblock short'><p>A builder providing access to all methods supported on <em>dictionary</em> resources.
+                        <td class='docblock short'>
+                             <p>A builder providing access to all methods supported on <em>dictionary</em> resources.
 It is not used directly, but through the <code>Books</code> hub.</p>
-</td>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.DownloadAccessRestriction.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.Discoveryclusters.html'
+                               title='google_books1::Discoveryclusters'>Discoveryclusters</a></td>
+                        <td class='docblock short'>
+                             <p>There is no detailed description.</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.DiscoveryclustersClusters.html'
+                               title='google_books1::DiscoveryclustersClusters'>DiscoveryclustersClusters</a></td>
+                        <td class='docblock short'>
+                             <p>There is no detailed description.</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.DiscoveryclustersClustersBannerWithContentContainer.html'
+                               title='google_books1::DiscoveryclustersClustersBannerWithContentContainer'>DiscoveryclustersClustersBannerWithContentContainer</a></td>
+                        <td class='docblock short'>
+                             <p>There is no detailed description.</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.DownloadAccessRestriction.html'
                                title='google_books1::DownloadAccessRestriction'>DownloadAccessRestriction</a></td>
-                        <td class='docblock short'><p>There is no detailed description.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>There is no detailed description.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.DownloadAccesses.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.DownloadAccesses.html'
                                title='google_books1::DownloadAccesses'>DownloadAccesses</a></td>
-                        <td class='docblock short'><p>There is no detailed description.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>There is no detailed description.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ErrorResponse.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.ErrorResponse.html'
                                title='google_books1::ErrorResponse'>ErrorResponse</a></td>
-                        <td class='docblock short'><p>A utility to represent detailed errors we might see in case there are BadRequests.
+                        <td class='docblock short'>
+                             <p>A utility to represent detailed errors we might see in case there are BadRequests.
 The latter happen if the sent parameters or request structures are unsound</p>
-</td>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.LayerAnnotationDataGetCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.LayerAnnotationDataGetCall.html'
                                title='google_books1::LayerAnnotationDataGetCall'>LayerAnnotationDataGetCall</a></td>
-                        <td class='docblock short'><p>Gets the annotation data.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Gets the annotation data.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.LayerAnnotationDataListCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.LayerAnnotationDataListCall.html'
                                title='google_books1::LayerAnnotationDataListCall'>LayerAnnotationDataListCall</a></td>
-                        <td class='docblock short'><p>Gets the annotation data for a volume and layer.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Gets the annotation data for a volume and layer.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.LayerGetCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.LayerGetCall.html'
                                title='google_books1::LayerGetCall'>LayerGetCall</a></td>
-                        <td class='docblock short'><p>Gets the layer summary for a volume.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Gets the layer summary for a volume.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.LayerListCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.LayerListCall.html'
                                title='google_books1::LayerListCall'>LayerListCall</a></td>
-                        <td class='docblock short'><p>List the layer summaries for a volume.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>List the layer summaries for a volume.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.LayerMethods.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.LayerMethods.html'
                                title='google_books1::LayerMethods'>LayerMethods</a></td>
-                        <td class='docblock short'><p>A builder providing access to all methods supported on <em>layer</em> resources.
+                        <td class='docblock short'>
+                             <p>A builder providing access to all methods supported on <em>layer</em> resources.
 It is not used directly, but through the <code>Books</code> hub.</p>
-</td>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.LayerVolumeAnnotationGetCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.LayerVolumeAnnotationGetCall.html'
                                title='google_books1::LayerVolumeAnnotationGetCall'>LayerVolumeAnnotationGetCall</a></td>
-                        <td class='docblock short'><p>Gets the volume annotation.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Gets the volume annotation.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.LayerVolumeAnnotationListCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.LayerVolumeAnnotationListCall.html'
                                title='google_books1::LayerVolumeAnnotationListCall'>LayerVolumeAnnotationListCall</a></td>
-                        <td class='docblock short'><p>Gets the volume annotations for a volume and layer.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Gets the volume annotations for a volume and layer.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Layersummaries.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.Layersummaries.html'
                                title='google_books1::Layersummaries'>Layersummaries</a></td>
-                        <td class='docblock short'><p>There is no detailed description.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>There is no detailed description.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Layersummary.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.Layersummary.html'
                                title='google_books1::Layersummary'>Layersummary</a></td>
-                        <td class='docblock short'><p>There is no detailed description.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>There is no detailed description.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Metadata.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.Metadata.html'
                                title='google_books1::Metadata'>Metadata</a></td>
-                        <td class='docblock short'><p>There is no detailed description.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>There is no detailed description.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.MetadataItems.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.MetadataItems.html'
                                title='google_books1::MetadataItems'>MetadataItems</a></td>
-                        <td class='docblock short'><p>A list of offline dictionary metadata.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>A list of offline dictionary metadata.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.MethodInfo.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.MethodInfo.html'
                                title='google_books1::MethodInfo'>MethodInfo</a></td>
-                        <td class='docblock short'><p>Contains information about an API request.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Contains information about an API request.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.MultiPartReader.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.MultiPartReader.html'
                                title='google_books1::MultiPartReader'>MultiPartReader</a></td>
-                        <td class='docblock short'><p>Provides a <code>Read</code> interface that converts multiple parts into the protocol
+                        <td class='docblock short'>
+                             <p>Provides a <code>Read</code> interface that converts multiple parts into the protocol
 identified by <a href="https://tools.ietf.org/html/rfc2387">RFC2387</a>.
 <strong>Note</strong>: This implementation is just as rich as it needs to be to perform uploads
 to google APIs, and might not be a fully-featured implementation.</p>
-</td>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.MyconfigGetUserSettingCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.MyconfigGetUserSettingCall.html'
                                title='google_books1::MyconfigGetUserSettingCall'>MyconfigGetUserSettingCall</a></td>
-                        <td class='docblock short'><p>Gets the current settings for the user.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Gets the current settings for the user.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.MyconfigMethods.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.MyconfigMethods.html'
                                title='google_books1::MyconfigMethods'>MyconfigMethods</a></td>
-                        <td class='docblock short'><p>A builder providing access to all methods supported on <em>myconfig</em> resources.
+                        <td class='docblock short'>
+                             <p>A builder providing access to all methods supported on <em>myconfig</em> resources.
 It is not used directly, but through the <code>Books</code> hub.</p>
-</td>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.MyconfigReleaseDownloadAccesCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.MyconfigReleaseDownloadAccesCall.html'
                                title='google_books1::MyconfigReleaseDownloadAccesCall'>MyconfigReleaseDownloadAccesCall</a></td>
-                        <td class='docblock short'><p>Release downloaded content access restriction.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Release downloaded content access restriction.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.MyconfigRequestAccesCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.MyconfigRequestAccesCall.html'
                                title='google_books1::MyconfigRequestAccesCall'>MyconfigRequestAccesCall</a></td>
-                        <td class='docblock short'><p>Request concurrent and download access restrictions.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Request concurrent and download access restrictions.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.MyconfigSyncVolumeLicenseCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.MyconfigSyncVolumeLicenseCall.html'
                                title='google_books1::MyconfigSyncVolumeLicenseCall'>MyconfigSyncVolumeLicenseCall</a></td>
-                        <td class='docblock short'><p>Request downloaded content access for specified volumes on the My eBooks shelf.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Request downloaded content access for specified volumes on the My eBooks shelf.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.MyconfigUpdateUserSettingCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.MyconfigUpdateUserSettingCall.html'
                                title='google_books1::MyconfigUpdateUserSettingCall'>MyconfigUpdateUserSettingCall</a></td>
-                        <td class='docblock short'><p>Sets the settings for the user. If a sub-object is specified, it will overwrite the existing sub-object stored in the server. Unspecified sub-objects will retain the existing value.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Sets the settings for the user. If a sub-object is specified, it will overwrite the existing sub-object stored in the server. Unspecified sub-objects will retain the existing value.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.MylibraryAnnotationDeleteCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.MylibraryAnnotationDeleteCall.html'
                                title='google_books1::MylibraryAnnotationDeleteCall'>MylibraryAnnotationDeleteCall</a></td>
-                        <td class='docblock short'><p>Deletes an annotation.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Deletes an annotation.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.MylibraryAnnotationInsertCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.MylibraryAnnotationInsertCall.html'
                                title='google_books1::MylibraryAnnotationInsertCall'>MylibraryAnnotationInsertCall</a></td>
-                        <td class='docblock short'><p>Inserts a new annotation.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Inserts a new annotation.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.MylibraryAnnotationListCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.MylibraryAnnotationListCall.html'
                                title='google_books1::MylibraryAnnotationListCall'>MylibraryAnnotationListCall</a></td>
-                        <td class='docblock short'><p>Retrieves a list of annotations, possibly filtered.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Retrieves a list of annotations, possibly filtered.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.MylibraryAnnotationSummaryCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.MylibraryAnnotationSummaryCall.html'
                                title='google_books1::MylibraryAnnotationSummaryCall'>MylibraryAnnotationSummaryCall</a></td>
-                        <td class='docblock short'><p>Gets the summary of specified layers.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Gets the summary of specified layers.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.MylibraryAnnotationUpdateCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.MylibraryAnnotationUpdateCall.html'
                                title='google_books1::MylibraryAnnotationUpdateCall'>MylibraryAnnotationUpdateCall</a></td>
-                        <td class='docblock short'><p>Updates an existing annotation.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Updates an existing annotation.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.MylibraryBookshelveAddVolumeCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.MylibraryBookshelveAddVolumeCall.html'
                                title='google_books1::MylibraryBookshelveAddVolumeCall'>MylibraryBookshelveAddVolumeCall</a></td>
-                        <td class='docblock short'><p>Adds a volume to a bookshelf.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Adds a volume to a bookshelf.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.MylibraryBookshelveClearVolumeCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.MylibraryBookshelveClearVolumeCall.html'
                                title='google_books1::MylibraryBookshelveClearVolumeCall'>MylibraryBookshelveClearVolumeCall</a></td>
-                        <td class='docblock short'><p>Clears all volumes from a bookshelf.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Clears all volumes from a bookshelf.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.MylibraryBookshelveGetCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.MylibraryBookshelveGetCall.html'
                                title='google_books1::MylibraryBookshelveGetCall'>MylibraryBookshelveGetCall</a></td>
-                        <td class='docblock short'><p>Retrieves metadata for a specific bookshelf belonging to the authenticated user.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Retrieves metadata for a specific bookshelf belonging to the authenticated user.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.MylibraryBookshelveListCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.MylibraryBookshelveListCall.html'
                                title='google_books1::MylibraryBookshelveListCall'>MylibraryBookshelveListCall</a></td>
-                        <td class='docblock short'><p>Retrieves a list of bookshelves belonging to the authenticated user.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Retrieves a list of bookshelves belonging to the authenticated user.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.MylibraryBookshelveMoveVolumeCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.MylibraryBookshelveMoveVolumeCall.html'
                                title='google_books1::MylibraryBookshelveMoveVolumeCall'>MylibraryBookshelveMoveVolumeCall</a></td>
-                        <td class='docblock short'><p>Moves a volume within a bookshelf.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Moves a volume within a bookshelf.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.MylibraryBookshelveRemoveVolumeCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.MylibraryBookshelveRemoveVolumeCall.html'
                                title='google_books1::MylibraryBookshelveRemoveVolumeCall'>MylibraryBookshelveRemoveVolumeCall</a></td>
-                        <td class='docblock short'><p>Removes a volume from a bookshelf.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Removes a volume from a bookshelf.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.MylibraryBookshelveVolumeListCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.MylibraryBookshelveVolumeListCall.html'
                                title='google_books1::MylibraryBookshelveVolumeListCall'>MylibraryBookshelveVolumeListCall</a></td>
-                        <td class='docblock short'><p>Gets volume information for volumes on a bookshelf.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Gets volume information for volumes on a bookshelf.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.MylibraryMethods.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.MylibraryMethods.html'
                                title='google_books1::MylibraryMethods'>MylibraryMethods</a></td>
-                        <td class='docblock short'><p>A builder providing access to all methods supported on <em>mylibrary</em> resources.
+                        <td class='docblock short'>
+                             <p>A builder providing access to all methods supported on <em>mylibrary</em> resources.
 It is not used directly, but through the <code>Books</code> hub.</p>
-</td>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.MylibraryReadingpositionGetCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.MylibraryReadingpositionGetCall.html'
                                title='google_books1::MylibraryReadingpositionGetCall'>MylibraryReadingpositionGetCall</a></td>
-                        <td class='docblock short'><p>Retrieves my reading position information for a volume.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Retrieves my reading position information for a volume.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.MylibraryReadingpositionSetPositionCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.MylibraryReadingpositionSetPositionCall.html'
                                title='google_books1::MylibraryReadingpositionSetPositionCall'>MylibraryReadingpositionSetPositionCall</a></td>
-                        <td class='docblock short'><p>Sets my reading position information for a volume.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Sets my reading position information for a volume.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Offers.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.Notification.html'
+                               title='google_books1::Notification'>Notification</a></td>
+                        <td class='docblock short'>
+                             <p>There is no detailed description.</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.NotificationGetCall.html'
+                               title='google_books1::NotificationGetCall'>NotificationGetCall</a></td>
+                        <td class='docblock short'>
+                             <p>Returns notification details for a given notification id.</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.NotificationMethods.html'
+                               title='google_books1::NotificationMethods'>NotificationMethods</a></td>
+                        <td class='docblock short'>
+                             <p>A builder providing access to all methods supported on <em>notification</em> resources.
+It is not used directly, but through the <code>Books</code> hub.</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.Offers.html'
                                title='google_books1::Offers'>Offers</a></td>
-                        <td class='docblock short'><p>There is no detailed description.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>There is no detailed description.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.OffersItems.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.OffersItems.html'
                                title='google_books1::OffersItems'>OffersItems</a></td>
-                        <td class='docblock short'><p>A list of offers.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>A list of offers.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.OffersItemsItems.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.OffersItemsItems.html'
                                title='google_books1::OffersItemsItems'>OffersItemsItems</a></td>
-                        <td class='docblock short'><p>There is no detailed description.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>There is no detailed description.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.OnboardingListCategoryCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.OnboardingListCategoryCall.html'
                                title='google_books1::OnboardingListCategoryCall'>OnboardingListCategoryCall</a></td>
-                        <td class='docblock short'><p>List categories for onboarding experience.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>List categories for onboarding experience.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.OnboardingListCategoryVolumeCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.OnboardingListCategoryVolumeCall.html'
                                title='google_books1::OnboardingListCategoryVolumeCall'>OnboardingListCategoryVolumeCall</a></td>
-                        <td class='docblock short'><p>List available volumes under categories for onboarding experience.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>List available volumes under categories for onboarding experience.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.OnboardingMethods.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.OnboardingMethods.html'
                                title='google_books1::OnboardingMethods'>OnboardingMethods</a></td>
-                        <td class='docblock short'><p>A builder providing access to all methods supported on <em>onboarding</em> resources.
+                        <td class='docblock short'>
+                             <p>A builder providing access to all methods supported on <em>onboarding</em> resources.
 It is not used directly, but through the <code>Books</code> hub.</p>
-</td>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.PromoofferAcceptCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.PersonalizedstreamGetCall.html'
+                               title='google_books1::PersonalizedstreamGetCall'>PersonalizedstreamGetCall</a></td>
+                        <td class='docblock short'>
+                             <p>Returns a stream of personalized book clusters</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.PersonalizedstreamMethods.html'
+                               title='google_books1::PersonalizedstreamMethods'>PersonalizedstreamMethods</a></td>
+                        <td class='docblock short'>
+                             <p>A builder providing access to all methods supported on <em>personalizedstream</em> resources.
+It is not used directly, but through the <code>Books</code> hub.</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.PromoofferAcceptCall.html'
                                title='google_books1::PromoofferAcceptCall'>PromoofferAcceptCall</a></td>
-                        <td class='docblock short'></td>
+                        <td class='docblock short'>
+                             
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.PromoofferDismisCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.PromoofferDismisCall.html'
                                title='google_books1::PromoofferDismisCall'>PromoofferDismisCall</a></td>
-                        <td class='docblock short'></td>
+                        <td class='docblock short'>
+                             
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.PromoofferGetCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.PromoofferGetCall.html'
                                title='google_books1::PromoofferGetCall'>PromoofferGetCall</a></td>
-                        <td class='docblock short'><p>Returns a list of promo offers available to the user</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Returns a list of promo offers available to the user</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.PromoofferMethods.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.PromoofferMethods.html'
                                title='google_books1::PromoofferMethods'>PromoofferMethods</a></td>
-                        <td class='docblock short'><p>A builder providing access to all methods supported on <em>promooffer</em> resources.
+                        <td class='docblock short'>
+                             <p>A builder providing access to all methods supported on <em>promooffer</em> resources.
 It is not used directly, but through the <code>Books</code> hub.</p>
-</td>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ReadingPosition.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.ReadingPosition.html'
                                title='google_books1::ReadingPosition'>ReadingPosition</a></td>
-                        <td class='docblock short'><p>There is no detailed description.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>There is no detailed description.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.RequestAccess.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.RequestAccess.html'
                                title='google_books1::RequestAccess'>RequestAccess</a></td>
-                        <td class='docblock short'><p>There is no detailed description.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>There is no detailed description.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Review.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.Review.html'
                                title='google_books1::Review'>Review</a></td>
-                        <td class='docblock short'><p>There is no detailed description.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>There is no detailed description.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ReviewAuthor.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.ReviewAuthor.html'
                                title='google_books1::ReviewAuthor'>ReviewAuthor</a></td>
-                        <td class='docblock short'><p>Author of this review.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Author of this review.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.ReviewSource.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.ReviewSource.html'
                                title='google_books1::ReviewSource'>ReviewSource</a></td>
-                        <td class='docblock short'><p>Information regarding the source of this review, when the review is not from a Google Books user.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Information regarding the source of this review, when the review is not from a Google Books user.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Usersettings.html'
-                               title='google_books1::Usersettings'>Usersettings</a></td>
-                        <td class='docblock short'><p>There is no detailed description.</p>
-</td>
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.Series.html'
+                               title='google_books1::Series'>Series</a></td>
+                        <td class='docblock short'>
+                             <p>There is no detailed description.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.UsersettingsNotesExport.html'
-                               title='google_books1::UsersettingsNotesExport'>UsersettingsNotesExport</a></td>
-                        <td class='docblock short'><p>User settings in sub-objects, each for different purposes.</p>
-</td>
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.SeriesSeries.html'
+                               title='google_books1::SeriesSeries'>SeriesSeries</a></td>
+                        <td class='docblock short'>
+                             <p>There is no detailed description.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Volume.html'
-                               title='google_books1::Volume'>Volume</a></td>
-                        <td class='docblock short'><p>There is no detailed description.</p>
-</td>
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.Seriesmembership.html'
+                               title='google_books1::Seriesmembership'>Seriesmembership</a></td>
+                        <td class='docblock short'>
+                             <p>There is no detailed description.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Volume2.html'
-                               title='google_books1::Volume2'>Volume2</a></td>
-                        <td class='docblock short'><p>There is no detailed description.</p>
-</td>
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.SeryGetCall.html'
+                               title='google_books1::SeryGetCall'>SeryGetCall</a></td>
+                        <td class='docblock short'>
+                             <p>Returns Series metadata for the given series ids.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.VolumeAccessInfo.html'
-                               title='google_books1::VolumeAccessInfo'>VolumeAccessInfo</a></td>
-                        <td class='docblock short'><p>Any information about a volume related to reading or obtaining that volume text. This information can depend on country (books may be public domain in one country but not in another, e.g.).</p>
-</td>
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.SeryMembershipGetCall.html'
+                               title='google_books1::SeryMembershipGetCall'>SeryMembershipGetCall</a></td>
+                        <td class='docblock short'>
+                             <p>Returns Series membership data given the series id.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.VolumeAccessInfoEpub.html'
-                               title='google_books1::VolumeAccessInfoEpub'>VolumeAccessInfoEpub</a></td>
-                        <td class='docblock short'><p>Information about epub content. (In LITE projection.)</p>
-</td>
-                    </tr>
-                
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.VolumeAccessInfoPdf.html'
-                               title='google_books1::VolumeAccessInfoPdf'>VolumeAccessInfoPdf</a></td>
-                        <td class='docblock short'><p>Information about pdf content. (In LITE projection.)</p>
-</td>
-                    </tr>
-                
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.VolumeAssociatedListCall.html'
-                               title='google_books1::VolumeAssociatedListCall'>VolumeAssociatedListCall</a></td>
-                        <td class='docblock short'><p>Return a list of associated books.</p>
-</td>
-                    </tr>
-                
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.VolumeGetCall.html'
-                               title='google_books1::VolumeGetCall'>VolumeGetCall</a></td>
-                        <td class='docblock short'><p>Gets volume information for a single volume.</p>
-</td>
-                    </tr>
-                
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.VolumeLayerInfo.html'
-                               title='google_books1::VolumeLayerInfo'>VolumeLayerInfo</a></td>
-                        <td class='docblock short'><p>What layers exist in this volume and high level information about them.</p>
-</td>
-                    </tr>
-                
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.VolumeLayerInfoLayers.html'
-                               title='google_books1::VolumeLayerInfoLayers'>VolumeLayerInfoLayers</a></td>
-                        <td class='docblock short'><p>A layer should appear here if and only if the layer exists for this book.</p>
-</td>
-                    </tr>
-                
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.VolumeListCall.html'
-                               title='google_books1::VolumeListCall'>VolumeListCall</a></td>
-                        <td class='docblock short'><p>Performs a book search.</p>
-</td>
-                    </tr>
-                
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.VolumeMethods.html'
-                               title='google_books1::VolumeMethods'>VolumeMethods</a></td>
-                        <td class='docblock short'><p>A builder providing access to all methods supported on <em>volume</em> resources.
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.SeryMethods.html'
+                               title='google_books1::SeryMethods'>SeryMethods</a></td>
+                        <td class='docblock short'>
+                             <p>A builder providing access to all methods supported on <em>sery</em> resources.
 It is not used directly, but through the <code>Books</code> hub.</p>
-</td>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.VolumeMybookListCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.Usersettings.html'
+                               title='google_books1::Usersettings'>Usersettings</a></td>
+                        <td class='docblock short'>
+                             <p>There is no detailed description.</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.UsersettingsNotesExport.html'
+                               title='google_books1::UsersettingsNotesExport'>UsersettingsNotesExport</a></td>
+                        <td class='docblock short'>
+                             <p>User settings in sub-objects, each for different purposes.</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.UsersettingsNotification.html'
+                               title='google_books1::UsersettingsNotification'>UsersettingsNotification</a></td>
+                        <td class='docblock short'>
+                             <p>There is no detailed description.</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.UsersettingsNotificationMoreFromAuthors.html'
+                               title='google_books1::UsersettingsNotificationMoreFromAuthors'>UsersettingsNotificationMoreFromAuthors</a></td>
+                        <td class='docblock short'>
+                             <p>There is no detailed description.</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.Volume.html'
+                               title='google_books1::Volume'>Volume</a></td>
+                        <td class='docblock short'>
+                             <p>There is no detailed description.</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.Volume2.html'
+                               title='google_books1::Volume2'>Volume2</a></td>
+                        <td class='docblock short'>
+                             <p>There is no detailed description.</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.VolumeAccessInfo.html'
+                               title='google_books1::VolumeAccessInfo'>VolumeAccessInfo</a></td>
+                        <td class='docblock short'>
+                             <p>Any information about a volume related to reading or obtaining that volume text. This information can depend on country (books may be public domain in one country but not in another, e.g.).</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.VolumeAccessInfoEpub.html'
+                               title='google_books1::VolumeAccessInfoEpub'>VolumeAccessInfoEpub</a></td>
+                        <td class='docblock short'>
+                             <p>Information about epub content. (In LITE projection.)</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.VolumeAccessInfoPdf.html'
+                               title='google_books1::VolumeAccessInfoPdf'>VolumeAccessInfoPdf</a></td>
+                        <td class='docblock short'>
+                             <p>Information about pdf content. (In LITE projection.)</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.VolumeAssociatedListCall.html'
+                               title='google_books1::VolumeAssociatedListCall'>VolumeAssociatedListCall</a></td>
+                        <td class='docblock short'>
+                             <p>Return a list of associated books.</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.VolumeGetCall.html'
+                               title='google_books1::VolumeGetCall'>VolumeGetCall</a></td>
+                        <td class='docblock short'>
+                             <p>Gets volume information for a single volume.</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.VolumeLayerInfo.html'
+                               title='google_books1::VolumeLayerInfo'>VolumeLayerInfo</a></td>
+                        <td class='docblock short'>
+                             <p>What layers exist in this volume and high level information about them.</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.VolumeLayerInfoLayers.html'
+                               title='google_books1::VolumeLayerInfoLayers'>VolumeLayerInfoLayers</a></td>
+                        <td class='docblock short'>
+                             <p>A layer should appear here if and only if the layer exists for this book.</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.VolumeListCall.html'
+                               title='google_books1::VolumeListCall'>VolumeListCall</a></td>
+                        <td class='docblock short'>
+                             <p>Performs a book search.</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.VolumeMethods.html'
+                               title='google_books1::VolumeMethods'>VolumeMethods</a></td>
+                        <td class='docblock short'>
+                             <p>A builder providing access to all methods supported on <em>volume</em> resources.
+It is not used directly, but through the <code>Books</code> hub.</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.VolumeMybookListCall.html'
                                title='google_books1::VolumeMybookListCall'>VolumeMybookListCall</a></td>
-                        <td class='docblock short'><p>Return a list of books in My Library.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Return a list of books in My Library.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.VolumeRecommendedInfo.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.VolumeRecommendedInfo.html'
                                title='google_books1::VolumeRecommendedInfo'>VolumeRecommendedInfo</a></td>
-                        <td class='docblock short'><p>Recommendation related information for this volume.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Recommendation related information for this volume.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.VolumeRecommendedListCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.VolumeRecommendedListCall.html'
                                title='google_books1::VolumeRecommendedListCall'>VolumeRecommendedListCall</a></td>
-                        <td class='docblock short'><p>Return a list of recommended books for the current user.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Return a list of recommended books for the current user.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.VolumeRecommendedRateCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.VolumeRecommendedRateCall.html'
                                title='google_books1::VolumeRecommendedRateCall'>VolumeRecommendedRateCall</a></td>
-                        <td class='docblock short'><p>Rate a recommended book for the current user.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Rate a recommended book for the current user.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.VolumeSaleInfo.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.VolumeSaleInfo.html'
                                title='google_books1::VolumeSaleInfo'>VolumeSaleInfo</a></td>
-                        <td class='docblock short'><p>Any information about a volume related to the eBookstore and/or purchaseability. This information can depend on the country where the request originates from (i.e. books may not be for sale in certain countries).</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Any information about a volume related to the eBookstore and/or purchaseability. This information can depend on the country where the request originates from (i.e. books may not be for sale in certain countries).</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.VolumeSaleInfoListPrice.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.VolumeSaleInfoListPrice.html'
                                title='google_books1::VolumeSaleInfoListPrice'>VolumeSaleInfoListPrice</a></td>
-                        <td class='docblock short'><p>Suggested retail price. (In LITE projection.)</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Suggested retail price. (In LITE projection.)</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.VolumeSaleInfoOffers.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.VolumeSaleInfoOffers.html'
                                title='google_books1::VolumeSaleInfoOffers'>VolumeSaleInfoOffers</a></td>
-                        <td class='docblock short'><p>Offers available for this volume (sales and rentals).</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Offers available for this volume (sales and rentals).</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.VolumeSaleInfoOffersListPrice.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.VolumeSaleInfoOffersListPrice.html'
                                title='google_books1::VolumeSaleInfoOffersListPrice'>VolumeSaleInfoOffersListPrice</a></td>
-                        <td class='docblock short'><p>Offer list (=undiscounted) price in Micros.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Offer list (=undiscounted) price in Micros.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.VolumeSaleInfoOffersRentalDuration.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.VolumeSaleInfoOffersRentalDuration.html'
                                title='google_books1::VolumeSaleInfoOffersRentalDuration'>VolumeSaleInfoOffersRentalDuration</a></td>
-                        <td class='docblock short'><p>The rental duration (for rental offers only).</p>
-</td>
+                        <td class='docblock short'>
+                             <p>The rental duration (for rental offers only).</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.VolumeSaleInfoOffersRetailPrice.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.VolumeSaleInfoOffersRetailPrice.html'
                                title='google_books1::VolumeSaleInfoOffersRetailPrice'>VolumeSaleInfoOffersRetailPrice</a></td>
-                        <td class='docblock short'><p>Offer retail (=discounted) price in Micros</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Offer retail (=discounted) price in Micros</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.VolumeSaleInfoRetailPrice.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.VolumeSaleInfoRetailPrice.html'
                                title='google_books1::VolumeSaleInfoRetailPrice'>VolumeSaleInfoRetailPrice</a></td>
-                        <td class='docblock short'><p>The actual selling price of the book. This is the same as the suggested retail or list price unless there are offers or discounts on this volume. (In LITE projection.)</p>
-</td>
+                        <td class='docblock short'>
+                             <p>The actual selling price of the book. This is the same as the suggested retail or list price unless there are offers or discounts on this volume. (In LITE projection.)</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.VolumeSearchInfo.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.VolumeSearchInfo.html'
                                title='google_books1::VolumeSearchInfo'>VolumeSearchInfo</a></td>
-                        <td class='docblock short'><p>Search result information related to this volume.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Search result information related to this volume.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.VolumeUserInfo.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.VolumeUserInfo.html'
                                title='google_books1::VolumeUserInfo'>VolumeUserInfo</a></td>
-                        <td class='docblock short'><p>User specific information related to this volume. (e.g. page this user last read or whether they purchased this book)</p>
-</td>
+                        <td class='docblock short'>
+                             <p>User specific information related to this volume. (e.g. page this user last read or whether they purchased this book)</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.VolumeUserInfoCopy.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.VolumeUserInfoCopy.html'
                                title='google_books1::VolumeUserInfoCopy'>VolumeUserInfoCopy</a></td>
-                        <td class='docblock short'><p>Copy/Paste accounting information.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Copy/Paste accounting information.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.VolumeUserInfoRentalPeriod.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.VolumeUserInfoRentalPeriod.html'
                                title='google_books1::VolumeUserInfoRentalPeriod'>VolumeUserInfoRentalPeriod</a></td>
-                        <td class='docblock short'><p>Period during this book is/was a valid rental.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Period during this book is/was a valid rental.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.VolumeUserInfoUserUploadedVolumeInfo.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.VolumeUserInfoUserUploadedVolumeInfo.html'
                                title='google_books1::VolumeUserInfoUserUploadedVolumeInfo'>VolumeUserInfoUserUploadedVolumeInfo</a></td>
-                        <td class='docblock short'><p>There is no detailed description.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>There is no detailed description.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.VolumeUseruploadedListCall.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.VolumeUseruploadedListCall.html'
                                title='google_books1::VolumeUseruploadedListCall'>VolumeUseruploadedListCall</a></td>
-                        <td class='docblock short'><p>Return a list of books uploaded by the current user.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Return a list of books uploaded by the current user.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.VolumeVolumeInfo.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.VolumeVolumeInfo.html'
                                title='google_books1::VolumeVolumeInfo'>VolumeVolumeInfo</a></td>
-                        <td class='docblock short'><p>General volume information.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>General volume information.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.VolumeVolumeInfoDimensions.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.VolumeVolumeInfoDimensions.html'
                                title='google_books1::VolumeVolumeInfoDimensions'>VolumeVolumeInfoDimensions</a></td>
-                        <td class='docblock short'><p>Physical dimensions of this volume.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Physical dimensions of this volume.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.VolumeVolumeInfoImageLinks.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.VolumeVolumeInfoImageLinks.html'
                                title='google_books1::VolumeVolumeInfoImageLinks'>VolumeVolumeInfoImageLinks</a></td>
-                        <td class='docblock short'><p>A list of image links for all the sizes that are available. (In LITE projection.)</p>
-</td>
+                        <td class='docblock short'>
+                             <p>A list of image links for all the sizes that are available. (In LITE projection.)</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.VolumeVolumeInfoIndustryIdentifiers.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.VolumeVolumeInfoIndustryIdentifiers.html'
                                title='google_books1::VolumeVolumeInfoIndustryIdentifiers'>VolumeVolumeInfoIndustryIdentifiers</a></td>
-                        <td class='docblock short'><p>Industry standard identifiers for this volume.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Industry standard identifiers for this volume.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Volumeannotation.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.Volumeannotation.html'
                                title='google_books1::Volumeannotation'>Volumeannotation</a></td>
-                        <td class='docblock short'><p>There is no detailed description.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>There is no detailed description.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.VolumeannotationContentRanges.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.VolumeannotationContentRanges.html'
                                title='google_books1::VolumeannotationContentRanges'>VolumeannotationContentRanges</a></td>
-                        <td class='docblock short'><p>The content ranges to identify the selected text.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>The content ranges to identify the selected text.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Volumeannotations.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.Volumeannotations.html'
                                title='google_books1::Volumeannotations'>Volumeannotations</a></td>
-                        <td class='docblock short'><p>There is no detailed description.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>There is no detailed description.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Volumes.html'
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.Volumes.html'
                                title='google_books1::Volumes'>Volumes</a></td>
-                        <td class='docblock short'><p>There is no detailed description.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>There is no detailed description.</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.Volumeseriesinfo.html'
+                               title='google_books1::Volumeseriesinfo'>Volumeseriesinfo</a></td>
+                        <td class='docblock short'>
+                             <p>There is no detailed description.</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.VolumeseriesinfoVolumeSeries.html'
+                               title='google_books1::VolumeseriesinfoVolumeSeries'>VolumeseriesinfoVolumeSeries</a></td>
+                        <td class='docblock short'>
+                             <p>There is no detailed description.</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.VolumeseriesinfoVolumeSeriesIssue.html'
+                               title='google_books1::VolumeseriesinfoVolumeSeriesIssue'>VolumeseriesinfoVolumeSeriesIssue</a></td>
+                        <td class='docblock short'>
+                             <p>List of issues. Applicable only for Collection Edition and Omnibus.</p>
+
+                        </td>
                     </tr>
                 </table><h2 id='enums' class='section-header'><a href="#enums">Enums</a></h2>
 <table>
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='enum' href='enum.Error.html'
+                    <tr class=' module-item'>
+                        <td><a class='enum' href='enum.Error.html'
                                title='google_books1::Error'>Error</a></td>
-                        <td class='docblock short'></td>
+                        <td class='docblock short'>
+                             
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='enum' href='enum.Scope.html'
+                    <tr class=' module-item'>
+                        <td><a class='enum' href='enum.Scope.html'
                                title='google_books1::Scope'>Scope</a></td>
-                        <td class='docblock short'><p>Identifies the an OAuth2 authorization scope.
+                        <td class='docblock short'>
+                             <p>Identifies the an OAuth2 authorization scope.
 A scope is needed when requesting an
 <a href="https://developers.google.com/youtube/v3/guides/authentication">authorization token</a>.</p>
-</td>
+
+                        </td>
                     </tr>
                 </table><h2 id='traits' class='section-header'><a href="#traits">Traits</a></h2>
 <table>
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.CallBuilder.html'
+                    <tr class=' module-item'>
+                        <td><a class='trait' href='trait.CallBuilder.html'
                                title='google_books1::CallBuilder'>CallBuilder</a></td>
-                        <td class='docblock short'><p>Identifies types which represent builders for a particular resource method</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Identifies types which represent builders for a particular resource method</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.Delegate.html'
+                    <tr class=' module-item'>
+                        <td><a class='trait' href='trait.Delegate.html'
                                title='google_books1::Delegate'>Delegate</a></td>
-                        <td class='docblock short'><p>A trait specifying functionality to help controlling any request performed by the API.
+                        <td class='docblock short'>
+                             <p>A trait specifying functionality to help controlling any request performed by the API.
 The trait has a conservative default implementation.</p>
-</td>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.Hub.html'
+                    <tr class=' module-item'>
+                        <td><a class='trait' href='trait.Hub.html'
                                title='google_books1::Hub'>Hub</a></td>
-                        <td class='docblock short'><p>Identifies the Hub. There is only one per library, this trait is supposed
+                        <td class='docblock short'>
+                             <p>Identifies the Hub. There is only one per library, this trait is supposed
 to make intended use more explicit.
 The hub allows to access all resource methods more easily.</p>
-</td>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.MethodsBuilder.html'
+                    <tr class=' module-item'>
+                        <td><a class='trait' href='trait.MethodsBuilder.html'
                                title='google_books1::MethodsBuilder'>MethodsBuilder</a></td>
-                        <td class='docblock short'><p>Identifies types for building methods of a particular resource type</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Identifies types for building methods of a particular resource type</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.NestedType.html'
+                    <tr class=' module-item'>
+                        <td><a class='trait' href='trait.NestedType.html'
                                title='google_books1::NestedType'>NestedType</a></td>
-                        <td class='docblock short'><p>Identifies types which are only used by other types internally.
+                        <td class='docblock short'>
+                             <p>Identifies types which are only used by other types internally.
 They have no special meaning, this trait just marks them for completeness.</p>
-</td>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.Part.html'
+                    <tr class=' module-item'>
+                        <td><a class='trait' href='trait.Part.html'
                                title='google_books1::Part'>Part</a></td>
-                        <td class='docblock short'><p>Identifies types which are only used as part of other types, which
+                        <td class='docblock short'>
+                             <p>Identifies types which are only used as part of other types, which
 usually are carrying the <code>Resource</code> trait.</p>
-</td>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.ReadSeek.html'
+                    <tr class=' module-item'>
+                        <td><a class='trait' href='trait.ReadSeek.html'
                                title='google_books1::ReadSeek'>ReadSeek</a></td>
-                        <td class='docblock short'><p>A utility to specify reader types which provide seeking capabilities too</p>
-</td>
+                        <td class='docblock short'>
+                             <p>A utility to specify reader types which provide seeking capabilities too</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.RequestValue.html'
+                    <tr class=' module-item'>
+                        <td><a class='trait' href='trait.RequestValue.html'
                                title='google_books1::RequestValue'>RequestValue</a></td>
-                        <td class='docblock short'><p>Identifies types which are used in API requests.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Identifies types which are used in API requests.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.Resource.html'
+                    <tr class=' module-item'>
+                        <td><a class='trait' href='trait.Resource.html'
                                title='google_books1::Resource'>Resource</a></td>
-                        <td class='docblock short'><p>Identifies types which can be inserted and deleted.
+                        <td class='docblock short'>
+                             <p>Identifies types which can be inserted and deleted.
 Types with this trait are most commonly used by clients of this API.</p>
-</td>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.ResponseResult.html'
+                    <tr class=' module-item'>
+                        <td><a class='trait' href='trait.ResponseResult.html'
                                title='google_books1::ResponseResult'>ResponseResult</a></td>
-                        <td class='docblock short'><p>Identifies types which are used in API responses.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>Identifies types which are used in API responses.</p>
+
+                        </td>
                     </tr>
                 
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.ToParts.html'
+                    <tr class=' module-item'>
+                        <td><a class='trait' href='trait.ToParts.html'
                                title='google_books1::ToParts'>ToParts</a></td>
-                        <td class='docblock short'><p>A trait for all types that can convert themselves into a <em>parts</em> string</p>
-</td>
+                        <td class='docblock short'>
+                             <p>A trait for all types that can convert themselves into a <em>parts</em> string</p>
+
+                        </td>
                     </tr>
                 </table><h2 id='functions' class='section-header'><a href="#functions">Functions</a></h2>
 <table>
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.remove_json_null_values.html'
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.remove_json_null_values.html'
                                title='google_books1::remove_json_null_values'>remove_json_null_values</a></td>
-                        <td class='docblock short'></td>
+                        <td class='docblock short'>
+                             
+                        </td>
                     </tr>
                 </table><h2 id='types' class='section-header'><a href="#types">Type Definitions</a></h2>
 <table>
-                    <tr>
-                        <td><a class='stability Unmarked' title='No stability level'></a><a class='type' href='type.Result.html'
+                    <tr class=' module-item'>
+                        <td><a class='type' href='type.Result.html'
                                title='google_books1::Result'>Result</a></td>
-                        <td class='docblock short'><p>A universal result type used as return for all calls.</p>
-</td>
+                        <td class='docblock short'>
+                             <p>A universal result type used as return for all calls.</p>
+
+                        </td>
                     </tr>
                 </table></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
 
-    <div id="help" class="hidden">
-        <div class="shortcuts">
-            <h1>Keyboard shortcuts</h1>
-            <dl>
-                <dt>?</dt>
-                <dd>Show this help dialog</dd>
-                <dt>S</dt>
-                <dd>Focus the search field</dd>
-                <dt>&larrb;</dt>
-                <dd>Move up in search results</dd>
-                <dt>&rarrb;</dt>
-                <dd>Move down in search results</dd>
-                <dt>&#9166;</dt>
-                <dd>Go to active search result</dd>
-            </dl>
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code>)
+                </p>
+            </div>
         </div>
-        <div class="infos">
-            <h1>Search tricks</h1>
-            <p>
-                Prefix searches with a type followed by a colon (e.g.
-                <code>fn:</code>) to restrict the search to a given type.
-            </p>
-            <p>
-                Accepted types are: <code>fn</code>, <code>mod</code>,
-                <code>struct</code>, <code>enum</code>,
-                <code>trait</code>, <code>typedef</code> (or
-                <code>tdef</code>).
-            </p>
-        </div>
-    </div>
+    </aside>
 
     
 
@@ -1282,6 +1742,6 @@ Types with this trait are most commonly used by clients of this API.</p>
     <script src="../jquery.js"></script>
     <script src="../main.js"></script>
     
-    <script async src="../search-index.js"></script>
+    <script defer src="../search-index.js"></script>
 </body>
 </html>

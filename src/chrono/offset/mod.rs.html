@@ -4,11 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="rustdoc">
-    <meta name="description" content="Source to the Rust file `/home/byron/.multirust/toolchains/stable/cargo/registry/src/github.com-0a35038f75765ae4/chrono-0.2.14/src/offset/mod.rs`.">
+    <meta name="description" content="Source to the Rust file `/Users/byron/.multirust/toolchains/stable/cargo/registry/src/github.com-88ac128001ac3a9a/chrono-0.2.18/src/offset/mod.rs`.">
     <meta name="keywords" content="rust, rustlang, rust-lang">
 
     <title>mod.rs.html -- source</title>
 
+    <link rel="stylesheet" type="text/css" href="../../../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../../../main.css">
 
     
@@ -24,17 +25,17 @@
 
     
 
-    <section class="sidebar">
+    <nav class="sidebar">
         
         
-    </section>
+    </nav>
 
     <nav class="sub">
         <form class="search-form js-only">
             <div class="search-container">
                 <input class="search-input" name="search"
                        autocomplete="off"
-                       placeholder="Click or press 'S' to search, '?' for more options..."
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
                        type="search">
             </div>
         </form>
@@ -373,6 +374,7 @@
 <span id="331">331</span>
 <span id="332">332</span>
 <span id="333">333</span>
+<span id="334">334</span>
 </pre><pre class='rust '>
 <span class='comment'>// This is a part of rust-chrono.</span>
 <span class='comment'>// Copyright (c) 2014-2015, Kang Seonghoon.</span>
@@ -521,7 +523,7 @@
 }
 
 <span class='kw'>impl</span><span class='op'>&lt;</span><span class='ident'>T</span>: <span class='ident'>fmt</span>::<span class='ident'>Debug</span><span class='op'>&gt;</span> <span class='ident'>LocalResult</span><span class='op'>&lt;</span><span class='ident'>T</span><span class='op'>&gt;</span> {
-    <span class='doccomment'>/// Returns the single unique conversion result, or fails accordingly.</span>
+    <span class='doccomment'>/// Returns the single unique conversion result, or panics accordingly.</span>
     <span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>unwrap</span>(<span class='self'>self</span>) <span class='op'>-&gt;</span> <span class='ident'>T</span> {
         <span class='kw'>match</span> <span class='self'>self</span> {
             <span class='ident'>LocalResult</span>::<span class='prelude-val'>None</span> <span class='op'>=&gt;</span> <span class='macro'>panic</span><span class='macro'>!</span>(<span class='string'>&quot;No such local time&quot;</span>),
@@ -552,7 +554,7 @@
     <span class='doccomment'>/// The time zone normally does not affect the date (unless it is between UTC-24 and UTC+24),</span>
     <span class='doccomment'>/// but it will propagate to the `DateTime` values constructed via this date.</span>
     <span class='doccomment'>///</span>
-    <span class='doccomment'>/// Fails on the out-of-range date, invalid month and/or day.</span>
+    <span class='doccomment'>/// Panics on the out-of-range date, invalid month and/or day.</span>
     <span class='kw'>fn</span> <span class='ident'>ymd</span>(<span class='kw-2'>&amp;</span><span class='self'>self</span>, <span class='ident'>year</span>: <span class='ident'>i32</span>, <span class='ident'>month</span>: <span class='ident'>u32</span>, <span class='ident'>day</span>: <span class='ident'>u32</span>) <span class='op'>-&gt;</span> <span class='ident'>Date</span><span class='op'>&lt;</span><span class='kw'>Self</span><span class='op'>&gt;</span> {
         <span class='self'>self</span>.<span class='ident'>ymd_opt</span>(<span class='ident'>year</span>, <span class='ident'>month</span>, <span class='ident'>day</span>).<span class='ident'>unwrap</span>()
     }
@@ -577,7 +579,7 @@
     <span class='doccomment'>/// The time zone normally does not affect the date (unless it is between UTC-24 and UTC+24),</span>
     <span class='doccomment'>/// but it will propagate to the `DateTime` values constructed via this date.</span>
     <span class='doccomment'>///</span>
-    <span class='doccomment'>/// Fails on the out-of-range date and/or invalid DOY.</span>
+    <span class='doccomment'>/// Panics on the out-of-range date and/or invalid DOY.</span>
     <span class='kw'>fn</span> <span class='ident'>yo</span>(<span class='kw-2'>&amp;</span><span class='self'>self</span>, <span class='ident'>year</span>: <span class='ident'>i32</span>, <span class='ident'>ordinal</span>: <span class='ident'>u32</span>) <span class='op'>-&gt;</span> <span class='ident'>Date</span><span class='op'>&lt;</span><span class='kw'>Self</span><span class='op'>&gt;</span> {
         <span class='self'>self</span>.<span class='ident'>yo_opt</span>(<span class='ident'>year</span>, <span class='ident'>ordinal</span>).<span class='ident'>unwrap</span>()
     }
@@ -604,7 +606,7 @@
     <span class='doccomment'>/// The time zone normally does not affect the date (unless it is between UTC-24 and UTC+24),</span>
     <span class='doccomment'>/// but it will propagate to the `DateTime` values constructed via this date.</span>
     <span class='doccomment'>///</span>
-    <span class='doccomment'>/// Fails on the out-of-range date and/or invalid week number.</span>
+    <span class='doccomment'>/// Panics on the out-of-range date and/or invalid week number.</span>
     <span class='kw'>fn</span> <span class='ident'>isoywd</span>(<span class='kw-2'>&amp;</span><span class='self'>self</span>, <span class='ident'>year</span>: <span class='ident'>i32</span>, <span class='ident'>week</span>: <span class='ident'>u32</span>, <span class='ident'>weekday</span>: <span class='ident'>Weekday</span>) <span class='op'>-&gt;</span> <span class='ident'>Date</span><span class='op'>&lt;</span><span class='kw'>Self</span><span class='op'>&gt;</span> {
         <span class='self'>self</span>.<span class='ident'>isoywd_opt</span>(<span class='ident'>year</span>, <span class='ident'>week</span>, <span class='ident'>weekday</span>).<span class='ident'>unwrap</span>()
     }
@@ -629,7 +631,7 @@
     <span class='doccomment'>/// since January 1, 1970 0:00:00 UTC (aka &quot;UNIX timestamp&quot;)</span>
     <span class='doccomment'>/// and the number of nanoseconds since the last whole non-leap second.</span>
     <span class='doccomment'>///</span>
-    <span class='doccomment'>/// Fails on the out-of-range number of seconds and/or invalid nanosecond.</span>
+    <span class='doccomment'>/// Panics on the out-of-range number of seconds and/or invalid nanosecond.</span>
     <span class='kw'>fn</span> <span class='ident'>timestamp</span>(<span class='kw-2'>&amp;</span><span class='self'>self</span>, <span class='ident'>secs</span>: <span class='ident'>i64</span>, <span class='ident'>nsecs</span>: <span class='ident'>u32</span>) <span class='op'>-&gt;</span> <span class='ident'>DateTime</span><span class='op'>&lt;</span><span class='kw'>Self</span><span class='op'>&gt;</span> {
         <span class='self'>self</span>.<span class='ident'>timestamp_opt</span>(<span class='ident'>secs</span>, <span class='ident'>nsecs</span>).<span class='ident'>unwrap</span>()
     }
@@ -648,7 +650,8 @@
 
     <span class='doccomment'>/// Parses a string with the specified format string and</span>
     <span class='doccomment'>/// returns a `DateTime` with the current offset.</span>
-    <span class='doccomment'>/// See the `format::strftime` module on the supported escape sequences.</span>
+    <span class='doccomment'>/// See the [`format::strftime` module](../../format/strftime/index.html)</span>
+    <span class='doccomment'>/// on the supported escape sequences.</span>
     <span class='doccomment'>///</span>
     <span class='doccomment'>/// If the format does not include offsets, the current offset is assumed;</span>
     <span class='doccomment'>/// otherwise the input should have a matching UTC offset.</span>
@@ -713,36 +716,49 @@
 
     <section class="footer"></section>
 
-    <div id="help" class="hidden">
-        <div class="shortcuts">
-            <h1>Keyboard shortcuts</h1>
-            <dl>
-                <dt>?</dt>
-                <dd>Show this help dialog</dd>
-                <dt>S</dt>
-                <dd>Focus the search field</dd>
-                <dt>&larrb;</dt>
-                <dd>Move up in search results</dd>
-                <dt>&rarrb;</dt>
-                <dd>Move down in search results</dd>
-                <dt>&#9166;</dt>
-                <dd>Go to active search result</dd>
-            </dl>
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code>)
+                </p>
+            </div>
         </div>
-        <div class="infos">
-            <h1>Search tricks</h1>
-            <p>
-                Prefix searches with a type followed by a colon (e.g.
-                <code>fn:</code>) to restrict the search to a given type.
-            </p>
-            <p>
-                Accepted types are: <code>fn</code>, <code>mod</code>,
-                <code>struct</code>, <code>enum</code>,
-                <code>trait</code>, <code>typedef</code> (or
-                <code>tdef</code>).
-            </p>
-        </div>
-    </div>
+    </aside>
 
     
 
@@ -754,6 +770,6 @@
     <script src="../../../jquery.js"></script>
     <script src="../../../main.js"></script>
     
-    <script async src="../../../search-index.js"></script>
+    <script defer src="../../../search-index.js"></script>
 </body>
 </html>

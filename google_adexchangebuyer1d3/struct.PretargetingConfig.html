@@ -9,6 +9,7 @@
 
     <title>google_adexchangebuyer1d3::PretargetingConfig - Rust</title>
 
+    <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
 
     
@@ -24,54 +25,55 @@
 
     
 
-    <section class="sidebar">
+    <nav class="sidebar">
         
         <p class='location'><a href='index.html'>google_adexchangebuyer1d3</a></p><script>window.sidebarCurrent = {name: 'PretargetingConfig', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
-    </section>
+    </nav>
 
     <nav class="sub">
         <form class="search-form js-only">
             <div class="search-container">
                 <input class="search-input" name="search"
                        autocomplete="off"
-                       placeholder="Click or press 'S' to search, '?' for more options..."
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
                        type="search">
             </div>
         </form>
     </nav>
 
     <section id='main' class="content struct">
-<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_adexchangebuyer1d3</a>::<wbr><a class='struct' href=''>PretargetingConfig</a><wbr></span><span class='out-of-band'><span id='render-detail'>
-            <a id="collapse-all" href="#">[-]</a>&nbsp;<a id="expand-all" href="#">[+]</a>
-        </span><a id='src-23207' href='../src/google_adexchangebuyer1d3///home/byron/dev/rust/google-apis-rs/target/debug/build/google-adexchangebuyer1d3-d3043e4deac727b7/out/lib.rs.html#5935-5982'>[src]</a></span></h1>
+<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_adexchangebuyer1d3</a>::<wbr><a class='struct' href=''>PretargetingConfig</a></span><span class='out-of-band'><span id='render-detail'>
+            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                [<span class='inner'>&#x2212;</span>]
+            </a>
+        </span><a id='src-4878' class='srclink' href='../src/google_adexchangebuyer1d3///Users/byron/dev/rs/google-apis-rs/target/debug/build/google-adexchangebuyer1d3-bcd6548412fa4d53/out/lib.rs.html#8507-8554' title='goto source code'>[src]</a></span></h1>
 <pre class='rust struct'>pub struct PretargetingConfig {
-    pub kind: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub verticals: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;&gt;,
-    pub platforms: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;&gt;,
-    pub creative_type: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;&gt;,
-    pub geo_criteria_ids: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;&gt;,
-    pub mobile_operating_system_versions: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;&gt;,
-    pub config_id: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub excluded_user_lists: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;&gt;,
-    pub is_active: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt;,
-    pub config_name: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub excluded_verticals: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;&gt;,
-    pub dimensions: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='../google_adexchangebuyer1d3/struct.PretargetingConfigDimensions.html' title='google_adexchangebuyer1d3::PretargetingConfigDimensions'>PretargetingConfigDimensions</a>&gt;&gt;,
-    pub excluded_geo_criteria_ids: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;&gt;,
-    pub supported_creative_attributes: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;&gt;,
-    pub excluded_content_labels: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;&gt;,
-    pub vendor_types: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;&gt;,
-    pub languages: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;&gt;,
-    pub user_lists: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;&gt;,
-    pub mobile_devices: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;&gt;,
-    pub billing_id: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub mobile_carriers: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;&gt;,
-    pub excluded_placements: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='../google_adexchangebuyer1d3/struct.PretargetingConfigExcludedPlacements.html' title='google_adexchangebuyer1d3::PretargetingConfigExcludedPlacements'>PretargetingConfigExcludedPlacements</a>&gt;&gt;,
-    pub placements: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='../google_adexchangebuyer1d3/struct.PretargetingConfigPlacements.html' title='google_adexchangebuyer1d3::PretargetingConfigPlacements'>PretargetingConfigPlacements</a>&gt;&gt;,
+    pub kind: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub verticals: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;&gt;,
+    pub platforms: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;&gt;,
+    pub creative_type: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;&gt;,
+    pub geo_criteria_ids: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;&gt;,
+    pub mobile_operating_system_versions: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;&gt;,
+    pub config_id: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub excluded_user_lists: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;&gt;,
+    pub is_active: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt;,
+    pub config_name: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub excluded_verticals: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;&gt;,
+    pub dimensions: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='../google_adexchangebuyer1d3/struct.PretargetingConfigDimensions.html' title='google_adexchangebuyer1d3::PretargetingConfigDimensions'>PretargetingConfigDimensions</a>&gt;&gt;,
+    pub excluded_geo_criteria_ids: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;&gt;,
+    pub supported_creative_attributes: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;&gt;,
+    pub excluded_content_labels: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;&gt;,
+    pub vendor_types: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;&gt;,
+    pub languages: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;&gt;,
+    pub user_lists: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;&gt;,
+    pub mobile_devices: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;&gt;,
+    pub billing_id: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub mobile_carriers: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;&gt;,
+    pub excluded_placements: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='../google_adexchangebuyer1d3/struct.PretargetingConfigExcludedPlacements.html' title='google_adexchangebuyer1d3::PretargetingConfigExcludedPlacements'>PretargetingConfigExcludedPlacements</a>&gt;&gt;,
+    pub placements: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='../google_adexchangebuyer1d3/struct.PretargetingConfigPlacements.html' title='google_adexchangebuyer1d3::PretargetingConfigPlacements'>PretargetingConfigPlacements</a>&gt;&gt;,
 }</pre><div class='docblock'><p>There is no detailed description.</p>
 
-<h1 id="activities" class='section-header'><a
-                           href="#activities">Activities</a></h1>
+<h1 id='activities' class='section-header'><a href='#activities'>Activities</a></h1>
 <p>This type is used in activities, which are methods you may call on this type or where this type is involved in. 
 The list links the activity name, along with information about where it is used (one of <em>request</em> and <em>response</em>).</p>
 
@@ -82,70 +84,106 @@ The list links the activity name, along with information about where it is used 
 <li><a href="struct.PretargetingConfigUpdateCall.html">update pretargeting config</a> (request|response)</li>
 </ul>
 </div><h2 class='fields'>Fields</h2>
-<table><tr><td id='structfield.kind'><a class='stability Unmarked' title='No stability level'></a><code>kind</code></td><td><div class='docblock'><p>The kind of the resource, i.e. &quot;adexchangebuyer#pretargetingConfig&quot;.</p>
-</div></td></tr><tr><td id='structfield.verticals'><a class='stability Unmarked' title='No stability level'></a><code>verticals</code></td><td><div class='docblock'><p>Requests containing any of these vertical ids will match.</p>
-</div></td></tr><tr><td id='structfield.platforms'><a class='stability Unmarked' title='No stability level'></a><code>platforms</code></td><td><div class='docblock'><p>Requests matching any of these platforms will match. Possible values are PRETARGETING_PLATFORM_MOBILE, PRETARGETING_PLATFORM_DESKTOP, and PRETARGETING_PLATFORM_TABLET.</p>
-</div></td></tr><tr><td id='structfield.creative_type'><a class='stability Unmarked' title='No stability level'></a><code>creative_type</code></td><td><div class='docblock'><p>List must contain exactly one of PRETARGETING_CREATIVE_TYPE_HTML or PRETARGETING_CREATIVE_TYPE_VIDEO.</p>
-</div></td></tr><tr><td id='structfield.geo_criteria_ids'><a class='stability Unmarked' title='No stability level'></a><code>geo_criteria_ids</code></td><td><div class='docblock'><p>Requests containing any of these geo criteria ids will match.</p>
-</div></td></tr><tr><td id='structfield.mobile_operating_system_versions'><a class='stability Unmarked' title='No stability level'></a><code>mobile_operating_system_versions</code></td><td><div class='docblock'><p>Requests containing any of these mobile operating system version ids will match. Values are from mobile-os.csv in the downloadable files section.</p>
-</div></td></tr><tr><td id='structfield.config_id'><a class='stability Unmarked' title='No stability level'></a><code>config_id</code></td><td><div class='docblock'><p>The config id; generated automatically. Leave this field blank for insert requests.</p>
-</div></td></tr><tr><td id='structfield.excluded_user_lists'><a class='stability Unmarked' title='No stability level'></a><code>excluded_user_lists</code></td><td><div class='docblock'><p>Requests containing any of these users list ids will not match.</p>
-</div></td></tr><tr><td id='structfield.is_active'><a class='stability Unmarked' title='No stability level'></a><code>is_active</code></td><td><div class='docblock'><p>Whether this config is active. Required for all requests.</p>
-</div></td></tr><tr><td id='structfield.config_name'><a class='stability Unmarked' title='No stability level'></a><code>config_name</code></td><td><div class='docblock'><p>The name of the config. Must be unique. Required for all requests.</p>
-</div></td></tr><tr><td id='structfield.excluded_verticals'><a class='stability Unmarked' title='No stability level'></a><code>excluded_verticals</code></td><td><div class='docblock'><p>Requests containing any of these vertical ids will not match. Values are from the publisher-verticals.txt file in the downloadable files section.</p>
-</div></td></tr><tr><td id='structfield.dimensions'><a class='stability Unmarked' title='No stability level'></a><code>dimensions</code></td><td><div class='docblock'><p>Requests which allow one of these (width, height) pairs will match. All pairs must be supported ad dimensions.</p>
-</div></td></tr><tr><td id='structfield.excluded_geo_criteria_ids'><a class='stability Unmarked' title='No stability level'></a><code>excluded_geo_criteria_ids</code></td><td><div class='docblock'><p>Requests containing any of these geo criteria ids will not match.</p>
-</div></td></tr><tr><td id='structfield.supported_creative_attributes'><a class='stability Unmarked' title='No stability level'></a><code>supported_creative_attributes</code></td><td><div class='docblock'><p>Creative attributes should be declared here if all creatives corresponding to this pretargeting configuration have that creative attribute. Values are from pretargetable-creative-attributes.txt in the downloadable files section.</p>
-</div></td></tr><tr><td id='structfield.excluded_content_labels'><a class='stability Unmarked' title='No stability level'></a><code>excluded_content_labels</code></td><td><div class='docblock'><p>Requests with any of these content labels will not match. Values are from content-labels.txt in the downloadable files section.</p>
-</div></td></tr><tr><td id='structfield.vendor_types'><a class='stability Unmarked' title='No stability level'></a><code>vendor_types</code></td><td><div class='docblock'><p>Requests that allow any of these vendor ids will match. Values are from vendors.txt in the downloadable files section.</p>
-</div></td></tr><tr><td id='structfield.languages'><a class='stability Unmarked' title='No stability level'></a><code>languages</code></td><td><div class='docblock'><p>Request containing any of these language codes will match.</p>
-</div></td></tr><tr><td id='structfield.user_lists'><a class='stability Unmarked' title='No stability level'></a><code>user_lists</code></td><td><div class='docblock'><p>Requests containing any of these user list ids will match.</p>
-</div></td></tr><tr><td id='structfield.mobile_devices'><a class='stability Unmarked' title='No stability level'></a><code>mobile_devices</code></td><td><div class='docblock'><p>Requests containing any of these mobile device ids will match. Values are from mobile-devices.csv in the downloadable files section.</p>
-</div></td></tr><tr><td id='structfield.billing_id'><a class='stability Unmarked' title='No stability level'></a><code>billing_id</code></td><td><div class='docblock'><p>The id for billing purposes, provided for reference. Leave this field blank for insert requests; the id will be generated automatically.</p>
-</div></td></tr><tr><td id='structfield.mobile_carriers'><a class='stability Unmarked' title='No stability level'></a><code>mobile_carriers</code></td><td><div class='docblock'><p>Requests containing any of these mobile carrier ids will match. Values are from mobile-carriers.csv in the downloadable files section.</p>
-</div></td></tr><tr><td id='structfield.excluded_placements'><a class='stability Unmarked' title='No stability level'></a><code>excluded_placements</code></td><td><div class='docblock'><p>Requests containing any of these placements will not match.</p>
-</div></td></tr><tr><td id='structfield.placements'><a class='stability Unmarked' title='No stability level'></a><code>placements</code></td><td><div class='docblock'><p>Requests containing any of these placements will match.</p>
-</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='../google_adexchangebuyer1d3/trait.RequestValue.html' title='google_adexchangebuyer1d3::RequestValue'>RequestValue</a> for <a class='struct' href='../google_adexchangebuyer1d3/struct.PretargetingConfig.html' title='google_adexchangebuyer1d3::PretargetingConfig'>PretargetingConfig</a></code></h3><div class='impl-items'></div><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='../google_adexchangebuyer1d3/trait.ResponseResult.html' title='google_adexchangebuyer1d3::ResponseResult'>ResponseResult</a> for <a class='struct' href='../google_adexchangebuyer1d3/struct.PretargetingConfig.html' title='google_adexchangebuyer1d3::PretargetingConfig'>PretargetingConfig</a></code></h3><div class='impl-items'></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_adexchangebuyer1d3/struct.PretargetingConfig.html' title='google_adexchangebuyer1d3::PretargetingConfig'>PretargetingConfig</a></code></h3><div class='impl-items'><h4 id='method.fmt' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#method.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='http://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='http://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
-</div><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_adexchangebuyer1d3/struct.PretargetingConfig.html' title='google_adexchangebuyer1d3::PretargetingConfig'>PretargetingConfig</a></code></h3><div class='impl-items'><h4 id='method.clone' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_adexchangebuyer1d3/struct.PretargetingConfig.html' title='google_adexchangebuyer1d3::PretargetingConfig'>PretargetingConfig</a></code></h4>
-<h4 id='method.clone_from' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code></h4>
-</div><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_adexchangebuyer1d3/struct.PretargetingConfig.html' title='google_adexchangebuyer1d3::PretargetingConfig'>PretargetingConfig</a></code></h3><div class='impl-items'><h4 id='method.default' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/default/trait.Default.html#method.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_adexchangebuyer1d3/struct.PretargetingConfig.html' title='google_adexchangebuyer1d3::PretargetingConfig'>PretargetingConfig</a></code></h4>
-</div><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='../serde/de/trait.Deserialize.html' title='serde::de::Deserialize'>Deserialize</a> for <a class='struct' href='../google_adexchangebuyer1d3/struct.PretargetingConfig.html' title='google_adexchangebuyer1d3::PretargetingConfig'>PretargetingConfig</a></code></h3><div class='impl-items'><h4 id='method.deserialize' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='../serde/de/trait.Deserialize.html#method.deserialize' class='fnname'>deserialize</a>&lt;__D&gt;(deserializer: &amp;mut __D) -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../google_adexchangebuyer1d3/struct.PretargetingConfig.html' title='google_adexchangebuyer1d3::PretargetingConfig'>PretargetingConfig</a>, __D&gt; <span class='where'>where __D: <a class='trait' href='../serde/de/trait.Deserializer.html' title='serde::de::Deserializer'>Deserializer</a></span></code></h4>
-</div><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='../serde/ser/trait.Serialize.html' title='serde::ser::Serialize'>Serialize</a> for <a class='struct' href='../google_adexchangebuyer1d3/struct.PretargetingConfig.html' title='google_adexchangebuyer1d3::PretargetingConfig'>PretargetingConfig</a></code></h3><div class='impl-items'><h4 id='method.serialize' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='../serde/ser/trait.Serialize.html#method.serialize' class='fnname'>serialize</a>&lt;__S&gt;(&amp;self, serializer: &amp;mut __S) -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, __S&gt; <span class='where'>where __S: <a class='trait' href='../serde/ser/trait.Serializer.html' title='serde::ser::Serializer'>Serializer</a></span></code></h4>
+<table><tr class='stab '>
+                                  <td id='structfield.kind'><code>kind</code></td><td><div class='docblock'><p>The kind of the resource, i.e. &quot;adexchangebuyer#pretargetingConfig&quot;.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.verticals'><code>verticals</code></td><td><div class='docblock'><p>Requests containing any of these vertical ids will match.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.platforms'><code>platforms</code></td><td><div class='docblock'><p>Requests matching any of these platforms will match. Possible values are PRETARGETING_PLATFORM_MOBILE, PRETARGETING_PLATFORM_DESKTOP, and PRETARGETING_PLATFORM_TABLET.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.creative_type'><code>creative_type</code></td><td><div class='docblock'><p>List must contain exactly one of PRETARGETING_CREATIVE_TYPE_HTML or PRETARGETING_CREATIVE_TYPE_VIDEO.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.geo_criteria_ids'><code>geo_criteria_ids</code></td><td><div class='docblock'><p>Requests containing any of these geo criteria ids will match.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.mobile_operating_system_versions'><code>mobile_operating_system_versions</code></td><td><div class='docblock'><p>Requests containing any of these mobile operating system version ids will match. Values are from mobile-os.csv in the downloadable files section.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.config_id'><code>config_id</code></td><td><div class='docblock'><p>The config id; generated automatically. Leave this field blank for insert requests.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.excluded_user_lists'><code>excluded_user_lists</code></td><td><div class='docblock'><p>Requests containing any of these users list ids will not match.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.is_active'><code>is_active</code></td><td><div class='docblock'><p>Whether this config is active. Required for all requests.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.config_name'><code>config_name</code></td><td><div class='docblock'><p>The name of the config. Must be unique. Required for all requests.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.excluded_verticals'><code>excluded_verticals</code></td><td><div class='docblock'><p>Requests containing any of these vertical ids will not match. Values are from the publisher-verticals.txt file in the downloadable files section.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.dimensions'><code>dimensions</code></td><td><div class='docblock'><p>Requests which allow one of these (width, height) pairs will match. All pairs must be supported ad dimensions.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.excluded_geo_criteria_ids'><code>excluded_geo_criteria_ids</code></td><td><div class='docblock'><p>Requests containing any of these geo criteria ids will not match.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.supported_creative_attributes'><code>supported_creative_attributes</code></td><td><div class='docblock'><p>Creative attributes should be declared here if all creatives corresponding to this pretargeting configuration have that creative attribute. Values are from pretargetable-creative-attributes.txt in the downloadable files section.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.excluded_content_labels'><code>excluded_content_labels</code></td><td><div class='docblock'><p>Requests with any of these content labels will not match. Values are from content-labels.txt in the downloadable files section.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.vendor_types'><code>vendor_types</code></td><td><div class='docblock'><p>Requests that allow any of these vendor ids will match. Values are from vendors.txt in the downloadable files section.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.languages'><code>languages</code></td><td><div class='docblock'><p>Request containing any of these language codes will match.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.user_lists'><code>user_lists</code></td><td><div class='docblock'><p>Requests containing any of these user list ids will match.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.mobile_devices'><code>mobile_devices</code></td><td><div class='docblock'><p>Requests containing any of these mobile device ids will match. Values are from mobile-devices.csv in the downloadable files section.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.billing_id'><code>billing_id</code></td><td><div class='docblock'><p>The id for billing purposes, provided for reference. Leave this field blank for insert requests; the id will be generated automatically.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.mobile_carriers'><code>mobile_carriers</code></td><td><div class='docblock'><p>Requests containing any of these mobile carrier ids will match. Values are from mobile-carriers.csv in the downloadable files section.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.excluded_placements'><code>excluded_placements</code></td><td><div class='docblock'><p>Requests containing any of these placements will not match.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.placements'><code>placements</code></td><td><div class='docblock'><p>Requests containing any of these placements will match.</p>
+</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl <a class='trait' href='../serde/de/trait.Deserialize.html' title='serde::de::Deserialize'>Deserialize</a> for <a class='struct' href='../google_adexchangebuyer1d3/struct.PretargetingConfig.html' title='google_adexchangebuyer1d3::PretargetingConfig'>PretargetingConfig</a></code></h3><div class='impl-items'><h4 id='method.deserialize' class='method'><code>fn <a href='../serde/de/trait.Deserialize.html#method.deserialize' class='fnname'>deserialize</a>&lt;__D&gt;(deserializer: &amp;mut __D) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../google_adexchangebuyer1d3/struct.PretargetingConfig.html' title='google_adexchangebuyer1d3::PretargetingConfig'>PretargetingConfig</a>, __D::Error&gt; <span class='where'>where __D: <a class='trait' href='../serde/de/trait.Deserializer.html' title='serde::de::Deserializer'>Deserializer</a></span></code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='../serde/ser/trait.Serialize.html' title='serde::ser::Serialize'>Serialize</a> for <a class='struct' href='../google_adexchangebuyer1d3/struct.PretargetingConfig.html' title='google_adexchangebuyer1d3::PretargetingConfig'>PretargetingConfig</a></code></h3><div class='impl-items'><h4 id='method.serialize' class='method'><code>fn <a href='../serde/ser/trait.Serialize.html#method.serialize' class='fnname'>serialize</a>&lt;__S&gt;(&amp;self, serializer: &amp;mut __S) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, __S::Error&gt; <span class='where'>where __S: <a class='trait' href='../serde/ser/trait.Serializer.html' title='serde::ser::Serializer'>Serializer</a></span></code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='../google_adexchangebuyer1d3/trait.RequestValue.html' title='google_adexchangebuyer1d3::RequestValue'>RequestValue</a> for <a class='struct' href='../google_adexchangebuyer1d3/struct.PretargetingConfig.html' title='google_adexchangebuyer1d3::PretargetingConfig'>PretargetingConfig</a></code></h3><div class='impl-items'></div><h3 class='impl'><code>impl <a class='trait' href='../google_adexchangebuyer1d3/trait.ResponseResult.html' title='google_adexchangebuyer1d3::ResponseResult'>ResponseResult</a> for <a class='struct' href='../google_adexchangebuyer1d3/struct.PretargetingConfig.html' title='google_adexchangebuyer1d3::PretargetingConfig'>PretargetingConfig</a></code></h3><div class='impl-items'></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_adexchangebuyer1d3/struct.PretargetingConfig.html' title='google_adexchangebuyer1d3::PretargetingConfig'>PretargetingConfig</a></code></h3><div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#method.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_adexchangebuyer1d3/struct.PretargetingConfig.html' title='google_adexchangebuyer1d3::PretargetingConfig'>PretargetingConfig</a></code></h3><div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_adexchangebuyer1d3/struct.PretargetingConfig.html' title='google_adexchangebuyer1d3::PretargetingConfig'>PretargetingConfig</a></code></h4>
+<h4 id='method.clone_from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_adexchangebuyer1d3/struct.PretargetingConfig.html' title='google_adexchangebuyer1d3::PretargetingConfig'>PretargetingConfig</a></code></h3><div class='impl-items'><h4 id='method.default' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#method.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_adexchangebuyer1d3/struct.PretargetingConfig.html' title='google_adexchangebuyer1d3::PretargetingConfig'>PretargetingConfig</a></code></h4>
 </div></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
 
-    <div id="help" class="hidden">
-        <div class="shortcuts">
-            <h1>Keyboard shortcuts</h1>
-            <dl>
-                <dt>?</dt>
-                <dd>Show this help dialog</dd>
-                <dt>S</dt>
-                <dd>Focus the search field</dd>
-                <dt>&larrb;</dt>
-                <dd>Move up in search results</dd>
-                <dt>&rarrb;</dt>
-                <dd>Move down in search results</dd>
-                <dt>&#9166;</dt>
-                <dd>Go to active search result</dd>
-            </dl>
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code>)
+                </p>
+            </div>
         </div>
-        <div class="infos">
-            <h1>Search tricks</h1>
-            <p>
-                Prefix searches with a type followed by a colon (e.g.
-                <code>fn:</code>) to restrict the search to a given type.
-            </p>
-            <p>
-                Accepted types are: <code>fn</code>, <code>mod</code>,
-                <code>struct</code>, <code>enum</code>,
-                <code>trait</code>, <code>typedef</code> (or
-                <code>tdef</code>).
-            </p>
-        </div>
-    </div>
+    </aside>
 
     
 
@@ -157,6 +195,6 @@ The list links the activity name, along with information about where it is used 
     <script src="../jquery.js"></script>
     <script src="../main.js"></script>
     
-    <script async src="../search-index.js"></script>
+    <script defer src="../search-index.js"></script>
 </body>
 </html>

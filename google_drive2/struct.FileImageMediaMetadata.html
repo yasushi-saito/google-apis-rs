@@ -9,6 +9,7 @@
 
     <title>google_drive2::FileImageMediaMetadata - Rust</title>
 
+    <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
 
     
@@ -24,114 +25,150 @@
 
     
 
-    <section class="sidebar">
+    <nav class="sidebar">
         
         <p class='location'><a href='index.html'>google_drive2</a></p><script>window.sidebarCurrent = {name: 'FileImageMediaMetadata', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
-    </section>
+    </nav>
 
     <nav class="sub">
         <form class="search-form js-only">
             <div class="search-container">
                 <input class="search-input" name="search"
                        autocomplete="off"
-                       placeholder="Click or press 'S' to search, '?' for more options..."
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
                        type="search">
             </div>
         </form>
     </nav>
 
     <section id='main' class="content struct">
-<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_drive2</a>::<wbr><a class='struct' href=''>FileImageMediaMetadata</a><wbr></span><span class='out-of-band'><span id='render-detail'>
-            <a id="collapse-all" href="#">[-]</a>&nbsp;<a id="expand-all" href="#">[+]</a>
-        </span><a id='src-37283' href='../src/google_drive2///home/byron/dev/rust/google-apis-rs/target/debug/build/google-drive2-9dd2c9f7d7a6c91b/out/lib.rs.html#8953-8996'>[src]</a></span></h1>
+<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_drive2</a>::<wbr><a class='struct' href=''>FileImageMediaMetadata</a></span><span class='out-of-band'><span id='render-detail'>
+            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                [<span class='inner'>&#x2212;</span>]
+            </a>
+        </span><a id='src-6734' class='srclink' href='../src/google_drive2///Users/byron/dev/rs/google-apis-rs/target/debug/build/google-drive2-6658037b670a9eb5/out/lib.rs.html#11874-11917' title='goto source code'>[src]</a></span></h1>
 <pre class='rust struct'>pub struct FileImageMediaMetadata {
-    pub exposure_bias: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.f32.html'>f32</a>&gt;,
-    pub exposure_time: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.f32.html'>f32</a>&gt;,
-    pub max_aperture_value: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.f32.html'>f32</a>&gt;,
-    pub color_space: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub height: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>&gt;,
-    pub lens: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub aperture: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.f32.html'>f32</a>&gt;,
-    pub date: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub rotation: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>&gt;,
-    pub white_balance: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub camera_model: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub flash_used: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt;,
-    pub camera_make: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub focal_length: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.f32.html'>f32</a>&gt;,
-    pub exposure_mode: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub subject_distance: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>&gt;,
-    pub width: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>&gt;,
-    pub metering_mode: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub location: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_drive2/struct.FileImageMediaMetadataLocation.html' title='google_drive2::FileImageMediaMetadataLocation'>FileImageMediaMetadataLocation</a>&gt;,
-    pub iso_speed: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>&gt;,
-    pub sensor: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub exposure_bias: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f32.html'>f32</a>&gt;,
+    pub exposure_time: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f32.html'>f32</a>&gt;,
+    pub max_aperture_value: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f32.html'>f32</a>&gt;,
+    pub color_space: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub height: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>&gt;,
+    pub lens: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub aperture: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f32.html'>f32</a>&gt;,
+    pub date: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub rotation: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>&gt;,
+    pub white_balance: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub camera_model: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub flash_used: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt;,
+    pub camera_make: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub focal_length: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f32.html'>f32</a>&gt;,
+    pub exposure_mode: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub subject_distance: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>&gt;,
+    pub width: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>&gt;,
+    pub metering_mode: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub location: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_drive2/struct.FileImageMediaMetadataLocation.html' title='google_drive2::FileImageMediaMetadataLocation'>FileImageMediaMetadataLocation</a>&gt;,
+    pub iso_speed: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>&gt;,
+    pub sensor: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
 }</pre><div class='docblock'><p>Metadata about image media. This will only be present for image types, and its contents will depend on what can be parsed from the image content.</p>
 
 <p>This type is not used in any activity, and only used as <em>part</em> of another schema.</p>
 </div><h2 class='fields'>Fields</h2>
-<table><tr><td id='structfield.exposure_bias'><a class='stability Unmarked' title='No stability level'></a><code>exposure_bias</code></td><td><div class='docblock'><p>The exposure bias of the photo (APEX value).</p>
-</div></td></tr><tr><td id='structfield.exposure_time'><a class='stability Unmarked' title='No stability level'></a><code>exposure_time</code></td><td><div class='docblock'><p>The length of the exposure, in seconds.</p>
-</div></td></tr><tr><td id='structfield.max_aperture_value'><a class='stability Unmarked' title='No stability level'></a><code>max_aperture_value</code></td><td><div class='docblock'><p>The smallest f-number of the lens at the focal length used to create the photo (APEX value).</p>
-</div></td></tr><tr><td id='structfield.color_space'><a class='stability Unmarked' title='No stability level'></a><code>color_space</code></td><td><div class='docblock'><p>The color space of the photo.</p>
-</div></td></tr><tr><td id='structfield.height'><a class='stability Unmarked' title='No stability level'></a><code>height</code></td><td><div class='docblock'><p>The height of the image in pixels.</p>
-</div></td></tr><tr><td id='structfield.lens'><a class='stability Unmarked' title='No stability level'></a><code>lens</code></td><td><div class='docblock'><p>The lens used to create the photo.</p>
-</div></td></tr><tr><td id='structfield.aperture'><a class='stability Unmarked' title='No stability level'></a><code>aperture</code></td><td><div class='docblock'><p>The aperture used to create the photo (f-number).</p>
-</div></td></tr><tr><td id='structfield.date'><a class='stability Unmarked' title='No stability level'></a><code>date</code></td><td><div class='docblock'><p>The date and time the photo was taken (EXIF format timestamp).</p>
-</div></td></tr><tr><td id='structfield.rotation'><a class='stability Unmarked' title='No stability level'></a><code>rotation</code></td><td><div class='docblock'><p>The rotation in clockwise degrees from the image&#39;s original orientation.</p>
-</div></td></tr><tr><td id='structfield.white_balance'><a class='stability Unmarked' title='No stability level'></a><code>white_balance</code></td><td><div class='docblock'><p>The white balance mode used to create the photo.</p>
-</div></td></tr><tr><td id='structfield.camera_model'><a class='stability Unmarked' title='No stability level'></a><code>camera_model</code></td><td><div class='docblock'><p>The model of the camera used to create the photo.</p>
-</div></td></tr><tr><td id='structfield.flash_used'><a class='stability Unmarked' title='No stability level'></a><code>flash_used</code></td><td><div class='docblock'><p>Whether a flash was used to create the photo.</p>
-</div></td></tr><tr><td id='structfield.camera_make'><a class='stability Unmarked' title='No stability level'></a><code>camera_make</code></td><td><div class='docblock'><p>The make of the camera used to create the photo.</p>
-</div></td></tr><tr><td id='structfield.focal_length'><a class='stability Unmarked' title='No stability level'></a><code>focal_length</code></td><td><div class='docblock'><p>The focal length used to create the photo, in millimeters.</p>
-</div></td></tr><tr><td id='structfield.exposure_mode'><a class='stability Unmarked' title='No stability level'></a><code>exposure_mode</code></td><td><div class='docblock'><p>The exposure mode used to create the photo.</p>
-</div></td></tr><tr><td id='structfield.subject_distance'><a class='stability Unmarked' title='No stability level'></a><code>subject_distance</code></td><td><div class='docblock'><p>The distance to the subject of the photo, in meters.</p>
-</div></td></tr><tr><td id='structfield.width'><a class='stability Unmarked' title='No stability level'></a><code>width</code></td><td><div class='docblock'><p>The width of the image in pixels.</p>
-</div></td></tr><tr><td id='structfield.metering_mode'><a class='stability Unmarked' title='No stability level'></a><code>metering_mode</code></td><td><div class='docblock'><p>The metering mode used to create the photo.</p>
-</div></td></tr><tr><td id='structfield.location'><a class='stability Unmarked' title='No stability level'></a><code>location</code></td><td><div class='docblock'><p>Geographic location information stored in the image.</p>
-</div></td></tr><tr><td id='structfield.iso_speed'><a class='stability Unmarked' title='No stability level'></a><code>iso_speed</code></td><td><div class='docblock'><p>The ISO speed used to create the photo.</p>
-</div></td></tr><tr><td id='structfield.sensor'><a class='stability Unmarked' title='No stability level'></a><code>sensor</code></td><td><div class='docblock'><p>The type of sensor used to create the photo.</p>
-</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='../google_drive2/trait.NestedType.html' title='google_drive2::NestedType'>NestedType</a> for <a class='struct' href='../google_drive2/struct.FileImageMediaMetadata.html' title='google_drive2::FileImageMediaMetadata'>FileImageMediaMetadata</a></code></h3><div class='impl-items'></div><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='../google_drive2/trait.Part.html' title='google_drive2::Part'>Part</a> for <a class='struct' href='../google_drive2/struct.FileImageMediaMetadata.html' title='google_drive2::FileImageMediaMetadata'>FileImageMediaMetadata</a></code></h3><div class='impl-items'></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_drive2/struct.FileImageMediaMetadata.html' title='google_drive2::FileImageMediaMetadata'>FileImageMediaMetadata</a></code></h3><div class='impl-items'><h4 id='method.fmt' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#method.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='http://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='http://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
-</div><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_drive2/struct.FileImageMediaMetadata.html' title='google_drive2::FileImageMediaMetadata'>FileImageMediaMetadata</a></code></h3><div class='impl-items'><h4 id='method.clone' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_drive2/struct.FileImageMediaMetadata.html' title='google_drive2::FileImageMediaMetadata'>FileImageMediaMetadata</a></code></h4>
-<h4 id='method.clone_from' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code></h4>
-</div><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_drive2/struct.FileImageMediaMetadata.html' title='google_drive2::FileImageMediaMetadata'>FileImageMediaMetadata</a></code></h3><div class='impl-items'><h4 id='method.default' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/default/trait.Default.html#method.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_drive2/struct.FileImageMediaMetadata.html' title='google_drive2::FileImageMediaMetadata'>FileImageMediaMetadata</a></code></h4>
-</div><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='../serde/de/trait.Deserialize.html' title='serde::de::Deserialize'>Deserialize</a> for <a class='struct' href='../google_drive2/struct.FileImageMediaMetadata.html' title='google_drive2::FileImageMediaMetadata'>FileImageMediaMetadata</a></code></h3><div class='impl-items'><h4 id='method.deserialize' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='../serde/de/trait.Deserialize.html#method.deserialize' class='fnname'>deserialize</a>&lt;__D&gt;(deserializer: &amp;mut __D) -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../google_drive2/struct.FileImageMediaMetadata.html' title='google_drive2::FileImageMediaMetadata'>FileImageMediaMetadata</a>, __D&gt; <span class='where'>where __D: <a class='trait' href='../serde/de/trait.Deserializer.html' title='serde::de::Deserializer'>Deserializer</a></span></code></h4>
-</div><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='../serde/ser/trait.Serialize.html' title='serde::ser::Serialize'>Serialize</a> for <a class='struct' href='../google_drive2/struct.FileImageMediaMetadata.html' title='google_drive2::FileImageMediaMetadata'>FileImageMediaMetadata</a></code></h3><div class='impl-items'><h4 id='method.serialize' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='../serde/ser/trait.Serialize.html#method.serialize' class='fnname'>serialize</a>&lt;__S&gt;(&amp;self, serializer: &amp;mut __S) -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, __S&gt; <span class='where'>where __S: <a class='trait' href='../serde/ser/trait.Serializer.html' title='serde::ser::Serializer'>Serializer</a></span></code></h4>
+<table><tr class='stab '>
+                                  <td id='structfield.exposure_bias'><code>exposure_bias</code></td><td><div class='docblock'><p>The exposure bias of the photo (APEX value).</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.exposure_time'><code>exposure_time</code></td><td><div class='docblock'><p>The length of the exposure, in seconds.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.max_aperture_value'><code>max_aperture_value</code></td><td><div class='docblock'><p>The smallest f-number of the lens at the focal length used to create the photo (APEX value).</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.color_space'><code>color_space</code></td><td><div class='docblock'><p>The color space of the photo.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.height'><code>height</code></td><td><div class='docblock'><p>The height of the image in pixels.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.lens'><code>lens</code></td><td><div class='docblock'><p>The lens used to create the photo.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.aperture'><code>aperture</code></td><td><div class='docblock'><p>The aperture used to create the photo (f-number).</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.date'><code>date</code></td><td><div class='docblock'><p>The date and time the photo was taken (EXIF format timestamp).</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.rotation'><code>rotation</code></td><td><div class='docblock'><p>The rotation in clockwise degrees from the image&#39;s original orientation.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.white_balance'><code>white_balance</code></td><td><div class='docblock'><p>The white balance mode used to create the photo.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.camera_model'><code>camera_model</code></td><td><div class='docblock'><p>The model of the camera used to create the photo.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.flash_used'><code>flash_used</code></td><td><div class='docblock'><p>Whether a flash was used to create the photo.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.camera_make'><code>camera_make</code></td><td><div class='docblock'><p>The make of the camera used to create the photo.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.focal_length'><code>focal_length</code></td><td><div class='docblock'><p>The focal length used to create the photo, in millimeters.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.exposure_mode'><code>exposure_mode</code></td><td><div class='docblock'><p>The exposure mode used to create the photo.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.subject_distance'><code>subject_distance</code></td><td><div class='docblock'><p>The distance to the subject of the photo, in meters.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.width'><code>width</code></td><td><div class='docblock'><p>The width of the image in pixels.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.metering_mode'><code>metering_mode</code></td><td><div class='docblock'><p>The metering mode used to create the photo.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.location'><code>location</code></td><td><div class='docblock'><p>Geographic location information stored in the image.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.iso_speed'><code>iso_speed</code></td><td><div class='docblock'><p>The ISO speed used to create the photo.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.sensor'><code>sensor</code></td><td><div class='docblock'><p>The type of sensor used to create the photo.</p>
+</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl <a class='trait' href='../serde/de/trait.Deserialize.html' title='serde::de::Deserialize'>Deserialize</a> for <a class='struct' href='../google_drive2/struct.FileImageMediaMetadata.html' title='google_drive2::FileImageMediaMetadata'>FileImageMediaMetadata</a></code></h3><div class='impl-items'><h4 id='method.deserialize' class='method'><code>fn <a href='../serde/de/trait.Deserialize.html#method.deserialize' class='fnname'>deserialize</a>&lt;__D&gt;(deserializer: &amp;mut __D) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../google_drive2/struct.FileImageMediaMetadata.html' title='google_drive2::FileImageMediaMetadata'>FileImageMediaMetadata</a>, __D::Error&gt; <span class='where'>where __D: <a class='trait' href='../serde/de/trait.Deserializer.html' title='serde::de::Deserializer'>Deserializer</a></span></code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='../serde/ser/trait.Serialize.html' title='serde::ser::Serialize'>Serialize</a> for <a class='struct' href='../google_drive2/struct.FileImageMediaMetadata.html' title='google_drive2::FileImageMediaMetadata'>FileImageMediaMetadata</a></code></h3><div class='impl-items'><h4 id='method.serialize' class='method'><code>fn <a href='../serde/ser/trait.Serialize.html#method.serialize' class='fnname'>serialize</a>&lt;__S&gt;(&amp;self, serializer: &amp;mut __S) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, __S::Error&gt; <span class='where'>where __S: <a class='trait' href='../serde/ser/trait.Serializer.html' title='serde::ser::Serializer'>Serializer</a></span></code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='../google_drive2/trait.NestedType.html' title='google_drive2::NestedType'>NestedType</a> for <a class='struct' href='../google_drive2/struct.FileImageMediaMetadata.html' title='google_drive2::FileImageMediaMetadata'>FileImageMediaMetadata</a></code></h3><div class='impl-items'></div><h3 class='impl'><code>impl <a class='trait' href='../google_drive2/trait.Part.html' title='google_drive2::Part'>Part</a> for <a class='struct' href='../google_drive2/struct.FileImageMediaMetadata.html' title='google_drive2::FileImageMediaMetadata'>FileImageMediaMetadata</a></code></h3><div class='impl-items'></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_drive2/struct.FileImageMediaMetadata.html' title='google_drive2::FileImageMediaMetadata'>FileImageMediaMetadata</a></code></h3><div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#method.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_drive2/struct.FileImageMediaMetadata.html' title='google_drive2::FileImageMediaMetadata'>FileImageMediaMetadata</a></code></h3><div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_drive2/struct.FileImageMediaMetadata.html' title='google_drive2::FileImageMediaMetadata'>FileImageMediaMetadata</a></code></h4>
+<h4 id='method.clone_from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_drive2/struct.FileImageMediaMetadata.html' title='google_drive2::FileImageMediaMetadata'>FileImageMediaMetadata</a></code></h3><div class='impl-items'><h4 id='method.default' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#method.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_drive2/struct.FileImageMediaMetadata.html' title='google_drive2::FileImageMediaMetadata'>FileImageMediaMetadata</a></code></h4>
 </div></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
 
-    <div id="help" class="hidden">
-        <div class="shortcuts">
-            <h1>Keyboard shortcuts</h1>
-            <dl>
-                <dt>?</dt>
-                <dd>Show this help dialog</dd>
-                <dt>S</dt>
-                <dd>Focus the search field</dd>
-                <dt>&larrb;</dt>
-                <dd>Move up in search results</dd>
-                <dt>&rarrb;</dt>
-                <dd>Move down in search results</dd>
-                <dt>&#9166;</dt>
-                <dd>Go to active search result</dd>
-            </dl>
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code>)
+                </p>
+            </div>
         </div>
-        <div class="infos">
-            <h1>Search tricks</h1>
-            <p>
-                Prefix searches with a type followed by a colon (e.g.
-                <code>fn:</code>) to restrict the search to a given type.
-            </p>
-            <p>
-                Accepted types are: <code>fn</code>, <code>mod</code>,
-                <code>struct</code>, <code>enum</code>,
-                <code>trait</code>, <code>typedef</code> (or
-                <code>tdef</code>).
-            </p>
-        </div>
-    </div>
+    </aside>
 
     
 
@@ -143,6 +180,6 @@
     <script src="../jquery.js"></script>
     <script src="../main.js"></script>
     
-    <script async src="../search-index.js"></script>
+    <script defer src="../search-index.js"></script>
 </body>
 </html>

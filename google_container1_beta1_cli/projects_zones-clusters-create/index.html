@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Zones Clusters Create - container v0.3.0+20150420</title>
+  <title>Zones Clusters Create - container v0.3.3+20151005</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -17,6 +17,12 @@
   <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
   <link rel="stylesheet" href="../css/highlight.css">
 
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Zones Clusters Create";
+  </script>
+  
   <script src="../js/jquery-2.1.1.min.js"></script>
   <script src="../js/modernizr-2.8.3.min.js"></script>
   <script type="text/javascript" src="../js/highlight.pack.js"></script>
@@ -32,95 +38,110 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> container v0.3.0+20150420</a>
-        
+        <a href=".." class="icon icon-home"> container v0.3.3+20151005</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-      <ul class="current">
-    
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="..">Home</a>
         
-            <li class="toctree-l1 ">
-                <a class="" href="..">Home</a>
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Projects</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../projects_clusters-list/">Clusters List</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../projects_operations-list/">Operations List</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Zones Clusters Create</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#scopes">Scopes</a></li>
                 
-            </li>
+            
+                <li class="toctree-l3"><a href="#required-scalar-arguments">Required Scalar Arguments</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#required-request-value">Required Request Value</a></li>
+                
+                    <li><a class="toctree-l4" href="#about-cursors">About Cursors</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#optional-output-flags">Optional Output Flags</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#optional-general-properties">Optional General Properties</a></li>
+                
+            
+            </ul>
         
+    </li>
 
-    
         
-            <span>Projects</span>
             
-                <li class="toctree-l2 ">
-                    <a class="" href="../projects_clusters-list/">Clusters List</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../projects_operations-list/">Operations List</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 current">
-                    <a class="current" href="./">Zones Clusters Create</a>
-                    
-                        <ul>
-                        
-                            <li class="toctree-l3"><a href="#scopes">Scopes</a></li>
-                            
-                        
-                            <li class="toctree-l3"><a href="#required-scalar-arguments">Required Scalar Arguments</a></li>
-                            
-                        
-                            <li class="toctree-l3"><a href="#required-request-value">Required Request Value</a></li>
-                            
-                                <li><a class="toctree-l4" href="#about-cursors">About Cursors</a></li>
-                            
-                        
-                            <li class="toctree-l3"><a href="#optional-output-flags">Optional Output Flags</a></li>
-                            
-                        
-                            <li class="toctree-l3"><a href="#optional-general-properties">Optional General Properties</a></li>
-                            
-                        
-                        </ul>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../projects_zones-clusters-delete/">Zones Clusters Delete</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../projects_zones-clusters-get/">Zones Clusters Get</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../projects_zones-clusters-list/">Zones Clusters List</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../projects_zones-operations-get/">Zones Operations Get</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../projects_zones-operations-list/">Zones Operations List</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../projects_zones-tokens-get/">Zones Tokens Get</a>
-                    
-                </li>
-            
+    <li class="toctree-l1 ">
+        <a class="" href="../projects_zones-clusters-delete/">Zones Clusters Delete</a>
         
+    </li>
 
-    
-</ul>
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../projects_zones-clusters-get/">Zones Clusters Get</a>
+        
+    </li>
 
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../projects_zones-clusters-list/">Zones Clusters List</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../projects_zones-operations-get/">Zones Operations Get</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../projects_zones-operations-list/">Zones Operations List</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+        </ul>
       </div>
       &nbsp;
     </nav>
@@ -130,7 +151,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">container v0.3.0+20150420</a>
+        <a href="..">container v0.3.3+20151005</a>
       </nav>
 
       
@@ -141,26 +162,29 @@
     <li><a href="..">Docs</a> &raquo;</li>
     
       
-        <li>Projects &raquo;</li>
+        
+          <li>Projects &raquo;</li>
+        
       
     
     <li>Zones Clusters Create</li>
-      <li class="wy-breadcrumbs-aside">
+    <li class="wy-breadcrumbs-aside">
+      
         
-          
-            <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/container1_beta1-cli" class="icon icon-github"> Edit on GitHub</a>
-          
+          <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/container1_beta1-cli" class="icon icon-github"> Edit on GitHub</a>
         
-      </li>
+      
+    </li>
   </ul>
   <hr/>
 </div>
           <div role="main">
             <div class="section">
-              <p>Creates a cluster, consisting of the specified number and type of Google Compute Engine instances, plus a Kubernetes master instance.</p>
+              
+                <p>Creates a cluster, consisting of the specified number and type of Google Compute Engine instances, plus a Kubernetes master instance.</p>
 <p>The cluster is created in the project&#39;s default network.</p>
 <p>A firewall is added that allows traffic into port 443 on the master, which enables HTTPS. A firewall and a route is added for each node to allow the containers on that node to communicate with all other instances in the cluster.</p>
-<p>Finally, a route named k8s-iproute-10-xx-0-0 is created to track that the cluster&#39;s 10.xx.0.0/16 CIDR has been assigned.</p>
+<p>Finally, an entry is added to the project&#39;s global metadata indicating which CIDR range is being used by the cluster.</p>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for the <em>https://www.googleapis.com/auth/cloud-platform</em> scope to make a valid call.</p>
 <p>If unset, the scope for this method defaults to <em>https://www.googleapis.com/auth/cloud-platform</em>.
@@ -187,9 +211,14 @@ In the latter case it is advised to set the field-cursor to the data-structure's
     creation-timestamp: string
     description: string
     enable-cloud-logging: boolean
+    enable-cloud-monitoring: boolean
     endpoint: string
+    instance-group-urls: [string]
     master-auth:
       bearer-token: string
+      client-certificate: string
+      client-key: string
+      cluster-ca-certificate: string
       password: string
       user: string
     name: string
@@ -214,7 +243,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li><code>container-ipv4-cidr=sit</code><ul>
-<li>The IP addresses of the container pods in this cluster, in  CIDR notation (e.g. 10.96.0.0/14). Leave blank to have one automatically chosen or specify a /14 block in 10.0.0.0/8 or 172.16.0.0/12.</li>
+<li>The IP address range of the container pods in this cluster, in  CIDR notation (e.g. 10.96.0.0/14). Leave blank to have one automatically chosen or specify a /14 block in 10.0.0.0/8.</li>
 </ul>
 </li>
 <li><code>creation-timestamp=stet</code><ul>
@@ -229,23 +258,36 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>Whether logs from the cluster should be made available via the Google Cloud Logging service. This includes both logs from your applications running in the cluster as well as logs from the Kubernetes components themselves.</li>
 </ul>
 </li>
+<li><code>enable-cloud-monitoring=true</code><ul>
+<li>Whether metrics from the cluster should be made available via the Google Cloud Monitoring service.</li>
+</ul>
+</li>
 <li>
-<p><code>endpoint=dolores</code></p>
+<p><code>endpoint=kasd</code></p>
 <ul>
 <li>
 <p>[Output only] The IP address of this cluster&#39;s Kubernetes master. The endpoint can be accessed from the internet at https://username:password@endpoint/.</p>
 <p>See the masterAuth property of this resource for username and password information.
-<em> <code>master-auth    bearer-token=kasd</code>
-    - The token used to authenticate API requests to the master. The token is be included in an HTTP Authorization Header included in all requests to the master endpoint. The format of the header is: &#34;Authorization: Bearer &#34;.
-</em> <code>password=accusam</code>
+<em> <code>instance-group-urls=accusam</code>
+    - [Output only] The resource URLs of <a href="../compute/docs/instance-groups/">instance groups</a> associated with this cluster.
+    - Each invocation of this argument appends the given value to the array.
+</em> <code>master-auth    bearer-token=takimata</code>
+    - The token used to authenticate API requests to the master. The token is to be included in an HTTP Authorization Header in all requests to the master endpoint. The format of the header is: &#34;Authorization: Bearer &#34;.
+<em> <code>client-certificate=justo</code>
+    - [Output only] Base64 encoded public certificate used by clients to authenticate to the cluster endpoint.
+</em> <code>client-key=amet.</code>
+    - [Output only] Base64 encoded private key used by clients to authenticate to the cluster endpoint.
+<em> <code>cluster-ca-certificate=erat</code>
+    - [Output only] Base64 encoded public certificate that is the root of trust for the cluster.
+</em> <code>password=labore</code>
     - The password to use for HTTP basic authentication when accessing the Kubernetes master endpoint. Because the master endpoint is open to the internet, you should create a strong password.
-* <code>user=takimata</code>
+* <code>user=sea</code>
     - The username to use for HTTP basic authentication when accessing the Kubernetes master endpoint.</p>
 </li>
 </ul>
 </li>
 <li>
-<p><code>..    name=justo</code></p>
+<p><code>..    name=nonumy</code></p>
 <ul>
 <li>The name of this cluster. The name must be unique within this project and zone, and can be up to 40 characters with the following restrictions:  <ul>
 <li>Lowercase letters, numbers, and hyphens only.</li>
@@ -255,49 +297,49 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </li>
 </ul>
 </li>
-<li><code>network=amet.</code><ul>
+<li><code>network=dolores</code><ul>
 <li>The name of the Google Compute Engine network to which the cluster is connected.</li>
 </ul>
 </li>
 <li>
-<p><code>node-config    machine-type=erat</code></p>
+<p><code>node-config    machine-type=gubergren</code></p>
 <ul>
 <li>
 <p>The name of a Google Compute Engine machine type (e.g. n1-standard-1).</p>
 <p>If unspecified, the default machine type is n1-standard-1.
-* <code>source-image=labore</code>
+* <code>source-image=sadipscing</code>
     - The fully-specified name of a Google Compute Engine image. For example: https://www.googleapis.com/compute/v1/projects/debian-cloud/global/images/backports-debian-7-wheezy-vYYYYMMDD (where YYYMMDD is the version date).</p>
 <p>If specifying an image, you are responsible for ensuring its compatibility with the Debian 7 backports image. We recommend leaving this field blank to accept the default backports-debian-7-wheezy value.</p>
 </li>
 </ul>
 </li>
 <li>
-<p><code>..    node-routing-prefix-size=92</code></p>
+<p><code>..    node-routing-prefix-size=70</code></p>
 <ul>
 <li>[Output only] The size of the address space on each node for hosting containers.</li>
 </ul>
 </li>
-<li><code>num-nodes=11</code><ul>
+<li><code>num-nodes=35</code><ul>
 <li>The number of nodes to create in this cluster. You must ensure that your Compute Engine resource quota is sufficient for this number of instances plus one (to include the master). You must also have available firewall and routes quota.</li>
 </ul>
 </li>
-<li><code>self-link=dolores</code><ul>
+<li><code>self-link=no</code><ul>
 <li>[Output only] Server-defined URL for the resource.</li>
 </ul>
 </li>
-<li><code>services-ipv4-cidr=gubergren</code><ul>
-<li>[Output only] The IP addresses of the Kubernetes services in this cluster, in  CIDR notation (e.g. 1.2.3.4/29). Service addresses are always in the 10.0.0.0/16 range.</li>
+<li><code>services-ipv4-cidr=justo</code><ul>
+<li>[Output only] The IP address range of the Kubernetes services in this cluster, in  CIDR notation (e.g. 1.2.3.4/29). Service addresses are typically put in the last /16 from the container CIDR.</li>
 </ul>
 </li>
-<li><code>status=sadipscing</code><ul>
+<li><code>status=justo</code><ul>
 <li>[Output only] The current status of this cluster.</li>
 </ul>
 </li>
-<li><code>status-message=aliquyam</code><ul>
+<li><code>status-message=et</code><ul>
 <li>[Output only] Additional information about the current status of this cluster, if available.</li>
 </ul>
 </li>
-<li><code>zone=ea</code><ul>
+<li><code>zone=et</code><ul>
 <li>[Output only] The name of the Google Compute Engine zone in which the cluster resides.</li>
 </ul>
 </li>
@@ -367,6 +409,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 </ul>
+              
             </div>
           </div>
           <footer>
@@ -384,9 +427,10 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   <hr/>
 
   <div role="contentinfo">
-    <p>
     <!-- Copyright etc -->
-    </p>
+    
+      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+    
   </div>
 
   Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
@@ -401,17 +445,17 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <div class="rst-versions" role="note" style="cursor: pointer">
     <span class="rst-current-version" data-toggle="rst-current-version">
-        
-            <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/container1_beta1-cli" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
-        
-      <span><a href="../projects_operations-list/" style="color: #fcfcfc;">&laquo; Previous</a></span>
-      <span style="margin-left: 15px"><a href="../projects_zones-clusters-delete/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+          <a class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../projects_operations-list/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../projects_zones-clusters-delete/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
     </span>
 </div>
 
-<!--
-MkDocs version  : 0.12.2
-Docs Build Date : 2015-06-21 14:30:44.409931
--->
 </body>
 </html>

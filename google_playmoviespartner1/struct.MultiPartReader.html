@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `MultiPartReader` struct in crate `google_playmoviespartner1`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, MultiPartReader">
+
+    <title>google_playmoviespartner1::MultiPartReader - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../main.css">
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='index.html'>google_playmoviespartner1</a></p><script>window.sidebarCurrent = {name: 'MultiPartReader', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content struct">
+<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_playmoviespartner1</a>::<wbr><a class='struct' href=''>MultiPartReader</a></span><span class='out-of-band'><span id='render-detail'>
+            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                [<span class='inner'>&#x2212;</span>]
+            </a>
+        </span><a id='src-680' class='srclink' href='../src/google_playmoviespartner1///Users/byron/dev/rs/google-apis-rs/target/debug/build/google-playmoviespartner1-aa8311455715d166/out/lib.rs.html#1133-1137' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct MultiPartReader&lt;'a&gt; {
+    // some fields omitted
+}</pre><div class='docblock'><p>Provides a <code>Read</code> interface that converts multiple parts into the protocol
+identified by <a href="https://tools.ietf.org/html/rfc2387">RFC2387</a>.
+<strong>Note</strong>: This implementation is just as rich as it needs to be to perform uploads
+to google APIs, and might not be a fully-featured implementation.</p>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><code>impl&lt;'a&gt; <a class='struct' href='../google_playmoviespartner1/struct.MultiPartReader.html' title='google_playmoviespartner1::MultiPartReader'>MultiPartReader</a>&lt;'a&gt;</code></h3><div class='impl-items'><h4 id='method.reserve_exact' class='method'><code>fn <a href='#method.reserve_exact' class='fnname'>reserve_exact</a>(&amp;mut self, cap: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.usize.html'>usize</a>)</code></h4>
+<div class='docblock'><p>Reserve memory for exactly the given amount of parts</p>
+</div><h4 id='method.add_part' class='method'><code>fn <a href='#method.add_part' class='fnname'>add_part</a>(&amp;mut self, reader: &amp;'a mut <a class='trait' href='https://doc.rust-lang.org/nightly/std/io/trait.Read.html' title='std::io::Read'>Read</a>, size: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u64.html'>u64</a>, mime_type: <a class='struct' href='../mime/struct.Mime.html' title='mime::Mime'>Mime</a>) -&gt; &amp;mut <a class='struct' href='../google_playmoviespartner1/struct.MultiPartReader.html' title='google_playmoviespartner1::MultiPartReader'>MultiPartReader</a>&lt;'a&gt;</code></h4>
+<div class='docblock'><p>Add a new part to the queue of parts to be read on the first <code>read</code> call.</p>
+
+<h1 id='arguments' class='section-header'><a href='#arguments'>Arguments</a></h1>
+<p><code>headers</code> - identifying the body of the part. It&#39;s similar to the header
+            in an ordinary single-part call, and should thus contain the
+            same information.
+<code>reader</code>  - a reader providing the part&#39;s body
+<code>size</code>    - the amount of bytes provided by the reader. It will be put onto the header as
+            content-size.
+<code>mime</code>    - It will be put onto the content type</p>
+</div><h4 id='method.mime_type' class='method'><code>fn <a href='#method.mime_type' class='fnname'>mime_type</a>(&amp;self) -&gt; <a class='struct' href='../mime/struct.Mime.html' title='mime::Mime'>Mime</a></code></h4>
+<div class='docblock'><p>Returns the mime-type representing our multi-part message.
+Use it with the ContentType header.</p>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl&lt;'a&gt; <a class='trait' href='https://doc.rust-lang.org/nightly/std/io/trait.Read.html' title='std::io::Read'>Read</a> for <a class='struct' href='../google_playmoviespartner1/struct.MultiPartReader.html' title='google_playmoviespartner1::MultiPartReader'>MultiPartReader</a>&lt;'a&gt;</code></h3><div class='impl-items'><h4 id='method.read' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/std/io/trait.Read.html#method.read' class='fnname'>read</a>(&amp;mut self, buf: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.slice.html'>&amp;mut [</a><a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u8.html'>u8</a><a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.slice.html'>]</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/std/io/error/type.Result.html' title='std::io::error::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.usize.html'>usize</a>&gt;</code></h4>
+<h4 id='method.read_to_end' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/std/io/trait.Read.html#method.read_to_end' class='fnname'>read_to_end</a>(&amp;mut self, buf: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u8.html'>u8</a>&gt;) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.usize.html'>usize</a>, <a class='struct' href='https://doc.rust-lang.org/nightly/std/io/error/struct.Error.html' title='std::io::error::Error'>Error</a>&gt;</code></h4>
+<h4 id='method.read_to_string' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/std/io/trait.Read.html#method.read_to_string' class='fnname'>read_to_string</a>(&amp;mut self, buf: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.usize.html'>usize</a>, <a class='struct' href='https://doc.rust-lang.org/nightly/std/io/error/struct.Error.html' title='std::io::error::Error'>Error</a>&gt;</code></h4>
+<h4 id='method.read_exact' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/std/io/trait.Read.html#method.read_exact' class='fnname'>read_exact</a>(&amp;mut self, buf: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.slice.html'>&amp;mut [</a><a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u8.html'>u8</a><a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.slice.html'>]</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, <a class='struct' href='https://doc.rust-lang.org/nightly/std/io/error/struct.Error.html' title='std::io::error::Error'>Error</a>&gt;</code></h4>
+<h4 id='method.by_ref' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/std/io/trait.Read.html#method.by_ref' class='fnname'>by_ref</a>(&amp;mut self) -&gt; &amp;mut Self</code></h4>
+<h4 id='method.bytes' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/std/io/trait.Read.html#method.bytes' class='fnname'>bytes</a>(self) -&gt; <a class='struct' href='https://doc.rust-lang.org/nightly/std/io/struct.Bytes.html' title='std::io::Bytes'>Bytes</a>&lt;Self&gt;</code></h4>
+<h4 id='method.chars' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/std/io/trait.Read.html#method.chars' class='fnname'>chars</a>(self) -&gt; <a class='struct' href='https://doc.rust-lang.org/nightly/std/io/struct.Chars.html' title='std::io::Chars'>Chars</a>&lt;Self&gt;</code></h4>
+<h4 id='method.chain' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/std/io/trait.Read.html#method.chain' class='fnname'>chain</a>&lt;R&gt;(self, next: R) -&gt; <a class='struct' href='https://doc.rust-lang.org/nightly/std/io/struct.Chain.html' title='std::io::Chain'>Chain</a>&lt;Self, R&gt; <span class='where'>where R: <a class='trait' href='https://doc.rust-lang.org/nightly/std/io/trait.Read.html' title='std::io::Read'>Read</a></span></code></h4>
+<h4 id='method.take' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/std/io/trait.Read.html#method.take' class='fnname'>take</a>(self, limit: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u64.html'>u64</a>) -&gt; <a class='struct' href='https://doc.rust-lang.org/nightly/std/io/struct.Take.html' title='std::io::Take'>Take</a>&lt;Self&gt;</code></h4>
+<h4 id='method.tee' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/std/io/trait.Read.html#method.tee' class='fnname'>tee</a>&lt;W&gt;(self, out: W) -&gt; <a class='struct' href='https://doc.rust-lang.org/nightly/std/io/struct.Tee.html' title='std::io::Tee'>Tee</a>&lt;Self, W&gt; <span class='where'>where W: <a class='trait' href='https://doc.rust-lang.org/nightly/std/io/trait.Write.html' title='std::io::Write'>Write</a></span></code></h4>
+</div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><code>impl&lt;'a&gt; <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_playmoviespartner1/struct.MultiPartReader.html' title='google_playmoviespartner1::MultiPartReader'>MultiPartReader</a>&lt;'a&gt;</code></h3><div class='impl-items'><h4 id='method.default' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#method.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_playmoviespartner1/struct.MultiPartReader.html' title='google_playmoviespartner1::MultiPartReader'>MultiPartReader</a>&lt;'a&gt;</code></h4>
+</div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "google_playmoviespartner1";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../jquery.js"></script>
+    <script src="../main.js"></script>
+    
+    <script defer src="../search-index.js"></script>
+</body>
+</html>

@@ -9,6 +9,7 @@
 
     <title>lib.rs.html -- source</title>
 
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../../main.css">
 
     
@@ -24,17 +25,17 @@
 
     
 
-    <section class="sidebar">
+    <nav class="sidebar">
         
         
-    </section>
+    </nav>
 
     <nav class="sub">
         <form class="search-form js-only">
             <div class="search-container">
                 <input class="search-input" name="search"
                        autocomplete="off"
-                       placeholder="Click or press 'S' to search, '?' for more options..."
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
                        type="search">
             </div>
         </form>
@@ -237,12 +238,14 @@
 <span id="195">195</span>
 <span id="196">196</span>
 <span id="197">197</span>
+<span id="198">198</span>
+<span id="199">199</span>
 </pre><pre class='rust '>
 <span class='comment'>// DO NOT EDIT !</span>
 <span class='comment'>// This file was generated automatically from &#39;src/mako/api/lib.rs.mako&#39;</span>
 <span class='comment'>// DO NOT EDIT !</span>
 
-<span class='doccomment'>//! This documentation was generated from *Android Publisher* crate version *0.1.8+20150323*, where *20150323* is the exact revision of the *androidpublisher:v2* schema built by the [mako](http://www.makotemplates.org/) code generator *v0.1.8*.</span>
+<span class='doccomment'>//! This documentation was generated from *Android Publisher* crate version *0.1.11+20160111*, where *20160111* is the exact revision of the *androidpublisher:v2* schema built by the [mako](http://www.makotemplates.org/) code generator *v0.1.11*.</span>
 <span class='doccomment'>//! </span>
 <span class='doccomment'>//! Everything else about the *Android Publisher* *v2* API can be found at the</span>
 <span class='doccomment'>//! [official documentation site](https://developers.google.com/android-publisher).</span>
@@ -253,6 +256,8 @@
 <span class='doccomment'>//! </span>
 <span class='doccomment'>//! * edits</span>
 <span class='doccomment'>//!  * [*apklistings delete*](struct.EditApklistingDeleteCall.html), [*apklistings deleteall*](struct.EditApklistingDeleteallCall.html), [*apklistings get*](struct.EditApklistingGetCall.html), [*apklistings list*](struct.EditApklistingListCall.html), [*apklistings patch*](struct.EditApklistingPatchCall.html), [*apklistings update*](struct.EditApklistingUpdateCall.html), [*apks addexternallyhosted*](struct.EditApkAddexternallyhostedCall.html), [*apks list*](struct.EditApkListCall.html), [*apks upload*](struct.EditApkUploadCall.html), [*commit*](struct.EditCommitCall.html), [*delete*](struct.EditDeleteCall.html), [*details get*](struct.EditDetailGetCall.html), [*details patch*](struct.EditDetailPatchCall.html), [*details update*](struct.EditDetailUpdateCall.html), [*expansionfiles get*](struct.EditExpansionfileGetCall.html), [*expansionfiles patch*](struct.EditExpansionfilePatchCall.html), [*expansionfiles update*](struct.EditExpansionfileUpdateCall.html), [*expansionfiles upload*](struct.EditExpansionfileUploadCall.html), [*get*](struct.EditGetCall.html), [*images delete*](struct.EditImageDeleteCall.html), [*images deleteall*](struct.EditImageDeleteallCall.html), [*images list*](struct.EditImageListCall.html), [*images upload*](struct.EditImageUploadCall.html), [*insert*](struct.EditInsertCall.html), [*listings delete*](struct.EditListingDeleteCall.html), [*listings deleteall*](struct.EditListingDeleteallCall.html), [*listings get*](struct.EditListingGetCall.html), [*listings list*](struct.EditListingListCall.html), [*listings patch*](struct.EditListingPatchCall.html), [*listings update*](struct.EditListingUpdateCall.html), [*testers get*](struct.EditTesterGetCall.html), [*testers patch*](struct.EditTesterPatchCall.html), [*testers update*](struct.EditTesterUpdateCall.html), [*tracks get*](struct.EditTrackGetCall.html), [*tracks list*](struct.EditTrackListCall.html), [*tracks patch*](struct.EditTrackPatchCall.html), [*tracks update*](struct.EditTrackUpdateCall.html) and [*validate*](struct.EditValidateCall.html)</span>
+<span class='doccomment'>//! * [entitlements](struct.Entitlement.html)</span>
+<span class='doccomment'>//!  * [*list*](struct.EntitlementListCall.html)</span>
 <span class='doccomment'>//! * inappproducts</span>
 <span class='doccomment'>//!  * [*batch*](struct.InappproductBatchCall.html), [*delete*](struct.InappproductDeleteCall.html), [*get*](struct.InappproductGetCall.html), [*insert*](struct.InappproductInsertCall.html), [*list*](struct.InappproductListCall.html), [*patch*](struct.InappproductPatchCall.html) and [*update*](struct.InappproductUpdateCall.html)</span>
 <span class='doccomment'>//! * purchases</span>
@@ -434,43 +439,55 @@
 <span class='comment'>// unused imports in fully featured APIs. Same with unused_mut ... .</span>
 <span class='attribute'>#<span class='op'>!</span>[<span class='ident'>allow</span>(<span class='ident'>unused_imports</span>, <span class='ident'>unused_mut</span>, <span class='ident'>dead_code</span>)]</span>
 
-<span class='macro'>include</span><span class='macro'>!</span>(<span class='macro'>concat</span><span class='macro'>!</span>(<span class='macro'>env</span><span class='macro'>!</span>(<span class='string'>&quot;OUT_DIR&quot;</span>), <span class='string'>&quot;/lib.rs&quot;</span>));
-</pre>
+<span class='macro'>include</span><span class='macro'>!</span>(<span class='macro'>concat</span><span class='macro'>!</span>(<span class='macro'>env</span><span class='macro'>!</span>(<span class='string'>&quot;OUT_DIR&quot;</span>), <span class='string'>&quot;/lib.rs&quot;</span>));</pre>
 </section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
 
-    <div id="help" class="hidden">
-        <div class="shortcuts">
-            <h1>Keyboard shortcuts</h1>
-            <dl>
-                <dt>?</dt>
-                <dd>Show this help dialog</dd>
-                <dt>S</dt>
-                <dd>Focus the search field</dd>
-                <dt>&larrb;</dt>
-                <dd>Move up in search results</dd>
-                <dt>&rarrb;</dt>
-                <dd>Move down in search results</dd>
-                <dt>&#9166;</dt>
-                <dd>Go to active search result</dd>
-            </dl>
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code>)
+                </p>
+            </div>
         </div>
-        <div class="infos">
-            <h1>Search tricks</h1>
-            <p>
-                Prefix searches with a type followed by a colon (e.g.
-                <code>fn:</code>) to restrict the search to a given type.
-            </p>
-            <p>
-                Accepted types are: <code>fn</code>, <code>mod</code>,
-                <code>struct</code>, <code>enum</code>,
-                <code>trait</code>, <code>typedef</code> (or
-                <code>tdef</code>).
-            </p>
-        </div>
-    </div>
+    </aside>
 
     
 
@@ -482,6 +499,6 @@
     <script src="../../jquery.js"></script>
     <script src="../../main.js"></script>
     
-    <script async src="../../search-index.js"></script>
+    <script defer src="../../search-index.js"></script>
 </body>
 </html>

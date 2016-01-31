@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Query - webmasters v0.3.0+20140908</title>
+  <title>Query - webmasters v0.3.3+20151229</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -17,6 +17,12 @@
   <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
   <link rel="stylesheet" href="../css/highlight.css">
 
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Query";
+  </script>
+  
   <script src="../js/jquery-2.1.1.min.js"></script>
   <script src="../js/modernizr-2.8.3.min.js"></script>
   <script type="text/javascript" src="../js/highlight.pack.js"></script>
@@ -32,126 +38,175 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> webmasters v0.3.0+20140908</a>
-        
+        <a href=".." class="icon icon-home"> webmasters v0.3.3+20151229</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-      <ul class="current">
-    
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="..">Home</a>
         
-            <li class="toctree-l1 ">
-                <a class="" href="..">Home</a>
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Searchanalytics</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../searchanalytics_query/">Query</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Sitemaps</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../sitemaps_delete/">Delete</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../sitemaps_get/">Get</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../sitemaps_list/">List</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../sitemaps_submit/">Submit</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Sites</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../sites_add/">Add</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../sites_delete/">Delete</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../sites_get/">Get</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../sites_list/">List</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Urlcrawlerrorscounts</span></li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Query</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#scopes">Scopes</a></li>
                 
-            </li>
+            
+                <li class="toctree-l3"><a href="#required-scalar-argument">Required Scalar Argument</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#optional-output-flags">Optional Output Flags</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#optional-method-properties">Optional Method Properties</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#optional-general-properties">Optional General Properties</a></li>
+                
+            
+            </ul>
         
+    </li>
 
-    
         
-            <span>Sitemaps</span>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../sitemaps_delete/">Delete</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../sitemaps_get/">Get</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../sitemaps_list/">List</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../sitemaps_submit/">Submit</a>
-                    
-                </li>
-            
-        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Urlcrawlerrorssamples</span></li>
 
-    
         
-            <span>Sites</span>
             
-                <li class="toctree-l2 ">
-                    <a class="" href="../sites_add/">Add</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../sites_delete/">Delete</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../sites_get/">Get</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../sites_list/">List</a>
-                    
-                </li>
-            
+    <li class="toctree-l1 ">
+        <a class="" href="../urlcrawlerrorssamples_get/">Get</a>
         
+    </li>
 
-    
         
-            <span>Urlcrawlerrorscounts</span>
             
-                <li class="toctree-l2 current">
-                    <a class="current" href="./">Query</a>
-                    
-                        <ul>
-                        
-                            <li class="toctree-l3"><a href="#scopes">Scopes</a></li>
-                            
-                        
-                            <li class="toctree-l3"><a href="#required-scalar-argument">Required Scalar Argument</a></li>
-                            
-                        
-                            <li class="toctree-l3"><a href="#optional-output-flags">Optional Output Flags</a></li>
-                            
-                        
-                            <li class="toctree-l3"><a href="#optional-method-properties">Optional Method Properties</a></li>
-                            
-                        
-                            <li class="toctree-l3"><a href="#optional-general-properties">Optional General Properties</a></li>
-                            
-                        
-                        </ul>
-                    
-                </li>
-            
+    <li class="toctree-l1 ">
+        <a class="" href="../urlcrawlerrorssamples_list/">List</a>
         
+    </li>
 
-    
         
-            <span>Urlcrawlerrorssamples</span>
             
-                <li class="toctree-l2 ">
-                    <a class="" href="../urlcrawlerrorssamples_get/">Get</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../urlcrawlerrorssamples_list/">List</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../urlcrawlerrorssamples_mark-as-fixed/">Mark As Fixed</a>
-                    
-                </li>
-            
+    <li class="toctree-l1 ">
+        <a class="" href="../urlcrawlerrorssamples_mark-as-fixed/">Mark As Fixed</a>
         
+    </li>
 
-    
-</ul>
-
+        
+    </ul>
+<li>
+          
+        </ul>
       </div>
       &nbsp;
     </nav>
@@ -161,7 +216,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">webmasters v0.3.0+20140908</a>
+        <a href="..">webmasters v0.3.3+20151229</a>
       </nav>
 
       
@@ -172,23 +227,26 @@
     <li><a href="..">Docs</a> &raquo;</li>
     
       
-        <li>Urlcrawlerrorscounts &raquo;</li>
+        
+          <li>Urlcrawlerrorscounts &raquo;</li>
+        
       
     
     <li>Query</li>
-      <li class="wy-breadcrumbs-aside">
+    <li class="wy-breadcrumbs-aside">
+      
         
-          
-            <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/webmasters3-cli" class="icon icon-github"> Edit on GitHub</a>
-          
+          <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/webmasters3-cli" class="icon icon-github"> Edit on GitHub</a>
         
-      </li>
+      
+    </li>
   </ul>
   <hr/>
 </div>
           <div role="main">
             <div class="section">
-              <p>Retrieves a time series of the number of URL crawl errors per error category and platform.</p>
+              
+                <p>Retrieves a time series of the number of URL crawl errors per error category and platform.</p>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for at least one of the following scopes to make a valid call:</p>
 <ul>
@@ -200,7 +258,7 @@ You can set the scope for this method like this: <code>webmasters3 --scope &lt;s
 <h1 id="required-scalar-argument">Required Scalar Argument</h1>
 <ul>
 <li><strong>&lt;site-url&gt;</strong> <em>(string)</em><ul>
-<li>The site&#39;s URL, including protocol, for example &#39;http://www.example.com/&#39;</li>
+<li>The site&#39;s URL, including protocol. For example: http://www.example.com/</li>
 </ul>
 </li>
 </ul>
@@ -221,21 +279,21 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p platform=string</strong></p>
-<ul>
-<li>The user agent type (platform) that made the request, for example &#39;web&#39;. If not specified, we return results for all platforms.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p latest-counts-only=boolean</strong></p>
 <ul>
 <li>If true, returns only the latest crawl error counts.</li>
 </ul>
 </li>
 <li>
+<p><strong>-p platform=string</strong></p>
+<ul>
+<li>The user agent type (platform) that made the request. For example: web. If not specified, returns results for all platforms.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p category=string</strong></p>
 <ul>
-<li>The crawl error category, for example &#39;serverError&#39;. If not specified, we return results for all categories.</li>
+<li>The crawl error category. For example: serverError. If not specified, returns results for all categories.</li>
 </ul>
 </li>
 </ul>
@@ -285,6 +343,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 </ul>
+              
             </div>
           </div>
           <footer>
@@ -302,9 +361,10 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
   <hr/>
 
   <div role="contentinfo">
-    <p>
     <!-- Copyright etc -->
-    </p>
+    
+      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+    
   </div>
 
   Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
@@ -319,17 +379,17 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 
 <div class="rst-versions" role="note" style="cursor: pointer">
     <span class="rst-current-version" data-toggle="rst-current-version">
-        
-            <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/webmasters3-cli" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
-        
-      <span><a href="../sites_list/" style="color: #fcfcfc;">&laquo; Previous</a></span>
-      <span style="margin-left: 15px"><a href="../urlcrawlerrorssamples_get/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+          <a class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../sites_list/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../urlcrawlerrorssamples_get/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
     </span>
 </div>
 
-<!--
-MkDocs version  : 0.12.2
-Docs Build Date : 2015-06-21 14:30:15.971142
--->
 </body>
 </html>

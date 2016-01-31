@@ -9,6 +9,7 @@
 
     <title>google_admin1_directory::User - Rust</title>
 
+    <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
 
     
@@ -24,65 +25,67 @@
 
     
 
-    <section class="sidebar">
+    <nav class="sidebar">
         
         <p class='location'><a href='index.html'>google_admin1_directory</a></p><script>window.sidebarCurrent = {name: 'User', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
-    </section>
+    </nav>
 
     <nav class="sub">
         <form class="search-form js-only">
             <div class="search-container">
                 <input class="search-input" name="search"
                        autocomplete="off"
-                       placeholder="Click or press 'S' to search, '?' for more options..."
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
                        type="search">
             </div>
         </form>
     </nav>
 
     <section id='main' class="content struct">
-<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_admin1_directory</a>::<wbr><a class='struct' href=''>User</a><wbr></span><span class='out-of-band'><span id='render-detail'>
-            <a id="collapse-all" href="#">[-]</a>&nbsp;<a id="expand-all" href="#">[+]</a>
-        </span><a id='src-23540' href='../src/google_admin1_directory///home/byron/dev/rust/google-apis-rs/target/debug/build/google-admin1_directory-afecc50a8c303db7/out/lib.rs.html#5731-5800'>[src]</a></span></h1>
+<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_admin1_directory</a>::<wbr><a class='struct' href=''>User</a></span><span class='out-of-band'><span id='render-detail'>
+            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                [<span class='inner'>&#x2212;</span>]
+            </a>
+        </span><a id='src-5607' class='srclink' href='../src/google_admin1_directory///Users/byron/dev/rs/google-apis-rs/target/debug/build/google-admin1_directory-e6f96de456ac1295/out/lib.rs.html#9932-10003' title='goto source code'>[src]</a></span></h1>
 <pre class='rust struct'>pub struct User {
-    pub addresses: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub phones: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub is_delegated_admin: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt;,
-    pub suspended: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt;,
-    pub id: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub aliases: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;&gt;,
-    pub non_editable_aliases: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;&gt;,
-    pub custom_schemas: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/std/collections/hash/map/struct.HashMap.html' title='std::collections::hash::map::HashMap'>HashMap</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>, <a class='struct' href='../google_admin1_directory/struct.UserCustomProperties.html' title='google_admin1_directory::UserCustomProperties'>UserCustomProperties</a>&gt;&gt;,
-    pub deletion_time: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub suspension_reason: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub thumbnail_photo_url: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub is_admin: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt;,
-    pub relations: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub include_in_global_address_list: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt;,
-    pub etag: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub last_login_time: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub org_unit_path: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub agreed_to_terms: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt;,
-    pub external_ids: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub ip_whitelisted: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt;,
-    pub kind: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub is_mailbox_setup: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt;,
-    pub password: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub emails: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub organizations: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub primary_email: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub hash_function: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub name: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_admin1_directory/struct.UserName.html' title='google_admin1_directory::UserName'>UserName</a>&gt;,
-    pub notes: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub creation_time: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub websites: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub change_password_at_next_login: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt;,
-    pub ims: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub customer_id: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub addresses: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub phones: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub is_delegated_admin: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt;,
+    pub thumbnail_photo_etag: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub suspended: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt;,
+    pub id: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub aliases: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;&gt;,
+    pub non_editable_aliases: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;&gt;,
+    pub custom_schemas: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/std/collections/hash/map/struct.HashMap.html' title='std::collections::hash::map::HashMap'>HashMap</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>, <a class='struct' href='../google_admin1_directory/struct.UserCustomProperties.html' title='google_admin1_directory::UserCustomProperties'>UserCustomProperties</a>&gt;&gt;,
+    pub deletion_time: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub suspension_reason: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub thumbnail_photo_url: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub is_admin: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt;,
+    pub relations: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub include_in_global_address_list: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt;,
+    pub etag: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub last_login_time: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub org_unit_path: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub agreed_to_terms: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt;,
+    pub external_ids: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub ip_whitelisted: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt;,
+    pub kind: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub is_mailbox_setup: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt;,
+    pub password: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub emails: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub organizations: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub primary_email: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub hash_function: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub name: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_admin1_directory/struct.UserName.html' title='google_admin1_directory::UserName'>UserName</a>&gt;,
+    pub notes: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub creation_time: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub websites: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub change_password_at_next_login: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt;,
+    pub ims: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub customer_id: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
 }</pre><div class='docblock'><p>JSON template for User object in Directory API.</p>
 
-<h1 id="activities" class='section-header'><a
-                           href="#activities">Activities</a></h1>
+<h1 id='activities' class='section-header'><a href='#activities'>Activities</a></h1>
 <p>This type is used in activities, which are methods you may call on this type or where this type is involved in. 
 The list links the activity name, along with information about where it is used (one of <em>request</em> and <em>response</em>).</p>
 
@@ -106,81 +109,130 @@ The list links the activity name, along with information about where it is used 
 <li><a href="struct.UserDeleteCall.html">delete users</a> (none)</li>
 </ul>
 </div><h2 class='fields'>Fields</h2>
-<table><tr><td id='structfield.addresses'><a class='stability Unmarked' title='No stability level'></a><code>addresses</code></td><td><div class='docblock'><p>no description provided</p>
-</div></td></tr><tr><td id='structfield.phones'><a class='stability Unmarked' title='No stability level'></a><code>phones</code></td><td><div class='docblock'><p>no description provided</p>
-</div></td></tr><tr><td id='structfield.is_delegated_admin'><a class='stability Unmarked' title='No stability level'></a><code>is_delegated_admin</code></td><td><div class='docblock'><p>Boolean indicating if the user is delegated admin (Read-only)</p>
-</div></td></tr><tr><td id='structfield.suspended'><a class='stability Unmarked' title='No stability level'></a><code>suspended</code></td><td><div class='docblock'><p>Indicates if user is suspended</p>
-</div></td></tr><tr><td id='structfield.id'><a class='stability Unmarked' title='No stability level'></a><code>id</code></td><td><div class='docblock'><p>Unique identifier of User (Read-only)</p>
-</div></td></tr><tr><td id='structfield.aliases'><a class='stability Unmarked' title='No stability level'></a><code>aliases</code></td><td><div class='docblock'><p>List of aliases (Read-only)</p>
-</div></td></tr><tr><td id='structfield.non_editable_aliases'><a class='stability Unmarked' title='No stability level'></a><code>non_editable_aliases</code></td><td><div class='docblock'><p>List of non editable aliases (Read-only)</p>
-</div></td></tr><tr><td id='structfield.custom_schemas'><a class='stability Unmarked' title='No stability level'></a><code>custom_schemas</code></td><td><div class='docblock'><p>Custom fields of the user.</p>
-</div></td></tr><tr><td id='structfield.deletion_time'><a class='stability Unmarked' title='No stability level'></a><code>deletion_time</code></td><td><div class='docblock'><p>no description provided</p>
-</div></td></tr><tr><td id='structfield.suspension_reason'><a class='stability Unmarked' title='No stability level'></a><code>suspension_reason</code></td><td><div class='docblock'><p>Suspension reason if user is suspended (Read-only)</p>
-</div></td></tr><tr><td id='structfield.thumbnail_photo_url'><a class='stability Unmarked' title='No stability level'></a><code>thumbnail_photo_url</code></td><td><div class='docblock'><p>Photo Url of the user (Read-only)</p>
-</div></td></tr><tr><td id='structfield.is_admin'><a class='stability Unmarked' title='No stability level'></a><code>is_admin</code></td><td><div class='docblock'><p>Boolean indicating if the user is admin (Read-only)</p>
-</div></td></tr><tr><td id='structfield.relations'><a class='stability Unmarked' title='No stability level'></a><code>relations</code></td><td><div class='docblock'><p>no description provided</p>
-</div></td></tr><tr><td id='structfield.include_in_global_address_list'><a class='stability Unmarked' title='No stability level'></a><code>include_in_global_address_list</code></td><td><div class='docblock'><p>Boolean indicating if user is included in Global Address List</p>
-</div></td></tr><tr><td id='structfield.etag'><a class='stability Unmarked' title='No stability level'></a><code>etag</code></td><td><div class='docblock'><p>ETag of the resource.</p>
-</div></td></tr><tr><td id='structfield.last_login_time'><a class='stability Unmarked' title='No stability level'></a><code>last_login_time</code></td><td><div class='docblock'><p>User&#39;s last login time. (Read-only)</p>
-</div></td></tr><tr><td id='structfield.org_unit_path'><a class='stability Unmarked' title='No stability level'></a><code>org_unit_path</code></td><td><div class='docblock'><p>OrgUnit of User</p>
-</div></td></tr><tr><td id='structfield.agreed_to_terms'><a class='stability Unmarked' title='No stability level'></a><code>agreed_to_terms</code></td><td><div class='docblock'><p>Indicates if user has agreed to terms (Read-only)</p>
-</div></td></tr><tr><td id='structfield.external_ids'><a class='stability Unmarked' title='No stability level'></a><code>external_ids</code></td><td><div class='docblock'><p>no description provided</p>
-</div></td></tr><tr><td id='structfield.ip_whitelisted'><a class='stability Unmarked' title='No stability level'></a><code>ip_whitelisted</code></td><td><div class='docblock'><p>Boolean indicating if ip is whitelisted</p>
-</div></td></tr><tr><td id='structfield.kind'><a class='stability Unmarked' title='No stability level'></a><code>kind</code></td><td><div class='docblock'><p>Kind of resource this is.</p>
-</div></td></tr><tr><td id='structfield.is_mailbox_setup'><a class='stability Unmarked' title='No stability level'></a><code>is_mailbox_setup</code></td><td><div class='docblock'><p>Is mailbox setup (Read-only)</p>
-</div></td></tr><tr><td id='structfield.password'><a class='stability Unmarked' title='No stability level'></a><code>password</code></td><td><div class='docblock'><p>User&#39;s password</p>
-</div></td></tr><tr><td id='structfield.emails'><a class='stability Unmarked' title='No stability level'></a><code>emails</code></td><td><div class='docblock'><p>no description provided</p>
-</div></td></tr><tr><td id='structfield.organizations'><a class='stability Unmarked' title='No stability level'></a><code>organizations</code></td><td><div class='docblock'><p>no description provided</p>
-</div></td></tr><tr><td id='structfield.primary_email'><a class='stability Unmarked' title='No stability level'></a><code>primary_email</code></td><td><div class='docblock'><p>username of User</p>
-</div></td></tr><tr><td id='structfield.hash_function'><a class='stability Unmarked' title='No stability level'></a><code>hash_function</code></td><td><div class='docblock'><p>Hash function name for password. Supported are MD5, SHA-1 and crypt</p>
-</div></td></tr><tr><td id='structfield.name'><a class='stability Unmarked' title='No stability level'></a><code>name</code></td><td><div class='docblock'><p>User&#39;s name</p>
-</div></td></tr><tr><td id='structfield.notes'><a class='stability Unmarked' title='No stability level'></a><code>notes</code></td><td><div class='docblock'><p>no description provided</p>
-</div></td></tr><tr><td id='structfield.creation_time'><a class='stability Unmarked' title='No stability level'></a><code>creation_time</code></td><td><div class='docblock'><p>User&#39;s Google account creation time. (Read-only)</p>
-</div></td></tr><tr><td id='structfield.websites'><a class='stability Unmarked' title='No stability level'></a><code>websites</code></td><td><div class='docblock'><p>no description provided</p>
-</div></td></tr><tr><td id='structfield.change_password_at_next_login'><a class='stability Unmarked' title='No stability level'></a><code>change_password_at_next_login</code></td><td><div class='docblock'><p>Boolean indicating if the user should change password in next login</p>
-</div></td></tr><tr><td id='structfield.ims'><a class='stability Unmarked' title='No stability level'></a><code>ims</code></td><td><div class='docblock'><p>no description provided</p>
-</div></td></tr><tr><td id='structfield.customer_id'><a class='stability Unmarked' title='No stability level'></a><code>customer_id</code></td><td><div class='docblock'><p>CustomerId of User (Read-only)</p>
-</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='../google_admin1_directory/trait.RequestValue.html' title='google_admin1_directory::RequestValue'>RequestValue</a> for <a class='struct' href='../google_admin1_directory/struct.User.html' title='google_admin1_directory::User'>User</a></code></h3><div class='impl-items'></div><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='../google_admin1_directory/trait.Resource.html' title='google_admin1_directory::Resource'>Resource</a> for <a class='struct' href='../google_admin1_directory/struct.User.html' title='google_admin1_directory::User'>User</a></code></h3><div class='impl-items'></div><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='../google_admin1_directory/trait.ResponseResult.html' title='google_admin1_directory::ResponseResult'>ResponseResult</a> for <a class='struct' href='../google_admin1_directory/struct.User.html' title='google_admin1_directory::User'>User</a></code></h3><div class='impl-items'></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_admin1_directory/struct.User.html' title='google_admin1_directory::User'>User</a></code></h3><div class='impl-items'><h4 id='method.fmt' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#method.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='http://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='http://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
-</div><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_admin1_directory/struct.User.html' title='google_admin1_directory::User'>User</a></code></h3><div class='impl-items'><h4 id='method.clone' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_admin1_directory/struct.User.html' title='google_admin1_directory::User'>User</a></code></h4>
-<h4 id='method.clone_from' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code></h4>
-</div><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_admin1_directory/struct.User.html' title='google_admin1_directory::User'>User</a></code></h3><div class='impl-items'><h4 id='method.default' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/default/trait.Default.html#method.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_admin1_directory/struct.User.html' title='google_admin1_directory::User'>User</a></code></h4>
-</div><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='../serde/de/trait.Deserialize.html' title='serde::de::Deserialize'>Deserialize</a> for <a class='struct' href='../google_admin1_directory/struct.User.html' title='google_admin1_directory::User'>User</a></code></h3><div class='impl-items'><h4 id='method.deserialize' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='../serde/de/trait.Deserialize.html#method.deserialize' class='fnname'>deserialize</a>&lt;__D&gt;(deserializer: &amp;mut __D) -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../google_admin1_directory/struct.User.html' title='google_admin1_directory::User'>User</a>, __D&gt; <span class='where'>where __D: <a class='trait' href='../serde/de/trait.Deserializer.html' title='serde::de::Deserializer'>Deserializer</a></span></code></h4>
-</div><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='../serde/ser/trait.Serialize.html' title='serde::ser::Serialize'>Serialize</a> for <a class='struct' href='../google_admin1_directory/struct.User.html' title='google_admin1_directory::User'>User</a></code></h3><div class='impl-items'><h4 id='method.serialize' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='../serde/ser/trait.Serialize.html#method.serialize' class='fnname'>serialize</a>&lt;__S&gt;(&amp;self, serializer: &amp;mut __S) -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, __S&gt; <span class='where'>where __S: <a class='trait' href='../serde/ser/trait.Serializer.html' title='serde::ser::Serializer'>Serializer</a></span></code></h4>
+<table><tr class='stab '>
+                                  <td id='structfield.addresses'><code>addresses</code></td><td><div class='docblock'><p>no description provided</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.phones'><code>phones</code></td><td><div class='docblock'><p>no description provided</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.is_delegated_admin'><code>is_delegated_admin</code></td><td><div class='docblock'><p>Boolean indicating if the user is delegated admin (Read-only)</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.thumbnail_photo_etag'><code>thumbnail_photo_etag</code></td><td><div class='docblock'><p>ETag of the user&#39;s photo (Read-only)</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.suspended'><code>suspended</code></td><td><div class='docblock'><p>Indicates if user is suspended</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.id'><code>id</code></td><td><div class='docblock'><p>Unique identifier of User (Read-only)</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.aliases'><code>aliases</code></td><td><div class='docblock'><p>List of aliases (Read-only)</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.non_editable_aliases'><code>non_editable_aliases</code></td><td><div class='docblock'><p>List of non editable aliases (Read-only)</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.custom_schemas'><code>custom_schemas</code></td><td><div class='docblock'><p>Custom fields of the user.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.deletion_time'><code>deletion_time</code></td><td><div class='docblock'><p>no description provided</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.suspension_reason'><code>suspension_reason</code></td><td><div class='docblock'><p>Suspension reason if user is suspended (Read-only)</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.thumbnail_photo_url'><code>thumbnail_photo_url</code></td><td><div class='docblock'><p>Photo Url of the user (Read-only)</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.is_admin'><code>is_admin</code></td><td><div class='docblock'><p>Boolean indicating if the user is admin (Read-only)</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.relations'><code>relations</code></td><td><div class='docblock'><p>no description provided</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.include_in_global_address_list'><code>include_in_global_address_list</code></td><td><div class='docblock'><p>Boolean indicating if user is included in Global Address List</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.etag'><code>etag</code></td><td><div class='docblock'><p>ETag of the resource.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.last_login_time'><code>last_login_time</code></td><td><div class='docblock'><p>User&#39;s last login time. (Read-only)</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.org_unit_path'><code>org_unit_path</code></td><td><div class='docblock'><p>OrgUnit of User</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.agreed_to_terms'><code>agreed_to_terms</code></td><td><div class='docblock'><p>Indicates if user has agreed to terms (Read-only)</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.external_ids'><code>external_ids</code></td><td><div class='docblock'><p>no description provided</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.ip_whitelisted'><code>ip_whitelisted</code></td><td><div class='docblock'><p>Boolean indicating if ip is whitelisted</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.kind'><code>kind</code></td><td><div class='docblock'><p>Kind of resource this is.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.is_mailbox_setup'><code>is_mailbox_setup</code></td><td><div class='docblock'><p>Is mailbox setup (Read-only)</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.password'><code>password</code></td><td><div class='docblock'><p>User&#39;s password</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.emails'><code>emails</code></td><td><div class='docblock'><p>no description provided</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.organizations'><code>organizations</code></td><td><div class='docblock'><p>no description provided</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.primary_email'><code>primary_email</code></td><td><div class='docblock'><p>username of User</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.hash_function'><code>hash_function</code></td><td><div class='docblock'><p>Hash function name for password. Supported are MD5, SHA-1 and crypt</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.name'><code>name</code></td><td><div class='docblock'><p>User&#39;s name</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.notes'><code>notes</code></td><td><div class='docblock'><p>no description provided</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.creation_time'><code>creation_time</code></td><td><div class='docblock'><p>User&#39;s Google account creation time. (Read-only)</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.websites'><code>websites</code></td><td><div class='docblock'><p>no description provided</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.change_password_at_next_login'><code>change_password_at_next_login</code></td><td><div class='docblock'><p>Boolean indicating if the user should change password in next login</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.ims'><code>ims</code></td><td><div class='docblock'><p>no description provided</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.customer_id'><code>customer_id</code></td><td><div class='docblock'><p>CustomerId of User (Read-only)</p>
+</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl <a class='trait' href='../serde/de/trait.Deserialize.html' title='serde::de::Deserialize'>Deserialize</a> for <a class='struct' href='../google_admin1_directory/struct.User.html' title='google_admin1_directory::User'>User</a></code></h3><div class='impl-items'><h4 id='method.deserialize' class='method'><code>fn <a href='../serde/de/trait.Deserialize.html#method.deserialize' class='fnname'>deserialize</a>&lt;__D&gt;(deserializer: &amp;mut __D) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../google_admin1_directory/struct.User.html' title='google_admin1_directory::User'>User</a>, __D::Error&gt; <span class='where'>where __D: <a class='trait' href='../serde/de/trait.Deserializer.html' title='serde::de::Deserializer'>Deserializer</a></span></code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='../serde/ser/trait.Serialize.html' title='serde::ser::Serialize'>Serialize</a> for <a class='struct' href='../google_admin1_directory/struct.User.html' title='google_admin1_directory::User'>User</a></code></h3><div class='impl-items'><h4 id='method.serialize' class='method'><code>fn <a href='../serde/ser/trait.Serialize.html#method.serialize' class='fnname'>serialize</a>&lt;__S&gt;(&amp;self, serializer: &amp;mut __S) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, __S::Error&gt; <span class='where'>where __S: <a class='trait' href='../serde/ser/trait.Serializer.html' title='serde::ser::Serializer'>Serializer</a></span></code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='../google_admin1_directory/trait.RequestValue.html' title='google_admin1_directory::RequestValue'>RequestValue</a> for <a class='struct' href='../google_admin1_directory/struct.User.html' title='google_admin1_directory::User'>User</a></code></h3><div class='impl-items'></div><h3 class='impl'><code>impl <a class='trait' href='../google_admin1_directory/trait.Resource.html' title='google_admin1_directory::Resource'>Resource</a> for <a class='struct' href='../google_admin1_directory/struct.User.html' title='google_admin1_directory::User'>User</a></code></h3><div class='impl-items'></div><h3 class='impl'><code>impl <a class='trait' href='../google_admin1_directory/trait.ResponseResult.html' title='google_admin1_directory::ResponseResult'>ResponseResult</a> for <a class='struct' href='../google_admin1_directory/struct.User.html' title='google_admin1_directory::User'>User</a></code></h3><div class='impl-items'></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_admin1_directory/struct.User.html' title='google_admin1_directory::User'>User</a></code></h3><div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#method.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_admin1_directory/struct.User.html' title='google_admin1_directory::User'>User</a></code></h3><div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_admin1_directory/struct.User.html' title='google_admin1_directory::User'>User</a></code></h4>
+<h4 id='method.clone_from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_admin1_directory/struct.User.html' title='google_admin1_directory::User'>User</a></code></h3><div class='impl-items'><h4 id='method.default' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#method.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_admin1_directory/struct.User.html' title='google_admin1_directory::User'>User</a></code></h4>
 </div></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
 
-    <div id="help" class="hidden">
-        <div class="shortcuts">
-            <h1>Keyboard shortcuts</h1>
-            <dl>
-                <dt>?</dt>
-                <dd>Show this help dialog</dd>
-                <dt>S</dt>
-                <dd>Focus the search field</dd>
-                <dt>&larrb;</dt>
-                <dd>Move up in search results</dd>
-                <dt>&rarrb;</dt>
-                <dd>Move down in search results</dd>
-                <dt>&#9166;</dt>
-                <dd>Go to active search result</dd>
-            </dl>
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code>)
+                </p>
+            </div>
         </div>
-        <div class="infos">
-            <h1>Search tricks</h1>
-            <p>
-                Prefix searches with a type followed by a colon (e.g.
-                <code>fn:</code>) to restrict the search to a given type.
-            </p>
-            <p>
-                Accepted types are: <code>fn</code>, <code>mod</code>,
-                <code>struct</code>, <code>enum</code>,
-                <code>trait</code>, <code>typedef</code> (or
-                <code>tdef</code>).
-            </p>
-        </div>
-    </div>
+    </aside>
 
     
 
@@ -192,6 +244,6 @@ The list links the activity name, along with information about where it is used 
     <script src="../jquery.js"></script>
     <script src="../main.js"></script>
     
-    <script async src="../search-index.js"></script>
+    <script defer src="../search-index.js"></script>
 </body>
 </html>

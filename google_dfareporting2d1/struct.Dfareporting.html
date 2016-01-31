@@ -9,6 +9,7 @@
 
     <title>google_dfareporting2d1::Dfareporting - Rust</title>
 
+    <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
 
     
@@ -24,34 +25,35 @@
 
     
 
-    <section class="sidebar">
+    <nav class="sidebar">
         
         <p class='location'><a href='index.html'>google_dfareporting2d1</a></p><script>window.sidebarCurrent = {name: 'Dfareporting', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
-    </section>
+    </nav>
 
     <nav class="sub">
         <form class="search-form js-only">
             <div class="search-container">
                 <input class="search-input" name="search"
                        autocomplete="off"
-                       placeholder="Click or press 'S' to search, '?' for more options..."
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
                        type="search">
             </div>
         </form>
     </nav>
 
     <section id='main' class="content struct">
-<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_dfareporting2d1</a>::<wbr><a class='struct' href=''>Dfareporting</a><wbr></span><span class='out-of-band'><span id='render-detail'>
-            <a id="collapse-all" href="#">[-]</a>&nbsp;<a id="expand-all" href="#">[+]</a>
-        </span><a id='src-5662' href='../src/google_dfareporting2d1///home/byron/dev/rust/google-apis-rs/target/debug/build/google-dfareporting2d1-085be61ce312d762/out/lib.rs.html#1459-1463'>[src]</a></span></h1>
+<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_dfareporting2d1</a>::<wbr><a class='struct' href=''>Dfareporting</a></span><span class='out-of-band'><span id='render-detail'>
+            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                [<span class='inner'>&#x2212;</span>]
+            </a>
+        </span><a id='src-1001' class='srclink' href='../src/google_dfareporting2d1///Users/byron/dev/rs/google-apis-rs/target/debug/build/google-dfareporting2d1-457ba1c9ae9508e5/out/lib.rs.html#1600-1604' title='goto source code'>[src]</a></span></h1>
 <pre class='rust struct'>pub struct Dfareporting&lt;C, A&gt; {
     // some fields omitted
 }</pre><div class='docblock'><p>Central instance to access all Dfareporting related resource activities</p>
 
-<h1 id="examples" class='section-header'><a
-                           href="#examples">Examples</a></h1>
+<h1 id='examples' class='section-header'><a href='#examples'>Examples</a></h1>
 <p>Instantiate a new hub</p>
-<pre id='rust-example-rendered' class='rust '>
+<pre class='rust rust-example-rendered'>
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>hyper</span>;
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>yup_oauth2</span> <span class='kw'>as</span> <span class='ident'>oauth2</span>;
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>google_dfareporting2d1</span> <span class='kw'>as</span> <span class='ident'>dfareporting2d1</span>;
@@ -98,104 +100,116 @@
         <span class='op'>|</span><span class='ident'>Error</span>::<span class='ident'>JsonDecodeError</span>(_, _) <span class='op'>=&gt;</span> <span class='macro'>println</span><span class='macro'>!</span>(<span class='string'>&quot;{}&quot;</span>, <span class='ident'>e</span>),
     },
     <span class='prelude-val'>Ok</span>(<span class='ident'>res</span>) <span class='op'>=&gt;</span> <span class='macro'>println</span><span class='macro'>!</span>(<span class='string'>&quot;Success: {:?}&quot;</span>, <span class='ident'>res</span>),
-}
-</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_dfareporting2d1/struct.Dfareporting.html' title='google_dfareporting2d1::Dfareporting'>Dfareporting</a>&lt;C, A&gt; <span class='where'>where C: <a class='trait' href='http://doc.rust-lang.org/nightly/collections/borrow/trait.BorrowMut.html' title='collections::borrow::BorrowMut'>BorrowMut</a>&lt;<a class='struct' href='../hyper/client/struct.Client.html' title='hyper::client::Client'>Client</a>&gt;, A: <a class='trait' href='../yup_oauth2/helper/trait.GetToken.html' title='yup_oauth2::helper::GetToken'>GetToken</a></span></code></h3><div class='impl-items'><h4 id='method.new' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.new' class='fnname'>new</a>(client: C, authenticator: A) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.Dfareporting.html' title='google_dfareporting2d1::Dfareporting'>Dfareporting</a>&lt;C, A&gt;</code></h4>
-<h4 id='method.account_active_ad_summaries' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.account_active_ad_summaries' class='fnname'>account_active_ad_summaries</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.AccountActiveAdSummaryMethods.html' title='google_dfareporting2d1::AccountActiveAdSummaryMethods'>AccountActiveAdSummaryMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.account_permission_groups' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.account_permission_groups' class='fnname'>account_permission_groups</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.AccountPermissionGroupMethods.html' title='google_dfareporting2d1::AccountPermissionGroupMethods'>AccountPermissionGroupMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.account_permissions' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.account_permissions' class='fnname'>account_permissions</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.AccountPermissionMethods.html' title='google_dfareporting2d1::AccountPermissionMethods'>AccountPermissionMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.account_user_profiles' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.account_user_profiles' class='fnname'>account_user_profiles</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.AccountUserProfileMethods.html' title='google_dfareporting2d1::AccountUserProfileMethods'>AccountUserProfileMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.accounts' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.accounts' class='fnname'>accounts</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.AccountMethods.html' title='google_dfareporting2d1::AccountMethods'>AccountMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.ads' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.ads' class='fnname'>ads</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.AdMethods.html' title='google_dfareporting2d1::AdMethods'>AdMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.advertiser_groups' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.advertiser_groups' class='fnname'>advertiser_groups</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.AdvertiserGroupMethods.html' title='google_dfareporting2d1::AdvertiserGroupMethods'>AdvertiserGroupMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.advertisers' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.advertisers' class='fnname'>advertisers</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.AdvertiserMethods.html' title='google_dfareporting2d1::AdvertiserMethods'>AdvertiserMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.browsers' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.browsers' class='fnname'>browsers</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.BrowserMethods.html' title='google_dfareporting2d1::BrowserMethods'>BrowserMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.campaign_creative_associations' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.campaign_creative_associations' class='fnname'>campaign_creative_associations</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.CampaignCreativeAssociationMethods.html' title='google_dfareporting2d1::CampaignCreativeAssociationMethods'>CampaignCreativeAssociationMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.campaigns' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.campaigns' class='fnname'>campaigns</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.CampaignMethods.html' title='google_dfareporting2d1::CampaignMethods'>CampaignMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.change_logs' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.change_logs' class='fnname'>change_logs</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.ChangeLogMethods.html' title='google_dfareporting2d1::ChangeLogMethods'>ChangeLogMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.cities' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.cities' class='fnname'>cities</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.CityMethods.html' title='google_dfareporting2d1::CityMethods'>CityMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.connection_types' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.connection_types' class='fnname'>connection_types</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.ConnectionTypeMethods.html' title='google_dfareporting2d1::ConnectionTypeMethods'>ConnectionTypeMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.content_categories' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.content_categories' class='fnname'>content_categories</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.ContentCategoryMethods.html' title='google_dfareporting2d1::ContentCategoryMethods'>ContentCategoryMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.countries' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.countries' class='fnname'>countries</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.CountryMethods.html' title='google_dfareporting2d1::CountryMethods'>CountryMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.creative_assets' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.creative_assets' class='fnname'>creative_assets</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.CreativeAssetMethods.html' title='google_dfareporting2d1::CreativeAssetMethods'>CreativeAssetMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.creative_field_values' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.creative_field_values' class='fnname'>creative_field_values</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.CreativeFieldValueMethods.html' title='google_dfareporting2d1::CreativeFieldValueMethods'>CreativeFieldValueMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.creative_fields' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.creative_fields' class='fnname'>creative_fields</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.CreativeFieldMethods.html' title='google_dfareporting2d1::CreativeFieldMethods'>CreativeFieldMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.creative_groups' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.creative_groups' class='fnname'>creative_groups</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.CreativeGroupMethods.html' title='google_dfareporting2d1::CreativeGroupMethods'>CreativeGroupMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.creatives' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.creatives' class='fnname'>creatives</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.CreativeMethods.html' title='google_dfareporting2d1::CreativeMethods'>CreativeMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.dimension_values' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.dimension_values' class='fnname'>dimension_values</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.DimensionValueMethods.html' title='google_dfareporting2d1::DimensionValueMethods'>DimensionValueMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.directory_site_contacts' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.directory_site_contacts' class='fnname'>directory_site_contacts</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.DirectorySiteContactMethods.html' title='google_dfareporting2d1::DirectorySiteContactMethods'>DirectorySiteContactMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.directory_sites' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.directory_sites' class='fnname'>directory_sites</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.DirectorySiteMethods.html' title='google_dfareporting2d1::DirectorySiteMethods'>DirectorySiteMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.event_tags' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.event_tags' class='fnname'>event_tags</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.EventTagMethods.html' title='google_dfareporting2d1::EventTagMethods'>EventTagMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.files' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.files' class='fnname'>files</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.FileMethods.html' title='google_dfareporting2d1::FileMethods'>FileMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.floodlight_activities' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.floodlight_activities' class='fnname'>floodlight_activities</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.FloodlightActivityMethods.html' title='google_dfareporting2d1::FloodlightActivityMethods'>FloodlightActivityMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.floodlight_activity_groups' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.floodlight_activity_groups' class='fnname'>floodlight_activity_groups</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.FloodlightActivityGroupMethods.html' title='google_dfareporting2d1::FloodlightActivityGroupMethods'>FloodlightActivityGroupMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.floodlight_configurations' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.floodlight_configurations' class='fnname'>floodlight_configurations</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.FloodlightConfigurationMethods.html' title='google_dfareporting2d1::FloodlightConfigurationMethods'>FloodlightConfigurationMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.inventory_items' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.inventory_items' class='fnname'>inventory_items</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.InventoryItemMethods.html' title='google_dfareporting2d1::InventoryItemMethods'>InventoryItemMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.landing_pages' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.landing_pages' class='fnname'>landing_pages</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.LandingPageMethods.html' title='google_dfareporting2d1::LandingPageMethods'>LandingPageMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.metros' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.metros' class='fnname'>metros</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.MetroMethods.html' title='google_dfareporting2d1::MetroMethods'>MetroMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.mobile_carriers' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.mobile_carriers' class='fnname'>mobile_carriers</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.MobileCarrierMethods.html' title='google_dfareporting2d1::MobileCarrierMethods'>MobileCarrierMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.operating_system_versions' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.operating_system_versions' class='fnname'>operating_system_versions</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.OperatingSystemVersionMethods.html' title='google_dfareporting2d1::OperatingSystemVersionMethods'>OperatingSystemVersionMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.operating_systems' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.operating_systems' class='fnname'>operating_systems</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.OperatingSystemMethods.html' title='google_dfareporting2d1::OperatingSystemMethods'>OperatingSystemMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.order_documents' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.order_documents' class='fnname'>order_documents</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.OrderDocumentMethods.html' title='google_dfareporting2d1::OrderDocumentMethods'>OrderDocumentMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.orders' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.orders' class='fnname'>orders</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.OrderMethods.html' title='google_dfareporting2d1::OrderMethods'>OrderMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.placement_groups' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.placement_groups' class='fnname'>placement_groups</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.PlacementGroupMethods.html' title='google_dfareporting2d1::PlacementGroupMethods'>PlacementGroupMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.placement_strategies' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.placement_strategies' class='fnname'>placement_strategies</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.PlacementStrategyMethods.html' title='google_dfareporting2d1::PlacementStrategyMethods'>PlacementStrategyMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.placements' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.placements' class='fnname'>placements</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.PlacementMethods.html' title='google_dfareporting2d1::PlacementMethods'>PlacementMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.platform_types' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.platform_types' class='fnname'>platform_types</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.PlatformTypeMethods.html' title='google_dfareporting2d1::PlatformTypeMethods'>PlatformTypeMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.postal_codes' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.postal_codes' class='fnname'>postal_codes</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.PostalCodeMethods.html' title='google_dfareporting2d1::PostalCodeMethods'>PostalCodeMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.projects' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.projects' class='fnname'>projects</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.ProjectMethods.html' title='google_dfareporting2d1::ProjectMethods'>ProjectMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.regions' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.regions' class='fnname'>regions</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.RegionMethods.html' title='google_dfareporting2d1::RegionMethods'>RegionMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.remarketing_list_shares' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.remarketing_list_shares' class='fnname'>remarketing_list_shares</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.RemarketingListShareMethods.html' title='google_dfareporting2d1::RemarketingListShareMethods'>RemarketingListShareMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.remarketing_lists' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.remarketing_lists' class='fnname'>remarketing_lists</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.RemarketingListMethods.html' title='google_dfareporting2d1::RemarketingListMethods'>RemarketingListMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.reports' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.reports' class='fnname'>reports</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.ReportMethods.html' title='google_dfareporting2d1::ReportMethods'>ReportMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.sites' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.sites' class='fnname'>sites</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.SiteMethods.html' title='google_dfareporting2d1::SiteMethods'>SiteMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.sizes' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.sizes' class='fnname'>sizes</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.SizeMethods.html' title='google_dfareporting2d1::SizeMethods'>SizeMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.subaccounts' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.subaccounts' class='fnname'>subaccounts</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.SubaccountMethods.html' title='google_dfareporting2d1::SubaccountMethods'>SubaccountMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.targetable_remarketing_lists' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.targetable_remarketing_lists' class='fnname'>targetable_remarketing_lists</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.TargetableRemarketingListMethods.html' title='google_dfareporting2d1::TargetableRemarketingListMethods'>TargetableRemarketingListMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.user_profiles' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.user_profiles' class='fnname'>user_profiles</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.UserProfileMethods.html' title='google_dfareporting2d1::UserProfileMethods'>UserProfileMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.user_role_permission_groups' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.user_role_permission_groups' class='fnname'>user_role_permission_groups</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.UserRolePermissionGroupMethods.html' title='google_dfareporting2d1::UserRolePermissionGroupMethods'>UserRolePermissionGroupMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.user_role_permissions' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.user_role_permissions' class='fnname'>user_role_permissions</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.UserRolePermissionMethods.html' title='google_dfareporting2d1::UserRolePermissionMethods'>UserRolePermissionMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.user_roles' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.user_roles' class='fnname'>user_roles</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.UserRoleMethods.html' title='google_dfareporting2d1::UserRoleMethods'>UserRoleMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.user_agent' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.user_agent' class='fnname'>user_agent</a>(&amp;mut self, agent_name: <a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>) -&gt; <a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a></code></h4>
+}</pre>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_dfareporting2d1/struct.Dfareporting.html' title='google_dfareporting2d1::Dfareporting'>Dfareporting</a>&lt;C, A&gt; <span class='where'>where C: <a class='trait' href='https://doc.rust-lang.org/nightly/core/borrow/trait.BorrowMut.html' title='core::borrow::BorrowMut'>BorrowMut</a>&lt;<a class='struct' href='../hyper/client/struct.Client.html' title='hyper::client::Client'>Client</a>&gt;, A: <a class='trait' href='../yup_oauth2/helper/trait.GetToken.html' title='yup_oauth2::helper::GetToken'>GetToken</a></span></code></h3><div class='impl-items'><h4 id='method.new' class='method'><code>fn <a href='#method.new' class='fnname'>new</a>(client: C, authenticator: A) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.Dfareporting.html' title='google_dfareporting2d1::Dfareporting'>Dfareporting</a>&lt;C, A&gt;</code></h4>
+<h4 id='method.account_active_ad_summaries' class='method'><code>fn <a href='#method.account_active_ad_summaries' class='fnname'>account_active_ad_summaries</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.AccountActiveAdSummaryMethods.html' title='google_dfareporting2d1::AccountActiveAdSummaryMethods'>AccountActiveAdSummaryMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.account_permission_groups' class='method'><code>fn <a href='#method.account_permission_groups' class='fnname'>account_permission_groups</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.AccountPermissionGroupMethods.html' title='google_dfareporting2d1::AccountPermissionGroupMethods'>AccountPermissionGroupMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.account_permissions' class='method'><code>fn <a href='#method.account_permissions' class='fnname'>account_permissions</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.AccountPermissionMethods.html' title='google_dfareporting2d1::AccountPermissionMethods'>AccountPermissionMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.account_user_profiles' class='method'><code>fn <a href='#method.account_user_profiles' class='fnname'>account_user_profiles</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.AccountUserProfileMethods.html' title='google_dfareporting2d1::AccountUserProfileMethods'>AccountUserProfileMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.accounts' class='method'><code>fn <a href='#method.accounts' class='fnname'>accounts</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.AccountMethods.html' title='google_dfareporting2d1::AccountMethods'>AccountMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.ads' class='method'><code>fn <a href='#method.ads' class='fnname'>ads</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.AdMethods.html' title='google_dfareporting2d1::AdMethods'>AdMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.advertiser_groups' class='method'><code>fn <a href='#method.advertiser_groups' class='fnname'>advertiser_groups</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.AdvertiserGroupMethods.html' title='google_dfareporting2d1::AdvertiserGroupMethods'>AdvertiserGroupMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.advertisers' class='method'><code>fn <a href='#method.advertisers' class='fnname'>advertisers</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.AdvertiserMethods.html' title='google_dfareporting2d1::AdvertiserMethods'>AdvertiserMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.browsers' class='method'><code>fn <a href='#method.browsers' class='fnname'>browsers</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.BrowserMethods.html' title='google_dfareporting2d1::BrowserMethods'>BrowserMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.campaign_creative_associations' class='method'><code>fn <a href='#method.campaign_creative_associations' class='fnname'>campaign_creative_associations</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.CampaignCreativeAssociationMethods.html' title='google_dfareporting2d1::CampaignCreativeAssociationMethods'>CampaignCreativeAssociationMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.campaigns' class='method'><code>fn <a href='#method.campaigns' class='fnname'>campaigns</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.CampaignMethods.html' title='google_dfareporting2d1::CampaignMethods'>CampaignMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.change_logs' class='method'><code>fn <a href='#method.change_logs' class='fnname'>change_logs</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.ChangeLogMethods.html' title='google_dfareporting2d1::ChangeLogMethods'>ChangeLogMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.cities' class='method'><code>fn <a href='#method.cities' class='fnname'>cities</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.CityMethods.html' title='google_dfareporting2d1::CityMethods'>CityMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.connection_types' class='method'><code>fn <a href='#method.connection_types' class='fnname'>connection_types</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.ConnectionTypeMethods.html' title='google_dfareporting2d1::ConnectionTypeMethods'>ConnectionTypeMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.content_categories' class='method'><code>fn <a href='#method.content_categories' class='fnname'>content_categories</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.ContentCategoryMethods.html' title='google_dfareporting2d1::ContentCategoryMethods'>ContentCategoryMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.countries' class='method'><code>fn <a href='#method.countries' class='fnname'>countries</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.CountryMethods.html' title='google_dfareporting2d1::CountryMethods'>CountryMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.creative_assets' class='method'><code>fn <a href='#method.creative_assets' class='fnname'>creative_assets</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.CreativeAssetMethods.html' title='google_dfareporting2d1::CreativeAssetMethods'>CreativeAssetMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.creative_field_values' class='method'><code>fn <a href='#method.creative_field_values' class='fnname'>creative_field_values</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.CreativeFieldValueMethods.html' title='google_dfareporting2d1::CreativeFieldValueMethods'>CreativeFieldValueMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.creative_fields' class='method'><code>fn <a href='#method.creative_fields' class='fnname'>creative_fields</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.CreativeFieldMethods.html' title='google_dfareporting2d1::CreativeFieldMethods'>CreativeFieldMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.creative_groups' class='method'><code>fn <a href='#method.creative_groups' class='fnname'>creative_groups</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.CreativeGroupMethods.html' title='google_dfareporting2d1::CreativeGroupMethods'>CreativeGroupMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.creatives' class='method'><code>fn <a href='#method.creatives' class='fnname'>creatives</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.CreativeMethods.html' title='google_dfareporting2d1::CreativeMethods'>CreativeMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.dimension_values' class='method'><code>fn <a href='#method.dimension_values' class='fnname'>dimension_values</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.DimensionValueMethods.html' title='google_dfareporting2d1::DimensionValueMethods'>DimensionValueMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.directory_site_contacts' class='method'><code>fn <a href='#method.directory_site_contacts' class='fnname'>directory_site_contacts</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.DirectorySiteContactMethods.html' title='google_dfareporting2d1::DirectorySiteContactMethods'>DirectorySiteContactMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.directory_sites' class='method'><code>fn <a href='#method.directory_sites' class='fnname'>directory_sites</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.DirectorySiteMethods.html' title='google_dfareporting2d1::DirectorySiteMethods'>DirectorySiteMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.event_tags' class='method'><code>fn <a href='#method.event_tags' class='fnname'>event_tags</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.EventTagMethods.html' title='google_dfareporting2d1::EventTagMethods'>EventTagMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.files' class='method'><code>fn <a href='#method.files' class='fnname'>files</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.FileMethods.html' title='google_dfareporting2d1::FileMethods'>FileMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.floodlight_activities' class='method'><code>fn <a href='#method.floodlight_activities' class='fnname'>floodlight_activities</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.FloodlightActivityMethods.html' title='google_dfareporting2d1::FloodlightActivityMethods'>FloodlightActivityMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.floodlight_activity_groups' class='method'><code>fn <a href='#method.floodlight_activity_groups' class='fnname'>floodlight_activity_groups</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.FloodlightActivityGroupMethods.html' title='google_dfareporting2d1::FloodlightActivityGroupMethods'>FloodlightActivityGroupMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.floodlight_configurations' class='method'><code>fn <a href='#method.floodlight_configurations' class='fnname'>floodlight_configurations</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.FloodlightConfigurationMethods.html' title='google_dfareporting2d1::FloodlightConfigurationMethods'>FloodlightConfigurationMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.inventory_items' class='method'><code>fn <a href='#method.inventory_items' class='fnname'>inventory_items</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.InventoryItemMethods.html' title='google_dfareporting2d1::InventoryItemMethods'>InventoryItemMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.landing_pages' class='method'><code>fn <a href='#method.landing_pages' class='fnname'>landing_pages</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.LandingPageMethods.html' title='google_dfareporting2d1::LandingPageMethods'>LandingPageMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.metros' class='method'><code>fn <a href='#method.metros' class='fnname'>metros</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.MetroMethods.html' title='google_dfareporting2d1::MetroMethods'>MetroMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.mobile_carriers' class='method'><code>fn <a href='#method.mobile_carriers' class='fnname'>mobile_carriers</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.MobileCarrierMethods.html' title='google_dfareporting2d1::MobileCarrierMethods'>MobileCarrierMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.operating_system_versions' class='method'><code>fn <a href='#method.operating_system_versions' class='fnname'>operating_system_versions</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.OperatingSystemVersionMethods.html' title='google_dfareporting2d1::OperatingSystemVersionMethods'>OperatingSystemVersionMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.operating_systems' class='method'><code>fn <a href='#method.operating_systems' class='fnname'>operating_systems</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.OperatingSystemMethods.html' title='google_dfareporting2d1::OperatingSystemMethods'>OperatingSystemMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.order_documents' class='method'><code>fn <a href='#method.order_documents' class='fnname'>order_documents</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.OrderDocumentMethods.html' title='google_dfareporting2d1::OrderDocumentMethods'>OrderDocumentMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.orders' class='method'><code>fn <a href='#method.orders' class='fnname'>orders</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.OrderMethods.html' title='google_dfareporting2d1::OrderMethods'>OrderMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.placement_groups' class='method'><code>fn <a href='#method.placement_groups' class='fnname'>placement_groups</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.PlacementGroupMethods.html' title='google_dfareporting2d1::PlacementGroupMethods'>PlacementGroupMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.placement_strategies' class='method'><code>fn <a href='#method.placement_strategies' class='fnname'>placement_strategies</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.PlacementStrategyMethods.html' title='google_dfareporting2d1::PlacementStrategyMethods'>PlacementStrategyMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.placements' class='method'><code>fn <a href='#method.placements' class='fnname'>placements</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.PlacementMethods.html' title='google_dfareporting2d1::PlacementMethods'>PlacementMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.platform_types' class='method'><code>fn <a href='#method.platform_types' class='fnname'>platform_types</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.PlatformTypeMethods.html' title='google_dfareporting2d1::PlatformTypeMethods'>PlatformTypeMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.postal_codes' class='method'><code>fn <a href='#method.postal_codes' class='fnname'>postal_codes</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.PostalCodeMethods.html' title='google_dfareporting2d1::PostalCodeMethods'>PostalCodeMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.projects' class='method'><code>fn <a href='#method.projects' class='fnname'>projects</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.ProjectMethods.html' title='google_dfareporting2d1::ProjectMethods'>ProjectMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.regions' class='method'><code>fn <a href='#method.regions' class='fnname'>regions</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.RegionMethods.html' title='google_dfareporting2d1::RegionMethods'>RegionMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.remarketing_list_shares' class='method'><code>fn <a href='#method.remarketing_list_shares' class='fnname'>remarketing_list_shares</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.RemarketingListShareMethods.html' title='google_dfareporting2d1::RemarketingListShareMethods'>RemarketingListShareMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.remarketing_lists' class='method'><code>fn <a href='#method.remarketing_lists' class='fnname'>remarketing_lists</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.RemarketingListMethods.html' title='google_dfareporting2d1::RemarketingListMethods'>RemarketingListMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.reports' class='method'><code>fn <a href='#method.reports' class='fnname'>reports</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.ReportMethods.html' title='google_dfareporting2d1::ReportMethods'>ReportMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.sites' class='method'><code>fn <a href='#method.sites' class='fnname'>sites</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.SiteMethods.html' title='google_dfareporting2d1::SiteMethods'>SiteMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.sizes' class='method'><code>fn <a href='#method.sizes' class='fnname'>sizes</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.SizeMethods.html' title='google_dfareporting2d1::SizeMethods'>SizeMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.subaccounts' class='method'><code>fn <a href='#method.subaccounts' class='fnname'>subaccounts</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.SubaccountMethods.html' title='google_dfareporting2d1::SubaccountMethods'>SubaccountMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.targetable_remarketing_lists' class='method'><code>fn <a href='#method.targetable_remarketing_lists' class='fnname'>targetable_remarketing_lists</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.TargetableRemarketingListMethods.html' title='google_dfareporting2d1::TargetableRemarketingListMethods'>TargetableRemarketingListMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.user_profiles' class='method'><code>fn <a href='#method.user_profiles' class='fnname'>user_profiles</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.UserProfileMethods.html' title='google_dfareporting2d1::UserProfileMethods'>UserProfileMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.user_role_permission_groups' class='method'><code>fn <a href='#method.user_role_permission_groups' class='fnname'>user_role_permission_groups</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.UserRolePermissionGroupMethods.html' title='google_dfareporting2d1::UserRolePermissionGroupMethods'>UserRolePermissionGroupMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.user_role_permissions' class='method'><code>fn <a href='#method.user_role_permissions' class='fnname'>user_role_permissions</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.UserRolePermissionMethods.html' title='google_dfareporting2d1::UserRolePermissionMethods'>UserRolePermissionMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.user_roles' class='method'><code>fn <a href='#method.user_roles' class='fnname'>user_roles</a>(&amp;'a self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.UserRoleMethods.html' title='google_dfareporting2d1::UserRoleMethods'>UserRoleMethods</a>&lt;'a, C, A&gt;</code></h4>
+<h4 id='method.user_agent' class='method'><code>fn <a href='#method.user_agent' class='fnname'>user_agent</a>(&amp;mut self, agent_name: <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>) -&gt; <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a></code></h4>
 <div class='docblock'><p>Set the user-agent header field to use in all requests to the server.
-It defaults to <code>google-api-rust-client/0.1.8</code>.</p>
+It defaults to <code>google-api-rust-client/0.1.11</code>.</p>
 
 <p>Returns the previously set user-agent.</p>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_dfareporting2d1/trait.Hub.html' title='google_dfareporting2d1::Hub'>Hub</a> for <a class='struct' href='../google_dfareporting2d1/struct.Dfareporting.html' title='google_dfareporting2d1::Dfareporting'>Dfareporting</a>&lt;C, A&gt;</code></h3><div class='impl-items'></div></section>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_dfareporting2d1/trait.Hub.html' title='google_dfareporting2d1::Hub'>Hub</a> for <a class='struct' href='../google_dfareporting2d1/struct.Dfareporting.html' title='google_dfareporting2d1::Dfareporting'>Dfareporting</a>&lt;C, A&gt;</code></h3><div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
 
-    <div id="help" class="hidden">
-        <div class="shortcuts">
-            <h1>Keyboard shortcuts</h1>
-            <dl>
-                <dt>?</dt>
-                <dd>Show this help dialog</dd>
-                <dt>S</dt>
-                <dd>Focus the search field</dd>
-                <dt>&larrb;</dt>
-                <dd>Move up in search results</dd>
-                <dt>&rarrb;</dt>
-                <dd>Move down in search results</dd>
-                <dt>&#9166;</dt>
-                <dd>Go to active search result</dd>
-            </dl>
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code>)
+                </p>
+            </div>
         </div>
-        <div class="infos">
-            <h1>Search tricks</h1>
-            <p>
-                Prefix searches with a type followed by a colon (e.g.
-                <code>fn:</code>) to restrict the search to a given type.
-            </p>
-            <p>
-                Accepted types are: <code>fn</code>, <code>mod</code>,
-                <code>struct</code>, <code>enum</code>,
-                <code>trait</code>, <code>typedef</code> (or
-                <code>tdef</code>).
-            </p>
-        </div>
-    </div>
+    </aside>
 
     
 
@@ -207,6 +221,6 @@ It defaults to <code>google-api-rust-client/0.1.8</code>.</p>
     <script src="../jquery.js"></script>
     <script src="../main.js"></script>
     
-    <script async src="../search-index.js"></script>
+    <script defer src="../search-index.js"></script>
 </body>
 </html>

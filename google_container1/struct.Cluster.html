@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `Cluster` struct in crate `google_container1`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, Cluster">
+
+    <title>google_container1::Cluster - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../main.css">
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='index.html'>google_container1</a></p><script>window.sidebarCurrent = {name: 'Cluster', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content struct">
+<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_container1</a>::<wbr><a class='struct' href=''>Cluster</a></span><span class='out-of-band'><span id='render-detail'>
+            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                [<span class='inner'>&#x2212;</span>]
+            </a>
+        </span><a id='src-1720' class='srclink' href='../src/google_container1///Users/byron/dev/rs/google-apis-rs/target/debug/build/google-container1-e824ea1acdb8d097/out/lib.rs.html#2832-2875' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct Cluster {
+    pub status: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub node_ipv4_cidr_size: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>&gt;,
+    pub description: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub current_node_version: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub current_master_version: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub master_auth: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_container1/struct.MasterAuth.html' title='google_container1::MasterAuth'>MasterAuth</a>&gt;,
+    pub initial_node_count: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>&gt;,
+    pub monitoring_service: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub create_time: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub network: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub endpoint: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub name: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub logging_service: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub instance_group_urls: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;&gt;,
+    pub initial_cluster_version: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub node_config: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_container1/struct.NodeConfig.html' title='google_container1::NodeConfig'>NodeConfig</a>&gt;,
+    pub self_link: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub cluster_ipv4_cidr: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub zone: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub status_message: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub services_ipv4_cidr: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+}</pre><div class='docblock'><p>A Google Container Engine cluster.</p>
+
+<h1 id='activities' class='section-header'><a href='#activities'>Activities</a></h1>
+<p>This type is used in activities, which are methods you may call on this type or where this type is involved in. 
+The list links the activity name, along with information about where it is used (one of <em>request</em> and <em>response</em>).</p>
+
+<ul>
+<li><a href="struct.ProjectZoneClusterGetCall.html">zones clusters get projects</a> (response)</li>
+</ul>
+</div><h2 class='fields'>Fields</h2>
+<table><tr class='stab '>
+                                  <td id='structfield.status'><code>status</code></td><td><div class='docblock'><p>[Output only] The current status of this cluster.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.node_ipv4_cidr_size'><code>node_ipv4_cidr_size</code></td><td><div class='docblock'><p>[Output only] The size of the address space on each node for hosting containers. This is provisioned from within the container_ipv4_cidr range.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.description'><code>description</code></td><td><div class='docblock'><p>An optional description of this cluster.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.current_node_version'><code>current_node_version</code></td><td><div class='docblock'><p>[Output only] The current version of the node software components. If they are currently at different versions because they&#39;re in the process of being upgraded, this reflects the minimum version of any of them.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.current_master_version'><code>current_master_version</code></td><td><div class='docblock'><p>[Output only] The current software version of the master endpoint.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.master_auth'><code>master_auth</code></td><td><div class='docblock'><p>The authentication information for accessing the master.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.initial_node_count'><code>initial_node_count</code></td><td><div class='docblock'><p>The number of nodes to create in this cluster. You must ensure that your Compute Engine <a href="/compute/docs/resource-quotas">resource quota</a> is sufficient for this number of instances. You must also have available firewall and routes quota.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.monitoring_service'><code>monitoring_service</code></td><td><div class='docblock'><p>The monitoring service that the cluster should write metrics to. Currently available options: * &quot;monitoring.googleapis.com&quot; - the Google Cloud Monitoring service * &quot;none&quot; - no metrics will be exported from the cluster * &quot;&quot; - default value; the default is &quot;monitoring.googleapis.com&quot;</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.create_time'><code>create_time</code></td><td><div class='docblock'><p>[Output only] The time the cluster was created, in <a href="https://www.ietf.org/rfc/rfc3339.txt">RFC3339</a> text format.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.network'><code>network</code></td><td><div class='docblock'><p>The name of the Google Compute Engine <a href="/compute/docs/networking#networks_1">network</a> to which the cluster is connected. If left unspecified, the &quot;default&quot; network will be used.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.endpoint'><code>endpoint</code></td><td><div class='docblock'><p>[Output only] The IP address of this cluster&#39;s Kubernetes master endpoint. The endpoint can be accessed from the internet at <code>https://username:password@endpoint/</code>. See the <code>masterAuth</code> property of this resource for username and password information.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.name'><code>name</code></td><td><div class='docblock'><p>The name of this cluster. The name must be unique within this project and zone, and can be up to 40 characters with the following restrictions: * Lowercase letters, numbers, and hyphens only. * Must start with a letter. * Must end with a number or a letter.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.logging_service'><code>logging_service</code></td><td><div class='docblock'><p>The logging service that the cluster should write logs to. Currently available options: * &quot;logging.googleapis.com&quot; - the Google Cloud Logging service * &quot;none&quot; - no logs will be exported from the cluster * &quot;&quot; - default value; the default is &quot;logging.googleapis.com&quot;</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.instance_group_urls'><code>instance_group_urls</code></td><td><div class='docblock'><p>[Output only] The resource URLs of <a href="/compute/docs/instance-groups/">instance groups</a> associated with this cluster.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.initial_cluster_version'><code>initial_cluster_version</code></td><td><div class='docblock'><p>[Output only] The software version of Kubernetes master and kubelets used in the cluster when it was first created. The version can be upgraded over time.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.node_config'><code>node_config</code></td><td><div class='docblock'><p>Parameters used in creating the cluster&#39;s nodes. See the descriptions of the child properties of <code>nodeConfig</code>. If unspecified, the defaults for all child properties are used.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.self_link'><code>self_link</code></td><td><div class='docblock'><p>[Output only] Server-defined URL for the resource.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.cluster_ipv4_cidr'><code>cluster_ipv4_cidr</code></td><td><div class='docblock'><p>The IP address range of the container pods in this cluster, in <a href="http://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing">CIDR</a> notation (e.g. <code>10.96.0.0/14</code>). Leave blank to have one automatically chosen or specify a <code>/14</code> block in <code>10.0.0.0/8</code>.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.zone'><code>zone</code></td><td><div class='docblock'><p>[Output only] The name of the Google Compute Engine <a href="/compute/docs/zones#available">zone</a> in which the cluster resides.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.status_message'><code>status_message</code></td><td><div class='docblock'><p>[Output only] Additional information about the current status of this cluster, if available.</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.services_ipv4_cidr'><code>services_ipv4_cidr</code></td><td><div class='docblock'><p>[Output only] The IP address range of the Kubernetes services in this cluster, in <a href="http://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing">CIDR</a> notation (e.g. <code>1.2.3.4/29</code>). Service addresses are typically put in the last /16 from the container CIDR.</p>
+</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl <a class='trait' href='../serde/de/trait.Deserialize.html' title='serde::de::Deserialize'>Deserialize</a> for <a class='struct' href='../google_container1/struct.Cluster.html' title='google_container1::Cluster'>Cluster</a></code></h3><div class='impl-items'><h4 id='method.deserialize' class='method'><code>fn <a href='../serde/de/trait.Deserialize.html#method.deserialize' class='fnname'>deserialize</a>&lt;__D&gt;(deserializer: &amp;mut __D) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../google_container1/struct.Cluster.html' title='google_container1::Cluster'>Cluster</a>, __D::Error&gt; <span class='where'>where __D: <a class='trait' href='../serde/de/trait.Deserializer.html' title='serde::de::Deserializer'>Deserializer</a></span></code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='../serde/ser/trait.Serialize.html' title='serde::ser::Serialize'>Serialize</a> for <a class='struct' href='../google_container1/struct.Cluster.html' title='google_container1::Cluster'>Cluster</a></code></h3><div class='impl-items'><h4 id='method.serialize' class='method'><code>fn <a href='../serde/ser/trait.Serialize.html#method.serialize' class='fnname'>serialize</a>&lt;__S&gt;(&amp;self, serializer: &amp;mut __S) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, __S::Error&gt; <span class='where'>where __S: <a class='trait' href='../serde/ser/trait.Serializer.html' title='serde::ser::Serializer'>Serializer</a></span></code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='../google_container1/trait.ResponseResult.html' title='google_container1::ResponseResult'>ResponseResult</a> for <a class='struct' href='../google_container1/struct.Cluster.html' title='google_container1::Cluster'>Cluster</a></code></h3><div class='impl-items'></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_container1/struct.Cluster.html' title='google_container1::Cluster'>Cluster</a></code></h3><div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#method.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_container1/struct.Cluster.html' title='google_container1::Cluster'>Cluster</a></code></h3><div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_container1/struct.Cluster.html' title='google_container1::Cluster'>Cluster</a></code></h4>
+<h4 id='method.clone_from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_container1/struct.Cluster.html' title='google_container1::Cluster'>Cluster</a></code></h3><div class='impl-items'><h4 id='method.default' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#method.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_container1/struct.Cluster.html' title='google_container1::Cluster'>Cluster</a></code></h4>
+</div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "google_container1";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../jquery.js"></script>
+    <script src="../main.js"></script>
+    
+    <script defer src="../search-index.js"></script>
+</body>
+</html>

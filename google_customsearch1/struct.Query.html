@@ -9,6 +9,7 @@
 
     <title>google_customsearch1::Query - Rust</title>
 
+    <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
 
     
@@ -24,146 +25,198 @@
 
     
 
-    <section class="sidebar">
+    <nav class="sidebar">
         
         <p class='location'><a href='index.html'>google_customsearch1</a></p><script>window.sidebarCurrent = {name: 'Query', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
-    </section>
+    </nav>
 
     <nav class="sub">
         <form class="search-form js-only">
             <div class="search-container">
                 <input class="search-input" name="search"
                        autocomplete="off"
-                       placeholder="Click or press 'S' to search, '?' for more options..."
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
                        type="search">
             </div>
         </form>
     </nav>
 
     <section id='main' class="content struct">
-<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_customsearch1</a>::<wbr><a class='struct' href=''>Query</a><wbr></span><span class='out-of-band'><span id='render-detail'>
-            <a id="collapse-all" href="#">[-]</a>&nbsp;<a id="expand-all" href="#">[+]</a>
-        </span><a id='src-14024' href='../src/google_customsearch1///home/byron/dev/rust/google-apis-rs/target/debug/build/google-customsearch1-46cd49722b90c77f/out/lib.rs.html#3551-3626'>[src]</a></span></h1>
+<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_customsearch1</a>::<wbr><a class='struct' href=''>Query</a></span><span class='out-of-band'><span id='render-detail'>
+            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                [<span class='inner'>&#x2212;</span>]
+            </a>
+        </span><a id='src-2615' class='srclink' href='../src/google_customsearch1///Users/byron/dev/rs/google-apis-rs/target/debug/build/google-customsearch1-3df94207d8f0fdf0/out/lib.rs.html#4433-4508' title='goto source code'>[src]</a></span></h1>
 <pre class='rust struct'>pub struct Query {
-    pub date_restrict: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub input_encoding: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub or_terms: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub high_range: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub cx: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub start_page: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>&gt;,
-    pub disable_cn_tw_translation: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub cr: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub img_type: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub related_site: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub gl: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub search_type: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub title: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub google_host: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub file_type: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub img_dominant_color: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub site_search: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub cref: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub sort: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub hq: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub output_encoding: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub safe: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub search_terms: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub exact_terms: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub img_color_type: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub hl: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub total_results: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub low_range: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub count: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>&gt;,
-    pub img_size: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub language: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub rights: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub start_index: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>&gt;,
-    pub exclude_terms: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub filter: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub link_site: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub site_search_filter: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub date_restrict: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub input_encoding: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub or_terms: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub high_range: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub cx: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub start_page: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>&gt;,
+    pub disable_cn_tw_translation: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub cr: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub img_type: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub related_site: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub gl: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub search_type: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub title: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub google_host: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub file_type: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub img_dominant_color: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub site_search: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub cref: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub sort: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub hq: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub output_encoding: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub safe: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub search_terms: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub exact_terms: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub img_color_type: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub hl: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub total_results: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub low_range: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub count: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>&gt;,
+    pub img_size: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub language: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub rights: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub start_index: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>&gt;,
+    pub exclude_terms: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub filter: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub link_site: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub site_search_filter: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
 }</pre><div class='docblock'><p>There is no detailed description.</p>
 
 <p>This type is not used in any activity, and only used as <em>part</em> of another schema.</p>
 </div><h2 class='fields'>Fields</h2>
-<table><tr><td id='structfield.date_restrict'><a class='stability Unmarked' title='No stability level'></a><code>date_restrict</code></td><td><div class='docblock'><p>no description provided</p>
-</div></td></tr><tr><td id='structfield.input_encoding'><a class='stability Unmarked' title='No stability level'></a><code>input_encoding</code></td><td><div class='docblock'><p>no description provided</p>
-</div></td></tr><tr><td id='structfield.or_terms'><a class='stability Unmarked' title='No stability level'></a><code>or_terms</code></td><td><div class='docblock'><p>no description provided</p>
-</div></td></tr><tr><td id='structfield.high_range'><a class='stability Unmarked' title='No stability level'></a><code>high_range</code></td><td><div class='docblock'><p>no description provided</p>
-</div></td></tr><tr><td id='structfield.cx'><a class='stability Unmarked' title='No stability level'></a><code>cx</code></td><td><div class='docblock'><p>no description provided</p>
-</div></td></tr><tr><td id='structfield.start_page'><a class='stability Unmarked' title='No stability level'></a><code>start_page</code></td><td><div class='docblock'><p>no description provided</p>
-</div></td></tr><tr><td id='structfield.disable_cn_tw_translation'><a class='stability Unmarked' title='No stability level'></a><code>disable_cn_tw_translation</code></td><td><div class='docblock'><p>no description provided</p>
-</div></td></tr><tr><td id='structfield.cr'><a class='stability Unmarked' title='No stability level'></a><code>cr</code></td><td><div class='docblock'><p>no description provided</p>
-</div></td></tr><tr><td id='structfield.img_type'><a class='stability Unmarked' title='No stability level'></a><code>img_type</code></td><td><div class='docblock'><p>no description provided</p>
-</div></td></tr><tr><td id='structfield.related_site'><a class='stability Unmarked' title='No stability level'></a><code>related_site</code></td><td><div class='docblock'><p>no description provided</p>
-</div></td></tr><tr><td id='structfield.gl'><a class='stability Unmarked' title='No stability level'></a><code>gl</code></td><td><div class='docblock'><p>no description provided</p>
-</div></td></tr><tr><td id='structfield.search_type'><a class='stability Unmarked' title='No stability level'></a><code>search_type</code></td><td><div class='docblock'><p>no description provided</p>
-</div></td></tr><tr><td id='structfield.title'><a class='stability Unmarked' title='No stability level'></a><code>title</code></td><td><div class='docblock'><p>no description provided</p>
-</div></td></tr><tr><td id='structfield.google_host'><a class='stability Unmarked' title='No stability level'></a><code>google_host</code></td><td><div class='docblock'><p>no description provided</p>
-</div></td></tr><tr><td id='structfield.file_type'><a class='stability Unmarked' title='No stability level'></a><code>file_type</code></td><td><div class='docblock'><p>no description provided</p>
-</div></td></tr><tr><td id='structfield.img_dominant_color'><a class='stability Unmarked' title='No stability level'></a><code>img_dominant_color</code></td><td><div class='docblock'><p>no description provided</p>
-</div></td></tr><tr><td id='structfield.site_search'><a class='stability Unmarked' title='No stability level'></a><code>site_search</code></td><td><div class='docblock'><p>no description provided</p>
-</div></td></tr><tr><td id='structfield.cref'><a class='stability Unmarked' title='No stability level'></a><code>cref</code></td><td><div class='docblock'><p>no description provided</p>
-</div></td></tr><tr><td id='structfield.sort'><a class='stability Unmarked' title='No stability level'></a><code>sort</code></td><td><div class='docblock'><p>no description provided</p>
-</div></td></tr><tr><td id='structfield.hq'><a class='stability Unmarked' title='No stability level'></a><code>hq</code></td><td><div class='docblock'><p>no description provided</p>
-</div></td></tr><tr><td id='structfield.output_encoding'><a class='stability Unmarked' title='No stability level'></a><code>output_encoding</code></td><td><div class='docblock'><p>no description provided</p>
-</div></td></tr><tr><td id='structfield.safe'><a class='stability Unmarked' title='No stability level'></a><code>safe</code></td><td><div class='docblock'><p>no description provided</p>
-</div></td></tr><tr><td id='structfield.search_terms'><a class='stability Unmarked' title='No stability level'></a><code>search_terms</code></td><td><div class='docblock'><p>no description provided</p>
-</div></td></tr><tr><td id='structfield.exact_terms'><a class='stability Unmarked' title='No stability level'></a><code>exact_terms</code></td><td><div class='docblock'><p>no description provided</p>
-</div></td></tr><tr><td id='structfield.img_color_type'><a class='stability Unmarked' title='No stability level'></a><code>img_color_type</code></td><td><div class='docblock'><p>no description provided</p>
-</div></td></tr><tr><td id='structfield.hl'><a class='stability Unmarked' title='No stability level'></a><code>hl</code></td><td><div class='docblock'><p>no description provided</p>
-</div></td></tr><tr><td id='structfield.total_results'><a class='stability Unmarked' title='No stability level'></a><code>total_results</code></td><td><div class='docblock'><p>no description provided</p>
-</div></td></tr><tr><td id='structfield.low_range'><a class='stability Unmarked' title='No stability level'></a><code>low_range</code></td><td><div class='docblock'><p>no description provided</p>
-</div></td></tr><tr><td id='structfield.count'><a class='stability Unmarked' title='No stability level'></a><code>count</code></td><td><div class='docblock'><p>no description provided</p>
-</div></td></tr><tr><td id='structfield.img_size'><a class='stability Unmarked' title='No stability level'></a><code>img_size</code></td><td><div class='docblock'><p>no description provided</p>
-</div></td></tr><tr><td id='structfield.language'><a class='stability Unmarked' title='No stability level'></a><code>language</code></td><td><div class='docblock'><p>no description provided</p>
-</div></td></tr><tr><td id='structfield.rights'><a class='stability Unmarked' title='No stability level'></a><code>rights</code></td><td><div class='docblock'><p>no description provided</p>
-</div></td></tr><tr><td id='structfield.start_index'><a class='stability Unmarked' title='No stability level'></a><code>start_index</code></td><td><div class='docblock'><p>no description provided</p>
-</div></td></tr><tr><td id='structfield.exclude_terms'><a class='stability Unmarked' title='No stability level'></a><code>exclude_terms</code></td><td><div class='docblock'><p>no description provided</p>
-</div></td></tr><tr><td id='structfield.filter'><a class='stability Unmarked' title='No stability level'></a><code>filter</code></td><td><div class='docblock'><p>no description provided</p>
-</div></td></tr><tr><td id='structfield.link_site'><a class='stability Unmarked' title='No stability level'></a><code>link_site</code></td><td><div class='docblock'><p>no description provided</p>
-</div></td></tr><tr><td id='structfield.site_search_filter'><a class='stability Unmarked' title='No stability level'></a><code>site_search_filter</code></td><td><div class='docblock'><p>no description provided</p>
-</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='../google_customsearch1/trait.Part.html' title='google_customsearch1::Part'>Part</a> for <a class='struct' href='../google_customsearch1/struct.Query.html' title='google_customsearch1::Query'>Query</a></code></h3><div class='impl-items'></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_customsearch1/struct.Query.html' title='google_customsearch1::Query'>Query</a></code></h3><div class='impl-items'><h4 id='method.fmt' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#method.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='http://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='http://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
-</div><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_customsearch1/struct.Query.html' title='google_customsearch1::Query'>Query</a></code></h3><div class='impl-items'><h4 id='method.clone' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_customsearch1/struct.Query.html' title='google_customsearch1::Query'>Query</a></code></h4>
-<h4 id='method.clone_from' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code></h4>
-</div><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_customsearch1/struct.Query.html' title='google_customsearch1::Query'>Query</a></code></h3><div class='impl-items'><h4 id='method.default' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/default/trait.Default.html#method.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_customsearch1/struct.Query.html' title='google_customsearch1::Query'>Query</a></code></h4>
-</div><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='../serde/de/trait.Deserialize.html' title='serde::de::Deserialize'>Deserialize</a> for <a class='struct' href='../google_customsearch1/struct.Query.html' title='google_customsearch1::Query'>Query</a></code></h3><div class='impl-items'><h4 id='method.deserialize' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='../serde/de/trait.Deserialize.html#method.deserialize' class='fnname'>deserialize</a>&lt;__D&gt;(deserializer: &amp;mut __D) -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../google_customsearch1/struct.Query.html' title='google_customsearch1::Query'>Query</a>, __D&gt; <span class='where'>where __D: <a class='trait' href='../serde/de/trait.Deserializer.html' title='serde::de::Deserializer'>Deserializer</a></span></code></h4>
-</div><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='trait' href='../serde/ser/trait.Serialize.html' title='serde::ser::Serialize'>Serialize</a> for <a class='struct' href='../google_customsearch1/struct.Query.html' title='google_customsearch1::Query'>Query</a></code></h3><div class='impl-items'><h4 id='method.serialize' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='../serde/ser/trait.Serialize.html#method.serialize' class='fnname'>serialize</a>&lt;__S&gt;(&amp;self, serializer: &amp;mut __S) -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, __S&gt; <span class='where'>where __S: <a class='trait' href='../serde/ser/trait.Serializer.html' title='serde::ser::Serializer'>Serializer</a></span></code></h4>
+<table><tr class='stab '>
+                                  <td id='structfield.date_restrict'><code>date_restrict</code></td><td><div class='docblock'><p>no description provided</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.input_encoding'><code>input_encoding</code></td><td><div class='docblock'><p>no description provided</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.or_terms'><code>or_terms</code></td><td><div class='docblock'><p>no description provided</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.high_range'><code>high_range</code></td><td><div class='docblock'><p>no description provided</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.cx'><code>cx</code></td><td><div class='docblock'><p>no description provided</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.start_page'><code>start_page</code></td><td><div class='docblock'><p>no description provided</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.disable_cn_tw_translation'><code>disable_cn_tw_translation</code></td><td><div class='docblock'><p>no description provided</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.cr'><code>cr</code></td><td><div class='docblock'><p>no description provided</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.img_type'><code>img_type</code></td><td><div class='docblock'><p>no description provided</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.related_site'><code>related_site</code></td><td><div class='docblock'><p>no description provided</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.gl'><code>gl</code></td><td><div class='docblock'><p>no description provided</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.search_type'><code>search_type</code></td><td><div class='docblock'><p>no description provided</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.title'><code>title</code></td><td><div class='docblock'><p>no description provided</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.google_host'><code>google_host</code></td><td><div class='docblock'><p>no description provided</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.file_type'><code>file_type</code></td><td><div class='docblock'><p>no description provided</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.img_dominant_color'><code>img_dominant_color</code></td><td><div class='docblock'><p>no description provided</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.site_search'><code>site_search</code></td><td><div class='docblock'><p>no description provided</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.cref'><code>cref</code></td><td><div class='docblock'><p>no description provided</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.sort'><code>sort</code></td><td><div class='docblock'><p>no description provided</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.hq'><code>hq</code></td><td><div class='docblock'><p>no description provided</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.output_encoding'><code>output_encoding</code></td><td><div class='docblock'><p>no description provided</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.safe'><code>safe</code></td><td><div class='docblock'><p>no description provided</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.search_terms'><code>search_terms</code></td><td><div class='docblock'><p>no description provided</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.exact_terms'><code>exact_terms</code></td><td><div class='docblock'><p>no description provided</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.img_color_type'><code>img_color_type</code></td><td><div class='docblock'><p>no description provided</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.hl'><code>hl</code></td><td><div class='docblock'><p>no description provided</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.total_results'><code>total_results</code></td><td><div class='docblock'><p>no description provided</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.low_range'><code>low_range</code></td><td><div class='docblock'><p>no description provided</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.count'><code>count</code></td><td><div class='docblock'><p>no description provided</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.img_size'><code>img_size</code></td><td><div class='docblock'><p>no description provided</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.language'><code>language</code></td><td><div class='docblock'><p>no description provided</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.rights'><code>rights</code></td><td><div class='docblock'><p>no description provided</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.start_index'><code>start_index</code></td><td><div class='docblock'><p>no description provided</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.exclude_terms'><code>exclude_terms</code></td><td><div class='docblock'><p>no description provided</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.filter'><code>filter</code></td><td><div class='docblock'><p>no description provided</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.link_site'><code>link_site</code></td><td><div class='docblock'><p>no description provided</p>
+</div></td></tr><tr class='stab '>
+                                  <td id='structfield.site_search_filter'><code>site_search_filter</code></td><td><div class='docblock'><p>no description provided</p>
+</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl <a class='trait' href='../serde/de/trait.Deserialize.html' title='serde::de::Deserialize'>Deserialize</a> for <a class='struct' href='../google_customsearch1/struct.Query.html' title='google_customsearch1::Query'>Query</a></code></h3><div class='impl-items'><h4 id='method.deserialize' class='method'><code>fn <a href='../serde/de/trait.Deserialize.html#method.deserialize' class='fnname'>deserialize</a>&lt;__D&gt;(deserializer: &amp;mut __D) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../google_customsearch1/struct.Query.html' title='google_customsearch1::Query'>Query</a>, __D::Error&gt; <span class='where'>where __D: <a class='trait' href='../serde/de/trait.Deserializer.html' title='serde::de::Deserializer'>Deserializer</a></span></code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='../serde/ser/trait.Serialize.html' title='serde::ser::Serialize'>Serialize</a> for <a class='struct' href='../google_customsearch1/struct.Query.html' title='google_customsearch1::Query'>Query</a></code></h3><div class='impl-items'><h4 id='method.serialize' class='method'><code>fn <a href='../serde/ser/trait.Serialize.html#method.serialize' class='fnname'>serialize</a>&lt;__S&gt;(&amp;self, serializer: &amp;mut __S) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, __S::Error&gt; <span class='where'>where __S: <a class='trait' href='../serde/ser/trait.Serializer.html' title='serde::ser::Serializer'>Serializer</a></span></code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='../google_customsearch1/trait.Part.html' title='google_customsearch1::Part'>Part</a> for <a class='struct' href='../google_customsearch1/struct.Query.html' title='google_customsearch1::Query'>Query</a></code></h3><div class='impl-items'></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_customsearch1/struct.Query.html' title='google_customsearch1::Query'>Query</a></code></h3><div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#method.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_customsearch1/struct.Query.html' title='google_customsearch1::Query'>Query</a></code></h3><div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_customsearch1/struct.Query.html' title='google_customsearch1::Query'>Query</a></code></h4>
+<h4 id='method.clone_from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_customsearch1/struct.Query.html' title='google_customsearch1::Query'>Query</a></code></h3><div class='impl-items'><h4 id='method.default' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#method.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_customsearch1/struct.Query.html' title='google_customsearch1::Query'>Query</a></code></h4>
 </div></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
 
-    <div id="help" class="hidden">
-        <div class="shortcuts">
-            <h1>Keyboard shortcuts</h1>
-            <dl>
-                <dt>?</dt>
-                <dd>Show this help dialog</dd>
-                <dt>S</dt>
-                <dd>Focus the search field</dd>
-                <dt>&larrb;</dt>
-                <dd>Move up in search results</dd>
-                <dt>&rarrb;</dt>
-                <dd>Move down in search results</dd>
-                <dt>&#9166;</dt>
-                <dd>Go to active search result</dd>
-            </dl>
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code>)
+                </p>
+            </div>
         </div>
-        <div class="infos">
-            <h1>Search tricks</h1>
-            <p>
-                Prefix searches with a type followed by a colon (e.g.
-                <code>fn:</code>) to restrict the search to a given type.
-            </p>
-            <p>
-                Accepted types are: <code>fn</code>, <code>mod</code>,
-                <code>struct</code>, <code>enum</code>,
-                <code>trait</code>, <code>typedef</code> (or
-                <code>tdef</code>).
-            </p>
-        </div>
-    </div>
+    </aside>
 
     
 
@@ -175,6 +228,6 @@
     <script src="../jquery.js"></script>
     <script src="../main.js"></script>
     
-    <script async src="../search-index.js"></script>
+    <script defer src="../search-index.js"></script>
 </body>
 </html>

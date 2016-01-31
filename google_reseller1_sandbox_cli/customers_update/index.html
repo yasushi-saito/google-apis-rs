@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Update - reseller v0.3.0+20141112</title>
+  <title>Update - reseller v0.3.3+20151110</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -17,6 +17,12 @@
   <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
   <link rel="stylesheet" href="../css/highlight.css">
 
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Update";
+  </script>
+  
   <script src="../js/jquery-2.1.1.min.js"></script>
   <script src="../js/modernizr-2.8.3.min.js"></script>
   <script type="text/javascript" src="../js/highlight.pack.js"></script>
@@ -32,126 +38,160 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> reseller v0.3.0+20141112</a>
-        
+        <a href=".." class="icon icon-home"> reseller v0.3.3+20151110</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-      <ul class="current">
-    
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="..">Home</a>
         
-            <li class="toctree-l1 ">
-                <a class="" href="..">Home</a>
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Customers</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../customers_get/">Get</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../customers_insert/">Insert</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../customers_patch/">Patch</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Update</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#scopes">Scopes</a></li>
                 
-            </li>
+            
+                <li class="toctree-l3"><a href="#required-scalar-argument">Required Scalar Argument</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#required-request-value">Required Request Value</a></li>
+                
+                    <li><a class="toctree-l4" href="#about-cursors">About Cursors</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#optional-output-flags">Optional Output Flags</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#optional-general-properties">Optional General Properties</a></li>
+                
+            
+            </ul>
         
+    </li>
 
-    
         
-            <span>Customers</span>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../customers_get/">Get</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../customers_insert/">Insert</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../customers_patch/">Patch</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 current">
-                    <a class="current" href="./">Update</a>
-                    
-                        <ul>
-                        
-                            <li class="toctree-l3"><a href="#scopes">Scopes</a></li>
-                            
-                        
-                            <li class="toctree-l3"><a href="#required-scalar-argument">Required Scalar Argument</a></li>
-                            
-                        
-                            <li class="toctree-l3"><a href="#required-request-value">Required Request Value</a></li>
-                            
-                                <li><a class="toctree-l4" href="#about-cursors">About Cursors</a></li>
-                            
-                        
-                            <li class="toctree-l3"><a href="#optional-output-flags">Optional Output Flags</a></li>
-                            
-                        
-                            <li class="toctree-l3"><a href="#optional-general-properties">Optional General Properties</a></li>
-                            
-                        
-                        </ul>
-                    
-                </li>
-            
-        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Subscriptions</span></li>
 
-    
         
-            <span>Subscriptions</span>
             
-                <li class="toctree-l2 ">
-                    <a class="" href="../subscriptions_activate/">Activate</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../subscriptions_change-plan/">Change Plan</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../subscriptions_change-renewal-settings/">Change Renewal Settings</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../subscriptions_change-seats/">Change Seats</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../subscriptions_delete/">Delete</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../subscriptions_get/">Get</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../subscriptions_insert/">Insert</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../subscriptions_list/">List</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../subscriptions_start-paid-service/">Start Paid Service</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../subscriptions_suspend/">Suspend</a>
-                    
-                </li>
-            
+    <li class="toctree-l1 ">
+        <a class="" href="../subscriptions_activate/">Activate</a>
         
+    </li>
 
-    
-</ul>
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../subscriptions_change-plan/">Change Plan</a>
+        
+    </li>
 
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../subscriptions_change-renewal-settings/">Change Renewal Settings</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../subscriptions_change-seats/">Change Seats</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../subscriptions_delete/">Delete</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../subscriptions_get/">Get</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../subscriptions_insert/">Insert</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../subscriptions_list/">List</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../subscriptions_start-paid-service/">Start Paid Service</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../subscriptions_suspend/">Suspend</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+        </ul>
       </div>
       &nbsp;
     </nav>
@@ -161,7 +201,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">reseller v0.3.0+20141112</a>
+        <a href="..">reseller v0.3.3+20151110</a>
       </nav>
 
       
@@ -172,23 +212,26 @@
     <li><a href="..">Docs</a> &raquo;</li>
     
       
-        <li>Customers &raquo;</li>
+        
+          <li>Customers &raquo;</li>
+        
       
     
     <li>Update</li>
-      <li class="wy-breadcrumbs-aside">
+    <li class="wy-breadcrumbs-aside">
+      
         
-          
-            <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/reseller1_sandbox-cli" class="icon icon-github"> Edit on GitHub</a>
-          
+          <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/reseller1_sandbox-cli" class="icon icon-github"> Edit on GitHub</a>
         
-      </li>
+      
+    </li>
   </ul>
   <hr/>
 </div>
           <div role="main">
             <div class="section">
-              <p>Update a customer resource if one it exists and is owned by the reseller.</p>
+              
+                <p>Update a customer resource if one it exists and is owned by the reseller.</p>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for the <em>https://www.googleapis.com/auth/apps.order</em> scope to make a valid call.</p>
 <p>If unset, the scope for this method defaults to <em>https://www.googleapis.com/auth/apps.order</em>.
@@ -207,6 +250,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <pre><code>Customer:
   alternate-email: string
   customer-domain: string
+  customer-domain-verified: boolean
   customer-id: string
   kind: string
   phone-number: string
@@ -227,70 +271,74 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    alternate-email=lorem</code><ul>
+<li><code>-r .    alternate-email=erat</code><ul>
 <li>The alternate email of the customer.</li>
 </ul>
 </li>
-<li><code>customer-domain=eos</code><ul>
+<li><code>customer-domain=sadipscing</code><ul>
 <li>The domain name of the customer.</li>
 </ul>
 </li>
-<li><code>customer-id=erat</code><ul>
+<li><code>customer-domain-verified=true</code><ul>
+<li>Whether the customer&#39;s primary domain has been verified.</li>
+</ul>
+</li>
+<li><code>customer-id=eirmod</code><ul>
 <li>The id of the customer.</li>
 </ul>
 </li>
-<li><code>kind=sadipscing</code><ul>
+<li><code>kind=elitr</code><ul>
 <li>Identifies the resource as a customer.</li>
 </ul>
 </li>
-<li><code>phone-number=dolor</code><ul>
+<li><code>phone-number=amet</code><ul>
 <li>The phone number of the customer.</li>
 </ul>
 </li>
-<li><code>postal-address    address-line1=eirmod</code><ul>
+<li><code>postal-address    address-line1=no</code><ul>
 <li>Address line 1 of the address.</li>
 </ul>
 </li>
-<li><code>address-line2=elitr</code><ul>
+<li><code>address-line2=labore</code><ul>
 <li>Address line 2 of the address.</li>
 </ul>
 </li>
-<li><code>address-line3=amet</code><ul>
+<li><code>address-line3=eirmod</code><ul>
 <li>Address line 3 of the address.</li>
 </ul>
 </li>
-<li><code>contact-name=no</code><ul>
+<li><code>contact-name=dolore</code><ul>
 <li>Name of the contact person.</li>
 </ul>
 </li>
-<li><code>country-code=labore</code><ul>
+<li><code>country-code=invidunt</code><ul>
 <li>ISO 3166 country code.</li>
 </ul>
 </li>
-<li><code>kind=eirmod</code><ul>
+<li><code>kind=aliquyam</code><ul>
 <li>Identifies the resource as a customer address.</li>
 </ul>
 </li>
-<li><code>locality=dolore</code><ul>
+<li><code>locality=accusam</code><ul>
 <li>Name of the locality. This is in accordance with - http://portablecontacts.net/draft-spec.html#address_element.</li>
 </ul>
 </li>
-<li><code>organization-name=invidunt</code><ul>
+<li><code>organization-name=lorem</code><ul>
 <li>Name of the organization.</li>
 </ul>
 </li>
-<li><code>postal-code=aliquyam</code><ul>
+<li><code>postal-code=sea</code><ul>
 <li>The postal code. This is in accordance with - http://portablecontacts.net/draft-spec.html#address_element.</li>
 </ul>
 </li>
 <li>
-<p><code>region=accusam</code></p>
+<p><code>region=et</code></p>
 <ul>
 <li>Name of the region. This is in accordance with - http://portablecontacts.net/draft-spec.html#address_element.</li>
 </ul>
 </li>
 <li>
-<p><code>..    resource-ui-url=lorem</code></p>
+<p><code>..    resource-ui-url=duo</code></p>
 <ul>
 <li>Ui url for customer resource.</li>
 </ul>
@@ -361,6 +409,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 </ul>
+              
             </div>
           </div>
           <footer>
@@ -378,9 +427,10 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   <hr/>
 
   <div role="contentinfo">
-    <p>
     <!-- Copyright etc -->
-    </p>
+    
+      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+    
   </div>
 
   Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
@@ -395,17 +445,17 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <div class="rst-versions" role="note" style="cursor: pointer">
     <span class="rst-current-version" data-toggle="rst-current-version">
-        
-            <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/reseller1_sandbox-cli" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
-        
-      <span><a href="../customers_patch/" style="color: #fcfcfc;">&laquo; Previous</a></span>
-      <span style="margin-left: 15px"><a href="../subscriptions_activate/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+          <a class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../customers_patch/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../subscriptions_activate/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
     </span>
 </div>
 
-<!--
-MkDocs version  : 0.12.2
-Docs Build Date : 2015-06-21 14:31:04.290716
--->
 </body>
 </html>
