@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
+    
 
     
     
@@ -43,10 +44,10 @@
 
     <section id='main' class="content struct">
 <h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_drive2</a>::<wbr><a class='struct' href=''>About</a></span><span class='out-of-band'><span id='render-detail'>
-            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
-                [<span class='inner'>&#x2212;</span>]
-            </a>
-        </span><a id='src-1602' class='srclink' href='../src/google_drive2///Users/byron/dev/rs/google-apis-rs/target/debug/build/google-drive2-6658037b670a9eb5/out/lib.rs.html#2703-2758' title='goto source code'>[src]</a></span></h1>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-1681' class='srclink' href='../src/google_drive2/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-drive2-20bcdf54d0770b82/out/lib.rs.html#4785-4840' title='goto source code'>[src]</a></span></h1>
 <pre class='rust struct'>pub struct About {
     pub language_code: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
     pub quota_bytes_by_service: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='../google_drive2/struct.AboutQuotaBytesByService.html' title='google_drive2::AboutQuotaBytesByService'>AboutQuotaBytesByService</a>&gt;&gt;,
@@ -83,66 +84,72 @@ The list links the activity name, along with information about where it is used 
 </ul>
 </div><h2 class='fields'>Fields</h2>
 <table><tr class='stab '>
-                                  <td id='structfield.language_code'><code>language_code</code></td><td><div class='docblock'><p>The user&#39;s language or locale code, as defined by BCP 47, with some extensions from Unicode&#39;s LDML format (<a href="http://www.unicode.org/reports/tr35/">http://www.unicode.org/reports/tr35/</a>).</p>
+                             <td id='structfield.language_code'><code>language_code</code></td><td><div class='docblock'><p>The user&#39;s language or locale code, as defined by BCP 47, with some extensions from Unicode&#39;s LDML format (<a href="http://www.unicode.org/reports/tr35/">http://www.unicode.org/reports/tr35/</a>).</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.quota_bytes_by_service'><code>quota_bytes_by_service</code></td><td><div class='docblock'><p>The amount of storage quota used by different Google services.</p>
+                             <td id='structfield.quota_bytes_by_service'><code>quota_bytes_by_service</code></td><td><div class='docblock'><p>The amount of storage quota used by different Google services.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.features'><code>features</code></td><td><div class='docblock'><p>List of additional features enabled on this account.</p>
+                             <td id='structfield.features'><code>features</code></td><td><div class='docblock'><p>List of additional features enabled on this account.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.quota_bytes_used'><code>quota_bytes_used</code></td><td><div class='docblock'><p>The number of quota bytes used by Google Drive.</p>
+                             <td id='structfield.quota_bytes_used'><code>quota_bytes_used</code></td><td><div class='docblock'><p>The number of quota bytes used by Google Drive.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.kind'><code>kind</code></td><td><div class='docblock'><p>This is always drive#about.</p>
+                             <td id='structfield.kind'><code>kind</code></td><td><div class='docblock'><p>This is always drive#about.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.additional_role_info'><code>additional_role_info</code></td><td><div class='docblock'><p>Information about supported additional roles per file type. The most specific type takes precedence.</p>
+                             <td id='structfield.additional_role_info'><code>additional_role_info</code></td><td><div class='docblock'><p>Information about supported additional roles per file type. The most specific type takes precedence.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.folder_color_palette'><code>folder_color_palette</code></td><td><div class='docblock'><p>The palette of allowable folder colors as RGB hex strings.</p>
+                             <td id='structfield.folder_color_palette'><code>folder_color_palette</code></td><td><div class='docblock'><p>The palette of allowable folder colors as RGB hex strings.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.user'><code>user</code></td><td><div class='docblock'><p>The authenticated user.</p>
+                             <td id='structfield.user'><code>user</code></td><td><div class='docblock'><p>The authenticated user.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.quota_type'><code>quota_type</code></td><td><div class='docblock'><p>The type of the user&#39;s storage quota. Possible values are:
+                             <td id='structfield.quota_type'><code>quota_type</code></td><td><div class='docblock'><p>The type of the user&#39;s storage quota. Possible values are:
 - LIMITED 
 - UNLIMITED</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.quota_bytes_used_aggregate'><code>quota_bytes_used_aggregate</code></td><td><div class='docblock'><p>The number of quota bytes used by all Google apps (Drive, Picasa, etc.).</p>
+                             <td id='structfield.quota_bytes_used_aggregate'><code>quota_bytes_used_aggregate</code></td><td><div class='docblock'><p>The number of quota bytes used by all Google apps (Drive, Picasa, etc.).</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.max_upload_sizes'><code>max_upload_sizes</code></td><td><div class='docblock'><p>List of max upload sizes for each file type. The most specific type takes precedence.</p>
+                             <td id='structfield.max_upload_sizes'><code>max_upload_sizes</code></td><td><div class='docblock'><p>List of max upload sizes for each file type. The most specific type takes precedence.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.permission_id'><code>permission_id</code></td><td><div class='docblock'><p>The current user&#39;s ID as visible in the permissions collection.</p>
+                             <td id='structfield.permission_id'><code>permission_id</code></td><td><div class='docblock'><p>The current user&#39;s ID as visible in the permissions collection.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.name'><code>name</code></td><td><div class='docblock'><p>The name of the current user.</p>
+                             <td id='structfield.name'><code>name</code></td><td><div class='docblock'><p>The name of the current user.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.quota_bytes_total'><code>quota_bytes_total</code></td><td><div class='docblock'><p>The total number of quota bytes.</p>
+                             <td id='structfield.quota_bytes_total'><code>quota_bytes_total</code></td><td><div class='docblock'><p>The total number of quota bytes.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.remaining_change_ids'><code>remaining_change_ids</code></td><td><div class='docblock'><p>The number of remaining change ids.</p>
+                             <td id='structfield.remaining_change_ids'><code>remaining_change_ids</code></td><td><div class='docblock'><p>The number of remaining change ids.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.etag'><code>etag</code></td><td><div class='docblock'><p>The ETag of the item.</p>
+                             <td id='structfield.etag'><code>etag</code></td><td><div class='docblock'><p>The ETag of the item.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.import_formats'><code>import_formats</code></td><td><div class='docblock'><p>The allowable import formats.</p>
+                             <td id='structfield.import_formats'><code>import_formats</code></td><td><div class='docblock'><p>The allowable import formats.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.root_folder_id'><code>root_folder_id</code></td><td><div class='docblock'><p>The id of the root folder.</p>
+                             <td id='structfield.root_folder_id'><code>root_folder_id</code></td><td><div class='docblock'><p>The id of the root folder.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.largest_change_id'><code>largest_change_id</code></td><td><div class='docblock'><p>The largest change id.</p>
+                             <td id='structfield.largest_change_id'><code>largest_change_id</code></td><td><div class='docblock'><p>The largest change id.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.quota_bytes_used_in_trash'><code>quota_bytes_used_in_trash</code></td><td><div class='docblock'><p>The number of quota bytes used by trashed items.</p>
+                             <td id='structfield.quota_bytes_used_in_trash'><code>quota_bytes_used_in_trash</code></td><td><div class='docblock'><p>The number of quota bytes used by trashed items.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.export_formats'><code>export_formats</code></td><td><div class='docblock'><p>The allowable export formats.</p>
+                             <td id='structfield.export_formats'><code>export_formats</code></td><td><div class='docblock'><p>The allowable export formats.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.domain_sharing_policy'><code>domain_sharing_policy</code></td><td><div class='docblock'><p>The domain sharing policy for the current user. Possible values are:
+                             <td id='structfield.domain_sharing_policy'><code>domain_sharing_policy</code></td><td><div class='docblock'><p>The domain sharing policy for the current user. Possible values are:
 - allowed 
 - allowedWithWarning 
 - incomingOnly 
 - disallowed</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.self_link'><code>self_link</code></td><td><div class='docblock'><p>A link back to this item.</p>
+                             <td id='structfield.self_link'><code>self_link</code></td><td><div class='docblock'><p>A link back to this item.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.is_current_app_installed'><code>is_current_app_installed</code></td><td><div class='docblock'><p>A boolean indicating whether the authenticated app is installed by the authenticated user.</p>
-</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl <a class='trait' href='../serde/de/trait.Deserialize.html' title='serde::de::Deserialize'>Deserialize</a> for <a class='struct' href='../google_drive2/struct.About.html' title='google_drive2::About'>About</a></code></h3><div class='impl-items'><h4 id='method.deserialize' class='method'><code>fn <a href='../serde/de/trait.Deserialize.html#method.deserialize' class='fnname'>deserialize</a>&lt;__D&gt;(deserializer: &amp;mut __D) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../google_drive2/struct.About.html' title='google_drive2::About'>About</a>, __D::Error&gt; <span class='where'>where __D: <a class='trait' href='../serde/de/trait.Deserializer.html' title='serde::de::Deserializer'>Deserializer</a></span></code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='../serde/ser/trait.Serialize.html' title='serde::ser::Serialize'>Serialize</a> for <a class='struct' href='../google_drive2/struct.About.html' title='google_drive2::About'>About</a></code></h3><div class='impl-items'><h4 id='method.serialize' class='method'><code>fn <a href='../serde/ser/trait.Serialize.html#method.serialize' class='fnname'>serialize</a>&lt;__S&gt;(&amp;self, serializer: &amp;mut __S) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, __S::Error&gt; <span class='where'>where __S: <a class='trait' href='../serde/ser/trait.Serializer.html' title='serde::ser::Serializer'>Serializer</a></span></code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='../google_drive2/trait.ResponseResult.html' title='google_drive2::ResponseResult'>ResponseResult</a> for <a class='struct' href='../google_drive2/struct.About.html' title='google_drive2::About'>About</a></code></h3><div class='impl-items'></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_drive2/struct.About.html' title='google_drive2::About'>About</a></code></h3><div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#method.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_drive2/struct.About.html' title='google_drive2::About'>About</a></code></h3><div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_drive2/struct.About.html' title='google_drive2::About'>About</a></code></h4>
-<h4 id='method.clone_from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_drive2/struct.About.html' title='google_drive2::About'>About</a></code></h3><div class='impl-items'><h4 id='method.default' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#method.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_drive2/struct.About.html' title='google_drive2::About'>About</a></code></h4>
-</div></section>
+                             <td id='structfield.is_current_app_installed'><code>is_current_app_installed</code></td><td><div class='docblock'><p>A boolean indicating whether the authenticated app is installed by the authenticated user.</p>
+</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='../google_drive2/trait.ResponseResult.html' title='google_drive2::ResponseResult'>ResponseResult</a> for <a class='struct' href='../google_drive2/struct.About.html' title='google_drive2::About'>About</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-2271' class='srclink' href='../src/google_drive2/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-drive2-20bcdf54d0770b82/out/lib.rs.html#6175' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_drive2/struct.About.html' title='google_drive2::About'>About</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-1706' class='srclink' href='../src/google_drive2/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-drive2-20bcdf54d0770b82/out/lib.rs.html#4784' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.default' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_drive2/struct.About.html' title='google_drive2::About'>About</a></code></h4>
+<div class='docblock'><p>Returns the &quot;default value&quot; for a type. <a href="https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_drive2/struct.About.html' title='google_drive2::About'>About</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-1708' class='srclink' href='../src/google_drive2/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-drive2-20bcdf54d0770b82/out/lib.rs.html#4784' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_drive2/struct.About.html' title='google_drive2::About'>About</a></code></h4>
+<div class='docblock'><p>Returns a copy of the value. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone">Read more</a></p>
+</div><h4 id='method.clone_from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></h4>
+<div class='docblock'><p>Performs copy-assignment from <code>source</code>. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_drive2/struct.About.html' title='google_drive2::About'>About</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-1735' class='srclink' href='../src/google_drive2/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-drive2-20bcdf54d0770b82/out/lib.rs.html#4784' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
+<div class='docblock'><p>Formats the value using the given formatter.</p>
+</div></div></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
@@ -165,6 +172,8 @@ The list links the activity name, along with information about where it is used 
                     <dd>Move down in search results</dd>
                     <dt>&#9166;</dt>
                     <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
                 </dl>
             </div>
 
@@ -185,7 +194,7 @@ The list links the activity name, along with information about where it is used 
 
                 <p>
                     Search functions by type signature (e.g.
-                    <code>vec -> usize</code>)
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
                 </p>
             </div>
         </div>

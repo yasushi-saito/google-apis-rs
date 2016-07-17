@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
+    
 
     
     
@@ -43,19 +44,21 @@
 
     <section id='main' class="content struct">
 <h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_adexchangebuyer1d4</a>::<wbr><a class='struct' href=''>MarketplaceDeal</a></span><span class='out-of-band'><span id='render-detail'>
-            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
-                [<span class='inner'>&#x2212;</span>]
-            </a>
-        </span><a id='src-8330' class='srclink' href='../src/google_adexchangebuyer1d4///Users/byron/dev/rs/google-apis-rs/target/debug/build/google-adexchangebuyer1d4-27c9b9bbcc56c76f/out/lib.rs.html#14602-14643' title='goto source code'>[src]</a></span></h1>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-10504' class='srclink' href='../src/google_adexchangebuyer1d4/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-adexchangebuyer1d4-0325b415a7b1e556/out/lib.rs.html#22821-22868' title='goto source code'>[src]</a></span></h1>
 <pre class='rust struct'>pub struct MarketplaceDeal {
     pub delivery_control: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_adexchangebuyer1d4/struct.DeliveryControl.html' title='google_adexchangebuyer1d4::DeliveryControl'>DeliveryControl</a>&gt;,
     pub terms: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_adexchangebuyer1d4/struct.DealTerms.html' title='google_adexchangebuyer1d4::DealTerms'>DealTerms</a>&gt;,
     pub flight_end_time_ms: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
     pub shared_targetings: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='../google_adexchangebuyer1d4/struct.SharedTargeting.html' title='google_adexchangebuyer1d4::SharedTargeting'>SharedTargeting</a>&gt;&gt;,
     pub deal_id: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub seller_contacts: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='../google_adexchangebuyer1d4/struct.ContactInformation.html' title='google_adexchangebuyer1d4::ContactInformation'>ContactInformation</a>&gt;&gt;,
+    pub programmatic_creative_source: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub creative_safe_frame_compatibility: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
     pub external_deal_id: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
     pub last_update_time_ms: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub seller_contacts: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='../google_adexchangebuyer1d4/struct.ContactInformation.html' title='google_adexchangebuyer1d4::ContactInformation'>ContactInformation</a>&gt;&gt;,
     pub kind: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
     pub creative_pre_approval_policy: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
     pub name: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
@@ -65,6 +68,7 @@
     pub web_property_code: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
     pub proposal_id: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
     pub flight_start_time_ms: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub deal_serving_metadata: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_adexchangebuyer1d4/struct.DealServingMetadata.html' title='google_adexchangebuyer1d4::DealServingMetadata'>DealServingMetadata</a>&gt;,
     pub creation_time_ms: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
     pub inventory_description: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
     pub product_id: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
@@ -73,52 +77,64 @@
 <p>This type is not used in any activity, and only used as <em>part</em> of another schema.</p>
 </div><h2 class='fields'>Fields</h2>
 <table><tr class='stab '>
-                                  <td id='structfield.delivery_control'><code>delivery_control</code></td><td><div class='docblock'><p>The set of fields around delivery control that are interesting for a buyer to see but are non-negotiable. These are set by the publisher. This message is assigned an id of 100 since some day we would want to model this as a protobuf extension.</p>
+                             <td id='structfield.delivery_control'><code>delivery_control</code></td><td><div class='docblock'><p>The set of fields around delivery control that are interesting for a buyer to see but are non-negotiable. These are set by the publisher. This message is assigned an id of 100 since some day we would want to model this as a protobuf extension.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.terms'><code>terms</code></td><td><div class='docblock'><p>The negotiable terms of the deal. (updatable)</p>
+                             <td id='structfield.terms'><code>terms</code></td><td><div class='docblock'><p>The negotiable terms of the deal. (updatable)</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.flight_end_time_ms'><code>flight_end_time_ms</code></td><td><div class='docblock'><p>Proposed flight end time of the deal (ms since epoch) This will generally be stored in a granularity of a second. (updatable)</p>
+                             <td id='structfield.flight_end_time_ms'><code>flight_end_time_ms</code></td><td><div class='docblock'><p>Proposed flight end time of the deal (ms since epoch) This will generally be stored in a granularity of a second. (updatable)</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.shared_targetings'><code>shared_targetings</code></td><td><div class='docblock'><p>The shared targeting visible to buyers and sellers. (updatable)</p>
+                             <td id='structfield.shared_targetings'><code>shared_targetings</code></td><td><div class='docblock'><p>The shared targeting visible to buyers and sellers. Each shared targeting entity is AND&#39;d together. (updatable)</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.deal_id'><code>deal_id</code></td><td><div class='docblock'><p>A unique deal=id for the deal (readonly).</p>
+                             <td id='structfield.deal_id'><code>deal_id</code></td><td><div class='docblock'><p>A unique deal=id for the deal (readonly).</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.seller_contacts'><code>seller_contacts</code></td><td><div class='docblock'><p>Optional Seller contact information for the deal (buyer-readonly)</p>
+                             <td id='structfield.programmatic_creative_source'><code>programmatic_creative_source</code></td><td><div class='docblock'><p>Specifies the creative source for programmatic deals, PUBLISHER means creative is provided by seller and ADVERTISR means creative is provided by buyer. (buyer-readonly)</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.external_deal_id'><code>external_deal_id</code></td><td><div class='docblock'><p>The external deal id assigned to this deal once the deal is finalized. This is the deal-id that shows up in serving/reporting etc. (readonly)</p>
+                             <td id='structfield.creative_safe_frame_compatibility'><code>creative_safe_frame_compatibility</code></td><td><div class='docblock'><p>Specifies whether the creative is safeFrame compatible (buyer-readonly)</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.last_update_time_ms'><code>last_update_time_ms</code></td><td><div class='docblock'><p>The time (ms since epoch) when the deal was last updated. (readonly)</p>
+                             <td id='structfield.external_deal_id'><code>external_deal_id</code></td><td><div class='docblock'><p>The external deal id assigned to this deal once the deal is finalized. This is the deal-id that shows up in serving/reporting etc. (readonly)</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.kind'><code>kind</code></td><td><div class='docblock'><p>Identifies what kind of resource this is. Value: the fixed string &quot;adexchangebuyer#marketplaceDeal&quot;.</p>
+                             <td id='structfield.last_update_time_ms'><code>last_update_time_ms</code></td><td><div class='docblock'><p>The time (ms since epoch) when the deal was last updated. (readonly)</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.creative_pre_approval_policy'><code>creative_pre_approval_policy</code></td><td><div class='docblock'><p>Specifies the creative pre-approval policy (buyer-readonly)</p>
+                             <td id='structfield.seller_contacts'><code>seller_contacts</code></td><td><div class='docblock'><p>Optional Seller contact information for the deal (buyer-readonly)</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.name'><code>name</code></td><td><div class='docblock'><p>The name of the deal. (updatable)</p>
+                             <td id='structfield.kind'><code>kind</code></td><td><div class='docblock'><p>Identifies what kind of resource this is. Value: the fixed string &quot;adexchangebuyer#marketplaceDeal&quot;.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.buyer_private_data'><code>buyer_private_data</code></td><td><div class='docblock'><p>Buyer private data (hidden from seller).</p>
+                             <td id='structfield.creative_pre_approval_policy'><code>creative_pre_approval_policy</code></td><td><div class='docblock'><p>Specifies the creative pre-approval policy (buyer-readonly)</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.syndication_product'><code>syndication_product</code></td><td><div class='docblock'><p>The syndication product associated with the deal. (readonly, except on create)</p>
+                             <td id='structfield.name'><code>name</code></td><td><div class='docblock'><p>The name of the deal. (updatable)</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.product_revision_number'><code>product_revision_number</code></td><td><div class='docblock'><p>The revision number of the product that the deal was created from (readonly, except on create)</p>
+                             <td id='structfield.buyer_private_data'><code>buyer_private_data</code></td><td><div class='docblock'><p>Buyer private data (hidden from seller).</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.web_property_code'><code>web_property_code</code></td><td><div class='docblock'><p>no description provided</p>
+                             <td id='structfield.syndication_product'><code>syndication_product</code></td><td><div class='docblock'><p>The syndication product associated with the deal. (readonly, except on create)</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.proposal_id'><code>proposal_id</code></td><td><div class='docblock'><p>no description provided</p>
+                             <td id='structfield.product_revision_number'><code>product_revision_number</code></td><td><div class='docblock'><p>The revision number of the product that the deal was created from (readonly, except on create)</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.flight_start_time_ms'><code>flight_start_time_ms</code></td><td><div class='docblock'><p>Proposed flight start time of the deal (ms since epoch) This will generally be stored in a granularity of a second. (updatable)</p>
+                             <td id='structfield.web_property_code'><code>web_property_code</code></td><td><div class='docblock'><p>no description provided</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.creation_time_ms'><code>creation_time_ms</code></td><td><div class='docblock'><p>The time (ms since epoch) of the deal creation. (readonly)</p>
+                             <td id='structfield.proposal_id'><code>proposal_id</code></td><td><div class='docblock'><p>no description provided</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.inventory_description'><code>inventory_description</code></td><td><div class='docblock'><p>Description for the deal terms. (updatable)</p>
+                             <td id='structfield.flight_start_time_ms'><code>flight_start_time_ms</code></td><td><div class='docblock'><p>Proposed flight start time of the deal (ms since epoch) This will generally be stored in a granularity of a second. (updatable)</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.product_id'><code>product_id</code></td><td><div class='docblock'><p>The product-id from which this deal was created. (readonly, except on create)</p>
-</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl <a class='trait' href='../serde/de/trait.Deserialize.html' title='serde::de::Deserialize'>Deserialize</a> for <a class='struct' href='../google_adexchangebuyer1d4/struct.MarketplaceDeal.html' title='google_adexchangebuyer1d4::MarketplaceDeal'>MarketplaceDeal</a></code></h3><div class='impl-items'><h4 id='method.deserialize' class='method'><code>fn <a href='../serde/de/trait.Deserialize.html#method.deserialize' class='fnname'>deserialize</a>&lt;__D&gt;(deserializer: &amp;mut __D) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../google_adexchangebuyer1d4/struct.MarketplaceDeal.html' title='google_adexchangebuyer1d4::MarketplaceDeal'>MarketplaceDeal</a>, __D::Error&gt; <span class='where'>where __D: <a class='trait' href='../serde/de/trait.Deserializer.html' title='serde::de::Deserializer'>Deserializer</a></span></code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='../serde/ser/trait.Serialize.html' title='serde::ser::Serialize'>Serialize</a> for <a class='struct' href='../google_adexchangebuyer1d4/struct.MarketplaceDeal.html' title='google_adexchangebuyer1d4::MarketplaceDeal'>MarketplaceDeal</a></code></h3><div class='impl-items'><h4 id='method.serialize' class='method'><code>fn <a href='../serde/ser/trait.Serialize.html#method.serialize' class='fnname'>serialize</a>&lt;__S&gt;(&amp;self, serializer: &amp;mut __S) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, __S::Error&gt; <span class='where'>where __S: <a class='trait' href='../serde/ser/trait.Serializer.html' title='serde::ser::Serializer'>Serializer</a></span></code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='../google_adexchangebuyer1d4/trait.Part.html' title='google_adexchangebuyer1d4::Part'>Part</a> for <a class='struct' href='../google_adexchangebuyer1d4/struct.MarketplaceDeal.html' title='google_adexchangebuyer1d4::MarketplaceDeal'>MarketplaceDeal</a></code></h3><div class='impl-items'></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_adexchangebuyer1d4/struct.MarketplaceDeal.html' title='google_adexchangebuyer1d4::MarketplaceDeal'>MarketplaceDeal</a></code></h3><div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#method.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_adexchangebuyer1d4/struct.MarketplaceDeal.html' title='google_adexchangebuyer1d4::MarketplaceDeal'>MarketplaceDeal</a></code></h3><div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_adexchangebuyer1d4/struct.MarketplaceDeal.html' title='google_adexchangebuyer1d4::MarketplaceDeal'>MarketplaceDeal</a></code></h4>
-<h4 id='method.clone_from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_adexchangebuyer1d4/struct.MarketplaceDeal.html' title='google_adexchangebuyer1d4::MarketplaceDeal'>MarketplaceDeal</a></code></h3><div class='impl-items'><h4 id='method.default' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#method.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_adexchangebuyer1d4/struct.MarketplaceDeal.html' title='google_adexchangebuyer1d4::MarketplaceDeal'>MarketplaceDeal</a></code></h4>
-</div></section>
+                             <td id='structfield.deal_serving_metadata'><code>deal_serving_metadata</code></td><td><div class='docblock'><p>Metadata about the serving status of this deal (readonly, writes via custom actions)</p>
+</div></td></tr><tr class='stab '>
+                             <td id='structfield.creation_time_ms'><code>creation_time_ms</code></td><td><div class='docblock'><p>The time (ms since epoch) of the deal creation. (readonly)</p>
+</div></td></tr><tr class='stab '>
+                             <td id='structfield.inventory_description'><code>inventory_description</code></td><td><div class='docblock'><p>Description for the deal terms. (updatable)</p>
+</div></td></tr><tr class='stab '>
+                             <td id='structfield.product_id'><code>product_id</code></td><td><div class='docblock'><p>The product-id from which this deal was created. (readonly, except on create)</p>
+</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='../google_adexchangebuyer1d4/trait.Part.html' title='google_adexchangebuyer1d4::Part'>Part</a> for <a class='struct' href='../google_adexchangebuyer1d4/struct.MarketplaceDeal.html' title='google_adexchangebuyer1d4::MarketplaceDeal'>MarketplaceDeal</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-11073' class='srclink' href='../src/google_adexchangebuyer1d4/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-adexchangebuyer1d4-0325b415a7b1e556/out/lib.rs.html#24186' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_adexchangebuyer1d4/struct.MarketplaceDeal.html' title='google_adexchangebuyer1d4::MarketplaceDeal'>MarketplaceDeal</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-10528' class='srclink' href='../src/google_adexchangebuyer1d4/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-adexchangebuyer1d4-0325b415a7b1e556/out/lib.rs.html#22820' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.default' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_adexchangebuyer1d4/struct.MarketplaceDeal.html' title='google_adexchangebuyer1d4::MarketplaceDeal'>MarketplaceDeal</a></code></h4>
+<div class='docblock'><p>Returns the &quot;default value&quot; for a type. <a href="https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_adexchangebuyer1d4/struct.MarketplaceDeal.html' title='google_adexchangebuyer1d4::MarketplaceDeal'>MarketplaceDeal</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-10530' class='srclink' href='../src/google_adexchangebuyer1d4/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-adexchangebuyer1d4-0325b415a7b1e556/out/lib.rs.html#22820' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_adexchangebuyer1d4/struct.MarketplaceDeal.html' title='google_adexchangebuyer1d4::MarketplaceDeal'>MarketplaceDeal</a></code></h4>
+<div class='docblock'><p>Returns a copy of the value. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone">Read more</a></p>
+</div><h4 id='method.clone_from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></h4>
+<div class='docblock'><p>Performs copy-assignment from <code>source</code>. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_adexchangebuyer1d4/struct.MarketplaceDeal.html' title='google_adexchangebuyer1d4::MarketplaceDeal'>MarketplaceDeal</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-10556' class='srclink' href='../src/google_adexchangebuyer1d4/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-adexchangebuyer1d4-0325b415a7b1e556/out/lib.rs.html#22820' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
+<div class='docblock'><p>Formats the value using the given formatter.</p>
+</div></div></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
@@ -141,6 +157,8 @@
                     <dd>Move down in search results</dd>
                     <dt>&#9166;</dt>
                     <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
                 </dl>
             </div>
 
@@ -161,7 +179,7 @@
 
                 <p>
                     Search functions by type signature (e.g.
-                    <code>vec -> usize</code>)
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
                 </p>
             </div>
         </div>

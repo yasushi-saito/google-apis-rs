@@ -1,5 +1,5 @@
 (function() {var implementors = {};
-implementors['google_serviceregistryalpha'] = [];
+implementors["google_serviceregistryalpha"] = [];
 
             if (window.register_implementors) {
                 window.register_implementors(implementors);

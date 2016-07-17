@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
+    
 
     
     
@@ -43,10 +44,10 @@
 
     <section id='main' class="content struct">
 <h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_books1</a>::<wbr><a class='struct' href=''>OnboardingListCategoryCall</a></span><span class='out-of-band'><span id='render-detail'>
-            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
-                [<span class='inner'>&#x2212;</span>]
-            </a>
-        </span><a id='src-16644' class='srclink' href='../src/google_books1///Users/byron/dev/rs/google-apis-rs/target/debug/build/google-books1-494e01ce027cd40c/out/lib.rs.html#32462-32468' title='goto source code'>[src]</a></span></h1>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-17578' class='srclink' href='../src/google_books1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-books1-a5e4a686ccba6d06/out/lib.rs.html#40539-40545' title='goto source code'>[src]</a></span></h1>
 <pre class='rust struct'>pub struct OnboardingListCategoryCall&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>List categories for onboarding experience.</p>
@@ -56,15 +57,17 @@ It is not used directly, but through a <code>OnboardingMethods</code> instance.<
 
 <h1 id='example' class='section-header'><a href='#example'>Example</a></h1>
 <p>Instantiate a resource method builder</p>
+
 <pre class='rust rust-example-rendered'>
  
 <span class='comment'>// You can configure optional parameters by calling the respective setters at will, and</span>
 <span class='comment'>// execute the final call using `doit()`.</span>
 <span class='comment'>// Values shown here are possibly random and not representative !</span>
 <span class='kw'>let</span> <span class='ident'>result</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>onboarding</span>().<span class='ident'>list_categories</span>()
-             .<span class='ident'>locale</span>(<span class='string'>&quot;amet.&quot;</span>)
+             .<span class='ident'>locale</span>(<span class='string'>&quot;ut&quot;</span>)
              .<span class='ident'>doit</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_books1/struct.OnboardingListCategoryCall.html' title='google_books1::OnboardingListCategoryCall'>OnboardingListCategoryCall</a>&lt;'a, C, A&gt; <span class='where'>where C: <a class='trait' href='https://doc.rust-lang.org/nightly/core/borrow/trait.BorrowMut.html' title='core::borrow::BorrowMut'>BorrowMut</a>&lt;<a class='struct' href='../hyper/client/struct.Client.html' title='hyper::client::Client'>Client</a>&gt;, A: <a class='trait' href='../yup_oauth2/helper/trait.GetToken.html' title='yup_oauth2::helper::GetToken'>GetToken</a></span></code></h3><div class='impl-items'><h4 id='method.doit' class='method'><code>fn <a href='#method.doit' class='fnname'>doit</a>(self) -&gt; <a class='type' href='../google_books1/type.Result.html' title='google_books1::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>(<a class='struct' href='../hyper/client/response/struct.Response.html' title='hyper::client::response::Response'>Response</a>, <a class='struct' href='../google_books1/struct.Category.html' title='google_books1::Category'>Category</a>)</a>&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_books1/struct.OnboardingListCategoryCall.html' title='google_books1::OnboardingListCategoryCall'>OnboardingListCategoryCall</a>&lt;'a, C, A&gt; <span class='where'>where C: <a class='trait' href='https://doc.rust-lang.org/nightly/core/borrow/trait.BorrowMut.html' title='core::borrow::BorrowMut'>BorrowMut</a>&lt;<a class='struct' href='../hyper/client/struct.Client.html' title='hyper::client::Client'>Client</a>&gt;, A: <a class='trait' href='../yup_oauth2/helper/trait.GetToken.html' title='yup_oauth2::helper::GetToken'>GetToken</a></span></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-17591' class='srclink' href='../src/google_books1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-books1-a5e4a686ccba6d06/out/lib.rs.html#40547-40713' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.doit' class='method'><code>fn <a href='#method.doit' class='fnname'>doit</a>(self) -&gt; <a class='type' href='../google_books1/type.Result.html' title='google_books1::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>(</a><a class='struct' href='../hyper/client/response/struct.Response.html' title='hyper::client::response::Response'>Response</a>, <a class='struct' href='../google_books1/struct.Category.html' title='google_books1::Category'>Category</a><a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>)</a>&gt;</code></h4>
 <div class='docblock'><p>Perform the operation you have build so far.</p>
 </div><h4 id='method.locale' class='method'><code>fn <a href='#method.locale' class='fnname'>locale</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_books1/struct.OnboardingListCategoryCall.html' title='google_books1::OnboardingListCategoryCall'>OnboardingListCategoryCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>ISO-639-1 language and ISO-3166-1 country code. Default is en-US if unset.</p>
@@ -107,7 +110,8 @@ tokens for more than one scope.</p>
 <p>Usually there is more than one suitable scope to authorize an operation, some of which may
 encompass more rights than others. For example, for listing resources, a <em>read-only</em> scope will be
 sufficient, a read-write scope will do as well.</p>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_books1/trait.CallBuilder.html' title='google_books1::CallBuilder'>CallBuilder</a> for <a class='struct' href='../google_books1/struct.OnboardingListCategoryCall.html' title='google_books1::OnboardingListCategoryCall'>OnboardingListCategoryCall</a>&lt;'a, C, A&gt;</code></h3><div class='impl-items'></div></section>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_books1/trait.CallBuilder.html' title='google_books1::CallBuilder'>CallBuilder</a> for <a class='struct' href='../google_books1/struct.OnboardingListCategoryCall.html' title='google_books1::OnboardingListCategoryCall'>OnboardingListCategoryCall</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-17587' class='srclink' href='../src/google_books1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-books1-a5e4a686ccba6d06/out/lib.rs.html#40546' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
@@ -130,6 +134,8 @@ sufficient, a read-write scope will do as well.</p>
                     <dd>Move down in search results</dd>
                     <dt>&#9166;</dt>
                     <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
                 </dl>
             </div>
 
@@ -150,7 +156,7 @@ sufficient, a read-write scope will do as well.</p>
 
                 <p>
                     Search functions by type signature (e.g.
-                    <code>vec -> usize</code>)
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
                 </p>
             </div>
         </div>

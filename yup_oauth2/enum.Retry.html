@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
+    
 
     
     
@@ -43,21 +44,21 @@
 
     <section id='main' class="content enum">
 <h1 class='fqn'><span class='in-band'>Enum <a href='index.html'>yup_oauth2</a>::<wbr><a class='enum' href=''>Retry</a></span><span class='out-of-band'><span id='render-detail'>
-            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
-                [<span class='inner'>&#x2212;</span>]
-            </a>
-        </span><a id='src-1460' class='srclink' href='../src/yup_oauth2///Users/byron/dev/rs/google-apis-rs/target/debug/build/yup-oauth2-6fcf5dac526993e1/out/lib.rs.html#2886-2897' title='goto source code'>[src]</a></span></h1>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-1205' class='srclink' href='../src/yup_oauth2/Users/byron/dev/rs/google-apis-rs/target/debug/build/yup-oauth2-c2f12acffde13c95/out/lib.rs.html#2766-2777' title='goto source code'>[src]</a></span></h1>
 <pre class='rust enum'>pub enum Retry {
     Abort,
     After(<a class='struct' href='https://doc.rust-lang.org/nightly/std/time/duration/struct.Duration.html' title='std::time::duration::Duration'>Duration</a>),
     Skip,
 }</pre><div class='docblock'><p>A utility type to indicate how operations DeviceFlowHelper operations should be retried</p>
 </div><h2 class='variants'>Variants</h2>
-<table><tr><td id='variant.Abort'><code>Abort</code></td><td><div class='docblock'><p>Signal you don&#39;t want to retry</p>
-</div></td></tr><tr><td id='variant.After'><code>After</code></td><td><div class='docblock'><p>Signals you want to retry after the given duration</p>
-</div></td></tr><tr><td id='variant.Skip'><code>Skip</code></td><td><div class='docblock'><p>Instruct the caller to attempt to keep going, or choose an alternate path.
+<table class='variants_table'><tr><td id='variant.Abort'><code>Abort</code></td><td><div class='docblock'><p>Signal you don&#39;t want to retry</p>
+</div></td><td></td></tr><tr><td id='variant.After'><code>After</code></td><td><div class='docblock'><p>Signals you want to retry after the given duration</p>
+</div></td><td></td></tr><tr><td id='variant.Skip'><code>Skip</code></td><td><div class='docblock'><p>Instruct the caller to attempt to keep going, or choose an alternate path.
 If this is not supported, it will have the same effect as <code>Abort</code></p>
-</div></td></tr></table></section>
+</div></td><td></td></tr></table></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
@@ -80,6 +81,8 @@ If this is not supported, it will have the same effect as <code>Abort</code></p>
                     <dd>Move down in search results</dd>
                     <dt>&#9166;</dt>
                     <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
                 </dl>
             </div>
 
@@ -100,7 +103,7 @@ If this is not supported, it will have the same effect as <code>Abort</code></p>
 
                 <p>
                     Search functions by type signature (e.g.
-                    <code>vec -> usize</code>)
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
                 </p>
             </div>
         </div>

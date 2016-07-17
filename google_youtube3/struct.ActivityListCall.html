@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
+    
 
     
     
@@ -43,10 +44,10 @@
 
     <section id='main' class="content struct">
 <h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_youtube3</a>::<wbr><a class='struct' href=''>ActivityListCall</a></span><span class='out-of-band'><span id='render-detail'>
-            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
-                [<span class='inner'>&#x2212;</span>]
-            </a>
-        </span><a id='src-33457' class='srclink' href='../src/google_youtube3///Users/byron/dev/rs/google-apis-rs/target/debug/build/google-youtube3-4efca17fcf3e49e3/out/lib.rs.html#62659-62673' title='goto source code'>[src]</a></span></h1>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-35946' class='srclink' href='../src/google_youtube3/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-youtube3-db4668f928b0f408/out/lib.rs.html#80920-80934' title='goto source code'>[src]</a></span></h1>
 <pre class='rust struct'>pub struct ActivityListCall&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>Returns a list of channel activity events that match the request criteria. For example, you can retrieve events associated with a particular channel, events associated with the user&#39;s subscriptions and Google+ friends, or the YouTube home page feed, which is customized for each user.</p>
@@ -56,6 +57,7 @@ It is not used directly, but through a <code>ActivityMethods</code> instance.</p
 
 <h1 id='example' class='section-header'><a href='#example'>Example</a></h1>
 <p>Instantiate a resource method builder</p>
+
 <pre class='rust rust-example-rendered'>
  
 <span class='comment'>// You can configure optional parameters by calling the respective setters at will, and</span>
@@ -66,12 +68,13 @@ It is not used directly, but through a <code>ActivityMethods</code> instance.</p
              .<span class='ident'>published_before</span>(<span class='string'>&quot;diam&quot;</span>)
              .<span class='ident'>published_after</span>(<span class='string'>&quot;rebum.&quot;</span>)
              .<span class='ident'>page_token</span>(<span class='string'>&quot;consetetur&quot;</span>)
-             .<span class='ident'>mine</span>(<span class='boolval'>true</span>)
+             .<span class='ident'>mine</span>(<span class='boolvalue'>true</span>)
              .<span class='ident'>max_results</span>(<span class='number'>25</span>)
-             .<span class='ident'>home</span>(<span class='boolval'>false</span>)
+             .<span class='ident'>home</span>(<span class='boolvalue'>false</span>)
              .<span class='ident'>channel_id</span>(<span class='string'>&quot;invidunt&quot;</span>)
              .<span class='ident'>doit</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_youtube3/struct.ActivityListCall.html' title='google_youtube3::ActivityListCall'>ActivityListCall</a>&lt;'a, C, A&gt; <span class='where'>where C: <a class='trait' href='https://doc.rust-lang.org/nightly/core/borrow/trait.BorrowMut.html' title='core::borrow::BorrowMut'>BorrowMut</a>&lt;<a class='struct' href='../hyper/client/struct.Client.html' title='hyper::client::Client'>Client</a>&gt;, A: <a class='trait' href='../yup_oauth2/helper/trait.GetToken.html' title='yup_oauth2::helper::GetToken'>GetToken</a></span></code></h3><div class='impl-items'><h4 id='method.doit' class='method'><code>fn <a href='#method.doit' class='fnname'>doit</a>(self) -&gt; <a class='type' href='../google_youtube3/type.Result.html' title='google_youtube3::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>(<a class='struct' href='../hyper/client/response/struct.Response.html' title='hyper::client::response::Response'>Response</a>, <a class='struct' href='../google_youtube3/struct.ActivityListResponse.html' title='google_youtube3::ActivityListResponse'>ActivityListResponse</a>)</a>&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_youtube3/struct.ActivityListCall.html' title='google_youtube3::ActivityListCall'>ActivityListCall</a>&lt;'a, C, A&gt; <span class='where'>where C: <a class='trait' href='https://doc.rust-lang.org/nightly/core/borrow/trait.BorrowMut.html' title='core::borrow::BorrowMut'>BorrowMut</a>&lt;<a class='struct' href='../hyper/client/struct.Client.html' title='hyper::client::Client'>Client</a>&gt;, A: <a class='trait' href='../yup_oauth2/helper/trait.GetToken.html' title='yup_oauth2::helper::GetToken'>GetToken</a></span></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-35967' class='srclink' href='../src/google_youtube3/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-youtube3-db4668f928b0f408/out/lib.rs.html#80936-81193' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.doit' class='method'><code>fn <a href='#method.doit' class='fnname'>doit</a>(self) -&gt; <a class='type' href='../google_youtube3/type.Result.html' title='google_youtube3::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>(</a><a class='struct' href='../hyper/client/response/struct.Response.html' title='hyper::client::response::Response'>Response</a>, <a class='struct' href='../google_youtube3/struct.ActivityListResponse.html' title='google_youtube3::ActivityListResponse'>ActivityListResponse</a><a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>)</a>&gt;</code></h4>
 <div class='docblock'><p>Perform the operation you have build so far.</p>
 </div><h4 id='method.part' class='method'><code>fn <a href='#method.part' class='fnname'>part</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_youtube3/struct.ActivityListCall.html' title='google_youtube3::ActivityListCall'>ActivityListCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>The part parameter specifies a comma-separated list of one or more activity resource properties that the API response will include.</p>
@@ -151,7 +154,8 @@ tokens for more than one scope.</p>
 <p>Usually there is more than one suitable scope to authorize an operation, some of which may
 encompass more rights than others. For example, for listing resources, a <em>read-only</em> scope will be
 sufficient, a read-write scope will do as well.</p>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_youtube3/trait.CallBuilder.html' title='google_youtube3::CallBuilder'>CallBuilder</a> for <a class='struct' href='../google_youtube3/struct.ActivityListCall.html' title='google_youtube3::ActivityListCall'>ActivityListCall</a>&lt;'a, C, A&gt;</code></h3><div class='impl-items'></div></section>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_youtube3/trait.CallBuilder.html' title='google_youtube3::CallBuilder'>CallBuilder</a> for <a class='struct' href='../google_youtube3/struct.ActivityListCall.html' title='google_youtube3::ActivityListCall'>ActivityListCall</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-35963' class='srclink' href='../src/google_youtube3/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-youtube3-db4668f928b0f408/out/lib.rs.html#80935' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
@@ -174,6 +178,8 @@ sufficient, a read-write scope will do as well.</p>
                     <dd>Move down in search results</dd>
                     <dt>&#9166;</dt>
                     <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
                 </dl>
             </div>
 
@@ -194,7 +200,7 @@ sufficient, a read-write scope will do as well.</p>
 
                 <p>
                     Search functions by type signature (e.g.
-                    <code>vec -> usize</code>)
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
                 </p>
             </div>
         </div>

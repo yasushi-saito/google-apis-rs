@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
+    
 
     
     
@@ -43,16 +44,17 @@
 
     <section id='main' class="content struct">
 <h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_blogger3</a>::<wbr><a class='struct' href=''>Blogger</a></span><span class='out-of-band'><span id='render-detail'>
-            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
-                [<span class='inner'>&#x2212;</span>]
-            </a>
-        </span><a id='src-1001' class='srclink' href='../src/google_blogger3///Users/byron/dev/rs/google-apis-rs/target/debug/build/google-blogger3-b65c0d2c0d77991c/out/lib.rs.html#1605-1609' title='goto source code'>[src]</a></span></h1>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-1030' class='srclink' href='../src/google_blogger3/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-blogger3-905888913af46dfc/out/lib.rs.html#2727-2731' title='goto source code'>[src]</a></span></h1>
 <pre class='rust struct'>pub struct Blogger&lt;C, A&gt; {
     // some fields omitted
 }</pre><div class='docblock'><p>Central instance to access all Blogger related resource activities</p>
 
 <h1 id='examples' class='section-header'><a href='#examples'>Examples</a></h1>
 <p>Instantiate a new hub</p>
+
 <pre class='rust rust-example-rendered'>
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>hyper</span>;
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>yup_oauth2</span> <span class='kw'>as</span> <span class='ident'>oauth2</span>;
@@ -85,8 +87,8 @@
              .<span class='ident'>order_by</span>(<span class='string'>&quot;gubergren&quot;</span>)
              .<span class='ident'>max_results</span>(<span class='number'>6</span>)
              .<span class='ident'>labels</span>(<span class='string'>&quot;aliquyam&quot;</span>)
-             .<span class='ident'>fetch_images</span>(<span class='boolval'>false</span>)
-             .<span class='ident'>fetch_bodies</span>(<span class='boolval'>false</span>)
+             .<span class='ident'>fetch_images</span>(<span class='boolvalue'>false</span>)
+             .<span class='ident'>fetch_bodies</span>(<span class='boolvalue'>false</span>)
              .<span class='ident'>end_date</span>(<span class='string'>&quot;justo&quot;</span>)
              .<span class='ident'>doit</span>();
  
@@ -106,7 +108,8 @@
     },
     <span class='prelude-val'>Ok</span>(<span class='ident'>res</span>) <span class='op'>=&gt;</span> <span class='macro'>println</span><span class='macro'>!</span>(<span class='string'>&quot;Success: {:?}&quot;</span>, <span class='ident'>res</span>),
 }</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_blogger3/struct.Blogger.html' title='google_blogger3::Blogger'>Blogger</a>&lt;C, A&gt; <span class='where'>where C: <a class='trait' href='https://doc.rust-lang.org/nightly/core/borrow/trait.BorrowMut.html' title='core::borrow::BorrowMut'>BorrowMut</a>&lt;<a class='struct' href='../hyper/client/struct.Client.html' title='hyper::client::Client'>Client</a>&gt;, A: <a class='trait' href='../yup_oauth2/helper/trait.GetToken.html' title='yup_oauth2::helper::GetToken'>GetToken</a></span></code></h3><div class='impl-items'><h4 id='method.new' class='method'><code>fn <a href='#method.new' class='fnname'>new</a>(client: C, authenticator: A) -&gt; <a class='struct' href='../google_blogger3/struct.Blogger.html' title='google_blogger3::Blogger'>Blogger</a>&lt;C, A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_blogger3/struct.Blogger.html' title='google_blogger3::Blogger'>Blogger</a>&lt;C, A&gt; <span class='where'>where C: <a class='trait' href='https://doc.rust-lang.org/nightly/core/borrow/trait.BorrowMut.html' title='core::borrow::BorrowMut'>BorrowMut</a>&lt;<a class='struct' href='../hyper/client/struct.Client.html' title='hyper::client::Client'>Client</a>&gt;, A: <a class='trait' href='../yup_oauth2/helper/trait.GetToken.html' title='yup_oauth2::helper::GetToken'>GetToken</a></span></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-1040' class='srclink' href='../src/google_blogger3/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-blogger3-905888913af46dfc/out/lib.rs.html#2733-2773' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.new' class='method'><code>fn <a href='#method.new' class='fnname'>new</a>(client: C, authenticator: A) -&gt; <a class='struct' href='../google_blogger3/struct.Blogger.html' title='google_blogger3::Blogger'>Blogger</a>&lt;C, A&gt;</code></h4>
 <h4 id='method.blog_user_infos' class='method'><code>fn <a href='#method.blog_user_infos' class='fnname'>blog_user_infos</a>(&amp;'a self) -&gt; <a class='struct' href='../google_blogger3/struct.BlogUserInfoMethods.html' title='google_blogger3::BlogUserInfoMethods'>BlogUserInfoMethods</a>&lt;'a, C, A&gt;</code></h4>
 <h4 id='method.blogs' class='method'><code>fn <a href='#method.blogs' class='fnname'>blogs</a>(&amp;'a self) -&gt; <a class='struct' href='../google_blogger3/struct.BlogMethods.html' title='google_blogger3::BlogMethods'>BlogMethods</a>&lt;'a, C, A&gt;</code></h4>
 <h4 id='method.comments' class='method'><code>fn <a href='#method.comments' class='fnname'>comments</a>(&amp;'a self) -&gt; <a class='struct' href='../google_blogger3/struct.CommentMethods.html' title='google_blogger3::CommentMethods'>CommentMethods</a>&lt;'a, C, A&gt;</code></h4>
@@ -117,10 +120,11 @@
 <h4 id='method.users' class='method'><code>fn <a href='#method.users' class='fnname'>users</a>(&amp;'a self) -&gt; <a class='struct' href='../google_blogger3/struct.UserMethods.html' title='google_blogger3::UserMethods'>UserMethods</a>&lt;'a, C, A&gt;</code></h4>
 <h4 id='method.user_agent' class='method'><code>fn <a href='#method.user_agent' class='fnname'>user_agent</a>(&amp;mut self, agent_name: <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>) -&gt; <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a></code></h4>
 <div class='docblock'><p>Set the user-agent header field to use in all requests to the server.
-It defaults to <code>google-api-rust-client/0.1.11</code>.</p>
+It defaults to <code>google-api-rust-client/0.1.14</code>.</p>
 
 <p>Returns the previously set user-agent.</p>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_blogger3/trait.Hub.html' title='google_blogger3::Hub'>Hub</a> for <a class='struct' href='../google_blogger3/struct.Blogger.html' title='google_blogger3::Blogger'>Blogger</a>&lt;C, A&gt;</code></h3><div class='impl-items'></div></section>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_blogger3/trait.Hub.html' title='google_blogger3::Hub'>Hub</a> for <a class='struct' href='../google_blogger3/struct.Blogger.html' title='google_blogger3::Blogger'>Blogger</a>&lt;C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-1036' class='srclink' href='../src/google_blogger3/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-blogger3-905888913af46dfc/out/lib.rs.html#2732' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
@@ -143,6 +147,8 @@ It defaults to <code>google-api-rust-client/0.1.11</code>.</p>
                     <dd>Move down in search results</dd>
                     <dt>&#9166;</dt>
                     <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
                 </dl>
             </div>
 
@@ -163,7 +169,7 @@ It defaults to <code>google-api-rust-client/0.1.11</code>.</p>
 
                 <p>
                     Search functions by type signature (e.g.
-                    <code>vec -> usize</code>)
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
                 </p>
             </div>
         </div>

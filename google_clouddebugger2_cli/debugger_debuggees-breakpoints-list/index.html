@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Debuggees Breakpoints List - clouddebugger v0.3.3+20151123</title>
+  <title>Debuggees Breakpoints List - clouddebugger v0.3.5+20160309</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -38,7 +38,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> clouddebugger v0.3.3+20151123</a>
+        <a href=".." class="icon icon-home"> clouddebugger v0.3.5+20160309</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -157,7 +157,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">clouddebugger v0.3.3+20151123</a>
+        <a href="..">clouddebugger v0.3.5+20160309</a>
       </nav>
 
       
@@ -226,15 +226,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p wait-token=string</strong></p>
+<p><strong>-p client-version=string</strong></p>
 <ul>
-<li>A wait token that, if specified, blocks the call until the breakpoints list has changed, or a server selected timeout has expired. The value should be set from the last response. The error code <code>google.rpc.Code.ABORTED</code> (RPC) is returned on wait timeout, which should be called again with the same <code>wait_token</code>.</li>
+<li>The client version making the call. Following: <code>domain/type/version</code> (e.g., <code>google.com/intellij/v1</code>).</li>
 </ul>
 </li>
 <li>
-<p><strong>-p strip-results=boolean</strong></p>
+<p><strong>-p include-inactive=boolean</strong></p>
 <ul>
-<li>When set to <code>true</code>, the response breakpoints are stripped of the results fields: <code>stack_frames</code>, <code>evaluated_expressions</code> and <code>variable_table</code>.</li>
+<li>When set to <code>true</code>, the response includes active and inactive breakpoints. Otherwise, it includes only active breakpoints.</li>
 </ul>
 </li>
 <li>
@@ -244,9 +244,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p include-inactive=boolean</strong></p>
+<p><strong>-p strip-results=boolean</strong></p>
 <ul>
-<li>When set to <code>true</code>, the response includes active and inactive breakpoints. Otherwise, it includes only active breakpoints.</li>
+<li>When set to <code>true</code>, the response breakpoints are stripped of the results fields: <code>stack_frames</code>, <code>evaluated_expressions</code> and <code>variable_table</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p wait-token=string</strong></p>
+<ul>
+<li>A wait token that, if specified, blocks the call until the breakpoints list has changed, or a server selected timeout has expired. The value should be set from the last response. The error code <code>google.rpc.Code.ABORTED</code> (RPC) is returned on wait timeout, which should be called again with the same <code>wait_token</code>.</li>
 </ul>
 </li>
 </ul>

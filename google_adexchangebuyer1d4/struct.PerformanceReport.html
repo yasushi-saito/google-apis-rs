@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
+    
 
     
     
@@ -43,10 +44,10 @@
 
     <section id='main' class="content struct">
 <h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_adexchangebuyer1d4</a>::<wbr><a class='struct' href=''>PerformanceReport</a></span><span class='out-of-band'><span id='render-detail'>
-            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
-                [<span class='inner'>&#x2212;</span>]
-            </a>
-        </span><a id='src-7312' class='srclink' href='../src/google_adexchangebuyer1d4///Users/byron/dev/rs/google-apis-rs/target/debug/build/google-adexchangebuyer1d4-27c9b9bbcc56c76f/out/lib.rs.html#12727-12772' title='goto source code'>[src]</a></span></h1>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-8848' class='srclink' href='../src/google_adexchangebuyer1d4/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-adexchangebuyer1d4-0325b415a7b1e556/out/lib.rs.html#19067-19112' title='goto source code'>[src]</a></span></h1>
 <pre class='rust struct'>pub struct PerformanceReport {
     pub cookie_matcher_status_rate: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;&gt;,
     pub callout_status_rate: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;&gt;,
@@ -75,56 +76,62 @@
 <p>This type is not used in any activity, and only used as <em>part</em> of another schema.</p>
 </div><h2 class='fields'>Fields</h2>
 <table><tr class='stab '>
-                                  <td id='structfield.cookie_matcher_status_rate'><code>cookie_matcher_status_rate</code></td><td><div class='docblock'><p>Average QPS for cookie matcher operations.</p>
+                             <td id='structfield.cookie_matcher_status_rate'><code>cookie_matcher_status_rate</code></td><td><div class='docblock'><p>Average QPS for cookie matcher operations.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.callout_status_rate'><code>callout_status_rate</code></td><td><div class='docblock'><p>Rate of various prefiltering statuses per match. Please refer to the callout-status-codes.txt file for different statuses.</p>
+                             <td id='structfield.callout_status_rate'><code>callout_status_rate</code></td><td><div class='docblock'><p>Rate of various prefiltering statuses per match. Please refer to the callout-status-codes.txt file for different statuses.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.hosted_match_status_rate'><code>hosted_match_status_rate</code></td><td><div class='docblock'><p>Average QPS for hosted match operations.</p>
+                             <td id='structfield.hosted_match_status_rate'><code>hosted_match_status_rate</code></td><td><div class='docblock'><p>Average QPS for hosted match operations.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.bid_request_rate'><code>bid_request_rate</code></td><td><div class='docblock'><p>The number of bid requests sent to your bidder.</p>
+                             <td id='structfield.bid_request_rate'><code>bid_request_rate</code></td><td><div class='docblock'><p>The number of bid requests sent to your bidder.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.unsuccessful_request_rate'><code>unsuccessful_request_rate</code></td><td><div class='docblock'><p>The number of bid responses that were unsuccessful due to timeouts, incorrect formatting, etc.</p>
+                             <td id='structfield.unsuccessful_request_rate'><code>unsuccessful_request_rate</code></td><td><div class='docblock'><p>The number of bid responses that were unsuccessful due to timeouts, incorrect formatting, etc.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.latency50th_percentile'><code>latency50th_percentile</code></td><td><div class='docblock'><p>The 50th percentile round trip latency(ms) as perceived from Google servers for the duration period covered by the report.</p>
+                             <td id='structfield.latency50th_percentile'><code>latency50th_percentile</code></td><td><div class='docblock'><p>The 50th percentile round trip latency(ms) as perceived from Google servers for the duration period covered by the report.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.successful_request_rate'><code>successful_request_rate</code></td><td><div class='docblock'><p>The number of properly formed bid responses received by our servers within the deadline.</p>
+                             <td id='structfield.successful_request_rate'><code>successful_request_rate</code></td><td><div class='docblock'><p>The number of properly formed bid responses received by our servers within the deadline.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.latency85th_percentile'><code>latency85th_percentile</code></td><td><div class='docblock'><p>The 85th percentile round trip latency(ms) as perceived from Google servers for the duration period covered by the report.</p>
+                             <td id='structfield.latency85th_percentile'><code>latency85th_percentile</code></td><td><div class='docblock'><p>The 85th percentile round trip latency(ms) as perceived from Google servers for the duration period covered by the report.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.pixel_match_responses'><code>pixel_match_responses</code></td><td><div class='docblock'><p>Average QPS for pixel match responses from clients.</p>
+                             <td id='structfield.pixel_match_responses'><code>pixel_match_responses</code></td><td><div class='docblock'><p>Average QPS for pixel match responses from clients.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.creative_status_rate'><code>creative_status_rate</code></td><td><div class='docblock'><p>Rate of ads with a given status. Please refer to the creative-status-codes.txt file for different statuses.</p>
+                             <td id='structfield.creative_status_rate'><code>creative_status_rate</code></td><td><div class='docblock'><p>Rate of ads with a given status. Please refer to the creative-status-codes.txt file for different statuses.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.latency95th_percentile'><code>latency95th_percentile</code></td><td><div class='docblock'><p>The 95th percentile round trip latency(ms) as perceived from Google servers for the duration period covered by the report.</p>
+                             <td id='structfield.latency95th_percentile'><code>latency95th_percentile</code></td><td><div class='docblock'><p>The 95th percentile round trip latency(ms) as perceived from Google servers for the duration period covered by the report.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.no_quota_in_region'><code>no_quota_in_region</code></td><td><div class='docblock'><p>Rate of various quota account statuses per quota check.</p>
+                             <td id='structfield.no_quota_in_region'><code>no_quota_in_region</code></td><td><div class='docblock'><p>Rate of various quota account statuses per quota check.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.kind'><code>kind</code></td><td><div class='docblock'><p>Resource type.</p>
+                             <td id='structfield.kind'><code>kind</code></td><td><div class='docblock'><p>Resource type.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.inventory_match_rate'><code>inventory_match_rate</code></td><td><div class='docblock'><p>The number of potential queries based on your pretargeting settings.</p>
+                             <td id='structfield.inventory_match_rate'><code>inventory_match_rate</code></td><td><div class='docblock'><p>The number of potential queries based on your pretargeting settings.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.region'><code>region</code></td><td><div class='docblock'><p>The trading location of this data.</p>
+                             <td id='structfield.region'><code>region</code></td><td><div class='docblock'><p>The trading location of this data.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.bid_rate'><code>bid_rate</code></td><td><div class='docblock'><p>The number of bid responses with an ad.</p>
+                             <td id='structfield.bid_rate'><code>bid_rate</code></td><td><div class='docblock'><p>The number of bid responses with an ad.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.quota_configured_limit'><code>quota_configured_limit</code></td><td><div class='docblock'><p>The configured quota limits for this account.</p>
+                             <td id='structfield.quota_configured_limit'><code>quota_configured_limit</code></td><td><div class='docblock'><p>The configured quota limits for this account.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.out_of_quota'><code>out_of_quota</code></td><td><div class='docblock'><p>Rate of various quota account statuses per quota check.</p>
+                             <td id='structfield.out_of_quota'><code>out_of_quota</code></td><td><div class='docblock'><p>Rate of various quota account statuses per quota check.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.timestamp'><code>timestamp</code></td><td><div class='docblock'><p>The unix timestamp of the starting time of this performance data.</p>
+                             <td id='structfield.timestamp'><code>timestamp</code></td><td><div class='docblock'><p>The unix timestamp of the starting time of this performance data.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.quota_throttled_limit'><code>quota_throttled_limit</code></td><td><div class='docblock'><p>The throttled quota limits for this account.</p>
+                             <td id='structfield.quota_throttled_limit'><code>quota_throttled_limit</code></td><td><div class='docblock'><p>The throttled quota limits for this account.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.filtered_bid_rate'><code>filtered_bid_rate</code></td><td><div class='docblock'><p>The number of bid responses that were filtered due to a policy violation or other errors.</p>
+                             <td id='structfield.filtered_bid_rate'><code>filtered_bid_rate</code></td><td><div class='docblock'><p>The number of bid responses that were filtered due to a policy violation or other errors.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.pixel_match_requests'><code>pixel_match_requests</code></td><td><div class='docblock'><p>Average QPS for pixel match requests from clients.</p>
-</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl <a class='trait' href='../serde/de/trait.Deserialize.html' title='serde::de::Deserialize'>Deserialize</a> for <a class='struct' href='../google_adexchangebuyer1d4/struct.PerformanceReport.html' title='google_adexchangebuyer1d4::PerformanceReport'>PerformanceReport</a></code></h3><div class='impl-items'><h4 id='method.deserialize' class='method'><code>fn <a href='../serde/de/trait.Deserialize.html#method.deserialize' class='fnname'>deserialize</a>&lt;__D&gt;(deserializer: &amp;mut __D) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../google_adexchangebuyer1d4/struct.PerformanceReport.html' title='google_adexchangebuyer1d4::PerformanceReport'>PerformanceReport</a>, __D::Error&gt; <span class='where'>where __D: <a class='trait' href='../serde/de/trait.Deserializer.html' title='serde::de::Deserializer'>Deserializer</a></span></code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='../serde/ser/trait.Serialize.html' title='serde::ser::Serialize'>Serialize</a> for <a class='struct' href='../google_adexchangebuyer1d4/struct.PerformanceReport.html' title='google_adexchangebuyer1d4::PerformanceReport'>PerformanceReport</a></code></h3><div class='impl-items'><h4 id='method.serialize' class='method'><code>fn <a href='../serde/ser/trait.Serialize.html#method.serialize' class='fnname'>serialize</a>&lt;__S&gt;(&amp;self, serializer: &amp;mut __S) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, __S::Error&gt; <span class='where'>where __S: <a class='trait' href='../serde/ser/trait.Serializer.html' title='serde::ser::Serializer'>Serializer</a></span></code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='../google_adexchangebuyer1d4/trait.Part.html' title='google_adexchangebuyer1d4::Part'>Part</a> for <a class='struct' href='../google_adexchangebuyer1d4/struct.PerformanceReport.html' title='google_adexchangebuyer1d4::PerformanceReport'>PerformanceReport</a></code></h3><div class='impl-items'></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_adexchangebuyer1d4/struct.PerformanceReport.html' title='google_adexchangebuyer1d4::PerformanceReport'>PerformanceReport</a></code></h3><div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#method.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_adexchangebuyer1d4/struct.PerformanceReport.html' title='google_adexchangebuyer1d4::PerformanceReport'>PerformanceReport</a></code></h3><div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_adexchangebuyer1d4/struct.PerformanceReport.html' title='google_adexchangebuyer1d4::PerformanceReport'>PerformanceReport</a></code></h4>
-<h4 id='method.clone_from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_adexchangebuyer1d4/struct.PerformanceReport.html' title='google_adexchangebuyer1d4::PerformanceReport'>PerformanceReport</a></code></h3><div class='impl-items'><h4 id='method.default' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#method.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_adexchangebuyer1d4/struct.PerformanceReport.html' title='google_adexchangebuyer1d4::PerformanceReport'>PerformanceReport</a></code></h4>
-</div></section>
+                             <td id='structfield.pixel_match_requests'><code>pixel_match_requests</code></td><td><div class='docblock'><p>Average QPS for pixel match requests from clients.</p>
+</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='../google_adexchangebuyer1d4/trait.Part.html' title='google_adexchangebuyer1d4::Part'>Part</a> for <a class='struct' href='../google_adexchangebuyer1d4/struct.PerformanceReport.html' title='google_adexchangebuyer1d4::PerformanceReport'>PerformanceReport</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-9396' class='srclink' href='../src/google_adexchangebuyer1d4/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-adexchangebuyer1d4-0325b415a7b1e556/out/lib.rs.html#20376' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_adexchangebuyer1d4/struct.PerformanceReport.html' title='google_adexchangebuyer1d4::PerformanceReport'>PerformanceReport</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-8871' class='srclink' href='../src/google_adexchangebuyer1d4/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-adexchangebuyer1d4-0325b415a7b1e556/out/lib.rs.html#19066' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.default' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_adexchangebuyer1d4/struct.PerformanceReport.html' title='google_adexchangebuyer1d4::PerformanceReport'>PerformanceReport</a></code></h4>
+<div class='docblock'><p>Returns the &quot;default value&quot; for a type. <a href="https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_adexchangebuyer1d4/struct.PerformanceReport.html' title='google_adexchangebuyer1d4::PerformanceReport'>PerformanceReport</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-8873' class='srclink' href='../src/google_adexchangebuyer1d4/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-adexchangebuyer1d4-0325b415a7b1e556/out/lib.rs.html#19066' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_adexchangebuyer1d4/struct.PerformanceReport.html' title='google_adexchangebuyer1d4::PerformanceReport'>PerformanceReport</a></code></h4>
+<div class='docblock'><p>Returns a copy of the value. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone">Read more</a></p>
+</div><h4 id='method.clone_from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></h4>
+<div class='docblock'><p>Performs copy-assignment from <code>source</code>. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_adexchangebuyer1d4/struct.PerformanceReport.html' title='google_adexchangebuyer1d4::PerformanceReport'>PerformanceReport</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-8898' class='srclink' href='../src/google_adexchangebuyer1d4/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-adexchangebuyer1d4-0325b415a7b1e556/out/lib.rs.html#19066' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
+<div class='docblock'><p>Formats the value using the given formatter.</p>
+</div></div></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
@@ -147,6 +154,8 @@
                     <dd>Move down in search results</dd>
                     <dt>&#9166;</dt>
                     <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
                 </dl>
             </div>
 
@@ -167,7 +176,7 @@
 
                 <p>
                     Search functions by type signature (e.g.
-                    <code>vec -> usize</code>)
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
                 </p>
             </div>
         </div>

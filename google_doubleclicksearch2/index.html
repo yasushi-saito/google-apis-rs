@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
+    
 
     
     
@@ -43,11 +44,11 @@
 
     <section id='main' class="content mod">
 <h1 class='fqn'><span class='in-band'>Crate <a class='mod' href=''>google_doubleclicksearch2</a></span><span class='out-of-band'><span id='render-detail'>
-            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
-                [<span class='inner'>&#x2212;</span>]
-            </a>
-        </span><a id='src-0' class='srclink' href='../src/google_doubleclicksearch2/lib.rs.html#5-188' title='goto source code'>[src]</a></span></h1>
-<div class='docblock'><p>This documentation was generated from <em>doubleclicksearch</em> crate version <em>0.1.11+20160120</em>, where <em>20160120</em> is the exact revision of the <em>doubleclicksearch:v2</em> schema built by the <a href="http://www.makotemplates.org/">mako</a> code generator <em>v0.1.11</em>.</p>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-0' class='srclink' href='../src/google_doubleclicksearch2/src/lib.rs.html#5-194' title='goto source code'>[src]</a></span></h1>
+<div class='docblock'><p>This documentation was generated from <em>doubleclicksearch</em> crate version <em>0.1.14+20160401</em>, where <em>20160401</em> is the exact revision of the <em>doubleclicksearch:v2</em> schema built by the <a href="http://www.makotemplates.org/">mako</a> code generator <em>v0.1.14</em>.</p>
 
 <p>Everything else about the <em>doubleclicksearch</em> <em>v2</em> API can be found at the
 <a href="https://developers.google.com/doubleclick-search/">official documentation site</a>.
@@ -115,10 +116,12 @@ allow access to individual <a href="trait.CallBuilder.html"><em>Call Builders</e
 <p>All <em>structures</em> are marked with applicable traits to further categorize them and ease browsing.</p>
 
 <p>Generally speaking, you can invoke <em>Activities</em> like this:</p>
+
 <pre class='rust rust-example-rendered'>
 <span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>resource</span>().<span class='ident'>activity</span>(...).<span class='ident'>doit</span>()</pre>
 
 <p>Or specifically ...</p>
+
 <pre class='rust rust-example-rendered'>
 <span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>reports</span>().<span class='ident'>generate</span>(...).<span class='ident'>doit</span>()
 <span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>reports</span>().<span class='ident'>get_file</span>(...).<span class='ident'>doit</span>()
@@ -138,7 +141,8 @@ The <code>doit()</code> method performs the actual communication with the server
 google-doubleclicksearch2 = &quot;*&quot;
 </code></pre>
 
-<h2 id='a-complete-example' class='section-header'><a href='#a-complete-example'>A complete example</a></h2><pre class='rust rust-example-rendered'>
+<h2 id='a-complete-example' class='section-header'><a href='#a-complete-example'>A complete example</a></h2>
+<pre class='rust rust-example-rendered'>
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>hyper</span>;
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>yup_oauth2</span> <span class='kw'>as</span> <span class='ident'>oauth2</span>;
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>google_doubleclicksearch2</span> <span class='kw'>as</span> <span class='ident'>doubleclicksearch2</span>;
@@ -229,483 +233,383 @@ These will always take a single argument, for which the following statements are
 <p>Arguments will always be copied or cloned into the builder, to make them independent of their original life times.</p>
 </div><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
 <table>
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.Availability.html'
-                               title='google_doubleclicksearch2::Availability'>Availability</a></td>
-                        <td class='docblock short'>
-                             <p>A message containing availability data relevant to DoubleClick Search.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.Conversion.html'
-                               title='google_doubleclicksearch2::Conversion'>Conversion</a></td>
-                        <td class='docblock short'>
-                             <p>A conversion containing data relevant to DoubleClick Search.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ConversionGetCall.html'
-                               title='google_doubleclicksearch2::ConversionGetCall'>ConversionGetCall</a></td>
-                        <td class='docblock short'>
-                             <p>Retrieves a list of conversions from a DoubleClick Search engine account.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ConversionInsertCall.html'
-                               title='google_doubleclicksearch2::ConversionInsertCall'>ConversionInsertCall</a></td>
-                        <td class='docblock short'>
-                             <p>Inserts a batch of new conversions into DoubleClick Search.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ConversionList.html'
-                               title='google_doubleclicksearch2::ConversionList'>ConversionList</a></td>
-                        <td class='docblock short'>
-                             <p>A list of conversions.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ConversionMethods.html'
-                               title='google_doubleclicksearch2::ConversionMethods'>ConversionMethods</a></td>
-                        <td class='docblock short'>
-                             <p>A builder providing access to all methods supported on <em>conversion</em> resources.
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Availability.html'
+                                  title='google_doubleclicksearch2::Availability'>Availability</a></td>
+                           <td class='docblock short'>
+                                <p>A message containing availability data relevant to DoubleClick Search.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Conversion.html'
+                                  title='google_doubleclicksearch2::Conversion'>Conversion</a></td>
+                           <td class='docblock short'>
+                                <p>A conversion containing data relevant to DoubleClick Search.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ConversionGetCall.html'
+                                  title='google_doubleclicksearch2::ConversionGetCall'>ConversionGetCall</a></td>
+                           <td class='docblock short'>
+                                <p>Retrieves a list of conversions from a DoubleClick Search engine account.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ConversionInsertCall.html'
+                                  title='google_doubleclicksearch2::ConversionInsertCall'>ConversionInsertCall</a></td>
+                           <td class='docblock short'>
+                                <p>Inserts a batch of new conversions into DoubleClick Search.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ConversionList.html'
+                                  title='google_doubleclicksearch2::ConversionList'>ConversionList</a></td>
+                           <td class='docblock short'>
+                                <p>A list of conversions.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ConversionMethods.html'
+                                  title='google_doubleclicksearch2::ConversionMethods'>ConversionMethods</a></td>
+                           <td class='docblock short'>
+                                <p>A builder providing access to all methods supported on <em>conversion</em> resources.
 It is not used directly, but through the <code>Doubleclicksearch</code> hub.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ConversionPatchCall.html'
-                               title='google_doubleclicksearch2::ConversionPatchCall'>ConversionPatchCall</a></td>
-                        <td class='docblock short'>
-                             <p>Updates a batch of conversions in DoubleClick Search. This method supports patch semantics.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ConversionUpdateAvailabilityCall.html'
-                               title='google_doubleclicksearch2::ConversionUpdateAvailabilityCall'>ConversionUpdateAvailabilityCall</a></td>
-                        <td class='docblock short'>
-                             <p>Updates the availabilities of a batch of floodlight activities in DoubleClick Search.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ConversionUpdateCall.html'
-                               title='google_doubleclicksearch2::ConversionUpdateCall'>ConversionUpdateCall</a></td>
-                        <td class='docblock short'>
-                             <p>Updates a batch of conversions in DoubleClick Search.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.CustomDimension.html'
-                               title='google_doubleclicksearch2::CustomDimension'>CustomDimension</a></td>
-                        <td class='docblock short'>
-                             <p>A message containing the custome dimension.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.CustomMetric.html'
-                               title='google_doubleclicksearch2::CustomMetric'>CustomMetric</a></td>
-                        <td class='docblock short'>
-                             <p>A message containing the custome metric.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.DefaultDelegate.html'
-                               title='google_doubleclicksearch2::DefaultDelegate'>DefaultDelegate</a></td>
-                        <td class='docblock short'>
-                             <p>A delegate with a conservative default implementation, which is used if no other delegate is
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ConversionPatchCall.html'
+                                  title='google_doubleclicksearch2::ConversionPatchCall'>ConversionPatchCall</a></td>
+                           <td class='docblock short'>
+                                <p>Updates a batch of conversions in DoubleClick Search. This method supports patch semantics.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ConversionUpdateAvailabilityCall.html'
+                                  title='google_doubleclicksearch2::ConversionUpdateAvailabilityCall'>ConversionUpdateAvailabilityCall</a></td>
+                           <td class='docblock short'>
+                                <p>Updates the availabilities of a batch of floodlight activities in DoubleClick Search.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ConversionUpdateCall.html'
+                                  title='google_doubleclicksearch2::ConversionUpdateCall'>ConversionUpdateCall</a></td>
+                           <td class='docblock short'>
+                                <p>Updates a batch of conversions in DoubleClick Search.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CustomDimension.html'
+                                  title='google_doubleclicksearch2::CustomDimension'>CustomDimension</a></td>
+                           <td class='docblock short'>
+                                <p>A message containing the custome dimension.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CustomMetric.html'
+                                  title='google_doubleclicksearch2::CustomMetric'>CustomMetric</a></td>
+                           <td class='docblock short'>
+                                <p>A message containing the custome metric.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DefaultDelegate.html'
+                                  title='google_doubleclicksearch2::DefaultDelegate'>DefaultDelegate</a></td>
+                           <td class='docblock short'>
+                                <p>A delegate with a conservative default implementation, which is used if no other delegate is
 set.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.Doubleclicksearch.html'
-                               title='google_doubleclicksearch2::Doubleclicksearch'>Doubleclicksearch</a></td>
-                        <td class='docblock short'>
-                             <p>Central instance to access all Doubleclicksearch related resource activities</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ErrorResponse.html'
-                               title='google_doubleclicksearch2::ErrorResponse'>ErrorResponse</a></td>
-                        <td class='docblock short'>
-                             <p>A utility to represent detailed errors we might see in case there are BadRequests.
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Doubleclicksearch.html'
+                                  title='google_doubleclicksearch2::Doubleclicksearch'>Doubleclicksearch</a></td>
+                           <td class='docblock short'>
+                                <p>Central instance to access all Doubleclicksearch related resource activities</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ErrorResponse.html'
+                                  title='google_doubleclicksearch2::ErrorResponse'>ErrorResponse</a></td>
+                           <td class='docblock short'>
+                                <p>A utility to represent detailed errors we might see in case there are BadRequests.
 The latter happen if the sent parameters or request structures are unsound</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.MethodInfo.html'
-                               title='google_doubleclicksearch2::MethodInfo'>MethodInfo</a></td>
-                        <td class='docblock short'>
-                             <p>Contains information about an API request.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.MultiPartReader.html'
-                               title='google_doubleclicksearch2::MultiPartReader'>MultiPartReader</a></td>
-                        <td class='docblock short'>
-                             <p>Provides a <code>Read</code> interface that converts multiple parts into the protocol
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.MethodInfo.html'
+                                  title='google_doubleclicksearch2::MethodInfo'>MethodInfo</a></td>
+                           <td class='docblock short'>
+                                <p>Contains information about an API request.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.MultiPartReader.html'
+                                  title='google_doubleclicksearch2::MultiPartReader'>MultiPartReader</a></td>
+                           <td class='docblock short'>
+                                <p>Provides a <code>Read</code> interface that converts multiple parts into the protocol
 identified by <a href="https://tools.ietf.org/html/rfc2387">RFC2387</a>.
 <strong>Note</strong>: This implementation is just as rich as it needs to be to perform uploads
 to google APIs, and might not be a fully-featured implementation.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.Report.html'
-                               title='google_doubleclicksearch2::Report'>Report</a></td>
-                        <td class='docblock short'>
-                             <p>A DoubleClick Search report. This object contains the report request, some report metadata such as currency code, and the generated report rows or report files.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ReportApiColumnSpec.html'
-                               title='google_doubleclicksearch2::ReportApiColumnSpec'>ReportApiColumnSpec</a></td>
-                        <td class='docblock short'>
-                             <p>A request object used to create a DoubleClick Search report.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ReportFiles.html'
-                               title='google_doubleclicksearch2::ReportFiles'>ReportFiles</a></td>
-                        <td class='docblock short'>
-                             <p>Asynchronous report only. Contains a list of generated report files once the report has succesfully completed.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ReportGenerateCall.html'
-                               title='google_doubleclicksearch2::ReportGenerateCall'>ReportGenerateCall</a></td>
-                        <td class='docblock short'>
-                             <p>Generates and returns a report immediately.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ReportGetCall.html'
-                               title='google_doubleclicksearch2::ReportGetCall'>ReportGetCall</a></td>
-                        <td class='docblock short'>
-                             <p>Polls for the status of a report request.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ReportGetFileCall.html'
-                               title='google_doubleclicksearch2::ReportGetFileCall'>ReportGetFileCall</a></td>
-                        <td class='docblock short'>
-                             <p>Downloads a report file encoded in UTF-8.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ReportMethods.html'
-                               title='google_doubleclicksearch2::ReportMethods'>ReportMethods</a></td>
-                        <td class='docblock short'>
-                             <p>A builder providing access to all methods supported on <em>report</em> resources.
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Report.html'
+                                  title='google_doubleclicksearch2::Report'>Report</a></td>
+                           <td class='docblock short'>
+                                <p>A DoubleClick Search report. This object contains the report request, some report metadata such as currency code, and the generated report rows or report files.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ReportApiColumnSpec.html'
+                                  title='google_doubleclicksearch2::ReportApiColumnSpec'>ReportApiColumnSpec</a></td>
+                           <td class='docblock short'>
+                                <p>A request object used to create a DoubleClick Search report.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ReportFiles.html'
+                                  title='google_doubleclicksearch2::ReportFiles'>ReportFiles</a></td>
+                           <td class='docblock short'>
+                                <p>Asynchronous report only. Contains a list of generated report files once the report has succesfully completed.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ReportGenerateCall.html'
+                                  title='google_doubleclicksearch2::ReportGenerateCall'>ReportGenerateCall</a></td>
+                           <td class='docblock short'>
+                                <p>Generates and returns a report immediately.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ReportGetCall.html'
+                                  title='google_doubleclicksearch2::ReportGetCall'>ReportGetCall</a></td>
+                           <td class='docblock short'>
+                                <p>Polls for the status of a report request.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ReportGetFileCall.html'
+                                  title='google_doubleclicksearch2::ReportGetFileCall'>ReportGetFileCall</a></td>
+                           <td class='docblock short'>
+                                <p>Downloads a report file encoded in UTF-8.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ReportMethods.html'
+                                  title='google_doubleclicksearch2::ReportMethods'>ReportMethods</a></td>
+                           <td class='docblock short'>
+                                <p>A builder providing access to all methods supported on <em>report</em> resources.
 It is not used directly, but through the <code>Doubleclicksearch</code> hub.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ReportRequest.html'
-                               title='google_doubleclicksearch2::ReportRequest'>ReportRequest</a></td>
-                        <td class='docblock short'>
-                             <p>A request object used to create a DoubleClick Search report.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ReportRequestCall.html'
-                               title='google_doubleclicksearch2::ReportRequestCall'>ReportRequestCall</a></td>
-                        <td class='docblock short'>
-                             <p>Inserts a report request into the reporting system.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ReportRequestFilters.html'
-                               title='google_doubleclicksearch2::ReportRequestFilters'>ReportRequestFilters</a></td>
-                        <td class='docblock short'>
-                             <p>A list of filters to be applied to the report.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ReportRequestOrderBy.html'
-                               title='google_doubleclicksearch2::ReportRequestOrderBy'>ReportRequestOrderBy</a></td>
-                        <td class='docblock short'>
-                             <p>Synchronous report only. A list of columns and directions defining sorting to be performed on the report rows.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ReportRequestReportScope.html'
-                               title='google_doubleclicksearch2::ReportRequestReportScope'>ReportRequestReportScope</a></td>
-                        <td class='docblock short'>
-                             <p>The reportScope is a set of IDs that are used to determine which subset of entities will be returned in the report. The full lineage of IDs from the lowest scoped level desired up through agency is required.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ReportRequestTimeRange.html'
-                               title='google_doubleclicksearch2::ReportRequestTimeRange'>ReportRequestTimeRange</a></td>
-                        <td class='docblock short'>
-                             <p>If metrics are requested in a report, this argument will be used to restrict the metrics to a specific time range.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ReportRow.html'
-                               title='google_doubleclicksearch2::ReportRow'>ReportRow</a></td>
-                        <td class='docblock short'>
-                             <p>A row in a DoubleClick Search report.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.SavedColumn.html'
-                               title='google_doubleclicksearch2::SavedColumn'>SavedColumn</a></td>
-                        <td class='docblock short'>
-                             <p>A saved column</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.SavedColumnList.html'
-                               title='google_doubleclicksearch2::SavedColumnList'>SavedColumnList</a></td>
-                        <td class='docblock short'>
-                             <p>A list of saved columns. Advertisers create saved columns to report on Floodlight activities, Google Analytics goals, or custom KPIs. To request reports with saved columns, you&#39;ll need the saved column names that are available from this list.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.SavedColumnListCall.html'
-                               title='google_doubleclicksearch2::SavedColumnListCall'>SavedColumnListCall</a></td>
-                        <td class='docblock short'>
-                             <p>Retrieve the list of saved columns for a specified advertiser.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.SavedColumnMethods.html'
-                               title='google_doubleclicksearch2::SavedColumnMethods'>SavedColumnMethods</a></td>
-                        <td class='docblock short'>
-                             <p>A builder providing access to all methods supported on <em>savedColumn</em> resources.
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ReportRequest.html'
+                                  title='google_doubleclicksearch2::ReportRequest'>ReportRequest</a></td>
+                           <td class='docblock short'>
+                                <p>A request object used to create a DoubleClick Search report.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ReportRequestCall.html'
+                                  title='google_doubleclicksearch2::ReportRequestCall'>ReportRequestCall</a></td>
+                           <td class='docblock short'>
+                                <p>Inserts a report request into the reporting system.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ReportRequestFilters.html'
+                                  title='google_doubleclicksearch2::ReportRequestFilters'>ReportRequestFilters</a></td>
+                           <td class='docblock short'>
+                                <p>A list of filters to be applied to the report.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ReportRequestOrderBy.html'
+                                  title='google_doubleclicksearch2::ReportRequestOrderBy'>ReportRequestOrderBy</a></td>
+                           <td class='docblock short'>
+                                <p>Synchronous report only. A list of columns and directions defining sorting to be performed on the report rows.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ReportRequestReportScope.html'
+                                  title='google_doubleclicksearch2::ReportRequestReportScope'>ReportRequestReportScope</a></td>
+                           <td class='docblock short'>
+                                <p>The reportScope is a set of IDs that are used to determine which subset of entities will be returned in the report. The full lineage of IDs from the lowest scoped level desired up through agency is required.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ReportRequestTimeRange.html'
+                                  title='google_doubleclicksearch2::ReportRequestTimeRange'>ReportRequestTimeRange</a></td>
+                           <td class='docblock short'>
+                                <p>If metrics are requested in a report, this argument will be used to restrict the metrics to a specific time range.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ReportRow.html'
+                                  title='google_doubleclicksearch2::ReportRow'>ReportRow</a></td>
+                           <td class='docblock short'>
+                                <p>A row in a DoubleClick Search report.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SavedColumn.html'
+                                  title='google_doubleclicksearch2::SavedColumn'>SavedColumn</a></td>
+                           <td class='docblock short'>
+                                <p>A saved column</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SavedColumnList.html'
+                                  title='google_doubleclicksearch2::SavedColumnList'>SavedColumnList</a></td>
+                           <td class='docblock short'>
+                                <p>A list of saved columns. Advertisers create saved columns to report on Floodlight activities, Google Analytics goals, or custom KPIs. To request reports with saved columns, you&#39;ll need the saved column names that are available from this list.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SavedColumnListCall.html'
+                                  title='google_doubleclicksearch2::SavedColumnListCall'>SavedColumnListCall</a></td>
+                           <td class='docblock short'>
+                                <p>Retrieve the list of saved columns for a specified advertiser.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SavedColumnMethods.html'
+                                  title='google_doubleclicksearch2::SavedColumnMethods'>SavedColumnMethods</a></td>
+                           <td class='docblock short'>
+                                <p>A builder providing access to all methods supported on <em>savedColumn</em> resources.
 It is not used directly, but through the <code>Doubleclicksearch</code> hub.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.UpdateAvailabilityRequest.html'
-                               title='google_doubleclicksearch2::UpdateAvailabilityRequest'>UpdateAvailabilityRequest</a></td>
-                        <td class='docblock short'>
-                             <p>The request to update availability.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.UpdateAvailabilityResponse.html'
-                               title='google_doubleclicksearch2::UpdateAvailabilityResponse'>UpdateAvailabilityResponse</a></td>
-                        <td class='docblock short'>
-                             <p>The response to a update availability request.</p>
-
-                        </td>
-                    </tr>
-                </table><h2 id='enums' class='section-header'><a href="#enums">Enums</a></h2>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UpdateAvailabilityRequest.html'
+                                  title='google_doubleclicksearch2::UpdateAvailabilityRequest'>UpdateAvailabilityRequest</a></td>
+                           <td class='docblock short'>
+                                <p>The request to update availability.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UpdateAvailabilityResponse.html'
+                                  title='google_doubleclicksearch2::UpdateAvailabilityResponse'>UpdateAvailabilityResponse</a></td>
+                           <td class='docblock short'>
+                                <p>The response to a update availability request.</p>
+                           </td>
+                       </tr></table><h2 id='enums' class='section-header'><a href="#enums">Enums</a></h2>
 <table>
-                    <tr class=' module-item'>
-                        <td><a class='enum' href='enum.Error.html'
-                               title='google_doubleclicksearch2::Error'>Error</a></td>
-                        <td class='docblock short'>
-                             
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='enum' href='enum.Scope.html'
-                               title='google_doubleclicksearch2::Scope'>Scope</a></td>
-                        <td class='docblock short'>
-                             <p>Identifies the an OAuth2 authorization scope.
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.Error.html'
+                                  title='google_doubleclicksearch2::Error'>Error</a></td>
+                           <td class='docblock short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.Scope.html'
+                                  title='google_doubleclicksearch2::Scope'>Scope</a></td>
+                           <td class='docblock short'>
+                                <p>Identifies the an OAuth2 authorization scope.
 A scope is needed when requesting an
 <a href="https://developers.google.com/youtube/v3/guides/authentication">authorization token</a>.</p>
-
-                        </td>
-                    </tr>
-                </table><h2 id='traits' class='section-header'><a href="#traits">Traits</a></h2>
+                           </td>
+                       </tr></table><h2 id='traits' class='section-header'><a href="#traits">Traits</a></h2>
 <table>
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.CallBuilder.html'
-                               title='google_doubleclicksearch2::CallBuilder'>CallBuilder</a></td>
-                        <td class='docblock short'>
-                             <p>Identifies types which represent builders for a particular resource method</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.Delegate.html'
-                               title='google_doubleclicksearch2::Delegate'>Delegate</a></td>
-                        <td class='docblock short'>
-                             <p>A trait specifying functionality to help controlling any request performed by the API.
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.CallBuilder.html'
+                                  title='google_doubleclicksearch2::CallBuilder'>CallBuilder</a></td>
+                           <td class='docblock short'>
+                                <p>Identifies types which represent builders for a particular resource method</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.Delegate.html'
+                                  title='google_doubleclicksearch2::Delegate'>Delegate</a></td>
+                           <td class='docblock short'>
+                                <p>A trait specifying functionality to help controlling any request performed by the API.
 The trait has a conservative default implementation.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.Hub.html'
-                               title='google_doubleclicksearch2::Hub'>Hub</a></td>
-                        <td class='docblock short'>
-                             <p>Identifies the Hub. There is only one per library, this trait is supposed
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.Hub.html'
+                                  title='google_doubleclicksearch2::Hub'>Hub</a></td>
+                           <td class='docblock short'>
+                                <p>Identifies the Hub. There is only one per library, this trait is supposed
 to make intended use more explicit.
 The hub allows to access all resource methods more easily.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.MethodsBuilder.html'
-                               title='google_doubleclicksearch2::MethodsBuilder'>MethodsBuilder</a></td>
-                        <td class='docblock short'>
-                             <p>Identifies types for building methods of a particular resource type</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.NestedType.html'
-                               title='google_doubleclicksearch2::NestedType'>NestedType</a></td>
-                        <td class='docblock short'>
-                             <p>Identifies types which are only used by other types internally.
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.MethodsBuilder.html'
+                                  title='google_doubleclicksearch2::MethodsBuilder'>MethodsBuilder</a></td>
+                           <td class='docblock short'>
+                                <p>Identifies types for building methods of a particular resource type</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.NestedType.html'
+                                  title='google_doubleclicksearch2::NestedType'>NestedType</a></td>
+                           <td class='docblock short'>
+                                <p>Identifies types which are only used by other types internally.
 They have no special meaning, this trait just marks them for completeness.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.Part.html'
-                               title='google_doubleclicksearch2::Part'>Part</a></td>
-                        <td class='docblock short'>
-                             <p>Identifies types which are only used as part of other types, which
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.Part.html'
+                                  title='google_doubleclicksearch2::Part'>Part</a></td>
+                           <td class='docblock short'>
+                                <p>Identifies types which are only used as part of other types, which
 usually are carrying the <code>Resource</code> trait.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.ReadSeek.html'
-                               title='google_doubleclicksearch2::ReadSeek'>ReadSeek</a></td>
-                        <td class='docblock short'>
-                             <p>A utility to specify reader types which provide seeking capabilities too</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.RequestValue.html'
-                               title='google_doubleclicksearch2::RequestValue'>RequestValue</a></td>
-                        <td class='docblock short'>
-                             <p>Identifies types which are used in API requests.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.Resource.html'
-                               title='google_doubleclicksearch2::Resource'>Resource</a></td>
-                        <td class='docblock short'>
-                             <p>Identifies types which can be inserted and deleted.
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.ReadSeek.html'
+                                  title='google_doubleclicksearch2::ReadSeek'>ReadSeek</a></td>
+                           <td class='docblock short'>
+                                <p>A utility to specify reader types which provide seeking capabilities too</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.RequestValue.html'
+                                  title='google_doubleclicksearch2::RequestValue'>RequestValue</a></td>
+                           <td class='docblock short'>
+                                <p>Identifies types which are used in API requests.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.Resource.html'
+                                  title='google_doubleclicksearch2::Resource'>Resource</a></td>
+                           <td class='docblock short'>
+                                <p>Identifies types which can be inserted and deleted.
 Types with this trait are most commonly used by clients of this API.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.ResponseResult.html'
-                               title='google_doubleclicksearch2::ResponseResult'>ResponseResult</a></td>
-                        <td class='docblock short'>
-                             <p>Identifies types which are used in API responses.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.ToParts.html'
-                               title='google_doubleclicksearch2::ToParts'>ToParts</a></td>
-                        <td class='docblock short'>
-                             <p>A trait for all types that can convert themselves into a <em>parts</em> string</p>
-
-                        </td>
-                    </tr>
-                </table><h2 id='functions' class='section-header'><a href="#functions">Functions</a></h2>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.ResponseResult.html'
+                                  title='google_doubleclicksearch2::ResponseResult'>ResponseResult</a></td>
+                           <td class='docblock short'>
+                                <p>Identifies types which are used in API responses.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.ToParts.html'
+                                  title='google_doubleclicksearch2::ToParts'>ToParts</a></td>
+                           <td class='docblock short'>
+                                <p>A trait for all types that can convert themselves into a <em>parts</em> string</p>
+                           </td>
+                       </tr></table><h2 id='functions' class='section-header'><a href="#functions">Functions</a></h2>
 <table>
-                    <tr class=' module-item'>
-                        <td><a class='fn' href='fn.remove_json_null_values.html'
-                               title='google_doubleclicksearch2::remove_json_null_values'>remove_json_null_values</a></td>
-                        <td class='docblock short'>
-                             
-                        </td>
-                    </tr>
-                </table><h2 id='types' class='section-header'><a href="#types">Type Definitions</a></h2>
+                       <tr class=' module-item'>
+                           <td><a class='fn' href='fn.remove_json_null_values.html'
+                                  title='google_doubleclicksearch2::remove_json_null_values'>remove_json_null_values</a></td>
+                           <td class='docblock short'>
+                                
+                           </td>
+                       </tr></table><h2 id='types' class='section-header'><a href="#types">Type Definitions</a></h2>
 <table>
-                    <tr class=' module-item'>
-                        <td><a class='type' href='type.Result.html'
-                               title='google_doubleclicksearch2::Result'>Result</a></td>
-                        <td class='docblock short'>
-                             <p>A universal result type used as return for all calls.</p>
-
-                        </td>
-                    </tr>
-                </table></section>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Result.html'
+                                  title='google_doubleclicksearch2::Result'>Result</a></td>
+                           <td class='docblock short'>
+                                <p>A universal result type used as return for all calls.</p>
+                           </td>
+                       </tr></table></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
@@ -728,6 +632,8 @@ Types with this trait are most commonly used by clients of this API.</p>
                     <dd>Move down in search results</dd>
                     <dt>&#9166;</dt>
                     <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
                 </dl>
             </div>
 
@@ -748,7 +654,7 @@ Types with this trait are most commonly used by clients of this API.</p>
 
                 <p>
                     Search functions by type signature (e.g.
-                    <code>vec -> usize</code>)
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
                 </p>
             </div>
         </div>

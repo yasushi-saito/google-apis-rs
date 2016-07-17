@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
+    
 
     
     
@@ -43,11 +44,11 @@
 
     <section id='main' class="content mod">
 <h1 class='fqn'><span class='in-band'>Crate <a class='mod' href=''>google_cloudtrace1</a></span><span class='out-of-band'><span id='render-detail'>
-            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
-                [<span class='inner'>&#x2212;</span>]
-            </a>
-        </span><a id='src-0' class='srclink' href='../src/google_cloudtrace1/lib.rs.html#5-177' title='goto source code'>[src]</a></span></h1>
-<div class='docblock'><p>This documentation was generated from <em>cloudtrace</em> crate version <em>0.1.11+20151207</em>, where <em>20151207</em> is the exact revision of the <em>cloudtrace:v1</em> schema built by the <a href="http://www.makotemplates.org/">mako</a> code generator <em>v0.1.11</em>.</p>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-0' class='srclink' href='../src/google_cloudtrace1/src/lib.rs.html#5-183' title='goto source code'>[src]</a></span></h1>
+<div class='docblock'><p>This documentation was generated from <em>cloudtrace</em> crate version <em>0.1.14+20151207</em>, where <em>20151207</em> is the exact revision of the <em>cloudtrace:v1</em> schema built by the <a href="http://www.makotemplates.org/">mako</a> code generator <em>v0.1.14</em>.</p>
 
 <p>Everything else about the <em>cloudtrace</em> <em>v1</em> API can be found at the
 <a href="https://cloud.google.com/tools/cloud-trace">official documentation site</a>.
@@ -99,10 +100,12 @@ allow access to individual <a href="trait.CallBuilder.html"><em>Call Builders</e
 <p>All <em>structures</em> are marked with applicable traits to further categorize them and ease browsing.</p>
 
 <p>Generally speaking, you can invoke <em>Activities</em> like this:</p>
+
 <pre class='rust rust-example-rendered'>
 <span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>resource</span>().<span class='ident'>activity</span>(...).<span class='ident'>doit</span>()</pre>
 
 <p>Or specifically ...</p>
+
 <pre class='rust rust-example-rendered'>
 <span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>projects</span>().<span class='ident'>traces_get</span>(...).<span class='ident'>doit</span>()</pre>
 
@@ -119,7 +122,8 @@ The <code>doit()</code> method performs the actual communication with the server
 google-cloudtrace1 = &quot;*&quot;
 </code></pre>
 
-<h2 id='a-complete-example' class='section-header'><a href='#a-complete-example'>A complete example</a></h2><pre class='rust rust-example-rendered'>
+<h2 id='a-complete-example' class='section-header'><a href='#a-complete-example'>A complete example</a></h2>
+<pre class='rust rust-example-rendered'>
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>hyper</span>;
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>yup_oauth2</span> <span class='kw'>as</span> <span class='ident'>oauth2</span>;
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>google_cloudtrace1</span> <span class='kw'>as</span> <span class='ident'>cloudtrace1</span>;
@@ -210,283 +214,227 @@ These will always take a single argument, for which the following statements are
 <p>Arguments will always be copied or cloned into the builder, to make them independent of their original life times.</p>
 </div><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
 <table>
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.Cloudtrace.html'
-                               title='google_cloudtrace1::Cloudtrace'>Cloudtrace</a></td>
-                        <td class='docblock short'>
-                             <p>Central instance to access all Cloudtrace related resource activities</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.DefaultDelegate.html'
-                               title='google_cloudtrace1::DefaultDelegate'>DefaultDelegate</a></td>
-                        <td class='docblock short'>
-                             <p>A delegate with a conservative default implementation, which is used if no other delegate is
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Cloudtrace.html'
+                                  title='google_cloudtrace1::Cloudtrace'>Cloudtrace</a></td>
+                           <td class='docblock short'>
+                                <p>Central instance to access all Cloudtrace related resource activities</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DefaultDelegate.html'
+                                  title='google_cloudtrace1::DefaultDelegate'>DefaultDelegate</a></td>
+                           <td class='docblock short'>
+                                <p>A delegate with a conservative default implementation, which is used if no other delegate is
 set.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.Empty.html'
-                               title='google_cloudtrace1::Empty'>Empty</a></td>
-                        <td class='docblock short'>
-                             <p>A generic empty message that you can re-use to avoid defining duplicated empty messages in your APIs. A typical example is to use it as the request or the response type of an API method. For instance: service Foo { rpc Bar(google.protobuf.Empty) returns (google.protobuf.Empty); } The JSON representation for <code>Empty</code> is empty JSON object <code>{}</code>.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ErrorResponse.html'
-                               title='google_cloudtrace1::ErrorResponse'>ErrorResponse</a></td>
-                        <td class='docblock short'>
-                             <p>A utility to represent detailed errors we might see in case there are BadRequests.
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Empty.html'
+                                  title='google_cloudtrace1::Empty'>Empty</a></td>
+                           <td class='docblock short'>
+                                <p>A generic empty message that you can re-use to avoid defining duplicated empty messages in your APIs. A typical example is to use it as the request or the response type of an API method. For instance: service Foo { rpc Bar(google.protobuf.Empty) returns (google.protobuf.Empty); } The JSON representation for <code>Empty</code> is empty JSON object <code>{}</code>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ErrorResponse.html'
+                                  title='google_cloudtrace1::ErrorResponse'>ErrorResponse</a></td>
+                           <td class='docblock short'>
+                                <p>A utility to represent detailed errors we might see in case there are BadRequests.
 The latter happen if the sent parameters or request structures are unsound</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ListTracesResponse.html'
-                               title='google_cloudtrace1::ListTracesResponse'>ListTracesResponse</a></td>
-                        <td class='docblock short'>
-                             <p>The response message for the <code>ListTraces</code> method.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.MethodInfo.html'
-                               title='google_cloudtrace1::MethodInfo'>MethodInfo</a></td>
-                        <td class='docblock short'>
-                             <p>Contains information about an API request.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.MultiPartReader.html'
-                               title='google_cloudtrace1::MultiPartReader'>MultiPartReader</a></td>
-                        <td class='docblock short'>
-                             <p>Provides a <code>Read</code> interface that converts multiple parts into the protocol
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListTracesResponse.html'
+                                  title='google_cloudtrace1::ListTracesResponse'>ListTracesResponse</a></td>
+                           <td class='docblock short'>
+                                <p>The response message for the <code>ListTraces</code> method.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.MethodInfo.html'
+                                  title='google_cloudtrace1::MethodInfo'>MethodInfo</a></td>
+                           <td class='docblock short'>
+                                <p>Contains information about an API request.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.MultiPartReader.html'
+                                  title='google_cloudtrace1::MultiPartReader'>MultiPartReader</a></td>
+                           <td class='docblock short'>
+                                <p>Provides a <code>Read</code> interface that converts multiple parts into the protocol
 identified by <a href="https://tools.ietf.org/html/rfc2387">RFC2387</a>.
 <strong>Note</strong>: This implementation is just as rich as it needs to be to perform uploads
 to google APIs, and might not be a fully-featured implementation.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ProjectMethods.html'
-                               title='google_cloudtrace1::ProjectMethods'>ProjectMethods</a></td>
-                        <td class='docblock short'>
-                             <p>A builder providing access to all methods supported on <em>project</em> resources.
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ProjectMethods.html'
+                                  title='google_cloudtrace1::ProjectMethods'>ProjectMethods</a></td>
+                           <td class='docblock short'>
+                                <p>A builder providing access to all methods supported on <em>project</em> resources.
 It is not used directly, but through the <code>Cloudtrace</code> hub.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ProjectPatchTraceCall.html'
-                               title='google_cloudtrace1::ProjectPatchTraceCall'>ProjectPatchTraceCall</a></td>
-                        <td class='docblock short'>
-                             <p>Sends new traces to Cloud Trace or updates existing traces. If the ID of a trace that you send matches that of an existing trace, any fields in the existing trace and its spans are overwritten by the provided values, and any new fields provided are merged with the existing trace data. If the ID does not match, a new trace is created.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ProjectTraceGetCall.html'
-                               title='google_cloudtrace1::ProjectTraceGetCall'>ProjectTraceGetCall</a></td>
-                        <td class='docblock short'>
-                             <p>Gets a single trace by its ID.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ProjectTraceListCall.html'
-                               title='google_cloudtrace1::ProjectTraceListCall'>ProjectTraceListCall</a></td>
-                        <td class='docblock short'>
-                             <p>Returns of a list of traces that match the specified filter conditions.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.Trace.html'
-                               title='google_cloudtrace1::Trace'>Trace</a></td>
-                        <td class='docblock short'>
-                             <p>A trace describes how long it takes for an application to perform an operation. It consists of a set of spans, each of which represent a single timed event within the operation.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.TraceSpan.html'
-                               title='google_cloudtrace1::TraceSpan'>TraceSpan</a></td>
-                        <td class='docblock short'>
-                             <p>A span represents a single timed event within a trace. Spans can be nested and form a trace tree. Often, a trace contains a root span that describes the end-to-end latency of an operation and, optionally, one or more subspans for its suboperations. Spans do not need to be contiguous. There may be gaps between spans in a trace.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.Traces.html'
-                               title='google_cloudtrace1::Traces'>Traces</a></td>
-                        <td class='docblock short'>
-                             <p>List of new or updated traces.</p>
-
-                        </td>
-                    </tr>
-                </table><h2 id='enums' class='section-header'><a href="#enums">Enums</a></h2>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ProjectPatchTraceCall.html'
+                                  title='google_cloudtrace1::ProjectPatchTraceCall'>ProjectPatchTraceCall</a></td>
+                           <td class='docblock short'>
+                                <p>Sends new traces to Cloud Trace or updates existing traces. If the ID of a trace that you send matches that of an existing trace, any fields in the existing trace and its spans are overwritten by the provided values, and any new fields provided are merged with the existing trace data. If the ID does not match, a new trace is created.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ProjectTraceGetCall.html'
+                                  title='google_cloudtrace1::ProjectTraceGetCall'>ProjectTraceGetCall</a></td>
+                           <td class='docblock short'>
+                                <p>Gets a single trace by its ID.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ProjectTraceListCall.html'
+                                  title='google_cloudtrace1::ProjectTraceListCall'>ProjectTraceListCall</a></td>
+                           <td class='docblock short'>
+                                <p>Returns of a list of traces that match the specified filter conditions.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Trace.html'
+                                  title='google_cloudtrace1::Trace'>Trace</a></td>
+                           <td class='docblock short'>
+                                <p>A trace describes how long it takes for an application to perform an operation. It consists of a set of spans, each of which represent a single timed event within the operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.TraceSpan.html'
+                                  title='google_cloudtrace1::TraceSpan'>TraceSpan</a></td>
+                           <td class='docblock short'>
+                                <p>A span represents a single timed event within a trace. Spans can be nested and form a trace tree. Often, a trace contains a root span that describes the end-to-end latency of an operation and, optionally, one or more subspans for its suboperations. Spans do not need to be contiguous. There may be gaps between spans in a trace.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Traces.html'
+                                  title='google_cloudtrace1::Traces'>Traces</a></td>
+                           <td class='docblock short'>
+                                <p>List of new or updated traces.</p>
+                           </td>
+                       </tr></table><h2 id='enums' class='section-header'><a href="#enums">Enums</a></h2>
 <table>
-                    <tr class=' module-item'>
-                        <td><a class='enum' href='enum.Error.html'
-                               title='google_cloudtrace1::Error'>Error</a></td>
-                        <td class='docblock short'>
-                             
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='enum' href='enum.Scope.html'
-                               title='google_cloudtrace1::Scope'>Scope</a></td>
-                        <td class='docblock short'>
-                             <p>Identifies the an OAuth2 authorization scope.
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.Error.html'
+                                  title='google_cloudtrace1::Error'>Error</a></td>
+                           <td class='docblock short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.Scope.html'
+                                  title='google_cloudtrace1::Scope'>Scope</a></td>
+                           <td class='docblock short'>
+                                <p>Identifies the an OAuth2 authorization scope.
 A scope is needed when requesting an
 <a href="https://developers.google.com/youtube/v3/guides/authentication">authorization token</a>.</p>
-
-                        </td>
-                    </tr>
-                </table><h2 id='traits' class='section-header'><a href="#traits">Traits</a></h2>
+                           </td>
+                       </tr></table><h2 id='traits' class='section-header'><a href="#traits">Traits</a></h2>
 <table>
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.CallBuilder.html'
-                               title='google_cloudtrace1::CallBuilder'>CallBuilder</a></td>
-                        <td class='docblock short'>
-                             <p>Identifies types which represent builders for a particular resource method</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.Delegate.html'
-                               title='google_cloudtrace1::Delegate'>Delegate</a></td>
-                        <td class='docblock short'>
-                             <p>A trait specifying functionality to help controlling any request performed by the API.
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.CallBuilder.html'
+                                  title='google_cloudtrace1::CallBuilder'>CallBuilder</a></td>
+                           <td class='docblock short'>
+                                <p>Identifies types which represent builders for a particular resource method</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.Delegate.html'
+                                  title='google_cloudtrace1::Delegate'>Delegate</a></td>
+                           <td class='docblock short'>
+                                <p>A trait specifying functionality to help controlling any request performed by the API.
 The trait has a conservative default implementation.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.Hub.html'
-                               title='google_cloudtrace1::Hub'>Hub</a></td>
-                        <td class='docblock short'>
-                             <p>Identifies the Hub. There is only one per library, this trait is supposed
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.Hub.html'
+                                  title='google_cloudtrace1::Hub'>Hub</a></td>
+                           <td class='docblock short'>
+                                <p>Identifies the Hub. There is only one per library, this trait is supposed
 to make intended use more explicit.
 The hub allows to access all resource methods more easily.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.MethodsBuilder.html'
-                               title='google_cloudtrace1::MethodsBuilder'>MethodsBuilder</a></td>
-                        <td class='docblock short'>
-                             <p>Identifies types for building methods of a particular resource type</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.NestedType.html'
-                               title='google_cloudtrace1::NestedType'>NestedType</a></td>
-                        <td class='docblock short'>
-                             <p>Identifies types which are only used by other types internally.
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.MethodsBuilder.html'
+                                  title='google_cloudtrace1::MethodsBuilder'>MethodsBuilder</a></td>
+                           <td class='docblock short'>
+                                <p>Identifies types for building methods of a particular resource type</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.NestedType.html'
+                                  title='google_cloudtrace1::NestedType'>NestedType</a></td>
+                           <td class='docblock short'>
+                                <p>Identifies types which are only used by other types internally.
 They have no special meaning, this trait just marks them for completeness.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.Part.html'
-                               title='google_cloudtrace1::Part'>Part</a></td>
-                        <td class='docblock short'>
-                             <p>Identifies types which are only used as part of other types, which
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.Part.html'
+                                  title='google_cloudtrace1::Part'>Part</a></td>
+                           <td class='docblock short'>
+                                <p>Identifies types which are only used as part of other types, which
 usually are carrying the <code>Resource</code> trait.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.ReadSeek.html'
-                               title='google_cloudtrace1::ReadSeek'>ReadSeek</a></td>
-                        <td class='docblock short'>
-                             <p>A utility to specify reader types which provide seeking capabilities too</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.RequestValue.html'
-                               title='google_cloudtrace1::RequestValue'>RequestValue</a></td>
-                        <td class='docblock short'>
-                             <p>Identifies types which are used in API requests.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.Resource.html'
-                               title='google_cloudtrace1::Resource'>Resource</a></td>
-                        <td class='docblock short'>
-                             <p>Identifies types which can be inserted and deleted.
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.ReadSeek.html'
+                                  title='google_cloudtrace1::ReadSeek'>ReadSeek</a></td>
+                           <td class='docblock short'>
+                                <p>A utility to specify reader types which provide seeking capabilities too</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.RequestValue.html'
+                                  title='google_cloudtrace1::RequestValue'>RequestValue</a></td>
+                           <td class='docblock short'>
+                                <p>Identifies types which are used in API requests.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.Resource.html'
+                                  title='google_cloudtrace1::Resource'>Resource</a></td>
+                           <td class='docblock short'>
+                                <p>Identifies types which can be inserted and deleted.
 Types with this trait are most commonly used by clients of this API.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.ResponseResult.html'
-                               title='google_cloudtrace1::ResponseResult'>ResponseResult</a></td>
-                        <td class='docblock short'>
-                             <p>Identifies types which are used in API responses.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.ToParts.html'
-                               title='google_cloudtrace1::ToParts'>ToParts</a></td>
-                        <td class='docblock short'>
-                             <p>A trait for all types that can convert themselves into a <em>parts</em> string</p>
-
-                        </td>
-                    </tr>
-                </table><h2 id='functions' class='section-header'><a href="#functions">Functions</a></h2>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.ResponseResult.html'
+                                  title='google_cloudtrace1::ResponseResult'>ResponseResult</a></td>
+                           <td class='docblock short'>
+                                <p>Identifies types which are used in API responses.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.ToParts.html'
+                                  title='google_cloudtrace1::ToParts'>ToParts</a></td>
+                           <td class='docblock short'>
+                                <p>A trait for all types that can convert themselves into a <em>parts</em> string</p>
+                           </td>
+                       </tr></table><h2 id='functions' class='section-header'><a href="#functions">Functions</a></h2>
 <table>
-                    <tr class=' module-item'>
-                        <td><a class='fn' href='fn.remove_json_null_values.html'
-                               title='google_cloudtrace1::remove_json_null_values'>remove_json_null_values</a></td>
-                        <td class='docblock short'>
-                             
-                        </td>
-                    </tr>
-                </table><h2 id='types' class='section-header'><a href="#types">Type Definitions</a></h2>
+                       <tr class=' module-item'>
+                           <td><a class='fn' href='fn.remove_json_null_values.html'
+                                  title='google_cloudtrace1::remove_json_null_values'>remove_json_null_values</a></td>
+                           <td class='docblock short'>
+                                
+                           </td>
+                       </tr></table><h2 id='types' class='section-header'><a href="#types">Type Definitions</a></h2>
 <table>
-                    <tr class=' module-item'>
-                        <td><a class='type' href='type.Result.html'
-                               title='google_cloudtrace1::Result'>Result</a></td>
-                        <td class='docblock short'>
-                             <p>A universal result type used as return for all calls.</p>
-
-                        </td>
-                    </tr>
-                </table></section>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Result.html'
+                                  title='google_cloudtrace1::Result'>Result</a></td>
+                           <td class='docblock short'>
+                                <p>A universal result type used as return for all calls.</p>
+                           </td>
+                       </tr></table></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
@@ -509,6 +457,8 @@ Types with this trait are most commonly used by clients of this API.</p>
                     <dd>Move down in search results</dd>
                     <dt>&#9166;</dt>
                     <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
                 </dl>
             </div>
 
@@ -529,7 +479,7 @@ Types with this trait are most commonly used by clients of this API.</p>
 
                 <p>
                     Search functions by type signature (e.g.
-                    <code>vec -> usize</code>)
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
                 </p>
             </div>
         </div>

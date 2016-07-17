@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `Annotation` struct in crate `google_genomics1`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, Annotation">
+
+    <title>google_genomics1::Annotation - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='index.html'>google_genomics1</a></p><script>window.sidebarCurrent = {name: 'Annotation', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content struct">
+<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_genomics1</a>::<wbr><a class='struct' href=''>Annotation</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-3299' class='srclink' href='../src/google_genomics1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-genomics1-1ad8d3924bbaea8d/out/lib.rs.html#7932-7957' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct Annotation {
+    pub info: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/std/collections/hash/map/struct.HashMap.html' title='std::collections::hash::map::HashMap'>HashMap</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>, <a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;&gt;&gt;,
+    pub reference_id: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub end: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub name: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub type_: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub variant: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_genomics1/struct.VariantAnnotation.html' title='google_genomics1::VariantAnnotation'>VariantAnnotation</a>&gt;,
+    pub start: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub annotation_set_id: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub reference_name: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub reverse_strand: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt;,
+    pub transcript: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_genomics1/struct.Transcript.html' title='google_genomics1::Transcript'>Transcript</a>&gt;,
+    pub id: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+}</pre><div class='docblock'><p>An annotation describes a region of reference genome. The value of an annotation may be one of several canonical types, supplemented by arbitrary info tags. An annotation is not inherently associated with a specific sample or individual (though a client could choose to use annotations in this way). Example canonical annotation types are <code>GENE</code> and <code>VARIANT</code>.</p>
+
+<h1 id='activities' class='section-header'><a href='#activities'>Activities</a></h1>
+<p>This type is used in activities, which are methods you may call on this type or where this type is involved in. 
+The list links the activity name, along with information about where it is used (one of <em>request</em> and <em>response</em>).</p>
+
+<ul>
+<li><a href="struct.AnnotationSearchCall.html">search annotations</a> (none)</li>
+<li><a href="struct.AnnotationCreateCall.html">create annotations</a> (request|response)</li>
+<li><a href="struct.AnnotationDeleteCall.html">delete annotations</a> (none)</li>
+<li><a href="struct.AnnotationUpdateCall.html">update annotations</a> (request|response)</li>
+<li><a href="struct.AnnotationGetCall.html">get annotations</a> (response)</li>
+<li><a href="struct.AnnotationBatchCreateCall.html">batch create annotations</a> (none)</li>
+</ul>
+</div><h2 class='fields'>Fields</h2>
+<table><tr class='stab '>
+                             <td id='structfield.info'><code>info</code></td><td><div class='docblock'><p>A map of additional read alignment information. This must be of the form map (string key mapping to a list of string values).</p>
+</div></td></tr><tr class='stab '>
+                             <td id='structfield.reference_id'><code>reference_id</code></td><td><div class='docblock'><p>The ID of the Google Genomics reference associated with this range.</p>
+</div></td></tr><tr class='stab '>
+                             <td id='structfield.end'><code>end</code></td><td><div class='docblock'><p>The end position of the range on the reference, 0-based exclusive.</p>
+</div></td></tr><tr class='stab '>
+                             <td id='structfield.name'><code>name</code></td><td><div class='docblock'><p>The display name of this annotation.</p>
+</div></td></tr><tr class='stab '>
+                             <td id='structfield.type_'><code>type_</code></td><td><div class='docblock'><p>The data type for this annotation. Must match the containing annotation set&#39;s type.</p>
+</div></td></tr><tr class='stab '>
+                             <td id='structfield.variant'><code>variant</code></td><td><div class='docblock'><p>A variant annotation, which describes the effect of a variant on the genome, the coding sequence, and/or higher level consequences at the organism level e.g. pathogenicity. This field is only set for annotations of type <code>VARIANT</code>.</p>
+</div></td></tr><tr class='stab '>
+                             <td id='structfield.start'><code>start</code></td><td><div class='docblock'><p>The start position of the range on the reference, 0-based inclusive.</p>
+</div></td></tr><tr class='stab '>
+                             <td id='structfield.annotation_set_id'><code>annotation_set_id</code></td><td><div class='docblock'><p>The annotation set to which this annotation belongs.</p>
+</div></td></tr><tr class='stab '>
+                             <td id='structfield.reference_name'><code>reference_name</code></td><td><div class='docblock'><p>The display name corresponding to the reference specified by <code>referenceId</code>, for example <code>chr1</code>, <code>1</code>, or <code>chrX</code>.</p>
+</div></td></tr><tr class='stab '>
+                             <td id='structfield.reverse_strand'><code>reverse_strand</code></td><td><div class='docblock'><p>Whether this range refers to the reverse strand, as opposed to the forward strand. Note that regardless of this field, the start/end position of the range always refer to the forward strand.</p>
+</div></td></tr><tr class='stab '>
+                             <td id='structfield.transcript'><code>transcript</code></td><td><div class='docblock'><p>A transcript value represents the assertion that a particular region of the reference genome may be transcribed as RNA. An alternative splicing pattern would be represented as a separate transcript object. This field is only set for annotations of type <code>TRANSCRIPT</code>.</p>
+</div></td></tr><tr class='stab '>
+                             <td id='structfield.id'><code>id</code></td><td><div class='docblock'><p>The server-generated annotation ID, unique across all annotations.</p>
+</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='../google_genomics1/trait.RequestValue.html' title='google_genomics1::RequestValue'>RequestValue</a> for <a class='struct' href='../google_genomics1/struct.Annotation.html' title='google_genomics1::Annotation'>Annotation</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-3637' class='srclink' href='../src/google_genomics1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-genomics1-1ad8d3924bbaea8d/out/lib.rs.html#8673' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='../google_genomics1/trait.Resource.html' title='google_genomics1::Resource'>Resource</a> for <a class='struct' href='../google_genomics1/struct.Annotation.html' title='google_genomics1::Annotation'>Annotation</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-3638' class='srclink' href='../src/google_genomics1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-genomics1-1ad8d3924bbaea8d/out/lib.rs.html#8674' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='../google_genomics1/trait.ResponseResult.html' title='google_genomics1::ResponseResult'>ResponseResult</a> for <a class='struct' href='../google_genomics1/struct.Annotation.html' title='google_genomics1::Annotation'>Annotation</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-3639' class='srclink' href='../src/google_genomics1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-genomics1-1ad8d3924bbaea8d/out/lib.rs.html#8675' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_genomics1/struct.Annotation.html' title='google_genomics1::Annotation'>Annotation</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-3312' class='srclink' href='../src/google_genomics1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-genomics1-1ad8d3924bbaea8d/out/lib.rs.html#7931' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.default' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_genomics1/struct.Annotation.html' title='google_genomics1::Annotation'>Annotation</a></code></h4>
+<div class='docblock'><p>Returns the &quot;default value&quot; for a type. <a href="https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_genomics1/struct.Annotation.html' title='google_genomics1::Annotation'>Annotation</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-3314' class='srclink' href='../src/google_genomics1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-genomics1-1ad8d3924bbaea8d/out/lib.rs.html#7931' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_genomics1/struct.Annotation.html' title='google_genomics1::Annotation'>Annotation</a></code></h4>
+<div class='docblock'><p>Returns a copy of the value. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone">Read more</a></p>
+</div><h4 id='method.clone_from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></h4>
+<div class='docblock'><p>Performs copy-assignment from <code>source</code>. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_genomics1/struct.Annotation.html' title='google_genomics1::Annotation'>Annotation</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-3329' class='srclink' href='../src/google_genomics1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-genomics1-1ad8d3924bbaea8d/out/lib.rs.html#7931' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
+<div class='docblock'><p>Formats the value using the given formatter.</p>
+</div></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "google_genomics1";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../jquery.js"></script>
+    <script src="../main.js"></script>
+    
+    <script defer src="../search-index.js"></script>
+</body>
+</html>

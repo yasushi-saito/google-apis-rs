@@ -1,5 +1,5 @@
 (function() {var implementors = {};
-implementors['google_games1'] = [];
+implementors["google_games1"] = [];
 
             if (window.register_implementors) {
                 window.register_implementors(implementors);

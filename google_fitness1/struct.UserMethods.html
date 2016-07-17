@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
+    
 
     
     
@@ -43,10 +44,10 @@
 
     <section id='main' class="content struct">
 <h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_fitness1</a>::<wbr><a class='struct' href=''>UserMethods</a></span><span class='out-of-band'><span id='render-detail'>
-            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
-                [<span class='inner'>&#x2212;</span>]
-            </a>
-        </span><a id='src-4077' class='srclink' href='../src/google_fitness1///Users/byron/dev/rs/google-apis-rs/target/debug/build/google-fitness1-cbbed5bc2c3cc9f7/out/lib.rs.html#7009-7011' title='goto source code'>[src]</a></span></h1>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-4354' class='srclink' href='../src/google_fitness1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-fitness1-b2189de594d20130/out/lib.rs.html#9003-9005' title='goto source code'>[src]</a></span></h1>
 <pre class='rust struct'>pub struct UserMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>user</em> resources.
@@ -54,6 +55,7 @@ It is not used directly, but through the <code>Fitness</code> hub.</p>
 
 <h1 id='example' class='section-header'><a href='#example'>Example</a></h1>
 <p>Instantiate a resource builder</p>
+
 <pre class='rust rust-example-rendered'>
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>hyper</span>;
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>yup_oauth2</span> <span class='kw'>as</span> <span class='ident'>oauth2</span>;
@@ -72,7 +74,8 @@ It is not used directly, but through the <code>Fitness</code> hub.</p>
 <span class='comment'>// like `data_sources_create(...)`, `data_sources_datasets_delete(...)`, `data_sources_datasets_get(...)`, `data_sources_datasets_patch(...)`, `data_sources_delete(...)`, `data_sources_get(...)`, `data_sources_list(...)`, `data_sources_patch(...)`, `data_sources_update(...)`, `dataset_aggregate(...)`, `sessions_delete(...)`, `sessions_list(...)` and `sessions_update(...)`</span>
 <span class='comment'>// to build up your call.</span>
 <span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>users</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_fitness1/struct.UserMethods.html' title='google_fitness1::UserMethods'>UserMethods</a>&lt;'a, C, A&gt;</code></h3><div class='impl-items'><h4 id='method.dataset_aggregate' class='method'><code>fn <a href='#method.dataset_aggregate' class='fnname'>dataset_aggregate</a>(&amp;self, request: <a class='struct' href='../google_fitness1/struct.AggregateRequest.html' title='google_fitness1::AggregateRequest'>AggregateRequest</a>, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_fitness1/struct.UserDatasetAggregateCall.html' title='google_fitness1::UserDatasetAggregateCall'>UserDatasetAggregateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_fitness1/struct.UserMethods.html' title='google_fitness1::UserMethods'>UserMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-4363' class='srclink' href='../src/google_fitness1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-fitness1-b2189de594d20130/out/lib.rs.html#9007-9270' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.dataset_aggregate' class='method'><code>fn <a href='#method.dataset_aggregate' class='fnname'>dataset_aggregate</a>(&amp;self, request: <a class='struct' href='../google_fitness1/struct.AggregateRequest.html' title='google_fitness1::AggregateRequest'>AggregateRequest</a>, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_fitness1/struct.UserDatasetAggregateCall.html' title='google_fitness1::UserDatasetAggregateCall'>UserDatasetAggregateCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Aggregates data of a certain type or stream into buckets divided by a given type of boundary. Multiple data sets of multiple types and from multiple sources can be aggreated into exactly one bucket type per request.</p>
@@ -211,7 +214,8 @@ It is not used directly, but through the <code>Fitness</code> hub.</p>
 <ul>
 <li><code>userId</code> - List data sources for the person identified. Use me to indicate the authenticated user. Only me is supported at this time.</li>
 </ul>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_fitness1/trait.MethodsBuilder.html' title='google_fitness1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_fitness1/struct.UserMethods.html' title='google_fitness1::UserMethods'>UserMethods</a>&lt;'a, C, A&gt;</code></h3><div class='impl-items'></div></section>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_fitness1/trait.MethodsBuilder.html' title='google_fitness1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_fitness1/struct.UserMethods.html' title='google_fitness1::UserMethods'>UserMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-4359' class='srclink' href='../src/google_fitness1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-fitness1-b2189de594d20130/out/lib.rs.html#9006' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
@@ -234,6 +238,8 @@ It is not used directly, but through the <code>Fitness</code> hub.</p>
                     <dd>Move down in search results</dd>
                     <dt>&#9166;</dt>
                     <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
                 </dl>
             </div>
 
@@ -254,7 +260,7 @@ It is not used directly, but through the <code>Fitness</code> hub.</p>
 
                 <p>
                     Search functions by type signature (e.g.
-                    <code>vec -> usize</code>)
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
                 </p>
             </div>
         </div>

@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
+    
 
     
     
@@ -43,10 +44,10 @@
 
     <section id='main' class="content struct">
 <h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_tagmanager1</a>::<wbr><a class='struct' href=''>AccountContainerMoveFolderUpdateCall</a></span><span class='out-of-band'><span id='render-detail'>
-            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
-                [<span class='inner'>&#x2212;</span>]
-            </a>
-        </span><a id='src-8727' class='srclink' href='../src/google_tagmanager1///Users/byron/dev/rs/google-apis-rs/target/debug/build/google-tagmanager1-02cfc961be5e9bc9/out/lib.rs.html#18019-18029' title='goto source code'>[src]</a></span></h1>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-9846' class='srclink' href='../src/google_tagmanager1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-tagmanager1-be6c82900a24ebbe/out/lib.rs.html#24579-24591' title='goto source code'>[src]</a></span></h1>
 <pre class='rust struct'>pub struct AccountContainerMoveFolderUpdateCall&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>Moves entities to a GTM Folder.</p>
@@ -56,18 +57,31 @@ It is not used directly, but through a <code>AccountMethods</code> instance.</p>
 
 <h1 id='example' class='section-header'><a href='#example'>Example</a></h1>
 <p>Instantiate a resource method builder</p>
+
 <pre class='rust rust-example-rendered'>
+<span class='kw'>use</span> <span class='ident'>tagmanager1</span>::<span class='ident'>Folder</span>;
+ 
+<span class='comment'>// As the method needs a request, you would usually fill it with the desired information</span>
+<span class='comment'>// into the respective structure. Some of the parts shown here might not be applicable !</span>
+<span class='comment'>// Values shown here are possibly random and not representative !</span>
+<span class='kw'>let</span> <span class='kw-2'>mut</span> <span class='ident'>req</span> <span class='op'>=</span> <span class='ident'>Folder</span>::<span class='ident'>default</span>();
  
 <span class='comment'>// You can configure optional parameters by calling the respective setters at will, and</span>
 <span class='comment'>// execute the final call using `doit()`.</span>
 <span class='comment'>// Values shown here are possibly random and not representative !</span>
-<span class='kw'>let</span> <span class='ident'>result</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>accounts</span>().<span class='ident'>containers_move_folders_update</span>(<span class='string'>&quot;accountId&quot;</span>, <span class='string'>&quot;containerId&quot;</span>, <span class='string'>&quot;folderId&quot;</span>)
-             .<span class='ident'>add_variable_id</span>(<span class='string'>&quot;justo&quot;</span>)
-             .<span class='ident'>add_trigger_id</span>(<span class='string'>&quot;sit&quot;</span>)
-             .<span class='ident'>add_tag_id</span>(<span class='string'>&quot;vero&quot;</span>)
+<span class='kw'>let</span> <span class='ident'>result</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>accounts</span>().<span class='ident'>containers_move_folders_update</span>(<span class='ident'>req</span>, <span class='string'>&quot;accountId&quot;</span>, <span class='string'>&quot;containerId&quot;</span>, <span class='string'>&quot;folderId&quot;</span>)
+             .<span class='ident'>add_variable_id</span>(<span class='string'>&quot;Lorem&quot;</span>)
+             .<span class='ident'>add_trigger_id</span>(<span class='string'>&quot;et&quot;</span>)
+             .<span class='ident'>add_tag_id</span>(<span class='string'>&quot;clita&quot;</span>)
              .<span class='ident'>doit</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_tagmanager1/struct.AccountContainerMoveFolderUpdateCall.html' title='google_tagmanager1::AccountContainerMoveFolderUpdateCall'>AccountContainerMoveFolderUpdateCall</a>&lt;'a, C, A&gt; <span class='where'>where C: <a class='trait' href='https://doc.rust-lang.org/nightly/core/borrow/trait.BorrowMut.html' title='core::borrow::BorrowMut'>BorrowMut</a>&lt;<a class='struct' href='../hyper/client/struct.Client.html' title='hyper::client::Client'>Client</a>&gt;, A: <a class='trait' href='../yup_oauth2/helper/trait.GetToken.html' title='yup_oauth2::helper::GetToken'>GetToken</a></span></code></h3><div class='impl-items'><h4 id='method.doit' class='method'><code>fn <a href='#method.doit' class='fnname'>doit</a>(self) -&gt; <a class='type' href='../google_tagmanager1/type.Result.html' title='google_tagmanager1::Result'>Result</a>&lt;<a class='struct' href='../hyper/client/response/struct.Response.html' title='hyper::client::response::Response'>Response</a>&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_tagmanager1/struct.AccountContainerMoveFolderUpdateCall.html' title='google_tagmanager1::AccountContainerMoveFolderUpdateCall'>AccountContainerMoveFolderUpdateCall</a>&lt;'a, C, A&gt; <span class='where'>where C: <a class='trait' href='https://doc.rust-lang.org/nightly/core/borrow/trait.BorrowMut.html' title='core::borrow::BorrowMut'>BorrowMut</a>&lt;<a class='struct' href='../hyper/client/struct.Client.html' title='hyper::client::Client'>Client</a>&gt;, A: <a class='trait' href='../yup_oauth2/helper/trait.GetToken.html' title='yup_oauth2::helper::GetToken'>GetToken</a></span></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-9865' class='srclink' href='../src/google_tagmanager1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-tagmanager1-be6c82900a24ebbe/out/lib.rs.html#24595-24867' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.doit' class='method'><code>fn <a href='#method.doit' class='fnname'>doit</a>(self) -&gt; <a class='type' href='../google_tagmanager1/type.Result.html' title='google_tagmanager1::Result'>Result</a>&lt;<a class='struct' href='../hyper/client/response/struct.Response.html' title='hyper::client::response::Response'>Response</a>&gt;</code></h4>
 <div class='docblock'><p>Perform the operation you have build so far.</p>
+</div><h4 id='method.request' class='method'><code>fn <a href='#method.request' class='fnname'>request</a>(self, new_value: <a class='struct' href='../google_tagmanager1/struct.Folder.html' title='google_tagmanager1::Folder'>Folder</a>) -&gt; <a class='struct' href='../google_tagmanager1/struct.AccountContainerMoveFolderUpdateCall.html' title='google_tagmanager1::AccountContainerMoveFolderUpdateCall'>AccountContainerMoveFolderUpdateCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Sets the <em>request</em> property to the given value.</p>
+
+<p>Even though the property as already been set when instantiating this call,
+we provide this method for API completeness.</p>
 </div><h4 id='method.account_id' class='method'><code>fn <a href='#method.account_id' class='fnname'>account_id</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_tagmanager1/struct.AccountContainerMoveFolderUpdateCall.html' title='google_tagmanager1::AccountContainerMoveFolderUpdateCall'>AccountContainerMoveFolderUpdateCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>The GTM Account ID.</p>
 
@@ -129,7 +143,20 @@ which have their own setter method. If done anyway, the request will fail.</p>
 <li><em>fields</em> (query-string) - Selector specifying which fields to include in a partial response.</li>
 <li><em>alt</em> (query-string) - Data format for the response.</li>
 </ul>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_tagmanager1/trait.CallBuilder.html' title='google_tagmanager1::CallBuilder'>CallBuilder</a> for <a class='struct' href='../google_tagmanager1/struct.AccountContainerMoveFolderUpdateCall.html' title='google_tagmanager1::AccountContainerMoveFolderUpdateCall'>AccountContainerMoveFolderUpdateCall</a>&lt;'a, C, A&gt;</code></h3><div class='impl-items'></div></section>
+</div><h4 id='method.add_scope' class='method'><code>fn <a href='#method.add_scope' class='fnname'>add_scope</a>&lt;T&gt;(self, scope: T) -&gt; <a class='struct' href='../google_tagmanager1/struct.AccountContainerMoveFolderUpdateCall.html' title='google_tagmanager1::AccountContainerMoveFolderUpdateCall'>AccountContainerMoveFolderUpdateCall</a>&lt;'a, C, A&gt; <span class='where'>where T: <a class='trait' href='https://doc.rust-lang.org/nightly/core/convert/trait.AsRef.html' title='core::convert::AsRef'>AsRef</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>&gt;</span></code></h4>
+<div class='docblock'><p>Identifies the authorization scope for the method you are building.</p>
+
+<p>Use this method to actively specify which scope should be used, instead the default <code>Scope</code> variant
+<code>Scope::EditContainer</code>.</p>
+
+<p>The <code>scope</code> will be added to a set of scopes. This is important as one can maintain access
+tokens for more than one scope.</p>
+
+<p>Usually there is more than one suitable scope to authorize an operation, some of which may
+encompass more rights than others. For example, for listing resources, a <em>read-only</em> scope will be
+sufficient, a read-write scope will do as well.</p>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_tagmanager1/trait.CallBuilder.html' title='google_tagmanager1::CallBuilder'>CallBuilder</a> for <a class='struct' href='../google_tagmanager1/struct.AccountContainerMoveFolderUpdateCall.html' title='google_tagmanager1::AccountContainerMoveFolderUpdateCall'>AccountContainerMoveFolderUpdateCall</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-9861' class='srclink' href='../src/google_tagmanager1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-tagmanager1-be6c82900a24ebbe/out/lib.rs.html#24592-24594' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
@@ -152,6 +179,8 @@ which have their own setter method. If done anyway, the request will fail.</p>
                     <dd>Move down in search results</dd>
                     <dt>&#9166;</dt>
                     <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
                 </dl>
             </div>
 
@@ -172,7 +201,7 @@ which have their own setter method. If done anyway, the request will fail.</p>
 
                 <p>
                     Search functions by type signature (e.g.
-                    <code>vec -> usize</code>)
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
                 </p>
             </div>
         </div>

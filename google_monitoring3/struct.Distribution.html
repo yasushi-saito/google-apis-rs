@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `Distribution` struct in crate `google_monitoring3`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, Distribution">
+
+    <title>google_monitoring3::Distribution - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='index.html'>google_monitoring3</a></p><script>window.sidebarCurrent = {name: 'Distribution', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content struct">
+<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_monitoring3</a>::<wbr><a class='struct' href=''>Distribution</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-2961' class='srclink' href='../src/google_monitoring3/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-monitoring3-077189c26972e10e/out/lib.rs.html#6114-6127' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct Distribution {
+    pub count: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub bucket_counts: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i64.html'>i64</a>&gt;&gt;,
+    pub sum_of_squared_deviation: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f64.html'>f64</a>&gt;,
+    pub range: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_monitoring3/struct.Range.html' title='google_monitoring3::Range'>Range</a>&gt;,
+    pub bucket_options: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_monitoring3/struct.BucketOptions.html' title='google_monitoring3::BucketOptions'>BucketOptions</a>&gt;,
+    pub mean: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f64.html'>f64</a>&gt;,
+}</pre><div class='docblock'><p>Distribution contains summary statistics for a population of values and, optionally, a histogram representing the distribution of those values across a specified set of histogram buckets. The summary statistics are the count, mean, sum of the squared deviation from the mean, the minimum, and the maximum of the set of population of values. The histogram is based on a sequence of buckets and gives a count of values that fall into each bucket. The boundaries of the buckets are given either explicitly or by specifying parameters for a method of computing them (buckets of fixed width or buckets of exponentially increasing width). Although it is not forbidden, it is generally a bad idea to include non-finite values (infinities or NaNs) in the population of values, as this will render the <code>mean</code> and <code>sum_of_squared_deviation</code> fields meaningless.</p>
+
+<p>This type is not used in any activity, and only used as <em>part</em> of another schema.</p>
+</div><h2 class='fields'>Fields</h2>
+<table><tr class='stab '>
+                             <td id='structfield.count'><code>count</code></td><td><div class='docblock'><p>The number of values in the population. Must be non-negative.</p>
+</div></td></tr><tr class='stab '>
+                             <td id='structfield.bucket_counts'><code>bucket_counts</code></td><td><div class='docblock'><p>If <code>bucket_options</code> is given, then the sum of the values in <code>bucket_counts</code> must equal the value in <code>count</code>. If <code>bucket_options</code> is not given, no <code>bucket_counts</code> fields may be given. Bucket counts are given in order under the numbering scheme described above (the underflow bucket has number 0; the finite buckets, if any, have numbers 1 through N-2; the overflow bucket has number N-1). The size of <code>bucket_counts</code> must be no greater than N as defined in <code>bucket_options</code>. Any suffix of trailing zero bucket_count fields may be omitted.</p>
+</div></td></tr><tr class='stab '>
+                             <td id='structfield.sum_of_squared_deviation'><code>sum_of_squared_deviation</code></td><td><div class='docblock'><p>The sum of squared deviations from the mean of the values in the population. For values x_i this is: Sum<a href="(x_i%20-%20mean)%5E2">i=1..n</a> Knuth, &quot;The Art of Computer Programming&quot;, Vol. 2, page 323, 3rd edition describes Welford&#39;s method for accumulating this sum in one pass. If <code>count</code> is zero then this field must be zero.</p>
+</div></td></tr><tr class='stab '>
+                             <td id='structfield.range'><code>range</code></td><td><div class='docblock'><p>If specified, contains the range of the population values. The field must not be present if the <code>count</code> is zero.</p>
+</div></td></tr><tr class='stab '>
+                             <td id='structfield.bucket_options'><code>bucket_options</code></td><td><div class='docblock'><p>Defines the histogram bucket boundaries.</p>
+</div></td></tr><tr class='stab '>
+                             <td id='structfield.mean'><code>mean</code></td><td><div class='docblock'><p>The arithmetic mean of the values in the population. If <code>count</code> is zero then this field must be zero.</p>
+</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='../google_monitoring3/trait.Part.html' title='google_monitoring3::Part'>Part</a> for <a class='struct' href='../google_monitoring3/struct.Distribution.html' title='google_monitoring3::Distribution'>Distribution</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-3173' class='srclink' href='../src/google_monitoring3/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-monitoring3-077189c26972e10e/out/lib.rs.html#6551' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_monitoring3/struct.Distribution.html' title='google_monitoring3::Distribution'>Distribution</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-2968' class='srclink' href='../src/google_monitoring3/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-monitoring3-077189c26972e10e/out/lib.rs.html#6113' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.default' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_monitoring3/struct.Distribution.html' title='google_monitoring3::Distribution'>Distribution</a></code></h4>
+<div class='docblock'><p>Returns the &quot;default value&quot; for a type. <a href="https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_monitoring3/struct.Distribution.html' title='google_monitoring3::Distribution'>Distribution</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-2970' class='srclink' href='../src/google_monitoring3/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-monitoring3-077189c26972e10e/out/lib.rs.html#6113' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_monitoring3/struct.Distribution.html' title='google_monitoring3::Distribution'>Distribution</a></code></h4>
+<div class='docblock'><p>Returns a copy of the value. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone">Read more</a></p>
+</div><h4 id='method.clone_from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></h4>
+<div class='docblock'><p>Performs copy-assignment from <code>source</code>. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_monitoring3/struct.Distribution.html' title='google_monitoring3::Distribution'>Distribution</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-2979' class='srclink' href='../src/google_monitoring3/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-monitoring3-077189c26972e10e/out/lib.rs.html#6113' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
+<div class='docblock'><p>Formats the value using the given formatter.</p>
+</div></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "google_monitoring3";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../jquery.js"></script>
+    <script src="../main.js"></script>
+    
+    <script defer src="../search-index.js"></script>
+</body>
+</html>

@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
+    
 
     
     
@@ -43,17 +44,17 @@
 
     <section id='main' class="content struct">
 <h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_content2_sandbox</a>::<wbr><a class='struct' href=''>Order</a></span><span class='out-of-band'><span id='render-detail'>
-            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
-                [<span class='inner'>&#x2212;</span>]
-            </a>
-        </span><a id='src-3237' class='srclink' href='../src/google_content2_sandbox///Users/byron/dev/rs/google-apis-rs/target/debug/build/google-content2_sandbox-ade9aa076965c3b7/out/lib.rs.html#5506-5543' title='goto source code'>[src]</a></span></h1>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-3447' class='srclink' href='../src/google_content2_sandbox/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-content2_sandbox-e1b1b2a9ee32bd46/out/lib.rs.html#7285-7324' title='goto source code'>[src]</a></span></h1>
 <pre class='rust struct'>pub struct Order {
     pub shipments: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='../google_content2_sandbox/struct.OrderShipment.html' title='google_content2_sandbox::OrderShipment'>OrderShipment</a>&gt;&gt;,
-    pub status: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub customer: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_content2_sandbox/struct.OrderCustomer.html' title='google_content2_sandbox::OrderCustomer'>OrderCustomer</a>&gt;,
     pub payment_status: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
     pub net_amount: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_content2_sandbox/struct.Price.html' title='google_content2_sandbox::Price'>Price</a>&gt;,
     pub id: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub customer: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_content2_sandbox/struct.OrderCustomer.html' title='google_content2_sandbox::OrderCustomer'>OrderCustomer</a>&gt;,
+    pub promotions: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='../google_content2_sandbox/struct.OrderPromotion.html' title='google_content2_sandbox::OrderPromotion'>OrderPromotion</a>&gt;&gt;,
     pub kind: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
     pub line_items: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='../google_content2_sandbox/struct.OrderLineItem.html' title='google_content2_sandbox::OrderLineItem'>OrderLineItem</a>&gt;&gt;,
     pub refunds: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='../google_content2_sandbox/struct.OrderRefund.html' title='google_content2_sandbox::OrderRefund'>OrderRefund</a>&gt;&gt;,
@@ -62,6 +63,7 @@
     pub merchant_id: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
     pub merchant_order_id: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
     pub shipping_option: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub status: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
     pub delivery_details: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_content2_sandbox/struct.OrderDeliveryDetails.html' title='google_content2_sandbox::OrderDeliveryDetails'>OrderDeliveryDetails</a>&gt;,
     pub placed_date: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
     pub shipping_cost_tax: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_content2_sandbox/struct.Price.html' title='google_content2_sandbox::Price'>Price</a>&gt;,
@@ -91,48 +93,57 @@ The list links the activity name, along with information about where it is used 
 </ul>
 </div><h2 class='fields'>Fields</h2>
 <table><tr class='stab '>
-                                  <td id='structfield.shipments'><code>shipments</code></td><td><div class='docblock'><p>Shipments of the order.</p>
+                             <td id='structfield.shipments'><code>shipments</code></td><td><div class='docblock'><p>Shipments of the order.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.status'><code>status</code></td><td><div class='docblock'><p>The status of the order.</p>
+                             <td id='structfield.customer'><code>customer</code></td><td><div class='docblock'><p>The details of the customer who placed the order.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.payment_status'><code>payment_status</code></td><td><div class='docblock'><p>The status of the payment.</p>
+                             <td id='structfield.payment_status'><code>payment_status</code></td><td><div class='docblock'><p>The status of the payment.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.net_amount'><code>net_amount</code></td><td><div class='docblock'><p>The net amount for the order. For example, if an order was originally for a grand total of $100 and a refund was issued for $20, the net amount will be $80.</p>
+                             <td id='structfield.net_amount'><code>net_amount</code></td><td><div class='docblock'><p>The net amount for the order. For example, if an order was originally for a grand total of $100 and a refund was issued for $20, the net amount will be $80.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.id'><code>id</code></td><td><div class='docblock'><p>The REST id of the order. Globally unique.</p>
+                             <td id='structfield.id'><code>id</code></td><td><div class='docblock'><p>The REST id of the order. Globally unique.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.customer'><code>customer</code></td><td><div class='docblock'><p>The details of the customer who placed the order.</p>
+                             <td id='structfield.promotions'><code>promotions</code></td><td><div class='docblock'><p>The details of the merchant provided promotions applied to the order. More details about the program are  here.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.kind'><code>kind</code></td><td><div class='docblock'><p>Identifies what kind of resource this is. Value: the fixed string &quot;content#order&quot;.</p>
+                             <td id='structfield.kind'><code>kind</code></td><td><div class='docblock'><p>Identifies what kind of resource this is. Value: the fixed string &quot;content#order&quot;.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.line_items'><code>line_items</code></td><td><div class='docblock'><p>Line items that are ordered.</p>
+                             <td id='structfield.line_items'><code>line_items</code></td><td><div class='docblock'><p>Line items that are ordered.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.refunds'><code>refunds</code></td><td><div class='docblock'><p>Refunds for the order.</p>
+                             <td id='structfield.refunds'><code>refunds</code></td><td><div class='docblock'><p>Refunds for the order.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.acknowledged'><code>acknowledged</code></td><td><div class='docblock'><p>Whether the order was acknowledged.</p>
+                             <td id='structfield.acknowledged'><code>acknowledged</code></td><td><div class='docblock'><p>Whether the order was acknowledged.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.shipping_cost'><code>shipping_cost</code></td><td><div class='docblock'><p>The total cost of shipping for all items.</p>
+                             <td id='structfield.shipping_cost'><code>shipping_cost</code></td><td><div class='docblock'><p>The total cost of shipping for all items.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.merchant_id'><code>merchant_id</code></td><td><div class='docblock'><p>no description provided</p>
+                             <td id='structfield.merchant_id'><code>merchant_id</code></td><td><div class='docblock'><p>no description provided</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.merchant_order_id'><code>merchant_order_id</code></td><td><div class='docblock'><p>Merchant-provided id of the order.</p>
+                             <td id='structfield.merchant_order_id'><code>merchant_order_id</code></td><td><div class='docblock'><p>Merchant-provided id of the order.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.shipping_option'><code>shipping_option</code></td><td><div class='docblock'><p>The requested shipping option.</p>
+                             <td id='structfield.shipping_option'><code>shipping_option</code></td><td><div class='docblock'><p>The requested shipping option.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.delivery_details'><code>delivery_details</code></td><td><div class='docblock'><p>The details for the delivery.</p>
+                             <td id='structfield.status'><code>status</code></td><td><div class='docblock'><p>The status of the order.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.placed_date'><code>placed_date</code></td><td><div class='docblock'><p>The date when the order was placed, in ISO 8601 format.</p>
+                             <td id='structfield.delivery_details'><code>delivery_details</code></td><td><div class='docblock'><p>The details for the delivery.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.shipping_cost_tax'><code>shipping_cost_tax</code></td><td><div class='docblock'><p>The tax for the total shipping cost.</p>
+                             <td id='structfield.placed_date'><code>placed_date</code></td><td><div class='docblock'><p>The date when the order was placed, in ISO 8601 format.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.payment_method'><code>payment_method</code></td><td><div class='docblock'><p>The details of the payment method.</p>
-</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl <a class='trait' href='../serde/de/trait.Deserialize.html' title='serde::de::Deserialize'>Deserialize</a> for <a class='struct' href='../google_content2_sandbox/struct.Order.html' title='google_content2_sandbox::Order'>Order</a></code></h3><div class='impl-items'><h4 id='method.deserialize' class='method'><code>fn <a href='../serde/de/trait.Deserialize.html#method.deserialize' class='fnname'>deserialize</a>&lt;__D&gt;(deserializer: &amp;mut __D) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../google_content2_sandbox/struct.Order.html' title='google_content2_sandbox::Order'>Order</a>, __D::Error&gt; <span class='where'>where __D: <a class='trait' href='../serde/de/trait.Deserializer.html' title='serde::de::Deserializer'>Deserializer</a></span></code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='../serde/ser/trait.Serialize.html' title='serde::ser::Serialize'>Serialize</a> for <a class='struct' href='../google_content2_sandbox/struct.Order.html' title='google_content2_sandbox::Order'>Order</a></code></h3><div class='impl-items'><h4 id='method.serialize' class='method'><code>fn <a href='../serde/ser/trait.Serialize.html#method.serialize' class='fnname'>serialize</a>&lt;__S&gt;(&amp;self, serializer: &amp;mut __S) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, __S::Error&gt; <span class='where'>where __S: <a class='trait' href='../serde/ser/trait.Serializer.html' title='serde::ser::Serializer'>Serializer</a></span></code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='../google_content2_sandbox/trait.Resource.html' title='google_content2_sandbox::Resource'>Resource</a> for <a class='struct' href='../google_content2_sandbox/struct.Order.html' title='google_content2_sandbox::Order'>Order</a></code></h3><div class='impl-items'></div><h3 class='impl'><code>impl <a class='trait' href='../google_content2_sandbox/trait.ResponseResult.html' title='google_content2_sandbox::ResponseResult'>ResponseResult</a> for <a class='struct' href='../google_content2_sandbox/struct.Order.html' title='google_content2_sandbox::Order'>Order</a></code></h3><div class='impl-items'></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_content2_sandbox/struct.Order.html' title='google_content2_sandbox::Order'>Order</a></code></h3><div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#method.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_content2_sandbox/struct.Order.html' title='google_content2_sandbox::Order'>Order</a></code></h3><div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_content2_sandbox/struct.Order.html' title='google_content2_sandbox::Order'>Order</a></code></h4>
-<h4 id='method.clone_from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_content2_sandbox/struct.Order.html' title='google_content2_sandbox::Order'>Order</a></code></h3><div class='impl-items'><h4 id='method.default' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#method.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_content2_sandbox/struct.Order.html' title='google_content2_sandbox::Order'>Order</a></code></h4>
-</div></section>
+                             <td id='structfield.shipping_cost_tax'><code>shipping_cost_tax</code></td><td><div class='docblock'><p>The tax for the total shipping cost.</p>
+</div></td></tr><tr class='stab '>
+                             <td id='structfield.payment_method'><code>payment_method</code></td><td><div class='docblock'><p>The details of the payment method.</p>
+</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='../google_content2_sandbox/trait.Resource.html' title='google_content2_sandbox::Resource'>Resource</a> for <a class='struct' href='../google_content2_sandbox/struct.Order.html' title='google_content2_sandbox::Order'>Order</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-3932' class='srclink' href='../src/google_content2_sandbox/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-content2_sandbox-e1b1b2a9ee32bd46/out/lib.rs.html#8405' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='../google_content2_sandbox/trait.ResponseResult.html' title='google_content2_sandbox::ResponseResult'>ResponseResult</a> for <a class='struct' href='../google_content2_sandbox/struct.Order.html' title='google_content2_sandbox::Order'>Order</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-3933' class='srclink' href='../src/google_content2_sandbox/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-content2_sandbox-e1b1b2a9ee32bd46/out/lib.rs.html#8406' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_content2_sandbox/struct.Order.html' title='google_content2_sandbox::Order'>Order</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-3467' class='srclink' href='../src/google_content2_sandbox/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-content2_sandbox-e1b1b2a9ee32bd46/out/lib.rs.html#7284' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.default' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_content2_sandbox/struct.Order.html' title='google_content2_sandbox::Order'>Order</a></code></h4>
+<div class='docblock'><p>Returns the &quot;default value&quot; for a type. <a href="https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_content2_sandbox/struct.Order.html' title='google_content2_sandbox::Order'>Order</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-3469' class='srclink' href='../src/google_content2_sandbox/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-content2_sandbox-e1b1b2a9ee32bd46/out/lib.rs.html#7284' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_content2_sandbox/struct.Order.html' title='google_content2_sandbox::Order'>Order</a></code></h4>
+<div class='docblock'><p>Returns a copy of the value. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone">Read more</a></p>
+</div><h4 id='method.clone_from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></h4>
+<div class='docblock'><p>Performs copy-assignment from <code>source</code>. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_content2_sandbox/struct.Order.html' title='google_content2_sandbox::Order'>Order</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-3491' class='srclink' href='../src/google_content2_sandbox/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-content2_sandbox-e1b1b2a9ee32bd46/out/lib.rs.html#7284' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
+<div class='docblock'><p>Formats the value using the given formatter.</p>
+</div></div></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
@@ -155,6 +166,8 @@ The list links the activity name, along with information about where it is used 
                     <dd>Move down in search results</dd>
                     <dt>&#9166;</dt>
                     <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
                 </dl>
             </div>
 
@@ -175,7 +188,7 @@ The list links the activity name, along with information about where it is used 
 
                 <p>
                     Search functions by type signature (e.g.
-                    <code>vec -> usize</code>)
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
                 </p>
             </div>
         </div>

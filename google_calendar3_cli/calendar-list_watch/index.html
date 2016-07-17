@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Watch - calendar v0.3.3+20160110</title>
+  <title>Watch - calendar v0.3.5+20160405</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -38,7 +38,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> calendar v0.3.3+20160110</a>
+        <a href=".." class="icon icon-home"> calendar v0.3.5+20160405</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -410,7 +410,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">calendar v0.3.3+20160110</a>
+        <a href="..">calendar v0.3.5+20160405</a>
       </nav>
 
       
@@ -536,6 +536,24 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
+<p><strong>-p show-deleted=boolean</strong></p>
+<ul>
+<li>Whether to include deleted calendar list entries in the result. Optional. The default is False.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p page-token=string</strong></p>
+<ul>
+<li>Token specifying which result page to return. Optional.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p min-access-role=string</strong></p>
+<ul>
+<li>The minimum access role for the user in the returned entries. Optional. The default is no restriction.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p sync-token=string</strong></p>
 <ul>
 <li>Token obtained from the nextSyncToken field returned on the last page of results from the previous list request. It makes the result of this list request contain only entries that have changed since then. If only read-only fields such as calendar properties or ACLs have changed, the entry won&#39;t be returned. All entries deleted and hidden since the previous list request will always be in the result set and it is not allowed to set showDeleted neither showHidden to False.
@@ -546,33 +564,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p show-hidden=boolean</strong></p>
-<ul>
-<li>Whether to show hidden entries. Optional. The default is False.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p page-token=string</strong></p>
-<ul>
-<li>Token specifying which result page to return. Optional.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p show-deleted=boolean</strong></p>
-<ul>
-<li>Whether to include deleted calendar list entries in the result. Optional. The default is False.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p min-access-role=string</strong></p>
-<ul>
-<li>The minimum access role for the user in the returned entries. Optional. The default is no restriction.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p max-results=integer</strong></p>
 <ul>
 <li>Maximum number of entries returned on one result page. By default the value is 100 entries. The page size can never be larger than 250 entries. Optional.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p show-hidden=boolean</strong></p>
+<ul>
+<li>Whether to show hidden entries. Optional. The default is False.</li>
 </ul>
 </li>
 </ul>

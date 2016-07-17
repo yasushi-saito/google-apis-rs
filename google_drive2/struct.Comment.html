@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
+    
 
     
     
@@ -43,10 +44,10 @@
 
     <section id='main' class="content struct">
 <h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_drive2</a>::<wbr><a class='struct' href=''>Comment</a></span><span class='out-of-band'><span id='render-detail'>
-            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
-                [<span class='inner'>&#x2212;</span>]
-            </a>
-        </span><a id='src-1233' class='srclink' href='../src/google_drive2///Users/byron/dev/rs/google-apis-rs/target/debug/build/google-drive2-6658037b670a9eb5/out/lib.rs.html#2031-2064' title='goto source code'>[src]</a></span></h1>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-1277' class='srclink' href='../src/google_drive2/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-drive2-20bcdf54d0770b82/out/lib.rs.html#3882-3915' title='goto source code'>[src]</a></span></h1>
 <pre class='rust struct'>pub struct Comment {
     pub status: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
     pub self_link: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
@@ -79,44 +80,52 @@ The list links the activity name, along with information about where it is used 
 </ul>
 </div><h2 class='fields'>Fields</h2>
 <table><tr class='stab '>
-                                  <td id='structfield.status'><code>status</code></td><td><div class='docblock'><p>The status of this comment. Status can be changed by posting a reply to a comment with the desired status.
+                             <td id='structfield.status'><code>status</code></td><td><div class='docblock'><p>The status of this comment. Status can be changed by posting a reply to a comment with the desired status.
 - &quot;open&quot; - The comment is still open. 
 - &quot;resolved&quot; - The comment has been resolved by one of its replies.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.self_link'><code>self_link</code></td><td><div class='docblock'><p>A link back to this comment.</p>
+                             <td id='structfield.self_link'><code>self_link</code></td><td><div class='docblock'><p>A link back to this comment.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.kind'><code>kind</code></td><td><div class='docblock'><p>This is always drive#comment.</p>
+                             <td id='structfield.kind'><code>kind</code></td><td><div class='docblock'><p>This is always drive#comment.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.author'><code>author</code></td><td><div class='docblock'><p>The user who wrote this comment.</p>
+                             <td id='structfield.author'><code>author</code></td><td><div class='docblock'><p>The user who wrote this comment.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.deleted'><code>deleted</code></td><td><div class='docblock'><p>Whether this comment has been deleted. If a comment has been deleted the content will be cleared and this will only represent a comment that once existed.</p>
+                             <td id='structfield.deleted'><code>deleted</code></td><td><div class='docblock'><p>Whether this comment has been deleted. If a comment has been deleted the content will be cleared and this will only represent a comment that once existed.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.created_date'><code>created_date</code></td><td><div class='docblock'><p>The date when this comment was first created.</p>
+                             <td id='structfield.created_date'><code>created_date</code></td><td><div class='docblock'><p>The date when this comment was first created.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.html_content'><code>html_content</code></td><td><div class='docblock'><p>HTML formatted content for this comment.</p>
+                             <td id='structfield.html_content'><code>html_content</code></td><td><div class='docblock'><p>HTML formatted content for this comment.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.content'><code>content</code></td><td><div class='docblock'><p>The plain text content used to create this comment. This is not HTML safe and should only be used as a starting point to make edits to a comment&#39;s content.</p>
+                             <td id='structfield.content'><code>content</code></td><td><div class='docblock'><p>The plain text content used to create this comment. This is not HTML safe and should only be used as a starting point to make edits to a comment&#39;s content.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.modified_date'><code>modified_date</code></td><td><div class='docblock'><p>The date when this comment or any of its replies were last modified.</p>
+                             <td id='structfield.modified_date'><code>modified_date</code></td><td><div class='docblock'><p>The date when this comment or any of its replies were last modified.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.context'><code>context</code></td><td><div class='docblock'><p>The context of the file which is being commented on.</p>
+                             <td id='structfield.context'><code>context</code></td><td><div class='docblock'><p>The context of the file which is being commented on.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.replies'><code>replies</code></td><td><div class='docblock'><p>Replies to this post.</p>
+                             <td id='structfield.replies'><code>replies</code></td><td><div class='docblock'><p>Replies to this post.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.comment_id'><code>comment_id</code></td><td><div class='docblock'><p>The ID of the comment.</p>
+                             <td id='structfield.comment_id'><code>comment_id</code></td><td><div class='docblock'><p>The ID of the comment.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.anchor'><code>anchor</code></td><td><div class='docblock'><p>A region of the document represented as a JSON string. See anchor documentation for details on how to define and interpret anchor properties.</p>
+                             <td id='structfield.anchor'><code>anchor</code></td><td><div class='docblock'><p>A region of the document represented as a JSON string. See anchor documentation for details on how to define and interpret anchor properties.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.file_title'><code>file_title</code></td><td><div class='docblock'><p>The title of the file which this comment is addressing.</p>
+                             <td id='structfield.file_title'><code>file_title</code></td><td><div class='docblock'><p>The title of the file which this comment is addressing.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.file_id'><code>file_id</code></td><td><div class='docblock'><p>The file which this comment is addressing.</p>
-</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl <a class='trait' href='../serde/de/trait.Deserialize.html' title='serde::de::Deserialize'>Deserialize</a> for <a class='struct' href='../google_drive2/struct.Comment.html' title='google_drive2::Comment'>Comment</a></code></h3><div class='impl-items'><h4 id='method.deserialize' class='method'><code>fn <a href='../serde/de/trait.Deserialize.html#method.deserialize' class='fnname'>deserialize</a>&lt;__D&gt;(deserializer: &amp;mut __D) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../google_drive2/struct.Comment.html' title='google_drive2::Comment'>Comment</a>, __D::Error&gt; <span class='where'>where __D: <a class='trait' href='../serde/de/trait.Deserializer.html' title='serde::de::Deserializer'>Deserializer</a></span></code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='../serde/ser/trait.Serialize.html' title='serde::ser::Serialize'>Serialize</a> for <a class='struct' href='../google_drive2/struct.Comment.html' title='google_drive2::Comment'>Comment</a></code></h3><div class='impl-items'><h4 id='method.serialize' class='method'><code>fn <a href='../serde/ser/trait.Serialize.html#method.serialize' class='fnname'>serialize</a>&lt;__S&gt;(&amp;self, serializer: &amp;mut __S) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, __S::Error&gt; <span class='where'>where __S: <a class='trait' href='../serde/ser/trait.Serializer.html' title='serde::ser::Serializer'>Serializer</a></span></code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='../google_drive2/trait.RequestValue.html' title='google_drive2::RequestValue'>RequestValue</a> for <a class='struct' href='../google_drive2/struct.Comment.html' title='google_drive2::Comment'>Comment</a></code></h3><div class='impl-items'></div><h3 class='impl'><code>impl <a class='trait' href='../google_drive2/trait.Resource.html' title='google_drive2::Resource'>Resource</a> for <a class='struct' href='../google_drive2/struct.Comment.html' title='google_drive2::Comment'>Comment</a></code></h3><div class='impl-items'></div><h3 class='impl'><code>impl <a class='trait' href='../google_drive2/trait.ResponseResult.html' title='google_drive2::ResponseResult'>ResponseResult</a> for <a class='struct' href='../google_drive2/struct.Comment.html' title='google_drive2::Comment'>Comment</a></code></h3><div class='impl-items'></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_drive2/struct.Comment.html' title='google_drive2::Comment'>Comment</a></code></h3><div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#method.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_drive2/struct.Comment.html' title='google_drive2::Comment'>Comment</a></code></h3><div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_drive2/struct.Comment.html' title='google_drive2::Comment'>Comment</a></code></h4>
-<h4 id='method.clone_from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_drive2/struct.Comment.html' title='google_drive2::Comment'>Comment</a></code></h3><div class='impl-items'><h4 id='method.default' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#method.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_drive2/struct.Comment.html' title='google_drive2::Comment'>Comment</a></code></h4>
-</div></section>
+                             <td id='structfield.file_id'><code>file_id</code></td><td><div class='docblock'><p>The file which this comment is addressing.</p>
+</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='../google_drive2/trait.RequestValue.html' title='google_drive2::RequestValue'>RequestValue</a> for <a class='struct' href='../google_drive2/struct.Comment.html' title='google_drive2::Comment'>Comment</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-1678' class='srclink' href='../src/google_drive2/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-drive2-20bcdf54d0770b82/out/lib.rs.html#4772' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='../google_drive2/trait.Resource.html' title='google_drive2::Resource'>Resource</a> for <a class='struct' href='../google_drive2/struct.Comment.html' title='google_drive2::Comment'>Comment</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-1679' class='srclink' href='../src/google_drive2/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-drive2-20bcdf54d0770b82/out/lib.rs.html#4773' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='../google_drive2/trait.ResponseResult.html' title='google_drive2::ResponseResult'>ResponseResult</a> for <a class='struct' href='../google_drive2/struct.Comment.html' title='google_drive2::Comment'>Comment</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-1680' class='srclink' href='../src/google_drive2/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-drive2-20bcdf54d0770b82/out/lib.rs.html#4774' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_drive2/struct.Comment.html' title='google_drive2::Comment'>Comment</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-1293' class='srclink' href='../src/google_drive2/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-drive2-20bcdf54d0770b82/out/lib.rs.html#3881' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.default' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_drive2/struct.Comment.html' title='google_drive2::Comment'>Comment</a></code></h4>
+<div class='docblock'><p>Returns the &quot;default value&quot; for a type. <a href="https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_drive2/struct.Comment.html' title='google_drive2::Comment'>Comment</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-1295' class='srclink' href='../src/google_drive2/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-drive2-20bcdf54d0770b82/out/lib.rs.html#3881' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_drive2/struct.Comment.html' title='google_drive2::Comment'>Comment</a></code></h4>
+<div class='docblock'><p>Returns a copy of the value. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone">Read more</a></p>
+</div><h4 id='method.clone_from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></h4>
+<div class='docblock'><p>Performs copy-assignment from <code>source</code>. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_drive2/struct.Comment.html' title='google_drive2::Comment'>Comment</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-1313' class='srclink' href='../src/google_drive2/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-drive2-20bcdf54d0770b82/out/lib.rs.html#3881' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
+<div class='docblock'><p>Formats the value using the given formatter.</p>
+</div></div></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
@@ -139,6 +148,8 @@ The list links the activity name, along with information about where it is used 
                     <dd>Move down in search results</dd>
                     <dt>&#9166;</dt>
                     <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
                 </dl>
             </div>
 
@@ -159,7 +170,7 @@ The list links the activity name, along with information about where it is used 
 
                 <p>
                     Search functions by type signature (e.g.
-                    <code>vec -> usize</code>)
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
                 </p>
             </div>
         </div>

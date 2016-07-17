@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
+    
 
     
     
@@ -43,11 +44,11 @@
 
     <section id='main' class="content mod">
 <h1 class='fqn'><span class='in-band'>Crate <a class='mod' href=''>google_analytics3</a></span><span class='out-of-band'><span id='render-detail'>
-            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
-                [<span class='inner'>&#x2212;</span>]
-            </a>
-        </span><a id='src-0' class='srclink' href='../src/google_analytics3/lib.rs.html#5-198' title='goto source code'>[src]</a></span></h1>
-<div class='docblock'><p>This documentation was generated from <em>analytics</em> crate version <em>0.1.11+20151215</em>, where <em>20151215</em> is the exact revision of the <em>analytics:v3</em> schema built by the <a href="http://www.makotemplates.org/">mako</a> code generator <em>v0.1.11</em>.</p>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-0' class='srclink' href='../src/google_analytics3/src/lib.rs.html#5-204' title='goto source code'>[src]</a></span></h1>
+<div class='docblock'><p>This documentation was generated from <em>analytics</em> crate version <em>0.1.14+20160308</em>, where <em>20160308</em> is the exact revision of the <em>analytics:v3</em> schema built by the <a href="http://www.makotemplates.org/">mako</a> code generator <em>v0.1.14</em>.</p>
 
 <p>Everything else about the <em>analytics</em> <em>v3</em> API can be found at the
 <a href="https://developers.google.com/analytics/">official documentation site</a>.
@@ -120,10 +121,12 @@ allow access to individual <a href="trait.CallBuilder.html"><em>Call Builders</e
 <p>All <em>structures</em> are marked with applicable traits to further categorize them and ease browsing.</p>
 
 <p>Generally speaking, you can invoke <em>Activities</em> like this:</p>
+
 <pre class='rust rust-example-rendered'>
 <span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>resource</span>().<span class='ident'>activity</span>(...).<span class='ident'>doit</span>()</pre>
 
 <p>Or specifically ...</p>
+
 <pre class='rust rust-example-rendered'>
 <span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>management</span>().<span class='ident'>webproperty_user_links_insert</span>(...).<span class='ident'>doit</span>()
 <span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>management</span>().<span class='ident'>profile_user_links_insert</span>(...).<span class='ident'>doit</span>()
@@ -145,7 +148,8 @@ The <code>doit()</code> method performs the actual communication with the server
 google-analytics3 = &quot;*&quot;
 </code></pre>
 
-<h2 id='a-complete-example' class='section-header'><a href='#a-complete-example'>A complete example</a></h2><pre class='rust rust-example-rendered'>
+<h2 id='a-complete-example' class='section-header'><a href='#a-complete-example'>A complete example</a></h2>
+<pre class='rust rust-example-rendered'>
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>hyper</span>;
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>yup_oauth2</span> <span class='kw'>as</span> <span class='ident'>oauth2</span>;
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>google_analytics3</span> <span class='kw'>as</span> <span class='ident'>analytics3</span>;
@@ -242,1798 +246,1406 @@ These will always take a single argument, for which the following statements are
 <p>Arguments will always be copied or cloned into the builder, to make them independent of their original life times.</p>
 </div><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
 <table>
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.Account.html'
-                               title='google_analytics3::Account'>Account</a></td>
-                        <td class='docblock short'>
-                             <p>JSON template for Analytics account entry.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.AccountChildLink.html'
-                               title='google_analytics3::AccountChildLink'>AccountChildLink</a></td>
-                        <td class='docblock short'>
-                             <p>Child link for an account entry. Points to the list of web properties for this account.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.AccountPermissions.html'
-                               title='google_analytics3::AccountPermissions'>AccountPermissions</a></td>
-                        <td class='docblock short'>
-                             <p>Permissions the user has for this account.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.AccountRef.html'
-                               title='google_analytics3::AccountRef'>AccountRef</a></td>
-                        <td class='docblock short'>
-                             <p>JSON template for a linked account.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.AccountSummaries.html'
-                               title='google_analytics3::AccountSummaries'>AccountSummaries</a></td>
-                        <td class='docblock short'>
-                             <p>An AccountSummary collection lists a summary of accounts, properties and views (profiles) to which the user has access. Each resource in the collection corresponds to a single AccountSummary.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.AccountSummary.html'
-                               title='google_analytics3::AccountSummary'>AccountSummary</a></td>
-                        <td class='docblock short'>
-                             <p>JSON template for an Analytics AccountSummary. An AccountSummary is a lightweight tree comprised of properties/profiles.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.AccountTicket.html'
-                               title='google_analytics3::AccountTicket'>AccountTicket</a></td>
-                        <td class='docblock short'>
-                             <p>JSON template for an Analytics account ticket. The account ticket consists of the ticket ID and the basic information for the account, property and profile.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.Accounts.html'
-                               title='google_analytics3::Accounts'>Accounts</a></td>
-                        <td class='docblock short'>
-                             <p>An account collection provides a list of Analytics accounts to which a user has access. The account collection is the entry point to all management information. Each resource in the collection corresponds to a single Analytics account.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.AdWordsAccount.html'
-                               title='google_analytics3::AdWordsAccount'>AdWordsAccount</a></td>
-                        <td class='docblock short'>
-                             <p>JSON template for an AdWords account.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.Analytics.html'
-                               title='google_analytics3::Analytics'>Analytics</a></td>
-                        <td class='docblock short'>
-                             <p>Central instance to access all Analytics related resource activities</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.AnalyticsDataimportDeleteUploadDataRequest.html'
-                               title='google_analytics3::AnalyticsDataimportDeleteUploadDataRequest'>AnalyticsDataimportDeleteUploadDataRequest</a></td>
-                        <td class='docblock short'>
-                             <p>Request template for the delete upload data request.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.Column.html'
-                               title='google_analytics3::Column'>Column</a></td>
-                        <td class='docblock short'>
-                             <p>JSON template for a metadata column.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.Columns.html'
-                               title='google_analytics3::Columns'>Columns</a></td>
-                        <td class='docblock short'>
-                             <p>Lists columns (dimensions and metrics) for a particular report type.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.CustomDataSource.html'
-                               title='google_analytics3::CustomDataSource'>CustomDataSource</a></td>
-                        <td class='docblock short'>
-                             <p>JSON template for an Analytics custom data source.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.CustomDataSourceChildLink.html'
-                               title='google_analytics3::CustomDataSourceChildLink'>CustomDataSourceChildLink</a></td>
-                        <td class='docblock short'>
-                             <p>There is no detailed description.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.CustomDataSourceParentLink.html'
-                               title='google_analytics3::CustomDataSourceParentLink'>CustomDataSourceParentLink</a></td>
-                        <td class='docblock short'>
-                             <p>Parent link for this custom data source. Points to the web property to which this custom data source belongs.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.CustomDataSources.html'
-                               title='google_analytics3::CustomDataSources'>CustomDataSources</a></td>
-                        <td class='docblock short'>
-                             <p>Lists Analytics custom data sources to which the user has access. Each resource in the collection corresponds to a single Analytics custom data source.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.CustomDimension.html'
-                               title='google_analytics3::CustomDimension'>CustomDimension</a></td>
-                        <td class='docblock short'>
-                             <p>JSON template for Analytics Custom Dimension.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.CustomDimensionParentLink.html'
-                               title='google_analytics3::CustomDimensionParentLink'>CustomDimensionParentLink</a></td>
-                        <td class='docblock short'>
-                             <p>Parent link for the custom dimension. Points to the property to which the custom dimension belongs.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.CustomDimensions.html'
-                               title='google_analytics3::CustomDimensions'>CustomDimensions</a></td>
-                        <td class='docblock short'>
-                             <p>A custom dimension collection lists Analytics custom dimensions to which the user has access. Each resource in the collection corresponds to a single Analytics custom dimension.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.CustomMetric.html'
-                               title='google_analytics3::CustomMetric'>CustomMetric</a></td>
-                        <td class='docblock short'>
-                             <p>JSON template for Analytics Custom Metric.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.CustomMetricParentLink.html'
-                               title='google_analytics3::CustomMetricParentLink'>CustomMetricParentLink</a></td>
-                        <td class='docblock short'>
-                             <p>Parent link for the custom metric. Points to the property to which the custom metric belongs.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.CustomMetrics.html'
-                               title='google_analytics3::CustomMetrics'>CustomMetrics</a></td>
-                        <td class='docblock short'>
-                             <p>A custom metric collection lists Analytics custom metrics to which the user has access. Each resource in the collection corresponds to a single Analytics custom metric.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.DataGaGetCall.html'
-                               title='google_analytics3::DataGaGetCall'>DataGaGetCall</a></td>
-                        <td class='docblock short'>
-                             <p>Returns Analytics data for a view (profile).</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.DataMcfGetCall.html'
-                               title='google_analytics3::DataMcfGetCall'>DataMcfGetCall</a></td>
-                        <td class='docblock short'>
-                             <p>Returns Analytics Multi-Channel Funnels data for a view (profile).</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.DataMethods.html'
-                               title='google_analytics3::DataMethods'>DataMethods</a></td>
-                        <td class='docblock short'>
-                             <p>A builder providing access to all methods supported on <em>data</em> resources.
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Account.html'
+                                  title='google_analytics3::Account'>Account</a></td>
+                           <td class='docblock short'>
+                                <p>JSON template for Analytics account entry.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AccountChildLink.html'
+                                  title='google_analytics3::AccountChildLink'>AccountChildLink</a></td>
+                           <td class='docblock short'>
+                                <p>Child link for an account entry. Points to the list of web properties for this account.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AccountPermissions.html'
+                                  title='google_analytics3::AccountPermissions'>AccountPermissions</a></td>
+                           <td class='docblock short'>
+                                <p>Permissions the user has for this account.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AccountRef.html'
+                                  title='google_analytics3::AccountRef'>AccountRef</a></td>
+                           <td class='docblock short'>
+                                <p>JSON template for a linked account.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AccountSummaries.html'
+                                  title='google_analytics3::AccountSummaries'>AccountSummaries</a></td>
+                           <td class='docblock short'>
+                                <p>An AccountSummary collection lists a summary of accounts, properties and views (profiles) to which the user has access. Each resource in the collection corresponds to a single AccountSummary.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AccountSummary.html'
+                                  title='google_analytics3::AccountSummary'>AccountSummary</a></td>
+                           <td class='docblock short'>
+                                <p>JSON template for an Analytics AccountSummary. An AccountSummary is a lightweight tree comprised of properties/profiles.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AccountTicket.html'
+                                  title='google_analytics3::AccountTicket'>AccountTicket</a></td>
+                           <td class='docblock short'>
+                                <p>JSON template for an Analytics account ticket. The account ticket consists of the ticket ID and the basic information for the account, property and profile.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Accounts.html'
+                                  title='google_analytics3::Accounts'>Accounts</a></td>
+                           <td class='docblock short'>
+                                <p>An account collection provides a list of Analytics accounts to which a user has access. The account collection is the entry point to all management information. Each resource in the collection corresponds to a single Analytics account.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AdWordsAccount.html'
+                                  title='google_analytics3::AdWordsAccount'>AdWordsAccount</a></td>
+                           <td class='docblock short'>
+                                <p>JSON template for an AdWords account.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Analytics.html'
+                                  title='google_analytics3::Analytics'>Analytics</a></td>
+                           <td class='docblock short'>
+                                <p>Central instance to access all Analytics related resource activities</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AnalyticsDataimportDeleteUploadDataRequest.html'
+                                  title='google_analytics3::AnalyticsDataimportDeleteUploadDataRequest'>AnalyticsDataimportDeleteUploadDataRequest</a></td>
+                           <td class='docblock short'>
+                                <p>Request template for the delete upload data request.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Column.html'
+                                  title='google_analytics3::Column'>Column</a></td>
+                           <td class='docblock short'>
+                                <p>JSON template for a metadata column.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Columns.html'
+                                  title='google_analytics3::Columns'>Columns</a></td>
+                           <td class='docblock short'>
+                                <p>Lists columns (dimensions and metrics) for a particular report type.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CustomDataSource.html'
+                                  title='google_analytics3::CustomDataSource'>CustomDataSource</a></td>
+                           <td class='docblock short'>
+                                <p>JSON template for an Analytics custom data source.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CustomDataSourceChildLink.html'
+                                  title='google_analytics3::CustomDataSourceChildLink'>CustomDataSourceChildLink</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CustomDataSourceParentLink.html'
+                                  title='google_analytics3::CustomDataSourceParentLink'>CustomDataSourceParentLink</a></td>
+                           <td class='docblock short'>
+                                <p>Parent link for this custom data source. Points to the web property to which this custom data source belongs.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CustomDataSources.html'
+                                  title='google_analytics3::CustomDataSources'>CustomDataSources</a></td>
+                           <td class='docblock short'>
+                                <p>Lists Analytics custom data sources to which the user has access. Each resource in the collection corresponds to a single Analytics custom data source.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CustomDimension.html'
+                                  title='google_analytics3::CustomDimension'>CustomDimension</a></td>
+                           <td class='docblock short'>
+                                <p>JSON template for Analytics Custom Dimension.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CustomDimensionParentLink.html'
+                                  title='google_analytics3::CustomDimensionParentLink'>CustomDimensionParentLink</a></td>
+                           <td class='docblock short'>
+                                <p>Parent link for the custom dimension. Points to the property to which the custom dimension belongs.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CustomDimensions.html'
+                                  title='google_analytics3::CustomDimensions'>CustomDimensions</a></td>
+                           <td class='docblock short'>
+                                <p>A custom dimension collection lists Analytics custom dimensions to which the user has access. Each resource in the collection corresponds to a single Analytics custom dimension.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CustomMetric.html'
+                                  title='google_analytics3::CustomMetric'>CustomMetric</a></td>
+                           <td class='docblock short'>
+                                <p>JSON template for Analytics Custom Metric.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CustomMetricParentLink.html'
+                                  title='google_analytics3::CustomMetricParentLink'>CustomMetricParentLink</a></td>
+                           <td class='docblock short'>
+                                <p>Parent link for the custom metric. Points to the property to which the custom metric belongs.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CustomMetrics.html'
+                                  title='google_analytics3::CustomMetrics'>CustomMetrics</a></td>
+                           <td class='docblock short'>
+                                <p>A custom metric collection lists Analytics custom metrics to which the user has access. Each resource in the collection corresponds to a single Analytics custom metric.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DataGaGetCall.html'
+                                  title='google_analytics3::DataGaGetCall'>DataGaGetCall</a></td>
+                           <td class='docblock short'>
+                                <p>Returns Analytics data for a view (profile).</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DataMcfGetCall.html'
+                                  title='google_analytics3::DataMcfGetCall'>DataMcfGetCall</a></td>
+                           <td class='docblock short'>
+                                <p>Returns Analytics Multi-Channel Funnels data for a view (profile).</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DataMethods.html'
+                                  title='google_analytics3::DataMethods'>DataMethods</a></td>
+                           <td class='docblock short'>
+                                <p>A builder providing access to all methods supported on <em>data</em> resources.
 It is not used directly, but through the <code>Analytics</code> hub.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.DataRealtimeGetCall.html'
-                               title='google_analytics3::DataRealtimeGetCall'>DataRealtimeGetCall</a></td>
-                        <td class='docblock short'>
-                             <p>Returns real time data for a view (profile).</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.DefaultDelegate.html'
-                               title='google_analytics3::DefaultDelegate'>DefaultDelegate</a></td>
-                        <td class='docblock short'>
-                             <p>A delegate with a conservative default implementation, which is used if no other delegate is
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DataRealtimeGetCall.html'
+                                  title='google_analytics3::DataRealtimeGetCall'>DataRealtimeGetCall</a></td>
+                           <td class='docblock short'>
+                                <p>Returns real time data for a view (profile).</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DefaultDelegate.html'
+                                  title='google_analytics3::DefaultDelegate'>DefaultDelegate</a></td>
+                           <td class='docblock short'>
+                                <p>A delegate with a conservative default implementation, which is used if no other delegate is
 set.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.EntityAdWordsLink.html'
-                               title='google_analytics3::EntityAdWordsLink'>EntityAdWordsLink</a></td>
-                        <td class='docblock short'>
-                             <p>JSON template for Analytics Entity AdWords Link.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.EntityAdWordsLinkEntity.html'
-                               title='google_analytics3::EntityAdWordsLinkEntity'>EntityAdWordsLinkEntity</a></td>
-                        <td class='docblock short'>
-                             <p>Web property being linked.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.EntityAdWordsLinks.html'
-                               title='google_analytics3::EntityAdWordsLinks'>EntityAdWordsLinks</a></td>
-                        <td class='docblock short'>
-                             <p>An entity AdWords link collection provides a list of GA-AdWords links Each resource in this collection corresponds to a single link.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.EntityUserLink.html'
-                               title='google_analytics3::EntityUserLink'>EntityUserLink</a></td>
-                        <td class='docblock short'>
-                             <p>JSON template for an Analytics Entity-User Link. Returns permissions that a user has for an entity.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.EntityUserLinkEntity.html'
-                               title='google_analytics3::EntityUserLinkEntity'>EntityUserLinkEntity</a></td>
-                        <td class='docblock short'>
-                             <p>Entity for this link. It can be an account, a web property, or a view (profile).</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.EntityUserLinkPermissions.html'
-                               title='google_analytics3::EntityUserLinkPermissions'>EntityUserLinkPermissions</a></td>
-                        <td class='docblock short'>
-                             <p>Permissions the user has for this entity.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.EntityUserLinks.html'
-                               title='google_analytics3::EntityUserLinks'>EntityUserLinks</a></td>
-                        <td class='docblock short'>
-                             <p>An entity user link collection provides a list of Analytics ACL links Each resource in this collection corresponds to a single link.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ErrorResponse.html'
-                               title='google_analytics3::ErrorResponse'>ErrorResponse</a></td>
-                        <td class='docblock short'>
-                             <p>A utility to represent detailed errors we might see in case there are BadRequests.
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.EntityAdWordsLink.html'
+                                  title='google_analytics3::EntityAdWordsLink'>EntityAdWordsLink</a></td>
+                           <td class='docblock short'>
+                                <p>JSON template for Analytics Entity AdWords Link.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.EntityAdWordsLinkEntity.html'
+                                  title='google_analytics3::EntityAdWordsLinkEntity'>EntityAdWordsLinkEntity</a></td>
+                           <td class='docblock short'>
+                                <p>Web property being linked.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.EntityAdWordsLinks.html'
+                                  title='google_analytics3::EntityAdWordsLinks'>EntityAdWordsLinks</a></td>
+                           <td class='docblock short'>
+                                <p>An entity AdWords link collection provides a list of GA-AdWords links Each resource in this collection corresponds to a single link.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.EntityUserLink.html'
+                                  title='google_analytics3::EntityUserLink'>EntityUserLink</a></td>
+                           <td class='docblock short'>
+                                <p>JSON template for an Analytics Entity-User Link. Returns permissions that a user has for an entity.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.EntityUserLinkEntity.html'
+                                  title='google_analytics3::EntityUserLinkEntity'>EntityUserLinkEntity</a></td>
+                           <td class='docblock short'>
+                                <p>Entity for this link. It can be an account, a web property, or a view (profile).</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.EntityUserLinkPermissions.html'
+                                  title='google_analytics3::EntityUserLinkPermissions'>EntityUserLinkPermissions</a></td>
+                           <td class='docblock short'>
+                                <p>Permissions the user has for this entity.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.EntityUserLinks.html'
+                                  title='google_analytics3::EntityUserLinks'>EntityUserLinks</a></td>
+                           <td class='docblock short'>
+                                <p>An entity user link collection provides a list of Analytics ACL links Each resource in this collection corresponds to a single link.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ErrorResponse.html'
+                                  title='google_analytics3::ErrorResponse'>ErrorResponse</a></td>
+                           <td class='docblock short'>
+                                <p>A utility to represent detailed errors we might see in case there are BadRequests.
 The latter happen if the sent parameters or request structures are unsound</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.Experiment.html'
-                               title='google_analytics3::Experiment'>Experiment</a></td>
-                        <td class='docblock short'>
-                             <p>JSON template for Analytics experiment resource.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ExperimentParentLink.html'
-                               title='google_analytics3::ExperimentParentLink'>ExperimentParentLink</a></td>
-                        <td class='docblock short'>
-                             <p>Parent link for an experiment. Points to the view (profile) to which this experiment belongs.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ExperimentVariations.html'
-                               title='google_analytics3::ExperimentVariations'>ExperimentVariations</a></td>
-                        <td class='docblock short'>
-                             <p>Array of variations. The first variation in the array is the original. The number of variations may not change once an experiment is in the RUNNING state. At least two variations are required before status can be set to RUNNING.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.Experiments.html'
-                               title='google_analytics3::Experiments'>Experiments</a></td>
-                        <td class='docblock short'>
-                             <p>An experiment collection lists Analytics experiments to which the user has access. Each view (profile) can have a set of experiments. Each resource in the Experiment collection corresponds to a single Analytics experiment.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.Filter.html'
-                               title='google_analytics3::Filter'>Filter</a></td>
-                        <td class='docblock short'>
-                             <p>JSON template for an Analytics account filter.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.FilterAdvancedDetails.html'
-                               title='google_analytics3::FilterAdvancedDetails'>FilterAdvancedDetails</a></td>
-                        <td class='docblock short'>
-                             <p>Details for the filter of the type ADVANCED.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.FilterExpression.html'
-                               title='google_analytics3::FilterExpression'>FilterExpression</a></td>
-                        <td class='docblock short'>
-                             <p>JSON template for an Analytics filter expression.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.FilterLowercaseDetails.html'
-                               title='google_analytics3::FilterLowercaseDetails'>FilterLowercaseDetails</a></td>
-                        <td class='docblock short'>
-                             <p>Details for the filter of the type LOWER.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.FilterParentLink.html'
-                               title='google_analytics3::FilterParentLink'>FilterParentLink</a></td>
-                        <td class='docblock short'>
-                             <p>Parent link for this filter. Points to the account to which this filter belongs.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.FilterRef.html'
-                               title='google_analytics3::FilterRef'>FilterRef</a></td>
-                        <td class='docblock short'>
-                             <p>JSON template for a profile filter link.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.FilterSearchAndReplaceDetails.html'
-                               title='google_analytics3::FilterSearchAndReplaceDetails'>FilterSearchAndReplaceDetails</a></td>
-                        <td class='docblock short'>
-                             <p>Details for the filter of the type SEARCH_AND_REPLACE.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.FilterUppercaseDetails.html'
-                               title='google_analytics3::FilterUppercaseDetails'>FilterUppercaseDetails</a></td>
-                        <td class='docblock short'>
-                             <p>Details for the filter of the type UPPER.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.Filters.html'
-                               title='google_analytics3::Filters'>Filters</a></td>
-                        <td class='docblock short'>
-                             <p>A filter collection lists filters created by users in an Analytics account. Each resource in the collection corresponds to a filter.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.GaData.html'
-                               title='google_analytics3::GaData'>GaData</a></td>
-                        <td class='docblock short'>
-                             <p>Analytics data for a given view (profile).</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.GaDataColumnHeaders.html'
-                               title='google_analytics3::GaDataColumnHeaders'>GaDataColumnHeaders</a></td>
-                        <td class='docblock short'>
-                             <p>Column headers that list dimension names followed by the metric names. The order of dimensions and metrics is same as specified in the request.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.GaDataDataTable.html'
-                               title='google_analytics3::GaDataDataTable'>GaDataDataTable</a></td>
-                        <td class='docblock short'>
-                             <p>There is no detailed description.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.GaDataDataTableCols.html'
-                               title='google_analytics3::GaDataDataTableCols'>GaDataDataTableCols</a></td>
-                        <td class='docblock short'>
-                             <p>There is no detailed description.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.GaDataDataTableRows.html'
-                               title='google_analytics3::GaDataDataTableRows'>GaDataDataTableRows</a></td>
-                        <td class='docblock short'>
-                             <p>There is no detailed description.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.GaDataDataTableRowsC.html'
-                               title='google_analytics3::GaDataDataTableRowsC'>GaDataDataTableRowsC</a></td>
-                        <td class='docblock short'>
-                             <p>There is no detailed description.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.GaDataProfileInfo.html'
-                               title='google_analytics3::GaDataProfileInfo'>GaDataProfileInfo</a></td>
-                        <td class='docblock short'>
-                             <p>Information for the view (profile), for which the Analytics data was requested.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.GaDataQuery.html'
-                               title='google_analytics3::GaDataQuery'>GaDataQuery</a></td>
-                        <td class='docblock short'>
-                             <p>Analytics data request query parameters.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.Goal.html'
-                               title='google_analytics3::Goal'>Goal</a></td>
-                        <td class='docblock short'>
-                             <p>JSON template for Analytics goal resource.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.GoalEventDetails.html'
-                               title='google_analytics3::GoalEventDetails'>GoalEventDetails</a></td>
-                        <td class='docblock short'>
-                             <p>Details for the goal of the type EVENT.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.GoalEventDetailsEventConditions.html'
-                               title='google_analytics3::GoalEventDetailsEventConditions'>GoalEventDetailsEventConditions</a></td>
-                        <td class='docblock short'>
-                             <p>List of event conditions.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.GoalParentLink.html'
-                               title='google_analytics3::GoalParentLink'>GoalParentLink</a></td>
-                        <td class='docblock short'>
-                             <p>Parent link for a goal. Points to the view (profile) to which this goal belongs.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.GoalUrlDestinationDetails.html'
-                               title='google_analytics3::GoalUrlDestinationDetails'>GoalUrlDestinationDetails</a></td>
-                        <td class='docblock short'>
-                             <p>Details for the goal of the type URL_DESTINATION.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.GoalUrlDestinationDetailsSteps.html'
-                               title='google_analytics3::GoalUrlDestinationDetailsSteps'>GoalUrlDestinationDetailsSteps</a></td>
-                        <td class='docblock short'>
-                             <p>List of steps configured for this goal funnel.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.GoalVisitNumPagesDetails.html'
-                               title='google_analytics3::GoalVisitNumPagesDetails'>GoalVisitNumPagesDetails</a></td>
-                        <td class='docblock short'>
-                             <p>Details for the goal of the type VISIT_NUM_PAGES.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.GoalVisitTimeOnSiteDetails.html'
-                               title='google_analytics3::GoalVisitTimeOnSiteDetails'>GoalVisitTimeOnSiteDetails</a></td>
-                        <td class='docblock short'>
-                             <p>Details for the goal of the type VISIT_TIME_ON_SITE.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.Goals.html'
-                               title='google_analytics3::Goals'>Goals</a></td>
-                        <td class='docblock short'>
-                             <p>A goal collection lists Analytics goals to which the user has access. Each view (profile) can have a set of goals. Each resource in the Goal collection corresponds to a single Analytics goal.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ManagementAccountListCall.html'
-                               title='google_analytics3::ManagementAccountListCall'>ManagementAccountListCall</a></td>
-                        <td class='docblock short'>
-                             <p>Lists all accounts to which the user has access.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ManagementAccountSummaryListCall.html'
-                               title='google_analytics3::ManagementAccountSummaryListCall'>ManagementAccountSummaryListCall</a></td>
-                        <td class='docblock short'>
-                             <p>Lists account summaries (lightweight tree comprised of accounts/properties/profiles) to which the user has access.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ManagementAccountUserLinkDeleteCall.html'
-                               title='google_analytics3::ManagementAccountUserLinkDeleteCall'>ManagementAccountUserLinkDeleteCall</a></td>
-                        <td class='docblock short'>
-                             <p>Removes a user from the given account.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ManagementAccountUserLinkInsertCall.html'
-                               title='google_analytics3::ManagementAccountUserLinkInsertCall'>ManagementAccountUserLinkInsertCall</a></td>
-                        <td class='docblock short'>
-                             <p>Adds a new user to the given account.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ManagementAccountUserLinkListCall.html'
-                               title='google_analytics3::ManagementAccountUserLinkListCall'>ManagementAccountUserLinkListCall</a></td>
-                        <td class='docblock short'>
-                             <p>Lists account-user links for a given account.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ManagementAccountUserLinkUpdateCall.html'
-                               title='google_analytics3::ManagementAccountUserLinkUpdateCall'>ManagementAccountUserLinkUpdateCall</a></td>
-                        <td class='docblock short'>
-                             <p>Updates permissions for an existing user on the given account.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ManagementCustomDataSourceListCall.html'
-                               title='google_analytics3::ManagementCustomDataSourceListCall'>ManagementCustomDataSourceListCall</a></td>
-                        <td class='docblock short'>
-                             <p>List custom data sources to which the user has access.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ManagementCustomDimensionGetCall.html'
-                               title='google_analytics3::ManagementCustomDimensionGetCall'>ManagementCustomDimensionGetCall</a></td>
-                        <td class='docblock short'>
-                             <p>Get a custom dimension to which the user has access.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ManagementCustomDimensionInsertCall.html'
-                               title='google_analytics3::ManagementCustomDimensionInsertCall'>ManagementCustomDimensionInsertCall</a></td>
-                        <td class='docblock short'>
-                             <p>Create a new custom dimension.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ManagementCustomDimensionListCall.html'
-                               title='google_analytics3::ManagementCustomDimensionListCall'>ManagementCustomDimensionListCall</a></td>
-                        <td class='docblock short'>
-                             <p>Lists custom dimensions to which the user has access.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ManagementCustomDimensionPatchCall.html'
-                               title='google_analytics3::ManagementCustomDimensionPatchCall'>ManagementCustomDimensionPatchCall</a></td>
-                        <td class='docblock short'>
-                             <p>Updates an existing custom dimension. This method supports patch semantics.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ManagementCustomDimensionUpdateCall.html'
-                               title='google_analytics3::ManagementCustomDimensionUpdateCall'>ManagementCustomDimensionUpdateCall</a></td>
-                        <td class='docblock short'>
-                             <p>Updates an existing custom dimension.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ManagementCustomMetricGetCall.html'
-                               title='google_analytics3::ManagementCustomMetricGetCall'>ManagementCustomMetricGetCall</a></td>
-                        <td class='docblock short'>
-                             <p>Get a custom metric to which the user has access.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ManagementCustomMetricInsertCall.html'
-                               title='google_analytics3::ManagementCustomMetricInsertCall'>ManagementCustomMetricInsertCall</a></td>
-                        <td class='docblock short'>
-                             <p>Create a new custom metric.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ManagementCustomMetricListCall.html'
-                               title='google_analytics3::ManagementCustomMetricListCall'>ManagementCustomMetricListCall</a></td>
-                        <td class='docblock short'>
-                             <p>Lists custom metrics to which the user has access.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ManagementCustomMetricPatchCall.html'
-                               title='google_analytics3::ManagementCustomMetricPatchCall'>ManagementCustomMetricPatchCall</a></td>
-                        <td class='docblock short'>
-                             <p>Updates an existing custom metric. This method supports patch semantics.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ManagementCustomMetricUpdateCall.html'
-                               title='google_analytics3::ManagementCustomMetricUpdateCall'>ManagementCustomMetricUpdateCall</a></td>
-                        <td class='docblock short'>
-                             <p>Updates an existing custom metric.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ManagementExperimentDeleteCall.html'
-                               title='google_analytics3::ManagementExperimentDeleteCall'>ManagementExperimentDeleteCall</a></td>
-                        <td class='docblock short'>
-                             <p>Delete an experiment.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ManagementExperimentGetCall.html'
-                               title='google_analytics3::ManagementExperimentGetCall'>ManagementExperimentGetCall</a></td>
-                        <td class='docblock short'>
-                             <p>Returns an experiment to which the user has access.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ManagementExperimentInsertCall.html'
-                               title='google_analytics3::ManagementExperimentInsertCall'>ManagementExperimentInsertCall</a></td>
-                        <td class='docblock short'>
-                             <p>Create a new experiment.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ManagementExperimentListCall.html'
-                               title='google_analytics3::ManagementExperimentListCall'>ManagementExperimentListCall</a></td>
-                        <td class='docblock short'>
-                             <p>Lists experiments to which the user has access.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ManagementExperimentPatchCall.html'
-                               title='google_analytics3::ManagementExperimentPatchCall'>ManagementExperimentPatchCall</a></td>
-                        <td class='docblock short'>
-                             <p>Update an existing experiment. This method supports patch semantics.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ManagementExperimentUpdateCall.html'
-                               title='google_analytics3::ManagementExperimentUpdateCall'>ManagementExperimentUpdateCall</a></td>
-                        <td class='docblock short'>
-                             <p>Update an existing experiment.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ManagementFilterDeleteCall.html'
-                               title='google_analytics3::ManagementFilterDeleteCall'>ManagementFilterDeleteCall</a></td>
-                        <td class='docblock short'>
-                             <p>Delete a filter.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ManagementFilterGetCall.html'
-                               title='google_analytics3::ManagementFilterGetCall'>ManagementFilterGetCall</a></td>
-                        <td class='docblock short'>
-                             <p>Returns a filters to which the user has access.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ManagementFilterInsertCall.html'
-                               title='google_analytics3::ManagementFilterInsertCall'>ManagementFilterInsertCall</a></td>
-                        <td class='docblock short'>
-                             <p>Create a new filter.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ManagementFilterListCall.html'
-                               title='google_analytics3::ManagementFilterListCall'>ManagementFilterListCall</a></td>
-                        <td class='docblock short'>
-                             <p>Lists all filters for an account</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ManagementFilterPatchCall.html'
-                               title='google_analytics3::ManagementFilterPatchCall'>ManagementFilterPatchCall</a></td>
-                        <td class='docblock short'>
-                             <p>Updates an existing filter. This method supports patch semantics.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ManagementFilterUpdateCall.html'
-                               title='google_analytics3::ManagementFilterUpdateCall'>ManagementFilterUpdateCall</a></td>
-                        <td class='docblock short'>
-                             <p>Updates an existing filter.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ManagementGoalGetCall.html'
-                               title='google_analytics3::ManagementGoalGetCall'>ManagementGoalGetCall</a></td>
-                        <td class='docblock short'>
-                             <p>Gets a goal to which the user has access.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ManagementGoalInsertCall.html'
-                               title='google_analytics3::ManagementGoalInsertCall'>ManagementGoalInsertCall</a></td>
-                        <td class='docblock short'>
-                             <p>Create a new goal.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ManagementGoalListCall.html'
-                               title='google_analytics3::ManagementGoalListCall'>ManagementGoalListCall</a></td>
-                        <td class='docblock short'>
-                             <p>Lists goals to which the user has access.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ManagementGoalPatchCall.html'
-                               title='google_analytics3::ManagementGoalPatchCall'>ManagementGoalPatchCall</a></td>
-                        <td class='docblock short'>
-                             <p>Updates an existing view (profile). This method supports patch semantics.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ManagementGoalUpdateCall.html'
-                               title='google_analytics3::ManagementGoalUpdateCall'>ManagementGoalUpdateCall</a></td>
-                        <td class='docblock short'>
-                             <p>Updates an existing view (profile).</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ManagementMethods.html'
-                               title='google_analytics3::ManagementMethods'>ManagementMethods</a></td>
-                        <td class='docblock short'>
-                             <p>A builder providing access to all methods supported on <em>management</em> resources.
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Experiment.html'
+                                  title='google_analytics3::Experiment'>Experiment</a></td>
+                           <td class='docblock short'>
+                                <p>JSON template for Analytics experiment resource.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ExperimentParentLink.html'
+                                  title='google_analytics3::ExperimentParentLink'>ExperimentParentLink</a></td>
+                           <td class='docblock short'>
+                                <p>Parent link for an experiment. Points to the view (profile) to which this experiment belongs.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ExperimentVariations.html'
+                                  title='google_analytics3::ExperimentVariations'>ExperimentVariations</a></td>
+                           <td class='docblock short'>
+                                <p>Array of variations. The first variation in the array is the original. The number of variations may not change once an experiment is in the RUNNING state. At least two variations are required before status can be set to RUNNING.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Experiments.html'
+                                  title='google_analytics3::Experiments'>Experiments</a></td>
+                           <td class='docblock short'>
+                                <p>An experiment collection lists Analytics experiments to which the user has access. Each view (profile) can have a set of experiments. Each resource in the Experiment collection corresponds to a single Analytics experiment.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Filter.html'
+                                  title='google_analytics3::Filter'>Filter</a></td>
+                           <td class='docblock short'>
+                                <p>JSON template for an Analytics account filter.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.FilterAdvancedDetails.html'
+                                  title='google_analytics3::FilterAdvancedDetails'>FilterAdvancedDetails</a></td>
+                           <td class='docblock short'>
+                                <p>Details for the filter of the type ADVANCED.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.FilterExpression.html'
+                                  title='google_analytics3::FilterExpression'>FilterExpression</a></td>
+                           <td class='docblock short'>
+                                <p>JSON template for an Analytics filter expression.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.FilterLowercaseDetails.html'
+                                  title='google_analytics3::FilterLowercaseDetails'>FilterLowercaseDetails</a></td>
+                           <td class='docblock short'>
+                                <p>Details for the filter of the type LOWER.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.FilterParentLink.html'
+                                  title='google_analytics3::FilterParentLink'>FilterParentLink</a></td>
+                           <td class='docblock short'>
+                                <p>Parent link for this filter. Points to the account to which this filter belongs.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.FilterRef.html'
+                                  title='google_analytics3::FilterRef'>FilterRef</a></td>
+                           <td class='docblock short'>
+                                <p>JSON template for a profile filter link.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.FilterSearchAndReplaceDetails.html'
+                                  title='google_analytics3::FilterSearchAndReplaceDetails'>FilterSearchAndReplaceDetails</a></td>
+                           <td class='docblock short'>
+                                <p>Details for the filter of the type SEARCH_AND_REPLACE.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.FilterUppercaseDetails.html'
+                                  title='google_analytics3::FilterUppercaseDetails'>FilterUppercaseDetails</a></td>
+                           <td class='docblock short'>
+                                <p>Details for the filter of the type UPPER.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Filters.html'
+                                  title='google_analytics3::Filters'>Filters</a></td>
+                           <td class='docblock short'>
+                                <p>A filter collection lists filters created by users in an Analytics account. Each resource in the collection corresponds to a filter.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GaData.html'
+                                  title='google_analytics3::GaData'>GaData</a></td>
+                           <td class='docblock short'>
+                                <p>Analytics data for a given view (profile).</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GaDataColumnHeaders.html'
+                                  title='google_analytics3::GaDataColumnHeaders'>GaDataColumnHeaders</a></td>
+                           <td class='docblock short'>
+                                <p>Column headers that list dimension names followed by the metric names. The order of dimensions and metrics is same as specified in the request.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GaDataDataTable.html'
+                                  title='google_analytics3::GaDataDataTable'>GaDataDataTable</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GaDataDataTableCols.html'
+                                  title='google_analytics3::GaDataDataTableCols'>GaDataDataTableCols</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GaDataDataTableRows.html'
+                                  title='google_analytics3::GaDataDataTableRows'>GaDataDataTableRows</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GaDataDataTableRowsC.html'
+                                  title='google_analytics3::GaDataDataTableRowsC'>GaDataDataTableRowsC</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GaDataProfileInfo.html'
+                                  title='google_analytics3::GaDataProfileInfo'>GaDataProfileInfo</a></td>
+                           <td class='docblock short'>
+                                <p>Information for the view (profile), for which the Analytics data was requested.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GaDataQuery.html'
+                                  title='google_analytics3::GaDataQuery'>GaDataQuery</a></td>
+                           <td class='docblock short'>
+                                <p>Analytics data request query parameters.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Goal.html'
+                                  title='google_analytics3::Goal'>Goal</a></td>
+                           <td class='docblock short'>
+                                <p>JSON template for Analytics goal resource.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GoalEventDetails.html'
+                                  title='google_analytics3::GoalEventDetails'>GoalEventDetails</a></td>
+                           <td class='docblock short'>
+                                <p>Details for the goal of the type EVENT.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GoalEventDetailsEventConditions.html'
+                                  title='google_analytics3::GoalEventDetailsEventConditions'>GoalEventDetailsEventConditions</a></td>
+                           <td class='docblock short'>
+                                <p>List of event conditions.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GoalParentLink.html'
+                                  title='google_analytics3::GoalParentLink'>GoalParentLink</a></td>
+                           <td class='docblock short'>
+                                <p>Parent link for a goal. Points to the view (profile) to which this goal belongs.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GoalUrlDestinationDetails.html'
+                                  title='google_analytics3::GoalUrlDestinationDetails'>GoalUrlDestinationDetails</a></td>
+                           <td class='docblock short'>
+                                <p>Details for the goal of the type URL_DESTINATION.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GoalUrlDestinationDetailsSteps.html'
+                                  title='google_analytics3::GoalUrlDestinationDetailsSteps'>GoalUrlDestinationDetailsSteps</a></td>
+                           <td class='docblock short'>
+                                <p>List of steps configured for this goal funnel.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GoalVisitNumPagesDetails.html'
+                                  title='google_analytics3::GoalVisitNumPagesDetails'>GoalVisitNumPagesDetails</a></td>
+                           <td class='docblock short'>
+                                <p>Details for the goal of the type VISIT_NUM_PAGES.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GoalVisitTimeOnSiteDetails.html'
+                                  title='google_analytics3::GoalVisitTimeOnSiteDetails'>GoalVisitTimeOnSiteDetails</a></td>
+                           <td class='docblock short'>
+                                <p>Details for the goal of the type VISIT_TIME_ON_SITE.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Goals.html'
+                                  title='google_analytics3::Goals'>Goals</a></td>
+                           <td class='docblock short'>
+                                <p>A goal collection lists Analytics goals to which the user has access. Each view (profile) can have a set of goals. Each resource in the Goal collection corresponds to a single Analytics goal.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagementAccountListCall.html'
+                                  title='google_analytics3::ManagementAccountListCall'>ManagementAccountListCall</a></td>
+                           <td class='docblock short'>
+                                <p>Lists all accounts to which the user has access.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagementAccountSummaryListCall.html'
+                                  title='google_analytics3::ManagementAccountSummaryListCall'>ManagementAccountSummaryListCall</a></td>
+                           <td class='docblock short'>
+                                <p>Lists account summaries (lightweight tree comprised of accounts/properties/profiles) to which the user has access.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagementAccountUserLinkDeleteCall.html'
+                                  title='google_analytics3::ManagementAccountUserLinkDeleteCall'>ManagementAccountUserLinkDeleteCall</a></td>
+                           <td class='docblock short'>
+                                <p>Removes a user from the given account.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagementAccountUserLinkInsertCall.html'
+                                  title='google_analytics3::ManagementAccountUserLinkInsertCall'>ManagementAccountUserLinkInsertCall</a></td>
+                           <td class='docblock short'>
+                                <p>Adds a new user to the given account.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagementAccountUserLinkListCall.html'
+                                  title='google_analytics3::ManagementAccountUserLinkListCall'>ManagementAccountUserLinkListCall</a></td>
+                           <td class='docblock short'>
+                                <p>Lists account-user links for a given account.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagementAccountUserLinkUpdateCall.html'
+                                  title='google_analytics3::ManagementAccountUserLinkUpdateCall'>ManagementAccountUserLinkUpdateCall</a></td>
+                           <td class='docblock short'>
+                                <p>Updates permissions for an existing user on the given account.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagementCustomDataSourceListCall.html'
+                                  title='google_analytics3::ManagementCustomDataSourceListCall'>ManagementCustomDataSourceListCall</a></td>
+                           <td class='docblock short'>
+                                <p>List custom data sources to which the user has access.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagementCustomDimensionGetCall.html'
+                                  title='google_analytics3::ManagementCustomDimensionGetCall'>ManagementCustomDimensionGetCall</a></td>
+                           <td class='docblock short'>
+                                <p>Get a custom dimension to which the user has access.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagementCustomDimensionInsertCall.html'
+                                  title='google_analytics3::ManagementCustomDimensionInsertCall'>ManagementCustomDimensionInsertCall</a></td>
+                           <td class='docblock short'>
+                                <p>Create a new custom dimension.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagementCustomDimensionListCall.html'
+                                  title='google_analytics3::ManagementCustomDimensionListCall'>ManagementCustomDimensionListCall</a></td>
+                           <td class='docblock short'>
+                                <p>Lists custom dimensions to which the user has access.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagementCustomDimensionPatchCall.html'
+                                  title='google_analytics3::ManagementCustomDimensionPatchCall'>ManagementCustomDimensionPatchCall</a></td>
+                           <td class='docblock short'>
+                                <p>Updates an existing custom dimension. This method supports patch semantics.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagementCustomDimensionUpdateCall.html'
+                                  title='google_analytics3::ManagementCustomDimensionUpdateCall'>ManagementCustomDimensionUpdateCall</a></td>
+                           <td class='docblock short'>
+                                <p>Updates an existing custom dimension.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagementCustomMetricGetCall.html'
+                                  title='google_analytics3::ManagementCustomMetricGetCall'>ManagementCustomMetricGetCall</a></td>
+                           <td class='docblock short'>
+                                <p>Get a custom metric to which the user has access.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagementCustomMetricInsertCall.html'
+                                  title='google_analytics3::ManagementCustomMetricInsertCall'>ManagementCustomMetricInsertCall</a></td>
+                           <td class='docblock short'>
+                                <p>Create a new custom metric.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagementCustomMetricListCall.html'
+                                  title='google_analytics3::ManagementCustomMetricListCall'>ManagementCustomMetricListCall</a></td>
+                           <td class='docblock short'>
+                                <p>Lists custom metrics to which the user has access.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagementCustomMetricPatchCall.html'
+                                  title='google_analytics3::ManagementCustomMetricPatchCall'>ManagementCustomMetricPatchCall</a></td>
+                           <td class='docblock short'>
+                                <p>Updates an existing custom metric. This method supports patch semantics.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagementCustomMetricUpdateCall.html'
+                                  title='google_analytics3::ManagementCustomMetricUpdateCall'>ManagementCustomMetricUpdateCall</a></td>
+                           <td class='docblock short'>
+                                <p>Updates an existing custom metric.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagementExperimentDeleteCall.html'
+                                  title='google_analytics3::ManagementExperimentDeleteCall'>ManagementExperimentDeleteCall</a></td>
+                           <td class='docblock short'>
+                                <p>Delete an experiment.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagementExperimentGetCall.html'
+                                  title='google_analytics3::ManagementExperimentGetCall'>ManagementExperimentGetCall</a></td>
+                           <td class='docblock short'>
+                                <p>Returns an experiment to which the user has access.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagementExperimentInsertCall.html'
+                                  title='google_analytics3::ManagementExperimentInsertCall'>ManagementExperimentInsertCall</a></td>
+                           <td class='docblock short'>
+                                <p>Create a new experiment.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagementExperimentListCall.html'
+                                  title='google_analytics3::ManagementExperimentListCall'>ManagementExperimentListCall</a></td>
+                           <td class='docblock short'>
+                                <p>Lists experiments to which the user has access.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagementExperimentPatchCall.html'
+                                  title='google_analytics3::ManagementExperimentPatchCall'>ManagementExperimentPatchCall</a></td>
+                           <td class='docblock short'>
+                                <p>Update an existing experiment. This method supports patch semantics.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagementExperimentUpdateCall.html'
+                                  title='google_analytics3::ManagementExperimentUpdateCall'>ManagementExperimentUpdateCall</a></td>
+                           <td class='docblock short'>
+                                <p>Update an existing experiment.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagementFilterDeleteCall.html'
+                                  title='google_analytics3::ManagementFilterDeleteCall'>ManagementFilterDeleteCall</a></td>
+                           <td class='docblock short'>
+                                <p>Delete a filter.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagementFilterGetCall.html'
+                                  title='google_analytics3::ManagementFilterGetCall'>ManagementFilterGetCall</a></td>
+                           <td class='docblock short'>
+                                <p>Returns a filters to which the user has access.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagementFilterInsertCall.html'
+                                  title='google_analytics3::ManagementFilterInsertCall'>ManagementFilterInsertCall</a></td>
+                           <td class='docblock short'>
+                                <p>Create a new filter.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagementFilterListCall.html'
+                                  title='google_analytics3::ManagementFilterListCall'>ManagementFilterListCall</a></td>
+                           <td class='docblock short'>
+                                <p>Lists all filters for an account</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagementFilterPatchCall.html'
+                                  title='google_analytics3::ManagementFilterPatchCall'>ManagementFilterPatchCall</a></td>
+                           <td class='docblock short'>
+                                <p>Updates an existing filter. This method supports patch semantics.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagementFilterUpdateCall.html'
+                                  title='google_analytics3::ManagementFilterUpdateCall'>ManagementFilterUpdateCall</a></td>
+                           <td class='docblock short'>
+                                <p>Updates an existing filter.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagementGoalGetCall.html'
+                                  title='google_analytics3::ManagementGoalGetCall'>ManagementGoalGetCall</a></td>
+                           <td class='docblock short'>
+                                <p>Gets a goal to which the user has access.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagementGoalInsertCall.html'
+                                  title='google_analytics3::ManagementGoalInsertCall'>ManagementGoalInsertCall</a></td>
+                           <td class='docblock short'>
+                                <p>Create a new goal.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagementGoalListCall.html'
+                                  title='google_analytics3::ManagementGoalListCall'>ManagementGoalListCall</a></td>
+                           <td class='docblock short'>
+                                <p>Lists goals to which the user has access.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagementGoalPatchCall.html'
+                                  title='google_analytics3::ManagementGoalPatchCall'>ManagementGoalPatchCall</a></td>
+                           <td class='docblock short'>
+                                <p>Updates an existing goal. This method supports patch semantics.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagementGoalUpdateCall.html'
+                                  title='google_analytics3::ManagementGoalUpdateCall'>ManagementGoalUpdateCall</a></td>
+                           <td class='docblock short'>
+                                <p>Updates an existing goal.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagementMethods.html'
+                                  title='google_analytics3::ManagementMethods'>ManagementMethods</a></td>
+                           <td class='docblock short'>
+                                <p>A builder providing access to all methods supported on <em>management</em> resources.
 It is not used directly, but through the <code>Analytics</code> hub.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ManagementProfileDeleteCall.html'
-                               title='google_analytics3::ManagementProfileDeleteCall'>ManagementProfileDeleteCall</a></td>
-                        <td class='docblock short'>
-                             <p>Deletes a view (profile).</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ManagementProfileFilterLinkDeleteCall.html'
-                               title='google_analytics3::ManagementProfileFilterLinkDeleteCall'>ManagementProfileFilterLinkDeleteCall</a></td>
-                        <td class='docblock short'>
-                             <p>Delete a profile filter link.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ManagementProfileFilterLinkGetCall.html'
-                               title='google_analytics3::ManagementProfileFilterLinkGetCall'>ManagementProfileFilterLinkGetCall</a></td>
-                        <td class='docblock short'>
-                             <p>Returns a single profile filter link.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ManagementProfileFilterLinkInsertCall.html'
-                               title='google_analytics3::ManagementProfileFilterLinkInsertCall'>ManagementProfileFilterLinkInsertCall</a></td>
-                        <td class='docblock short'>
-                             <p>Create a new profile filter link.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ManagementProfileFilterLinkListCall.html'
-                               title='google_analytics3::ManagementProfileFilterLinkListCall'>ManagementProfileFilterLinkListCall</a></td>
-                        <td class='docblock short'>
-                             <p>Lists all profile filter links for a profile.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ManagementProfileFilterLinkPatchCall.html'
-                               title='google_analytics3::ManagementProfileFilterLinkPatchCall'>ManagementProfileFilterLinkPatchCall</a></td>
-                        <td class='docblock short'>
-                             <p>Update an existing profile filter link. This method supports patch semantics.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ManagementProfileFilterLinkUpdateCall.html'
-                               title='google_analytics3::ManagementProfileFilterLinkUpdateCall'>ManagementProfileFilterLinkUpdateCall</a></td>
-                        <td class='docblock short'>
-                             <p>Update an existing profile filter link.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ManagementProfileGetCall.html'
-                               title='google_analytics3::ManagementProfileGetCall'>ManagementProfileGetCall</a></td>
-                        <td class='docblock short'>
-                             <p>Gets a view (profile) to which the user has access.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ManagementProfileInsertCall.html'
-                               title='google_analytics3::ManagementProfileInsertCall'>ManagementProfileInsertCall</a></td>
-                        <td class='docblock short'>
-                             <p>Create a new view (profile).</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ManagementProfileListCall.html'
-                               title='google_analytics3::ManagementProfileListCall'>ManagementProfileListCall</a></td>
-                        <td class='docblock short'>
-                             <p>Lists views (profiles) to which the user has access.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ManagementProfilePatchCall.html'
-                               title='google_analytics3::ManagementProfilePatchCall'>ManagementProfilePatchCall</a></td>
-                        <td class='docblock short'>
-                             <p>Updates an existing view (profile). This method supports patch semantics.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ManagementProfileUpdateCall.html'
-                               title='google_analytics3::ManagementProfileUpdateCall'>ManagementProfileUpdateCall</a></td>
-                        <td class='docblock short'>
-                             <p>Updates an existing view (profile).</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ManagementProfileUserLinkDeleteCall.html'
-                               title='google_analytics3::ManagementProfileUserLinkDeleteCall'>ManagementProfileUserLinkDeleteCall</a></td>
-                        <td class='docblock short'>
-                             <p>Removes a user from the given view (profile).</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ManagementProfileUserLinkInsertCall.html'
-                               title='google_analytics3::ManagementProfileUserLinkInsertCall'>ManagementProfileUserLinkInsertCall</a></td>
-                        <td class='docblock short'>
-                             <p>Adds a new user to the given view (profile).</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ManagementProfileUserLinkListCall.html'
-                               title='google_analytics3::ManagementProfileUserLinkListCall'>ManagementProfileUserLinkListCall</a></td>
-                        <td class='docblock short'>
-                             <p>Lists profile-user links for a given view (profile).</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ManagementProfileUserLinkUpdateCall.html'
-                               title='google_analytics3::ManagementProfileUserLinkUpdateCall'>ManagementProfileUserLinkUpdateCall</a></td>
-                        <td class='docblock short'>
-                             <p>Updates permissions for an existing user on the given view (profile).</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ManagementSegmentListCall.html'
-                               title='google_analytics3::ManagementSegmentListCall'>ManagementSegmentListCall</a></td>
-                        <td class='docblock short'>
-                             <p>Lists segments to which the user has access.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ManagementUnsampledReportDeleteCall.html'
-                               title='google_analytics3::ManagementUnsampledReportDeleteCall'>ManagementUnsampledReportDeleteCall</a></td>
-                        <td class='docblock short'>
-                             <p>Deletes an unsampled report.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ManagementUnsampledReportGetCall.html'
-                               title='google_analytics3::ManagementUnsampledReportGetCall'>ManagementUnsampledReportGetCall</a></td>
-                        <td class='docblock short'>
-                             <p>Returns a single unsampled report.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ManagementUnsampledReportInsertCall.html'
-                               title='google_analytics3::ManagementUnsampledReportInsertCall'>ManagementUnsampledReportInsertCall</a></td>
-                        <td class='docblock short'>
-                             <p>Create a new unsampled report.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ManagementUnsampledReportListCall.html'
-                               title='google_analytics3::ManagementUnsampledReportListCall'>ManagementUnsampledReportListCall</a></td>
-                        <td class='docblock short'>
-                             <p>Lists unsampled reports to which the user has access.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ManagementUploadDeleteUploadDataCall.html'
-                               title='google_analytics3::ManagementUploadDeleteUploadDataCall'>ManagementUploadDeleteUploadDataCall</a></td>
-                        <td class='docblock short'>
-                             <p>Delete data associated with a previous upload.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ManagementUploadGetCall.html'
-                               title='google_analytics3::ManagementUploadGetCall'>ManagementUploadGetCall</a></td>
-                        <td class='docblock short'>
-                             <p>List uploads to which the user has access.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ManagementUploadListCall.html'
-                               title='google_analytics3::ManagementUploadListCall'>ManagementUploadListCall</a></td>
-                        <td class='docblock short'>
-                             <p>List uploads to which the user has access.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ManagementUploadUploadDataCall.html'
-                               title='google_analytics3::ManagementUploadUploadDataCall'>ManagementUploadUploadDataCall</a></td>
-                        <td class='docblock short'>
-                             <p>Upload data for a custom data source.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ManagementWebPropertyAdWordsLinkDeleteCall.html'
-                               title='google_analytics3::ManagementWebPropertyAdWordsLinkDeleteCall'>ManagementWebPropertyAdWordsLinkDeleteCall</a></td>
-                        <td class='docblock short'>
-                             <p>Deletes a web property-AdWords link.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ManagementWebPropertyAdWordsLinkGetCall.html'
-                               title='google_analytics3::ManagementWebPropertyAdWordsLinkGetCall'>ManagementWebPropertyAdWordsLinkGetCall</a></td>
-                        <td class='docblock short'>
-                             <p>Returns a web property-AdWords link to which the user has access.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ManagementWebPropertyAdWordsLinkInsertCall.html'
-                               title='google_analytics3::ManagementWebPropertyAdWordsLinkInsertCall'>ManagementWebPropertyAdWordsLinkInsertCall</a></td>
-                        <td class='docblock short'>
-                             <p>Creates a webProperty-AdWords link.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ManagementWebPropertyAdWordsLinkListCall.html'
-                               title='google_analytics3::ManagementWebPropertyAdWordsLinkListCall'>ManagementWebPropertyAdWordsLinkListCall</a></td>
-                        <td class='docblock short'>
-                             <p>Lists webProperty-AdWords links for a given web property.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ManagementWebPropertyAdWordsLinkPatchCall.html'
-                               title='google_analytics3::ManagementWebPropertyAdWordsLinkPatchCall'>ManagementWebPropertyAdWordsLinkPatchCall</a></td>
-                        <td class='docblock short'>
-                             <p>Updates an existing webProperty-AdWords link. This method supports patch semantics.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ManagementWebPropertyAdWordsLinkUpdateCall.html'
-                               title='google_analytics3::ManagementWebPropertyAdWordsLinkUpdateCall'>ManagementWebPropertyAdWordsLinkUpdateCall</a></td>
-                        <td class='docblock short'>
-                             <p>Updates an existing webProperty-AdWords link.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ManagementWebpropertyGetCall.html'
-                               title='google_analytics3::ManagementWebpropertyGetCall'>ManagementWebpropertyGetCall</a></td>
-                        <td class='docblock short'>
-                             <p>Gets a web property to which the user has access.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ManagementWebpropertyInsertCall.html'
-                               title='google_analytics3::ManagementWebpropertyInsertCall'>ManagementWebpropertyInsertCall</a></td>
-                        <td class='docblock short'>
-                             <p>Create a new property if the account has fewer than 20 properties. Web properties are visible in the Google Analytics interface only if they have at least one profile.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ManagementWebpropertyListCall.html'
-                               title='google_analytics3::ManagementWebpropertyListCall'>ManagementWebpropertyListCall</a></td>
-                        <td class='docblock short'>
-                             <p>Lists web properties to which the user has access.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ManagementWebpropertyPatchCall.html'
-                               title='google_analytics3::ManagementWebpropertyPatchCall'>ManagementWebpropertyPatchCall</a></td>
-                        <td class='docblock short'>
-                             <p>Updates an existing web property. This method supports patch semantics.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ManagementWebpropertyUpdateCall.html'
-                               title='google_analytics3::ManagementWebpropertyUpdateCall'>ManagementWebpropertyUpdateCall</a></td>
-                        <td class='docblock short'>
-                             <p>Updates an existing web property.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ManagementWebpropertyUserLinkDeleteCall.html'
-                               title='google_analytics3::ManagementWebpropertyUserLinkDeleteCall'>ManagementWebpropertyUserLinkDeleteCall</a></td>
-                        <td class='docblock short'>
-                             <p>Removes a user from the given web property.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ManagementWebpropertyUserLinkInsertCall.html'
-                               title='google_analytics3::ManagementWebpropertyUserLinkInsertCall'>ManagementWebpropertyUserLinkInsertCall</a></td>
-                        <td class='docblock short'>
-                             <p>Adds a new user to the given web property.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ManagementWebpropertyUserLinkListCall.html'
-                               title='google_analytics3::ManagementWebpropertyUserLinkListCall'>ManagementWebpropertyUserLinkListCall</a></td>
-                        <td class='docblock short'>
-                             <p>Lists webProperty-user links for a given web property.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ManagementWebpropertyUserLinkUpdateCall.html'
-                               title='google_analytics3::ManagementWebpropertyUserLinkUpdateCall'>ManagementWebpropertyUserLinkUpdateCall</a></td>
-                        <td class='docblock short'>
-                             <p>Updates permissions for an existing user on the given web property.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.McfData.html'
-                               title='google_analytics3::McfData'>McfData</a></td>
-                        <td class='docblock short'>
-                             <p>Multi-Channel Funnels data for a given view (profile).</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.McfDataColumnHeaders.html'
-                               title='google_analytics3::McfDataColumnHeaders'>McfDataColumnHeaders</a></td>
-                        <td class='docblock short'>
-                             <p>Column headers that list dimension names followed by the metric names. The order of dimensions and metrics is same as specified in the request.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.McfDataProfileInfo.html'
-                               title='google_analytics3::McfDataProfileInfo'>McfDataProfileInfo</a></td>
-                        <td class='docblock short'>
-                             <p>Information for the view (profile), for which the Analytics data was requested.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.McfDataQuery.html'
-                               title='google_analytics3::McfDataQuery'>McfDataQuery</a></td>
-                        <td class='docblock short'>
-                             <p>Analytics data request query parameters.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.McfDataRows.html'
-                               title='google_analytics3::McfDataRows'>McfDataRows</a></td>
-                        <td class='docblock short'>
-                             <p>A union object representing a dimension or metric value. Only one of &quot;primitiveValue&quot; or &quot;conversionPathValue&quot; attribute will be populated.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.McfDataRowsConversionPathValue.html'
-                               title='google_analytics3::McfDataRowsConversionPathValue'>McfDataRowsConversionPathValue</a></td>
-                        <td class='docblock short'>
-                             <p>A conversion path dimension value, containing a list of interactions with their attributes.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.MetadataColumnListCall.html'
-                               title='google_analytics3::MetadataColumnListCall'>MetadataColumnListCall</a></td>
-                        <td class='docblock short'>
-                             <p>Lists all columns for a report type</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.MetadataMethods.html'
-                               title='google_analytics3::MetadataMethods'>MetadataMethods</a></td>
-                        <td class='docblock short'>
-                             <p>A builder providing access to all methods supported on <em>metadata</em> resources.
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagementProfileDeleteCall.html'
+                                  title='google_analytics3::ManagementProfileDeleteCall'>ManagementProfileDeleteCall</a></td>
+                           <td class='docblock short'>
+                                <p>Deletes a view (profile).</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagementProfileFilterLinkDeleteCall.html'
+                                  title='google_analytics3::ManagementProfileFilterLinkDeleteCall'>ManagementProfileFilterLinkDeleteCall</a></td>
+                           <td class='docblock short'>
+                                <p>Delete a profile filter link.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagementProfileFilterLinkGetCall.html'
+                                  title='google_analytics3::ManagementProfileFilterLinkGetCall'>ManagementProfileFilterLinkGetCall</a></td>
+                           <td class='docblock short'>
+                                <p>Returns a single profile filter link.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagementProfileFilterLinkInsertCall.html'
+                                  title='google_analytics3::ManagementProfileFilterLinkInsertCall'>ManagementProfileFilterLinkInsertCall</a></td>
+                           <td class='docblock short'>
+                                <p>Create a new profile filter link.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagementProfileFilterLinkListCall.html'
+                                  title='google_analytics3::ManagementProfileFilterLinkListCall'>ManagementProfileFilterLinkListCall</a></td>
+                           <td class='docblock short'>
+                                <p>Lists all profile filter links for a profile.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagementProfileFilterLinkPatchCall.html'
+                                  title='google_analytics3::ManagementProfileFilterLinkPatchCall'>ManagementProfileFilterLinkPatchCall</a></td>
+                           <td class='docblock short'>
+                                <p>Update an existing profile filter link. This method supports patch semantics.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagementProfileFilterLinkUpdateCall.html'
+                                  title='google_analytics3::ManagementProfileFilterLinkUpdateCall'>ManagementProfileFilterLinkUpdateCall</a></td>
+                           <td class='docblock short'>
+                                <p>Update an existing profile filter link.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagementProfileGetCall.html'
+                                  title='google_analytics3::ManagementProfileGetCall'>ManagementProfileGetCall</a></td>
+                           <td class='docblock short'>
+                                <p>Gets a view (profile) to which the user has access.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagementProfileInsertCall.html'
+                                  title='google_analytics3::ManagementProfileInsertCall'>ManagementProfileInsertCall</a></td>
+                           <td class='docblock short'>
+                                <p>Create a new view (profile).</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagementProfileListCall.html'
+                                  title='google_analytics3::ManagementProfileListCall'>ManagementProfileListCall</a></td>
+                           <td class='docblock short'>
+                                <p>Lists views (profiles) to which the user has access.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagementProfilePatchCall.html'
+                                  title='google_analytics3::ManagementProfilePatchCall'>ManagementProfilePatchCall</a></td>
+                           <td class='docblock short'>
+                                <p>Updates an existing view (profile). This method supports patch semantics.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagementProfileUpdateCall.html'
+                                  title='google_analytics3::ManagementProfileUpdateCall'>ManagementProfileUpdateCall</a></td>
+                           <td class='docblock short'>
+                                <p>Updates an existing view (profile).</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagementProfileUserLinkDeleteCall.html'
+                                  title='google_analytics3::ManagementProfileUserLinkDeleteCall'>ManagementProfileUserLinkDeleteCall</a></td>
+                           <td class='docblock short'>
+                                <p>Removes a user from the given view (profile).</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagementProfileUserLinkInsertCall.html'
+                                  title='google_analytics3::ManagementProfileUserLinkInsertCall'>ManagementProfileUserLinkInsertCall</a></td>
+                           <td class='docblock short'>
+                                <p>Adds a new user to the given view (profile).</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagementProfileUserLinkListCall.html'
+                                  title='google_analytics3::ManagementProfileUserLinkListCall'>ManagementProfileUserLinkListCall</a></td>
+                           <td class='docblock short'>
+                                <p>Lists profile-user links for a given view (profile).</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagementProfileUserLinkUpdateCall.html'
+                                  title='google_analytics3::ManagementProfileUserLinkUpdateCall'>ManagementProfileUserLinkUpdateCall</a></td>
+                           <td class='docblock short'>
+                                <p>Updates permissions for an existing user on the given view (profile).</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagementSegmentListCall.html'
+                                  title='google_analytics3::ManagementSegmentListCall'>ManagementSegmentListCall</a></td>
+                           <td class='docblock short'>
+                                <p>Lists segments to which the user has access.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagementUnsampledReportDeleteCall.html'
+                                  title='google_analytics3::ManagementUnsampledReportDeleteCall'>ManagementUnsampledReportDeleteCall</a></td>
+                           <td class='docblock short'>
+                                <p>Deletes an unsampled report.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagementUnsampledReportGetCall.html'
+                                  title='google_analytics3::ManagementUnsampledReportGetCall'>ManagementUnsampledReportGetCall</a></td>
+                           <td class='docblock short'>
+                                <p>Returns a single unsampled report.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagementUnsampledReportInsertCall.html'
+                                  title='google_analytics3::ManagementUnsampledReportInsertCall'>ManagementUnsampledReportInsertCall</a></td>
+                           <td class='docblock short'>
+                                <p>Create a new unsampled report.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagementUnsampledReportListCall.html'
+                                  title='google_analytics3::ManagementUnsampledReportListCall'>ManagementUnsampledReportListCall</a></td>
+                           <td class='docblock short'>
+                                <p>Lists unsampled reports to which the user has access.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagementUploadDeleteUploadDataCall.html'
+                                  title='google_analytics3::ManagementUploadDeleteUploadDataCall'>ManagementUploadDeleteUploadDataCall</a></td>
+                           <td class='docblock short'>
+                                <p>Delete data associated with a previous upload.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagementUploadGetCall.html'
+                                  title='google_analytics3::ManagementUploadGetCall'>ManagementUploadGetCall</a></td>
+                           <td class='docblock short'>
+                                <p>List uploads to which the user has access.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagementUploadListCall.html'
+                                  title='google_analytics3::ManagementUploadListCall'>ManagementUploadListCall</a></td>
+                           <td class='docblock short'>
+                                <p>List uploads to which the user has access.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagementUploadUploadDataCall.html'
+                                  title='google_analytics3::ManagementUploadUploadDataCall'>ManagementUploadUploadDataCall</a></td>
+                           <td class='docblock short'>
+                                <p>Upload data for a custom data source.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagementWebPropertyAdWordsLinkDeleteCall.html'
+                                  title='google_analytics3::ManagementWebPropertyAdWordsLinkDeleteCall'>ManagementWebPropertyAdWordsLinkDeleteCall</a></td>
+                           <td class='docblock short'>
+                                <p>Deletes a web property-AdWords link.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagementWebPropertyAdWordsLinkGetCall.html'
+                                  title='google_analytics3::ManagementWebPropertyAdWordsLinkGetCall'>ManagementWebPropertyAdWordsLinkGetCall</a></td>
+                           <td class='docblock short'>
+                                <p>Returns a web property-AdWords link to which the user has access.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagementWebPropertyAdWordsLinkInsertCall.html'
+                                  title='google_analytics3::ManagementWebPropertyAdWordsLinkInsertCall'>ManagementWebPropertyAdWordsLinkInsertCall</a></td>
+                           <td class='docblock short'>
+                                <p>Creates a webProperty-AdWords link.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagementWebPropertyAdWordsLinkListCall.html'
+                                  title='google_analytics3::ManagementWebPropertyAdWordsLinkListCall'>ManagementWebPropertyAdWordsLinkListCall</a></td>
+                           <td class='docblock short'>
+                                <p>Lists webProperty-AdWords links for a given web property.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagementWebPropertyAdWordsLinkPatchCall.html'
+                                  title='google_analytics3::ManagementWebPropertyAdWordsLinkPatchCall'>ManagementWebPropertyAdWordsLinkPatchCall</a></td>
+                           <td class='docblock short'>
+                                <p>Updates an existing webProperty-AdWords link. This method supports patch semantics.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagementWebPropertyAdWordsLinkUpdateCall.html'
+                                  title='google_analytics3::ManagementWebPropertyAdWordsLinkUpdateCall'>ManagementWebPropertyAdWordsLinkUpdateCall</a></td>
+                           <td class='docblock short'>
+                                <p>Updates an existing webProperty-AdWords link.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagementWebpropertyGetCall.html'
+                                  title='google_analytics3::ManagementWebpropertyGetCall'>ManagementWebpropertyGetCall</a></td>
+                           <td class='docblock short'>
+                                <p>Gets a web property to which the user has access.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagementWebpropertyInsertCall.html'
+                                  title='google_analytics3::ManagementWebpropertyInsertCall'>ManagementWebpropertyInsertCall</a></td>
+                           <td class='docblock short'>
+                                <p>Create a new property if the account has fewer than 20 properties. Web properties are visible in the Google Analytics interface only if they have at least one profile.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagementWebpropertyListCall.html'
+                                  title='google_analytics3::ManagementWebpropertyListCall'>ManagementWebpropertyListCall</a></td>
+                           <td class='docblock short'>
+                                <p>Lists web properties to which the user has access.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagementWebpropertyPatchCall.html'
+                                  title='google_analytics3::ManagementWebpropertyPatchCall'>ManagementWebpropertyPatchCall</a></td>
+                           <td class='docblock short'>
+                                <p>Updates an existing web property. This method supports patch semantics.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagementWebpropertyUpdateCall.html'
+                                  title='google_analytics3::ManagementWebpropertyUpdateCall'>ManagementWebpropertyUpdateCall</a></td>
+                           <td class='docblock short'>
+                                <p>Updates an existing web property.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagementWebpropertyUserLinkDeleteCall.html'
+                                  title='google_analytics3::ManagementWebpropertyUserLinkDeleteCall'>ManagementWebpropertyUserLinkDeleteCall</a></td>
+                           <td class='docblock short'>
+                                <p>Removes a user from the given web property.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagementWebpropertyUserLinkInsertCall.html'
+                                  title='google_analytics3::ManagementWebpropertyUserLinkInsertCall'>ManagementWebpropertyUserLinkInsertCall</a></td>
+                           <td class='docblock short'>
+                                <p>Adds a new user to the given web property.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagementWebpropertyUserLinkListCall.html'
+                                  title='google_analytics3::ManagementWebpropertyUserLinkListCall'>ManagementWebpropertyUserLinkListCall</a></td>
+                           <td class='docblock short'>
+                                <p>Lists webProperty-user links for a given web property.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagementWebpropertyUserLinkUpdateCall.html'
+                                  title='google_analytics3::ManagementWebpropertyUserLinkUpdateCall'>ManagementWebpropertyUserLinkUpdateCall</a></td>
+                           <td class='docblock short'>
+                                <p>Updates permissions for an existing user on the given web property.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.McfData.html'
+                                  title='google_analytics3::McfData'>McfData</a></td>
+                           <td class='docblock short'>
+                                <p>Multi-Channel Funnels data for a given view (profile).</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.McfDataColumnHeaders.html'
+                                  title='google_analytics3::McfDataColumnHeaders'>McfDataColumnHeaders</a></td>
+                           <td class='docblock short'>
+                                <p>Column headers that list dimension names followed by the metric names. The order of dimensions and metrics is same as specified in the request.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.McfDataProfileInfo.html'
+                                  title='google_analytics3::McfDataProfileInfo'>McfDataProfileInfo</a></td>
+                           <td class='docblock short'>
+                                <p>Information for the view (profile), for which the Analytics data was requested.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.McfDataQuery.html'
+                                  title='google_analytics3::McfDataQuery'>McfDataQuery</a></td>
+                           <td class='docblock short'>
+                                <p>Analytics data request query parameters.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.McfDataRows.html'
+                                  title='google_analytics3::McfDataRows'>McfDataRows</a></td>
+                           <td class='docblock short'>
+                                <p>A union object representing a dimension or metric value. Only one of &quot;primitiveValue&quot; or &quot;conversionPathValue&quot; attribute will be populated.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.McfDataRowsConversionPathValue.html'
+                                  title='google_analytics3::McfDataRowsConversionPathValue'>McfDataRowsConversionPathValue</a></td>
+                           <td class='docblock short'>
+                                <p>A conversion path dimension value, containing a list of interactions with their attributes.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.MetadataColumnListCall.html'
+                                  title='google_analytics3::MetadataColumnListCall'>MetadataColumnListCall</a></td>
+                           <td class='docblock short'>
+                                <p>Lists all columns for a report type</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.MetadataMethods.html'
+                                  title='google_analytics3::MetadataMethods'>MetadataMethods</a></td>
+                           <td class='docblock short'>
+                                <p>A builder providing access to all methods supported on <em>metadata</em> resources.
 It is not used directly, but through the <code>Analytics</code> hub.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.MethodInfo.html'
-                               title='google_analytics3::MethodInfo'>MethodInfo</a></td>
-                        <td class='docblock short'>
-                             <p>Contains information about an API request.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.MultiPartReader.html'
-                               title='google_analytics3::MultiPartReader'>MultiPartReader</a></td>
-                        <td class='docblock short'>
-                             <p>Provides a <code>Read</code> interface that converts multiple parts into the protocol
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.MethodInfo.html'
+                                  title='google_analytics3::MethodInfo'>MethodInfo</a></td>
+                           <td class='docblock short'>
+                                <p>Contains information about an API request.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.MultiPartReader.html'
+                                  title='google_analytics3::MultiPartReader'>MultiPartReader</a></td>
+                           <td class='docblock short'>
+                                <p>Provides a <code>Read</code> interface that converts multiple parts into the protocol
 identified by <a href="https://tools.ietf.org/html/rfc2387">RFC2387</a>.
 <strong>Note</strong>: This implementation is just as rich as it needs to be to perform uploads
 to google APIs, and might not be a fully-featured implementation.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.Profile.html'
-                               title='google_analytics3::Profile'>Profile</a></td>
-                        <td class='docblock short'>
-                             <p>JSON template for an Analytics view (profile).</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ProfileChildLink.html'
-                               title='google_analytics3::ProfileChildLink'>ProfileChildLink</a></td>
-                        <td class='docblock short'>
-                             <p>Child link for this view (profile). Points to the list of goals for this view (profile).</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ProfileFilterLink.html'
-                               title='google_analytics3::ProfileFilterLink'>ProfileFilterLink</a></td>
-                        <td class='docblock short'>
-                             <p>JSON template for an Analytics profile filter link.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ProfileFilterLinks.html'
-                               title='google_analytics3::ProfileFilterLinks'>ProfileFilterLinks</a></td>
-                        <td class='docblock short'>
-                             <p>A profile filter link collection lists profile filter links between profiles and filters. Each resource in the collection corresponds to a profile filter link.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ProfileParentLink.html'
-                               title='google_analytics3::ProfileParentLink'>ProfileParentLink</a></td>
-                        <td class='docblock short'>
-                             <p>Parent link for this view (profile). Points to the web property to which this view (profile) belongs.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ProfilePermissions.html'
-                               title='google_analytics3::ProfilePermissions'>ProfilePermissions</a></td>
-                        <td class='docblock short'>
-                             <p>Permissions the user has for this view (profile).</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ProfileRef.html'
-                               title='google_analytics3::ProfileRef'>ProfileRef</a></td>
-                        <td class='docblock short'>
-                             <p>JSON template for a linked view (profile).</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ProfileSummary.html'
-                               title='google_analytics3::ProfileSummary'>ProfileSummary</a></td>
-                        <td class='docblock short'>
-                             <p>JSON template for an Analytics ProfileSummary. ProfileSummary returns basic information (i.e., summary) for a profile.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.Profiles.html'
-                               title='google_analytics3::Profiles'>Profiles</a></td>
-                        <td class='docblock short'>
-                             <p>A view (profile) collection lists Analytics views (profiles) to which the user has access. Each resource in the collection corresponds to a single Analytics view (profile).</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ProvisioningCreateAccountTicketCall.html'
-                               title='google_analytics3::ProvisioningCreateAccountTicketCall'>ProvisioningCreateAccountTicketCall</a></td>
-                        <td class='docblock short'>
-                             <p>Creates an account ticket.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ProvisioningMethods.html'
-                               title='google_analytics3::ProvisioningMethods'>ProvisioningMethods</a></td>
-                        <td class='docblock short'>
-                             <p>A builder providing access to all methods supported on <em>provisioning</em> resources.
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Profile.html'
+                                  title='google_analytics3::Profile'>Profile</a></td>
+                           <td class='docblock short'>
+                                <p>JSON template for an Analytics view (profile).</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ProfileChildLink.html'
+                                  title='google_analytics3::ProfileChildLink'>ProfileChildLink</a></td>
+                           <td class='docblock short'>
+                                <p>Child link for this view (profile). Points to the list of goals for this view (profile).</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ProfileFilterLink.html'
+                                  title='google_analytics3::ProfileFilterLink'>ProfileFilterLink</a></td>
+                           <td class='docblock short'>
+                                <p>JSON template for an Analytics profile filter link.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ProfileFilterLinks.html'
+                                  title='google_analytics3::ProfileFilterLinks'>ProfileFilterLinks</a></td>
+                           <td class='docblock short'>
+                                <p>A profile filter link collection lists profile filter links between profiles and filters. Each resource in the collection corresponds to a profile filter link.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ProfileParentLink.html'
+                                  title='google_analytics3::ProfileParentLink'>ProfileParentLink</a></td>
+                           <td class='docblock short'>
+                                <p>Parent link for this view (profile). Points to the web property to which this view (profile) belongs.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ProfilePermissions.html'
+                                  title='google_analytics3::ProfilePermissions'>ProfilePermissions</a></td>
+                           <td class='docblock short'>
+                                <p>Permissions the user has for this view (profile).</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ProfileRef.html'
+                                  title='google_analytics3::ProfileRef'>ProfileRef</a></td>
+                           <td class='docblock short'>
+                                <p>JSON template for a linked view (profile).</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ProfileSummary.html'
+                                  title='google_analytics3::ProfileSummary'>ProfileSummary</a></td>
+                           <td class='docblock short'>
+                                <p>JSON template for an Analytics ProfileSummary. ProfileSummary returns basic information (i.e., summary) for a profile.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Profiles.html'
+                                  title='google_analytics3::Profiles'>Profiles</a></td>
+                           <td class='docblock short'>
+                                <p>A view (profile) collection lists Analytics views (profiles) to which the user has access. Each resource in the collection corresponds to a single Analytics view (profile).</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ProvisioningCreateAccountTicketCall.html'
+                                  title='google_analytics3::ProvisioningCreateAccountTicketCall'>ProvisioningCreateAccountTicketCall</a></td>
+                           <td class='docblock short'>
+                                <p>Creates an account ticket.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ProvisioningMethods.html'
+                                  title='google_analytics3::ProvisioningMethods'>ProvisioningMethods</a></td>
+                           <td class='docblock short'>
+                                <p>A builder providing access to all methods supported on <em>provisioning</em> resources.
 It is not used directly, but through the <code>Analytics</code> hub.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.RealtimeData.html'
-                               title='google_analytics3::RealtimeData'>RealtimeData</a></td>
-                        <td class='docblock short'>
-                             <p>Real time data for a given view (profile).</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.RealtimeDataColumnHeaders.html'
-                               title='google_analytics3::RealtimeDataColumnHeaders'>RealtimeDataColumnHeaders</a></td>
-                        <td class='docblock short'>
-                             <p>Column headers that list dimension names followed by the metric names. The order of dimensions and metrics is same as specified in the request.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.RealtimeDataProfileInfo.html'
-                               title='google_analytics3::RealtimeDataProfileInfo'>RealtimeDataProfileInfo</a></td>
-                        <td class='docblock short'>
-                             <p>Information for the view (profile), for which the real time data was requested.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.RealtimeDataQuery.html'
-                               title='google_analytics3::RealtimeDataQuery'>RealtimeDataQuery</a></td>
-                        <td class='docblock short'>
-                             <p>Real time data request query parameters.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.Segment.html'
-                               title='google_analytics3::Segment'>Segment</a></td>
-                        <td class='docblock short'>
-                             <p>JSON template for an Analytics segment.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.Segments.html'
-                               title='google_analytics3::Segments'>Segments</a></td>
-                        <td class='docblock short'>
-                             <p>An segment collection lists Analytics segments that the user has access to. Each resource in the collection corresponds to a single Analytics segment.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.UnsampledReport.html'
-                               title='google_analytics3::UnsampledReport'>UnsampledReport</a></td>
-                        <td class='docblock short'>
-                             <p>JSON template for Analytics unsampled report resource.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.UnsampledReportCloudStorageDownloadDetails.html'
-                               title='google_analytics3::UnsampledReportCloudStorageDownloadDetails'>UnsampledReportCloudStorageDownloadDetails</a></td>
-                        <td class='docblock short'>
-                             <p>Download details for a file stored in Google Cloud Storage.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.UnsampledReportDriveDownloadDetails.html'
-                               title='google_analytics3::UnsampledReportDriveDownloadDetails'>UnsampledReportDriveDownloadDetails</a></td>
-                        <td class='docblock short'>
-                             <p>Download details for a file stored in Google Drive.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.UnsampledReports.html'
-                               title='google_analytics3::UnsampledReports'>UnsampledReports</a></td>
-                        <td class='docblock short'>
-                             <p>An unsampled report collection lists Analytics unsampled reports to which the user has access. Each view (profile) can have a set of unsampled reports. Each resource in the unsampled report collection corresponds to a single Analytics unsampled report.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.Upload.html'
-                               title='google_analytics3::Upload'>Upload</a></td>
-                        <td class='docblock short'>
-                             <p>Metadata returned for an upload operation.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.Uploads.html'
-                               title='google_analytics3::Uploads'>Uploads</a></td>
-                        <td class='docblock short'>
-                             <p>Upload collection lists Analytics uploads to which the user has access. Each custom data source can have a set of uploads. Each resource in the upload collection corresponds to a single Analytics data upload.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.UserRef.html'
-                               title='google_analytics3::UserRef'>UserRef</a></td>
-                        <td class='docblock short'>
-                             <p>JSON template for a user reference.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.WebPropertyRef.html'
-                               title='google_analytics3::WebPropertyRef'>WebPropertyRef</a></td>
-                        <td class='docblock short'>
-                             <p>JSON template for a web property reference.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.WebPropertySummary.html'
-                               title='google_analytics3::WebPropertySummary'>WebPropertySummary</a></td>
-                        <td class='docblock short'>
-                             <p>JSON template for an Analytics WebPropertySummary. WebPropertySummary returns basic information (i.e., summary) for a web property.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.Webproperties.html'
-                               title='google_analytics3::Webproperties'>Webproperties</a></td>
-                        <td class='docblock short'>
-                             <p>A web property collection lists Analytics web properties to which the user has access. Each resource in the collection corresponds to a single Analytics web property.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.Webproperty.html'
-                               title='google_analytics3::Webproperty'>Webproperty</a></td>
-                        <td class='docblock short'>
-                             <p>JSON template for an Analytics web property.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.WebpropertyChildLink.html'
-                               title='google_analytics3::WebpropertyChildLink'>WebpropertyChildLink</a></td>
-                        <td class='docblock short'>
-                             <p>Child link for this web property. Points to the list of views (profiles) for this web property.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.WebpropertyParentLink.html'
-                               title='google_analytics3::WebpropertyParentLink'>WebpropertyParentLink</a></td>
-                        <td class='docblock short'>
-                             <p>Parent link for this web property. Points to the account to which this web property belongs.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.WebpropertyPermissions.html'
-                               title='google_analytics3::WebpropertyPermissions'>WebpropertyPermissions</a></td>
-                        <td class='docblock short'>
-                             <p>Permissions the user has for this web property.</p>
-
-                        </td>
-                    </tr>
-                </table><h2 id='enums' class='section-header'><a href="#enums">Enums</a></h2>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RealtimeData.html'
+                                  title='google_analytics3::RealtimeData'>RealtimeData</a></td>
+                           <td class='docblock short'>
+                                <p>Real time data for a given view (profile).</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RealtimeDataColumnHeaders.html'
+                                  title='google_analytics3::RealtimeDataColumnHeaders'>RealtimeDataColumnHeaders</a></td>
+                           <td class='docblock short'>
+                                <p>Column headers that list dimension names followed by the metric names. The order of dimensions and metrics is same as specified in the request.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RealtimeDataProfileInfo.html'
+                                  title='google_analytics3::RealtimeDataProfileInfo'>RealtimeDataProfileInfo</a></td>
+                           <td class='docblock short'>
+                                <p>Information for the view (profile), for which the real time data was requested.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RealtimeDataQuery.html'
+                                  title='google_analytics3::RealtimeDataQuery'>RealtimeDataQuery</a></td>
+                           <td class='docblock short'>
+                                <p>Real time data request query parameters.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Segment.html'
+                                  title='google_analytics3::Segment'>Segment</a></td>
+                           <td class='docblock short'>
+                                <p>JSON template for an Analytics segment.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Segments.html'
+                                  title='google_analytics3::Segments'>Segments</a></td>
+                           <td class='docblock short'>
+                                <p>An segment collection lists Analytics segments that the user has access to. Each resource in the collection corresponds to a single Analytics segment.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UnsampledReport.html'
+                                  title='google_analytics3::UnsampledReport'>UnsampledReport</a></td>
+                           <td class='docblock short'>
+                                <p>JSON template for Analytics unsampled report resource.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UnsampledReportCloudStorageDownloadDetails.html'
+                                  title='google_analytics3::UnsampledReportCloudStorageDownloadDetails'>UnsampledReportCloudStorageDownloadDetails</a></td>
+                           <td class='docblock short'>
+                                <p>Download details for a file stored in Google Cloud Storage.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UnsampledReportDriveDownloadDetails.html'
+                                  title='google_analytics3::UnsampledReportDriveDownloadDetails'>UnsampledReportDriveDownloadDetails</a></td>
+                           <td class='docblock short'>
+                                <p>Download details for a file stored in Google Drive.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UnsampledReports.html'
+                                  title='google_analytics3::UnsampledReports'>UnsampledReports</a></td>
+                           <td class='docblock short'>
+                                <p>An unsampled report collection lists Analytics unsampled reports to which the user has access. Each view (profile) can have a set of unsampled reports. Each resource in the unsampled report collection corresponds to a single Analytics unsampled report.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Upload.html'
+                                  title='google_analytics3::Upload'>Upload</a></td>
+                           <td class='docblock short'>
+                                <p>Metadata returned for an upload operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Uploads.html'
+                                  title='google_analytics3::Uploads'>Uploads</a></td>
+                           <td class='docblock short'>
+                                <p>Upload collection lists Analytics uploads to which the user has access. Each custom data source can have a set of uploads. Each resource in the upload collection corresponds to a single Analytics data upload.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UserRef.html'
+                                  title='google_analytics3::UserRef'>UserRef</a></td>
+                           <td class='docblock short'>
+                                <p>JSON template for a user reference.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.WebPropertyRef.html'
+                                  title='google_analytics3::WebPropertyRef'>WebPropertyRef</a></td>
+                           <td class='docblock short'>
+                                <p>JSON template for a web property reference.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.WebPropertySummary.html'
+                                  title='google_analytics3::WebPropertySummary'>WebPropertySummary</a></td>
+                           <td class='docblock short'>
+                                <p>JSON template for an Analytics WebPropertySummary. WebPropertySummary returns basic information (i.e., summary) for a web property.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Webproperties.html'
+                                  title='google_analytics3::Webproperties'>Webproperties</a></td>
+                           <td class='docblock short'>
+                                <p>A web property collection lists Analytics web properties to which the user has access. Each resource in the collection corresponds to a single Analytics web property.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Webproperty.html'
+                                  title='google_analytics3::Webproperty'>Webproperty</a></td>
+                           <td class='docblock short'>
+                                <p>JSON template for an Analytics web property.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.WebpropertyChildLink.html'
+                                  title='google_analytics3::WebpropertyChildLink'>WebpropertyChildLink</a></td>
+                           <td class='docblock short'>
+                                <p>Child link for this web property. Points to the list of views (profiles) for this web property.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.WebpropertyParentLink.html'
+                                  title='google_analytics3::WebpropertyParentLink'>WebpropertyParentLink</a></td>
+                           <td class='docblock short'>
+                                <p>Parent link for this web property. Points to the account to which this web property belongs.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.WebpropertyPermissions.html'
+                                  title='google_analytics3::WebpropertyPermissions'>WebpropertyPermissions</a></td>
+                           <td class='docblock short'>
+                                <p>Permissions the user has for this web property.</p>
+                           </td>
+                       </tr></table><h2 id='enums' class='section-header'><a href="#enums">Enums</a></h2>
 <table>
-                    <tr class=' module-item'>
-                        <td><a class='enum' href='enum.Error.html'
-                               title='google_analytics3::Error'>Error</a></td>
-                        <td class='docblock short'>
-                             
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='enum' href='enum.Scope.html'
-                               title='google_analytics3::Scope'>Scope</a></td>
-                        <td class='docblock short'>
-                             <p>Identifies the an OAuth2 authorization scope.
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.Error.html'
+                                  title='google_analytics3::Error'>Error</a></td>
+                           <td class='docblock short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.Scope.html'
+                                  title='google_analytics3::Scope'>Scope</a></td>
+                           <td class='docblock short'>
+                                <p>Identifies the an OAuth2 authorization scope.
 A scope is needed when requesting an
 <a href="https://developers.google.com/youtube/v3/guides/authentication">authorization token</a>.</p>
-
-                        </td>
-                    </tr>
-                </table><h2 id='traits' class='section-header'><a href="#traits">Traits</a></h2>
+                           </td>
+                       </tr></table><h2 id='traits' class='section-header'><a href="#traits">Traits</a></h2>
 <table>
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.CallBuilder.html'
-                               title='google_analytics3::CallBuilder'>CallBuilder</a></td>
-                        <td class='docblock short'>
-                             <p>Identifies types which represent builders for a particular resource method</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.Delegate.html'
-                               title='google_analytics3::Delegate'>Delegate</a></td>
-                        <td class='docblock short'>
-                             <p>A trait specifying functionality to help controlling any request performed by the API.
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.CallBuilder.html'
+                                  title='google_analytics3::CallBuilder'>CallBuilder</a></td>
+                           <td class='docblock short'>
+                                <p>Identifies types which represent builders for a particular resource method</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.Delegate.html'
+                                  title='google_analytics3::Delegate'>Delegate</a></td>
+                           <td class='docblock short'>
+                                <p>A trait specifying functionality to help controlling any request performed by the API.
 The trait has a conservative default implementation.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.Hub.html'
-                               title='google_analytics3::Hub'>Hub</a></td>
-                        <td class='docblock short'>
-                             <p>Identifies the Hub. There is only one per library, this trait is supposed
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.Hub.html'
+                                  title='google_analytics3::Hub'>Hub</a></td>
+                           <td class='docblock short'>
+                                <p>Identifies the Hub. There is only one per library, this trait is supposed
 to make intended use more explicit.
 The hub allows to access all resource methods more easily.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.MethodsBuilder.html'
-                               title='google_analytics3::MethodsBuilder'>MethodsBuilder</a></td>
-                        <td class='docblock short'>
-                             <p>Identifies types for building methods of a particular resource type</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.NestedType.html'
-                               title='google_analytics3::NestedType'>NestedType</a></td>
-                        <td class='docblock short'>
-                             <p>Identifies types which are only used by other types internally.
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.MethodsBuilder.html'
+                                  title='google_analytics3::MethodsBuilder'>MethodsBuilder</a></td>
+                           <td class='docblock short'>
+                                <p>Identifies types for building methods of a particular resource type</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.NestedType.html'
+                                  title='google_analytics3::NestedType'>NestedType</a></td>
+                           <td class='docblock short'>
+                                <p>Identifies types which are only used by other types internally.
 They have no special meaning, this trait just marks them for completeness.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.Part.html'
-                               title='google_analytics3::Part'>Part</a></td>
-                        <td class='docblock short'>
-                             <p>Identifies types which are only used as part of other types, which
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.Part.html'
+                                  title='google_analytics3::Part'>Part</a></td>
+                           <td class='docblock short'>
+                                <p>Identifies types which are only used as part of other types, which
 usually are carrying the <code>Resource</code> trait.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.ReadSeek.html'
-                               title='google_analytics3::ReadSeek'>ReadSeek</a></td>
-                        <td class='docblock short'>
-                             <p>A utility to specify reader types which provide seeking capabilities too</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.RequestValue.html'
-                               title='google_analytics3::RequestValue'>RequestValue</a></td>
-                        <td class='docblock short'>
-                             <p>Identifies types which are used in API requests.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.Resource.html'
-                               title='google_analytics3::Resource'>Resource</a></td>
-                        <td class='docblock short'>
-                             <p>Identifies types which can be inserted and deleted.
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.ReadSeek.html'
+                                  title='google_analytics3::ReadSeek'>ReadSeek</a></td>
+                           <td class='docblock short'>
+                                <p>A utility to specify reader types which provide seeking capabilities too</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.RequestValue.html'
+                                  title='google_analytics3::RequestValue'>RequestValue</a></td>
+                           <td class='docblock short'>
+                                <p>Identifies types which are used in API requests.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.Resource.html'
+                                  title='google_analytics3::Resource'>Resource</a></td>
+                           <td class='docblock short'>
+                                <p>Identifies types which can be inserted and deleted.
 Types with this trait are most commonly used by clients of this API.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.ResponseResult.html'
-                               title='google_analytics3::ResponseResult'>ResponseResult</a></td>
-                        <td class='docblock short'>
-                             <p>Identifies types which are used in API responses.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.ToParts.html'
-                               title='google_analytics3::ToParts'>ToParts</a></td>
-                        <td class='docblock short'>
-                             <p>A trait for all types that can convert themselves into a <em>parts</em> string</p>
-
-                        </td>
-                    </tr>
-                </table><h2 id='functions' class='section-header'><a href="#functions">Functions</a></h2>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.ResponseResult.html'
+                                  title='google_analytics3::ResponseResult'>ResponseResult</a></td>
+                           <td class='docblock short'>
+                                <p>Identifies types which are used in API responses.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.ToParts.html'
+                                  title='google_analytics3::ToParts'>ToParts</a></td>
+                           <td class='docblock short'>
+                                <p>A trait for all types that can convert themselves into a <em>parts</em> string</p>
+                           </td>
+                       </tr></table><h2 id='functions' class='section-header'><a href="#functions">Functions</a></h2>
 <table>
-                    <tr class=' module-item'>
-                        <td><a class='fn' href='fn.remove_json_null_values.html'
-                               title='google_analytics3::remove_json_null_values'>remove_json_null_values</a></td>
-                        <td class='docblock short'>
-                             
-                        </td>
-                    </tr>
-                </table><h2 id='types' class='section-header'><a href="#types">Type Definitions</a></h2>
+                       <tr class=' module-item'>
+                           <td><a class='fn' href='fn.remove_json_null_values.html'
+                                  title='google_analytics3::remove_json_null_values'>remove_json_null_values</a></td>
+                           <td class='docblock short'>
+                                
+                           </td>
+                       </tr></table><h2 id='types' class='section-header'><a href="#types">Type Definitions</a></h2>
 <table>
-                    <tr class=' module-item'>
-                        <td><a class='type' href='type.Result.html'
-                               title='google_analytics3::Result'>Result</a></td>
-                        <td class='docblock short'>
-                             <p>A universal result type used as return for all calls.</p>
-
-                        </td>
-                    </tr>
-                </table></section>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Result.html'
+                                  title='google_analytics3::Result'>Result</a></td>
+                           <td class='docblock short'>
+                                <p>A universal result type used as return for all calls.</p>
+                           </td>
+                       </tr></table></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
@@ -2056,6 +1668,8 @@ Types with this trait are most commonly used by clients of this API.</p>
                     <dd>Move down in search results</dd>
                     <dt>&#9166;</dt>
                     <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
                 </dl>
             </div>
 
@@ -2076,7 +1690,7 @@ Types with this trait are most commonly used by clients of this API.</p>
 
                 <p>
                     Search functions by type signature (e.g.
-                    <code>vec -> usize</code>)
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
                 </p>
             </div>
         </div>

@@ -1,5 +1,5 @@
 (function() {var implementors = {};
-implementors['google_cloudtrace1'] = [];
+implementors["google_cloudtrace1"] = [];
 
             if (window.register_implementors) {
                 window.register_implementors(implementors);

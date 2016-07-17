@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
+    
 
     
     
@@ -43,10 +44,10 @@
 
     <section id='main' class="content struct">
 <h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_appstate1</a>::<wbr><a class='struct' href=''>StateMethods</a></span><span class='out-of-band'><span id='render-detail'>
-            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
-                [<span class='inner'>&#x2212;</span>]
-            </a>
-        </span><a id='src-1575' class='srclink' href='../src/google_appstate1///Users/byron/dev/rs/google-apis-rs/target/debug/build/google-appstate1-2eed1723a5b5e6af/out/lib.rs.html#2605-2607' title='goto source code'>[src]</a></span></h1>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-1650' class='srclink' href='../src/google_appstate1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-appstate1-bb2745ebb71b10df/out/lib.rs.html#3225-3227' title='goto source code'>[src]</a></span></h1>
 <pre class='rust struct'>pub struct StateMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>state</em> resources.
@@ -54,6 +55,7 @@ It is not used directly, but through the <code>AppState</code> hub.</p>
 
 <h1 id='example' class='section-header'><a href='#example'>Example</a></h1>
 <p>Instantiate a resource builder</p>
+
 <pre class='rust rust-example-rendered'>
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>hyper</span>;
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>yup_oauth2</span> <span class='kw'>as</span> <span class='ident'>oauth2</span>;
@@ -72,7 +74,8 @@ It is not used directly, but through the <code>AppState</code> hub.</p>
 <span class='comment'>// like `clear(...)`, `delete(...)`, `get(...)`, `list(...)` and `update(...)`</span>
 <span class='comment'>// to build up your call.</span>
 <span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>states</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_appstate1/struct.StateMethods.html' title='google_appstate1::StateMethods'>StateMethods</a>&lt;'a, C, A&gt;</code></h3><div class='impl-items'><h4 id='method.delete' class='method'><code>fn <a href='#method.delete' class='fnname'>delete</a>(&amp;self, state_key: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>) -&gt; <a class='struct' href='../google_appstate1/struct.StateDeleteCall.html' title='google_appstate1::StateDeleteCall'>StateDeleteCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_appstate1/struct.StateMethods.html' title='google_appstate1::StateMethods'>StateMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-1659' class='srclink' href='../src/google_appstate1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-appstate1-bb2745ebb71b10df/out/lib.rs.html#3229-3301' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.delete' class='method'><code>fn <a href='#method.delete' class='fnname'>delete</a>(&amp;self, state_key: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>) -&gt; <a class='struct' href='../google_appstate1/struct.StateDeleteCall.html' title='google_appstate1::StateDeleteCall'>StateDeleteCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Deletes a key and the data associated with it. The key is removed and no longer counts against the key quota. Note that since this method is not safe in the face of concurrent modifications, it should only be used for development and testing purposes. Invoking this method in shipping code can result in data loss and data corruption.</p>
@@ -113,7 +116,8 @@ It is not used directly, but through the <code>AppState</code> hub.</p>
 <li><code>request</code> - No description provided.</li>
 <li><code>stateKey</code> - The key for the data to be retrieved.</li>
 </ul>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_appstate1/trait.MethodsBuilder.html' title='google_appstate1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_appstate1/struct.StateMethods.html' title='google_appstate1::StateMethods'>StateMethods</a>&lt;'a, C, A&gt;</code></h3><div class='impl-items'></div></section>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_appstate1/trait.MethodsBuilder.html' title='google_appstate1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_appstate1/struct.StateMethods.html' title='google_appstate1::StateMethods'>StateMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-1655' class='srclink' href='../src/google_appstate1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-appstate1-bb2745ebb71b10df/out/lib.rs.html#3228' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
@@ -136,6 +140,8 @@ It is not used directly, but through the <code>AppState</code> hub.</p>
                     <dd>Move down in search results</dd>
                     <dt>&#9166;</dt>
                     <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
                 </dl>
             </div>
 
@@ -156,7 +162,7 @@ It is not used directly, but through the <code>AppState</code> hub.</p>
 
                 <p>
                     Search functions by type signature (e.g.
-                    <code>vec -> usize</code>)
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
                 </p>
             </div>
         </div>

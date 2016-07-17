@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
+    
 
     
     
@@ -43,10 +44,10 @@
 
     <section id='main' class="content struct">
 <h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_games1</a>::<wbr><a class='struct' href=''>PushToken</a></span><span class='out-of-band'><span id='render-detail'>
-            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
-                [<span class='inner'>&#x2212;</span>]
-            </a>
-        </span><a id='src-12397' class='srclink' href='../src/google_games1///Users/byron/dev/rs/google-apis-rs/target/debug/build/google-games1-47fadb9d815ee43e/out/lib.rs.html#21868-21878' title='goto source code'>[src]</a></span></h1>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-13401' class='srclink' href='../src/google_games1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-games1-699f2b2bf3075320/out/lib.rs.html#29293-29303' title='goto source code'>[src]</a></span></h1>
 <pre class='rust struct'>pub struct PushToken {
     pub kind: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
     pub client_revision: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
@@ -63,21 +64,28 @@ The list links the activity name, along with information about where it is used 
 </ul>
 </div><h2 class='fields'>Fields</h2>
 <table><tr class='stab '>
-                                  <td id='structfield.kind'><code>kind</code></td><td><div class='docblock'><p>Uniquely identifies the type of this resource. Value is always the fixed string games#pushToken.</p>
+                             <td id='structfield.kind'><code>kind</code></td><td><div class='docblock'><p>Uniquely identifies the type of this resource. Value is always the fixed string games#pushToken.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.client_revision'><code>client_revision</code></td><td><div class='docblock'><p>The revision of the client SDK used by your application, in the same format that&#39;s used by revisions.check. Used to send backward compatible messages. Format: [PLATFORM_TYPE]:[VERSION_NUMBER]. Possible values of PLATFORM_TYPE are:
+                             <td id='structfield.client_revision'><code>client_revision</code></td><td><div class='docblock'><p>The revision of the client SDK used by your application, in the same format that&#39;s used by revisions.check. Used to send backward compatible messages. Format: [PLATFORM_TYPE]:[VERSION_NUMBER]. Possible values of PLATFORM_TYPE are:
 - IOS - Push token is for iOS</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.id'><code>id</code></td><td><div class='docblock'><p>Unique identifier for this push token.</p>
+                             <td id='structfield.id'><code>id</code></td><td><div class='docblock'><p>Unique identifier for this push token.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.language'><code>language</code></td><td><div class='docblock'><p>The preferred language for notifications that are sent using this token.</p>
-</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl <a class='trait' href='../serde/de/trait.Deserialize.html' title='serde::de::Deserialize'>Deserialize</a> for <a class='struct' href='../google_games1/struct.PushToken.html' title='google_games1::PushToken'>PushToken</a></code></h3><div class='impl-items'><h4 id='method.deserialize' class='method'><code>fn <a href='../serde/de/trait.Deserialize.html#method.deserialize' class='fnname'>deserialize</a>&lt;__D&gt;(deserializer: &amp;mut __D) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../google_games1/struct.PushToken.html' title='google_games1::PushToken'>PushToken</a>, __D::Error&gt; <span class='where'>where __D: <a class='trait' href='../serde/de/trait.Deserializer.html' title='serde::de::Deserializer'>Deserializer</a></span></code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='../serde/ser/trait.Serialize.html' title='serde::ser::Serialize'>Serialize</a> for <a class='struct' href='../google_games1/struct.PushToken.html' title='google_games1::PushToken'>PushToken</a></code></h3><div class='impl-items'><h4 id='method.serialize' class='method'><code>fn <a href='../serde/ser/trait.Serialize.html#method.serialize' class='fnname'>serialize</a>&lt;__S&gt;(&amp;self, serializer: &amp;mut __S) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, __S::Error&gt; <span class='where'>where __S: <a class='trait' href='../serde/ser/trait.Serializer.html' title='serde::ser::Serializer'>Serializer</a></span></code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='../google_games1/trait.RequestValue.html' title='google_games1::RequestValue'>RequestValue</a> for <a class='struct' href='../google_games1/struct.PushToken.html' title='google_games1::PushToken'>PushToken</a></code></h3><div class='impl-items'></div><h3 class='impl'><code>impl <a class='trait' href='../google_games1/trait.Resource.html' title='google_games1::Resource'>Resource</a> for <a class='struct' href='../google_games1/struct.PushToken.html' title='google_games1::PushToken'>PushToken</a></code></h3><div class='impl-items'></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_games1/struct.PushToken.html' title='google_games1::PushToken'>PushToken</a></code></h3><div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#method.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_games1/struct.PushToken.html' title='google_games1::PushToken'>PushToken</a></code></h3><div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_games1/struct.PushToken.html' title='google_games1::PushToken'>PushToken</a></code></h4>
-<h4 id='method.clone_from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_games1/struct.PushToken.html' title='google_games1::PushToken'>PushToken</a></code></h3><div class='impl-items'><h4 id='method.default' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#method.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_games1/struct.PushToken.html' title='google_games1::PushToken'>PushToken</a></code></h4>
-</div></section>
+                             <td id='structfield.language'><code>language</code></td><td><div class='docblock'><p>The preferred language for notifications that are sent using this token.</p>
+</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='../google_games1/trait.RequestValue.html' title='google_games1::RequestValue'>RequestValue</a> for <a class='struct' href='../google_games1/struct.PushToken.html' title='google_games1::PushToken'>PushToken</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-13571' class='srclink' href='../src/google_games1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-games1-699f2b2bf3075320/out/lib.rs.html#29631' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='../google_games1/trait.Resource.html' title='google_games1::Resource'>Resource</a> for <a class='struct' href='../google_games1/struct.PushToken.html' title='google_games1::PushToken'>PushToken</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-13572' class='srclink' href='../src/google_games1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-games1-699f2b2bf3075320/out/lib.rs.html#29632' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_games1/struct.PushToken.html' title='google_games1::PushToken'>PushToken</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-13406' class='srclink' href='../src/google_games1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-games1-699f2b2bf3075320/out/lib.rs.html#29292' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.default' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_games1/struct.PushToken.html' title='google_games1::PushToken'>PushToken</a></code></h4>
+<div class='docblock'><p>Returns the &quot;default value&quot; for a type. <a href="https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_games1/struct.PushToken.html' title='google_games1::PushToken'>PushToken</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-13408' class='srclink' href='../src/google_games1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-games1-699f2b2bf3075320/out/lib.rs.html#29292' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_games1/struct.PushToken.html' title='google_games1::PushToken'>PushToken</a></code></h4>
+<div class='docblock'><p>Returns a copy of the value. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone">Read more</a></p>
+</div><h4 id='method.clone_from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></h4>
+<div class='docblock'><p>Performs copy-assignment from <code>source</code>. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_games1/struct.PushToken.html' title='google_games1::PushToken'>PushToken</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-13415' class='srclink' href='../src/google_games1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-games1-699f2b2bf3075320/out/lib.rs.html#29292' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
+<div class='docblock'><p>Formats the value using the given formatter.</p>
+</div></div></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
@@ -100,6 +108,8 @@ The list links the activity name, along with information about where it is used 
                     <dd>Move down in search results</dd>
                     <dt>&#9166;</dt>
                     <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
                 </dl>
             </div>
 
@@ -120,7 +130,7 @@ The list links the activity name, along with information about where it is used 
 
                 <p>
                     Search functions by type signature (e.g.
-                    <code>vec -> usize</code>)
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
                 </p>
             </div>
         </div>

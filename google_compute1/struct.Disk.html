@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
+    
 
     
     
@@ -43,10 +44,10 @@
 
     <section id='main' class="content struct">
 <h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_compute1</a>::<wbr><a class='struct' href=''>Disk</a></span><span class='out-of-band'><span id='render-detail'>
-            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
-                [<span class='inner'>&#x2212;</span>]
-            </a>
-        </span><a id='src-8331' class='srclink' href='../src/google_compute1///Users/byron/dev/rs/google-apis-rs/target/debug/build/google-compute1-8ef555a5d87f7ad5/out/lib.rs.html#14427-14481' title='goto source code'>[src]</a></span></h1>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-9068' class='srclink' href='../src/google_compute1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-compute1-ac353794ec468d78/out/lib.rs.html#23407-23467' title='goto source code'>[src]</a></span></h1>
 <pre class='rust struct'>pub struct Disk {
     pub status: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
     pub source_snapshot: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
@@ -76,6 +77,7 @@ The list links the activity name, along with information about where it is used 
 <ul>
 <li><a href="struct.DiskInsertCall.html">insert disks</a> (request)</li>
 <li><a href="struct.DiskDeleteCall.html">delete disks</a> (none)</li>
+<li><a href="struct.DiskResizeCall.html">resize disks</a> (none)</li>
 <li><a href="struct.DiskGetCall.html">get disks</a> (response)</li>
 <li><a href="struct.DiskCreateSnapshotCall.html">create snapshot disks</a> (none)</li>
 <li><a href="struct.DiskAggregatedListCall.html">aggregated list disks</a> (none)</li>
@@ -83,65 +85,79 @@ The list links the activity name, along with information about where it is used 
 </ul>
 </div><h2 class='fields'>Fields</h2>
 <table><tr class='stab '>
-                                  <td id='structfield.status'><code>status</code></td><td><div class='docblock'><p>[Output Only] The status of disk creation. Applicable statuses includes: CREATING, FAILED, READY, RESTORING.</p>
+                             <td id='structfield.status'><code>status</code></td><td><div class='docblock'><p>[Output Only] The status of disk creation. Applicable statuses includes: CREATING, FAILED, READY, RESTORING.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.source_snapshot'><code>source_snapshot</code></td><td><div class='docblock'><p>The source snapshot used to create this disk. You can provide this as a partial or full URL to the resource. For example, the following are valid values:
+                             <td id='structfield.source_snapshot'><code>source_snapshot</code></td><td><div class='docblock'><p>The source snapshot used to create this disk. You can provide this as a partial or full URL to the resource. For example, the following are valid values:
 - <a href="https://www.googleapis.com/compute/v1/projects/project/global/snapshots/snapshot">https://www.googleapis.com/compute/v1/projects/project/global/snapshots/snapshot</a> 
 - projects/project/global/snapshots/snapshot 
 - global/snapshots/snapshot</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.last_detach_timestamp'><code>last_detach_timestamp</code></td><td><div class='docblock'><p>[Output Only] Last detach timestamp in RFC3339 text format.</p>
+                             <td id='structfield.last_detach_timestamp'><code>last_detach_timestamp</code></td><td><div class='docblock'><p>[Output Only] Last detach timestamp in RFC3339 text format.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.description'><code>description</code></td><td><div class='docblock'><p>An optional description of this resource. Provide this property when you create the resource.</p>
+                             <td id='structfield.description'><code>description</code></td><td><div class='docblock'><p>An optional description of this resource. Provide this property when you create the resource.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.source_image_id'><code>source_image_id</code></td><td><div class='docblock'><p>The ID value of the image used to create this disk. This value identifies the exact image that was used to create this persistent disk. For example, if you created the persistent disk from an image that was later deleted and recreated under the same name, the source image ID would identify the exact version of the image that was used.</p>
+                             <td id='structfield.source_image_id'><code>source_image_id</code></td><td><div class='docblock'><p>[Output Only] The ID value of the image used to create this disk. This value identifies the exact image that was used to create this persistent disk. For example, if you created the persistent disk from an image that was later deleted and recreated under the same name, the source image ID would identify the exact version of the image that was used.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.licenses'><code>licenses</code></td><td><div class='docblock'><p>Any applicable publicly visible licenses.</p>
+                             <td id='structfield.licenses'><code>licenses</code></td><td><div class='docblock'><p>[Output Only] Any applicable publicly visible licenses.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.source_image'><code>source_image</code></td><td><div class='docblock'><p>The source image used to create this disk. If the source image is deleted from the system, this field will not be set, even if an image with the same name has been re-created.</p>
+                             <td id='structfield.source_image'><code>source_image</code></td><td><div class='docblock'><p>The source image used to create this disk. If the source image is deleted, this field will not be set.</p>
 
-<p>When creating a disk, you can provide a private (custom) image using the following input, and Compute Engine will use the corresponding image from your project. For example:</p>
+<p>To create a disk with one of the public operating system images, specify the image by its family name. For example, specify family/debian-8 to use the latest Debian 8 image:</p>
+
+<p>projects/debian-cloud/global/images/family/debian-8 </p>
+
+<p>Alternatively, use a specific version of a public operating system image:</p>
+
+<p>projects/debian-cloud/global/images/debian-8-jessie-vYYYYMMDD </p>
+
+<p>To create a disk with a private image that you created, specify the image name in the following format:</p>
 
 <p>global/images/my-private-image </p>
 
-<p>Or you can provide an image from a publicly-available project. For example, to use a Debian image from the debian-cloud project, make sure to include the project in the URL:</p>
+<p>You can also specify a private image by its image family, which returns the latest version of the image in that family. Replace the image name with family/family-name:</p>
 
-<p>projects/debian-cloud/global/images/debian-7-wheezy-vYYYYMMDD </p>
-
-<p>where vYYYYMMDD is the image version. The fully-qualified URL will also work in both cases.</p>
+<p>global/images/family/my-private-family</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.source_snapshot_id'><code>source_snapshot_id</code></td><td><div class='docblock'><p>[Output Only] The unique ID of the snapshot used to create this disk. This value identifies the exact snapshot that was used to create this persistent disk. For example, if you created the persistent disk from a snapshot that was later deleted and recreated under the same name, the source snapshot ID would identify the exact version of the snapshot that was used.</p>
+                             <td id='structfield.source_snapshot_id'><code>source_snapshot_id</code></td><td><div class='docblock'><p>[Output Only] The unique ID of the snapshot used to create this disk. This value identifies the exact snapshot that was used to create this persistent disk. For example, if you created the persistent disk from a snapshot that was later deleted and recreated under the same name, the source snapshot ID would identify the exact version of the snapshot that was used.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.users'><code>users</code></td><td><div class='docblock'><p>Links to the users of the disk (attached instances) in form: project/zones/zone/instances/instance</p>
+                             <td id='structfield.users'><code>users</code></td><td><div class='docblock'><p>[Output Only] Links to the users of the disk (attached instances) in form: project/zones/zone/instances/instance</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.creation_timestamp'><code>creation_timestamp</code></td><td><div class='docblock'><p>[Output Only] Creation timestamp in RFC3339 text format.</p>
+                             <td id='structfield.creation_timestamp'><code>creation_timestamp</code></td><td><div class='docblock'><p>[Output Only] Creation timestamp in RFC3339 text format.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.id'><code>id</code></td><td><div class='docblock'><p>[Output Only] The unique identifier for the resource. This identifier is defined by the server.</p>
+                             <td id='structfield.id'><code>id</code></td><td><div class='docblock'><p>[Output Only] The unique identifier for the resource. This identifier is defined by the server.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.name'><code>name</code></td><td><div class='docblock'><p>Name of the resource; provided by the client when the resource is created. The name must be 1-63 characters long, and comply with RFC1035. Specifically, the name must be 1-63 characters long and match the regular expression <a href="%5B-a-z0-9%5D*%5Ba-z0-9%5D">a-z</a>? which means the first character must be a lowercase letter, and all following characters must be a dash, lowercase letter, or digit, except the last character, which cannot be a dash.</p>
+                             <td id='structfield.name'><code>name</code></td><td><div class='docblock'><p>Name of the resource. Provided by the client when the resource is created. The name must be 1-63 characters long, and comply with RFC1035. Specifically, the name must be 1-63 characters long and match the regular expression <a href="%5B-a-z0-9%5D*%5Ba-z0-9%5D">a-z</a>? which means the first character must be a lowercase letter, and all following characters must be a dash, lowercase letter, or digit, except the last character, which cannot be a dash.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.kind'><code>kind</code></td><td><div class='docblock'><p>[Output Only] Type of the resource. Always compute#disk for disks.</p>
+                             <td id='structfield.kind'><code>kind</code></td><td><div class='docblock'><p>[Output Only] Type of the resource. Always compute#disk for disks.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.size_gb'><code>size_gb</code></td><td><div class='docblock'><p>Size of the persistent disk, specified in GB. You can specify this field when creating a persistent disk using the sourceImage or sourceSnapshot parameter, or specify it alone to create an empty persistent disk.</p>
+                             <td id='structfield.size_gb'><code>size_gb</code></td><td><div class='docblock'><p>Size of the persistent disk, specified in GB. You can specify this field when creating a persistent disk using the sourceImage or sourceSnapshot parameter, or specify it alone to create an empty persistent disk.</p>
 
 <p>If you specify this field along with sourceImage or sourceSnapshot, the value of sizeGb must not be less than the size of the sourceImage or the size of the snapshot.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.zone'><code>zone</code></td><td><div class='docblock'><p>[Output Only] URL of the zone where the disk resides.</p>
+                             <td id='structfield.zone'><code>zone</code></td><td><div class='docblock'><p>[Output Only] URL of the zone where the disk resides.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.last_attach_timestamp'><code>last_attach_timestamp</code></td><td><div class='docblock'><p>[Output Only] Last attach timestamp in RFC3339 text format.</p>
+                             <td id='structfield.last_attach_timestamp'><code>last_attach_timestamp</code></td><td><div class='docblock'><p>[Output Only] Last attach timestamp in RFC3339 text format.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.type_'><code>type_</code></td><td><div class='docblock'><p>URL of the disk type resource describing which disk type to use to create the disk; provided by the client when the disk is created.</p>
+                             <td id='structfield.type_'><code>type_</code></td><td><div class='docblock'><p>URL of the disk type resource describing which disk type to use to create the disk. Provide this when creating the disk.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.options'><code>options</code></td><td><div class='docblock'><p>Internal use only.</p>
+                             <td id='structfield.options'><code>options</code></td><td><div class='docblock'><p>Internal use only.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.self_link'><code>self_link</code></td><td><div class='docblock'><p>[Output Only] Server-defined fully-qualified URL for this resource.</p>
-</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl <a class='trait' href='../serde/de/trait.Deserialize.html' title='serde::de::Deserialize'>Deserialize</a> for <a class='struct' href='../google_compute1/struct.Disk.html' title='google_compute1::Disk'>Disk</a></code></h3><div class='impl-items'><h4 id='method.deserialize' class='method'><code>fn <a href='../serde/de/trait.Deserialize.html#method.deserialize' class='fnname'>deserialize</a>&lt;__D&gt;(deserializer: &amp;mut __D) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../google_compute1/struct.Disk.html' title='google_compute1::Disk'>Disk</a>, __D::Error&gt; <span class='where'>where __D: <a class='trait' href='../serde/de/trait.Deserializer.html' title='serde::de::Deserializer'>Deserializer</a></span></code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='../serde/ser/trait.Serialize.html' title='serde::ser::Serialize'>Serialize</a> for <a class='struct' href='../google_compute1/struct.Disk.html' title='google_compute1::Disk'>Disk</a></code></h3><div class='impl-items'><h4 id='method.serialize' class='method'><code>fn <a href='../serde/ser/trait.Serialize.html#method.serialize' class='fnname'>serialize</a>&lt;__S&gt;(&amp;self, serializer: &amp;mut __S) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, __S::Error&gt; <span class='where'>where __S: <a class='trait' href='../serde/ser/trait.Serializer.html' title='serde::ser::Serializer'>Serializer</a></span></code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='../google_compute1/trait.RequestValue.html' title='google_compute1::RequestValue'>RequestValue</a> for <a class='struct' href='../google_compute1/struct.Disk.html' title='google_compute1::Disk'>Disk</a></code></h3><div class='impl-items'></div><h3 class='impl'><code>impl <a class='trait' href='../google_compute1/trait.Resource.html' title='google_compute1::Resource'>Resource</a> for <a class='struct' href='../google_compute1/struct.Disk.html' title='google_compute1::Disk'>Disk</a></code></h3><div class='impl-items'></div><h3 class='impl'><code>impl <a class='trait' href='../google_compute1/trait.ResponseResult.html' title='google_compute1::ResponseResult'>ResponseResult</a> for <a class='struct' href='../google_compute1/struct.Disk.html' title='google_compute1::Disk'>Disk</a></code></h3><div class='impl-items'></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_compute1/struct.Disk.html' title='google_compute1::Disk'>Disk</a></code></h3><div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#method.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_compute1/struct.Disk.html' title='google_compute1::Disk'>Disk</a></code></h3><div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_compute1/struct.Disk.html' title='google_compute1::Disk'>Disk</a></code></h4>
-<h4 id='method.clone_from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_compute1/struct.Disk.html' title='google_compute1::Disk'>Disk</a></code></h3><div class='impl-items'><h4 id='method.default' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#method.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_compute1/struct.Disk.html' title='google_compute1::Disk'>Disk</a></code></h4>
-</div></section>
+                             <td id='structfield.self_link'><code>self_link</code></td><td><div class='docblock'><p>[Output Only] Server-defined fully-qualified URL for this resource.</p>
+</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='../google_compute1/trait.RequestValue.html' title='google_compute1::RequestValue'>RequestValue</a> for <a class='struct' href='../google_compute1/struct.Disk.html' title='google_compute1::Disk'>Disk</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-9553' class='srclink' href='../src/google_compute1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-compute1-ac353794ec468d78/out/lib.rs.html#24519' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='../google_compute1/trait.Resource.html' title='google_compute1::Resource'>Resource</a> for <a class='struct' href='../google_compute1/struct.Disk.html' title='google_compute1::Disk'>Disk</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-9554' class='srclink' href='../src/google_compute1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-compute1-ac353794ec468d78/out/lib.rs.html#24520' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='../google_compute1/trait.ResponseResult.html' title='google_compute1::ResponseResult'>ResponseResult</a> for <a class='struct' href='../google_compute1/struct.Disk.html' title='google_compute1::Disk'>Disk</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-9555' class='srclink' href='../src/google_compute1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-compute1-ac353794ec468d78/out/lib.rs.html#24521' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_compute1/struct.Disk.html' title='google_compute1::Disk'>Disk</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-9088' class='srclink' href='../src/google_compute1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-compute1-ac353794ec468d78/out/lib.rs.html#23406' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.default' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_compute1/struct.Disk.html' title='google_compute1::Disk'>Disk</a></code></h4>
+<div class='docblock'><p>Returns the &quot;default value&quot; for a type. <a href="https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_compute1/struct.Disk.html' title='google_compute1::Disk'>Disk</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-9090' class='srclink' href='../src/google_compute1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-compute1-ac353794ec468d78/out/lib.rs.html#23406' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_compute1/struct.Disk.html' title='google_compute1::Disk'>Disk</a></code></h4>
+<div class='docblock'><p>Returns a copy of the value. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone">Read more</a></p>
+</div><h4 id='method.clone_from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></h4>
+<div class='docblock'><p>Performs copy-assignment from <code>source</code>. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_compute1/struct.Disk.html' title='google_compute1::Disk'>Disk</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-9112' class='srclink' href='../src/google_compute1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-compute1-ac353794ec468d78/out/lib.rs.html#23406' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
+<div class='docblock'><p>Formats the value using the given formatter.</p>
+</div></div></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
@@ -164,6 +180,8 @@ The list links the activity name, along with information about where it is used 
                     <dd>Move down in search results</dd>
                     <dt>&#9166;</dt>
                     <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
                 </dl>
             </div>
 
@@ -184,7 +202,7 @@ The list links the activity name, along with information about where it is used 
 
                 <p>
                     Search functions by type signature (e.g.
-                    <code>vec -> usize</code>)
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
                 </p>
             </div>
         </div>

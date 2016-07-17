@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
+    
 
     
     
@@ -43,10 +44,10 @@
 
     <section id='main' class="content struct">
 <h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_proximitybeacon1_beta1</a>::<wbr><a class='struct' href=''>BeaconListCall</a></span><span class='out-of-band'><span id='render-detail'>
-            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
-                [<span class='inner'>&#x2212;</span>]
-            </a>
-        </span><a id='src-3865' class='srclink' href='../src/google_proximitybeacon1_beta1///Users/byron/dev/rs/google-apis-rs/target/debug/build/google-proximitybeacon1_beta1-16be8f2bd72ceb52/out/lib.rs.html#7121-7128' title='goto source code'>[src]</a></span></h1>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-4023' class='srclink' href='../src/google_proximitybeacon1_beta1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-proximitybeacon1_beta1-176c13fea7d113f9/out/lib.rs.html#8683-8690' title='goto source code'>[src]</a></span></h1>
 <pre class='rust struct'>pub struct BeaconListCall&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>Searches the beacon registry for beacons that match the given search criteria. Only those beacons that the client has permission to list will be returned.</p>
@@ -56,6 +57,7 @@ It is not used directly, but through a <code>BeaconMethods</code> instance.</p>
 
 <h1 id='example' class='section-header'><a href='#example'>Example</a></h1>
 <p>Instantiate a resource method builder</p>
+
 <pre class='rust rust-example-rendered'>
  
 <span class='comment'>// You can configure optional parameters by calling the respective setters at will, and</span>
@@ -66,7 +68,8 @@ It is not used directly, but through a <code>BeaconMethods</code> instance.</p>
              .<span class='ident'>page_token</span>(<span class='string'>&quot;dolores&quot;</span>)
              .<span class='ident'>page_size</span>(<span class='op'>-</span><span class='number'>61</span>)
              .<span class='ident'>doit</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_proximitybeacon1_beta1/struct.BeaconListCall.html' title='google_proximitybeacon1_beta1::BeaconListCall'>BeaconListCall</a>&lt;'a, C, A&gt; <span class='where'>where C: <a class='trait' href='https://doc.rust-lang.org/nightly/core/borrow/trait.BorrowMut.html' title='core::borrow::BorrowMut'>BorrowMut</a>&lt;<a class='struct' href='../hyper/client/struct.Client.html' title='hyper::client::Client'>Client</a>&gt;, A: <a class='trait' href='../yup_oauth2/helper/trait.GetToken.html' title='yup_oauth2::helper::GetToken'>GetToken</a></span></code></h3><div class='impl-items'><h4 id='method.doit' class='method'><code>fn <a href='#method.doit' class='fnname'>doit</a>(self) -&gt; <a class='type' href='../google_proximitybeacon1_beta1/type.Result.html' title='google_proximitybeacon1_beta1::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>(<a class='struct' href='../hyper/client/response/struct.Response.html' title='hyper::client::response::Response'>Response</a>, <a class='struct' href='../google_proximitybeacon1_beta1/struct.ListBeaconsResponse.html' title='google_proximitybeacon1_beta1::ListBeaconsResponse'>ListBeaconsResponse</a>)</a>&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_proximitybeacon1_beta1/struct.BeaconListCall.html' title='google_proximitybeacon1_beta1::BeaconListCall'>BeaconListCall</a>&lt;'a, C, A&gt; <span class='where'>where C: <a class='trait' href='https://doc.rust-lang.org/nightly/core/borrow/trait.BorrowMut.html' title='core::borrow::BorrowMut'>BorrowMut</a>&lt;<a class='struct' href='../hyper/client/struct.Client.html' title='hyper::client::Client'>Client</a>&gt;, A: <a class='trait' href='../yup_oauth2/helper/trait.GetToken.html' title='yup_oauth2::helper::GetToken'>GetToken</a></span></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-4037' class='srclink' href='../src/google_proximitybeacon1_beta1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-proximitybeacon1_beta1-176c13fea7d113f9/out/lib.rs.html#8692-8856' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.doit' class='method'><code>fn <a href='#method.doit' class='fnname'>doit</a>(self) -&gt; <a class='type' href='../google_proximitybeacon1_beta1/type.Result.html' title='google_proximitybeacon1_beta1::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>(</a><a class='struct' href='../hyper/client/response/struct.Response.html' title='hyper::client::response::Response'>Response</a>, <a class='struct' href='../google_proximitybeacon1_beta1/struct.ListBeaconsResponse.html' title='google_proximitybeacon1_beta1::ListBeaconsResponse'>ListBeaconsResponse</a><a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>)</a>&gt;</code></h4>
 <div class='docblock'><p>Perform the operation you have build so far.</p>
 </div><h4 id='method.q' class='method'><code>fn <a href='#method.q' class='fnname'>q</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_proximitybeacon1_beta1/struct.BeaconListCall.html' title='google_proximitybeacon1_beta1::BeaconListCall'>BeaconListCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>Filter query string that supports the following field filters: * <code>description:&quot;&quot;</code> For example: <code>description:&quot;Room 3&quot;</code> Returns beacons whose description matches tokens in the string &quot;Room 3&quot; (not necessarily that exact string). The string must be double-quoted. * <code>status:</code> For example: <code>status:active</code> Returns beacons whose status matches the given value. Values must be one of the Beacon.Status enum values (case insensitive). Accepts multiple filters which will be combined with OR logic. * <code>stability:</code> For example: <code>stability:mobile</code> Returns beacons whose expected stability matches the given value. Values must be one of the Beacon.Stability enum values (case insensitive). Accepts multiple filters which will be combined with OR logic. * <code>place_id:&quot;&quot;</code> For example: <code>place_id:&quot;ChIJVSZzVR8FdkgRXGmmm6SslKw=&quot;</code> Returns beacons explicitly registered at the given place, expressed as a Place ID obtained from <a href="/places/place-id">Google Places API</a>. Does not match places inside the given place. Does not consider the beacon&#39;s actual location (which may be different from its registered place). Accepts multiple filters that will be combined with OR logic. The place ID must be double-quoted. * <code>registration_time[|=]</code> For example: <code>registration_time&gt;=1433116800</code> Returns beacons whose registration time matches the given filter. Supports the operators: , =. Timestamp must be expressed as an integer number of seconds since midnight January 1, 1970 UTC. Accepts at most two filters that will be combined with AND logic, to support &quot;between&quot; semantics. If more than two are supplied, the latter ones are ignored. * <code>lat: lng: radius:</code> For example: <code>lat:51.1232343 lng:-1.093852 radius:1000</code> Returns beacons whose registered location is within the given circle. When any of these fields are given, all are required. Latitude and longitude must be decimal degrees between -90.0 and 90.0 and between -180.0 and 180.0 respectively. Radius must be an integer number of meters less than 1,000,000 (1000 km). * <code>property:&quot;=&quot;</code> For example: <code>property:&quot;battery-type=CR2032&quot;</code> Returns beacons which have a property of the given name and value. Supports multiple filters which will be combined with OR logic. The entire name=value string must be double-quoted as one string. * <code>attachment_type:&quot;&quot;</code> For example: <code>attachment_type:&quot;my-namespace/my-type&quot;</code> Returns beacons having at least one attachment of the given namespaced type. Supports &quot;any within this namespace&quot; via the partial wildcard syntax: &quot;my-namespace/*&quot;. Supports multiple filters which will be combined with OR logic. The string must be double-quoted. Multiple filters on the same field are combined with OR logic (except registration_time which is combined with AND logic). Multiple filters on different fields are combined with AND logic. Filters should be separated by spaces. As with any HTTP query string parameter, the whole filter expression must be URL-encoded. Example REST request: <code>GET /v1beta1/beacons?q=status:active%20lat:51.123%20lng:-1.095%20radius:1000</code></p>
@@ -111,7 +114,8 @@ which have their own setter method. If done anyway, the request will fail.</p>
 <li><em>alt</em> (query-string) - Data format for response.</li>
 <li><em>$.xgafv</em> (query-string) - V1 error format.</li>
 </ul>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_proximitybeacon1_beta1/trait.CallBuilder.html' title='google_proximitybeacon1_beta1::CallBuilder'>CallBuilder</a> for <a class='struct' href='../google_proximitybeacon1_beta1/struct.BeaconListCall.html' title='google_proximitybeacon1_beta1::BeaconListCall'>BeaconListCall</a>&lt;'a, C, A&gt;</code></h3><div class='impl-items'></div></section>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_proximitybeacon1_beta1/trait.CallBuilder.html' title='google_proximitybeacon1_beta1::CallBuilder'>CallBuilder</a> for <a class='struct' href='../google_proximitybeacon1_beta1/struct.BeaconListCall.html' title='google_proximitybeacon1_beta1::BeaconListCall'>BeaconListCall</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-4033' class='srclink' href='../src/google_proximitybeacon1_beta1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-proximitybeacon1_beta1-176c13fea7d113f9/out/lib.rs.html#8691' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
@@ -134,6 +138,8 @@ which have their own setter method. If done anyway, the request will fail.</p>
                     <dd>Move down in search results</dd>
                     <dt>&#9166;</dt>
                     <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
                 </dl>
             </div>
 
@@ -154,7 +160,7 @@ which have their own setter method. If done anyway, the request will fail.</p>
 
                 <p>
                     Search functions by type signature (e.g.
-                    <code>vec -> usize</code>)
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
                 </p>
             </div>
         </div>

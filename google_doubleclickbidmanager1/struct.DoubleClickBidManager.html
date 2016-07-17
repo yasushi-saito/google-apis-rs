@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
+    
 
     
     
@@ -43,16 +44,17 @@
 
     <section id='main' class="content struct">
 <h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_doubleclickbidmanager1</a>::<wbr><a class='struct' href=''>DoubleClickBidManager</a></span><span class='out-of-band'><span id='render-detail'>
-            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
-                [<span class='inner'>&#x2212;</span>]
-            </a>
-        </span><a id='src-974' class='srclink' href='../src/google_doubleclickbidmanager1///Users/byron/dev/rs/google-apis-rs/target/debug/build/google-doubleclickbidmanager1-00629ff4ed58c3f2/out/lib.rs.html#1569-1573' title='goto source code'>[src]</a></span></h1>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-1008' class='srclink' href='../src/google_doubleclickbidmanager1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-doubleclickbidmanager1-0e7d728bd9d1e767/out/lib.rs.html#2120-2124' title='goto source code'>[src]</a></span></h1>
 <pre class='rust struct'>pub struct DoubleClickBidManager&lt;C, A&gt; {
     // some fields omitted
 }</pre><div class='docblock'><p>Central instance to access all DoubleClickBidManager related resource activities</p>
 
 <h1 id='examples' class='section-header'><a href='#examples'>Examples</a></h1>
 <p>Instantiate a new hub</p>
+
 <pre class='rust rust-example-rendered'>
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>hyper</span>;
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>yup_oauth2</span> <span class='kw'>as</span> <span class='ident'>oauth2</span>;
@@ -96,17 +98,19 @@
     },
     <span class='prelude-val'>Ok</span>(<span class='ident'>res</span>) <span class='op'>=&gt;</span> <span class='macro'>println</span><span class='macro'>!</span>(<span class='string'>&quot;Success: {:?}&quot;</span>, <span class='ident'>res</span>),
 }</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_doubleclickbidmanager1/struct.DoubleClickBidManager.html' title='google_doubleclickbidmanager1::DoubleClickBidManager'>DoubleClickBidManager</a>&lt;C, A&gt; <span class='where'>where C: <a class='trait' href='https://doc.rust-lang.org/nightly/core/borrow/trait.BorrowMut.html' title='core::borrow::BorrowMut'>BorrowMut</a>&lt;<a class='struct' href='../hyper/client/struct.Client.html' title='hyper::client::Client'>Client</a>&gt;, A: <a class='trait' href='../yup_oauth2/helper/trait.GetToken.html' title='yup_oauth2::helper::GetToken'>GetToken</a></span></code></h3><div class='impl-items'><h4 id='method.new' class='method'><code>fn <a href='#method.new' class='fnname'>new</a>(client: C, authenticator: A) -&gt; <a class='struct' href='../google_doubleclickbidmanager1/struct.DoubleClickBidManager.html' title='google_doubleclickbidmanager1::DoubleClickBidManager'>DoubleClickBidManager</a>&lt;C, A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_doubleclickbidmanager1/struct.DoubleClickBidManager.html' title='google_doubleclickbidmanager1::DoubleClickBidManager'>DoubleClickBidManager</a>&lt;C, A&gt; <span class='where'>where C: <a class='trait' href='https://doc.rust-lang.org/nightly/core/borrow/trait.BorrowMut.html' title='core::borrow::BorrowMut'>BorrowMut</a>&lt;<a class='struct' href='../hyper/client/struct.Client.html' title='hyper::client::Client'>Client</a>&gt;, A: <a class='trait' href='../yup_oauth2/helper/trait.GetToken.html' title='yup_oauth2::helper::GetToken'>GetToken</a></span></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-1018' class='srclink' href='../src/google_doubleclickbidmanager1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-doubleclickbidmanager1-0e7d728bd9d1e767/out/lib.rs.html#2126-2155' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.new' class='method'><code>fn <a href='#method.new' class='fnname'>new</a>(client: C, authenticator: A) -&gt; <a class='struct' href='../google_doubleclickbidmanager1/struct.DoubleClickBidManager.html' title='google_doubleclickbidmanager1::DoubleClickBidManager'>DoubleClickBidManager</a>&lt;C, A&gt;</code></h4>
 <h4 id='method.lineitems' class='method'><code>fn <a href='#method.lineitems' class='fnname'>lineitems</a>(&amp;'a self) -&gt; <a class='struct' href='../google_doubleclickbidmanager1/struct.LineitemMethods.html' title='google_doubleclickbidmanager1::LineitemMethods'>LineitemMethods</a>&lt;'a, C, A&gt;</code></h4>
 <h4 id='method.queries' class='method'><code>fn <a href='#method.queries' class='fnname'>queries</a>(&amp;'a self) -&gt; <a class='struct' href='../google_doubleclickbidmanager1/struct.QueryMethods.html' title='google_doubleclickbidmanager1::QueryMethods'>QueryMethods</a>&lt;'a, C, A&gt;</code></h4>
 <h4 id='method.reports' class='method'><code>fn <a href='#method.reports' class='fnname'>reports</a>(&amp;'a self) -&gt; <a class='struct' href='../google_doubleclickbidmanager1/struct.ReportMethods.html' title='google_doubleclickbidmanager1::ReportMethods'>ReportMethods</a>&lt;'a, C, A&gt;</code></h4>
 <h4 id='method.rubicon' class='method'><code>fn <a href='#method.rubicon' class='fnname'>rubicon</a>(&amp;'a self) -&gt; <a class='struct' href='../google_doubleclickbidmanager1/struct.RubiconMethods.html' title='google_doubleclickbidmanager1::RubiconMethods'>RubiconMethods</a>&lt;'a, C, A&gt;</code></h4>
 <h4 id='method.user_agent' class='method'><code>fn <a href='#method.user_agent' class='fnname'>user_agent</a>(&amp;mut self, agent_name: <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>) -&gt; <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a></code></h4>
 <div class='docblock'><p>Set the user-agent header field to use in all requests to the server.
-It defaults to <code>google-api-rust-client/0.1.11</code>.</p>
+It defaults to <code>google-api-rust-client/0.1.14</code>.</p>
 
 <p>Returns the previously set user-agent.</p>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_doubleclickbidmanager1/trait.Hub.html' title='google_doubleclickbidmanager1::Hub'>Hub</a> for <a class='struct' href='../google_doubleclickbidmanager1/struct.DoubleClickBidManager.html' title='google_doubleclickbidmanager1::DoubleClickBidManager'>DoubleClickBidManager</a>&lt;C, A&gt;</code></h3><div class='impl-items'></div></section>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_doubleclickbidmanager1/trait.Hub.html' title='google_doubleclickbidmanager1::Hub'>Hub</a> for <a class='struct' href='../google_doubleclickbidmanager1/struct.DoubleClickBidManager.html' title='google_doubleclickbidmanager1::DoubleClickBidManager'>DoubleClickBidManager</a>&lt;C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-1014' class='srclink' href='../src/google_doubleclickbidmanager1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-doubleclickbidmanager1-0e7d728bd9d1e767/out/lib.rs.html#2125' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
@@ -129,6 +133,8 @@ It defaults to <code>google-api-rust-client/0.1.11</code>.</p>
                     <dd>Move down in search results</dd>
                     <dt>&#9166;</dt>
                     <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
                 </dl>
             </div>
 
@@ -149,7 +155,7 @@ It defaults to <code>google-api-rust-client/0.1.11</code>.</p>
 
                 <p>
                     Search functions by type signature (e.g.
-                    <code>vec -> usize</code>)
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
                 </p>
             </div>
         </div>

@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
+    
 
     
     
@@ -43,10 +44,10 @@
 
     <section id='main' class="content struct">
 <h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_spectrum1_explorer</a>::<wbr><a class='struct' href=''>DeviceDescriptor</a></span><span class='out-of-band'><span id='render-detail'>
-            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
-                [<span class='inner'>&#x2212;</span>]
-            </a>
-        </span><a id='src-4517' class='srclink' href='../src/google_spectrum1_explorer///Users/byron/dev/rs/google-apis-rs/target/debug/build/google-spectrum1_explorer-ff7b3b61abb4caa0/out/lib.rs.html#7745-7768' title='goto source code'>[src]</a></span></h1>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-4838' class='srclink' href='../src/google_spectrum1_explorer/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-spectrum1_explorer-e4163a2c64dc12c7/out/lib.rs.html#9919-9942' title='goto source code'>[src]</a></span></h1>
 <pre class='rust struct'>pub struct DeviceDescriptor {
     pub etsi_en_device_type: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
     pub fcc_id: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
@@ -63,34 +64,40 @@
 <p>This type is not used in any activity, and only used as <em>part</em> of another schema.</p>
 </div><h2 class='fields'>Fields</h2>
 <table><tr class='stab '>
-                                  <td id='structfield.etsi_en_device_type'><code>etsi_en_device_type</code></td><td><div class='docblock'><p>Specifies the ETSI white space device type. Valid values are single-letter strings, such as A, B, etc. Consult the ETSI documentation for details about the device types.</p>
+                             <td id='structfield.etsi_en_device_type'><code>etsi_en_device_type</code></td><td><div class='docblock'><p>Specifies the ETSI white space device type. Valid values are single-letter strings, such as A, B, etc. Consult the ETSI documentation for details about the device types.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.fcc_id'><code>fcc_id</code></td><td><div class='docblock'><p>Specifies the device&#39;s FCC certification identifier. The value is an identifier string whose length should not exceed 32 characters. Note that, in practice, a valid FCC ID may be limited to 19 characters.</p>
+                             <td id='structfield.fcc_id'><code>fcc_id</code></td><td><div class='docblock'><p>Specifies the device&#39;s FCC certification identifier. The value is an identifier string whose length should not exceed 32 characters. Note that, in practice, a valid FCC ID may be limited to 19 characters.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.serial_number'><code>serial_number</code></td><td><div class='docblock'><p>The manufacturer&#39;s device serial number; required by the applicable regulatory domain. The length of the value must not exceed 64 characters.</p>
+                             <td id='structfield.serial_number'><code>serial_number</code></td><td><div class='docblock'><p>The manufacturer&#39;s device serial number; required by the applicable regulatory domain. The length of the value must not exceed 64 characters.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.etsi_en_technology_id'><code>etsi_en_technology_id</code></td><td><div class='docblock'><p>Specifies the ETSI white space device technology identifier. The string value must not exceed 64 characters in length. Consult the ETSI documentation for details about the device types.</p>
+                             <td id='structfield.etsi_en_technology_id'><code>etsi_en_technology_id</code></td><td><div class='docblock'><p>Specifies the ETSI white space device technology identifier. The string value must not exceed 64 characters in length. Consult the ETSI documentation for details about the device types.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.fcc_tvbd_device_type'><code>fcc_tvbd_device_type</code></td><td><div class='docblock'><p>Specifies the TV Band White Space device type, as defined by the FCC. Valid values are FIXED, MODE_1, MODE_2.</p>
+                             <td id='structfield.fcc_tvbd_device_type'><code>fcc_tvbd_device_type</code></td><td><div class='docblock'><p>Specifies the TV Band White Space device type, as defined by the FCC. Valid values are FIXED, MODE_1, MODE_2.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.etsi_en_device_category'><code>etsi_en_device_category</code></td><td><div class='docblock'><p>Specifies the ETSI white space device category. Valid values are the strings master and slave. This field is case-insensitive. Consult the ETSI documentation for details about the device types.</p>
+                             <td id='structfield.etsi_en_device_category'><code>etsi_en_device_category</code></td><td><div class='docblock'><p>Specifies the ETSI white space device category. Valid values are the strings master and slave. This field is case-insensitive. Consult the ETSI documentation for details about the device types.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.ruleset_ids'><code>ruleset_ids</code></td><td><div class='docblock'><p>The list of identifiers for rulesets supported by the device. A database may require that the device provide this list before servicing the device requests. If the database does not support any of the rulesets specified in the list, the database may refuse to service the device requests. If present, the list must contain at least one entry.</p>
+                             <td id='structfield.ruleset_ids'><code>ruleset_ids</code></td><td><div class='docblock'><p>The list of identifiers for rulesets supported by the device. A database may require that the device provide this list before servicing the device requests. If the database does not support any of the rulesets specified in the list, the database may refuse to service the device requests. If present, the list must contain at least one entry.</p>
 
 <p>For information about the valid requests, see section 9.2 of the PAWS specification. Currently, FccTvBandWhiteSpace-2010 is the only supported ruleset.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.etsi_en_device_emissions_class'><code>etsi_en_device_emissions_class</code></td><td><div class='docblock'><p>Specifies the ETSI white space device emissions class. The values are represented by numeric strings, such as 1, 2, etc. Consult the ETSI documentation for details about the device types.</p>
+                             <td id='structfield.etsi_en_device_emissions_class'><code>etsi_en_device_emissions_class</code></td><td><div class='docblock'><p>Specifies the ETSI white space device emissions class. The values are represented by numeric strings, such as 1, 2, etc. Consult the ETSI documentation for details about the device types.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.manufacturer_id'><code>manufacturer_id</code></td><td><div class='docblock'><p>The manufacturer&#39;s ID may be required by the regulatory domain. This should represent the name of the device manufacturer, should be consistent across all devices from the same manufacturer, and should be distinct from that of other manufacturers. The string value must not exceed 64 characters in length.</p>
+                             <td id='structfield.manufacturer_id'><code>manufacturer_id</code></td><td><div class='docblock'><p>The manufacturer&#39;s ID may be required by the regulatory domain. This should represent the name of the device manufacturer, should be consistent across all devices from the same manufacturer, and should be distinct from that of other manufacturers. The string value must not exceed 64 characters in length.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.model_id'><code>model_id</code></td><td><div class='docblock'><p>The device&#39;s model ID may be required by the regulatory domain. The string value must not exceed 64 characters in length.</p>
-</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl <a class='trait' href='../serde/de/trait.Deserialize.html' title='serde::de::Deserialize'>Deserialize</a> for <a class='struct' href='../google_spectrum1_explorer/struct.DeviceDescriptor.html' title='google_spectrum1_explorer::DeviceDescriptor'>DeviceDescriptor</a></code></h3><div class='impl-items'><h4 id='method.deserialize' class='method'><code>fn <a href='../serde/de/trait.Deserialize.html#method.deserialize' class='fnname'>deserialize</a>&lt;__D&gt;(deserializer: &amp;mut __D) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../google_spectrum1_explorer/struct.DeviceDescriptor.html' title='google_spectrum1_explorer::DeviceDescriptor'>DeviceDescriptor</a>, __D::Error&gt; <span class='where'>where __D: <a class='trait' href='../serde/de/trait.Deserializer.html' title='serde::de::Deserializer'>Deserializer</a></span></code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='../serde/ser/trait.Serialize.html' title='serde::ser::Serialize'>Serialize</a> for <a class='struct' href='../google_spectrum1_explorer/struct.DeviceDescriptor.html' title='google_spectrum1_explorer::DeviceDescriptor'>DeviceDescriptor</a></code></h3><div class='impl-items'><h4 id='method.serialize' class='method'><code>fn <a href='../serde/ser/trait.Serialize.html#method.serialize' class='fnname'>serialize</a>&lt;__S&gt;(&amp;self, serializer: &amp;mut __S) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, __S::Error&gt; <span class='where'>where __S: <a class='trait' href='../serde/ser/trait.Serializer.html' title='serde::ser::Serializer'>Serializer</a></span></code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='../google_spectrum1_explorer/trait.Part.html' title='google_spectrum1_explorer::Part'>Part</a> for <a class='struct' href='../google_spectrum1_explorer/struct.DeviceDescriptor.html' title='google_spectrum1_explorer::DeviceDescriptor'>DeviceDescriptor</a></code></h3><div class='impl-items'></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_spectrum1_explorer/struct.DeviceDescriptor.html' title='google_spectrum1_explorer::DeviceDescriptor'>DeviceDescriptor</a></code></h3><div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#method.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_spectrum1_explorer/struct.DeviceDescriptor.html' title='google_spectrum1_explorer::DeviceDescriptor'>DeviceDescriptor</a></code></h3><div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_spectrum1_explorer/struct.DeviceDescriptor.html' title='google_spectrum1_explorer::DeviceDescriptor'>DeviceDescriptor</a></code></h4>
-<h4 id='method.clone_from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_spectrum1_explorer/struct.DeviceDescriptor.html' title='google_spectrum1_explorer::DeviceDescriptor'>DeviceDescriptor</a></code></h3><div class='impl-items'><h4 id='method.default' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#method.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_spectrum1_explorer/struct.DeviceDescriptor.html' title='google_spectrum1_explorer::DeviceDescriptor'>DeviceDescriptor</a></code></h4>
-</div></section>
+                             <td id='structfield.model_id'><code>model_id</code></td><td><div class='docblock'><p>The device&#39;s model ID may be required by the regulatory domain. The string value must not exceed 64 characters in length.</p>
+</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='../google_spectrum1_explorer/trait.Part.html' title='google_spectrum1_explorer::Part'>Part</a> for <a class='struct' href='../google_spectrum1_explorer/struct.DeviceDescriptor.html' title='google_spectrum1_explorer::DeviceDescriptor'>DeviceDescriptor</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-5134' class='srclink' href='../src/google_spectrum1_explorer/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-spectrum1_explorer-e4163a2c64dc12c7/out/lib.rs.html#10590' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_spectrum1_explorer/struct.DeviceDescriptor.html' title='google_spectrum1_explorer::DeviceDescriptor'>DeviceDescriptor</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-4849' class='srclink' href='../src/google_spectrum1_explorer/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-spectrum1_explorer-e4163a2c64dc12c7/out/lib.rs.html#9918' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.default' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_spectrum1_explorer/struct.DeviceDescriptor.html' title='google_spectrum1_explorer::DeviceDescriptor'>DeviceDescriptor</a></code></h4>
+<div class='docblock'><p>Returns the &quot;default value&quot; for a type. <a href="https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_spectrum1_explorer/struct.DeviceDescriptor.html' title='google_spectrum1_explorer::DeviceDescriptor'>DeviceDescriptor</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-4851' class='srclink' href='../src/google_spectrum1_explorer/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-spectrum1_explorer-e4163a2c64dc12c7/out/lib.rs.html#9918' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_spectrum1_explorer/struct.DeviceDescriptor.html' title='google_spectrum1_explorer::DeviceDescriptor'>DeviceDescriptor</a></code></h4>
+<div class='docblock'><p>Returns a copy of the value. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone">Read more</a></p>
+</div><h4 id='method.clone_from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></h4>
+<div class='docblock'><p>Performs copy-assignment from <code>source</code>. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_spectrum1_explorer/struct.DeviceDescriptor.html' title='google_spectrum1_explorer::DeviceDescriptor'>DeviceDescriptor</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-4864' class='srclink' href='../src/google_spectrum1_explorer/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-spectrum1_explorer-e4163a2c64dc12c7/out/lib.rs.html#9918' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
+<div class='docblock'><p>Formats the value using the given formatter.</p>
+</div></div></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
@@ -113,6 +120,8 @@
                     <dd>Move down in search results</dd>
                     <dt>&#9166;</dt>
                     <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
                 </dl>
             </div>
 
@@ -133,7 +142,7 @@
 
                 <p>
                     Search functions by type signature (e.g.
-                    <code>vec -> usize</code>)
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
                 </p>
             </div>
         </div>

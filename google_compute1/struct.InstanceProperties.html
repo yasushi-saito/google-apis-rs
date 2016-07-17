@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
+    
 
     
     
@@ -43,10 +44,10 @@
 
     <section id='main' class="content struct">
 <h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_compute1</a>::<wbr><a class='struct' href=''>InstanceProperties</a></span><span class='out-of-band'><span id='render-detail'>
-            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
-                [<span class='inner'>&#x2212;</span>]
-            </a>
-        </span><a id='src-32955' class='srclink' href='../src/google_compute1///Users/byron/dev/rs/google-apis-rs/target/debug/build/google-compute1-8ef555a5d87f7ad5/out/lib.rs.html#57955-57974' title='goto source code'>[src]</a></span></h1>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-35588' class='srclink' href='../src/google_compute1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-compute1-ac353794ec468d78/out/lib.rs.html#78895-78914' title='goto source code'>[src]</a></span></h1>
 <pre class='rust struct'>pub struct InstanceProperties {
     pub can_ip_forward: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt;,
     pub description: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
@@ -60,30 +61,36 @@
 }</pre><div class='docblock'><p>This type is not used in any activity, and only used as <em>part</em> of another schema.</p>
 </div><h2 class='fields'>Fields</h2>
 <table><tr class='stab '>
-                                  <td id='structfield.can_ip_forward'><code>can_ip_forward</code></td><td><div class='docblock'><p>Enables instances created based on this template to send packets with source IP addresses other than their own and receive packets with destination IP addresses other than their own. If these instances will be used as an IP gateway or it will be set as the next-hop in a Route resource, specify true. If unsure, leave this set to false. See the canIpForward documentation for more information.</p>
+                             <td id='structfield.can_ip_forward'><code>can_ip_forward</code></td><td><div class='docblock'><p>Enables instances created based on this template to send packets with source IP addresses other than their own and receive packets with destination IP addresses other than their own. If these instances will be used as an IP gateway or it will be set as the next-hop in a Route resource, specify true. If unsure, leave this set to false. See the canIpForward documentation for more information.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.description'><code>description</code></td><td><div class='docblock'><p>An optional text description for the instances that are created from this instance template.</p>
+                             <td id='structfield.description'><code>description</code></td><td><div class='docblock'><p>An optional text description for the instances that are created from this instance template.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.tags'><code>tags</code></td><td><div class='docblock'><p>A list of tags to apply to the instances that are created from this template. The tags identify valid sources or targets for network firewalls. The setTags method can modify this list of tags. Each tag within the list must comply with RFC1035.</p>
+                             <td id='structfield.tags'><code>tags</code></td><td><div class='docblock'><p>A list of tags to apply to the instances that are created from this template. The tags identify valid sources or targets for network firewalls. The setTags method can modify this list of tags. Each tag within the list must comply with RFC1035.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.disks'><code>disks</code></td><td><div class='docblock'><p>An array of disks that are associated with the instances that are created from this template.</p>
+                             <td id='structfield.disks'><code>disks</code></td><td><div class='docblock'><p>An array of disks that are associated with the instances that are created from this template.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.scheduling'><code>scheduling</code></td><td><div class='docblock'><p>Specifies the scheduling options for the instances that are created from this template.</p>
+                             <td id='structfield.scheduling'><code>scheduling</code></td><td><div class='docblock'><p>Specifies the scheduling options for the instances that are created from this template.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.machine_type'><code>machine_type</code></td><td><div class='docblock'><p>The machine type to use for instances that are created from this template.</p>
+                             <td id='structfield.machine_type'><code>machine_type</code></td><td><div class='docblock'><p>The machine type to use for instances that are created from this template.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.service_accounts'><code>service_accounts</code></td><td><div class='docblock'><p>A list of service accounts with specified scopes. Access tokens for these service accounts are available to the instances that are created from this template. Use metadata queries to obtain the access tokens for these instances.</p>
+                             <td id='structfield.service_accounts'><code>service_accounts</code></td><td><div class='docblock'><p>A list of service accounts with specified scopes. Access tokens for these service accounts are available to the instances that are created from this template. Use metadata queries to obtain the access tokens for these instances.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.network_interfaces'><code>network_interfaces</code></td><td><div class='docblock'><p>An array of network access configurations for this interface.</p>
+                             <td id='structfield.network_interfaces'><code>network_interfaces</code></td><td><div class='docblock'><p>An array of network access configurations for this interface.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.metadata'><code>metadata</code></td><td><div class='docblock'><p>The metadata key/value pairs to assign to instances that are created from this template. These pairs can consist of custom metadata or predefined keys. See Project and instance metadata for more information.</p>
-</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl <a class='trait' href='../serde/de/trait.Deserialize.html' title='serde::de::Deserialize'>Deserialize</a> for <a class='struct' href='../google_compute1/struct.InstanceProperties.html' title='google_compute1::InstanceProperties'>InstanceProperties</a></code></h3><div class='impl-items'><h4 id='method.deserialize' class='method'><code>fn <a href='../serde/de/trait.Deserialize.html#method.deserialize' class='fnname'>deserialize</a>&lt;__D&gt;(deserializer: &amp;mut __D) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../google_compute1/struct.InstanceProperties.html' title='google_compute1::InstanceProperties'>InstanceProperties</a>, __D::Error&gt; <span class='where'>where __D: <a class='trait' href='../serde/de/trait.Deserializer.html' title='serde::de::Deserializer'>Deserializer</a></span></code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='../serde/ser/trait.Serialize.html' title='serde::ser::Serialize'>Serialize</a> for <a class='struct' href='../google_compute1/struct.InstanceProperties.html' title='google_compute1::InstanceProperties'>InstanceProperties</a></code></h3><div class='impl-items'><h4 id='method.serialize' class='method'><code>fn <a href='../serde/ser/trait.Serialize.html#method.serialize' class='fnname'>serialize</a>&lt;__S&gt;(&amp;self, serializer: &amp;mut __S) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, __S::Error&gt; <span class='where'>where __S: <a class='trait' href='../serde/ser/trait.Serializer.html' title='serde::ser::Serializer'>Serializer</a></span></code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='../google_compute1/trait.Part.html' title='google_compute1::Part'>Part</a> for <a class='struct' href='../google_compute1/struct.InstanceProperties.html' title='google_compute1::InstanceProperties'>InstanceProperties</a></code></h3><div class='impl-items'></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_compute1/struct.InstanceProperties.html' title='google_compute1::InstanceProperties'>InstanceProperties</a></code></h3><div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#method.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_compute1/struct.InstanceProperties.html' title='google_compute1::InstanceProperties'>InstanceProperties</a></code></h3><div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_compute1/struct.InstanceProperties.html' title='google_compute1::InstanceProperties'>InstanceProperties</a></code></h4>
-<h4 id='method.clone_from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_compute1/struct.InstanceProperties.html' title='google_compute1::InstanceProperties'>InstanceProperties</a></code></h3><div class='impl-items'><h4 id='method.default' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#method.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_compute1/struct.InstanceProperties.html' title='google_compute1::InstanceProperties'>InstanceProperties</a></code></h4>
-</div></section>
+                             <td id='structfield.metadata'><code>metadata</code></td><td><div class='docblock'><p>The metadata key/value pairs to assign to instances that are created from this template. These pairs can consist of custom metadata or predefined keys. See Project and instance metadata for more information.</p>
+</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='../google_compute1/trait.Part.html' title='google_compute1::Part'>Part</a> for <a class='struct' href='../google_compute1/struct.InstanceProperties.html' title='google_compute1::InstanceProperties'>InstanceProperties</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-35863' class='srclink' href='../src/google_compute1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-compute1-ac353794ec468d78/out/lib.rs.html#79505' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_compute1/struct.InstanceProperties.html' title='google_compute1::InstanceProperties'>InstanceProperties</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-35598' class='srclink' href='../src/google_compute1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-compute1-ac353794ec468d78/out/lib.rs.html#78894' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.default' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_compute1/struct.InstanceProperties.html' title='google_compute1::InstanceProperties'>InstanceProperties</a></code></h4>
+<div class='docblock'><p>Returns the &quot;default value&quot; for a type. <a href="https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_compute1/struct.InstanceProperties.html' title='google_compute1::InstanceProperties'>InstanceProperties</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-35600' class='srclink' href='../src/google_compute1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-compute1-ac353794ec468d78/out/lib.rs.html#78894' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_compute1/struct.InstanceProperties.html' title='google_compute1::InstanceProperties'>InstanceProperties</a></code></h4>
+<div class='docblock'><p>Returns a copy of the value. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone">Read more</a></p>
+</div><h4 id='method.clone_from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></h4>
+<div class='docblock'><p>Performs copy-assignment from <code>source</code>. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_compute1/struct.InstanceProperties.html' title='google_compute1::InstanceProperties'>InstanceProperties</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-35612' class='srclink' href='../src/google_compute1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-compute1-ac353794ec468d78/out/lib.rs.html#78894' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
+<div class='docblock'><p>Formats the value using the given formatter.</p>
+</div></div></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
@@ -106,6 +113,8 @@
                     <dd>Move down in search results</dd>
                     <dt>&#9166;</dt>
                     <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
                 </dl>
             </div>
 
@@ -126,7 +135,7 @@
 
                 <p>
                     Search functions by type signature (e.g.
-                    <code>vec -> usize</code>)
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
                 </p>
             </div>
         </div>

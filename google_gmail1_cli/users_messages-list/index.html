@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Messages List - gmail v0.3.3+20151214</title>
+  <title>Messages List - gmail v0.3.5+20160316</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -38,7 +38,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> gmail v0.3.3+20151214</a>
+        <a href=".." class="icon icon-home"> gmail v0.3.5+20160316</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -162,6 +162,13 @@
             
     <li class="toctree-l1 ">
         <a class="" href="../users_messages-attachments-get/">Messages Attachments Get</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../users_messages-batch-delete/">Messages Batch Delete</a>
         
     </li>
 
@@ -317,7 +324,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">gmail v0.3.3+20151214</a>
+        <a href="..">gmail v0.3.5+20160316</a>
       </nav>
 
       
@@ -387,12 +394,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p include-spam-trash=boolean</strong></p>
-<ul>
-<li>Include messages from SPAM and TRASH in the results.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p page-token=string</strong></p>
 <ul>
 <li>Page token to retrieve a specific page of results in the list.</li>
@@ -402,6 +403,12 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <p><strong>-p q=string</strong></p>
 <ul>
 <li>Only return messages matching the specified query. Supports the same query format as the Gmail search box. For example, &#34;from:someuser@example.com rfc822msgid: is:unread&#34;.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p include-spam-trash=boolean</strong></p>
+<ul>
+<li>Include messages from SPAM and TRASH in the results.</li>
 </ul>
 </li>
 <li>

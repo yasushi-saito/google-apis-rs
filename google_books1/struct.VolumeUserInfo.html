@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
+    
 
     
     
@@ -43,10 +44,10 @@
 
     <section id='main' class="content struct">
 <h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_books1</a>::<wbr><a class='struct' href=''>VolumeUserInfo</a></span><span class='out-of-band'><span id='render-detail'>
-            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
-                [<span class='inner'>&#x2212;</span>]
-            </a>
-        </span><a id='src-12433' class='srclink' href='../src/google_books1///Users/byron/dev/rs/google-apis-rs/target/debug/build/google-books1-494e01ce027cd40c/out/lib.rs.html#21829-21864' title='goto source code'>[src]</a></span></h1>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-13444' class='srclink' href='../src/google_books1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-books1-a5e4a686ccba6d06/out/lib.rs.html#29178-29213' title='goto source code'>[src]</a></span></h1>
 <pre class='rust struct'>pub struct VolumeUserInfo {
     pub is_family_shared_from_user: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt;,
     pub rental_period: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_books1/struct.VolumeUserInfoRentalPeriod.html' title='google_books1::VolumeUserInfoRentalPeriod'>VolumeUserInfoRentalPeriod</a>&gt;,
@@ -70,46 +71,53 @@
 <p>This type is not used in any activity, and only used as <em>part</em> of another schema.</p>
 </div><h2 class='fields'>Fields</h2>
 <table><tr class='stab '>
-                                  <td id='structfield.is_family_shared_from_user'><code>is_family_shared_from_user</code></td><td><div class='docblock'><p>Whether or not the user shared this volume with the family.</p>
+                             <td id='structfield.is_family_shared_from_user'><code>is_family_shared_from_user</code></td><td><div class='docblock'><p>Whether or not the user shared this volume with the family.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.rental_period'><code>rental_period</code></td><td><div class='docblock'><p>Period during this book is/was a valid rental.</p>
+                             <td id='structfield.rental_period'><code>rental_period</code></td><td><div class='docblock'><p>Period during this book is/was a valid rental.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.acquisition_type'><code>acquisition_type</code></td><td><div class='docblock'><p>How this volume was acquired.</p>
+                             <td id='structfield.acquisition_type'><code>acquisition_type</code></td><td><div class='docblock'><p>How this volume was acquired.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.is_purchased'><code>is_purchased</code></td><td><div class='docblock'><p>Whether or not this volume was purchased by the authenticated user making the request. (In LITE projection.)</p>
+                             <td id='structfield.is_purchased'><code>is_purchased</code></td><td><div class='docblock'><p>Whether or not this volume was purchased by the authenticated user making the request. (In LITE projection.)</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.updated'><code>updated</code></td><td><div class='docblock'><p>Timestamp when this volume was last modified by a user action, such as a reading position update, volume purchase or writing a review. (RFC 3339 UTC date-time format).</p>
+                             <td id='structfield.updated'><code>updated</code></td><td><div class='docblock'><p>Timestamp when this volume was last modified by a user action, such as a reading position update, volume purchase or writing a review. (RFC 3339 UTC date-time format).</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.is_preordered'><code>is_preordered</code></td><td><div class='docblock'><p>Whether or not this volume was pre-ordered by the authenticated user making the request. (In LITE projection.)</p>
+                             <td id='structfield.is_preordered'><code>is_preordered</code></td><td><div class='docblock'><p>Whether or not this volume was pre-ordered by the authenticated user making the request. (In LITE projection.)</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.copy'><code>copy</code></td><td><div class='docblock'><p>Copy/Paste accounting information.</p>
+                             <td id='structfield.copy'><code>copy</code></td><td><div class='docblock'><p>Copy/Paste accounting information.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.is_uploaded'><code>is_uploaded</code></td><td><div class='docblock'><p>Whether or not this volume was user uploaded.</p>
+                             <td id='structfield.is_uploaded'><code>is_uploaded</code></td><td><div class='docblock'><p>Whether or not this volume was user uploaded.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.acquired_time'><code>acquired_time</code></td><td><div class='docblock'><p>Timestamp when this volume was acquired by the user. (RFC 3339 UTC date-time format) Acquiring includes purchase, user upload, receiving family sharing, etc.</p>
+                             <td id='structfield.acquired_time'><code>acquired_time</code></td><td><div class='docblock'><p>Timestamp when this volume was acquired by the user. (RFC 3339 UTC date-time format) Acquiring includes purchase, user upload, receiving family sharing, etc.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.is_in_my_books'><code>is_in_my_books</code></td><td><div class='docblock'><p>Whether or not this volume is currently in &quot;my books.&quot;</p>
+                             <td id='structfield.is_in_my_books'><code>is_in_my_books</code></td><td><div class='docblock'><p>Whether or not this volume is currently in &quot;my books.&quot;</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.user_uploaded_volume_info'><code>user_uploaded_volume_info</code></td><td><div class='docblock'><p>no description provided</p>
+                             <td id='structfield.user_uploaded_volume_info'><code>user_uploaded_volume_info</code></td><td><div class='docblock'><p>no description provided</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.rental_state'><code>rental_state</code></td><td><div class='docblock'><p>Whether this book is an active or an expired rental.</p>
+                             <td id='structfield.rental_state'><code>rental_state</code></td><td><div class='docblock'><p>Whether this book is an active or an expired rental.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.is_family_sharing_allowed'><code>is_family_sharing_allowed</code></td><td><div class='docblock'><p>Whether or not this volume can be shared with the family by the user. This includes sharing eligibility of both the volume and the user. If the value is true, the user can initiate a family sharing action.</p>
+                             <td id='structfield.is_family_sharing_allowed'><code>is_family_sharing_allowed</code></td><td><div class='docblock'><p>Whether or not this volume can be shared with the family by the user. This includes sharing eligibility of both the volume and the user. If the value is true, the user can initiate a family sharing action.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.reading_position'><code>reading_position</code></td><td><div class='docblock'><p>The user&#39;s current reading position in the volume, if one is available. (In LITE projection.)</p>
+                             <td id='structfield.reading_position'><code>reading_position</code></td><td><div class='docblock'><p>The user&#39;s current reading position in the volume, if one is available. (In LITE projection.)</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.is_family_shared_to_user'><code>is_family_shared_to_user</code></td><td><div class='docblock'><p>Whether or not the user received this volume through family sharing.</p>
+                             <td id='structfield.is_family_shared_to_user'><code>is_family_shared_to_user</code></td><td><div class='docblock'><p>Whether or not the user received this volume through family sharing.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.entitlement_type'><code>entitlement_type</code></td><td><div class='docblock'><p>Whether this volume is purchased, sample, pd download etc.</p>
+                             <td id='structfield.entitlement_type'><code>entitlement_type</code></td><td><div class='docblock'><p>Whether this volume is purchased, sample, pd download etc.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.review'><code>review</code></td><td><div class='docblock'><p>This user&#39;s review of this volume, if one exists.</p>
-</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl <a class='trait' href='../serde/de/trait.Deserialize.html' title='serde::de::Deserialize'>Deserialize</a> for <a class='struct' href='../google_books1/struct.VolumeUserInfo.html' title='google_books1::VolumeUserInfo'>VolumeUserInfo</a></code></h3><div class='impl-items'><h4 id='method.deserialize' class='method'><code>fn <a href='../serde/de/trait.Deserialize.html#method.deserialize' class='fnname'>deserialize</a>&lt;__D&gt;(deserializer: &amp;mut __D) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../google_books1/struct.VolumeUserInfo.html' title='google_books1::VolumeUserInfo'>VolumeUserInfo</a>, __D::Error&gt; <span class='where'>where __D: <a class='trait' href='../serde/de/trait.Deserializer.html' title='serde::de::Deserializer'>Deserializer</a></span></code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='../serde/ser/trait.Serialize.html' title='serde::ser::Serialize'>Serialize</a> for <a class='struct' href='../google_books1/struct.VolumeUserInfo.html' title='google_books1::VolumeUserInfo'>VolumeUserInfo</a></code></h3><div class='impl-items'><h4 id='method.serialize' class='method'><code>fn <a href='../serde/ser/trait.Serialize.html#method.serialize' class='fnname'>serialize</a>&lt;__S&gt;(&amp;self, serializer: &amp;mut __S) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, __S::Error&gt; <span class='where'>where __S: <a class='trait' href='../serde/ser/trait.Serializer.html' title='serde::ser::Serializer'>Serializer</a></span></code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='../google_books1/trait.NestedType.html' title='google_books1::NestedType'>NestedType</a> for <a class='struct' href='../google_books1/struct.VolumeUserInfo.html' title='google_books1::VolumeUserInfo'>VolumeUserInfo</a></code></h3><div class='impl-items'></div><h3 class='impl'><code>impl <a class='trait' href='../google_books1/trait.Part.html' title='google_books1::Part'>Part</a> for <a class='struct' href='../google_books1/struct.VolumeUserInfo.html' title='google_books1::VolumeUserInfo'>VolumeUserInfo</a></code></h3><div class='impl-items'></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_books1/struct.VolumeUserInfo.html' title='google_books1::VolumeUserInfo'>VolumeUserInfo</a></code></h3><div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#method.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_books1/struct.VolumeUserInfo.html' title='google_books1::VolumeUserInfo'>VolumeUserInfo</a></code></h3><div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_books1/struct.VolumeUserInfo.html' title='google_books1::VolumeUserInfo'>VolumeUserInfo</a></code></h4>
-<h4 id='method.clone_from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_books1/struct.VolumeUserInfo.html' title='google_books1::VolumeUserInfo'>VolumeUserInfo</a></code></h3><div class='impl-items'><h4 id='method.default' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#method.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_books1/struct.VolumeUserInfo.html' title='google_books1::VolumeUserInfo'>VolumeUserInfo</a></code></h4>
-</div></section>
+                             <td id='structfield.review'><code>review</code></td><td><div class='docblock'><p>This user&#39;s review of this volume, if one exists.</p>
+</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='../google_books1/trait.NestedType.html' title='google_books1::NestedType'>NestedType</a> for <a class='struct' href='../google_books1/struct.VolumeUserInfo.html' title='google_books1::VolumeUserInfo'>VolumeUserInfo</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-13887' class='srclink' href='../src/google_books1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-books1-a5e4a686ccba6d06/out/lib.rs.html#30201' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='../google_books1/trait.Part.html' title='google_books1::Part'>Part</a> for <a class='struct' href='../google_books1/struct.VolumeUserInfo.html' title='google_books1::VolumeUserInfo'>VolumeUserInfo</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-13888' class='srclink' href='../src/google_books1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-books1-a5e4a686ccba6d06/out/lib.rs.html#30202' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_books1/struct.VolumeUserInfo.html' title='google_books1::VolumeUserInfo'>VolumeUserInfo</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-13462' class='srclink' href='../src/google_books1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-books1-a5e4a686ccba6d06/out/lib.rs.html#29177' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.default' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_books1/struct.VolumeUserInfo.html' title='google_books1::VolumeUserInfo'>VolumeUserInfo</a></code></h4>
+<div class='docblock'><p>Returns the &quot;default value&quot; for a type. <a href="https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_books1/struct.VolumeUserInfo.html' title='google_books1::VolumeUserInfo'>VolumeUserInfo</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-13464' class='srclink' href='../src/google_books1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-books1-a5e4a686ccba6d06/out/lib.rs.html#29177' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_books1/struct.VolumeUserInfo.html' title='google_books1::VolumeUserInfo'>VolumeUserInfo</a></code></h4>
+<div class='docblock'><p>Returns a copy of the value. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone">Read more</a></p>
+</div><h4 id='method.clone_from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></h4>
+<div class='docblock'><p>Performs copy-assignment from <code>source</code>. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_books1/struct.VolumeUserInfo.html' title='google_books1::VolumeUserInfo'>VolumeUserInfo</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-13484' class='srclink' href='../src/google_books1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-books1-a5e4a686ccba6d06/out/lib.rs.html#29177' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
+<div class='docblock'><p>Formats the value using the given formatter.</p>
+</div></div></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
@@ -132,6 +140,8 @@
                     <dd>Move down in search results</dd>
                     <dt>&#9166;</dt>
                     <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
                 </dl>
             </div>
 
@@ -152,7 +162,7 @@
 
                 <p>
                     Search functions by type signature (e.g.
-                    <code>vec -> usize</code>)
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
                 </p>
             </div>
         </div>

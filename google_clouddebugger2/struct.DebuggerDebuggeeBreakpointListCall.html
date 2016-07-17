@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
+    
 
     
     
@@ -43,10 +44,10 @@
 
     <section id='main' class="content struct">
 <h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_clouddebugger2</a>::<wbr><a class='struct' href=''>DebuggerDebuggeeBreakpointListCall</a></span><span class='out-of-band'><span id='render-detail'>
-            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
-                [<span class='inner'>&#x2212;</span>]
-            </a>
-        </span><a id='src-5362' class='srclink' href='../src/google_clouddebugger2///Users/byron/dev/rs/google-apis-rs/target/debug/build/google-clouddebugger2-56049137333f6169/out/lib.rs.html#9979-9990' title='goto source code'>[src]</a></span></h1>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-5659' class='srclink' href='../src/google_clouddebugger2/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-clouddebugger2-06c41298560a4ebe/out/lib.rs.html#12229-12241' title='goto source code'>[src]</a></span></h1>
 <pre class='rust struct'>pub struct DebuggerDebuggeeBreakpointListCall&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>Lists all breakpoints for the debuggee.</p>
@@ -56,19 +57,22 @@ It is not used directly, but through a <code>DebuggerMethods</code> instance.</p
 
 <h1 id='example' class='section-header'><a href='#example'>Example</a></h1>
 <p>Instantiate a resource method builder</p>
+
 <pre class='rust rust-example-rendered'>
  
 <span class='comment'>// You can configure optional parameters by calling the respective setters at will, and</span>
 <span class='comment'>// execute the final call using `doit()`.</span>
 <span class='comment'>// Values shown here are possibly random and not representative !</span>
 <span class='kw'>let</span> <span class='ident'>result</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>debugger</span>().<span class='ident'>debuggees_breakpoints_list</span>(<span class='string'>&quot;debuggeeId&quot;</span>)
-             .<span class='ident'>wait_token</span>(<span class='string'>&quot;dolores&quot;</span>)
-             .<span class='ident'>strip_results</span>(<span class='boolval'>false</span>)
-             .<span class='ident'>include_inactive</span>(<span class='boolval'>false</span>)
-             .<span class='ident'>include_all_users</span>(<span class='boolval'>true</span>)
-             .<span class='ident'>action_value</span>(<span class='string'>&quot;ea&quot;</span>)
+             .<span class='ident'>wait_token</span>(<span class='string'>&quot;justo&quot;</span>)
+             .<span class='ident'>strip_results</span>(<span class='boolvalue'>true</span>)
+             .<span class='ident'>include_inactive</span>(<span class='boolvalue'>true</span>)
+             .<span class='ident'>include_all_users</span>(<span class='boolvalue'>true</span>)
+             .<span class='ident'>client_version</span>(<span class='string'>&quot;diam&quot;</span>)
+             .<span class='ident'>action_value</span>(<span class='string'>&quot;ipsum&quot;</span>)
              .<span class='ident'>doit</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_clouddebugger2/struct.DebuggerDebuggeeBreakpointListCall.html' title='google_clouddebugger2::DebuggerDebuggeeBreakpointListCall'>DebuggerDebuggeeBreakpointListCall</a>&lt;'a, C, A&gt; <span class='where'>where C: <a class='trait' href='https://doc.rust-lang.org/nightly/core/borrow/trait.BorrowMut.html' title='core::borrow::BorrowMut'>BorrowMut</a>&lt;<a class='struct' href='../hyper/client/struct.Client.html' title='hyper::client::Client'>Client</a>&gt;, A: <a class='trait' href='../yup_oauth2/helper/trait.GetToken.html' title='yup_oauth2::helper::GetToken'>GetToken</a></span></code></h3><div class='impl-items'><h4 id='method.doit' class='method'><code>fn <a href='#method.doit' class='fnname'>doit</a>(self) -&gt; <a class='type' href='../google_clouddebugger2/type.Result.html' title='google_clouddebugger2::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>(<a class='struct' href='../hyper/client/response/struct.Response.html' title='hyper::client::response::Response'>Response</a>, <a class='struct' href='../google_clouddebugger2/struct.ListBreakpointsResponse.html' title='google_clouddebugger2::ListBreakpointsResponse'>ListBreakpointsResponse</a>)</a>&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_clouddebugger2/struct.DebuggerDebuggeeBreakpointListCall.html' title='google_clouddebugger2::DebuggerDebuggeeBreakpointListCall'>DebuggerDebuggeeBreakpointListCall</a>&lt;'a, C, A&gt; <span class='where'>where C: <a class='trait' href='https://doc.rust-lang.org/nightly/core/borrow/trait.BorrowMut.html' title='core::borrow::BorrowMut'>BorrowMut</a>&lt;<a class='struct' href='../hyper/client/struct.Client.html' title='hyper::client::Client'>Client</a>&gt;, A: <a class='trait' href='../yup_oauth2/helper/trait.GetToken.html' title='yup_oauth2::helper::GetToken'>GetToken</a></span></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-5678' class='srclink' href='../src/google_clouddebugger2/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-clouddebugger2-06c41298560a4ebe/out/lib.rs.html#12244-12509' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.doit' class='method'><code>fn <a href='#method.doit' class='fnname'>doit</a>(self) -&gt; <a class='type' href='../google_clouddebugger2/type.Result.html' title='google_clouddebugger2::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>(</a><a class='struct' href='../hyper/client/response/struct.Response.html' title='hyper::client::response::Response'>Response</a>, <a class='struct' href='../google_clouddebugger2/struct.ListBreakpointsResponse.html' title='google_clouddebugger2::ListBreakpointsResponse'>ListBreakpointsResponse</a><a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>)</a>&gt;</code></h4>
 <div class='docblock'><p>Perform the operation you have build so far.</p>
 </div><h4 id='method.debuggee_id' class='method'><code>fn <a href='#method.debuggee_id' class='fnname'>debuggee_id</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_clouddebugger2/struct.DebuggerDebuggeeBreakpointListCall.html' title='google_clouddebugger2::DebuggerDebuggeeBreakpointListCall'>DebuggerDebuggeeBreakpointListCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>ID of the debuggee whose breakpoints to list.</p>
@@ -93,6 +97,10 @@ we provide this method for API completeness.</p>
 <div class='docblock'><p>When set to <code>true</code>, the response includes the list of breakpoints set by any user. Otherwise, it includes only breakpoints set by the caller.</p>
 
 <p>Sets the <em>include all users</em> query property to the given value.</p>
+</div><h4 id='method.client_version' class='method'><code>fn <a href='#method.client_version' class='fnname'>client_version</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_clouddebugger2/struct.DebuggerDebuggeeBreakpointListCall.html' title='google_clouddebugger2::DebuggerDebuggeeBreakpointListCall'>DebuggerDebuggeeBreakpointListCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>The client version making the call. Following: <code>domain/type/version</code> (e.g., <code>google.com/intellij/v1</code>).</p>
+
+<p>Sets the <em>client version</em> query property to the given value.</p>
 </div><h4 id='method.action_value' class='method'><code>fn <a href='#method.action_value' class='fnname'>action_value</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_clouddebugger2/struct.DebuggerDebuggeeBreakpointListCall.html' title='google_clouddebugger2::DebuggerDebuggeeBreakpointListCall'>DebuggerDebuggeeBreakpointListCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>Only breakpoints with the specified action will pass the filter.</p>
 
@@ -140,7 +148,8 @@ tokens for more than one scope.</p>
 <p>Usually there is more than one suitable scope to authorize an operation, some of which may
 encompass more rights than others. For example, for listing resources, a <em>read-only</em> scope will be
 sufficient, a read-write scope will do as well.</p>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_clouddebugger2/trait.CallBuilder.html' title='google_clouddebugger2::CallBuilder'>CallBuilder</a> for <a class='struct' href='../google_clouddebugger2/struct.DebuggerDebuggeeBreakpointListCall.html' title='google_clouddebugger2::DebuggerDebuggeeBreakpointListCall'>DebuggerDebuggeeBreakpointListCall</a>&lt;'a, C, A&gt;</code></h3><div class='impl-items'></div></section>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_clouddebugger2/trait.CallBuilder.html' title='google_clouddebugger2::CallBuilder'>CallBuilder</a> for <a class='struct' href='../google_clouddebugger2/struct.DebuggerDebuggeeBreakpointListCall.html' title='google_clouddebugger2::DebuggerDebuggeeBreakpointListCall'>DebuggerDebuggeeBreakpointListCall</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-5674' class='srclink' href='../src/google_clouddebugger2/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-clouddebugger2-06c41298560a4ebe/out/lib.rs.html#12242-12243' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
@@ -163,6 +172,8 @@ sufficient, a read-write scope will do as well.</p>
                     <dd>Move down in search results</dd>
                     <dt>&#9166;</dt>
                     <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
                 </dl>
             </div>
 
@@ -183,7 +194,7 @@ sufficient, a read-write scope will do as well.</p>
 
                 <p>
                     Search functions by type signature (e.g.
-                    <code>vec -> usize</code>)
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
                 </p>
             </div>
         </div>

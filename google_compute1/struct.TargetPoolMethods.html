@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
+    
 
     
     
@@ -43,10 +44,10 @@
 
     <section id='main' class="content struct">
 <h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_compute1</a>::<wbr><a class='struct' href=''>TargetPoolMethods</a></span><span class='out-of-band'><span id='render-detail'>
-            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
-                [<span class='inner'>&#x2212;</span>]
-            </a>
-        </span><a id='src-34683' class='srclink' href='../src/google_compute1///Users/byron/dev/rs/google-apis-rs/target/debug/build/google-compute1-8ef555a5d87f7ad5/out/lib.rs.html#62399-62401' title='goto source code'>[src]</a></span></h1>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-37403' class='srclink' href='../src/google_compute1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-compute1-ac353794ec468d78/out/lib.rs.html#83826-83828' title='goto source code'>[src]</a></span></h1>
 <pre class='rust struct'>pub struct TargetPoolMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>targetPool</em> resources.
@@ -54,6 +55,7 @@ It is not used directly, but through the <code>Compute</code> hub.</p>
 
 <h1 id='example' class='section-header'><a href='#example'>Example</a></h1>
 <p>Instantiate a resource builder</p>
+
 <pre class='rust rust-example-rendered'>
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>hyper</span>;
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>yup_oauth2</span> <span class='kw'>as</span> <span class='ident'>oauth2</span>;
@@ -72,22 +74,23 @@ It is not used directly, but through the <code>Compute</code> hub.</p>
 <span class='comment'>// like `add_health_check(...)`, `add_instance(...)`, `aggregated_list(...)`, `delete(...)`, `get(...)`, `get_health(...)`, `insert(...)`, `list(...)`, `remove_health_check(...)`, `remove_instance(...)` and `set_backup(...)`</span>
 <span class='comment'>// to build up your call.</span>
 <span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>target_pools</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_compute1/struct.TargetPoolMethods.html' title='google_compute1::TargetPoolMethods'>TargetPoolMethods</a>&lt;'a, C, A&gt;</code></h3><div class='impl-items'><h4 id='method.add_health_check' class='method'><code>fn <a href='#method.add_health_check' class='fnname'>add_health_check</a>(&amp;self, request: <a class='struct' href='../google_compute1/struct.TargetPoolsAddHealthCheckRequest.html' title='google_compute1::TargetPoolsAddHealthCheckRequest'>TargetPoolsAddHealthCheckRequest</a>, project: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, region: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, target_pool: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_compute1/struct.TargetPoolAddHealthCheckCall.html' title='google_compute1::TargetPoolAddHealthCheckCall'>TargetPoolAddHealthCheckCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_compute1/struct.TargetPoolMethods.html' title='google_compute1::TargetPoolMethods'>TargetPoolMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-37412' class='srclink' href='../src/google_compute1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-compute1-ac353794ec468d78/out/lib.rs.html#83830-84061' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.add_health_check' class='method'><code>fn <a href='#method.add_health_check' class='fnname'>add_health_check</a>(&amp;self, request: <a class='struct' href='../google_compute1/struct.TargetPoolsAddHealthCheckRequest.html' title='google_compute1::TargetPoolsAddHealthCheckRequest'>TargetPoolsAddHealthCheckRequest</a>, project: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, region: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, target_pool: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_compute1/struct.TargetPoolAddHealthCheckCall.html' title='google_compute1::TargetPoolAddHealthCheckCall'>TargetPoolAddHealthCheckCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>Adds health check URL to targetPool.</p>
+<p>Adds health check URLs to a target pool.</p>
 
 <h1 id='arguments' class='section-header'><a href='#arguments'>Arguments</a></h1>
 <ul>
 <li><code>request</code> - No description provided.</li>
-<li><code>project</code> - No description provided.</li>
+<li><code>project</code> - Project ID for this request.</li>
 <li><code>region</code> - Name of the region scoping this request.</li>
-<li><code>targetPool</code> - Name of the TargetPool resource to which health_check_url is to be added.</li>
+<li><code>targetPool</code> - Name of the target pool to add a health check to.</li>
 </ul>
 </div><h4 id='method.insert' class='method'><code>fn <a href='#method.insert' class='fnname'>insert</a>(&amp;self, request: <a class='struct' href='../google_compute1/struct.TargetPool.html' title='google_compute1::TargetPool'>TargetPool</a>, project: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, region: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_compute1/struct.TargetPoolInsertCall.html' title='google_compute1::TargetPoolInsertCall'>TargetPoolInsertCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>Creates a TargetPool resource in the specified project and region using the data included in the request.</p>
+<p>Creates a target pool in the specified project and region using the data included in the request.</p>
 
 <h1 id='arguments-1' class='section-header'><a href='#arguments-1'>Arguments</a></h1>
 <ul>
@@ -98,38 +101,38 @@ It is not used directly, but through the <code>Compute</code> hub.</p>
 </div><h4 id='method.remove_health_check' class='method'><code>fn <a href='#method.remove_health_check' class='fnname'>remove_health_check</a>(&amp;self, request: <a class='struct' href='../google_compute1/struct.TargetPoolsRemoveHealthCheckRequest.html' title='google_compute1::TargetPoolsRemoveHealthCheckRequest'>TargetPoolsRemoveHealthCheckRequest</a>, project: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, region: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, target_pool: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_compute1/struct.TargetPoolRemoveHealthCheckCall.html' title='google_compute1::TargetPoolRemoveHealthCheckCall'>TargetPoolRemoveHealthCheckCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>Removes health check URL from targetPool.</p>
+<p>Removes health check URL from a target pool.</p>
 
 <h1 id='arguments-2' class='section-header'><a href='#arguments-2'>Arguments</a></h1>
 <ul>
 <li><code>request</code> - No description provided.</li>
-<li><code>project</code> - No description provided.</li>
-<li><code>region</code> - Name of the region scoping this request.</li>
-<li><code>targetPool</code> - Name of the TargetPool resource to which health_check_url is to be removed.</li>
+<li><code>project</code> - Project ID for this request.</li>
+<li><code>region</code> - Name of the region for this request.</li>
+<li><code>targetPool</code> - Name of the target pool to remove health checks from.</li>
 </ul>
 </div><h4 id='method.get_health' class='method'><code>fn <a href='#method.get_health' class='fnname'>get_health</a>(&amp;self, request: <a class='struct' href='../google_compute1/struct.InstanceReference.html' title='google_compute1::InstanceReference'>InstanceReference</a>, project: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, region: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, target_pool: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_compute1/struct.TargetPoolGetHealthCall.html' title='google_compute1::TargetPoolGetHealthCall'>TargetPoolGetHealthCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>Gets the most recent health check results for each IP for the given instance that is referenced by the given TargetPool.</p>
+<p>Gets the most recent health check results for each IP for the instance that is referenced by the given target pool.</p>
 
 <h1 id='arguments-3' class='section-header'><a href='#arguments-3'>Arguments</a></h1>
 <ul>
 <li><code>request</code> - No description provided.</li>
-<li><code>project</code> - No description provided.</li>
+<li><code>project</code> - Project ID for this request.</li>
 <li><code>region</code> - Name of the region scoping this request.</li>
 <li><code>targetPool</code> - Name of the TargetPool resource to which the queried instance belongs.</li>
 </ul>
 </div><h4 id='method.set_backup' class='method'><code>fn <a href='#method.set_backup' class='fnname'>set_backup</a>(&amp;self, request: <a class='struct' href='../google_compute1/struct.TargetReference.html' title='google_compute1::TargetReference'>TargetReference</a>, project: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, region: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, target_pool: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_compute1/struct.TargetPoolSetBackupCall.html' title='google_compute1::TargetPoolSetBackupCall'>TargetPoolSetBackupCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>Changes backup pool configurations.</p>
+<p>Changes a backup target pool&#39;s configurations.</p>
 
 <h1 id='arguments-4' class='section-header'><a href='#arguments-4'>Arguments</a></h1>
 <ul>
 <li><code>request</code> - No description provided.</li>
 <li><code>project</code> - Project ID for this request.</li>
 <li><code>region</code> - Name of the region scoping this request.</li>
-<li><code>targetPool</code> - Name of the TargetPool resource for which the backup is to be set.</li>
+<li><code>targetPool</code> - Name of the TargetPool resource to set a backup pool for.</li>
 </ul>
 </div><h4 id='method.aggregated_list' class='method'><code>fn <a href='#method.aggregated_list' class='fnname'>aggregated_list</a>(&amp;self, project: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_compute1/struct.TargetPoolAggregatedListCall.html' title='google_compute1::TargetPoolAggregatedListCall'>TargetPoolAggregatedListCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
@@ -143,7 +146,7 @@ It is not used directly, but through the <code>Compute</code> hub.</p>
 </div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, project: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, region: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, target_pool: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_compute1/struct.TargetPoolGetCall.html' title='google_compute1::TargetPoolGetCall'>TargetPoolGetCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>Returns the specified TargetPool resource.</p>
+<p>Returns the specified target pool. Get a list of available target pools by making a list() request.</p>
 
 <h1 id='arguments-6' class='section-header'><a href='#arguments-6'>Arguments</a></h1>
 <ul>
@@ -154,31 +157,31 @@ It is not used directly, but through the <code>Compute</code> hub.</p>
 </div><h4 id='method.add_instance' class='method'><code>fn <a href='#method.add_instance' class='fnname'>add_instance</a>(&amp;self, request: <a class='struct' href='../google_compute1/struct.TargetPoolsAddInstanceRequest.html' title='google_compute1::TargetPoolsAddInstanceRequest'>TargetPoolsAddInstanceRequest</a>, project: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, region: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, target_pool: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_compute1/struct.TargetPoolAddInstanceCall.html' title='google_compute1::TargetPoolAddInstanceCall'>TargetPoolAddInstanceCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>Adds instance URL to targetPool.</p>
+<p>Adds an instance to a target pool.</p>
 
 <h1 id='arguments-7' class='section-header'><a href='#arguments-7'>Arguments</a></h1>
 <ul>
 <li><code>request</code> - No description provided.</li>
-<li><code>project</code> - No description provided.</li>
+<li><code>project</code> - Project ID for this request.</li>
 <li><code>region</code> - Name of the region scoping this request.</li>
-<li><code>targetPool</code> - Name of the TargetPool resource to which instance_url is to be added.</li>
+<li><code>targetPool</code> - Name of the TargetPool resource to add instances to.</li>
 </ul>
 </div><h4 id='method.remove_instance' class='method'><code>fn <a href='#method.remove_instance' class='fnname'>remove_instance</a>(&amp;self, request: <a class='struct' href='../google_compute1/struct.TargetPoolsRemoveInstanceRequest.html' title='google_compute1::TargetPoolsRemoveInstanceRequest'>TargetPoolsRemoveInstanceRequest</a>, project: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, region: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, target_pool: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_compute1/struct.TargetPoolRemoveInstanceCall.html' title='google_compute1::TargetPoolRemoveInstanceCall'>TargetPoolRemoveInstanceCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>Removes instance URL from targetPool.</p>
+<p>Removes instance URL from a target pool.</p>
 
 <h1 id='arguments-8' class='section-header'><a href='#arguments-8'>Arguments</a></h1>
 <ul>
 <li><code>request</code> - No description provided.</li>
-<li><code>project</code> - No description provided.</li>
+<li><code>project</code> - Project ID for this request.</li>
 <li><code>region</code> - Name of the region scoping this request.</li>
-<li><code>targetPool</code> - Name of the TargetPool resource to which instance_url is to be removed.</li>
+<li><code>targetPool</code> - Name of the TargetPool resource to remove instances from.</li>
 </ul>
 </div><h4 id='method.delete' class='method'><code>fn <a href='#method.delete' class='fnname'>delete</a>(&amp;self, project: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, region: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, target_pool: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_compute1/struct.TargetPoolDeleteCall.html' title='google_compute1::TargetPoolDeleteCall'>TargetPoolDeleteCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>Deletes the specified TargetPool resource.</p>
+<p>Deletes the specified target pool.</p>
 
 <h1 id='arguments-9' class='section-header'><a href='#arguments-9'>Arguments</a></h1>
 <ul>
@@ -189,14 +192,15 @@ It is not used directly, but through the <code>Compute</code> hub.</p>
 </div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self, project: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, region: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_compute1/struct.TargetPoolListCall.html' title='google_compute1::TargetPoolListCall'>TargetPoolListCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>Retrieves a list of TargetPool resources available to the specified project and region.</p>
+<p>Retrieves a list of target pools available to the specified project and region.</p>
 
 <h1 id='arguments-10' class='section-header'><a href='#arguments-10'>Arguments</a></h1>
 <ul>
 <li><code>project</code> - Project ID for this request.</li>
 <li><code>region</code> - Name of the region scoping this request.</li>
 </ul>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_compute1/trait.MethodsBuilder.html' title='google_compute1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_compute1/struct.TargetPoolMethods.html' title='google_compute1::TargetPoolMethods'>TargetPoolMethods</a>&lt;'a, C, A&gt;</code></h3><div class='impl-items'></div></section>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_compute1/trait.MethodsBuilder.html' title='google_compute1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_compute1/struct.TargetPoolMethods.html' title='google_compute1::TargetPoolMethods'>TargetPoolMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-37408' class='srclink' href='../src/google_compute1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-compute1-ac353794ec468d78/out/lib.rs.html#83829' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
@@ -219,6 +223,8 @@ It is not used directly, but through the <code>Compute</code> hub.</p>
                     <dd>Move down in search results</dd>
                     <dt>&#9166;</dt>
                     <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
                 </dl>
             </div>
 
@@ -239,7 +245,7 @@ It is not used directly, but through the <code>Compute</code> hub.</p>
 
                 <p>
                     Search functions by type signature (e.g.
-                    <code>vec -> usize</code>)
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
                 </p>
             </div>
         </div>

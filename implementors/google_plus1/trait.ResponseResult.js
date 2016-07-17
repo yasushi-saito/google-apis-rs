@@ -1,5 +1,5 @@
 (function() {var implementors = {};
-implementors['google_plus1'] = [];
+implementors["google_plus1"] = [];
 
             if (window.register_implementors) {
                 window.register_implementors(implementors);

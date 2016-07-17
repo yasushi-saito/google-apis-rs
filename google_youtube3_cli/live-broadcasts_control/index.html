@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Control - YouTube v0.3.3+20160111</title>
+  <title>Control - YouTube v0.3.5+20160222</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -38,7 +38,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> YouTube v0.3.3+20160111</a>
+        <a href=".." class="icon icon-home"> YouTube v0.3.5+20160222</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -790,7 +790,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">YouTube v0.3.3+20160111</a>
+        <a href="..">YouTube v0.3.5+20160222</a>
       </nav>
 
       
@@ -872,6 +872,16 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
+<p><strong>-p offset-time-ms=string</strong></p>
+<ul>
+<li>
+<p>The offsetTimeMs parameter specifies a positive time offset when the specified slate change will occur. The value is measured in milliseconds from the beginning of the broadcast&#39;s monitor stream, which is the time that the testing phase for the broadcast began. Even though it is specified in milliseconds, the value is actually an approximation, and YouTube completes the requested action as closely as possible to that time.</p>
+<p>If you do not specify a value for this parameter, then YouTube performs the action as soon as possible. See the Getting started guide for more details.</p>
+<p>Important: You should only specify a value for this parameter if your broadcast stream is delayed.</p>
+</li>
+</ul>
+</li>
+<li>
 <p><strong>-p on-behalf-of-content-owner-channel=string</strong></p>
 <ul>
 <li>
@@ -885,16 +895,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <p><strong>-p display-slate=boolean</strong></p>
 <ul>
 <li>The displaySlate parameter specifies whether the slate is being enabled or disabled.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p offset-time-ms=string</strong></p>
-<ul>
-<li>
-<p>The offsetTimeMs parameter specifies a positive time offset when the specified slate change will occur. The value is measured in milliseconds from the beginning of the broadcast&#39;s monitor stream, which is the time that the testing phase for the broadcast began. Even though it is specified in milliseconds, the value is actually an approximation, and YouTube completes the requested action as closely as possible to that time.</p>
-<p>If you do not specify a value for this parameter, then YouTube performs the action as soon as possible. See the Getting started guide for more details.</p>
-<p>Important: You should only specify a value for this parameter if your broadcast stream is delayed.</p>
-</li>
 </ul>
 </li>
 </ul>

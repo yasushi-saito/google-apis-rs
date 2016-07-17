@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
+    
 
     
     
@@ -43,10 +44,10 @@
 
     <section id='main' class="content struct">
 <h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_compute1</a>::<wbr><a class='struct' href=''>MachineTypeMethods</a></span><span class='out-of-band'><span id='render-detail'>
-            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
-                [<span class='inner'>&#x2212;</span>]
-            </a>
-        </span><a id='src-34860' class='srclink' href='../src/google_compute1///Users/byron/dev/rs/google-apis-rs/target/debug/build/google-compute1-8ef555a5d87f7ad5/out/lib.rs.html#63069-63071' title='goto source code'>[src]</a></span></h1>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-37580' class='srclink' href='../src/google_compute1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-compute1-ac353794ec468d78/out/lib.rs.html#84496-84498' title='goto source code'>[src]</a></span></h1>
 <pre class='rust struct'>pub struct MachineTypeMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>machineType</em> resources.
@@ -54,6 +55,7 @@ It is not used directly, but through the <code>Compute</code> hub.</p>
 
 <h1 id='example' class='section-header'><a href='#example'>Example</a></h1>
 <p>Instantiate a resource builder</p>
+
 <pre class='rust rust-example-rendered'>
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>hyper</span>;
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>yup_oauth2</span> <span class='kw'>as</span> <span class='ident'>oauth2</span>;
@@ -72,10 +74,11 @@ It is not used directly, but through the <code>Compute</code> hub.</p>
 <span class='comment'>// like `aggregated_list(...)`, `get(...)` and `list(...)`</span>
 <span class='comment'>// to build up your call.</span>
 <span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>machine_types</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_compute1/struct.MachineTypeMethods.html' title='google_compute1::MachineTypeMethods'>MachineTypeMethods</a>&lt;'a, C, A&gt;</code></h3><div class='impl-items'><h4 id='method.aggregated_list' class='method'><code>fn <a href='#method.aggregated_list' class='fnname'>aggregated_list</a>(&amp;self, project: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_compute1/struct.MachineTypeAggregatedListCall.html' title='google_compute1::MachineTypeAggregatedListCall'>MachineTypeAggregatedListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_compute1/struct.MachineTypeMethods.html' title='google_compute1::MachineTypeMethods'>MachineTypeMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-37589' class='srclink' href='../src/google_compute1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-compute1-ac353794ec468d78/out/lib.rs.html#84500-84558' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.aggregated_list' class='method'><code>fn <a href='#method.aggregated_list' class='fnname'>aggregated_list</a>(&amp;self, project: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_compute1/struct.MachineTypeAggregatedListCall.html' title='google_compute1::MachineTypeAggregatedListCall'>MachineTypeAggregatedListCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>Retrieves an aggregated list of machine type resources.</p>
+<p>Retrieves an aggregated list of machine types.</p>
 
 <h1 id='arguments' class='section-header'><a href='#arguments'>Arguments</a></h1>
 <ul>
@@ -84,25 +87,26 @@ It is not used directly, but through the <code>Compute</code> hub.</p>
 </div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, project: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, zone: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, machine_type: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_compute1/struct.MachineTypeGetCall.html' title='google_compute1::MachineTypeGetCall'>MachineTypeGetCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>Returns the specified machine type resource.</p>
+<p>Returns the specified machine type. Get a list of available machine types by making a list() request.</p>
 
 <h1 id='arguments-1' class='section-header'><a href='#arguments-1'>Arguments</a></h1>
 <ul>
 <li><code>project</code> - Project ID for this request.</li>
 <li><code>zone</code> - The name of the zone for this request.</li>
-<li><code>machineType</code> - Name of the machine type resource to return.</li>
+<li><code>machineType</code> - Name of the machine type to return.</li>
 </ul>
 </div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self, project: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, zone: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_compute1/struct.MachineTypeListCall.html' title='google_compute1::MachineTypeListCall'>MachineTypeListCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>Retrieves a list of machine type resources available to the specified project.</p>
+<p>Retrieves a list of machine types available to the specified project.</p>
 
 <h1 id='arguments-2' class='section-header'><a href='#arguments-2'>Arguments</a></h1>
 <ul>
 <li><code>project</code> - Project ID for this request.</li>
 <li><code>zone</code> - The name of the zone for this request.</li>
 </ul>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_compute1/trait.MethodsBuilder.html' title='google_compute1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_compute1/struct.MachineTypeMethods.html' title='google_compute1::MachineTypeMethods'>MachineTypeMethods</a>&lt;'a, C, A&gt;</code></h3><div class='impl-items'></div></section>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_compute1/trait.MethodsBuilder.html' title='google_compute1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_compute1/struct.MachineTypeMethods.html' title='google_compute1::MachineTypeMethods'>MachineTypeMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-37585' class='srclink' href='../src/google_compute1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-compute1-ac353794ec468d78/out/lib.rs.html#84499' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
@@ -125,6 +129,8 @@ It is not used directly, but through the <code>Compute</code> hub.</p>
                     <dd>Move down in search results</dd>
                     <dt>&#9166;</dt>
                     <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
                 </dl>
             </div>
 
@@ -145,7 +151,7 @@ It is not used directly, but through the <code>Compute</code> hub.</p>
 
                 <p>
                     Search functions by type signature (e.g.
-                    <code>vec -> usize</code>)
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
                 </p>
             </div>
         </div>

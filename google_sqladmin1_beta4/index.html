@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
+    
 
     
     
@@ -43,11 +44,11 @@
 
     <section id='main' class="content mod">
 <h1 class='fqn'><span class='in-band'>Crate <a class='mod' href=''>google_sqladmin1_beta4</a></span><span class='out-of-band'><span id='render-detail'>
-            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
-                [<span class='inner'>&#x2212;</span>]
-            </a>
-        </span><a id='src-0' class='srclink' href='../src/google_sqladmin1_beta4/lib.rs.html#5-221' title='goto source code'>[src]</a></span></h1>
-<div class='docblock'><p>This documentation was generated from <em>SQL Admin</em> crate version <em>0.1.11+20151201</em>, where <em>20151201</em> is the exact revision of the <em>sqladmin:v1beta4</em> schema built by the <a href="http://www.makotemplates.org/">mako</a> code generator <em>v0.1.11</em>.</p>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-0' class='srclink' href='../src/google_sqladmin1_beta4/src/lib.rs.html#5-227' title='goto source code'>[src]</a></span></h1>
+<div class='docblock'><p>This documentation was generated from <em>SQL Admin</em> crate version <em>0.1.14+20160321</em>, where <em>20160321</em> is the exact revision of the <em>sqladmin:v1beta4</em> schema built by the <a href="http://www.makotemplates.org/">mako</a> code generator <em>v0.1.14</em>.</p>
 
 <p>Everything else about the <em>SQL Admin</em> <em>v1_beta4</em> API can be found at the
 <a href="https://cloud.google.com/sql/docs/reference/latest">official documentation site</a>.
@@ -134,10 +135,12 @@ allow access to individual <a href="trait.CallBuilder.html"><em>Call Builders</e
 <p>All <em>structures</em> are marked with applicable traits to further categorize them and ease browsing.</p>
 
 <p>Generally speaking, you can invoke <em>Activities</em> like this:</p>
+
 <pre class='rust rust-example-rendered'>
 <span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>resource</span>().<span class='ident'>activity</span>(...).<span class='ident'>doit</span>()</pre>
 
 <p>Or specifically ...</p>
+
 <pre class='rust rust-example-rendered'>
 <span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>ssl_certs</span>().<span class='ident'>delete</span>(...).<span class='ident'>doit</span>()
 <span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>users</span>().<span class='ident'>delete</span>(...).<span class='ident'>doit</span>()
@@ -178,7 +181,8 @@ The <code>doit()</code> method performs the actual communication with the server
 google-sqladmin1_beta4 = &quot;*&quot;
 </code></pre>
 
-<h2 id='a-complete-example' class='section-header'><a href='#a-complete-example'>A complete example</a></h2><pre class='rust rust-example-rendered'>
+<h2 id='a-complete-example' class='section-header'><a href='#a-complete-example'>A complete example</a></h2>
+<pre class='rust rust-example-rendered'>
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>hyper</span>;
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>yup_oauth2</span> <span class='kw'>as</span> <span class='ident'>oauth2</span>;
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>google_sqladmin1_beta4</span> <span class='kw'>as</span> <span class='ident'>sqladmin1_beta4</span>;
@@ -275,1055 +279,829 @@ These will always take a single argument, for which the following statements are
 <p>Arguments will always be copied or cloned into the builder, to make them independent of their original life times.</p>
 </div><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
 <table>
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.AclEntry.html'
-                               title='google_sqladmin1_beta4::AclEntry'>AclEntry</a></td>
-                        <td class='docblock short'>
-                             <p>An entry for an Access Control list.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.BackupConfiguration.html'
-                               title='google_sqladmin1_beta4::BackupConfiguration'>BackupConfiguration</a></td>
-                        <td class='docblock short'>
-                             <p>Database instance backup configuration.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.BackupRun.html'
-                               title='google_sqladmin1_beta4::BackupRun'>BackupRun</a></td>
-                        <td class='docblock short'>
-                             <p>A database instance backup run resource.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.BackupRunDeleteCall.html'
-                               title='google_sqladmin1_beta4::BackupRunDeleteCall'>BackupRunDeleteCall</a></td>
-                        <td class='docblock short'>
-                             <p>Deletes the backup taken by a backup run.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.BackupRunGetCall.html'
-                               title='google_sqladmin1_beta4::BackupRunGetCall'>BackupRunGetCall</a></td>
-                        <td class='docblock short'>
-                             <p>Retrieves a resource containing information about a backup run.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.BackupRunListCall.html'
-                               title='google_sqladmin1_beta4::BackupRunListCall'>BackupRunListCall</a></td>
-                        <td class='docblock short'>
-                             <p>Lists all backup runs associated with a given instance and configuration in the reverse chronological order of the enqueued time.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.BackupRunMethods.html'
-                               title='google_sqladmin1_beta4::BackupRunMethods'>BackupRunMethods</a></td>
-                        <td class='docblock short'>
-                             <p>A builder providing access to all methods supported on <em>backupRun</em> resources.
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AclEntry.html'
+                                  title='google_sqladmin1_beta4::AclEntry'>AclEntry</a></td>
+                           <td class='docblock short'>
+                                <p>An entry for an Access Control list.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.BackupConfiguration.html'
+                                  title='google_sqladmin1_beta4::BackupConfiguration'>BackupConfiguration</a></td>
+                           <td class='docblock short'>
+                                <p>Database instance backup configuration.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.BackupRun.html'
+                                  title='google_sqladmin1_beta4::BackupRun'>BackupRun</a></td>
+                           <td class='docblock short'>
+                                <p>A database instance backup run resource.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.BackupRunDeleteCall.html'
+                                  title='google_sqladmin1_beta4::BackupRunDeleteCall'>BackupRunDeleteCall</a></td>
+                           <td class='docblock short'>
+                                <p>Deletes the backup taken by a backup run.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.BackupRunGetCall.html'
+                                  title='google_sqladmin1_beta4::BackupRunGetCall'>BackupRunGetCall</a></td>
+                           <td class='docblock short'>
+                                <p>Retrieves a resource containing information about a backup run.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.BackupRunListCall.html'
+                                  title='google_sqladmin1_beta4::BackupRunListCall'>BackupRunListCall</a></td>
+                           <td class='docblock short'>
+                                <p>Lists all backup runs associated with a given instance and configuration in the reverse chronological order of the enqueued time.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.BackupRunMethods.html'
+                                  title='google_sqladmin1_beta4::BackupRunMethods'>BackupRunMethods</a></td>
+                           <td class='docblock short'>
+                                <p>A builder providing access to all methods supported on <em>backupRun</em> resources.
 It is not used directly, but through the <code>SQLAdmin</code> hub.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.BackupRunsListResponse.html'
-                               title='google_sqladmin1_beta4::BackupRunsListResponse'>BackupRunsListResponse</a></td>
-                        <td class='docblock short'>
-                             <p>Backup run list results.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.BinLogCoordinates.html'
-                               title='google_sqladmin1_beta4::BinLogCoordinates'>BinLogCoordinates</a></td>
-                        <td class='docblock short'>
-                             <p>Binary log coordinates.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.CloneContext.html'
-                               title='google_sqladmin1_beta4::CloneContext'>CloneContext</a></td>
-                        <td class='docblock short'>
-                             <p>Database instance clone context.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.Database.html'
-                               title='google_sqladmin1_beta4::Database'>Database</a></td>
-                        <td class='docblock short'>
-                             <p>A database resource inside a Cloud SQL instance.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.DatabaseDeleteCall.html'
-                               title='google_sqladmin1_beta4::DatabaseDeleteCall'>DatabaseDeleteCall</a></td>
-                        <td class='docblock short'>
-                             <p>Deletes a resource containing information about a database inside a Cloud SQL instance.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.DatabaseFlags.html'
-                               title='google_sqladmin1_beta4::DatabaseFlags'>DatabaseFlags</a></td>
-                        <td class='docblock short'>
-                             <p>MySQL flags for Cloud SQL instances.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.DatabaseGetCall.html'
-                               title='google_sqladmin1_beta4::DatabaseGetCall'>DatabaseGetCall</a></td>
-                        <td class='docblock short'>
-                             <p>Retrieves a resource containing information about a database inside a Cloud SQL instance.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.DatabaseInsertCall.html'
-                               title='google_sqladmin1_beta4::DatabaseInsertCall'>DatabaseInsertCall</a></td>
-                        <td class='docblock short'>
-                             <p>Inserts a resource containing information about a database inside a Cloud SQL instance.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.DatabaseInstance.html'
-                               title='google_sqladmin1_beta4::DatabaseInstance'>DatabaseInstance</a></td>
-                        <td class='docblock short'>
-                             <p>A Cloud SQL instance resource.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.DatabaseInstanceFailoverReplica.html'
-                               title='google_sqladmin1_beta4::DatabaseInstanceFailoverReplica'>DatabaseInstanceFailoverReplica</a></td>
-                        <td class='docblock short'>
-                             <p>The name and status of the failover replica. Only applies to Second Generation instances.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.DatabaseListCall.html'
-                               title='google_sqladmin1_beta4::DatabaseListCall'>DatabaseListCall</a></td>
-                        <td class='docblock short'>
-                             <p>Lists databases in the specified Cloud SQL instance.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.DatabaseMethods.html'
-                               title='google_sqladmin1_beta4::DatabaseMethods'>DatabaseMethods</a></td>
-                        <td class='docblock short'>
-                             <p>A builder providing access to all methods supported on <em>database</em> resources.
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.BackupRunsListResponse.html'
+                                  title='google_sqladmin1_beta4::BackupRunsListResponse'>BackupRunsListResponse</a></td>
+                           <td class='docblock short'>
+                                <p>Backup run list results.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.BinLogCoordinates.html'
+                                  title='google_sqladmin1_beta4::BinLogCoordinates'>BinLogCoordinates</a></td>
+                           <td class='docblock short'>
+                                <p>Binary log coordinates.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CloneContext.html'
+                                  title='google_sqladmin1_beta4::CloneContext'>CloneContext</a></td>
+                           <td class='docblock short'>
+                                <p>Database instance clone context.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Database.html'
+                                  title='google_sqladmin1_beta4::Database'>Database</a></td>
+                           <td class='docblock short'>
+                                <p>A database resource inside a Cloud SQL instance.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DatabaseDeleteCall.html'
+                                  title='google_sqladmin1_beta4::DatabaseDeleteCall'>DatabaseDeleteCall</a></td>
+                           <td class='docblock short'>
+                                <p>Deletes a database from a Cloud SQL instance.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DatabaseFlags.html'
+                                  title='google_sqladmin1_beta4::DatabaseFlags'>DatabaseFlags</a></td>
+                           <td class='docblock short'>
+                                <p>MySQL flags for Cloud SQL instances.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DatabaseGetCall.html'
+                                  title='google_sqladmin1_beta4::DatabaseGetCall'>DatabaseGetCall</a></td>
+                           <td class='docblock short'>
+                                <p>Retrieves a resource containing information about a database inside a Cloud SQL instance.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DatabaseInsertCall.html'
+                                  title='google_sqladmin1_beta4::DatabaseInsertCall'>DatabaseInsertCall</a></td>
+                           <td class='docblock short'>
+                                <p>Inserts a resource containing information about a database inside a Cloud SQL instance.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DatabaseInstance.html'
+                                  title='google_sqladmin1_beta4::DatabaseInstance'>DatabaseInstance</a></td>
+                           <td class='docblock short'>
+                                <p>A Cloud SQL instance resource.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DatabaseInstanceFailoverReplica.html'
+                                  title='google_sqladmin1_beta4::DatabaseInstanceFailoverReplica'>DatabaseInstanceFailoverReplica</a></td>
+                           <td class='docblock short'>
+                                <p>The name and status of the failover replica. This property is applicable only to Second Generation instances.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DatabaseListCall.html'
+                                  title='google_sqladmin1_beta4::DatabaseListCall'>DatabaseListCall</a></td>
+                           <td class='docblock short'>
+                                <p>Lists databases in the specified Cloud SQL instance.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DatabaseMethods.html'
+                                  title='google_sqladmin1_beta4::DatabaseMethods'>DatabaseMethods</a></td>
+                           <td class='docblock short'>
+                                <p>A builder providing access to all methods supported on <em>database</em> resources.
 It is not used directly, but through the <code>SQLAdmin</code> hub.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.DatabasePatchCall.html'
-                               title='google_sqladmin1_beta4::DatabasePatchCall'>DatabasePatchCall</a></td>
-                        <td class='docblock short'>
-                             <p>Updates a resource containing information about a database inside a Cloud SQL instance. This method supports patch semantics.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.DatabaseUpdateCall.html'
-                               title='google_sqladmin1_beta4::DatabaseUpdateCall'>DatabaseUpdateCall</a></td>
-                        <td class='docblock short'>
-                             <p>Updates a resource containing information about a database inside a Cloud SQL instance.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.DatabasesListResponse.html'
-                               title='google_sqladmin1_beta4::DatabasesListResponse'>DatabasesListResponse</a></td>
-                        <td class='docblock short'>
-                             <p>Database list response.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.DefaultDelegate.html'
-                               title='google_sqladmin1_beta4::DefaultDelegate'>DefaultDelegate</a></td>
-                        <td class='docblock short'>
-                             <p>A delegate with a conservative default implementation, which is used if no other delegate is
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DatabasePatchCall.html'
+                                  title='google_sqladmin1_beta4::DatabasePatchCall'>DatabasePatchCall</a></td>
+                           <td class='docblock short'>
+                                <p>Updates a resource containing information about a database inside a Cloud SQL instance. This method supports patch semantics.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DatabaseUpdateCall.html'
+                                  title='google_sqladmin1_beta4::DatabaseUpdateCall'>DatabaseUpdateCall</a></td>
+                           <td class='docblock short'>
+                                <p>Updates a resource containing information about a database inside a Cloud SQL instance.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DatabasesListResponse.html'
+                                  title='google_sqladmin1_beta4::DatabasesListResponse'>DatabasesListResponse</a></td>
+                           <td class='docblock short'>
+                                <p>Database list response.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DefaultDelegate.html'
+                                  title='google_sqladmin1_beta4::DefaultDelegate'>DefaultDelegate</a></td>
+                           <td class='docblock short'>
+                                <p>A delegate with a conservative default implementation, which is used if no other delegate is
 set.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ErrorResponse.html'
-                               title='google_sqladmin1_beta4::ErrorResponse'>ErrorResponse</a></td>
-                        <td class='docblock short'>
-                             <p>A utility to represent detailed errors we might see in case there are BadRequests.
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ErrorResponse.html'
+                                  title='google_sqladmin1_beta4::ErrorResponse'>ErrorResponse</a></td>
+                           <td class='docblock short'>
+                                <p>A utility to represent detailed errors we might see in case there are BadRequests.
 The latter happen if the sent parameters or request structures are unsound</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ExportContext.html'
-                               title='google_sqladmin1_beta4::ExportContext'>ExportContext</a></td>
-                        <td class='docblock short'>
-                             <p>Database instance export context.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ExportContextCsvExportOptions.html'
-                               title='google_sqladmin1_beta4::ExportContextCsvExportOptions'>ExportContextCsvExportOptions</a></td>
-                        <td class='docblock short'>
-                             <p>Options for exporting data as CSV.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ExportContextSqlExportOptions.html'
-                               title='google_sqladmin1_beta4::ExportContextSqlExportOptions'>ExportContextSqlExportOptions</a></td>
-                        <td class='docblock short'>
-                             <p>Options for exporting data as SQL statements.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.FailoverContext.html'
-                               title='google_sqladmin1_beta4::FailoverContext'>FailoverContext</a></td>
-                        <td class='docblock short'>
-                             <p>Database instance failover context.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.Flag.html'
-                               title='google_sqladmin1_beta4::Flag'>Flag</a></td>
-                        <td class='docblock short'>
-                             <p>A Google Cloud SQL service flag resource.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.FlagListCall.html'
-                               title='google_sqladmin1_beta4::FlagListCall'>FlagListCall</a></td>
-                        <td class='docblock short'>
-                             <p>List all available database flags for Google Cloud SQL instances.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.FlagMethods.html'
-                               title='google_sqladmin1_beta4::FlagMethods'>FlagMethods</a></td>
-                        <td class='docblock short'>
-                             <p>A builder providing access to all methods supported on <em>flag</em> resources.
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ExportContext.html'
+                                  title='google_sqladmin1_beta4::ExportContext'>ExportContext</a></td>
+                           <td class='docblock short'>
+                                <p>Database instance export context.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ExportContextCsvExportOptions.html'
+                                  title='google_sqladmin1_beta4::ExportContextCsvExportOptions'>ExportContextCsvExportOptions</a></td>
+                           <td class='docblock short'>
+                                <p>Options for exporting data as CSV.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ExportContextSqlExportOptions.html'
+                                  title='google_sqladmin1_beta4::ExportContextSqlExportOptions'>ExportContextSqlExportOptions</a></td>
+                           <td class='docblock short'>
+                                <p>Options for exporting data as SQL statements.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.FailoverContext.html'
+                                  title='google_sqladmin1_beta4::FailoverContext'>FailoverContext</a></td>
+                           <td class='docblock short'>
+                                <p>Database instance failover context.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Flag.html'
+                                  title='google_sqladmin1_beta4::Flag'>Flag</a></td>
+                           <td class='docblock short'>
+                                <p>A Google Cloud SQL service flag resource.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.FlagListCall.html'
+                                  title='google_sqladmin1_beta4::FlagListCall'>FlagListCall</a></td>
+                           <td class='docblock short'>
+                                <p>List all available database flags for Google Cloud SQL instances.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.FlagMethods.html'
+                                  title='google_sqladmin1_beta4::FlagMethods'>FlagMethods</a></td>
+                           <td class='docblock short'>
+                                <p>A builder providing access to all methods supported on <em>flag</em> resources.
 It is not used directly, but through the <code>SQLAdmin</code> hub.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.FlagsListResponse.html'
-                               title='google_sqladmin1_beta4::FlagsListResponse'>FlagsListResponse</a></td>
-                        <td class='docblock short'>
-                             <p>Flags list response.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ImportContext.html'
-                               title='google_sqladmin1_beta4::ImportContext'>ImportContext</a></td>
-                        <td class='docblock short'>
-                             <p>Database instance import context.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ImportContextCsvImportOptions.html'
-                               title='google_sqladmin1_beta4::ImportContextCsvImportOptions'>ImportContextCsvImportOptions</a></td>
-                        <td class='docblock short'>
-                             <p>Options for importing data as CSV.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.InstanceCloneCall.html'
-                               title='google_sqladmin1_beta4::InstanceCloneCall'>InstanceCloneCall</a></td>
-                        <td class='docblock short'>
-                             <p>Creates a Cloud SQL instance as a clone of the source instance.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.InstanceDeleteCall.html'
-                               title='google_sqladmin1_beta4::InstanceDeleteCall'>InstanceDeleteCall</a></td>
-                        <td class='docblock short'>
-                             <p>Deletes a Cloud SQL instance.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.InstanceExportCall.html'
-                               title='google_sqladmin1_beta4::InstanceExportCall'>InstanceExportCall</a></td>
-                        <td class='docblock short'>
-                             <p>Exports data from a Cloud SQL instance to a Google Cloud Storage bucket as a MySQL dump file.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.InstanceFailoverCall.html'
-                               title='google_sqladmin1_beta4::InstanceFailoverCall'>InstanceFailoverCall</a></td>
-                        <td class='docblock short'>
-                             <p>Failover the instance to its failover replica instance.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.InstanceGetCall.html'
-                               title='google_sqladmin1_beta4::InstanceGetCall'>InstanceGetCall</a></td>
-                        <td class='docblock short'>
-                             <p>Retrieves a resource containing information about a Cloud SQL instance.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.InstanceImportCall.html'
-                               title='google_sqladmin1_beta4::InstanceImportCall'>InstanceImportCall</a></td>
-                        <td class='docblock short'>
-                             <p>Imports data into a Cloud SQL instance from a MySQL dump file in Google Cloud Storage.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.InstanceInsertCall.html'
-                               title='google_sqladmin1_beta4::InstanceInsertCall'>InstanceInsertCall</a></td>
-                        <td class='docblock short'>
-                             <p>Creates a new Cloud SQL instance.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.InstanceListCall.html'
-                               title='google_sqladmin1_beta4::InstanceListCall'>InstanceListCall</a></td>
-                        <td class='docblock short'>
-                             <p>Lists instances under a given project in the alphabetical order of the instance name.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.InstanceMethods.html'
-                               title='google_sqladmin1_beta4::InstanceMethods'>InstanceMethods</a></td>
-                        <td class='docblock short'>
-                             <p>A builder providing access to all methods supported on <em>instance</em> resources.
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.FlagsListResponse.html'
+                                  title='google_sqladmin1_beta4::FlagsListResponse'>FlagsListResponse</a></td>
+                           <td class='docblock short'>
+                                <p>Flags list response.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ImportContext.html'
+                                  title='google_sqladmin1_beta4::ImportContext'>ImportContext</a></td>
+                           <td class='docblock short'>
+                                <p>Database instance import context.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ImportContextCsvImportOptions.html'
+                                  title='google_sqladmin1_beta4::ImportContextCsvImportOptions'>ImportContextCsvImportOptions</a></td>
+                           <td class='docblock short'>
+                                <p>Options for importing data as CSV.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.InstanceCloneCall.html'
+                                  title='google_sqladmin1_beta4::InstanceCloneCall'>InstanceCloneCall</a></td>
+                           <td class='docblock short'>
+                                <p>Creates a Cloud SQL instance as a clone of the source instance. The API is not ready for Second Generation instances yet.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.InstanceDeleteCall.html'
+                                  title='google_sqladmin1_beta4::InstanceDeleteCall'>InstanceDeleteCall</a></td>
+                           <td class='docblock short'>
+                                <p>Deletes a Cloud SQL instance.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.InstanceExportCall.html'
+                                  title='google_sqladmin1_beta4::InstanceExportCall'>InstanceExportCall</a></td>
+                           <td class='docblock short'>
+                                <p>Exports data from a Cloud SQL instance to a Google Cloud Storage bucket as a MySQL dump file.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.InstanceFailoverCall.html'
+                                  title='google_sqladmin1_beta4::InstanceFailoverCall'>InstanceFailoverCall</a></td>
+                           <td class='docblock short'>
+                                <p>Failover the instance to its failover replica instance.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.InstanceGetCall.html'
+                                  title='google_sqladmin1_beta4::InstanceGetCall'>InstanceGetCall</a></td>
+                           <td class='docblock short'>
+                                <p>Retrieves a resource containing information about a Cloud SQL instance.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.InstanceImportCall.html'
+                                  title='google_sqladmin1_beta4::InstanceImportCall'>InstanceImportCall</a></td>
+                           <td class='docblock short'>
+                                <p>Imports data into a Cloud SQL instance from a MySQL dump file in Google Cloud Storage.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.InstanceInsertCall.html'
+                                  title='google_sqladmin1_beta4::InstanceInsertCall'>InstanceInsertCall</a></td>
+                           <td class='docblock short'>
+                                <p>Creates a new Cloud SQL instance.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.InstanceListCall.html'
+                                  title='google_sqladmin1_beta4::InstanceListCall'>InstanceListCall</a></td>
+                           <td class='docblock short'>
+                                <p>Lists instances under a given project in the alphabetical order of the instance name.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.InstanceMethods.html'
+                                  title='google_sqladmin1_beta4::InstanceMethods'>InstanceMethods</a></td>
+                           <td class='docblock short'>
+                                <p>A builder providing access to all methods supported on <em>instance</em> resources.
 It is not used directly, but through the <code>SQLAdmin</code> hub.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.InstancePatchCall.html'
-                               title='google_sqladmin1_beta4::InstancePatchCall'>InstancePatchCall</a></td>
-                        <td class='docblock short'>
-                             <p>Updates settings of a Cloud SQL instance. Caution: This is not a partial update, so you must include values for all the settings that you want to retain. For partial updates, use patch.. This method supports patch semantics.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.InstancePromoteReplicaCall.html'
-                               title='google_sqladmin1_beta4::InstancePromoteReplicaCall'>InstancePromoteReplicaCall</a></td>
-                        <td class='docblock short'>
-                             <p>Promotes the read replica instance to be a stand-alone Cloud SQL instance.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.InstanceResetSslConfigCall.html'
-                               title='google_sqladmin1_beta4::InstanceResetSslConfigCall'>InstanceResetSslConfigCall</a></td>
-                        <td class='docblock short'>
-                             <p>Deletes all client certificates and generates a new server SSL certificate for the instance. The changes will not take effect until the instance is restarted. Existing instances without a server certificate will need to call this once to set a server certificate.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.InstanceRestartCall.html'
-                               title='google_sqladmin1_beta4::InstanceRestartCall'>InstanceRestartCall</a></td>
-                        <td class='docblock short'>
-                             <p>Restarts a Cloud SQL instance.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.InstanceRestoreBackupCall.html'
-                               title='google_sqladmin1_beta4::InstanceRestoreBackupCall'>InstanceRestoreBackupCall</a></td>
-                        <td class='docblock short'>
-                             <p>Restores a backup of a Cloud SQL instance.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.InstanceStartReplicaCall.html'
-                               title='google_sqladmin1_beta4::InstanceStartReplicaCall'>InstanceStartReplicaCall</a></td>
-                        <td class='docblock short'>
-                             <p>Starts the replication in the read replica instance.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.InstanceStopReplicaCall.html'
-                               title='google_sqladmin1_beta4::InstanceStopReplicaCall'>InstanceStopReplicaCall</a></td>
-                        <td class='docblock short'>
-                             <p>Stops the replication in the read replica instance.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.InstanceUpdateCall.html'
-                               title='google_sqladmin1_beta4::InstanceUpdateCall'>InstanceUpdateCall</a></td>
-                        <td class='docblock short'>
-                             <p>Updates settings of a Cloud SQL instance. Caution: This is not a partial update, so you must include values for all the settings that you want to retain. For partial updates, use patch.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.InstancesCloneRequest.html'
-                               title='google_sqladmin1_beta4::InstancesCloneRequest'>InstancesCloneRequest</a></td>
-                        <td class='docblock short'>
-                             <p>Database instance clone request.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.InstancesExportRequest.html'
-                               title='google_sqladmin1_beta4::InstancesExportRequest'>InstancesExportRequest</a></td>
-                        <td class='docblock short'>
-                             <p>Database instance export request.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.InstancesFailoverRequest.html'
-                               title='google_sqladmin1_beta4::InstancesFailoverRequest'>InstancesFailoverRequest</a></td>
-                        <td class='docblock short'>
-                             <p>Instance failover request.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.InstancesImportRequest.html'
-                               title='google_sqladmin1_beta4::InstancesImportRequest'>InstancesImportRequest</a></td>
-                        <td class='docblock short'>
-                             <p>Database instance import request.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.InstancesListResponse.html'
-                               title='google_sqladmin1_beta4::InstancesListResponse'>InstancesListResponse</a></td>
-                        <td class='docblock short'>
-                             <p>Database instances list response.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.InstancesRestoreBackupRequest.html'
-                               title='google_sqladmin1_beta4::InstancesRestoreBackupRequest'>InstancesRestoreBackupRequest</a></td>
-                        <td class='docblock short'>
-                             <p>Database instance restore backup request.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.IpConfiguration.html'
-                               title='google_sqladmin1_beta4::IpConfiguration'>IpConfiguration</a></td>
-                        <td class='docblock short'>
-                             <p>IP Management configuration.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.IpMapping.html'
-                               title='google_sqladmin1_beta4::IpMapping'>IpMapping</a></td>
-                        <td class='docblock short'>
-                             <p>Database instance IP Mapping.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.LocationPreference.html'
-                               title='google_sqladmin1_beta4::LocationPreference'>LocationPreference</a></td>
-                        <td class='docblock short'>
-                             <p>Preferred location. This specifies where a Cloud SQL instance should preferably be located, either in a specific Compute Engine zone, or co-located with an App Engine application. Note that if the preferred location is not available, the instance will be located as close as possible within the region. Only one location may be specified.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.MaintenanceWindow.html'
-                               title='google_sqladmin1_beta4::MaintenanceWindow'>MaintenanceWindow</a></td>
-                        <td class='docblock short'>
-                             <p>Maintenance window. This specifies when a v2 Cloud SQL instance should preferably be restarted for system maintenance puruposes.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.MethodInfo.html'
-                               title='google_sqladmin1_beta4::MethodInfo'>MethodInfo</a></td>
-                        <td class='docblock short'>
-                             <p>Contains information about an API request.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.MultiPartReader.html'
-                               title='google_sqladmin1_beta4::MultiPartReader'>MultiPartReader</a></td>
-                        <td class='docblock short'>
-                             <p>Provides a <code>Read</code> interface that converts multiple parts into the protocol
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.InstancePatchCall.html'
+                                  title='google_sqladmin1_beta4::InstancePatchCall'>InstancePatchCall</a></td>
+                           <td class='docblock short'>
+                                <p>Updates settings of a Cloud SQL instance. Caution: This is not a partial update, so you must include values for all the settings that you want to retain. For partial updates, use patch.. This method supports patch semantics.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.InstancePromoteReplicaCall.html'
+                                  title='google_sqladmin1_beta4::InstancePromoteReplicaCall'>InstancePromoteReplicaCall</a></td>
+                           <td class='docblock short'>
+                                <p>Promotes the read replica instance to be a stand-alone Cloud SQL instance.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.InstanceResetSslConfigCall.html'
+                                  title='google_sqladmin1_beta4::InstanceResetSslConfigCall'>InstanceResetSslConfigCall</a></td>
+                           <td class='docblock short'>
+                                <p>Deletes all client certificates and generates a new server SSL certificate for the instance. The changes will not take effect until the instance is restarted. Existing instances without a server certificate will need to call this once to set a server certificate.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.InstanceRestartCall.html'
+                                  title='google_sqladmin1_beta4::InstanceRestartCall'>InstanceRestartCall</a></td>
+                           <td class='docblock short'>
+                                <p>Restarts a Cloud SQL instance.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.InstanceRestoreBackupCall.html'
+                                  title='google_sqladmin1_beta4::InstanceRestoreBackupCall'>InstanceRestoreBackupCall</a></td>
+                           <td class='docblock short'>
+                                <p>Restores a backup of a Cloud SQL instance.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.InstanceStartReplicaCall.html'
+                                  title='google_sqladmin1_beta4::InstanceStartReplicaCall'>InstanceStartReplicaCall</a></td>
+                           <td class='docblock short'>
+                                <p>Starts the replication in the read replica instance.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.InstanceStopReplicaCall.html'
+                                  title='google_sqladmin1_beta4::InstanceStopReplicaCall'>InstanceStopReplicaCall</a></td>
+                           <td class='docblock short'>
+                                <p>Stops the replication in the read replica instance.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.InstanceUpdateCall.html'
+                                  title='google_sqladmin1_beta4::InstanceUpdateCall'>InstanceUpdateCall</a></td>
+                           <td class='docblock short'>
+                                <p>Updates settings of a Cloud SQL instance. Caution: This is not a partial update, so you must include values for all the settings that you want to retain. For partial updates, use patch.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.InstancesCloneRequest.html'
+                                  title='google_sqladmin1_beta4::InstancesCloneRequest'>InstancesCloneRequest</a></td>
+                           <td class='docblock short'>
+                                <p>Database instance clone request.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.InstancesExportRequest.html'
+                                  title='google_sqladmin1_beta4::InstancesExportRequest'>InstancesExportRequest</a></td>
+                           <td class='docblock short'>
+                                <p>Database instance export request.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.InstancesFailoverRequest.html'
+                                  title='google_sqladmin1_beta4::InstancesFailoverRequest'>InstancesFailoverRequest</a></td>
+                           <td class='docblock short'>
+                                <p>Instance failover request.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.InstancesImportRequest.html'
+                                  title='google_sqladmin1_beta4::InstancesImportRequest'>InstancesImportRequest</a></td>
+                           <td class='docblock short'>
+                                <p>Database instance import request.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.InstancesListResponse.html'
+                                  title='google_sqladmin1_beta4::InstancesListResponse'>InstancesListResponse</a></td>
+                           <td class='docblock short'>
+                                <p>Database instances list response.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.InstancesRestoreBackupRequest.html'
+                                  title='google_sqladmin1_beta4::InstancesRestoreBackupRequest'>InstancesRestoreBackupRequest</a></td>
+                           <td class='docblock short'>
+                                <p>Database instance restore backup request.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.IpConfiguration.html'
+                                  title='google_sqladmin1_beta4::IpConfiguration'>IpConfiguration</a></td>
+                           <td class='docblock short'>
+                                <p>IP Management configuration.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.IpMapping.html'
+                                  title='google_sqladmin1_beta4::IpMapping'>IpMapping</a></td>
+                           <td class='docblock short'>
+                                <p>Database instance IP Mapping.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.LocationPreference.html'
+                                  title='google_sqladmin1_beta4::LocationPreference'>LocationPreference</a></td>
+                           <td class='docblock short'>
+                                <p>Preferred location. This specifies where a Cloud SQL instance should preferably be located, either in a specific Compute Engine zone, or co-located with an App Engine application. Note that if the preferred location is not available, the instance will be located as close as possible within the region. Only one location may be specified.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.MaintenanceWindow.html'
+                                  title='google_sqladmin1_beta4::MaintenanceWindow'>MaintenanceWindow</a></td>
+                           <td class='docblock short'>
+                                <p>Maintenance window. This specifies when a v2 Cloud SQL instance should preferably be restarted for system maintenance puruposes.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.MethodInfo.html'
+                                  title='google_sqladmin1_beta4::MethodInfo'>MethodInfo</a></td>
+                           <td class='docblock short'>
+                                <p>Contains information about an API request.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.MultiPartReader.html'
+                                  title='google_sqladmin1_beta4::MultiPartReader'>MultiPartReader</a></td>
+                           <td class='docblock short'>
+                                <p>Provides a <code>Read</code> interface that converts multiple parts into the protocol
 identified by <a href="https://tools.ietf.org/html/rfc2387">RFC2387</a>.
 <strong>Note</strong>: This implementation is just as rich as it needs to be to perform uploads
 to google APIs, and might not be a fully-featured implementation.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.MySqlReplicaConfiguration.html'
-                               title='google_sqladmin1_beta4::MySqlReplicaConfiguration'>MySqlReplicaConfiguration</a></td>
-                        <td class='docblock short'>
-                             <p>Read-replica configuration specific to MySQL databases.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.OnPremisesConfiguration.html'
-                               title='google_sqladmin1_beta4::OnPremisesConfiguration'>OnPremisesConfiguration</a></td>
-                        <td class='docblock short'>
-                             <p>On-premises instance configuration.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.Operation.html'
-                               title='google_sqladmin1_beta4::Operation'>Operation</a></td>
-                        <td class='docblock short'>
-                             <p>An Operations resource contains information about database instance operations such as create, delete, and restart. Operations resources are created in response to operations that were initiated; you never create them directly.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.OperationError.html'
-                               title='google_sqladmin1_beta4::OperationError'>OperationError</a></td>
-                        <td class='docblock short'>
-                             <p>Database instance operation error.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.OperationErrors.html'
-                               title='google_sqladmin1_beta4::OperationErrors'>OperationErrors</a></td>
-                        <td class='docblock short'>
-                             <p>Database instance operation errors list wrapper.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.OperationGetCall.html'
-                               title='google_sqladmin1_beta4::OperationGetCall'>OperationGetCall</a></td>
-                        <td class='docblock short'>
-                             <p>Retrieves an instance operation that has been performed on an instance.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.OperationListCall.html'
-                               title='google_sqladmin1_beta4::OperationListCall'>OperationListCall</a></td>
-                        <td class='docblock short'>
-                             <p>Lists all instance operations that have been performed on the given Cloud SQL instance in the reverse chronological order of the start time.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.OperationMethods.html'
-                               title='google_sqladmin1_beta4::OperationMethods'>OperationMethods</a></td>
-                        <td class='docblock short'>
-                             <p>A builder providing access to all methods supported on <em>operation</em> resources.
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.MySqlReplicaConfiguration.html'
+                                  title='google_sqladmin1_beta4::MySqlReplicaConfiguration'>MySqlReplicaConfiguration</a></td>
+                           <td class='docblock short'>
+                                <p>Read-replica configuration specific to MySQL databases.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.OnPremisesConfiguration.html'
+                                  title='google_sqladmin1_beta4::OnPremisesConfiguration'>OnPremisesConfiguration</a></td>
+                           <td class='docblock short'>
+                                <p>On-premises instance configuration.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Operation.html'
+                                  title='google_sqladmin1_beta4::Operation'>Operation</a></td>
+                           <td class='docblock short'>
+                                <p>An Operations resource contains information about database instance operations such as create, delete, and restart. Operations resources are created in response to operations that were initiated; you never create them directly.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.OperationError.html'
+                                  title='google_sqladmin1_beta4::OperationError'>OperationError</a></td>
+                           <td class='docblock short'>
+                                <p>Database instance operation error.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.OperationErrors.html'
+                                  title='google_sqladmin1_beta4::OperationErrors'>OperationErrors</a></td>
+                           <td class='docblock short'>
+                                <p>Database instance operation errors list wrapper.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.OperationGetCall.html'
+                                  title='google_sqladmin1_beta4::OperationGetCall'>OperationGetCall</a></td>
+                           <td class='docblock short'>
+                                <p>Retrieves an instance operation that has been performed on an instance.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.OperationListCall.html'
+                                  title='google_sqladmin1_beta4::OperationListCall'>OperationListCall</a></td>
+                           <td class='docblock short'>
+                                <p>Lists all instance operations that have been performed on the given Cloud SQL instance in the reverse chronological order of the start time.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.OperationMethods.html'
+                                  title='google_sqladmin1_beta4::OperationMethods'>OperationMethods</a></td>
+                           <td class='docblock short'>
+                                <p>A builder providing access to all methods supported on <em>operation</em> resources.
 It is not used directly, but through the <code>SQLAdmin</code> hub.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.OperationsListResponse.html'
-                               title='google_sqladmin1_beta4::OperationsListResponse'>OperationsListResponse</a></td>
-                        <td class='docblock short'>
-                             <p>Database instance list operations response.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ReplicaConfiguration.html'
-                               title='google_sqladmin1_beta4::ReplicaConfiguration'>ReplicaConfiguration</a></td>
-                        <td class='docblock short'>
-                             <p>Read-replica configuration for connecting to the master.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.RestoreBackupContext.html'
-                               title='google_sqladmin1_beta4::RestoreBackupContext'>RestoreBackupContext</a></td>
-                        <td class='docblock short'>
-                             <p>Database instance restore from backup context.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.SQLAdmin.html'
-                               title='google_sqladmin1_beta4::SQLAdmin'>SQLAdmin</a></td>
-                        <td class='docblock short'>
-                             <p>Central instance to access all SQLAdmin related resource activities</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.Settings.html'
-                               title='google_sqladmin1_beta4::Settings'>Settings</a></td>
-                        <td class='docblock short'>
-                             <p>Database instance settings.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.SslCert.html'
-                               title='google_sqladmin1_beta4::SslCert'>SslCert</a></td>
-                        <td class='docblock short'>
-                             <p>SslCerts Resource</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.SslCertCreateEphemeralCall.html'
-                               title='google_sqladmin1_beta4::SslCertCreateEphemeralCall'>SslCertCreateEphemeralCall</a></td>
-                        <td class='docblock short'>
-                             <p>Generates a short-lived X509 certificate containing the provided public key and signed by a private key specific to the target instance. Users may use the certificate to authenticate as themselves when connecting to the database.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.SslCertDeleteCall.html'
-                               title='google_sqladmin1_beta4::SslCertDeleteCall'>SslCertDeleteCall</a></td>
-                        <td class='docblock short'>
-                             <p>Deletes the SSL certificate. The change will not take effect until the instance is restarted.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.SslCertDetail.html'
-                               title='google_sqladmin1_beta4::SslCertDetail'>SslCertDetail</a></td>
-                        <td class='docblock short'>
-                             <p>SslCertDetail.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.SslCertGetCall.html'
-                               title='google_sqladmin1_beta4::SslCertGetCall'>SslCertGetCall</a></td>
-                        <td class='docblock short'>
-                             <p>Retrieves a particular SSL certificate. Does not include the private key (required for usage). The private key must be saved from the response to initial creation.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.SslCertInsertCall.html'
-                               title='google_sqladmin1_beta4::SslCertInsertCall'>SslCertInsertCall</a></td>
-                        <td class='docblock short'>
-                             <p>Creates an SSL certificate and returns it along with the private key and server certificate authority. The new certificate will not be usable until the instance is restarted.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.SslCertListCall.html'
-                               title='google_sqladmin1_beta4::SslCertListCall'>SslCertListCall</a></td>
-                        <td class='docblock short'>
-                             <p>Lists all of the current SSL certificates for the instance.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.SslCertMethods.html'
-                               title='google_sqladmin1_beta4::SslCertMethods'>SslCertMethods</a></td>
-                        <td class='docblock short'>
-                             <p>A builder providing access to all methods supported on <em>sslCert</em> resources.
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.OperationsListResponse.html'
+                                  title='google_sqladmin1_beta4::OperationsListResponse'>OperationsListResponse</a></td>
+                           <td class='docblock short'>
+                                <p>Database instance list operations response.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ReplicaConfiguration.html'
+                                  title='google_sqladmin1_beta4::ReplicaConfiguration'>ReplicaConfiguration</a></td>
+                           <td class='docblock short'>
+                                <p>Read-replica configuration for connecting to the master.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RestoreBackupContext.html'
+                                  title='google_sqladmin1_beta4::RestoreBackupContext'>RestoreBackupContext</a></td>
+                           <td class='docblock short'>
+                                <p>Database instance restore from backup context.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SQLAdmin.html'
+                                  title='google_sqladmin1_beta4::SQLAdmin'>SQLAdmin</a></td>
+                           <td class='docblock short'>
+                                <p>Central instance to access all SQLAdmin related resource activities</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Settings.html'
+                                  title='google_sqladmin1_beta4::Settings'>Settings</a></td>
+                           <td class='docblock short'>
+                                <p>Database instance settings.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SslCert.html'
+                                  title='google_sqladmin1_beta4::SslCert'>SslCert</a></td>
+                           <td class='docblock short'>
+                                <p>SslCerts Resource</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SslCertCreateEphemeralCall.html'
+                                  title='google_sqladmin1_beta4::SslCertCreateEphemeralCall'>SslCertCreateEphemeralCall</a></td>
+                           <td class='docblock short'>
+                                <p>Generates a short-lived X509 certificate containing the provided public key and signed by a private key specific to the target instance. Users may use the certificate to authenticate as themselves when connecting to the database.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SslCertDeleteCall.html'
+                                  title='google_sqladmin1_beta4::SslCertDeleteCall'>SslCertDeleteCall</a></td>
+                           <td class='docblock short'>
+                                <p>Deletes the SSL certificate. The change will not take effect until the instance is restarted.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SslCertDetail.html'
+                                  title='google_sqladmin1_beta4::SslCertDetail'>SslCertDetail</a></td>
+                           <td class='docblock short'>
+                                <p>SslCertDetail.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SslCertGetCall.html'
+                                  title='google_sqladmin1_beta4::SslCertGetCall'>SslCertGetCall</a></td>
+                           <td class='docblock short'>
+                                <p>Retrieves a particular SSL certificate. Does not include the private key (required for usage). The private key must be saved from the response to initial creation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SslCertInsertCall.html'
+                                  title='google_sqladmin1_beta4::SslCertInsertCall'>SslCertInsertCall</a></td>
+                           <td class='docblock short'>
+                                <p>Creates an SSL certificate and returns it along with the private key and server certificate authority. The new certificate will not be usable until the instance is restarted.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SslCertListCall.html'
+                                  title='google_sqladmin1_beta4::SslCertListCall'>SslCertListCall</a></td>
+                           <td class='docblock short'>
+                                <p>Lists all of the current SSL certificates for the instance.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SslCertMethods.html'
+                                  title='google_sqladmin1_beta4::SslCertMethods'>SslCertMethods</a></td>
+                           <td class='docblock short'>
+                                <p>A builder providing access to all methods supported on <em>sslCert</em> resources.
 It is not used directly, but through the <code>SQLAdmin</code> hub.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.SslCertsCreateEphemeralRequest.html'
-                               title='google_sqladmin1_beta4::SslCertsCreateEphemeralRequest'>SslCertsCreateEphemeralRequest</a></td>
-                        <td class='docblock short'>
-                             <p>SslCerts create ephemeral certificate request.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.SslCertsInsertRequest.html'
-                               title='google_sqladmin1_beta4::SslCertsInsertRequest'>SslCertsInsertRequest</a></td>
-                        <td class='docblock short'>
-                             <p>SslCerts insert request.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.SslCertsInsertResponse.html'
-                               title='google_sqladmin1_beta4::SslCertsInsertResponse'>SslCertsInsertResponse</a></td>
-                        <td class='docblock short'>
-                             <p>SslCert insert response.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.SslCertsListResponse.html'
-                               title='google_sqladmin1_beta4::SslCertsListResponse'>SslCertsListResponse</a></td>
-                        <td class='docblock short'>
-                             <p>SslCerts list response.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.Tier.html'
-                               title='google_sqladmin1_beta4::Tier'>Tier</a></td>
-                        <td class='docblock short'>
-                             <p>A Google Cloud SQL service tier resource.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.TierListCall.html'
-                               title='google_sqladmin1_beta4::TierListCall'>TierListCall</a></td>
-                        <td class='docblock short'>
-                             <p>Lists all available service tiers for Google Cloud SQL, for example D1, D2. For related information, see Pricing.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.TierMethods.html'
-                               title='google_sqladmin1_beta4::TierMethods'>TierMethods</a></td>
-                        <td class='docblock short'>
-                             <p>A builder providing access to all methods supported on <em>tier</em> resources.
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SslCertsCreateEphemeralRequest.html'
+                                  title='google_sqladmin1_beta4::SslCertsCreateEphemeralRequest'>SslCertsCreateEphemeralRequest</a></td>
+                           <td class='docblock short'>
+                                <p>SslCerts create ephemeral certificate request.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SslCertsInsertRequest.html'
+                                  title='google_sqladmin1_beta4::SslCertsInsertRequest'>SslCertsInsertRequest</a></td>
+                           <td class='docblock short'>
+                                <p>SslCerts insert request.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SslCertsInsertResponse.html'
+                                  title='google_sqladmin1_beta4::SslCertsInsertResponse'>SslCertsInsertResponse</a></td>
+                           <td class='docblock short'>
+                                <p>SslCert insert response.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SslCertsListResponse.html'
+                                  title='google_sqladmin1_beta4::SslCertsListResponse'>SslCertsListResponse</a></td>
+                           <td class='docblock short'>
+                                <p>SslCerts list response.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Tier.html'
+                                  title='google_sqladmin1_beta4::Tier'>Tier</a></td>
+                           <td class='docblock short'>
+                                <p>A Google Cloud SQL service tier resource.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.TierListCall.html'
+                                  title='google_sqladmin1_beta4::TierListCall'>TierListCall</a></td>
+                           <td class='docblock short'>
+                                <p>Lists all available service tiers for Google Cloud SQL, for example D1, D2. For related information, see Pricing.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.TierMethods.html'
+                                  title='google_sqladmin1_beta4::TierMethods'>TierMethods</a></td>
+                           <td class='docblock short'>
+                                <p>A builder providing access to all methods supported on <em>tier</em> resources.
 It is not used directly, but through the <code>SQLAdmin</code> hub.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.TiersListResponse.html'
-                               title='google_sqladmin1_beta4::TiersListResponse'>TiersListResponse</a></td>
-                        <td class='docblock short'>
-                             <p>Tiers list response.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.User.html'
-                               title='google_sqladmin1_beta4::User'>User</a></td>
-                        <td class='docblock short'>
-                             <p>A Cloud SQL user resource.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.UserDeleteCall.html'
-                               title='google_sqladmin1_beta4::UserDeleteCall'>UserDeleteCall</a></td>
-                        <td class='docblock short'>
-                             <p>Deletes a user from a Cloud SQL instance.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.UserInsertCall.html'
-                               title='google_sqladmin1_beta4::UserInsertCall'>UserInsertCall</a></td>
-                        <td class='docblock short'>
-                             <p>Creates a new user in a Cloud SQL instance.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.UserListCall.html'
-                               title='google_sqladmin1_beta4::UserListCall'>UserListCall</a></td>
-                        <td class='docblock short'>
-                             <p>Lists users in the specified Cloud SQL instance.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.UserMethods.html'
-                               title='google_sqladmin1_beta4::UserMethods'>UserMethods</a></td>
-                        <td class='docblock short'>
-                             <p>A builder providing access to all methods supported on <em>user</em> resources.
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.TiersListResponse.html'
+                                  title='google_sqladmin1_beta4::TiersListResponse'>TiersListResponse</a></td>
+                           <td class='docblock short'>
+                                <p>Tiers list response.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.User.html'
+                                  title='google_sqladmin1_beta4::User'>User</a></td>
+                           <td class='docblock short'>
+                                <p>A Cloud SQL user resource.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UserDeleteCall.html'
+                                  title='google_sqladmin1_beta4::UserDeleteCall'>UserDeleteCall</a></td>
+                           <td class='docblock short'>
+                                <p>Deletes a user from a Cloud SQL instance.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UserInsertCall.html'
+                                  title='google_sqladmin1_beta4::UserInsertCall'>UserInsertCall</a></td>
+                           <td class='docblock short'>
+                                <p>Creates a new user in a Cloud SQL instance.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UserListCall.html'
+                                  title='google_sqladmin1_beta4::UserListCall'>UserListCall</a></td>
+                           <td class='docblock short'>
+                                <p>Lists users in the specified Cloud SQL instance.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UserMethods.html'
+                                  title='google_sqladmin1_beta4::UserMethods'>UserMethods</a></td>
+                           <td class='docblock short'>
+                                <p>A builder providing access to all methods supported on <em>user</em> resources.
 It is not used directly, but through the <code>SQLAdmin</code> hub.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.UserUpdateCall.html'
-                               title='google_sqladmin1_beta4::UserUpdateCall'>UserUpdateCall</a></td>
-                        <td class='docblock short'>
-                             <p>Updates an existing user in a Cloud SQL instance.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.UsersListResponse.html'
-                               title='google_sqladmin1_beta4::UsersListResponse'>UsersListResponse</a></td>
-                        <td class='docblock short'>
-                             <p>User list response.</p>
-
-                        </td>
-                    </tr>
-                </table><h2 id='enums' class='section-header'><a href="#enums">Enums</a></h2>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UserUpdateCall.html'
+                                  title='google_sqladmin1_beta4::UserUpdateCall'>UserUpdateCall</a></td>
+                           <td class='docblock short'>
+                                <p>Updates an existing user in a Cloud SQL instance.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UsersListResponse.html'
+                                  title='google_sqladmin1_beta4::UsersListResponse'>UsersListResponse</a></td>
+                           <td class='docblock short'>
+                                <p>User list response.</p>
+                           </td>
+                       </tr></table><h2 id='enums' class='section-header'><a href="#enums">Enums</a></h2>
 <table>
-                    <tr class=' module-item'>
-                        <td><a class='enum' href='enum.Error.html'
-                               title='google_sqladmin1_beta4::Error'>Error</a></td>
-                        <td class='docblock short'>
-                             
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='enum' href='enum.Scope.html'
-                               title='google_sqladmin1_beta4::Scope'>Scope</a></td>
-                        <td class='docblock short'>
-                             <p>Identifies the an OAuth2 authorization scope.
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.Error.html'
+                                  title='google_sqladmin1_beta4::Error'>Error</a></td>
+                           <td class='docblock short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.Scope.html'
+                                  title='google_sqladmin1_beta4::Scope'>Scope</a></td>
+                           <td class='docblock short'>
+                                <p>Identifies the an OAuth2 authorization scope.
 A scope is needed when requesting an
 <a href="https://developers.google.com/youtube/v3/guides/authentication">authorization token</a>.</p>
-
-                        </td>
-                    </tr>
-                </table><h2 id='traits' class='section-header'><a href="#traits">Traits</a></h2>
+                           </td>
+                       </tr></table><h2 id='traits' class='section-header'><a href="#traits">Traits</a></h2>
 <table>
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.CallBuilder.html'
-                               title='google_sqladmin1_beta4::CallBuilder'>CallBuilder</a></td>
-                        <td class='docblock short'>
-                             <p>Identifies types which represent builders for a particular resource method</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.Delegate.html'
-                               title='google_sqladmin1_beta4::Delegate'>Delegate</a></td>
-                        <td class='docblock short'>
-                             <p>A trait specifying functionality to help controlling any request performed by the API.
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.CallBuilder.html'
+                                  title='google_sqladmin1_beta4::CallBuilder'>CallBuilder</a></td>
+                           <td class='docblock short'>
+                                <p>Identifies types which represent builders for a particular resource method</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.Delegate.html'
+                                  title='google_sqladmin1_beta4::Delegate'>Delegate</a></td>
+                           <td class='docblock short'>
+                                <p>A trait specifying functionality to help controlling any request performed by the API.
 The trait has a conservative default implementation.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.Hub.html'
-                               title='google_sqladmin1_beta4::Hub'>Hub</a></td>
-                        <td class='docblock short'>
-                             <p>Identifies the Hub. There is only one per library, this trait is supposed
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.Hub.html'
+                                  title='google_sqladmin1_beta4::Hub'>Hub</a></td>
+                           <td class='docblock short'>
+                                <p>Identifies the Hub. There is only one per library, this trait is supposed
 to make intended use more explicit.
 The hub allows to access all resource methods more easily.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.MethodsBuilder.html'
-                               title='google_sqladmin1_beta4::MethodsBuilder'>MethodsBuilder</a></td>
-                        <td class='docblock short'>
-                             <p>Identifies types for building methods of a particular resource type</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.NestedType.html'
-                               title='google_sqladmin1_beta4::NestedType'>NestedType</a></td>
-                        <td class='docblock short'>
-                             <p>Identifies types which are only used by other types internally.
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.MethodsBuilder.html'
+                                  title='google_sqladmin1_beta4::MethodsBuilder'>MethodsBuilder</a></td>
+                           <td class='docblock short'>
+                                <p>Identifies types for building methods of a particular resource type</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.NestedType.html'
+                                  title='google_sqladmin1_beta4::NestedType'>NestedType</a></td>
+                           <td class='docblock short'>
+                                <p>Identifies types which are only used by other types internally.
 They have no special meaning, this trait just marks them for completeness.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.Part.html'
-                               title='google_sqladmin1_beta4::Part'>Part</a></td>
-                        <td class='docblock short'>
-                             <p>Identifies types which are only used as part of other types, which
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.Part.html'
+                                  title='google_sqladmin1_beta4::Part'>Part</a></td>
+                           <td class='docblock short'>
+                                <p>Identifies types which are only used as part of other types, which
 usually are carrying the <code>Resource</code> trait.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.ReadSeek.html'
-                               title='google_sqladmin1_beta4::ReadSeek'>ReadSeek</a></td>
-                        <td class='docblock short'>
-                             <p>A utility to specify reader types which provide seeking capabilities too</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.RequestValue.html'
-                               title='google_sqladmin1_beta4::RequestValue'>RequestValue</a></td>
-                        <td class='docblock short'>
-                             <p>Identifies types which are used in API requests.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.Resource.html'
-                               title='google_sqladmin1_beta4::Resource'>Resource</a></td>
-                        <td class='docblock short'>
-                             <p>Identifies types which can be inserted and deleted.
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.ReadSeek.html'
+                                  title='google_sqladmin1_beta4::ReadSeek'>ReadSeek</a></td>
+                           <td class='docblock short'>
+                                <p>A utility to specify reader types which provide seeking capabilities too</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.RequestValue.html'
+                                  title='google_sqladmin1_beta4::RequestValue'>RequestValue</a></td>
+                           <td class='docblock short'>
+                                <p>Identifies types which are used in API requests.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.Resource.html'
+                                  title='google_sqladmin1_beta4::Resource'>Resource</a></td>
+                           <td class='docblock short'>
+                                <p>Identifies types which can be inserted and deleted.
 Types with this trait are most commonly used by clients of this API.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.ResponseResult.html'
-                               title='google_sqladmin1_beta4::ResponseResult'>ResponseResult</a></td>
-                        <td class='docblock short'>
-                             <p>Identifies types which are used in API responses.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.ToParts.html'
-                               title='google_sqladmin1_beta4::ToParts'>ToParts</a></td>
-                        <td class='docblock short'>
-                             <p>A trait for all types that can convert themselves into a <em>parts</em> string</p>
-
-                        </td>
-                    </tr>
-                </table><h2 id='functions' class='section-header'><a href="#functions">Functions</a></h2>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.ResponseResult.html'
+                                  title='google_sqladmin1_beta4::ResponseResult'>ResponseResult</a></td>
+                           <td class='docblock short'>
+                                <p>Identifies types which are used in API responses.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.ToParts.html'
+                                  title='google_sqladmin1_beta4::ToParts'>ToParts</a></td>
+                           <td class='docblock short'>
+                                <p>A trait for all types that can convert themselves into a <em>parts</em> string</p>
+                           </td>
+                       </tr></table><h2 id='functions' class='section-header'><a href="#functions">Functions</a></h2>
 <table>
-                    <tr class=' module-item'>
-                        <td><a class='fn' href='fn.remove_json_null_values.html'
-                               title='google_sqladmin1_beta4::remove_json_null_values'>remove_json_null_values</a></td>
-                        <td class='docblock short'>
-                             
-                        </td>
-                    </tr>
-                </table><h2 id='types' class='section-header'><a href="#types">Type Definitions</a></h2>
+                       <tr class=' module-item'>
+                           <td><a class='fn' href='fn.remove_json_null_values.html'
+                                  title='google_sqladmin1_beta4::remove_json_null_values'>remove_json_null_values</a></td>
+                           <td class='docblock short'>
+                                
+                           </td>
+                       </tr></table><h2 id='types' class='section-header'><a href="#types">Type Definitions</a></h2>
 <table>
-                    <tr class=' module-item'>
-                        <td><a class='type' href='type.Result.html'
-                               title='google_sqladmin1_beta4::Result'>Result</a></td>
-                        <td class='docblock short'>
-                             <p>A universal result type used as return for all calls.</p>
-
-                        </td>
-                    </tr>
-                </table></section>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Result.html'
+                                  title='google_sqladmin1_beta4::Result'>Result</a></td>
+                           <td class='docblock short'>
+                                <p>A universal result type used as return for all calls.</p>
+                           </td>
+                       </tr></table></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
@@ -1346,6 +1124,8 @@ Types with this trait are most commonly used by clients of this API.</p>
                     <dd>Move down in search results</dd>
                     <dt>&#9166;</dt>
                     <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
                 </dl>
             </div>
 
@@ -1366,7 +1146,7 @@ Types with this trait are most commonly used by clients of this API.</p>
 
                 <p>
                     Search functions by type signature (e.g.
-                    <code>vec -> usize</code>)
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
                 </p>
             </div>
         </div>

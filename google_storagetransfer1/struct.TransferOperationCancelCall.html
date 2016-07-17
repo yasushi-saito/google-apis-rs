@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
+    
 
     
     
@@ -43,10 +44,10 @@
 
     <section id='main' class="content struct">
 <h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_storagetransfer1</a>::<wbr><a class='struct' href=''>TransferOperationCancelCall</a></span><span class='out-of-band'><span id='render-detail'>
-            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
-                [<span class='inner'>&#x2212;</span>]
-            </a>
-        </span><a id='src-5013' class='srclink' href='../src/google_storagetransfer1///Users/byron/dev/rs/google-apis-rs/target/debug/build/google-storagetransfer1-18e7bf7111b60d68/out/lib.rs.html#9357-9363' title='goto source code'>[src]</a></span></h1>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-5269' class='srclink' href='../src/google_storagetransfer1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-storagetransfer1-77ab6c113488ddd6/out/lib.rs.html#11551-11557' title='goto source code'>[src]</a></span></h1>
 <pre class='rust struct'>pub struct TransferOperationCancelCall&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>Cancels a transfer. Use the get method to check whether the cancellation succeeded or whether the operation completed despite cancellation.</p>
@@ -56,6 +57,7 @@ It is not used directly, but through a <code>TransferOperationMethods</code> ins
 
 <h1 id='example' class='section-header'><a href='#example'>Example</a></h1>
 <p>Instantiate a resource method builder</p>
+
 <pre class='rust rust-example-rendered'>
  
 <span class='comment'>// You can configure optional parameters by calling the respective setters at will, and</span>
@@ -63,7 +65,8 @@ It is not used directly, but through a <code>TransferOperationMethods</code> ins
 <span class='comment'>// Values shown here are possibly random and not representative !</span>
 <span class='kw'>let</span> <span class='ident'>result</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>transfer_operations</span>().<span class='ident'>cancel</span>(<span class='string'>&quot;name&quot;</span>)
              .<span class='ident'>doit</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_storagetransfer1/struct.TransferOperationCancelCall.html' title='google_storagetransfer1::TransferOperationCancelCall'>TransferOperationCancelCall</a>&lt;'a, C, A&gt; <span class='where'>where C: <a class='trait' href='https://doc.rust-lang.org/nightly/core/borrow/trait.BorrowMut.html' title='core::borrow::BorrowMut'>BorrowMut</a>&lt;<a class='struct' href='../hyper/client/struct.Client.html' title='hyper::client::Client'>Client</a>&gt;, A: <a class='trait' href='../yup_oauth2/helper/trait.GetToken.html' title='yup_oauth2::helper::GetToken'>GetToken</a></span></code></h3><div class='impl-items'><h4 id='method.doit' class='method'><code>fn <a href='#method.doit' class='fnname'>doit</a>(self) -&gt; <a class='type' href='../google_storagetransfer1/type.Result.html' title='google_storagetransfer1::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>(<a class='struct' href='../hyper/client/response/struct.Response.html' title='hyper::client::response::Response'>Response</a>, <a class='struct' href='../google_storagetransfer1/struct.Empty.html' title='google_storagetransfer1::Empty'>Empty</a>)</a>&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_storagetransfer1/struct.TransferOperationCancelCall.html' title='google_storagetransfer1::TransferOperationCancelCall'>TransferOperationCancelCall</a>&lt;'a, C, A&gt; <span class='where'>where C: <a class='trait' href='https://doc.rust-lang.org/nightly/core/borrow/trait.BorrowMut.html' title='core::borrow::BorrowMut'>BorrowMut</a>&lt;<a class='struct' href='../hyper/client/struct.Client.html' title='hyper::client::Client'>Client</a>&gt;, A: <a class='trait' href='../yup_oauth2/helper/trait.GetToken.html' title='yup_oauth2::helper::GetToken'>GetToken</a></span></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-5282' class='srclink' href='../src/google_storagetransfer1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-storagetransfer1-77ab6c113488ddd6/out/lib.rs.html#11559-11760' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.doit' class='method'><code>fn <a href='#method.doit' class='fnname'>doit</a>(self) -&gt; <a class='type' href='../google_storagetransfer1/type.Result.html' title='google_storagetransfer1::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>(</a><a class='struct' href='../hyper/client/response/struct.Response.html' title='hyper::client::response::Response'>Response</a>, <a class='struct' href='../google_storagetransfer1/struct.Empty.html' title='google_storagetransfer1::Empty'>Empty</a><a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>)</a>&gt;</code></h4>
 <div class='docblock'><p>Perform the operation you have build so far.</p>
 </div><h4 id='method.name' class='method'><code>fn <a href='#method.name' class='fnname'>name</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_storagetransfer1/struct.TransferOperationCancelCall.html' title='google_storagetransfer1::TransferOperationCancelCall'>TransferOperationCancelCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>The name of the operation resource to be cancelled.</p>
@@ -115,7 +118,8 @@ tokens for more than one scope.</p>
 <p>Usually there is more than one suitable scope to authorize an operation, some of which may
 encompass more rights than others. For example, for listing resources, a <em>read-only</em> scope will be
 sufficient, a read-write scope will do as well.</p>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_storagetransfer1/trait.CallBuilder.html' title='google_storagetransfer1::CallBuilder'>CallBuilder</a> for <a class='struct' href='../google_storagetransfer1/struct.TransferOperationCancelCall.html' title='google_storagetransfer1::TransferOperationCancelCall'>TransferOperationCancelCall</a>&lt;'a, C, A&gt;</code></h3><div class='impl-items'></div></section>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_storagetransfer1/trait.CallBuilder.html' title='google_storagetransfer1::CallBuilder'>CallBuilder</a> for <a class='struct' href='../google_storagetransfer1/struct.TransferOperationCancelCall.html' title='google_storagetransfer1::TransferOperationCancelCall'>TransferOperationCancelCall</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-5278' class='srclink' href='../src/google_storagetransfer1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-storagetransfer1-77ab6c113488ddd6/out/lib.rs.html#11558' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
@@ -138,6 +142,8 @@ sufficient, a read-write scope will do as well.</p>
                     <dd>Move down in search results</dd>
                     <dt>&#9166;</dt>
                     <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
                 </dl>
             </div>
 
@@ -158,7 +164,7 @@ sufficient, a read-write scope will do as well.</p>
 
                 <p>
                     Search functions by type signature (e.g.
-                    <code>vec -> usize</code>)
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
                 </p>
             </div>
         </div>

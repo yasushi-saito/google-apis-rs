@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Replace Rows - fusiontables v0.3.3+20150618</title>
+  <title>Replace Rows - fusiontables v0.3.5+20160317</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -38,7 +38,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> fusiontables v0.3.3+20150618</a>
+        <a href=".." class="icon icon-home"> fusiontables v0.3.5+20160317</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -367,7 +367,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">fusiontables v0.3.3+20150618</a>
+        <a href="..">fusiontables v0.3.5+20160317</a>
       </nav>
 
       
@@ -446,24 +446,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p start-line=integer</strong></p>
-<ul>
-<li>The index of the first line from which to start importing, inclusive. Default is 0.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p is-strict=boolean</strong></p>
-<ul>
-<li>Whether the imported CSV must have the same number of column values for each row. If true, throws an exception if the CSV does not have the same number of columns. If false, rows with fewer column values will be padded with empty values. Default is true.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p delimiter=string</strong></p>
-<ul>
-<li>The delimiter used to separate cell values. This can only consist of a single character. Default is ,.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p end-line=integer</strong></p>
 <ul>
 <li>The index of the line up to which data will be imported. Default is to import the entire file. If endLine is negative, it is an offset from the end of the file; the imported content will exclude the last endLine lines.</li>
@@ -473,6 +455,24 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <p><strong>-p encoding=string</strong></p>
 <ul>
 <li>The encoding of the content. Default is UTF-8. Use &#39;auto-detect&#39; if you are unsure of the encoding.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p is-strict=boolean</strong></p>
+<ul>
+<li>Whether the imported CSV must have the same number of column values for each row. If true, throws an exception if the CSV does not have the same number of columns. If false, rows with fewer column values will be padded with empty values. Default is true.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p start-line=integer</strong></p>
+<ul>
+<li>The index of the first line from which to start importing, inclusive. Default is 0.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p delimiter=string</strong></p>
+<ul>
+<li>The delimiter used to separate cell values. This can only consist of a single character. Default is ,.</li>
 </ul>
 </li>
 </ul>

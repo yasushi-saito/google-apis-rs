@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
+    
 
     
     
@@ -43,10 +44,10 @@
 
     <section id='main' class="content struct">
 <h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_gan1_beta1</a>::<wbr><a class='struct' href=''>ReportMethods</a></span><span class='out-of-band'><span id='render-detail'>
-            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
-                [<span class='inner'>&#x2212;</span>]
-            </a>
-        </span><a id='src-6012' class='srclink' href='../src/google_gan1_beta1///Users/byron/dev/rs/google-apis-rs/target/debug/build/google-gan1_beta1-67aa5d14a5f19789/out/lib.rs.html#10942-10944' title='goto source code'>[src]</a></span></h1>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-6505' class='srclink' href='../src/google_gan1_beta1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-gan1_beta1-ccb185e71211216c/out/lib.rs.html#14467-14469' title='goto source code'>[src]</a></span></h1>
 <pre class='rust struct'>pub struct ReportMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>report</em> resources.
@@ -54,6 +55,7 @@ It is not used directly, but through the <code>Gan</code> hub.</p>
 
 <h1 id='example' class='section-header'><a href='#example'>Example</a></h1>
 <p>Instantiate a resource builder</p>
+
 <pre class='rust rust-example-rendered'>
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>hyper</span>;
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>yup_oauth2</span> <span class='kw'>as</span> <span class='ident'>oauth2</span>;
@@ -72,7 +74,8 @@ It is not used directly, but through the <code>Gan</code> hub.</p>
 <span class='comment'>// like `get(...)`</span>
 <span class='comment'>// to build up your call.</span>
 <span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>reports</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_gan1_beta1/struct.ReportMethods.html' title='google_gan1_beta1::ReportMethods'>ReportMethods</a>&lt;'a, C, A&gt;</code></h3><div class='impl-items'><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, role: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, role_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, report_type: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gan1_beta1/struct.ReportGetCall.html' title='google_gan1_beta1::ReportGetCall'>ReportGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_gan1_beta1/struct.ReportMethods.html' title='google_gan1_beta1::ReportMethods'>ReportMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-6514' class='srclink' href='../src/google_gan1_beta1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-gan1_beta1-ccb185e71211216c/out/lib.rs.html#14471-14501' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, role: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, role_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, report_type: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gan1_beta1/struct.ReportGetCall.html' title='google_gan1_beta1::ReportGetCall'>ReportGetCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Retrieves a report of the specified type.</p>
@@ -83,7 +86,8 @@ It is not used directly, but through the <code>Gan</code> hub.</p>
 <li><code>roleId</code> - The ID of the requesting advertiser or publisher.</li>
 <li><code>reportType</code> - The type of report being requested. Valid values: &#39;order_delta&#39;. Required.</li>
 </ul>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_gan1_beta1/trait.MethodsBuilder.html' title='google_gan1_beta1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_gan1_beta1/struct.ReportMethods.html' title='google_gan1_beta1::ReportMethods'>ReportMethods</a>&lt;'a, C, A&gt;</code></h3><div class='impl-items'></div></section>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_gan1_beta1/trait.MethodsBuilder.html' title='google_gan1_beta1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_gan1_beta1/struct.ReportMethods.html' title='google_gan1_beta1::ReportMethods'>ReportMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-6510' class='srclink' href='../src/google_gan1_beta1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-gan1_beta1-ccb185e71211216c/out/lib.rs.html#14470' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
@@ -106,6 +110,8 @@ It is not used directly, but through the <code>Gan</code> hub.</p>
                     <dd>Move down in search results</dd>
                     <dt>&#9166;</dt>
                     <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
                 </dl>
             </div>
 
@@ -126,7 +132,7 @@ It is not used directly, but through the <code>Gan</code> hub.</p>
 
                 <p>
                     Search functions by type signature (e.g.
-                    <code>vec -> usize</code>)
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
                 </p>
             </div>
         </div>

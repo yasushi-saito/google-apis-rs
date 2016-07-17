@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
+    
 
     
     
@@ -43,16 +44,18 @@
 
     <section id='main' class="content struct">
 <h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_adexchangebuyer1d3</a>::<wbr><a class='struct' href=''>DirectDeal</a></span><span class='out-of-band'><span id='render-detail'>
-            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
-                [<span class='inner'>&#x2212;</span>]
-            </a>
-        </span><a id='src-2836' class='srclink' href='../src/google_adexchangebuyer1d3///Users/byron/dev/rs/google-apis-rs/target/debug/build/google-adexchangebuyer1d3-bcd6548412fa4d53/out/lib.rs.html#4794-4821' title='goto source code'>[src]</a></span></h1>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-3016' class='srclink' href='../src/google_adexchangebuyer1d3/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-adexchangebuyer1d3-f3b6a85901d89309/out/lib.rs.html#6450-6481' title='goto source code'>[src]</a></span></h1>
 <pre class='rust struct'>pub struct DirectDeal {
     pub advertiser: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
     pub kind: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub buyer_account_id: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
     pub account_id: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>&gt;,
     pub name: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
     pub currency_code: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub allows_alcohol: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt;,
     pub deal_tier: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
     pub fixed_cpm: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
     pub start_time: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
@@ -73,38 +76,49 @@ The list links the activity name, along with information about where it is used 
 </ul>
 </div><h2 class='fields'>Fields</h2>
 <table><tr class='stab '>
-                                  <td id='structfield.advertiser'><code>advertiser</code></td><td><div class='docblock'><p>The name of the advertiser this deal is for.</p>
+                             <td id='structfield.advertiser'><code>advertiser</code></td><td><div class='docblock'><p>The name of the advertiser this deal is for.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.kind'><code>kind</code></td><td><div class='docblock'><p>Resource type.</p>
+                             <td id='structfield.kind'><code>kind</code></td><td><div class='docblock'><p>Resource type.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.account_id'><code>account_id</code></td><td><div class='docblock'><p>The account id of the buyer this deal is for.</p>
+                             <td id='structfield.buyer_account_id'><code>buyer_account_id</code></td><td><div class='docblock'><p>The account id that this deal was negotiated for. It is either the buyer or the client that this deal was negotiated on behalf of.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.name'><code>name</code></td><td><div class='docblock'><p>Deal name.</p>
+                             <td id='structfield.account_id'><code>account_id</code></td><td><div class='docblock'><p>The account id of the buyer this deal is for.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.currency_code'><code>currency_code</code></td><td><div class='docblock'><p>The currency code that applies to the fixed_cpm value. If not set then assumed to be USD.</p>
+                             <td id='structfield.name'><code>name</code></td><td><div class='docblock'><p>Deal name.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.deal_tier'><code>deal_tier</code></td><td><div class='docblock'><p>The deal type such as programmatic reservation or fixed price and so on.</p>
+                             <td id='structfield.currency_code'><code>currency_code</code></td><td><div class='docblock'><p>The currency code that applies to the fixed_cpm value. If not set then assumed to be USD.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.fixed_cpm'><code>fixed_cpm</code></td><td><div class='docblock'><p>The fixed price for this direct deal. In cpm micros of currency according to currency_code. If set, then this deal is eligible for the fixed price tier of buying (highest priority, pay exactly the configured fixed price).</p>
+                             <td id='structfield.allows_alcohol'><code>allows_alcohol</code></td><td><div class='docblock'><p>Whether the publisher for this deal is eligible for alcohol ads.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.start_time'><code>start_time</code></td><td><div class='docblock'><p>Start time for when this deal becomes active. If not set then this deal is active immediately upon creation. In seconds since the epoch.</p>
+                             <td id='structfield.deal_tier'><code>deal_tier</code></td><td><div class='docblock'><p>The deal type such as programmatic reservation or fixed price and so on.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.publisher_blocks_overriden'><code>publisher_blocks_overriden</code></td><td><div class='docblock'><p>If true, the publisher has opted to have their blocks ignored when a creative is bid with for this deal.</p>
+                             <td id='structfield.fixed_cpm'><code>fixed_cpm</code></td><td><div class='docblock'><p>The fixed price for this direct deal. In cpm micros of currency according to currency_code. If set, then this deal is eligible for the fixed price tier of buying (highest priority, pay exactly the configured fixed price).</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.end_time'><code>end_time</code></td><td><div class='docblock'><p>End time for when this deal stops being active. If not set then this deal is valid until manually disabled by the publisher. In seconds since the epoch.</p>
+                             <td id='structfield.start_time'><code>start_time</code></td><td><div class='docblock'><p>Start time for when this deal becomes active. If not set then this deal is active immediately upon creation. In seconds since the epoch.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.seller_network'><code>seller_network</code></td><td><div class='docblock'><p>The name of the publisher offering this direct deal.</p>
+                             <td id='structfield.publisher_blocks_overriden'><code>publisher_blocks_overriden</code></td><td><div class='docblock'><p>If true, the publisher has opted to have their blocks ignored when a creative is bid with for this deal.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.id'><code>id</code></td><td><div class='docblock'><p>Deal id.</p>
+                             <td id='structfield.end_time'><code>end_time</code></td><td><div class='docblock'><p>End time for when this deal stops being active. If not set then this deal is valid until manually disabled by the publisher. In seconds since the epoch.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.private_exchange_min_cpm'><code>private_exchange_min_cpm</code></td><td><div class='docblock'><p>The minimum price for this direct deal. In cpm micros of currency according to currency_code. If set, then this deal is eligible for the private exchange tier of buying (below fixed price priority, run as a second price auction).</p>
-</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl <a class='trait' href='../serde/de/trait.Deserialize.html' title='serde::de::Deserialize'>Deserialize</a> for <a class='struct' href='../google_adexchangebuyer1d3/struct.DirectDeal.html' title='google_adexchangebuyer1d3::DirectDeal'>DirectDeal</a></code></h3><div class='impl-items'><h4 id='method.deserialize' class='method'><code>fn <a href='../serde/de/trait.Deserialize.html#method.deserialize' class='fnname'>deserialize</a>&lt;__D&gt;(deserializer: &amp;mut __D) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../google_adexchangebuyer1d3/struct.DirectDeal.html' title='google_adexchangebuyer1d3::DirectDeal'>DirectDeal</a>, __D::Error&gt; <span class='where'>where __D: <a class='trait' href='../serde/de/trait.Deserializer.html' title='serde::de::Deserializer'>Deserializer</a></span></code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='../serde/ser/trait.Serialize.html' title='serde::ser::Serialize'>Serialize</a> for <a class='struct' href='../google_adexchangebuyer1d3/struct.DirectDeal.html' title='google_adexchangebuyer1d3::DirectDeal'>DirectDeal</a></code></h3><div class='impl-items'><h4 id='method.serialize' class='method'><code>fn <a href='../serde/ser/trait.Serialize.html#method.serialize' class='fnname'>serialize</a>&lt;__S&gt;(&amp;self, serializer: &amp;mut __S) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, __S::Error&gt; <span class='where'>where __S: <a class='trait' href='../serde/ser/trait.Serializer.html' title='serde::ser::Serializer'>Serializer</a></span></code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='../google_adexchangebuyer1d3/trait.Resource.html' title='google_adexchangebuyer1d3::Resource'>Resource</a> for <a class='struct' href='../google_adexchangebuyer1d3/struct.DirectDeal.html' title='google_adexchangebuyer1d3::DirectDeal'>DirectDeal</a></code></h3><div class='impl-items'></div><h3 class='impl'><code>impl <a class='trait' href='../google_adexchangebuyer1d3/trait.ResponseResult.html' title='google_adexchangebuyer1d3::ResponseResult'>ResponseResult</a> for <a class='struct' href='../google_adexchangebuyer1d3/struct.DirectDeal.html' title='google_adexchangebuyer1d3::DirectDeal'>DirectDeal</a></code></h3><div class='impl-items'></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_adexchangebuyer1d3/struct.DirectDeal.html' title='google_adexchangebuyer1d3::DirectDeal'>DirectDeal</a></code></h3><div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#method.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_adexchangebuyer1d3/struct.DirectDeal.html' title='google_adexchangebuyer1d3::DirectDeal'>DirectDeal</a></code></h3><div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_adexchangebuyer1d3/struct.DirectDeal.html' title='google_adexchangebuyer1d3::DirectDeal'>DirectDeal</a></code></h4>
-<h4 id='method.clone_from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_adexchangebuyer1d3/struct.DirectDeal.html' title='google_adexchangebuyer1d3::DirectDeal'>DirectDeal</a></code></h3><div class='impl-items'><h4 id='method.default' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#method.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_adexchangebuyer1d3/struct.DirectDeal.html' title='google_adexchangebuyer1d3::DirectDeal'>DirectDeal</a></code></h4>
-</div></section>
+                             <td id='structfield.seller_network'><code>seller_network</code></td><td><div class='docblock'><p>The name of the publisher offering this direct deal.</p>
+</div></td></tr><tr class='stab '>
+                             <td id='structfield.id'><code>id</code></td><td><div class='docblock'><p>Deal id.</p>
+</div></td></tr><tr class='stab '>
+                             <td id='structfield.private_exchange_min_cpm'><code>private_exchange_min_cpm</code></td><td><div class='docblock'><p>The minimum price for this direct deal. In cpm micros of currency according to currency_code. If set, then this deal is eligible for the private exchange tier of buying (below fixed price priority, run as a second price auction).</p>
+</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='../google_adexchangebuyer1d3/trait.Resource.html' title='google_adexchangebuyer1d3::Resource'>Resource</a> for <a class='struct' href='../google_adexchangebuyer1d3/struct.DirectDeal.html' title='google_adexchangebuyer1d3::DirectDeal'>DirectDeal</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-3417' class='srclink' href='../src/google_adexchangebuyer1d3/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-adexchangebuyer1d3-f3b6a85901d89309/out/lib.rs.html#7354' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='../google_adexchangebuyer1d3/trait.ResponseResult.html' title='google_adexchangebuyer1d3::ResponseResult'>ResponseResult</a> for <a class='struct' href='../google_adexchangebuyer1d3/struct.DirectDeal.html' title='google_adexchangebuyer1d3::DirectDeal'>DirectDeal</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-3418' class='srclink' href='../src/google_adexchangebuyer1d3/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-adexchangebuyer1d3-f3b6a85901d89309/out/lib.rs.html#7355' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_adexchangebuyer1d3/struct.DirectDeal.html' title='google_adexchangebuyer1d3::DirectDeal'>DirectDeal</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-3032' class='srclink' href='../src/google_adexchangebuyer1d3/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-adexchangebuyer1d3-f3b6a85901d89309/out/lib.rs.html#6449' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.default' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_adexchangebuyer1d3/struct.DirectDeal.html' title='google_adexchangebuyer1d3::DirectDeal'>DirectDeal</a></code></h4>
+<div class='docblock'><p>Returns the &quot;default value&quot; for a type. <a href="https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_adexchangebuyer1d3/struct.DirectDeal.html' title='google_adexchangebuyer1d3::DirectDeal'>DirectDeal</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-3034' class='srclink' href='../src/google_adexchangebuyer1d3/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-adexchangebuyer1d3-f3b6a85901d89309/out/lib.rs.html#6449' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_adexchangebuyer1d3/struct.DirectDeal.html' title='google_adexchangebuyer1d3::DirectDeal'>DirectDeal</a></code></h4>
+<div class='docblock'><p>Returns a copy of the value. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone">Read more</a></p>
+</div><h4 id='method.clone_from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></h4>
+<div class='docblock'><p>Performs copy-assignment from <code>source</code>. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_adexchangebuyer1d3/struct.DirectDeal.html' title='google_adexchangebuyer1d3::DirectDeal'>DirectDeal</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-3052' class='srclink' href='../src/google_adexchangebuyer1d3/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-adexchangebuyer1d3-f3b6a85901d89309/out/lib.rs.html#6449' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
+<div class='docblock'><p>Formats the value using the given formatter.</p>
+</div></div></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
@@ -127,6 +141,8 @@ The list links the activity name, along with information about where it is used 
                     <dd>Move down in search results</dd>
                     <dt>&#9166;</dt>
                     <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
                 </dl>
             </div>
 
@@ -147,7 +163,7 @@ The list links the activity name, along with information about where it is used 
 
                 <p>
                     Search functions by type signature (e.g.
-                    <code>vec -> usize</code>)
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
                 </p>
             </div>
         </div>

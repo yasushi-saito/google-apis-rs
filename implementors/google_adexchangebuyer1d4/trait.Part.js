@@ -1,5 +1,5 @@
 (function() {var implementors = {};
-implementors['google_adexchangebuyer1d4'] = [];
+implementors["google_adexchangebuyer1d4"] = [];
 
             if (window.register_implementors) {
                 window.register_implementors(implementors);

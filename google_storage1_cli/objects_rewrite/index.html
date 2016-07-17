@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Rewrite - storage v0.3.3+20151229</title>
+  <title>Rewrite - storage v0.3.5+20160330</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -38,7 +38,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> storage v0.3.3+20151229</a>
+        <a href=".." class="icon icon-home"> storage v0.3.5+20160330</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -383,7 +383,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">storage v0.3.3+20151229</a>
+        <a href="..">storage v0.3.5+20160330</a>
       </nav>
 
       
@@ -624,6 +624,12 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
+<p><strong>-p destination-predefined-acl=string</strong></p>
+<ul>
+<li>Apply a predefined set of access controls to the destination object.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p if-source-metageneration-match=string</strong></p>
 <ul>
 <li>Makes the operation conditional on whether the source object&#39;s current metageneration matches the given value.</li>
@@ -636,21 +642,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p rewrite-token=string</strong></p>
-<ul>
-<li>Include this field (from the previous rewrite response) on each rewrite request after the first one, until the rewrite response &#39;done&#39; flag is true. Calls that provide a rewriteToken can omit all other request fields, but if included those fields must match the values provided in the first rewrite request.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p if-metageneration-match=string</strong></p>
 <ul>
 <li>Makes the operation conditional on whether the destination object&#39;s current metageneration matches the given value.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p if-metageneration-not-match=string</strong></p>
-<ul>
-<li>Makes the operation conditional on whether the destination object&#39;s current metageneration does not match the given value.</li>
 </ul>
 </li>
 <li>
@@ -660,9 +654,39 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p destination-predefined-acl=string</strong></p>
+<p><strong>-p if-metageneration-not-match=string</strong></p>
 <ul>
-<li>Apply a predefined set of access controls to the destination object.</li>
+<li>Makes the operation conditional on whether the destination object&#39;s current metageneration does not match the given value.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p projection=string</strong></p>
+<ul>
+<li>Set of properties to return. Defaults to noAcl, unless the object resource specifies the acl property, when it defaults to full.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p source-generation=string</strong></p>
+<ul>
+<li>If present, selects a specific revision of the source object (as opposed to the latest version, the default).</li>
+</ul>
+</li>
+<li>
+<p><strong>-p rewrite-token=string</strong></p>
+<ul>
+<li>Include this field (from the previous rewrite response) on each rewrite request after the first one, until the rewrite response &#39;done&#39; flag is true. Calls that provide a rewriteToken can omit all other request fields, but if included those fields must match the values provided in the first rewrite request.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p if-generation-match=string</strong></p>
+<ul>
+<li>Makes the operation conditional on whether the destination object&#39;s current generation matches the given value.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p max-bytes-rewritten-per-call=string</strong></p>
+<ul>
+<li>The maximum number of bytes that will be rewritten per rewrite request. Most callers shouldn&#39;t need to specify this parameter - it is primarily in place to support testing. If specified the value must be an integral multiple of 1 MiB (1048576). Also, this only applies to requests where the source and destination span locations and/or storage classes. Finally, this value must not change across rewrite calls else you&#39;ll get an error that the rewriteToken is invalid.</li>
 </ul>
 </li>
 <li>
@@ -675,30 +699,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <p><strong>-p if-source-generation-not-match=string</strong></p>
 <ul>
 <li>Makes the operation conditional on whether the source object&#39;s generation does not match the given value.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p max-bytes-rewritten-per-call=string</strong></p>
-<ul>
-<li>The maximum number of bytes that will be rewritten per rewrite request. Most callers shouldn&#39;t need to specify this parameter - it is primarily in place to support testing. If specified the value must be an integral multiple of 1 MiB (1048576). Also, this only applies to requests where the source and destination span locations and/or storage classes. Finally, this value must not change across rewrite calls else you&#39;ll get an error that the rewriteToken is invalid.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p source-generation=string</strong></p>
-<ul>
-<li>If present, selects a specific revision of the source object (as opposed to the latest version, the default).</li>
-</ul>
-</li>
-<li>
-<p><strong>-p if-generation-match=string</strong></p>
-<ul>
-<li>Makes the operation conditional on whether the destination object&#39;s current generation matches the given value.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p projection=string</strong></p>
-<ul>
-<li>Set of properties to return. Defaults to noAcl, unless the object resource specifies the acl property, when it defaults to full.</li>
 </ul>
 </li>
 </ul>

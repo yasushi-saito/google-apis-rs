@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
+    
 
     
     
@@ -43,10 +44,10 @@
 
     <section id='main' class="content struct">
 <h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_admin1_directory</a>::<wbr><a class='struct' href=''>UserMethods</a></span><span class='out-of-band'><span id='render-detail'>
-            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
-                [<span class='inner'>&#x2212;</span>]
-            </a>
-        </span><a id='src-11962' class='srclink' href='../src/google_admin1_directory///Users/byron/dev/rs/google-apis-rs/target/debug/build/google-admin1_directory-e6f96de456ac1295/out/lib.rs.html#22218-22220' title='goto source code'>[src]</a></span></h1>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-12894' class='srclink' href='../src/google_admin1_directory/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-admin1_directory-723b3b299b543cca/out/lib.rs.html#30169-30171' title='goto source code'>[src]</a></span></h1>
 <pre class='rust struct'>pub struct UserMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>user</em> resources.
@@ -54,6 +55,7 @@ It is not used directly, but through the <code>Directory</code> hub.</p>
 
 <h1 id='example' class='section-header'><a href='#example'>Example</a></h1>
 <p>Instantiate a resource builder</p>
+
 <pre class='rust rust-example-rendered'>
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>hyper</span>;
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>yup_oauth2</span> <span class='kw'>as</span> <span class='ident'>oauth2</span>;
@@ -72,7 +74,8 @@ It is not used directly, but through the <code>Directory</code> hub.</p>
 <span class='comment'>// like `aliases_delete(...)`, `aliases_insert(...)`, `aliases_list(...)`, `aliases_watch(...)`, `delete(...)`, `get(...)`, `insert(...)`, `list(...)`, `make_admin(...)`, `patch(...)`, `photos_delete(...)`, `photos_get(...)`, `photos_patch(...)`, `photos_update(...)`, `undelete(...)`, `update(...)` and `watch(...)`</span>
 <span class='comment'>// to build up your call.</span>
 <span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>users</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_admin1_directory/struct.UserMethods.html' title='google_admin1_directory::UserMethods'>UserMethods</a>&lt;'a, C, A&gt;</code></h3><div class='impl-items'><h4 id='method.undelete' class='method'><code>fn <a href='#method.undelete' class='fnname'>undelete</a>(&amp;self, request: <a class='struct' href='../google_admin1_directory/struct.UserUndelete.html' title='google_admin1_directory::UserUndelete'>UserUndelete</a>, user_key: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_admin1_directory/struct.UserUndeleteCall.html' title='google_admin1_directory::UserUndeleteCall'>UserUndeleteCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_admin1_directory/struct.UserMethods.html' title='google_admin1_directory::UserMethods'>UserMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-12903' class='srclink' href='../src/google_admin1_directory/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-admin1_directory-723b3b299b543cca/out/lib.rs.html#30173-30465' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.undelete' class='method'><code>fn <a href='#method.undelete' class='fnname'>undelete</a>(&amp;self, request: <a class='struct' href='../google_admin1_directory/struct.UserUndelete.html' title='google_admin1_directory::UserUndelete'>UserUndelete</a>, user_key: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_admin1_directory/struct.UserUndeleteCall.html' title='google_admin1_directory::UserUndeleteCall'>UserUndeleteCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Undelete a deleted user</p>
@@ -229,7 +232,8 @@ It is not used directly, but through the <code>Directory</code> hub.</p>
 <ul>
 <li><code>userKey</code> - Email or immutable Id of the user</li>
 </ul>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_admin1_directory/trait.MethodsBuilder.html' title='google_admin1_directory::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_admin1_directory/struct.UserMethods.html' title='google_admin1_directory::UserMethods'>UserMethods</a>&lt;'a, C, A&gt;</code></h3><div class='impl-items'></div></section>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_admin1_directory/trait.MethodsBuilder.html' title='google_admin1_directory::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_admin1_directory/struct.UserMethods.html' title='google_admin1_directory::UserMethods'>UserMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-12899' class='srclink' href='../src/google_admin1_directory/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-admin1_directory-723b3b299b543cca/out/lib.rs.html#30172' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
@@ -252,6 +256,8 @@ It is not used directly, but through the <code>Directory</code> hub.</p>
                     <dd>Move down in search results</dd>
                     <dt>&#9166;</dt>
                     <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
                 </dl>
             </div>
 
@@ -272,7 +278,7 @@ It is not used directly, but through the <code>Directory</code> hub.</p>
 
                 <p>
                     Search functions by type signature (e.g.
-                    <code>vec -> usize</code>)
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
                 </p>
             </div>
         </div>

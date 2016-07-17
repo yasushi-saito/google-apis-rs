@@ -1,5 +1,5 @@
 (function() {var implementors = {};
-implementors['google_cloudbilling1'] = [];
+implementors["google_cloudbilling1"] = [];
 
             if (window.register_implementors) {
                 window.register_implementors(implementors);

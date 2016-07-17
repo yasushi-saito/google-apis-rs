@@ -4,13 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="rustdoc">
-    <meta name="description" content="Source to the Rust file `/Users/byron/.multirust/toolchains/stable/cargo/registry/src/github.com-88ac128001ac3a9a/yup-oauth2-0.5.4/src/lib.rs`.">
+    <meta name="description" content="Source to the Rust file `/Users/byron/dev/rs/yup-oauth2/src/lib.rs`.">
     <meta name="keywords" content="rust, rustlang, rust-lang">
 
     <title>lib.rs.html -- source</title>
 
     <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../../main.css">
+    
 
     
     
@@ -112,14 +113,20 @@
 <span id="69">69</span>
 <span id="70">70</span>
 <span id="71">71</span>
+<span id="72">72</span>
+<span id="73">73</span>
+<span id="74">74</span>
 </pre><pre class='rust '>
 <span class='doccomment'>//! This library can be used to acquire oauth2.0 authentication for services.</span>
-<span class='doccomment'>//! At the time of writing, only one way of doing so is implemented, the [device flow](https://developers.google.com/youtube/v3/guides/authentication#devices), along with a flow </span>
+<span class='doccomment'>//! At the time of writing, only one way of doing so is implemented, the</span>
+<span class='doccomment'>//! [device flow](https://developers.google.com/youtube/v3/guides/authentication#devices), along</span>
+<span class='doccomment'>//! with a flow</span>
 <span class='doccomment'>//! for [refreshing tokens](https://developers.google.com/youtube/v3/guides/authentication#devices)</span>
-<span class='doccomment'>//! </span>
+<span class='doccomment'>//!</span>
 <span class='doccomment'>//! For your application to use this library, you will have to obtain an application</span>
-<span class='doccomment'>//! id and secret by [following this guide](https://developers.google.com/youtube/registering_an_application).</span>
-<span class='doccomment'>//! </span>
+<span class='doccomment'>//! id and secret by</span>
+<span class='doccomment'>//! [following this guide](https://developers.google.com/youtube/registering_an_application).</span>
+<span class='doccomment'>//!</span>
 <span class='doccomment'>//! # Device Flow Usage</span>
 <span class='doccomment'>//! As the `DeviceFlow` involves polling, the `DeviceFlowHelper` should be used</span>
 <span class='doccomment'>//! as means to adhere to the protocol, and remain resilient to all kinds of errors</span>
@@ -134,7 +141,7 @@
 <span class='doccomment'>//! extern crate yup_oauth2 as oauth2;</span>
 <span class='doccomment'>//! extern crate serde;</span>
 <span class='doccomment'>//! extern crate serde_json;</span>
-<span class='doccomment'>//! </span>
+<span class='doccomment'>//!</span>
 <span class='doccomment'>//! use oauth2::{Authenticator, DefaultAuthenticatorDelegate, PollInformation, ConsoleApplicationSecret, MemoryStorage, GetToken};</span>
 <span class='doccomment'>//! use serde_json as json;</span>
 <span class='doccomment'>//! use std::default::Default;</span>
@@ -149,7 +156,7 @@
 <span class='doccomment'>//! match res {</span>
 <span class='doccomment'>//!     Ok(t) =&gt; {</span>
 <span class='doccomment'>//!     // now you can use t.access_token to authenticate API calls within your</span>
-<span class='doccomment'>//!     // given scopes. It will not be valid forever, which is when you have to </span>
+<span class='doccomment'>//!     // given scopes. It will not be valid forever, which is when you have to</span>
 <span class='doccomment'>//!     // refresh it using the `RefreshFlow`</span>
 <span class='doccomment'>//!     },</span>
 <span class='doccomment'>//!     Err(err) =&gt; println!(&quot;Failed to acquire token: {}&quot;, err),</span>
@@ -182,8 +189,9 @@
 <span class='attribute'>#[<span class='ident'>cfg</span>(<span class='ident'>feature</span> <span class='op'>=</span> <span class='string'>&quot;nightly&quot;</span>)]</span>
 <span class='macro'>include</span><span class='macro'>!</span>(<span class='string'>&quot;lib.rs.in&quot;</span>);
 
-<span class='attribute'>#[<span class='ident'>cfg</span>(<span class='ident'>feature</span> <span class='op'>=</span> <span class='string'>&quot;with_syntex&quot;</span>)]</span>
-<span class='macro'>include</span><span class='macro'>!</span>(<span class='macro'>concat</span><span class='macro'>!</span>(<span class='macro'>env</span><span class='macro'>!</span>(<span class='string'>&quot;OUT_DIR&quot;</span>), <span class='string'>&quot;/lib.rs&quot;</span>));</pre>
+<span class='attribute'>#[<span class='ident'>cfg</span>(<span class='ident'>feature</span> <span class='op'>=</span> <span class='string'>&quot;with-serde-codegen&quot;</span>)]</span>
+<span class='macro'>include</span><span class='macro'>!</span>(<span class='macro'>concat</span><span class='macro'>!</span>(<span class='macro'>env</span><span class='macro'>!</span>(<span class='string'>&quot;OUT_DIR&quot;</span>), <span class='string'>&quot;/lib.rs&quot;</span>));
+</pre>
 </section>
     <section id='search' class="content hidden"></section>
 
@@ -207,6 +215,8 @@
                     <dd>Move down in search results</dd>
                     <dt>&#9166;</dt>
                     <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
                 </dl>
             </div>
 
@@ -227,7 +237,7 @@
 
                 <p>
                     Search functions by type signature (e.g.
-                    <code>vec -> usize</code>)
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
                 </p>
             </div>
         </div>

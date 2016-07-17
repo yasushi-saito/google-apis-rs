@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
+    
 
     
     
@@ -43,10 +44,10 @@
 
     <section id='main' class="content struct">
 <h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_adexchangebuyer1d4</a>::<wbr><a class='struct' href=''>CreativeListCall</a></span><span class='out-of-band'><span id='render-detail'>
-            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
-                [<span class='inner'>&#x2212;</span>]
-            </a>
-        </span><a id='src-13426' class='srclink' href='../src/google_adexchangebuyer1d4///Users/byron/dev/rs/google-apis-rs/target/debug/build/google-adexchangebuyer1d4-27c9b9bbcc56c76f/out/lib.rs.html#25449-25460' title='goto source code'>[src]</a></span></h1>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-16921' class='srclink' href='../src/google_adexchangebuyer1d4/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-adexchangebuyer1d4-0325b415a7b1e556/out/lib.rs.html#38887-38898' title='goto source code'>[src]</a></span></h1>
 <pre class='rust struct'>pub struct CreativeListCall&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>Retrieves a list of the authenticated user&#39;s active creatives. A creative will be available 30-40 minutes after submission.</p>
@@ -56,20 +57,22 @@ It is not used directly, but through a <code>CreativeMethods</code> instance.</p
 
 <h1 id='example' class='section-header'><a href='#example'>Example</a></h1>
 <p>Instantiate a resource method builder</p>
+
 <pre class='rust rust-example-rendered'>
  
 <span class='comment'>// You can configure optional parameters by calling the respective setters at will, and</span>
 <span class='comment'>// execute the final call using `doit()`.</span>
 <span class='comment'>// Values shown here are possibly random and not representative !</span>
 <span class='kw'>let</span> <span class='ident'>result</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>creatives</span>().<span class='ident'>list</span>()
-             .<span class='ident'>page_token</span>(<span class='string'>&quot;sea&quot;</span>)
-             .<span class='ident'>open_auction_status_filter</span>(<span class='string'>&quot;Lorem&quot;</span>)
-             .<span class='ident'>max_results</span>(<span class='number'>26</span>)
-             .<span class='ident'>deals_status_filter</span>(<span class='string'>&quot;erat&quot;</span>)
-             .<span class='ident'>add_buyer_creative_id</span>(<span class='string'>&quot;sadipscing&quot;</span>)
-             .<span class='ident'>add_account_id</span>(<span class='op'>-</span><span class='number'>48</span>)
+             .<span class='ident'>page_token</span>(<span class='string'>&quot;no&quot;</span>)
+             .<span class='ident'>open_auction_status_filter</span>(<span class='string'>&quot;labore&quot;</span>)
+             .<span class='ident'>max_results</span>(<span class='number'>62</span>)
+             .<span class='ident'>deals_status_filter</span>(<span class='string'>&quot;dolore&quot;</span>)
+             .<span class='ident'>add_buyer_creative_id</span>(<span class='string'>&quot;invidunt&quot;</span>)
+             .<span class='ident'>add_account_id</span>(<span class='op'>-</span><span class='number'>82</span>)
              .<span class='ident'>doit</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_adexchangebuyer1d4/struct.CreativeListCall.html' title='google_adexchangebuyer1d4::CreativeListCall'>CreativeListCall</a>&lt;'a, C, A&gt; <span class='where'>where C: <a class='trait' href='https://doc.rust-lang.org/nightly/core/borrow/trait.BorrowMut.html' title='core::borrow::BorrowMut'>BorrowMut</a>&lt;<a class='struct' href='../hyper/client/struct.Client.html' title='hyper::client::Client'>Client</a>&gt;, A: <a class='trait' href='../yup_oauth2/helper/trait.GetToken.html' title='yup_oauth2::helper::GetToken'>GetToken</a></span></code></h3><div class='impl-items'><h4 id='method.doit' class='method'><code>fn <a href='#method.doit' class='fnname'>doit</a>(self) -&gt; <a class='type' href='../google_adexchangebuyer1d4/type.Result.html' title='google_adexchangebuyer1d4::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>(<a class='struct' href='../hyper/client/response/struct.Response.html' title='hyper::client::response::Response'>Response</a>, <a class='struct' href='../google_adexchangebuyer1d4/struct.CreativesList.html' title='google_adexchangebuyer1d4::CreativesList'>CreativesList</a>)</a>&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_adexchangebuyer1d4/struct.CreativeListCall.html' title='google_adexchangebuyer1d4::CreativeListCall'>CreativeListCall</a>&lt;'a, C, A&gt; <span class='where'>where C: <a class='trait' href='https://doc.rust-lang.org/nightly/core/borrow/trait.BorrowMut.html' title='core::borrow::BorrowMut'>BorrowMut</a>&lt;<a class='struct' href='../hyper/client/struct.Client.html' title='hyper::client::Client'>Client</a>&gt;, A: <a class='trait' href='../yup_oauth2/helper/trait.GetToken.html' title='yup_oauth2::helper::GetToken'>GetToken</a></span></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-16939' class='srclink' href='../src/google_adexchangebuyer1d4/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-adexchangebuyer1d4-0325b415a7b1e556/out/lib.rs.html#38900-39131' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.doit' class='method'><code>fn <a href='#method.doit' class='fnname'>doit</a>(self) -&gt; <a class='type' href='../google_adexchangebuyer1d4/type.Result.html' title='google_adexchangebuyer1d4::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>(</a><a class='struct' href='../hyper/client/response/struct.Response.html' title='hyper::client::response::Response'>Response</a>, <a class='struct' href='../google_adexchangebuyer1d4/struct.CreativesList.html' title='google_adexchangebuyer1d4::CreativesList'>CreativesList</a><a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>)</a>&gt;</code></h4>
 <div class='docblock'><p>Perform the operation you have build so far.</p>
 </div><h4 id='method.page_token' class='method'><code>fn <a href='#method.page_token' class='fnname'>page_token</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_adexchangebuyer1d4/struct.CreativeListCall.html' title='google_adexchangebuyer1d4::CreativeListCall'>CreativeListCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>A continuation token, used to page through ad clients. To retrieve the next page, set this parameter to the value of &quot;nextPageToken&quot; from the previous response. Optional.</p>
@@ -134,7 +137,8 @@ tokens for more than one scope.</p>
 <p>Usually there is more than one suitable scope to authorize an operation, some of which may
 encompass more rights than others. For example, for listing resources, a <em>read-only</em> scope will be
 sufficient, a read-write scope will do as well.</p>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_adexchangebuyer1d4/trait.CallBuilder.html' title='google_adexchangebuyer1d4::CallBuilder'>CallBuilder</a> for <a class='struct' href='../google_adexchangebuyer1d4/struct.CreativeListCall.html' title='google_adexchangebuyer1d4::CreativeListCall'>CreativeListCall</a>&lt;'a, C, A&gt;</code></h3><div class='impl-items'></div></section>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_adexchangebuyer1d4/trait.CallBuilder.html' title='google_adexchangebuyer1d4::CallBuilder'>CallBuilder</a> for <a class='struct' href='../google_adexchangebuyer1d4/struct.CreativeListCall.html' title='google_adexchangebuyer1d4::CreativeListCall'>CreativeListCall</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-16935' class='srclink' href='../src/google_adexchangebuyer1d4/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-adexchangebuyer1d4-0325b415a7b1e556/out/lib.rs.html#38899' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
@@ -157,6 +161,8 @@ sufficient, a read-write scope will do as well.</p>
                     <dd>Move down in search results</dd>
                     <dt>&#9166;</dt>
                     <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
                 </dl>
             </div>
 
@@ -177,7 +183,7 @@ sufficient, a read-write scope will do as well.</p>
 
                 <p>
                     Search functions by type signature (e.g.
-                    <code>vec -> usize</code>)
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
                 </p>
             </div>
         </div>

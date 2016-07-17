@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
+    
 
     
     
@@ -43,10 +44,10 @@
 
     <section id='main' class="content struct">
 <h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_youtubereporting1</a>::<wbr><a class='struct' href=''>JobReportListCall</a></span><span class='out-of-band'><span id='render-detail'>
-            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
-                [<span class='inner'>&#x2212;</span>]
-            </a>
-        </span><a id='src-2517' class='srclink' href='../src/google_youtubereporting1///Users/byron/dev/rs/google-apis-rs/target/debug/build/google-youtubereporting1-ee74e532ed0def8b/out/lib.rs.html#4821-4831' title='goto source code'>[src]</a></span></h1>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-2616' class='srclink' href='../src/google_youtubereporting1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-youtubereporting1-b3443e9f455486e3/out/lib.rs.html#5800-5812' title='goto source code'>[src]</a></span></h1>
 <pre class='rust struct'>pub struct JobReportListCall&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>Lists reports created by a specific job. Returns NOT_FOUND if the job does not exist.</p>
@@ -56,18 +57,22 @@ It is not used directly, but through a <code>JobMethods</code> instance.</p>
 
 <h1 id='example' class='section-header'><a href='#example'>Example</a></h1>
 <p>Instantiate a resource method builder</p>
+
 <pre class='rust rust-example-rendered'>
  
 <span class='comment'>// You can configure optional parameters by calling the respective setters at will, and</span>
 <span class='comment'>// execute the final call using `doit()`.</span>
 <span class='comment'>// Values shown here are possibly random and not representative !</span>
 <span class='kw'>let</span> <span class='ident'>result</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>jobs</span>().<span class='ident'>reports_list</span>(<span class='string'>&quot;jobId&quot;</span>)
-             .<span class='ident'>page_token</span>(<span class='string'>&quot;justo&quot;</span>)
-             .<span class='ident'>page_size</span>(<span class='op'>-</span><span class='number'>34</span>)
-             .<span class='ident'>on_behalf_of_content_owner</span>(<span class='string'>&quot;et&quot;</span>)
-             .<span class='ident'>created_after</span>(<span class='string'>&quot;diam&quot;</span>)
+             .<span class='ident'>start_time_before</span>(<span class='string'>&quot;Lorem&quot;</span>)
+             .<span class='ident'>start_time_at_or_after</span>(<span class='string'>&quot;et&quot;</span>)
+             .<span class='ident'>page_token</span>(<span class='string'>&quot;duo&quot;</span>)
+             .<span class='ident'>page_size</span>(<span class='op'>-</span><span class='number'>32</span>)
+             .<span class='ident'>on_behalf_of_content_owner</span>(<span class='string'>&quot;sea&quot;</span>)
+             .<span class='ident'>created_after</span>(<span class='string'>&quot;Lorem&quot;</span>)
              .<span class='ident'>doit</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_youtubereporting1/struct.JobReportListCall.html' title='google_youtubereporting1::JobReportListCall'>JobReportListCall</a>&lt;'a, C, A&gt; <span class='where'>where C: <a class='trait' href='https://doc.rust-lang.org/nightly/core/borrow/trait.BorrowMut.html' title='core::borrow::BorrowMut'>BorrowMut</a>&lt;<a class='struct' href='../hyper/client/struct.Client.html' title='hyper::client::Client'>Client</a>&gt;, A: <a class='trait' href='../yup_oauth2/helper/trait.GetToken.html' title='yup_oauth2::helper::GetToken'>GetToken</a></span></code></h3><div class='impl-items'><h4 id='method.doit' class='method'><code>fn <a href='#method.doit' class='fnname'>doit</a>(self) -&gt; <a class='type' href='../google_youtubereporting1/type.Result.html' title='google_youtubereporting1::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>(<a class='struct' href='../hyper/client/response/struct.Response.html' title='hyper::client::response::Response'>Response</a>, <a class='struct' href='../google_youtubereporting1/struct.ListReportsResponse.html' title='google_youtubereporting1::ListReportsResponse'>ListReportsResponse</a>)</a>&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_youtubereporting1/struct.JobReportListCall.html' title='google_youtubereporting1::JobReportListCall'>JobReportListCall</a>&lt;'a, C, A&gt; <span class='where'>where C: <a class='trait' href='https://doc.rust-lang.org/nightly/core/borrow/trait.BorrowMut.html' title='core::borrow::BorrowMut'>BorrowMut</a>&lt;<a class='struct' href='../hyper/client/struct.Client.html' title='hyper::client::Client'>Client</a>&gt;, A: <a class='trait' href='../yup_oauth2/helper/trait.GetToken.html' title='yup_oauth2::helper::GetToken'>GetToken</a></span></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-2635' class='srclink' href='../src/google_youtubereporting1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-youtubereporting1-b3443e9f455486e3/out/lib.rs.html#5814-6076' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.doit' class='method'><code>fn <a href='#method.doit' class='fnname'>doit</a>(self) -&gt; <a class='type' href='../google_youtubereporting1/type.Result.html' title='google_youtubereporting1::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>(</a><a class='struct' href='../hyper/client/response/struct.Response.html' title='hyper::client::response::Response'>Response</a>, <a class='struct' href='../google_youtubereporting1/struct.ListReportsResponse.html' title='google_youtubereporting1::ListReportsResponse'>ListReportsResponse</a><a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>)</a>&gt;</code></h4>
 <div class='docblock'><p>Perform the operation you have build so far.</p>
 </div><h4 id='method.job_id' class='method'><code>fn <a href='#method.job_id' class='fnname'>job_id</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_youtubereporting1/struct.JobReportListCall.html' title='google_youtubereporting1::JobReportListCall'>JobReportListCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>The ID of the job.</p>
@@ -76,6 +81,14 @@ It is not used directly, but through a <code>JobMethods</code> instance.</p>
 
 <p>Even though the property as already been set when instantiating this call,
 we provide this method for API completeness.</p>
+</div><h4 id='method.start_time_before' class='method'><code>fn <a href='#method.start_time_before' class='fnname'>start_time_before</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_youtubereporting1/struct.JobReportListCall.html' title='google_youtubereporting1::JobReportListCall'>JobReportListCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>If set, only reports whose start time is smaller than the specified date/time are returned.</p>
+
+<p>Sets the <em>start time before</em> query property to the given value.</p>
+</div><h4 id='method.start_time_at_or_after' class='method'><code>fn <a href='#method.start_time_at_or_after' class='fnname'>start_time_at_or_after</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_youtubereporting1/struct.JobReportListCall.html' title='google_youtubereporting1::JobReportListCall'>JobReportListCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>If set, only reports whose start time is greater than or equal the specified date/time are returned.</p>
+
+<p>Sets the <em>start time at or after</em> query property to the given value.</p>
 </div><h4 id='method.page_token' class='method'><code>fn <a href='#method.page_token' class='fnname'>page_token</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_youtubereporting1/struct.JobReportListCall.html' title='google_youtubereporting1::JobReportListCall'>JobReportListCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>A token identifying a page of results the server should return. Typically, this is the value of ListReportsResponse.next_page_token returned in response to the previous call to the <code>ListReports</code> method.</p>
 
@@ -135,7 +148,8 @@ tokens for more than one scope.</p>
 <p>Usually there is more than one suitable scope to authorize an operation, some of which may
 encompass more rights than others. For example, for listing resources, a <em>read-only</em> scope will be
 sufficient, a read-write scope will do as well.</p>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_youtubereporting1/trait.CallBuilder.html' title='google_youtubereporting1::CallBuilder'>CallBuilder</a> for <a class='struct' href='../google_youtubereporting1/struct.JobReportListCall.html' title='google_youtubereporting1::JobReportListCall'>JobReportListCall</a>&lt;'a, C, A&gt;</code></h3><div class='impl-items'></div></section>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_youtubereporting1/trait.CallBuilder.html' title='google_youtubereporting1::CallBuilder'>CallBuilder</a> for <a class='struct' href='../google_youtubereporting1/struct.JobReportListCall.html' title='google_youtubereporting1::JobReportListCall'>JobReportListCall</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-2631' class='srclink' href='../src/google_youtubereporting1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-youtubereporting1-b3443e9f455486e3/out/lib.rs.html#5813' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
@@ -158,6 +172,8 @@ sufficient, a read-write scope will do as well.</p>
                     <dd>Move down in search results</dd>
                     <dt>&#9166;</dt>
                     <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
                 </dl>
             </div>
 
@@ -178,7 +194,7 @@ sufficient, a read-write scope will do as well.</p>
 
                 <p>
                     Search functions by type signature (e.g.
-                    <code>vec -> usize</code>)
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
                 </p>
             </div>
         </div>

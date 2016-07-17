@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
+    
 
     
     
@@ -43,10 +44,10 @@
 
     <section id='main' class="content struct">
 <h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_dfareporting2d2</a>::<wbr><a class='struct' href=''>PricingSchedule</a></span><span class='out-of-band'><span id='render-detail'>
-            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
-                [<span class='inner'>&#x2212;</span>]
-            </a>
-        </span><a id='src-30281' class='srclink' href='../src/google_dfareporting2d2///Users/byron/dev/rs/google-apis-rs/target/debug/build/google-dfareporting2d2-3a062695f96680ce/out/lib.rs.html#54841-54860' title='goto source code'>[src]</a></span></h1>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-32834' class='srclink' href='../src/google_dfareporting2d2/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-dfareporting2d2-ec50c3eeb71f2c0c/out/lib.rs.html#75463-75482' title='goto source code'>[src]</a></span></h1>
 <pre class='rust struct'>pub struct PricingSchedule {
     pub start_date: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
     pub end_date: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
@@ -62,30 +63,36 @@
 <p>This type is not used in any activity, and only used as <em>part</em> of another schema.</p>
 </div><h2 class='fields'>Fields</h2>
 <table><tr class='stab '>
-                                  <td id='structfield.start_date'><code>start_date</code></td><td><div class='docblock'><p>Placement start date. This date must be later than, or the same day as, the campaign start date. The hours, minutes, and seconds of the start date should not be set, as doing so will result in an error. This field is required on insertion.</p>
+                             <td id='structfield.start_date'><code>start_date</code></td><td><div class='docblock'><p>Placement start date. This date must be later than, or the same day as, the campaign start date. The hours, minutes, and seconds of the start date should not be set, as doing so will result in an error. This field is required on insertion.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.end_date'><code>end_date</code></td><td><div class='docblock'><p>Placement end date. This date must be later than, or the same day as, the placement start date, but not later than the campaign end date. If, for example, you set 6/25/2015 as both the start and end dates, the effective placement date is just that day only, 6/25/2015. The hours, minutes, and seconds of the end date should not be set, as doing so will result in an error. This field is required on insertion.</p>
+                             <td id='structfield.end_date'><code>end_date</code></td><td><div class='docblock'><p>Placement end date. This date must be later than, or the same day as, the placement start date, but not later than the campaign end date. If, for example, you set 6/25/2015 as both the start and end dates, the effective placement date is just that day only, 6/25/2015. The hours, minutes, and seconds of the end date should not be set, as doing so will result in an error. This field is required on insertion.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.flighted'><code>flighted</code></td><td><div class='docblock'><p>Whether this placement is flighted. If true, pricing periods will be computed automatically.</p>
+                             <td id='structfield.flighted'><code>flighted</code></td><td><div class='docblock'><p>Whether this placement is flighted. If true, pricing periods will be computed automatically.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.disregard_overdelivery'><code>disregard_overdelivery</code></td><td><div class='docblock'><p>Whether cap costs are ignored by ad serving.</p>
+                             <td id='structfield.disregard_overdelivery'><code>disregard_overdelivery</code></td><td><div class='docblock'><p>Whether cap costs are ignored by ad serving.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.cap_cost_option'><code>cap_cost_option</code></td><td><div class='docblock'><p>Placement cap cost option.</p>
+                             <td id='structfield.cap_cost_option'><code>cap_cost_option</code></td><td><div class='docblock'><p>Placement cap cost option.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.pricing_periods'><code>pricing_periods</code></td><td><div class='docblock'><p>Pricing periods for this placement.</p>
+                             <td id='structfield.pricing_periods'><code>pricing_periods</code></td><td><div class='docblock'><p>Pricing periods for this placement.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.pricing_type'><code>pricing_type</code></td><td><div class='docblock'><p>Placement pricing type. This field is required on insertion.</p>
+                             <td id='structfield.pricing_type'><code>pricing_type</code></td><td><div class='docblock'><p>Placement pricing type. This field is required on insertion.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.testing_start_date'><code>testing_start_date</code></td><td><div class='docblock'><p>Testing start date of this placement. The hours, minutes, and seconds of the start date should not be set, as doing so will result in an error.</p>
+                             <td id='structfield.testing_start_date'><code>testing_start_date</code></td><td><div class='docblock'><p>Testing start date of this placement. The hours, minutes, and seconds of the start date should not be set, as doing so will result in an error.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.floodlight_activity_id'><code>floodlight_activity_id</code></td><td><div class='docblock'><p>Floodlight activity ID associated with this placement. This field should be set when placement pricing type is set to PRICING_TYPE_CPA.</p>
-</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl <a class='trait' href='../serde/de/trait.Deserialize.html' title='serde::de::Deserialize'>Deserialize</a> for <a class='struct' href='../google_dfareporting2d2/struct.PricingSchedule.html' title='google_dfareporting2d2::PricingSchedule'>PricingSchedule</a></code></h3><div class='impl-items'><h4 id='method.deserialize' class='method'><code>fn <a href='../serde/de/trait.Deserialize.html#method.deserialize' class='fnname'>deserialize</a>&lt;__D&gt;(deserializer: &amp;mut __D) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../google_dfareporting2d2/struct.PricingSchedule.html' title='google_dfareporting2d2::PricingSchedule'>PricingSchedule</a>, __D::Error&gt; <span class='where'>where __D: <a class='trait' href='../serde/de/trait.Deserializer.html' title='serde::de::Deserializer'>Deserializer</a></span></code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='../serde/ser/trait.Serialize.html' title='serde::ser::Serialize'>Serialize</a> for <a class='struct' href='../google_dfareporting2d2/struct.PricingSchedule.html' title='google_dfareporting2d2::PricingSchedule'>PricingSchedule</a></code></h3><div class='impl-items'><h4 id='method.serialize' class='method'><code>fn <a href='../serde/ser/trait.Serialize.html#method.serialize' class='fnname'>serialize</a>&lt;__S&gt;(&amp;self, serializer: &amp;mut __S) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, __S::Error&gt; <span class='where'>where __S: <a class='trait' href='../serde/ser/trait.Serializer.html' title='serde::ser::Serializer'>Serializer</a></span></code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='../google_dfareporting2d2/trait.Part.html' title='google_dfareporting2d2::Part'>Part</a> for <a class='struct' href='../google_dfareporting2d2/struct.PricingSchedule.html' title='google_dfareporting2d2::PricingSchedule'>PricingSchedule</a></code></h3><div class='impl-items'></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_dfareporting2d2/struct.PricingSchedule.html' title='google_dfareporting2d2::PricingSchedule'>PricingSchedule</a></code></h3><div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#method.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_dfareporting2d2/struct.PricingSchedule.html' title='google_dfareporting2d2::PricingSchedule'>PricingSchedule</a></code></h3><div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_dfareporting2d2/struct.PricingSchedule.html' title='google_dfareporting2d2::PricingSchedule'>PricingSchedule</a></code></h4>
-<h4 id='method.clone_from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_dfareporting2d2/struct.PricingSchedule.html' title='google_dfareporting2d2::PricingSchedule'>PricingSchedule</a></code></h3><div class='impl-items'><h4 id='method.default' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#method.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_dfareporting2d2/struct.PricingSchedule.html' title='google_dfareporting2d2::PricingSchedule'>PricingSchedule</a></code></h4>
-</div></section>
+                             <td id='structfield.floodlight_activity_id'><code>floodlight_activity_id</code></td><td><div class='docblock'><p>Floodlight activity ID associated with this placement. This field should be set when placement pricing type is set to PRICING_TYPE_CPA.</p>
+</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='../google_dfareporting2d2/trait.Part.html' title='google_dfareporting2d2::Part'>Part</a> for <a class='struct' href='../google_dfareporting2d2/struct.PricingSchedule.html' title='google_dfareporting2d2::PricingSchedule'>PricingSchedule</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-33109' class='srclink' href='../src/google_dfareporting2d2/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-dfareporting2d2-ec50c3eeb71f2c0c/out/lib.rs.html#76073' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_dfareporting2d2/struct.PricingSchedule.html' title='google_dfareporting2d2::PricingSchedule'>PricingSchedule</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-32844' class='srclink' href='../src/google_dfareporting2d2/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-dfareporting2d2-ec50c3eeb71f2c0c/out/lib.rs.html#75462' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.default' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_dfareporting2d2/struct.PricingSchedule.html' title='google_dfareporting2d2::PricingSchedule'>PricingSchedule</a></code></h4>
+<div class='docblock'><p>Returns the &quot;default value&quot; for a type. <a href="https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_dfareporting2d2/struct.PricingSchedule.html' title='google_dfareporting2d2::PricingSchedule'>PricingSchedule</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-32846' class='srclink' href='../src/google_dfareporting2d2/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-dfareporting2d2-ec50c3eeb71f2c0c/out/lib.rs.html#75462' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_dfareporting2d2/struct.PricingSchedule.html' title='google_dfareporting2d2::PricingSchedule'>PricingSchedule</a></code></h4>
+<div class='docblock'><p>Returns a copy of the value. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone">Read more</a></p>
+</div><h4 id='method.clone_from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></h4>
+<div class='docblock'><p>Performs copy-assignment from <code>source</code>. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_dfareporting2d2/struct.PricingSchedule.html' title='google_dfareporting2d2::PricingSchedule'>PricingSchedule</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-32858' class='srclink' href='../src/google_dfareporting2d2/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-dfareporting2d2-ec50c3eeb71f2c0c/out/lib.rs.html#75462' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
+<div class='docblock'><p>Formats the value using the given formatter.</p>
+</div></div></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
@@ -108,6 +115,8 @@
                     <dd>Move down in search results</dd>
                     <dt>&#9166;</dt>
                     <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
                 </dl>
             </div>
 
@@ -128,7 +137,7 @@
 
                 <p>
                     Search functions by type signature (e.g.
-                    <code>vec -> usize</code>)
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
                 </p>
             </div>
         </div>

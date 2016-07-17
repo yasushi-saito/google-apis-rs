@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
+    
 
     
     
@@ -43,16 +44,19 @@
 
     <section id='main' class="content mod">
 <h1 class='fqn'><span class='in-band'>Crate <a class='mod' href=''>yup_oauth2</a></span><span class='out-of-band'><span id='render-detail'>
-            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
-                [<span class='inner'>&#x2212;</span>]
-            </a>
-        </span><a id='src-0' class='srclink' href='../src/yup_oauth2/lib.rs.html#1-71' title='goto source code'>[src]</a></span></h1>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-0' class='srclink' href='../src/yup_oauth2/lib.rs.html#1-74' title='goto source code'>[src]</a></span></h1>
 <div class='docblock'><p>This library can be used to acquire oauth2.0 authentication for services.
-At the time of writing, only one way of doing so is implemented, the <a href="https://developers.google.com/youtube/v3/guides/authentication#devices">device flow</a>, along with a flow 
+At the time of writing, only one way of doing so is implemented, the
+<a href="https://developers.google.com/youtube/v3/guides/authentication#devices">device flow</a>, along
+with a flow
 for <a href="https://developers.google.com/youtube/v3/guides/authentication#devices">refreshing tokens</a></p>
 
 <p>For your application to use this library, you will have to obtain an application
-id and secret by <a href="https://developers.google.com/youtube/registering_an_application">following this guide</a>.</p>
+id and secret by
+<a href="https://developers.google.com/youtube/registering_an_application">following this guide</a>.</p>
 
 <h1 id='device-flow-usage' class='section-header'><a href='#device-flow-usage'>Device Flow Usage</a></h1>
 <p>As the <code>DeviceFlow</code> involves polling, the <code>DeviceFlowHelper</code> should be used
@@ -60,6 +64,7 @@ as means to adhere to the protocol, and remain resilient to all kinds of errors
 that can occour on the way.</p>
 
 <p>The returned <code>Token</code> should be stored permanently to authorize future API requests.</p>
+
 <pre class='rust rust-example-rendered'>
 <span class='attribute'>#<span class='op'>!</span>[<span class='ident'>cfg_attr</span>(<span class='ident'>feature</span> <span class='op'>=</span> <span class='string'>&quot;nightly&quot;</span>, <span class='ident'>feature</span>(<span class='ident'>custom_derive</span>, <span class='ident'>custom_attribute</span>, <span class='ident'>plugin</span>))]</span>
 <span class='attribute'>#<span class='op'>!</span>[<span class='ident'>cfg_attr</span>(<span class='ident'>feature</span> <span class='op'>=</span> <span class='string'>&quot;nightly&quot;</span>, <span class='ident'>plugin</span>(<span class='ident'>serde_macros</span>))]</span>
@@ -67,7 +72,7 @@ that can occour on the way.</p>
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>yup_oauth2</span> <span class='kw'>as</span> <span class='ident'>oauth2</span>;
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>serde</span>;
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>serde_json</span>;
- 
+
 <span class='kw'>use</span> <span class='ident'>oauth2</span>::{<span class='ident'>Authenticator</span>, <span class='ident'>DefaultAuthenticatorDelegate</span>, <span class='ident'>PollInformation</span>, <span class='ident'>ConsoleApplicationSecret</span>, <span class='ident'>MemoryStorage</span>, <span class='ident'>GetToken</span>};
 <span class='kw'>use</span> <span class='ident'>serde_json</span> <span class='kw'>as</span> <span class='ident'>json</span>;
 <span class='kw'>use</span> <span class='ident'>std</span>::<span class='ident'>default</span>::<span class='ident'>Default</span>;
@@ -80,7 +85,7 @@ that can occour on the way.</p>
 <span class='kw'>match</span> <span class='ident'>res</span> {
     <span class='prelude-val'>Ok</span>(<span class='ident'>t</span>) <span class='op'>=&gt;</span> {
     <span class='comment'>// now you can use t.access_token to authenticate API calls within your</span>
-    <span class='comment'>// given scopes. It will not be valid forever, which is when you have to </span>
+    <span class='comment'>// given scopes. It will not be valid forever, which is when you have to</span>
     <span class='comment'>// refresh it using the `RefreshFlow`</span>
     },
     <span class='prelude-val'>Err</span>(<span class='ident'>err</span>) <span class='op'>=&gt;</span> <span class='macro'>println</span><span class='macro'>!</span>(<span class='string'>&quot;Failed to acquire token: {}&quot;</span>, <span class='ident'>err</span>),
@@ -89,6 +94,7 @@ that can occour on the way.</p>
 <h1 id='refresh-flow-usage' class='section-header'><a href='#refresh-flow-usage'>Refresh Flow Usage</a></h1>
 <p>As the <code>Token</code> you retrieved previously will only be valid for a certain time, you will have
 to use the information from the <code>Token.refresh_token</code> field to get a new <code>access_token</code>.</p>
+
 <pre class='rust rust-example-rendered'>
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>hyper</span>;
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>yup_oauth2</span> <span class='kw'>as</span> <span class='ident'>oauth2</span>;
@@ -103,191 +109,174 @@ to use the information from the <code>Token.refresh_token</code> field to get a 
                };</pre>
 </div><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
 <table>
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ApplicationSecret.html'
-                               title='yup_oauth2::ApplicationSecret'>ApplicationSecret</a></td>
-                        <td class='docblock short'>
-                             <p>Represents either &#39;installed&#39; or &#39;web&#39; applications in a json secrets file.
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ApplicationSecret.html'
+                                  title='yup_oauth2::ApplicationSecret'>ApplicationSecret</a></td>
+                           <td class='docblock short'>
+                                <p>Represents either &#39;installed&#39; or &#39;web&#39; applications in a json secrets file.
 See <code>ConsoleApplicationSecret</code> for more information</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.Authenticator.html'
-                               title='yup_oauth2::Authenticator'>Authenticator</a></td>
-                        <td class='docblock short'>
-                             <p>A generalized authenticator which will keep tokens valid and store them.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ConsoleApplicationSecret.html'
-                               title='yup_oauth2::ConsoleApplicationSecret'>ConsoleApplicationSecret</a></td>
-                        <td class='docblock short'>
-                             <p>A type to facilitate reading and writing the json secret file
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Authenticator.html'
+                                  title='yup_oauth2::Authenticator'>Authenticator</a></td>
+                           <td class='docblock short'>
+                                <p>A generalized authenticator which will keep tokens valid and store them.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ConsoleApplicationSecret.html'
+                                  title='yup_oauth2::ConsoleApplicationSecret'>ConsoleApplicationSecret</a></td>
+                           <td class='docblock short'>
+                                <p>A type to facilitate reading and writing the json secret file
 as returned by the <a href="https://code.google.com/apis/console">google developer console</a></p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.DefaultAuthenticatorDelegate.html'
-                               title='yup_oauth2::DefaultAuthenticatorDelegate'>DefaultAuthenticatorDelegate</a></td>
-                        <td class='docblock short'>
-                             <p>Uses all default implementations by AuthenticatorDelegate, and makes the trait&#39;s
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DefaultAuthenticatorDelegate.html'
+                                  title='yup_oauth2::DefaultAuthenticatorDelegate'>DefaultAuthenticatorDelegate</a></td>
+                           <td class='docblock short'>
+                                <p>Uses all default implementations by AuthenticatorDelegate, and makes the trait&#39;s
 implementation usable in the first place.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.DeviceFlow.html'
-                               title='yup_oauth2::DeviceFlow'>DeviceFlow</a></td>
-                        <td class='docblock short'>
-                             <p>Implements the <a href="https://developers.google.com/youtube/v3/guides/authentication#devices">Oauth2 Device Flow</a>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeviceFlow.html'
+                                  title='yup_oauth2::DeviceFlow'>DeviceFlow</a></td>
+                           <td class='docblock short'>
+                                <p>Implements the <a href="https://developers.google.com/youtube/v3/guides/authentication#devices">Oauth2 Device Flow</a>
 It operates in two steps:
 * obtain a code to show to the user
 * (repeatedly) poll for the user to authenticate your application</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.MemoryStorage.html'
-                               title='yup_oauth2::MemoryStorage'>MemoryStorage</a></td>
-                        <td class='docblock short'>
-                             <p>A storage that remembers values for one session only.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.NullStorage.html'
-                               title='yup_oauth2::NullStorage'>NullStorage</a></td>
-                        <td class='docblock short'>
-                             <p>A storage that remembers nothing.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.PollInformation.html'
-                               title='yup_oauth2::PollInformation'>PollInformation</a></td>
-                        <td class='docblock short'>
-                             <p>Contains state of pending authentication requests</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.RefreshFlow.html'
-                               title='yup_oauth2::RefreshFlow'>RefreshFlow</a></td>
-                        <td class='docblock short'>
-                             <p>Implements the <a href="https://developers.google.com/youtube/v3/guides/authentication#devices">Outh2 Refresh Token Flow</a>.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.Scheme.html'
-                               title='yup_oauth2::Scheme'>Scheme</a></td>
-                        <td class='docblock short'>
-                             <p>A scheme for use in <code>hyper::header::Authorization</code></p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.Token.html'
-                               title='yup_oauth2::Token'>Token</a></td>
-                        <td class='docblock short'>
-                             <p>Represents a token as returned by OAuth2 servers.</p>
-
-                        </td>
-                    </tr>
-                </table><h2 id='enums' class='section-header'><a href="#enums">Enums</a></h2>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DiskTokenStorage.html'
+                                  title='yup_oauth2::DiskTokenStorage'>DiskTokenStorage</a></td>
+                           <td class='docblock short'>
+                                <p>Serializes tokens to a JSON file on disk.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.InstalledFlow.html'
+                                  title='yup_oauth2::InstalledFlow'>InstalledFlow</a></td>
+                           <td class='docblock short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.MemoryStorage.html'
+                                  title='yup_oauth2::MemoryStorage'>MemoryStorage</a></td>
+                           <td class='docblock short'>
+                                <p>A storage that remembers values for one session only.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.NullStorage.html'
+                                  title='yup_oauth2::NullStorage'>NullStorage</a></td>
+                           <td class='docblock short'>
+                                <p>A storage that remembers nothing.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PollInformation.html'
+                                  title='yup_oauth2::PollInformation'>PollInformation</a></td>
+                           <td class='docblock short'>
+                                <p>Contains state of pending authentication requests</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RefreshFlow.html'
+                                  title='yup_oauth2::RefreshFlow'>RefreshFlow</a></td>
+                           <td class='docblock short'>
+                                <p>Implements the <a href="https://developers.google.com/youtube/v3/guides/authentication#devices">Outh2 Refresh Token Flow</a>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Scheme.html'
+                                  title='yup_oauth2::Scheme'>Scheme</a></td>
+                           <td class='docblock short'>
+                                <p>A scheme for use in <code>hyper::header::Authorization</code></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Token.html'
+                                  title='yup_oauth2::Token'>Token</a></td>
+                           <td class='docblock short'>
+                                <p>Represents a token as returned by OAuth2 servers.</p>
+                           </td>
+                       </tr></table><h2 id='enums' class='section-header'><a href="#enums">Enums</a></h2>
 <table>
-                    <tr class=' module-item'>
-                        <td><a class='enum' href='enum.FlowType.html'
-                               title='yup_oauth2::FlowType'>FlowType</a></td>
-                        <td class='docblock short'>
-                             <p>All known authentication types, for suitable constants</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='enum' href='enum.PollError.html'
-                               title='yup_oauth2::PollError'>PollError</a></td>
-                        <td class='docblock short'>
-                             <p>Encapsulates all possible results of a <code>poll_token(...)</code> operation</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='enum' href='enum.RefreshResult.html'
-                               title='yup_oauth2::RefreshResult'>RefreshResult</a></td>
-                        <td class='docblock short'>
-                             <p>All possible outcomes of the refresh flow</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='enum' href='enum.Retry.html'
-                               title='yup_oauth2::Retry'>Retry</a></td>
-                        <td class='docblock short'>
-                             <p>A utility type to indicate how operations DeviceFlowHelper operations should be retried</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='enum' href='enum.TokenType.html'
-                               title='yup_oauth2::TokenType'>TokenType</a></td>
-                        <td class='docblock short'>
-                             <p>Represents all implemented token types</p>
-
-                        </td>
-                    </tr>
-                </table><h2 id='traits' class='section-header'><a href="#traits">Traits</a></h2>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.FlowType.html'
+                                  title='yup_oauth2::FlowType'>FlowType</a></td>
+                           <td class='docblock short'>
+                                <p>All known authentication types, for suitable constants</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.InstalledFlowReturnMethod.html'
+                                  title='yup_oauth2::InstalledFlowReturnMethod'>InstalledFlowReturnMethod</a></td>
+                           <td class='docblock short'>
+                                <p>cf. <a href="https://developers.google.com/identity/protocols/OAuth2InstalledApp#choosingredirecturi">https://developers.google.com/identity/protocols/OAuth2InstalledApp#choosingredirecturi</a></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.PollError.html'
+                                  title='yup_oauth2::PollError'>PollError</a></td>
+                           <td class='docblock short'>
+                                <p>Encapsulates all possible results of a <code>poll_token(...)</code> operation</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.RefreshResult.html'
+                                  title='yup_oauth2::RefreshResult'>RefreshResult</a></td>
+                           <td class='docblock short'>
+                                <p>All possible outcomes of the refresh flow</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.Retry.html'
+                                  title='yup_oauth2::Retry'>Retry</a></td>
+                           <td class='docblock short'>
+                                <p>A utility type to indicate how operations DeviceFlowHelper operations should be retried</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.TokenType.html'
+                                  title='yup_oauth2::TokenType'>TokenType</a></td>
+                           <td class='docblock short'>
+                                <p>Represents all implemented token types</p>
+                           </td>
+                       </tr></table><h2 id='traits' class='section-header'><a href="#traits">Traits</a></h2>
 <table>
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.AuthenticatorDelegate.html'
-                               title='yup_oauth2::AuthenticatorDelegate'>AuthenticatorDelegate</a></td>
-                        <td class='docblock short'>
-                             <p>A partially implemented trait to interact with the <code>Authenticator</code></p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.GetToken.html'
-                               title='yup_oauth2::GetToken'>GetToken</a></td>
-                        <td class='docblock short'>
-                             <p>A provider for authorization tokens, yielding tokens valid for a given scope.
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.AuthenticatorDelegate.html'
+                                  title='yup_oauth2::AuthenticatorDelegate'>AuthenticatorDelegate</a></td>
+                           <td class='docblock short'>
+                                <p>A partially implemented trait to interact with the <code>Authenticator</code></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.GetToken.html'
+                                  title='yup_oauth2::GetToken'>GetToken</a></td>
+                           <td class='docblock short'>
+                                <p>A provider for authorization tokens, yielding tokens valid for a given scope.
 The <code>api_key()</code> method is an alternative in case there are no scopes or
 if no user is involved.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.TokenStorage.html'
-                               title='yup_oauth2::TokenStorage'>TokenStorage</a></td>
-                        <td class='docblock short'>
-                             <p>Implements a specialized storage to set and retrieve <code>Token</code> instances.
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.TokenStorage.html'
+                                  title='yup_oauth2::TokenStorage'>TokenStorage</a></td>
+                           <td class='docblock short'>
+                                <p>Implements a specialized storage to set and retrieve <code>Token</code> instances.
 The <code>scope_hash</code> represents the signature of the scopes for which the given token
 should be stored or retrieved.
 For completeness, the underlying, sorted scopes are provided as well. They might be
 useful for presentation to the user.</p>
-
-                        </td>
-                    </tr>
-                </table></section>
+                           </td>
+                       </tr></table></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
@@ -310,6 +299,8 @@ useful for presentation to the user.</p>
                     <dd>Move down in search results</dd>
                     <dt>&#9166;</dt>
                     <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
                 </dl>
             </div>
 
@@ -330,7 +321,7 @@ useful for presentation to the user.</p>
 
                 <p>
                     Search functions by type signature (e.g.
-                    <code>vec -> usize</code>)
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
                 </p>
             </div>
         </div>

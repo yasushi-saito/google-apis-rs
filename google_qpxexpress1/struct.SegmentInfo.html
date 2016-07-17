@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
+    
 
     
     
@@ -43,10 +44,10 @@
 
     <section id='main' class="content struct">
 <h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_qpxexpress1</a>::<wbr><a class='struct' href=''>SegmentInfo</a></span><span class='out-of-band'><span id='render-detail'>
-            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
-                [<span class='inner'>&#x2212;</span>]
-            </a>
-        </span><a id='src-1971' class='srclink' href='../src/google_qpxexpress1///Users/byron/dev/rs/google-apis-rs/target/debug/build/google-qpxexpress1-382fccf30fdcf3a9/out/lib.rs.html#3358-3381' title='goto source code'>[src]</a></span></h1>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-2093' class='srclink' href='../src/google_qpxexpress1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-qpxexpress1-1a001fd420892c7f/out/lib.rs.html#4262-4285' title='goto source code'>[src]</a></span></h1>
 <pre class='rust struct'>pub struct SegmentInfo {
     pub kind: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
     pub booking_code_count: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>&gt;,
@@ -64,34 +65,40 @@
 <p>This type is not used in any activity, and only used as <em>part</em> of another schema.</p>
 </div><h2 class='fields'>Fields</h2>
 <table><tr class='stab '>
-                                  <td id='structfield.kind'><code>kind</code></td><td><div class='docblock'><p>Identifies this as a segment object. A segment is one or more consecutive legs on the same flight. For example a hypothetical flight ZZ001, from DFW to OGG, could have one segment with two legs: DFW to HNL (leg 1), HNL to OGG (leg 2). Value: the fixed string qpxexpress#segmentInfo.</p>
+                             <td id='structfield.kind'><code>kind</code></td><td><div class='docblock'><p>Identifies this as a segment object. A segment is one or more consecutive legs on the same flight. For example a hypothetical flight ZZ001, from DFW to OGG, could have one segment with two legs: DFW to HNL (leg 1), HNL to OGG (leg 2). Value: the fixed string qpxexpress#segmentInfo.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.booking_code_count'><code>booking_code_count</code></td><td><div class='docblock'><p>The number of seats available in this booking code on this segment.</p>
+                             <td id='structfield.booking_code_count'><code>booking_code_count</code></td><td><div class='docblock'><p>The number of seats available in this booking code on this segment.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.flight'><code>flight</code></td><td><div class='docblock'><p>The flight this is a segment of.</p>
+                             <td id='structfield.flight'><code>flight</code></td><td><div class='docblock'><p>The flight this is a segment of.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.leg'><code>leg</code></td><td><div class='docblock'><p>The legs composing this segment.</p>
+                             <td id='structfield.leg'><code>leg</code></td><td><div class='docblock'><p>The legs composing this segment.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.subject_to_government_approval'><code>subject_to_government_approval</code></td><td><div class='docblock'><p>Whether the operation of this segment remains subject to government approval.</p>
+                             <td id='structfield.subject_to_government_approval'><code>subject_to_government_approval</code></td><td><div class='docblock'><p>Whether the operation of this segment remains subject to government approval.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.connection_duration'><code>connection_duration</code></td><td><div class='docblock'><p>In minutes, the duration of the connection following this segment.</p>
+                             <td id='structfield.connection_duration'><code>connection_duration</code></td><td><div class='docblock'><p>In minutes, the duration of the connection following this segment.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.booking_code'><code>booking_code</code></td><td><div class='docblock'><p>The booking code or class for this segment.</p>
+                             <td id='structfield.booking_code'><code>booking_code</code></td><td><div class='docblock'><p>The booking code or class for this segment.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.duration'><code>duration</code></td><td><div class='docblock'><p>The duration of the flight segment in minutes.</p>
+                             <td id='structfield.duration'><code>duration</code></td><td><div class='docblock'><p>The duration of the flight segment in minutes.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.id'><code>id</code></td><td><div class='docblock'><p>An id uniquely identifying the segment in the solution.</p>
+                             <td id='structfield.id'><code>id</code></td><td><div class='docblock'><p>An id uniquely identifying the segment in the solution.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.cabin'><code>cabin</code></td><td><div class='docblock'><p>The cabin booked for this segment.</p>
+                             <td id='structfield.cabin'><code>cabin</code></td><td><div class='docblock'><p>The cabin booked for this segment.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.married_segment_group'><code>married_segment_group</code></td><td><div class='docblock'><p>The solution-based index of a segment in a married segment group. Married segments can only be booked together. For example, an airline might report a certain booking code as sold out from Boston to Pittsburgh, but as available as part of two married segments Boston to Chicago connecting through Pittsburgh. For example content of this field, consider the round-trip flight ZZ1 PHX-PHL ZZ2 PHL-CLT ZZ3 CLT-PHX. This has three segments, with the two outbound ones (ZZ1 ZZ2) married. In this case, the two outbound segments belong to married segment group 0, and the return segment belongs to married segment group 1.</p>
-</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl <a class='trait' href='../serde/de/trait.Deserialize.html' title='serde::de::Deserialize'>Deserialize</a> for <a class='struct' href='../google_qpxexpress1/struct.SegmentInfo.html' title='google_qpxexpress1::SegmentInfo'>SegmentInfo</a></code></h3><div class='impl-items'><h4 id='method.deserialize' class='method'><code>fn <a href='../serde/de/trait.Deserialize.html#method.deserialize' class='fnname'>deserialize</a>&lt;__D&gt;(deserializer: &amp;mut __D) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../google_qpxexpress1/struct.SegmentInfo.html' title='google_qpxexpress1::SegmentInfo'>SegmentInfo</a>, __D::Error&gt; <span class='where'>where __D: <a class='trait' href='../serde/de/trait.Deserializer.html' title='serde::de::Deserializer'>Deserializer</a></span></code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='../serde/ser/trait.Serialize.html' title='serde::ser::Serialize'>Serialize</a> for <a class='struct' href='../google_qpxexpress1/struct.SegmentInfo.html' title='google_qpxexpress1::SegmentInfo'>SegmentInfo</a></code></h3><div class='impl-items'><h4 id='method.serialize' class='method'><code>fn <a href='../serde/ser/trait.Serialize.html#method.serialize' class='fnname'>serialize</a>&lt;__S&gt;(&amp;self, serializer: &amp;mut __S) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, __S::Error&gt; <span class='where'>where __S: <a class='trait' href='../serde/ser/trait.Serializer.html' title='serde::ser::Serializer'>Serializer</a></span></code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='../google_qpxexpress1/trait.Part.html' title='google_qpxexpress1::Part'>Part</a> for <a class='struct' href='../google_qpxexpress1/struct.SegmentInfo.html' title='google_qpxexpress1::SegmentInfo'>SegmentInfo</a></code></h3><div class='impl-items'></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_qpxexpress1/struct.SegmentInfo.html' title='google_qpxexpress1::SegmentInfo'>SegmentInfo</a></code></h3><div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#method.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_qpxexpress1/struct.SegmentInfo.html' title='google_qpxexpress1::SegmentInfo'>SegmentInfo</a></code></h3><div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_qpxexpress1/struct.SegmentInfo.html' title='google_qpxexpress1::SegmentInfo'>SegmentInfo</a></code></h4>
-<h4 id='method.clone_from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_qpxexpress1/struct.SegmentInfo.html' title='google_qpxexpress1::SegmentInfo'>SegmentInfo</a></code></h3><div class='impl-items'><h4 id='method.default' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#method.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_qpxexpress1/struct.SegmentInfo.html' title='google_qpxexpress1::SegmentInfo'>SegmentInfo</a></code></h4>
-</div></section>
+                             <td id='structfield.married_segment_group'><code>married_segment_group</code></td><td><div class='docblock'><p>The solution-based index of a segment in a married segment group. Married segments can only be booked together. For example, an airline might report a certain booking code as sold out from Boston to Pittsburgh, but as available as part of two married segments Boston to Chicago connecting through Pittsburgh. For example content of this field, consider the round-trip flight ZZ1 PHX-PHL ZZ2 PHL-CLT ZZ3 CLT-PHX. This has three segments, with the two outbound ones (ZZ1 ZZ2) married. In this case, the two outbound segments belong to married segment group 0, and the return segment belongs to married segment group 1.</p>
+</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='../google_qpxexpress1/trait.Part.html' title='google_qpxexpress1::Part'>Part</a> for <a class='struct' href='../google_qpxexpress1/struct.SegmentInfo.html' title='google_qpxexpress1::SegmentInfo'>SegmentInfo</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-2410' class='srclink' href='../src/google_qpxexpress1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-qpxexpress1-1a001fd420892c7f/out/lib.rs.html#4951' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_qpxexpress1/struct.SegmentInfo.html' title='google_qpxexpress1::SegmentInfo'>SegmentInfo</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-2105' class='srclink' href='../src/google_qpxexpress1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-qpxexpress1-1a001fd420892c7f/out/lib.rs.html#4261' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.default' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_qpxexpress1/struct.SegmentInfo.html' title='google_qpxexpress1::SegmentInfo'>SegmentInfo</a></code></h4>
+<div class='docblock'><p>Returns the &quot;default value&quot; for a type. <a href="https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_qpxexpress1/struct.SegmentInfo.html' title='google_qpxexpress1::SegmentInfo'>SegmentInfo</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-2107' class='srclink' href='../src/google_qpxexpress1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-qpxexpress1-1a001fd420892c7f/out/lib.rs.html#4261' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_qpxexpress1/struct.SegmentInfo.html' title='google_qpxexpress1::SegmentInfo'>SegmentInfo</a></code></h4>
+<div class='docblock'><p>Returns a copy of the value. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone">Read more</a></p>
+</div><h4 id='method.clone_from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></h4>
+<div class='docblock'><p>Performs copy-assignment from <code>source</code>. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_qpxexpress1/struct.SegmentInfo.html' title='google_qpxexpress1::SegmentInfo'>SegmentInfo</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-2121' class='srclink' href='../src/google_qpxexpress1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-qpxexpress1-1a001fd420892c7f/out/lib.rs.html#4261' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
+<div class='docblock'><p>Formats the value using the given formatter.</p>
+</div></div></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
@@ -114,6 +121,8 @@
                     <dd>Move down in search results</dd>
                     <dt>&#9166;</dt>
                     <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
                 </dl>
             </div>
 
@@ -134,7 +143,7 @@
 
                 <p>
                     Search functions by type signature (e.g.
-                    <code>vec -> usize</code>)
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
                 </p>
             </div>
         </div>

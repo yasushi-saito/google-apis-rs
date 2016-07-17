@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
+    
 
     
     
@@ -43,10 +44,10 @@
 
     <section id='main' class="content struct">
 <h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_pubsub1_beta2</a>::<wbr><a class='struct' href=''>ProjectMethods</a></span><span class='out-of-band'><span id='render-detail'>
-            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
-                [<span class='inner'>&#x2212;</span>]
-            </a>
-        </span><a id='src-3404' class='srclink' href='../src/google_pubsub1_beta2///Users/byron/dev/rs/google-apis-rs/target/debug/build/google-pubsub1_beta2-2395f1d0f991c577/out/lib.rs.html#5731-5733' title='goto source code'>[src]</a></span></h1>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-3611' class='srclink' href='../src/google_pubsub1_beta2/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-pubsub1_beta2-722509de1d834750/out/lib.rs.html#7312-7314' title='goto source code'>[src]</a></span></h1>
 <pre class='rust struct'>pub struct ProjectMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>project</em> resources.
@@ -54,6 +55,7 @@ It is not used directly, but through the <code>Pubsub</code> hub.</p>
 
 <h1 id='example' class='section-header'><a href='#example'>Example</a></h1>
 <p>Instantiate a resource builder</p>
+
 <pre class='rust rust-example-rendered'>
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>hyper</span>;
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>yup_oauth2</span> <span class='kw'>as</span> <span class='ident'>oauth2</span>;
@@ -72,7 +74,8 @@ It is not used directly, but through the <code>Pubsub</code> hub.</p>
 <span class='comment'>// like `subscriptions_acknowledge(...)`, `subscriptions_create(...)`, `subscriptions_delete(...)`, `subscriptions_get(...)`, `subscriptions_get_iam_policy(...)`, `subscriptions_list(...)`, `subscriptions_modify_ack_deadline(...)`, `subscriptions_modify_push_config(...)`, `subscriptions_pull(...)`, `subscriptions_set_iam_policy(...)`, `subscriptions_test_iam_permissions(...)`, `topics_create(...)`, `topics_delete(...)`, `topics_get(...)`, `topics_get_iam_policy(...)`, `topics_list(...)`, `topics_publish(...)`, `topics_set_iam_policy(...)`, `topics_subscriptions_list(...)` and `topics_test_iam_permissions(...)`</span>
 <span class='comment'>// to build up your call.</span>
 <span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>projects</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_pubsub1_beta2/struct.ProjectMethods.html' title='google_pubsub1_beta2::ProjectMethods'>ProjectMethods</a>&lt;'a, C, A&gt;</code></h3><div class='impl-items'><h4 id='method.topics_list' class='method'><code>fn <a href='#method.topics_list' class='fnname'>topics_list</a>(&amp;self, project: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_pubsub1_beta2/struct.ProjectTopicListCall.html' title='google_pubsub1_beta2::ProjectTopicListCall'>ProjectTopicListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_pubsub1_beta2/struct.ProjectMethods.html' title='google_pubsub1_beta2::ProjectMethods'>ProjectMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-3620' class='srclink' href='../src/google_pubsub1_beta2/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-pubsub1_beta2-722509de1d834750/out/lib.rs.html#7316-7671' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.topics_list' class='method'><code>fn <a href='#method.topics_list' class='fnname'>topics_list</a>(&amp;self, project: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_pubsub1_beta2/struct.ProjectTopicListCall.html' title='google_pubsub1_beta2::ProjectTopicListCall'>ProjectTopicListCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Lists matching topics.</p>
@@ -109,7 +112,7 @@ It is not used directly, but through the <code>Pubsub</code> hub.</p>
 <h1 id='arguments-3' class='section-header'><a href='#arguments-3'>Arguments</a></h1>
 <ul>
 <li><code>request</code> - No description provided.</li>
-<li><code>resource</code> - REQUIRED: The resource for which policy detail is being requested. <code>resource</code> is usually specified as a path, such as, <code>projects/{project}/zones/{zone}/disks/{disk}</code>. The format for the path specified in this value is resource specific and is specified in the documentation for the respective TestIamPermissions rpc.</li>
+<li><code>resource</code> - REQUIRED: The resource for which the policy detail is being requested. <code>resource</code> is usually specified as a path, such as <code>projects/*project*/zones/*zone*/disks/*disk*</code>. The format for the path specified in this value is resource specific and is specified in the <code>testIamPermissions</code> documentation.</li>
 </ul>
 </div><h4 id='method.subscriptions_modify_push_config' class='method'><code>fn <a href='#method.subscriptions_modify_push_config' class='fnname'>subscriptions_modify_push_config</a>(&amp;self, request: <a class='struct' href='../google_pubsub1_beta2/struct.ModifyPushConfigRequest.html' title='google_pubsub1_beta2::ModifyPushConfigRequest'>ModifyPushConfigRequest</a>, subscription: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_pubsub1_beta2/struct.ProjectSubscriptionModifyPushConfigCall.html' title='google_pubsub1_beta2::ProjectSubscriptionModifyPushConfigCall'>ProjectSubscriptionModifyPushConfigCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
@@ -143,11 +146,11 @@ It is not used directly, but through the <code>Pubsub</code> hub.</p>
 </div><h4 id='method.topics_get_iam_policy' class='method'><code>fn <a href='#method.topics_get_iam_policy' class='fnname'>topics_get_iam_policy</a>(&amp;self, resource: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_pubsub1_beta2/struct.ProjectTopicGetIamPolicyCall.html' title='google_pubsub1_beta2::ProjectTopicGetIamPolicyCall'>ProjectTopicGetIamPolicyCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>Gets the access control policy for a <code>resource</code>. Is empty if the policy or the resource does not exist.</p>
+<p>Gets the access control policy for a <code>resource</code>. Returns an empty policy if the resource exists and does not have a policy set.</p>
 
 <h1 id='arguments-7' class='section-header'><a href='#arguments-7'>Arguments</a></h1>
 <ul>
-<li><code>resource</code> - REQUIRED: The resource for which policy is being requested. <code>resource</code> is usually specified as a path, such as, <code>projects/{project}/zones/{zone}/disks/{disk}</code>. The format for the path specified in this value is resource specific and is specified in the documentation for the respective GetIamPolicy rpc.</li>
+<li><code>resource</code> - REQUIRED: The resource for which the policy is being requested. <code>resource</code> is usually specified as a path, such as <code>projects/*project*/zones/*zone*/disks/*disk*</code>. The format for the path specified in this value is resource specific and is specified in the <code>getIamPolicy</code> documentation.</li>
 </ul>
 </div><h4 id='method.subscriptions_modify_ack_deadline' class='method'><code>fn <a href='#method.subscriptions_modify_ack_deadline' class='fnname'>subscriptions_modify_ack_deadline</a>(&amp;self, request: <a class='struct' href='../google_pubsub1_beta2/struct.ModifyAckDeadlineRequest.html' title='google_pubsub1_beta2::ModifyAckDeadlineRequest'>ModifyAckDeadlineRequest</a>, subscription: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_pubsub1_beta2/struct.ProjectSubscriptionModifyAckDeadlineCall.html' title='google_pubsub1_beta2::ProjectSubscriptionModifyAckDeadlineCall'>ProjectSubscriptionModifyAckDeadlineCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
@@ -176,12 +179,12 @@ It is not used directly, but through the <code>Pubsub</code> hub.</p>
 <h1 id='arguments-10' class='section-header'><a href='#arguments-10'>Arguments</a></h1>
 <ul>
 <li><code>request</code> - No description provided.</li>
-<li><code>resource</code> - REQUIRED: The resource for which policy is being specified. <code>resource</code> is usually specified as a path, such as, <code>projects/{project}/zones/{zone}/disks/{disk}</code>. The format for the path specified in this value is resource specific and is specified in the documentation for the respective SetIamPolicy rpc.</li>
+<li><code>resource</code> - REQUIRED: The resource for which the policy is being specified. <code>resource</code> is usually specified as a path, such as <code>projects/*project*/zones/*zone*/disks/*disk*</code>. The format for the path specified in this value is resource specific and is specified in the <code>setIamPolicy</code> documentation.</li>
 </ul>
 </div><h4 id='method.subscriptions_create' class='method'><code>fn <a href='#method.subscriptions_create' class='fnname'>subscriptions_create</a>(&amp;self, request: <a class='struct' href='../google_pubsub1_beta2/struct.Subscription.html' title='google_pubsub1_beta2::Subscription'>Subscription</a>, name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_pubsub1_beta2/struct.ProjectSubscriptionCreateCall.html' title='google_pubsub1_beta2::ProjectSubscriptionCreateCall'>ProjectSubscriptionCreateCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>Creates a subscription to a given topic for a given subscriber. If the subscription already exists, returns <code>ALREADY_EXISTS</code>. If the corresponding topic doesn&#39;t exist, returns <code>NOT_FOUND</code>. If the name is not provided in the request, the server will assign a random name for this subscription on the same project as the topic.</p>
+<p>Creates a subscription to a given topic. If the subscription already exists, returns <code>ALREADY_EXISTS</code>. If the corresponding topic doesn&#39;t exist, returns <code>NOT_FOUND</code>. If the name is not provided in the request, the server will assign a random name for this subscription on the same project as the topic.</p>
 
 <h1 id='arguments-11' class='section-header'><a href='#arguments-11'>Arguments</a></h1>
 <ul>
@@ -201,11 +204,11 @@ It is not used directly, but through the <code>Pubsub</code> hub.</p>
 </div><h4 id='method.subscriptions_get_iam_policy' class='method'><code>fn <a href='#method.subscriptions_get_iam_policy' class='fnname'>subscriptions_get_iam_policy</a>(&amp;self, resource: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_pubsub1_beta2/struct.ProjectSubscriptionGetIamPolicyCall.html' title='google_pubsub1_beta2::ProjectSubscriptionGetIamPolicyCall'>ProjectSubscriptionGetIamPolicyCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>Gets the access control policy for a <code>resource</code>. Is empty if the policy or the resource does not exist.</p>
+<p>Gets the access control policy for a <code>resource</code>. Returns an empty policy if the resource exists and does not have a policy set.</p>
 
 <h1 id='arguments-13' class='section-header'><a href='#arguments-13'>Arguments</a></h1>
 <ul>
-<li><code>resource</code> - REQUIRED: The resource for which policy is being requested. <code>resource</code> is usually specified as a path, such as, <code>projects/{project}/zones/{zone}/disks/{disk}</code>. The format for the path specified in this value is resource specific and is specified in the documentation for the respective GetIamPolicy rpc.</li>
+<li><code>resource</code> - REQUIRED: The resource for which the policy is being requested. <code>resource</code> is usually specified as a path, such as <code>projects/*project*/zones/*zone*/disks/*disk*</code>. The format for the path specified in this value is resource specific and is specified in the <code>getIamPolicy</code> documentation.</li>
 </ul>
 </div><h4 id='method.subscriptions_test_iam_permissions' class='method'><code>fn <a href='#method.subscriptions_test_iam_permissions' class='fnname'>subscriptions_test_iam_permissions</a>(&amp;self, request: <a class='struct' href='../google_pubsub1_beta2/struct.TestIamPermissionsRequest.html' title='google_pubsub1_beta2::TestIamPermissionsRequest'>TestIamPermissionsRequest</a>, resource: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_pubsub1_beta2/struct.ProjectSubscriptionTestIamPermissionCall.html' title='google_pubsub1_beta2::ProjectSubscriptionTestIamPermissionCall'>ProjectSubscriptionTestIamPermissionCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
@@ -215,7 +218,7 @@ It is not used directly, but through the <code>Pubsub</code> hub.</p>
 <h1 id='arguments-14' class='section-header'><a href='#arguments-14'>Arguments</a></h1>
 <ul>
 <li><code>request</code> - No description provided.</li>
-<li><code>resource</code> - REQUIRED: The resource for which policy detail is being requested. <code>resource</code> is usually specified as a path, such as, <code>projects/{project}/zones/{zone}/disks/{disk}</code>. The format for the path specified in this value is resource specific and is specified in the documentation for the respective TestIamPermissions rpc.</li>
+<li><code>resource</code> - REQUIRED: The resource for which the policy detail is being requested. <code>resource</code> is usually specified as a path, such as <code>projects/*project*/zones/*zone*/disks/*disk*</code>. The format for the path specified in this value is resource specific and is specified in the <code>testIamPermissions</code> documentation.</li>
 </ul>
 </div><h4 id='method.topics_delete' class='method'><code>fn <a href='#method.topics_delete' class='fnname'>topics_delete</a>(&amp;self, topic: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_pubsub1_beta2/struct.ProjectTopicDeleteCall.html' title='google_pubsub1_beta2::ProjectTopicDeleteCall'>ProjectTopicDeleteCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
@@ -261,9 +264,10 @@ It is not used directly, but through the <code>Pubsub</code> hub.</p>
 <h1 id='arguments-19' class='section-header'><a href='#arguments-19'>Arguments</a></h1>
 <ul>
 <li><code>request</code> - No description provided.</li>
-<li><code>resource</code> - REQUIRED: The resource for which policy is being specified. <code>resource</code> is usually specified as a path, such as, <code>projects/{project}/zones/{zone}/disks/{disk}</code>. The format for the path specified in this value is resource specific and is specified in the documentation for the respective SetIamPolicy rpc.</li>
+<li><code>resource</code> - REQUIRED: The resource for which the policy is being specified. <code>resource</code> is usually specified as a path, such as <code>projects/*project*/zones/*zone*/disks/*disk*</code>. The format for the path specified in this value is resource specific and is specified in the <code>setIamPolicy</code> documentation.</li>
 </ul>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_pubsub1_beta2/trait.MethodsBuilder.html' title='google_pubsub1_beta2::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_pubsub1_beta2/struct.ProjectMethods.html' title='google_pubsub1_beta2::ProjectMethods'>ProjectMethods</a>&lt;'a, C, A&gt;</code></h3><div class='impl-items'></div></section>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_pubsub1_beta2/trait.MethodsBuilder.html' title='google_pubsub1_beta2::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_pubsub1_beta2/struct.ProjectMethods.html' title='google_pubsub1_beta2::ProjectMethods'>ProjectMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-3616' class='srclink' href='../src/google_pubsub1_beta2/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-pubsub1_beta2-722509de1d834750/out/lib.rs.html#7315' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
@@ -286,6 +290,8 @@ It is not used directly, but through the <code>Pubsub</code> hub.</p>
                     <dd>Move down in search results</dd>
                     <dt>&#9166;</dt>
                     <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
                 </dl>
             </div>
 
@@ -306,7 +312,7 @@ It is not used directly, but through the <code>Pubsub</code> hub.</p>
 
                 <p>
                     Search functions by type signature (e.g.
-                    <code>vec -> usize</code>)
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
                 </p>
             </div>
         </div>

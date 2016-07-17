@@ -1,5 +1,5 @@
 (function() {var implementors = {};
-implementors['google_dfareporting2d1'] = [];
+implementors["google_dfareporting2d1"] = [];
 
             if (window.register_implementors) {
                 window.register_implementors(implementors);

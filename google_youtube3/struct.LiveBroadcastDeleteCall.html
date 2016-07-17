@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
+    
 
     
     
@@ -43,10 +44,10 @@
 
     <section id='main' class="content struct">
 <h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_youtube3</a>::<wbr><a class='struct' href=''>LiveBroadcastDeleteCall</a></span><span class='out-of-band'><span id='render-detail'>
-            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
-                [<span class='inner'>&#x2212;</span>]
-            </a>
-        </span><a id='src-37627' class='srclink' href='../src/google_youtube3///Users/byron/dev/rs/google-apis-rs/target/debug/build/google-youtube3-4efca17fcf3e49e3/out/lib.rs.html#75876-75884' title='goto source code'>[src]</a></span></h1>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-39912' class='srclink' href='../src/google_youtube3/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-youtube3-db4668f928b0f408/out/lib.rs.html#93990-93998' title='goto source code'>[src]</a></span></h1>
 <pre class='rust struct'>pub struct LiveBroadcastDeleteCall&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>Deletes a broadcast.</p>
@@ -56,6 +57,7 @@ It is not used directly, but through a <code>LiveBroadcastMethods</code> instanc
 
 <h1 id='example' class='section-header'><a href='#example'>Example</a></h1>
 <p>Instantiate a resource method builder</p>
+
 <pre class='rust rust-example-rendered'>
  
 <span class='comment'>// You can configure optional parameters by calling the respective setters at will, and</span>
@@ -65,7 +67,8 @@ It is not used directly, but through a <code>LiveBroadcastMethods</code> instanc
              .<span class='ident'>on_behalf_of_content_owner_channel</span>(<span class='string'>&quot;accusam&quot;</span>)
              .<span class='ident'>on_behalf_of_content_owner</span>(<span class='string'>&quot;magna&quot;</span>)
              .<span class='ident'>doit</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_youtube3/struct.LiveBroadcastDeleteCall.html' title='google_youtube3::LiveBroadcastDeleteCall'>LiveBroadcastDeleteCall</a>&lt;'a, C, A&gt; <span class='where'>where C: <a class='trait' href='https://doc.rust-lang.org/nightly/core/borrow/trait.BorrowMut.html' title='core::borrow::BorrowMut'>BorrowMut</a>&lt;<a class='struct' href='../hyper/client/struct.Client.html' title='hyper::client::Client'>Client</a>&gt;, A: <a class='trait' href='../yup_oauth2/helper/trait.GetToken.html' title='yup_oauth2::helper::GetToken'>GetToken</a></span></code></h3><div class='impl-items'><h4 id='method.doit' class='method'><code>fn <a href='#method.doit' class='fnname'>doit</a>(self) -&gt; <a class='type' href='../google_youtube3/type.Result.html' title='google_youtube3::Result'>Result</a>&lt;<a class='struct' href='../hyper/client/response/struct.Response.html' title='hyper::client::response::Response'>Response</a>&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_youtube3/struct.LiveBroadcastDeleteCall.html' title='google_youtube3::LiveBroadcastDeleteCall'>LiveBroadcastDeleteCall</a>&lt;'a, C, A&gt; <span class='where'>where C: <a class='trait' href='https://doc.rust-lang.org/nightly/core/borrow/trait.BorrowMut.html' title='core::borrow::BorrowMut'>BorrowMut</a>&lt;<a class='struct' href='../hyper/client/struct.Client.html' title='hyper::client::Client'>Client</a>&gt;, A: <a class='trait' href='../yup_oauth2/helper/trait.GetToken.html' title='yup_oauth2::helper::GetToken'>GetToken</a></span></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-39927' class='srclink' href='../src/google_youtube3/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-youtube3-db4668f928b0f408/out/lib.rs.html#94000-94184' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.doit' class='method'><code>fn <a href='#method.doit' class='fnname'>doit</a>(self) -&gt; <a class='type' href='../google_youtube3/type.Result.html' title='google_youtube3::Result'>Result</a>&lt;<a class='struct' href='../hyper/client/response/struct.Response.html' title='hyper::client::response::Response'>Response</a>&gt;</code></h4>
 <div class='docblock'><p>Perform the operation you have build so far.</p>
 </div><h4 id='method.id' class='method'><code>fn <a href='#method.id' class='fnname'>id</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_youtube3/struct.LiveBroadcastDeleteCall.html' title='google_youtube3::LiveBroadcastDeleteCall'>LiveBroadcastDeleteCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>The id parameter specifies the YouTube live broadcast ID for the resource that is being deleted.</p>
@@ -125,7 +128,8 @@ tokens for more than one scope.</p>
 <p>Usually there is more than one suitable scope to authorize an operation, some of which may
 encompass more rights than others. For example, for listing resources, a <em>read-only</em> scope will be
 sufficient, a read-write scope will do as well.</p>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_youtube3/trait.CallBuilder.html' title='google_youtube3::CallBuilder'>CallBuilder</a> for <a class='struct' href='../google_youtube3/struct.LiveBroadcastDeleteCall.html' title='google_youtube3::LiveBroadcastDeleteCall'>LiveBroadcastDeleteCall</a>&lt;'a, C, A&gt;</code></h3><div class='impl-items'></div></section>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_youtube3/trait.CallBuilder.html' title='google_youtube3::CallBuilder'>CallBuilder</a> for <a class='struct' href='../google_youtube3/struct.LiveBroadcastDeleteCall.html' title='google_youtube3::LiveBroadcastDeleteCall'>LiveBroadcastDeleteCall</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-39923' class='srclink' href='../src/google_youtube3/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-youtube3-db4668f928b0f408/out/lib.rs.html#93999' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
@@ -148,6 +152,8 @@ sufficient, a read-write scope will do as well.</p>
                     <dd>Move down in search results</dd>
                     <dt>&#9166;</dt>
                     <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
                 </dl>
             </div>
 
@@ -168,7 +174,7 @@ sufficient, a read-write scope will do as well.</p>
 
                 <p>
                     Search functions by type signature (e.g.
-                    <code>vec -> usize</code>)
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
                 </p>
             </div>
         </div>

@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
+    
 
     
     
@@ -43,11 +44,11 @@
 
     <section id='main' class="content mod">
 <h1 class='fqn'><span class='in-band'>Crate <a class='mod' href=''>google_pubsub1_beta2</a></span><span class='out-of-band'><span id='render-detail'>
-            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
-                [<span class='inner'>&#x2212;</span>]
-            </a>
-        </span><a id='src-0' class='srclink' href='../src/google_pubsub1_beta2/lib.rs.html#5-187' title='goto source code'>[src]</a></span></h1>
-<div class='docblock'><p>This documentation was generated from <em>pubsub</em> crate version <em>0.1.11+20151103</em>, where <em>20151103</em> is the exact revision of the <em>pubsub:v1beta2</em> schema built by the <a href="http://www.makotemplates.org/">mako</a> code generator <em>v0.1.11</em>.</p>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-0' class='srclink' href='../src/google_pubsub1_beta2/src/lib.rs.html#5-193' title='goto source code'>[src]</a></span></h1>
+<div class='docblock'><p>This documentation was generated from <em>pubsub</em> crate version <em>0.1.14+20160317</em>, where <em>20160317</em> is the exact revision of the <em>pubsub:v1beta2</em> schema built by the <a href="http://www.makotemplates.org/">mako</a> code generator <em>v0.1.14</em>.</p>
 
 <p>Everything else about the <em>pubsub</em> <em>v1_beta2</em> API can be found at the
 <a href="https://cloud.google.com/pubsub/docs">official documentation site</a>.
@@ -99,10 +100,12 @@ allow access to individual <a href="trait.CallBuilder.html"><em>Call Builders</e
 <p>All <em>structures</em> are marked with applicable traits to further categorize them and ease browsing.</p>
 
 <p>Generally speaking, you can invoke <em>Activities</em> like this:</p>
+
 <pre class='rust rust-example-rendered'>
 <span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>resource</span>().<span class='ident'>activity</span>(...).<span class='ident'>doit</span>()</pre>
 
 <p>Or specifically ...</p>
+
 <pre class='rust rust-example-rendered'>
 <span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>projects</span>().<span class='ident'>subscriptions_acknowledge</span>(...).<span class='ident'>doit</span>()
 <span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>projects</span>().<span class='ident'>subscriptions_modify_push_config</span>(...).<span class='ident'>doit</span>()
@@ -123,7 +126,8 @@ The <code>doit()</code> method performs the actual communication with the server
 google-pubsub1_beta2 = &quot;*&quot;
 </code></pre>
 
-<h2 id='a-complete-example' class='section-header'><a href='#a-complete-example'>A complete example</a></h2><pre class='rust rust-example-rendered'>
+<h2 id='a-complete-example' class='section-header'><a href='#a-complete-example'>A complete example</a></h2>
+<pre class='rust rust-example-rendered'>
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>hyper</span>;
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>yup_oauth2</span> <span class='kw'>as</span> <span class='ident'>oauth2</span>;
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>google_pubsub1_beta2</span> <span class='kw'>as</span> <span class='ident'>pubsub1_beta2</span>;
@@ -220,580 +224,458 @@ These will always take a single argument, for which the following statements are
 <p>Arguments will always be copied or cloned into the builder, to make them independent of their original life times.</p>
 </div><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
 <table>
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.AcknowledgeRequest.html'
-                               title='google_pubsub1_beta2::AcknowledgeRequest'>AcknowledgeRequest</a></td>
-                        <td class='docblock short'>
-                             <p>Request for the Acknowledge method.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.Binding.html'
-                               title='google_pubsub1_beta2::Binding'>Binding</a></td>
-                        <td class='docblock short'>
-                             <p>Associates <code>members</code> with a <code>role</code>.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.DefaultDelegate.html'
-                               title='google_pubsub1_beta2::DefaultDelegate'>DefaultDelegate</a></td>
-                        <td class='docblock short'>
-                             <p>A delegate with a conservative default implementation, which is used if no other delegate is
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AcknowledgeRequest.html'
+                                  title='google_pubsub1_beta2::AcknowledgeRequest'>AcknowledgeRequest</a></td>
+                           <td class='docblock short'>
+                                <p>Request for the Acknowledge method.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Binding.html'
+                                  title='google_pubsub1_beta2::Binding'>Binding</a></td>
+                           <td class='docblock short'>
+                                <p>Associates <code>members</code> with a <code>role</code>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DefaultDelegate.html'
+                                  title='google_pubsub1_beta2::DefaultDelegate'>DefaultDelegate</a></td>
+                           <td class='docblock short'>
+                                <p>A delegate with a conservative default implementation, which is used if no other delegate is
 set.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.Empty.html'
-                               title='google_pubsub1_beta2::Empty'>Empty</a></td>
-                        <td class='docblock short'>
-                             <p>A generic empty message that you can re-use to avoid defining duplicated empty messages in your APIs. A typical example is to use it as the request or the response type of an API method. For instance: service Foo { rpc Bar(google.protobuf.Empty) returns (google.protobuf.Empty); } The JSON representation for <code>Empty</code> is empty JSON object <code>{}</code>.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ErrorResponse.html'
-                               title='google_pubsub1_beta2::ErrorResponse'>ErrorResponse</a></td>
-                        <td class='docblock short'>
-                             <p>A utility to represent detailed errors we might see in case there are BadRequests.
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Empty.html'
+                                  title='google_pubsub1_beta2::Empty'>Empty</a></td>
+                           <td class='docblock short'>
+                                <p>A generic empty message that you can re-use to avoid defining duplicated empty messages in your APIs. A typical example is to use it as the request or the response type of an API method. For instance: service Foo { rpc Bar(google.protobuf.Empty) returns (google.protobuf.Empty); } The JSON representation for <code>Empty</code> is empty JSON object <code>{}</code>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ErrorResponse.html'
+                                  title='google_pubsub1_beta2::ErrorResponse'>ErrorResponse</a></td>
+                           <td class='docblock short'>
+                                <p>A utility to represent detailed errors we might see in case there are BadRequests.
 The latter happen if the sent parameters or request structures are unsound</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ListSubscriptionsResponse.html'
-                               title='google_pubsub1_beta2::ListSubscriptionsResponse'>ListSubscriptionsResponse</a></td>
-                        <td class='docblock short'>
-                             <p>Response for the <code>ListSubscriptions</code> method.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ListTopicSubscriptionsResponse.html'
-                               title='google_pubsub1_beta2::ListTopicSubscriptionsResponse'>ListTopicSubscriptionsResponse</a></td>
-                        <td class='docblock short'>
-                             <p>Response for the <code>ListTopicSubscriptions</code> method.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ListTopicsResponse.html'
-                               title='google_pubsub1_beta2::ListTopicsResponse'>ListTopicsResponse</a></td>
-                        <td class='docblock short'>
-                             <p>Response for the <code>ListTopics</code> method.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.MethodInfo.html'
-                               title='google_pubsub1_beta2::MethodInfo'>MethodInfo</a></td>
-                        <td class='docblock short'>
-                             <p>Contains information about an API request.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ModifyAckDeadlineRequest.html'
-                               title='google_pubsub1_beta2::ModifyAckDeadlineRequest'>ModifyAckDeadlineRequest</a></td>
-                        <td class='docblock short'>
-                             <p>Request for the ModifyAckDeadline method.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ModifyPushConfigRequest.html'
-                               title='google_pubsub1_beta2::ModifyPushConfigRequest'>ModifyPushConfigRequest</a></td>
-                        <td class='docblock short'>
-                             <p>Request for the ModifyPushConfig method.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.MultiPartReader.html'
-                               title='google_pubsub1_beta2::MultiPartReader'>MultiPartReader</a></td>
-                        <td class='docblock short'>
-                             <p>Provides a <code>Read</code> interface that converts multiple parts into the protocol
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListSubscriptionsResponse.html'
+                                  title='google_pubsub1_beta2::ListSubscriptionsResponse'>ListSubscriptionsResponse</a></td>
+                           <td class='docblock short'>
+                                <p>Response for the <code>ListSubscriptions</code> method.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListTopicSubscriptionsResponse.html'
+                                  title='google_pubsub1_beta2::ListTopicSubscriptionsResponse'>ListTopicSubscriptionsResponse</a></td>
+                           <td class='docblock short'>
+                                <p>Response for the <code>ListTopicSubscriptions</code> method.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListTopicsResponse.html'
+                                  title='google_pubsub1_beta2::ListTopicsResponse'>ListTopicsResponse</a></td>
+                           <td class='docblock short'>
+                                <p>Response for the <code>ListTopics</code> method.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.MethodInfo.html'
+                                  title='google_pubsub1_beta2::MethodInfo'>MethodInfo</a></td>
+                           <td class='docblock short'>
+                                <p>Contains information about an API request.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ModifyAckDeadlineRequest.html'
+                                  title='google_pubsub1_beta2::ModifyAckDeadlineRequest'>ModifyAckDeadlineRequest</a></td>
+                           <td class='docblock short'>
+                                <p>Request for the ModifyAckDeadline method.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ModifyPushConfigRequest.html'
+                                  title='google_pubsub1_beta2::ModifyPushConfigRequest'>ModifyPushConfigRequest</a></td>
+                           <td class='docblock short'>
+                                <p>Request for the ModifyPushConfig method.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.MultiPartReader.html'
+                                  title='google_pubsub1_beta2::MultiPartReader'>MultiPartReader</a></td>
+                           <td class='docblock short'>
+                                <p>Provides a <code>Read</code> interface that converts multiple parts into the protocol
 identified by <a href="https://tools.ietf.org/html/rfc2387">RFC2387</a>.
 <strong>Note</strong>: This implementation is just as rich as it needs to be to perform uploads
 to google APIs, and might not be a fully-featured implementation.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.Policy.html'
-                               title='google_pubsub1_beta2::Policy'>Policy</a></td>
-                        <td class='docblock short'>
-                             <p>Defines an Identity and Access Management (IAM) policy. It is used to specify access control policies for Cloud Platform resources. A <code>Policy</code> consists of a list of <code>bindings</code>. A <code>Binding</code> binds a list of <code>members</code> to a <code>role</code>, where the members can be user accounts, Google groups, Google domains, and service accounts. A <code>role</code> is a named list of permissions defined by IAM. <strong>Example</strong> { &quot;bindings&quot;: [ { &quot;role&quot;: &quot;roles/owner&quot;, &quot;members&quot;: [ &quot;user:<a href="mailto:mike@example.com">mike@example.com</a>&quot;, &quot;group:<a href="mailto:admins@example.com">admins@example.com</a>&quot;, &quot;domain:google.com&quot;, &quot;serviceAccount:<a href="mailto:my-other-app@appspot.gserviceaccount.com">my-other-app@appspot.gserviceaccount.com</a>&quot;] }, { &quot;role&quot;: &quot;roles/viewer&quot;, &quot;members&quot;: [&quot;user:<a href="mailto:sean@example.com">sean@example.com</a>&quot;] } ] } For a description of IAM and its features, see the <a href="https://cloud.google.com/iam">IAM developer&#39;s guide</a>.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ProjectMethods.html'
-                               title='google_pubsub1_beta2::ProjectMethods'>ProjectMethods</a></td>
-                        <td class='docblock short'>
-                             <p>A builder providing access to all methods supported on <em>project</em> resources.
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Policy.html'
+                                  title='google_pubsub1_beta2::Policy'>Policy</a></td>
+                           <td class='docblock short'>
+                                <p>Defines an Identity and Access Management (IAM) policy. It is used to specify access control policies for Cloud Platform resources. A <code>Policy</code> consists of a list of <code>bindings</code>. A <code>Binding</code> binds a list of <code>members</code> to a <code>role</code>, where the members can be user accounts, Google groups, Google domains, and service accounts. A <code>role</code> is a named list of permissions defined by IAM. <strong>Example</strong> { &quot;bindings&quot;: [ { &quot;role&quot;: &quot;roles/owner&quot;, &quot;members&quot;: [ &quot;user:<a href="mailto:mike@example.com">mike@example.com</a>&quot;, &quot;group:<a href="mailto:admins@example.com">admins@example.com</a>&quot;, &quot;domain:google.com&quot;, &quot;serviceAccount:<a href="mailto:my-other-app@appspot.gserviceaccount.com">my-other-app@appspot.gserviceaccount.com</a>&quot;, ] }, { &quot;role&quot;: &quot;roles/viewer&quot;, &quot;members&quot;: [&quot;user:<a href="mailto:sean@example.com">sean@example.com</a>&quot;] } ] } For a description of IAM and its features, see the <a href="https://cloud.google.com/iam">IAM developer&#39;s guide</a>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ProjectMethods.html'
+                                  title='google_pubsub1_beta2::ProjectMethods'>ProjectMethods</a></td>
+                           <td class='docblock short'>
+                                <p>A builder providing access to all methods supported on <em>project</em> resources.
 It is not used directly, but through the <code>Pubsub</code> hub.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ProjectSubscriptionAcknowledgeCall.html'
-                               title='google_pubsub1_beta2::ProjectSubscriptionAcknowledgeCall'>ProjectSubscriptionAcknowledgeCall</a></td>
-                        <td class='docblock short'>
-                             <p>Acknowledges the messages associated with the <code>ack_ids</code> in the <code>AcknowledgeRequest</code>. The Pub/Sub system can remove the relevant messages from the subscription. Acknowledging a message whose ack deadline has expired may succeed, but such a message may be redelivered later. Acknowledging a message more than once will not result in an error.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ProjectSubscriptionCreateCall.html'
-                               title='google_pubsub1_beta2::ProjectSubscriptionCreateCall'>ProjectSubscriptionCreateCall</a></td>
-                        <td class='docblock short'>
-                             <p>Creates a subscription to a given topic for a given subscriber. If the subscription already exists, returns <code>ALREADY_EXISTS</code>. If the corresponding topic doesn&#39;t exist, returns <code>NOT_FOUND</code>. If the name is not provided in the request, the server will assign a random name for this subscription on the same project as the topic.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ProjectSubscriptionDeleteCall.html'
-                               title='google_pubsub1_beta2::ProjectSubscriptionDeleteCall'>ProjectSubscriptionDeleteCall</a></td>
-                        <td class='docblock short'>
-                             <p>Deletes an existing subscription. All pending messages in the subscription are immediately dropped. Calls to <code>Pull</code> after deletion will return <code>NOT_FOUND</code>. After a subscription is deleted, a new one may be created with the same name, but the new one has no association with the old subscription, or its topic unless the same topic is specified.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ProjectSubscriptionGetCall.html'
-                               title='google_pubsub1_beta2::ProjectSubscriptionGetCall'>ProjectSubscriptionGetCall</a></td>
-                        <td class='docblock short'>
-                             <p>Gets the configuration details of a subscription.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ProjectSubscriptionGetIamPolicyCall.html'
-                               title='google_pubsub1_beta2::ProjectSubscriptionGetIamPolicyCall'>ProjectSubscriptionGetIamPolicyCall</a></td>
-                        <td class='docblock short'>
-                             <p>Gets the access control policy for a <code>resource</code>. Is empty if the policy or the resource does not exist.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ProjectSubscriptionListCall.html'
-                               title='google_pubsub1_beta2::ProjectSubscriptionListCall'>ProjectSubscriptionListCall</a></td>
-                        <td class='docblock short'>
-                             <p>Lists matching subscriptions.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ProjectSubscriptionModifyAckDeadlineCall.html'
-                               title='google_pubsub1_beta2::ProjectSubscriptionModifyAckDeadlineCall'>ProjectSubscriptionModifyAckDeadlineCall</a></td>
-                        <td class='docblock short'>
-                             <p>Modifies the ack deadline for a specific message. This method is useful to indicate that more time is needed to process a message by the subscriber, or to make the message available for redelivery if the processing was interrupted.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ProjectSubscriptionModifyPushConfigCall.html'
-                               title='google_pubsub1_beta2::ProjectSubscriptionModifyPushConfigCall'>ProjectSubscriptionModifyPushConfigCall</a></td>
-                        <td class='docblock short'>
-                             <p>Modifies the <code>PushConfig</code> for a specified subscription. This may be used to change a push subscription to a pull one (signified by an empty <code>PushConfig</code>) or vice versa, or change the endpoint URL and other attributes of a push subscription. Messages will accumulate for delivery continuously through the call regardless of changes to the <code>PushConfig</code>.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ProjectSubscriptionPullCall.html'
-                               title='google_pubsub1_beta2::ProjectSubscriptionPullCall'>ProjectSubscriptionPullCall</a></td>
-                        <td class='docblock short'>
-                             <p>Pulls messages from the server. Returns an empty list if there are no messages available in the backlog. The server may return <code>UNAVAILABLE</code> if there are too many concurrent pull requests pending for the given subscription.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ProjectSubscriptionSetIamPolicyCall.html'
-                               title='google_pubsub1_beta2::ProjectSubscriptionSetIamPolicyCall'>ProjectSubscriptionSetIamPolicyCall</a></td>
-                        <td class='docblock short'>
-                             <p>Sets the access control policy on the specified resource. Replaces any existing policy.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ProjectSubscriptionTestIamPermissionCall.html'
-                               title='google_pubsub1_beta2::ProjectSubscriptionTestIamPermissionCall'>ProjectSubscriptionTestIamPermissionCall</a></td>
-                        <td class='docblock short'>
-                             <p>Returns permissions that a caller has on the specified resource.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ProjectTopicCreateCall.html'
-                               title='google_pubsub1_beta2::ProjectTopicCreateCall'>ProjectTopicCreateCall</a></td>
-                        <td class='docblock short'>
-                             <p>Creates the given topic with the given name.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ProjectTopicDeleteCall.html'
-                               title='google_pubsub1_beta2::ProjectTopicDeleteCall'>ProjectTopicDeleteCall</a></td>
-                        <td class='docblock short'>
-                             <p>Deletes the topic with the given name. Returns <code>NOT_FOUND</code> if the topic does not exist. After a topic is deleted, a new topic may be created with the same name; this is an entirely new topic with none of the old configuration or subscriptions. Existing subscriptions to this topic are not deleted, but their <code>topic</code> field is set to <code>_deleted-topic_</code>.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ProjectTopicGetCall.html'
-                               title='google_pubsub1_beta2::ProjectTopicGetCall'>ProjectTopicGetCall</a></td>
-                        <td class='docblock short'>
-                             <p>Gets the configuration of a topic.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ProjectTopicGetIamPolicyCall.html'
-                               title='google_pubsub1_beta2::ProjectTopicGetIamPolicyCall'>ProjectTopicGetIamPolicyCall</a></td>
-                        <td class='docblock short'>
-                             <p>Gets the access control policy for a <code>resource</code>. Is empty if the policy or the resource does not exist.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ProjectTopicListCall.html'
-                               title='google_pubsub1_beta2::ProjectTopicListCall'>ProjectTopicListCall</a></td>
-                        <td class='docblock short'>
-                             <p>Lists matching topics.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ProjectTopicPublishCall.html'
-                               title='google_pubsub1_beta2::ProjectTopicPublishCall'>ProjectTopicPublishCall</a></td>
-                        <td class='docblock short'>
-                             <p>Adds one or more messages to the topic. Returns <code>NOT_FOUND</code> if the topic does not exist. The message payload must not be empty; it must contain either a non-empty data field, or at least one attribute.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ProjectTopicSetIamPolicyCall.html'
-                               title='google_pubsub1_beta2::ProjectTopicSetIamPolicyCall'>ProjectTopicSetIamPolicyCall</a></td>
-                        <td class='docblock short'>
-                             <p>Sets the access control policy on the specified resource. Replaces any existing policy.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ProjectTopicSubscriptionListCall.html'
-                               title='google_pubsub1_beta2::ProjectTopicSubscriptionListCall'>ProjectTopicSubscriptionListCall</a></td>
-                        <td class='docblock short'>
-                             <p>Lists the name of the subscriptions for this topic.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ProjectTopicTestIamPermissionCall.html'
-                               title='google_pubsub1_beta2::ProjectTopicTestIamPermissionCall'>ProjectTopicTestIamPermissionCall</a></td>
-                        <td class='docblock short'>
-                             <p>Returns permissions that a caller has on the specified resource.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.PublishRequest.html'
-                               title='google_pubsub1_beta2::PublishRequest'>PublishRequest</a></td>
-                        <td class='docblock short'>
-                             <p>Request for the Publish method.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.PublishResponse.html'
-                               title='google_pubsub1_beta2::PublishResponse'>PublishResponse</a></td>
-                        <td class='docblock short'>
-                             <p>Response for the <code>Publish</code> method.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.Pubsub.html'
-                               title='google_pubsub1_beta2::Pubsub'>Pubsub</a></td>
-                        <td class='docblock short'>
-                             <p>Central instance to access all Pubsub related resource activities</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.PubsubMessage.html'
-                               title='google_pubsub1_beta2::PubsubMessage'>PubsubMessage</a></td>
-                        <td class='docblock short'>
-                             <p>A message data and its attributes. The message payload must not be empty; it must contain either a non-empty data field, or at least one attribute.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.PullRequest.html'
-                               title='google_pubsub1_beta2::PullRequest'>PullRequest</a></td>
-                        <td class='docblock short'>
-                             <p>Request for the <code>Pull</code> method.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.PullResponse.html'
-                               title='google_pubsub1_beta2::PullResponse'>PullResponse</a></td>
-                        <td class='docblock short'>
-                             <p>Response for the <code>Pull</code> method.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.PushConfig.html'
-                               title='google_pubsub1_beta2::PushConfig'>PushConfig</a></td>
-                        <td class='docblock short'>
-                             <p>Configuration for a push delivery endpoint.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ReceivedMessage.html'
-                               title='google_pubsub1_beta2::ReceivedMessage'>ReceivedMessage</a></td>
-                        <td class='docblock short'>
-                             <p>A message and its corresponding acknowledgment ID.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.SetIamPolicyRequest.html'
-                               title='google_pubsub1_beta2::SetIamPolicyRequest'>SetIamPolicyRequest</a></td>
-                        <td class='docblock short'>
-                             <p>Request message for <code>SetIamPolicy</code> method.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.Subscription.html'
-                               title='google_pubsub1_beta2::Subscription'>Subscription</a></td>
-                        <td class='docblock short'>
-                             <p>A subscription resource.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.TestIamPermissionsRequest.html'
-                               title='google_pubsub1_beta2::TestIamPermissionsRequest'>TestIamPermissionsRequest</a></td>
-                        <td class='docblock short'>
-                             <p>Request message for <code>TestIamPermissions</code> method.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.TestIamPermissionsResponse.html'
-                               title='google_pubsub1_beta2::TestIamPermissionsResponse'>TestIamPermissionsResponse</a></td>
-                        <td class='docblock short'>
-                             <p>Response message for <code>TestIamPermissions</code> method.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.Topic.html'
-                               title='google_pubsub1_beta2::Topic'>Topic</a></td>
-                        <td class='docblock short'>
-                             <p>A topic resource.</p>
-
-                        </td>
-                    </tr>
-                </table><h2 id='enums' class='section-header'><a href="#enums">Enums</a></h2>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ProjectSubscriptionAcknowledgeCall.html'
+                                  title='google_pubsub1_beta2::ProjectSubscriptionAcknowledgeCall'>ProjectSubscriptionAcknowledgeCall</a></td>
+                           <td class='docblock short'>
+                                <p>Acknowledges the messages associated with the <code>ack_ids</code> in the <code>AcknowledgeRequest</code>. The Pub/Sub system can remove the relevant messages from the subscription. Acknowledging a message whose ack deadline has expired may succeed, but such a message may be redelivered later. Acknowledging a message more than once will not result in an error.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ProjectSubscriptionCreateCall.html'
+                                  title='google_pubsub1_beta2::ProjectSubscriptionCreateCall'>ProjectSubscriptionCreateCall</a></td>
+                           <td class='docblock short'>
+                                <p>Creates a subscription to a given topic. If the subscription already exists, returns <code>ALREADY_EXISTS</code>. If the corresponding topic doesn&#39;t exist, returns <code>NOT_FOUND</code>. If the name is not provided in the request, the server will assign a random name for this subscription on the same project as the topic.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ProjectSubscriptionDeleteCall.html'
+                                  title='google_pubsub1_beta2::ProjectSubscriptionDeleteCall'>ProjectSubscriptionDeleteCall</a></td>
+                           <td class='docblock short'>
+                                <p>Deletes an existing subscription. All pending messages in the subscription are immediately dropped. Calls to <code>Pull</code> after deletion will return <code>NOT_FOUND</code>. After a subscription is deleted, a new one may be created with the same name, but the new one has no association with the old subscription, or its topic unless the same topic is specified.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ProjectSubscriptionGetCall.html'
+                                  title='google_pubsub1_beta2::ProjectSubscriptionGetCall'>ProjectSubscriptionGetCall</a></td>
+                           <td class='docblock short'>
+                                <p>Gets the configuration details of a subscription.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ProjectSubscriptionGetIamPolicyCall.html'
+                                  title='google_pubsub1_beta2::ProjectSubscriptionGetIamPolicyCall'>ProjectSubscriptionGetIamPolicyCall</a></td>
+                           <td class='docblock short'>
+                                <p>Gets the access control policy for a <code>resource</code>. Returns an empty policy if the resource exists and does not have a policy set.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ProjectSubscriptionListCall.html'
+                                  title='google_pubsub1_beta2::ProjectSubscriptionListCall'>ProjectSubscriptionListCall</a></td>
+                           <td class='docblock short'>
+                                <p>Lists matching subscriptions.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ProjectSubscriptionModifyAckDeadlineCall.html'
+                                  title='google_pubsub1_beta2::ProjectSubscriptionModifyAckDeadlineCall'>ProjectSubscriptionModifyAckDeadlineCall</a></td>
+                           <td class='docblock short'>
+                                <p>Modifies the ack deadline for a specific message. This method is useful to indicate that more time is needed to process a message by the subscriber, or to make the message available for redelivery if the processing was interrupted.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ProjectSubscriptionModifyPushConfigCall.html'
+                                  title='google_pubsub1_beta2::ProjectSubscriptionModifyPushConfigCall'>ProjectSubscriptionModifyPushConfigCall</a></td>
+                           <td class='docblock short'>
+                                <p>Modifies the <code>PushConfig</code> for a specified subscription. This may be used to change a push subscription to a pull one (signified by an empty <code>PushConfig</code>) or vice versa, or change the endpoint URL and other attributes of a push subscription. Messages will accumulate for delivery continuously through the call regardless of changes to the <code>PushConfig</code>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ProjectSubscriptionPullCall.html'
+                                  title='google_pubsub1_beta2::ProjectSubscriptionPullCall'>ProjectSubscriptionPullCall</a></td>
+                           <td class='docblock short'>
+                                <p>Pulls messages from the server. Returns an empty list if there are no messages available in the backlog. The server may return <code>UNAVAILABLE</code> if there are too many concurrent pull requests pending for the given subscription.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ProjectSubscriptionSetIamPolicyCall.html'
+                                  title='google_pubsub1_beta2::ProjectSubscriptionSetIamPolicyCall'>ProjectSubscriptionSetIamPolicyCall</a></td>
+                           <td class='docblock short'>
+                                <p>Sets the access control policy on the specified resource. Replaces any existing policy.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ProjectSubscriptionTestIamPermissionCall.html'
+                                  title='google_pubsub1_beta2::ProjectSubscriptionTestIamPermissionCall'>ProjectSubscriptionTestIamPermissionCall</a></td>
+                           <td class='docblock short'>
+                                <p>Returns permissions that a caller has on the specified resource.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ProjectTopicCreateCall.html'
+                                  title='google_pubsub1_beta2::ProjectTopicCreateCall'>ProjectTopicCreateCall</a></td>
+                           <td class='docblock short'>
+                                <p>Creates the given topic with the given name.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ProjectTopicDeleteCall.html'
+                                  title='google_pubsub1_beta2::ProjectTopicDeleteCall'>ProjectTopicDeleteCall</a></td>
+                           <td class='docblock short'>
+                                <p>Deletes the topic with the given name. Returns <code>NOT_FOUND</code> if the topic does not exist. After a topic is deleted, a new topic may be created with the same name; this is an entirely new topic with none of the old configuration or subscriptions. Existing subscriptions to this topic are not deleted, but their <code>topic</code> field is set to <code>_deleted-topic_</code>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ProjectTopicGetCall.html'
+                                  title='google_pubsub1_beta2::ProjectTopicGetCall'>ProjectTopicGetCall</a></td>
+                           <td class='docblock short'>
+                                <p>Gets the configuration of a topic.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ProjectTopicGetIamPolicyCall.html'
+                                  title='google_pubsub1_beta2::ProjectTopicGetIamPolicyCall'>ProjectTopicGetIamPolicyCall</a></td>
+                           <td class='docblock short'>
+                                <p>Gets the access control policy for a <code>resource</code>. Returns an empty policy if the resource exists and does not have a policy set.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ProjectTopicListCall.html'
+                                  title='google_pubsub1_beta2::ProjectTopicListCall'>ProjectTopicListCall</a></td>
+                           <td class='docblock short'>
+                                <p>Lists matching topics.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ProjectTopicPublishCall.html'
+                                  title='google_pubsub1_beta2::ProjectTopicPublishCall'>ProjectTopicPublishCall</a></td>
+                           <td class='docblock short'>
+                                <p>Adds one or more messages to the topic. Returns <code>NOT_FOUND</code> if the topic does not exist. The message payload must not be empty; it must contain either a non-empty data field, or at least one attribute.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ProjectTopicSetIamPolicyCall.html'
+                                  title='google_pubsub1_beta2::ProjectTopicSetIamPolicyCall'>ProjectTopicSetIamPolicyCall</a></td>
+                           <td class='docblock short'>
+                                <p>Sets the access control policy on the specified resource. Replaces any existing policy.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ProjectTopicSubscriptionListCall.html'
+                                  title='google_pubsub1_beta2::ProjectTopicSubscriptionListCall'>ProjectTopicSubscriptionListCall</a></td>
+                           <td class='docblock short'>
+                                <p>Lists the name of the subscriptions for this topic.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ProjectTopicTestIamPermissionCall.html'
+                                  title='google_pubsub1_beta2::ProjectTopicTestIamPermissionCall'>ProjectTopicTestIamPermissionCall</a></td>
+                           <td class='docblock short'>
+                                <p>Returns permissions that a caller has on the specified resource.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PublishRequest.html'
+                                  title='google_pubsub1_beta2::PublishRequest'>PublishRequest</a></td>
+                           <td class='docblock short'>
+                                <p>Request for the Publish method.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PublishResponse.html'
+                                  title='google_pubsub1_beta2::PublishResponse'>PublishResponse</a></td>
+                           <td class='docblock short'>
+                                <p>Response for the <code>Publish</code> method.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Pubsub.html'
+                                  title='google_pubsub1_beta2::Pubsub'>Pubsub</a></td>
+                           <td class='docblock short'>
+                                <p>Central instance to access all Pubsub related resource activities</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PubsubMessage.html'
+                                  title='google_pubsub1_beta2::PubsubMessage'>PubsubMessage</a></td>
+                           <td class='docblock short'>
+                                <p>A message data and its attributes. The message payload must not be empty; it must contain either a non-empty data field, or at least one attribute.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PullRequest.html'
+                                  title='google_pubsub1_beta2::PullRequest'>PullRequest</a></td>
+                           <td class='docblock short'>
+                                <p>Request for the <code>Pull</code> method.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PullResponse.html'
+                                  title='google_pubsub1_beta2::PullResponse'>PullResponse</a></td>
+                           <td class='docblock short'>
+                                <p>Response for the <code>Pull</code> method.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PushConfig.html'
+                                  title='google_pubsub1_beta2::PushConfig'>PushConfig</a></td>
+                           <td class='docblock short'>
+                                <p>Configuration for a push delivery endpoint.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ReceivedMessage.html'
+                                  title='google_pubsub1_beta2::ReceivedMessage'>ReceivedMessage</a></td>
+                           <td class='docblock short'>
+                                <p>A message and its corresponding acknowledgment ID.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SetIamPolicyRequest.html'
+                                  title='google_pubsub1_beta2::SetIamPolicyRequest'>SetIamPolicyRequest</a></td>
+                           <td class='docblock short'>
+                                <p>Request message for <code>SetIamPolicy</code> method.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Subscription.html'
+                                  title='google_pubsub1_beta2::Subscription'>Subscription</a></td>
+                           <td class='docblock short'>
+                                <p>A subscription resource.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.TestIamPermissionsRequest.html'
+                                  title='google_pubsub1_beta2::TestIamPermissionsRequest'>TestIamPermissionsRequest</a></td>
+                           <td class='docblock short'>
+                                <p>Request message for <code>TestIamPermissions</code> method.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.TestIamPermissionsResponse.html'
+                                  title='google_pubsub1_beta2::TestIamPermissionsResponse'>TestIamPermissionsResponse</a></td>
+                           <td class='docblock short'>
+                                <p>Response message for <code>TestIamPermissions</code> method.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Topic.html'
+                                  title='google_pubsub1_beta2::Topic'>Topic</a></td>
+                           <td class='docblock short'>
+                                <p>A topic resource.</p>
+                           </td>
+                       </tr></table><h2 id='enums' class='section-header'><a href="#enums">Enums</a></h2>
 <table>
-                    <tr class=' module-item'>
-                        <td><a class='enum' href='enum.Error.html'
-                               title='google_pubsub1_beta2::Error'>Error</a></td>
-                        <td class='docblock short'>
-                             
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='enum' href='enum.Scope.html'
-                               title='google_pubsub1_beta2::Scope'>Scope</a></td>
-                        <td class='docblock short'>
-                             <p>Identifies the an OAuth2 authorization scope.
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.Error.html'
+                                  title='google_pubsub1_beta2::Error'>Error</a></td>
+                           <td class='docblock short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.Scope.html'
+                                  title='google_pubsub1_beta2::Scope'>Scope</a></td>
+                           <td class='docblock short'>
+                                <p>Identifies the an OAuth2 authorization scope.
 A scope is needed when requesting an
 <a href="https://developers.google.com/youtube/v3/guides/authentication">authorization token</a>.</p>
-
-                        </td>
-                    </tr>
-                </table><h2 id='traits' class='section-header'><a href="#traits">Traits</a></h2>
+                           </td>
+                       </tr></table><h2 id='traits' class='section-header'><a href="#traits">Traits</a></h2>
 <table>
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.CallBuilder.html'
-                               title='google_pubsub1_beta2::CallBuilder'>CallBuilder</a></td>
-                        <td class='docblock short'>
-                             <p>Identifies types which represent builders for a particular resource method</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.Delegate.html'
-                               title='google_pubsub1_beta2::Delegate'>Delegate</a></td>
-                        <td class='docblock short'>
-                             <p>A trait specifying functionality to help controlling any request performed by the API.
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.CallBuilder.html'
+                                  title='google_pubsub1_beta2::CallBuilder'>CallBuilder</a></td>
+                           <td class='docblock short'>
+                                <p>Identifies types which represent builders for a particular resource method</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.Delegate.html'
+                                  title='google_pubsub1_beta2::Delegate'>Delegate</a></td>
+                           <td class='docblock short'>
+                                <p>A trait specifying functionality to help controlling any request performed by the API.
 The trait has a conservative default implementation.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.Hub.html'
-                               title='google_pubsub1_beta2::Hub'>Hub</a></td>
-                        <td class='docblock short'>
-                             <p>Identifies the Hub. There is only one per library, this trait is supposed
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.Hub.html'
+                                  title='google_pubsub1_beta2::Hub'>Hub</a></td>
+                           <td class='docblock short'>
+                                <p>Identifies the Hub. There is only one per library, this trait is supposed
 to make intended use more explicit.
 The hub allows to access all resource methods more easily.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.MethodsBuilder.html'
-                               title='google_pubsub1_beta2::MethodsBuilder'>MethodsBuilder</a></td>
-                        <td class='docblock short'>
-                             <p>Identifies types for building methods of a particular resource type</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.NestedType.html'
-                               title='google_pubsub1_beta2::NestedType'>NestedType</a></td>
-                        <td class='docblock short'>
-                             <p>Identifies types which are only used by other types internally.
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.MethodsBuilder.html'
+                                  title='google_pubsub1_beta2::MethodsBuilder'>MethodsBuilder</a></td>
+                           <td class='docblock short'>
+                                <p>Identifies types for building methods of a particular resource type</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.NestedType.html'
+                                  title='google_pubsub1_beta2::NestedType'>NestedType</a></td>
+                           <td class='docblock short'>
+                                <p>Identifies types which are only used by other types internally.
 They have no special meaning, this trait just marks them for completeness.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.Part.html'
-                               title='google_pubsub1_beta2::Part'>Part</a></td>
-                        <td class='docblock short'>
-                             <p>Identifies types which are only used as part of other types, which
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.Part.html'
+                                  title='google_pubsub1_beta2::Part'>Part</a></td>
+                           <td class='docblock short'>
+                                <p>Identifies types which are only used as part of other types, which
 usually are carrying the <code>Resource</code> trait.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.ReadSeek.html'
-                               title='google_pubsub1_beta2::ReadSeek'>ReadSeek</a></td>
-                        <td class='docblock short'>
-                             <p>A utility to specify reader types which provide seeking capabilities too</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.RequestValue.html'
-                               title='google_pubsub1_beta2::RequestValue'>RequestValue</a></td>
-                        <td class='docblock short'>
-                             <p>Identifies types which are used in API requests.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.Resource.html'
-                               title='google_pubsub1_beta2::Resource'>Resource</a></td>
-                        <td class='docblock short'>
-                             <p>Identifies types which can be inserted and deleted.
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.ReadSeek.html'
+                                  title='google_pubsub1_beta2::ReadSeek'>ReadSeek</a></td>
+                           <td class='docblock short'>
+                                <p>A utility to specify reader types which provide seeking capabilities too</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.RequestValue.html'
+                                  title='google_pubsub1_beta2::RequestValue'>RequestValue</a></td>
+                           <td class='docblock short'>
+                                <p>Identifies types which are used in API requests.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.Resource.html'
+                                  title='google_pubsub1_beta2::Resource'>Resource</a></td>
+                           <td class='docblock short'>
+                                <p>Identifies types which can be inserted and deleted.
 Types with this trait are most commonly used by clients of this API.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.ResponseResult.html'
-                               title='google_pubsub1_beta2::ResponseResult'>ResponseResult</a></td>
-                        <td class='docblock short'>
-                             <p>Identifies types which are used in API responses.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.ToParts.html'
-                               title='google_pubsub1_beta2::ToParts'>ToParts</a></td>
-                        <td class='docblock short'>
-                             <p>A trait for all types that can convert themselves into a <em>parts</em> string</p>
-
-                        </td>
-                    </tr>
-                </table><h2 id='functions' class='section-header'><a href="#functions">Functions</a></h2>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.ResponseResult.html'
+                                  title='google_pubsub1_beta2::ResponseResult'>ResponseResult</a></td>
+                           <td class='docblock short'>
+                                <p>Identifies types which are used in API responses.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.ToParts.html'
+                                  title='google_pubsub1_beta2::ToParts'>ToParts</a></td>
+                           <td class='docblock short'>
+                                <p>A trait for all types that can convert themselves into a <em>parts</em> string</p>
+                           </td>
+                       </tr></table><h2 id='functions' class='section-header'><a href="#functions">Functions</a></h2>
 <table>
-                    <tr class=' module-item'>
-                        <td><a class='fn' href='fn.remove_json_null_values.html'
-                               title='google_pubsub1_beta2::remove_json_null_values'>remove_json_null_values</a></td>
-                        <td class='docblock short'>
-                             
-                        </td>
-                    </tr>
-                </table><h2 id='types' class='section-header'><a href="#types">Type Definitions</a></h2>
+                       <tr class=' module-item'>
+                           <td><a class='fn' href='fn.remove_json_null_values.html'
+                                  title='google_pubsub1_beta2::remove_json_null_values'>remove_json_null_values</a></td>
+                           <td class='docblock short'>
+                                
+                           </td>
+                       </tr></table><h2 id='types' class='section-header'><a href="#types">Type Definitions</a></h2>
 <table>
-                    <tr class=' module-item'>
-                        <td><a class='type' href='type.Result.html'
-                               title='google_pubsub1_beta2::Result'>Result</a></td>
-                        <td class='docblock short'>
-                             <p>A universal result type used as return for all calls.</p>
-
-                        </td>
-                    </tr>
-                </table></section>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Result.html'
+                                  title='google_pubsub1_beta2::Result'>Result</a></td>
+                           <td class='docblock short'>
+                                <p>A universal result type used as return for all calls.</p>
+                           </td>
+                       </tr></table></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
@@ -816,6 +698,8 @@ Types with this trait are most commonly used by clients of this API.</p>
                     <dd>Move down in search results</dd>
                     <dt>&#9166;</dt>
                     <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
                 </dl>
             </div>
 
@@ -836,7 +720,7 @@ Types with this trait are most commonly used by clients of this API.</p>
 
                 <p>
                     Search functions by type signature (e.g.
-                    <code>vec -> usize</code>)
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
                 </p>
             </div>
         </div>

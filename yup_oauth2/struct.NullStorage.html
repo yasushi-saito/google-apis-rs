@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
+    
 
     
     
@@ -43,16 +44,21 @@
 
     <section id='main' class="content struct">
 <h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>yup_oauth2</a>::<wbr><a class='struct' href=''>NullStorage</a></span><span class='out-of-band'><span id='render-detail'>
-            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
-                [<span class='inner'>&#x2212;</span>]
-            </a>
-        </span><a id='src-1273' class='srclink' href='../src/yup_oauth2///Users/byron/dev/rs/google-apis-rs/target/debug/build/yup-oauth2-6fcf5dac526993e1/out/lib.rs.html#2458' title='goto source code'>[src]</a></span></h1>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-423' class='srclink' href='../src/yup_oauth2/Users/byron/dev/rs/google-apis-rs/target/debug/build/yup-oauth2-c2f12acffde13c95/out/lib.rs.html#1091' title='goto source code'>[src]</a></span></h1>
 <pre class='rust struct'>pub struct NullStorage;</pre><div class='docblock'><p>A storage that remembers nothing.</p>
-</div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl <a class='trait' href='../yup_oauth2/trait.TokenStorage.html' title='yup_oauth2::TokenStorage'>TokenStorage</a> for <a class='struct' href='../yup_oauth2/struct.NullStorage.html' title='yup_oauth2::NullStorage'>NullStorage</a></code></h3><div class='impl-items'><h4 id='assoc_type.Error' class='type'><code>type Error = NullError</code></h4>
-<h4 id='method.set' class='method'><code>fn <a href='../yup_oauth2/trait.TokenStorage.html#method.set' class='fnname'>set</a>(&amp;mut self, _: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u64.html'>u64</a>, _: &amp;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;&amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>&gt;, _: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../yup_oauth2/struct.Token.html' title='yup_oauth2::Token'>Token</a>&gt;) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, NullError&gt;</code></h4>
-<h4 id='method.get' class='method'><code>fn <a href='../yup_oauth2/trait.TokenStorage.html#method.get' class='fnname'>get</a>(&amp;self, _: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u64.html'>u64</a>, _: &amp;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;&amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>&gt;) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../yup_oauth2/struct.Token.html' title='yup_oauth2::Token'>Token</a>&gt;, NullError&gt;</code></h4>
-</div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../yup_oauth2/struct.NullStorage.html' title='yup_oauth2::NullStorage'>NullStorage</a></code></h3><div class='impl-items'><h4 id='method.default' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#method.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../yup_oauth2/struct.NullStorage.html' title='yup_oauth2::NullStorage'>NullStorage</a></code></h4>
-</div></section>
+</div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='../yup_oauth2/trait.TokenStorage.html' title='yup_oauth2::TokenStorage'>TokenStorage</a> for <a class='struct' href='../yup_oauth2/struct.NullStorage.html' title='yup_oauth2::NullStorage'>NullStorage</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-441' class='srclink' href='../src/yup_oauth2/Users/byron/dev/rs/google-apis-rs/target/debug/build/yup-oauth2-c2f12acffde13c95/out/lib.rs.html#1102-1115' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='associatedtype.Error' class='type'><code>type <a href='../yup_oauth2/trait.TokenStorage.html#associatedtype.Error' class='type'>Error</a> = NullError</code></h4>
+<h4 id='method.set' class='method'><code>fn <a href='../yup_oauth2/trait.TokenStorage.html#tymethod.set' class='fnname'>set</a>(&amp;mut self, _: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u64.html'>u64</a>, _: &amp;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;&amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>&gt;, _: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../yup_oauth2/struct.Token.html' title='yup_oauth2::Token'>Token</a>&gt;) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, NullError&gt;</code></h4>
+<div class='docblock'><p>If <code>token</code> is None, it is invalid or revoked and should be removed from storage. Otherwise, it should be saved. <a href="../yup_oauth2/trait.TokenStorage.html#tymethod.set">Read more</a></p>
+</div><h4 id='method.get' class='method'><code>fn <a href='../yup_oauth2/trait.TokenStorage.html#tymethod.get' class='fnname'>get</a>(&amp;self, _: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u64.html'>u64</a>, _: &amp;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;&amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>&gt;) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../yup_oauth2/struct.Token.html' title='yup_oauth2::Token'>Token</a>&gt;, NullError&gt;</code></h4>
+<div class='docblock'><p>A <code>None</code> result indicates that there is no token for the given scope_hash.</p>
+</div></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../yup_oauth2/struct.NullStorage.html' title='yup_oauth2::NullStorage'>NullStorage</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-425' class='srclink' href='../src/yup_oauth2/Users/byron/dev/rs/google-apis-rs/target/debug/build/yup-oauth2-c2f12acffde13c95/out/lib.rs.html#1090' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.default' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../yup_oauth2/struct.NullStorage.html' title='yup_oauth2::NullStorage'>NullStorage</a></code></h4>
+<div class='docblock'><p>Returns the &quot;default value&quot; for a type. <a href="https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default">Read more</a></p>
+</div></div></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
@@ -75,6 +81,8 @@
                     <dd>Move down in search results</dd>
                     <dt>&#9166;</dt>
                     <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
                 </dl>
             </div>
 
@@ -95,7 +103,7 @@
 
                 <p>
                     Search functions by type signature (e.g.
-                    <code>vec -> usize</code>)
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
                 </p>
             </div>
         </div>

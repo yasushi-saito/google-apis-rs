@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `ProjectMethods` struct in crate `google_cloudresourcemanager1`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, ProjectMethods">
+
+    <title>google_cloudresourcemanager1::ProjectMethods - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='index.html'>google_cloudresourcemanager1</a></p><script>window.sidebarCurrent = {name: 'ProjectMethods', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content struct">
+<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_cloudresourcemanager1</a>::<wbr><a class='struct' href=''>ProjectMethods</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-2267' class='srclink' href='../src/google_cloudresourcemanager1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-cloudresourcemanager1-612c8e0f24da59eb/out/lib.rs.html#4452-4454' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct ProjectMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
+    // some fields omitted
+}</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>project</em> resources.
+It is not used directly, but through the <code>CloudResourceManager</code> hub.</p>
+
+<h1 id='example' class='section-header'><a href='#example'>Example</a></h1>
+<p>Instantiate a resource builder</p>
+
+<pre class='rust rust-example-rendered'>
+<span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>hyper</span>;
+<span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>yup_oauth2</span> <span class='kw'>as</span> <span class='ident'>oauth2</span>;
+<span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>google_cloudresourcemanager1</span> <span class='kw'>as</span> <span class='ident'>cloudresourcemanager1</span>;
+ 
+<span class='kw'>use</span> <span class='ident'>std</span>::<span class='ident'>default</span>::<span class='ident'>Default</span>;
+<span class='kw'>use</span> <span class='ident'>oauth2</span>::{<span class='ident'>Authenticator</span>, <span class='ident'>DefaultAuthenticatorDelegate</span>, <span class='ident'>ApplicationSecret</span>, <span class='ident'>MemoryStorage</span>};
+<span class='kw'>use</span> <span class='ident'>cloudresourcemanager1</span>::<span class='ident'>CloudResourceManager</span>;
+ 
+<span class='kw'>let</span> <span class='ident'>secret</span>: <span class='ident'>ApplicationSecret</span> <span class='op'>=</span> <span class='ident'>Default</span>::<span class='ident'>default</span>();
+<span class='kw'>let</span> <span class='ident'>auth</span> <span class='op'>=</span> <span class='ident'>Authenticator</span>::<span class='ident'>new</span>(<span class='kw-2'>&amp;</span><span class='ident'>secret</span>, <span class='ident'>DefaultAuthenticatorDelegate</span>,
+                              <span class='ident'>hyper</span>::<span class='ident'>Client</span>::<span class='ident'>new</span>(),
+                              <span class='op'>&lt;</span><span class='ident'>MemoryStorage</span> <span class='kw'>as</span> <span class='ident'>Default</span><span class='op'>&gt;</span>::<span class='ident'>default</span>(), <span class='prelude-val'>None</span>);
+<span class='kw'>let</span> <span class='kw-2'>mut</span> <span class='ident'>hub</span> <span class='op'>=</span> <span class='ident'>CloudResourceManager</span>::<span class='ident'>new</span>(<span class='ident'>hyper</span>::<span class='ident'>Client</span>::<span class='ident'>new</span>(), <span class='ident'>auth</span>);
+<span class='comment'>// Usually you wouldn&#39;t bind this to a variable, but keep calling *CallBuilders*</span>
+<span class='comment'>// like `delete(...)`, `get(...)`, `get_iam_policy(...)`, `list(...)`, `set_iam_policy(...)`, `test_iam_permissions(...)`, `undelete(...)` and `update(...)`</span>
+<span class='comment'>// to build up your call.</span>
+<span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>projects</span>();</pre>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_cloudresourcemanager1/struct.ProjectMethods.html' title='google_cloudresourcemanager1::ProjectMethods'>ProjectMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-2276' class='srclink' href='../src/google_cloudresourcemanager1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-cloudresourcemanager1-612c8e0f24da59eb/out/lib.rs.html#4456-4583' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, project_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_cloudresourcemanager1/struct.ProjectGetCall.html' title='google_cloudresourcemanager1::ProjectGetCall'>ProjectGetCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Retrieves the Project identified by the specified <code>project_id</code> (for example, <code>my-project-123</code>). The caller must have read permissions for this Project.</p>
+
+<h1 id='arguments' class='section-header'><a href='#arguments'>Arguments</a></h1>
+<ul>
+<li><code>projectId</code> - The Project ID (for example, <code>my-project-123</code>). Required.</li>
+</ul>
+</div><h4 id='method.undelete' class='method'><code>fn <a href='#method.undelete' class='fnname'>undelete</a>(&amp;self, request: <a class='struct' href='../google_cloudresourcemanager1/struct.UndeleteProjectRequest.html' title='google_cloudresourcemanager1::UndeleteProjectRequest'>UndeleteProjectRequest</a>, project_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_cloudresourcemanager1/struct.ProjectUndeleteCall.html' title='google_cloudresourcemanager1::ProjectUndeleteCall'>ProjectUndeleteCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Restores the Project identified by the specified <code>project_id</code> (for example, <code>my-project-123</code>). You can only use this method for a Project that has a lifecycle state of DELETE_REQUESTED. After deletion starts, as indicated by a lifecycle state of DELETE_IN_PROGRESS, the Project cannot be restored. The caller must have modify permissions for this Project.</p>
+
+<h1 id='arguments-1' class='section-header'><a href='#arguments-1'>Arguments</a></h1>
+<ul>
+<li><code>request</code> - No description provided.</li>
+<li><code>projectId</code> - The project ID (for example, <code>foo-bar-123</code>). Required.</li>
+</ul>
+</div><h4 id='method.set_iam_policy' class='method'><code>fn <a href='#method.set_iam_policy' class='fnname'>set_iam_policy</a>(&amp;self, request: <a class='struct' href='../google_cloudresourcemanager1/struct.SetIamPolicyRequest.html' title='google_cloudresourcemanager1::SetIamPolicyRequest'>SetIamPolicyRequest</a>, resource: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_cloudresourcemanager1/struct.ProjectSetIamPolicyCall.html' title='google_cloudresourcemanager1::ProjectSetIamPolicyCall'>ProjectSetIamPolicyCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Sets the IAM access control policy for the specified Project. Replaces any existing policy. The following constraints apply when using <code>setIamPolicy()</code>: + Project currently supports only <code>user:{emailid}</code> and <code>serviceAccount:{emailid}</code> members in a <code>Binding</code> of a <code>Policy</code>. + To be added as an <code>owner</code>, a user must be invited via Cloud Platform console and must accept the invitation. + Members cannot be added to more than one role in the same policy. + There must be at least one owner who has accepted the Terms of Service (ToS) agreement in the policy. Calling <code>setIamPolicy()</code> to to remove the last ToS-accepted owner from the policy will fail. + Calling this method requires enabling the App Engine Admin API. Note: Removing service accounts from policies or changing their roles can render services completely inoperable. It is important to understand how the service account is being used before removing or updating its roles.</p>
+
+<h1 id='arguments-2' class='section-header'><a href='#arguments-2'>Arguments</a></h1>
+<ul>
+<li><code>request</code> - No description provided.</li>
+<li><code>resource</code> - REQUIRED: The resource for which the policy is being specified. <code>resource</code> is usually specified as a path, such as <code>projects/*project*/zones/*zone*/disks/*disk*</code>. The format for the path specified in this value is resource specific and is specified in the <code>setIamPolicy</code> documentation.</li>
+</ul>
+</div><h4 id='method.test_iam_permissions' class='method'><code>fn <a href='#method.test_iam_permissions' class='fnname'>test_iam_permissions</a>(&amp;self, request: <a class='struct' href='../google_cloudresourcemanager1/struct.TestIamPermissionsRequest.html' title='google_cloudresourcemanager1::TestIamPermissionsRequest'>TestIamPermissionsRequest</a>, resource: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_cloudresourcemanager1/struct.ProjectTestIamPermissionCall.html' title='google_cloudresourcemanager1::ProjectTestIamPermissionCall'>ProjectTestIamPermissionCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Returns permissions that a caller has on the specified Project.</p>
+
+<h1 id='arguments-3' class='section-header'><a href='#arguments-3'>Arguments</a></h1>
+<ul>
+<li><code>request</code> - No description provided.</li>
+<li><code>resource</code> - REQUIRED: The resource for which the policy detail is being requested. <code>resource</code> is usually specified as a path, such as <code>projects/*project*/zones/*zone*/disks/*disk*</code>. The format for the path specified in this value is resource specific and is specified in the <code>testIamPermissions</code> documentation.</li>
+</ul>
+</div><h4 id='method.update' class='method'><code>fn <a href='#method.update' class='fnname'>update</a>(&amp;self, request: <a class='struct' href='../google_cloudresourcemanager1/struct.Project.html' title='google_cloudresourcemanager1::Project'>Project</a>, project_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_cloudresourcemanager1/struct.ProjectUpdateCall.html' title='google_cloudresourcemanager1::ProjectUpdateCall'>ProjectUpdateCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Updates the attributes of the Project identified by the specified <code>project_id</code> (for example, <code>my-project-123</code>). The caller must have modify permissions for this Project.</p>
+
+<h1 id='arguments-4' class='section-header'><a href='#arguments-4'>Arguments</a></h1>
+<ul>
+<li><code>request</code> - No description provided.</li>
+<li><code>projectId</code> - The project ID (for example, <code>my-project-123</code>). Required.</li>
+</ul>
+</div><h4 id='method.get_iam_policy' class='method'><code>fn <a href='#method.get_iam_policy' class='fnname'>get_iam_policy</a>(&amp;self, request: <a class='struct' href='../google_cloudresourcemanager1/struct.GetIamPolicyRequest.html' title='google_cloudresourcemanager1::GetIamPolicyRequest'>GetIamPolicyRequest</a>, resource: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_cloudresourcemanager1/struct.ProjectGetIamPolicyCall.html' title='google_cloudresourcemanager1::ProjectGetIamPolicyCall'>ProjectGetIamPolicyCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Returns the IAM access control policy for the specified Project. Permission is denied if the policy or the resource does not exist.</p>
+
+<h1 id='arguments-5' class='section-header'><a href='#arguments-5'>Arguments</a></h1>
+<ul>
+<li><code>request</code> - No description provided.</li>
+<li><code>resource</code> - REQUIRED: The resource for which the policy is being requested. <code>resource</code> is usually specified as a path, such as <code>projects/*project*/zones/*zone*/disks/*disk*</code>. The format for the path specified in this value is resource specific and is specified in the <code>getIamPolicy</code> documentation.</li>
+</ul>
+</div><h4 id='method.delete' class='method'><code>fn <a href='#method.delete' class='fnname'>delete</a>(&amp;self, project_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_cloudresourcemanager1/struct.ProjectDeleteCall.html' title='google_cloudresourcemanager1::ProjectDeleteCall'>ProjectDeleteCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Marks the Project identified by the specified <code>project_id</code> (for example, <code>my-project-123</code>) for deletion. This method will only affect the Project if the following criteria are met: + The Project does not have a billing account associated with it. + The Project has a lifecycle state of ACTIVE. This method changes the Project&#39;s lifecycle state from ACTIVE to DELETE_REQUESTED. The deletion starts at an unspecified time, at which point the lifecycle state changes to DELETE_IN_PROGRESS. Until the deletion completes, you can check the lifecycle state checked by retrieving the Project with GetProject, and the Project remains visible to ListProjects. However, you cannot update the project. After the deletion completes, the Project is not retrievable by the GetProject and ListProjects methods. The caller must have modify permissions for this Project.</p>
+
+<h1 id='arguments-6' class='section-header'><a href='#arguments-6'>Arguments</a></h1>
+<ul>
+<li><code>projectId</code> - The Project ID (for example, <code>foo-bar-123</code>). Required.</li>
+</ul>
+</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self) -&gt; <a class='struct' href='../google_cloudresourcemanager1/struct.ProjectListCall.html' title='google_cloudresourcemanager1::ProjectListCall'>ProjectListCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Lists Projects that are visible to the user and satisfy the specified filter. This method returns Projects in an unspecified order. New Projects do not necessarily appear at the end of the list.</p>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_cloudresourcemanager1/trait.MethodsBuilder.html' title='google_cloudresourcemanager1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_cloudresourcemanager1/struct.ProjectMethods.html' title='google_cloudresourcemanager1::ProjectMethods'>ProjectMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-2272' class='srclink' href='../src/google_cloudresourcemanager1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-cloudresourcemanager1-612c8e0f24da59eb/out/lib.rs.html#4455' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "google_cloudresourcemanager1";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../jquery.js"></script>
+    <script src="../main.js"></script>
+    
+    <script defer src="../search-index.js"></script>
+</body>
+</html>

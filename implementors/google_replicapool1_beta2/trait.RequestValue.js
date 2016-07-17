@@ -1,5 +1,5 @@
 (function() {var implementors = {};
-implementors['google_replicapool1_beta2'] = [];
+implementors["google_replicapool1_beta2"] = [];
 
             if (window.register_implementors) {
                 window.register_implementors(implementors);

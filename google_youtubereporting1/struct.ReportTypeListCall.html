@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
+    
 
     
     
@@ -43,10 +44,10 @@
 
     <section id='main' class="content struct">
 <h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_youtubereporting1</a>::<wbr><a class='struct' href=''>ReportTypeListCall</a></span><span class='out-of-band'><span id='render-detail'>
-            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
-                [<span class='inner'>&#x2212;</span>]
-            </a>
-        </span><a id='src-2158' class='srclink' href='../src/google_youtubereporting1///Users/byron/dev/rs/google-apis-rs/target/debug/build/google-youtubereporting1-ee74e532ed0def8b/out/lib.rs.html#3819-3827' title='goto source code'>[src]</a></span></h1>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-2292' class='srclink' href='../src/google_youtubereporting1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-youtubereporting1-b3443e9f455486e3/out/lib.rs.html#4796-4805' title='goto source code'>[src]</a></span></h1>
 <pre class='rust struct'>pub struct ReportTypeListCall&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>Lists report types.</p>
@@ -56,17 +57,20 @@ It is not used directly, but through a <code>ReportTypeMethods</code> instance.<
 
 <h1 id='example' class='section-header'><a href='#example'>Example</a></h1>
 <p>Instantiate a resource method builder</p>
+
 <pre class='rust rust-example-rendered'>
  
 <span class='comment'>// You can configure optional parameters by calling the respective setters at will, and</span>
 <span class='comment'>// execute the final call using `doit()`.</span>
 <span class='comment'>// Values shown here are possibly random and not representative !</span>
 <span class='kw'>let</span> <span class='ident'>result</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>report_types</span>().<span class='ident'>list</span>()
-             .<span class='ident'>page_token</span>(<span class='string'>&quot;erat&quot;</span>)
-             .<span class='ident'>page_size</span>(<span class='op'>-</span><span class='number'>35</span>)
-             .<span class='ident'>on_behalf_of_content_owner</span>(<span class='string'>&quot;sea&quot;</span>)
+             .<span class='ident'>page_token</span>(<span class='string'>&quot;dolores&quot;</span>)
+             .<span class='ident'>page_size</span>(<span class='op'>-</span><span class='number'>61</span>)
+             .<span class='ident'>on_behalf_of_content_owner</span>(<span class='string'>&quot;sadipscing&quot;</span>)
+             .<span class='ident'>include_system_managed</span>(<span class='boolvalue'>true</span>)
              .<span class='ident'>doit</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_youtubereporting1/struct.ReportTypeListCall.html' title='google_youtubereporting1::ReportTypeListCall'>ReportTypeListCall</a>&lt;'a, C, A&gt; <span class='where'>where C: <a class='trait' href='https://doc.rust-lang.org/nightly/core/borrow/trait.BorrowMut.html' title='core::borrow::BorrowMut'>BorrowMut</a>&lt;<a class='struct' href='../hyper/client/struct.Client.html' title='hyper::client::Client'>Client</a>&gt;, A: <a class='trait' href='../yup_oauth2/helper/trait.GetToken.html' title='yup_oauth2::helper::GetToken'>GetToken</a></span></code></h3><div class='impl-items'><h4 id='method.doit' class='method'><code>fn <a href='#method.doit' class='fnname'>doit</a>(self) -&gt; <a class='type' href='../google_youtubereporting1/type.Result.html' title='google_youtubereporting1::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>(<a class='struct' href='../hyper/client/response/struct.Response.html' title='hyper::client::response::Response'>Response</a>, <a class='struct' href='../google_youtubereporting1/struct.ListReportTypesResponse.html' title='google_youtubereporting1::ListReportTypesResponse'>ListReportTypesResponse</a>)</a>&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_youtubereporting1/struct.ReportTypeListCall.html' title='google_youtubereporting1::ReportTypeListCall'>ReportTypeListCall</a>&lt;'a, C, A&gt; <span class='where'>where C: <a class='trait' href='https://doc.rust-lang.org/nightly/core/borrow/trait.BorrowMut.html' title='core::borrow::BorrowMut'>BorrowMut</a>&lt;<a class='struct' href='../hyper/client/struct.Client.html' title='hyper::client::Client'>Client</a>&gt;, A: <a class='trait' href='../yup_oauth2/helper/trait.GetToken.html' title='yup_oauth2::helper::GetToken'>GetToken</a></span></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-2308' class='srclink' href='../src/google_youtubereporting1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-youtubereporting1-b3443e9f455486e3/out/lib.rs.html#4807-5016' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.doit' class='method'><code>fn <a href='#method.doit' class='fnname'>doit</a>(self) -&gt; <a class='type' href='../google_youtubereporting1/type.Result.html' title='google_youtubereporting1::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>(</a><a class='struct' href='../hyper/client/response/struct.Response.html' title='hyper::client::response::Response'>Response</a>, <a class='struct' href='../google_youtubereporting1/struct.ListReportTypesResponse.html' title='google_youtubereporting1::ListReportTypesResponse'>ListReportTypesResponse</a><a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>)</a>&gt;</code></h4>
 <div class='docblock'><p>Perform the operation you have build so far.</p>
 </div><h4 id='method.page_token' class='method'><code>fn <a href='#method.page_token' class='fnname'>page_token</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_youtubereporting1/struct.ReportTypeListCall.html' title='google_youtubereporting1::ReportTypeListCall'>ReportTypeListCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>A token identifying a page of results the server should return. Typically, this is the value of ListReportTypesResponse.next_page_token returned in response to the previous call to the <code>ListReportTypes</code> method.</p>
@@ -80,6 +84,10 @@ It is not used directly, but through a <code>ReportTypeMethods</code> instance.<
 <div class='docblock'><p>The content owner&#39;s external ID on which behalf the user is acting on. If not set, the user is acting for himself (his own channel).</p>
 
 <p>Sets the <em>on behalf of content owner</em> query property to the given value.</p>
+</div><h4 id='method.include_system_managed' class='method'><code>fn <a href='#method.include_system_managed' class='fnname'>include_system_managed</a>(self, new_value: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>) -&gt; <a class='struct' href='../google_youtubereporting1/struct.ReportTypeListCall.html' title='google_youtubereporting1::ReportTypeListCall'>ReportTypeListCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>If set to true, also system-managed report types will be returned; otherwise only the report types that can be used to create new reporting jobs will be returned.</p>
+
+<p>Sets the <em>include system managed</em> query property to the given value.</p>
 </div><h4 id='method.delegate' class='method'><code>fn <a href='#method.delegate' class='fnname'>delegate</a>(self, new_value: &amp;'a mut <a class='trait' href='../google_youtubereporting1/trait.Delegate.html' title='google_youtubereporting1::Delegate'>Delegate</a>) -&gt; <a class='struct' href='../google_youtubereporting1/struct.ReportTypeListCall.html' title='google_youtubereporting1::ReportTypeListCall'>ReportTypeListCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>The delegate implementation is consulted whenever there is an intermediate result, or if something goes wrong
 while executing the actual API request.</p>
@@ -123,7 +131,8 @@ tokens for more than one scope.</p>
 <p>Usually there is more than one suitable scope to authorize an operation, some of which may
 encompass more rights than others. For example, for listing resources, a <em>read-only</em> scope will be
 sufficient, a read-write scope will do as well.</p>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_youtubereporting1/trait.CallBuilder.html' title='google_youtubereporting1::CallBuilder'>CallBuilder</a> for <a class='struct' href='../google_youtubereporting1/struct.ReportTypeListCall.html' title='google_youtubereporting1::ReportTypeListCall'>ReportTypeListCall</a>&lt;'a, C, A&gt;</code></h3><div class='impl-items'></div></section>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_youtubereporting1/trait.CallBuilder.html' title='google_youtubereporting1::CallBuilder'>CallBuilder</a> for <a class='struct' href='../google_youtubereporting1/struct.ReportTypeListCall.html' title='google_youtubereporting1::ReportTypeListCall'>ReportTypeListCall</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-2304' class='srclink' href='../src/google_youtubereporting1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-youtubereporting1-b3443e9f455486e3/out/lib.rs.html#4806' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
@@ -146,6 +155,8 @@ sufficient, a read-write scope will do as well.</p>
                     <dd>Move down in search results</dd>
                     <dt>&#9166;</dt>
                     <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
                 </dl>
             </div>
 
@@ -166,7 +177,7 @@ sufficient, a read-write scope will do as well.</p>
 
                 <p>
                     Search functions by type signature (e.g.
-                    <code>vec -> usize</code>)
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
                 </p>
             </div>
         </div>

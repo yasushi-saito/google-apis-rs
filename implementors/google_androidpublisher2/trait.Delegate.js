@@ -1,5 +1,5 @@
 (function() {var implementors = {};
-implementors['google_androidpublisher2'] = [];
+implementors["google_androidpublisher2"] = [];
 
             if (window.register_implementors) {
                 window.register_implementors(implementors);

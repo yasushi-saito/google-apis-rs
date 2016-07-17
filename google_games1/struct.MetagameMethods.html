@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
+    
 
     
     
@@ -43,10 +44,10 @@
 
     <section id='main' class="content struct">
 <h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_games1</a>::<wbr><a class='struct' href=''>MetagameMethods</a></span><span class='out-of-band'><span id='render-detail'>
-            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
-                [<span class='inner'>&#x2212;</span>]
-            </a>
-        </span><a id='src-18275' class='srclink' href='../src/google_games1///Users/byron/dev/rs/google-apis-rs/target/debug/build/google-games1-47fadb9d815ee43e/out/lib.rs.html#32419-32421' title='goto source code'>[src]</a></span></h1>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-19772' class='srclink' href='../src/google_games1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-games1-699f2b2bf3075320/out/lib.rs.html#42839-42841' title='goto source code'>[src]</a></span></h1>
 <pre class='rust struct'>pub struct MetagameMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>metagame</em> resources.
@@ -54,6 +55,7 @@ It is not used directly, but through the <code>Games</code> hub.</p>
 
 <h1 id='example' class='section-header'><a href='#example'>Example</a></h1>
 <p>Instantiate a resource builder</p>
+
 <pre class='rust rust-example-rendered'>
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>hyper</span>;
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>yup_oauth2</span> <span class='kw'>as</span> <span class='ident'>oauth2</span>;
@@ -72,7 +74,8 @@ It is not used directly, but through the <code>Games</code> hub.</p>
 <span class='comment'>// like `get_metagame_config(...)` and `list_categories_by_player(...)`</span>
 <span class='comment'>// to build up your call.</span>
 <span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>metagame</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_games1/struct.MetagameMethods.html' title='google_games1::MetagameMethods'>MetagameMethods</a>&lt;'a, C, A&gt;</code></h3><div class='impl-items'><h4 id='method.list_categories_by_player' class='method'><code>fn <a href='#method.list_categories_by_player' class='fnname'>list_categories_by_player</a>(&amp;self, player_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, collection: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_games1/struct.MetagameListCategoriesByPlayerCall.html' title='google_games1::MetagameListCategoriesByPlayerCall'>MetagameListCategoriesByPlayerCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_games1/struct.MetagameMethods.html' title='google_games1::MetagameMethods'>MetagameMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-19781' class='srclink' href='../src/google_games1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-games1-699f2b2bf3075320/out/lib.rs.html#42843-42876' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.list_categories_by_player' class='method'><code>fn <a href='#method.list_categories_by_player' class='fnname'>list_categories_by_player</a>(&amp;self, player_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, collection: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_games1/struct.MetagameListCategoriesByPlayerCall.html' title='google_games1::MetagameListCategoriesByPlayerCall'>MetagameListCategoriesByPlayerCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>List play data aggregated per category for the player corresponding to playerId.</p>
@@ -86,7 +89,8 @@ It is not used directly, but through the <code>Games</code> hub.</p>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Return the metagame configuration data for the calling application.</p>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_games1/trait.MethodsBuilder.html' title='google_games1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_games1/struct.MetagameMethods.html' title='google_games1::MetagameMethods'>MetagameMethods</a>&lt;'a, C, A&gt;</code></h3><div class='impl-items'></div></section>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_games1/trait.MethodsBuilder.html' title='google_games1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_games1/struct.MetagameMethods.html' title='google_games1::MetagameMethods'>MetagameMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-19777' class='srclink' href='../src/google_games1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-games1-699f2b2bf3075320/out/lib.rs.html#42842' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
@@ -109,6 +113,8 @@ It is not used directly, but through the <code>Games</code> hub.</p>
                     <dd>Move down in search results</dd>
                     <dt>&#9166;</dt>
                     <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
                 </dl>
             </div>
 
@@ -129,7 +135,7 @@ It is not used directly, but through the <code>Games</code> hub.</p>
 
                 <p>
                     Search functions by type signature (e.g.
-                    <code>vec -> usize</code>)
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
                 </p>
             </div>
         </div>

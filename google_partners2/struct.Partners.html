@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
+    
 
     
     
@@ -43,16 +44,17 @@
 
     <section id='main' class="content struct">
 <h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_partners2</a>::<wbr><a class='struct' href=''>Partners</a></span><span class='out-of-band'><span id='render-detail'>
-            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
-                [<span class='inner'>&#x2212;</span>]
-            </a>
-        </span><a id='src-974' class='srclink' href='../src/google_partners2///Users/byron/dev/rs/google-apis-rs/target/debug/build/google-partners2-bb0dbe0d62d2986d/out/lib.rs.html#1575-1579' title='goto source code'>[src]</a></span></h1>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-1008' class='srclink' href='../src/google_partners2/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-partners2-230f631ff14dae63/out/lib.rs.html#2078-2082' title='goto source code'>[src]</a></span></h1>
 <pre class='rust struct'>pub struct Partners&lt;C, A&gt; {
     // some fields omitted
 }</pre><div class='docblock'><p>Central instance to access all Partners related resource activities</p>
 
 <h1 id='examples' class='section-header'><a href='#examples'>Examples</a></h1>
 <p>Instantiate a new hub</p>
+
 <pre class='rust rust-example-rendered'>
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>hyper</span>;
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>yup_oauth2</span> <span class='kw'>as</span> <span class='ident'>oauth2</span>;
@@ -102,17 +104,19 @@
     },
     <span class='prelude-val'>Ok</span>(<span class='ident'>res</span>) <span class='op'>=&gt;</span> <span class='macro'>println</span><span class='macro'>!</span>(<span class='string'>&quot;Success: {:?}&quot;</span>, <span class='ident'>res</span>),
 }</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_partners2/struct.Partners.html' title='google_partners2::Partners'>Partners</a>&lt;C, A&gt; <span class='where'>where C: <a class='trait' href='https://doc.rust-lang.org/nightly/core/borrow/trait.BorrowMut.html' title='core::borrow::BorrowMut'>BorrowMut</a>&lt;<a class='struct' href='../hyper/client/struct.Client.html' title='hyper::client::Client'>Client</a>&gt;, A: <a class='trait' href='../yup_oauth2/helper/trait.GetToken.html' title='yup_oauth2::helper::GetToken'>GetToken</a></span></code></h3><div class='impl-items'><h4 id='method.new' class='method'><code>fn <a href='#method.new' class='fnname'>new</a>(client: C, authenticator: A) -&gt; <a class='struct' href='../google_partners2/struct.Partners.html' title='google_partners2::Partners'>Partners</a>&lt;C, A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_partners2/struct.Partners.html' title='google_partners2::Partners'>Partners</a>&lt;C, A&gt; <span class='where'>where C: <a class='trait' href='https://doc.rust-lang.org/nightly/core/borrow/trait.BorrowMut.html' title='core::borrow::BorrowMut'>BorrowMut</a>&lt;<a class='struct' href='../hyper/client/struct.Client.html' title='hyper::client::Client'>Client</a>&gt;, A: <a class='trait' href='../yup_oauth2/helper/trait.GetToken.html' title='yup_oauth2::helper::GetToken'>GetToken</a></span></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-1018' class='srclink' href='../src/google_partners2/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-partners2-230f631ff14dae63/out/lib.rs.html#2084-2112' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.new' class='method'><code>fn <a href='#method.new' class='fnname'>new</a>(client: C, authenticator: A) -&gt; <a class='struct' href='../google_partners2/struct.Partners.html' title='google_partners2::Partners'>Partners</a>&lt;C, A&gt;</code></h4>
 <h4 id='method.client_messages' class='method'><code>fn <a href='#method.client_messages' class='fnname'>client_messages</a>(&amp;'a self) -&gt; <a class='struct' href='../google_partners2/struct.ClientMessageMethods.html' title='google_partners2::ClientMessageMethods'>ClientMessageMethods</a>&lt;'a, C, A&gt;</code></h4>
 <h4 id='method.companies' class='method'><code>fn <a href='#method.companies' class='fnname'>companies</a>(&amp;'a self) -&gt; <a class='struct' href='../google_partners2/struct.CompanyMethods.html' title='google_partners2::CompanyMethods'>CompanyMethods</a>&lt;'a, C, A&gt;</code></h4>
 <h4 id='method.user_events' class='method'><code>fn <a href='#method.user_events' class='fnname'>user_events</a>(&amp;'a self) -&gt; <a class='struct' href='../google_partners2/struct.UserEventMethods.html' title='google_partners2::UserEventMethods'>UserEventMethods</a>&lt;'a, C, A&gt;</code></h4>
 <h4 id='method.user_states' class='method'><code>fn <a href='#method.user_states' class='fnname'>user_states</a>(&amp;'a self) -&gt; <a class='struct' href='../google_partners2/struct.UserStateMethods.html' title='google_partners2::UserStateMethods'>UserStateMethods</a>&lt;'a, C, A&gt;</code></h4>
 <h4 id='method.user_agent' class='method'><code>fn <a href='#method.user_agent' class='fnname'>user_agent</a>(&amp;mut self, agent_name: <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>) -&gt; <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a></code></h4>
 <div class='docblock'><p>Set the user-agent header field to use in all requests to the server.
-It defaults to <code>google-api-rust-client/0.1.11</code>.</p>
+It defaults to <code>google-api-rust-client/0.1.14</code>.</p>
 
 <p>Returns the previously set user-agent.</p>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_partners2/trait.Hub.html' title='google_partners2::Hub'>Hub</a> for <a class='struct' href='../google_partners2/struct.Partners.html' title='google_partners2::Partners'>Partners</a>&lt;C, A&gt;</code></h3><div class='impl-items'></div></section>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_partners2/trait.Hub.html' title='google_partners2::Hub'>Hub</a> for <a class='struct' href='../google_partners2/struct.Partners.html' title='google_partners2::Partners'>Partners</a>&lt;C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-1014' class='srclink' href='../src/google_partners2/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-partners2-230f631ff14dae63/out/lib.rs.html#2083' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
@@ -135,6 +139,8 @@ It defaults to <code>google-api-rust-client/0.1.11</code>.</p>
                     <dd>Move down in search results</dd>
                     <dt>&#9166;</dt>
                     <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
                 </dl>
             </div>
 
@@ -155,7 +161,7 @@ It defaults to <code>google-api-rust-client/0.1.11</code>.</p>
 
                 <p>
                     Search functions by type signature (e.g.
-                    <code>vec -> usize</code>)
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
                 </p>
             </div>
         </div>

@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
+    
 
     
     
@@ -43,10 +44,10 @@
 
     <section id='main' class="content struct">
 <h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_dfareporting2d1</a>::<wbr><a class='struct' href=''>Report</a></span><span class='out-of-band'><span id='render-detail'>
-            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
-                [<span class='inner'>&#x2212;</span>]
-            </a>
-        </span><a id='src-13902' class='srclink' href='../src/google_dfareporting2d1///Users/byron/dev/rs/google-apis-rs/target/debug/build/google-dfareporting2d1-457ba1c9ae9508e5/out/lib.rs.html#25060-25097' title='goto source code'>[src]</a></span></h1>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-15036' class='srclink' href='../src/google_dfareporting2d1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-dfareporting2d1-050078da1b91acf0/out/lib.rs.html#37042-37079' title='goto source code'>[src]</a></span></h1>
 <pre class='rust struct'>pub struct Report {
     pub owner_profile_id: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
     pub sub_account_id: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
@@ -86,48 +87,56 @@ The list links the activity name, along with information about where it is used 
 </ul>
 </div><h2 class='fields'>Fields</h2>
 <table><tr class='stab '>
-                                  <td id='structfield.owner_profile_id'><code>owner_profile_id</code></td><td><div class='docblock'><p>The user profile id of the owner of this report.</p>
+                             <td id='structfield.owner_profile_id'><code>owner_profile_id</code></td><td><div class='docblock'><p>The user profile id of the owner of this report.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.sub_account_id'><code>sub_account_id</code></td><td><div class='docblock'><p>The subaccount ID to which this report belongs if applicable.</p>
+                             <td id='structfield.sub_account_id'><code>sub_account_id</code></td><td><div class='docblock'><p>The subaccount ID to which this report belongs if applicable.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.schedule'><code>schedule</code></td><td><div class='docblock'><p>The report&#39;s schedule. Can only be set if the report&#39;s &#39;dateRange&#39; is a relative date range and the relative date range is not &quot;TODAY&quot;.</p>
+                             <td id='structfield.schedule'><code>schedule</code></td><td><div class='docblock'><p>The report&#39;s schedule. Can only be set if the report&#39;s &#39;dateRange&#39; is a relative date range and the relative date range is not &quot;TODAY&quot;.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.path_to_conversion_criteria'><code>path_to_conversion_criteria</code></td><td><div class='docblock'><p>The report criteria for a report of type &quot;PATH_TO_CONVERSION&quot;.</p>
+                             <td id='structfield.path_to_conversion_criteria'><code>path_to_conversion_criteria</code></td><td><div class='docblock'><p>The report criteria for a report of type &quot;PATH_TO_CONVERSION&quot;.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.reach_criteria'><code>reach_criteria</code></td><td><div class='docblock'><p>The report criteria for a report of type &quot;REACH&quot;.</p>
+                             <td id='structfield.reach_criteria'><code>reach_criteria</code></td><td><div class='docblock'><p>The report criteria for a report of type &quot;REACH&quot;.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.floodlight_criteria'><code>floodlight_criteria</code></td><td><div class='docblock'><p>The report criteria for a report of type &quot;FLOODLIGHT&quot;.</p>
+                             <td id='structfield.floodlight_criteria'><code>floodlight_criteria</code></td><td><div class='docblock'><p>The report criteria for a report of type &quot;FLOODLIGHT&quot;.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.file_name'><code>file_name</code></td><td><div class='docblock'><p>The filename used when generating report files for this report.</p>
+                             <td id='structfield.file_name'><code>file_name</code></td><td><div class='docblock'><p>The filename used when generating report files for this report.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.delivery'><code>delivery</code></td><td><div class='docblock'><p>The report&#39;s email delivery settings.</p>
+                             <td id='structfield.delivery'><code>delivery</code></td><td><div class='docblock'><p>The report&#39;s email delivery settings.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.last_modified_time'><code>last_modified_time</code></td><td><div class='docblock'><p>The timestamp (in milliseconds since epoch) of when this report was last modified.</p>
+                             <td id='structfield.last_modified_time'><code>last_modified_time</code></td><td><div class='docblock'><p>The timestamp (in milliseconds since epoch) of when this report was last modified.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.cross_dimension_reach_criteria'><code>cross_dimension_reach_criteria</code></td><td><div class='docblock'><p>The report criteria for a report of type &quot;CROSS_DIMENSION_REACH&quot;.</p>
+                             <td id='structfield.cross_dimension_reach_criteria'><code>cross_dimension_reach_criteria</code></td><td><div class='docblock'><p>The report criteria for a report of type &quot;CROSS_DIMENSION_REACH&quot;.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.account_id'><code>account_id</code></td><td><div class='docblock'><p>The account ID to which this report belongs.</p>
+                             <td id='structfield.account_id'><code>account_id</code></td><td><div class='docblock'><p>The account ID to which this report belongs.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.kind'><code>kind</code></td><td><div class='docblock'><p>The kind of resource this is, in this case dfareporting#report.</p>
+                             <td id='structfield.kind'><code>kind</code></td><td><div class='docblock'><p>The kind of resource this is, in this case dfareporting#report.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.name'><code>name</code></td><td><div class='docblock'><p>The name of the report.</p>
+                             <td id='structfield.name'><code>name</code></td><td><div class='docblock'><p>The name of the report.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.format'><code>format</code></td><td><div class='docblock'><p>The output format of the report. If not specified, default format is &quot;CSV&quot;. Note that the actual format in the completed report file might differ if for instance the report&#39;s size exceeds the format&#39;s capabilities. &quot;CSV&quot; will then be the fallback format.</p>
+                             <td id='structfield.format'><code>format</code></td><td><div class='docblock'><p>The output format of the report. If not specified, default format is &quot;CSV&quot;. Note that the actual format in the completed report file might differ if for instance the report&#39;s size exceeds the format&#39;s capabilities. &quot;CSV&quot; will then be the fallback format.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.id'><code>id</code></td><td><div class='docblock'><p>The unique ID identifying this report resource.</p>
+                             <td id='structfield.id'><code>id</code></td><td><div class='docblock'><p>The unique ID identifying this report resource.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.etag'><code>etag</code></td><td><div class='docblock'><p>The eTag of this response for caching purposes.</p>
+                             <td id='structfield.etag'><code>etag</code></td><td><div class='docblock'><p>The eTag of this response for caching purposes.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.criteria'><code>criteria</code></td><td><div class='docblock'><p>The report criteria for a report of type &quot;STANDARD&quot;.</p>
+                             <td id='structfield.criteria'><code>criteria</code></td><td><div class='docblock'><p>The report criteria for a report of type &quot;STANDARD&quot;.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.type_'><code>type_</code></td><td><div class='docblock'><p>The type of the report.</p>
-</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl <a class='trait' href='../serde/de/trait.Deserialize.html' title='serde::de::Deserialize'>Deserialize</a> for <a class='struct' href='../google_dfareporting2d1/struct.Report.html' title='google_dfareporting2d1::Report'>Report</a></code></h3><div class='impl-items'><h4 id='method.deserialize' class='method'><code>fn <a href='../serde/de/trait.Deserialize.html#method.deserialize' class='fnname'>deserialize</a>&lt;__D&gt;(deserializer: &amp;mut __D) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../google_dfareporting2d1/struct.Report.html' title='google_dfareporting2d1::Report'>Report</a>, __D::Error&gt; <span class='where'>where __D: <a class='trait' href='../serde/de/trait.Deserializer.html' title='serde::de::Deserializer'>Deserializer</a></span></code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='../serde/ser/trait.Serialize.html' title='serde::ser::Serialize'>Serialize</a> for <a class='struct' href='../google_dfareporting2d1/struct.Report.html' title='google_dfareporting2d1::Report'>Report</a></code></h3><div class='impl-items'><h4 id='method.serialize' class='method'><code>fn <a href='../serde/ser/trait.Serialize.html#method.serialize' class='fnname'>serialize</a>&lt;__S&gt;(&amp;self, serializer: &amp;mut __S) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, __S::Error&gt; <span class='where'>where __S: <a class='trait' href='../serde/ser/trait.Serializer.html' title='serde::ser::Serializer'>Serializer</a></span></code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='../google_dfareporting2d1/trait.RequestValue.html' title='google_dfareporting2d1::RequestValue'>RequestValue</a> for <a class='struct' href='../google_dfareporting2d1/struct.Report.html' title='google_dfareporting2d1::Report'>Report</a></code></h3><div class='impl-items'></div><h3 class='impl'><code>impl <a class='trait' href='../google_dfareporting2d1/trait.Resource.html' title='google_dfareporting2d1::Resource'>Resource</a> for <a class='struct' href='../google_dfareporting2d1/struct.Report.html' title='google_dfareporting2d1::Report'>Report</a></code></h3><div class='impl-items'></div><h3 class='impl'><code>impl <a class='trait' href='../google_dfareporting2d1/trait.ResponseResult.html' title='google_dfareporting2d1::ResponseResult'>ResponseResult</a> for <a class='struct' href='../google_dfareporting2d1/struct.Report.html' title='google_dfareporting2d1::Report'>Report</a></code></h3><div class='impl-items'></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_dfareporting2d1/struct.Report.html' title='google_dfareporting2d1::Report'>Report</a></code></h3><div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#method.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_dfareporting2d1/struct.Report.html' title='google_dfareporting2d1::Report'>Report</a></code></h3><div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.Report.html' title='google_dfareporting2d1::Report'>Report</a></code></h4>
-<h4 id='method.clone_from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_dfareporting2d1/struct.Report.html' title='google_dfareporting2d1::Report'>Report</a></code></h3><div class='impl-items'><h4 id='method.default' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#method.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_dfareporting2d1/struct.Report.html' title='google_dfareporting2d1::Report'>Report</a></code></h4>
-</div></section>
+                             <td id='structfield.type_'><code>type_</code></td><td><div class='docblock'><p>The type of the report.</p>
+</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='../google_dfareporting2d1/trait.RequestValue.html' title='google_dfareporting2d1::RequestValue'>RequestValue</a> for <a class='struct' href='../google_dfareporting2d1/struct.Report.html' title='google_dfareporting2d1::Report'>Report</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-15500' class='srclink' href='../src/google_dfareporting2d1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-dfareporting2d1-050078da1b91acf0/out/lib.rs.html#38105' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='../google_dfareporting2d1/trait.Resource.html' title='google_dfareporting2d1::Resource'>Resource</a> for <a class='struct' href='../google_dfareporting2d1/struct.Report.html' title='google_dfareporting2d1::Report'>Report</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-15501' class='srclink' href='../src/google_dfareporting2d1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-dfareporting2d1-050078da1b91acf0/out/lib.rs.html#38106' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='../google_dfareporting2d1/trait.ResponseResult.html' title='google_dfareporting2d1::ResponseResult'>ResponseResult</a> for <a class='struct' href='../google_dfareporting2d1/struct.Report.html' title='google_dfareporting2d1::Report'>Report</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-15502' class='srclink' href='../src/google_dfareporting2d1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-dfareporting2d1-050078da1b91acf0/out/lib.rs.html#38107' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_dfareporting2d1/struct.Report.html' title='google_dfareporting2d1::Report'>Report</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-15055' class='srclink' href='../src/google_dfareporting2d1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-dfareporting2d1-050078da1b91acf0/out/lib.rs.html#37041' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.default' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_dfareporting2d1/struct.Report.html' title='google_dfareporting2d1::Report'>Report</a></code></h4>
+<div class='docblock'><p>Returns the &quot;default value&quot; for a type. <a href="https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_dfareporting2d1/struct.Report.html' title='google_dfareporting2d1::Report'>Report</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-15057' class='srclink' href='../src/google_dfareporting2d1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-dfareporting2d1-050078da1b91acf0/out/lib.rs.html#37041' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.Report.html' title='google_dfareporting2d1::Report'>Report</a></code></h4>
+<div class='docblock'><p>Returns a copy of the value. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone">Read more</a></p>
+</div><h4 id='method.clone_from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></h4>
+<div class='docblock'><p>Performs copy-assignment from <code>source</code>. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_dfareporting2d1/struct.Report.html' title='google_dfareporting2d1::Report'>Report</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-15078' class='srclink' href='../src/google_dfareporting2d1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-dfareporting2d1-050078da1b91acf0/out/lib.rs.html#37041' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
+<div class='docblock'><p>Formats the value using the given formatter.</p>
+</div></div></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
@@ -150,6 +159,8 @@ The list links the activity name, along with information about where it is used 
                     <dd>Move down in search results</dd>
                     <dt>&#9166;</dt>
                     <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
                 </dl>
             </div>
 
@@ -170,7 +181,7 @@ The list links the activity name, along with information about where it is used 
 
                 <p>
                     Search functions by type signature (e.g.
-                    <code>vec -> usize</code>)
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
                 </p>
             </div>
         </div>

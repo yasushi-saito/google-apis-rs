@@ -1,5 +1,5 @@
 (function() {var implementors = {};
-implementors['google_calendar3'] = [];
+implementors["google_calendar3"] = [];
 
             if (window.register_implementors) {
                 window.register_implementors(implementors);

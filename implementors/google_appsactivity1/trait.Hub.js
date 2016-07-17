@@ -1,5 +1,5 @@
 (function() {var implementors = {};
-implementors['google_appsactivity1'] = [];
+implementors["google_appsactivity1"] = [];
 
             if (window.register_implementors) {
                 window.register_implementors(implementors);

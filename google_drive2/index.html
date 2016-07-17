@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
+    
 
     
     
@@ -43,11 +44,11 @@
 
     <section id='main' class="content mod">
 <h1 class='fqn'><span class='in-band'>Crate <a class='mod' href=''>google_drive2</a></span><span class='out-of-band'><span id='render-detail'>
-            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
-                [<span class='inner'>&#x2212;</span>]
-            </a>
-        </span><a id='src-0' class='srclink' href='../src/google_drive2/lib.rs.html#5-252' title='goto source code'>[src]</a></span></h1>
-<div class='docblock'><p>This documentation was generated from <em>drive</em> crate version <em>0.1.11+20160126</em>, where <em>20160126</em> is the exact revision of the <em>drive:v2</em> schema built by the <a href="http://www.makotemplates.org/">mako</a> code generator <em>v0.1.11</em>.</p>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-0' class='srclink' href='../src/google_drive2/src/lib.rs.html#5-260' title='goto source code'>[src]</a></span></h1>
+<div class='docblock'><p>This documentation was generated from <em>drive</em> crate version <em>0.1.14+20160331</em>, where <em>20160331</em> is the exact revision of the <em>drive:v2</em> schema built by the <a href="http://www.makotemplates.org/">mako</a> code generator <em>v0.1.14</em>.</p>
 
 <p>Everything else about the <em>drive</em> <em>v2</em> API can be found at the
 <a href="https://developers.google.com/drive/">official documentation site</a>.
@@ -90,7 +91,7 @@ The original source code is <a href="https://github.com/Byron/google-apis-rs/tre
 <li><a href="struct.File.html">files</a>
 
 <ul>
-<li><a href="struct.FileCopyCall.html"><em>copy</em></a>, <a href="struct.FileDeleteCall.html"><em>delete</em></a>, <a href="struct.FileEmptyTrashCall.html"><em>empty trash</em></a>, <a href="struct.FileGenerateIdCall.html"><em>generate ids</em></a>, <a href="struct.FileGetCall.html"><em>get</em></a>, <a href="struct.FileInsertCall.html"><em>insert</em></a>, <a href="struct.FileListCall.html"><em>list</em></a>, <a href="struct.FilePatchCall.html"><em>patch</em></a>, <a href="struct.FileTouchCall.html"><em>touch</em></a>, <a href="struct.FileTrashCall.html"><em>trash</em></a>, <a href="struct.FileUntrashCall.html"><em>untrash</em></a>, <a href="struct.FileUpdateCall.html"><em>update</em></a> and <a href="struct.FileWatchCall.html"><em>watch</em></a></li>
+<li><a href="struct.FileCopyCall.html"><em>copy</em></a>, <a href="struct.FileDeleteCall.html"><em>delete</em></a>, <a href="struct.FileEmptyTrashCall.html"><em>empty trash</em></a>, <a href="struct.FileExportCall.html"><em>export</em></a>, <a href="struct.FileGenerateIdCall.html"><em>generate ids</em></a>, <a href="struct.FileGetCall.html"><em>get</em></a>, <a href="struct.FileInsertCall.html"><em>insert</em></a>, <a href="struct.FileListCall.html"><em>list</em></a>, <a href="struct.FilePatchCall.html"><em>patch</em></a>, <a href="struct.FileTouchCall.html"><em>touch</em></a>, <a href="struct.FileTrashCall.html"><em>trash</em></a>, <a href="struct.FileUntrashCall.html"><em>untrash</em></a>, <a href="struct.FileUpdateCall.html"><em>update</em></a> and <a href="struct.FileWatchCall.html"><em>watch</em></a></li>
 </ul></li>
 <li>parents
 
@@ -137,6 +138,7 @@ The original source code is <a href="https://github.com/Byron/google-apis-rs/tre
 <ul>
 <li><a href="struct.FileWatchCall.html"><em>watch files</em></a></li>
 <li><a href="struct.RealtimeGetCall.html"><em>get realtime</em></a></li>
+<li><a href="struct.FileExportCall.html"><em>export files</em></a></li>
 <li><a href="struct.FileGetCall.html"><em>get files</em></a></li>
 </ul>
 
@@ -185,10 +187,12 @@ allow access to individual <a href="trait.CallBuilder.html"><em>Call Builders</e
 <p>All <em>structures</em> are marked with applicable traits to further categorize them and ease browsing.</p>
 
 <p>Generally speaking, you can invoke <em>Activities</em> like this:</p>
+
 <pre class='rust rust-example-rendered'>
 <span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>resource</span>().<span class='ident'>activity</span>(...).<span class='ident'>doit</span>()</pre>
 
 <p>Or specifically ...</p>
+
 <pre class='rust rust-example-rendered'>
 <span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>files</span>().<span class='ident'>watch</span>(...).<span class='ident'>doit</span>()
 <span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>files</span>().<span class='ident'>empty_trash</span>(...).<span class='ident'>doit</span>()
@@ -202,7 +206,8 @@ allow access to individual <a href="trait.CallBuilder.html"><em>Call Builders</e
 <span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>files</span>().<span class='ident'>untrash</span>(...).<span class='ident'>doit</span>()
 <span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>files</span>().<span class='ident'>trash</span>(...).<span class='ident'>doit</span>()
 <span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>files</span>().<span class='ident'>touch</span>(...).<span class='ident'>doit</span>()
-<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>files</span>().<span class='ident'>get</span>(...).<span class='ident'>doit</span>()</pre>
+<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>files</span>().<span class='ident'>get</span>(...).<span class='ident'>doit</span>()
+<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>files</span>().<span class='ident'>export</span>(...).<span class='ident'>doit</span>()</pre>
 
 <p>The <code>resource()</code> and <code>activity(...)</code> calls create <a href="http://en.wikipedia.org/wiki/Builder_pattern">builders</a>. The second one dealing with <code>Activities</code> 
 supports various methods to configure the impending operation (not shown here). It is made such that all required arguments have to be 
@@ -217,7 +222,8 @@ The <code>doit()</code> method performs the actual communication with the server
 google-drive2 = &quot;*&quot;
 </code></pre>
 
-<h2 id='a-complete-example' class='section-header'><a href='#a-complete-example'>A complete example</a></h2><pre class='rust rust-example-rendered'>
+<h2 id='a-complete-example' class='section-header'><a href='#a-complete-example'>A complete example</a></h2>
+<pre class='rust rust-example-rendered'>
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>hyper</span>;
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>yup_oauth2</span> <span class='kw'>as</span> <span class='ident'>oauth2</span>;
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>google_drive2</span> <span class='kw'>as</span> <span class='ident'>drive2</span>;
@@ -248,19 +254,19 @@ google-drive2 = &quot;*&quot;
 <span class='comment'>// execute the final call using `doit()`.</span>
 <span class='comment'>// Values shown here are possibly random and not representative !</span>
 <span class='kw'>let</span> <span class='ident'>result</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>files</span>().<span class='ident'>patch</span>(<span class='ident'>req</span>, <span class='string'>&quot;fileId&quot;</span>)
-             .<span class='ident'>use_content_as_indexable_text</span>(<span class='boolval'>true</span>)
-             .<span class='ident'>update_viewed_date</span>(<span class='boolval'>true</span>)
-             .<span class='ident'>timed_text_track_name</span>(<span class='string'>&quot;Stet&quot;</span>)
-             .<span class='ident'>timed_text_language</span>(<span class='string'>&quot;sed&quot;</span>)
-             .<span class='ident'>set_modified_date</span>(<span class='boolval'>false</span>)
-             .<span class='ident'>remove_parents</span>(<span class='string'>&quot;sanctus&quot;</span>)
-             .<span class='ident'>pinned</span>(<span class='boolval'>true</span>)
-             .<span class='ident'>ocr_language</span>(<span class='string'>&quot;Lorem&quot;</span>)
-             .<span class='ident'>ocr</span>(<span class='boolval'>false</span>)
-             .<span class='ident'>new_revision</span>(<span class='boolval'>true</span>)
-             .<span class='ident'>modified_date_behavior</span>(<span class='string'>&quot;eirmod&quot;</span>)
-             .<span class='ident'>convert</span>(<span class='boolval'>true</span>)
-             .<span class='ident'>add_parents</span>(<span class='string'>&quot;gubergren&quot;</span>)
+             .<span class='ident'>use_content_as_indexable_text</span>(<span class='boolvalue'>false</span>)
+             .<span class='ident'>update_viewed_date</span>(<span class='boolvalue'>true</span>)
+             .<span class='ident'>timed_text_track_name</span>(<span class='string'>&quot;dolor&quot;</span>)
+             .<span class='ident'>timed_text_language</span>(<span class='string'>&quot;sanctus&quot;</span>)
+             .<span class='ident'>set_modified_date</span>(<span class='boolvalue'>true</span>)
+             .<span class='ident'>remove_parents</span>(<span class='string'>&quot;Lorem&quot;</span>)
+             .<span class='ident'>pinned</span>(<span class='boolvalue'>false</span>)
+             .<span class='ident'>ocr_language</span>(<span class='string'>&quot;consetetur&quot;</span>)
+             .<span class='ident'>ocr</span>(<span class='boolvalue'>false</span>)
+             .<span class='ident'>new_revision</span>(<span class='boolvalue'>true</span>)
+             .<span class='ident'>modified_date_behavior</span>(<span class='string'>&quot;gubergren&quot;</span>)
+             .<span class='ident'>convert</span>(<span class='boolvalue'>false</span>)
+             .<span class='ident'>add_parents</span>(<span class='string'>&quot;sadipscing&quot;</span>)
              .<span class='ident'>doit</span>();
  
 <span class='kw'>match</span> <span class='ident'>result</span> {
@@ -327,1245 +333,986 @@ These will always take a single argument, for which the following statements are
 <p>Arguments will always be copied or cloned into the builder, to make them independent of their original life times.</p>
 </div><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
 <table>
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.About.html'
-                               title='google_drive2::About'>About</a></td>
-                        <td class='docblock short'>
-                             <p>An item with user information and settings.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.AboutAdditionalRoleInfo.html'
-                               title='google_drive2::AboutAdditionalRoleInfo'>AboutAdditionalRoleInfo</a></td>
-                        <td class='docblock short'>
-                             <p>Information about supported additional roles per file type. The most specific type takes precedence.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.AboutAdditionalRoleInfoRoleSets.html'
-                               title='google_drive2::AboutAdditionalRoleInfoRoleSets'>AboutAdditionalRoleInfoRoleSets</a></td>
-                        <td class='docblock short'>
-                             <p>The supported additional roles per primary role.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.AboutExportFormats.html'
-                               title='google_drive2::AboutExportFormats'>AboutExportFormats</a></td>
-                        <td class='docblock short'>
-                             <p>The allowable export formats.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.AboutFeatures.html'
-                               title='google_drive2::AboutFeatures'>AboutFeatures</a></td>
-                        <td class='docblock short'>
-                             <p>List of additional features enabled on this account.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.AboutGetCall.html'
-                               title='google_drive2::AboutGetCall'>AboutGetCall</a></td>
-                        <td class='docblock short'>
-                             <p>Gets the information about the current user along with Drive API settings</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.AboutImportFormats.html'
-                               title='google_drive2::AboutImportFormats'>AboutImportFormats</a></td>
-                        <td class='docblock short'>
-                             <p>The allowable import formats.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.AboutMaxUploadSizes.html'
-                               title='google_drive2::AboutMaxUploadSizes'>AboutMaxUploadSizes</a></td>
-                        <td class='docblock short'>
-                             <p>List of max upload sizes for each file type. The most specific type takes precedence.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.AboutMethods.html'
-                               title='google_drive2::AboutMethods'>AboutMethods</a></td>
-                        <td class='docblock short'>
-                             <p>A builder providing access to all methods supported on <em>about</em> resources.
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.About.html'
+                                  title='google_drive2::About'>About</a></td>
+                           <td class='docblock short'>
+                                <p>An item with user information and settings.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AboutAdditionalRoleInfo.html'
+                                  title='google_drive2::AboutAdditionalRoleInfo'>AboutAdditionalRoleInfo</a></td>
+                           <td class='docblock short'>
+                                <p>Information about supported additional roles per file type. The most specific type takes precedence.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AboutAdditionalRoleInfoRoleSets.html'
+                                  title='google_drive2::AboutAdditionalRoleInfoRoleSets'>AboutAdditionalRoleInfoRoleSets</a></td>
+                           <td class='docblock short'>
+                                <p>The supported additional roles per primary role.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AboutExportFormats.html'
+                                  title='google_drive2::AboutExportFormats'>AboutExportFormats</a></td>
+                           <td class='docblock short'>
+                                <p>The allowable export formats.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AboutFeatures.html'
+                                  title='google_drive2::AboutFeatures'>AboutFeatures</a></td>
+                           <td class='docblock short'>
+                                <p>List of additional features enabled on this account.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AboutGetCall.html'
+                                  title='google_drive2::AboutGetCall'>AboutGetCall</a></td>
+                           <td class='docblock short'>
+                                <p>Gets the information about the current user along with Drive API settings</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AboutImportFormats.html'
+                                  title='google_drive2::AboutImportFormats'>AboutImportFormats</a></td>
+                           <td class='docblock short'>
+                                <p>The allowable import formats.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AboutMaxUploadSizes.html'
+                                  title='google_drive2::AboutMaxUploadSizes'>AboutMaxUploadSizes</a></td>
+                           <td class='docblock short'>
+                                <p>List of max upload sizes for each file type. The most specific type takes precedence.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AboutMethods.html'
+                                  title='google_drive2::AboutMethods'>AboutMethods</a></td>
+                           <td class='docblock short'>
+                                <p>A builder providing access to all methods supported on <em>about</em> resources.
 It is not used directly, but through the <code>Drive</code> hub.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.AboutQuotaBytesByService.html'
-                               title='google_drive2::AboutQuotaBytesByService'>AboutQuotaBytesByService</a></td>
-                        <td class='docblock short'>
-                             <p>The amount of storage quota used by different Google services.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.App.html'
-                               title='google_drive2::App'>App</a></td>
-                        <td class='docblock short'>
-                             <p>The apps resource provides a list of the apps that a user has installed, with information about each app&#39;s supported MIME types, file extensions, and other details.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.AppGetCall.html'
-                               title='google_drive2::AppGetCall'>AppGetCall</a></td>
-                        <td class='docblock short'>
-                             <p>Gets a specific app.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.AppIcons.html'
-                               title='google_drive2::AppIcons'>AppIcons</a></td>
-                        <td class='docblock short'>
-                             <p>The various icons for the app.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.AppList.html'
-                               title='google_drive2::AppList'>AppList</a></td>
-                        <td class='docblock short'>
-                             <p>A list of third-party applications which the user has installed or given access to Google Drive.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.AppListCall.html'
-                               title='google_drive2::AppListCall'>AppListCall</a></td>
-                        <td class='docblock short'>
-                             <p>Lists a user&#39;s installed apps.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.AppMethods.html'
-                               title='google_drive2::AppMethods'>AppMethods</a></td>
-                        <td class='docblock short'>
-                             <p>A builder providing access to all methods supported on <em>app</em> resources.
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AboutQuotaBytesByService.html'
+                                  title='google_drive2::AboutQuotaBytesByService'>AboutQuotaBytesByService</a></td>
+                           <td class='docblock short'>
+                                <p>The amount of storage quota used by different Google services.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.App.html'
+                                  title='google_drive2::App'>App</a></td>
+                           <td class='docblock short'>
+                                <p>The apps resource provides a list of the apps that a user has installed, with information about each app&#39;s supported MIME types, file extensions, and other details.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AppGetCall.html'
+                                  title='google_drive2::AppGetCall'>AppGetCall</a></td>
+                           <td class='docblock short'>
+                                <p>Gets a specific app.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AppIcons.html'
+                                  title='google_drive2::AppIcons'>AppIcons</a></td>
+                           <td class='docblock short'>
+                                <p>The various icons for the app.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AppList.html'
+                                  title='google_drive2::AppList'>AppList</a></td>
+                           <td class='docblock short'>
+                                <p>A list of third-party applications which the user has installed or given access to Google Drive.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AppListCall.html'
+                                  title='google_drive2::AppListCall'>AppListCall</a></td>
+                           <td class='docblock short'>
+                                <p>Lists a user&#39;s installed apps.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AppMethods.html'
+                                  title='google_drive2::AppMethods'>AppMethods</a></td>
+                           <td class='docblock short'>
+                                <p>A builder providing access to all methods supported on <em>app</em> resources.
 It is not used directly, but through the <code>Drive</code> hub.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.Change.html'
-                               title='google_drive2::Change'>Change</a></td>
-                        <td class='docblock short'>
-                             <p>Representation of a change to a file.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ChangeGetCall.html'
-                               title='google_drive2::ChangeGetCall'>ChangeGetCall</a></td>
-                        <td class='docblock short'>
-                             <p>Gets a specific change.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ChangeList.html'
-                               title='google_drive2::ChangeList'>ChangeList</a></td>
-                        <td class='docblock short'>
-                             <p>A list of changes for a user.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ChangeListCall.html'
-                               title='google_drive2::ChangeListCall'>ChangeListCall</a></td>
-                        <td class='docblock short'>
-                             <p>Lists the changes for a user.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ChangeMethods.html'
-                               title='google_drive2::ChangeMethods'>ChangeMethods</a></td>
-                        <td class='docblock short'>
-                             <p>A builder providing access to all methods supported on <em>change</em> resources.
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Change.html'
+                                  title='google_drive2::Change'>Change</a></td>
+                           <td class='docblock short'>
+                                <p>Representation of a change to a file.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ChangeGetCall.html'
+                                  title='google_drive2::ChangeGetCall'>ChangeGetCall</a></td>
+                           <td class='docblock short'>
+                                <p>Gets a specific change.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ChangeList.html'
+                                  title='google_drive2::ChangeList'>ChangeList</a></td>
+                           <td class='docblock short'>
+                                <p>A list of changes for a user.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ChangeListCall.html'
+                                  title='google_drive2::ChangeListCall'>ChangeListCall</a></td>
+                           <td class='docblock short'>
+                                <p>Lists the changes for a user.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ChangeMethods.html'
+                                  title='google_drive2::ChangeMethods'>ChangeMethods</a></td>
+                           <td class='docblock short'>
+                                <p>A builder providing access to all methods supported on <em>change</em> resources.
 It is not used directly, but through the <code>Drive</code> hub.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ChangeWatchCall.html'
-                               title='google_drive2::ChangeWatchCall'>ChangeWatchCall</a></td>
-                        <td class='docblock short'>
-                             <p>Subscribe to changes for a user.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.Channel.html'
-                               title='google_drive2::Channel'>Channel</a></td>
-                        <td class='docblock short'>
-                             <p>An notification channel used to watch for resource changes.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ChannelMethods.html'
-                               title='google_drive2::ChannelMethods'>ChannelMethods</a></td>
-                        <td class='docblock short'>
-                             <p>A builder providing access to all methods supported on <em>channel</em> resources.
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ChangeWatchCall.html'
+                                  title='google_drive2::ChangeWatchCall'>ChangeWatchCall</a></td>
+                           <td class='docblock short'>
+                                <p>Subscribe to changes for a user.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Channel.html'
+                                  title='google_drive2::Channel'>Channel</a></td>
+                           <td class='docblock short'>
+                                <p>An notification channel used to watch for resource changes.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ChannelMethods.html'
+                                  title='google_drive2::ChannelMethods'>ChannelMethods</a></td>
+                           <td class='docblock short'>
+                                <p>A builder providing access to all methods supported on <em>channel</em> resources.
 It is not used directly, but through the <code>Drive</code> hub.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ChannelStopCall.html'
-                               title='google_drive2::ChannelStopCall'>ChannelStopCall</a></td>
-                        <td class='docblock short'>
-                             <p>Stop watching resources through this channel</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ChildList.html'
-                               title='google_drive2::ChildList'>ChildList</a></td>
-                        <td class='docblock short'>
-                             <p>A list of children of a file.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ChildReference.html'
-                               title='google_drive2::ChildReference'>ChildReference</a></td>
-                        <td class='docblock short'>
-                             <p>A reference to a folder&#39;s child.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ChildrenDeleteCall.html'
-                               title='google_drive2::ChildrenDeleteCall'>ChildrenDeleteCall</a></td>
-                        <td class='docblock short'>
-                             <p>Removes a child from a folder.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ChildrenGetCall.html'
-                               title='google_drive2::ChildrenGetCall'>ChildrenGetCall</a></td>
-                        <td class='docblock short'>
-                             <p>Gets a specific child reference.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ChildrenInsertCall.html'
-                               title='google_drive2::ChildrenInsertCall'>ChildrenInsertCall</a></td>
-                        <td class='docblock short'>
-                             <p>Inserts a file into a folder.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ChildrenListCall.html'
-                               title='google_drive2::ChildrenListCall'>ChildrenListCall</a></td>
-                        <td class='docblock short'>
-                             <p>Lists a folder&#39;s children.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ChildrenMethods.html'
-                               title='google_drive2::ChildrenMethods'>ChildrenMethods</a></td>
-                        <td class='docblock short'>
-                             <p>A builder providing access to all methods supported on <em>children</em> resources.
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ChannelStopCall.html'
+                                  title='google_drive2::ChannelStopCall'>ChannelStopCall</a></td>
+                           <td class='docblock short'>
+                                <p>Stop watching resources through this channel</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ChildList.html'
+                                  title='google_drive2::ChildList'>ChildList</a></td>
+                           <td class='docblock short'>
+                                <p>A list of children of a file.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ChildReference.html'
+                                  title='google_drive2::ChildReference'>ChildReference</a></td>
+                           <td class='docblock short'>
+                                <p>A reference to a folder&#39;s child.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ChildrenDeleteCall.html'
+                                  title='google_drive2::ChildrenDeleteCall'>ChildrenDeleteCall</a></td>
+                           <td class='docblock short'>
+                                <p>Removes a child from a folder.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ChildrenGetCall.html'
+                                  title='google_drive2::ChildrenGetCall'>ChildrenGetCall</a></td>
+                           <td class='docblock short'>
+                                <p>Gets a specific child reference.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ChildrenInsertCall.html'
+                                  title='google_drive2::ChildrenInsertCall'>ChildrenInsertCall</a></td>
+                           <td class='docblock short'>
+                                <p>Inserts a file into a folder.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ChildrenListCall.html'
+                                  title='google_drive2::ChildrenListCall'>ChildrenListCall</a></td>
+                           <td class='docblock short'>
+                                <p>Lists a folder&#39;s children.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ChildrenMethods.html'
+                                  title='google_drive2::ChildrenMethods'>ChildrenMethods</a></td>
+                           <td class='docblock short'>
+                                <p>A builder providing access to all methods supported on <em>children</em> resources.
 It is not used directly, but through the <code>Drive</code> hub.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.Comment.html'
-                               title='google_drive2::Comment'>Comment</a></td>
-                        <td class='docblock short'>
-                             <p>A comment on a file in Google Drive.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.CommentContext.html'
-                               title='google_drive2::CommentContext'>CommentContext</a></td>
-                        <td class='docblock short'>
-                             <p>The context of the file which is being commented on.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.CommentDeleteCall.html'
-                               title='google_drive2::CommentDeleteCall'>CommentDeleteCall</a></td>
-                        <td class='docblock short'>
-                             <p>Deletes a comment.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.CommentGetCall.html'
-                               title='google_drive2::CommentGetCall'>CommentGetCall</a></td>
-                        <td class='docblock short'>
-                             <p>Gets a comment by ID.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.CommentInsertCall.html'
-                               title='google_drive2::CommentInsertCall'>CommentInsertCall</a></td>
-                        <td class='docblock short'>
-                             <p>Creates a new comment on the given file.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.CommentList.html'
-                               title='google_drive2::CommentList'>CommentList</a></td>
-                        <td class='docblock short'>
-                             <p>A list of comments on a file in Google Drive.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.CommentListCall.html'
-                               title='google_drive2::CommentListCall'>CommentListCall</a></td>
-                        <td class='docblock short'>
-                             <p>Lists a file&#39;s comments.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.CommentMethods.html'
-                               title='google_drive2::CommentMethods'>CommentMethods</a></td>
-                        <td class='docblock short'>
-                             <p>A builder providing access to all methods supported on <em>comment</em> resources.
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Comment.html'
+                                  title='google_drive2::Comment'>Comment</a></td>
+                           <td class='docblock short'>
+                                <p>A comment on a file in Google Drive.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CommentContext.html'
+                                  title='google_drive2::CommentContext'>CommentContext</a></td>
+                           <td class='docblock short'>
+                                <p>The context of the file which is being commented on.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CommentDeleteCall.html'
+                                  title='google_drive2::CommentDeleteCall'>CommentDeleteCall</a></td>
+                           <td class='docblock short'>
+                                <p>Deletes a comment.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CommentGetCall.html'
+                                  title='google_drive2::CommentGetCall'>CommentGetCall</a></td>
+                           <td class='docblock short'>
+                                <p>Gets a comment by ID.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CommentInsertCall.html'
+                                  title='google_drive2::CommentInsertCall'>CommentInsertCall</a></td>
+                           <td class='docblock short'>
+                                <p>Creates a new comment on the given file.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CommentList.html'
+                                  title='google_drive2::CommentList'>CommentList</a></td>
+                           <td class='docblock short'>
+                                <p>A list of comments on a file in Google Drive.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CommentListCall.html'
+                                  title='google_drive2::CommentListCall'>CommentListCall</a></td>
+                           <td class='docblock short'>
+                                <p>Lists a file&#39;s comments.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CommentMethods.html'
+                                  title='google_drive2::CommentMethods'>CommentMethods</a></td>
+                           <td class='docblock short'>
+                                <p>A builder providing access to all methods supported on <em>comment</em> resources.
 It is not used directly, but through the <code>Drive</code> hub.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.CommentPatchCall.html'
-                               title='google_drive2::CommentPatchCall'>CommentPatchCall</a></td>
-                        <td class='docblock short'>
-                             <p>Updates an existing comment. This method supports patch semantics.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.CommentReply.html'
-                               title='google_drive2::CommentReply'>CommentReply</a></td>
-                        <td class='docblock short'>
-                             <p>A comment on a file in Google Drive.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.CommentReplyList.html'
-                               title='google_drive2::CommentReplyList'>CommentReplyList</a></td>
-                        <td class='docblock short'>
-                             <p>A list of replies to a comment on a file in Google Drive.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.CommentUpdateCall.html'
-                               title='google_drive2::CommentUpdateCall'>CommentUpdateCall</a></td>
-                        <td class='docblock short'>
-                             <p>Updates an existing comment.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.DefaultDelegate.html'
-                               title='google_drive2::DefaultDelegate'>DefaultDelegate</a></td>
-                        <td class='docblock short'>
-                             <p>A delegate with a conservative default implementation, which is used if no other delegate is
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CommentPatchCall.html'
+                                  title='google_drive2::CommentPatchCall'>CommentPatchCall</a></td>
+                           <td class='docblock short'>
+                                <p>Updates an existing comment. This method supports patch semantics.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CommentReply.html'
+                                  title='google_drive2::CommentReply'>CommentReply</a></td>
+                           <td class='docblock short'>
+                                <p>A comment on a file in Google Drive.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CommentReplyList.html'
+                                  title='google_drive2::CommentReplyList'>CommentReplyList</a></td>
+                           <td class='docblock short'>
+                                <p>A list of replies to a comment on a file in Google Drive.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CommentUpdateCall.html'
+                                  title='google_drive2::CommentUpdateCall'>CommentUpdateCall</a></td>
+                           <td class='docblock short'>
+                                <p>Updates an existing comment.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DefaultDelegate.html'
+                                  title='google_drive2::DefaultDelegate'>DefaultDelegate</a></td>
+                           <td class='docblock short'>
+                                <p>A delegate with a conservative default implementation, which is used if no other delegate is
 set.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.Drive.html'
-                               title='google_drive2::Drive'>Drive</a></td>
-                        <td class='docblock short'>
-                             <p>Central instance to access all Drive related resource activities</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ErrorResponse.html'
-                               title='google_drive2::ErrorResponse'>ErrorResponse</a></td>
-                        <td class='docblock short'>
-                             <p>A utility to represent detailed errors we might see in case there are BadRequests.
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Drive.html'
+                                  title='google_drive2::Drive'>Drive</a></td>
+                           <td class='docblock short'>
+                                <p>Central instance to access all Drive related resource activities</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ErrorResponse.html'
+                                  title='google_drive2::ErrorResponse'>ErrorResponse</a></td>
+                           <td class='docblock short'>
+                                <p>A utility to represent detailed errors we might see in case there are BadRequests.
 The latter happen if the sent parameters or request structures are unsound</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.File.html'
-                               title='google_drive2::File'>File</a></td>
-                        <td class='docblock short'>
-                             <p>The metadata for a file.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.FileCopyCall.html'
-                               title='google_drive2::FileCopyCall'>FileCopyCall</a></td>
-                        <td class='docblock short'>
-                             <p>Creates a copy of the specified file.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.FileDeleteCall.html'
-                               title='google_drive2::FileDeleteCall'>FileDeleteCall</a></td>
-                        <td class='docblock short'>
-                             <p>Permanently deletes a file by ID. Skips the trash. The currently authenticated user must own the file.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.FileEmptyTrashCall.html'
-                               title='google_drive2::FileEmptyTrashCall'>FileEmptyTrashCall</a></td>
-                        <td class='docblock short'>
-                             <p>Permanently deletes all of the user&#39;s trashed files.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.FileGenerateIdCall.html'
-                               title='google_drive2::FileGenerateIdCall'>FileGenerateIdCall</a></td>
-                        <td class='docblock short'>
-                             <p>Generates a set of file IDs which can be provided in insert requests.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.FileGetCall.html'
-                               title='google_drive2::FileGetCall'>FileGetCall</a></td>
-                        <td class='docblock short'>
-                             <p>Gets a file&#39;s metadata by ID.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.FileImageMediaMetadata.html'
-                               title='google_drive2::FileImageMediaMetadata'>FileImageMediaMetadata</a></td>
-                        <td class='docblock short'>
-                             <p>Metadata about image media. This will only be present for image types, and its contents will depend on what can be parsed from the image content.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.FileImageMediaMetadataLocation.html'
-                               title='google_drive2::FileImageMediaMetadataLocation'>FileImageMediaMetadataLocation</a></td>
-                        <td class='docblock short'>
-                             <p>Geographic location information stored in the image.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.FileIndexableText.html'
-                               title='google_drive2::FileIndexableText'>FileIndexableText</a></td>
-                        <td class='docblock short'>
-                             <p>Indexable text attributes for the file (can only be written)</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.FileInsertCall.html'
-                               title='google_drive2::FileInsertCall'>FileInsertCall</a></td>
-                        <td class='docblock short'>
-                             <p>Insert a new file.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.FileLabels.html'
-                               title='google_drive2::FileLabels'>FileLabels</a></td>
-                        <td class='docblock short'>
-                             <p>A group of labels for the file.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.FileList.html'
-                               title='google_drive2::FileList'>FileList</a></td>
-                        <td class='docblock short'>
-                             <p>A list of files.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.FileListCall.html'
-                               title='google_drive2::FileListCall'>FileListCall</a></td>
-                        <td class='docblock short'>
-                             <p>Lists the user&#39;s files.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.FileMethods.html'
-                               title='google_drive2::FileMethods'>FileMethods</a></td>
-                        <td class='docblock short'>
-                             <p>A builder providing access to all methods supported on <em>file</em> resources.
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.File.html'
+                                  title='google_drive2::File'>File</a></td>
+                           <td class='docblock short'>
+                                <p>The metadata for a file.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.FileCopyCall.html'
+                                  title='google_drive2::FileCopyCall'>FileCopyCall</a></td>
+                           <td class='docblock short'>
+                                <p>Creates a copy of the specified file.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.FileDeleteCall.html'
+                                  title='google_drive2::FileDeleteCall'>FileDeleteCall</a></td>
+                           <td class='docblock short'>
+                                <p>Permanently deletes a file by ID. Skips the trash. The currently authenticated user must own the file.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.FileEmptyTrashCall.html'
+                                  title='google_drive2::FileEmptyTrashCall'>FileEmptyTrashCall</a></td>
+                           <td class='docblock short'>
+                                <p>Permanently deletes all of the user&#39;s trashed files.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.FileExportCall.html'
+                                  title='google_drive2::FileExportCall'>FileExportCall</a></td>
+                           <td class='docblock short'>
+                                <p>Exports a Google Doc to the requested MIME type and returns the exported content.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.FileGenerateIdCall.html'
+                                  title='google_drive2::FileGenerateIdCall'>FileGenerateIdCall</a></td>
+                           <td class='docblock short'>
+                                <p>Generates a set of file IDs which can be provided in insert requests.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.FileGetCall.html'
+                                  title='google_drive2::FileGetCall'>FileGetCall</a></td>
+                           <td class='docblock short'>
+                                <p>Gets a file&#39;s metadata by ID.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.FileImageMediaMetadata.html'
+                                  title='google_drive2::FileImageMediaMetadata'>FileImageMediaMetadata</a></td>
+                           <td class='docblock short'>
+                                <p>Metadata about image media. This will only be present for image types, and its contents will depend on what can be parsed from the image content.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.FileImageMediaMetadataLocation.html'
+                                  title='google_drive2::FileImageMediaMetadataLocation'>FileImageMediaMetadataLocation</a></td>
+                           <td class='docblock short'>
+                                <p>Geographic location information stored in the image.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.FileIndexableText.html'
+                                  title='google_drive2::FileIndexableText'>FileIndexableText</a></td>
+                           <td class='docblock short'>
+                                <p>Indexable text attributes for the file (can only be written)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.FileInsertCall.html'
+                                  title='google_drive2::FileInsertCall'>FileInsertCall</a></td>
+                           <td class='docblock short'>
+                                <p>Insert a new file.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.FileLabels.html'
+                                  title='google_drive2::FileLabels'>FileLabels</a></td>
+                           <td class='docblock short'>
+                                <p>A group of labels for the file.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.FileList.html'
+                                  title='google_drive2::FileList'>FileList</a></td>
+                           <td class='docblock short'>
+                                <p>A list of files.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.FileListCall.html'
+                                  title='google_drive2::FileListCall'>FileListCall</a></td>
+                           <td class='docblock short'>
+                                <p>Lists the user&#39;s files.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.FileMethods.html'
+                                  title='google_drive2::FileMethods'>FileMethods</a></td>
+                           <td class='docblock short'>
+                                <p>A builder providing access to all methods supported on <em>file</em> resources.
 It is not used directly, but through the <code>Drive</code> hub.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.FilePatchCall.html'
-                               title='google_drive2::FilePatchCall'>FilePatchCall</a></td>
-                        <td class='docblock short'>
-                             <p>Updates file metadata and/or content. This method supports patch semantics.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.FileThumbnail.html'
-                               title='google_drive2::FileThumbnail'>FileThumbnail</a></td>
-                        <td class='docblock short'>
-                             <p>Thumbnail for the file. Only accepted on upload and for files that are not already thumbnailed by Google.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.FileTouchCall.html'
-                               title='google_drive2::FileTouchCall'>FileTouchCall</a></td>
-                        <td class='docblock short'>
-                             <p>Set the file&#39;s updated time to the current server time.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.FileTrashCall.html'
-                               title='google_drive2::FileTrashCall'>FileTrashCall</a></td>
-                        <td class='docblock short'>
-                             <p>Moves a file to the trash. The currently authenticated user must own the file.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.FileUntrashCall.html'
-                               title='google_drive2::FileUntrashCall'>FileUntrashCall</a></td>
-                        <td class='docblock short'>
-                             <p>Restores a file from the trash.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.FileUpdateCall.html'
-                               title='google_drive2::FileUpdateCall'>FileUpdateCall</a></td>
-                        <td class='docblock short'>
-                             <p>Updates file metadata and/or content.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.FileVideoMediaMetadata.html'
-                               title='google_drive2::FileVideoMediaMetadata'>FileVideoMediaMetadata</a></td>
-                        <td class='docblock short'>
-                             <p>Metadata about video media. This will only be present for video types.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.FileWatchCall.html'
-                               title='google_drive2::FileWatchCall'>FileWatchCall</a></td>
-                        <td class='docblock short'>
-                             <p>Subscribe to changes on a file</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.GeneratedIds.html'
-                               title='google_drive2::GeneratedIds'>GeneratedIds</a></td>
-                        <td class='docblock short'>
-                             <p>A list of generated IDs which can be provided in insert requests</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.MethodInfo.html'
-                               title='google_drive2::MethodInfo'>MethodInfo</a></td>
-                        <td class='docblock short'>
-                             <p>Contains information about an API request.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.MultiPartReader.html'
-                               title='google_drive2::MultiPartReader'>MultiPartReader</a></td>
-                        <td class='docblock short'>
-                             <p>Provides a <code>Read</code> interface that converts multiple parts into the protocol
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.FilePatchCall.html'
+                                  title='google_drive2::FilePatchCall'>FilePatchCall</a></td>
+                           <td class='docblock short'>
+                                <p>Updates file metadata and/or content. This method supports patch semantics.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.FileThumbnail.html'
+                                  title='google_drive2::FileThumbnail'>FileThumbnail</a></td>
+                           <td class='docblock short'>
+                                <p>Thumbnail for the file. Only accepted on upload and for files that are not already thumbnailed by Google.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.FileTouchCall.html'
+                                  title='google_drive2::FileTouchCall'>FileTouchCall</a></td>
+                           <td class='docblock short'>
+                                <p>Set the file&#39;s updated time to the current server time.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.FileTrashCall.html'
+                                  title='google_drive2::FileTrashCall'>FileTrashCall</a></td>
+                           <td class='docblock short'>
+                                <p>Moves a file to the trash. The currently authenticated user must own the file.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.FileUntrashCall.html'
+                                  title='google_drive2::FileUntrashCall'>FileUntrashCall</a></td>
+                           <td class='docblock short'>
+                                <p>Restores a file from the trash.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.FileUpdateCall.html'
+                                  title='google_drive2::FileUpdateCall'>FileUpdateCall</a></td>
+                           <td class='docblock short'>
+                                <p>Updates file metadata and/or content.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.FileVideoMediaMetadata.html'
+                                  title='google_drive2::FileVideoMediaMetadata'>FileVideoMediaMetadata</a></td>
+                           <td class='docblock short'>
+                                <p>Metadata about video media. This will only be present for video types.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.FileWatchCall.html'
+                                  title='google_drive2::FileWatchCall'>FileWatchCall</a></td>
+                           <td class='docblock short'>
+                                <p>Subscribe to changes on a file</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GeneratedIds.html'
+                                  title='google_drive2::GeneratedIds'>GeneratedIds</a></td>
+                           <td class='docblock short'>
+                                <p>A list of generated IDs which can be provided in insert requests</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.MethodInfo.html'
+                                  title='google_drive2::MethodInfo'>MethodInfo</a></td>
+                           <td class='docblock short'>
+                                <p>Contains information about an API request.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.MultiPartReader.html'
+                                  title='google_drive2::MultiPartReader'>MultiPartReader</a></td>
+                           <td class='docblock short'>
+                                <p>Provides a <code>Read</code> interface that converts multiple parts into the protocol
 identified by <a href="https://tools.ietf.org/html/rfc2387">RFC2387</a>.
 <strong>Note</strong>: This implementation is just as rich as it needs to be to perform uploads
 to google APIs, and might not be a fully-featured implementation.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ParentDeleteCall.html'
-                               title='google_drive2::ParentDeleteCall'>ParentDeleteCall</a></td>
-                        <td class='docblock short'>
-                             <p>Removes a parent from a file.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ParentGetCall.html'
-                               title='google_drive2::ParentGetCall'>ParentGetCall</a></td>
-                        <td class='docblock short'>
-                             <p>Gets a specific parent reference.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ParentInsertCall.html'
-                               title='google_drive2::ParentInsertCall'>ParentInsertCall</a></td>
-                        <td class='docblock short'>
-                             <p>Adds a parent folder for a file.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ParentList.html'
-                               title='google_drive2::ParentList'>ParentList</a></td>
-                        <td class='docblock short'>
-                             <p>A list of a file&#39;s parents.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ParentListCall.html'
-                               title='google_drive2::ParentListCall'>ParentListCall</a></td>
-                        <td class='docblock short'>
-                             <p>Lists a file&#39;s parents.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ParentMethods.html'
-                               title='google_drive2::ParentMethods'>ParentMethods</a></td>
-                        <td class='docblock short'>
-                             <p>A builder providing access to all methods supported on <em>parent</em> resources.
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ParentDeleteCall.html'
+                                  title='google_drive2::ParentDeleteCall'>ParentDeleteCall</a></td>
+                           <td class='docblock short'>
+                                <p>Removes a parent from a file.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ParentGetCall.html'
+                                  title='google_drive2::ParentGetCall'>ParentGetCall</a></td>
+                           <td class='docblock short'>
+                                <p>Gets a specific parent reference.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ParentInsertCall.html'
+                                  title='google_drive2::ParentInsertCall'>ParentInsertCall</a></td>
+                           <td class='docblock short'>
+                                <p>Adds a parent folder for a file.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ParentList.html'
+                                  title='google_drive2::ParentList'>ParentList</a></td>
+                           <td class='docblock short'>
+                                <p>A list of a file&#39;s parents.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ParentListCall.html'
+                                  title='google_drive2::ParentListCall'>ParentListCall</a></td>
+                           <td class='docblock short'>
+                                <p>Lists a file&#39;s parents.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ParentMethods.html'
+                                  title='google_drive2::ParentMethods'>ParentMethods</a></td>
+                           <td class='docblock short'>
+                                <p>A builder providing access to all methods supported on <em>parent</em> resources.
 It is not used directly, but through the <code>Drive</code> hub.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ParentReference.html'
-                               title='google_drive2::ParentReference'>ParentReference</a></td>
-                        <td class='docblock short'>
-                             <p>A reference to a file&#39;s parent.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.Permission.html'
-                               title='google_drive2::Permission'>Permission</a></td>
-                        <td class='docblock short'>
-                             <p>A permission for a file.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.PermissionDeleteCall.html'
-                               title='google_drive2::PermissionDeleteCall'>PermissionDeleteCall</a></td>
-                        <td class='docblock short'>
-                             <p>Deletes a permission from a file.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.PermissionGetCall.html'
-                               title='google_drive2::PermissionGetCall'>PermissionGetCall</a></td>
-                        <td class='docblock short'>
-                             <p>Gets a permission by ID.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.PermissionGetIdForEmailCall.html'
-                               title='google_drive2::PermissionGetIdForEmailCall'>PermissionGetIdForEmailCall</a></td>
-                        <td class='docblock short'>
-                             <p>Returns the permission ID for an email address.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.PermissionId.html'
-                               title='google_drive2::PermissionId'>PermissionId</a></td>
-                        <td class='docblock short'>
-                             <p>An ID for a user or group as seen in Permission items.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.PermissionInsertCall.html'
-                               title='google_drive2::PermissionInsertCall'>PermissionInsertCall</a></td>
-                        <td class='docblock short'>
-                             <p>Inserts a permission for a file.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.PermissionList.html'
-                               title='google_drive2::PermissionList'>PermissionList</a></td>
-                        <td class='docblock short'>
-                             <p>A list of permissions associated with a file.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.PermissionListCall.html'
-                               title='google_drive2::PermissionListCall'>PermissionListCall</a></td>
-                        <td class='docblock short'>
-                             <p>Lists a file&#39;s permissions.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.PermissionMethods.html'
-                               title='google_drive2::PermissionMethods'>PermissionMethods</a></td>
-                        <td class='docblock short'>
-                             <p>A builder providing access to all methods supported on <em>permission</em> resources.
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ParentReference.html'
+                                  title='google_drive2::ParentReference'>ParentReference</a></td>
+                           <td class='docblock short'>
+                                <p>A reference to a file&#39;s parent.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Permission.html'
+                                  title='google_drive2::Permission'>Permission</a></td>
+                           <td class='docblock short'>
+                                <p>A permission for a file.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PermissionDeleteCall.html'
+                                  title='google_drive2::PermissionDeleteCall'>PermissionDeleteCall</a></td>
+                           <td class='docblock short'>
+                                <p>Deletes a permission from a file.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PermissionGetCall.html'
+                                  title='google_drive2::PermissionGetCall'>PermissionGetCall</a></td>
+                           <td class='docblock short'>
+                                <p>Gets a permission by ID.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PermissionGetIdForEmailCall.html'
+                                  title='google_drive2::PermissionGetIdForEmailCall'>PermissionGetIdForEmailCall</a></td>
+                           <td class='docblock short'>
+                                <p>Returns the permission ID for an email address.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PermissionId.html'
+                                  title='google_drive2::PermissionId'>PermissionId</a></td>
+                           <td class='docblock short'>
+                                <p>An ID for a user or group as seen in Permission items.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PermissionInsertCall.html'
+                                  title='google_drive2::PermissionInsertCall'>PermissionInsertCall</a></td>
+                           <td class='docblock short'>
+                                <p>Inserts a permission for a file.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PermissionList.html'
+                                  title='google_drive2::PermissionList'>PermissionList</a></td>
+                           <td class='docblock short'>
+                                <p>A list of permissions associated with a file.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PermissionListCall.html'
+                                  title='google_drive2::PermissionListCall'>PermissionListCall</a></td>
+                           <td class='docblock short'>
+                                <p>Lists a file&#39;s permissions.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PermissionMethods.html'
+                                  title='google_drive2::PermissionMethods'>PermissionMethods</a></td>
+                           <td class='docblock short'>
+                                <p>A builder providing access to all methods supported on <em>permission</em> resources.
 It is not used directly, but through the <code>Drive</code> hub.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.PermissionPatchCall.html'
-                               title='google_drive2::PermissionPatchCall'>PermissionPatchCall</a></td>
-                        <td class='docblock short'>
-                             <p>Updates a permission using patch semantics.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.PermissionUpdateCall.html'
-                               title='google_drive2::PermissionUpdateCall'>PermissionUpdateCall</a></td>
-                        <td class='docblock short'>
-                             <p>Updates a permission.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.Property.html'
-                               title='google_drive2::Property'>Property</a></td>
-                        <td class='docblock short'>
-                             <p>A key-value pair attached to a file that is either public or private to an application.
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PermissionPatchCall.html'
+                                  title='google_drive2::PermissionPatchCall'>PermissionPatchCall</a></td>
+                           <td class='docblock short'>
+                                <p>Updates a permission using patch semantics.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PermissionUpdateCall.html'
+                                  title='google_drive2::PermissionUpdateCall'>PermissionUpdateCall</a></td>
+                           <td class='docblock short'>
+                                <p>Updates a permission.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Property.html'
+                                  title='google_drive2::Property'>Property</a></td>
+                           <td class='docblock short'>
+                                <p>A key-value pair attached to a file that is either public or private to an application.
 The following limits apply to file properties:<br>
 - Maximum of 100 properties total per file
 - Maximum of 30 private properties per app
 - Maximum of 30 public properties
 - Maximum of 124 bytes size limit on (key + value) string in UTF-8 encoding for a single property.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.PropertyDeleteCall.html'
-                               title='google_drive2::PropertyDeleteCall'>PropertyDeleteCall</a></td>
-                        <td class='docblock short'>
-                             <p>Deletes a property.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.PropertyGetCall.html'
-                               title='google_drive2::PropertyGetCall'>PropertyGetCall</a></td>
-                        <td class='docblock short'>
-                             <p>Gets a property by its key.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.PropertyInsertCall.html'
-                               title='google_drive2::PropertyInsertCall'>PropertyInsertCall</a></td>
-                        <td class='docblock short'>
-                             <p>Adds a property to a file, or updates it if it already exists.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.PropertyList.html'
-                               title='google_drive2::PropertyList'>PropertyList</a></td>
-                        <td class='docblock short'>
-                             <p>A collection of properties, key-value pairs that are either public or private to an application.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.PropertyListCall.html'
-                               title='google_drive2::PropertyListCall'>PropertyListCall</a></td>
-                        <td class='docblock short'>
-                             <p>Lists a file&#39;s properties.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.PropertyMethods.html'
-                               title='google_drive2::PropertyMethods'>PropertyMethods</a></td>
-                        <td class='docblock short'>
-                             <p>A builder providing access to all methods supported on <em>property</em> resources.
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PropertyDeleteCall.html'
+                                  title='google_drive2::PropertyDeleteCall'>PropertyDeleteCall</a></td>
+                           <td class='docblock short'>
+                                <p>Deletes a property.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PropertyGetCall.html'
+                                  title='google_drive2::PropertyGetCall'>PropertyGetCall</a></td>
+                           <td class='docblock short'>
+                                <p>Gets a property by its key.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PropertyInsertCall.html'
+                                  title='google_drive2::PropertyInsertCall'>PropertyInsertCall</a></td>
+                           <td class='docblock short'>
+                                <p>Adds a property to a file, or updates it if it already exists.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PropertyList.html'
+                                  title='google_drive2::PropertyList'>PropertyList</a></td>
+                           <td class='docblock short'>
+                                <p>A collection of properties, key-value pairs that are either public or private to an application.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PropertyListCall.html'
+                                  title='google_drive2::PropertyListCall'>PropertyListCall</a></td>
+                           <td class='docblock short'>
+                                <p>Lists a file&#39;s properties.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PropertyMethods.html'
+                                  title='google_drive2::PropertyMethods'>PropertyMethods</a></td>
+                           <td class='docblock short'>
+                                <p>A builder providing access to all methods supported on <em>property</em> resources.
 It is not used directly, but through the <code>Drive</code> hub.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.PropertyPatchCall.html'
-                               title='google_drive2::PropertyPatchCall'>PropertyPatchCall</a></td>
-                        <td class='docblock short'>
-                             <p>Updates a property, or adds it if it doesn&#39;t exist. This method supports patch semantics.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.PropertyUpdateCall.html'
-                               title='google_drive2::PropertyUpdateCall'>PropertyUpdateCall</a></td>
-                        <td class='docblock short'>
-                             <p>Updates a property, or adds it if it doesn&#39;t exist.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.RealtimeGetCall.html'
-                               title='google_drive2::RealtimeGetCall'>RealtimeGetCall</a></td>
-                        <td class='docblock short'>
-                             <p>Exports the contents of the Realtime API data model associated with this file as JSON.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.RealtimeMethods.html'
-                               title='google_drive2::RealtimeMethods'>RealtimeMethods</a></td>
-                        <td class='docblock short'>
-                             <p>A builder providing access to all methods supported on <em>realtime</em> resources.
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PropertyPatchCall.html'
+                                  title='google_drive2::PropertyPatchCall'>PropertyPatchCall</a></td>
+                           <td class='docblock short'>
+                                <p>Updates a property, or adds it if it doesn&#39;t exist. This method supports patch semantics.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PropertyUpdateCall.html'
+                                  title='google_drive2::PropertyUpdateCall'>PropertyUpdateCall</a></td>
+                           <td class='docblock short'>
+                                <p>Updates a property, or adds it if it doesn&#39;t exist.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RealtimeGetCall.html'
+                                  title='google_drive2::RealtimeGetCall'>RealtimeGetCall</a></td>
+                           <td class='docblock short'>
+                                <p>Exports the contents of the Realtime API data model associated with this file as JSON.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RealtimeMethods.html'
+                                  title='google_drive2::RealtimeMethods'>RealtimeMethods</a></td>
+                           <td class='docblock short'>
+                                <p>A builder providing access to all methods supported on <em>realtime</em> resources.
 It is not used directly, but through the <code>Drive</code> hub.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.RealtimeUpdateCall.html'
-                               title='google_drive2::RealtimeUpdateCall'>RealtimeUpdateCall</a></td>
-                        <td class='docblock short'>
-                             <p>Overwrites the Realtime API data model associated with this file with the provided JSON data model.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ReplyDeleteCall.html'
-                               title='google_drive2::ReplyDeleteCall'>ReplyDeleteCall</a></td>
-                        <td class='docblock short'>
-                             <p>Deletes a reply.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ReplyGetCall.html'
-                               title='google_drive2::ReplyGetCall'>ReplyGetCall</a></td>
-                        <td class='docblock short'>
-                             <p>Gets a reply.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ReplyInsertCall.html'
-                               title='google_drive2::ReplyInsertCall'>ReplyInsertCall</a></td>
-                        <td class='docblock short'>
-                             <p>Creates a new reply to the given comment.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ReplyListCall.html'
-                               title='google_drive2::ReplyListCall'>ReplyListCall</a></td>
-                        <td class='docblock short'>
-                             <p>Lists all of the replies to a comment.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ReplyMethods.html'
-                               title='google_drive2::ReplyMethods'>ReplyMethods</a></td>
-                        <td class='docblock short'>
-                             <p>A builder providing access to all methods supported on <em>reply</em> resources.
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RealtimeUpdateCall.html'
+                                  title='google_drive2::RealtimeUpdateCall'>RealtimeUpdateCall</a></td>
+                           <td class='docblock short'>
+                                <p>Overwrites the Realtime API data model associated with this file with the provided JSON data model.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ReplyDeleteCall.html'
+                                  title='google_drive2::ReplyDeleteCall'>ReplyDeleteCall</a></td>
+                           <td class='docblock short'>
+                                <p>Deletes a reply.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ReplyGetCall.html'
+                                  title='google_drive2::ReplyGetCall'>ReplyGetCall</a></td>
+                           <td class='docblock short'>
+                                <p>Gets a reply.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ReplyInsertCall.html'
+                                  title='google_drive2::ReplyInsertCall'>ReplyInsertCall</a></td>
+                           <td class='docblock short'>
+                                <p>Creates a new reply to the given comment.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ReplyListCall.html'
+                                  title='google_drive2::ReplyListCall'>ReplyListCall</a></td>
+                           <td class='docblock short'>
+                                <p>Lists all of the replies to a comment.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ReplyMethods.html'
+                                  title='google_drive2::ReplyMethods'>ReplyMethods</a></td>
+                           <td class='docblock short'>
+                                <p>A builder providing access to all methods supported on <em>reply</em> resources.
 It is not used directly, but through the <code>Drive</code> hub.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ReplyPatchCall.html'
-                               title='google_drive2::ReplyPatchCall'>ReplyPatchCall</a></td>
-                        <td class='docblock short'>
-                             <p>Updates an existing reply. This method supports patch semantics.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ReplyUpdateCall.html'
-                               title='google_drive2::ReplyUpdateCall'>ReplyUpdateCall</a></td>
-                        <td class='docblock short'>
-                             <p>Updates an existing reply.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.Revision.html'
-                               title='google_drive2::Revision'>Revision</a></td>
-                        <td class='docblock short'>
-                             <p>A revision of a file.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.RevisionDeleteCall.html'
-                               title='google_drive2::RevisionDeleteCall'>RevisionDeleteCall</a></td>
-                        <td class='docblock short'>
-                             <p>Removes a revision.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.RevisionGetCall.html'
-                               title='google_drive2::RevisionGetCall'>RevisionGetCall</a></td>
-                        <td class='docblock short'>
-                             <p>Gets a specific revision.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.RevisionList.html'
-                               title='google_drive2::RevisionList'>RevisionList</a></td>
-                        <td class='docblock short'>
-                             <p>A list of revisions of a file.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.RevisionListCall.html'
-                               title='google_drive2::RevisionListCall'>RevisionListCall</a></td>
-                        <td class='docblock short'>
-                             <p>Lists a file&#39;s revisions.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.RevisionMethods.html'
-                               title='google_drive2::RevisionMethods'>RevisionMethods</a></td>
-                        <td class='docblock short'>
-                             <p>A builder providing access to all methods supported on <em>revision</em> resources.
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ReplyPatchCall.html'
+                                  title='google_drive2::ReplyPatchCall'>ReplyPatchCall</a></td>
+                           <td class='docblock short'>
+                                <p>Updates an existing reply. This method supports patch semantics.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ReplyUpdateCall.html'
+                                  title='google_drive2::ReplyUpdateCall'>ReplyUpdateCall</a></td>
+                           <td class='docblock short'>
+                                <p>Updates an existing reply.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Revision.html'
+                                  title='google_drive2::Revision'>Revision</a></td>
+                           <td class='docblock short'>
+                                <p>A revision of a file.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RevisionDeleteCall.html'
+                                  title='google_drive2::RevisionDeleteCall'>RevisionDeleteCall</a></td>
+                           <td class='docblock short'>
+                                <p>Removes a revision.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RevisionGetCall.html'
+                                  title='google_drive2::RevisionGetCall'>RevisionGetCall</a></td>
+                           <td class='docblock short'>
+                                <p>Gets a specific revision.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RevisionList.html'
+                                  title='google_drive2::RevisionList'>RevisionList</a></td>
+                           <td class='docblock short'>
+                                <p>A list of revisions of a file.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RevisionListCall.html'
+                                  title='google_drive2::RevisionListCall'>RevisionListCall</a></td>
+                           <td class='docblock short'>
+                                <p>Lists a file&#39;s revisions.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RevisionMethods.html'
+                                  title='google_drive2::RevisionMethods'>RevisionMethods</a></td>
+                           <td class='docblock short'>
+                                <p>A builder providing access to all methods supported on <em>revision</em> resources.
 It is not used directly, but through the <code>Drive</code> hub.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.RevisionPatchCall.html'
-                               title='google_drive2::RevisionPatchCall'>RevisionPatchCall</a></td>
-                        <td class='docblock short'>
-                             <p>Updates a revision. This method supports patch semantics.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.RevisionUpdateCall.html'
-                               title='google_drive2::RevisionUpdateCall'>RevisionUpdateCall</a></td>
-                        <td class='docblock short'>
-                             <p>Updates a revision.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.User.html'
-                               title='google_drive2::User'>User</a></td>
-                        <td class='docblock short'>
-                             <p>Information about a Drive user.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.UserPicture.html'
-                               title='google_drive2::UserPicture'>UserPicture</a></td>
-                        <td class='docblock short'>
-                             <p>The user&#39;s profile picture.</p>
-
-                        </td>
-                    </tr>
-                </table><h2 id='enums' class='section-header'><a href="#enums">Enums</a></h2>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RevisionPatchCall.html'
+                                  title='google_drive2::RevisionPatchCall'>RevisionPatchCall</a></td>
+                           <td class='docblock short'>
+                                <p>Updates a revision. This method supports patch semantics.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RevisionUpdateCall.html'
+                                  title='google_drive2::RevisionUpdateCall'>RevisionUpdateCall</a></td>
+                           <td class='docblock short'>
+                                <p>Updates a revision.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.User.html'
+                                  title='google_drive2::User'>User</a></td>
+                           <td class='docblock short'>
+                                <p>Information about a Drive user.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UserPicture.html'
+                                  title='google_drive2::UserPicture'>UserPicture</a></td>
+                           <td class='docblock short'>
+                                <p>The user&#39;s profile picture.</p>
+                           </td>
+                       </tr></table><h2 id='enums' class='section-header'><a href="#enums">Enums</a></h2>
 <table>
-                    <tr class=' module-item'>
-                        <td><a class='enum' href='enum.Error.html'
-                               title='google_drive2::Error'>Error</a></td>
-                        <td class='docblock short'>
-                             
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='enum' href='enum.Scope.html'
-                               title='google_drive2::Scope'>Scope</a></td>
-                        <td class='docblock short'>
-                             <p>Identifies the an OAuth2 authorization scope.
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.Error.html'
+                                  title='google_drive2::Error'>Error</a></td>
+                           <td class='docblock short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.Scope.html'
+                                  title='google_drive2::Scope'>Scope</a></td>
+                           <td class='docblock short'>
+                                <p>Identifies the an OAuth2 authorization scope.
 A scope is needed when requesting an
 <a href="https://developers.google.com/youtube/v3/guides/authentication">authorization token</a>.</p>
-
-                        </td>
-                    </tr>
-                </table><h2 id='traits' class='section-header'><a href="#traits">Traits</a></h2>
+                           </td>
+                       </tr></table><h2 id='traits' class='section-header'><a href="#traits">Traits</a></h2>
 <table>
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.CallBuilder.html'
-                               title='google_drive2::CallBuilder'>CallBuilder</a></td>
-                        <td class='docblock short'>
-                             <p>Identifies types which represent builders for a particular resource method</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.Delegate.html'
-                               title='google_drive2::Delegate'>Delegate</a></td>
-                        <td class='docblock short'>
-                             <p>A trait specifying functionality to help controlling any request performed by the API.
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.CallBuilder.html'
+                                  title='google_drive2::CallBuilder'>CallBuilder</a></td>
+                           <td class='docblock short'>
+                                <p>Identifies types which represent builders for a particular resource method</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.Delegate.html'
+                                  title='google_drive2::Delegate'>Delegate</a></td>
+                           <td class='docblock short'>
+                                <p>A trait specifying functionality to help controlling any request performed by the API.
 The trait has a conservative default implementation.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.Hub.html'
-                               title='google_drive2::Hub'>Hub</a></td>
-                        <td class='docblock short'>
-                             <p>Identifies the Hub. There is only one per library, this trait is supposed
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.Hub.html'
+                                  title='google_drive2::Hub'>Hub</a></td>
+                           <td class='docblock short'>
+                                <p>Identifies the Hub. There is only one per library, this trait is supposed
 to make intended use more explicit.
 The hub allows to access all resource methods more easily.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.MethodsBuilder.html'
-                               title='google_drive2::MethodsBuilder'>MethodsBuilder</a></td>
-                        <td class='docblock short'>
-                             <p>Identifies types for building methods of a particular resource type</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.NestedType.html'
-                               title='google_drive2::NestedType'>NestedType</a></td>
-                        <td class='docblock short'>
-                             <p>Identifies types which are only used by other types internally.
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.MethodsBuilder.html'
+                                  title='google_drive2::MethodsBuilder'>MethodsBuilder</a></td>
+                           <td class='docblock short'>
+                                <p>Identifies types for building methods of a particular resource type</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.NestedType.html'
+                                  title='google_drive2::NestedType'>NestedType</a></td>
+                           <td class='docblock short'>
+                                <p>Identifies types which are only used by other types internally.
 They have no special meaning, this trait just marks them for completeness.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.Part.html'
-                               title='google_drive2::Part'>Part</a></td>
-                        <td class='docblock short'>
-                             <p>Identifies types which are only used as part of other types, which
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.Part.html'
+                                  title='google_drive2::Part'>Part</a></td>
+                           <td class='docblock short'>
+                                <p>Identifies types which are only used as part of other types, which
 usually are carrying the <code>Resource</code> trait.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.ReadSeek.html'
-                               title='google_drive2::ReadSeek'>ReadSeek</a></td>
-                        <td class='docblock short'>
-                             <p>A utility to specify reader types which provide seeking capabilities too</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.RequestValue.html'
-                               title='google_drive2::RequestValue'>RequestValue</a></td>
-                        <td class='docblock short'>
-                             <p>Identifies types which are used in API requests.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.Resource.html'
-                               title='google_drive2::Resource'>Resource</a></td>
-                        <td class='docblock short'>
-                             <p>Identifies types which can be inserted and deleted.
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.ReadSeek.html'
+                                  title='google_drive2::ReadSeek'>ReadSeek</a></td>
+                           <td class='docblock short'>
+                                <p>A utility to specify reader types which provide seeking capabilities too</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.RequestValue.html'
+                                  title='google_drive2::RequestValue'>RequestValue</a></td>
+                           <td class='docblock short'>
+                                <p>Identifies types which are used in API requests.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.Resource.html'
+                                  title='google_drive2::Resource'>Resource</a></td>
+                           <td class='docblock short'>
+                                <p>Identifies types which can be inserted and deleted.
 Types with this trait are most commonly used by clients of this API.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.ResponseResult.html'
-                               title='google_drive2::ResponseResult'>ResponseResult</a></td>
-                        <td class='docblock short'>
-                             <p>Identifies types which are used in API responses.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.ToParts.html'
-                               title='google_drive2::ToParts'>ToParts</a></td>
-                        <td class='docblock short'>
-                             <p>A trait for all types that can convert themselves into a <em>parts</em> string</p>
-
-                        </td>
-                    </tr>
-                </table><h2 id='functions' class='section-header'><a href="#functions">Functions</a></h2>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.ResponseResult.html'
+                                  title='google_drive2::ResponseResult'>ResponseResult</a></td>
+                           <td class='docblock short'>
+                                <p>Identifies types which are used in API responses.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.ToParts.html'
+                                  title='google_drive2::ToParts'>ToParts</a></td>
+                           <td class='docblock short'>
+                                <p>A trait for all types that can convert themselves into a <em>parts</em> string</p>
+                           </td>
+                       </tr></table><h2 id='functions' class='section-header'><a href="#functions">Functions</a></h2>
 <table>
-                    <tr class=' module-item'>
-                        <td><a class='fn' href='fn.remove_json_null_values.html'
-                               title='google_drive2::remove_json_null_values'>remove_json_null_values</a></td>
-                        <td class='docblock short'>
-                             
-                        </td>
-                    </tr>
-                </table><h2 id='types' class='section-header'><a href="#types">Type Definitions</a></h2>
+                       <tr class=' module-item'>
+                           <td><a class='fn' href='fn.remove_json_null_values.html'
+                                  title='google_drive2::remove_json_null_values'>remove_json_null_values</a></td>
+                           <td class='docblock short'>
+                                
+                           </td>
+                       </tr></table><h2 id='types' class='section-header'><a href="#types">Type Definitions</a></h2>
 <table>
-                    <tr class=' module-item'>
-                        <td><a class='type' href='type.Result.html'
-                               title='google_drive2::Result'>Result</a></td>
-                        <td class='docblock short'>
-                             <p>A universal result type used as return for all calls.</p>
-
-                        </td>
-                    </tr>
-                </table></section>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Result.html'
+                                  title='google_drive2::Result'>Result</a></td>
+                           <td class='docblock short'>
+                                <p>A universal result type used as return for all calls.</p>
+                           </td>
+                       </tr></table></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
@@ -1588,6 +1335,8 @@ Types with this trait are most commonly used by clients of this API.</p>
                     <dd>Move down in search results</dd>
                     <dt>&#9166;</dt>
                     <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
                 </dl>
             </div>
 
@@ -1608,7 +1357,7 @@ Types with this trait are most commonly used by clients of this API.</p>
 
                 <p>
                     Search functions by type signature (e.g.
-                    <code>vec -> usize</code>)
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
                 </p>
             </div>
         </div>

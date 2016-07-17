@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
+    
 
     
     
@@ -43,10 +44,10 @@
 
     <section id='main' class="content trait">
 <h1 class='fqn'><span class='in-band'>Trait <a href='index.html'>yup_oauth2</a>::<wbr><a class='trait' href=''>AuthenticatorDelegate</a></span><span class='out-of-band'><span id='render-detail'>
-            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
-                [<span class='inner'>&#x2212;</span>]
-            </a>
-        </span><a id='src-1426' class='srclink' href='../src/yup_oauth2///Users/byron/dev/rs/google-apis-rs/target/debug/build/yup-oauth2-6fcf5dac526993e1/out/lib.rs.html#2824-2880' title='goto source code'>[src]</a></span></h1>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-1161' class='srclink' href='../src/yup_oauth2/Users/byron/dev/rs/google-apis-rs/target/debug/build/yup-oauth2-c2f12acffde13c95/out/lib.rs.html#2685-2760' title='goto source code'>[src]</a></span></h1>
 <pre class='rust trait'>pub trait AuthenticatorDelegate {
     fn <a href='#method.connection_error' class='fnname'>connection_error</a>(&amp;mut self, &amp;<a class='enum' href='../hyper/error/enum.Error.html' title='hyper::error::Error'>Error</a>) -&gt; <a class='enum' href='../yup_oauth2/enum.Retry.html' title='yup_oauth2::Retry'>Retry</a> { ... }
     fn <a href='#method.token_storage_failure' class='fnname'>token_storage_failure</a>(&amp;mut self, is_set: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>, _: &amp;<a class='trait' href='https://doc.rust-lang.org/nightly/std/error/trait.Error.html' title='std::error::Error'>Error</a>) -&gt; <a class='enum' href='../yup_oauth2/enum.Retry.html' title='yup_oauth2::Retry'>Retry</a> { ... }
@@ -56,6 +57,7 @@
     fn <a href='#method.token_refresh_failed' class='fnname'>token_refresh_failed</a>(&amp;mut self, error: &amp;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>, error_description: &amp;<a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;) { ... }
     fn <a href='#method.pending' class='fnname'>pending</a>(&amp;mut self, &amp;<a class='struct' href='../yup_oauth2/struct.PollInformation.html' title='yup_oauth2::PollInformation'>PollInformation</a>) -&gt; <a class='enum' href='../yup_oauth2/enum.Retry.html' title='yup_oauth2::Retry'>Retry</a> { ... }
     fn <a href='#method.present_user_code' class='fnname'>present_user_code</a>(&amp;mut self, pi: &amp;<a class='struct' href='../yup_oauth2/struct.PollInformation.html' title='yup_oauth2::PollInformation'>PollInformation</a>) { ... }
+    fn <a href='#method.present_user_url' class='fnname'>present_user_url</a>(&amp;mut self, url: &amp;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>, need_code: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt; { ... }
 }</pre><div class='docblock'><p>A partially implemented trait to interact with the <code>Authenticator</code></p>
 
 <p>The only method that needs to be implemented manually is <code>present_user_code(...)</code>,
@@ -98,13 +100,17 @@ along with the <code>verification_url</code>.</p>
 <li>Will be called exactly once, provided we didn&#39;t abort during <code>request_code</code> phase.</li>
 <li>Will only be called if the Authenticator&#39;s flow_type is <code>FlowType::Device</code>.</li>
 </ul>
+</div><h3 id='method.present_user_url' class='method stab '><code>fn <a href='#method.present_user_url' class='fnname'>present_user_url</a>(&amp;mut self, url: &amp;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>, need_code: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;</code></h3><div class='docblock'><p>Only method currently used by the InstalledFlow.
+We need the user to navigate to a URL using their browser and potentially paste back a code
+(or maybe not). Whether they have to enter a code depends on the InstalledFlowReturnMethod
+used.</p>
 </div></div>
         <h2 id='implementors'>Implementors</h2>
         <ul class='item-list' id='implementors-list'>
-    <li><code>impl <a class='trait' href='../yup_oauth2/trait.AuthenticatorDelegate.html' title='yup_oauth2::AuthenticatorDelegate'>AuthenticatorDelegate</a> for <a class='struct' href='../yup_oauth2/struct.DefaultAuthenticatorDelegate.html' title='yup_oauth2::DefaultAuthenticatorDelegate'>DefaultAuthenticatorDelegate</a></code></li>
+    <li><code>impl AuthenticatorDelegate for <a class='struct' href='../yup_oauth2/struct.DefaultAuthenticatorDelegate.html' title='yup_oauth2::DefaultAuthenticatorDelegate'>DefaultAuthenticatorDelegate</a></code></li>
 </ul><script type="text/javascript" async
-                              src="../implementors/yup_oauth2/trait.AuthenticatorDelegate.js">
-                      </script></section>
+                         src="../implementors/yup_oauth2/trait.AuthenticatorDelegate.js">
+                 </script></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
@@ -127,6 +133,8 @@ along with the <code>verification_url</code>.</p>
                     <dd>Move down in search results</dd>
                     <dt>&#9166;</dt>
                     <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
                 </dl>
             </div>
 
@@ -147,7 +155,7 @@ along with the <code>verification_url</code>.</p>
 
                 <p>
                     Search functions by type signature (e.g.
-                    <code>vec -> usize</code>)
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
                 </p>
             </div>
         </div>

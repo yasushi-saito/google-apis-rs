@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Watch - calendar v0.3.3+20160110</title>
+  <title>Watch - calendar v0.3.5+20160405</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -38,7 +38,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> calendar v0.3.3+20160110</a>
+        <a href=".." class="icon icon-home"> calendar v0.3.5+20160405</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -413,7 +413,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">calendar v0.3.3+20160110</a>
+        <a href="..">calendar v0.3.5+20160405</a>
       </nav>
 
       
@@ -546,9 +546,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p updated-min=string</strong></p>
+<p><strong>-p shared-extended-property=string</strong></p>
 <ul>
-<li>Lower bound for an event&#39;s last modification time (as a RFC3339 timestamp) to filter by. When specified, entries deleted since this time will always be included regardless of showDeleted. Optional. The default is not to filter by last modification time.</li>
+<li>Extended properties constraint specified as propertyName=value. Matches only shared properties. This parameter might be repeated multiple times to return events that match all given constraints.</li>
 </ul>
 </li>
 <li>
@@ -558,27 +558,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p private-extended-property=string</strong></p>
+<p><strong>-p order-by=string</strong></p>
 <ul>
-<li>Extended properties constraint specified as propertyName=value. Matches only private properties. This parameter might be repeated multiple times to return events that match all given constraints.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p single-events=boolean</strong></p>
-<ul>
-<li>Whether to expand recurring events into instances and only return single one-off events and instances of recurring events, but not the underlying recurring events themselves. Optional. The default is False.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p q=string</strong></p>
-<ul>
-<li>Free text search terms to find events that match these terms in any field, except for extended properties. Optional.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p time-max=string</strong></p>
-<ul>
-<li>Upper bound (exclusive) for an event&#39;s start time to filter by. Optional. The default is not to filter by start time. Must be an RFC3339 timestamp with mandatory time zone offset, e.g., 2011-06-03T10:00:00-07:00, 2011-06-03T10:00:00Z. Milliseconds may be provided but will be ignored.</li>
+<li>The order of the events returned in the result. Optional. The default is an unspecified, stable order.</li>
 </ul>
 </li>
 <li>
@@ -602,15 +584,9 @@ Optional. The default is to return all entries.</p>
 </ul>
 </li>
 <li>
-<p><strong>-p shared-extended-property=string</strong></p>
+<p><strong>-p i-cal-uid=string</strong></p>
 <ul>
-<li>Extended properties constraint specified as propertyName=value. Matches only shared properties. This parameter might be repeated multiple times to return events that match all given constraints.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p max-attendees=integer</strong></p>
-<ul>
-<li>The maximum number of attendees to include in the response. If there are more than the specified number of attendees, only the participant is returned. Optional.</li>
+<li>Specifies event ID in the iCalendar format to be included in the response. Optional.</li>
 </ul>
 </li>
 <li>
@@ -620,27 +596,51 @@ Optional. The default is to return all entries.</p>
 </ul>
 </li>
 <li>
-<p><strong>-p page-token=string</strong></p>
-<ul>
-<li>Token specifying which result page to return. Optional.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p time-min=string</strong></p>
 <ul>
 <li>Lower bound (inclusive) for an event&#39;s end time to filter by. Optional. The default is not to filter by end time. Must be an RFC3339 timestamp with mandatory time zone offset, e.g., 2011-06-03T10:00:00-07:00, 2011-06-03T10:00:00Z. Milliseconds may be provided but will be ignored.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p order-by=string</strong></p>
+<p><strong>-p page-token=string</strong></p>
 <ul>
-<li>The order of the events returned in the result. Optional. The default is an unspecified, stable order.</li>
+<li>Token specifying which result page to return. Optional.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p time-zone=string</strong></p>
+<p><strong>-p private-extended-property=string</strong></p>
 <ul>
-<li>Time zone used in the response. Optional. The default is the time zone of the calendar.</li>
+<li>Extended properties constraint specified as propertyName=value. Matches only private properties. This parameter might be repeated multiple times to return events that match all given constraints.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p updated-min=string</strong></p>
+<ul>
+<li>Lower bound for an event&#39;s last modification time (as a RFC3339 timestamp) to filter by. When specified, entries deleted since this time will always be included regardless of showDeleted. Optional. The default is not to filter by last modification time.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p time-max=string</strong></p>
+<ul>
+<li>Upper bound (exclusive) for an event&#39;s start time to filter by. Optional. The default is not to filter by start time. Must be an RFC3339 timestamp with mandatory time zone offset, e.g., 2011-06-03T10:00:00-07:00, 2011-06-03T10:00:00Z. Milliseconds may be provided but will be ignored.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p single-events=boolean</strong></p>
+<ul>
+<li>Whether to expand recurring events into instances and only return single one-off events and instances of recurring events, but not the underlying recurring events themselves. Optional. The default is False.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p always-include-email=boolean</strong></p>
+<ul>
+<li>Whether to always include a value in the email field for the organizer, creator and attendees, even if no real email is available (i.e. a generated, non-working value will be provided). The use of this option is discouraged and should only be used by clients which cannot handle the absence of an email address value in the mentioned places. Optional. The default is False.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p q=string</strong></p>
+<ul>
+<li>Free text search terms to find events that match these terms in any field, except for extended properties. Optional.</li>
 </ul>
 </li>
 <li>
@@ -650,15 +650,15 @@ Optional. The default is to return all entries.</p>
 </ul>
 </li>
 <li>
-<p><strong>-p i-cal-uid=string</strong></p>
+<p><strong>-p time-zone=string</strong></p>
 <ul>
-<li>Specifies event ID in the iCalendar format to be included in the response. Optional.</li>
+<li>Time zone used in the response. Optional. The default is the time zone of the calendar.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p always-include-email=boolean</strong></p>
+<p><strong>-p max-attendees=integer</strong></p>
 <ul>
-<li>Whether to always include a value in the email field for the organizer, creator and attendees, even if no real email is available (i.e. a generated, non-working value will be provided). The use of this option is discouraged and should only be used by clients which cannot handle the absence of an email address value in the mentioned places. Optional. The default is False.</li>
+<li>The maximum number of attendees to include in the response. If there are more than the specified number of attendees, only the participant is returned. Optional.</li>
 </ul>
 </li>
 </ul>

@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
+    
 
     
     
@@ -43,17 +44,30 @@
 
     <section id='main' class="content mod">
 <h1 class='fqn'><span class='in-band'>Crate <a class='mod' href=''>google_genomics1</a></span><span class='out-of-band'><span id='render-detail'>
-            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
-                [<span class='inner'>&#x2212;</span>]
-            </a>
-        </span><a id='src-0' class='srclink' href='../src/google_genomics1/lib.rs.html#5-205' title='goto source code'>[src]</a></span></h1>
-<div class='docblock'><p>This documentation was generated from <em>genomics</em> crate version <em>0.1.11+20160124</em>, where <em>20160124</em> is the exact revision of the <em>genomics:v1</em> schema built by the <a href="http://www.makotemplates.org/">mako</a> code generator <em>v0.1.11</em>.
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-0' class='srclink' href='../src/google_genomics1/src/lib.rs.html#5-218' title='goto source code'>[src]</a></span></h1>
+<div class='docblock'><p>This documentation was generated from <em>genomics</em> crate version <em>0.1.14+20160407</em>, where <em>20160407</em> is the exact revision of the <em>genomics:v1</em> schema built by the <a href="http://www.makotemplates.org/">mako</a> code generator <em>v0.1.14</em>.</p>
+
+<p>Everything else about the <em>genomics</em> <em>v1</em> API can be found at the
+<a href="https://cloud.google.com/genomics/">official documentation site</a>.
 The original source code is <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/genomics1">on github</a>.</p>
 
 <h1 id='features' class='section-header'><a href='#features'>Features</a></h1>
 <p>Handle the following <em>Resources</em> with ease from the central <a href="struct.Genomics.html">hub</a> ... </p>
 
 <ul>
+<li><a href="struct.Annotation.html">annotations</a>
+
+<ul>
+<li><a href="struct.AnnotationBatchCreateCall.html"><em>batch create</em></a>, <a href="struct.AnnotationCreateCall.html"><em>create</em></a>, <a href="struct.AnnotationDeleteCall.html"><em>delete</em></a>, <a href="struct.AnnotationGetCall.html"><em>get</em></a>, <a href="struct.AnnotationSearchCall.html"><em>search</em></a> and <a href="struct.AnnotationUpdateCall.html"><em>update</em></a></li>
+</ul></li>
+<li>annotationsets
+
+<ul>
+<li><a href="struct.AnnotationsetCreateCall.html"><em>create</em></a>, <a href="struct.AnnotationsetDeleteCall.html"><em>delete</em></a>, <a href="struct.AnnotationsetGetCall.html"><em>get</em></a>, <a href="struct.AnnotationsetSearchCall.html"><em>search</em></a> and <a href="struct.AnnotationsetUpdateCall.html"><em>update</em></a></li>
+</ul></li>
 <li>callsets
 
 <ul>
@@ -92,7 +106,7 @@ The original source code is <a href="https://github.com/Byron/google-apis-rs/tre
 <li><a href="struct.Variant.html">variants</a>
 
 <ul>
-<li><a href="struct.VariantCreateCall.html"><em>create</em></a>, <a href="struct.VariantDeleteCall.html"><em>delete</em></a>, <a href="struct.VariantGetCall.html"><em>get</em></a>, <a href="struct.VariantImportCall.html"><em>import</em></a>, <a href="struct.VariantPatchCall.html"><em>patch</em></a>, <a href="struct.VariantSearchCall.html"><em>search</em></a> and <a href="struct.VariantStreamCall.html"><em>stream</em></a></li>
+<li><a href="struct.VariantCreateCall.html"><em>create</em></a>, <a href="struct.VariantDeleteCall.html"><em>delete</em></a>, <a href="struct.VariantGetCall.html"><em>get</em></a>, <a href="struct.VariantImportCall.html"><em>import</em></a>, <a href="struct.VariantMergeCall.html"><em>merge</em></a>, <a href="struct.VariantPatchCall.html"><em>patch</em></a>, <a href="struct.VariantSearchCall.html"><em>search</em></a> and <a href="struct.VariantStreamCall.html"><em>stream</em></a></li>
 </ul></li>
 <li>variantsets
 
@@ -136,10 +150,12 @@ allow access to individual <a href="trait.CallBuilder.html"><em>Call Builders</e
 <p>All <em>structures</em> are marked with applicable traits to further categorize them and ease browsing.</p>
 
 <p>Generally speaking, you can invoke <em>Activities</em> like this:</p>
+
 <pre class='rust rust-example-rendered'>
 <span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>resource</span>().<span class='ident'>activity</span>(...).<span class='ident'>doit</span>()</pre>
 
 <p>Or specifically ...</p>
+
 <pre class='rust rust-example-rendered'>
 <span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>datasets</span>().<span class='ident'>set_iam_policy</span>(...).<span class='ident'>doit</span>()
 <span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>datasets</span>().<span class='ident'>delete</span>(...).<span class='ident'>doit</span>()
@@ -164,7 +180,8 @@ The <code>doit()</code> method performs the actual communication with the server
 google-genomics1 = &quot;*&quot;
 </code></pre>
 
-<h2 id='a-complete-example' class='section-header'><a href='#a-complete-example'>A complete example</a></h2><pre class='rust rust-example-rendered'>
+<h2 id='a-complete-example' class='section-header'><a href='#a-complete-example'>A complete example</a></h2>
+<pre class='rust rust-example-rendered'>
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>hyper</span>;
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>yup_oauth2</span> <span class='kw'>as</span> <span class='ident'>oauth2</span>;
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>google_genomics1</span> <span class='kw'>as</span> <span class='ident'>genomics1</span>;
@@ -195,7 +212,7 @@ google-genomics1 = &quot;*&quot;
 <span class='comment'>// execute the final call using `doit()`.</span>
 <span class='comment'>// Values shown here are possibly random and not representative !</span>
 <span class='kw'>let</span> <span class='ident'>result</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>datasets</span>().<span class='ident'>patch</span>(<span class='ident'>req</span>, <span class='string'>&quot;datasetId&quot;</span>)
-             .<span class='ident'>update_mask</span>(<span class='string'>&quot;et&quot;</span>)
+             .<span class='ident'>update_mask</span>(<span class='string'>&quot;dolor&quot;</span>)
              .<span class='ident'>doit</span>();
  
 <span class='kw'>match</span> <span class='ident'>result</span> {
@@ -262,1191 +279,1147 @@ These will always take a single argument, for which the following statements are
 <p>Arguments will always be copied or cloned into the builder, to make them independent of their original life times.</p>
 </div><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
 <table>
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.Binding.html'
-                               title='google_genomics1::Binding'>Binding</a></td>
-                        <td class='docblock short'>
-                             <p>Associates <code>members</code> with a <code>role</code>.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.CallSet.html'
-                               title='google_genomics1::CallSet'>CallSet</a></td>
-                        <td class='docblock short'>
-                             <p>A call set is a collection of variant calls, typically for one sample. It belongs to a variant set. For more genomics resource definitions, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a></p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.CallsetCreateCall.html'
-                               title='google_genomics1::CallsetCreateCall'>CallsetCreateCall</a></td>
-                        <td class='docblock short'>
-                             <p>Creates a new call set. For the definitions of call sets and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a></p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.CallsetDeleteCall.html'
-                               title='google_genomics1::CallsetDeleteCall'>CallsetDeleteCall</a></td>
-                        <td class='docblock short'>
-                             <p>Deletes a call set. For the definitions of call sets and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a></p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.CallsetGetCall.html'
-                               title='google_genomics1::CallsetGetCall'>CallsetGetCall</a></td>
-                        <td class='docblock short'>
-                             <p>Gets a call set by ID. For the definitions of call sets and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a></p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.CallsetMethods.html'
-                               title='google_genomics1::CallsetMethods'>CallsetMethods</a></td>
-                        <td class='docblock short'>
-                             <p>A builder providing access to all methods supported on <em>callset</em> resources.
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Annotation.html'
+                                  title='google_genomics1::Annotation'>Annotation</a></td>
+                           <td class='docblock short'>
+                                <p>An annotation describes a region of reference genome. The value of an annotation may be one of several canonical types, supplemented by arbitrary info tags. An annotation is not inherently associated with a specific sample or individual (though a client could choose to use annotations in this way). Example canonical annotation types are <code>GENE</code> and <code>VARIANT</code>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AnnotationBatchCreateCall.html'
+                                  title='google_genomics1::AnnotationBatchCreateCall'>AnnotationBatchCreateCall</a></td>
+                           <td class='docblock short'>
+                                <p>Creates one or more new annotations atomically. All annotations must belong to the same annotation set. Caller must have WRITE permission for this annotation set. For optimal performance, batch positionally adjacent annotations together. If the request has a systemic issue, such as an attempt to write to an inaccessible annotation set, the entire RPC will fail accordingly. For lesser data issues, when possible an error will be isolated to the corresponding batch entry in the response; the remaining well formed annotations will be created normally. For details on the requirements for each individual annotation resource, see CreateAnnotation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AnnotationCreateCall.html'
+                                  title='google_genomics1::AnnotationCreateCall'>AnnotationCreateCall</a></td>
+                           <td class='docblock short'>
+                                <p>Creates a new annotation. Caller must have WRITE permission for the associated annotation set. The following fields are required: * annotationSetId * referenceName or referenceId ### Transcripts For annotations of type TRANSCRIPT, the following fields of transcript must be provided: * <code>exons.start</code> * <code>exons.end</code> All other fields may be optionally specified, unless documented as being server-generated (for example, the <code>id</code> field). The annotated range must be no longer than 100Mbp (mega base pairs). See the Annotation resource for additional restrictions on each field.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AnnotationDeleteCall.html'
+                                  title='google_genomics1::AnnotationDeleteCall'>AnnotationDeleteCall</a></td>
+                           <td class='docblock short'>
+                                <p>Deletes an annotation. Caller must have WRITE permission for the associated annotation set.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AnnotationGetCall.html'
+                                  title='google_genomics1::AnnotationGetCall'>AnnotationGetCall</a></td>
+                           <td class='docblock short'>
+                                <p>Gets an annotation. Caller must have READ permission for the associated annotation set.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AnnotationMethods.html'
+                                  title='google_genomics1::AnnotationMethods'>AnnotationMethods</a></td>
+                           <td class='docblock short'>
+                                <p>A builder providing access to all methods supported on <em>annotation</em> resources.
 It is not used directly, but through the <code>Genomics</code> hub.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.CallsetPatchCall.html'
-                               title='google_genomics1::CallsetPatchCall'>CallsetPatchCall</a></td>
-                        <td class='docblock short'>
-                             <p>Updates a call set. For the definitions of call sets and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a> This method supports patch semantics.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.CallsetSearchCall.html'
-                               title='google_genomics1::CallsetSearchCall'>CallsetSearchCall</a></td>
-                        <td class='docblock short'>
-                             <p>Gets a list of call sets matching the criteria. For the definitions of call sets and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a> Implements <a href="https://github.com/ga4gh/schemas/blob/v0.5.1/src/main/resources/avro/variantmethods.avdl#L178">GlobalAllianceApi.searchCallSets</a>.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.CancelOperationRequest.html'
-                               title='google_genomics1::CancelOperationRequest'>CancelOperationRequest</a></td>
-                        <td class='docblock short'>
-                             <p>The request message for Operations.CancelOperation.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.CigarUnit.html'
-                               title='google_genomics1::CigarUnit'>CigarUnit</a></td>
-                        <td class='docblock short'>
-                             <p>A single CIGAR operation.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.CoverageBucket.html'
-                               title='google_genomics1::CoverageBucket'>CoverageBucket</a></td>
-                        <td class='docblock short'>
-                             <p>A bucket over which read coverage has been precomputed. A bucket corresponds to a specific range of the reference sequence.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.Dataset.html'
-                               title='google_genomics1::Dataset'>Dataset</a></td>
-                        <td class='docblock short'>
-                             <p>A Dataset is a collection of genomic data. For more genomics resource definitions, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a></p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.DatasetCreateCall.html'
-                               title='google_genomics1::DatasetCreateCall'>DatasetCreateCall</a></td>
-                        <td class='docblock short'>
-                             <p>Creates a new dataset. For the definitions of datasets and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a></p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.DatasetDeleteCall.html'
-                               title='google_genomics1::DatasetDeleteCall'>DatasetDeleteCall</a></td>
-                        <td class='docblock short'>
-                             <p>Deletes a dataset. For the definitions of datasets and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a></p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.DatasetGetCall.html'
-                               title='google_genomics1::DatasetGetCall'>DatasetGetCall</a></td>
-                        <td class='docblock short'>
-                             <p>Gets a dataset by ID. For the definitions of datasets and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a></p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.DatasetGetIamPolicyCall.html'
-                               title='google_genomics1::DatasetGetIamPolicyCall'>DatasetGetIamPolicyCall</a></td>
-                        <td class='docblock short'>
-                             <p>Gets the access control policy for the dataset. This is empty if the policy or resource does not exist. See Getting a Policy for more information. For the definitions of datasets and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a></p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.DatasetListCall.html'
-                               title='google_genomics1::DatasetListCall'>DatasetListCall</a></td>
-                        <td class='docblock short'>
-                             <p>Lists datasets within a project. For the definitions of datasets and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a></p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.DatasetMethods.html'
-                               title='google_genomics1::DatasetMethods'>DatasetMethods</a></td>
-                        <td class='docblock short'>
-                             <p>A builder providing access to all methods supported on <em>dataset</em> resources.
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AnnotationSearchCall.html'
+                                  title='google_genomics1::AnnotationSearchCall'>AnnotationSearchCall</a></td>
+                           <td class='docblock short'>
+                                <p>Searches for annotations that match the given criteria. Results are ordered by genomic coordinate (by reference sequence, then position). Annotations with equivalent genomic coordinates are returned in an unspecified order. This order is consistent, such that two queries for the same content (regardless of page size) yield annotations in the same order across their respective streams of paginated responses. Caller must have READ permission for the queried annotation sets.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AnnotationSet.html'
+                                  title='google_genomics1::AnnotationSet'>AnnotationSet</a></td>
+                           <td class='docblock short'>
+                                <p>An annotation set is a logical grouping of annotations that share consistent type information and provenance. Examples of annotation sets include &#39;all genes from refseq&#39;, and &#39;all variant annotations from ClinVar&#39;.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AnnotationUpdateCall.html'
+                                  title='google_genomics1::AnnotationUpdateCall'>AnnotationUpdateCall</a></td>
+                           <td class='docblock short'>
+                                <p>Updates an annotation. Caller must have WRITE permission for the associated dataset.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AnnotationsetCreateCall.html'
+                                  title='google_genomics1::AnnotationsetCreateCall'>AnnotationsetCreateCall</a></td>
+                           <td class='docblock short'>
+                                <p>Creates a new annotation set. Caller must have WRITE permission for the associated dataset. The following fields are required: * datasetId * referenceSetId All other fields may be optionally specified, unless documented as being server-generated (for example, the <code>id</code> field).</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AnnotationsetDeleteCall.html'
+                                  title='google_genomics1::AnnotationsetDeleteCall'>AnnotationsetDeleteCall</a></td>
+                           <td class='docblock short'>
+                                <p>Deletes an annotation set. Caller must have WRITE permission for the associated annotation set.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AnnotationsetGetCall.html'
+                                  title='google_genomics1::AnnotationsetGetCall'>AnnotationsetGetCall</a></td>
+                           <td class='docblock short'>
+                                <p>Gets an annotation set. Caller must have READ permission for the associated dataset.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AnnotationsetMethods.html'
+                                  title='google_genomics1::AnnotationsetMethods'>AnnotationsetMethods</a></td>
+                           <td class='docblock short'>
+                                <p>A builder providing access to all methods supported on <em>annotationset</em> resources.
 It is not used directly, but through the <code>Genomics</code> hub.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.DatasetPatchCall.html'
-                               title='google_genomics1::DatasetPatchCall'>DatasetPatchCall</a></td>
-                        <td class='docblock short'>
-                             <p>Updates a dataset. For the definitions of datasets and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a> This method supports patch semantics.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.DatasetSetIamPolicyCall.html'
-                               title='google_genomics1::DatasetSetIamPolicyCall'>DatasetSetIamPolicyCall</a></td>
-                        <td class='docblock short'>
-                             <p>Sets the access control policy on the specified dataset. Replaces any existing policy. For the definitions of datasets and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a> See Setting a Policy for more information.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.DatasetTestIamPermissionCall.html'
-                               title='google_genomics1::DatasetTestIamPermissionCall'>DatasetTestIamPermissionCall</a></td>
-                        <td class='docblock short'>
-                             <p>Returns permissions that a caller has on the specified resource. See Testing Permissions for more information. For the definitions of datasets and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a></p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.DatasetUndeleteCall.html'
-                               title='google_genomics1::DatasetUndeleteCall'>DatasetUndeleteCall</a></td>
-                        <td class='docblock short'>
-                             <p>Undeletes a dataset by restoring a dataset which was deleted via this API. For the definitions of datasets and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a> This operation is only possible for a week after the deletion occurred.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.DefaultDelegate.html'
-                               title='google_genomics1::DefaultDelegate'>DefaultDelegate</a></td>
-                        <td class='docblock short'>
-                             <p>A delegate with a conservative default implementation, which is used if no other delegate is
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AnnotationsetSearchCall.html'
+                                  title='google_genomics1::AnnotationsetSearchCall'>AnnotationsetSearchCall</a></td>
+                           <td class='docblock short'>
+                                <p>Searches for annotation sets that match the given criteria. Annotation sets are returned in an unspecified order. This order is consistent, such that two queries for the same content (regardless of page size) yield annotation sets in the same order across their respective streams of paginated responses. Caller must have READ permission for the queried datasets.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AnnotationsetUpdateCall.html'
+                                  title='google_genomics1::AnnotationsetUpdateCall'>AnnotationsetUpdateCall</a></td>
+                           <td class='docblock short'>
+                                <p>Updates an annotation set. The update must respect all mutability restrictions and other invariants described on the annotation set resource. Caller must have WRITE permission for the associated dataset.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.BatchCreateAnnotationsRequest.html'
+                                  title='google_genomics1::BatchCreateAnnotationsRequest'>BatchCreateAnnotationsRequest</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.BatchCreateAnnotationsResponse.html'
+                                  title='google_genomics1::BatchCreateAnnotationsResponse'>BatchCreateAnnotationsResponse</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Binding.html'
+                                  title='google_genomics1::Binding'>Binding</a></td>
+                           <td class='docblock short'>
+                                <p>Associates <code>members</code> with a <code>role</code>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CallSet.html'
+                                  title='google_genomics1::CallSet'>CallSet</a></td>
+                           <td class='docblock short'>
+                                <p>A call set is a collection of variant calls, typically for one sample. It belongs to a variant set. For more genomics resource definitions, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CallsetCreateCall.html'
+                                  title='google_genomics1::CallsetCreateCall'>CallsetCreateCall</a></td>
+                           <td class='docblock short'>
+                                <p>Creates a new call set. For the definitions of call sets and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CallsetDeleteCall.html'
+                                  title='google_genomics1::CallsetDeleteCall'>CallsetDeleteCall</a></td>
+                           <td class='docblock short'>
+                                <p>Deletes a call set. For the definitions of call sets and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CallsetGetCall.html'
+                                  title='google_genomics1::CallsetGetCall'>CallsetGetCall</a></td>
+                           <td class='docblock short'>
+                                <p>Gets a call set by ID. For the definitions of call sets and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CallsetMethods.html'
+                                  title='google_genomics1::CallsetMethods'>CallsetMethods</a></td>
+                           <td class='docblock short'>
+                                <p>A builder providing access to all methods supported on <em>callset</em> resources.
+It is not used directly, but through the <code>Genomics</code> hub.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CallsetPatchCall.html'
+                                  title='google_genomics1::CallsetPatchCall'>CallsetPatchCall</a></td>
+                           <td class='docblock short'>
+                                <p>Updates a call set. For the definitions of call sets and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a> This method supports patch semantics.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CallsetSearchCall.html'
+                                  title='google_genomics1::CallsetSearchCall'>CallsetSearchCall</a></td>
+                           <td class='docblock short'>
+                                <p>Gets a list of call sets matching the criteria. For the definitions of call sets and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a> Implements <a href="https://github.com/ga4gh/schemas/blob/v0.5.1/src/main/resources/avro/variantmethods.avdl#L178">GlobalAllianceApi.searchCallSets</a>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CancelOperationRequest.html'
+                                  title='google_genomics1::CancelOperationRequest'>CancelOperationRequest</a></td>
+                           <td class='docblock short'>
+                                <p>The request message for Operations.CancelOperation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CigarUnit.html'
+                                  title='google_genomics1::CigarUnit'>CigarUnit</a></td>
+                           <td class='docblock short'>
+                                <p>A single CIGAR operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ClinicalCondition.html'
+                                  title='google_genomics1::ClinicalCondition'>ClinicalCondition</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CodingSequence.html'
+                                  title='google_genomics1::CodingSequence'>CodingSequence</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CoverageBucket.html'
+                                  title='google_genomics1::CoverageBucket'>CoverageBucket</a></td>
+                           <td class='docblock short'>
+                                <p>A bucket over which read coverage has been precomputed. A bucket corresponds to a specific range of the reference sequence.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Dataset.html'
+                                  title='google_genomics1::Dataset'>Dataset</a></td>
+                           <td class='docblock short'>
+                                <p>A Dataset is a collection of genomic data. For more genomics resource definitions, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DatasetCreateCall.html'
+                                  title='google_genomics1::DatasetCreateCall'>DatasetCreateCall</a></td>
+                           <td class='docblock short'>
+                                <p>Creates a new dataset. For the definitions of datasets and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DatasetDeleteCall.html'
+                                  title='google_genomics1::DatasetDeleteCall'>DatasetDeleteCall</a></td>
+                           <td class='docblock short'>
+                                <p>Deletes a dataset and all of its contents (all read group sets, reference sets, variant sets, call sets, annotation sets, etc.) This is reversible (up to one week after the deletion) via the datasets.undelete operation. For the definitions of datasets and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DatasetGetCall.html'
+                                  title='google_genomics1::DatasetGetCall'>DatasetGetCall</a></td>
+                           <td class='docblock short'>
+                                <p>Gets a dataset by ID. For the definitions of datasets and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DatasetGetIamPolicyCall.html'
+                                  title='google_genomics1::DatasetGetIamPolicyCall'>DatasetGetIamPolicyCall</a></td>
+                           <td class='docblock short'>
+                                <p>Gets the access control policy for the dataset. This is empty if the policy or resource does not exist. See Getting a Policy for more information. For the definitions of datasets and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DatasetListCall.html'
+                                  title='google_genomics1::DatasetListCall'>DatasetListCall</a></td>
+                           <td class='docblock short'>
+                                <p>Lists datasets within a project. For the definitions of datasets and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DatasetMethods.html'
+                                  title='google_genomics1::DatasetMethods'>DatasetMethods</a></td>
+                           <td class='docblock short'>
+                                <p>A builder providing access to all methods supported on <em>dataset</em> resources.
+It is not used directly, but through the <code>Genomics</code> hub.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DatasetPatchCall.html'
+                                  title='google_genomics1::DatasetPatchCall'>DatasetPatchCall</a></td>
+                           <td class='docblock short'>
+                                <p>Updates a dataset. For the definitions of datasets and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a> This method supports patch semantics.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DatasetSetIamPolicyCall.html'
+                                  title='google_genomics1::DatasetSetIamPolicyCall'>DatasetSetIamPolicyCall</a></td>
+                           <td class='docblock short'>
+                                <p>Sets the access control policy on the specified dataset. Replaces any existing policy. For the definitions of datasets and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a> See Setting a Policy for more information.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DatasetTestIamPermissionCall.html'
+                                  title='google_genomics1::DatasetTestIamPermissionCall'>DatasetTestIamPermissionCall</a></td>
+                           <td class='docblock short'>
+                                <p>Returns permissions that a caller has on the specified resource. See Testing Permissions for more information. For the definitions of datasets and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DatasetUndeleteCall.html'
+                                  title='google_genomics1::DatasetUndeleteCall'>DatasetUndeleteCall</a></td>
+                           <td class='docblock short'>
+                                <p>Undeletes a dataset by restoring a dataset which was deleted via this API. For the definitions of datasets and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a> This operation is only possible for a week after the deletion occurred.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DefaultDelegate.html'
+                                  title='google_genomics1::DefaultDelegate'>DefaultDelegate</a></td>
+                           <td class='docblock short'>
+                                <p>A delegate with a conservative default implementation, which is used if no other delegate is
 set.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.Empty.html'
-                               title='google_genomics1::Empty'>Empty</a></td>
-                        <td class='docblock short'>
-                             <p>A generic empty message that you can re-use to avoid defining duplicated empty messages in your APIs. A typical example is to use it as the request or the response type of an API method. For instance: service Foo { rpc Bar(google.protobuf.Empty) returns (google.protobuf.Empty); } The JSON representation for <code>Empty</code> is empty JSON object <code>{}</code>.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ErrorResponse.html'
-                               title='google_genomics1::ErrorResponse'>ErrorResponse</a></td>
-                        <td class='docblock short'>
-                             <p>A utility to represent detailed errors we might see in case there are BadRequests.
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Empty.html'
+                                  title='google_genomics1::Empty'>Empty</a></td>
+                           <td class='docblock short'>
+                                <p>A generic empty message that you can re-use to avoid defining duplicated empty messages in your APIs. A typical example is to use it as the request or the response type of an API method. For instance: service Foo { rpc Bar(google.protobuf.Empty) returns (google.protobuf.Empty); } The JSON representation for <code>Empty</code> is empty JSON object <code>{}</code>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Entry.html'
+                                  title='google_genomics1::Entry'>Entry</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ErrorResponse.html'
+                                  title='google_genomics1::ErrorResponse'>ErrorResponse</a></td>
+                           <td class='docblock short'>
+                                <p>A utility to represent detailed errors we might see in case there are BadRequests.
 The latter happen if the sent parameters or request structures are unsound</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.Experiment.html'
-                               title='google_genomics1::Experiment'>Experiment</a></td>
-                        <td class='docblock short'>
-                             <p>There is no detailed description.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ExportReadGroupSetRequest.html'
-                               title='google_genomics1::ExportReadGroupSetRequest'>ExportReadGroupSetRequest</a></td>
-                        <td class='docblock short'>
-                             <p>The read group set export request.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ExportVariantSetRequest.html'
-                               title='google_genomics1::ExportVariantSetRequest'>ExportVariantSetRequest</a></td>
-                        <td class='docblock short'>
-                             <p>The variant data export request.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.Genomics.html'
-                               title='google_genomics1::Genomics'>Genomics</a></td>
-                        <td class='docblock short'>
-                             <p>Central instance to access all Genomics related resource activities</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.GetIamPolicyRequest.html'
-                               title='google_genomics1::GetIamPolicyRequest'>GetIamPolicyRequest</a></td>
-                        <td class='docblock short'>
-                             <p>Request message for <code>GetIamPolicy</code> method.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ImportReadGroupSetsRequest.html'
-                               title='google_genomics1::ImportReadGroupSetsRequest'>ImportReadGroupSetsRequest</a></td>
-                        <td class='docblock short'>
-                             <p>The read group set import request.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ImportVariantsRequest.html'
-                               title='google_genomics1::ImportVariantsRequest'>ImportVariantsRequest</a></td>
-                        <td class='docblock short'>
-                             <p>The variant data import request.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.LinearAlignment.html'
-                               title='google_genomics1::LinearAlignment'>LinearAlignment</a></td>
-                        <td class='docblock short'>
-                             <p>A linear alignment can be represented by one CIGAR string. Describes the mapped position and local alignment of the read to the reference.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ListBasesResponse.html'
-                               title='google_genomics1::ListBasesResponse'>ListBasesResponse</a></td>
-                        <td class='docblock short'>
-                             <p>There is no detailed description.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ListCoverageBucketsResponse.html'
-                               title='google_genomics1::ListCoverageBucketsResponse'>ListCoverageBucketsResponse</a></td>
-                        <td class='docblock short'>
-                             <p>There is no detailed description.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ListDatasetsResponse.html'
-                               title='google_genomics1::ListDatasetsResponse'>ListDatasetsResponse</a></td>
-                        <td class='docblock short'>
-                             <p>The dataset list response.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ListOperationsResponse.html'
-                               title='google_genomics1::ListOperationsResponse'>ListOperationsResponse</a></td>
-                        <td class='docblock short'>
-                             <p>The response message for Operations.ListOperations.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.MethodInfo.html'
-                               title='google_genomics1::MethodInfo'>MethodInfo</a></td>
-                        <td class='docblock short'>
-                             <p>Contains information about an API request.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.MultiPartReader.html'
-                               title='google_genomics1::MultiPartReader'>MultiPartReader</a></td>
-                        <td class='docblock short'>
-                             <p>Provides a <code>Read</code> interface that converts multiple parts into the protocol
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Exon.html'
+                                  title='google_genomics1::Exon'>Exon</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Experiment.html'
+                                  title='google_genomics1::Experiment'>Experiment</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ExportReadGroupSetRequest.html'
+                                  title='google_genomics1::ExportReadGroupSetRequest'>ExportReadGroupSetRequest</a></td>
+                           <td class='docblock short'>
+                                <p>The read group set export request.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ExportVariantSetRequest.html'
+                                  title='google_genomics1::ExportVariantSetRequest'>ExportVariantSetRequest</a></td>
+                           <td class='docblock short'>
+                                <p>The variant data export request.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ExternalId.html'
+                                  title='google_genomics1::ExternalId'>ExternalId</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Genomics.html'
+                                  title='google_genomics1::Genomics'>Genomics</a></td>
+                           <td class='docblock short'>
+                                <p>Central instance to access all Genomics related resource activities</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetIamPolicyRequest.html'
+                                  title='google_genomics1::GetIamPolicyRequest'>GetIamPolicyRequest</a></td>
+                           <td class='docblock short'>
+                                <p>Request message for <code>GetIamPolicy</code> method.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ImportReadGroupSetsRequest.html'
+                                  title='google_genomics1::ImportReadGroupSetsRequest'>ImportReadGroupSetsRequest</a></td>
+                           <td class='docblock short'>
+                                <p>The read group set import request.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ImportVariantsRequest.html'
+                                  title='google_genomics1::ImportVariantsRequest'>ImportVariantsRequest</a></td>
+                           <td class='docblock short'>
+                                <p>The variant data import request.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.LinearAlignment.html'
+                                  title='google_genomics1::LinearAlignment'>LinearAlignment</a></td>
+                           <td class='docblock short'>
+                                <p>A linear alignment can be represented by one CIGAR string. Describes the mapped position and local alignment of the read to the reference.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListBasesResponse.html'
+                                  title='google_genomics1::ListBasesResponse'>ListBasesResponse</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListCoverageBucketsResponse.html'
+                                  title='google_genomics1::ListCoverageBucketsResponse'>ListCoverageBucketsResponse</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListDatasetsResponse.html'
+                                  title='google_genomics1::ListDatasetsResponse'>ListDatasetsResponse</a></td>
+                           <td class='docblock short'>
+                                <p>The dataset list response.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ListOperationsResponse.html'
+                                  title='google_genomics1::ListOperationsResponse'>ListOperationsResponse</a></td>
+                           <td class='docblock short'>
+                                <p>The response message for Operations.ListOperations.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.MergeVariantsRequest.html'
+                                  title='google_genomics1::MergeVariantsRequest'>MergeVariantsRequest</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.MethodInfo.html'
+                                  title='google_genomics1::MethodInfo'>MethodInfo</a></td>
+                           <td class='docblock short'>
+                                <p>Contains information about an API request.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.MultiPartReader.html'
+                                  title='google_genomics1::MultiPartReader'>MultiPartReader</a></td>
+                           <td class='docblock short'>
+                                <p>Provides a <code>Read</code> interface that converts multiple parts into the protocol
 identified by <a href="https://tools.ietf.org/html/rfc2387">RFC2387</a>.
 <strong>Note</strong>: This implementation is just as rich as it needs to be to perform uploads
 to google APIs, and might not be a fully-featured implementation.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.Operation.html'
-                               title='google_genomics1::Operation'>Operation</a></td>
-                        <td class='docblock short'>
-                             <p>This resource represents a long-running operation that is the result of a network API call.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.OperationCancelCall.html'
-                               title='google_genomics1::OperationCancelCall'>OperationCancelCall</a></td>
-                        <td class='docblock short'>
-                             <p>Starts asynchronous cancellation on a long-running operation. The server makes a best effort to cancel the operation, but success is not guaranteed. Clients may use Operations.GetOperation or Operations.ListOperations to check whether the cancellation succeeded or the operation completed despite cancellation.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.OperationGetCall.html'
-                               title='google_genomics1::OperationGetCall'>OperationGetCall</a></td>
-                        <td class='docblock short'>
-                             <p>Gets the latest state of a long-running operation. Clients can use this method to poll the operation result at intervals as recommended by the API service.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.OperationListCall.html'
-                               title='google_genomics1::OperationListCall'>OperationListCall</a></td>
-                        <td class='docblock short'>
-                             <p>Lists operations that match the specified filter in the request.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.OperationMethods.html'
-                               title='google_genomics1::OperationMethods'>OperationMethods</a></td>
-                        <td class='docblock short'>
-                             <p>A builder providing access to all methods supported on <em>operation</em> resources.
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Operation.html'
+                                  title='google_genomics1::Operation'>Operation</a></td>
+                           <td class='docblock short'>
+                                <p>This resource represents a long-running operation that is the result of a network API call.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.OperationCancelCall.html'
+                                  title='google_genomics1::OperationCancelCall'>OperationCancelCall</a></td>
+                           <td class='docblock short'>
+                                <p>Starts asynchronous cancellation on a long-running operation. The server makes a best effort to cancel the operation, but success is not guaranteed. Clients may use Operations.GetOperation or Operations.ListOperations to check whether the cancellation succeeded or the operation completed despite cancellation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.OperationGetCall.html'
+                                  title='google_genomics1::OperationGetCall'>OperationGetCall</a></td>
+                           <td class='docblock short'>
+                                <p>Gets the latest state of a long-running operation. Clients can use this method to poll the operation result at intervals as recommended by the API service.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.OperationListCall.html'
+                                  title='google_genomics1::OperationListCall'>OperationListCall</a></td>
+                           <td class='docblock short'>
+                                <p>Lists operations that match the specified filter in the request.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.OperationMethods.html'
+                                  title='google_genomics1::OperationMethods'>OperationMethods</a></td>
+                           <td class='docblock short'>
+                                <p>A builder providing access to all methods supported on <em>operation</em> resources.
 It is not used directly, but through the <code>Genomics</code> hub.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.Policy.html'
-                               title='google_genomics1::Policy'>Policy</a></td>
-                        <td class='docblock short'>
-                             <p>Defines an Identity and Access Management (IAM) policy. It is used to specify access control policies for Cloud Platform resources. A <code>Policy</code> consists of a list of <code>bindings</code>. A <code>Binding</code> binds a list of <code>members</code> to a <code>role</code>, where the members can be user accounts, Google groups, Google domains, and service accounts. A <code>role</code> is a named list of permissions defined by IAM. <strong>Example</strong> { &quot;bindings&quot;: [ { &quot;role&quot;: &quot;roles/owner&quot;, &quot;members&quot;: [ &quot;user:<a href="mailto:mike@example.com">mike@example.com</a>&quot;, &quot;group:<a href="mailto:admins@example.com">admins@example.com</a>&quot;, &quot;domain:google.com&quot;, &quot;serviceAccount:<a href="mailto:my-other-app@appspot.gserviceaccount.com">my-other-app@appspot.gserviceaccount.com</a>&quot;] }, { &quot;role&quot;: &quot;roles/viewer&quot;, &quot;members&quot;: [&quot;user:<a href="mailto:sean@example.com">sean@example.com</a>&quot;] } ] } For a description of IAM and its features, see the <a href="https://cloud.google.com/iam">IAM developer&#39;s guide</a>.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.Position.html'
-                               title='google_genomics1::Position'>Position</a></td>
-                        <td class='docblock short'>
-                             <p>An abstraction for referring to a genomic position, in relation to some already known reference. For now, represents a genomic position as a reference name, a base number on that reference (0-based), and a determination of forward or reverse strand.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.Program.html'
-                               title='google_genomics1::Program'>Program</a></td>
-                        <td class='docblock short'>
-                             <p>There is no detailed description.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.Range.html'
-                               title='google_genomics1::Range'>Range</a></td>
-                        <td class='docblock short'>
-                             <p>A 0-based half-open genomic coordinate range for search requests.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.Read.html'
-                               title='google_genomics1::Read'>Read</a></td>
-                        <td class='docblock short'>
-                             <p>A read alignment describes a linear alignment of a string of DNA to a reference sequence, in addition to metadata about the fragment (the molecule of DNA sequenced) and the read (the bases which were read by the sequencer). A read is equivalent to a line in a SAM file. A read belongs to exactly one read group and exactly one read group set. For more genomics resource definitions, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a> ### Reverse-stranded reads Mapped reads (reads having a non-null <code>alignment</code>) can be aligned to either the forward or the reverse strand of their associated reference. Strandedness of a mapped read is encoded by <code>alignment.position.reverseStrand</code>. If we consider the reference to be a forward-stranded coordinate space of <code>[0, reference.length)</code> with <code>0</code> as the left-most position and <code>reference.length</code> as the right-most position, reads are always aligned left to right. That is, <code>alignment.position.position</code> always refers to the left-most reference coordinate and <code>alignment.cigar</code> describes the alignment of this read to the reference from left to right. All per-base fields such as <code>alignedSequence</code> and <code>alignedQuality</code> share this same left-to-right orientation; this is true of reads which are aligned to either strand. For reverse-stranded reads, this means that <code>alignedSequence</code> is the reverse complement of the bases that were originally reported by the sequencing machine. ### Generating a reference-aligned sequence string When interacting with mapped reads, it&#39;s often useful to produce a string representing the local alignment of the read to reference. The following pseudocode demonstrates one way of doing this: out = &quot;&quot; offset = 0 for c in read.alignment.cigar { switch c.operation { case &quot;ALIGNMENT_MATCH&quot;, &quot;SEQUENCE_MATCH&quot;, &quot;SEQUENCE_MISMATCH&quot;: out += read.alignedSequence[offset:offset+c.operationLength] offset += c.operationLength break case &quot;CLIP_SOFT&quot;, &quot;INSERT&quot;: offset += c.operationLength break case &quot;PAD&quot;: out += repeat(&quot;*&quot;, c.operationLength) break case &quot;DELETE&quot;: out += repeat(&quot;-&quot;, c.operationLength) break case &quot;SKIP&quot;: out += repeat(&quot; &quot;, c.operationLength) break case &quot;CLIP_HARD&quot;: break } } return out ### Converting to SAM&#39;s CIGAR string The following pseudocode generates a SAM CIGAR string from the <code>cigar</code> field. Note that this is a lossy conversion (<code>cigar.referenceSequence</code> is lost). cigarMap = { &quot;ALIGNMENT_MATCH&quot;: &quot;M&quot;, &quot;INSERT&quot;: &quot;I&quot;, &quot;DELETE&quot;: &quot;D&quot;, &quot;SKIP&quot;: &quot;N&quot;, &quot;CLIP_SOFT&quot;: &quot;S&quot;, &quot;CLIP_HARD&quot;: &quot;H&quot;, &quot;PAD&quot;: &quot;P&quot;, &quot;SEQUENCE_MATCH&quot;: &quot;=&quot;, &quot;SEQUENCE_MISMATCH&quot;: &quot;X&quot;, } cigarStr = &quot;&quot; for c in read.alignment.cigar { cigarStr += c.operationLength + cigarMap[c.operation] } return cigarStr</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ReadGroup.html'
-                               title='google_genomics1::ReadGroup'>ReadGroup</a></td>
-                        <td class='docblock short'>
-                             <p>A read group is all the data that&#39;s processed the same way by the sequencer.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ReadGroupSet.html'
-                               title='google_genomics1::ReadGroupSet'>ReadGroupSet</a></td>
-                        <td class='docblock short'>
-                             <p>A read group set is a logical collection of read groups, which are collections of reads produced by a sequencer. A read group set typically models reads corresponding to one sample, sequenced one way, and aligned one way. * A read group set belongs to one dataset. * A read group belongs to one read group set. * A read belongs to one read group. For more genomics resource definitions, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a></p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ReadMethods.html'
-                               title='google_genomics1::ReadMethods'>ReadMethods</a></td>
-                        <td class='docblock short'>
-                             <p>A builder providing access to all methods supported on <em>read</em> resources.
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Policy.html'
+                                  title='google_genomics1::Policy'>Policy</a></td>
+                           <td class='docblock short'>
+                                <p>Defines an Identity and Access Management (IAM) policy. It is used to specify access control policies for Cloud Platform resources. A <code>Policy</code> consists of a list of <code>bindings</code>. A <code>Binding</code> binds a list of <code>members</code> to a <code>role</code>, where the members can be user accounts, Google groups, Google domains, and service accounts. A <code>role</code> is a named list of permissions defined by IAM. <strong>Example</strong> { &quot;bindings&quot;: [ { &quot;role&quot;: &quot;roles/owner&quot;, &quot;members&quot;: [ &quot;user:<a href="mailto:mike@example.com">mike@example.com</a>&quot;, &quot;group:<a href="mailto:admins@example.com">admins@example.com</a>&quot;, &quot;domain:google.com&quot;, &quot;serviceAccount:<a href="mailto:my-other-app@appspot.gserviceaccount.com">my-other-app@appspot.gserviceaccount.com</a>&quot;, ] }, { &quot;role&quot;: &quot;roles/viewer&quot;, &quot;members&quot;: [&quot;user:<a href="mailto:sean@example.com">sean@example.com</a>&quot;] } ] } For a description of IAM and its features, see the <a href="https://cloud.google.com/iam">IAM developer&#39;s guide</a>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Position.html'
+                                  title='google_genomics1::Position'>Position</a></td>
+                           <td class='docblock short'>
+                                <p>An abstraction for referring to a genomic position, in relation to some already known reference. For now, represents a genomic position as a reference name, a base number on that reference (0-based), and a determination of forward or reverse strand.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Program.html'
+                                  title='google_genomics1::Program'>Program</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Range.html'
+                                  title='google_genomics1::Range'>Range</a></td>
+                           <td class='docblock short'>
+                                <p>A 0-based half-open genomic coordinate range for search requests.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Read.html'
+                                  title='google_genomics1::Read'>Read</a></td>
+                           <td class='docblock short'>
+                                <p>A read alignment describes a linear alignment of a string of DNA to a reference sequence, in addition to metadata about the fragment (the molecule of DNA sequenced) and the read (the bases which were read by the sequencer). A read is equivalent to a line in a SAM file. A read belongs to exactly one read group and exactly one read group set. For more genomics resource definitions, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a> ### Reverse-stranded reads Mapped reads (reads having a non-null <code>alignment</code>) can be aligned to either the forward or the reverse strand of their associated reference. Strandedness of a mapped read is encoded by <code>alignment.position.reverseStrand</code>. If we consider the reference to be a forward-stranded coordinate space of <code>[0, reference.length)</code> with <code>0</code> as the left-most position and <code>reference.length</code> as the right-most position, reads are always aligned left to right. That is, <code>alignment.position.position</code> always refers to the left-most reference coordinate and <code>alignment.cigar</code> describes the alignment of this read to the reference from left to right. All per-base fields such as <code>alignedSequence</code> and <code>alignedQuality</code> share this same left-to-right orientation; this is true of reads which are aligned to either strand. For reverse-stranded reads, this means that <code>alignedSequence</code> is the reverse complement of the bases that were originally reported by the sequencing machine. ### Generating a reference-aligned sequence string When interacting with mapped reads, it&#39;s often useful to produce a string representing the local alignment of the read to reference. The following pseudocode demonstrates one way of doing this: out = &quot;&quot; offset = 0 for c in read.alignment.cigar { switch c.operation { case &quot;ALIGNMENT_MATCH&quot;, &quot;SEQUENCE_MATCH&quot;, &quot;SEQUENCE_MISMATCH&quot;: out += read.alignedSequence[offset:offset+c.operationLength] offset += c.operationLength break case &quot;CLIP_SOFT&quot;, &quot;INSERT&quot;: offset += c.operationLength break case &quot;PAD&quot;: out += repeat(&quot;*&quot;, c.operationLength) break case &quot;DELETE&quot;: out += repeat(&quot;-&quot;, c.operationLength) break case &quot;SKIP&quot;: out += repeat(&quot; &quot;, c.operationLength) break case &quot;CLIP_HARD&quot;: break } } return out ### Converting to SAM&#39;s CIGAR string The following pseudocode generates a SAM CIGAR string from the <code>cigar</code> field. Note that this is a lossy conversion (<code>cigar.referenceSequence</code> is lost). cigarMap = { &quot;ALIGNMENT_MATCH&quot;: &quot;M&quot;, &quot;INSERT&quot;: &quot;I&quot;, &quot;DELETE&quot;: &quot;D&quot;, &quot;SKIP&quot;: &quot;N&quot;, &quot;CLIP_SOFT&quot;: &quot;S&quot;, &quot;CLIP_HARD&quot;: &quot;H&quot;, &quot;PAD&quot;: &quot;P&quot;, &quot;SEQUENCE_MATCH&quot;: &quot;=&quot;, &quot;SEQUENCE_MISMATCH&quot;: &quot;X&quot;, } cigarStr = &quot;&quot; for c in read.alignment.cigar { cigarStr += c.operationLength + cigarMap[c.operation] } return cigarStr</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ReadGroup.html'
+                                  title='google_genomics1::ReadGroup'>ReadGroup</a></td>
+                           <td class='docblock short'>
+                                <p>A read group is all the data that&#39;s processed the same way by the sequencer.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ReadGroupSet.html'
+                                  title='google_genomics1::ReadGroupSet'>ReadGroupSet</a></td>
+                           <td class='docblock short'>
+                                <p>A read group set is a logical collection of read groups, which are collections of reads produced by a sequencer. A read group set typically models reads corresponding to one sample, sequenced one way, and aligned one way. * A read group set belongs to one dataset. * A read group belongs to one read group set. * A read belongs to one read group. For more genomics resource definitions, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ReadMethods.html'
+                                  title='google_genomics1::ReadMethods'>ReadMethods</a></td>
+                           <td class='docblock short'>
+                                <p>A builder providing access to all methods supported on <em>read</em> resources.
 It is not used directly, but through the <code>Genomics</code> hub.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ReadSearchCall.html'
-                               title='google_genomics1::ReadSearchCall'>ReadSearchCall</a></td>
-                        <td class='docblock short'>
-                             <p>Gets a list of reads for one or more read group sets. For the definitions of read group sets and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a> Reads search operates over a genomic coordinate space of reference sequence &amp; position defined over the reference sequences to which the requested read group sets are aligned. If a target positional range is specified, search returns all reads whose alignment to the reference genome overlap the range. A query which specifies only read group set IDs yields all reads in those read group sets, including unmapped reads. All reads returned (including reads on subsequent pages) are ordered by genomic coordinate (by reference sequence, then position). Reads with equivalent genomic coordinates are returned in an unspecified order. This order is consistent, such that two queries for the same content (regardless of page size) yield reads in the same order across their respective streams of paginated responses. Implements <a href="https://github.com/ga4gh/schemas/blob/v0.5.1/src/main/resources/avro/readmethods.avdl#L85">GlobalAllianceApi.searchReads</a>.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ReadStreamCall.html'
-                               title='google_genomics1::ReadStreamCall'>ReadStreamCall</a></td>
-                        <td class='docblock short'>
-                             <p>Returns a stream of all the reads matching the search request, ordered by reference name, position, and ID.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ReadgroupsetCoveragebucketListCall.html'
-                               title='google_genomics1::ReadgroupsetCoveragebucketListCall'>ReadgroupsetCoveragebucketListCall</a></td>
-                        <td class='docblock short'>
-                             <p>Lists fixed width coverage buckets for a read group set, each of which correspond to a range of a reference sequence. Each bucket summarizes coverage information across its corresponding genomic range. For the definitions of read group sets and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a> Coverage is defined as the number of reads which are aligned to a given base in the reference sequence. Coverage buckets are available at several precomputed bucket widths, enabling retrieval of various coverage &#39;zoom levels&#39;. The caller must have READ permissions for the target read group set.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ReadgroupsetDeleteCall.html'
-                               title='google_genomics1::ReadgroupsetDeleteCall'>ReadgroupsetDeleteCall</a></td>
-                        <td class='docblock short'>
-                             <p>Deletes a read group set. For the definitions of read group sets and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a></p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ReadgroupsetExportCall.html'
-                               title='google_genomics1::ReadgroupsetExportCall'>ReadgroupsetExportCall</a></td>
-                        <td class='docblock short'>
-                             <p>Exports a read group set to a BAM file in Google Cloud Storage. For the definitions of read group sets and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a> Note that currently there may be some differences between exported BAM files and the original BAM file at the time of import. See <a href="google.genomics.v1.ReadServiceV1.ImportReadGroupSets">ImportReadGroupSets</a> for caveats.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ReadgroupsetGetCall.html'
-                               title='google_genomics1::ReadgroupsetGetCall'>ReadgroupsetGetCall</a></td>
-                        <td class='docblock short'>
-                             <p>Gets a read group set by ID. For the definitions of read group sets and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a></p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ReadgroupsetImportCall.html'
-                               title='google_genomics1::ReadgroupsetImportCall'>ReadgroupsetImportCall</a></td>
-                        <td class='docblock short'>
-                             <p>Creates read group sets by asynchronously importing the provided information. For the definitions of read group sets and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a> The caller must have WRITE permissions to the dataset. ## Notes on <a href="https://samtools.github.io/hts-specs/SAMv1.pdf">BAM</a> import - Tags will be converted to strings - tag types are not preserved - Comments (<code>@CO</code>) in the input file header will not be preserved - Original header order of references (<code>@SQ</code>) will not be preserved - Any reverse stranded unmapped reads will be reverse complemented, and their qualities (also the &quot;BQ&quot; and &quot;OQ&quot; tags, if any) will be reversed - Unmapped reads will be stripped of positional information (reference name and position)</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ReadgroupsetMethods.html'
-                               title='google_genomics1::ReadgroupsetMethods'>ReadgroupsetMethods</a></td>
-                        <td class='docblock short'>
-                             <p>A builder providing access to all methods supported on <em>readgroupset</em> resources.
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ReadSearchCall.html'
+                                  title='google_genomics1::ReadSearchCall'>ReadSearchCall</a></td>
+                           <td class='docblock short'>
+                                <p>Gets a list of reads for one or more read group sets. For the definitions of read group sets and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a> Reads search operates over a genomic coordinate space of reference sequence &amp; position defined over the reference sequences to which the requested read group sets are aligned. If a target positional range is specified, search returns all reads whose alignment to the reference genome overlap the range. A query which specifies only read group set IDs yields all reads in those read group sets, including unmapped reads. All reads returned (including reads on subsequent pages) are ordered by genomic coordinate (by reference sequence, then position). Reads with equivalent genomic coordinates are returned in an unspecified order. This order is consistent, such that two queries for the same content (regardless of page size) yield reads in the same order across their respective streams of paginated responses. Implements <a href="https://github.com/ga4gh/schemas/blob/v0.5.1/src/main/resources/avro/readmethods.avdl#L85">GlobalAllianceApi.searchReads</a>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ReadStreamCall.html'
+                                  title='google_genomics1::ReadStreamCall'>ReadStreamCall</a></td>
+                           <td class='docblock short'>
+                                <p>Returns a stream of all the reads matching the search request, ordered by reference name, position, and ID.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ReadgroupsetCoveragebucketListCall.html'
+                                  title='google_genomics1::ReadgroupsetCoveragebucketListCall'>ReadgroupsetCoveragebucketListCall</a></td>
+                           <td class='docblock short'>
+                                <p>Lists fixed width coverage buckets for a read group set, each of which correspond to a range of a reference sequence. Each bucket summarizes coverage information across its corresponding genomic range. For the definitions of read group sets and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a> Coverage is defined as the number of reads which are aligned to a given base in the reference sequence. Coverage buckets are available at several precomputed bucket widths, enabling retrieval of various coverage &#39;zoom levels&#39;. The caller must have READ permissions for the target read group set.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ReadgroupsetDeleteCall.html'
+                                  title='google_genomics1::ReadgroupsetDeleteCall'>ReadgroupsetDeleteCall</a></td>
+                           <td class='docblock short'>
+                                <p>Deletes a read group set. For the definitions of read group sets and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ReadgroupsetExportCall.html'
+                                  title='google_genomics1::ReadgroupsetExportCall'>ReadgroupsetExportCall</a></td>
+                           <td class='docblock short'>
+                                <p>Exports a read group set to a BAM file in Google Cloud Storage. For the definitions of read group sets and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a> Note that currently there may be some differences between exported BAM files and the original BAM file at the time of import. See <a href="google.genomics.v1.ReadServiceV1.ImportReadGroupSets">ImportReadGroupSets</a> for caveats.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ReadgroupsetGetCall.html'
+                                  title='google_genomics1::ReadgroupsetGetCall'>ReadgroupsetGetCall</a></td>
+                           <td class='docblock short'>
+                                <p>Gets a read group set by ID. For the definitions of read group sets and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ReadgroupsetImportCall.html'
+                                  title='google_genomics1::ReadgroupsetImportCall'>ReadgroupsetImportCall</a></td>
+                           <td class='docblock short'>
+                                <p>Creates read group sets by asynchronously importing the provided information. For the definitions of read group sets and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a> The caller must have WRITE permissions to the dataset. ## Notes on <a href="https://samtools.github.io/hts-specs/SAMv1.pdf">BAM</a> import - Tags will be converted to strings - tag types are not preserved - Comments (<code>@CO</code>) in the input file header will not be preserved - Original header order of references (<code>@SQ</code>) will not be preserved - Any reverse stranded unmapped reads will be reverse complemented, and their qualities (also the &quot;BQ&quot; and &quot;OQ&quot; tags, if any) will be reversed - Unmapped reads will be stripped of positional information (reference name and position)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ReadgroupsetMethods.html'
+                                  title='google_genomics1::ReadgroupsetMethods'>ReadgroupsetMethods</a></td>
+                           <td class='docblock short'>
+                                <p>A builder providing access to all methods supported on <em>readgroupset</em> resources.
 It is not used directly, but through the <code>Genomics</code> hub.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ReadgroupsetPatchCall.html'
-                               title='google_genomics1::ReadgroupsetPatchCall'>ReadgroupsetPatchCall</a></td>
-                        <td class='docblock short'>
-                             <p>Updates a read group set. For the definitions of read group sets and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a> This method supports patch semantics.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ReadgroupsetSearchCall.html'
-                               title='google_genomics1::ReadgroupsetSearchCall'>ReadgroupsetSearchCall</a></td>
-                        <td class='docblock short'>
-                             <p>Searches for read group sets matching the criteria. For the definitions of read group sets and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a> Implements <a href="https://github.com/ga4gh/schemas/blob/v0.5.1/src/main/resources/avro/readmethods.avdl#L135">GlobalAllianceApi.searchReadGroupSets</a>.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.Reference.html'
-                               title='google_genomics1::Reference'>Reference</a></td>
-                        <td class='docblock short'>
-                             <p>A reference is a canonical assembled DNA sequence, intended to act as a reference coordinate space for other genomic annotations. A single reference might represent the human chromosome 1 or mitochandrial DNA, for instance. A reference belongs to one or more reference sets. For more genomics resource definitions, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a></p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ReferenceBaseListCall.html'
-                               title='google_genomics1::ReferenceBaseListCall'>ReferenceBaseListCall</a></td>
-                        <td class='docblock short'>
-                             <p>Lists the bases in a reference, optionally restricted to a range. For the definitions of references and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a> Implements <a href="https://github.com/ga4gh/schemas/blob/v0.5.1/src/main/resources/avro/referencemethods.avdl#L221">GlobalAllianceApi.getReferenceBases</a>.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ReferenceBound.html'
-                               title='google_genomics1::ReferenceBound'>ReferenceBound</a></td>
-                        <td class='docblock short'>
-                             <p>ReferenceBound records an upper bound for the starting coordinate of variants in a particular reference.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ReferenceGetCall.html'
-                               title='google_genomics1::ReferenceGetCall'>ReferenceGetCall</a></td>
-                        <td class='docblock short'>
-                             <p>Gets a reference. For the definitions of references and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a> Implements <a href="https://github.com/ga4gh/schemas/blob/v0.5.1/src/main/resources/avro/referencemethods.avdl#L158">GlobalAllianceApi.getReference</a>.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ReferenceMethods.html'
-                               title='google_genomics1::ReferenceMethods'>ReferenceMethods</a></td>
-                        <td class='docblock short'>
-                             <p>A builder providing access to all methods supported on <em>reference</em> resources.
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ReadgroupsetPatchCall.html'
+                                  title='google_genomics1::ReadgroupsetPatchCall'>ReadgroupsetPatchCall</a></td>
+                           <td class='docblock short'>
+                                <p>Updates a read group set. For the definitions of read group sets and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a> This method supports patch semantics.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ReadgroupsetSearchCall.html'
+                                  title='google_genomics1::ReadgroupsetSearchCall'>ReadgroupsetSearchCall</a></td>
+                           <td class='docblock short'>
+                                <p>Searches for read group sets matching the criteria. For the definitions of read group sets and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a> Implements <a href="https://github.com/ga4gh/schemas/blob/v0.5.1/src/main/resources/avro/readmethods.avdl#L135">GlobalAllianceApi.searchReadGroupSets</a>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Reference.html'
+                                  title='google_genomics1::Reference'>Reference</a></td>
+                           <td class='docblock short'>
+                                <p>A reference is a canonical assembled DNA sequence, intended to act as a reference coordinate space for other genomic annotations. A single reference might represent the human chromosome 1 or mitochandrial DNA, for instance. A reference belongs to one or more reference sets. For more genomics resource definitions, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ReferenceBaseListCall.html'
+                                  title='google_genomics1::ReferenceBaseListCall'>ReferenceBaseListCall</a></td>
+                           <td class='docblock short'>
+                                <p>Lists the bases in a reference, optionally restricted to a range. For the definitions of references and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a> Implements <a href="https://github.com/ga4gh/schemas/blob/v0.5.1/src/main/resources/avro/referencemethods.avdl#L221">GlobalAllianceApi.getReferenceBases</a>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ReferenceBound.html'
+                                  title='google_genomics1::ReferenceBound'>ReferenceBound</a></td>
+                           <td class='docblock short'>
+                                <p>ReferenceBound records an upper bound for the starting coordinate of variants in a particular reference.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ReferenceGetCall.html'
+                                  title='google_genomics1::ReferenceGetCall'>ReferenceGetCall</a></td>
+                           <td class='docblock short'>
+                                <p>Gets a reference. For the definitions of references and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a> Implements <a href="https://github.com/ga4gh/schemas/blob/v0.5.1/src/main/resources/avro/referencemethods.avdl#L158">GlobalAllianceApi.getReference</a>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ReferenceMethods.html'
+                                  title='google_genomics1::ReferenceMethods'>ReferenceMethods</a></td>
+                           <td class='docblock short'>
+                                <p>A builder providing access to all methods supported on <em>reference</em> resources.
 It is not used directly, but through the <code>Genomics</code> hub.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ReferenceSearchCall.html'
-                               title='google_genomics1::ReferenceSearchCall'>ReferenceSearchCall</a></td>
-                        <td class='docblock short'>
-                             <p>Searches for references which match the given criteria. For the definitions of references and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a> Implements <a href="https://github.com/ga4gh/schemas/blob/v0.5.1/src/main/resources/avro/referencemethods.avdl#L146">GlobalAllianceApi.searchReferences</a>.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ReferenceSet.html'
-                               title='google_genomics1::ReferenceSet'>ReferenceSet</a></td>
-                        <td class='docblock short'>
-                             <p>A reference set is a set of references which typically comprise a reference assembly for a species, such as <code>GRCh38</code> which is representative of the human genome. A reference set defines a common coordinate space for comparing reference-aligned experimental data. A reference set contains 1 or more references. For more genomics resource definitions, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a></p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ReferencesetGetCall.html'
-                               title='google_genomics1::ReferencesetGetCall'>ReferencesetGetCall</a></td>
-                        <td class='docblock short'>
-                             <p>Gets a reference set. For the definitions of references and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a> Implements <a href="https://github.com/ga4gh/schemas/blob/v0.5.1/src/main/resources/avro/referencemethods.avdl#L83">GlobalAllianceApi.getReferenceSet</a>.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ReferencesetMethods.html'
-                               title='google_genomics1::ReferencesetMethods'>ReferencesetMethods</a></td>
-                        <td class='docblock short'>
-                             <p>A builder providing access to all methods supported on <em>referenceset</em> resources.
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ReferenceSearchCall.html'
+                                  title='google_genomics1::ReferenceSearchCall'>ReferenceSearchCall</a></td>
+                           <td class='docblock short'>
+                                <p>Searches for references which match the given criteria. For the definitions of references and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a> Implements <a href="https://github.com/ga4gh/schemas/blob/v0.5.1/src/main/resources/avro/referencemethods.avdl#L146">GlobalAllianceApi.searchReferences</a>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ReferenceSet.html'
+                                  title='google_genomics1::ReferenceSet'>ReferenceSet</a></td>
+                           <td class='docblock short'>
+                                <p>A reference set is a set of references which typically comprise a reference assembly for a species, such as <code>GRCh38</code> which is representative of the human genome. A reference set defines a common coordinate space for comparing reference-aligned experimental data. A reference set contains 1 or more references. For more genomics resource definitions, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ReferencesetGetCall.html'
+                                  title='google_genomics1::ReferencesetGetCall'>ReferencesetGetCall</a></td>
+                           <td class='docblock short'>
+                                <p>Gets a reference set. For the definitions of references and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a> Implements <a href="https://github.com/ga4gh/schemas/blob/v0.5.1/src/main/resources/avro/referencemethods.avdl#L83">GlobalAllianceApi.getReferenceSet</a>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ReferencesetMethods.html'
+                                  title='google_genomics1::ReferencesetMethods'>ReferencesetMethods</a></td>
+                           <td class='docblock short'>
+                                <p>A builder providing access to all methods supported on <em>referenceset</em> resources.
 It is not used directly, but through the <code>Genomics</code> hub.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ReferencesetSearchCall.html'
-                               title='google_genomics1::ReferencesetSearchCall'>ReferencesetSearchCall</a></td>
-                        <td class='docblock short'>
-                             <p>Searches for reference sets which match the given criteria. For the definitions of references and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a> Implements <a href="https://github.com/ga4gh/schemas/blob/v0.5.1/src/main/resources/avro/referencemethods.avdl#L71">GlobalAllianceApi.searchReferenceSets</a></p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.SearchCallSetsRequest.html'
-                               title='google_genomics1::SearchCallSetsRequest'>SearchCallSetsRequest</a></td>
-                        <td class='docblock short'>
-                             <p>The call set search request.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.SearchCallSetsResponse.html'
-                               title='google_genomics1::SearchCallSetsResponse'>SearchCallSetsResponse</a></td>
-                        <td class='docblock short'>
-                             <p>The call set search response.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.SearchReadGroupSetsRequest.html'
-                               title='google_genomics1::SearchReadGroupSetsRequest'>SearchReadGroupSetsRequest</a></td>
-                        <td class='docblock short'>
-                             <p>The read group set search request.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.SearchReadGroupSetsResponse.html'
-                               title='google_genomics1::SearchReadGroupSetsResponse'>SearchReadGroupSetsResponse</a></td>
-                        <td class='docblock short'>
-                             <p>The read group set search response.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.SearchReadsRequest.html'
-                               title='google_genomics1::SearchReadsRequest'>SearchReadsRequest</a></td>
-                        <td class='docblock short'>
-                             <p>The read search request.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.SearchReadsResponse.html'
-                               title='google_genomics1::SearchReadsResponse'>SearchReadsResponse</a></td>
-                        <td class='docblock short'>
-                             <p>The read search response.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.SearchReferenceSetsRequest.html'
-                               title='google_genomics1::SearchReferenceSetsRequest'>SearchReferenceSetsRequest</a></td>
-                        <td class='docblock short'>
-                             <p>There is no detailed description.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.SearchReferenceSetsResponse.html'
-                               title='google_genomics1::SearchReferenceSetsResponse'>SearchReferenceSetsResponse</a></td>
-                        <td class='docblock short'>
-                             <p>There is no detailed description.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.SearchReferencesRequest.html'
-                               title='google_genomics1::SearchReferencesRequest'>SearchReferencesRequest</a></td>
-                        <td class='docblock short'>
-                             <p>There is no detailed description.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.SearchReferencesResponse.html'
-                               title='google_genomics1::SearchReferencesResponse'>SearchReferencesResponse</a></td>
-                        <td class='docblock short'>
-                             <p>There is no detailed description.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.SearchVariantSetsRequest.html'
-                               title='google_genomics1::SearchVariantSetsRequest'>SearchVariantSetsRequest</a></td>
-                        <td class='docblock short'>
-                             <p>The search variant sets request.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.SearchVariantSetsResponse.html'
-                               title='google_genomics1::SearchVariantSetsResponse'>SearchVariantSetsResponse</a></td>
-                        <td class='docblock short'>
-                             <p>The search variant sets response.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.SearchVariantsRequest.html'
-                               title='google_genomics1::SearchVariantsRequest'>SearchVariantsRequest</a></td>
-                        <td class='docblock short'>
-                             <p>The variant search request.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.SearchVariantsResponse.html'
-                               title='google_genomics1::SearchVariantsResponse'>SearchVariantsResponse</a></td>
-                        <td class='docblock short'>
-                             <p>The variant search response.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.SetIamPolicyRequest.html'
-                               title='google_genomics1::SetIamPolicyRequest'>SetIamPolicyRequest</a></td>
-                        <td class='docblock short'>
-                             <p>Request message for <code>SetIamPolicy</code> method.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.Status.html'
-                               title='google_genomics1::Status'>Status</a></td>
-                        <td class='docblock short'>
-                             <p>The <code>Status</code> type defines a logical error model that is suitable for different programming environments, including REST APIs and RPC APIs. It is used by <a href="https://github.com/grpc">gRPC</a>. The error model is designed to be: - Simple to use and understand for most users - Flexible enough to meet unexpected needs # Overview The <code>Status</code> message contains three pieces of data: error code, error message, and error details. The error code should be an enum value of google.rpc.Code, but it may accept additional error codes if needed. The error message should be a developer-facing English message that helps developers <em>understand</em> and <em>resolve</em> the error. If a localized user-facing error message is needed, put the localized message in the error details or localize it in the client. The optional error details may contain arbitrary information about the error. There is a predefined set of error detail types in the package <code>google.rpc</code> which can be used for common error conditions. # Language mapping The <code>Status</code> message is the logical representation of the error model, but it is not necessarily the actual wire format. When the <code>Status</code> message is exposed in different client libraries and different wire protocols, it can be mapped differently. For example, it will likely be mapped to some exceptions in Java, but more likely mapped to some error codes in C. # Other uses The error model and the <code>Status</code> message can be used in a variety of environments, either with or without APIs, to provide a consistent developer experience across different environments. Example uses of this error model include: - Partial errors. If a service needs to return partial errors to the client, it may embed the <code>Status</code> in the normal response to indicate the partial errors. - Workflow errors. A typical workflow has multiple steps. Each step may have a <code>Status</code> message for error reporting purpose. - Batch operations. If a client uses batch request and batch response, the <code>Status</code> message should be used directly inside batch response, one for each error sub-response. - Asynchronous operations. If an API call embeds asynchronous operation results in its response, the status of those operations should be represented directly using the <code>Status</code> message. - Logging. If some API errors are stored in logs, the message <code>Status</code> could be used directly after any stripping needed for security/privacy reasons.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.StreamReadsRequest.html'
-                               title='google_genomics1::StreamReadsRequest'>StreamReadsRequest</a></td>
-                        <td class='docblock short'>
-                             <p>The stream reads request.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.StreamReadsResponse.html'
-                               title='google_genomics1::StreamReadsResponse'>StreamReadsResponse</a></td>
-                        <td class='docblock short'>
-                             <p>There is no detailed description.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.StreamVariantsRequest.html'
-                               title='google_genomics1::StreamVariantsRequest'>StreamVariantsRequest</a></td>
-                        <td class='docblock short'>
-                             <p>The stream variants request.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.StreamVariantsResponse.html'
-                               title='google_genomics1::StreamVariantsResponse'>StreamVariantsResponse</a></td>
-                        <td class='docblock short'>
-                             <p>There is no detailed description.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.TestIamPermissionsRequest.html'
-                               title='google_genomics1::TestIamPermissionsRequest'>TestIamPermissionsRequest</a></td>
-                        <td class='docblock short'>
-                             <p>Request message for <code>TestIamPermissions</code> method.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.TestIamPermissionsResponse.html'
-                               title='google_genomics1::TestIamPermissionsResponse'>TestIamPermissionsResponse</a></td>
-                        <td class='docblock short'>
-                             <p>Response message for <code>TestIamPermissions</code> method.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.UndeleteDatasetRequest.html'
-                               title='google_genomics1::UndeleteDatasetRequest'>UndeleteDatasetRequest</a></td>
-                        <td class='docblock short'>
-                             <p>There is no detailed description.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.Variant.html'
-                               title='google_genomics1::Variant'>Variant</a></td>
-                        <td class='docblock short'>
-                             <p>A variant represents a change in DNA sequence relative to a reference sequence. For example, a variant could represent a SNP or an insertion. Variants belong to a variant set. For more genomics resource definitions, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a> Each of the calls on a variant represent a determination of genotype with respect to that variant. For example, a call might assign probability of 0.32 to the occurrence of a SNP named rs1234 in a sample named NA12345. A call belongs to a call set, which contains related calls typically from one sample.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.VariantCall.html'
-                               title='google_genomics1::VariantCall'>VariantCall</a></td>
-                        <td class='docblock short'>
-                             <p>A call represents the determination of genotype with respect to a particular variant. It may include associated information such as quality and phasing. For example, a call might assign a probability of 0.32 to the occurrence of a SNP named rs1234 in a call set with the name NA12345.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.VariantCreateCall.html'
-                               title='google_genomics1::VariantCreateCall'>VariantCreateCall</a></td>
-                        <td class='docblock short'>
-                             <p>Creates a new variant. For the definitions of variants and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a></p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.VariantDeleteCall.html'
-                               title='google_genomics1::VariantDeleteCall'>VariantDeleteCall</a></td>
-                        <td class='docblock short'>
-                             <p>Deletes a variant. For the definitions of variants and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a></p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.VariantGetCall.html'
-                               title='google_genomics1::VariantGetCall'>VariantGetCall</a></td>
-                        <td class='docblock short'>
-                             <p>Gets a variant by ID. For the definitions of variants and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a></p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.VariantImportCall.html'
-                               title='google_genomics1::VariantImportCall'>VariantImportCall</a></td>
-                        <td class='docblock short'>
-                             <p>Creates variant data by asynchronously importing the provided information. For the definitions of variant sets and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a> The variants for import will be merged with any existing variant that matches its reference sequence, start, end, reference bases, and alternative bases. If no such variant exists, a new one will be created. When variants are merged, the call information from the new variant is added to the existing variant, and other fields (such as key/value pairs) are discarded. In particular, this means for merged VCF variants that have conflicting INFO fields, some data will be arbitrarily discarded. As a special case, for single-sample VCF files, QUAL and FILTER fields will be moved to the call level; these are sometimes interpreted in a call-specific context. Imported VCF headers are appended to the metadata already in a variant set.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.VariantMethods.html'
-                               title='google_genomics1::VariantMethods'>VariantMethods</a></td>
-                        <td class='docblock short'>
-                             <p>A builder providing access to all methods supported on <em>variant</em> resources.
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ReferencesetSearchCall.html'
+                                  title='google_genomics1::ReferencesetSearchCall'>ReferencesetSearchCall</a></td>
+                           <td class='docblock short'>
+                                <p>Searches for reference sets which match the given criteria. For the definitions of references and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a> Implements <a href="https://github.com/ga4gh/schemas/blob/v0.5.1/src/main/resources/avro/referencemethods.avdl#L71">GlobalAllianceApi.searchReferenceSets</a></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SearchAnnotationSetsRequest.html'
+                                  title='google_genomics1::SearchAnnotationSetsRequest'>SearchAnnotationSetsRequest</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SearchAnnotationSetsResponse.html'
+                                  title='google_genomics1::SearchAnnotationSetsResponse'>SearchAnnotationSetsResponse</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SearchAnnotationsRequest.html'
+                                  title='google_genomics1::SearchAnnotationsRequest'>SearchAnnotationsRequest</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SearchAnnotationsResponse.html'
+                                  title='google_genomics1::SearchAnnotationsResponse'>SearchAnnotationsResponse</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SearchCallSetsRequest.html'
+                                  title='google_genomics1::SearchCallSetsRequest'>SearchCallSetsRequest</a></td>
+                           <td class='docblock short'>
+                                <p>The call set search request.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SearchCallSetsResponse.html'
+                                  title='google_genomics1::SearchCallSetsResponse'>SearchCallSetsResponse</a></td>
+                           <td class='docblock short'>
+                                <p>The call set search response.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SearchReadGroupSetsRequest.html'
+                                  title='google_genomics1::SearchReadGroupSetsRequest'>SearchReadGroupSetsRequest</a></td>
+                           <td class='docblock short'>
+                                <p>The read group set search request.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SearchReadGroupSetsResponse.html'
+                                  title='google_genomics1::SearchReadGroupSetsResponse'>SearchReadGroupSetsResponse</a></td>
+                           <td class='docblock short'>
+                                <p>The read group set search response.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SearchReadsRequest.html'
+                                  title='google_genomics1::SearchReadsRequest'>SearchReadsRequest</a></td>
+                           <td class='docblock short'>
+                                <p>The read search request.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SearchReadsResponse.html'
+                                  title='google_genomics1::SearchReadsResponse'>SearchReadsResponse</a></td>
+                           <td class='docblock short'>
+                                <p>The read search response.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SearchReferenceSetsRequest.html'
+                                  title='google_genomics1::SearchReferenceSetsRequest'>SearchReferenceSetsRequest</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SearchReferenceSetsResponse.html'
+                                  title='google_genomics1::SearchReferenceSetsResponse'>SearchReferenceSetsResponse</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SearchReferencesRequest.html'
+                                  title='google_genomics1::SearchReferencesRequest'>SearchReferencesRequest</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SearchReferencesResponse.html'
+                                  title='google_genomics1::SearchReferencesResponse'>SearchReferencesResponse</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SearchVariantSetsRequest.html'
+                                  title='google_genomics1::SearchVariantSetsRequest'>SearchVariantSetsRequest</a></td>
+                           <td class='docblock short'>
+                                <p>The search variant sets request.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SearchVariantSetsResponse.html'
+                                  title='google_genomics1::SearchVariantSetsResponse'>SearchVariantSetsResponse</a></td>
+                           <td class='docblock short'>
+                                <p>The search variant sets response.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SearchVariantsRequest.html'
+                                  title='google_genomics1::SearchVariantsRequest'>SearchVariantsRequest</a></td>
+                           <td class='docblock short'>
+                                <p>The variant search request.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SearchVariantsResponse.html'
+                                  title='google_genomics1::SearchVariantsResponse'>SearchVariantsResponse</a></td>
+                           <td class='docblock short'>
+                                <p>The variant search response.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SetIamPolicyRequest.html'
+                                  title='google_genomics1::SetIamPolicyRequest'>SetIamPolicyRequest</a></td>
+                           <td class='docblock short'>
+                                <p>Request message for <code>SetIamPolicy</code> method.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Status.html'
+                                  title='google_genomics1::Status'>Status</a></td>
+                           <td class='docblock short'>
+                                <p>The <code>Status</code> type defines a logical error model that is suitable for different programming environments, including REST APIs and RPC APIs. It is used by <a href="https://github.com/grpc">gRPC</a>. The error model is designed to be: - Simple to use and understand for most users - Flexible enough to meet unexpected needs # Overview The <code>Status</code> message contains three pieces of data: error code, error message, and error details. The error code should be an enum value of google.rpc.Code, but it may accept additional error codes if needed. The error message should be a developer-facing English message that helps developers <em>understand</em> and <em>resolve</em> the error. If a localized user-facing error message is needed, put the localized message in the error details or localize it in the client. The optional error details may contain arbitrary information about the error. There is a predefined set of error detail types in the package <code>google.rpc</code> which can be used for common error conditions. # Language mapping The <code>Status</code> message is the logical representation of the error model, but it is not necessarily the actual wire format. When the <code>Status</code> message is exposed in different client libraries and different wire protocols, it can be mapped differently. For example, it will likely be mapped to some exceptions in Java, but more likely mapped to some error codes in C. # Other uses The error model and the <code>Status</code> message can be used in a variety of environments, either with or without APIs, to provide a consistent developer experience across different environments. Example uses of this error model include: - Partial errors. If a service needs to return partial errors to the client, it may embed the <code>Status</code> in the normal response to indicate the partial errors. - Workflow errors. A typical workflow has multiple steps. Each step may have a <code>Status</code> message for error reporting purpose. - Batch operations. If a client uses batch request and batch response, the <code>Status</code> message should be used directly inside batch response, one for each error sub-response. - Asynchronous operations. If an API call embeds asynchronous operation results in its response, the status of those operations should be represented directly using the <code>Status</code> message. - Logging. If some API errors are stored in logs, the message <code>Status</code> could be used directly after any stripping needed for security/privacy reasons.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.StreamReadsRequest.html'
+                                  title='google_genomics1::StreamReadsRequest'>StreamReadsRequest</a></td>
+                           <td class='docblock short'>
+                                <p>The stream reads request.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.StreamReadsResponse.html'
+                                  title='google_genomics1::StreamReadsResponse'>StreamReadsResponse</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.StreamVariantsRequest.html'
+                                  title='google_genomics1::StreamVariantsRequest'>StreamVariantsRequest</a></td>
+                           <td class='docblock short'>
+                                <p>The stream variants request.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.StreamVariantsResponse.html'
+                                  title='google_genomics1::StreamVariantsResponse'>StreamVariantsResponse</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.TestIamPermissionsRequest.html'
+                                  title='google_genomics1::TestIamPermissionsRequest'>TestIamPermissionsRequest</a></td>
+                           <td class='docblock short'>
+                                <p>Request message for <code>TestIamPermissions</code> method.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.TestIamPermissionsResponse.html'
+                                  title='google_genomics1::TestIamPermissionsResponse'>TestIamPermissionsResponse</a></td>
+                           <td class='docblock short'>
+                                <p>Response message for <code>TestIamPermissions</code> method.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Transcript.html'
+                                  title='google_genomics1::Transcript'>Transcript</a></td>
+                           <td class='docblock short'>
+                                <p>A transcript represents the assertion that a particular region of the reference genome may be transcribed as RNA.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UndeleteDatasetRequest.html'
+                                  title='google_genomics1::UndeleteDatasetRequest'>UndeleteDatasetRequest</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Variant.html'
+                                  title='google_genomics1::Variant'>Variant</a></td>
+                           <td class='docblock short'>
+                                <p>A variant represents a change in DNA sequence relative to a reference sequence. For example, a variant could represent a SNP or an insertion. Variants belong to a variant set. For more genomics resource definitions, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a> Each of the calls on a variant represent a determination of genotype with respect to that variant. For example, a call might assign probability of 0.32 to the occurrence of a SNP named rs1234 in a sample named NA12345. A call belongs to a call set, which contains related calls typically from one sample.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.VariantAnnotation.html'
+                                  title='google_genomics1::VariantAnnotation'>VariantAnnotation</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.VariantCall.html'
+                                  title='google_genomics1::VariantCall'>VariantCall</a></td>
+                           <td class='docblock short'>
+                                <p>A call represents the determination of genotype with respect to a particular variant. It may include associated information such as quality and phasing. For example, a call might assign a probability of 0.32 to the occurrence of a SNP named rs1234 in a call set with the name NA12345.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.VariantCreateCall.html'
+                                  title='google_genomics1::VariantCreateCall'>VariantCreateCall</a></td>
+                           <td class='docblock short'>
+                                <p>Creates a new variant. For the definitions of variants and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.VariantDeleteCall.html'
+                                  title='google_genomics1::VariantDeleteCall'>VariantDeleteCall</a></td>
+                           <td class='docblock short'>
+                                <p>Deletes a variant. For the definitions of variants and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.VariantGetCall.html'
+                                  title='google_genomics1::VariantGetCall'>VariantGetCall</a></td>
+                           <td class='docblock short'>
+                                <p>Gets a variant by ID. For the definitions of variants and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.VariantImportCall.html'
+                                  title='google_genomics1::VariantImportCall'>VariantImportCall</a></td>
+                           <td class='docblock short'>
+                                <p>Creates variant data by asynchronously importing the provided information. For the definitions of variant sets and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a> The variants for import will be merged with any existing variant that matches its reference sequence, start, end, reference bases, and alternative bases. If no such variant exists, a new one will be created. When variants are merged, the call information from the new variant is added to the existing variant, and Variant info fields are merged as specified in infoMergeConfig. As a special case, for single-sample VCF files, QUAL and FILTER fields will be moved to the call level; these are sometimes interpreted in a call-specific context. Imported VCF headers are appended to the metadata already in a variant set.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.VariantMergeCall.html'
+                                  title='google_genomics1::VariantMergeCall'>VariantMergeCall</a></td>
+                           <td class='docblock short'>
+                                <p>Merges the given variants with existing variants. For the definitions of variants and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a> Each variant will be merged with an existing variant that matches its reference sequence, start, end, reference bases, and alternative bases. If no such variant exists, a new one will be created. When variants are merged, the call information from the new variant is added to the existing variant. Variant info fields are merged as specified in the infoMergeConfig field of the MergeVariantsRequest. Please exercise caution when using this method! It is easy to introduce mistakes in existing variants and difficult to back out of them. For example, suppose you were trying to merge a new variant with an existing one and both variants contain calls that belong to callsets with the same callset ID. // Existing variant - irrelevant fields trimmed for clarity { &quot;variantSetId&quot;: &quot;10473108253681171589&quot;, &quot;referenceName&quot;: &quot;1&quot;, &quot;start&quot;: &quot;10582&quot;, &quot;referenceBases&quot;: &quot;G&quot;, &quot;alternateBases&quot;: [ &quot;A&quot; ], &quot;calls&quot;: [ { &quot;callSetId&quot;: &quot;10473108253681171589-0&quot;, &quot;callSetName&quot;: &quot;CALLSET0&quot;, &quot;genotype&quot;: [ 0, 1 ], } ] } // New variant with conflicting call information { &quot;variantSetId&quot;: &quot;10473108253681171589&quot;, &quot;referenceName&quot;: &quot;1&quot;, &quot;start&quot;: &quot;10582&quot;, &quot;referenceBases&quot;: &quot;G&quot;, &quot;alternateBases&quot;: [ &quot;A&quot; ], &quot;calls&quot;: [ { &quot;callSetId&quot;: &quot;10473108253681171589-0&quot;, &quot;callSetName&quot;: &quot;CALLSET0&quot;, &quot;genotype&quot;: [ 1, 1 ], } ] } The resulting merged variant would overwrite the existing calls with those from the new variant: { &quot;variantSetId&quot;: &quot;10473108253681171589&quot;, &quot;referenceName&quot;: &quot;1&quot;, &quot;start&quot;: &quot;10582&quot;, &quot;referenceBases&quot;: &quot;G&quot;, &quot;alternateBases&quot;: [ &quot;A&quot; ], &quot;calls&quot;: [ { &quot;callSetId&quot;: &quot;10473108253681171589-0&quot;, &quot;callSetName&quot;: &quot;CALLSET0&quot;, &quot;genotype&quot;: [ 1, 1 ], } ] } This may be the desired outcome, but it is up to the user to determine if if that is indeed the case.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.VariantMethods.html'
+                                  title='google_genomics1::VariantMethods'>VariantMethods</a></td>
+                           <td class='docblock short'>
+                                <p>A builder providing access to all methods supported on <em>variant</em> resources.
 It is not used directly, but through the <code>Genomics</code> hub.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.VariantPatchCall.html'
-                               title='google_genomics1::VariantPatchCall'>VariantPatchCall</a></td>
-                        <td class='docblock short'>
-                             <p>Updates a variant. For the definitions of variants and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a> This method supports patch semantics. Returns the modified variant without its calls.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.VariantSearchCall.html'
-                               title='google_genomics1::VariantSearchCall'>VariantSearchCall</a></td>
-                        <td class='docblock short'>
-                             <p>Gets a list of variants matching the criteria. For the definitions of variants and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a> Implements <a href="https://github.com/ga4gh/schemas/blob/v0.5.1/src/main/resources/avro/variantmethods.avdl#L126">GlobalAllianceApi.searchVariants</a>.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.VariantSet.html'
-                               title='google_genomics1::VariantSet'>VariantSet</a></td>
-                        <td class='docblock short'>
-                             <p>A variant set is a collection of call sets and variants. It contains summary statistics of those contents. A variant set belongs to a dataset. For more genomics resource definitions, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a></p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.VariantSetMetadata.html'
-                               title='google_genomics1::VariantSetMetadata'>VariantSetMetadata</a></td>
-                        <td class='docblock short'>
-                             <p>Metadata describes a single piece of variant call metadata. These data include a top level key and either a single value string (value) or a list of key-value pairs (info.) Value and info are mutually exclusive.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.VariantStreamCall.html'
-                               title='google_genomics1::VariantStreamCall'>VariantStreamCall</a></td>
-                        <td class='docblock short'>
-                             <p>Returns a stream of all the variants matching the search request, ordered by reference name, position, and ID.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.VariantsetCreateCall.html'
-                               title='google_genomics1::VariantsetCreateCall'>VariantsetCreateCall</a></td>
-                        <td class='docblock short'>
-                             <p>Creates a new variant set. For the definitions of variant sets and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a> The provided variant set must have a valid <code>datasetId</code> set - all other fields are optional. Note that the <code>id</code> field will be ignored, as this is assigned by the server.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.VariantsetDeleteCall.html'
-                               title='google_genomics1::VariantsetDeleteCall'>VariantsetDeleteCall</a></td>
-                        <td class='docblock short'>
-                             <p>Deletes the contents of a variant set. The variant set object is not deleted. For the definitions of variant sets and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a></p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.VariantsetExportCall.html'
-                               title='google_genomics1::VariantsetExportCall'>VariantsetExportCall</a></td>
-                        <td class='docblock short'>
-                             <p>Exports variant set data to an external destination. For the definitions of variant sets and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a></p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.VariantsetGetCall.html'
-                               title='google_genomics1::VariantsetGetCall'>VariantsetGetCall</a></td>
-                        <td class='docblock short'>
-                             <p>Gets a variant set by ID. For the definitions of variant sets and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a></p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.VariantsetMethods.html'
-                               title='google_genomics1::VariantsetMethods'>VariantsetMethods</a></td>
-                        <td class='docblock short'>
-                             <p>A builder providing access to all methods supported on <em>variantset</em> resources.
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.VariantPatchCall.html'
+                                  title='google_genomics1::VariantPatchCall'>VariantPatchCall</a></td>
+                           <td class='docblock short'>
+                                <p>Updates a variant. For the definitions of variants and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a> This method supports patch semantics. Returns the modified variant without its calls.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.VariantSearchCall.html'
+                                  title='google_genomics1::VariantSearchCall'>VariantSearchCall</a></td>
+                           <td class='docblock short'>
+                                <p>Gets a list of variants matching the criteria. For the definitions of variants and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a> Implements <a href="https://github.com/ga4gh/schemas/blob/v0.5.1/src/main/resources/avro/variantmethods.avdl#L126">GlobalAllianceApi.searchVariants</a>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.VariantSet.html'
+                                  title='google_genomics1::VariantSet'>VariantSet</a></td>
+                           <td class='docblock short'>
+                                <p>A variant set is a collection of call sets and variants. It contains summary statistics of those contents. A variant set belongs to a dataset. For more genomics resource definitions, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.VariantSetMetadata.html'
+                                  title='google_genomics1::VariantSetMetadata'>VariantSetMetadata</a></td>
+                           <td class='docblock short'>
+                                <p>Metadata describes a single piece of variant call metadata. These data include a top level key and either a single value string (value) or a list of key-value pairs (info.) Value and info are mutually exclusive.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.VariantStreamCall.html'
+                                  title='google_genomics1::VariantStreamCall'>VariantStreamCall</a></td>
+                           <td class='docblock short'>
+                                <p>Returns a stream of all the variants matching the search request, ordered by reference name, position, and ID.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.VariantsetCreateCall.html'
+                                  title='google_genomics1::VariantsetCreateCall'>VariantsetCreateCall</a></td>
+                           <td class='docblock short'>
+                                <p>Creates a new variant set. For the definitions of variant sets and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a> The provided variant set must have a valid <code>datasetId</code> set - all other fields are optional. Note that the <code>id</code> field will be ignored, as this is assigned by the server.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.VariantsetDeleteCall.html'
+                                  title='google_genomics1::VariantsetDeleteCall'>VariantsetDeleteCall</a></td>
+                           <td class='docblock short'>
+                                <p>Deletes a variant set including all variants, call sets, and calls within. This is not reversible. For the definitions of variant sets and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.VariantsetExportCall.html'
+                                  title='google_genomics1::VariantsetExportCall'>VariantsetExportCall</a></td>
+                           <td class='docblock short'>
+                                <p>Exports variant set data to an external destination. For the definitions of variant sets and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.VariantsetGetCall.html'
+                                  title='google_genomics1::VariantsetGetCall'>VariantsetGetCall</a></td>
+                           <td class='docblock short'>
+                                <p>Gets a variant set by ID. For the definitions of variant sets and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.VariantsetMethods.html'
+                                  title='google_genomics1::VariantsetMethods'>VariantsetMethods</a></td>
+                           <td class='docblock short'>
+                                <p>A builder providing access to all methods supported on <em>variantset</em> resources.
 It is not used directly, but through the <code>Genomics</code> hub.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.VariantsetPatchCall.html'
-                               title='google_genomics1::VariantsetPatchCall'>VariantsetPatchCall</a></td>
-                        <td class='docblock short'>
-                             <p>Updates a variant set using patch semantics. For the definitions of variant sets and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a></p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.VariantsetSearchCall.html'
-                               title='google_genomics1::VariantsetSearchCall'>VariantsetSearchCall</a></td>
-                        <td class='docblock short'>
-                             <p>Returns a list of all variant sets matching search criteria. For the definitions of variant sets and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a> Implements <a href="https://github.com/ga4gh/schemas/blob/v0.5.1/src/main/resources/avro/variantmethods.avdl#L49">GlobalAllianceApi.searchVariantSets</a>.</p>
-
-                        </td>
-                    </tr>
-                </table><h2 id='enums' class='section-header'><a href="#enums">Enums</a></h2>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.VariantsetPatchCall.html'
+                                  title='google_genomics1::VariantsetPatchCall'>VariantsetPatchCall</a></td>
+                           <td class='docblock short'>
+                                <p>Updates a variant set using patch semantics. For the definitions of variant sets and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a></p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.VariantsetSearchCall.html'
+                                  title='google_genomics1::VariantsetSearchCall'>VariantsetSearchCall</a></td>
+                           <td class='docblock short'>
+                                <p>Returns a list of all variant sets matching search criteria. For the definitions of variant sets and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a> Implements <a href="https://github.com/ga4gh/schemas/blob/v0.5.1/src/main/resources/avro/variantmethods.avdl#L49">GlobalAllianceApi.searchVariantSets</a>.</p>
+                           </td>
+                       </tr></table><h2 id='enums' class='section-header'><a href="#enums">Enums</a></h2>
 <table>
-                    <tr class=' module-item'>
-                        <td><a class='enum' href='enum.Error.html'
-                               title='google_genomics1::Error'>Error</a></td>
-                        <td class='docblock short'>
-                             
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='enum' href='enum.Scope.html'
-                               title='google_genomics1::Scope'>Scope</a></td>
-                        <td class='docblock short'>
-                             <p>Identifies the an OAuth2 authorization scope.
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.Error.html'
+                                  title='google_genomics1::Error'>Error</a></td>
+                           <td class='docblock short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.Scope.html'
+                                  title='google_genomics1::Scope'>Scope</a></td>
+                           <td class='docblock short'>
+                                <p>Identifies the an OAuth2 authorization scope.
 A scope is needed when requesting an
 <a href="https://developers.google.com/youtube/v3/guides/authentication">authorization token</a>.</p>
-
-                        </td>
-                    </tr>
-                </table><h2 id='traits' class='section-header'><a href="#traits">Traits</a></h2>
+                           </td>
+                       </tr></table><h2 id='traits' class='section-header'><a href="#traits">Traits</a></h2>
 <table>
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.CallBuilder.html'
-                               title='google_genomics1::CallBuilder'>CallBuilder</a></td>
-                        <td class='docblock short'>
-                             <p>Identifies types which represent builders for a particular resource method</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.Delegate.html'
-                               title='google_genomics1::Delegate'>Delegate</a></td>
-                        <td class='docblock short'>
-                             <p>A trait specifying functionality to help controlling any request performed by the API.
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.CallBuilder.html'
+                                  title='google_genomics1::CallBuilder'>CallBuilder</a></td>
+                           <td class='docblock short'>
+                                <p>Identifies types which represent builders for a particular resource method</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.Delegate.html'
+                                  title='google_genomics1::Delegate'>Delegate</a></td>
+                           <td class='docblock short'>
+                                <p>A trait specifying functionality to help controlling any request performed by the API.
 The trait has a conservative default implementation.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.Hub.html'
-                               title='google_genomics1::Hub'>Hub</a></td>
-                        <td class='docblock short'>
-                             <p>Identifies the Hub. There is only one per library, this trait is supposed
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.Hub.html'
+                                  title='google_genomics1::Hub'>Hub</a></td>
+                           <td class='docblock short'>
+                                <p>Identifies the Hub. There is only one per library, this trait is supposed
 to make intended use more explicit.
 The hub allows to access all resource methods more easily.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.MethodsBuilder.html'
-                               title='google_genomics1::MethodsBuilder'>MethodsBuilder</a></td>
-                        <td class='docblock short'>
-                             <p>Identifies types for building methods of a particular resource type</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.NestedType.html'
-                               title='google_genomics1::NestedType'>NestedType</a></td>
-                        <td class='docblock short'>
-                             <p>Identifies types which are only used by other types internally.
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.MethodsBuilder.html'
+                                  title='google_genomics1::MethodsBuilder'>MethodsBuilder</a></td>
+                           <td class='docblock short'>
+                                <p>Identifies types for building methods of a particular resource type</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.NestedType.html'
+                                  title='google_genomics1::NestedType'>NestedType</a></td>
+                           <td class='docblock short'>
+                                <p>Identifies types which are only used by other types internally.
 They have no special meaning, this trait just marks them for completeness.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.Part.html'
-                               title='google_genomics1::Part'>Part</a></td>
-                        <td class='docblock short'>
-                             <p>Identifies types which are only used as part of other types, which
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.Part.html'
+                                  title='google_genomics1::Part'>Part</a></td>
+                           <td class='docblock short'>
+                                <p>Identifies types which are only used as part of other types, which
 usually are carrying the <code>Resource</code> trait.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.ReadSeek.html'
-                               title='google_genomics1::ReadSeek'>ReadSeek</a></td>
-                        <td class='docblock short'>
-                             <p>A utility to specify reader types which provide seeking capabilities too</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.RequestValue.html'
-                               title='google_genomics1::RequestValue'>RequestValue</a></td>
-                        <td class='docblock short'>
-                             <p>Identifies types which are used in API requests.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.Resource.html'
-                               title='google_genomics1::Resource'>Resource</a></td>
-                        <td class='docblock short'>
-                             <p>Identifies types which can be inserted and deleted.
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.ReadSeek.html'
+                                  title='google_genomics1::ReadSeek'>ReadSeek</a></td>
+                           <td class='docblock short'>
+                                <p>A utility to specify reader types which provide seeking capabilities too</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.RequestValue.html'
+                                  title='google_genomics1::RequestValue'>RequestValue</a></td>
+                           <td class='docblock short'>
+                                <p>Identifies types which are used in API requests.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.Resource.html'
+                                  title='google_genomics1::Resource'>Resource</a></td>
+                           <td class='docblock short'>
+                                <p>Identifies types which can be inserted and deleted.
 Types with this trait are most commonly used by clients of this API.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.ResponseResult.html'
-                               title='google_genomics1::ResponseResult'>ResponseResult</a></td>
-                        <td class='docblock short'>
-                             <p>Identifies types which are used in API responses.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.ToParts.html'
-                               title='google_genomics1::ToParts'>ToParts</a></td>
-                        <td class='docblock short'>
-                             <p>A trait for all types that can convert themselves into a <em>parts</em> string</p>
-
-                        </td>
-                    </tr>
-                </table><h2 id='functions' class='section-header'><a href="#functions">Functions</a></h2>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.ResponseResult.html'
+                                  title='google_genomics1::ResponseResult'>ResponseResult</a></td>
+                           <td class='docblock short'>
+                                <p>Identifies types which are used in API responses.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.ToParts.html'
+                                  title='google_genomics1::ToParts'>ToParts</a></td>
+                           <td class='docblock short'>
+                                <p>A trait for all types that can convert themselves into a <em>parts</em> string</p>
+                           </td>
+                       </tr></table><h2 id='functions' class='section-header'><a href="#functions">Functions</a></h2>
 <table>
-                    <tr class=' module-item'>
-                        <td><a class='fn' href='fn.remove_json_null_values.html'
-                               title='google_genomics1::remove_json_null_values'>remove_json_null_values</a></td>
-                        <td class='docblock short'>
-                             
-                        </td>
-                    </tr>
-                </table><h2 id='types' class='section-header'><a href="#types">Type Definitions</a></h2>
+                       <tr class=' module-item'>
+                           <td><a class='fn' href='fn.remove_json_null_values.html'
+                                  title='google_genomics1::remove_json_null_values'>remove_json_null_values</a></td>
+                           <td class='docblock short'>
+                                
+                           </td>
+                       </tr></table><h2 id='types' class='section-header'><a href="#types">Type Definitions</a></h2>
 <table>
-                    <tr class=' module-item'>
-                        <td><a class='type' href='type.Result.html'
-                               title='google_genomics1::Result'>Result</a></td>
-                        <td class='docblock short'>
-                             <p>A universal result type used as return for all calls.</p>
-
-                        </td>
-                    </tr>
-                </table></section>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Result.html'
+                                  title='google_genomics1::Result'>Result</a></td>
+                           <td class='docblock short'>
+                                <p>A universal result type used as return for all calls.</p>
+                           </td>
+                       </tr></table></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
@@ -1469,6 +1442,8 @@ Types with this trait are most commonly used by clients of this API.</p>
                     <dd>Move down in search results</dd>
                     <dt>&#9166;</dt>
                     <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
                 </dl>
             </div>
 
@@ -1489,7 +1464,7 @@ Types with this trait are most commonly used by clients of this API.</p>
 
                 <p>
                     Search functions by type signature (e.g.
-                    <code>vec -> usize</code>)
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
                 </p>
             </div>
         </div>

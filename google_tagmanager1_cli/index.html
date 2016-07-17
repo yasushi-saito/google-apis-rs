@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Tag Manager v0.3.3+20151112</title>
+  <title>Tag Manager v0.3.5+20160310</title>
   
 
   <link rel="shortcut icon" href="./img/favicon.ico">
@@ -38,7 +38,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href="." class="icon icon-home"> Tag Manager v0.3.3+20151112</a>
+        <a href="." class="icon icon-home"> Tag Manager v0.3.5+20160310</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -93,6 +93,48 @@
             
     <li class="toctree-l1 ">
         <a class="" href="accounts_containers-delete/">Containers Delete</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="accounts_containers-environments-create/">Containers Environments Create</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="accounts_containers-environments-delete/">Containers Environments Delete</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="accounts_containers-environments-get/">Containers Environments Get</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="accounts_containers-environments-list/">Containers Environments List</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="accounts_containers-environments-patch/">Containers Environments Patch</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="accounts_containers-environments-update/">Containers Environments Update</a>
         
     </li>
 
@@ -156,6 +198,13 @@
             
     <li class="toctree-l1 ">
         <a class="" href="accounts_containers-move-folders-update/">Containers Move Folders Update</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="accounts_containers-reauthorize-environments-update/">Containers Reauthorize Environments Update</a>
         
     </li>
 
@@ -397,7 +446,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href=".">Tag Manager v0.3.3+20151112</a>
+        <a href=".">Tag Manager v0.3.5+20160310</a>
       </nav>
 
       
@@ -438,16 +487,22 @@ capabilities. Errors will be printed to standard error, and cause the program's 
 <h1 id="downloads">Downloads</h1>
 <p>You can download the pre-compiled 64bit binaries for the following platforms:</p>
 <ul>
-<li><img alt="icon" src="http://megaicons.net/static/img/icons_sizes/6/140/16/ubuntu-icon.png" /> <a href="http://dl.byronimo.de/google.rs/cli/0.3.3/ubuntu/tagmanager1.tar.gz">ubuntu</a></li>
-<li><img alt="icon" src="http://hydra-media.cursecdn.com/wow.gamepedia.com/a/a2/Apple-icon-16x16.png?version=25ddd67ac3dd3b634478e3978b76cb74" /> <a href="http://dl.byronimo.de/google.rs/cli/0.3.3/osx/tagmanager1.tar.gz">osx</a></li>
+<li><img alt="icon" src="http://megaicons.net/static/img/icons_sizes/6/140/16/ubuntu-icon.png" /> <a href="http://dl.byronimo.de/google.rs/cli/0.3.5/ubuntu/tagmanager1.tar.gz">ubuntu</a></li>
+<li><img alt="icon" src="http://hydra-media.cursecdn.com/wow.gamepedia.com/a/a2/Apple-icon-16x16.png?version=25ddd67ac3dd3b634478e3978b76cb74" /> <a href="http://dl.byronimo.de/google.rs/cli/0.3.5/osx/tagmanager1.tar.gz">osx</a></li>
 </ul>
 <p>Find the source code <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/tagmanager1-cli">on github</a>.</p>
 <h1 id="usage">Usage</h1>
-<p>This documentation was generated from the <em>Tag Manager</em> API at revision <em>20151112</em>. The CLI is at version <em>0.3.3</em>.</p>
+<p>This documentation was generated from the <em>Tag Manager</em> API at revision <em>20160310</em>. The CLI is at version <em>0.3.5</em>.</p>
 <pre><code class="bash">tagmanager1 [options]
         accounts
                 containers-create &lt;account-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 containers-delete &lt;account-id&gt; &lt;container-id&gt; [-p &lt;v&gt;]...
+                containers-environments-create &lt;account-id&gt; &lt;container-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                containers-environments-delete &lt;account-id&gt; &lt;container-id&gt; &lt;environment-id&gt; [-p &lt;v&gt;]...
+                containers-environments-get &lt;account-id&gt; &lt;container-id&gt; &lt;environment-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                containers-environments-list &lt;account-id&gt; &lt;container-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                containers-environments-patch &lt;account-id&gt; &lt;container-id&gt; &lt;environment-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                containers-environments-update &lt;account-id&gt; &lt;container-id&gt; &lt;environment-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 containers-folders-create &lt;account-id&gt; &lt;container-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 containers-folders-delete &lt;account-id&gt; &lt;container-id&gt; &lt;folder-id&gt; [-p &lt;v&gt;]...
                 containers-folders-entities-list &lt;account-id&gt; &lt;container-id&gt; &lt;folder-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
@@ -456,7 +511,8 @@ capabilities. Errors will be printed to standard error, and cause the program's 
                 containers-folders-update &lt;account-id&gt; &lt;container-id&gt; &lt;folder-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 containers-get &lt;account-id&gt; &lt;container-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 containers-list &lt;account-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
-                containers-move-folders-update &lt;account-id&gt; &lt;container-id&gt; &lt;folder-id&gt; [-p &lt;v&gt;]...
+                containers-move-folders-update &lt;account-id&gt; &lt;container-id&gt; &lt;folder-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]...
+                containers-reauthorize-environments-update &lt;account-id&gt; &lt;container-id&gt; &lt;environment-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 containers-tags-create &lt;account-id&gt; &lt;container-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 containers-tags-delete &lt;account-id&gt; &lt;container-id&gt; &lt;tag-id&gt; [-p &lt;v&gt;]...
                 containers-tags-get &lt;account-id&gt; &lt;container-id&gt; &lt;tag-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
@@ -595,5 +651,5 @@ issue at hand.</p>
 
 <!--
 MkDocs version : 0.14.0
-Build Date UTC : 2016-01-30 14:50:24.434224
+Build Date UTC : 2016-07-17 12:48:00.189030
 -->

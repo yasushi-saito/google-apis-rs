@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
+    
 
     
     
@@ -43,10 +44,10 @@
 
     <section id='main' class="content struct">
 <h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_appengine1_beta4</a>::<wbr><a class='struct' href=''>AppMethods</a></span><span class='out-of-band'><span id='render-detail'>
-            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
-                [<span class='inner'>&#x2212;</span>]
-            </a>
-        </span><a id='src-6248' class='srclink' href='../src/google_appengine1_beta4///Users/byron/dev/rs/google-apis-rs/target/debug/build/google-appengine1_beta4-7d638a2eec005499/out/lib.rs.html#10839-10841' title='goto source code'>[src]</a></span></h1>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-6776' class='srclink' href='../src/google_appengine1_beta4/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-appengine1_beta4-c76ea7fd5662ea99/out/lib.rs.html#14129-14131' title='goto source code'>[src]</a></span></h1>
 <pre class='rust struct'>pub struct AppMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>app</em> resources.
@@ -54,6 +55,7 @@ It is not used directly, but through the <code>Appengine</code> hub.</p>
 
 <h1 id='example' class='section-header'><a href='#example'>Example</a></h1>
 <p>Instantiate a resource builder</p>
+
 <pre class='rust rust-example-rendered'>
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>hyper</span>;
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>yup_oauth2</span> <span class='kw'>as</span> <span class='ident'>oauth2</span>;
@@ -69,10 +71,11 @@ It is not used directly, but through the <code>Appengine</code> hub.</p>
                               <span class='op'>&lt;</span><span class='ident'>MemoryStorage</span> <span class='kw'>as</span> <span class='ident'>Default</span><span class='op'>&gt;</span>::<span class='ident'>default</span>(), <span class='prelude-val'>None</span>);
 <span class='kw'>let</span> <span class='kw-2'>mut</span> <span class='ident'>hub</span> <span class='op'>=</span> <span class='ident'>Appengine</span>::<span class='ident'>new</span>(<span class='ident'>hyper</span>::<span class='ident'>Client</span>::<span class='ident'>new</span>(), <span class='ident'>auth</span>);
 <span class='comment'>// Usually you wouldn&#39;t bind this to a variable, but keep calling *CallBuilders*</span>
-<span class='comment'>// like `get(...)`, `modules_delete(...)`, `modules_get(...)`, `modules_list(...)`, `modules_patch(...)`, `modules_versions_create(...)`, `modules_versions_delete(...)`, `modules_versions_get(...)`, `modules_versions_list(...)`, `operations_get(...)` and `operations_list(...)`</span>
+<span class='comment'>// like `get(...)`, `modules_delete(...)`, `modules_get(...)`, `modules_list(...)`, `modules_patch(...)`, `modules_versions_create(...)`, `modules_versions_delete(...)`, `modules_versions_get(...)`, `modules_versions_list(...)`, `modules_versions_patch(...)`, `operations_get(...)` and `operations_list(...)`</span>
 <span class='comment'>// to build up your call.</span>
 <span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>apps</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_appengine1_beta4/struct.AppMethods.html' title='google_appengine1_beta4::AppMethods'>AppMethods</a>&lt;'a, C, A&gt;</code></h3><div class='impl-items'><h4 id='method.modules_patch' class='method'><code>fn <a href='#method.modules_patch' class='fnname'>modules_patch</a>(&amp;self, request: <a class='struct' href='../google_appengine1_beta4/struct.Module.html' title='google_appengine1_beta4::Module'>Module</a>, apps_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, modules_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_appengine1_beta4/struct.AppModulePatchCall.html' title='google_appengine1_beta4::AppModulePatchCall'>AppModulePatchCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_appengine1_beta4/struct.AppMethods.html' title='google_appengine1_beta4::AppMethods'>AppMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-6785' class='srclink' href='../src/google_appengine1_beta4/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-appengine1_beta4-c76ea7fd5662ea99/out/lib.rs.html#14133-14359' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.modules_patch' class='method'><code>fn <a href='#method.modules_patch' class='fnname'>modules_patch</a>(&amp;self, request: <a class='struct' href='../google_appengine1_beta4/struct.Module.html' title='google_appengine1_beta4::Module'>Module</a>, apps_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, modules_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_appengine1_beta4/struct.AppModulePatchCall.html' title='google_appengine1_beta4::AppModulePatchCall'>AppModulePatchCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Updates the configuration of the specified module.</p>
@@ -131,12 +134,24 @@ It is not used directly, but through the <code>Appengine</code> hub.</p>
 <li><code>appsId</code> - Part of <code>name</code>. The name of the operation resource.</li>
 <li><code>operationsId</code> - Part of <code>name</code>. See documentation of <code>appsId</code>.</li>
 </ul>
+</div><h4 id='method.modules_versions_patch' class='method'><code>fn <a href='#method.modules_versions_patch' class='fnname'>modules_versions_patch</a>(&amp;self, request: <a class='struct' href='../google_appengine1_beta4/struct.Version.html' title='google_appengine1_beta4::Version'>Version</a>, apps_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, modules_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, versions_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_appengine1_beta4/struct.AppModuleVersionPatchCall.html' title='google_appengine1_beta4::AppModuleVersionPatchCall'>AppModuleVersionPatchCall</a>&lt;'a, C, A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Updates an existing version. Note: UNIMPLEMENTED.</p>
+
+<h1 id='arguments-6' class='section-header'><a href='#arguments-6'>Arguments</a></h1>
+<ul>
+<li><code>request</code> - No description provided.</li>
+<li><code>appsId</code> - Part of <code>name</code>. Name of the resource to update. For example: &quot;apps/myapp/modules/default/versions/1&quot;.</li>
+<li><code>modulesId</code> - Part of <code>name</code>. See documentation of <code>appsId</code>.</li>
+<li><code>versionsId</code> - Part of <code>name</code>. See documentation of <code>appsId</code>.</li>
+</ul>
 </div><h4 id='method.operations_list' class='method'><code>fn <a href='#method.operations_list' class='fnname'>operations_list</a>(&amp;self, apps_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_appengine1_beta4/struct.AppOperationListCall.html' title='google_appengine1_beta4::AppOperationListCall'>AppOperationListCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Lists operations that match the specified filter in the request. If the server doesn&#39;t support this method, it returns <code>UNIMPLEMENTED</code>. NOTE: the <code>name</code> binding below allows API services to override the binding to use different resource name schemes, such as <code>users/*/operations</code>.</p>
 
-<h1 id='arguments-6' class='section-header'><a href='#arguments-6'>Arguments</a></h1>
+<h1 id='arguments-7' class='section-header'><a href='#arguments-7'>Arguments</a></h1>
 <ul>
 <li><code>appsId</code> - Part of <code>name</code>. The name of the operation collection.</li>
 </ul>
@@ -145,7 +160,7 @@ It is not used directly, but through the <code>Appengine</code> hub.</p>
 
 <p>Deletes an existing version.</p>
 
-<h1 id='arguments-7' class='section-header'><a href='#arguments-7'>Arguments</a></h1>
+<h1 id='arguments-8' class='section-header'><a href='#arguments-8'>Arguments</a></h1>
 <ul>
 <li><code>appsId</code> - Part of <code>name</code>. Name of the resource requested. For example: &quot;apps/myapp/modules/default/versions/v1&quot;.</li>
 <li><code>modulesId</code> - Part of <code>name</code>. See documentation of <code>appsId</code>.</li>
@@ -156,7 +171,7 @@ It is not used directly, but through the <code>Appengine</code> hub.</p>
 
 <p>Deploys new code and resource files to a version.</p>
 
-<h1 id='arguments-8' class='section-header'><a href='#arguments-8'>Arguments</a></h1>
+<h1 id='arguments-9' class='section-header'><a href='#arguments-9'>Arguments</a></h1>
 <ul>
 <li><code>request</code> - No description provided.</li>
 <li><code>appsId</code> - Part of <code>name</code>. Name of the resource to update. For example: &quot;apps/myapp/modules/default&quot;.</li>
@@ -167,7 +182,7 @@ It is not used directly, but through the <code>Appengine</code> hub.</p>
 
 <p>Gets application deployment information.</p>
 
-<h1 id='arguments-9' class='section-header'><a href='#arguments-9'>Arguments</a></h1>
+<h1 id='arguments-10' class='section-header'><a href='#arguments-10'>Arguments</a></h1>
 <ul>
 <li><code>appsId</code> - Part of <code>name</code>. Name of the resource requested. For example: &quot;apps/myapp/modules/default/versions/v1&quot;.</li>
 <li><code>modulesId</code> - Part of <code>name</code>. See documentation of <code>appsId</code>.</li>
@@ -178,12 +193,13 @@ It is not used directly, but through the <code>Appengine</code> hub.</p>
 
 <p>Lists the versions of a module.</p>
 
-<h1 id='arguments-10' class='section-header'><a href='#arguments-10'>Arguments</a></h1>
+<h1 id='arguments-11' class='section-header'><a href='#arguments-11'>Arguments</a></h1>
 <ul>
 <li><code>appsId</code> - Part of <code>name</code>. Name of the resource requested. For example: &quot;apps/myapp/modules/default&quot;.</li>
 <li><code>modulesId</code> - Part of <code>name</code>. See documentation of <code>appsId</code>.</li>
 </ul>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_appengine1_beta4/trait.MethodsBuilder.html' title='google_appengine1_beta4::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_appengine1_beta4/struct.AppMethods.html' title='google_appengine1_beta4::AppMethods'>AppMethods</a>&lt;'a, C, A&gt;</code></h3><div class='impl-items'></div></section>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_appengine1_beta4/trait.MethodsBuilder.html' title='google_appengine1_beta4::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_appengine1_beta4/struct.AppMethods.html' title='google_appengine1_beta4::AppMethods'>AppMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-6781' class='srclink' href='../src/google_appengine1_beta4/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-appengine1_beta4-c76ea7fd5662ea99/out/lib.rs.html#14132' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
@@ -206,6 +222,8 @@ It is not used directly, but through the <code>Appengine</code> hub.</p>
                     <dd>Move down in search results</dd>
                     <dt>&#9166;</dt>
                     <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
                 </dl>
             </div>
 
@@ -226,7 +244,7 @@ It is not used directly, but through the <code>Appengine</code> hub.</p>
 
                 <p>
                     Search functions by type signature (e.g.
-                    <code>vec -> usize</code>)
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
                 </p>
             </div>
         </div>

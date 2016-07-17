@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
+    
 
     
     
@@ -43,10 +44,10 @@
 
     <section id='main' class="content struct">
 <h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_youtube3</a>::<wbr><a class='struct' href=''>LiveStream</a></span><span class='out-of-band'><span id='render-detail'>
-            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
-                [<span class='inner'>&#x2212;</span>]
-            </a>
-        </span><a id='src-18118' class='srclink' href='../src/google_youtube3///Users/byron/dev/rs/google-apis-rs/target/debug/build/google-youtube3-4efca17fcf3e49e3/out/lib.rs.html#32314-32329' title='goto source code'>[src]</a></span></h1>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-19598' class='srclink' href='../src/google_youtube3/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-youtube3-db4668f928b0f408/out/lib.rs.html#43686-43701' title='goto source code'>[src]</a></span></h1>
 <pre class='rust struct'>pub struct LiveStream {
     pub status: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_youtube3/struct.LiveStreamStatus.html' title='google_youtube3::LiveStreamStatus'>LiveStreamStatus</a>&gt;,
     pub snippet: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_youtube3/struct.LiveStreamSnippet.html' title='google_youtube3::LiveStreamSnippet'>LiveStreamSnippet</a>&gt;,
@@ -69,27 +70,39 @@ The list links the activity name, along with information about where it is used 
 </ul>
 </div><h2 class='fields'>Fields</h2>
 <table><tr class='stab '>
-                                  <td id='structfield.status'><code>status</code></td><td><div class='docblock'><p>The status object contains information about live stream&#39;s status.</p>
+                             <td id='structfield.status'><code>status</code></td><td><div class='docblock'><p>The status object contains information about live stream&#39;s status.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.snippet'><code>snippet</code></td><td><div class='docblock'><p>The snippet object contains basic details about the stream, including its channel, title, and description.</p>
+                             <td id='structfield.snippet'><code>snippet</code></td><td><div class='docblock'><p>The snippet object contains basic details about the stream, including its channel, title, and description.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.kind'><code>kind</code></td><td><div class='docblock'><p>Identifies what kind of resource this is. Value: the fixed string &quot;youtube#liveStream&quot;.</p>
+                             <td id='structfield.kind'><code>kind</code></td><td><div class='docblock'><p>Identifies what kind of resource this is. Value: the fixed string &quot;youtube#liveStream&quot;.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.etag'><code>etag</code></td><td><div class='docblock'><p>Etag of this resource.</p>
+                             <td id='structfield.etag'><code>etag</code></td><td><div class='docblock'><p>Etag of this resource.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.content_details'><code>content_details</code></td><td><div class='docblock'><p>The content_details object contains information about the stream, including the closed captions ingestion URL.</p>
+                             <td id='structfield.content_details'><code>content_details</code></td><td><div class='docblock'><p>The content_details object contains information about the stream, including the closed captions ingestion URL.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.cdn'><code>cdn</code></td><td><div class='docblock'><p>The cdn object defines the live stream&#39;s content delivery network (CDN) settings. These settings provide details about the manner in which you stream your content to YouTube.</p>
+                             <td id='structfield.cdn'><code>cdn</code></td><td><div class='docblock'><p>The cdn object defines the live stream&#39;s content delivery network (CDN) settings. These settings provide details about the manner in which you stream your content to YouTube.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.id'><code>id</code></td><td><div class='docblock'><p>The ID that YouTube assigns to uniquely identify the stream.</p>
-</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl <a class='trait' href='../serde/de/trait.Deserialize.html' title='serde::de::Deserialize'>Deserialize</a> for <a class='struct' href='../google_youtube3/struct.LiveStream.html' title='google_youtube3::LiveStream'>LiveStream</a></code></h3><div class='impl-items'><h4 id='method.deserialize' class='method'><code>fn <a href='../serde/de/trait.Deserialize.html#method.deserialize' class='fnname'>deserialize</a>&lt;__D&gt;(deserializer: &amp;mut __D) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../google_youtube3/struct.LiveStream.html' title='google_youtube3::LiveStream'>LiveStream</a>, __D::Error&gt; <span class='where'>where __D: <a class='trait' href='../serde/de/trait.Deserializer.html' title='serde::de::Deserializer'>Deserializer</a></span></code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='../serde/ser/trait.Serialize.html' title='serde::ser::Serialize'>Serialize</a> for <a class='struct' href='../google_youtube3/struct.LiveStream.html' title='google_youtube3::LiveStream'>LiveStream</a></code></h3><div class='impl-items'><h4 id='method.serialize' class='method'><code>fn <a href='../serde/ser/trait.Serialize.html#method.serialize' class='fnname'>serialize</a>&lt;__S&gt;(&amp;self, serializer: &amp;mut __S) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, __S::Error&gt; <span class='where'>where __S: <a class='trait' href='../serde/ser/trait.Serializer.html' title='serde::ser::Serializer'>Serializer</a></span></code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='../google_youtube3/trait.RequestValue.html' title='google_youtube3::RequestValue'>RequestValue</a> for <a class='struct' href='../google_youtube3/struct.LiveStream.html' title='google_youtube3::LiveStream'>LiveStream</a></code></h3><div class='impl-items'></div><h3 class='impl'><code>impl <a class='trait' href='../google_youtube3/trait.Resource.html' title='google_youtube3::Resource'>Resource</a> for <a class='struct' href='../google_youtube3/struct.LiveStream.html' title='google_youtube3::LiveStream'>LiveStream</a></code></h3><div class='impl-items'></div><h3 class='impl'><code>impl <a class='trait' href='../google_youtube3/trait.ResponseResult.html' title='google_youtube3::ResponseResult'>ResponseResult</a> for <a class='struct' href='../google_youtube3/struct.LiveStream.html' title='google_youtube3::LiveStream'>LiveStream</a></code></h3><div class='impl-items'></div><h3 class='impl'><code>impl <a class='trait' href='../google_youtube3/trait.ToParts.html' title='google_youtube3::ToParts'>ToParts</a> for <a class='struct' href='../google_youtube3/struct.LiveStream.html' title='google_youtube3::LiveStream'>LiveStream</a></code></h3><div class='impl-items'><h4 id='method.to_parts' class='method'><code>fn <a href='../google_youtube3/trait.ToParts.html#method.to_parts' class='fnname'>to_parts</a>(&amp;self) -&gt; <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a></code></h4>
-</div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_youtube3/struct.LiveStream.html' title='google_youtube3::LiveStream'>LiveStream</a></code></h3><div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#method.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_youtube3/struct.LiveStream.html' title='google_youtube3::LiveStream'>LiveStream</a></code></h3><div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_youtube3/struct.LiveStream.html' title='google_youtube3::LiveStream'>LiveStream</a></code></h4>
-<h4 id='method.clone_from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_youtube3/struct.LiveStream.html' title='google_youtube3::LiveStream'>LiveStream</a></code></h3><div class='impl-items'><h4 id='method.default' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#method.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_youtube3/struct.LiveStream.html' title='google_youtube3::LiveStream'>LiveStream</a></code></h4>
-</div></section>
+                             <td id='structfield.id'><code>id</code></td><td><div class='docblock'><p>The ID that YouTube assigns to uniquely identify the stream.</p>
+</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='../google_youtube3/trait.RequestValue.html' title='google_youtube3::RequestValue'>RequestValue</a> for <a class='struct' href='../google_youtube3/struct.LiveStream.html' title='google_youtube3::LiveStream'>LiveStream</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-19831' class='srclink' href='../src/google_youtube3/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-youtube3-db4668f928b0f408/out/lib.rs.html#44170' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='../google_youtube3/trait.Resource.html' title='google_youtube3::Resource'>Resource</a> for <a class='struct' href='../google_youtube3/struct.LiveStream.html' title='google_youtube3::LiveStream'>LiveStream</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-19832' class='srclink' href='../src/google_youtube3/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-youtube3-db4668f928b0f408/out/lib.rs.html#44171' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='../google_youtube3/trait.ResponseResult.html' title='google_youtube3::ResponseResult'>ResponseResult</a> for <a class='struct' href='../google_youtube3/struct.LiveStream.html' title='google_youtube3::LiveStream'>LiveStream</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-19833' class='srclink' href='../src/google_youtube3/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-youtube3-db4668f928b0f408/out/lib.rs.html#44172' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='../google_youtube3/trait.ToParts.html' title='google_youtube3::ToParts'>ToParts</a> for <a class='struct' href='../google_youtube3/struct.LiveStream.html' title='google_youtube3::LiveStream'>LiveStream</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-19834' class='srclink' href='../src/google_youtube3/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-youtube3-db4668f928b0f408/out/lib.rs.html#44173-44189' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.to_parts' class='method'><code>fn <a href='../google_youtube3/trait.ToParts.html#tymethod.to_parts' class='fnname'>to_parts</a>(&amp;self) -&gt; <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a></code></h4>
+<div class='docblock'><p>Return a comma separated list of members that are currently set, i.e. for which <code>self.member.is_some()</code>.
+The produced string is suitable for use as a parts list that indicates the parts you are sending, and/or
+the parts you want to see in the server response.</p>
+</div></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_youtube3/struct.LiveStream.html' title='google_youtube3::LiveStream'>LiveStream</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-19606' class='srclink' href='../src/google_youtube3/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-youtube3-db4668f928b0f408/out/lib.rs.html#43685' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.default' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_youtube3/struct.LiveStream.html' title='google_youtube3::LiveStream'>LiveStream</a></code></h4>
+<div class='docblock'><p>Returns the &quot;default value&quot; for a type. <a href="https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_youtube3/struct.LiveStream.html' title='google_youtube3::LiveStream'>LiveStream</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-19608' class='srclink' href='../src/google_youtube3/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-youtube3-db4668f928b0f408/out/lib.rs.html#43685' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_youtube3/struct.LiveStream.html' title='google_youtube3::LiveStream'>LiveStream</a></code></h4>
+<div class='docblock'><p>Returns a copy of the value. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone">Read more</a></p>
+</div><h4 id='method.clone_from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></h4>
+<div class='docblock'><p>Performs copy-assignment from <code>source</code>. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_youtube3/struct.LiveStream.html' title='google_youtube3::LiveStream'>LiveStream</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-19618' class='srclink' href='../src/google_youtube3/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-youtube3-db4668f928b0f408/out/lib.rs.html#43685' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
+<div class='docblock'><p>Formats the value using the given formatter.</p>
+</div></div></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
@@ -112,6 +125,8 @@ The list links the activity name, along with information about where it is used 
                     <dd>Move down in search results</dd>
                     <dt>&#9166;</dt>
                     <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
                 </dl>
             </div>
 
@@ -132,7 +147,7 @@ The list links the activity name, along with information about where it is used 
 
                 <p>
                     Search functions by type signature (e.g.
-                    <code>vec -> usize</code>)
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
                 </p>
             </div>
         </div>

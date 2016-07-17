@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
+    
 
     
     
@@ -43,10 +44,10 @@
 
     <section id='main' class="content struct">
 <h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_kgsearch1</a>::<wbr><a class='struct' href=''>EntitySearchCall</a></span><span class='out-of-band'><span id='render-detail'>
-            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
-                [<span class='inner'>&#x2212;</span>]
-            </a>
-        </span><a id='src-1151' class='srclink' href='../src/google_kgsearch1///Users/byron/dev/rs/google-apis-rs/target/debug/build/google-kgsearch1-1bdceb726ecd98a8/out/lib.rs.html#1927-1938' title='goto source code'>[src]</a></span></h1>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-1196' class='srclink' href='../src/google_kgsearch1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-kgsearch1-a43534231934e21a/out/lib.rs.html#2285-2296' title='goto source code'>[src]</a></span></h1>
 <pre class='rust struct'>pub struct EntitySearchCall&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>Searches Knowledge Graph for entities that match the constraints. A list of matched entities will be returned in response, which will be in JSON-LD format and compatible with <a href="http://schema.org">http://schema.org</a></p>
@@ -56,6 +57,7 @@ It is not used directly, but through a <code>EntityMethods</code> instance.</p>
 
 <h1 id='example' class='section-header'><a href='#example'>Example</a></h1>
 <p>Instantiate a resource method builder</p>
+
 <pre class='rust rust-example-rendered'>
  
 <span class='comment'>// You can configure optional parameters by calling the respective setters at will, and</span>
@@ -64,13 +66,14 @@ It is not used directly, but through a <code>EntityMethods</code> instance.</p>
 <span class='kw'>let</span> <span class='ident'>result</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>entities</span>().<span class='ident'>search</span>()
              .<span class='ident'>add_types</span>(<span class='string'>&quot;nonumy&quot;</span>)
              .<span class='ident'>query</span>(<span class='string'>&quot;dolores&quot;</span>)
-             .<span class='ident'>prefix</span>(<span class='boolval'>false</span>)
+             .<span class='ident'>prefix</span>(<span class='boolvalue'>false</span>)
              .<span class='ident'>limit</span>(<span class='op'>-</span><span class='number'>95</span>)
              .<span class='ident'>add_languages</span>(<span class='string'>&quot;aliquyam&quot;</span>)
-             .<span class='ident'>indent</span>(<span class='boolval'>false</span>)
+             .<span class='ident'>indent</span>(<span class='boolvalue'>false</span>)
              .<span class='ident'>add_ids</span>(<span class='string'>&quot;no&quot;</span>)
              .<span class='ident'>doit</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_kgsearch1/struct.EntitySearchCall.html' title='google_kgsearch1::EntitySearchCall'>EntitySearchCall</a>&lt;'a, C, A&gt; <span class='where'>where C: <a class='trait' href='https://doc.rust-lang.org/nightly/core/borrow/trait.BorrowMut.html' title='core::borrow::BorrowMut'>BorrowMut</a>&lt;<a class='struct' href='../hyper/client/struct.Client.html' title='hyper::client::Client'>Client</a>&gt;, A: <a class='trait' href='../yup_oauth2/helper/trait.GetToken.html' title='yup_oauth2::helper::GetToken'>GetToken</a></span></code></h3><div class='impl-items'><h4 id='method.doit' class='method'><code>fn <a href='#method.doit' class='fnname'>doit</a>(self) -&gt; <a class='type' href='../google_kgsearch1/type.Result.html' title='google_kgsearch1::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>(<a class='struct' href='../hyper/client/response/struct.Response.html' title='hyper::client::response::Response'>Response</a>, <a class='struct' href='../google_kgsearch1/struct.SearchResponse.html' title='google_kgsearch1::SearchResponse'>SearchResponse</a>)</a>&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_kgsearch1/struct.EntitySearchCall.html' title='google_kgsearch1::EntitySearchCall'>EntitySearchCall</a>&lt;'a, C, A&gt; <span class='where'>where C: <a class='trait' href='https://doc.rust-lang.org/nightly/core/borrow/trait.BorrowMut.html' title='core::borrow::BorrowMut'>BorrowMut</a>&lt;<a class='struct' href='../hyper/client/struct.Client.html' title='hyper::client::Client'>Client</a>&gt;, A: <a class='trait' href='../yup_oauth2/helper/trait.GetToken.html' title='yup_oauth2::helper::GetToken'>GetToken</a></span></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-1214' class='srclink' href='../src/google_kgsearch1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-kgsearch1-a43534231934e21a/out/lib.rs.html#2298-2513' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.doit' class='method'><code>fn <a href='#method.doit' class='fnname'>doit</a>(self) -&gt; <a class='type' href='../google_kgsearch1/type.Result.html' title='google_kgsearch1::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>(</a><a class='struct' href='../hyper/client/response/struct.Response.html' title='hyper::client::response::Response'>Response</a>, <a class='struct' href='../google_kgsearch1/struct.SearchResponse.html' title='google_kgsearch1::SearchResponse'>SearchResponse</a><a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>)</a>&gt;</code></h4>
 <div class='docblock'><p>Perform the operation you have build so far.</p>
 </div><h4 id='method.add_types' class='method'><code>fn <a href='#method.add_types' class='fnname'>add_types</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_kgsearch1/struct.EntitySearchCall.html' title='google_kgsearch1::EntitySearchCall'>EntitySearchCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>Restricts returned entities with these types, e.g. Person (as defined in <a href="http://schema.org/Person">http://schema.org/Person</a>).</p>
@@ -134,7 +137,8 @@ which have their own setter method. If done anyway, the request will fail.</p>
 <li><em>alt</em> (query-string) - Data format for response.</li>
 <li><em>$.xgafv</em> (query-string) - V1 error format.</li>
 </ul>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_kgsearch1/trait.CallBuilder.html' title='google_kgsearch1::CallBuilder'>CallBuilder</a> for <a class='struct' href='../google_kgsearch1/struct.EntitySearchCall.html' title='google_kgsearch1::EntitySearchCall'>EntitySearchCall</a>&lt;'a, C, A&gt;</code></h3><div class='impl-items'></div></section>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_kgsearch1/trait.CallBuilder.html' title='google_kgsearch1::CallBuilder'>CallBuilder</a> for <a class='struct' href='../google_kgsearch1/struct.EntitySearchCall.html' title='google_kgsearch1::EntitySearchCall'>EntitySearchCall</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-1210' class='srclink' href='../src/google_kgsearch1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-kgsearch1-a43534231934e21a/out/lib.rs.html#2297' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
@@ -157,6 +161,8 @@ which have their own setter method. If done anyway, the request will fail.</p>
                     <dd>Move down in search results</dd>
                     <dt>&#9166;</dt>
                     <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
                 </dl>
             </div>
 
@@ -177,7 +183,7 @@ which have their own setter method. If done anyway, the request will fail.</p>
 
                 <p>
                     Search functions by type signature (e.g.
-                    <code>vec -> usize</code>)
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
                 </p>
             </div>
         </div>

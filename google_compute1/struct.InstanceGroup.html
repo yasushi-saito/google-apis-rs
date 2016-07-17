@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
+    
 
     
     
@@ -43,10 +44,10 @@
 
     <section id='main' class="content struct">
 <h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_compute1</a>::<wbr><a class='struct' href=''>InstanceGroup</a></span><span class='out-of-band'><span id='render-detail'>
-            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
-                [<span class='inner'>&#x2212;</span>]
-            </a>
-        </span><a id='src-9132' class='srclink' href='../src/google_compute1///Users/byron/dev/rs/google-apis-rs/target/debug/build/google-compute1-8ef555a5d87f7ad5/out/lib.rs.html#15901-15930' title='goto source code'>[src]</a></span></h1>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-26457' class='srclink' href='../src/google_compute1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-compute1-ac353794ec468d78/out/lib.rs.html#59998-60027' title='goto source code'>[src]</a></span></h1>
 <pre class='rust struct'>pub struct InstanceGroup {
     pub kind: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
     pub network: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
@@ -79,40 +80,48 @@ The list links the activity name, along with information about where it is used 
 </ul>
 </div><h2 class='fields'>Fields</h2>
 <table><tr class='stab '>
-                                  <td id='structfield.kind'><code>kind</code></td><td><div class='docblock'><p>[Output Only] The resource type, which is always compute#instanceGroup for instance groups.</p>
+                             <td id='structfield.kind'><code>kind</code></td><td><div class='docblock'><p>[Output Only] The resource type, which is always compute#instanceGroup for instance groups.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.network'><code>network</code></td><td><div class='docblock'><p>[Output Only] The URL of the network to which all instances in the instance group belong.</p>
+                             <td id='structfield.network'><code>network</code></td><td><div class='docblock'><p>The URL of the network to which all instances in the instance group belong.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.zone'><code>zone</code></td><td><div class='docblock'><p>[Output Only] The URL of the zone where the instance group is located.</p>
+                             <td id='structfield.zone'><code>zone</code></td><td><div class='docblock'><p>[Output Only] The URL of the zone where the instance group is located.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.description'><code>description</code></td><td><div class='docblock'><p>An optional description of this resource. Provide this property when you create the resource.</p>
+                             <td id='structfield.description'><code>description</code></td><td><div class='docblock'><p>An optional description of this resource. Provide this property when you create the resource.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.name'><code>name</code></td><td><div class='docblock'><p>The name of the instance group. The name must be 1-63 characters long, and comply with RFC1035.</p>
+                             <td id='structfield.name'><code>name</code></td><td><div class='docblock'><p>The name of the instance group. The name must be 1-63 characters long, and comply with RFC1035.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.fingerprint'><code>fingerprint</code></td><td><div class='docblock'><p>[Output Only] The fingerprint of the named ports. The system uses this fingerprint to detect conflicts when multiple users change the named ports concurrently.</p>
+                             <td id='structfield.fingerprint'><code>fingerprint</code></td><td><div class='docblock'><p>[Output Only] The fingerprint of the named ports. The system uses this fingerprint to detect conflicts when multiple users change the named ports concurrently.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.subnetwork'><code>subnetwork</code></td><td><div class='docblock'><p>[Output Only] The URL of the subnetwork to which all instances in the instance group belong.</p>
+                             <td id='structfield.subnetwork'><code>subnetwork</code></td><td><div class='docblock'><p>The URL of the subnetwork to which all instances in the instance group belong.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.named_ports'><code>named_ports</code></td><td><div class='docblock'><p>Assigns a name to a port number. For example: {name: &quot;http&quot;, port: 80}</p>
+                             <td id='structfield.named_ports'><code>named_ports</code></td><td><div class='docblock'><p>Assigns a name to a port number. For example: {name: &quot;http&quot;, port: 80}</p>
 
 <p>This allows the system to reference ports by the assigned name instead of a port number. Named ports can also contain multiple ports. For example: [{name: &quot;http&quot;, port: 80},{name: &quot;http&quot;, port: 8080}] </p>
 
 <p>Named ports apply to all instances in this instance group.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.creation_timestamp'><code>creation_timestamp</code></td><td><div class='docblock'><p>[Output Only] The creation timestamp for this instance group in RFC3339 text format.</p>
+                             <td id='structfield.creation_timestamp'><code>creation_timestamp</code></td><td><div class='docblock'><p>[Output Only] The creation timestamp for this instance group in RFC3339 text format.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.id'><code>id</code></td><td><div class='docblock'><p>[Output Only] A unique identifier for this resource type. The server generates this identifier.</p>
+                             <td id='structfield.id'><code>id</code></td><td><div class='docblock'><p>[Output Only] A unique identifier for this resource type. The server generates this identifier.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.self_link'><code>self_link</code></td><td><div class='docblock'><p>[Output Only] The URL for this instance group. The server generates this URL.</p>
+                             <td id='structfield.self_link'><code>self_link</code></td><td><div class='docblock'><p>[Output Only] The URL for this instance group. The server generates this URL.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.size'><code>size</code></td><td><div class='docblock'><p>[Output Only] The total number of instances in the instance group.</p>
-</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl <a class='trait' href='../serde/de/trait.Deserialize.html' title='serde::de::Deserialize'>Deserialize</a> for <a class='struct' href='../google_compute1/struct.InstanceGroup.html' title='google_compute1::InstanceGroup'>InstanceGroup</a></code></h3><div class='impl-items'><h4 id='method.deserialize' class='method'><code>fn <a href='../serde/de/trait.Deserialize.html#method.deserialize' class='fnname'>deserialize</a>&lt;__D&gt;(deserializer: &amp;mut __D) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../google_compute1/struct.InstanceGroup.html' title='google_compute1::InstanceGroup'>InstanceGroup</a>, __D::Error&gt; <span class='where'>where __D: <a class='trait' href='../serde/de/trait.Deserializer.html' title='serde::de::Deserializer'>Deserializer</a></span></code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='../serde/ser/trait.Serialize.html' title='serde::ser::Serialize'>Serialize</a> for <a class='struct' href='../google_compute1/struct.InstanceGroup.html' title='google_compute1::InstanceGroup'>InstanceGroup</a></code></h3><div class='impl-items'><h4 id='method.serialize' class='method'><code>fn <a href='../serde/ser/trait.Serialize.html#method.serialize' class='fnname'>serialize</a>&lt;__S&gt;(&amp;self, serializer: &amp;mut __S) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, __S::Error&gt; <span class='where'>where __S: <a class='trait' href='../serde/ser/trait.Serializer.html' title='serde::ser::Serializer'>Serializer</a></span></code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='../google_compute1/trait.RequestValue.html' title='google_compute1::RequestValue'>RequestValue</a> for <a class='struct' href='../google_compute1/struct.InstanceGroup.html' title='google_compute1::InstanceGroup'>InstanceGroup</a></code></h3><div class='impl-items'></div><h3 class='impl'><code>impl <a class='trait' href='../google_compute1/trait.Resource.html' title='google_compute1::Resource'>Resource</a> for <a class='struct' href='../google_compute1/struct.InstanceGroup.html' title='google_compute1::InstanceGroup'>InstanceGroup</a></code></h3><div class='impl-items'></div><h3 class='impl'><code>impl <a class='trait' href='../google_compute1/trait.ResponseResult.html' title='google_compute1::ResponseResult'>ResponseResult</a> for <a class='struct' href='../google_compute1/struct.InstanceGroup.html' title='google_compute1::InstanceGroup'>InstanceGroup</a></code></h3><div class='impl-items'></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_compute1/struct.InstanceGroup.html' title='google_compute1::InstanceGroup'>InstanceGroup</a></code></h3><div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#method.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_compute1/struct.InstanceGroup.html' title='google_compute1::InstanceGroup'>InstanceGroup</a></code></h3><div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_compute1/struct.InstanceGroup.html' title='google_compute1::InstanceGroup'>InstanceGroup</a></code></h4>
-<h4 id='method.clone_from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_compute1/struct.InstanceGroup.html' title='google_compute1::InstanceGroup'>InstanceGroup</a></code></h3><div class='impl-items'><h4 id='method.default' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#method.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_compute1/struct.InstanceGroup.html' title='google_compute1::InstanceGroup'>InstanceGroup</a></code></h4>
-</div></section>
+                             <td id='structfield.size'><code>size</code></td><td><div class='docblock'><p>[Output Only] The total number of instances in the instance group.</p>
+</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='../google_compute1/trait.RequestValue.html' title='google_compute1::RequestValue'>RequestValue</a> for <a class='struct' href='../google_compute1/struct.InstanceGroup.html' title='google_compute1::InstanceGroup'>InstanceGroup</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-26795' class='srclink' href='../src/google_compute1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-compute1-ac353794ec468d78/out/lib.rs.html#60736' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='../google_compute1/trait.Resource.html' title='google_compute1::Resource'>Resource</a> for <a class='struct' href='../google_compute1/struct.InstanceGroup.html' title='google_compute1::InstanceGroup'>InstanceGroup</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-26796' class='srclink' href='../src/google_compute1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-compute1-ac353794ec468d78/out/lib.rs.html#60737' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='../google_compute1/trait.ResponseResult.html' title='google_compute1::ResponseResult'>ResponseResult</a> for <a class='struct' href='../google_compute1/struct.InstanceGroup.html' title='google_compute1::InstanceGroup'>InstanceGroup</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-26797' class='srclink' href='../src/google_compute1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-compute1-ac353794ec468d78/out/lib.rs.html#60738' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_compute1/struct.InstanceGroup.html' title='google_compute1::InstanceGroup'>InstanceGroup</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-26470' class='srclink' href='../src/google_compute1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-compute1-ac353794ec468d78/out/lib.rs.html#59997' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.default' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_compute1/struct.InstanceGroup.html' title='google_compute1::InstanceGroup'>InstanceGroup</a></code></h4>
+<div class='docblock'><p>Returns the &quot;default value&quot; for a type. <a href="https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_compute1/struct.InstanceGroup.html' title='google_compute1::InstanceGroup'>InstanceGroup</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-26472' class='srclink' href='../src/google_compute1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-compute1-ac353794ec468d78/out/lib.rs.html#59997' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_compute1/struct.InstanceGroup.html' title='google_compute1::InstanceGroup'>InstanceGroup</a></code></h4>
+<div class='docblock'><p>Returns a copy of the value. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone">Read more</a></p>
+</div><h4 id='method.clone_from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></h4>
+<div class='docblock'><p>Performs copy-assignment from <code>source</code>. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_compute1/struct.InstanceGroup.html' title='google_compute1::InstanceGroup'>InstanceGroup</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-26487' class='srclink' href='../src/google_compute1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-compute1-ac353794ec468d78/out/lib.rs.html#59997' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
+<div class='docblock'><p>Formats the value using the given formatter.</p>
+</div></div></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
@@ -135,6 +144,8 @@ The list links the activity name, along with information about where it is used 
                     <dd>Move down in search results</dd>
                     <dt>&#9166;</dt>
                     <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
                 </dl>
             </div>
 
@@ -155,7 +166,7 @@ The list links the activity name, along with information about where it is used 
 
                 <p>
                     Search functions by type signature (e.g.
-                    <code>vec -> usize</code>)
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
                 </p>
             </div>
         </div>

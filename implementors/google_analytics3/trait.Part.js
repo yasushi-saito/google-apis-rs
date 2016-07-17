@@ -1,5 +1,5 @@
 (function() {var implementors = {};
-implementors['google_analytics3'] = [];
+implementors["google_analytics3"] = [];
 
             if (window.register_implementors) {
                 window.register_implementors(implementors);

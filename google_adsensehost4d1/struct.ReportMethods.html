@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
+    
 
     
     
@@ -43,10 +44,10 @@
 
     <section id='main' class="content struct">
 <h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_adsensehost4d1</a>::<wbr><a class='struct' href=''>ReportMethods</a></span><span class='out-of-band'><span id='render-detail'>
-            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
-                [<span class='inner'>&#x2212;</span>]
-            </a>
-        </span><a id='src-4361' class='srclink' href='../src/google_adsensehost4d1///Users/byron/dev/rs/google-apis-rs/target/debug/build/google-adsensehost4d1-76bd33c5b78aeef5/out/lib.rs.html#7547-7549' title='goto source code'>[src]</a></span></h1>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-4662' class='srclink' href='../src/google_adsensehost4d1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-adsensehost4d1-33f8cae04b9c0a87/out/lib.rs.html#9945-9947' title='goto source code'>[src]</a></span></h1>
 <pre class='rust struct'>pub struct ReportMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>report</em> resources.
@@ -54,6 +55,7 @@ It is not used directly, but through the <code>AdSenseHost</code> hub.</p>
 
 <h1 id='example' class='section-header'><a href='#example'>Example</a></h1>
 <p>Instantiate a resource builder</p>
+
 <pre class='rust rust-example-rendered'>
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>hyper</span>;
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>yup_oauth2</span> <span class='kw'>as</span> <span class='ident'>oauth2</span>;
@@ -72,7 +74,8 @@ It is not used directly, but through the <code>AdSenseHost</code> hub.</p>
 <span class='comment'>// like `generate(...)`</span>
 <span class='comment'>// to build up your call.</span>
 <span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>reports</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_adsensehost4d1/struct.ReportMethods.html' title='google_adsensehost4d1::ReportMethods'>ReportMethods</a>&lt;'a, C, A&gt;</code></h3><div class='impl-items'><h4 id='method.generate' class='method'><code>fn <a href='#method.generate' class='fnname'>generate</a>(&amp;self, start_date: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, end_date: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_adsensehost4d1/struct.ReportGenerateCall.html' title='google_adsensehost4d1::ReportGenerateCall'>ReportGenerateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_adsensehost4d1/struct.ReportMethods.html' title='google_adsensehost4d1::ReportMethods'>ReportMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-4671' class='srclink' href='../src/google_adsensehost4d1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-adsensehost4d1-33f8cae04b9c0a87/out/lib.rs.html#9949-9974' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.generate' class='method'><code>fn <a href='#method.generate' class='fnname'>generate</a>(&amp;self, start_date: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, end_date: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_adsensehost4d1/struct.ReportGenerateCall.html' title='google_adsensehost4d1::ReportGenerateCall'>ReportGenerateCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Generate an AdSense report based on the report request sent in the query parameters. Returns the result as JSON; to retrieve output in CSV format specify &quot;alt=csv&quot; as a query parameter.</p>
@@ -82,7 +85,8 @@ It is not used directly, but through the <code>AdSenseHost</code> hub.</p>
 <li><code>startDate</code> - Start of the date range to report on in &quot;YYYY-MM-DD&quot; format, inclusive.</li>
 <li><code>endDate</code> - End of the date range to report on in &quot;YYYY-MM-DD&quot; format, inclusive.</li>
 </ul>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_adsensehost4d1/trait.MethodsBuilder.html' title='google_adsensehost4d1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_adsensehost4d1/struct.ReportMethods.html' title='google_adsensehost4d1::ReportMethods'>ReportMethods</a>&lt;'a, C, A&gt;</code></h3><div class='impl-items'></div></section>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_adsensehost4d1/trait.MethodsBuilder.html' title='google_adsensehost4d1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_adsensehost4d1/struct.ReportMethods.html' title='google_adsensehost4d1::ReportMethods'>ReportMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-4667' class='srclink' href='../src/google_adsensehost4d1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-adsensehost4d1-33f8cae04b9c0a87/out/lib.rs.html#9948' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
@@ -105,6 +109,8 @@ It is not used directly, but through the <code>AdSenseHost</code> hub.</p>
                     <dd>Move down in search results</dd>
                     <dt>&#9166;</dt>
                     <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
                 </dl>
             </div>
 
@@ -125,7 +131,7 @@ It is not used directly, but through the <code>AdSenseHost</code> hub.</p>
 
                 <p>
                     Search functions by type signature (e.g.
-                    <code>vec -> usize</code>)
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
                 </p>
             </div>
         </div>

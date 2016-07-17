@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Messages Import - gmail v0.3.3+20151214</title>
+  <title>Messages Import - gmail v0.3.5+20160316</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -38,7 +38,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> gmail v0.3.3+20151214</a>
+        <a href=".." class="icon icon-home"> gmail v0.3.5+20160316</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -162,6 +162,13 @@
             
     <li class="toctree-l1 ">
         <a class="" href="../users_messages-attachments-get/">Messages Attachments Get</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../users_messages-batch-delete/">Messages Batch Delete</a>
         
     </li>
 
@@ -325,7 +332,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">gmail v0.3.3+20151214</a>
+        <a href="..">gmail v0.3.5+20160316</a>
       </nav>
 
       
@@ -398,68 +405,68 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    history-id=vero</code><ul>
+<li><code>-r .    history-id=diam</code><ul>
 <li>The ID of the last history record that modified this message.</li>
 </ul>
 </li>
-<li><code>id=diam</code><ul>
+<li><code>id=rebum.</code><ul>
 <li>The immutable ID of the message.</li>
 </ul>
 </li>
-<li><code>internal-date=rebum.</code><ul>
+<li><code>internal-date=consetetur</code><ul>
 <li>The internal message creation timestamp (epoch ms), which determines ordering in the inbox. For normal SMTP-received email, this represents the time the message was originally accepted by Google, which is more reliable than the Date header. However, for API-migrated mail, it can be configured by client to be based on the Date header.</li>
 </ul>
 </li>
-<li><code>label-ids=consetetur</code><ul>
+<li><code>label-ids=sadipscing</code><ul>
 <li>List of IDs of labels applied to this message.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>payload.body    attachment-id=sadipscing</code><ul>
+<li><code>payload.body    attachment-id=vero</code><ul>
 <li>When present, contains the ID of an external attachment that can be retrieved in a separate messages.attachments.get request. When not present, the entire content of the message part body is contained in the data field.</li>
 </ul>
 </li>
-<li><code>data=vero</code><ul>
+<li><code>data=sadipscing</code><ul>
 <li>The body data of a MIME message part. May be empty for MIME container types that have no message body or when the body data is sent as a separate attachment. An attachment ID is present if the body data is contained in a separate attachment.</li>
 </ul>
 </li>
 <li>
-<p><code>size=6</code></p>
+<p><code>size=13</code></p>
 <ul>
 <li>Total number of bytes in the body of the message part.</li>
 </ul>
 </li>
 <li>
-<p><code>..    filename=invidunt</code></p>
+<p><code>..    filename=consetetur</code></p>
 <ul>
 <li>The filename of the attachment. Only present if this message part represents an attachment.</li>
 </ul>
 </li>
-<li><code>mime-type=consetetur</code><ul>
+<li><code>mime-type=dolore</code><ul>
 <li>The MIME type of the message part.</li>
 </ul>
 </li>
 <li>
-<p><code>part-id=dolore</code></p>
+<p><code>part-id=duo</code></p>
 <ul>
 <li>The immutable ID of the message part.</li>
 </ul>
 </li>
 <li>
-<p><code>..    raw=duo</code></p>
+<p><code>..    raw=aliquyam</code></p>
 <ul>
 <li>The entire email message in an RFC 2822 formatted and base64url encoded string. Returned in messages.get and drafts.get responses when the format=RAW parameter is supplied.</li>
 </ul>
 </li>
-<li><code>size-estimate=19</code><ul>
+<li><code>size-estimate=96</code><ul>
 <li>Estimated size in bytes of the message.</li>
 </ul>
 </li>
-<li><code>snippet=lorem</code><ul>
+<li><code>snippet=et</code><ul>
 <li>A short part of the message text.</li>
 </ul>
 </li>
-<li><code>thread-id=et</code><ul>
+<li><code>thread-id=clita</code><ul>
 <li>The ID of the thread the message belongs to. To add a message or draft to a thread, the following criteria must be met: <ul>
 <li>The requested threadId must be specified on the Message or Draft.Message you supply with your request. </li>
 <li>The References and In-Reply-To headers must be set in compliance with the RFC 2822 standard. </li>
@@ -514,27 +521,27 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p never-mark-spam=boolean</strong></p>
-<ul>
-<li>Ignore the Gmail spam classifier decision and never mark this email as SPAM in the mailbox.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p deleted=boolean</strong></p>
-<ul>
-<li>Mark the email as permanently deleted (not TRASH) and only visible in Google Apps Vault to a Vault administrator. Only used for Google Apps for Work accounts.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p process-for-calendar=boolean</strong></p>
 <ul>
 <li>Process calendar invites in the email and add any extracted meetings to the Google Calendar for this user.</li>
 </ul>
 </li>
 <li>
+<p><strong>-p never-mark-spam=boolean</strong></p>
+<ul>
+<li>Ignore the Gmail spam classifier decision and never mark this email as SPAM in the mailbox.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p internal-date-source=string</strong></p>
 <ul>
 <li>Source for Gmail&#39;s internal date of the message.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p deleted=boolean</strong></p>
+<ul>
+<li>Mark the email as permanently deleted (not TRASH) and only visible in Google Apps Vault to a Vault administrator. Only used for Google Apps for Work accounts.</li>
 </ul>
 </li>
 </ul>

@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
+    
 
     
     
@@ -43,15 +44,16 @@
 
     <section id='main' class="content struct">
 <h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_adexchangebuyer1d4</a>::<wbr><a class='struct' href=''>Proposal</a></span><span class='out-of-band'><span id='render-detail'>
-            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
-                [<span class='inner'>&#x2212;</span>]
-            </a>
-        </span><a id='src-2894' class='srclink' href='../src/google_adexchangebuyer1d4///Users/byron/dev/rs/google-apis-rs/target/debug/build/google-adexchangebuyer1d4-27c9b9bbcc56c76f/out/lib.rs.html#4964-5007' title='goto source code'>[src]</a></span></h1>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-3321' class='srclink' href='../src/google_adexchangebuyer1d4/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-adexchangebuyer1d4-0325b415a7b1e556/out/lib.rs.html#7673-7720' title='goto source code'>[src]</a></span></h1>
 <pre class='rust struct'>pub struct Proposal {
+    pub private_auction_id: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
     pub labels: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='../google_adexchangebuyer1d4/struct.MarketplaceLabel.html' title='google_adexchangebuyer1d4::MarketplaceLabel'>MarketplaceLabel</a>&gt;&gt;,
     pub originator_role: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
     pub seller_contacts: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='../google_adexchangebuyer1d4/struct.ContactInformation.html' title='google_adexchangebuyer1d4::ContactInformation'>ContactInformation</a>&gt;&gt;,
-    pub buyer: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_adexchangebuyer1d4/struct.Buyer.html' title='google_adexchangebuyer1d4::Buyer'>Buyer</a>&gt;,
+    pub negotiation_id: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
     pub inventory_source: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
     pub has_seller_signed_off: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt;,
     pub last_updater_role: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
@@ -66,6 +68,7 @@
     pub seller: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_adexchangebuyer1d4/struct.Seller.html' title='google_adexchangebuyer1d4::Seller'>Seller</a>&gt;,
     pub proposal_id: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
     pub is_renegotiating: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt;,
+    pub buyer: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_adexchangebuyer1d4/struct.Buyer.html' title='google_adexchangebuyer1d4::Buyer'>Buyer</a>&gt;,
     pub is_setup_complete: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt;,
     pub last_updater_or_commentor_role: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
     pub buyer_contacts: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='../google_adexchangebuyer1d4/struct.ContactInformation.html' title='google_adexchangebuyer1d4::ContactInformation'>ContactInformation</a>&gt;&gt;,
@@ -78,62 +81,75 @@
 The list links the activity name, along with information about where it is used (one of <em>request</em> and <em>response</em>).</p>
 
 <ul>
-<li><a href="struct.ProposalSearchCall.html">search proposals</a> (none)</li>
-<li><a href="struct.ProposalPatchCall.html">patch proposals</a> (request|response)</li>
-<li><a href="struct.ProposalInsertCall.html">insert proposals</a> (none)</li>
-<li><a href="struct.ProposalGetCall.html">get proposals</a> (response)</li>
 <li><a href="struct.ProposalUpdateCall.html">update proposals</a> (request|response)</li>
+<li><a href="struct.ProposalSearchCall.html">search proposals</a> (none)</li>
+<li><a href="struct.ProposalInsertCall.html">insert proposals</a> (none)</li>
+<li><a href="struct.ProposalSetupcompleteCall.html">setupcomplete proposals</a> (none)</li>
+<li><a href="struct.ProposalPatchCall.html">patch proposals</a> (request|response)</li>
+<li><a href="struct.ProposalGetCall.html">get proposals</a> (response)</li>
 </ul>
 </div><h2 class='fields'>Fields</h2>
 <table><tr class='stab '>
-                                  <td id='structfield.labels'><code>labels</code></td><td><div class='docblock'><p>List of labels associated with the proposal. (readonly)</p>
+                             <td id='structfield.private_auction_id'><code>private_auction_id</code></td><td><div class='docblock'><p>Optional private auction id if this proposal is a private auction proposal.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.originator_role'><code>originator_role</code></td><td><div class='docblock'><p>Indicates whether the buyer/seller created the proposal.(readonly)</p>
+                             <td id='structfield.labels'><code>labels</code></td><td><div class='docblock'><p>List of labels associated with the proposal. (readonly)</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.seller_contacts'><code>seller_contacts</code></td><td><div class='docblock'><p>Optional contact information for the seller (buyer-readonly).</p>
+                             <td id='structfield.originator_role'><code>originator_role</code></td><td><div class='docblock'><p>Indicates whether the buyer/seller created the proposal.(readonly)</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.buyer'><code>buyer</code></td><td><div class='docblock'><p>Reference to the buyer on the proposal. (readonly, except on create)</p>
+                             <td id='structfield.seller_contacts'><code>seller_contacts</code></td><td><div class='docblock'><p>Optional contact information for the seller (buyer-readonly).</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.inventory_source'><code>inventory_source</code></td><td><div class='docblock'><p>What exchange will provide this inventory (readonly, except on create).</p>
+                             <td id='structfield.negotiation_id'><code>negotiation_id</code></td><td><div class='docblock'><p>Optional negotiation id if this proposal is a preferred deal proposal.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.has_seller_signed_off'><code>has_seller_signed_off</code></td><td><div class='docblock'><p>When an proposal is in an accepted state, indicates whether the buyer has signed off Once both sides have signed off on a deal, the proposal can be finalized by the seller. (buyer-readonly)</p>
+                             <td id='structfield.inventory_source'><code>inventory_source</code></td><td><div class='docblock'><p>What exchange will provide this inventory (readonly, except on create).</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.last_updater_role'><code>last_updater_role</code></td><td><div class='docblock'><p>no description provided</p>
+                             <td id='structfield.has_seller_signed_off'><code>has_seller_signed_off</code></td><td><div class='docblock'><p>When an proposal is in an accepted state, indicates whether the buyer has signed off Once both sides have signed off on a deal, the proposal can be finalized by the seller. (buyer-readonly)</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.has_buyer_signed_off'><code>has_buyer_signed_off</code></td><td><div class='docblock'><p>When an proposal is in an accepted state, indicates whether the buyer has signed off Once both sides have signed off on a deal, the proposal can be finalized by the seller. (seller-readonly)</p>
+                             <td id='structfield.last_updater_role'><code>last_updater_role</code></td><td><div class='docblock'><p>no description provided</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.revision_number'><code>revision_number</code></td><td><div class='docblock'><p>The revision number for the proposal (readonly).</p>
+                             <td id='structfield.has_buyer_signed_off'><code>has_buyer_signed_off</code></td><td><div class='docblock'><p>When an proposal is in an accepted state, indicates whether the buyer has signed off Once both sides have signed off on a deal, the proposal can be finalized by the seller. (seller-readonly)</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.kind'><code>kind</code></td><td><div class='docblock'><p>Identifies what kind of resource this is. Value: the fixed string &quot;adexchangebuyer#proposal&quot;.</p>
+                             <td id='structfield.revision_number'><code>revision_number</code></td><td><div class='docblock'><p>The revision number for the proposal (readonly).</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.proposal_state'><code>proposal_state</code></td><td><div class='docblock'><p>The current state of the proposal. (readonly)</p>
+                             <td id='structfield.kind'><code>kind</code></td><td><div class='docblock'><p>Identifies what kind of resource this is. Value: the fixed string &quot;adexchangebuyer#proposal&quot;.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.name'><code>name</code></td><td><div class='docblock'><p>The name for the proposal (updatable)</p>
+                             <td id='structfield.proposal_state'><code>proposal_state</code></td><td><div class='docblock'><p>The current state of the proposal. (readonly)</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.revision_time_ms'><code>revision_time_ms</code></td><td><div class='docblock'><p>The time (ms since epoch) when the proposal was last revised (readonly).</p>
+                             <td id='structfield.name'><code>name</code></td><td><div class='docblock'><p>The name for the proposal (updatable)</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.buyer_private_data'><code>buyer_private_data</code></td><td><div class='docblock'><p>Private data for buyer. (hidden from seller).</p>
+                             <td id='structfield.revision_time_ms'><code>revision_time_ms</code></td><td><div class='docblock'><p>The time (ms since epoch) when the proposal was last revised (readonly).</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.billed_buyer'><code>billed_buyer</code></td><td><div class='docblock'><p>Reference to the buyer that will get billed for this proposal. (readonly)</p>
+                             <td id='structfield.buyer_private_data'><code>buyer_private_data</code></td><td><div class='docblock'><p>Private data for buyer. (hidden from seller).</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.seller'><code>seller</code></td><td><div class='docblock'><p>Reference to the seller on the proposal. (readonly, except on create)</p>
+                             <td id='structfield.billed_buyer'><code>billed_buyer</code></td><td><div class='docblock'><p>Reference to the buyer that will get billed for this proposal. (readonly)</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.proposal_id'><code>proposal_id</code></td><td><div class='docblock'><p>The unique id of the proposal. (readonly).</p>
+                             <td id='structfield.seller'><code>seller</code></td><td><div class='docblock'><p>Reference to the seller on the proposal. (readonly, except on create)</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.is_renegotiating'><code>is_renegotiating</code></td><td><div class='docblock'><p>True if the proposal is being renegotiated (readonly).</p>
+                             <td id='structfield.proposal_id'><code>proposal_id</code></td><td><div class='docblock'><p>The unique id of the proposal. (readonly).</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.is_setup_complete'><code>is_setup_complete</code></td><td><div class='docblock'><p>True, if the buyside inventory setup is complete for this proposal. (readonly)</p>
+                             <td id='structfield.is_renegotiating'><code>is_renegotiating</code></td><td><div class='docblock'><p>True if the proposal is being renegotiated (readonly).</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.last_updater_or_commentor_role'><code>last_updater_or_commentor_role</code></td><td><div class='docblock'><p>The role of the last user that either updated the proposal or left a comment. (readonly)</p>
+                             <td id='structfield.buyer'><code>buyer</code></td><td><div class='docblock'><p>Reference to the buyer on the proposal. (readonly, except on create)</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.buyer_contacts'><code>buyer_contacts</code></td><td><div class='docblock'><p>Optional contact information fort the buyer. (seller-readonly)</p>
-</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl <a class='trait' href='../serde/de/trait.Deserialize.html' title='serde::de::Deserialize'>Deserialize</a> for <a class='struct' href='../google_adexchangebuyer1d4/struct.Proposal.html' title='google_adexchangebuyer1d4::Proposal'>Proposal</a></code></h3><div class='impl-items'><h4 id='method.deserialize' class='method'><code>fn <a href='../serde/de/trait.Deserialize.html#method.deserialize' class='fnname'>deserialize</a>&lt;__D&gt;(deserializer: &amp;mut __D) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../google_adexchangebuyer1d4/struct.Proposal.html' title='google_adexchangebuyer1d4::Proposal'>Proposal</a>, __D::Error&gt; <span class='where'>where __D: <a class='trait' href='../serde/de/trait.Deserializer.html' title='serde::de::Deserializer'>Deserializer</a></span></code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='../serde/ser/trait.Serialize.html' title='serde::ser::Serialize'>Serialize</a> for <a class='struct' href='../google_adexchangebuyer1d4/struct.Proposal.html' title='google_adexchangebuyer1d4::Proposal'>Proposal</a></code></h3><div class='impl-items'><h4 id='method.serialize' class='method'><code>fn <a href='../serde/ser/trait.Serialize.html#method.serialize' class='fnname'>serialize</a>&lt;__S&gt;(&amp;self, serializer: &amp;mut __S) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, __S::Error&gt; <span class='where'>where __S: <a class='trait' href='../serde/ser/trait.Serializer.html' title='serde::ser::Serializer'>Serializer</a></span></code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='../google_adexchangebuyer1d4/trait.RequestValue.html' title='google_adexchangebuyer1d4::RequestValue'>RequestValue</a> for <a class='struct' href='../google_adexchangebuyer1d4/struct.Proposal.html' title='google_adexchangebuyer1d4::Proposal'>Proposal</a></code></h3><div class='impl-items'></div><h3 class='impl'><code>impl <a class='trait' href='../google_adexchangebuyer1d4/trait.Resource.html' title='google_adexchangebuyer1d4::Resource'>Resource</a> for <a class='struct' href='../google_adexchangebuyer1d4/struct.Proposal.html' title='google_adexchangebuyer1d4::Proposal'>Proposal</a></code></h3><div class='impl-items'></div><h3 class='impl'><code>impl <a class='trait' href='../google_adexchangebuyer1d4/trait.ResponseResult.html' title='google_adexchangebuyer1d4::ResponseResult'>ResponseResult</a> for <a class='struct' href='../google_adexchangebuyer1d4/struct.Proposal.html' title='google_adexchangebuyer1d4::Proposal'>Proposal</a></code></h3><div class='impl-items'></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_adexchangebuyer1d4/struct.Proposal.html' title='google_adexchangebuyer1d4::Proposal'>Proposal</a></code></h3><div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#method.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_adexchangebuyer1d4/struct.Proposal.html' title='google_adexchangebuyer1d4::Proposal'>Proposal</a></code></h3><div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_adexchangebuyer1d4/struct.Proposal.html' title='google_adexchangebuyer1d4::Proposal'>Proposal</a></code></h4>
-<h4 id='method.clone_from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_adexchangebuyer1d4/struct.Proposal.html' title='google_adexchangebuyer1d4::Proposal'>Proposal</a></code></h3><div class='impl-items'><h4 id='method.default' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#method.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_adexchangebuyer1d4/struct.Proposal.html' title='google_adexchangebuyer1d4::Proposal'>Proposal</a></code></h4>
-</div></section>
+                             <td id='structfield.is_setup_complete'><code>is_setup_complete</code></td><td><div class='docblock'><p>True, if the buyside inventory setup is complete for this proposal. (readonly, except via OrderSetupCompleted action)</p>
+</div></td></tr><tr class='stab '>
+                             <td id='structfield.last_updater_or_commentor_role'><code>last_updater_or_commentor_role</code></td><td><div class='docblock'><p>The role of the last user that either updated the proposal or left a comment. (readonly)</p>
+</div></td></tr><tr class='stab '>
+                             <td id='structfield.buyer_contacts'><code>buyer_contacts</code></td><td><div class='docblock'><p>Optional contact information fort the buyer. (seller-readonly)</p>
+</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='../google_adexchangebuyer1d4/trait.RequestValue.html' title='google_adexchangebuyer1d4::RequestValue'>RequestValue</a> for <a class='struct' href='../google_adexchangebuyer1d4/struct.Proposal.html' title='google_adexchangebuyer1d4::Proposal'>Proposal</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-3890' class='srclink' href='../src/google_adexchangebuyer1d4/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-adexchangebuyer1d4-0325b415a7b1e556/out/lib.rs.html#8998' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='../google_adexchangebuyer1d4/trait.Resource.html' title='google_adexchangebuyer1d4::Resource'>Resource</a> for <a class='struct' href='../google_adexchangebuyer1d4/struct.Proposal.html' title='google_adexchangebuyer1d4::Proposal'>Proposal</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-3891' class='srclink' href='../src/google_adexchangebuyer1d4/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-adexchangebuyer1d4-0325b415a7b1e556/out/lib.rs.html#8999' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='../google_adexchangebuyer1d4/trait.ResponseResult.html' title='google_adexchangebuyer1d4::ResponseResult'>ResponseResult</a> for <a class='struct' href='../google_adexchangebuyer1d4/struct.Proposal.html' title='google_adexchangebuyer1d4::Proposal'>Proposal</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-3892' class='srclink' href='../src/google_adexchangebuyer1d4/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-adexchangebuyer1d4-0325b415a7b1e556/out/lib.rs.html#9000' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_adexchangebuyer1d4/struct.Proposal.html' title='google_adexchangebuyer1d4::Proposal'>Proposal</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-3345' class='srclink' href='../src/google_adexchangebuyer1d4/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-adexchangebuyer1d4-0325b415a7b1e556/out/lib.rs.html#7672' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.default' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_adexchangebuyer1d4/struct.Proposal.html' title='google_adexchangebuyer1d4::Proposal'>Proposal</a></code></h4>
+<div class='docblock'><p>Returns the &quot;default value&quot; for a type. <a href="https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_adexchangebuyer1d4/struct.Proposal.html' title='google_adexchangebuyer1d4::Proposal'>Proposal</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-3347' class='srclink' href='../src/google_adexchangebuyer1d4/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-adexchangebuyer1d4-0325b415a7b1e556/out/lib.rs.html#7672' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_adexchangebuyer1d4/struct.Proposal.html' title='google_adexchangebuyer1d4::Proposal'>Proposal</a></code></h4>
+<div class='docblock'><p>Returns a copy of the value. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone">Read more</a></p>
+</div><h4 id='method.clone_from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></h4>
+<div class='docblock'><p>Performs copy-assignment from <code>source</code>. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_adexchangebuyer1d4/struct.Proposal.html' title='google_adexchangebuyer1d4::Proposal'>Proposal</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-3373' class='srclink' href='../src/google_adexchangebuyer1d4/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-adexchangebuyer1d4-0325b415a7b1e556/out/lib.rs.html#7672' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
+<div class='docblock'><p>Formats the value using the given formatter.</p>
+</div></div></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
@@ -156,6 +172,8 @@ The list links the activity name, along with information about where it is used 
                     <dd>Move down in search results</dd>
                     <dt>&#9166;</dt>
                     <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
                 </dl>
             </div>
 
@@ -176,7 +194,7 @@ The list links the activity name, along with information about where it is used 
 
                 <p>
                     Search functions by type signature (e.g.
-                    <code>vec -> usize</code>)
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
                 </p>
             </div>
         </div>

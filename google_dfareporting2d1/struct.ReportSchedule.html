@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
+    
 
     
     
@@ -43,10 +44,10 @@
 
     <section id='main' class="content struct">
 <h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_dfareporting2d1</a>::<wbr><a class='struct' href=''>ReportSchedule</a></span><span class='out-of-band'><span id='render-detail'>
-            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
-                [<span class='inner'>&#x2212;</span>]
-            </a>
-        </span><a id='src-22479' class='srclink' href='../src/google_dfareporting2d1///Users/byron/dev/rs/google-apis-rs/target/debug/build/google-dfareporting2d1-457ba1c9ae9508e5/out/lib.rs.html#40626-40645' title='goto source code'>[src]</a></span></h1>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-24358' class='srclink' href='../src/google_dfareporting2d1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-dfareporting2d1-050078da1b91acf0/out/lib.rs.html#57145-57164' title='goto source code'>[src]</a></span></h1>
 <pre class='rust struct'>pub struct ReportSchedule {
     pub start_date: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
     pub runs_on_day_of_month: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
@@ -60,30 +61,37 @@
 <p>This type is not used in any activity, and only used as <em>part</em> of another schema.</p>
 </div><h2 class='fields'>Fields</h2>
 <table><tr class='stab '>
-                                  <td id='structfield.start_date'><code>start_date</code></td><td><div class='docblock'><p>Start date of date range for which scheduled reports should be run.</p>
+                             <td id='structfield.start_date'><code>start_date</code></td><td><div class='docblock'><p>Start date of date range for which scheduled reports should be run.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.runs_on_day_of_month'><code>runs_on_day_of_month</code></td><td><div class='docblock'><p>Enum to define for &quot;MONTHLY&quot; scheduled reports whether reports should be repeated on the same day of the month as &quot;startDate&quot; or the same day of the week of the month.
+                             <td id='structfield.runs_on_day_of_month'><code>runs_on_day_of_month</code></td><td><div class='docblock'><p>Enum to define for &quot;MONTHLY&quot; scheduled reports whether reports should be repeated on the same day of the month as &quot;startDate&quot; or the same day of the week of the month.
 Example: If &#39;startDate&#39; is Monday, April 2nd 2012 (2012-04-02), &quot;DAY_OF_MONTH&quot; would run subsequent reports on the 2nd of every Month, and &quot;WEEK_OF_MONTH&quot; would run subsequent reports on the first Monday of the month.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.expiration_date'><code>expiration_date</code></td><td><div class='docblock'><p>The expiration date when the scheduled report stops running.</p>
+                             <td id='structfield.expiration_date'><code>expiration_date</code></td><td><div class='docblock'><p>The expiration date when the scheduled report stops running.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.active'><code>active</code></td><td><div class='docblock'><p>Whether the schedule is active or not. Must be set to either true or false.</p>
+                             <td id='structfield.active'><code>active</code></td><td><div class='docblock'><p>Whether the schedule is active or not. Must be set to either true or false.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.every'><code>every</code></td><td><div class='docblock'><p>Defines every how many days, weeks or months the report should be run. Needs to be set when &quot;repeats&quot; is either &quot;DAILY&quot;, &quot;WEEKLY&quot; or &quot;MONTHLY&quot;.</p>
+                             <td id='structfield.every'><code>every</code></td><td><div class='docblock'><p>Defines every how many days, weeks or months the report should be run. Needs to be set when &quot;repeats&quot; is either &quot;DAILY&quot;, &quot;WEEKLY&quot; or &quot;MONTHLY&quot;.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.repeats'><code>repeats</code></td><td><div class='docblock'><p>The interval for which the report is repeated. Note:
+                             <td id='structfield.repeats'><code>repeats</code></td><td><div class='docblock'><p>The interval for which the report is repeated. Note:
 - &quot;DAILY&quot; also requires field &quot;every&quot; to be set. 
 - &quot;WEEKLY&quot; also requires fields &quot;every&quot; and &quot;repeatsOnWeekDays&quot; to be set. 
 - &quot;MONTHLY&quot; also requires fields &quot;every&quot; and &quot;runsOnDayOfMonth&quot; to be set.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.repeats_on_week_days'><code>repeats_on_week_days</code></td><td><div class='docblock'><p>List of week days &quot;WEEKLY&quot; on which scheduled reports should run.</p>
-</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl <a class='trait' href='../serde/de/trait.Deserialize.html' title='serde::de::Deserialize'>Deserialize</a> for <a class='struct' href='../google_dfareporting2d1/struct.ReportSchedule.html' title='google_dfareporting2d1::ReportSchedule'>ReportSchedule</a></code></h3><div class='impl-items'><h4 id='method.deserialize' class='method'><code>fn <a href='../serde/de/trait.Deserialize.html#method.deserialize' class='fnname'>deserialize</a>&lt;__D&gt;(deserializer: &amp;mut __D) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../google_dfareporting2d1/struct.ReportSchedule.html' title='google_dfareporting2d1::ReportSchedule'>ReportSchedule</a>, __D::Error&gt; <span class='where'>where __D: <a class='trait' href='../serde/de/trait.Deserializer.html' title='serde::de::Deserializer'>Deserializer</a></span></code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='../serde/ser/trait.Serialize.html' title='serde::ser::Serialize'>Serialize</a> for <a class='struct' href='../google_dfareporting2d1/struct.ReportSchedule.html' title='google_dfareporting2d1::ReportSchedule'>ReportSchedule</a></code></h3><div class='impl-items'><h4 id='method.serialize' class='method'><code>fn <a href='../serde/ser/trait.Serialize.html#method.serialize' class='fnname'>serialize</a>&lt;__S&gt;(&amp;self, serializer: &amp;mut __S) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, __S::Error&gt; <span class='where'>where __S: <a class='trait' href='../serde/ser/trait.Serializer.html' title='serde::ser::Serializer'>Serializer</a></span></code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='../google_dfareporting2d1/trait.NestedType.html' title='google_dfareporting2d1::NestedType'>NestedType</a> for <a class='struct' href='../google_dfareporting2d1/struct.ReportSchedule.html' title='google_dfareporting2d1::ReportSchedule'>ReportSchedule</a></code></h3><div class='impl-items'></div><h3 class='impl'><code>impl <a class='trait' href='../google_dfareporting2d1/trait.Part.html' title='google_dfareporting2d1::Part'>Part</a> for <a class='struct' href='../google_dfareporting2d1/struct.ReportSchedule.html' title='google_dfareporting2d1::ReportSchedule'>ReportSchedule</a></code></h3><div class='impl-items'></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_dfareporting2d1/struct.ReportSchedule.html' title='google_dfareporting2d1::ReportSchedule'>ReportSchedule</a></code></h3><div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#method.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_dfareporting2d1/struct.ReportSchedule.html' title='google_dfareporting2d1::ReportSchedule'>ReportSchedule</a></code></h3><div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.ReportSchedule.html' title='google_dfareporting2d1::ReportSchedule'>ReportSchedule</a></code></h4>
-<h4 id='method.clone_from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_dfareporting2d1/struct.ReportSchedule.html' title='google_dfareporting2d1::ReportSchedule'>ReportSchedule</a></code></h3><div class='impl-items'><h4 id='method.default' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#method.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_dfareporting2d1/struct.ReportSchedule.html' title='google_dfareporting2d1::ReportSchedule'>ReportSchedule</a></code></h4>
-</div></section>
+                             <td id='structfield.repeats_on_week_days'><code>repeats_on_week_days</code></td><td><div class='docblock'><p>List of week days &quot;WEEKLY&quot; on which scheduled reports should run.</p>
+</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='../google_dfareporting2d1/trait.NestedType.html' title='google_dfareporting2d1::NestedType'>NestedType</a> for <a class='struct' href='../google_dfareporting2d1/struct.ReportSchedule.html' title='google_dfareporting2d1::ReportSchedule'>ReportSchedule</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-24591' class='srclink' href='../src/google_dfareporting2d1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-dfareporting2d1-050078da1b91acf0/out/lib.rs.html#57643' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='../google_dfareporting2d1/trait.Part.html' title='google_dfareporting2d1::Part'>Part</a> for <a class='struct' href='../google_dfareporting2d1/struct.ReportSchedule.html' title='google_dfareporting2d1::ReportSchedule'>ReportSchedule</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-24592' class='srclink' href='../src/google_dfareporting2d1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-dfareporting2d1-050078da1b91acf0/out/lib.rs.html#57644' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_dfareporting2d1/struct.ReportSchedule.html' title='google_dfareporting2d1::ReportSchedule'>ReportSchedule</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-24366' class='srclink' href='../src/google_dfareporting2d1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-dfareporting2d1-050078da1b91acf0/out/lib.rs.html#57144' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.default' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_dfareporting2d1/struct.ReportSchedule.html' title='google_dfareporting2d1::ReportSchedule'>ReportSchedule</a></code></h4>
+<div class='docblock'><p>Returns the &quot;default value&quot; for a type. <a href="https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_dfareporting2d1/struct.ReportSchedule.html' title='google_dfareporting2d1::ReportSchedule'>ReportSchedule</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-24368' class='srclink' href='../src/google_dfareporting2d1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-dfareporting2d1-050078da1b91acf0/out/lib.rs.html#57144' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.ReportSchedule.html' title='google_dfareporting2d1::ReportSchedule'>ReportSchedule</a></code></h4>
+<div class='docblock'><p>Returns a copy of the value. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone">Read more</a></p>
+</div><h4 id='method.clone_from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></h4>
+<div class='docblock'><p>Performs copy-assignment from <code>source</code>. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_dfareporting2d1/struct.ReportSchedule.html' title='google_dfareporting2d1::ReportSchedule'>ReportSchedule</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-24378' class='srclink' href='../src/google_dfareporting2d1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-dfareporting2d1-050078da1b91acf0/out/lib.rs.html#57144' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
+<div class='docblock'><p>Formats the value using the given formatter.</p>
+</div></div></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
@@ -106,6 +114,8 @@ Example: If &#39;startDate&#39; is Monday, April 2nd 2012 (2012-04-02), &quot;DA
                     <dd>Move down in search results</dd>
                     <dt>&#9166;</dt>
                     <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
                 </dl>
             </div>
 
@@ -126,7 +136,7 @@ Example: If &#39;startDate&#39; is Monday, April 2nd 2012 (2012-04-02), &quot;DA
 
                 <p>
                     Search functions by type signature (e.g.
-                    <code>vec -> usize</code>)
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
                 </p>
             </div>
         </div>

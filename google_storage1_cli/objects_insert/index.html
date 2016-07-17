@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Insert - storage v0.3.3+20151229</title>
+  <title>Insert - storage v0.3.5+20160330</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -38,7 +38,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> storage v0.3.3+20151229</a>
+        <a href=".." class="icon icon-home"> storage v0.3.5+20160330</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -386,7 +386,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">storage v0.3.3+20151229</a>
+        <a href="..">storage v0.3.5+20160330</a>
       </nav>
 
       
@@ -636,21 +636,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
+<p><strong>-p projection=string</strong></p>
+<ul>
+<li>Set of properties to return. Defaults to noAcl, unless the object resource specifies the acl property, when it defaults to full.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p if-generation-not-match=string</strong></p>
 <ul>
 <li>Makes the operation conditional on whether the object&#39;s current generation does not match the given value.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p if-metageneration-not-match=string</strong></p>
-<ul>
-<li>Makes the operation conditional on whether the object&#39;s current metageneration does not match the given value.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p name=string</strong></p>
-<ul>
-<li>Name of the object. Required when the object metadata is not otherwise provided. Overrides the object metadata&#39;s name value, if any. For information about how to URL encode object names to be path safe, see Encoding URI Path Parts.</li>
 </ul>
 </li>
 <li>
@@ -660,15 +654,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p projection=string</strong></p>
+<p><strong>-p if-generation-match=string</strong></p>
 <ul>
-<li>Set of properties to return. Defaults to noAcl, unless the object resource specifies the acl property, when it defaults to full.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p content-encoding=string</strong></p>
-<ul>
-<li>If set, sets the contentEncoding property of the final object to this value. Setting this parameter is equivalent to setting the contentEncoding metadata property. This can be useful when uploading an object with uploadType=media to indicate the encoding of the content being uploaded.</li>
+<li>Makes the operation conditional on whether the object&#39;s current generation matches the given value.</li>
 </ul>
 </li>
 <li>
@@ -678,9 +666,21 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p if-generation-match=string</strong></p>
+<p><strong>-p if-metageneration-not-match=string</strong></p>
 <ul>
-<li>Makes the operation conditional on whether the object&#39;s current generation matches the given value.</li>
+<li>Makes the operation conditional on whether the object&#39;s current metageneration does not match the given value.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p content-encoding=string</strong></p>
+<ul>
+<li>If set, sets the contentEncoding property of the final object to this value. Setting this parameter is equivalent to setting the contentEncoding metadata property. This can be useful when uploading an object with uploadType=media to indicate the encoding of the content being uploaded.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p name=string</strong></p>
+<ul>
+<li>Name of the object. Required when the object metadata is not otherwise provided. Overrides the object metadata&#39;s name value, if any. For information about how to URL encode object names to be path safe, see Encoding URI Path Parts.</li>
 </ul>
 </li>
 </ul>

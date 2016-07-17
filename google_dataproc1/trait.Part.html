@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
+    
 
     
     
@@ -43,18 +44,38 @@
 
     <section id='main' class="content trait">
 <h1 class='fqn'><span class='in-band'>Trait <a href='index.html'>google_dataproc1</a>::<wbr><a class='trait' href=''>Part</a></span><span class='out-of-band'><span id='render-detail'>
-            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
-                [<span class='inner'>&#x2212;</span>]
-            </a>
-        </span><a id='src-34' class='srclink' href='../src/google_dataproc1///Users/byron/dev/rs/google-apis-rs/target/debug/build/google-dataproc1-893a60c8887d56b3/out/lib.rs.html#44' title='goto source code'>[src]</a></span></h1>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-34' class='srclink' href='../src/google_dataproc1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-dataproc1-319b29e484c59d1c/out/lib.rs.html#552' title='goto source code'>[src]</a></span></h1>
 <pre class='rust trait'>pub trait Part { }</pre><div class='docblock'><p>Identifies types which are only used as part of other types, which
 usually are carrying the <code>Resource</code> trait.</p>
 </div>
         <h2 id='implementors'>Implementors</h2>
         <ul class='item-list' id='implementors-list'>
-    </ul><script type="text/javascript" async
-                              src="../implementors/google_dataproc1/trait.Part.js">
-                      </script></section>
+    <li><code>impl Part for <a class='struct' href='../google_dataproc1/struct.SparkSqlJob.html' title='google_dataproc1::SparkSqlJob'>SparkSqlJob</a></code></li>
+<li><code>impl Part for <a class='struct' href='../google_dataproc1/struct.InstanceGroupConfig.html' title='google_dataproc1::InstanceGroupConfig'>InstanceGroupConfig</a></code></li>
+<li><code>impl Part for <a class='struct' href='../google_dataproc1/struct.Status.html' title='google_dataproc1::Status'>Status</a></code></li>
+<li><code>impl Part for <a class='struct' href='../google_dataproc1/struct.JobReference.html' title='google_dataproc1::JobReference'>JobReference</a></code></li>
+<li><code>impl Part for <a class='struct' href='../google_dataproc1/struct.GceClusterConfig.html' title='google_dataproc1::GceClusterConfig'>GceClusterConfig</a></code></li>
+<li><code>impl Part for <a class='struct' href='../google_dataproc1/struct.ClusterConfig.html' title='google_dataproc1::ClusterConfig'>ClusterConfig</a></code></li>
+<li><code>impl Part for <a class='struct' href='../google_dataproc1/struct.QueryList.html' title='google_dataproc1::QueryList'>QueryList</a></code></li>
+<li><code>impl Part for <a class='struct' href='../google_dataproc1/struct.DiskConfig.html' title='google_dataproc1::DiskConfig'>DiskConfig</a></code></li>
+<li><code>impl Part for <a class='struct' href='../google_dataproc1/struct.ManagedGroupConfig.html' title='google_dataproc1::ManagedGroupConfig'>ManagedGroupConfig</a></code></li>
+<li><code>impl Part for <a class='struct' href='../google_dataproc1/struct.PySparkJob.html' title='google_dataproc1::PySparkJob'>PySparkJob</a></code></li>
+<li><code>impl Part for <a class='struct' href='../google_dataproc1/struct.NodeInitializationAction.html' title='google_dataproc1::NodeInitializationAction'>NodeInitializationAction</a></code></li>
+<li><code>impl Part for <a class='struct' href='../google_dataproc1/struct.JobStatus.html' title='google_dataproc1::JobStatus'>JobStatus</a></code></li>
+<li><code>impl Part for <a class='struct' href='../google_dataproc1/struct.JobPlacement.html' title='google_dataproc1::JobPlacement'>JobPlacement</a></code></li>
+<li><code>impl Part for <a class='struct' href='../google_dataproc1/struct.LoggingConfig.html' title='google_dataproc1::LoggingConfig'>LoggingConfig</a></code></li>
+<li><code>impl Part for <a class='struct' href='../google_dataproc1/struct.HiveJob.html' title='google_dataproc1::HiveJob'>HiveJob</a></code></li>
+<li><code>impl Part for <a class='struct' href='../google_dataproc1/struct.HadoopJob.html' title='google_dataproc1::HadoopJob'>HadoopJob</a></code></li>
+<li><code>impl Part for <a class='struct' href='../google_dataproc1/struct.SoftwareConfig.html' title='google_dataproc1::SoftwareConfig'>SoftwareConfig</a></code></li>
+<li><code>impl Part for <a class='struct' href='../google_dataproc1/struct.PigJob.html' title='google_dataproc1::PigJob'>PigJob</a></code></li>
+<li><code>impl Part for <a class='struct' href='../google_dataproc1/struct.SparkJob.html' title='google_dataproc1::SparkJob'>SparkJob</a></code></li>
+<li><code>impl Part for <a class='struct' href='../google_dataproc1/struct.ClusterStatus.html' title='google_dataproc1::ClusterStatus'>ClusterStatus</a></code></li>
+</ul><script type="text/javascript" async
+                         src="../implementors/google_dataproc1/trait.Part.js">
+                 </script></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
@@ -77,6 +98,8 @@ usually are carrying the <code>Resource</code> trait.</p>
                     <dd>Move down in search results</dd>
                     <dt>&#9166;</dt>
                     <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
                 </dl>
             </div>
 
@@ -97,7 +120,7 @@ usually are carrying the <code>Resource</code> trait.</p>
 
                 <p>
                     Search functions by type signature (e.g.
-                    <code>vec -> usize</code>)
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
                 </p>
             </div>
         </div>

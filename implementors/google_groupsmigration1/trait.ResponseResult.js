@@ -1,5 +1,5 @@
 (function() {var implementors = {};
-implementors['google_groupsmigration1'] = [];
+implementors["google_groupsmigration1"] = [];
 
             if (window.register_implementors) {
                 window.register_implementors(implementors);

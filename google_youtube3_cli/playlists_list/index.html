@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>List - YouTube v0.3.3+20160111</title>
+  <title>List - YouTube v0.3.5+20160222</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -38,7 +38,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> YouTube v0.3.3+20160111</a>
+        <a href=".." class="icon icon-home"> YouTube v0.3.5+20160222</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -790,7 +790,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">YouTube v0.3.3+20160111</a>
+        <a href="..">YouTube v0.3.5+20160222</a>
       </nav>
 
       
@@ -858,21 +858,13 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p mine=boolean</strong></p>
+<p><strong>-p on-behalf-of-content-owner-channel=string</strong></p>
 <ul>
-<li>Set this parameter&#39;s value to true to instruct the API to only return playlists owned by the authenticated user.</li>
-</ul>
-</li>
 <li>
-<p><strong>-p hl=string</strong></p>
-<ul>
-<li>The hl parameter should be used for filter out the properties that are not in the given language. Used for the snippet part.</li>
-</ul>
+<p>This parameter can only be used in a properly authorized request. Note: This parameter is intended exclusively for YouTube content partners.</p>
+<p>The onBehalfOfContentOwnerChannel parameter specifies the YouTube channel ID of the channel to which a video is being added. This parameter is required when a request specifies a value for the onBehalfOfContentOwner parameter, and it can only be used in conjunction with that parameter. In addition, the request must be authorized using a CMS account that is linked to the content owner that the onBehalfOfContentOwner parameter specifies. Finally, the channel that the onBehalfOfContentOwnerChannel parameter value specifies must be linked to the content owner that the onBehalfOfContentOwner parameter specifies.</p>
+<p>This parameter is intended for YouTube content partners that own and manage many different YouTube channels. It allows content owners to authenticate once and perform actions on behalf of the channel specified in the parameter value, without having to provide authentication credentials for each separate channel.</p>
 </li>
-<li>
-<p><strong>-p channel-id=string</strong></p>
-<ul>
-<li>This value indicates that the API should only return the specified channel&#39;s playlists.</li>
 </ul>
 </li>
 <li>
@@ -885,25 +877,33 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p on-behalf-of-content-owner-channel=string</strong></p>
+<p><strong>-p channel-id=string</strong></p>
 <ul>
-<li>
-<p>This parameter can only be used in a properly authorized request. Note: This parameter is intended exclusively for YouTube content partners.</p>
-<p>The onBehalfOfContentOwnerChannel parameter specifies the YouTube channel ID of the channel to which a video is being added. This parameter is required when a request specifies a value for the onBehalfOfContentOwner parameter, and it can only be used in conjunction with that parameter. In addition, the request must be authorized using a CMS account that is linked to the content owner that the onBehalfOfContentOwner parameter specifies. Finally, the channel that the onBehalfOfContentOwnerChannel parameter value specifies must be linked to the content owner that the onBehalfOfContentOwner parameter specifies.</p>
-<p>This parameter is intended for YouTube content partners that own and manage many different YouTube channels. It allows content owners to authenticate once and perform actions on behalf of the channel specified in the parameter value, without having to provide authentication credentials for each separate channel.</p>
-</li>
+<li>This value indicates that the API should only return the specified channel&#39;s playlists.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p id=string</strong></p>
+<p><strong>-p hl=string</strong></p>
 <ul>
-<li>The id parameter specifies a comma-separated list of the YouTube playlist ID(s) for the resource(s) that are being retrieved. In a playlist resource, the id property specifies the playlist&#39;s YouTube playlist ID.</li>
+<li>The hl parameter should be used for filter out the properties that are not in the given language. Used for the snippet part.</li>
 </ul>
 </li>
 <li>
 <p><strong>-p max-results=integer</strong></p>
 <ul>
 <li>The maxResults parameter specifies the maximum number of items that should be returned in the result set.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p mine=boolean</strong></p>
+<ul>
+<li>Set this parameter&#39;s value to true to instruct the API to only return playlists owned by the authenticated user.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p id=string</strong></p>
+<ul>
+<li>The id parameter specifies a comma-separated list of the YouTube playlist ID(s) for the resource(s) that are being retrieved. In a playlist resource, the id property specifies the playlist&#39;s YouTube playlist ID.</li>
 </ul>
 </li>
 <li>

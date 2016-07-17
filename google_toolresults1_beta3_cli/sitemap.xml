@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-toolresults1_beta3-cli/</loc>
+     <lastmod>2016-07-17</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-toolresults1_beta3-cli/projects_get-settings/</loc>
+     <lastmod>2016-07-17</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-toolresults1_beta3-cli/projects_histories-create/</loc>
+     <lastmod>2016-07-17</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-toolresults1_beta3-cli/projects_histories-executions-create/</loc>
+     <lastmod>2016-07-17</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-toolresults1_beta3-cli/projects_histories-executions-get/</loc>
+     <lastmod>2016-07-17</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-toolresults1_beta3-cli/projects_histories-executions-list/</loc>
+     <lastmod>2016-07-17</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-toolresults1_beta3-cli/projects_histories-executions-patch/</loc>
+     <lastmod>2016-07-17</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-toolresults1_beta3-cli/projects_histories-executions-steps-create/</loc>
+     <lastmod>2016-07-17</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-toolresults1_beta3-cli/projects_histories-executions-steps-get/</loc>
+     <lastmod>2016-07-17</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-toolresults1_beta3-cli/projects_histories-executions-steps-list/</loc>
+     <lastmod>2016-07-17</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-toolresults1_beta3-cli/projects_histories-executions-steps-patch/</loc>
+     <lastmod>2016-07-17</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-toolresults1_beta3-cli/projects_histories-executions-steps-publish-xunit-xml-files/</loc>
+     <lastmod>2016-07-17</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-toolresults1_beta3-cli/projects_histories-executions-steps-thumbnails-list/</loc>
+     <lastmod>2016-07-17</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-toolresults1_beta3-cli/projects_histories-get/</loc>
+     <lastmod>2016-07-17</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-toolresults1_beta3-cli/projects_histories-list/</loc>
+     <lastmod>2016-07-17</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-toolresults1_beta3-cli/projects_initialize-settings/</loc>
+     <lastmod>2016-07-17</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+</urlset>

@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
+    
 
     
     
@@ -43,14 +44,15 @@
 
     <section id='main' class="content struct">
 <h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_bigquery2</a>::<wbr><a class='struct' href=''>Table</a></span><span class='out-of-band'><span id='render-detail'>
-            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
-                [<span class='inner'>&#x2212;</span>]
-            </a>
-        </span><a id='src-8854' class='srclink' href='../src/google_bigquery2///Users/byron/dev/rs/google-apis-rs/target/debug/build/google-bigquery2-3a86c60f78dbd299/out/lib.rs.html#15379-15416' title='goto source code'>[src]</a></span></h1>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-10424' class='srclink' href='../src/google_bigquery2/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-bigquery2-2a42f7c930ec93a1/out/lib.rs.html#22122-22161' title='goto source code'>[src]</a></span></h1>
 <pre class='rust struct'>pub struct Table {
     pub description: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
     pub creation_time: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
     pub num_bytes: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub partition_configurations: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='../google_bigquery2/struct.TablePartitionConfiguration.html' title='google_bigquery2::TablePartitionConfiguration'>TablePartitionConfiguration</a>&gt;&gt;,
     pub last_modified_time: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
     pub id: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
     pub kind: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
@@ -82,48 +84,58 @@ The list links the activity name, along with information about where it is used 
 </ul>
 </div><h2 class='fields'>Fields</h2>
 <table><tr class='stab '>
-                                  <td id='structfield.description'><code>description</code></td><td><div class='docblock'><p>[Optional] A user-friendly description of this table.</p>
+                             <td id='structfield.description'><code>description</code></td><td><div class='docblock'><p>[Optional] A user-friendly description of this table.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.creation_time'><code>creation_time</code></td><td><div class='docblock'><p>[Output-only] The time when this table was created, in milliseconds since the epoch.</p>
+                             <td id='structfield.creation_time'><code>creation_time</code></td><td><div class='docblock'><p>[Output-only] The time when this table was created, in milliseconds since the epoch.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.num_bytes'><code>num_bytes</code></td><td><div class='docblock'><p>[Output-only] The size of this table in bytes, excluding any data in the streaming buffer.</p>
+                             <td id='structfield.num_bytes'><code>num_bytes</code></td><td><div class='docblock'><p>[Output-only] The size of this table in bytes, excluding any data in the streaming buffer.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.last_modified_time'><code>last_modified_time</code></td><td><div class='docblock'><p>[Output-only] The time when this table was last modified, in milliseconds since the epoch.</p>
+                             <td id='structfield.partition_configurations'><code>partition_configurations</code></td><td><div class='docblock'><p>[Experimental] List of partition configurations for this table. Currently only one configuration can be specified and it can only be an interval partition with type daily.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.id'><code>id</code></td><td><div class='docblock'><p>[Output-only] An opaque ID uniquely identifying the table.</p>
+                             <td id='structfield.last_modified_time'><code>last_modified_time</code></td><td><div class='docblock'><p>[Output-only] The time when this table was last modified, in milliseconds since the epoch.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.kind'><code>kind</code></td><td><div class='docblock'><p>[Output-only] The type of the resource.</p>
+                             <td id='structfield.id'><code>id</code></td><td><div class='docblock'><p>[Output-only] An opaque ID uniquely identifying the table.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.streaming_buffer'><code>streaming_buffer</code></td><td><div class='docblock'><p>[Output-only] Contains information regarding this table&#39;s streaming buffer, if one is present. This field will be absent if the table is not being streamed to or if there is no data in the streaming buffer.</p>
+                             <td id='structfield.kind'><code>kind</code></td><td><div class='docblock'><p>[Output-only] The type of the resource.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.external_data_configuration'><code>external_data_configuration</code></td><td><div class='docblock'><p>[Optional] Describes the data format, location, and other properties of a table stored outside of BigQuery. By defining these properties, the data source can then be queried as if it were a standard BigQuery table.</p>
+                             <td id='structfield.streaming_buffer'><code>streaming_buffer</code></td><td><div class='docblock'><p>[Output-only] Contains information regarding this table&#39;s streaming buffer, if one is present. This field will be absent if the table is not being streamed to or if there is no data in the streaming buffer.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.table_reference'><code>table_reference</code></td><td><div class='docblock'><p>[Required] Reference describing the ID of this table.</p>
+                             <td id='structfield.external_data_configuration'><code>external_data_configuration</code></td><td><div class='docblock'><p>[Optional] Describes the data format, location, and other properties of a table stored outside of BigQuery. By defining these properties, the data source can then be queried as if it were a standard BigQuery table.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.num_rows'><code>num_rows</code></td><td><div class='docblock'><p>[Output-only] The number of rows of data in this table, excluding any data in the streaming buffer.</p>
+                             <td id='structfield.table_reference'><code>table_reference</code></td><td><div class='docblock'><p>[Required] Reference describing the ID of this table.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.etag'><code>etag</code></td><td><div class='docblock'><p>[Output-only] A hash of this resource.</p>
+                             <td id='structfield.num_rows'><code>num_rows</code></td><td><div class='docblock'><p>[Output-only] The number of rows of data in this table, excluding any data in the streaming buffer.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.location'><code>location</code></td><td><div class='docblock'><p>[Output-only] The geographic location where the table resides. This value is inherited from the dataset.</p>
+                             <td id='structfield.etag'><code>etag</code></td><td><div class='docblock'><p>[Output-only] A hash of this resource.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.friendly_name'><code>friendly_name</code></td><td><div class='docblock'><p>[Optional] A descriptive name for this table.</p>
+                             <td id='structfield.location'><code>location</code></td><td><div class='docblock'><p>[Output-only] The geographic location where the table resides. This value is inherited from the dataset.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.expiration_time'><code>expiration_time</code></td><td><div class='docblock'><p>[Optional] The time when this table expires, in milliseconds since the epoch. If not present, the table will persist indefinitely. Expired tables will be deleted and their storage reclaimed.</p>
+                             <td id='structfield.friendly_name'><code>friendly_name</code></td><td><div class='docblock'><p>[Optional] A descriptive name for this table.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.schema'><code>schema</code></td><td><div class='docblock'><p>[Optional] Describes the schema of this table.</p>
+                             <td id='structfield.expiration_time'><code>expiration_time</code></td><td><div class='docblock'><p>[Optional] The time when this table expires, in milliseconds since the epoch. If not present, the table will persist indefinitely. Expired tables will be deleted and their storage reclaimed.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.type_'><code>type_</code></td><td><div class='docblock'><p>[Output-only] Describes the table type. The following values are supported: TABLE: A normal BigQuery table. VIEW: A virtual table defined by a SQL query. EXTERNAL: A table that references data stored in an external storage system, such as Google Cloud Storage. The default value is TABLE.</p>
+                             <td id='structfield.schema'><code>schema</code></td><td><div class='docblock'><p>[Optional] Describes the schema of this table.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.self_link'><code>self_link</code></td><td><div class='docblock'><p>[Output-only] A URL that can be used to access this resource again.</p>
+                             <td id='structfield.type_'><code>type_</code></td><td><div class='docblock'><p>[Output-only] Describes the table type. The following values are supported: TABLE: A normal BigQuery table. VIEW: A virtual table defined by a SQL query. EXTERNAL: A table that references data stored in an external storage system, such as Google Cloud Storage. The default value is TABLE.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.view'><code>view</code></td><td><div class='docblock'><p>[Optional] The view definition.</p>
-</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl <a class='trait' href='../serde/de/trait.Deserialize.html' title='serde::de::Deserialize'>Deserialize</a> for <a class='struct' href='../google_bigquery2/struct.Table.html' title='google_bigquery2::Table'>Table</a></code></h3><div class='impl-items'><h4 id='method.deserialize' class='method'><code>fn <a href='../serde/de/trait.Deserialize.html#method.deserialize' class='fnname'>deserialize</a>&lt;__D&gt;(deserializer: &amp;mut __D) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../google_bigquery2/struct.Table.html' title='google_bigquery2::Table'>Table</a>, __D::Error&gt; <span class='where'>where __D: <a class='trait' href='../serde/de/trait.Deserializer.html' title='serde::de::Deserializer'>Deserializer</a></span></code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='../serde/ser/trait.Serialize.html' title='serde::ser::Serialize'>Serialize</a> for <a class='struct' href='../google_bigquery2/struct.Table.html' title='google_bigquery2::Table'>Table</a></code></h3><div class='impl-items'><h4 id='method.serialize' class='method'><code>fn <a href='../serde/ser/trait.Serialize.html#method.serialize' class='fnname'>serialize</a>&lt;__S&gt;(&amp;self, serializer: &amp;mut __S) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, __S::Error&gt; <span class='where'>where __S: <a class='trait' href='../serde/ser/trait.Serializer.html' title='serde::ser::Serializer'>Serializer</a></span></code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='../google_bigquery2/trait.RequestValue.html' title='google_bigquery2::RequestValue'>RequestValue</a> for <a class='struct' href='../google_bigquery2/struct.Table.html' title='google_bigquery2::Table'>Table</a></code></h3><div class='impl-items'></div><h3 class='impl'><code>impl <a class='trait' href='../google_bigquery2/trait.Resource.html' title='google_bigquery2::Resource'>Resource</a> for <a class='struct' href='../google_bigquery2/struct.Table.html' title='google_bigquery2::Table'>Table</a></code></h3><div class='impl-items'></div><h3 class='impl'><code>impl <a class='trait' href='../google_bigquery2/trait.ResponseResult.html' title='google_bigquery2::ResponseResult'>ResponseResult</a> for <a class='struct' href='../google_bigquery2/struct.Table.html' title='google_bigquery2::Table'>Table</a></code></h3><div class='impl-items'></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_bigquery2/struct.Table.html' title='google_bigquery2::Table'>Table</a></code></h3><div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#method.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_bigquery2/struct.Table.html' title='google_bigquery2::Table'>Table</a></code></h3><div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_bigquery2/struct.Table.html' title='google_bigquery2::Table'>Table</a></code></h4>
-<h4 id='method.clone_from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_bigquery2/struct.Table.html' title='google_bigquery2::Table'>Table</a></code></h3><div class='impl-items'><h4 id='method.default' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#method.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_bigquery2/struct.Table.html' title='google_bigquery2::Table'>Table</a></code></h4>
-</div></section>
+                             <td id='structfield.self_link'><code>self_link</code></td><td><div class='docblock'><p>[Output-only] A URL that can be used to access this resource again.</p>
+</div></td></tr><tr class='stab '>
+                             <td id='structfield.view'><code>view</code></td><td><div class='docblock'><p>[Optional] The view definition.</p>
+</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='../google_bigquery2/trait.RequestValue.html' title='google_bigquery2::RequestValue'>RequestValue</a> for <a class='struct' href='../google_bigquery2/struct.Table.html' title='google_bigquery2::Table'>Table</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-10909' class='srclink' href='../src/google_bigquery2/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-bigquery2-2a42f7c930ec93a1/out/lib.rs.html#23232' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='../google_bigquery2/trait.Resource.html' title='google_bigquery2::Resource'>Resource</a> for <a class='struct' href='../google_bigquery2/struct.Table.html' title='google_bigquery2::Table'>Table</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-10910' class='srclink' href='../src/google_bigquery2/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-bigquery2-2a42f7c930ec93a1/out/lib.rs.html#23233' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='../google_bigquery2/trait.ResponseResult.html' title='google_bigquery2::ResponseResult'>ResponseResult</a> for <a class='struct' href='../google_bigquery2/struct.Table.html' title='google_bigquery2::Table'>Table</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-10911' class='srclink' href='../src/google_bigquery2/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-bigquery2-2a42f7c930ec93a1/out/lib.rs.html#23234' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_bigquery2/struct.Table.html' title='google_bigquery2::Table'>Table</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-10444' class='srclink' href='../src/google_bigquery2/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-bigquery2-2a42f7c930ec93a1/out/lib.rs.html#22121' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.default' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_bigquery2/struct.Table.html' title='google_bigquery2::Table'>Table</a></code></h4>
+<div class='docblock'><p>Returns the &quot;default value&quot; for a type. <a href="https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_bigquery2/struct.Table.html' title='google_bigquery2::Table'>Table</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-10446' class='srclink' href='../src/google_bigquery2/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-bigquery2-2a42f7c930ec93a1/out/lib.rs.html#22121' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_bigquery2/struct.Table.html' title='google_bigquery2::Table'>Table</a></code></h4>
+<div class='docblock'><p>Returns a copy of the value. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone">Read more</a></p>
+</div><h4 id='method.clone_from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></h4>
+<div class='docblock'><p>Performs copy-assignment from <code>source</code>. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_bigquery2/struct.Table.html' title='google_bigquery2::Table'>Table</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-10468' class='srclink' href='../src/google_bigquery2/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-bigquery2-2a42f7c930ec93a1/out/lib.rs.html#22121' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
+<div class='docblock'><p>Formats the value using the given formatter.</p>
+</div></div></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
@@ -146,6 +158,8 @@ The list links the activity name, along with information about where it is used 
                     <dd>Move down in search results</dd>
                     <dt>&#9166;</dt>
                     <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
                 </dl>
             </div>
 
@@ -166,7 +180,7 @@ The list links the activity name, along with information about where it is used 
 
                 <p>
                     Search functions by type signature (e.g.
-                    <code>vec -> usize</code>)
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
                 </p>
             </div>
         </div>

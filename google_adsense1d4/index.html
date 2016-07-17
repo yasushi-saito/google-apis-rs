@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
+    
 
     
     
@@ -43,11 +44,11 @@
 
     <section id='main' class="content mod">
 <h1 class='fqn'><span class='in-band'>Crate <a class='mod' href=''>google_adsense1d4</a></span><span class='out-of-band'><span id='render-detail'>
-            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
-                [<span class='inner'>&#x2212;</span>]
-            </a>
-        </span><a id='src-0' class='srclink' href='../src/google_adsense1d4/lib.rs.html#5-227' title='goto source code'>[src]</a></span></h1>
-<div class='docblock'><p>This documentation was generated from <em>AdSense</em> crate version <em>0.1.11+20160127</em>, where <em>20160127</em> is the exact revision of the <em>adsense:v1.4</em> schema built by the <a href="http://www.makotemplates.org/">mako</a> code generator <em>v0.1.11</em>.</p>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-0' class='srclink' href='../src/google_adsense1d4/src/lib.rs.html#5-233' title='goto source code'>[src]</a></span></h1>
+<div class='docblock'><p>This documentation was generated from <em>AdSense</em> crate version <em>0.1.14+20160405</em>, where <em>20160405</em> is the exact revision of the <em>adsense:v1.4</em> schema built by the <a href="http://www.makotemplates.org/">mako</a> code generator <em>v0.1.14</em>.</p>
 
 <p>Everything else about the <em>AdSense</em> <em>v1d4</em> API can be found at the
 <a href="https://developers.google.com/adsense/management/">official documentation site</a>.
@@ -151,10 +152,12 @@ allow access to individual <a href="trait.CallBuilder.html"><em>Call Builders</e
 <p>All <em>structures</em> are marked with applicable traits to further categorize them and ease browsing.</p>
 
 <p>Generally speaking, you can invoke <em>Activities</em> like this:</p>
+
 <pre class='rust rust-example-rendered'>
 <span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>resource</span>().<span class='ident'>activity</span>(...).<span class='ident'>doit</span>()</pre>
 
 <p>Or specifically ...</p>
+
 <pre class='rust rust-example-rendered'>
 <span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>accounts</span>().<span class='ident'>adunits_list</span>(...).<span class='ident'>doit</span>()
 <span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>accounts</span>().<span class='ident'>customchannels_list</span>(...).<span class='ident'>doit</span>()
@@ -189,7 +192,8 @@ The <code>doit()</code> method performs the actual communication with the server
 google-adsense1d4 = &quot;*&quot;
 </code></pre>
 
-<h2 id='a-complete-example' class='section-header'><a href='#a-complete-example'>A complete example</a></h2><pre class='rust rust-example-rendered'>
+<h2 id='a-complete-example' class='section-header'><a href='#a-complete-example'>A complete example</a></h2>
+<pre class='rust rust-example-rendered'>
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>hyper</span>;
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>yup_oauth2</span> <span class='kw'>as</span> <span class='ident'>oauth2</span>;
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>google_adsense1d4</span> <span class='kw'>as</span> <span class='ident'>adsense1d4</span>;
@@ -214,7 +218,7 @@ google-adsense1d4 = &quot;*&quot;
 <span class='comment'>// execute the final call using `doit()`.</span>
 <span class='comment'>// Values shown here are possibly random and not representative !</span>
 <span class='kw'>let</span> <span class='ident'>result</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>accounts</span>().<span class='ident'>reports_generate</span>(<span class='string'>&quot;accountId&quot;</span>, <span class='string'>&quot;startDate&quot;</span>, <span class='string'>&quot;endDate&quot;</span>)
-             .<span class='ident'>use_timezone_reporting</span>(<span class='boolval'>false</span>)
+             .<span class='ident'>use_timezone_reporting</span>(<span class='boolvalue'>false</span>)
              .<span class='ident'>start_index</span>(<span class='op'>-</span><span class='number'>37</span>)
              .<span class='ident'>add_sort</span>(<span class='string'>&quot;eirmod&quot;</span>)
              .<span class='ident'>add_metric</span>(<span class='string'>&quot;At&quot;</span>)
@@ -289,922 +293,726 @@ These will always take a single argument, for which the following statements are
 <p>Arguments will always be copied or cloned into the builder, to make them independent of their original life times.</p>
 </div><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
 <table>
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.Account.html'
-                               title='google_adsense1d4::Account'>Account</a></td>
-                        <td class='docblock short'>
-                             <p>There is no detailed description.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.AccountAdclientListCall.html'
-                               title='google_adsense1d4::AccountAdclientListCall'>AccountAdclientListCall</a></td>
-                        <td class='docblock short'>
-                             <p>List all ad clients in the specified account.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.AccountAdunitCustomchannelListCall.html'
-                               title='google_adsense1d4::AccountAdunitCustomchannelListCall'>AccountAdunitCustomchannelListCall</a></td>
-                        <td class='docblock short'>
-                             <p>List all custom channels which the specified ad unit belongs to.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.AccountAdunitGetAdCodeCall.html'
-                               title='google_adsense1d4::AccountAdunitGetAdCodeCall'>AccountAdunitGetAdCodeCall</a></td>
-                        <td class='docblock short'>
-                             <p>Get ad code for the specified ad unit.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.AccountAdunitGetCall.html'
-                               title='google_adsense1d4::AccountAdunitGetCall'>AccountAdunitGetCall</a></td>
-                        <td class='docblock short'>
-                             <p>Gets the specified ad unit in the specified ad client for the specified account.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.AccountAdunitListCall.html'
-                               title='google_adsense1d4::AccountAdunitListCall'>AccountAdunitListCall</a></td>
-                        <td class='docblock short'>
-                             <p>List all ad units in the specified ad client for the specified account.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.AccountAlertDeleteCall.html'
-                               title='google_adsense1d4::AccountAlertDeleteCall'>AccountAlertDeleteCall</a></td>
-                        <td class='docblock short'>
-                             <p>Dismiss (delete) the specified alert from the specified publisher AdSense account.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.AccountAlertListCall.html'
-                               title='google_adsense1d4::AccountAlertListCall'>AccountAlertListCall</a></td>
-                        <td class='docblock short'>
-                             <p>List the alerts for the specified AdSense account.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.AccountCustomchannelAdunitListCall.html'
-                               title='google_adsense1d4::AccountCustomchannelAdunitListCall'>AccountCustomchannelAdunitListCall</a></td>
-                        <td class='docblock short'>
-                             <p>List all ad units in the specified custom channel.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.AccountCustomchannelGetCall.html'
-                               title='google_adsense1d4::AccountCustomchannelGetCall'>AccountCustomchannelGetCall</a></td>
-                        <td class='docblock short'>
-                             <p>Get the specified custom channel from the specified ad client for the specified account.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.AccountCustomchannelListCall.html'
-                               title='google_adsense1d4::AccountCustomchannelListCall'>AccountCustomchannelListCall</a></td>
-                        <td class='docblock short'>
-                             <p>List all custom channels in the specified ad client for the specified account.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.AccountGetCall.html'
-                               title='google_adsense1d4::AccountGetCall'>AccountGetCall</a></td>
-                        <td class='docblock short'>
-                             <p>Get information about the selected AdSense account.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.AccountListCall.html'
-                               title='google_adsense1d4::AccountListCall'>AccountListCall</a></td>
-                        <td class='docblock short'>
-                             <p>List all accounts available to this AdSense account.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.AccountMethods.html'
-                               title='google_adsense1d4::AccountMethods'>AccountMethods</a></td>
-                        <td class='docblock short'>
-                             <p>A builder providing access to all methods supported on <em>account</em> resources.
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Account.html'
+                                  title='google_adsense1d4::Account'>Account</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AccountAdclientListCall.html'
+                                  title='google_adsense1d4::AccountAdclientListCall'>AccountAdclientListCall</a></td>
+                           <td class='docblock short'>
+                                <p>List all ad clients in the specified account.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AccountAdunitCustomchannelListCall.html'
+                                  title='google_adsense1d4::AccountAdunitCustomchannelListCall'>AccountAdunitCustomchannelListCall</a></td>
+                           <td class='docblock short'>
+                                <p>List all custom channels which the specified ad unit belongs to.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AccountAdunitGetAdCodeCall.html'
+                                  title='google_adsense1d4::AccountAdunitGetAdCodeCall'>AccountAdunitGetAdCodeCall</a></td>
+                           <td class='docblock short'>
+                                <p>Get ad code for the specified ad unit.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AccountAdunitGetCall.html'
+                                  title='google_adsense1d4::AccountAdunitGetCall'>AccountAdunitGetCall</a></td>
+                           <td class='docblock short'>
+                                <p>Gets the specified ad unit in the specified ad client for the specified account.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AccountAdunitListCall.html'
+                                  title='google_adsense1d4::AccountAdunitListCall'>AccountAdunitListCall</a></td>
+                           <td class='docblock short'>
+                                <p>List all ad units in the specified ad client for the specified account.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AccountAlertDeleteCall.html'
+                                  title='google_adsense1d4::AccountAlertDeleteCall'>AccountAlertDeleteCall</a></td>
+                           <td class='docblock short'>
+                                <p>Dismiss (delete) the specified alert from the specified publisher AdSense account.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AccountAlertListCall.html'
+                                  title='google_adsense1d4::AccountAlertListCall'>AccountAlertListCall</a></td>
+                           <td class='docblock short'>
+                                <p>List the alerts for the specified AdSense account.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AccountCustomchannelAdunitListCall.html'
+                                  title='google_adsense1d4::AccountCustomchannelAdunitListCall'>AccountCustomchannelAdunitListCall</a></td>
+                           <td class='docblock short'>
+                                <p>List all ad units in the specified custom channel.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AccountCustomchannelGetCall.html'
+                                  title='google_adsense1d4::AccountCustomchannelGetCall'>AccountCustomchannelGetCall</a></td>
+                           <td class='docblock short'>
+                                <p>Get the specified custom channel from the specified ad client for the specified account.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AccountCustomchannelListCall.html'
+                                  title='google_adsense1d4::AccountCustomchannelListCall'>AccountCustomchannelListCall</a></td>
+                           <td class='docblock short'>
+                                <p>List all custom channels in the specified ad client for the specified account.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AccountGetCall.html'
+                                  title='google_adsense1d4::AccountGetCall'>AccountGetCall</a></td>
+                           <td class='docblock short'>
+                                <p>Get information about the selected AdSense account.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AccountListCall.html'
+                                  title='google_adsense1d4::AccountListCall'>AccountListCall</a></td>
+                           <td class='docblock short'>
+                                <p>List all accounts available to this AdSense account.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AccountMethods.html'
+                                  title='google_adsense1d4::AccountMethods'>AccountMethods</a></td>
+                           <td class='docblock short'>
+                                <p>A builder providing access to all methods supported on <em>account</em> resources.
 It is not used directly, but through the <code>AdSense</code> hub.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.AccountPaymentListCall.html'
-                               title='google_adsense1d4::AccountPaymentListCall'>AccountPaymentListCall</a></td>
-                        <td class='docblock short'>
-                             <p>List the payments for the specified AdSense account.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.AccountReportGenerateCall.html'
-                               title='google_adsense1d4::AccountReportGenerateCall'>AccountReportGenerateCall</a></td>
-                        <td class='docblock short'>
-                             <p>Generate an AdSense report based on the report request sent in the query parameters. Returns the result as JSON; to retrieve output in CSV format specify &quot;alt=csv&quot; as a query parameter.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.AccountReportSavedGenerateCall.html'
-                               title='google_adsense1d4::AccountReportSavedGenerateCall'>AccountReportSavedGenerateCall</a></td>
-                        <td class='docblock short'>
-                             <p>Generate an AdSense report based on the saved report ID sent in the query parameters.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.AccountReportSavedListCall.html'
-                               title='google_adsense1d4::AccountReportSavedListCall'>AccountReportSavedListCall</a></td>
-                        <td class='docblock short'>
-                             <p>List all saved reports in the specified AdSense account.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.AccountSavedadstyleGetCall.html'
-                               title='google_adsense1d4::AccountSavedadstyleGetCall'>AccountSavedadstyleGetCall</a></td>
-                        <td class='docblock short'>
-                             <p>List a specific saved ad style for the specified account.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.AccountSavedadstyleListCall.html'
-                               title='google_adsense1d4::AccountSavedadstyleListCall'>AccountSavedadstyleListCall</a></td>
-                        <td class='docblock short'>
-                             <p>List all saved ad styles in the specified account.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.AccountUrlchannelListCall.html'
-                               title='google_adsense1d4::AccountUrlchannelListCall'>AccountUrlchannelListCall</a></td>
-                        <td class='docblock short'>
-                             <p>List all URL channels in the specified ad client for the specified account.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.Accounts.html'
-                               title='google_adsense1d4::Accounts'>Accounts</a></td>
-                        <td class='docblock short'>
-                             <p>There is no detailed description.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.AdClient.html'
-                               title='google_adsense1d4::AdClient'>AdClient</a></td>
-                        <td class='docblock short'>
-                             <p>There is no detailed description.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.AdClients.html'
-                               title='google_adsense1d4::AdClients'>AdClients</a></td>
-                        <td class='docblock short'>
-                             <p>There is no detailed description.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.AdCode.html'
-                               title='google_adsense1d4::AdCode'>AdCode</a></td>
-                        <td class='docblock short'>
-                             <p>There is no detailed description.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.AdSense.html'
-                               title='google_adsense1d4::AdSense'>AdSense</a></td>
-                        <td class='docblock short'>
-                             <p>Central instance to access all AdSense related resource activities</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.AdStyle.html'
-                               title='google_adsense1d4::AdStyle'>AdStyle</a></td>
-                        <td class='docblock short'>
-                             <p>There is no detailed description.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.AdStyleColors.html'
-                               title='google_adsense1d4::AdStyleColors'>AdStyleColors</a></td>
-                        <td class='docblock short'>
-                             <p>The colors which are included in the style. These are represented as six hexadecimal characters, similar to HTML color codes, but without the leading hash.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.AdStyleFont.html'
-                               title='google_adsense1d4::AdStyleFont'>AdStyleFont</a></td>
-                        <td class='docblock short'>
-                             <p>The font which is included in the style.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.AdUnit.html'
-                               title='google_adsense1d4::AdUnit'>AdUnit</a></td>
-                        <td class='docblock short'>
-                             <p>There is no detailed description.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.AdUnitContentAdsSettings.html'
-                               title='google_adsense1d4::AdUnitContentAdsSettings'>AdUnitContentAdsSettings</a></td>
-                        <td class='docblock short'>
-                             <p>Settings specific to content ads (AFC) and highend mobile content ads (AFMC - deprecated).</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.AdUnitContentAdsSettingsBackupOption.html'
-                               title='google_adsense1d4::AdUnitContentAdsSettingsBackupOption'>AdUnitContentAdsSettingsBackupOption</a></td>
-                        <td class='docblock short'>
-                             <p>The backup option to be used in instances where no ad is available.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.AdUnitFeedAdsSettings.html'
-                               title='google_adsense1d4::AdUnitFeedAdsSettings'>AdUnitFeedAdsSettings</a></td>
-                        <td class='docblock short'>
-                             <p>Settings specific to feed ads (AFF) - deprecated.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.AdUnitMobileContentAdsSettings.html'
-                               title='google_adsense1d4::AdUnitMobileContentAdsSettings'>AdUnitMobileContentAdsSettings</a></td>
-                        <td class='docblock short'>
-                             <p>Settings specific to WAP mobile content ads (AFMC) - deprecated.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.AdUnits.html'
-                               title='google_adsense1d4::AdUnits'>AdUnits</a></td>
-                        <td class='docblock short'>
-                             <p>There is no detailed description.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.AdclientListCall.html'
-                               title='google_adsense1d4::AdclientListCall'>AdclientListCall</a></td>
-                        <td class='docblock short'>
-                             <p>List all ad clients in this AdSense account.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.AdclientMethods.html'
-                               title='google_adsense1d4::AdclientMethods'>AdclientMethods</a></td>
-                        <td class='docblock short'>
-                             <p>A builder providing access to all methods supported on <em>adclient</em> resources.
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AccountPaymentListCall.html'
+                                  title='google_adsense1d4::AccountPaymentListCall'>AccountPaymentListCall</a></td>
+                           <td class='docblock short'>
+                                <p>List the payments for the specified AdSense account.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AccountReportGenerateCall.html'
+                                  title='google_adsense1d4::AccountReportGenerateCall'>AccountReportGenerateCall</a></td>
+                           <td class='docblock short'>
+                                <p>Generate an AdSense report based on the report request sent in the query parameters. Returns the result as JSON; to retrieve output in CSV format specify &quot;alt=csv&quot; as a query parameter.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AccountReportSavedGenerateCall.html'
+                                  title='google_adsense1d4::AccountReportSavedGenerateCall'>AccountReportSavedGenerateCall</a></td>
+                           <td class='docblock short'>
+                                <p>Generate an AdSense report based on the saved report ID sent in the query parameters.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AccountReportSavedListCall.html'
+                                  title='google_adsense1d4::AccountReportSavedListCall'>AccountReportSavedListCall</a></td>
+                           <td class='docblock short'>
+                                <p>List all saved reports in the specified AdSense account.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AccountSavedadstyleGetCall.html'
+                                  title='google_adsense1d4::AccountSavedadstyleGetCall'>AccountSavedadstyleGetCall</a></td>
+                           <td class='docblock short'>
+                                <p>List a specific saved ad style for the specified account.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AccountSavedadstyleListCall.html'
+                                  title='google_adsense1d4::AccountSavedadstyleListCall'>AccountSavedadstyleListCall</a></td>
+                           <td class='docblock short'>
+                                <p>List all saved ad styles in the specified account.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AccountUrlchannelListCall.html'
+                                  title='google_adsense1d4::AccountUrlchannelListCall'>AccountUrlchannelListCall</a></td>
+                           <td class='docblock short'>
+                                <p>List all URL channels in the specified ad client for the specified account.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Accounts.html'
+                                  title='google_adsense1d4::Accounts'>Accounts</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AdClient.html'
+                                  title='google_adsense1d4::AdClient'>AdClient</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AdClients.html'
+                                  title='google_adsense1d4::AdClients'>AdClients</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AdCode.html'
+                                  title='google_adsense1d4::AdCode'>AdCode</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AdSense.html'
+                                  title='google_adsense1d4::AdSense'>AdSense</a></td>
+                           <td class='docblock short'>
+                                <p>Central instance to access all AdSense related resource activities</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AdStyle.html'
+                                  title='google_adsense1d4::AdStyle'>AdStyle</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AdStyleColors.html'
+                                  title='google_adsense1d4::AdStyleColors'>AdStyleColors</a></td>
+                           <td class='docblock short'>
+                                <p>The colors which are included in the style. These are represented as six hexadecimal characters, similar to HTML color codes, but without the leading hash.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AdStyleFont.html'
+                                  title='google_adsense1d4::AdStyleFont'>AdStyleFont</a></td>
+                           <td class='docblock short'>
+                                <p>The font which is included in the style.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AdUnit.html'
+                                  title='google_adsense1d4::AdUnit'>AdUnit</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AdUnitContentAdsSettings.html'
+                                  title='google_adsense1d4::AdUnitContentAdsSettings'>AdUnitContentAdsSettings</a></td>
+                           <td class='docblock short'>
+                                <p>Settings specific to content ads (AFC) and highend mobile content ads (AFMC - deprecated).</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AdUnitContentAdsSettingsBackupOption.html'
+                                  title='google_adsense1d4::AdUnitContentAdsSettingsBackupOption'>AdUnitContentAdsSettingsBackupOption</a></td>
+                           <td class='docblock short'>
+                                <p>The backup option to be used in instances where no ad is available.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AdUnitFeedAdsSettings.html'
+                                  title='google_adsense1d4::AdUnitFeedAdsSettings'>AdUnitFeedAdsSettings</a></td>
+                           <td class='docblock short'>
+                                <p>Settings specific to feed ads (AFF) - deprecated.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AdUnitMobileContentAdsSettings.html'
+                                  title='google_adsense1d4::AdUnitMobileContentAdsSettings'>AdUnitMobileContentAdsSettings</a></td>
+                           <td class='docblock short'>
+                                <p>Settings specific to WAP mobile content ads (AFMC) - deprecated.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AdUnits.html'
+                                  title='google_adsense1d4::AdUnits'>AdUnits</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AdclientListCall.html'
+                                  title='google_adsense1d4::AdclientListCall'>AdclientListCall</a></td>
+                           <td class='docblock short'>
+                                <p>List all ad clients in this AdSense account.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AdclientMethods.html'
+                                  title='google_adsense1d4::AdclientMethods'>AdclientMethods</a></td>
+                           <td class='docblock short'>
+                                <p>A builder providing access to all methods supported on <em>adclient</em> resources.
 It is not used directly, but through the <code>AdSense</code> hub.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.AdsenseReportsGenerateResponse.html'
-                               title='google_adsense1d4::AdsenseReportsGenerateResponse'>AdsenseReportsGenerateResponse</a></td>
-                        <td class='docblock short'>
-                             <p>There is no detailed description.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.AdsenseReportsGenerateResponseHeaders.html'
-                               title='google_adsense1d4::AdsenseReportsGenerateResponseHeaders'>AdsenseReportsGenerateResponseHeaders</a></td>
-                        <td class='docblock short'>
-                             <p>The header information of the columns requested in the report. This is a list of headers; one for each dimension in the request, followed by one for each metric in the request.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.AdunitCustomchannelListCall.html'
-                               title='google_adsense1d4::AdunitCustomchannelListCall'>AdunitCustomchannelListCall</a></td>
-                        <td class='docblock short'>
-                             <p>List all custom channels which the specified ad unit belongs to.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.AdunitGetAdCodeCall.html'
-                               title='google_adsense1d4::AdunitGetAdCodeCall'>AdunitGetAdCodeCall</a></td>
-                        <td class='docblock short'>
-                             <p>Get ad code for the specified ad unit.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.AdunitGetCall.html'
-                               title='google_adsense1d4::AdunitGetCall'>AdunitGetCall</a></td>
-                        <td class='docblock short'>
-                             <p>Gets the specified ad unit in the specified ad client.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.AdunitListCall.html'
-                               title='google_adsense1d4::AdunitListCall'>AdunitListCall</a></td>
-                        <td class='docblock short'>
-                             <p>List all ad units in the specified ad client for this AdSense account.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.AdunitMethods.html'
-                               title='google_adsense1d4::AdunitMethods'>AdunitMethods</a></td>
-                        <td class='docblock short'>
-                             <p>A builder providing access to all methods supported on <em>adunit</em> resources.
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AdsenseReportsGenerateResponse.html'
+                                  title='google_adsense1d4::AdsenseReportsGenerateResponse'>AdsenseReportsGenerateResponse</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AdsenseReportsGenerateResponseHeaders.html'
+                                  title='google_adsense1d4::AdsenseReportsGenerateResponseHeaders'>AdsenseReportsGenerateResponseHeaders</a></td>
+                           <td class='docblock short'>
+                                <p>The header information of the columns requested in the report. This is a list of headers; one for each dimension in the request, followed by one for each metric in the request.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AdunitCustomchannelListCall.html'
+                                  title='google_adsense1d4::AdunitCustomchannelListCall'>AdunitCustomchannelListCall</a></td>
+                           <td class='docblock short'>
+                                <p>List all custom channels which the specified ad unit belongs to.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AdunitGetAdCodeCall.html'
+                                  title='google_adsense1d4::AdunitGetAdCodeCall'>AdunitGetAdCodeCall</a></td>
+                           <td class='docblock short'>
+                                <p>Get ad code for the specified ad unit.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AdunitGetCall.html'
+                                  title='google_adsense1d4::AdunitGetCall'>AdunitGetCall</a></td>
+                           <td class='docblock short'>
+                                <p>Gets the specified ad unit in the specified ad client.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AdunitListCall.html'
+                                  title='google_adsense1d4::AdunitListCall'>AdunitListCall</a></td>
+                           <td class='docblock short'>
+                                <p>List all ad units in the specified ad client for this AdSense account.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AdunitMethods.html'
+                                  title='google_adsense1d4::AdunitMethods'>AdunitMethods</a></td>
+                           <td class='docblock short'>
+                                <p>A builder providing access to all methods supported on <em>adunit</em> resources.
 It is not used directly, but through the <code>AdSense</code> hub.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.Alert.html'
-                               title='google_adsense1d4::Alert'>Alert</a></td>
-                        <td class='docblock short'>
-                             <p>There is no detailed description.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.AlertDeleteCall.html'
-                               title='google_adsense1d4::AlertDeleteCall'>AlertDeleteCall</a></td>
-                        <td class='docblock short'>
-                             <p>Dismiss (delete) the specified alert from the publisher&#39;s AdSense account.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.AlertListCall.html'
-                               title='google_adsense1d4::AlertListCall'>AlertListCall</a></td>
-                        <td class='docblock short'>
-                             <p>List the alerts for this AdSense account.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.AlertMethods.html'
-                               title='google_adsense1d4::AlertMethods'>AlertMethods</a></td>
-                        <td class='docblock short'>
-                             <p>A builder providing access to all methods supported on <em>alert</em> resources.
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Alert.html'
+                                  title='google_adsense1d4::Alert'>Alert</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AlertDeleteCall.html'
+                                  title='google_adsense1d4::AlertDeleteCall'>AlertDeleteCall</a></td>
+                           <td class='docblock short'>
+                                <p>Dismiss (delete) the specified alert from the publisher&#39;s AdSense account.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AlertListCall.html'
+                                  title='google_adsense1d4::AlertListCall'>AlertListCall</a></td>
+                           <td class='docblock short'>
+                                <p>List the alerts for this AdSense account.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AlertMethods.html'
+                                  title='google_adsense1d4::AlertMethods'>AlertMethods</a></td>
+                           <td class='docblock short'>
+                                <p>A builder providing access to all methods supported on <em>alert</em> resources.
 It is not used directly, but through the <code>AdSense</code> hub.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.Alerts.html'
-                               title='google_adsense1d4::Alerts'>Alerts</a></td>
-                        <td class='docblock short'>
-                             <p>There is no detailed description.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.CustomChannel.html'
-                               title='google_adsense1d4::CustomChannel'>CustomChannel</a></td>
-                        <td class='docblock short'>
-                             <p>There is no detailed description.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.CustomChannelTargetingInfo.html'
-                               title='google_adsense1d4::CustomChannelTargetingInfo'>CustomChannelTargetingInfo</a></td>
-                        <td class='docblock short'>
-                             <p>The targeting information of this custom channel, if activated.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.CustomChannels.html'
-                               title='google_adsense1d4::CustomChannels'>CustomChannels</a></td>
-                        <td class='docblock short'>
-                             <p>There is no detailed description.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.CustomchannelAdunitListCall.html'
-                               title='google_adsense1d4::CustomchannelAdunitListCall'>CustomchannelAdunitListCall</a></td>
-                        <td class='docblock short'>
-                             <p>List all ad units in the specified custom channel.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.CustomchannelGetCall.html'
-                               title='google_adsense1d4::CustomchannelGetCall'>CustomchannelGetCall</a></td>
-                        <td class='docblock short'>
-                             <p>Get the specified custom channel from the specified ad client.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.CustomchannelListCall.html'
-                               title='google_adsense1d4::CustomchannelListCall'>CustomchannelListCall</a></td>
-                        <td class='docblock short'>
-                             <p>List all custom channels in the specified ad client for this AdSense account.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.CustomchannelMethods.html'
-                               title='google_adsense1d4::CustomchannelMethods'>CustomchannelMethods</a></td>
-                        <td class='docblock short'>
-                             <p>A builder providing access to all methods supported on <em>customchannel</em> resources.
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Alerts.html'
+                                  title='google_adsense1d4::Alerts'>Alerts</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CustomChannel.html'
+                                  title='google_adsense1d4::CustomChannel'>CustomChannel</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CustomChannelTargetingInfo.html'
+                                  title='google_adsense1d4::CustomChannelTargetingInfo'>CustomChannelTargetingInfo</a></td>
+                           <td class='docblock short'>
+                                <p>The targeting information of this custom channel, if activated.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CustomChannels.html'
+                                  title='google_adsense1d4::CustomChannels'>CustomChannels</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CustomchannelAdunitListCall.html'
+                                  title='google_adsense1d4::CustomchannelAdunitListCall'>CustomchannelAdunitListCall</a></td>
+                           <td class='docblock short'>
+                                <p>List all ad units in the specified custom channel.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CustomchannelGetCall.html'
+                                  title='google_adsense1d4::CustomchannelGetCall'>CustomchannelGetCall</a></td>
+                           <td class='docblock short'>
+                                <p>Get the specified custom channel from the specified ad client.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CustomchannelListCall.html'
+                                  title='google_adsense1d4::CustomchannelListCall'>CustomchannelListCall</a></td>
+                           <td class='docblock short'>
+                                <p>List all custom channels in the specified ad client for this AdSense account.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CustomchannelMethods.html'
+                                  title='google_adsense1d4::CustomchannelMethods'>CustomchannelMethods</a></td>
+                           <td class='docblock short'>
+                                <p>A builder providing access to all methods supported on <em>customchannel</em> resources.
 It is not used directly, but through the <code>AdSense</code> hub.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.DefaultDelegate.html'
-                               title='google_adsense1d4::DefaultDelegate'>DefaultDelegate</a></td>
-                        <td class='docblock short'>
-                             <p>A delegate with a conservative default implementation, which is used if no other delegate is
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DefaultDelegate.html'
+                                  title='google_adsense1d4::DefaultDelegate'>DefaultDelegate</a></td>
+                           <td class='docblock short'>
+                                <p>A delegate with a conservative default implementation, which is used if no other delegate is
 set.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ErrorResponse.html'
-                               title='google_adsense1d4::ErrorResponse'>ErrorResponse</a></td>
-                        <td class='docblock short'>
-                             <p>A utility to represent detailed errors we might see in case there are BadRequests.
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ErrorResponse.html'
+                                  title='google_adsense1d4::ErrorResponse'>ErrorResponse</a></td>
+                           <td class='docblock short'>
+                                <p>A utility to represent detailed errors we might see in case there are BadRequests.
 The latter happen if the sent parameters or request structures are unsound</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.Metadata.html'
-                               title='google_adsense1d4::Metadata'>Metadata</a></td>
-                        <td class='docblock short'>
-                             <p>There is no detailed description.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.MetadataDimensionListCall.html'
-                               title='google_adsense1d4::MetadataDimensionListCall'>MetadataDimensionListCall</a></td>
-                        <td class='docblock short'>
-                             <p>List the metadata for the dimensions available to this AdSense account.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.MetadataMethods.html'
-                               title='google_adsense1d4::MetadataMethods'>MetadataMethods</a></td>
-                        <td class='docblock short'>
-                             <p>A builder providing access to all methods supported on <em>metadata</em> resources.
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Metadata.html'
+                                  title='google_adsense1d4::Metadata'>Metadata</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.MetadataDimensionListCall.html'
+                                  title='google_adsense1d4::MetadataDimensionListCall'>MetadataDimensionListCall</a></td>
+                           <td class='docblock short'>
+                                <p>List the metadata for the dimensions available to this AdSense account.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.MetadataMethods.html'
+                                  title='google_adsense1d4::MetadataMethods'>MetadataMethods</a></td>
+                           <td class='docblock short'>
+                                <p>A builder providing access to all methods supported on <em>metadata</em> resources.
 It is not used directly, but through the <code>AdSense</code> hub.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.MetadataMetricListCall.html'
-                               title='google_adsense1d4::MetadataMetricListCall'>MetadataMetricListCall</a></td>
-                        <td class='docblock short'>
-                             <p>List the metadata for the metrics available to this AdSense account.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.MethodInfo.html'
-                               title='google_adsense1d4::MethodInfo'>MethodInfo</a></td>
-                        <td class='docblock short'>
-                             <p>Contains information about an API request.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.MultiPartReader.html'
-                               title='google_adsense1d4::MultiPartReader'>MultiPartReader</a></td>
-                        <td class='docblock short'>
-                             <p>Provides a <code>Read</code> interface that converts multiple parts into the protocol
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.MetadataMetricListCall.html'
+                                  title='google_adsense1d4::MetadataMetricListCall'>MetadataMetricListCall</a></td>
+                           <td class='docblock short'>
+                                <p>List the metadata for the metrics available to this AdSense account.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.MethodInfo.html'
+                                  title='google_adsense1d4::MethodInfo'>MethodInfo</a></td>
+                           <td class='docblock short'>
+                                <p>Contains information about an API request.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.MultiPartReader.html'
+                                  title='google_adsense1d4::MultiPartReader'>MultiPartReader</a></td>
+                           <td class='docblock short'>
+                                <p>Provides a <code>Read</code> interface that converts multiple parts into the protocol
 identified by <a href="https://tools.ietf.org/html/rfc2387">RFC2387</a>.
 <strong>Note</strong>: This implementation is just as rich as it needs to be to perform uploads
 to google APIs, and might not be a fully-featured implementation.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.Payment.html'
-                               title='google_adsense1d4::Payment'>Payment</a></td>
-                        <td class='docblock short'>
-                             <p>There is no detailed description.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.PaymentListCall.html'
-                               title='google_adsense1d4::PaymentListCall'>PaymentListCall</a></td>
-                        <td class='docblock short'>
-                             <p>List the payments for this AdSense account.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.PaymentMethods.html'
-                               title='google_adsense1d4::PaymentMethods'>PaymentMethods</a></td>
-                        <td class='docblock short'>
-                             <p>A builder providing access to all methods supported on <em>payment</em> resources.
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Payment.html'
+                                  title='google_adsense1d4::Payment'>Payment</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PaymentListCall.html'
+                                  title='google_adsense1d4::PaymentListCall'>PaymentListCall</a></td>
+                           <td class='docblock short'>
+                                <p>List the payments for this AdSense account.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PaymentMethods.html'
+                                  title='google_adsense1d4::PaymentMethods'>PaymentMethods</a></td>
+                           <td class='docblock short'>
+                                <p>A builder providing access to all methods supported on <em>payment</em> resources.
 It is not used directly, but through the <code>AdSense</code> hub.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.Payments.html'
-                               title='google_adsense1d4::Payments'>Payments</a></td>
-                        <td class='docblock short'>
-                             <p>There is no detailed description.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ReportGenerateCall.html'
-                               title='google_adsense1d4::ReportGenerateCall'>ReportGenerateCall</a></td>
-                        <td class='docblock short'>
-                             <p>Generate an AdSense report based on the report request sent in the query parameters. Returns the result as JSON; to retrieve output in CSV format specify &quot;alt=csv&quot; as a query parameter.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ReportMethods.html'
-                               title='google_adsense1d4::ReportMethods'>ReportMethods</a></td>
-                        <td class='docblock short'>
-                             <p>A builder providing access to all methods supported on <em>report</em> resources.
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Payments.html'
+                                  title='google_adsense1d4::Payments'>Payments</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ReportGenerateCall.html'
+                                  title='google_adsense1d4::ReportGenerateCall'>ReportGenerateCall</a></td>
+                           <td class='docblock short'>
+                                <p>Generate an AdSense report based on the report request sent in the query parameters. Returns the result as JSON; to retrieve output in CSV format specify &quot;alt=csv&quot; as a query parameter.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ReportMethods.html'
+                                  title='google_adsense1d4::ReportMethods'>ReportMethods</a></td>
+                           <td class='docblock short'>
+                                <p>A builder providing access to all methods supported on <em>report</em> resources.
 It is not used directly, but through the <code>AdSense</code> hub.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ReportSavedGenerateCall.html'
-                               title='google_adsense1d4::ReportSavedGenerateCall'>ReportSavedGenerateCall</a></td>
-                        <td class='docblock short'>
-                             <p>Generate an AdSense report based on the saved report ID sent in the query parameters.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ReportSavedListCall.html'
-                               title='google_adsense1d4::ReportSavedListCall'>ReportSavedListCall</a></td>
-                        <td class='docblock short'>
-                             <p>List all saved reports in this AdSense account.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ReportingMetadataEntry.html'
-                               title='google_adsense1d4::ReportingMetadataEntry'>ReportingMetadataEntry</a></td>
-                        <td class='docblock short'>
-                             <p>There is no detailed description.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.SavedAdStyle.html'
-                               title='google_adsense1d4::SavedAdStyle'>SavedAdStyle</a></td>
-                        <td class='docblock short'>
-                             <p>There is no detailed description.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.SavedAdStyles.html'
-                               title='google_adsense1d4::SavedAdStyles'>SavedAdStyles</a></td>
-                        <td class='docblock short'>
-                             <p>There is no detailed description.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.SavedReport.html'
-                               title='google_adsense1d4::SavedReport'>SavedReport</a></td>
-                        <td class='docblock short'>
-                             <p>There is no detailed description.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.SavedReports.html'
-                               title='google_adsense1d4::SavedReports'>SavedReports</a></td>
-                        <td class='docblock short'>
-                             <p>There is no detailed description.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.SavedadstyleGetCall.html'
-                               title='google_adsense1d4::SavedadstyleGetCall'>SavedadstyleGetCall</a></td>
-                        <td class='docblock short'>
-                             <p>Get a specific saved ad style from the user&#39;s account.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.SavedadstyleListCall.html'
-                               title='google_adsense1d4::SavedadstyleListCall'>SavedadstyleListCall</a></td>
-                        <td class='docblock short'>
-                             <p>List all saved ad styles in the user&#39;s account.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.SavedadstyleMethods.html'
-                               title='google_adsense1d4::SavedadstyleMethods'>SavedadstyleMethods</a></td>
-                        <td class='docblock short'>
-                             <p>A builder providing access to all methods supported on <em>savedadstyle</em> resources.
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ReportSavedGenerateCall.html'
+                                  title='google_adsense1d4::ReportSavedGenerateCall'>ReportSavedGenerateCall</a></td>
+                           <td class='docblock short'>
+                                <p>Generate an AdSense report based on the saved report ID sent in the query parameters.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ReportSavedListCall.html'
+                                  title='google_adsense1d4::ReportSavedListCall'>ReportSavedListCall</a></td>
+                           <td class='docblock short'>
+                                <p>List all saved reports in this AdSense account.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ReportingMetadataEntry.html'
+                                  title='google_adsense1d4::ReportingMetadataEntry'>ReportingMetadataEntry</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SavedAdStyle.html'
+                                  title='google_adsense1d4::SavedAdStyle'>SavedAdStyle</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SavedAdStyles.html'
+                                  title='google_adsense1d4::SavedAdStyles'>SavedAdStyles</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SavedReport.html'
+                                  title='google_adsense1d4::SavedReport'>SavedReport</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SavedReports.html'
+                                  title='google_adsense1d4::SavedReports'>SavedReports</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SavedadstyleGetCall.html'
+                                  title='google_adsense1d4::SavedadstyleGetCall'>SavedadstyleGetCall</a></td>
+                           <td class='docblock short'>
+                                <p>Get a specific saved ad style from the user&#39;s account.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SavedadstyleListCall.html'
+                                  title='google_adsense1d4::SavedadstyleListCall'>SavedadstyleListCall</a></td>
+                           <td class='docblock short'>
+                                <p>List all saved ad styles in the user&#39;s account.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SavedadstyleMethods.html'
+                                  title='google_adsense1d4::SavedadstyleMethods'>SavedadstyleMethods</a></td>
+                           <td class='docblock short'>
+                                <p>A builder providing access to all methods supported on <em>savedadstyle</em> resources.
 It is not used directly, but through the <code>AdSense</code> hub.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.UrlChannel.html'
-                               title='google_adsense1d4::UrlChannel'>UrlChannel</a></td>
-                        <td class='docblock short'>
-                             <p>There is no detailed description.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.UrlChannels.html'
-                               title='google_adsense1d4::UrlChannels'>UrlChannels</a></td>
-                        <td class='docblock short'>
-                             <p>There is no detailed description.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.UrlchannelListCall.html'
-                               title='google_adsense1d4::UrlchannelListCall'>UrlchannelListCall</a></td>
-                        <td class='docblock short'>
-                             <p>List all URL channels in the specified ad client for this AdSense account.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.UrlchannelMethods.html'
-                               title='google_adsense1d4::UrlchannelMethods'>UrlchannelMethods</a></td>
-                        <td class='docblock short'>
-                             <p>A builder providing access to all methods supported on <em>urlchannel</em> resources.
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UrlChannel.html'
+                                  title='google_adsense1d4::UrlChannel'>UrlChannel</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UrlChannels.html'
+                                  title='google_adsense1d4::UrlChannels'>UrlChannels</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UrlchannelListCall.html'
+                                  title='google_adsense1d4::UrlchannelListCall'>UrlchannelListCall</a></td>
+                           <td class='docblock short'>
+                                <p>List all URL channels in the specified ad client for this AdSense account.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UrlchannelMethods.html'
+                                  title='google_adsense1d4::UrlchannelMethods'>UrlchannelMethods</a></td>
+                           <td class='docblock short'>
+                                <p>A builder providing access to all methods supported on <em>urlchannel</em> resources.
 It is not used directly, but through the <code>AdSense</code> hub.</p>
-
-                        </td>
-                    </tr>
-                </table><h2 id='enums' class='section-header'><a href="#enums">Enums</a></h2>
+                           </td>
+                       </tr></table><h2 id='enums' class='section-header'><a href="#enums">Enums</a></h2>
 <table>
-                    <tr class=' module-item'>
-                        <td><a class='enum' href='enum.Error.html'
-                               title='google_adsense1d4::Error'>Error</a></td>
-                        <td class='docblock short'>
-                             
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='enum' href='enum.Scope.html'
-                               title='google_adsense1d4::Scope'>Scope</a></td>
-                        <td class='docblock short'>
-                             <p>Identifies the an OAuth2 authorization scope.
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.Error.html'
+                                  title='google_adsense1d4::Error'>Error</a></td>
+                           <td class='docblock short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.Scope.html'
+                                  title='google_adsense1d4::Scope'>Scope</a></td>
+                           <td class='docblock short'>
+                                <p>Identifies the an OAuth2 authorization scope.
 A scope is needed when requesting an
 <a href="https://developers.google.com/youtube/v3/guides/authentication">authorization token</a>.</p>
-
-                        </td>
-                    </tr>
-                </table><h2 id='traits' class='section-header'><a href="#traits">Traits</a></h2>
+                           </td>
+                       </tr></table><h2 id='traits' class='section-header'><a href="#traits">Traits</a></h2>
 <table>
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.CallBuilder.html'
-                               title='google_adsense1d4::CallBuilder'>CallBuilder</a></td>
-                        <td class='docblock short'>
-                             <p>Identifies types which represent builders for a particular resource method</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.Delegate.html'
-                               title='google_adsense1d4::Delegate'>Delegate</a></td>
-                        <td class='docblock short'>
-                             <p>A trait specifying functionality to help controlling any request performed by the API.
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.CallBuilder.html'
+                                  title='google_adsense1d4::CallBuilder'>CallBuilder</a></td>
+                           <td class='docblock short'>
+                                <p>Identifies types which represent builders for a particular resource method</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.Delegate.html'
+                                  title='google_adsense1d4::Delegate'>Delegate</a></td>
+                           <td class='docblock short'>
+                                <p>A trait specifying functionality to help controlling any request performed by the API.
 The trait has a conservative default implementation.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.Hub.html'
-                               title='google_adsense1d4::Hub'>Hub</a></td>
-                        <td class='docblock short'>
-                             <p>Identifies the Hub. There is only one per library, this trait is supposed
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.Hub.html'
+                                  title='google_adsense1d4::Hub'>Hub</a></td>
+                           <td class='docblock short'>
+                                <p>Identifies the Hub. There is only one per library, this trait is supposed
 to make intended use more explicit.
 The hub allows to access all resource methods more easily.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.MethodsBuilder.html'
-                               title='google_adsense1d4::MethodsBuilder'>MethodsBuilder</a></td>
-                        <td class='docblock short'>
-                             <p>Identifies types for building methods of a particular resource type</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.NestedType.html'
-                               title='google_adsense1d4::NestedType'>NestedType</a></td>
-                        <td class='docblock short'>
-                             <p>Identifies types which are only used by other types internally.
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.MethodsBuilder.html'
+                                  title='google_adsense1d4::MethodsBuilder'>MethodsBuilder</a></td>
+                           <td class='docblock short'>
+                                <p>Identifies types for building methods of a particular resource type</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.NestedType.html'
+                                  title='google_adsense1d4::NestedType'>NestedType</a></td>
+                           <td class='docblock short'>
+                                <p>Identifies types which are only used by other types internally.
 They have no special meaning, this trait just marks them for completeness.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.Part.html'
-                               title='google_adsense1d4::Part'>Part</a></td>
-                        <td class='docblock short'>
-                             <p>Identifies types which are only used as part of other types, which
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.Part.html'
+                                  title='google_adsense1d4::Part'>Part</a></td>
+                           <td class='docblock short'>
+                                <p>Identifies types which are only used as part of other types, which
 usually are carrying the <code>Resource</code> trait.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.ReadSeek.html'
-                               title='google_adsense1d4::ReadSeek'>ReadSeek</a></td>
-                        <td class='docblock short'>
-                             <p>A utility to specify reader types which provide seeking capabilities too</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.RequestValue.html'
-                               title='google_adsense1d4::RequestValue'>RequestValue</a></td>
-                        <td class='docblock short'>
-                             <p>Identifies types which are used in API requests.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.Resource.html'
-                               title='google_adsense1d4::Resource'>Resource</a></td>
-                        <td class='docblock short'>
-                             <p>Identifies types which can be inserted and deleted.
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.ReadSeek.html'
+                                  title='google_adsense1d4::ReadSeek'>ReadSeek</a></td>
+                           <td class='docblock short'>
+                                <p>A utility to specify reader types which provide seeking capabilities too</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.RequestValue.html'
+                                  title='google_adsense1d4::RequestValue'>RequestValue</a></td>
+                           <td class='docblock short'>
+                                <p>Identifies types which are used in API requests.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.Resource.html'
+                                  title='google_adsense1d4::Resource'>Resource</a></td>
+                           <td class='docblock short'>
+                                <p>Identifies types which can be inserted and deleted.
 Types with this trait are most commonly used by clients of this API.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.ResponseResult.html'
-                               title='google_adsense1d4::ResponseResult'>ResponseResult</a></td>
-                        <td class='docblock short'>
-                             <p>Identifies types which are used in API responses.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.ToParts.html'
-                               title='google_adsense1d4::ToParts'>ToParts</a></td>
-                        <td class='docblock short'>
-                             <p>A trait for all types that can convert themselves into a <em>parts</em> string</p>
-
-                        </td>
-                    </tr>
-                </table><h2 id='functions' class='section-header'><a href="#functions">Functions</a></h2>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.ResponseResult.html'
+                                  title='google_adsense1d4::ResponseResult'>ResponseResult</a></td>
+                           <td class='docblock short'>
+                                <p>Identifies types which are used in API responses.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.ToParts.html'
+                                  title='google_adsense1d4::ToParts'>ToParts</a></td>
+                           <td class='docblock short'>
+                                <p>A trait for all types that can convert themselves into a <em>parts</em> string</p>
+                           </td>
+                       </tr></table><h2 id='functions' class='section-header'><a href="#functions">Functions</a></h2>
 <table>
-                    <tr class=' module-item'>
-                        <td><a class='fn' href='fn.remove_json_null_values.html'
-                               title='google_adsense1d4::remove_json_null_values'>remove_json_null_values</a></td>
-                        <td class='docblock short'>
-                             
-                        </td>
-                    </tr>
-                </table><h2 id='types' class='section-header'><a href="#types">Type Definitions</a></h2>
+                       <tr class=' module-item'>
+                           <td><a class='fn' href='fn.remove_json_null_values.html'
+                                  title='google_adsense1d4::remove_json_null_values'>remove_json_null_values</a></td>
+                           <td class='docblock short'>
+                                
+                           </td>
+                       </tr></table><h2 id='types' class='section-header'><a href="#types">Type Definitions</a></h2>
 <table>
-                    <tr class=' module-item'>
-                        <td><a class='type' href='type.Result.html'
-                               title='google_adsense1d4::Result'>Result</a></td>
-                        <td class='docblock short'>
-                             <p>A universal result type used as return for all calls.</p>
-
-                        </td>
-                    </tr>
-                </table></section>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Result.html'
+                                  title='google_adsense1d4::Result'>Result</a></td>
+                           <td class='docblock short'>
+                                <p>A universal result type used as return for all calls.</p>
+                           </td>
+                       </tr></table></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
@@ -1227,6 +1035,8 @@ Types with this trait are most commonly used by clients of this API.</p>
                     <dd>Move down in search results</dd>
                     <dt>&#9166;</dt>
                     <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
                 </dl>
             </div>
 
@@ -1247,7 +1057,7 @@ Types with this trait are most commonly used by clients of this API.</p>
 
                 <p>
                     Search functions by type signature (e.g.
-                    <code>vec -> usize</code>)
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
                 </p>
             </div>
         </div>

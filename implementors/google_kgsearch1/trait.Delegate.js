@@ -1,5 +1,5 @@
 (function() {var implementors = {};
-implementors['google_kgsearch1'] = [];
+implementors["google_kgsearch1"] = [];
 
             if (window.register_implementors) {
                 window.register_implementors(implementors);

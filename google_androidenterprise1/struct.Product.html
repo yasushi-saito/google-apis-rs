@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
+    
 
     
     
@@ -43,11 +44,12 @@
 
     <section id='main' class="content struct">
 <h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_androidenterprise1</a>::<wbr><a class='struct' href=''>Product</a></span><span class='out-of-band'><span id='render-detail'>
-            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
-                [<span class='inner'>&#x2212;</span>]
-            </a>
-        </span><a id='src-2003' class='srclink' href='../src/google_androidenterprise1///Users/byron/dev/rs/google-apis-rs/target/debug/build/google-androidenterprise1-427ceb31373d3a08/out/lib.rs.html#3362-3385' title='goto source code'>[src]</a></span></h1>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-2109' class='srclink' href='../src/google_androidenterprise1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-androidenterprise1-f72144d9f18eac2f/out/lib.rs.html#5537-5562' title='goto source code'>[src]</a></span></h1>
 <pre class='rust struct'>pub struct Product {
+    pub small_icon_url: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
     pub kind: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
     pub distribution_channel: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
     pub title: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
@@ -61,7 +63,7 @@
     pub product_id: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
 }</pre><div class='docblock'><p>A product represents an app in the Google Play Store that is available to at least some users in the enterprise. (Some apps are restricted to a single enterprise, and no information about them is made available outside that enterprise.)</p>
 
-<p>The information provided for each product (localized name, icon, link to the full Google Play details page) is intended to allow a basic representation of the product within an MDM user interface.</p>
+<p>The information provided for each product (localized name, icon, link to the full Google Play details page) is intended to allow a basic representation of the product within an EMM user interface.</p>
 
 <h1 id='activities' class='section-header'><a href='#activities'>Activities</a></h1>
 <p>This type is used in activities, which are methods you may call on this type or where this type is involved in. 
@@ -77,34 +79,43 @@ The list links the activity name, along with information about where it is used 
 </ul>
 </div><h2 class='fields'>Fields</h2>
 <table><tr class='stab '>
-                                  <td id='structfield.kind'><code>kind</code></td><td><div class='docblock'><p>Identifies what kind of resource this is. Value: the fixed string &quot;androidenterprise#product&quot;.</p>
+                             <td id='structfield.small_icon_url'><code>small_icon_url</code></td><td><div class='docblock'><p>A link to a smaller image that can be used as an icon for the product. This image is suitable for use at up to 128px x 128px.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.distribution_channel'><code>distribution_channel</code></td><td><div class='docblock'><p>How and to whom the package is made available. The value publicGoogleHosted means that the package is available through the Play Store and not restricted to a specific enterprise. The value privateGoogleHosted means that the package is a private app (restricted to an enterprise) but hosted by Google. The value privateSelfHosted means that the package is a private app (restricted to an enterprise) and is privately hosted.</p>
+                             <td id='structfield.kind'><code>kind</code></td><td><div class='docblock'><p>Identifies what kind of resource this is. Value: the fixed string &quot;androidenterprise#product&quot;.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.title'><code>title</code></td><td><div class='docblock'><p>The name of the product.</p>
+                             <td id='structfield.distribution_channel'><code>distribution_channel</code></td><td><div class='docblock'><p>How and to whom the package is made available. The value publicGoogleHosted means that the package is available through the Play Store and not restricted to a specific enterprise. The value privateGoogleHosted means that the package is a private app (restricted to an enterprise) but hosted by Google. The value privateSelfHosted means that the package is a private app (restricted to an enterprise) and is privately hosted.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.work_details_url'><code>work_details_url</code></td><td><div class='docblock'><p>A link to the Google Play for Work details page for the product, for use by an Enterprise administrator.</p>
+                             <td id='structfield.title'><code>title</code></td><td><div class='docblock'><p>The name of the product.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.app_version'><code>app_version</code></td><td><div class='docblock'><p>App versions currently available for this product. The returned list contains only public versions. Alpha and beta versions are not included.</p>
+                             <td id='structfield.work_details_url'><code>work_details_url</code></td><td><div class='docblock'><p>A link to the Google Play for Work details page for the product, for use by an Enterprise administrator.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.product_pricing'><code>product_pricing</code></td><td><div class='docblock'><p>Whether this product is free, free with in-app purchases, or paid.</p>
+                             <td id='structfield.app_version'><code>app_version</code></td><td><div class='docblock'><p>App versions currently available for this product. The returned list contains only public versions. Alpha and beta versions are not included.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.icon_url'><code>icon_url</code></td><td><div class='docblock'><p>A link to an image that can be used as an icon for the product.</p>
+                             <td id='structfield.product_pricing'><code>product_pricing</code></td><td><div class='docblock'><p>Whether this product is free, free with in-app purchases, or paid.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.author_name'><code>author_name</code></td><td><div class='docblock'><p>The name of the author of the product (e.g. the app developer).</p>
+                             <td id='structfield.icon_url'><code>icon_url</code></td><td><div class='docblock'><p>A link to an image that can be used as an icon for the product. This image is suitable for use at up to 512px x 512px.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.requires_container_app'><code>requires_container_app</code></td><td><div class='docblock'><p>Whether this app can only be installed on devices using the Android for Work container app.</p>
+                             <td id='structfield.author_name'><code>author_name</code></td><td><div class='docblock'><p>The name of the author of the product (e.g. the app developer).</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.details_url'><code>details_url</code></td><td><div class='docblock'><p>A link to the (consumer) Google Play details page for the product.</p>
+                             <td id='structfield.requires_container_app'><code>requires_container_app</code></td><td><div class='docblock'><p>Whether this app can only be installed on devices using the Android for Work container app.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.product_id'><code>product_id</code></td><td><div class='docblock'><p>A string of the form app:<package name>. For example, app:com.google.android.gm represents the Gmail app.</p>
-</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl <a class='trait' href='../serde/de/trait.Deserialize.html' title='serde::de::Deserialize'>Deserialize</a> for <a class='struct' href='../google_androidenterprise1/struct.Product.html' title='google_androidenterprise1::Product'>Product</a></code></h3><div class='impl-items'><h4 id='method.deserialize' class='method'><code>fn <a href='../serde/de/trait.Deserialize.html#method.deserialize' class='fnname'>deserialize</a>&lt;__D&gt;(deserializer: &amp;mut __D) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../google_androidenterprise1/struct.Product.html' title='google_androidenterprise1::Product'>Product</a>, __D::Error&gt; <span class='where'>where __D: <a class='trait' href='../serde/de/trait.Deserializer.html' title='serde::de::Deserializer'>Deserializer</a></span></code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='../serde/ser/trait.Serialize.html' title='serde::ser::Serialize'>Serialize</a> for <a class='struct' href='../google_androidenterprise1/struct.Product.html' title='google_androidenterprise1::Product'>Product</a></code></h3><div class='impl-items'><h4 id='method.serialize' class='method'><code>fn <a href='../serde/ser/trait.Serialize.html#method.serialize' class='fnname'>serialize</a>&lt;__S&gt;(&amp;self, serializer: &amp;mut __S) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, __S::Error&gt; <span class='where'>where __S: <a class='trait' href='../serde/ser/trait.Serializer.html' title='serde::ser::Serializer'>Serializer</a></span></code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='../google_androidenterprise1/trait.Resource.html' title='google_androidenterprise1::Resource'>Resource</a> for <a class='struct' href='../google_androidenterprise1/struct.Product.html' title='google_androidenterprise1::Product'>Product</a></code></h3><div class='impl-items'></div><h3 class='impl'><code>impl <a class='trait' href='../google_androidenterprise1/trait.ResponseResult.html' title='google_androidenterprise1::ResponseResult'>ResponseResult</a> for <a class='struct' href='../google_androidenterprise1/struct.Product.html' title='google_androidenterprise1::Product'>Product</a></code></h3><div class='impl-items'></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_androidenterprise1/struct.Product.html' title='google_androidenterprise1::Product'>Product</a></code></h3><div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#method.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_androidenterprise1/struct.Product.html' title='google_androidenterprise1::Product'>Product</a></code></h3><div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_androidenterprise1/struct.Product.html' title='google_androidenterprise1::Product'>Product</a></code></h4>
-<h4 id='method.clone_from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_androidenterprise1/struct.Product.html' title='google_androidenterprise1::Product'>Product</a></code></h3><div class='impl-items'><h4 id='method.default' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#method.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_androidenterprise1/struct.Product.html' title='google_androidenterprise1::Product'>Product</a></code></h4>
-</div></section>
+                             <td id='structfield.details_url'><code>details_url</code></td><td><div class='docblock'><p>A link to the (consumer) Google Play details page for the product.</p>
+</div></td></tr><tr class='stab '>
+                             <td id='structfield.product_id'><code>product_id</code></td><td><div class='docblock'><p>A string of the form app:<package name>. For example, app:com.google.android.gm represents the Gmail app.</p>
+</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='../google_androidenterprise1/trait.Resource.html' title='google_androidenterprise1::Resource'>Resource</a> for <a class='struct' href='../google_androidenterprise1/struct.Product.html' title='google_androidenterprise1::Product'>Product</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-2447' class='srclink' href='../src/google_androidenterprise1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-androidenterprise1-f72144d9f18eac2f/out/lib.rs.html#6289' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='../google_androidenterprise1/trait.ResponseResult.html' title='google_androidenterprise1::ResponseResult'>ResponseResult</a> for <a class='struct' href='../google_androidenterprise1/struct.Product.html' title='google_androidenterprise1::Product'>Product</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-2448' class='srclink' href='../src/google_androidenterprise1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-androidenterprise1-f72144d9f18eac2f/out/lib.rs.html#6290' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_androidenterprise1/struct.Product.html' title='google_androidenterprise1::Product'>Product</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-2122' class='srclink' href='../src/google_androidenterprise1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-androidenterprise1-f72144d9f18eac2f/out/lib.rs.html#5536' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.default' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_androidenterprise1/struct.Product.html' title='google_androidenterprise1::Product'>Product</a></code></h4>
+<div class='docblock'><p>Returns the &quot;default value&quot; for a type. <a href="https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_androidenterprise1/struct.Product.html' title='google_androidenterprise1::Product'>Product</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-2124' class='srclink' href='../src/google_androidenterprise1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-androidenterprise1-f72144d9f18eac2f/out/lib.rs.html#5536' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_androidenterprise1/struct.Product.html' title='google_androidenterprise1::Product'>Product</a></code></h4>
+<div class='docblock'><p>Returns a copy of the value. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone">Read more</a></p>
+</div><h4 id='method.clone_from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></h4>
+<div class='docblock'><p>Performs copy-assignment from <code>source</code>. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_androidenterprise1/struct.Product.html' title='google_androidenterprise1::Product'>Product</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-2139' class='srclink' href='../src/google_androidenterprise1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-androidenterprise1-f72144d9f18eac2f/out/lib.rs.html#5536' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
+<div class='docblock'><p>Formats the value using the given formatter.</p>
+</div></div></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
@@ -127,6 +138,8 @@ The list links the activity name, along with information about where it is used 
                     <dd>Move down in search results</dd>
                     <dt>&#9166;</dt>
                     <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
                 </dl>
             </div>
 
@@ -147,7 +160,7 @@ The list links the activity name, along with information about where it is used 
 
                 <p>
                     Search functions by type signature (e.g.
-                    <code>vec -> usize</code>)
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
                 </p>
             </div>
         </div>

@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
+    
 
     
     
@@ -43,11 +44,11 @@
 
     <section id='main' class="content mod">
 <h1 class='fqn'><span class='in-band'>Crate <a class='mod' href=''>google_clouduseraccountsvm_beta</a></span><span class='out-of-band'><span id='render-detail'>
-            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
-                [<span class='inner'>&#x2212;</span>]
-            </a>
-        </span><a id='src-0' class='srclink' href='../src/google_clouduseraccountsvm_beta/lib.rs.html#5-197' title='goto source code'>[src]</a></span></h1>
-<div class='docblock'><p>This documentation was generated from <em>Cloud User Accounts</em> crate version <em>0.1.11+20150924</em>, where <em>20150924</em> is the exact revision of the <em>clouduseraccounts:vm_beta</em> schema built by the <a href="http://www.makotemplates.org/">mako</a> code generator <em>v0.1.11</em>.</p>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-0' class='srclink' href='../src/google_clouduseraccountsvm_beta/src/lib.rs.html#5-203' title='goto source code'>[src]</a></span></h1>
+<div class='docblock'><p>This documentation was generated from <em>Cloud User Accounts</em> crate version <em>0.1.14+20160316</em>, where <em>20160316</em> is the exact revision of the <em>clouduseraccounts:vm_beta</em> schema built by the <a href="http://www.makotemplates.org/">mako</a> code generator <em>v0.1.14</em>.</p>
 
 <p>Everything else about the <em>Cloud User Accounts</em> <em>vm_beta</em> API can be found at the
 <a href="https://cloud.google.com/compute/docs/access/user-accounts/api/latest/">official documentation site</a>.
@@ -114,10 +115,12 @@ allow access to individual <a href="trait.CallBuilder.html"><em>Call Builders</e
 <p>All <em>structures</em> are marked with applicable traits to further categorize them and ease browsing.</p>
 
 <p>Generally speaking, you can invoke <em>Activities</em> like this:</p>
+
 <pre class='rust rust-example-rendered'>
 <span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>resource</span>().<span class='ident'>activity</span>(...).<span class='ident'>doit</span>()</pre>
 
 <p>Or specifically ...</p>
+
 <pre class='rust rust-example-rendered'>
 <span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>groups</span>().<span class='ident'>delete</span>(...).<span class='ident'>doit</span>()
 <span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>users</span>().<span class='ident'>add_public_key</span>(...).<span class='ident'>doit</span>()
@@ -142,7 +145,8 @@ The <code>doit()</code> method performs the actual communication with the server
 google-clouduseraccountsvm_beta = &quot;*&quot;
 </code></pre>
 
-<h2 id='a-complete-example' class='section-header'><a href='#a-complete-example'>A complete example</a></h2><pre class='rust rust-example-rendered'>
+<h2 id='a-complete-example' class='section-header'><a href='#a-complete-example'>A complete example</a></h2>
+<pre class='rust rust-example-rendered'>
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>hyper</span>;
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>yup_oauth2</span> <span class='kw'>as</span> <span class='ident'>oauth2</span>;
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>google_clouduseraccountsvm_beta</span> <span class='kw'>as</span> <span class='ident'>clouduseraccountsvm_beta</span>;
@@ -239,565 +243,448 @@ These will always take a single argument, for which the following statements are
 <p>Arguments will always be copied or cloned into the builder, to make them independent of their original life times.</p>
 </div><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
 <table>
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.AuthorizedKeysView.html'
-                               title='google_clouduseraccountsvm_beta::AuthorizedKeysView'>AuthorizedKeysView</a></td>
-                        <td class='docblock short'>
-                             <p>A list of authorized public keys for a user account.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.CloudUserAccounts.html'
-                               title='google_clouduseraccountsvm_beta::CloudUserAccounts'>CloudUserAccounts</a></td>
-                        <td class='docblock short'>
-                             <p>Central instance to access all CloudUserAccounts related resource activities</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.DefaultDelegate.html'
-                               title='google_clouduseraccountsvm_beta::DefaultDelegate'>DefaultDelegate</a></td>
-                        <td class='docblock short'>
-                             <p>A delegate with a conservative default implementation, which is used if no other delegate is
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AuthorizedKeysView.html'
+                                  title='google_clouduseraccountsvm_beta::AuthorizedKeysView'>AuthorizedKeysView</a></td>
+                           <td class='docblock short'>
+                                <p>A list of authorized public keys for a user account.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CloudUserAccounts.html'
+                                  title='google_clouduseraccountsvm_beta::CloudUserAccounts'>CloudUserAccounts</a></td>
+                           <td class='docblock short'>
+                                <p>Central instance to access all CloudUserAccounts related resource activities</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DefaultDelegate.html'
+                                  title='google_clouduseraccountsvm_beta::DefaultDelegate'>DefaultDelegate</a></td>
+                           <td class='docblock short'>
+                                <p>A delegate with a conservative default implementation, which is used if no other delegate is
 set.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.ErrorResponse.html'
-                               title='google_clouduseraccountsvm_beta::ErrorResponse'>ErrorResponse</a></td>
-                        <td class='docblock short'>
-                             <p>A utility to represent detailed errors we might see in case there are BadRequests.
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ErrorResponse.html'
+                                  title='google_clouduseraccountsvm_beta::ErrorResponse'>ErrorResponse</a></td>
+                           <td class='docblock short'>
+                                <p>A utility to represent detailed errors we might see in case there are BadRequests.
 The latter happen if the sent parameters or request structures are unsound</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.GlobalAccountsOperationDeleteCall.html'
-                               title='google_clouduseraccountsvm_beta::GlobalAccountsOperationDeleteCall'>GlobalAccountsOperationDeleteCall</a></td>
-                        <td class='docblock short'>
-                             <p>Deletes the specified operation resource.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.GlobalAccountsOperationGetCall.html'
-                               title='google_clouduseraccountsvm_beta::GlobalAccountsOperationGetCall'>GlobalAccountsOperationGetCall</a></td>
-                        <td class='docblock short'>
-                             <p>Retrieves the specified operation resource.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.GlobalAccountsOperationListCall.html'
-                               title='google_clouduseraccountsvm_beta::GlobalAccountsOperationListCall'>GlobalAccountsOperationListCall</a></td>
-                        <td class='docblock short'>
-                             <p>Retrieves the list of operation resources contained within the specified project.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.GlobalAccountsOperationMethods.html'
-                               title='google_clouduseraccountsvm_beta::GlobalAccountsOperationMethods'>GlobalAccountsOperationMethods</a></td>
-                        <td class='docblock short'>
-                             <p>A builder providing access to all methods supported on <em>globalAccountsOperation</em> resources.
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GlobalAccountsOperationDeleteCall.html'
+                                  title='google_clouduseraccountsvm_beta::GlobalAccountsOperationDeleteCall'>GlobalAccountsOperationDeleteCall</a></td>
+                           <td class='docblock short'>
+                                <p>Deletes the specified operation resource.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GlobalAccountsOperationGetCall.html'
+                                  title='google_clouduseraccountsvm_beta::GlobalAccountsOperationGetCall'>GlobalAccountsOperationGetCall</a></td>
+                           <td class='docblock short'>
+                                <p>Retrieves the specified operation resource.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GlobalAccountsOperationListCall.html'
+                                  title='google_clouduseraccountsvm_beta::GlobalAccountsOperationListCall'>GlobalAccountsOperationListCall</a></td>
+                           <td class='docblock short'>
+                                <p>Retrieves the list of operation resources contained within the specified project.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GlobalAccountsOperationMethods.html'
+                                  title='google_clouduseraccountsvm_beta::GlobalAccountsOperationMethods'>GlobalAccountsOperationMethods</a></td>
+                           <td class='docblock short'>
+                                <p>A builder providing access to all methods supported on <em>globalAccountsOperation</em> resources.
 It is not used directly, but through the <code>CloudUserAccounts</code> hub.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.Group.html'
-                               title='google_clouduseraccountsvm_beta::Group'>Group</a></td>
-                        <td class='docblock short'>
-                             <p>A Group resource.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.GroupAddMemberCall.html'
-                               title='google_clouduseraccountsvm_beta::GroupAddMemberCall'>GroupAddMemberCall</a></td>
-                        <td class='docblock short'>
-                             <p>Adds users to the specified group.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.GroupDeleteCall.html'
-                               title='google_clouduseraccountsvm_beta::GroupDeleteCall'>GroupDeleteCall</a></td>
-                        <td class='docblock short'>
-                             <p>Deletes the specified Group resource.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.GroupGetCall.html'
-                               title='google_clouduseraccountsvm_beta::GroupGetCall'>GroupGetCall</a></td>
-                        <td class='docblock short'>
-                             <p>Returns the specified Group resource.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.GroupInsertCall.html'
-                               title='google_clouduseraccountsvm_beta::GroupInsertCall'>GroupInsertCall</a></td>
-                        <td class='docblock short'>
-                             <p>Creates a Group resource in the specified project using the data included in the request.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.GroupList.html'
-                               title='google_clouduseraccountsvm_beta::GroupList'>GroupList</a></td>
-                        <td class='docblock short'>
-                             <p>There is no detailed description.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.GroupListCall.html'
-                               title='google_clouduseraccountsvm_beta::GroupListCall'>GroupListCall</a></td>
-                        <td class='docblock short'>
-                             <p>Retrieves the list of groups contained within the specified project.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.GroupMethods.html'
-                               title='google_clouduseraccountsvm_beta::GroupMethods'>GroupMethods</a></td>
-                        <td class='docblock short'>
-                             <p>A builder providing access to all methods supported on <em>group</em> resources.
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Group.html'
+                                  title='google_clouduseraccountsvm_beta::Group'>Group</a></td>
+                           <td class='docblock short'>
+                                <p>A Group resource.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GroupAddMemberCall.html'
+                                  title='google_clouduseraccountsvm_beta::GroupAddMemberCall'>GroupAddMemberCall</a></td>
+                           <td class='docblock short'>
+                                <p>Adds users to the specified group.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GroupDeleteCall.html'
+                                  title='google_clouduseraccountsvm_beta::GroupDeleteCall'>GroupDeleteCall</a></td>
+                           <td class='docblock short'>
+                                <p>Deletes the specified Group resource.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GroupGetCall.html'
+                                  title='google_clouduseraccountsvm_beta::GroupGetCall'>GroupGetCall</a></td>
+                           <td class='docblock short'>
+                                <p>Returns the specified Group resource.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GroupInsertCall.html'
+                                  title='google_clouduseraccountsvm_beta::GroupInsertCall'>GroupInsertCall</a></td>
+                           <td class='docblock short'>
+                                <p>Creates a Group resource in the specified project using the data included in the request.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GroupList.html'
+                                  title='google_clouduseraccountsvm_beta::GroupList'>GroupList</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GroupListCall.html'
+                                  title='google_clouduseraccountsvm_beta::GroupListCall'>GroupListCall</a></td>
+                           <td class='docblock short'>
+                                <p>Retrieves the list of groups contained within the specified project.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GroupMethods.html'
+                                  title='google_clouduseraccountsvm_beta::GroupMethods'>GroupMethods</a></td>
+                           <td class='docblock short'>
+                                <p>A builder providing access to all methods supported on <em>group</em> resources.
 It is not used directly, but through the <code>CloudUserAccounts</code> hub.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.GroupRemoveMemberCall.html'
-                               title='google_clouduseraccountsvm_beta::GroupRemoveMemberCall'>GroupRemoveMemberCall</a></td>
-                        <td class='docblock short'>
-                             <p>Removes users from the specified group.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.GroupsAddMemberRequest.html'
-                               title='google_clouduseraccountsvm_beta::GroupsAddMemberRequest'>GroupsAddMemberRequest</a></td>
-                        <td class='docblock short'>
-                             <p>There is no detailed description.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.GroupsRemoveMemberRequest.html'
-                               title='google_clouduseraccountsvm_beta::GroupsRemoveMemberRequest'>GroupsRemoveMemberRequest</a></td>
-                        <td class='docblock short'>
-                             <p>There is no detailed description.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.LinuxAccountViews.html'
-                               title='google_clouduseraccountsvm_beta::LinuxAccountViews'>LinuxAccountViews</a></td>
-                        <td class='docblock short'>
-                             <p>A list of all Linux accounts for this project. This API is only used by Compute Engine virtual machines to get information about user accounts for a project or instance. Linux resources are read-only views into users and groups managed by the Compute Engine Accounts API.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.LinuxGetAuthorizedKeysViewCall.html'
-                               title='google_clouduseraccountsvm_beta::LinuxGetAuthorizedKeysViewCall'>LinuxGetAuthorizedKeysViewCall</a></td>
-                        <td class='docblock short'>
-                             <p>Returns a list of authorized public keys for a specific user account.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.LinuxGetAuthorizedKeysViewResponse.html'
-                               title='google_clouduseraccountsvm_beta::LinuxGetAuthorizedKeysViewResponse'>LinuxGetAuthorizedKeysViewResponse</a></td>
-                        <td class='docblock short'>
-                             <p>There is no detailed description.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.LinuxGetLinuxAccountViewCall.html'
-                               title='google_clouduseraccountsvm_beta::LinuxGetLinuxAccountViewCall'>LinuxGetLinuxAccountViewCall</a></td>
-                        <td class='docblock short'>
-                             <p>Retrieves a list of user accounts for an instance within a specific project.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.LinuxGetLinuxAccountViewsResponse.html'
-                               title='google_clouduseraccountsvm_beta::LinuxGetLinuxAccountViewsResponse'>LinuxGetLinuxAccountViewsResponse</a></td>
-                        <td class='docblock short'>
-                             <p>There is no detailed description.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.LinuxGroupView.html'
-                               title='google_clouduseraccountsvm_beta::LinuxGroupView'>LinuxGroupView</a></td>
-                        <td class='docblock short'>
-                             <p>A detailed view of a Linux group.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.LinuxMethods.html'
-                               title='google_clouduseraccountsvm_beta::LinuxMethods'>LinuxMethods</a></td>
-                        <td class='docblock short'>
-                             <p>A builder providing access to all methods supported on <em>linux</em> resources.
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GroupRemoveMemberCall.html'
+                                  title='google_clouduseraccountsvm_beta::GroupRemoveMemberCall'>GroupRemoveMemberCall</a></td>
+                           <td class='docblock short'>
+                                <p>Removes users from the specified group.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GroupsAddMemberRequest.html'
+                                  title='google_clouduseraccountsvm_beta::GroupsAddMemberRequest'>GroupsAddMemberRequest</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GroupsRemoveMemberRequest.html'
+                                  title='google_clouduseraccountsvm_beta::GroupsRemoveMemberRequest'>GroupsRemoveMemberRequest</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.LinuxAccountViews.html'
+                                  title='google_clouduseraccountsvm_beta::LinuxAccountViews'>LinuxAccountViews</a></td>
+                           <td class='docblock short'>
+                                <p>A list of all Linux accounts for this project. This API is only used by Compute Engine virtual machines to get information about user accounts for a project or instance. Linux resources are read-only views into users and groups managed by the Compute Engine Accounts API.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.LinuxGetAuthorizedKeysViewCall.html'
+                                  title='google_clouduseraccountsvm_beta::LinuxGetAuthorizedKeysViewCall'>LinuxGetAuthorizedKeysViewCall</a></td>
+                           <td class='docblock short'>
+                                <p>Returns a list of authorized public keys for a specific user account.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.LinuxGetAuthorizedKeysViewResponse.html'
+                                  title='google_clouduseraccountsvm_beta::LinuxGetAuthorizedKeysViewResponse'>LinuxGetAuthorizedKeysViewResponse</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.LinuxGetLinuxAccountViewCall.html'
+                                  title='google_clouduseraccountsvm_beta::LinuxGetLinuxAccountViewCall'>LinuxGetLinuxAccountViewCall</a></td>
+                           <td class='docblock short'>
+                                <p>Retrieves a list of user accounts for an instance within a specific project.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.LinuxGetLinuxAccountViewsResponse.html'
+                                  title='google_clouduseraccountsvm_beta::LinuxGetLinuxAccountViewsResponse'>LinuxGetLinuxAccountViewsResponse</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.LinuxGroupView.html'
+                                  title='google_clouduseraccountsvm_beta::LinuxGroupView'>LinuxGroupView</a></td>
+                           <td class='docblock short'>
+                                <p>A detailed view of a Linux group.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.LinuxMethods.html'
+                                  title='google_clouduseraccountsvm_beta::LinuxMethods'>LinuxMethods</a></td>
+                           <td class='docblock short'>
+                                <p>A builder providing access to all methods supported on <em>linux</em> resources.
 It is not used directly, but through the <code>CloudUserAccounts</code> hub.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.LinuxUserView.html'
-                               title='google_clouduseraccountsvm_beta::LinuxUserView'>LinuxUserView</a></td>
-                        <td class='docblock short'>
-                             <p>A detailed view of a Linux user account.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.MethodInfo.html'
-                               title='google_clouduseraccountsvm_beta::MethodInfo'>MethodInfo</a></td>
-                        <td class='docblock short'>
-                             <p>Contains information about an API request.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.MultiPartReader.html'
-                               title='google_clouduseraccountsvm_beta::MultiPartReader'>MultiPartReader</a></td>
-                        <td class='docblock short'>
-                             <p>Provides a <code>Read</code> interface that converts multiple parts into the protocol
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.LinuxUserView.html'
+                                  title='google_clouduseraccountsvm_beta::LinuxUserView'>LinuxUserView</a></td>
+                           <td class='docblock short'>
+                                <p>A detailed view of a Linux user account.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.MethodInfo.html'
+                                  title='google_clouduseraccountsvm_beta::MethodInfo'>MethodInfo</a></td>
+                           <td class='docblock short'>
+                                <p>Contains information about an API request.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.MultiPartReader.html'
+                                  title='google_clouduseraccountsvm_beta::MultiPartReader'>MultiPartReader</a></td>
+                           <td class='docblock short'>
+                                <p>Provides a <code>Read</code> interface that converts multiple parts into the protocol
 identified by <a href="https://tools.ietf.org/html/rfc2387">RFC2387</a>.
 <strong>Note</strong>: This implementation is just as rich as it needs to be to perform uploads
 to google APIs, and might not be a fully-featured implementation.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.Operation.html'
-                               title='google_clouduseraccountsvm_beta::Operation'>Operation</a></td>
-                        <td class='docblock short'>
-                             <p>An Operation resource, used to manage asynchronous API requests.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.OperationError.html'
-                               title='google_clouduseraccountsvm_beta::OperationError'>OperationError</a></td>
-                        <td class='docblock short'>
-                             <p>[Output Only] If errors are generated during processing of the operation, this field will be populated.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.OperationErrorErrors.html'
-                               title='google_clouduseraccountsvm_beta::OperationErrorErrors'>OperationErrorErrors</a></td>
-                        <td class='docblock short'>
-                             <p>[Output Only] The array of errors encountered while processing this operation.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.OperationList.html'
-                               title='google_clouduseraccountsvm_beta::OperationList'>OperationList</a></td>
-                        <td class='docblock short'>
-                             <p>Contains a list of Operation resources.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.OperationWarnings.html'
-                               title='google_clouduseraccountsvm_beta::OperationWarnings'>OperationWarnings</a></td>
-                        <td class='docblock short'>
-                             <p>[Output Only] If warning messages are generated during processing of the operation, this field will be populated.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.OperationWarningsData.html'
-                               title='google_clouduseraccountsvm_beta::OperationWarningsData'>OperationWarningsData</a></td>
-                        <td class='docblock short'>
-                             <p>[Output Only] Metadata for this warning in key: value format.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.PublicKey.html'
-                               title='google_clouduseraccountsvm_beta::PublicKey'>PublicKey</a></td>
-                        <td class='docblock short'>
-                             <p>A public key for authenticating to guests.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.User.html'
-                               title='google_clouduseraccountsvm_beta::User'>User</a></td>
-                        <td class='docblock short'>
-                             <p>A User resource.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.UserAddPublicKeyCall.html'
-                               title='google_clouduseraccountsvm_beta::UserAddPublicKeyCall'>UserAddPublicKeyCall</a></td>
-                        <td class='docblock short'>
-                             <p>Adds a public key to the specified User resource with the data included in the request.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.UserDeleteCall.html'
-                               title='google_clouduseraccountsvm_beta::UserDeleteCall'>UserDeleteCall</a></td>
-                        <td class='docblock short'>
-                             <p>Deletes the specified User resource.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.UserGetCall.html'
-                               title='google_clouduseraccountsvm_beta::UserGetCall'>UserGetCall</a></td>
-                        <td class='docblock short'>
-                             <p>Returns the specified User resource.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.UserInsertCall.html'
-                               title='google_clouduseraccountsvm_beta::UserInsertCall'>UserInsertCall</a></td>
-                        <td class='docblock short'>
-                             <p>Creates a User resource in the specified project using the data included in the request.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.UserList.html'
-                               title='google_clouduseraccountsvm_beta::UserList'>UserList</a></td>
-                        <td class='docblock short'>
-                             <p>There is no detailed description.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.UserListCall.html'
-                               title='google_clouduseraccountsvm_beta::UserListCall'>UserListCall</a></td>
-                        <td class='docblock short'>
-                             <p>Retrieves a list of users contained within the specified project.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.UserMethods.html'
-                               title='google_clouduseraccountsvm_beta::UserMethods'>UserMethods</a></td>
-                        <td class='docblock short'>
-                             <p>A builder providing access to all methods supported on <em>user</em> resources.
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Operation.html'
+                                  title='google_clouduseraccountsvm_beta::Operation'>Operation</a></td>
+                           <td class='docblock short'>
+                                <p>An Operation resource, used to manage asynchronous API requests.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.OperationError.html'
+                                  title='google_clouduseraccountsvm_beta::OperationError'>OperationError</a></td>
+                           <td class='docblock short'>
+                                <p>[Output Only] If errors are generated during processing of the operation, this field will be populated.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.OperationErrorErrors.html'
+                                  title='google_clouduseraccountsvm_beta::OperationErrorErrors'>OperationErrorErrors</a></td>
+                           <td class='docblock short'>
+                                <p>[Output Only] The array of errors encountered while processing this operation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.OperationList.html'
+                                  title='google_clouduseraccountsvm_beta::OperationList'>OperationList</a></td>
+                           <td class='docblock short'>
+                                <p>Contains a list of Operation resources.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.OperationWarnings.html'
+                                  title='google_clouduseraccountsvm_beta::OperationWarnings'>OperationWarnings</a></td>
+                           <td class='docblock short'>
+                                <p>[Output Only] If warning messages are generated during processing of the operation, this field will be populated.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.OperationWarningsData.html'
+                                  title='google_clouduseraccountsvm_beta::OperationWarningsData'>OperationWarningsData</a></td>
+                           <td class='docblock short'>
+                                <p>[Output Only] Metadata about this warning in key: value format. For example:
+&quot;data&quot;: [ { &quot;key&quot;: &quot;scope&quot;, &quot;value&quot;: &quot;zones/us-east1-d&quot; }</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PublicKey.html'
+                                  title='google_clouduseraccountsvm_beta::PublicKey'>PublicKey</a></td>
+                           <td class='docblock short'>
+                                <p>A public key for authenticating to guests.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.User.html'
+                                  title='google_clouduseraccountsvm_beta::User'>User</a></td>
+                           <td class='docblock short'>
+                                <p>A User resource.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UserAddPublicKeyCall.html'
+                                  title='google_clouduseraccountsvm_beta::UserAddPublicKeyCall'>UserAddPublicKeyCall</a></td>
+                           <td class='docblock short'>
+                                <p>Adds a public key to the specified User resource with the data included in the request.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UserDeleteCall.html'
+                                  title='google_clouduseraccountsvm_beta::UserDeleteCall'>UserDeleteCall</a></td>
+                           <td class='docblock short'>
+                                <p>Deletes the specified User resource.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UserGetCall.html'
+                                  title='google_clouduseraccountsvm_beta::UserGetCall'>UserGetCall</a></td>
+                           <td class='docblock short'>
+                                <p>Returns the specified User resource.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UserInsertCall.html'
+                                  title='google_clouduseraccountsvm_beta::UserInsertCall'>UserInsertCall</a></td>
+                           <td class='docblock short'>
+                                <p>Creates a User resource in the specified project using the data included in the request.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UserList.html'
+                                  title='google_clouduseraccountsvm_beta::UserList'>UserList</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UserListCall.html'
+                                  title='google_clouduseraccountsvm_beta::UserListCall'>UserListCall</a></td>
+                           <td class='docblock short'>
+                                <p>Retrieves a list of users contained within the specified project.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UserMethods.html'
+                                  title='google_clouduseraccountsvm_beta::UserMethods'>UserMethods</a></td>
+                           <td class='docblock short'>
+                                <p>A builder providing access to all methods supported on <em>user</em> resources.
 It is not used directly, but through the <code>CloudUserAccounts</code> hub.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.UserRemovePublicKeyCall.html'
-                               title='google_clouduseraccountsvm_beta::UserRemovePublicKeyCall'>UserRemovePublicKeyCall</a></td>
-                        <td class='docblock short'>
-                             <p>Removes the specified public key from the user.</p>
-
-                        </td>
-                    </tr>
-                </table><h2 id='enums' class='section-header'><a href="#enums">Enums</a></h2>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UserRemovePublicKeyCall.html'
+                                  title='google_clouduseraccountsvm_beta::UserRemovePublicKeyCall'>UserRemovePublicKeyCall</a></td>
+                           <td class='docblock short'>
+                                <p>Removes the specified public key from the user.</p>
+                           </td>
+                       </tr></table><h2 id='enums' class='section-header'><a href="#enums">Enums</a></h2>
 <table>
-                    <tr class=' module-item'>
-                        <td><a class='enum' href='enum.Error.html'
-                               title='google_clouduseraccountsvm_beta::Error'>Error</a></td>
-                        <td class='docblock short'>
-                             
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='enum' href='enum.Scope.html'
-                               title='google_clouduseraccountsvm_beta::Scope'>Scope</a></td>
-                        <td class='docblock short'>
-                             <p>Identifies the an OAuth2 authorization scope.
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.Error.html'
+                                  title='google_clouduseraccountsvm_beta::Error'>Error</a></td>
+                           <td class='docblock short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.Scope.html'
+                                  title='google_clouduseraccountsvm_beta::Scope'>Scope</a></td>
+                           <td class='docblock short'>
+                                <p>Identifies the an OAuth2 authorization scope.
 A scope is needed when requesting an
 <a href="https://developers.google.com/youtube/v3/guides/authentication">authorization token</a>.</p>
-
-                        </td>
-                    </tr>
-                </table><h2 id='traits' class='section-header'><a href="#traits">Traits</a></h2>
+                           </td>
+                       </tr></table><h2 id='traits' class='section-header'><a href="#traits">Traits</a></h2>
 <table>
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.CallBuilder.html'
-                               title='google_clouduseraccountsvm_beta::CallBuilder'>CallBuilder</a></td>
-                        <td class='docblock short'>
-                             <p>Identifies types which represent builders for a particular resource method</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.Delegate.html'
-                               title='google_clouduseraccountsvm_beta::Delegate'>Delegate</a></td>
-                        <td class='docblock short'>
-                             <p>A trait specifying functionality to help controlling any request performed by the API.
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.CallBuilder.html'
+                                  title='google_clouduseraccountsvm_beta::CallBuilder'>CallBuilder</a></td>
+                           <td class='docblock short'>
+                                <p>Identifies types which represent builders for a particular resource method</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.Delegate.html'
+                                  title='google_clouduseraccountsvm_beta::Delegate'>Delegate</a></td>
+                           <td class='docblock short'>
+                                <p>A trait specifying functionality to help controlling any request performed by the API.
 The trait has a conservative default implementation.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.Hub.html'
-                               title='google_clouduseraccountsvm_beta::Hub'>Hub</a></td>
-                        <td class='docblock short'>
-                             <p>Identifies the Hub. There is only one per library, this trait is supposed
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.Hub.html'
+                                  title='google_clouduseraccountsvm_beta::Hub'>Hub</a></td>
+                           <td class='docblock short'>
+                                <p>Identifies the Hub. There is only one per library, this trait is supposed
 to make intended use more explicit.
 The hub allows to access all resource methods more easily.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.MethodsBuilder.html'
-                               title='google_clouduseraccountsvm_beta::MethodsBuilder'>MethodsBuilder</a></td>
-                        <td class='docblock short'>
-                             <p>Identifies types for building methods of a particular resource type</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.NestedType.html'
-                               title='google_clouduseraccountsvm_beta::NestedType'>NestedType</a></td>
-                        <td class='docblock short'>
-                             <p>Identifies types which are only used by other types internally.
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.MethodsBuilder.html'
+                                  title='google_clouduseraccountsvm_beta::MethodsBuilder'>MethodsBuilder</a></td>
+                           <td class='docblock short'>
+                                <p>Identifies types for building methods of a particular resource type</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.NestedType.html'
+                                  title='google_clouduseraccountsvm_beta::NestedType'>NestedType</a></td>
+                           <td class='docblock short'>
+                                <p>Identifies types which are only used by other types internally.
 They have no special meaning, this trait just marks them for completeness.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.Part.html'
-                               title='google_clouduseraccountsvm_beta::Part'>Part</a></td>
-                        <td class='docblock short'>
-                             <p>Identifies types which are only used as part of other types, which
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.Part.html'
+                                  title='google_clouduseraccountsvm_beta::Part'>Part</a></td>
+                           <td class='docblock short'>
+                                <p>Identifies types which are only used as part of other types, which
 usually are carrying the <code>Resource</code> trait.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.ReadSeek.html'
-                               title='google_clouduseraccountsvm_beta::ReadSeek'>ReadSeek</a></td>
-                        <td class='docblock short'>
-                             <p>A utility to specify reader types which provide seeking capabilities too</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.RequestValue.html'
-                               title='google_clouduseraccountsvm_beta::RequestValue'>RequestValue</a></td>
-                        <td class='docblock short'>
-                             <p>Identifies types which are used in API requests.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.Resource.html'
-                               title='google_clouduseraccountsvm_beta::Resource'>Resource</a></td>
-                        <td class='docblock short'>
-                             <p>Identifies types which can be inserted and deleted.
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.ReadSeek.html'
+                                  title='google_clouduseraccountsvm_beta::ReadSeek'>ReadSeek</a></td>
+                           <td class='docblock short'>
+                                <p>A utility to specify reader types which provide seeking capabilities too</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.RequestValue.html'
+                                  title='google_clouduseraccountsvm_beta::RequestValue'>RequestValue</a></td>
+                           <td class='docblock short'>
+                                <p>Identifies types which are used in API requests.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.Resource.html'
+                                  title='google_clouduseraccountsvm_beta::Resource'>Resource</a></td>
+                           <td class='docblock short'>
+                                <p>Identifies types which can be inserted and deleted.
 Types with this trait are most commonly used by clients of this API.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.ResponseResult.html'
-                               title='google_clouduseraccountsvm_beta::ResponseResult'>ResponseResult</a></td>
-                        <td class='docblock short'>
-                             <p>Identifies types which are used in API responses.</p>
-
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='trait' href='trait.ToParts.html'
-                               title='google_clouduseraccountsvm_beta::ToParts'>ToParts</a></td>
-                        <td class='docblock short'>
-                             <p>A trait for all types that can convert themselves into a <em>parts</em> string</p>
-
-                        </td>
-                    </tr>
-                </table><h2 id='functions' class='section-header'><a href="#functions">Functions</a></h2>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.ResponseResult.html'
+                                  title='google_clouduseraccountsvm_beta::ResponseResult'>ResponseResult</a></td>
+                           <td class='docblock short'>
+                                <p>Identifies types which are used in API responses.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.ToParts.html'
+                                  title='google_clouduseraccountsvm_beta::ToParts'>ToParts</a></td>
+                           <td class='docblock short'>
+                                <p>A trait for all types that can convert themselves into a <em>parts</em> string</p>
+                           </td>
+                       </tr></table><h2 id='functions' class='section-header'><a href="#functions">Functions</a></h2>
 <table>
-                    <tr class=' module-item'>
-                        <td><a class='fn' href='fn.remove_json_null_values.html'
-                               title='google_clouduseraccountsvm_beta::remove_json_null_values'>remove_json_null_values</a></td>
-                        <td class='docblock short'>
-                             
-                        </td>
-                    </tr>
-                </table><h2 id='types' class='section-header'><a href="#types">Type Definitions</a></h2>
+                       <tr class=' module-item'>
+                           <td><a class='fn' href='fn.remove_json_null_values.html'
+                                  title='google_clouduseraccountsvm_beta::remove_json_null_values'>remove_json_null_values</a></td>
+                           <td class='docblock short'>
+                                
+                           </td>
+                       </tr></table><h2 id='types' class='section-header'><a href="#types">Type Definitions</a></h2>
 <table>
-                    <tr class=' module-item'>
-                        <td><a class='type' href='type.Result.html'
-                               title='google_clouduseraccountsvm_beta::Result'>Result</a></td>
-                        <td class='docblock short'>
-                             <p>A universal result type used as return for all calls.</p>
-
-                        </td>
-                    </tr>
-                </table></section>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Result.html'
+                                  title='google_clouduseraccountsvm_beta::Result'>Result</a></td>
+                           <td class='docblock short'>
+                                <p>A universal result type used as return for all calls.</p>
+                           </td>
+                       </tr></table></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
@@ -820,6 +707,8 @@ Types with this trait are most commonly used by clients of this API.</p>
                     <dd>Move down in search results</dd>
                     <dt>&#9166;</dt>
                     <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
                 </dl>
             </div>
 
@@ -840,7 +729,7 @@ Types with this trait are most commonly used by clients of this API.</p>
 
                 <p>
                     Search functions by type signature (e.g.
-                    <code>vec -> usize</code>)
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
                 </p>
             </div>
         </div>

@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
+    
 
     
     
@@ -43,20 +44,20 @@
 
     <section id='main' class="content enum">
 <h1 class='fqn'><span class='in-band'>Enum <a href='index.html'>yup_oauth2</a>::<wbr><a class='enum' href=''>RefreshResult</a></span><span class='out-of-band'><span id='render-detail'>
-            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
-                [<span class='inner'>&#x2212;</span>]
-            </a>
-        </span><a id='src-402' class='srclink' href='../src/yup_oauth2///Users/byron/dev/rs/google-apis-rs/target/debug/build/yup-oauth2-6fcf5dac526993e1/out/lib.rs.html#829-839' title='goto source code'>[src]</a></span></h1>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-1226' class='srclink' href='../src/yup_oauth2/Users/byron/dev/rs/google-apis-rs/target/debug/build/yup-oauth2-c2f12acffde13c95/out/lib.rs.html#2828-2838' title='goto source code'>[src]</a></span></h1>
 <pre class='rust enum'>pub enum RefreshResult {
     Error(<a class='enum' href='../hyper/error/enum.Error.html' title='hyper::error::Error'>Error</a>),
     RefreshError(<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>, <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;),
     Success(<a class='struct' href='../yup_oauth2/struct.Token.html' title='yup_oauth2::Token'>Token</a>),
 }</pre><div class='docblock'><p>All possible outcomes of the refresh flow</p>
 </div><h2 class='variants'>Variants</h2>
-<table><tr><td id='variant.Error'><code>Error</code></td><td><div class='docblock'><p>Indicates connection failure</p>
-</div></td></tr><tr><td id='variant.RefreshError'><code>RefreshError</code></td><td><div class='docblock'><p>The server did not answer with a new token, providing the server message</p>
-</div></td></tr><tr><td id='variant.Success'><code>Success</code></td><td><div class='docblock'><p>The refresh operation finished successfully, providing a new <code>Token</code></p>
-</div></td></tr></table></section>
+<table class='variants_table'><tr><td id='variant.Error'><code>Error</code></td><td><div class='docblock'><p>Indicates connection failure</p>
+</div></td><td></td></tr><tr><td id='variant.RefreshError'><code>RefreshError</code></td><td><div class='docblock'><p>The server did not answer with a new token, providing the server message</p>
+</div></td><td></td></tr><tr><td id='variant.Success'><code>Success</code></td><td><div class='docblock'><p>The refresh operation finished successfully, providing a new <code>Token</code></p>
+</div></td><td></td></tr></table></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
@@ -79,6 +80,8 @@
                     <dd>Move down in search results</dd>
                     <dt>&#9166;</dt>
                     <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
                 </dl>
             </div>
 
@@ -99,7 +102,7 @@
 
                 <p>
                     Search functions by type signature (e.g.
-                    <code>vec -> usize</code>)
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
                 </p>
             </div>
         </div>

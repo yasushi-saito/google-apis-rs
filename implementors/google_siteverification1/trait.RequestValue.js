@@ -1,5 +1,5 @@
 (function() {var implementors = {};
-implementors['google_siteverification1'] = [];
+implementors["google_siteverification1"] = [];
 
             if (window.register_implementors) {
                 window.register_implementors(implementors);

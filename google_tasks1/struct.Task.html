@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
+    
 
     
     
@@ -43,10 +44,10 @@
 
     <section id='main' class="content struct">
 <h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_tasks1</a>::<wbr><a class='struct' href=''>Task</a></span><span class='out-of-band'><span id='render-detail'>
-            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
-                [<span class='inner'>&#x2212;</span>]
-            </a>
-        </span><a id='src-1026' class='srclink' href='../src/google_tasks1///Users/byron/dev/rs/google-apis-rs/target/debug/build/google-tasks1-08b7045ec62ea2ef/out/lib.rs.html#1653-1684' title='goto source code'>[src]</a></span></h1>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-1055' class='srclink' href='../src/google_tasks1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-tasks1-eb35023cdf8a95e0/out/lib.rs.html#2248-2279' title='goto source code'>[src]</a></span></h1>
 <pre class='rust struct'>pub struct Task {
     pub status: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
     pub kind: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
@@ -81,42 +82,50 @@ The list links the activity name, along with information about where it is used 
 </ul>
 </div><h2 class='fields'>Fields</h2>
 <table><tr class='stab '>
-                                  <td id='structfield.status'><code>status</code></td><td><div class='docblock'><p>Status of the task. This is either &quot;needsAction&quot; or &quot;completed&quot;.</p>
+                             <td id='structfield.status'><code>status</code></td><td><div class='docblock'><p>Status of the task. This is either &quot;needsAction&quot; or &quot;completed&quot;.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.kind'><code>kind</code></td><td><div class='docblock'><p>Type of the resource. This is always &quot;tasks#task&quot;.</p>
+                             <td id='structfield.kind'><code>kind</code></td><td><div class='docblock'><p>Type of the resource. This is always &quot;tasks#task&quot;.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.parent'><code>parent</code></td><td><div class='docblock'><p>Parent task identifier. This field is omitted if it is a top-level task. This field is read-only. Use the &quot;move&quot; method to move the task under a different parent or to the top level.</p>
+                             <td id='structfield.parent'><code>parent</code></td><td><div class='docblock'><p>Parent task identifier. This field is omitted if it is a top-level task. This field is read-only. Use the &quot;move&quot; method to move the task under a different parent or to the top level.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.links'><code>links</code></td><td><div class='docblock'><p>Collection of links. This collection is read-only.</p>
+                             <td id='structfield.links'><code>links</code></td><td><div class='docblock'><p>Collection of links. This collection is read-only.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.title'><code>title</code></td><td><div class='docblock'><p>Title of the task.</p>
+                             <td id='structfield.title'><code>title</code></td><td><div class='docblock'><p>Title of the task.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.deleted'><code>deleted</code></td><td><div class='docblock'><p>Flag indicating whether the task has been deleted. The default if False.</p>
+                             <td id='structfield.deleted'><code>deleted</code></td><td><div class='docblock'><p>Flag indicating whether the task has been deleted. The default if False.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.completed'><code>completed</code></td><td><div class='docblock'><p>Completion date of the task (as a RFC 3339 timestamp). This field is omitted if the task has not been completed.</p>
+                             <td id='structfield.completed'><code>completed</code></td><td><div class='docblock'><p>Completion date of the task (as a RFC 3339 timestamp). This field is omitted if the task has not been completed.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.updated'><code>updated</code></td><td><div class='docblock'><p>Last modification time of the task (as a RFC 3339 timestamp).</p>
+                             <td id='structfield.updated'><code>updated</code></td><td><div class='docblock'><p>Last modification time of the task (as a RFC 3339 timestamp).</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.due'><code>due</code></td><td><div class='docblock'><p>Due date of the task (as a RFC 3339 timestamp). Optional.</p>
+                             <td id='structfield.due'><code>due</code></td><td><div class='docblock'><p>Due date of the task (as a RFC 3339 timestamp). Optional.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.etag'><code>etag</code></td><td><div class='docblock'><p>ETag of the resource.</p>
+                             <td id='structfield.etag'><code>etag</code></td><td><div class='docblock'><p>ETag of the resource.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.id'><code>id</code></td><td><div class='docblock'><p>Task identifier.</p>
+                             <td id='structfield.id'><code>id</code></td><td><div class='docblock'><p>Task identifier.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.position'><code>position</code></td><td><div class='docblock'><p>String indicating the position of the task among its sibling tasks under the same parent task or at the top level. If this string is greater than another task&#39;s corresponding position string according to lexicographical ordering, the task is positioned after the other task under the same parent task (or at the top level). This field is read-only. Use the &quot;move&quot; method to move the task to another position.</p>
+                             <td id='structfield.position'><code>position</code></td><td><div class='docblock'><p>String indicating the position of the task among its sibling tasks under the same parent task or at the top level. If this string is greater than another task&#39;s corresponding position string according to lexicographical ordering, the task is positioned after the other task under the same parent task (or at the top level). This field is read-only. Use the &quot;move&quot; method to move the task to another position.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.hidden'><code>hidden</code></td><td><div class='docblock'><p>Flag indicating whether the task is hidden. This is the case if the task had been marked completed when the task list was last cleared. The default is False. This field is read-only.</p>
+                             <td id='structfield.hidden'><code>hidden</code></td><td><div class='docblock'><p>Flag indicating whether the task is hidden. This is the case if the task had been marked completed when the task list was last cleared. The default is False. This field is read-only.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.notes'><code>notes</code></td><td><div class='docblock'><p>Notes describing the task. Optional.</p>
+                             <td id='structfield.notes'><code>notes</code></td><td><div class='docblock'><p>Notes describing the task. Optional.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.self_link'><code>self_link</code></td><td><div class='docblock'><p>URL pointing to this task. Used to retrieve, update, or delete this task.</p>
-</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl <a class='trait' href='../serde/de/trait.Deserialize.html' title='serde::de::Deserialize'>Deserialize</a> for <a class='struct' href='../google_tasks1/struct.Task.html' title='google_tasks1::Task'>Task</a></code></h3><div class='impl-items'><h4 id='method.deserialize' class='method'><code>fn <a href='../serde/de/trait.Deserialize.html#method.deserialize' class='fnname'>deserialize</a>&lt;__D&gt;(deserializer: &amp;mut __D) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../google_tasks1/struct.Task.html' title='google_tasks1::Task'>Task</a>, __D::Error&gt; <span class='where'>where __D: <a class='trait' href='../serde/de/trait.Deserializer.html' title='serde::de::Deserializer'>Deserializer</a></span></code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='../serde/ser/trait.Serialize.html' title='serde::ser::Serialize'>Serialize</a> for <a class='struct' href='../google_tasks1/struct.Task.html' title='google_tasks1::Task'>Task</a></code></h3><div class='impl-items'><h4 id='method.serialize' class='method'><code>fn <a href='../serde/ser/trait.Serialize.html#method.serialize' class='fnname'>serialize</a>&lt;__S&gt;(&amp;self, serializer: &amp;mut __S) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, __S::Error&gt; <span class='where'>where __S: <a class='trait' href='../serde/ser/trait.Serializer.html' title='serde::ser::Serializer'>Serializer</a></span></code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='../google_tasks1/trait.RequestValue.html' title='google_tasks1::RequestValue'>RequestValue</a> for <a class='struct' href='../google_tasks1/struct.Task.html' title='google_tasks1::Task'>Task</a></code></h3><div class='impl-items'></div><h3 class='impl'><code>impl <a class='trait' href='../google_tasks1/trait.Resource.html' title='google_tasks1::Resource'>Resource</a> for <a class='struct' href='../google_tasks1/struct.Task.html' title='google_tasks1::Task'>Task</a></code></h3><div class='impl-items'></div><h3 class='impl'><code>impl <a class='trait' href='../google_tasks1/trait.ResponseResult.html' title='google_tasks1::ResponseResult'>ResponseResult</a> for <a class='struct' href='../google_tasks1/struct.Task.html' title='google_tasks1::Task'>Task</a></code></h3><div class='impl-items'></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_tasks1/struct.Task.html' title='google_tasks1::Task'>Task</a></code></h3><div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#method.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_tasks1/struct.Task.html' title='google_tasks1::Task'>Task</a></code></h3><div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_tasks1/struct.Task.html' title='google_tasks1::Task'>Task</a></code></h4>
-<h4 id='method.clone_from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_tasks1/struct.Task.html' title='google_tasks1::Task'>Task</a></code></h3><div class='impl-items'><h4 id='method.default' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#method.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_tasks1/struct.Task.html' title='google_tasks1::Task'>Task</a></code></h4>
-</div></section>
+                             <td id='structfield.self_link'><code>self_link</code></td><td><div class='docblock'><p>URL pointing to this task. Used to retrieve, update, or delete this task.</p>
+</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='../google_tasks1/trait.RequestValue.html' title='google_tasks1::RequestValue'>RequestValue</a> for <a class='struct' href='../google_tasks1/struct.Task.html' title='google_tasks1::Task'>Task</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-1456' class='srclink' href='../src/google_tasks1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-tasks1-eb35023cdf8a95e0/out/lib.rs.html#3114' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='../google_tasks1/trait.Resource.html' title='google_tasks1::Resource'>Resource</a> for <a class='struct' href='../google_tasks1/struct.Task.html' title='google_tasks1::Task'>Task</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-1457' class='srclink' href='../src/google_tasks1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-tasks1-eb35023cdf8a95e0/out/lib.rs.html#3115' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='../google_tasks1/trait.ResponseResult.html' title='google_tasks1::ResponseResult'>ResponseResult</a> for <a class='struct' href='../google_tasks1/struct.Task.html' title='google_tasks1::Task'>Task</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-1458' class='srclink' href='../src/google_tasks1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-tasks1-eb35023cdf8a95e0/out/lib.rs.html#3116' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_tasks1/struct.Task.html' title='google_tasks1::Task'>Task</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-1071' class='srclink' href='../src/google_tasks1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-tasks1-eb35023cdf8a95e0/out/lib.rs.html#2247' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.default' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_tasks1/struct.Task.html' title='google_tasks1::Task'>Task</a></code></h4>
+<div class='docblock'><p>Returns the &quot;default value&quot; for a type. <a href="https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_tasks1/struct.Task.html' title='google_tasks1::Task'>Task</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-1073' class='srclink' href='../src/google_tasks1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-tasks1-eb35023cdf8a95e0/out/lib.rs.html#2247' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_tasks1/struct.Task.html' title='google_tasks1::Task'>Task</a></code></h4>
+<div class='docblock'><p>Returns a copy of the value. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone">Read more</a></p>
+</div><h4 id='method.clone_from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></h4>
+<div class='docblock'><p>Performs copy-assignment from <code>source</code>. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_tasks1/struct.Task.html' title='google_tasks1::Task'>Task</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-1091' class='srclink' href='../src/google_tasks1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-tasks1-eb35023cdf8a95e0/out/lib.rs.html#2247' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
+<div class='docblock'><p>Formats the value using the given formatter.</p>
+</div></div></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
@@ -139,6 +148,8 @@ The list links the activity name, along with information about where it is used 
                     <dd>Move down in search results</dd>
                     <dt>&#9166;</dt>
                     <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
                 </dl>
             </div>
 
@@ -159,7 +170,7 @@ The list links the activity name, along with information about where it is used 
 
                 <p>
                     Search functions by type signature (e.g.
-                    <code>vec -> usize</code>)
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
                 </p>
             </div>
         </div>

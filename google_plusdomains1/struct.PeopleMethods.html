@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
+    
 
     
     
@@ -43,10 +44,10 @@
 
     <section id='main' class="content struct">
 <h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_plusdomains1</a>::<wbr><a class='struct' href=''>PeopleMethods</a></span><span class='out-of-band'><span id='render-detail'>
-            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
-                [<span class='inner'>&#x2212;</span>]
-            </a>
-        </span><a id='src-11449' class='srclink' href='../src/google_plusdomains1///Users/byron/dev/rs/google-apis-rs/target/debug/build/google-plusdomains1-b6021b4b2266229f/out/lib.rs.html#19975-19977' title='goto source code'>[src]</a></span></h1>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-12336' class='srclink' href='../src/google_plusdomains1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-plusdomains1-7e85bdaf3fc34912/out/lib.rs.html#25761-25763' title='goto source code'>[src]</a></span></h1>
 <pre class='rust struct'>pub struct PeopleMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>people</em> resources.
@@ -54,6 +55,7 @@ It is not used directly, but through the <code>PlusDomains</code> hub.</p>
 
 <h1 id='example' class='section-header'><a href='#example'>Example</a></h1>
 <p>Instantiate a resource builder</p>
+
 <pre class='rust rust-example-rendered'>
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>hyper</span>;
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>yup_oauth2</span> <span class='kw'>as</span> <span class='ident'>oauth2</span>;
@@ -72,7 +74,8 @@ It is not used directly, but through the <code>PlusDomains</code> hub.</p>
 <span class='comment'>// like `get(...)`, `list(...)`, `list_by_activity(...)` and `list_by_circle(...)`</span>
 <span class='comment'>// to build up your call.</span>
 <span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>people</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_plusdomains1/struct.PeopleMethods.html' title='google_plusdomains1::PeopleMethods'>PeopleMethods</a>&lt;'a, C, A&gt;</code></h3><div class='impl-items'><h4 id='method.list_by_circle' class='method'><code>fn <a href='#method.list_by_circle' class='fnname'>list_by_circle</a>(&amp;self, circle_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_plusdomains1/struct.PeopleListByCircleCall.html' title='google_plusdomains1::PeopleListByCircleCall'>PeopleListByCircleCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_plusdomains1/struct.PeopleMethods.html' title='google_plusdomains1::PeopleMethods'>PeopleMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-12345' class='srclink' href='../src/google_plusdomains1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-plusdomains1-7e85bdaf3fc34912/out/lib.rs.html#25765-25836' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.list_by_circle' class='method'><code>fn <a href='#method.list_by_circle' class='fnname'>list_by_circle</a>(&amp;self, circle_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_plusdomains1/struct.PeopleListByCircleCall.html' title='google_plusdomains1::PeopleListByCircleCall'>PeopleListByCircleCall</a>&lt;'a, C, A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>List all of the people who are members of a circle.</p>
@@ -110,7 +113,8 @@ It is not used directly, but through the <code>PlusDomains</code> hub.</p>
 <li><code>activityId</code> - The ID of the activity to get the list of people for.</li>
 <li><code>collection</code> - The collection of people to list.</li>
 </ul>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_plusdomains1/trait.MethodsBuilder.html' title='google_plusdomains1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_plusdomains1/struct.PeopleMethods.html' title='google_plusdomains1::PeopleMethods'>PeopleMethods</a>&lt;'a, C, A&gt;</code></h3><div class='impl-items'></div></section>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_plusdomains1/trait.MethodsBuilder.html' title='google_plusdomains1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_plusdomains1/struct.PeopleMethods.html' title='google_plusdomains1::PeopleMethods'>PeopleMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-12341' class='srclink' href='../src/google_plusdomains1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-plusdomains1-7e85bdaf3fc34912/out/lib.rs.html#25764' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
@@ -133,6 +137,8 @@ It is not used directly, but through the <code>PlusDomains</code> hub.</p>
                     <dd>Move down in search results</dd>
                     <dt>&#9166;</dt>
                     <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
                 </dl>
             </div>
 
@@ -153,7 +159,7 @@ It is not used directly, but through the <code>PlusDomains</code> hub.</p>
 
                 <p>
                     Search functions by type signature (e.g.
-                    <code>vec -> usize</code>)
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
                 </p>
             </div>
         </div>

@@ -1,5 +1,5 @@
 (function() {var implementors = {};
-implementors['google_doubleclickbidmanager1'] = [];
+implementors["google_doubleclickbidmanager1"] = [];
 
             if (window.register_implementors) {
                 window.register_implementors(implementors);

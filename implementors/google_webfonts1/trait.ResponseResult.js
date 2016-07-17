@@ -1,5 +1,5 @@
 (function() {var implementors = {};
-implementors['google_webfonts1'] = [];
+implementors["google_webfonts1"] = [];
 
             if (window.register_implementors) {
                 window.register_implementors(implementors);

@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
+    
 
     
     
@@ -43,16 +44,18 @@
 
     <section id='main' class="content struct">
 <h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_genomics1</a>::<wbr><a class='struct' href=''>StreamReadsRequest</a></span><span class='out-of-band'><span id='render-detail'>
-            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
-                [<span class='inner'>&#x2212;</span>]
-            </a>
-        </span><a id='src-7070' class='srclink' href='../src/google_genomics1///Users/byron/dev/rs/google-apis-rs/target/debug/build/google-genomics1-5d9eae5225317809/out/lib.rs.html#12265-12276' title='goto source code'>[src]</a></span></h1>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-11394' class='srclink' href='../src/google_genomics1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-genomics1-1ad8d3924bbaea8d/out/lib.rs.html#24873-24888' title='goto source code'>[src]</a></span></h1>
 <pre class='rust struct'>pub struct StreamReadsRequest {
-    pub project_id: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub reference_name: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub end: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
-    pub read_group_set_id: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
     pub start: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub end: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub total_shards: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>&gt;,
+    pub read_group_set_id: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub reference_name: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub project_id: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub shard: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>&gt;,
 }</pre><div class='docblock'><p>The stream reads request.</p>
 
 <h1 id='activities' class='section-header'><a href='#activities'>Activities</a></h1>
@@ -64,22 +67,32 @@ The list links the activity name, along with information about where it is used 
 </ul>
 </div><h2 class='fields'>Fields</h2>
 <table><tr class='stab '>
-                                  <td id='structfield.project_id'><code>project_id</code></td><td><div class='docblock'><p>The Google Developers Console project ID or number which will be billed for this access. The caller must have WRITE access to this project. Required.</p>
+                             <td id='structfield.start'><code>start</code></td><td><div class='docblock'><p>The start position of the range on the reference, 0-based inclusive. If specified, <code>referenceName</code> must also be specified.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.reference_name'><code>reference_name</code></td><td><div class='docblock'><p>The reference sequence name, for example <code>chr1</code>, <code>1</code>, or <code>chrX</code>. If set to *, only unmapped reads are returned.</p>
+                             <td id='structfield.end'><code>end</code></td><td><div class='docblock'><p>The end position of the range on the reference, 0-based exclusive. If specified, <code>referenceName</code> must also be specified.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.end'><code>end</code></td><td><div class='docblock'><p>The end position of the range on the reference, 0-based exclusive. If specified, <code>referenceName</code> must also be specified.</p>
+                             <td id='structfield.total_shards'><code>total_shards</code></td><td><div class='docblock'><p>Specifying <code>totalShards</code> causes a disjoint subset of the normal response payload to be returned for each query with a unique <code>shard</code> parameter specified. A best effort is made to yield equally sized shards. Sharding can be used to distribute processing amongst workers, where each worker is assigned a unique <code>shard</code> number and all workers specify the same <code>totalShards</code> number. The union of reads returned for all sharded queries <code>[0, totalShards)</code> is equal to those returned by a single unsharded query. Queries for different values of <code>totalShards</code> with common divisors will share shard boundaries. For example, streaming <code>shard</code> 2 of 5 <code>totalShards</code> yields the same results as streaming <code>shard</code>s 4 and 5 of 10 <code>totalShards</code>. This property can be leveraged for adaptive retries.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.read_group_set_id'><code>read_group_set_id</code></td><td><div class='docblock'><p>The ID of the read group set from which to stream reads.</p>
+                             <td id='structfield.read_group_set_id'><code>read_group_set_id</code></td><td><div class='docblock'><p>The ID of the read group set from which to stream reads.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.start'><code>start</code></td><td><div class='docblock'><p>The start position of the range on the reference, 0-based inclusive. If specified, <code>referenceName</code> must also be specified.</p>
-</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl <a class='trait' href='../serde/de/trait.Deserialize.html' title='serde::de::Deserialize'>Deserialize</a> for <a class='struct' href='../google_genomics1/struct.StreamReadsRequest.html' title='google_genomics1::StreamReadsRequest'>StreamReadsRequest</a></code></h3><div class='impl-items'><h4 id='method.deserialize' class='method'><code>fn <a href='../serde/de/trait.Deserialize.html#method.deserialize' class='fnname'>deserialize</a>&lt;__D&gt;(deserializer: &amp;mut __D) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../google_genomics1/struct.StreamReadsRequest.html' title='google_genomics1::StreamReadsRequest'>StreamReadsRequest</a>, __D::Error&gt; <span class='where'>where __D: <a class='trait' href='../serde/de/trait.Deserializer.html' title='serde::de::Deserializer'>Deserializer</a></span></code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='../serde/ser/trait.Serialize.html' title='serde::ser::Serialize'>Serialize</a> for <a class='struct' href='../google_genomics1/struct.StreamReadsRequest.html' title='google_genomics1::StreamReadsRequest'>StreamReadsRequest</a></code></h3><div class='impl-items'><h4 id='method.serialize' class='method'><code>fn <a href='../serde/ser/trait.Serialize.html#method.serialize' class='fnname'>serialize</a>&lt;__S&gt;(&amp;self, serializer: &amp;mut __S) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, __S::Error&gt; <span class='where'>where __S: <a class='trait' href='../serde/ser/trait.Serializer.html' title='serde::ser::Serializer'>Serializer</a></span></code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='../google_genomics1/trait.RequestValue.html' title='google_genomics1::RequestValue'>RequestValue</a> for <a class='struct' href='../google_genomics1/struct.StreamReadsRequest.html' title='google_genomics1::StreamReadsRequest'>StreamReadsRequest</a></code></h3><div class='impl-items'></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_genomics1/struct.StreamReadsRequest.html' title='google_genomics1::StreamReadsRequest'>StreamReadsRequest</a></code></h3><div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#method.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_genomics1/struct.StreamReadsRequest.html' title='google_genomics1::StreamReadsRequest'>StreamReadsRequest</a></code></h3><div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_genomics1/struct.StreamReadsRequest.html' title='google_genomics1::StreamReadsRequest'>StreamReadsRequest</a></code></h4>
-<h4 id='method.clone_from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_genomics1/struct.StreamReadsRequest.html' title='google_genomics1::StreamReadsRequest'>StreamReadsRequest</a></code></h3><div class='impl-items'><h4 id='method.default' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#method.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_genomics1/struct.StreamReadsRequest.html' title='google_genomics1::StreamReadsRequest'>StreamReadsRequest</a></code></h4>
-</div></section>
+                             <td id='structfield.reference_name'><code>reference_name</code></td><td><div class='docblock'><p>The reference sequence name, for example <code>chr1</code>, <code>1</code>, or <code>chrX</code>. If set to *, only unmapped reads are returned.</p>
+</div></td></tr><tr class='stab '>
+                             <td id='structfield.project_id'><code>project_id</code></td><td><div class='docblock'><p>The Google Developers Console project ID or number which will be billed for this access. The caller must have WRITE access to this project. Required.</p>
+</div></td></tr><tr class='stab '>
+                             <td id='structfield.shard'><code>shard</code></td><td><div class='docblock'><p>Restricts results to a shard containing approximately <code>1/totalShards</code> of the normal response payload for this query. Results from a sharded request are disjoint from those returned by all queries which differ only in their shard parameter. A shard may yield 0 results; this is especially likely for large values of <code>totalShards</code>. Valid values are <code>[0, totalShards)</code>.</p>
+</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='../google_genomics1/trait.RequestValue.html' title='google_genomics1::RequestValue'>RequestValue</a> for <a class='struct' href='../google_genomics1/struct.StreamReadsRequest.html' title='google_genomics1::StreamReadsRequest'>StreamReadsRequest</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-11627' class='srclink' href='../src/google_genomics1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-genomics1-1ad8d3924bbaea8d/out/lib.rs.html#25367' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_genomics1/struct.StreamReadsRequest.html' title='google_genomics1::StreamReadsRequest'>StreamReadsRequest</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-11402' class='srclink' href='../src/google_genomics1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-genomics1-1ad8d3924bbaea8d/out/lib.rs.html#24872' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.default' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_genomics1/struct.StreamReadsRequest.html' title='google_genomics1::StreamReadsRequest'>StreamReadsRequest</a></code></h4>
+<div class='docblock'><p>Returns the &quot;default value&quot; for a type. <a href="https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_genomics1/struct.StreamReadsRequest.html' title='google_genomics1::StreamReadsRequest'>StreamReadsRequest</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-11404' class='srclink' href='../src/google_genomics1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-genomics1-1ad8d3924bbaea8d/out/lib.rs.html#24872' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_genomics1/struct.StreamReadsRequest.html' title='google_genomics1::StreamReadsRequest'>StreamReadsRequest</a></code></h4>
+<div class='docblock'><p>Returns a copy of the value. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone">Read more</a></p>
+</div><h4 id='method.clone_from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></h4>
+<div class='docblock'><p>Performs copy-assignment from <code>source</code>. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_genomics1/struct.StreamReadsRequest.html' title='google_genomics1::StreamReadsRequest'>StreamReadsRequest</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-11414' class='srclink' href='../src/google_genomics1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-genomics1-1ad8d3924bbaea8d/out/lib.rs.html#24872' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
+<div class='docblock'><p>Formats the value using the given formatter.</p>
+</div></div></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
@@ -102,6 +115,8 @@ The list links the activity name, along with information about where it is used 
                     <dd>Move down in search results</dd>
                     <dt>&#9166;</dt>
                     <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
                 </dl>
             </div>
 
@@ -122,7 +137,7 @@ The list links the activity name, along with information about where it is used 
 
                 <p>
                     Search functions by type signature (e.g.
-                    <code>vec -> usize</code>)
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
                 </p>
             </div>
         </div>

@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>List - directory v0.3.3+20151208</title>
+  <title>List - directory v0.3.5+20160323</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -38,7 +38,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> directory v0.3.3+20151208</a>
+        <a href=".." class="icon icon-home"> directory v0.3.5+20160323</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -899,7 +899,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">directory v0.3.3+20151208</a>
+        <a href="..">directory v0.3.5+20160323</a>
       </nav>
 
       
@@ -955,12 +955,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p domain=string</strong></p>
-<ul>
-<li>Name of the domain. Fill this field to get groups from only this domain. To return all groups in a multi-domain fill customer field instead.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p user-key=string</strong></p>
 <ul>
 <li>Email or immutable Id of the user if only those groups are to be listed, the given user is a member of. If Id, it should match with id of user object</li>
@@ -973,15 +967,21 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p max-results=integer</strong></p>
+<p><strong>-p domain=string</strong></p>
 <ul>
-<li>Maximum number of results to return. Default is 200</li>
+<li>Name of the domain. Fill this field to get groups from only this domain. To return all groups in a multi-domain fill customer field instead.</li>
 </ul>
 </li>
 <li>
 <p><strong>-p page-token=string</strong></p>
 <ul>
 <li>Token to specify next page in the list</li>
+</ul>
+</li>
+<li>
+<p><strong>-p max-results=integer</strong></p>
+<ul>
+<li>Maximum number of results to return. Default is 200</li>
 </ul>
 </li>
 </ul>

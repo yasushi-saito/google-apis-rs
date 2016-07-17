@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
+    
 
     
     
@@ -43,10 +44,10 @@
 
     <section id='main' class="content struct">
 <h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_genomics1</a>::<wbr><a class='struct' href=''>SearchVariantsRequest</a></span><span class='out-of-band'><span id='render-detail'>
-            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
-                [<span class='inner'>&#x2212;</span>]
-            </a>
-        </span><a id='src-9074' class='srclink' href='../src/google_genomics1///Users/byron/dev/rs/google-apis-rs/target/debug/build/google-genomics1-5d9eae5225317809/out/lib.rs.html#15782-15801' title='goto source code'>[src]</a></span></h1>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-7532' class='srclink' href='../src/google_genomics1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-genomics1-1ad8d3924bbaea8d/out/lib.rs.html#16677-16696' title='goto source code'>[src]</a></span></h1>
 <pre class='rust struct'>pub struct SearchVariantsRequest {
     pub end: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
     pub page_size: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>&gt;,
@@ -68,30 +69,36 @@ The list links the activity name, along with information about where it is used 
 </ul>
 </div><h2 class='fields'>Fields</h2>
 <table><tr class='stab '>
-                                  <td id='structfield.end'><code>end</code></td><td><div class='docblock'><p>The end of the window, 0-based exclusive. If unspecified or 0, defaults to the length of the reference.</p>
+                             <td id='structfield.end'><code>end</code></td><td><div class='docblock'><p>The end of the window, 0-based exclusive. If unspecified or 0, defaults to the length of the reference.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.page_size'><code>page_size</code></td><td><div class='docblock'><p>The maximum number of variants to return in a single page. If unspecified, defaults to 5000. The maximum value is 10000.</p>
+                             <td id='structfield.page_size'><code>page_size</code></td><td><div class='docblock'><p>The maximum number of variants to return in a single page. If unspecified, defaults to 5000. The maximum value is 10000.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.page_token'><code>page_token</code></td><td><div class='docblock'><p>The continuation token, which is used to page through large result sets. To get the next page of results, set this parameter to the value of <code>nextPageToken</code> from the previous response.</p>
+                             <td id='structfield.page_token'><code>page_token</code></td><td><div class='docblock'><p>The continuation token, which is used to page through large result sets. To get the next page of results, set this parameter to the value of <code>nextPageToken</code> from the previous response.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.max_calls'><code>max_calls</code></td><td><div class='docblock'><p>The maximum number of calls to return in a single page. Note that this limit may be exceeded; at least one variant is always returned per page, even if it has more calls than this limit. If unspecified, defaults to 5000. The maximum value is 10000.</p>
+                             <td id='structfield.max_calls'><code>max_calls</code></td><td><div class='docblock'><p>The maximum number of calls to return in a single page. Note that this limit may be exceeded in the event that a matching variant contains more calls than the requested maximum. If unspecified, defaults to 5000. The maximum value is 10000.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.start'><code>start</code></td><td><div class='docblock'><p>The beginning of the window (0-based, inclusive) for which overlapping variants should be returned. If unspecified, defaults to 0.</p>
+                             <td id='structfield.start'><code>start</code></td><td><div class='docblock'><p>The beginning of the window (0-based, inclusive) for which overlapping variants should be returned. If unspecified, defaults to 0.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.call_set_ids'><code>call_set_ids</code></td><td><div class='docblock'><p>Only return variant calls which belong to call sets with these ids. Leaving this blank returns all variant calls. If a variant has no calls belonging to any of these call sets, it won&#39;t be returned at all. Currently, variants with no calls from any call set will never be returned.</p>
+                             <td id='structfield.call_set_ids'><code>call_set_ids</code></td><td><div class='docblock'><p>Only return variant calls which belong to call sets with these ids. Leaving this blank returns all variant calls. If a variant has no calls belonging to any of these call sets, it won&#39;t be returned at all. Currently, variants with no calls from any call set will never be returned.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.variant_name'><code>variant_name</code></td><td><div class='docblock'><p>Only return variants which have exactly this name.</p>
+                             <td id='structfield.variant_name'><code>variant_name</code></td><td><div class='docblock'><p>Only return variants which have exactly this name.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.reference_name'><code>reference_name</code></td><td><div class='docblock'><p>Required. Only return variants in this reference sequence.</p>
+                             <td id='structfield.reference_name'><code>reference_name</code></td><td><div class='docblock'><p>Required. Only return variants in this reference sequence.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.variant_set_ids'><code>variant_set_ids</code></td><td><div class='docblock'><p>At most one variant set ID must be provided. Only variants from this variant set will be returned. If omitted, a call set id must be included in the request.</p>
-</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl <a class='trait' href='../serde/de/trait.Deserialize.html' title='serde::de::Deserialize'>Deserialize</a> for <a class='struct' href='../google_genomics1/struct.SearchVariantsRequest.html' title='google_genomics1::SearchVariantsRequest'>SearchVariantsRequest</a></code></h3><div class='impl-items'><h4 id='method.deserialize' class='method'><code>fn <a href='../serde/de/trait.Deserialize.html#method.deserialize' class='fnname'>deserialize</a>&lt;__D&gt;(deserializer: &amp;mut __D) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../google_genomics1/struct.SearchVariantsRequest.html' title='google_genomics1::SearchVariantsRequest'>SearchVariantsRequest</a>, __D::Error&gt; <span class='where'>where __D: <a class='trait' href='../serde/de/trait.Deserializer.html' title='serde::de::Deserializer'>Deserializer</a></span></code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='../serde/ser/trait.Serialize.html' title='serde::ser::Serialize'>Serialize</a> for <a class='struct' href='../google_genomics1/struct.SearchVariantsRequest.html' title='google_genomics1::SearchVariantsRequest'>SearchVariantsRequest</a></code></h3><div class='impl-items'><h4 id='method.serialize' class='method'><code>fn <a href='../serde/ser/trait.Serialize.html#method.serialize' class='fnname'>serialize</a>&lt;__S&gt;(&amp;self, serializer: &amp;mut __S) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, __S::Error&gt; <span class='where'>where __S: <a class='trait' href='../serde/ser/trait.Serializer.html' title='serde::ser::Serializer'>Serializer</a></span></code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='../google_genomics1/trait.RequestValue.html' title='google_genomics1::RequestValue'>RequestValue</a> for <a class='struct' href='../google_genomics1/struct.SearchVariantsRequest.html' title='google_genomics1::SearchVariantsRequest'>SearchVariantsRequest</a></code></h3><div class='impl-items'></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_genomics1/struct.SearchVariantsRequest.html' title='google_genomics1::SearchVariantsRequest'>SearchVariantsRequest</a></code></h3><div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#method.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_genomics1/struct.SearchVariantsRequest.html' title='google_genomics1::SearchVariantsRequest'>SearchVariantsRequest</a></code></h3><div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_genomics1/struct.SearchVariantsRequest.html' title='google_genomics1::SearchVariantsRequest'>SearchVariantsRequest</a></code></h4>
-<h4 id='method.clone_from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_genomics1/struct.SearchVariantsRequest.html' title='google_genomics1::SearchVariantsRequest'>SearchVariantsRequest</a></code></h3><div class='impl-items'><h4 id='method.default' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#method.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_genomics1/struct.SearchVariantsRequest.html' title='google_genomics1::SearchVariantsRequest'>SearchVariantsRequest</a></code></h4>
-</div></section>
+                             <td id='structfield.variant_set_ids'><code>variant_set_ids</code></td><td><div class='docblock'><p>At most one variant set ID must be provided. Only variants from this variant set will be returned. If omitted, a call set id must be included in the request.</p>
+</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='../google_genomics1/trait.RequestValue.html' title='google_genomics1::RequestValue'>RequestValue</a> for <a class='struct' href='../google_genomics1/struct.SearchVariantsRequest.html' title='google_genomics1::SearchVariantsRequest'>SearchVariantsRequest</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-7807' class='srclink' href='../src/google_genomics1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-genomics1-1ad8d3924bbaea8d/out/lib.rs.html#17281' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_genomics1/struct.SearchVariantsRequest.html' title='google_genomics1::SearchVariantsRequest'>SearchVariantsRequest</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-7542' class='srclink' href='../src/google_genomics1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-genomics1-1ad8d3924bbaea8d/out/lib.rs.html#16676' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.default' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_genomics1/struct.SearchVariantsRequest.html' title='google_genomics1::SearchVariantsRequest'>SearchVariantsRequest</a></code></h4>
+<div class='docblock'><p>Returns the &quot;default value&quot; for a type. <a href="https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_genomics1/struct.SearchVariantsRequest.html' title='google_genomics1::SearchVariantsRequest'>SearchVariantsRequest</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-7544' class='srclink' href='../src/google_genomics1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-genomics1-1ad8d3924bbaea8d/out/lib.rs.html#16676' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_genomics1/struct.SearchVariantsRequest.html' title='google_genomics1::SearchVariantsRequest'>SearchVariantsRequest</a></code></h4>
+<div class='docblock'><p>Returns a copy of the value. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone">Read more</a></p>
+</div><h4 id='method.clone_from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></h4>
+<div class='docblock'><p>Performs copy-assignment from <code>source</code>. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_genomics1/struct.SearchVariantsRequest.html' title='google_genomics1::SearchVariantsRequest'>SearchVariantsRequest</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-7556' class='srclink' href='../src/google_genomics1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-genomics1-1ad8d3924bbaea8d/out/lib.rs.html#16676' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
+<div class='docblock'><p>Formats the value using the given formatter.</p>
+</div></div></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
@@ -114,6 +121,8 @@ The list links the activity name, along with information about where it is used 
                     <dd>Move down in search results</dd>
                     <dt>&#9166;</dt>
                     <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
                 </dl>
             </div>
 
@@ -134,7 +143,7 @@ The list links the activity name, along with information about where it is used 
 
                 <p>
                     Search functions by type signature (e.g.
-                    <code>vec -> usize</code>)
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
                 </p>
             </div>
         </div>

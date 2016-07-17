@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
+    
 
     
     
@@ -43,10 +44,10 @@
 
     <section id='main' class="content struct">
 <h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_compute1</a>::<wbr><a class='struct' href=''>AutoscalingPolicy</a></span><span class='out-of-band'><span id='render-detail'>
-            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
-                [<span class='inner'>&#x2212;</span>]
-            </a>
-        </span><a id='src-17577' class='srclink' href='../src/google_compute1///Users/byron/dev/rs/google-apis-rs/target/debug/build/google-compute1-8ef555a5d87f7ad5/out/lib.rs.html#30992-31005' title='goto source code'>[src]</a></span></h1>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-18705' class='srclink' href='../src/google_compute1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-compute1-ac353794ec468d78/out/lib.rs.html#43898-43913' title='goto source code'>[src]</a></span></h1>
 <pre class='rust struct'>pub struct AutoscalingPolicy {
     pub custom_metric_utilizations: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='../google_compute1/struct.AutoscalingPolicyCustomMetricUtilization.html' title='google_compute1::AutoscalingPolicyCustomMetricUtilization'>AutoscalingPolicyCustomMetricUtilization</a>&gt;&gt;,
     pub max_num_replicas: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>&gt;,
@@ -59,24 +60,32 @@
 <p>This type is not used in any activity, and only used as <em>part</em> of another schema.</p>
 </div><h2 class='fields'>Fields</h2>
 <table><tr class='stab '>
-                                  <td id='structfield.custom_metric_utilizations'><code>custom_metric_utilizations</code></td><td><div class='docblock'><p>Configuration parameters of autoscaling based on custom metric.</p>
+                             <td id='structfield.custom_metric_utilizations'><code>custom_metric_utilizations</code></td><td><div class='docblock'><p>Configuration parameters of autoscaling based on a custom metric.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.max_num_replicas'><code>max_num_replicas</code></td><td><div class='docblock'><p>The maximum number of replicas that the Autoscaler can scale up to. This field is required for config to be effective. Maximum number of replicas should be not lower than minimal number of replicas. Absolute limit for this value is defined in Autoscaler backend.</p>
+                             <td id='structfield.max_num_replicas'><code>max_num_replicas</code></td><td><div class='docblock'><p>The maximum number of instances that the autoscaler can scale up to. This is required when creating or updating an autoscaler. The maximum number of replicas should not be lower than minimal number of replicas.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.cpu_utilization'><code>cpu_utilization</code></td><td><div class='docblock'><p>TODO(jbartosik): Add support for scaling based on muliple utilization metrics (take max recommendation). Exactly one utilization policy should be provided. Configuration parameters of CPU based autoscaling policy.</p>
+                             <td id='structfield.cpu_utilization'><code>cpu_utilization</code></td><td><div class='docblock'><p>Defines the CPU utilization policy that allows the autoscaler to scale based on the average CPU utilization of a managed instance group.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.min_num_replicas'><code>min_num_replicas</code></td><td><div class='docblock'><p>The minimum number of replicas that the Autoscaler can scale down to. Can&#39;t be less than 0. If not provided Autoscaler will choose default value depending on maximal number of replicas.</p>
+                             <td id='structfield.min_num_replicas'><code>min_num_replicas</code></td><td><div class='docblock'><p>The minimum number of replicas that the autoscaler can scale down to. This cannot be less than 0. If not provided, autoscaler will choose a default value depending on maximum number of instances allowed.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.cool_down_period_sec'><code>cool_down_period_sec</code></td><td><div class='docblock'><p>The number of seconds that the Autoscaler should wait between two succeeding changes to the number of virtual machines. You should define an interval that is at least as long as the initialization time of a virtual machine and the time it may take for replica pool to create the virtual machine. The default is 60 seconds.</p>
+                             <td id='structfield.cool_down_period_sec'><code>cool_down_period_sec</code></td><td><div class='docblock'><p>The number of seconds that the autoscaler should wait before it starts collecting information from a new instance. This prevents the autoscaler from collecting information when the instance is initializing, during which the collected usage would not be reliable. The default time autoscaler waits is 60 seconds.</p>
+
+<p>Virtual machine initialization times might vary because of numerous factors. We recommend that you test how long an instance may take to initialize. To do this, create an instance and time the startup process.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.load_balancing_utilization'><code>load_balancing_utilization</code></td><td><div class='docblock'><p>Configuration parameters of autoscaling based on load balancer.</p>
-</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl <a class='trait' href='../serde/de/trait.Deserialize.html' title='serde::de::Deserialize'>Deserialize</a> for <a class='struct' href='../google_compute1/struct.AutoscalingPolicy.html' title='google_compute1::AutoscalingPolicy'>AutoscalingPolicy</a></code></h3><div class='impl-items'><h4 id='method.deserialize' class='method'><code>fn <a href='../serde/de/trait.Deserialize.html#method.deserialize' class='fnname'>deserialize</a>&lt;__D&gt;(deserializer: &amp;mut __D) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../google_compute1/struct.AutoscalingPolicy.html' title='google_compute1::AutoscalingPolicy'>AutoscalingPolicy</a>, __D::Error&gt; <span class='where'>where __D: <a class='trait' href='../serde/de/trait.Deserializer.html' title='serde::de::Deserializer'>Deserializer</a></span></code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='../serde/ser/trait.Serialize.html' title='serde::ser::Serialize'>Serialize</a> for <a class='struct' href='../google_compute1/struct.AutoscalingPolicy.html' title='google_compute1::AutoscalingPolicy'>AutoscalingPolicy</a></code></h3><div class='impl-items'><h4 id='method.serialize' class='method'><code>fn <a href='../serde/ser/trait.Serialize.html#method.serialize' class='fnname'>serialize</a>&lt;__S&gt;(&amp;self, serializer: &amp;mut __S) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, __S::Error&gt; <span class='where'>where __S: <a class='trait' href='../serde/ser/trait.Serializer.html' title='serde::ser::Serializer'>Serializer</a></span></code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='../google_compute1/trait.Part.html' title='google_compute1::Part'>Part</a> for <a class='struct' href='../google_compute1/struct.AutoscalingPolicy.html' title='google_compute1::AutoscalingPolicy'>AutoscalingPolicy</a></code></h3><div class='impl-items'></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_compute1/struct.AutoscalingPolicy.html' title='google_compute1::AutoscalingPolicy'>AutoscalingPolicy</a></code></h3><div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#method.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_compute1/struct.AutoscalingPolicy.html' title='google_compute1::AutoscalingPolicy'>AutoscalingPolicy</a></code></h3><div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_compute1/struct.AutoscalingPolicy.html' title='google_compute1::AutoscalingPolicy'>AutoscalingPolicy</a></code></h4>
-<h4 id='method.clone_from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_compute1/struct.AutoscalingPolicy.html' title='google_compute1::AutoscalingPolicy'>AutoscalingPolicy</a></code></h3><div class='impl-items'><h4 id='method.default' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#method.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_compute1/struct.AutoscalingPolicy.html' title='google_compute1::AutoscalingPolicy'>AutoscalingPolicy</a></code></h4>
-</div></section>
+                             <td id='structfield.load_balancing_utilization'><code>load_balancing_utilization</code></td><td><div class='docblock'><p>Configuration parameters of autoscaling based on load balancer.</p>
+</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='../google_compute1/trait.Part.html' title='google_compute1::Part'>Part</a> for <a class='struct' href='../google_compute1/struct.AutoscalingPolicy.html' title='google_compute1::AutoscalingPolicy'>AutoscalingPolicy</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-18917' class='srclink' href='../src/google_compute1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-compute1-ac353794ec468d78/out/lib.rs.html#44381' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_compute1/struct.AutoscalingPolicy.html' title='google_compute1::AutoscalingPolicy'>AutoscalingPolicy</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-18712' class='srclink' href='../src/google_compute1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-compute1-ac353794ec468d78/out/lib.rs.html#43897' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.default' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_compute1/struct.AutoscalingPolicy.html' title='google_compute1::AutoscalingPolicy'>AutoscalingPolicy</a></code></h4>
+<div class='docblock'><p>Returns the &quot;default value&quot; for a type. <a href="https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_compute1/struct.AutoscalingPolicy.html' title='google_compute1::AutoscalingPolicy'>AutoscalingPolicy</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-18714' class='srclink' href='../src/google_compute1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-compute1-ac353794ec468d78/out/lib.rs.html#43897' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_compute1/struct.AutoscalingPolicy.html' title='google_compute1::AutoscalingPolicy'>AutoscalingPolicy</a></code></h4>
+<div class='docblock'><p>Returns a copy of the value. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone">Read more</a></p>
+</div><h4 id='method.clone_from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></h4>
+<div class='docblock'><p>Performs copy-assignment from <code>source</code>. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_compute1/struct.AutoscalingPolicy.html' title='google_compute1::AutoscalingPolicy'>AutoscalingPolicy</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-18723' class='srclink' href='../src/google_compute1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-compute1-ac353794ec468d78/out/lib.rs.html#43897' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
+<div class='docblock'><p>Formats the value using the given formatter.</p>
+</div></div></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
@@ -99,6 +108,8 @@
                     <dd>Move down in search results</dd>
                     <dt>&#9166;</dt>
                     <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
                 </dl>
             </div>
 
@@ -119,7 +130,7 @@
 
                 <p>
                     Search functions by type signature (e.g.
-                    <code>vec -> usize</code>)
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
                 </p>
             </div>
         </div>

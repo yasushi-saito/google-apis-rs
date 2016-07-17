@@ -1,5 +1,5 @@
 (function() {var implementors = {};
-implementors['google_bigquery2'] = [];
+implementors["google_bigquery2"] = [];
 
             if (window.register_implementors) {
                 window.register_implementors(implementors);

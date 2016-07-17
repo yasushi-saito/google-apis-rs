@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
+    
 
     
     
@@ -43,17 +44,17 @@
 
     <section id='main' class="content struct">
 <h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_androidenterprise1</a>::<wbr><a class='struct' href=''>User</a></span><span class='out-of-band'><span id='render-detail'>
-            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
-                [<span class='inner'>&#x2212;</span>]
-            </a>
-        </span><a id='src-5888' class='srclink' href='../src/google_androidenterprise1///Users/byron/dev/rs/google-apis-rs/target/debug/build/google-androidenterprise1-427ceb31373d3a08/out/lib.rs.html#10131-10138' title='goto source code'>[src]</a></span></h1>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-6321' class='srclink' href='../src/google_androidenterprise1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-androidenterprise1-f72144d9f18eac2f/out/lib.rs.html#13971-13978' title='goto source code'>[src]</a></span></h1>
 <pre class='rust struct'>pub struct User {
     pub kind: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
     pub primary_email: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
     pub id: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
 }</pre><div class='docblock'><p>A user resource represents an individual user within the enterprise&#39;s domain.</p>
 
-<p>Note that each user is associated with a Google account based on the user&#39;s corporate email address (which must be in one of the enterprise&#39;s domains). As part of installing an MDM app to manage a device the Google account must be provisioned to the device, and so the user resource must be created before that. This can be done using the Google Admin SDK Directory API.</p>
+<p>Note that each user is associated with a Google account based on the user&#39;s corporate email address (which must be in one of the enterprise&#39;s domains). As part of installing the EMM&#39;s DPC app to manage a device the Google account must be provisioned to the device, and so the user resource must be created before that. This can be done using the Google Admin SDK Directory API.</p>
 
 <p>The ID for a user is an opaque string. It can be retrieved using the list method queried by the user&#39;s primary email address.</p>
 
@@ -74,18 +75,26 @@ The list links the activity name, along with information about where it is used 
 </ul>
 </div><h2 class='fields'>Fields</h2>
 <table><tr class='stab '>
-                                  <td id='structfield.kind'><code>kind</code></td><td><div class='docblock'><p>Identifies what kind of resource this is. Value: the fixed string &quot;androidenterprise#user&quot;.</p>
+                             <td id='structfield.kind'><code>kind</code></td><td><div class='docblock'><p>Identifies what kind of resource this is. Value: the fixed string &quot;androidenterprise#user&quot;.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.primary_email'><code>primary_email</code></td><td><div class='docblock'><p>The user&#39;s primary email, e.g. &quot;<a href="mailto:jsmith@example.com">jsmith@example.com</a>&quot;. Will always be set for Google managed users and not set for EMM managed users.</p>
+                             <td id='structfield.primary_email'><code>primary_email</code></td><td><div class='docblock'><p>The user&#39;s primary email, e.g. &quot;<a href="mailto:jsmith@example.com">jsmith@example.com</a>&quot;.</p>
 </div></td></tr><tr class='stab '>
-                                  <td id='structfield.id'><code>id</code></td><td><div class='docblock'><p>The unique ID for the user.</p>
-</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl <a class='trait' href='../serde/de/trait.Deserialize.html' title='serde::de::Deserialize'>Deserialize</a> for <a class='struct' href='../google_androidenterprise1/struct.User.html' title='google_androidenterprise1::User'>User</a></code></h3><div class='impl-items'><h4 id='method.deserialize' class='method'><code>fn <a href='../serde/de/trait.Deserialize.html#method.deserialize' class='fnname'>deserialize</a>&lt;__D&gt;(deserializer: &amp;mut __D) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../google_androidenterprise1/struct.User.html' title='google_androidenterprise1::User'>User</a>, __D::Error&gt; <span class='where'>where __D: <a class='trait' href='../serde/de/trait.Deserializer.html' title='serde::de::Deserializer'>Deserializer</a></span></code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='../serde/ser/trait.Serialize.html' title='serde::ser::Serialize'>Serialize</a> for <a class='struct' href='../google_androidenterprise1/struct.User.html' title='google_androidenterprise1::User'>User</a></code></h3><div class='impl-items'><h4 id='method.serialize' class='method'><code>fn <a href='../serde/ser/trait.Serialize.html#method.serialize' class='fnname'>serialize</a>&lt;__S&gt;(&amp;self, serializer: &amp;mut __S) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, __S::Error&gt; <span class='where'>where __S: <a class='trait' href='../serde/ser/trait.Serializer.html' title='serde::ser::Serializer'>Serializer</a></span></code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='../google_androidenterprise1/trait.RequestValue.html' title='google_androidenterprise1::RequestValue'>RequestValue</a> for <a class='struct' href='../google_androidenterprise1/struct.User.html' title='google_androidenterprise1::User'>User</a></code></h3><div class='impl-items'></div><h3 class='impl'><code>impl <a class='trait' href='../google_androidenterprise1/trait.Resource.html' title='google_androidenterprise1::Resource'>Resource</a> for <a class='struct' href='../google_androidenterprise1/struct.User.html' title='google_androidenterprise1::User'>User</a></code></h3><div class='impl-items'></div><h3 class='impl'><code>impl <a class='trait' href='../google_androidenterprise1/trait.ResponseResult.html' title='google_androidenterprise1::ResponseResult'>ResponseResult</a> for <a class='struct' href='../google_androidenterprise1/struct.User.html' title='google_androidenterprise1::User'>User</a></code></h3><div class='impl-items'></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_androidenterprise1/struct.User.html' title='google_androidenterprise1::User'>User</a></code></h3><div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#method.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_androidenterprise1/struct.User.html' title='google_androidenterprise1::User'>User</a></code></h3><div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_androidenterprise1/struct.User.html' title='google_androidenterprise1::User'>User</a></code></h4>
-<h4 id='method.clone_from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_androidenterprise1/struct.User.html' title='google_androidenterprise1::User'>User</a></code></h3><div class='impl-items'><h4 id='method.default' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#method.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_androidenterprise1/struct.User.html' title='google_androidenterprise1::User'>User</a></code></h4>
-</div></section>
+                             <td id='structfield.id'><code>id</code></td><td><div class='docblock'><p>The unique ID for the user.</p>
+</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='../google_androidenterprise1/trait.RequestValue.html' title='google_androidenterprise1::RequestValue'>RequestValue</a> for <a class='struct' href='../google_androidenterprise1/struct.User.html' title='google_androidenterprise1::User'>User</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-6470' class='srclink' href='../src/google_androidenterprise1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-androidenterprise1-f72144d9f18eac2f/out/lib.rs.html#14249' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='../google_androidenterprise1/trait.Resource.html' title='google_androidenterprise1::Resource'>Resource</a> for <a class='struct' href='../google_androidenterprise1/struct.User.html' title='google_androidenterprise1::User'>User</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-6471' class='srclink' href='../src/google_androidenterprise1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-androidenterprise1-f72144d9f18eac2f/out/lib.rs.html#14250' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='../google_androidenterprise1/trait.ResponseResult.html' title='google_androidenterprise1::ResponseResult'>ResponseResult</a> for <a class='struct' href='../google_androidenterprise1/struct.User.html' title='google_androidenterprise1::User'>User</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-6472' class='srclink' href='../src/google_androidenterprise1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-androidenterprise1-f72144d9f18eac2f/out/lib.rs.html#14251' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_androidenterprise1/struct.User.html' title='google_androidenterprise1::User'>User</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-6325' class='srclink' href='../src/google_androidenterprise1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-androidenterprise1-f72144d9f18eac2f/out/lib.rs.html#13970' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.default' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_androidenterprise1/struct.User.html' title='google_androidenterprise1::User'>User</a></code></h4>
+<div class='docblock'><p>Returns the &quot;default value&quot; for a type. <a href="https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_androidenterprise1/struct.User.html' title='google_androidenterprise1::User'>User</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-6327' class='srclink' href='../src/google_androidenterprise1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-androidenterprise1-f72144d9f18eac2f/out/lib.rs.html#13970' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_androidenterprise1/struct.User.html' title='google_androidenterprise1::User'>User</a></code></h4>
+<div class='docblock'><p>Returns a copy of the value. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone">Read more</a></p>
+</div><h4 id='method.clone_from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></h4>
+<div class='docblock'><p>Performs copy-assignment from <code>source</code>. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_androidenterprise1/struct.User.html' title='google_androidenterprise1::User'>User</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-6333' class='srclink' href='../src/google_androidenterprise1/Users/byron/dev/rs/google-apis-rs/target/debug/build/google-androidenterprise1-f72144d9f18eac2f/out/lib.rs.html#13970' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
+<div class='docblock'><p>Formats the value using the given formatter.</p>
+</div></div></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
@@ -108,6 +117,8 @@ The list links the activity name, along with information about where it is used 
                     <dd>Move down in search results</dd>
                     <dt>&#9166;</dt>
                     <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
                 </dl>
             </div>
 
@@ -128,7 +139,7 @@ The list links the activity name, along with information about where it is used 
 
                 <p>
                     Search functions by type signature (e.g.
-                    <code>vec -> usize</code>)
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
                 </p>
             </div>
         </div>

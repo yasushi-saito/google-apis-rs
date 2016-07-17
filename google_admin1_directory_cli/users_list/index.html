@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>List - directory v0.3.3+20151208</title>
+  <title>List - directory v0.3.5+20160323</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -38,7 +38,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> directory v0.3.3+20151208</a>
+        <a href=".." class="icon icon-home"> directory v0.3.5+20160323</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -899,7 +899,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">directory v0.3.3+20151208</a>
+        <a href="..">directory v0.3.5+20160323</a>
       </nav>
 
       
@@ -955,15 +955,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p order-by=string</strong></p>
+<p><strong>-p sort-order=string</strong></p>
 <ul>
-<li>Column to use for sorting results</li>
-</ul>
-</li>
-<li>
-<p><strong>-p domain=string</strong></p>
-<ul>
-<li>Name of the domain. Fill this field to get users from only this domain. To return all users in a multi-domain fill customer field instead.</li>
+<li>Whether to return results in ascending or descending order.</li>
 </ul>
 </li>
 <li>
@@ -973,27 +967,21 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p page-token=string</strong></p>
+<p><strong>-p domain=string</strong></p>
 <ul>
-<li>Token to specify next page in the list</li>
+<li>Name of the domain. Fill this field to get users from only this domain. To return all users in a multi-domain fill customer field instead.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p projection=string</strong></p>
+<p><strong>-p custom-field-mask=string</strong></p>
 <ul>
-<li>What subset of fields to fetch for this user.</li>
+<li>Comma-separated list of schema names. All fields from these schemas are fetched. This should only be set when projection=custom.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p sort-order=string</strong></p>
+<p><strong>-p order-by=string</strong></p>
 <ul>
-<li>Whether to return results in ascending or descending order.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p query=string</strong></p>
-<ul>
-<li>Query string search. Should be of the form &#34;&#34;. Complete documentation is at https://developers.google.com/admin-sdk/directory/v1/guides/search-users</li>
+<li>Column to use for sorting results</li>
 </ul>
 </li>
 <li>
@@ -1003,15 +991,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p event=string</strong></p>
+<p><strong>-p projection=string</strong></p>
 <ul>
-<li>Event on which subscription is intended (if subscribing)</li>
-</ul>
-</li>
-<li>
-<p><strong>-p custom-field-mask=string</strong></p>
-<ul>
-<li>Comma-separated list of schema names. All fields from these schemas are fetched. This should only be set when projection=custom.</li>
+<li>What subset of fields to fetch for this user.</li>
 </ul>
 </li>
 <li>
@@ -1024,6 +1006,24 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <p><strong>-p show-deleted=string</strong></p>
 <ul>
 <li>If set to true retrieves the list of deleted users. Default is false</li>
+</ul>
+</li>
+<li>
+<p><strong>-p page-token=string</strong></p>
+<ul>
+<li>Token to specify next page in the list</li>
+</ul>
+</li>
+<li>
+<p><strong>-p query=string</strong></p>
+<ul>
+<li>Query string search. Should be of the form &#34;&#34;. Complete documentation is at https://developers.google.com/admin-sdk/directory/v1/guides/search-users</li>
+</ul>
+</li>
+<li>
+<p><strong>-p event=string</strong></p>
+<ul>
+<li>Event on which subscription is intended (if subscribing)</li>
 </ul>
 </li>
 </ul>
