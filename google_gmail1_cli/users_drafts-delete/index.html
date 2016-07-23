@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Drafts Delete - gmail v0.3.5+20160316</title>
+  <title>Drafts Delete - gmail v0.3.6+20160316</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -17,12 +17,6 @@
   <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
   <link rel="stylesheet" href="../css/highlight.css">
 
-  
-  <script>
-    // Current page data
-    var mkdocs_page_name = "Drafts Delete";
-  </script>
-  
   <script src="../js/jquery-2.1.1.min.js"></script>
   <script src="../js/modernizr-2.8.3.min.js"></script>
   <script type="text/javascript" src="../js/highlight.pack.js"></script>
@@ -38,277 +32,207 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> gmail v0.3.5+20160316</a>
-        <div role="search">
-  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
-  </form>
-</div>
+        <a href=".." class="icon icon-home"> gmail v0.3.6+20160316</a>
+        
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-        <ul class="current">
-          
-            <li>
-    <li class="toctree-l1 ">
-        <a class="" href="..">Home</a>
+      <ul class="current">
+    
         
-    </li>
-<li>
-          
-            <li>
-    <ul class="subnav">
-    <li><span>Users</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../users_drafts-create/">Drafts Create</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 current">
-        <a class="current" href="./">Drafts Delete</a>
-        
-            <ul>
-            
-                <li class="toctree-l3"><a href="#scopes">Scopes</a></li>
+            <li class="toctree-l1 ">
+                <a class="" href="..">Home</a>
                 
-            
-                <li class="toctree-l3"><a href="#required-scalar-arguments">Required Scalar Arguments</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#optional-general-properties">Optional General Properties</a></li>
-                
-            
-            </ul>
+            </li>
         
-    </li>
 
+    
         
+            <span>Users</span>
             
-    <li class="toctree-l1 ">
-        <a class="" href="../users_drafts-get/">Drafts Get</a>
-        
-    </li>
-
-        
+                <li class="toctree-l2 ">
+                    <a class="" href="../users_drafts-create/">Drafts Create</a>
+                    
+                </li>
             
-    <li class="toctree-l1 ">
-        <a class="" href="../users_drafts-list/">Drafts List</a>
-        
-    </li>
-
-        
+                <li class="toctree-l2 current">
+                    <a class="current" href="./">Drafts Delete</a>
+                    
+                        <ul>
+                        
+                            <li class="toctree-l3"><a href="#scopes">Scopes</a></li>
+                            
+                        
+                            <li class="toctree-l3"><a href="#required-scalar-arguments">Required Scalar Arguments</a></li>
+                            
+                        
+                            <li class="toctree-l3"><a href="#optional-general-properties">Optional General Properties</a></li>
+                            
+                        
+                        </ul>
+                    
+                </li>
             
-    <li class="toctree-l1 ">
-        <a class="" href="../users_drafts-send/">Drafts Send</a>
-        
-    </li>
-
-        
+                <li class="toctree-l2 ">
+                    <a class="" href="../users_drafts-get/">Drafts Get</a>
+                    
+                </li>
             
-    <li class="toctree-l1 ">
-        <a class="" href="../users_drafts-update/">Drafts Update</a>
-        
-    </li>
-
-        
+                <li class="toctree-l2 ">
+                    <a class="" href="../users_drafts-list/">Drafts List</a>
+                    
+                </li>
             
-    <li class="toctree-l1 ">
-        <a class="" href="../users_get-profile/">Get Profile</a>
-        
-    </li>
-
-        
+                <li class="toctree-l2 ">
+                    <a class="" href="../users_drafts-send/">Drafts Send</a>
+                    
+                </li>
             
-    <li class="toctree-l1 ">
-        <a class="" href="../users_history-list/">History List</a>
-        
-    </li>
-
-        
+                <li class="toctree-l2 ">
+                    <a class="" href="../users_drafts-update/">Drafts Update</a>
+                    
+                </li>
             
-    <li class="toctree-l1 ">
-        <a class="" href="../users_labels-create/">Labels Create</a>
-        
-    </li>
-
-        
+                <li class="toctree-l2 ">
+                    <a class="" href="../users_get-profile/">Get Profile</a>
+                    
+                </li>
             
-    <li class="toctree-l1 ">
-        <a class="" href="../users_labels-delete/">Labels Delete</a>
-        
-    </li>
-
-        
+                <li class="toctree-l2 ">
+                    <a class="" href="../users_history-list/">History List</a>
+                    
+                </li>
             
-    <li class="toctree-l1 ">
-        <a class="" href="../users_labels-get/">Labels Get</a>
-        
-    </li>
-
-        
+                <li class="toctree-l2 ">
+                    <a class="" href="../users_labels-create/">Labels Create</a>
+                    
+                </li>
             
-    <li class="toctree-l1 ">
-        <a class="" href="../users_labels-list/">Labels List</a>
-        
-    </li>
-
-        
+                <li class="toctree-l2 ">
+                    <a class="" href="../users_labels-delete/">Labels Delete</a>
+                    
+                </li>
             
-    <li class="toctree-l1 ">
-        <a class="" href="../users_labels-patch/">Labels Patch</a>
-        
-    </li>
-
-        
+                <li class="toctree-l2 ">
+                    <a class="" href="../users_labels-get/">Labels Get</a>
+                    
+                </li>
             
-    <li class="toctree-l1 ">
-        <a class="" href="../users_labels-update/">Labels Update</a>
-        
-    </li>
-
-        
+                <li class="toctree-l2 ">
+                    <a class="" href="../users_labels-list/">Labels List</a>
+                    
+                </li>
             
-    <li class="toctree-l1 ">
-        <a class="" href="../users_messages-attachments-get/">Messages Attachments Get</a>
-        
-    </li>
-
-        
+                <li class="toctree-l2 ">
+                    <a class="" href="../users_labels-patch/">Labels Patch</a>
+                    
+                </li>
             
-    <li class="toctree-l1 ">
-        <a class="" href="../users_messages-batch-delete/">Messages Batch Delete</a>
-        
-    </li>
-
-        
+                <li class="toctree-l2 ">
+                    <a class="" href="../users_labels-update/">Labels Update</a>
+                    
+                </li>
             
-    <li class="toctree-l1 ">
-        <a class="" href="../users_messages-delete/">Messages Delete</a>
-        
-    </li>
-
-        
+                <li class="toctree-l2 ">
+                    <a class="" href="../users_messages-attachments-get/">Messages Attachments Get</a>
+                    
+                </li>
             
-    <li class="toctree-l1 ">
-        <a class="" href="../users_messages-get/">Messages Get</a>
-        
-    </li>
-
-        
+                <li class="toctree-l2 ">
+                    <a class="" href="../users_messages-batch-delete/">Messages Batch Delete</a>
+                    
+                </li>
             
-    <li class="toctree-l1 ">
-        <a class="" href="../users_messages-import/">Messages Import</a>
-        
-    </li>
-
-        
+                <li class="toctree-l2 ">
+                    <a class="" href="../users_messages-delete/">Messages Delete</a>
+                    
+                </li>
             
-    <li class="toctree-l1 ">
-        <a class="" href="../users_messages-insert/">Messages Insert</a>
-        
-    </li>
-
-        
+                <li class="toctree-l2 ">
+                    <a class="" href="../users_messages-get/">Messages Get</a>
+                    
+                </li>
             
-    <li class="toctree-l1 ">
-        <a class="" href="../users_messages-list/">Messages List</a>
-        
-    </li>
-
-        
+                <li class="toctree-l2 ">
+                    <a class="" href="../users_messages-import/">Messages Import</a>
+                    
+                </li>
             
-    <li class="toctree-l1 ">
-        <a class="" href="../users_messages-modify/">Messages Modify</a>
-        
-    </li>
-
-        
+                <li class="toctree-l2 ">
+                    <a class="" href="../users_messages-insert/">Messages Insert</a>
+                    
+                </li>
             
-    <li class="toctree-l1 ">
-        <a class="" href="../users_messages-send/">Messages Send</a>
-        
-    </li>
-
-        
+                <li class="toctree-l2 ">
+                    <a class="" href="../users_messages-list/">Messages List</a>
+                    
+                </li>
             
-    <li class="toctree-l1 ">
-        <a class="" href="../users_messages-trash/">Messages Trash</a>
-        
-    </li>
-
-        
+                <li class="toctree-l2 ">
+                    <a class="" href="../users_messages-modify/">Messages Modify</a>
+                    
+                </li>
             
-    <li class="toctree-l1 ">
-        <a class="" href="../users_messages-untrash/">Messages Untrash</a>
-        
-    </li>
-
-        
+                <li class="toctree-l2 ">
+                    <a class="" href="../users_messages-send/">Messages Send</a>
+                    
+                </li>
             
-    <li class="toctree-l1 ">
-        <a class="" href="../users_stop/">Stop</a>
-        
-    </li>
-
-        
+                <li class="toctree-l2 ">
+                    <a class="" href="../users_messages-trash/">Messages Trash</a>
+                    
+                </li>
             
-    <li class="toctree-l1 ">
-        <a class="" href="../users_threads-delete/">Threads Delete</a>
-        
-    </li>
-
-        
+                <li class="toctree-l2 ">
+                    <a class="" href="../users_messages-untrash/">Messages Untrash</a>
+                    
+                </li>
             
-    <li class="toctree-l1 ">
-        <a class="" href="../users_threads-get/">Threads Get</a>
-        
-    </li>
-
-        
+                <li class="toctree-l2 ">
+                    <a class="" href="../users_stop/">Stop</a>
+                    
+                </li>
             
-    <li class="toctree-l1 ">
-        <a class="" href="../users_threads-list/">Threads List</a>
-        
-    </li>
-
-        
+                <li class="toctree-l2 ">
+                    <a class="" href="../users_threads-delete/">Threads Delete</a>
+                    
+                </li>
             
-    <li class="toctree-l1 ">
-        <a class="" href="../users_threads-modify/">Threads Modify</a>
-        
-    </li>
-
-        
+                <li class="toctree-l2 ">
+                    <a class="" href="../users_threads-get/">Threads Get</a>
+                    
+                </li>
             
-    <li class="toctree-l1 ">
-        <a class="" href="../users_threads-trash/">Threads Trash</a>
-        
-    </li>
-
-        
+                <li class="toctree-l2 ">
+                    <a class="" href="../users_threads-list/">Threads List</a>
+                    
+                </li>
             
-    <li class="toctree-l1 ">
-        <a class="" href="../users_threads-untrash/">Threads Untrash</a>
-        
-    </li>
-
-        
+                <li class="toctree-l2 ">
+                    <a class="" href="../users_threads-modify/">Threads Modify</a>
+                    
+                </li>
             
-    <li class="toctree-l1 ">
-        <a class="" href="../users_watch/">Watch</a>
+                <li class="toctree-l2 ">
+                    <a class="" href="../users_threads-trash/">Threads Trash</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../users_threads-untrash/">Threads Untrash</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../users_watch/">Watch</a>
+                    
+                </li>
+            
         
-    </li>
 
-        
-    </ul>
-<li>
-          
-        </ul>
+    
+</ul>
+
       </div>
       &nbsp;
     </nav>
@@ -318,7 +242,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">gmail v0.3.5+20160316</a>
+        <a href="..">gmail v0.3.6+20160316</a>
       </nav>
 
       
@@ -329,26 +253,23 @@
     <li><a href="..">Docs</a> &raquo;</li>
     
       
-        
-          <li>Users &raquo;</li>
-        
+        <li>Users &raquo;</li>
       
     
     <li>Drafts Delete</li>
-    <li class="wy-breadcrumbs-aside">
-      
+      <li class="wy-breadcrumbs-aside">
         
-          <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/gmail1-cli" class="icon icon-github"> Edit on GitHub</a>
+          
+            <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/gmail1-cli" class="icon icon-github"> Edit on GitHub</a>
+          
         
-      
-    </li>
+      </li>
   </ul>
   <hr/>
 </div>
           <div role="main">
             <div class="section">
-              
-                <p>Immediately and permanently deletes the specified draft. Does not simply trash it.</p>
+              <p>Immediately and permanently deletes the specified draft. Does not simply trash it.</p>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for at least one of the following scopes to make a valid call:</p>
 <ul>
@@ -415,7 +336,6 @@ You can set the scope for this method like this: <code>gmail1 --scope &lt;scope&
 </ul>
 </li>
 </ul>
-              
             </div>
           </div>
           <footer>
@@ -433,10 +353,9 @@ You can set the scope for this method like this: <code>gmail1 --scope &lt;scope&
   <hr/>
 
   <div role="contentinfo">
+    <p>
     <!-- Copyright etc -->
-    
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
-    
+    </p>
   </div>
 
   Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
@@ -451,17 +370,17 @@ You can set the scope for this method like this: <code>gmail1 --scope &lt;scope&
 
 <div class="rst-versions" role="note" style="cursor: pointer">
     <span class="rst-current-version" data-toggle="rst-current-version">
-      
-          <a class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
-      
-      
-        <span><a href="../users_drafts-create/" style="color: #fcfcfc;">&laquo; Previous</a></span>
-      
-      
-        <span style="margin-left: 15px"><a href="../users_drafts-get/" style="color: #fcfcfc">Next &raquo;</a></span>
-      
+        
+            <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/gmail1-cli" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+        
+      <span><a href="../users_drafts-create/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      <span style="margin-left: 15px"><a href="../users_drafts-get/" style="color: #fcfcfc">Next &raquo;</a></span>
     </span>
 </div>
 
+<!--
+MkDocs version  : 0.12.2
+Docs Build Date : 2016-07-23 16:05:49.923420
+-->
 </body>
 </html>

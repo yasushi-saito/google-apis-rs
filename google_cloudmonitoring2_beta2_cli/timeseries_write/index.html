@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Write - Cloud Monitoring v0.3.5+20160403</title>
+  <title>Write - Cloud Monitoring v0.3.6+20160403</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -17,12 +17,6 @@
   <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
   <link rel="stylesheet" href="../css/highlight.css">
 
-  
-  <script>
-    // Current page data
-    var mkdocs_page_name = "Write";
-  </script>
-  
   <script src="../js/jquery-2.1.1.min.js"></script>
   <script src="../js/modernizr-2.8.3.min.js"></script>
   <script type="text/javascript" src="../js/highlight.pack.js"></script>
@@ -38,112 +32,92 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Cloud Monitoring v0.3.5+20160403</a>
-        <div role="search">
-  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
-  </form>
-</div>
+        <a href=".." class="icon icon-home"> Cloud Monitoring v0.3.6+20160403</a>
+        
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-        <ul class="current">
-          
-            <li>
-    <li class="toctree-l1 ">
-        <a class="" href="..">Home</a>
+      <ul class="current">
+    
         
-    </li>
-<li>
-          
-            <li>
-    <ul class="subnav">
-    <li><span>Metric Descriptors</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../metric-descriptors_create/">Create</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../metric-descriptors_delete/">Delete</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../metric-descriptors_list/">List</a>
-        
-    </li>
-
-        
-    </ul>
-<li>
-          
-            <li>
-    <ul class="subnav">
-    <li><span>Timeseries</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../timeseries_list/">List</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 current">
-        <a class="current" href="./">Write</a>
-        
-            <ul>
-            
-                <li class="toctree-l3"><a href="#scopes">Scopes</a></li>
+            <li class="toctree-l1 ">
+                <a class="" href="..">Home</a>
                 
-            
-                <li class="toctree-l3"><a href="#required-scalar-argument">Required Scalar Argument</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#required-request-value">Required Request Value</a></li>
-                
-                    <li><a class="toctree-l4" href="#about-cursors">About Cursors</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#optional-output-flags">Optional Output Flags</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#optional-general-properties">Optional General Properties</a></li>
-                
-            
-            </ul>
+            </li>
         
-    </li>
 
+    
         
-    </ul>
-<li>
-          
-            <li>
-    <ul class="subnav">
-    <li><span>Timeseries Descriptors</span></li>
-
-        
+            <span>Metric Descriptors</span>
             
-    <li class="toctree-l1 ">
-        <a class="" href="../timeseries-descriptors_list/">List</a>
+                <li class="toctree-l2 ">
+                    <a class="" href="../metric-descriptors_create/">Create</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../metric-descriptors_delete/">Delete</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../metric-descriptors_list/">List</a>
+                    
+                </li>
+            
         
-    </li>
 
+    
         
-    </ul>
-<li>
-          
-        </ul>
+            <span>Timeseries</span>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../timeseries_list/">List</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 current">
+                    <a class="current" href="./">Write</a>
+                    
+                        <ul>
+                        
+                            <li class="toctree-l3"><a href="#scopes">Scopes</a></li>
+                            
+                        
+                            <li class="toctree-l3"><a href="#required-scalar-argument">Required Scalar Argument</a></li>
+                            
+                        
+                            <li class="toctree-l3"><a href="#required-request-value">Required Request Value</a></li>
+                            
+                                <li><a class="toctree-l4" href="#about-cursors">About Cursors</a></li>
+                            
+                        
+                            <li class="toctree-l3"><a href="#optional-output-flags">Optional Output Flags</a></li>
+                            
+                        
+                            <li class="toctree-l3"><a href="#optional-general-properties">Optional General Properties</a></li>
+                            
+                        
+                        </ul>
+                    
+                </li>
+            
+        
+
+    
+        
+            <span>Timeseries Descriptors</span>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../timeseries-descriptors_list/">List</a>
+                    
+                </li>
+            
+        
+
+    
+</ul>
+
       </div>
       &nbsp;
     </nav>
@@ -153,7 +127,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Cloud Monitoring v0.3.5+20160403</a>
+        <a href="..">Cloud Monitoring v0.3.6+20160403</a>
       </nav>
 
       
@@ -164,26 +138,23 @@
     <li><a href="..">Docs</a> &raquo;</li>
     
       
-        
-          <li>Timeseries &raquo;</li>
-        
+        <li>Timeseries &raquo;</li>
       
     
     <li>Write</li>
-    <li class="wy-breadcrumbs-aside">
-      
+      <li class="wy-breadcrumbs-aside">
         
-          <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/cloudmonitoring2_beta2-cli" class="icon icon-github"> Edit on GitHub</a>
+          
+            <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/cloudmonitoring2_beta2-cli" class="icon icon-github"> Edit on GitHub</a>
+          
         
-      
-    </li>
+      </li>
   </ul>
   <hr/>
 </div>
           <div role="main">
             <div class="section">
-              
-                <p>Put data points to one or more time series for one or more metrics. If a time series does not exist, a new time series will be created. It is not allowed to write a time series point that is older than the existing youngest point of that time series. Points that are older than the existing youngest point of that time series will be discarded silently. Therefore, users should make sure that points of a time series are written sequentially in the order of their end time.</p>
+              <p>Put data points to one or more time series for one or more metrics. If a time series does not exist, a new time series will be created. It is not allowed to write a time series point that is older than the existing youngest point of that time series. Points that are older than the existing youngest point of that time series will be discarded silently. Therefore, users should make sure that points of a time series are written sequentially in the order of their end time.</p>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for at least one of the following scopes to make a valid call:</p>
 <ul>
@@ -281,7 +252,6 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 </ul>
-              
             </div>
           </div>
           <footer>
@@ -299,10 +269,9 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   <hr/>
 
   <div role="contentinfo">
+    <p>
     <!-- Copyright etc -->
-    
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
-    
+    </p>
   </div>
 
   Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
@@ -317,17 +286,17 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <div class="rst-versions" role="note" style="cursor: pointer">
     <span class="rst-current-version" data-toggle="rst-current-version">
-      
-          <a class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
-      
-      
-        <span><a href="../timeseries_list/" style="color: #fcfcfc;">&laquo; Previous</a></span>
-      
-      
-        <span style="margin-left: 15px"><a href="../timeseries-descriptors_list/" style="color: #fcfcfc">Next &raquo;</a></span>
-      
+        
+            <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/cloudmonitoring2_beta2-cli" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+        
+      <span><a href="../timeseries_list/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      <span style="margin-left: 15px"><a href="../timeseries-descriptors_list/" style="color: #fcfcfc">Next &raquo;</a></span>
     </span>
 </div>
 
+<!--
+MkDocs version  : 0.12.2
+Docs Build Date : 2016-07-23 16:05:22.353143
+-->
 </body>
 </html>

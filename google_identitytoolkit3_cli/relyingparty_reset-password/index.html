@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Reset Password - Identity Toolkit v0.3.5+20160324</title>
+  <title>Reset Password - Identity Toolkit v0.3.6+20160324</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -17,12 +17,6 @@
   <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
   <link rel="stylesheet" href="../css/highlight.css">
 
-  
-  <script>
-    // Current page data
-    var mkdocs_page_name = "Reset Password";
-  </script>
-  
   <script src="../js/jquery-2.1.1.min.js"></script>
   <script src="../js/modernizr-2.8.3.min.js"></script>
   <script type="text/javascript" src="../js/highlight.pack.js"></script>
@@ -38,167 +32,129 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Identity Toolkit v0.3.5+20160324</a>
-        <div role="search">
-  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
-  </form>
-</div>
+        <a href=".." class="icon icon-home"> Identity Toolkit v0.3.6+20160324</a>
+        
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-        <ul class="current">
-          
-            <li>
-    <li class="toctree-l1 ">
-        <a class="" href="..">Home</a>
+      <ul class="current">
+    
         
-    </li>
-<li>
-          
-            <li>
-    <ul class="subnav">
-    <li><span>Relyingparty</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../relyingparty_create-auth-uri/">Create Auth Uri</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../relyingparty_delete-account/">Delete Account</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../relyingparty_download-account/">Download Account</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../relyingparty_get-account-info/">Get Account Info</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../relyingparty_get-oob-confirmation-code/">Get Oob Confirmation Code</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../relyingparty_get-project-config/">Get Project Config</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../relyingparty_get-public-keys/">Get Public Keys</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../relyingparty_get-recaptcha-param/">Get Recaptcha Param</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 current">
-        <a class="current" href="./">Reset Password</a>
-        
-            <ul>
-            
-                <li class="toctree-l3"><a href="#required-request-value">Required Request Value</a></li>
+            <li class="toctree-l1 ">
+                <a class="" href="..">Home</a>
                 
-                    <li><a class="toctree-l4" href="#about-cursors">About Cursors</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#optional-output-flags">Optional Output Flags</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#optional-general-properties">Optional General Properties</a></li>
-                
-            
-            </ul>
+            </li>
         
-    </li>
 
+    
         
+            <span>Relyingparty</span>
             
-    <li class="toctree-l1 ">
-        <a class="" href="../relyingparty_set-account-info/">Set Account Info</a>
-        
-    </li>
-
-        
+                <li class="toctree-l2 ">
+                    <a class="" href="../relyingparty_create-auth-uri/">Create Auth Uri</a>
+                    
+                </li>
             
-    <li class="toctree-l1 ">
-        <a class="" href="../relyingparty_set-project-config/">Set Project Config</a>
-        
-    </li>
-
-        
+                <li class="toctree-l2 ">
+                    <a class="" href="../relyingparty_delete-account/">Delete Account</a>
+                    
+                </li>
             
-    <li class="toctree-l1 ">
-        <a class="" href="../relyingparty_sign-out-user/">Sign Out User</a>
-        
-    </li>
-
-        
+                <li class="toctree-l2 ">
+                    <a class="" href="../relyingparty_download-account/">Download Account</a>
+                    
+                </li>
             
-    <li class="toctree-l1 ">
-        <a class="" href="../relyingparty_signup-new-user/">Signup New User</a>
-        
-    </li>
-
-        
+                <li class="toctree-l2 ">
+                    <a class="" href="../relyingparty_get-account-info/">Get Account Info</a>
+                    
+                </li>
             
-    <li class="toctree-l1 ">
-        <a class="" href="../relyingparty_upload-account/">Upload Account</a>
-        
-    </li>
-
-        
+                <li class="toctree-l2 ">
+                    <a class="" href="../relyingparty_get-oob-confirmation-code/">Get Oob Confirmation Code</a>
+                    
+                </li>
             
-    <li class="toctree-l1 ">
-        <a class="" href="../relyingparty_verify-assertion/">Verify Assertion</a>
-        
-    </li>
-
-        
+                <li class="toctree-l2 ">
+                    <a class="" href="../relyingparty_get-project-config/">Get Project Config</a>
+                    
+                </li>
             
-    <li class="toctree-l1 ">
-        <a class="" href="../relyingparty_verify-custom-token/">Verify Custom Token</a>
-        
-    </li>
-
-        
+                <li class="toctree-l2 ">
+                    <a class="" href="../relyingparty_get-public-keys/">Get Public Keys</a>
+                    
+                </li>
             
-    <li class="toctree-l1 ">
-        <a class="" href="../relyingparty_verify-password/">Verify Password</a>
+                <li class="toctree-l2 ">
+                    <a class="" href="../relyingparty_get-recaptcha-param/">Get Recaptcha Param</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 current">
+                    <a class="current" href="./">Reset Password</a>
+                    
+                        <ul>
+                        
+                            <li class="toctree-l3"><a href="#required-request-value">Required Request Value</a></li>
+                            
+                                <li><a class="toctree-l4" href="#about-cursors">About Cursors</a></li>
+                            
+                        
+                            <li class="toctree-l3"><a href="#optional-output-flags">Optional Output Flags</a></li>
+                            
+                        
+                            <li class="toctree-l3"><a href="#optional-general-properties">Optional General Properties</a></li>
+                            
+                        
+                        </ul>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../relyingparty_set-account-info/">Set Account Info</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../relyingparty_set-project-config/">Set Project Config</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../relyingparty_sign-out-user/">Sign Out User</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../relyingparty_signup-new-user/">Signup New User</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../relyingparty_upload-account/">Upload Account</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../relyingparty_verify-assertion/">Verify Assertion</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../relyingparty_verify-custom-token/">Verify Custom Token</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../relyingparty_verify-password/">Verify Password</a>
+                    
+                </li>
+            
         
-    </li>
 
-        
-    </ul>
-<li>
-          
-        </ul>
+    
+</ul>
+
       </div>
       &nbsp;
     </nav>
@@ -208,7 +164,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Identity Toolkit v0.3.5+20160324</a>
+        <a href="..">Identity Toolkit v0.3.6+20160324</a>
       </nav>
 
       
@@ -219,26 +175,23 @@
     <li><a href="..">Docs</a> &raquo;</li>
     
       
-        
-          <li>Relyingparty &raquo;</li>
-        
+        <li>Relyingparty &raquo;</li>
       
     
     <li>Reset Password</li>
-    <li class="wy-breadcrumbs-aside">
-      
+      <li class="wy-breadcrumbs-aside">
         
-          <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/identitytoolkit3-cli" class="icon icon-github"> Edit on GitHub</a>
+          
+            <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/identitytoolkit3-cli" class="icon icon-github"> Edit on GitHub</a>
+          
         
-      
-    </li>
+      </li>
   </ul>
   <hr/>
 </div>
           <div role="main">
             <div class="section">
-              
-                <p>Reset password for a user.</p>
+              <p>Reset password for a user.</p>
 <h1 id="required-request-value">Required Request Value</h1>
 <p>The request value is a data-structure with various fields. Each field may be a simple scalar or another data-structure.
 In the latter case it is advised to set the field-cursor to the data-structure's field to specify values more concisely.</p>
@@ -335,7 +288,6 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 </ul>
-              
             </div>
           </div>
           <footer>
@@ -353,10 +305,9 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   <hr/>
 
   <div role="contentinfo">
+    <p>
     <!-- Copyright etc -->
-    
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
-    
+    </p>
   </div>
 
   Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
@@ -371,17 +322,17 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <div class="rst-versions" role="note" style="cursor: pointer">
     <span class="rst-current-version" data-toggle="rst-current-version">
-      
-          <a class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
-      
-      
-        <span><a href="../relyingparty_get-recaptcha-param/" style="color: #fcfcfc;">&laquo; Previous</a></span>
-      
-      
-        <span style="margin-left: 15px"><a href="../relyingparty_set-account-info/" style="color: #fcfcfc">Next &raquo;</a></span>
-      
+        
+            <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/identitytoolkit3-cli" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+        
+      <span><a href="../relyingparty_get-recaptcha-param/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      <span style="margin-left: 15px"><a href="../relyingparty_set-account-info/" style="color: #fcfcfc">Next &raquo;</a></span>
     </span>
 </div>
 
+<!--
+MkDocs version  : 0.12.2
+Docs Build Date : 2016-07-23 16:06:06.054305
+-->
 </body>
 </html>

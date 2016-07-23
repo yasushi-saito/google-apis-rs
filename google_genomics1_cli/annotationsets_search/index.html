@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Search - genomics v0.3.5+20160407</title>
+  <title>Search - genomics v0.3.6+20160407</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -17,12 +17,6 @@
   <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
   <link rel="stylesheet" href="../css/highlight.css">
 
-  
-  <script>
-    // Current page data
-    var mkdocs_page_name = "Search";
-  </script>
-  
   <script src="../js/jquery-2.1.1.min.js"></script>
   <script src="../js/modernizr-2.8.3.min.js"></script>
   <script type="text/javascript" src="../js/highlight.pack.js"></script>
@@ -38,523 +32,387 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> genomics v0.3.5+20160407</a>
-        <div role="search">
-  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
-  </form>
-</div>
+        <a href=".." class="icon icon-home"> genomics v0.3.6+20160407</a>
+        
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-        <ul class="current">
-          
-            <li>
-    <li class="toctree-l1 ">
-        <a class="" href="..">Home</a>
+      <ul class="current">
+    
         
-    </li>
-<li>
-          
-            <li>
-    <ul class="subnav">
-    <li><span>Annotations</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../annotations_batch-create/">Batch Create</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../annotations_create/">Create</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../annotations_delete/">Delete</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../annotations_get/">Get</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../annotations_search/">Search</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../annotations_update/">Update</a>
-        
-    </li>
-
-        
-    </ul>
-<li>
-          
-            <li>
-    <ul class="subnav">
-    <li><span>Annotationsets</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../annotationsets_create/">Create</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../annotationsets_delete/">Delete</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../annotationsets_get/">Get</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 current">
-        <a class="current" href="./">Search</a>
-        
-            <ul>
-            
-                <li class="toctree-l3"><a href="#scopes">Scopes</a></li>
+            <li class="toctree-l1 ">
+                <a class="" href="..">Home</a>
                 
+            </li>
+        
+
+    
+        
+            <span>Annotations</span>
             
-                <li class="toctree-l3"><a href="#required-request-value">Required Request Value</a></li>
-                
-                    <li><a class="toctree-l4" href="#about-cursors">About Cursors</a></li>
-                
+                <li class="toctree-l2 ">
+                    <a class="" href="../annotations_batch-create/">Batch Create</a>
+                    
+                </li>
             
-                <li class="toctree-l3"><a href="#optional-output-flags">Optional Output Flags</a></li>
-                
+                <li class="toctree-l2 ">
+                    <a class="" href="../annotations_create/">Create</a>
+                    
+                </li>
             
-                <li class="toctree-l3"><a href="#optional-general-properties">Optional General Properties</a></li>
-                
+                <li class="toctree-l2 ">
+                    <a class="" href="../annotations_delete/">Delete</a>
+                    
+                </li>
             
-            </ul>
-        
-    </li>
-
-        
+                <li class="toctree-l2 ">
+                    <a class="" href="../annotations_get/">Get</a>
+                    
+                </li>
             
-    <li class="toctree-l1 ">
-        <a class="" href="../annotationsets_update/">Update</a>
-        
-    </li>
-
-        
-    </ul>
-<li>
-          
-            <li>
-    <ul class="subnav">
-    <li><span>Callsets</span></li>
-
-        
+                <li class="toctree-l2 ">
+                    <a class="" href="../annotations_search/">Search</a>
+                    
+                </li>
             
-    <li class="toctree-l1 ">
-        <a class="" href="../callsets_create/">Create</a>
-        
-    </li>
-
-        
+                <li class="toctree-l2 ">
+                    <a class="" href="../annotations_update/">Update</a>
+                    
+                </li>
             
-    <li class="toctree-l1 ">
-        <a class="" href="../callsets_delete/">Delete</a>
         
-    </li>
 
+    
         
+            <span>Annotationsets</span>
             
-    <li class="toctree-l1 ">
-        <a class="" href="../callsets_get/">Get</a>
-        
-    </li>
-
-        
+                <li class="toctree-l2 ">
+                    <a class="" href="../annotationsets_create/">Create</a>
+                    
+                </li>
             
-    <li class="toctree-l1 ">
-        <a class="" href="../callsets_patch/">Patch</a>
-        
-    </li>
-
-        
+                <li class="toctree-l2 ">
+                    <a class="" href="../annotationsets_delete/">Delete</a>
+                    
+                </li>
             
-    <li class="toctree-l1 ">
-        <a class="" href="../callsets_search/">Search</a>
-        
-    </li>
-
-        
-    </ul>
-<li>
-          
-            <li>
-    <ul class="subnav">
-    <li><span>Datasets</span></li>
-
-        
+                <li class="toctree-l2 ">
+                    <a class="" href="../annotationsets_get/">Get</a>
+                    
+                </li>
             
-    <li class="toctree-l1 ">
-        <a class="" href="../datasets_create/">Create</a>
-        
-    </li>
-
-        
+                <li class="toctree-l2 current">
+                    <a class="current" href="./">Search</a>
+                    
+                        <ul>
+                        
+                            <li class="toctree-l3"><a href="#scopes">Scopes</a></li>
+                            
+                        
+                            <li class="toctree-l3"><a href="#required-request-value">Required Request Value</a></li>
+                            
+                                <li><a class="toctree-l4" href="#about-cursors">About Cursors</a></li>
+                            
+                        
+                            <li class="toctree-l3"><a href="#optional-output-flags">Optional Output Flags</a></li>
+                            
+                        
+                            <li class="toctree-l3"><a href="#optional-general-properties">Optional General Properties</a></li>
+                            
+                        
+                        </ul>
+                    
+                </li>
             
-    <li class="toctree-l1 ">
-        <a class="" href="../datasets_delete/">Delete</a>
-        
-    </li>
-
-        
+                <li class="toctree-l2 ">
+                    <a class="" href="../annotationsets_update/">Update</a>
+                    
+                </li>
             
-    <li class="toctree-l1 ">
-        <a class="" href="../datasets_get/">Get</a>
         
-    </li>
 
+    
         
+            <span>Callsets</span>
             
-    <li class="toctree-l1 ">
-        <a class="" href="../datasets_get-iam-policy/">Get Iam Policy</a>
-        
-    </li>
-
-        
+                <li class="toctree-l2 ">
+                    <a class="" href="../callsets_create/">Create</a>
+                    
+                </li>
             
-    <li class="toctree-l1 ">
-        <a class="" href="../datasets_list/">List</a>
-        
-    </li>
-
-        
+                <li class="toctree-l2 ">
+                    <a class="" href="../callsets_delete/">Delete</a>
+                    
+                </li>
             
-    <li class="toctree-l1 ">
-        <a class="" href="../datasets_patch/">Patch</a>
-        
-    </li>
-
-        
+                <li class="toctree-l2 ">
+                    <a class="" href="../callsets_get/">Get</a>
+                    
+                </li>
             
-    <li class="toctree-l1 ">
-        <a class="" href="../datasets_set-iam-policy/">Set Iam Policy</a>
-        
-    </li>
-
-        
+                <li class="toctree-l2 ">
+                    <a class="" href="../callsets_patch/">Patch</a>
+                    
+                </li>
             
-    <li class="toctree-l1 ">
-        <a class="" href="../datasets_test-iam-permissions/">Test Iam Permissions</a>
-        
-    </li>
-
-        
+                <li class="toctree-l2 ">
+                    <a class="" href="../callsets_search/">Search</a>
+                    
+                </li>
             
-    <li class="toctree-l1 ">
-        <a class="" href="../datasets_undelete/">Undelete</a>
         
-    </li>
 
+    
         
-    </ul>
-<li>
-          
-            <li>
-    <ul class="subnav">
-    <li><span>Operations</span></li>
-
-        
+            <span>Datasets</span>
             
-    <li class="toctree-l1 ">
-        <a class="" href="../operations_cancel/">Cancel</a>
-        
-    </li>
-
-        
+                <li class="toctree-l2 ">
+                    <a class="" href="../datasets_create/">Create</a>
+                    
+                </li>
             
-    <li class="toctree-l1 ">
-        <a class="" href="../operations_get/">Get</a>
-        
-    </li>
-
-        
+                <li class="toctree-l2 ">
+                    <a class="" href="../datasets_delete/">Delete</a>
+                    
+                </li>
             
-    <li class="toctree-l1 ">
-        <a class="" href="../operations_list/">List</a>
-        
-    </li>
-
-        
-    </ul>
-<li>
-          
-            <li>
-    <ul class="subnav">
-    <li><span>Readgroupsets</span></li>
-
-        
+                <li class="toctree-l2 ">
+                    <a class="" href="../datasets_get/">Get</a>
+                    
+                </li>
             
-    <li class="toctree-l1 ">
-        <a class="" href="../readgroupsets_coveragebuckets-list/">Coveragebuckets List</a>
-        
-    </li>
-
-        
+                <li class="toctree-l2 ">
+                    <a class="" href="../datasets_get-iam-policy/">Get Iam Policy</a>
+                    
+                </li>
             
-    <li class="toctree-l1 ">
-        <a class="" href="../readgroupsets_delete/">Delete</a>
-        
-    </li>
-
-        
+                <li class="toctree-l2 ">
+                    <a class="" href="../datasets_list/">List</a>
+                    
+                </li>
             
-    <li class="toctree-l1 ">
-        <a class="" href="../readgroupsets_export/">Export</a>
-        
-    </li>
-
-        
+                <li class="toctree-l2 ">
+                    <a class="" href="../datasets_patch/">Patch</a>
+                    
+                </li>
             
-    <li class="toctree-l1 ">
-        <a class="" href="../readgroupsets_get/">Get</a>
-        
-    </li>
-
-        
+                <li class="toctree-l2 ">
+                    <a class="" href="../datasets_set-iam-policy/">Set Iam Policy</a>
+                    
+                </li>
             
-    <li class="toctree-l1 ">
-        <a class="" href="../readgroupsets_import/">Import</a>
-        
-    </li>
-
-        
+                <li class="toctree-l2 ">
+                    <a class="" href="../datasets_test-iam-permissions/">Test Iam Permissions</a>
+                    
+                </li>
             
-    <li class="toctree-l1 ">
-        <a class="" href="../readgroupsets_patch/">Patch</a>
-        
-    </li>
-
-        
+                <li class="toctree-l2 ">
+                    <a class="" href="../datasets_undelete/">Undelete</a>
+                    
+                </li>
             
-    <li class="toctree-l1 ">
-        <a class="" href="../readgroupsets_search/">Search</a>
         
-    </li>
 
+    
         
-    </ul>
-<li>
-          
-            <li>
-    <ul class="subnav">
-    <li><span>Reads</span></li>
-
-        
+            <span>Operations</span>
             
-    <li class="toctree-l1 ">
-        <a class="" href="../reads_search/">Search</a>
-        
-    </li>
-
-        
+                <li class="toctree-l2 ">
+                    <a class="" href="../operations_cancel/">Cancel</a>
+                    
+                </li>
             
-    <li class="toctree-l1 ">
-        <a class="" href="../reads_stream/">Stream</a>
-        
-    </li>
-
-        
-    </ul>
-<li>
-          
-            <li>
-    <ul class="subnav">
-    <li><span>References</span></li>
-
-        
+                <li class="toctree-l2 ">
+                    <a class="" href="../operations_get/">Get</a>
+                    
+                </li>
             
-    <li class="toctree-l1 ">
-        <a class="" href="../references_bases-list/">Bases List</a>
-        
-    </li>
-
-        
+                <li class="toctree-l2 ">
+                    <a class="" href="../operations_list/">List</a>
+                    
+                </li>
             
-    <li class="toctree-l1 ">
-        <a class="" href="../references_get/">Get</a>
         
-    </li>
 
+    
         
+            <span>Readgroupsets</span>
             
-    <li class="toctree-l1 ">
-        <a class="" href="../references_search/">Search</a>
-        
-    </li>
-
-        
-    </ul>
-<li>
-          
-            <li>
-    <ul class="subnav">
-    <li><span>Referencesets</span></li>
-
-        
+                <li class="toctree-l2 ">
+                    <a class="" href="../readgroupsets_coveragebuckets-list/">Coveragebuckets List</a>
+                    
+                </li>
             
-    <li class="toctree-l1 ">
-        <a class="" href="../referencesets_get/">Get</a>
-        
-    </li>
-
-        
+                <li class="toctree-l2 ">
+                    <a class="" href="../readgroupsets_delete/">Delete</a>
+                    
+                </li>
             
-    <li class="toctree-l1 ">
-        <a class="" href="../referencesets_search/">Search</a>
-        
-    </li>
-
-        
-    </ul>
-<li>
-          
-            <li>
-    <ul class="subnav">
-    <li><span>Variants</span></li>
-
-        
+                <li class="toctree-l2 ">
+                    <a class="" href="../readgroupsets_export/">Export</a>
+                    
+                </li>
             
-    <li class="toctree-l1 ">
-        <a class="" href="../variants_create/">Create</a>
-        
-    </li>
-
-        
+                <li class="toctree-l2 ">
+                    <a class="" href="../readgroupsets_get/">Get</a>
+                    
+                </li>
             
-    <li class="toctree-l1 ">
-        <a class="" href="../variants_delete/">Delete</a>
-        
-    </li>
-
-        
+                <li class="toctree-l2 ">
+                    <a class="" href="../readgroupsets_import/">Import</a>
+                    
+                </li>
             
-    <li class="toctree-l1 ">
-        <a class="" href="../variants_get/">Get</a>
-        
-    </li>
-
-        
+                <li class="toctree-l2 ">
+                    <a class="" href="../readgroupsets_patch/">Patch</a>
+                    
+                </li>
             
-    <li class="toctree-l1 ">
-        <a class="" href="../variants_import/">Import</a>
-        
-    </li>
-
-        
+                <li class="toctree-l2 ">
+                    <a class="" href="../readgroupsets_search/">Search</a>
+                    
+                </li>
             
-    <li class="toctree-l1 ">
-        <a class="" href="../variants_merge/">Merge</a>
         
-    </li>
 
+    
         
+            <span>Reads</span>
             
-    <li class="toctree-l1 ">
-        <a class="" href="../variants_patch/">Patch</a>
-        
-    </li>
-
-        
+                <li class="toctree-l2 ">
+                    <a class="" href="../reads_search/">Search</a>
+                    
+                </li>
             
-    <li class="toctree-l1 ">
-        <a class="" href="../variants_search/">Search</a>
-        
-    </li>
-
-        
+                <li class="toctree-l2 ">
+                    <a class="" href="../reads_stream/">Stream</a>
+                    
+                </li>
             
-    <li class="toctree-l1 ">
-        <a class="" href="../variants_stream/">Stream</a>
         
-    </li>
 
+    
         
-    </ul>
-<li>
-          
-            <li>
-    <ul class="subnav">
-    <li><span>Variantsets</span></li>
-
-        
+            <span>References</span>
             
-    <li class="toctree-l1 ">
-        <a class="" href="../variantsets_create/">Create</a>
-        
-    </li>
-
-        
+                <li class="toctree-l2 ">
+                    <a class="" href="../references_bases-list/">Bases List</a>
+                    
+                </li>
             
-    <li class="toctree-l1 ">
-        <a class="" href="../variantsets_delete/">Delete</a>
-        
-    </li>
-
-        
+                <li class="toctree-l2 ">
+                    <a class="" href="../references_get/">Get</a>
+                    
+                </li>
             
-    <li class="toctree-l1 ">
-        <a class="" href="../variantsets_export/">Export</a>
-        
-    </li>
-
-        
+                <li class="toctree-l2 ">
+                    <a class="" href="../references_search/">Search</a>
+                    
+                </li>
             
-    <li class="toctree-l1 ">
-        <a class="" href="../variantsets_get/">Get</a>
         
-    </li>
 
+    
         
+            <span>Referencesets</span>
             
-    <li class="toctree-l1 ">
-        <a class="" href="../variantsets_patch/">Patch</a>
-        
-    </li>
-
-        
+                <li class="toctree-l2 ">
+                    <a class="" href="../referencesets_get/">Get</a>
+                    
+                </li>
             
-    <li class="toctree-l1 ">
-        <a class="" href="../variantsets_search/">Search</a>
+                <li class="toctree-l2 ">
+                    <a class="" href="../referencesets_search/">Search</a>
+                    
+                </li>
+            
         
-    </li>
 
+    
         
-    </ul>
-<li>
-          
-        </ul>
+            <span>Variants</span>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../variants_create/">Create</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../variants_delete/">Delete</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../variants_get/">Get</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../variants_import/">Import</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../variants_merge/">Merge</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../variants_patch/">Patch</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../variants_search/">Search</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../variants_stream/">Stream</a>
+                    
+                </li>
+            
+        
+
+    
+        
+            <span>Variantsets</span>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../variantsets_create/">Create</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../variantsets_delete/">Delete</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../variantsets_export/">Export</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../variantsets_get/">Get</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../variantsets_patch/">Patch</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../variantsets_search/">Search</a>
+                    
+                </li>
+            
+        
+
+    
+</ul>
+
       </div>
       &nbsp;
     </nav>
@@ -564,7 +422,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">genomics v0.3.5+20160407</a>
+        <a href="..">genomics v0.3.6+20160407</a>
       </nav>
 
       
@@ -575,26 +433,23 @@
     <li><a href="..">Docs</a> &raquo;</li>
     
       
-        
-          <li>Annotationsets &raquo;</li>
-        
+        <li>Annotationsets &raquo;</li>
       
     
     <li>Search</li>
-    <li class="wy-breadcrumbs-aside">
-      
+      <li class="wy-breadcrumbs-aside">
         
-          <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/genomics1-cli" class="icon icon-github"> Edit on GitHub</a>
+          
+            <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/genomics1-cli" class="icon icon-github"> Edit on GitHub</a>
+          
         
-      
-    </li>
+      </li>
   </ul>
   <hr/>
 </div>
           <div role="main">
             <div class="section">
-              
-                <p>Searches for annotation sets that match the given criteria. Annotation sets are returned in an unspecified order. This order is consistent, such that two queries for the same content (regardless of page size) yield annotation sets in the same order across their respective streams of paginated responses. Caller must have READ permission for the queried datasets.</p>
+              <p>Searches for annotation sets that match the given criteria. Annotation sets are returned in an unspecified order. This order is consistent, such that two queries for the same content (regardless of page size) yield annotation sets in the same order across their respective streams of paginated responses. Caller must have READ permission for the queried datasets.</p>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for at least one of the following scopes to make a valid call:</p>
 <ul>
@@ -748,7 +603,6 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 </ul>
-              
             </div>
           </div>
           <footer>
@@ -766,10 +620,9 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   <hr/>
 
   <div role="contentinfo">
+    <p>
     <!-- Copyright etc -->
-    
-      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
-    
+    </p>
   </div>
 
   Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
@@ -784,17 +637,17 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <div class="rst-versions" role="note" style="cursor: pointer">
     <span class="rst-current-version" data-toggle="rst-current-version">
-      
-          <a class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
-      
-      
-        <span><a href="../annotationsets_get/" style="color: #fcfcfc;">&laquo; Previous</a></span>
-      
-      
-        <span style="margin-left: 15px"><a href="../annotationsets_update/" style="color: #fcfcfc">Next &raquo;</a></span>
-      
+        
+            <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/genomics1-cli" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+        
+      <span><a href="../annotationsets_get/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      <span style="margin-left: 15px"><a href="../annotationsets_update/" style="color: #fcfcfc">Next &raquo;</a></span>
     </span>
 </div>
 
+<!--
+MkDocs version  : 0.12.2
+Docs Build Date : 2016-07-23 16:06:00.123736
+-->
 </body>
 </html>
