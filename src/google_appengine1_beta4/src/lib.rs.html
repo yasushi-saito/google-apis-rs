@@ -238,12 +238,15 @@
 <span id="194">194</span>
 <span id="195">195</span>
 <span id="196">196</span>
+<span id="197">197</span>
+<span id="198">198</span>
+<span id="199">199</span>
 </pre><pre class='rust '>
 <span class='comment'>// DO NOT EDIT !</span>
 <span class='comment'>// This file was generated automatically from &#39;src/mako/api/lib.rs.mako&#39;</span>
 <span class='comment'>// DO NOT EDIT !</span>
 
-<span class='doccomment'>//! This documentation was generated from *appengine* crate version *0.1.14+20160314*, where *20160314* is the exact revision of the *appengine:v1beta4* schema built by the [mako](http://www.makotemplates.org/) code generator *v0.1.14*.</span>
+<span class='doccomment'>//! This documentation was generated from *appengine* crate version *0.1.15+20160802*, where *20160802* is the exact revision of the *appengine:v1beta4* schema built by the [mako](http://www.makotemplates.org/) code generator *v0.1.15*.</span>
 <span class='doccomment'>//! </span>
 <span class='doccomment'>//! Everything else about the *appengine* *v1_beta4* API can be found at the</span>
 <span class='doccomment'>//! [official documentation site](https://cloud.google.com/appengine/docs/admin-api/).</span>
@@ -253,7 +256,7 @@
 <span class='doccomment'>//! Handle the following *Resources* with ease from the central [hub](struct.Appengine.html) ... </span>
 <span class='doccomment'>//! </span>
 <span class='doccomment'>//! * apps</span>
-<span class='doccomment'>//!  * [*get*](struct.AppGetCall.html), [*modules delete*](struct.AppModuleDeleteCall.html), [*modules get*](struct.AppModuleGetCall.html), [*modules list*](struct.AppModuleListCall.html), [*modules patch*](struct.AppModulePatchCall.html), [*modules versions create*](struct.AppModuleVersionCreateCall.html), [*modules versions delete*](struct.AppModuleVersionDeleteCall.html), [*modules versions get*](struct.AppModuleVersionGetCall.html), [*modules versions list*](struct.AppModuleVersionListCall.html), [*modules versions patch*](struct.AppModuleVersionPatchCall.html), [*operations get*](struct.AppOperationGetCall.html) and [*operations list*](struct.AppOperationListCall.html)</span>
+<span class='doccomment'>//!  * [*create*](struct.AppCreateCall.html), [*get*](struct.AppGetCall.html), [*locations get*](struct.AppLocationGetCall.html), [*locations list*](struct.AppLocationListCall.html), [*modules delete*](struct.AppModuleDeleteCall.html), [*modules get*](struct.AppModuleGetCall.html), [*modules list*](struct.AppModuleListCall.html), [*modules patch*](struct.AppModulePatchCall.html), [*modules versions create*](struct.AppModuleVersionCreateCall.html), [*modules versions delete*](struct.AppModuleVersionDeleteCall.html), [*modules versions get*](struct.AppModuleVersionGetCall.html), [*modules versions instances debug*](struct.AppModuleVersionInstanceDebugCall.html), [*modules versions instances delete*](struct.AppModuleVersionInstanceDeleteCall.html), [*modules versions instances get*](struct.AppModuleVersionInstanceGetCall.html), [*modules versions instances list*](struct.AppModuleVersionInstanceListCall.html), [*modules versions list*](struct.AppModuleVersionListCall.html), [*modules versions patch*](struct.AppModuleVersionPatchCall.html), [*operations get*](struct.AppOperationGetCall.html) and [*operations list*](struct.AppOperationListCall.html)</span>
 <span class='doccomment'>//! </span>
 <span class='doccomment'>//! </span>
 <span class='doccomment'>//! </span>
@@ -289,6 +292,9 @@
 <span class='doccomment'>//! </span>
 <span class='doccomment'>//! ```ignore</span>
 <span class='doccomment'>//! let r = hub.apps().modules_patch(...).doit()</span>
+<span class='doccomment'>//! let r = hub.apps().create(...).doit()</span>
+<span class='doccomment'>//! let r = hub.apps().modules_versions_instances_delete(...).doit()</span>
+<span class='doccomment'>//! let r = hub.apps().modules_versions_instances_debug(...).doit()</span>
 <span class='doccomment'>//! let r = hub.apps().modules_delete(...).doit()</span>
 <span class='doccomment'>//! let r = hub.apps().operations_get(...).doit()</span>
 <span class='doccomment'>//! let r = hub.apps().modules_versions_patch(...).doit()</span>
@@ -346,8 +352,8 @@
 <span class='doccomment'>//! // execute the final call using `doit()`.</span>
 <span class='doccomment'>//! // Values shown here are possibly random and not representative !</span>
 <span class='doccomment'>//! let result = hub.apps().modules_patch(req, &quot;appsId&quot;, &quot;modulesId&quot;)</span>
-<span class='doccomment'>//!              .migrate_traffic(false)</span>
-<span class='doccomment'>//!              .mask(&quot;sea&quot;)</span>
+<span class='doccomment'>//!              .migrate_traffic(true)</span>
+<span class='doccomment'>//!              .mask(&quot;sit&quot;)</span>
 <span class='doccomment'>//!              .doit();</span>
 <span class='doccomment'>//! </span>
 <span class='doccomment'>//! match result {</span>

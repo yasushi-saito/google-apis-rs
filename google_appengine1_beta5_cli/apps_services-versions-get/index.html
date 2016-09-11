@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Services Versions Get - appengine v0.3.6+20160314</title>
+  <title>Services Versions Get - appengine v0.3.6+20160802</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -32,7 +32,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> appengine v0.3.6+20160314</a>
+        <a href=".." class="icon icon-home"> appengine v0.3.6+20160802</a>
         
       </div>
 
@@ -51,7 +51,22 @@
             <span>Apps</span>
             
                 <li class="toctree-l2 ">
+                    <a class="" href="../apps_create/">Create</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
                     <a class="" href="../apps_get/">Get</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../apps_locations-get/">Locations Get</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../apps_locations-list/">Locations List</a>
                     
                 </li>
             
@@ -120,6 +135,26 @@
                 </li>
             
                 <li class="toctree-l2 ">
+                    <a class="" href="../apps_services-versions-instances-debug/">Services Versions Instances Debug</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../apps_services-versions-instances-delete/">Services Versions Instances Delete</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../apps_services-versions-instances-get/">Services Versions Instances Get</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../apps_services-versions-instances-list/">Services Versions Instances List</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
                     <a class="" href="../apps_services-versions-list/">Services Versions List</a>
                     
                 </li>
@@ -143,7 +178,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">appengine v0.3.6+20160314</a>
+        <a href="..">appengine v0.3.6+20160802</a>
       </nav>
 
       
@@ -170,7 +205,7 @@
 </div>
           <div role="main">
             <div class="section">
-              <p>Gets application deployment information.</p>
+              <p>Gets the specified Version resource. By default, only a <code>BASIC_VIEW</code> will be returned. Specify the <code>FULL_VIEW</code> parameter to get the full resource.</p>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for the <em>https://www.googleapis.com/auth/cloud-platform</em> scope to make a valid call.</p>
 <p>If unset, the scope for this method defaults to <em>https://www.googleapis.com/auth/cloud-platform</em>.
@@ -178,7 +213,7 @@ You can set the scope for this method like this: <code>appengine1-beta5 --scope 
 <h1 id="required-scalar-arguments">Required Scalar Arguments</h1>
 <ul>
 <li><strong>&lt;apps-id&gt;</strong> <em>(string)</em><ul>
-<li>Part of <code>name</code>. Name of the resource requested. For example: &#34;apps/myapp/services/default/versions/v1&#34;.</li>
+<li>Part of <code>name</code>. Name of the resource requested. Example: <code>apps/myapp/services/default/versions/v1</code>.</li>
 </ul>
 </li>
 <li><strong>&lt;services-id&gt;</strong> <em>(string)</em><ul>
@@ -299,7 +334,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../apps_services-versions-list/" class="btn btn-neutral float-right" title="Services Versions List"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../apps_services-versions-instances-debug/" class="btn btn-neutral float-right" title="Services Versions Instances Debug"/>Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="../apps_services-versions-delete/" class="btn btn-neutral" title="Services Versions Delete"><span class="icon icon-circle-arrow-left"></span> Previous</a>
@@ -331,13 +366,13 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
             <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/appengine1_beta5-cli" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
         
       <span><a href="../apps_services-versions-delete/" style="color: #fcfcfc;">&laquo; Previous</a></span>
-      <span style="margin-left: 15px"><a href="../apps_services-versions-list/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span style="margin-left: 15px"><a href="../apps_services-versions-instances-debug/" style="color: #fcfcfc">Next &raquo;</a></span>
     </span>
 </div>
 
 <!--
 MkDocs version  : 0.12.2
-Docs Build Date : 2016-07-23 16:05:39.709082
+Docs Build Date : 2016-09-11 17:56:33.497249
 -->
 </body>
 </html>

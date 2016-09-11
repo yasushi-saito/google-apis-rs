@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Search - genomics v0.3.6+20160407</title>
+  <title>Search - genomics v0.3.6+20160905</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -32,7 +32,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> genomics v0.3.6+20160407</a>
+        <a href=".." class="icon icon-home"> genomics v0.3.6+20160905</a>
         
       </div>
 
@@ -422,7 +422,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">genomics v0.3.6+20160407</a>
+        <a href="..">genomics v0.3.6+20160905</a>
       </nav>
 
       
@@ -478,20 +478,20 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    call-set-ids=takimata</code><ul>
-<li>Only return variant calls which belong to call sets with these ids. Leaving this blank returns all variant calls. If a variant has no calls belonging to any of these call sets, it won&#39;t be returned at all. Currently, variants with no calls from any call set will never be returned.</li>
+<li><code>-r .    call-set-ids=elitr</code><ul>
+<li>Only return variant calls which belong to call sets with these ids. Leaving this blank returns all variant calls. If a variant has no calls belonging to any of these call sets, it won&#39;t be returned at all.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>end=elitr</code><ul>
+<li><code>end=nonumy</code><ul>
 <li>The end of the window, 0-based exclusive. If unspecified or 0, defaults to the length of the reference.</li>
 </ul>
 </li>
-<li><code>max-calls=10</code><ul>
+<li><code>max-calls=86</code><ul>
 <li>The maximum number of calls to return in a single page. Note that this limit may be exceeded in the event that a matching variant contains more calls than the requested maximum. If unspecified, defaults to 5000. The maximum value is 10000.</li>
 </ul>
 </li>
-<li><code>page-size=86</code><ul>
+<li><code>page-size=95</code><ul>
 <li>The maximum number of variants to return in a single page. If unspecified, defaults to 5000. The maximum value is 10000.</li>
 </ul>
 </li>
@@ -499,11 +499,11 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>The continuation token, which is used to page through large result sets. To get the next page of results, set this parameter to the value of <code>nextPageToken</code> from the previous response.</li>
 </ul>
 </li>
-<li><code>reference-name=lorem</code><ul>
+<li><code>reference-name=diam</code><ul>
 <li>Required. Only return variants in this reference sequence.</li>
 </ul>
 </li>
-<li><code>start=diam</code><ul>
+<li><code>start=ut</code><ul>
 <li>The beginning of the window (0-based, inclusive) for which overlapping variants should be returned. If unspecified, defaults to 0.</li>
 </ul>
 </li>
@@ -511,7 +511,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>Only return variants which have exactly this name.</li>
 </ul>
 </li>
-<li><code>variant-set-ids=ut</code><ul>
+<li><code>variant-set-ids=amet.</code><ul>
 <li>At most one variant set ID must be provided. Only variants from this variant set will be returned. If omitted, a call set id must be included in the request.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
@@ -662,7 +662,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <!--
 MkDocs version  : 0.12.2
-Docs Build Date : 2016-07-23 16:06:01.019675
+Docs Build Date : 2016-09-11 17:55:58.869737
 -->
 </body>
 </html>

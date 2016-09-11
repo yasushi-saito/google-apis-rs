@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Update - SQL Admin v0.3.6+20160321</title>
+  <title>Update - SQL Admin v0.3.6+20160907</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -32,7 +32,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> SQL Admin v0.3.6+20160321</a>
+        <a href=".." class="icon icon-home"> SQL Admin v0.3.6+20160907</a>
         
       </div>
 
@@ -57,6 +57,11 @@
             
                 <li class="toctree-l2 ">
                     <a class="" href="../backup-runs_get/">Get</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../backup-runs_insert/">Insert</a>
                     
                 </li>
             
@@ -317,7 +322,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">SQL Admin v0.3.6+20160321</a>
+        <a href="..">SQL Admin v0.3.6+20160907</a>
       </nav>
 
       
@@ -443,6 +448,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
     pricing-plan: string
     replication-type: string
     settings-version: string
+    storage-auto-resize: boolean
     tier: string
   state: string
   suspension-reason: [string]
@@ -451,21 +457,21 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    backend-type=justo</code><ul>
+<li><code>-r .    backend-type=sea</code><ul>
 <li>FIRST_GEN: Basic Cloud SQL instance that runs in a Google-managed container.
     SECOND_GEN: A newer Cloud SQL backend that runs in a Compute Engine VM.
     EXTERNAL: A MySQL server that is not managed by Google.</li>
 </ul>
 </li>
-<li><code>current-disk-size=dolore</code><ul>
+<li><code>current-disk-size=elitr</code><ul>
 <li>The current disk usage of the instance in bytes. This property has been deprecated. Users should use the &#34;cloudsql.googleapis.com/database/disk/bytes_used&#34; metric in Cloud Monitoring API instead. Please see https://groups.google.com/d/msg/google-cloud-sql-announce/I_7-F9EBhT0/BtvFtdFeAgAJ for details.</li>
 </ul>
 </li>
-<li><code>database-version=vero</code><ul>
+<li><code>database-version=at</code><ul>
 <li>The database engine type and version. The databaseVersion can not be changed after instance creation. Can be MYSQL_5_5, MYSQL_5_6 or MYSQL_5_7. Defaults to MYSQL_5_6. MYSQL_5_7 is applicable only to Second Generation instances.</li>
 </ul>
 </li>
-<li><code>etag=dolor</code><ul>
+<li><code>etag=sea</code><ul>
 <li>HTTP 1.1 Entity tag for the resource.</li>
 </ul>
 </li>
@@ -474,13 +480,13 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
-<p><code>name=et</code></p>
+<p><code>name=diam</code></p>
 <ul>
-<li>The name of the failover replica.</li>
+<li>The name of the failover replica. If specified at instance creation, a failover replica is created for the instance. The name doesn&#39;t include the project ID. This property is applicable only to Second Generation instances.</li>
 </ul>
 </li>
 <li>
-<p><code>..    instance-type=nonumy</code></p>
+<p><code>..    instance-type=accusam</code></p>
 <ul>
 <li>The instance type. This can be one of the following.
     CLOUD_SQL_INSTANCE: A Cloud SQL instance that is not replicating from a master.
@@ -488,60 +494,60 @@ In the latter case it is advised to set the field-cursor to the data-structure's
     READ_REPLICA_INSTANCE: A Cloud SQL instance configured as a read-replica.</li>
 </ul>
 </li>
-<li><code>ipv6-address=et</code><ul>
+<li><code>ipv6-address=dolores</code><ul>
 <li>The IPv6 address assigned to the instance. This property is applicable only to First Generation instances.</li>
 </ul>
 </li>
-<li><code>kind=sed</code><ul>
+<li><code>kind=consetetur</code><ul>
 <li>This is always sql#instance.</li>
 </ul>
 </li>
-<li><code>master-instance-name=no</code><ul>
+<li><code>master-instance-name=dolor</code><ul>
 <li>The name of the instance which will act as master in the replication setup.</li>
 </ul>
 </li>
-<li><code>max-disk-size=invidunt</code><ul>
+<li><code>max-disk-size=aliquyam</code><ul>
 <li>The maximum disk size of the instance in bytes.</li>
 </ul>
 </li>
-<li><code>name=rebum.</code><ul>
+<li><code>name=elitr</code><ul>
 <li>Name of the Cloud SQL instance. This does not include the project ID.</li>
 </ul>
 </li>
-<li><code>on-premises-configuration    host-port=labore</code><ul>
+<li><code>on-premises-configuration    host-port=ea</code><ul>
 <li>The host and port of the on-premises instance in host:port format</li>
 </ul>
 </li>
 <li>
-<p><code>kind=aliquyam</code></p>
+<p><code>kind=et</code></p>
 <ul>
 <li>This is always sql#onPremisesConfiguration.</li>
 </ul>
 </li>
 <li>
-<p><code>..    project=elitr</code></p>
+<p><code>..    project=stet</code></p>
 <ul>
 <li>The project ID of the project containing the Cloud SQL instance. The Google apps domain is prefixed if applicable.</li>
 </ul>
 </li>
-<li><code>region=consetetur</code><ul>
+<li><code>region=sed</code><ul>
 <li>The geographical region. Can be us-central (FIRST_GEN instances only), us-central1 (SECOND_GEN instances only), asia-east1 or europe-west1. Defaults to us-central or us-central1 depending on the instance type (First Generation or Second Generation). The region can not be changed after instance creation.</li>
 </ul>
 </li>
-<li><code>replica-configuration    failover-target=true</code><ul>
+<li><code>replica-configuration    failover-target=false</code><ul>
 <li>Specifies if the replica is the failover target. If the field is set to true the replica will be designated as a failover replica. In case the master instance fails, the replica instance will be promoted as the new master instance.
     Only one replica can be specified as failover target, and the replica has to be in different zone with the master instance.</li>
 </ul>
 </li>
-<li><code>kind=elitr</code><ul>
+<li><code>kind=sanctus</code><ul>
 <li>This is always sql#replicaConfiguration.</li>
 </ul>
 </li>
-<li><code>mysql-replica-configuration    ca-certificate=at</code><ul>
+<li><code>mysql-replica-configuration    ca-certificate=dolore</code><ul>
 <li>PEM representation of the trusted CA&#39;s x509 certificate.</li>
 </ul>
 </li>
-<li><code>client-certificate=sea</code><ul>
+<li><code>client-certificate=lorem</code><ul>
 <li>PEM representation of the slave&#39;s x509 certificate.</li>
 </ul>
 </li>
@@ -549,31 +555,31 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>PEM representation of the slave&#39;s private key. The corresponsing public key is encoded in the client&#39;s certificate.</li>
 </ul>
 </li>
-<li><code>connect-retry-interval=22</code><ul>
+<li><code>connect-retry-interval=55</code><ul>
 <li>Seconds to wait between connect retries. MySQL&#39;s default is 60 seconds.</li>
 </ul>
 </li>
-<li><code>dump-file-path=accusam</code><ul>
+<li><code>dump-file-path=eirmod</code><ul>
 <li>Path to a SQL dump file in Google Cloud Storage from which the slave instance is to be created. The URI is in the form gs://bucketName/fileName. Compressed gzip files (.gz) are also supported. Dumps should have the binlog co-ordinates from which replication should begin. This can be accomplished by setting --master-data to 1 when using mysqldump.</li>
 </ul>
 </li>
-<li><code>kind=dolores</code><ul>
+<li><code>kind=labore</code><ul>
 <li>This is always sql#mysqlReplicaConfiguration.</li>
 </ul>
 </li>
-<li><code>master-heartbeat-period=consetetur</code><ul>
+<li><code>master-heartbeat-period=gubergren</code><ul>
 <li>Interval in milliseconds between replication heartbeats.</li>
 </ul>
 </li>
-<li><code>password=dolor</code><ul>
+<li><code>password=et</code><ul>
 <li>The password for the replication connection.</li>
 </ul>
 </li>
-<li><code>ssl-cipher=aliquyam</code><ul>
+<li><code>ssl-cipher=sadipscing</code><ul>
 <li>A list of permissible ciphers to use for SSL encryption.</li>
 </ul>
 </li>
-<li><code>username=elitr</code><ul>
+<li><code>username=accusam</code><ul>
 <li>The username for the replication connection.</li>
 </ul>
 </li>
@@ -584,33 +590,33 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
-<p><code>...    replica-names=et</code></p>
+<p><code>...    replica-names=lorem</code></p>
 <ul>
 <li>The replicas of the instance.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>self-link=stet</code><ul>
+<li><code>self-link=rebum.</code><ul>
 <li>The URI of this resource.</li>
 </ul>
 </li>
-<li><code>server-ca-cert    cert=sed</code><ul>
+<li><code>server-ca-cert    cert=et</code><ul>
 <li>PEM representation.</li>
 </ul>
 </li>
-<li><code>cert-serial-number=dolor</code><ul>
+<li><code>cert-serial-number=clita</code><ul>
 <li>Serial number, as extracted from the certificate.</li>
 </ul>
 </li>
-<li><code>common-name=sanctus</code><ul>
+<li><code>common-name=eos</code><ul>
 <li>User supplied name. Constrained to [a-zA-Z.-_ ]+.</li>
 </ul>
 </li>
-<li><code>create-time=dolore</code><ul>
+<li><code>create-time=dolores</code><ul>
 <li>The time when the certificate was created in RFC 3339 format, for example 2012-11-15T16:19:00.094Z</li>
 </ul>
 </li>
-<li><code>expiration-time=lorem</code><ul>
+<li><code>expiration-time=vero</code><ul>
 <li>The time when the certificate expires in RFC 3339 format, for example 2012-11-15T16:19:00.094Z.</li>
 </ul>
 </li>
@@ -618,34 +624,34 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>Name of the database instance.</li>
 </ul>
 </li>
-<li><code>kind=consetetur</code><ul>
+<li><code>kind=vero</code><ul>
 <li>This is always sql#sslCert.</li>
 </ul>
 </li>
-<li><code>self-link=eirmod</code><ul>
+<li><code>self-link=consetetur</code><ul>
 <li>The URI of this resource.</li>
 </ul>
 </li>
 <li>
-<p><code>sha1-fingerprint=labore</code></p>
+<p><code>sha1-fingerprint=eos</code></p>
 <ul>
 <li>Sha1 Fingerprint.</li>
 </ul>
 </li>
 <li>
-<p><code>..    service-account-email-address=gubergren</code></p>
+<p><code>..    service-account-email-address=justo</code></p>
 <ul>
 <li>The service account email address assigned to the instance. This property is applicable only to Second Generation instances.</li>
 </ul>
 </li>
-<li><code>settings    activation-policy=et</code><ul>
-<li>The activation policy for this instance. This specifies when the instance should be activated and is applicable only when the instance state is RUNNABLE. This can be one of the following.
-    ALWAYS: The instance should always be active.
-    NEVER: The instance should never be activated.
-    ON_DEMAND: The instance is activated upon receiving requests; only applicable to First Generation instances.</li>
+<li><code>settings    activation-policy=tempor</code><ul>
+<li>The activation policy specifies when the instance is activated; it is applicable only when the instance state is RUNNABLE. The activation policy cannot be updated together with other settings for Second Generation instances. Valid values:
+    ALWAYS: The instance is on; it is not deactivated by inactivity.
+    NEVER: The instance is off; it is not activated, even if a connection request arrives.
+    ON_DEMAND: The instance responds to incoming requests, and turns itself off when not in use. Instances with PER_USE pricing turn off after 15 minutes of inactivity. Instances with PER_PACKAGE pricing turn off after 12 hours of inactivity.</li>
 </ul>
 </li>
-<li><code>authorized-gae-applications=sadipscing</code><ul>
+<li><code>authorized-gae-applications=gubergren</code><ul>
 <li>The App Engine app IDs that can access this instance. This property is only applicable to First Generation instances.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
@@ -654,16 +660,16 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>Whether binary log is enabled. If backup configuration is disabled, binary log must be disabled as well.</li>
 </ul>
 </li>
-<li><code>enabled=true</code><ul>
+<li><code>enabled=false</code><ul>
 <li>Whether this configuration is enabled.</li>
 </ul>
 </li>
-<li><code>kind=lorem</code><ul>
+<li><code>kind=dolore</code><ul>
 <li>This is always sql#backupConfiguration.</li>
 </ul>
 </li>
 <li>
-<p><code>start-time=rebum.</code></p>
+<p><code>start-time=magna</code></p>
 <ul>
 <li>Start time for the daily backup configuration in UTC timezone in the 24 hour format - HH:MM.</li>
 </ul>
@@ -674,15 +680,15 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>Configuration specific to read replica instances. Indicates whether database flags for crash-safe replication are enabled. This property is only applicable to First Generation instances.</li>
 </ul>
 </li>
-<li><code>data-disk-size-gb=clita</code><ul>
-<li>The size of data disk, in GB. The data disk size minimum is 10GB. This property is only applicable to Second Generation instances.</li>
+<li><code>data-disk-size-gb=magna</code><ul>
+<li>The size of data disk, in GB. The data disk size minimum is 10GB. Applies only to Second Generation instances.</li>
 </ul>
 </li>
-<li><code>data-disk-type=eos</code><ul>
-<li>The type of data disk. Only supported for Second Generation instances. The default type is PD_SSD. This property is only applicable to Second Generation instances.</li>
+<li><code>data-disk-type=ipsum</code><ul>
+<li>The type of data disk. Only supported for Second Generation instances. The default type is PD_SSD. Applies only to Second Generation instances.</li>
 </ul>
 </li>
-<li><code>database-replication-enabled=false</code><ul>
+<li><code>database-replication-enabled=true</code><ul>
 <li>Configuration specific to read replica instances. Indicates whether replication is enabled or not.</li>
 </ul>
 </li>
@@ -697,67 +703,71 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
-<p><code>..    kind=vero</code></p>
+<p><code>..    kind=diam</code></p>
 <ul>
 <li>This is always sql#settings.</li>
 </ul>
 </li>
-<li><code>location-preference    follow-gae-application=consetetur</code><ul>
+<li><code>location-preference    follow-gae-application=nonumy</code><ul>
 <li>The AppEngine application to follow, it must be in the same region as the Cloud SQL instance.</li>
 </ul>
 </li>
-<li><code>kind=eos</code><ul>
+<li><code>kind=sed</code><ul>
 <li>This is always sql#locationPreference.</li>
 </ul>
 </li>
 <li>
-<p><code>zone=justo</code></p>
+<p><code>zone=diam</code></p>
 <ul>
 <li>The preferred Compute Engine zone (e.g. us-centra1-a, us-central1-b, etc.).</li>
 </ul>
 </li>
 <li>
-<p><code>..maintenance-window    day=62</code></p>
+<p><code>..maintenance-window    day=18</code></p>
 <ul>
 <li>day of week (1-7), starting on Monday.</li>
 </ul>
 </li>
-<li><code>hour=40</code><ul>
+<li><code>hour=2</code><ul>
 <li>hour of day - 0 to 23.</li>
 </ul>
 </li>
-<li><code>kind=dolore</code><ul>
+<li><code>kind=lorem</code><ul>
 <li>This is always sql#maintenanceWindow.</li>
 </ul>
 </li>
 <li>
-<p><code>update-track=amet.</code></p>
+<p><code>update-track=dolor</code></p>
 <ul>
 <li>No description provided.</li>
 </ul>
 </li>
 <li>
-<p><code>..    pricing-plan=dolore</code></p>
+<p><code>..    pricing-plan=vero</code></p>
 <ul>
 <li>The pricing plan for this instance. This can be either PER_USE or PACKAGE. Only PER_USE is supported for Second Generation instances.</li>
 </ul>
 </li>
-<li><code>replication-type=magna</code><ul>
+<li><code>replication-type=nonumy</code><ul>
 <li>The type of replication this instance uses. This can be either ASYNCHRONOUS or SYNCHRONOUS. This property is only applicable to First Generation instances.</li>
 </ul>
 </li>
-<li><code>settings-version=elitr</code><ul>
+<li><code>settings-version=takimata</code><ul>
 <li>The version of instance settings. This is a required field for update method to make sure concurrent updates are handled properly. During update, use the most recent settingsVersion value for this instance and do not try to update this value.</li>
 </ul>
 </li>
+<li><code>storage-auto-resize=false</code><ul>
+<li>Configuration to increase storage size automatically. The default value is false. Applies only to Second Generation instances.</li>
+</ul>
+</li>
 <li>
-<p><code>tier=magna</code></p>
+<p><code>tier=consetetur</code></p>
 <ul>
 <li>The tier of service for this instance, for example D1, D2. For more information, see pricing.</li>
 </ul>
 </li>
 <li>
-<p><code>..    state=ipsum</code></p>
+<p><code>..    state=erat</code></p>
 <ul>
 <li>The current serving state of the Cloud SQL instance. This can be one of the following.
     RUNNABLE: The instance is running, or is ready to run when accessed.
@@ -768,7 +778,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
     UNKNOWN_STATE: The state of the instance is unknown.</li>
 </ul>
 </li>
-<li><code>suspension-reason=invidunt</code><ul>
+<li><code>suspension-reason=amet.</code><ul>
 <li>If the instance state is SUSPENDED, the reason for the suspension.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
@@ -883,7 +893,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <!--
 MkDocs version  : 0.12.2
-Docs Build Date : 2016-07-23 16:05:14.587820
+Docs Build Date : 2016-09-11 17:54:36.871679
 -->
 </body>
 </html>

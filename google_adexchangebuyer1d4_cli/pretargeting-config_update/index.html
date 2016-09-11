@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Update - Ad Exchange Buyer v0.3.6+20160405</title>
+  <title>Update - Ad Exchange Buyer v0.3.6+20160831</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -32,7 +32,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Ad Exchange Buyer v0.3.6+20160405</a>
+        <a href=".." class="icon icon-home"> Ad Exchange Buyer v0.3.6+20160831</a>
         
       </div>
 
@@ -336,7 +336,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Ad Exchange Buyer v0.3.6+20160405</a>
+        <a href="..">Ad Exchange Buyer v0.3.6+20160831</a>
       </nav>
 
       
@@ -409,97 +409,97 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    billing-id=lorem</code><ul>
+<li><code>-r .    billing-id=invidunt</code><ul>
 <li>The id for billing purposes, provided for reference. Leave this field blank for insert requests; the id will be generated automatically.</li>
 </ul>
 </li>
-<li><code>config-id=clita</code><ul>
+<li><code>config-id=eirmod</code><ul>
 <li>The config id; generated automatically. Leave this field blank for insert requests.</li>
 </ul>
 </li>
-<li><code>config-name=invidunt</code><ul>
+<li><code>config-name=at</code><ul>
 <li>The name of the config. Must be unique. Required for all requests.</li>
 </ul>
 </li>
-<li><code>creative-type=eirmod</code><ul>
+<li><code>creative-type=consetetur</code><ul>
 <li>List must contain exactly one of PRETARGETING_CREATIVE_TYPE_HTML or PRETARGETING_CREATIVE_TYPE_VIDEO.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>excluded-content-labels=at</code><ul>
+<li><code>excluded-content-labels=et</code><ul>
 <li>Requests with any of these content labels will not match. Values are from content-labels.txt in the downloadable files section.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>excluded-geo-criteria-ids=consetetur</code><ul>
+<li><code>excluded-geo-criteria-ids=sed</code><ul>
 <li>Requests containing any of these geo criteria ids will not match.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>excluded-user-lists=et</code><ul>
+<li><code>excluded-user-lists=sit</code><ul>
 <li>Requests containing any of these users list ids will not match.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>excluded-verticals=sed</code><ul>
+<li><code>excluded-verticals=takimata</code><ul>
 <li>Requests containing any of these vertical ids will not match. Values are from the publisher-verticals.txt file in the downloadable files section.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>geo-criteria-ids=sit</code><ul>
+<li><code>geo-criteria-ids=elitr</code><ul>
 <li>Requests containing any of these geo criteria ids will match.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>is-active=true</code><ul>
+<li><code>is-active=false</code><ul>
 <li>Whether this config is active. Required for all requests.</li>
 </ul>
 </li>
-<li><code>kind=elitr</code><ul>
+<li><code>kind=rebum.</code><ul>
 <li>The kind of the resource, i.e. &#34;adexchangebuyer#pretargetingConfig&#34;.</li>
 </ul>
 </li>
-<li><code>languages=nonumy</code><ul>
+<li><code>languages=lorem</code><ul>
 <li>Request containing any of these language codes will match.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>mobile-carriers=rebum.</code><ul>
+<li><code>mobile-carriers=lorem</code><ul>
 <li>Requests containing any of these mobile carrier ids will match. Values are from mobile-carriers.csv in the downloadable files section.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>mobile-devices=lorem</code><ul>
+<li><code>mobile-devices=diam</code><ul>
 <li>Requests containing any of these mobile device ids will match. Values are from mobile-devices.csv in the downloadable files section.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>mobile-operating-system-versions=lorem</code><ul>
+<li><code>mobile-operating-system-versions=ut</code><ul>
 <li>Requests containing any of these mobile operating system version ids will match. Values are from mobile-os.csv in the downloadable files section.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>platforms=diam</code><ul>
+<li><code>platforms=ut</code><ul>
 <li>Requests matching any of these platforms will match. Possible values are PRETARGETING_PLATFORM_MOBILE, PRETARGETING_PLATFORM_DESKTOP, and PRETARGETING_PLATFORM_TABLET.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>supported-creative-attributes=ut</code><ul>
+<li><code>supported-creative-attributes=amet.</code><ul>
 <li>Creative attributes should be declared here if all creatives corresponding to this pretargeting configuration have that creative attribute. Values are from pretargetable-creative-attributes.txt in the downloadable files section.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>user-lists=ut</code><ul>
+<li><code>user-lists=ipsum</code><ul>
 <li>Requests containing any of these user list ids will match.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>vendor-types=amet.</code><ul>
+<li><code>vendor-types=ut</code><ul>
 <li>Requests that allow any of these vendor ids will match. Values are from vendors.txt in the downloadable files section.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>verticals=ipsum</code><ul>
+<li><code>verticals=dolor</code><ul>
 <li>Requests containing any of these vertical ids will match.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
@@ -614,7 +614,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <!--
 MkDocs version  : 0.12.2
-Docs Build Date : 2016-07-23 16:05:21.715601
+Docs Build Date : 2016-09-11 17:54:51.675916
 -->
 </body>
 </html>

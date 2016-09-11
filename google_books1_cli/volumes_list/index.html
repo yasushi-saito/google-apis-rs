@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>List - books v0.3.6+20160226</title>
+  <title>List - books v0.3.6+20160823</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -32,7 +32,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> books v0.3.6+20160226</a>
+        <a href=".." class="icon icon-home"> books v0.3.6+20160823</a>
         
       </div>
 
@@ -389,7 +389,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">books v0.3.6+20160226</a>
+        <a href="..">books v0.3.6+20160823</a>
       </nav>
 
       
@@ -463,12 +463,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p show-preorders=boolean</strong></p>
-<ul>
-<li>Set to true to show books available for preorder. Defaults to false.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p max-results=integer</strong></p>
 <ul>
 <li>Maximum number of results to return.</li>
@@ -478,6 +472,12 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <p><strong>-p print-type=string</strong></p>
 <ul>
 <li>Restrict to books or magazines.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p max-allowed-maturity-rating=string</strong></p>
+<ul>
+<li>The maximum allowed maturity rating of returned recommendations. Books with a higher maturity rating are filtered out.</li>
 </ul>
 </li>
 <li>
@@ -493,12 +493,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p library-restrict=string</strong></p>
-<ul>
-<li>Restrict search to this user&#39;s library.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p order-by=string</strong></p>
 <ul>
 <li>Sort search results.</li>
@@ -511,9 +505,21 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
+<p><strong>-p library-restrict=string</strong></p>
+<ul>
+<li>Restrict search to this user&#39;s library.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p partner=string</strong></p>
 <ul>
 <li>Restrict and brand results for partner ID.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p show-preorders=boolean</strong></p>
+<ul>
+<li>Set to true to show books available for preorder. Defaults to false.</li>
 </ul>
 </li>
 </ul>
@@ -607,7 +613,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 
 <!--
 MkDocs version  : 0.12.2
-Docs Build Date : 2016-07-23 16:05:47.049716
+Docs Build Date : 2016-09-11 17:55:31.737127
 -->
 </body>
 </html>

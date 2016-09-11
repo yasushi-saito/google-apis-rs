@@ -350,27 +350,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p end-date=string</strong></p>
-<ul>
-<li>Latest date of comment to fetch, a date-time with RFC 3339 formatting.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p status=string</strong></p>
-<ul>
-<li>No description provided.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p start-date=string</strong></p>
 <ul>
 <li>Earliest date of comment to fetch, a date-time with RFC 3339 formatting.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p fetch-bodies=boolean</strong></p>
+<p><strong>-p max-results=integer</strong></p>
 <ul>
-<li>Whether the body content of the comments is included.</li>
+<li>Maximum number of comments to include in the result.</li>
 </ul>
 </li>
 <li>
@@ -380,9 +368,21 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p max-results=integer</strong></p>
+<p><strong>-p end-date=string</strong></p>
 <ul>
-<li>Maximum number of comments to include in the result.</li>
+<li>Latest date of comment to fetch, a date-time with RFC 3339 formatting.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p fetch-bodies=boolean</strong></p>
+<ul>
+<li>Whether the body content of the comments is included.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p status=string</strong></p>
+<ul>
+<li>No description provided.</li>
 </ul>
 </li>
 </ul>
@@ -476,7 +476,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 
 <!--
 MkDocs version  : 0.12.2
-Docs Build Date : 2016-07-23 16:04:43.286026
+Docs Build Date : 2016-09-11 17:53:25.874919
 -->
 </body>
 </html>

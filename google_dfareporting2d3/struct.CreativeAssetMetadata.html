@@ -47,7 +47,7 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-26280' class='srclink' href='../src/google_dfareporting2d3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-dfareporting2d3-cd88f8faf5865c86/out/lib.rs.html#61263-61297' title='goto source code'>[src]</a></span></h1>
+               </span><a id='src-24629' class='srclink' href='../src/google_dfareporting2d3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-dfareporting2d3-818a111d706a8ab9/out/lib.rs.html#48173-48210' title='goto source code'>[src]</a></span></h1>
 <pre class='rust struct'>pub struct CreativeAssetMetadata {
     pub warned_validation_rules: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;&gt;,
     pub detected_features: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;&gt;,
@@ -63,54 +63,56 @@ The list links the activity name, along with information about where it is used 
 <ul>
 <li><a href="struct.CreativeAssetInsertCall.html">insert creative assets</a> (request|response)</li>
 </ul>
-</div><h2 class='fields'>Fields</h2>
-<table><tr class='stab '>
-                             <td id='structfield.warned_validation_rules'><code>warned_validation_rules</code></td><td><div class='docblock'><p>Rules validated during code generation that generated a warning. This is a read-only, auto-generated field.</p>
+</div><h2 class='fields'>Fields</h2><span id='structfield.warned_validation_rules' class='structfield'><code>warned_validation_rules: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;&gt;</code>
+                           </span><span class='stab '></span><div class='docblock'><p>Rules validated during code generation that generated a warning. This is a read-only, auto-generated field.</p>
 
 <p>Possible values are:
-- &quot;CLICK_TAG_NON_TOP_LEVEL&quot;
+- &quot;ADMOB_REFERENCED&quot;
+- &quot;ASSET_FORMAT_UNSUPPORTED_DCM&quot;
+- &quot;ASSET_INVALID&quot;
+- &quot;CLICK_TAG_HARD_CODED&quot;
+- &quot;CLICK_TAG_INVALID&quot;
+- &quot;CLICK_TAG_IN_GWD&quot;
 - &quot;CLICK_TAG_MISSING&quot;
 - &quot;CLICK_TAG_MORE_THAN_ONE&quot;
-- &quot;CLICK_TAG_INVALID&quot;
-- &quot;ORPHANED_ASSET&quot;
-- &quot;PRIMARY_HTML_MISSING&quot;
+- &quot;CLICK_TAG_NON_TOP_LEVEL&quot;
+- &quot;COMPONENT_UNSUPPORTED_DCM&quot;
+- &quot;ENABLER_UNSUPPORTED_METHOD_DCM&quot;
 - &quot;EXTERNAL_FILE_REFERENCED&quot;
-- &quot;MRAID_REFERENCED&quot;
-- &quot;ADMOB_REFERENCED&quot;
+- &quot;FILE_DETAIL_EMPTY&quot;
 - &quot;FILE_TYPE_INVALID&quot;
-- &quot;ZIP_INVALID&quot;
+- &quot;GWD_PROPERTIES_INVALID&quot;
+- &quot;HTML5_FEATURE_UNSUPPORTED&quot;
 - &quot;LINKED_FILE_NOT_FOUND&quot;
 - &quot;MAX_FLASH_VERSION_11&quot;
+- &quot;MRAID_REFERENCED&quot;
 - &quot;NOT_SSL_COMPLIANT&quot;
-- &quot;FILE_DETAIL_EMPTY&quot;
-- &quot;ASSET_INVALID&quot;
-- &quot;GWD_PROPERTIES_INVALID&quot;
-- &quot;ENABLER_UNSUPPORTED_METHOD_DCM&quot;
-- &quot;ASSET_FORMAT_UNSUPPORTED_DCM&quot;
-- &quot;COMPONENT_UNSUPPORTED_DCM&quot;
-- &quot;HTML5_FEATURE_UNSUPPORTED&#39; &quot;</p>
-</div></td></tr><tr class='stab '>
-                             <td id='structfield.detected_features'><code>detected_features</code></td><td><div class='docblock'><p>List of feature dependencies for the creative asset that are detected by DCM. Feature dependencies are features that a browser must be able to support in order to render your HTML5 creative correctly. This is a read-only, auto-generated field.</p>
-</div></td></tr><tr class='stab '>
-                             <td id='structfield.click_tags'><code>click_tags</code></td><td><div class='docblock'><p>List of detected click tags for assets. This is a read-only auto-generated field.</p>
-</div></td></tr><tr class='stab '>
-                             <td id='structfield.asset_identifier'><code>asset_identifier</code></td><td><div class='docblock'><p>ID of the creative asset. This is a required field.</p>
-</div></td></tr><tr class='stab '>
-                             <td id='structfield.kind'><code>kind</code></td><td><div class='docblock'><p>Identifies what kind of resource this is. Value: the fixed string &quot;dfareporting#creativeAssetMetadata&quot;.</p>
-</div></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='../google_dfareporting2d3/trait.RequestValue.html' title='google_dfareporting2d3::RequestValue'>RequestValue</a> for <a class='struct' href='../google_dfareporting2d3/struct.CreativeAssetMetadata.html' title='google_dfareporting2d3::CreativeAssetMetadata'>CreativeAssetMetadata</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-26471' class='srclink' href='../src/google_dfareporting2d3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-dfareporting2d3-cd88f8faf5865c86/out/lib.rs.html#61694' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='../google_dfareporting2d3/trait.ResponseResult.html' title='google_dfareporting2d3::ResponseResult'>ResponseResult</a> for <a class='struct' href='../google_dfareporting2d3/struct.CreativeAssetMetadata.html' title='google_dfareporting2d3::CreativeAssetMetadata'>CreativeAssetMetadata</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-26472' class='srclink' href='../src/google_dfareporting2d3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-dfareporting2d3-cd88f8faf5865c86/out/lib.rs.html#61695' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_dfareporting2d3/struct.CreativeAssetMetadata.html' title='google_dfareporting2d3::CreativeAssetMetadata'>CreativeAssetMetadata</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-26286' class='srclink' href='../src/google_dfareporting2d3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-dfareporting2d3-cd88f8faf5865c86/out/lib.rs.html#61262' title='goto source code'>[src]</a></span></h3>
+- &quot;ORPHANED_ASSET&quot;
+- &quot;PRIMARY_HTML_MISSING&quot;
+- &quot;SVG_INVALID&quot;
+- &quot;ZIP_INVALID&quot;</p>
+</div><span id='structfield.detected_features' class='structfield'><code>detected_features: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;&gt;</code>
+                           </span><span class='stab '></span><div class='docblock'><p>List of feature dependencies for the creative asset that are detected by DCM. Feature dependencies are features that a browser must be able to support in order to render your HTML5 creative correctly. This is a read-only, auto-generated field.</p>
+</div><span id='structfield.click_tags' class='structfield'><code>click_tags: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='../google_dfareporting2d3/struct.ClickTag.html' title='google_dfareporting2d3::ClickTag'>ClickTag</a>&gt;&gt;</code>
+                           </span><span class='stab '></span><div class='docblock'><p>List of detected click tags for assets. This is a read-only auto-generated field.</p>
+</div><span id='structfield.asset_identifier' class='structfield'><code>asset_identifier: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_dfareporting2d3/struct.CreativeAssetId.html' title='google_dfareporting2d3::CreativeAssetId'>CreativeAssetId</a>&gt;</code>
+                           </span><span class='stab '></span><div class='docblock'><p>ID of the creative asset. This is a required field.</p>
+</div><span id='structfield.kind' class='structfield'><code>kind: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;</code>
+                           </span><span class='stab '></span><div class='docblock'><p>Identifies what kind of resource this is. Value: the fixed string &quot;dfareporting#creativeAssetMetadata&quot;.</p>
+</div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_dfareporting2d3/struct.CreativeAssetMetadata.html' title='google_dfareporting2d3::CreativeAssetMetadata'>CreativeAssetMetadata</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-24609' class='srclink' href='../src/google_dfareporting2d3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-dfareporting2d3-818a111d706a8ab9/out/lib.rs.html#48172' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'><h4 id='method.default' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_dfareporting2d3/struct.CreativeAssetMetadata.html' title='google_dfareporting2d3::CreativeAssetMetadata'>CreativeAssetMetadata</a></code></h4>
 <div class='docblock'><p>Returns the &quot;default value&quot; for a type. <a href="https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default">Read more</a></p>
-</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_dfareporting2d3/struct.CreativeAssetMetadata.html' title='google_dfareporting2d3::CreativeAssetMetadata'>CreativeAssetMetadata</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-26288' class='srclink' href='../src/google_dfareporting2d3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-dfareporting2d3-cd88f8faf5865c86/out/lib.rs.html#61262' title='goto source code'>[src]</a></span></h3>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_dfareporting2d3/struct.CreativeAssetMetadata.html' title='google_dfareporting2d3::CreativeAssetMetadata'>CreativeAssetMetadata</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-24611' class='srclink' href='../src/google_dfareporting2d3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-dfareporting2d3-818a111d706a8ab9/out/lib.rs.html#48172' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_dfareporting2d3/struct.CreativeAssetMetadata.html' title='google_dfareporting2d3::CreativeAssetMetadata'>CreativeAssetMetadata</a></code></h4>
 <div class='docblock'><p>Returns a copy of the value. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone">Read more</a></p>
 </div><h4 id='method.clone_from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></h4>
 <div class='docblock'><p>Performs copy-assignment from <code>source</code>. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from">Read more</a></p>
-</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_dfareporting2d3/struct.CreativeAssetMetadata.html' title='google_dfareporting2d3::CreativeAssetMetadata'>CreativeAssetMetadata</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-26296' class='srclink' href='../src/google_dfareporting2d3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-dfareporting2d3-cd88f8faf5865c86/out/lib.rs.html#61262' title='goto source code'>[src]</a></span></h3>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_dfareporting2d3/struct.CreativeAssetMetadata.html' title='google_dfareporting2d3::CreativeAssetMetadata'>CreativeAssetMetadata</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-24619' class='srclink' href='../src/google_dfareporting2d3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-dfareporting2d3-818a111d706a8ab9/out/lib.rs.html#48172' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
 <div class='docblock'><p>Formats the value using the given formatter.</p>
-</div></div></section>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='../google_dfareporting2d3/trait.RequestValue.html' title='google_dfareporting2d3::RequestValue'>RequestValue</a> for <a class='struct' href='../google_dfareporting2d3/struct.CreativeAssetMetadata.html' title='google_dfareporting2d3::CreativeAssetMetadata'>CreativeAssetMetadata</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-24635' class='srclink' href='../src/google_dfareporting2d3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-dfareporting2d3-818a111d706a8ab9/out/lib.rs.html#48211' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='../google_dfareporting2d3/trait.ResponseResult.html' title='google_dfareporting2d3::ResponseResult'>ResponseResult</a> for <a class='struct' href='../google_dfareporting2d3/struct.CreativeAssetMetadata.html' title='google_dfareporting2d3::CreativeAssetMetadata'>CreativeAssetMetadata</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-24636' class='srclink' href='../src/google_dfareporting2d3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-dfareporting2d3-818a111d706a8ab9/out/lib.rs.html#48212' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>

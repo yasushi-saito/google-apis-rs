@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Update - Ad Exchange Buyer v0.3.6+20160405</title>
+  <title>Update - Ad Exchange Buyer v0.3.6+20160831</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -32,7 +32,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Ad Exchange Buyer v0.3.6+20160405</a>
+        <a href=".." class="icon icon-home"> Ad Exchange Buyer v0.3.6+20160831</a>
         
       </div>
 
@@ -336,7 +336,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Ad Exchange Buyer v0.3.6+20160405</a>
+        <a href="..">Ad Exchange Buyer v0.3.6+20160831</a>
       </nav>
 
       
@@ -379,7 +379,7 @@ You can set the scope for this method like this: <code>adexchangebuyer1d4 --scop
 </ul>
 </li>
 <li><strong>&lt;update-action&gt;</strong> <em>(string)</em><ul>
-<li>The proposed action to take on the proposal.</li>
+<li>The proposed action to take on the proposal. This field is required and it must be set when updating a proposal.</li>
 </ul>
 </li>
 </ul>
@@ -402,7 +402,6 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   is-setup-complete: boolean
   kind: string
   last-updater-or-commentor-role: string
-  last-updater-role: string
   name: string
   negotiation-id: string
   originator-role: string
@@ -420,25 +419,25 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
 <li>
-<p><code>-r .billed-buyer    account-id=sed</code></p>
+<p><code>-r .billed-buyer    account-id=no</code></p>
 <ul>
 <li>Adx account id of the buyer.</li>
 </ul>
 </li>
 <li>
-<p><code>..buyer    account-id=no</code></p>
+<p><code>..buyer    account-id=invidunt</code></p>
 <ul>
 <li>Adx account id of the buyer.</li>
 </ul>
 </li>
 <li>
-<p><code>..buyer-private-data    reference-id=invidunt</code></p>
+<p><code>..buyer-private-data    reference-id=rebum.</code></p>
 <ul>
 <li>No description provided.</li>
 </ul>
 </li>
 <li>
-<p><code>reference-payload=rebum.</code></p>
+<p><code>reference-payload=labore</code></p>
 <ul>
 <li>No description provided.</li>
 </ul>
@@ -446,14 +445,14 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>
 <p><code>..    has-buyer-signed-off=false</code></p>
 <ul>
-<li>When an proposal is in an accepted state, indicates whether the buyer has signed off Once both sides have signed off on a deal, the proposal can be finalized by the seller. (seller-readonly)</li>
+<li>When an proposal is in an accepted state, indicates whether the buyer has signed off. Once both sides have signed off on a deal, the proposal can be finalized by the seller. (seller-readonly)</li>
 </ul>
 </li>
 <li><code>has-seller-signed-off=false</code><ul>
 <li>When an proposal is in an accepted state, indicates whether the buyer has signed off Once both sides have signed off on a deal, the proposal can be finalized by the seller. (buyer-readonly)</li>
 </ul>
 </li>
-<li><code>inventory-source=elitr</code><ul>
+<li><code>inventory-source=consetetur</code><ul>
 <li>What exchange will provide this inventory (readonly, except on create).</li>
 </ul>
 </li>
@@ -465,16 +464,12 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>True, if the buyside inventory setup is complete for this proposal. (readonly, except via OrderSetupCompleted action)</li>
 </ul>
 </li>
-<li><code>kind=elitr</code><ul>
+<li><code>kind=at</code><ul>
 <li>Identifies what kind of resource this is. Value: the fixed string &#34;adexchangebuyer#proposal&#34;.</li>
 </ul>
 </li>
-<li><code>last-updater-or-commentor-role=at</code><ul>
+<li><code>last-updater-or-commentor-role=sea</code><ul>
 <li>The role of the last user that either updated the proposal or left a comment. (readonly)</li>
-</ul>
-</li>
-<li><code>last-updater-role=sea</code><ul>
-<li>No description provided.</li>
 </ul>
 </li>
 <li><code>name=consetetur</code><ul>
@@ -627,7 +622,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <!--
 MkDocs version  : 0.12.2
-Docs Build Date : 2016-07-23 16:05:21.873546
+Docs Build Date : 2016-09-11 17:54:51.812110
 -->
 </body>
 </html>

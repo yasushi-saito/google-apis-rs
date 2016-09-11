@@ -47,8 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-13236' class='srclink' href='../src/google_genomics1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-genomics1-16ed839a8e049b7f/out/lib.rs.html#28675-28677' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct DatasetMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
+               </span><a id='src-12228' class='srclink' href='../src/google_genomics1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-genomics1-40179d636dbccd1e/out/lib.rs.html#22119-22121' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct DatasetMethods&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>dataset</em> resources.
 It is not used directly, but through the <code>Genomics</code> hub.</p>
@@ -74,8 +74,8 @@ It is not used directly, but through the <code>Genomics</code> hub.</p>
 <span class='comment'>// like `create(...)`, `delete(...)`, `get(...)`, `get_iam_policy(...)`, `list(...)`, `patch(...)`, `set_iam_policy(...)`, `test_iam_permissions(...)` and `undelete(...)`</span>
 <span class='comment'>// to build up your call.</span>
 <span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>datasets</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_genomics1/struct.DatasetMethods.html' title='google_genomics1::DatasetMethods'>DatasetMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-13245' class='srclink' href='../src/google_genomics1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-genomics1-16ed839a8e049b7f/out/lib.rs.html#28679-28821' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.create' class='method'><code>fn <a href='#method.create' class='fnname'>create</a>(&amp;self, request: <a class='struct' href='../google_genomics1/struct.Dataset.html' title='google_genomics1::Dataset'>Dataset</a>) -&gt; <a class='struct' href='../google_genomics1/struct.DatasetCreateCall.html' title='google_genomics1::DatasetCreateCall'>DatasetCreateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='struct' href='../google_genomics1/struct.DatasetMethods.html' title='google_genomics1::DatasetMethods'>DatasetMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-12237' class='srclink' href='../src/google_genomics1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-genomics1-40179d636dbccd1e/out/lib.rs.html#22123-22265' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.create' class='method'><code>fn <a href='#method.create' class='fnname'>create</a>(&amp;self, request: <a class='struct' href='../google_genomics1/struct.Dataset.html' title='google_genomics1::Dataset'>Dataset</a>) -&gt; <a class='struct' href='../google_genomics1/struct.DatasetCreateCall.html' title='google_genomics1::DatasetCreateCall'>DatasetCreateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Creates a new dataset. For the definitions of datasets and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a></p>
@@ -84,7 +84,7 @@ It is not used directly, but through the <code>Genomics</code> hub.</p>
 <ul>
 <li><code>request</code> - No description provided.</li>
 </ul>
-</div><h4 id='method.delete' class='method'><code>fn <a href='#method.delete' class='fnname'>delete</a>(&amp;self, dataset_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_genomics1/struct.DatasetDeleteCall.html' title='google_genomics1::DatasetDeleteCall'>DatasetDeleteCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.delete' class='method'><code>fn <a href='#method.delete' class='fnname'>delete</a>(&amp;self, dataset_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_genomics1/struct.DatasetDeleteCall.html' title='google_genomics1::DatasetDeleteCall'>DatasetDeleteCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Deletes a dataset and all of its contents (all read group sets, reference sets, variant sets, call sets, annotation sets, etc.) This is reversible (up to one week after the deletion) via the datasets.undelete operation. For the definitions of datasets and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a></p>
@@ -93,7 +93,7 @@ It is not used directly, but through the <code>Genomics</code> hub.</p>
 <ul>
 <li><code>datasetId</code> - The ID of the dataset to be deleted.</li>
 </ul>
-</div><h4 id='method.undelete' class='method'><code>fn <a href='#method.undelete' class='fnname'>undelete</a>(&amp;self, request: <a class='struct' href='../google_genomics1/struct.UndeleteDatasetRequest.html' title='google_genomics1::UndeleteDatasetRequest'>UndeleteDatasetRequest</a>, dataset_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_genomics1/struct.DatasetUndeleteCall.html' title='google_genomics1::DatasetUndeleteCall'>DatasetUndeleteCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.undelete' class='method'><code>fn <a href='#method.undelete' class='fnname'>undelete</a>(&amp;self, request: <a class='struct' href='../google_genomics1/struct.UndeleteDatasetRequest.html' title='google_genomics1::UndeleteDatasetRequest'>UndeleteDatasetRequest</a>, dataset_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_genomics1/struct.DatasetUndeleteCall.html' title='google_genomics1::DatasetUndeleteCall'>DatasetUndeleteCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Undeletes a dataset by restoring a dataset which was deleted via this API. For the definitions of datasets and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a> This operation is only possible for a week after the deletion occurred.</p>
@@ -103,7 +103,7 @@ It is not used directly, but through the <code>Genomics</code> hub.</p>
 <li><code>request</code> - No description provided.</li>
 <li><code>datasetId</code> - The ID of the dataset to be undeleted.</li>
 </ul>
-</div><h4 id='method.set_iam_policy' class='method'><code>fn <a href='#method.set_iam_policy' class='fnname'>set_iam_policy</a>(&amp;self, request: <a class='struct' href='../google_genomics1/struct.SetIamPolicyRequest.html' title='google_genomics1::SetIamPolicyRequest'>SetIamPolicyRequest</a>, resource: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_genomics1/struct.DatasetSetIamPolicyCall.html' title='google_genomics1::DatasetSetIamPolicyCall'>DatasetSetIamPolicyCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.set_iam_policy' class='method'><code>fn <a href='#method.set_iam_policy' class='fnname'>set_iam_policy</a>(&amp;self, request: <a class='struct' href='../google_genomics1/struct.SetIamPolicyRequest.html' title='google_genomics1::SetIamPolicyRequest'>SetIamPolicyRequest</a>, resource: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_genomics1/struct.DatasetSetIamPolicyCall.html' title='google_genomics1::DatasetSetIamPolicyCall'>DatasetSetIamPolicyCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Sets the access control policy on the specified dataset. Replaces any existing policy. For the definitions of datasets and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a> See Setting a Policy for more information.</p>
@@ -113,7 +113,7 @@ It is not used directly, but through the <code>Genomics</code> hub.</p>
 <li><code>request</code> - No description provided.</li>
 <li><code>resource</code> - REQUIRED: The resource for which policy is being specified. Format is <code>datasets/</code>.</li>
 </ul>
-</div><h4 id='method.test_iam_permissions' class='method'><code>fn <a href='#method.test_iam_permissions' class='fnname'>test_iam_permissions</a>(&amp;self, request: <a class='struct' href='../google_genomics1/struct.TestIamPermissionsRequest.html' title='google_genomics1::TestIamPermissionsRequest'>TestIamPermissionsRequest</a>, resource: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_genomics1/struct.DatasetTestIamPermissionCall.html' title='google_genomics1::DatasetTestIamPermissionCall'>DatasetTestIamPermissionCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.test_iam_permissions' class='method'><code>fn <a href='#method.test_iam_permissions' class='fnname'>test_iam_permissions</a>(&amp;self, request: <a class='struct' href='../google_genomics1/struct.TestIamPermissionsRequest.html' title='google_genomics1::TestIamPermissionsRequest'>TestIamPermissionsRequest</a>, resource: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_genomics1/struct.DatasetTestIamPermissionCall.html' title='google_genomics1::DatasetTestIamPermissionCall'>DatasetTestIamPermissionCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Returns permissions that a caller has on the specified resource. See Testing Permissions for more information. For the definitions of datasets and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a></p>
@@ -123,7 +123,7 @@ It is not used directly, but through the <code>Genomics</code> hub.</p>
 <li><code>request</code> - No description provided.</li>
 <li><code>resource</code> - REQUIRED: The resource for which policy is being specified. Format is <code>datasets/</code>.</li>
 </ul>
-</div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, dataset_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_genomics1/struct.DatasetGetCall.html' title='google_genomics1::DatasetGetCall'>DatasetGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, dataset_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_genomics1/struct.DatasetGetCall.html' title='google_genomics1::DatasetGetCall'>DatasetGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Gets a dataset by ID. For the definitions of datasets and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a></p>
@@ -132,11 +132,11 @@ It is not used directly, but through the <code>Genomics</code> hub.</p>
 <ul>
 <li><code>datasetId</code> - The ID of the dataset.</li>
 </ul>
-</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self) -&gt; <a class='struct' href='../google_genomics1/struct.DatasetListCall.html' title='google_genomics1::DatasetListCall'>DatasetListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self) -&gt; <a class='struct' href='../google_genomics1/struct.DatasetListCall.html' title='google_genomics1::DatasetListCall'>DatasetListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Lists datasets within a project. For the definitions of datasets and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a></p>
-</div><h4 id='method.get_iam_policy' class='method'><code>fn <a href='#method.get_iam_policy' class='fnname'>get_iam_policy</a>(&amp;self, request: <a class='struct' href='../google_genomics1/struct.GetIamPolicyRequest.html' title='google_genomics1::GetIamPolicyRequest'>GetIamPolicyRequest</a>, resource: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_genomics1/struct.DatasetGetIamPolicyCall.html' title='google_genomics1::DatasetGetIamPolicyCall'>DatasetGetIamPolicyCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.get_iam_policy' class='method'><code>fn <a href='#method.get_iam_policy' class='fnname'>get_iam_policy</a>(&amp;self, request: <a class='struct' href='../google_genomics1/struct.GetIamPolicyRequest.html' title='google_genomics1::GetIamPolicyRequest'>GetIamPolicyRequest</a>, resource: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_genomics1/struct.DatasetGetIamPolicyCall.html' title='google_genomics1::DatasetGetIamPolicyCall'>DatasetGetIamPolicyCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Gets the access control policy for the dataset. This is empty if the policy or resource does not exist. See Getting a Policy for more information. For the definitions of datasets and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a></p>
@@ -146,7 +146,7 @@ It is not used directly, but through the <code>Genomics</code> hub.</p>
 <li><code>request</code> - No description provided.</li>
 <li><code>resource</code> - REQUIRED: The resource for which policy is being specified. Format is <code>datasets/</code>.</li>
 </ul>
-</div><h4 id='method.patch' class='method'><code>fn <a href='#method.patch' class='fnname'>patch</a>(&amp;self, request: <a class='struct' href='../google_genomics1/struct.Dataset.html' title='google_genomics1::Dataset'>Dataset</a>, dataset_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_genomics1/struct.DatasetPatchCall.html' title='google_genomics1::DatasetPatchCall'>DatasetPatchCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.patch' class='method'><code>fn <a href='#method.patch' class='fnname'>patch</a>(&amp;self, request: <a class='struct' href='../google_genomics1/struct.Dataset.html' title='google_genomics1::Dataset'>Dataset</a>, dataset_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_genomics1/struct.DatasetPatchCall.html' title='google_genomics1::DatasetPatchCall'>DatasetPatchCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Updates a dataset. For the definitions of datasets and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a> This method supports patch semantics.</p>
@@ -156,7 +156,7 @@ It is not used directly, but through the <code>Genomics</code> hub.</p>
 <li><code>request</code> - No description provided.</li>
 <li><code>datasetId</code> - The ID of the dataset to be updated.</li>
 </ul>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_genomics1/trait.MethodsBuilder.html' title='google_genomics1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_genomics1/struct.DatasetMethods.html' title='google_genomics1::DatasetMethods'>DatasetMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-13241' class='srclink' href='../src/google_genomics1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-genomics1-16ed839a8e049b7f/out/lib.rs.html#28678' title='goto source code'>[src]</a></span></h3>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='trait' href='../google_genomics1/trait.MethodsBuilder.html' title='google_genomics1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_genomics1/struct.DatasetMethods.html' title='google_genomics1::DatasetMethods'>DatasetMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-12233' class='srclink' href='../src/google_genomics1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-genomics1-40179d636dbccd1e/out/lib.rs.html#22122' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 

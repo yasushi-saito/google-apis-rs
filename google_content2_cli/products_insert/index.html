@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Insert - Shopping Content v0.3.6+20160331</title>
+  <title>Insert - Shopping Content v0.3.6+20160905</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -32,7 +32,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Shopping Content v0.3.6+20160331</a>
+        <a href=".." class="icon icon-home"> Shopping Content v0.3.6+20160905</a>
         
       </div>
 
@@ -411,6 +411,42 @@
         
 
     
+        
+            <span>Shippingsettings</span>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../shippingsettings_custombatch/">Custombatch</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../shippingsettings_get/">Get</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../shippingsettings_getsupportedcarriers/">Getsupportedcarriers</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../shippingsettings_list/">List</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../shippingsettings_patch/">Patch</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../shippingsettings_update/">Update</a>
+                    
+                </li>
+            
+        
+
+    
 </ul>
 
       </div>
@@ -422,7 +458,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Shopping Content v0.3.6+20160331</a>
+        <a href="..">Shopping Content v0.3.6+20160905</a>
       </nav>
 
       
@@ -467,6 +503,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <p>For example, a structure like this:</p>
 <pre><code>Product:
   additional-image-links: [string]
+  additional-product-types: [string]
   adult: boolean
   adwords-grouping: string
   adwords-labels: [string]
@@ -563,32 +600,37 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>adult=true</code><ul>
+<li><code>additional-product-types=et</code><ul>
+<li>Additional categories of the item (formatted as in products feed specification).</li>
+<li>Each invocation of this argument appends the given value to the array.</li>
+</ul>
+</li>
+<li><code>adult=false</code><ul>
 <li>Set to true if the item is targeted towards adults.</li>
 </ul>
 </li>
-<li><code>adwords-grouping=sed</code><ul>
+<li><code>adwords-grouping=sit</code><ul>
 <li>Used to group items in an arbitrary way. Only for CPA%, discouraged otherwise.</li>
 </ul>
 </li>
-<li><code>adwords-labels=sit</code><ul>
+<li><code>adwords-labels=takimata</code><ul>
 <li>Similar to adwords_grouping, but only works on CPC.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>adwords-redirect=takimata</code><ul>
+<li><code>adwords-redirect=elitr</code><ul>
 <li>Allows advertisers to override the item URL when the product is shown within the context of Product Ads.</li>
 </ul>
 </li>
-<li><code>age-group=elitr</code><ul>
+<li><code>age-group=nonumy</code><ul>
 <li>Target age group of the item.</li>
 </ul>
 </li>
-<li><code>availability=nonumy</code><ul>
+<li><code>availability=rebum.</code><ul>
 <li>Availability status of the item.</li>
 </ul>
 </li>
-<li><code>availability-date=rebum.</code><ul>
+<li><code>availability-date=lorem</code><ul>
 <li>The day a pre-ordered product becomes available for delivery, in ISO 8601 format.</li>
 </ul>
 </li>
@@ -596,11 +638,11 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>Brand of the item.</li>
 </ul>
 </li>
-<li><code>channel=lorem</code><ul>
+<li><code>channel=diam</code><ul>
 <li>The item&#39;s channel (online or local).</li>
 </ul>
 </li>
-<li><code>color=diam</code><ul>
+<li><code>color=ut</code><ul>
 <li>Color of the item.</li>
 </ul>
 </li>
@@ -608,76 +650,76 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>Condition or state of the item.</li>
 </ul>
 </li>
-<li><code>content-language=ut</code><ul>
+<li><code>content-language=amet.</code><ul>
 <li>The two-letter ISO 639-1 language code for the item.</li>
 </ul>
 </li>
-<li><code>custom-label0=amet.</code><ul>
+<li><code>custom-label0=ipsum</code><ul>
 <li>Custom label 0 for custom grouping of items in a Shopping campaign.</li>
 </ul>
 </li>
-<li><code>custom-label1=ipsum</code><ul>
+<li><code>custom-label1=ut</code><ul>
 <li>Custom label 1 for custom grouping of items in a Shopping campaign.</li>
 </ul>
 </li>
-<li><code>custom-label2=ut</code><ul>
+<li><code>custom-label2=dolor</code><ul>
 <li>Custom label 2 for custom grouping of items in a Shopping campaign.</li>
 </ul>
 </li>
-<li><code>custom-label3=dolor</code><ul>
+<li><code>custom-label3=sea</code><ul>
 <li>Custom label 3 for custom grouping of items in a Shopping campaign.</li>
 </ul>
 </li>
-<li><code>custom-label4=sea</code><ul>
+<li><code>custom-label4=ut</code><ul>
 <li>Custom label 4 for custom grouping of items in a Shopping campaign.</li>
 </ul>
 </li>
-<li><code>description=ut</code><ul>
+<li><code>description=eirmod</code><ul>
 <li>Description of the item.</li>
 </ul>
 </li>
-<li><code>display-ads-id=eirmod</code><ul>
+<li><code>display-ads-id=sanctus</code><ul>
 <li>An identifier for an item for dynamic remarketing campaigns.</li>
 </ul>
 </li>
-<li><code>display-ads-link=sanctus</code><ul>
+<li><code>display-ads-link=voluptua.</code><ul>
 <li>URL directly to your item&#39;s landing page for dynamic remarketing campaigns.</li>
 </ul>
 </li>
-<li><code>display-ads-similar-ids=voluptua.</code><ul>
+<li><code>display-ads-similar-ids=dolor</code><ul>
 <li>Advertiser-specified recommendations.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>display-ads-title=dolor</code><ul>
+<li><code>display-ads-title=et</code><ul>
 <li>Title of an item for dynamic remarketing campaigns.</li>
 </ul>
 </li>
-<li><code>display-ads-value=0.79072564984</code><ul>
+<li><code>display-ads-value=0.162324877359</code><ul>
 <li>Offer margin for dynamic remarketing campaigns.</li>
 </ul>
 </li>
-<li><code>energy-efficiency-class=et</code><ul>
+<li><code>energy-efficiency-class=vero</code><ul>
 <li>The energy efficiency class as defined in EU directive 2010/30/EU.</li>
 </ul>
 </li>
-<li><code>expiration-date=vero</code><ul>
+<li><code>expiration-date=ut</code><ul>
 <li>Date on which the item should expire, as specified upon insertion, in ISO 8601 format. The actual expiration date in Google Shopping is exposed in productstatuses as googleExpirationDate and might be earlier if expirationDate is too far in the future.</li>
 </ul>
 </li>
-<li><code>gender=ut</code><ul>
+<li><code>gender=sed</code><ul>
 <li>Target gender of the item.</li>
 </ul>
 </li>
-<li><code>google-product-category=sed</code><ul>
+<li><code>google-product-category=et</code><ul>
 <li>Google&#39;s category of the item (see Google product taxonomy).</li>
 </ul>
 </li>
-<li><code>gtin=et</code><ul>
+<li><code>gtin=ipsum</code><ul>
 <li>Global Trade Item Number (GTIN) of the item.</li>
 </ul>
 </li>
-<li><code>id=ipsum</code><ul>
+<li><code>id=justo</code><ul>
 <li>The REST id of the product.</li>
 </ul>
 </li>
@@ -685,11 +727,110 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>False when the item does not have unique product identifiers appropriate to its category, such as GTIN, MPN, and brand. Required according to the Unique Product Identifier Rules for all target countries except for Canada.</li>
 </ul>
 </li>
-<li><code>image-link=dolore</code><ul>
+<li><code>image-link=vero</code><ul>
 <li>URL of an image of the item.</li>
 </ul>
 </li>
-<li><code>installment.amount    currency=vero</code><ul>
+<li><code>installment.amount    currency=dolor</code><ul>
+<li>The currency of the price.</li>
+</ul>
+</li>
+<li>
+<p><code>value=takimata</code></p>
+<ul>
+<li>The price represented as a number.</li>
+</ul>
+</li>
+<li>
+<p><code>..    months=et</code></p>
+<ul>
+<li>The number of installments the buyer has to pay.</li>
+</ul>
+</li>
+<li>
+<p><code>..    is-bundle=false</code></p>
+<ul>
+<li>Whether the item is a merchant-defined bundle. A bundle is a custom grouping of different products sold by a merchant for a single price.</li>
+</ul>
+</li>
+<li><code>item-group-id=et</code><ul>
+<li>Shared identifier for all variants of the same product.</li>
+</ul>
+</li>
+<li><code>kind=sed</code><ul>
+<li>Identifies what kind of resource this is. Value: the fixed string &#34;content#product&#34;.</li>
+</ul>
+</li>
+<li><code>link=no</code><ul>
+<li>URL directly linking to your item&#39;s page on your website.</li>
+</ul>
+</li>
+<li><code>loyalty-points    name=invidunt</code><ul>
+<li>Name of loyalty points program. It is recommended to limit the name to 12 full-width characters or 24 Roman characters.</li>
+</ul>
+</li>
+<li><code>points-value=rebum.</code><ul>
+<li>The retailer&#39;s loyalty points in absolute value.</li>
+</ul>
+</li>
+<li>
+<p><code>ratio=0.156922986241</code></p>
+<ul>
+<li>The ratio of a point when converted to currency. Google assumes currency based on Merchant Center settings. If ratio is left out, it defaults to 1.0.</li>
+</ul>
+</li>
+<li>
+<p><code>..    material=aliquyam</code></p>
+<ul>
+<li>The material of which the item is made.</li>
+</ul>
+</li>
+<li><code>mobile-link=elitr</code><ul>
+<li>Link to a mobile-optimized version of the landing page.</li>
+</ul>
+</li>
+<li><code>mpn=consetetur</code><ul>
+<li>Manufacturer Part Number (MPN) of the item.</li>
+</ul>
+</li>
+<li><code>multipack=sea</code><ul>
+<li>The number of identical products in a merchant-defined multipack.</li>
+</ul>
+</li>
+<li><code>offer-id=elitr</code><ul>
+<li>An identifier of the item. Leading and trailing whitespaces are stripped and multiple whitespaces are replaced by a single whitespace upon submission. Only valid unicode characters are accepted. See the products feed specification for details.</li>
+</ul>
+</li>
+<li><code>online-only=false</code><ul>
+<li>Whether an item is available for purchase only online.</li>
+</ul>
+</li>
+<li><code>pattern=sea</code><ul>
+<li>The item&#39;s pattern (e.g. polka dots).</li>
+</ul>
+</li>
+<li><code>price    currency=consetetur</code><ul>
+<li>The currency of the price.</li>
+</ul>
+</li>
+<li>
+<p><code>value=diam</code></p>
+<ul>
+<li>The price represented as a number.</li>
+</ul>
+</li>
+<li>
+<p><code>..    product-type=accusam</code></p>
+<ul>
+<li>Your category of the item (formatted as in products feed specification).</li>
+</ul>
+</li>
+<li><code>promotion-ids=dolores</code><ul>
+<li>The unique ID of a promotion.</li>
+<li>Each invocation of this argument appends the given value to the array.</li>
+</ul>
+</li>
+<li><code>sale-price    currency=consetetur</code><ul>
 <li>The currency of the price.</li>
 </ul>
 </li>
@@ -700,167 +841,68 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
-<p><code>..    months=takimata</code></p>
+<p><code>..    sale-price-effective-date=aliquyam</code></p>
 <ul>
-<li>The number of installments the buyer has to pay.</li>
+<li>Date range during which the item is on sale (see products feed specification).</li>
 </ul>
 </li>
-<li>
-<p><code>..    is-bundle=true</code></p>
-<ul>
-<li>Whether the item is a merchant-defined bundle. A bundle is a custom grouping of different products sold by a merchant for a single price.</li>
-</ul>
-</li>
-<li><code>item-group-id=nonumy</code><ul>
-<li>Shared identifier for all variants of the same product.</li>
-</ul>
-</li>
-<li><code>kind=et</code><ul>
-<li>Identifies what kind of resource this is. Value: the fixed string &#34;content#product&#34;.</li>
-</ul>
-</li>
-<li><code>link=sed</code><ul>
-<li>URL directly linking to your item&#39;s page on your website.</li>
-</ul>
-</li>
-<li><code>loyalty-points    name=no</code><ul>
-<li>Name of loyalty points program. It is recommended to limit the name to 12 full-width characters or 24 Roman characters.</li>
-</ul>
-</li>
-<li><code>points-value=invidunt</code><ul>
-<li>The retailer&#39;s loyalty points in absolute value.</li>
-</ul>
-</li>
-<li>
-<p><code>ratio=0.858884522272</code></p>
-<ul>
-<li>The ratio of a point when converted to currency. Google assumes currency based on Merchant Center settings. If ratio is left out, it defaults to 1.0.</li>
-</ul>
-</li>
-<li>
-<p><code>..    material=labore</code></p>
-<ul>
-<li>The material of which the item is made.</li>
-</ul>
-</li>
-<li><code>mobile-link=aliquyam</code><ul>
-<li>Link to a mobile-optimized version of the landing page.</li>
-</ul>
-</li>
-<li><code>mpn=elitr</code><ul>
-<li>Manufacturer Part Number (MPN) of the item.</li>
-</ul>
-</li>
-<li><code>multipack=consetetur</code><ul>
-<li>The number of identical products in a merchant-defined multipack.</li>
-</ul>
-</li>
-<li><code>offer-id=sea</code><ul>
-<li>An identifier of the item.</li>
-</ul>
-</li>
-<li><code>online-only=true</code><ul>
-<li>Whether an item is available for purchase only online.</li>
-</ul>
-</li>
-<li><code>pattern=at</code><ul>
-<li>The item&#39;s pattern (e.g. polka dots).</li>
-</ul>
-</li>
-<li><code>price    currency=sea</code><ul>
-<li>The currency of the price.</li>
-</ul>
-</li>
-<li>
-<p><code>value=consetetur</code></p>
-<ul>
-<li>The price represented as a number.</li>
-</ul>
-</li>
-<li>
-<p><code>..    product-type=diam</code></p>
-<ul>
-<li>Your category of the item (formatted as in product feeds specification).</li>
-</ul>
-</li>
-<li><code>promotion-ids=accusam</code><ul>
-<li>The unique ID of a promotion.</li>
-<li>Each invocation of this argument appends the given value to the array.</li>
-</ul>
-</li>
-<li><code>sale-price    currency=dolores</code><ul>
-<li>The currency of the price.</li>
-</ul>
-</li>
-<li>
-<p><code>value=consetetur</code></p>
-<ul>
-<li>The price represented as a number.</li>
-</ul>
-</li>
-<li>
-<p><code>..    sale-price-effective-date=dolor</code></p>
-<ul>
-<li>Date range during which the item is on sale (see product feed specifications).</li>
-</ul>
-</li>
-<li><code>sell-on-google-quantity=aliquyam</code><ul>
+<li><code>sell-on-google-quantity=elitr</code><ul>
 <li>The quantity of the product that is reserved for sell-on-google ads.</li>
 </ul>
 </li>
 <li>
-<p><code>shipping-height    unit=elitr</code></p>
+<p><code>shipping-height    unit=ea</code></p>
 <ul>
 <li>
 <p>The unit of value.</p>
 <p>Acceptable values are:<br />
 - &#34;cm&#34; 
 - &#34;in&#34;
-* <code>value=0.848243271183</code>
+* <code>value=0.661344611169</code>
     - The dimension of the product used to calculate the shipping cost of the item.</p>
 </li>
 </ul>
 </li>
 <li>
-<p><code>..    shipping-label=et</code></p>
+<p><code>..    shipping-label=stet</code></p>
 <ul>
 <li>The shipping label of the product, used to group product in account-level shipping rules.</li>
 </ul>
 </li>
 <li>
-<p><code>shipping-length    unit=stet</code></p>
+<p><code>shipping-length    unit=sed</code></p>
 <ul>
 <li>
 <p>The unit of value.</p>
 <p>Acceptable values are:<br />
 - &#34;cm&#34; 
 - &#34;in&#34;
-* <code>value=0.58029818817</code>
+* <code>value=0.0276922285568</code>
     - The dimension of the product used to calculate the shipping cost of the item.</p>
 </li>
 </ul>
 </li>
 <li>
-<p><code>..shipping-weight    unit=dolor</code></p>
+<p><code>..shipping-weight    unit=sanctus</code></p>
 <ul>
 <li>The unit of value.</li>
 </ul>
 </li>
 <li>
-<p><code>value=0.937111860578</code></p>
+<p><code>value=0.679100110477</code></p>
 <ul>
 <li>The weight of the product used to calculate the shipping cost of the item.</li>
 </ul>
 </li>
 <li>
-<p><code>..shipping-width    unit=dolore</code></p>
+<p><code>..shipping-width    unit=lorem</code></p>
 <ul>
 <li>
 <p>The unit of value.</p>
 <p>Acceptable values are:<br />
 - &#34;cm&#34; 
 - &#34;in&#34;
-* <code>value=0.95214032564</code>
+* <code>value=0.05919685617</code>
     - The dimension of the product used to calculate the shipping cost of the item.</p>
 </li>
 </ul>
@@ -871,47 +913,47 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>System in which the size is specified. Recommended for apparel items.</li>
 </ul>
 </li>
-<li><code>size-type=consetetur</code><ul>
+<li><code>size-type=eirmod</code><ul>
 <li>The cut of the item. Recommended for apparel items.</li>
 </ul>
 </li>
-<li><code>sizes=eirmod</code><ul>
+<li><code>sizes=labore</code><ul>
 <li>Size of the item.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>target-country=-36</code><ul>
+<li><code>target-country=-61</code><ul>
 <li>The CLDR territory code for the item.</li>
 </ul>
 </li>
-<li><code>title=gubergren</code><ul>
+<li><code>title=et</code><ul>
 <li>Title of the item.</li>
 </ul>
 </li>
-<li><code>unit-pricing-base-measure    unit=et</code><ul>
+<li><code>unit-pricing-base-measure    unit=sadipscing</code><ul>
 <li>The unit of the denominator.</li>
 </ul>
 </li>
 <li>
-<p><code>value=sadipscing</code></p>
+<p><code>value=accusam</code></p>
 <ul>
 <li>The denominator of the unit price.</li>
 </ul>
 </li>
 <li>
-<p><code>..unit-pricing-measure    unit=accusam</code></p>
+<p><code>..unit-pricing-measure    unit=magna</code></p>
 <ul>
 <li>The unit of the measure.</li>
 </ul>
 </li>
 <li>
-<p><code>value=0.689518041302</code></p>
+<p><code>value=0.00702724490634</code></p>
 <ul>
 <li>The measure of an item.</li>
 </ul>
 </li>
 <li>
-<p><code>..    validated-destinations=lorem</code></p>
+<p><code>..    validated-destinations=rebum.</code></p>
 <ul>
 <li>The read-only list of intended destinations which passed validation.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
@@ -1037,7 +1079,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 
 <!--
 MkDocs version  : 0.12.2
-Docs Build Date : 2016-07-23 16:05:54.796381
+Docs Build Date : 2016-09-11 17:55:47.347920
 -->
 </body>
 </html>

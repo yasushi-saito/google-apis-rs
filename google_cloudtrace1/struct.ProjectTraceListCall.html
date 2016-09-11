@@ -47,8 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-1897' class='srclink' href='../src/google_cloudtrace1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-cloudtrace1-90af349d270e1d5a/out/lib.rs.html#3901-3914' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct ProjectTraceListCall&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
+               </span><a id='src-1790' class='srclink' href='../src/google_cloudtrace1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-cloudtrace1-1f01ee72c9b46b6d/out/lib.rs.html#3300-3313' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct ProjectTraceListCall&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>Returns of a list of traces that match the specified filter conditions.</p>
 
@@ -72,52 +72,52 @@ It is not used directly, but through a <code>ProjectMethods</code> instance.</p>
              .<span class='ident'>filter</span>(<span class='string'>&quot;sea&quot;</span>)
              .<span class='ident'>end_time</span>(<span class='string'>&quot;nonumy&quot;</span>)
              .<span class='ident'>doit</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_cloudtrace1/struct.ProjectTraceListCall.html' title='google_cloudtrace1::ProjectTraceListCall'>ProjectTraceListCall</a>&lt;'a, C, A&gt; <span class='where'>where C: <a class='trait' href='https://doc.rust-lang.org/nightly/core/borrow/trait.BorrowMut.html' title='core::borrow::BorrowMut'>BorrowMut</a>&lt;<a class='struct' href='../hyper/client/struct.Client.html' title='hyper::client::Client'>Client</a>&gt;, A: <a class='trait' href='../yup_oauth2/helper/trait.GetToken.html' title='yup_oauth2::helper::GetToken'>GetToken</a></span></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-1917' class='srclink' href='../src/google_cloudtrace1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-cloudtrace1-90af349d270e1d5a/out/lib.rs.html#3916-4189' title='goto source code'>[src]</a></span></h3>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='struct' href='../google_cloudtrace1/struct.ProjectTraceListCall.html' title='google_cloudtrace1::ProjectTraceListCall'>ProjectTraceListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: <a class='trait' href='https://doc.rust-lang.org/nightly/core/borrow/trait.BorrowMut.html' title='core::borrow::BorrowMut'>BorrowMut</a>&lt;<a class='struct' href='../hyper/client/struct.Client.html' title='hyper::client::Client'>Client</a>&gt;, A: <a class='trait' href='../yup_oauth2/authenticator/trait.GetToken.html' title='yup_oauth2::authenticator::GetToken'>GetToken</a></span></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-1810' class='srclink' href='../src/google_cloudtrace1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-cloudtrace1-1f01ee72c9b46b6d/out/lib.rs.html#3315-3588' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'><h4 id='method.doit' class='method'><code>fn <a href='#method.doit' class='fnname'>doit</a>(self) -&gt; <a class='type' href='../google_cloudtrace1/type.Result.html' title='google_cloudtrace1::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>(</a><a class='struct' href='../hyper/client/response/struct.Response.html' title='hyper::client::response::Response'>Response</a>, <a class='struct' href='../google_cloudtrace1/struct.ListTracesResponse.html' title='google_cloudtrace1::ListTracesResponse'>ListTracesResponse</a><a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>)</a>&gt;</code></h4>
 <div class='docblock'><p>Perform the operation you have build so far.</p>
-</div><h4 id='method.project_id' class='method'><code>fn <a href='#method.project_id' class='fnname'>project_id</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_cloudtrace1/struct.ProjectTraceListCall.html' title='google_cloudtrace1::ProjectTraceListCall'>ProjectTraceListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.project_id' class='method'><code>fn <a href='#method.project_id' class='fnname'>project_id</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_cloudtrace1/struct.ProjectTraceListCall.html' title='google_cloudtrace1::ProjectTraceListCall'>ProjectTraceListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>ID of the Cloud project where the trace data is stored.</p>
 
 <p>Sets the <em>project id</em> path property to the given value.</p>
 
 <p>Even though the property as already been set when instantiating this call,
 we provide this method for API completeness.</p>
-</div><h4 id='method.view' class='method'><code>fn <a href='#method.view' class='fnname'>view</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_cloudtrace1/struct.ProjectTraceListCall.html' title='google_cloudtrace1::ProjectTraceListCall'>ProjectTraceListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.view' class='method'><code>fn <a href='#method.view' class='fnname'>view</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_cloudtrace1/struct.ProjectTraceListCall.html' title='google_cloudtrace1::ProjectTraceListCall'>ProjectTraceListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Type of data returned for traces in the list. Optional. Default is <code>MINIMAL</code>.</p>
 
 <p>Sets the <em>view</em> query property to the given value.</p>
-</div><h4 id='method.start_time' class='method'><code>fn <a href='#method.start_time' class='fnname'>start_time</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_cloudtrace1/struct.ProjectTraceListCall.html' title='google_cloudtrace1::ProjectTraceListCall'>ProjectTraceListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.start_time' class='method'><code>fn <a href='#method.start_time' class='fnname'>start_time</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_cloudtrace1/struct.ProjectTraceListCall.html' title='google_cloudtrace1::ProjectTraceListCall'>ProjectTraceListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>End of the time interval (inclusive) during which the trace data was collected from the application.</p>
 
 <p>Sets the <em>start time</em> query property to the given value.</p>
-</div><h4 id='method.page_token' class='method'><code>fn <a href='#method.page_token' class='fnname'>page_token</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_cloudtrace1/struct.ProjectTraceListCall.html' title='google_cloudtrace1::ProjectTraceListCall'>ProjectTraceListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.page_token' class='method'><code>fn <a href='#method.page_token' class='fnname'>page_token</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_cloudtrace1/struct.ProjectTraceListCall.html' title='google_cloudtrace1::ProjectTraceListCall'>ProjectTraceListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Token identifying the page of results to return. If provided, use the value of the <code>next_page_token</code> field from a previous request. Optional.</p>
 
 <p>Sets the <em>page token</em> query property to the given value.</p>
-</div><h4 id='method.page_size' class='method'><code>fn <a href='#method.page_size' class='fnname'>page_size</a>(self, new_value: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>) -&gt; <a class='struct' href='../google_cloudtrace1/struct.ProjectTraceListCall.html' title='google_cloudtrace1::ProjectTraceListCall'>ProjectTraceListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.page_size' class='method'><code>fn <a href='#method.page_size' class='fnname'>page_size</a>(self, new_value: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>) -&gt; <a class='struct' href='../google_cloudtrace1/struct.ProjectTraceListCall.html' title='google_cloudtrace1::ProjectTraceListCall'>ProjectTraceListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Maximum number of traces to return. If not specified or &lt;= 0, the implementation selects a reasonable value. The implementation may return fewer traces than the requested page size. Optional.</p>
 
 <p>Sets the <em>page size</em> query property to the given value.</p>
-</div><h4 id='method.order_by' class='method'><code>fn <a href='#method.order_by' class='fnname'>order_by</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_cloudtrace1/struct.ProjectTraceListCall.html' title='google_cloudtrace1::ProjectTraceListCall'>ProjectTraceListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.order_by' class='method'><code>fn <a href='#method.order_by' class='fnname'>order_by</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_cloudtrace1/struct.ProjectTraceListCall.html' title='google_cloudtrace1::ProjectTraceListCall'>ProjectTraceListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Field used to sort the returned traces. Optional. Can be one of the following: * <code>trace_id</code> * <code>name</code> (<code>name</code> field of root span in the trace) * <code>duration</code> (difference between <code>end_time</code> and <code>start_time</code> fields of the root span) * <code>start</code> (<code>start_time</code> field of the root span) Descending order can be specified by appending <code>desc</code> to the sort field (for example, <code>name desc</code>). Only one sort field is permitted.</p>
 
 <p>Sets the <em>order by</em> query property to the given value.</p>
-</div><h4 id='method.filter' class='method'><code>fn <a href='#method.filter' class='fnname'>filter</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_cloudtrace1/struct.ProjectTraceListCall.html' title='google_cloudtrace1::ProjectTraceListCall'>ProjectTraceListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.filter' class='method'><code>fn <a href='#method.filter' class='fnname'>filter</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_cloudtrace1/struct.ProjectTraceListCall.html' title='google_cloudtrace1::ProjectTraceListCall'>ProjectTraceListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>An optional filter for the request.</p>
 
 <p>Sets the <em>filter</em> query property to the given value.</p>
-</div><h4 id='method.end_time' class='method'><code>fn <a href='#method.end_time' class='fnname'>end_time</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_cloudtrace1/struct.ProjectTraceListCall.html' title='google_cloudtrace1::ProjectTraceListCall'>ProjectTraceListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.end_time' class='method'><code>fn <a href='#method.end_time' class='fnname'>end_time</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_cloudtrace1/struct.ProjectTraceListCall.html' title='google_cloudtrace1::ProjectTraceListCall'>ProjectTraceListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Start of the time interval (inclusive) during which the trace data was collected from the application.</p>
 
 <p>Sets the <em>end time</em> query property to the given value.</p>
-</div><h4 id='method.delegate' class='method'><code>fn <a href='#method.delegate' class='fnname'>delegate</a>(self, new_value: &amp;'a mut <a class='trait' href='../google_cloudtrace1/trait.Delegate.html' title='google_cloudtrace1::Delegate'>Delegate</a>) -&gt; <a class='struct' href='../google_cloudtrace1/struct.ProjectTraceListCall.html' title='google_cloudtrace1::ProjectTraceListCall'>ProjectTraceListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.delegate' class='method'><code>fn <a href='#method.delegate' class='fnname'>delegate</a>(self, new_value: &amp;'a mut <a class='trait' href='../google_cloudtrace1/trait.Delegate.html' title='google_cloudtrace1::Delegate'>Delegate</a>) -&gt; <a class='struct' href='../google_cloudtrace1/struct.ProjectTraceListCall.html' title='google_cloudtrace1::ProjectTraceListCall'>ProjectTraceListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>The delegate implementation is consulted whenever there is an intermediate result, or if something goes wrong
 while executing the actual API request.</p>
 
 <p>It should be used to handle progress information, and to implement a certain level of resilience.</p>
 
 <p>Sets the <em>delegate</em> property to the given value.</p>
-</div><h4 id='method.param' class='method'><code>fn <a href='#method.param' class='fnname'>param</a>&lt;T&gt;(self, name: T, value: T) -&gt; <a class='struct' href='../google_cloudtrace1/struct.ProjectTraceListCall.html' title='google_cloudtrace1::ProjectTraceListCall'>ProjectTraceListCall</a>&lt;'a, C, A&gt; <span class='where'>where T: <a class='trait' href='https://doc.rust-lang.org/nightly/core/convert/trait.AsRef.html' title='core::convert::AsRef'>AsRef</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>&gt;</span></code></h4>
+</div><h4 id='method.param' class='method'><code>fn <a href='#method.param' class='fnname'>param</a>&lt;T&gt;(self, name: T, value: T) -&gt; <a class='struct' href='../google_cloudtrace1/struct.ProjectTraceListCall.html' title='google_cloudtrace1::ProjectTraceListCall'>ProjectTraceListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where T: <a class='trait' href='https://doc.rust-lang.org/nightly/core/convert/trait.AsRef.html' title='core::convert::AsRef'>AsRef</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>&gt;</span></code></h4>
 <div class='docblock'><p>Set any additional parameter of the query string used in the request.
 It should be used to set parameters which are not yet available through their own
 setters.</p>
@@ -141,11 +141,11 @@ which have their own setter method. If done anyway, the request will fail.</p>
 <li><em>alt</em> (query-string) - Data format for response.</li>
 <li><em>$.xgafv</em> (query-string) - V1 error format.</li>
 </ul>
-</div><h4 id='method.add_scope' class='method'><code>fn <a href='#method.add_scope' class='fnname'>add_scope</a>&lt;T&gt;(self, scope: T) -&gt; <a class='struct' href='../google_cloudtrace1/struct.ProjectTraceListCall.html' title='google_cloudtrace1::ProjectTraceListCall'>ProjectTraceListCall</a>&lt;'a, C, A&gt; <span class='where'>where T: <a class='trait' href='https://doc.rust-lang.org/nightly/core/convert/trait.AsRef.html' title='core::convert::AsRef'>AsRef</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>&gt;</span></code></h4>
+</div><h4 id='method.add_scope' class='method'><code>fn <a href='#method.add_scope' class='fnname'>add_scope</a>&lt;T&gt;(self, scope: T) -&gt; <a class='struct' href='../google_cloudtrace1/struct.ProjectTraceListCall.html' title='google_cloudtrace1::ProjectTraceListCall'>ProjectTraceListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where T: <a class='trait' href='https://doc.rust-lang.org/nightly/core/convert/trait.AsRef.html' title='core::convert::AsRef'>AsRef</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>&gt;</span></code></h4>
 <div class='docblock'><p>Identifies the authorization scope for the method you are building.</p>
 
 <p>Use this method to actively specify which scope should be used, instead the default <code>Scope</code> variant
-<code>Scope::CloudPlatform</code>.</p>
+<code>Scope::TraceReadonly</code>.</p>
 
 <p>The <code>scope</code> will be added to a set of scopes. This is important as one can maintain access
 tokens for more than one scope.</p>
@@ -153,7 +153,7 @@ tokens for more than one scope.</p>
 <p>Usually there is more than one suitable scope to authorize an operation, some of which may
 encompass more rights than others. For example, for listing resources, a <em>read-only</em> scope will be
 sufficient, a read-write scope will do as well.</p>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_cloudtrace1/trait.CallBuilder.html' title='google_cloudtrace1::CallBuilder'>CallBuilder</a> for <a class='struct' href='../google_cloudtrace1/struct.ProjectTraceListCall.html' title='google_cloudtrace1::ProjectTraceListCall'>ProjectTraceListCall</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-1913' class='srclink' href='../src/google_cloudtrace1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-cloudtrace1-90af349d270e1d5a/out/lib.rs.html#3915' title='goto source code'>[src]</a></span></h3>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='trait' href='../google_cloudtrace1/trait.CallBuilder.html' title='google_cloudtrace1::CallBuilder'>CallBuilder</a> for <a class='struct' href='../google_cloudtrace1/struct.ProjectTraceListCall.html' title='google_cloudtrace1::ProjectTraceListCall'>ProjectTraceListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-1806' class='srclink' href='../src/google_cloudtrace1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-cloudtrace1-1f01ee72c9b46b6d/out/lib.rs.html#3314' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 

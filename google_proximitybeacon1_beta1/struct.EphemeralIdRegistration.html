@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `EphemeralIdRegistration` struct in crate `google_proximitybeacon1_beta1`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, EphemeralIdRegistration">
+
+    <title>google_proximitybeacon1_beta1::EphemeralIdRegistration - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='index.html'>google_proximitybeacon1_beta1</a></p><script>window.sidebarCurrent = {name: 'EphemeralIdRegistration', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content struct">
+<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_proximitybeacon1_beta1</a>::<wbr><a class='struct' href=''>EphemeralIdRegistration</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-2152' class='srclink' href='../src/google_proximitybeacon1_beta1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-proximitybeacon1_beta1-c996a83e0bf8b1a4/out/lib.rs.html#3945-3958' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct EphemeralIdRegistration {
+    pub initial_eid: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub rotation_period_exponent: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>&gt;,
+    pub beacon_ecdh_public_key: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub initial_clock_value: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub service_ecdh_public_key: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub beacon_identity_key: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+}</pre><div class='docblock'><p>Write-only registration parameters for beacons using Eddystone-EID format. Two ways of securely registering an Eddystone-EID beacon with the service are supported: 1. Perform an ECDH key exchange via this API, including a previous call to <code>GET /v1beta1/eidparams</code>. In this case the fields <code>beacon_ecdh_public_key</code> and <code>service_ecdh_public_key</code> should be populated and <code>beacon_identity_key</code> should not be populated. This method ensures that only the two parties in the ECDH key exchange can compute the identity key, which becomes a secret between them. 2. Derive or obtain the beacon&#39;s identity key via other secure means (perhaps an ECDH key exchange between the beacon and a mobile device or any other secure method), and then submit the resulting identity key to the service. In this case <code>beacon_identity_key</code> field should be populated, and neither of <code>beacon_ecdh_public_key</code> nor <code>service_ecdh_public_key</code> fields should be. The security of this method depends on how securely the parties involved (in particular the bluetooth client) handle the identity key, and obviously on how securely the identity key was generated. See <a href="https://github.com/google/eddystone/tree/master/eddystone-eid">the Eddystone specification</a> at GitHub.</p>
+
+<p>This type is not used in any activity, and only used as <em>part</em> of another schema.</p>
+</div><h2 class='fields'>Fields</h2><span id='structfield.initial_eid' class='structfield'><code>initial_eid: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;</code>
+                           </span><span class='stab '></span><div class='docblock'><p>An initial ephemeral ID calculated using the clock value submitted as <code>initial_clock_value</code>, and the secret key generated by the Diffie-Hellman key exchange using <code>service_ecdh_public_key</code> and <code>service_ecdh_public_key</code>. This initial EID value will be used by the service to confirm that the key exchange process was successful.</p>
+</div><span id='structfield.rotation_period_exponent' class='structfield'><code>rotation_period_exponent: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>&gt;</code>
+                           </span><span class='stab '></span><div class='docblock'><p>Indicates the nominal period between each rotation of the beacon&#39;s ephemeral ID. &quot;Nominal&quot; because the beacon should randomize the actual interval. See <a href="https://github.com/google/eddystone/tree/master/eddystone-eid">the spec at github</a> for details. This value corresponds to a power-of-two scaler on the beacon&#39;s clock: when the scaler value is K, the beacon will begin broadcasting a new ephemeral ID on average every 2<sup>K</sup> seconds.</p>
+</div><span id='structfield.beacon_ecdh_public_key' class='structfield'><code>beacon_ecdh_public_key: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;</code>
+                           </span><span class='stab '></span><div class='docblock'><p>The beacon&#39;s public key used for the Elliptic curve Diffie-Hellman key exchange. When this field is populated, <code>service_ecdh_public_key</code> must also be populated, and <code>beacon_identity_key</code> must not be.</p>
+</div><span id='structfield.initial_clock_value' class='structfield'><code>initial_clock_value: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;</code>
+                           </span><span class='stab '></span><div class='docblock'><p>The initial clock value of the beacon. The beacon&#39;s clock must have begun counting at this value immediately prior to transmitting this value to the resolving service. Significant delay in transmitting this value to the service risks registration or resolution failures. If a value is not provided, the default is zero.</p>
+</div><span id='structfield.service_ecdh_public_key' class='structfield'><code>service_ecdh_public_key: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;</code>
+                           </span><span class='stab '></span><div class='docblock'><p>The service&#39;s public key used for the Elliptic curve Diffie-Hellman key exchange. When this field is populated, <code>beacon_ecdh_public_key</code> must also be populated, and <code>beacon_identity_key</code> must not be.</p>
+</div><span id='structfield.beacon_identity_key' class='structfield'><code>beacon_identity_key: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;</code>
+                           </span><span class='stab '></span><div class='docblock'><p>The private key of the beacon. If this field is populated, <code>beacon_ecdh_public_key</code> and <code>service_ecdh_public_key</code> must not be populated.</p>
+</div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_proximitybeacon1_beta1/struct.EphemeralIdRegistration.html' title='google_proximitybeacon1_beta1::EphemeralIdRegistration'>EphemeralIdRegistration</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-2130' class='srclink' href='../src/google_proximitybeacon1_beta1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-proximitybeacon1_beta1-c996a83e0bf8b1a4/out/lib.rs.html#3944' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.default' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_proximitybeacon1_beta1/struct.EphemeralIdRegistration.html' title='google_proximitybeacon1_beta1::EphemeralIdRegistration'>EphemeralIdRegistration</a></code></h4>
+<div class='docblock'><p>Returns the &quot;default value&quot; for a type. <a href="https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_proximitybeacon1_beta1/struct.EphemeralIdRegistration.html' title='google_proximitybeacon1_beta1::EphemeralIdRegistration'>EphemeralIdRegistration</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-2132' class='srclink' href='../src/google_proximitybeacon1_beta1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-proximitybeacon1_beta1-c996a83e0bf8b1a4/out/lib.rs.html#3944' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_proximitybeacon1_beta1/struct.EphemeralIdRegistration.html' title='google_proximitybeacon1_beta1::EphemeralIdRegistration'>EphemeralIdRegistration</a></code></h4>
+<div class='docblock'><p>Returns a copy of the value. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone">Read more</a></p>
+</div><h4 id='method.clone_from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></h4>
+<div class='docblock'><p>Performs copy-assignment from <code>source</code>. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_proximitybeacon1_beta1/struct.EphemeralIdRegistration.html' title='google_proximitybeacon1_beta1::EphemeralIdRegistration'>EphemeralIdRegistration</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-2141' class='srclink' href='../src/google_proximitybeacon1_beta1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-proximitybeacon1_beta1-c996a83e0bf8b1a4/out/lib.rs.html#3944' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
+<div class='docblock'><p>Formats the value using the given formatter.</p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='../google_proximitybeacon1_beta1/trait.Part.html' title='google_proximitybeacon1_beta1::Part'>Part</a> for <a class='struct' href='../google_proximitybeacon1_beta1/struct.EphemeralIdRegistration.html' title='google_proximitybeacon1_beta1::EphemeralIdRegistration'>EphemeralIdRegistration</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-2159' class='srclink' href='../src/google_proximitybeacon1_beta1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-proximitybeacon1_beta1-c996a83e0bf8b1a4/out/lib.rs.html#3959' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "google_proximitybeacon1_beta1";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../jquery.js"></script>
+    <script src="../main.js"></script>
+    
+    <script defer src="../search-index.js"></script>
+</body>
+</html>

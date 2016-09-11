@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Services Versions Create - appengine v0.3.6+20160314</title>
+  <title>Services Versions Create - appengine v0.3.6+20160802</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -32,7 +32,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> appengine v0.3.6+20160314</a>
+        <a href=".." class="icon icon-home"> appengine v0.3.6+20160802</a>
         
       </div>
 
@@ -51,7 +51,22 @@
             <span>Apps</span>
             
                 <li class="toctree-l2 ">
+                    <a class="" href="../apps_create/">Create</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
                     <a class="" href="../apps_get/">Get</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../apps_locations-get/">Locations Get</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../apps_locations-list/">Locations List</a>
                     
                 </li>
             
@@ -122,6 +137,26 @@
                 </li>
             
                 <li class="toctree-l2 ">
+                    <a class="" href="../apps_services-versions-instances-debug/">Services Versions Instances Debug</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../apps_services-versions-instances-delete/">Services Versions Instances Delete</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../apps_services-versions-instances-get/">Services Versions Instances Get</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../apps_services-versions-instances-list/">Services Versions Instances List</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
                     <a class="" href="../apps_services-versions-list/">Services Versions List</a>
                     
                 </li>
@@ -145,7 +180,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">appengine v0.3.6+20160314</a>
+        <a href="..">appengine v0.3.6+20160802</a>
       </nav>
 
       
@@ -172,7 +207,7 @@
 </div>
           <div role="main">
             <div class="section">
-              <p>Deploys new code and resource files to a version.</p>
+              <p>Deploys new code and resource files to a new version.</p>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for the <em>https://www.googleapis.com/auth/cloud-platform</em> scope to make a valid call.</p>
 <p>If unset, the scope for this method defaults to <em>https://www.googleapis.com/auth/cloud-platform</em>.
@@ -269,284 +304,284 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .api-config    auth-fail-action=et</code><ul>
-<li>For users not logged in, how to handle access to resources with required login. Defaults to &#34;redirect&#34;.</li>
+<li><code>-r .api-config    auth-fail-action=labore</code><ul>
+<li>Action to take when users access resources that require authentication. Defaults to <code>redirect</code>.</li>
 </ul>
 </li>
-<li><code>login=dolores</code><ul>
-<li>What level of login is required to access this resource. Default is &#34;optional&#34;.</li>
+<li><code>login=sea</code><ul>
+<li>Level of login required to access this resource. Defaults to <code>optional</code>.</li>
 </ul>
 </li>
-<li><code>script=kasd</code><ul>
-<li>Specifies the path to the script from the application root directory.</li>
+<li><code>script=nonumy</code><ul>
+<li>Path to the script from the application root directory.</li>
 </ul>
 </li>
-<li><code>security-level=accusam</code><ul>
-<li>Configures whether security (HTTPS) should be enforced for this URL.</li>
+<li><code>security-level=dolores</code><ul>
+<li>Security (HTTPS) enforcement for this URL.</li>
 </ul>
 </li>
 <li>
-<p><code>url=takimata</code></p>
+<p><code>url=gubergren</code></p>
 <ul>
 <li>URL to serve the endpoint at.</li>
 </ul>
 </li>
 <li>
-<p><code>..automatic-scaling    cool-down-period=justo</code></p>
+<p><code>..automatic-scaling    cool-down-period=sadipscing</code></p>
 <ul>
-<li>The amount of time that the <a href="https://cloud.google.com/compute/docs/autoscaler/">Autoscaler</a> should wait between changes to the number of virtual machines. Applies only to the VM runtime.</li>
+<li>Amount of time that the <a href="https://cloud.google.com/compute/docs/autoscaler/">Autoscaler</a> should wait between changes to the number of virtual machines. Only applicable for VM runtimes.</li>
 </ul>
 </li>
-<li><code>cpu-utilization    aggregation-window-length=amet.</code><ul>
-<li>The period of time over which CPU utilization is calculated.</li>
+<li><code>cpu-utilization    aggregation-window-length=aliquyam</code><ul>
+<li>Period of time over which CPU utilization is calculated.</li>
 </ul>
 </li>
 <li>
-<p><code>target-utilization=0.204946002078</code></p>
+<p><code>target-utilization=0.348101942899</code></p>
 <ul>
-<li>Target (0-1) CPU utilization ratio to maintain when scaling.</li>
+<li>Target CPU utilization ratio to maintain when scaling. Must be between 0 and 1.</li>
 </ul>
 </li>
 <li>
-<p><code>..disk-utilization    target-read-bytes-per-sec=66</code></p>
+<p><code>..disk-utilization    target-read-bytes-per-sec=40</code></p>
 <ul>
-<li>Target bytes per second read.</li>
+<li>Target bytes read per second.</li>
 </ul>
 </li>
-<li><code>target-read-ops-per-sec=92</code><ul>
-<li>Target ops per second read.</li>
+<li><code>target-read-ops-per-sec=80</code><ul>
+<li>Target ops read per second.</li>
 </ul>
 </li>
-<li><code>target-write-bytes-per-sec=11</code><ul>
-<li>Target bytes per second written.</li>
+<li><code>target-write-bytes-per-sec=80</code><ul>
+<li>Target bytes written per second.</li>
 </ul>
 </li>
 <li>
-<p><code>target-write-ops-per-sec=82</code></p>
+<p><code>target-write-ops-per-sec=67</code></p>
 <ul>
-<li>Target ops per second written.</li>
+<li>Target ops written per second.</li>
 </ul>
 </li>
 <li>
-<p><code>..    max-concurrent-requests=40</code></p>
+<p><code>..    max-concurrent-requests=84</code></p>
 <ul>
-<li>The number of concurrent requests an automatic scaling instance can accept before the scheduler spawns a new instance. Default value is chosen based on the runtime.</li>
+<li>Number of concurrent requests an automatic scaling instance can accept before the scheduler spawns a new instance. Defaults to a runtime-specific value.</li>
 </ul>
 </li>
-<li><code>max-idle-instances=6</code><ul>
-<li>The maximum number of idle instances that App Engine should maintain for this version.</li>
+<li><code>max-idle-instances=60</code><ul>
+<li>Maximum number of idle instances that should be maintained for this version.</li>
 </ul>
 </li>
-<li><code>max-pending-latency=aliquyam</code><ul>
-<li>The maximum amount of time that App Engine should allow a request to wait in the pending queue before starting a new instance to handle it.</li>
+<li><code>max-pending-latency=ipsum</code><ul>
+<li>Maximum amount of time that a request should wait in the pending queue before starting a new instance to handle it.</li>
 </ul>
 </li>
-<li><code>max-total-instances=35</code><ul>
-<li>Max number of instances that App Engine should start to handle requests.</li>
+<li><code>max-total-instances=96</code><ul>
+<li>Maximum number of instances that should be started to handle requests.</li>
 </ul>
 </li>
-<li><code>min-idle-instances=40</code><ul>
-<li>The minimum number of idle instances that App Engine should maintain for this version. Only applies to the default version of a service, since other versions are not expected to receive significant traffic.</li>
+<li><code>min-idle-instances=80</code><ul>
+<li>Minimum number of idle instances that should be maintained for this version. Only applicable for the default version of a module.</li>
 </ul>
 </li>
-<li><code>min-pending-latency=justo</code><ul>
-<li>The minimum amount of time that App Engine should allow a request to wait in the pending queue before starting a new instance to handle it.</li>
+<li><code>min-pending-latency=duo</code><ul>
+<li>Minimum amount of time a request should wait in the pending queue before starting a new instance to handle it.</li>
 </ul>
 </li>
-<li><code>min-total-instances=80</code><ul>
-<li>Minimum number of instances that App Engine should maintain.</li>
+<li><code>min-total-instances=69</code><ul>
+<li>Minimum number of instances that should be maintained for this version.</li>
 </ul>
 </li>
-<li><code>network-utilization    target-received-bytes-per-sec=67</code><ul>
-<li>Target bytes per second received.</li>
+<li><code>network-utilization    target-received-bytes-per-sec=92</code><ul>
+<li>Target bytes received per second.</li>
 </ul>
 </li>
-<li><code>target-received-packets-per-sec=84</code><ul>
-<li>Target packets per second received.</li>
+<li><code>target-received-packets-per-sec=46</code><ul>
+<li>Target packets received per second.</li>
 </ul>
 </li>
-<li><code>target-sent-bytes-per-sec=60</code><ul>
-<li>Target bytes per second sent.</li>
+<li><code>target-sent-bytes-per-sec=26</code><ul>
+<li>Target bytes sent per second.</li>
 </ul>
 </li>
 <li>
-<p><code>target-sent-packets-per-sec=46</code></p>
+<p><code>target-sent-packets-per-sec=20</code></p>
 <ul>
-<li>Target packets per second sent.</li>
+<li>Target packets sent per second.</li>
 </ul>
 </li>
 <li>
-<p><code>..request-utilization    target-concurrent-requests=96</code></p>
+<p><code>..request-utilization    target-concurrent-requests=6</code></p>
 <ul>
 <li>Target number of concurrent requests.</li>
 </ul>
 </li>
 <li>
-<p><code>target-request-count-per-sec=80</code></p>
+<p><code>target-request-count-per-sec=53</code></p>
 <ul>
 <li>Target requests per second.</li>
 </ul>
 </li>
 <li>
-<p><code>...basic-scaling    idle-timeout=duo</code></p>
+<p><code>...basic-scaling    idle-timeout=eirmod</code></p>
 <ul>
-<li>The instance will be shut down this amount of time after receiving its last request.</li>
+<li>Duration of time after the last request that an instance must wait before the instance is shut down.</li>
 </ul>
 </li>
 <li>
-<p><code>max-instances=69</code></p>
+<p><code>max-instances=58</code></p>
 <ul>
-<li>The maximum number of instances for App Engine to create for this version.</li>
+<li>Maximum number of instances to create for this version.</li>
 </ul>
 </li>
 <li>
-<p><code>..    beta-settings=key=sea</code></p>
+<p><code>..    beta-settings=key=amet</code></p>
 <ul>
-<li>Beta settings supplied to the application via metadata.</li>
+<li>Metadata settings that are supplied to this version to enable beta runtime features.</li>
 <li>the value will be associated with the given <code>key</code></li>
 </ul>
 </li>
-<li><code>creation-time=lorem</code><ul>
-<li>Creation time of this version. This will be between the start and end times of the operation that creates this version. @OutputOnly</li>
+<li><code>creation-time=no</code><ul>
+<li>Time that this version was created. @OutputOnly</li>
 </ul>
 </li>
-<li><code>default-expiration=eos</code><ul>
-<li>The length of time a static file served by a static file handler ought to be cached by web proxies and browsers, if the handler does not specify its own expiration. Only returned in <code>GET</code> requests if <code>view=FULL</code> is set. May only be set on create requests; once created, is immutable.</li>
+<li><code>default-expiration=labore</code><ul>
+<li>Duration that static files should be cached by web proxies and browsers. Only applicable if the corresponding <a href="https://cloud.google.com/appengine/docs/admin-api/reference/rest/v1/apps.services.versions#staticfileshandler">StaticFilesHandler</a> does not specify its own expiration time. Only returned in <code>GET</code> requests if <code>view=FULL</code> is set.</li>
 </ul>
 </li>
-<li><code>deployer=erat</code><ul>
-<li>The email address of the user who created this version. @OutputOnly</li>
+<li><code>deployer=eirmod</code><ul>
+<li>Email address of the user who created this version. @OutputOnly</li>
 </ul>
 </li>
 <li>
-<p><code>deployment.container    image=sadipscing</code></p>
+<p><code>deployment.container    image=dolore</code></p>
 <ul>
-<li>Reference to a hosted container image. Must be a URI to a resource in a Docker repository. Must be fully qualified, including tag or digest. e.g. gcr.io/my-project/image:tag or gcr.io/my-project/image@digest</li>
+<li>URI to the hosted container image in a Docker repository. The URI must be fully qualified and include a tag or digest. Examples: &#34;gcr.io/my-project/image:tag&#34; or &#34;gcr.io/my-project/image@digest&#34;</li>
 </ul>
 </li>
 <li>
-<p><code>...    disk-usage-bytes=dolor</code></p>
+<p><code>...    disk-usage-bytes=invidunt</code></p>
 <ul>
 <li>Total size of version files hosted on App Engine disk in bytes. @OutputOnly</li>
 </ul>
 </li>
-<li><code>env=eirmod</code><ul>
-<li>The App Engine execution environment to use for this version. Default: &#34;1&#34;</li>
+<li><code>env=aliquyam</code><ul>
+<li>App Engine execution environment to use for this version. Defaults to <code>1</code>.</li>
 </ul>
 </li>
-<li><code>env-variables=key=elitr</code><ul>
-<li>Environment variables made available to the application. Only returned in <code>GET</code> requests if <code>view=FULL</code> is set. May only be set on create requests; once created, is immutable.</li>
+<li><code>env-variables=key=accusam</code><ul>
+<li>Environment variables made available to the application. Only returned in <code>GET</code> requests if <code>view=FULL</code> is set.</li>
 <li>the value will be associated with the given <code>key</code></li>
 </ul>
 </li>
-<li><code>health-check    check-interval=amet</code><ul>
-<li>The interval between health checks.</li>
+<li><code>health-check    check-interval=lorem</code><ul>
+<li>Interval between health checks.</li>
 </ul>
 </li>
-<li><code>disable-health-check=false</code><ul>
+<li><code>disable-health-check=true</code><ul>
 <li>Whether to explicitly disable health checks for this instance.</li>
 </ul>
 </li>
-<li><code>healthy-threshold=65</code><ul>
-<li>The number of consecutive successful health checks before receiving traffic.</li>
+<li><code>healthy-threshold=80</code><ul>
+<li>Number of consecutive successful health checks required before receiving traffic.</li>
 </ul>
 </li>
-<li><code>host=eirmod</code><ul>
-<li>The host header to send when performing an HTTP health check (e.g. myapp.appspot.com)</li>
+<li><code>host=duo</code><ul>
+<li>Host header to send when performing an HTTP health check. Example: &#34;myapp.appspot.com&#34;</li>
 </ul>
 </li>
-<li><code>restart-threshold=68</code><ul>
-<li>The number of consecutive failed health checks before an instance is restarted.</li>
+<li><code>restart-threshold=80</code><ul>
+<li>Number of consecutive failed health checks required before an instance is restarted.</li>
 </ul>
 </li>
-<li><code>timeout=invidunt</code><ul>
-<li>The amount of time before the health check is considered failed.</li>
-</ul>
-</li>
-<li>
-<p><code>unhealthy-threshold=19</code></p>
-<ul>
-<li>The number of consecutive failed health checks before removing traffic.</li>
+<li><code>timeout=eirmod</code><ul>
+<li>Time before the health check is considered failed.</li>
 </ul>
 </li>
 <li>
-<p><code>..    id=accusam</code></p>
+<p><code>unhealthy-threshold=43</code></p>
 <ul>
-<li>The relative name/path of the Version within the service. Example: &#34;v1&#34;. Version specifiers can contain lowercase letters, digits, and hyphens. It cannot begin with the prefix <code>ah-</code> and the names <code>default</code> and <code>latest</code> are reserved and cannot be used.</li>
+<li>Number of consecutive failed health checks required before removing traffic.</li>
 </ul>
 </li>
-<li><code>inbound-services=lorem</code><ul>
+<li>
+<p><code>..    id=et</code></p>
+<ul>
+<li>Relative name of the version within the module. Example: <code>v1</code>. Version names can contain only lowercase letters, numbers, or hyphens. Reserved names: &#34;default&#34;, &#34;latest&#34;, and any name with the prefix &#34;ah-&#34;.</li>
+</ul>
+</li>
+<li><code>inbound-services=amet</code><ul>
 <li>Before an application can receive email or XMPP messages, the application must be configured to enable the service.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>instance-class=sea</code><ul>
-<li>The instance class to use to run this app. Valid values for AutomaticScaling are <code>[F1, F2, F4, F4_1G]</code>. Valid values for ManualScaling and BasicScaling are <code>[B1, B2, B4, B8, B4_1G]</code>. Default: &#34;F1&#34; for AutomaticScaling, &#34;B1&#34; for ManualScaling and BasicScaling</li>
+<li><code>instance-class=et</code><ul>
+<li>Instance class that is used to run this version. Valid values are: * AutomaticScaling: <code>F1</code>, <code>F2</code>, <code>F4</code>, <code>F4_1G</code> * ManualScaling or BasicScaling: <code>B1</code>, <code>B2</code>, <code>B4</code>, <code>B8</code>, <code>B4_1G</code> Defaults to <code>F1</code> for AutomaticScaling and <code>B1</code> for ManualScaling or BasicScaling.</li>
 </ul>
 </li>
 <li>
-<p><code>manual-scaling    instances=80</code></p>
+<p><code>manual-scaling    instances=56</code></p>
 <ul>
-<li>The number of instances to assign to the service at the start. This number can later be altered by using the <a href="https://cloud.google.com/appengine/docs/python/modules/functions">Modules API</a> <code>set_num_instances()</code> function.</li>
+<li>Number of instances to assign to the service at the start. This number can later be altered by using the <a href="https://cloud.google.com/appengine/docs/python/modules/functions">Modules API</a> <code>set_num_instances()</code> function.</li>
 </ul>
 </li>
 <li>
-<p><code>..    name=duo</code></p>
+<p><code>..    name=ut</code></p>
 <ul>
-<li>The full path to the Version resource in the API. Example: &#34;apps/myapp/services/default/versions/v1&#34;. @OutputOnly</li>
+<li>Full path to the Version resource in the API. Example: <code>apps/myapp/services/default/versions/v1</code>. @OutputOnly</li>
 </ul>
 </li>
-<li><code>network    forwarded-ports=et</code><ul>
-<li>A list of ports (or port pairs) to forward from the VM into the app container.</li>
+<li><code>network    forwarded-ports=ea</code><ul>
+<li>List of ports, or port pairs, to forward from the virtual machine to the application container.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>instance-tag=eirmod</code><ul>
-<li>A tag to apply to the VM instance during creation.</li>
+<li><code>instance-tag=sed</code><ul>
+<li>Tag to apply to the VM instance during creation.</li>
 </ul>
 </li>
 <li>
-<p><code>name=sanctus</code></p>
+<p><code>name=dolor</code></p>
 <ul>
-<li>The Google Compute Engine network where the VMs will be created. If not specified, or empty, the network named &#34;default&#34; will be used. (The short name should be specified, not the resource path.)</li>
+<li>Google Cloud Platform network where the virtual machines are created. Specify the short name, not the resource path. Defaults to <code>default</code>.</li>
 </ul>
 </li>
 <li>
-<p><code>..    nobuild-files-regex=et</code></p>
+<p><code>..    nobuild-files-regex=dolor</code></p>
 <ul>
-<li>Go only. Files that match this pattern will not be built into the app. May only be set on create requests.</li>
+<li>Files that match this pattern will not be built into this version. Only applicable for Go runtimes. Only returned in <code>GET</code> requests if <code>view=FULL</code> is set.</li>
 </ul>
 </li>
-<li><code>resources    cpu=0.549609244211</code><ul>
-<li>How many CPU cores an app version needs.</li>
+<li><code>resources    cpu=0.528448098786</code><ul>
+<li>Number of CPU cores needed.</li>
 </ul>
 </li>
-<li><code>disk-gb=0.77599682643</code><ul>
-<li>How much disk size, in GB, an app version needs.</li>
+<li><code>disk-gb=0.775321302285</code><ul>
+<li>Disk size (GB) needed.</li>
 </ul>
 </li>
 <li>
-<p><code>memory-gb=0.555410189379</code></p>
+<p><code>memory-gb=0.0504342224178</code></p>
 <ul>
-<li>How much memory, in GB, an app version needs.</li>
+<li>Memory (GB) needed.</li>
 </ul>
 </li>
 <li>
-<p><code>..    runtime=ut</code></p>
+<p><code>..    runtime=amet.</code></p>
 <ul>
-<li>The desired runtime. Values can include python27, java7, go, etc.</li>
+<li>Desired runtime. Example: <code>python27</code>.</li>
 </ul>
 </li>
-<li><code>serving-status=ea</code><ul>
-<li>The current serving status of this version. Only <code>SERVING</code> versions will have instances created or billed for. If this field is unset when a version is created, <code>SERVING</code> status will be assumed. It is an error to explicitly set this field to <code>SERVING_STATUS_UNSPECIFIED</code>.</li>
+<li><code>serving-status=voluptua.</code><ul>
+<li>Current serving status of this version. Only the versions with a <code>SERVING</code> status create instances and can be billed. <code>SERVING_STATUS_UNSPECIFIED</code> is an invalid value. Defaults to <code>SERVING</code>.</li>
 </ul>
 </li>
 <li><code>threadsafe=false</code><ul>
-<li>If true, multiple requests can be dispatched to the app at once.</li>
+<li>Whether multiple requests can be dispatched to this version at once.</li>
 </ul>
 </li>
 <li><code>vm=true</code><ul>
-<li>Whether to deploy this app in a VM container.</li>
+<li>Whether to deploy this version in a container on a virtual machine.</li>
 </ul>
 </li>
 </ul>
@@ -695,7 +730,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <!--
 MkDocs version  : 0.12.2
-Docs Build Date : 2016-07-23 16:05:39.668762
+Docs Build Date : 2016-09-11 17:56:33.461684
 -->
 </body>
 </html>

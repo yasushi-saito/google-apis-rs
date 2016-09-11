@@ -47,8 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-1027' class='srclink' href='../src/google_container1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-container1-d2e07ec1495b4e27/out/lib.rs.html#2085-2089' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct Container&lt;C, A&gt; {
+               </span><a id='src-976' class='srclink' href='../src/google_container1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-container1-09a1b7b8ea88a7e2/out/lib.rs.html#1885-1889' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct Container&lt;C,&nbsp;A&gt; {
     // some fields omitted
 }</pre><div class='docblock'><p>Central instance to access all Container related resource activities</p>
 
@@ -59,7 +59,7 @@
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>hyper</span>;
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>yup_oauth2</span> <span class='kw'>as</span> <span class='ident'>oauth2</span>;
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>google_container1</span> <span class='kw'>as</span> <span class='ident'>container1</span>;
-<span class='kw'>use</span> <span class='ident'>container1</span>::<span class='ident'>UpdateClusterRequest</span>;
+<span class='kw'>use</span> <span class='ident'>container1</span>::<span class='ident'>CreateNodePoolRequest</span>;
 <span class='kw'>use</span> <span class='ident'>container1</span>::{<span class='prelude-ty'>Result</span>, <span class='ident'>Error</span>};
 <span class='kw'>use</span> <span class='ident'>std</span>::<span class='ident'>default</span>::<span class='ident'>Default</span>;
 <span class='kw'>use</span> <span class='ident'>oauth2</span>::{<span class='ident'>Authenticator</span>, <span class='ident'>DefaultAuthenticatorDelegate</span>, <span class='ident'>ApplicationSecret</span>, <span class='ident'>MemoryStorage</span>};
@@ -80,12 +80,12 @@
 <span class='comment'>// As the method needs a request, you would usually fill it with the desired information</span>
 <span class='comment'>// into the respective structure. Some of the parts shown here might not be applicable !</span>
 <span class='comment'>// Values shown here are possibly random and not representative !</span>
-<span class='kw'>let</span> <span class='kw-2'>mut</span> <span class='ident'>req</span> <span class='op'>=</span> <span class='ident'>UpdateClusterRequest</span>::<span class='ident'>default</span>();
+<span class='kw'>let</span> <span class='kw-2'>mut</span> <span class='ident'>req</span> <span class='op'>=</span> <span class='ident'>CreateNodePoolRequest</span>::<span class='ident'>default</span>();
  
 <span class='comment'>// You can configure optional parameters by calling the respective setters at will, and</span>
 <span class='comment'>// execute the final call using `doit()`.</span>
 <span class='comment'>// Values shown here are possibly random and not representative !</span>
-<span class='kw'>let</span> <span class='ident'>result</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>projects</span>().<span class='ident'>zones_clusters_update</span>(<span class='ident'>req</span>, <span class='string'>&quot;projectId&quot;</span>, <span class='string'>&quot;zone&quot;</span>, <span class='string'>&quot;clusterId&quot;</span>)
+<span class='kw'>let</span> <span class='ident'>result</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>projects</span>().<span class='ident'>zones_clusters_node_pools_create</span>(<span class='ident'>req</span>, <span class='string'>&quot;projectId&quot;</span>, <span class='string'>&quot;zone&quot;</span>, <span class='string'>&quot;clusterId&quot;</span>)
              .<span class='ident'>doit</span>();
  
 <span class='kw'>match</span> <span class='ident'>result</span> {
@@ -104,15 +104,15 @@
     },
     <span class='prelude-val'>Ok</span>(<span class='ident'>res</span>) <span class='op'>=&gt;</span> <span class='macro'>println</span><span class='macro'>!</span>(<span class='string'>&quot;Success: {:?}&quot;</span>, <span class='ident'>res</span>),
 }</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_container1/struct.Container.html' title='google_container1::Container'>Container</a>&lt;C, A&gt; <span class='where'>where C: <a class='trait' href='https://doc.rust-lang.org/nightly/core/borrow/trait.BorrowMut.html' title='core::borrow::BorrowMut'>BorrowMut</a>&lt;<a class='struct' href='../hyper/client/struct.Client.html' title='hyper::client::Client'>Client</a>&gt;, A: <a class='trait' href='../yup_oauth2/helper/trait.GetToken.html' title='yup_oauth2::helper::GetToken'>GetToken</a></span></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-1037' class='srclink' href='../src/google_container1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-container1-d2e07ec1495b4e27/out/lib.rs.html#2091-2110' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.new' class='method'><code>fn <a href='#method.new' class='fnname'>new</a>(client: C, authenticator: A) -&gt; <a class='struct' href='../google_container1/struct.Container.html' title='google_container1::Container'>Container</a>&lt;C, A&gt;</code></h4>
-<h4 id='method.projects' class='method'><code>fn <a href='#method.projects' class='fnname'>projects</a>(&amp;'a self) -&gt; <a class='struct' href='../google_container1/struct.ProjectMethods.html' title='google_container1::ProjectMethods'>ProjectMethods</a>&lt;'a, C, A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='struct' href='../google_container1/struct.Container.html' title='google_container1::Container'>Container</a>&lt;C,&nbsp;A&gt; <span class='where'>where C: <a class='trait' href='https://doc.rust-lang.org/nightly/core/borrow/trait.BorrowMut.html' title='core::borrow::BorrowMut'>BorrowMut</a>&lt;<a class='struct' href='../hyper/client/struct.Client.html' title='hyper::client::Client'>Client</a>&gt;, A: <a class='trait' href='../yup_oauth2/authenticator/trait.GetToken.html' title='yup_oauth2::authenticator::GetToken'>GetToken</a></span></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-986' class='srclink' href='../src/google_container1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-container1-09a1b7b8ea88a7e2/out/lib.rs.html#1891-1910' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.new' class='method'><code>fn <a href='#method.new' class='fnname'>new</a>(client: C, authenticator: A) -&gt; <a class='struct' href='../google_container1/struct.Container.html' title='google_container1::Container'>Container</a>&lt;C,&nbsp;A&gt;</code></h4>
+<h4 id='method.projects' class='method'><code>fn <a href='#method.projects' class='fnname'>projects</a>(&amp;'a self) -&gt; <a class='struct' href='../google_container1/struct.ProjectMethods.html' title='google_container1::ProjectMethods'>ProjectMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <h4 id='method.user_agent' class='method'><code>fn <a href='#method.user_agent' class='fnname'>user_agent</a>(&amp;mut self, agent_name: <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>) -&gt; <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a></code></h4>
 <div class='docblock'><p>Set the user-agent header field to use in all requests to the server.
-It defaults to <code>google-api-rust-client/0.1.14</code>.</p>
+It defaults to <code>google-api-rust-client/0.1.15</code>.</p>
 
 <p>Returns the previously set user-agent.</p>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_container1/trait.Hub.html' title='google_container1::Hub'>Hub</a> for <a class='struct' href='../google_container1/struct.Container.html' title='google_container1::Container'>Container</a>&lt;C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-1033' class='srclink' href='../src/google_container1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-container1-d2e07ec1495b4e27/out/lib.rs.html#2090' title='goto source code'>[src]</a></span></h3>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='trait' href='../google_container1/trait.Hub.html' title='google_container1::Hub'>Hub</a> for <a class='struct' href='../google_container1/struct.Container.html' title='google_container1::Container'>Container</a>&lt;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-982' class='srclink' href='../src/google_container1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-container1-09a1b7b8ea88a7e2/out/lib.rs.html#1890' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 

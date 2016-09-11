@@ -47,8 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-0' class='srclink' href='../src/google_androidpublisher2/src/lib.rs.html#5-205' title='goto source code'>[src]</a></span></h1>
-<div class='docblock'><p>This documentation was generated from <em>Android Publisher</em> crate version <em>0.1.14+20160324</em>, where <em>20160324</em> is the exact revision of the <em>androidpublisher:v2</em> schema built by the <a href="http://www.makotemplates.org/">mako</a> code generator <em>v0.1.14</em>.</p>
+               </span><a id='src-0' class='srclink' href='../src/google_androidpublisher2/src/lib.rs.html#5-207' title='goto source code'>[src]</a></span></h1>
+<div class='docblock'><p>This documentation was generated from <em>Android Publisher</em> crate version <em>0.1.15+20160817</em>, where <em>20160817</em> is the exact revision of the <em>androidpublisher:v2</em> schema built by the <a href="http://www.makotemplates.org/">mako</a> code generator <em>v0.1.15</em>.</p>
 
 <p>Everything else about the <em>Android Publisher</em> <em>v2</em> API can be found at the
 <a href="https://developers.google.com/android-publisher">official documentation site</a>.
@@ -77,6 +77,11 @@ The original source code is <a href="https://github.com/Byron/google-apis-rs/tre
 
 <ul>
 <li><a href="struct.PurchaseProductGetCall.html"><em>products get</em></a>, <a href="struct.PurchaseSubscriptionCancelCall.html"><em>subscriptions cancel</em></a>, <a href="struct.PurchaseSubscriptionDeferCall.html"><em>subscriptions defer</em></a>, <a href="struct.PurchaseSubscriptionGetCall.html"><em>subscriptions get</em></a>, <a href="struct.PurchaseSubscriptionRefundCall.html"><em>subscriptions refund</em></a> and <a href="struct.PurchaseSubscriptionRevokeCall.html"><em>subscriptions revoke</em></a></li>
+</ul></li>
+<li><a href="struct.Review.html">reviews</a>
+
+<ul>
+<li><a href="struct.ReviewGetCall.html"><em>get</em></a>, <a href="struct.ReviewListCall.html"><em>list</em></a> and <a href="struct.ReviewReplyCall.html"><em>reply</em></a></li>
 </ul></li>
 </ul>
 
@@ -180,7 +185,7 @@ google-androidpublisher2 = &quot;*&quot;
 <span class='comment'>// execute the final call using `doit()`.</span>
 <span class='comment'>// Values shown here are possibly random and not representative !</span>
 <span class='kw'>let</span> <span class='ident'>result</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>inappproducts</span>().<span class='ident'>patch</span>(<span class='ident'>req</span>, <span class='string'>&quot;packageName&quot;</span>, <span class='string'>&quot;sku&quot;</span>)
-             .<span class='ident'>auto_convert_missing_prices</span>(<span class='boolvalue'>true</span>)
+             .<span class='ident'>auto_convert_missing_prices</span>(<span class='bool-val'>true</span>)
              .<span class='ident'>doit</span>();
  
 <span class='kw'>match</span> <span class='ident'>result</span> {
@@ -318,11 +323,25 @@ These will always take a single argument, for which the following statements are
                            </td>
                        </tr>
                        <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Comment.html'
+                                  title='google_androidpublisher2::Comment'>Comment</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
                            <td><a class='struct' href='struct.DefaultDelegate.html'
                                   title='google_androidpublisher2::DefaultDelegate'>DefaultDelegate</a></td>
                            <td class='docblock short'>
                                 <p>A delegate with a conservative default implementation, which is used if no other delegate is
 set.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeveloperComment.html'
+                                  title='google_androidpublisher2::DeveloperComment'>DeveloperComment</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
@@ -949,6 +968,70 @@ It is not used directly, but through the <code>AndroidPublisher</code> hub.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Review.html'
+                                  title='google_androidpublisher2::Review'>Review</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ReviewGetCall.html'
+                                  title='google_androidpublisher2::ReviewGetCall'>ReviewGetCall</a></td>
+                           <td class='docblock short'>
+                                <p>Returns a single review.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ReviewListCall.html'
+                                  title='google_androidpublisher2::ReviewListCall'>ReviewListCall</a></td>
+                           <td class='docblock short'>
+                                <p>Returns a list of reviews.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ReviewMethods.html'
+                                  title='google_androidpublisher2::ReviewMethods'>ReviewMethods</a></td>
+                           <td class='docblock short'>
+                                <p>A builder providing access to all methods supported on <em>review</em> resources.
+It is not used directly, but through the <code>AndroidPublisher</code> hub.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ReviewReplyCall.html'
+                                  title='google_androidpublisher2::ReviewReplyCall'>ReviewReplyCall</a></td>
+                           <td class='docblock short'>
+                                <p>Reply to a single review, or update an existing reply.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ReviewReplyResult.html'
+                                  title='google_androidpublisher2::ReviewReplyResult'>ReviewReplyResult</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ReviewsListResponse.html'
+                                  title='google_androidpublisher2::ReviewsListResponse'>ReviewsListResponse</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ReviewsReplyRequest.html'
+                                  title='google_androidpublisher2::ReviewsReplyRequest'>ReviewsReplyRequest</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ReviewsReplyResponse.html'
+                                  title='google_androidpublisher2::ReviewsReplyResponse'>ReviewsReplyResponse</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
                            <td><a class='struct' href='struct.Season.html'
                                   title='google_androidpublisher2::Season'>Season</a></td>
                            <td class='docblock short'>
@@ -991,6 +1074,13 @@ It is not used directly, but through the <code>AndroidPublisher</code> hub.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Timestamp.html'
+                                  title='google_androidpublisher2::Timestamp'>Timestamp</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
                            <td><a class='struct' href='struct.TokenPagination.html'
                                   title='google_androidpublisher2::TokenPagination'>TokenPagination</a></td>
                            <td class='docblock short'>
@@ -1007,6 +1097,13 @@ It is not used directly, but through the <code>AndroidPublisher</code> hub.</p>
                        <tr class=' module-item'>
                            <td><a class='struct' href='struct.TracksListResponse.html'
                                   title='google_androidpublisher2::TracksListResponse'>TracksListResponse</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UserComment.html'
+                                  title='google_androidpublisher2::UserComment'>UserComment</a></td>
                            <td class='docblock short'>
                                 <p>There is no detailed description.</p>
                            </td>

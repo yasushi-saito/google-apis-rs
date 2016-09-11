@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Messages Import - gmail v0.3.6+20160316</title>
+  <title>Messages Import - gmail v0.3.6+20160711</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -32,7 +32,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> gmail v0.3.6+20160316</a>
+        <a href=".." class="icon icon-home"> gmail v0.3.6+20160711</a>
         
       </div>
 
@@ -203,6 +203,121 @@
                 </li>
             
                 <li class="toctree-l2 ">
+                    <a class="" href="../users_settings-filters-create/">Settings Filters Create</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../users_settings-filters-delete/">Settings Filters Delete</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../users_settings-filters-get/">Settings Filters Get</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../users_settings-filters-list/">Settings Filters List</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../users_settings-forwarding-addresses-create/">Settings Forwarding Addresses Create</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../users_settings-forwarding-addresses-delete/">Settings Forwarding Addresses Delete</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../users_settings-forwarding-addresses-get/">Settings Forwarding Addresses Get</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../users_settings-forwarding-addresses-list/">Settings Forwarding Addresses List</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../users_settings-get-auto-forwarding/">Settings Get Auto Forwarding</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../users_settings-get-imap/">Settings Get Imap</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../users_settings-get-pop/">Settings Get Pop</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../users_settings-get-vacation/">Settings Get Vacation</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../users_settings-send-as-create/">Settings Send As Create</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../users_settings-send-as-delete/">Settings Send As Delete</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../users_settings-send-as-get/">Settings Send As Get</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../users_settings-send-as-list/">Settings Send As List</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../users_settings-send-as-patch/">Settings Send As Patch</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../users_settings-send-as-update/">Settings Send As Update</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../users_settings-send-as-verify/">Settings Send As Verify</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../users_settings-update-auto-forwarding/">Settings Update Auto Forwarding</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../users_settings-update-imap/">Settings Update Imap</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../users_settings-update-pop/">Settings Update Pop</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../users_settings-update-vacation/">Settings Update Vacation</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
                     <a class="" href="../users_stop/">Stop</a>
                     
                 </li>
@@ -256,7 +371,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">gmail v0.3.6+20160316</a>
+        <a href="..">gmail v0.3.6+20160711</a>
       </nav>
 
       
@@ -442,27 +557,27 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p process-for-calendar=boolean</strong></p>
-<ul>
-<li>Process calendar invites in the email and add any extracted meetings to the Google Calendar for this user.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p internal-date-source=string</strong></p>
-<ul>
-<li>Source for Gmail&#39;s internal date of the message.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p never-mark-spam=boolean</strong></p>
 <ul>
 <li>Ignore the Gmail spam classifier decision and never mark this email as SPAM in the mailbox.</li>
 </ul>
 </li>
 <li>
+<p><strong>-p process-for-calendar=boolean</strong></p>
+<ul>
+<li>Process calendar invites in the email and add any extracted meetings to the Google Calendar for this user.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p deleted=boolean</strong></p>
 <ul>
 <li>Mark the email as permanently deleted (not TRASH) and only visible in Google Apps Vault to a Vault administrator. Only used for Google Apps for Work accounts.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p internal-date-source=string</strong></p>
+<ul>
+<li>Source for Gmail&#39;s internal date of the message.</li>
 </ul>
 </li>
 </ul>
@@ -556,7 +671,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 
 <!--
 MkDocs version  : 0.12.2
-Docs Build Date : 2016-07-23 16:05:50.254805
+Docs Build Date : 2016-09-11 17:55:38.796626
 -->
 </body>
 </html>

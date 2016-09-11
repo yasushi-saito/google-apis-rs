@@ -47,8 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-7257' class='srclink' href='../src/google_gan1_beta1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-gan1_beta1-bb0d154e69896444/out/lib.rs.html#16690-16697' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct AdvertiserGetCall&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
+               </span><a id='src-6951' class='srclink' href='../src/google_gan1_beta1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-gan1_beta1-703538594867efc1/out/lib.rs.html#13444-13451' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct AdvertiserGetCall&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>Retrieves data about a single advertiser if that the requesting advertiser/publisher has access to it. Only publishers can lookup advertisers. Advertisers can request information about themselves by omitting the advertiserId query parameter.</p>
 
@@ -66,35 +66,35 @@ It is not used directly, but through a <code>AdvertiserMethods</code> instance.<
 <span class='kw'>let</span> <span class='ident'>result</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>advertisers</span>().<span class='ident'>get</span>(<span class='string'>&quot;role&quot;</span>, <span class='string'>&quot;roleId&quot;</span>)
              .<span class='ident'>advertiser_id</span>(<span class='string'>&quot;dolore&quot;</span>)
              .<span class='ident'>doit</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_gan1_beta1/struct.AdvertiserGetCall.html' title='google_gan1_beta1::AdvertiserGetCall'>AdvertiserGetCall</a>&lt;'a, C, A&gt; <span class='where'>where C: <a class='trait' href='https://doc.rust-lang.org/nightly/core/borrow/trait.BorrowMut.html' title='core::borrow::BorrowMut'>BorrowMut</a>&lt;<a class='struct' href='../hyper/client/struct.Client.html' title='hyper::client::Client'>Client</a>&gt;, A: <a class='trait' href='../yup_oauth2/helper/trait.GetToken.html' title='yup_oauth2::helper::GetToken'>GetToken</a></span></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-7271' class='srclink' href='../src/google_gan1_beta1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-gan1_beta1-bb0d154e69896444/out/lib.rs.html#16699-16879' title='goto source code'>[src]</a></span></h3>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='struct' href='../google_gan1_beta1/struct.AdvertiserGetCall.html' title='google_gan1_beta1::AdvertiserGetCall'>AdvertiserGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: <a class='trait' href='https://doc.rust-lang.org/nightly/core/borrow/trait.BorrowMut.html' title='core::borrow::BorrowMut'>BorrowMut</a>&lt;<a class='struct' href='../hyper/client/struct.Client.html' title='hyper::client::Client'>Client</a>&gt;, A: <a class='trait' href='../yup_oauth2/authenticator/trait.GetToken.html' title='yup_oauth2::authenticator::GetToken'>GetToken</a></span></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-6965' class='srclink' href='../src/google_gan1_beta1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-gan1_beta1-703538594867efc1/out/lib.rs.html#13453-13633' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'><h4 id='method.doit' class='method'><code>fn <a href='#method.doit' class='fnname'>doit</a>(self) -&gt; <a class='type' href='../google_gan1_beta1/type.Result.html' title='google_gan1_beta1::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>(</a><a class='struct' href='../hyper/client/response/struct.Response.html' title='hyper::client::response::Response'>Response</a>, <a class='struct' href='../google_gan1_beta1/struct.Advertiser.html' title='google_gan1_beta1::Advertiser'>Advertiser</a><a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>)</a>&gt;</code></h4>
 <div class='docblock'><p>Perform the operation you have build so far.</p>
-</div><h4 id='method.role' class='method'><code>fn <a href='#method.role' class='fnname'>role</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gan1_beta1/struct.AdvertiserGetCall.html' title='google_gan1_beta1::AdvertiserGetCall'>AdvertiserGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.role' class='method'><code>fn <a href='#method.role' class='fnname'>role</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gan1_beta1/struct.AdvertiserGetCall.html' title='google_gan1_beta1::AdvertiserGetCall'>AdvertiserGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>The role of the requester. Valid values: &#39;advertisers&#39; or &#39;publishers&#39;.</p>
 
 <p>Sets the <em>role</em> path property to the given value.</p>
 
 <p>Even though the property as already been set when instantiating this call,
 we provide this method for API completeness.</p>
-</div><h4 id='method.role_id' class='method'><code>fn <a href='#method.role_id' class='fnname'>role_id</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gan1_beta1/struct.AdvertiserGetCall.html' title='google_gan1_beta1::AdvertiserGetCall'>AdvertiserGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.role_id' class='method'><code>fn <a href='#method.role_id' class='fnname'>role_id</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gan1_beta1/struct.AdvertiserGetCall.html' title='google_gan1_beta1::AdvertiserGetCall'>AdvertiserGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>The ID of the requesting advertiser or publisher.</p>
 
 <p>Sets the <em>role id</em> path property to the given value.</p>
 
 <p>Even though the property as already been set when instantiating this call,
 we provide this method for API completeness.</p>
-</div><h4 id='method.advertiser_id' class='method'><code>fn <a href='#method.advertiser_id' class='fnname'>advertiser_id</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gan1_beta1/struct.AdvertiserGetCall.html' title='google_gan1_beta1::AdvertiserGetCall'>AdvertiserGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.advertiser_id' class='method'><code>fn <a href='#method.advertiser_id' class='fnname'>advertiser_id</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gan1_beta1/struct.AdvertiserGetCall.html' title='google_gan1_beta1::AdvertiserGetCall'>AdvertiserGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>The ID of the advertiser to look up. Optional.</p>
 
 <p>Sets the <em>advertiser id</em> query property to the given value.</p>
-</div><h4 id='method.delegate' class='method'><code>fn <a href='#method.delegate' class='fnname'>delegate</a>(self, new_value: &amp;'a mut <a class='trait' href='../google_gan1_beta1/trait.Delegate.html' title='google_gan1_beta1::Delegate'>Delegate</a>) -&gt; <a class='struct' href='../google_gan1_beta1/struct.AdvertiserGetCall.html' title='google_gan1_beta1::AdvertiserGetCall'>AdvertiserGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.delegate' class='method'><code>fn <a href='#method.delegate' class='fnname'>delegate</a>(self, new_value: &amp;'a mut <a class='trait' href='../google_gan1_beta1/trait.Delegate.html' title='google_gan1_beta1::Delegate'>Delegate</a>) -&gt; <a class='struct' href='../google_gan1_beta1/struct.AdvertiserGetCall.html' title='google_gan1_beta1::AdvertiserGetCall'>AdvertiserGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>The delegate implementation is consulted whenever there is an intermediate result, or if something goes wrong
 while executing the actual API request.</p>
 
 <p>It should be used to handle progress information, and to implement a certain level of resilience.</p>
 
 <p>Sets the <em>delegate</em> property to the given value.</p>
-</div><h4 id='method.param' class='method'><code>fn <a href='#method.param' class='fnname'>param</a>&lt;T&gt;(self, name: T, value: T) -&gt; <a class='struct' href='../google_gan1_beta1/struct.AdvertiserGetCall.html' title='google_gan1_beta1::AdvertiserGetCall'>AdvertiserGetCall</a>&lt;'a, C, A&gt; <span class='where'>where T: <a class='trait' href='https://doc.rust-lang.org/nightly/core/convert/trait.AsRef.html' title='core::convert::AsRef'>AsRef</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>&gt;</span></code></h4>
+</div><h4 id='method.param' class='method'><code>fn <a href='#method.param' class='fnname'>param</a>&lt;T&gt;(self, name: T, value: T) -&gt; <a class='struct' href='../google_gan1_beta1/struct.AdvertiserGetCall.html' title='google_gan1_beta1::AdvertiserGetCall'>AdvertiserGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where T: <a class='trait' href='https://doc.rust-lang.org/nightly/core/convert/trait.AsRef.html' title='core::convert::AsRef'>AsRef</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>&gt;</span></code></h4>
 <div class='docblock'><p>Set any additional parameter of the query string used in the request.
 It should be used to set parameters which are not yet available through their own
 setters.</p>
@@ -112,7 +112,7 @@ which have their own setter method. If done anyway, the request will fail.</p>
 <li><em>fields</em> (query-string) - Selector specifying which fields to include in a partial response.</li>
 <li><em>alt</em> (query-string) - Data format for the response.</li>
 </ul>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_gan1_beta1/trait.CallBuilder.html' title='google_gan1_beta1::CallBuilder'>CallBuilder</a> for <a class='struct' href='../google_gan1_beta1/struct.AdvertiserGetCall.html' title='google_gan1_beta1::AdvertiserGetCall'>AdvertiserGetCall</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-7267' class='srclink' href='../src/google_gan1_beta1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-gan1_beta1-bb0d154e69896444/out/lib.rs.html#16698' title='goto source code'>[src]</a></span></h3>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='trait' href='../google_gan1_beta1/trait.CallBuilder.html' title='google_gan1_beta1::CallBuilder'>CallBuilder</a> for <a class='struct' href='../google_gan1_beta1/struct.AdvertiserGetCall.html' title='google_gan1_beta1::AdvertiserGetCall'>AdvertiserGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-6961' class='srclink' href='../src/google_gan1_beta1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-gan1_beta1-703538594867efc1/out/lib.rs.html#13452' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 

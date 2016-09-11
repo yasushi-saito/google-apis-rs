@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>List - storage v0.3.6+20160330</title>
+  <title>List - storage v0.3.6+20160901</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -32,7 +32,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> storage v0.3.6+20160330</a>
+        <a href=".." class="icon icon-home"> storage v0.3.6+20160901</a>
         
       </div>
 
@@ -288,7 +288,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">storage v0.3.6+20160330</a>
+        <a href="..">storage v0.3.6+20160901</a>
       </nav>
 
       
@@ -357,21 +357,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p prefix=string</strong></p>
-<ul>
-<li>Filter results to objects whose names begin with this prefix.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p projection=string</strong></p>
 <ul>
 <li>Set of properties to return. Defaults to noAcl.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p delimiter=string</strong></p>
-<ul>
-<li>Returns results in a directory-like mode. items will contain only objects whose names, aside from the prefix, do not contain delimiter. Objects whose names, aside from the prefix, contain delimiter will have their name, truncated after the delimiter, returned in prefixes. Duplicate prefixes are omitted.</li>
 </ul>
 </li>
 <li>
@@ -384,6 +372,18 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <p><strong>-p page-token=string</strong></p>
 <ul>
 <li>A previously-returned page token representing part of the larger set of results to view.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p prefix=string</strong></p>
+<ul>
+<li>Filter results to objects whose names begin with this prefix.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p delimiter=string</strong></p>
+<ul>
+<li>Returns results in a directory-like mode. items will contain only objects whose names, aside from the prefix, do not contain delimiter. Objects whose names, aside from the prefix, contain delimiter will have their name, truncated after the delimiter, returned in prefixes. Duplicate prefixes are omitted.</li>
 </ul>
 </li>
 </ul>
@@ -477,7 +477,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 
 <!--
 MkDocs version  : 0.12.2
-Docs Build Date : 2016-07-23 16:05:53.252973
+Docs Build Date : 2016-09-11 17:55:44.794137
 -->
 </body>
 </html>

@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Update - YouTube v0.3.6+20160222</title>
+  <title>Update - YouTube v0.3.6+20160805</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -32,7 +32,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> YouTube v0.3.6+20160222</a>
+        <a href=".." class="icon icon-home"> YouTube v0.3.6+20160805</a>
         
       </div>
 
@@ -590,7 +590,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">YouTube v0.3.6+20160222</a>
+        <a href="..">YouTube v0.3.6+20160805</a>
       </nav>
 
       
@@ -633,11 +633,13 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <pre><code>LiveStream:
   cdn:
     format: string
+    frame-rate: string
     ingestion-info:
       backup-ingestion-address: string
       ingestion-address: string
       stream-name: string
     ingestion-type: string
+    resolution: string
   content-details:
     closed-captions-ingestion-url: string
     is-reusable: boolean
@@ -660,8 +662,12 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .cdn    format=magna</code><ul>
+<li><code>-r .cdn    format=sed</code><ul>
 <li>The format of the video stream that you are sending to Youtube.</li>
+</ul>
+</li>
+<li><code>frame-rate=sea</code><ul>
+<li>The frame rate of the inbound video data.</li>
 </ul>
 </li>
 <li><code>ingestion-info    backup-ingestion-address=amet.</code><ul>
@@ -669,25 +675,31 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
-<p><code>ingestion-address=eirmod</code></p>
+<p><code>ingestion-address=clita</code></p>
 <ul>
 <li>
 <p>The primary ingestion URL that you should use to stream video to YouTube. You must stream video to this URL.</p>
 <p>Depending on which application or tool you use to encode your video stream, you may need to enter the stream URL and stream name separately or you may need to concatenate them in the following format:</p>
 <p>STREAM_URL/STREAM_NAME
-* <code>stream-name=ea</code>
+* <code>stream-name=clita</code>
     - The HTTP or RTMP stream name that YouTube assigns to the video stream.</p>
 </li>
 </ul>
 </li>
 <li>
-<p><code>..    ingestion-type=ea</code></p>
+<p><code>..    ingestion-type=est</code></p>
 <ul>
 <li>The method or protocol used to transmit the video stream.</li>
 </ul>
 </li>
 <li>
-<p><code>..content-details    closed-captions-ingestion-url=et</code></p>
+<p><code>resolution=sit</code></p>
+<ul>
+<li>The resolution of the inbound video data.</li>
+</ul>
+</li>
+<li>
+<p><code>..content-details    closed-captions-ingestion-url=ipsum</code></p>
 <ul>
 <li>The ingestion URL where the closed captions of this stream are sent.</li>
 </ul>
@@ -705,24 +717,24 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
-<p><code>..    etag=diam</code></p>
+<p><code>..    etag=sadipscing</code></p>
 <ul>
 <li>Etag of this resource.</li>
 </ul>
 </li>
-<li><code>id=eos</code><ul>
+<li><code>id=ipsum</code><ul>
 <li>The ID that YouTube assigns to uniquely identify the stream.</li>
 </ul>
 </li>
-<li><code>kind=tempor</code><ul>
+<li><code>kind=sadipscing</code><ul>
 <li>Identifies what kind of resource this is. Value: the fixed string &#34;youtube#liveStream&#34;.</li>
 </ul>
 </li>
-<li><code>snippet    channel-id=sea</code><ul>
+<li><code>snippet    channel-id=ea</code><ul>
 <li>The ID that YouTube uses to uniquely identify the channel that is transmitting the stream.</li>
 </ul>
 </li>
-<li><code>description=ea</code><ul>
+<li><code>description=dolor</code><ul>
 <li>The stream&#39;s description. The value cannot be longer than 10000 characters.</li>
 </ul>
 </li>
@@ -730,30 +742,30 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>No description provided.</li>
 </ul>
 </li>
-<li><code>published-at=duo</code><ul>
+<li><code>published-at=sadipscing</code><ul>
 <li>The date and time that the stream was created. The value is specified in ISO 8601 (YYYY-MM-DDThh:mm:ss.sZ) format.</li>
 </ul>
 </li>
 <li>
-<p><code>title=tempor</code></p>
+<p><code>title=ipsum</code></p>
 <ul>
 <li>The stream&#39;s title. The value must be between 1 and 128 characters long.</li>
 </ul>
 </li>
 <li>
-<p><code>..status.health-status    last-update-time-seconds=consetetur</code></p>
+<p><code>..status.health-status    last-update-time-seconds=et</code></p>
 <ul>
 <li>The last time this status was updated (in seconds)</li>
 </ul>
 </li>
 <li>
-<p><code>status=eirmod</code></p>
+<p><code>status=invidunt</code></p>
 <ul>
 <li>The status code of this stream</li>
 </ul>
 </li>
 <li>
-<p><code>..    stream-status=aliquyam</code></p>
+<p><code>..    stream-status=amet.</code></p>
 <ul>
 <li>No description provided.</li>
 </ul>
@@ -784,21 +796,21 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
+<p><strong>-p on-behalf-of-content-owner=string</strong></p>
+<ul>
+<li>
+<p>Note: This parameter is intended exclusively for YouTube content partners.</p>
+<p>The onBehalfOfContentOwner parameter indicates that the request&#39;s authorization credentials identify a YouTube CMS user who is acting on behalf of the content owner specified in the parameter value. This parameter is intended for YouTube content partners that own and manage many different YouTube channels. It allows content owners to authenticate once and get access to all their video and channel data, without having to provide authentication credentials for each individual channel. The CMS account that the user authenticates with must be linked to the specified YouTube content owner.</p>
+</li>
+</ul>
+</li>
+<li>
 <p><strong>-p on-behalf-of-content-owner-channel=string</strong></p>
 <ul>
 <li>
 <p>This parameter can only be used in a properly authorized request. Note: This parameter is intended exclusively for YouTube content partners.</p>
 <p>The onBehalfOfContentOwnerChannel parameter specifies the YouTube channel ID of the channel to which a video is being added. This parameter is required when a request specifies a value for the onBehalfOfContentOwner parameter, and it can only be used in conjunction with that parameter. In addition, the request must be authorized using a CMS account that is linked to the content owner that the onBehalfOfContentOwner parameter specifies. Finally, the channel that the onBehalfOfContentOwnerChannel parameter value specifies must be linked to the content owner that the onBehalfOfContentOwner parameter specifies.</p>
 <p>This parameter is intended for YouTube content partners that own and manage many different YouTube channels. It allows content owners to authenticate once and perform actions on behalf of the channel specified in the parameter value, without having to provide authentication credentials for each separate channel.</p>
-</li>
-</ul>
-</li>
-<li>
-<p><strong>-p on-behalf-of-content-owner=string</strong></p>
-<ul>
-<li>
-<p>Note: This parameter is intended exclusively for YouTube content partners.</p>
-<p>The onBehalfOfContentOwner parameter indicates that the request&#39;s authorization credentials identify a YouTube CMS user who is acting on behalf of the content owner specified in the parameter value. This parameter is intended for YouTube content partners that own and manage many different YouTube channels. It allows content owners to authenticate once and get access to all their video and channel data, without having to provide authentication credentials for each individual channel. The CMS account that the user authenticates with must be linked to the specified YouTube content owner.</p>
 </li>
 </ul>
 </li>
@@ -893,7 +905,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 
 <!--
 MkDocs version  : 0.12.2
-Docs Build Date : 2016-07-23 16:05:33.395553
+Docs Build Date : 2016-09-11 17:55:04.542840
 -->
 </body>
 </html>

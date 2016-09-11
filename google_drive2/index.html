@@ -48,7 +48,7 @@
                        [<span class='inner'>&#x2212;</span>]
                    </a>
                </span><a id='src-0' class='srclink' href='../src/google_drive2/src/lib.rs.html#5-260' title='goto source code'>[src]</a></span></h1>
-<div class='docblock'><p>This documentation was generated from <em>drive</em> crate version <em>0.1.14+20160331</em>, where <em>20160331</em> is the exact revision of the <em>drive:v2</em> schema built by the <a href="http://www.makotemplates.org/">mako</a> code generator <em>v0.1.14</em>.</p>
+<div class='docblock'><p>This documentation was generated from <em>drive</em> crate version <em>0.1.15+20160901</em>, where <em>20160901</em> is the exact revision of the <em>drive:v2</em> schema built by the <a href="http://www.makotemplates.org/">mako</a> code generator <em>v0.1.15</em>.</p>
 
 <p>Everything else about the <em>drive</em> <em>v2</em> API can be found at the
 <a href="https://developers.google.com/drive/">official documentation site</a>.
@@ -254,19 +254,19 @@ google-drive2 = &quot;*&quot;
 <span class='comment'>// execute the final call using `doit()`.</span>
 <span class='comment'>// Values shown here are possibly random and not representative !</span>
 <span class='kw'>let</span> <span class='ident'>result</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>files</span>().<span class='ident'>patch</span>(<span class='ident'>req</span>, <span class='string'>&quot;fileId&quot;</span>)
-             .<span class='ident'>use_content_as_indexable_text</span>(<span class='boolvalue'>false</span>)
-             .<span class='ident'>update_viewed_date</span>(<span class='boolvalue'>true</span>)
-             .<span class='ident'>timed_text_track_name</span>(<span class='string'>&quot;dolor&quot;</span>)
-             .<span class='ident'>timed_text_language</span>(<span class='string'>&quot;sanctus&quot;</span>)
-             .<span class='ident'>set_modified_date</span>(<span class='boolvalue'>true</span>)
-             .<span class='ident'>remove_parents</span>(<span class='string'>&quot;Lorem&quot;</span>)
-             .<span class='ident'>pinned</span>(<span class='boolvalue'>false</span>)
-             .<span class='ident'>ocr_language</span>(<span class='string'>&quot;consetetur&quot;</span>)
-             .<span class='ident'>ocr</span>(<span class='boolvalue'>false</span>)
-             .<span class='ident'>new_revision</span>(<span class='boolvalue'>true</span>)
-             .<span class='ident'>modified_date_behavior</span>(<span class='string'>&quot;gubergren&quot;</span>)
-             .<span class='ident'>convert</span>(<span class='boolvalue'>false</span>)
-             .<span class='ident'>add_parents</span>(<span class='string'>&quot;sadipscing&quot;</span>)
+             .<span class='ident'>use_content_as_indexable_text</span>(<span class='bool-val'>false</span>)
+             .<span class='ident'>update_viewed_date</span>(<span class='bool-val'>true</span>)
+             .<span class='ident'>timed_text_track_name</span>(<span class='string'>&quot;dolore&quot;</span>)
+             .<span class='ident'>timed_text_language</span>(<span class='string'>&quot;Lorem&quot;</span>)
+             .<span class='ident'>set_modified_date</span>(<span class='bool-val'>false</span>)
+             .<span class='ident'>remove_parents</span>(<span class='string'>&quot;consetetur&quot;</span>)
+             .<span class='ident'>pinned</span>(<span class='bool-val'>false</span>)
+             .<span class='ident'>ocr_language</span>(<span class='string'>&quot;labore&quot;</span>)
+             .<span class='ident'>ocr</span>(<span class='bool-val'>false</span>)
+             .<span class='ident'>new_revision</span>(<span class='bool-val'>false</span>)
+             .<span class='ident'>modified_date_behavior</span>(<span class='string'>&quot;sadipscing&quot;</span>)
+             .<span class='ident'>convert</span>(<span class='bool-val'>false</span>)
+             .<span class='ident'>add_parents</span>(<span class='string'>&quot;magna&quot;</span>)
              .<span class='ident'>doit</span>();
  
 <span class='kw'>match</span> <span class='ident'>result</span> {

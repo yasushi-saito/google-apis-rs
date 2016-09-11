@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="rustdoc">
-    <meta name="description" content="Source to the Rust file `/home/byron/.cargo/registry/src/github.com-1ecc6299db9ec823/yup-oauth2-0.6.2/src/lib.rs`.">
+    <meta name="description" content="Source to the Rust file `/home/byron/.cargo/registry/src/github.com-1ecc6299db9ec823/yup-oauth2-0.6.3/src/lib.rs`.">
     <meta name="keywords" content="rust, rustlang, rust-lang">
 
     <title>lib.rs.html -- source</title>
@@ -116,6 +116,17 @@
 <span id="72">72</span>
 <span id="73">73</span>
 <span id="74">74</span>
+<span id="75">75</span>
+<span id="76">76</span>
+<span id="77">77</span>
+<span id="78">78</span>
+<span id="79">79</span>
+<span id="80">80</span>
+<span id="81">81</span>
+<span id="82">82</span>
+<span id="83">83</span>
+<span id="84">84</span>
+<span id="85">85</span>
 </pre><pre class='rust '>
 <span class='doccomment'>//! This library can be used to acquire oauth2.0 authentication for services.</span>
 <span class='doccomment'>//! At the time of writing, only one way of doing so is implemented, the</span>
@@ -132,7 +143,18 @@
 <span class='doccomment'>//! as means to adhere to the protocol, and remain resilient to all kinds of errors</span>
 <span class='doccomment'>//! that can occour on the way.</span>
 <span class='doccomment'>//!</span>
-<span class='doccomment'>//! The returned `Token` should be stored permanently to authorize future API requests.</span>
+<span class='doccomment'>//! # Installed Flow Usage</span>
+<span class='doccomment'>//! The `InstalledFlow` involves showing a URL to the user (or opening it in a browser)</span>
+<span class='doccomment'>//! and then either prompting the user to enter a displayed code, or make the authorizing</span>
+<span class='doccomment'>//! website redirect to a web server spun up by this library.</span>
+<span class='doccomment'>//! In order to use the interactive method, use the `InstalledInteractive` `FlowType`;</span>
+<span class='doccomment'>//! for the redirect method, use `InstalledRedirect`, with the port number to let the</span>
+<span class='doccomment'>//! server listen on.</span>
+<span class='doccomment'>//! You can implement your own `AuthenticatorDelegate` in order to customize the flow;</span>
+<span class='doccomment'>//! the `InstalledFlow` uses the `present_user_url` method.</span>
+<span class='doccomment'>//!</span>
+<span class='doccomment'>//! The returned `Token` is stored permanently to authorize future API requests in the</span>
+<span class='doccomment'>//! same scopes.</span>
 <span class='doccomment'>//!</span>
 <span class='doccomment'>//! ```test_harness,no_run</span>
 <span class='doccomment'>//! #![cfg_attr(feature = &quot;nightly&quot;, feature(custom_derive, custom_attribute, plugin))]</span>

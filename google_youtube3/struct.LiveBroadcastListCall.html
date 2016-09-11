@@ -47,8 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-39983' class='srclink' href='../src/google_youtube3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-youtube3-3a9e8c4a9ed85834/out/lib.rs.html#94240-94254' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct LiveBroadcastListCall&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
+               </span><a id='src-38647' class='srclink' href='../src/google_youtube3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-youtube3-122b93fad4a7fbcd/out/lib.rs.html#78384-78398' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct LiveBroadcastListCall&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>Returns a list of YouTube broadcasts that match the API request parameters.</p>
 
@@ -84,19 +84,19 @@ It is not used directly, but through a <code>LiveBroadcastMethods</code> instanc
 <span class='comment'>// execute the final call using `doit()`.</span>
 <span class='comment'>// Values shown here are possibly random and not representative !</span>
 <span class='kw'>let</span> <span class='ident'>result</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>live_broadcasts</span>().<span class='ident'>list</span>(<span class='string'>&quot;part&quot;</span>)
-             .<span class='ident'>page_token</span>(<span class='string'>&quot;rebum.&quot;</span>)
-             .<span class='ident'>on_behalf_of_content_owner_channel</span>(<span class='string'>&quot;et&quot;</span>)
-             .<span class='ident'>on_behalf_of_content_owner</span>(<span class='string'>&quot;clita&quot;</span>)
-             .<span class='ident'>mine</span>(<span class='boolvalue'>true</span>)
-             .<span class='ident'>max_results</span>(<span class='number'>32</span>)
-             .<span class='ident'>id</span>(<span class='string'>&quot;vero&quot;</span>)
-             .<span class='ident'>broadcast_type</span>(<span class='string'>&quot;consetetur&quot;</span>)
-             .<span class='ident'>broadcast_status</span>(<span class='string'>&quot;vero&quot;</span>)
+             .<span class='ident'>page_token</span>(<span class='string'>&quot;et&quot;</span>)
+             .<span class='ident'>on_behalf_of_content_owner_channel</span>(<span class='string'>&quot;clita&quot;</span>)
+             .<span class='ident'>on_behalf_of_content_owner</span>(<span class='string'>&quot;eos&quot;</span>)
+             .<span class='ident'>mine</span>(<span class='bool-val'>false</span>)
+             .<span class='ident'>max_results</span>(<span class='number'>76</span>)
+             .<span class='ident'>id</span>(<span class='string'>&quot;consetetur&quot;</span>)
+             .<span class='ident'>broadcast_type</span>(<span class='string'>&quot;vero&quot;</span>)
+             .<span class='ident'>broadcast_status</span>(<span class='string'>&quot;consetetur&quot;</span>)
              .<span class='ident'>doit</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_youtube3/struct.LiveBroadcastListCall.html' title='google_youtube3::LiveBroadcastListCall'>LiveBroadcastListCall</a>&lt;'a, C, A&gt; <span class='where'>where C: <a class='trait' href='https://doc.rust-lang.org/nightly/core/borrow/trait.BorrowMut.html' title='core::borrow::BorrowMut'>BorrowMut</a>&lt;<a class='struct' href='../hyper/client/struct.Client.html' title='hyper::client::Client'>Client</a>&gt;, A: <a class='trait' href='../yup_oauth2/helper/trait.GetToken.html' title='yup_oauth2::helper::GetToken'>GetToken</a></span></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-40004' class='srclink' href='../src/google_youtube3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-youtube3-3a9e8c4a9ed85834/out/lib.rs.html#94256-94528' title='goto source code'>[src]</a></span></h3>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='struct' href='../google_youtube3/struct.LiveBroadcastListCall.html' title='google_youtube3::LiveBroadcastListCall'>LiveBroadcastListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: <a class='trait' href='https://doc.rust-lang.org/nightly/core/borrow/trait.BorrowMut.html' title='core::borrow::BorrowMut'>BorrowMut</a>&lt;<a class='struct' href='../hyper/client/struct.Client.html' title='hyper::client::Client'>Client</a>&gt;, A: <a class='trait' href='../yup_oauth2/authenticator/trait.GetToken.html' title='yup_oauth2::authenticator::GetToken'>GetToken</a></span></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-38668' class='srclink' href='../src/google_youtube3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-youtube3-122b93fad4a7fbcd/out/lib.rs.html#78400-78672' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'><h4 id='method.doit' class='method'><code>fn <a href='#method.doit' class='fnname'>doit</a>(self) -&gt; <a class='type' href='../google_youtube3/type.Result.html' title='google_youtube3::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>(</a><a class='struct' href='../hyper/client/response/struct.Response.html' title='hyper::client::response::Response'>Response</a>, <a class='struct' href='../google_youtube3/struct.LiveBroadcastListResponse.html' title='google_youtube3::LiveBroadcastListResponse'>LiveBroadcastListResponse</a><a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>)</a>&gt;</code></h4>
 <div class='docblock'><p>Perform the operation you have build so far.</p>
-</div><h4 id='method.part' class='method'><code>fn <a href='#method.part' class='fnname'>part</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_youtube3/struct.LiveBroadcastListCall.html' title='google_youtube3::LiveBroadcastListCall'>LiveBroadcastListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.part' class='method'><code>fn <a href='#method.part' class='fnname'>part</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_youtube3/struct.LiveBroadcastListCall.html' title='google_youtube3::LiveBroadcastListCall'>LiveBroadcastListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>The part parameter specifies a comma-separated list of one or more liveBroadcast resource properties that the API response will include. The part names that you can include in the parameter value are id, snippet, contentDetails, and status.</p>
 
 <p>Sets the <em>part</em> query property to the given value.</p>
@@ -112,11 +112,11 @@ we provide this method for API completeness.</p>
 <li><em>contentDetails</em></li>
 <li><em>status</em></li>
 </ul>
-</div><h4 id='method.page_token' class='method'><code>fn <a href='#method.page_token' class='fnname'>page_token</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_youtube3/struct.LiveBroadcastListCall.html' title='google_youtube3::LiveBroadcastListCall'>LiveBroadcastListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.page_token' class='method'><code>fn <a href='#method.page_token' class='fnname'>page_token</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_youtube3/struct.LiveBroadcastListCall.html' title='google_youtube3::LiveBroadcastListCall'>LiveBroadcastListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>The pageToken parameter identifies a specific page in the result set that should be returned. In an API response, the nextPageToken and prevPageToken properties identify other pages that could be retrieved.</p>
 
 <p>Sets the <em>page token</em> query property to the given value.</p>
-</div><h4 id='method.on_behalf_of_content_owner_channel' class='method'><code>fn <a href='#method.on_behalf_of_content_owner_channel' class='fnname'>on_behalf_of_content_owner_channel</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_youtube3/struct.LiveBroadcastListCall.html' title='google_youtube3::LiveBroadcastListCall'>LiveBroadcastListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.on_behalf_of_content_owner_channel' class='method'><code>fn <a href='#method.on_behalf_of_content_owner_channel' class='fnname'>on_behalf_of_content_owner_channel</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_youtube3/struct.LiveBroadcastListCall.html' title='google_youtube3::LiveBroadcastListCall'>LiveBroadcastListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>This parameter can only be used in a properly authorized request. Note: This parameter is intended exclusively for YouTube content partners.</p>
 
 <p>The onBehalfOfContentOwnerChannel parameter specifies the YouTube channel ID of the channel to which a video is being added. This parameter is required when a request specifies a value for the onBehalfOfContentOwner parameter, and it can only be used in conjunction with that parameter. In addition, the request must be authorized using a CMS account that is linked to the content owner that the onBehalfOfContentOwner parameter specifies. Finally, the channel that the onBehalfOfContentOwnerChannel parameter value specifies must be linked to the content owner that the onBehalfOfContentOwner parameter specifies.</p>
@@ -124,40 +124,40 @@ we provide this method for API completeness.</p>
 <p>This parameter is intended for YouTube content partners that own and manage many different YouTube channels. It allows content owners to authenticate once and perform actions on behalf of the channel specified in the parameter value, without having to provide authentication credentials for each separate channel.</p>
 
 <p>Sets the <em>on behalf of content owner channel</em> query property to the given value.</p>
-</div><h4 id='method.on_behalf_of_content_owner' class='method'><code>fn <a href='#method.on_behalf_of_content_owner' class='fnname'>on_behalf_of_content_owner</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_youtube3/struct.LiveBroadcastListCall.html' title='google_youtube3::LiveBroadcastListCall'>LiveBroadcastListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.on_behalf_of_content_owner' class='method'><code>fn <a href='#method.on_behalf_of_content_owner' class='fnname'>on_behalf_of_content_owner</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_youtube3/struct.LiveBroadcastListCall.html' title='google_youtube3::LiveBroadcastListCall'>LiveBroadcastListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Note: This parameter is intended exclusively for YouTube content partners.</p>
 
 <p>The onBehalfOfContentOwner parameter indicates that the request&#39;s authorization credentials identify a YouTube CMS user who is acting on behalf of the content owner specified in the parameter value. This parameter is intended for YouTube content partners that own and manage many different YouTube channels. It allows content owners to authenticate once and get access to all their video and channel data, without having to provide authentication credentials for each individual channel. The CMS account that the user authenticates with must be linked to the specified YouTube content owner.</p>
 
 <p>Sets the <em>on behalf of content owner</em> query property to the given value.</p>
-</div><h4 id='method.mine' class='method'><code>fn <a href='#method.mine' class='fnname'>mine</a>(self, new_value: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>) -&gt; <a class='struct' href='../google_youtube3/struct.LiveBroadcastListCall.html' title='google_youtube3::LiveBroadcastListCall'>LiveBroadcastListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.mine' class='method'><code>fn <a href='#method.mine' class='fnname'>mine</a>(self, new_value: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>) -&gt; <a class='struct' href='../google_youtube3/struct.LiveBroadcastListCall.html' title='google_youtube3::LiveBroadcastListCall'>LiveBroadcastListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>The mine parameter can be used to instruct the API to only return broadcasts owned by the authenticated user. Set the parameter value to true to only retrieve your own broadcasts.</p>
 
 <p>Sets the <em>mine</em> query property to the given value.</p>
-</div><h4 id='method.max_results' class='method'><code>fn <a href='#method.max_results' class='fnname'>max_results</a>(self, new_value: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>) -&gt; <a class='struct' href='../google_youtube3/struct.LiveBroadcastListCall.html' title='google_youtube3::LiveBroadcastListCall'>LiveBroadcastListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.max_results' class='method'><code>fn <a href='#method.max_results' class='fnname'>max_results</a>(self, new_value: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>) -&gt; <a class='struct' href='../google_youtube3/struct.LiveBroadcastListCall.html' title='google_youtube3::LiveBroadcastListCall'>LiveBroadcastListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>The maxResults parameter specifies the maximum number of items that should be returned in the result set.</p>
 
 <p>Sets the <em>max results</em> query property to the given value.</p>
-</div><h4 id='method.id' class='method'><code>fn <a href='#method.id' class='fnname'>id</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_youtube3/struct.LiveBroadcastListCall.html' title='google_youtube3::LiveBroadcastListCall'>LiveBroadcastListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.id' class='method'><code>fn <a href='#method.id' class='fnname'>id</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_youtube3/struct.LiveBroadcastListCall.html' title='google_youtube3::LiveBroadcastListCall'>LiveBroadcastListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>The id parameter specifies a comma-separated list of YouTube broadcast IDs that identify the broadcasts being retrieved. In a liveBroadcast resource, the id property specifies the broadcast&#39;s ID.</p>
 
 <p>Sets the <em>id</em> query property to the given value.</p>
-</div><h4 id='method.broadcast_type' class='method'><code>fn <a href='#method.broadcast_type' class='fnname'>broadcast_type</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_youtube3/struct.LiveBroadcastListCall.html' title='google_youtube3::LiveBroadcastListCall'>LiveBroadcastListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.broadcast_type' class='method'><code>fn <a href='#method.broadcast_type' class='fnname'>broadcast_type</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_youtube3/struct.LiveBroadcastListCall.html' title='google_youtube3::LiveBroadcastListCall'>LiveBroadcastListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>The broadcastType parameter filters the API response to only include broadcasts with the specified type. This is only compatible with the mine filter for now.</p>
 
 <p>Sets the <em>broadcast type</em> query property to the given value.</p>
-</div><h4 id='method.broadcast_status' class='method'><code>fn <a href='#method.broadcast_status' class='fnname'>broadcast_status</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_youtube3/struct.LiveBroadcastListCall.html' title='google_youtube3::LiveBroadcastListCall'>LiveBroadcastListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.broadcast_status' class='method'><code>fn <a href='#method.broadcast_status' class='fnname'>broadcast_status</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_youtube3/struct.LiveBroadcastListCall.html' title='google_youtube3::LiveBroadcastListCall'>LiveBroadcastListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>The broadcastStatus parameter filters the API response to only include broadcasts with the specified status.</p>
 
 <p>Sets the <em>broadcast status</em> query property to the given value.</p>
-</div><h4 id='method.delegate' class='method'><code>fn <a href='#method.delegate' class='fnname'>delegate</a>(self, new_value: &amp;'a mut <a class='trait' href='../google_youtube3/trait.Delegate.html' title='google_youtube3::Delegate'>Delegate</a>) -&gt; <a class='struct' href='../google_youtube3/struct.LiveBroadcastListCall.html' title='google_youtube3::LiveBroadcastListCall'>LiveBroadcastListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.delegate' class='method'><code>fn <a href='#method.delegate' class='fnname'>delegate</a>(self, new_value: &amp;'a mut <a class='trait' href='../google_youtube3/trait.Delegate.html' title='google_youtube3::Delegate'>Delegate</a>) -&gt; <a class='struct' href='../google_youtube3/struct.LiveBroadcastListCall.html' title='google_youtube3::LiveBroadcastListCall'>LiveBroadcastListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>The delegate implementation is consulted whenever there is an intermediate result, or if something goes wrong
 while executing the actual API request.</p>
 
 <p>It should be used to handle progress information, and to implement a certain level of resilience.</p>
 
 <p>Sets the <em>delegate</em> property to the given value.</p>
-</div><h4 id='method.param' class='method'><code>fn <a href='#method.param' class='fnname'>param</a>&lt;T&gt;(self, name: T, value: T) -&gt; <a class='struct' href='../google_youtube3/struct.LiveBroadcastListCall.html' title='google_youtube3::LiveBroadcastListCall'>LiveBroadcastListCall</a>&lt;'a, C, A&gt; <span class='where'>where T: <a class='trait' href='https://doc.rust-lang.org/nightly/core/convert/trait.AsRef.html' title='core::convert::AsRef'>AsRef</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>&gt;</span></code></h4>
+</div><h4 id='method.param' class='method'><code>fn <a href='#method.param' class='fnname'>param</a>&lt;T&gt;(self, name: T, value: T) -&gt; <a class='struct' href='../google_youtube3/struct.LiveBroadcastListCall.html' title='google_youtube3::LiveBroadcastListCall'>LiveBroadcastListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where T: <a class='trait' href='https://doc.rust-lang.org/nightly/core/convert/trait.AsRef.html' title='core::convert::AsRef'>AsRef</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>&gt;</span></code></h4>
 <div class='docblock'><p>Set any additional parameter of the query string used in the request.
 It should be used to set parameters which are not yet available through their own
 setters.</p>
@@ -175,7 +175,7 @@ which have their own setter method. If done anyway, the request will fail.</p>
 <li><em>fields</em> (query-string) - Selector specifying which fields to include in a partial response.</li>
 <li><em>alt</em> (query-string) - Data format for the response.</li>
 </ul>
-</div><h4 id='method.add_scope' class='method'><code>fn <a href='#method.add_scope' class='fnname'>add_scope</a>&lt;T&gt;(self, scope: T) -&gt; <a class='struct' href='../google_youtube3/struct.LiveBroadcastListCall.html' title='google_youtube3::LiveBroadcastListCall'>LiveBroadcastListCall</a>&lt;'a, C, A&gt; <span class='where'>where T: <a class='trait' href='https://doc.rust-lang.org/nightly/core/convert/trait.AsRef.html' title='core::convert::AsRef'>AsRef</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>&gt;</span></code></h4>
+</div><h4 id='method.add_scope' class='method'><code>fn <a href='#method.add_scope' class='fnname'>add_scope</a>&lt;T&gt;(self, scope: T) -&gt; <a class='struct' href='../google_youtube3/struct.LiveBroadcastListCall.html' title='google_youtube3::LiveBroadcastListCall'>LiveBroadcastListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where T: <a class='trait' href='https://doc.rust-lang.org/nightly/core/convert/trait.AsRef.html' title='core::convert::AsRef'>AsRef</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>&gt;</span></code></h4>
 <div class='docblock'><p>Identifies the authorization scope for the method you are building.</p>
 
 <p>Use this method to actively specify which scope should be used, instead the default <code>Scope</code> variant
@@ -187,7 +187,7 @@ tokens for more than one scope.</p>
 <p>Usually there is more than one suitable scope to authorize an operation, some of which may
 encompass more rights than others. For example, for listing resources, a <em>read-only</em> scope will be
 sufficient, a read-write scope will do as well.</p>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_youtube3/trait.CallBuilder.html' title='google_youtube3::CallBuilder'>CallBuilder</a> for <a class='struct' href='../google_youtube3/struct.LiveBroadcastListCall.html' title='google_youtube3::LiveBroadcastListCall'>LiveBroadcastListCall</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-40000' class='srclink' href='../src/google_youtube3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-youtube3-3a9e8c4a9ed85834/out/lib.rs.html#94255' title='goto source code'>[src]</a></span></h3>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='trait' href='../google_youtube3/trait.CallBuilder.html' title='google_youtube3::CallBuilder'>CallBuilder</a> for <a class='struct' href='../google_youtube3/struct.LiveBroadcastListCall.html' title='google_youtube3::LiveBroadcastListCall'>LiveBroadcastListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-38664' class='srclink' href='../src/google_youtube3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-youtube3-122b93fad4a7fbcd/out/lib.rs.html#78399' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 

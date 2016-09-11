@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Insert - storage v0.3.6+20160330</title>
+  <title>Insert - storage v0.3.6+20160901</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -32,7 +32,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> storage v0.3.6+20160330</a>
+        <a href=".." class="icon icon-home"> storage v0.3.6+20160901</a>
         
       </div>
 
@@ -293,7 +293,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">storage v0.3.6+20160330</a>
+        <a href="..">storage v0.3.6+20160901</a>
       </nav>
 
       
@@ -342,6 +342,8 @@ You can set the scope for this method like this: <code>storage1 --scope &lt;scop
 In the latter case it is advised to set the field-cursor to the data-structure's field to specify values more concisely.</p>
 <p>For example, a structure like this:</p>
 <pre><code>Bucket:
+  encryption:
+    default-kms-key-name: string
   etag: string
   id: string
   kind: string
@@ -369,71 +371,79 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    etag=dolor</code><ul>
+<li>
+<p><code>-r .encryption    default-kms-key-name=dolor</code></p>
+<ul>
+<li>No description provided.</li>
+</ul>
+</li>
+<li>
+<p><code>..    etag=eirmod</code></p>
+<ul>
 <li>HTTP 1.1 Entity tag for the bucket.</li>
 </ul>
 </li>
-<li><code>id=eirmod</code><ul>
+<li><code>id=elitr</code><ul>
 <li>The ID of the bucket.</li>
 </ul>
 </li>
-<li><code>kind=elitr</code><ul>
+<li><code>kind=amet</code><ul>
 <li>The kind of item this is. For buckets, this is always storage#bucket.</li>
 </ul>
 </li>
-<li><code>location=amet</code><ul>
+<li><code>location=no</code><ul>
 <li>The location of the bucket. Object data for objects in the bucket resides in physical storage within this region. Defaults to US. See the developer&#39;s guide for the authoritative list.</li>
 </ul>
 </li>
-<li><code>logging    log-bucket=no</code><ul>
+<li><code>logging    log-bucket=labore</code><ul>
 <li>The destination bucket where the current bucket&#39;s logs should be placed.</li>
 </ul>
 </li>
 <li>
-<p><code>log-object-prefix=labore</code></p>
+<p><code>log-object-prefix=eirmod</code></p>
 <ul>
 <li>A prefix for log object names.</li>
 </ul>
 </li>
 <li>
-<p><code>..    metageneration=eirmod</code></p>
+<p><code>..    metageneration=dolore</code></p>
 <ul>
 <li>The metadata generation of this bucket.</li>
 </ul>
 </li>
-<li><code>name=dolore</code><ul>
+<li><code>name=invidunt</code><ul>
 <li>The name of the bucket.</li>
 </ul>
 </li>
-<li><code>owner    entity=invidunt</code><ul>
+<li><code>owner    entity=aliquyam</code><ul>
 <li>The entity, in the form project-owner-projectId.</li>
 </ul>
 </li>
 <li>
-<p><code>entity-id=aliquyam</code></p>
+<p><code>entity-id=accusam</code></p>
 <ul>
 <li>The ID for the entity.</li>
 </ul>
 </li>
 <li>
-<p><code>..    project-number=accusam</code></p>
+<p><code>..    project-number=lorem</code></p>
 <ul>
 <li>The project number of the project the bucket belongs to.</li>
 </ul>
 </li>
-<li><code>self-link=lorem</code><ul>
+<li><code>self-link=sea</code><ul>
 <li>The URI of this bucket.</li>
 </ul>
 </li>
-<li><code>storage-class=sea</code><ul>
+<li><code>storage-class=et</code><ul>
 <li>The bucket&#39;s storage class. This defines how objects in the bucket are stored and determines the SLA and the cost of storage. Values include STANDARD, NEARLINE and DURABLE_REDUCED_AVAILABILITY. Defaults to STANDARD. For more information, see storage classes.</li>
 </ul>
 </li>
-<li><code>time-created=et</code><ul>
+<li><code>time-created=duo</code><ul>
 <li>The creation time of the bucket in RFC 3339 format.</li>
 </ul>
 </li>
-<li><code>updated=duo</code><ul>
+<li><code>updated=et</code><ul>
 <li>The modification time of the bucket in RFC 3339 format.</li>
 </ul>
 </li>
@@ -444,13 +454,13 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
-<p><code>..website    main-page-suffix=eirmod</code></p>
+<p><code>..website    main-page-suffix=sanctus</code></p>
 <ul>
-<li>Behaves as the bucket&#39;s directory index where missing objects are treated as potential directories.</li>
+<li>If the requested object path is missing, the service will ensure the path has a trailing &#39;/&#39;, append this suffix, and attempt to retrieve the resulting object. This allows the creation of index.html objects to represent directory pages.</li>
 </ul>
 </li>
-<li><code>not-found-page=sanctus</code><ul>
-<li>The custom object to return when a requested resource is not found.</li>
+<li><code>not-found-page=et</code><ul>
+<li>If the requested object path is missing, and any mainPageSuffix object is missing, if applicable, the service will return the named object from this bucket as the content for a 404 Not Found result.</li>
 </ul>
 </li>
 </ul>
@@ -485,15 +495,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p predefined-acl=string</strong></p>
-<ul>
-<li>Apply a predefined set of access controls to this bucket.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p projection=string</strong></p>
 <ul>
 <li>Set of properties to return. Defaults to noAcl, unless the bucket resource specifies acl or defaultObjectAcl properties, when it defaults to full.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p predefined-acl=string</strong></p>
+<ul>
+<li>Apply a predefined set of access controls to this bucket.</li>
 </ul>
 </li>
 </ul>
@@ -587,7 +597,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 
 <!--
 MkDocs version  : 0.12.2
-Docs Build Date : 2016-07-23 16:05:52.714922
+Docs Build Date : 2016-09-11 17:55:44.301927
 -->
 </body>
 </html>

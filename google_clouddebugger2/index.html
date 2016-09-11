@@ -48,14 +48,14 @@
                        [<span class='inner'>&#x2212;</span>]
                    </a>
                </span><a id='src-0' class='srclink' href='../src/google_clouddebugger2/src/lib.rs.html#5-192' title='goto source code'>[src]</a></span></h1>
-<div class='docblock'><p>This documentation was generated from <em>clouddebugger</em> crate version <em>0.1.14+20160309</em>, where <em>20160309</em> is the exact revision of the <em>clouddebugger:v2</em> schema built by the <a href="http://www.makotemplates.org/">mako</a> code generator <em>v0.1.14</em>.</p>
+<div class='docblock'><p>This documentation was generated from <em>Cloud Debugger</em> crate version <em>0.1.15+20160810</em>, where <em>20160810</em> is the exact revision of the <em>clouddebugger:v2</em> schema built by the <a href="http://www.makotemplates.org/">mako</a> code generator <em>v0.1.15</em>.</p>
 
-<p>Everything else about the <em>clouddebugger</em> <em>v2</em> API can be found at the
-<a href="https://cloud.google.com/tools/cloud-debugger">official documentation site</a>.
+<p>Everything else about the <em>Cloud Debugger</em> <em>v2</em> API can be found at the
+<a href="http://cloud.google.com/debugger">official documentation site</a>.
 The original source code is <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/clouddebugger2">on github</a>.</p>
 
 <h1 id='features' class='section-header'><a href='#features'>Features</a></h1>
-<p>Handle the following <em>Resources</em> with ease from the central <a href="struct.Clouddebugger.html">hub</a> ... </p>
+<p>Handle the following <em>Resources</em> with ease from the central <a href="struct.CloudDebugger.html">hub</a> ... </p>
 
 <ul>
 <li>controller
@@ -76,7 +76,7 @@ The original source code is <a href="https://github.com/Byron/google-apis-rs/tre
 <p>The API is structured into the following primary items:</p>
 
 <ul>
-<li><strong><a href="struct.Clouddebugger.html">Hub</a></strong>
+<li><strong><a href="struct.CloudDebugger.html">Hub</a></strong>
 
 <ul>
 <li>a central object to maintain state and allow accessing all <em>Activities</em></li>
@@ -136,7 +136,7 @@ google-clouddebugger2 = &quot;*&quot;
 <span class='kw'>use</span> <span class='ident'>clouddebugger2</span>::{<span class='prelude-ty'>Result</span>, <span class='ident'>Error</span>};
 <span class='kw'>use</span> <span class='ident'>std</span>::<span class='ident'>default</span>::<span class='ident'>Default</span>;
 <span class='kw'>use</span> <span class='ident'>oauth2</span>::{<span class='ident'>Authenticator</span>, <span class='ident'>DefaultAuthenticatorDelegate</span>, <span class='ident'>ApplicationSecret</span>, <span class='ident'>MemoryStorage</span>};
-<span class='kw'>use</span> <span class='ident'>clouddebugger2</span>::<span class='ident'>Clouddebugger</span>;
+<span class='kw'>use</span> <span class='ident'>clouddebugger2</span>::<span class='ident'>CloudDebugger</span>;
  
 <span class='comment'>// Get an ApplicationSecret instance by some means. It contains the `client_id` and </span>
 <span class='comment'>// `client_secret`, among other things.</span>
@@ -149,7 +149,7 @@ google-clouddebugger2 = &quot;*&quot;
 <span class='kw'>let</span> <span class='ident'>auth</span> <span class='op'>=</span> <span class='ident'>Authenticator</span>::<span class='ident'>new</span>(<span class='kw-2'>&amp;</span><span class='ident'>secret</span>, <span class='ident'>DefaultAuthenticatorDelegate</span>,
                               <span class='ident'>hyper</span>::<span class='ident'>Client</span>::<span class='ident'>new</span>(),
                               <span class='op'>&lt;</span><span class='ident'>MemoryStorage</span> <span class='kw'>as</span> <span class='ident'>Default</span><span class='op'>&gt;</span>::<span class='ident'>default</span>(), <span class='prelude-val'>None</span>);
-<span class='kw'>let</span> <span class='kw-2'>mut</span> <span class='ident'>hub</span> <span class='op'>=</span> <span class='ident'>Clouddebugger</span>::<span class='ident'>new</span>(<span class='ident'>hyper</span>::<span class='ident'>Client</span>::<span class='ident'>new</span>(), <span class='ident'>auth</span>);
+<span class='kw'>let</span> <span class='kw-2'>mut</span> <span class='ident'>hub</span> <span class='op'>=</span> <span class='ident'>CloudDebugger</span>::<span class='ident'>new</span>(<span class='ident'>hyper</span>::<span class='ident'>Client</span>::<span class='ident'>new</span>(), <span class='ident'>auth</span>);
 <span class='comment'>// As the method needs a request, you would usually fill it with the desired information</span>
 <span class='comment'>// into the respective structure. Some of the parts shown here might not be applicable !</span>
 <span class='comment'>// Values shown here are possibly random and not representative !</span>
@@ -241,6 +241,13 @@ These will always take a single argument, for which the following statements are
                            </td>
                        </tr>
                        <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CloudDebugger.html'
+                                  title='google_clouddebugger2::CloudDebugger'>CloudDebugger</a></td>
+                           <td class='docblock short'>
+                                <p>Central instance to access all CloudDebugger related resource activities</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
                            <td><a class='struct' href='struct.CloudRepoSourceContext.html'
                                   title='google_clouddebugger2::CloudRepoSourceContext'>CloudRepoSourceContext</a></td>
                            <td class='docblock short'>
@@ -259,13 +266,6 @@ These will always take a single argument, for which the following statements are
                                   title='google_clouddebugger2::CloudWorkspaceSourceContext'>CloudWorkspaceSourceContext</a></td>
                            <td class='docblock short'>
                                 <p>A CloudWorkspaceSourceContext denotes a workspace at a particular snapshot.</p>
-                           </td>
-                       </tr>
-                       <tr class=' module-item'>
-                           <td><a class='struct' href='struct.Clouddebugger.html'
-                                  title='google_clouddebugger2::Clouddebugger'>Clouddebugger</a></td>
-                           <td class='docblock short'>
-                                <p>Central instance to access all Clouddebugger related resource activities</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
@@ -294,7 +294,7 @@ These will always take a single argument, for which the following statements are
                                   title='google_clouddebugger2::ControllerMethods'>ControllerMethods</a></td>
                            <td class='docblock short'>
                                 <p>A builder providing access to all methods supported on <em>controller</em> resources.
-It is not used directly, but through the <code>Clouddebugger</code> hub.</p>
+It is not used directly, but through the <code>CloudDebugger</code> hub.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
@@ -344,7 +344,7 @@ It is not used directly, but through the <code>Clouddebugger</code> hub.</p>
                                   title='google_clouddebugger2::DebuggerMethods'>DebuggerMethods</a></td>
                            <td class='docblock short'>
                                 <p>A builder providing access to all methods supported on <em>debugger</em> resources.
-It is not used directly, but through the <code>Clouddebugger</code> hub.</p>
+It is not used directly, but through the <code>CloudDebugger</code> hub.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>

@@ -47,8 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-7753' class='srclink' href='../src/google_calendar3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-calendar3-280ee5d10c9d729a/out/lib.rs.html#17064-17066' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct AclMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
+               </span><a id='src-7222' class='srclink' href='../src/google_calendar3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-calendar3-99dc80a02d683e55/out/lib.rs.html#13229-13231' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct AclMethods&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>acl</em> resources.
 It is not used directly, but through the <code>CalendarHub</code> hub.</p>
@@ -74,8 +74,8 @@ It is not used directly, but through the <code>CalendarHub</code> hub.</p>
 <span class='comment'>// like `delete(...)`, `get(...)`, `insert(...)`, `list(...)`, `patch(...)`, `update(...)` and `watch(...)`</span>
 <span class='comment'>// to build up your call.</span>
 <span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>acl</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_calendar3/struct.AclMethods.html' title='google_calendar3::AclMethods'>AclMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-7762' class='srclink' href='../src/google_calendar3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-calendar3-280ee5d10c9d729a/out/lib.rs.html#17068-17197' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.watch' class='method'><code>fn <a href='#method.watch' class='fnname'>watch</a>(&amp;self, request: <a class='struct' href='../google_calendar3/struct.Channel.html' title='google_calendar3::Channel'>Channel</a>, calendar_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_calendar3/struct.AclWatchCall.html' title='google_calendar3::AclWatchCall'>AclWatchCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='struct' href='../google_calendar3/struct.AclMethods.html' title='google_calendar3::AclMethods'>AclMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-7231' class='srclink' href='../src/google_calendar3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-calendar3-99dc80a02d683e55/out/lib.rs.html#13233-13362' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.watch' class='method'><code>fn <a href='#method.watch' class='fnname'>watch</a>(&amp;self, request: <a class='struct' href='../google_calendar3/struct.Channel.html' title='google_calendar3::Channel'>Channel</a>, calendar_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_calendar3/struct.AclWatchCall.html' title='google_calendar3::AclWatchCall'>AclWatchCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Watch for changes to ACL resources.</p>
@@ -85,7 +85,7 @@ It is not used directly, but through the <code>CalendarHub</code> hub.</p>
 <li><code>request</code> - No description provided.</li>
 <li><code>calendarId</code> - Calendar identifier. To retrieve calendar IDs call the calendarList.list method. If you want to access the primary calendar of the currently logged in user, use the &quot;primary&quot; keyword.</li>
 </ul>
-</div><h4 id='method.insert' class='method'><code>fn <a href='#method.insert' class='fnname'>insert</a>(&amp;self, request: <a class='struct' href='../google_calendar3/struct.AclRule.html' title='google_calendar3::AclRule'>AclRule</a>, calendar_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_calendar3/struct.AclInsertCall.html' title='google_calendar3::AclInsertCall'>AclInsertCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.insert' class='method'><code>fn <a href='#method.insert' class='fnname'>insert</a>(&amp;self, request: <a class='struct' href='../google_calendar3/struct.AclRule.html' title='google_calendar3::AclRule'>AclRule</a>, calendar_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_calendar3/struct.AclInsertCall.html' title='google_calendar3::AclInsertCall'>AclInsertCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Creates an access control rule.</p>
@@ -95,7 +95,7 @@ It is not used directly, but through the <code>CalendarHub</code> hub.</p>
 <li><code>request</code> - No description provided.</li>
 <li><code>calendarId</code> - Calendar identifier. To retrieve calendar IDs call the calendarList.list method. If you want to access the primary calendar of the currently logged in user, use the &quot;primary&quot; keyword.</li>
 </ul>
-</div><h4 id='method.update' class='method'><code>fn <a href='#method.update' class='fnname'>update</a>(&amp;self, request: <a class='struct' href='../google_calendar3/struct.AclRule.html' title='google_calendar3::AclRule'>AclRule</a>, calendar_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, rule_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_calendar3/struct.AclUpdateCall.html' title='google_calendar3::AclUpdateCall'>AclUpdateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.update' class='method'><code>fn <a href='#method.update' class='fnname'>update</a>(&amp;self, request: <a class='struct' href='../google_calendar3/struct.AclRule.html' title='google_calendar3::AclRule'>AclRule</a>, calendar_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, rule_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_calendar3/struct.AclUpdateCall.html' title='google_calendar3::AclUpdateCall'>AclUpdateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Updates an access control rule.</p>
@@ -106,7 +106,7 @@ It is not used directly, but through the <code>CalendarHub</code> hub.</p>
 <li><code>calendarId</code> - Calendar identifier. To retrieve calendar IDs call the calendarList.list method. If you want to access the primary calendar of the currently logged in user, use the &quot;primary&quot; keyword.</li>
 <li><code>ruleId</code> - ACL rule identifier.</li>
 </ul>
-</div><h4 id='method.patch' class='method'><code>fn <a href='#method.patch' class='fnname'>patch</a>(&amp;self, request: <a class='struct' href='../google_calendar3/struct.AclRule.html' title='google_calendar3::AclRule'>AclRule</a>, calendar_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, rule_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_calendar3/struct.AclPatchCall.html' title='google_calendar3::AclPatchCall'>AclPatchCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.patch' class='method'><code>fn <a href='#method.patch' class='fnname'>patch</a>(&amp;self, request: <a class='struct' href='../google_calendar3/struct.AclRule.html' title='google_calendar3::AclRule'>AclRule</a>, calendar_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, rule_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_calendar3/struct.AclPatchCall.html' title='google_calendar3::AclPatchCall'>AclPatchCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Updates an access control rule. This method supports patch semantics.</p>
@@ -117,7 +117,7 @@ It is not used directly, but through the <code>CalendarHub</code> hub.</p>
 <li><code>calendarId</code> - Calendar identifier. To retrieve calendar IDs call the calendarList.list method. If you want to access the primary calendar of the currently logged in user, use the &quot;primary&quot; keyword.</li>
 <li><code>ruleId</code> - ACL rule identifier.</li>
 </ul>
-</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self, calendar_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_calendar3/struct.AclListCall.html' title='google_calendar3::AclListCall'>AclListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self, calendar_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_calendar3/struct.AclListCall.html' title='google_calendar3::AclListCall'>AclListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Returns the rules in the access control list for the calendar.</p>
@@ -126,7 +126,7 @@ It is not used directly, but through the <code>CalendarHub</code> hub.</p>
 <ul>
 <li><code>calendarId</code> - Calendar identifier. To retrieve calendar IDs call the calendarList.list method. If you want to access the primary calendar of the currently logged in user, use the &quot;primary&quot; keyword.</li>
 </ul>
-</div><h4 id='method.delete' class='method'><code>fn <a href='#method.delete' class='fnname'>delete</a>(&amp;self, calendar_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, rule_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_calendar3/struct.AclDeleteCall.html' title='google_calendar3::AclDeleteCall'>AclDeleteCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.delete' class='method'><code>fn <a href='#method.delete' class='fnname'>delete</a>(&amp;self, calendar_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, rule_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_calendar3/struct.AclDeleteCall.html' title='google_calendar3::AclDeleteCall'>AclDeleteCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Deletes an access control rule.</p>
@@ -136,7 +136,7 @@ It is not used directly, but through the <code>CalendarHub</code> hub.</p>
 <li><code>calendarId</code> - Calendar identifier. To retrieve calendar IDs call the calendarList.list method. If you want to access the primary calendar of the currently logged in user, use the &quot;primary&quot; keyword.</li>
 <li><code>ruleId</code> - ACL rule identifier.</li>
 </ul>
-</div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, calendar_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, rule_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_calendar3/struct.AclGetCall.html' title='google_calendar3::AclGetCall'>AclGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, calendar_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, rule_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_calendar3/struct.AclGetCall.html' title='google_calendar3::AclGetCall'>AclGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Returns an access control rule.</p>
@@ -146,7 +146,7 @@ It is not used directly, but through the <code>CalendarHub</code> hub.</p>
 <li><code>calendarId</code> - Calendar identifier. To retrieve calendar IDs call the calendarList.list method. If you want to access the primary calendar of the currently logged in user, use the &quot;primary&quot; keyword.</li>
 <li><code>ruleId</code> - ACL rule identifier.</li>
 </ul>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_calendar3/trait.MethodsBuilder.html' title='google_calendar3::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_calendar3/struct.AclMethods.html' title='google_calendar3::AclMethods'>AclMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-7758' class='srclink' href='../src/google_calendar3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-calendar3-280ee5d10c9d729a/out/lib.rs.html#17067' title='goto source code'>[src]</a></span></h3>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='trait' href='../google_calendar3/trait.MethodsBuilder.html' title='google_calendar3::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_calendar3/struct.AclMethods.html' title='google_calendar3::AclMethods'>AclMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-7227' class='srclink' href='../src/google_calendar3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-calendar3-99dc80a02d683e55/out/lib.rs.html#13232' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 

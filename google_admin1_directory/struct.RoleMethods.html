@@ -47,8 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-12480' class='srclink' href='../src/google_admin1_directory/home/byron/dev/rust/google-apis-rs/target/debug/build/google-admin1_directory-a39c9338e60059e5/out/lib.rs.html#28666-28668' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct RoleMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
+               </span><a id='src-11697' class='srclink' href='../src/google_admin1_directory/home/byron/dev/rust/google-apis-rs/target/debug/build/google-admin1_directory-9f6fa564a6722c32/out/lib.rs.html#22460-22462' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct RoleMethods&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>role</em> resources.
 It is not used directly, but through the <code>Directory</code> hub.</p>
@@ -74,8 +74,8 @@ It is not used directly, but through the <code>Directory</code> hub.</p>
 <span class='comment'>// like `delete(...)`, `get(...)`, `insert(...)`, `list(...)`, `patch(...)` and `update(...)`</span>
 <span class='comment'>// to build up your call.</span>
 <span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>roles</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_admin1_directory/struct.RoleMethods.html' title='google_admin1_directory::RoleMethods'>RoleMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-12489' class='srclink' href='../src/google_admin1_directory/home/byron/dev/rust/google-apis-rs/target/debug/build/google-admin1_directory-a39c9338e60059e5/out/lib.rs.html#28670-28776' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.update' class='method'><code>fn <a href='#method.update' class='fnname'>update</a>(&amp;self, request: <a class='struct' href='../google_admin1_directory/struct.Role.html' title='google_admin1_directory::Role'>Role</a>, customer: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, role_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_admin1_directory/struct.RoleUpdateCall.html' title='google_admin1_directory::RoleUpdateCall'>RoleUpdateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='struct' href='../google_admin1_directory/struct.RoleMethods.html' title='google_admin1_directory::RoleMethods'>RoleMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-11706' class='srclink' href='../src/google_admin1_directory/home/byron/dev/rust/google-apis-rs/target/debug/build/google-admin1_directory-9f6fa564a6722c32/out/lib.rs.html#22464-22570' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.update' class='method'><code>fn <a href='#method.update' class='fnname'>update</a>(&amp;self, request: <a class='struct' href='../google_admin1_directory/struct.Role.html' title='google_admin1_directory::Role'>Role</a>, customer: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, role_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_admin1_directory/struct.RoleUpdateCall.html' title='google_admin1_directory::RoleUpdateCall'>RoleUpdateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Updates a role.</p>
@@ -86,7 +86,7 @@ It is not used directly, but through the <code>Directory</code> hub.</p>
 <li><code>customer</code> - Immutable ID of the Google Apps account.</li>
 <li><code>roleId</code> - Immutable ID of the role.</li>
 </ul>
-</div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, customer: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, role_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_admin1_directory/struct.RoleGetCall.html' title='google_admin1_directory::RoleGetCall'>RoleGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, customer: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, role_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_admin1_directory/struct.RoleGetCall.html' title='google_admin1_directory::RoleGetCall'>RoleGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Retrieves a role.</p>
@@ -96,7 +96,7 @@ It is not used directly, but through the <code>Directory</code> hub.</p>
 <li><code>customer</code> - Immutable ID of the Google Apps account.</li>
 <li><code>roleId</code> - Immutable ID of the role.</li>
 </ul>
-</div><h4 id='method.delete' class='method'><code>fn <a href='#method.delete' class='fnname'>delete</a>(&amp;self, customer: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, role_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_admin1_directory/struct.RoleDeleteCall.html' title='google_admin1_directory::RoleDeleteCall'>RoleDeleteCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.delete' class='method'><code>fn <a href='#method.delete' class='fnname'>delete</a>(&amp;self, customer: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, role_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_admin1_directory/struct.RoleDeleteCall.html' title='google_admin1_directory::RoleDeleteCall'>RoleDeleteCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Deletes a role.</p>
@@ -106,7 +106,7 @@ It is not used directly, but through the <code>Directory</code> hub.</p>
 <li><code>customer</code> - Immutable ID of the Google Apps account.</li>
 <li><code>roleId</code> - Immutable ID of the role.</li>
 </ul>
-</div><h4 id='method.patch' class='method'><code>fn <a href='#method.patch' class='fnname'>patch</a>(&amp;self, request: <a class='struct' href='../google_admin1_directory/struct.Role.html' title='google_admin1_directory::Role'>Role</a>, customer: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, role_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_admin1_directory/struct.RolePatchCall.html' title='google_admin1_directory::RolePatchCall'>RolePatchCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.patch' class='method'><code>fn <a href='#method.patch' class='fnname'>patch</a>(&amp;self, request: <a class='struct' href='../google_admin1_directory/struct.Role.html' title='google_admin1_directory::Role'>Role</a>, customer: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, role_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_admin1_directory/struct.RolePatchCall.html' title='google_admin1_directory::RolePatchCall'>RolePatchCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Updates a role. This method supports patch semantics.</p>
@@ -117,7 +117,7 @@ It is not used directly, but through the <code>Directory</code> hub.</p>
 <li><code>customer</code> - Immutable ID of the Google Apps account.</li>
 <li><code>roleId</code> - Immutable ID of the role.</li>
 </ul>
-</div><h4 id='method.insert' class='method'><code>fn <a href='#method.insert' class='fnname'>insert</a>(&amp;self, request: <a class='struct' href='../google_admin1_directory/struct.Role.html' title='google_admin1_directory::Role'>Role</a>, customer: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_admin1_directory/struct.RoleInsertCall.html' title='google_admin1_directory::RoleInsertCall'>RoleInsertCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.insert' class='method'><code>fn <a href='#method.insert' class='fnname'>insert</a>(&amp;self, request: <a class='struct' href='../google_admin1_directory/struct.Role.html' title='google_admin1_directory::Role'>Role</a>, customer: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_admin1_directory/struct.RoleInsertCall.html' title='google_admin1_directory::RoleInsertCall'>RoleInsertCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Creates a role.</p>
@@ -127,7 +127,7 @@ It is not used directly, but through the <code>Directory</code> hub.</p>
 <li><code>request</code> - No description provided.</li>
 <li><code>customer</code> - Immutable ID of the Google Apps account.</li>
 </ul>
-</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self, customer: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_admin1_directory/struct.RoleListCall.html' title='google_admin1_directory::RoleListCall'>RoleListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self, customer: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_admin1_directory/struct.RoleListCall.html' title='google_admin1_directory::RoleListCall'>RoleListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Retrieves a paginated list of all the roles in a domain.</p>
@@ -136,7 +136,7 @@ It is not used directly, but through the <code>Directory</code> hub.</p>
 <ul>
 <li><code>customer</code> - Immutable id of the Google Apps account.</li>
 </ul>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_admin1_directory/trait.MethodsBuilder.html' title='google_admin1_directory::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_admin1_directory/struct.RoleMethods.html' title='google_admin1_directory::RoleMethods'>RoleMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-12485' class='srclink' href='../src/google_admin1_directory/home/byron/dev/rust/google-apis-rs/target/debug/build/google-admin1_directory-a39c9338e60059e5/out/lib.rs.html#28669' title='goto source code'>[src]</a></span></h3>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='trait' href='../google_admin1_directory/trait.MethodsBuilder.html' title='google_admin1_directory::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_admin1_directory/struct.RoleMethods.html' title='google_admin1_directory::RoleMethods'>RoleMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-11702' class='srclink' href='../src/google_admin1_directory/home/byron/dev/rust/google-apis-rs/target/debug/build/google-admin1_directory-9f6fa564a6722c32/out/lib.rs.html#22463' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 

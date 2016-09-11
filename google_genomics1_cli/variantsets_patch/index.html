@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Patch - genomics v0.3.6+20160407</title>
+  <title>Patch - genomics v0.3.6+20160905</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -32,7 +32,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> genomics v0.3.6+20160407</a>
+        <a href=".." class="icon icon-home"> genomics v0.3.6+20160905</a>
         
       </div>
 
@@ -428,7 +428,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">genomics v0.3.6+20160407</a>
+        <a href="..">genomics v0.3.6+20160905</a>
       </nav>
 
       
@@ -477,22 +477,32 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <p>For example, a structure like this:</p>
 <pre><code>VariantSet:
   dataset-id: string
+  description: string
   id: string
+  name: string
   reference-set-id: string
 
 </code></pre>
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    dataset-id=sed</code><ul>
+<li><code>-r .    dataset-id=justo</code><ul>
 <li>The dataset to which this variant set belongs.</li>
 </ul>
 </li>
-<li><code>id=et</code><ul>
+<li><code>description=dolore</code><ul>
+<li>A textual description of this variant set.</li>
+</ul>
+</li>
+<li><code>id=vero</code><ul>
 <li>The server-generated variant set ID, unique across all variant sets.</li>
 </ul>
 </li>
-<li><code>reference-set-id=ipsum</code><ul>
+<li><code>name=dolor</code><ul>
+<li>User-specified, mutable name.</li>
+</ul>
+</li>
+<li><code>reference-set-id=takimata</code><ul>
 <li>The reference set to which the variant set is mapped. The reference set describes the alignment provenance of the variant set, while the <code>referenceBounds</code> describe the shape of the actual variant data. The reference set&#39;s reference names are a superset of those found in the <code>referenceBounds</code>. For example, given a variant set that is mapped to the GRCh38 reference set and contains a single variant on reference &#39;X&#39;, <code>referenceBounds</code> would contain only an entry for &#39;X&#39;, while the associated reference set enumerates all possible references: &#39;1&#39;, &#39;2&#39;, &#39;X&#39;, &#39;Y&#39;, &#39;MT&#39;, etc.</li>
 </ul>
 </li>
@@ -522,7 +532,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li><strong>-p update-mask=string</strong><ul>
-<li>An optional mask specifying which fields to update. Supported fields: * metadata. Leaving <code>updateMask</code> unset is equivalent to specifying all mutable fields.</li>
+<li>An optional mask specifying which fields to update. Supported fields: * metadata. * name. * description. Leaving <code>updateMask</code> unset is equivalent to specifying all mutable fields.</li>
 </ul>
 </li>
 </ul>
@@ -652,7 +662,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 
 <!--
 MkDocs version  : 0.12.2
-Docs Build Date : 2016-07-23 16:06:01.206060
+Docs Build Date : 2016-09-11 17:55:58.995725
 -->
 </body>
 </html>

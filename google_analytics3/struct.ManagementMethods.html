@@ -47,8 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-21647' class='srclink' href='../src/google_analytics3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-analytics3-43d6fcd1d409634f/out/lib.rs.html#47587-47589' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct ManagementMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
+               </span><a id='src-21576' class='srclink' href='../src/google_analytics3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-analytics3-c434b42299c52e5e/out/lib.rs.html#38788-38790' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct ManagementMethods&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>management</em> resources.
 It is not used directly, but through the <code>Analytics</code> hub.</p>
@@ -71,11 +71,11 @@ It is not used directly, but through the <code>Analytics</code> hub.</p>
                               <span class='op'>&lt;</span><span class='ident'>MemoryStorage</span> <span class='kw'>as</span> <span class='ident'>Default</span><span class='op'>&gt;</span>::<span class='ident'>default</span>(), <span class='prelude-val'>None</span>);
 <span class='kw'>let</span> <span class='kw-2'>mut</span> <span class='ident'>hub</span> <span class='op'>=</span> <span class='ident'>Analytics</span>::<span class='ident'>new</span>(<span class='ident'>hyper</span>::<span class='ident'>Client</span>::<span class='ident'>new</span>(), <span class='ident'>auth</span>);
 <span class='comment'>// Usually you wouldn&#39;t bind this to a variable, but keep calling *CallBuilders*</span>
-<span class='comment'>// like `account_summaries_list(...)`, `account_user_links_delete(...)`, `account_user_links_insert(...)`, `account_user_links_list(...)`, `account_user_links_update(...)`, `accounts_list(...)`, `custom_data_sources_list(...)`, `custom_dimensions_get(...)`, `custom_dimensions_insert(...)`, `custom_dimensions_list(...)`, `custom_dimensions_patch(...)`, `custom_dimensions_update(...)`, `custom_metrics_get(...)`, `custom_metrics_insert(...)`, `custom_metrics_list(...)`, `custom_metrics_patch(...)`, `custom_metrics_update(...)`, `experiments_delete(...)`, `experiments_get(...)`, `experiments_insert(...)`, `experiments_list(...)`, `experiments_patch(...)`, `experiments_update(...)`, `filters_delete(...)`, `filters_get(...)`, `filters_insert(...)`, `filters_list(...)`, `filters_patch(...)`, `filters_update(...)`, `goals_get(...)`, `goals_insert(...)`, `goals_list(...)`, `goals_patch(...)`, `goals_update(...)`, `profile_filter_links_delete(...)`, `profile_filter_links_get(...)`, `profile_filter_links_insert(...)`, `profile_filter_links_list(...)`, `profile_filter_links_patch(...)`, `profile_filter_links_update(...)`, `profile_user_links_delete(...)`, `profile_user_links_insert(...)`, `profile_user_links_list(...)`, `profile_user_links_update(...)`, `profiles_delete(...)`, `profiles_get(...)`, `profiles_insert(...)`, `profiles_list(...)`, `profiles_patch(...)`, `profiles_update(...)`, `segments_list(...)`, `unsampled_reports_delete(...)`, `unsampled_reports_get(...)`, `unsampled_reports_insert(...)`, `unsampled_reports_list(...)`, `uploads_delete_upload_data(...)`, `uploads_get(...)`, `uploads_list(...)`, `uploads_upload_data(...)`, `web_property_ad_words_links_delete(...)`, `web_property_ad_words_links_get(...)`, `web_property_ad_words_links_insert(...)`, `web_property_ad_words_links_list(...)`, `web_property_ad_words_links_patch(...)`, `web_property_ad_words_links_update(...)`, `webproperties_get(...)`, `webproperties_insert(...)`, `webproperties_list(...)`, `webproperties_patch(...)`, `webproperties_update(...)`, `webproperty_user_links_delete(...)`, `webproperty_user_links_insert(...)`, `webproperty_user_links_list(...)` and `webproperty_user_links_update(...)`</span>
+<span class='comment'>// like `account_summaries_list(...)`, `account_user_links_delete(...)`, `account_user_links_insert(...)`, `account_user_links_list(...)`, `account_user_links_update(...)`, `accounts_list(...)`, `custom_data_sources_list(...)`, `custom_dimensions_get(...)`, `custom_dimensions_insert(...)`, `custom_dimensions_list(...)`, `custom_dimensions_patch(...)`, `custom_dimensions_update(...)`, `custom_metrics_get(...)`, `custom_metrics_insert(...)`, `custom_metrics_list(...)`, `custom_metrics_patch(...)`, `custom_metrics_update(...)`, `experiments_delete(...)`, `experiments_get(...)`, `experiments_insert(...)`, `experiments_list(...)`, `experiments_patch(...)`, `experiments_update(...)`, `filters_delete(...)`, `filters_get(...)`, `filters_insert(...)`, `filters_list(...)`, `filters_patch(...)`, `filters_update(...)`, `goals_get(...)`, `goals_insert(...)`, `goals_list(...)`, `goals_patch(...)`, `goals_update(...)`, `profile_filter_links_delete(...)`, `profile_filter_links_get(...)`, `profile_filter_links_insert(...)`, `profile_filter_links_list(...)`, `profile_filter_links_patch(...)`, `profile_filter_links_update(...)`, `profile_user_links_delete(...)`, `profile_user_links_insert(...)`, `profile_user_links_list(...)`, `profile_user_links_update(...)`, `profiles_delete(...)`, `profiles_get(...)`, `profiles_insert(...)`, `profiles_list(...)`, `profiles_patch(...)`, `profiles_update(...)`, `remarketing_audience_get(...)`, `remarketing_audience_insert(...)`, `remarketing_audience_list(...)`, `remarketing_audience_patch(...)`, `remarketing_audience_update(...)`, `segments_list(...)`, `unsampled_reports_delete(...)`, `unsampled_reports_get(...)`, `unsampled_reports_insert(...)`, `unsampled_reports_list(...)`, `uploads_delete_upload_data(...)`, `uploads_get(...)`, `uploads_list(...)`, `uploads_upload_data(...)`, `web_property_ad_words_links_delete(...)`, `web_property_ad_words_links_get(...)`, `web_property_ad_words_links_insert(...)`, `web_property_ad_words_links_list(...)`, `web_property_ad_words_links_patch(...)`, `web_property_ad_words_links_update(...)`, `webproperties_get(...)`, `webproperties_insert(...)`, `webproperties_list(...)`, `webproperties_patch(...)`, `webproperties_update(...)`, `webproperty_user_links_delete(...)`, `webproperty_user_links_insert(...)`, `webproperty_user_links_list(...)` and `webproperty_user_links_update(...)`</span>
 <span class='comment'>// to build up your call.</span>
 <span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>management</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_analytics3/struct.ManagementMethods.html' title='google_analytics3::ManagementMethods'>ManagementMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-21656' class='srclink' href='../src/google_analytics3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-analytics3-43d6fcd1d409634f/out/lib.rs.html#47591-49322' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.webproperties_insert' class='method'><code>fn <a href='#method.webproperties_insert' class='fnname'>webproperties_insert</a>(&amp;self, request: <a class='struct' href='../google_analytics3/struct.Webproperty.html' title='google_analytics3::Webproperty'>Webproperty</a>, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementWebpropertyInsertCall.html' title='google_analytics3::ManagementWebpropertyInsertCall'>ManagementWebpropertyInsertCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='struct' href='../google_analytics3/struct.ManagementMethods.html' title='google_analytics3::ManagementMethods'>ManagementMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-21585' class='srclink' href='../src/google_analytics3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-analytics3-c434b42299c52e5e/out/lib.rs.html#38792-40653' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.webproperties_insert' class='method'><code>fn <a href='#method.webproperties_insert' class='fnname'>webproperties_insert</a>(&amp;self, request: <a class='struct' href='../google_analytics3/struct.Webproperty.html' title='google_analytics3::Webproperty'>Webproperty</a>, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementWebpropertyInsertCall.html' title='google_analytics3::ManagementWebpropertyInsertCall'>ManagementWebpropertyInsertCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Create a new property if the account has fewer than 20 properties. Web properties are visible in the Google Analytics interface only if they have at least one profile.</p>
@@ -85,7 +85,7 @@ It is not used directly, but through the <code>Analytics</code> hub.</p>
 <li><code>request</code> - No description provided.</li>
 <li><code>accountId</code> - Account ID to create the web property for.</li>
 </ul>
-</div><h4 id='method.profiles_get' class='method'><code>fn <a href='#method.profiles_get' class='fnname'>profiles_get</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementProfileGetCall.html' title='google_analytics3::ManagementProfileGetCall'>ManagementProfileGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.profiles_get' class='method'><code>fn <a href='#method.profiles_get' class='fnname'>profiles_get</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementProfileGetCall.html' title='google_analytics3::ManagementProfileGetCall'>ManagementProfileGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Gets a view (profile) to which the user has access.</p>
@@ -96,11 +96,11 @@ It is not used directly, but through the <code>Analytics</code> hub.</p>
 <li><code>webPropertyId</code> - Web property ID to retrieve the view (profile) for.</li>
 <li><code>profileId</code> - View (Profile) ID to retrieve the view (profile) for.</li>
 </ul>
-</div><h4 id='method.accounts_list' class='method'><code>fn <a href='#method.accounts_list' class='fnname'>accounts_list</a>(&amp;self) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementAccountListCall.html' title='google_analytics3::ManagementAccountListCall'>ManagementAccountListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.accounts_list' class='method'><code>fn <a href='#method.accounts_list' class='fnname'>accounts_list</a>(&amp;self) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementAccountListCall.html' title='google_analytics3::ManagementAccountListCall'>ManagementAccountListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Lists all accounts to which the user has access.</p>
-</div><h4 id='method.profile_filter_links_patch' class='method'><code>fn <a href='#method.profile_filter_links_patch' class='fnname'>profile_filter_links_patch</a>(&amp;self, request: <a class='struct' href='../google_analytics3/struct.ProfileFilterLink.html' title='google_analytics3::ProfileFilterLink'>ProfileFilterLink</a>, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, link_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementProfileFilterLinkPatchCall.html' title='google_analytics3::ManagementProfileFilterLinkPatchCall'>ManagementProfileFilterLinkPatchCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.profile_filter_links_patch' class='method'><code>fn <a href='#method.profile_filter_links_patch' class='fnname'>profile_filter_links_patch</a>(&amp;self, request: <a class='struct' href='../google_analytics3/struct.ProfileFilterLink.html' title='google_analytics3::ProfileFilterLink'>ProfileFilterLink</a>, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, link_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementProfileFilterLinkPatchCall.html' title='google_analytics3::ManagementProfileFilterLinkPatchCall'>ManagementProfileFilterLinkPatchCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Update an existing profile filter link. This method supports patch semantics.</p>
@@ -113,7 +113,7 @@ It is not used directly, but through the <code>Analytics</code> hub.</p>
 <li><code>profileId</code> - Profile ID to which filter link belongs</li>
 <li><code>linkId</code> - ID of the profile filter link to be updated.</li>
 </ul>
-</div><h4 id='method.webproperty_user_links_delete' class='method'><code>fn <a href='#method.webproperty_user_links_delete' class='fnname'>webproperty_user_links_delete</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, link_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementWebpropertyUserLinkDeleteCall.html' title='google_analytics3::ManagementWebpropertyUserLinkDeleteCall'>ManagementWebpropertyUserLinkDeleteCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.webproperty_user_links_delete' class='method'><code>fn <a href='#method.webproperty_user_links_delete' class='fnname'>webproperty_user_links_delete</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, link_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementWebpropertyUserLinkDeleteCall.html' title='google_analytics3::ManagementWebpropertyUserLinkDeleteCall'>ManagementWebpropertyUserLinkDeleteCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Removes a user from the given web property.</p>
@@ -124,7 +124,7 @@ It is not used directly, but through the <code>Analytics</code> hub.</p>
 <li><code>webPropertyId</code> - Web Property ID to delete the user link for.</li>
 <li><code>linkId</code> - Link ID to delete the user link for.</li>
 </ul>
-</div><h4 id='method.profile_user_links_delete' class='method'><code>fn <a href='#method.profile_user_links_delete' class='fnname'>profile_user_links_delete</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, link_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementProfileUserLinkDeleteCall.html' title='google_analytics3::ManagementProfileUserLinkDeleteCall'>ManagementProfileUserLinkDeleteCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.profile_user_links_delete' class='method'><code>fn <a href='#method.profile_user_links_delete' class='fnname'>profile_user_links_delete</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, link_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementProfileUserLinkDeleteCall.html' title='google_analytics3::ManagementProfileUserLinkDeleteCall'>ManagementProfileUserLinkDeleteCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Removes a user from the given view (profile).</p>
@@ -136,7 +136,7 @@ It is not used directly, but through the <code>Analytics</code> hub.</p>
 <li><code>profileId</code> - View (Profile) ID to delete the user link for.</li>
 <li><code>linkId</code> - Link ID to delete the user link for.</li>
 </ul>
-</div><h4 id='method.profile_user_links_update' class='method'><code>fn <a href='#method.profile_user_links_update' class='fnname'>profile_user_links_update</a>(&amp;self, request: <a class='struct' href='../google_analytics3/struct.EntityUserLink.html' title='google_analytics3::EntityUserLink'>EntityUserLink</a>, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, link_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementProfileUserLinkUpdateCall.html' title='google_analytics3::ManagementProfileUserLinkUpdateCall'>ManagementProfileUserLinkUpdateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.profile_user_links_update' class='method'><code>fn <a href='#method.profile_user_links_update' class='fnname'>profile_user_links_update</a>(&amp;self, request: <a class='struct' href='../google_analytics3/struct.EntityUserLink.html' title='google_analytics3::EntityUserLink'>EntityUserLink</a>, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, link_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementProfileUserLinkUpdateCall.html' title='google_analytics3::ManagementProfileUserLinkUpdateCall'>ManagementProfileUserLinkUpdateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Updates permissions for an existing user on the given view (profile).</p>
@@ -149,7 +149,7 @@ It is not used directly, but through the <code>Analytics</code> hub.</p>
 <li><code>profileId</code> - View (Profile ID) to update the user link for.</li>
 <li><code>linkId</code> - Link ID to update the user link for.</li>
 </ul>
-</div><h4 id='method.filters_insert' class='method'><code>fn <a href='#method.filters_insert' class='fnname'>filters_insert</a>(&amp;self, request: <a class='struct' href='../google_analytics3/struct.Filter.html' title='google_analytics3::Filter'>Filter</a>, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementFilterInsertCall.html' title='google_analytics3::ManagementFilterInsertCall'>ManagementFilterInsertCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.filters_insert' class='method'><code>fn <a href='#method.filters_insert' class='fnname'>filters_insert</a>(&amp;self, request: <a class='struct' href='../google_analytics3/struct.Filter.html' title='google_analytics3::Filter'>Filter</a>, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementFilterInsertCall.html' title='google_analytics3::ManagementFilterInsertCall'>ManagementFilterInsertCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Create a new filter.</p>
@@ -159,7 +159,7 @@ It is not used directly, but through the <code>Analytics</code> hub.</p>
 <li><code>request</code> - No description provided.</li>
 <li><code>accountId</code> - Account ID to create filter for.</li>
 </ul>
-</div><h4 id='method.account_user_links_update' class='method'><code>fn <a href='#method.account_user_links_update' class='fnname'>account_user_links_update</a>(&amp;self, request: <a class='struct' href='../google_analytics3/struct.EntityUserLink.html' title='google_analytics3::EntityUserLink'>EntityUserLink</a>, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, link_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementAccountUserLinkUpdateCall.html' title='google_analytics3::ManagementAccountUserLinkUpdateCall'>ManagementAccountUserLinkUpdateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.account_user_links_update' class='method'><code>fn <a href='#method.account_user_links_update' class='fnname'>account_user_links_update</a>(&amp;self, request: <a class='struct' href='../google_analytics3/struct.EntityUserLink.html' title='google_analytics3::EntityUserLink'>EntityUserLink</a>, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, link_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementAccountUserLinkUpdateCall.html' title='google_analytics3::ManagementAccountUserLinkUpdateCall'>ManagementAccountUserLinkUpdateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Updates permissions for an existing user on the given account.</p>
@@ -170,18 +170,19 @@ It is not used directly, but through the <code>Analytics</code> hub.</p>
 <li><code>accountId</code> - Account ID to update the account-user link for.</li>
 <li><code>linkId</code> - Link ID to update the account-user link for.</li>
 </ul>
-</div><h4 id='method.webproperties_update' class='method'><code>fn <a href='#method.webproperties_update' class='fnname'>webproperties_update</a>(&amp;self, request: <a class='struct' href='../google_analytics3/struct.Webproperty.html' title='google_analytics3::Webproperty'>Webproperty</a>, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementWebpropertyUpdateCall.html' title='google_analytics3::ManagementWebpropertyUpdateCall'>ManagementWebpropertyUpdateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.profile_filter_links_get' class='method'><code>fn <a href='#method.profile_filter_links_get' class='fnname'>profile_filter_links_get</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, link_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementProfileFilterLinkGetCall.html' title='google_analytics3::ManagementProfileFilterLinkGetCall'>ManagementProfileFilterLinkGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>Updates an existing web property.</p>
+<p>Returns a single profile filter link.</p>
 
 <h1 id='arguments-8' class='section-header'><a href='#arguments-8'>Arguments</a></h1>
 <ul>
-<li><code>request</code> - No description provided.</li>
-<li><code>accountId</code> - Account ID to which the web property belongs</li>
-<li><code>webPropertyId</code> - Web property ID</li>
+<li><code>accountId</code> - Account ID to retrieve profile filter link for.</li>
+<li><code>webPropertyId</code> - Web property Id to retrieve profile filter link for.</li>
+<li><code>profileId</code> - Profile ID to retrieve filter link for.</li>
+<li><code>linkId</code> - ID of the profile filter link.</li>
 </ul>
-</div><h4 id='method.webproperty_user_links_update' class='method'><code>fn <a href='#method.webproperty_user_links_update' class='fnname'>webproperty_user_links_update</a>(&amp;self, request: <a class='struct' href='../google_analytics3/struct.EntityUserLink.html' title='google_analytics3::EntityUserLink'>EntityUserLink</a>, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, link_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementWebpropertyUserLinkUpdateCall.html' title='google_analytics3::ManagementWebpropertyUserLinkUpdateCall'>ManagementWebpropertyUserLinkUpdateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.webproperty_user_links_update' class='method'><code>fn <a href='#method.webproperty_user_links_update' class='fnname'>webproperty_user_links_update</a>(&amp;self, request: <a class='struct' href='../google_analytics3/struct.EntityUserLink.html' title='google_analytics3::EntityUserLink'>EntityUserLink</a>, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, link_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementWebpropertyUserLinkUpdateCall.html' title='google_analytics3::ManagementWebpropertyUserLinkUpdateCall'>ManagementWebpropertyUserLinkUpdateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Updates permissions for an existing user on the given web property.</p>
@@ -193,7 +194,7 @@ It is not used directly, but through the <code>Analytics</code> hub.</p>
 <li><code>webPropertyId</code> - Web property ID to update the account-user link for.</li>
 <li><code>linkId</code> - Link ID to update the account-user link for.</li>
 </ul>
-</div><h4 id='method.unsampled_reports_insert' class='method'><code>fn <a href='#method.unsampled_reports_insert' class='fnname'>unsampled_reports_insert</a>(&amp;self, request: <a class='struct' href='../google_analytics3/struct.UnsampledReport.html' title='google_analytics3::UnsampledReport'>UnsampledReport</a>, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementUnsampledReportInsertCall.html' title='google_analytics3::ManagementUnsampledReportInsertCall'>ManagementUnsampledReportInsertCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.unsampled_reports_insert' class='method'><code>fn <a href='#method.unsampled_reports_insert' class='fnname'>unsampled_reports_insert</a>(&amp;self, request: <a class='struct' href='../google_analytics3/struct.UnsampledReport.html' title='google_analytics3::UnsampledReport'>UnsampledReport</a>, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementUnsampledReportInsertCall.html' title='google_analytics3::ManagementUnsampledReportInsertCall'>ManagementUnsampledReportInsertCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Create a new unsampled report.</p>
@@ -205,56 +206,82 @@ It is not used directly, but through the <code>Analytics</code> hub.</p>
 <li><code>webPropertyId</code> - Web property ID to create the unsampled report for.</li>
 <li><code>profileId</code> - View (Profile) ID to create the unsampled report for.</li>
 </ul>
-</div><h4 id='method.custom_metrics_get' class='method'><code>fn <a href='#method.custom_metrics_get' class='fnname'>custom_metrics_get</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, custom_metric_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementCustomMetricGetCall.html' title='google_analytics3::ManagementCustomMetricGetCall'>ManagementCustomMetricGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.profile_filter_links_delete' class='method'><code>fn <a href='#method.profile_filter_links_delete' class='fnname'>profile_filter_links_delete</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, link_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementProfileFilterLinkDeleteCall.html' title='google_analytics3::ManagementProfileFilterLinkDeleteCall'>ManagementProfileFilterLinkDeleteCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Delete a profile filter link.</p>
+
+<h1 id='arguments-11' class='section-header'><a href='#arguments-11'>Arguments</a></h1>
+<ul>
+<li><code>accountId</code> - Account ID to which the profile filter link belongs.</li>
+<li><code>webPropertyId</code> - Web property Id to which the profile filter link belongs.</li>
+<li><code>profileId</code> - Profile ID to which the filter link belongs.</li>
+<li><code>linkId</code> - ID of the profile filter link to delete.</li>
+</ul>
+</div><h4 id='method.remarketing_audience_update' class='method'><code>fn <a href='#method.remarketing_audience_update' class='fnname'>remarketing_audience_update</a>(&amp;self, request: <a class='struct' href='../google_analytics3/struct.RemarketingAudience.html' title='google_analytics3::RemarketingAudience'>RemarketingAudience</a>, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, remarketing_audience_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementRemarketingAudienceUpdateCall.html' title='google_analytics3::ManagementRemarketingAudienceUpdateCall'>ManagementRemarketingAudienceUpdateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Updates an existing remarketing audiences.</p>
+
+<h1 id='arguments-12' class='section-header'><a href='#arguments-12'>Arguments</a></h1>
+<ul>
+<li><code>request</code> - No description provided.</li>
+<li><code>accountId</code> - Account ID for the remarketing audience to update.</li>
+<li><code>webPropertyId</code> - Web property ID for the remarketing audience to update.</li>
+<li><code>remarketingAudienceId</code> - Remarketing audience ID of the remarketing audience to update.</li>
+</ul>
+</div><h4 id='method.custom_metrics_get' class='method'><code>fn <a href='#method.custom_metrics_get' class='fnname'>custom_metrics_get</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, custom_metric_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementCustomMetricGetCall.html' title='google_analytics3::ManagementCustomMetricGetCall'>ManagementCustomMetricGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Get a custom metric to which the user has access.</p>
 
-<h1 id='arguments-11' class='section-header'><a href='#arguments-11'>Arguments</a></h1>
+<h1 id='arguments-13' class='section-header'><a href='#arguments-13'>Arguments</a></h1>
 <ul>
 <li><code>accountId</code> - Account ID for the custom metric to retrieve.</li>
 <li><code>webPropertyId</code> - Web property ID for the custom metric to retrieve.</li>
 <li><code>customMetricId</code> - The ID of the custom metric to retrieve.</li>
 </ul>
-</div><h4 id='method.uploads_get' class='method'><code>fn <a href='#method.uploads_get' class='fnname'>uploads_get</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, custom_data_source_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, upload_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementUploadGetCall.html' title='google_analytics3::ManagementUploadGetCall'>ManagementUploadGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.uploads_get' class='method'><code>fn <a href='#method.uploads_get' class='fnname'>uploads_get</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, custom_data_source_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, upload_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementUploadGetCall.html' title='google_analytics3::ManagementUploadGetCall'>ManagementUploadGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>List uploads to which the user has access.</p>
 
-<h1 id='arguments-12' class='section-header'><a href='#arguments-12'>Arguments</a></h1>
+<h1 id='arguments-14' class='section-header'><a href='#arguments-14'>Arguments</a></h1>
 <ul>
 <li><code>accountId</code> - Account Id for the upload to retrieve.</li>
 <li><code>webPropertyId</code> - Web property Id for the upload to retrieve.</li>
 <li><code>customDataSourceId</code> - Custom data source Id for upload to retrieve.</li>
 <li><code>uploadId</code> - Upload Id to retrieve.</li>
 </ul>
-</div><h4 id='method.web_property_ad_words_links_get' class='method'><code>fn <a href='#method.web_property_ad_words_links_get' class='fnname'>web_property_ad_words_links_get</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_ad_words_link_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementWebPropertyAdWordsLinkGetCall.html' title='google_analytics3::ManagementWebPropertyAdWordsLinkGetCall'>ManagementWebPropertyAdWordsLinkGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.experiments_patch' class='method'><code>fn <a href='#method.experiments_patch' class='fnname'>experiments_patch</a>(&amp;self, request: <a class='struct' href='../google_analytics3/struct.Experiment.html' title='google_analytics3::Experiment'>Experiment</a>, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, experiment_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementExperimentPatchCall.html' title='google_analytics3::ManagementExperimentPatchCall'>ManagementExperimentPatchCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>Returns a web property-AdWords link to which the user has access.</p>
+<p>Update an existing experiment. This method supports patch semantics.</p>
 
-<h1 id='arguments-13' class='section-header'><a href='#arguments-13'>Arguments</a></h1>
+<h1 id='arguments-15' class='section-header'><a href='#arguments-15'>Arguments</a></h1>
 <ul>
-<li><code>accountId</code> - ID of the account which the given web property belongs to.</li>
-<li><code>webPropertyId</code> - Web property ID to retrieve the AdWords link for.</li>
-<li><code>webPropertyAdWordsLinkId</code> - Web property-AdWords link ID.</li>
+<li><code>request</code> - No description provided.</li>
+<li><code>accountId</code> - Account ID of the experiment to update.</li>
+<li><code>webPropertyId</code> - Web property ID of the experiment to update.</li>
+<li><code>profileId</code> - View (Profile) ID of the experiment to update.</li>
+<li><code>experimentId</code> - Experiment ID of the experiment to update.</li>
 </ul>
-</div><h4 id='method.webproperty_user_links_list' class='method'><code>fn <a href='#method.webproperty_user_links_list' class='fnname'>webproperty_user_links_list</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementWebpropertyUserLinkListCall.html' title='google_analytics3::ManagementWebpropertyUserLinkListCall'>ManagementWebpropertyUserLinkListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.webproperty_user_links_list' class='method'><code>fn <a href='#method.webproperty_user_links_list' class='fnname'>webproperty_user_links_list</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementWebpropertyUserLinkListCall.html' title='google_analytics3::ManagementWebpropertyUserLinkListCall'>ManagementWebpropertyUserLinkListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Lists webProperty-user links for a given web property.</p>
 
-<h1 id='arguments-14' class='section-header'><a href='#arguments-14'>Arguments</a></h1>
+<h1 id='arguments-16' class='section-header'><a href='#arguments-16'>Arguments</a></h1>
 <ul>
 <li><code>accountId</code> - Account ID which the given web property belongs to.</li>
 <li><code>webPropertyId</code> - Web Property ID for the webProperty-user links to retrieve. Can either be a specific web property ID or &#39;~all&#39;, which refers to all the web properties that user has access to.</li>
 </ul>
-</div><h4 id='method.profile_filter_links_update' class='method'><code>fn <a href='#method.profile_filter_links_update' class='fnname'>profile_filter_links_update</a>(&amp;self, request: <a class='struct' href='../google_analytics3/struct.ProfileFilterLink.html' title='google_analytics3::ProfileFilterLink'>ProfileFilterLink</a>, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, link_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementProfileFilterLinkUpdateCall.html' title='google_analytics3::ManagementProfileFilterLinkUpdateCall'>ManagementProfileFilterLinkUpdateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.profile_filter_links_update' class='method'><code>fn <a href='#method.profile_filter_links_update' class='fnname'>profile_filter_links_update</a>(&amp;self, request: <a class='struct' href='../google_analytics3/struct.ProfileFilterLink.html' title='google_analytics3::ProfileFilterLink'>ProfileFilterLink</a>, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, link_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementProfileFilterLinkUpdateCall.html' title='google_analytics3::ManagementProfileFilterLinkUpdateCall'>ManagementProfileFilterLinkUpdateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Update an existing profile filter link.</p>
 
-<h1 id='arguments-15' class='section-header'><a href='#arguments-15'>Arguments</a></h1>
+<h1 id='arguments-17' class='section-header'><a href='#arguments-17'>Arguments</a></h1>
 <ul>
 <li><code>request</code> - No description provided.</li>
 <li><code>accountId</code> - Account ID to which profile filter link belongs.</li>
@@ -262,632 +289,661 @@ It is not used directly, but through the <code>Analytics</code> hub.</p>
 <li><code>profileId</code> - Profile ID to which filter link belongs</li>
 <li><code>linkId</code> - ID of the profile filter link to be updated.</li>
 </ul>
-</div><h4 id='method.experiments_get' class='method'><code>fn <a href='#method.experiments_get' class='fnname'>experiments_get</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, experiment_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementExperimentGetCall.html' title='google_analytics3::ManagementExperimentGetCall'>ManagementExperimentGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.experiments_get' class='method'><code>fn <a href='#method.experiments_get' class='fnname'>experiments_get</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, experiment_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementExperimentGetCall.html' title='google_analytics3::ManagementExperimentGetCall'>ManagementExperimentGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Returns an experiment to which the user has access.</p>
 
-<h1 id='arguments-16' class='section-header'><a href='#arguments-16'>Arguments</a></h1>
+<h1 id='arguments-18' class='section-header'><a href='#arguments-18'>Arguments</a></h1>
 <ul>
 <li><code>accountId</code> - Account ID to retrieve the experiment for.</li>
 <li><code>webPropertyId</code> - Web property ID to retrieve the experiment for.</li>
 <li><code>profileId</code> - View (Profile) ID to retrieve the experiment for.</li>
 <li><code>experimentId</code> - Experiment ID to retrieve the experiment for.</li>
 </ul>
-</div><h4 id='method.custom_dimensions_update' class='method'><code>fn <a href='#method.custom_dimensions_update' class='fnname'>custom_dimensions_update</a>(&amp;self, request: <a class='struct' href='../google_analytics3/struct.CustomDimension.html' title='google_analytics3::CustomDimension'>CustomDimension</a>, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, custom_dimension_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementCustomDimensionUpdateCall.html' title='google_analytics3::ManagementCustomDimensionUpdateCall'>ManagementCustomDimensionUpdateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.custom_dimensions_update' class='method'><code>fn <a href='#method.custom_dimensions_update' class='fnname'>custom_dimensions_update</a>(&amp;self, request: <a class='struct' href='../google_analytics3/struct.CustomDimension.html' title='google_analytics3::CustomDimension'>CustomDimension</a>, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, custom_dimension_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementCustomDimensionUpdateCall.html' title='google_analytics3::ManagementCustomDimensionUpdateCall'>ManagementCustomDimensionUpdateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Updates an existing custom dimension.</p>
 
-<h1 id='arguments-17' class='section-header'><a href='#arguments-17'>Arguments</a></h1>
+<h1 id='arguments-19' class='section-header'><a href='#arguments-19'>Arguments</a></h1>
 <ul>
 <li><code>request</code> - No description provided.</li>
 <li><code>accountId</code> - Account ID for the custom dimension to update.</li>
 <li><code>webPropertyId</code> - Web property ID for the custom dimension to update.</li>
 <li><code>customDimensionId</code> - Custom dimension ID for the custom dimension to update.</li>
 </ul>
-</div><h4 id='method.unsampled_reports_get' class='method'><code>fn <a href='#method.unsampled_reports_get' class='fnname'>unsampled_reports_get</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, unsampled_report_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementUnsampledReportGetCall.html' title='google_analytics3::ManagementUnsampledReportGetCall'>ManagementUnsampledReportGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.unsampled_reports_get' class='method'><code>fn <a href='#method.unsampled_reports_get' class='fnname'>unsampled_reports_get</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, unsampled_report_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementUnsampledReportGetCall.html' title='google_analytics3::ManagementUnsampledReportGetCall'>ManagementUnsampledReportGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Returns a single unsampled report.</p>
 
-<h1 id='arguments-18' class='section-header'><a href='#arguments-18'>Arguments</a></h1>
+<h1 id='arguments-20' class='section-header'><a href='#arguments-20'>Arguments</a></h1>
 <ul>
 <li><code>accountId</code> - Account ID to retrieve unsampled report for.</li>
 <li><code>webPropertyId</code> - Web property ID to retrieve unsampled reports for.</li>
 <li><code>profileId</code> - View (Profile) ID to retrieve unsampled report for.</li>
 <li><code>unsampledReportId</code> - ID of the unsampled report to retrieve.</li>
 </ul>
-</div><h4 id='method.profile_filter_links_insert' class='method'><code>fn <a href='#method.profile_filter_links_insert' class='fnname'>profile_filter_links_insert</a>(&amp;self, request: <a class='struct' href='../google_analytics3/struct.ProfileFilterLink.html' title='google_analytics3::ProfileFilterLink'>ProfileFilterLink</a>, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementProfileFilterLinkInsertCall.html' title='google_analytics3::ManagementProfileFilterLinkInsertCall'>ManagementProfileFilterLinkInsertCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.profile_filter_links_insert' class='method'><code>fn <a href='#method.profile_filter_links_insert' class='fnname'>profile_filter_links_insert</a>(&amp;self, request: <a class='struct' href='../google_analytics3/struct.ProfileFilterLink.html' title='google_analytics3::ProfileFilterLink'>ProfileFilterLink</a>, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementProfileFilterLinkInsertCall.html' title='google_analytics3::ManagementProfileFilterLinkInsertCall'>ManagementProfileFilterLinkInsertCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Create a new profile filter link.</p>
 
-<h1 id='arguments-19' class='section-header'><a href='#arguments-19'>Arguments</a></h1>
+<h1 id='arguments-21' class='section-header'><a href='#arguments-21'>Arguments</a></h1>
 <ul>
 <li><code>request</code> - No description provided.</li>
 <li><code>accountId</code> - Account ID to create profile filter link for.</li>
 <li><code>webPropertyId</code> - Web property Id to create profile filter link for.</li>
 <li><code>profileId</code> - Profile ID to create filter link for.</li>
 </ul>
-</div><h4 id='method.filters_update' class='method'><code>fn <a href='#method.filters_update' class='fnname'>filters_update</a>(&amp;self, request: <a class='struct' href='../google_analytics3/struct.Filter.html' title='google_analytics3::Filter'>Filter</a>, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, filter_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementFilterUpdateCall.html' title='google_analytics3::ManagementFilterUpdateCall'>ManagementFilterUpdateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.filters_update' class='method'><code>fn <a href='#method.filters_update' class='fnname'>filters_update</a>(&amp;self, request: <a class='struct' href='../google_analytics3/struct.Filter.html' title='google_analytics3::Filter'>Filter</a>, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, filter_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementFilterUpdateCall.html' title='google_analytics3::ManagementFilterUpdateCall'>ManagementFilterUpdateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Updates an existing filter.</p>
 
-<h1 id='arguments-20' class='section-header'><a href='#arguments-20'>Arguments</a></h1>
+<h1 id='arguments-22' class='section-header'><a href='#arguments-22'>Arguments</a></h1>
 <ul>
 <li><code>request</code> - No description provided.</li>
 <li><code>accountId</code> - Account ID to which the filter belongs.</li>
 <li><code>filterId</code> - ID of the filter to be updated.</li>
 </ul>
-</div><h4 id='method.profile_filter_links_delete' class='method'><code>fn <a href='#method.profile_filter_links_delete' class='fnname'>profile_filter_links_delete</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, link_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementProfileFilterLinkDeleteCall.html' title='google_analytics3::ManagementProfileFilterLinkDeleteCall'>ManagementProfileFilterLinkDeleteCall</a>&lt;'a, C, A&gt;</code></h4>
-<div class='docblock'><p>Create a builder to help you perform the following task:</p>
-
-<p>Delete a profile filter link.</p>
-
-<h1 id='arguments-21' class='section-header'><a href='#arguments-21'>Arguments</a></h1>
-<ul>
-<li><code>accountId</code> - Account ID to which the profile filter link belongs.</li>
-<li><code>webPropertyId</code> - Web property Id to which the profile filter link belongs.</li>
-<li><code>profileId</code> - Profile ID to which the filter link belongs.</li>
-<li><code>linkId</code> - ID of the profile filter link to delete.</li>
-</ul>
-</div><h4 id='method.segments_list' class='method'><code>fn <a href='#method.segments_list' class='fnname'>segments_list</a>(&amp;self) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementSegmentListCall.html' title='google_analytics3::ManagementSegmentListCall'>ManagementSegmentListCall</a>&lt;'a, C, A&gt;</code></h4>
-<div class='docblock'><p>Create a builder to help you perform the following task:</p>
-
-<p>Lists segments to which the user has access.</p>
-</div><h4 id='method.profiles_delete' class='method'><code>fn <a href='#method.profiles_delete' class='fnname'>profiles_delete</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementProfileDeleteCall.html' title='google_analytics3::ManagementProfileDeleteCall'>ManagementProfileDeleteCall</a>&lt;'a, C, A&gt;</code></h4>
-<div class='docblock'><p>Create a builder to help you perform the following task:</p>
-
-<p>Deletes a view (profile).</p>
-
-<h1 id='arguments-22' class='section-header'><a href='#arguments-22'>Arguments</a></h1>
-<ul>
-<li><code>accountId</code> - Account ID to delete the view (profile) for.</li>
-<li><code>webPropertyId</code> - Web property ID to delete the view (profile) for.</li>
-<li><code>profileId</code> - ID of the view (profile) to be deleted.</li>
-</ul>
-</div><h4 id='method.goals_patch' class='method'><code>fn <a href='#method.goals_patch' class='fnname'>goals_patch</a>(&amp;self, request: <a class='struct' href='../google_analytics3/struct.Goal.html' title='google_analytics3::Goal'>Goal</a>, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, goal_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementGoalPatchCall.html' title='google_analytics3::ManagementGoalPatchCall'>ManagementGoalPatchCall</a>&lt;'a, C, A&gt;</code></h4>
-<div class='docblock'><p>Create a builder to help you perform the following task:</p>
-
-<p>Updates an existing goal. This method supports patch semantics.</p>
-
-<h1 id='arguments-23' class='section-header'><a href='#arguments-23'>Arguments</a></h1>
-<ul>
-<li><code>request</code> - No description provided.</li>
-<li><code>accountId</code> - Account ID to update the goal.</li>
-<li><code>webPropertyId</code> - Web property ID to update the goal.</li>
-<li><code>profileId</code> - View (Profile) ID to update the goal.</li>
-<li><code>goalId</code> - Index of the goal to be updated.</li>
-</ul>
-</div><h4 id='method.custom_dimensions_patch' class='method'><code>fn <a href='#method.custom_dimensions_patch' class='fnname'>custom_dimensions_patch</a>(&amp;self, request: <a class='struct' href='../google_analytics3/struct.CustomDimension.html' title='google_analytics3::CustomDimension'>CustomDimension</a>, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, custom_dimension_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementCustomDimensionPatchCall.html' title='google_analytics3::ManagementCustomDimensionPatchCall'>ManagementCustomDimensionPatchCall</a>&lt;'a, C, A&gt;</code></h4>
-<div class='docblock'><p>Create a builder to help you perform the following task:</p>
-
-<p>Updates an existing custom dimension. This method supports patch semantics.</p>
-
-<h1 id='arguments-24' class='section-header'><a href='#arguments-24'>Arguments</a></h1>
-<ul>
-<li><code>request</code> - No description provided.</li>
-<li><code>accountId</code> - Account ID for the custom dimension to update.</li>
-<li><code>webPropertyId</code> - Web property ID for the custom dimension to update.</li>
-<li><code>customDimensionId</code> - Custom dimension ID for the custom dimension to update.</li>
-</ul>
-</div><h4 id='method.experiments_patch' class='method'><code>fn <a href='#method.experiments_patch' class='fnname'>experiments_patch</a>(&amp;self, request: <a class='struct' href='../google_analytics3/struct.Experiment.html' title='google_analytics3::Experiment'>Experiment</a>, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, experiment_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementExperimentPatchCall.html' title='google_analytics3::ManagementExperimentPatchCall'>ManagementExperimentPatchCall</a>&lt;'a, C, A&gt;</code></h4>
-<div class='docblock'><p>Create a builder to help you perform the following task:</p>
-
-<p>Update an existing experiment. This method supports patch semantics.</p>
-
-<h1 id='arguments-25' class='section-header'><a href='#arguments-25'>Arguments</a></h1>
-<ul>
-<li><code>request</code> - No description provided.</li>
-<li><code>accountId</code> - Account ID of the experiment to update.</li>
-<li><code>webPropertyId</code> - Web property ID of the experiment to update.</li>
-<li><code>profileId</code> - View (Profile) ID of the experiment to update.</li>
-<li><code>experimentId</code> - Experiment ID of the experiment to update.</li>
-</ul>
-</div><h4 id='method.experiments_list' class='method'><code>fn <a href='#method.experiments_list' class='fnname'>experiments_list</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementExperimentListCall.html' title='google_analytics3::ManagementExperimentListCall'>ManagementExperimentListCall</a>&lt;'a, C, A&gt;</code></h4>
-<div class='docblock'><p>Create a builder to help you perform the following task:</p>
-
-<p>Lists experiments to which the user has access.</p>
-
-<h1 id='arguments-26' class='section-header'><a href='#arguments-26'>Arguments</a></h1>
-<ul>
-<li><code>accountId</code> - Account ID to retrieve experiments for.</li>
-<li><code>webPropertyId</code> - Web property ID to retrieve experiments for.</li>
-<li><code>profileId</code> - View (Profile) ID to retrieve experiments for.</li>
-</ul>
-</div><h4 id='method.profiles_list' class='method'><code>fn <a href='#method.profiles_list' class='fnname'>profiles_list</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementProfileListCall.html' title='google_analytics3::ManagementProfileListCall'>ManagementProfileListCall</a>&lt;'a, C, A&gt;</code></h4>
-<div class='docblock'><p>Create a builder to help you perform the following task:</p>
-
-<p>Lists views (profiles) to which the user has access.</p>
-
-<h1 id='arguments-27' class='section-header'><a href='#arguments-27'>Arguments</a></h1>
-<ul>
-<li><code>accountId</code> - Account ID for the view (profiles) to retrieve. Can either be a specific account ID or &#39;~all&#39;, which refers to all the accounts to which the user has access.</li>
-<li><code>webPropertyId</code> - Web property ID for the views (profiles) to retrieve. Can either be a specific web property ID or &#39;~all&#39;, which refers to all the web properties to which the user has access.</li>
-</ul>
-</div><h4 id='method.goals_list' class='method'><code>fn <a href='#method.goals_list' class='fnname'>goals_list</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementGoalListCall.html' title='google_analytics3::ManagementGoalListCall'>ManagementGoalListCall</a>&lt;'a, C, A&gt;</code></h4>
-<div class='docblock'><p>Create a builder to help you perform the following task:</p>
-
-<p>Lists goals to which the user has access.</p>
-
-<h1 id='arguments-28' class='section-header'><a href='#arguments-28'>Arguments</a></h1>
-<ul>
-<li><code>accountId</code> - Account ID to retrieve goals for. Can either be a specific account ID or &#39;~all&#39;, which refers to all the accounts that user has access to.</li>
-<li><code>webPropertyId</code> - Web property ID to retrieve goals for. Can either be a specific web property ID or &#39;~all&#39;, which refers to all the web properties that user has access to.</li>
-<li><code>profileId</code> - View (Profile) ID to retrieve goals for. Can either be a specific view (profile) ID or &#39;~all&#39;, which refers to all the views (profiles) that user has access to.</li>
-</ul>
-</div><h4 id='method.goals_insert' class='method'><code>fn <a href='#method.goals_insert' class='fnname'>goals_insert</a>(&amp;self, request: <a class='struct' href='../google_analytics3/struct.Goal.html' title='google_analytics3::Goal'>Goal</a>, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementGoalInsertCall.html' title='google_analytics3::ManagementGoalInsertCall'>ManagementGoalInsertCall</a>&lt;'a, C, A&gt;</code></h4>
-<div class='docblock'><p>Create a builder to help you perform the following task:</p>
-
-<p>Create a new goal.</p>
-
-<h1 id='arguments-29' class='section-header'><a href='#arguments-29'>Arguments</a></h1>
-<ul>
-<li><code>request</code> - No description provided.</li>
-<li><code>accountId</code> - Account ID to create the goal for.</li>
-<li><code>webPropertyId</code> - Web property ID to create the goal for.</li>
-<li><code>profileId</code> - View (Profile) ID to create the goal for.</li>
-</ul>
-</div><h4 id='method.custom_metrics_patch' class='method'><code>fn <a href='#method.custom_metrics_patch' class='fnname'>custom_metrics_patch</a>(&amp;self, request: <a class='struct' href='../google_analytics3/struct.CustomMetric.html' title='google_analytics3::CustomMetric'>CustomMetric</a>, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, custom_metric_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementCustomMetricPatchCall.html' title='google_analytics3::ManagementCustomMetricPatchCall'>ManagementCustomMetricPatchCall</a>&lt;'a, C, A&gt;</code></h4>
-<div class='docblock'><p>Create a builder to help you perform the following task:</p>
-
-<p>Updates an existing custom metric. This method supports patch semantics.</p>
-
-<h1 id='arguments-30' class='section-header'><a href='#arguments-30'>Arguments</a></h1>
-<ul>
-<li><code>request</code> - No description provided.</li>
-<li><code>accountId</code> - Account ID for the custom metric to update.</li>
-<li><code>webPropertyId</code> - Web property ID for the custom metric to update.</li>
-<li><code>customMetricId</code> - Custom metric ID for the custom metric to update.</li>
-</ul>
-</div><h4 id='method.uploads_upload_data' class='method'><code>fn <a href='#method.uploads_upload_data' class='fnname'>uploads_upload_data</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, custom_data_source_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementUploadUploadDataCall.html' title='google_analytics3::ManagementUploadUploadDataCall'>ManagementUploadUploadDataCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.uploads_upload_data' class='method'><code>fn <a href='#method.uploads_upload_data' class='fnname'>uploads_upload_data</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, custom_data_source_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementUploadUploadDataCall.html' title='google_analytics3::ManagementUploadUploadDataCall'>ManagementUploadUploadDataCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Upload data for a custom data source.</p>
 
-<h1 id='arguments-31' class='section-header'><a href='#arguments-31'>Arguments</a></h1>
+<h1 id='arguments-23' class='section-header'><a href='#arguments-23'>Arguments</a></h1>
 <ul>
 <li><code>accountId</code> - Account Id associated with the upload.</li>
 <li><code>webPropertyId</code> - Web property UA-string associated with the upload.</li>
 <li><code>customDataSourceId</code> - Custom data source Id to which the data being uploaded belongs.</li>
 </ul>
-</div><h4 id='method.account_user_links_insert' class='method'><code>fn <a href='#method.account_user_links_insert' class='fnname'>account_user_links_insert</a>(&amp;self, request: <a class='struct' href='../google_analytics3/struct.EntityUserLink.html' title='google_analytics3::EntityUserLink'>EntityUserLink</a>, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementAccountUserLinkInsertCall.html' title='google_analytics3::ManagementAccountUserLinkInsertCall'>ManagementAccountUserLinkInsertCall</a>&lt;'a, C, A&gt;</code></h4>
-<div class='docblock'><p>Create a builder to help you perform the following task:</p>
-
-<p>Adds a new user to the given account.</p>
-
-<h1 id='arguments-32' class='section-header'><a href='#arguments-32'>Arguments</a></h1>
-<ul>
-<li><code>request</code> - No description provided.</li>
-<li><code>accountId</code> - Account ID to create the user link for.</li>
-</ul>
-</div><h4 id='method.webproperty_user_links_insert' class='method'><code>fn <a href='#method.webproperty_user_links_insert' class='fnname'>webproperty_user_links_insert</a>(&amp;self, request: <a class='struct' href='../google_analytics3/struct.EntityUserLink.html' title='google_analytics3::EntityUserLink'>EntityUserLink</a>, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementWebpropertyUserLinkInsertCall.html' title='google_analytics3::ManagementWebpropertyUserLinkInsertCall'>ManagementWebpropertyUserLinkInsertCall</a>&lt;'a, C, A&gt;</code></h4>
-<div class='docblock'><p>Create a builder to help you perform the following task:</p>
-
-<p>Adds a new user to the given web property.</p>
-
-<h1 id='arguments-33' class='section-header'><a href='#arguments-33'>Arguments</a></h1>
-<ul>
-<li><code>request</code> - No description provided.</li>
-<li><code>accountId</code> - Account ID to create the user link for.</li>
-<li><code>webPropertyId</code> - Web Property ID to create the user link for.</li>
-</ul>
-</div><h4 id='method.experiments_delete' class='method'><code>fn <a href='#method.experiments_delete' class='fnname'>experiments_delete</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, experiment_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementExperimentDeleteCall.html' title='google_analytics3::ManagementExperimentDeleteCall'>ManagementExperimentDeleteCall</a>&lt;'a, C, A&gt;</code></h4>
-<div class='docblock'><p>Create a builder to help you perform the following task:</p>
-
-<p>Delete an experiment.</p>
-
-<h1 id='arguments-34' class='section-header'><a href='#arguments-34'>Arguments</a></h1>
-<ul>
-<li><code>accountId</code> - Account ID to which the experiment belongs</li>
-<li><code>webPropertyId</code> - Web property ID to which the experiment belongs</li>
-<li><code>profileId</code> - View (Profile) ID to which the experiment belongs</li>
-<li><code>experimentId</code> - ID of the experiment to delete</li>
-</ul>
-</div><h4 id='method.unsampled_reports_delete' class='method'><code>fn <a href='#method.unsampled_reports_delete' class='fnname'>unsampled_reports_delete</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, unsampled_report_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementUnsampledReportDeleteCall.html' title='google_analytics3::ManagementUnsampledReportDeleteCall'>ManagementUnsampledReportDeleteCall</a>&lt;'a, C, A&gt;</code></h4>
-<div class='docblock'><p>Create a builder to help you perform the following task:</p>
-
-<p>Deletes an unsampled report.</p>
-
-<h1 id='arguments-35' class='section-header'><a href='#arguments-35'>Arguments</a></h1>
-<ul>
-<li><code>accountId</code> - Account ID to delete the unsampled report for.</li>
-<li><code>webPropertyId</code> - Web property ID to delete the unsampled reports for.</li>
-<li><code>profileId</code> - View (Profile) ID to delete the unsampled report for.</li>
-<li><code>unsampledReportId</code> - ID of the unsampled report to be deleted.</li>
-</ul>
-</div><h4 id='method.profiles_patch' class='method'><code>fn <a href='#method.profiles_patch' class='fnname'>profiles_patch</a>(&amp;self, request: <a class='struct' href='../google_analytics3/struct.Profile.html' title='google_analytics3::Profile'>Profile</a>, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementProfilePatchCall.html' title='google_analytics3::ManagementProfilePatchCall'>ManagementProfilePatchCall</a>&lt;'a, C, A&gt;</code></h4>
-<div class='docblock'><p>Create a builder to help you perform the following task:</p>
-
-<p>Updates an existing view (profile). This method supports patch semantics.</p>
-
-<h1 id='arguments-36' class='section-header'><a href='#arguments-36'>Arguments</a></h1>
-<ul>
-<li><code>request</code> - No description provided.</li>
-<li><code>accountId</code> - Account ID to which the view (profile) belongs</li>
-<li><code>webPropertyId</code> - Web property ID to which the view (profile) belongs</li>
-<li><code>profileId</code> - ID of the view (profile) to be updated.</li>
-</ul>
-</div><h4 id='method.filters_get' class='method'><code>fn <a href='#method.filters_get' class='fnname'>filters_get</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, filter_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementFilterGetCall.html' title='google_analytics3::ManagementFilterGetCall'>ManagementFilterGetCall</a>&lt;'a, C, A&gt;</code></h4>
-<div class='docblock'><p>Create a builder to help you perform the following task:</p>
-
-<p>Returns a filters to which the user has access.</p>
-
-<h1 id='arguments-37' class='section-header'><a href='#arguments-37'>Arguments</a></h1>
-<ul>
-<li><code>accountId</code> - Account ID to retrieve filters for.</li>
-<li><code>filterId</code> - Filter ID to retrieve filters for.</li>
-</ul>
-</div><h4 id='method.web_property_ad_words_links_list' class='method'><code>fn <a href='#method.web_property_ad_words_links_list' class='fnname'>web_property_ad_words_links_list</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementWebPropertyAdWordsLinkListCall.html' title='google_analytics3::ManagementWebPropertyAdWordsLinkListCall'>ManagementWebPropertyAdWordsLinkListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.web_property_ad_words_links_list' class='method'><code>fn <a href='#method.web_property_ad_words_links_list' class='fnname'>web_property_ad_words_links_list</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementWebPropertyAdWordsLinkListCall.html' title='google_analytics3::ManagementWebPropertyAdWordsLinkListCall'>ManagementWebPropertyAdWordsLinkListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Lists webProperty-AdWords links for a given web property.</p>
 
-<h1 id='arguments-38' class='section-header'><a href='#arguments-38'>Arguments</a></h1>
+<h1 id='arguments-24' class='section-header'><a href='#arguments-24'>Arguments</a></h1>
 <ul>
 <li><code>accountId</code> - ID of the account which the given web property belongs to.</li>
 <li><code>webPropertyId</code> - Web property ID to retrieve the AdWords links for.</li>
 </ul>
-</div><h4 id='method.account_summaries_list' class='method'><code>fn <a href='#method.account_summaries_list' class='fnname'>account_summaries_list</a>(&amp;self) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementAccountSummaryListCall.html' title='google_analytics3::ManagementAccountSummaryListCall'>ManagementAccountSummaryListCall</a>&lt;'a, C, A&gt;</code></h4>
-<div class='docblock'><p>Create a builder to help you perform the following task:</p>
-
-<p>Lists account summaries (lightweight tree comprised of accounts/properties/profiles) to which the user has access.</p>
-</div><h4 id='method.custom_dimensions_list' class='method'><code>fn <a href='#method.custom_dimensions_list' class='fnname'>custom_dimensions_list</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementCustomDimensionListCall.html' title='google_analytics3::ManagementCustomDimensionListCall'>ManagementCustomDimensionListCall</a>&lt;'a, C, A&gt;</code></h4>
-<div class='docblock'><p>Create a builder to help you perform the following task:</p>
-
-<p>Lists custom dimensions to which the user has access.</p>
-
-<h1 id='arguments-39' class='section-header'><a href='#arguments-39'>Arguments</a></h1>
-<ul>
-<li><code>accountId</code> - Account ID for the custom dimensions to retrieve.</li>
-<li><code>webPropertyId</code> - Web property ID for the custom dimensions to retrieve.</li>
-</ul>
-</div><h4 id='method.uploads_list' class='method'><code>fn <a href='#method.uploads_list' class='fnname'>uploads_list</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, custom_data_source_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementUploadListCall.html' title='google_analytics3::ManagementUploadListCall'>ManagementUploadListCall</a>&lt;'a, C, A&gt;</code></h4>
-<div class='docblock'><p>Create a builder to help you perform the following task:</p>
-
-<p>List uploads to which the user has access.</p>
-
-<h1 id='arguments-40' class='section-header'><a href='#arguments-40'>Arguments</a></h1>
-<ul>
-<li><code>accountId</code> - Account Id for the uploads to retrieve.</li>
-<li><code>webPropertyId</code> - Web property Id for the uploads to retrieve.</li>
-<li><code>customDataSourceId</code> - Custom data source Id for uploads to retrieve.</li>
-</ul>
-</div><h4 id='method.profile_user_links_list' class='method'><code>fn <a href='#method.profile_user_links_list' class='fnname'>profile_user_links_list</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementProfileUserLinkListCall.html' title='google_analytics3::ManagementProfileUserLinkListCall'>ManagementProfileUserLinkListCall</a>&lt;'a, C, A&gt;</code></h4>
-<div class='docblock'><p>Create a builder to help you perform the following task:</p>
-
-<p>Lists profile-user links for a given view (profile).</p>
-
-<h1 id='arguments-41' class='section-header'><a href='#arguments-41'>Arguments</a></h1>
-<ul>
-<li><code>accountId</code> - Account ID which the given view (profile) belongs to.</li>
-<li><code>webPropertyId</code> - Web Property ID which the given view (profile) belongs to. Can either be a specific web property ID or &#39;~all&#39;, which refers to all the web properties that user has access to.</li>
-<li><code>profileId</code> - View (Profile) ID to retrieve the profile-user links for. Can either be a specific profile ID or &#39;~all&#39;, which refers to all the profiles that user has access to.</li>
-</ul>
-</div><h4 id='method.account_user_links_list' class='method'><code>fn <a href='#method.account_user_links_list' class='fnname'>account_user_links_list</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementAccountUserLinkListCall.html' title='google_analytics3::ManagementAccountUserLinkListCall'>ManagementAccountUserLinkListCall</a>&lt;'a, C, A&gt;</code></h4>
-<div class='docblock'><p>Create a builder to help you perform the following task:</p>
-
-<p>Lists account-user links for a given account.</p>
-
-<h1 id='arguments-42' class='section-header'><a href='#arguments-42'>Arguments</a></h1>
-<ul>
-<li><code>accountId</code> - Account ID to retrieve the user links for.</li>
-</ul>
-</div><h4 id='method.custom_metrics_update' class='method'><code>fn <a href='#method.custom_metrics_update' class='fnname'>custom_metrics_update</a>(&amp;self, request: <a class='struct' href='../google_analytics3/struct.CustomMetric.html' title='google_analytics3::CustomMetric'>CustomMetric</a>, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, custom_metric_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementCustomMetricUpdateCall.html' title='google_analytics3::ManagementCustomMetricUpdateCall'>ManagementCustomMetricUpdateCall</a>&lt;'a, C, A&gt;</code></h4>
-<div class='docblock'><p>Create a builder to help you perform the following task:</p>
-
-<p>Updates an existing custom metric.</p>
-
-<h1 id='arguments-43' class='section-header'><a href='#arguments-43'>Arguments</a></h1>
-<ul>
-<li><code>request</code> - No description provided.</li>
-<li><code>accountId</code> - Account ID for the custom metric to update.</li>
-<li><code>webPropertyId</code> - Web property ID for the custom metric to update.</li>
-<li><code>customMetricId</code> - Custom metric ID for the custom metric to update.</li>
-</ul>
-</div><h4 id='method.uploads_delete_upload_data' class='method'><code>fn <a href='#method.uploads_delete_upload_data' class='fnname'>uploads_delete_upload_data</a>(&amp;self, request: <a class='struct' href='../google_analytics3/struct.AnalyticsDataimportDeleteUploadDataRequest.html' title='google_analytics3::AnalyticsDataimportDeleteUploadDataRequest'>AnalyticsDataimportDeleteUploadDataRequest</a>, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, custom_data_source_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementUploadDeleteUploadDataCall.html' title='google_analytics3::ManagementUploadDeleteUploadDataCall'>ManagementUploadDeleteUploadDataCall</a>&lt;'a, C, A&gt;</code></h4>
-<div class='docblock'><p>Create a builder to help you perform the following task:</p>
-
-<p>Delete data associated with a previous upload.</p>
-
-<h1 id='arguments-44' class='section-header'><a href='#arguments-44'>Arguments</a></h1>
-<ul>
-<li><code>request</code> - No description provided.</li>
-<li><code>accountId</code> - Account Id for the uploads to be deleted.</li>
-<li><code>webPropertyId</code> - Web property Id for the uploads to be deleted.</li>
-<li><code>customDataSourceId</code> - Custom data source Id for the uploads to be deleted.</li>
-</ul>
-</div><h4 id='method.experiments_update' class='method'><code>fn <a href='#method.experiments_update' class='fnname'>experiments_update</a>(&amp;self, request: <a class='struct' href='../google_analytics3/struct.Experiment.html' title='google_analytics3::Experiment'>Experiment</a>, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, experiment_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementExperimentUpdateCall.html' title='google_analytics3::ManagementExperimentUpdateCall'>ManagementExperimentUpdateCall</a>&lt;'a, C, A&gt;</code></h4>
-<div class='docblock'><p>Create a builder to help you perform the following task:</p>
-
-<p>Update an existing experiment.</p>
-
-<h1 id='arguments-45' class='section-header'><a href='#arguments-45'>Arguments</a></h1>
-<ul>
-<li><code>request</code> - No description provided.</li>
-<li><code>accountId</code> - Account ID of the experiment to update.</li>
-<li><code>webPropertyId</code> - Web property ID of the experiment to update.</li>
-<li><code>profileId</code> - View (Profile) ID of the experiment to update.</li>
-<li><code>experimentId</code> - Experiment ID of the experiment to update.</li>
-</ul>
-</div><h4 id='method.goals_update' class='method'><code>fn <a href='#method.goals_update' class='fnname'>goals_update</a>(&amp;self, request: <a class='struct' href='../google_analytics3/struct.Goal.html' title='google_analytics3::Goal'>Goal</a>, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, goal_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementGoalUpdateCall.html' title='google_analytics3::ManagementGoalUpdateCall'>ManagementGoalUpdateCall</a>&lt;'a, C, A&gt;</code></h4>
-<div class='docblock'><p>Create a builder to help you perform the following task:</p>
-
-<p>Updates an existing goal.</p>
-
-<h1 id='arguments-46' class='section-header'><a href='#arguments-46'>Arguments</a></h1>
-<ul>
-<li><code>request</code> - No description provided.</li>
-<li><code>accountId</code> - Account ID to update the goal.</li>
-<li><code>webPropertyId</code> - Web property ID to update the goal.</li>
-<li><code>profileId</code> - View (Profile) ID to update the goal.</li>
-<li><code>goalId</code> - Index of the goal to be updated.</li>
-</ul>
-</div><h4 id='method.custom_data_sources_list' class='method'><code>fn <a href='#method.custom_data_sources_list' class='fnname'>custom_data_sources_list</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementCustomDataSourceListCall.html' title='google_analytics3::ManagementCustomDataSourceListCall'>ManagementCustomDataSourceListCall</a>&lt;'a, C, A&gt;</code></h4>
-<div class='docblock'><p>Create a builder to help you perform the following task:</p>
-
-<p>List custom data sources to which the user has access.</p>
-
-<h1 id='arguments-47' class='section-header'><a href='#arguments-47'>Arguments</a></h1>
-<ul>
-<li><code>accountId</code> - Account Id for the custom data sources to retrieve.</li>
-<li><code>webPropertyId</code> - Web property Id for the custom data sources to retrieve.</li>
-</ul>
-</div><h4 id='method.custom_metrics_list' class='method'><code>fn <a href='#method.custom_metrics_list' class='fnname'>custom_metrics_list</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementCustomMetricListCall.html' title='google_analytics3::ManagementCustomMetricListCall'>ManagementCustomMetricListCall</a>&lt;'a, C, A&gt;</code></h4>
-<div class='docblock'><p>Create a builder to help you perform the following task:</p>
-
-<p>Lists custom metrics to which the user has access.</p>
-
-<h1 id='arguments-48' class='section-header'><a href='#arguments-48'>Arguments</a></h1>
-<ul>
-<li><code>accountId</code> - Account ID for the custom metrics to retrieve.</li>
-<li><code>webPropertyId</code> - Web property ID for the custom metrics to retrieve.</li>
-</ul>
-</div><h4 id='method.unsampled_reports_list' class='method'><code>fn <a href='#method.unsampled_reports_list' class='fnname'>unsampled_reports_list</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementUnsampledReportListCall.html' title='google_analytics3::ManagementUnsampledReportListCall'>ManagementUnsampledReportListCall</a>&lt;'a, C, A&gt;</code></h4>
-<div class='docblock'><p>Create a builder to help you perform the following task:</p>
-
-<p>Lists unsampled reports to which the user has access.</p>
-
-<h1 id='arguments-49' class='section-header'><a href='#arguments-49'>Arguments</a></h1>
-<ul>
-<li><code>accountId</code> - Account ID to retrieve unsampled reports for. Must be a specific account ID, ~all is not supported.</li>
-<li><code>webPropertyId</code> - Web property ID to retrieve unsampled reports for. Must be a specific web property ID, ~all is not supported.</li>
-<li><code>profileId</code> - View (Profile) ID to retrieve unsampled reports for. Must be a specific view (profile) ID, ~all is not supported.</li>
-</ul>
-</div><h4 id='method.webproperties_get' class='method'><code>fn <a href='#method.webproperties_get' class='fnname'>webproperties_get</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementWebpropertyGetCall.html' title='google_analytics3::ManagementWebpropertyGetCall'>ManagementWebpropertyGetCall</a>&lt;'a, C, A&gt;</code></h4>
-<div class='docblock'><p>Create a builder to help you perform the following task:</p>
-
-<p>Gets a web property to which the user has access.</p>
-
-<h1 id='arguments-50' class='section-header'><a href='#arguments-50'>Arguments</a></h1>
-<ul>
-<li><code>accountId</code> - Account ID to retrieve the web property for.</li>
-<li><code>webPropertyId</code> - ID to retrieve the web property for.</li>
-</ul>
-</div><h4 id='method.experiments_insert' class='method'><code>fn <a href='#method.experiments_insert' class='fnname'>experiments_insert</a>(&amp;self, request: <a class='struct' href='../google_analytics3/struct.Experiment.html' title='google_analytics3::Experiment'>Experiment</a>, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementExperimentInsertCall.html' title='google_analytics3::ManagementExperimentInsertCall'>ManagementExperimentInsertCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.experiments_insert' class='method'><code>fn <a href='#method.experiments_insert' class='fnname'>experiments_insert</a>(&amp;self, request: <a class='struct' href='../google_analytics3/struct.Experiment.html' title='google_analytics3::Experiment'>Experiment</a>, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementExperimentInsertCall.html' title='google_analytics3::ManagementExperimentInsertCall'>ManagementExperimentInsertCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Create a new experiment.</p>
 
-<h1 id='arguments-51' class='section-header'><a href='#arguments-51'>Arguments</a></h1>
+<h1 id='arguments-25' class='section-header'><a href='#arguments-25'>Arguments</a></h1>
 <ul>
 <li><code>request</code> - No description provided.</li>
 <li><code>accountId</code> - Account ID to create the experiment for.</li>
 <li><code>webPropertyId</code> - Web property ID to create the experiment for.</li>
 <li><code>profileId</code> - View (Profile) ID to create the experiment for.</li>
 </ul>
-</div><h4 id='method.custom_dimensions_get' class='method'><code>fn <a href='#method.custom_dimensions_get' class='fnname'>custom_dimensions_get</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, custom_dimension_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementCustomDimensionGetCall.html' title='google_analytics3::ManagementCustomDimensionGetCall'>ManagementCustomDimensionGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.segments_list' class='method'><code>fn <a href='#method.segments_list' class='fnname'>segments_list</a>(&amp;self) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementSegmentListCall.html' title='google_analytics3::ManagementSegmentListCall'>ManagementSegmentListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>Get a custom dimension to which the user has access.</p>
+<p>Lists segments to which the user has access.</p>
+</div><h4 id='method.profiles_delete' class='method'><code>fn <a href='#method.profiles_delete' class='fnname'>profiles_delete</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementProfileDeleteCall.html' title='google_analytics3::ManagementProfileDeleteCall'>ManagementProfileDeleteCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<h1 id='arguments-52' class='section-header'><a href='#arguments-52'>Arguments</a></h1>
+<p>Deletes a view (profile).</p>
+
+<h1 id='arguments-26' class='section-header'><a href='#arguments-26'>Arguments</a></h1>
 <ul>
-<li><code>accountId</code> - Account ID for the custom dimension to retrieve.</li>
-<li><code>webPropertyId</code> - Web property ID for the custom dimension to retrieve.</li>
-<li><code>customDimensionId</code> - The ID of the custom dimension to retrieve.</li>
+<li><code>accountId</code> - Account ID to delete the view (profile) for.</li>
+<li><code>webPropertyId</code> - Web property ID to delete the view (profile) for.</li>
+<li><code>profileId</code> - ID of the view (profile) to be deleted.</li>
 </ul>
-</div><h4 id='method.profile_filter_links_list' class='method'><code>fn <a href='#method.profile_filter_links_list' class='fnname'>profile_filter_links_list</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementProfileFilterLinkListCall.html' title='google_analytics3::ManagementProfileFilterLinkListCall'>ManagementProfileFilterLinkListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.goals_patch' class='method'><code>fn <a href='#method.goals_patch' class='fnname'>goals_patch</a>(&amp;self, request: <a class='struct' href='../google_analytics3/struct.Goal.html' title='google_analytics3::Goal'>Goal</a>, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, goal_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementGoalPatchCall.html' title='google_analytics3::ManagementGoalPatchCall'>ManagementGoalPatchCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Updates an existing goal. This method supports patch semantics.</p>
+
+<h1 id='arguments-27' class='section-header'><a href='#arguments-27'>Arguments</a></h1>
+<ul>
+<li><code>request</code> - No description provided.</li>
+<li><code>accountId</code> - Account ID to update the goal.</li>
+<li><code>webPropertyId</code> - Web property ID to update the goal.</li>
+<li><code>profileId</code> - View (Profile) ID to update the goal.</li>
+<li><code>goalId</code> - Index of the goal to be updated.</li>
+</ul>
+</div><h4 id='method.custom_dimensions_patch' class='method'><code>fn <a href='#method.custom_dimensions_patch' class='fnname'>custom_dimensions_patch</a>(&amp;self, request: <a class='struct' href='../google_analytics3/struct.CustomDimension.html' title='google_analytics3::CustomDimension'>CustomDimension</a>, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, custom_dimension_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementCustomDimensionPatchCall.html' title='google_analytics3::ManagementCustomDimensionPatchCall'>ManagementCustomDimensionPatchCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Updates an existing custom dimension. This method supports patch semantics.</p>
+
+<h1 id='arguments-28' class='section-header'><a href='#arguments-28'>Arguments</a></h1>
+<ul>
+<li><code>request</code> - No description provided.</li>
+<li><code>accountId</code> - Account ID for the custom dimension to update.</li>
+<li><code>webPropertyId</code> - Web property ID for the custom dimension to update.</li>
+<li><code>customDimensionId</code> - Custom dimension ID for the custom dimension to update.</li>
+</ul>
+</div><h4 id='method.web_property_ad_words_links_get' class='method'><code>fn <a href='#method.web_property_ad_words_links_get' class='fnname'>web_property_ad_words_links_get</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_ad_words_link_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementWebPropertyAdWordsLinkGetCall.html' title='google_analytics3::ManagementWebPropertyAdWordsLinkGetCall'>ManagementWebPropertyAdWordsLinkGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Returns a web property-AdWords link to which the user has access.</p>
+
+<h1 id='arguments-29' class='section-header'><a href='#arguments-29'>Arguments</a></h1>
+<ul>
+<li><code>accountId</code> - ID of the account which the given web property belongs to.</li>
+<li><code>webPropertyId</code> - Web property ID to retrieve the AdWords link for.</li>
+<li><code>webPropertyAdWordsLinkId</code> - Web property-AdWords link ID.</li>
+</ul>
+</div><h4 id='method.experiments_list' class='method'><code>fn <a href='#method.experiments_list' class='fnname'>experiments_list</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementExperimentListCall.html' title='google_analytics3::ManagementExperimentListCall'>ManagementExperimentListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Lists experiments to which the user has access.</p>
+
+<h1 id='arguments-30' class='section-header'><a href='#arguments-30'>Arguments</a></h1>
+<ul>
+<li><code>accountId</code> - Account ID to retrieve experiments for.</li>
+<li><code>webPropertyId</code> - Web property ID to retrieve experiments for.</li>
+<li><code>profileId</code> - View (Profile) ID to retrieve experiments for.</li>
+</ul>
+</div><h4 id='method.profiles_list' class='method'><code>fn <a href='#method.profiles_list' class='fnname'>profiles_list</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementProfileListCall.html' title='google_analytics3::ManagementProfileListCall'>ManagementProfileListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Lists views (profiles) to which the user has access.</p>
+
+<h1 id='arguments-31' class='section-header'><a href='#arguments-31'>Arguments</a></h1>
+<ul>
+<li><code>accountId</code> - Account ID for the view (profiles) to retrieve. Can either be a specific account ID or &#39;~all&#39;, which refers to all the accounts to which the user has access.</li>
+<li><code>webPropertyId</code> - Web property ID for the views (profiles) to retrieve. Can either be a specific web property ID or &#39;~all&#39;, which refers to all the web properties to which the user has access.</li>
+</ul>
+</div><h4 id='method.goals_list' class='method'><code>fn <a href='#method.goals_list' class='fnname'>goals_list</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementGoalListCall.html' title='google_analytics3::ManagementGoalListCall'>ManagementGoalListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Lists goals to which the user has access.</p>
+
+<h1 id='arguments-32' class='section-header'><a href='#arguments-32'>Arguments</a></h1>
+<ul>
+<li><code>accountId</code> - Account ID to retrieve goals for. Can either be a specific account ID or &#39;~all&#39;, which refers to all the accounts that user has access to.</li>
+<li><code>webPropertyId</code> - Web property ID to retrieve goals for. Can either be a specific web property ID or &#39;~all&#39;, which refers to all the web properties that user has access to.</li>
+<li><code>profileId</code> - View (Profile) ID to retrieve goals for. Can either be a specific view (profile) ID or &#39;~all&#39;, which refers to all the views (profiles) that user has access to.</li>
+</ul>
+</div><h4 id='method.goals_insert' class='method'><code>fn <a href='#method.goals_insert' class='fnname'>goals_insert</a>(&amp;self, request: <a class='struct' href='../google_analytics3/struct.Goal.html' title='google_analytics3::Goal'>Goal</a>, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementGoalInsertCall.html' title='google_analytics3::ManagementGoalInsertCall'>ManagementGoalInsertCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Create a new goal.</p>
+
+<h1 id='arguments-33' class='section-header'><a href='#arguments-33'>Arguments</a></h1>
+<ul>
+<li><code>request</code> - No description provided.</li>
+<li><code>accountId</code> - Account ID to create the goal for.</li>
+<li><code>webPropertyId</code> - Web property ID to create the goal for.</li>
+<li><code>profileId</code> - View (Profile) ID to create the goal for.</li>
+</ul>
+</div><h4 id='method.custom_metrics_patch' class='method'><code>fn <a href='#method.custom_metrics_patch' class='fnname'>custom_metrics_patch</a>(&amp;self, request: <a class='struct' href='../google_analytics3/struct.CustomMetric.html' title='google_analytics3::CustomMetric'>CustomMetric</a>, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, custom_metric_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementCustomMetricPatchCall.html' title='google_analytics3::ManagementCustomMetricPatchCall'>ManagementCustomMetricPatchCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Updates an existing custom metric. This method supports patch semantics.</p>
+
+<h1 id='arguments-34' class='section-header'><a href='#arguments-34'>Arguments</a></h1>
+<ul>
+<li><code>request</code> - No description provided.</li>
+<li><code>accountId</code> - Account ID for the custom metric to update.</li>
+<li><code>webPropertyId</code> - Web property ID for the custom metric to update.</li>
+<li><code>customMetricId</code> - Custom metric ID for the custom metric to update.</li>
+</ul>
+</div><h4 id='method.profile_filter_links_list' class='method'><code>fn <a href='#method.profile_filter_links_list' class='fnname'>profile_filter_links_list</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementProfileFilterLinkListCall.html' title='google_analytics3::ManagementProfileFilterLinkListCall'>ManagementProfileFilterLinkListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Lists all profile filter links for a profile.</p>
 
-<h1 id='arguments-53' class='section-header'><a href='#arguments-53'>Arguments</a></h1>
+<h1 id='arguments-35' class='section-header'><a href='#arguments-35'>Arguments</a></h1>
 <ul>
 <li><code>accountId</code> - Account ID to retrieve profile filter links for.</li>
 <li><code>webPropertyId</code> - Web property Id for profile filter links for. Can either be a specific web property ID or &#39;~all&#39;, which refers to all the web properties that user has access to.</li>
 <li><code>profileId</code> - Profile ID to retrieve filter links for. Can either be a specific profile ID or &#39;~all&#39;, which refers to all the profiles that user has access to.</li>
 </ul>
-</div><h4 id='method.webproperties_patch' class='method'><code>fn <a href='#method.webproperties_patch' class='fnname'>webproperties_patch</a>(&amp;self, request: <a class='struct' href='../google_analytics3/struct.Webproperty.html' title='google_analytics3::Webproperty'>Webproperty</a>, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementWebpropertyPatchCall.html' title='google_analytics3::ManagementWebpropertyPatchCall'>ManagementWebpropertyPatchCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.account_user_links_insert' class='method'><code>fn <a href='#method.account_user_links_insert' class='fnname'>account_user_links_insert</a>(&amp;self, request: <a class='struct' href='../google_analytics3/struct.EntityUserLink.html' title='google_analytics3::EntityUserLink'>EntityUserLink</a>, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementAccountUserLinkInsertCall.html' title='google_analytics3::ManagementAccountUserLinkInsertCall'>ManagementAccountUserLinkInsertCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>Updates an existing web property. This method supports patch semantics.</p>
+<p>Adds a new user to the given account.</p>
 
-<h1 id='arguments-54' class='section-header'><a href='#arguments-54'>Arguments</a></h1>
+<h1 id='arguments-36' class='section-header'><a href='#arguments-36'>Arguments</a></h1>
 <ul>
 <li><code>request</code> - No description provided.</li>
-<li><code>accountId</code> - Account ID to which the web property belongs</li>
-<li><code>webPropertyId</code> - Web property ID</li>
+<li><code>accountId</code> - Account ID to create the user link for.</li>
 </ul>
-</div><h4 id='method.custom_dimensions_insert' class='method'><code>fn <a href='#method.custom_dimensions_insert' class='fnname'>custom_dimensions_insert</a>(&amp;self, request: <a class='struct' href='../google_analytics3/struct.CustomDimension.html' title='google_analytics3::CustomDimension'>CustomDimension</a>, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementCustomDimensionInsertCall.html' title='google_analytics3::ManagementCustomDimensionInsertCall'>ManagementCustomDimensionInsertCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.webproperty_user_links_insert' class='method'><code>fn <a href='#method.webproperty_user_links_insert' class='fnname'>webproperty_user_links_insert</a>(&amp;self, request: <a class='struct' href='../google_analytics3/struct.EntityUserLink.html' title='google_analytics3::EntityUserLink'>EntityUserLink</a>, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementWebpropertyUserLinkInsertCall.html' title='google_analytics3::ManagementWebpropertyUserLinkInsertCall'>ManagementWebpropertyUserLinkInsertCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>Create a new custom dimension.</p>
+<p>Adds a new user to the given web property.</p>
 
-<h1 id='arguments-55' class='section-header'><a href='#arguments-55'>Arguments</a></h1>
+<h1 id='arguments-37' class='section-header'><a href='#arguments-37'>Arguments</a></h1>
 <ul>
 <li><code>request</code> - No description provided.</li>
-<li><code>accountId</code> - Account ID for the custom dimension to create.</li>
-<li><code>webPropertyId</code> - Web property ID for the custom dimension to create.</li>
+<li><code>accountId</code> - Account ID to create the user link for.</li>
+<li><code>webPropertyId</code> - Web Property ID to create the user link for.</li>
 </ul>
-</div><h4 id='method.custom_metrics_insert' class='method'><code>fn <a href='#method.custom_metrics_insert' class='fnname'>custom_metrics_insert</a>(&amp;self, request: <a class='struct' href='../google_analytics3/struct.CustomMetric.html' title='google_analytics3::CustomMetric'>CustomMetric</a>, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementCustomMetricInsertCall.html' title='google_analytics3::ManagementCustomMetricInsertCall'>ManagementCustomMetricInsertCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.custom_metrics_insert' class='method'><code>fn <a href='#method.custom_metrics_insert' class='fnname'>custom_metrics_insert</a>(&amp;self, request: <a class='struct' href='../google_analytics3/struct.CustomMetric.html' title='google_analytics3::CustomMetric'>CustomMetric</a>, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementCustomMetricInsertCall.html' title='google_analytics3::ManagementCustomMetricInsertCall'>ManagementCustomMetricInsertCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Create a new custom metric.</p>
 
-<h1 id='arguments-56' class='section-header'><a href='#arguments-56'>Arguments</a></h1>
+<h1 id='arguments-38' class='section-header'><a href='#arguments-38'>Arguments</a></h1>
 <ul>
 <li><code>request</code> - No description provided.</li>
 <li><code>accountId</code> - Account ID for the custom metric to create.</li>
 <li><code>webPropertyId</code> - Web property ID for the custom dimension to create.</li>
 </ul>
-</div><h4 id='method.profile_user_links_insert' class='method'><code>fn <a href='#method.profile_user_links_insert' class='fnname'>profile_user_links_insert</a>(&amp;self, request: <a class='struct' href='../google_analytics3/struct.EntityUserLink.html' title='google_analytics3::EntityUserLink'>EntityUserLink</a>, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementProfileUserLinkInsertCall.html' title='google_analytics3::ManagementProfileUserLinkInsertCall'>ManagementProfileUserLinkInsertCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.unsampled_reports_delete' class='method'><code>fn <a href='#method.unsampled_reports_delete' class='fnname'>unsampled_reports_delete</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, unsampled_report_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementUnsampledReportDeleteCall.html' title='google_analytics3::ManagementUnsampledReportDeleteCall'>ManagementUnsampledReportDeleteCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>Adds a new user to the given view (profile).</p>
+<p>Deletes an unsampled report.</p>
 
-<h1 id='arguments-57' class='section-header'><a href='#arguments-57'>Arguments</a></h1>
+<h1 id='arguments-39' class='section-header'><a href='#arguments-39'>Arguments</a></h1>
 <ul>
-<li><code>request</code> - No description provided.</li>
-<li><code>accountId</code> - Account ID to create the user link for.</li>
-<li><code>webPropertyId</code> - Web Property ID to create the user link for.</li>
-<li><code>profileId</code> - View (Profile) ID to create the user link for.</li>
+<li><code>accountId</code> - Account ID to delete the unsampled report for.</li>
+<li><code>webPropertyId</code> - Web property ID to delete the unsampled reports for.</li>
+<li><code>profileId</code> - View (Profile) ID to delete the unsampled report for.</li>
+<li><code>unsampledReportId</code> - ID of the unsampled report to be deleted.</li>
 </ul>
-</div><h4 id='method.webproperties_list' class='method'><code>fn <a href='#method.webproperties_list' class='fnname'>webproperties_list</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementWebpropertyListCall.html' title='google_analytics3::ManagementWebpropertyListCall'>ManagementWebpropertyListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.profiles_patch' class='method'><code>fn <a href='#method.profiles_patch' class='fnname'>profiles_patch</a>(&amp;self, request: <a class='struct' href='../google_analytics3/struct.Profile.html' title='google_analytics3::Profile'>Profile</a>, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementProfilePatchCall.html' title='google_analytics3::ManagementProfilePatchCall'>ManagementProfilePatchCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>Lists web properties to which the user has access.</p>
+<p>Updates an existing view (profile). This method supports patch semantics.</p>
 
-<h1 id='arguments-58' class='section-header'><a href='#arguments-58'>Arguments</a></h1>
-<ul>
-<li><code>accountId</code> - Account ID to retrieve web properties for. Can either be a specific account ID or &#39;~all&#39;, which refers to all the accounts that user has access to.</li>
-</ul>
-</div><h4 id='method.web_property_ad_words_links_insert' class='method'><code>fn <a href='#method.web_property_ad_words_links_insert' class='fnname'>web_property_ad_words_links_insert</a>(&amp;self, request: <a class='struct' href='../google_analytics3/struct.EntityAdWordsLink.html' title='google_analytics3::EntityAdWordsLink'>EntityAdWordsLink</a>, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementWebPropertyAdWordsLinkInsertCall.html' title='google_analytics3::ManagementWebPropertyAdWordsLinkInsertCall'>ManagementWebPropertyAdWordsLinkInsertCall</a>&lt;'a, C, A&gt;</code></h4>
-<div class='docblock'><p>Create a builder to help you perform the following task:</p>
-
-<p>Creates a webProperty-AdWords link.</p>
-
-<h1 id='arguments-59' class='section-header'><a href='#arguments-59'>Arguments</a></h1>
-<ul>
-<li><code>request</code> - No description provided.</li>
-<li><code>accountId</code> - ID of the Google Analytics account to create the link for.</li>
-<li><code>webPropertyId</code> - Web property ID to create the link for.</li>
-</ul>
-</div><h4 id='method.web_property_ad_words_links_patch' class='method'><code>fn <a href='#method.web_property_ad_words_links_patch' class='fnname'>web_property_ad_words_links_patch</a>(&amp;self, request: <a class='struct' href='../google_analytics3/struct.EntityAdWordsLink.html' title='google_analytics3::EntityAdWordsLink'>EntityAdWordsLink</a>, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_ad_words_link_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementWebPropertyAdWordsLinkPatchCall.html' title='google_analytics3::ManagementWebPropertyAdWordsLinkPatchCall'>ManagementWebPropertyAdWordsLinkPatchCall</a>&lt;'a, C, A&gt;</code></h4>
-<div class='docblock'><p>Create a builder to help you perform the following task:</p>
-
-<p>Updates an existing webProperty-AdWords link. This method supports patch semantics.</p>
-
-<h1 id='arguments-60' class='section-header'><a href='#arguments-60'>Arguments</a></h1>
-<ul>
-<li><code>request</code> - No description provided.</li>
-<li><code>accountId</code> - ID of the account which the given web property belongs to.</li>
-<li><code>webPropertyId</code> - Web property ID to retrieve the AdWords link for.</li>
-<li><code>webPropertyAdWordsLinkId</code> - Web property-AdWords link ID.</li>
-</ul>
-</div><h4 id='method.goals_get' class='method'><code>fn <a href='#method.goals_get' class='fnname'>goals_get</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, goal_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementGoalGetCall.html' title='google_analytics3::ManagementGoalGetCall'>ManagementGoalGetCall</a>&lt;'a, C, A&gt;</code></h4>
-<div class='docblock'><p>Create a builder to help you perform the following task:</p>
-
-<p>Gets a goal to which the user has access.</p>
-
-<h1 id='arguments-61' class='section-header'><a href='#arguments-61'>Arguments</a></h1>
-<ul>
-<li><code>accountId</code> - Account ID to retrieve the goal for.</li>
-<li><code>webPropertyId</code> - Web property ID to retrieve the goal for.</li>
-<li><code>profileId</code> - View (Profile) ID to retrieve the goal for.</li>
-<li><code>goalId</code> - Goal ID to retrieve the goal for.</li>
-</ul>
-</div><h4 id='method.web_property_ad_words_links_delete' class='method'><code>fn <a href='#method.web_property_ad_words_links_delete' class='fnname'>web_property_ad_words_links_delete</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_ad_words_link_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementWebPropertyAdWordsLinkDeleteCall.html' title='google_analytics3::ManagementWebPropertyAdWordsLinkDeleteCall'>ManagementWebPropertyAdWordsLinkDeleteCall</a>&lt;'a, C, A&gt;</code></h4>
-<div class='docblock'><p>Create a builder to help you perform the following task:</p>
-
-<p>Deletes a web property-AdWords link.</p>
-
-<h1 id='arguments-62' class='section-header'><a href='#arguments-62'>Arguments</a></h1>
-<ul>
-<li><code>accountId</code> - ID of the account which the given web property belongs to.</li>
-<li><code>webPropertyId</code> - Web property ID to delete the AdWords link for.</li>
-<li><code>webPropertyAdWordsLinkId</code> - Web property AdWords link ID.</li>
-</ul>
-</div><h4 id='method.web_property_ad_words_links_update' class='method'><code>fn <a href='#method.web_property_ad_words_links_update' class='fnname'>web_property_ad_words_links_update</a>(&amp;self, request: <a class='struct' href='../google_analytics3/struct.EntityAdWordsLink.html' title='google_analytics3::EntityAdWordsLink'>EntityAdWordsLink</a>, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_ad_words_link_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementWebPropertyAdWordsLinkUpdateCall.html' title='google_analytics3::ManagementWebPropertyAdWordsLinkUpdateCall'>ManagementWebPropertyAdWordsLinkUpdateCall</a>&lt;'a, C, A&gt;</code></h4>
-<div class='docblock'><p>Create a builder to help you perform the following task:</p>
-
-<p>Updates an existing webProperty-AdWords link.</p>
-
-<h1 id='arguments-63' class='section-header'><a href='#arguments-63'>Arguments</a></h1>
-<ul>
-<li><code>request</code> - No description provided.</li>
-<li><code>accountId</code> - ID of the account which the given web property belongs to.</li>
-<li><code>webPropertyId</code> - Web property ID to retrieve the AdWords link for.</li>
-<li><code>webPropertyAdWordsLinkId</code> - Web property-AdWords link ID.</li>
-</ul>
-</div><h4 id='method.filters_patch' class='method'><code>fn <a href='#method.filters_patch' class='fnname'>filters_patch</a>(&amp;self, request: <a class='struct' href='../google_analytics3/struct.Filter.html' title='google_analytics3::Filter'>Filter</a>, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, filter_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementFilterPatchCall.html' title='google_analytics3::ManagementFilterPatchCall'>ManagementFilterPatchCall</a>&lt;'a, C, A&gt;</code></h4>
-<div class='docblock'><p>Create a builder to help you perform the following task:</p>
-
-<p>Updates an existing filter. This method supports patch semantics.</p>
-
-<h1 id='arguments-64' class='section-header'><a href='#arguments-64'>Arguments</a></h1>
-<ul>
-<li><code>request</code> - No description provided.</li>
-<li><code>accountId</code> - Account ID to which the filter belongs.</li>
-<li><code>filterId</code> - ID of the filter to be updated.</li>
-</ul>
-</div><h4 id='method.filters_list' class='method'><code>fn <a href='#method.filters_list' class='fnname'>filters_list</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementFilterListCall.html' title='google_analytics3::ManagementFilterListCall'>ManagementFilterListCall</a>&lt;'a, C, A&gt;</code></h4>
-<div class='docblock'><p>Create a builder to help you perform the following task:</p>
-
-<p>Lists all filters for an account</p>
-
-<h1 id='arguments-65' class='section-header'><a href='#arguments-65'>Arguments</a></h1>
-<ul>
-<li><code>accountId</code> - Account ID to retrieve filters for.</li>
-</ul>
-</div><h4 id='method.filters_delete' class='method'><code>fn <a href='#method.filters_delete' class='fnname'>filters_delete</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, filter_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementFilterDeleteCall.html' title='google_analytics3::ManagementFilterDeleteCall'>ManagementFilterDeleteCall</a>&lt;'a, C, A&gt;</code></h4>
-<div class='docblock'><p>Create a builder to help you perform the following task:</p>
-
-<p>Delete a filter.</p>
-
-<h1 id='arguments-66' class='section-header'><a href='#arguments-66'>Arguments</a></h1>
-<ul>
-<li><code>accountId</code> - Account ID to delete the filter for.</li>
-<li><code>filterId</code> - ID of the filter to be deleted.</li>
-</ul>
-</div><h4 id='method.profiles_insert' class='method'><code>fn <a href='#method.profiles_insert' class='fnname'>profiles_insert</a>(&amp;self, request: <a class='struct' href='../google_analytics3/struct.Profile.html' title='google_analytics3::Profile'>Profile</a>, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementProfileInsertCall.html' title='google_analytics3::ManagementProfileInsertCall'>ManagementProfileInsertCall</a>&lt;'a, C, A&gt;</code></h4>
-<div class='docblock'><p>Create a builder to help you perform the following task:</p>
-
-<p>Create a new view (profile).</p>
-
-<h1 id='arguments-67' class='section-header'><a href='#arguments-67'>Arguments</a></h1>
-<ul>
-<li><code>request</code> - No description provided.</li>
-<li><code>accountId</code> - Account ID to create the view (profile) for.</li>
-<li><code>webPropertyId</code> - Web property ID to create the view (profile) for.</li>
-</ul>
-</div><h4 id='method.account_user_links_delete' class='method'><code>fn <a href='#method.account_user_links_delete' class='fnname'>account_user_links_delete</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, link_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementAccountUserLinkDeleteCall.html' title='google_analytics3::ManagementAccountUserLinkDeleteCall'>ManagementAccountUserLinkDeleteCall</a>&lt;'a, C, A&gt;</code></h4>
-<div class='docblock'><p>Create a builder to help you perform the following task:</p>
-
-<p>Removes a user from the given account.</p>
-
-<h1 id='arguments-68' class='section-header'><a href='#arguments-68'>Arguments</a></h1>
-<ul>
-<li><code>accountId</code> - Account ID to delete the user link for.</li>
-<li><code>linkId</code> - Link ID to delete the user link for.</li>
-</ul>
-</div><h4 id='method.profiles_update' class='method'><code>fn <a href='#method.profiles_update' class='fnname'>profiles_update</a>(&amp;self, request: <a class='struct' href='../google_analytics3/struct.Profile.html' title='google_analytics3::Profile'>Profile</a>, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementProfileUpdateCall.html' title='google_analytics3::ManagementProfileUpdateCall'>ManagementProfileUpdateCall</a>&lt;'a, C, A&gt;</code></h4>
-<div class='docblock'><p>Create a builder to help you perform the following task:</p>
-
-<p>Updates an existing view (profile).</p>
-
-<h1 id='arguments-69' class='section-header'><a href='#arguments-69'>Arguments</a></h1>
+<h1 id='arguments-40' class='section-header'><a href='#arguments-40'>Arguments</a></h1>
 <ul>
 <li><code>request</code> - No description provided.</li>
 <li><code>accountId</code> - Account ID to which the view (profile) belongs</li>
 <li><code>webPropertyId</code> - Web property ID to which the view (profile) belongs</li>
 <li><code>profileId</code> - ID of the view (profile) to be updated.</li>
 </ul>
-</div><h4 id='method.profile_filter_links_get' class='method'><code>fn <a href='#method.profile_filter_links_get' class='fnname'>profile_filter_links_get</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, link_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementProfileFilterLinkGetCall.html' title='google_analytics3::ManagementProfileFilterLinkGetCall'>ManagementProfileFilterLinkGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.filters_get' class='method'><code>fn <a href='#method.filters_get' class='fnname'>filters_get</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, filter_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementFilterGetCall.html' title='google_analytics3::ManagementFilterGetCall'>ManagementFilterGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>Returns a single profile filter link.</p>
+<p>Returns a filters to which the user has access.</p>
+
+<h1 id='arguments-41' class='section-header'><a href='#arguments-41'>Arguments</a></h1>
+<ul>
+<li><code>accountId</code> - Account ID to retrieve filters for.</li>
+<li><code>filterId</code> - Filter ID to retrieve filters for.</li>
+</ul>
+</div><h4 id='method.account_summaries_list' class='method'><code>fn <a href='#method.account_summaries_list' class='fnname'>account_summaries_list</a>(&amp;self) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementAccountSummaryListCall.html' title='google_analytics3::ManagementAccountSummaryListCall'>ManagementAccountSummaryListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Lists account summaries (lightweight tree comprised of accounts/properties/profiles) to which the user has access.</p>
+</div><h4 id='method.custom_dimensions_list' class='method'><code>fn <a href='#method.custom_dimensions_list' class='fnname'>custom_dimensions_list</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementCustomDimensionListCall.html' title='google_analytics3::ManagementCustomDimensionListCall'>ManagementCustomDimensionListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Lists custom dimensions to which the user has access.</p>
+
+<h1 id='arguments-42' class='section-header'><a href='#arguments-42'>Arguments</a></h1>
+<ul>
+<li><code>accountId</code> - Account ID for the custom dimensions to retrieve.</li>
+<li><code>webPropertyId</code> - Web property ID for the custom dimensions to retrieve.</li>
+</ul>
+</div><h4 id='method.uploads_list' class='method'><code>fn <a href='#method.uploads_list' class='fnname'>uploads_list</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, custom_data_source_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementUploadListCall.html' title='google_analytics3::ManagementUploadListCall'>ManagementUploadListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>List uploads to which the user has access.</p>
+
+<h1 id='arguments-43' class='section-header'><a href='#arguments-43'>Arguments</a></h1>
+<ul>
+<li><code>accountId</code> - Account Id for the uploads to retrieve.</li>
+<li><code>webPropertyId</code> - Web property Id for the uploads to retrieve.</li>
+<li><code>customDataSourceId</code> - Custom data source Id for uploads to retrieve.</li>
+</ul>
+</div><h4 id='method.profile_user_links_list' class='method'><code>fn <a href='#method.profile_user_links_list' class='fnname'>profile_user_links_list</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementProfileUserLinkListCall.html' title='google_analytics3::ManagementProfileUserLinkListCall'>ManagementProfileUserLinkListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Lists profile-user links for a given view (profile).</p>
+
+<h1 id='arguments-44' class='section-header'><a href='#arguments-44'>Arguments</a></h1>
+<ul>
+<li><code>accountId</code> - Account ID which the given view (profile) belongs to.</li>
+<li><code>webPropertyId</code> - Web Property ID which the given view (profile) belongs to. Can either be a specific web property ID or &#39;~all&#39;, which refers to all the web properties that user has access to.</li>
+<li><code>profileId</code> - View (Profile) ID to retrieve the profile-user links for. Can either be a specific profile ID or &#39;~all&#39;, which refers to all the profiles that user has access to.</li>
+</ul>
+</div><h4 id='method.remarketing_audience_insert' class='method'><code>fn <a href='#method.remarketing_audience_insert' class='fnname'>remarketing_audience_insert</a>(&amp;self, request: <a class='struct' href='../google_analytics3/struct.RemarketingAudience.html' title='google_analytics3::RemarketingAudience'>RemarketingAudience</a>, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementRemarketingAudienceInsertCall.html' title='google_analytics3::ManagementRemarketingAudienceInsertCall'>ManagementRemarketingAudienceInsertCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Creates a new remarketing audiences.</p>
+
+<h1 id='arguments-45' class='section-header'><a href='#arguments-45'>Arguments</a></h1>
+<ul>
+<li><code>request</code> - No description provided.</li>
+<li><code>accountId</code> - Account ID to create the remarketing audience for.</li>
+<li><code>webPropertyId</code> - Web property ID to create the remarketing audience for.</li>
+</ul>
+</div><h4 id='method.web_property_ad_words_links_delete' class='method'><code>fn <a href='#method.web_property_ad_words_links_delete' class='fnname'>web_property_ad_words_links_delete</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_ad_words_link_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementWebPropertyAdWordsLinkDeleteCall.html' title='google_analytics3::ManagementWebPropertyAdWordsLinkDeleteCall'>ManagementWebPropertyAdWordsLinkDeleteCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Deletes a web property-AdWords link.</p>
+
+<h1 id='arguments-46' class='section-header'><a href='#arguments-46'>Arguments</a></h1>
+<ul>
+<li><code>accountId</code> - ID of the account which the given web property belongs to.</li>
+<li><code>webPropertyId</code> - Web property ID to delete the AdWords link for.</li>
+<li><code>webPropertyAdWordsLinkId</code> - Web property AdWords link ID.</li>
+</ul>
+</div><h4 id='method.uploads_delete_upload_data' class='method'><code>fn <a href='#method.uploads_delete_upload_data' class='fnname'>uploads_delete_upload_data</a>(&amp;self, request: <a class='struct' href='../google_analytics3/struct.AnalyticsDataimportDeleteUploadDataRequest.html' title='google_analytics3::AnalyticsDataimportDeleteUploadDataRequest'>AnalyticsDataimportDeleteUploadDataRequest</a>, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, custom_data_source_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementUploadDeleteUploadDataCall.html' title='google_analytics3::ManagementUploadDeleteUploadDataCall'>ManagementUploadDeleteUploadDataCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Delete data associated with a previous upload.</p>
+
+<h1 id='arguments-47' class='section-header'><a href='#arguments-47'>Arguments</a></h1>
+<ul>
+<li><code>request</code> - No description provided.</li>
+<li><code>accountId</code> - Account Id for the uploads to be deleted.</li>
+<li><code>webPropertyId</code> - Web property Id for the uploads to be deleted.</li>
+<li><code>customDataSourceId</code> - Custom data source Id for the uploads to be deleted.</li>
+</ul>
+</div><h4 id='method.web_property_ad_words_links_insert' class='method'><code>fn <a href='#method.web_property_ad_words_links_insert' class='fnname'>web_property_ad_words_links_insert</a>(&amp;self, request: <a class='struct' href='../google_analytics3/struct.EntityAdWordsLink.html' title='google_analytics3::EntityAdWordsLink'>EntityAdWordsLink</a>, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementWebPropertyAdWordsLinkInsertCall.html' title='google_analytics3::ManagementWebPropertyAdWordsLinkInsertCall'>ManagementWebPropertyAdWordsLinkInsertCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Creates a webProperty-AdWords link.</p>
+
+<h1 id='arguments-48' class='section-header'><a href='#arguments-48'>Arguments</a></h1>
+<ul>
+<li><code>request</code> - No description provided.</li>
+<li><code>accountId</code> - ID of the Google Analytics account to create the link for.</li>
+<li><code>webPropertyId</code> - Web property ID to create the link for.</li>
+</ul>
+</div><h4 id='method.experiments_delete' class='method'><code>fn <a href='#method.experiments_delete' class='fnname'>experiments_delete</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, experiment_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementExperimentDeleteCall.html' title='google_analytics3::ManagementExperimentDeleteCall'>ManagementExperimentDeleteCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Delete an experiment.</p>
+
+<h1 id='arguments-49' class='section-header'><a href='#arguments-49'>Arguments</a></h1>
+<ul>
+<li><code>accountId</code> - Account ID to which the experiment belongs</li>
+<li><code>webPropertyId</code> - Web property ID to which the experiment belongs</li>
+<li><code>profileId</code> - View (Profile) ID to which the experiment belongs</li>
+<li><code>experimentId</code> - ID of the experiment to delete</li>
+</ul>
+</div><h4 id='method.goals_update' class='method'><code>fn <a href='#method.goals_update' class='fnname'>goals_update</a>(&amp;self, request: <a class='struct' href='../google_analytics3/struct.Goal.html' title='google_analytics3::Goal'>Goal</a>, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, goal_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementGoalUpdateCall.html' title='google_analytics3::ManagementGoalUpdateCall'>ManagementGoalUpdateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Updates an existing goal.</p>
+
+<h1 id='arguments-50' class='section-header'><a href='#arguments-50'>Arguments</a></h1>
+<ul>
+<li><code>request</code> - No description provided.</li>
+<li><code>accountId</code> - Account ID to update the goal.</li>
+<li><code>webPropertyId</code> - Web property ID to update the goal.</li>
+<li><code>profileId</code> - View (Profile) ID to update the goal.</li>
+<li><code>goalId</code> - Index of the goal to be updated.</li>
+</ul>
+</div><h4 id='method.custom_data_sources_list' class='method'><code>fn <a href='#method.custom_data_sources_list' class='fnname'>custom_data_sources_list</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementCustomDataSourceListCall.html' title='google_analytics3::ManagementCustomDataSourceListCall'>ManagementCustomDataSourceListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>List custom data sources to which the user has access.</p>
+
+<h1 id='arguments-51' class='section-header'><a href='#arguments-51'>Arguments</a></h1>
+<ul>
+<li><code>accountId</code> - Account Id for the custom data sources to retrieve.</li>
+<li><code>webPropertyId</code> - Web property Id for the custom data sources to retrieve.</li>
+</ul>
+</div><h4 id='method.custom_metrics_list' class='method'><code>fn <a href='#method.custom_metrics_list' class='fnname'>custom_metrics_list</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementCustomMetricListCall.html' title='google_analytics3::ManagementCustomMetricListCall'>ManagementCustomMetricListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Lists custom metrics to which the user has access.</p>
+
+<h1 id='arguments-52' class='section-header'><a href='#arguments-52'>Arguments</a></h1>
+<ul>
+<li><code>accountId</code> - Account ID for the custom metrics to retrieve.</li>
+<li><code>webPropertyId</code> - Web property ID for the custom metrics to retrieve.</li>
+</ul>
+</div><h4 id='method.unsampled_reports_list' class='method'><code>fn <a href='#method.unsampled_reports_list' class='fnname'>unsampled_reports_list</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementUnsampledReportListCall.html' title='google_analytics3::ManagementUnsampledReportListCall'>ManagementUnsampledReportListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Lists unsampled reports to which the user has access.</p>
+
+<h1 id='arguments-53' class='section-header'><a href='#arguments-53'>Arguments</a></h1>
+<ul>
+<li><code>accountId</code> - Account ID to retrieve unsampled reports for. Must be a specific account ID, ~all is not supported.</li>
+<li><code>webPropertyId</code> - Web property ID to retrieve unsampled reports for. Must be a specific web property ID, ~all is not supported.</li>
+<li><code>profileId</code> - View (Profile) ID to retrieve unsampled reports for. Must be a specific view (profile) ID, ~all is not supported.</li>
+</ul>
+</div><h4 id='method.webproperties_get' class='method'><code>fn <a href='#method.webproperties_get' class='fnname'>webproperties_get</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementWebpropertyGetCall.html' title='google_analytics3::ManagementWebpropertyGetCall'>ManagementWebpropertyGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Gets a web property to which the user has access.</p>
+
+<h1 id='arguments-54' class='section-header'><a href='#arguments-54'>Arguments</a></h1>
+<ul>
+<li><code>accountId</code> - Account ID to retrieve the web property for.</li>
+<li><code>webPropertyId</code> - ID to retrieve the web property for.</li>
+</ul>
+</div><h4 id='method.profiles_update' class='method'><code>fn <a href='#method.profiles_update' class='fnname'>profiles_update</a>(&amp;self, request: <a class='struct' href='../google_analytics3/struct.Profile.html' title='google_analytics3::Profile'>Profile</a>, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementProfileUpdateCall.html' title='google_analytics3::ManagementProfileUpdateCall'>ManagementProfileUpdateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Updates an existing view (profile).</p>
+
+<h1 id='arguments-55' class='section-header'><a href='#arguments-55'>Arguments</a></h1>
+<ul>
+<li><code>request</code> - No description provided.</li>
+<li><code>accountId</code> - Account ID to which the view (profile) belongs</li>
+<li><code>webPropertyId</code> - Web property ID to which the view (profile) belongs</li>
+<li><code>profileId</code> - ID of the view (profile) to be updated.</li>
+</ul>
+</div><h4 id='method.custom_dimensions_get' class='method'><code>fn <a href='#method.custom_dimensions_get' class='fnname'>custom_dimensions_get</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, custom_dimension_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementCustomDimensionGetCall.html' title='google_analytics3::ManagementCustomDimensionGetCall'>ManagementCustomDimensionGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Get a custom dimension to which the user has access.</p>
+
+<h1 id='arguments-56' class='section-header'><a href='#arguments-56'>Arguments</a></h1>
+<ul>
+<li><code>accountId</code> - Account ID for the custom dimension to retrieve.</li>
+<li><code>webPropertyId</code> - Web property ID for the custom dimension to retrieve.</li>
+<li><code>customDimensionId</code> - The ID of the custom dimension to retrieve.</li>
+</ul>
+</div><h4 id='method.remarketing_audience_get' class='method'><code>fn <a href='#method.remarketing_audience_get' class='fnname'>remarketing_audience_get</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, remarketing_audience_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementRemarketingAudienceGetCall.html' title='google_analytics3::ManagementRemarketingAudienceGetCall'>ManagementRemarketingAudienceGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Gets remarketing audiences to which the user has access.</p>
+
+<h1 id='arguments-57' class='section-header'><a href='#arguments-57'>Arguments</a></h1>
+<ul>
+<li><code>accountId</code> - Account ID for the remarketing audience to retrieve.</li>
+<li><code>webPropertyId</code> - Web property ID for the remarketing audience to retrieve.</li>
+<li><code>remarketingAudienceId</code> - The ID to retrieve the Remarketing Audience for.</li>
+</ul>
+</div><h4 id='method.webproperties_patch' class='method'><code>fn <a href='#method.webproperties_patch' class='fnname'>webproperties_patch</a>(&amp;self, request: <a class='struct' href='../google_analytics3/struct.Webproperty.html' title='google_analytics3::Webproperty'>Webproperty</a>, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementWebpropertyPatchCall.html' title='google_analytics3::ManagementWebpropertyPatchCall'>ManagementWebpropertyPatchCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Updates an existing web property. This method supports patch semantics.</p>
+
+<h1 id='arguments-58' class='section-header'><a href='#arguments-58'>Arguments</a></h1>
+<ul>
+<li><code>request</code> - No description provided.</li>
+<li><code>accountId</code> - Account ID to which the web property belongs</li>
+<li><code>webPropertyId</code> - Web property ID</li>
+</ul>
+</div><h4 id='method.webproperties_update' class='method'><code>fn <a href='#method.webproperties_update' class='fnname'>webproperties_update</a>(&amp;self, request: <a class='struct' href='../google_analytics3/struct.Webproperty.html' title='google_analytics3::Webproperty'>Webproperty</a>, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementWebpropertyUpdateCall.html' title='google_analytics3::ManagementWebpropertyUpdateCall'>ManagementWebpropertyUpdateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Updates an existing web property.</p>
+
+<h1 id='arguments-59' class='section-header'><a href='#arguments-59'>Arguments</a></h1>
+<ul>
+<li><code>request</code> - No description provided.</li>
+<li><code>accountId</code> - Account ID to which the web property belongs</li>
+<li><code>webPropertyId</code> - Web property ID</li>
+</ul>
+</div><h4 id='method.custom_dimensions_insert' class='method'><code>fn <a href='#method.custom_dimensions_insert' class='fnname'>custom_dimensions_insert</a>(&amp;self, request: <a class='struct' href='../google_analytics3/struct.CustomDimension.html' title='google_analytics3::CustomDimension'>CustomDimension</a>, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementCustomDimensionInsertCall.html' title='google_analytics3::ManagementCustomDimensionInsertCall'>ManagementCustomDimensionInsertCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Create a new custom dimension.</p>
+
+<h1 id='arguments-60' class='section-header'><a href='#arguments-60'>Arguments</a></h1>
+<ul>
+<li><code>request</code> - No description provided.</li>
+<li><code>accountId</code> - Account ID for the custom dimension to create.</li>
+<li><code>webPropertyId</code> - Web property ID for the custom dimension to create.</li>
+</ul>
+</div><h4 id='method.account_user_links_delete' class='method'><code>fn <a href='#method.account_user_links_delete' class='fnname'>account_user_links_delete</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, link_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementAccountUserLinkDeleteCall.html' title='google_analytics3::ManagementAccountUserLinkDeleteCall'>ManagementAccountUserLinkDeleteCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Removes a user from the given account.</p>
+
+<h1 id='arguments-61' class='section-header'><a href='#arguments-61'>Arguments</a></h1>
+<ul>
+<li><code>accountId</code> - Account ID to delete the user link for.</li>
+<li><code>linkId</code> - Link ID to delete the user link for.</li>
+</ul>
+</div><h4 id='method.profile_user_links_insert' class='method'><code>fn <a href='#method.profile_user_links_insert' class='fnname'>profile_user_links_insert</a>(&amp;self, request: <a class='struct' href='../google_analytics3/struct.EntityUserLink.html' title='google_analytics3::EntityUserLink'>EntityUserLink</a>, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementProfileUserLinkInsertCall.html' title='google_analytics3::ManagementProfileUserLinkInsertCall'>ManagementProfileUserLinkInsertCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Adds a new user to the given view (profile).</p>
+
+<h1 id='arguments-62' class='section-header'><a href='#arguments-62'>Arguments</a></h1>
+<ul>
+<li><code>request</code> - No description provided.</li>
+<li><code>accountId</code> - Account ID to create the user link for.</li>
+<li><code>webPropertyId</code> - Web Property ID to create the user link for.</li>
+<li><code>profileId</code> - View (Profile) ID to create the user link for.</li>
+</ul>
+</div><h4 id='method.experiments_update' class='method'><code>fn <a href='#method.experiments_update' class='fnname'>experiments_update</a>(&amp;self, request: <a class='struct' href='../google_analytics3/struct.Experiment.html' title='google_analytics3::Experiment'>Experiment</a>, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, experiment_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementExperimentUpdateCall.html' title='google_analytics3::ManagementExperimentUpdateCall'>ManagementExperimentUpdateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Update an existing experiment.</p>
+
+<h1 id='arguments-63' class='section-header'><a href='#arguments-63'>Arguments</a></h1>
+<ul>
+<li><code>request</code> - No description provided.</li>
+<li><code>accountId</code> - Account ID of the experiment to update.</li>
+<li><code>webPropertyId</code> - Web property ID of the experiment to update.</li>
+<li><code>profileId</code> - View (Profile) ID of the experiment to update.</li>
+<li><code>experimentId</code> - Experiment ID of the experiment to update.</li>
+</ul>
+</div><h4 id='method.webproperties_list' class='method'><code>fn <a href='#method.webproperties_list' class='fnname'>webproperties_list</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementWebpropertyListCall.html' title='google_analytics3::ManagementWebpropertyListCall'>ManagementWebpropertyListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Lists web properties to which the user has access.</p>
+
+<h1 id='arguments-64' class='section-header'><a href='#arguments-64'>Arguments</a></h1>
+<ul>
+<li><code>accountId</code> - Account ID to retrieve web properties for. Can either be a specific account ID or &#39;~all&#39;, which refers to all the accounts that user has access to.</li>
+</ul>
+</div><h4 id='method.web_property_ad_words_links_patch' class='method'><code>fn <a href='#method.web_property_ad_words_links_patch' class='fnname'>web_property_ad_words_links_patch</a>(&amp;self, request: <a class='struct' href='../google_analytics3/struct.EntityAdWordsLink.html' title='google_analytics3::EntityAdWordsLink'>EntityAdWordsLink</a>, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_ad_words_link_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementWebPropertyAdWordsLinkPatchCall.html' title='google_analytics3::ManagementWebPropertyAdWordsLinkPatchCall'>ManagementWebPropertyAdWordsLinkPatchCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Updates an existing webProperty-AdWords link. This method supports patch semantics.</p>
+
+<h1 id='arguments-65' class='section-header'><a href='#arguments-65'>Arguments</a></h1>
+<ul>
+<li><code>request</code> - No description provided.</li>
+<li><code>accountId</code> - ID of the account which the given web property belongs to.</li>
+<li><code>webPropertyId</code> - Web property ID to retrieve the AdWords link for.</li>
+<li><code>webPropertyAdWordsLinkId</code> - Web property-AdWords link ID.</li>
+</ul>
+</div><h4 id='method.goals_get' class='method'><code>fn <a href='#method.goals_get' class='fnname'>goals_get</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, goal_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementGoalGetCall.html' title='google_analytics3::ManagementGoalGetCall'>ManagementGoalGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Gets a goal to which the user has access.</p>
+
+<h1 id='arguments-66' class='section-header'><a href='#arguments-66'>Arguments</a></h1>
+<ul>
+<li><code>accountId</code> - Account ID to retrieve the goal for.</li>
+<li><code>webPropertyId</code> - Web property ID to retrieve the goal for.</li>
+<li><code>profileId</code> - View (Profile) ID to retrieve the goal for.</li>
+<li><code>goalId</code> - Goal ID to retrieve the goal for.</li>
+</ul>
+</div><h4 id='method.custom_metrics_update' class='method'><code>fn <a href='#method.custom_metrics_update' class='fnname'>custom_metrics_update</a>(&amp;self, request: <a class='struct' href='../google_analytics3/struct.CustomMetric.html' title='google_analytics3::CustomMetric'>CustomMetric</a>, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, custom_metric_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementCustomMetricUpdateCall.html' title='google_analytics3::ManagementCustomMetricUpdateCall'>ManagementCustomMetricUpdateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Updates an existing custom metric.</p>
+
+<h1 id='arguments-67' class='section-header'><a href='#arguments-67'>Arguments</a></h1>
+<ul>
+<li><code>request</code> - No description provided.</li>
+<li><code>accountId</code> - Account ID for the custom metric to update.</li>
+<li><code>webPropertyId</code> - Web property ID for the custom metric to update.</li>
+<li><code>customMetricId</code> - Custom metric ID for the custom metric to update.</li>
+</ul>
+</div><h4 id='method.remarketing_audience_patch' class='method'><code>fn <a href='#method.remarketing_audience_patch' class='fnname'>remarketing_audience_patch</a>(&amp;self, request: <a class='struct' href='../google_analytics3/struct.RemarketingAudience.html' title='google_analytics3::RemarketingAudience'>RemarketingAudience</a>, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, remarketing_audience_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementRemarketingAudiencePatchCall.html' title='google_analytics3::ManagementRemarketingAudiencePatchCall'>ManagementRemarketingAudiencePatchCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Updates an existing remarketing audiences. This method supports patch semantics.</p>
+
+<h1 id='arguments-68' class='section-header'><a href='#arguments-68'>Arguments</a></h1>
+<ul>
+<li><code>request</code> - No description provided.</li>
+<li><code>accountId</code> - Account ID for the remarketing audience to update.</li>
+<li><code>webPropertyId</code> - Web property ID for the remarketing audience to update.</li>
+<li><code>remarketingAudienceId</code> - Remarketing audience ID of the remarketing audience to update.</li>
+</ul>
+</div><h4 id='method.web_property_ad_words_links_update' class='method'><code>fn <a href='#method.web_property_ad_words_links_update' class='fnname'>web_property_ad_words_links_update</a>(&amp;self, request: <a class='struct' href='../google_analytics3/struct.EntityAdWordsLink.html' title='google_analytics3::EntityAdWordsLink'>EntityAdWordsLink</a>, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_ad_words_link_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementWebPropertyAdWordsLinkUpdateCall.html' title='google_analytics3::ManagementWebPropertyAdWordsLinkUpdateCall'>ManagementWebPropertyAdWordsLinkUpdateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Updates an existing webProperty-AdWords link.</p>
+
+<h1 id='arguments-69' class='section-header'><a href='#arguments-69'>Arguments</a></h1>
+<ul>
+<li><code>request</code> - No description provided.</li>
+<li><code>accountId</code> - ID of the account which the given web property belongs to.</li>
+<li><code>webPropertyId</code> - Web property ID to retrieve the AdWords link for.</li>
+<li><code>webPropertyAdWordsLinkId</code> - Web property-AdWords link ID.</li>
+</ul>
+</div><h4 id='method.filters_patch' class='method'><code>fn <a href='#method.filters_patch' class='fnname'>filters_patch</a>(&amp;self, request: <a class='struct' href='../google_analytics3/struct.Filter.html' title='google_analytics3::Filter'>Filter</a>, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, filter_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementFilterPatchCall.html' title='google_analytics3::ManagementFilterPatchCall'>ManagementFilterPatchCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Updates an existing filter. This method supports patch semantics.</p>
 
 <h1 id='arguments-70' class='section-header'><a href='#arguments-70'>Arguments</a></h1>
 <ul>
-<li><code>accountId</code> - Account ID to retrieve profile filter link for.</li>
-<li><code>webPropertyId</code> - Web property Id to retrieve profile filter link for.</li>
-<li><code>profileId</code> - Profile ID to retrieve filter link for.</li>
-<li><code>linkId</code> - ID of the profile filter link.</li>
+<li><code>request</code> - No description provided.</li>
+<li><code>accountId</code> - Account ID to which the filter belongs.</li>
+<li><code>filterId</code> - ID of the filter to be updated.</li>
 </ul>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_analytics3/trait.MethodsBuilder.html' title='google_analytics3::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_analytics3/struct.ManagementMethods.html' title='google_analytics3::ManagementMethods'>ManagementMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-21652' class='srclink' href='../src/google_analytics3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-analytics3-43d6fcd1d409634f/out/lib.rs.html#47590' title='goto source code'>[src]</a></span></h3>
+</div><h4 id='method.filters_list' class='method'><code>fn <a href='#method.filters_list' class='fnname'>filters_list</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementFilterListCall.html' title='google_analytics3::ManagementFilterListCall'>ManagementFilterListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Lists all filters for an account</p>
+
+<h1 id='arguments-71' class='section-header'><a href='#arguments-71'>Arguments</a></h1>
+<ul>
+<li><code>accountId</code> - Account ID to retrieve filters for.</li>
+</ul>
+</div><h4 id='method.filters_delete' class='method'><code>fn <a href='#method.filters_delete' class='fnname'>filters_delete</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, filter_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementFilterDeleteCall.html' title='google_analytics3::ManagementFilterDeleteCall'>ManagementFilterDeleteCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Delete a filter.</p>
+
+<h1 id='arguments-72' class='section-header'><a href='#arguments-72'>Arguments</a></h1>
+<ul>
+<li><code>accountId</code> - Account ID to delete the filter for.</li>
+<li><code>filterId</code> - ID of the filter to be deleted.</li>
+</ul>
+</div><h4 id='method.profiles_insert' class='method'><code>fn <a href='#method.profiles_insert' class='fnname'>profiles_insert</a>(&amp;self, request: <a class='struct' href='../google_analytics3/struct.Profile.html' title='google_analytics3::Profile'>Profile</a>, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementProfileInsertCall.html' title='google_analytics3::ManagementProfileInsertCall'>ManagementProfileInsertCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Create a new view (profile).</p>
+
+<h1 id='arguments-73' class='section-header'><a href='#arguments-73'>Arguments</a></h1>
+<ul>
+<li><code>request</code> - No description provided.</li>
+<li><code>accountId</code> - Account ID to create the view (profile) for.</li>
+<li><code>webPropertyId</code> - Web property ID to create the view (profile) for.</li>
+</ul>
+</div><h4 id='method.account_user_links_list' class='method'><code>fn <a href='#method.account_user_links_list' class='fnname'>account_user_links_list</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementAccountUserLinkListCall.html' title='google_analytics3::ManagementAccountUserLinkListCall'>ManagementAccountUserLinkListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Lists account-user links for a given account.</p>
+
+<h1 id='arguments-74' class='section-header'><a href='#arguments-74'>Arguments</a></h1>
+<ul>
+<li><code>accountId</code> - Account ID to retrieve the user links for.</li>
+</ul>
+</div><h4 id='method.remarketing_audience_list' class='method'><code>fn <a href='#method.remarketing_audience_list' class='fnname'>remarketing_audience_list</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, web_property_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_analytics3/struct.ManagementRemarketingAudienceListCall.html' title='google_analytics3::ManagementRemarketingAudienceListCall'>ManagementRemarketingAudienceListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Lists remarketing audiences to which the user has access.</p>
+
+<h1 id='arguments-75' class='section-header'><a href='#arguments-75'>Arguments</a></h1>
+<ul>
+<li><code>accountId</code> - Account ID for the remarketing audience to retrieve.</li>
+<li><code>webPropertyId</code> - Web property ID for the remarketing audience to retrieve.</li>
+</ul>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='trait' href='../google_analytics3/trait.MethodsBuilder.html' title='google_analytics3::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_analytics3/struct.ManagementMethods.html' title='google_analytics3::ManagementMethods'>ManagementMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-21581' class='srclink' href='../src/google_analytics3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-analytics3-c434b42299c52e5e/out/lib.rs.html#38791' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 

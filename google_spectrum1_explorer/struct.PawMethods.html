@@ -47,8 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-6758' class='srclink' href='../src/google_spectrum1_explorer/home/byron/dev/rust/google-apis-rs/target/debug/build/google-spectrum1_explorer-1a97dd650a0b326a/out/lib.rs.html#14037-14039' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct PawMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
+               </span><a id='src-6212' class='srclink' href='../src/google_spectrum1_explorer/home/byron/dev/rust/google-apis-rs/target/debug/build/google-spectrum1_explorer-59461aa9ad4ecdae/out/lib.rs.html#10673-10675' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct PawMethods&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>paw</em> resources.
 It is not used directly, but through the <code>Spectrum</code> hub.</p>
@@ -74,8 +74,8 @@ It is not used directly, but through the <code>Spectrum</code> hub.</p>
 <span class='comment'>// like `get_spectrum(...)`, `get_spectrum_batch(...)`, `init(...)`, `notify_spectrum_use(...)`, `register(...)` and `verify_device(...)`</span>
 <span class='comment'>// to build up your call.</span>
 <span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>paws</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_spectrum1_explorer/struct.PawMethods.html' title='google_spectrum1_explorer::PawMethods'>PawMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-6767' class='srclink' href='../src/google_spectrum1_explorer/home/byron/dev/rust/google-apis-rs/target/debug/build/google-spectrum1_explorer-1a97dd650a0b326a/out/lib.rs.html#14041-14125' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.notify_spectrum_use' class='method'><code>fn <a href='#method.notify_spectrum_use' class='fnname'>notify_spectrum_use</a>(&amp;self, request: <a class='struct' href='../google_spectrum1_explorer/struct.PawsNotifySpectrumUseRequest.html' title='google_spectrum1_explorer::PawsNotifySpectrumUseRequest'>PawsNotifySpectrumUseRequest</a>) -&gt; <a class='struct' href='../google_spectrum1_explorer/struct.PawNotifySpectrumUseCall.html' title='google_spectrum1_explorer::PawNotifySpectrumUseCall'>PawNotifySpectrumUseCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='struct' href='../google_spectrum1_explorer/struct.PawMethods.html' title='google_spectrum1_explorer::PawMethods'>PawMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-6221' class='srclink' href='../src/google_spectrum1_explorer/home/byron/dev/rust/google-apis-rs/target/debug/build/google-spectrum1_explorer-59461aa9ad4ecdae/out/lib.rs.html#10677-10761' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.notify_spectrum_use' class='method'><code>fn <a href='#method.notify_spectrum_use' class='fnname'>notify_spectrum_use</a>(&amp;self, request: <a class='struct' href='../google_spectrum1_explorer/struct.PawsNotifySpectrumUseRequest.html' title='google_spectrum1_explorer::PawsNotifySpectrumUseRequest'>PawsNotifySpectrumUseRequest</a>) -&gt; <a class='struct' href='../google_spectrum1_explorer/struct.PawNotifySpectrumUseCall.html' title='google_spectrum1_explorer::PawNotifySpectrumUseCall'>PawNotifySpectrumUseCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Notifies the database that the device has selected certain frequency ranges for transmission. Only to be invoked when required by the regulator. The Google Spectrum Database does not operate in domains that require notification, so this always yields an UNIMPLEMENTED error.</p>
@@ -84,7 +84,7 @@ It is not used directly, but through the <code>Spectrum</code> hub.</p>
 <ul>
 <li><code>request</code> - No description provided.</li>
 </ul>
-</div><h4 id='method.register' class='method'><code>fn <a href='#method.register' class='fnname'>register</a>(&amp;self, request: <a class='struct' href='../google_spectrum1_explorer/struct.PawsRegisterRequest.html' title='google_spectrum1_explorer::PawsRegisterRequest'>PawsRegisterRequest</a>) -&gt; <a class='struct' href='../google_spectrum1_explorer/struct.PawRegisterCall.html' title='google_spectrum1_explorer::PawRegisterCall'>PawRegisterCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.register' class='method'><code>fn <a href='#method.register' class='fnname'>register</a>(&amp;self, request: <a class='struct' href='../google_spectrum1_explorer/struct.PawsRegisterRequest.html' title='google_spectrum1_explorer::PawsRegisterRequest'>PawsRegisterRequest</a>) -&gt; <a class='struct' href='../google_spectrum1_explorer/struct.PawRegisterCall.html' title='google_spectrum1_explorer::PawRegisterCall'>PawRegisterCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>The Google Spectrum Database implements registration in the getSpectrum method. As such this always returns an UNIMPLEMENTED error.</p>
@@ -93,7 +93,7 @@ It is not used directly, but through the <code>Spectrum</code> hub.</p>
 <ul>
 <li><code>request</code> - No description provided.</li>
 </ul>
-</div><h4 id='method.get_spectrum' class='method'><code>fn <a href='#method.get_spectrum' class='fnname'>get_spectrum</a>(&amp;self, request: <a class='struct' href='../google_spectrum1_explorer/struct.PawsGetSpectrumRequest.html' title='google_spectrum1_explorer::PawsGetSpectrumRequest'>PawsGetSpectrumRequest</a>) -&gt; <a class='struct' href='../google_spectrum1_explorer/struct.PawGetSpectrumCall.html' title='google_spectrum1_explorer::PawGetSpectrumCall'>PawGetSpectrumCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.get_spectrum' class='method'><code>fn <a href='#method.get_spectrum' class='fnname'>get_spectrum</a>(&amp;self, request: <a class='struct' href='../google_spectrum1_explorer/struct.PawsGetSpectrumRequest.html' title='google_spectrum1_explorer::PawsGetSpectrumRequest'>PawsGetSpectrumRequest</a>) -&gt; <a class='struct' href='../google_spectrum1_explorer/struct.PawGetSpectrumCall.html' title='google_spectrum1_explorer::PawGetSpectrumCall'>PawGetSpectrumCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Requests information about the available spectrum for a device at a location. Requests from a fixed-mode device must include owner information so the device can be registered with the database.</p>
@@ -102,7 +102,7 @@ It is not used directly, but through the <code>Spectrum</code> hub.</p>
 <ul>
 <li><code>request</code> - No description provided.</li>
 </ul>
-</div><h4 id='method.init' class='method'><code>fn <a href='#method.init' class='fnname'>init</a>(&amp;self, request: <a class='struct' href='../google_spectrum1_explorer/struct.PawsInitRequest.html' title='google_spectrum1_explorer::PawsInitRequest'>PawsInitRequest</a>) -&gt; <a class='struct' href='../google_spectrum1_explorer/struct.PawInitCall.html' title='google_spectrum1_explorer::PawInitCall'>PawInitCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.init' class='method'><code>fn <a href='#method.init' class='fnname'>init</a>(&amp;self, request: <a class='struct' href='../google_spectrum1_explorer/struct.PawsInitRequest.html' title='google_spectrum1_explorer::PawsInitRequest'>PawsInitRequest</a>) -&gt; <a class='struct' href='../google_spectrum1_explorer/struct.PawInitCall.html' title='google_spectrum1_explorer::PawInitCall'>PawInitCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Initializes the connection between a white space device and the database.</p>
@@ -111,7 +111,7 @@ It is not used directly, but through the <code>Spectrum</code> hub.</p>
 <ul>
 <li><code>request</code> - No description provided.</li>
 </ul>
-</div><h4 id='method.get_spectrum_batch' class='method'><code>fn <a href='#method.get_spectrum_batch' class='fnname'>get_spectrum_batch</a>(&amp;self, request: <a class='struct' href='../google_spectrum1_explorer/struct.PawsGetSpectrumBatchRequest.html' title='google_spectrum1_explorer::PawsGetSpectrumBatchRequest'>PawsGetSpectrumBatchRequest</a>) -&gt; <a class='struct' href='../google_spectrum1_explorer/struct.PawGetSpectrumBatchCall.html' title='google_spectrum1_explorer::PawGetSpectrumBatchCall'>PawGetSpectrumBatchCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.get_spectrum_batch' class='method'><code>fn <a href='#method.get_spectrum_batch' class='fnname'>get_spectrum_batch</a>(&amp;self, request: <a class='struct' href='../google_spectrum1_explorer/struct.PawsGetSpectrumBatchRequest.html' title='google_spectrum1_explorer::PawsGetSpectrumBatchRequest'>PawsGetSpectrumBatchRequest</a>) -&gt; <a class='struct' href='../google_spectrum1_explorer/struct.PawGetSpectrumBatchCall.html' title='google_spectrum1_explorer::PawGetSpectrumBatchCall'>PawGetSpectrumBatchCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>The Google Spectrum Database does not support batch requests, so this method always yields an UNIMPLEMENTED error.</p>
@@ -120,7 +120,7 @@ It is not used directly, but through the <code>Spectrum</code> hub.</p>
 <ul>
 <li><code>request</code> - No description provided.</li>
 </ul>
-</div><h4 id='method.verify_device' class='method'><code>fn <a href='#method.verify_device' class='fnname'>verify_device</a>(&amp;self, request: <a class='struct' href='../google_spectrum1_explorer/struct.PawsVerifyDeviceRequest.html' title='google_spectrum1_explorer::PawsVerifyDeviceRequest'>PawsVerifyDeviceRequest</a>) -&gt; <a class='struct' href='../google_spectrum1_explorer/struct.PawVerifyDeviceCall.html' title='google_spectrum1_explorer::PawVerifyDeviceCall'>PawVerifyDeviceCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.verify_device' class='method'><code>fn <a href='#method.verify_device' class='fnname'>verify_device</a>(&amp;self, request: <a class='struct' href='../google_spectrum1_explorer/struct.PawsVerifyDeviceRequest.html' title='google_spectrum1_explorer::PawsVerifyDeviceRequest'>PawsVerifyDeviceRequest</a>) -&gt; <a class='struct' href='../google_spectrum1_explorer/struct.PawVerifyDeviceCall.html' title='google_spectrum1_explorer::PawVerifyDeviceCall'>PawVerifyDeviceCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Validates a device for white space use in accordance with regulatory rules. The Google Spectrum Database does not support master/slave configurations, so this always yields an UNIMPLEMENTED error.</p>
@@ -129,7 +129,7 @@ It is not used directly, but through the <code>Spectrum</code> hub.</p>
 <ul>
 <li><code>request</code> - No description provided.</li>
 </ul>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_spectrum1_explorer/trait.MethodsBuilder.html' title='google_spectrum1_explorer::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_spectrum1_explorer/struct.PawMethods.html' title='google_spectrum1_explorer::PawMethods'>PawMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-6763' class='srclink' href='../src/google_spectrum1_explorer/home/byron/dev/rust/google-apis-rs/target/debug/build/google-spectrum1_explorer-1a97dd650a0b326a/out/lib.rs.html#14040' title='goto source code'>[src]</a></span></h3>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='trait' href='../google_spectrum1_explorer/trait.MethodsBuilder.html' title='google_spectrum1_explorer::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_spectrum1_explorer/struct.PawMethods.html' title='google_spectrum1_explorer::PawMethods'>PawMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-6217' class='srclink' href='../src/google_spectrum1_explorer/home/byron/dev/rust/google-apis-rs/target/debug/build/google-spectrum1_explorer-59461aa9ad4ecdae/out/lib.rs.html#10676' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 

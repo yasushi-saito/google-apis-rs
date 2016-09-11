@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Verify Assertion - Identity Toolkit v0.3.6+20160324</title>
+  <title>Verify Assertion - Identity Toolkit v0.3.6+20160812</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -32,7 +32,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Identity Toolkit v0.3.6+20160324</a>
+        <a href=".." class="icon icon-home"> Identity Toolkit v0.3.6+20160812</a>
         
       </div>
 
@@ -164,7 +164,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Identity Toolkit v0.3.6+20160324</a>
+        <a href="..">Identity Toolkit v0.3.6+20160812</a>
       </nav>
 
       
@@ -203,6 +203,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   pending-id-token: string
   post-body: string
   request-uri: string
+  return-idp-credential: boolean
   return-refresh-token: boolean
   return-secure-token: boolean
   session-id: string
@@ -211,31 +212,35 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    delegated-project-number=ea</code><ul>
+<li><code>-r .    delegated-project-number=sed</code><ul>
 <li>GCP project number of the requesting delegated app. Currently only intended for Firebase V1 migration.</li>
 </ul>
 </li>
-<li><code>id-token=sadipscing</code><ul>
+<li><code>id-token=aliquyam</code><ul>
 <li>The GITKit token of the authenticated user.</li>
 </ul>
 </li>
-<li><code>instance-id=rebum.</code><ul>
+<li><code>instance-id=sit</code><ul>
 <li>Instance id token of the app.</li>
 </ul>
 </li>
-<li><code>pending-id-token=dolore</code><ul>
+<li><code>pending-id-token=eirmod</code><ul>
 <li>The GITKit token for the non-trusted IDP pending to be confirmed by the user.</li>
 </ul>
 </li>
-<li><code>post-body=nonumy</code><ul>
+<li><code>post-body=consetetur</code><ul>
 <li>The post body if the request is a HTTP POST.</li>
 </ul>
 </li>
-<li><code>request-uri=sed</code><ul>
+<li><code>request-uri=labore</code><ul>
 <li>The URI to which the IDP redirects the user back. It may contain federated login result params added by the IDP.</li>
 </ul>
 </li>
-<li><code>return-refresh-token=false</code><ul>
+<li><code>return-idp-credential=true</code><ul>
+<li>Whether return 200 and IDP credential rather than throw exception when federated id is already linked.</li>
+</ul>
+</li>
+<li><code>return-refresh-token=true</code><ul>
 <li>Whether to return refresh tokens.</li>
 </ul>
 </li>
@@ -243,7 +248,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>Whether return sts id token and refresh token instead of gitkit token.</li>
 </ul>
 </li>
-<li><code>session-id=eirmod</code><ul>
+<li><code>session-id=aliquyam</code><ul>
 <li>Session ID, which should match the one in previous createAuthUri request.</li>
 </ul>
 </li>
@@ -357,7 +362,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <!--
 MkDocs version  : 0.12.2
-Docs Build Date : 2016-07-23 16:06:06.171661
+Docs Build Date : 2016-09-11 17:56:08.786171
 -->
 </body>
 </html>

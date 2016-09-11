@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Diagnostics List - proximitybeacon v0.3.6+20150729</title>
+  <title>Diagnostics List - proximitybeacon v0.3.6+20160429</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -32,7 +32,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> proximitybeacon v0.3.6+20150729</a>
+        <a href=".." class="icon icon-home"> proximitybeacon v0.3.6+20160429</a>
         
       </div>
 
@@ -101,6 +101,9 @@
                     
                         <ul>
                         
+                            <li class="toctree-l3"><a href="#scopes">Scopes</a></li>
+                            
+                        
                             <li class="toctree-l3"><a href="#required-scalar-argument">Required Scalar Argument</a></li>
                             
                         
@@ -141,10 +144,26 @@
 
     
         
+            <span>Methods</span>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../methods_get-eidparams/">Get Eidparams</a>
+                    
+                </li>
+            
+        
+
+    
+        
             <span>Namespaces</span>
             
                 <li class="toctree-l2 ">
                     <a class="" href="../namespaces_list/">List</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../namespaces_update/">Update</a>
                     
                 </li>
             
@@ -162,7 +181,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">proximitybeacon v0.3.6+20150729</a>
+        <a href="..">proximitybeacon v0.3.6+20160429</a>
       </nav>
 
       
@@ -189,7 +208,11 @@
 </div>
           <div role="main">
             <div class="section">
-              <p>List the diagnostics for a single beacon. You can also list diagnostics for all the beacons owned by your Google Developers Console project by using the beacon name <code>beacons/-</code>.</p>
+              <p>List the diagnostics for a single beacon. You can also list diagnostics for all the beacons owned by your Google Developers Console project by using the beacon name <code>beacons/-</code>. Authenticate using an <a href="https://developers.google.com/identity/protocols/OAuth2">OAuth access token</a> from a signed-in user with <strong>viewer</strong>, <strong>Is owner</strong> or <strong>Can edit</strong> permissions in the Google Developers Console project.</p>
+<h1 id="scopes">Scopes</h1>
+<p>You will need authorization for the <em>https://www.googleapis.com/auth/userlocation.beacon.registry</em> scope to make a valid call.</p>
+<p>If unset, the scope for this method defaults to <em>https://www.googleapis.com/auth/userlocation.beacon.registry</em>.
+You can set the scope for this method like this: <code>proximitybeacon1-beta1 --scope &lt;scope&gt; beacons diagnostics-list ...</code></p>
 <h1 id="required-scalar-argument">Required Scalar Argument</h1>
 <ul>
 <li><strong>&lt;beacon-name&gt;</strong> <em>(string)</em><ul>
@@ -214,15 +237,21 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p alert-filter=string</strong></p>
-<ul>
-<li>Requests only beacons that have the given alert. For example, to find beacons that have low batteries use <code>alert_filter=LOW_BATTERY</code>.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p page-token=string</strong></p>
 <ul>
 <li>Requests results that occur after the <code>page_token</code>, obtained from the response to a previous request. Optional.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p project-id=string</strong></p>
+<ul>
+<li>Requests only diagnostic records for the given project id. If not set, then the project making the request will be used for looking up diagnostic records. Optional.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p alert-filter=string</strong></p>
+<ul>
+<li>Requests only beacons that have the given alert. For example, to find beacons that have low batteries use <code>alert_filter=LOW_BATTERY</code>.</li>
 </ul>
 </li>
 <li>
@@ -358,7 +387,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 
 <!--
 MkDocs version  : 0.12.2
-Docs Build Date : 2016-07-23 16:04:42.665176
+Docs Build Date : 2016-09-11 17:53:24.411749
 -->
 </body>
 </html>

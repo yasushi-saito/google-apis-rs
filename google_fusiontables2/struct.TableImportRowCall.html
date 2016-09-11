@@ -47,8 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-7591' class='srclink' href='../src/google_fusiontables2/home/byron/dev/rust/google-apis-rs/target/debug/build/google-fusiontables2-aab710f734c6a354/out/lib.rs.html#19048-19059' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct TableImportRowCall&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
+               </span><a id='src-7240' class='srclink' href='../src/google_fusiontables2/home/byron/dev/rust/google-apis-rs/target/debug/build/google-fusiontables2-7a7cefaee2ad8385/out/lib.rs.html#16799-16810' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct TableImportRowCall&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>Imports more rows into a table.</p>
 
@@ -66,12 +66,12 @@ It is not used directly, but through a <code>TableMethods</code> instance.</p>
 <span class='comment'>// Values shown here are possibly random and not representative !</span>
 <span class='kw'>let</span> <span class='ident'>result</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>table</span>().<span class='ident'>import_rows</span>(<span class='string'>&quot;tableId&quot;</span>)
              .<span class='ident'>start_line</span>(<span class='op'>-</span><span class='number'>52</span>)
-             .<span class='ident'>is_strict</span>(<span class='boolvalue'>true</span>)
+             .<span class='ident'>is_strict</span>(<span class='bool-val'>true</span>)
              .<span class='ident'>end_line</span>(<span class='op'>-</span><span class='number'>28</span>)
              .<span class='ident'>encoding</span>(<span class='string'>&quot;rebum.&quot;</span>)
              .<span class='ident'>delimiter</span>(<span class='string'>&quot;consetetur&quot;</span>)
              .<span class='ident'>upload_resumable</span>(<span class='ident'>fs</span>::<span class='ident'>File</span>::<span class='ident'>open</span>(<span class='string'>&quot;file.ext&quot;</span>).<span class='ident'>unwrap</span>(), <span class='string'>&quot;application/octet-stream&quot;</span>.<span class='ident'>parse</span>().<span class='ident'>unwrap</span>());</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_fusiontables2/struct.TableImportRowCall.html' title='google_fusiontables2::TableImportRowCall'>TableImportRowCall</a>&lt;'a, C, A&gt; <span class='where'>where C: <a class='trait' href='https://doc.rust-lang.org/nightly/core/borrow/trait.BorrowMut.html' title='core::borrow::BorrowMut'>BorrowMut</a>&lt;<a class='struct' href='../hyper/client/struct.Client.html' title='hyper::client::Client'>Client</a>&gt;, A: <a class='trait' href='../yup_oauth2/helper/trait.GetToken.html' title='yup_oauth2::helper::GetToken'>GetToken</a></span></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-7609' class='srclink' href='../src/google_fusiontables2/home/byron/dev/rust/google-apis-rs/target/debug/build/google-fusiontables2-aab710f734c6a354/out/lib.rs.html#19061-19436' title='goto source code'>[src]</a></span></h3>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='struct' href='../google_fusiontables2/struct.TableImportRowCall.html' title='google_fusiontables2::TableImportRowCall'>TableImportRowCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: <a class='trait' href='https://doc.rust-lang.org/nightly/core/borrow/trait.BorrowMut.html' title='core::borrow::BorrowMut'>BorrowMut</a>&lt;<a class='struct' href='../hyper/client/struct.Client.html' title='hyper::client::Client'>Client</a>&gt;, A: <a class='trait' href='../yup_oauth2/authenticator/trait.GetToken.html' title='yup_oauth2::authenticator::GetToken'>GetToken</a></span></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-7258' class='srclink' href='../src/google_fusiontables2/home/byron/dev/rust/google-apis-rs/target/debug/build/google-fusiontables2-7a7cefaee2ad8385/out/lib.rs.html#16812-17187' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'><h4 id='method.upload' class='method'><code>fn <a href='#method.upload' class='fnname'>upload</a>&lt;RS&gt;(self, stream: RS, mime_type: <a class='struct' href='../mime/struct.Mime.html' title='mime::Mime'>Mime</a>) -&gt; <a class='type' href='../google_fusiontables2/type.Result.html' title='google_fusiontables2::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>(</a><a class='struct' href='../hyper/client/response/struct.Response.html' title='hyper::client::response::Response'>Response</a>, <a class='struct' href='../google_fusiontables2/struct.Import.html' title='google_fusiontables2::Import'>Import</a><a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>)</a>&gt; <span class='where'>where RS: <a class='trait' href='../google_fusiontables2/trait.ReadSeek.html' title='google_fusiontables2::ReadSeek'>ReadSeek</a></span></code></h4>
 <div class='docblock'><p>Upload media all at once.
 If the upload fails for whichever reason, all progress is lost.</p>
@@ -96,41 +96,41 @@ may specify the <code>chunk_size()</code> and may cancel the operation before ea
 <li><em>multipart</em>: yes</li>
 <li><em>valid mime types</em>: &#39;application/octet-stream&#39;</li>
 </ul>
-</div><h4 id='method.table_id' class='method'><code>fn <a href='#method.table_id' class='fnname'>table_id</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_fusiontables2/struct.TableImportRowCall.html' title='google_fusiontables2::TableImportRowCall'>TableImportRowCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.table_id' class='method'><code>fn <a href='#method.table_id' class='fnname'>table_id</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_fusiontables2/struct.TableImportRowCall.html' title='google_fusiontables2::TableImportRowCall'>TableImportRowCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>The table into which new rows are being imported.</p>
 
 <p>Sets the <em>table id</em> path property to the given value.</p>
 
 <p>Even though the property as already been set when instantiating this call,
 we provide this method for API completeness.</p>
-</div><h4 id='method.start_line' class='method'><code>fn <a href='#method.start_line' class='fnname'>start_line</a>(self, new_value: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>) -&gt; <a class='struct' href='../google_fusiontables2/struct.TableImportRowCall.html' title='google_fusiontables2::TableImportRowCall'>TableImportRowCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.start_line' class='method'><code>fn <a href='#method.start_line' class='fnname'>start_line</a>(self, new_value: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>) -&gt; <a class='struct' href='../google_fusiontables2/struct.TableImportRowCall.html' title='google_fusiontables2::TableImportRowCall'>TableImportRowCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>The index of the first line from which to start importing, inclusive. Default is 0.</p>
 
 <p>Sets the <em>start line</em> query property to the given value.</p>
-</div><h4 id='method.is_strict' class='method'><code>fn <a href='#method.is_strict' class='fnname'>is_strict</a>(self, new_value: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>) -&gt; <a class='struct' href='../google_fusiontables2/struct.TableImportRowCall.html' title='google_fusiontables2::TableImportRowCall'>TableImportRowCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.is_strict' class='method'><code>fn <a href='#method.is_strict' class='fnname'>is_strict</a>(self, new_value: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>) -&gt; <a class='struct' href='../google_fusiontables2/struct.TableImportRowCall.html' title='google_fusiontables2::TableImportRowCall'>TableImportRowCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Whether the imported CSV must have the same number of values for each row. If false, rows with fewer values will be padded with empty values. Default is true.</p>
 
 <p>Sets the <em>is strict</em> query property to the given value.</p>
-</div><h4 id='method.end_line' class='method'><code>fn <a href='#method.end_line' class='fnname'>end_line</a>(self, new_value: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>) -&gt; <a class='struct' href='../google_fusiontables2/struct.TableImportRowCall.html' title='google_fusiontables2::TableImportRowCall'>TableImportRowCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.end_line' class='method'><code>fn <a href='#method.end_line' class='fnname'>end_line</a>(self, new_value: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>) -&gt; <a class='struct' href='../google_fusiontables2/struct.TableImportRowCall.html' title='google_fusiontables2::TableImportRowCall'>TableImportRowCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>The index of the line up to which data will be imported. Default is to import the entire file. If endLine is negative, it is an offset from the end of the file; the imported content will exclude the last endLine lines.</p>
 
 <p>Sets the <em>end line</em> query property to the given value.</p>
-</div><h4 id='method.encoding' class='method'><code>fn <a href='#method.encoding' class='fnname'>encoding</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_fusiontables2/struct.TableImportRowCall.html' title='google_fusiontables2::TableImportRowCall'>TableImportRowCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.encoding' class='method'><code>fn <a href='#method.encoding' class='fnname'>encoding</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_fusiontables2/struct.TableImportRowCall.html' title='google_fusiontables2::TableImportRowCall'>TableImportRowCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>The encoding of the content. Default is UTF-8. Use auto-detect if you are unsure of the encoding.</p>
 
 <p>Sets the <em>encoding</em> query property to the given value.</p>
-</div><h4 id='method.delimiter' class='method'><code>fn <a href='#method.delimiter' class='fnname'>delimiter</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_fusiontables2/struct.TableImportRowCall.html' title='google_fusiontables2::TableImportRowCall'>TableImportRowCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.delimiter' class='method'><code>fn <a href='#method.delimiter' class='fnname'>delimiter</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_fusiontables2/struct.TableImportRowCall.html' title='google_fusiontables2::TableImportRowCall'>TableImportRowCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>The delimiter used to separate cell values. This can only consist of a single character. Default is ,.</p>
 
 <p>Sets the <em>delimiter</em> query property to the given value.</p>
-</div><h4 id='method.delegate' class='method'><code>fn <a href='#method.delegate' class='fnname'>delegate</a>(self, new_value: &amp;'a mut <a class='trait' href='../google_fusiontables2/trait.Delegate.html' title='google_fusiontables2::Delegate'>Delegate</a>) -&gt; <a class='struct' href='../google_fusiontables2/struct.TableImportRowCall.html' title='google_fusiontables2::TableImportRowCall'>TableImportRowCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.delegate' class='method'><code>fn <a href='#method.delegate' class='fnname'>delegate</a>(self, new_value: &amp;'a mut <a class='trait' href='../google_fusiontables2/trait.Delegate.html' title='google_fusiontables2::Delegate'>Delegate</a>) -&gt; <a class='struct' href='../google_fusiontables2/struct.TableImportRowCall.html' title='google_fusiontables2::TableImportRowCall'>TableImportRowCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>The delegate implementation is consulted whenever there is an intermediate result, or if something goes wrong
 while executing the actual API request.</p>
 
 <p>It should be used to handle progress information, and to implement a certain level of resilience.</p>
 
 <p>Sets the <em>delegate</em> property to the given value.</p>
-</div><h4 id='method.param' class='method'><code>fn <a href='#method.param' class='fnname'>param</a>&lt;T&gt;(self, name: T, value: T) -&gt; <a class='struct' href='../google_fusiontables2/struct.TableImportRowCall.html' title='google_fusiontables2::TableImportRowCall'>TableImportRowCall</a>&lt;'a, C, A&gt; <span class='where'>where T: <a class='trait' href='https://doc.rust-lang.org/nightly/core/convert/trait.AsRef.html' title='core::convert::AsRef'>AsRef</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>&gt;</span></code></h4>
+</div><h4 id='method.param' class='method'><code>fn <a href='#method.param' class='fnname'>param</a>&lt;T&gt;(self, name: T, value: T) -&gt; <a class='struct' href='../google_fusiontables2/struct.TableImportRowCall.html' title='google_fusiontables2::TableImportRowCall'>TableImportRowCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where T: <a class='trait' href='https://doc.rust-lang.org/nightly/core/convert/trait.AsRef.html' title='core::convert::AsRef'>AsRef</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>&gt;</span></code></h4>
 <div class='docblock'><p>Set any additional parameter of the query string used in the request.
 It should be used to set parameters which are not yet available through their own
 setters.</p>
@@ -148,7 +148,7 @@ which have their own setter method. If done anyway, the request will fail.</p>
 <li><em>fields</em> (query-string) - Selector specifying which fields to include in a partial response.</li>
 <li><em>alt</em> (query-string) - Data format for the response.</li>
 </ul>
-</div><h4 id='method.add_scope' class='method'><code>fn <a href='#method.add_scope' class='fnname'>add_scope</a>&lt;T&gt;(self, scope: T) -&gt; <a class='struct' href='../google_fusiontables2/struct.TableImportRowCall.html' title='google_fusiontables2::TableImportRowCall'>TableImportRowCall</a>&lt;'a, C, A&gt; <span class='where'>where T: <a class='trait' href='https://doc.rust-lang.org/nightly/core/convert/trait.AsRef.html' title='core::convert::AsRef'>AsRef</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>&gt;</span></code></h4>
+</div><h4 id='method.add_scope' class='method'><code>fn <a href='#method.add_scope' class='fnname'>add_scope</a>&lt;T&gt;(self, scope: T) -&gt; <a class='struct' href='../google_fusiontables2/struct.TableImportRowCall.html' title='google_fusiontables2::TableImportRowCall'>TableImportRowCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where T: <a class='trait' href='https://doc.rust-lang.org/nightly/core/convert/trait.AsRef.html' title='core::convert::AsRef'>AsRef</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>&gt;</span></code></h4>
 <div class='docblock'><p>Identifies the authorization scope for the method you are building.</p>
 
 <p>Use this method to actively specify which scope should be used, instead the default <code>Scope</code> variant
@@ -160,7 +160,7 @@ tokens for more than one scope.</p>
 <p>Usually there is more than one suitable scope to authorize an operation, some of which may
 encompass more rights than others. For example, for listing resources, a <em>read-only</em> scope will be
 sufficient, a read-write scope will do as well.</p>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_fusiontables2/trait.CallBuilder.html' title='google_fusiontables2::CallBuilder'>CallBuilder</a> for <a class='struct' href='../google_fusiontables2/struct.TableImportRowCall.html' title='google_fusiontables2::TableImportRowCall'>TableImportRowCall</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-7605' class='srclink' href='../src/google_fusiontables2/home/byron/dev/rust/google-apis-rs/target/debug/build/google-fusiontables2-aab710f734c6a354/out/lib.rs.html#19060' title='goto source code'>[src]</a></span></h3>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='trait' href='../google_fusiontables2/trait.CallBuilder.html' title='google_fusiontables2::CallBuilder'>CallBuilder</a> for <a class='struct' href='../google_fusiontables2/struct.TableImportRowCall.html' title='google_fusiontables2::TableImportRowCall'>TableImportRowCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-7254' class='srclink' href='../src/google_fusiontables2/home/byron/dev/rust/google-apis-rs/target/debug/build/google-fusiontables2-7a7cefaee2ad8385/out/lib.rs.html#16811' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 

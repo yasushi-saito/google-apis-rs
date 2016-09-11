@@ -47,8 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-19848' class='srclink' href='../src/google_games1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-games1-b9bb0f61d1030f8c/out/lib.rs.html#43103-43105' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct TurnBasedMatcheMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
+               </span><a id='src-18447' class='srclink' href='../src/google_games1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-games1-00b2e1f28385176b/out/lib.rs.html#33393-33395' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct TurnBasedMatcheMethods&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>turnBasedMatche</em> resources.
 It is not used directly, but through the <code>Games</code> hub.</p>
@@ -74,8 +74,8 @@ It is not used directly, but through the <code>Games</code> hub.</p>
 <span class='comment'>// like `cancel(...)`, `create(...)`, `decline(...)`, `dismiss(...)`, `finish(...)`, `get(...)`, `join(...)`, `leave(...)`, `leave_turn(...)`, `list(...)`, `rematch(...)`, `sync(...)` and `take_turn(...)`</span>
 <span class='comment'>// to build up your call.</span>
 <span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>turn_based_matches</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_games1/struct.TurnBasedMatcheMethods.html' title='google_games1::TurnBasedMatcheMethods'>TurnBasedMatcheMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-19857' class='srclink' href='../src/google_games1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-games1-b9bb0f61d1030f8c/out/lib.rs.html#43107-43318' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.dismiss' class='method'><code>fn <a href='#method.dismiss' class='fnname'>dismiss</a>(&amp;self, match_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_games1/struct.TurnBasedMatcheDismisCall.html' title='google_games1::TurnBasedMatcheDismisCall'>TurnBasedMatcheDismisCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='struct' href='../google_games1/struct.TurnBasedMatcheMethods.html' title='google_games1::TurnBasedMatcheMethods'>TurnBasedMatcheMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-18456' class='srclink' href='../src/google_games1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-games1-00b2e1f28385176b/out/lib.rs.html#33397-33621' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.dismiss' class='method'><code>fn <a href='#method.dismiss' class='fnname'>dismiss</a>(&amp;self, match_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_games1/struct.TurnBasedMatcheDismisCall.html' title='google_games1::TurnBasedMatcheDismisCall'>TurnBasedMatcheDismisCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Dismiss a turn-based match from the match list. The match will no longer show up in the list and will not generate notifications.</p>
@@ -84,11 +84,11 @@ It is not used directly, but through the <code>Games</code> hub.</p>
 <ul>
 <li><code>matchId</code> - The ID of the match.</li>
 </ul>
-</div><h4 id='method.sync' class='method'><code>fn <a href='#method.sync' class='fnname'>sync</a>(&amp;self) -&gt; <a class='struct' href='../google_games1/struct.TurnBasedMatcheSyncCall.html' title='google_games1::TurnBasedMatcheSyncCall'>TurnBasedMatcheSyncCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.sync' class='method'><code>fn <a href='#method.sync' class='fnname'>sync</a>(&amp;self) -&gt; <a class='struct' href='../google_games1/struct.TurnBasedMatcheSyncCall.html' title='google_games1::TurnBasedMatcheSyncCall'>TurnBasedMatcheSyncCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Returns turn-based matches the player is or was involved in that changed since the last sync call, with the least recent changes coming first. Matches that should be removed from the local cache will have a status of MATCH_DELETED.</p>
-</div><h4 id='method.decline' class='method'><code>fn <a href='#method.decline' class='fnname'>decline</a>(&amp;self, match_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_games1/struct.TurnBasedMatcheDeclineCall.html' title='google_games1::TurnBasedMatcheDeclineCall'>TurnBasedMatcheDeclineCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.decline' class='method'><code>fn <a href='#method.decline' class='fnname'>decline</a>(&amp;self, match_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_games1/struct.TurnBasedMatcheDeclineCall.html' title='google_games1::TurnBasedMatcheDeclineCall'>TurnBasedMatcheDeclineCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Decline an invitation to play a turn-based match.</p>
@@ -97,7 +97,7 @@ It is not used directly, but through the <code>Games</code> hub.</p>
 <ul>
 <li><code>matchId</code> - The ID of the match.</li>
 </ul>
-</div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, match_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_games1/struct.TurnBasedMatcheGetCall.html' title='google_games1::TurnBasedMatcheGetCall'>TurnBasedMatcheGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, match_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_games1/struct.TurnBasedMatcheGetCall.html' title='google_games1::TurnBasedMatcheGetCall'>TurnBasedMatcheGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Get the data for a turn-based match.</p>
@@ -106,7 +106,7 @@ It is not used directly, but through the <code>Games</code> hub.</p>
 <ul>
 <li><code>matchId</code> - The ID of the match.</li>
 </ul>
-</div><h4 id='method.create' class='method'><code>fn <a href='#method.create' class='fnname'>create</a>(&amp;self, request: <a class='struct' href='../google_games1/struct.TurnBasedMatchCreateRequest.html' title='google_games1::TurnBasedMatchCreateRequest'>TurnBasedMatchCreateRequest</a>) -&gt; <a class='struct' href='../google_games1/struct.TurnBasedMatcheCreateCall.html' title='google_games1::TurnBasedMatcheCreateCall'>TurnBasedMatcheCreateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.create' class='method'><code>fn <a href='#method.create' class='fnname'>create</a>(&amp;self, request: <a class='struct' href='../google_games1/struct.TurnBasedMatchCreateRequest.html' title='google_games1::TurnBasedMatchCreateRequest'>TurnBasedMatchCreateRequest</a>) -&gt; <a class='struct' href='../google_games1/struct.TurnBasedMatcheCreateCall.html' title='google_games1::TurnBasedMatcheCreateCall'>TurnBasedMatcheCreateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Create a turn-based match.</p>
@@ -115,7 +115,7 @@ It is not used directly, but through the <code>Games</code> hub.</p>
 <ul>
 <li><code>request</code> - No description provided.</li>
 </ul>
-</div><h4 id='method.join' class='method'><code>fn <a href='#method.join' class='fnname'>join</a>(&amp;self, match_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_games1/struct.TurnBasedMatcheJoinCall.html' title='google_games1::TurnBasedMatcheJoinCall'>TurnBasedMatcheJoinCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.join' class='method'><code>fn <a href='#method.join' class='fnname'>join</a>(&amp;self, match_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_games1/struct.TurnBasedMatcheJoinCall.html' title='google_games1::TurnBasedMatcheJoinCall'>TurnBasedMatcheJoinCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Join a turn-based match.</p>
@@ -124,7 +124,7 @@ It is not used directly, but through the <code>Games</code> hub.</p>
 <ul>
 <li><code>matchId</code> - The ID of the match.</li>
 </ul>
-</div><h4 id='method.leave_turn' class='method'><code>fn <a href='#method.leave_turn' class='fnname'>leave_turn</a>(&amp;self, match_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, match_version: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>) -&gt; <a class='struct' href='../google_games1/struct.TurnBasedMatcheLeaveTurnCall.html' title='google_games1::TurnBasedMatcheLeaveTurnCall'>TurnBasedMatcheLeaveTurnCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.leave_turn' class='method'><code>fn <a href='#method.leave_turn' class='fnname'>leave_turn</a>(&amp;self, match_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, match_version: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>) -&gt; <a class='struct' href='../google_games1/struct.TurnBasedMatcheLeaveTurnCall.html' title='google_games1::TurnBasedMatcheLeaveTurnCall'>TurnBasedMatcheLeaveTurnCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Leave a turn-based match during the current player&#39;s turn, without canceling the match.</p>
@@ -134,7 +134,7 @@ It is not used directly, but through the <code>Games</code> hub.</p>
 <li><code>matchId</code> - The ID of the match.</li>
 <li><code>matchVersion</code> - The version of the match being updated.</li>
 </ul>
-</div><h4 id='method.cancel' class='method'><code>fn <a href='#method.cancel' class='fnname'>cancel</a>(&amp;self, match_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_games1/struct.TurnBasedMatcheCancelCall.html' title='google_games1::TurnBasedMatcheCancelCall'>TurnBasedMatcheCancelCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.cancel' class='method'><code>fn <a href='#method.cancel' class='fnname'>cancel</a>(&amp;self, match_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_games1/struct.TurnBasedMatcheCancelCall.html' title='google_games1::TurnBasedMatcheCancelCall'>TurnBasedMatcheCancelCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Cancel a turn-based match.</p>
@@ -143,7 +143,7 @@ It is not used directly, but through the <code>Games</code> hub.</p>
 <ul>
 <li><code>matchId</code> - The ID of the match.</li>
 </ul>
-</div><h4 id='method.finish' class='method'><code>fn <a href='#method.finish' class='fnname'>finish</a>(&amp;self, request: <a class='struct' href='../google_games1/struct.TurnBasedMatchResults.html' title='google_games1::TurnBasedMatchResults'>TurnBasedMatchResults</a>, match_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_games1/struct.TurnBasedMatcheFinishCall.html' title='google_games1::TurnBasedMatcheFinishCall'>TurnBasedMatcheFinishCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.finish' class='method'><code>fn <a href='#method.finish' class='fnname'>finish</a>(&amp;self, request: <a class='struct' href='../google_games1/struct.TurnBasedMatchResults.html' title='google_games1::TurnBasedMatchResults'>TurnBasedMatchResults</a>, match_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_games1/struct.TurnBasedMatcheFinishCall.html' title='google_games1::TurnBasedMatcheFinishCall'>TurnBasedMatcheFinishCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Finish a turn-based match. Each player should make this call once, after all results are in. Only the player whose turn it is may make the first call to Finish, and can pass in the final match state.</p>
@@ -153,7 +153,7 @@ It is not used directly, but through the <code>Games</code> hub.</p>
 <li><code>request</code> - No description provided.</li>
 <li><code>matchId</code> - The ID of the match.</li>
 </ul>
-</div><h4 id='method.leave' class='method'><code>fn <a href='#method.leave' class='fnname'>leave</a>(&amp;self, match_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_games1/struct.TurnBasedMatcheLeaveCall.html' title='google_games1::TurnBasedMatcheLeaveCall'>TurnBasedMatcheLeaveCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.leave' class='method'><code>fn <a href='#method.leave' class='fnname'>leave</a>(&amp;self, match_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_games1/struct.TurnBasedMatcheLeaveCall.html' title='google_games1::TurnBasedMatcheLeaveCall'>TurnBasedMatcheLeaveCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Leave a turn-based match when it is not the current player&#39;s turn, without canceling the match.</p>
@@ -162,11 +162,11 @@ It is not used directly, but through the <code>Games</code> hub.</p>
 <ul>
 <li><code>matchId</code> - The ID of the match.</li>
 </ul>
-</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self) -&gt; <a class='struct' href='../google_games1/struct.TurnBasedMatcheListCall.html' title='google_games1::TurnBasedMatcheListCall'>TurnBasedMatcheListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self) -&gt; <a class='struct' href='../google_games1/struct.TurnBasedMatcheListCall.html' title='google_games1::TurnBasedMatcheListCall'>TurnBasedMatcheListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Returns turn-based matches the player is or was involved in.</p>
-</div><h4 id='method.take_turn' class='method'><code>fn <a href='#method.take_turn' class='fnname'>take_turn</a>(&amp;self, request: <a class='struct' href='../google_games1/struct.TurnBasedMatchTurn.html' title='google_games1::TurnBasedMatchTurn'>TurnBasedMatchTurn</a>, match_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_games1/struct.TurnBasedMatcheTakeTurnCall.html' title='google_games1::TurnBasedMatcheTakeTurnCall'>TurnBasedMatcheTakeTurnCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.take_turn' class='method'><code>fn <a href='#method.take_turn' class='fnname'>take_turn</a>(&amp;self, request: <a class='struct' href='../google_games1/struct.TurnBasedMatchTurn.html' title='google_games1::TurnBasedMatchTurn'>TurnBasedMatchTurn</a>, match_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_games1/struct.TurnBasedMatcheTakeTurnCall.html' title='google_games1::TurnBasedMatcheTakeTurnCall'>TurnBasedMatcheTakeTurnCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Commit the results of a player turn.</p>
@@ -176,7 +176,7 @@ It is not used directly, but through the <code>Games</code> hub.</p>
 <li><code>request</code> - No description provided.</li>
 <li><code>matchId</code> - The ID of the match.</li>
 </ul>
-</div><h4 id='method.rematch' class='method'><code>fn <a href='#method.rematch' class='fnname'>rematch</a>(&amp;self, match_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_games1/struct.TurnBasedMatcheRematchCall.html' title='google_games1::TurnBasedMatcheRematchCall'>TurnBasedMatcheRematchCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.rematch' class='method'><code>fn <a href='#method.rematch' class='fnname'>rematch</a>(&amp;self, match_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_games1/struct.TurnBasedMatcheRematchCall.html' title='google_games1::TurnBasedMatcheRematchCall'>TurnBasedMatcheRematchCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Create a rematch of a match that was previously completed, with the same participants. This can be called by only one player on a match still in their list; the player must have called Finish first. Returns the newly created match; it will be the caller&#39;s turn.</p>
@@ -185,7 +185,7 @@ It is not used directly, but through the <code>Games</code> hub.</p>
 <ul>
 <li><code>matchId</code> - The ID of the match.</li>
 </ul>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_games1/trait.MethodsBuilder.html' title='google_games1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_games1/struct.TurnBasedMatcheMethods.html' title='google_games1::TurnBasedMatcheMethods'>TurnBasedMatcheMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-19853' class='srclink' href='../src/google_games1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-games1-b9bb0f61d1030f8c/out/lib.rs.html#43106' title='goto source code'>[src]</a></span></h3>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='trait' href='../google_games1/trait.MethodsBuilder.html' title='google_games1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_games1/struct.TurnBasedMatcheMethods.html' title='google_games1::TurnBasedMatcheMethods'>TurnBasedMatcheMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-18452' class='srclink' href='../src/google_games1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-games1-00b2e1f28385176b/out/lib.rs.html#33396' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 

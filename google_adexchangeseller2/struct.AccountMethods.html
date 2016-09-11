@@ -47,8 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-4368' class='srclink' href='../src/google_adexchangeseller2/home/byron/dev/rust/google-apis-rs/target/debug/build/google-adexchangeseller2-878b938019de0599/out/lib.rs.html#8990-8992' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct AccountMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
+               </span><a id='src-4032' class='srclink' href='../src/google_adexchangeseller2/home/byron/dev/rust/google-apis-rs/target/debug/build/google-adexchangeseller2-83340f1af5139a23/out/lib.rs.html#7026-7028' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct AccountMethods&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>account</em> resources.
 It is not used directly, but through the <code>AdExchangeSeller</code> hub.</p>
@@ -74,8 +74,8 @@ It is not used directly, but through the <code>AdExchangeSeller</code> hub.</p>
 <span class='comment'>// like `adclients_list(...)`, `alerts_list(...)`, `customchannels_get(...)`, `customchannels_list(...)`, `get(...)`, `list(...)`, `metadata_dimensions_list(...)`, `metadata_metrics_list(...)`, `preferreddeals_get(...)`, `preferreddeals_list(...)`, `reports_generate(...)`, `reports_saved_generate(...)`, `reports_saved_list(...)` and `urlchannels_list(...)`</span>
 <span class='comment'>// to build up your call.</span>
 <span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>accounts</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_adexchangeseller2/struct.AccountMethods.html' title='google_adexchangeseller2::AccountMethods'>AccountMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-4377' class='srclink' href='../src/google_adexchangeseller2/home/byron/dev/rust/google-apis-rs/target/debug/build/google-adexchangeseller2-878b938019de0599/out/lib.rs.html#8994-9242' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.reports_saved_generate' class='method'><code>fn <a href='#method.reports_saved_generate' class='fnname'>reports_saved_generate</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, saved_report_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_adexchangeseller2/struct.AccountReportSavedGenerateCall.html' title='google_adexchangeseller2::AccountReportSavedGenerateCall'>AccountReportSavedGenerateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='struct' href='../google_adexchangeseller2/struct.AccountMethods.html' title='google_adexchangeseller2::AccountMethods'>AccountMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-4041' class='srclink' href='../src/google_adexchangeseller2/home/byron/dev/rust/google-apis-rs/target/debug/build/google-adexchangeseller2-83340f1af5139a23/out/lib.rs.html#7030-7278' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.reports_saved_generate' class='method'><code>fn <a href='#method.reports_saved_generate' class='fnname'>reports_saved_generate</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, saved_report_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_adexchangeseller2/struct.AccountReportSavedGenerateCall.html' title='google_adexchangeseller2::AccountReportSavedGenerateCall'>AccountReportSavedGenerateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Generate an Ad Exchange report based on the saved report ID sent in the query parameters.</p>
@@ -85,7 +85,7 @@ It is not used directly, but through the <code>AdExchangeSeller</code> hub.</p>
 <li><code>accountId</code> - Account owning the saved report.</li>
 <li><code>savedReportId</code> - The saved report to retrieve.</li>
 </ul>
-</div><h4 id='method.metadata_metrics_list' class='method'><code>fn <a href='#method.metadata_metrics_list' class='fnname'>metadata_metrics_list</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_adexchangeseller2/struct.AccountMetadataMetricListCall.html' title='google_adexchangeseller2::AccountMetadataMetricListCall'>AccountMetadataMetricListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.metadata_metrics_list' class='method'><code>fn <a href='#method.metadata_metrics_list' class='fnname'>metadata_metrics_list</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_adexchangeseller2/struct.AccountMetadataMetricListCall.html' title='google_adexchangeseller2::AccountMetadataMetricListCall'>AccountMetadataMetricListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>List the metadata for the metrics available to this AdExchange account.</p>
@@ -94,7 +94,7 @@ It is not used directly, but through the <code>AdExchangeSeller</code> hub.</p>
 <ul>
 <li><code>accountId</code> - Account with visibility to the metrics.</li>
 </ul>
-</div><h4 id='method.reports_generate' class='method'><code>fn <a href='#method.reports_generate' class='fnname'>reports_generate</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, start_date: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, end_date: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_adexchangeseller2/struct.AccountReportGenerateCall.html' title='google_adexchangeseller2::AccountReportGenerateCall'>AccountReportGenerateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.reports_generate' class='method'><code>fn <a href='#method.reports_generate' class='fnname'>reports_generate</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, start_date: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, end_date: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_adexchangeseller2/struct.AccountReportGenerateCall.html' title='google_adexchangeseller2::AccountReportGenerateCall'>AccountReportGenerateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Generate an Ad Exchange report based on the report request sent in the query parameters. Returns the result as JSON; to retrieve output in CSV format specify &quot;alt=csv&quot; as a query parameter.</p>
@@ -105,7 +105,7 @@ It is not used directly, but through the <code>AdExchangeSeller</code> hub.</p>
 <li><code>startDate</code> - Start of the date range to report on in &quot;YYYY-MM-DD&quot; format, inclusive.</li>
 <li><code>endDate</code> - End of the date range to report on in &quot;YYYY-MM-DD&quot; format, inclusive.</li>
 </ul>
-</div><h4 id='method.urlchannels_list' class='method'><code>fn <a href='#method.urlchannels_list' class='fnname'>urlchannels_list</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, ad_client_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_adexchangeseller2/struct.AccountUrlchannelListCall.html' title='google_adexchangeseller2::AccountUrlchannelListCall'>AccountUrlchannelListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.urlchannels_list' class='method'><code>fn <a href='#method.urlchannels_list' class='fnname'>urlchannels_list</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, ad_client_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_adexchangeseller2/struct.AccountUrlchannelListCall.html' title='google_adexchangeseller2::AccountUrlchannelListCall'>AccountUrlchannelListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>List all URL channels in the specified ad client for this Ad Exchange account.</p>
@@ -115,7 +115,7 @@ It is not used directly, but through the <code>AdExchangeSeller</code> hub.</p>
 <li><code>accountId</code> - Account to which the ad client belongs.</li>
 <li><code>adClientId</code> - Ad client for which to list URL channels.</li>
 </ul>
-</div><h4 id='method.reports_saved_list' class='method'><code>fn <a href='#method.reports_saved_list' class='fnname'>reports_saved_list</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_adexchangeseller2/struct.AccountReportSavedListCall.html' title='google_adexchangeseller2::AccountReportSavedListCall'>AccountReportSavedListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.reports_saved_list' class='method'><code>fn <a href='#method.reports_saved_list' class='fnname'>reports_saved_list</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_adexchangeseller2/struct.AccountReportSavedListCall.html' title='google_adexchangeseller2::AccountReportSavedListCall'>AccountReportSavedListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>List all saved reports in this Ad Exchange account.</p>
@@ -124,7 +124,7 @@ It is not used directly, but through the <code>AdExchangeSeller</code> hub.</p>
 <ul>
 <li><code>accountId</code> - Account owning the saved reports.</li>
 </ul>
-</div><h4 id='method.preferreddeals_get' class='method'><code>fn <a href='#method.preferreddeals_get' class='fnname'>preferreddeals_get</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, deal_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_adexchangeseller2/struct.AccountPreferreddealGetCall.html' title='google_adexchangeseller2::AccountPreferreddealGetCall'>AccountPreferreddealGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.preferreddeals_get' class='method'><code>fn <a href='#method.preferreddeals_get' class='fnname'>preferreddeals_get</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, deal_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_adexchangeseller2/struct.AccountPreferreddealGetCall.html' title='google_adexchangeseller2::AccountPreferreddealGetCall'>AccountPreferreddealGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Get information about the selected Ad Exchange Preferred Deal.</p>
@@ -134,7 +134,7 @@ It is not used directly, but through the <code>AdExchangeSeller</code> hub.</p>
 <li><code>accountId</code> - Account owning the deal.</li>
 <li><code>dealId</code> - Preferred deal to get information about.</li>
 </ul>
-</div><h4 id='method.adclients_list' class='method'><code>fn <a href='#method.adclients_list' class='fnname'>adclients_list</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_adexchangeseller2/struct.AccountAdclientListCall.html' title='google_adexchangeseller2::AccountAdclientListCall'>AccountAdclientListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.adclients_list' class='method'><code>fn <a href='#method.adclients_list' class='fnname'>adclients_list</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_adexchangeseller2/struct.AccountAdclientListCall.html' title='google_adexchangeseller2::AccountAdclientListCall'>AccountAdclientListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>List all ad clients in this Ad Exchange account.</p>
@@ -143,7 +143,7 @@ It is not used directly, but through the <code>AdExchangeSeller</code> hub.</p>
 <ul>
 <li><code>accountId</code> - Account to which the ad client belongs.</li>
 </ul>
-</div><h4 id='method.metadata_dimensions_list' class='method'><code>fn <a href='#method.metadata_dimensions_list' class='fnname'>metadata_dimensions_list</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_adexchangeseller2/struct.AccountMetadataDimensionListCall.html' title='google_adexchangeseller2::AccountMetadataDimensionListCall'>AccountMetadataDimensionListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.metadata_dimensions_list' class='method'><code>fn <a href='#method.metadata_dimensions_list' class='fnname'>metadata_dimensions_list</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_adexchangeseller2/struct.AccountMetadataDimensionListCall.html' title='google_adexchangeseller2::AccountMetadataDimensionListCall'>AccountMetadataDimensionListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>List the metadata for the dimensions available to this AdExchange account.</p>
@@ -152,7 +152,7 @@ It is not used directly, but through the <code>AdExchangeSeller</code> hub.</p>
 <ul>
 <li><code>accountId</code> - Account with visibility to the dimensions.</li>
 </ul>
-</div><h4 id='method.customchannels_get' class='method'><code>fn <a href='#method.customchannels_get' class='fnname'>customchannels_get</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, ad_client_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, custom_channel_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_adexchangeseller2/struct.AccountCustomchannelGetCall.html' title='google_adexchangeseller2::AccountCustomchannelGetCall'>AccountCustomchannelGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.customchannels_get' class='method'><code>fn <a href='#method.customchannels_get' class='fnname'>customchannels_get</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, ad_client_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, custom_channel_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_adexchangeseller2/struct.AccountCustomchannelGetCall.html' title='google_adexchangeseller2::AccountCustomchannelGetCall'>AccountCustomchannelGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Get the specified custom channel from the specified ad client.</p>
@@ -163,7 +163,7 @@ It is not used directly, but through the <code>AdExchangeSeller</code> hub.</p>
 <li><code>adClientId</code> - Ad client which contains the custom channel.</li>
 <li><code>customChannelId</code> - Custom channel to retrieve.</li>
 </ul>
-</div><h4 id='method.customchannels_list' class='method'><code>fn <a href='#method.customchannels_list' class='fnname'>customchannels_list</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, ad_client_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_adexchangeseller2/struct.AccountCustomchannelListCall.html' title='google_adexchangeseller2::AccountCustomchannelListCall'>AccountCustomchannelListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.customchannels_list' class='method'><code>fn <a href='#method.customchannels_list' class='fnname'>customchannels_list</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, ad_client_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_adexchangeseller2/struct.AccountCustomchannelListCall.html' title='google_adexchangeseller2::AccountCustomchannelListCall'>AccountCustomchannelListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>List all custom channels in the specified ad client for this Ad Exchange account.</p>
@@ -173,11 +173,11 @@ It is not used directly, but through the <code>AdExchangeSeller</code> hub.</p>
 <li><code>accountId</code> - Account to which the ad client belongs.</li>
 <li><code>adClientId</code> - Ad client for which to list custom channels.</li>
 </ul>
-</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self) -&gt; <a class='struct' href='../google_adexchangeseller2/struct.AccountListCall.html' title='google_adexchangeseller2::AccountListCall'>AccountListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self) -&gt; <a class='struct' href='../google_adexchangeseller2/struct.AccountListCall.html' title='google_adexchangeseller2::AccountListCall'>AccountListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>List all accounts available to this Ad Exchange account.</p>
-</div><h4 id='method.alerts_list' class='method'><code>fn <a href='#method.alerts_list' class='fnname'>alerts_list</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_adexchangeseller2/struct.AccountAlertListCall.html' title='google_adexchangeseller2::AccountAlertListCall'>AccountAlertListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.alerts_list' class='method'><code>fn <a href='#method.alerts_list' class='fnname'>alerts_list</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_adexchangeseller2/struct.AccountAlertListCall.html' title='google_adexchangeseller2::AccountAlertListCall'>AccountAlertListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>List the alerts for this Ad Exchange account.</p>
@@ -186,7 +186,7 @@ It is not used directly, but through the <code>AdExchangeSeller</code> hub.</p>
 <ul>
 <li><code>accountId</code> - Account owning the alerts.</li>
 </ul>
-</div><h4 id='method.preferreddeals_list' class='method'><code>fn <a href='#method.preferreddeals_list' class='fnname'>preferreddeals_list</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_adexchangeseller2/struct.AccountPreferreddealListCall.html' title='google_adexchangeseller2::AccountPreferreddealListCall'>AccountPreferreddealListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.preferreddeals_list' class='method'><code>fn <a href='#method.preferreddeals_list' class='fnname'>preferreddeals_list</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_adexchangeseller2/struct.AccountPreferreddealListCall.html' title='google_adexchangeseller2::AccountPreferreddealListCall'>AccountPreferreddealListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>List the preferred deals for this Ad Exchange account.</p>
@@ -195,7 +195,7 @@ It is not used directly, but through the <code>AdExchangeSeller</code> hub.</p>
 <ul>
 <li><code>accountId</code> - Account owning the deals.</li>
 </ul>
-</div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_adexchangeseller2/struct.AccountGetCall.html' title='google_adexchangeseller2::AccountGetCall'>AccountGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_adexchangeseller2/struct.AccountGetCall.html' title='google_adexchangeseller2::AccountGetCall'>AccountGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Get information about the selected Ad Exchange account.</p>
@@ -204,7 +204,7 @@ It is not used directly, but through the <code>AdExchangeSeller</code> hub.</p>
 <ul>
 <li><code>accountId</code> - Account to get information about. Tip: &#39;myaccount&#39; is a valid ID.</li>
 </ul>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_adexchangeseller2/trait.MethodsBuilder.html' title='google_adexchangeseller2::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_adexchangeseller2/struct.AccountMethods.html' title='google_adexchangeseller2::AccountMethods'>AccountMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-4373' class='srclink' href='../src/google_adexchangeseller2/home/byron/dev/rust/google-apis-rs/target/debug/build/google-adexchangeseller2-878b938019de0599/out/lib.rs.html#8993' title='goto source code'>[src]</a></span></h3>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='trait' href='../google_adexchangeseller2/trait.MethodsBuilder.html' title='google_adexchangeseller2::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_adexchangeseller2/struct.AccountMethods.html' title='google_adexchangeseller2::AccountMethods'>AccountMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-4037' class='srclink' href='../src/google_adexchangeseller2/home/byron/dev/rust/google-apis-rs/target/debug/build/google-adexchangeseller2-83340f1af5139a23/out/lib.rs.html#7029' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 

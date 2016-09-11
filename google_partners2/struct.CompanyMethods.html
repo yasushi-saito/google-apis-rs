@@ -47,8 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-5158' class='srclink' href='../src/google_partners2/home/byron/dev/rust/google-apis-rs/target/debug/build/google-partners2-769e73e89b920cb5/out/lib.rs.html#10470-10472' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct CompanyMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
+               </span><a id='src-4717' class='srclink' href='../src/google_partners2/home/byron/dev/rust/google-apis-rs/target/debug/build/google-partners2-99a726430765d7e5/out/lib.rs.html#8075-8077' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct CompanyMethods&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>company</em> resources.
 It is not used directly, but through the <code>Partners</code> hub.</p>
@@ -74,8 +74,8 @@ It is not used directly, but through the <code>Partners</code> hub.</p>
 <span class='comment'>// like `get(...)`, `leads_create(...)` and `list(...)`</span>
 <span class='comment'>// to build up your call.</span>
 <span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>companies</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_partners2/struct.CompanyMethods.html' title='google_partners2::CompanyMethods'>CompanyMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-5167' class='srclink' href='../src/google_partners2/home/byron/dev/rust/google-apis-rs/target/debug/build/google-partners2-769e73e89b920cb5/out/lib.rs.html#10474-10557' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, company_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_partners2/struct.CompanyGetCall.html' title='google_partners2::CompanyGetCall'>CompanyGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='struct' href='../google_partners2/struct.CompanyMethods.html' title='google_partners2::CompanyMethods'>CompanyMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-4726' class='srclink' href='../src/google_partners2/home/byron/dev/rust/google-apis-rs/target/debug/build/google-partners2-99a726430765d7e5/out/lib.rs.html#8079-8162' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, company_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_partners2/struct.CompanyGetCall.html' title='google_partners2::CompanyGetCall'>CompanyGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Gets a company.</p>
@@ -84,7 +84,7 @@ It is not used directly, but through the <code>Partners</code> hub.</p>
 <ul>
 <li><code>companyId</code> - The ID of the company to retrieve.</li>
 </ul>
-</div><h4 id='method.leads_create' class='method'><code>fn <a href='#method.leads_create' class='fnname'>leads_create</a>(&amp;self, request: <a class='struct' href='../google_partners2/struct.CreateLeadRequest.html' title='google_partners2::CreateLeadRequest'>CreateLeadRequest</a>, company_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_partners2/struct.CompanyLeadCreateCall.html' title='google_partners2::CompanyLeadCreateCall'>CompanyLeadCreateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.leads_create' class='method'><code>fn <a href='#method.leads_create' class='fnname'>leads_create</a>(&amp;self, request: <a class='struct' href='../google_partners2/struct.CreateLeadRequest.html' title='google_partners2::CreateLeadRequest'>CreateLeadRequest</a>, company_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_partners2/struct.CompanyLeadCreateCall.html' title='google_partners2::CompanyLeadCreateCall'>CompanyLeadCreateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Creates an advertiser lead for the given company ID.</p>
@@ -94,11 +94,11 @@ It is not used directly, but through the <code>Partners</code> hub.</p>
 <li><code>request</code> - No description provided.</li>
 <li><code>companyId</code> - The ID of the company to contact.</li>
 </ul>
-</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self) -&gt; <a class='struct' href='../google_partners2/struct.CompanyListCall.html' title='google_partners2::CompanyListCall'>CompanyListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self) -&gt; <a class='struct' href='../google_partners2/struct.CompanyListCall.html' title='google_partners2::CompanyListCall'>CompanyListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Lists companies.</p>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_partners2/trait.MethodsBuilder.html' title='google_partners2::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_partners2/struct.CompanyMethods.html' title='google_partners2::CompanyMethods'>CompanyMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-5163' class='srclink' href='../src/google_partners2/home/byron/dev/rust/google-apis-rs/target/debug/build/google-partners2-769e73e89b920cb5/out/lib.rs.html#10473' title='goto source code'>[src]</a></span></h3>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='trait' href='../google_partners2/trait.MethodsBuilder.html' title='google_partners2::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_partners2/struct.CompanyMethods.html' title='google_partners2::CompanyMethods'>CompanyMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-4722' class='srclink' href='../src/google_partners2/home/byron/dev/rust/google-apis-rs/target/debug/build/google-partners2-99a726430765d7e5/out/lib.rs.html#8078' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 

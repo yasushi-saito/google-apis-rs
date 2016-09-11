@@ -47,8 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-19901' class='srclink' href='../src/google_games1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-games1-b9bb0f61d1030f8c/out/lib.rs.html#43347-43349' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct ApplicationMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
+               </span><a id='src-18500' class='srclink' href='../src/google_games1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-games1-00b2e1f28385176b/out/lib.rs.html#33650-33652' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct ApplicationMethods&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>application</em> resources.
 It is not used directly, but through the <code>Games</code> hub.</p>
@@ -74,8 +74,8 @@ It is not used directly, but through the <code>Games</code> hub.</p>
 <span class='comment'>// like `get(...)`, `played(...)` and `verify(...)`</span>
 <span class='comment'>// to build up your call.</span>
 <span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>applications</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_games1/struct.ApplicationMethods.html' title='google_games1::ApplicationMethods'>ApplicationMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-19910' class='srclink' href='../src/google_games1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-games1-b9bb0f61d1030f8c/out/lib.rs.html#43351-43392' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.verify' class='method'><code>fn <a href='#method.verify' class='fnname'>verify</a>(&amp;self, application_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_games1/struct.ApplicationVerifyCall.html' title='google_games1::ApplicationVerifyCall'>ApplicationVerifyCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='struct' href='../google_games1/struct.ApplicationMethods.html' title='google_games1::ApplicationMethods'>ApplicationMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-18509' class='srclink' href='../src/google_games1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-games1-00b2e1f28385176b/out/lib.rs.html#33654-33698' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.verify' class='method'><code>fn <a href='#method.verify' class='fnname'>verify</a>(&amp;self, application_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_games1/struct.ApplicationVerifyCall.html' title='google_games1::ApplicationVerifyCall'>ApplicationVerifyCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Verifies the auth token provided with this request is for the application with the specified ID, and returns the ID of the player it was granted for.</p>
@@ -84,7 +84,7 @@ It is not used directly, but through the <code>Games</code> hub.</p>
 <ul>
 <li><code>applicationId</code> - The application ID from the Google Play developer console.</li>
 </ul>
-</div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, application_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_games1/struct.ApplicationGetCall.html' title='google_games1::ApplicationGetCall'>ApplicationGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, application_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_games1/struct.ApplicationGetCall.html' title='google_games1::ApplicationGetCall'>ApplicationGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Retrieves the metadata of the application with the given ID. If the requested application is not available for the specified platformType, the returned response will not include any instance data.</p>
@@ -93,11 +93,11 @@ It is not used directly, but through the <code>Games</code> hub.</p>
 <ul>
 <li><code>applicationId</code> - The application ID from the Google Play developer console.</li>
 </ul>
-</div><h4 id='method.played' class='method'><code>fn <a href='#method.played' class='fnname'>played</a>(&amp;self) -&gt; <a class='struct' href='../google_games1/struct.ApplicationPlayedCall.html' title='google_games1::ApplicationPlayedCall'>ApplicationPlayedCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.played' class='method'><code>fn <a href='#method.played' class='fnname'>played</a>(&amp;self) -&gt; <a class='struct' href='../google_games1/struct.ApplicationPlayedCall.html' title='google_games1::ApplicationPlayedCall'>ApplicationPlayedCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Indicate that the the currently authenticated user is playing your application.</p>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_games1/trait.MethodsBuilder.html' title='google_games1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_games1/struct.ApplicationMethods.html' title='google_games1::ApplicationMethods'>ApplicationMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-19906' class='srclink' href='../src/google_games1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-games1-b9bb0f61d1030f8c/out/lib.rs.html#43350' title='goto source code'>[src]</a></span></h3>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='trait' href='../google_games1/trait.MethodsBuilder.html' title='google_games1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_games1/struct.ApplicationMethods.html' title='google_games1::ApplicationMethods'>ApplicationMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-18505' class='srclink' href='../src/google_games1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-games1-00b2e1f28385176b/out/lib.rs.html#33653' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 

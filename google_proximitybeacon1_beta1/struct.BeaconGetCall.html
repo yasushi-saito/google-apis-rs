@@ -47,10 +47,10 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-3742' class='srclink' href='../src/google_proximitybeacon1_beta1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-proximitybeacon1_beta1-b55b80e22cd52a39/out/lib.rs.html#7800-7805' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct BeaconGetCall&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
+               </span><a id='src-3830' class='srclink' href='../src/google_proximitybeacon1_beta1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-proximitybeacon1_beta1-c996a83e0bf8b1a4/out/lib.rs.html#7138-7145' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct BeaconGetCall&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
-}</pre><div class='docblock'><p>Returns detailed information about the specified beacon.</p>
+}</pre><div class='docblock'><p>Returns detailed information about the specified beacon. Authenticate using an <a href="https://developers.google.com/identity/protocols/OAuth2">OAuth access token</a> from a signed-in user with <strong>viewer</strong>, <strong>Is owner</strong> or <strong>Can edit</strong> permissions in the Google Developers Console project. Requests may supply an Eddystone-EID beacon name in the form: <code>beacons/4!beaconId</code> where the <code>beaconId</code> is the base16 ephemeral ID broadcast by the beacon. The returned <code>Beacon</code> object will contain the beacon&#39;s stable Eddystone-UID. Clients not authorized to resolve the beacon&#39;s ephemeral Eddystone-EID broadcast will receive an error.</p>
 
 <p>A builder for the <em>get</em> method supported by a <em>beacon</em> resource.
 It is not used directly, but through a <code>BeaconMethods</code> instance.</p>
@@ -64,25 +64,30 @@ It is not used directly, but through a <code>BeaconMethods</code> instance.</p>
 <span class='comment'>// execute the final call using `doit()`.</span>
 <span class='comment'>// Values shown here are possibly random and not representative !</span>
 <span class='kw'>let</span> <span class='ident'>result</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>beacons</span>().<span class='ident'>get</span>(<span class='string'>&quot;beaconName&quot;</span>)
+             .<span class='ident'>project_id</span>(<span class='string'>&quot;nonumy&quot;</span>)
              .<span class='ident'>doit</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_proximitybeacon1_beta1/struct.BeaconGetCall.html' title='google_proximitybeacon1_beta1::BeaconGetCall'>BeaconGetCall</a>&lt;'a, C, A&gt; <span class='where'>where C: <a class='trait' href='https://doc.rust-lang.org/nightly/core/borrow/trait.BorrowMut.html' title='core::borrow::BorrowMut'>BorrowMut</a>&lt;<a class='struct' href='../hyper/client/struct.Client.html' title='hyper::client::Client'>Client</a>&gt;, A: <a class='trait' href='../yup_oauth2/helper/trait.GetToken.html' title='yup_oauth2::helper::GetToken'>GetToken</a></span></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-3754' class='srclink' href='../src/google_proximitybeacon1_beta1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-proximitybeacon1_beta1-b55b80e22cd52a39/out/lib.rs.html#7807-7979' title='goto source code'>[src]</a></span></h3>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='struct' href='../google_proximitybeacon1_beta1/struct.BeaconGetCall.html' title='google_proximitybeacon1_beta1::BeaconGetCall'>BeaconGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: <a class='trait' href='https://doc.rust-lang.org/nightly/core/borrow/trait.BorrowMut.html' title='core::borrow::BorrowMut'>BorrowMut</a>&lt;<a class='struct' href='../hyper/client/struct.Client.html' title='hyper::client::Client'>Client</a>&gt;, A: <a class='trait' href='../yup_oauth2/authenticator/trait.GetToken.html' title='yup_oauth2::authenticator::GetToken'>GetToken</a></span></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-3844' class='srclink' href='../src/google_proximitybeacon1_beta1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-proximitybeacon1_beta1-c996a83e0bf8b1a4/out/lib.rs.html#7147-7358' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'><h4 id='method.doit' class='method'><code>fn <a href='#method.doit' class='fnname'>doit</a>(self) -&gt; <a class='type' href='../google_proximitybeacon1_beta1/type.Result.html' title='google_proximitybeacon1_beta1::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>(</a><a class='struct' href='../hyper/client/response/struct.Response.html' title='hyper::client::response::Response'>Response</a>, <a class='struct' href='../google_proximitybeacon1_beta1/struct.Beacon.html' title='google_proximitybeacon1_beta1::Beacon'>Beacon</a><a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>)</a>&gt;</code></h4>
 <div class='docblock'><p>Perform the operation you have build so far.</p>
-</div><h4 id='method.beacon_name' class='method'><code>fn <a href='#method.beacon_name' class='fnname'>beacon_name</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_proximitybeacon1_beta1/struct.BeaconGetCall.html' title='google_proximitybeacon1_beta1::BeaconGetCall'>BeaconGetCall</a>&lt;'a, C, A&gt;</code></h4>
-<div class='docblock'><p>Beacon that is requested.</p>
+</div><h4 id='method.beacon_name' class='method'><code>fn <a href='#method.beacon_name' class='fnname'>beacon_name</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_proximitybeacon1_beta1/struct.BeaconGetCall.html' title='google_proximitybeacon1_beta1::BeaconGetCall'>BeaconGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Resource name of this beacon. A beacon name has the format &quot;beacons/N!beaconId&quot; where the beaconId is the base16 ID broadcast by the beacon and N is a code for the beacon&#39;s type. Possible values are <code>3</code> for Eddystone-UID, <code>4</code> for Eddystone-EID, <code>1</code> for iBeacon, or <code>5</code> for AltBeacon. For Eddystone-EID beacons, you may use either the current EID or the beacon&#39;s &quot;stable&quot; UID. Required.</p>
 
 <p>Sets the <em>beacon name</em> path property to the given value.</p>
 
 <p>Even though the property as already been set when instantiating this call,
 we provide this method for API completeness.</p>
-</div><h4 id='method.delegate' class='method'><code>fn <a href='#method.delegate' class='fnname'>delegate</a>(self, new_value: &amp;'a mut <a class='trait' href='../google_proximitybeacon1_beta1/trait.Delegate.html' title='google_proximitybeacon1_beta1::Delegate'>Delegate</a>) -&gt; <a class='struct' href='../google_proximitybeacon1_beta1/struct.BeaconGetCall.html' title='google_proximitybeacon1_beta1::BeaconGetCall'>BeaconGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.project_id' class='method'><code>fn <a href='#method.project_id' class='fnname'>project_id</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_proximitybeacon1_beta1/struct.BeaconGetCall.html' title='google_proximitybeacon1_beta1::BeaconGetCall'>BeaconGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>The project id of the beacon to request. If the project id is not specified then the project making the request is used. The project id must match the project that owns the beacon. Optional.</p>
+
+<p>Sets the <em>project id</em> query property to the given value.</p>
+</div><h4 id='method.delegate' class='method'><code>fn <a href='#method.delegate' class='fnname'>delegate</a>(self, new_value: &amp;'a mut <a class='trait' href='../google_proximitybeacon1_beta1/trait.Delegate.html' title='google_proximitybeacon1_beta1::Delegate'>Delegate</a>) -&gt; <a class='struct' href='../google_proximitybeacon1_beta1/struct.BeaconGetCall.html' title='google_proximitybeacon1_beta1::BeaconGetCall'>BeaconGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>The delegate implementation is consulted whenever there is an intermediate result, or if something goes wrong
 while executing the actual API request.</p>
 
 <p>It should be used to handle progress information, and to implement a certain level of resilience.</p>
 
 <p>Sets the <em>delegate</em> property to the given value.</p>
-</div><h4 id='method.param' class='method'><code>fn <a href='#method.param' class='fnname'>param</a>&lt;T&gt;(self, name: T, value: T) -&gt; <a class='struct' href='../google_proximitybeacon1_beta1/struct.BeaconGetCall.html' title='google_proximitybeacon1_beta1::BeaconGetCall'>BeaconGetCall</a>&lt;'a, C, A&gt; <span class='where'>where T: <a class='trait' href='https://doc.rust-lang.org/nightly/core/convert/trait.AsRef.html' title='core::convert::AsRef'>AsRef</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>&gt;</span></code></h4>
+</div><h4 id='method.param' class='method'><code>fn <a href='#method.param' class='fnname'>param</a>&lt;T&gt;(self, name: T, value: T) -&gt; <a class='struct' href='../google_proximitybeacon1_beta1/struct.BeaconGetCall.html' title='google_proximitybeacon1_beta1::BeaconGetCall'>BeaconGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where T: <a class='trait' href='https://doc.rust-lang.org/nightly/core/convert/trait.AsRef.html' title='core::convert::AsRef'>AsRef</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>&gt;</span></code></h4>
 <div class='docblock'><p>Set any additional parameter of the query string used in the request.
 It should be used to set parameters which are not yet available through their own
 setters.</p>
@@ -106,7 +111,19 @@ which have their own setter method. If done anyway, the request will fail.</p>
 <li><em>alt</em> (query-string) - Data format for response.</li>
 <li><em>$.xgafv</em> (query-string) - V1 error format.</li>
 </ul>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_proximitybeacon1_beta1/trait.CallBuilder.html' title='google_proximitybeacon1_beta1::CallBuilder'>CallBuilder</a> for <a class='struct' href='../google_proximitybeacon1_beta1/struct.BeaconGetCall.html' title='google_proximitybeacon1_beta1::BeaconGetCall'>BeaconGetCall</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-3750' class='srclink' href='../src/google_proximitybeacon1_beta1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-proximitybeacon1_beta1-b55b80e22cd52a39/out/lib.rs.html#7806' title='goto source code'>[src]</a></span></h3>
+</div><h4 id='method.add_scope' class='method'><code>fn <a href='#method.add_scope' class='fnname'>add_scope</a>&lt;T&gt;(self, scope: T) -&gt; <a class='struct' href='../google_proximitybeacon1_beta1/struct.BeaconGetCall.html' title='google_proximitybeacon1_beta1::BeaconGetCall'>BeaconGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where T: <a class='trait' href='https://doc.rust-lang.org/nightly/core/convert/trait.AsRef.html' title='core::convert::AsRef'>AsRef</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>&gt;</span></code></h4>
+<div class='docblock'><p>Identifies the authorization scope for the method you are building.</p>
+
+<p>Use this method to actively specify which scope should be used, instead the default <code>Scope</code> variant
+<code>Scope::UserlocationBeaconRegistry</code>.</p>
+
+<p>The <code>scope</code> will be added to a set of scopes. This is important as one can maintain access
+tokens for more than one scope.</p>
+
+<p>Usually there is more than one suitable scope to authorize an operation, some of which may
+encompass more rights than others. For example, for listing resources, a <em>read-only</em> scope will be
+sufficient, a read-write scope will do as well.</p>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='trait' href='../google_proximitybeacon1_beta1/trait.CallBuilder.html' title='google_proximitybeacon1_beta1::CallBuilder'>CallBuilder</a> for <a class='struct' href='../google_proximitybeacon1_beta1/struct.BeaconGetCall.html' title='google_proximitybeacon1_beta1::BeaconGetCall'>BeaconGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-3840' class='srclink' href='../src/google_proximitybeacon1_beta1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-proximitybeacon1_beta1-c996a83e0bf8b1a4/out/lib.rs.html#7146' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 

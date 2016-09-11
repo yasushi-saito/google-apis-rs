@@ -47,8 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-1830' class='srclink' href='../src/google_siteverification1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-siteverification1-7b7614cdfa635bb2/out/lib.rs.html#3642-3644' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct WebResourceMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
+               </span><a id='src-1689' class='srclink' href='../src/google_siteverification1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-siteverification1-0c32552b78da643c/out/lib.rs.html#2979-2981' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct WebResourceMethods&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>webResource</em> resources.
 It is not used directly, but through the <code>SiteVerification</code> hub.</p>
@@ -74,8 +74,8 @@ It is not used directly, but through the <code>SiteVerification</code> hub.</p>
 <span class='comment'>// like `delete(...)`, `get(...)`, `get_token(...)`, `insert(...)`, `list(...)`, `patch(...)` and `update(...)`</span>
 <span class='comment'>// to build up your call.</span>
 <span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>web_resource</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_siteverification1/struct.WebResourceMethods.html' title='google_siteverification1::WebResourceMethods'>WebResourceMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-1839' class='srclink' href='../src/google_siteverification1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-siteverification1-7b7614cdfa635bb2/out/lib.rs.html#3646-3753' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_siteverification1/struct.WebResourceGetCall.html' title='google_siteverification1::WebResourceGetCall'>WebResourceGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='struct' href='../google_siteverification1/struct.WebResourceMethods.html' title='google_siteverification1::WebResourceMethods'>WebResourceMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-1698' class='srclink' href='../src/google_siteverification1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-siteverification1-0c32552b78da643c/out/lib.rs.html#2983-3090' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_siteverification1/struct.WebResourceGetCall.html' title='google_siteverification1::WebResourceGetCall'>WebResourceGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Get the most current data for a website or domain.</p>
@@ -84,7 +84,7 @@ It is not used directly, but through the <code>SiteVerification</code> hub.</p>
 <ul>
 <li><code>id</code> - The id of a verified site or domain.</li>
 </ul>
-</div><h4 id='method.patch' class='method'><code>fn <a href='#method.patch' class='fnname'>patch</a>(&amp;self, request: <a class='struct' href='../google_siteverification1/struct.SiteVerificationWebResourceResource.html' title='google_siteverification1::SiteVerificationWebResourceResource'>SiteVerificationWebResourceResource</a>, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_siteverification1/struct.WebResourcePatchCall.html' title='google_siteverification1::WebResourcePatchCall'>WebResourcePatchCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.patch' class='method'><code>fn <a href='#method.patch' class='fnname'>patch</a>(&amp;self, request: <a class='struct' href='../google_siteverification1/struct.SiteVerificationWebResourceResource.html' title='google_siteverification1::SiteVerificationWebResourceResource'>SiteVerificationWebResourceResource</a>, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_siteverification1/struct.WebResourcePatchCall.html' title='google_siteverification1::WebResourcePatchCall'>WebResourcePatchCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Modify the list of owners for your website or domain. This method supports patch semantics.</p>
@@ -94,11 +94,11 @@ It is not used directly, but through the <code>SiteVerification</code> hub.</p>
 <li><code>request</code> - No description provided.</li>
 <li><code>id</code> - The id of a verified site or domain.</li>
 </ul>
-</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self) -&gt; <a class='struct' href='../google_siteverification1/struct.WebResourceListCall.html' title='google_siteverification1::WebResourceListCall'>WebResourceListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self) -&gt; <a class='struct' href='../google_siteverification1/struct.WebResourceListCall.html' title='google_siteverification1::WebResourceListCall'>WebResourceListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Get the list of your verified websites and domains.</p>
-</div><h4 id='method.delete' class='method'><code>fn <a href='#method.delete' class='fnname'>delete</a>(&amp;self, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_siteverification1/struct.WebResourceDeleteCall.html' title='google_siteverification1::WebResourceDeleteCall'>WebResourceDeleteCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.delete' class='method'><code>fn <a href='#method.delete' class='fnname'>delete</a>(&amp;self, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_siteverification1/struct.WebResourceDeleteCall.html' title='google_siteverification1::WebResourceDeleteCall'>WebResourceDeleteCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Relinquish ownership of a website or domain.</p>
@@ -107,7 +107,7 @@ It is not used directly, but through the <code>SiteVerification</code> hub.</p>
 <ul>
 <li><code>id</code> - The id of a verified site or domain.</li>
 </ul>
-</div><h4 id='method.get_token' class='method'><code>fn <a href='#method.get_token' class='fnname'>get_token</a>(&amp;self, request: <a class='struct' href='../google_siteverification1/struct.SiteVerificationWebResourceGettokenRequest.html' title='google_siteverification1::SiteVerificationWebResourceGettokenRequest'>SiteVerificationWebResourceGettokenRequest</a>) -&gt; <a class='struct' href='../google_siteverification1/struct.WebResourceGetTokenCall.html' title='google_siteverification1::WebResourceGetTokenCall'>WebResourceGetTokenCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.get_token' class='method'><code>fn <a href='#method.get_token' class='fnname'>get_token</a>(&amp;self, request: <a class='struct' href='../google_siteverification1/struct.SiteVerificationWebResourceGettokenRequest.html' title='google_siteverification1::SiteVerificationWebResourceGettokenRequest'>SiteVerificationWebResourceGettokenRequest</a>) -&gt; <a class='struct' href='../google_siteverification1/struct.WebResourceGetTokenCall.html' title='google_siteverification1::WebResourceGetTokenCall'>WebResourceGetTokenCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Get a verification token for placing on a website or domain.</p>
@@ -116,7 +116,7 @@ It is not used directly, but through the <code>SiteVerification</code> hub.</p>
 <ul>
 <li><code>request</code> - No description provided.</li>
 </ul>
-</div><h4 id='method.update' class='method'><code>fn <a href='#method.update' class='fnname'>update</a>(&amp;self, request: <a class='struct' href='../google_siteverification1/struct.SiteVerificationWebResourceResource.html' title='google_siteverification1::SiteVerificationWebResourceResource'>SiteVerificationWebResourceResource</a>, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_siteverification1/struct.WebResourceUpdateCall.html' title='google_siteverification1::WebResourceUpdateCall'>WebResourceUpdateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.update' class='method'><code>fn <a href='#method.update' class='fnname'>update</a>(&amp;self, request: <a class='struct' href='../google_siteverification1/struct.SiteVerificationWebResourceResource.html' title='google_siteverification1::SiteVerificationWebResourceResource'>SiteVerificationWebResourceResource</a>, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_siteverification1/struct.WebResourceUpdateCall.html' title='google_siteverification1::WebResourceUpdateCall'>WebResourceUpdateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Modify the list of owners for your website or domain.</p>
@@ -126,7 +126,7 @@ It is not used directly, but through the <code>SiteVerification</code> hub.</p>
 <li><code>request</code> - No description provided.</li>
 <li><code>id</code> - The id of a verified site or domain.</li>
 </ul>
-</div><h4 id='method.insert' class='method'><code>fn <a href='#method.insert' class='fnname'>insert</a>(&amp;self, request: <a class='struct' href='../google_siteverification1/struct.SiteVerificationWebResourceResource.html' title='google_siteverification1::SiteVerificationWebResourceResource'>SiteVerificationWebResourceResource</a>, verification_method: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_siteverification1/struct.WebResourceInsertCall.html' title='google_siteverification1::WebResourceInsertCall'>WebResourceInsertCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.insert' class='method'><code>fn <a href='#method.insert' class='fnname'>insert</a>(&amp;self, request: <a class='struct' href='../google_siteverification1/struct.SiteVerificationWebResourceResource.html' title='google_siteverification1::SiteVerificationWebResourceResource'>SiteVerificationWebResourceResource</a>, verification_method: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_siteverification1/struct.WebResourceInsertCall.html' title='google_siteverification1::WebResourceInsertCall'>WebResourceInsertCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Attempt verification of a website or domain.</p>
@@ -136,7 +136,7 @@ It is not used directly, but through the <code>SiteVerification</code> hub.</p>
 <li><code>request</code> - No description provided.</li>
 <li><code>verificationMethod</code> - The method to use for verifying a site or domain.</li>
 </ul>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_siteverification1/trait.MethodsBuilder.html' title='google_siteverification1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_siteverification1/struct.WebResourceMethods.html' title='google_siteverification1::WebResourceMethods'>WebResourceMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-1835' class='srclink' href='../src/google_siteverification1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-siteverification1-7b7614cdfa635bb2/out/lib.rs.html#3645' title='goto source code'>[src]</a></span></h3>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='trait' href='../google_siteverification1/trait.MethodsBuilder.html' title='google_siteverification1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_siteverification1/struct.WebResourceMethods.html' title='google_siteverification1::WebResourceMethods'>WebResourceMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-1694' class='srclink' href='../src/google_siteverification1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-siteverification1-0c32552b78da643c/out/lib.rs.html#2982' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 

@@ -47,8 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-5560' class='srclink' href='../src/google_civicinfo2/home/byron/dev/rust/google-apis-rs/target/debug/build/google-civicinfo2-925ded0f6a80f663/out/lib.rs.html#11914-11921' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct ElectionVoterInfoQueryCall&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
+               </span><a id='src-5251' class='srclink' href='../src/google_civicinfo2/home/byron/dev/rust/google-apis-rs/target/debug/build/google-civicinfo2-152b0f05eee0cdcf/out/lib.rs.html#9370-9378' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct ElectionVoterInfoQueryCall&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>Looks up information relevant to a voter based on the voter&#39;s registered address.</p>
 
@@ -64,35 +64,40 @@ It is not used directly, but through a <code>ElectionMethods</code> instance.</p
 <span class='comment'>// execute the final call using `doit()`.</span>
 <span class='comment'>// Values shown here are possibly random and not representative !</span>
 <span class='kw'>let</span> <span class='ident'>result</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>elections</span>().<span class='ident'>voter_info_query</span>(<span class='string'>&quot;address&quot;</span>)
-             .<span class='ident'>official_only</span>(<span class='boolvalue'>true</span>)
-             .<span class='ident'>election_id</span>(<span class='string'>&quot;justo&quot;</span>)
+             .<span class='ident'>return_all_available_data</span>(<span class='bool-val'>true</span>)
+             .<span class='ident'>official_only</span>(<span class='bool-val'>false</span>)
+             .<span class='ident'>election_id</span>(<span class='string'>&quot;labore&quot;</span>)
              .<span class='ident'>doit</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_civicinfo2/struct.ElectionVoterInfoQueryCall.html' title='google_civicinfo2::ElectionVoterInfoQueryCall'>ElectionVoterInfoQueryCall</a>&lt;'a, C, A&gt; <span class='where'>where C: <a class='trait' href='https://doc.rust-lang.org/nightly/core/borrow/trait.BorrowMut.html' title='core::borrow::BorrowMut'>BorrowMut</a>&lt;<a class='struct' href='../hyper/client/struct.Client.html' title='hyper::client::Client'>Client</a>&gt;, A: <a class='trait' href='../yup_oauth2/helper/trait.GetToken.html' title='yup_oauth2::helper::GetToken'>GetToken</a></span></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-5574' class='srclink' href='../src/google_civicinfo2/home/byron/dev/rust/google-apis-rs/target/debug/build/google-civicinfo2-925ded0f6a80f663/out/lib.rs.html#11923-12086' title='goto source code'>[src]</a></span></h3>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='struct' href='../google_civicinfo2/struct.ElectionVoterInfoQueryCall.html' title='google_civicinfo2::ElectionVoterInfoQueryCall'>ElectionVoterInfoQueryCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: <a class='trait' href='https://doc.rust-lang.org/nightly/core/borrow/trait.BorrowMut.html' title='core::borrow::BorrowMut'>BorrowMut</a>&lt;<a class='struct' href='../hyper/client/struct.Client.html' title='hyper::client::Client'>Client</a>&gt;, A: <a class='trait' href='../yup_oauth2/authenticator/trait.GetToken.html' title='yup_oauth2::authenticator::GetToken'>GetToken</a></span></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-5266' class='srclink' href='../src/google_civicinfo2/home/byron/dev/rust/google-apis-rs/target/debug/build/google-civicinfo2-152b0f05eee0cdcf/out/lib.rs.html#9380-9555' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'><h4 id='method.doit' class='method'><code>fn <a href='#method.doit' class='fnname'>doit</a>(self) -&gt; <a class='type' href='../google_civicinfo2/type.Result.html' title='google_civicinfo2::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>(</a><a class='struct' href='../hyper/client/response/struct.Response.html' title='hyper::client::response::Response'>Response</a>, <a class='struct' href='../google_civicinfo2/struct.VoterInfoResponse.html' title='google_civicinfo2::VoterInfoResponse'>VoterInfoResponse</a><a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>)</a>&gt;</code></h4>
 <div class='docblock'><p>Perform the operation you have build so far.</p>
-</div><h4 id='method.address' class='method'><code>fn <a href='#method.address' class='fnname'>address</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_civicinfo2/struct.ElectionVoterInfoQueryCall.html' title='google_civicinfo2::ElectionVoterInfoQueryCall'>ElectionVoterInfoQueryCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.address' class='method'><code>fn <a href='#method.address' class='fnname'>address</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_civicinfo2/struct.ElectionVoterInfoQueryCall.html' title='google_civicinfo2::ElectionVoterInfoQueryCall'>ElectionVoterInfoQueryCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>The registered address of the voter to look up.</p>
 
 <p>Sets the <em>address</em> query property to the given value.</p>
 
 <p>Even though the property as already been set when instantiating this call,
 we provide this method for API completeness.</p>
-</div><h4 id='method.official_only' class='method'><code>fn <a href='#method.official_only' class='fnname'>official_only</a>(self, new_value: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>) -&gt; <a class='struct' href='../google_civicinfo2/struct.ElectionVoterInfoQueryCall.html' title='google_civicinfo2::ElectionVoterInfoQueryCall'>ElectionVoterInfoQueryCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.return_all_available_data' class='method'><code>fn <a href='#method.return_all_available_data' class='fnname'>return_all_available_data</a>(self, new_value: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>) -&gt; <a class='struct' href='../google_civicinfo2/struct.ElectionVoterInfoQueryCall.html' title='google_civicinfo2::ElectionVoterInfoQueryCall'>ElectionVoterInfoQueryCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>If set to true, the query will return the success codeand include any partial information when it is unable to determine a matching address or unable to determine the election for electionId=0 queries.</p>
+
+<p>Sets the <em>return all available data</em> query property to the given value.</p>
+</div><h4 id='method.official_only' class='method'><code>fn <a href='#method.official_only' class='fnname'>official_only</a>(self, new_value: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>) -&gt; <a class='struct' href='../google_civicinfo2/struct.ElectionVoterInfoQueryCall.html' title='google_civicinfo2::ElectionVoterInfoQueryCall'>ElectionVoterInfoQueryCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>If set to true, only data from official state sources will be returned.</p>
 
 <p>Sets the <em>official only</em> query property to the given value.</p>
-</div><h4 id='method.election_id' class='method'><code>fn <a href='#method.election_id' class='fnname'>election_id</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_civicinfo2/struct.ElectionVoterInfoQueryCall.html' title='google_civicinfo2::ElectionVoterInfoQueryCall'>ElectionVoterInfoQueryCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.election_id' class='method'><code>fn <a href='#method.election_id' class='fnname'>election_id</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_civicinfo2/struct.ElectionVoterInfoQueryCall.html' title='google_civicinfo2::ElectionVoterInfoQueryCall'>ElectionVoterInfoQueryCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>The unique ID of the election to look up. A list of election IDs can be obtained at <a href="https://www.googleapis.com/civicinfo/%7Bversion%7D/elections">https://www.googleapis.com/civicinfo/{version}/elections</a></p>
 
 <p>Sets the <em>election id</em> query property to the given value.</p>
-</div><h4 id='method.delegate' class='method'><code>fn <a href='#method.delegate' class='fnname'>delegate</a>(self, new_value: &amp;'a mut <a class='trait' href='../google_civicinfo2/trait.Delegate.html' title='google_civicinfo2::Delegate'>Delegate</a>) -&gt; <a class='struct' href='../google_civicinfo2/struct.ElectionVoterInfoQueryCall.html' title='google_civicinfo2::ElectionVoterInfoQueryCall'>ElectionVoterInfoQueryCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.delegate' class='method'><code>fn <a href='#method.delegate' class='fnname'>delegate</a>(self, new_value: &amp;'a mut <a class='trait' href='../google_civicinfo2/trait.Delegate.html' title='google_civicinfo2::Delegate'>Delegate</a>) -&gt; <a class='struct' href='../google_civicinfo2/struct.ElectionVoterInfoQueryCall.html' title='google_civicinfo2::ElectionVoterInfoQueryCall'>ElectionVoterInfoQueryCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>The delegate implementation is consulted whenever there is an intermediate result, or if something goes wrong
 while executing the actual API request.</p>
 
 <p>It should be used to handle progress information, and to implement a certain level of resilience.</p>
 
 <p>Sets the <em>delegate</em> property to the given value.</p>
-</div><h4 id='method.param' class='method'><code>fn <a href='#method.param' class='fnname'>param</a>&lt;T&gt;(self, name: T, value: T) -&gt; <a class='struct' href='../google_civicinfo2/struct.ElectionVoterInfoQueryCall.html' title='google_civicinfo2::ElectionVoterInfoQueryCall'>ElectionVoterInfoQueryCall</a>&lt;'a, C, A&gt; <span class='where'>where T: <a class='trait' href='https://doc.rust-lang.org/nightly/core/convert/trait.AsRef.html' title='core::convert::AsRef'>AsRef</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>&gt;</span></code></h4>
+</div><h4 id='method.param' class='method'><code>fn <a href='#method.param' class='fnname'>param</a>&lt;T&gt;(self, name: T, value: T) -&gt; <a class='struct' href='../google_civicinfo2/struct.ElectionVoterInfoQueryCall.html' title='google_civicinfo2::ElectionVoterInfoQueryCall'>ElectionVoterInfoQueryCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where T: <a class='trait' href='https://doc.rust-lang.org/nightly/core/convert/trait.AsRef.html' title='core::convert::AsRef'>AsRef</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>&gt;</span></code></h4>
 <div class='docblock'><p>Set any additional parameter of the query string used in the request.
 It should be used to set parameters which are not yet available through their own
 setters.</p>
@@ -110,7 +115,7 @@ which have their own setter method. If done anyway, the request will fail.</p>
 <li><em>fields</em> (query-string) - Selector specifying which fields to include in a partial response.</li>
 <li><em>alt</em> (query-string) - Data format for the response.</li>
 </ul>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_civicinfo2/trait.CallBuilder.html' title='google_civicinfo2::CallBuilder'>CallBuilder</a> for <a class='struct' href='../google_civicinfo2/struct.ElectionVoterInfoQueryCall.html' title='google_civicinfo2::ElectionVoterInfoQueryCall'>ElectionVoterInfoQueryCall</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-5570' class='srclink' href='../src/google_civicinfo2/home/byron/dev/rust/google-apis-rs/target/debug/build/google-civicinfo2-925ded0f6a80f663/out/lib.rs.html#11922' title='goto source code'>[src]</a></span></h3>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='trait' href='../google_civicinfo2/trait.CallBuilder.html' title='google_civicinfo2::CallBuilder'>CallBuilder</a> for <a class='struct' href='../google_civicinfo2/struct.ElectionVoterInfoQueryCall.html' title='google_civicinfo2::ElectionVoterInfoQueryCall'>ElectionVoterInfoQueryCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-5262' class='srclink' href='../src/google_civicinfo2/home/byron/dev/rust/google-apis-rs/target/debug/build/google-civicinfo2-152b0f05eee0cdcf/out/lib.rs.html#9379' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 

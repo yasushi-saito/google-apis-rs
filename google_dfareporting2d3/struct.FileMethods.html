@@ -47,8 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-43816' class='srclink' href='../src/google_dfareporting2d3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-dfareporting2d3-cd88f8faf5865c86/out/lib.rs.html#100522-100524' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct FileMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
+               </span><a id='src-40870' class='srclink' href='../src/google_dfareporting2d3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-dfareporting2d3-818a111d706a8ab9/out/lib.rs.html#78386-78388' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct FileMethods&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>file</em> resources.
 It is not used directly, but through the <code>Dfareporting</code> hub.</p>
@@ -74,8 +74,8 @@ It is not used directly, but through the <code>Dfareporting</code> hub.</p>
 <span class='comment'>// like `get(...)` and `list(...)`</span>
 <span class='comment'>// to build up your call.</span>
 <span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>files</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_dfareporting2d3/struct.FileMethods.html' title='google_dfareporting2d3::FileMethods'>FileMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-43825' class='srclink' href='../src/google_dfareporting2d3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-dfareporting2d3-cd88f8faf5865c86/out/lib.rs.html#100526-100563' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_dfareporting2d3/struct.FileListCall.html' title='google_dfareporting2d3::FileListCall'>FileListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='struct' href='../google_dfareporting2d3/struct.FileMethods.html' title='google_dfareporting2d3::FileMethods'>FileMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-40879' class='srclink' href='../src/google_dfareporting2d3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-dfareporting2d3-818a111d706a8ab9/out/lib.rs.html#78390-78427' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_dfareporting2d3/struct.FileListCall.html' title='google_dfareporting2d3::FileListCall'>FileListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Lists files for a user profile.</p>
@@ -84,7 +84,7 @@ It is not used directly, but through the <code>Dfareporting</code> hub.</p>
 <ul>
 <li><code>profileId</code> - The DFA profile ID.</li>
 </ul>
-</div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, report_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, file_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_dfareporting2d3/struct.FileGetCall.html' title='google_dfareporting2d3::FileGetCall'>FileGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, report_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, file_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_dfareporting2d3/struct.FileGetCall.html' title='google_dfareporting2d3::FileGetCall'>FileGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Retrieves a report file by its report ID and file ID.</p>
@@ -94,7 +94,7 @@ It is not used directly, but through the <code>Dfareporting</code> hub.</p>
 <li><code>reportId</code> - The ID of the report.</li>
 <li><code>fileId</code> - The ID of the report file.</li>
 </ul>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_dfareporting2d3/trait.MethodsBuilder.html' title='google_dfareporting2d3::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_dfareporting2d3/struct.FileMethods.html' title='google_dfareporting2d3::FileMethods'>FileMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-43821' class='srclink' href='../src/google_dfareporting2d3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-dfareporting2d3-cd88f8faf5865c86/out/lib.rs.html#100525' title='goto source code'>[src]</a></span></h3>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='trait' href='../google_dfareporting2d3/trait.MethodsBuilder.html' title='google_dfareporting2d3::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_dfareporting2d3/struct.FileMethods.html' title='google_dfareporting2d3::FileMethods'>FileMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-40875' class='srclink' href='../src/google_dfareporting2d3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-dfareporting2d3-818a111d706a8ab9/out/lib.rs.html#78389' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 

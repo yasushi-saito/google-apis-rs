@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Patch - classroom v0.3.6+20151013</title>
+  <title>Patch - classroom v0.3.6+20160816</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -32,7 +32,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> classroom v0.3.6+20151013</a>
+        <a href=".." class="icon icon-home"> classroom v0.3.6+20160816</a>
         
       </div>
 
@@ -62,6 +62,56 @@
             
                 <li class="toctree-l2 ">
                     <a class="" href="../courses_aliases-list/">Aliases List</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../courses_course-work-create/">Course Work Create</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../courses_course-work-get/">Course Work Get</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../courses_course-work-list/">Course Work List</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../courses_course-work-student-submissions-get/">Course Work Student Submissions Get</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../courses_course-work-student-submissions-list/">Course Work Student Submissions List</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../courses_course-work-student-submissions-modify-attachments/">Course Work Student Submissions Modify Attachments</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../courses_course-work-student-submissions-patch/">Course Work Student Submissions Patch</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../courses_course-work-student-submissions-reclaim/">Course Work Student Submissions Reclaim</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../courses_course-work-student-submissions-return/">Course Work Student Submissions Return</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../courses_course-work-student-submissions-turn-in/">Course Work Student Submissions Turn In</a>
                     
                 </li>
             
@@ -201,6 +251,41 @@
                     
                 </li>
             
+                <li class="toctree-l2 ">
+                    <a class="" href="../user-profiles_guardian-invitations-create/">Guardian Invitations Create</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../user-profiles_guardian-invitations-get/">Guardian Invitations Get</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../user-profiles_guardian-invitations-list/">Guardian Invitations List</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../user-profiles_guardian-invitations-patch/">Guardian Invitations Patch</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../user-profiles_guardians-delete/">Guardians Delete</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../user-profiles_guardians-get/">Guardians Get</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../user-profiles_guardians-list/">Guardians List</a>
+                    
+                </li>
+            
         
 
     
@@ -215,7 +300,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">classroom v0.3.6+20151013</a>
+        <a href="..">classroom v0.3.6+20160816</a>
       </nav>
 
       
@@ -260,6 +345,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <p>For example, a structure like this:</p>
 <pre><code>Course:
   alternate-link: string
+  course-group-email: string
   course-state: string
   creation-time: string
   description: string
@@ -270,58 +356,87 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   owner-id: string
   room: string
   section: string
+  teacher-folder:
+    alternate-link: string
+    id: string
+    title: string
+  teacher-group-email: string
   update-time: string
 
 </code></pre>
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    alternate-link=sea</code><ul>
+<li><code>-r .    alternate-link=et</code><ul>
 <li>Absolute link to this course in the Classroom web UI. Read-only.</li>
 </ul>
 </li>
-<li><code>course-state=nonumy</code><ul>
+<li><code>course-group-email=consetetur</code><ul>
+<li>The email address of a Google group containing all members of the course. This group does not accept email and can only be used for permissions. Read-only.</li>
+</ul>
+</li>
+<li><code>course-state=ut</code><ul>
 <li>State of the course. If unspecified, the default state is <code>PROVISIONED</code>.</li>
 </ul>
 </li>
-<li><code>creation-time=dolores</code><ul>
-<li>Creation time of the course. Specifying this field in a course update mask will result in an error. Read-only.</li>
+<li><code>creation-time=ea</code><ul>
+<li>Creation time of the course. Specifying this field in a course update mask results in an error. Read-only.</li>
 </ul>
 </li>
-<li><code>description=gubergren</code><ul>
+<li><code>description=sed</code><ul>
 <li>Optional description. For example, &#34;We&#39;ll be learning about the structure of living creatures from a combination of textbooks, guest lectures, and lab work. Expect to be excited!&#34; If set, this field must be a valid UTF-8 string and no longer than 30,000 characters.</li>
 </ul>
 </li>
-<li><code>description-heading=sadipscing</code><ul>
+<li><code>description-heading=dolor</code><ul>
 <li>Optional heading for the description. For example, &#34;Welcome to 10th Grade Biology.&#34; If set, this field must be a valid UTF-8 string and no longer than 3600 characters.</li>
 </ul>
 </li>
-<li><code>enrollment-code=aliquyam</code><ul>
-<li>Enrollment code to use when joining this course. Specifying this field in a course update mask will result in an error. Read-only.</li>
+<li><code>enrollment-code=dolor</code><ul>
+<li>Enrollment code to use when joining this course. Specifying this field in a course update mask results in an error. Read-only.</li>
 </ul>
 </li>
-<li><code>id=ea</code><ul>
-<li>Identifier for this course assigned by Classroom. When creating a course, you may optionally set this identifier to an alias string in the request to create a corresponding alias. The <code>id</code> is still assigned by Classroom and cannot be updated after the course is created. Specifying this field in a course update mask will result in an error.</li>
+<li><code>id=dolor</code><ul>
+<li>Identifier for this course assigned by Classroom. When creating a course, you may optionally set this identifier to an alias string in the request to create a corresponding alias. The <code>id</code> is still assigned by Classroom and cannot be updated after the course is created. Specifying this field in a course update mask results in an error.</li>
 </ul>
 </li>
-<li><code>name=no</code><ul>
+<li><code>name=et</code><ul>
 <li>Name of the course. For example, &#34;10th Grade Biology&#34;. The name is required. It must be between 1 and 750 characters and a valid UTF-8 string.</li>
 </ul>
 </li>
-<li><code>owner-id=justo</code><ul>
-<li>The identifier of the owner of a course. When specified as a parameter of a create course request, this field is required. The identifier can be one of the following: * the numeric identifier for the user * the email address of the user * the string literal <code>&amp;#34;me&amp;#34;</code>, indicating the requesting user This must be set in a create request. Specifying this field in a course update mask will result in an <code>INVALID_ARGUMENT</code> error.</li>
+<li><code>owner-id=consetetur</code><ul>
+<li>The identifier of the owner of a course. When specified as a parameter of a create course request, this field is required. The identifier can be one of the following: * the numeric identifier for the user * the email address of the user * the string literal <code>&amp;#34;me&amp;#34;</code>, indicating the requesting user This must be set in a create request. Specifying this field in a course update mask results in an <code>INVALID_ARGUMENT</code> error.</li>
 </ul>
 </li>
-<li><code>room=justo</code><ul>
+<li><code>room=amet.</code><ul>
 <li>Optional room location. For example, &#34;301&#34;. If set, this field must be a valid UTF-8 string and no longer than 650 characters.</li>
 </ul>
 </li>
-<li><code>section=et</code><ul>
+<li><code>section=voluptua.</code><ul>
 <li>Section of the course. For example, &#34;Period 2&#34;. If set, this field must be a valid UTF-8 string and no longer than 2800 characters.</li>
 </ul>
 </li>
-<li><code>update-time=et</code><ul>
-<li>Time of the most recent update to this course. Specifying this field in a course update mask will result in an error. Read-only.</li>
+<li><code>teacher-folder    alternate-link=lorem</code><ul>
+<li>URL that can be used to access the Drive folder. Read-only.</li>
+</ul>
+</li>
+<li><code>id=gubergren</code><ul>
+<li>Drive API resource ID.</li>
+</ul>
+</li>
+<li>
+<p><code>title=justo</code></p>
+<ul>
+<li>Title of the Drive folder. Read-only.</li>
+</ul>
+</li>
+<li>
+<p><code>..    teacher-group-email=sit</code></p>
+<ul>
+<li>The email address of a Google group containing all teachers of the course. This group does not accept email and can only be used for permissions. Read-only.</li>
+</ul>
+</li>
+<li><code>update-time=vero</code><ul>
+<li>Time of the most recent update to this course. Specifying this field in a course update mask results in an error. Read-only.</li>
 </ul>
 </li>
 </ul>
@@ -480,7 +595,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 
 <!--
 MkDocs version  : 0.12.2
-Docs Build Date : 2016-07-23 16:06:06.762951
+Docs Build Date : 2016-09-11 17:56:10.422298
 -->
 </body>
 </html>

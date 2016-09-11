@@ -340,51 +340,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p lng=number</strong></p>
-<ul>
-<li>The longitude coordinate of this job&#39;s location.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p address=string</strong></p>
-<ul>
-<li>Job address as newline (Unix) separated string</li>
-</ul>
-</li>
-<li>
-<p><strong>-p lat=number</strong></p>
-<ul>
-<li>The latitude coordinate of this job&#39;s location.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p customer-phone-number=string</strong></p>
-<ul>
-<li>Customer phone number</li>
-</ul>
-</li>
-<li>
-<p><strong>-p customer-name=string</strong></p>
-<ul>
-<li>Customer name</li>
-</ul>
-</li>
-<li>
 <p><strong>-p note=string</strong></p>
 <ul>
 <li>Job note as newline (Unix) separated string</li>
 </ul>
 </li>
 <li>
-<p><strong>-p custom-field=string</strong></p>
+<p><strong>-p customer-phone-number=string</strong></p>
 <ul>
-<li>Sets the value of custom fields. To set a custom field, pass the field id (from /team/teamId/custom_fields), a URL escaped &#39;=&#39; character, and the desired value as a parameter. For example, customField=12%3DAlice. Repeat the parameter for each custom field. Note that &#39;=&#39; cannot appear in the parameter value. Specifying an invalid, or inactive enum field will result in an error 500.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p assignee=string</strong></p>
-<ul>
-<li>Assignee email address, or empty string to unassign.</li>
+<li>Customer phone number</li>
 </ul>
 </li>
 <li>
@@ -397,6 +361,42 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <p><strong>-p title=string</strong></p>
 <ul>
 <li>Job title</li>
+</ul>
+</li>
+<li>
+<p><strong>-p address=string</strong></p>
+<ul>
+<li>Job address as newline (Unix) separated string</li>
+</ul>
+</li>
+<li>
+<p><strong>-p assignee=string</strong></p>
+<ul>
+<li>Assignee email address, or empty string to unassign.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p custom-field=string</strong></p>
+<ul>
+<li>Sets the value of custom fields. To set a custom field, pass the field id (from /team/teamId/custom_fields), a URL escaped &#39;=&#39; character, and the desired value as a parameter. For example, customField=12%3DAlice. Repeat the parameter for each custom field. Note that &#39;=&#39; cannot appear in the parameter value. Specifying an invalid, or inactive enum field will result in an error 500.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p customer-name=string</strong></p>
+<ul>
+<li>Customer name</li>
+</ul>
+</li>
+<li>
+<p><strong>-p lng=number</strong></p>
+<ul>
+<li>The longitude coordinate of this job&#39;s location.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p lat=number</strong></p>
+<ul>
+<li>The latitude coordinate of this job&#39;s location.</li>
 </ul>
 </li>
 </ul>
@@ -490,7 +490,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 
 <!--
 MkDocs version  : 0.12.2
-Docs Build Date : 2016-07-23 16:06:20.226295
+Docs Build Date : 2016-09-11 17:56:34.883772
 -->
 </body>
 </html>

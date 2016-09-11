@@ -47,8 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-3611' class='srclink' href='../src/google_pubsub1_beta2/home/byron/dev/rust/google-apis-rs/target/debug/build/google-pubsub1_beta2-f04e7480aa353fd0/out/lib.rs.html#7312-7314' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct ProjectMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
+               </span><a id='src-3260' class='srclink' href='../src/google_pubsub1_beta2/home/byron/dev/rust/google-apis-rs/target/debug/build/google-pubsub1_beta2-47b4b600985cf887/out/lib.rs.html#5805-5807' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct ProjectMethods&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>project</em> resources.
 It is not used directly, but through the <code>Pubsub</code> hub.</p>
@@ -74,8 +74,8 @@ It is not used directly, but through the <code>Pubsub</code> hub.</p>
 <span class='comment'>// like `subscriptions_acknowledge(...)`, `subscriptions_create(...)`, `subscriptions_delete(...)`, `subscriptions_get(...)`, `subscriptions_get_iam_policy(...)`, `subscriptions_list(...)`, `subscriptions_modify_ack_deadline(...)`, `subscriptions_modify_push_config(...)`, `subscriptions_pull(...)`, `subscriptions_set_iam_policy(...)`, `subscriptions_test_iam_permissions(...)`, `topics_create(...)`, `topics_delete(...)`, `topics_get(...)`, `topics_get_iam_policy(...)`, `topics_list(...)`, `topics_publish(...)`, `topics_set_iam_policy(...)`, `topics_subscriptions_list(...)` and `topics_test_iam_permissions(...)`</span>
 <span class='comment'>// to build up your call.</span>
 <span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>projects</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_pubsub1_beta2/struct.ProjectMethods.html' title='google_pubsub1_beta2::ProjectMethods'>ProjectMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-3620' class='srclink' href='../src/google_pubsub1_beta2/home/byron/dev/rust/google-apis-rs/target/debug/build/google-pubsub1_beta2-f04e7480aa353fd0/out/lib.rs.html#7316-7671' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.topics_list' class='method'><code>fn <a href='#method.topics_list' class='fnname'>topics_list</a>(&amp;self, project: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_pubsub1_beta2/struct.ProjectTopicListCall.html' title='google_pubsub1_beta2::ProjectTopicListCall'>ProjectTopicListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='struct' href='../google_pubsub1_beta2/struct.ProjectMethods.html' title='google_pubsub1_beta2::ProjectMethods'>ProjectMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-3269' class='srclink' href='../src/google_pubsub1_beta2/home/byron/dev/rust/google-apis-rs/target/debug/build/google-pubsub1_beta2-47b4b600985cf887/out/lib.rs.html#5809-6164' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.topics_list' class='method'><code>fn <a href='#method.topics_list' class='fnname'>topics_list</a>(&amp;self, project: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_pubsub1_beta2/struct.ProjectTopicListCall.html' title='google_pubsub1_beta2::ProjectTopicListCall'>ProjectTopicListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Lists matching topics.</p>
@@ -84,7 +84,7 @@ It is not used directly, but through the <code>Pubsub</code> hub.</p>
 <ul>
 <li><code>project</code> - The name of the cloud project that topics belong to.</li>
 </ul>
-</div><h4 id='method.subscriptions_pull' class='method'><code>fn <a href='#method.subscriptions_pull' class='fnname'>subscriptions_pull</a>(&amp;self, request: <a class='struct' href='../google_pubsub1_beta2/struct.PullRequest.html' title='google_pubsub1_beta2::PullRequest'>PullRequest</a>, subscription: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_pubsub1_beta2/struct.ProjectSubscriptionPullCall.html' title='google_pubsub1_beta2::ProjectSubscriptionPullCall'>ProjectSubscriptionPullCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.subscriptions_pull' class='method'><code>fn <a href='#method.subscriptions_pull' class='fnname'>subscriptions_pull</a>(&amp;self, request: <a class='struct' href='../google_pubsub1_beta2/struct.PullRequest.html' title='google_pubsub1_beta2::PullRequest'>PullRequest</a>, subscription: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_pubsub1_beta2/struct.ProjectSubscriptionPullCall.html' title='google_pubsub1_beta2::ProjectSubscriptionPullCall'>ProjectSubscriptionPullCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Pulls messages from the server. Returns an empty list if there are no messages available in the backlog. The server may return <code>UNAVAILABLE</code> if there are too many concurrent pull requests pending for the given subscription.</p>
@@ -94,7 +94,7 @@ It is not used directly, but through the <code>Pubsub</code> hub.</p>
 <li><code>request</code> - No description provided.</li>
 <li><code>subscription</code> - The subscription from which messages should be pulled.</li>
 </ul>
-</div><h4 id='method.topics_create' class='method'><code>fn <a href='#method.topics_create' class='fnname'>topics_create</a>(&amp;self, request: <a class='struct' href='../google_pubsub1_beta2/struct.Topic.html' title='google_pubsub1_beta2::Topic'>Topic</a>, name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_pubsub1_beta2/struct.ProjectTopicCreateCall.html' title='google_pubsub1_beta2::ProjectTopicCreateCall'>ProjectTopicCreateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.topics_create' class='method'><code>fn <a href='#method.topics_create' class='fnname'>topics_create</a>(&amp;self, request: <a class='struct' href='../google_pubsub1_beta2/struct.Topic.html' title='google_pubsub1_beta2::Topic'>Topic</a>, name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_pubsub1_beta2/struct.ProjectTopicCreateCall.html' title='google_pubsub1_beta2::ProjectTopicCreateCall'>ProjectTopicCreateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Creates the given topic with the given name.</p>
@@ -104,7 +104,7 @@ It is not used directly, but through the <code>Pubsub</code> hub.</p>
 <li><code>request</code> - No description provided.</li>
 <li><code>name</code> - The name of the topic. It must have the format <code>&quot;projects/{project}/topics/{topic}&quot;</code>. <code>{topic}</code> must start with a letter, and contain only letters (<code>[A-Za-z]</code>), numbers (<code>[0-9]</code>), dashes (<code>-</code>), underscores (<code>_</code>), periods (<code>.</code>), tildes (<code>~</code>), plus (<code>+</code>) or percent signs (<code>%</code>). It must be between 3 and 255 characters in length, and it must not start with <code>&quot;goog&quot;</code>.</li>
 </ul>
-</div><h4 id='method.topics_test_iam_permissions' class='method'><code>fn <a href='#method.topics_test_iam_permissions' class='fnname'>topics_test_iam_permissions</a>(&amp;self, request: <a class='struct' href='../google_pubsub1_beta2/struct.TestIamPermissionsRequest.html' title='google_pubsub1_beta2::TestIamPermissionsRequest'>TestIamPermissionsRequest</a>, resource: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_pubsub1_beta2/struct.ProjectTopicTestIamPermissionCall.html' title='google_pubsub1_beta2::ProjectTopicTestIamPermissionCall'>ProjectTopicTestIamPermissionCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.topics_test_iam_permissions' class='method'><code>fn <a href='#method.topics_test_iam_permissions' class='fnname'>topics_test_iam_permissions</a>(&amp;self, request: <a class='struct' href='../google_pubsub1_beta2/struct.TestIamPermissionsRequest.html' title='google_pubsub1_beta2::TestIamPermissionsRequest'>TestIamPermissionsRequest</a>, resource: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_pubsub1_beta2/struct.ProjectTopicTestIamPermissionCall.html' title='google_pubsub1_beta2::ProjectTopicTestIamPermissionCall'>ProjectTopicTestIamPermissionCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Returns permissions that a caller has on the specified resource.</p>
@@ -114,7 +114,7 @@ It is not used directly, but through the <code>Pubsub</code> hub.</p>
 <li><code>request</code> - No description provided.</li>
 <li><code>resource</code> - REQUIRED: The resource for which the policy detail is being requested. <code>resource</code> is usually specified as a path, such as <code>projects/*project*/zones/*zone*/disks/*disk*</code>. The format for the path specified in this value is resource specific and is specified in the <code>testIamPermissions</code> documentation.</li>
 </ul>
-</div><h4 id='method.subscriptions_modify_push_config' class='method'><code>fn <a href='#method.subscriptions_modify_push_config' class='fnname'>subscriptions_modify_push_config</a>(&amp;self, request: <a class='struct' href='../google_pubsub1_beta2/struct.ModifyPushConfigRequest.html' title='google_pubsub1_beta2::ModifyPushConfigRequest'>ModifyPushConfigRequest</a>, subscription: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_pubsub1_beta2/struct.ProjectSubscriptionModifyPushConfigCall.html' title='google_pubsub1_beta2::ProjectSubscriptionModifyPushConfigCall'>ProjectSubscriptionModifyPushConfigCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.subscriptions_modify_push_config' class='method'><code>fn <a href='#method.subscriptions_modify_push_config' class='fnname'>subscriptions_modify_push_config</a>(&amp;self, request: <a class='struct' href='../google_pubsub1_beta2/struct.ModifyPushConfigRequest.html' title='google_pubsub1_beta2::ModifyPushConfigRequest'>ModifyPushConfigRequest</a>, subscription: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_pubsub1_beta2/struct.ProjectSubscriptionModifyPushConfigCall.html' title='google_pubsub1_beta2::ProjectSubscriptionModifyPushConfigCall'>ProjectSubscriptionModifyPushConfigCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Modifies the <code>PushConfig</code> for a specified subscription. This may be used to change a push subscription to a pull one (signified by an empty <code>PushConfig</code>) or vice versa, or change the endpoint URL and other attributes of a push subscription. Messages will accumulate for delivery continuously through the call regardless of changes to the <code>PushConfig</code>.</p>
@@ -124,7 +124,7 @@ It is not used directly, but through the <code>Pubsub</code> hub.</p>
 <li><code>request</code> - No description provided.</li>
 <li><code>subscription</code> - The name of the subscription.</li>
 </ul>
-</div><h4 id='method.topics_publish' class='method'><code>fn <a href='#method.topics_publish' class='fnname'>topics_publish</a>(&amp;self, request: <a class='struct' href='../google_pubsub1_beta2/struct.PublishRequest.html' title='google_pubsub1_beta2::PublishRequest'>PublishRequest</a>, topic: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_pubsub1_beta2/struct.ProjectTopicPublishCall.html' title='google_pubsub1_beta2::ProjectTopicPublishCall'>ProjectTopicPublishCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.topics_publish' class='method'><code>fn <a href='#method.topics_publish' class='fnname'>topics_publish</a>(&amp;self, request: <a class='struct' href='../google_pubsub1_beta2/struct.PublishRequest.html' title='google_pubsub1_beta2::PublishRequest'>PublishRequest</a>, topic: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_pubsub1_beta2/struct.ProjectTopicPublishCall.html' title='google_pubsub1_beta2::ProjectTopicPublishCall'>ProjectTopicPublishCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Adds one or more messages to the topic. Returns <code>NOT_FOUND</code> if the topic does not exist. The message payload must not be empty; it must contain either a non-empty data field, or at least one attribute.</p>
@@ -134,7 +134,7 @@ It is not used directly, but through the <code>Pubsub</code> hub.</p>
 <li><code>request</code> - No description provided.</li>
 <li><code>topic</code> - The messages in the request will be published on this topic.</li>
 </ul>
-</div><h4 id='method.topics_get' class='method'><code>fn <a href='#method.topics_get' class='fnname'>topics_get</a>(&amp;self, topic: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_pubsub1_beta2/struct.ProjectTopicGetCall.html' title='google_pubsub1_beta2::ProjectTopicGetCall'>ProjectTopicGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.topics_get' class='method'><code>fn <a href='#method.topics_get' class='fnname'>topics_get</a>(&amp;self, topic: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_pubsub1_beta2/struct.ProjectTopicGetCall.html' title='google_pubsub1_beta2::ProjectTopicGetCall'>ProjectTopicGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Gets the configuration of a topic.</p>
@@ -143,7 +143,7 @@ It is not used directly, but through the <code>Pubsub</code> hub.</p>
 <ul>
 <li><code>topic</code> - The name of the topic to get.</li>
 </ul>
-</div><h4 id='method.topics_get_iam_policy' class='method'><code>fn <a href='#method.topics_get_iam_policy' class='fnname'>topics_get_iam_policy</a>(&amp;self, resource: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_pubsub1_beta2/struct.ProjectTopicGetIamPolicyCall.html' title='google_pubsub1_beta2::ProjectTopicGetIamPolicyCall'>ProjectTopicGetIamPolicyCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.topics_get_iam_policy' class='method'><code>fn <a href='#method.topics_get_iam_policy' class='fnname'>topics_get_iam_policy</a>(&amp;self, resource: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_pubsub1_beta2/struct.ProjectTopicGetIamPolicyCall.html' title='google_pubsub1_beta2::ProjectTopicGetIamPolicyCall'>ProjectTopicGetIamPolicyCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Gets the access control policy for a <code>resource</code>. Returns an empty policy if the resource exists and does not have a policy set.</p>
@@ -152,7 +152,7 @@ It is not used directly, but through the <code>Pubsub</code> hub.</p>
 <ul>
 <li><code>resource</code> - REQUIRED: The resource for which the policy is being requested. <code>resource</code> is usually specified as a path, such as <code>projects/*project*/zones/*zone*/disks/*disk*</code>. The format for the path specified in this value is resource specific and is specified in the <code>getIamPolicy</code> documentation.</li>
 </ul>
-</div><h4 id='method.subscriptions_modify_ack_deadline' class='method'><code>fn <a href='#method.subscriptions_modify_ack_deadline' class='fnname'>subscriptions_modify_ack_deadline</a>(&amp;self, request: <a class='struct' href='../google_pubsub1_beta2/struct.ModifyAckDeadlineRequest.html' title='google_pubsub1_beta2::ModifyAckDeadlineRequest'>ModifyAckDeadlineRequest</a>, subscription: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_pubsub1_beta2/struct.ProjectSubscriptionModifyAckDeadlineCall.html' title='google_pubsub1_beta2::ProjectSubscriptionModifyAckDeadlineCall'>ProjectSubscriptionModifyAckDeadlineCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.subscriptions_modify_ack_deadline' class='method'><code>fn <a href='#method.subscriptions_modify_ack_deadline' class='fnname'>subscriptions_modify_ack_deadline</a>(&amp;self, request: <a class='struct' href='../google_pubsub1_beta2/struct.ModifyAckDeadlineRequest.html' title='google_pubsub1_beta2::ModifyAckDeadlineRequest'>ModifyAckDeadlineRequest</a>, subscription: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_pubsub1_beta2/struct.ProjectSubscriptionModifyAckDeadlineCall.html' title='google_pubsub1_beta2::ProjectSubscriptionModifyAckDeadlineCall'>ProjectSubscriptionModifyAckDeadlineCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Modifies the ack deadline for a specific message. This method is useful to indicate that more time is needed to process a message by the subscriber, or to make the message available for redelivery if the processing was interrupted.</p>
@@ -162,7 +162,7 @@ It is not used directly, but through the <code>Pubsub</code> hub.</p>
 <li><code>request</code> - No description provided.</li>
 <li><code>subscription</code> - The name of the subscription.</li>
 </ul>
-</div><h4 id='method.subscriptions_delete' class='method'><code>fn <a href='#method.subscriptions_delete' class='fnname'>subscriptions_delete</a>(&amp;self, subscription: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_pubsub1_beta2/struct.ProjectSubscriptionDeleteCall.html' title='google_pubsub1_beta2::ProjectSubscriptionDeleteCall'>ProjectSubscriptionDeleteCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.subscriptions_delete' class='method'><code>fn <a href='#method.subscriptions_delete' class='fnname'>subscriptions_delete</a>(&amp;self, subscription: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_pubsub1_beta2/struct.ProjectSubscriptionDeleteCall.html' title='google_pubsub1_beta2::ProjectSubscriptionDeleteCall'>ProjectSubscriptionDeleteCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Deletes an existing subscription. All pending messages in the subscription are immediately dropped. Calls to <code>Pull</code> after deletion will return <code>NOT_FOUND</code>. After a subscription is deleted, a new one may be created with the same name, but the new one has no association with the old subscription, or its topic unless the same topic is specified.</p>
@@ -171,7 +171,7 @@ It is not used directly, but through the <code>Pubsub</code> hub.</p>
 <ul>
 <li><code>subscription</code> - The subscription to delete.</li>
 </ul>
-</div><h4 id='method.topics_set_iam_policy' class='method'><code>fn <a href='#method.topics_set_iam_policy' class='fnname'>topics_set_iam_policy</a>(&amp;self, request: <a class='struct' href='../google_pubsub1_beta2/struct.SetIamPolicyRequest.html' title='google_pubsub1_beta2::SetIamPolicyRequest'>SetIamPolicyRequest</a>, resource: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_pubsub1_beta2/struct.ProjectTopicSetIamPolicyCall.html' title='google_pubsub1_beta2::ProjectTopicSetIamPolicyCall'>ProjectTopicSetIamPolicyCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.topics_set_iam_policy' class='method'><code>fn <a href='#method.topics_set_iam_policy' class='fnname'>topics_set_iam_policy</a>(&amp;self, request: <a class='struct' href='../google_pubsub1_beta2/struct.SetIamPolicyRequest.html' title='google_pubsub1_beta2::SetIamPolicyRequest'>SetIamPolicyRequest</a>, resource: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_pubsub1_beta2/struct.ProjectTopicSetIamPolicyCall.html' title='google_pubsub1_beta2::ProjectTopicSetIamPolicyCall'>ProjectTopicSetIamPolicyCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Sets the access control policy on the specified resource. Replaces any existing policy.</p>
@@ -181,7 +181,7 @@ It is not used directly, but through the <code>Pubsub</code> hub.</p>
 <li><code>request</code> - No description provided.</li>
 <li><code>resource</code> - REQUIRED: The resource for which the policy is being specified. <code>resource</code> is usually specified as a path, such as <code>projects/*project*/zones/*zone*/disks/*disk*</code>. The format for the path specified in this value is resource specific and is specified in the <code>setIamPolicy</code> documentation.</li>
 </ul>
-</div><h4 id='method.subscriptions_create' class='method'><code>fn <a href='#method.subscriptions_create' class='fnname'>subscriptions_create</a>(&amp;self, request: <a class='struct' href='../google_pubsub1_beta2/struct.Subscription.html' title='google_pubsub1_beta2::Subscription'>Subscription</a>, name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_pubsub1_beta2/struct.ProjectSubscriptionCreateCall.html' title='google_pubsub1_beta2::ProjectSubscriptionCreateCall'>ProjectSubscriptionCreateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.subscriptions_create' class='method'><code>fn <a href='#method.subscriptions_create' class='fnname'>subscriptions_create</a>(&amp;self, request: <a class='struct' href='../google_pubsub1_beta2/struct.Subscription.html' title='google_pubsub1_beta2::Subscription'>Subscription</a>, name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_pubsub1_beta2/struct.ProjectSubscriptionCreateCall.html' title='google_pubsub1_beta2::ProjectSubscriptionCreateCall'>ProjectSubscriptionCreateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Creates a subscription to a given topic. If the subscription already exists, returns <code>ALREADY_EXISTS</code>. If the corresponding topic doesn&#39;t exist, returns <code>NOT_FOUND</code>. If the name is not provided in the request, the server will assign a random name for this subscription on the same project as the topic.</p>
@@ -191,7 +191,7 @@ It is not used directly, but through the <code>Pubsub</code> hub.</p>
 <li><code>request</code> - No description provided.</li>
 <li><code>name</code> - The name of the subscription. It must have the format <code>&quot;projects/{project}/subscriptions/{subscription}&quot;</code>. <code>{subscription}</code> must start with a letter, and contain only letters (<code>[A-Za-z]</code>), numbers (<code>[0-9]</code>), dashes (<code>-</code>), underscores (<code>_</code>), periods (<code>.</code>), tildes (<code>~</code>), plus (<code>+</code>) or percent signs (<code>%</code>). It must be between 3 and 255 characters in length, and it must not start with <code>&quot;goog&quot;</code>.</li>
 </ul>
-</div><h4 id='method.subscriptions_acknowledge' class='method'><code>fn <a href='#method.subscriptions_acknowledge' class='fnname'>subscriptions_acknowledge</a>(&amp;self, request: <a class='struct' href='../google_pubsub1_beta2/struct.AcknowledgeRequest.html' title='google_pubsub1_beta2::AcknowledgeRequest'>AcknowledgeRequest</a>, subscription: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_pubsub1_beta2/struct.ProjectSubscriptionAcknowledgeCall.html' title='google_pubsub1_beta2::ProjectSubscriptionAcknowledgeCall'>ProjectSubscriptionAcknowledgeCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.subscriptions_acknowledge' class='method'><code>fn <a href='#method.subscriptions_acknowledge' class='fnname'>subscriptions_acknowledge</a>(&amp;self, request: <a class='struct' href='../google_pubsub1_beta2/struct.AcknowledgeRequest.html' title='google_pubsub1_beta2::AcknowledgeRequest'>AcknowledgeRequest</a>, subscription: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_pubsub1_beta2/struct.ProjectSubscriptionAcknowledgeCall.html' title='google_pubsub1_beta2::ProjectSubscriptionAcknowledgeCall'>ProjectSubscriptionAcknowledgeCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Acknowledges the messages associated with the <code>ack_ids</code> in the <code>AcknowledgeRequest</code>. The Pub/Sub system can remove the relevant messages from the subscription. Acknowledging a message whose ack deadline has expired may succeed, but such a message may be redelivered later. Acknowledging a message more than once will not result in an error.</p>
@@ -201,7 +201,7 @@ It is not used directly, but through the <code>Pubsub</code> hub.</p>
 <li><code>request</code> - No description provided.</li>
 <li><code>subscription</code> - The subscription whose message is being acknowledged.</li>
 </ul>
-</div><h4 id='method.subscriptions_get_iam_policy' class='method'><code>fn <a href='#method.subscriptions_get_iam_policy' class='fnname'>subscriptions_get_iam_policy</a>(&amp;self, resource: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_pubsub1_beta2/struct.ProjectSubscriptionGetIamPolicyCall.html' title='google_pubsub1_beta2::ProjectSubscriptionGetIamPolicyCall'>ProjectSubscriptionGetIamPolicyCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.subscriptions_get_iam_policy' class='method'><code>fn <a href='#method.subscriptions_get_iam_policy' class='fnname'>subscriptions_get_iam_policy</a>(&amp;self, resource: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_pubsub1_beta2/struct.ProjectSubscriptionGetIamPolicyCall.html' title='google_pubsub1_beta2::ProjectSubscriptionGetIamPolicyCall'>ProjectSubscriptionGetIamPolicyCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Gets the access control policy for a <code>resource</code>. Returns an empty policy if the resource exists and does not have a policy set.</p>
@@ -210,7 +210,7 @@ It is not used directly, but through the <code>Pubsub</code> hub.</p>
 <ul>
 <li><code>resource</code> - REQUIRED: The resource for which the policy is being requested. <code>resource</code> is usually specified as a path, such as <code>projects/*project*/zones/*zone*/disks/*disk*</code>. The format for the path specified in this value is resource specific and is specified in the <code>getIamPolicy</code> documentation.</li>
 </ul>
-</div><h4 id='method.subscriptions_test_iam_permissions' class='method'><code>fn <a href='#method.subscriptions_test_iam_permissions' class='fnname'>subscriptions_test_iam_permissions</a>(&amp;self, request: <a class='struct' href='../google_pubsub1_beta2/struct.TestIamPermissionsRequest.html' title='google_pubsub1_beta2::TestIamPermissionsRequest'>TestIamPermissionsRequest</a>, resource: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_pubsub1_beta2/struct.ProjectSubscriptionTestIamPermissionCall.html' title='google_pubsub1_beta2::ProjectSubscriptionTestIamPermissionCall'>ProjectSubscriptionTestIamPermissionCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.subscriptions_test_iam_permissions' class='method'><code>fn <a href='#method.subscriptions_test_iam_permissions' class='fnname'>subscriptions_test_iam_permissions</a>(&amp;self, request: <a class='struct' href='../google_pubsub1_beta2/struct.TestIamPermissionsRequest.html' title='google_pubsub1_beta2::TestIamPermissionsRequest'>TestIamPermissionsRequest</a>, resource: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_pubsub1_beta2/struct.ProjectSubscriptionTestIamPermissionCall.html' title='google_pubsub1_beta2::ProjectSubscriptionTestIamPermissionCall'>ProjectSubscriptionTestIamPermissionCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Returns permissions that a caller has on the specified resource.</p>
@@ -220,7 +220,7 @@ It is not used directly, but through the <code>Pubsub</code> hub.</p>
 <li><code>request</code> - No description provided.</li>
 <li><code>resource</code> - REQUIRED: The resource for which the policy detail is being requested. <code>resource</code> is usually specified as a path, such as <code>projects/*project*/zones/*zone*/disks/*disk*</code>. The format for the path specified in this value is resource specific and is specified in the <code>testIamPermissions</code> documentation.</li>
 </ul>
-</div><h4 id='method.topics_delete' class='method'><code>fn <a href='#method.topics_delete' class='fnname'>topics_delete</a>(&amp;self, topic: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_pubsub1_beta2/struct.ProjectTopicDeleteCall.html' title='google_pubsub1_beta2::ProjectTopicDeleteCall'>ProjectTopicDeleteCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.topics_delete' class='method'><code>fn <a href='#method.topics_delete' class='fnname'>topics_delete</a>(&amp;self, topic: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_pubsub1_beta2/struct.ProjectTopicDeleteCall.html' title='google_pubsub1_beta2::ProjectTopicDeleteCall'>ProjectTopicDeleteCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Deletes the topic with the given name. Returns <code>NOT_FOUND</code> if the topic does not exist. After a topic is deleted, a new topic may be created with the same name; this is an entirely new topic with none of the old configuration or subscriptions. Existing subscriptions to this topic are not deleted, but their <code>topic</code> field is set to <code>_deleted-topic_</code>.</p>
@@ -229,7 +229,7 @@ It is not used directly, but through the <code>Pubsub</code> hub.</p>
 <ul>
 <li><code>topic</code> - Name of the topic to delete.</li>
 </ul>
-</div><h4 id='method.subscriptions_get' class='method'><code>fn <a href='#method.subscriptions_get' class='fnname'>subscriptions_get</a>(&amp;self, subscription: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_pubsub1_beta2/struct.ProjectSubscriptionGetCall.html' title='google_pubsub1_beta2::ProjectSubscriptionGetCall'>ProjectSubscriptionGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.subscriptions_get' class='method'><code>fn <a href='#method.subscriptions_get' class='fnname'>subscriptions_get</a>(&amp;self, subscription: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_pubsub1_beta2/struct.ProjectSubscriptionGetCall.html' title='google_pubsub1_beta2::ProjectSubscriptionGetCall'>ProjectSubscriptionGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Gets the configuration details of a subscription.</p>
@@ -238,7 +238,7 @@ It is not used directly, but through the <code>Pubsub</code> hub.</p>
 <ul>
 <li><code>subscription</code> - The name of the subscription to get.</li>
 </ul>
-</div><h4 id='method.topics_subscriptions_list' class='method'><code>fn <a href='#method.topics_subscriptions_list' class='fnname'>topics_subscriptions_list</a>(&amp;self, topic: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_pubsub1_beta2/struct.ProjectTopicSubscriptionListCall.html' title='google_pubsub1_beta2::ProjectTopicSubscriptionListCall'>ProjectTopicSubscriptionListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.topics_subscriptions_list' class='method'><code>fn <a href='#method.topics_subscriptions_list' class='fnname'>topics_subscriptions_list</a>(&amp;self, topic: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_pubsub1_beta2/struct.ProjectTopicSubscriptionListCall.html' title='google_pubsub1_beta2::ProjectTopicSubscriptionListCall'>ProjectTopicSubscriptionListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Lists the name of the subscriptions for this topic.</p>
@@ -247,7 +247,7 @@ It is not used directly, but through the <code>Pubsub</code> hub.</p>
 <ul>
 <li><code>topic</code> - The name of the topic that subscriptions are attached to.</li>
 </ul>
-</div><h4 id='method.subscriptions_list' class='method'><code>fn <a href='#method.subscriptions_list' class='fnname'>subscriptions_list</a>(&amp;self, project: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_pubsub1_beta2/struct.ProjectSubscriptionListCall.html' title='google_pubsub1_beta2::ProjectSubscriptionListCall'>ProjectSubscriptionListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.subscriptions_list' class='method'><code>fn <a href='#method.subscriptions_list' class='fnname'>subscriptions_list</a>(&amp;self, project: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_pubsub1_beta2/struct.ProjectSubscriptionListCall.html' title='google_pubsub1_beta2::ProjectSubscriptionListCall'>ProjectSubscriptionListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Lists matching subscriptions.</p>
@@ -256,7 +256,7 @@ It is not used directly, but through the <code>Pubsub</code> hub.</p>
 <ul>
 <li><code>project</code> - The name of the cloud project that subscriptions belong to.</li>
 </ul>
-</div><h4 id='method.subscriptions_set_iam_policy' class='method'><code>fn <a href='#method.subscriptions_set_iam_policy' class='fnname'>subscriptions_set_iam_policy</a>(&amp;self, request: <a class='struct' href='../google_pubsub1_beta2/struct.SetIamPolicyRequest.html' title='google_pubsub1_beta2::SetIamPolicyRequest'>SetIamPolicyRequest</a>, resource: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_pubsub1_beta2/struct.ProjectSubscriptionSetIamPolicyCall.html' title='google_pubsub1_beta2::ProjectSubscriptionSetIamPolicyCall'>ProjectSubscriptionSetIamPolicyCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.subscriptions_set_iam_policy' class='method'><code>fn <a href='#method.subscriptions_set_iam_policy' class='fnname'>subscriptions_set_iam_policy</a>(&amp;self, request: <a class='struct' href='../google_pubsub1_beta2/struct.SetIamPolicyRequest.html' title='google_pubsub1_beta2::SetIamPolicyRequest'>SetIamPolicyRequest</a>, resource: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_pubsub1_beta2/struct.ProjectSubscriptionSetIamPolicyCall.html' title='google_pubsub1_beta2::ProjectSubscriptionSetIamPolicyCall'>ProjectSubscriptionSetIamPolicyCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Sets the access control policy on the specified resource. Replaces any existing policy.</p>
@@ -266,7 +266,7 @@ It is not used directly, but through the <code>Pubsub</code> hub.</p>
 <li><code>request</code> - No description provided.</li>
 <li><code>resource</code> - REQUIRED: The resource for which the policy is being specified. <code>resource</code> is usually specified as a path, such as <code>projects/*project*/zones/*zone*/disks/*disk*</code>. The format for the path specified in this value is resource specific and is specified in the <code>setIamPolicy</code> documentation.</li>
 </ul>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_pubsub1_beta2/trait.MethodsBuilder.html' title='google_pubsub1_beta2::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_pubsub1_beta2/struct.ProjectMethods.html' title='google_pubsub1_beta2::ProjectMethods'>ProjectMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-3616' class='srclink' href='../src/google_pubsub1_beta2/home/byron/dev/rust/google-apis-rs/target/debug/build/google-pubsub1_beta2-f04e7480aa353fd0/out/lib.rs.html#7315' title='goto source code'>[src]</a></span></h3>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='trait' href='../google_pubsub1_beta2/trait.MethodsBuilder.html' title='google_pubsub1_beta2::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_pubsub1_beta2/struct.ProjectMethods.html' title='google_pubsub1_beta2::ProjectMethods'>ProjectMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-3265' class='srclink' href='../src/google_pubsub1_beta2/home/byron/dev/rust/google-apis-rs/target/debug/build/google-pubsub1_beta2-47b4b600985cf887/out/lib.rs.html#5808' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 

@@ -48,7 +48,7 @@
                        [<span class='inner'>&#x2212;</span>]
                    </a>
                </span><a id='src-0' class='srclink' href='../src/google_taskqueue1_beta2/src/lib.rs.html#5-193' title='goto source code'>[src]</a></span></h1>
-<div class='docblock'><p>This documentation was generated from <em>taskqueue</em> crate version <em>0.1.14+20141111</em>, where <em>20141111</em> is the exact revision of the <em>taskqueue:v1beta2</em> schema built by the <a href="http://www.makotemplates.org/">mako</a> code generator <em>v0.1.14</em>.</p>
+<div class='docblock'><p>This documentation was generated from <em>taskqueue</em> crate version <em>0.1.15+20160428</em>, where <em>20160428</em> is the exact revision of the <em>taskqueue:v1beta2</em> schema built by the <a href="http://www.makotemplates.org/">mako</a> code generator <em>v0.1.15</em>.</p>
 
 <p>Everything else about the <em>taskqueue</em> <em>v1_beta2</em> API can be found at the
 <a href="https://developers.google.com/appengine/docs/python/taskqueue/rest">official documentation site</a>.
@@ -160,7 +160,7 @@ google-taskqueue1_beta2 = &quot;*&quot;
 <span class='comment'>// Values shown here are possibly random and not representative !</span>
 <span class='kw'>let</span> <span class='ident'>result</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>tasks</span>().<span class='ident'>lease</span>(<span class='string'>&quot;project&quot;</span>, <span class='string'>&quot;taskqueue&quot;</span>, <span class='op'>-</span><span class='number'>36</span>, <span class='op'>-</span><span class='number'>39</span>)
              .<span class='ident'>tag</span>(<span class='string'>&quot;dolore&quot;</span>)
-             .<span class='ident'>group_by_tag</span>(<span class='boolvalue'>true</span>)
+             .<span class='ident'>group_by_tag</span>(<span class='bool-val'>true</span>)
              .<span class='ident'>doit</span>();
  
 <span class='kw'>match</span> <span class='ident'>result</span> {

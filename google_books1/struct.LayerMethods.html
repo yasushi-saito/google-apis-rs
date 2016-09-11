@@ -47,8 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-15112' class='srclink' href='../src/google_books1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-books1-db76eda366438a0a/out/lib.rs.html#32779-32781' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct LayerMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
+               </span><a id='src-14521' class='srclink' href='../src/google_books1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-books1-29cf73b28d86da5b/out/lib.rs.html#26097-26099' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct LayerMethods&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>layer</em> resources.
 It is not used directly, but through the <code>Books</code> hub.</p>
@@ -74,8 +74,8 @@ It is not used directly, but through the <code>Books</code> hub.</p>
 <span class='comment'>// like `annotation_data_get(...)`, `annotation_data_list(...)`, `get(...)`, `list(...)`, `volume_annotations_get(...)` and `volume_annotations_list(...)`</span>
 <span class='comment'>// to build up your call.</span>
 <span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>layers</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_books1/struct.LayerMethods.html' title='google_books1::LayerMethods'>LayerMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-15121' class='srclink' href='../src/google_books1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-books1-db76eda366438a0a/out/lib.rs.html#32783-32940' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.annotation_data_get' class='method'><code>fn <a href='#method.annotation_data_get' class='fnname'>annotation_data_get</a>(&amp;self, volume_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, layer_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, annotation_data_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, content_version: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_books1/struct.LayerAnnotationDataGetCall.html' title='google_books1::LayerAnnotationDataGetCall'>LayerAnnotationDataGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='struct' href='../google_books1/struct.LayerMethods.html' title='google_books1::LayerMethods'>LayerMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-14530' class='srclink' href='../src/google_books1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-books1-29cf73b28d86da5b/out/lib.rs.html#26101-26258' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.annotation_data_get' class='method'><code>fn <a href='#method.annotation_data_get' class='fnname'>annotation_data_get</a>(&amp;self, volume_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, layer_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, annotation_data_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, content_version: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_books1/struct.LayerAnnotationDataGetCall.html' title='google_books1::LayerAnnotationDataGetCall'>LayerAnnotationDataGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Gets the annotation data.</p>
@@ -87,7 +87,7 @@ It is not used directly, but through the <code>Books</code> hub.</p>
 <li><code>annotationDataId</code> - The ID of the annotation data to retrieve.</li>
 <li><code>contentVersion</code> - The content version for the volume you are trying to retrieve.</li>
 </ul>
-</div><h4 id='method.volume_annotations_get' class='method'><code>fn <a href='#method.volume_annotations_get' class='fnname'>volume_annotations_get</a>(&amp;self, volume_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, layer_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, annotation_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_books1/struct.LayerVolumeAnnotationGetCall.html' title='google_books1::LayerVolumeAnnotationGetCall'>LayerVolumeAnnotationGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.volume_annotations_get' class='method'><code>fn <a href='#method.volume_annotations_get' class='fnname'>volume_annotations_get</a>(&amp;self, volume_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, layer_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, annotation_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_books1/struct.LayerVolumeAnnotationGetCall.html' title='google_books1::LayerVolumeAnnotationGetCall'>LayerVolumeAnnotationGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Gets the volume annotation.</p>
@@ -98,7 +98,7 @@ It is not used directly, but through the <code>Books</code> hub.</p>
 <li><code>layerId</code> - The ID for the layer to get the annotations.</li>
 <li><code>annotationId</code> - The ID of the volume annotation to retrieve.</li>
 </ul>
-</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self, volume_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_books1/struct.LayerListCall.html' title='google_books1::LayerListCall'>LayerListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self, volume_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_books1/struct.LayerListCall.html' title='google_books1::LayerListCall'>LayerListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>List the layer summaries for a volume.</p>
@@ -107,7 +107,7 @@ It is not used directly, but through the <code>Books</code> hub.</p>
 <ul>
 <li><code>volumeId</code> - The volume to retrieve layers for.</li>
 </ul>
-</div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, volume_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, summary_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_books1/struct.LayerGetCall.html' title='google_books1::LayerGetCall'>LayerGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, volume_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, summary_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_books1/struct.LayerGetCall.html' title='google_books1::LayerGetCall'>LayerGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Gets the layer summary for a volume.</p>
@@ -117,7 +117,7 @@ It is not used directly, but through the <code>Books</code> hub.</p>
 <li><code>volumeId</code> - The volume to retrieve layers for.</li>
 <li><code>summaryId</code> - The ID for the layer to get the summary for.</li>
 </ul>
-</div><h4 id='method.volume_annotations_list' class='method'><code>fn <a href='#method.volume_annotations_list' class='fnname'>volume_annotations_list</a>(&amp;self, volume_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, layer_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, content_version: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_books1/struct.LayerVolumeAnnotationListCall.html' title='google_books1::LayerVolumeAnnotationListCall'>LayerVolumeAnnotationListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.volume_annotations_list' class='method'><code>fn <a href='#method.volume_annotations_list' class='fnname'>volume_annotations_list</a>(&amp;self, volume_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, layer_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, content_version: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_books1/struct.LayerVolumeAnnotationListCall.html' title='google_books1::LayerVolumeAnnotationListCall'>LayerVolumeAnnotationListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Gets the volume annotations for a volume and layer.</p>
@@ -128,7 +128,7 @@ It is not used directly, but through the <code>Books</code> hub.</p>
 <li><code>layerId</code> - The ID for the layer to get the annotations.</li>
 <li><code>contentVersion</code> - The content version for the requested volume.</li>
 </ul>
-</div><h4 id='method.annotation_data_list' class='method'><code>fn <a href='#method.annotation_data_list' class='fnname'>annotation_data_list</a>(&amp;self, volume_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, layer_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, content_version: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_books1/struct.LayerAnnotationDataListCall.html' title='google_books1::LayerAnnotationDataListCall'>LayerAnnotationDataListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.annotation_data_list' class='method'><code>fn <a href='#method.annotation_data_list' class='fnname'>annotation_data_list</a>(&amp;self, volume_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, layer_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, content_version: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_books1/struct.LayerAnnotationDataListCall.html' title='google_books1::LayerAnnotationDataListCall'>LayerAnnotationDataListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Gets the annotation data for a volume and layer.</p>
@@ -139,7 +139,7 @@ It is not used directly, but through the <code>Books</code> hub.</p>
 <li><code>layerId</code> - The ID for the layer to get the annotation data.</li>
 <li><code>contentVersion</code> - The content version for the requested volume.</li>
 </ul>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_books1/trait.MethodsBuilder.html' title='google_books1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_books1/struct.LayerMethods.html' title='google_books1::LayerMethods'>LayerMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-15117' class='srclink' href='../src/google_books1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-books1-db76eda366438a0a/out/lib.rs.html#32782' title='goto source code'>[src]</a></span></h3>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='trait' href='../google_books1/trait.MethodsBuilder.html' title='google_books1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_books1/struct.LayerMethods.html' title='google_books1::LayerMethods'>LayerMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-14526' class='srclink' href='../src/google_books1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-books1-29cf73b28d86da5b/out/lib.rs.html#26100' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 

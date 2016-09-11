@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Insert - YouTube v0.3.6+20160222</title>
+  <title>Insert - YouTube v0.3.6+20160805</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -32,7 +32,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> YouTube v0.3.6+20160222</a>
+        <a href=".." class="icon icon-home"> YouTube v0.3.6+20160805</a>
         
       </div>
 
@@ -587,7 +587,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">YouTube v0.3.6+20160222</a>
+        <a href="..">YouTube v0.3.6+20160805</a>
       </nav>
 
       
@@ -650,28 +650,51 @@ In the latter case it is advised to set the field-cursor to the data-structure's
       user-comment: string
     has-display-content: boolean
     live-chat-id: string
+    message-deleted-details:
+      deleted-message-id: string
+    message-retracted-details:
+      retracted-message-id: string
+    poll-closed-details:
+      poll-id: string
+    poll-edited-details:
+      id: string
+      prompt: string
+    poll-opened-details:
+      id: string
+      prompt: string
+    poll-voted-details:
+      item-id: string
+      poll-id: string
     published-at: string
     text-message-details:
       message-text: string
     type: string
+    user-banned-details:
+      ban-duration-seconds: string
+      ban-type: string
+      banned-user-details:
+        channel-id: string
+        channel-url: string
+        display-name: string
+        profile-image-url: string
 
 </code></pre>
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .author-details    channel-id=erat</code><ul>
+<li><code>-r .author-details    channel-id=sed</code><ul>
 <li>The YouTube channel ID.</li>
 </ul>
 </li>
-<li><code>channel-url=ipsum</code><ul>
+<li><code>channel-url=vero</code><ul>
 <li>The channel&#39;s URL.</li>
 </ul>
 </li>
-<li><code>display-name=no</code><ul>
+<li><code>display-name=dolore</code><ul>
 <li>The channel&#39;s display name.</li>
 </ul>
 </li>
-<li><code>is-chat-moderator=true</code><ul>
+<li><code>is-chat-moderator=false</code><ul>
 <li>Whether the author is a moderator of the live chat.</li>
 </ul>
 </li>
@@ -688,34 +711,34 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
-<p><code>profile-image-url=lorem</code></p>
+<p><code>profile-image-url=accusam</code></p>
 <ul>
 <li>The channels&#39;s avatar URL.</li>
 </ul>
 </li>
 <li>
-<p><code>..    etag=invidunt</code></p>
+<p><code>..    etag=diam</code></p>
 <ul>
 <li>Etag of this resource.</li>
 </ul>
 </li>
-<li><code>id=duo</code><ul>
+<li><code>id=dolor</code><ul>
 <li>The ID that YouTube assigns to uniquely identify the message.</li>
 </ul>
 </li>
-<li><code>kind=dolor</code><ul>
+<li><code>kind=eirmod</code><ul>
 <li>Identifies what kind of resource this is. Value: the fixed string &#34;youtube#liveChatMessage&#34;.</li>
 </ul>
 </li>
-<li><code>snippet    author-channel-id=accusam</code><ul>
-<li>The ID of the user that authored this message, this field is not always filled. textMessageEvent - the user that wrote the message fanFundingEvent - the user that funded the broadcast newSponsorEvent - the user that just became a sponsor</li>
+<li><code>snippet    author-channel-id=amet</code><ul>
+<li>The ID of the user that authored this message, this field is not always filled. textMessageEvent - the user that wrote the message fanFundingEvent - the user that funded the broadcast newSponsorEvent - the user that just became a sponsor messageDeletedEvent - the moderator that took the action messageRetractedEvent - the author that retracted their message userBannedEvent - the moderator that took the action</li>
 </ul>
 </li>
-<li><code>display-message=diam</code><ul>
+<li><code>display-message=ipsum</code><ul>
 <li>Contains a string that can be displayed to the user. If this field is not present the message is silent, at the moment only messages of type TOMBSTONE and CHAT_ENDED_EVENT are silent.</li>
 </ul>
 </li>
-<li><code>fan-funding-event-details    amount-display-string=dolor</code><ul>
+<li><code>fan-funding-event-details    amount-display-string=voluptua.</code><ul>
 <li>A rendered string that displays the fund amount and currency to the user.</li>
 </ul>
 </li>
@@ -723,12 +746,12 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>The amount of the fund.</li>
 </ul>
 </li>
-<li><code>currency=amet</code><ul>
+<li><code>currency=sed</code><ul>
 <li>The currency in which the fund was made.</li>
 </ul>
 </li>
 <li>
-<p><code>user-comment=ipsum</code></p>
+<p><code>user-comment=accusam</code></p>
 <ul>
 <li>The comment added by the user to this fan funding event.</li>
 </ul>
@@ -739,24 +762,104 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>Whether the message has display content that should be displayed to users.</li>
 </ul>
 </li>
-<li><code>live-chat-id=eirmod</code><ul>
+<li><code>live-chat-id=dolor</code><ul>
 <li>No description provided.</li>
 </ul>
 </li>
-<li><code>published-at=sed</code><ul>
+<li>
+<p><code>message-deleted-details    deleted-message-id=dolor</code></p>
+<ul>
+<li>No description provided.</li>
+</ul>
+</li>
+<li>
+<p><code>..message-retracted-details    retracted-message-id=dolore</code></p>
+<ul>
+<li>No description provided.</li>
+</ul>
+</li>
+<li>
+<p><code>..poll-closed-details    poll-id=duo</code></p>
+<ul>
+<li>The id of the poll that was closed.</li>
+</ul>
+</li>
+<li>
+<p><code>..poll-edited-details    id=ipsum</code></p>
+<ul>
+<li>No description provided.</li>
+</ul>
+</li>
+<li>
+<p><code>prompt=diam</code></p>
+<ul>
+<li>No description provided.</li>
+</ul>
+</li>
+<li>
+<p><code>..poll-opened-details    id=sed</code></p>
+<ul>
+<li>No description provided.</li>
+</ul>
+</li>
+<li>
+<p><code>prompt=et</code></p>
+<ul>
+<li>No description provided.</li>
+</ul>
+</li>
+<li>
+<p><code>..poll-voted-details    item-id=tempor</code></p>
+<ul>
+<li>The poll item the user chose.</li>
+</ul>
+</li>
+<li>
+<p><code>poll-id=justo</code></p>
+<ul>
+<li>The poll the user voted on.</li>
+</ul>
+</li>
+<li>
+<p><code>..    published-at=takimata</code></p>
+<ul>
 <li>The date and time when the message was orignally published. The value is specified in ISO 8601 (YYYY-MM-DDThh:mm:ss.sZ) format.</li>
 </ul>
 </li>
 <li>
-<p><code>text-message-details    message-text=accusam</code></p>
+<p><code>text-message-details    message-text=invidunt</code></p>
 <ul>
 <li>The user&#39;s message.</li>
 </ul>
 </li>
 <li>
-<p><code>..    type=sanctus</code></p>
+<p><code>..    type=amet</code></p>
 <ul>
 <li>The type of message, this will always be present, it determines the contents of the message as well as which fields will be present.</li>
+</ul>
+</li>
+<li><code>user-banned-details    ban-duration-seconds=dolor</code><ul>
+<li>The duration of the ban. This property is only present if the banType is temporary.</li>
+</ul>
+</li>
+<li><code>ban-type=voluptua.</code><ul>
+<li>The type of ban.</li>
+</ul>
+</li>
+<li><code>banned-user-details    channel-id=et</code><ul>
+<li>The YouTube channel ID.</li>
+</ul>
+</li>
+<li><code>channel-url=elitr</code><ul>
+<li>The channel&#39;s URL.</li>
+</ul>
+</li>
+<li><code>display-name=kasd</code><ul>
+<li>The channel&#39;s display name.</li>
+</ul>
+</li>
+<li><code>profile-image-url=sit</code><ul>
+<li>The channels&#39;s avatar URL.</li>
 </ul>
 </li>
 </ul>
@@ -869,7 +972,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <!--
 MkDocs version  : 0.12.2
-Docs Build Date : 2016-07-23 16:05:33.221431
+Docs Build Date : 2016-09-11 17:55:04.252838
 -->
 </body>
 </html>

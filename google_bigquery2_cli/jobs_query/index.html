@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Query - bigquery v0.3.6+20160408</title>
+  <title>Query - bigquery v0.3.6+20160903</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -32,7 +32,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> bigquery v0.3.6+20160408</a>
+        <a href=".." class="icon icon-home"> bigquery v0.3.6+20160903</a>
         
       </div>
 
@@ -214,7 +214,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">bigquery v0.3.6+20160408</a>
+        <a href="..">bigquery v0.3.6+20160903</a>
       </nav>
 
       
@@ -269,6 +269,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   dry-run: boolean
   kind: string
   max-results: integer
+  parameter-mode: string
   preserve-nulls: boolean
   query: string
   timeout-ms: integer
@@ -279,44 +280,48 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .default-dataset    dataset-id=tempor</code><ul>
+<li><code>-r .default-dataset    dataset-id=justo</code><ul>
 <li>[Required] A unique ID for this dataset, without the project name. The ID must contain only letters (a-z, A-Z), numbers (0-9), or underscores (_). The maximum length is 1,024 characters.</li>
 </ul>
 </li>
 <li>
-<p><code>project-id=sea</code></p>
+<p><code>project-id=est</code></p>
 <ul>
 <li>[Optional] The ID of the project containing this dataset.</li>
 </ul>
 </li>
 <li>
-<p><code>..    dry-run=false</code></p>
+<p><code>..    dry-run=true</code></p>
 <ul>
 <li>[Optional] If set to true, BigQuery doesn&#39;t run the job. Instead, if the query is valid, BigQuery returns statistics about the job such as how many bytes would be processed. If the query is invalid, an error returns. The default value is false.</li>
 </ul>
 </li>
-<li><code>kind=ipsum</code><ul>
+<li><code>kind=accusam</code><ul>
 <li>The resource type of the request.</li>
 </ul>
 </li>
-<li><code>max-results=70</code><ul>
+<li><code>max-results=88</code><ul>
 <li>[Optional] The maximum number of rows of data to return per page of results. Setting this flag to a small value such as 1000 and then paging through results might improve reliability when the query result set is large. In addition to this limit, responses are also limited to 10 MB. By default, there is no maximum row count, and only the byte limit applies.</li>
+</ul>
+</li>
+<li><code>parameter-mode=diam</code><ul>
+<li>[Experimental] Standard SQL only. Whether to use positional (?) or named (@myparam) query parameters in this query.</li>
 </ul>
 </li>
 <li><code>preserve-nulls=false</code><ul>
 <li>[Deprecated] This property is deprecated.</li>
 </ul>
 </li>
-<li><code>query=sit</code><ul>
+<li><code>query=est</code><ul>
 <li>[Required] A query string, following the BigQuery query syntax, of the query to execute. Example: &#34;SELECT count(f1) FROM [myProjectId:myDatasetId.myTableId]&#34;.</li>
 </ul>
 </li>
-<li><code>timeout-ms=60</code><ul>
+<li><code>timeout-ms=38</code><ul>
 <li>[Optional] How long to wait for the query to complete, in milliseconds, before the request times out and returns. Note that this is only a timeout for the request, not the query. If the query takes longer to run than the timeout value, the call returns without any results and with the &#39;jobComplete&#39; flag set to false. You can call GetQueryResults() to wait for the query to complete and read the results. The default value is 10000 milliseconds (10 seconds).</li>
 </ul>
 </li>
 <li><code>use-legacy-sql=true</code><ul>
-<li>[Experimental] Specifies whether to use BigQuery&#39;s legacy SQL dialect for this query. The default value is true. If set to false, the query will use BigQuery&#39;s updated SQL dialect with improved standards compliance. When using BigQuery&#39;s updated SQL, the values of allowLargeResults and flattenResults are ignored. Queries with useLegacySql set to false will be run as if allowLargeResults is true and flattenResults is false.</li>
+<li>[Experimental] Specifies whether to use BigQuery&#39;s legacy SQL dialect for this query. The default value is true. If set to false, the query will use BigQuery&#39;s standard SQL: https://cloud.google.com/bigquery/sql-reference/ When useLegacySql is set to false, the values of allowLargeResults and flattenResults are ignored; query will be run as if allowLargeResults is true and flattenResults is false.</li>
 </ul>
 </li>
 <li><code>use-query-cache=false</code><ul>
@@ -433,7 +438,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <!--
 MkDocs version  : 0.12.2
-Docs Build Date : 2016-07-23 16:06:02.768255
+Docs Build Date : 2016-09-11 17:56:01.916842
 -->
 </body>
 </html>

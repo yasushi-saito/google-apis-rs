@@ -264,12 +264,14 @@
 <span id="220">220</span>
 <span id="221">221</span>
 <span id="222">222</span>
+<span id="223">223</span>
+<span id="224">224</span>
 </pre><pre class='rust '>
 <span class='comment'>// DO NOT EDIT !</span>
 <span class='comment'>// This file was generated automatically from &#39;src/mako/api/lib.rs.mako&#39;</span>
 <span class='comment'>// DO NOT EDIT !</span>
 
-<span class='doccomment'>//! This documentation was generated from *Shopping Content* crate version *0.1.14+20160331*, where *20160331* is the exact revision of the *content:v2* schema built by the [mako](http://www.makotemplates.org/) code generator *v0.1.14*.</span>
+<span class='doccomment'>//! This documentation was generated from *Shopping Content* crate version *0.1.15+20160905*, where *20160905* is the exact revision of the *content:v2* schema built by the [mako](http://www.makotemplates.org/) code generator *v0.1.15*.</span>
 <span class='doccomment'>//! </span>
 <span class='doccomment'>//! Everything else about the *Shopping Content* *v2* API can be found at the</span>
 <span class='doccomment'>//! [official documentation site](https://developers.google.com/shopping-content).</span>
@@ -298,6 +300,8 @@
 <span class='doccomment'>//!  * [*custombatch*](struct.ProductCustombatchCall.html), [*delete*](struct.ProductDeleteCall.html), [*get*](struct.ProductGetCall.html), [*insert*](struct.ProductInsertCall.html) and [*list*](struct.ProductListCall.html)</span>
 <span class='doccomment'>//! * productstatuses</span>
 <span class='doccomment'>//!  * [*custombatch*](struct.ProductstatuseCustombatchCall.html), [*get*](struct.ProductstatuseGetCall.html) and [*list*](struct.ProductstatuseListCall.html)</span>
+<span class='doccomment'>//! * shippingsettings</span>
+<span class='doccomment'>//!  * [*custombatch*](struct.ShippingsettingCustombatchCall.html), [*get*](struct.ShippingsettingGetCall.html), [*getsupportedcarriers*](struct.ShippingsettingGetsupportedcarrierCall.html), [*list*](struct.ShippingsettingListCall.html), [*patch*](struct.ShippingsettingPatchCall.html) and [*update*](struct.ShippingsettingUpdateCall.html)</span>
 <span class='doccomment'>//! </span>
 <span class='doccomment'>//! </span>
 <span class='doccomment'>//! </span>
@@ -393,13 +397,13 @@
 <span class='doccomment'>//! // execute the final call using `doit()`.</span>
 <span class='doccomment'>//! // Values shown here are possibly random and not representative !</span>
 <span class='doccomment'>//! let result = hub.orders().list(&quot;merchantId&quot;)</span>
-<span class='doccomment'>//!              .add_statuses(&quot;dolor&quot;)</span>
-<span class='doccomment'>//!              .placed_date_start(&quot;diam&quot;)</span>
-<span class='doccomment'>//!              .placed_date_end(&quot;kasd&quot;)</span>
-<span class='doccomment'>//!              .page_token(&quot;invidunt&quot;)</span>
+<span class='doccomment'>//!              .add_statuses(&quot;sit&quot;)</span>
+<span class='doccomment'>//!              .placed_date_start(&quot;takimata&quot;)</span>
+<span class='doccomment'>//!              .placed_date_end(&quot;elitr&quot;)</span>
+<span class='doccomment'>//!              .page_token(&quot;nonumy&quot;)</span>
 <span class='doccomment'>//!              .order_by(&quot;rebum.&quot;)</span>
-<span class='doccomment'>//!              .max_results(50)</span>
-<span class='doccomment'>//!              .acknowledged(false)</span>
+<span class='doccomment'>//!              .max_results(95)</span>
+<span class='doccomment'>//!              .acknowledged(true)</span>
 <span class='doccomment'>//!              .doit();</span>
 <span class='doccomment'>//! </span>
 <span class='doccomment'>//! match result {</span>

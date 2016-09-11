@@ -47,8 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-5046' class='srclink' href='../src/google_fusiontables2/home/byron/dev/rust/google-apis-rs/target/debug/build/google-fusiontables2-aab710f734c6a354/out/lib.rs.html#11224-11226' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct TableMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
+               </span><a id='src-4695' class='srclink' href='../src/google_fusiontables2/home/byron/dev/rust/google-apis-rs/target/debug/build/google-fusiontables2-7a7cefaee2ad8385/out/lib.rs.html#8975-8977' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct TableMethods&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>table</em> resources.
 It is not used directly, but through the <code>Fusiontables</code> hub.</p>
@@ -74,8 +74,8 @@ It is not used directly, but through the <code>Fusiontables</code> hub.</p>
 <span class='comment'>// like `copy(...)`, `delete(...)`, `get(...)`, `import_rows(...)`, `import_table(...)`, `insert(...)`, `list(...)`, `patch(...)`, `replace_rows(...)` and `update(...)`</span>
 <span class='comment'>// to build up your call.</span>
 <span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>table</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_fusiontables2/struct.TableMethods.html' title='google_fusiontables2::TableMethods'>TableMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-5055' class='srclink' href='../src/google_fusiontables2/home/byron/dev/rust/google-apis-rs/target/debug/build/google-fusiontables2-aab710f734c6a354/out/lib.rs.html#11228-11389' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.patch' class='method'><code>fn <a href='#method.patch' class='fnname'>patch</a>(&amp;self, request: <a class='struct' href='../google_fusiontables2/struct.Table.html' title='google_fusiontables2::Table'>Table</a>, table_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_fusiontables2/struct.TablePatchCall.html' title='google_fusiontables2::TablePatchCall'>TablePatchCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='struct' href='../google_fusiontables2/struct.TableMethods.html' title='google_fusiontables2::TableMethods'>TableMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-4704' class='srclink' href='../src/google_fusiontables2/home/byron/dev/rust/google-apis-rs/target/debug/build/google-fusiontables2-7a7cefaee2ad8385/out/lib.rs.html#8979-9140' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.patch' class='method'><code>fn <a href='#method.patch' class='fnname'>patch</a>(&amp;self, request: <a class='struct' href='../google_fusiontables2/struct.Table.html' title='google_fusiontables2::Table'>Table</a>, table_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_fusiontables2/struct.TablePatchCall.html' title='google_fusiontables2::TablePatchCall'>TablePatchCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Updates an existing table. Unless explicitly requested, only the name, description, and attribution will be updated. This method supports patch semantics.</p>
@@ -85,7 +85,7 @@ It is not used directly, but through the <code>Fusiontables</code> hub.</p>
 <li><code>request</code> - No description provided.</li>
 <li><code>tableId</code> - ID of the table that is being updated.</li>
 </ul>
-</div><h4 id='method.replace_rows' class='method'><code>fn <a href='#method.replace_rows' class='fnname'>replace_rows</a>(&amp;self, table_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_fusiontables2/struct.TableReplaceRowCall.html' title='google_fusiontables2::TableReplaceRowCall'>TableReplaceRowCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.replace_rows' class='method'><code>fn <a href='#method.replace_rows' class='fnname'>replace_rows</a>(&amp;self, table_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_fusiontables2/struct.TableReplaceRowCall.html' title='google_fusiontables2::TableReplaceRowCall'>TableReplaceRowCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Replaces rows of an existing table. Current rows remain visible until all replacement rows are ready.</p>
@@ -94,7 +94,7 @@ It is not used directly, but through the <code>Fusiontables</code> hub.</p>
 <ul>
 <li><code>tableId</code> - Table whose rows will be replaced.</li>
 </ul>
-</div><h4 id='method.update' class='method'><code>fn <a href='#method.update' class='fnname'>update</a>(&amp;self, request: <a class='struct' href='../google_fusiontables2/struct.Table.html' title='google_fusiontables2::Table'>Table</a>, table_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_fusiontables2/struct.TableUpdateCall.html' title='google_fusiontables2::TableUpdateCall'>TableUpdateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.update' class='method'><code>fn <a href='#method.update' class='fnname'>update</a>(&amp;self, request: <a class='struct' href='../google_fusiontables2/struct.Table.html' title='google_fusiontables2::Table'>Table</a>, table_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_fusiontables2/struct.TableUpdateCall.html' title='google_fusiontables2::TableUpdateCall'>TableUpdateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Updates an existing table. Unless explicitly requested, only the name, description, and attribution will be updated.</p>
@@ -104,7 +104,7 @@ It is not used directly, but through the <code>Fusiontables</code> hub.</p>
 <li><code>request</code> - No description provided.</li>
 <li><code>tableId</code> - ID of the table that is being updated.</li>
 </ul>
-</div><h4 id='method.delete' class='method'><code>fn <a href='#method.delete' class='fnname'>delete</a>(&amp;self, table_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_fusiontables2/struct.TableDeleteCall.html' title='google_fusiontables2::TableDeleteCall'>TableDeleteCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.delete' class='method'><code>fn <a href='#method.delete' class='fnname'>delete</a>(&amp;self, table_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_fusiontables2/struct.TableDeleteCall.html' title='google_fusiontables2::TableDeleteCall'>TableDeleteCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Deletes a table.</p>
@@ -113,7 +113,7 @@ It is not used directly, but through the <code>Fusiontables</code> hub.</p>
 <ul>
 <li><code>tableId</code> - ID of the table to be deleted.</li>
 </ul>
-</div><h4 id='method.insert' class='method'><code>fn <a href='#method.insert' class='fnname'>insert</a>(&amp;self, request: <a class='struct' href='../google_fusiontables2/struct.Table.html' title='google_fusiontables2::Table'>Table</a>) -&gt; <a class='struct' href='../google_fusiontables2/struct.TableInsertCall.html' title='google_fusiontables2::TableInsertCall'>TableInsertCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.insert' class='method'><code>fn <a href='#method.insert' class='fnname'>insert</a>(&amp;self, request: <a class='struct' href='../google_fusiontables2/struct.Table.html' title='google_fusiontables2::Table'>Table</a>) -&gt; <a class='struct' href='../google_fusiontables2/struct.TableInsertCall.html' title='google_fusiontables2::TableInsertCall'>TableInsertCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Creates a new table.</p>
@@ -122,7 +122,7 @@ It is not used directly, but through the <code>Fusiontables</code> hub.</p>
 <ul>
 <li><code>request</code> - No description provided.</li>
 </ul>
-</div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, table_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_fusiontables2/struct.TableGetCall.html' title='google_fusiontables2::TableGetCall'>TableGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, table_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_fusiontables2/struct.TableGetCall.html' title='google_fusiontables2::TableGetCall'>TableGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Retrieves a specific table by its ID.</p>
@@ -131,11 +131,11 @@ It is not used directly, but through the <code>Fusiontables</code> hub.</p>
 <ul>
 <li><code>tableId</code> - Identifier for the table being requested.</li>
 </ul>
-</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self) -&gt; <a class='struct' href='../google_fusiontables2/struct.TableListCall.html' title='google_fusiontables2::TableListCall'>TableListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self) -&gt; <a class='struct' href='../google_fusiontables2/struct.TableListCall.html' title='google_fusiontables2::TableListCall'>TableListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Retrieves a list of tables a user owns.</p>
-</div><h4 id='method.import_rows' class='method'><code>fn <a href='#method.import_rows' class='fnname'>import_rows</a>(&amp;self, table_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_fusiontables2/struct.TableImportRowCall.html' title='google_fusiontables2::TableImportRowCall'>TableImportRowCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.import_rows' class='method'><code>fn <a href='#method.import_rows' class='fnname'>import_rows</a>(&amp;self, table_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_fusiontables2/struct.TableImportRowCall.html' title='google_fusiontables2::TableImportRowCall'>TableImportRowCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Imports more rows into a table.</p>
@@ -144,7 +144,7 @@ It is not used directly, but through the <code>Fusiontables</code> hub.</p>
 <ul>
 <li><code>tableId</code> - The table into which new rows are being imported.</li>
 </ul>
-</div><h4 id='method.import_table' class='method'><code>fn <a href='#method.import_table' class='fnname'>import_table</a>(&amp;self, name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_fusiontables2/struct.TableImportTableCall.html' title='google_fusiontables2::TableImportTableCall'>TableImportTableCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.import_table' class='method'><code>fn <a href='#method.import_table' class='fnname'>import_table</a>(&amp;self, name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_fusiontables2/struct.TableImportTableCall.html' title='google_fusiontables2::TableImportTableCall'>TableImportTableCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Imports a new table.</p>
@@ -153,7 +153,7 @@ It is not used directly, but through the <code>Fusiontables</code> hub.</p>
 <ul>
 <li><code>name</code> - The name to be assigned to the new table.</li>
 </ul>
-</div><h4 id='method.copy' class='method'><code>fn <a href='#method.copy' class='fnname'>copy</a>(&amp;self, table_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_fusiontables2/struct.TableCopyCall.html' title='google_fusiontables2::TableCopyCall'>TableCopyCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.copy' class='method'><code>fn <a href='#method.copy' class='fnname'>copy</a>(&amp;self, table_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_fusiontables2/struct.TableCopyCall.html' title='google_fusiontables2::TableCopyCall'>TableCopyCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Copies a table.</p>
@@ -162,7 +162,7 @@ It is not used directly, but through the <code>Fusiontables</code> hub.</p>
 <ul>
 <li><code>tableId</code> - ID of the table that is being copied.</li>
 </ul>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_fusiontables2/trait.MethodsBuilder.html' title='google_fusiontables2::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_fusiontables2/struct.TableMethods.html' title='google_fusiontables2::TableMethods'>TableMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-5051' class='srclink' href='../src/google_fusiontables2/home/byron/dev/rust/google-apis-rs/target/debug/build/google-fusiontables2-aab710f734c6a354/out/lib.rs.html#11227' title='goto source code'>[src]</a></span></h3>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='trait' href='../google_fusiontables2/trait.MethodsBuilder.html' title='google_fusiontables2::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_fusiontables2/struct.TableMethods.html' title='google_fusiontables2::TableMethods'>TableMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-4700' class='srclink' href='../src/google_fusiontables2/home/byron/dev/rust/google-apis-rs/target/debug/build/google-fusiontables2-7a7cefaee2ad8385/out/lib.rs.html#8978' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 

@@ -47,8 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-3655' class='srclink' href='../src/google_iam1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-iam1-f4ec2fcff2a780bc/out/lib.rs.html#7374-7376' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct ProjectMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
+               </span><a id='src-3349' class='srclink' href='../src/google_iam1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-iam1-9c0b53e32fde88f8/out/lib.rs.html#5809-5811' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct ProjectMethods&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>project</em> resources.
 It is not used directly, but through the <code>Iam</code> hub.</p>
@@ -74,8 +74,8 @@ It is not used directly, but through the <code>Iam</code> hub.</p>
 <span class='comment'>// like `service_accounts_create(...)`, `service_accounts_delete(...)`, `service_accounts_get(...)`, `service_accounts_get_iam_policy(...)`, `service_accounts_keys_create(...)`, `service_accounts_keys_delete(...)`, `service_accounts_keys_get(...)`, `service_accounts_keys_list(...)`, `service_accounts_list(...)`, `service_accounts_set_iam_policy(...)`, `service_accounts_sign_blob(...)`, `service_accounts_test_iam_permissions(...)` and `service_accounts_update(...)`</span>
 <span class='comment'>// to build up your call.</span>
 <span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>projects</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_iam1/struct.ProjectMethods.html' title='google_iam1::ProjectMethods'>ProjectMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-3664' class='srclink' href='../src/google_iam1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-iam1-f4ec2fcff2a780bc/out/lib.rs.html#7378-7614' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.service_accounts_keys_list' class='method'><code>fn <a href='#method.service_accounts_keys_list' class='fnname'>service_accounts_keys_list</a>(&amp;self, name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_iam1/struct.ProjectServiceAccountKeyListCall.html' title='google_iam1::ProjectServiceAccountKeyListCall'>ProjectServiceAccountKeyListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='struct' href='../google_iam1/struct.ProjectMethods.html' title='google_iam1::ProjectMethods'>ProjectMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-3358' class='srclink' href='../src/google_iam1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-iam1-9c0b53e32fde88f8/out/lib.rs.html#5813-6049' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.service_accounts_keys_list' class='method'><code>fn <a href='#method.service_accounts_keys_list' class='fnname'>service_accounts_keys_list</a>(&amp;self, name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_iam1/struct.ProjectServiceAccountKeyListCall.html' title='google_iam1::ProjectServiceAccountKeyListCall'>ProjectServiceAccountKeyListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Lists service account keys</p>
@@ -84,7 +84,7 @@ It is not used directly, but through the <code>Iam</code> hub.</p>
 <ul>
 <li><code>name</code> - The resource name of the service account in the format &quot;projects/{project}/serviceAccounts/{account}&quot;. Using &#39;-&#39; as a wildcard for the project, will infer the project from the account. The account value can be the email address or the unique_id of the service account.</li>
 </ul>
-</div><h4 id='method.service_accounts_set_iam_policy' class='method'><code>fn <a href='#method.service_accounts_set_iam_policy' class='fnname'>service_accounts_set_iam_policy</a>(&amp;self, request: <a class='struct' href='../google_iam1/struct.SetIamPolicyRequest.html' title='google_iam1::SetIamPolicyRequest'>SetIamPolicyRequest</a>, resource: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_iam1/struct.ProjectServiceAccountSetIamPolicyCall.html' title='google_iam1::ProjectServiceAccountSetIamPolicyCall'>ProjectServiceAccountSetIamPolicyCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.service_accounts_set_iam_policy' class='method'><code>fn <a href='#method.service_accounts_set_iam_policy' class='fnname'>service_accounts_set_iam_policy</a>(&amp;self, request: <a class='struct' href='../google_iam1/struct.SetIamPolicyRequest.html' title='google_iam1::SetIamPolicyRequest'>SetIamPolicyRequest</a>, resource: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_iam1/struct.ProjectServiceAccountSetIamPolicyCall.html' title='google_iam1::ProjectServiceAccountSetIamPolicyCall'>ProjectServiceAccountSetIamPolicyCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Sets the IAM access control policy for the specified IAM resource.</p>
@@ -94,7 +94,7 @@ It is not used directly, but through the <code>Iam</code> hub.</p>
 <li><code>request</code> - No description provided.</li>
 <li><code>resource</code> - REQUIRED: The resource for which the policy is being specified. <code>resource</code> is usually specified as a path, such as <code>projects/*project*/zones/*zone*/disks/*disk*</code>. The format for the path specified in this value is resource specific and is specified in the <code>setIamPolicy</code> documentation.</li>
 </ul>
-</div><h4 id='method.service_accounts_keys_delete' class='method'><code>fn <a href='#method.service_accounts_keys_delete' class='fnname'>service_accounts_keys_delete</a>(&amp;self, name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_iam1/struct.ProjectServiceAccountKeyDeleteCall.html' title='google_iam1::ProjectServiceAccountKeyDeleteCall'>ProjectServiceAccountKeyDeleteCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.service_accounts_keys_delete' class='method'><code>fn <a href='#method.service_accounts_keys_delete' class='fnname'>service_accounts_keys_delete</a>(&amp;self, name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_iam1/struct.ProjectServiceAccountKeyDeleteCall.html' title='google_iam1::ProjectServiceAccountKeyDeleteCall'>ProjectServiceAccountKeyDeleteCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Deletes a service account key.</p>
@@ -103,7 +103,7 @@ It is not used directly, but through the <code>Iam</code> hub.</p>
 <ul>
 <li><code>name</code> - The resource name of the service account key in the format &quot;projects/{project}/serviceAccounts/{account}/keys/{key}&quot;. Using &#39;-&#39; as a wildcard for the project will infer the project from the account. The account value can be the email address or the unique_id of the service account.</li>
 </ul>
-</div><h4 id='method.service_accounts_keys_create' class='method'><code>fn <a href='#method.service_accounts_keys_create' class='fnname'>service_accounts_keys_create</a>(&amp;self, request: <a class='struct' href='../google_iam1/struct.CreateServiceAccountKeyRequest.html' title='google_iam1::CreateServiceAccountKeyRequest'>CreateServiceAccountKeyRequest</a>, name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_iam1/struct.ProjectServiceAccountKeyCreateCall.html' title='google_iam1::ProjectServiceAccountKeyCreateCall'>ProjectServiceAccountKeyCreateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.service_accounts_keys_create' class='method'><code>fn <a href='#method.service_accounts_keys_create' class='fnname'>service_accounts_keys_create</a>(&amp;self, request: <a class='struct' href='../google_iam1/struct.CreateServiceAccountKeyRequest.html' title='google_iam1::CreateServiceAccountKeyRequest'>CreateServiceAccountKeyRequest</a>, name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_iam1/struct.ProjectServiceAccountKeyCreateCall.html' title='google_iam1::ProjectServiceAccountKeyCreateCall'>ProjectServiceAccountKeyCreateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Creates a service account key and returns it.</p>
@@ -113,7 +113,7 @@ It is not used directly, but through the <code>Iam</code> hub.</p>
 <li><code>request</code> - No description provided.</li>
 <li><code>name</code> - The resource name of the service account in the format &quot;projects/{project}/serviceAccounts/{account}&quot;. Using &#39;-&#39; as a wildcard for the project, will infer the project from the account. The account value can be the email address or the unique_id of the service account.</li>
 </ul>
-</div><h4 id='method.service_accounts_sign_blob' class='method'><code>fn <a href='#method.service_accounts_sign_blob' class='fnname'>service_accounts_sign_blob</a>(&amp;self, request: <a class='struct' href='../google_iam1/struct.SignBlobRequest.html' title='google_iam1::SignBlobRequest'>SignBlobRequest</a>, name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_iam1/struct.ProjectServiceAccountSignBlobCall.html' title='google_iam1::ProjectServiceAccountSignBlobCall'>ProjectServiceAccountSignBlobCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.service_accounts_sign_blob' class='method'><code>fn <a href='#method.service_accounts_sign_blob' class='fnname'>service_accounts_sign_blob</a>(&amp;self, request: <a class='struct' href='../google_iam1/struct.SignBlobRequest.html' title='google_iam1::SignBlobRequest'>SignBlobRequest</a>, name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_iam1/struct.ProjectServiceAccountSignBlobCall.html' title='google_iam1::ProjectServiceAccountSignBlobCall'>ProjectServiceAccountSignBlobCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Signs a blob using a service account.</p>
@@ -123,7 +123,7 @@ It is not used directly, but through the <code>Iam</code> hub.</p>
 <li><code>request</code> - No description provided.</li>
 <li><code>name</code> - The resource name of the service account in the format &quot;projects/{project}/serviceAccounts/{account}&quot;. Using &#39;-&#39; as a wildcard for the project, will infer the project from the account. The account value can be the email address or the unique_id of the service account.</li>
 </ul>
-</div><h4 id='method.service_accounts_update' class='method'><code>fn <a href='#method.service_accounts_update' class='fnname'>service_accounts_update</a>(&amp;self, request: <a class='struct' href='../google_iam1/struct.ServiceAccount.html' title='google_iam1::ServiceAccount'>ServiceAccount</a>, name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_iam1/struct.ProjectServiceAccountUpdateCall.html' title='google_iam1::ProjectServiceAccountUpdateCall'>ProjectServiceAccountUpdateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.service_accounts_update' class='method'><code>fn <a href='#method.service_accounts_update' class='fnname'>service_accounts_update</a>(&amp;self, request: <a class='struct' href='../google_iam1/struct.ServiceAccount.html' title='google_iam1::ServiceAccount'>ServiceAccount</a>, name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_iam1/struct.ProjectServiceAccountUpdateCall.html' title='google_iam1::ProjectServiceAccountUpdateCall'>ProjectServiceAccountUpdateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Updates a service account. Currently, only the following fields are updatable: &#39;display_name&#39; . The &#39;etag&#39; is mandatory.</p>
@@ -133,7 +133,7 @@ It is not used directly, but through the <code>Iam</code> hub.</p>
 <li><code>request</code> - No description provided.</li>
 <li><code>name</code> - The resource name of the service account in the format &quot;projects/{project}/serviceAccounts/{account}&quot;. In requests using &#39;-&#39; as a wildcard for the project, will infer the project from the account and the account value can be the email address or the unique_id of the service account. In responses the resource name will always be in the format &quot;projects/{project}/serviceAccounts/{email}&quot;.</li>
 </ul>
-</div><h4 id='method.service_accounts_list' class='method'><code>fn <a href='#method.service_accounts_list' class='fnname'>service_accounts_list</a>(&amp;self, name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_iam1/struct.ProjectServiceAccountListCall.html' title='google_iam1::ProjectServiceAccountListCall'>ProjectServiceAccountListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.service_accounts_list' class='method'><code>fn <a href='#method.service_accounts_list' class='fnname'>service_accounts_list</a>(&amp;self, name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_iam1/struct.ProjectServiceAccountListCall.html' title='google_iam1::ProjectServiceAccountListCall'>ProjectServiceAccountListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Lists service accounts for a project.</p>
@@ -142,7 +142,7 @@ It is not used directly, but through the <code>Iam</code> hub.</p>
 <ul>
 <li><code>name</code> - Required. The resource name of the project associated with the service accounts, such as &quot;projects/123&quot;</li>
 </ul>
-</div><h4 id='method.service_accounts_delete' class='method'><code>fn <a href='#method.service_accounts_delete' class='fnname'>service_accounts_delete</a>(&amp;self, name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_iam1/struct.ProjectServiceAccountDeleteCall.html' title='google_iam1::ProjectServiceAccountDeleteCall'>ProjectServiceAccountDeleteCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.service_accounts_delete' class='method'><code>fn <a href='#method.service_accounts_delete' class='fnname'>service_accounts_delete</a>(&amp;self, name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_iam1/struct.ProjectServiceAccountDeleteCall.html' title='google_iam1::ProjectServiceAccountDeleteCall'>ProjectServiceAccountDeleteCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Deletes a service acount.</p>
@@ -151,7 +151,7 @@ It is not used directly, but through the <code>Iam</code> hub.</p>
 <ul>
 <li><code>name</code> - The resource name of the service account in the format &quot;projects/{project}/serviceAccounts/{account}&quot;. Using &#39;-&#39; as a wildcard for the project, will infer the project from the account. The account value can be the email address or the unique_id of the service account.</li>
 </ul>
-</div><h4 id='method.service_accounts_keys_get' class='method'><code>fn <a href='#method.service_accounts_keys_get' class='fnname'>service_accounts_keys_get</a>(&amp;self, name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_iam1/struct.ProjectServiceAccountKeyGetCall.html' title='google_iam1::ProjectServiceAccountKeyGetCall'>ProjectServiceAccountKeyGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.service_accounts_keys_get' class='method'><code>fn <a href='#method.service_accounts_keys_get' class='fnname'>service_accounts_keys_get</a>(&amp;self, name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_iam1/struct.ProjectServiceAccountKeyGetCall.html' title='google_iam1::ProjectServiceAccountKeyGetCall'>ProjectServiceAccountKeyGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Gets the ServiceAccountKey by key id.</p>
@@ -160,7 +160,7 @@ It is not used directly, but through the <code>Iam</code> hub.</p>
 <ul>
 <li><code>name</code> - The resource name of the service account key in the format &quot;projects/{project}/serviceAccounts/{account}/keys/{key}&quot;. Using &#39;-&#39; as a wildcard for the project will infer the project from the account. The account value can be the email address or the unique_id of the service account.</li>
 </ul>
-</div><h4 id='method.service_accounts_get_iam_policy' class='method'><code>fn <a href='#method.service_accounts_get_iam_policy' class='fnname'>service_accounts_get_iam_policy</a>(&amp;self, resource: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_iam1/struct.ProjectServiceAccountGetIamPolicyCall.html' title='google_iam1::ProjectServiceAccountGetIamPolicyCall'>ProjectServiceAccountGetIamPolicyCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.service_accounts_get_iam_policy' class='method'><code>fn <a href='#method.service_accounts_get_iam_policy' class='fnname'>service_accounts_get_iam_policy</a>(&amp;self, resource: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_iam1/struct.ProjectServiceAccountGetIamPolicyCall.html' title='google_iam1::ProjectServiceAccountGetIamPolicyCall'>ProjectServiceAccountGetIamPolicyCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Returns the IAM access control policy for specified IAM resource.</p>
@@ -169,7 +169,7 @@ It is not used directly, but through the <code>Iam</code> hub.</p>
 <ul>
 <li><code>resource</code> - REQUIRED: The resource for which the policy is being requested. <code>resource</code> is usually specified as a path, such as <code>projects/*project*/zones/*zone*/disks/*disk*</code>. The format for the path specified in this value is resource specific and is specified in the <code>getIamPolicy</code> documentation.</li>
 </ul>
-</div><h4 id='method.service_accounts_test_iam_permissions' class='method'><code>fn <a href='#method.service_accounts_test_iam_permissions' class='fnname'>service_accounts_test_iam_permissions</a>(&amp;self, request: <a class='struct' href='../google_iam1/struct.TestIamPermissionsRequest.html' title='google_iam1::TestIamPermissionsRequest'>TestIamPermissionsRequest</a>, resource: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_iam1/struct.ProjectServiceAccountTestIamPermissionCall.html' title='google_iam1::ProjectServiceAccountTestIamPermissionCall'>ProjectServiceAccountTestIamPermissionCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.service_accounts_test_iam_permissions' class='method'><code>fn <a href='#method.service_accounts_test_iam_permissions' class='fnname'>service_accounts_test_iam_permissions</a>(&amp;self, request: <a class='struct' href='../google_iam1/struct.TestIamPermissionsRequest.html' title='google_iam1::TestIamPermissionsRequest'>TestIamPermissionsRequest</a>, resource: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_iam1/struct.ProjectServiceAccountTestIamPermissionCall.html' title='google_iam1::ProjectServiceAccountTestIamPermissionCall'>ProjectServiceAccountTestIamPermissionCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Tests the specified permissions against the IAM access control policy for the specified IAM resource.</p>
@@ -179,7 +179,7 @@ It is not used directly, but through the <code>Iam</code> hub.</p>
 <li><code>request</code> - No description provided.</li>
 <li><code>resource</code> - REQUIRED: The resource for which the policy detail is being requested. <code>resource</code> is usually specified as a path, such as <code>projects/*project*/zones/*zone*/disks/*disk*</code>. The format for the path specified in this value is resource specific and is specified in the <code>testIamPermissions</code> documentation.</li>
 </ul>
-</div><h4 id='method.service_accounts_create' class='method'><code>fn <a href='#method.service_accounts_create' class='fnname'>service_accounts_create</a>(&amp;self, request: <a class='struct' href='../google_iam1/struct.CreateServiceAccountRequest.html' title='google_iam1::CreateServiceAccountRequest'>CreateServiceAccountRequest</a>, name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_iam1/struct.ProjectServiceAccountCreateCall.html' title='google_iam1::ProjectServiceAccountCreateCall'>ProjectServiceAccountCreateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.service_accounts_create' class='method'><code>fn <a href='#method.service_accounts_create' class='fnname'>service_accounts_create</a>(&amp;self, request: <a class='struct' href='../google_iam1/struct.CreateServiceAccountRequest.html' title='google_iam1::CreateServiceAccountRequest'>CreateServiceAccountRequest</a>, name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_iam1/struct.ProjectServiceAccountCreateCall.html' title='google_iam1::ProjectServiceAccountCreateCall'>ProjectServiceAccountCreateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Creates a service account and returns it.</p>
@@ -189,7 +189,7 @@ It is not used directly, but through the <code>Iam</code> hub.</p>
 <li><code>request</code> - No description provided.</li>
 <li><code>name</code> - Required. The resource name of the project associated with the service accounts, such as &quot;projects/123&quot;</li>
 </ul>
-</div><h4 id='method.service_accounts_get' class='method'><code>fn <a href='#method.service_accounts_get' class='fnname'>service_accounts_get</a>(&amp;self, name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_iam1/struct.ProjectServiceAccountGetCall.html' title='google_iam1::ProjectServiceAccountGetCall'>ProjectServiceAccountGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.service_accounts_get' class='method'><code>fn <a href='#method.service_accounts_get' class='fnname'>service_accounts_get</a>(&amp;self, name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_iam1/struct.ProjectServiceAccountGetCall.html' title='google_iam1::ProjectServiceAccountGetCall'>ProjectServiceAccountGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Gets a ServiceAccount</p>
@@ -198,7 +198,7 @@ It is not used directly, but through the <code>Iam</code> hub.</p>
 <ul>
 <li><code>name</code> - The resource name of the service account in the format &quot;projects/{project}/serviceAccounts/{account}&quot;. Using &#39;-&#39; as a wildcard for the project, will infer the project from the account. The account value can be the email address or the unique_id of the service account.</li>
 </ul>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_iam1/trait.MethodsBuilder.html' title='google_iam1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_iam1/struct.ProjectMethods.html' title='google_iam1::ProjectMethods'>ProjectMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-3660' class='srclink' href='../src/google_iam1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-iam1-f4ec2fcff2a780bc/out/lib.rs.html#7377' title='goto source code'>[src]</a></span></h3>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='trait' href='../google_iam1/trait.MethodsBuilder.html' title='google_iam1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_iam1/struct.ProjectMethods.html' title='google_iam1::ProjectMethods'>ProjectMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-3354' class='srclink' href='../src/google_iam1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-iam1-9c0b53e32fde88f8/out/lib.rs.html#5812' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 

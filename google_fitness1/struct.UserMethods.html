@@ -47,8 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-4354' class='srclink' href='../src/google_fitness1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-fitness1-bc56d70e734e301e/out/lib.rs.html#9003-9005' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct UserMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
+               </span><a id='src-4203' class='srclink' href='../src/google_fitness1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-fitness1-27d97e293ee3477e/out/lib.rs.html#7402-7404' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct UserMethods&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>user</em> resources.
 It is not used directly, but through the <code>Fitness</code> hub.</p>
@@ -74,8 +74,8 @@ It is not used directly, but through the <code>Fitness</code> hub.</p>
 <span class='comment'>// like `data_sources_create(...)`, `data_sources_datasets_delete(...)`, `data_sources_datasets_get(...)`, `data_sources_datasets_patch(...)`, `data_sources_delete(...)`, `data_sources_get(...)`, `data_sources_list(...)`, `data_sources_patch(...)`, `data_sources_update(...)`, `dataset_aggregate(...)`, `sessions_delete(...)`, `sessions_list(...)` and `sessions_update(...)`</span>
 <span class='comment'>// to build up your call.</span>
 <span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>users</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_fitness1/struct.UserMethods.html' title='google_fitness1::UserMethods'>UserMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-4363' class='srclink' href='../src/google_fitness1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-fitness1-bc56d70e734e301e/out/lib.rs.html#9007-9270' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.dataset_aggregate' class='method'><code>fn <a href='#method.dataset_aggregate' class='fnname'>dataset_aggregate</a>(&amp;self, request: <a class='struct' href='../google_fitness1/struct.AggregateRequest.html' title='google_fitness1::AggregateRequest'>AggregateRequest</a>, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_fitness1/struct.UserDatasetAggregateCall.html' title='google_fitness1::UserDatasetAggregateCall'>UserDatasetAggregateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='struct' href='../google_fitness1/struct.UserMethods.html' title='google_fitness1::UserMethods'>UserMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-4212' class='srclink' href='../src/google_fitness1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-fitness1-27d97e293ee3477e/out/lib.rs.html#7406-7669' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.dataset_aggregate' class='method'><code>fn <a href='#method.dataset_aggregate' class='fnname'>dataset_aggregate</a>(&amp;self, request: <a class='struct' href='../google_fitness1/struct.AggregateRequest.html' title='google_fitness1::AggregateRequest'>AggregateRequest</a>, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_fitness1/struct.UserDatasetAggregateCall.html' title='google_fitness1::UserDatasetAggregateCall'>UserDatasetAggregateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Aggregates data of a certain type or stream into buckets divided by a given type of boundary. Multiple data sets of multiple types and from multiple sources can be aggreated into exactly one bucket type per request.</p>
@@ -85,17 +85,17 @@ It is not used directly, but through the <code>Fitness</code> hub.</p>
 <li><code>request</code> - No description provided.</li>
 <li><code>userId</code> - Aggregate data for the person identified. Use me to indicate the authenticated user. Only me is supported at this time.</li>
 </ul>
-</div><h4 id='method.data_sources_delete' class='method'><code>fn <a href='#method.data_sources_delete' class='fnname'>data_sources_delete</a>(&amp;self, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, data_source_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_fitness1/struct.UserDataSourceDeleteCall.html' title='google_fitness1::UserDataSourceDeleteCall'>UserDataSourceDeleteCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.data_sources_delete' class='method'><code>fn <a href='#method.data_sources_delete' class='fnname'>data_sources_delete</a>(&amp;self, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, data_source_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_fitness1/struct.UserDataSourceDeleteCall.html' title='google_fitness1::UserDataSourceDeleteCall'>UserDataSourceDeleteCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>Delete the data source if there are no datapoints associated with it</p>
+<p>Deletes the specified data source. The request will fail if the data source contains any data points.</p>
 
 <h1 id='arguments-1' class='section-header'><a href='#arguments-1'>Arguments</a></h1>
 <ul>
 <li><code>userId</code> - Retrieve a data source for the person identified. Use me to indicate the authenticated user. Only me is supported at this time.</li>
 <li><code>dataSourceId</code> - The data stream ID of the data source to delete.</li>
 </ul>
-</div><h4 id='method.data_sources_datasets_get' class='method'><code>fn <a href='#method.data_sources_datasets_get' class='fnname'>data_sources_datasets_get</a>(&amp;self, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, data_source_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, dataset_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_fitness1/struct.UserDataSourceDatasetGetCall.html' title='google_fitness1::UserDataSourceDatasetGetCall'>UserDataSourceDatasetGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.data_sources_datasets_get' class='method'><code>fn <a href='#method.data_sources_datasets_get' class='fnname'>data_sources_datasets_get</a>(&amp;self, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, data_source_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, dataset_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_fitness1/struct.UserDataSourceDatasetGetCall.html' title='google_fitness1::UserDataSourceDatasetGetCall'>UserDataSourceDatasetGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Returns a dataset containing all data points whose start and end times overlap with the specified range of the dataset minimum start time and maximum end time. Specifically, any data point whose start time is less than or equal to the dataset end time and whose end time is greater than or equal to the dataset start time.</p>
@@ -106,7 +106,7 @@ It is not used directly, but through the <code>Fitness</code> hub.</p>
 <li><code>dataSourceId</code> - The data stream ID of the data source that created the dataset.</li>
 <li><code>datasetId</code> - Dataset identifier that is a composite of the minimum data point start time and maximum data point end time represented as nanoseconds from the epoch. The ID is formatted like: &quot;startTime-endTime&quot; where startTime and endTime are 64 bit integers.</li>
 </ul>
-</div><h4 id='method.data_sources_create' class='method'><code>fn <a href='#method.data_sources_create' class='fnname'>data_sources_create</a>(&amp;self, request: <a class='struct' href='../google_fitness1/struct.DataSource.html' title='google_fitness1::DataSource'>DataSource</a>, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_fitness1/struct.UserDataSourceCreateCall.html' title='google_fitness1::UserDataSourceCreateCall'>UserDataSourceCreateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.data_sources_create' class='method'><code>fn <a href='#method.data_sources_create' class='fnname'>data_sources_create</a>(&amp;self, request: <a class='struct' href='../google_fitness1/struct.DataSource.html' title='google_fitness1::DataSource'>DataSource</a>, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_fitness1/struct.UserDataSourceCreateCall.html' title='google_fitness1::UserDataSourceCreateCall'>UserDataSourceCreateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Creates a new data source that is unique across all data sources belonging to this user. The data stream ID field can be omitted and will be generated by the server with the correct format. The data stream ID is an ordered combination of some fields from the data source. In addition to the data source fields reflected into the data source ID, the developer project number that is authenticated when creating the data source is included. This developer project number is obfuscated when read by any other developer reading public data types.</p>
@@ -116,7 +116,7 @@ It is not used directly, but through the <code>Fitness</code> hub.</p>
 <li><code>request</code> - No description provided.</li>
 <li><code>userId</code> - Create the data source for the person identified. Use me to indicate the authenticated user. Only me is supported at this time.</li>
 </ul>
-</div><h4 id='method.data_sources_datasets_delete' class='method'><code>fn <a href='#method.data_sources_datasets_delete' class='fnname'>data_sources_datasets_delete</a>(&amp;self, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, data_source_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, dataset_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_fitness1/struct.UserDataSourceDatasetDeleteCall.html' title='google_fitness1::UserDataSourceDatasetDeleteCall'>UserDataSourceDatasetDeleteCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.data_sources_datasets_delete' class='method'><code>fn <a href='#method.data_sources_datasets_delete' class='fnname'>data_sources_datasets_delete</a>(&amp;self, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, data_source_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, dataset_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_fitness1/struct.UserDataSourceDatasetDeleteCall.html' title='google_fitness1::UserDataSourceDatasetDeleteCall'>UserDataSourceDatasetDeleteCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Performs an inclusive delete of all data points whose start and end times have any overlap with the time range specified by the dataset ID. For most data types, the entire data point will be deleted. For data types where the time span represents a consistent value (such as com.google.activity.segment), and a data point straddles either end point of the dataset, only the overlapping portion of the data point will be deleted.</p>
@@ -127,7 +127,7 @@ It is not used directly, but through the <code>Fitness</code> hub.</p>
 <li><code>dataSourceId</code> - The data stream ID of the data source that created the dataset.</li>
 <li><code>datasetId</code> - Dataset identifier that is a composite of the minimum data point start time and maximum data point end time represented as nanoseconds from the epoch. The ID is formatted like: &quot;startTime-endTime&quot; where startTime and endTime are 64 bit integers.</li>
 </ul>
-</div><h4 id='method.data_sources_datasets_patch' class='method'><code>fn <a href='#method.data_sources_datasets_patch' class='fnname'>data_sources_datasets_patch</a>(&amp;self, request: <a class='struct' href='../google_fitness1/struct.Dataset.html' title='google_fitness1::Dataset'>Dataset</a>, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, data_source_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, dataset_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_fitness1/struct.UserDataSourceDatasetPatchCall.html' title='google_fitness1::UserDataSourceDatasetPatchCall'>UserDataSourceDatasetPatchCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.data_sources_datasets_patch' class='method'><code>fn <a href='#method.data_sources_datasets_patch' class='fnname'>data_sources_datasets_patch</a>(&amp;self, request: <a class='struct' href='../google_fitness1/struct.Dataset.html' title='google_fitness1::Dataset'>Dataset</a>, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, data_source_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, dataset_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_fitness1/struct.UserDataSourceDatasetPatchCall.html' title='google_fitness1::UserDataSourceDatasetPatchCall'>UserDataSourceDatasetPatchCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Adds data points to a dataset. The dataset need not be previously created. All points within the given dataset will be returned with subsquent calls to retrieve this dataset. Data points can belong to more than one dataset. This method does not use patch semantics.</p>
@@ -139,7 +139,7 @@ It is not used directly, but through the <code>Fitness</code> hub.</p>
 <li><code>dataSourceId</code> - The data stream ID of the data source that created the dataset.</li>
 <li><code>datasetId</code> - Dataset identifier that is a composite of the minimum data point start time and maximum data point end time represented as nanoseconds from the epoch. The ID is formatted like: &quot;startTime-endTime&quot; where startTime and endTime are 64 bit integers.</li>
 </ul>
-</div><h4 id='method.sessions_delete' class='method'><code>fn <a href='#method.sessions_delete' class='fnname'>sessions_delete</a>(&amp;self, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, session_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_fitness1/struct.UserSessionDeleteCall.html' title='google_fitness1::UserSessionDeleteCall'>UserSessionDeleteCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.sessions_delete' class='method'><code>fn <a href='#method.sessions_delete' class='fnname'>sessions_delete</a>(&amp;self, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, session_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_fitness1/struct.UserSessionDeleteCall.html' title='google_fitness1::UserSessionDeleteCall'>UserSessionDeleteCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Deletes a session specified by the given session ID.</p>
@@ -149,22 +149,22 @@ It is not used directly, but through the <code>Fitness</code> hub.</p>
 <li><code>userId</code> - Delete a session for the person identified. Use me to indicate the authenticated user. Only me is supported at this time.</li>
 <li><code>sessionId</code> - The ID of the session to be deleted.</li>
 </ul>
-</div><h4 id='method.data_sources_get' class='method'><code>fn <a href='#method.data_sources_get' class='fnname'>data_sources_get</a>(&amp;self, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, data_source_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_fitness1/struct.UserDataSourceGetCall.html' title='google_fitness1::UserDataSourceGetCall'>UserDataSourceGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.data_sources_get' class='method'><code>fn <a href='#method.data_sources_get' class='fnname'>data_sources_get</a>(&amp;self, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, data_source_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_fitness1/struct.UserDataSourceGetCall.html' title='google_fitness1::UserDataSourceGetCall'>UserDataSourceGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>Returns a data source identified by a data stream ID.</p>
+<p>Returns the specified data source.</p>
 
 <h1 id='arguments-7' class='section-header'><a href='#arguments-7'>Arguments</a></h1>
 <ul>
 <li><code>userId</code> - Retrieve a data source for the person identified. Use me to indicate the authenticated user. Only me is supported at this time.</li>
 <li><code>dataSourceId</code> - The data stream ID of the data source to retrieve.</li>
 </ul>
-</div><h4 id='method.data_sources_update' class='method'><code>fn <a href='#method.data_sources_update' class='fnname'>data_sources_update</a>(&amp;self, request: <a class='struct' href='../google_fitness1/struct.DataSource.html' title='google_fitness1::DataSource'>DataSource</a>, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, data_source_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_fitness1/struct.UserDataSourceUpdateCall.html' title='google_fitness1::UserDataSourceUpdateCall'>UserDataSourceUpdateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.data_sources_update' class='method'><code>fn <a href='#method.data_sources_update' class='fnname'>data_sources_update</a>(&amp;self, request: <a class='struct' href='../google_fitness1/struct.DataSource.html' title='google_fitness1::DataSource'>DataSource</a>, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, data_source_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_fitness1/struct.UserDataSourceUpdateCall.html' title='google_fitness1::UserDataSourceUpdateCall'>UserDataSourceUpdateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>Updates a given data source. It is an error to modify the data source&#39;s data stream ID, data type, type, stream name or device information apart from the device version. Changing these fields would require a new unique data stream ID and separate data source.</p>
+<p>Updates the specified data source. The dataStreamId, dataType, type, dataStreamName, and device properties with the exception of version, cannot be modified.</p>
 
-<p>Data sources are identified by their data stream ID.</p>
+<p>Data sources are identified by their dataStreamId.</p>
 
 <h1 id='arguments-8' class='section-header'><a href='#arguments-8'>Arguments</a></h1>
 <ul>
@@ -172,7 +172,7 @@ It is not used directly, but through the <code>Fitness</code> hub.</p>
 <li><code>userId</code> - Update the data source for the person identified. Use me to indicate the authenticated user. Only me is supported at this time.</li>
 <li><code>dataSourceId</code> - The data stream ID of the data source to update.</li>
 </ul>
-</div><h4 id='method.sessions_list' class='method'><code>fn <a href='#method.sessions_list' class='fnname'>sessions_list</a>(&amp;self, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_fitness1/struct.UserSessionListCall.html' title='google_fitness1::UserSessionListCall'>UserSessionListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.sessions_list' class='method'><code>fn <a href='#method.sessions_list' class='fnname'>sessions_list</a>(&amp;self, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_fitness1/struct.UserSessionListCall.html' title='google_fitness1::UserSessionListCall'>UserSessionListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Lists sessions previously created.</p>
@@ -181,7 +181,7 @@ It is not used directly, but through the <code>Fitness</code> hub.</p>
 <ul>
 <li><code>userId</code> - List sessions for the person identified. Use me to indicate the authenticated user. Only me is supported at this time.</li>
 </ul>
-</div><h4 id='method.sessions_update' class='method'><code>fn <a href='#method.sessions_update' class='fnname'>sessions_update</a>(&amp;self, request: <a class='struct' href='../google_fitness1/struct.Session.html' title='google_fitness1::Session'>Session</a>, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, session_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_fitness1/struct.UserSessionUpdateCall.html' title='google_fitness1::UserSessionUpdateCall'>UserSessionUpdateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.sessions_update' class='method'><code>fn <a href='#method.sessions_update' class='fnname'>sessions_update</a>(&amp;self, request: <a class='struct' href='../google_fitness1/struct.Session.html' title='google_fitness1::Session'>Session</a>, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, session_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_fitness1/struct.UserSessionUpdateCall.html' title='google_fitness1::UserSessionUpdateCall'>UserSessionUpdateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Updates or insert a given session.</p>
@@ -192,12 +192,12 @@ It is not used directly, but through the <code>Fitness</code> hub.</p>
 <li><code>userId</code> - Create sessions for the person identified. Use me to indicate the authenticated user. Only me is supported at this time.</li>
 <li><code>sessionId</code> - The ID of the session to be created.</li>
 </ul>
-</div><h4 id='method.data_sources_patch' class='method'><code>fn <a href='#method.data_sources_patch' class='fnname'>data_sources_patch</a>(&amp;self, request: <a class='struct' href='../google_fitness1/struct.DataSource.html' title='google_fitness1::DataSource'>DataSource</a>, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, data_source_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_fitness1/struct.UserDataSourcePatchCall.html' title='google_fitness1::UserDataSourcePatchCall'>UserDataSourcePatchCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.data_sources_patch' class='method'><code>fn <a href='#method.data_sources_patch' class='fnname'>data_sources_patch</a>(&amp;self, request: <a class='struct' href='../google_fitness1/struct.DataSource.html' title='google_fitness1::DataSource'>DataSource</a>, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, data_source_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_fitness1/struct.UserDataSourcePatchCall.html' title='google_fitness1::UserDataSourcePatchCall'>UserDataSourcePatchCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>Updates a given data source. It is an error to modify the data source&#39;s data stream ID, data type, type, stream name or device information apart from the device version. Changing these fields would require a new unique data stream ID and separate data source.</p>
+<p>Updates the specified data source. The dataStreamId, dataType, type, dataStreamName, and device properties with the exception of version, cannot be modified.</p>
 
-<p>Data sources are identified by their data stream ID. This method supports patch semantics.</p>
+<p>Data sources are identified by their dataStreamId. This method supports patch semantics.</p>
 
 <h1 id='arguments-11' class='section-header'><a href='#arguments-11'>Arguments</a></h1>
 <ul>
@@ -205,16 +205,16 @@ It is not used directly, but through the <code>Fitness</code> hub.</p>
 <li><code>userId</code> - Update the data source for the person identified. Use me to indicate the authenticated user. Only me is supported at this time.</li>
 <li><code>dataSourceId</code> - The data stream ID of the data source to update.</li>
 </ul>
-</div><h4 id='method.data_sources_list' class='method'><code>fn <a href='#method.data_sources_list' class='fnname'>data_sources_list</a>(&amp;self, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_fitness1/struct.UserDataSourceListCall.html' title='google_fitness1::UserDataSourceListCall'>UserDataSourceListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.data_sources_list' class='method'><code>fn <a href='#method.data_sources_list' class='fnname'>data_sources_list</a>(&amp;self, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_fitness1/struct.UserDataSourceListCall.html' title='google_fitness1::UserDataSourceListCall'>UserDataSourceListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>Lists all data sources that are visible to the developer, using the OAuth scopes provided. The list is not exhaustive: the user may have private data sources that are only visible to other developers or calls using other scopes.</p>
+<p>Lists all data sources that are visible to the developer, using the OAuth scopes provided. The list is not exhaustive; the user may have private data sources that are only visible to other developers, or calls using other scopes.</p>
 
 <h1 id='arguments-12' class='section-header'><a href='#arguments-12'>Arguments</a></h1>
 <ul>
 <li><code>userId</code> - List data sources for the person identified. Use me to indicate the authenticated user. Only me is supported at this time.</li>
 </ul>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_fitness1/trait.MethodsBuilder.html' title='google_fitness1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_fitness1/struct.UserMethods.html' title='google_fitness1::UserMethods'>UserMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-4359' class='srclink' href='../src/google_fitness1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-fitness1-bc56d70e734e301e/out/lib.rs.html#9006' title='goto source code'>[src]</a></span></h3>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='trait' href='../google_fitness1/trait.MethodsBuilder.html' title='google_fitness1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_fitness1/struct.UserMethods.html' title='google_fitness1::UserMethods'>UserMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-4208' class='srclink' href='../src/google_fitness1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-fitness1-27d97e293ee3477e/out/lib.rs.html#7405' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 

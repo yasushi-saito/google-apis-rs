@@ -47,8 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-2679' class='srclink' href='../src/google_cloudresourcemanager1_beta1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-cloudresourcemanager1_beta1-e116896cb7495c03/out/lib.rs.html#5444-5446' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct OrganizationMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
+               </span><a id='src-2730' class='srclink' href='../src/google_cloudresourcemanager1_beta1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-cloudresourcemanager1_beta1-46106f517796a4ab/out/lib.rs.html#4859-4861' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct OrganizationMethods&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>organization</em> resources.
 It is not used directly, but through the <code>CloudResourceManager</code> hub.</p>
@@ -74,61 +74,61 @@ It is not used directly, but through the <code>CloudResourceManager</code> hub.<
 <span class='comment'>// like `get(...)`, `get_iam_policy(...)`, `list(...)`, `set_iam_policy(...)`, `test_iam_permissions(...)` and `update(...)`</span>
 <span class='comment'>// to build up your call.</span>
 <span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>organizations</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_cloudresourcemanager1_beta1/struct.OrganizationMethods.html' title='google_cloudresourcemanager1_beta1::OrganizationMethods'>OrganizationMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-2688' class='srclink' href='../src/google_cloudresourcemanager1_beta1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-cloudresourcemanager1_beta1-e116896cb7495c03/out/lib.rs.html#5448-5546' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.set_iam_policy' class='method'><code>fn <a href='#method.set_iam_policy' class='fnname'>set_iam_policy</a>(&amp;self, request: <a class='struct' href='../google_cloudresourcemanager1_beta1/struct.SetIamPolicyRequest.html' title='google_cloudresourcemanager1_beta1::SetIamPolicyRequest'>SetIamPolicyRequest</a>, resource: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_cloudresourcemanager1_beta1/struct.OrganizationSetIamPolicyCall.html' title='google_cloudresourcemanager1_beta1::OrganizationSetIamPolicyCall'>OrganizationSetIamPolicyCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='struct' href='../google_cloudresourcemanager1_beta1/struct.OrganizationMethods.html' title='google_cloudresourcemanager1_beta1::OrganizationMethods'>OrganizationMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-2739' class='srclink' href='../src/google_cloudresourcemanager1_beta1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-cloudresourcemanager1_beta1-46106f517796a4ab/out/lib.rs.html#4863-4961' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.set_iam_policy' class='method'><code>fn <a href='#method.set_iam_policy' class='fnname'>set_iam_policy</a>(&amp;self, request: <a class='struct' href='../google_cloudresourcemanager1_beta1/struct.SetIamPolicyRequest.html' title='google_cloudresourcemanager1_beta1::SetIamPolicyRequest'>SetIamPolicyRequest</a>, resource: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_cloudresourcemanager1_beta1/struct.OrganizationSetIamPolicyCall.html' title='google_cloudresourcemanager1_beta1::OrganizationSetIamPolicyCall'>OrganizationSetIamPolicyCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>Sets the access control policy on an Organization resource. Replaces any existing policy.</p>
+<p>Sets the access control policy on an Organization resource. Replaces any existing policy. The <code>resource</code> field should be the organization&#39;s resource name, e.g. &quot;organizations/123&quot;. For backward compatibility, the resource provided may also be the organization_id. This will not be supported in v1.</p>
 
 <h1 id='arguments' class='section-header'><a href='#arguments'>Arguments</a></h1>
 <ul>
 <li><code>request</code> - No description provided.</li>
 <li><code>resource</code> - REQUIRED: The resource for which the policy is being specified. <code>resource</code> is usually specified as a path, such as <code>projects/*project*/zones/*zone*/disks/*disk*</code>. The format for the path specified in this value is resource specific and is specified in the <code>setIamPolicy</code> documentation.</li>
 </ul>
-</div><h4 id='method.get_iam_policy' class='method'><code>fn <a href='#method.get_iam_policy' class='fnname'>get_iam_policy</a>(&amp;self, request: <a class='struct' href='../google_cloudresourcemanager1_beta1/struct.GetIamPolicyRequest.html' title='google_cloudresourcemanager1_beta1::GetIamPolicyRequest'>GetIamPolicyRequest</a>, resource: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_cloudresourcemanager1_beta1/struct.OrganizationGetIamPolicyCall.html' title='google_cloudresourcemanager1_beta1::OrganizationGetIamPolicyCall'>OrganizationGetIamPolicyCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.get_iam_policy' class='method'><code>fn <a href='#method.get_iam_policy' class='fnname'>get_iam_policy</a>(&amp;self, request: <a class='struct' href='../google_cloudresourcemanager1_beta1/struct.GetIamPolicyRequest.html' title='google_cloudresourcemanager1_beta1::GetIamPolicyRequest'>GetIamPolicyRequest</a>, resource: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_cloudresourcemanager1_beta1/struct.OrganizationGetIamPolicyCall.html' title='google_cloudresourcemanager1_beta1::OrganizationGetIamPolicyCall'>OrganizationGetIamPolicyCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>Gets the access control policy for an Organization resource. May be empty if no such policy or resource exists.</p>
+<p>Gets the access control policy for an Organization resource. May be empty if no such policy or resource exists. The <code>resource</code> field should be the organization&#39;s resource name, e.g. &quot;organizations/123&quot;. For backward compatibility, the resource provided may also be the organization_id. This will not be supported in v1.</p>
 
 <h1 id='arguments-1' class='section-header'><a href='#arguments-1'>Arguments</a></h1>
 <ul>
 <li><code>request</code> - No description provided.</li>
 <li><code>resource</code> - REQUIRED: The resource for which the policy is being requested. <code>resource</code> is usually specified as a path, such as <code>projects/*project*/zones/*zone*/disks/*disk*</code>. The format for the path specified in this value is resource specific and is specified in the <code>getIamPolicy</code> documentation.</li>
 </ul>
-</div><h4 id='method.test_iam_permissions' class='method'><code>fn <a href='#method.test_iam_permissions' class='fnname'>test_iam_permissions</a>(&amp;self, request: <a class='struct' href='../google_cloudresourcemanager1_beta1/struct.TestIamPermissionsRequest.html' title='google_cloudresourcemanager1_beta1::TestIamPermissionsRequest'>TestIamPermissionsRequest</a>, resource: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_cloudresourcemanager1_beta1/struct.OrganizationTestIamPermissionCall.html' title='google_cloudresourcemanager1_beta1::OrganizationTestIamPermissionCall'>OrganizationTestIamPermissionCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.test_iam_permissions' class='method'><code>fn <a href='#method.test_iam_permissions' class='fnname'>test_iam_permissions</a>(&amp;self, request: <a class='struct' href='../google_cloudresourcemanager1_beta1/struct.TestIamPermissionsRequest.html' title='google_cloudresourcemanager1_beta1::TestIamPermissionsRequest'>TestIamPermissionsRequest</a>, resource: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_cloudresourcemanager1_beta1/struct.OrganizationTestIamPermissionCall.html' title='google_cloudresourcemanager1_beta1::OrganizationTestIamPermissionCall'>OrganizationTestIamPermissionCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>Returns permissions that a caller has on the specified Organization.</p>
+<p>Returns permissions that a caller has on the specified Organization. The <code>resource</code> field should be the organization&#39;s resource name, e.g. &quot;organizations/123&quot;. For backward compatibility, the resource provided may also be the organization_id. This will not be supported in v1.</p>
 
 <h1 id='arguments-2' class='section-header'><a href='#arguments-2'>Arguments</a></h1>
 <ul>
 <li><code>request</code> - No description provided.</li>
 <li><code>resource</code> - REQUIRED: The resource for which the policy detail is being requested. <code>resource</code> is usually specified as a path, such as <code>projects/*project*/zones/*zone*/disks/*disk*</code>. The format for the path specified in this value is resource specific and is specified in the <code>testIamPermissions</code> documentation.</li>
 </ul>
-</div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, organization_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_cloudresourcemanager1_beta1/struct.OrganizationGetCall.html' title='google_cloudresourcemanager1_beta1::OrganizationGetCall'>OrganizationGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_cloudresourcemanager1_beta1/struct.OrganizationGetCall.html' title='google_cloudresourcemanager1_beta1::OrganizationGetCall'>OrganizationGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>Fetches an Organization resource identified by the specified <code>organization_id</code>.</p>
+<p>Fetches an Organization resource identified by the specified resource name.</p>
 
 <h1 id='arguments-3' class='section-header'><a href='#arguments-3'>Arguments</a></h1>
 <ul>
-<li><code>organizationId</code> - The id of the Organization resource to fetch.</li>
+<li><code>name</code> - The resource name of the Organization to fetch. Its format is &quot;organizations/[organization_id]&quot;. For example, &quot;organizations/1234&quot;.</li>
 </ul>
-</div><h4 id='method.update' class='method'><code>fn <a href='#method.update' class='fnname'>update</a>(&amp;self, request: <a class='struct' href='../google_cloudresourcemanager1_beta1/struct.Organization.html' title='google_cloudresourcemanager1_beta1::Organization'>Organization</a>, organization_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_cloudresourcemanager1_beta1/struct.OrganizationUpdateCall.html' title='google_cloudresourcemanager1_beta1::OrganizationUpdateCall'>OrganizationUpdateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.update' class='method'><code>fn <a href='#method.update' class='fnname'>update</a>(&amp;self, request: <a class='struct' href='../google_cloudresourcemanager1_beta1/struct.Organization.html' title='google_cloudresourcemanager1_beta1::Organization'>Organization</a>, name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_cloudresourcemanager1_beta1/struct.OrganizationUpdateCall.html' title='google_cloudresourcemanager1_beta1::OrganizationUpdateCall'>OrganizationUpdateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>Updates an Organization resource identified by the specified <code>organization_id</code>.</p>
+<p>Updates an Organization resource identified by the specified resource name.</p>
 
 <h1 id='arguments-4' class='section-header'><a href='#arguments-4'>Arguments</a></h1>
 <ul>
 <li><code>request</code> - No description provided.</li>
-<li><code>organizationId</code> - An immutable id for the Organization that is assigned on creation. This should be omitted when creating a new Organization. This field is read-only.</li>
+<li><code>name</code> - Output Only. The resource name of the organization. This is the organization&#39;s relative path in the API. Its format is &quot;organizations/[organization_id]&quot;. For example, &quot;organizations/1234&quot;.</li>
 </ul>
-</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self) -&gt; <a class='struct' href='../google_cloudresourcemanager1_beta1/struct.OrganizationListCall.html' title='google_cloudresourcemanager1_beta1::OrganizationListCall'>OrganizationListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self) -&gt; <a class='struct' href='../google_cloudresourcemanager1_beta1/struct.OrganizationListCall.html' title='google_cloudresourcemanager1_beta1::OrganizationListCall'>OrganizationListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Lists Organization resources that are visible to the user and satisfy the specified filter. This method returns Organizations in an unspecified order. New Organizations do not necessarily appear at the end of the list.</p>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_cloudresourcemanager1_beta1/trait.MethodsBuilder.html' title='google_cloudresourcemanager1_beta1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_cloudresourcemanager1_beta1/struct.OrganizationMethods.html' title='google_cloudresourcemanager1_beta1::OrganizationMethods'>OrganizationMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-2684' class='srclink' href='../src/google_cloudresourcemanager1_beta1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-cloudresourcemanager1_beta1-e116896cb7495c03/out/lib.rs.html#5447' title='goto source code'>[src]</a></span></h3>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='trait' href='../google_cloudresourcemanager1_beta1/trait.MethodsBuilder.html' title='google_cloudresourcemanager1_beta1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_cloudresourcemanager1_beta1/struct.OrganizationMethods.html' title='google_cloudresourcemanager1_beta1::OrganizationMethods'>OrganizationMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-2735' class='srclink' href='../src/google_cloudresourcemanager1_beta1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-cloudresourcemanager1_beta1-46106f517796a4ab/out/lib.rs.html#4862' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 

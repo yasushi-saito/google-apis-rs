@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Annotations List - books v0.3.6+20160226</title>
+  <title>Annotations List - books v0.3.6+20160823</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -32,7 +32,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> books v0.3.6+20160226</a>
+        <a href=".." class="icon icon-home"> books v0.3.6+20160823</a>
         
       </div>
 
@@ -386,7 +386,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">books v0.3.6+20160226</a>
+        <a href="..">books v0.3.6+20160823</a>
       </nav>
 
       
@@ -435,6 +435,18 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
+<p><strong>-p updated-min=string</strong></p>
+<ul>
+<li>RFC 3339 timestamp to restrict to items updated since this timestamp (inclusive).</li>
+</ul>
+</li>
+<li>
+<p><strong>-p layer-ids=string</strong></p>
+<ul>
+<li>The layer ID(s) to limit annotation by.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p page-token=string</strong></p>
 <ul>
 <li>The value of the nextToken from the previous page.</li>
@@ -447,27 +459,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p content-version=string</strong></p>
-<ul>
-<li>The content version for the requested volume.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p source=string</strong></p>
 <ul>
 <li>String to identify the originator of this request.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p updated-max=string</strong></p>
-<ul>
-<li>RFC 3339 timestamp to restrict to items updated prior to this timestamp (exclusive).</li>
-</ul>
-</li>
-<li>
-<p><strong>-p layer-ids=string</strong></p>
-<ul>
-<li>The layer ID(s) to limit annotation by.</li>
 </ul>
 </li>
 <li>
@@ -477,9 +471,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p updated-min=string</strong></p>
+<p><strong>-p volume-id=string</strong></p>
 <ul>
-<li>RFC 3339 timestamp to restrict to items updated since this timestamp (inclusive).</li>
+<li>The volume to restrict annotations to.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p updated-max=string</strong></p>
+<ul>
+<li>RFC 3339 timestamp to restrict to items updated prior to this timestamp (exclusive).</li>
 </ul>
 </li>
 <li>
@@ -489,9 +489,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p volume-id=string</strong></p>
+<p><strong>-p content-version=string</strong></p>
 <ul>
-<li>The volume to restrict annotations to.</li>
+<li>The content version for the requested volume.</li>
 </ul>
 </li>
 </ul>
@@ -585,7 +585,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 
 <!--
 MkDocs version  : 0.12.2
-Docs Build Date : 2016-07-23 16:05:46.673967
+Docs Build Date : 2016-09-11 17:55:31.396294
 -->
 </body>
 </html>

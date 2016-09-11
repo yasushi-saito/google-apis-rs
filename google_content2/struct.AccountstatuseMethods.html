@@ -47,8 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-27893' class='srclink' href='../src/google_content2/home/byron/dev/rust/google-apis-rs/target/debug/build/google-content2-336c9b6bb5001be2/out/lib.rs.html#60136-60138' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct AccountstatuseMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
+               </span><a id='src-28348' class='srclink' href='../src/google_content2/home/byron/dev/rust/google-apis-rs/target/debug/build/google-content2-6ca7a1f998e0f5ba/out/lib.rs.html#50385-50387' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct AccountstatuseMethods&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>accountstatuse</em> resources.
 It is not used directly, but through the <code>ShoppingContent</code> hub.</p>
@@ -74,8 +74,8 @@ It is not used directly, but through the <code>ShoppingContent</code> hub.</p>
 <span class='comment'>// like `custombatch(...)`, `get(...)` and `list(...)`</span>
 <span class='comment'>// to build up your call.</span>
 <span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>accountstatuses</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_content2/struct.AccountstatuseMethods.html' title='google_content2::AccountstatuseMethods'>AccountstatuseMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-27902' class='srclink' href='../src/google_content2/home/byron/dev/rust/google-apis-rs/target/debug/build/google-content2-336c9b6bb5001be2/out/lib.rs.html#60140-60187' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, merchant_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_content2/struct.AccountstatuseGetCall.html' title='google_content2::AccountstatuseGetCall'>AccountstatuseGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='struct' href='../google_content2/struct.AccountstatuseMethods.html' title='google_content2::AccountstatuseMethods'>AccountstatuseMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-28357' class='srclink' href='../src/google_content2/home/byron/dev/rust/google-apis-rs/target/debug/build/google-content2-6ca7a1f998e0f5ba/out/lib.rs.html#50389-50436' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, merchant_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_content2/struct.AccountstatuseGetCall.html' title='google_content2::AccountstatuseGetCall'>AccountstatuseGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Retrieves the status of a Merchant Center account.</p>
@@ -85,22 +85,22 @@ It is not used directly, but through the <code>ShoppingContent</code> hub.</p>
 <li><code>merchantId</code> - The ID of the managing account.</li>
 <li><code>accountId</code> - The ID of the account.</li>
 </ul>
-</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self, merchant_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_content2/struct.AccountstatuseListCall.html' title='google_content2::AccountstatuseListCall'>AccountstatuseListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.custombatch' class='method'><code>fn <a href='#method.custombatch' class='fnname'>custombatch</a>(&amp;self, request: <a class='struct' href='../google_content2/struct.AccountstatusesCustomBatchRequest.html' title='google_content2::AccountstatusesCustomBatchRequest'>AccountstatusesCustomBatchRequest</a>) -&gt; <a class='struct' href='../google_content2/struct.AccountstatuseCustombatchCall.html' title='google_content2::AccountstatuseCustombatchCall'>AccountstatuseCustombatchCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'>
+<h1 id='arguments-1' class='section-header'><a href='#arguments-1'>Arguments</a></h1>
+<ul>
+<li><code>request</code> - No description provided.</li>
+</ul>
+</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self, merchant_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_content2/struct.AccountstatuseListCall.html' title='google_content2::AccountstatuseListCall'>AccountstatuseListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Lists the statuses of the sub-accounts in your Merchant Center account.</p>
 
-<h1 id='arguments-1' class='section-header'><a href='#arguments-1'>Arguments</a></h1>
+<h1 id='arguments-2' class='section-header'><a href='#arguments-2'>Arguments</a></h1>
 <ul>
 <li><code>merchantId</code> - The ID of the managing account.</li>
 </ul>
-</div><h4 id='method.custombatch' class='method'><code>fn <a href='#method.custombatch' class='fnname'>custombatch</a>(&amp;self, request: <a class='struct' href='../google_content2/struct.AccountstatusesCustomBatchRequest.html' title='google_content2::AccountstatusesCustomBatchRequest'>AccountstatusesCustomBatchRequest</a>) -&gt; <a class='struct' href='../google_content2/struct.AccountstatuseCustombatchCall.html' title='google_content2::AccountstatuseCustombatchCall'>AccountstatuseCustombatchCall</a>&lt;'a, C, A&gt;</code></h4>
-<div class='docblock'>
-<h1 id='arguments-2' class='section-header'><a href='#arguments-2'>Arguments</a></h1>
-<ul>
-<li><code>request</code> - No description provided.</li>
-</ul>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_content2/trait.MethodsBuilder.html' title='google_content2::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_content2/struct.AccountstatuseMethods.html' title='google_content2::AccountstatuseMethods'>AccountstatuseMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-27898' class='srclink' href='../src/google_content2/home/byron/dev/rust/google-apis-rs/target/debug/build/google-content2-336c9b6bb5001be2/out/lib.rs.html#60139' title='goto source code'>[src]</a></span></h3>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='trait' href='../google_content2/trait.MethodsBuilder.html' title='google_content2::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_content2/struct.AccountstatuseMethods.html' title='google_content2::AccountstatuseMethods'>AccountstatuseMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-28353' class='srclink' href='../src/google_content2/home/byron/dev/rust/google-apis-rs/target/debug/build/google-content2-6ca7a1f998e0f5ba/out/lib.rs.html#50388' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 

@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>List - Shopping Content v0.3.6+20160331</title>
+  <title>List - Shopping Content v0.3.6+20160905</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -32,7 +32,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Shopping Content v0.3.6+20160331</a>
+        <a href=".." class="icon icon-home"> Shopping Content v0.3.6+20160905</a>
         
       </div>
 
@@ -406,6 +406,42 @@
         
 
     
+        
+            <span>Shippingsettings</span>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../shippingsettings_custombatch/">Custombatch</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../shippingsettings_get/">Get</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../shippingsettings_getsupportedcarriers/">Getsupportedcarriers</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../shippingsettings_list/">List</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../shippingsettings_patch/">Patch</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../shippingsettings_update/">Update</a>
+                    
+                </li>
+            
+        
+
+    
 </ul>
 
       </div>
@@ -417,7 +453,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Shopping Content v0.3.6+20160331</a>
+        <a href="..">Shopping Content v0.3.6+20160905</a>
       </nav>
 
       
@@ -473,10 +509,16 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p max-results=integer</strong></p>
+<p><strong>-p statuses=string</strong></p>
 <ul>
-<li>The maximum number of orders to return in the response, used for paging. The default value is 25 orders per page, and the maximum allowed value is 250 orders per page.
-    Known issue: All List calls will return all Orders without limit regardless of the value of this field.</li>
+<li>Obtains orders that match any of the specified statuses. Multiple values can be specified with comma separation. Additionally, please note that active is a shortcut for pendingShipment and partiallyShipped, and completed is a shortcut for shipped , partiallyDelivered, delivered, partiallyReturned, returned, and canceled.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p acknowledged=boolean</strong></p>
+<ul>
+<li>Obtains orders that match the acknowledgement status. When set to true, obtains orders that have been acknowledged. When false, obtains orders that have not been acknowledged.
+    We recommend using this filter set to false, in conjunction with the acknowledge call, such that only un-acknowledged orders are returned.</li>
 </ul>
 </li>
 <li>
@@ -492,28 +534,22 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p statuses=string</strong></p>
+<p><strong>-p placed-date-end=string</strong></p>
 <ul>
-<li>Obtains orders that match any of the specified statuses. Multiple values can be specified with comma separation. Additionally, please note that active is a shortcut for pendingShipment and partiallyShipped, and completed is a shortcut for shipped , partiallyDelivered, delivered, partiallyReturned, returned, and canceled.</li>
+<li>Obtains orders placed before this date (exclusively), in ISO 8601 format.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p acknowledged=boolean</strong></p>
+<p><strong>-p max-results=integer</strong></p>
 <ul>
-<li>Obtains orders that match the acknowledgement status. When set to true, obtains orders that have been acknowledged. When false, obtains orders that have not been acknowledged.
-    We recommend using this filter set to false, in conjunction with the acknowledge call, such that only un-acknowledged orders are returned.</li>
+<li>The maximum number of orders to return in the response, used for paging. The default value is 25 orders per page, and the maximum allowed value is 250 orders per page.
+    Known issue: All List calls will return all Orders without limit regardless of the value of this field.</li>
 </ul>
 </li>
 <li>
 <p><strong>-p order-by=string</strong></p>
 <ul>
 <li>The ordering of the returned list. The only supported value are placedDate desc and placedDate asc for now, which returns orders sorted by placement date. &#34;placedDate desc&#34; stands for listing orders by placement date, from oldest to most recent. &#34;placedDate asc&#34; stands for listing orders by placement date, from most recent to oldest. In future releases we&#39;ll support other sorting criteria.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p placed-date-end=string</strong></p>
-<ul>
-<li>Obtains orders placed before this date (exclusively), in ISO 8601 format.</li>
 </ul>
 </li>
 </ul>
@@ -607,7 +643,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 
 <!--
 MkDocs version  : 0.12.2
-Docs Build Date : 2016-07-23 16:05:54.585367
+Docs Build Date : 2016-09-11 17:55:47.160998
 -->
 </body>
 </html>

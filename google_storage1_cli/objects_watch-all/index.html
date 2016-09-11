@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Watch All - storage v0.3.6+20160330</title>
+  <title>Watch All - storage v0.3.6+20160901</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -32,7 +32,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> storage v0.3.6+20160330</a>
+        <a href=".." class="icon icon-home"> storage v0.3.6+20160901</a>
         
       </div>
 
@@ -293,7 +293,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">storage v0.3.6+20160330</a>
+        <a href="..">storage v0.3.6+20160901</a>
       </nav>
 
       
@@ -359,44 +359,44 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    address=ut</code><ul>
+<li><code>-r .    address=kasd</code><ul>
 <li>The address where notifications are delivered for this channel.</li>
 </ul>
 </li>
-<li><code>expiration=amet</code><ul>
+<li><code>expiration=ut</code><ul>
 <li>Date and time of notification channel expiration, expressed as a Unix timestamp, in milliseconds. Optional.</li>
 </ul>
 </li>
-<li><code>id=sed</code><ul>
+<li><code>id=sadipscing</code><ul>
 <li>A UUID or similar unique string that identifies this channel.</li>
 </ul>
 </li>
-<li><code>kind=sit</code><ul>
+<li><code>kind=et</code><ul>
 <li>Identifies this as a notification channel used to watch for changes to a resource. Value: the fixed string &#34;api#channel&#34;.</li>
 </ul>
 </li>
-<li><code>params=key=sit</code><ul>
+<li><code>params=key=clita</code><ul>
 <li>Additional parameters controlling delivery channel behavior. Optional.</li>
 <li>the value will be associated with the given <code>key</code></li>
 </ul>
 </li>
-<li><code>payload=false</code><ul>
+<li><code>payload=true</code><ul>
 <li>A Boolean value to indicate whether payload is wanted. Optional.</li>
 </ul>
 </li>
-<li><code>resource-id=et</code><ul>
+<li><code>resource-id=dolor</code><ul>
 <li>An opaque ID that identifies the resource being watched on this channel. Stable across different API versions.</li>
 </ul>
 </li>
-<li><code>resource-uri=sanctus</code><ul>
+<li><code>resource-uri=elitr</code><ul>
 <li>A version-specific identifier for the watched resource.</li>
 </ul>
 </li>
-<li><code>token=takimata</code><ul>
+<li><code>token=magna</code><ul>
 <li>An arbitrary string delivered to the target address with each notification delivered over this channel. Optional.</li>
 </ul>
 </li>
-<li><code>type=kasd</code><ul>
+<li><code>type=aliquyam</code><ul>
 <li>The type of delivery mechanism used for this channel.</li>
 </ul>
 </li>
@@ -426,15 +426,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p max-results=integer</strong></p>
+<p><strong>-p projection=string</strong></p>
 <ul>
-<li>Maximum number of items plus prefixes to return. As duplicate prefixes are omitted, fewer total results may be returned than requested. The default value of this parameter is 1,000 items.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p prefix=string</strong></p>
-<ul>
-<li>Filter results to objects whose names begin with this prefix.</li>
+<li>Set of properties to return. Defaults to noAcl.</li>
 </ul>
 </li>
 <li>
@@ -444,21 +438,27 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
+<p><strong>-p prefix=string</strong></p>
+<ul>
+<li>Filter results to objects whose names begin with this prefix.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p page-token=string</strong></p>
 <ul>
 <li>A previously-returned page token representing part of the larger set of results to view.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p delimiter=string</strong></p>
+<p><strong>-p max-results=integer</strong></p>
 <ul>
-<li>Returns results in a directory-like mode. items will contain only objects whose names, aside from the prefix, do not contain delimiter. Objects whose names, aside from the prefix, contain delimiter will have their name, truncated after the delimiter, returned in prefixes. Duplicate prefixes are omitted.</li>
+<li>Maximum number of items plus prefixes to return. As duplicate prefixes are omitted, fewer total results may be returned than requested. The default value of this parameter is 1,000 items.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p projection=string</strong></p>
+<p><strong>-p delimiter=string</strong></p>
 <ul>
-<li>Set of properties to return. Defaults to noAcl.</li>
+<li>Returns results in a directory-like mode. items will contain only objects whose names, aside from the prefix, do not contain delimiter. Objects whose names, aside from the prefix, contain delimiter will have their name, truncated after the delimiter, returned in prefixes. Duplicate prefixes are omitted.</li>
 </ul>
 </li>
 </ul>
@@ -550,7 +550,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 
 <!--
 MkDocs version  : 0.12.2
-Docs Build Date : 2016-07-23 16:05:53.397607
+Docs Build Date : 2016-09-11 17:55:44.934681
 -->
 </body>
 </html>

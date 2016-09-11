@@ -47,8 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-14720' class='srclink' href='../src/google_adexchangebuyer1d4/home/byron/dev/rust/google-apis-rs/target/debug/build/google-adexchangebuyer1d4-2c62c1eb7140aa41/out/lib.rs.html#31971-31973' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct BudgetMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
+               </span><a id='src-14331' class='srclink' href='../src/google_adexchangebuyer1d4/home/byron/dev/rust/google-apis-rs/target/debug/build/google-adexchangebuyer1d4-e81ed01b0333a8e3/out/lib.rs.html#26147-26149' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct BudgetMethods&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>budget</em> resources.
 It is not used directly, but through the <code>AdExchangeBuyer</code> hub.</p>
@@ -74,8 +74,8 @@ It is not used directly, but through the <code>AdExchangeBuyer</code> hub.</p>
 <span class='comment'>// like `get(...)`, `patch(...)` and `update(...)`</span>
 <span class='comment'>// to build up your call.</span>
 <span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>budget</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_adexchangebuyer1d4/struct.BudgetMethods.html' title='google_adexchangebuyer1d4::BudgetMethods'>BudgetMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-14729' class='srclink' href='../src/google_adexchangebuyer1d4/home/byron/dev/rust/google-apis-rs/target/debug/build/google-adexchangebuyer1d4-2c62c1eb7140aa41/out/lib.rs.html#31975-32031' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.update' class='method'><code>fn <a href='#method.update' class='fnname'>update</a>(&amp;self, request: <a class='struct' href='../google_adexchangebuyer1d4/struct.Budget.html' title='google_adexchangebuyer1d4::Budget'>Budget</a>, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, billing_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_adexchangebuyer1d4/struct.BudgetUpdateCall.html' title='google_adexchangebuyer1d4::BudgetUpdateCall'>BudgetUpdateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='struct' href='../google_adexchangebuyer1d4/struct.BudgetMethods.html' title='google_adexchangebuyer1d4::BudgetMethods'>BudgetMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-14340' class='srclink' href='../src/google_adexchangebuyer1d4/home/byron/dev/rust/google-apis-rs/target/debug/build/google-adexchangebuyer1d4-e81ed01b0333a8e3/out/lib.rs.html#26151-26207' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.update' class='method'><code>fn <a href='#method.update' class='fnname'>update</a>(&amp;self, request: <a class='struct' href='../google_adexchangebuyer1d4/struct.Budget.html' title='google_adexchangebuyer1d4::Budget'>Budget</a>, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, billing_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_adexchangebuyer1d4/struct.BudgetUpdateCall.html' title='google_adexchangebuyer1d4::BudgetUpdateCall'>BudgetUpdateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Updates the budget amount for the budget of the adgroup specified by the accountId and billingId, with the budget amount in the request.</p>
@@ -86,7 +86,7 @@ It is not used directly, but through the <code>AdExchangeBuyer</code> hub.</p>
 <li><code>accountId</code> - The account id associated with the budget being updated.</li>
 <li><code>billingId</code> - The billing id associated with the budget being updated.</li>
 </ul>
-</div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, billing_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_adexchangebuyer1d4/struct.BudgetGetCall.html' title='google_adexchangebuyer1d4::BudgetGetCall'>BudgetGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, billing_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_adexchangebuyer1d4/struct.BudgetGetCall.html' title='google_adexchangebuyer1d4::BudgetGetCall'>BudgetGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Returns the budget information for the adgroup specified by the accountId and billingId.</p>
@@ -96,7 +96,7 @@ It is not used directly, but through the <code>AdExchangeBuyer</code> hub.</p>
 <li><code>accountId</code> - The account id to get the budget information for.</li>
 <li><code>billingId</code> - The billing id to get the budget information for.</li>
 </ul>
-</div><h4 id='method.patch' class='method'><code>fn <a href='#method.patch' class='fnname'>patch</a>(&amp;self, request: <a class='struct' href='../google_adexchangebuyer1d4/struct.Budget.html' title='google_adexchangebuyer1d4::Budget'>Budget</a>, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, billing_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_adexchangebuyer1d4/struct.BudgetPatchCall.html' title='google_adexchangebuyer1d4::BudgetPatchCall'>BudgetPatchCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.patch' class='method'><code>fn <a href='#method.patch' class='fnname'>patch</a>(&amp;self, request: <a class='struct' href='../google_adexchangebuyer1d4/struct.Budget.html' title='google_adexchangebuyer1d4::Budget'>Budget</a>, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, billing_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_adexchangebuyer1d4/struct.BudgetPatchCall.html' title='google_adexchangebuyer1d4::BudgetPatchCall'>BudgetPatchCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Updates the budget amount for the budget of the adgroup specified by the accountId and billingId, with the budget amount in the request. This method supports patch semantics.</p>
@@ -107,7 +107,7 @@ It is not used directly, but through the <code>AdExchangeBuyer</code> hub.</p>
 <li><code>accountId</code> - The account id associated with the budget being updated.</li>
 <li><code>billingId</code> - The billing id associated with the budget being updated.</li>
 </ul>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_adexchangebuyer1d4/trait.MethodsBuilder.html' title='google_adexchangebuyer1d4::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_adexchangebuyer1d4/struct.BudgetMethods.html' title='google_adexchangebuyer1d4::BudgetMethods'>BudgetMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-14725' class='srclink' href='../src/google_adexchangebuyer1d4/home/byron/dev/rust/google-apis-rs/target/debug/build/google-adexchangebuyer1d4-2c62c1eb7140aa41/out/lib.rs.html#31974' title='goto source code'>[src]</a></span></h3>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='trait' href='../google_adexchangebuyer1d4/trait.MethodsBuilder.html' title='google_adexchangebuyer1d4::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_adexchangebuyer1d4/struct.BudgetMethods.html' title='google_adexchangebuyer1d4::BudgetMethods'>BudgetMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-14336' class='srclink' href='../src/google_adexchangebuyer1d4/home/byron/dev/rust/google-apis-rs/target/debug/build/google-adexchangebuyer1d4-e81ed01b0333a8e3/out/lib.rs.html#26150' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 

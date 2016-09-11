@@ -47,8 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-10053' class='srclink' href='../src/google_calendar3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-calendar3-280ee5d10c9d729a/out/lib.rs.html#24273-24283' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct EventInsertCall&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
+               </span><a id='src-9522' class='srclink' href='../src/google_calendar3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-calendar3-99dc80a02d683e55/out/lib.rs.html#20438-20448' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct EventInsertCall&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>Creates an event.</p>
 
@@ -70,45 +70,45 @@ It is not used directly, but through a <code>EventMethods</code> instance.</p>
 <span class='comment'>// execute the final call using `doit()`.</span>
 <span class='comment'>// Values shown here are possibly random and not representative !</span>
 <span class='kw'>let</span> <span class='ident'>result</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>events</span>().<span class='ident'>insert</span>(<span class='ident'>req</span>, <span class='string'>&quot;calendarId&quot;</span>)
-             .<span class='ident'>supports_attachments</span>(<span class='boolvalue'>true</span>)
-             .<span class='ident'>send_notifications</span>(<span class='boolvalue'>true</span>)
+             .<span class='ident'>supports_attachments</span>(<span class='bool-val'>true</span>)
+             .<span class='ident'>send_notifications</span>(<span class='bool-val'>true</span>)
              .<span class='ident'>max_attendees</span>(<span class='op'>-</span><span class='number'>58</span>)
              .<span class='ident'>doit</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_calendar3/struct.EventInsertCall.html' title='google_calendar3::EventInsertCall'>EventInsertCall</a>&lt;'a, C, A&gt; <span class='where'>where C: <a class='trait' href='https://doc.rust-lang.org/nightly/core/borrow/trait.BorrowMut.html' title='core::borrow::BorrowMut'>BorrowMut</a>&lt;<a class='struct' href='../hyper/client/struct.Client.html' title='hyper::client::Client'>Client</a>&gt;, A: <a class='trait' href='../yup_oauth2/helper/trait.GetToken.html' title='yup_oauth2::helper::GetToken'>GetToken</a></span></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-10070' class='srclink' href='../src/google_calendar3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-calendar3-280ee5d10c9d729a/out/lib.rs.html#24285-24533' title='goto source code'>[src]</a></span></h3>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='struct' href='../google_calendar3/struct.EventInsertCall.html' title='google_calendar3::EventInsertCall'>EventInsertCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: <a class='trait' href='https://doc.rust-lang.org/nightly/core/borrow/trait.BorrowMut.html' title='core::borrow::BorrowMut'>BorrowMut</a>&lt;<a class='struct' href='../hyper/client/struct.Client.html' title='hyper::client::Client'>Client</a>&gt;, A: <a class='trait' href='../yup_oauth2/authenticator/trait.GetToken.html' title='yup_oauth2::authenticator::GetToken'>GetToken</a></span></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-9539' class='srclink' href='../src/google_calendar3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-calendar3-99dc80a02d683e55/out/lib.rs.html#20450-20698' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'><h4 id='method.doit' class='method'><code>fn <a href='#method.doit' class='fnname'>doit</a>(self) -&gt; <a class='type' href='../google_calendar3/type.Result.html' title='google_calendar3::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>(</a><a class='struct' href='../hyper/client/response/struct.Response.html' title='hyper::client::response::Response'>Response</a>, <a class='struct' href='../google_calendar3/struct.Event.html' title='google_calendar3::Event'>Event</a><a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>)</a>&gt;</code></h4>
 <div class='docblock'><p>Perform the operation you have build so far.</p>
-</div><h4 id='method.request' class='method'><code>fn <a href='#method.request' class='fnname'>request</a>(self, new_value: <a class='struct' href='../google_calendar3/struct.Event.html' title='google_calendar3::Event'>Event</a>) -&gt; <a class='struct' href='../google_calendar3/struct.EventInsertCall.html' title='google_calendar3::EventInsertCall'>EventInsertCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.request' class='method'><code>fn <a href='#method.request' class='fnname'>request</a>(self, new_value: <a class='struct' href='../google_calendar3/struct.Event.html' title='google_calendar3::Event'>Event</a>) -&gt; <a class='struct' href='../google_calendar3/struct.EventInsertCall.html' title='google_calendar3::EventInsertCall'>EventInsertCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Sets the <em>request</em> property to the given value.</p>
 
 <p>Even though the property as already been set when instantiating this call,
 we provide this method for API completeness.</p>
-</div><h4 id='method.calendar_id' class='method'><code>fn <a href='#method.calendar_id' class='fnname'>calendar_id</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_calendar3/struct.EventInsertCall.html' title='google_calendar3::EventInsertCall'>EventInsertCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.calendar_id' class='method'><code>fn <a href='#method.calendar_id' class='fnname'>calendar_id</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_calendar3/struct.EventInsertCall.html' title='google_calendar3::EventInsertCall'>EventInsertCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Calendar identifier. To retrieve calendar IDs call the calendarList.list method. If you want to access the primary calendar of the currently logged in user, use the &quot;primary&quot; keyword.</p>
 
 <p>Sets the <em>calendar id</em> path property to the given value.</p>
 
 <p>Even though the property as already been set when instantiating this call,
 we provide this method for API completeness.</p>
-</div><h4 id='method.supports_attachments' class='method'><code>fn <a href='#method.supports_attachments' class='fnname'>supports_attachments</a>(self, new_value: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>) -&gt; <a class='struct' href='../google_calendar3/struct.EventInsertCall.html' title='google_calendar3::EventInsertCall'>EventInsertCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.supports_attachments' class='method'><code>fn <a href='#method.supports_attachments' class='fnname'>supports_attachments</a>(self, new_value: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>) -&gt; <a class='struct' href='../google_calendar3/struct.EventInsertCall.html' title='google_calendar3::EventInsertCall'>EventInsertCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Whether API client performing operation supports event attachments. Optional. The default is False.</p>
 
 <p>Sets the <em>supports attachments</em> query property to the given value.</p>
-</div><h4 id='method.send_notifications' class='method'><code>fn <a href='#method.send_notifications' class='fnname'>send_notifications</a>(self, new_value: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>) -&gt; <a class='struct' href='../google_calendar3/struct.EventInsertCall.html' title='google_calendar3::EventInsertCall'>EventInsertCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.send_notifications' class='method'><code>fn <a href='#method.send_notifications' class='fnname'>send_notifications</a>(self, new_value: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>) -&gt; <a class='struct' href='../google_calendar3/struct.EventInsertCall.html' title='google_calendar3::EventInsertCall'>EventInsertCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Whether to send notifications about the creation of the new event. Optional. The default is False.</p>
 
 <p>Sets the <em>send notifications</em> query property to the given value.</p>
-</div><h4 id='method.max_attendees' class='method'><code>fn <a href='#method.max_attendees' class='fnname'>max_attendees</a>(self, new_value: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>) -&gt; <a class='struct' href='../google_calendar3/struct.EventInsertCall.html' title='google_calendar3::EventInsertCall'>EventInsertCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.max_attendees' class='method'><code>fn <a href='#method.max_attendees' class='fnname'>max_attendees</a>(self, new_value: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>) -&gt; <a class='struct' href='../google_calendar3/struct.EventInsertCall.html' title='google_calendar3::EventInsertCall'>EventInsertCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>The maximum number of attendees to include in the response. If there are more than the specified number of attendees, only the participant is returned. Optional.</p>
 
 <p>Sets the <em>max attendees</em> query property to the given value.</p>
-</div><h4 id='method.delegate' class='method'><code>fn <a href='#method.delegate' class='fnname'>delegate</a>(self, new_value: &amp;'a mut <a class='trait' href='../google_calendar3/trait.Delegate.html' title='google_calendar3::Delegate'>Delegate</a>) -&gt; <a class='struct' href='../google_calendar3/struct.EventInsertCall.html' title='google_calendar3::EventInsertCall'>EventInsertCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.delegate' class='method'><code>fn <a href='#method.delegate' class='fnname'>delegate</a>(self, new_value: &amp;'a mut <a class='trait' href='../google_calendar3/trait.Delegate.html' title='google_calendar3::Delegate'>Delegate</a>) -&gt; <a class='struct' href='../google_calendar3/struct.EventInsertCall.html' title='google_calendar3::EventInsertCall'>EventInsertCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>The delegate implementation is consulted whenever there is an intermediate result, or if something goes wrong
 while executing the actual API request.</p>
 
 <p>It should be used to handle progress information, and to implement a certain level of resilience.</p>
 
 <p>Sets the <em>delegate</em> property to the given value.</p>
-</div><h4 id='method.param' class='method'><code>fn <a href='#method.param' class='fnname'>param</a>&lt;T&gt;(self, name: T, value: T) -&gt; <a class='struct' href='../google_calendar3/struct.EventInsertCall.html' title='google_calendar3::EventInsertCall'>EventInsertCall</a>&lt;'a, C, A&gt; <span class='where'>where T: <a class='trait' href='https://doc.rust-lang.org/nightly/core/convert/trait.AsRef.html' title='core::convert::AsRef'>AsRef</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>&gt;</span></code></h4>
+</div><h4 id='method.param' class='method'><code>fn <a href='#method.param' class='fnname'>param</a>&lt;T&gt;(self, name: T, value: T) -&gt; <a class='struct' href='../google_calendar3/struct.EventInsertCall.html' title='google_calendar3::EventInsertCall'>EventInsertCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where T: <a class='trait' href='https://doc.rust-lang.org/nightly/core/convert/trait.AsRef.html' title='core::convert::AsRef'>AsRef</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>&gt;</span></code></h4>
 <div class='docblock'><p>Set any additional parameter of the query string used in the request.
 It should be used to set parameters which are not yet available through their own
 setters.</p>
@@ -126,7 +126,7 @@ which have their own setter method. If done anyway, the request will fail.</p>
 <li><em>fields</em> (query-string) - Selector specifying which fields to include in a partial response.</li>
 <li><em>alt</em> (query-string) - Data format for the response.</li>
 </ul>
-</div><h4 id='method.add_scope' class='method'><code>fn <a href='#method.add_scope' class='fnname'>add_scope</a>&lt;T&gt;(self, scope: T) -&gt; <a class='struct' href='../google_calendar3/struct.EventInsertCall.html' title='google_calendar3::EventInsertCall'>EventInsertCall</a>&lt;'a, C, A&gt; <span class='where'>where T: <a class='trait' href='https://doc.rust-lang.org/nightly/core/convert/trait.AsRef.html' title='core::convert::AsRef'>AsRef</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>&gt;</span></code></h4>
+</div><h4 id='method.add_scope' class='method'><code>fn <a href='#method.add_scope' class='fnname'>add_scope</a>&lt;T&gt;(self, scope: T) -&gt; <a class='struct' href='../google_calendar3/struct.EventInsertCall.html' title='google_calendar3::EventInsertCall'>EventInsertCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where T: <a class='trait' href='https://doc.rust-lang.org/nightly/core/convert/trait.AsRef.html' title='core::convert::AsRef'>AsRef</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>&gt;</span></code></h4>
 <div class='docblock'><p>Identifies the authorization scope for the method you are building.</p>
 
 <p>Use this method to actively specify which scope should be used, instead the default <code>Scope</code> variant
@@ -138,7 +138,7 @@ tokens for more than one scope.</p>
 <p>Usually there is more than one suitable scope to authorize an operation, some of which may
 encompass more rights than others. For example, for listing resources, a <em>read-only</em> scope will be
 sufficient, a read-write scope will do as well.</p>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_calendar3/trait.CallBuilder.html' title='google_calendar3::CallBuilder'>CallBuilder</a> for <a class='struct' href='../google_calendar3/struct.EventInsertCall.html' title='google_calendar3::EventInsertCall'>EventInsertCall</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-10066' class='srclink' href='../src/google_calendar3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-calendar3-280ee5d10c9d729a/out/lib.rs.html#24284' title='goto source code'>[src]</a></span></h3>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='trait' href='../google_calendar3/trait.CallBuilder.html' title='google_calendar3::CallBuilder'>CallBuilder</a> for <a class='struct' href='../google_calendar3/struct.EventInsertCall.html' title='google_calendar3::EventInsertCall'>EventInsertCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-9535' class='srclink' href='../src/google_calendar3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-calendar3-99dc80a02d683e55/out/lib.rs.html#20449' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 

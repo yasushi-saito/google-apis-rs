@@ -47,8 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-1033' class='srclink' href='../src/google_storage1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-storage1-20d5c70a2dc61c62/out/lib.rs.html#2758-2762' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct Storage&lt;C, A&gt; {
+               </span><a id='src-982' class='srclink' href='../src/google_storage1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-storage1-52b5895d3bb5b703/out/lib.rs.html#2469-2473' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct Storage&lt;C,&nbsp;A&gt; {
     // some fields omitted
 }</pre><div class='docblock'><p>Central instance to access all Storage related resource activities</p>
 
@@ -87,18 +87,19 @@
 <span class='comment'>// Values shown here are possibly random and not representative !</span>
 <span class='kw'>let</span> <span class='ident'>result</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>objects</span>().<span class='ident'>rewrite</span>(<span class='ident'>req</span>, <span class='string'>&quot;sourceBucket&quot;</span>, <span class='string'>&quot;sourceObject&quot;</span>, <span class='string'>&quot;destinationBucket&quot;</span>, <span class='string'>&quot;destinationObject&quot;</span>)
              .<span class='ident'>source_generation</span>(<span class='string'>&quot;justo&quot;</span>)
-             .<span class='ident'>rewrite_token</span>(<span class='string'>&quot;justo&quot;</span>)
+             .<span class='ident'>rewrite_token</span>(<span class='string'>&quot;et&quot;</span>)
              .<span class='ident'>projection</span>(<span class='string'>&quot;et&quot;</span>)
-             .<span class='ident'>max_bytes_rewritten_per_call</span>(<span class='string'>&quot;et&quot;</span>)
-             .<span class='ident'>if_source_metageneration_not_match</span>(<span class='string'>&quot;diam&quot;</span>)
-             .<span class='ident'>if_source_metageneration_match</span>(<span class='string'>&quot;ipsum&quot;</span>)
-             .<span class='ident'>if_source_generation_not_match</span>(<span class='string'>&quot;Lorem&quot;</span>)
-             .<span class='ident'>if_source_generation_match</span>(<span class='string'>&quot;et&quot;</span>)
-             .<span class='ident'>if_metageneration_not_match</span>(<span class='string'>&quot;duo&quot;</span>)
-             .<span class='ident'>if_metageneration_match</span>(<span class='string'>&quot;aliquyam&quot;</span>)
-             .<span class='ident'>if_generation_not_match</span>(<span class='string'>&quot;sea&quot;</span>)
-             .<span class='ident'>if_generation_match</span>(<span class='string'>&quot;Lorem&quot;</span>)
-             .<span class='ident'>destination_predefined_acl</span>(<span class='string'>&quot;eos&quot;</span>)
+             .<span class='ident'>max_bytes_rewritten_per_call</span>(<span class='string'>&quot;diam&quot;</span>)
+             .<span class='ident'>if_source_metageneration_not_match</span>(<span class='string'>&quot;ipsum&quot;</span>)
+             .<span class='ident'>if_source_metageneration_match</span>(<span class='string'>&quot;Lorem&quot;</span>)
+             .<span class='ident'>if_source_generation_not_match</span>(<span class='string'>&quot;et&quot;</span>)
+             .<span class='ident'>if_source_generation_match</span>(<span class='string'>&quot;duo&quot;</span>)
+             .<span class='ident'>if_metageneration_not_match</span>(<span class='string'>&quot;aliquyam&quot;</span>)
+             .<span class='ident'>if_metageneration_match</span>(<span class='string'>&quot;sea&quot;</span>)
+             .<span class='ident'>if_generation_not_match</span>(<span class='string'>&quot;Lorem&quot;</span>)
+             .<span class='ident'>if_generation_match</span>(<span class='string'>&quot;eos&quot;</span>)
+             .<span class='ident'>destination_predefined_acl</span>(<span class='string'>&quot;erat&quot;</span>)
+             .<span class='ident'>destination_kms_key_name</span>(<span class='string'>&quot;sadipscing&quot;</span>)
              .<span class='ident'>doit</span>();
  
 <span class='kw'>match</span> <span class='ident'>result</span> {
@@ -117,20 +118,20 @@
     },
     <span class='prelude-val'>Ok</span>(<span class='ident'>res</span>) <span class='op'>=&gt;</span> <span class='macro'>println</span><span class='macro'>!</span>(<span class='string'>&quot;Success: {:?}&quot;</span>, <span class='ident'>res</span>),
 }</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_storage1/struct.Storage.html' title='google_storage1::Storage'>Storage</a>&lt;C, A&gt; <span class='where'>where C: <a class='trait' href='https://doc.rust-lang.org/nightly/core/borrow/trait.BorrowMut.html' title='core::borrow::BorrowMut'>BorrowMut</a>&lt;<a class='struct' href='../hyper/client/struct.Client.html' title='hyper::client::Client'>Client</a>&gt;, A: <a class='trait' href='../yup_oauth2/helper/trait.GetToken.html' title='yup_oauth2::helper::GetToken'>GetToken</a></span></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-1043' class='srclink' href='../src/google_storage1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-storage1-20d5c70a2dc61c62/out/lib.rs.html#2764-2801' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.new' class='method'><code>fn <a href='#method.new' class='fnname'>new</a>(client: C, authenticator: A) -&gt; <a class='struct' href='../google_storage1/struct.Storage.html' title='google_storage1::Storage'>Storage</a>&lt;C, A&gt;</code></h4>
-<h4 id='method.bucket_access_controls' class='method'><code>fn <a href='#method.bucket_access_controls' class='fnname'>bucket_access_controls</a>(&amp;'a self) -&gt; <a class='struct' href='../google_storage1/struct.BucketAccessControlMethods.html' title='google_storage1::BucketAccessControlMethods'>BucketAccessControlMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.buckets' class='method'><code>fn <a href='#method.buckets' class='fnname'>buckets</a>(&amp;'a self) -&gt; <a class='struct' href='../google_storage1/struct.BucketMethods.html' title='google_storage1::BucketMethods'>BucketMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.channels' class='method'><code>fn <a href='#method.channels' class='fnname'>channels</a>(&amp;'a self) -&gt; <a class='struct' href='../google_storage1/struct.ChannelMethods.html' title='google_storage1::ChannelMethods'>ChannelMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.default_object_access_controls' class='method'><code>fn <a href='#method.default_object_access_controls' class='fnname'>default_object_access_controls</a>(&amp;'a self) -&gt; <a class='struct' href='../google_storage1/struct.DefaultObjectAccessControlMethods.html' title='google_storage1::DefaultObjectAccessControlMethods'>DefaultObjectAccessControlMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.object_access_controls' class='method'><code>fn <a href='#method.object_access_controls' class='fnname'>object_access_controls</a>(&amp;'a self) -&gt; <a class='struct' href='../google_storage1/struct.ObjectAccessControlMethods.html' title='google_storage1::ObjectAccessControlMethods'>ObjectAccessControlMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.objects' class='method'><code>fn <a href='#method.objects' class='fnname'>objects</a>(&amp;'a self) -&gt; <a class='struct' href='../google_storage1/struct.ObjectMethods.html' title='google_storage1::ObjectMethods'>ObjectMethods</a>&lt;'a, C, A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='struct' href='../google_storage1/struct.Storage.html' title='google_storage1::Storage'>Storage</a>&lt;C,&nbsp;A&gt; <span class='where'>where C: <a class='trait' href='https://doc.rust-lang.org/nightly/core/borrow/trait.BorrowMut.html' title='core::borrow::BorrowMut'>BorrowMut</a>&lt;<a class='struct' href='../hyper/client/struct.Client.html' title='hyper::client::Client'>Client</a>&gt;, A: <a class='trait' href='../yup_oauth2/authenticator/trait.GetToken.html' title='yup_oauth2::authenticator::GetToken'>GetToken</a></span></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-992' class='srclink' href='../src/google_storage1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-storage1-52b5895d3bb5b703/out/lib.rs.html#2475-2512' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.new' class='method'><code>fn <a href='#method.new' class='fnname'>new</a>(client: C, authenticator: A) -&gt; <a class='struct' href='../google_storage1/struct.Storage.html' title='google_storage1::Storage'>Storage</a>&lt;C,&nbsp;A&gt;</code></h4>
+<h4 id='method.bucket_access_controls' class='method'><code>fn <a href='#method.bucket_access_controls' class='fnname'>bucket_access_controls</a>(&amp;'a self) -&gt; <a class='struct' href='../google_storage1/struct.BucketAccessControlMethods.html' title='google_storage1::BucketAccessControlMethods'>BucketAccessControlMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<h4 id='method.buckets' class='method'><code>fn <a href='#method.buckets' class='fnname'>buckets</a>(&amp;'a self) -&gt; <a class='struct' href='../google_storage1/struct.BucketMethods.html' title='google_storage1::BucketMethods'>BucketMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<h4 id='method.channels' class='method'><code>fn <a href='#method.channels' class='fnname'>channels</a>(&amp;'a self) -&gt; <a class='struct' href='../google_storage1/struct.ChannelMethods.html' title='google_storage1::ChannelMethods'>ChannelMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<h4 id='method.default_object_access_controls' class='method'><code>fn <a href='#method.default_object_access_controls' class='fnname'>default_object_access_controls</a>(&amp;'a self) -&gt; <a class='struct' href='../google_storage1/struct.DefaultObjectAccessControlMethods.html' title='google_storage1::DefaultObjectAccessControlMethods'>DefaultObjectAccessControlMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<h4 id='method.object_access_controls' class='method'><code>fn <a href='#method.object_access_controls' class='fnname'>object_access_controls</a>(&amp;'a self) -&gt; <a class='struct' href='../google_storage1/struct.ObjectAccessControlMethods.html' title='google_storage1::ObjectAccessControlMethods'>ObjectAccessControlMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<h4 id='method.objects' class='method'><code>fn <a href='#method.objects' class='fnname'>objects</a>(&amp;'a self) -&gt; <a class='struct' href='../google_storage1/struct.ObjectMethods.html' title='google_storage1::ObjectMethods'>ObjectMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <h4 id='method.user_agent' class='method'><code>fn <a href='#method.user_agent' class='fnname'>user_agent</a>(&amp;mut self, agent_name: <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>) -&gt; <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a></code></h4>
 <div class='docblock'><p>Set the user-agent header field to use in all requests to the server.
-It defaults to <code>google-api-rust-client/0.1.14</code>.</p>
+It defaults to <code>google-api-rust-client/0.1.15</code>.</p>
 
 <p>Returns the previously set user-agent.</p>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_storage1/trait.Hub.html' title='google_storage1::Hub'>Hub</a> for <a class='struct' href='../google_storage1/struct.Storage.html' title='google_storage1::Storage'>Storage</a>&lt;C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-1039' class='srclink' href='../src/google_storage1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-storage1-20d5c70a2dc61c62/out/lib.rs.html#2763' title='goto source code'>[src]</a></span></h3>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='trait' href='../google_storage1/trait.Hub.html' title='google_storage1::Hub'>Hub</a> for <a class='struct' href='../google_storage1/struct.Storage.html' title='google_storage1::Storage'>Storage</a>&lt;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-988' class='srclink' href='../src/google_storage1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-storage1-52b5895d3bb5b703/out/lib.rs.html#2474' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 

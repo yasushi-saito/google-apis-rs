@@ -47,8 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-6776' class='srclink' href='../src/google_appengine1_beta4/home/byron/dev/rust/google-apis-rs/target/debug/build/google-appengine1_beta4-e771ff78f0c70327/out/lib.rs.html#14129-14131' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct AppMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
+               </span><a id='src-7056' class='srclink' href='../src/google_appengine1_beta4/home/byron/dev/rust/google-apis-rs/target/debug/build/google-appengine1_beta4-d825b184350f194b/out/lib.rs.html#12409-12411' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct AppMethods&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>app</em> resources.
 It is not used directly, but through the <code>Appengine</code> hub.</p>
@@ -71,11 +71,11 @@ It is not used directly, but through the <code>Appengine</code> hub.</p>
                               <span class='op'>&lt;</span><span class='ident'>MemoryStorage</span> <span class='kw'>as</span> <span class='ident'>Default</span><span class='op'>&gt;</span>::<span class='ident'>default</span>(), <span class='prelude-val'>None</span>);
 <span class='kw'>let</span> <span class='kw-2'>mut</span> <span class='ident'>hub</span> <span class='op'>=</span> <span class='ident'>Appengine</span>::<span class='ident'>new</span>(<span class='ident'>hyper</span>::<span class='ident'>Client</span>::<span class='ident'>new</span>(), <span class='ident'>auth</span>);
 <span class='comment'>// Usually you wouldn&#39;t bind this to a variable, but keep calling *CallBuilders*</span>
-<span class='comment'>// like `get(...)`, `modules_delete(...)`, `modules_get(...)`, `modules_list(...)`, `modules_patch(...)`, `modules_versions_create(...)`, `modules_versions_delete(...)`, `modules_versions_get(...)`, `modules_versions_list(...)`, `modules_versions_patch(...)`, `operations_get(...)` and `operations_list(...)`</span>
+<span class='comment'>// like `create(...)`, `get(...)`, `locations_get(...)`, `locations_list(...)`, `modules_delete(...)`, `modules_get(...)`, `modules_list(...)`, `modules_patch(...)`, `modules_versions_create(...)`, `modules_versions_delete(...)`, `modules_versions_get(...)`, `modules_versions_instances_debug(...)`, `modules_versions_instances_delete(...)`, `modules_versions_instances_get(...)`, `modules_versions_instances_list(...)`, `modules_versions_list(...)`, `modules_versions_patch(...)`, `operations_get(...)` and `operations_list(...)`</span>
 <span class='comment'>// to build up your call.</span>
 <span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>apps</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_appengine1_beta4/struct.AppMethods.html' title='google_appengine1_beta4::AppMethods'>AppMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-6785' class='srclink' href='../src/google_appengine1_beta4/home/byron/dev/rust/google-apis-rs/target/debug/build/google-appengine1_beta4-e771ff78f0c70327/out/lib.rs.html#14133-14359' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.modules_patch' class='method'><code>fn <a href='#method.modules_patch' class='fnname'>modules_patch</a>(&amp;self, request: <a class='struct' href='../google_appengine1_beta4/struct.Module.html' title='google_appengine1_beta4::Module'>Module</a>, apps_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, modules_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_appengine1_beta4/struct.AppModulePatchCall.html' title='google_appengine1_beta4::AppModulePatchCall'>AppModulePatchCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='struct' href='../google_appengine1_beta4/struct.AppMethods.html' title='google_appengine1_beta4::AppMethods'>AppMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-7065' class='srclink' href='../src/google_appengine1_beta4/home/byron/dev/rust/google-apis-rs/target/debug/build/google-appengine1_beta4-d825b184350f194b/out/lib.rs.html#12413-12796' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.modules_patch' class='method'><code>fn <a href='#method.modules_patch' class='fnname'>modules_patch</a>(&amp;self, request: <a class='struct' href='../google_appengine1_beta4/struct.Module.html' title='google_appengine1_beta4::Module'>Module</a>, apps_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, modules_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_appengine1_beta4/struct.AppModulePatchCall.html' title='google_appengine1_beta4::AppModulePatchCall'>AppModulePatchCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Updates the configuration of the specified module.</p>
@@ -83,122 +83,198 @@ It is not used directly, but through the <code>Appengine</code> hub.</p>
 <h1 id='arguments' class='section-header'><a href='#arguments'>Arguments</a></h1>
 <ul>
 <li><code>request</code> - No description provided.</li>
-<li><code>appsId</code> - Part of <code>name</code>. Name of the resource to update. For example: &quot;apps/myapp/modules/default&quot;.</li>
+<li><code>appsId</code> - Part of <code>name</code>. Name of the resource to update. Example: <code>apps/myapp/modules/default</code>.</li>
 <li><code>modulesId</code> - Part of <code>name</code>. See documentation of <code>appsId</code>.</li>
 </ul>
-</div><h4 id='method.modules_list' class='method'><code>fn <a href='#method.modules_list' class='fnname'>modules_list</a>(&amp;self, apps_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_appengine1_beta4/struct.AppModuleListCall.html' title='google_appengine1_beta4::AppModuleListCall'>AppModuleListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.modules_get' class='method'><code>fn <a href='#method.modules_get' class='fnname'>modules_get</a>(&amp;self, apps_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, modules_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_appengine1_beta4/struct.AppModuleGetCall.html' title='google_appengine1_beta4::AppModuleGetCall'>AppModuleGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Gets the current configuration of the specified module.</p>
+
+<h1 id='arguments-1' class='section-header'><a href='#arguments-1'>Arguments</a></h1>
+<ul>
+<li><code>appsId</code> - Part of <code>name</code>. Name of the resource requested. Example: <code>apps/myapp/modules/default</code>.</li>
+<li><code>modulesId</code> - Part of <code>name</code>. See documentation of <code>appsId</code>.</li>
+</ul>
+</div><h4 id='method.modules_versions_instances_get' class='method'><code>fn <a href='#method.modules_versions_instances_get' class='fnname'>modules_versions_instances_get</a>(&amp;self, apps_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, modules_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, versions_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, instances_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_appengine1_beta4/struct.AppModuleVersionInstanceGetCall.html' title='google_appengine1_beta4::AppModuleVersionInstanceGetCall'>AppModuleVersionInstanceGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Gets instance information.</p>
+
+<h1 id='arguments-2' class='section-header'><a href='#arguments-2'>Arguments</a></h1>
+<ul>
+<li><code>appsId</code> - Part of <code>name</code>. Name of the resource requested. Example: <code>apps/myapp/modules/default/versions/v1/instances/instance-1</code>.</li>
+<li><code>modulesId</code> - Part of <code>name</code>. See documentation of <code>appsId</code>.</li>
+<li><code>versionsId</code> - Part of <code>name</code>. See documentation of <code>appsId</code>.</li>
+<li><code>instancesId</code> - Part of <code>name</code>. See documentation of <code>appsId</code>.</li>
+</ul>
+</div><h4 id='method.modules_list' class='method'><code>fn <a href='#method.modules_list' class='fnname'>modules_list</a>(&amp;self, apps_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_appengine1_beta4/struct.AppModuleListCall.html' title='google_appengine1_beta4::AppModuleListCall'>AppModuleListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Lists all the modules in the application.</p>
 
-<h1 id='arguments-1' class='section-header'><a href='#arguments-1'>Arguments</a></h1>
+<h1 id='arguments-3' class='section-header'><a href='#arguments-3'>Arguments</a></h1>
 <ul>
-<li><code>appsId</code> - Part of <code>name</code>. Name of the resource requested. For example: &quot;apps/myapp&quot;.</li>
+<li><code>appsId</code> - Part of <code>name</code>. Name of the resource requested. Example: <code>apps/myapp</code>.</li>
 </ul>
-</div><h4 id='method.modules_get' class='method'><code>fn <a href='#method.modules_get' class='fnname'>modules_get</a>(&amp;self, apps_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, modules_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_appengine1_beta4/struct.AppModuleGetCall.html' title='google_appengine1_beta4::AppModuleGetCall'>AppModuleGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.create' class='method'><code>fn <a href='#method.create' class='fnname'>create</a>(&amp;self, request: <a class='struct' href='../google_appengine1_beta4/struct.Application.html' title='google_appengine1_beta4::Application'>Application</a>) -&gt; <a class='struct' href='../google_appengine1_beta4/struct.AppCreateCall.html' title='google_appengine1_beta4::AppCreateCall'>AppCreateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>Gets the current configuration of the module.</p>
+<p>Creates an App Engine application for a Google Cloud Platform project. This requires a project that excludes an App Engine application. For details about creating a project without an application, see the <a href="https://cloud.google.com/resource-manager/docs/creating-project">Google Cloud Resource Manager create project topic</a>.</p>
 
-<h1 id='arguments-2' class='section-header'><a href='#arguments-2'>Arguments</a></h1>
+<h1 id='arguments-4' class='section-header'><a href='#arguments-4'>Arguments</a></h1>
 <ul>
-<li><code>appsId</code> - Part of <code>name</code>. Name of the resource requested. For example: &quot;apps/myapp/modules/default&quot;.</li>
-<li><code>modulesId</code> - Part of <code>name</code>. See documentation of <code>appsId</code>.</li>
+<li><code>request</code> - No description provided.</li>
 </ul>
-</div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, apps_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_appengine1_beta4/struct.AppGetCall.html' title='google_appengine1_beta4::AppGetCall'>AppGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.modules_versions_instances_list' class='method'><code>fn <a href='#method.modules_versions_instances_list' class='fnname'>modules_versions_instances_list</a>(&amp;self, apps_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, modules_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, versions_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_appengine1_beta4/struct.AppModuleVersionInstanceListCall.html' title='google_appengine1_beta4::AppModuleVersionInstanceListCall'>AppModuleVersionInstanceListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Lists the instances of a version.</p>
+
+<h1 id='arguments-5' class='section-header'><a href='#arguments-5'>Arguments</a></h1>
+<ul>
+<li><code>appsId</code> - Part of <code>name</code>. Name of the resource requested. Example: <code>apps/myapp/modules/default/versions/v1</code>.</li>
+<li><code>modulesId</code> - Part of <code>name</code>. See documentation of <code>appsId</code>.</li>
+<li><code>versionsId</code> - Part of <code>name</code>. See documentation of <code>appsId</code>.</li>
+</ul>
+</div><h4 id='method.modules_versions_instances_delete' class='method'><code>fn <a href='#method.modules_versions_instances_delete' class='fnname'>modules_versions_instances_delete</a>(&amp;self, apps_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, modules_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, versions_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, instances_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_appengine1_beta4/struct.AppModuleVersionInstanceDeleteCall.html' title='google_appengine1_beta4::AppModuleVersionInstanceDeleteCall'>AppModuleVersionInstanceDeleteCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Stops a running instance.</p>
+
+<h1 id='arguments-6' class='section-header'><a href='#arguments-6'>Arguments</a></h1>
+<ul>
+<li><code>appsId</code> - Part of <code>name</code>. Name of the resource requested. Example: <code>apps/myapp/modules/default/versions/v1/instances/instance-1</code>.</li>
+<li><code>modulesId</code> - Part of <code>name</code>. See documentation of <code>appsId</code>.</li>
+<li><code>versionsId</code> - Part of <code>name</code>. See documentation of <code>appsId</code>.</li>
+<li><code>instancesId</code> - Part of <code>name</code>. See documentation of <code>appsId</code>.</li>
+</ul>
+</div><h4 id='method.modules_versions_instances_debug' class='method'><code>fn <a href='#method.modules_versions_instances_debug' class='fnname'>modules_versions_instances_debug</a>(&amp;self, request: <a class='struct' href='../google_appengine1_beta4/struct.DebugInstanceRequest.html' title='google_appengine1_beta4::DebugInstanceRequest'>DebugInstanceRequest</a>, apps_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, modules_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, versions_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, instances_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_appengine1_beta4/struct.AppModuleVersionInstanceDebugCall.html' title='google_appengine1_beta4::AppModuleVersionInstanceDebugCall'>AppModuleVersionInstanceDebugCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Enables debugging on a VM instance. This allows you to use the SSH command to connect to the virtual machine where the instance lives. While in &quot;debug mode&quot;, the instance continues to serve live traffic. You should delete the instance when you are done debugging and then allow the system to take over and determine if another instance should be started. Only applicable for instances in App Engine flexible environment.</p>
+
+<h1 id='arguments-7' class='section-header'><a href='#arguments-7'>Arguments</a></h1>
+<ul>
+<li><code>request</code> - No description provided.</li>
+<li><code>appsId</code> - Part of <code>name</code>. Name of the resource requested. Example: <code>apps/myapp/modules/default/versions/v1/instances/instance-1</code>.</li>
+<li><code>modulesId</code> - Part of <code>name</code>. See documentation of <code>appsId</code>.</li>
+<li><code>versionsId</code> - Part of <code>name</code>. See documentation of <code>appsId</code>.</li>
+<li><code>instancesId</code> - Part of <code>name</code>. See documentation of <code>appsId</code>.</li>
+</ul>
+</div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, apps_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_appengine1_beta4/struct.AppGetCall.html' title='google_appengine1_beta4::AppGetCall'>AppGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Gets information about an application.</p>
 
-<h1 id='arguments-3' class='section-header'><a href='#arguments-3'>Arguments</a></h1>
+<h1 id='arguments-8' class='section-header'><a href='#arguments-8'>Arguments</a></h1>
 <ul>
-<li><code>appsId</code> - Part of <code>name</code>. Name of the application to get. For example: &quot;apps/myapp&quot;.</li>
+<li><code>appsId</code> - Part of <code>name</code>. Name of the application to get. Example: <code>apps/myapp</code>.</li>
 </ul>
-</div><h4 id='method.modules_delete' class='method'><code>fn <a href='#method.modules_delete' class='fnname'>modules_delete</a>(&amp;self, apps_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, modules_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_appengine1_beta4/struct.AppModuleDeleteCall.html' title='google_appengine1_beta4::AppModuleDeleteCall'>AppModuleDeleteCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.modules_delete' class='method'><code>fn <a href='#method.modules_delete' class='fnname'>modules_delete</a>(&amp;self, apps_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, modules_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_appengine1_beta4/struct.AppModuleDeleteCall.html' title='google_appengine1_beta4::AppModuleDeleteCall'>AppModuleDeleteCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>Deletes a module and all enclosed versions.</p>
+<p>Deletes the specified module and all enclosed versions.</p>
 
-<h1 id='arguments-4' class='section-header'><a href='#arguments-4'>Arguments</a></h1>
+<h1 id='arguments-9' class='section-header'><a href='#arguments-9'>Arguments</a></h1>
 <ul>
-<li><code>appsId</code> - Part of <code>name</code>. Name of the resource requested. For example: &quot;apps/myapp/modules/default&quot;.</li>
+<li><code>appsId</code> - Part of <code>name</code>. Name of the resource requested. Example: <code>apps/myapp/modules/default</code>.</li>
 <li><code>modulesId</code> - Part of <code>name</code>. See documentation of <code>appsId</code>.</li>
 </ul>
-</div><h4 id='method.operations_get' class='method'><code>fn <a href='#method.operations_get' class='fnname'>operations_get</a>(&amp;self, apps_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, operations_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_appengine1_beta4/struct.AppOperationGetCall.html' title='google_appengine1_beta4::AppOperationGetCall'>AppOperationGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.operations_get' class='method'><code>fn <a href='#method.operations_get' class='fnname'>operations_get</a>(&amp;self, apps_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, operations_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_appengine1_beta4/struct.AppOperationGetCall.html' title='google_appengine1_beta4::AppOperationGetCall'>AppOperationGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Gets the latest state of a long-running operation. Clients can use this method to poll the operation result at intervals as recommended by the API service.</p>
 
-<h1 id='arguments-5' class='section-header'><a href='#arguments-5'>Arguments</a></h1>
+<h1 id='arguments-10' class='section-header'><a href='#arguments-10'>Arguments</a></h1>
 <ul>
 <li><code>appsId</code> - Part of <code>name</code>. The name of the operation resource.</li>
 <li><code>operationsId</code> - Part of <code>name</code>. See documentation of <code>appsId</code>.</li>
 </ul>
-</div><h4 id='method.modules_versions_patch' class='method'><code>fn <a href='#method.modules_versions_patch' class='fnname'>modules_versions_patch</a>(&amp;self, request: <a class='struct' href='../google_appengine1_beta4/struct.Version.html' title='google_appengine1_beta4::Version'>Version</a>, apps_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, modules_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, versions_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_appengine1_beta4/struct.AppModuleVersionPatchCall.html' title='google_appengine1_beta4::AppModuleVersionPatchCall'>AppModuleVersionPatchCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.locations_get' class='method'><code>fn <a href='#method.locations_get' class='fnname'>locations_get</a>(&amp;self, apps_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, locations_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_appengine1_beta4/struct.AppLocationGetCall.html' title='google_appengine1_beta4::AppLocationGetCall'>AppLocationGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>Updates an existing version. Note: UNIMPLEMENTED.</p>
+<p>Get information about a location.</p>
 
-<h1 id='arguments-6' class='section-header'><a href='#arguments-6'>Arguments</a></h1>
+<h1 id='arguments-11' class='section-header'><a href='#arguments-11'>Arguments</a></h1>
+<ul>
+<li><code>appsId</code> - Part of <code>name</code>. Resource name for the location.</li>
+<li><code>locationsId</code> - Part of <code>name</code>. See documentation of <code>appsId</code>.</li>
+</ul>
+</div><h4 id='method.locations_list' class='method'><code>fn <a href='#method.locations_list' class='fnname'>locations_list</a>(&amp;self, apps_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_appengine1_beta4/struct.AppLocationListCall.html' title='google_appengine1_beta4::AppLocationListCall'>AppLocationListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Lists information about the supported locations for this service.</p>
+
+<h1 id='arguments-12' class='section-header'><a href='#arguments-12'>Arguments</a></h1>
+<ul>
+<li><code>appsId</code> - Part of <code>name</code>. The resource that owns the locations collection, if applicable.</li>
+</ul>
+</div><h4 id='method.modules_versions_patch' class='method'><code>fn <a href='#method.modules_versions_patch' class='fnname'>modules_versions_patch</a>(&amp;self, request: <a class='struct' href='../google_appengine1_beta4/struct.Version.html' title='google_appengine1_beta4::Version'>Version</a>, apps_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, modules_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, versions_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_appengine1_beta4/struct.AppModuleVersionPatchCall.html' title='google_appengine1_beta4::AppModuleVersionPatchCall'>AppModuleVersionPatchCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Updates the specified Version resource. You can specify the following fields depending on the App Engine environment and type of scaling that the version resource uses: * <a href="https://cloud.google.com/appengine/docs/admin-api/reference/rest/v1beta4/apps.modules.versions#Version.FIELDS.serving_status"><code>serving_status</code></a>: For Version resources that use basic scaling, manual scaling, or run in the App Engine flexible environment. * <a href="https://cloud.google.com/appengine/docs/admin-api/reference/rest/v1beta4/apps.modules.versions#Version.FIELDS.instance_class"><code>instance_class</code></a>: For Version resources that run in the App Engine standard environment. * <a href="https://cloud.google.com/appengine/docs/admin-api/reference/rest/v1beta4/apps.modules.versions#Version.FIELDS.automatic_scaling"><code>automatic_scaling.min_idle_instances</code></a>: For Version resources that use automatic scaling and run in the App Engine standard environment. * <a href="https://cloud.google.com/appengine/docs/admin-api/reference/rest/v1beta4/apps.modules.versions#Version.FIELDS.automatic_scaling"><code>automatic_scaling.max_idle_instances</code></a>: For Version resources that use automatic scaling and run in the App Engine standard environment.</p>
+
+<h1 id='arguments-13' class='section-header'><a href='#arguments-13'>Arguments</a></h1>
 <ul>
 <li><code>request</code> - No description provided.</li>
-<li><code>appsId</code> - Part of <code>name</code>. Name of the resource to update. For example: &quot;apps/myapp/modules/default/versions/1&quot;.</li>
+<li><code>appsId</code> - Part of <code>name</code>. Name of the resource to update. Example: <code>apps/myapp/modules/default/versions/1</code>.</li>
 <li><code>modulesId</code> - Part of <code>name</code>. See documentation of <code>appsId</code>.</li>
 <li><code>versionsId</code> - Part of <code>name</code>. See documentation of <code>appsId</code>.</li>
 </ul>
-</div><h4 id='method.operations_list' class='method'><code>fn <a href='#method.operations_list' class='fnname'>operations_list</a>(&amp;self, apps_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_appengine1_beta4/struct.AppOperationListCall.html' title='google_appengine1_beta4::AppOperationListCall'>AppOperationListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.operations_list' class='method'><code>fn <a href='#method.operations_list' class='fnname'>operations_list</a>(&amp;self, apps_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_appengine1_beta4/struct.AppOperationListCall.html' title='google_appengine1_beta4::AppOperationListCall'>AppOperationListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Lists operations that match the specified filter in the request. If the server doesn&#39;t support this method, it returns <code>UNIMPLEMENTED</code>. NOTE: the <code>name</code> binding below allows API services to override the binding to use different resource name schemes, such as <code>users/*/operations</code>.</p>
 
-<h1 id='arguments-7' class='section-header'><a href='#arguments-7'>Arguments</a></h1>
+<h1 id='arguments-14' class='section-header'><a href='#arguments-14'>Arguments</a></h1>
 <ul>
 <li><code>appsId</code> - Part of <code>name</code>. The name of the operation collection.</li>
 </ul>
-</div><h4 id='method.modules_versions_delete' class='method'><code>fn <a href='#method.modules_versions_delete' class='fnname'>modules_versions_delete</a>(&amp;self, apps_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, modules_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, versions_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_appengine1_beta4/struct.AppModuleVersionDeleteCall.html' title='google_appengine1_beta4::AppModuleVersionDeleteCall'>AppModuleVersionDeleteCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.modules_versions_delete' class='method'><code>fn <a href='#method.modules_versions_delete' class='fnname'>modules_versions_delete</a>(&amp;self, apps_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, modules_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, versions_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_appengine1_beta4/struct.AppModuleVersionDeleteCall.html' title='google_appengine1_beta4::AppModuleVersionDeleteCall'>AppModuleVersionDeleteCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Deletes an existing version.</p>
 
-<h1 id='arguments-8' class='section-header'><a href='#arguments-8'>Arguments</a></h1>
+<h1 id='arguments-15' class='section-header'><a href='#arguments-15'>Arguments</a></h1>
 <ul>
-<li><code>appsId</code> - Part of <code>name</code>. Name of the resource requested. For example: &quot;apps/myapp/modules/default/versions/v1&quot;.</li>
+<li><code>appsId</code> - Part of <code>name</code>. Name of the resource requested. Example: <code>apps/myapp/modules/default/versions/v1</code>.</li>
 <li><code>modulesId</code> - Part of <code>name</code>. See documentation of <code>appsId</code>.</li>
 <li><code>versionsId</code> - Part of <code>name</code>. See documentation of <code>appsId</code>.</li>
 </ul>
-</div><h4 id='method.modules_versions_create' class='method'><code>fn <a href='#method.modules_versions_create' class='fnname'>modules_versions_create</a>(&amp;self, request: <a class='struct' href='../google_appengine1_beta4/struct.Version.html' title='google_appengine1_beta4::Version'>Version</a>, apps_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, modules_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_appengine1_beta4/struct.AppModuleVersionCreateCall.html' title='google_appengine1_beta4::AppModuleVersionCreateCall'>AppModuleVersionCreateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.modules_versions_create' class='method'><code>fn <a href='#method.modules_versions_create' class='fnname'>modules_versions_create</a>(&amp;self, request: <a class='struct' href='../google_appengine1_beta4/struct.Version.html' title='google_appengine1_beta4::Version'>Version</a>, apps_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, modules_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_appengine1_beta4/struct.AppModuleVersionCreateCall.html' title='google_appengine1_beta4::AppModuleVersionCreateCall'>AppModuleVersionCreateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>Deploys new code and resource files to a version.</p>
+<p>Deploys code and resource files to a new version.</p>
 
-<h1 id='arguments-9' class='section-header'><a href='#arguments-9'>Arguments</a></h1>
+<h1 id='arguments-16' class='section-header'><a href='#arguments-16'>Arguments</a></h1>
 <ul>
 <li><code>request</code> - No description provided.</li>
-<li><code>appsId</code> - Part of <code>name</code>. Name of the resource to update. For example: &quot;apps/myapp/modules/default&quot;.</li>
+<li><code>appsId</code> - Part of <code>name</code>. Name of the resource to update. Example: <code>apps/myapp/modules/default</code>.</li>
 <li><code>modulesId</code> - Part of <code>name</code>. See documentation of <code>appsId</code>.</li>
 </ul>
-</div><h4 id='method.modules_versions_get' class='method'><code>fn <a href='#method.modules_versions_get' class='fnname'>modules_versions_get</a>(&amp;self, apps_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, modules_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, versions_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_appengine1_beta4/struct.AppModuleVersionGetCall.html' title='google_appengine1_beta4::AppModuleVersionGetCall'>AppModuleVersionGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.modules_versions_get' class='method'><code>fn <a href='#method.modules_versions_get' class='fnname'>modules_versions_get</a>(&amp;self, apps_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, modules_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, versions_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_appengine1_beta4/struct.AppModuleVersionGetCall.html' title='google_appengine1_beta4::AppModuleVersionGetCall'>AppModuleVersionGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>Gets application deployment information.</p>
+<p>Gets the specified Version resource. By default, only a <code>BASIC_VIEW</code> will be returned. Specify the <code>FULL_VIEW</code> parameter to get the full resource.</p>
 
-<h1 id='arguments-10' class='section-header'><a href='#arguments-10'>Arguments</a></h1>
+<h1 id='arguments-17' class='section-header'><a href='#arguments-17'>Arguments</a></h1>
 <ul>
-<li><code>appsId</code> - Part of <code>name</code>. Name of the resource requested. For example: &quot;apps/myapp/modules/default/versions/v1&quot;.</li>
+<li><code>appsId</code> - Part of <code>name</code>. Name of the resource requested. Example: <code>apps/myapp/modules/default/versions/v1</code>.</li>
 <li><code>modulesId</code> - Part of <code>name</code>. See documentation of <code>appsId</code>.</li>
 <li><code>versionsId</code> - Part of <code>name</code>. See documentation of <code>appsId</code>.</li>
 </ul>
-</div><h4 id='method.modules_versions_list' class='method'><code>fn <a href='#method.modules_versions_list' class='fnname'>modules_versions_list</a>(&amp;self, apps_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, modules_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_appengine1_beta4/struct.AppModuleVersionListCall.html' title='google_appengine1_beta4::AppModuleVersionListCall'>AppModuleVersionListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.modules_versions_list' class='method'><code>fn <a href='#method.modules_versions_list' class='fnname'>modules_versions_list</a>(&amp;self, apps_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, modules_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_appengine1_beta4/struct.AppModuleVersionListCall.html' title='google_appengine1_beta4::AppModuleVersionListCall'>AppModuleVersionListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Lists the versions of a module.</p>
 
-<h1 id='arguments-11' class='section-header'><a href='#arguments-11'>Arguments</a></h1>
+<h1 id='arguments-18' class='section-header'><a href='#arguments-18'>Arguments</a></h1>
 <ul>
-<li><code>appsId</code> - Part of <code>name</code>. Name of the resource requested. For example: &quot;apps/myapp/modules/default&quot;.</li>
+<li><code>appsId</code> - Part of <code>name</code>. Name of the resource requested. Example: <code>apps/myapp/modules/default</code>.</li>
 <li><code>modulesId</code> - Part of <code>name</code>. See documentation of <code>appsId</code>.</li>
 </ul>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_appengine1_beta4/trait.MethodsBuilder.html' title='google_appengine1_beta4::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_appengine1_beta4/struct.AppMethods.html' title='google_appengine1_beta4::AppMethods'>AppMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-6781' class='srclink' href='../src/google_appengine1_beta4/home/byron/dev/rust/google-apis-rs/target/debug/build/google-appengine1_beta4-e771ff78f0c70327/out/lib.rs.html#14132' title='goto source code'>[src]</a></span></h3>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='trait' href='../google_appengine1_beta4/trait.MethodsBuilder.html' title='google_appengine1_beta4::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_appengine1_beta4/struct.AppMethods.html' title='google_appengine1_beta4::AppMethods'>AppMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-7061' class='srclink' href='../src/google_appengine1_beta4/home/byron/dev/rust/google-apis-rs/target/debug/build/google-appengine1_beta4-d825b184350f194b/out/lib.rs.html#12412' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 

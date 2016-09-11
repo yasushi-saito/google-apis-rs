@@ -47,8 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-3654' class='srclink' href='../src/google_proximitybeacon1_beta1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-proximitybeacon1_beta1-b55b80e22cd52a39/out/lib.rs.html#7531-7533' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct NamespaceMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
+               </span><a id='src-3725' class='srclink' href='../src/google_proximitybeacon1_beta1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-proximitybeacon1_beta1-c996a83e0bf8b1a4/out/lib.rs.html#6804-6806' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct NamespaceMethods&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>namespace</em> resources.
 It is not used directly, but through the <code>Proximitybeacon</code> hub.</p>
@@ -71,15 +71,25 @@ It is not used directly, but through the <code>Proximitybeacon</code> hub.</p>
                               <span class='op'>&lt;</span><span class='ident'>MemoryStorage</span> <span class='kw'>as</span> <span class='ident'>Default</span><span class='op'>&gt;</span>::<span class='ident'>default</span>(), <span class='prelude-val'>None</span>);
 <span class='kw'>let</span> <span class='kw-2'>mut</span> <span class='ident'>hub</span> <span class='op'>=</span> <span class='ident'>Proximitybeacon</span>::<span class='ident'>new</span>(<span class='ident'>hyper</span>::<span class='ident'>Client</span>::<span class='ident'>new</span>(), <span class='ident'>auth</span>);
 <span class='comment'>// Usually you wouldn&#39;t bind this to a variable, but keep calling *CallBuilders*</span>
-<span class='comment'>// like `list(...)`</span>
+<span class='comment'>// like `list(...)` and `update(...)`</span>
 <span class='comment'>// to build up your call.</span>
 <span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>namespaces</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_proximitybeacon1_beta1/struct.NamespaceMethods.html' title='google_proximitybeacon1_beta1::NamespaceMethods'>NamespaceMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-3663' class='srclink' href='../src/google_proximitybeacon1_beta1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-proximitybeacon1_beta1-b55b80e22cd52a39/out/lib.rs.html#7535-7544' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self) -&gt; <a class='struct' href='../google_proximitybeacon1_beta1/struct.NamespaceListCall.html' title='google_proximitybeacon1_beta1::NamespaceListCall'>NamespaceListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='struct' href='../google_proximitybeacon1_beta1/struct.NamespaceMethods.html' title='google_proximitybeacon1_beta1::NamespaceMethods'>NamespaceMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-3734' class='srclink' href='../src/google_proximitybeacon1_beta1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-proximitybeacon1_beta1-c996a83e0bf8b1a4/out/lib.rs.html#6808-6837' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self) -&gt; <a class='struct' href='../google_proximitybeacon1_beta1/struct.NamespaceListCall.html' title='google_proximitybeacon1_beta1::NamespaceListCall'>NamespaceListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>Lists all attachment namespaces owned by your Google Developers Console project. Attachment data associated with a beacon must include a namespaced type, and the namespace must be owned by your project.</p>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_proximitybeacon1_beta1/trait.MethodsBuilder.html' title='google_proximitybeacon1_beta1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_proximitybeacon1_beta1/struct.NamespaceMethods.html' title='google_proximitybeacon1_beta1::NamespaceMethods'>NamespaceMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-3659' class='srclink' href='../src/google_proximitybeacon1_beta1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-proximitybeacon1_beta1-b55b80e22cd52a39/out/lib.rs.html#7534' title='goto source code'>[src]</a></span></h3>
+<p>Lists all attachment namespaces owned by your Google Developers Console project. Attachment data associated with a beacon must include a namespaced type, and the namespace must be owned by your project. Authenticate using an <a href="https://developers.google.com/identity/protocols/OAuth2">OAuth access token</a> from a signed-in user with <strong>viewer</strong>, <strong>Is owner</strong> or <strong>Can edit</strong> permissions in the Google Developers Console project.</p>
+</div><h4 id='method.update' class='method'><code>fn <a href='#method.update' class='fnname'>update</a>(&amp;self, request: <a class='struct' href='../google_proximitybeacon1_beta1/struct.Namespace.html' title='google_proximitybeacon1_beta1::Namespace'>Namespace</a>, namespace_name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_proximitybeacon1_beta1/struct.NamespaceUpdateCall.html' title='google_proximitybeacon1_beta1::NamespaceUpdateCall'>NamespaceUpdateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Updates the information about the specified namespace. Only the namespace visibility can be updated.</p>
+
+<h1 id='arguments' class='section-header'><a href='#arguments'>Arguments</a></h1>
+<ul>
+<li><code>request</code> - No description provided.</li>
+<li><code>namespaceName</code> - Resource name of this namespace. Namespaces names have the format: namespaces/namespace.</li>
+</ul>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='trait' href='../google_proximitybeacon1_beta1/trait.MethodsBuilder.html' title='google_proximitybeacon1_beta1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_proximitybeacon1_beta1/struct.NamespaceMethods.html' title='google_proximitybeacon1_beta1::NamespaceMethods'>NamespaceMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-3730' class='srclink' href='../src/google_proximitybeacon1_beta1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-proximitybeacon1_beta1-c996a83e0bf8b1a4/out/lib.rs.html#6807' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 

@@ -47,8 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-0' class='srclink' href='../src/google_cloudresourcemanager1_beta1/src/lib.rs.html#5-196' title='goto source code'>[src]</a></span></h1>
-<div class='docblock'><p>This documentation was generated from <em>Cloud Resource Manager</em> crate version <em>0.1.14+20160316</em>, where <em>20160316</em> is the exact revision of the <em>cloudresourcemanager:v1beta1</em> schema built by the <a href="http://www.makotemplates.org/">mako</a> code generator <em>v0.1.14</em>.</p>
+               </span><a id='src-0' class='srclink' href='../src/google_cloudresourcemanager1_beta1/src/lib.rs.html#5-197' title='goto source code'>[src]</a></span></h1>
+<div class='docblock'><p>This documentation was generated from <em>Cloud Resource Manager</em> crate version <em>0.1.15+20160617</em>, where <em>20160617</em> is the exact revision of the <em>cloudresourcemanager:v1beta1</em> schema built by the <a href="http://www.makotemplates.org/">mako</a> code generator <em>v0.1.15</em>.</p>
 
 <p>Everything else about the <em>Cloud Resource Manager</em> <em>v1_beta1</em> API can be found at the
 <a href="https://cloud.google.com/resource-manager">official documentation site</a>.
@@ -66,7 +66,7 @@ The original source code is <a href="https://github.com/Byron/google-apis-rs/tre
 <li><a href="struct.Project.html">projects</a>
 
 <ul>
-<li><a href="struct.ProjectCreateCall.html"><em>create</em></a>, <a href="struct.ProjectDeleteCall.html"><em>delete</em></a>, <a href="struct.ProjectGetCall.html"><em>get</em></a>, <a href="struct.ProjectGetIamPolicyCall.html"><em>get iam policy</em></a>, <a href="struct.ProjectListCall.html"><em>list</em></a>, <a href="struct.ProjectSetIamPolicyCall.html"><em>set iam policy</em></a>, <a href="struct.ProjectTestIamPermissionCall.html"><em>test iam permissions</em></a>, <a href="struct.ProjectUndeleteCall.html"><em>undelete</em></a> and <a href="struct.ProjectUpdateCall.html"><em>update</em></a></li>
+<li><a href="struct.ProjectCreateCall.html"><em>create</em></a>, <a href="struct.ProjectDeleteCall.html"><em>delete</em></a>, <a href="struct.ProjectGetCall.html"><em>get</em></a>, <a href="struct.ProjectGetAncestryCall.html"><em>get ancestry</em></a>, <a href="struct.ProjectGetIamPolicyCall.html"><em>get iam policy</em></a>, <a href="struct.ProjectListCall.html"><em>list</em></a>, <a href="struct.ProjectSetIamPolicyCall.html"><em>set iam policy</em></a>, <a href="struct.ProjectTestIamPermissionCall.html"><em>test iam permissions</em></a>, <a href="struct.ProjectUndeleteCall.html"><em>undelete</em></a> and <a href="struct.ProjectUpdateCall.html"><em>update</em></a></li>
 </ul></li>
 </ul>
 
@@ -116,6 +116,7 @@ allow access to individual <a href="trait.CallBuilder.html"><em>Call Builders</e
 <span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>projects</span>().<span class='ident'>undelete</span>(...).<span class='ident'>doit</span>()
 <span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>projects</span>().<span class='ident'>set_iam_policy</span>(...).<span class='ident'>doit</span>()
 <span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>projects</span>().<span class='ident'>get</span>(...).<span class='ident'>doit</span>()
+<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>projects</span>().<span class='ident'>get_ancestry</span>(...).<span class='ident'>doit</span>()
 <span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>projects</span>().<span class='ident'>update</span>(...).<span class='ident'>doit</span>()
 <span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>projects</span>().<span class='ident'>get_iam_policy</span>(...).<span class='ident'>doit</span>()
 <span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>projects</span>().<span class='ident'>delete</span>(...).<span class='ident'>doit</span>()
@@ -161,9 +162,9 @@ google-cloudresourcemanager1_beta1 = &quot;*&quot;
 <span class='comment'>// execute the final call using `doit()`.</span>
 <span class='comment'>// Values shown here are possibly random and not representative !</span>
 <span class='kw'>let</span> <span class='ident'>result</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>projects</span>().<span class='ident'>list</span>()
-             .<span class='ident'>page_token</span>(<span class='string'>&quot;et&quot;</span>)
-             .<span class='ident'>page_size</span>(<span class='op'>-</span><span class='number'>41</span>)
-             .<span class='ident'>filter</span>(<span class='string'>&quot;ipsum&quot;</span>)
+             .<span class='ident'>page_token</span>(<span class='string'>&quot;ipsum&quot;</span>)
+             .<span class='ident'>page_size</span>(<span class='op'>-</span><span class='number'>5</span>)
+             .<span class='ident'>filter</span>(<span class='string'>&quot;et&quot;</span>)
              .<span class='ident'>doit</span>();
  
 <span class='kw'>match</span> <span class='ident'>result</span> {
@@ -231,6 +232,13 @@ These will always take a single argument, for which the following statements are
 </div><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
 <table>
                        <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Ancestor.html'
+                                  title='google_cloudresourcemanager1_beta1::Ancestor'>Ancestor</a></td>
+                           <td class='docblock short'>
+                                <p>Identifying information for a single ancestor of a project.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
                            <td><a class='struct' href='struct.Binding.html'
                                   title='google_cloudresourcemanager1_beta1::Binding'>Binding</a></td>
                            <td class='docblock short'>
@@ -265,6 +273,20 @@ set.</p>
                            <td class='docblock short'>
                                 <p>A utility to represent detailed errors we might see in case there are BadRequests.
 The latter happen if the sent parameters or request structures are unsound</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetAncestryRequest.html'
+                                  title='google_cloudresourcemanager1_beta1::GetAncestryRequest'>GetAncestryRequest</a></td>
+                           <td class='docblock short'>
+                                <p>The request sent to the GetAncestry method.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.GetAncestryResponse.html'
+                                  title='google_cloudresourcemanager1_beta1::GetAncestryResponse'>GetAncestryResponse</a></td>
+                           <td class='docblock short'>
+                                <p>Response from the GetAncestry method.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
@@ -316,14 +338,14 @@ to google APIs, and might not be a fully-featured implementation.</p>
                            <td><a class='struct' href='struct.OrganizationGetCall.html'
                                   title='google_cloudresourcemanager1_beta1::OrganizationGetCall'>OrganizationGetCall</a></td>
                            <td class='docblock short'>
-                                <p>Fetches an Organization resource identified by the specified <code>organization_id</code>.</p>
+                                <p>Fetches an Organization resource identified by the specified resource name.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
                            <td><a class='struct' href='struct.OrganizationGetIamPolicyCall.html'
                                   title='google_cloudresourcemanager1_beta1::OrganizationGetIamPolicyCall'>OrganizationGetIamPolicyCall</a></td>
                            <td class='docblock short'>
-                                <p>Gets the access control policy for an Organization resource. May be empty if no such policy or resource exists.</p>
+                                <p>Gets the access control policy for an Organization resource. May be empty if no such policy or resource exists. The <code>resource</code> field should be the organization&#39;s resource name, e.g. &quot;organizations/123&quot;. For backward compatibility, the resource provided may also be the organization_id. This will not be supported in v1.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
@@ -352,21 +374,21 @@ It is not used directly, but through the <code>CloudResourceManager</code> hub.<
                            <td><a class='struct' href='struct.OrganizationSetIamPolicyCall.html'
                                   title='google_cloudresourcemanager1_beta1::OrganizationSetIamPolicyCall'>OrganizationSetIamPolicyCall</a></td>
                            <td class='docblock short'>
-                                <p>Sets the access control policy on an Organization resource. Replaces any existing policy.</p>
+                                <p>Sets the access control policy on an Organization resource. Replaces any existing policy. The <code>resource</code> field should be the organization&#39;s resource name, e.g. &quot;organizations/123&quot;. For backward compatibility, the resource provided may also be the organization_id. This will not be supported in v1.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
                            <td><a class='struct' href='struct.OrganizationTestIamPermissionCall.html'
                                   title='google_cloudresourcemanager1_beta1::OrganizationTestIamPermissionCall'>OrganizationTestIamPermissionCall</a></td>
                            <td class='docblock short'>
-                                <p>Returns permissions that a caller has on the specified Organization.</p>
+                                <p>Returns permissions that a caller has on the specified Organization. The <code>resource</code> field should be the organization&#39;s resource name, e.g. &quot;organizations/123&quot;. For backward compatibility, the resource provided may also be the organization_id. This will not be supported in v1.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
                            <td><a class='struct' href='struct.OrganizationUpdateCall.html'
                                   title='google_cloudresourcemanager1_beta1::OrganizationUpdateCall'>OrganizationUpdateCall</a></td>
                            <td class='docblock short'>
-                                <p>Updates an Organization resource identified by the specified <code>organization_id</code>.</p>
+                                <p>Updates an Organization resource identified by the specified resource name.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
@@ -394,7 +416,14 @@ It is not used directly, but through the <code>CloudResourceManager</code> hub.<
                            <td><a class='struct' href='struct.ProjectDeleteCall.html'
                                   title='google_cloudresourcemanager1_beta1::ProjectDeleteCall'>ProjectDeleteCall</a></td>
                            <td class='docblock short'>
-                                <p>Marks the Project identified by the specified <code>project_id</code> (for example, <code>my-project-123</code>) for deletion. This method will only affect the Project if the following criteria are met: + The Project does not have a billing account associated with it. + The Project has a lifecycle state of ACTIVE. This method changes the Project&#39;s lifecycle state from ACTIVE to DELETE_REQUESTED. The deletion starts at an unspecified time, at which point the lifecycle state changes to DELETE_IN_PROGRESS. Until the deletion completes, you can check the lifecycle state checked by retrieving the Project with GetProject, and the Project remains visible to ListProjects. However, you cannot update the project. After the deletion completes, the Project is not retrievable by the GetProject and ListProjects methods. The caller must have modify permissions for this Project.</p>
+                                <p>Marks the Project identified by the specified <code>project_id</code> (for example, <code>my-project-123</code>) for deletion. This method will only affect the Project if the following criteria are met: + The Project does not have a billing account associated with it. + The Project has a lifecycle state of ACTIVE. This method changes the Project&#39;s lifecycle state from ACTIVE to DELETE_REQUESTED. The deletion starts at an unspecified time, at which point the project is no longer accessible. Until the deletion completes, you can check the lifecycle state checked by retrieving the Project with GetProject, and the Project remains visible to ListProjects. However, you cannot update the project. After the deletion completes, the Project is not retrievable by the GetProject and ListProjects methods. The caller must have modify permissions for this Project.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ProjectGetAncestryCall.html'
+                                  title='google_cloudresourcemanager1_beta1::ProjectGetAncestryCall'>ProjectGetAncestryCall</a></td>
+                           <td class='docblock short'>
+                                <p>Gets a list of ancestors in the resource hierarchy for the Project identified by the specified <code>project_id</code> (for example, <code>my-project-123</code>). The caller must have read permissions for this Project.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
@@ -430,7 +459,7 @@ It is not used directly, but through the <code>CloudResourceManager</code> hub.<
                            <td><a class='struct' href='struct.ProjectSetIamPolicyCall.html'
                                   title='google_cloudresourcemanager1_beta1::ProjectSetIamPolicyCall'>ProjectSetIamPolicyCall</a></td>
                            <td class='docblock short'>
-                                <p>Sets the IAM access control policy for the specified Project. Replaces any existing policy. The following constraints apply when using <code>setIamPolicy()</code>: + Project currently supports only <code>user:{emailid}</code> and <code>serviceAccount:{emailid}</code> members in a <code>Binding</code> of a <code>Policy</code>. + To be added as an <code>owner</code>, a user must be invited via Cloud Platform console and must accept the invitation. + Members cannot be added to more than one role in the same policy. + There must be at least one owner who has accepted the Terms of Service (ToS) agreement in the policy. Calling <code>setIamPolicy()</code> to to remove the last ToS-accepted owner from the policy will fail. + Calling this method requires enabling the App Engine Admin API. Note: Removing service accounts from policies or changing their roles can render services completely inoperable. It is important to understand how the service account is being used before removing or updating its roles.</p>
+                                <p>Sets the IAM access control policy for the specified Project. Replaces any existing policy. The following constraints apply when using <code>setIamPolicy()</code>: + Project does not support <code>allUsers</code> and <code>allAuthenticatedUsers</code> as <code>members</code> in a <code>Binding</code> of a <code>Policy</code>. + The owner role can be granted only to <code>user</code> and <code>serviceAccount</code>. + Service accounts can be made owners of a project directly without any restrictions. However, to be added as an owner, a user must be invited via Cloud Platform console and must accept the invitation. + A user cannot be granted the owner role using <code>setIamPolicy()</code>. The user must be granted the owner role using the Cloud Platform Console and must explicitly accept the invitation. + Invitations to grant the owner role cannot be sent using <code>setIamPolicy()</code>; they must be sent only using the Cloud Platform Console. + Membership changes that leave the project without any owners that have accepted the Terms of Service (ToS) will be rejected. + Members cannot be added to more than one role in the same policy. + There must be at least one owner who has accepted the Terms of Service (ToS) agreement in the policy. Calling <code>setIamPolicy()</code> to to remove the last ToS-accepted owner from the policy will fail. This restriction also applies to legacy projects that no longer have owners who have accepted the ToS. Edits to IAM policies will be rejected until the lack of a ToS-accepting owner is rectified. + Calling this method requires enabling the App Engine Admin API. Note: Removing service accounts from policies or changing their roles can render services completely inoperable. It is important to understand how the service account is being used before removing or updating its roles.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
@@ -444,7 +473,7 @@ It is not used directly, but through the <code>CloudResourceManager</code> hub.<
                            <td><a class='struct' href='struct.ProjectUndeleteCall.html'
                                   title='google_cloudresourcemanager1_beta1::ProjectUndeleteCall'>ProjectUndeleteCall</a></td>
                            <td class='docblock short'>
-                                <p>Restores the Project identified by the specified <code>project_id</code> (for example, <code>my-project-123</code>). You can only use this method for a Project that has a lifecycle state of DELETE_REQUESTED. After deletion starts, as indicated by a lifecycle state of DELETE_IN_PROGRESS, the Project cannot be restored. The caller must have modify permissions for this Project.</p>
+                                <p>Restores the Project identified by the specified <code>project_id</code> (for example, <code>my-project-123</code>). You can only use this method for a Project that has a lifecycle state of DELETE_REQUESTED. After deletion starts, the Project cannot be restored. The caller must have modify permissions for this Project.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>

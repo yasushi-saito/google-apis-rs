@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>List - YouTube v0.3.6+20160222</title>
+  <title>List - YouTube v0.3.6+20160805</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -32,7 +32,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> YouTube v0.3.6+20160222</a>
+        <a href=".." class="icon icon-home"> YouTube v0.3.6+20160805</a>
         
       </div>
 
@@ -588,7 +588,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">YouTube v0.3.6+20160222</a>
+        <a href="..">YouTube v0.3.6+20160805</a>
       </nav>
 
       
@@ -653,15 +653,21 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p id=string</strong></p>
-<ul>
-<li>The id parameter specifies a comma-separated list of one or more unique playlist item IDs.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p video-id=string</strong></p>
 <ul>
 <li>The videoId parameter specifies that the request should return only the playlist items that contain the specified video.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p page-token=string</strong></p>
+<ul>
+<li>The pageToken parameter identifies a specific page in the result set that should be returned. In an API response, the nextPageToken and prevPageToken properties identify other pages that could be retrieved.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p id=string</strong></p>
+<ul>
+<li>The id parameter specifies a comma-separated list of one or more unique playlist item IDs.</li>
 </ul>
 </li>
 <li>
@@ -677,12 +683,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <p><strong>-p playlist-id=string</strong></p>
 <ul>
 <li>The playlistId parameter specifies the unique ID of the playlist for which you want to retrieve playlist items. Note that even though this is an optional parameter, every request to retrieve playlist items must specify a value for either the id parameter or the playlistId parameter.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p page-token=string</strong></p>
-<ul>
-<li>The pageToken parameter identifies a specific page in the result set that should be returned. In an API response, the nextPageToken and prevPageToken properties identify other pages that could be retrieved.</li>
 </ul>
 </li>
 <li>
@@ -782,7 +782,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 
 <!--
 MkDocs version  : 0.12.2
-Docs Build Date : 2016-07-23 16:05:33.464932
+Docs Build Date : 2016-09-11 17:55:04.656865
 -->
 </body>
 </html>

@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>List - Cloud Monitoring v0.3.6+20160403</title>
+  <title>List - Cloud Monitoring v0.3.6+20160718</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -32,7 +32,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Cloud Monitoring v0.3.6+20160403</a>
+        <a href=".." class="icon icon-home"> Cloud Monitoring v0.3.6+20160718</a>
         
       </div>
 
@@ -130,7 +130,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Cloud Monitoring v0.3.6+20160403</a>
+        <a href="..">Cloud Monitoring v0.3.6+20160718</a>
       </nav>
 
       
@@ -214,6 +214,12 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
+<p><strong>-p count=integer</strong></p>
+<ul>
+<li>Maximum number of metric descriptors per page. Used for pagination. If not specified, count = 100.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p page-token=string</strong></p>
 <ul>
 <li>The pagination token, which is used to page through large result sets. Set this value to the value of the nextPageToken to retrieve the next page of results.</li>
@@ -223,12 +229,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <p><strong>-p query=string</strong></p>
 <ul>
 <li>The query used to search against existing metrics. Separate keywords with a space; the service joins all keywords with AND, meaning that all keywords must match for a metric to be returned. If this field is omitted, all metrics are returned. If an empty string is passed with this field, no metrics are returned.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p count=integer</strong></p>
-<ul>
-<li>Maximum number of metric descriptors per page. Used for pagination. If not specified, count = 100.</li>
 </ul>
 </li>
 </ul>
@@ -322,7 +322,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 
 <!--
 MkDocs version  : 0.12.2
-Docs Build Date : 2016-07-23 16:05:22.308093
+Docs Build Date : 2016-09-11 17:54:52.814773
 -->
 </body>
 </html>

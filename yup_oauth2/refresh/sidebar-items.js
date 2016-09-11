@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["RefreshResult","All possible outcomes of the refresh flow"]],"struct":[["RefreshFlow","Implements the Outh2 Refresh Token Flow."]]});

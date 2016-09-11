@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Regions Clusters Patch - dataproc v0.3.6+20160219</title>
+  <title>Regions Clusters Patch - dataproc v0.3.6+20160503</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -32,7 +32,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> dataproc v0.3.6+20160219</a>
+        <a href=".." class="icon icon-home"> dataproc v0.3.6+20160503</a>
         
       </div>
 
@@ -44,22 +44,6 @@
                 <a class="" href="..">Home</a>
                 
             </li>
-        
-
-    
-        
-            <span>Media</span>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../media_download/">Download</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../media_upload/">Upload</a>
-                    
-                </li>
-            
         
 
     
@@ -179,7 +163,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">dataproc v0.3.6+20160219</a>
+        <a href="..">dataproc v0.3.6+20160503</a>
       </nav>
 
       
@@ -291,66 +275,113 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    cluster-name=dolore</code><ul>
+<li><code>-r .    cluster-name=eirmod</code><ul>
 <li>[Required] The cluster name. Cluster names within a project must be unique. Names of deleted clusters can be reused.</li>
 </ul>
 </li>
-<li><code>cluster-uuid=invidunt</code><ul>
+<li><code>cluster-uuid=dolore</code><ul>
 <li>[Output-only] A cluster UUID (Unique Universal Identifier). Cloud Dataproc generates this value when it creates the cluster.</li>
 </ul>
 </li>
-<li><code>config    config-bucket=aliquyam</code><ul>
+<li><code>config    config-bucket=invidunt</code><ul>
 <li>[Optional] A Google Cloud Storage staging bucket used for sharing generated SSH keys and config. If you do not specify a staging bucket, Cloud Dataproc will determine an appropriate Cloud Storage location (US, ASIA, or EU) for your cluster&#39;s staging bucket according to the Google Compute Engine zone where your cluster is deployed, and then it will create and manage this project-level, per-location bucket for you.</li>
 </ul>
 </li>
-<li><code>gce-cluster-config    metadata=key=accusam</code><ul>
+<li><code>gce-cluster-config    metadata=key=aliquyam</code><ul>
 <li>The Google Compute Engine metadata entries to add to all instances.</li>
 <li>the value will be associated with the given <code>key</code></li>
 </ul>
 </li>
-<li><code>network-uri=lorem</code><ul>
+<li><code>network-uri=accusam</code><ul>
 <li>The Google Compute Engine network to be used for machine communications. Cannot be specified with subnetwork_uri. If neither network_uri nor subnetwork_uri is specified, the &#34;default&#34; network of the project is used, if it exists. Cannot be a &#34;Custom Subnet Network&#34; (see https://cloud.google.com/compute/docs/subnetworks for more information). Example: <code>https://www.googleapis.com/compute/v1/projects/[project_id]/regions/global/default</code>.</li>
 </ul>
 </li>
-<li><code>service-account-scopes=sea</code><ul>
+<li><code>service-account-scopes=lorem</code><ul>
 <li>The URIs of service account scopes to be included in Google Compute Engine instances. The following base set of scopes is always included: * https://www.googleapis.com/auth/cloud.useraccounts.readonly * https://www.googleapis.com/auth/devstorage.read_write * https://www.googleapis.com/auth/logging.write If no scopes are specfied, the following defaults are also provided: * https://www.googleapis.com/auth/bigquery * https://www.googleapis.com/auth/bigtable.admin.table * https://www.googleapis.com/auth/bigtable.data * https://www.googleapis.com/auth/devstorage.full_control</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>subnetwork-uri=et</code><ul>
+<li><code>subnetwork-uri=sea</code><ul>
 <li>The Google Compute Engine subnetwork to be used for machine communications. Cannot be specified with network_uri. Example: <code>https://www.googleapis.com/compute/v1/projects/[project_id]/regions/us-east1/sub0</code>.</li>
 </ul>
 </li>
-<li><code>tags=duo</code><ul>
+<li><code>tags=et</code><ul>
 <li>The Google Compute Engine tags to add to all instances.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
 <li>
-<p><code>zone-uri=et</code></p>
+<p><code>zone-uri=duo</code></p>
 <ul>
 <li>[Required] The zone where the Google Compute Engine cluster will be located. Example: <code>https://www.googleapis.com/compute/v1/projects/[project_id]/zones/[zone]</code>.</li>
 </ul>
 </li>
 <li>
-<p><code>..master-config.disk-config    boot-disk-size-gb=61</code></p>
+<p><code>..master-config.disk-config    boot-disk-size-gb=80</code></p>
 <ul>
 <li>[Optional] Size in GB of the boot disk (default is 500GB).</li>
 </ul>
 </li>
 <li>
-<p><code>num-local-ssds=43</code></p>
+<p><code>num-local-ssds=61</code></p>
 <ul>
 <li>[Optional] Number of attached SSDs, from 0 to 4 (default is 0). If SSDs are not attached, the boot disk is used to store runtime logs and HDFS data. If one or more SSDs are attached, this runtime bulk data is spread across them, and the boot disk contains only basic config and installed binaries.</li>
 </ul>
 </li>
 <li>
-<p><code>..    image-uri=et</code></p>
+<p><code>..    image-uri=sanctus</code></p>
 <ul>
 <li>[Output-only] The Google Compute Engine image resource used for cluster instances. Inferred from <code>SoftwareConfig.image_version</code>.</li>
 </ul>
 </li>
-<li><code>instance-names=amet</code><ul>
+<li><code>instance-names=et</code><ul>
+<li>The list of instance names. Cloud Dataproc derives the names from <code>cluster_name</code>, <code>num_instances</code>, and the instance group if not set by user (recommended practice is to let Cloud Dataproc derive the name).</li>
+<li>Each invocation of this argument appends the given value to the array.</li>
+</ul>
+</li>
+<li><code>is-preemptible=true</code><ul>
+<li>Specifies that this instance group contains Preemptible Instances.</li>
+</ul>
+</li>
+<li><code>machine-type-uri=et</code><ul>
+<li>The Google Compute Engine machine type used for cluster instances. Example: <code>https://www.googleapis.com/compute/v1/projects/[project_id]/zones/us-east1-a/machineTypes/n1-standard-2</code>.</li>
+</ul>
+</li>
+<li><code>managed-group-config    instance-group-manager-name=consetetur</code><ul>
+<li>[Output-only] The name of the Instance Group Manager for this group.</li>
+</ul>
+</li>
+<li>
+<p><code>instance-template-name=ut</code></p>
+<ul>
+<li>[Output-only] The name of the Instance Template used for the Managed Instance Group.</li>
+</ul>
+</li>
+<li>
+<p><code>..    num-instances=85</code></p>
+<ul>
+<li>The number of VM instances in the instance group. For master instance groups, must be set to 1.</li>
+</ul>
+</li>
+<li>
+<p><code>..secondary-worker-config.disk-config    boot-disk-size-gb=21</code></p>
+<ul>
+<li>[Optional] Size in GB of the boot disk (default is 500GB).</li>
+</ul>
+</li>
+<li>
+<p><code>num-local-ssds=98</code></p>
+<ul>
+<li>[Optional] Number of attached SSDs, from 0 to 4 (default is 0). If SSDs are not attached, the boot disk is used to store runtime logs and HDFS data. If one or more SSDs are attached, this runtime bulk data is spread across them, and the boot disk contains only basic config and installed binaries.</li>
+</ul>
+</li>
+<li>
+<p><code>..    image-uri=dolor</code></p>
+<ul>
+<li>[Output-only] The Google Compute Engine image resource used for cluster instances. Inferred from <code>SoftwareConfig.image_version</code>.</li>
+</ul>
+</li>
+<li><code>instance-names=dolor</code><ul>
 <li>The list of instance names. Cloud Dataproc derives the names from <code>cluster_name</code>, <code>num_instances</code>, and the instance group if not set by user (recommended practice is to let Cloud Dataproc derive the name).</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
@@ -363,101 +394,54 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>The Google Compute Engine machine type used for cluster instances. Example: <code>https://www.googleapis.com/compute/v1/projects/[project_id]/zones/us-east1-a/machineTypes/n1-standard-2</code>.</li>
 </ul>
 </li>
-<li><code>managed-group-config    instance-group-manager-name=ut</code><ul>
+<li><code>managed-group-config    instance-group-manager-name=amet.</code><ul>
 <li>[Output-only] The name of the Instance Group Manager for this group.</li>
 </ul>
 </li>
 <li>
-<p><code>instance-template-name=ea</code></p>
+<p><code>instance-template-name=voluptua.</code></p>
 <ul>
 <li>[Output-only] The name of the Instance Template used for the Managed Instance Group.</li>
 </ul>
 </li>
 <li>
-<p><code>..    num-instances=21</code></p>
+<p><code>..    num-instances=45</code></p>
 <ul>
 <li>The number of VM instances in the instance group. For master instance groups, must be set to 1.</li>
 </ul>
 </li>
 <li>
-<p><code>..secondary-worker-config.disk-config    boot-disk-size-gb=98</code></p>
-<ul>
-<li>[Optional] Size in GB of the boot disk (default is 500GB).</li>
-</ul>
-</li>
-<li>
-<p><code>num-local-ssds=53</code></p>
-<ul>
-<li>[Optional] Number of attached SSDs, from 0 to 4 (default is 0). If SSDs are not attached, the boot disk is used to store runtime logs and HDFS data. If one or more SSDs are attached, this runtime bulk data is spread across them, and the boot disk contains only basic config and installed binaries.</li>
-</ul>
-</li>
-<li>
-<p><code>..    image-uri=dolor</code></p>
-<ul>
-<li>[Output-only] The Google Compute Engine image resource used for cluster instances. Inferred from <code>SoftwareConfig.image_version</code>.</li>
-</ul>
-</li>
-<li><code>instance-names=et</code><ul>
-<li>The list of instance names. Cloud Dataproc derives the names from <code>cluster_name</code>, <code>num_instances</code>, and the instance group if not set by user (recommended practice is to let Cloud Dataproc derive the name).</li>
-<li>Each invocation of this argument appends the given value to the array.</li>
-</ul>
-</li>
-<li><code>is-preemptible=false</code><ul>
-<li>Specifies that this instance group contains Preemptible Instances.</li>
-</ul>
-</li>
-<li><code>machine-type-uri=amet.</code><ul>
-<li>The Google Compute Engine machine type used for cluster instances. Example: <code>https://www.googleapis.com/compute/v1/projects/[project_id]/zones/us-east1-a/machineTypes/n1-standard-2</code>.</li>
-</ul>
-</li>
-<li><code>managed-group-config    instance-group-manager-name=voluptua.</code><ul>
-<li>[Output-only] The name of the Instance Group Manager for this group.</li>
-</ul>
-</li>
-<li>
-<p><code>instance-template-name=lorem</code></p>
-<ul>
-<li>[Output-only] The name of the Instance Template used for the Managed Instance Group.</li>
-</ul>
-</li>
-<li>
-<p><code>..    num-instances=90</code></p>
-<ul>
-<li>The number of VM instances in the instance group. For master instance groups, must be set to 1.</li>
-</ul>
-</li>
-<li>
-<p><code>..software-config    image-version=justo</code></p>
+<p><code>..software-config    image-version=gubergren</code></p>
 <ul>
 <li>[Optional] The version of software inside the cluster. It must match the regular expression <code>[0-9]+\.[0-9]+</code>. If unspecified, it defaults to the latest version (see <a href="../dataproc/versioning">Cloud Dataproc Versioning</a>).</li>
 </ul>
 </li>
 <li>
-<p><code>properties=key=sit</code></p>
+<p><code>properties=key=justo</code></p>
 <ul>
 <li>[Optional] The properties to set on daemon config files. Property keys are specified in <code>prefix:property</code> format, such as <code>core:fs.defaultFS</code>. The following are supported prefixes and their mappings: * core: <code>core-site.xml</code> * hdfs: <code>hdfs-site.xml</code> * mapred: <code>mapred-site.xml</code> * yarn: <code>yarn-site.xml</code> * hive: <code>hive-site.xml</code> * pig: <code>pig.properties</code> * spark: <code>spark-defaults.conf</code></li>
 <li>the value will be associated with the given <code>key</code></li>
 </ul>
 </li>
 <li>
-<p><code>..worker-config.disk-config    boot-disk-size-gb=75</code></p>
+<p><code>..worker-config.disk-config    boot-disk-size-gb=49</code></p>
 <ul>
 <li>[Optional] Size in GB of the boot disk (default is 500GB).</li>
 </ul>
 </li>
 <li>
-<p><code>num-local-ssds=73</code></p>
+<p><code>num-local-ssds=75</code></p>
 <ul>
 <li>[Optional] Number of attached SSDs, from 0 to 4 (default is 0). If SSDs are not attached, the boot disk is used to store runtime logs and HDFS data. If one or more SSDs are attached, this runtime bulk data is spread across them, and the boot disk contains only basic config and installed binaries.</li>
 </ul>
 </li>
 <li>
-<p><code>..    image-uri=rebum.</code></p>
+<p><code>..    image-uri=diam</code></p>
 <ul>
 <li>[Output-only] The Google Compute Engine image resource used for cluster instances. Inferred from <code>SoftwareConfig.image_version</code>.</li>
 </ul>
 </li>
-<li><code>instance-names=consetetur</code><ul>
+<li><code>instance-names=rebum.</code><ul>
 <li>The list of instance names. Cloud Dataproc derives the names from <code>cluster_name</code>, <code>num_instances</code>, and the instance group if not set by user (recommended practice is to let Cloud Dataproc derive the name).</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
@@ -466,41 +450,41 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>Specifies that this instance group contains Preemptible Instances.</li>
 </ul>
 </li>
-<li><code>machine-type-uri=vero</code><ul>
+<li><code>machine-type-uri=sadipscing</code><ul>
 <li>The Google Compute Engine machine type used for cluster instances. Example: <code>https://www.googleapis.com/compute/v1/projects/[project_id]/zones/us-east1-a/machineTypes/n1-standard-2</code>.</li>
 </ul>
 </li>
-<li><code>managed-group-config    instance-group-manager-name=sadipscing</code><ul>
+<li><code>managed-group-config    instance-group-manager-name=vero</code><ul>
 <li>[Output-only] The name of the Instance Group Manager for this group.</li>
 </ul>
 </li>
 <li>
-<p><code>instance-template-name=invidunt</code></p>
+<p><code>instance-template-name=sadipscing</code></p>
 <ul>
 <li>[Output-only] The name of the Instance Template used for the Managed Instance Group.</li>
 </ul>
 </li>
 <li>
-<p><code>..    num-instances=5</code></p>
+<p><code>..    num-instances=13</code></p>
 <ul>
 <li>The number of VM instances in the instance group. For master instance groups, must be set to 1.</li>
 </ul>
 </li>
 <li>
-<p><code>...    project-id=dolore</code></p>
+<p><code>...    project-id=consetetur</code></p>
 <ul>
 <li>[Required] The Google Cloud Platform project ID that the cluster belongs to.</li>
 </ul>
 </li>
-<li><code>status    detail=duo</code><ul>
+<li><code>status    detail=dolore</code><ul>
 <li>Optional details of cluster&#39;s state.</li>
 </ul>
 </li>
-<li><code>state=aliquyam</code><ul>
+<li><code>state=duo</code><ul>
 <li>The cluster&#39;s state.</li>
 </ul>
 </li>
-<li><code>state-start-time=lorem</code><ul>
+<li><code>state-start-time=aliquyam</code><ul>
 <li>Time when this state was entered.</li>
 </ul>
 </li>
@@ -530,7 +514,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li><strong>-p update-mask=string</strong><ul>
-<li>[Required] Specifies the path, relative to Cluster, of the field to update. For example, to change the number of workers in a cluster to 5, the update_mask parameter would be specified as config.worker_config.num_instances, and the <code>PATCH</code> request body would specify the new value, as follows: { &#34;config&#34;:{ &#34;workerConfig&#34;:{ &#34;numInstances&#34;:&#34;5&#34; } } } Note: Currently, config.worker_config.num_instances is the only field that can be updated.</li>
+<li>[Required] Specifies the path, relative to Cluster, of the field to update. For example, to change the number of workers in a cluster to 5, the update_mask parameter would be specified as config.worker_config.num_instances, and the <code>PATCH</code> request body would specify the new value, as follows: { &#34;config&#34;:{ &#34;workerConfig&#34;:{ &#34;numInstances&#34;:&#34;5&#34; } } } Similarly, to change the number of preemptible workers in a cluster to 5, the update_mask parameter would be config.secondary_worker_config.num_instances, and the <code>PATCH</code> request body would be set as follows: { &#34;config&#34;:{ &#34;secondaryWorkerConfig&#34;:{ &#34;numInstances&#34;:&#34;5&#34; } } } Note: Currently, config.worker_config.num_instances and config.secondary_worker_config.num_instances are the only fields that can be updated.</li>
 </ul>
 </li>
 </ul>
@@ -660,7 +644,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 
 <!--
 MkDocs version  : 0.12.2
-Docs Build Date : 2016-07-23 16:06:01.886943
+Docs Build Date : 2016-09-11 17:56:00.261370
 -->
 </body>
 </html>

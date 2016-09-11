@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `CourseWork` struct in crate `google_classroom1`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, CourseWork">
+
+    <title>google_classroom1::CourseWork - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='index.html'>google_classroom1</a></p><script>window.sidebarCurrent = {name: 'CourseWork', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content struct">
+<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_classroom1</a>::<wbr><a class='struct' href=''>CourseWork</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-5491' class='srclink' href='../src/google_classroom1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-classroom1-1f991e06295dc64f/out/lib.rs.html#10038-10073' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct CourseWork {
+    pub update_time: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub description: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub course_id: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub assignment: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_classroom1/struct.Assignment.html' title='google_classroom1::Assignment'>Assignment</a>&gt;,
+    pub associated_with_developer: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt;,
+    pub max_points: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f64.html'>f64</a>&gt;,
+    pub id: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub work_type: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub submission_modification_mode: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub title: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub alternate_link: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub creation_time: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub due_date: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_classroom1/struct.Date.html' title='google_classroom1::Date'>Date</a>&gt;,
+    pub state: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;,
+    pub materials: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='../google_classroom1/struct.Material.html' title='google_classroom1::Material'>Material</a>&gt;&gt;,
+    pub due_time: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_classroom1/struct.TimeOfDay.html' title='google_classroom1::TimeOfDay'>TimeOfDay</a>&gt;,
+    pub multiple_choice_question: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_classroom1/struct.MultipleChoiceQuestion.html' title='google_classroom1::MultipleChoiceQuestion'>MultipleChoiceQuestion</a>&gt;,
+}</pre><div class='docblock'><p>Course work created by a teacher for students of the course.</p>
+
+<h1 id='activities' class='section-header'><a href='#activities'>Activities</a></h1>
+<p>This type is used in activities, which are methods you may call on this type or where this type is involved in. 
+The list links the activity name, along with information about where it is used (one of <em>request</em> and <em>response</em>).</p>
+
+<ul>
+<li><a href="struct.CourseCourseWorkCreateCall.html">course work create courses</a> (request|response)</li>
+<li><a href="struct.CourseCourseWorkGetCall.html">course work get courses</a> (response)</li>
+</ul>
+</div><h2 class='fields'>Fields</h2><span id='structfield.update_time' class='structfield'><code>update_time: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;</code>
+                           </span><span class='stab '></span><div class='docblock'><p>Timestamp of the most recent change to this course work. Read-only.</p>
+</div><span id='structfield.description' class='structfield'><code>description: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;</code>
+                           </span><span class='stab '></span><div class='docblock'><p>Optional description of this course work. If set, the description must be a valid UTF-8 string containing no more than 30,000 characters.</p>
+</div><span id='structfield.course_id' class='structfield'><code>course_id: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;</code>
+                           </span><span class='stab '></span><div class='docblock'><p>Identifier of the course. Read-only.</p>
+</div><span id='structfield.assignment' class='structfield'><code>assignment: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_classroom1/struct.Assignment.html' title='google_classroom1::Assignment'>Assignment</a>&gt;</code>
+                           </span><span class='stab '></span><div class='docblock'><p>Assignment details. This is populated only when <code>work_type</code> is <code>ASSIGNMENT</code>.</p>
+</div><span id='structfield.associated_with_developer' class='structfield'><code>associated_with_developer: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt;</code>
+                           </span><span class='stab '></span><div class='docblock'><p>Whether this course work item is associated with the Developer Console project making the request. See google.classroom.Work.CreateCourseWork for more details. Read-only.</p>
+</div><span id='structfield.max_points' class='structfield'><code>max_points: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f64.html'>f64</a>&gt;</code>
+                           </span><span class='stab '></span><div class='docblock'><p>Maximum grade for this course work. If zero or unspecified, this assignment is considered ungraded. This must be a non-negative integer value.</p>
+</div><span id='structfield.id' class='structfield'><code>id: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;</code>
+                           </span><span class='stab '></span><div class='docblock'><p>Classroom-assigned identifier of this course work, unique per course. Read-only.</p>
+</div><span id='structfield.work_type' class='structfield'><code>work_type: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;</code>
+                           </span><span class='stab '></span><div class='docblock'><p>Type of this course work. The type is set when the course work is created and cannot be changed. When creating course work, this must be <code>ASSIGNMENT</code>.</p>
+</div><span id='structfield.submission_modification_mode' class='structfield'><code>submission_modification_mode: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;</code>
+                           </span><span class='stab '></span><div class='docblock'><p>Setting to determine when students are allowed to modify submissions. If unspecified, the default value is <code>MODIFIABLE_UNTIL_TURNED_IN</code>.</p>
+</div><span id='structfield.title' class='structfield'><code>title: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;</code>
+                           </span><span class='stab '></span><div class='docblock'><p>Title of this course work. The title must be a valid UTF-8 string containing between 1 and 3000 characters.</p>
+</div><span id='structfield.alternate_link' class='structfield'><code>alternate_link: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;</code>
+                           </span><span class='stab '></span><div class='docblock'><p>Absolute link to this course work in the Classroom web UI. This is only populated if <code>state</code> is <code>PUBLISHED</code>. Read-only.</p>
+</div><span id='structfield.creation_time' class='structfield'><code>creation_time: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;</code>
+                           </span><span class='stab '></span><div class='docblock'><p>Timestamp when this course work was created. Read-only.</p>
+</div><span id='structfield.due_date' class='structfield'><code>due_date: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_classroom1/struct.Date.html' title='google_classroom1::Date'>Date</a>&gt;</code>
+                           </span><span class='stab '></span><div class='docblock'><p>Optional date, in UTC, that submissions for this this course work are due. This must be specified if <code>due_time</code> is specified.</p>
+</div><span id='structfield.state' class='structfield'><code>state: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;</code>
+                           </span><span class='stab '></span><div class='docblock'><p>Status of this course work. If unspecified, the default state is <code>DRAFT</code>.</p>
+</div><span id='structfield.materials' class='structfield'><code>materials: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='../google_classroom1/struct.Material.html' title='google_classroom1::Material'>Material</a>&gt;&gt;</code>
+                           </span><span class='stab '></span><div class='docblock'><p>Additional materials. CourseWork must have no more than 20 material items.</p>
+</div><span id='structfield.due_time' class='structfield'><code>due_time: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_classroom1/struct.TimeOfDay.html' title='google_classroom1::TimeOfDay'>TimeOfDay</a>&gt;</code>
+                           </span><span class='stab '></span><div class='docblock'><p>Optional time of day, in UTC, that submissions for this this course work are due. This must be specified if <code>due_date</code> is specified.</p>
+</div><span id='structfield.multiple_choice_question' class='structfield'><code>multiple_choice_question: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../google_classroom1/struct.MultipleChoiceQuestion.html' title='google_classroom1::MultipleChoiceQuestion'>MultipleChoiceQuestion</a>&gt;</code>
+                           </span><span class='stab '></span><div class='docblock'><p>Multiple choice question details. This is populated only when <code>work_type</code> is <code>MULTIPLE_CHOICE_QUESTION</code>.</p>
+</div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_classroom1/struct.CourseWork.html' title='google_classroom1::CourseWork'>CourseWork</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-5447' class='srclink' href='../src/google_classroom1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-classroom1-1f991e06295dc64f/out/lib.rs.html#10037' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.default' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_classroom1/struct.CourseWork.html' title='google_classroom1::CourseWork'>CourseWork</a></code></h4>
+<div class='docblock'><p>Returns the &quot;default value&quot; for a type. <a href="https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_classroom1/struct.CourseWork.html' title='google_classroom1::CourseWork'>CourseWork</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-5449' class='srclink' href='../src/google_classroom1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-classroom1-1f991e06295dc64f/out/lib.rs.html#10037' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_classroom1/struct.CourseWork.html' title='google_classroom1::CourseWork'>CourseWork</a></code></h4>
+<div class='docblock'><p>Returns a copy of the value. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone">Read more</a></p>
+</div><h4 id='method.clone_from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></h4>
+<div class='docblock'><p>Performs copy-assignment from <code>source</code>. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_classroom1/struct.CourseWork.html' title='google_classroom1::CourseWork'>CourseWork</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-5469' class='srclink' href='../src/google_classroom1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-classroom1-1f991e06295dc64f/out/lib.rs.html#10037' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
+<div class='docblock'><p>Formats the value using the given formatter.</p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='../google_classroom1/trait.RequestValue.html' title='google_classroom1::RequestValue'>RequestValue</a> for <a class='struct' href='../google_classroom1/struct.CourseWork.html' title='google_classroom1::CourseWork'>CourseWork</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-5509' class='srclink' href='../src/google_classroom1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-classroom1-1f991e06295dc64f/out/lib.rs.html#10074' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='../google_classroom1/trait.ResponseResult.html' title='google_classroom1::ResponseResult'>ResponseResult</a> for <a class='struct' href='../google_classroom1/struct.CourseWork.html' title='google_classroom1::CourseWork'>CourseWork</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-5510' class='srclink' href='../src/google_classroom1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-classroom1-1f991e06295dc64f/out/lib.rs.html#10075' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "google_classroom1";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../jquery.js"></script>
+    <script src="../main.js"></script>
+    
+    <script defer src="../search-index.js"></script>
+</body>
+</html>

@@ -48,7 +48,7 @@
                        [<span class='inner'>&#x2212;</span>]
                    </a>
                </span><a id='src-0' class='srclink' href='../src/google_youtube3/src/lib.rs.html#5-266' title='goto source code'>[src]</a></span></h1>
-<div class='docblock'><p>This documentation was generated from <em>YouTube</em> crate version <em>0.1.14+20160222</em>, where <em>20160222</em> is the exact revision of the <em>youtube:v3</em> schema built by the <a href="http://www.makotemplates.org/">mako</a> code generator <em>v0.1.14</em>.</p>
+<div class='docblock'><p>This documentation was generated from <em>YouTube</em> crate version <em>0.1.15+20160805</em>, where <em>20160805</em> is the exact revision of the <em>youtube:v3</em> schema built by the <a href="http://www.makotemplates.org/">mako</a> code generator <em>v0.1.15</em>.</p>
 
 <p>Everything else about the <em>YouTube</em> <em>v3</em> API can be found at the
 <a href="https://developers.google.com/youtube/v3">official documentation site</a>.
@@ -302,16 +302,16 @@ google-youtube3 = &quot;*&quot;
 <span class='comment'>// execute the final call using `doit()`.</span>
 <span class='comment'>// Values shown here are possibly random and not representative !</span>
 <span class='kw'>let</span> <span class='ident'>result</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>videos</span>().<span class='ident'>list</span>(<span class='string'>&quot;part&quot;</span>)
-             .<span class='ident'>video_category_id</span>(<span class='string'>&quot;sit&quot;</span>)
-             .<span class='ident'>region_code</span>(<span class='string'>&quot;amet&quot;</span>)
-             .<span class='ident'>page_token</span>(<span class='string'>&quot;eirmod&quot;</span>)
-             .<span class='ident'>on_behalf_of_content_owner</span>(<span class='string'>&quot;sanctus&quot;</span>)
-             .<span class='ident'>my_rating</span>(<span class='string'>&quot;Lorem&quot;</span>)
-             .<span class='ident'>max_results</span>(<span class='number'>100</span>)
-             .<span class='ident'>locale</span>(<span class='string'>&quot;diam&quot;</span>)
-             .<span class='ident'>id</span>(<span class='string'>&quot;eirmod&quot;</span>)
-             .<span class='ident'>hl</span>(<span class='string'>&quot;sadipscing&quot;</span>)
-             .<span class='ident'>chart</span>(<span class='string'>&quot;Lorem&quot;</span>)
+             .<span class='ident'>video_category_id</span>(<span class='string'>&quot;amet&quot;</span>)
+             .<span class='ident'>region_code</span>(<span class='string'>&quot;eirmod&quot;</span>)
+             .<span class='ident'>page_token</span>(<span class='string'>&quot;sanctus&quot;</span>)
+             .<span class='ident'>on_behalf_of_content_owner</span>(<span class='string'>&quot;Lorem&quot;</span>)
+             .<span class='ident'>my_rating</span>(<span class='string'>&quot;amet.&quot;</span>)
+             .<span class='ident'>max_results</span>(<span class='number'>60</span>)
+             .<span class='ident'>locale</span>(<span class='string'>&quot;eirmod&quot;</span>)
+             .<span class='ident'>id</span>(<span class='string'>&quot;sadipscing&quot;</span>)
+             .<span class='ident'>hl</span>(<span class='string'>&quot;Lorem&quot;</span>)
+             .<span class='ident'>chart</span>(<span class='string'>&quot;sed&quot;</span>)
              .<span class='ident'>doit</span>();
  
 <span class='kw'>match</span> <span class='ident'>result</span> {
@@ -949,7 +949,7 @@ It is not used directly, but through the <code>YouTube</code> hub.</p>
                            <td><a class='struct' href='struct.ContentRating.html'
                                   title='google_youtube3::ContentRating'>ContentRating</a></td>
                            <td class='docblock short'>
-                                <p>Ratings schemes. The country-specific ratings are mostly for movies and shows. NEXT_ID: 67</p>
+                                <p>Ratings schemes. The country-specific ratings are mostly for movies and shows. NEXT_ID: 68</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
@@ -1353,6 +1353,13 @@ It is not used directly, but through the <code>YouTube</code> hub.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
+                           <td><a class='struct' href='struct.LiveChatMessageDeletedDetails.html'
+                                  title='google_youtube3::LiveChatMessageDeletedDetails'>LiveChatMessageDeletedDetails</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
                            <td><a class='struct' href='struct.LiveChatMessageInsertCall.html'
                                   title='google_youtube3::LiveChatMessageInsertCall'>LiveChatMessageInsertCall</a></td>
                            <td class='docblock short'>
@@ -1379,6 +1386,13 @@ It is not used directly, but through the <code>YouTube</code> hub.</p>
                            <td class='docblock short'>
                                 <p>A builder providing access to all methods supported on <em>liveChatMessage</em> resources.
 It is not used directly, but through the <code>YouTube</code> hub.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.LiveChatMessageRetractedDetails.html'
+                                  title='google_youtube3::LiveChatMessageRetractedDetails'>LiveChatMessageRetractedDetails</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
@@ -1439,8 +1453,50 @@ It is not used directly, but through the <code>YouTube</code> hub.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
+                           <td><a class='struct' href='struct.LiveChatPollClosedDetails.html'
+                                  title='google_youtube3::LiveChatPollClosedDetails'>LiveChatPollClosedDetails</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.LiveChatPollEditedDetails.html'
+                                  title='google_youtube3::LiveChatPollEditedDetails'>LiveChatPollEditedDetails</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.LiveChatPollItem.html'
+                                  title='google_youtube3::LiveChatPollItem'>LiveChatPollItem</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.LiveChatPollOpenedDetails.html'
+                                  title='google_youtube3::LiveChatPollOpenedDetails'>LiveChatPollOpenedDetails</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.LiveChatPollVotedDetails.html'
+                                  title='google_youtube3::LiveChatPollVotedDetails'>LiveChatPollVotedDetails</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
                            <td><a class='struct' href='struct.LiveChatTextMessageDetails.html'
                                   title='google_youtube3::LiveChatTextMessageDetails'>LiveChatTextMessageDetails</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.LiveChatUserBannedMessageDetails.html'
+                                  title='google_youtube3::LiveChatUserBannedMessageDetails'>LiveChatUserBannedMessageDetails</a></td>
                            <td class='docblock short'>
                                 <p>There is no detailed description.</p>
                            </td>
@@ -2253,7 +2309,7 @@ It is not used directly, but through the <code>YouTube</code> hub.</p>
                            <td><a class='struct' href='struct.WatchSettings.html'
                                   title='google_youtube3::WatchSettings'>WatchSettings</a></td>
                            <td class='docblock short'>
-                                <p>Branding properties for the watch.</p>
+                                <p>Branding properties for the watch. All deprecated.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>

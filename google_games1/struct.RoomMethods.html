@@ -47,8 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-19922' class='srclink' href='../src/google_games1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-games1-b9bb0f61d1030f8c/out/lib.rs.html#43421-43423' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct RoomMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
+               </span><a id='src-18521' class='srclink' href='../src/google_games1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-games1-00b2e1f28385176b/out/lib.rs.html#33727-33729' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct RoomMethods&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>room</em> resources.
 It is not used directly, but through the <code>Games</code> hub.</p>
@@ -74,8 +74,8 @@ It is not used directly, but through the <code>Games</code> hub.</p>
 <span class='comment'>// like `create(...)`, `decline(...)`, `dismiss(...)`, `get(...)`, `join(...)`, `leave(...)`, `list(...)` and `report_status(...)`</span>
 <span class='comment'>// to build up your call.</span>
 <span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>rooms</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_games1/struct.RoomMethods.html' title='google_games1::RoomMethods'>RoomMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-19931' class='srclink' href='../src/google_games1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-games1-b9bb0f61d1030f8c/out/lib.rs.html#43425-43552' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, room_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_games1/struct.RoomGetCall.html' title='google_games1::RoomGetCall'>RoomGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='struct' href='../google_games1/struct.RoomMethods.html' title='google_games1::RoomMethods'>RoomMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-18530' class='srclink' href='../src/google_games1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-games1-00b2e1f28385176b/out/lib.rs.html#33731-33866' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, room_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_games1/struct.RoomGetCall.html' title='google_games1::RoomGetCall'>RoomGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Get the data for a room.</p>
@@ -84,7 +84,7 @@ It is not used directly, but through the <code>Games</code> hub.</p>
 <ul>
 <li><code>roomId</code> - The ID of the room.</li>
 </ul>
-</div><h4 id='method.leave' class='method'><code>fn <a href='#method.leave' class='fnname'>leave</a>(&amp;self, request: <a class='struct' href='../google_games1/struct.RoomLeaveRequest.html' title='google_games1::RoomLeaveRequest'>RoomLeaveRequest</a>, room_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_games1/struct.RoomLeaveCall.html' title='google_games1::RoomLeaveCall'>RoomLeaveCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.leave' class='method'><code>fn <a href='#method.leave' class='fnname'>leave</a>(&amp;self, request: <a class='struct' href='../google_games1/struct.RoomLeaveRequest.html' title='google_games1::RoomLeaveRequest'>RoomLeaveRequest</a>, room_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_games1/struct.RoomLeaveCall.html' title='google_games1::RoomLeaveCall'>RoomLeaveCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Leave a room. For internal use by the Games SDK only. Calling this method directly is unsupported.</p>
@@ -94,11 +94,11 @@ It is not used directly, but through the <code>Games</code> hub.</p>
 <li><code>request</code> - No description provided.</li>
 <li><code>roomId</code> - The ID of the room.</li>
 </ul>
-</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self) -&gt; <a class='struct' href='../google_games1/struct.RoomListCall.html' title='google_games1::RoomListCall'>RoomListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self) -&gt; <a class='struct' href='../google_games1/struct.RoomListCall.html' title='google_games1::RoomListCall'>RoomListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Returns invitations to join rooms.</p>
-</div><h4 id='method.report_status' class='method'><code>fn <a href='#method.report_status' class='fnname'>report_status</a>(&amp;self, request: <a class='struct' href='../google_games1/struct.RoomP2PStatuses.html' title='google_games1::RoomP2PStatuses'>RoomP2PStatuses</a>, room_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_games1/struct.RoomReportStatuCall.html' title='google_games1::RoomReportStatuCall'>RoomReportStatuCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.report_status' class='method'><code>fn <a href='#method.report_status' class='fnname'>report_status</a>(&amp;self, request: <a class='struct' href='../google_games1/struct.RoomP2PStatuses.html' title='google_games1::RoomP2PStatuses'>RoomP2PStatuses</a>, room_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_games1/struct.RoomReportStatuCall.html' title='google_games1::RoomReportStatuCall'>RoomReportStatuCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Updates sent by a client reporting the status of peers in a room. For internal use by the Games SDK only. Calling this method directly is unsupported.</p>
@@ -108,7 +108,7 @@ It is not used directly, but through the <code>Games</code> hub.</p>
 <li><code>request</code> - No description provided.</li>
 <li><code>roomId</code> - The ID of the room.</li>
 </ul>
-</div><h4 id='method.create' class='method'><code>fn <a href='#method.create' class='fnname'>create</a>(&amp;self, request: <a class='struct' href='../google_games1/struct.RoomCreateRequest.html' title='google_games1::RoomCreateRequest'>RoomCreateRequest</a>) -&gt; <a class='struct' href='../google_games1/struct.RoomCreateCall.html' title='google_games1::RoomCreateCall'>RoomCreateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.create' class='method'><code>fn <a href='#method.create' class='fnname'>create</a>(&amp;self, request: <a class='struct' href='../google_games1/struct.RoomCreateRequest.html' title='google_games1::RoomCreateRequest'>RoomCreateRequest</a>) -&gt; <a class='struct' href='../google_games1/struct.RoomCreateCall.html' title='google_games1::RoomCreateCall'>RoomCreateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Create a room. For internal use by the Games SDK only. Calling this method directly is unsupported.</p>
@@ -117,7 +117,7 @@ It is not used directly, but through the <code>Games</code> hub.</p>
 <ul>
 <li><code>request</code> - No description provided.</li>
 </ul>
-</div><h4 id='method.decline' class='method'><code>fn <a href='#method.decline' class='fnname'>decline</a>(&amp;self, room_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_games1/struct.RoomDeclineCall.html' title='google_games1::RoomDeclineCall'>RoomDeclineCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.decline' class='method'><code>fn <a href='#method.decline' class='fnname'>decline</a>(&amp;self, room_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_games1/struct.RoomDeclineCall.html' title='google_games1::RoomDeclineCall'>RoomDeclineCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Decline an invitation to join a room. For internal use by the Games SDK only. Calling this method directly is unsupported.</p>
@@ -126,7 +126,7 @@ It is not used directly, but through the <code>Games</code> hub.</p>
 <ul>
 <li><code>roomId</code> - The ID of the room.</li>
 </ul>
-</div><h4 id='method.dismiss' class='method'><code>fn <a href='#method.dismiss' class='fnname'>dismiss</a>(&amp;self, room_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_games1/struct.RoomDismisCall.html' title='google_games1::RoomDismisCall'>RoomDismisCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.dismiss' class='method'><code>fn <a href='#method.dismiss' class='fnname'>dismiss</a>(&amp;self, room_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_games1/struct.RoomDismisCall.html' title='google_games1::RoomDismisCall'>RoomDismisCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Dismiss an invitation to join a room. For internal use by the Games SDK only. Calling this method directly is unsupported.</p>
@@ -135,7 +135,7 @@ It is not used directly, but through the <code>Games</code> hub.</p>
 <ul>
 <li><code>roomId</code> - The ID of the room.</li>
 </ul>
-</div><h4 id='method.join' class='method'><code>fn <a href='#method.join' class='fnname'>join</a>(&amp;self, request: <a class='struct' href='../google_games1/struct.RoomJoinRequest.html' title='google_games1::RoomJoinRequest'>RoomJoinRequest</a>, room_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_games1/struct.RoomJoinCall.html' title='google_games1::RoomJoinCall'>RoomJoinCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.join' class='method'><code>fn <a href='#method.join' class='fnname'>join</a>(&amp;self, request: <a class='struct' href='../google_games1/struct.RoomJoinRequest.html' title='google_games1::RoomJoinRequest'>RoomJoinRequest</a>, room_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_games1/struct.RoomJoinCall.html' title='google_games1::RoomJoinCall'>RoomJoinCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Join a room. For internal use by the Games SDK only. Calling this method directly is unsupported.</p>
@@ -145,7 +145,7 @@ It is not used directly, but through the <code>Games</code> hub.</p>
 <li><code>request</code> - No description provided.</li>
 <li><code>roomId</code> - The ID of the room.</li>
 </ul>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_games1/trait.MethodsBuilder.html' title='google_games1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_games1/struct.RoomMethods.html' title='google_games1::RoomMethods'>RoomMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-19927' class='srclink' href='../src/google_games1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-games1-b9bb0f61d1030f8c/out/lib.rs.html#43424' title='goto source code'>[src]</a></span></h3>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='trait' href='../google_games1/trait.MethodsBuilder.html' title='google_games1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_games1/struct.RoomMethods.html' title='google_games1::RoomMethods'>RoomMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-18526' class='srclink' href='../src/google_games1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-games1-00b2e1f28385176b/out/lib.rs.html#33730' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 

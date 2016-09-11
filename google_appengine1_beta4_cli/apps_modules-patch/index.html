@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Modules Patch - appengine v0.3.6+20160314</title>
+  <title>Modules Patch - appengine v0.3.6+20160802</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -32,7 +32,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> appengine v0.3.6+20160314</a>
+        <a href=".." class="icon icon-home"> appengine v0.3.6+20160802</a>
         
       </div>
 
@@ -51,7 +51,22 @@
             <span>Apps</span>
             
                 <li class="toctree-l2 ">
+                    <a class="" href="../apps_create/">Create</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
                     <a class="" href="../apps_get/">Get</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../apps_locations-get/">Locations Get</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../apps_locations-list/">Locations List</a>
                     
                 </li>
             
@@ -115,6 +130,26 @@
                 </li>
             
                 <li class="toctree-l2 ">
+                    <a class="" href="../apps_modules-versions-instances-debug/">Modules Versions Instances Debug</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../apps_modules-versions-instances-delete/">Modules Versions Instances Delete</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../apps_modules-versions-instances-get/">Modules Versions Instances Get</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../apps_modules-versions-instances-list/">Modules Versions Instances List</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
                     <a class="" href="../apps_modules-versions-list/">Modules Versions List</a>
                     
                 </li>
@@ -148,7 +183,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">appengine v0.3.6+20160314</a>
+        <a href="..">appengine v0.3.6+20160802</a>
       </nav>
 
       
@@ -183,7 +218,7 @@ You can set the scope for this method like this: <code>appengine1-beta4 --scope 
 <h1 id="required-scalar-arguments">Required Scalar Arguments</h1>
 <ul>
 <li><strong>&lt;apps-id&gt;</strong> <em>(string)</em><ul>
-<li>Part of <code>name</code>. Name of the resource to update. For example: &#34;apps/myapp/modules/default&#34;.</li>
+<li>Part of <code>name</code>. Name of the resource to update. Example: <code>apps/myapp/modules/default</code>.</li>
 </ul>
 </li>
 <li><strong>&lt;modules-id&gt;</strong> <em>(string)</em><ul>
@@ -206,21 +241,21 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    id=eirmod</code><ul>
-<li>The relative name/path of the module within the application. Example: &#34;default&#34; @OutputOnly</li>
+<li><code>-r .    id=takimata</code><ul>
+<li>Relative name of the module within the application. Example: <code>default</code>. @OutputOnly</li>
 </ul>
 </li>
-<li><code>name=sit</code><ul>
-<li>The full path to the Module resource in the API. Example: &#34;apps/myapp/modules/default&#34; @OutputOnly</li>
+<li><code>name=justo</code><ul>
+<li>Full path to the Module resource in the API. Example: <code>apps/myapp/modules/default</code>. @OutputOnly</li>
 </ul>
 </li>
-<li><code>split    allocations=key=0.365848359249</code><ul>
-<li>Mapping from module version IDs within the module to fractional (0.000, 1] allocations of traffic for that version. Each version may only be specified once, but some versions in the module may not have any traffic allocation. Modules that have traffic allocated in this field may not be deleted until the module is deleted, or their traffic allocation is removed. Allocations must sum to 1. Supports precision up to two decimal places for IP-based splits and up to three decimal places for cookie-based splits.</li>
+<li><code>split    allocations=key=0.992247072586</code><ul>
+<li>Mapping from version IDs within the module to fractional (0.000, 1] allocations of traffic for that version. Each version can be specified only once, but some versions in the module may not have any traffic allocation. Modules that have traffic allocated cannot be deleted until either the module is deleted or their traffic allocation is removed. Allocations must sum to 1. Up to two decimal place precision is supported for IP-based splits and up to three decimal places is supported for cookie-based splits.</li>
 <li>the value will be associated with the given <code>key</code></li>
 </ul>
 </li>
-<li><code>shard-by=sed</code><ul>
-<li>Which mechanism should be used as a selector when choosing a version to send a request to. The traffic selection algorithm will be stable for either type until allocations are changed.</li>
+<li><code>shard-by=erat</code><ul>
+<li>Mechanism used to determine which version a request is sent to. The traffic selection algorithm will be stable for either type until allocations are changed.</li>
 </ul>
 </li>
 </ul>
@@ -249,15 +284,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p migrate-traffic=boolean</strong></p>
-<ul>
-<li>Whether to use Traffic Migration to shift traffic gradually. Traffic can only be migrated from a single version to another single version.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p mask=string</strong></p>
 <ul>
 <li>Standard field mask for the set of fields to be updated.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p migrate-traffic=boolean</strong></p>
+<ul>
+<li>Set to <code>true</code> to gradually shift traffic from one version to another single version. By default, traffic is shifted immediately. For gradual traffic migration, the target version must be located within instances that are configured for both <a href="https://cloud.google.com/appengine/docs/admin-api/reference/rest/v1beta4/apps.modules.versions#inboundservicetype">warmup requests</a> and <a href="https://cloud.google.com/appengine/docs/admin-api/reference/rest/v1beta4/apps.modules.versions#automaticscaling">automatic scaling</a>. You must specify the <a href="https://cloud.google.com/appengine/docs/admin-api/reference/rest/v1beta4/apps.modules#shardby"><code>shardBy</code></a> field in the Module resource. Gradual traffic migration is not supported in the App Engine flexible environment. For examples, see <a href="https://cloud.google.com/appengine/docs/admin-api/migrating-splitting-traffic">Migrating and Splitting Traffic</a>.</li>
 </ul>
 </li>
 </ul>
@@ -387,7 +422,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 
 <!--
 MkDocs version  : 0.12.2
-Docs Build Date : 2016-07-23 16:05:38.906361
+Docs Build Date : 2016-09-11 17:56:31.905083
 -->
 </body>
 </html>

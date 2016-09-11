@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>appengine v0.3.6+20160314</title>
+  <title>appengine v0.3.6+20160802</title>
   
 
   <link rel="shortcut icon" href="./img/favicon.ico">
@@ -32,7 +32,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href="." class="icon icon-home"> appengine v0.3.6+20160314</a>
+        <a href="." class="icon icon-home"> appengine v0.3.6+20160802</a>
         
       </div>
 
@@ -73,7 +73,22 @@
             <span>Apps</span>
             
                 <li class="toctree-l2 ">
+                    <a class="" href="apps_create/">Create</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
                     <a class="" href="apps_get/">Get</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="apps_locations-get/">Locations Get</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="apps_locations-list/">Locations List</a>
                     
                 </li>
             
@@ -113,6 +128,26 @@
                 </li>
             
                 <li class="toctree-l2 ">
+                    <a class="" href="apps_modules-versions-instances-debug/">Modules Versions Instances Debug</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="apps_modules-versions-instances-delete/">Modules Versions Instances Delete</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="apps_modules-versions-instances-get/">Modules Versions Instances Get</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="apps_modules-versions-instances-list/">Modules Versions Instances List</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
                     <a class="" href="apps_modules-versions-list/">Modules Versions List</a>
                     
                 </li>
@@ -146,7 +181,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href=".">appengine v0.3.6+20160314</a>
+        <a href=".">appengine v0.3.6+20160802</a>
       </nav>
 
       
@@ -189,10 +224,13 @@ capabilities. Errors will be printed to standard error, and cause the program's 
 </ul>
 <p>Find the source code <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/appengine1_beta4-cli">on github</a>.</p>
 <h1 id="usage">Usage</h1>
-<p>This documentation was generated from the <em>appengine</em> API at revision <em>20160314</em>. The CLI is at version <em>0.3.6</em>.</p>
+<p>This documentation was generated from the <em>appengine</em> API at revision <em>20160802</em>. The CLI is at version <em>0.3.6</em>.</p>
 <pre><code class="bash">appengine1-beta4 [options]
         apps
+                create (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 get &lt;apps-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                locations-get &lt;apps-id&gt; &lt;locations-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                locations-list &lt;apps-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 modules-delete &lt;apps-id&gt; &lt;modules-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 modules-get &lt;apps-id&gt; &lt;modules-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 modules-list &lt;apps-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
@@ -200,6 +238,10 @@ capabilities. Errors will be printed to standard error, and cause the program's 
                 modules-versions-create &lt;apps-id&gt; &lt;modules-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 modules-versions-delete &lt;apps-id&gt; &lt;modules-id&gt; &lt;versions-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 modules-versions-get &lt;apps-id&gt; &lt;modules-id&gt; &lt;versions-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                modules-versions-instances-debug &lt;apps-id&gt; &lt;modules-id&gt; &lt;versions-id&gt; &lt;instances-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                modules-versions-instances-delete &lt;apps-id&gt; &lt;modules-id&gt; &lt;versions-id&gt; &lt;instances-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                modules-versions-instances-get &lt;apps-id&gt; &lt;modules-id&gt; &lt;versions-id&gt; &lt;instances-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                modules-versions-instances-list &lt;apps-id&gt; &lt;modules-id&gt; &lt;versions-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 modules-versions-list &lt;apps-id&gt; &lt;modules-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 modules-versions-patch &lt;apps-id&gt; &lt;modules-id&gt; &lt;versions-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 operations-get &lt;apps-id&gt; &lt;operations-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
@@ -267,7 +309,7 @@ issue at hand.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="apps_get/" class="btn btn-neutral float-right" title="Get"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="apps_create/" class="btn btn-neutral float-right" title="Create"/>Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
     </div>
@@ -297,13 +339,13 @@ issue at hand.</p>
             <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/appengine1_beta4-cli" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
         
       <span><a href="" style="color: #fcfcfc;">&laquo; Previous</a></span>
-      <span style="margin-left: 15px"><a href="apps_get/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span style="margin-left: 15px"><a href="apps_create/" style="color: #fcfcfc">Next &raquo;</a></span>
     </span>
 </div>
 
 <!--
 MkDocs version  : 0.12.2
-Docs Build Date : 2016-07-23 16:05:38.752977
+Docs Build Date : 2016-09-11 17:56:31.707322
 -->
 </body>
 </html>

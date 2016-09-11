@@ -47,8 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-8876' class='srclink' href='../src/google_adsense1d4/home/byron/dev/rust/google-apis-rs/target/debug/build/google-adsense1d4-892d2220cc554ca7/out/lib.rs.html#21336-21353' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct AccountReportGenerateCall&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
+               </span><a id='src-8360' class='srclink' href='../src/google_adsense1d4/home/byron/dev/rust/google-apis-rs/target/debug/build/google-adsense1d4-473fc93e90e6287d/out/lib.rs.html#18279-18296' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct AccountReportGenerateCall&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>Generate an AdSense report based on the report request sent in the query parameters. Returns the result as JSON; to retrieve output in CSV format specify &quot;alt=csv&quot; as a query parameter.</p>
 
@@ -69,7 +69,7 @@ It is not used directly, but through a <code>AccountMethods</code> instance.</p>
 <span class='comment'>// execute the final call using `doit()`.</span>
 <span class='comment'>// Values shown here are possibly random and not representative !</span>
 <span class='kw'>let</span> <span class='ident'>result</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>accounts</span>().<span class='ident'>reports_generate</span>(<span class='string'>&quot;accountId&quot;</span>, <span class='string'>&quot;startDate&quot;</span>, <span class='string'>&quot;endDate&quot;</span>)
-             .<span class='ident'>use_timezone_reporting</span>(<span class='boolvalue'>true</span>)
+             .<span class='ident'>use_timezone_reporting</span>(<span class='bool-val'>true</span>)
              .<span class='ident'>start_index</span>(<span class='op'>-</span><span class='number'>85</span>)
              .<span class='ident'>add_sort</span>(<span class='string'>&quot;sed&quot;</span>)
              .<span class='ident'>add_metric</span>(<span class='string'>&quot;ea&quot;</span>)
@@ -79,78 +79,78 @@ It is not used directly, but through a <code>AccountMethods</code> instance.</p>
              .<span class='ident'>add_dimension</span>(<span class='string'>&quot;tempor&quot;</span>)
              .<span class='ident'>currency</span>(<span class='string'>&quot;sea&quot;</span>)
              .<span class='ident'>doit</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_adsense1d4/struct.AccountReportGenerateCall.html' title='google_adsense1d4::AccountReportGenerateCall'>AccountReportGenerateCall</a>&lt;'a, C, A&gt; <span class='where'>where C: <a class='trait' href='https://doc.rust-lang.org/nightly/core/borrow/trait.BorrowMut.html' title='core::borrow::BorrowMut'>BorrowMut</a>&lt;<a class='struct' href='../hyper/client/struct.Client.html' title='hyper::client::Client'>Client</a>&gt;, A: <a class='trait' href='../yup_oauth2/helper/trait.GetToken.html' title='yup_oauth2::helper::GetToken'>GetToken</a></span></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-8900' class='srclink' href='../src/google_adsense1d4/home/byron/dev/rust/google-apis-rs/target/debug/build/google-adsense1d4-892d2220cc554ca7/out/lib.rs.html#21355-21696' title='goto source code'>[src]</a></span></h3>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='struct' href='../google_adsense1d4/struct.AccountReportGenerateCall.html' title='google_adsense1d4::AccountReportGenerateCall'>AccountReportGenerateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: <a class='trait' href='https://doc.rust-lang.org/nightly/core/borrow/trait.BorrowMut.html' title='core::borrow::BorrowMut'>BorrowMut</a>&lt;<a class='struct' href='../hyper/client/struct.Client.html' title='hyper::client::Client'>Client</a>&gt;, A: <a class='trait' href='../yup_oauth2/authenticator/trait.GetToken.html' title='yup_oauth2::authenticator::GetToken'>GetToken</a></span></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-8384' class='srclink' href='../src/google_adsense1d4/home/byron/dev/rust/google-apis-rs/target/debug/build/google-adsense1d4-473fc93e90e6287d/out/lib.rs.html#18298-18639' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'><h4 id='method.doit' class='method'><code>fn <a href='#method.doit' class='fnname'>doit</a>(self) -&gt; <a class='type' href='../google_adsense1d4/type.Result.html' title='google_adsense1d4::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>(</a><a class='struct' href='../hyper/client/response/struct.Response.html' title='hyper::client::response::Response'>Response</a>, <a class='struct' href='../google_adsense1d4/struct.AdsenseReportsGenerateResponse.html' title='google_adsense1d4::AdsenseReportsGenerateResponse'>AdsenseReportsGenerateResponse</a><a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>)</a>&gt;</code></h4>
 <div class='docblock'><p>Perform the operation you have build so far.</p>
-</div><h4 id='method.account_id' class='method'><code>fn <a href='#method.account_id' class='fnname'>account_id</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_adsense1d4/struct.AccountReportGenerateCall.html' title='google_adsense1d4::AccountReportGenerateCall'>AccountReportGenerateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.account_id' class='method'><code>fn <a href='#method.account_id' class='fnname'>account_id</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_adsense1d4/struct.AccountReportGenerateCall.html' title='google_adsense1d4::AccountReportGenerateCall'>AccountReportGenerateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Account upon which to report.</p>
 
 <p>Sets the <em>account id</em> path property to the given value.</p>
 
 <p>Even though the property as already been set when instantiating this call,
 we provide this method for API completeness.</p>
-</div><h4 id='method.start_date' class='method'><code>fn <a href='#method.start_date' class='fnname'>start_date</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_adsense1d4/struct.AccountReportGenerateCall.html' title='google_adsense1d4::AccountReportGenerateCall'>AccountReportGenerateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.start_date' class='method'><code>fn <a href='#method.start_date' class='fnname'>start_date</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_adsense1d4/struct.AccountReportGenerateCall.html' title='google_adsense1d4::AccountReportGenerateCall'>AccountReportGenerateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Start of the date range to report on in &quot;YYYY-MM-DD&quot; format, inclusive.</p>
 
 <p>Sets the <em>start date</em> query property to the given value.</p>
 
 <p>Even though the property as already been set when instantiating this call,
 we provide this method for API completeness.</p>
-</div><h4 id='method.end_date' class='method'><code>fn <a href='#method.end_date' class='fnname'>end_date</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_adsense1d4/struct.AccountReportGenerateCall.html' title='google_adsense1d4::AccountReportGenerateCall'>AccountReportGenerateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.end_date' class='method'><code>fn <a href='#method.end_date' class='fnname'>end_date</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_adsense1d4/struct.AccountReportGenerateCall.html' title='google_adsense1d4::AccountReportGenerateCall'>AccountReportGenerateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>End of the date range to report on in &quot;YYYY-MM-DD&quot; format, inclusive.</p>
 
 <p>Sets the <em>end date</em> query property to the given value.</p>
 
 <p>Even though the property as already been set when instantiating this call,
 we provide this method for API completeness.</p>
-</div><h4 id='method.use_timezone_reporting' class='method'><code>fn <a href='#method.use_timezone_reporting' class='fnname'>use_timezone_reporting</a>(self, new_value: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>) -&gt; <a class='struct' href='../google_adsense1d4/struct.AccountReportGenerateCall.html' title='google_adsense1d4::AccountReportGenerateCall'>AccountReportGenerateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.use_timezone_reporting' class='method'><code>fn <a href='#method.use_timezone_reporting' class='fnname'>use_timezone_reporting</a>(self, new_value: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>) -&gt; <a class='struct' href='../google_adsense1d4/struct.AccountReportGenerateCall.html' title='google_adsense1d4::AccountReportGenerateCall'>AccountReportGenerateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Whether the report should be generated in the AdSense account&#39;s local timezone. If false default PST/PDT timezone will be used.</p>
 
 <p>Sets the <em>use timezone reporting</em> query property to the given value.</p>
-</div><h4 id='method.start_index' class='method'><code>fn <a href='#method.start_index' class='fnname'>start_index</a>(self, new_value: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>) -&gt; <a class='struct' href='../google_adsense1d4/struct.AccountReportGenerateCall.html' title='google_adsense1d4::AccountReportGenerateCall'>AccountReportGenerateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.start_index' class='method'><code>fn <a href='#method.start_index' class='fnname'>start_index</a>(self, new_value: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>) -&gt; <a class='struct' href='../google_adsense1d4/struct.AccountReportGenerateCall.html' title='google_adsense1d4::AccountReportGenerateCall'>AccountReportGenerateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Index of the first row of report data to return.</p>
 
 <p>Sets the <em>start index</em> query property to the given value.</p>
-</div><h4 id='method.add_sort' class='method'><code>fn <a href='#method.add_sort' class='fnname'>add_sort</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_adsense1d4/struct.AccountReportGenerateCall.html' title='google_adsense1d4::AccountReportGenerateCall'>AccountReportGenerateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.add_sort' class='method'><code>fn <a href='#method.add_sort' class='fnname'>add_sort</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_adsense1d4/struct.AccountReportGenerateCall.html' title='google_adsense1d4::AccountReportGenerateCall'>AccountReportGenerateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>The name of a dimension or metric to sort the resulting report on, optionally prefixed with &quot;+&quot; to sort ascending or &quot;-&quot; to sort descending. If no prefix is specified, the column is sorted ascending.</p>
 
 <p>Append the given value to the <em>sort</em> query property.
 Each appended value will retain its original ordering and be &#39;/&#39;-separated in the URL&#39;s parameters.</p>
-</div><h4 id='method.add_metric' class='method'><code>fn <a href='#method.add_metric' class='fnname'>add_metric</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_adsense1d4/struct.AccountReportGenerateCall.html' title='google_adsense1d4::AccountReportGenerateCall'>AccountReportGenerateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.add_metric' class='method'><code>fn <a href='#method.add_metric' class='fnname'>add_metric</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_adsense1d4/struct.AccountReportGenerateCall.html' title='google_adsense1d4::AccountReportGenerateCall'>AccountReportGenerateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Numeric columns to include in the report.</p>
 
 <p>Append the given value to the <em>metric</em> query property.
 Each appended value will retain its original ordering and be &#39;/&#39;-separated in the URL&#39;s parameters.</p>
-</div><h4 id='method.max_results' class='method'><code>fn <a href='#method.max_results' class='fnname'>max_results</a>(self, new_value: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>) -&gt; <a class='struct' href='../google_adsense1d4/struct.AccountReportGenerateCall.html' title='google_adsense1d4::AccountReportGenerateCall'>AccountReportGenerateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.max_results' class='method'><code>fn <a href='#method.max_results' class='fnname'>max_results</a>(self, new_value: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>) -&gt; <a class='struct' href='../google_adsense1d4/struct.AccountReportGenerateCall.html' title='google_adsense1d4::AccountReportGenerateCall'>AccountReportGenerateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>The maximum number of rows of report data to return.</p>
 
 <p>Sets the <em>max results</em> query property to the given value.</p>
-</div><h4 id='method.locale' class='method'><code>fn <a href='#method.locale' class='fnname'>locale</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_adsense1d4/struct.AccountReportGenerateCall.html' title='google_adsense1d4::AccountReportGenerateCall'>AccountReportGenerateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.locale' class='method'><code>fn <a href='#method.locale' class='fnname'>locale</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_adsense1d4/struct.AccountReportGenerateCall.html' title='google_adsense1d4::AccountReportGenerateCall'>AccountReportGenerateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Optional locale to use for translating report output to a local language. Defaults to &quot;en_US&quot; if not specified.</p>
 
 <p>Sets the <em>locale</em> query property to the given value.</p>
-</div><h4 id='method.add_filter' class='method'><code>fn <a href='#method.add_filter' class='fnname'>add_filter</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_adsense1d4/struct.AccountReportGenerateCall.html' title='google_adsense1d4::AccountReportGenerateCall'>AccountReportGenerateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.add_filter' class='method'><code>fn <a href='#method.add_filter' class='fnname'>add_filter</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_adsense1d4/struct.AccountReportGenerateCall.html' title='google_adsense1d4::AccountReportGenerateCall'>AccountReportGenerateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Filters to be run on the report.</p>
 
 <p>Append the given value to the <em>filter</em> query property.
 Each appended value will retain its original ordering and be &#39;/&#39;-separated in the URL&#39;s parameters.</p>
-</div><h4 id='method.add_dimension' class='method'><code>fn <a href='#method.add_dimension' class='fnname'>add_dimension</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_adsense1d4/struct.AccountReportGenerateCall.html' title='google_adsense1d4::AccountReportGenerateCall'>AccountReportGenerateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.add_dimension' class='method'><code>fn <a href='#method.add_dimension' class='fnname'>add_dimension</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_adsense1d4/struct.AccountReportGenerateCall.html' title='google_adsense1d4::AccountReportGenerateCall'>AccountReportGenerateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Dimensions to base the report on.</p>
 
 <p>Append the given value to the <em>dimension</em> query property.
 Each appended value will retain its original ordering and be &#39;/&#39;-separated in the URL&#39;s parameters.</p>
-</div><h4 id='method.currency' class='method'><code>fn <a href='#method.currency' class='fnname'>currency</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_adsense1d4/struct.AccountReportGenerateCall.html' title='google_adsense1d4::AccountReportGenerateCall'>AccountReportGenerateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.currency' class='method'><code>fn <a href='#method.currency' class='fnname'>currency</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_adsense1d4/struct.AccountReportGenerateCall.html' title='google_adsense1d4::AccountReportGenerateCall'>AccountReportGenerateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Optional currency to use when reporting on monetary metrics. Defaults to the account&#39;s currency if not set.</p>
 
 <p>Sets the <em>currency</em> query property to the given value.</p>
-</div><h4 id='method.delegate' class='method'><code>fn <a href='#method.delegate' class='fnname'>delegate</a>(self, new_value: &amp;'a mut <a class='trait' href='../google_adsense1d4/trait.Delegate.html' title='google_adsense1d4::Delegate'>Delegate</a>) -&gt; <a class='struct' href='../google_adsense1d4/struct.AccountReportGenerateCall.html' title='google_adsense1d4::AccountReportGenerateCall'>AccountReportGenerateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.delegate' class='method'><code>fn <a href='#method.delegate' class='fnname'>delegate</a>(self, new_value: &amp;'a mut <a class='trait' href='../google_adsense1d4/trait.Delegate.html' title='google_adsense1d4::Delegate'>Delegate</a>) -&gt; <a class='struct' href='../google_adsense1d4/struct.AccountReportGenerateCall.html' title='google_adsense1d4::AccountReportGenerateCall'>AccountReportGenerateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>The delegate implementation is consulted whenever there is an intermediate result, or if something goes wrong
 while executing the actual API request.</p>
 
 <p>It should be used to handle progress information, and to implement a certain level of resilience.</p>
 
 <p>Sets the <em>delegate</em> property to the given value.</p>
-</div><h4 id='method.param' class='method'><code>fn <a href='#method.param' class='fnname'>param</a>&lt;T&gt;(self, name: T, value: T) -&gt; <a class='struct' href='../google_adsense1d4/struct.AccountReportGenerateCall.html' title='google_adsense1d4::AccountReportGenerateCall'>AccountReportGenerateCall</a>&lt;'a, C, A&gt; <span class='where'>where T: <a class='trait' href='https://doc.rust-lang.org/nightly/core/convert/trait.AsRef.html' title='core::convert::AsRef'>AsRef</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>&gt;</span></code></h4>
+</div><h4 id='method.param' class='method'><code>fn <a href='#method.param' class='fnname'>param</a>&lt;T&gt;(self, name: T, value: T) -&gt; <a class='struct' href='../google_adsense1d4/struct.AccountReportGenerateCall.html' title='google_adsense1d4::AccountReportGenerateCall'>AccountReportGenerateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where T: <a class='trait' href='https://doc.rust-lang.org/nightly/core/convert/trait.AsRef.html' title='core::convert::AsRef'>AsRef</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>&gt;</span></code></h4>
 <div class='docblock'><p>Set any additional parameter of the query string used in the request.
 It should be used to set parameters which are not yet available through their own
 setters.</p>
@@ -168,7 +168,7 @@ which have their own setter method. If done anyway, the request will fail.</p>
 <li><em>fields</em> (query-string) - Selector specifying which fields to include in a partial response.</li>
 <li><em>alt</em> (query-string) - Data format for the response.</li>
 </ul>
-</div><h4 id='method.add_scope' class='method'><code>fn <a href='#method.add_scope' class='fnname'>add_scope</a>&lt;T&gt;(self, scope: T) -&gt; <a class='struct' href='../google_adsense1d4/struct.AccountReportGenerateCall.html' title='google_adsense1d4::AccountReportGenerateCall'>AccountReportGenerateCall</a>&lt;'a, C, A&gt; <span class='where'>where T: <a class='trait' href='https://doc.rust-lang.org/nightly/core/convert/trait.AsRef.html' title='core::convert::AsRef'>AsRef</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>&gt;</span></code></h4>
+</div><h4 id='method.add_scope' class='method'><code>fn <a href='#method.add_scope' class='fnname'>add_scope</a>&lt;T&gt;(self, scope: T) -&gt; <a class='struct' href='../google_adsense1d4/struct.AccountReportGenerateCall.html' title='google_adsense1d4::AccountReportGenerateCall'>AccountReportGenerateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where T: <a class='trait' href='https://doc.rust-lang.org/nightly/core/convert/trait.AsRef.html' title='core::convert::AsRef'>AsRef</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>&gt;</span></code></h4>
 <div class='docblock'><p>Identifies the authorization scope for the method you are building.</p>
 
 <p>Use this method to actively specify which scope should be used, instead the default <code>Scope</code> variant
@@ -180,7 +180,7 @@ tokens for more than one scope.</p>
 <p>Usually there is more than one suitable scope to authorize an operation, some of which may
 encompass more rights than others. For example, for listing resources, a <em>read-only</em> scope will be
 sufficient, a read-write scope will do as well.</p>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_adsense1d4/trait.CallBuilder.html' title='google_adsense1d4::CallBuilder'>CallBuilder</a> for <a class='struct' href='../google_adsense1d4/struct.AccountReportGenerateCall.html' title='google_adsense1d4::AccountReportGenerateCall'>AccountReportGenerateCall</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-8896' class='srclink' href='../src/google_adsense1d4/home/byron/dev/rust/google-apis-rs/target/debug/build/google-adsense1d4-892d2220cc554ca7/out/lib.rs.html#21354' title='goto source code'>[src]</a></span></h3>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='trait' href='../google_adsense1d4/trait.CallBuilder.html' title='google_adsense1d4::CallBuilder'>CallBuilder</a> for <a class='struct' href='../google_adsense1d4/struct.AccountReportGenerateCall.html' title='google_adsense1d4::AccountReportGenerateCall'>AccountReportGenerateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-8380' class='srclink' href='../src/google_adsense1d4/home/byron/dev/rust/google-apis-rs/target/debug/build/google-adsense1d4-473fc93e90e6287d/out/lib.rs.html#18297' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 

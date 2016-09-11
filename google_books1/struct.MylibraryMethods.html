@@ -47,8 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-15328' class='srclink' href='../src/google_books1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-books1-db76eda366438a0a/out/lib.rs.html#33654-33656' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct MylibraryMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
+               </span><a id='src-14737' class='srclink' href='../src/google_books1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-books1-29cf73b28d86da5b/out/lib.rs.html#26973-26975' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct MylibraryMethods&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>mylibrary</em> resources.
 It is not used directly, but through the <code>Books</code> hub.</p>
@@ -74,8 +74,8 @@ It is not used directly, but through the <code>Books</code> hub.</p>
 <span class='comment'>// like `annotations_delete(...)`, `annotations_insert(...)`, `annotations_list(...)`, `annotations_summary(...)`, `annotations_update(...)`, `bookshelves_add_volume(...)`, `bookshelves_clear_volumes(...)`, `bookshelves_get(...)`, `bookshelves_list(...)`, `bookshelves_move_volume(...)`, `bookshelves_remove_volume(...)`, `bookshelves_volumes_list(...)`, `readingpositions_get(...)` and `readingpositions_set_position(...)`</span>
 <span class='comment'>// to build up your call.</span>
 <span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>mylibrary</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_books1/struct.MylibraryMethods.html' title='google_books1::MylibraryMethods'>MylibraryMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-15337' class='srclink' href='../src/google_books1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-books1-db76eda366438a0a/out/lib.rs.html#33658-33928' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.bookshelves_clear_volumes' class='method'><code>fn <a href='#method.bookshelves_clear_volumes' class='fnname'>bookshelves_clear_volumes</a>(&amp;self, shelf: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_books1/struct.MylibraryBookshelveClearVolumeCall.html' title='google_books1::MylibraryBookshelveClearVolumeCall'>MylibraryBookshelveClearVolumeCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='struct' href='../google_books1/struct.MylibraryMethods.html' title='google_books1::MylibraryMethods'>MylibraryMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-14746' class='srclink' href='../src/google_books1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-books1-29cf73b28d86da5b/out/lib.rs.html#26977-27247' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.bookshelves_clear_volumes' class='method'><code>fn <a href='#method.bookshelves_clear_volumes' class='fnname'>bookshelves_clear_volumes</a>(&amp;self, shelf: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_books1/struct.MylibraryBookshelveClearVolumeCall.html' title='google_books1::MylibraryBookshelveClearVolumeCall'>MylibraryBookshelveClearVolumeCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Clears all volumes from a bookshelf.</p>
@@ -84,7 +84,7 @@ It is not used directly, but through the <code>Books</code> hub.</p>
 <ul>
 <li><code>shelf</code> - ID of bookshelf from which to remove a volume.</li>
 </ul>
-</div><h4 id='method.bookshelves_move_volume' class='method'><code>fn <a href='#method.bookshelves_move_volume' class='fnname'>bookshelves_move_volume</a>(&amp;self, shelf: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, volume_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, volume_position: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>) -&gt; <a class='struct' href='../google_books1/struct.MylibraryBookshelveMoveVolumeCall.html' title='google_books1::MylibraryBookshelveMoveVolumeCall'>MylibraryBookshelveMoveVolumeCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.bookshelves_move_volume' class='method'><code>fn <a href='#method.bookshelves_move_volume' class='fnname'>bookshelves_move_volume</a>(&amp;self, shelf: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, volume_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, volume_position: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>) -&gt; <a class='struct' href='../google_books1/struct.MylibraryBookshelveMoveVolumeCall.html' title='google_books1::MylibraryBookshelveMoveVolumeCall'>MylibraryBookshelveMoveVolumeCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Moves a volume within a bookshelf.</p>
@@ -95,7 +95,7 @@ It is not used directly, but through the <code>Books</code> hub.</p>
 <li><code>volumeId</code> - ID of volume to move.</li>
 <li><code>volumePosition</code> - Position on shelf to move the item (0 puts the item before the current first item, 1 puts it between the first and the second and so on.)</li>
 </ul>
-</div><h4 id='method.bookshelves_volumes_list' class='method'><code>fn <a href='#method.bookshelves_volumes_list' class='fnname'>bookshelves_volumes_list</a>(&amp;self, shelf: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_books1/struct.MylibraryBookshelveVolumeListCall.html' title='google_books1::MylibraryBookshelveVolumeListCall'>MylibraryBookshelveVolumeListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.bookshelves_volumes_list' class='method'><code>fn <a href='#method.bookshelves_volumes_list' class='fnname'>bookshelves_volumes_list</a>(&amp;self, shelf: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_books1/struct.MylibraryBookshelveVolumeListCall.html' title='google_books1::MylibraryBookshelveVolumeListCall'>MylibraryBookshelveVolumeListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Gets volume information for volumes on a bookshelf.</p>
@@ -104,7 +104,7 @@ It is not used directly, but through the <code>Books</code> hub.</p>
 <ul>
 <li><code>shelf</code> - The bookshelf ID or name retrieve volumes for.</li>
 </ul>
-</div><h4 id='method.annotations_summary' class='method'><code>fn <a href='#method.annotations_summary' class='fnname'>annotations_summary</a>(&amp;self, layer_ids: &amp;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;, volume_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_books1/struct.MylibraryAnnotationSummaryCall.html' title='google_books1::MylibraryAnnotationSummaryCall'>MylibraryAnnotationSummaryCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.annotations_summary' class='method'><code>fn <a href='#method.annotations_summary' class='fnname'>annotations_summary</a>(&amp;self, layer_ids: &amp;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;, volume_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_books1/struct.MylibraryAnnotationSummaryCall.html' title='google_books1::MylibraryAnnotationSummaryCall'>MylibraryAnnotationSummaryCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Gets the summary of specified layers.</p>
@@ -114,7 +114,7 @@ It is not used directly, but through the <code>Books</code> hub.</p>
 <li><code>layerIds</code> - Array of layer IDs to get the summary for.</li>
 <li><code>volumeId</code> - Volume id to get the summary for.</li>
 </ul>
-</div><h4 id='method.annotations_delete' class='method'><code>fn <a href='#method.annotations_delete' class='fnname'>annotations_delete</a>(&amp;self, annotation_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_books1/struct.MylibraryAnnotationDeleteCall.html' title='google_books1::MylibraryAnnotationDeleteCall'>MylibraryAnnotationDeleteCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.annotations_delete' class='method'><code>fn <a href='#method.annotations_delete' class='fnname'>annotations_delete</a>(&amp;self, annotation_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_books1/struct.MylibraryAnnotationDeleteCall.html' title='google_books1::MylibraryAnnotationDeleteCall'>MylibraryAnnotationDeleteCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Deletes an annotation.</p>
@@ -123,7 +123,7 @@ It is not used directly, but through the <code>Books</code> hub.</p>
 <ul>
 <li><code>annotationId</code> - The ID for the annotation to delete.</li>
 </ul>
-</div><h4 id='method.bookshelves_add_volume' class='method'><code>fn <a href='#method.bookshelves_add_volume' class='fnname'>bookshelves_add_volume</a>(&amp;self, shelf: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, volume_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_books1/struct.MylibraryBookshelveAddVolumeCall.html' title='google_books1::MylibraryBookshelveAddVolumeCall'>MylibraryBookshelveAddVolumeCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.bookshelves_add_volume' class='method'><code>fn <a href='#method.bookshelves_add_volume' class='fnname'>bookshelves_add_volume</a>(&amp;self, shelf: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, volume_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_books1/struct.MylibraryBookshelveAddVolumeCall.html' title='google_books1::MylibraryBookshelveAddVolumeCall'>MylibraryBookshelveAddVolumeCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Adds a volume to a bookshelf.</p>
@@ -133,7 +133,7 @@ It is not used directly, but through the <code>Books</code> hub.</p>
 <li><code>shelf</code> - ID of bookshelf to which to add a volume.</li>
 <li><code>volumeId</code> - ID of volume to add.</li>
 </ul>
-</div><h4 id='method.annotations_insert' class='method'><code>fn <a href='#method.annotations_insert' class='fnname'>annotations_insert</a>(&amp;self, request: <a class='struct' href='../google_books1/struct.Annotation.html' title='google_books1::Annotation'>Annotation</a>) -&gt; <a class='struct' href='../google_books1/struct.MylibraryAnnotationInsertCall.html' title='google_books1::MylibraryAnnotationInsertCall'>MylibraryAnnotationInsertCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.annotations_insert' class='method'><code>fn <a href='#method.annotations_insert' class='fnname'>annotations_insert</a>(&amp;self, request: <a class='struct' href='../google_books1/struct.Annotation.html' title='google_books1::Annotation'>Annotation</a>) -&gt; <a class='struct' href='../google_books1/struct.MylibraryAnnotationInsertCall.html' title='google_books1::MylibraryAnnotationInsertCall'>MylibraryAnnotationInsertCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Inserts a new annotation.</p>
@@ -142,7 +142,7 @@ It is not used directly, but through the <code>Books</code> hub.</p>
 <ul>
 <li><code>request</code> - No description provided.</li>
 </ul>
-</div><h4 id='method.bookshelves_remove_volume' class='method'><code>fn <a href='#method.bookshelves_remove_volume' class='fnname'>bookshelves_remove_volume</a>(&amp;self, shelf: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, volume_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_books1/struct.MylibraryBookshelveRemoveVolumeCall.html' title='google_books1::MylibraryBookshelveRemoveVolumeCall'>MylibraryBookshelveRemoveVolumeCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.bookshelves_remove_volume' class='method'><code>fn <a href='#method.bookshelves_remove_volume' class='fnname'>bookshelves_remove_volume</a>(&amp;self, shelf: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, volume_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_books1/struct.MylibraryBookshelveRemoveVolumeCall.html' title='google_books1::MylibraryBookshelveRemoveVolumeCall'>MylibraryBookshelveRemoveVolumeCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Removes a volume from a bookshelf.</p>
@@ -152,11 +152,11 @@ It is not used directly, but through the <code>Books</code> hub.</p>
 <li><code>shelf</code> - ID of bookshelf from which to remove a volume.</li>
 <li><code>volumeId</code> - ID of volume to remove.</li>
 </ul>
-</div><h4 id='method.annotations_list' class='method'><code>fn <a href='#method.annotations_list' class='fnname'>annotations_list</a>(&amp;self) -&gt; <a class='struct' href='../google_books1/struct.MylibraryAnnotationListCall.html' title='google_books1::MylibraryAnnotationListCall'>MylibraryAnnotationListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.annotations_list' class='method'><code>fn <a href='#method.annotations_list' class='fnname'>annotations_list</a>(&amp;self) -&gt; <a class='struct' href='../google_books1/struct.MylibraryAnnotationListCall.html' title='google_books1::MylibraryAnnotationListCall'>MylibraryAnnotationListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Retrieves a list of annotations, possibly filtered.</p>
-</div><h4 id='method.annotations_update' class='method'><code>fn <a href='#method.annotations_update' class='fnname'>annotations_update</a>(&amp;self, request: <a class='struct' href='../google_books1/struct.Annotation.html' title='google_books1::Annotation'>Annotation</a>, annotation_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_books1/struct.MylibraryAnnotationUpdateCall.html' title='google_books1::MylibraryAnnotationUpdateCall'>MylibraryAnnotationUpdateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.annotations_update' class='method'><code>fn <a href='#method.annotations_update' class='fnname'>annotations_update</a>(&amp;self, request: <a class='struct' href='../google_books1/struct.Annotation.html' title='google_books1::Annotation'>Annotation</a>, annotation_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_books1/struct.MylibraryAnnotationUpdateCall.html' title='google_books1::MylibraryAnnotationUpdateCall'>MylibraryAnnotationUpdateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Updates an existing annotation.</p>
@@ -166,7 +166,7 @@ It is not used directly, but through the <code>Books</code> hub.</p>
 <li><code>request</code> - No description provided.</li>
 <li><code>annotationId</code> - The ID for the annotation to update.</li>
 </ul>
-</div><h4 id='method.readingpositions_set_position' class='method'><code>fn <a href='#method.readingpositions_set_position' class='fnname'>readingpositions_set_position</a>(&amp;self, volume_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, timestamp: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, position: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_books1/struct.MylibraryReadingpositionSetPositionCall.html' title='google_books1::MylibraryReadingpositionSetPositionCall'>MylibraryReadingpositionSetPositionCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.readingpositions_set_position' class='method'><code>fn <a href='#method.readingpositions_set_position' class='fnname'>readingpositions_set_position</a>(&amp;self, volume_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, timestamp: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, position: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_books1/struct.MylibraryReadingpositionSetPositionCall.html' title='google_books1::MylibraryReadingpositionSetPositionCall'>MylibraryReadingpositionSetPositionCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Sets my reading position information for a volume.</p>
@@ -177,7 +177,7 @@ It is not used directly, but through the <code>Books</code> hub.</p>
 <li><code>timestamp</code> - RFC 3339 UTC format timestamp associated with this reading position.</li>
 <li><code>position</code> - Position string for the new volume reading position.</li>
 </ul>
-</div><h4 id='method.bookshelves_get' class='method'><code>fn <a href='#method.bookshelves_get' class='fnname'>bookshelves_get</a>(&amp;self, shelf: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_books1/struct.MylibraryBookshelveGetCall.html' title='google_books1::MylibraryBookshelveGetCall'>MylibraryBookshelveGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.bookshelves_get' class='method'><code>fn <a href='#method.bookshelves_get' class='fnname'>bookshelves_get</a>(&amp;self, shelf: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_books1/struct.MylibraryBookshelveGetCall.html' title='google_books1::MylibraryBookshelveGetCall'>MylibraryBookshelveGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Retrieves metadata for a specific bookshelf belonging to the authenticated user.</p>
@@ -186,11 +186,11 @@ It is not used directly, but through the <code>Books</code> hub.</p>
 <ul>
 <li><code>shelf</code> - ID of bookshelf to retrieve.</li>
 </ul>
-</div><h4 id='method.bookshelves_list' class='method'><code>fn <a href='#method.bookshelves_list' class='fnname'>bookshelves_list</a>(&amp;self) -&gt; <a class='struct' href='../google_books1/struct.MylibraryBookshelveListCall.html' title='google_books1::MylibraryBookshelveListCall'>MylibraryBookshelveListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.bookshelves_list' class='method'><code>fn <a href='#method.bookshelves_list' class='fnname'>bookshelves_list</a>(&amp;self) -&gt; <a class='struct' href='../google_books1/struct.MylibraryBookshelveListCall.html' title='google_books1::MylibraryBookshelveListCall'>MylibraryBookshelveListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Retrieves a list of bookshelves belonging to the authenticated user.</p>
-</div><h4 id='method.readingpositions_get' class='method'><code>fn <a href='#method.readingpositions_get' class='fnname'>readingpositions_get</a>(&amp;self, volume_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_books1/struct.MylibraryReadingpositionGetCall.html' title='google_books1::MylibraryReadingpositionGetCall'>MylibraryReadingpositionGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.readingpositions_get' class='method'><code>fn <a href='#method.readingpositions_get' class='fnname'>readingpositions_get</a>(&amp;self, volume_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_books1/struct.MylibraryReadingpositionGetCall.html' title='google_books1::MylibraryReadingpositionGetCall'>MylibraryReadingpositionGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Retrieves my reading position information for a volume.</p>
@@ -199,7 +199,7 @@ It is not used directly, but through the <code>Books</code> hub.</p>
 <ul>
 <li><code>volumeId</code> - ID of volume for which to retrieve a reading position.</li>
 </ul>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_books1/trait.MethodsBuilder.html' title='google_books1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_books1/struct.MylibraryMethods.html' title='google_books1::MylibraryMethods'>MylibraryMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-15333' class='srclink' href='../src/google_books1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-books1-db76eda366438a0a/out/lib.rs.html#33657' title='goto source code'>[src]</a></span></h3>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='trait' href='../google_books1/trait.MethodsBuilder.html' title='google_books1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_books1/struct.MylibraryMethods.html' title='google_books1::MylibraryMethods'>MylibraryMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-14742' class='srclink' href='../src/google_books1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-books1-29cf73b28d86da5b/out/lib.rs.html#26976' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 

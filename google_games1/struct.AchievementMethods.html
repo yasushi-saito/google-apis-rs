@@ -47,8 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-19721' class='srclink' href='../src/google_games1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-games1-b9bb0f61d1030f8c/out/lib.rs.html#42644-42646' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct AchievementMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
+               </span><a id='src-18320' class='srclink' href='../src/google_games1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-games1-00b2e1f28385176b/out/lib.rs.html#32917-32919' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct AchievementMethods&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>achievement</em> resources.
 It is not used directly, but through the <code>Games</code> hub.</p>
@@ -74,8 +74,8 @@ It is not used directly, but through the <code>Games</code> hub.</p>
 <span class='comment'>// like `increment(...)`, `list(...)`, `reveal(...)`, `set_steps_at_least(...)`, `unlock(...)` and `update_multiple(...)`</span>
 <span class='comment'>// to build up your call.</span>
 <span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>achievements</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_games1/struct.AchievementMethods.html' title='google_games1::AchievementMethods'>AchievementMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-19730' class='srclink' href='../src/google_games1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-games1-b9bb0f61d1030f8c/out/lib.rs.html#42648-42749' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self, player_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_games1/struct.AchievementListCall.html' title='google_games1::AchievementListCall'>AchievementListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='struct' href='../google_games1/struct.AchievementMethods.html' title='google_games1::AchievementMethods'>AchievementMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-18329' class='srclink' href='../src/google_games1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-games1-00b2e1f28385176b/out/lib.rs.html#32921-33028' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self, player_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_games1/struct.AchievementListCall.html' title='google_games1::AchievementListCall'>AchievementListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Lists the progress for all your application&#39;s achievements for the currently authenticated player.</p>
@@ -84,7 +84,7 @@ It is not used directly, but through the <code>Games</code> hub.</p>
 <ul>
 <li><code>playerId</code> - A player ID. A value of me may be used in place of the authenticated player&#39;s ID.</li>
 </ul>
-</div><h4 id='method.increment' class='method'><code>fn <a href='#method.increment' class='fnname'>increment</a>(&amp;self, achievement_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, steps_to_increment: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>) -&gt; <a class='struct' href='../google_games1/struct.AchievementIncrementCall.html' title='google_games1::AchievementIncrementCall'>AchievementIncrementCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.increment' class='method'><code>fn <a href='#method.increment' class='fnname'>increment</a>(&amp;self, achievement_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, steps_to_increment: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>) -&gt; <a class='struct' href='../google_games1/struct.AchievementIncrementCall.html' title='google_games1::AchievementIncrementCall'>AchievementIncrementCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Increments the steps of the achievement with the given ID for the currently authenticated player.</p>
@@ -94,7 +94,7 @@ It is not used directly, but through the <code>Games</code> hub.</p>
 <li><code>achievementId</code> - The ID of the achievement used by this method.</li>
 <li><code>stepsToIncrement</code> - The number of steps to increment.</li>
 </ul>
-</div><h4 id='method.set_steps_at_least' class='method'><code>fn <a href='#method.set_steps_at_least' class='fnname'>set_steps_at_least</a>(&amp;self, achievement_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, steps: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>) -&gt; <a class='struct' href='../google_games1/struct.AchievementSetStepsAtLeastCall.html' title='google_games1::AchievementSetStepsAtLeastCall'>AchievementSetStepsAtLeastCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.set_steps_at_least' class='method'><code>fn <a href='#method.set_steps_at_least' class='fnname'>set_steps_at_least</a>(&amp;self, achievement_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, steps: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>) -&gt; <a class='struct' href='../google_games1/struct.AchievementSetStepsAtLeastCall.html' title='google_games1::AchievementSetStepsAtLeastCall'>AchievementSetStepsAtLeastCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Sets the steps for the currently authenticated player towards unlocking an achievement. If the steps parameter is less than the current number of steps that the player already gained for the achievement, the achievement is not modified.</p>
@@ -104,7 +104,7 @@ It is not used directly, but through the <code>Games</code> hub.</p>
 <li><code>achievementId</code> - The ID of the achievement used by this method.</li>
 <li><code>steps</code> - The minimum value to set the steps to.</li>
 </ul>
-</div><h4 id='method.update_multiple' class='method'><code>fn <a href='#method.update_multiple' class='fnname'>update_multiple</a>(&amp;self, request: <a class='struct' href='../google_games1/struct.AchievementUpdateMultipleRequest.html' title='google_games1::AchievementUpdateMultipleRequest'>AchievementUpdateMultipleRequest</a>) -&gt; <a class='struct' href='../google_games1/struct.AchievementUpdateMultipleCall.html' title='google_games1::AchievementUpdateMultipleCall'>AchievementUpdateMultipleCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.update_multiple' class='method'><code>fn <a href='#method.update_multiple' class='fnname'>update_multiple</a>(&amp;self, request: <a class='struct' href='../google_games1/struct.AchievementUpdateMultipleRequest.html' title='google_games1::AchievementUpdateMultipleRequest'>AchievementUpdateMultipleRequest</a>) -&gt; <a class='struct' href='../google_games1/struct.AchievementUpdateMultipleCall.html' title='google_games1::AchievementUpdateMultipleCall'>AchievementUpdateMultipleCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Updates multiple achievements for the currently authenticated player.</p>
@@ -113,7 +113,7 @@ It is not used directly, but through the <code>Games</code> hub.</p>
 <ul>
 <li><code>request</code> - No description provided.</li>
 </ul>
-</div><h4 id='method.reveal' class='method'><code>fn <a href='#method.reveal' class='fnname'>reveal</a>(&amp;self, achievement_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_games1/struct.AchievementRevealCall.html' title='google_games1::AchievementRevealCall'>AchievementRevealCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.reveal' class='method'><code>fn <a href='#method.reveal' class='fnname'>reveal</a>(&amp;self, achievement_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_games1/struct.AchievementRevealCall.html' title='google_games1::AchievementRevealCall'>AchievementRevealCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Sets the state of the achievement with the given ID to REVEALED for the currently authenticated player.</p>
@@ -122,7 +122,7 @@ It is not used directly, but through the <code>Games</code> hub.</p>
 <ul>
 <li><code>achievementId</code> - The ID of the achievement used by this method.</li>
 </ul>
-</div><h4 id='method.unlock' class='method'><code>fn <a href='#method.unlock' class='fnname'>unlock</a>(&amp;self, achievement_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_games1/struct.AchievementUnlockCall.html' title='google_games1::AchievementUnlockCall'>AchievementUnlockCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.unlock' class='method'><code>fn <a href='#method.unlock' class='fnname'>unlock</a>(&amp;self, achievement_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_games1/struct.AchievementUnlockCall.html' title='google_games1::AchievementUnlockCall'>AchievementUnlockCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Unlocks this achievement for the currently authenticated player.</p>
@@ -131,7 +131,7 @@ It is not used directly, but through the <code>Games</code> hub.</p>
 <ul>
 <li><code>achievementId</code> - The ID of the achievement used by this method.</li>
 </ul>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_games1/trait.MethodsBuilder.html' title='google_games1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_games1/struct.AchievementMethods.html' title='google_games1::AchievementMethods'>AchievementMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-19726' class='srclink' href='../src/google_games1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-games1-b9bb0f61d1030f8c/out/lib.rs.html#42647' title='goto source code'>[src]</a></span></h3>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='trait' href='../google_games1/trait.MethodsBuilder.html' title='google_games1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_games1/struct.AchievementMethods.html' title='google_games1::AchievementMethods'>AchievementMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-18325' class='srclink' href='../src/google_games1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-games1-00b2e1f28385176b/out/lib.rs.html#32920' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 

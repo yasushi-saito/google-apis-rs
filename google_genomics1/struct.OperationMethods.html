@@ -47,8 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-13213' class='srclink' href='../src/google_genomics1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-genomics1-16ed839a8e049b7f/out/lib.rs.html#28593-28595' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct OperationMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
+               </span><a id='src-12205' class='srclink' href='../src/google_genomics1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-genomics1-40179d636dbccd1e/out/lib.rs.html#22037-22039' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct OperationMethods&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>operation</em> resources.
 It is not used directly, but through the <code>Genomics</code> hub.</p>
@@ -74,8 +74,8 @@ It is not used directly, but through the <code>Genomics</code> hub.</p>
 <span class='comment'>// like `cancel(...)`, `get(...)` and `list(...)`</span>
 <span class='comment'>// to build up your call.</span>
 <span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>operations</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_genomics1/struct.OperationMethods.html' title='google_genomics1::OperationMethods'>OperationMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-13222' class='srclink' href='../src/google_genomics1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-genomics1-16ed839a8e049b7f/out/lib.rs.html#28597-28646' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.cancel' class='method'><code>fn <a href='#method.cancel' class='fnname'>cancel</a>(&amp;self, request: <a class='struct' href='../google_genomics1/struct.CancelOperationRequest.html' title='google_genomics1::CancelOperationRequest'>CancelOperationRequest</a>, name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_genomics1/struct.OperationCancelCall.html' title='google_genomics1::OperationCancelCall'>OperationCancelCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='struct' href='../google_genomics1/struct.OperationMethods.html' title='google_genomics1::OperationMethods'>OperationMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-12214' class='srclink' href='../src/google_genomics1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-genomics1-40179d636dbccd1e/out/lib.rs.html#22041-22090' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.cancel' class='method'><code>fn <a href='#method.cancel' class='fnname'>cancel</a>(&amp;self, request: <a class='struct' href='../google_genomics1/struct.CancelOperationRequest.html' title='google_genomics1::CancelOperationRequest'>CancelOperationRequest</a>, name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_genomics1/struct.OperationCancelCall.html' title='google_genomics1::OperationCancelCall'>OperationCancelCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Starts asynchronous cancellation on a long-running operation. The server makes a best effort to cancel the operation, but success is not guaranteed. Clients may use Operations.GetOperation or Operations.ListOperations to check whether the cancellation succeeded or the operation completed despite cancellation.</p>
@@ -85,7 +85,7 @@ It is not used directly, but through the <code>Genomics</code> hub.</p>
 <li><code>request</code> - No description provided.</li>
 <li><code>name</code> - The name of the operation resource to be cancelled.</li>
 </ul>
-</div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_genomics1/struct.OperationGetCall.html' title='google_genomics1::OperationGetCall'>OperationGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_genomics1/struct.OperationGetCall.html' title='google_genomics1::OperationGetCall'>OperationGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Gets the latest state of a long-running operation. Clients can use this method to poll the operation result at intervals as recommended by the API service.</p>
@@ -94,7 +94,7 @@ It is not used directly, but through the <code>Genomics</code> hub.</p>
 <ul>
 <li><code>name</code> - The name of the operation resource.</li>
 </ul>
-</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self, name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_genomics1/struct.OperationListCall.html' title='google_genomics1::OperationListCall'>OperationListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self, name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_genomics1/struct.OperationListCall.html' title='google_genomics1::OperationListCall'>OperationListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Lists operations that match the specified filter in the request.</p>
@@ -103,7 +103,7 @@ It is not used directly, but through the <code>Genomics</code> hub.</p>
 <ul>
 <li><code>name</code> - The name of the operation collection.</li>
 </ul>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_genomics1/trait.MethodsBuilder.html' title='google_genomics1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_genomics1/struct.OperationMethods.html' title='google_genomics1::OperationMethods'>OperationMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-13218' class='srclink' href='../src/google_genomics1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-genomics1-16ed839a8e049b7f/out/lib.rs.html#28596' title='goto source code'>[src]</a></span></h3>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='trait' href='../google_genomics1/trait.MethodsBuilder.html' title='google_genomics1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_genomics1/struct.OperationMethods.html' title='google_genomics1::OperationMethods'>OperationMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-12210' class='srclink' href='../src/google_genomics1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-genomics1-40179d636dbccd1e/out/lib.rs.html#22040' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 

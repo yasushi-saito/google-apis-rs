@@ -47,8 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-4600' class='srclink' href='../src/google_adsensehost4d1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-adsensehost4d1-f7dbc29f81bbb760/out/lib.rs.html#9734-9736' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct UrlchannelMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
+               </span><a id='src-4249' class='srclink' href='../src/google_adsensehost4d1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-adsensehost4d1-cc5114a81cc19bd5/out/lib.rs.html#7658-7660' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct UrlchannelMethods&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>urlchannel</em> resources.
 It is not used directly, but through the <code>AdSenseHost</code> hub.</p>
@@ -74,8 +74,8 @@ It is not used directly, but through the <code>AdSenseHost</code> hub.</p>
 <span class='comment'>// like `delete(...)`, `insert(...)` and `list(...)`</span>
 <span class='comment'>// to build up your call.</span>
 <span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>urlchannels</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_adsensehost4d1/struct.UrlchannelMethods.html' title='google_adsensehost4d1::UrlchannelMethods'>UrlchannelMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-4609' class='srclink' href='../src/google_adsensehost4d1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-adsensehost4d1-f7dbc29f81bbb760/out/lib.rs.html#9738-9789' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.insert' class='method'><code>fn <a href='#method.insert' class='fnname'>insert</a>(&amp;self, request: <a class='struct' href='../google_adsensehost4d1/struct.UrlChannel.html' title='google_adsensehost4d1::UrlChannel'>UrlChannel</a>, ad_client_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_adsensehost4d1/struct.UrlchannelInsertCall.html' title='google_adsensehost4d1::UrlchannelInsertCall'>UrlchannelInsertCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='struct' href='../google_adsensehost4d1/struct.UrlchannelMethods.html' title='google_adsensehost4d1::UrlchannelMethods'>UrlchannelMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-4258' class='srclink' href='../src/google_adsensehost4d1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-adsensehost4d1-cc5114a81cc19bd5/out/lib.rs.html#7662-7713' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.insert' class='method'><code>fn <a href='#method.insert' class='fnname'>insert</a>(&amp;self, request: <a class='struct' href='../google_adsensehost4d1/struct.UrlChannel.html' title='google_adsensehost4d1::UrlChannel'>UrlChannel</a>, ad_client_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_adsensehost4d1/struct.UrlchannelInsertCall.html' title='google_adsensehost4d1::UrlchannelInsertCall'>UrlchannelInsertCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Add a new URL channel to the host AdSense account.</p>
@@ -85,7 +85,7 @@ It is not used directly, but through the <code>AdSenseHost</code> hub.</p>
 <li><code>request</code> - No description provided.</li>
 <li><code>adClientId</code> - Ad client to which the new URL channel will be added.</li>
 </ul>
-</div><h4 id='method.delete' class='method'><code>fn <a href='#method.delete' class='fnname'>delete</a>(&amp;self, ad_client_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, url_channel_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_adsensehost4d1/struct.UrlchannelDeleteCall.html' title='google_adsensehost4d1::UrlchannelDeleteCall'>UrlchannelDeleteCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.delete' class='method'><code>fn <a href='#method.delete' class='fnname'>delete</a>(&amp;self, ad_client_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, url_channel_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_adsensehost4d1/struct.UrlchannelDeleteCall.html' title='google_adsensehost4d1::UrlchannelDeleteCall'>UrlchannelDeleteCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Delete a URL channel from the host AdSense account.</p>
@@ -95,7 +95,7 @@ It is not used directly, but through the <code>AdSenseHost</code> hub.</p>
 <li><code>adClientId</code> - Ad client from which to delete the URL channel.</li>
 <li><code>urlChannelId</code> - URL channel to delete.</li>
 </ul>
-</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self, ad_client_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_adsensehost4d1/struct.UrlchannelListCall.html' title='google_adsensehost4d1::UrlchannelListCall'>UrlchannelListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self, ad_client_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_adsensehost4d1/struct.UrlchannelListCall.html' title='google_adsensehost4d1::UrlchannelListCall'>UrlchannelListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>List all host URL channels in the host AdSense account.</p>
@@ -104,7 +104,7 @@ It is not used directly, but through the <code>AdSenseHost</code> hub.</p>
 <ul>
 <li><code>adClientId</code> - Ad client for which to list URL channels.</li>
 </ul>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_adsensehost4d1/trait.MethodsBuilder.html' title='google_adsensehost4d1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_adsensehost4d1/struct.UrlchannelMethods.html' title='google_adsensehost4d1::UrlchannelMethods'>UrlchannelMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-4605' class='srclink' href='../src/google_adsensehost4d1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-adsensehost4d1-f7dbc29f81bbb760/out/lib.rs.html#9737' title='goto source code'>[src]</a></span></h3>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='trait' href='../google_adsensehost4d1/trait.MethodsBuilder.html' title='google_adsensehost4d1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_adsensehost4d1/struct.UrlchannelMethods.html' title='google_adsensehost4d1::UrlchannelMethods'>UrlchannelMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-4254' class='srclink' href='../src/google_adsensehost4d1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-adsensehost4d1-cc5114a81cc19bd5/out/lib.rs.html#7661' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 

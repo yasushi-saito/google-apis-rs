@@ -47,8 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-0' class='srclink' href='../src/google_storage1/src/lib.rs.html#5-238' title='goto source code'>[src]</a></span></h1>
-<div class='docblock'><p>This documentation was generated from <em>storage</em> crate version <em>0.1.14+20160330</em>, where <em>20160330</em> is the exact revision of the <em>storage:v1</em> schema built by the <a href="http://www.makotemplates.org/">mako</a> code generator <em>v0.1.14</em>.</p>
+               </span><a id='src-0' class='srclink' href='../src/google_storage1/src/lib.rs.html#5-239' title='goto source code'>[src]</a></span></h1>
+<div class='docblock'><p>This documentation was generated from <em>storage</em> crate version <em>0.1.15+20160901</em>, where <em>20160901</em> is the exact revision of the <em>storage:v1</em> schema built by the <a href="http://www.makotemplates.org/">mako</a> code generator <em>v0.1.15</em>.</p>
 
 <p>Everything else about the <em>storage</em> <em>v1</em> API can be found at the
 <a href="https://developers.google.com/storage/docs/json_api/">official documentation site</a>.
@@ -211,19 +211,20 @@ google-storage1 = &quot;*&quot;
 <span class='comment'>// execute the final call using `doit()`.</span>
 <span class='comment'>// Values shown here are possibly random and not representative !</span>
 <span class='kw'>let</span> <span class='ident'>result</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>objects</span>().<span class='ident'>rewrite</span>(<span class='ident'>req</span>, <span class='string'>&quot;sourceBucket&quot;</span>, <span class='string'>&quot;sourceObject&quot;</span>, <span class='string'>&quot;destinationBucket&quot;</span>, <span class='string'>&quot;destinationObject&quot;</span>)
-             .<span class='ident'>source_generation</span>(<span class='string'>&quot;accusam&quot;</span>)
-             .<span class='ident'>rewrite_token</span>(<span class='string'>&quot;dolores&quot;</span>)
-             .<span class='ident'>projection</span>(<span class='string'>&quot;consetetur&quot;</span>)
-             .<span class='ident'>max_bytes_rewritten_per_call</span>(<span class='string'>&quot;dolor&quot;</span>)
-             .<span class='ident'>if_source_metageneration_not_match</span>(<span class='string'>&quot;aliquyam&quot;</span>)
-             .<span class='ident'>if_source_metageneration_match</span>(<span class='string'>&quot;elitr&quot;</span>)
-             .<span class='ident'>if_source_generation_not_match</span>(<span class='string'>&quot;ea&quot;</span>)
-             .<span class='ident'>if_source_generation_match</span>(<span class='string'>&quot;et&quot;</span>)
-             .<span class='ident'>if_metageneration_not_match</span>(<span class='string'>&quot;Stet&quot;</span>)
-             .<span class='ident'>if_metageneration_match</span>(<span class='string'>&quot;sed&quot;</span>)
-             .<span class='ident'>if_generation_not_match</span>(<span class='string'>&quot;dolor&quot;</span>)
-             .<span class='ident'>if_generation_match</span>(<span class='string'>&quot;sanctus&quot;</span>)
-             .<span class='ident'>destination_predefined_acl</span>(<span class='string'>&quot;dolore&quot;</span>)
+             .<span class='ident'>source_generation</span>(<span class='string'>&quot;elitr&quot;</span>)
+             .<span class='ident'>rewrite_token</span>(<span class='string'>&quot;ea&quot;</span>)
+             .<span class='ident'>projection</span>(<span class='string'>&quot;et&quot;</span>)
+             .<span class='ident'>max_bytes_rewritten_per_call</span>(<span class='string'>&quot;Stet&quot;</span>)
+             .<span class='ident'>if_source_metageneration_not_match</span>(<span class='string'>&quot;sed&quot;</span>)
+             .<span class='ident'>if_source_metageneration_match</span>(<span class='string'>&quot;dolor&quot;</span>)
+             .<span class='ident'>if_source_generation_not_match</span>(<span class='string'>&quot;sanctus&quot;</span>)
+             .<span class='ident'>if_source_generation_match</span>(<span class='string'>&quot;dolore&quot;</span>)
+             .<span class='ident'>if_metageneration_not_match</span>(<span class='string'>&quot;Lorem&quot;</span>)
+             .<span class='ident'>if_metageneration_match</span>(<span class='string'>&quot;consetetur&quot;</span>)
+             .<span class='ident'>if_generation_not_match</span>(<span class='string'>&quot;consetetur&quot;</span>)
+             .<span class='ident'>if_generation_match</span>(<span class='string'>&quot;eirmod&quot;</span>)
+             .<span class='ident'>destination_predefined_acl</span>(<span class='string'>&quot;labore&quot;</span>)
+             .<span class='ident'>destination_kms_key_name</span>(<span class='string'>&quot;gubergren&quot;</span>)
              .<span class='ident'>doit</span>();
  
 <span class='kw'>match</span> <span class='ident'>result</span> {
@@ -383,6 +384,13 @@ It is not used directly, but through the <code>Storage</code> hub.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
+                           <td><a class='struct' href='struct.BucketEncryption.html'
+                                  title='google_storage1::BucketEncryption'>BucketEncryption</a></td>
+                           <td class='docblock short'>
+                                <p>Encryption configuration used by default for newly inserted objects, when no encryption config is specified.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
                            <td><a class='struct' href='struct.BucketGetCall.html'
                                   title='google_storage1::BucketGetCall'>BucketGetCall</a></td>
                            <td class='docblock short'>
@@ -478,7 +486,7 @@ It is not used directly, but through the <code>Storage</code> hub.</p>
                            <td><a class='struct' href='struct.BucketWebsite.html'
                                   title='google_storage1::BucketWebsite'>BucketWebsite</a></td>
                            <td class='docblock short'>
-                                <p>The bucket&#39;s website configuration.</p>
+                                <p>The bucket&#39;s website configuration, controlling how the service behaves when accessing bucket contents as a web site. See the Static Website Examples for more information.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>

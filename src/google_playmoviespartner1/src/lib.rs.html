@@ -230,17 +230,17 @@
 <span class='comment'>// This file was generated automatically from &#39;src/mako/api/lib.rs.mako&#39;</span>
 <span class='comment'>// DO NOT EDIT !</span>
 
-<span class='doccomment'>//! This documentation was generated from *playmoviespartner* crate version *0.1.14+20150812*, where *20150812* is the exact revision of the *playmoviespartner:v1* schema built by the [mako](http://www.makotemplates.org/) code generator *v0.1.14*.</span>
+<span class='doccomment'>//! This documentation was generated from *Play Movies* crate version *0.1.15+20160518*, where *20160518* is the exact revision of the *playmoviespartner:v1* schema built by the [mako](http://www.makotemplates.org/) code generator *v0.1.15*.</span>
 <span class='doccomment'>//! </span>
-<span class='doccomment'>//! Everything else about the *playmoviespartner* *v1* API can be found at the</span>
+<span class='doccomment'>//! Everything else about the *Play Movies* *v1* API can be found at the</span>
 <span class='doccomment'>//! [official documentation site](https://developers.google.com/playmoviespartner/).</span>
 <span class='doccomment'>//! The original source code is [on github](https://github.com/Byron/google-apis-rs/tree/master/gen/playmoviespartner1).</span>
 <span class='doccomment'>//! # Features</span>
 <span class='doccomment'>//! </span>
-<span class='doccomment'>//! Handle the following *Resources* with ease from the central [hub](struct.Playmoviespartner.html) ... </span>
+<span class='doccomment'>//! Handle the following *Resources* with ease from the central [hub](struct.PlayMovies.html) ... </span>
 <span class='doccomment'>//! </span>
 <span class='doccomment'>//! * accounts</span>
-<span class='doccomment'>//!  * [*avails list*](struct.AccountAvailListCall.html), [*experience locales get*](struct.AccountExperienceLocaleGetCall.html), [*experience locales list*](struct.AccountExperienceLocaleListCall.html), [*orders get*](struct.AccountOrderGetCall.html), [*orders list*](struct.AccountOrderListCall.html), [*store infos country get*](struct.AccountStoreInfoCountryGetCall.html) and [*store infos list*](struct.AccountStoreInfoListCall.html)</span>
+<span class='doccomment'>//!  * [*avails get*](struct.AccountAvailGetCall.html), [*avails list*](struct.AccountAvailListCall.html), [*components list*](struct.AccountComponentListCall.html), [*components type get*](struct.AccountComponentTypeGetCall.html), [*experience locales get*](struct.AccountExperienceLocaleGetCall.html), [*experience locales list*](struct.AccountExperienceLocaleListCall.html), [*orders get*](struct.AccountOrderGetCall.html), [*orders list*](struct.AccountOrderListCall.html), [*store infos country get*](struct.AccountStoreInfoCountryGetCall.html) and [*store infos list*](struct.AccountStoreInfoListCall.html)</span>
 <span class='doccomment'>//! </span>
 <span class='doccomment'>//! </span>
 <span class='doccomment'>//! </span>
@@ -251,7 +251,7 @@
 <span class='doccomment'>//! </span>
 <span class='doccomment'>//! The API is structured into the following primary items:</span>
 <span class='doccomment'>//! </span>
-<span class='doccomment'>//! * **[Hub](struct.Playmoviespartner.html)**</span>
+<span class='doccomment'>//! * **[Hub](struct.PlayMovies.html)**</span>
 <span class='doccomment'>//!     * a central object to maintain state and allow accessing all *Activities*</span>
 <span class='doccomment'>//!     * creates [*Method Builders*](trait.MethodsBuilder.html) which in turn</span>
 <span class='doccomment'>//!       allow access to individual [*Call Builders*](trait.CallBuilder.html)</span>
@@ -275,7 +275,7 @@
 <span class='doccomment'>//! Or specifically ...</span>
 <span class='doccomment'>//! </span>
 <span class='doccomment'>//! ```ignore</span>
-<span class='doccomment'>//! let r = hub.accounts().store_infos_country_get(...).doit()</span>
+<span class='doccomment'>//! let r = hub.accounts().avails_get(...).doit()</span>
 <span class='doccomment'>//! ```</span>
 <span class='doccomment'>//! </span>
 <span class='doccomment'>//! The `resource()` and `activity(...)` calls create [builders][builder-pattern]. The second one dealing with `Activities` </span>
@@ -304,7 +304,7 @@
 <span class='doccomment'>//! # #[test] fn egal() {</span>
 <span class='doccomment'>//! use std::default::Default;</span>
 <span class='doccomment'>//! use oauth2::{Authenticator, DefaultAuthenticatorDelegate, ApplicationSecret, MemoryStorage};</span>
-<span class='doccomment'>//! use playmoviespartner1::Playmoviespartner;</span>
+<span class='doccomment'>//! use playmoviespartner1::PlayMovies;</span>
 <span class='doccomment'>//! </span>
 <span class='doccomment'>//! // Get an ApplicationSecret instance by some means. It contains the `client_id` and </span>
 <span class='doccomment'>//! // `client_secret`, among other things.</span>
@@ -317,11 +317,11 @@
 <span class='doccomment'>//! let auth = Authenticator::new(&amp;secret, DefaultAuthenticatorDelegate,</span>
 <span class='doccomment'>//!                               hyper::Client::new(),</span>
 <span class='doccomment'>//!                               &lt;MemoryStorage as Default&gt;::default(), None);</span>
-<span class='doccomment'>//! let mut hub = Playmoviespartner::new(hyper::Client::new(), auth);</span>
+<span class='doccomment'>//! let mut hub = PlayMovies::new(hyper::Client::new(), auth);</span>
 <span class='doccomment'>//! // You can configure optional parameters by calling the respective setters at will, and</span>
 <span class='doccomment'>//! // execute the final call using `doit()`.</span>
 <span class='doccomment'>//! // Values shown here are possibly random and not representative !</span>
-<span class='doccomment'>//! let result = hub.accounts().store_infos_country_get(&quot;accountId&quot;, &quot;videoId&quot;, &quot;country&quot;)</span>
+<span class='doccomment'>//! let result = hub.accounts().avails_get(&quot;accountId&quot;, &quot;availId&quot;)</span>
 <span class='doccomment'>//!              .doit();</span>
 <span class='doccomment'>//! </span>
 <span class='doccomment'>//! match result {</span>

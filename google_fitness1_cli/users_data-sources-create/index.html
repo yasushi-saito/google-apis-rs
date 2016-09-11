@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Data Sources Create - fitness v0.3.6+20151021</title>
+  <title>Data Sources Create - fitness v0.3.6+20160801</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -32,7 +32,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> fitness v0.3.6+20151021</a>
+        <a href=".." class="icon icon-home"> fitness v0.3.6+20160801</a>
         
       </div>
 
@@ -150,7 +150,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">fitness v0.3.6+20151021</a>
+        <a href="..">fitness v0.3.6+20160801</a>
       </nav>
 
       
@@ -184,6 +184,7 @@
 <li><em>https://www.googleapis.com/auth/fitness.activity.write</em></li>
 <li><em>https://www.googleapis.com/auth/fitness.body.write</em></li>
 <li><em>https://www.googleapis.com/auth/fitness.location.write</em></li>
+<li><em>https://www.googleapis.com/auth/fitness.nutrition.write</em></li>
 </ul>
 <p>If unset, the scope for this method defaults to <em>https://www.googleapis.com/auth/fitness.activity.write</em>.
 You can set the scope for this method like this: <code>fitness1 --scope &lt;scope&gt; users data-sources-create ...</code></p>
@@ -204,6 +205,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
     name: string
     package-name: string
     version: string
+  data-quality-standard: [string]
   data-stream-id: string
   data-stream-name: string
   data-type:
@@ -240,7 +242,14 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
-<p><code>..    data-stream-id=et</code></p>
+<p><code>..    data-quality-standard=et</code></p>
+<ul>
+<li></li>
+<li>Each invocation of this argument appends the given value to the array.</li>
+</ul>
+</li>
+<li>
+<p><code>data-stream-id=dolores</code></p>
 <ul>
 <li>
 <p>A unique identifier for the data stream produced by this data source. The identifier includes:</p>
@@ -254,44 +263,44 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <p>The exact format of the data stream ID created by a REST client is: type:dataType.name:developer project number:device.manufacturer:device.model:device.uid:dataStreamName </p>
 <p>When any of the optional fields that comprise of the data stream ID are blank, they will be omitted from the data stream ID. The minnimum viable data stream ID would be: type:dataType.name:developer project number</p>
 <p>Finally, the developer project number is obfuscated when read by any REST or Android client that did not create the data source. Only the data source creator will see the developer project number in clear and normal form.
-<em> <code>data-stream-name=dolores</code>
+<em> <code>data-stream-name=kasd</code>
     - The stream name uniquely identifies this particular data source among other data sources of the same type from the same underlying producer. Setting the stream name is optional, but should be done whenever an application exposes two streams for the same data type, or when a device has two equivalent sensors.
-</em> <code>data-type    name=kasd</code>
+</em> <code>data-type    name=accusam</code>
     - Each data type has a unique, namespaced, name. All data types in the com.google namespace are shared as part of the platform.</p>
 </li>
 </ul>
 </li>
 <li>
-<p><code>..device    manufacturer=accusam</code></p>
+<p><code>..device    manufacturer=takimata</code></p>
 <ul>
 <li>Manufacturer of the product/hardware.</li>
 </ul>
 </li>
-<li><code>model=takimata</code><ul>
+<li><code>model=justo</code><ul>
 <li>End-user visible model name for the device.</li>
 </ul>
 </li>
-<li><code>type=justo</code><ul>
+<li><code>type=amet.</code><ul>
 <li>A constant representing the type of the device.</li>
 </ul>
 </li>
-<li><code>uid=amet.</code><ul>
+<li><code>uid=erat</code><ul>
 <li>The serial number or other unique ID for the hardware. This field is obfuscated when read by any REST or Android client that did not create the data source. Only the data source creator will see the uid field in clear and normal form.</li>
 </ul>
 </li>
 <li>
-<p><code>version=erat</code></p>
+<p><code>version=labore</code></p>
 <ul>
 <li>Version string for the device hardware/software.</li>
 </ul>
 </li>
 <li>
-<p><code>..    name=labore</code></p>
+<p><code>..    name=sea</code></p>
 <ul>
 <li>An end-user visible name for this data source.</li>
 </ul>
 </li>
-<li><code>type=sea</code><ul>
+<li><code>type=nonumy</code><ul>
 <li>A constant describing the type of this data source. Indicates whether this data source produces raw or derived data.</li>
 </ul>
 </li>
@@ -405,7 +414,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <!--
 MkDocs version  : 0.12.2
-Docs Build Date : 2016-07-23 16:05:36.437293
+Docs Build Date : 2016-09-11 17:55:14.664534
 -->
 </body>
 </html>

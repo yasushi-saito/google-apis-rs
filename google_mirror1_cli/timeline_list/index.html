@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>List - mirror v0.3.6+20151206</title>
+  <title>List - mirror v0.3.6+20160616</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -32,7 +32,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> mirror v0.3.6+20151206</a>
+        <a href=".." class="icon icon-home"> mirror v0.3.6+20160616</a>
         
       </div>
 
@@ -230,7 +230,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">mirror v0.3.6+20151206</a>
+        <a href="..">mirror v0.3.6+20160616</a>
       </nav>
 
       
@@ -283,33 +283,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p source-item-id=string</strong></p>
+<p><strong>-p order-by=string</strong></p>
 <ul>
-<li>If provided, only items with the given sourceItemId will be returned.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p page-token=string</strong></p>
-<ul>
-<li>Token for the page of results to return.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p include-deleted=boolean</strong></p>
-<ul>
-<li>If true, tombstone records for deleted items will be returned.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p max-results=integer</strong></p>
-<ul>
-<li>The maximum number of items to include in the response, used for paging.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p pinned-only=boolean</strong></p>
-<ul>
-<li>If true, only pinned items will be returned.</li>
+<li>Controls the order in which timeline items are returned.</li>
 </ul>
 </li>
 <li>
@@ -319,9 +295,33 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p order-by=string</strong></p>
+<p><strong>-p pinned-only=boolean</strong></p>
 <ul>
-<li>Controls the order in which timeline items are returned.</li>
+<li>If true, only pinned items will be returned.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p source-item-id=string</strong></p>
+<ul>
+<li>If provided, only items with the given sourceItemId will be returned.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p max-results=integer</strong></p>
+<ul>
+<li>The maximum number of items to include in the response, used for paging.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p include-deleted=boolean</strong></p>
+<ul>
+<li>If true, tombstone records for deleted items will be returned.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p page-token=string</strong></p>
+<ul>
+<li>Token for the page of results to return.</li>
 </ul>
 </li>
 </ul>
@@ -415,7 +415,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 
 <!--
 MkDocs version  : 0.12.2
-Docs Build Date : 2016-07-23 16:05:31.573578
+Docs Build Date : 2016-09-11 17:55:00.069030
 -->
 </body>
 </html>

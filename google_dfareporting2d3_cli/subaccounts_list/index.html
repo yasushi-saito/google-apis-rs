@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>List - dfareporting v0.3.6+20160323</title>
+  <title>List - dfareporting v0.3.6+20160803</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -32,7 +32,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> dfareporting v0.3.6+20160323</a>
+        <a href=".." class="icon icon-home"> dfareporting v0.3.6+20160803</a>
         
       </div>
 
@@ -1367,7 +1367,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">dfareporting v0.3.6+20160323</a>
+        <a href="..">dfareporting v0.3.6+20160803</a>
       </nav>
 
       
@@ -1423,9 +1423,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p search-string=string</strong></p>
+<p><strong>-p sort-order=string</strong></p>
 <ul>
-<li>Allows searching for objects by name or ID. Wildcards (<em>) are allowed. For example, &#34;subaccount</em>2015&#34; will return objects with names like &#34;subaccount June 2015&#34;, &#34;subaccount April 2015&#34;, or simply &#34;subaccount 2015&#34;. Most of the searches also add wildcards implicitly at the start and the end of the search string. For example, a search string of &#34;subaccount&#34; will match objects with name &#34;my subaccount&#34;, &#34;subaccount 2015&#34;, or simply &#34;subaccount&#34;.</li>
+<li>Order of sorted results, default is ASCENDING.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p page-token=string</strong></p>
+<ul>
+<li>Value of the nextPageToken from the previous result page.</li>
 </ul>
 </li>
 <li>
@@ -1435,27 +1441,21 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p sort-field=string</strong></p>
-<ul>
-<li>Field by which to sort the list.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p sort-order=string</strong></p>
-<ul>
-<li>Order of sorted results, default is ASCENDING.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p max-results=integer</strong></p>
 <ul>
 <li>Maximum number of results to return.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p page-token=string</strong></p>
+<p><strong>-p search-string=string</strong></p>
 <ul>
-<li>Value of the nextPageToken from the previous result page.</li>
+<li>Allows searching for objects by name or ID. Wildcards (<em>) are allowed. For example, &#34;subaccount</em>2015&#34; will return objects with names like &#34;subaccount June 2015&#34;, &#34;subaccount April 2015&#34;, or simply &#34;subaccount 2015&#34;. Most of the searches also add wildcards implicitly at the start and the end of the search string. For example, a search string of &#34;subaccount&#34; will match objects with name &#34;my subaccount&#34;, &#34;subaccount 2015&#34;, or simply &#34;subaccount&#34;.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p sort-field=string</strong></p>
+<ul>
+<li>Field by which to sort the list.</li>
 </ul>
 </li>
 </ul>
@@ -1549,7 +1549,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 
 <!--
 MkDocs version  : 0.12.2
-Docs Build Date : 2016-07-23 16:05:01.976352
+Docs Build Date : 2016-09-11 17:53:54.661868
 -->
 </body>
 </html>

@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Create Auth Uri - Identity Toolkit v0.3.6+20160324</title>
+  <title>Create Auth Uri - Identity Toolkit v0.3.6+20160812</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -32,7 +32,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Identity Toolkit v0.3.6+20160324</a>
+        <a href=".." class="icon icon-home"> Identity Toolkit v0.3.6+20160812</a>
         
       </div>
 
@@ -164,7 +164,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Identity Toolkit v0.3.6+20160324</a>
+        <a href="..">Identity Toolkit v0.3.6+20160812</a>
       </nav>
 
       
@@ -198,15 +198,18 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <p>For example, a structure like this:</p>
 <pre><code>IdentitytoolkitRelyingpartyCreateAuthUriRequest:
   app-id: string
+  auth-flow-type: string
   client-id: string
   context: string
   continue-uri: string
+  hosted-domain: string
   identifier: string
   oauth-consumer-key: string
   oauth-scope: string
   openid-realm: string
   ota-app: string
   provider-id: string
+  session-id: string
 
 </code></pre>
 
@@ -216,40 +219,52 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>The app ID of the mobile app, base64(CERT_SHA1):PACKAGE_NAME for Android, BUNDLE_ID for iOS.</li>
 </ul>
 </li>
-<li><code>client-id=sit</code><ul>
+<li><code>auth-flow-type=sit</code><ul>
+<li>Explicitly specify the auth flow type. Currently only support &#34;CODE_FLOW&#34; type. The field is only used for Google provider.</li>
+</ul>
+</li>
+<li><code>client-id=stet</code><ul>
 <li>The relying party OAuth client ID.</li>
 </ul>
 </li>
-<li><code>context=stet</code><ul>
+<li><code>context=sed</code><ul>
 <li>The opaque value used by the client to maintain context info between the authentication request and the IDP callback.</li>
 </ul>
 </li>
-<li><code>continue-uri=sed</code><ul>
+<li><code>continue-uri=et</code><ul>
 <li>The URI to which the IDP redirects the user after the federated login flow.</li>
 </ul>
 </li>
-<li><code>identifier=et</code><ul>
+<li><code>hosted-domain=dolores</code><ul>
+<li>The hosted domain to restrict sign-in to accounts at that domain for Google Apps hosted accounts.</li>
+</ul>
+</li>
+<li><code>identifier=kasd</code><ul>
 <li>The email or federated ID of the user.</li>
 </ul>
 </li>
-<li><code>oauth-consumer-key=dolores</code><ul>
+<li><code>oauth-consumer-key=accusam</code><ul>
 <li>The developer&#39;s consumer key for OpenId OAuth Extension</li>
 </ul>
 </li>
-<li><code>oauth-scope=kasd</code><ul>
+<li><code>oauth-scope=takimata</code><ul>
 <li>Additional oauth scopes, beyond the basid user profile, that the user would be prompted to grant</li>
 </ul>
 </li>
-<li><code>openid-realm=accusam</code><ul>
+<li><code>openid-realm=justo</code><ul>
 <li>Optional realm for OpenID protocol. The sub string &#34;scheme://domain:port&#34; of the param &#34;continueUri&#34; is used if this is not set.</li>
 </ul>
 </li>
-<li><code>ota-app=takimata</code><ul>
+<li><code>ota-app=amet.</code><ul>
 <li>The native app package for OTA installation.</li>
 </ul>
 </li>
-<li><code>provider-id=justo</code><ul>
+<li><code>provider-id=erat</code><ul>
 <li>The IdP ID. For white listed IdPs it&#39;s a short domain name e.g. google.com, aol.com, live.net and yahoo.com. For other OpenID IdPs it&#39;s the OP identifier.</li>
+</ul>
+</li>
+<li><code>session-id=labore</code><ul>
+<li>The session_id passed by client.</li>
 </ul>
 </li>
 </ul>
@@ -362,7 +377,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <!--
 MkDocs version  : 0.12.2
-Docs Build Date : 2016-07-23 16:06:05.941538
+Docs Build Date : 2016-09-11 17:56:08.576209
 -->
 </body>
 </html>

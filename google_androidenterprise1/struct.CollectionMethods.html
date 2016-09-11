@@ -47,8 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-7099' class='srclink' href='../src/google_androidenterprise1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-androidenterprise1-c1b518bbf39d4c72/out/lib.rs.html#16011-16013' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct CollectionMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
+               </span><a id='src-9758' class='srclink' href='../src/google_androidenterprise1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-androidenterprise1-f9ed1fb9501f45a8/out/lib.rs.html#19568-19570' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct CollectionMethods&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>collection</em> resources.
 It is not used directly, but through the <code>AndroidEnterprise</code> hub.</p>
@@ -74,69 +74,69 @@ It is not used directly, but through the <code>AndroidEnterprise</code> hub.</p>
 <span class='comment'>// like `delete(...)`, `get(...)`, `insert(...)`, `list(...)`, `patch(...)` and `update(...)`</span>
 <span class='comment'>// to build up your call.</span>
 <span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>collections</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_androidenterprise1/struct.CollectionMethods.html' title='google_androidenterprise1::CollectionMethods'>CollectionMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-7108' class='srclink' href='../src/google_androidenterprise1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-androidenterprise1-c1b518bbf39d4c72/out/lib.rs.html#16015-16119' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.insert' class='method'><code>fn <a href='#method.insert' class='fnname'>insert</a>(&amp;self, request: <a class='struct' href='../google_androidenterprise1/struct.Collection.html' title='google_androidenterprise1::Collection'>Collection</a>, enterprise_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_androidenterprise1/struct.CollectionInsertCall.html' title='google_androidenterprise1::CollectionInsertCall'>CollectionInsertCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='struct' href='../google_androidenterprise1/struct.CollectionMethods.html' title='google_androidenterprise1::CollectionMethods'>CollectionMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-9767' class='srclink' href='../src/google_androidenterprise1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-androidenterprise1-f9ed1fb9501f45a8/out/lib.rs.html#19572-19676' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.patch' class='method'><code>fn <a href='#method.patch' class='fnname'>patch</a>(&amp;self, request: <a class='struct' href='../google_androidenterprise1/struct.Collection.html' title='google_androidenterprise1::Collection'>Collection</a>, enterprise_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, collection_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_androidenterprise1/struct.CollectionPatchCall.html' title='google_androidenterprise1::CollectionPatchCall'>CollectionPatchCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>Creates a new collection.</p>
+<p>Updates a collection. This method supports patch semantics.</p>
 
 <h1 id='arguments' class='section-header'><a href='#arguments'>Arguments</a></h1>
 <ul>
 <li><code>request</code> - No description provided.</li>
 <li><code>enterpriseId</code> - The ID of the enterprise.</li>
-</ul>
-</div><h4 id='method.patch' class='method'><code>fn <a href='#method.patch' class='fnname'>patch</a>(&amp;self, request: <a class='struct' href='../google_androidenterprise1/struct.Collection.html' title='google_androidenterprise1::Collection'>Collection</a>, enterprise_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, collection_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_androidenterprise1/struct.CollectionPatchCall.html' title='google_androidenterprise1::CollectionPatchCall'>CollectionPatchCall</a>&lt;'a, C, A&gt;</code></h4>
-<div class='docblock'><p>Create a builder to help you perform the following task:</p>
-
-<p>Updates a collection. This method supports patch semantics.</p>
-
-<h1 id='arguments-1' class='section-header'><a href='#arguments-1'>Arguments</a></h1>
-<ul>
-<li><code>request</code> - No description provided.</li>
-<li><code>enterpriseId</code> - The ID of the enterprise.</li>
 <li><code>collectionId</code> - The ID of the collection.</li>
 </ul>
-</div><h4 id='method.update' class='method'><code>fn <a href='#method.update' class='fnname'>update</a>(&amp;self, request: <a class='struct' href='../google_androidenterprise1/struct.Collection.html' title='google_androidenterprise1::Collection'>Collection</a>, enterprise_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, collection_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_androidenterprise1/struct.CollectionUpdateCall.html' title='google_androidenterprise1::CollectionUpdateCall'>CollectionUpdateCall</a>&lt;'a, C, A&gt;</code></h4>
-<div class='docblock'><p>Create a builder to help you perform the following task:</p>
-
-<p>Updates a collection.</p>
-
-<h1 id='arguments-2' class='section-header'><a href='#arguments-2'>Arguments</a></h1>
-<ul>
-<li><code>request</code> - No description provided.</li>
-<li><code>enterpriseId</code> - The ID of the enterprise.</li>
-<li><code>collectionId</code> - The ID of the collection.</li>
-</ul>
-</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self, enterprise_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_androidenterprise1/struct.CollectionListCall.html' title='google_androidenterprise1::CollectionListCall'>CollectionListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self, enterprise_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_androidenterprise1/struct.CollectionListCall.html' title='google_androidenterprise1::CollectionListCall'>CollectionListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Retrieves the IDs of all the collections for an enterprise.</p>
 
-<h1 id='arguments-3' class='section-header'><a href='#arguments-3'>Arguments</a></h1>
+<h1 id='arguments-1' class='section-header'><a href='#arguments-1'>Arguments</a></h1>
 <ul>
 <li><code>enterpriseId</code> - The ID of the enterprise.</li>
 </ul>
-</div><h4 id='method.delete' class='method'><code>fn <a href='#method.delete' class='fnname'>delete</a>(&amp;self, enterprise_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, collection_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_androidenterprise1/struct.CollectionDeleteCall.html' title='google_androidenterprise1::CollectionDeleteCall'>CollectionDeleteCall</a>&lt;'a, C, A&gt;</code></h4>
-<div class='docblock'><p>Create a builder to help you perform the following task:</p>
-
-<p>Deletes a collection.</p>
-
-<h1 id='arguments-4' class='section-header'><a href='#arguments-4'>Arguments</a></h1>
-<ul>
-<li><code>enterpriseId</code> - The ID of the enterprise.</li>
-<li><code>collectionId</code> - The ID of the collection.</li>
-</ul>
-</div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, enterprise_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, collection_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_androidenterprise1/struct.CollectionGetCall.html' title='google_androidenterprise1::CollectionGetCall'>CollectionGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, enterprise_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, collection_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_androidenterprise1/struct.CollectionGetCall.html' title='google_androidenterprise1::CollectionGetCall'>CollectionGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Retrieves the details of a collection.</p>
 
-<h1 id='arguments-5' class='section-header'><a href='#arguments-5'>Arguments</a></h1>
+<h1 id='arguments-2' class='section-header'><a href='#arguments-2'>Arguments</a></h1>
 <ul>
 <li><code>enterpriseId</code> - The ID of the enterprise.</li>
 <li><code>collectionId</code> - The ID of the collection.</li>
 </ul>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_androidenterprise1/trait.MethodsBuilder.html' title='google_androidenterprise1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_androidenterprise1/struct.CollectionMethods.html' title='google_androidenterprise1::CollectionMethods'>CollectionMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-7104' class='srclink' href='../src/google_androidenterprise1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-androidenterprise1-c1b518bbf39d4c72/out/lib.rs.html#16014' title='goto source code'>[src]</a></span></h3>
+</div><h4 id='method.delete' class='method'><code>fn <a href='#method.delete' class='fnname'>delete</a>(&amp;self, enterprise_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, collection_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_androidenterprise1/struct.CollectionDeleteCall.html' title='google_androidenterprise1::CollectionDeleteCall'>CollectionDeleteCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Deletes a collection.</p>
+
+<h1 id='arguments-3' class='section-header'><a href='#arguments-3'>Arguments</a></h1>
+<ul>
+<li><code>enterpriseId</code> - The ID of the enterprise.</li>
+<li><code>collectionId</code> - The ID of the collection.</li>
+</ul>
+</div><h4 id='method.insert' class='method'><code>fn <a href='#method.insert' class='fnname'>insert</a>(&amp;self, request: <a class='struct' href='../google_androidenterprise1/struct.Collection.html' title='google_androidenterprise1::Collection'>Collection</a>, enterprise_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_androidenterprise1/struct.CollectionInsertCall.html' title='google_androidenterprise1::CollectionInsertCall'>CollectionInsertCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Creates a new collection.</p>
+
+<h1 id='arguments-4' class='section-header'><a href='#arguments-4'>Arguments</a></h1>
+<ul>
+<li><code>request</code> - No description provided.</li>
+<li><code>enterpriseId</code> - The ID of the enterprise.</li>
+</ul>
+</div><h4 id='method.update' class='method'><code>fn <a href='#method.update' class='fnname'>update</a>(&amp;self, request: <a class='struct' href='../google_androidenterprise1/struct.Collection.html' title='google_androidenterprise1::Collection'>Collection</a>, enterprise_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, collection_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_androidenterprise1/struct.CollectionUpdateCall.html' title='google_androidenterprise1::CollectionUpdateCall'>CollectionUpdateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Updates a collection.</p>
+
+<h1 id='arguments-5' class='section-header'><a href='#arguments-5'>Arguments</a></h1>
+<ul>
+<li><code>request</code> - No description provided.</li>
+<li><code>enterpriseId</code> - The ID of the enterprise.</li>
+<li><code>collectionId</code> - The ID of the collection.</li>
+</ul>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='trait' href='../google_androidenterprise1/trait.MethodsBuilder.html' title='google_androidenterprise1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_androidenterprise1/struct.CollectionMethods.html' title='google_androidenterprise1::CollectionMethods'>CollectionMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-9763' class='srclink' href='../src/google_androidenterprise1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-androidenterprise1-f9ed1fb9501f45a8/out/lib.rs.html#19571' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 

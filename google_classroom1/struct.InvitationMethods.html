@@ -47,8 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-3210' class='srclink' href='../src/google_classroom1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-classroom1-f999c1e8e0aae831/out/lib.rs.html#6991-6993' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct InvitationMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
+               </span><a id='src-7182' class='srclink' href='../src/google_classroom1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-classroom1-1f991e06295dc64f/out/lib.rs.html#13520-13522' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct InvitationMethods&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>invitation</em> resources.
 It is not used directly, but through the <code>Classroom</code> hub.</p>
@@ -74,8 +74,8 @@ It is not used directly, but through the <code>Classroom</code> hub.</p>
 <span class='comment'>// like `accept(...)`, `create(...)`, `delete(...)`, `get(...)` and `list(...)`</span>
 <span class='comment'>// to build up your call.</span>
 <span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>invitations</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_classroom1/struct.InvitationMethods.html' title='google_classroom1::InvitationMethods'>InvitationMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-3219' class='srclink' href='../src/google_classroom1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-classroom1-f999c1e8e0aae831/out/lib.rs.html#6995-7066' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.delete' class='method'><code>fn <a href='#method.delete' class='fnname'>delete</a>(&amp;self, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_classroom1/struct.InvitationDeleteCall.html' title='google_classroom1::InvitationDeleteCall'>InvitationDeleteCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='struct' href='../google_classroom1/struct.InvitationMethods.html' title='google_classroom1::InvitationMethods'>InvitationMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-7191' class='srclink' href='../src/google_classroom1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-classroom1-1f991e06295dc64f/out/lib.rs.html#13524-13595' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.delete' class='method'><code>fn <a href='#method.delete' class='fnname'>delete</a>(&amp;self, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_classroom1/struct.InvitationDeleteCall.html' title='google_classroom1::InvitationDeleteCall'>InvitationDeleteCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Deletes an invitation. This method returns the following error codes: * <code>PERMISSION_DENIED</code> if the requesting user is not permitted to delete the requested invitation or for access errors. * <code>NOT_FOUND</code> if no invitation exists with the requested ID.</p>
@@ -84,7 +84,11 @@ It is not used directly, but through the <code>Classroom</code> hub.</p>
 <ul>
 <li><code>id</code> - Identifier of the invitation to delete.</li>
 </ul>
-</div><h4 id='method.create' class='method'><code>fn <a href='#method.create' class='fnname'>create</a>(&amp;self, request: <a class='struct' href='../google_classroom1/struct.Invitation.html' title='google_classroom1::Invitation'>Invitation</a>) -&gt; <a class='struct' href='../google_classroom1/struct.InvitationCreateCall.html' title='google_classroom1::InvitationCreateCall'>InvitationCreateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self) -&gt; <a class='struct' href='../google_classroom1/struct.InvitationListCall.html' title='google_classroom1::InvitationListCall'>InvitationListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Returns a list of invitations that the requesting user is permitted to view, restricted to those that match the list request. <em>Note:</em> At least one of <code>user_id</code> or <code>course_id</code> must be supplied. Both fields can be supplied. This method returns the following error codes: * <code>PERMISSION_DENIED</code> for access errors.</p>
+</div><h4 id='method.create' class='method'><code>fn <a href='#method.create' class='fnname'>create</a>(&amp;self, request: <a class='struct' href='../google_classroom1/struct.Invitation.html' title='google_classroom1::Invitation'>Invitation</a>) -&gt; <a class='struct' href='../google_classroom1/struct.InvitationCreateCall.html' title='google_classroom1::InvitationCreateCall'>InvitationCreateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Creates an invitation. Only one invitation for a user and course may exist at a time. Delete and re-create an invitation to make changes. This method returns the following error codes: * <code>PERMISSION_DENIED</code> if the requesting user is not permitted to create invitations for this course or for access errors. * <code>NOT_FOUND</code> if the course or the user does not exist. * <code>FAILED_PRECONDITION</code> if the requested user&#39;s account is disabled or if the user already has this role or a role with greater permissions. * <code>ALREADY_EXISTS</code> if an invitation for the specified user and course already exists.</p>
@@ -93,11 +97,7 @@ It is not used directly, but through the <code>Classroom</code> hub.</p>
 <ul>
 <li><code>request</code> - No description provided.</li>
 </ul>
-</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self) -&gt; <a class='struct' href='../google_classroom1/struct.InvitationListCall.html' title='google_classroom1::InvitationListCall'>InvitationListCall</a>&lt;'a, C, A&gt;</code></h4>
-<div class='docblock'><p>Create a builder to help you perform the following task:</p>
-
-<p>Returns a list of invitations that the requesting user is permitted to view, restricted to those that match the list request. <em>Note:</em> At least one of <code>user_id</code> or <code>course_id</code> must be supplied. Both fields can be supplied. This method returns the following error codes: * <code>PERMISSION_DENIED</code> for access errors.</p>
-</div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_classroom1/struct.InvitationGetCall.html' title='google_classroom1::InvitationGetCall'>InvitationGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_classroom1/struct.InvitationGetCall.html' title='google_classroom1::InvitationGetCall'>InvitationGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Returns an invitation. This method returns the following error codes: * <code>PERMISSION_DENIED</code> if the requesting user is not permitted to view the requested invitation or for access errors. * <code>NOT_FOUND</code> if no invitation exists with the requested ID.</p>
@@ -106,7 +106,7 @@ It is not used directly, but through the <code>Classroom</code> hub.</p>
 <ul>
 <li><code>id</code> - Identifier of the invitation to return.</li>
 </ul>
-</div><h4 id='method.accept' class='method'><code>fn <a href='#method.accept' class='fnname'>accept</a>(&amp;self, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_classroom1/struct.InvitationAcceptCall.html' title='google_classroom1::InvitationAcceptCall'>InvitationAcceptCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.accept' class='method'><code>fn <a href='#method.accept' class='fnname'>accept</a>(&amp;self, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_classroom1/struct.InvitationAcceptCall.html' title='google_classroom1::InvitationAcceptCall'>InvitationAcceptCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Accepts an invitation, removing it and adding the invited user to the teachers or students (as appropriate) of the specified course. Only the invited user may accept an invitation. This method returns the following error codes: * <code>PERMISSION_DENIED</code> if the requesting user is not permitted to accept the requested invitation or for access errors. * <code>FAILED_PRECONDITION</code> for the following request errors: * CourseMemberLimitReached * CourseNotModifiable * CourseTeacherLimitReached * UserGroupsMembershipLimitReached * <code>NOT_FOUND</code> if no invitation exists with the requested ID.</p>
@@ -115,7 +115,7 @@ It is not used directly, but through the <code>Classroom</code> hub.</p>
 <ul>
 <li><code>id</code> - Identifier of the invitation to accept.</li>
 </ul>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_classroom1/trait.MethodsBuilder.html' title='google_classroom1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_classroom1/struct.InvitationMethods.html' title='google_classroom1::InvitationMethods'>InvitationMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-3215' class='srclink' href='../src/google_classroom1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-classroom1-f999c1e8e0aae831/out/lib.rs.html#6994' title='goto source code'>[src]</a></span></h3>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='trait' href='../google_classroom1/trait.MethodsBuilder.html' title='google_classroom1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_classroom1/struct.InvitationMethods.html' title='google_classroom1::InvitationMethods'>InvitationMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-7187' class='srclink' href='../src/google_classroom1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-classroom1-1f991e06295dc64f/out/lib.rs.html#13523' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 

@@ -48,7 +48,7 @@
                        [<span class='inner'>&#x2212;</span>]
                    </a>
                </span><a id='src-0' class='srclink' href='../src/google_adsense1d4/src/lib.rs.html#5-233' title='goto source code'>[src]</a></span></h1>
-<div class='docblock'><p>This documentation was generated from <em>AdSense</em> crate version <em>0.1.14+20160405</em>, where <em>20160405</em> is the exact revision of the <em>adsense:v1.4</em> schema built by the <a href="http://www.makotemplates.org/">mako</a> code generator <em>v0.1.14</em>.</p>
+<div class='docblock'><p>This documentation was generated from <em>AdSense</em> crate version <em>0.1.15+20160907</em>, where <em>20160907</em> is the exact revision of the <em>adsense:v1.4</em> schema built by the <a href="http://www.makotemplates.org/">mako</a> code generator <em>v0.1.15</em>.</p>
 
 <p>Everything else about the <em>AdSense</em> <em>v1d4</em> API can be found at the
 <a href="https://developers.google.com/adsense/management/">official documentation site</a>.
@@ -218,7 +218,7 @@ google-adsense1d4 = &quot;*&quot;
 <span class='comment'>// execute the final call using `doit()`.</span>
 <span class='comment'>// Values shown here are possibly random and not representative !</span>
 <span class='kw'>let</span> <span class='ident'>result</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>accounts</span>().<span class='ident'>reports_generate</span>(<span class='string'>&quot;accountId&quot;</span>, <span class='string'>&quot;startDate&quot;</span>, <span class='string'>&quot;endDate&quot;</span>)
-             .<span class='ident'>use_timezone_reporting</span>(<span class='boolvalue'>false</span>)
+             .<span class='ident'>use_timezone_reporting</span>(<span class='bool-val'>false</span>)
              .<span class='ident'>start_index</span>(<span class='op'>-</span><span class='number'>37</span>)
              .<span class='ident'>add_sort</span>(<span class='string'>&quot;eirmod&quot;</span>)
              .<span class='ident'>add_metric</span>(<span class='string'>&quot;At&quot;</span>)

@@ -48,7 +48,7 @@
                        [<span class='inner'>&#x2212;</span>]
                    </a>
                </span><a id='src-0' class='srclink' href='../src/google_deploymentmanager2/src/lib.rs.html#5-207' title='goto source code'>[src]</a></span></h1>
-<div class='docblock'><p>This documentation was generated from <em>Deployment Manager</em> crate version <em>0.1.14+20160406</em>, where <em>20160406</em> is the exact revision of the <em>deploymentmanager:v2</em> schema built by the <a href="http://www.makotemplates.org/">mako</a> code generator <em>v0.1.14</em>.</p>
+<div class='docblock'><p>This documentation was generated from <em>Deployment Manager</em> crate version <em>0.1.15+20160901</em>, where <em>20160901</em> is the exact revision of the <em>deploymentmanager:v2</em> schema built by the <a href="http://www.makotemplates.org/">mako</a> code generator <em>v0.1.15</em>.</p>
 
 <p>Everything else about the <em>Deployment Manager</em> <em>v2</em> API can be found at the
 <a href="https://cloud.google.com/deployment-manager/">official documentation site</a>.
@@ -181,7 +181,7 @@ google-deploymentmanager2 = &quot;*&quot;
 <span class='comment'>// execute the final call using `doit()`.</span>
 <span class='comment'>// Values shown here are possibly random and not representative !</span>
 <span class='kw'>let</span> <span class='ident'>result</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>deployments</span>().<span class='ident'>update</span>(<span class='ident'>req</span>, <span class='string'>&quot;project&quot;</span>, <span class='string'>&quot;deployment&quot;</span>)
-             .<span class='ident'>preview</span>(<span class='boolvalue'>true</span>)
+             .<span class='ident'>preview</span>(<span class='bool-val'>true</span>)
              .<span class='ident'>delete_policy</span>(<span class='string'>&quot;dolor&quot;</span>)
              .<span class='ident'>create_policy</span>(<span class='string'>&quot;et&quot;</span>)
              .<span class='ident'>doit</span>();

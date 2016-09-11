@@ -47,8 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-12404' class='srclink' href='../src/google_admin1_directory/home/byron/dev/rust/google-apis-rs/target/debug/build/google-admin1_directory-a39c9338e60059e5/out/lib.rs.html#28386-28388' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct OrgunitMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
+               </span><a id='src-11621' class='srclink' href='../src/google_admin1_directory/home/byron/dev/rust/google-apis-rs/target/debug/build/google-admin1_directory-9f6fa564a6722c32/out/lib.rs.html#22180-22182' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct OrgunitMethods&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>orgunit</em> resources.
 It is not used directly, but through the <code>Directory</code> hub.</p>
@@ -74,8 +74,8 @@ It is not used directly, but through the <code>Directory</code> hub.</p>
 <span class='comment'>// like `delete(...)`, `get(...)`, `insert(...)`, `list(...)`, `patch(...)` and `update(...)`</span>
 <span class='comment'>// to build up your call.</span>
 <span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>orgunits</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_admin1_directory/struct.OrgunitMethods.html' title='google_admin1_directory::OrgunitMethods'>OrgunitMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-12413' class='srclink' href='../src/google_admin1_directory/home/byron/dev/rust/google-apis-rs/target/debug/build/google-admin1_directory-a39c9338e60059e5/out/lib.rs.html#28390-28497' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self, customer_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_admin1_directory/struct.OrgunitListCall.html' title='google_admin1_directory::OrgunitListCall'>OrgunitListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='struct' href='../google_admin1_directory/struct.OrgunitMethods.html' title='google_admin1_directory::OrgunitMethods'>OrgunitMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-11630' class='srclink' href='../src/google_admin1_directory/home/byron/dev/rust/google-apis-rs/target/debug/build/google-admin1_directory-9f6fa564a6722c32/out/lib.rs.html#22184-22291' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self, customer_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_admin1_directory/struct.OrgunitListCall.html' title='google_admin1_directory::OrgunitListCall'>OrgunitListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Retrieve all Organization Units</p>
@@ -84,7 +84,7 @@ It is not used directly, but through the <code>Directory</code> hub.</p>
 <ul>
 <li><code>customerId</code> - Immutable id of the Google Apps account</li>
 </ul>
-</div><h4 id='method.insert' class='method'><code>fn <a href='#method.insert' class='fnname'>insert</a>(&amp;self, request: <a class='struct' href='../google_admin1_directory/struct.OrgUnit.html' title='google_admin1_directory::OrgUnit'>OrgUnit</a>, customer_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_admin1_directory/struct.OrgunitInsertCall.html' title='google_admin1_directory::OrgunitInsertCall'>OrgunitInsertCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.insert' class='method'><code>fn <a href='#method.insert' class='fnname'>insert</a>(&amp;self, request: <a class='struct' href='../google_admin1_directory/struct.OrgUnit.html' title='google_admin1_directory::OrgUnit'>OrgUnit</a>, customer_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_admin1_directory/struct.OrgunitInsertCall.html' title='google_admin1_directory::OrgunitInsertCall'>OrgunitInsertCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Add Organization Unit</p>
@@ -94,7 +94,7 @@ It is not used directly, but through the <code>Directory</code> hub.</p>
 <li><code>request</code> - No description provided.</li>
 <li><code>customerId</code> - Immutable id of the Google Apps account</li>
 </ul>
-</div><h4 id='method.update' class='method'><code>fn <a href='#method.update' class='fnname'>update</a>(&amp;self, request: <a class='struct' href='../google_admin1_directory/struct.OrgUnit.html' title='google_admin1_directory::OrgUnit'>OrgUnit</a>, customer_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, org_unit_path: &amp;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;) -&gt; <a class='struct' href='../google_admin1_directory/struct.OrgunitUpdateCall.html' title='google_admin1_directory::OrgunitUpdateCall'>OrgunitUpdateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.update' class='method'><code>fn <a href='#method.update' class='fnname'>update</a>(&amp;self, request: <a class='struct' href='../google_admin1_directory/struct.OrgUnit.html' title='google_admin1_directory::OrgUnit'>OrgUnit</a>, customer_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, org_unit_path: &amp;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;) -&gt; <a class='struct' href='../google_admin1_directory/struct.OrgunitUpdateCall.html' title='google_admin1_directory::OrgunitUpdateCall'>OrgunitUpdateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Update Organization Unit</p>
@@ -105,7 +105,7 @@ It is not used directly, but through the <code>Directory</code> hub.</p>
 <li><code>customerId</code> - Immutable id of the Google Apps account</li>
 <li><code>orgUnitPath</code> - Full path of the organization unit or its Id</li>
 </ul>
-</div><h4 id='method.delete' class='method'><code>fn <a href='#method.delete' class='fnname'>delete</a>(&amp;self, customer_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, org_unit_path: &amp;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;) -&gt; <a class='struct' href='../google_admin1_directory/struct.OrgunitDeleteCall.html' title='google_admin1_directory::OrgunitDeleteCall'>OrgunitDeleteCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.delete' class='method'><code>fn <a href='#method.delete' class='fnname'>delete</a>(&amp;self, customer_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, org_unit_path: &amp;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;) -&gt; <a class='struct' href='../google_admin1_directory/struct.OrgunitDeleteCall.html' title='google_admin1_directory::OrgunitDeleteCall'>OrgunitDeleteCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Remove Organization Unit</p>
@@ -115,7 +115,7 @@ It is not used directly, but through the <code>Directory</code> hub.</p>
 <li><code>customerId</code> - Immutable id of the Google Apps account</li>
 <li><code>orgUnitPath</code> - Full path of the organization unit or its Id</li>
 </ul>
-</div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, customer_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, org_unit_path: &amp;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;) -&gt; <a class='struct' href='../google_admin1_directory/struct.OrgunitGetCall.html' title='google_admin1_directory::OrgunitGetCall'>OrgunitGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, customer_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, org_unit_path: &amp;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;) -&gt; <a class='struct' href='../google_admin1_directory/struct.OrgunitGetCall.html' title='google_admin1_directory::OrgunitGetCall'>OrgunitGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Retrieve Organization Unit</p>
@@ -125,7 +125,7 @@ It is not used directly, but through the <code>Directory</code> hub.</p>
 <li><code>customerId</code> - Immutable id of the Google Apps account</li>
 <li><code>orgUnitPath</code> - Full path of the organization unit or its Id</li>
 </ul>
-</div><h4 id='method.patch' class='method'><code>fn <a href='#method.patch' class='fnname'>patch</a>(&amp;self, request: <a class='struct' href='../google_admin1_directory/struct.OrgUnit.html' title='google_admin1_directory::OrgUnit'>OrgUnit</a>, customer_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, org_unit_path: &amp;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;) -&gt; <a class='struct' href='../google_admin1_directory/struct.OrgunitPatchCall.html' title='google_admin1_directory::OrgunitPatchCall'>OrgunitPatchCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.patch' class='method'><code>fn <a href='#method.patch' class='fnname'>patch</a>(&amp;self, request: <a class='struct' href='../google_admin1_directory/struct.OrgUnit.html' title='google_admin1_directory::OrgUnit'>OrgUnit</a>, customer_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, org_unit_path: &amp;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;) -&gt; <a class='struct' href='../google_admin1_directory/struct.OrgunitPatchCall.html' title='google_admin1_directory::OrgunitPatchCall'>OrgunitPatchCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Update Organization Unit. This method supports patch semantics.</p>
@@ -136,7 +136,7 @@ It is not used directly, but through the <code>Directory</code> hub.</p>
 <li><code>customerId</code> - Immutable id of the Google Apps account</li>
 <li><code>orgUnitPath</code> - Full path of the organization unit or its Id</li>
 </ul>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_admin1_directory/trait.MethodsBuilder.html' title='google_admin1_directory::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_admin1_directory/struct.OrgunitMethods.html' title='google_admin1_directory::OrgunitMethods'>OrgunitMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-12409' class='srclink' href='../src/google_admin1_directory/home/byron/dev/rust/google-apis-rs/target/debug/build/google-admin1_directory-a39c9338e60059e5/out/lib.rs.html#28389' title='goto source code'>[src]</a></span></h3>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='trait' href='../google_admin1_directory/trait.MethodsBuilder.html' title='google_admin1_directory::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_admin1_directory/struct.OrgunitMethods.html' title='google_admin1_directory::OrgunitMethods'>OrgunitMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-11626' class='srclink' href='../src/google_admin1_directory/home/byron/dev/rust/google-apis-rs/target/debug/build/google-admin1_directory-9f6fa564a6722c32/out/lib.rs.html#22183' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 

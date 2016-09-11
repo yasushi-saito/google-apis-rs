@@ -47,8 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-3238' class='srclink' href='../src/google_reseller1_sandbox/home/byron/dev/rust/google-apis-rs/target/debug/build/google-reseller1_sandbox-9bc09051daa882de/out/lib.rs.html#6884-6886' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct CustomerMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
+               </span><a id='src-3022' class='srclink' href='../src/google_reseller1_sandbox/home/byron/dev/rust/google-apis-rs/target/debug/build/google-reseller1_sandbox-7a42c239acb696c7/out/lib.rs.html#5473-5475' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct CustomerMethods&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>customer</em> resources.
 It is not used directly, but through the <code>Reseller</code> hub.</p>
@@ -74,8 +74,8 @@ It is not used directly, but through the <code>Reseller</code> hub.</p>
 <span class='comment'>// like `get(...)`, `insert(...)`, `patch(...)` and `update(...)`</span>
 <span class='comment'>// to build up your call.</span>
 <span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>customers</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_reseller1_sandbox/struct.CustomerMethods.html' title='google_reseller1_sandbox::CustomerMethods'>CustomerMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-3247' class='srclink' href='../src/google_reseller1_sandbox/home/byron/dev/rust/google-apis-rs/target/debug/build/google-reseller1_sandbox-9bc09051daa882de/out/lib.rs.html#6888-6952' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.update' class='method'><code>fn <a href='#method.update' class='fnname'>update</a>(&amp;self, request: <a class='struct' href='../google_reseller1_sandbox/struct.Customer.html' title='google_reseller1_sandbox::Customer'>Customer</a>, customer_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_reseller1_sandbox/struct.CustomerUpdateCall.html' title='google_reseller1_sandbox::CustomerUpdateCall'>CustomerUpdateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='struct' href='../google_reseller1_sandbox/struct.CustomerMethods.html' title='google_reseller1_sandbox::CustomerMethods'>CustomerMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-3031' class='srclink' href='../src/google_reseller1_sandbox/home/byron/dev/rust/google-apis-rs/target/debug/build/google-reseller1_sandbox-7a42c239acb696c7/out/lib.rs.html#5477-5541' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.update' class='method'><code>fn <a href='#method.update' class='fnname'>update</a>(&amp;self, request: <a class='struct' href='../google_reseller1_sandbox/struct.Customer.html' title='google_reseller1_sandbox::Customer'>Customer</a>, customer_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_reseller1_sandbox/struct.CustomerUpdateCall.html' title='google_reseller1_sandbox::CustomerUpdateCall'>CustomerUpdateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Update a customer resource if one it exists and is owned by the reseller.</p>
@@ -85,7 +85,7 @@ It is not used directly, but through the <code>Reseller</code> hub.</p>
 <li><code>request</code> - No description provided.</li>
 <li><code>customerId</code> - Id of the Customer</li>
 </ul>
-</div><h4 id='method.insert' class='method'><code>fn <a href='#method.insert' class='fnname'>insert</a>(&amp;self, request: <a class='struct' href='../google_reseller1_sandbox/struct.Customer.html' title='google_reseller1_sandbox::Customer'>Customer</a>) -&gt; <a class='struct' href='../google_reseller1_sandbox/struct.CustomerInsertCall.html' title='google_reseller1_sandbox::CustomerInsertCall'>CustomerInsertCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.insert' class='method'><code>fn <a href='#method.insert' class='fnname'>insert</a>(&amp;self, request: <a class='struct' href='../google_reseller1_sandbox/struct.Customer.html' title='google_reseller1_sandbox::Customer'>Customer</a>) -&gt; <a class='struct' href='../google_reseller1_sandbox/struct.CustomerInsertCall.html' title='google_reseller1_sandbox::CustomerInsertCall'>CustomerInsertCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Creates a customer resource if one does not already exist.</p>
@@ -94,7 +94,7 @@ It is not used directly, but through the <code>Reseller</code> hub.</p>
 <ul>
 <li><code>request</code> - No description provided.</li>
 </ul>
-</div><h4 id='method.patch' class='method'><code>fn <a href='#method.patch' class='fnname'>patch</a>(&amp;self, request: <a class='struct' href='../google_reseller1_sandbox/struct.Customer.html' title='google_reseller1_sandbox::Customer'>Customer</a>, customer_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_reseller1_sandbox/struct.CustomerPatchCall.html' title='google_reseller1_sandbox::CustomerPatchCall'>CustomerPatchCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.patch' class='method'><code>fn <a href='#method.patch' class='fnname'>patch</a>(&amp;self, request: <a class='struct' href='../google_reseller1_sandbox/struct.Customer.html' title='google_reseller1_sandbox::Customer'>Customer</a>, customer_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_reseller1_sandbox/struct.CustomerPatchCall.html' title='google_reseller1_sandbox::CustomerPatchCall'>CustomerPatchCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Update a customer resource if one it exists and is owned by the reseller. This method supports patch semantics.</p>
@@ -104,7 +104,7 @@ It is not used directly, but through the <code>Reseller</code> hub.</p>
 <li><code>request</code> - No description provided.</li>
 <li><code>customerId</code> - Id of the Customer</li>
 </ul>
-</div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, customer_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_reseller1_sandbox/struct.CustomerGetCall.html' title='google_reseller1_sandbox::CustomerGetCall'>CustomerGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, customer_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_reseller1_sandbox/struct.CustomerGetCall.html' title='google_reseller1_sandbox::CustomerGetCall'>CustomerGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Gets a customer resource if one exists and is owned by the reseller.</p>
@@ -113,7 +113,7 @@ It is not used directly, but through the <code>Reseller</code> hub.</p>
 <ul>
 <li><code>customerId</code> - Id of the Customer</li>
 </ul>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_reseller1_sandbox/trait.MethodsBuilder.html' title='google_reseller1_sandbox::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_reseller1_sandbox/struct.CustomerMethods.html' title='google_reseller1_sandbox::CustomerMethods'>CustomerMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-3243' class='srclink' href='../src/google_reseller1_sandbox/home/byron/dev/rust/google-apis-rs/target/debug/build/google-reseller1_sandbox-9bc09051daa882de/out/lib.rs.html#6887' title='goto source code'>[src]</a></span></h3>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='trait' href='../google_reseller1_sandbox/trait.MethodsBuilder.html' title='google_reseller1_sandbox::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_reseller1_sandbox/struct.CustomerMethods.html' title='google_reseller1_sandbox::CustomerMethods'>CustomerMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-3027' class='srclink' href='../src/google_reseller1_sandbox/home/byron/dev/rust/google-apis-rs/target/debug/build/google-reseller1_sandbox-7a42c239acb696c7/out/lib.rs.html#5476' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 

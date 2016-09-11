@@ -47,8 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-12442' class='srclink' href='../src/google_admin1_directory/home/byron/dev/rust/google-apis-rs/target/debug/build/google-admin1_directory-a39c9338e60059e5/out/lib.rs.html#28526-28528' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct MemberMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
+               </span><a id='src-11659' class='srclink' href='../src/google_admin1_directory/home/byron/dev/rust/google-apis-rs/target/debug/build/google-admin1_directory-9f6fa564a6722c32/out/lib.rs.html#22320-22322' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct MemberMethods&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>member</em> resources.
 It is not used directly, but through the <code>Directory</code> hub.</p>
@@ -74,8 +74,8 @@ It is not used directly, but through the <code>Directory</code> hub.</p>
 <span class='comment'>// like `delete(...)`, `get(...)`, `insert(...)`, `list(...)`, `patch(...)` and `update(...)`</span>
 <span class='comment'>// to build up your call.</span>
 <span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>members</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_admin1_directory/struct.MemberMethods.html' title='google_admin1_directory::MemberMethods'>MemberMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-12451' class='srclink' href='../src/google_admin1_directory/home/byron/dev/rust/google-apis-rs/target/debug/build/google-admin1_directory-a39c9338e60059e5/out/lib.rs.html#28530-28637' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.insert' class='method'><code>fn <a href='#method.insert' class='fnname'>insert</a>(&amp;self, request: <a class='struct' href='../google_admin1_directory/struct.Member.html' title='google_admin1_directory::Member'>Member</a>, group_key: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_admin1_directory/struct.MemberInsertCall.html' title='google_admin1_directory::MemberInsertCall'>MemberInsertCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='struct' href='../google_admin1_directory/struct.MemberMethods.html' title='google_admin1_directory::MemberMethods'>MemberMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-11668' class='srclink' href='../src/google_admin1_directory/home/byron/dev/rust/google-apis-rs/target/debug/build/google-admin1_directory-9f6fa564a6722c32/out/lib.rs.html#22324-22431' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.insert' class='method'><code>fn <a href='#method.insert' class='fnname'>insert</a>(&amp;self, request: <a class='struct' href='../google_admin1_directory/struct.Member.html' title='google_admin1_directory::Member'>Member</a>, group_key: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_admin1_directory/struct.MemberInsertCall.html' title='google_admin1_directory::MemberInsertCall'>MemberInsertCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Add user to the specified group.</p>
@@ -85,7 +85,7 @@ It is not used directly, but through the <code>Directory</code> hub.</p>
 <li><code>request</code> - No description provided.</li>
 <li><code>groupKey</code> - Email or immutable Id of the group</li>
 </ul>
-</div><h4 id='method.patch' class='method'><code>fn <a href='#method.patch' class='fnname'>patch</a>(&amp;self, request: <a class='struct' href='../google_admin1_directory/struct.Member.html' title='google_admin1_directory::Member'>Member</a>, group_key: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, member_key: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_admin1_directory/struct.MemberPatchCall.html' title='google_admin1_directory::MemberPatchCall'>MemberPatchCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.patch' class='method'><code>fn <a href='#method.patch' class='fnname'>patch</a>(&amp;self, request: <a class='struct' href='../google_admin1_directory/struct.Member.html' title='google_admin1_directory::Member'>Member</a>, group_key: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, member_key: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_admin1_directory/struct.MemberPatchCall.html' title='google_admin1_directory::MemberPatchCall'>MemberPatchCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Update membership of a user in the specified group. This method supports patch semantics.</p>
@@ -96,7 +96,7 @@ It is not used directly, but through the <code>Directory</code> hub.</p>
 <li><code>groupKey</code> - Email or immutable Id of the group. If Id, it should match with id of group object</li>
 <li><code>memberKey</code> - Email or immutable Id of the user. If Id, it should match with id of member object</li>
 </ul>
-</div><h4 id='method.update' class='method'><code>fn <a href='#method.update' class='fnname'>update</a>(&amp;self, request: <a class='struct' href='../google_admin1_directory/struct.Member.html' title='google_admin1_directory::Member'>Member</a>, group_key: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, member_key: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_admin1_directory/struct.MemberUpdateCall.html' title='google_admin1_directory::MemberUpdateCall'>MemberUpdateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.update' class='method'><code>fn <a href='#method.update' class='fnname'>update</a>(&amp;self, request: <a class='struct' href='../google_admin1_directory/struct.Member.html' title='google_admin1_directory::Member'>Member</a>, group_key: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, member_key: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_admin1_directory/struct.MemberUpdateCall.html' title='google_admin1_directory::MemberUpdateCall'>MemberUpdateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Update membership of a user in the specified group.</p>
@@ -107,7 +107,7 @@ It is not used directly, but through the <code>Directory</code> hub.</p>
 <li><code>groupKey</code> - Email or immutable Id of the group. If Id, it should match with id of group object</li>
 <li><code>memberKey</code> - Email or immutable Id of the user. If Id, it should match with id of member object</li>
 </ul>
-</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self, group_key: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_admin1_directory/struct.MemberListCall.html' title='google_admin1_directory::MemberListCall'>MemberListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self, group_key: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_admin1_directory/struct.MemberListCall.html' title='google_admin1_directory::MemberListCall'>MemberListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Retrieve all members in a group (paginated)</p>
@@ -116,7 +116,7 @@ It is not used directly, but through the <code>Directory</code> hub.</p>
 <ul>
 <li><code>groupKey</code> - Email or immutable Id of the group</li>
 </ul>
-</div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, group_key: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, member_key: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_admin1_directory/struct.MemberGetCall.html' title='google_admin1_directory::MemberGetCall'>MemberGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, group_key: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, member_key: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_admin1_directory/struct.MemberGetCall.html' title='google_admin1_directory::MemberGetCall'>MemberGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Retrieve Group Member</p>
@@ -126,7 +126,7 @@ It is not used directly, but through the <code>Directory</code> hub.</p>
 <li><code>groupKey</code> - Email or immutable Id of the group</li>
 <li><code>memberKey</code> - Email or immutable Id of the member</li>
 </ul>
-</div><h4 id='method.delete' class='method'><code>fn <a href='#method.delete' class='fnname'>delete</a>(&amp;self, group_key: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, member_key: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_admin1_directory/struct.MemberDeleteCall.html' title='google_admin1_directory::MemberDeleteCall'>MemberDeleteCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.delete' class='method'><code>fn <a href='#method.delete' class='fnname'>delete</a>(&amp;self, group_key: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, member_key: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_admin1_directory/struct.MemberDeleteCall.html' title='google_admin1_directory::MemberDeleteCall'>MemberDeleteCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Remove membership.</p>
@@ -136,7 +136,7 @@ It is not used directly, but through the <code>Directory</code> hub.</p>
 <li><code>groupKey</code> - Email or immutable Id of the group</li>
 <li><code>memberKey</code> - Email or immutable Id of the member</li>
 </ul>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_admin1_directory/trait.MethodsBuilder.html' title='google_admin1_directory::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_admin1_directory/struct.MemberMethods.html' title='google_admin1_directory::MemberMethods'>MemberMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-12447' class='srclink' href='../src/google_admin1_directory/home/byron/dev/rust/google-apis-rs/target/debug/build/google-admin1_directory-a39c9338e60059e5/out/lib.rs.html#28529' title='goto source code'>[src]</a></span></h3>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='trait' href='../google_admin1_directory/trait.MethodsBuilder.html' title='google_admin1_directory::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_admin1_directory/struct.MemberMethods.html' title='google_admin1_directory::MemberMethods'>MemberMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-11664' class='srclink' href='../src/google_admin1_directory/home/byron/dev/rust/google-apis-rs/target/debug/build/google-admin1_directory-9f6fa564a6722c32/out/lib.rs.html#22323' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 

@@ -47,8 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-5991' class='srclink' href='../src/google_deploymentmanager2/home/byron/dev/rust/google-apis-rs/target/debug/build/google-deploymentmanager2-155e109267b64084/out/lib.rs.html#12447-12449' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct DeploymentMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
+               </span><a id='src-5526' class='srclink' href='../src/google_deploymentmanager2/home/byron/dev/rust/google-apis-rs/target/debug/build/google-deploymentmanager2-05db17d23e36e2c7/out/lib.rs.html#9651-9653' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct DeploymentMethods&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>deployment</em> resources.
 It is not used directly, but through the <code>DeploymentManager</code> hub.</p>
@@ -74,8 +74,8 @@ It is not used directly, but through the <code>DeploymentManager</code> hub.</p>
 <span class='comment'>// like `cancel_preview(...)`, `delete(...)`, `get(...)`, `insert(...)`, `list(...)`, `patch(...)`, `stop(...)` and `update(...)`</span>
 <span class='comment'>// to build up your call.</span>
 <span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>deployments</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_deploymentmanager2/struct.DeploymentMethods.html' title='google_deploymentmanager2::DeploymentMethods'>DeploymentMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-6000' class='srclink' href='../src/google_deploymentmanager2/home/byron/dev/rust/google-apis-rs/target/debug/build/google-deploymentmanager2-155e109267b64084/out/lib.rs.html#12451-12604' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.update' class='method'><code>fn <a href='#method.update' class='fnname'>update</a>(&amp;self, request: <a class='struct' href='../google_deploymentmanager2/struct.Deployment.html' title='google_deploymentmanager2::Deployment'>Deployment</a>, project: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, deployment: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_deploymentmanager2/struct.DeploymentUpdateCall.html' title='google_deploymentmanager2::DeploymentUpdateCall'>DeploymentUpdateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='struct' href='../google_deploymentmanager2/struct.DeploymentMethods.html' title='google_deploymentmanager2::DeploymentMethods'>DeploymentMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-5535' class='srclink' href='../src/google_deploymentmanager2/home/byron/dev/rust/google-apis-rs/target/debug/build/google-deploymentmanager2-05db17d23e36e2c7/out/lib.rs.html#9655-9808' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.update' class='method'><code>fn <a href='#method.update' class='fnname'>update</a>(&amp;self, request: <a class='struct' href='../google_deploymentmanager2/struct.Deployment.html' title='google_deploymentmanager2::Deployment'>Deployment</a>, project: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, deployment: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_deploymentmanager2/struct.DeploymentUpdateCall.html' title='google_deploymentmanager2::DeploymentUpdateCall'>DeploymentUpdateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Updates a deployment and all of the resources described by the deployment manifest.</p>
@@ -86,7 +86,7 @@ It is not used directly, but through the <code>DeploymentManager</code> hub.</p>
 <li><code>project</code> - The project ID for this request.</li>
 <li><code>deployment</code> - The name of the deployment for this request.</li>
 </ul>
-</div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, project: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, deployment: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_deploymentmanager2/struct.DeploymentGetCall.html' title='google_deploymentmanager2::DeploymentGetCall'>DeploymentGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, project: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, deployment: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_deploymentmanager2/struct.DeploymentGetCall.html' title='google_deploymentmanager2::DeploymentGetCall'>DeploymentGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Gets information about a specific deployment.</p>
@@ -96,7 +96,7 @@ It is not used directly, but through the <code>DeploymentManager</code> hub.</p>
 <li><code>project</code> - The project ID for this request.</li>
 <li><code>deployment</code> - The name of the deployment for this request.</li>
 </ul>
-</div><h4 id='method.insert' class='method'><code>fn <a href='#method.insert' class='fnname'>insert</a>(&amp;self, request: <a class='struct' href='../google_deploymentmanager2/struct.Deployment.html' title='google_deploymentmanager2::Deployment'>Deployment</a>, project: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_deploymentmanager2/struct.DeploymentInsertCall.html' title='google_deploymentmanager2::DeploymentInsertCall'>DeploymentInsertCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.insert' class='method'><code>fn <a href='#method.insert' class='fnname'>insert</a>(&amp;self, request: <a class='struct' href='../google_deploymentmanager2/struct.Deployment.html' title='google_deploymentmanager2::Deployment'>Deployment</a>, project: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_deploymentmanager2/struct.DeploymentInsertCall.html' title='google_deploymentmanager2::DeploymentInsertCall'>DeploymentInsertCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Creates a deployment and all of the resources described by the deployment manifest.</p>
@@ -106,7 +106,7 @@ It is not used directly, but through the <code>DeploymentManager</code> hub.</p>
 <li><code>request</code> - No description provided.</li>
 <li><code>project</code> - The project ID for this request.</li>
 </ul>
-</div><h4 id='method.cancel_preview' class='method'><code>fn <a href='#method.cancel_preview' class='fnname'>cancel_preview</a>(&amp;self, request: <a class='struct' href='../google_deploymentmanager2/struct.DeploymentsCancelPreviewRequest.html' title='google_deploymentmanager2::DeploymentsCancelPreviewRequest'>DeploymentsCancelPreviewRequest</a>, project: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, deployment: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_deploymentmanager2/struct.DeploymentCancelPreviewCall.html' title='google_deploymentmanager2::DeploymentCancelPreviewCall'>DeploymentCancelPreviewCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.cancel_preview' class='method'><code>fn <a href='#method.cancel_preview' class='fnname'>cancel_preview</a>(&amp;self, request: <a class='struct' href='../google_deploymentmanager2/struct.DeploymentsCancelPreviewRequest.html' title='google_deploymentmanager2::DeploymentsCancelPreviewRequest'>DeploymentsCancelPreviewRequest</a>, project: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, deployment: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_deploymentmanager2/struct.DeploymentCancelPreviewCall.html' title='google_deploymentmanager2::DeploymentCancelPreviewCall'>DeploymentCancelPreviewCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Cancels and removes the preview currently associated with the deployment.</p>
@@ -117,7 +117,7 @@ It is not used directly, but through the <code>DeploymentManager</code> hub.</p>
 <li><code>project</code> - The project ID for this request.</li>
 <li><code>deployment</code> - The name of the deployment for this request.</li>
 </ul>
-</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self, project: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_deploymentmanager2/struct.DeploymentListCall.html' title='google_deploymentmanager2::DeploymentListCall'>DeploymentListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self, project: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_deploymentmanager2/struct.DeploymentListCall.html' title='google_deploymentmanager2::DeploymentListCall'>DeploymentListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Lists all deployments for a given project.</p>
@@ -126,7 +126,7 @@ It is not used directly, but through the <code>DeploymentManager</code> hub.</p>
 <ul>
 <li><code>project</code> - The project ID for this request.</li>
 </ul>
-</div><h4 id='method.patch' class='method'><code>fn <a href='#method.patch' class='fnname'>patch</a>(&amp;self, request: <a class='struct' href='../google_deploymentmanager2/struct.Deployment.html' title='google_deploymentmanager2::Deployment'>Deployment</a>, project: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, deployment: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_deploymentmanager2/struct.DeploymentPatchCall.html' title='google_deploymentmanager2::DeploymentPatchCall'>DeploymentPatchCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.patch' class='method'><code>fn <a href='#method.patch' class='fnname'>patch</a>(&amp;self, request: <a class='struct' href='../google_deploymentmanager2/struct.Deployment.html' title='google_deploymentmanager2::Deployment'>Deployment</a>, project: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, deployment: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_deploymentmanager2/struct.DeploymentPatchCall.html' title='google_deploymentmanager2::DeploymentPatchCall'>DeploymentPatchCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Updates a deployment and all of the resources described by the deployment manifest. This method supports patch semantics.</p>
@@ -137,7 +137,7 @@ It is not used directly, but through the <code>DeploymentManager</code> hub.</p>
 <li><code>project</code> - The project ID for this request.</li>
 <li><code>deployment</code> - The name of the deployment for this request.</li>
 </ul>
-</div><h4 id='method.stop' class='method'><code>fn <a href='#method.stop' class='fnname'>stop</a>(&amp;self, request: <a class='struct' href='../google_deploymentmanager2/struct.DeploymentsStopRequest.html' title='google_deploymentmanager2::DeploymentsStopRequest'>DeploymentsStopRequest</a>, project: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, deployment: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_deploymentmanager2/struct.DeploymentStopCall.html' title='google_deploymentmanager2::DeploymentStopCall'>DeploymentStopCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.stop' class='method'><code>fn <a href='#method.stop' class='fnname'>stop</a>(&amp;self, request: <a class='struct' href='../google_deploymentmanager2/struct.DeploymentsStopRequest.html' title='google_deploymentmanager2::DeploymentsStopRequest'>DeploymentsStopRequest</a>, project: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, deployment: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_deploymentmanager2/struct.DeploymentStopCall.html' title='google_deploymentmanager2::DeploymentStopCall'>DeploymentStopCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Stops an ongoing operation. This does not roll back any work that has already been completed, but prevents any new work from being started.</p>
@@ -148,7 +148,7 @@ It is not used directly, but through the <code>DeploymentManager</code> hub.</p>
 <li><code>project</code> - The project ID for this request.</li>
 <li><code>deployment</code> - The name of the deployment for this request.</li>
 </ul>
-</div><h4 id='method.delete' class='method'><code>fn <a href='#method.delete' class='fnname'>delete</a>(&amp;self, project: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, deployment: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_deploymentmanager2/struct.DeploymentDeleteCall.html' title='google_deploymentmanager2::DeploymentDeleteCall'>DeploymentDeleteCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.delete' class='method'><code>fn <a href='#method.delete' class='fnname'>delete</a>(&amp;self, project: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, deployment: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_deploymentmanager2/struct.DeploymentDeleteCall.html' title='google_deploymentmanager2::DeploymentDeleteCall'>DeploymentDeleteCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Deletes a deployment and all of the resources in the deployment.</p>
@@ -158,7 +158,7 @@ It is not used directly, but through the <code>DeploymentManager</code> hub.</p>
 <li><code>project</code> - The project ID for this request.</li>
 <li><code>deployment</code> - The name of the deployment for this request.</li>
 </ul>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_deploymentmanager2/trait.MethodsBuilder.html' title='google_deploymentmanager2::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_deploymentmanager2/struct.DeploymentMethods.html' title='google_deploymentmanager2::DeploymentMethods'>DeploymentMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-5996' class='srclink' href='../src/google_deploymentmanager2/home/byron/dev/rust/google-apis-rs/target/debug/build/google-deploymentmanager2-155e109267b64084/out/lib.rs.html#12450' title='goto source code'>[src]</a></span></h3>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='trait' href='../google_deploymentmanager2/trait.MethodsBuilder.html' title='google_deploymentmanager2::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_deploymentmanager2/struct.DeploymentMethods.html' title='google_deploymentmanager2::DeploymentMethods'>DeploymentMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-5531' class='srclink' href='../src/google_deploymentmanager2/home/byron/dev/rust/google-apis-rs/target/debug/build/google-deploymentmanager2-05db17d23e36e2c7/out/lib.rs.html#9654' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 

@@ -47,8 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-2103' class='srclink' href='../src/google_taskqueue1_beta2/home/byron/dev/rust/google-apis-rs/target/debug/build/google-taskqueue1_beta2-f9481aac03886cb9/out/lib.rs.html#4254-4256' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct TaskMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
+               </span><a id='src-1962' class='srclink' href='../src/google_taskqueue1_beta2/home/byron/dev/rust/google-apis-rs/target/debug/build/google-taskqueue1_beta2-37e978088469441b/out/lib.rs.html#3447-3449' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct TaskMethods&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>task</em> resources.
 It is not used directly, but through the <code>Taskqueue</code> hub.</p>
@@ -74,8 +74,8 @@ It is not used directly, but through the <code>Taskqueue</code> hub.</p>
 <span class='comment'>// like `delete(...)`, `get(...)`, `insert(...)`, `lease(...)`, `list(...)`, `patch(...)` and `update(...)`</span>
 <span class='comment'>// to build up your call.</span>
 <span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>tasks</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_taskqueue1_beta2/struct.TaskMethods.html' title='google_taskqueue1_beta2::TaskMethods'>TaskMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-2112' class='srclink' href='../src/google_taskqueue1_beta2/home/byron/dev/rust/google-apis-rs/target/debug/build/google-taskqueue1_beta2-f9481aac03886cb9/out/lib.rs.html#4258-4404' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.lease' class='method'><code>fn <a href='#method.lease' class='fnname'>lease</a>(&amp;self, project: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, taskqueue: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, num_tasks: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>, lease_secs: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>) -&gt; <a class='struct' href='../google_taskqueue1_beta2/struct.TaskLeaseCall.html' title='google_taskqueue1_beta2::TaskLeaseCall'>TaskLeaseCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='struct' href='../google_taskqueue1_beta2/struct.TaskMethods.html' title='google_taskqueue1_beta2::TaskMethods'>TaskMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-1971' class='srclink' href='../src/google_taskqueue1_beta2/home/byron/dev/rust/google-apis-rs/target/debug/build/google-taskqueue1_beta2-37e978088469441b/out/lib.rs.html#3451-3597' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.lease' class='method'><code>fn <a href='#method.lease' class='fnname'>lease</a>(&amp;self, project: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, taskqueue: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, num_tasks: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>, lease_secs: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>) -&gt; <a class='struct' href='../google_taskqueue1_beta2/struct.TaskLeaseCall.html' title='google_taskqueue1_beta2::TaskLeaseCall'>TaskLeaseCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Lease 1 or more tasks from a TaskQueue.</p>
@@ -87,7 +87,7 @@ It is not used directly, but through the <code>Taskqueue</code> hub.</p>
 <li><code>numTasks</code> - The number of tasks to lease.</li>
 <li><code>leaseSecs</code> - The lease in seconds.</li>
 </ul>
-</div><h4 id='method.insert' class='method'><code>fn <a href='#method.insert' class='fnname'>insert</a>(&amp;self, request: <a class='struct' href='../google_taskqueue1_beta2/struct.Task.html' title='google_taskqueue1_beta2::Task'>Task</a>, project: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, taskqueue: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_taskqueue1_beta2/struct.TaskInsertCall.html' title='google_taskqueue1_beta2::TaskInsertCall'>TaskInsertCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.insert' class='method'><code>fn <a href='#method.insert' class='fnname'>insert</a>(&amp;self, request: <a class='struct' href='../google_taskqueue1_beta2/struct.Task.html' title='google_taskqueue1_beta2::Task'>Task</a>, project: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, taskqueue: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_taskqueue1_beta2/struct.TaskInsertCall.html' title='google_taskqueue1_beta2::TaskInsertCall'>TaskInsertCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Insert a new task in a TaskQueue</p>
@@ -98,7 +98,7 @@ It is not used directly, but through the <code>Taskqueue</code> hub.</p>
 <li><code>project</code> - The project under which the queue lies</li>
 <li><code>taskqueue</code> - The taskqueue to insert the task into</li>
 </ul>
-</div><h4 id='method.delete' class='method'><code>fn <a href='#method.delete' class='fnname'>delete</a>(&amp;self, project: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, taskqueue: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, task: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_taskqueue1_beta2/struct.TaskDeleteCall.html' title='google_taskqueue1_beta2::TaskDeleteCall'>TaskDeleteCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.delete' class='method'><code>fn <a href='#method.delete' class='fnname'>delete</a>(&amp;self, project: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, taskqueue: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, task: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_taskqueue1_beta2/struct.TaskDeleteCall.html' title='google_taskqueue1_beta2::TaskDeleteCall'>TaskDeleteCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Delete a task from a TaskQueue.</p>
@@ -109,7 +109,7 @@ It is not used directly, but through the <code>Taskqueue</code> hub.</p>
 <li><code>taskqueue</code> - The taskqueue to delete a task from.</li>
 <li><code>task</code> - The id of the task to delete.</li>
 </ul>
-</div><h4 id='method.patch' class='method'><code>fn <a href='#method.patch' class='fnname'>patch</a>(&amp;self, request: <a class='struct' href='../google_taskqueue1_beta2/struct.Task.html' title='google_taskqueue1_beta2::Task'>Task</a>, project: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, taskqueue: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, task: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, new_lease_seconds: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>) -&gt; <a class='struct' href='../google_taskqueue1_beta2/struct.TaskPatchCall.html' title='google_taskqueue1_beta2::TaskPatchCall'>TaskPatchCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.patch' class='method'><code>fn <a href='#method.patch' class='fnname'>patch</a>(&amp;self, request: <a class='struct' href='../google_taskqueue1_beta2/struct.Task.html' title='google_taskqueue1_beta2::Task'>Task</a>, project: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, taskqueue: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, task: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, new_lease_seconds: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>) -&gt; <a class='struct' href='../google_taskqueue1_beta2/struct.TaskPatchCall.html' title='google_taskqueue1_beta2::TaskPatchCall'>TaskPatchCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Update tasks that are leased out of a TaskQueue. This method supports patch semantics.</p>
@@ -122,7 +122,7 @@ It is not used directly, but through the <code>Taskqueue</code> hub.</p>
 <li><code>task</code> - No description provided.</li>
 <li><code>newLeaseSeconds</code> - The new lease in seconds.</li>
 </ul>
-</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self, project: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, taskqueue: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_taskqueue1_beta2/struct.TaskListCall.html' title='google_taskqueue1_beta2::TaskListCall'>TaskListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self, project: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, taskqueue: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_taskqueue1_beta2/struct.TaskListCall.html' title='google_taskqueue1_beta2::TaskListCall'>TaskListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>List Tasks in a TaskQueue</p>
@@ -132,7 +132,7 @@ It is not used directly, but through the <code>Taskqueue</code> hub.</p>
 <li><code>project</code> - The project under which the queue lies.</li>
 <li><code>taskqueue</code> - The id of the taskqueue to list tasks from.</li>
 </ul>
-</div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, project: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, taskqueue: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, task: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_taskqueue1_beta2/struct.TaskGetCall.html' title='google_taskqueue1_beta2::TaskGetCall'>TaskGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, project: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, taskqueue: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, task: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_taskqueue1_beta2/struct.TaskGetCall.html' title='google_taskqueue1_beta2::TaskGetCall'>TaskGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Get a particular task from a TaskQueue.</p>
@@ -143,7 +143,7 @@ It is not used directly, but through the <code>Taskqueue</code> hub.</p>
 <li><code>taskqueue</code> - The taskqueue in which the task belongs.</li>
 <li><code>task</code> - The task to get properties of.</li>
 </ul>
-</div><h4 id='method.update' class='method'><code>fn <a href='#method.update' class='fnname'>update</a>(&amp;self, request: <a class='struct' href='../google_taskqueue1_beta2/struct.Task.html' title='google_taskqueue1_beta2::Task'>Task</a>, project: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, taskqueue: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, task: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, new_lease_seconds: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>) -&gt; <a class='struct' href='../google_taskqueue1_beta2/struct.TaskUpdateCall.html' title='google_taskqueue1_beta2::TaskUpdateCall'>TaskUpdateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.update' class='method'><code>fn <a href='#method.update' class='fnname'>update</a>(&amp;self, request: <a class='struct' href='../google_taskqueue1_beta2/struct.Task.html' title='google_taskqueue1_beta2::Task'>Task</a>, project: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, taskqueue: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, task: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, new_lease_seconds: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>) -&gt; <a class='struct' href='../google_taskqueue1_beta2/struct.TaskUpdateCall.html' title='google_taskqueue1_beta2::TaskUpdateCall'>TaskUpdateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Update tasks that are leased out of a TaskQueue.</p>
@@ -156,7 +156,7 @@ It is not used directly, but through the <code>Taskqueue</code> hub.</p>
 <li><code>task</code> - No description provided.</li>
 <li><code>newLeaseSeconds</code> - The new lease in seconds.</li>
 </ul>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_taskqueue1_beta2/trait.MethodsBuilder.html' title='google_taskqueue1_beta2::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_taskqueue1_beta2/struct.TaskMethods.html' title='google_taskqueue1_beta2::TaskMethods'>TaskMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-2108' class='srclink' href='../src/google_taskqueue1_beta2/home/byron/dev/rust/google-apis-rs/target/debug/build/google-taskqueue1_beta2-f9481aac03886cb9/out/lib.rs.html#4257' title='goto source code'>[src]</a></span></h3>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='trait' href='../google_taskqueue1_beta2/trait.MethodsBuilder.html' title='google_taskqueue1_beta2::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_taskqueue1_beta2/struct.TaskMethods.html' title='google_taskqueue1_beta2::TaskMethods'>TaskMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-1967' class='srclink' href='../src/google_taskqueue1_beta2/home/byron/dev/rust/google-apis-rs/target/debug/build/google-taskqueue1_beta2-37e978088469441b/out/lib.rs.html#3450' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 

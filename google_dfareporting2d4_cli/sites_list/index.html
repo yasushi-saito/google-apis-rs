@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>List - dfareporting v0.3.6+20160323</title>
+  <title>List - dfareporting v0.3.6+20160803</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -32,7 +32,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> dfareporting v0.3.6+20160323</a>
+        <a href=".." class="icon icon-home"> dfareporting v0.3.6+20160803</a>
         
       </div>
 
@@ -1367,7 +1367,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">dfareporting v0.3.6+20160323</a>
+        <a href="..">dfareporting v0.3.6+20160803</a>
       </nav>
 
       
@@ -1423,69 +1423,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p max-results=integer</strong></p>
+<p><strong>-p sort-field=string</strong></p>
 <ul>
-<li>Maximum number of results to return.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p sort-order=string</strong></p>
-<ul>
-<li>Order of sorted results, default is ASCENDING.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p accepts-publisher-paid-placements=boolean</strong></p>
-<ul>
-<li>Select only sites that accept publisher paid placements.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p approved=boolean</strong></p>
-<ul>
-<li>Select only approved sites.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p search-string=string</strong></p>
-<ul>
-<li>Allows searching for objects by name, ID or keyName. Wildcards (<em>) are allowed. For example, &#34;site</em>2015&#34; will return objects with names like &#34;site June 2015&#34;, &#34;site April 2015&#34;, or simply &#34;site 2015&#34;. Most of the searches also add wildcards implicitly at the start and the end of the search string. For example, a search string of &#34;site&#34; will match objects with name &#34;my site&#34;, &#34;site 2015&#34;, or simply &#34;site&#34;.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p directory-site-ids=string</strong></p>
-<ul>
-<li>Select only sites with these directory site IDs.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p campaign-ids=string</strong></p>
-<ul>
-<li>Select only sites with these campaign IDs.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p unmapped-site=boolean</strong></p>
-<ul>
-<li>Select only sites that have not been mapped to a directory site.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p accepts-in-stream-video-placements=boolean</strong></p>
-<ul>
-<li>This search filter is no longer supported and will have no effect on the results returned.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p ad-words-site=boolean</strong></p>
-<ul>
-<li>Select only AdWords sites.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p ids=string</strong></p>
-<ul>
-<li>Select only sites with these IDs.</li>
+<li>Field by which to sort the list.</li>
 </ul>
 </li>
 <li>
@@ -1495,9 +1435,45 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p sort-field=string</strong></p>
+<p><strong>-p accepts-publisher-paid-placements=boolean</strong></p>
 <ul>
-<li>Field by which to sort the list.</li>
+<li>Select only sites that accept publisher paid placements.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p search-string=string</strong></p>
+<ul>
+<li>Allows searching for objects by name, ID or keyName. Wildcards (<em>) are allowed. For example, &#34;site</em>2015&#34; will return objects with names like &#34;site June 2015&#34;, &#34;site April 2015&#34;, or simply &#34;site 2015&#34;. Most of the searches also add wildcards implicitly at the start and the end of the search string. For example, a search string of &#34;site&#34; will match objects with name &#34;my site&#34;, &#34;site 2015&#34;, or simply &#34;site&#34;.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p accepts-interstitial-placements=boolean</strong></p>
+<ul>
+<li>This search filter is no longer supported and will have no effect on the results returned.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p ids=string</strong></p>
+<ul>
+<li>Select only sites with these IDs.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p accepts-in-stream-video-placements=boolean</strong></p>
+<ul>
+<li>This search filter is no longer supported and will have no effect on the results returned.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p unmapped-site=boolean</strong></p>
+<ul>
+<li>Select only sites that have not been mapped to a directory site.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p ad-words-site=boolean</strong></p>
+<ul>
+<li>Select only AdWords sites.</li>
 </ul>
 </li>
 <li>
@@ -1507,9 +1483,33 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p accepts-interstitial-placements=boolean</strong></p>
+<p><strong>-p sort-order=string</strong></p>
 <ul>
-<li>This search filter is no longer supported and will have no effect on the results returned.</li>
+<li>Order of sorted results, default is ASCENDING.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p directory-site-ids=string</strong></p>
+<ul>
+<li>Select only sites with these directory site IDs.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p max-results=integer</strong></p>
+<ul>
+<li>Maximum number of results to return.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p campaign-ids=string</strong></p>
+<ul>
+<li>Select only sites with these campaign IDs.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p approved=boolean</strong></p>
+<ul>
+<li>Select only approved sites.</li>
 </ul>
 </li>
 </ul>
@@ -1603,7 +1603,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 
 <!--
 MkDocs version  : 0.12.2
-Docs Build Date : 2016-07-23 16:05:07.536480
+Docs Build Date : 2016-09-11 17:54:02.910012
 -->
 </body>
 </html>

@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Traces List - cloudtrace v0.3.6+20151207</title>
+  <title>Traces List - Cloud Trace v0.3.6+20160518</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -32,7 +32,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> cloudtrace v0.3.6+20151207</a>
+        <a href=".." class="icon icon-home"> Cloud Trace v0.3.6+20160518</a>
         
       </div>
 
@@ -98,7 +98,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">cloudtrace v0.3.6+20151207</a>
+        <a href="..">Cloud Trace v0.3.6+20160518</a>
       </nav>
 
       
@@ -127,8 +127,12 @@
             <div class="section">
               <p>Returns of a list of traces that match the specified filter conditions.</p>
 <h1 id="scopes">Scopes</h1>
-<p>You will need authorization for the <em>https://www.googleapis.com/auth/cloud-platform</em> scope to make a valid call.</p>
-<p>If unset, the scope for this method defaults to <em>https://www.googleapis.com/auth/cloud-platform</em>.
+<p>You will need authorization for at least one of the following scopes to make a valid call:</p>
+<ul>
+<li><em>https://www.googleapis.com/auth/cloud-platform</em></li>
+<li><em>https://www.googleapis.com/auth/trace.readonly</em></li>
+</ul>
+<p>If unset, the scope for this method defaults to <em>https://www.googleapis.com/auth/trace.readonly</em>.
 You can set the scope for this method like this: <code>cloudtrace1 --scope &lt;scope&gt; projects traces-list ...</code></p>
 <h1 id="required-scalar-argument">Required Scalar Argument</h1>
 <ul>
@@ -160,21 +164,27 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p page-size=integer</strong></p>
-<ul>
-<li>Maximum number of traces to return. If not specified or &lt;= 0, the implementation selects a reasonable value. The implementation may return fewer traces than the requested page size. Optional.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p filter=string</strong></p>
 <ul>
 <li>An optional filter for the request.</li>
 </ul>
 </li>
 <li>
+<p><strong>-p page-size=integer</strong></p>
+<ul>
+<li>Maximum number of traces to return. If not specified or &lt;= 0, the implementation selects a reasonable value. The implementation may return fewer traces than the requested page size. Optional.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p end-time=string</strong></p>
 <ul>
 <li>Start of the time interval (inclusive) during which the trace data was collected from the application.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p start-time=string</strong></p>
+<ul>
+<li>End of the time interval (inclusive) during which the trace data was collected from the application.</li>
 </ul>
 </li>
 <li>
@@ -187,12 +197,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <p><strong>-p page-token=string</strong></p>
 <ul>
 <li>Token identifying the page of results to return. If provided, use the value of the <code>next_page_token</code> field from a previous request. Optional.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p start-time=string</strong></p>
-<ul>
-<li>End of the time interval (inclusive) during which the trace data was collected from the application.</li>
 </ul>
 </li>
 </ul>
@@ -320,7 +324,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 
 <!--
 MkDocs version  : 0.12.2
-Docs Build Date : 2016-07-23 16:05:11.518280
+Docs Build Date : 2016-09-11 17:54:30.229011
 -->
 </body>
 </html>

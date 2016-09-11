@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>List - YouTube v0.3.6+20160222</title>
+  <title>List - YouTube v0.3.6+20160805</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -32,7 +32,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> YouTube v0.3.6+20160222</a>
+        <a href=".." class="icon icon-home"> YouTube v0.3.6+20160805</a>
         
       </div>
 
@@ -588,7 +588,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">YouTube v0.3.6+20160222</a>
+        <a href="..">YouTube v0.3.6+20160805</a>
       </nav>
 
       
@@ -644,9 +644,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p all-threads-related-to-channel-id=string</strong></p>
+<p><strong>-p channel-id=string</strong></p>
 <ul>
-<li>The allThreadsRelatedToChannelId parameter instructs the API to return all comment threads associated with the specified channel. The response can include comments about the channel or about the channel&#39;s videos.</li>
+<li>The channelId parameter instructs the API to return comment threads containing comments about the specified channel. (The response will not include comments left on videos that the channel uploaded.)</li>
 </ul>
 </li>
 <li>
@@ -657,42 +657,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <li>relevance - Comment threads are ordered by relevance.Note: This parameter is not supported for use in conjunction with the id parameter.</li>
 </ul>
 </li>
-</ul>
-</li>
-<li>
-<p><strong>-p video-id=string</strong></p>
-<ul>
-<li>The videoId parameter instructs the API to return comment threads associated with the specified video ID.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p channel-id=string</strong></p>
-<ul>
-<li>The channelId parameter instructs the API to return comment threads containing comments about the specified channel. (The response will not include comments left on videos that the channel uploaded.)</li>
-</ul>
-</li>
-<li>
-<p><strong>-p search-terms=string</strong></p>
-<ul>
-<li>
-<p>The searchTerms parameter instructs the API to limit the API response to only contain comments that contain the specified search terms.</p>
-<p>Note: This parameter is not supported for use in conjunction with the id parameter.</p>
-</li>
-</ul>
-</li>
-<li>
-<p><strong>-p page-token=string</strong></p>
-<ul>
-<li>
-<p>The pageToken parameter identifies a specific page in the result set that should be returned. In an API response, the nextPageToken property identifies the next page of the result that can be retrieved.</p>
-<p>Note: This parameter is not supported for use in conjunction with the id parameter.</p>
-</li>
-</ul>
-</li>
-<li>
-<p><strong>-p text-format=string</strong></p>
-<ul>
-<li>Set this parameter&#39;s value to html or plainText to instruct the API to return the comments left by users in html formatted or in plain text.</li>
 </ul>
 </li>
 <li>
@@ -711,12 +675,48 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
+<p><strong>-p video-id=string</strong></p>
+<ul>
+<li>The videoId parameter instructs the API to return comment threads associated with the specified video ID.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p search-terms=string</strong></p>
+<ul>
+<li>
+<p>The searchTerms parameter instructs the API to limit the API response to only contain comments that contain the specified search terms.</p>
+<p>Note: This parameter is not supported for use in conjunction with the id parameter.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>-p all-threads-related-to-channel-id=string</strong></p>
+<ul>
+<li>The allThreadsRelatedToChannelId parameter instructs the API to return all comment threads associated with the specified channel. The response can include comments about the channel or about the channel&#39;s videos.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p max-results=integer</strong></p>
 <ul>
 <li>
 <p>The maxResults parameter specifies the maximum number of items that should be returned in the result set.</p>
 <p>Note: This parameter is not supported for use in conjunction with the id parameter.</p>
 </li>
+</ul>
+</li>
+<li>
+<p><strong>-p page-token=string</strong></p>
+<ul>
+<li>
+<p>The pageToken parameter identifies a specific page in the result set that should be returned. In an API response, the nextPageToken property identifies the next page of the result that can be retrieved.</p>
+<p>Note: This parameter is not supported for use in conjunction with the id parameter.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>-p text-format=string</strong></p>
+<ul>
+<li>Set this parameter&#39;s value to html or plainText to instruct the API to return the comments left by users in html formatted or in plain text.</li>
 </ul>
 </li>
 </ul>
@@ -810,7 +810,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 
 <!--
 MkDocs version  : 0.12.2
-Docs Build Date : 2016-07-23 16:05:32.679686
+Docs Build Date : 2016-09-11 17:55:03.511606
 -->
 </body>
 </html>

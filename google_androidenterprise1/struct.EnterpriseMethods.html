@@ -47,8 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-7008' class='srclink' href='../src/google_androidenterprise1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-androidenterprise1-c1b518bbf39d4c72/out/lib.rs.html#15662-15664' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct EnterpriseMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
+               </span><a id='src-9515' class='srclink' href='../src/google_androidenterprise1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-androidenterprise1-f9ed1fb9501f45a8/out/lib.rs.html#18612-18614' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct EnterpriseMethods&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>enterprise</em> resources.
 It is not used directly, but through the <code>AndroidEnterprise</code> hub.</p>
@@ -71,105 +71,139 @@ It is not used directly, but through the <code>AndroidEnterprise</code> hub.</p>
                               <span class='op'>&lt;</span><span class='ident'>MemoryStorage</span> <span class='kw'>as</span> <span class='ident'>Default</span><span class='op'>&gt;</span>::<span class='ident'>default</span>(), <span class='prelude-val'>None</span>);
 <span class='kw'>let</span> <span class='kw-2'>mut</span> <span class='ident'>hub</span> <span class='op'>=</span> <span class='ident'>AndroidEnterprise</span>::<span class='ident'>new</span>(<span class='ident'>hyper</span>::<span class='ident'>Client</span>::<span class='ident'>new</span>(), <span class='ident'>auth</span>);
 <span class='comment'>// Usually you wouldn&#39;t bind this to a variable, but keep calling *CallBuilders*</span>
-<span class='comment'>// like `delete(...)`, `enroll(...)`, `get(...)`, `get_store_layout(...)`, `insert(...)`, `list(...)`, `send_test_push_notification(...)`, `set_account(...)`, `set_store_layout(...)` and `unenroll(...)`</span>
+<span class='comment'>// like `acknowledge_notification_set(...)`, `complete_signup(...)`, `delete(...)`, `enroll(...)`, `generate_signup_url(...)`, `get(...)`, `get_service_account(...)`, `get_store_layout(...)`, `insert(...)`, `list(...)`, `pull_notification_set(...)`, `send_test_push_notification(...)`, `set_account(...)`, `set_store_layout(...)` and `unenroll(...)`</span>
 <span class='comment'>// to build up your call.</span>
 <span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>enterprises</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_androidenterprise1/struct.EnterpriseMethods.html' title='google_androidenterprise1::EnterpriseMethods'>EnterpriseMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-7017' class='srclink' href='../src/google_androidenterprise1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-androidenterprise1-c1b518bbf39d4c72/out/lib.rs.html#15666-15827' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.unenroll' class='method'><code>fn <a href='#method.unenroll' class='fnname'>unenroll</a>(&amp;self, enterprise_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_androidenterprise1/struct.EnterpriseUnenrollCall.html' title='google_androidenterprise1::EnterpriseUnenrollCall'>EnterpriseUnenrollCall</a>&lt;'a, C, A&gt;</code></h4>
-<div class='docblock'><p>Create a builder to help you perform the following task:</p>
-
-<p>Unenrolls an enterprise from the calling EMM.</p>
-
-<h1 id='arguments' class='section-header'><a href='#arguments'>Arguments</a></h1>
-<ul>
-<li><code>enterpriseId</code> - The ID of the enterprise.</li>
-</ul>
-</div><h4 id='method.insert' class='method'><code>fn <a href='#method.insert' class='fnname'>insert</a>(&amp;self, request: <a class='struct' href='../google_androidenterprise1/struct.Enterprise.html' title='google_androidenterprise1::Enterprise'>Enterprise</a>, token: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_androidenterprise1/struct.EnterpriseInsertCall.html' title='google_androidenterprise1::EnterpriseInsertCall'>EnterpriseInsertCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='struct' href='../google_androidenterprise1/struct.EnterpriseMethods.html' title='google_androidenterprise1::EnterpriseMethods'>EnterpriseMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-9524' class='srclink' href='../src/google_androidenterprise1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-androidenterprise1-f9ed1fb9501f45a8/out/lib.rs.html#18616-18853' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.insert' class='method'><code>fn <a href='#method.insert' class='fnname'>insert</a>(&amp;self, request: <a class='struct' href='../google_androidenterprise1/struct.Enterprise.html' title='google_androidenterprise1::Enterprise'>Enterprise</a>, token: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_androidenterprise1/struct.EnterpriseInsertCall.html' title='google_androidenterprise1::EnterpriseInsertCall'>EnterpriseInsertCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Establishes the binding between the EMM and an enterprise. This is now deprecated; use enroll instead.</p>
 
-<h1 id='arguments-1' class='section-header'><a href='#arguments-1'>Arguments</a></h1>
+<h1 id='arguments' class='section-header'><a href='#arguments'>Arguments</a></h1>
 <ul>
 <li><code>request</code> - No description provided.</li>
 <li><code>token</code> - The token provided by the enterprise to register the EMM.</li>
 </ul>
-</div><h4 id='method.send_test_push_notification' class='method'><code>fn <a href='#method.send_test_push_notification' class='fnname'>send_test_push_notification</a>(&amp;self, enterprise_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_androidenterprise1/struct.EnterpriseSendTestPushNotificationCall.html' title='google_androidenterprise1::EnterpriseSendTestPushNotificationCall'>EnterpriseSendTestPushNotificationCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.set_store_layout' class='method'><code>fn <a href='#method.set_store_layout' class='fnname'>set_store_layout</a>(&amp;self, request: <a class='struct' href='../google_androidenterprise1/struct.StoreLayout.html' title='google_androidenterprise1::StoreLayout'>StoreLayout</a>, enterprise_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_androidenterprise1/struct.EnterpriseSetStoreLayoutCall.html' title='google_androidenterprise1::EnterpriseSetStoreLayoutCall'>EnterpriseSetStoreLayoutCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>Sends a test push notification to validate the EMM integration with the Google Cloud Pub/Sub service for this enterprise.</p>
+<p>Sets the store layout for the enterprise.</p>
+
+<h1 id='arguments-1' class='section-header'><a href='#arguments-1'>Arguments</a></h1>
+<ul>
+<li><code>request</code> - No description provided.</li>
+<li><code>enterpriseId</code> - The ID of the enterprise.</li>
+</ul>
+</div><h4 id='method.pull_notification_set' class='method'><code>fn <a href='#method.pull_notification_set' class='fnname'>pull_notification_set</a>(&amp;self) -&gt; <a class='struct' href='../google_androidenterprise1/struct.EnterprisePullNotificationSetCall.html' title='google_androidenterprise1::EnterprisePullNotificationSetCall'>EnterprisePullNotificationSetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Pulls and returns a notification set for the enterprises associated with the service account authenticated for the request. The notification set may be empty if no notification are pending.
+A notification set returned needs to be acknowledged within 20 seconds by calling Enterprises.AcknowledgeNotificationSet, unless the notification set is empty.
+Notifications that are not acknowledged within the 20 seconds will eventually be included again in the response to another PullNotificationSet request, and those that are never acknowledged will ultimately be deleted according to the Google Cloud Platform Pub/Sub system policy.
+Multiple requests might be performed concurrently to retrieve notifications, in which case the pending notifications (if any) will be split among each caller, if any are pending.</p>
+</div><h4 id='method.enroll' class='method'><code>fn <a href='#method.enroll' class='fnname'>enroll</a>(&amp;self, request: <a class='struct' href='../google_androidenterprise1/struct.Enterprise.html' title='google_androidenterprise1::Enterprise'>Enterprise</a>, token: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_androidenterprise1/struct.EnterpriseEnrollCall.html' title='google_androidenterprise1::EnterpriseEnrollCall'>EnterpriseEnrollCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Enrolls an enterprise with the calling EMM.</p>
 
 <h1 id='arguments-2' class='section-header'><a href='#arguments-2'>Arguments</a></h1>
 <ul>
-<li><code>enterpriseId</code> - The ID of the enterprise.</li>
+<li><code>request</code> - No description provided.</li>
+<li><code>token</code> - The token provided by the enterprise to register the EMM.</li>
 </ul>
-</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self, domain: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_androidenterprise1/struct.EnterpriseListCall.html' title='google_androidenterprise1::EnterpriseListCall'>EnterpriseListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.set_account' class='method'><code>fn <a href='#method.set_account' class='fnname'>set_account</a>(&amp;self, request: <a class='struct' href='../google_androidenterprise1/struct.EnterpriseAccount.html' title='google_androidenterprise1::EnterpriseAccount'>EnterpriseAccount</a>, enterprise_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_androidenterprise1/struct.EnterpriseSetAccountCall.html' title='google_androidenterprise1::EnterpriseSetAccountCall'>EnterpriseSetAccountCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>Looks up an enterprise by domain name.</p>
+<p>Set the account that will be used to authenticate to the API as the enterprise.</p>
 
 <h1 id='arguments-3' class='section-header'><a href='#arguments-3'>Arguments</a></h1>
 <ul>
-<li><code>domain</code> - The exact primary domain name of the enterprise to look up.</li>
+<li><code>request</code> - No description provided.</li>
+<li><code>enterpriseId</code> - The ID of the enterprise.</li>
 </ul>
-</div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, enterprise_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_androidenterprise1/struct.EnterpriseGetCall.html' title='google_androidenterprise1::EnterpriseGetCall'>EnterpriseGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self, domain: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_androidenterprise1/struct.EnterpriseListCall.html' title='google_androidenterprise1::EnterpriseListCall'>EnterpriseListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>Retrieves the name and domain of an enterprise.</p>
+<p>Looks up an enterprise by domain name. This is only supported for enterprises created via the Google-initiated creation flow. Lookup of the id is not needed for enterprises created via the EMM-initiated flow since the EMM learns the enterprise ID in the callback specified in the Enterprises.generateSignupUrl call.</p>
 
 <h1 id='arguments-4' class='section-header'><a href='#arguments-4'>Arguments</a></h1>
 <ul>
-<li><code>enterpriseId</code> - The ID of the enterprise.</li>
+<li><code>domain</code> - The exact primary domain name of the enterprise to look up.</li>
 </ul>
-</div><h4 id='method.get_store_layout' class='method'><code>fn <a href='#method.get_store_layout' class='fnname'>get_store_layout</a>(&amp;self, enterprise_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_androidenterprise1/struct.EnterpriseGetStoreLayoutCall.html' title='google_androidenterprise1::EnterpriseGetStoreLayoutCall'>EnterpriseGetStoreLayoutCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.get_store_layout' class='method'><code>fn <a href='#method.get_store_layout' class='fnname'>get_store_layout</a>(&amp;self, enterprise_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_androidenterprise1/struct.EnterpriseGetStoreLayoutCall.html' title='google_androidenterprise1::EnterpriseGetStoreLayoutCall'>EnterpriseGetStoreLayoutCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>Returns the store layout resource.</p>
+<p>Returns the store layout for the enterprise. If the store layout has not been set, or if the store layout has no homepageId set, returns a NOT_FOUND error.</p>
 
 <h1 id='arguments-5' class='section-header'><a href='#arguments-5'>Arguments</a></h1>
 <ul>
 <li><code>enterpriseId</code> - The ID of the enterprise.</li>
 </ul>
-</div><h4 id='method.set_store_layout' class='method'><code>fn <a href='#method.set_store_layout' class='fnname'>set_store_layout</a>(&amp;self, request: <a class='struct' href='../google_androidenterprise1/struct.StoreLayout.html' title='google_androidenterprise1::StoreLayout'>StoreLayout</a>, enterprise_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_androidenterprise1/struct.EnterpriseSetStoreLayoutCall.html' title='google_androidenterprise1::EnterpriseSetStoreLayoutCall'>EnterpriseSetStoreLayoutCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.complete_signup' class='method'><code>fn <a href='#method.complete_signup' class='fnname'>complete_signup</a>(&amp;self) -&gt; <a class='struct' href='../google_androidenterprise1/struct.EnterpriseCompleteSignupCall.html' title='google_androidenterprise1::EnterpriseCompleteSignupCall'>EnterpriseCompleteSignupCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>Sets the store layout resource.</p>
+<p>Completes the signup flow, by specifying the Completion token and Enterprise token. This request must not be called multiple times for a given Enterprise Token.</p>
+</div><h4 id='method.get_service_account' class='method'><code>fn <a href='#method.get_service_account' class='fnname'>get_service_account</a>(&amp;self, enterprise_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_androidenterprise1/struct.EnterpriseGetServiceAccountCall.html' title='google_androidenterprise1::EnterpriseGetServiceAccountCall'>EnterpriseGetServiceAccountCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Returns a service account and credentials. The service account can be bound to the enterprise by calling setAccount. The service account is unique to this enterprise and EMM, and will be deleted if the enterprise is unbound. The credentials contain private key data and are not stored server-side.</p>
+
+<p>This method can only be called after calling Enterprises.Enroll or Enterprises.CompleteSignup, and before Enterprises.SetAccount; at other times it will return an error.</p>
+
+<p>Subsequent calls after the first will generate a new, unique set of credentials, and invalidate the previously generated credentials.</p>
+
+<p>Once the service account is bound to the enterprise, it can be managed using the serviceAccountKeys resource.</p>
 
 <h1 id='arguments-6' class='section-header'><a href='#arguments-6'>Arguments</a></h1>
 <ul>
-<li><code>request</code> - No description provided.</li>
 <li><code>enterpriseId</code> - The ID of the enterprise.</li>
 </ul>
-</div><h4 id='method.enroll' class='method'><code>fn <a href='#method.enroll' class='fnname'>enroll</a>(&amp;self, request: <a class='struct' href='../google_androidenterprise1/struct.Enterprise.html' title='google_androidenterprise1::Enterprise'>Enterprise</a>, token: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_androidenterprise1/struct.EnterpriseEnrollCall.html' title='google_androidenterprise1::EnterpriseEnrollCall'>EnterpriseEnrollCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.acknowledge_notification_set' class='method'><code>fn <a href='#method.acknowledge_notification_set' class='fnname'>acknowledge_notification_set</a>(&amp;self) -&gt; <a class='struct' href='../google_androidenterprise1/struct.EnterpriseAcknowledgeNotificationSetCall.html' title='google_androidenterprise1::EnterpriseAcknowledgeNotificationSetCall'>EnterpriseAcknowledgeNotificationSetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>Enrolls an enterprise with the calling EMM.</p>
+<p>Acknowledges notifications that were received from Enterprises.PullNotificationSet to prevent subsequent calls from returning the same notifications.</p>
+</div><h4 id='method.unenroll' class='method'><code>fn <a href='#method.unenroll' class='fnname'>unenroll</a>(&amp;self, enterprise_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_androidenterprise1/struct.EnterpriseUnenrollCall.html' title='google_androidenterprise1::EnterpriseUnenrollCall'>EnterpriseUnenrollCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Unenrolls an enterprise from the calling EMM.</p>
 
 <h1 id='arguments-7' class='section-header'><a href='#arguments-7'>Arguments</a></h1>
 <ul>
-<li><code>request</code> - No description provided.</li>
-<li><code>token</code> - The token provided by the enterprise to register the EMM.</li>
+<li><code>enterpriseId</code> - The ID of the enterprise.</li>
 </ul>
-</div><h4 id='method.set_account' class='method'><code>fn <a href='#method.set_account' class='fnname'>set_account</a>(&amp;self, request: <a class='struct' href='../google_androidenterprise1/struct.EnterpriseAccount.html' title='google_androidenterprise1::EnterpriseAccount'>EnterpriseAccount</a>, enterprise_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_androidenterprise1/struct.EnterpriseSetAccountCall.html' title='google_androidenterprise1::EnterpriseSetAccountCall'>EnterpriseSetAccountCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.send_test_push_notification' class='method'><code>fn <a href='#method.send_test_push_notification' class='fnname'>send_test_push_notification</a>(&amp;self, enterprise_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_androidenterprise1/struct.EnterpriseSendTestPushNotificationCall.html' title='google_androidenterprise1::EnterpriseSendTestPushNotificationCall'>EnterpriseSendTestPushNotificationCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>Set the account that will be used to authenticate to the API as the enterprise.</p>
+<p>Sends a test push notification to validate the EMM integration with the Google Cloud Pub/Sub service for this enterprise.</p>
 
 <h1 id='arguments-8' class='section-header'><a href='#arguments-8'>Arguments</a></h1>
 <ul>
-<li><code>request</code> - No description provided.</li>
 <li><code>enterpriseId</code> - The ID of the enterprise.</li>
 </ul>
-</div><h4 id='method.delete' class='method'><code>fn <a href='#method.delete' class='fnname'>delete</a>(&amp;self, enterprise_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_androidenterprise1/struct.EnterpriseDeleteCall.html' title='google_androidenterprise1::EnterpriseDeleteCall'>EnterpriseDeleteCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, enterprise_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_androidenterprise1/struct.EnterpriseGetCall.html' title='google_androidenterprise1::EnterpriseGetCall'>EnterpriseGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>Deletes the binding between the EMM and enterprise. This is now deprecated; use this to unenroll customers that were previously enrolled with the &#39;insert&#39; call, then enroll them again with the &#39;enroll&#39; call.</p>
+<p>Retrieves the name and domain of an enterprise.</p>
 
 <h1 id='arguments-9' class='section-header'><a href='#arguments-9'>Arguments</a></h1>
 <ul>
 <li><code>enterpriseId</code> - The ID of the enterprise.</li>
 </ul>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_androidenterprise1/trait.MethodsBuilder.html' title='google_androidenterprise1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_androidenterprise1/struct.EnterpriseMethods.html' title='google_androidenterprise1::EnterpriseMethods'>EnterpriseMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-7013' class='srclink' href='../src/google_androidenterprise1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-androidenterprise1-c1b518bbf39d4c72/out/lib.rs.html#15665' title='goto source code'>[src]</a></span></h3>
+</div><h4 id='method.delete' class='method'><code>fn <a href='#method.delete' class='fnname'>delete</a>(&amp;self, enterprise_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_androidenterprise1/struct.EnterpriseDeleteCall.html' title='google_androidenterprise1::EnterpriseDeleteCall'>EnterpriseDeleteCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Deletes the binding between the EMM and enterprise. This is now deprecated; use this to unenroll customers that were previously enrolled with the &#39;insert&#39; call, then enroll them again with the &#39;enroll&#39; call.</p>
+
+<h1 id='arguments-10' class='section-header'><a href='#arguments-10'>Arguments</a></h1>
+<ul>
+<li><code>enterpriseId</code> - The ID of the enterprise.</li>
+</ul>
+</div><h4 id='method.generate_signup_url' class='method'><code>fn <a href='#method.generate_signup_url' class='fnname'>generate_signup_url</a>(&amp;self) -&gt; <a class='struct' href='../google_androidenterprise1/struct.EnterpriseGenerateSignupUrlCall.html' title='google_androidenterprise1::EnterpriseGenerateSignupUrlCall'>EnterpriseGenerateSignupUrlCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Generates a sign-up URL.</p>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='trait' href='../google_androidenterprise1/trait.MethodsBuilder.html' title='google_androidenterprise1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_androidenterprise1/struct.EnterpriseMethods.html' title='google_androidenterprise1::EnterpriseMethods'>EnterpriseMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-9520' class='srclink' href='../src/google_androidenterprise1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-androidenterprise1-f9ed1fb9501f45a8/out/lib.rs.html#18615' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 

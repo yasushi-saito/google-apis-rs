@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>playmoviespartner v0.3.6+20150812</title>
+  <title>Play Movies v0.3.6+20160518</title>
   
 
   <link rel="shortcut icon" href="./img/favicon.ico">
@@ -32,7 +32,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href="." class="icon icon-home"> playmoviespartner v0.3.6+20150812</a>
+        <a href="." class="icon icon-home"> Play Movies v0.3.6+20160518</a>
         
       </div>
 
@@ -73,7 +73,22 @@
             <span>Accounts</span>
             
                 <li class="toctree-l2 ">
+                    <a class="" href="accounts_avails-get/">Avails Get</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
                     <a class="" href="accounts_avails-list/">Avails List</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="accounts_components-list/">Components List</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="accounts_components-type-get/">Components Type Get</a>
                     
                 </li>
             
@@ -121,7 +136,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href=".">playmoviespartner v0.3.6+20150812</a>
+        <a href=".">Play Movies v0.3.6+20160518</a>
       </nav>
 
       
@@ -150,11 +165,11 @@ This file was generated automatically from 'src/mako/cli/README.md.mako'
 DO NOT EDIT !
 -->
 
-<p>The <code>playmoviespartner1</code> command-line interface <em>(CLI)</em> allows to use most features of the <em>Google playmoviespartner</em> service from the comfort of your terminal.</p>
+<p>The <code>playmoviespartner1</code> command-line interface <em>(CLI)</em> allows to use most features of the <em>Google Play Movies</em> service from the comfort of your terminal.</p>
 <p>By default all output is printed to standard out, but flags can be set to direct it into a file independent of your shell's
 capabilities. Errors will be printed to standard error, and cause the program's exit code to be non-zero.</p>
 <p>If data-structures are requested, these will be returned as pretty-printed JSON, to be useful as input to other tools.</p>
-<p>Everything else about the <em>playmoviespartner</em> API can be found at the
+<p>Everything else about the <em>Play Movies</em> API can be found at the
 <a href="https://developers.google.com/playmoviespartner/">official documentation site</a>.</p>
 <h1 id="downloads">Downloads</h1>
 <p>You can download the pre-compiled 64bit binaries for the following platforms:</p>
@@ -164,10 +179,13 @@ capabilities. Errors will be printed to standard error, and cause the program's 
 </ul>
 <p>Find the source code <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/playmoviespartner1-cli">on github</a>.</p>
 <h1 id="usage">Usage</h1>
-<p>This documentation was generated from the <em>playmoviespartner</em> API at revision <em>20150812</em>. The CLI is at version <em>0.3.6</em>.</p>
+<p>This documentation was generated from the <em>Play Movies</em> API at revision <em>20160518</em>. The CLI is at version <em>0.3.6</em>.</p>
 <pre><code class="bash">playmoviespartner1 [options]
         accounts
+                avails-get &lt;account-id&gt; &lt;avail-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 avails-list &lt;account-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                components-list &lt;account-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                components-type-get &lt;account-id&gt; &lt;component-id&gt; &lt;type&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 experience-locales-get &lt;account-id&gt; &lt;el-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 experience-locales-list &lt;account-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 orders-get &lt;account-id&gt; &lt;order-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
@@ -237,7 +255,7 @@ issue at hand.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="accounts_avails-list/" class="btn btn-neutral float-right" title="Avails List"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="accounts_avails-get/" class="btn btn-neutral float-right" title="Avails Get"/>Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
     </div>
@@ -267,13 +285,13 @@ issue at hand.</p>
             <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/playmoviespartner1-cli" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
         
       <span><a href="" style="color: #fcfcfc;">&laquo; Previous</a></span>
-      <span style="margin-left: 15px"><a href="accounts_avails-list/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span style="margin-left: 15px"><a href="accounts_avails-get/" style="color: #fcfcfc">Next &raquo;</a></span>
     </span>
 </div>
 
 <!--
 MkDocs version  : 0.12.2
-Docs Build Date : 2016-07-23 16:06:04.274439
+Docs Build Date : 2016-09-11 17:56:05.103881
 -->
 </body>
 </html>

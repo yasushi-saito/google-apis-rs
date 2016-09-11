@@ -243,12 +243,16 @@
 <span id="199">199</span>
 <span id="200">200</span>
 <span id="201">201</span>
+<span id="202">202</span>
+<span id="203">203</span>
+<span id="204">204</span>
+<span id="205">205</span>
 </pre><pre class='rust '>
 <span class='comment'>// DO NOT EDIT !</span>
 <span class='comment'>// This file was generated automatically from &#39;src/mako/api/lib.rs.mako&#39;</span>
 <span class='comment'>// DO NOT EDIT !</span>
 
-<span class='doccomment'>//! This documentation was generated from *proximitybeacon* crate version *0.1.14+20150729*, where *20150729* is the exact revision of the *proximitybeacon:v1beta1* schema built by the [mako](http://www.makotemplates.org/) code generator *v0.1.14*.</span>
+<span class='doccomment'>//! This documentation was generated from *proximitybeacon* crate version *0.1.15+20160429*, where *20160429* is the exact revision of the *proximitybeacon:v1beta1* schema built by the [mako](http://www.makotemplates.org/) code generator *v0.1.15*.</span>
 <span class='doccomment'>//! </span>
 <span class='doccomment'>//! Everything else about the *proximitybeacon* *v1_beta1* API can be found at the</span>
 <span class='doccomment'>//! [official documentation site](https://developers.google.com/beacons/proximity/).</span>
@@ -262,8 +266,11 @@
 <span class='doccomment'>//! * [beacons](struct.Beacon.html)</span>
 <span class='doccomment'>//!  * [*activate*](struct.BeaconActivateCall.html), [*attachments batch delete*](struct.BeaconAttachmentBatchDeleteCall.html), [*attachments create*](struct.BeaconAttachmentCreateCall.html), [*attachments delete*](struct.BeaconAttachmentDeleteCall.html), [*attachments list*](struct.BeaconAttachmentListCall.html), [*deactivate*](struct.BeaconDeactivateCall.html), [*decommission*](struct.BeaconDecommissionCall.html), [*diagnostics list*](struct.BeaconDiagnosticListCall.html), [*get*](struct.BeaconGetCall.html), [*list*](struct.BeaconListCall.html), [*register*](struct.BeaconRegisterCall.html) and [*update*](struct.BeaconUpdateCall.html)</span>
 <span class='doccomment'>//! * [namespaces](struct.Namespace.html)</span>
-<span class='doccomment'>//!  * [*list*](struct.NamespaceListCall.html)</span>
+<span class='doccomment'>//!  * [*list*](struct.NamespaceListCall.html) and [*update*](struct.NamespaceUpdateCall.html)</span>
 <span class='doccomment'>//! </span>
+<span class='doccomment'>//! Other activities are ...</span>
+<span class='doccomment'>//! </span>
+<span class='doccomment'>//! * [get eidparams](struct.MethodGetEidparamCall.html)</span>
 <span class='doccomment'>//! </span>
 <span class='doccomment'>//! </span>
 <span class='doccomment'>//! </span>
@@ -355,9 +362,10 @@
 <span class='doccomment'>//! // execute the final call using `doit()`.</span>
 <span class='doccomment'>//! // Values shown here are possibly random and not representative !</span>
 <span class='doccomment'>//! let result = hub.beacons().diagnostics_list(&quot;beaconName&quot;)</span>
-<span class='doccomment'>//!              .page_token(&quot;Lorem&quot;)</span>
-<span class='doccomment'>//!              .page_size(-21)</span>
-<span class='doccomment'>//!              .alert_filter(&quot;duo&quot;)</span>
+<span class='doccomment'>//!              .project_id(&quot;invidunt&quot;)</span>
+<span class='doccomment'>//!              .page_token(&quot;aliquyam&quot;)</span>
+<span class='doccomment'>//!              .page_size(-73)</span>
+<span class='doccomment'>//!              .alert_filter(&quot;Lorem&quot;)</span>
 <span class='doccomment'>//!              .doit();</span>
 <span class='doccomment'>//! </span>
 <span class='doccomment'>//! match result {</span>

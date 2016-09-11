@@ -47,8 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-6478' class='srclink' href='../src/google_gan1_beta1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-gan1_beta1-bb0d154e69896444/out/lib.rs.html#14369-14371' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct LinkMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
+               </span><a id='src-6172' class='srclink' href='../src/google_gan1_beta1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-gan1_beta1-703538594867efc1/out/lib.rs.html#11123-11125' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct LinkMethods&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>link</em> resources.
 It is not used directly, but through the <code>Gan</code> hub.</p>
@@ -74,8 +74,8 @@ It is not used directly, but through the <code>Gan</code> hub.</p>
 <span class='comment'>// like `get(...)`, `insert(...)` and `list(...)`</span>
 <span class='comment'>// to build up your call.</span>
 <span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>links</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_gan1_beta1/struct.LinkMethods.html' title='google_gan1_beta1::LinkMethods'>LinkMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-6487' class='srclink' href='../src/google_gan1_beta1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-gan1_beta1-bb0d154e69896444/out/lib.rs.html#14373-14438' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.insert' class='method'><code>fn <a href='#method.insert' class='fnname'>insert</a>(&amp;self, request: <a class='struct' href='../google_gan1_beta1/struct.Link.html' title='google_gan1_beta1::Link'>Link</a>, role: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, role_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gan1_beta1/struct.LinkInsertCall.html' title='google_gan1_beta1::LinkInsertCall'>LinkInsertCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='struct' href='../google_gan1_beta1/struct.LinkMethods.html' title='google_gan1_beta1::LinkMethods'>LinkMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-6181' class='srclink' href='../src/google_gan1_beta1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-gan1_beta1-703538594867efc1/out/lib.rs.html#11127-11192' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.insert' class='method'><code>fn <a href='#method.insert' class='fnname'>insert</a>(&amp;self, request: <a class='struct' href='../google_gan1_beta1/struct.Link.html' title='google_gan1_beta1::Link'>Link</a>, role: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, role_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gan1_beta1/struct.LinkInsertCall.html' title='google_gan1_beta1::LinkInsertCall'>LinkInsertCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Inserts a new link.</p>
@@ -86,7 +86,7 @@ It is not used directly, but through the <code>Gan</code> hub.</p>
 <li><code>role</code> - The role of the requester. Valid values: &#39;advertisers&#39; or &#39;publishers&#39;.</li>
 <li><code>roleId</code> - The ID of the requesting advertiser or publisher.</li>
 </ul>
-</div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, role: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, role_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, link_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gan1_beta1/struct.LinkGetCall.html' title='google_gan1_beta1::LinkGetCall'>LinkGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, role: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, role_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, link_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gan1_beta1/struct.LinkGetCall.html' title='google_gan1_beta1::LinkGetCall'>LinkGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Retrieves data about a single link if the requesting advertiser/publisher has access to it. Advertisers can look up their own links. Publishers can look up visible links or links belonging to advertisers they are in a relationship with.</p>
@@ -97,7 +97,7 @@ It is not used directly, but through the <code>Gan</code> hub.</p>
 <li><code>roleId</code> - The ID of the requesting advertiser or publisher.</li>
 <li><code>linkId</code> - The ID of the link to look up.</li>
 </ul>
-</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self, role: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, role_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gan1_beta1/struct.LinkListCall.html' title='google_gan1_beta1::LinkListCall'>LinkListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self, role: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, role_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gan1_beta1/struct.LinkListCall.html' title='google_gan1_beta1::LinkListCall'>LinkListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Retrieves all links that match the query parameters.</p>
@@ -107,7 +107,7 @@ It is not used directly, but through the <code>Gan</code> hub.</p>
 <li><code>role</code> - The role of the requester. Valid values: &#39;advertisers&#39; or &#39;publishers&#39;.</li>
 <li><code>roleId</code> - The ID of the requesting advertiser or publisher.</li>
 </ul>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_gan1_beta1/trait.MethodsBuilder.html' title='google_gan1_beta1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_gan1_beta1/struct.LinkMethods.html' title='google_gan1_beta1::LinkMethods'>LinkMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-6483' class='srclink' href='../src/google_gan1_beta1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-gan1_beta1-bb0d154e69896444/out/lib.rs.html#14372' title='goto source code'>[src]</a></span></h3>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='trait' href='../google_gan1_beta1/trait.MethodsBuilder.html' title='google_gan1_beta1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_gan1_beta1/struct.LinkMethods.html' title='google_gan1_beta1::LinkMethods'>LinkMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-6177' class='srclink' href='../src/google_gan1_beta1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-gan1_beta1-703538594867efc1/out/lib.rs.html#11126' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 

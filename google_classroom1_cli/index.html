@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>classroom v0.3.6+20151013</title>
+  <title>classroom v0.3.6+20160816</title>
   
 
   <link rel="shortcut icon" href="./img/favicon.ico">
@@ -32,7 +32,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href="." class="icon icon-home"> classroom v0.3.6+20151013</a>
+        <a href="." class="icon icon-home"> classroom v0.3.6+20160816</a>
         
       </div>
 
@@ -84,6 +84,56 @@
             
                 <li class="toctree-l2 ">
                     <a class="" href="courses_aliases-list/">Aliases List</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="courses_course-work-create/">Course Work Create</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="courses_course-work-get/">Course Work Get</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="courses_course-work-list/">Course Work List</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="courses_course-work-student-submissions-get/">Course Work Student Submissions Get</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="courses_course-work-student-submissions-list/">Course Work Student Submissions List</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="courses_course-work-student-submissions-modify-attachments/">Course Work Student Submissions Modify Attachments</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="courses_course-work-student-submissions-patch/">Course Work Student Submissions Patch</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="courses_course-work-student-submissions-reclaim/">Course Work Student Submissions Reclaim</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="courses_course-work-student-submissions-return/">Course Work Student Submissions Return</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="courses_course-work-student-submissions-turn-in/">Course Work Student Submissions Turn In</a>
                     
                 </li>
             
@@ -199,6 +249,41 @@
                     
                 </li>
             
+                <li class="toctree-l2 ">
+                    <a class="" href="user-profiles_guardian-invitations-create/">Guardian Invitations Create</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="user-profiles_guardian-invitations-get/">Guardian Invitations Get</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="user-profiles_guardian-invitations-list/">Guardian Invitations List</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="user-profiles_guardian-invitations-patch/">Guardian Invitations Patch</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="user-profiles_guardians-delete/">Guardians Delete</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="user-profiles_guardians-get/">Guardians Get</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="user-profiles_guardians-list/">Guardians List</a>
+                    
+                </li>
+            
         
 
     
@@ -213,7 +298,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href=".">classroom v0.3.6+20151013</a>
+        <a href=".">classroom v0.3.6+20160816</a>
       </nav>
 
       
@@ -256,12 +341,22 @@ capabilities. Errors will be printed to standard error, and cause the program's 
 </ul>
 <p>Find the source code <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/classroom1-cli">on github</a>.</p>
 <h1 id="usage">Usage</h1>
-<p>This documentation was generated from the <em>classroom</em> API at revision <em>20151013</em>. The CLI is at version <em>0.3.6</em>.</p>
+<p>This documentation was generated from the <em>classroom</em> API at revision <em>20160816</em>. The CLI is at version <em>0.3.6</em>.</p>
 <pre><code class="bash">classroom1 [options]
         courses
                 aliases-create &lt;course-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 aliases-delete &lt;course-id&gt; &lt;alias&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 aliases-list &lt;course-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                course-work-create &lt;course-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                course-work-get &lt;course-id&gt; &lt;id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                course-work-list &lt;course-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                course-work-student-submissions-get &lt;course-id&gt; &lt;course-work-id&gt; &lt;id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                course-work-student-submissions-list &lt;course-id&gt; &lt;course-work-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                course-work-student-submissions-modify-attachments &lt;course-id&gt; &lt;course-work-id&gt; &lt;id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                course-work-student-submissions-patch &lt;course-id&gt; &lt;course-work-id&gt; &lt;id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                course-work-student-submissions-reclaim &lt;course-id&gt; &lt;course-work-id&gt; &lt;id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                course-work-student-submissions-return &lt;course-id&gt; &lt;course-work-id&gt; &lt;id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                course-work-student-submissions-turn-in &lt;course-id&gt; &lt;course-work-id&gt; &lt;id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 create (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 delete &lt;id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 get &lt;id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
@@ -284,6 +379,13 @@ capabilities. Errors will be printed to standard error, and cause the program's 
                 list [-p &lt;v&gt;]... [-o &lt;out&gt;]
         user-profiles
                 get &lt;user-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                guardian-invitations-create &lt;student-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                guardian-invitations-get &lt;student-id&gt; &lt;invitation-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                guardian-invitations-list &lt;student-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                guardian-invitations-patch &lt;student-id&gt; &lt;invitation-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                guardians-delete &lt;student-id&gt; &lt;guardian-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                guardians-get &lt;student-id&gt; &lt;guardian-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                guardians-list &lt;student-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
   classroom1 --help
 
 Configuration:
@@ -383,7 +485,7 @@ issue at hand.</p>
 
 <!--
 MkDocs version  : 0.12.2
-Docs Build Date : 2016-07-23 16:06:06.531068
+Docs Build Date : 2016-09-11 17:56:09.976705
 -->
 </body>
 </html>

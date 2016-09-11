@@ -47,8 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-12894' class='srclink' href='../src/google_admin1_directory/home/byron/dev/rust/google-apis-rs/target/debug/build/google-admin1_directory-a39c9338e60059e5/out/lib.rs.html#30169-30171' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct UserMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
+               </span><a id='src-12111' class='srclink' href='../src/google_admin1_directory/home/byron/dev/rust/google-apis-rs/target/debug/build/google-admin1_directory-9f6fa564a6722c32/out/lib.rs.html#23963-23965' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct UserMethods&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>user</em> resources.
 It is not used directly, but through the <code>Directory</code> hub.</p>
@@ -74,8 +74,8 @@ It is not used directly, but through the <code>Directory</code> hub.</p>
 <span class='comment'>// like `aliases_delete(...)`, `aliases_insert(...)`, `aliases_list(...)`, `aliases_watch(...)`, `delete(...)`, `get(...)`, `insert(...)`, `list(...)`, `make_admin(...)`, `patch(...)`, `photos_delete(...)`, `photos_get(...)`, `photos_patch(...)`, `photos_update(...)`, `undelete(...)`, `update(...)` and `watch(...)`</span>
 <span class='comment'>// to build up your call.</span>
 <span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>users</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_admin1_directory/struct.UserMethods.html' title='google_admin1_directory::UserMethods'>UserMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-12903' class='srclink' href='../src/google_admin1_directory/home/byron/dev/rust/google-apis-rs/target/debug/build/google-admin1_directory-a39c9338e60059e5/out/lib.rs.html#30173-30465' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.undelete' class='method'><code>fn <a href='#method.undelete' class='fnname'>undelete</a>(&amp;self, request: <a class='struct' href='../google_admin1_directory/struct.UserUndelete.html' title='google_admin1_directory::UserUndelete'>UserUndelete</a>, user_key: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_admin1_directory/struct.UserUndeleteCall.html' title='google_admin1_directory::UserUndeleteCall'>UserUndeleteCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='struct' href='../google_admin1_directory/struct.UserMethods.html' title='google_admin1_directory::UserMethods'>UserMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-12120' class='srclink' href='../src/google_admin1_directory/home/byron/dev/rust/google-apis-rs/target/debug/build/google-admin1_directory-9f6fa564a6722c32/out/lib.rs.html#23967-24259' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.undelete' class='method'><code>fn <a href='#method.undelete' class='fnname'>undelete</a>(&amp;self, request: <a class='struct' href='../google_admin1_directory/struct.UserUndelete.html' title='google_admin1_directory::UserUndelete'>UserUndelete</a>, user_key: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_admin1_directory/struct.UserUndeleteCall.html' title='google_admin1_directory::UserUndeleteCall'>UserUndeleteCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Undelete a deleted user</p>
@@ -85,7 +85,7 @@ It is not used directly, but through the <code>Directory</code> hub.</p>
 <li><code>request</code> - No description provided.</li>
 <li><code>userKey</code> - The immutable id of the user</li>
 </ul>
-</div><h4 id='method.photos_delete' class='method'><code>fn <a href='#method.photos_delete' class='fnname'>photos_delete</a>(&amp;self, user_key: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_admin1_directory/struct.UserPhotoDeleteCall.html' title='google_admin1_directory::UserPhotoDeleteCall'>UserPhotoDeleteCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.photos_delete' class='method'><code>fn <a href='#method.photos_delete' class='fnname'>photos_delete</a>(&amp;self, user_key: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_admin1_directory/struct.UserPhotoDeleteCall.html' title='google_admin1_directory::UserPhotoDeleteCall'>UserPhotoDeleteCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Remove photos for the user</p>
@@ -94,7 +94,7 @@ It is not used directly, but through the <code>Directory</code> hub.</p>
 <ul>
 <li><code>userKey</code> - Email or immutable Id of the user</li>
 </ul>
-</div><h4 id='method.photos_patch' class='method'><code>fn <a href='#method.photos_patch' class='fnname'>photos_patch</a>(&amp;self, request: <a class='struct' href='../google_admin1_directory/struct.UserPhoto.html' title='google_admin1_directory::UserPhoto'>UserPhoto</a>, user_key: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_admin1_directory/struct.UserPhotoPatchCall.html' title='google_admin1_directory::UserPhotoPatchCall'>UserPhotoPatchCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.photos_patch' class='method'><code>fn <a href='#method.photos_patch' class='fnname'>photos_patch</a>(&amp;self, request: <a class='struct' href='../google_admin1_directory/struct.UserPhoto.html' title='google_admin1_directory::UserPhoto'>UserPhoto</a>, user_key: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_admin1_directory/struct.UserPhotoPatchCall.html' title='google_admin1_directory::UserPhotoPatchCall'>UserPhotoPatchCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Add a photo for the user. This method supports patch semantics.</p>
@@ -104,7 +104,7 @@ It is not used directly, but through the <code>Directory</code> hub.</p>
 <li><code>request</code> - No description provided.</li>
 <li><code>userKey</code> - Email or immutable Id of the user</li>
 </ul>
-</div><h4 id='method.insert' class='method'><code>fn <a href='#method.insert' class='fnname'>insert</a>(&amp;self, request: <a class='struct' href='../google_admin1_directory/struct.User.html' title='google_admin1_directory::User'>User</a>) -&gt; <a class='struct' href='../google_admin1_directory/struct.UserInsertCall.html' title='google_admin1_directory::UserInsertCall'>UserInsertCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.insert' class='method'><code>fn <a href='#method.insert' class='fnname'>insert</a>(&amp;self, request: <a class='struct' href='../google_admin1_directory/struct.User.html' title='google_admin1_directory::User'>User</a>) -&gt; <a class='struct' href='../google_admin1_directory/struct.UserInsertCall.html' title='google_admin1_directory::UserInsertCall'>UserInsertCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>create user.</p>
@@ -113,7 +113,7 @@ It is not used directly, but through the <code>Directory</code> hub.</p>
 <ul>
 <li><code>request</code> - No description provided.</li>
 </ul>
-</div><h4 id='method.aliases_watch' class='method'><code>fn <a href='#method.aliases_watch' class='fnname'>aliases_watch</a>(&amp;self, request: <a class='struct' href='../google_admin1_directory/struct.Channel.html' title='google_admin1_directory::Channel'>Channel</a>, user_key: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_admin1_directory/struct.UserAliaseWatchCall.html' title='google_admin1_directory::UserAliaseWatchCall'>UserAliaseWatchCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.aliases_watch' class='method'><code>fn <a href='#method.aliases_watch' class='fnname'>aliases_watch</a>(&amp;self, request: <a class='struct' href='../google_admin1_directory/struct.Channel.html' title='google_admin1_directory::Channel'>Channel</a>, user_key: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_admin1_directory/struct.UserAliaseWatchCall.html' title='google_admin1_directory::UserAliaseWatchCall'>UserAliaseWatchCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Watch for changes in user aliases list</p>
@@ -123,7 +123,7 @@ It is not used directly, but through the <code>Directory</code> hub.</p>
 <li><code>request</code> - No description provided.</li>
 <li><code>userKey</code> - Email or immutable Id of the user</li>
 </ul>
-</div><h4 id='method.photos_update' class='method'><code>fn <a href='#method.photos_update' class='fnname'>photos_update</a>(&amp;self, request: <a class='struct' href='../google_admin1_directory/struct.UserPhoto.html' title='google_admin1_directory::UserPhoto'>UserPhoto</a>, user_key: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_admin1_directory/struct.UserPhotoUpdateCall.html' title='google_admin1_directory::UserPhotoUpdateCall'>UserPhotoUpdateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.photos_update' class='method'><code>fn <a href='#method.photos_update' class='fnname'>photos_update</a>(&amp;self, request: <a class='struct' href='../google_admin1_directory/struct.UserPhoto.html' title='google_admin1_directory::UserPhoto'>UserPhoto</a>, user_key: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_admin1_directory/struct.UserPhotoUpdateCall.html' title='google_admin1_directory::UserPhotoUpdateCall'>UserPhotoUpdateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Add a photo for the user</p>
@@ -133,7 +133,7 @@ It is not used directly, but through the <code>Directory</code> hub.</p>
 <li><code>request</code> - No description provided.</li>
 <li><code>userKey</code> - Email or immutable Id of the user</li>
 </ul>
-</div><h4 id='method.watch' class='method'><code>fn <a href='#method.watch' class='fnname'>watch</a>(&amp;self, request: <a class='struct' href='../google_admin1_directory/struct.Channel.html' title='google_admin1_directory::Channel'>Channel</a>) -&gt; <a class='struct' href='../google_admin1_directory/struct.UserWatchCall.html' title='google_admin1_directory::UserWatchCall'>UserWatchCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.watch' class='method'><code>fn <a href='#method.watch' class='fnname'>watch</a>(&amp;self, request: <a class='struct' href='../google_admin1_directory/struct.Channel.html' title='google_admin1_directory::Channel'>Channel</a>) -&gt; <a class='struct' href='../google_admin1_directory/struct.UserWatchCall.html' title='google_admin1_directory::UserWatchCall'>UserWatchCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Watch for changes in users list</p>
@@ -142,7 +142,7 @@ It is not used directly, but through the <code>Directory</code> hub.</p>
 <ul>
 <li><code>request</code> - No description provided.</li>
 </ul>
-</div><h4 id='method.update' class='method'><code>fn <a href='#method.update' class='fnname'>update</a>(&amp;self, request: <a class='struct' href='../google_admin1_directory/struct.User.html' title='google_admin1_directory::User'>User</a>, user_key: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_admin1_directory/struct.UserUpdateCall.html' title='google_admin1_directory::UserUpdateCall'>UserUpdateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.update' class='method'><code>fn <a href='#method.update' class='fnname'>update</a>(&amp;self, request: <a class='struct' href='../google_admin1_directory/struct.User.html' title='google_admin1_directory::User'>User</a>, user_key: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_admin1_directory/struct.UserUpdateCall.html' title='google_admin1_directory::UserUpdateCall'>UserUpdateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>update user</p>
@@ -152,7 +152,7 @@ It is not used directly, but through the <code>Directory</code> hub.</p>
 <li><code>request</code> - No description provided.</li>
 <li><code>userKey</code> - Email or immutable Id of the user. If Id, it should match with id of user object</li>
 </ul>
-</div><h4 id='method.photos_get' class='method'><code>fn <a href='#method.photos_get' class='fnname'>photos_get</a>(&amp;self, user_key: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_admin1_directory/struct.UserPhotoGetCall.html' title='google_admin1_directory::UserPhotoGetCall'>UserPhotoGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.photos_get' class='method'><code>fn <a href='#method.photos_get' class='fnname'>photos_get</a>(&amp;self, user_key: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_admin1_directory/struct.UserPhotoGetCall.html' title='google_admin1_directory::UserPhotoGetCall'>UserPhotoGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Retrieve photo of a user</p>
@@ -161,11 +161,11 @@ It is not used directly, but through the <code>Directory</code> hub.</p>
 <ul>
 <li><code>userKey</code> - Email or immutable Id of the user</li>
 </ul>
-</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self) -&gt; <a class='struct' href='../google_admin1_directory/struct.UserListCall.html' title='google_admin1_directory::UserListCall'>UserListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self) -&gt; <a class='struct' href='../google_admin1_directory/struct.UserListCall.html' title='google_admin1_directory::UserListCall'>UserListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Retrieve either deleted users or all users in a domain (paginated)</p>
-</div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, user_key: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_admin1_directory/struct.UserGetCall.html' title='google_admin1_directory::UserGetCall'>UserGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, user_key: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_admin1_directory/struct.UserGetCall.html' title='google_admin1_directory::UserGetCall'>UserGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>retrieve user</p>
@@ -174,7 +174,7 @@ It is not used directly, but through the <code>Directory</code> hub.</p>
 <ul>
 <li><code>userKey</code> - Email or immutable Id of the user</li>
 </ul>
-</div><h4 id='method.aliases_insert' class='method'><code>fn <a href='#method.aliases_insert' class='fnname'>aliases_insert</a>(&amp;self, request: <a class='struct' href='../google_admin1_directory/struct.Alias.html' title='google_admin1_directory::Alias'>Alias</a>, user_key: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_admin1_directory/struct.UserAliaseInsertCall.html' title='google_admin1_directory::UserAliaseInsertCall'>UserAliaseInsertCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.aliases_insert' class='method'><code>fn <a href='#method.aliases_insert' class='fnname'>aliases_insert</a>(&amp;self, request: <a class='struct' href='../google_admin1_directory/struct.Alias.html' title='google_admin1_directory::Alias'>Alias</a>, user_key: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_admin1_directory/struct.UserAliaseInsertCall.html' title='google_admin1_directory::UserAliaseInsertCall'>UserAliaseInsertCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Add a alias for the user</p>
@@ -184,7 +184,7 @@ It is not used directly, but through the <code>Directory</code> hub.</p>
 <li><code>request</code> - No description provided.</li>
 <li><code>userKey</code> - Email or immutable Id of the user</li>
 </ul>
-</div><h4 id='method.aliases_list' class='method'><code>fn <a href='#method.aliases_list' class='fnname'>aliases_list</a>(&amp;self, user_key: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_admin1_directory/struct.UserAliaseListCall.html' title='google_admin1_directory::UserAliaseListCall'>UserAliaseListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.aliases_list' class='method'><code>fn <a href='#method.aliases_list' class='fnname'>aliases_list</a>(&amp;self, user_key: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_admin1_directory/struct.UserAliaseListCall.html' title='google_admin1_directory::UserAliaseListCall'>UserAliaseListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>List all aliases for a user</p>
@@ -193,7 +193,7 @@ It is not used directly, but through the <code>Directory</code> hub.</p>
 <ul>
 <li><code>userKey</code> - Email or immutable Id of the user</li>
 </ul>
-</div><h4 id='method.make_admin' class='method'><code>fn <a href='#method.make_admin' class='fnname'>make_admin</a>(&amp;self, request: <a class='struct' href='../google_admin1_directory/struct.UserMakeAdmin.html' title='google_admin1_directory::UserMakeAdmin'>UserMakeAdmin</a>, user_key: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_admin1_directory/struct.UserMakeAdminCall.html' title='google_admin1_directory::UserMakeAdminCall'>UserMakeAdminCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.make_admin' class='method'><code>fn <a href='#method.make_admin' class='fnname'>make_admin</a>(&amp;self, request: <a class='struct' href='../google_admin1_directory/struct.UserMakeAdmin.html' title='google_admin1_directory::UserMakeAdmin'>UserMakeAdmin</a>, user_key: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_admin1_directory/struct.UserMakeAdminCall.html' title='google_admin1_directory::UserMakeAdminCall'>UserMakeAdminCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>change admin status of a user</p>
@@ -203,7 +203,7 @@ It is not used directly, but through the <code>Directory</code> hub.</p>
 <li><code>request</code> - No description provided.</li>
 <li><code>userKey</code> - Email or immutable Id of the user as admin</li>
 </ul>
-</div><h4 id='method.patch' class='method'><code>fn <a href='#method.patch' class='fnname'>patch</a>(&amp;self, request: <a class='struct' href='../google_admin1_directory/struct.User.html' title='google_admin1_directory::User'>User</a>, user_key: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_admin1_directory/struct.UserPatchCall.html' title='google_admin1_directory::UserPatchCall'>UserPatchCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.patch' class='method'><code>fn <a href='#method.patch' class='fnname'>patch</a>(&amp;self, request: <a class='struct' href='../google_admin1_directory/struct.User.html' title='google_admin1_directory::User'>User</a>, user_key: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_admin1_directory/struct.UserPatchCall.html' title='google_admin1_directory::UserPatchCall'>UserPatchCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>update user. This method supports patch semantics.</p>
@@ -213,7 +213,7 @@ It is not used directly, but through the <code>Directory</code> hub.</p>
 <li><code>request</code> - No description provided.</li>
 <li><code>userKey</code> - Email or immutable Id of the user. If Id, it should match with id of user object</li>
 </ul>
-</div><h4 id='method.aliases_delete' class='method'><code>fn <a href='#method.aliases_delete' class='fnname'>aliases_delete</a>(&amp;self, user_key: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, alias: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_admin1_directory/struct.UserAliaseDeleteCall.html' title='google_admin1_directory::UserAliaseDeleteCall'>UserAliaseDeleteCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.aliases_delete' class='method'><code>fn <a href='#method.aliases_delete' class='fnname'>aliases_delete</a>(&amp;self, user_key: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, alias: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_admin1_directory/struct.UserAliaseDeleteCall.html' title='google_admin1_directory::UserAliaseDeleteCall'>UserAliaseDeleteCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Remove a alias for the user</p>
@@ -223,7 +223,7 @@ It is not used directly, but through the <code>Directory</code> hub.</p>
 <li><code>userKey</code> - Email or immutable Id of the user</li>
 <li><code>alias</code> - The alias to be removed</li>
 </ul>
-</div><h4 id='method.delete' class='method'><code>fn <a href='#method.delete' class='fnname'>delete</a>(&amp;self, user_key: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_admin1_directory/struct.UserDeleteCall.html' title='google_admin1_directory::UserDeleteCall'>UserDeleteCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.delete' class='method'><code>fn <a href='#method.delete' class='fnname'>delete</a>(&amp;self, user_key: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_admin1_directory/struct.UserDeleteCall.html' title='google_admin1_directory::UserDeleteCall'>UserDeleteCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Delete user</p>
@@ -232,7 +232,7 @@ It is not used directly, but through the <code>Directory</code> hub.</p>
 <ul>
 <li><code>userKey</code> - Email or immutable Id of the user</li>
 </ul>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_admin1_directory/trait.MethodsBuilder.html' title='google_admin1_directory::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_admin1_directory/struct.UserMethods.html' title='google_admin1_directory::UserMethods'>UserMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-12899' class='srclink' href='../src/google_admin1_directory/home/byron/dev/rust/google-apis-rs/target/debug/build/google-admin1_directory-a39c9338e60059e5/out/lib.rs.html#30172' title='goto source code'>[src]</a></span></h3>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='trait' href='../google_admin1_directory/trait.MethodsBuilder.html' title='google_admin1_directory::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_admin1_directory/struct.UserMethods.html' title='google_admin1_directory::UserMethods'>UserMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-12116' class='srclink' href='../src/google_admin1_directory/home/byron/dev/rust/google-apis-rs/target/debug/build/google-admin1_directory-9f6fa564a6722c32/out/lib.rs.html#23966' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 

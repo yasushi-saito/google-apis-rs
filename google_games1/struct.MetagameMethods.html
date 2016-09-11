@@ -47,8 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-19772' class='srclink' href='../src/google_games1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-games1-b9bb0f61d1030f8c/out/lib.rs.html#42839-42841' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct MetagameMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
+               </span><a id='src-18371' class='srclink' href='../src/google_games1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-games1-00b2e1f28385176b/out/lib.rs.html#33120-33122' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct MetagameMethods&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>metagame</em> resources.
 It is not used directly, but through the <code>Games</code> hub.</p>
@@ -74,8 +74,8 @@ It is not used directly, but through the <code>Games</code> hub.</p>
 <span class='comment'>// like `get_metagame_config(...)` and `list_categories_by_player(...)`</span>
 <span class='comment'>// to build up your call.</span>
 <span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>metagame</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_games1/struct.MetagameMethods.html' title='google_games1::MetagameMethods'>MetagameMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-19781' class='srclink' href='../src/google_games1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-games1-b9bb0f61d1030f8c/out/lib.rs.html#42843-42876' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.list_categories_by_player' class='method'><code>fn <a href='#method.list_categories_by_player' class='fnname'>list_categories_by_player</a>(&amp;self, player_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, collection: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_games1/struct.MetagameListCategoriesByPlayerCall.html' title='google_games1::MetagameListCategoriesByPlayerCall'>MetagameListCategoriesByPlayerCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='struct' href='../google_games1/struct.MetagameMethods.html' title='google_games1::MetagameMethods'>MetagameMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-18380' class='srclink' href='../src/google_games1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-games1-00b2e1f28385176b/out/lib.rs.html#33124-33160' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.list_categories_by_player' class='method'><code>fn <a href='#method.list_categories_by_player' class='fnname'>list_categories_by_player</a>(&amp;self, player_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, collection: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_games1/struct.MetagameListCategoriesByPlayerCall.html' title='google_games1::MetagameListCategoriesByPlayerCall'>MetagameListCategoriesByPlayerCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>List play data aggregated per category for the player corresponding to playerId.</p>
@@ -85,11 +85,11 @@ It is not used directly, but through the <code>Games</code> hub.</p>
 <li><code>playerId</code> - A player ID. A value of me may be used in place of the authenticated player&#39;s ID.</li>
 <li><code>collection</code> - The collection of categories for which data will be returned.</li>
 </ul>
-</div><h4 id='method.get_metagame_config' class='method'><code>fn <a href='#method.get_metagame_config' class='fnname'>get_metagame_config</a>(&amp;self) -&gt; <a class='struct' href='../google_games1/struct.MetagameGetMetagameConfigCall.html' title='google_games1::MetagameGetMetagameConfigCall'>MetagameGetMetagameConfigCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.get_metagame_config' class='method'><code>fn <a href='#method.get_metagame_config' class='fnname'>get_metagame_config</a>(&amp;self) -&gt; <a class='struct' href='../google_games1/struct.MetagameGetMetagameConfigCall.html' title='google_games1::MetagameGetMetagameConfigCall'>MetagameGetMetagameConfigCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Return the metagame configuration data for the calling application.</p>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_games1/trait.MethodsBuilder.html' title='google_games1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_games1/struct.MetagameMethods.html' title='google_games1::MetagameMethods'>MetagameMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-19777' class='srclink' href='../src/google_games1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-games1-b9bb0f61d1030f8c/out/lib.rs.html#42842' title='goto source code'>[src]</a></span></h3>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='trait' href='../google_games1/trait.MethodsBuilder.html' title='google_games1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_games1/struct.MetagameMethods.html' title='google_games1::MetagameMethods'>MetagameMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-18376' class='srclink' href='../src/google_games1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-games1-00b2e1f28385176b/out/lib.rs.html#33123' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 

@@ -47,8 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-7339' class='srclink' href='../src/google_blogger3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-blogger3-b49083ad0cf44399/out/lib.rs.html#15555-15557' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct PostUserInfoMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
+               </span><a id='src-6763' class='srclink' href='../src/google_blogger3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-blogger3-3752420fe98c47f4/out/lib.rs.html#12151-12153' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct PostUserInfoMethods&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>postUserInfo</em> resources.
 It is not used directly, but through the <code>Blogger</code> hub.</p>
@@ -74,8 +74,8 @@ It is not used directly, but through the <code>Blogger</code> hub.</p>
 <span class='comment'>// like `get(...)` and `list(...)`</span>
 <span class='comment'>// to build up your call.</span>
 <span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>post_user_infos</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_blogger3/struct.PostUserInfoMethods.html' title='google_blogger3::PostUserInfoMethods'>PostUserInfoMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-7348' class='srclink' href='../src/google_blogger3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-blogger3-b49083ad0cf44399/out/lib.rs.html#15559-15606' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, blog_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, post_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_blogger3/struct.PostUserInfoGetCall.html' title='google_blogger3::PostUserInfoGetCall'>PostUserInfoGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='struct' href='../google_blogger3/struct.PostUserInfoMethods.html' title='google_blogger3::PostUserInfoMethods'>PostUserInfoMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-6772' class='srclink' href='../src/google_blogger3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-blogger3-3752420fe98c47f4/out/lib.rs.html#12155-12202' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, blog_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, post_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_blogger3/struct.PostUserInfoGetCall.html' title='google_blogger3::PostUserInfoGetCall'>PostUserInfoGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Gets one post and user info pair, by post ID and user ID. The post user info contains per-user information about the post, such as access rights, specific to the user.</p>
@@ -86,7 +86,7 @@ It is not used directly, but through the <code>Blogger</code> hub.</p>
 <li><code>blogId</code> - The ID of the blog.</li>
 <li><code>postId</code> - The ID of the post to get.</li>
 </ul>
-</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, blog_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_blogger3/struct.PostUserInfoListCall.html' title='google_blogger3::PostUserInfoListCall'>PostUserInfoListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, blog_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_blogger3/struct.PostUserInfoListCall.html' title='google_blogger3::PostUserInfoListCall'>PostUserInfoListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Retrieves a list of post and post user info pairs, possibly filtered. The post user info contains per-user information about the post, such as access rights, specific to the user.</p>
@@ -96,7 +96,7 @@ It is not used directly, but through the <code>Blogger</code> hub.</p>
 <li><code>userId</code> - ID of the user for the per-user information to be fetched. Either the word &#39;self&#39; (sans quote marks) or the user&#39;s profile identifier.</li>
 <li><code>blogId</code> - ID of the blog to fetch posts from.</li>
 </ul>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_blogger3/trait.MethodsBuilder.html' title='google_blogger3::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_blogger3/struct.PostUserInfoMethods.html' title='google_blogger3::PostUserInfoMethods'>PostUserInfoMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-7344' class='srclink' href='../src/google_blogger3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-blogger3-b49083ad0cf44399/out/lib.rs.html#15558' title='goto source code'>[src]</a></span></h3>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='trait' href='../google_blogger3/trait.MethodsBuilder.html' title='google_blogger3::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_blogger3/struct.PostUserInfoMethods.html' title='google_blogger3::PostUserInfoMethods'>PostUserInfoMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-6768' class='srclink' href='../src/google_blogger3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-blogger3-3752420fe98c47f4/out/lib.rs.html#12154' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 

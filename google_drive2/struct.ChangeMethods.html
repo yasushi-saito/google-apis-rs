@@ -47,8 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-11497' class='srclink' href='../src/google_drive2/home/byron/dev/rust/google-apis-rs/target/debug/build/google-drive2-b86413e23e0e6702/out/lib.rs.html#26398-26400' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct ChangeMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
+               </span><a id='src-10852' class='srclink' href='../src/google_drive2/home/byron/dev/rust/google-apis-rs/target/debug/build/google-drive2-1ea2b6be115cdf81/out/lib.rs.html#20698-20700' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct ChangeMethods&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>change</em> resources.
 It is not used directly, but through the <code>Drive</code> hub.</p>
@@ -74,8 +74,8 @@ It is not used directly, but through the <code>Drive</code> hub.</p>
 <span class='comment'>// like `get(...)`, `list(...)` and `watch(...)`</span>
 <span class='comment'>// to build up your call.</span>
 <span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>changes</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_drive2/struct.ChangeMethods.html' title='google_drive2::ChangeMethods'>ChangeMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-11506' class='srclink' href='../src/google_drive2/home/byron/dev/rust/google-apis-rs/target/debug/build/google-drive2-b86413e23e0e6702/out/lib.rs.html#26402-26452' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.watch' class='method'><code>fn <a href='#method.watch' class='fnname'>watch</a>(&amp;self, request: <a class='struct' href='../google_drive2/struct.Channel.html' title='google_drive2::Channel'>Channel</a>) -&gt; <a class='struct' href='../google_drive2/struct.ChangeWatchCall.html' title='google_drive2::ChangeWatchCall'>ChangeWatchCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='struct' href='../google_drive2/struct.ChangeMethods.html' title='google_drive2::ChangeMethods'>ChangeMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-10861' class='srclink' href='../src/google_drive2/home/byron/dev/rust/google-apis-rs/target/debug/build/google-drive2-1ea2b6be115cdf81/out/lib.rs.html#20702-20752' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.watch' class='method'><code>fn <a href='#method.watch' class='fnname'>watch</a>(&amp;self, request: <a class='struct' href='../google_drive2/struct.Channel.html' title='google_drive2::Channel'>Channel</a>) -&gt; <a class='struct' href='../google_drive2/struct.ChangeWatchCall.html' title='google_drive2::ChangeWatchCall'>ChangeWatchCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Subscribe to changes for a user.</p>
@@ -84,11 +84,11 @@ It is not used directly, but through the <code>Drive</code> hub.</p>
 <ul>
 <li><code>request</code> - No description provided.</li>
 </ul>
-</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self) -&gt; <a class='struct' href='../google_drive2/struct.ChangeListCall.html' title='google_drive2::ChangeListCall'>ChangeListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self) -&gt; <a class='struct' href='../google_drive2/struct.ChangeListCall.html' title='google_drive2::ChangeListCall'>ChangeListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Lists the changes for a user.</p>
-</div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, change_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_drive2/struct.ChangeGetCall.html' title='google_drive2::ChangeGetCall'>ChangeGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, change_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_drive2/struct.ChangeGetCall.html' title='google_drive2::ChangeGetCall'>ChangeGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Gets a specific change.</p>
@@ -97,7 +97,7 @@ It is not used directly, but through the <code>Drive</code> hub.</p>
 <ul>
 <li><code>changeId</code> - The ID of the change.</li>
 </ul>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_drive2/trait.MethodsBuilder.html' title='google_drive2::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_drive2/struct.ChangeMethods.html' title='google_drive2::ChangeMethods'>ChangeMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-11502' class='srclink' href='../src/google_drive2/home/byron/dev/rust/google-apis-rs/target/debug/build/google-drive2-b86413e23e0e6702/out/lib.rs.html#26401' title='goto source code'>[src]</a></span></h3>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='trait' href='../google_drive2/trait.MethodsBuilder.html' title='google_drive2::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_drive2/struct.ChangeMethods.html' title='google_drive2::ChangeMethods'>ChangeMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-10857' class='srclink' href='../src/google_drive2/home/byron/dev/rust/google-apis-rs/target/debug/build/google-drive2-1ea2b6be115cdf81/out/lib.rs.html#20701' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 

@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Dataset Aggregate - fitness v0.3.6+20151021</title>
+  <title>Dataset Aggregate - fitness v0.3.6+20160801</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -32,7 +32,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> fitness v0.3.6+20151021</a>
+        <a href=".." class="icon icon-home"> fitness v0.3.6+20160801</a>
         
       </div>
 
@@ -150,7 +150,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">fitness v0.3.6+20151021</a>
+        <a href="..">fitness v0.3.6+20160801</a>
       </nav>
 
       
@@ -187,6 +187,8 @@
 <li><em>https://www.googleapis.com/auth/fitness.body.write</em></li>
 <li><em>https://www.googleapis.com/auth/fitness.location.read</em></li>
 <li><em>https://www.googleapis.com/auth/fitness.location.write</em></li>
+<li><em>https://www.googleapis.com/auth/fitness.nutrition.read</em></li>
+<li><em>https://www.googleapis.com/auth/fitness.nutrition.write</em></li>
 </ul>
 <p>If unset, the scope for this method defaults to <em>https://www.googleapis.com/auth/fitness.activity.read</em>.
 You can set the scope for this method like this: <code>fitness1 --scope &lt;scope&gt; users dataset-aggregate ...</code></p>
@@ -212,37 +214,42 @@ In the latter case it is advised to set the field-cursor to the data-structure's
     min-duration-millis: string
   bucket-by-time:
     duration-millis: string
+    period:
+      time-zone-id: string
+      type: string
+      value: integer
   end-time-millis: string
+  filtered-data-quality-standard: [string]
   start-time-millis: string
 
 </code></pre>
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .bucket-by-activity-segment    activity-data-source-id=accusam</code><ul>
+<li><code>-r .bucket-by-activity-segment    activity-data-source-id=et</code><ul>
 <li>The default activity stream will be used if a specific activityDataSourceId is not specified.</li>
 </ul>
 </li>
 <li>
-<p><code>min-duration-millis=lorem</code></p>
+<p><code>min-duration-millis=duo</code></p>
 <ul>
 <li>Specifies that only activity segments of duration longer than minDurationMillis are considered and used as a container for aggregated data.</li>
 </ul>
 </li>
 <li>
-<p><code>..bucket-by-activity-type    activity-data-source-id=sea</code></p>
+<p><code>..bucket-by-activity-type    activity-data-source-id=et</code></p>
 <ul>
 <li>The default activity stream will be used if a specific activityDataSourceId is not specified.</li>
 </ul>
 </li>
 <li>
-<p><code>min-duration-millis=et</code></p>
+<p><code>min-duration-millis=eirmod</code></p>
 <ul>
 <li>Specifies that only activity segments of duration longer than minDurationMillis are considered and used as a container for aggregated data.</li>
 </ul>
 </li>
 <li>
-<p><code>..bucket-by-session    min-duration-millis=duo</code></p>
+<p><code>..bucket-by-session    min-duration-millis=sanctus</code></p>
 <ul>
 <li>Specifies that only sessions of duration longer than minDurationMillis are considered and used as a container for aggregated data.</li>
 </ul>
@@ -253,13 +260,32 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>Specifies that result buckets aggregate data by exactly durationMillis time frames. Time frames that contain no data will be included in the response with an empty dataset.</li>
 </ul>
 </li>
+<li><code>period    time-zone-id=amet</code><ul>
+<li>org.joda.timezone.DateTimeZone</li>
+</ul>
+</li>
+<li><code>type=et</code><ul>
+<li>No description provided.</li>
+</ul>
+</li>
 <li>
-<p><code>..    end-time-millis=eirmod</code></p>
+<p><code>value=56</code></p>
+<ul>
+<li>No description provided.</li>
+</ul>
+</li>
+<li>
+<p><code>...    end-time-millis=ut</code></p>
 <ul>
 <li>The end of a window of time. Data that intersects with this time window will be aggregated. The time is in milliseconds since epoch, inclusive.</li>
 </ul>
 </li>
-<li><code>start-time-millis=sanctus</code><ul>
+<li><code>filtered-data-quality-standard=ea</code><ul>
+<li>A list of acceptable data quality standards. Only data points which conform to at least one of the specified data quality standards will be returned. If the list is empty, all data points are returned.</li>
+<li>Each invocation of this argument appends the given value to the array.</li>
+</ul>
+</li>
+<li><code>start-time-millis=sed</code><ul>
 <li>The start of a window of time. Data that intersects with this time window will be aggregated. The time is in milliseconds since epoch, inclusive.</li>
 </ul>
 </li>
@@ -373,7 +399,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <!--
 MkDocs version  : 0.12.2
-Docs Build Date : 2016-07-23 16:05:36.623797
+Docs Build Date : 2016-09-11 17:55:14.834616
 -->
 </body>
 </html>

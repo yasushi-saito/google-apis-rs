@@ -48,7 +48,7 @@
                        [<span class='inner'>&#x2212;</span>]
                    </a>
                </span><a id='src-0' class='srclink' href='../src/google_pagespeedonline2/src/lib.rs.html#5-188' title='goto source code'>[src]</a></span></h1>
-<div class='docblock'><p>This documentation was generated from <em>pagespeedonline</em> crate version <em>0.1.14+20160306</em>, where <em>20160306</em> is the exact revision of the <em>pagespeedonline:v2</em> schema built by the <a href="http://www.makotemplates.org/">mako</a> code generator <em>v0.1.14</em>.</p>
+<div class='docblock'><p>This documentation was generated from <em>pagespeedonline</em> crate version <em>0.1.15+20160811</em>, where <em>20160811</em> is the exact revision of the <em>pagespeedonline:v2</em> schema built by the <a href="http://www.makotemplates.org/">mako</a> code generator <em>v0.1.15</em>.</p>
 
 <p>Everything else about the <em>pagespeedonline</em> <em>v2</em> API can be found at the
 <a href="https://developers.google.com/speed/docs/insights/v2/getting-started">official documentation site</a>.
@@ -149,10 +149,10 @@ google-pagespeedonline2 = &quot;*&quot;
 <span class='comment'>// Values shown here are possibly random and not representative !</span>
 <span class='kw'>let</span> <span class='ident'>result</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>pagespeedapi</span>().<span class='ident'>runpagespeed</span>(<span class='string'>&quot;url&quot;</span>)
              .<span class='ident'>strategy</span>(<span class='string'>&quot;ea&quot;</span>)
-             .<span class='ident'>screenshot</span>(<span class='boolvalue'>false</span>)
+             .<span class='ident'>screenshot</span>(<span class='bool-val'>false</span>)
              .<span class='ident'>add_rule</span>(<span class='string'>&quot;justo&quot;</span>)
              .<span class='ident'>locale</span>(<span class='string'>&quot;justo&quot;</span>)
-             .<span class='ident'>filter_third_party_resources</span>(<span class='boolvalue'>true</span>)
+             .<span class='ident'>filter_third_party_resources</span>(<span class='bool-val'>true</span>)
              .<span class='ident'>doit</span>();
  
 <span class='kw'>match</span> <span class='ident'>result</span> {

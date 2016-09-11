@@ -47,8 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-9810' class='srclink' href='../src/google_sqladmin1_beta4/home/byron/dev/rust/google-apis-rs/target/debug/build/google-sqladmin1_beta4-818aba1aba49046e/out/lib.rs.html#21332-21334' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct BackupRunMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
+               </span><a id='src-9124' class='srclink' href='../src/google_sqladmin1_beta4/home/byron/dev/rust/google-apis-rs/target/debug/build/google-sqladmin1_beta4-c0e631133095017e/out/lib.rs.html#16806-16808' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct BackupRunMethods&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>backupRun</em> resources.
 It is not used directly, but through the <code>SQLAdmin</code> hub.</p>
@@ -71,11 +71,11 @@ It is not used directly, but through the <code>SQLAdmin</code> hub.</p>
                               <span class='op'>&lt;</span><span class='ident'>MemoryStorage</span> <span class='kw'>as</span> <span class='ident'>Default</span><span class='op'>&gt;</span>::<span class='ident'>default</span>(), <span class='prelude-val'>None</span>);
 <span class='kw'>let</span> <span class='kw-2'>mut</span> <span class='ident'>hub</span> <span class='op'>=</span> <span class='ident'>SQLAdmin</span>::<span class='ident'>new</span>(<span class='ident'>hyper</span>::<span class='ident'>Client</span>::<span class='ident'>new</span>(), <span class='ident'>auth</span>);
 <span class='comment'>// Usually you wouldn&#39;t bind this to a variable, but keep calling *CallBuilders*</span>
-<span class='comment'>// like `delete(...)`, `get(...)` and `list(...)`</span>
+<span class='comment'>// like `delete(...)`, `get(...)`, `insert(...)` and `list(...)`</span>
 <span class='comment'>// to build up your call.</span>
 <span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>backup_runs</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_sqladmin1_beta4/struct.BackupRunMethods.html' title='google_sqladmin1_beta4::BackupRunMethods'>BackupRunMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-9819' class='srclink' href='../src/google_sqladmin1_beta4/home/byron/dev/rust/google-apis-rs/target/debug/build/google-sqladmin1_beta4-818aba1aba49046e/out/lib.rs.html#21336-21394' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self, project: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, instance: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_sqladmin1_beta4/struct.BackupRunListCall.html' title='google_sqladmin1_beta4::BackupRunListCall'>BackupRunListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='struct' href='../google_sqladmin1_beta4/struct.BackupRunMethods.html' title='google_sqladmin1_beta4::BackupRunMethods'>BackupRunMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-9133' class='srclink' href='../src/google_sqladmin1_beta4/home/byron/dev/rust/google-apis-rs/target/debug/build/google-sqladmin1_beta4-c0e631133095017e/out/lib.rs.html#16810-16887' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self, project: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, instance: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_sqladmin1_beta4/struct.BackupRunListCall.html' title='google_sqladmin1_beta4::BackupRunListCall'>BackupRunListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Lists all backup runs associated with a given instance and configuration in the reverse chronological order of the enqueued time.</p>
@@ -85,7 +85,7 @@ It is not used directly, but through the <code>SQLAdmin</code> hub.</p>
 <li><code>project</code> - Project ID of the project that contains the instance.</li>
 <li><code>instance</code> - Cloud SQL instance ID. This does not include the project ID.</li>
 </ul>
-</div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, project: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, instance: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_sqladmin1_beta4/struct.BackupRunGetCall.html' title='google_sqladmin1_beta4::BackupRunGetCall'>BackupRunGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, project: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, instance: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_sqladmin1_beta4/struct.BackupRunGetCall.html' title='google_sqladmin1_beta4::BackupRunGetCall'>BackupRunGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Retrieves a resource containing information about a backup run.</p>
@@ -96,7 +96,7 @@ It is not used directly, but through the <code>SQLAdmin</code> hub.</p>
 <li><code>instance</code> - Cloud SQL instance ID. This does not include the project ID.</li>
 <li><code>id</code> - The ID of this Backup Run.</li>
 </ul>
-</div><h4 id='method.delete' class='method'><code>fn <a href='#method.delete' class='fnname'>delete</a>(&amp;self, project: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, instance: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_sqladmin1_beta4/struct.BackupRunDeleteCall.html' title='google_sqladmin1_beta4::BackupRunDeleteCall'>BackupRunDeleteCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.delete' class='method'><code>fn <a href='#method.delete' class='fnname'>delete</a>(&amp;self, project: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, instance: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_sqladmin1_beta4/struct.BackupRunDeleteCall.html' title='google_sqladmin1_beta4::BackupRunDeleteCall'>BackupRunDeleteCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Deletes the backup taken by a backup run.</p>
@@ -107,7 +107,18 @@ It is not used directly, but through the <code>SQLAdmin</code> hub.</p>
 <li><code>instance</code> - Cloud SQL instance ID. This does not include the project ID.</li>
 <li><code>id</code> - The ID of the Backup Run to delete. To find a Backup Run ID, use the list method.</li>
 </ul>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_sqladmin1_beta4/trait.MethodsBuilder.html' title='google_sqladmin1_beta4::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_sqladmin1_beta4/struct.BackupRunMethods.html' title='google_sqladmin1_beta4::BackupRunMethods'>BackupRunMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-9815' class='srclink' href='../src/google_sqladmin1_beta4/home/byron/dev/rust/google-apis-rs/target/debug/build/google-sqladmin1_beta4-818aba1aba49046e/out/lib.rs.html#21335' title='goto source code'>[src]</a></span></h3>
+</div><h4 id='method.insert' class='method'><code>fn <a href='#method.insert' class='fnname'>insert</a>(&amp;self, request: <a class='struct' href='../google_sqladmin1_beta4/struct.BackupRun.html' title='google_sqladmin1_beta4::BackupRun'>BackupRun</a>, project: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, instance: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_sqladmin1_beta4/struct.BackupRunInsertCall.html' title='google_sqladmin1_beta4::BackupRunInsertCall'>BackupRunInsertCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Creates a new backup run on demand. This method is applicable only to Second Generation instances.</p>
+
+<h1 id='arguments-3' class='section-header'><a href='#arguments-3'>Arguments</a></h1>
+<ul>
+<li><code>request</code> - No description provided.</li>
+<li><code>project</code> - Project ID of the project that contains the instance.</li>
+<li><code>instance</code> - Cloud SQL instance ID. This does not include the project ID.</li>
+</ul>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='trait' href='../google_sqladmin1_beta4/trait.MethodsBuilder.html' title='google_sqladmin1_beta4::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_sqladmin1_beta4/struct.BackupRunMethods.html' title='google_sqladmin1_beta4::BackupRunMethods'>BackupRunMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-9129' class='srclink' href='../src/google_sqladmin1_beta4/home/byron/dev/rust/google-apis-rs/target/debug/build/google-sqladmin1_beta4-c0e631133095017e/out/lib.rs.html#16809' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 

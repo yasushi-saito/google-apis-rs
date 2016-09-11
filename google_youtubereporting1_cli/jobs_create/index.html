@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Create - YouTube Reporting v0.3.6+20160315</title>
+  <title>Create - YouTube Reporting v0.3.6+20160719</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -32,7 +32,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> YouTube Reporting v0.3.6+20160315</a>
+        <a href=".." class="icon icon-home"> YouTube Reporting v0.3.6+20160719</a>
         
       </div>
 
@@ -137,7 +137,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">YouTube Reporting v0.3.6+20160315</a>
+        <a href="..">YouTube Reporting v0.3.6+20160719</a>
       </nav>
 
       
@@ -179,6 +179,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <p>For example, a structure like this:</p>
 <pre><code>Job:
   create-time: string
+  expire-time: string
   id: string
   name: string
   report-type-id: string
@@ -192,19 +193,23 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>The creation date/time of the job.</li>
 </ul>
 </li>
-<li><code>id=sit</code><ul>
+<li><code>expire-time=sit</code><ul>
+<li>The date/time when this job will expire/expired. After a job expired, no new reports are generated.</li>
+</ul>
+</li>
+<li><code>id=stet</code><ul>
 <li>The server-generated ID of the job (max. 40 characters).</li>
 </ul>
 </li>
-<li><code>name=stet</code><ul>
+<li><code>name=sed</code><ul>
 <li>The name of the job (max. 100 characters).</li>
 </ul>
 </li>
-<li><code>report-type-id=sed</code><ul>
+<li><code>report-type-id=et</code><ul>
 <li>The type of reports this job creates. Corresponds to the ID of a ReportType.</li>
 </ul>
 </li>
-<li><code>system-managed=false</code><ul>
+<li><code>system-managed=true</code><ul>
 <li>True if this a system-managed job that cannot be modified by the user; otherwise false.</li>
 </ul>
 </li>
@@ -364,7 +369,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 
 <!--
 MkDocs version  : 0.12.2
-Docs Build Date : 2016-07-23 16:05:40.642818
+Docs Build Date : 2016-09-11 17:55:20.332237
 -->
 </body>
 </html>

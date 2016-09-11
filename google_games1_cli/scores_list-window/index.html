@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>List Window - Games v0.3.6+20160401</title>
+  <title>List Window - Games v0.3.6+20160901</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -32,7 +32,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Games v0.3.6+20160401</a>
+        <a href=".." class="icon icon-home"> Games v0.3.6+20160901</a>
         
       </div>
 
@@ -432,7 +432,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Games v0.3.6+20160401</a>
+        <a href="..">Games v0.3.6+20160901</a>
       </nav>
 
       
@@ -500,9 +500,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p results-above=integer</strong></p>
+<p><strong>-p max-results=integer</strong></p>
 <ul>
-<li>The preferred number of scores to return above the player&#39;s score. More scores may be returned if the player is at the bottom of the leaderboard; fewer may be returned if the player is at the top. Must be less than or equal to maxResults.</li>
+<li>The maximum number of leaderboard scores to return in the response. For any response, the actual number of leaderboard scores returned may be less than the specified maxResults.</li>
 </ul>
 </li>
 <li>
@@ -512,21 +512,27 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p max-results=integer</strong></p>
+<p><strong>-p consistency-token=string</strong></p>
 <ul>
-<li>The maximum number of leaderboard scores to return in the response. For any response, the actual number of leaderboard scores returned may be less than the specified maxResults.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p language=string</strong></p>
-<ul>
-<li>The preferred language to use for strings returned by this method.</li>
+<li>The last-seen mutation timestamp.</li>
 </ul>
 </li>
 <li>
 <p><strong>-p page-token=string</strong></p>
 <ul>
 <li>The token returned by the previous request.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p results-above=integer</strong></p>
+<ul>
+<li>The preferred number of scores to return above the player&#39;s score. More scores may be returned if the player is at the bottom of the leaderboard; fewer may be returned if the player is at the top. Must be less than or equal to maxResults.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p language=string</strong></p>
+<ul>
+<li>The preferred language to use for strings returned by this method.</li>
 </ul>
 </li>
 </ul>
@@ -620,7 +626,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 
 <!--
 MkDocs version  : 0.12.2
-Docs Build Date : 2016-07-23 16:06:19.393022
+Docs Build Date : 2016-09-11 17:56:28.881190
 -->
 </body>
 </html>

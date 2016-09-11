@@ -47,8 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-12856' class='srclink' href='../src/google_admin1_directory/home/byron/dev/rust/google-apis-rs/target/debug/build/google-admin1_directory-a39c9338e60059e5/out/lib.rs.html#30023-30025' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct ResourceMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
+               </span><a id='src-12073' class='srclink' href='../src/google_admin1_directory/home/byron/dev/rust/google-apis-rs/target/debug/build/google-admin1_directory-9f6fa564a6722c32/out/lib.rs.html#23817-23819' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct ResourceMethods&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>resource</em> resources.
 It is not used directly, but through the <code>Directory</code> hub.</p>
@@ -74,8 +74,8 @@ It is not used directly, but through the <code>Directory</code> hub.</p>
 <span class='comment'>// like `calendars_delete(...)`, `calendars_get(...)`, `calendars_insert(...)`, `calendars_list(...)`, `calendars_patch(...)` and `calendars_update(...)`</span>
 <span class='comment'>// to build up your call.</span>
 <span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>resources</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_admin1_directory/struct.ResourceMethods.html' title='google_admin1_directory::ResourceMethods'>ResourceMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-12865' class='srclink' href='../src/google_admin1_directory/home/byron/dev/rust/google-apis-rs/target/debug/build/google-admin1_directory-a39c9338e60059e5/out/lib.rs.html#30027-30140' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.calendars_list' class='method'><code>fn <a href='#method.calendars_list' class='fnname'>calendars_list</a>(&amp;self, customer: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_admin1_directory/struct.ResourceCalendarListCall.html' title='google_admin1_directory::ResourceCalendarListCall'>ResourceCalendarListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='struct' href='../google_admin1_directory/struct.ResourceMethods.html' title='google_admin1_directory::ResourceMethods'>ResourceMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-12082' class='srclink' href='../src/google_admin1_directory/home/byron/dev/rust/google-apis-rs/target/debug/build/google-admin1_directory-9f6fa564a6722c32/out/lib.rs.html#23821-23934' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.calendars_list' class='method'><code>fn <a href='#method.calendars_list' class='fnname'>calendars_list</a>(&amp;self, customer: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_admin1_directory/struct.ResourceCalendarListCall.html' title='google_admin1_directory::ResourceCalendarListCall'>ResourceCalendarListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Retrieves a list of calendar resources for an account.</p>
@@ -84,7 +84,7 @@ It is not used directly, but through the <code>Directory</code> hub.</p>
 <ul>
 <li><code>customer</code> - The unique ID for the customer&#39;s Google account. As an account administrator, you can also use the my_customer alias to represent your account&#39;s customer ID.</li>
 </ul>
-</div><h4 id='method.calendars_get' class='method'><code>fn <a href='#method.calendars_get' class='fnname'>calendars_get</a>(&amp;self, customer: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, calendar_resource_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_admin1_directory/struct.ResourceCalendarGetCall.html' title='google_admin1_directory::ResourceCalendarGetCall'>ResourceCalendarGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.calendars_get' class='method'><code>fn <a href='#method.calendars_get' class='fnname'>calendars_get</a>(&amp;self, customer: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, calendar_resource_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_admin1_directory/struct.ResourceCalendarGetCall.html' title='google_admin1_directory::ResourceCalendarGetCall'>ResourceCalendarGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Retrieves a calendar resource.</p>
@@ -94,7 +94,7 @@ It is not used directly, but through the <code>Directory</code> hub.</p>
 <li><code>customer</code> - The unique ID for the customer&#39;s Google account. As an account administrator, you can also use the my_customer alias to represent your account&#39;s customer ID.</li>
 <li><code>calendarResourceId</code> - The unique ID of the calendar resource to retrieve.</li>
 </ul>
-</div><h4 id='method.calendars_insert' class='method'><code>fn <a href='#method.calendars_insert' class='fnname'>calendars_insert</a>(&amp;self, request: <a class='struct' href='../google_admin1_directory/struct.CalendarResource.html' title='google_admin1_directory::CalendarResource'>CalendarResource</a>, customer: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_admin1_directory/struct.ResourceCalendarInsertCall.html' title='google_admin1_directory::ResourceCalendarInsertCall'>ResourceCalendarInsertCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.calendars_insert' class='method'><code>fn <a href='#method.calendars_insert' class='fnname'>calendars_insert</a>(&amp;self, request: <a class='struct' href='../google_admin1_directory/struct.CalendarResource.html' title='google_admin1_directory::CalendarResource'>CalendarResource</a>, customer: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_admin1_directory/struct.ResourceCalendarInsertCall.html' title='google_admin1_directory::ResourceCalendarInsertCall'>ResourceCalendarInsertCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Inserts a calendar resource.</p>
@@ -104,7 +104,7 @@ It is not used directly, but through the <code>Directory</code> hub.</p>
 <li><code>request</code> - No description provided.</li>
 <li><code>customer</code> - The unique ID for the customer&#39;s Google account. As an account administrator, you can also use the my_customer alias to represent your account&#39;s customer ID.</li>
 </ul>
-</div><h4 id='method.calendars_patch' class='method'><code>fn <a href='#method.calendars_patch' class='fnname'>calendars_patch</a>(&amp;self, request: <a class='struct' href='../google_admin1_directory/struct.CalendarResource.html' title='google_admin1_directory::CalendarResource'>CalendarResource</a>, customer: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, calendar_resource_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_admin1_directory/struct.ResourceCalendarPatchCall.html' title='google_admin1_directory::ResourceCalendarPatchCall'>ResourceCalendarPatchCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.calendars_patch' class='method'><code>fn <a href='#method.calendars_patch' class='fnname'>calendars_patch</a>(&amp;self, request: <a class='struct' href='../google_admin1_directory/struct.CalendarResource.html' title='google_admin1_directory::CalendarResource'>CalendarResource</a>, customer: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, calendar_resource_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_admin1_directory/struct.ResourceCalendarPatchCall.html' title='google_admin1_directory::ResourceCalendarPatchCall'>ResourceCalendarPatchCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Updates a calendar resource. This method supports patch semantics.</p>
@@ -115,7 +115,7 @@ It is not used directly, but through the <code>Directory</code> hub.</p>
 <li><code>customer</code> - The unique ID for the customer&#39;s Google account. As an account administrator, you can also use the my_customer alias to represent your account&#39;s customer ID.</li>
 <li><code>calendarResourceId</code> - The unique ID of the calendar resource to update.</li>
 </ul>
-</div><h4 id='method.calendars_update' class='method'><code>fn <a href='#method.calendars_update' class='fnname'>calendars_update</a>(&amp;self, request: <a class='struct' href='../google_admin1_directory/struct.CalendarResource.html' title='google_admin1_directory::CalendarResource'>CalendarResource</a>, customer: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, calendar_resource_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_admin1_directory/struct.ResourceCalendarUpdateCall.html' title='google_admin1_directory::ResourceCalendarUpdateCall'>ResourceCalendarUpdateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.calendars_update' class='method'><code>fn <a href='#method.calendars_update' class='fnname'>calendars_update</a>(&amp;self, request: <a class='struct' href='../google_admin1_directory/struct.CalendarResource.html' title='google_admin1_directory::CalendarResource'>CalendarResource</a>, customer: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, calendar_resource_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_admin1_directory/struct.ResourceCalendarUpdateCall.html' title='google_admin1_directory::ResourceCalendarUpdateCall'>ResourceCalendarUpdateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Updates a calendar resource.</p>
@@ -126,7 +126,7 @@ It is not used directly, but through the <code>Directory</code> hub.</p>
 <li><code>customer</code> - The unique ID for the customer&#39;s Google account. As an account administrator, you can also use the my_customer alias to represent your account&#39;s customer ID.</li>
 <li><code>calendarResourceId</code> - The unique ID of the calendar resource to update.</li>
 </ul>
-</div><h4 id='method.calendars_delete' class='method'><code>fn <a href='#method.calendars_delete' class='fnname'>calendars_delete</a>(&amp;self, customer: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, calendar_resource_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_admin1_directory/struct.ResourceCalendarDeleteCall.html' title='google_admin1_directory::ResourceCalendarDeleteCall'>ResourceCalendarDeleteCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.calendars_delete' class='method'><code>fn <a href='#method.calendars_delete' class='fnname'>calendars_delete</a>(&amp;self, customer: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, calendar_resource_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_admin1_directory/struct.ResourceCalendarDeleteCall.html' title='google_admin1_directory::ResourceCalendarDeleteCall'>ResourceCalendarDeleteCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Deletes a calendar resource.</p>
@@ -136,7 +136,7 @@ It is not used directly, but through the <code>Directory</code> hub.</p>
 <li><code>customer</code> - The unique ID for the customer&#39;s Google account. As an account administrator, you can also use the my_customer alias to represent your account&#39;s customer ID.</li>
 <li><code>calendarResourceId</code> - The unique ID of the calendar resource to delete.</li>
 </ul>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_admin1_directory/trait.MethodsBuilder.html' title='google_admin1_directory::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_admin1_directory/struct.ResourceMethods.html' title='google_admin1_directory::ResourceMethods'>ResourceMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-12861' class='srclink' href='../src/google_admin1_directory/home/byron/dev/rust/google-apis-rs/target/debug/build/google-admin1_directory-a39c9338e60059e5/out/lib.rs.html#30026' title='goto source code'>[src]</a></span></h3>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='trait' href='../google_admin1_directory/trait.MethodsBuilder.html' title='google_admin1_directory::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_admin1_directory/struct.ResourceMethods.html' title='google_admin1_directory::ResourceMethods'>ResourceMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-12078' class='srclink' href='../src/google_admin1_directory/home/byron/dev/rust/google-apis-rs/target/debug/build/google-admin1_directory-9f6fa564a6722c32/out/lib.rs.html#23820' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 

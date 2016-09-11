@@ -47,8 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-14829' class='srclink' href='../src/google_adexchangebuyer1d4/home/byron/dev/rust/google-apis-rs/target/debug/build/google-adexchangebuyer1d4-2c62c1eb7140aa41/out/lib.rs.html#32332-32334' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct CreativeMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
+               </span><a id='src-14440' class='srclink' href='../src/google_adexchangebuyer1d4/home/byron/dev/rust/google-apis-rs/target/debug/build/google-adexchangebuyer1d4-e81ed01b0333a8e3/out/lib.rs.html#26511-26513' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct CreativeMethods&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>creative</em> resources.
 It is not used directly, but through the <code>AdExchangeBuyer</code> hub.</p>
@@ -74,12 +74,12 @@ It is not used directly, but through the <code>AdExchangeBuyer</code> hub.</p>
 <span class='comment'>// like `add_deal(...)`, `get(...)`, `insert(...)`, `list(...)` and `remove_deal(...)`</span>
 <span class='comment'>// to build up your call.</span>
 <span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>creatives</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_adexchangebuyer1d4/struct.CreativeMethods.html' title='google_adexchangebuyer1d4::CreativeMethods'>CreativeMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-14838' class='srclink' href='../src/google_adexchangebuyer1d4/home/byron/dev/rust/google-apis-rs/target/debug/build/google-adexchangebuyer1d4-2c62c1eb7140aa41/out/lib.rs.html#32336-32422' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self) -&gt; <a class='struct' href='../google_adexchangebuyer1d4/struct.CreativeListCall.html' title='google_adexchangebuyer1d4::CreativeListCall'>CreativeListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='struct' href='../google_adexchangebuyer1d4/struct.CreativeMethods.html' title='google_adexchangebuyer1d4::CreativeMethods'>CreativeMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-14449' class='srclink' href='../src/google_adexchangebuyer1d4/home/byron/dev/rust/google-apis-rs/target/debug/build/google-adexchangebuyer1d4-e81ed01b0333a8e3/out/lib.rs.html#26515-26601' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self) -&gt; <a class='struct' href='../google_adexchangebuyer1d4/struct.CreativeListCall.html' title='google_adexchangebuyer1d4::CreativeListCall'>CreativeListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Retrieves a list of the authenticated user&#39;s active creatives. A creative will be available 30-40 minutes after submission.</p>
-</div><h4 id='method.remove_deal' class='method'><code>fn <a href='#method.remove_deal' class='fnname'>remove_deal</a>(&amp;self, account_id: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>, buyer_creative_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, deal_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_adexchangebuyer1d4/struct.CreativeRemoveDealCall.html' title='google_adexchangebuyer1d4::CreativeRemoveDealCall'>CreativeRemoveDealCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.remove_deal' class='method'><code>fn <a href='#method.remove_deal' class='fnname'>remove_deal</a>(&amp;self, account_id: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>, buyer_creative_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, deal_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_adexchangebuyer1d4/struct.CreativeRemoveDealCall.html' title='google_adexchangebuyer1d4::CreativeRemoveDealCall'>CreativeRemoveDealCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Remove a deal id associated with the creative.</p>
@@ -90,7 +90,7 @@ It is not used directly, but through the <code>AdExchangeBuyer</code> hub.</p>
 <li><code>buyerCreativeId</code> - The buyer-specific id for this creative.</li>
 <li><code>dealId</code> - The id of the deal id to disassociate with this creative.</li>
 </ul>
-</div><h4 id='method.add_deal' class='method'><code>fn <a href='#method.add_deal' class='fnname'>add_deal</a>(&amp;self, account_id: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>, buyer_creative_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, deal_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_adexchangebuyer1d4/struct.CreativeAddDealCall.html' title='google_adexchangebuyer1d4::CreativeAddDealCall'>CreativeAddDealCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.add_deal' class='method'><code>fn <a href='#method.add_deal' class='fnname'>add_deal</a>(&amp;self, account_id: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>, buyer_creative_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, deal_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_adexchangebuyer1d4/struct.CreativeAddDealCall.html' title='google_adexchangebuyer1d4::CreativeAddDealCall'>CreativeAddDealCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Add a deal id association for the creative.</p>
@@ -101,7 +101,7 @@ It is not used directly, but through the <code>AdExchangeBuyer</code> hub.</p>
 <li><code>buyerCreativeId</code> - The buyer-specific id for this creative.</li>
 <li><code>dealId</code> - The id of the deal id to associate with this creative.</li>
 </ul>
-</div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, account_id: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>, buyer_creative_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_adexchangebuyer1d4/struct.CreativeGetCall.html' title='google_adexchangebuyer1d4::CreativeGetCall'>CreativeGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, account_id: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>, buyer_creative_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_adexchangebuyer1d4/struct.CreativeGetCall.html' title='google_adexchangebuyer1d4::CreativeGetCall'>CreativeGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Gets the status for a single creative. A creative will be available 30-40 minutes after submission.</p>
@@ -111,7 +111,7 @@ It is not used directly, but through the <code>AdExchangeBuyer</code> hub.</p>
 <li><code>accountId</code> - The id for the account that will serve this creative.</li>
 <li><code>buyerCreativeId</code> - The buyer-specific id for this creative.</li>
 </ul>
-</div><h4 id='method.insert' class='method'><code>fn <a href='#method.insert' class='fnname'>insert</a>(&amp;self, request: <a class='struct' href='../google_adexchangebuyer1d4/struct.Creative.html' title='google_adexchangebuyer1d4::Creative'>Creative</a>) -&gt; <a class='struct' href='../google_adexchangebuyer1d4/struct.CreativeInsertCall.html' title='google_adexchangebuyer1d4::CreativeInsertCall'>CreativeInsertCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.insert' class='method'><code>fn <a href='#method.insert' class='fnname'>insert</a>(&amp;self, request: <a class='struct' href='../google_adexchangebuyer1d4/struct.Creative.html' title='google_adexchangebuyer1d4::Creative'>Creative</a>) -&gt; <a class='struct' href='../google_adexchangebuyer1d4/struct.CreativeInsertCall.html' title='google_adexchangebuyer1d4::CreativeInsertCall'>CreativeInsertCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Submit a new creative.</p>
@@ -120,7 +120,7 @@ It is not used directly, but through the <code>AdExchangeBuyer</code> hub.</p>
 <ul>
 <li><code>request</code> - No description provided.</li>
 </ul>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_adexchangebuyer1d4/trait.MethodsBuilder.html' title='google_adexchangebuyer1d4::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_adexchangebuyer1d4/struct.CreativeMethods.html' title='google_adexchangebuyer1d4::CreativeMethods'>CreativeMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-14834' class='srclink' href='../src/google_adexchangebuyer1d4/home/byron/dev/rust/google-apis-rs/target/debug/build/google-adexchangebuyer1d4-2c62c1eb7140aa41/out/lib.rs.html#32335' title='goto source code'>[src]</a></span></h3>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='trait' href='../google_adexchangebuyer1d4/trait.MethodsBuilder.html' title='google_adexchangebuyer1d4::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_adexchangebuyer1d4/struct.CreativeMethods.html' title='google_adexchangebuyer1d4::CreativeMethods'>CreativeMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-14445' class='srclink' href='../src/google_adexchangebuyer1d4/home/byron/dev/rust/google-apis-rs/target/debug/build/google-adexchangebuyer1d4-e81ed01b0333a8e3/out/lib.rs.html#26514' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 

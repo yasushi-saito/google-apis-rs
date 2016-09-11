@@ -234,12 +234,14 @@
 <span id="190">190</span>
 <span id="191">191</span>
 <span id="192">192</span>
+<span id="193">193</span>
+<span id="194">194</span>
 </pre><pre class='rust '>
 <span class='comment'>// DO NOT EDIT !</span>
 <span class='comment'>// This file was generated automatically from &#39;src/mako/api/lib.rs.mako&#39;</span>
 <span class='comment'>// DO NOT EDIT !</span>
 
-<span class='doccomment'>//! This documentation was generated from *container* crate version *0.1.14+20160321*, where *20160321* is the exact revision of the *container:v1* schema built by the [mako](http://www.makotemplates.org/) code generator *v0.1.14*.</span>
+<span class='doccomment'>//! This documentation was generated from *container* crate version *0.1.15+20160421*, where *20160421* is the exact revision of the *container:v1* schema built by the [mako](http://www.makotemplates.org/) code generator *v0.1.15*.</span>
 <span class='doccomment'>//! </span>
 <span class='doccomment'>//! Everything else about the *container* *v1* API can be found at the</span>
 <span class='doccomment'>//! [official documentation site](https://cloud.google.com/container-engine/).</span>
@@ -249,7 +251,7 @@
 <span class='doccomment'>//! Handle the following *Resources* with ease from the central [hub](struct.Container.html) ... </span>
 <span class='doccomment'>//! </span>
 <span class='doccomment'>//! * projects</span>
-<span class='doccomment'>//!  * [*zones clusters create*](struct.ProjectZoneClusterCreateCall.html), [*zones clusters delete*](struct.ProjectZoneClusterDeleteCall.html), [*zones clusters get*](struct.ProjectZoneClusterGetCall.html), [*zones clusters list*](struct.ProjectZoneClusterListCall.html), [*zones clusters update*](struct.ProjectZoneClusterUpdateCall.html), [*zones get serverconfig*](struct.ProjectZoneGetServerconfigCall.html), [*zones operations get*](struct.ProjectZoneOperationGetCall.html) and [*zones operations list*](struct.ProjectZoneOperationListCall.html)</span>
+<span class='doccomment'>//!  * [*zones clusters create*](struct.ProjectZoneClusterCreateCall.html), [*zones clusters delete*](struct.ProjectZoneClusterDeleteCall.html), [*zones clusters get*](struct.ProjectZoneClusterGetCall.html), [*zones clusters list*](struct.ProjectZoneClusterListCall.html), [*zones clusters node pools create*](struct.ProjectZoneClusterNodePoolCreateCall.html), [*zones clusters node pools delete*](struct.ProjectZoneClusterNodePoolDeleteCall.html), [*zones clusters node pools get*](struct.ProjectZoneClusterNodePoolGetCall.html), [*zones clusters node pools list*](struct.ProjectZoneClusterNodePoolListCall.html), [*zones clusters update*](struct.ProjectZoneClusterUpdateCall.html), [*zones get serverconfig*](struct.ProjectZoneGetServerconfigCall.html), [*zones operations get*](struct.ProjectZoneOperationGetCall.html) and [*zones operations list*](struct.ProjectZoneOperationListCall.html)</span>
 <span class='doccomment'>//! </span>
 <span class='doccomment'>//! </span>
 <span class='doccomment'>//! </span>
@@ -284,9 +286,11 @@
 <span class='doccomment'>//! Or specifically ...</span>
 <span class='doccomment'>//! </span>
 <span class='doccomment'>//! ```ignore</span>
-<span class='doccomment'>//! let r = hub.projects().zones_clusters_update(...).doit()</span>
-<span class='doccomment'>//! let r = hub.projects().zones_operations_get(...).doit()</span>
+<span class='doccomment'>//! let r = hub.projects().zones_clusters_node_pools_create(...).doit()</span>
 <span class='doccomment'>//! let r = hub.projects().zones_clusters_delete(...).doit()</span>
+<span class='doccomment'>//! let r = hub.projects().zones_operations_get(...).doit()</span>
+<span class='doccomment'>//! let r = hub.projects().zones_clusters_node_pools_delete(...).doit()</span>
+<span class='doccomment'>//! let r = hub.projects().zones_clusters_update(...).doit()</span>
 <span class='doccomment'>//! let r = hub.projects().zones_clusters_create(...).doit()</span>
 <span class='doccomment'>//! ```</span>
 <span class='doccomment'>//! </span>
@@ -312,7 +316,7 @@
 <span class='doccomment'>//! extern crate hyper;</span>
 <span class='doccomment'>//! extern crate yup_oauth2 as oauth2;</span>
 <span class='doccomment'>//! extern crate google_container1 as container1;</span>
-<span class='doccomment'>//! use container1::UpdateClusterRequest;</span>
+<span class='doccomment'>//! use container1::CreateNodePoolRequest;</span>
 <span class='doccomment'>//! use container1::{Result, Error};</span>
 <span class='doccomment'>//! # #[test] fn egal() {</span>
 <span class='doccomment'>//! use std::default::Default;</span>
@@ -334,12 +338,12 @@
 <span class='doccomment'>//! // As the method needs a request, you would usually fill it with the desired information</span>
 <span class='doccomment'>//! // into the respective structure. Some of the parts shown here might not be applicable !</span>
 <span class='doccomment'>//! // Values shown here are possibly random and not representative !</span>
-<span class='doccomment'>//! let mut req = UpdateClusterRequest::default();</span>
+<span class='doccomment'>//! let mut req = CreateNodePoolRequest::default();</span>
 <span class='doccomment'>//! </span>
 <span class='doccomment'>//! // You can configure optional parameters by calling the respective setters at will, and</span>
 <span class='doccomment'>//! // execute the final call using `doit()`.</span>
 <span class='doccomment'>//! // Values shown here are possibly random and not representative !</span>
-<span class='doccomment'>//! let result = hub.projects().zones_clusters_update(req, &quot;projectId&quot;, &quot;zone&quot;, &quot;clusterId&quot;)</span>
+<span class='doccomment'>//! let result = hub.projects().zones_clusters_node_pools_create(req, &quot;projectId&quot;, &quot;zone&quot;, &quot;clusterId&quot;)</span>
 <span class='doccomment'>//!              .doit();</span>
 <span class='doccomment'>//! </span>
 <span class='doccomment'>//! match result {</span>

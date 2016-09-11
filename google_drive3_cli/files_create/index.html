@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Create - drive v0.3.6+20160331</title>
+  <title>Create - drive v0.3.6+20160901</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -32,7 +32,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> drive v0.3.6+20160331</a>
+        <a href=".." class="icon icon-home"> drive v0.3.6+20160901</a>
         
       </div>
 
@@ -300,7 +300,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">drive v0.3.6+20160331</a>
+        <a href="..">drive v0.3.6+20160901</a>
       </nav>
 
       
@@ -626,7 +626,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li><code>kind=sed</code><ul>
-<li>This is always drive#file.</li>
+<li>Identifies what kind of resource this is. Value: the fixed string &#34;drive#file&#34;.</li>
 </ul>
 </li>
 <li><code>last-modifying-user    display-name=et</code><ul>
@@ -638,7 +638,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li><code>kind=justo</code><ul>
-<li>This is always drive#user.</li>
+<li>Identifies what kind of resource this is. Value: the fixed string &#34;drive#user&#34;.</li>
 </ul>
 </li>
 <li><code>me=true</code><ul>
@@ -721,7 +721,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li><code>kind=at</code><ul>
-<li>This is always drive#user.</li>
+<li>Identifies what kind of resource this is. Value: the fixed string &#34;drive#user&#34;.</li>
 </ul>
 </li>
 <li><code>me=true</code><ul>
@@ -851,9 +851,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p use-content-as-indexable-text=boolean</strong></p>
+<p><strong>-p ignore-default-visibility=boolean</strong></p>
 <ul>
-<li>Whether to use the uploaded content as indexable text.</li>
+<li>Whether to ignore the domain&#39;s default visibility settings for the created file. Domain administrators can choose to make all uploaded files visible to the domain by default; this parameter bypasses that behavior for the request. Permissions are still inherited from parent folders.</li>
 </ul>
 </li>
 <li>
@@ -863,9 +863,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p ignore-default-visibility=boolean</strong></p>
+<p><strong>-p use-content-as-indexable-text=boolean</strong></p>
 <ul>
-<li>Whether to ignore the domain&#39;s default visibility settings for the created file. Domain administrators can choose to make all uploaded files visible to the domain by default; this parameter bypasses that behavior for the request. Permissions are still inherited from parent folders.</li>
+<li>Whether to use the uploaded content as indexable text.</li>
 </ul>
 </li>
 <li>
@@ -965,7 +965,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 
 <!--
 MkDocs version  : 0.12.2
-Docs Build Date : 2016-07-23 16:06:15.561161
+Docs Build Date : 2016-09-11 17:56:21.761856
 -->
 </body>
 </html>

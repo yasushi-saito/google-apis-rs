@@ -47,8 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-30202' class='srclink' href='../src/google_content2/home/byron/dev/rust/google-apis-rs/target/debug/build/google-content2-336c9b6bb5001be2/out/lib.rs.html#67377-67387' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct InventorySetCall&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
+               </span><a id='src-31313' class='srclink' href='../src/google_content2/home/byron/dev/rust/google-apis-rs/target/debug/build/google-content2-6ca7a1f998e0f5ba/out/lib.rs.html#59724-59734' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct InventorySetCall&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>Updates price and availability of a product in your Merchant Center account. This operation does not update the expiration date of the product.</p>
 
@@ -70,49 +70,49 @@ It is not used directly, but through a <code>InventoryMethods</code> instance.</
 <span class='comment'>// execute the final call using `doit()`.</span>
 <span class='comment'>// Values shown here are possibly random and not representative !</span>
 <span class='kw'>let</span> <span class='ident'>result</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>inventory</span>().<span class='ident'>set</span>(<span class='ident'>req</span>, <span class='string'>&quot;merchantId&quot;</span>, <span class='string'>&quot;storeCode&quot;</span>, <span class='string'>&quot;productId&quot;</span>)
-             .<span class='ident'>dry_run</span>(<span class='boolvalue'>true</span>)
+             .<span class='ident'>dry_run</span>(<span class='bool-val'>true</span>)
              .<span class='ident'>doit</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_content2/struct.InventorySetCall.html' title='google_content2::InventorySetCall'>InventorySetCall</a>&lt;'a, C, A&gt; <span class='where'>where C: <a class='trait' href='https://doc.rust-lang.org/nightly/core/borrow/trait.BorrowMut.html' title='core::borrow::BorrowMut'>BorrowMut</a>&lt;<a class='struct' href='../hyper/client/struct.Client.html' title='hyper::client::Client'>Client</a>&gt;, A: <a class='trait' href='../yup_oauth2/helper/trait.GetToken.html' title='yup_oauth2::helper::GetToken'>GetToken</a></span></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-30219' class='srclink' href='../src/google_content2/home/byron/dev/rust/google-apis-rs/target/debug/build/google-content2-336c9b6bb5001be2/out/lib.rs.html#67389-67641' title='goto source code'>[src]</a></span></h3>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='struct' href='../google_content2/struct.InventorySetCall.html' title='google_content2::InventorySetCall'>InventorySetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: <a class='trait' href='https://doc.rust-lang.org/nightly/core/borrow/trait.BorrowMut.html' title='core::borrow::BorrowMut'>BorrowMut</a>&lt;<a class='struct' href='../hyper/client/struct.Client.html' title='hyper::client::Client'>Client</a>&gt;, A: <a class='trait' href='../yup_oauth2/authenticator/trait.GetToken.html' title='yup_oauth2::authenticator::GetToken'>GetToken</a></span></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-31330' class='srclink' href='../src/google_content2/home/byron/dev/rust/google-apis-rs/target/debug/build/google-content2-6ca7a1f998e0f5ba/out/lib.rs.html#59736-59988' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'><h4 id='method.doit' class='method'><code>fn <a href='#method.doit' class='fnname'>doit</a>(self) -&gt; <a class='type' href='../google_content2/type.Result.html' title='google_content2::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>(</a><a class='struct' href='../hyper/client/response/struct.Response.html' title='hyper::client::response::Response'>Response</a>, <a class='struct' href='../google_content2/struct.InventorySetResponse.html' title='google_content2::InventorySetResponse'>InventorySetResponse</a><a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>)</a>&gt;</code></h4>
 <div class='docblock'><p>Perform the operation you have build so far.</p>
-</div><h4 id='method.request' class='method'><code>fn <a href='#method.request' class='fnname'>request</a>(self, new_value: <a class='struct' href='../google_content2/struct.InventorySetRequest.html' title='google_content2::InventorySetRequest'>InventorySetRequest</a>) -&gt; <a class='struct' href='../google_content2/struct.InventorySetCall.html' title='google_content2::InventorySetCall'>InventorySetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.request' class='method'><code>fn <a href='#method.request' class='fnname'>request</a>(self, new_value: <a class='struct' href='../google_content2/struct.InventorySetRequest.html' title='google_content2::InventorySetRequest'>InventorySetRequest</a>) -&gt; <a class='struct' href='../google_content2/struct.InventorySetCall.html' title='google_content2::InventorySetCall'>InventorySetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Sets the <em>request</em> property to the given value.</p>
 
 <p>Even though the property as already been set when instantiating this call,
 we provide this method for API completeness.</p>
-</div><h4 id='method.merchant_id' class='method'><code>fn <a href='#method.merchant_id' class='fnname'>merchant_id</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_content2/struct.InventorySetCall.html' title='google_content2::InventorySetCall'>InventorySetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.merchant_id' class='method'><code>fn <a href='#method.merchant_id' class='fnname'>merchant_id</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_content2/struct.InventorySetCall.html' title='google_content2::InventorySetCall'>InventorySetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>The ID of the managing account.</p>
 
 <p>Sets the <em>merchant id</em> path property to the given value.</p>
 
 <p>Even though the property as already been set when instantiating this call,
 we provide this method for API completeness.</p>
-</div><h4 id='method.store_code' class='method'><code>fn <a href='#method.store_code' class='fnname'>store_code</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_content2/struct.InventorySetCall.html' title='google_content2::InventorySetCall'>InventorySetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.store_code' class='method'><code>fn <a href='#method.store_code' class='fnname'>store_code</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_content2/struct.InventorySetCall.html' title='google_content2::InventorySetCall'>InventorySetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>The code of the store for which to update price and availability. Use online to update price and availability of an online product.</p>
 
 <p>Sets the <em>store code</em> path property to the given value.</p>
 
 <p>Even though the property as already been set when instantiating this call,
 we provide this method for API completeness.</p>
-</div><h4 id='method.product_id' class='method'><code>fn <a href='#method.product_id' class='fnname'>product_id</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_content2/struct.InventorySetCall.html' title='google_content2::InventorySetCall'>InventorySetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.product_id' class='method'><code>fn <a href='#method.product_id' class='fnname'>product_id</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_content2/struct.InventorySetCall.html' title='google_content2::InventorySetCall'>InventorySetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>The ID of the product for which to update price and availability.</p>
 
 <p>Sets the <em>product id</em> path property to the given value.</p>
 
 <p>Even though the property as already been set when instantiating this call,
 we provide this method for API completeness.</p>
-</div><h4 id='method.dry_run' class='method'><code>fn <a href='#method.dry_run' class='fnname'>dry_run</a>(self, new_value: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>) -&gt; <a class='struct' href='../google_content2/struct.InventorySetCall.html' title='google_content2::InventorySetCall'>InventorySetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.dry_run' class='method'><code>fn <a href='#method.dry_run' class='fnname'>dry_run</a>(self, new_value: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>) -&gt; <a class='struct' href='../google_content2/struct.InventorySetCall.html' title='google_content2::InventorySetCall'>InventorySetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Flag to run the request in dry-run mode.</p>
 
 <p>Sets the <em>dry run</em> query property to the given value.</p>
-</div><h4 id='method.delegate' class='method'><code>fn <a href='#method.delegate' class='fnname'>delegate</a>(self, new_value: &amp;'a mut <a class='trait' href='../google_content2/trait.Delegate.html' title='google_content2::Delegate'>Delegate</a>) -&gt; <a class='struct' href='../google_content2/struct.InventorySetCall.html' title='google_content2::InventorySetCall'>InventorySetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.delegate' class='method'><code>fn <a href='#method.delegate' class='fnname'>delegate</a>(self, new_value: &amp;'a mut <a class='trait' href='../google_content2/trait.Delegate.html' title='google_content2::Delegate'>Delegate</a>) -&gt; <a class='struct' href='../google_content2/struct.InventorySetCall.html' title='google_content2::InventorySetCall'>InventorySetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>The delegate implementation is consulted whenever there is an intermediate result, or if something goes wrong
 while executing the actual API request.</p>
 
 <p>It should be used to handle progress information, and to implement a certain level of resilience.</p>
 
 <p>Sets the <em>delegate</em> property to the given value.</p>
-</div><h4 id='method.param' class='method'><code>fn <a href='#method.param' class='fnname'>param</a>&lt;T&gt;(self, name: T, value: T) -&gt; <a class='struct' href='../google_content2/struct.InventorySetCall.html' title='google_content2::InventorySetCall'>InventorySetCall</a>&lt;'a, C, A&gt; <span class='where'>where T: <a class='trait' href='https://doc.rust-lang.org/nightly/core/convert/trait.AsRef.html' title='core::convert::AsRef'>AsRef</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>&gt;</span></code></h4>
+</div><h4 id='method.param' class='method'><code>fn <a href='#method.param' class='fnname'>param</a>&lt;T&gt;(self, name: T, value: T) -&gt; <a class='struct' href='../google_content2/struct.InventorySetCall.html' title='google_content2::InventorySetCall'>InventorySetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where T: <a class='trait' href='https://doc.rust-lang.org/nightly/core/convert/trait.AsRef.html' title='core::convert::AsRef'>AsRef</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>&gt;</span></code></h4>
 <div class='docblock'><p>Set any additional parameter of the query string used in the request.
 It should be used to set parameters which are not yet available through their own
 setters.</p>
@@ -130,7 +130,7 @@ which have their own setter method. If done anyway, the request will fail.</p>
 <li><em>fields</em> (query-string) - Selector specifying which fields to include in a partial response.</li>
 <li><em>alt</em> (query-string) - Data format for the response.</li>
 </ul>
-</div><h4 id='method.add_scope' class='method'><code>fn <a href='#method.add_scope' class='fnname'>add_scope</a>&lt;T&gt;(self, scope: T) -&gt; <a class='struct' href='../google_content2/struct.InventorySetCall.html' title='google_content2::InventorySetCall'>InventorySetCall</a>&lt;'a, C, A&gt; <span class='where'>where T: <a class='trait' href='https://doc.rust-lang.org/nightly/core/convert/trait.AsRef.html' title='core::convert::AsRef'>AsRef</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>&gt;</span></code></h4>
+</div><h4 id='method.add_scope' class='method'><code>fn <a href='#method.add_scope' class='fnname'>add_scope</a>&lt;T&gt;(self, scope: T) -&gt; <a class='struct' href='../google_content2/struct.InventorySetCall.html' title='google_content2::InventorySetCall'>InventorySetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where T: <a class='trait' href='https://doc.rust-lang.org/nightly/core/convert/trait.AsRef.html' title='core::convert::AsRef'>AsRef</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>&gt;</span></code></h4>
 <div class='docblock'><p>Identifies the authorization scope for the method you are building.</p>
 
 <p>Use this method to actively specify which scope should be used, instead the default <code>Scope</code> variant
@@ -142,7 +142,7 @@ tokens for more than one scope.</p>
 <p>Usually there is more than one suitable scope to authorize an operation, some of which may
 encompass more rights than others. For example, for listing resources, a <em>read-only</em> scope will be
 sufficient, a read-write scope will do as well.</p>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_content2/trait.CallBuilder.html' title='google_content2::CallBuilder'>CallBuilder</a> for <a class='struct' href='../google_content2/struct.InventorySetCall.html' title='google_content2::InventorySetCall'>InventorySetCall</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-30215' class='srclink' href='../src/google_content2/home/byron/dev/rust/google-apis-rs/target/debug/build/google-content2-336c9b6bb5001be2/out/lib.rs.html#67388' title='goto source code'>[src]</a></span></h3>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='trait' href='../google_content2/trait.CallBuilder.html' title='google_content2::CallBuilder'>CallBuilder</a> for <a class='struct' href='../google_content2/struct.InventorySetCall.html' title='google_content2::InventorySetCall'>InventorySetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-31326' class='srclink' href='../src/google_content2/home/byron/dev/rust/google-apis-rs/target/debug/build/google-content2-6ca7a1f998e0f5ba/out/lib.rs.html#59735' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 

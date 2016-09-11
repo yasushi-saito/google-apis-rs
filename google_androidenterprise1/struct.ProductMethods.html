@@ -47,8 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-7193' class='srclink' href='../src/google_androidenterprise1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-androidenterprise1-c1b518bbf39d4c72/out/lib.rs.html#16335-16337' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct ProductMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
+               </span><a id='src-9617' class='srclink' href='../src/google_androidenterprise1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-androidenterprise1-f9ed1fb9501f45a8/out/lib.rs.html#19037-19039' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct ProductMethods&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>product</em> resources.
 It is not used directly, but through the <code>AndroidEnterprise</code> hub.</p>
@@ -71,11 +71,11 @@ It is not used directly, but through the <code>AndroidEnterprise</code> hub.</p>
                               <span class='op'>&lt;</span><span class='ident'>MemoryStorage</span> <span class='kw'>as</span> <span class='ident'>Default</span><span class='op'>&gt;</span>::<span class='ident'>default</span>(), <span class='prelude-val'>None</span>);
 <span class='kw'>let</span> <span class='kw-2'>mut</span> <span class='ident'>hub</span> <span class='op'>=</span> <span class='ident'>AndroidEnterprise</span>::<span class='ident'>new</span>(<span class='ident'>hyper</span>::<span class='ident'>Client</span>::<span class='ident'>new</span>(), <span class='ident'>auth</span>);
 <span class='comment'>// Usually you wouldn&#39;t bind this to a variable, but keep calling *CallBuilders*</span>
-<span class='comment'>// like `approve(...)`, `generate_approval_url(...)`, `get(...)`, `get_app_restrictions_schema(...)`, `get_permissions(...)` and `update_permissions(...)`</span>
+<span class='comment'>// like `approve(...)`, `generate_approval_url(...)`, `get(...)`, `get_app_restrictions_schema(...)`, `get_permissions(...)`, `list(...)`, `unapprove(...)` and `update_permissions(...)`</span>
 <span class='comment'>// to build up your call.</span>
 <span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>products</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_androidenterprise1/struct.ProductMethods.html' title='google_androidenterprise1::ProductMethods'>ProductMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-7202' class='srclink' href='../src/google_androidenterprise1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-androidenterprise1-c1b518bbf39d4c72/out/lib.rs.html#16339-16461' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.get_permissions' class='method'><code>fn <a href='#method.get_permissions' class='fnname'>get_permissions</a>(&amp;self, enterprise_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, product_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_androidenterprise1/struct.ProductGetPermissionCall.html' title='google_androidenterprise1::ProductGetPermissionCall'>ProductGetPermissionCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='struct' href='../google_androidenterprise1/struct.ProductMethods.html' title='google_androidenterprise1::ProductMethods'>ProductMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-9626' class='srclink' href='../src/google_androidenterprise1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-androidenterprise1-f9ed1fb9501f45a8/out/lib.rs.html#19041-19201' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.get_permissions' class='method'><code>fn <a href='#method.get_permissions' class='fnname'>get_permissions</a>(&amp;self, enterprise_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, product_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_androidenterprise1/struct.ProductGetPermissionCall.html' title='google_androidenterprise1::ProductGetPermissionCall'>ProductGetPermissionCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Retrieves the Android app permissions required by this app.</p>
@@ -85,63 +85,84 @@ It is not used directly, but through the <code>AndroidEnterprise</code> hub.</p>
 <li><code>enterpriseId</code> - The ID of the enterprise.</li>
 <li><code>productId</code> - The ID of the product.</li>
 </ul>
-</div><h4 id='method.approve' class='method'><code>fn <a href='#method.approve' class='fnname'>approve</a>(&amp;self, request: <a class='struct' href='../google_androidenterprise1/struct.ProductsApproveRequest.html' title='google_androidenterprise1::ProductsApproveRequest'>ProductsApproveRequest</a>, enterprise_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, product_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_androidenterprise1/struct.ProductApproveCall.html' title='google_androidenterprise1::ProductApproveCall'>ProductApproveCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.unapprove' class='method'><code>fn <a href='#method.unapprove' class='fnname'>unapprove</a>(&amp;self, enterprise_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, product_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_androidenterprise1/struct.ProductUnapproveCall.html' title='google_androidenterprise1::ProductUnapproveCall'>ProductUnapproveCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>Approves the specified product (and the relevant app permissions, if any).</p>
+<p>Unapproves the specified product (and the relevant app permissions, if any)</p>
 
 <h1 id='arguments-1' class='section-header'><a href='#arguments-1'>Arguments</a></h1>
+<ul>
+<li><code>enterpriseId</code> - The ID of the enterprise.</li>
+<li><code>productId</code> - The ID of the product.</li>
+</ul>
+</div><h4 id='method.approve' class='method'><code>fn <a href='#method.approve' class='fnname'>approve</a>(&amp;self, request: <a class='struct' href='../google_androidenterprise1/struct.ProductsApproveRequest.html' title='google_androidenterprise1::ProductsApproveRequest'>ProductsApproveRequest</a>, enterprise_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, product_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_androidenterprise1/struct.ProductApproveCall.html' title='google_androidenterprise1::ProductApproveCall'>ProductApproveCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Approves the specified product and the relevant app permissions, if any. The maximum number of products that you can approve per enterprise customer is 1,000.</p>
+
+<p>To learn how to use Google Play for Work to design and create a store layout to display approved products to your users, see Store Layout Design.</p>
+
+<h1 id='arguments-2' class='section-header'><a href='#arguments-2'>Arguments</a></h1>
 <ul>
 <li><code>request</code> - No description provided.</li>
 <li><code>enterpriseId</code> - The ID of the enterprise.</li>
 <li><code>productId</code> - The ID of the product.</li>
 </ul>
-</div><h4 id='method.get_app_restrictions_schema' class='method'><code>fn <a href='#method.get_app_restrictions_schema' class='fnname'>get_app_restrictions_schema</a>(&amp;self, enterprise_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, product_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_androidenterprise1/struct.ProductGetAppRestrictionsSchemaCall.html' title='google_androidenterprise1::ProductGetAppRestrictionsSchemaCall'>ProductGetAppRestrictionsSchemaCall</a>&lt;'a, C, A&gt;</code></h4>
-<div class='docblock'><p>Create a builder to help you perform the following task:</p>
-
-<p>Retrieves the schema defining app restrictions configurable for this product. All products have a schema, but this may be empty if no app restrictions are defined.</p>
-
-<h1 id='arguments-2' class='section-header'><a href='#arguments-2'>Arguments</a></h1>
-<ul>
-<li><code>enterpriseId</code> - The ID of the enterprise.</li>
-<li><code>productId</code> - The ID of the product.</li>
-</ul>
-</div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, enterprise_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, product_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_androidenterprise1/struct.ProductGetCall.html' title='google_androidenterprise1::ProductGetCall'>ProductGetCall</a>&lt;'a, C, A&gt;</code></h4>
-<div class='docblock'><p>Create a builder to help you perform the following task:</p>
-
-<p>Retrieves details of a product for display to an enterprise admin.</p>
-
-<h1 id='arguments-3' class='section-header'><a href='#arguments-3'>Arguments</a></h1>
-<ul>
-<li><code>enterpriseId</code> - The ID of the enterprise.</li>
-<li><code>productId</code> - The ID of the product, e.g. &quot;app:com.google.android.gm&quot;.</li>
-</ul>
-</div><h4 id='method.update_permissions' class='method'><code>fn <a href='#method.update_permissions' class='fnname'>update_permissions</a>(&amp;self, request: <a class='struct' href='../google_androidenterprise1/struct.ProductPermissions.html' title='google_androidenterprise1::ProductPermissions'>ProductPermissions</a>, enterprise_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, product_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_androidenterprise1/struct.ProductUpdatePermissionCall.html' title='google_androidenterprise1::ProductUpdatePermissionCall'>ProductUpdatePermissionCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.update_permissions' class='method'><code>fn <a href='#method.update_permissions' class='fnname'>update_permissions</a>(&amp;self, request: <a class='struct' href='../google_androidenterprise1/struct.ProductPermissions.html' title='google_androidenterprise1::ProductPermissions'>ProductPermissions</a>, enterprise_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, product_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_androidenterprise1/struct.ProductUpdatePermissionCall.html' title='google_androidenterprise1::ProductUpdatePermissionCall'>ProductUpdatePermissionCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>This method has been deprecated. To programmatically approve applications, you must use the iframe mechanism via the  generateApprovalUrl and  approve methods of the Products resource. For more information, see the  Play EMM API usage requirements.</p>
 
 <p>The updatePermissions method (deprecated) updates the set of Android app permissions for this app that have been accepted by the enterprise.</p>
 
-<h1 id='arguments-4' class='section-header'><a href='#arguments-4'>Arguments</a></h1>
+<h1 id='arguments-3' class='section-header'><a href='#arguments-3'>Arguments</a></h1>
 <ul>
 <li><code>request</code> - No description provided.</li>
 <li><code>enterpriseId</code> - The ID of the enterprise.</li>
 <li><code>productId</code> - The ID of the product.</li>
 </ul>
-</div><h4 id='method.generate_approval_url' class='method'><code>fn <a href='#method.generate_approval_url' class='fnname'>generate_approval_url</a>(&amp;self, enterprise_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, product_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_androidenterprise1/struct.ProductGenerateApprovalUrlCall.html' title='google_androidenterprise1::ProductGenerateApprovalUrlCall'>ProductGenerateApprovalUrlCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.get_app_restrictions_schema' class='method'><code>fn <a href='#method.get_app_restrictions_schema' class='fnname'>get_app_restrictions_schema</a>(&amp;self, enterprise_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, product_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_androidenterprise1/struct.ProductGetAppRestrictionsSchemaCall.html' title='google_androidenterprise1::ProductGetAppRestrictionsSchemaCall'>ProductGetAppRestrictionsSchemaCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Retrieves the schema that defines the configurable properties for this product. All products have a schema, but this schema may be empty if no managed configurations have been defined. This schema can be used to populate a UI that allows an administrator to configure the product. To apply a managed configuration based on the schema obtained using this API, see Managed Configurations through Play.</p>
+
+<h1 id='arguments-4' class='section-header'><a href='#arguments-4'>Arguments</a></h1>
+<ul>
+<li><code>enterpriseId</code> - The ID of the enterprise.</li>
+<li><code>productId</code> - The ID of the product.</li>
+</ul>
+</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self, enterprise_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_androidenterprise1/struct.ProductListCall.html' title='google_androidenterprise1::ProductListCall'>ProductListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Finds approved products that match a query, or all approved products if there is no query.</p>
+
+<h1 id='arguments-5' class='section-header'><a href='#arguments-5'>Arguments</a></h1>
+<ul>
+<li><code>enterpriseId</code> - The ID of the enterprise.</li>
+</ul>
+</div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, enterprise_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, product_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_androidenterprise1/struct.ProductGetCall.html' title='google_androidenterprise1::ProductGetCall'>ProductGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Retrieves details of a product for display to an enterprise admin.</p>
+
+<h1 id='arguments-6' class='section-header'><a href='#arguments-6'>Arguments</a></h1>
+<ul>
+<li><code>enterpriseId</code> - The ID of the enterprise.</li>
+<li><code>productId</code> - The ID of the product, e.g. &quot;app:com.google.android.gm&quot;.</li>
+</ul>
+</div><h4 id='method.generate_approval_url' class='method'><code>fn <a href='#method.generate_approval_url' class='fnname'>generate_approval_url</a>(&amp;self, enterprise_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, product_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_androidenterprise1/struct.ProductGenerateApprovalUrlCall.html' title='google_androidenterprise1::ProductGenerateApprovalUrlCall'>ProductGenerateApprovalUrlCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Generates a URL that can be rendered in an iframe to display the permissions (if any) of a product. An enterprise admin must view these permissions and accept them on behalf of their organization in order to approve that product.</p>
 
 <p>Admins should accept the displayed permissions by interacting with a separate UI element in the EMM console, which in turn should trigger the use of this URL as the approvalUrlInfo.approvalUrl property in a Products.approve call to approve the product. This URL can only be used to display permissions for up to 1 day.</p>
 
-<h1 id='arguments-5' class='section-header'><a href='#arguments-5'>Arguments</a></h1>
+<h1 id='arguments-7' class='section-header'><a href='#arguments-7'>Arguments</a></h1>
 <ul>
 <li><code>enterpriseId</code> - The ID of the enterprise.</li>
 <li><code>productId</code> - The ID of the product.</li>
 </ul>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_androidenterprise1/trait.MethodsBuilder.html' title='google_androidenterprise1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_androidenterprise1/struct.ProductMethods.html' title='google_androidenterprise1::ProductMethods'>ProductMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-7198' class='srclink' href='../src/google_androidenterprise1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-androidenterprise1-c1b518bbf39d4c72/out/lib.rs.html#16338' title='goto source code'>[src]</a></span></h3>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='trait' href='../google_androidenterprise1/trait.MethodsBuilder.html' title='google_androidenterprise1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_androidenterprise1/struct.ProductMethods.html' title='google_androidenterprise1::ProductMethods'>ProductMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-9622' class='srclink' href='../src/google_androidenterprise1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-androidenterprise1-f9ed1fb9501f45a8/out/lib.rs.html#19040' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 

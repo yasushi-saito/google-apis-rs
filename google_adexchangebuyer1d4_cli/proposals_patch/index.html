@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Patch - Ad Exchange Buyer v0.3.6+20160405</title>
+  <title>Patch - Ad Exchange Buyer v0.3.6+20160831</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -32,7 +32,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Ad Exchange Buyer v0.3.6+20160405</a>
+        <a href=".." class="icon icon-home"> Ad Exchange Buyer v0.3.6+20160831</a>
         
       </div>
 
@@ -336,7 +336,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Ad Exchange Buyer v0.3.6+20160405</a>
+        <a href="..">Ad Exchange Buyer v0.3.6+20160831</a>
       </nav>
 
       
@@ -379,7 +379,7 @@ You can set the scope for this method like this: <code>adexchangebuyer1d4 --scop
 </ul>
 </li>
 <li><strong>&lt;update-action&gt;</strong> <em>(string)</em><ul>
-<li>The proposed action to take on the proposal.</li>
+<li>The proposed action to take on the proposal. This field is required and it must be set when updating a proposal.</li>
 </ul>
 </li>
 </ul>
@@ -402,7 +402,6 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   is-setup-complete: boolean
   kind: string
   last-updater-or-commentor-role: string
-  last-updater-role: string
   name: string
   negotiation-id: string
   originator-role: string
@@ -420,40 +419,40 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
 <li>
-<p><code>-r .billed-buyer    account-id=dolor</code></p>
+<p><code>-r .billed-buyer    account-id=ut</code></p>
 <ul>
 <li>Adx account id of the buyer.</li>
 </ul>
 </li>
 <li>
-<p><code>..buyer    account-id=sea</code></p>
+<p><code>..buyer    account-id=eirmod</code></p>
 <ul>
 <li>Adx account id of the buyer.</li>
 </ul>
 </li>
 <li>
-<p><code>..buyer-private-data    reference-id=ut</code></p>
+<p><code>..buyer-private-data    reference-id=sanctus</code></p>
 <ul>
 <li>No description provided.</li>
 </ul>
 </li>
 <li>
-<p><code>reference-payload=eirmod</code></p>
+<p><code>reference-payload=voluptua.</code></p>
 <ul>
 <li>No description provided.</li>
 </ul>
 </li>
 <li>
-<p><code>..    has-buyer-signed-off=true</code></p>
+<p><code>..    has-buyer-signed-off=false</code></p>
 <ul>
-<li>When an proposal is in an accepted state, indicates whether the buyer has signed off Once both sides have signed off on a deal, the proposal can be finalized by the seller. (seller-readonly)</li>
+<li>When an proposal is in an accepted state, indicates whether the buyer has signed off. Once both sides have signed off on a deal, the proposal can be finalized by the seller. (seller-readonly)</li>
 </ul>
 </li>
 <li><code>has-seller-signed-off=true</code><ul>
 <li>When an proposal is in an accepted state, indicates whether the buyer has signed off Once both sides have signed off on a deal, the proposal can be finalized by the seller. (buyer-readonly)</li>
 </ul>
 </li>
-<li><code>inventory-source=dolor</code><ul>
+<li><code>inventory-source=et</code><ul>
 <li>What exchange will provide this inventory (readonly, except on create).</li>
 </ul>
 </li>
@@ -461,59 +460,55 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>True if the proposal is being renegotiated (readonly).</li>
 </ul>
 </li>
-<li><code>is-setup-complete=false</code><ul>
+<li><code>is-setup-complete=true</code><ul>
 <li>True, if the buyside inventory setup is complete for this proposal. (readonly, except via OrderSetupCompleted action)</li>
 </ul>
 </li>
-<li><code>kind=vero</code><ul>
+<li><code>kind=sed</code><ul>
 <li>Identifies what kind of resource this is. Value: the fixed string &#34;adexchangebuyer#proposal&#34;.</li>
 </ul>
 </li>
-<li><code>last-updater-or-commentor-role=ut</code><ul>
+<li><code>last-updater-or-commentor-role=et</code><ul>
 <li>The role of the last user that either updated the proposal or left a comment. (readonly)</li>
 </ul>
 </li>
-<li><code>last-updater-role=sed</code><ul>
-<li>No description provided.</li>
-</ul>
-</li>
-<li><code>name=et</code><ul>
+<li><code>name=ipsum</code><ul>
 <li>The name for the proposal (updatable)</li>
 </ul>
 </li>
-<li><code>negotiation-id=ipsum</code><ul>
+<li><code>negotiation-id=justo</code><ul>
 <li>Optional negotiation id if this proposal is a preferred deal proposal.</li>
 </ul>
 </li>
-<li><code>originator-role=justo</code><ul>
+<li><code>originator-role=dolore</code><ul>
 <li>Indicates whether the buyer/seller created the proposal.(readonly)</li>
 </ul>
 </li>
-<li><code>private-auction-id=dolore</code><ul>
+<li><code>private-auction-id=vero</code><ul>
 <li>Optional private auction id if this proposal is a private auction proposal.</li>
 </ul>
 </li>
-<li><code>proposal-id=vero</code><ul>
+<li><code>proposal-id=dolor</code><ul>
 <li>The unique id of the proposal. (readonly).</li>
 </ul>
 </li>
-<li><code>proposal-state=dolor</code><ul>
+<li><code>proposal-state=takimata</code><ul>
 <li>The current state of the proposal. (readonly)</li>
 </ul>
 </li>
-<li><code>revision-number=takimata</code><ul>
+<li><code>revision-number=et</code><ul>
 <li>The revision number for the proposal (readonly).</li>
 </ul>
 </li>
-<li><code>revision-time-ms=et</code><ul>
+<li><code>revision-time-ms=nonumy</code><ul>
 <li>The time (ms since epoch) when the proposal was last revised (readonly).</li>
 </ul>
 </li>
-<li><code>seller    account-id=nonumy</code><ul>
+<li><code>seller    account-id=et</code><ul>
 <li>The unique id for the seller. The seller fills in this field. The seller account id is then available to buyer in the product.</li>
 </ul>
 </li>
-<li><code>sub-account-id=et</code><ul>
+<li><code>sub-account-id=sed</code><ul>
 <li>Optional sub-account id for the seller.</li>
 </ul>
 </li>
@@ -627,7 +622,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <!--
 MkDocs version  : 0.12.2
-Docs Build Date : 2016-07-23 16:05:21.818843
+Docs Build Date : 2016-09-11 17:54:51.762302
 -->
 </body>
 </html>

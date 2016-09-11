@@ -48,7 +48,7 @@
                        [<span class='inner'>&#x2212;</span>]
                    </a>
                </span><a id='src-0' class='srclink' href='../src/google_fitness1/src/lib.rs.html#5-193' title='goto source code'>[src]</a></span></h1>
-<div class='docblock'><p>This documentation was generated from <em>fitness</em> crate version <em>0.1.14+20151021</em>, where <em>20151021</em> is the exact revision of the <em>fitness:v1</em> schema built by the <a href="http://www.makotemplates.org/">mako</a> code generator <em>v0.1.14</em>.</p>
+<div class='docblock'><p>This documentation was generated from <em>fitness</em> crate version <em>0.1.15+20160801</em>, where <em>20160801</em> is the exact revision of the <em>fitness:v1</em> schema built by the <a href="http://www.makotemplates.org/">mako</a> code generator <em>v0.1.15</em>.</p>
 
 <p>Everything else about the <em>fitness</em> <em>v1</em> API can be found at the
 <a href="https://developers.google.com/fit/rest/">official documentation site</a>.
@@ -256,7 +256,7 @@ These will always take a single argument, for which the following statements are
                            <td><a class='struct' href='struct.Application.html'
                                   title='google_fitness1::Application'>Application</a></td>
                            <td class='docblock short'>
-                                <p>See: google3/java/com/google/android/apps/heart/platform/api/Application.java</p>
+                                <p>This type is not used in any activity, and only used as <em>part</em> of another schema.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
@@ -281,6 +281,13 @@ These will always take a single argument, for which the following statements are
                            </td>
                        </tr>
                        <tr class=' module-item'>
+                           <td><a class='struct' href='struct.BucketByTimePeriod.html'
+                                  title='google_fitness1::BucketByTimePeriod'>BucketByTimePeriod</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
                            <td><a class='struct' href='struct.DataPoint.html'
                                   title='google_fitness1::DataPoint'>DataPoint</a></td>
                            <td class='docblock short'>
@@ -298,7 +305,7 @@ These will always take a single argument, for which the following statements are
                            <td><a class='struct' href='struct.DataType.html'
                                   title='google_fitness1::DataType'>DataType</a></td>
                            <td class='docblock short'>
-                                <p>See: google3/java/com/google/android/apps/heart/platform/api/DataType.java</p>
+                                <p>This type is not used in any activity, and only used as <em>part</em> of another schema.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
@@ -422,35 +429,35 @@ to google APIs, and might not be a fully-featured implementation.</p>
                            <td><a class='struct' href='struct.UserDataSourceDeleteCall.html'
                                   title='google_fitness1::UserDataSourceDeleteCall'>UserDataSourceDeleteCall</a></td>
                            <td class='docblock short'>
-                                <p>Delete the data source if there are no datapoints associated with it</p>
+                                <p>Deletes the specified data source. The request will fail if the data source contains any data points.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
                            <td><a class='struct' href='struct.UserDataSourceGetCall.html'
                                   title='google_fitness1::UserDataSourceGetCall'>UserDataSourceGetCall</a></td>
                            <td class='docblock short'>
-                                <p>Returns a data source identified by a data stream ID.</p>
+                                <p>Returns the specified data source.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
                            <td><a class='struct' href='struct.UserDataSourceListCall.html'
                                   title='google_fitness1::UserDataSourceListCall'>UserDataSourceListCall</a></td>
                            <td class='docblock short'>
-                                <p>Lists all data sources that are visible to the developer, using the OAuth scopes provided. The list is not exhaustive: the user may have private data sources that are only visible to other developers or calls using other scopes.</p>
+                                <p>Lists all data sources that are visible to the developer, using the OAuth scopes provided. The list is not exhaustive; the user may have private data sources that are only visible to other developers, or calls using other scopes.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
                            <td><a class='struct' href='struct.UserDataSourcePatchCall.html'
                                   title='google_fitness1::UserDataSourcePatchCall'>UserDataSourcePatchCall</a></td>
                            <td class='docblock short'>
-                                <p>Updates a given data source. It is an error to modify the data source&#39;s data stream ID, data type, type, stream name or device information apart from the device version. Changing these fields would require a new unique data stream ID and separate data source.</p>
+                                <p>Updates the specified data source. The dataStreamId, dataType, type, dataStreamName, and device properties with the exception of version, cannot be modified.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
                            <td><a class='struct' href='struct.UserDataSourceUpdateCall.html'
                                   title='google_fitness1::UserDataSourceUpdateCall'>UserDataSourceUpdateCall</a></td>
                            <td class='docblock short'>
-                                <p>Updates a given data source. It is an error to modify the data source&#39;s data stream ID, data type, type, stream name or device information apart from the device version. Changing these fields would require a new unique data stream ID and separate data source.</p>
+                                <p>Updates the specified data source. The dataStreamId, dataType, type, dataStreamName, and device properties with the exception of version, cannot be modified.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>

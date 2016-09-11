@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Zones Clusters Update - container v0.3.6+20160321</title>
+  <title>Zones Clusters Update - container v0.3.6+20160421</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -32,7 +32,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> container v0.3.6+20160321</a>
+        <a href=".." class="icon icon-home"> container v0.3.6+20160421</a>
         
       </div>
 
@@ -67,6 +67,26 @@
             
                 <li class="toctree-l2 ">
                     <a class="" href="../projects_zones-clusters-list/">Zones Clusters List</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../projects_zones-clusters-node-pools-create/">Zones Clusters Node Pools Create</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../projects_zones-clusters-node-pools-delete/">Zones Clusters Node Pools Delete</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../projects_zones-clusters-node-pools-get/">Zones Clusters Node Pools Get</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../projects_zones-clusters-node-pools-list/">Zones Clusters Node Pools List</a>
                     
                 </li>
             
@@ -125,7 +145,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">container v0.3.6+20160321</a>
+        <a href="..">container v0.3.6+20160421</a>
       </nav>
 
       
@@ -185,6 +205,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
         disabled: boolean
     desired-master-version: string
     desired-monitoring-service: string
+    desired-node-pool-id: string
     desired-node-version: string
 
 </code></pre>
@@ -192,7 +213,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
 <li>
-<p><code>-r .update.desired-addons-config.horizontal-pod-autoscaling    disabled=false</code></p>
+<p><code>-r .update.desired-addons-config.horizontal-pod-autoscaling    disabled=true</code></p>
 <ul>
 <li>Whether the Horizontal Pod Autoscaling feature is enabled in the cluster. When enabled, it ensures that a Heapster pod is running in the cluster, which is also used by the Cloud Monitoring service.</li>
 </ul>
@@ -204,16 +225,20 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
-<p><code>...    desired-master-version=erat</code></p>
+<p><code>...    desired-master-version=accusam</code></p>
 <ul>
 <li>The Kubernetes version to change the master to. The only valid value is the latest supported version. Use &#34;-&#34; to have the server automatically select the latest version.</li>
 </ul>
 </li>
-<li><code>desired-monitoring-service=sadipscing</code><ul>
+<li><code>desired-monitoring-service=lorem</code><ul>
 <li>The monitoring service the cluster should use to write metrics. Currently available options: * &#34;monitoring.googleapis.com&#34; - the Google Cloud Monitoring service * &#34;none&#34; - no metrics will be exported from the cluster</li>
 </ul>
 </li>
-<li><code>desired-node-version=dolor</code><ul>
+<li><code>desired-node-pool-id=sea</code><ul>
+<li>The node pool to be upgraded. This field is mandatory if the &#34;desired_node_version&#34; or &#34;desired_image_family&#34; is specified and there is more than one node pool on the cluster.</li>
+</ul>
+</li>
+<li><code>desired-node-version=et</code><ul>
 <li>The Kubernetes version to change the nodes to (typically an upgrade). Use <code>-</code> to upgrade to the latest version supported by the server.</li>
 </ul>
 </li>
@@ -328,7 +353,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
         <a href="../projects_zones-get-serverconfig/" class="btn btn-neutral float-right" title="Zones Get Serverconfig"/>Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../projects_zones-clusters-list/" class="btn btn-neutral" title="Zones Clusters List"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../projects_zones-clusters-node-pools-list/" class="btn btn-neutral" title="Zones Clusters Node Pools List"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -356,14 +381,14 @@ In the latter case it is advised to set the field-cursor to the data-structure's
         
             <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/container1-cli" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
         
-      <span><a href="../projects_zones-clusters-list/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      <span><a href="../projects_zones-clusters-node-pools-list/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       <span style="margin-left: 15px"><a href="../projects_zones-get-serverconfig/" style="color: #fcfcfc">Next &raquo;</a></span>
     </span>
 </div>
 
 <!--
 MkDocs version  : 0.12.2
-Docs Build Date : 2016-07-23 16:05:51.735770
+Docs Build Date : 2016-09-11 17:55:41.842734
 -->
 </body>
 </html>

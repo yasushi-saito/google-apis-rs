@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Create - drive v0.3.6+20160331</title>
+  <title>Create - drive v0.3.6+20160901</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -32,7 +32,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> drive v0.3.6+20160331</a>
+        <a href=".." class="icon icon-home"> drive v0.3.6+20160901</a>
         
       </div>
 
@@ -300,7 +300,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">drive v0.3.6+20160331</a>
+        <a href="..">drive v0.3.6+20160901</a>
       </nav>
 
       
@@ -352,6 +352,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   display-name: string
   domain: string
   email-address: string
+  expiration-time: string
   id: string
   kind: string
   photo-link: string
@@ -378,19 +379,23 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>The email address of the user or group to which this permission refers.</li>
 </ul>
 </li>
-<li><code>id=erat</code><ul>
+<li><code>expiration-time=erat</code><ul>
+<li>The time at which this permission will expire (RFC 3339 date-time).</li>
+</ul>
+</li>
+<li><code>id=gubergren</code><ul>
 <li>The ID of this permission. This is a unique identifier for the grantee, and is published in User resources as permissionId.</li>
 </ul>
 </li>
-<li><code>kind=gubergren</code><ul>
-<li>This is always drive#permission.</li>
+<li><code>kind=erat</code><ul>
+<li>Identifies what kind of resource this is. Value: the fixed string &#34;drive#permission&#34;.</li>
 </ul>
 </li>
-<li><code>photo-link=erat</code><ul>
+<li><code>photo-link=et</code><ul>
 <li>A link to the user&#39;s profile photo, if available.</li>
 </ul>
 </li>
-<li><code>role=et</code><ul>
+<li><code>role=amet</code><ul>
 <li>The role granted by this permission. Valid values are:  <ul>
 <li>owner </li>
 <li>writer </li>
@@ -400,7 +405,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </li>
 </ul>
 </li>
-<li><code>type=amet</code><ul>
+<li><code>type=lorem</code><ul>
 <li>The type of the grantee. Valid values are:  <ul>
 <li>user </li>
 <li>group </li>
@@ -436,9 +441,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p send-notification-email=boolean</strong></p>
+<p><strong>-p transfer-ownership=boolean</strong></p>
 <ul>
-<li>Whether to send a notification email when sharing to users or groups. This defaults to true for users and groups, and is not allowed for other requests. It must not be disabled for ownership transfers.</li>
+<li>Whether to transfer ownership to the specified user and downgrade the current owner to a writer. This parameter is required as an acknowledgement of the side effect.</li>
 </ul>
 </li>
 <li>
@@ -448,9 +453,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p transfer-ownership=boolean</strong></p>
+<p><strong>-p send-notification-email=boolean</strong></p>
 <ul>
-<li>Whether to transfer ownership to the specified user and downgrade the current owner to a writer. This parameter is required as an acknowledgement of the side effect.</li>
+<li>Whether to send a notification email when sharing to users or groups. This defaults to true for users and groups, and is not allowed for other requests. It must not be disabled for ownership transfers.</li>
 </ul>
 </li>
 </ul>
@@ -544,7 +549,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 
 <!--
 MkDocs version  : 0.12.2
-Docs Build Date : 2016-07-23 16:06:15.774541
+Docs Build Date : 2016-09-11 17:56:21.953466
 -->
 </body>
 </html>

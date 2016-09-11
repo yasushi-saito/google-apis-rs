@@ -48,7 +48,7 @@
                        [<span class='inner'>&#x2212;</span>]
                    </a>
                </span><a id='src-0' class='srclink' href='../src/google_genomics1/src/lib.rs.html#5-218' title='goto source code'>[src]</a></span></h1>
-<div class='docblock'><p>This documentation was generated from <em>genomics</em> crate version <em>0.1.14+20160407</em>, where <em>20160407</em> is the exact revision of the <em>genomics:v1</em> schema built by the <a href="http://www.makotemplates.org/">mako</a> code generator <em>v0.1.14</em>.</p>
+<div class='docblock'><p>This documentation was generated from <em>genomics</em> crate version <em>0.1.15+20160905</em>, where <em>20160905</em> is the exact revision of the <em>genomics:v1</em> schema built by the <a href="http://www.makotemplates.org/">mako</a> code generator <em>v0.1.15</em>.</p>
 
 <p>Everything else about the <em>genomics</em> <em>v1</em> API can be found at the
 <a href="https://cloud.google.com/genomics/">official documentation site</a>.
@@ -297,7 +297,7 @@ These will always take a single argument, for which the following statements are
                            <td><a class='struct' href='struct.AnnotationCreateCall.html'
                                   title='google_genomics1::AnnotationCreateCall'>AnnotationCreateCall</a></td>
                            <td class='docblock short'>
-                                <p>Creates a new annotation. Caller must have WRITE permission for the associated annotation set. The following fields are required: * annotationSetId * referenceName or referenceId ### Transcripts For annotations of type TRANSCRIPT, the following fields of transcript must be provided: * <code>exons.start</code> * <code>exons.end</code> All other fields may be optionally specified, unless documented as being server-generated (for example, the <code>id</code> field). The annotated range must be no longer than 100Mbp (mega base pairs). See the Annotation resource for additional restrictions on each field.</p>
+                                <p>Creates a new annotation. Caller must have WRITE permission for the associated annotation set. The following fields are required: * annotationSetId * referenceName or referenceId ### Transcripts For annotations of type TRANSCRIPT, the following fields of transcript must be provided: * exons.start * exons.end All other fields may be optionally specified, unless documented as being server-generated (for example, the <code>id</code> field). The annotated range must be no longer than 100Mbp (mega base pairs). See the Annotation resource for additional restrictions on each field.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
@@ -847,7 +847,7 @@ It is not used directly, but through the <code>Genomics</code> hub.</p>
                            <td><a class='struct' href='struct.ReadgroupsetExportCall.html'
                                   title='google_genomics1::ReadgroupsetExportCall'>ReadgroupsetExportCall</a></td>
                            <td class='docblock short'>
-                                <p>Exports a read group set to a BAM file in Google Cloud Storage. For the definitions of read group sets and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a> Note that currently there may be some differences between exported BAM files and the original BAM file at the time of import. See <a href="google.genomics.v1.ReadServiceV1.ImportReadGroupSets">ImportReadGroupSets</a> for caveats.</p>
+                                <p>Exports a read group set to a BAM file in Google Cloud Storage. For the definitions of read group sets and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a> Note that currently there may be some differences between exported BAM files and the original BAM file at the time of import. See ImportReadGroupSets for caveats.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>

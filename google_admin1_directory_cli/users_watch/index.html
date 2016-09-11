@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Watch - directory v0.3.6+20160323</title>
+  <title>Watch - directory v0.3.6+20160824</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -32,7 +32,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> directory v0.3.6+20160323</a>
+        <a href=".." class="icon icon-home"> directory v0.3.6+20160824</a>
         
       </div>
 
@@ -668,7 +668,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">directory v0.3.6+20160323</a>
+        <a href="..">directory v0.3.6+20160824</a>
       </nav>
 
       
@@ -724,23 +724,23 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    address=tempor</code><ul>
+<li><code>-r .    address=elitr</code><ul>
 <li>The address where notifications are delivered for this channel.</li>
 </ul>
 </li>
-<li><code>expiration=clita</code><ul>
+<li><code>expiration=et</code><ul>
 <li>Date and time of notification channel expiration, expressed as a Unix timestamp, in milliseconds. Optional.</li>
 </ul>
 </li>
-<li><code>id=kasd</code><ul>
+<li><code>id=vero</code><ul>
 <li>A UUID or similar unique string that identifies this channel.</li>
 </ul>
 </li>
-<li><code>kind=elitr</code><ul>
+<li><code>kind=sadipscing</code><ul>
 <li>Identifies this as a notification channel used to watch for changes to a resource. Value: the fixed string &#34;api#channel&#34;.</li>
 </ul>
 </li>
-<li><code>params=key=et</code><ul>
+<li><code>params=key=sed</code><ul>
 <li>Additional parameters controlling delivery channel behavior. Optional.</li>
 <li>the value will be associated with the given <code>key</code></li>
 </ul>
@@ -749,19 +749,19 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>A Boolean value to indicate whether payload is wanted. Optional.</li>
 </ul>
 </li>
-<li><code>resource-id=sadipscing</code><ul>
+<li><code>resource-id=nonumy</code><ul>
 <li>An opaque ID that identifies the resource being watched on this channel. Stable across different API versions.</li>
 </ul>
 </li>
-<li><code>resource-uri=sed</code><ul>
+<li><code>resource-uri=magna</code><ul>
 <li>A version-specific identifier for the watched resource.</li>
 </ul>
 </li>
-<li><code>token=vero</code><ul>
+<li><code>token=ea</code><ul>
 <li>An arbitrary string delivered to the target address with each notification delivered over this channel. Optional.</li>
 </ul>
 </li>
-<li><code>type=nonumy</code><ul>
+<li><code>type=sea</code><ul>
 <li>The type of delivery mechanism used for this channel.</li>
 </ul>
 </li>
@@ -797,9 +797,21 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p domain=string</strong></p>
+<p><strong>-p sort-order=string</strong></p>
 <ul>
-<li>Name of the domain. Fill this field to get users from only this domain. To return all users in a multi-domain fill customer field instead.</li>
+<li>Whether to return results in ascending or descending order.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p show-deleted=string</strong></p>
+<ul>
+<li>If set to true retrieves the list of deleted users. Default is false</li>
+</ul>
+</li>
+<li>
+<p><strong>-p max-results=integer</strong></p>
+<ul>
+<li>Maximum number of results to return. Default is 100. Max allowed is 500</li>
 </ul>
 </li>
 <li>
@@ -815,39 +827,27 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
+<p><strong>-p domain=string</strong></p>
+<ul>
+<li>Name of the domain. Fill this field to get users from only this domain. To return all users in a multi-domain fill customer field instead.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p page-token=string</strong></p>
 <ul>
 <li>Token to specify next page in the list</li>
 </ul>
 </li>
 <li>
-<p><strong>-p max-results=integer</strong></p>
+<p><strong>-p view-type=string</strong></p>
 <ul>
-<li>Maximum number of results to return. Default is 100. Max allowed is 500</li>
+<li>Whether to fetch the ADMIN_VIEW or DOMAIN_PUBLIC view of the user.</li>
 </ul>
 </li>
 <li>
 <p><strong>-p custom-field-mask=string</strong></p>
 <ul>
 <li>Comma-separated list of schema names. All fields from these schemas are fetched. This should only be set when projection=custom.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p show-deleted=string</strong></p>
-<ul>
-<li>If set to true retrieves the list of deleted users. Default is false</li>
-</ul>
-</li>
-<li>
-<p><strong>-p sort-order=string</strong></p>
-<ul>
-<li>Whether to return results in ascending or descending order.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p view-type=string</strong></p>
-<ul>
-<li>Whether to fetch the ADMIN_VIEW or DOMAIN_PUBLIC view of the user.</li>
 </ul>
 </li>
 <li>
@@ -953,7 +953,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 
 <!--
 MkDocs version  : 0.12.2
-Docs Build Date : 2016-07-23 16:06:10.581201
+Docs Build Date : 2016-09-11 17:55:09.049885
 -->
 </body>
 </html>

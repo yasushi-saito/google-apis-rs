@@ -47,8 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-4018' class='srclink' href='../src/google_coordinate1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-coordinate1-f2b883d6c2eb0d91/out/lib.rs.html#8141-8143' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct JobMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
+               </span><a id='src-3697' class='srclink' href='../src/google_coordinate1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-coordinate1-6530e5fa8fdfcb03/out/lib.rs.html#6357-6359' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct JobMethods&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>job</em> resources.
 It is not used directly, but through the <code>Coordinate</code> hub.</p>
@@ -74,8 +74,8 @@ It is not used directly, but through the <code>Coordinate</code> hub.</p>
 <span class='comment'>// like `get(...)`, `insert(...)`, `list(...)`, `patch(...)` and `update(...)`</span>
 <span class='comment'>// to build up your call.</span>
 <span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>jobs</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_coordinate1/struct.JobMethods.html' title='google_coordinate1::JobMethods'>JobMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-4027' class='srclink' href='../src/google_coordinate1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-coordinate1-f2b883d6c2eb0d91/out/lib.rs.html#8145-8268' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, team_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, job_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_coordinate1/struct.JobGetCall.html' title='google_coordinate1::JobGetCall'>JobGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='struct' href='../google_coordinate1/struct.JobMethods.html' title='google_coordinate1::JobMethods'>JobMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-3706' class='srclink' href='../src/google_coordinate1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-coordinate1-6530e5fa8fdfcb03/out/lib.rs.html#6361-6484' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, team_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, job_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_coordinate1/struct.JobGetCall.html' title='google_coordinate1::JobGetCall'>JobGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Retrieves a job, including all the changes made to the job.</p>
@@ -85,7 +85,7 @@ It is not used directly, but through the <code>Coordinate</code> hub.</p>
 <li><code>teamId</code> - Team ID</li>
 <li><code>jobId</code> - Job number</li>
 </ul>
-</div><h4 id='method.update' class='method'><code>fn <a href='#method.update' class='fnname'>update</a>(&amp;self, request: <a class='struct' href='../google_coordinate1/struct.Job.html' title='google_coordinate1::Job'>Job</a>, team_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, job_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_coordinate1/struct.JobUpdateCall.html' title='google_coordinate1::JobUpdateCall'>JobUpdateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.update' class='method'><code>fn <a href='#method.update' class='fnname'>update</a>(&amp;self, request: <a class='struct' href='../google_coordinate1/struct.Job.html' title='google_coordinate1::Job'>Job</a>, team_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, job_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_coordinate1/struct.JobUpdateCall.html' title='google_coordinate1::JobUpdateCall'>JobUpdateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Updates a job. Fields that are set in the job state will be updated.</p>
@@ -96,7 +96,7 @@ It is not used directly, but through the <code>Coordinate</code> hub.</p>
 <li><code>teamId</code> - Team ID</li>
 <li><code>jobId</code> - Job number</li>
 </ul>
-</div><h4 id='method.patch' class='method'><code>fn <a href='#method.patch' class='fnname'>patch</a>(&amp;self, request: <a class='struct' href='../google_coordinate1/struct.Job.html' title='google_coordinate1::Job'>Job</a>, team_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, job_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_coordinate1/struct.JobPatchCall.html' title='google_coordinate1::JobPatchCall'>JobPatchCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.patch' class='method'><code>fn <a href='#method.patch' class='fnname'>patch</a>(&amp;self, request: <a class='struct' href='../google_coordinate1/struct.Job.html' title='google_coordinate1::Job'>Job</a>, team_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, job_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_coordinate1/struct.JobPatchCall.html' title='google_coordinate1::JobPatchCall'>JobPatchCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Updates a job. Fields that are set in the job state will be updated. This method supports patch semantics.</p>
@@ -107,7 +107,7 @@ It is not used directly, but through the <code>Coordinate</code> hub.</p>
 <li><code>teamId</code> - Team ID</li>
 <li><code>jobId</code> - Job number</li>
 </ul>
-</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self, team_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_coordinate1/struct.JobListCall.html' title='google_coordinate1::JobListCall'>JobListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self, team_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_coordinate1/struct.JobListCall.html' title='google_coordinate1::JobListCall'>JobListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Retrieves jobs created or modified since the given timestamp.</p>
@@ -116,7 +116,7 @@ It is not used directly, but through the <code>Coordinate</code> hub.</p>
 <ul>
 <li><code>teamId</code> - Team ID</li>
 </ul>
-</div><h4 id='method.insert' class='method'><code>fn <a href='#method.insert' class='fnname'>insert</a>(&amp;self, request: <a class='struct' href='../google_coordinate1/struct.Job.html' title='google_coordinate1::Job'>Job</a>, team_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, address: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, lat: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f64.html'>f64</a>, lng: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f64.html'>f64</a>, title: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_coordinate1/struct.JobInsertCall.html' title='google_coordinate1::JobInsertCall'>JobInsertCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.insert' class='method'><code>fn <a href='#method.insert' class='fnname'>insert</a>(&amp;self, request: <a class='struct' href='../google_coordinate1/struct.Job.html' title='google_coordinate1::Job'>Job</a>, team_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, address: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, lat: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f64.html'>f64</a>, lng: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f64.html'>f64</a>, title: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_coordinate1/struct.JobInsertCall.html' title='google_coordinate1::JobInsertCall'>JobInsertCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Inserts a new job. Only the state field of the job should be set.</p>
@@ -130,7 +130,7 @@ It is not used directly, but through the <code>Coordinate</code> hub.</p>
 <li><code>lng</code> - The longitude coordinate of this job&#39;s location.</li>
 <li><code>title</code> - Job title</li>
 </ul>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_coordinate1/trait.MethodsBuilder.html' title='google_coordinate1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_coordinate1/struct.JobMethods.html' title='google_coordinate1::JobMethods'>JobMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-4023' class='srclink' href='../src/google_coordinate1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-coordinate1-f2b883d6c2eb0d91/out/lib.rs.html#8144' title='goto source code'>[src]</a></span></h3>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='trait' href='../google_coordinate1/trait.MethodsBuilder.html' title='google_coordinate1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_coordinate1/struct.JobMethods.html' title='google_coordinate1::JobMethods'>JobMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-3702' class='srclink' href='../src/google_coordinate1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-coordinate1-6530e5fa8fdfcb03/out/lib.rs.html#6360' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 

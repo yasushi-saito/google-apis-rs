@@ -47,8 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-34228' class='srclink' href='../src/google_youtube3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-youtube3-3a9e8c4a9ed85834/out/lib.rs.html#75061-75063' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct LiveStreamMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
+               </span><a id='src-32887' class='srclink' href='../src/google_youtube3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-youtube3-122b93fad4a7fbcd/out/lib.rs.html#59191-59193' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct LiveStreamMethods&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>liveStream</em> resources.
 It is not used directly, but through the <code>YouTube</code> hub.</p>
@@ -74,8 +74,8 @@ It is not used directly, but through the <code>YouTube</code> hub.</p>
 <span class='comment'>// like `delete(...)`, `insert(...)`, `list(...)` and `update(...)`</span>
 <span class='comment'>// to build up your call.</span>
 <span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>live_streams</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_youtube3/struct.LiveStreamMethods.html' title='google_youtube3::LiveStreamMethods'>LiveStreamMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-34237' class='srclink' href='../src/google_youtube3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-youtube3-3a9e8c4a9ed85834/out/lib.rs.html#75065-75144' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.update' class='method'><code>fn <a href='#method.update' class='fnname'>update</a>(&amp;self, request: <a class='struct' href='../google_youtube3/struct.LiveStream.html' title='google_youtube3::LiveStream'>LiveStream</a>) -&gt; <a class='struct' href='../google_youtube3/struct.LiveStreamUpdateCall.html' title='google_youtube3::LiveStreamUpdateCall'>LiveStreamUpdateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='struct' href='../google_youtube3/struct.LiveStreamMethods.html' title='google_youtube3::LiveStreamMethods'>LiveStreamMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-32896' class='srclink' href='../src/google_youtube3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-youtube3-122b93fad4a7fbcd/out/lib.rs.html#59195-59274' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.update' class='method'><code>fn <a href='#method.update' class='fnname'>update</a>(&amp;self, request: <a class='struct' href='../google_youtube3/struct.LiveStream.html' title='google_youtube3::LiveStream'>LiveStream</a>) -&gt; <a class='struct' href='../google_youtube3/struct.LiveStreamUpdateCall.html' title='google_youtube3::LiveStreamUpdateCall'>LiveStreamUpdateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Updates a video stream. If the properties that you want to change cannot be updated, then you need to create a new stream with the proper settings.</p>
@@ -84,7 +84,7 @@ It is not used directly, but through the <code>YouTube</code> hub.</p>
 <ul>
 <li><code>request</code> - No description provided.</li>
 </ul>
-</div><h4 id='method.delete' class='method'><code>fn <a href='#method.delete' class='fnname'>delete</a>(&amp;self, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_youtube3/struct.LiveStreamDeleteCall.html' title='google_youtube3::LiveStreamDeleteCall'>LiveStreamDeleteCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.delete' class='method'><code>fn <a href='#method.delete' class='fnname'>delete</a>(&amp;self, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_youtube3/struct.LiveStreamDeleteCall.html' title='google_youtube3::LiveStreamDeleteCall'>LiveStreamDeleteCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Deletes a video stream.</p>
@@ -93,7 +93,7 @@ It is not used directly, but through the <code>YouTube</code> hub.</p>
 <ul>
 <li><code>id</code> - The id parameter specifies the YouTube live stream ID for the resource that is being deleted.</li>
 </ul>
-</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self, part: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_youtube3/struct.LiveStreamListCall.html' title='google_youtube3::LiveStreamListCall'>LiveStreamListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self, part: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_youtube3/struct.LiveStreamListCall.html' title='google_youtube3::LiveStreamListCall'>LiveStreamListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Returns a list of video streams that match the API request parameters.</p>
@@ -102,7 +102,7 @@ It is not used directly, but through the <code>YouTube</code> hub.</p>
 <ul>
 <li><code>part</code> - The part parameter specifies a comma-separated list of one or more liveStream resource properties that the API response will include. The part names that you can include in the parameter value are id, snippet, cdn, and status.</li>
 </ul>
-</div><h4 id='method.insert' class='method'><code>fn <a href='#method.insert' class='fnname'>insert</a>(&amp;self, request: <a class='struct' href='../google_youtube3/struct.LiveStream.html' title='google_youtube3::LiveStream'>LiveStream</a>) -&gt; <a class='struct' href='../google_youtube3/struct.LiveStreamInsertCall.html' title='google_youtube3::LiveStreamInsertCall'>LiveStreamInsertCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.insert' class='method'><code>fn <a href='#method.insert' class='fnname'>insert</a>(&amp;self, request: <a class='struct' href='../google_youtube3/struct.LiveStream.html' title='google_youtube3::LiveStream'>LiveStream</a>) -&gt; <a class='struct' href='../google_youtube3/struct.LiveStreamInsertCall.html' title='google_youtube3::LiveStreamInsertCall'>LiveStreamInsertCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Creates a video stream. The stream enables you to send your video to YouTube, which can then broadcast the video to your audience.</p>
@@ -111,7 +111,7 @@ It is not used directly, but through the <code>YouTube</code> hub.</p>
 <ul>
 <li><code>request</code> - No description provided.</li>
 </ul>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_youtube3/trait.MethodsBuilder.html' title='google_youtube3::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_youtube3/struct.LiveStreamMethods.html' title='google_youtube3::LiveStreamMethods'>LiveStreamMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-34233' class='srclink' href='../src/google_youtube3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-youtube3-3a9e8c4a9ed85834/out/lib.rs.html#75064' title='goto source code'>[src]</a></span></h3>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='trait' href='../google_youtube3/trait.MethodsBuilder.html' title='google_youtube3::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_youtube3/struct.LiveStreamMethods.html' title='google_youtube3::LiveStreamMethods'>LiveStreamMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-32892' class='srclink' href='../src/google_youtube3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-youtube3-122b93fad4a7fbcd/out/lib.rs.html#59194' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 

@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>List - YouTube v0.3.6+20160222</title>
+  <title>List - YouTube v0.3.6+20160805</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -32,7 +32,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> YouTube v0.3.6+20160222</a>
+        <a href=".." class="icon icon-home"> YouTube v0.3.6+20160805</a>
         
       </div>
 
@@ -588,7 +588,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">YouTube v0.3.6+20160222</a>
+        <a href="..">YouTube v0.3.6+20160805</a>
       </nav>
 
       
@@ -654,15 +654,21 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p mine=boolean</strong></p>
-<ul>
-<li>Set this parameter&#39;s value to true to instruct the API to only return channels owned by the authenticated user.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p page-token=string</strong></p>
 <ul>
 <li>The pageToken parameter identifies a specific page in the result set that should be returned. In an API response, the nextPageToken and prevPageToken properties identify other pages that could be retrieved.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p hl=string</strong></p>
+<ul>
+<li>The hl parameter should be used for filter out the properties that are not in the given language. Used for the brandingSettings part.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p mine=boolean</strong></p>
+<ul>
+<li>Set this parameter&#39;s value to true to instruct the API to only return channels owned by the authenticated user.</li>
 </ul>
 </li>
 <li>
@@ -678,9 +684,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p my-subscribers=boolean</strong></p>
+<p><strong>-p for-username=string</strong></p>
 <ul>
-<li>Use the subscriptions.list method and its mySubscribers parameter to retrieve a list of subscribers to the authenticated user&#39;s channel.</li>
+<li>The forUsername parameter specifies a YouTube username, thereby requesting the channel associated with that username.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p id=string</strong></p>
+<ul>
+<li>The id parameter specifies a comma-separated list of the YouTube channel ID(s) for the resource(s) that are being retrieved. In a channel resource, the id property specifies the channel&#39;s YouTube channel ID.</li>
 </ul>
 </li>
 <li>
@@ -693,15 +705,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p for-username=string</strong></p>
+<p><strong>-p my-subscribers=boolean</strong></p>
 <ul>
-<li>The forUsername parameter specifies a YouTube username, thereby requesting the channel associated with that username.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p hl=string</strong></p>
-<ul>
-<li>The hl parameter should be used for filter out the properties that are not in the given language. Used for the brandingSettings part.</li>
+<li>Use the subscriptions.list method and its mySubscribers parameter to retrieve a list of subscribers to the authenticated user&#39;s channel.</li>
 </ul>
 </li>
 <li>
@@ -711,12 +717,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <p>Note: This parameter is intended exclusively for YouTube content partners.</p>
 <p>Set this parameter&#39;s value to true to instruct the API to only return channels managed by the content owner that the onBehalfOfContentOwner parameter specifies. The user must be authenticated as a CMS account linked to the specified content owner and onBehalfOfContentOwner must be provided.</p>
 </li>
-</ul>
-</li>
-<li>
-<p><strong>-p id=string</strong></p>
-<ul>
-<li>The id parameter specifies a comma-separated list of the YouTube channel ID(s) for the resource(s) that are being retrieved. In a channel resource, the id property specifies the channel&#39;s YouTube channel ID.</li>
 </ul>
 </li>
 </ul>
@@ -810,7 +810,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 
 <!--
 MkDocs version  : 0.12.2
-Docs Build Date : 2016-07-23 16:05:32.540916
+Docs Build Date : 2016-09-11 17:55:03.397124
 -->
 </body>
 </html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `TechnologyTargeting` struct in crate `google_dfareporting2d5`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, TechnologyTargeting">
+
+    <title>google_dfareporting2d5::TechnologyTargeting - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='index.html'>google_dfareporting2d5</a></p><script>window.sidebarCurrent = {name: 'TechnologyTargeting', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content struct">
+<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>google_dfareporting2d5</a>::<wbr><a class='struct' href=''>TechnologyTargeting</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-24717' class='srclink' href='../src/google_dfareporting2d5/home/byron/dev/rust/google-apis-rs/target/debug/build/google-dfareporting2d5-37402208d6859c28/out/lib.rs.html#48435-48448' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct TechnologyTargeting {
+    pub browsers: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='../google_dfareporting2d5/struct.Browser.html' title='google_dfareporting2d5::Browser'>Browser</a>&gt;&gt;,
+    pub operating_systems: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='../google_dfareporting2d5/struct.OperatingSystem.html' title='google_dfareporting2d5::OperatingSystem'>OperatingSystem</a>&gt;&gt;,
+    pub mobile_carriers: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='../google_dfareporting2d5/struct.MobileCarrier.html' title='google_dfareporting2d5::MobileCarrier'>MobileCarrier</a>&gt;&gt;,
+    pub connection_types: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='../google_dfareporting2d5/struct.ConnectionType.html' title='google_dfareporting2d5::ConnectionType'>ConnectionType</a>&gt;&gt;,
+    pub platform_types: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='../google_dfareporting2d5/struct.PlatformType.html' title='google_dfareporting2d5::PlatformType'>PlatformType</a>&gt;&gt;,
+    pub operating_system_versions: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='../google_dfareporting2d5/struct.OperatingSystemVersion.html' title='google_dfareporting2d5::OperatingSystemVersion'>OperatingSystemVersion</a>&gt;&gt;,
+}</pre><div class='docblock'><p>Technology Targeting.</p>
+
+<p>This type is not used in any activity, and only used as <em>part</em> of another schema.</p>
+</div><h2 class='fields'>Fields</h2><span id='structfield.browsers' class='structfield'><code>browsers: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='../google_dfareporting2d5/struct.Browser.html' title='google_dfareporting2d5::Browser'>Browser</a>&gt;&gt;</code>
+                           </span><span class='stab '></span><div class='docblock'><p>Browsers that this ad targets. For each browser either set browserVersionId or dartId along with the version numbers. If both are specified, only browserVersionId will be used. The other fields are populated automatically when the ad is inserted or updated.</p>
+</div><span id='structfield.operating_systems' class='structfield'><code>operating_systems: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='../google_dfareporting2d5/struct.OperatingSystem.html' title='google_dfareporting2d5::OperatingSystem'>OperatingSystem</a>&gt;&gt;</code>
+                           </span><span class='stab '></span><div class='docblock'><p>Operating systems that this ad targets. To target specific versions, use operatingSystemVersions. For each operating system only dartId is required. The other fields are populated automatically when the ad is inserted or updated. If targeting an operating system, do not set targeting for operating system versions for the same operating system.</p>
+</div><span id='structfield.mobile_carriers' class='structfield'><code>mobile_carriers: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='../google_dfareporting2d5/struct.MobileCarrier.html' title='google_dfareporting2d5::MobileCarrier'>MobileCarrier</a>&gt;&gt;</code>
+                           </span><span class='stab '></span><div class='docblock'><p>Mobile carriers that this ad targets. For each mobile carrier only id is required, and the other fields are populated automatically when the ad is inserted or updated. If targeting a mobile carrier, do not set targeting for any zip codes.</p>
+</div><span id='structfield.connection_types' class='structfield'><code>connection_types: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='../google_dfareporting2d5/struct.ConnectionType.html' title='google_dfareporting2d5::ConnectionType'>ConnectionType</a>&gt;&gt;</code>
+                           </span><span class='stab '></span><div class='docblock'><p>Connection types that this ad targets. For each connection type only id is required. The other fields are populated automatically when the ad is inserted or updated.</p>
+</div><span id='structfield.platform_types' class='structfield'><code>platform_types: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='../google_dfareporting2d5/struct.PlatformType.html' title='google_dfareporting2d5::PlatformType'>PlatformType</a>&gt;&gt;</code>
+                           </span><span class='stab '></span><div class='docblock'><p>Platform types that this ad targets. For example, desktop, mobile, or tablet. For each platform type, only id is required, and the other fields are populated automatically when the ad is inserted or updated.</p>
+</div><span id='structfield.operating_system_versions' class='structfield'><code>operating_system_versions: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='../google_dfareporting2d5/struct.OperatingSystemVersion.html' title='google_dfareporting2d5::OperatingSystemVersion'>OperatingSystemVersion</a>&gt;&gt;</code>
+                           </span><span class='stab '></span><div class='docblock'><p>Operating system versions that this ad targets. To target all versions, use operatingSystems. For each operating system version, only id is required. The other fields are populated automatically when the ad is inserted or updated. If targeting an operating system version, do not set targeting for the corresponding operating system in operatingSystems.</p>
+</div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html' title='core::default::Default'>Default</a> for <a class='struct' href='../google_dfareporting2d5/struct.TechnologyTargeting.html' title='google_dfareporting2d5::TechnologyTargeting'>TechnologyTargeting</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-24695' class='srclink' href='../src/google_dfareporting2d5/home/byron/dev/rust/google-apis-rs/target/debug/build/google-dfareporting2d5-37402208d6859c28/out/lib.rs.html#48434' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.default' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default' class='fnname'>default</a>() -&gt; <a class='struct' href='../google_dfareporting2d5/struct.TechnologyTargeting.html' title='google_dfareporting2d5::TechnologyTargeting'>TechnologyTargeting</a></code></h4>
+<div class='docblock'><p>Returns the &quot;default value&quot; for a type. <a href="https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../google_dfareporting2d5/struct.TechnologyTargeting.html' title='google_dfareporting2d5::TechnologyTargeting'>TechnologyTargeting</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-24697' class='srclink' href='../src/google_dfareporting2d5/home/byron/dev/rust/google-apis-rs/target/debug/build/google-dfareporting2d5-37402208d6859c28/out/lib.rs.html#48434' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../google_dfareporting2d5/struct.TechnologyTargeting.html' title='google_dfareporting2d5::TechnologyTargeting'>TechnologyTargeting</a></code></h4>
+<div class='docblock'><p>Returns a copy of the value. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone">Read more</a></p>
+</div><h4 id='method.clone_from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></h4>
+<div class='docblock'><p>Performs copy-assignment from <code>source</code>. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../google_dfareporting2d5/struct.TechnologyTargeting.html' title='google_dfareporting2d5::TechnologyTargeting'>TechnologyTargeting</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-24706' class='srclink' href='../src/google_dfareporting2d5/home/byron/dev/rust/google-apis-rs/target/debug/build/google-dfareporting2d5-37402208d6859c28/out/lib.rs.html#48434' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
+<div class='docblock'><p>Formats the value using the given formatter.</p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='../google_dfareporting2d5/trait.Part.html' title='google_dfareporting2d5::Part'>Part</a> for <a class='struct' href='../google_dfareporting2d5/struct.TechnologyTargeting.html' title='google_dfareporting2d5::TechnologyTargeting'>TechnologyTargeting</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-24724' class='srclink' href='../src/google_dfareporting2d5/home/byron/dev/rust/google-apis-rs/target/debug/build/google-dfareporting2d5-37402208d6859c28/out/lib.rs.html#48449' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "google_dfareporting2d5";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../jquery.js"></script>
+    <script src="../main.js"></script>
+    
+    <script defer src="../search-index.js"></script>
+</body>
+</html>

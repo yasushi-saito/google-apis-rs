@@ -47,11 +47,11 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-4077' class='srclink' href='../src/google_playmoviespartner1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-playmoviespartner1-74c01de8e923bbea/out/lib.rs.html#8981-8983' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct AccountMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
+               </span><a id='src-4680' class='srclink' href='../src/google_playmoviespartner1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-playmoviespartner1-c5c723a51bafc8db/out/lib.rs.html#8364-8366' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct AccountMethods&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>account</em> resources.
-It is not used directly, but through the <code>Playmoviespartner</code> hub.</p>
+It is not used directly, but through the <code>PlayMovies</code> hub.</p>
 
 <h1 id='example' class='section-header'><a href='#example'>Example</a></h1>
 <p>Instantiate a resource builder</p>
@@ -63,19 +63,19 @@ It is not used directly, but through the <code>Playmoviespartner</code> hub.</p>
  
 <span class='kw'>use</span> <span class='ident'>std</span>::<span class='ident'>default</span>::<span class='ident'>Default</span>;
 <span class='kw'>use</span> <span class='ident'>oauth2</span>::{<span class='ident'>Authenticator</span>, <span class='ident'>DefaultAuthenticatorDelegate</span>, <span class='ident'>ApplicationSecret</span>, <span class='ident'>MemoryStorage</span>};
-<span class='kw'>use</span> <span class='ident'>playmoviespartner1</span>::<span class='ident'>Playmoviespartner</span>;
+<span class='kw'>use</span> <span class='ident'>playmoviespartner1</span>::<span class='ident'>PlayMovies</span>;
  
 <span class='kw'>let</span> <span class='ident'>secret</span>: <span class='ident'>ApplicationSecret</span> <span class='op'>=</span> <span class='ident'>Default</span>::<span class='ident'>default</span>();
 <span class='kw'>let</span> <span class='ident'>auth</span> <span class='op'>=</span> <span class='ident'>Authenticator</span>::<span class='ident'>new</span>(<span class='kw-2'>&amp;</span><span class='ident'>secret</span>, <span class='ident'>DefaultAuthenticatorDelegate</span>,
                               <span class='ident'>hyper</span>::<span class='ident'>Client</span>::<span class='ident'>new</span>(),
                               <span class='op'>&lt;</span><span class='ident'>MemoryStorage</span> <span class='kw'>as</span> <span class='ident'>Default</span><span class='op'>&gt;</span>::<span class='ident'>default</span>(), <span class='prelude-val'>None</span>);
-<span class='kw'>let</span> <span class='kw-2'>mut</span> <span class='ident'>hub</span> <span class='op'>=</span> <span class='ident'>Playmoviespartner</span>::<span class='ident'>new</span>(<span class='ident'>hyper</span>::<span class='ident'>Client</span>::<span class='ident'>new</span>(), <span class='ident'>auth</span>);
+<span class='kw'>let</span> <span class='kw-2'>mut</span> <span class='ident'>hub</span> <span class='op'>=</span> <span class='ident'>PlayMovies</span>::<span class='ident'>new</span>(<span class='ident'>hyper</span>::<span class='ident'>Client</span>::<span class='ident'>new</span>(), <span class='ident'>auth</span>);
 <span class='comment'>// Usually you wouldn&#39;t bind this to a variable, but keep calling *CallBuilders*</span>
-<span class='comment'>// like `avails_list(...)`, `experience_locales_get(...)`, `experience_locales_list(...)`, `orders_get(...)`, `orders_list(...)`, `store_infos_country_get(...)` and `store_infos_list(...)`</span>
+<span class='comment'>// like `avails_get(...)`, `avails_list(...)`, `components_list(...)`, `components_type_get(...)`, `experience_locales_get(...)`, `experience_locales_list(...)`, `orders_get(...)`, `orders_list(...)`, `store_infos_country_get(...)` and `store_infos_list(...)`</span>
 <span class='comment'>// to build up your call.</span>
 <span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>accounts</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_playmoviespartner1/struct.AccountMethods.html' title='google_playmoviespartner1::AccountMethods'>AccountMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-4086' class='srclink' href='../src/google_playmoviespartner1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-playmoviespartner1-74c01de8e923bbea/out/lib.rs.html#8985-9135' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.orders_list' class='method'><code>fn <a href='#method.orders_list' class='fnname'>orders_list</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_playmoviespartner1/struct.AccountOrderListCall.html' title='google_playmoviespartner1::AccountOrderListCall'>AccountOrderListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='struct' href='../google_playmoviespartner1/struct.AccountMethods.html' title='google_playmoviespartner1::AccountMethods'>AccountMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-4689' class='srclink' href='../src/google_playmoviespartner1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-playmoviespartner1-c5c723a51bafc8db/out/lib.rs.html#8368-8588' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.orders_list' class='method'><code>fn <a href='#method.orders_list' class='fnname'>orders_list</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_playmoviespartner1/struct.AccountOrderListCall.html' title='google_playmoviespartner1::AccountOrderListCall'>AccountOrderListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>List Orders owned or managed by the partner. See <em>Authentication and Authorization rules</em> and <em>List methods rules</em> for more information about this method.</p>
@@ -84,7 +84,7 @@ It is not used directly, but through the <code>Playmoviespartner</code> hub.</p>
 <ul>
 <li><code>accountId</code> - REQUIRED. See <em>General rules</em> for more information about this field.</li>
 </ul>
-</div><h4 id='method.store_infos_country_get' class='method'><code>fn <a href='#method.store_infos_country_get' class='fnname'>store_infos_country_get</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, video_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, country: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_playmoviespartner1/struct.AccountStoreInfoCountryGetCall.html' title='google_playmoviespartner1::AccountStoreInfoCountryGetCall'>AccountStoreInfoCountryGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.store_infos_country_get' class='method'><code>fn <a href='#method.store_infos_country_get' class='fnname'>store_infos_country_get</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, video_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, country: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_playmoviespartner1/struct.AccountStoreInfoCountryGetCall.html' title='google_playmoviespartner1::AccountStoreInfoCountryGetCall'>AccountStoreInfoCountryGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Get a StoreInfo given its video id and country. See <em>Authentication and Authorization rules</em> and <em>Get methods rules</em> for more information about this method.</p>
@@ -95,7 +95,7 @@ It is not used directly, but through the <code>Playmoviespartner</code> hub.</p>
 <li><code>videoId</code> - REQUIRED. Video ID.</li>
 <li><code>country</code> - REQUIRED. Edit country.</li>
 </ul>
-</div><h4 id='method.orders_get' class='method'><code>fn <a href='#method.orders_get' class='fnname'>orders_get</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, order_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_playmoviespartner1/struct.AccountOrderGetCall.html' title='google_playmoviespartner1::AccountOrderGetCall'>AccountOrderGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.orders_get' class='method'><code>fn <a href='#method.orders_get' class='fnname'>orders_get</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, order_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_playmoviespartner1/struct.AccountOrderGetCall.html' title='google_playmoviespartner1::AccountOrderGetCall'>AccountOrderGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Get an Order given its id. See <em>Authentication and Authorization rules</em> and <em>Get methods rules</em> for more information about this method.</p>
@@ -105,44 +105,74 @@ It is not used directly, but through the <code>Playmoviespartner</code> hub.</p>
 <li><code>accountId</code> - REQUIRED. See <em>General rules</em> for more information about this field.</li>
 <li><code>orderId</code> - REQUIRED. Order ID.</li>
 </ul>
-</div><h4 id='method.avails_list' class='method'><code>fn <a href='#method.avails_list' class='fnname'>avails_list</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_playmoviespartner1/struct.AccountAvailListCall.html' title='google_playmoviespartner1::AccountAvailListCall'>AccountAvailListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.avails_get' class='method'><code>fn <a href='#method.avails_get' class='fnname'>avails_get</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, avail_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_playmoviespartner1/struct.AccountAvailGetCall.html' title='google_playmoviespartner1::AccountAvailGetCall'>AccountAvailGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>List Avails owned or managed by the partner. See <em>Authentication and Authorization rules</em> and <em>List methods rules</em> for more information about this method.</p>
+<p>Get an Avail given its avail group id and avail id.</p>
 
 <h1 id='arguments-3' class='section-header'><a href='#arguments-3'>Arguments</a></h1>
 <ul>
 <li><code>accountId</code> - REQUIRED. See <em>General rules</em> for more information about this field.</li>
+<li><code>availId</code> - REQUIRED. Avail ID.</li>
 </ul>
-</div><h4 id='method.experience_locales_get' class='method'><code>fn <a href='#method.experience_locales_get' class='fnname'>experience_locales_get</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, el_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_playmoviespartner1/struct.AccountExperienceLocaleGetCall.html' title='google_playmoviespartner1::AccountExperienceLocaleGetCall'>AccountExperienceLocaleGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.avails_list' class='method'><code>fn <a href='#method.avails_list' class='fnname'>avails_list</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_playmoviespartner1/struct.AccountAvailListCall.html' title='google_playmoviespartner1::AccountAvailListCall'>AccountAvailListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>Get an ExperienceLocale given its id. See <em>Authentication and Authorization rules</em> and <em>Get methods rules</em> for more information about this method.</p>
+<p>List Avails owned or managed by the partner. See <em>Authentication and Authorization rules</em> and <em>List methods rules</em> for more information about this method.</p>
 
 <h1 id='arguments-4' class='section-header'><a href='#arguments-4'>Arguments</a></h1>
 <ul>
 <li><code>accountId</code> - REQUIRED. See <em>General rules</em> for more information about this field.</li>
-<li><code>elId</code> - REQUIRED. ExperienceLocale ID, as defined by Google.</li>
 </ul>
-</div><h4 id='method.store_infos_list' class='method'><code>fn <a href='#method.store_infos_list' class='fnname'>store_infos_list</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_playmoviespartner1/struct.AccountStoreInfoListCall.html' title='google_playmoviespartner1::AccountStoreInfoListCall'>AccountStoreInfoListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.experience_locales_get' class='method'><code>fn <a href='#method.experience_locales_get' class='fnname'>experience_locales_get</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, el_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_playmoviespartner1/struct.AccountExperienceLocaleGetCall.html' title='google_playmoviespartner1::AccountExperienceLocaleGetCall'>AccountExperienceLocaleGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>List StoreInfos owned or managed by the partner. See <em>Authentication and Authorization rules</em> and <em>List methods rules</em> for more information about this method.</p>
+<p>Get an ExperienceLocale given its id. See <em>Authentication and Authorization rules</em> and <em>Get methods rules</em> for more information about this method.</p>
 
 <h1 id='arguments-5' class='section-header'><a href='#arguments-5'>Arguments</a></h1>
 <ul>
 <li><code>accountId</code> - REQUIRED. See <em>General rules</em> for more information about this field.</li>
+<li><code>elId</code> - REQUIRED. ExperienceLocale ID, as defined by Google.</li>
 </ul>
-</div><h4 id='method.experience_locales_list' class='method'><code>fn <a href='#method.experience_locales_list' class='fnname'>experience_locales_list</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_playmoviespartner1/struct.AccountExperienceLocaleListCall.html' title='google_playmoviespartner1::AccountExperienceLocaleListCall'>AccountExperienceLocaleListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.store_infos_list' class='method'><code>fn <a href='#method.store_infos_list' class='fnname'>store_infos_list</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_playmoviespartner1/struct.AccountStoreInfoListCall.html' title='google_playmoviespartner1::AccountStoreInfoListCall'>AccountStoreInfoListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>List ExperienceLocales owned or managed by the partner. See <em>Authentication and Authorization rules</em> and <em>List methods rules</em> for more information about this method.</p>
+<p>List StoreInfos owned or managed by the partner. See <em>Authentication and Authorization rules</em> and <em>List methods rules</em> for more information about this method.</p>
 
 <h1 id='arguments-6' class='section-header'><a href='#arguments-6'>Arguments</a></h1>
 <ul>
 <li><code>accountId</code> - REQUIRED. See <em>General rules</em> for more information about this field.</li>
 </ul>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_playmoviespartner1/trait.MethodsBuilder.html' title='google_playmoviespartner1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_playmoviespartner1/struct.AccountMethods.html' title='google_playmoviespartner1::AccountMethods'>AccountMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-4082' class='srclink' href='../src/google_playmoviespartner1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-playmoviespartner1-74c01de8e923bbea/out/lib.rs.html#8984' title='goto source code'>[src]</a></span></h3>
+</div><h4 id='method.experience_locales_list' class='method'><code>fn <a href='#method.experience_locales_list' class='fnname'>experience_locales_list</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_playmoviespartner1/struct.AccountExperienceLocaleListCall.html' title='google_playmoviespartner1::AccountExperienceLocaleListCall'>AccountExperienceLocaleListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>List ExperienceLocales owned or managed by the partner. See <em>Authentication and Authorization rules</em> and <em>List methods rules</em> for more information about this method.</p>
+
+<h1 id='arguments-7' class='section-header'><a href='#arguments-7'>Arguments</a></h1>
+<ul>
+<li><code>accountId</code> - REQUIRED. See <em>General rules</em> for more information about this field.</li>
+</ul>
+</div><h4 id='method.components_list' class='method'><code>fn <a href='#method.components_list' class='fnname'>components_list</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_playmoviespartner1/struct.AccountComponentListCall.html' title='google_playmoviespartner1::AccountComponentListCall'>AccountComponentListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>List Components owned or managed by the partner. See <em>Authentication and Authorization rules</em> and <em>List methods rules</em> for more information about this method.</p>
+
+<h1 id='arguments-8' class='section-header'><a href='#arguments-8'>Arguments</a></h1>
+<ul>
+<li><code>accountId</code> - REQUIRED. See <em>General rules</em> for more information about this field.</li>
+</ul>
+</div><h4 id='method.components_type_get' class='method'><code>fn <a href='#method.components_type_get' class='fnname'>components_type_get</a>(&amp;self, account_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, component_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, type_: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_playmoviespartner1/struct.AccountComponentTypeGetCall.html' title='google_playmoviespartner1::AccountComponentTypeGetCall'>AccountComponentTypeGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Get a Component given its id.</p>
+
+<h1 id='arguments-9' class='section-header'><a href='#arguments-9'>Arguments</a></h1>
+<ul>
+<li><code>accountId</code> - REQUIRED. See <em>General rules</em> for more information about this field.</li>
+<li><code>componentId</code> - REQUIRED. Component ID.</li>
+<li><code>type</code> - REQUIRED. Component Type.</li>
+</ul>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='trait' href='../google_playmoviespartner1/trait.MethodsBuilder.html' title='google_playmoviespartner1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_playmoviespartner1/struct.AccountMethods.html' title='google_playmoviespartner1::AccountMethods'>AccountMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-4685' class='srclink' href='../src/google_playmoviespartner1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-playmoviespartner1-c5c723a51bafc8db/out/lib.rs.html#8367' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 

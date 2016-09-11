@@ -47,8 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-34171' class='srclink' href='../src/google_youtube3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-youtube3-3a9e8c4a9ed85834/out/lib.rs.html#74826-74828' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct VideoMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
+               </span><a id='src-32830' class='srclink' href='../src/google_youtube3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-youtube3-122b93fad4a7fbcd/out/lib.rs.html#58956-58958' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct VideoMethods&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>video</em> resources.
 It is not used directly, but through the <code>YouTube</code> hub.</p>
@@ -74,8 +74,8 @@ It is not used directly, but through the <code>YouTube</code> hub.</p>
 <span class='comment'>// like `delete(...)`, `get_rating(...)`, `insert(...)`, `list(...)`, `rate(...)`, `report_abuse(...)` and `update(...)`</span>
 <span class='comment'>// to build up your call.</span>
 <span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>videos</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_youtube3/struct.VideoMethods.html' title='google_youtube3::VideoMethods'>VideoMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-34180' class='srclink' href='../src/google_youtube3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-youtube3-3a9e8c4a9ed85834/out/lib.rs.html#74830-74957' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.report_abuse' class='method'><code>fn <a href='#method.report_abuse' class='fnname'>report_abuse</a>(&amp;self, request: <a class='struct' href='../google_youtube3/struct.VideoAbuseReport.html' title='google_youtube3::VideoAbuseReport'>VideoAbuseReport</a>) -&gt; <a class='struct' href='../google_youtube3/struct.VideoReportAbuseCall.html' title='google_youtube3::VideoReportAbuseCall'>VideoReportAbuseCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='struct' href='../google_youtube3/struct.VideoMethods.html' title='google_youtube3::VideoMethods'>VideoMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-32839' class='srclink' href='../src/google_youtube3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-youtube3-122b93fad4a7fbcd/out/lib.rs.html#58960-59087' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.report_abuse' class='method'><code>fn <a href='#method.report_abuse' class='fnname'>report_abuse</a>(&amp;self, request: <a class='struct' href='../google_youtube3/struct.VideoAbuseReport.html' title='google_youtube3::VideoAbuseReport'>VideoAbuseReport</a>) -&gt; <a class='struct' href='../google_youtube3/struct.VideoReportAbuseCall.html' title='google_youtube3::VideoReportAbuseCall'>VideoReportAbuseCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Report abuse for a video.</p>
@@ -84,7 +84,7 @@ It is not used directly, but through the <code>YouTube</code> hub.</p>
 <ul>
 <li><code>request</code> - No description provided.</li>
 </ul>
-</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self, part: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_youtube3/struct.VideoListCall.html' title='google_youtube3::VideoListCall'>VideoListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self, part: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_youtube3/struct.VideoListCall.html' title='google_youtube3::VideoListCall'>VideoListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Returns a list of videos that match the API request parameters.</p>
@@ -94,7 +94,7 @@ It is not used directly, but through the <code>YouTube</code> hub.</p>
 <li><code>part</code> - The part parameter specifies a comma-separated list of one or more video resource properties that the API response will include.
        If the parameter identifies a property that contains child properties, the child properties will be included in the response. For example, in a video resource, the snippet property contains the channelId, title, description, tags, and categoryId properties. As such, if you set part=snippet, the API response will contain all of those properties.</li>
 </ul>
-</div><h4 id='method.rate' class='method'><code>fn <a href='#method.rate' class='fnname'>rate</a>(&amp;self, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, rating: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_youtube3/struct.VideoRateCall.html' title='google_youtube3::VideoRateCall'>VideoRateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.rate' class='method'><code>fn <a href='#method.rate' class='fnname'>rate</a>(&amp;self, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, rating: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_youtube3/struct.VideoRateCall.html' title='google_youtube3::VideoRateCall'>VideoRateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Add a like or dislike rating to a video or remove a rating from a video.</p>
@@ -104,7 +104,7 @@ It is not used directly, but through the <code>YouTube</code> hub.</p>
 <li><code>id</code> - The id parameter specifies the YouTube video ID of the video that is being rated or having its rating removed.</li>
 <li><code>rating</code> - Specifies the rating to record.</li>
 </ul>
-</div><h4 id='method.get_rating' class='method'><code>fn <a href='#method.get_rating' class='fnname'>get_rating</a>(&amp;self, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_youtube3/struct.VideoGetRatingCall.html' title='google_youtube3::VideoGetRatingCall'>VideoGetRatingCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.get_rating' class='method'><code>fn <a href='#method.get_rating' class='fnname'>get_rating</a>(&amp;self, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_youtube3/struct.VideoGetRatingCall.html' title='google_youtube3::VideoGetRatingCall'>VideoGetRatingCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Retrieves the ratings that the authorized user gave to a list of specified videos.</p>
@@ -113,7 +113,7 @@ It is not used directly, but through the <code>YouTube</code> hub.</p>
 <ul>
 <li><code>id</code> - The id parameter specifies a comma-separated list of the YouTube video ID(s) for the resource(s) for which you are retrieving rating data. In a video resource, the id property specifies the video&#39;s ID.</li>
 </ul>
-</div><h4 id='method.delete' class='method'><code>fn <a href='#method.delete' class='fnname'>delete</a>(&amp;self, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_youtube3/struct.VideoDeleteCall.html' title='google_youtube3::VideoDeleteCall'>VideoDeleteCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.delete' class='method'><code>fn <a href='#method.delete' class='fnname'>delete</a>(&amp;self, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_youtube3/struct.VideoDeleteCall.html' title='google_youtube3::VideoDeleteCall'>VideoDeleteCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Deletes a YouTube video.</p>
@@ -122,7 +122,7 @@ It is not used directly, but through the <code>YouTube</code> hub.</p>
 <ul>
 <li><code>id</code> - The id parameter specifies the YouTube video ID for the resource that is being deleted. In a video resource, the id property specifies the video&#39;s ID.</li>
 </ul>
-</div><h4 id='method.update' class='method'><code>fn <a href='#method.update' class='fnname'>update</a>(&amp;self, request: <a class='struct' href='../google_youtube3/struct.Video.html' title='google_youtube3::Video'>Video</a>) -&gt; <a class='struct' href='../google_youtube3/struct.VideoUpdateCall.html' title='google_youtube3::VideoUpdateCall'>VideoUpdateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.update' class='method'><code>fn <a href='#method.update' class='fnname'>update</a>(&amp;self, request: <a class='struct' href='../google_youtube3/struct.Video.html' title='google_youtube3::Video'>Video</a>) -&gt; <a class='struct' href='../google_youtube3/struct.VideoUpdateCall.html' title='google_youtube3::VideoUpdateCall'>VideoUpdateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Updates a video&#39;s metadata.</p>
@@ -131,7 +131,7 @@ It is not used directly, but through the <code>YouTube</code> hub.</p>
 <ul>
 <li><code>request</code> - No description provided.</li>
 </ul>
-</div><h4 id='method.insert' class='method'><code>fn <a href='#method.insert' class='fnname'>insert</a>(&amp;self, request: <a class='struct' href='../google_youtube3/struct.Video.html' title='google_youtube3::Video'>Video</a>) -&gt; <a class='struct' href='../google_youtube3/struct.VideoInsertCall.html' title='google_youtube3::VideoInsertCall'>VideoInsertCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.insert' class='method'><code>fn <a href='#method.insert' class='fnname'>insert</a>(&amp;self, request: <a class='struct' href='../google_youtube3/struct.Video.html' title='google_youtube3::Video'>Video</a>) -&gt; <a class='struct' href='../google_youtube3/struct.VideoInsertCall.html' title='google_youtube3::VideoInsertCall'>VideoInsertCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Uploads a video to YouTube and optionally sets the video&#39;s metadata.</p>
@@ -140,7 +140,7 @@ It is not used directly, but through the <code>YouTube</code> hub.</p>
 <ul>
 <li><code>request</code> - No description provided.</li>
 </ul>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_youtube3/trait.MethodsBuilder.html' title='google_youtube3::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_youtube3/struct.VideoMethods.html' title='google_youtube3::VideoMethods'>VideoMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-34176' class='srclink' href='../src/google_youtube3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-youtube3-3a9e8c4a9ed85834/out/lib.rs.html#74829' title='goto source code'>[src]</a></span></h3>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='trait' href='../google_youtube3/trait.MethodsBuilder.html' title='google_youtube3::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_youtube3/struct.VideoMethods.html' title='google_youtube3::VideoMethods'>VideoMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-32835' class='srclink' href='../src/google_youtube3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-youtube3-122b93fad4a7fbcd/out/lib.rs.html#58959' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 

@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>List - drive v0.3.6+20160331</title>
+  <title>List - drive v0.3.6+20160901</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -32,7 +32,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> drive v0.3.6+20160331</a>
+        <a href=".." class="icon icon-home"> drive v0.3.6+20160901</a>
         
       </div>
 
@@ -457,7 +457,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">drive v0.3.6+20160331</a>
+        <a href="..">drive v0.3.6+20160901</a>
       </nav>
 
       
@@ -516,27 +516,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p order-by=string</strong></p>
+<p><strong>-p spaces=string</strong></p>
 <ul>
-<li>A comma-separated list of sort keys. Valid keys are &#39;createdDate&#39;, &#39;folder&#39;, &#39;lastViewedByMeDate&#39;, &#39;modifiedByMeDate&#39;, &#39;modifiedDate&#39;, &#39;quotaBytesUsed&#39;, &#39;recency&#39;, &#39;sharedWithMeDate&#39;, &#39;starred&#39;, and &#39;title&#39;. Each key sorts ascending by default, but may be reversed with the &#39;desc&#39; modifier. Example usage: ?orderBy=folder,modifiedDate desc,title. Please note that there is a current limitation for users with approximately one million files in which the requested sort order is ignored.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p page-token=string</strong></p>
-<ul>
-<li>Page token for files.</li>
+<li>A comma-separated list of spaces to query. Supported values are &#39;drive&#39;, &#39;appDataFolder&#39; and &#39;photos&#39;.</li>
 </ul>
 </li>
 <li>
 <p><strong>-p q=string</strong></p>
 <ul>
 <li>Query string for searching files.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p projection=string</strong></p>
-<ul>
-<li>This parameter is deprecated and has no function.</li>
 </ul>
 </li>
 <li>
@@ -552,9 +540,21 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p spaces=string</strong></p>
+<p><strong>-p projection=string</strong></p>
 <ul>
-<li>A comma-separated list of spaces to query. Supported values are &#39;drive&#39;, &#39;appDataFolder&#39; and &#39;photos&#39;.</li>
+<li>This parameter is deprecated and has no function.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p page-token=string</strong></p>
+<ul>
+<li>Page token for files.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p order-by=string</strong></p>
+<ul>
+<li>A comma-separated list of sort keys. Valid keys are &#39;createdDate&#39;, &#39;folder&#39;, &#39;lastViewedByMeDate&#39;, &#39;modifiedByMeDate&#39;, &#39;modifiedDate&#39;, &#39;quotaBytesUsed&#39;, &#39;recency&#39;, &#39;sharedWithMeDate&#39;, &#39;starred&#39;, and &#39;title&#39;. Each key sorts ascending by default, but may be reversed with the &#39;desc&#39; modifier. Example usage: ?orderBy=folder,modifiedDate desc,title. Please note that there is a current limitation for users with approximately one million files in which the requested sort order is ignored.</li>
 </ul>
 </li>
 </ul>
@@ -648,7 +648,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 
 <!--
 MkDocs version  : 0.12.2
-Docs Build Date : 2016-07-23 16:06:13.978758
+Docs Build Date : 2016-09-11 17:56:19.433395
 -->
 </body>
 </html>

@@ -47,8 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-0' class='srclink' href='../src/google_content2/src/lib.rs.html#5-222' title='goto source code'>[src]</a></span></h1>
-<div class='docblock'><p>This documentation was generated from <em>Shopping Content</em> crate version <em>0.1.14+20160331</em>, where <em>20160331</em> is the exact revision of the <em>content:v2</em> schema built by the <a href="http://www.makotemplates.org/">mako</a> code generator <em>v0.1.14</em>.</p>
+               </span><a id='src-0' class='srclink' href='../src/google_content2/src/lib.rs.html#5-224' title='goto source code'>[src]</a></span></h1>
+<div class='docblock'><p>This documentation was generated from <em>Shopping Content</em> crate version <em>0.1.15+20160905</em>, where <em>20160905</em> is the exact revision of the <em>content:v2</em> schema built by the <a href="http://www.makotemplates.org/">mako</a> code generator <em>v0.1.15</em>.</p>
 
 <p>Everything else about the <em>Shopping Content</em> <em>v2</em> API can be found at the
 <a href="https://developers.google.com/shopping-content">official documentation site</a>.
@@ -107,6 +107,11 @@ The original source code is <a href="https://github.com/Byron/google-apis-rs/tre
 
 <ul>
 <li><a href="struct.ProductstatuseCustombatchCall.html"><em>custombatch</em></a>, <a href="struct.ProductstatuseGetCall.html"><em>get</em></a> and <a href="struct.ProductstatuseListCall.html"><em>list</em></a></li>
+</ul></li>
+<li>shippingsettings
+
+<ul>
+<li><a href="struct.ShippingsettingCustombatchCall.html"><em>custombatch</em></a>, <a href="struct.ShippingsettingGetCall.html"><em>get</em></a>, <a href="struct.ShippingsettingGetsupportedcarrierCall.html"><em>getsupportedcarriers</em></a>, <a href="struct.ShippingsettingListCall.html"><em>list</em></a>, <a href="struct.ShippingsettingPatchCall.html"><em>patch</em></a> and <a href="struct.ShippingsettingUpdateCall.html"><em>update</em></a></li>
 </ul></li>
 </ul>
 
@@ -207,13 +212,13 @@ google-content2 = &quot;*&quot;
 <span class='comment'>// execute the final call using `doit()`.</span>
 <span class='comment'>// Values shown here are possibly random and not representative !</span>
 <span class='kw'>let</span> <span class='ident'>result</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>orders</span>().<span class='ident'>list</span>(<span class='string'>&quot;merchantId&quot;</span>)
-             .<span class='ident'>add_statuses</span>(<span class='string'>&quot;dolor&quot;</span>)
-             .<span class='ident'>placed_date_start</span>(<span class='string'>&quot;diam&quot;</span>)
-             .<span class='ident'>placed_date_end</span>(<span class='string'>&quot;kasd&quot;</span>)
-             .<span class='ident'>page_token</span>(<span class='string'>&quot;invidunt&quot;</span>)
+             .<span class='ident'>add_statuses</span>(<span class='string'>&quot;sit&quot;</span>)
+             .<span class='ident'>placed_date_start</span>(<span class='string'>&quot;takimata&quot;</span>)
+             .<span class='ident'>placed_date_end</span>(<span class='string'>&quot;elitr&quot;</span>)
+             .<span class='ident'>page_token</span>(<span class='string'>&quot;nonumy&quot;</span>)
              .<span class='ident'>order_by</span>(<span class='string'>&quot;rebum.&quot;</span>)
-             .<span class='ident'>max_results</span>(<span class='number'>50</span>)
-             .<span class='ident'>acknowledged</span>(<span class='boolvalue'>false</span>)
+             .<span class='ident'>max_results</span>(<span class='number'>95</span>)
+             .<span class='ident'>acknowledged</span>(<span class='bool-val'>true</span>)
              .<span class='ident'>doit</span>();
  
 <span class='kw'>match</span> <span class='ident'>result</span> {
@@ -747,6 +752,20 @@ It is not used directly, but through the <code>ShoppingContent</code> hub.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CarrierRate.html'
+                                  title='google_content2::CarrierRate'>CarrierRate</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CarriersCarrier.html'
+                                  title='google_content2::CarriersCarrier'>CarriersCarrier</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
                            <td><a class='struct' href='struct.Datafeed.html'
                                   title='google_content2::Datafeed'>Datafeed</a></td>
                            <td class='docblock short'>
@@ -955,6 +974,13 @@ set.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
+                           <td><a class='struct' href='struct.DeliveryTime.html'
+                                  title='google_content2::DeliveryTime'>DeliveryTime</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
                            <td><a class='struct' href='struct.ErrorResponse.html'
                                   title='google_content2::ErrorResponse'>ErrorResponse</a></td>
                            <td class='docblock short'>
@@ -974,6 +1000,13 @@ The latter happen if the sent parameters or request structures are unsound</p>
                                   title='google_content2::Errors'>Errors</a></td>
                            <td class='docblock short'>
                                 <p>A list of errors returned by a failed batch entry.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Headers.html'
+                                  title='google_content2::Headers'>Headers</a></td>
+                           <td class='docblock short'>
+                                <p>A non-empty list of row or column headers for a table. Exactly one of prices, weights, numItems, postalCodeGroupNames, or locations must be set.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
@@ -1050,6 +1083,13 @@ It is not used directly, but through the <code>ShoppingContent</code> hub.</p>
                        <tr class=' module-item'>
                            <td><a class='struct' href='struct.InventorySetResponse.html'
                                   title='google_content2::InventorySetResponse'>InventorySetResponse</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.LocationIdSet.html'
+                                  title='google_content2::LocationIdSet'>LocationIdSet</a></td>
                            <td class='docblock short'>
                                 <p>There is no detailed description.</p>
                            </td>
@@ -1542,6 +1582,20 @@ It is not used directly, but through the <code>ShoppingContent</code> hub.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PostalCodeGroup.html'
+                                  title='google_content2::PostalCodeGroup'>PostalCodeGroup</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PostalCodeRange.html'
+                                  title='google_content2::PostalCodeRange'>PostalCodeRange</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
                            <td><a class='struct' href='struct.Price.html'
                                   title='google_content2::Price'>Price</a></td>
                            <td class='docblock short'>
@@ -1789,10 +1843,137 @@ It is not used directly, but through the <code>ShoppingContent</code> hub.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
+                           <td><a class='struct' href='struct.RateGroup.html'
+                                  title='google_content2::RateGroup'>RateGroup</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Row.html'
+                                  title='google_content2::Row'>Row</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Service.html'
+                                  title='google_content2::Service'>Service</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ShippingSettings.html'
+                                  title='google_content2::ShippingSettings'>ShippingSettings</a></td>
+                           <td class='docblock short'>
+                                <p>The merchant account&#39;s shipping settings.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ShippingsettingCustombatchCall.html'
+                                  title='google_content2::ShippingsettingCustombatchCall'>ShippingsettingCustombatchCall</a></td>
+                           <td class='docblock short'>
+                                <p>Retrieves and updates the shipping settings of multiple accounts in a single request.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ShippingsettingGetCall.html'
+                                  title='google_content2::ShippingsettingGetCall'>ShippingsettingGetCall</a></td>
+                           <td class='docblock short'>
+                                <p>Retrieves the shipping settings of the account.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ShippingsettingGetsupportedcarrierCall.html'
+                                  title='google_content2::ShippingsettingGetsupportedcarrierCall'>ShippingsettingGetsupportedcarrierCall</a></td>
+                           <td class='docblock short'>
+                                <p>Retrieves supported carriers and carrier services for an account.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ShippingsettingListCall.html'
+                                  title='google_content2::ShippingsettingListCall'>ShippingsettingListCall</a></td>
+                           <td class='docblock short'>
+                                <p>Lists the shipping settings of the sub-accounts in your Merchant Center account.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ShippingsettingMethods.html'
+                                  title='google_content2::ShippingsettingMethods'>ShippingsettingMethods</a></td>
+                           <td class='docblock short'>
+                                <p>A builder providing access to all methods supported on <em>shippingsetting</em> resources.
+It is not used directly, but through the <code>ShoppingContent</code> hub.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ShippingsettingPatchCall.html'
+                                  title='google_content2::ShippingsettingPatchCall'>ShippingsettingPatchCall</a></td>
+                           <td class='docblock short'>
+                                <p>Updates the shipping settings of the account. This method supports patch semantics.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ShippingsettingUpdateCall.html'
+                                  title='google_content2::ShippingsettingUpdateCall'>ShippingsettingUpdateCall</a></td>
+                           <td class='docblock short'>
+                                <p>Updates the shipping settings of the account.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ShippingsettingsCustomBatchRequest.html'
+                                  title='google_content2::ShippingsettingsCustomBatchRequest'>ShippingsettingsCustomBatchRequest</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ShippingsettingsCustomBatchRequestEntry.html'
+                                  title='google_content2::ShippingsettingsCustomBatchRequestEntry'>ShippingsettingsCustomBatchRequestEntry</a></td>
+                           <td class='docblock short'>
+                                <p>A batch entry encoding a single non-batch accountshipping request.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ShippingsettingsCustomBatchResponse.html'
+                                  title='google_content2::ShippingsettingsCustomBatchResponse'>ShippingsettingsCustomBatchResponse</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ShippingsettingsCustomBatchResponseEntry.html'
+                                  title='google_content2::ShippingsettingsCustomBatchResponseEntry'>ShippingsettingsCustomBatchResponseEntry</a></td>
+                           <td class='docblock short'>
+                                <p>A batch entry encoding a single non-batch shipping settings response.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ShippingsettingsGetSupportedCarriersResponse.html'
+                                  title='google_content2::ShippingsettingsGetSupportedCarriersResponse'>ShippingsettingsGetSupportedCarriersResponse</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ShippingsettingsListResponse.html'
+                                  title='google_content2::ShippingsettingsListResponse'>ShippingsettingsListResponse</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
                            <td><a class='struct' href='struct.ShoppingContent.html'
                                   title='google_content2::ShoppingContent'>ShoppingContent</a></td>
                            <td class='docblock short'>
                                 <p>Central instance to access all ShoppingContent related resource activities</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Table.html'
+                                  title='google_content2::Table'>Table</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
@@ -1828,6 +2009,13 @@ It is not used directly, but through the <code>ShoppingContent</code> hub.</p>
                                   title='google_content2::TestOrderPaymentMethod'>TestOrderPaymentMethod</a></td>
                            <td class='docblock short'>
                                 <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Value.html'
+                                  title='google_content2::Value'>Value</a></td>
+                           <td class='docblock short'>
+                                <p>The single value of a rate group or the value of a rate group table&#39;s cell. Exactly one of noShipping, flatRate, pricePercentage, carrierRateName, subtableName must be set.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>

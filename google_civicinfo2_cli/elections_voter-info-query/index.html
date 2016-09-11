@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Voter Info Query - Civic Info v0.3.6+20150820</title>
+  <title>Voter Info Query - Civic Info v0.3.6+20160823</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -32,7 +32,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Civic Info v0.3.6+20150820</a>
+        <a href=".." class="icon icon-home"> Civic Info v0.3.6+20160823</a>
         
       </div>
 
@@ -117,7 +117,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Civic Info v0.3.6+20150820</a>
+        <a href="..">Civic Info v0.3.6+20160823</a>
       </nav>
 
       
@@ -168,6 +168,12 @@
 or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> even though the listing below repeats the
 <code>-p</code> for completeness.</p>
 <ul>
+<li>
+<p><strong>-p return-all-available-data=boolean</strong></p>
+<ul>
+<li>If set to true, the query will return the success codeand include any partial information when it is unable to determine a matching address or unable to determine the election for electionId=0 queries.</li>
+</ul>
+</li>
 <li>
 <p><strong>-p official-only=boolean</strong></p>
 <ul>
@@ -271,7 +277,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 
 <!--
 MkDocs version  : 0.12.2
-Docs Build Date : 2016-07-23 16:05:42.511865
+Docs Build Date : 2016-09-11 17:55:23.531127
 -->
 </body>
 </html>

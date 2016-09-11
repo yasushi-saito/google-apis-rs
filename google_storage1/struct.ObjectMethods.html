@@ -47,8 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-6175' class='srclink' href='../src/google_storage1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-storage1-20d5c70a2dc61c62/out/lib.rs.html#13565-13567' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct ObjectMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
+               </span><a id='src-5870' class='srclink' href='../src/google_storage1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-storage1-52b5895d3bb5b703/out/lib.rs.html#10901-10903' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct ObjectMethods&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>object</em> resources.
 It is not used directly, but through the <code>Storage</code> hub.</p>
@@ -74,8 +74,8 @@ It is not used directly, but through the <code>Storage</code> hub.</p>
 <span class='comment'>// like `compose(...)`, `copy(...)`, `delete(...)`, `get(...)`, `insert(...)`, `list(...)`, `patch(...)`, `rewrite(...)`, `update(...)` and `watch_all(...)`</span>
 <span class='comment'>// to build up your call.</span>
 <span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>objects</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_storage1/struct.ObjectMethods.html' title='google_storage1::ObjectMethods'>ObjectMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-6184' class='srclink' href='../src/google_storage1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-storage1-20d5c70a2dc61c62/out/lib.rs.html#13569-13830' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.rewrite' class='method'><code>fn <a href='#method.rewrite' class='fnname'>rewrite</a>(&amp;self, request: <a class='struct' href='../google_storage1/struct.Object.html' title='google_storage1::Object'>Object</a>, source_bucket: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, source_object: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, destination_bucket: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, destination_object: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_storage1/struct.ObjectRewriteCall.html' title='google_storage1::ObjectRewriteCall'>ObjectRewriteCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='struct' href='../google_storage1/struct.ObjectMethods.html' title='google_storage1::ObjectMethods'>ObjectMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-5879' class='srclink' href='../src/google_storage1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-storage1-52b5895d3bb5b703/out/lib.rs.html#10905-11169' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.rewrite' class='method'><code>fn <a href='#method.rewrite' class='fnname'>rewrite</a>(&amp;self, request: <a class='struct' href='../google_storage1/struct.Object.html' title='google_storage1::Object'>Object</a>, source_bucket: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, source_object: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, destination_bucket: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, destination_object: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_storage1/struct.ObjectRewriteCall.html' title='google_storage1::ObjectRewriteCall'>ObjectRewriteCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Rewrites a source object to a destination object. Optionally overrides metadata.</p>
@@ -88,7 +88,7 @@ It is not used directly, but through the <code>Storage</code> hub.</p>
 <li><code>destinationBucket</code> - Name of the bucket in which to store the new object. Overrides the provided object metadata&#39;s bucket value, if any.</li>
 <li><code>destinationObject</code> - Name of the new object. Required when the object metadata is not otherwise provided. Overrides the object metadata&#39;s name value, if any. For information about how to URL encode object names to be path safe, see Encoding URI Path Parts.</li>
 </ul>
-</div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, bucket: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, object: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_storage1/struct.ObjectGetCall.html' title='google_storage1::ObjectGetCall'>ObjectGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, bucket: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, object: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_storage1/struct.ObjectGetCall.html' title='google_storage1::ObjectGetCall'>ObjectGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Retrieves an object or its metadata.</p>
@@ -98,7 +98,7 @@ It is not used directly, but through the <code>Storage</code> hub.</p>
 <li><code>bucket</code> - Name of the bucket in which the object resides.</li>
 <li><code>object</code> - Name of the object. For information about how to URL encode object names to be path safe, see Encoding URI Path Parts.</li>
 </ul>
-</div><h4 id='method.update' class='method'><code>fn <a href='#method.update' class='fnname'>update</a>(&amp;self, request: <a class='struct' href='../google_storage1/struct.Object.html' title='google_storage1::Object'>Object</a>, bucket: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, object: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_storage1/struct.ObjectUpdateCall.html' title='google_storage1::ObjectUpdateCall'>ObjectUpdateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.update' class='method'><code>fn <a href='#method.update' class='fnname'>update</a>(&amp;self, request: <a class='struct' href='../google_storage1/struct.Object.html' title='google_storage1::Object'>Object</a>, bucket: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, object: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_storage1/struct.ObjectUpdateCall.html' title='google_storage1::ObjectUpdateCall'>ObjectUpdateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Updates an object&#39;s metadata.</p>
@@ -109,7 +109,7 @@ It is not used directly, but through the <code>Storage</code> hub.</p>
 <li><code>bucket</code> - Name of the bucket in which the object resides.</li>
 <li><code>object</code> - Name of the object. For information about how to URL encode object names to be path safe, see Encoding URI Path Parts.</li>
 </ul>
-</div><h4 id='method.watch_all' class='method'><code>fn <a href='#method.watch_all' class='fnname'>watch_all</a>(&amp;self, request: <a class='struct' href='../google_storage1/struct.Channel.html' title='google_storage1::Channel'>Channel</a>, bucket: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_storage1/struct.ObjectWatchAllCall.html' title='google_storage1::ObjectWatchAllCall'>ObjectWatchAllCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.watch_all' class='method'><code>fn <a href='#method.watch_all' class='fnname'>watch_all</a>(&amp;self, request: <a class='struct' href='../google_storage1/struct.Channel.html' title='google_storage1::Channel'>Channel</a>, bucket: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_storage1/struct.ObjectWatchAllCall.html' title='google_storage1::ObjectWatchAllCall'>ObjectWatchAllCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Watch for changes on all objects in a bucket.</p>
@@ -119,7 +119,7 @@ It is not used directly, but through the <code>Storage</code> hub.</p>
 <li><code>request</code> - No description provided.</li>
 <li><code>bucket</code> - Name of the bucket in which to look for objects.</li>
 </ul>
-</div><h4 id='method.insert' class='method'><code>fn <a href='#method.insert' class='fnname'>insert</a>(&amp;self, request: <a class='struct' href='../google_storage1/struct.Object.html' title='google_storage1::Object'>Object</a>, bucket: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_storage1/struct.ObjectInsertCall.html' title='google_storage1::ObjectInsertCall'>ObjectInsertCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.insert' class='method'><code>fn <a href='#method.insert' class='fnname'>insert</a>(&amp;self, request: <a class='struct' href='../google_storage1/struct.Object.html' title='google_storage1::Object'>Object</a>, bucket: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_storage1/struct.ObjectInsertCall.html' title='google_storage1::ObjectInsertCall'>ObjectInsertCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Stores a new object and metadata.</p>
@@ -129,7 +129,7 @@ It is not used directly, but through the <code>Storage</code> hub.</p>
 <li><code>request</code> - No description provided.</li>
 <li><code>bucket</code> - Name of the bucket in which to store the new object. Overrides the provided object metadata&#39;s bucket value, if any.</li>
 </ul>
-</div><h4 id='method.compose' class='method'><code>fn <a href='#method.compose' class='fnname'>compose</a>(&amp;self, request: <a class='struct' href='../google_storage1/struct.ComposeRequest.html' title='google_storage1::ComposeRequest'>ComposeRequest</a>, destination_bucket: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, destination_object: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_storage1/struct.ObjectComposeCall.html' title='google_storage1::ObjectComposeCall'>ObjectComposeCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.compose' class='method'><code>fn <a href='#method.compose' class='fnname'>compose</a>(&amp;self, request: <a class='struct' href='../google_storage1/struct.ComposeRequest.html' title='google_storage1::ComposeRequest'>ComposeRequest</a>, destination_bucket: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, destination_object: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_storage1/struct.ObjectComposeCall.html' title='google_storage1::ObjectComposeCall'>ObjectComposeCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Concatenates a list of existing objects into a new object in the same bucket.</p>
@@ -140,7 +140,7 @@ It is not used directly, but through the <code>Storage</code> hub.</p>
 <li><code>destinationBucket</code> - Name of the bucket in which to store the new object.</li>
 <li><code>destinationObject</code> - Name of the new object. For information about how to URL encode object names to be path safe, see Encoding URI Path Parts.</li>
 </ul>
-</div><h4 id='method.delete' class='method'><code>fn <a href='#method.delete' class='fnname'>delete</a>(&amp;self, bucket: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, object: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_storage1/struct.ObjectDeleteCall.html' title='google_storage1::ObjectDeleteCall'>ObjectDeleteCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.delete' class='method'><code>fn <a href='#method.delete' class='fnname'>delete</a>(&amp;self, bucket: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, object: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_storage1/struct.ObjectDeleteCall.html' title='google_storage1::ObjectDeleteCall'>ObjectDeleteCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Deletes an object and its metadata. Deletions are permanent if versioning is not enabled for the bucket, or if the generation parameter is used.</p>
@@ -150,7 +150,7 @@ It is not used directly, but through the <code>Storage</code> hub.</p>
 <li><code>bucket</code> - Name of the bucket in which the object resides.</li>
 <li><code>object</code> - Name of the object. For information about how to URL encode object names to be path safe, see Encoding URI Path Parts.</li>
 </ul>
-</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self, bucket: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_storage1/struct.ObjectListCall.html' title='google_storage1::ObjectListCall'>ObjectListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self, bucket: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_storage1/struct.ObjectListCall.html' title='google_storage1::ObjectListCall'>ObjectListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Retrieves a list of objects matching the criteria.</p>
@@ -159,7 +159,7 @@ It is not used directly, but through the <code>Storage</code> hub.</p>
 <ul>
 <li><code>bucket</code> - Name of the bucket in which to look for objects.</li>
 </ul>
-</div><h4 id='method.copy' class='method'><code>fn <a href='#method.copy' class='fnname'>copy</a>(&amp;self, request: <a class='struct' href='../google_storage1/struct.Object.html' title='google_storage1::Object'>Object</a>, source_bucket: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, source_object: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, destination_bucket: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, destination_object: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_storage1/struct.ObjectCopyCall.html' title='google_storage1::ObjectCopyCall'>ObjectCopyCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.copy' class='method'><code>fn <a href='#method.copy' class='fnname'>copy</a>(&amp;self, request: <a class='struct' href='../google_storage1/struct.Object.html' title='google_storage1::Object'>Object</a>, source_bucket: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, source_object: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, destination_bucket: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, destination_object: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_storage1/struct.ObjectCopyCall.html' title='google_storage1::ObjectCopyCall'>ObjectCopyCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Copies a source object to a destination object. Optionally overrides metadata.</p>
@@ -172,7 +172,7 @@ It is not used directly, but through the <code>Storage</code> hub.</p>
 <li><code>destinationBucket</code> - Name of the bucket in which to store the new object. Overrides the provided object metadata&#39;s bucket value, if any.For information about how to URL encode object names to be path safe, see Encoding URI Path Parts.</li>
 <li><code>destinationObject</code> - Name of the new object. Required when the object metadata is not otherwise provided. Overrides the object metadata&#39;s name value, if any.</li>
 </ul>
-</div><h4 id='method.patch' class='method'><code>fn <a href='#method.patch' class='fnname'>patch</a>(&amp;self, request: <a class='struct' href='../google_storage1/struct.Object.html' title='google_storage1::Object'>Object</a>, bucket: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, object: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_storage1/struct.ObjectPatchCall.html' title='google_storage1::ObjectPatchCall'>ObjectPatchCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.patch' class='method'><code>fn <a href='#method.patch' class='fnname'>patch</a>(&amp;self, request: <a class='struct' href='../google_storage1/struct.Object.html' title='google_storage1::Object'>Object</a>, bucket: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, object: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_storage1/struct.ObjectPatchCall.html' title='google_storage1::ObjectPatchCall'>ObjectPatchCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Updates an object&#39;s metadata. This method supports patch semantics.</p>
@@ -183,7 +183,7 @@ It is not used directly, but through the <code>Storage</code> hub.</p>
 <li><code>bucket</code> - Name of the bucket in which the object resides.</li>
 <li><code>object</code> - Name of the object. For information about how to URL encode object names to be path safe, see Encoding URI Path Parts.</li>
 </ul>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_storage1/trait.MethodsBuilder.html' title='google_storage1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_storage1/struct.ObjectMethods.html' title='google_storage1::ObjectMethods'>ObjectMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-6180' class='srclink' href='../src/google_storage1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-storage1-20d5c70a2dc61c62/out/lib.rs.html#13568' title='goto source code'>[src]</a></span></h3>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='trait' href='../google_storage1/trait.MethodsBuilder.html' title='google_storage1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_storage1/struct.ObjectMethods.html' title='google_storage1::ObjectMethods'>ObjectMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-5875' class='srclink' href='../src/google_storage1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-storage1-52b5895d3bb5b703/out/lib.rs.html#10904' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 

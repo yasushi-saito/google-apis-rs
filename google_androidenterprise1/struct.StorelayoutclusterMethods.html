@@ -47,8 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-7055' class='srclink' href='../src/google_androidenterprise1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-androidenterprise1-c1b518bbf39d4c72/out/lib.rs.html#15856-15858' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct StorelayoutclusterMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
+               </span><a id='src-9573' class='srclink' href='../src/google_androidenterprise1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-androidenterprise1-f9ed1fb9501f45a8/out/lib.rs.html#18882-18884' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct StorelayoutclusterMethods&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>storelayoutcluster</em> resources.
 It is not used directly, but through the <code>AndroidEnterprise</code> hub.</p>
@@ -74,19 +74,18 @@ It is not used directly, but through the <code>AndroidEnterprise</code> hub.</p>
 <span class='comment'>// like `delete(...)`, `get(...)`, `insert(...)`, `list(...)`, `patch(...)` and `update(...)`</span>
 <span class='comment'>// to build up your call.</span>
 <span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>storelayoutclusters</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_androidenterprise1/struct.StorelayoutclusterMethods.html' title='google_androidenterprise1::StorelayoutclusterMethods'>StorelayoutclusterMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-7064' class='srclink' href='../src/google_androidenterprise1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-androidenterprise1-c1b518bbf39d4c72/out/lib.rs.html#15860-15982' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.delete' class='method'><code>fn <a href='#method.delete' class='fnname'>delete</a>(&amp;self, enterprise_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, page_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, cluster_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_androidenterprise1/struct.StorelayoutclusterDeleteCall.html' title='google_androidenterprise1::StorelayoutclusterDeleteCall'>StorelayoutclusterDeleteCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='struct' href='../google_androidenterprise1/struct.StorelayoutclusterMethods.html' title='google_androidenterprise1::StorelayoutclusterMethods'>StorelayoutclusterMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-9582' class='srclink' href='../src/google_androidenterprise1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-androidenterprise1-f9ed1fb9501f45a8/out/lib.rs.html#18886-19008' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self, enterprise_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, page_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_androidenterprise1/struct.StorelayoutclusterListCall.html' title='google_androidenterprise1::StorelayoutclusterListCall'>StorelayoutclusterListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>Deletes a cluster.</p>
+<p>Retrieves the details of all clusters on the specified page.</p>
 
 <h1 id='arguments' class='section-header'><a href='#arguments'>Arguments</a></h1>
 <ul>
 <li><code>enterpriseId</code> - The ID of the enterprise.</li>
 <li><code>pageId</code> - The ID of the page.</li>
-<li><code>clusterId</code> - The ID of the cluster.</li>
 </ul>
-</div><h4 id='method.patch' class='method'><code>fn <a href='#method.patch' class='fnname'>patch</a>(&amp;self, request: <a class='struct' href='../google_androidenterprise1/struct.StoreCluster.html' title='google_androidenterprise1::StoreCluster'>StoreCluster</a>, enterprise_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, page_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, cluster_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_androidenterprise1/struct.StorelayoutclusterPatchCall.html' title='google_androidenterprise1::StorelayoutclusterPatchCall'>StorelayoutclusterPatchCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.patch' class='method'><code>fn <a href='#method.patch' class='fnname'>patch</a>(&amp;self, request: <a class='struct' href='../google_androidenterprise1/struct.StoreCluster.html' title='google_androidenterprise1::StoreCluster'>StoreCluster</a>, enterprise_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, page_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, cluster_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_androidenterprise1/struct.StorelayoutclusterPatchCall.html' title='google_androidenterprise1::StorelayoutclusterPatchCall'>StorelayoutclusterPatchCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Updates a cluster. This method supports patch semantics.</p>
@@ -98,7 +97,7 @@ It is not used directly, but through the <code>AndroidEnterprise</code> hub.</p>
 <li><code>pageId</code> - The ID of the page.</li>
 <li><code>clusterId</code> - The ID of the cluster.</li>
 </ul>
-</div><h4 id='method.update' class='method'><code>fn <a href='#method.update' class='fnname'>update</a>(&amp;self, request: <a class='struct' href='../google_androidenterprise1/struct.StoreCluster.html' title='google_androidenterprise1::StoreCluster'>StoreCluster</a>, enterprise_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, page_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, cluster_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_androidenterprise1/struct.StorelayoutclusterUpdateCall.html' title='google_androidenterprise1::StorelayoutclusterUpdateCall'>StorelayoutclusterUpdateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.update' class='method'><code>fn <a href='#method.update' class='fnname'>update</a>(&amp;self, request: <a class='struct' href='../google_androidenterprise1/struct.StoreCluster.html' title='google_androidenterprise1::StoreCluster'>StoreCluster</a>, enterprise_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, page_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, cluster_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_androidenterprise1/struct.StorelayoutclusterUpdateCall.html' title='google_androidenterprise1::StorelayoutclusterUpdateCall'>StorelayoutclusterUpdateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Updates a cluster.</p>
@@ -110,39 +109,40 @@ It is not used directly, but through the <code>AndroidEnterprise</code> hub.</p>
 <li><code>pageId</code> - The ID of the page.</li>
 <li><code>clusterId</code> - The ID of the cluster.</li>
 </ul>
-</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self, enterprise_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, page_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_androidenterprise1/struct.StorelayoutclusterListCall.html' title='google_androidenterprise1::StorelayoutclusterListCall'>StorelayoutclusterListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, enterprise_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, page_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, cluster_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_androidenterprise1/struct.StorelayoutclusterGetCall.html' title='google_androidenterprise1::StorelayoutclusterGetCall'>StorelayoutclusterGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>Retrieves the details of all clusters on the specified page.</p>
+<p>Retrieves details of a cluster.</p>
 
 <h1 id='arguments-3' class='section-header'><a href='#arguments-3'>Arguments</a></h1>
 <ul>
 <li><code>enterpriseId</code> - The ID of the enterprise.</li>
 <li><code>pageId</code> - The ID of the page.</li>
-</ul>
-</div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, enterprise_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, page_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, cluster_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_androidenterprise1/struct.StorelayoutclusterGetCall.html' title='google_androidenterprise1::StorelayoutclusterGetCall'>StorelayoutclusterGetCall</a>&lt;'a, C, A&gt;</code></h4>
-<div class='docblock'><p>Create a builder to help you perform the following task:</p>
-
-<p>Retrieves details of a cluster.</p>
-
-<h1 id='arguments-4' class='section-header'><a href='#arguments-4'>Arguments</a></h1>
-<ul>
-<li><code>enterpriseId</code> - The ID of the enterprise.</li>
-<li><code>pageId</code> - The ID of the page.</li>
 <li><code>clusterId</code> - The ID of the cluster.</li>
 </ul>
-</div><h4 id='method.insert' class='method'><code>fn <a href='#method.insert' class='fnname'>insert</a>(&amp;self, request: <a class='struct' href='../google_androidenterprise1/struct.StoreCluster.html' title='google_androidenterprise1::StoreCluster'>StoreCluster</a>, enterprise_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, page_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_androidenterprise1/struct.StorelayoutclusterInsertCall.html' title='google_androidenterprise1::StorelayoutclusterInsertCall'>StorelayoutclusterInsertCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.insert' class='method'><code>fn <a href='#method.insert' class='fnname'>insert</a>(&amp;self, request: <a class='struct' href='../google_androidenterprise1/struct.StoreCluster.html' title='google_androidenterprise1::StoreCluster'>StoreCluster</a>, enterprise_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, page_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_androidenterprise1/struct.StorelayoutclusterInsertCall.html' title='google_androidenterprise1::StorelayoutclusterInsertCall'>StorelayoutclusterInsertCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Inserts a new cluster in a page.</p>
 
-<h1 id='arguments-5' class='section-header'><a href='#arguments-5'>Arguments</a></h1>
+<h1 id='arguments-4' class='section-header'><a href='#arguments-4'>Arguments</a></h1>
 <ul>
 <li><code>request</code> - No description provided.</li>
 <li><code>enterpriseId</code> - The ID of the enterprise.</li>
 <li><code>pageId</code> - The ID of the page.</li>
 </ul>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_androidenterprise1/trait.MethodsBuilder.html' title='google_androidenterprise1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_androidenterprise1/struct.StorelayoutclusterMethods.html' title='google_androidenterprise1::StorelayoutclusterMethods'>StorelayoutclusterMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-7060' class='srclink' href='../src/google_androidenterprise1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-androidenterprise1-c1b518bbf39d4c72/out/lib.rs.html#15859' title='goto source code'>[src]</a></span></h3>
+</div><h4 id='method.delete' class='method'><code>fn <a href='#method.delete' class='fnname'>delete</a>(&amp;self, enterprise_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, page_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, cluster_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_androidenterprise1/struct.StorelayoutclusterDeleteCall.html' title='google_androidenterprise1::StorelayoutclusterDeleteCall'>StorelayoutclusterDeleteCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Deletes a cluster.</p>
+
+<h1 id='arguments-5' class='section-header'><a href='#arguments-5'>Arguments</a></h1>
+<ul>
+<li><code>enterpriseId</code> - The ID of the enterprise.</li>
+<li><code>pageId</code> - The ID of the page.</li>
+<li><code>clusterId</code> - The ID of the cluster.</li>
+</ul>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='trait' href='../google_androidenterprise1/trait.MethodsBuilder.html' title='google_androidenterprise1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_androidenterprise1/struct.StorelayoutclusterMethods.html' title='google_androidenterprise1::StorelayoutclusterMethods'>StorelayoutclusterMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-9578' class='srclink' href='../src/google_androidenterprise1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-androidenterprise1-f9ed1fb9501f45a8/out/lib.rs.html#18885' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 

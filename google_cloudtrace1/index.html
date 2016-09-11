@@ -48,14 +48,14 @@
                        [<span class='inner'>&#x2212;</span>]
                    </a>
                </span><a id='src-0' class='srclink' href='../src/google_cloudtrace1/src/lib.rs.html#5-183' title='goto source code'>[src]</a></span></h1>
-<div class='docblock'><p>This documentation was generated from <em>cloudtrace</em> crate version <em>0.1.14+20151207</em>, where <em>20151207</em> is the exact revision of the <em>cloudtrace:v1</em> schema built by the <a href="http://www.makotemplates.org/">mako</a> code generator <em>v0.1.14</em>.</p>
+<div class='docblock'><p>This documentation was generated from <em>Cloud Trace</em> crate version <em>0.1.15+20160518</em>, where <em>20160518</em> is the exact revision of the <em>cloudtrace:v1</em> schema built by the <a href="http://www.makotemplates.org/">mako</a> code generator <em>v0.1.15</em>.</p>
 
-<p>Everything else about the <em>cloudtrace</em> <em>v1</em> API can be found at the
+<p>Everything else about the <em>Cloud Trace</em> <em>v1</em> API can be found at the
 <a href="https://cloud.google.com/tools/cloud-trace">official documentation site</a>.
 The original source code is <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/cloudtrace1">on github</a>.</p>
 
 <h1 id='features' class='section-header'><a href='#features'>Features</a></h1>
-<p>Handle the following <em>Resources</em> with ease from the central <a href="struct.Cloudtrace.html">hub</a> ... </p>
+<p>Handle the following <em>Resources</em> with ease from the central <a href="struct.CloudTrace.html">hub</a> ... </p>
 
 <ul>
 <li>projects
@@ -71,7 +71,7 @@ The original source code is <a href="https://github.com/Byron/google-apis-rs/tre
 <p>The API is structured into the following primary items:</p>
 
 <ul>
-<li><strong><a href="struct.Cloudtrace.html">Hub</a></strong>
+<li><strong><a href="struct.CloudTrace.html">Hub</a></strong>
 
 <ul>
 <li>a central object to maintain state and allow accessing all <em>Activities</em></li>
@@ -130,7 +130,7 @@ google-cloudtrace1 = &quot;*&quot;
 <span class='kw'>use</span> <span class='ident'>cloudtrace1</span>::{<span class='prelude-ty'>Result</span>, <span class='ident'>Error</span>};
 <span class='kw'>use</span> <span class='ident'>std</span>::<span class='ident'>default</span>::<span class='ident'>Default</span>;
 <span class='kw'>use</span> <span class='ident'>oauth2</span>::{<span class='ident'>Authenticator</span>, <span class='ident'>DefaultAuthenticatorDelegate</span>, <span class='ident'>ApplicationSecret</span>, <span class='ident'>MemoryStorage</span>};
-<span class='kw'>use</span> <span class='ident'>cloudtrace1</span>::<span class='ident'>Cloudtrace</span>;
+<span class='kw'>use</span> <span class='ident'>cloudtrace1</span>::<span class='ident'>CloudTrace</span>;
  
 <span class='comment'>// Get an ApplicationSecret instance by some means. It contains the `client_id` and </span>
 <span class='comment'>// `client_secret`, among other things.</span>
@@ -143,7 +143,7 @@ google-cloudtrace1 = &quot;*&quot;
 <span class='kw'>let</span> <span class='ident'>auth</span> <span class='op'>=</span> <span class='ident'>Authenticator</span>::<span class='ident'>new</span>(<span class='kw-2'>&amp;</span><span class='ident'>secret</span>, <span class='ident'>DefaultAuthenticatorDelegate</span>,
                               <span class='ident'>hyper</span>::<span class='ident'>Client</span>::<span class='ident'>new</span>(),
                               <span class='op'>&lt;</span><span class='ident'>MemoryStorage</span> <span class='kw'>as</span> <span class='ident'>Default</span><span class='op'>&gt;</span>::<span class='ident'>default</span>(), <span class='prelude-val'>None</span>);
-<span class='kw'>let</span> <span class='kw-2'>mut</span> <span class='ident'>hub</span> <span class='op'>=</span> <span class='ident'>Cloudtrace</span>::<span class='ident'>new</span>(<span class='ident'>hyper</span>::<span class='ident'>Client</span>::<span class='ident'>new</span>(), <span class='ident'>auth</span>);
+<span class='kw'>let</span> <span class='kw-2'>mut</span> <span class='ident'>hub</span> <span class='op'>=</span> <span class='ident'>CloudTrace</span>::<span class='ident'>new</span>(<span class='ident'>hyper</span>::<span class='ident'>Client</span>::<span class='ident'>new</span>(), <span class='ident'>auth</span>);
 <span class='comment'>// You can configure optional parameters by calling the respective setters at will, and</span>
 <span class='comment'>// execute the final call using `doit()`.</span>
 <span class='comment'>// Values shown here are possibly random and not representative !</span>
@@ -215,10 +215,10 @@ These will always take a single argument, for which the following statements are
 </div><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
 <table>
                        <tr class=' module-item'>
-                           <td><a class='struct' href='struct.Cloudtrace.html'
-                                  title='google_cloudtrace1::Cloudtrace'>Cloudtrace</a></td>
+                           <td><a class='struct' href='struct.CloudTrace.html'
+                                  title='google_cloudtrace1::CloudTrace'>CloudTrace</a></td>
                            <td class='docblock short'>
-                                <p>Central instance to access all Cloudtrace related resource activities</p>
+                                <p>Central instance to access all CloudTrace related resource activities</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
@@ -273,14 +273,14 @@ to google APIs, and might not be a fully-featured implementation.</p>
                                   title='google_cloudtrace1::ProjectMethods'>ProjectMethods</a></td>
                            <td class='docblock short'>
                                 <p>A builder providing access to all methods supported on <em>project</em> resources.
-It is not used directly, but through the <code>Cloudtrace</code> hub.</p>
+It is not used directly, but through the <code>CloudTrace</code> hub.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
                            <td><a class='struct' href='struct.ProjectPatchTraceCall.html'
                                   title='google_cloudtrace1::ProjectPatchTraceCall'>ProjectPatchTraceCall</a></td>
                            <td class='docblock short'>
-                                <p>Sends new traces to Cloud Trace or updates existing traces. If the ID of a trace that you send matches that of an existing trace, any fields in the existing trace and its spans are overwritten by the provided values, and any new fields provided are merged with the existing trace data. If the ID does not match, a new trace is created.</p>
+                                <p>Sends new traces to Stackdriver Trace or updates existing traces. If the ID of a trace that you send matches that of an existing trace, any fields in the existing trace and its spans are overwritten by the provided values, and any new fields provided are merged with the existing trace data. If the ID does not match, a new trace is created.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>

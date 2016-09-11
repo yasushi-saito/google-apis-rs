@@ -47,8 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-0' class='srclink' href='../src/google_cloudresourcemanager1/src/lib.rs.html#5-193' title='goto source code'>[src]</a></span></h1>
-<div class='docblock'><p>This documentation was generated from <em>Cloud Resource Manager</em> crate version <em>0.1.14+20160316</em>, where <em>20160316</em> is the exact revision of the <em>cloudresourcemanager:v1</em> schema built by the <a href="http://www.makotemplates.org/">mako</a> code generator <em>v0.1.14</em>.</p>
+               </span><a id='src-0' class='srclink' href='../src/google_cloudresourcemanager1/src/lib.rs.html#5-195' title='goto source code'>[src]</a></span></h1>
+<div class='docblock'><p>This documentation was generated from <em>Cloud Resource Manager</em> crate version <em>0.1.15+20160617</em>, where <em>20160617</em> is the exact revision of the <em>cloudresourcemanager:v1</em> schema built by the <a href="http://www.makotemplates.org/">mako</a> code generator <em>v0.1.15</em>.</p>
 
 <p>Everything else about the <em>Cloud Resource Manager</em> <em>v1</em> API can be found at the
 <a href="https://cloud.google.com/resource-manager">official documentation site</a>.
@@ -58,6 +58,11 @@ The original source code is <a href="https://github.com/Byron/google-apis-rs/tre
 <p>Handle the following <em>Resources</em> with ease from the central <a href="struct.CloudResourceManager.html">hub</a> ... </p>
 
 <ul>
+<li><a href="struct.Operation.html">operations</a>
+
+<ul>
+<li><a href="struct.OperationGetCall.html"><em>get</em></a></li>
+</ul></li>
 <li><a href="struct.Project.html">projects</a>
 
 <ul>
@@ -155,9 +160,9 @@ google-cloudresourcemanager1 = &quot;*&quot;
 <span class='comment'>// execute the final call using `doit()`.</span>
 <span class='comment'>// Values shown here are possibly random and not representative !</span>
 <span class='kw'>let</span> <span class='ident'>result</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>projects</span>().<span class='ident'>list</span>()
-             .<span class='ident'>page_token</span>(<span class='string'>&quot;gubergren&quot;</span>)
-             .<span class='ident'>page_size</span>(<span class='op'>-</span><span class='number'>95</span>)
-             .<span class='ident'>filter</span>(<span class='string'>&quot;aliquyam&quot;</span>)
+             .<span class='ident'>page_token</span>(<span class='string'>&quot;sadipscing&quot;</span>)
+             .<span class='ident'>page_size</span>(<span class='op'>-</span><span class='number'>31</span>)
+             .<span class='ident'>filter</span>(<span class='string'>&quot;ea&quot;</span>)
              .<span class='ident'>doit</span>();
  
 <span class='kw'>match</span> <span class='ident'>result</span> {
@@ -293,6 +298,28 @@ to google APIs, and might not be a fully-featured implementation.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Operation.html'
+                                  title='google_cloudresourcemanager1::Operation'>Operation</a></td>
+                           <td class='docblock short'>
+                                <p>This resource represents a long-running operation that is the result of a network API call.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.OperationGetCall.html'
+                                  title='google_cloudresourcemanager1::OperationGetCall'>OperationGetCall</a></td>
+                           <td class='docblock short'>
+                                <p>Gets the latest state of a long-running operation. Clients can use this method to poll the operation result at intervals as recommended by the API service.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.OperationMethods.html'
+                                  title='google_cloudresourcemanager1::OperationMethods'>OperationMethods</a></td>
+                           <td class='docblock short'>
+                                <p>A builder providing access to all methods supported on <em>operation</em> resources.
+It is not used directly, but through the <code>CloudResourceManager</code> hub.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
                            <td><a class='struct' href='struct.Policy.html'
                                   title='google_cloudresourcemanager1::Policy'>Policy</a></td>
                            <td class='docblock short'>
@@ -310,7 +337,7 @@ to google APIs, and might not be a fully-featured implementation.</p>
                            <td><a class='struct' href='struct.ProjectDeleteCall.html'
                                   title='google_cloudresourcemanager1::ProjectDeleteCall'>ProjectDeleteCall</a></td>
                            <td class='docblock short'>
-                                <p>Marks the Project identified by the specified <code>project_id</code> (for example, <code>my-project-123</code>) for deletion. This method will only affect the Project if the following criteria are met: + The Project does not have a billing account associated with it. + The Project has a lifecycle state of ACTIVE. This method changes the Project&#39;s lifecycle state from ACTIVE to DELETE_REQUESTED. The deletion starts at an unspecified time, at which point the lifecycle state changes to DELETE_IN_PROGRESS. Until the deletion completes, you can check the lifecycle state checked by retrieving the Project with GetProject, and the Project remains visible to ListProjects. However, you cannot update the project. After the deletion completes, the Project is not retrievable by the GetProject and ListProjects methods. The caller must have modify permissions for this Project.</p>
+                                <p>Marks the Project identified by the specified <code>project_id</code> (for example, <code>my-project-123</code>) for deletion. This method will only affect the Project if the following criteria are met: + The Project does not have a billing account associated with it. + The Project has a lifecycle state of ACTIVE. This method changes the Project&#39;s lifecycle state from ACTIVE to DELETE_REQUESTED. The deletion starts at an unspecified time, at which point the Project is no longer accessible. Until the deletion completes, you can check the lifecycle state checked by retrieving the Project with GetProject, and the Project remains visible to ListProjects. However, you cannot update the project. After the deletion completes, the Project is not retrievable by the GetProject and ListProjects methods. The caller must have modify permissions for this Project.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
@@ -346,7 +373,7 @@ It is not used directly, but through the <code>CloudResourceManager</code> hub.<
                            <td><a class='struct' href='struct.ProjectSetIamPolicyCall.html'
                                   title='google_cloudresourcemanager1::ProjectSetIamPolicyCall'>ProjectSetIamPolicyCall</a></td>
                            <td class='docblock short'>
-                                <p>Sets the IAM access control policy for the specified Project. Replaces any existing policy. The following constraints apply when using <code>setIamPolicy()</code>: + Project currently supports only <code>user:{emailid}</code> and <code>serviceAccount:{emailid}</code> members in a <code>Binding</code> of a <code>Policy</code>. + To be added as an <code>owner</code>, a user must be invited via Cloud Platform console and must accept the invitation. + Members cannot be added to more than one role in the same policy. + There must be at least one owner who has accepted the Terms of Service (ToS) agreement in the policy. Calling <code>setIamPolicy()</code> to to remove the last ToS-accepted owner from the policy will fail. + Calling this method requires enabling the App Engine Admin API. Note: Removing service accounts from policies or changing their roles can render services completely inoperable. It is important to understand how the service account is being used before removing or updating its roles.</p>
+                                <p>Sets the IAM access control policy for the specified Project. Replaces any existing policy. The following constraints apply when using <code>setIamPolicy()</code>: + Project does not support <code>allUsers</code> and <code>allAuthenticatedUsers</code> as <code>members</code> in a <code>Binding</code> of a <code>Policy</code>. + The owner role can be granted only to <code>user</code> and <code>serviceAccount</code>. + Service accounts can be made owners of a project directly without any restrictions. However, to be added as an owner, a user must be invited via Cloud Platform console and must accept the invitation. + A user cannot be granted the owner role using <code>setIamPolicy()</code>. The user must be granted the owner role using the Cloud Platform Console and must explicitly accept the invitation. + Invitations to grant the owner role cannot be sent using <code>setIamPolicy()</code>; they must be sent only using the Cloud Platform Console. + Membership changes that leave the project without any owners that have accepted the Terms of Service (ToS) will be rejected. + Members cannot be added to more than one role in the same policy. + There must be at least one owner who has accepted the Terms of Service (ToS) agreement in the policy. Calling <code>setIamPolicy()</code> to to remove the last ToS-accepted owner from the policy will fail. This restriction also applies to legacy projects that no longer have owners who have accepted the ToS. Edits to IAM policies will be rejected until the lack of a ToS-accepting owner is rectified. + Calling this method requires enabling the App Engine Admin API. Note: Removing service accounts from policies or changing their roles can render services completely inoperable. It is important to understand how the service account is being used before removing or updating its roles.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
@@ -360,7 +387,7 @@ It is not used directly, but through the <code>CloudResourceManager</code> hub.<
                            <td><a class='struct' href='struct.ProjectUndeleteCall.html'
                                   title='google_cloudresourcemanager1::ProjectUndeleteCall'>ProjectUndeleteCall</a></td>
                            <td class='docblock short'>
-                                <p>Restores the Project identified by the specified <code>project_id</code> (for example, <code>my-project-123</code>). You can only use this method for a Project that has a lifecycle state of DELETE_REQUESTED. After deletion starts, as indicated by a lifecycle state of DELETE_IN_PROGRESS, the Project cannot be restored. The caller must have modify permissions for this Project.</p>
+                                <p>Restores the Project identified by the specified <code>project_id</code> (for example, <code>my-project-123</code>). You can only use this method for a Project that has a lifecycle state of DELETE_REQUESTED. After deletion starts, the Project cannot be restored. The caller must have modify permissions for this Project.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
@@ -382,6 +409,13 @@ It is not used directly, but through the <code>CloudResourceManager</code> hub.<
                                   title='google_cloudresourcemanager1::SetIamPolicyRequest'>SetIamPolicyRequest</a></td>
                            <td class='docblock short'>
                                 <p>Request message for <code>SetIamPolicy</code> method.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Status.html'
+                                  title='google_cloudresourcemanager1::Status'>Status</a></td>
+                           <td class='docblock short'>
+                                <p>The <code>Status</code> type defines a logical error model that is suitable for different programming environments, including REST APIs and RPC APIs. It is used by <a href="https://github.com/grpc">gRPC</a>. The error model is designed to be: - Simple to use and understand for most users - Flexible enough to meet unexpected needs # Overview The <code>Status</code> message contains three pieces of data: error code, error message, and error details. The error code should be an enum value of google.rpc.Code, but it may accept additional error codes if needed. The error message should be a developer-facing English message that helps developers <em>understand</em> and <em>resolve</em> the error. If a localized user-facing error message is needed, put the localized message in the error details or localize it in the client. The optional error details may contain arbitrary information about the error. There is a predefined set of error detail types in the package <code>google.rpc</code> which can be used for common error conditions. # Language mapping The <code>Status</code> message is the logical representation of the error model, but it is not necessarily the actual wire format. When the <code>Status</code> message is exposed in different client libraries and different wire protocols, it can be mapped differently. For example, it will likely be mapped to some exceptions in Java, but more likely mapped to some error codes in C. # Other uses The error model and the <code>Status</code> message can be used in a variety of environments, either with or without APIs, to provide a consistent developer experience across different environments. Example uses of this error model include: - Partial errors. If a service needs to return partial errors to the client, it may embed the <code>Status</code> in the normal response to indicate the partial errors. - Workflow errors. A typical workflow has multiple steps. Each step may have a <code>Status</code> message for error reporting purpose. - Batch operations. If a client uses batch request and batch response, the <code>Status</code> message should be used directly inside batch response, one for each error sub-response. - Asynchronous operations. If an API call embeds asynchronous operation results in its response, the status of those operations should be represented directly using the <code>Status</code> message. - Logging. If some API errors are stored in logs, the message <code>Status</code> could be used directly after any stripping needed for security/privacy reasons.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>

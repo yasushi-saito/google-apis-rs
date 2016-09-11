@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Set Project Config - Identity Toolkit v0.3.6+20160324</title>
+  <title>Set Project Config - Identity Toolkit v0.3.6+20160812</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -32,7 +32,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Identity Toolkit v0.3.6+20160324</a>
+        <a href=".." class="icon icon-home"> Identity Toolkit v0.3.6+20160812</a>
         
       </div>
 
@@ -164,7 +164,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Identity Toolkit v0.3.6+20160324</a>
+        <a href="..">Identity Toolkit v0.3.6+20160812</a>
       </nav>
 
       
@@ -199,6 +199,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <pre><code>IdentitytoolkitRelyingpartySetProjectConfigRequest:
   allow-password-user: boolean
   api-key: string
+  authorized-domains: [string]
   change-email-template:
     body: string
     format: string
@@ -239,38 +240,43 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>Whether to allow password user sign in or sign up.</li>
 </ul>
 </li>
-<li><code>api-key=eirmod</code><ul>
+<li><code>api-key=consetetur</code><ul>
 <li>Browser API key, needed when making http request to Apiary.</li>
 </ul>
 </li>
-<li><code>change-email-template    body=sanctus</code><ul>
+<li><code>authorized-domains=ut</code><ul>
+<li>Authorized domains for widget redirect.</li>
+<li>Each invocation of this argument appends the given value to the array.</li>
+</ul>
+</li>
+<li><code>change-email-template    body=ea</code><ul>
 <li>Email body.</li>
 </ul>
 </li>
-<li><code>format=et</code><ul>
+<li><code>format=sed</code><ul>
 <li>Email body format.</li>
 </ul>
 </li>
-<li><code>from=amet</code><ul>
+<li><code>from=dolor</code><ul>
 <li>From address of the email.</li>
 </ul>
 </li>
-<li><code>from-display-name=et</code><ul>
+<li><code>from-display-name=dolor</code><ul>
 <li>From display name.</li>
 </ul>
 </li>
-<li><code>reply-to=consetetur</code><ul>
+<li><code>reply-to=dolor</code><ul>
 <li>Reply-to address.</li>
 </ul>
 </li>
 <li>
-<p><code>subject=ut</code></p>
+<p><code>subject=et</code></p>
 <ul>
 <li>Subject of the email.</li>
 </ul>
 </li>
 <li>
-<p><code>..    delegated-project-number=ea</code></p>
+<p><code>..    delegated-project-number=consetetur</code></p>
 <ul>
 <li>GCP project number of the requesting delegated app. Currently only intended for Firebase V1 migration.</li>
 </ul>
@@ -279,35 +285,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>Whether to enable anonymous user.</li>
 </ul>
 </li>
-<li><code>legacy-reset-password-template    body=dolor</code><ul>
-<li>Email body.</li>
-</ul>
-</li>
-<li><code>format=dolor</code><ul>
-<li>Email body format.</li>
-</ul>
-</li>
-<li><code>from=dolor</code><ul>
-<li>From address of the email.</li>
-</ul>
-</li>
-<li><code>from-display-name=et</code><ul>
-<li>From display name.</li>
-</ul>
-</li>
-<li><code>reply-to=consetetur</code><ul>
-<li>Reply-to address.</li>
-</ul>
-</li>
-<li>
-<p><code>subject=amet.</code></p>
-<ul>
-<li>Subject of the email.</li>
-</ul>
-</li>
-<li>
-<p><code>..reset-password-template    body=voluptua.</code></p>
-<ul>
+<li><code>legacy-reset-password-template    body=voluptua.</code><ul>
 <li>Email body.</li>
 </ul>
 </li>
@@ -334,32 +312,60 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
-<p><code>..    use-email-sending=true</code></p>
+<p><code>..reset-password-template    body=diam</code></p>
+<ul>
+<li>Email body.</li>
+</ul>
+</li>
+<li><code>format=rebum.</code><ul>
+<li>Email body format.</li>
+</ul>
+</li>
+<li><code>from=consetetur</code><ul>
+<li>From address of the email.</li>
+</ul>
+</li>
+<li><code>from-display-name=sadipscing</code><ul>
+<li>From display name.</li>
+</ul>
+</li>
+<li><code>reply-to=vero</code><ul>
+<li>Reply-to address.</li>
+</ul>
+</li>
+<li>
+<p><code>subject=sadipscing</code></p>
+<ul>
+<li>Subject of the email.</li>
+</ul>
+</li>
+<li>
+<p><code>..    use-email-sending=false</code></p>
 <ul>
 <li>Whether to use email sending provided by Firebear.</li>
 </ul>
 </li>
-<li><code>verify-email-template    body=rebum.</code><ul>
+<li><code>verify-email-template    body=consetetur</code><ul>
 <li>Email body.</li>
 </ul>
 </li>
-<li><code>format=consetetur</code><ul>
+<li><code>format=dolore</code><ul>
 <li>Email body format.</li>
 </ul>
 </li>
-<li><code>from=sadipscing</code><ul>
+<li><code>from=duo</code><ul>
 <li>From address of the email.</li>
 </ul>
 </li>
-<li><code>from-display-name=vero</code><ul>
+<li><code>from-display-name=aliquyam</code><ul>
 <li>From display name.</li>
 </ul>
 </li>
-<li><code>reply-to=sadipscing</code><ul>
+<li><code>reply-to=lorem</code><ul>
 <li>Reply-to address.</li>
 </ul>
 </li>
-<li><code>subject=invidunt</code><ul>
+<li><code>subject=et</code><ul>
 <li>Subject of the email.</li>
 </ul>
 </li>
@@ -473,7 +479,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <!--
 MkDocs version  : 0.12.2
-Docs Build Date : 2016-07-23 16:06:06.104667
+Docs Build Date : 2016-09-11 17:56:08.721364
 -->
 </body>
 </html>

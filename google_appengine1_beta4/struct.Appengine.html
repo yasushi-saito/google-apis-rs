@@ -47,8 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-1027' class='srclink' href='../src/google_appengine1_beta4/home/byron/dev/rust/google-apis-rs/target/debug/build/google-appengine1_beta4-e771ff78f0c70327/out/lib.rs.html#2228-2232' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct Appengine&lt;C, A&gt; {
+               </span><a id='src-976' class='srclink' href='../src/google_appengine1_beta4/home/byron/dev/rust/google-apis-rs/target/debug/build/google-appengine1_beta4-d825b184350f194b/out/lib.rs.html#2097-2101' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct Appengine&lt;C,&nbsp;A&gt; {
     // some fields omitted
 }</pre><div class='docblock'><p>Central instance to access all Appengine related resource activities</p>
 
@@ -86,7 +86,7 @@
 <span class='comment'>// execute the final call using `doit()`.</span>
 <span class='comment'>// Values shown here are possibly random and not representative !</span>
 <span class='kw'>let</span> <span class='ident'>result</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>apps</span>().<span class='ident'>modules_patch</span>(<span class='ident'>req</span>, <span class='string'>&quot;appsId&quot;</span>, <span class='string'>&quot;modulesId&quot;</span>)
-             .<span class='ident'>migrate_traffic</span>(<span class='boolvalue'>false</span>)
+             .<span class='ident'>migrate_traffic</span>(<span class='bool-val'>false</span>)
              .<span class='ident'>mask</span>(<span class='string'>&quot;accusam&quot;</span>)
              .<span class='ident'>doit</span>();
  
@@ -106,15 +106,15 @@
     },
     <span class='prelude-val'>Ok</span>(<span class='ident'>res</span>) <span class='op'>=&gt;</span> <span class='macro'>println</span><span class='macro'>!</span>(<span class='string'>&quot;Success: {:?}&quot;</span>, <span class='ident'>res</span>),
 }</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_appengine1_beta4/struct.Appengine.html' title='google_appengine1_beta4::Appengine'>Appengine</a>&lt;C, A&gt; <span class='where'>where C: <a class='trait' href='https://doc.rust-lang.org/nightly/core/borrow/trait.BorrowMut.html' title='core::borrow::BorrowMut'>BorrowMut</a>&lt;<a class='struct' href='../hyper/client/struct.Client.html' title='hyper::client::Client'>Client</a>&gt;, A: <a class='trait' href='../yup_oauth2/helper/trait.GetToken.html' title='yup_oauth2::helper::GetToken'>GetToken</a></span></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-1037' class='srclink' href='../src/google_appengine1_beta4/home/byron/dev/rust/google-apis-rs/target/debug/build/google-appengine1_beta4-e771ff78f0c70327/out/lib.rs.html#2234-2251' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.new' class='method'><code>fn <a href='#method.new' class='fnname'>new</a>(client: C, authenticator: A) -&gt; <a class='struct' href='../google_appengine1_beta4/struct.Appengine.html' title='google_appengine1_beta4::Appengine'>Appengine</a>&lt;C, A&gt;</code></h4>
-<h4 id='method.apps' class='method'><code>fn <a href='#method.apps' class='fnname'>apps</a>(&amp;'a self) -&gt; <a class='struct' href='../google_appengine1_beta4/struct.AppMethods.html' title='google_appengine1_beta4::AppMethods'>AppMethods</a>&lt;'a, C, A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='struct' href='../google_appengine1_beta4/struct.Appengine.html' title='google_appengine1_beta4::Appengine'>Appengine</a>&lt;C,&nbsp;A&gt; <span class='where'>where C: <a class='trait' href='https://doc.rust-lang.org/nightly/core/borrow/trait.BorrowMut.html' title='core::borrow::BorrowMut'>BorrowMut</a>&lt;<a class='struct' href='../hyper/client/struct.Client.html' title='hyper::client::Client'>Client</a>&gt;, A: <a class='trait' href='../yup_oauth2/authenticator/trait.GetToken.html' title='yup_oauth2::authenticator::GetToken'>GetToken</a></span></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-986' class='srclink' href='../src/google_appengine1_beta4/home/byron/dev/rust/google-apis-rs/target/debug/build/google-appengine1_beta4-d825b184350f194b/out/lib.rs.html#2103-2120' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.new' class='method'><code>fn <a href='#method.new' class='fnname'>new</a>(client: C, authenticator: A) -&gt; <a class='struct' href='../google_appengine1_beta4/struct.Appengine.html' title='google_appengine1_beta4::Appengine'>Appengine</a>&lt;C,&nbsp;A&gt;</code></h4>
+<h4 id='method.apps' class='method'><code>fn <a href='#method.apps' class='fnname'>apps</a>(&amp;'a self) -&gt; <a class='struct' href='../google_appengine1_beta4/struct.AppMethods.html' title='google_appengine1_beta4::AppMethods'>AppMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <h4 id='method.user_agent' class='method'><code>fn <a href='#method.user_agent' class='fnname'>user_agent</a>(&amp;mut self, agent_name: <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>) -&gt; <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a></code></h4>
 <div class='docblock'><p>Set the user-agent header field to use in all requests to the server.
-It defaults to <code>google-api-rust-client/0.1.14</code>.</p>
+It defaults to <code>google-api-rust-client/0.1.15</code>.</p>
 
 <p>Returns the previously set user-agent.</p>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_appengine1_beta4/trait.Hub.html' title='google_appengine1_beta4::Hub'>Hub</a> for <a class='struct' href='../google_appengine1_beta4/struct.Appengine.html' title='google_appengine1_beta4::Appengine'>Appengine</a>&lt;C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-1033' class='srclink' href='../src/google_appengine1_beta4/home/byron/dev/rust/google-apis-rs/target/debug/build/google-appengine1_beta4-e771ff78f0c70327/out/lib.rs.html#2233' title='goto source code'>[src]</a></span></h3>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='trait' href='../google_appengine1_beta4/trait.Hub.html' title='google_appengine1_beta4::Hub'>Hub</a> for <a class='struct' href='../google_appengine1_beta4/struct.Appengine.html' title='google_appengine1_beta4::Appengine'>Appengine</a>&lt;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-982' class='srclink' href='../src/google_appengine1_beta4/home/byron/dev/rust/google-apis-rs/target/debug/build/google-appengine1_beta4-d825b184350f194b/out/lib.rs.html#2102' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 

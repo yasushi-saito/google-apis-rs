@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>List - YouTube Reporting v0.3.6+20160315</title>
+  <title>List - YouTube Reporting v0.3.6+20160719</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -32,7 +32,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> YouTube Reporting v0.3.6+20160315</a>
+        <a href=".." class="icon icon-home"> YouTube Reporting v0.3.6+20160719</a>
         
       </div>
 
@@ -132,7 +132,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">YouTube Reporting v0.3.6+20160315</a>
+        <a href="..">YouTube Reporting v0.3.6+20160719</a>
       </nav>
 
       
@@ -185,27 +185,27 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p page-size=integer</strong></p>
-<ul>
-<li>Requested page size. Server may return fewer report types than requested. If unspecified, server will pick an appropriate default.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p on-behalf-of-content-owner=string</strong></p>
 <ul>
 <li>The content owner&#39;s external ID on which behalf the user is acting on. If not set, the user is acting for himself (his own channel).</li>
 </ul>
 </li>
 <li>
-<p><strong>-p page-token=string</strong></p>
-<ul>
-<li>A token identifying a page of results the server should return. Typically, this is the value of ListReportTypesResponse.next_page_token returned in response to the previous call to the <code>ListReportTypes</code> method.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p include-system-managed=boolean</strong></p>
 <ul>
 <li>If set to true, also system-managed report types will be returned; otherwise only the report types that can be used to create new reporting jobs will be returned.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p page-size=integer</strong></p>
+<ul>
+<li>Requested page size. Server may return fewer report types than requested. If unspecified, server will pick an appropriate default.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p page-token=string</strong></p>
+<ul>
+<li>A token identifying a page of results the server should return. Typically, this is the value of ListReportTypesResponse.next_page_token returned in response to the previous call to the <code>ListReportTypes</code> method.</li>
 </ul>
 </li>
 </ul>
@@ -333,7 +333,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 
 <!--
 MkDocs version  : 0.12.2
-Docs Build Date : 2016-07-23 16:05:40.767229
+Docs Build Date : 2016-09-11 17:55:20.446220
 -->
 </body>
 </html>

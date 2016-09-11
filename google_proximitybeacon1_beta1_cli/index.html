@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>proximitybeacon v0.3.6+20150729</title>
+  <title>proximitybeacon v0.3.6+20160429</title>
   
 
   <link rel="shortcut icon" href="./img/favicon.ico">
@@ -32,7 +32,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href="." class="icon icon-home"> proximitybeacon v0.3.6+20150729</a>
+        <a href="." class="icon icon-home"> proximitybeacon v0.3.6+20160429</a>
         
       </div>
 
@@ -147,10 +147,26 @@
 
     
         
+            <span>Methods</span>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="methods_get-eidparams/">Get Eidparams</a>
+                    
+                </li>
+            
+        
+
+    
+        
             <span>Namespaces</span>
             
                 <li class="toctree-l2 ">
                     <a class="" href="namespaces_list/">List</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="namespaces_update/">Update</a>
                     
                 </li>
             
@@ -168,7 +184,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href=".">proximitybeacon v0.3.6+20150729</a>
+        <a href=".">proximitybeacon v0.3.6+20160429</a>
       </nav>
 
       
@@ -211,7 +227,7 @@ capabilities. Errors will be printed to standard error, and cause the program's 
 </ul>
 <p>Find the source code <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/proximitybeacon1_beta1-cli">on github</a>.</p>
 <h1 id="usage">Usage</h1>
-<p>This documentation was generated from the <em>proximitybeacon</em> API at revision <em>20150729</em>. The CLI is at version <em>0.3.6</em>.</p>
+<p>This documentation was generated from the <em>proximitybeacon</em> API at revision <em>20160429</em>. The CLI is at version <em>0.3.6</em>.</p>
 <pre><code class="bash">proximitybeacon1-beta1 [options]
         beaconinfo
                 getforobserved (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
@@ -228,11 +244,18 @@ capabilities. Errors will be printed to standard error, and cause the program's 
                 list [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 register (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 update &lt;beacon-name&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+        methods
+                get-eidparams [-p &lt;v&gt;]... [-o &lt;out&gt;]
         namespaces
                 list [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                update &lt;namespace-name&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
   proximitybeacon1-beta1 --help
 
 Configuration:
+  [--scope &lt;url&gt;]...
+            Specify the authentication a method should be executed in. Each scope
+            requires the user to grant this application permission to use it.
+            If unset, it defaults to the shortest scope url for a particular method.
   --config-dir &lt;folder&gt;
             A directory into which we will store our persistent data. Defaults to
             a user-writable directory that we will create during the first invocation.
@@ -325,7 +348,7 @@ issue at hand.</p>
 
 <!--
 MkDocs version  : 0.12.2
-Docs Build Date : 2016-07-23 16:04:42.469006
+Docs Build Date : 2016-09-11 17:53:24.186142
 -->
 </body>
 </html>

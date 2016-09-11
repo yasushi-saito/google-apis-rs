@@ -47,8 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-7240' class='srclink' href='../src/google_blogger3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-blogger3-b49083ad0cf44399/out/lib.rs.html#15144-15146' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct PostMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
+               </span><a id='src-6664' class='srclink' href='../src/google_blogger3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-blogger3-3752420fe98c47f4/out/lib.rs.html#11740-11742' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct PostMethods&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>post</em> resources.
 It is not used directly, but through the <code>Blogger</code> hub.</p>
@@ -74,8 +74,8 @@ It is not used directly, but through the <code>Blogger</code> hub.</p>
 <span class='comment'>// like `delete(...)`, `get(...)`, `get_by_path(...)`, `insert(...)`, `list(...)`, `patch(...)`, `publish(...)`, `revert(...)`, `search(...)` and `update(...)`</span>
 <span class='comment'>// to build up your call.</span>
 <span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>posts</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_blogger3/struct.PostMethods.html' title='google_blogger3::PostMethods'>PostMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-7249' class='srclink' href='../src/google_blogger3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-blogger3-b49083ad0cf44399/out/lib.rs.html#15148-15350' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.update' class='method'><code>fn <a href='#method.update' class='fnname'>update</a>(&amp;self, request: <a class='struct' href='../google_blogger3/struct.Post.html' title='google_blogger3::Post'>Post</a>, blog_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, post_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_blogger3/struct.PostUpdateCall.html' title='google_blogger3::PostUpdateCall'>PostUpdateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='struct' href='../google_blogger3/struct.PostMethods.html' title='google_blogger3::PostMethods'>PostMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-6673' class='srclink' href='../src/google_blogger3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-blogger3-3752420fe98c47f4/out/lib.rs.html#11744-11946' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.update' class='method'><code>fn <a href='#method.update' class='fnname'>update</a>(&amp;self, request: <a class='struct' href='../google_blogger3/struct.Post.html' title='google_blogger3::Post'>Post</a>, blog_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, post_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_blogger3/struct.PostUpdateCall.html' title='google_blogger3::PostUpdateCall'>PostUpdateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Update a post.</p>
@@ -86,7 +86,7 @@ It is not used directly, but through the <code>Blogger</code> hub.</p>
 <li><code>blogId</code> - The ID of the Blog.</li>
 <li><code>postId</code> - The ID of the Post.</li>
 </ul>
-</div><h4 id='method.get_by_path' class='method'><code>fn <a href='#method.get_by_path' class='fnname'>get_by_path</a>(&amp;self, blog_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, path: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_blogger3/struct.PostGetByPathCall.html' title='google_blogger3::PostGetByPathCall'>PostGetByPathCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.get_by_path' class='method'><code>fn <a href='#method.get_by_path' class='fnname'>get_by_path</a>(&amp;self, blog_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, path: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_blogger3/struct.PostGetByPathCall.html' title='google_blogger3::PostGetByPathCall'>PostGetByPathCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Retrieve a Post by Path.</p>
@@ -96,7 +96,7 @@ It is not used directly, but through the <code>Blogger</code> hub.</p>
 <li><code>blogId</code> - ID of the blog to fetch the post from.</li>
 <li><code>path</code> - Path of the Post to retrieve.</li>
 </ul>
-</div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, blog_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, post_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_blogger3/struct.PostGetCall.html' title='google_blogger3::PostGetCall'>PostGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, blog_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, post_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_blogger3/struct.PostGetCall.html' title='google_blogger3::PostGetCall'>PostGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Get a post by ID.</p>
@@ -106,7 +106,7 @@ It is not used directly, but through the <code>Blogger</code> hub.</p>
 <li><code>blogId</code> - ID of the blog to fetch the post from.</li>
 <li><code>postId</code> - The ID of the post</li>
 </ul>
-</div><h4 id='method.insert' class='method'><code>fn <a href='#method.insert' class='fnname'>insert</a>(&amp;self, request: <a class='struct' href='../google_blogger3/struct.Post.html' title='google_blogger3::Post'>Post</a>, blog_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_blogger3/struct.PostInsertCall.html' title='google_blogger3::PostInsertCall'>PostInsertCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.insert' class='method'><code>fn <a href='#method.insert' class='fnname'>insert</a>(&amp;self, request: <a class='struct' href='../google_blogger3/struct.Post.html' title='google_blogger3::Post'>Post</a>, blog_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_blogger3/struct.PostInsertCall.html' title='google_blogger3::PostInsertCall'>PostInsertCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Add a post.</p>
@@ -116,7 +116,7 @@ It is not used directly, but through the <code>Blogger</code> hub.</p>
 <li><code>request</code> - No description provided.</li>
 <li><code>blogId</code> - ID of the blog to add the post to.</li>
 </ul>
-</div><h4 id='method.publish' class='method'><code>fn <a href='#method.publish' class='fnname'>publish</a>(&amp;self, blog_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, post_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_blogger3/struct.PostPublishCall.html' title='google_blogger3::PostPublishCall'>PostPublishCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.publish' class='method'><code>fn <a href='#method.publish' class='fnname'>publish</a>(&amp;self, blog_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, post_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_blogger3/struct.PostPublishCall.html' title='google_blogger3::PostPublishCall'>PostPublishCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Publishes a draft post, optionally at the specific time of the given publishDate parameter.</p>
@@ -126,7 +126,7 @@ It is not used directly, but through the <code>Blogger</code> hub.</p>
 <li><code>blogId</code> - The ID of the Blog.</li>
 <li><code>postId</code> - The ID of the Post.</li>
 </ul>
-</div><h4 id='method.delete' class='method'><code>fn <a href='#method.delete' class='fnname'>delete</a>(&amp;self, blog_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, post_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_blogger3/struct.PostDeleteCall.html' title='google_blogger3::PostDeleteCall'>PostDeleteCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.delete' class='method'><code>fn <a href='#method.delete' class='fnname'>delete</a>(&amp;self, blog_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, post_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_blogger3/struct.PostDeleteCall.html' title='google_blogger3::PostDeleteCall'>PostDeleteCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Delete a post by ID.</p>
@@ -136,7 +136,7 @@ It is not used directly, but through the <code>Blogger</code> hub.</p>
 <li><code>blogId</code> - The ID of the Blog.</li>
 <li><code>postId</code> - The ID of the Post.</li>
 </ul>
-</div><h4 id='method.revert' class='method'><code>fn <a href='#method.revert' class='fnname'>revert</a>(&amp;self, blog_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, post_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_blogger3/struct.PostRevertCall.html' title='google_blogger3::PostRevertCall'>PostRevertCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.revert' class='method'><code>fn <a href='#method.revert' class='fnname'>revert</a>(&amp;self, blog_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, post_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_blogger3/struct.PostRevertCall.html' title='google_blogger3::PostRevertCall'>PostRevertCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Revert a published or scheduled post to draft state.</p>
@@ -146,7 +146,7 @@ It is not used directly, but through the <code>Blogger</code> hub.</p>
 <li><code>blogId</code> - The ID of the Blog.</li>
 <li><code>postId</code> - The ID of the Post.</li>
 </ul>
-</div><h4 id='method.search' class='method'><code>fn <a href='#method.search' class='fnname'>search</a>(&amp;self, blog_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, q: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_blogger3/struct.PostSearchCall.html' title='google_blogger3::PostSearchCall'>PostSearchCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.search' class='method'><code>fn <a href='#method.search' class='fnname'>search</a>(&amp;self, blog_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, q: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_blogger3/struct.PostSearchCall.html' title='google_blogger3::PostSearchCall'>PostSearchCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Search for a post.</p>
@@ -156,7 +156,7 @@ It is not used directly, but through the <code>Blogger</code> hub.</p>
 <li><code>blogId</code> - ID of the blog to fetch the post from.</li>
 <li><code>q</code> - Query terms to search this blog for matching posts.</li>
 </ul>
-</div><h4 id='method.patch' class='method'><code>fn <a href='#method.patch' class='fnname'>patch</a>(&amp;self, request: <a class='struct' href='../google_blogger3/struct.Post.html' title='google_blogger3::Post'>Post</a>, blog_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, post_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_blogger3/struct.PostPatchCall.html' title='google_blogger3::PostPatchCall'>PostPatchCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.patch' class='method'><code>fn <a href='#method.patch' class='fnname'>patch</a>(&amp;self, request: <a class='struct' href='../google_blogger3/struct.Post.html' title='google_blogger3::Post'>Post</a>, blog_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, post_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_blogger3/struct.PostPatchCall.html' title='google_blogger3::PostPatchCall'>PostPatchCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Update a post. This method supports patch semantics.</p>
@@ -167,7 +167,7 @@ It is not used directly, but through the <code>Blogger</code> hub.</p>
 <li><code>blogId</code> - The ID of the Blog.</li>
 <li><code>postId</code> - The ID of the Post.</li>
 </ul>
-</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self, blog_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_blogger3/struct.PostListCall.html' title='google_blogger3::PostListCall'>PostListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self, blog_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_blogger3/struct.PostListCall.html' title='google_blogger3::PostListCall'>PostListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Retrieves a list of posts, possibly filtered.</p>
@@ -176,7 +176,7 @@ It is not used directly, but through the <code>Blogger</code> hub.</p>
 <ul>
 <li><code>blogId</code> - ID of the blog to fetch posts from.</li>
 </ul>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_blogger3/trait.MethodsBuilder.html' title='google_blogger3::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_blogger3/struct.PostMethods.html' title='google_blogger3::PostMethods'>PostMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-7245' class='srclink' href='../src/google_blogger3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-blogger3-b49083ad0cf44399/out/lib.rs.html#15147' title='goto source code'>[src]</a></span></h3>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='trait' href='../google_blogger3/trait.MethodsBuilder.html' title='google_blogger3::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_blogger3/struct.PostMethods.html' title='google_blogger3::PostMethods'>PostMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-6669' class='srclink' href='../src/google_blogger3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-blogger3-3752420fe98c47f4/out/lib.rs.html#11743' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 

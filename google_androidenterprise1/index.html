@@ -47,8 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-0' class='srclink' href='../src/google_androidenterprise1/src/lib.rs.html#5-222' title='goto source code'>[src]</a></span></h1>
-<div class='docblock'><p>This documentation was generated from <em>Android Enterprise</em> crate version <em>0.1.14+20160331</em>, where <em>20160331</em> is the exact revision of the <em>androidenterprise:v1</em> schema built by the <a href="http://www.makotemplates.org/">mako</a> code generator <em>v0.1.14</em>.</p>
+               </span><a id='src-0' class='srclink' href='../src/google_androidenterprise1/src/lib.rs.html#5-228' title='goto source code'>[src]</a></span></h1>
+<div class='docblock'><p>This documentation was generated from <em>Android Enterprise</em> crate version <em>0.1.15+20160831</em>, where <em>20160831</em> is the exact revision of the <em>androidenterprise:v1</em> schema built by the <a href="http://www.makotemplates.org/">mako</a> code generator <em>v0.1.15</em>.</p>
 
 <p>Everything else about the <em>Android Enterprise</em> <em>v1</em> API can be found at the
 <a href="https://developers.google.com/android/work/play/emm-api">official documentation site</a>.
@@ -76,7 +76,7 @@ The original source code is <a href="https://github.com/Byron/google-apis-rs/tre
 <li><a href="struct.Enterprise.html">enterprises</a>
 
 <ul>
-<li><a href="struct.EnterpriseDeleteCall.html"><em>delete</em></a>, <a href="struct.EnterpriseEnrollCall.html"><em>enroll</em></a>, <a href="struct.EnterpriseGetCall.html"><em>get</em></a>, <a href="struct.EnterpriseGetStoreLayoutCall.html"><em>get store layout</em></a>, <a href="struct.EnterpriseInsertCall.html"><em>insert</em></a>, <a href="struct.EnterpriseListCall.html"><em>list</em></a>, <a href="struct.EnterpriseSendTestPushNotificationCall.html"><em>send test push notification</em></a>, <a href="struct.EnterpriseSetAccountCall.html"><em>set account</em></a>, <a href="struct.EnterpriseSetStoreLayoutCall.html"><em>set store layout</em></a> and <a href="struct.EnterpriseUnenrollCall.html"><em>unenroll</em></a></li>
+<li><a href="struct.EnterpriseAcknowledgeNotificationSetCall.html"><em>acknowledge notification set</em></a>, <a href="struct.EnterpriseCompleteSignupCall.html"><em>complete signup</em></a>, <a href="struct.EnterpriseDeleteCall.html"><em>delete</em></a>, <a href="struct.EnterpriseEnrollCall.html"><em>enroll</em></a>, <a href="struct.EnterpriseGenerateSignupUrlCall.html"><em>generate signup url</em></a>, <a href="struct.EnterpriseGetCall.html"><em>get</em></a>, <a href="struct.EnterpriseGetServiceAccountCall.html"><em>get service account</em></a>, <a href="struct.EnterpriseGetStoreLayoutCall.html"><em>get store layout</em></a>, <a href="struct.EnterpriseInsertCall.html"><em>insert</em></a>, <a href="struct.EnterpriseListCall.html"><em>list</em></a>, <a href="struct.EnterprisePullNotificationSetCall.html"><em>pull notification set</em></a>, <a href="struct.EnterpriseSendTestPushNotificationCall.html"><em>send test push notification</em></a>, <a href="struct.EnterpriseSetAccountCall.html"><em>set account</em></a>, <a href="struct.EnterpriseSetStoreLayoutCall.html"><em>set store layout</em></a> and <a href="struct.EnterpriseUnenrollCall.html"><em>unenroll</em></a></li>
 </ul></li>
 <li><a href="struct.Entitlement.html">entitlements</a>
 
@@ -98,6 +98,16 @@ The original source code is <a href="https://github.com/Byron/google-apis-rs/tre
 <ul>
 <li><a href="struct.InstallDeleteCall.html"><em>delete</em></a>, <a href="struct.InstallGetCall.html"><em>get</em></a>, <a href="struct.InstallListCall.html"><em>list</em></a>, <a href="struct.InstallPatchCall.html"><em>patch</em></a> and <a href="struct.InstallUpdateCall.html"><em>update</em></a></li>
 </ul></li>
+<li>managedconfigurationsfordevice
+
+<ul>
+<li><a href="struct.ManagedconfigurationsfordeviceDeleteCall.html"><em>delete</em></a>, <a href="struct.ManagedconfigurationsfordeviceGetCall.html"><em>get</em></a>, <a href="struct.ManagedconfigurationsfordeviceListCall.html"><em>list</em></a>, <a href="struct.ManagedconfigurationsfordevicePatchCall.html"><em>patch</em></a> and <a href="struct.ManagedconfigurationsfordeviceUpdateCall.html"><em>update</em></a></li>
+</ul></li>
+<li>managedconfigurationsforuser
+
+<ul>
+<li><a href="struct.ManagedconfigurationsforuserDeleteCall.html"><em>delete</em></a>, <a href="struct.ManagedconfigurationsforuserGetCall.html"><em>get</em></a>, <a href="struct.ManagedconfigurationsforuserListCall.html"><em>list</em></a>, <a href="struct.ManagedconfigurationsforuserPatchCall.html"><em>patch</em></a> and <a href="struct.ManagedconfigurationsforuserUpdateCall.html"><em>update</em></a></li>
+</ul></li>
 <li><a href="struct.Permission.html">permissions</a>
 
 <ul>
@@ -106,7 +116,12 @@ The original source code is <a href="https://github.com/Byron/google-apis-rs/tre
 <li><a href="struct.Product.html">products</a>
 
 <ul>
-<li><a href="struct.ProductApproveCall.html"><em>approve</em></a>, <a href="struct.ProductGenerateApprovalUrlCall.html"><em>generate approval url</em></a>, <a href="struct.ProductGetCall.html"><em>get</em></a>, <a href="struct.ProductGetAppRestrictionsSchemaCall.html"><em>get app restrictions schema</em></a>, <a href="struct.ProductGetPermissionCall.html"><em>get permissions</em></a> and <a href="struct.ProductUpdatePermissionCall.html"><em>update permissions</em></a></li>
+<li><a href="struct.ProductApproveCall.html"><em>approve</em></a>, <a href="struct.ProductGenerateApprovalUrlCall.html"><em>generate approval url</em></a>, <a href="struct.ProductGetCall.html"><em>get</em></a>, <a href="struct.ProductGetAppRestrictionsSchemaCall.html"><em>get app restrictions schema</em></a>, <a href="struct.ProductGetPermissionCall.html"><em>get permissions</em></a>, <a href="struct.ProductListCall.html"><em>list</em></a>, <a href="struct.ProductUnapproveCall.html"><em>unapprove</em></a> and <a href="struct.ProductUpdatePermissionCall.html"><em>update permissions</em></a></li>
+</ul></li>
+<li>serviceaccountkeys
+
+<ul>
+<li><a href="struct.ServiceaccountkeyDeleteCall.html"><em>delete</em></a>, <a href="struct.ServiceaccountkeyInsertCall.html"><em>insert</em></a> and <a href="struct.ServiceaccountkeyListCall.html"><em>list</em></a></li>
 </ul></li>
 <li>storelayoutclusters
 
@@ -121,7 +136,7 @@ The original source code is <a href="https://github.com/Byron/google-apis-rs/tre
 <li><a href="struct.User.html">users</a>
 
 <ul>
-<li><a href="struct.UserGenerateTokenCall.html"><em>generate token</em></a>, <a href="struct.UserGetCall.html"><em>get</em></a>, <a href="struct.UserGetAvailableProductSetCall.html"><em>get available product set</em></a>, <a href="struct.UserListCall.html"><em>list</em></a>, <a href="struct.UserRevokeTokenCall.html"><em>revoke token</em></a> and <a href="struct.UserSetAvailableProductSetCall.html"><em>set available product set</em></a></li>
+<li><a href="struct.UserDeleteCall.html"><em>delete</em></a>, <a href="struct.UserGenerateAuthenticationTokenCall.html"><em>generate authentication token</em></a>, <a href="struct.UserGenerateTokenCall.html"><em>generate token</em></a>, <a href="struct.UserGetCall.html"><em>get</em></a>, <a href="struct.UserGetAvailableProductSetCall.html"><em>get available product set</em></a>, <a href="struct.UserInsertCall.html"><em>insert</em></a>, <a href="struct.UserListCall.html"><em>list</em></a>, <a href="struct.UserPatchCall.html"><em>patch</em></a>, <a href="struct.UserRevokeTokenCall.html"><em>revoke token</em></a>, <a href="struct.UserSetAvailableProductSetCall.html"><em>set available product set</em></a> and <a href="struct.UserUpdateCall.html"><em>update</em></a></li>
 </ul></li>
 </ul>
 
@@ -168,15 +183,20 @@ allow access to individual <a href="trait.CallBuilder.html"><em>Call Builders</e
 
 <pre class='rust rust-example-rendered'>
 <span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>enterprises</span>().<span class='ident'>send_test_push_notification</span>(...).<span class='ident'>doit</span>()
-<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>enterprises</span>().<span class='ident'>set_store_layout</span>(...).<span class='ident'>doit</span>()
 <span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>enterprises</span>().<span class='ident'>get_store_layout</span>(...).<span class='ident'>doit</span>()
+<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>enterprises</span>().<span class='ident'>get_service_account</span>(...).<span class='ident'>doit</span>()
+<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>enterprises</span>().<span class='ident'>acknowledge_notification_set</span>(...).<span class='ident'>doit</span>()
+<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>enterprises</span>().<span class='ident'>set_store_layout</span>(...).<span class='ident'>doit</span>()
+<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>enterprises</span>().<span class='ident'>insert</span>(...).<span class='ident'>doit</span>()
+<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>enterprises</span>().<span class='ident'>complete_signup</span>(...).<span class='ident'>doit</span>()
 <span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>enterprises</span>().<span class='ident'>list</span>(...).<span class='ident'>doit</span>()
 <span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>enterprises</span>().<span class='ident'>unenroll</span>(...).<span class='ident'>doit</span>()
 <span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>enterprises</span>().<span class='ident'>set_account</span>(...).<span class='ident'>doit</span>()
-<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>enterprises</span>().<span class='ident'>delete</span>(...).<span class='ident'>doit</span>()
+<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>enterprises</span>().<span class='ident'>pull_notification_set</span>(...).<span class='ident'>doit</span>()
 <span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>enterprises</span>().<span class='ident'>enroll</span>(...).<span class='ident'>doit</span>()
-<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>enterprises</span>().<span class='ident'>insert</span>(...).<span class='ident'>doit</span>()
-<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>enterprises</span>().<span class='ident'>get</span>(...).<span class='ident'>doit</span>()</pre>
+<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>enterprises</span>().<span class='ident'>get</span>(...).<span class='ident'>doit</span>()
+<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>enterprises</span>().<span class='ident'>delete</span>(...).<span class='ident'>doit</span>()
+<span class='kw'>let</span> <span class='ident'>r</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>enterprises</span>().<span class='ident'>generate_signup_url</span>(...).<span class='ident'>doit</span>()</pre>
 
 <p>The <code>resource()</code> and <code>activity(...)</code> calls create <a href="http://en.wikipedia.org/wiki/Builder_pattern">builders</a>. The second one dealing with <code>Activities</code> 
 supports various methods to configure the impending operation (not shown here). It is made such that all required arguments have to be 
@@ -196,7 +216,6 @@ google-androidenterprise1 = &quot;*&quot;
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>hyper</span>;
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>yup_oauth2</span> <span class='kw'>as</span> <span class='ident'>oauth2</span>;
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>google_androidenterprise1</span> <span class='kw'>as</span> <span class='ident'>androidenterprise1</span>;
-<span class='kw'>use</span> <span class='ident'>androidenterprise1</span>::<span class='ident'>StoreLayout</span>;
 <span class='kw'>use</span> <span class='ident'>androidenterprise1</span>::{<span class='prelude-ty'>Result</span>, <span class='ident'>Error</span>};
 <span class='kw'>use</span> <span class='ident'>std</span>::<span class='ident'>default</span>::<span class='ident'>Default</span>;
 <span class='kw'>use</span> <span class='ident'>oauth2</span>::{<span class='ident'>Authenticator</span>, <span class='ident'>DefaultAuthenticatorDelegate</span>, <span class='ident'>ApplicationSecret</span>, <span class='ident'>MemoryStorage</span>};
@@ -214,15 +233,11 @@ google-androidenterprise1 = &quot;*&quot;
                               <span class='ident'>hyper</span>::<span class='ident'>Client</span>::<span class='ident'>new</span>(),
                               <span class='op'>&lt;</span><span class='ident'>MemoryStorage</span> <span class='kw'>as</span> <span class='ident'>Default</span><span class='op'>&gt;</span>::<span class='ident'>default</span>(), <span class='prelude-val'>None</span>);
 <span class='kw'>let</span> <span class='kw-2'>mut</span> <span class='ident'>hub</span> <span class='op'>=</span> <span class='ident'>AndroidEnterprise</span>::<span class='ident'>new</span>(<span class='ident'>hyper</span>::<span class='ident'>Client</span>::<span class='ident'>new</span>(), <span class='ident'>auth</span>);
-<span class='comment'>// As the method needs a request, you would usually fill it with the desired information</span>
-<span class='comment'>// into the respective structure. Some of the parts shown here might not be applicable !</span>
-<span class='comment'>// Values shown here are possibly random and not representative !</span>
-<span class='kw'>let</span> <span class='kw-2'>mut</span> <span class='ident'>req</span> <span class='op'>=</span> <span class='ident'>StoreLayout</span>::<span class='ident'>default</span>();
- 
 <span class='comment'>// You can configure optional parameters by calling the respective setters at will, and</span>
 <span class='comment'>// execute the final call using `doit()`.</span>
 <span class='comment'>// Values shown here are possibly random and not representative !</span>
-<span class='kw'>let</span> <span class='ident'>result</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>enterprises</span>().<span class='ident'>set_store_layout</span>(<span class='ident'>req</span>, <span class='string'>&quot;enterpriseId&quot;</span>)
+<span class='kw'>let</span> <span class='ident'>result</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>enterprises</span>().<span class='ident'>get_service_account</span>(<span class='string'>&quot;enterpriseId&quot;</span>)
+             .<span class='ident'>key_type</span>(<span class='string'>&quot;dolor&quot;</span>)
              .<span class='ident'>doit</span>();
  
 <span class='kw'>match</span> <span class='ident'>result</span> {
@@ -290,6 +305,13 @@ These will always take a single argument, for which the following statements are
 </div><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
 <table>
                        <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Administrator.html'
+                                  title='google_androidenterprise1::Administrator'>Administrator</a></td>
+                           <td class='docblock short'>
+                                <p>This represents an enterprise administrator who can manage the enterprise in the Google Play for Work Store.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
                            <td><a class='struct' href='struct.AndroidEnterprise.html'
                                   title='google_androidenterprise1::AndroidEnterprise'>AndroidEnterprise</a></td>
                            <td class='docblock short'>
@@ -301,6 +323,13 @@ These will always take a single argument, for which the following statements are
                                   title='google_androidenterprise1::AppRestrictionsSchema'>AppRestrictionsSchema</a></td>
                            <td class='docblock short'>
                                 <p>Represents the list of app restrictions available to be pre-configured for the product.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AppRestrictionsSchemaChangeEvent.html'
+                                  title='google_androidenterprise1::AppRestrictionsSchemaChangeEvent'>AppRestrictionsSchemaChangeEvent</a></td>
+                           <td class='docblock short'>
+                                <p>An event generated when a new app version is uploaded to Google Play and its app restrictions schema changed. To fetch the app restrictions schema for an app, use Products.getAppRestrictionsSchema on the EMM API.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
@@ -318,6 +347,13 @@ These will always take a single argument, for which the following statements are
                            </td>
                        </tr>
                        <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AppUpdateEvent.html'
+                                  title='google_androidenterprise1::AppUpdateEvent'>AppUpdateEvent</a></td>
+                           <td class='docblock short'>
+                                <p>An event generated when a new version of an app is uploaded to Google Play. Notifications are sent for new public versions only: alpha, beta, or canary versions do not generate this event. To fetch up-to-date version history for an app, use Products.Get on the EMM API.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
                            <td><a class='struct' href='struct.AppVersion.html'
                                   title='google_androidenterprise1::AppVersion'>AppVersion</a></td>
                            <td class='docblock short'>
@@ -329,6 +365,13 @@ These will always take a single argument, for which the following statements are
                                   title='google_androidenterprise1::ApprovalUrlInfo'>ApprovalUrlInfo</a></td>
                            <td class='docblock short'>
                                 <p>Information on an approval URL.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AuthenticationToken.html'
+                                  title='google_androidenterprise1::AuthenticationToken'>AuthenticationToken</a></td>
+                           <td class='docblock short'>
+                                <p>An AuthenticationToken is used by the EMM&#39;s device policy client on a device to provision the given EMM-managed user on that device.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
@@ -471,7 +514,7 @@ set.</p>
                            <td><a class='struct' href='struct.DeviceGetStateCall.html'
                                   title='google_androidenterprise1::DeviceGetStateCall'>DeviceGetStateCall</a></td>
                            <td class='docblock short'>
-                                <p>Retrieves whether a device is enabled or disabled for access by the user to Google services. The device state takes effect only if enforcing EMM policies on Android devices is enabled in the Google Admin Console. Otherwise, the device state is ignored and all devices are allowed access to Google services.</p>
+                                <p>Retrieves whether a device&#39;s access to Google services is enabled or disabled. The device state takes effect only if enforcing EMM policies on Android devices is enabled in the Google Admin Console. Otherwise, the device state is ignored and all devices are allowed access to Google services. This is only supported for Google-managed users.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
@@ -493,7 +536,7 @@ It is not used directly, but through the <code>AndroidEnterprise</code> hub.</p>
                            <td><a class='struct' href='struct.DeviceSetStateCall.html'
                                   title='google_androidenterprise1::DeviceSetStateCall'>DeviceSetStateCall</a></td>
                            <td class='docblock short'>
-                                <p>Sets whether a device is enabled or disabled for access by the user to Google services. The device state takes effect only if enforcing EMM policies on Android devices is enabled in the Google Admin Console. Otherwise, the device state is ignored and all devices are allowed access to Google services.</p>
+                                <p>Sets whether a device&#39;s access to Google services is enabled or disabled. The device state takes effect only if enforcing EMM policies on Android devices is enabled in the Google Admin Console. Otherwise, the device state is ignored and all devices are allowed access to Google services. This is only supported for Google-managed users.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
@@ -514,7 +557,9 @@ It is not used directly, but through the <code>AndroidEnterprise</code> hub.</p>
                            <td><a class='struct' href='struct.Enterprise.html'
                                   title='google_androidenterprise1::Enterprise'>Enterprise</a></td>
                            <td class='docblock short'>
-                                <p>An enterprise resource represents a binding between an organization and their EMM.</p>
+                                <p>An Enterprises resource represents the binding between an EMM and a specific organization. That binding can be instantiated in one of two different ways using this API as follows:
+- For Google managed domain customers, the process involves using Enterprises.enroll and Enterprises.setAccount (in conjunction with artifacts obtained from the Admin console and the Google API Console) and submitted to the EMM through a more-or-less manual process. 
+- For Android for Work Accounts customers, the process involves using Enterprises.generateSignupUrl and Enterprises.completeSignup in conjunction with the Android for Work Sign-up UI (Google-provided mechanism) to create the binding without manual steps. As an EMM, you can support either or both approaches in your EMM console. See Create an Enterprise for details.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
@@ -522,6 +567,20 @@ It is not used directly, but through the <code>AndroidEnterprise</code> hub.</p>
                                   title='google_androidenterprise1::EnterpriseAccount'>EnterpriseAccount</a></td>
                            <td class='docblock short'>
                                 <p>A service account that can be used to authenticate as the enterprise to API calls that require such authentication.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.EnterpriseAcknowledgeNotificationSetCall.html'
+                                  title='google_androidenterprise1::EnterpriseAcknowledgeNotificationSetCall'>EnterpriseAcknowledgeNotificationSetCall</a></td>
+                           <td class='docblock short'>
+                                <p>Acknowledges notifications that were received from Enterprises.PullNotificationSet to prevent subsequent calls from returning the same notifications.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.EnterpriseCompleteSignupCall.html'
+                                  title='google_androidenterprise1::EnterpriseCompleteSignupCall'>EnterpriseCompleteSignupCall</a></td>
+                           <td class='docblock short'>
+                                <p>Completes the signup flow, by specifying the Completion token and Enterprise token. This request must not be called multiple times for a given Enterprise Token.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
@@ -539,6 +598,13 @@ It is not used directly, but through the <code>AndroidEnterprise</code> hub.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
+                           <td><a class='struct' href='struct.EnterpriseGenerateSignupUrlCall.html'
+                                  title='google_androidenterprise1::EnterpriseGenerateSignupUrlCall'>EnterpriseGenerateSignupUrlCall</a></td>
+                           <td class='docblock short'>
+                                <p>Generates a sign-up URL.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
                            <td><a class='struct' href='struct.EnterpriseGetCall.html'
                                   title='google_androidenterprise1::EnterpriseGetCall'>EnterpriseGetCall</a></td>
                            <td class='docblock short'>
@@ -546,10 +612,17 @@ It is not used directly, but through the <code>AndroidEnterprise</code> hub.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
+                           <td><a class='struct' href='struct.EnterpriseGetServiceAccountCall.html'
+                                  title='google_androidenterprise1::EnterpriseGetServiceAccountCall'>EnterpriseGetServiceAccountCall</a></td>
+                           <td class='docblock short'>
+                                <p>Returns a service account and credentials. The service account can be bound to the enterprise by calling setAccount. The service account is unique to this enterprise and EMM, and will be deleted if the enterprise is unbound. The credentials contain private key data and are not stored server-side.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
                            <td><a class='struct' href='struct.EnterpriseGetStoreLayoutCall.html'
                                   title='google_androidenterprise1::EnterpriseGetStoreLayoutCall'>EnterpriseGetStoreLayoutCall</a></td>
                            <td class='docblock short'>
-                                <p>Returns the store layout resource.</p>
+                                <p>Returns the store layout for the enterprise. If the store layout has not been set, or if the store layout has no homepageId set, returns a NOT_FOUND error.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
@@ -563,7 +636,7 @@ It is not used directly, but through the <code>AndroidEnterprise</code> hub.</p>
                            <td><a class='struct' href='struct.EnterpriseListCall.html'
                                   title='google_androidenterprise1::EnterpriseListCall'>EnterpriseListCall</a></td>
                            <td class='docblock short'>
-                                <p>Looks up an enterprise by domain name.</p>
+                                <p>Looks up an enterprise by domain name. This is only supported for enterprises created via the Google-initiated creation flow. Lookup of the id is not needed for enterprises created via the EMM-initiated flow since the EMM learns the enterprise ID in the callback specified in the Enterprises.generateSignupUrl call.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
@@ -572,6 +645,16 @@ It is not used directly, but through the <code>AndroidEnterprise</code> hub.</p>
                            <td class='docblock short'>
                                 <p>A builder providing access to all methods supported on <em>enterprise</em> resources.
 It is not used directly, but through the <code>AndroidEnterprise</code> hub.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.EnterprisePullNotificationSetCall.html'
+                                  title='google_androidenterprise1::EnterprisePullNotificationSetCall'>EnterprisePullNotificationSetCall</a></td>
+                           <td class='docblock short'>
+                                <p>Pulls and returns a notification set for the enterprises associated with the service account authenticated for the request. The notification set may be empty if no notification are pending.
+A notification set returned needs to be acknowledged within 20 seconds by calling Enterprises.AcknowledgeNotificationSet, unless the notification set is empty.
+Notifications that are not acknowledged within the 20 seconds will eventually be included again in the response to another PullNotificationSet request, and those that are never acknowledged will ultimately be deleted according to the Google Cloud Platform Pub/Sub system policy.
+Multiple requests might be performed concurrently to retrieve notifications, in which case the pending notifications (if any) will be split among each caller, if any are pending.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
@@ -592,7 +675,7 @@ It is not used directly, but through the <code>AndroidEnterprise</code> hub.</p>
                            <td><a class='struct' href='struct.EnterpriseSetStoreLayoutCall.html'
                                   title='google_androidenterprise1::EnterpriseSetStoreLayoutCall'>EnterpriseSetStoreLayoutCall</a></td>
                            <td class='docblock short'>
-                                <p>Sets the store layout resource.</p>
+                                <p>Sets the store layout for the enterprise.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
@@ -754,6 +837,13 @@ It is not used directly, but through the <code>AndroidEnterprise</code> hub.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
+                           <td><a class='struct' href='struct.InstallFailureEvent.html'
+                                  title='google_androidenterprise1::InstallFailureEvent'>InstallFailureEvent</a></td>
+                           <td class='docblock short'>
+                                <p>An event generated when an app installation failed on a device</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
                            <td><a class='struct' href='struct.InstallGetCall.html'
                                   title='google_androidenterprise1::InstallGetCall'>InstallGetCall</a></td>
                            <td class='docblock short'>
@@ -804,6 +894,127 @@ It is not used directly, but through the <code>AndroidEnterprise</code> hub.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagedConfiguration.html'
+                                  title='google_androidenterprise1::ManagedConfiguration'>ManagedConfiguration</a></td>
+                           <td class='docblock short'>
+                                <p>A managed configuration resource contains the set of managed properties that have been configured for an Android app. The app&#39;s developer would have defined configurable properties in the managed configurations schema.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagedConfigurationsForDeviceListResponse.html'
+                                  title='google_androidenterprise1::ManagedConfigurationsForDeviceListResponse'>ManagedConfigurationsForDeviceListResponse</a></td>
+                           <td class='docblock short'>
+                                <p>The managed configuration resources for the device.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagedConfigurationsForUserListResponse.html'
+                                  title='google_androidenterprise1::ManagedConfigurationsForUserListResponse'>ManagedConfigurationsForUserListResponse</a></td>
+                           <td class='docblock short'>
+                                <p>The managed configuration resources for the user.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagedProperty.html'
+                                  title='google_androidenterprise1::ManagedProperty'>ManagedProperty</a></td>
+                           <td class='docblock short'>
+                                <p>A managed property of a managed configuration. The property must match one of the properties in the app restrictions schema of the product. Exactly one of the value fields must be populated, and it must match the property&#39;s type in the app restrictions schema.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagedPropertyBundle.html'
+                                  title='google_androidenterprise1::ManagedPropertyBundle'>ManagedPropertyBundle</a></td>
+                           <td class='docblock short'>
+                                <p>A bundle of managed properties.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagedconfigurationsfordeviceDeleteCall.html'
+                                  title='google_androidenterprise1::ManagedconfigurationsfordeviceDeleteCall'>ManagedconfigurationsfordeviceDeleteCall</a></td>
+                           <td class='docblock short'>
+                                <p>Removes a per-device managed configuration for an app for the specified device.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagedconfigurationsfordeviceGetCall.html'
+                                  title='google_androidenterprise1::ManagedconfigurationsfordeviceGetCall'>ManagedconfigurationsfordeviceGetCall</a></td>
+                           <td class='docblock short'>
+                                <p>Retrieves details of a per-device managed configuration.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagedconfigurationsfordeviceListCall.html'
+                                  title='google_androidenterprise1::ManagedconfigurationsfordeviceListCall'>ManagedconfigurationsfordeviceListCall</a></td>
+                           <td class='docblock short'>
+                                <p>Lists all the per-device managed configurations for the specified device. Only the ID is set.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagedconfigurationsfordeviceMethods.html'
+                                  title='google_androidenterprise1::ManagedconfigurationsfordeviceMethods'>ManagedconfigurationsfordeviceMethods</a></td>
+                           <td class='docblock short'>
+                                <p>A builder providing access to all methods supported on <em>managedconfigurationsfordevice</em> resources.
+It is not used directly, but through the <code>AndroidEnterprise</code> hub.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagedconfigurationsfordevicePatchCall.html'
+                                  title='google_androidenterprise1::ManagedconfigurationsfordevicePatchCall'>ManagedconfigurationsfordevicePatchCall</a></td>
+                           <td class='docblock short'>
+                                <p>Adds or updates a per-device managed configuration for an app for the specified device. This method supports patch semantics.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagedconfigurationsfordeviceUpdateCall.html'
+                                  title='google_androidenterprise1::ManagedconfigurationsfordeviceUpdateCall'>ManagedconfigurationsfordeviceUpdateCall</a></td>
+                           <td class='docblock short'>
+                                <p>Adds or updates a per-device managed configuration for an app for the specified device.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagedconfigurationsforuserDeleteCall.html'
+                                  title='google_androidenterprise1::ManagedconfigurationsforuserDeleteCall'>ManagedconfigurationsforuserDeleteCall</a></td>
+                           <td class='docblock short'>
+                                <p>Removes a per-user managed configuration for an app for the specified user.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagedconfigurationsforuserGetCall.html'
+                                  title='google_androidenterprise1::ManagedconfigurationsforuserGetCall'>ManagedconfigurationsforuserGetCall</a></td>
+                           <td class='docblock short'>
+                                <p>Retrieves details of a per-user managed configuration for an app for the specified user.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagedconfigurationsforuserListCall.html'
+                                  title='google_androidenterprise1::ManagedconfigurationsforuserListCall'>ManagedconfigurationsforuserListCall</a></td>
+                           <td class='docblock short'>
+                                <p>Lists all the per-user managed configurations for the specified user. Only the ID is set.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagedconfigurationsforuserMethods.html'
+                                  title='google_androidenterprise1::ManagedconfigurationsforuserMethods'>ManagedconfigurationsforuserMethods</a></td>
+                           <td class='docblock short'>
+                                <p>A builder providing access to all methods supported on <em>managedconfigurationsforuser</em> resources.
+It is not used directly, but through the <code>AndroidEnterprise</code> hub.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagedconfigurationsforuserPatchCall.html'
+                                  title='google_androidenterprise1::ManagedconfigurationsforuserPatchCall'>ManagedconfigurationsforuserPatchCall</a></td>
+                           <td class='docblock short'>
+                                <p>Adds or updates a per-user managed configuration for an app for the specified user. This method supports patch semantics.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ManagedconfigurationsforuserUpdateCall.html'
+                                  title='google_androidenterprise1::ManagedconfigurationsforuserUpdateCall'>ManagedconfigurationsforuserUpdateCall</a></td>
+                           <td class='docblock short'>
+                                <p>Adds or updates a per-user managed configuration for an app for the specified user.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
                            <td><a class='struct' href='struct.MethodInfo.html'
                                   title='google_androidenterprise1::MethodInfo'>MethodInfo</a></td>
                            <td class='docblock short'>
@@ -818,6 +1029,34 @@ It is not used directly, but through the <code>AndroidEnterprise</code> hub.</p>
 identified by <a href="https://tools.ietf.org/html/rfc2387">RFC2387</a>.
 <strong>Note</strong>: This implementation is just as rich as it needs to be to perform uploads
 to google APIs, and might not be a fully-featured implementation.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.NewPermissionsEvent.html'
+                                  title='google_androidenterprise1::NewPermissionsEvent'>NewPermissionsEvent</a></td>
+                           <td class='docblock short'>
+                                <p>An event generated when new permissions are added to an app.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Notification.html'
+                                  title='google_androidenterprise1::Notification'>Notification</a></td>
+                           <td class='docblock short'>
+                                <p>A notification of one event relating to an enterprise.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.NotificationSet.html'
+                                  title='google_androidenterprise1::NotificationSet'>NotificationSet</a></td>
+                           <td class='docblock short'>
+                                <p>A resource returned by the PullNotificationSet API, which contains a collection of notifications for enterprises associated with the service account authenticated for the request.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PageInfo.html'
+                                  title='google_androidenterprise1::PageInfo'>PageInfo</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
@@ -846,14 +1085,28 @@ It is not used directly, but through the <code>AndroidEnterprise</code> hub.</p>
                            <td><a class='struct' href='struct.Product.html'
                                   title='google_androidenterprise1::Product'>Product</a></td>
                            <td class='docblock short'>
-                                <p>A product represents an app in the Google Play Store that is available to at least some users in the enterprise. (Some apps are restricted to a single enterprise, and no information about them is made available outside that enterprise.)</p>
+                                <p>A Products resource represents an app in the Google Play Store that is available to at least some users in the enterprise. (Some apps are restricted to a single enterprise, and no information about them is made available outside that enterprise.)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ProductApprovalEvent.html'
+                                  title='google_androidenterprise1::ProductApprovalEvent'>ProductApprovalEvent</a></td>
+                           <td class='docblock short'>
+                                <p>An event generated when a product&#39;s approval status is changed.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
                            <td><a class='struct' href='struct.ProductApproveCall.html'
                                   title='google_androidenterprise1::ProductApproveCall'>ProductApproveCall</a></td>
                            <td class='docblock short'>
-                                <p>Approves the specified product (and the relevant app permissions, if any).</p>
+                                <p>Approves the specified product and the relevant app permissions, if any. The maximum number of products that you can approve per enterprise customer is 1,000.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ProductAvailabilityChangeEvent.html'
+                                  title='google_androidenterprise1::ProductAvailabilityChangeEvent'>ProductAvailabilityChangeEvent</a></td>
+                           <td class='docblock short'>
+                                <p>An event generated whenever a product&#39;s availability changes.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
@@ -867,7 +1120,7 @@ It is not used directly, but through the <code>AndroidEnterprise</code> hub.</p>
                            <td><a class='struct' href='struct.ProductGetAppRestrictionsSchemaCall.html'
                                   title='google_androidenterprise1::ProductGetAppRestrictionsSchemaCall'>ProductGetAppRestrictionsSchemaCall</a></td>
                            <td class='docblock short'>
-                                <p>Retrieves the schema defining app restrictions configurable for this product. All products have a schema, but this may be empty if no app restrictions are defined.</p>
+                                <p>Retrieves the schema that defines the configurable properties for this product. All products have a schema, but this schema may be empty if no managed configurations have been defined. This schema can be used to populate a UI that allows an administrator to configure the product. To apply a managed configuration based on the schema obtained using this API, see Managed Configurations through Play.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
@@ -882,6 +1135,13 @@ It is not used directly, but through the <code>AndroidEnterprise</code> hub.</p>
                                   title='google_androidenterprise1::ProductGetPermissionCall'>ProductGetPermissionCall</a></td>
                            <td class='docblock short'>
                                 <p>Retrieves the Android app permissions required by this app.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ProductListCall.html'
+                                  title='google_androidenterprise1::ProductListCall'>ProductListCall</a></td>
+                           <td class='docblock short'>
+                                <p>Finds approved products that match a query, or all approved products if there is no query.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
@@ -914,6 +1174,13 @@ It is not used directly, but through the <code>AndroidEnterprise</code> hub.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ProductUnapproveCall.html'
+                                  title='google_androidenterprise1::ProductUnapproveCall'>ProductUnapproveCall</a></td>
+                           <td class='docblock short'>
+                                <p>Unapproves the specified product (and the relevant app permissions, if any)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
                            <td><a class='struct' href='struct.ProductUpdatePermissionCall.html'
                                   title='google_androidenterprise1::ProductUpdatePermissionCall'>ProductUpdatePermissionCall</a></td>
                            <td class='docblock short'>
@@ -932,6 +1199,70 @@ It is not used directly, but through the <code>AndroidEnterprise</code> hub.</p>
                                   title='google_androidenterprise1::ProductsGenerateApprovalUrlResponse'>ProductsGenerateApprovalUrlResponse</a></td>
                            <td class='docblock short'>
                                 <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ProductsListResponse.html'
+                                  title='google_androidenterprise1::ProductsListResponse'>ProductsListResponse</a></td>
+                           <td class='docblock short'>
+                                <p>The matching products.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ServiceAccount.html'
+                                  title='google_androidenterprise1::ServiceAccount'>ServiceAccount</a></td>
+                           <td class='docblock short'>
+                                <p>A service account identity, including the name and credentials that can be used to authenticate as the service account.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ServiceAccountKey.html'
+                                  title='google_androidenterprise1::ServiceAccountKey'>ServiceAccountKey</a></td>
+                           <td class='docblock short'>
+                                <p>Credentials that can be used to authenticate as a service account.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ServiceAccountKeysListResponse.html'
+                                  title='google_androidenterprise1::ServiceAccountKeysListResponse'>ServiceAccountKeysListResponse</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ServiceaccountkeyDeleteCall.html'
+                                  title='google_androidenterprise1::ServiceaccountkeyDeleteCall'>ServiceaccountkeyDeleteCall</a></td>
+                           <td class='docblock short'>
+                                <p>Removes and invalidates the specified credentials for the service account associated with this enterprise. The calling service account must have been retrieved by calling Enterprises.GetServiceAccount and must have been set as the enterprise service account by calling Enterprises.SetAccount.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ServiceaccountkeyInsertCall.html'
+                                  title='google_androidenterprise1::ServiceaccountkeyInsertCall'>ServiceaccountkeyInsertCall</a></td>
+                           <td class='docblock short'>
+                                <p>Generates new credentials for the service account associated with this enterprise. The calling service account must have been retrieved by calling Enterprises.GetServiceAccount and must have been set as the enterprise service account by calling Enterprises.SetAccount.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ServiceaccountkeyListCall.html'
+                                  title='google_androidenterprise1::ServiceaccountkeyListCall'>ServiceaccountkeyListCall</a></td>
+                           <td class='docblock short'>
+                                <p>Lists all active credentials for the service account associated with this enterprise. Only the ID and key type are returned. The calling service account must have been retrieved by calling Enterprises.GetServiceAccount and must have been set as the enterprise service account by calling Enterprises.SetAccount.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ServiceaccountkeyMethods.html'
+                                  title='google_androidenterprise1::ServiceaccountkeyMethods'>ServiceaccountkeyMethods</a></td>
+                           <td class='docblock short'>
+                                <p>A builder providing access to all methods supported on <em>serviceaccountkey</em> resources.
+It is not used directly, but through the <code>AndroidEnterprise</code> hub.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SignupInfo.html'
+                                  title='google_androidenterprise1::SignupInfo'>SignupInfo</a></td>
+                           <td class='docblock short'>
+                                <p>A resource returned by the GenerateSignupUrl API, which contains the Signup URL and Completion Token.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
@@ -1070,10 +1401,33 @@ It is not used directly, but through the <code>AndroidEnterprise</code> hub.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
+                           <td><a class='struct' href='struct.TokenPagination.html'
+                                  title='google_androidenterprise1::TokenPagination'>TokenPagination</a></td>
+                           <td class='docblock short'>
+                                <p>There is no detailed description.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
                            <td><a class='struct' href='struct.User.html'
                                   title='google_androidenterprise1::User'>User</a></td>
                            <td class='docblock short'>
-                                <p>A user resource represents an individual user within the enterprise&#39;s domain.</p>
+                                <p>A Users resource represents an account associated with an enterprise. The account may be specific to a device or to an individual user (who can then use the account across multiple devices). The account may provide access to Google Play for Work only, or to other Google services, depending on the identity model:
+- Google managed domain identity model requires synchronization to Google account sources (via primaryEmail). 
+- Android for Work Accounts identity model provides a dynamic means for enterprises to create user or device accounts as needed. These accounts provide access to Google Play for Work only.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UserDeleteCall.html'
+                                  title='google_androidenterprise1::UserDeleteCall'>UserDeleteCall</a></td>
+                           <td class='docblock short'>
+                                <p>Deleted an EMM-managed user.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UserGenerateAuthenticationTokenCall.html'
+                                  title='google_androidenterprise1::UserGenerateAuthenticationTokenCall'>UserGenerateAuthenticationTokenCall</a></td>
+                           <td class='docblock short'>
+                                <p>Generates an authentication token which the device policy client can use to provision the given EMM-managed user account on a device. The generated token is single-use and expires after a few minutes.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
@@ -1098,10 +1452,17 @@ It is not used directly, but through the <code>AndroidEnterprise</code> hub.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UserInsertCall.html'
+                                  title='google_androidenterprise1::UserInsertCall'>UserInsertCall</a></td>
+                           <td class='docblock short'>
+                                <p>Creates a new EMM-managed user.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
                            <td><a class='struct' href='struct.UserListCall.html'
                                   title='google_androidenterprise1::UserListCall'>UserListCall</a></td>
                            <td class='docblock short'>
-                                <p>Looks up a user by their primary email address.</p>
+                                <p>Looks up a user by primary email address. This is only supported for Google-managed users. Lookup of the id is not needed for EMM-managed users because the id is already returned in the result of the Users.insert call.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
@@ -1110,6 +1471,13 @@ It is not used directly, but through the <code>AndroidEnterprise</code> hub.</p>
                            <td class='docblock short'>
                                 <p>A builder providing access to all methods supported on <em>user</em> resources.
 It is not used directly, but through the <code>AndroidEnterprise</code> hub.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UserPatchCall.html'
+                                  title='google_androidenterprise1::UserPatchCall'>UserPatchCall</a></td>
+                           <td class='docblock short'>
+                                <p>Updates the details of an EMM-managed user.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
@@ -1131,6 +1499,13 @@ It is not used directly, but through the <code>AndroidEnterprise</code> hub.</p>
                                   title='google_androidenterprise1::UserToken'>UserToken</a></td>
                            <td class='docblock short'>
                                 <p>A UserToken is used by a user when setting up a managed device or profile with their work account on a device. When the user enters their email address and token (activation code) the appropriate EMM app can be automatically downloaded.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.UserUpdateCall.html'
+                                  title='google_androidenterprise1::UserUpdateCall'>UserUpdateCall</a></td>
+                           <td class='docblock short'>
+                                <p>Updates the details of an EMM-managed user.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>

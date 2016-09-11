@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Patch - Deployment Manager v0.3.6+20160406</title>
+  <title>Patch - Deployment Manager v0.3.6+20160901</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -32,7 +32,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Deployment Manager v0.3.6+20160406</a>
+        <a href=".." class="icon icon-home"> Deployment Manager v0.3.6+20160901</a>
         
       </div>
 
@@ -187,7 +187,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Deployment Manager v0.3.6+20160406</a>
+        <a href="..">Deployment Manager v0.3.6+20160901</a>
       </nav>
 
       
@@ -333,7 +333,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </em> <code>target-id=et</code>
     - [Output Only] The unique target ID, which identifies a specific incarnation of the target resource.
 <em> <code>target-link=amet</code>
-    - [Output Only] The URL of the resource that the operation modifies.
+    - [Output Only] The URL of the resource that the operation modifies. If creating a persistent disk snapshot, this points to the persistent disk that the snapshot was created from.
 </em> <code>user=et</code>
     - [Output Only] User who requested the operation, for example: user@example.com.
 * <code>zone=consetetur</code>
@@ -385,6 +385,12 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
+<p><strong>-p create-policy=string</strong></p>
+<ul>
+<li>Sets the policy to use for creating new resources.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p preview=boolean</strong></p>
 <ul>
 <li>If set to true, updates the deployment and creates and updates the &#34;shell&#34; resources but does not actually alter or instantiate these resources. This allows you to preview what your deployment will look like. You can use this intent to preview how an update would affect your deployment. You must provide a target.config with a configuration if this is set to true. After previewing a deployment, you can deploy your resources by making a request with the update() or you can cancelPreview() to remove the preview altogether. Note that the deployment will still exist after you cancel the preview and you must separately delete this deployment if you want to remove it.</li>
@@ -394,12 +400,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <p><strong>-p delete-policy=string</strong></p>
 <ul>
 <li>Sets the policy to use for deleting resources.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p create-policy=string</strong></p>
-<ul>
-<li>Sets the policy to use for creating new resources.</li>
 </ul>
 </li>
 </ul>
@@ -493,7 +493,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 
 <!--
 MkDocs version  : 0.12.2
-Docs Build Date : 2016-07-23 16:05:58.707453
+Docs Build Date : 2016-09-11 17:55:54.931123
 -->
 </body>
 </html>

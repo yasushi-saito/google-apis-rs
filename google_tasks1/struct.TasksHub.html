@@ -47,8 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-1030' class='srclink' href='../src/google_tasks1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-tasks1-fd07690912352c6b/out/lib.rs.html#2202-2206' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct TasksHub&lt;C, A&gt; {
+               </span><a id='src-979' class='srclink' href='../src/google_tasks1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-tasks1-b9a89f0eb56461ea/out/lib.rs.html#1909-1913' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct TasksHub&lt;C,&nbsp;A&gt; {
     // some fields omitted
 }</pre><div class='docblock'><p>Central instance to access all TasksHub related resource activities</p>
 
@@ -81,9 +81,9 @@
 <span class='comment'>// Values shown here are possibly random and not representative !</span>
 <span class='kw'>let</span> <span class='ident'>result</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>tasks</span>().<span class='ident'>list</span>(<span class='string'>&quot;tasklist&quot;</span>)
              .<span class='ident'>updated_min</span>(<span class='string'>&quot;labore&quot;</span>)
-             .<span class='ident'>show_hidden</span>(<span class='boolvalue'>true</span>)
-             .<span class='ident'>show_deleted</span>(<span class='boolvalue'>false</span>)
-             .<span class='ident'>show_completed</span>(<span class='boolvalue'>true</span>)
+             .<span class='ident'>show_hidden</span>(<span class='bool-val'>true</span>)
+             .<span class='ident'>show_deleted</span>(<span class='bool-val'>false</span>)
+             .<span class='ident'>show_completed</span>(<span class='bool-val'>true</span>)
              .<span class='ident'>page_token</span>(<span class='string'>&quot;gubergren&quot;</span>)
              .<span class='ident'>max_results</span>(<span class='string'>&quot;sadipscing&quot;</span>)
              .<span class='ident'>due_min</span>(<span class='string'>&quot;aliquyam&quot;</span>)
@@ -108,16 +108,16 @@
     },
     <span class='prelude-val'>Ok</span>(<span class='ident'>res</span>) <span class='op'>=&gt;</span> <span class='macro'>println</span><span class='macro'>!</span>(<span class='string'>&quot;Success: {:?}&quot;</span>, <span class='ident'>res</span>),
 }</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_tasks1/struct.TasksHub.html' title='google_tasks1::TasksHub'>TasksHub</a>&lt;C, A&gt; <span class='where'>where C: <a class='trait' href='https://doc.rust-lang.org/nightly/core/borrow/trait.BorrowMut.html' title='core::borrow::BorrowMut'>BorrowMut</a>&lt;<a class='struct' href='../hyper/client/struct.Client.html' title='hyper::client::Client'>Client</a>&gt;, A: <a class='trait' href='../yup_oauth2/helper/trait.GetToken.html' title='yup_oauth2::helper::GetToken'>GetToken</a></span></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-1040' class='srclink' href='../src/google_tasks1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-tasks1-fd07690912352c6b/out/lib.rs.html#2208-2230' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.new' class='method'><code>fn <a href='#method.new' class='fnname'>new</a>(client: C, authenticator: A) -&gt; <a class='struct' href='../google_tasks1/struct.TasksHub.html' title='google_tasks1::TasksHub'>TasksHub</a>&lt;C, A&gt;</code></h4>
-<h4 id='method.tasklists' class='method'><code>fn <a href='#method.tasklists' class='fnname'>tasklists</a>(&amp;'a self) -&gt; <a class='struct' href='../google_tasks1/struct.TasklistMethods.html' title='google_tasks1::TasklistMethods'>TasklistMethods</a>&lt;'a, C, A&gt;</code></h4>
-<h4 id='method.tasks' class='method'><code>fn <a href='#method.tasks' class='fnname'>tasks</a>(&amp;'a self) -&gt; <a class='struct' href='../google_tasks1/struct.TaskMethods.html' title='google_tasks1::TaskMethods'>TaskMethods</a>&lt;'a, C, A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='struct' href='../google_tasks1/struct.TasksHub.html' title='google_tasks1::TasksHub'>TasksHub</a>&lt;C,&nbsp;A&gt; <span class='where'>where C: <a class='trait' href='https://doc.rust-lang.org/nightly/core/borrow/trait.BorrowMut.html' title='core::borrow::BorrowMut'>BorrowMut</a>&lt;<a class='struct' href='../hyper/client/struct.Client.html' title='hyper::client::Client'>Client</a>&gt;, A: <a class='trait' href='../yup_oauth2/authenticator/trait.GetToken.html' title='yup_oauth2::authenticator::GetToken'>GetToken</a></span></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-989' class='srclink' href='../src/google_tasks1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-tasks1-b9a89f0eb56461ea/out/lib.rs.html#1915-1937' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.new' class='method'><code>fn <a href='#method.new' class='fnname'>new</a>(client: C, authenticator: A) -&gt; <a class='struct' href='../google_tasks1/struct.TasksHub.html' title='google_tasks1::TasksHub'>TasksHub</a>&lt;C,&nbsp;A&gt;</code></h4>
+<h4 id='method.tasklists' class='method'><code>fn <a href='#method.tasklists' class='fnname'>tasklists</a>(&amp;'a self) -&gt; <a class='struct' href='../google_tasks1/struct.TasklistMethods.html' title='google_tasks1::TasklistMethods'>TasklistMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<h4 id='method.tasks' class='method'><code>fn <a href='#method.tasks' class='fnname'>tasks</a>(&amp;'a self) -&gt; <a class='struct' href='../google_tasks1/struct.TaskMethods.html' title='google_tasks1::TaskMethods'>TaskMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <h4 id='method.user_agent' class='method'><code>fn <a href='#method.user_agent' class='fnname'>user_agent</a>(&amp;mut self, agent_name: <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>) -&gt; <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a></code></h4>
 <div class='docblock'><p>Set the user-agent header field to use in all requests to the server.
-It defaults to <code>google-api-rust-client/0.1.14</code>.</p>
+It defaults to <code>google-api-rust-client/0.1.15</code>.</p>
 
 <p>Returns the previously set user-agent.</p>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_tasks1/trait.Hub.html' title='google_tasks1::Hub'>Hub</a> for <a class='struct' href='../google_tasks1/struct.TasksHub.html' title='google_tasks1::TasksHub'>TasksHub</a>&lt;C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-1036' class='srclink' href='../src/google_tasks1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-tasks1-fd07690912352c6b/out/lib.rs.html#2207' title='goto source code'>[src]</a></span></h3>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='trait' href='../google_tasks1/trait.Hub.html' title='google_tasks1::Hub'>Hub</a> for <a class='struct' href='../google_tasks1/struct.TasksHub.html' title='google_tasks1::TasksHub'>TasksHub</a>&lt;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-985' class='srclink' href='../src/google_tasks1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-tasks1-b9a89f0eb56461ea/out/lib.rs.html#1914' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 

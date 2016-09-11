@@ -220,21 +220,21 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p advertiser-id=string</strong></p>
+<p><strong>-p link-id=string</strong></p>
 <ul>
-<li>The IDs of the advertisers to look up, if applicable.</li>
+<li>Filters to capture one of given link IDs. Optional.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p start-date=string</strong></p>
+<p><strong>-p calculate-totals=boolean</strong></p>
 <ul>
-<li>The start date (inclusive), in RFC 3339 format, for the report data to be returned. Defaults to one day before endDate, if that is given, or yesterday. Optional.</li>
+<li>Whether or not to calculate totals rows. Optional.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p max-results=integer</strong></p>
+<p><strong>-p event-type=string</strong></p>
 <ul>
-<li>Max number of items to return in this page. Optional. Defaults to return all results.</li>
+<li>Filters out all events that are not of the given type. Valid values: &#39;action&#39;, &#39;transaction&#39;, or &#39;charge&#39;. Optional.</li>
 </ul>
 </li>
 <li>
@@ -244,9 +244,27 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
+<p><strong>-p max-results=integer</strong></p>
+<ul>
+<li>Max number of items to return in this page. Optional. Defaults to return all results.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p status=string</strong></p>
+<ul>
+<li>Filters out all events that do not have the given status. Valid values: &#39;active&#39;, &#39;canceled&#39;, or &#39;invalid&#39;. Optional.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p publisher-id=string</strong></p>
 <ul>
 <li>The IDs of the publishers to look up, if applicable.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p advertiser-id=string</strong></p>
+<ul>
+<li>The IDs of the advertisers to look up, if applicable.</li>
 </ul>
 </li>
 <li>
@@ -262,27 +280,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p status=string</strong></p>
+<p><strong>-p start-date=string</strong></p>
 <ul>
-<li>Filters out all events that do not have the given status. Valid values: &#39;active&#39;, &#39;canceled&#39;, or &#39;invalid&#39;. Optional.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p event-type=string</strong></p>
-<ul>
-<li>Filters out all events that are not of the given type. Valid values: &#39;action&#39;, &#39;transaction&#39;, or &#39;charge&#39;. Optional.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p calculate-totals=boolean</strong></p>
-<ul>
-<li>Whether or not to calculate totals rows. Optional.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p link-id=string</strong></p>
-<ul>
-<li>Filters to capture one of given link IDs. Optional.</li>
+<li>The start date (inclusive), in RFC 3339 format, for the report data to be returned. Defaults to one day before endDate, if that is given, or yesterday. Optional.</li>
 </ul>
 </li>
 </ul>
@@ -374,7 +374,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 
 <!--
 MkDocs version  : 0.12.2
-Docs Build Date : 2016-07-23 16:05:20.022971
+Docs Build Date : 2016-09-11 17:54:48.444976
 -->
 </body>
 </html>

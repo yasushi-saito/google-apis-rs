@@ -47,8 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-5433' class='srclink' href='../src/google_civicinfo2/home/byron/dev/rust/google-apis-rs/target/debug/build/google-civicinfo2-925ded0f6a80f663/out/lib.rs.html#11492-11494' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct RepresentativeMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
+               </span><a id='src-5124' class='srclink' href='../src/google_civicinfo2/home/byron/dev/rust/google-apis-rs/target/debug/build/google-civicinfo2-152b0f05eee0cdcf/out/lib.rs.html#8947-8949' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct RepresentativeMethods&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>representative</em> resources.
 It is not used directly, but through the <code>CivicInfo</code> hub.</p>
@@ -74,12 +74,12 @@ It is not used directly, but through the <code>CivicInfo</code> hub.</p>
 <span class='comment'>// like `representative_info_by_address(...)` and `representative_info_by_division(...)`</span>
 <span class='comment'>// to build up your call.</span>
 <span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>representatives</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_civicinfo2/struct.RepresentativeMethods.html' title='google_civicinfo2::RepresentativeMethods'>RepresentativeMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-5442' class='srclink' href='../src/google_civicinfo2/home/byron/dev/rust/google-apis-rs/target/debug/build/google-civicinfo2-925ded0f6a80f663/out/lib.rs.html#11496-11539' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.representative_info_by_address' class='method'><code>fn <a href='#method.representative_info_by_address' class='fnname'>representative_info_by_address</a>(&amp;self) -&gt; <a class='struct' href='../google_civicinfo2/struct.RepresentativeRepresentativeInfoByAddresCall.html' title='google_civicinfo2::RepresentativeRepresentativeInfoByAddresCall'>RepresentativeRepresentativeInfoByAddresCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='struct' href='../google_civicinfo2/struct.RepresentativeMethods.html' title='google_civicinfo2::RepresentativeMethods'>RepresentativeMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-5133' class='srclink' href='../src/google_civicinfo2/home/byron/dev/rust/google-apis-rs/target/debug/build/google-civicinfo2-152b0f05eee0cdcf/out/lib.rs.html#8951-8994' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.representative_info_by_address' class='method'><code>fn <a href='#method.representative_info_by_address' class='fnname'>representative_info_by_address</a>(&amp;self) -&gt; <a class='struct' href='../google_civicinfo2/struct.RepresentativeRepresentativeInfoByAddresCall.html' title='google_civicinfo2::RepresentativeRepresentativeInfoByAddresCall'>RepresentativeRepresentativeInfoByAddresCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Looks up political geography and representative information for a single address.</p>
-</div><h4 id='method.representative_info_by_division' class='method'><code>fn <a href='#method.representative_info_by_division' class='fnname'>representative_info_by_division</a>(&amp;self, ocd_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_civicinfo2/struct.RepresentativeRepresentativeInfoByDivisionCall.html' title='google_civicinfo2::RepresentativeRepresentativeInfoByDivisionCall'>RepresentativeRepresentativeInfoByDivisionCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.representative_info_by_division' class='method'><code>fn <a href='#method.representative_info_by_division' class='fnname'>representative_info_by_division</a>(&amp;self, ocd_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_civicinfo2/struct.RepresentativeRepresentativeInfoByDivisionCall.html' title='google_civicinfo2::RepresentativeRepresentativeInfoByDivisionCall'>RepresentativeRepresentativeInfoByDivisionCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Looks up representative information for a single geographic division.</p>
@@ -88,7 +88,7 @@ It is not used directly, but through the <code>CivicInfo</code> hub.</p>
 <ul>
 <li><code>ocdId</code> - The Open Civic Data division identifier of the division to look up.</li>
 </ul>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_civicinfo2/trait.MethodsBuilder.html' title='google_civicinfo2::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_civicinfo2/struct.RepresentativeMethods.html' title='google_civicinfo2::RepresentativeMethods'>RepresentativeMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-5438' class='srclink' href='../src/google_civicinfo2/home/byron/dev/rust/google-apis-rs/target/debug/build/google-civicinfo2-925ded0f6a80f663/out/lib.rs.html#11495' title='goto source code'>[src]</a></span></h3>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='trait' href='../google_civicinfo2/trait.MethodsBuilder.html' title='google_civicinfo2::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_civicinfo2/struct.RepresentativeMethods.html' title='google_civicinfo2::RepresentativeMethods'>RepresentativeMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-5129' class='srclink' href='../src/google_civicinfo2/home/byron/dev/rust/google-apis-rs/target/debug/build/google-civicinfo2-152b0f05eee0cdcf/out/lib.rs.html#8950' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 

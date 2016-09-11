@@ -47,8 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-13347' class='srclink' href='../src/google_genomics1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-genomics1-16ed839a8e049b7f/out/lib.rs.html#29087-29089' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct ReadgroupsetMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
+               </span><a id='src-12339' class='srclink' href='../src/google_genomics1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-genomics1-40179d636dbccd1e/out/lib.rs.html#22531-22533' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct ReadgroupsetMethods&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>readgroupset</em> resources.
 It is not used directly, but through the <code>Genomics</code> hub.</p>
@@ -74,18 +74,18 @@ It is not used directly, but through the <code>Genomics</code> hub.</p>
 <span class='comment'>// like `coveragebuckets_list(...)`, `delete(...)`, `export(...)`, `get(...)`, `import(...)`, `patch(...)` and `search(...)`</span>
 <span class='comment'>// to build up your call.</span>
 <span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>readgroupsets</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_genomics1/struct.ReadgroupsetMethods.html' title='google_genomics1::ReadgroupsetMethods'>ReadgroupsetMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-13356' class='srclink' href='../src/google_genomics1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-genomics1-16ed839a8e049b7f/out/lib.rs.html#29091-29216' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.export' class='method'><code>fn <a href='#method.export' class='fnname'>export</a>(&amp;self, request: <a class='struct' href='../google_genomics1/struct.ExportReadGroupSetRequest.html' title='google_genomics1::ExportReadGroupSetRequest'>ExportReadGroupSetRequest</a>, read_group_set_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_genomics1/struct.ReadgroupsetExportCall.html' title='google_genomics1::ReadgroupsetExportCall'>ReadgroupsetExportCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='struct' href='../google_genomics1/struct.ReadgroupsetMethods.html' title='google_genomics1::ReadgroupsetMethods'>ReadgroupsetMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-12348' class='srclink' href='../src/google_genomics1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-genomics1-40179d636dbccd1e/out/lib.rs.html#22535-22660' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.export' class='method'><code>fn <a href='#method.export' class='fnname'>export</a>(&amp;self, request: <a class='struct' href='../google_genomics1/struct.ExportReadGroupSetRequest.html' title='google_genomics1::ExportReadGroupSetRequest'>ExportReadGroupSetRequest</a>, read_group_set_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_genomics1/struct.ReadgroupsetExportCall.html' title='google_genomics1::ReadgroupsetExportCall'>ReadgroupsetExportCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>Exports a read group set to a BAM file in Google Cloud Storage. For the definitions of read group sets and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a> Note that currently there may be some differences between exported BAM files and the original BAM file at the time of import. See <a href="google.genomics.v1.ReadServiceV1.ImportReadGroupSets">ImportReadGroupSets</a> for caveats.</p>
+<p>Exports a read group set to a BAM file in Google Cloud Storage. For the definitions of read group sets and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a> Note that currently there may be some differences between exported BAM files and the original BAM file at the time of import. See ImportReadGroupSets for caveats.</p>
 
 <h1 id='arguments' class='section-header'><a href='#arguments'>Arguments</a></h1>
 <ul>
 <li><code>request</code> - No description provided.</li>
 <li><code>readGroupSetId</code> - Required. The ID of the read group set to export. The caller must have READ access to this read group set.</li>
 </ul>
-</div><h4 id='method.import' class='method'><code>fn <a href='#method.import' class='fnname'>import</a>(&amp;self, request: <a class='struct' href='../google_genomics1/struct.ImportReadGroupSetsRequest.html' title='google_genomics1::ImportReadGroupSetsRequest'>ImportReadGroupSetsRequest</a>) -&gt; <a class='struct' href='../google_genomics1/struct.ReadgroupsetImportCall.html' title='google_genomics1::ReadgroupsetImportCall'>ReadgroupsetImportCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.import' class='method'><code>fn <a href='#method.import' class='fnname'>import</a>(&amp;self, request: <a class='struct' href='../google_genomics1/struct.ImportReadGroupSetsRequest.html' title='google_genomics1::ImportReadGroupSetsRequest'>ImportReadGroupSetsRequest</a>) -&gt; <a class='struct' href='../google_genomics1/struct.ReadgroupsetImportCall.html' title='google_genomics1::ReadgroupsetImportCall'>ReadgroupsetImportCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Creates read group sets by asynchronously importing the provided information. For the definitions of read group sets and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a> The caller must have WRITE permissions to the dataset. ## Notes on <a href="https://samtools.github.io/hts-specs/SAMv1.pdf">BAM</a> import - Tags will be converted to strings - tag types are not preserved - Comments (<code>@CO</code>) in the input file header will not be preserved - Original header order of references (<code>@SQ</code>) will not be preserved - Any reverse stranded unmapped reads will be reverse complemented, and their qualities (also the &quot;BQ&quot; and &quot;OQ&quot; tags, if any) will be reversed - Unmapped reads will be stripped of positional information (reference name and position)</p>
@@ -94,7 +94,7 @@ It is not used directly, but through the <code>Genomics</code> hub.</p>
 <ul>
 <li><code>request</code> - No description provided.</li>
 </ul>
-</div><h4 id='method.patch' class='method'><code>fn <a href='#method.patch' class='fnname'>patch</a>(&amp;self, request: <a class='struct' href='../google_genomics1/struct.ReadGroupSet.html' title='google_genomics1::ReadGroupSet'>ReadGroupSet</a>, read_group_set_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_genomics1/struct.ReadgroupsetPatchCall.html' title='google_genomics1::ReadgroupsetPatchCall'>ReadgroupsetPatchCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.patch' class='method'><code>fn <a href='#method.patch' class='fnname'>patch</a>(&amp;self, request: <a class='struct' href='../google_genomics1/struct.ReadGroupSet.html' title='google_genomics1::ReadGroupSet'>ReadGroupSet</a>, read_group_set_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_genomics1/struct.ReadgroupsetPatchCall.html' title='google_genomics1::ReadgroupsetPatchCall'>ReadgroupsetPatchCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Updates a read group set. For the definitions of read group sets and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a> This method supports patch semantics.</p>
@@ -104,7 +104,7 @@ It is not used directly, but through the <code>Genomics</code> hub.</p>
 <li><code>request</code> - No description provided.</li>
 <li><code>readGroupSetId</code> - The ID of the read group set to be updated. The caller must have WRITE permissions to the dataset associated with this read group set.</li>
 </ul>
-</div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, read_group_set_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_genomics1/struct.ReadgroupsetGetCall.html' title='google_genomics1::ReadgroupsetGetCall'>ReadgroupsetGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, read_group_set_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_genomics1/struct.ReadgroupsetGetCall.html' title='google_genomics1::ReadgroupsetGetCall'>ReadgroupsetGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Gets a read group set by ID. For the definitions of read group sets and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a></p>
@@ -113,7 +113,7 @@ It is not used directly, but through the <code>Genomics</code> hub.</p>
 <ul>
 <li><code>readGroupSetId</code> - The ID of the read group set.</li>
 </ul>
-</div><h4 id='method.coveragebuckets_list' class='method'><code>fn <a href='#method.coveragebuckets_list' class='fnname'>coveragebuckets_list</a>(&amp;self, read_group_set_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_genomics1/struct.ReadgroupsetCoveragebucketListCall.html' title='google_genomics1::ReadgroupsetCoveragebucketListCall'>ReadgroupsetCoveragebucketListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.coveragebuckets_list' class='method'><code>fn <a href='#method.coveragebuckets_list' class='fnname'>coveragebuckets_list</a>(&amp;self, read_group_set_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_genomics1/struct.ReadgroupsetCoveragebucketListCall.html' title='google_genomics1::ReadgroupsetCoveragebucketListCall'>ReadgroupsetCoveragebucketListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Lists fixed width coverage buckets for a read group set, each of which correspond to a range of a reference sequence. Each bucket summarizes coverage information across its corresponding genomic range. For the definitions of read group sets and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a> Coverage is defined as the number of reads which are aligned to a given base in the reference sequence. Coverage buckets are available at several precomputed bucket widths, enabling retrieval of various coverage &#39;zoom levels&#39;. The caller must have READ permissions for the target read group set.</p>
@@ -122,7 +122,7 @@ It is not used directly, but through the <code>Genomics</code> hub.</p>
 <ul>
 <li><code>readGroupSetId</code> - Required. The ID of the read group set over which coverage is requested.</li>
 </ul>
-</div><h4 id='method.delete' class='method'><code>fn <a href='#method.delete' class='fnname'>delete</a>(&amp;self, read_group_set_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_genomics1/struct.ReadgroupsetDeleteCall.html' title='google_genomics1::ReadgroupsetDeleteCall'>ReadgroupsetDeleteCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.delete' class='method'><code>fn <a href='#method.delete' class='fnname'>delete</a>(&amp;self, read_group_set_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_genomics1/struct.ReadgroupsetDeleteCall.html' title='google_genomics1::ReadgroupsetDeleteCall'>ReadgroupsetDeleteCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Deletes a read group set. For the definitions of read group sets and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a></p>
@@ -131,7 +131,7 @@ It is not used directly, but through the <code>Genomics</code> hub.</p>
 <ul>
 <li><code>readGroupSetId</code> - The ID of the read group set to be deleted. The caller must have WRITE permissions to the dataset associated with this read group set.</li>
 </ul>
-</div><h4 id='method.search' class='method'><code>fn <a href='#method.search' class='fnname'>search</a>(&amp;self, request: <a class='struct' href='../google_genomics1/struct.SearchReadGroupSetsRequest.html' title='google_genomics1::SearchReadGroupSetsRequest'>SearchReadGroupSetsRequest</a>) -&gt; <a class='struct' href='../google_genomics1/struct.ReadgroupsetSearchCall.html' title='google_genomics1::ReadgroupsetSearchCall'>ReadgroupsetSearchCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.search' class='method'><code>fn <a href='#method.search' class='fnname'>search</a>(&amp;self, request: <a class='struct' href='../google_genomics1/struct.SearchReadGroupSetsRequest.html' title='google_genomics1::SearchReadGroupSetsRequest'>SearchReadGroupSetsRequest</a>) -&gt; <a class='struct' href='../google_genomics1/struct.ReadgroupsetSearchCall.html' title='google_genomics1::ReadgroupsetSearchCall'>ReadgroupsetSearchCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Searches for read group sets matching the criteria. For the definitions of read group sets and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a> Implements <a href="https://github.com/ga4gh/schemas/blob/v0.5.1/src/main/resources/avro/readmethods.avdl#L135">GlobalAllianceApi.searchReadGroupSets</a>.</p>
@@ -140,7 +140,7 @@ It is not used directly, but through the <code>Genomics</code> hub.</p>
 <ul>
 <li><code>request</code> - No description provided.</li>
 </ul>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_genomics1/trait.MethodsBuilder.html' title='google_genomics1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_genomics1/struct.ReadgroupsetMethods.html' title='google_genomics1::ReadgroupsetMethods'>ReadgroupsetMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-13352' class='srclink' href='../src/google_genomics1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-genomics1-16ed839a8e049b7f/out/lib.rs.html#29090' title='goto source code'>[src]</a></span></h3>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='trait' href='../google_genomics1/trait.MethodsBuilder.html' title='google_genomics1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_genomics1/struct.ReadgroupsetMethods.html' title='google_genomics1::ReadgroupsetMethods'>ReadgroupsetMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-12344' class='srclink' href='../src/google_genomics1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-genomics1-40179d636dbccd1e/out/lib.rs.html#22534' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 

@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Update - groupssettings v0.3.6+20160323</title>
+  <title>Update - groupssettings v0.3.6+20160525</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -32,7 +32,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> groupssettings v0.3.6+20160323</a>
+        <a href=".." class="icon icon-home"> groupssettings v0.3.6+20160525</a>
         
       </div>
 
@@ -100,7 +100,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">groupssettings v0.3.6+20160323</a>
+        <a href="..">groupssettings v0.3.6+20160525</a>
       </nav>
 
       
@@ -148,10 +148,12 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   allow-google-communication: string
   allow-web-posting: string
   archive-only: string
+  custom-footer-text: string
   custom-reply-to: string
   default-message-deny-notification-text: string
   description: string
   email: string
+  include-custom-footer: string
   include-in-global-address-list: string
   is-archived: string
   kind: string
@@ -178,119 +180,127 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    allow-external-members=duo</code><ul>
+<li><code>-r .    allow-external-members=sea</code><ul>
 <li>Are external members allowed to join the group.</li>
 </ul>
 </li>
-<li><code>allow-google-communication=aliquyam</code><ul>
+<li><code>allow-google-communication=lorem</code><ul>
 <li>Is google allowed to contact admins.</li>
 </ul>
 </li>
-<li><code>allow-web-posting=sea</code><ul>
+<li><code>allow-web-posting=eos</code><ul>
 <li>If posting from web is allowed.</li>
 </ul>
 </li>
-<li><code>archive-only=lorem</code><ul>
+<li><code>archive-only=erat</code><ul>
 <li>If the group is archive only</li>
 </ul>
 </li>
-<li><code>custom-reply-to=eos</code><ul>
+<li><code>custom-footer-text=sadipscing</code><ul>
+<li>Custom footer text.</li>
+</ul>
+</li>
+<li><code>custom-reply-to=dolor</code><ul>
 <li>Default email to which reply to any message should go.</li>
 </ul>
 </li>
-<li><code>default-message-deny-notification-text=erat</code><ul>
+<li><code>default-message-deny-notification-text=eirmod</code><ul>
 <li>Default message deny notification message</li>
 </ul>
 </li>
-<li><code>description=sadipscing</code><ul>
+<li><code>description=elitr</code><ul>
 <li>Description of the group</li>
 </ul>
 </li>
-<li><code>email=dolor</code><ul>
+<li><code>email=amet</code><ul>
 <li>Email id of the group</li>
 </ul>
 </li>
-<li><code>include-in-global-address-list=eirmod</code><ul>
+<li><code>include-custom-footer=no</code><ul>
+<li>Whether to include custom footer.</li>
+</ul>
+</li>
+<li><code>include-in-global-address-list=labore</code><ul>
 <li>If this groups should be included in global address list or not.</li>
 </ul>
 </li>
-<li><code>is-archived=elitr</code><ul>
+<li><code>is-archived=eirmod</code><ul>
 <li>If the contents of the group are archived.</li>
 </ul>
 </li>
-<li><code>kind=amet</code><ul>
+<li><code>kind=dolore</code><ul>
 <li>The type of the resource.</li>
 </ul>
 </li>
-<li><code>max-message-bytes=41</code><ul>
+<li><code>max-message-bytes=64</code><ul>
 <li>Maximum message size allowed.</li>
 </ul>
 </li>
-<li><code>members-can-post-as-the-group=labore</code><ul>
+<li><code>members-can-post-as-the-group=aliquyam</code><ul>
 <li>Can members post using the group email address.</li>
 </ul>
 </li>
-<li><code>message-display-font=eirmod</code><ul>
+<li><code>message-display-font=accusam</code><ul>
 <li>Default message display font. Possible values are: DEFAULT_FONT FIXED_WIDTH_FONT</li>
 </ul>
 </li>
-<li><code>message-moderation-level=dolore</code><ul>
+<li><code>message-moderation-level=lorem</code><ul>
 <li>Moderation level for messages. Possible values are: MODERATE_ALL_MESSAGES MODERATE_NON_MEMBERS MODERATE_NEW_MEMBERS MODERATE_NONE</li>
 </ul>
 </li>
-<li><code>name=invidunt</code><ul>
+<li><code>name=sea</code><ul>
 <li>Name of the Group</li>
 </ul>
 </li>
-<li><code>primary-language=aliquyam</code><ul>
+<li><code>primary-language=et</code><ul>
 <li>Primary language for the group.</li>
 </ul>
 </li>
-<li><code>reply-to=accusam</code><ul>
+<li><code>reply-to=duo</code><ul>
 <li>Whome should the default reply to a message go to. Possible values are: REPLY_TO_CUSTOM REPLY_TO_SENDER REPLY_TO_LIST REPLY_TO_OWNER REPLY_TO_IGNORE REPLY_TO_MANAGERS</li>
 </ul>
 </li>
-<li><code>send-message-deny-notification=lorem</code><ul>
+<li><code>send-message-deny-notification=et</code><ul>
 <li>Should the member be notified if his message is denied by owner.</li>
 </ul>
 </li>
-<li><code>show-in-group-directory=sea</code><ul>
+<li><code>show-in-group-directory=eirmod</code><ul>
 <li>Is the group listed in groups directory</li>
 </ul>
 </li>
-<li><code>spam-moderation-level=et</code><ul>
+<li><code>spam-moderation-level=sanctus</code><ul>
 <li>Moderation level for messages detected as spam. Possible values are: ALLOW MODERATE SILENTLY_MODERATE REJECT</li>
 </ul>
 </li>
-<li><code>who-can-add=duo</code><ul>
+<li><code>who-can-add=et</code><ul>
 <li>Permissions to add members. Possible values are: ALL_MANAGERS_CAN_ADD ALL_MEMBERS_CAN_ADD NONE_CAN_ADD</li>
 </ul>
 </li>
-<li><code>who-can-contact-owner=et</code><ul>
+<li><code>who-can-contact-owner=amet</code><ul>
 <li>Permission to contact owner of the group via web UI. Possible values are: ANYONE_CAN_CONTACT ALL_IN_DOMAIN_CAN_CONTACT ALL_MEMBERS_CAN_CONTACT ALL_MANAGERS_CAN_CONTACT</li>
 </ul>
 </li>
-<li><code>who-can-invite=eirmod</code><ul>
+<li><code>who-can-invite=et</code><ul>
 <li>Permissions to invite members. Possible values are: ALL_MEMBERS_CAN_INVITE ALL_MANAGERS_CAN_INVITE NONE_CAN_INVITE</li>
 </ul>
 </li>
-<li><code>who-can-join=sanctus</code><ul>
+<li><code>who-can-join=consetetur</code><ul>
 <li>Permissions to join the group. Possible values are: ANYONE_CAN_JOIN ALL_IN_DOMAIN_CAN_JOIN INVITED_CAN_JOIN CAN_REQUEST_TO_JOIN</li>
 </ul>
 </li>
-<li><code>who-can-leave-group=et</code><ul>
+<li><code>who-can-leave-group=ut</code><ul>
 <li>Permission to leave the group. Possible values are: ALL_MANAGERS_CAN_LEAVE ALL_MEMBERS_CAN_LEAVE NONE_CAN_LEAVE</li>
 </ul>
 </li>
-<li><code>who-can-post-message=amet</code><ul>
+<li><code>who-can-post-message=ea</code><ul>
 <li>Permissions to post messages to the group. Possible values are: NONE_CAN_POST ALL_MANAGERS_CAN_POST ALL_MEMBERS_CAN_POST ALL_IN_DOMAIN_CAN_POST ANYONE_CAN_POST</li>
 </ul>
 </li>
-<li><code>who-can-view-group=et</code><ul>
+<li><code>who-can-view-group=sed</code><ul>
 <li>Permissions to view group. Possible values are: ANYONE_CAN_VIEW ALL_IN_DOMAIN_CAN_VIEW ALL_MEMBERS_CAN_VIEW ALL_MANAGERS_CAN_VIEW</li>
 </ul>
 </li>
-<li><code>who-can-view-membership=consetetur</code><ul>
+<li><code>who-can-view-membership=dolor</code><ul>
 <li>Permissions to view membership. Possible values are: ALL_IN_DOMAIN_CAN_VIEW ALL_MEMBERS_CAN_VIEW ALL_MANAGERS_CAN_VIEW</li>
 </ul>
 </li>
@@ -402,7 +412,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <!--
 MkDocs version  : 0.12.2
-Docs Build Date : 2016-07-23 16:05:11.954141
+Docs Build Date : 2016-09-11 17:54:31.640209
 -->
 </body>
 </html>

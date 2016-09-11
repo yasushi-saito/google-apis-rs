@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Update - Cloud Resource Manager v0.3.6+20160316</title>
+  <title>Update - Cloud Resource Manager v0.3.6+20160617</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -32,7 +32,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Cloud Resource Manager v0.3.6+20160316</a>
+        <a href=".." class="icon icon-home"> Cloud Resource Manager v0.3.6+20160617</a>
         
       </div>
 
@@ -102,6 +102,11 @@
                 </li>
             
                 <li class="toctree-l2 ">
+                    <a class="" href="../projects_get-ancestry/">Get Ancestry</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
                     <a class="" href="../projects_get-iam-policy/">Get Iam Policy</a>
                     
                 </li>
@@ -166,7 +171,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Cloud Resource Manager v0.3.6+20160316</a>
+        <a href="..">Cloud Resource Manager v0.3.6+20160617</a>
       </nav>
 
       
@@ -224,40 +229,40 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    create-time=aliquyam</code><ul>
+<li><code>-r .    create-time=no</code><ul>
 <li>Creation time. Read-only.</li>
 </ul>
 </li>
-<li><code>labels=key=ea</code><ul>
+<li><code>labels=key=justo</code><ul>
 <li>The labels associated with this Project. Label keys must be between 1 and 63 characters long and must conform to the following regular expression: [a-z]([-a-z0-9]<em>[a-z0-9])?. Label values must be between 0 and 63 characters long and must conform to the regular expression ([a-z]([-a-z0-9]</em>[a-z0-9])?)?. No more than 256 labels can be associated with a given resource. Clients should store labels in a representation such as JSON that does not depend on specific characters being disallowed. Example: &#34;environment&#34; : &#34;dev&#34; Read-write.</li>
 <li>the value will be associated with the given <code>key</code></li>
 </ul>
 </li>
-<li><code>lifecycle-state=no</code><ul>
+<li><code>lifecycle-state=justo</code><ul>
 <li>The Project lifecycle state. Read-only.</li>
 </ul>
 </li>
-<li><code>name=justo</code><ul>
-<li>The user-assigned name of the Project. It must be 4 to 30 characters. Allowed characters are: lowercase and uppercase letters, numbers, hyphen, single-quote, double-quote, space, and exclamation point. Example: My Project Read-write.</li>
+<li><code>name=et</code><ul>
+<li>The user-assigned display name of the Project. It must be 4 to 30 characters. Allowed characters are: lowercase and uppercase letters, numbers, hyphen, single-quote, double-quote, space, and exclamation point. Example: My Project Read-write.</li>
 </ul>
 </li>
-<li><code>parent    id=justo</code><ul>
+<li><code>parent    id=et</code><ul>
 <li>Required field for the type-specific id. This should correspond to the id used in the type-specific API&#39;s.</li>
 </ul>
 </li>
 <li>
-<p><code>type=et</code></p>
+<p><code>type=diam</code></p>
 <ul>
-<li>Required field representing the resource type this id is for. At present, the only valid type is &#34;organization&#34;.</li>
+<li>Required field representing the resource type this id is for. At present, the valid types are &#34;project&#34; and &#34;organization&#34;.</li>
 </ul>
 </li>
 <li>
-<p><code>..    project-id=et</code></p>
+<p><code>..    project-id=ipsum</code></p>
 <ul>
 <li>The unique, user-assigned ID of the Project. It must be 6 to 30 lowercase letters, digits, or hyphens. It must start with a letter. Trailing hyphens are prohibited. Example: tokyo-rain-123 Read-only after creation.</li>
 </ul>
 </li>
-<li><code>project-number=diam</code><ul>
+<li><code>project-number=lorem</code><ul>
 <li>The number uniquely identifying the project. Example: 415104041262 Read-only.</li>
 </ul>
 </li>
@@ -405,7 +410,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <!--
 MkDocs version  : 0.12.2
-Docs Build Date : 2016-07-23 16:05:37.869865
+Docs Build Date : 2016-09-11 17:55:17.232155
 -->
 </body>
 </html>

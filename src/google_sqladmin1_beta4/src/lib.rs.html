@@ -269,12 +269,13 @@
 <span id="225">225</span>
 <span id="226">226</span>
 <span id="227">227</span>
+<span id="228">228</span>
 </pre><pre class='rust '>
 <span class='comment'>// DO NOT EDIT !</span>
 <span class='comment'>// This file was generated automatically from &#39;src/mako/api/lib.rs.mako&#39;</span>
 <span class='comment'>// DO NOT EDIT !</span>
 
-<span class='doccomment'>//! This documentation was generated from *SQL Admin* crate version *0.1.14+20160321*, where *20160321* is the exact revision of the *sqladmin:v1beta4* schema built by the [mako](http://www.makotemplates.org/) code generator *v0.1.14*.</span>
+<span class='doccomment'>//! This documentation was generated from *SQL Admin* crate version *0.1.15+20160907*, where *20160907* is the exact revision of the *sqladmin:v1beta4* schema built by the [mako](http://www.makotemplates.org/) code generator *v0.1.15*.</span>
 <span class='doccomment'>//! </span>
 <span class='doccomment'>//! Everything else about the *SQL Admin* *v1_beta4* API can be found at the</span>
 <span class='doccomment'>//! [official documentation site](https://cloud.google.com/sql/docs/reference/latest).</span>
@@ -284,7 +285,7 @@
 <span class='doccomment'>//! Handle the following *Resources* with ease from the central [hub](struct.SQLAdmin.html) ... </span>
 <span class='doccomment'>//! </span>
 <span class='doccomment'>//! * [backup runs](struct.BackupRun.html)</span>
-<span class='doccomment'>//!  * [*delete*](struct.BackupRunDeleteCall.html), [*get*](struct.BackupRunGetCall.html) and [*list*](struct.BackupRunListCall.html)</span>
+<span class='doccomment'>//!  * [*delete*](struct.BackupRunDeleteCall.html), [*get*](struct.BackupRunGetCall.html), [*insert*](struct.BackupRunInsertCall.html) and [*list*](struct.BackupRunListCall.html)</span>
 <span class='doccomment'>//! * [databases](struct.Database.html)</span>
 <span class='doccomment'>//!  * [*delete*](struct.DatabaseDeleteCall.html), [*get*](struct.DatabaseGetCall.html), [*insert*](struct.DatabaseInsertCall.html), [*list*](struct.DatabaseListCall.html), [*patch*](struct.DatabasePatchCall.html) and [*update*](struct.DatabaseUpdateCall.html)</span>
 <span class='doccomment'>//! * [flags](struct.Flag.html)</span>
@@ -354,6 +355,7 @@
 <span class='doccomment'>//! let r = hub.users().insert(...).doit()</span>
 <span class='doccomment'>//! let r = hub.instances().insert(...).doit()</span>
 <span class='doccomment'>//! let r = hub.instances().import(...).doit()</span>
+<span class='doccomment'>//! let r = hub.backup_runs().insert(...).doit()</span>
 <span class='doccomment'>//! let r = hub.instances().update(...).doit()</span>
 <span class='doccomment'>//! let r = hub.instances().restart(...).doit()</span>
 <span class='doccomment'>//! let r = hub.instances().export(...).doit()</span>

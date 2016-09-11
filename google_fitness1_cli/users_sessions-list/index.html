@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Sessions List - fitness v0.3.6+20151021</title>
+  <title>Sessions List - fitness v0.3.6+20160801</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -32,7 +32,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> fitness v0.3.6+20151021</a>
+        <a href=".." class="icon icon-home"> fitness v0.3.6+20160801</a>
         
       </div>
 
@@ -148,7 +148,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">fitness v0.3.6+20151021</a>
+        <a href="..">fitness v0.3.6+20160801</a>
       </nav>
 
       
@@ -185,6 +185,8 @@
 <li><em>https://www.googleapis.com/auth/fitness.body.write</em></li>
 <li><em>https://www.googleapis.com/auth/fitness.location.read</em></li>
 <li><em>https://www.googleapis.com/auth/fitness.location.write</em></li>
+<li><em>https://www.googleapis.com/auth/fitness.nutrition.read</em></li>
+<li><em>https://www.googleapis.com/auth/fitness.nutrition.write</em></li>
 </ul>
 <p>If unset, the scope for this method defaults to <em>https://www.googleapis.com/auth/fitness.activity.read</em>.
 You can set the scope for this method like this: <code>fitness1 --scope &lt;scope&gt; users sessions-list ...</code></p>
@@ -212,9 +214,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p page-token=string</strong></p>
+<p><strong>-p end-time=string</strong></p>
 <ul>
-<li>The continuation token, which is used to page through large result sets. To get the next page of results, set this parameter to the value of nextPageToken from the previous response.</li>
+<li>An RFC3339 timestamp. Only sessions ending between the start and end times will be included in the response.</li>
 </ul>
 </li>
 <li>
@@ -230,9 +232,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p end-time=string</strong></p>
+<p><strong>-p page-token=string</strong></p>
 <ul>
-<li>An RFC3339 timestamp. Only sessions ending between the start and end times will be included in the response.</li>
+<li>The continuation token, which is used to page through large result sets. To get the next page of results, set this parameter to the value of nextPageToken from the previous response.</li>
 </ul>
 </li>
 </ul>
@@ -326,7 +328,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 
 <!--
 MkDocs version  : 0.12.2
-Docs Build Date : 2016-07-23 16:05:36.653653
+Docs Build Date : 2016-09-11 17:55:14.862508
 -->
 </body>
 </html>

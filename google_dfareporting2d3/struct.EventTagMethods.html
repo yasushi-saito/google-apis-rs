@@ -47,8 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-44036' class='srclink' href='../src/google_dfareporting2d3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-dfareporting2d3-cd88f8faf5865c86/out/lib.rs.html#101357-101359' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct EventTagMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
+               </span><a id='src-41090' class='srclink' href='../src/google_dfareporting2d3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-dfareporting2d3-818a111d706a8ab9/out/lib.rs.html#79221-79223' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct EventTagMethods&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>eventTag</em> resources.
 It is not used directly, but through the <code>Dfareporting</code> hub.</p>
@@ -74,8 +74,8 @@ It is not used directly, but through the <code>Dfareporting</code> hub.</p>
 <span class='comment'>// like `delete(...)`, `get(...)`, `insert(...)`, `list(...)`, `patch(...)` and `update(...)`</span>
 <span class='comment'>// to build up your call.</span>
 <span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>event_tags</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_dfareporting2d3/struct.EventTagMethods.html' title='google_dfareporting2d3::EventTagMethods'>EventTagMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-44045' class='srclink' href='../src/google_dfareporting2d3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-dfareporting2d3-cd88f8faf5865c86/out/lib.rs.html#101361-101473' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.delete' class='method'><code>fn <a href='#method.delete' class='fnname'>delete</a>(&amp;self, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_dfareporting2d3/struct.EventTagDeleteCall.html' title='google_dfareporting2d3::EventTagDeleteCall'>EventTagDeleteCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='struct' href='../google_dfareporting2d3/struct.EventTagMethods.html' title='google_dfareporting2d3::EventTagMethods'>EventTagMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-41099' class='srclink' href='../src/google_dfareporting2d3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-dfareporting2d3-818a111d706a8ab9/out/lib.rs.html#79225-79337' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.delete' class='method'><code>fn <a href='#method.delete' class='fnname'>delete</a>(&amp;self, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_dfareporting2d3/struct.EventTagDeleteCall.html' title='google_dfareporting2d3::EventTagDeleteCall'>EventTagDeleteCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Deletes an existing event tag.</p>
@@ -85,7 +85,7 @@ It is not used directly, but through the <code>Dfareporting</code> hub.</p>
 <li><code>profileId</code> - User profile ID associated with this request.</li>
 <li><code>id</code> - Event tag ID.</li>
 </ul>
-</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_dfareporting2d3/struct.EventTagListCall.html' title='google_dfareporting2d3::EventTagListCall'>EventTagListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_dfareporting2d3/struct.EventTagListCall.html' title='google_dfareporting2d3::EventTagListCall'>EventTagListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Retrieves a list of event tags, possibly filtered.</p>
@@ -94,7 +94,7 @@ It is not used directly, but through the <code>Dfareporting</code> hub.</p>
 <ul>
 <li><code>profileId</code> - User profile ID associated with this request.</li>
 </ul>
-</div><h4 id='method.insert' class='method'><code>fn <a href='#method.insert' class='fnname'>insert</a>(&amp;self, request: <a class='struct' href='../google_dfareporting2d3/struct.EventTag.html' title='google_dfareporting2d3::EventTag'>EventTag</a>, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_dfareporting2d3/struct.EventTagInsertCall.html' title='google_dfareporting2d3::EventTagInsertCall'>EventTagInsertCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.insert' class='method'><code>fn <a href='#method.insert' class='fnname'>insert</a>(&amp;self, request: <a class='struct' href='../google_dfareporting2d3/struct.EventTag.html' title='google_dfareporting2d3::EventTag'>EventTag</a>, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_dfareporting2d3/struct.EventTagInsertCall.html' title='google_dfareporting2d3::EventTagInsertCall'>EventTagInsertCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Inserts a new event tag.</p>
@@ -104,7 +104,7 @@ It is not used directly, but through the <code>Dfareporting</code> hub.</p>
 <li><code>request</code> - No description provided.</li>
 <li><code>profileId</code> - User profile ID associated with this request.</li>
 </ul>
-</div><h4 id='method.patch' class='method'><code>fn <a href='#method.patch' class='fnname'>patch</a>(&amp;self, request: <a class='struct' href='../google_dfareporting2d3/struct.EventTag.html' title='google_dfareporting2d3::EventTag'>EventTag</a>, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_dfareporting2d3/struct.EventTagPatchCall.html' title='google_dfareporting2d3::EventTagPatchCall'>EventTagPatchCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.patch' class='method'><code>fn <a href='#method.patch' class='fnname'>patch</a>(&amp;self, request: <a class='struct' href='../google_dfareporting2d3/struct.EventTag.html' title='google_dfareporting2d3::EventTag'>EventTag</a>, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_dfareporting2d3/struct.EventTagPatchCall.html' title='google_dfareporting2d3::EventTagPatchCall'>EventTagPatchCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Updates an existing event tag. This method supports patch semantics.</p>
@@ -115,7 +115,7 @@ It is not used directly, but through the <code>Dfareporting</code> hub.</p>
 <li><code>profileId</code> - User profile ID associated with this request.</li>
 <li><code>id</code> - Event tag ID.</li>
 </ul>
-</div><h4 id='method.update' class='method'><code>fn <a href='#method.update' class='fnname'>update</a>(&amp;self, request: <a class='struct' href='../google_dfareporting2d3/struct.EventTag.html' title='google_dfareporting2d3::EventTag'>EventTag</a>, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_dfareporting2d3/struct.EventTagUpdateCall.html' title='google_dfareporting2d3::EventTagUpdateCall'>EventTagUpdateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.update' class='method'><code>fn <a href='#method.update' class='fnname'>update</a>(&amp;self, request: <a class='struct' href='../google_dfareporting2d3/struct.EventTag.html' title='google_dfareporting2d3::EventTag'>EventTag</a>, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_dfareporting2d3/struct.EventTagUpdateCall.html' title='google_dfareporting2d3::EventTagUpdateCall'>EventTagUpdateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Updates an existing event tag.</p>
@@ -125,7 +125,7 @@ It is not used directly, but through the <code>Dfareporting</code> hub.</p>
 <li><code>request</code> - No description provided.</li>
 <li><code>profileId</code> - User profile ID associated with this request.</li>
 </ul>
-</div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_dfareporting2d3/struct.EventTagGetCall.html' title='google_dfareporting2d3::EventTagGetCall'>EventTagGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_dfareporting2d3/struct.EventTagGetCall.html' title='google_dfareporting2d3::EventTagGetCall'>EventTagGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Gets one event tag by ID.</p>
@@ -135,7 +135,7 @@ It is not used directly, but through the <code>Dfareporting</code> hub.</p>
 <li><code>profileId</code> - User profile ID associated with this request.</li>
 <li><code>id</code> - Event tag ID.</li>
 </ul>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_dfareporting2d3/trait.MethodsBuilder.html' title='google_dfareporting2d3::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_dfareporting2d3/struct.EventTagMethods.html' title='google_dfareporting2d3::EventTagMethods'>EventTagMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-44041' class='srclink' href='../src/google_dfareporting2d3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-dfareporting2d3-cd88f8faf5865c86/out/lib.rs.html#101360' title='goto source code'>[src]</a></span></h3>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='trait' href='../google_dfareporting2d3/trait.MethodsBuilder.html' title='google_dfareporting2d3::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_dfareporting2d3/struct.EventTagMethods.html' title='google_dfareporting2d3::EventTagMethods'>EventTagMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-41095' class='srclink' href='../src/google_dfareporting2d3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-dfareporting2d3-818a111d706a8ab9/out/lib.rs.html#79224' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 

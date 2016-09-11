@@ -47,8 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-2212' class='srclink' href='../src/google_tasks1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-tasks1-fd07690912352c6b/out/lib.rs.html#4742-4744' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct TasklistMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
+               </span><a id='src-2086' class='srclink' href='../src/google_tasks1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-tasks1-b9a89f0eb56461ea/out/lib.rs.html#3860-3862' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct TasklistMethods&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>tasklist</em> resources.
 It is not used directly, but through the <code>TasksHub</code> hub.</p>
@@ -74,12 +74,12 @@ It is not used directly, but through the <code>TasksHub</code> hub.</p>
 <span class='comment'>// like `delete(...)`, `get(...)`, `insert(...)`, `list(...)`, `patch(...)` and `update(...)`</span>
 <span class='comment'>// to build up your call.</span>
 <span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>tasklists</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_tasks1/struct.TasklistMethods.html' title='google_tasks1::TasklistMethods'>TasklistMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-2221' class='srclink' href='../src/google_tasks1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-tasks1-fd07690912352c6b/out/lib.rs.html#4746-4834' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self) -&gt; <a class='struct' href='../google_tasks1/struct.TasklistListCall.html' title='google_tasks1::TasklistListCall'>TasklistListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='struct' href='../google_tasks1/struct.TasklistMethods.html' title='google_tasks1::TasklistMethods'>TasklistMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-2095' class='srclink' href='../src/google_tasks1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-tasks1-b9a89f0eb56461ea/out/lib.rs.html#3864-3952' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self) -&gt; <a class='struct' href='../google_tasks1/struct.TasklistListCall.html' title='google_tasks1::TasklistListCall'>TasklistListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Returns all the authenticated user&#39;s task lists.</p>
-</div><h4 id='method.update' class='method'><code>fn <a href='#method.update' class='fnname'>update</a>(&amp;self, request: <a class='struct' href='../google_tasks1/struct.TaskList.html' title='google_tasks1::TaskList'>TaskList</a>, tasklist: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_tasks1/struct.TasklistUpdateCall.html' title='google_tasks1::TasklistUpdateCall'>TasklistUpdateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.update' class='method'><code>fn <a href='#method.update' class='fnname'>update</a>(&amp;self, request: <a class='struct' href='../google_tasks1/struct.TaskList.html' title='google_tasks1::TaskList'>TaskList</a>, tasklist: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_tasks1/struct.TasklistUpdateCall.html' title='google_tasks1::TasklistUpdateCall'>TasklistUpdateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Updates the authenticated user&#39;s specified task list.</p>
@@ -89,7 +89,7 @@ It is not used directly, but through the <code>TasksHub</code> hub.</p>
 <li><code>request</code> - No description provided.</li>
 <li><code>tasklist</code> - Task list identifier.</li>
 </ul>
-</div><h4 id='method.delete' class='method'><code>fn <a href='#method.delete' class='fnname'>delete</a>(&amp;self, tasklist: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_tasks1/struct.TasklistDeleteCall.html' title='google_tasks1::TasklistDeleteCall'>TasklistDeleteCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.delete' class='method'><code>fn <a href='#method.delete' class='fnname'>delete</a>(&amp;self, tasklist: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_tasks1/struct.TasklistDeleteCall.html' title='google_tasks1::TasklistDeleteCall'>TasklistDeleteCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Deletes the authenticated user&#39;s specified task list.</p>
@@ -98,7 +98,7 @@ It is not used directly, but through the <code>TasksHub</code> hub.</p>
 <ul>
 <li><code>tasklist</code> - Task list identifier.</li>
 </ul>
-</div><h4 id='method.patch' class='method'><code>fn <a href='#method.patch' class='fnname'>patch</a>(&amp;self, request: <a class='struct' href='../google_tasks1/struct.TaskList.html' title='google_tasks1::TaskList'>TaskList</a>, tasklist: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_tasks1/struct.TasklistPatchCall.html' title='google_tasks1::TasklistPatchCall'>TasklistPatchCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.patch' class='method'><code>fn <a href='#method.patch' class='fnname'>patch</a>(&amp;self, request: <a class='struct' href='../google_tasks1/struct.TaskList.html' title='google_tasks1::TaskList'>TaskList</a>, tasklist: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_tasks1/struct.TasklistPatchCall.html' title='google_tasks1::TasklistPatchCall'>TasklistPatchCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Updates the authenticated user&#39;s specified task list. This method supports patch semantics.</p>
@@ -108,7 +108,7 @@ It is not used directly, but through the <code>TasksHub</code> hub.</p>
 <li><code>request</code> - No description provided.</li>
 <li><code>tasklist</code> - Task list identifier.</li>
 </ul>
-</div><h4 id='method.insert' class='method'><code>fn <a href='#method.insert' class='fnname'>insert</a>(&amp;self, request: <a class='struct' href='../google_tasks1/struct.TaskList.html' title='google_tasks1::TaskList'>TaskList</a>) -&gt; <a class='struct' href='../google_tasks1/struct.TasklistInsertCall.html' title='google_tasks1::TasklistInsertCall'>TasklistInsertCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.insert' class='method'><code>fn <a href='#method.insert' class='fnname'>insert</a>(&amp;self, request: <a class='struct' href='../google_tasks1/struct.TaskList.html' title='google_tasks1::TaskList'>TaskList</a>) -&gt; <a class='struct' href='../google_tasks1/struct.TasklistInsertCall.html' title='google_tasks1::TasklistInsertCall'>TasklistInsertCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Creates a new task list and adds it to the authenticated user&#39;s task lists.</p>
@@ -117,7 +117,7 @@ It is not used directly, but through the <code>TasksHub</code> hub.</p>
 <ul>
 <li><code>request</code> - No description provided.</li>
 </ul>
-</div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, tasklist: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_tasks1/struct.TasklistGetCall.html' title='google_tasks1::TasklistGetCall'>TasklistGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, tasklist: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_tasks1/struct.TasklistGetCall.html' title='google_tasks1::TasklistGetCall'>TasklistGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Returns the authenticated user&#39;s specified task list.</p>
@@ -126,7 +126,7 @@ It is not used directly, but through the <code>TasksHub</code> hub.</p>
 <ul>
 <li><code>tasklist</code> - Task list identifier.</li>
 </ul>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_tasks1/trait.MethodsBuilder.html' title='google_tasks1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_tasks1/struct.TasklistMethods.html' title='google_tasks1::TasklistMethods'>TasklistMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-2217' class='srclink' href='../src/google_tasks1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-tasks1-fd07690912352c6b/out/lib.rs.html#4745' title='goto source code'>[src]</a></span></h3>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='trait' href='../google_tasks1/trait.MethodsBuilder.html' title='google_tasks1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_tasks1/struct.TasklistMethods.html' title='google_tasks1::TasklistMethods'>TasklistMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-2091' class='srclink' href='../src/google_tasks1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-tasks1-b9a89f0eb56461ea/out/lib.rs.html#3863' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 

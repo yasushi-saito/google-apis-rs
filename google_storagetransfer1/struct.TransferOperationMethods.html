@@ -47,8 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-4767' class='srclink' href='../src/google_storagetransfer1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-storagetransfer1-ecc207d1f8b0b68b/out/lib.rs.html#9923-9925' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct TransferOperationMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
+               </span><a id='src-4401' class='srclink' href='../src/google_storagetransfer1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-storagetransfer1-e88f778c34f3f0e3/out/lib.rs.html#7800-7802' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct TransferOperationMethods&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>transferOperation</em> resources.
 It is not used directly, but through the <code>Storagetransfer</code> hub.</p>
@@ -74,8 +74,8 @@ It is not used directly, but through the <code>Storagetransfer</code> hub.</p>
 <span class='comment'>// like `cancel(...)`, `delete(...)`, `get(...)`, `list(...)`, `pause(...)` and `resume(...)`</span>
 <span class='comment'>// to build up your call.</span>
 <span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>transfer_operations</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_storagetransfer1/struct.TransferOperationMethods.html' title='google_storagetransfer1::TransferOperationMethods'>TransferOperationMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-4776' class='srclink' href='../src/google_storagetransfer1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-storagetransfer1-ecc207d1f8b0b68b/out/lib.rs.html#9927-10023' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.pause' class='method'><code>fn <a href='#method.pause' class='fnname'>pause</a>(&amp;self, request: <a class='struct' href='../google_storagetransfer1/struct.PauseTransferOperationRequest.html' title='google_storagetransfer1::PauseTransferOperationRequest'>PauseTransferOperationRequest</a>, name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_storagetransfer1/struct.TransferOperationPauseCall.html' title='google_storagetransfer1::TransferOperationPauseCall'>TransferOperationPauseCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='struct' href='../google_storagetransfer1/struct.TransferOperationMethods.html' title='google_storagetransfer1::TransferOperationMethods'>TransferOperationMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-4410' class='srclink' href='../src/google_storagetransfer1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-storagetransfer1-e88f778c34f3f0e3/out/lib.rs.html#7804-7900' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.pause' class='method'><code>fn <a href='#method.pause' class='fnname'>pause</a>(&amp;self, request: <a class='struct' href='../google_storagetransfer1/struct.PauseTransferOperationRequest.html' title='google_storagetransfer1::PauseTransferOperationRequest'>PauseTransferOperationRequest</a>, name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_storagetransfer1/struct.TransferOperationPauseCall.html' title='google_storagetransfer1::TransferOperationPauseCall'>TransferOperationPauseCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Pauses a transfer operation.</p>
@@ -85,7 +85,7 @@ It is not used directly, but through the <code>Storagetransfer</code> hub.</p>
 <li><code>request</code> - No description provided.</li>
 <li><code>name</code> - The name of the transfer operation. Required.</li>
 </ul>
-</div><h4 id='method.resume' class='method'><code>fn <a href='#method.resume' class='fnname'>resume</a>(&amp;self, request: <a class='struct' href='../google_storagetransfer1/struct.ResumeTransferOperationRequest.html' title='google_storagetransfer1::ResumeTransferOperationRequest'>ResumeTransferOperationRequest</a>, name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_storagetransfer1/struct.TransferOperationResumeCall.html' title='google_storagetransfer1::TransferOperationResumeCall'>TransferOperationResumeCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.resume' class='method'><code>fn <a href='#method.resume' class='fnname'>resume</a>(&amp;self, request: <a class='struct' href='../google_storagetransfer1/struct.ResumeTransferOperationRequest.html' title='google_storagetransfer1::ResumeTransferOperationRequest'>ResumeTransferOperationRequest</a>, name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_storagetransfer1/struct.TransferOperationResumeCall.html' title='google_storagetransfer1::TransferOperationResumeCall'>TransferOperationResumeCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Resumes a transfer operation that is paused.</p>
@@ -95,7 +95,7 @@ It is not used directly, but through the <code>Storagetransfer</code> hub.</p>
 <li><code>request</code> - No description provided.</li>
 <li><code>name</code> - The name of the transfer operation. Required.</li>
 </ul>
-</div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_storagetransfer1/struct.TransferOperationGetCall.html' title='google_storagetransfer1::TransferOperationGetCall'>TransferOperationGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_storagetransfer1/struct.TransferOperationGetCall.html' title='google_storagetransfer1::TransferOperationGetCall'>TransferOperationGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Gets the latest state of a long-running operation. Clients can use this method to poll the operation result at intervals as recommended by the API service.</p>
@@ -104,7 +104,7 @@ It is not used directly, but through the <code>Storagetransfer</code> hub.</p>
 <ul>
 <li><code>name</code> - The name of the operation resource.</li>
 </ul>
-</div><h4 id='method.delete' class='method'><code>fn <a href='#method.delete' class='fnname'>delete</a>(&amp;self, name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_storagetransfer1/struct.TransferOperationDeleteCall.html' title='google_storagetransfer1::TransferOperationDeleteCall'>TransferOperationDeleteCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.delete' class='method'><code>fn <a href='#method.delete' class='fnname'>delete</a>(&amp;self, name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_storagetransfer1/struct.TransferOperationDeleteCall.html' title='google_storagetransfer1::TransferOperationDeleteCall'>TransferOperationDeleteCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>This method is not supported and the server returns <code>UNIMPLEMENTED</code>.</p>
@@ -113,7 +113,7 @@ It is not used directly, but through the <code>Storagetransfer</code> hub.</p>
 <ul>
 <li><code>name</code> - The name of the operation resource to be deleted.</li>
 </ul>
-</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self, name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_storagetransfer1/struct.TransferOperationListCall.html' title='google_storagetransfer1::TransferOperationListCall'>TransferOperationListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self, name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_storagetransfer1/struct.TransferOperationListCall.html' title='google_storagetransfer1::TransferOperationListCall'>TransferOperationListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Lists operations that match the specified filter in the request. If the server doesn&#39;t support this method, it returns <code>UNIMPLEMENTED</code>. NOTE: the <code>name</code> binding below allows API services to override the binding to use different resource name schemes, such as <code>users/*/operations</code>.</p>
@@ -122,7 +122,7 @@ It is not used directly, but through the <code>Storagetransfer</code> hub.</p>
 <ul>
 <li><code>name</code> - The value <code>transferOperations</code>.</li>
 </ul>
-</div><h4 id='method.cancel' class='method'><code>fn <a href='#method.cancel' class='fnname'>cancel</a>(&amp;self, name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_storagetransfer1/struct.TransferOperationCancelCall.html' title='google_storagetransfer1::TransferOperationCancelCall'>TransferOperationCancelCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.cancel' class='method'><code>fn <a href='#method.cancel' class='fnname'>cancel</a>(&amp;self, name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_storagetransfer1/struct.TransferOperationCancelCall.html' title='google_storagetransfer1::TransferOperationCancelCall'>TransferOperationCancelCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Cancels a transfer. Use the get method to check whether the cancellation succeeded or whether the operation completed despite cancellation.</p>
@@ -131,7 +131,7 @@ It is not used directly, but through the <code>Storagetransfer</code> hub.</p>
 <ul>
 <li><code>name</code> - The name of the operation resource to be cancelled.</li>
 </ul>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_storagetransfer1/trait.MethodsBuilder.html' title='google_storagetransfer1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_storagetransfer1/struct.TransferOperationMethods.html' title='google_storagetransfer1::TransferOperationMethods'>TransferOperationMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-4772' class='srclink' href='../src/google_storagetransfer1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-storagetransfer1-ecc207d1f8b0b68b/out/lib.rs.html#9926' title='goto source code'>[src]</a></span></h3>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='trait' href='../google_storagetransfer1/trait.MethodsBuilder.html' title='google_storagetransfer1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_storagetransfer1/struct.TransferOperationMethods.html' title='google_storagetransfer1::TransferOperationMethods'>TransferOperationMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-4406' class='srclink' href='../src/google_storagetransfer1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-storagetransfer1-e88f778c34f3f0e3/out/lib.rs.html#7803' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 

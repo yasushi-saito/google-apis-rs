@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Set Iam Policy - Cloud Resource Manager v0.3.6+20160316</title>
+  <title>Set Iam Policy - Cloud Resource Manager v0.3.6+20160617</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -32,7 +32,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Cloud Resource Manager v0.3.6+20160316</a>
+        <a href=".." class="icon icon-home"> Cloud Resource Manager v0.3.6+20160617</a>
         
       </div>
 
@@ -44,6 +44,17 @@
                 <a class="" href="..">Home</a>
                 
             </li>
+        
+
+    
+        
+            <span>Operations</span>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../operations_get/">Get</a>
+                    
+                </li>
+            
         
 
     
@@ -125,7 +136,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Cloud Resource Manager v0.3.6+20160316</a>
+        <a href="..">Cloud Resource Manager v0.3.6+20160617</a>
       </nav>
 
       
@@ -152,7 +163,7 @@
 </div>
           <div role="main">
             <div class="section">
-              <p>Sets the IAM access control policy for the specified Project. Replaces any existing policy. The following constraints apply when using <code>setIamPolicy()</code>: + Project currently supports only <code>user:{emailid}</code> and <code>serviceAccount:{emailid}</code> members in a <code>Binding</code> of a <code>Policy</code>. + To be added as an <code>owner</code>, a user must be invited via Cloud Platform console and must accept the invitation. + Members cannot be added to more than one role in the same policy. + There must be at least one owner who has accepted the Terms of Service (ToS) agreement in the policy. Calling <code>setIamPolicy()</code> to to remove the last ToS-accepted owner from the policy will fail. + Calling this method requires enabling the App Engine Admin API. Note: Removing service accounts from policies or changing their roles can render services completely inoperable. It is important to understand how the service account is being used before removing or updating its roles.</p>
+              <p>Sets the IAM access control policy for the specified Project. Replaces any existing policy. The following constraints apply when using <code>setIamPolicy()</code>: + Project does not support <code>allUsers</code> and <code>allAuthenticatedUsers</code> as <code>members</code> in a <code>Binding</code> of a <code>Policy</code>. + The owner role can be granted only to <code>user</code> and <code>serviceAccount</code>. + Service accounts can be made owners of a project directly without any restrictions. However, to be added as an owner, a user must be invited via Cloud Platform console and must accept the invitation. + A user cannot be granted the owner role using <code>setIamPolicy()</code>. The user must be granted the owner role using the Cloud Platform Console and must explicitly accept the invitation. + Invitations to grant the owner role cannot be sent using <code>setIamPolicy()</code>; they must be sent only using the Cloud Platform Console. + Membership changes that leave the project without any owners that have accepted the Terms of Service (ToS) will be rejected. + Members cannot be added to more than one role in the same policy. + There must be at least one owner who has accepted the Terms of Service (ToS) agreement in the policy. Calling <code>setIamPolicy()</code> to to remove the last ToS-accepted owner from the policy will fail. This restriction also applies to legacy projects that no longer have owners who have accepted the ToS. Edits to IAM policies will be rejected until the lack of a ToS-accepting owner is rectified. + Calling this method requires enabling the App Engine Admin API. Note: Removing service accounts from policies or changing their roles can render services completely inoperable. It is important to understand how the service account is being used before removing or updating its roles.</p>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for the <em>https://www.googleapis.com/auth/cloud-platform</em> scope to make a valid call.</p>
 <p>If unset, the scope for this method defaults to <em>https://www.googleapis.com/auth/cloud-platform</em>.
@@ -331,7 +342,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <!--
 MkDocs version  : 0.12.2
-Docs Build Date : 2016-07-23 16:05:37.141925
+Docs Build Date : 2016-09-11 17:55:15.902044
 -->
 </body>
 </html>

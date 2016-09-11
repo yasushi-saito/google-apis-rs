@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Patch - bigquery v0.3.6+20160408</title>
+  <title>Patch - bigquery v0.3.6+20160903</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -32,7 +32,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> bigquery v0.3.6+20160408</a>
+        <a href=".." class="icon icon-home"> bigquery v0.3.6+20160903</a>
         
       </div>
 
@@ -214,7 +214,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">bigquery v0.3.6+20160408</a>
+        <a href="..">bigquery v0.3.6+20160903</a>
       </nav>
 
       
@@ -278,6 +278,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
     autodetect: boolean
     bigtable-options:
       ignore-unspecified-column-families: boolean
+      read-rowkey-as-string: boolean
     compression: string
     csv-options:
       allow-jagged-rows: boolean
@@ -285,7 +286,9 @@ In the latter case it is advised to set the field-cursor to the data-structure's
       encoding: string
       field-delimiter: string
       quote: string
-      skip-leading-rows: integer
+      skip-leading-rows: string
+    google-sheets-options:
+      skip-leading-rows: string
     ignore-unknown-values: boolean
     max-bad-records: integer
     source-format: string
@@ -296,6 +299,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   last-modified-time: string
   location: string
   num-bytes: string
+  num-long-term-bytes: string
   num-rows: string
   self-link: string
   streaming-buffer:
@@ -306,27 +310,31 @@ In the latter case it is advised to set the field-cursor to the data-structure's
     dataset-id: string
     project-id: string
     table-id: string
+  time-partitioning:
+    expiration-ms: string
+    type: string
   type: string
   view:
     query: string
+    use-legacy-sql: boolean
 
 </code></pre>
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    creation-time=lorem</code><ul>
+<li><code>-r .    creation-time=et</code><ul>
 <li>[Output-only] The time when this table was created, in milliseconds since the epoch.</li>
 </ul>
 </li>
-<li><code>description=lorem</code><ul>
+<li><code>description=vero</code><ul>
 <li>[Optional] A user-friendly description of this table.</li>
 </ul>
 </li>
-<li><code>etag=diam</code><ul>
+<li><code>etag=ut</code><ul>
 <li>[Output-only] A hash of this resource.</li>
 </ul>
 </li>
-<li><code>expiration-time=ut</code><ul>
+<li><code>expiration-time=sed</code><ul>
 <li>[Optional] The time when this table expires, in milliseconds since the epoch. If not present, the table will persist indefinitely. Expired tables will be deleted and their storage reclaimed.</li>
 </ul>
 </li>
@@ -334,42 +342,52 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>[Experimental] Try to detect schema and format options automatically. Any option specified explicitly will be honored.</li>
 </ul>
 </li>
-<li>
-<p><code>bigtable-options    ignore-unspecified-column-families=false</code></p>
-<ul>
+<li><code>bigtable-options    ignore-unspecified-column-families=false</code><ul>
 <li>[Optional] If field is true, then the column families that are not specified in columnFamilies list are not exposed in the table schema. Otherwise, they are read with BYTES type values. The default value is false.</li>
 </ul>
 </li>
 <li>
-<p><code>..    compression=ipsum</code></p>
+<p><code>read-rowkey-as-string=true</code></p>
+<ul>
+<li>[Optional] If field is true, then the rowkey column families will be read and converted to string. Otherwise they are read with BYTES type values and users need to manually cast them with CAST if necessary. The default value is false.</li>
+</ul>
+</li>
+<li>
+<p><code>..    compression=dolore</code></p>
 <ul>
 <li>[Optional] The compression type of the data source. Possible values include GZIP and NONE. The default value is NONE. This setting is ignored for Google Cloud Bigtable, Google Cloud Datastore backups and Avro formats.</li>
 </ul>
 </li>
-<li><code>csv-options    allow-jagged-rows=false</code><ul>
+<li><code>csv-options    allow-jagged-rows=true</code><ul>
 <li>[Optional] Indicates if BigQuery should accept rows that are missing trailing optional columns. If true, BigQuery treats missing trailing columns as null values. If false, records with missing trailing columns are treated as bad records, and if there are too many bad records, an invalid error is returned in the job result. The default value is false.</li>
 </ul>
 </li>
-<li><code>allow-quoted-newlines=true</code><ul>
+<li><code>allow-quoted-newlines=false</code><ul>
 <li>[Optional] Indicates if BigQuery should allow quoted data sections that contain newline characters in a CSV file. The default value is false.</li>
 </ul>
 </li>
-<li><code>encoding=sea</code><ul>
+<li><code>encoding=takimata</code><ul>
 <li>[Optional] The character encoding of the data. The supported values are UTF-8 or ISO-8859-1. The default value is UTF-8. BigQuery decodes the data after the raw, binary data has been split using the values of the quote and fieldDelimiter properties.</li>
 </ul>
 </li>
-<li><code>field-delimiter=ut</code><ul>
+<li><code>field-delimiter=et</code><ul>
 <li>[Optional] The separator for fields in a CSV file. BigQuery converts the string to ISO-8859-1 encoding, and then uses the first byte of the encoded string to split the data in its raw, binary state. BigQuery also supports the escape sequence &#34;\t&#34; to specify a tab separator. The default value is a comma (&#39;,&#39;).</li>
 </ul>
 </li>
-<li><code>quote=eirmod</code><ul>
+<li><code>quote=nonumy</code><ul>
 <li>[Optional] The value that is used to quote data sections in a CSV file. BigQuery converts the string to ISO-8859-1 encoding, and then uses the first byte of the encoded string to split the data in its raw, binary state. The default value is a double-quote (&#39;&#34;&#39;). If your data does not contain quoted sections, set the property value to an empty string. If your data contains quoted newline characters, you must also set the allowQuotedNewlines property to true.</li>
 </ul>
 </li>
 <li>
-<p><code>skip-leading-rows=93</code></p>
+<p><code>skip-leading-rows=et</code></p>
 <ul>
 <li>[Optional] The number of rows at the top of a CSV file that BigQuery will skip when reading the data. The default value is 0. This property is useful if you have header rows in the file that should be skipped.</li>
+</ul>
+</li>
+<li>
+<p><code>..google-sheets-options    skip-leading-rows=sed</code></p>
+<ul>
+<li>[Optional] The number of rows at the top of a sheet that BigQuery will skip when reading the data. The default value is 0. This property is useful if you have header rows that should be skipped. When autodetect is on, behavior is the following: * skipLeadingRows unspecified - Autodetect tries to detect headers in the first row. If they are not detected, the row is read as data. Otherwise data is read starting from the second row. * skipLeadingRows is 0 - Instructs autodetect that there are no headers and data should be read starting from the first row. * skipLeadingRows = N &gt; 0 - Autodetect skips N-1 rows and tries to detect headers in row N. If headers are not detected, row N is just skipped. Otherwise row N is used to extract column names for the detected schema.</li>
 </ul>
 </li>
 <li>
@@ -378,93 +396,113 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>[Optional] Indicates if BigQuery should allow extra values that are not represented in the table schema. If true, the extra values are ignored. If false, records with extra columns are treated as bad records, and if there are too many bad records, an invalid error is returned in the job result. The default value is false. The sourceFormat property determines what BigQuery treats as an extra value: CSV: Trailing columns JSON: Named values that don&#39;t match any column names Google Cloud Bigtable: This setting is ignored. Google Cloud Datastore backups: This setting is ignored. Avro: This setting is ignored.</li>
 </ul>
 </li>
-<li><code>max-bad-records=2</code><ul>
+<li><code>max-bad-records=63</code><ul>
 <li>[Optional] The maximum number of bad records that BigQuery can ignore when reading data. If the number of bad records exceeds this value, an invalid error is returned in the job result. The default value is 0, which requires that all records are valid. This setting is ignored for Google Cloud Bigtable, Google Cloud Datastore backups and Avro formats.</li>
 </ul>
 </li>
-<li><code>source-format=et</code><ul>
-<li>[Required] The data format. For CSV files, specify &#34;CSV&#34;. For newline-delimited JSON, specify &#34;NEWLINE_DELIMITED_JSON&#34;. For Avro files, specify &#34;AVRO&#34;. For Google Cloud Datastore backups, specify &#34;DATASTORE_BACKUP&#34;. [Experimental] For Google Cloud Bigtable, specify &#34;BIGTABLE&#34;. Please note that reading from Google Cloud Bigtable is experimental and has to be enabled for your project. Please contact Google Cloud Support to enable this for your project.</li>
+<li><code>source-format=rebum.</code><ul>
+<li>[Required] The data format. For CSV files, specify &#34;CSV&#34;. For Google sheets, specify &#34;GOOGLE_SHEETS&#34;. For newline-delimited JSON, specify &#34;NEWLINE_DELIMITED_JSON&#34;. For Avro files, specify &#34;AVRO&#34;. For Google Cloud Datastore backups, specify &#34;DATASTORE_BACKUP&#34;. [Experimental] For Google Cloud Bigtable, specify &#34;BIGTABLE&#34;. Please note that reading from Google Cloud Bigtable is experimental and has to be enabled for your project. Please contact Google Cloud Support to enable this for your project.</li>
 </ul>
 </li>
 <li>
-<p><code>source-uris=et</code></p>
+<p><code>source-uris=labore</code></p>
 <ul>
-<li>[Required] The fully-qualified URIs that point to your data in Google Cloud. For Google Cloud Storage URIs: Each URI can contain one &#39;<em>&#39; wildcard character and it must come after the &#39;bucket&#39; name. Size limits related to load jobs apply to external data sources, plus an additional limit of 10 GB maximum size across all URIs. For Google Cloud Bigtable URIs: Exactly one URI can be specified and it has be a fully specified and valid HTTPS URL for a Google Cloud Bigtable table. For Google Cloud Datastore backups, exactly one URI can be specified, and it must end with &#39;.backup_info&#39;. Also, the &#39;</em>&#39; wildcard character is not allowed.</li>
+<li>[Required] The fully-qualified URIs that point to your data in Google Cloud. For Google Cloud Storage URIs: Each URI can contain one &#39;<em>&#39; wildcard character and it must come after the &#39;bucket&#39; name. Size limits related to load jobs apply to external data sources. For Google Cloud Bigtable URIs: Exactly one URI can be specified and it has be a fully specified and valid HTTPS URL for a Google Cloud Bigtable table. For Google Cloud Datastore backups, exactly one URI can be specified, and it must end with &#39;.backup_info&#39;. Also, the &#39;</em>&#39; wildcard character is not allowed.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
 <li>
-<p><code>..    friendly-name=vero</code></p>
+<p><code>..    friendly-name=aliquyam</code></p>
 <ul>
 <li>[Optional] A descriptive name for this table.</li>
 </ul>
 </li>
-<li><code>id=ut</code><ul>
+<li><code>id=elitr</code><ul>
 <li>[Output-only] An opaque ID uniquely identifying the table.</li>
 </ul>
 </li>
-<li><code>kind=sed</code><ul>
+<li><code>kind=consetetur</code><ul>
 <li>[Output-only] The type of the resource.</li>
 </ul>
 </li>
-<li><code>last-modified-time=et</code><ul>
+<li><code>last-modified-time=sea</code><ul>
 <li>[Output-only] The time when this table was last modified, in milliseconds since the epoch.</li>
 </ul>
 </li>
-<li><code>location=ipsum</code><ul>
+<li><code>location=elitr</code><ul>
 <li>[Output-only] The geographic location where the table resides. This value is inherited from the dataset.</li>
 </ul>
 </li>
-<li><code>num-bytes=justo</code><ul>
+<li><code>num-bytes=at</code><ul>
 <li>[Output-only] The size of this table in bytes, excluding any data in the streaming buffer.</li>
 </ul>
 </li>
-<li><code>num-rows=dolore</code><ul>
+<li><code>num-long-term-bytes=sea</code><ul>
+<li>[Output-only] The number of bytes in the table that are considered &#34;long-term storage&#34;.</li>
+</ul>
+</li>
+<li><code>num-rows=consetetur</code><ul>
 <li>[Output-only] The number of rows of data in this table, excluding any data in the streaming buffer.</li>
 </ul>
 </li>
-<li><code>self-link=vero</code><ul>
+<li><code>self-link=diam</code><ul>
 <li>[Output-only] A URL that can be used to access this resource again.</li>
 </ul>
 </li>
-<li><code>streaming-buffer    estimated-bytes=dolor</code><ul>
+<li><code>streaming-buffer    estimated-bytes=accusam</code><ul>
 <li>[Output-only] A lower-bound estimate of the number of bytes currently in the streaming buffer.</li>
 </ul>
 </li>
-<li><code>estimated-rows=takimata</code><ul>
+<li><code>estimated-rows=dolores</code><ul>
 <li>[Output-only] A lower-bound estimate of the number of rows currently in the streaming buffer.</li>
 </ul>
 </li>
 <li>
-<p><code>oldest-entry-time=et</code></p>
+<p><code>oldest-entry-time=consetetur</code></p>
 <ul>
 <li>[Output-only] Contains the timestamp of the oldest entry in the streaming buffer, in milliseconds since the epoch, if the streaming buffer is available.</li>
 </ul>
 </li>
 <li>
-<p><code>..table-reference    dataset-id=nonumy</code></p>
+<p><code>..table-reference    dataset-id=dolor</code></p>
 <ul>
 <li>[Required] The ID of the dataset containing this table.</li>
 </ul>
 </li>
-<li><code>project-id=et</code><ul>
+<li><code>project-id=aliquyam</code><ul>
 <li>[Required] The ID of the project containing this table.</li>
 </ul>
 </li>
 <li>
-<p><code>table-id=sed</code></p>
+<p><code>table-id=elitr</code></p>
 <ul>
 <li>[Required] The ID of the table. The ID must contain only letters (a-z, A-Z), numbers (0-9), or underscores (_). The maximum length is 1,024 characters.</li>
 </ul>
 </li>
 <li>
-<p><code>..    type=no</code></p>
+<p><code>..time-partitioning    expiration-ms=ea</code></p>
+<ul>
+<li>[Optional] Number of milliseconds for which to keep the storage for a partition.</li>
+</ul>
+</li>
+<li>
+<p><code>type=et</code></p>
+<ul>
+<li>[Required] The only type supported is DAY, which will generate one partition per day based on data loading time.</li>
+</ul>
+</li>
+<li>
+<p><code>..    type=stet</code></p>
 <ul>
 <li>[Output-only] Describes the table type. The following values are supported: TABLE: A normal BigQuery table. VIEW: A virtual table defined by a SQL query. EXTERNAL: A table that references data stored in an external storage system, such as Google Cloud Storage. The default value is TABLE.</li>
 </ul>
 </li>
-<li><code>view    query=invidunt</code><ul>
+<li><code>view    query=sed</code><ul>
 <li>[Required] A query that BigQuery executes when the view is referenced.</li>
+</ul>
+</li>
+<li><code>use-legacy-sql=false</code><ul>
+<li>[Experimental] Specifies whether to use BigQuery&#39;s legacy SQL for this view. The default value is true. If set to false, the view will use BigQuery&#39;s standard SQL: https://cloud.google.com/bigquery/sql-reference/ Queries and views that reference this view must use the same flag value.</li>
 </ul>
 </li>
 </ul>
@@ -577,7 +615,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <!--
 MkDocs version  : 0.12.2
-Docs Build Date : 2016-07-23 16:06:02.954853
+Docs Build Date : 2016-09-11 17:56:02.094451
 -->
 </body>
 </html>

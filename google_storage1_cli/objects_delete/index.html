@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Delete - storage v0.3.6+20160330</title>
+  <title>Delete - storage v0.3.6+20160901</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -32,7 +32,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> storage v0.3.6+20160330</a>
+        <a href=".." class="icon icon-home"> storage v0.3.6+20160901</a>
         
       </div>
 
@@ -285,7 +285,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">storage v0.3.6+20160330</a>
+        <a href="..">storage v0.3.6+20160901</a>
       </nav>
 
       
@@ -339,21 +339,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p if-metageneration-not-match=string</strong></p>
-<ul>
-<li>Makes the operation conditional on whether the object&#39;s current metageneration does not match the given value.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p if-generation-not-match=string</strong></p>
-<ul>
-<li>Makes the operation conditional on whether the object&#39;s current generation does not match the given value.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p if-generation-match=string</strong></p>
 <ul>
 <li>Makes the operation conditional on whether the object&#39;s current generation matches the given value.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p if-metageneration-not-match=string</strong></p>
+<ul>
+<li>Makes the operation conditional on whether the object&#39;s current metageneration does not match the given value.</li>
 </ul>
 </li>
 <li>
@@ -366,6 +360,12 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <p><strong>-p generation=string</strong></p>
 <ul>
 <li>If present, permanently deletes a specific revision of this object (as opposed to the latest version, the default).</li>
+</ul>
+</li>
+<li>
+<p><strong>-p if-generation-not-match=string</strong></p>
+<ul>
+<li>Makes the operation conditional on whether the object&#39;s current generation does not match the given value.</li>
 </ul>
 </li>
 </ul>
@@ -459,7 +459,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 
 <!--
 MkDocs version  : 0.12.2
-Docs Build Date : 2016-07-23 16:05:53.172169
+Docs Build Date : 2016-09-11 17:55:44.717756
 -->
 </body>
 </html>

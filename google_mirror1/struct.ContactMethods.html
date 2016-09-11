@@ -47,8 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-5057' class='srclink' href='../src/google_mirror1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-mirror1-b4bbacee8b5540ea/out/lib.rs.html#11042-11044' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct ContactMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
+               </span><a id='src-4706' class='srclink' href='../src/google_mirror1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-mirror1-5f2f6b768dc18be4/out/lib.rs.html#8697-8699' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct ContactMethods&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>contact</em> resources.
 It is not used directly, but through the <code>Mirror</code> hub.</p>
@@ -74,8 +74,8 @@ It is not used directly, but through the <code>Mirror</code> hub.</p>
 <span class='comment'>// like `delete(...)`, `get(...)`, `insert(...)`, `list(...)`, `patch(...)` and `update(...)`</span>
 <span class='comment'>// to build up your call.</span>
 <span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>contacts</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_mirror1/struct.ContactMethods.html' title='google_mirror1::ContactMethods'>ContactMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-5066' class='srclink' href='../src/google_mirror1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-mirror1-b4bbacee8b5540ea/out/lib.rs.html#11046-11132' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_mirror1/struct.ContactGetCall.html' title='google_mirror1::ContactGetCall'>ContactGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='struct' href='../google_mirror1/struct.ContactMethods.html' title='google_mirror1::ContactMethods'>ContactMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-4715' class='srclink' href='../src/google_mirror1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-mirror1-5f2f6b768dc18be4/out/lib.rs.html#8701-8787' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_mirror1/struct.ContactGetCall.html' title='google_mirror1::ContactGetCall'>ContactGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Gets a single contact by ID.</p>
@@ -84,7 +84,7 @@ It is not used directly, but through the <code>Mirror</code> hub.</p>
 <ul>
 <li><code>id</code> - The ID of the contact.</li>
 </ul>
-</div><h4 id='method.delete' class='method'><code>fn <a href='#method.delete' class='fnname'>delete</a>(&amp;self, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_mirror1/struct.ContactDeleteCall.html' title='google_mirror1::ContactDeleteCall'>ContactDeleteCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.delete' class='method'><code>fn <a href='#method.delete' class='fnname'>delete</a>(&amp;self, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_mirror1/struct.ContactDeleteCall.html' title='google_mirror1::ContactDeleteCall'>ContactDeleteCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Deletes a contact.</p>
@@ -93,7 +93,7 @@ It is not used directly, but through the <code>Mirror</code> hub.</p>
 <ul>
 <li><code>id</code> - The ID of the contact.</li>
 </ul>
-</div><h4 id='method.insert' class='method'><code>fn <a href='#method.insert' class='fnname'>insert</a>(&amp;self, request: <a class='struct' href='../google_mirror1/struct.Contact.html' title='google_mirror1::Contact'>Contact</a>) -&gt; <a class='struct' href='../google_mirror1/struct.ContactInsertCall.html' title='google_mirror1::ContactInsertCall'>ContactInsertCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.insert' class='method'><code>fn <a href='#method.insert' class='fnname'>insert</a>(&amp;self, request: <a class='struct' href='../google_mirror1/struct.Contact.html' title='google_mirror1::Contact'>Contact</a>) -&gt; <a class='struct' href='../google_mirror1/struct.ContactInsertCall.html' title='google_mirror1::ContactInsertCall'>ContactInsertCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Inserts a new contact.</p>
@@ -102,7 +102,7 @@ It is not used directly, but through the <code>Mirror</code> hub.</p>
 <ul>
 <li><code>request</code> - No description provided.</li>
 </ul>
-</div><h4 id='method.patch' class='method'><code>fn <a href='#method.patch' class='fnname'>patch</a>(&amp;self, request: <a class='struct' href='../google_mirror1/struct.Contact.html' title='google_mirror1::Contact'>Contact</a>, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_mirror1/struct.ContactPatchCall.html' title='google_mirror1::ContactPatchCall'>ContactPatchCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.patch' class='method'><code>fn <a href='#method.patch' class='fnname'>patch</a>(&amp;self, request: <a class='struct' href='../google_mirror1/struct.Contact.html' title='google_mirror1::Contact'>Contact</a>, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_mirror1/struct.ContactPatchCall.html' title='google_mirror1::ContactPatchCall'>ContactPatchCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Updates a contact in place. This method supports patch semantics.</p>
@@ -112,11 +112,11 @@ It is not used directly, but through the <code>Mirror</code> hub.</p>
 <li><code>request</code> - No description provided.</li>
 <li><code>id</code> - The ID of the contact.</li>
 </ul>
-</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self) -&gt; <a class='struct' href='../google_mirror1/struct.ContactListCall.html' title='google_mirror1::ContactListCall'>ContactListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self) -&gt; <a class='struct' href='../google_mirror1/struct.ContactListCall.html' title='google_mirror1::ContactListCall'>ContactListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Retrieves a list of contacts for the authenticated user.</p>
-</div><h4 id='method.update' class='method'><code>fn <a href='#method.update' class='fnname'>update</a>(&amp;self, request: <a class='struct' href='../google_mirror1/struct.Contact.html' title='google_mirror1::Contact'>Contact</a>, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_mirror1/struct.ContactUpdateCall.html' title='google_mirror1::ContactUpdateCall'>ContactUpdateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.update' class='method'><code>fn <a href='#method.update' class='fnname'>update</a>(&amp;self, request: <a class='struct' href='../google_mirror1/struct.Contact.html' title='google_mirror1::Contact'>Contact</a>, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_mirror1/struct.ContactUpdateCall.html' title='google_mirror1::ContactUpdateCall'>ContactUpdateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Updates a contact in place.</p>
@@ -126,7 +126,7 @@ It is not used directly, but through the <code>Mirror</code> hub.</p>
 <li><code>request</code> - No description provided.</li>
 <li><code>id</code> - The ID of the contact.</li>
 </ul>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_mirror1/trait.MethodsBuilder.html' title='google_mirror1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_mirror1/struct.ContactMethods.html' title='google_mirror1::ContactMethods'>ContactMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-5062' class='srclink' href='../src/google_mirror1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-mirror1-b4bbacee8b5540ea/out/lib.rs.html#11045' title='goto source code'>[src]</a></span></h3>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='trait' href='../google_mirror1/trait.MethodsBuilder.html' title='google_mirror1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_mirror1/struct.ContactMethods.html' title='google_mirror1::ContactMethods'>ContactMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-4711' class='srclink' href='../src/google_mirror1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-mirror1-5f2f6b768dc18be4/out/lib.rs.html#8700' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 

@@ -47,8 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-13475' class='srclink' href='../src/google_genomics1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-genomics1-16ed839a8e049b7f/out/lib.rs.html#29607-29609' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct AnnotationsetMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
+               </span><a id='src-12467' class='srclink' href='../src/google_genomics1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-genomics1-40179d636dbccd1e/out/lib.rs.html#23051-23053' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct AnnotationsetMethods&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>annotationset</em> resources.
 It is not used directly, but through the <code>Genomics</code> hub.</p>
@@ -74,8 +74,8 @@ It is not used directly, but through the <code>Genomics</code> hub.</p>
 <span class='comment'>// like `create(...)`, `delete(...)`, `get(...)`, `search(...)` and `update(...)`</span>
 <span class='comment'>// to build up your call.</span>
 <span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>annotationsets</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_genomics1/struct.AnnotationsetMethods.html' title='google_genomics1::AnnotationsetMethods'>AnnotationsetMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-13484' class='srclink' href='../src/google_genomics1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-genomics1-16ed839a8e049b7f/out/lib.rs.html#29611-29693' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.update' class='method'><code>fn <a href='#method.update' class='fnname'>update</a>(&amp;self, request: <a class='struct' href='../google_genomics1/struct.AnnotationSet.html' title='google_genomics1::AnnotationSet'>AnnotationSet</a>, annotation_set_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_genomics1/struct.AnnotationsetUpdateCall.html' title='google_genomics1::AnnotationsetUpdateCall'>AnnotationsetUpdateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='struct' href='../google_genomics1/struct.AnnotationsetMethods.html' title='google_genomics1::AnnotationsetMethods'>AnnotationsetMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-12476' class='srclink' href='../src/google_genomics1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-genomics1-40179d636dbccd1e/out/lib.rs.html#23055-23137' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.update' class='method'><code>fn <a href='#method.update' class='fnname'>update</a>(&amp;self, request: <a class='struct' href='../google_genomics1/struct.AnnotationSet.html' title='google_genomics1::AnnotationSet'>AnnotationSet</a>, annotation_set_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_genomics1/struct.AnnotationsetUpdateCall.html' title='google_genomics1::AnnotationsetUpdateCall'>AnnotationsetUpdateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Updates an annotation set. The update must respect all mutability restrictions and other invariants described on the annotation set resource. Caller must have WRITE permission for the associated dataset.</p>
@@ -85,7 +85,7 @@ It is not used directly, but through the <code>Genomics</code> hub.</p>
 <li><code>request</code> - No description provided.</li>
 <li><code>annotationSetId</code> - The ID of the annotation set to be updated.</li>
 </ul>
-</div><h4 id='method.search' class='method'><code>fn <a href='#method.search' class='fnname'>search</a>(&amp;self, request: <a class='struct' href='../google_genomics1/struct.SearchAnnotationSetsRequest.html' title='google_genomics1::SearchAnnotationSetsRequest'>SearchAnnotationSetsRequest</a>) -&gt; <a class='struct' href='../google_genomics1/struct.AnnotationsetSearchCall.html' title='google_genomics1::AnnotationsetSearchCall'>AnnotationsetSearchCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.search' class='method'><code>fn <a href='#method.search' class='fnname'>search</a>(&amp;self, request: <a class='struct' href='../google_genomics1/struct.SearchAnnotationSetsRequest.html' title='google_genomics1::SearchAnnotationSetsRequest'>SearchAnnotationSetsRequest</a>) -&gt; <a class='struct' href='../google_genomics1/struct.AnnotationsetSearchCall.html' title='google_genomics1::AnnotationsetSearchCall'>AnnotationsetSearchCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Searches for annotation sets that match the given criteria. Annotation sets are returned in an unspecified order. This order is consistent, such that two queries for the same content (regardless of page size) yield annotation sets in the same order across their respective streams of paginated responses. Caller must have READ permission for the queried datasets.</p>
@@ -94,7 +94,7 @@ It is not used directly, but through the <code>Genomics</code> hub.</p>
 <ul>
 <li><code>request</code> - No description provided.</li>
 </ul>
-</div><h4 id='method.create' class='method'><code>fn <a href='#method.create' class='fnname'>create</a>(&amp;self, request: <a class='struct' href='../google_genomics1/struct.AnnotationSet.html' title='google_genomics1::AnnotationSet'>AnnotationSet</a>) -&gt; <a class='struct' href='../google_genomics1/struct.AnnotationsetCreateCall.html' title='google_genomics1::AnnotationsetCreateCall'>AnnotationsetCreateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.create' class='method'><code>fn <a href='#method.create' class='fnname'>create</a>(&amp;self, request: <a class='struct' href='../google_genomics1/struct.AnnotationSet.html' title='google_genomics1::AnnotationSet'>AnnotationSet</a>) -&gt; <a class='struct' href='../google_genomics1/struct.AnnotationsetCreateCall.html' title='google_genomics1::AnnotationsetCreateCall'>AnnotationsetCreateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Creates a new annotation set. Caller must have WRITE permission for the associated dataset. The following fields are required: * datasetId * referenceSetId All other fields may be optionally specified, unless documented as being server-generated (for example, the <code>id</code> field).</p>
@@ -103,7 +103,7 @@ It is not used directly, but through the <code>Genomics</code> hub.</p>
 <ul>
 <li><code>request</code> - No description provided.</li>
 </ul>
-</div><h4 id='method.delete' class='method'><code>fn <a href='#method.delete' class='fnname'>delete</a>(&amp;self, annotation_set_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_genomics1/struct.AnnotationsetDeleteCall.html' title='google_genomics1::AnnotationsetDeleteCall'>AnnotationsetDeleteCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.delete' class='method'><code>fn <a href='#method.delete' class='fnname'>delete</a>(&amp;self, annotation_set_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_genomics1/struct.AnnotationsetDeleteCall.html' title='google_genomics1::AnnotationsetDeleteCall'>AnnotationsetDeleteCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Deletes an annotation set. Caller must have WRITE permission for the associated annotation set.</p>
@@ -112,7 +112,7 @@ It is not used directly, but through the <code>Genomics</code> hub.</p>
 <ul>
 <li><code>annotationSetId</code> - The ID of the annotation set to be deleted.</li>
 </ul>
-</div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, annotation_set_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_genomics1/struct.AnnotationsetGetCall.html' title='google_genomics1::AnnotationsetGetCall'>AnnotationsetGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, annotation_set_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_genomics1/struct.AnnotationsetGetCall.html' title='google_genomics1::AnnotationsetGetCall'>AnnotationsetGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Gets an annotation set. Caller must have READ permission for the associated dataset.</p>
@@ -121,7 +121,7 @@ It is not used directly, but through the <code>Genomics</code> hub.</p>
 <ul>
 <li><code>annotationSetId</code> - The ID of the annotation set to be retrieved.</li>
 </ul>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_genomics1/trait.MethodsBuilder.html' title='google_genomics1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_genomics1/struct.AnnotationsetMethods.html' title='google_genomics1::AnnotationsetMethods'>AnnotationsetMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-13480' class='srclink' href='../src/google_genomics1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-genomics1-16ed839a8e049b7f/out/lib.rs.html#29610' title='goto source code'>[src]</a></span></h3>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='trait' href='../google_genomics1/trait.MethodsBuilder.html' title='google_genomics1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_genomics1/struct.AnnotationsetMethods.html' title='google_genomics1::AnnotationsetMethods'>AnnotationsetMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-12472' class='srclink' href='../src/google_genomics1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-genomics1-40179d636dbccd1e/out/lib.rs.html#23054' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 

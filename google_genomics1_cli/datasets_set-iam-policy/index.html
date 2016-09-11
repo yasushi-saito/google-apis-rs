@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Set Iam Policy - genomics v0.3.6+20160407</title>
+  <title>Set Iam Policy - genomics v0.3.6+20160905</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -32,7 +32,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> genomics v0.3.6+20160407</a>
+        <a href=".." class="icon icon-home"> genomics v0.3.6+20160905</a>
         
       </div>
 
@@ -425,7 +425,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">genomics v0.3.6+20160407</a>
+        <a href="..">genomics v0.3.6+20160905</a>
       </nav>
 
       
@@ -481,11 +481,11 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .policy    etag=aliquyam</code><ul>
+<li><code>-r .policy    etag=lorem</code><ul>
 <li><code>etag</code> is used for optimistic concurrency control as a way to help prevent simultaneous updates of a policy from overwriting each other. It is strongly suggested that systems make use of the <code>etag</code> in the read-modify-write cycle to perform policy updates in order to avoid race conditions: An <code>etag</code> is returned in the response to <code>getIamPolicy</code>, and systems are expected to put that etag in the request to <code>setIamPolicy</code> to ensure that their change will be applied to the same version of the policy. If no <code>etag</code> is provided in the call to <code>setIamPolicy</code>, then the existing policy is overwritten blindly.</li>
 </ul>
 </li>
-<li><code>version=96</code><ul>
+<li><code>version=84</code><ul>
 <li>Version of the <code>Policy</code>. The default version is 0.</li>
 </ul>
 </li>
@@ -635,7 +635,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <!--
 MkDocs version  : 0.12.2
-Docs Build Date : 2016-07-23 16:06:00.398218
+Docs Build Date : 2016-09-11 17:55:58.304824
 -->
 </body>
 </html>

@@ -47,8 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-7222' class='srclink' href='../src/google_drive3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-drive3-f542a9c625180bc2/out/lib.rs.html#16302-16304' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct ChangeMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
+               </span><a id='src-6817' class='srclink' href='../src/google_drive3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-drive3-992fddd710d08bbb/out/lib.rs.html#12858-12860' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct ChangeMethods&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>change</em> resources.
 It is not used directly, but through the <code>Drive</code> hub.</p>
@@ -74,12 +74,12 @@ It is not used directly, but through the <code>Drive</code> hub.</p>
 <span class='comment'>// like `get_start_page_token(...)`, `list(...)` and `watch(...)`</span>
 <span class='comment'>// to build up your call.</span>
 <span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>changes</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_drive3/struct.ChangeMethods.html' title='google_drive3::ChangeMethods'>ChangeMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-7231' class='srclink' href='../src/google_drive3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-drive3-f542a9c625180bc2/out/lib.rs.html#16306-16356' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.get_start_page_token' class='method'><code>fn <a href='#method.get_start_page_token' class='fnname'>get_start_page_token</a>(&amp;self) -&gt; <a class='struct' href='../google_drive3/struct.ChangeGetStartPageTokenCall.html' title='google_drive3::ChangeGetStartPageTokenCall'>ChangeGetStartPageTokenCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='struct' href='../google_drive3/struct.ChangeMethods.html' title='google_drive3::ChangeMethods'>ChangeMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-6826' class='srclink' href='../src/google_drive3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-drive3-992fddd710d08bbb/out/lib.rs.html#12862-12912' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.get_start_page_token' class='method'><code>fn <a href='#method.get_start_page_token' class='fnname'>get_start_page_token</a>(&amp;self) -&gt; <a class='struct' href='../google_drive3/struct.ChangeGetStartPageTokenCall.html' title='google_drive3::ChangeGetStartPageTokenCall'>ChangeGetStartPageTokenCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Gets the starting pageToken for listing future changes.</p>
-</div><h4 id='method.watch' class='method'><code>fn <a href='#method.watch' class='fnname'>watch</a>(&amp;self, request: <a class='struct' href='../google_drive3/struct.Channel.html' title='google_drive3::Channel'>Channel</a>, page_token: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_drive3/struct.ChangeWatchCall.html' title='google_drive3::ChangeWatchCall'>ChangeWatchCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.watch' class='method'><code>fn <a href='#method.watch' class='fnname'>watch</a>(&amp;self, request: <a class='struct' href='../google_drive3/struct.Channel.html' title='google_drive3::Channel'>Channel</a>, page_token: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_drive3/struct.ChangeWatchCall.html' title='google_drive3::ChangeWatchCall'>ChangeWatchCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Subscribes to changes for a user.</p>
@@ -89,7 +89,7 @@ It is not used directly, but through the <code>Drive</code> hub.</p>
 <li><code>request</code> - No description provided.</li>
 <li><code>pageToken</code> - The token for continuing a previous list request on the next page. This should be set to the value of &#39;nextPageToken&#39; from the previous response or to the response from the getStartPageToken method.</li>
 </ul>
-</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self, page_token: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_drive3/struct.ChangeListCall.html' title='google_drive3::ChangeListCall'>ChangeListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self, page_token: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_drive3/struct.ChangeListCall.html' title='google_drive3::ChangeListCall'>ChangeListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Lists changes for a user.</p>
@@ -98,7 +98,7 @@ It is not used directly, but through the <code>Drive</code> hub.</p>
 <ul>
 <li><code>pageToken</code> - The token for continuing a previous list request on the next page. This should be set to the value of &#39;nextPageToken&#39; from the previous response or to the response from the getStartPageToken method.</li>
 </ul>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_drive3/trait.MethodsBuilder.html' title='google_drive3::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_drive3/struct.ChangeMethods.html' title='google_drive3::ChangeMethods'>ChangeMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-7227' class='srclink' href='../src/google_drive3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-drive3-f542a9c625180bc2/out/lib.rs.html#16305' title='goto source code'>[src]</a></span></h3>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='trait' href='../google_drive3/trait.MethodsBuilder.html' title='google_drive3::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_drive3/struct.ChangeMethods.html' title='google_drive3::ChangeMethods'>ChangeMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-6822' class='srclink' href='../src/google_drive3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-drive3-992fddd710d08bbb/out/lib.rs.html#12861' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 

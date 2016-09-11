@@ -47,8 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-34144' class='srclink' href='../src/google_youtube3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-youtube3-3a9e8c4a9ed85834/out/lib.rs.html#74717-74719' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct PlaylistMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
+               </span><a id='src-32803' class='srclink' href='../src/google_youtube3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-youtube3-122b93fad4a7fbcd/out/lib.rs.html#58847-58849' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct PlaylistMethods&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>playlist</em> resources.
 It is not used directly, but through the <code>YouTube</code> hub.</p>
@@ -74,8 +74,8 @@ It is not used directly, but through the <code>YouTube</code> hub.</p>
 <span class='comment'>// like `delete(...)`, `insert(...)`, `list(...)` and `update(...)`</span>
 <span class='comment'>// to build up your call.</span>
 <span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>playlists</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_youtube3/struct.PlaylistMethods.html' title='google_youtube3::PlaylistMethods'>PlaylistMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-34153' class='srclink' href='../src/google_youtube3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-youtube3-3a9e8c4a9ed85834/out/lib.rs.html#74721-74797' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.insert' class='method'><code>fn <a href='#method.insert' class='fnname'>insert</a>(&amp;self, request: <a class='struct' href='../google_youtube3/struct.Playlist.html' title='google_youtube3::Playlist'>Playlist</a>) -&gt; <a class='struct' href='../google_youtube3/struct.PlaylistInsertCall.html' title='google_youtube3::PlaylistInsertCall'>PlaylistInsertCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='struct' href='../google_youtube3/struct.PlaylistMethods.html' title='google_youtube3::PlaylistMethods'>PlaylistMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-32812' class='srclink' href='../src/google_youtube3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-youtube3-122b93fad4a7fbcd/out/lib.rs.html#58851-58927' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.insert' class='method'><code>fn <a href='#method.insert' class='fnname'>insert</a>(&amp;self, request: <a class='struct' href='../google_youtube3/struct.Playlist.html' title='google_youtube3::Playlist'>Playlist</a>) -&gt; <a class='struct' href='../google_youtube3/struct.PlaylistInsertCall.html' title='google_youtube3::PlaylistInsertCall'>PlaylistInsertCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Creates a playlist.</p>
@@ -84,7 +84,7 @@ It is not used directly, but through the <code>YouTube</code> hub.</p>
 <ul>
 <li><code>request</code> - No description provided.</li>
 </ul>
-</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self, part: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_youtube3/struct.PlaylistListCall.html' title='google_youtube3::PlaylistListCall'>PlaylistListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self, part: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_youtube3/struct.PlaylistListCall.html' title='google_youtube3::PlaylistListCall'>PlaylistListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Returns a collection of playlists that match the API request parameters. For example, you can retrieve all playlists that the authenticated user owns, or you can retrieve one or more playlists by their unique IDs.</p>
@@ -94,7 +94,7 @@ It is not used directly, but through the <code>YouTube</code> hub.</p>
 <li><code>part</code> - The part parameter specifies a comma-separated list of one or more playlist resource properties that the API response will include.
        If the parameter identifies a property that contains child properties, the child properties will be included in the response. For example, in a playlist resource, the snippet property contains properties like author, title, description, tags, and timeCreated. As such, if you set part=snippet, the API response will contain all of those properties.</li>
 </ul>
-</div><h4 id='method.delete' class='method'><code>fn <a href='#method.delete' class='fnname'>delete</a>(&amp;self, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_youtube3/struct.PlaylistDeleteCall.html' title='google_youtube3::PlaylistDeleteCall'>PlaylistDeleteCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.delete' class='method'><code>fn <a href='#method.delete' class='fnname'>delete</a>(&amp;self, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_youtube3/struct.PlaylistDeleteCall.html' title='google_youtube3::PlaylistDeleteCall'>PlaylistDeleteCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Deletes a playlist.</p>
@@ -103,7 +103,7 @@ It is not used directly, but through the <code>YouTube</code> hub.</p>
 <ul>
 <li><code>id</code> - The id parameter specifies the YouTube playlist ID for the playlist that is being deleted. In a playlist resource, the id property specifies the playlist&#39;s ID.</li>
 </ul>
-</div><h4 id='method.update' class='method'><code>fn <a href='#method.update' class='fnname'>update</a>(&amp;self, request: <a class='struct' href='../google_youtube3/struct.Playlist.html' title='google_youtube3::Playlist'>Playlist</a>) -&gt; <a class='struct' href='../google_youtube3/struct.PlaylistUpdateCall.html' title='google_youtube3::PlaylistUpdateCall'>PlaylistUpdateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.update' class='method'><code>fn <a href='#method.update' class='fnname'>update</a>(&amp;self, request: <a class='struct' href='../google_youtube3/struct.Playlist.html' title='google_youtube3::Playlist'>Playlist</a>) -&gt; <a class='struct' href='../google_youtube3/struct.PlaylistUpdateCall.html' title='google_youtube3::PlaylistUpdateCall'>PlaylistUpdateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Modifies a playlist. For example, you could change a playlist&#39;s title, description, or privacy status.</p>
@@ -112,7 +112,7 @@ It is not used directly, but through the <code>YouTube</code> hub.</p>
 <ul>
 <li><code>request</code> - No description provided.</li>
 </ul>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_youtube3/trait.MethodsBuilder.html' title='google_youtube3::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_youtube3/struct.PlaylistMethods.html' title='google_youtube3::PlaylistMethods'>PlaylistMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-34149' class='srclink' href='../src/google_youtube3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-youtube3-3a9e8c4a9ed85834/out/lib.rs.html#74720' title='goto source code'>[src]</a></span></h3>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='trait' href='../google_youtube3/trait.MethodsBuilder.html' title='google_youtube3::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_youtube3/struct.PlaylistMethods.html' title='google_youtube3::PlaylistMethods'>PlaylistMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-32808' class='srclink' href='../src/google_youtube3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-youtube3-122b93fad4a7fbcd/out/lib.rs.html#58850' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 

@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Remove - Games v0.3.6+20160401</title>
+  <title>Remove - Games v0.3.6+20160901</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -32,7 +32,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Games v0.3.6+20160401</a>
+        <a href=".." class="icon icon-home"> Games v0.3.6+20160901</a>
         
       </div>
 
@@ -198,6 +198,9 @@
                             <li class="toctree-l3"><a href="#required-request-value">Required Request Value</a></li>
                             
                                 <li><a class="toctree-l4" href="#about-cursors">About Cursors</a></li>
+                            
+                        
+                            <li class="toctree-l3"><a href="#optional-method-properties">Optional Method Properties</a></li>
                             
                         
                             <li class="toctree-l3"><a href="#optional-general-properties">Optional General Properties</a></li>
@@ -428,7 +431,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Games v0.3.6+20160401</a>
+        <a href="..">Games v0.3.6+20160901</a>
       </nav>
 
       
@@ -502,6 +505,16 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>The cursor position is set relative to the top-level structure if it starts with <code>.</code>, e.g. <code>-r .s.s</code></li>
 <li>You can also set nested fields without setting the cursor explicitly. For example, to set a value relative to the current cursor position, you would specify <code>-r struct.sub_struct=bar</code>.</li>
 <li>You can move the cursor one level up by using <code>..</code>. Each additional <code>.</code> moves it up one additional level. E.g. <code>...</code> would go three levels up.</li>
+</ul>
+<h1 id="optional-method-properties">Optional Method Properties</h1>
+<p>You may set the following properties to further configure the call. Please note that <code>-p</code> is followed by one 
+or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> even though the listing below repeats the
+<code>-p</code> for completeness.</p>
+<ul>
+<li><strong>-p consistency-token=string</strong><ul>
+<li>The last-seen mutation timestamp.</li>
+</ul>
+</li>
 </ul>
 <h1 id="optional-general-properties">Optional General Properties</h1>
 <p>The following properties can configure any call, and are not specific to this method.</p>
@@ -593,7 +606,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <!--
 MkDocs version  : 0.12.2
-Docs Build Date : 2016-07-23 16:06:19.097720
+Docs Build Date : 2016-09-11 17:56:28.596247
 -->
 </body>
 </html>

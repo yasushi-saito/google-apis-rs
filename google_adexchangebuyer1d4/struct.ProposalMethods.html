@@ -47,8 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-14684' class='srclink' href='../src/google_adexchangebuyer1d4/home/byron/dev/rust/google-apis-rs/target/debug/build/google-adexchangebuyer1d4-2c62c1eb7140aa41/out/lib.rs.html#31839-31841' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct ProposalMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
+               </span><a id='src-14295' class='srclink' href='../src/google_adexchangebuyer1d4/home/byron/dev/rust/google-apis-rs/target/debug/build/google-adexchangebuyer1d4-e81ed01b0333a8e3/out/lib.rs.html#26015-26017' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct ProposalMethods&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>proposal</em> resources.
 It is not used directly, but through the <code>AdExchangeBuyer</code> hub.</p>
@@ -74,12 +74,12 @@ It is not used directly, but through the <code>AdExchangeBuyer</code> hub.</p>
 <span class='comment'>// like `get(...)`, `insert(...)`, `patch(...)`, `search(...)`, `setupcomplete(...)` and `update(...)`</span>
 <span class='comment'>// to build up your call.</span>
 <span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>proposals</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_adexchangebuyer1d4/struct.ProposalMethods.html' title='google_adexchangebuyer1d4::ProposalMethods'>ProposalMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-14693' class='srclink' href='../src/google_adexchangebuyer1d4/home/byron/dev/rust/google-apis-rs/target/debug/build/google-adexchangebuyer1d4-2c62c1eb7140aa41/out/lib.rs.html#31843-31942' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.search' class='method'><code>fn <a href='#method.search' class='fnname'>search</a>(&amp;self) -&gt; <a class='struct' href='../google_adexchangebuyer1d4/struct.ProposalSearchCall.html' title='google_adexchangebuyer1d4::ProposalSearchCall'>ProposalSearchCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='struct' href='../google_adexchangebuyer1d4/struct.ProposalMethods.html' title='google_adexchangebuyer1d4::ProposalMethods'>ProposalMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-14304' class='srclink' href='../src/google_adexchangebuyer1d4/home/byron/dev/rust/google-apis-rs/target/debug/build/google-adexchangebuyer1d4-e81ed01b0333a8e3/out/lib.rs.html#26019-26118' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.search' class='method'><code>fn <a href='#method.search' class='fnname'>search</a>(&amp;self) -&gt; <a class='struct' href='../google_adexchangebuyer1d4/struct.ProposalSearchCall.html' title='google_adexchangebuyer1d4::ProposalSearchCall'>ProposalSearchCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Search for proposals using pql query</p>
-</div><h4 id='method.insert' class='method'><code>fn <a href='#method.insert' class='fnname'>insert</a>(&amp;self, request: <a class='struct' href='../google_adexchangebuyer1d4/struct.CreateOrdersRequest.html' title='google_adexchangebuyer1d4::CreateOrdersRequest'>CreateOrdersRequest</a>) -&gt; <a class='struct' href='../google_adexchangebuyer1d4/struct.ProposalInsertCall.html' title='google_adexchangebuyer1d4::ProposalInsertCall'>ProposalInsertCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.insert' class='method'><code>fn <a href='#method.insert' class='fnname'>insert</a>(&amp;self, request: <a class='struct' href='../google_adexchangebuyer1d4/struct.CreateOrdersRequest.html' title='google_adexchangebuyer1d4::CreateOrdersRequest'>CreateOrdersRequest</a>) -&gt; <a class='struct' href='../google_adexchangebuyer1d4/struct.ProposalInsertCall.html' title='google_adexchangebuyer1d4::ProposalInsertCall'>ProposalInsertCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Create the given list of proposals</p>
@@ -88,7 +88,7 @@ It is not used directly, but through the <code>AdExchangeBuyer</code> hub.</p>
 <ul>
 <li><code>request</code> - No description provided.</li>
 </ul>
-</div><h4 id='method.update' class='method'><code>fn <a href='#method.update' class='fnname'>update</a>(&amp;self, request: <a class='struct' href='../google_adexchangebuyer1d4/struct.Proposal.html' title='google_adexchangebuyer1d4::Proposal'>Proposal</a>, proposal_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, revision_number: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, update_action: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_adexchangebuyer1d4/struct.ProposalUpdateCall.html' title='google_adexchangebuyer1d4::ProposalUpdateCall'>ProposalUpdateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.update' class='method'><code>fn <a href='#method.update' class='fnname'>update</a>(&amp;self, request: <a class='struct' href='../google_adexchangebuyer1d4/struct.Proposal.html' title='google_adexchangebuyer1d4::Proposal'>Proposal</a>, proposal_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, revision_number: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, update_action: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_adexchangebuyer1d4/struct.ProposalUpdateCall.html' title='google_adexchangebuyer1d4::ProposalUpdateCall'>ProposalUpdateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Update the given proposal</p>
@@ -98,9 +98,9 @@ It is not used directly, but through the <code>AdExchangeBuyer</code> hub.</p>
 <li><code>request</code> - No description provided.</li>
 <li><code>proposalId</code> - The proposal id to update.</li>
 <li><code>revisionNumber</code> - The last known revision number to update. If the head revision in the marketplace database has since changed, an error will be thrown. The caller should then fetch the latest proposal at head revision and retry the update at that revision.</li>
-<li><code>updateAction</code> - The proposed action to take on the proposal.</li>
+<li><code>updateAction</code> - The proposed action to take on the proposal. This field is required and it must be set when updating a proposal.</li>
 </ul>
-</div><h4 id='method.setupcomplete' class='method'><code>fn <a href='#method.setupcomplete' class='fnname'>setupcomplete</a>(&amp;self, proposal_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_adexchangebuyer1d4/struct.ProposalSetupcompleteCall.html' title='google_adexchangebuyer1d4::ProposalSetupcompleteCall'>ProposalSetupcompleteCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.setupcomplete' class='method'><code>fn <a href='#method.setupcomplete' class='fnname'>setupcomplete</a>(&amp;self, proposal_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_adexchangebuyer1d4/struct.ProposalSetupcompleteCall.html' title='google_adexchangebuyer1d4::ProposalSetupcompleteCall'>ProposalSetupcompleteCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Update the given proposal to indicate that setup has been completed.</p>
@@ -109,7 +109,7 @@ It is not used directly, but through the <code>AdExchangeBuyer</code> hub.</p>
 <ul>
 <li><code>proposalId</code> - The proposal id for which the setup is complete</li>
 </ul>
-</div><h4 id='method.patch' class='method'><code>fn <a href='#method.patch' class='fnname'>patch</a>(&amp;self, request: <a class='struct' href='../google_adexchangebuyer1d4/struct.Proposal.html' title='google_adexchangebuyer1d4::Proposal'>Proposal</a>, proposal_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, revision_number: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, update_action: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_adexchangebuyer1d4/struct.ProposalPatchCall.html' title='google_adexchangebuyer1d4::ProposalPatchCall'>ProposalPatchCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.patch' class='method'><code>fn <a href='#method.patch' class='fnname'>patch</a>(&amp;self, request: <a class='struct' href='../google_adexchangebuyer1d4/struct.Proposal.html' title='google_adexchangebuyer1d4::Proposal'>Proposal</a>, proposal_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, revision_number: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, update_action: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_adexchangebuyer1d4/struct.ProposalPatchCall.html' title='google_adexchangebuyer1d4::ProposalPatchCall'>ProposalPatchCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Update the given proposal. This method supports patch semantics.</p>
@@ -119,9 +119,9 @@ It is not used directly, but through the <code>AdExchangeBuyer</code> hub.</p>
 <li><code>request</code> - No description provided.</li>
 <li><code>proposalId</code> - The proposal id to update.</li>
 <li><code>revisionNumber</code> - The last known revision number to update. If the head revision in the marketplace database has since changed, an error will be thrown. The caller should then fetch the latest proposal at head revision and retry the update at that revision.</li>
-<li><code>updateAction</code> - The proposed action to take on the proposal.</li>
+<li><code>updateAction</code> - The proposed action to take on the proposal. This field is required and it must be set when updating a proposal.</li>
 </ul>
-</div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, proposal_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_adexchangebuyer1d4/struct.ProposalGetCall.html' title='google_adexchangebuyer1d4::ProposalGetCall'>ProposalGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, proposal_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_adexchangebuyer1d4/struct.ProposalGetCall.html' title='google_adexchangebuyer1d4::ProposalGetCall'>ProposalGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Get a proposal given its id</p>
@@ -130,7 +130,7 @@ It is not used directly, but through the <code>AdExchangeBuyer</code> hub.</p>
 <ul>
 <li><code>proposalId</code> - Id of the proposal to retrieve.</li>
 </ul>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_adexchangebuyer1d4/trait.MethodsBuilder.html' title='google_adexchangebuyer1d4::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_adexchangebuyer1d4/struct.ProposalMethods.html' title='google_adexchangebuyer1d4::ProposalMethods'>ProposalMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-14689' class='srclink' href='../src/google_adexchangebuyer1d4/home/byron/dev/rust/google-apis-rs/target/debug/build/google-adexchangebuyer1d4-2c62c1eb7140aa41/out/lib.rs.html#31842' title='goto source code'>[src]</a></span></h3>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='trait' href='../google_adexchangebuyer1d4/trait.MethodsBuilder.html' title='google_adexchangebuyer1d4::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_adexchangebuyer1d4/struct.ProposalMethods.html' title='google_adexchangebuyer1d4::ProposalMethods'>ProposalMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-14300' class='srclink' href='../src/google_adexchangebuyer1d4/home/byron/dev/rust/google-apis-rs/target/debug/build/google-adexchangebuyer1d4-e81ed01b0333a8e3/out/lib.rs.html#26018' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 

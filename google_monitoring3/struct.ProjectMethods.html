@@ -47,8 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-5014' class='srclink' href='../src/google_monitoring3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-monitoring3-86d2f0c81ffc4219/out/lib.rs.html#10249-10251' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct ProjectMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
+               </span><a id='src-4588' class='srclink' href='../src/google_monitoring3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-monitoring3-021c8e31fee4f098/out/lib.rs.html#7962-7964' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct ProjectMethods&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>project</em> resources.
 It is not used directly, but through the <code>Monitoring</code> hub.</p>
@@ -74,17 +74,17 @@ It is not used directly, but through the <code>Monitoring</code> hub.</p>
 <span class='comment'>// like `collectd_time_series_create(...)`, `groups_create(...)`, `groups_delete(...)`, `groups_get(...)`, `groups_list(...)`, `groups_members_list(...)`, `groups_update(...)`, `metric_descriptors_create(...)`, `metric_descriptors_delete(...)`, `metric_descriptors_get(...)`, `metric_descriptors_list(...)`, `monitored_resource_descriptors_get(...)`, `monitored_resource_descriptors_list(...)`, `time_series_create(...)` and `time_series_list(...)`</span>
 <span class='comment'>// to build up your call.</span>
 <span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>projects</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_monitoring3/struct.ProjectMethods.html' title='google_monitoring3::ProjectMethods'>ProjectMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-5023' class='srclink' href='../src/google_monitoring3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-monitoring3-86d2f0c81ffc4219/out/lib.rs.html#10253-10538' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.metric_descriptors_get' class='method'><code>fn <a href='#method.metric_descriptors_get' class='fnname'>metric_descriptors_get</a>(&amp;self, name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_monitoring3/struct.ProjectMetricDescriptorGetCall.html' title='google_monitoring3::ProjectMetricDescriptorGetCall'>ProjectMetricDescriptorGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='struct' href='../google_monitoring3/struct.ProjectMethods.html' title='google_monitoring3::ProjectMethods'>ProjectMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-4597' class='srclink' href='../src/google_monitoring3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-monitoring3-021c8e31fee4f098/out/lib.rs.html#7966-8251' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.metric_descriptors_get' class='method'><code>fn <a href='#method.metric_descriptors_get' class='fnname'>metric_descriptors_get</a>(&amp;self, name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_monitoring3/struct.ProjectMetricDescriptorGetCall.html' title='google_monitoring3::ProjectMetricDescriptorGetCall'>ProjectMetricDescriptorGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>Gets a single metric descriptor.</p>
+<p>Gets a single metric descriptor. This method does not require a Stackdriver account.</p>
 
 <h1 id='arguments' class='section-header'><a href='#arguments'>Arguments</a></h1>
 <ul>
 <li><code>name</code> - The metric descriptor on which to execute the request. The format is <code>&quot;projects/{project_id_or_number}/metricDescriptors/{metric_id}&quot;</code>. An example value of <code>{metric_id}</code> is <code>&quot;compute.googleapis.com/instance/disk/read_bytes_count&quot;</code>.</li>
 </ul>
-</div><h4 id='method.groups_create' class='method'><code>fn <a href='#method.groups_create' class='fnname'>groups_create</a>(&amp;self, request: <a class='struct' href='../google_monitoring3/struct.Group.html' title='google_monitoring3::Group'>Group</a>, name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_monitoring3/struct.ProjectGroupCreateCall.html' title='google_monitoring3::ProjectGroupCreateCall'>ProjectGroupCreateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.groups_create' class='method'><code>fn <a href='#method.groups_create' class='fnname'>groups_create</a>(&amp;self, request: <a class='struct' href='../google_monitoring3/struct.Group.html' title='google_monitoring3::Group'>Group</a>, name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_monitoring3/struct.ProjectGroupCreateCall.html' title='google_monitoring3::ProjectGroupCreateCall'>ProjectGroupCreateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Creates a new group.</p>
@@ -94,7 +94,7 @@ It is not used directly, but through the <code>Monitoring</code> hub.</p>
 <li><code>request</code> - No description provided.</li>
 <li><code>name</code> - The project in which to create the group. The format is <code>&quot;projects/{project_id_or_number}&quot;</code>.</li>
 </ul>
-</div><h4 id='method.groups_get' class='method'><code>fn <a href='#method.groups_get' class='fnname'>groups_get</a>(&amp;self, name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_monitoring3/struct.ProjectGroupGetCall.html' title='google_monitoring3::ProjectGroupGetCall'>ProjectGroupGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.groups_get' class='method'><code>fn <a href='#method.groups_get' class='fnname'>groups_get</a>(&amp;self, name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_monitoring3/struct.ProjectGroupGetCall.html' title='google_monitoring3::ProjectGroupGetCall'>ProjectGroupGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Gets a single group.</p>
@@ -103,7 +103,7 @@ It is not used directly, but through the <code>Monitoring</code> hub.</p>
 <ul>
 <li><code>name</code> - The group to retrieve. The format is <code>&quot;projects/{project_id_or_number}/groups/{group_id}&quot;</code>.</li>
 </ul>
-</div><h4 id='method.metric_descriptors_delete' class='method'><code>fn <a href='#method.metric_descriptors_delete' class='fnname'>metric_descriptors_delete</a>(&amp;self, name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_monitoring3/struct.ProjectMetricDescriptorDeleteCall.html' title='google_monitoring3::ProjectMetricDescriptorDeleteCall'>ProjectMetricDescriptorDeleteCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.metric_descriptors_delete' class='method'><code>fn <a href='#method.metric_descriptors_delete' class='fnname'>metric_descriptors_delete</a>(&amp;self, name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_monitoring3/struct.ProjectMetricDescriptorDeleteCall.html' title='google_monitoring3::ProjectMetricDescriptorDeleteCall'>ProjectMetricDescriptorDeleteCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Deletes a metric descriptor. Only user-created <a href="/monitoring/custom-metrics">custom metrics</a> can be deleted.</p>
@@ -112,7 +112,7 @@ It is not used directly, but through the <code>Monitoring</code> hub.</p>
 <ul>
 <li><code>name</code> - The metric descriptor on which to execute the request. The format is <code>&quot;projects/{project_id_or_number}/metricDescriptors/{metric_id}&quot;</code>. An example of <code>{metric_id}</code> is: <code>&quot;custom.googleapis.com/my_test_metric&quot;</code>.</li>
 </ul>
-</div><h4 id='method.collectd_time_series_create' class='method'><code>fn <a href='#method.collectd_time_series_create' class='fnname'>collectd_time_series_create</a>(&amp;self, request: <a class='struct' href='../google_monitoring3/struct.CreateCollectdTimeSeriesRequest.html' title='google_monitoring3::CreateCollectdTimeSeriesRequest'>CreateCollectdTimeSeriesRequest</a>, name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_monitoring3/struct.ProjectCollectdTimeSeryCreateCall.html' title='google_monitoring3::ProjectCollectdTimeSeryCreateCall'>ProjectCollectdTimeSeryCreateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.collectd_time_series_create' class='method'><code>fn <a href='#method.collectd_time_series_create' class='fnname'>collectd_time_series_create</a>(&amp;self, request: <a class='struct' href='../google_monitoring3/struct.CreateCollectdTimeSeriesRequest.html' title='google_monitoring3::CreateCollectdTimeSeriesRequest'>CreateCollectdTimeSeriesRequest</a>, name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_monitoring3/struct.ProjectCollectdTimeSeryCreateCall.html' title='google_monitoring3::ProjectCollectdTimeSeryCreateCall'>ProjectCollectdTimeSeryCreateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Creates a new time series with the given data points. This method is only for use in <code>collectd</code>-related code, including the Google Monitoring Agent. See [google.monitoring.v3.MetricService.CreateTimeSeries] instead.</p>
@@ -122,7 +122,7 @@ It is not used directly, but through the <code>Monitoring</code> hub.</p>
 <li><code>request</code> - No description provided.</li>
 <li><code>name</code> - The project in which to create the time series. The format is <code>&quot;projects/PROJECT_ID_OR_NUMBER&quot;</code>.</li>
 </ul>
-</div><h4 id='method.groups_members_list' class='method'><code>fn <a href='#method.groups_members_list' class='fnname'>groups_members_list</a>(&amp;self, name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_monitoring3/struct.ProjectGroupMemberListCall.html' title='google_monitoring3::ProjectGroupMemberListCall'>ProjectGroupMemberListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.groups_members_list' class='method'><code>fn <a href='#method.groups_members_list' class='fnname'>groups_members_list</a>(&amp;self, name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_monitoring3/struct.ProjectGroupMemberListCall.html' title='google_monitoring3::ProjectGroupMemberListCall'>ProjectGroupMemberListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Lists the monitored resources that are members of a group.</p>
@@ -131,16 +131,16 @@ It is not used directly, but through the <code>Monitoring</code> hub.</p>
 <ul>
 <li><code>name</code> - The group whose members are listed. The format is <code>&quot;projects/{project_id_or_number}/groups/{group_id}&quot;</code>.</li>
 </ul>
-</div><h4 id='method.monitored_resource_descriptors_list' class='method'><code>fn <a href='#method.monitored_resource_descriptors_list' class='fnname'>monitored_resource_descriptors_list</a>(&amp;self, name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_monitoring3/struct.ProjectMonitoredResourceDescriptorListCall.html' title='google_monitoring3::ProjectMonitoredResourceDescriptorListCall'>ProjectMonitoredResourceDescriptorListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.monitored_resource_descriptors_list' class='method'><code>fn <a href='#method.monitored_resource_descriptors_list' class='fnname'>monitored_resource_descriptors_list</a>(&amp;self, name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_monitoring3/struct.ProjectMonitoredResourceDescriptorListCall.html' title='google_monitoring3::ProjectMonitoredResourceDescriptorListCall'>ProjectMonitoredResourceDescriptorListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>Lists monitored resource descriptors that match a filter.</p>
+<p>Lists monitored resource descriptors that match a filter. This method does not require a Stackdriver account.</p>
 
 <h1 id='arguments-6' class='section-header'><a href='#arguments-6'>Arguments</a></h1>
 <ul>
 <li><code>name</code> - The project on which to execute the request. The format is <code>&quot;projects/{project_id_or_number}&quot;</code>.</li>
 </ul>
-</div><h4 id='method.time_series_create' class='method'><code>fn <a href='#method.time_series_create' class='fnname'>time_series_create</a>(&amp;self, request: <a class='struct' href='../google_monitoring3/struct.CreateTimeSeriesRequest.html' title='google_monitoring3::CreateTimeSeriesRequest'>CreateTimeSeriesRequest</a>, name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_monitoring3/struct.ProjectTimeSeryCreateCall.html' title='google_monitoring3::ProjectTimeSeryCreateCall'>ProjectTimeSeryCreateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.time_series_create' class='method'><code>fn <a href='#method.time_series_create' class='fnname'>time_series_create</a>(&amp;self, request: <a class='struct' href='../google_monitoring3/struct.CreateTimeSeriesRequest.html' title='google_monitoring3::CreateTimeSeriesRequest'>CreateTimeSeriesRequest</a>, name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_monitoring3/struct.ProjectTimeSeryCreateCall.html' title='google_monitoring3::ProjectTimeSeryCreateCall'>ProjectTimeSeryCreateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Creates or adds data to one or more time series. The response is empty if all time series in the request were written. If any time series could not be written, a corresponding failure message is included in the error response.</p>
@@ -150,7 +150,7 @@ It is not used directly, but through the <code>Monitoring</code> hub.</p>
 <li><code>request</code> - No description provided.</li>
 <li><code>name</code> - The project on which to execute the request. The format is <code>&quot;projects/{project_id_or_number}&quot;</code>.</li>
 </ul>
-</div><h4 id='method.metric_descriptors_create' class='method'><code>fn <a href='#method.metric_descriptors_create' class='fnname'>metric_descriptors_create</a>(&amp;self, request: <a class='struct' href='../google_monitoring3/struct.MetricDescriptor.html' title='google_monitoring3::MetricDescriptor'>MetricDescriptor</a>, name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_monitoring3/struct.ProjectMetricDescriptorCreateCall.html' title='google_monitoring3::ProjectMetricDescriptorCreateCall'>ProjectMetricDescriptorCreateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.metric_descriptors_create' class='method'><code>fn <a href='#method.metric_descriptors_create' class='fnname'>metric_descriptors_create</a>(&amp;self, request: <a class='struct' href='../google_monitoring3/struct.MetricDescriptor.html' title='google_monitoring3::MetricDescriptor'>MetricDescriptor</a>, name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_monitoring3/struct.ProjectMetricDescriptorCreateCall.html' title='google_monitoring3::ProjectMetricDescriptorCreateCall'>ProjectMetricDescriptorCreateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Creates a new metric descriptor. User-created metric descriptors define <a href="/monitoring/custom-metrics">custom metrics</a>.</p>
@@ -160,7 +160,7 @@ It is not used directly, but through the <code>Monitoring</code> hub.</p>
 <li><code>request</code> - No description provided.</li>
 <li><code>name</code> - The project on which to execute the request. The format is <code>&quot;projects/{project_id_or_number}&quot;</code>.</li>
 </ul>
-</div><h4 id='method.groups_list' class='method'><code>fn <a href='#method.groups_list' class='fnname'>groups_list</a>(&amp;self, name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_monitoring3/struct.ProjectGroupListCall.html' title='google_monitoring3::ProjectGroupListCall'>ProjectGroupListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.groups_list' class='method'><code>fn <a href='#method.groups_list' class='fnname'>groups_list</a>(&amp;self, name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_monitoring3/struct.ProjectGroupListCall.html' title='google_monitoring3::ProjectGroupListCall'>ProjectGroupListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Lists the existing groups.</p>
@@ -169,25 +169,25 @@ It is not used directly, but through the <code>Monitoring</code> hub.</p>
 <ul>
 <li><code>name</code> - The project whose groups are to be listed. The format is <code>&quot;projects/{project_id_or_number}&quot;</code>.</li>
 </ul>
-</div><h4 id='method.metric_descriptors_list' class='method'><code>fn <a href='#method.metric_descriptors_list' class='fnname'>metric_descriptors_list</a>(&amp;self, name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_monitoring3/struct.ProjectMetricDescriptorListCall.html' title='google_monitoring3::ProjectMetricDescriptorListCall'>ProjectMetricDescriptorListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.metric_descriptors_list' class='method'><code>fn <a href='#method.metric_descriptors_list' class='fnname'>metric_descriptors_list</a>(&amp;self, name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_monitoring3/struct.ProjectMetricDescriptorListCall.html' title='google_monitoring3::ProjectMetricDescriptorListCall'>ProjectMetricDescriptorListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>Lists metric descriptors that match a filter.</p>
+<p>Lists metric descriptors that match a filter. This method does not require a Stackdriver account.</p>
 
 <h1 id='arguments-10' class='section-header'><a href='#arguments-10'>Arguments</a></h1>
 <ul>
 <li><code>name</code> - The project on which to execute the request. The format is <code>&quot;projects/{project_id_or_number}&quot;</code>.</li>
 </ul>
-</div><h4 id='method.monitored_resource_descriptors_get' class='method'><code>fn <a href='#method.monitored_resource_descriptors_get' class='fnname'>monitored_resource_descriptors_get</a>(&amp;self, name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_monitoring3/struct.ProjectMonitoredResourceDescriptorGetCall.html' title='google_monitoring3::ProjectMonitoredResourceDescriptorGetCall'>ProjectMonitoredResourceDescriptorGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.monitored_resource_descriptors_get' class='method'><code>fn <a href='#method.monitored_resource_descriptors_get' class='fnname'>monitored_resource_descriptors_get</a>(&amp;self, name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_monitoring3/struct.ProjectMonitoredResourceDescriptorGetCall.html' title='google_monitoring3::ProjectMonitoredResourceDescriptorGetCall'>ProjectMonitoredResourceDescriptorGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>Gets a single monitored resource descriptor.</p>
+<p>Gets a single monitored resource descriptor. This method does not require a Stackdriver account.</p>
 
 <h1 id='arguments-11' class='section-header'><a href='#arguments-11'>Arguments</a></h1>
 <ul>
 <li><code>name</code> - The monitored resource descriptor to get. The format is <code>&quot;projects/{project_id_or_number}/monitoredResourceDescriptors/{resource_type}&quot;</code>. The <code>{resource_type}</code> is a predefined type, such as <code>cloudsql_database</code>.</li>
 </ul>
-</div><h4 id='method.groups_update' class='method'><code>fn <a href='#method.groups_update' class='fnname'>groups_update</a>(&amp;self, request: <a class='struct' href='../google_monitoring3/struct.Group.html' title='google_monitoring3::Group'>Group</a>, name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_monitoring3/struct.ProjectGroupUpdateCall.html' title='google_monitoring3::ProjectGroupUpdateCall'>ProjectGroupUpdateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.groups_update' class='method'><code>fn <a href='#method.groups_update' class='fnname'>groups_update</a>(&amp;self, request: <a class='struct' href='../google_monitoring3/struct.Group.html' title='google_monitoring3::Group'>Group</a>, name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_monitoring3/struct.ProjectGroupUpdateCall.html' title='google_monitoring3::ProjectGroupUpdateCall'>ProjectGroupUpdateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Updates an existing group. You can change any group attributes except <code>name</code>.</p>
@@ -197,7 +197,7 @@ It is not used directly, but through the <code>Monitoring</code> hub.</p>
 <li><code>request</code> - No description provided.</li>
 <li><code>name</code> - The name of this group. The format is <code>&quot;projects/{project_id_or_number}/groups/{group_id}&quot;</code>. When creating a group, this field is ignored and a new name is created consisting of the project specified in the call to <code>CreateGroup</code> and a unique <code>{group_id}</code> that is generated automatically. @OutputOnly</li>
 </ul>
-</div><h4 id='method.groups_delete' class='method'><code>fn <a href='#method.groups_delete' class='fnname'>groups_delete</a>(&amp;self, name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_monitoring3/struct.ProjectGroupDeleteCall.html' title='google_monitoring3::ProjectGroupDeleteCall'>ProjectGroupDeleteCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.groups_delete' class='method'><code>fn <a href='#method.groups_delete' class='fnname'>groups_delete</a>(&amp;self, name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_monitoring3/struct.ProjectGroupDeleteCall.html' title='google_monitoring3::ProjectGroupDeleteCall'>ProjectGroupDeleteCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Deletes an existing group.</p>
@@ -206,16 +206,16 @@ It is not used directly, but through the <code>Monitoring</code> hub.</p>
 <ul>
 <li><code>name</code> - The group to delete. The format is <code>&quot;projects/{project_id_or_number}/groups/{group_id}&quot;</code>.</li>
 </ul>
-</div><h4 id='method.time_series_list' class='method'><code>fn <a href='#method.time_series_list' class='fnname'>time_series_list</a>(&amp;self, name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_monitoring3/struct.ProjectTimeSeryListCall.html' title='google_monitoring3::ProjectTimeSeryListCall'>ProjectTimeSeryListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.time_series_list' class='method'><code>fn <a href='#method.time_series_list' class='fnname'>time_series_list</a>(&amp;self, name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_monitoring3/struct.ProjectTimeSeryListCall.html' title='google_monitoring3::ProjectTimeSeryListCall'>ProjectTimeSeryListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>Lists time series that match a filter.</p>
+<p>Lists time series that match a filter. This method does not require a Stackdriver account.</p>
 
 <h1 id='arguments-14' class='section-header'><a href='#arguments-14'>Arguments</a></h1>
 <ul>
 <li><code>name</code> - The project on which to execute the request. The format is &quot;projects/{project_id_or_number}&quot;.</li>
 </ul>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_monitoring3/trait.MethodsBuilder.html' title='google_monitoring3::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_monitoring3/struct.ProjectMethods.html' title='google_monitoring3::ProjectMethods'>ProjectMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-5019' class='srclink' href='../src/google_monitoring3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-monitoring3-86d2f0c81ffc4219/out/lib.rs.html#10252' title='goto source code'>[src]</a></span></h3>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='trait' href='../google_monitoring3/trait.MethodsBuilder.html' title='google_monitoring3::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_monitoring3/struct.ProjectMethods.html' title='google_monitoring3::ProjectMethods'>ProjectMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-4593' class='srclink' href='../src/google_monitoring3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-monitoring3-021c8e31fee4f098/out/lib.rs.html#7965' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 

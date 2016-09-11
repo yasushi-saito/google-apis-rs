@@ -47,8 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-19961' class='srclink' href='../src/google_games1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-games1-b9bb0f61d1030f8c/out/lib.rs.html#43581-43583' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct ScoreMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
+               </span><a id='src-18560' class='srclink' href='../src/google_games1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-games1-00b2e1f28385176b/out/lib.rs.html#33895-33897' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct ScoreMethods&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>score</em> resources.
 It is not used directly, but through the <code>Games</code> hub.</p>
@@ -74,8 +74,8 @@ It is not used directly, but through the <code>Games</code> hub.</p>
 <span class='comment'>// like `get(...)`, `list(...)`, `list_window(...)`, `submit(...)` and `submit_multiple(...)`</span>
 <span class='comment'>// to build up your call.</span>
 <span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>scores</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_games1/struct.ScoreMethods.html' title='google_games1::ScoreMethods'>ScoreMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-19970' class='srclink' href='../src/google_games1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-games1-b9bb0f61d1030f8c/out/lib.rs.html#43585-43691' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.submit' class='method'><code>fn <a href='#method.submit' class='fnname'>submit</a>(&amp;self, leaderboard_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, score: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_games1/struct.ScoreSubmitCall.html' title='google_games1::ScoreSubmitCall'>ScoreSubmitCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='struct' href='../google_games1/struct.ScoreMethods.html' title='google_games1::ScoreMethods'>ScoreMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-18569' class='srclink' href='../src/google_games1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-games1-00b2e1f28385176b/out/lib.rs.html#33899-34010' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.submit' class='method'><code>fn <a href='#method.submit' class='fnname'>submit</a>(&amp;self, leaderboard_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, score: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_games1/struct.ScoreSubmitCall.html' title='google_games1::ScoreSubmitCall'>ScoreSubmitCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Submits a score to the specified leaderboard.</p>
@@ -85,7 +85,7 @@ It is not used directly, but through the <code>Games</code> hub.</p>
 <li><code>leaderboardId</code> - The ID of the leaderboard.</li>
 <li><code>score</code> - The score you&#39;re submitting. The submitted score is ignored if it is worse than a previously submitted score, where worse depends on the leaderboard sort order. The meaning of the score value depends on the leaderboard format type. For fixed-point, the score represents the raw value. For time, the score represents elapsed time in milliseconds. For currency, the score represents a value in micro units.</li>
 </ul>
-</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self, leaderboard_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, collection: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, time_span: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_games1/struct.ScoreListCall.html' title='google_games1::ScoreListCall'>ScoreListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self, leaderboard_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, collection: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, time_span: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_games1/struct.ScoreListCall.html' title='google_games1::ScoreListCall'>ScoreListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Lists the scores in a leaderboard, starting from the top.</p>
@@ -96,7 +96,7 @@ It is not used directly, but through the <code>Games</code> hub.</p>
 <li><code>collection</code> - The collection of scores you&#39;re requesting.</li>
 <li><code>timeSpan</code> - The time span for the scores and ranks you&#39;re requesting.</li>
 </ul>
-</div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, player_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, leaderboard_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, time_span: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_games1/struct.ScoreGetCall.html' title='google_games1::ScoreGetCall'>ScoreGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, player_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, leaderboard_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, time_span: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_games1/struct.ScoreGetCall.html' title='google_games1::ScoreGetCall'>ScoreGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Get high scores, and optionally ranks, in leaderboards for the currently authenticated player. For a specific time span, leaderboardId can be set to ALL to retrieve data for all leaderboards in a given time span.
@@ -108,7 +108,7 @@ NOTE: You cannot ask for &#39;ALL&#39; leaderboards and &#39;ALL&#39; timeSpans 
 <li><code>leaderboardId</code> - The ID of the leaderboard. Can be set to &#39;ALL&#39; to retrieve data for all leaderboards for this application.</li>
 <li><code>timeSpan</code> - The time span for the scores and ranks you&#39;re requesting.</li>
 </ul>
-</div><h4 id='method.submit_multiple' class='method'><code>fn <a href='#method.submit_multiple' class='fnname'>submit_multiple</a>(&amp;self, request: <a class='struct' href='../google_games1/struct.PlayerScoreSubmissionList.html' title='google_games1::PlayerScoreSubmissionList'>PlayerScoreSubmissionList</a>) -&gt; <a class='struct' href='../google_games1/struct.ScoreSubmitMultipleCall.html' title='google_games1::ScoreSubmitMultipleCall'>ScoreSubmitMultipleCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.submit_multiple' class='method'><code>fn <a href='#method.submit_multiple' class='fnname'>submit_multiple</a>(&amp;self, request: <a class='struct' href='../google_games1/struct.PlayerScoreSubmissionList.html' title='google_games1::PlayerScoreSubmissionList'>PlayerScoreSubmissionList</a>) -&gt; <a class='struct' href='../google_games1/struct.ScoreSubmitMultipleCall.html' title='google_games1::ScoreSubmitMultipleCall'>ScoreSubmitMultipleCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Submits multiple scores to leaderboards.</p>
@@ -117,7 +117,7 @@ NOTE: You cannot ask for &#39;ALL&#39; leaderboards and &#39;ALL&#39; timeSpans 
 <ul>
 <li><code>request</code> - No description provided.</li>
 </ul>
-</div><h4 id='method.list_window' class='method'><code>fn <a href='#method.list_window' class='fnname'>list_window</a>(&amp;self, leaderboard_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, collection: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, time_span: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_games1/struct.ScoreListWindowCall.html' title='google_games1::ScoreListWindowCall'>ScoreListWindowCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.list_window' class='method'><code>fn <a href='#method.list_window' class='fnname'>list_window</a>(&amp;self, leaderboard_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, collection: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, time_span: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_games1/struct.ScoreListWindowCall.html' title='google_games1::ScoreListWindowCall'>ScoreListWindowCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Lists the scores in a leaderboard around (and including) a player&#39;s score.</p>
@@ -128,7 +128,7 @@ NOTE: You cannot ask for &#39;ALL&#39; leaderboards and &#39;ALL&#39; timeSpans 
 <li><code>collection</code> - The collection of scores you&#39;re requesting.</li>
 <li><code>timeSpan</code> - The time span for the scores and ranks you&#39;re requesting.</li>
 </ul>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_games1/trait.MethodsBuilder.html' title='google_games1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_games1/struct.ScoreMethods.html' title='google_games1::ScoreMethods'>ScoreMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-19966' class='srclink' href='../src/google_games1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-games1-b9bb0f61d1030f8c/out/lib.rs.html#43584' title='goto source code'>[src]</a></span></h3>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='trait' href='../google_games1/trait.MethodsBuilder.html' title='google_games1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_games1/struct.ScoreMethods.html' title='google_games1::ScoreMethods'>ScoreMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-18565' class='srclink' href='../src/google_games1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-games1-00b2e1f28385176b/out/lib.rs.html#33898' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 

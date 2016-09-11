@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Batch Create - genomics v0.3.6+20160407</title>
+  <title>Batch Create - genomics v0.3.6+20160905</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -32,7 +32,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> genomics v0.3.6+20160407</a>
+        <a href=".." class="icon icon-home"> genomics v0.3.6+20160905</a>
         
       </div>
 
@@ -422,7 +422,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">genomics v0.3.6+20160407</a>
+        <a href="..">genomics v0.3.6+20160905</a>
       </nav>
 
       
@@ -463,10 +463,17 @@ You can set the scope for this method like this: <code>genomics1 --scope &lt;sco
 In the latter case it is advised to set the field-cursor to the data-structure's field to specify values more concisely.</p>
 <p>For example, a structure like this:</p>
 <pre><code>BatchCreateAnnotationsRequest:
+  request-id: string
 
 </code></pre>
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
+<ul>
+<li><code>-r .    request-id=eirmod</code><ul>
+<li>A unique request ID which enables the server to detect duplicated requests. If provided, duplicated requests will result in the same response; if not provided, duplicated requests may result in duplicated data. For a given annotation set, callers should not reuse <code>request_id</code>s when writing different batches of annotations - behavior in this case is undefined. A common approach is to use a UUID. For batch jobs where worker crashes are a possibility, consider using some unique variant of a worker or run ID.</li>
+</ul>
+</li>
+</ul>
 <h3 id="about-cursors">About Cursors</h3>
 <p>The cursor position is key to comfortably set complex nested structures. The following rules apply:</p>
 <ul>
@@ -612,7 +619,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <!--
 MkDocs version  : 0.12.2
-Docs Build Date : 2016-07-23 16:05:59.919995
+Docs Build Date : 2016-09-11 17:55:57.858732
 -->
 </body>
 </html>

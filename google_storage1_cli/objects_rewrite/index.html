@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Rewrite - storage v0.3.6+20160330</title>
+  <title>Rewrite - storage v0.3.6+20160901</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -32,7 +32,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> storage v0.3.6+20160330</a>
+        <a href=".." class="icon icon-home"> storage v0.3.6+20160901</a>
         
       </div>
 
@@ -293,7 +293,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">storage v0.3.6+20160330</a>
+        <a href="..">storage v0.3.6+20160901</a>
       </nav>
 
       
@@ -369,6 +369,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   generation: string
   id: string
   kind: string
+  kms-key-name: string
   md5-hash: string
   media-link: string
   metadata: { string: string }
@@ -388,120 +389,124 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    bucket=at</code><ul>
+<li><code>-r .    bucket=dolores</code><ul>
 <li>The name of the bucket containing this object.</li>
 </ul>
 </li>
-<li><code>cache-control=sit</code><ul>
-<li>Cache-Control directive for the object data.</li>
+<li><code>cache-control=kasd</code><ul>
+<li>Cache-Control directive for the object data. If omitted, and the object is accessible to all anonymous users, the default will be public, max-age=3600.</li>
 </ul>
 </li>
-<li><code>component-count=14</code><ul>
+<li><code>component-count=34</code><ul>
 <li>Number of underlying components that make up this object. Components are accumulated by compose operations.</li>
 </ul>
 </li>
-<li><code>content-disposition=diam</code><ul>
+<li><code>content-disposition=clita</code><ul>
 <li>Content-Disposition of the object data.</li>
 </ul>
 </li>
-<li><code>content-encoding=tempor</code><ul>
+<li><code>content-encoding=sed</code><ul>
 <li>Content-Encoding of the object data.</li>
 </ul>
 </li>
-<li><code>content-language=et</code><ul>
+<li><code>content-language=dolores</code><ul>
 <li>Content-Language of the object data.</li>
 </ul>
 </li>
-<li><code>content-type=erat</code><ul>
-<li>Content-Type of the object data.</li>
+<li><code>content-type=clita</code><ul>
+<li>Content-Type of the object data. If contentType is not specified, object downloads will be served as application/octet-stream.</li>
 </ul>
 </li>
-<li><code>crc32c=dolores</code><ul>
+<li><code>crc32c=eos</code><ul>
 <li>CRC32c checksum, as described in RFC 4960, Appendix B; encoded using base64 in big-endian byte order. For more information about using the CRC32c checksum, see Hashes and ETags: Best Practices.</li>
 </ul>
 </li>
-<li><code>customer-encryption    encryption-algorithm=kasd</code><ul>
+<li><code>customer-encryption    encryption-algorithm=amet</code><ul>
 <li>The encryption algorithm.</li>
 </ul>
 </li>
 <li>
-<p><code>key-sha256=et</code></p>
+<p><code>key-sha256=sed</code></p>
 <ul>
 <li>SHA256 hash value of the encryption key.</li>
 </ul>
 </li>
 <li>
-<p><code>..    etag=clita</code></p>
+<p><code>..    etag=takimata</code></p>
 <ul>
 <li>HTTP 1.1 Entity tag for the object.</li>
 </ul>
 </li>
-<li><code>generation=sed</code><ul>
+<li><code>generation=sit</code><ul>
 <li>The content generation of this object. Used for object versioning.</li>
 </ul>
 </li>
-<li><code>id=dolores</code><ul>
+<li><code>id=labore</code><ul>
 <li>The ID of the object.</li>
 </ul>
 </li>
-<li><code>kind=clita</code><ul>
+<li><code>kind=nonumy</code><ul>
 <li>The kind of item this is. For objects, this is always storage#object.</li>
 </ul>
 </li>
-<li><code>md5-hash=eos</code><ul>
+<li><code>kms-key-name=erat</code><ul>
+<li>Cloud KMS Key used to encrypt this object, if the object is encrypted by such a key.</li>
+</ul>
+</li>
+<li><code>md5-hash=gubergren</code><ul>
 <li>MD5 hash of the data; encoded using base64. For more information about using the MD5 hash, see Hashes and ETags: Best Practices.</li>
 </ul>
 </li>
-<li><code>media-link=amet</code><ul>
+<li><code>media-link=erat</code><ul>
 <li>Media download link.</li>
 </ul>
 </li>
-<li><code>metadata=key=sed</code><ul>
+<li><code>metadata=key=et</code><ul>
 <li>User-provided metadata, in key/value pairs.</li>
 <li>the value will be associated with the given <code>key</code></li>
 </ul>
 </li>
-<li><code>metageneration=takimata</code><ul>
+<li><code>metageneration=amet</code><ul>
 <li>The version of the metadata for this object at this generation. Used for preconditions and for detecting changes in metadata. A metageneration number is only meaningful in the context of a particular generation of a particular object.</li>
 </ul>
 </li>
-<li><code>name=sit</code><ul>
+<li><code>name=lorem</code><ul>
 <li>The name of this object. Required if not specified by URL parameter.</li>
 </ul>
 </li>
-<li><code>owner    entity=labore</code><ul>
+<li><code>owner    entity=voluptua.</code><ul>
 <li>The entity, in the form user-userId.</li>
 </ul>
 </li>
 <li>
-<p><code>entity-id=nonumy</code></p>
+<p><code>entity-id=rebum.</code></p>
 <ul>
 <li>The ID for the entity.</li>
 </ul>
 </li>
 <li>
-<p><code>..    self-link=erat</code></p>
+<p><code>..    self-link=justo</code></p>
 <ul>
 <li>The link to this object.</li>
 </ul>
 </li>
-<li><code>size=gubergren</code><ul>
+<li><code>size=labore</code><ul>
 <li>Content-Length of the data in bytes.</li>
 </ul>
 </li>
-<li><code>storage-class=erat</code><ul>
+<li><code>storage-class=voluptua.</code><ul>
 <li>Storage class of the object.</li>
 </ul>
 </li>
-<li><code>time-created=et</code><ul>
+<li><code>time-created=takimata</code><ul>
 <li>The creation time of the object in RFC 3339 format.</li>
 </ul>
 </li>
-<li><code>time-deleted=amet</code><ul>
+<li><code>time-deleted=dolor</code><ul>
 <li>The deletion time of the object in RFC 3339 format. Will be returned if and only if this version of the object has been deleted.</li>
 </ul>
 </li>
-<li><code>updated=lorem</code><ul>
+<li><code>updated=takimata</code><ul>
 <li>The modification time of the object metadata in RFC 3339 format.</li>
 </ul>
 </li>
@@ -531,54 +536,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p source-generation=string</strong></p>
-<ul>
-<li>If present, selects a specific revision of the source object (as opposed to the latest version, the default).</li>
-</ul>
-</li>
-<li>
-<p><strong>-p max-bytes-rewritten-per-call=string</strong></p>
-<ul>
-<li>The maximum number of bytes that will be rewritten per rewrite request. Most callers shouldn&#39;t need to specify this parameter - it is primarily in place to support testing. If specified the value must be an integral multiple of 1 MiB (1048576). Also, this only applies to requests where the source and destination span locations and/or storage classes. Finally, this value must not change across rewrite calls else you&#39;ll get an error that the rewriteToken is invalid.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p projection=string</strong></p>
-<ul>
-<li>Set of properties to return. Defaults to noAcl, unless the object resource specifies the acl property, when it defaults to full.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p if-source-generation-not-match=string</strong></p>
-<ul>
-<li>Makes the operation conditional on whether the source object&#39;s generation does not match the given value.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p rewrite-token=string</strong></p>
-<ul>
-<li>Include this field (from the previous rewrite response) on each rewrite request after the first one, until the rewrite response &#39;done&#39; flag is true. Calls that provide a rewriteToken can omit all other request fields, but if included those fields must match the values provided in the first rewrite request.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p if-metageneration-not-match=string</strong></p>
-<ul>
-<li>Makes the operation conditional on whether the destination object&#39;s current metageneration does not match the given value.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p if-source-generation-match=string</strong></p>
-<ul>
-<li>Makes the operation conditional on whether the source object&#39;s generation matches the given value.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p if-source-metageneration-match=string</strong></p>
-<ul>
-<li>Makes the operation conditional on whether the source object&#39;s current metageneration matches the given value.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p if-source-metageneration-not-match=string</strong></p>
 <ul>
 <li>Makes the operation conditional on whether the source object&#39;s current metageneration does not match the given value.</li>
@@ -597,15 +554,69 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
+<p><strong>-p source-generation=string</strong></p>
+<ul>
+<li>If present, selects a specific revision of the source object (as opposed to the latest version, the default).</li>
+</ul>
+</li>
+<li>
+<p><strong>-p if-source-metageneration-match=string</strong></p>
+<ul>
+<li>Makes the operation conditional on whether the source object&#39;s current metageneration matches the given value.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p if-generation-not-match=string</strong></p>
 <ul>
 <li>Makes the operation conditional on whether the destination object&#39;s current generation does not match the given value.</li>
 </ul>
 </li>
 <li>
+<p><strong>-p projection=string</strong></p>
+<ul>
+<li>Set of properties to return. Defaults to noAcl, unless the object resource specifies the acl property, when it defaults to full.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p rewrite-token=string</strong></p>
+<ul>
+<li>Include this field (from the previous rewrite response) on each rewrite request after the first one, until the rewrite response &#39;done&#39; flag is true. Calls that provide a rewriteToken can omit all other request fields, but if included those fields must match the values provided in the first rewrite request.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p if-generation-match=string</strong></p>
 <ul>
 <li>Makes the operation conditional on whether the destination object&#39;s current generation matches the given value.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p if-source-generation-match=string</strong></p>
+<ul>
+<li>Makes the operation conditional on whether the source object&#39;s generation matches the given value.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p if-source-generation-not-match=string</strong></p>
+<ul>
+<li>Makes the operation conditional on whether the source object&#39;s generation does not match the given value.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p max-bytes-rewritten-per-call=string</strong></p>
+<ul>
+<li>The maximum number of bytes that will be rewritten per rewrite request. Most callers shouldn&#39;t need to specify this parameter - it is primarily in place to support testing. If specified the value must be an integral multiple of 1 MiB (1048576). Also, this only applies to requests where the source and destination span locations and/or storage classes. Finally, this value must not change across rewrite calls else you&#39;ll get an error that the rewriteToken is invalid.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p destination-kms-key-name=string</strong></p>
+<ul>
+<li>Resource name of the Cloud KMS key, of the form projects/my-project/locations/global/keyRings/my-kr/cryptoKeys/my-key, that will be used to encrypt the object. Overrides the object metadata&#39;s kms_key_name value, if any.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p if-metageneration-not-match=string</strong></p>
+<ul>
+<li>Makes the operation conditional on whether the destination object&#39;s current metageneration does not match the given value.</li>
 </ul>
 </li>
 </ul>
@@ -699,7 +710,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 
 <!--
 MkDocs version  : 0.12.2
-Docs Build Date : 2016-07-23 16:05:53.334492
+Docs Build Date : 2016-09-11 17:55:44.873717
 -->
 </body>
 </html>

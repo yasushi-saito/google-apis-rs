@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Compose - storage v0.3.6+20160330</title>
+  <title>Compose - storage v0.3.6+20160901</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -32,7 +32,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> storage v0.3.6+20160330</a>
+        <a href=".." class="icon icon-home"> storage v0.3.6+20160901</a>
         
       </div>
 
@@ -293,7 +293,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">storage v0.3.6+20160330</a>
+        <a href="..">storage v0.3.6+20160901</a>
       </nav>
 
       
@@ -362,6 +362,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
     generation: string
     id: string
     kind: string
+    kms-key-name: string
     md5-hash: string
     media-link: string
     metadata: { string: string }
@@ -382,50 +383,50 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .destination    bucket=dolor</code><ul>
+<li><code>-r .destination    bucket=nonumy</code><ul>
 <li>The name of the bucket containing this object.</li>
 </ul>
 </li>
-<li><code>cache-control=takimata</code><ul>
-<li>Cache-Control directive for the object data.</li>
+<li><code>cache-control=et</code><ul>
+<li>Cache-Control directive for the object data. If omitted, and the object is accessible to all anonymous users, the default will be public, max-age=3600.</li>
 </ul>
 </li>
-<li><code>component-count=80</code><ul>
+<li><code>component-count=72</code><ul>
 <li>Number of underlying components that make up this object. Components are accumulated by compose operations.</li>
 </ul>
 </li>
-<li><code>content-disposition=nonumy</code><ul>
+<li><code>content-disposition=no</code><ul>
 <li>Content-Disposition of the object data.</li>
 </ul>
 </li>
-<li><code>content-encoding=et</code><ul>
+<li><code>content-encoding=invidunt</code><ul>
 <li>Content-Encoding of the object data.</li>
 </ul>
 </li>
-<li><code>content-language=sed</code><ul>
+<li><code>content-language=rebum.</code><ul>
 <li>Content-Language of the object data.</li>
 </ul>
 </li>
-<li><code>content-type=no</code><ul>
-<li>Content-Type of the object data.</li>
+<li><code>content-type=labore</code><ul>
+<li>Content-Type of the object data. If contentType is not specified, object downloads will be served as application/octet-stream.</li>
 </ul>
 </li>
-<li><code>crc32c=invidunt</code><ul>
+<li><code>crc32c=aliquyam</code><ul>
 <li>CRC32c checksum, as described in RFC 4960, Appendix B; encoded using base64 in big-endian byte order. For more information about using the CRC32c checksum, see Hashes and ETags: Best Practices.</li>
 </ul>
 </li>
-<li><code>customer-encryption    encryption-algorithm=rebum.</code><ul>
+<li><code>customer-encryption    encryption-algorithm=elitr</code><ul>
 <li>The encryption algorithm.</li>
 </ul>
 </li>
 <li>
-<p><code>key-sha256=labore</code></p>
+<p><code>key-sha256=consetetur</code></p>
 <ul>
 <li>SHA256 hash value of the encryption key.</li>
 </ul>
 </li>
 <li>
-<p><code>..    etag=aliquyam</code></p>
+<p><code>..    etag=sea</code></p>
 <ul>
 <li>HTTP 1.1 Entity tag for the object.</li>
 </ul>
@@ -434,7 +435,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>The content generation of this object. Used for object versioning.</li>
 </ul>
 </li>
-<li><code>id=consetetur</code><ul>
+<li><code>id=at</code><ul>
 <li>The ID of the object.</li>
 </ul>
 </li>
@@ -442,15 +443,19 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>The kind of item this is. For objects, this is always storage#object.</li>
 </ul>
 </li>
-<li><code>md5-hash=elitr</code><ul>
+<li><code>kms-key-name=consetetur</code><ul>
+<li>Cloud KMS Key used to encrypt this object, if the object is encrypted by such a key.</li>
+</ul>
+</li>
+<li><code>md5-hash=diam</code><ul>
 <li>MD5 hash of the data; encoded using base64. For more information about using the MD5 hash, see Hashes and ETags: Best Practices.</li>
 </ul>
 </li>
-<li><code>media-link=at</code><ul>
+<li><code>media-link=accusam</code><ul>
 <li>Media download link.</li>
 </ul>
 </li>
-<li><code>metadata=key=sea</code><ul>
+<li><code>metadata=key=dolores</code><ul>
 <li>User-provided metadata, in key/value pairs.</li>
 <li>the value will be associated with the given <code>key</code></li>
 </ul>
@@ -459,50 +464,50 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>The version of the metadata for this object at this generation. Used for preconditions and for detecting changes in metadata. A metageneration number is only meaningful in the context of a particular generation of a particular object.</li>
 </ul>
 </li>
-<li><code>name=diam</code><ul>
+<li><code>name=dolor</code><ul>
 <li>The name of this object. Required if not specified by URL parameter.</li>
 </ul>
 </li>
-<li><code>owner    entity=accusam</code><ul>
+<li><code>owner    entity=aliquyam</code><ul>
 <li>The entity, in the form user-userId.</li>
 </ul>
 </li>
 <li>
-<p><code>entity-id=dolores</code></p>
+<p><code>entity-id=elitr</code></p>
 <ul>
 <li>The ID for the entity.</li>
 </ul>
 </li>
 <li>
-<p><code>..    self-link=consetetur</code></p>
+<p><code>..    self-link=ea</code></p>
 <ul>
 <li>The link to this object.</li>
 </ul>
 </li>
-<li><code>size=dolor</code><ul>
+<li><code>size=et</code><ul>
 <li>Content-Length of the data in bytes.</li>
 </ul>
 </li>
-<li><code>storage-class=aliquyam</code><ul>
+<li><code>storage-class=stet</code><ul>
 <li>Storage class of the object.</li>
 </ul>
 </li>
-<li><code>time-created=elitr</code><ul>
+<li><code>time-created=sed</code><ul>
 <li>The creation time of the object in RFC 3339 format.</li>
 </ul>
 </li>
-<li><code>time-deleted=ea</code><ul>
+<li><code>time-deleted=dolor</code><ul>
 <li>The deletion time of the object in RFC 3339 format. Will be returned if and only if this version of the object has been deleted.</li>
 </ul>
 </li>
 <li>
-<p><code>updated=et</code></p>
+<p><code>updated=sanctus</code></p>
 <ul>
 <li>The modification time of the object metadata in RFC 3339 format.</li>
 </ul>
 </li>
 <li>
-<p><code>..    kind=stet</code></p>
+<p><code>..    kind=dolore</code></p>
 <ul>
 <li>The kind of item this is.</li>
 </ul>
@@ -537,6 +542,12 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <p><strong>-p if-generation-match=string</strong></p>
 <ul>
 <li>Makes the operation conditional on whether the object&#39;s current generation matches the given value.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p kms-key-name=string</strong></p>
+<ul>
+<li>Resource name of the Cloud KMS key, of the form projects/my-project/locations/global/keyRings/my-kr/cryptoKeys/my-key, that will be used to encrypt the object. Overrides the object metadata&#39;s kms_key_name value, if any.</li>
 </ul>
 </li>
 <li>
@@ -642,7 +653,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 
 <!--
 MkDocs version  : 0.12.2
-Docs Build Date : 2016-07-23 16:05:53.113737
+Docs Build Date : 2016-09-11 17:55:44.661223
 -->
 </body>
 </html>

@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Update - dfareporting v0.3.6+20160323</title>
+  <title>Update - dfareporting v0.3.6+20160803</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -32,7 +32,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> dfareporting v0.3.6+20160323</a>
+        <a href=".." class="icon icon-home"> dfareporting v0.3.6+20160803</a>
         
       </div>
 
@@ -1369,7 +1369,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">dfareporting v0.3.6+20160323</a>
+        <a href="..">dfareporting v0.3.6+20160803</a>
       </nav>
 
       
@@ -1544,16 +1544,16 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li><code>backup-image-click-through-url=gubergren</code><ul>
-<li>Click-through URL for backup image. Applicable to the following creative types: ENHANCED_BANNER, FLASH_INPAGE, and HTML5_BANNER.</li>
+<li>Click-through URL for backup image. Applicable to the following creative types: FLASH_INPAGE, and HTML5_BANNER. Applicable to ENHANCED_BANNER when the primary asset type is not HTML_IMAGE.</li>
 </ul>
 </li>
 <li><code>backup-image-features=invidunt</code><ul>
-<li>List of feature dependencies that will cause a backup image to be served if the browser that serves the ad does not support them. Feature dependencies are features that a browser must be able to support in order to render your HTML5 creative asset correctly. This field is initially auto-generated to contain all features detected by DCM for all the assets of this creative and can then be modified by the client. To reset this field, copy over all the creativeAssets&#39; detected features. Applicable to the following creative types: ENHANCED_BANNER and HTML5_BANNER.</li>
+<li>List of feature dependencies that will cause a backup image to be served if the browser that serves the ad does not support them. Feature dependencies are features that a browser must be able to support in order to render your HTML5 creative asset correctly. This field is initially auto-generated to contain all features detected by DCM for all the assets of this creative and can then be modified by the client. To reset this field, copy over all the creativeAssets&#39; detected features. Applicable to the following creative types: HTML5_BANNER. Applicable to ENHANCED_BANNER when the primary asset is not HTML_IMAGE.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
 <li><code>backup-image-reporting-label=diam</code><ul>
-<li>Reporting label used for HTML5 banner backup image. Applicable to the following creative types: ENHANCED_BANNER.</li>
+<li>Reporting label used for HTML5 banner backup image. Applicable to ENHANCED_BANNER when the primary asset type is not HTML_IMAGE.</li>
 </ul>
 </li>
 <li><code>backup-image-target-window    custom-html=at</code><ul>
@@ -1581,7 +1581,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <p><code>compatibility=duo</code></p>
 <ul>
 <li>
-<p>Compatibilities associated with this creative. This is a read-only field. DISPLAY and DISPLAY_INTERSTITIAL refer to rendering either on desktop or on mobile devices or in mobile apps for regular or interstitial ads, respectively. APP and APP_INTERSTITIAL  are for rendering in mobile apps. Only pre-existing creatives may have these compatibilities since new creatives will either be assigned DISPLAY or DISPLAY_INTERSTITIAL instead. IN_STREAM_VIDEO refers to rendering in in-stream video ads developed with the VAST standard. Applicable to all creative types.</p>
+<p>Compatibilities associated with this creative. This is a read-only field. DISPLAY and DISPLAY_INTERSTITIAL refer to rendering either on desktop or on mobile devices or in mobile apps for regular or interstitial ads, respectively. APP and APP_INTERSTITIAL are for rendering in mobile apps. Only pre-existing creatives may have these compatibilities since new creatives will either be assigned DISPLAY or DISPLAY_INTERSTITIAL instead. IN_STREAM_VIDEO refers to rendering in in-stream video ads developed with the VAST standard. Applicable to all creative types.</p>
 <p>Acceptable values are:
 - &#34;APP&#34;
 - &#34;APP_INTERSTITIAL&#34;
@@ -1590,7 +1590,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 - &#34;DISPLAY_INTERSTITIAL&#34;
     - Each invocation of this argument appends the given value to the array.
 <em> <code>convert-flash-to-html5=true</code>
-    - Whether Flash assets associated with the creative need to be automatically converted to HTML5. This flag is enabled by default and users can choose to disable it if they don&#39;t want the system to generate and use HTML5 asset for this creative. Applicable to the following creative types: ENHANCED_BANNER and FLASH_INPAGE.
+    - Whether Flash assets associated with the creative need to be automatically converted to HTML5. This flag is enabled by default and users can choose to disable it if they don&#39;t want the system to generate and use HTML5 asset for this creative. Applicable to the following creative type: FLASH_INPAGE. Applicable to ENHANCED_BANNER when the primary asset type is not HTML_IMAGE.
 </em> <code>custom-key-values=magna</code>
     - Custom key-values for a Rich Media creative. Key-values let you customize the creative settings of a Rich Media ad running on your site without having to contact the advertiser. You can use key-values to dynamically change the look or functionality of a creative. Applicable to the following creative types: all RICH_MEDIA, and all VPAID.
     - Each invocation of this argument appends the given value to the array.
@@ -1714,7 +1714,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li><code>required-flash-version=84</code><ul>
-<li>The internal Flash version for this creative as calculated by DoubleClick Studio. This is a read-only field. Applicable to the following creative types: FLASH_INPAGE, ENHANCED_BANNER, all RICH_MEDIA, and all VPAID.</li>
+<li>The internal Flash version for this creative as calculated by DoubleClick Studio. This is a read-only field. Applicable to the following creative types: FLASH_INPAGE, all RICH_MEDIA, and all VPAID. Applicable to ENHANCED_BANNER when the primary asset type is not HTML_IMAGE.</li>
 </ul>
 </li>
 <li><code>size    height=69</code><ul>
@@ -1770,11 +1770,11 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li><code>third-party-backup-image-impressions-url=amet.</code><ul>
-<li>Third-party URL used to record backup image impressions. Applicable to the following creative types: all RICH_MEDIA</li>
+<li>Third-party URL used to record backup image impressions. Applicable to the following creative types: all RICH_MEDIA.</li>
 </ul>
 </li>
 <li><code>third-party-rich-media-impressions-url=clita</code><ul>
-<li>Third-party URL used to record rich media impressions. Applicable to the following creative types: all RICH_MEDIA</li>
+<li>Third-party URL used to record rich media impressions. Applicable to the following creative types: all RICH_MEDIA.</li>
 </ul>
 </li>
 <li><code>total-file-size=sed</code><ul>
@@ -1907,7 +1907,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <!--
 MkDocs version  : 0.12.2
-Docs Build Date : 2016-07-23 16:05:04.863664
+Docs Build Date : 2016-09-11 17:54:00.508776
 -->
 </body>
 </html>

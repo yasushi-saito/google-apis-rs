@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Search - QPX Express v0.3.6+20160307</title>
+  <title>Search - QPX Express v0.3.6+20160708</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -32,7 +32,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> QPX Express v0.3.6+20160307</a>
+        <a href=".." class="icon icon-home"> QPX Express v0.3.6+20160708</a>
         
       </div>
 
@@ -84,7 +84,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">QPX Express v0.3.6+20160307</a>
+        <a href="..">QPX Express v0.3.6+20160708</a>
       </nav>
 
       
@@ -129,6 +129,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
     refundable: boolean
     sale-country: int64
     solutions: integer
+    ticketing-country: int64
 
 </code></pre>
 
@@ -176,6 +177,10 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </li>
 <li><code>solutions=31</code><ul>
 <li>The number of solutions to return, maximum 500.</li>
+</ul>
+</li>
+<li><code>ticketing-country=-1</code><ul>
+<li>IATA country code representing the point of ticketing.</li>
 </ul>
 </li>
 </ul>
@@ -286,7 +291,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <!--
 MkDocs version  : 0.12.2
-Docs Build Date : 2016-07-23 16:05:47.496221
+Docs Build Date : 2016-09-11 17:55:32.725327
 -->
 </body>
 </html>

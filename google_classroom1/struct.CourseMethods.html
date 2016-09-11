@@ -47,8 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-3121' class='srclink' href='../src/google_classroom1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-classroom1-f999c1e8e0aae831/out/lib.rs.html#6631-6633' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct CourseMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
+               </span><a id='src-7016' class='srclink' href='../src/google_classroom1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-classroom1-1f991e06295dc64f/out/lib.rs.html#12760-12762' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct CourseMethods&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>course</em> resources.
 It is not used directly, but through the <code>Classroom</code> hub.</p>
@@ -71,169 +71,279 @@ It is not used directly, but through the <code>Classroom</code> hub.</p>
                               <span class='op'>&lt;</span><span class='ident'>MemoryStorage</span> <span class='kw'>as</span> <span class='ident'>Default</span><span class='op'>&gt;</span>::<span class='ident'>default</span>(), <span class='prelude-val'>None</span>);
 <span class='kw'>let</span> <span class='kw-2'>mut</span> <span class='ident'>hub</span> <span class='op'>=</span> <span class='ident'>Classroom</span>::<span class='ident'>new</span>(<span class='ident'>hyper</span>::<span class='ident'>Client</span>::<span class='ident'>new</span>(), <span class='ident'>auth</span>);
 <span class='comment'>// Usually you wouldn&#39;t bind this to a variable, but keep calling *CallBuilders*</span>
-<span class='comment'>// like `aliases_create(...)`, `aliases_delete(...)`, `aliases_list(...)`, `create(...)`, `delete(...)`, `get(...)`, `list(...)`, `patch(...)`, `students_create(...)`, `students_delete(...)`, `students_get(...)`, `students_list(...)`, `teachers_create(...)`, `teachers_delete(...)`, `teachers_get(...)`, `teachers_list(...)` and `update(...)`</span>
+<span class='comment'>// like `aliases_create(...)`, `aliases_delete(...)`, `aliases_list(...)`, `course_work_create(...)`, `course_work_get(...)`, `course_work_list(...)`, `course_work_student_submissions_get(...)`, `course_work_student_submissions_list(...)`, `course_work_student_submissions_modify_attachments(...)`, `course_work_student_submissions_patch(...)`, `course_work_student_submissions_reclaim(...)`, `course_work_student_submissions_return(...)`, `course_work_student_submissions_turn_in(...)`, `create(...)`, `delete(...)`, `get(...)`, `list(...)`, `patch(...)`, `students_create(...)`, `students_delete(...)`, `students_get(...)`, `students_list(...)`, `teachers_create(...)`, `teachers_delete(...)`, `teachers_get(...)`, `teachers_list(...)` and `update(...)`</span>
 <span class='comment'>// to build up your call.</span>
 <span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>courses</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_classroom1/struct.CourseMethods.html' title='google_classroom1::CourseMethods'>CourseMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-3130' class='srclink' href='../src/google_classroom1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-classroom1-f999c1e8e0aae831/out/lib.rs.html#6635-6914' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.teachers_list' class='method'><code>fn <a href='#method.teachers_list' class='fnname'>teachers_list</a>(&amp;self, course_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_classroom1/struct.CourseTeacherListCall.html' title='google_classroom1::CourseTeacherListCall'>CourseTeacherListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='struct' href='../google_classroom1/struct.CourseMethods.html' title='google_classroom1::CourseMethods'>CourseMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-7025' class='srclink' href='../src/google_classroom1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-classroom1-1f991e06295dc64f/out/lib.rs.html#12764-13309' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.course_work_student_submissions_patch' class='method'><code>fn <a href='#method.course_work_student_submissions_patch' class='fnname'>course_work_student_submissions_patch</a>(&amp;self, request: <a class='struct' href='../google_classroom1/struct.StudentSubmission.html' title='google_classroom1::StudentSubmission'>StudentSubmission</a>, course_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, course_work_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_classroom1/struct.CourseCourseWorkStudentSubmissionPatchCall.html' title='google_classroom1::CourseCourseWorkStudentSubmissionPatchCall'>CourseCourseWorkStudentSubmissionPatchCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>Returns a list of teachers of this course that the requester is permitted to view. This method returns the following error codes: * <code>NOT_FOUND</code> if the course does not exist. * <code>PERMISSION_DENIED</code> for access errors.</p>
+<p>Updates one or more fields of a student submission. See google.classroom.v1.StudentSubmission for details of which fields may be updated and who may change them. This request must be made by the Developer Console project of the <a href="https://support.google.com/cloud/answer/6158849">OAuth client ID</a> used to create the corresponding course work item. This method returns the following error codes: * <code>PERMISSION_DENIED</code> if the requesting developer project did not create the corresponding course work, if the user is not permitted to make the requested modification to the student submission, or for access errors. * <code>INVALID_ARGUMENT</code> if the request is malformed. * <code>NOT_FOUND</code> if the requested course, course work, or student submission does not exist.</p>
 
 <h1 id='arguments' class='section-header'><a href='#arguments'>Arguments</a></h1>
 <ul>
+<li><code>request</code> - No description provided.</li>
 <li><code>courseId</code> - Identifier of the course. This identifier can be either the Classroom-assigned identifier or an alias.</li>
+<li><code>courseWorkId</code> - Identifier of the course work.</li>
+<li><code>id</code> - Identifier of the student submission.</li>
 </ul>
-</div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_classroom1/struct.CourseGetCall.html' title='google_classroom1::CourseGetCall'>CourseGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.course_work_student_submissions_list' class='method'><code>fn <a href='#method.course_work_student_submissions_list' class='fnname'>course_work_student_submissions_list</a>(&amp;self, course_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, course_work_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_classroom1/struct.CourseCourseWorkStudentSubmissionListCall.html' title='google_classroom1::CourseCourseWorkStudentSubmissionListCall'>CourseCourseWorkStudentSubmissionListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Returns a list of student submissions that the requester is permitted to view, factoring in the OAuth scopes of the request. <code>-</code> may be specified as the <code>course_work_id</code> to include student submissions for multiple course work items. Course students may only view their own work. Course teachers and domain administrators may view all student submissions. This method returns the following error codes: * <code>PERMISSION_DENIED</code> if the requesting user is not permitted to access the requested course or course work, or for access errors. * <code>INVALID_ARGUMENT</code> if the request is malformed. * <code>NOT_FOUND</code> if the requested course does not exist.</p>
+
+<h1 id='arguments-1' class='section-header'><a href='#arguments-1'>Arguments</a></h1>
+<ul>
+<li><code>courseId</code> - Identifier of the course. This identifier can be either the Classroom-assigned identifier or an alias.</li>
+<li><code>courseWorkId</code> - Identifer of the student work to request. This may be set to the string literal <code>&quot;-&quot;</code> to request student work for all course work in the specified course.</li>
+</ul>
+</div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_classroom1/struct.CourseGetCall.html' title='google_classroom1::CourseGetCall'>CourseGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Returns a course. This method returns the following error codes: * <code>PERMISSION_DENIED</code> if the requesting user is not permitted to access the requested course or for access errors. * <code>NOT_FOUND</code> if no course exists with the requested ID.</p>
 
-<h1 id='arguments-1' class='section-header'><a href='#arguments-1'>Arguments</a></h1>
+<h1 id='arguments-2' class='section-header'><a href='#arguments-2'>Arguments</a></h1>
 <ul>
 <li><code>id</code> - Identifier of the course to return. This identifier can be either the Classroom-assigned identifier or an alias.</li>
 </ul>
-</div><h4 id='method.students_delete' class='method'><code>fn <a href='#method.students_delete' class='fnname'>students_delete</a>(&amp;self, course_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_classroom1/struct.CourseStudentDeleteCall.html' title='google_classroom1::CourseStudentDeleteCall'>CourseStudentDeleteCall</a>&lt;'a, C, A&gt;</code></h4>
-<div class='docblock'><p>Create a builder to help you perform the following task:</p>
-
-<p>Deletes a student of a course. This method returns the following error codes: * <code>PERMISSION_DENIED</code> if the requesting user is not permitted to delete students of this course or for access errors. * <code>NOT_FOUND</code> if no student of this course has the requested ID or if the course does not exist.</p>
-
-<h1 id='arguments-2' class='section-header'><a href='#arguments-2'>Arguments</a></h1>
-<ul>
-<li><code>courseId</code> - Identifier of the course. This identifier can be either the Classroom-assigned identifier or an alias.</li>
-<li><code>userId</code> - Identifier of the student to delete. The identifier can be one of the following: * the numeric identifier for the user * the email address of the user * the string literal <code>&quot;me&quot;</code>, indicating the requesting user</li>
-</ul>
-</div><h4 id='method.teachers_get' class='method'><code>fn <a href='#method.teachers_get' class='fnname'>teachers_get</a>(&amp;self, course_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_classroom1/struct.CourseTeacherGetCall.html' title='google_classroom1::CourseTeacherGetCall'>CourseTeacherGetCall</a>&lt;'a, C, A&gt;</code></h4>
-<div class='docblock'><p>Create a builder to help you perform the following task:</p>
-
-<p>Returns a teacher of a course. This method returns the following error codes: * <code>PERMISSION_DENIED</code> if the requesting user is not permitted to view teachers of this course or for access errors. * <code>NOT_FOUND</code> if no teacher of this course has the requested ID or if the course does not exist.</p>
-
-<h1 id='arguments-3' class='section-header'><a href='#arguments-3'>Arguments</a></h1>
-<ul>
-<li><code>courseId</code> - Identifier of the course. This identifier can be either the Classroom-assigned identifier or an alias.</li>
-<li><code>userId</code> - Identifier of the teacher to return. The identifier can be one of the following: * the numeric identifier for the user * the email address of the user * the string literal <code>&quot;me&quot;</code>, indicating the requesting user</li>
-</ul>
-</div><h4 id='method.aliases_list' class='method'><code>fn <a href='#method.aliases_list' class='fnname'>aliases_list</a>(&amp;self, course_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_classroom1/struct.CourseAliaseListCall.html' title='google_classroom1::CourseAliaseListCall'>CourseAliaseListCall</a>&lt;'a, C, A&gt;</code></h4>
-<div class='docblock'><p>Create a builder to help you perform the following task:</p>
-
-<p>Returns a list of aliases for a course. This method returns the following error codes: * <code>PERMISSION_DENIED</code> if the requesting user is not permitted to access the course or for access errors. * <code>NOT_FOUND</code> if the course does not exist.</p>
-
-<h1 id='arguments-4' class='section-header'><a href='#arguments-4'>Arguments</a></h1>
-<ul>
-<li><code>courseId</code> - The identifier of the course. This identifier can be either the Classroom-assigned identifier or an alias.</li>
-</ul>
-</div><h4 id='method.update' class='method'><code>fn <a href='#method.update' class='fnname'>update</a>(&amp;self, request: <a class='struct' href='../google_classroom1/struct.Course.html' title='google_classroom1::Course'>Course</a>, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_classroom1/struct.CourseUpdateCall.html' title='google_classroom1::CourseUpdateCall'>CourseUpdateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.update' class='method'><code>fn <a href='#method.update' class='fnname'>update</a>(&amp;self, request: <a class='struct' href='../google_classroom1/struct.Course.html' title='google_classroom1::Course'>Course</a>, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_classroom1/struct.CourseUpdateCall.html' title='google_classroom1::CourseUpdateCall'>CourseUpdateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Updates a course. This method returns the following error codes: * <code>PERMISSION_DENIED</code> if the requesting user is not permitted to modify the requested course or for access errors. * <code>NOT_FOUND</code> if no course exists with the requested ID. * <code>FAILED_PRECONDITION</code> for the following request errors: * CourseNotModifiable</p>
 
-<h1 id='arguments-5' class='section-header'><a href='#arguments-5'>Arguments</a></h1>
+<h1 id='arguments-3' class='section-header'><a href='#arguments-3'>Arguments</a></h1>
 <ul>
 <li><code>request</code> - No description provided.</li>
 <li><code>id</code> - Identifier of the course to update. This identifier can be either the Classroom-assigned identifier or an alias.</li>
 </ul>
-</div><h4 id='method.aliases_create' class='method'><code>fn <a href='#method.aliases_create' class='fnname'>aliases_create</a>(&amp;self, request: <a class='struct' href='../google_classroom1/struct.CourseAlias.html' title='google_classroom1::CourseAlias'>CourseAlias</a>, course_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_classroom1/struct.CourseAliaseCreateCall.html' title='google_classroom1::CourseAliaseCreateCall'>CourseAliaseCreateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.students_delete' class='method'><code>fn <a href='#method.students_delete' class='fnname'>students_delete</a>(&amp;self, course_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_classroom1/struct.CourseStudentDeleteCall.html' title='google_classroom1::CourseStudentDeleteCall'>CourseStudentDeleteCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>Creates an alias for a course. This method returns the following error codes: * <code>PERMISSION_DENIED</code> if the requesting user is not permitted to create the alias or for access errors. * <code>NOT_FOUND</code> if the course does not exist. * <code>ALREADY_EXISTS</code> if the alias already exists.</p>
+<p>Deletes a student of a course. This method returns the following error codes: * <code>PERMISSION_DENIED</code> if the requesting user is not permitted to delete students of this course or for access errors. * <code>NOT_FOUND</code> if no student of this course has the requested ID or if the course does not exist.</p>
+
+<h1 id='arguments-4' class='section-header'><a href='#arguments-4'>Arguments</a></h1>
+<ul>
+<li><code>courseId</code> - Identifier of the course. This identifier can be either the Classroom-assigned identifier or an alias.</li>
+<li><code>userId</code> - Identifier of the student to delete. The identifier can be one of the following: * the numeric identifier for the user * the email address of the user * the string literal <code>&quot;me&quot;</code>, indicating the requesting user</li>
+</ul>
+</div><h4 id='method.teachers_get' class='method'><code>fn <a href='#method.teachers_get' class='fnname'>teachers_get</a>(&amp;self, course_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_classroom1/struct.CourseTeacherGetCall.html' title='google_classroom1::CourseTeacherGetCall'>CourseTeacherGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Returns a teacher of a course. This method returns the following error codes: * <code>PERMISSION_DENIED</code> if the requesting user is not permitted to view teachers of this course or for access errors. * <code>NOT_FOUND</code> if no teacher of this course has the requested ID or if the course does not exist.</p>
+
+<h1 id='arguments-5' class='section-header'><a href='#arguments-5'>Arguments</a></h1>
+<ul>
+<li><code>courseId</code> - Identifier of the course. This identifier can be either the Classroom-assigned identifier or an alias.</li>
+<li><code>userId</code> - Identifier of the teacher to return. The identifier can be one of the following: * the numeric identifier for the user * the email address of the user * the string literal <code>&quot;me&quot;</code>, indicating the requesting user</li>
+</ul>
+</div><h4 id='method.course_work_list' class='method'><code>fn <a href='#method.course_work_list' class='fnname'>course_work_list</a>(&amp;self, course_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_classroom1/struct.CourseCourseWorkListCall.html' title='google_classroom1::CourseCourseWorkListCall'>CourseCourseWorkListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Returns a list of course work that the requester is permitted to view. Course students may only view <code>PUBLISHED</code> course work. Course teachers and domain administrators may view all course work. This method returns the following error codes: * <code>PERMISSION_DENIED</code> if the requesting user is not permitted to access the requested course or for access errors. * <code>INVALID_ARGUMENT</code> if the request is malformed. * <code>NOT_FOUND</code> if the requested course does not exist.</p>
 
 <h1 id='arguments-6' class='section-header'><a href='#arguments-6'>Arguments</a></h1>
 <ul>
-<li><code>request</code> - No description provided.</li>
-<li><code>courseId</code> - Identifier of the course to alias. This identifier can be either the Classroom-assigned identifier or an alias.</li>
+<li><code>courseId</code> - Identifier of the course. This identifier can be either the Classroom-assigned identifier or an alias.</li>
 </ul>
-</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self) -&gt; <a class='struct' href='../google_classroom1/struct.CourseListCall.html' title='google_classroom1::CourseListCall'>CourseListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.teachers_list' class='method'><code>fn <a href='#method.teachers_list' class='fnname'>teachers_list</a>(&amp;self, course_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_classroom1/struct.CourseTeacherListCall.html' title='google_classroom1::CourseTeacherListCall'>CourseTeacherListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>Returns a list of courses that the requesting user is permitted to view, restricted to those that match the request. This method returns the following error codes: * <code>PERMISSION_DENIED</code> for access errors. * <code>INVALID_ARGUMENT</code> if the query argument is malformed. * <code>NOT_FOUND</code> if any users specified in the query arguments do not exist.</p>
-</div><h4 id='method.students_create' class='method'><code>fn <a href='#method.students_create' class='fnname'>students_create</a>(&amp;self, request: <a class='struct' href='../google_classroom1/struct.Student.html' title='google_classroom1::Student'>Student</a>, course_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_classroom1/struct.CourseStudentCreateCall.html' title='google_classroom1::CourseStudentCreateCall'>CourseStudentCreateCall</a>&lt;'a, C, A&gt;</code></h4>
-<div class='docblock'><p>Create a builder to help you perform the following task:</p>
-
-<p>Adds a user as a student of a course. This method returns the following error codes: * <code>PERMISSION_DENIED</code> if the requesting user is not permitted to create students in this course or for access errors. * <code>NOT_FOUND</code> if the requested course ID does not exist. * <code>FAILED_PRECONDITION</code> if the requested user&#39;s account is disabled, for the following request errors: * CourseMemberLimitReached * CourseNotModifiable * UserGroupsMembershipLimitReached * <code>ALREADY_EXISTS</code> if the user is already a student or teacher in the course.</p>
+<p>Returns a list of teachers of this course that the requester is permitted to view. This method returns the following error codes: * <code>NOT_FOUND</code> if the course does not exist. * <code>PERMISSION_DENIED</code> for access errors.</p>
 
 <h1 id='arguments-7' class='section-header'><a href='#arguments-7'>Arguments</a></h1>
 <ul>
-<li><code>request</code> - No description provided.</li>
-<li><code>courseId</code> - Identifier of the course to create the student in. This identifier can be either the Classroom-assigned identifier or an alias.</li>
+<li><code>courseId</code> - Identifier of the course. This identifier can be either the Classroom-assigned identifier or an alias.</li>
 </ul>
-</div><h4 id='method.aliases_delete' class='method'><code>fn <a href='#method.aliases_delete' class='fnname'>aliases_delete</a>(&amp;self, course_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, alias: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_classroom1/struct.CourseAliaseDeleteCall.html' title='google_classroom1::CourseAliaseDeleteCall'>CourseAliaseDeleteCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.course_work_student_submissions_turn_in' class='method'><code>fn <a href='#method.course_work_student_submissions_turn_in' class='fnname'>course_work_student_submissions_turn_in</a>(&amp;self, request: <a class='struct' href='../google_classroom1/struct.TurnInStudentSubmissionRequest.html' title='google_classroom1::TurnInStudentSubmissionRequest'>TurnInStudentSubmissionRequest</a>, course_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, course_work_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_classroom1/struct.CourseCourseWorkStudentSubmissionTurnInCall.html' title='google_classroom1::CourseCourseWorkStudentSubmissionTurnInCall'>CourseCourseWorkStudentSubmissionTurnInCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>Deletes an alias of a course. This method returns the following error codes: * <code>PERMISSION_DENIED</code> if the requesting user is not permitted to remove the alias or for access errors. * <code>NOT_FOUND</code> if the alias does not exist.</p>
+<p>Turns in a student submission. Turning in a student submission transfers ownership of attached Drive files to the teacher and may also update the submission state. This may only be called by the student that owns the specified student submission. This request must be made by the Developer Console project of the <a href="https://support.google.com/cloud/answer/6158849">OAuth client ID</a> used to create the corresponding course work item. This method returns the following error codes: * <code>PERMISSION_DENIED</code> if the requesting user is not permitted to access the requested course or course work, turn in the requested student submission, or for access errors. * <code>INVALID_ARGUMENT</code> if the request is malformed. * <code>NOT_FOUND</code> if the requested course, course work, or student submission does not exist.</p>
 
 <h1 id='arguments-8' class='section-header'><a href='#arguments-8'>Arguments</a></h1>
 <ul>
-<li><code>courseId</code> - Identifier of the course whose alias should be deleted. This identifier can be either the Classroom-assigned identifier or an alias.</li>
-<li><code>alias</code> - Alias to delete. This may not be the Classroom-assigned identifier.</li>
+<li><code>request</code> - No description provided.</li>
+<li><code>courseId</code> - Identifier of the course. This identifier can be either the Classroom-assigned identifier or an alias.</li>
+<li><code>courseWorkId</code> - Identifier of the course work.</li>
+<li><code>id</code> - Identifier of the student submission.</li>
 </ul>
-</div><h4 id='method.create' class='method'><code>fn <a href='#method.create' class='fnname'>create</a>(&amp;self, request: <a class='struct' href='../google_classroom1/struct.Course.html' title='google_classroom1::Course'>Course</a>) -&gt; <a class='struct' href='../google_classroom1/struct.CourseCreateCall.html' title='google_classroom1::CourseCreateCall'>CourseCreateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.course_work_student_submissions_modify_attachments' class='method'><code>fn <a href='#method.course_work_student_submissions_modify_attachments' class='fnname'>course_work_student_submissions_modify_attachments</a>(&amp;self, request: <a class='struct' href='../google_classroom1/struct.ModifyAttachmentsRequest.html' title='google_classroom1::ModifyAttachmentsRequest'>ModifyAttachmentsRequest</a>, course_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, course_work_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_classroom1/struct.CourseCourseWorkStudentSubmissionModifyAttachmentCall.html' title='google_classroom1::CourseCourseWorkStudentSubmissionModifyAttachmentCall'>CourseCourseWorkStudentSubmissionModifyAttachmentCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>Creates a course. The user specified in <code>ownerId</code> is the owner of the created course and added as a teacher. This method returns the following error codes: * <code>PERMISSION_DENIED</code> if the requesting user is not permitted to create courses or for access errors. * <code>NOT_FOUND</code> if the primary teacher is not a valid user. * <code>FAILED_PRECONDITION</code> if the course owner&#39;s account is disabled or for the following request errors: * UserGroupsMembershipLimitReached * <code>ALREADY_EXISTS</code> if an alias was specified in the <code>id</code> and already exists.</p>
+<p>Modifies attachments of student submission. Attachments may only be added to student submissions whose type is <code>ASSIGNMENT</code>. This request must be made by the Developer Console project of the <a href="https://support.google.com/cloud/answer/6158849">OAuth client ID</a> used to create the corresponding course work item. This method returns the following error codes: * <code>PERMISSION_DENIED</code> if the requesting user is not permitted to access the requested course or course work, if the user is not permitted to modify attachments on the requested student submission, or for access errors. * <code>INVALID_ARGUMENT</code> if the request is malformed. * <code>NOT_FOUND</code> if the requested course, course work, or student submission does not exist.</p>
 
 <h1 id='arguments-9' class='section-header'><a href='#arguments-9'>Arguments</a></h1>
 <ul>
 <li><code>request</code> - No description provided.</li>
+<li><code>courseId</code> - Identifier of the course. This identifier can be either the Classroom-assigned identifier or an alias.</li>
+<li><code>courseWorkId</code> - Identifier of the course work.</li>
+<li><code>id</code> - Identifier of the student submission.</li>
 </ul>
-</div><h4 id='method.students_list' class='method'><code>fn <a href='#method.students_list' class='fnname'>students_list</a>(&amp;self, course_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_classroom1/struct.CourseStudentListCall.html' title='google_classroom1::CourseStudentListCall'>CourseStudentListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.course_work_student_submissions_return' class='method'><code>fn <a href='#method.course_work_student_submissions_return' class='fnname'>course_work_student_submissions_return</a>(&amp;self, request: <a class='struct' href='../google_classroom1/struct.ReturnStudentSubmissionRequest.html' title='google_classroom1::ReturnStudentSubmissionRequest'>ReturnStudentSubmissionRequest</a>, course_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, course_work_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_classroom1/struct.CourseCourseWorkStudentSubmissionReturnCall.html' title='google_classroom1::CourseCourseWorkStudentSubmissionReturnCall'>CourseCourseWorkStudentSubmissionReturnCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>Returns a list of students of this course that the requester is permitted to view. This method returns the following error codes: * <code>NOT_FOUND</code> if the course does not exist. * <code>PERMISSION_DENIED</code> for access errors.</p>
+<p>Returns a student submission. Returning a student submission transfers ownership of attached Drive files to the student and may also update the submission state. Unlike the Classroom application, returning a student submission does not set assignedGrade to the draftGrade value. Only a teacher of the course that contains the requested student submission may call this method. This request must be made by the Developer Console project of the <a href="https://support.google.com/cloud/answer/6158849">OAuth client ID</a> used to create the corresponding course work item. This method returns the following error codes: * <code>PERMISSION_DENIED</code> if the requesting user is not permitted to access the requested course or course work, return the requested student submission, or for access errors. * <code>INVALID_ARGUMENT</code> if the request is malformed. * <code>NOT_FOUND</code> if the requested course, course work, or student submission does not exist.</p>
 
 <h1 id='arguments-10' class='section-header'><a href='#arguments-10'>Arguments</a></h1>
 <ul>
+<li><code>request</code> - No description provided.</li>
 <li><code>courseId</code> - Identifier of the course. This identifier can be either the Classroom-assigned identifier or an alias.</li>
+<li><code>courseWorkId</code> - Identifier of the course work.</li>
+<li><code>id</code> - Identifier of the student submission.</li>
 </ul>
-</div><h4 id='method.delete' class='method'><code>fn <a href='#method.delete' class='fnname'>delete</a>(&amp;self, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_classroom1/struct.CourseDeleteCall.html' title='google_classroom1::CourseDeleteCall'>CourseDeleteCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.course_work_get' class='method'><code>fn <a href='#method.course_work_get' class='fnname'>course_work_get</a>(&amp;self, course_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_classroom1/struct.CourseCourseWorkGetCall.html' title='google_classroom1::CourseCourseWorkGetCall'>CourseCourseWorkGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>Deletes a course. This method returns the following error codes: * <code>PERMISSION_DENIED</code> if the requesting user is not permitted to delete the requested course or for access errors. * <code>NOT_FOUND</code> if no course exists with the requested ID.</p>
+<p>Returns course work. This method returns the following error codes: * <code>PERMISSION_DENIED</code> if the requesting user is not permitted to access the requested course or course work, or for access errors. * <code>INVALID_ARGUMENT</code> if the request is malformed. * <code>NOT_FOUND</code> if the requested course or course work does not exist.</p>
 
 <h1 id='arguments-11' class='section-header'><a href='#arguments-11'>Arguments</a></h1>
 <ul>
-<li><code>id</code> - Identifier of the course to delete. This identifier can be either the Classroom-assigned identifier or an alias.</li>
+<li><code>courseId</code> - Identifier of the course. This identifier can be either the Classroom-assigned identifier or an alias.</li>
+<li><code>id</code> - Identifier of the course work.</li>
 </ul>
-</div><h4 id='method.patch' class='method'><code>fn <a href='#method.patch' class='fnname'>patch</a>(&amp;self, request: <a class='struct' href='../google_classroom1/struct.Course.html' title='google_classroom1::Course'>Course</a>, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_classroom1/struct.CoursePatchCall.html' title='google_classroom1::CoursePatchCall'>CoursePatchCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.course_work_create' class='method'><code>fn <a href='#method.course_work_create' class='fnname'>course_work_create</a>(&amp;self, request: <a class='struct' href='../google_classroom1/struct.CourseWork.html' title='google_classroom1::CourseWork'>CourseWork</a>, course_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_classroom1/struct.CourseCourseWorkCreateCall.html' title='google_classroom1::CourseCourseWorkCreateCall'>CourseCourseWorkCreateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>Updates one or more fields in a course. This method returns the following error codes: * <code>PERMISSION_DENIED</code> if the requesting user is not permitted to modify the requested course or for access errors. * <code>NOT_FOUND</code> if no course exists with the requested ID. * <code>INVALID_ARGUMENT</code> if invalid fields are specified in the update mask or if no update mask is supplied. * <code>FAILED_PRECONDITION</code> for the following request errors: * CourseNotModifiable</p>
+<p>Creates course work. The resulting course work (and corresponding student submissions) are associated with the Developer Console project of the <a href="https://support.google.com/cloud/answer/6158849">OAuth client ID</a> used to make the request. Classroom API requests to modify course work and student submissions must be made with an OAuth client ID from the associated Developer Console project. This method returns the following error codes: * <code>PERMISSION_DENIED</code> if the requesting user is not permitted to access the requested course, create course work in the requested course, or for access errors. * <code>INVALID_ARGUMENT</code> if the request is malformed. * <code>NOT_FOUND</code> if the requested course does not exist.</p>
 
 <h1 id='arguments-12' class='section-header'><a href='#arguments-12'>Arguments</a></h1>
 <ul>
 <li><code>request</code> - No description provided.</li>
-<li><code>id</code> - Identifier of the course to update. This identifier can be either the Classroom-assigned identifier or an alias.</li>
+<li><code>courseId</code> - Identifier of the course. This identifier can be either the Classroom-assigned identifier or an alias.</li>
 </ul>
-</div><h4 id='method.students_get' class='method'><code>fn <a href='#method.students_get' class='fnname'>students_get</a>(&amp;self, course_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_classroom1/struct.CourseStudentGetCall.html' title='google_classroom1::CourseStudentGetCall'>CourseStudentGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self) -&gt; <a class='struct' href='../google_classroom1/struct.CourseListCall.html' title='google_classroom1::CourseListCall'>CourseListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>Returns a student of a course. This method returns the following error codes: * <code>PERMISSION_DENIED</code> if the requesting user is not permitted to view students of this course or for access errors. * <code>NOT_FOUND</code> if no student of this course has the requested ID or if the course does not exist.</p>
+<p>Returns a list of courses that the requesting user is permitted to view, restricted to those that match the request. This method returns the following error codes: * <code>PERMISSION_DENIED</code> for access errors. * <code>INVALID_ARGUMENT</code> if the query argument is malformed. * <code>NOT_FOUND</code> if any users specified in the query arguments do not exist.</p>
+</div><h4 id='method.course_work_student_submissions_reclaim' class='method'><code>fn <a href='#method.course_work_student_submissions_reclaim' class='fnname'>course_work_student_submissions_reclaim</a>(&amp;self, request: <a class='struct' href='../google_classroom1/struct.ReclaimStudentSubmissionRequest.html' title='google_classroom1::ReclaimStudentSubmissionRequest'>ReclaimStudentSubmissionRequest</a>, course_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, course_work_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_classroom1/struct.CourseCourseWorkStudentSubmissionReclaimCall.html' title='google_classroom1::CourseCourseWorkStudentSubmissionReclaimCall'>CourseCourseWorkStudentSubmissionReclaimCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Reclaims a student submission on behalf of the student that owns it. Reclaiming a student submission transfers ownership of attached Drive files to the student and update the submission state. Only the student that ownes the requested student submission may call this method, and only for a student submission that has been turned in. This request must be made by the Developer Console project of the <a href="https://support.google.com/cloud/answer/6158849">OAuth client ID</a> used to create the corresponding course work item. This method returns the following error codes: * <code>PERMISSION_DENIED</code> if the requesting user is not permitted to access the requested course or course work, unsubmit the requested student submission, or for access errors. * <code>FAILED_PRECONDITION</code> if the student submission has not been turned in. * <code>INVALID_ARGUMENT</code> if the request is malformed. * <code>NOT_FOUND</code> if the requested course, course work, or student submission does not exist.</p>
 
 <h1 id='arguments-13' class='section-header'><a href='#arguments-13'>Arguments</a></h1>
 <ul>
+<li><code>request</code> - No description provided.</li>
 <li><code>courseId</code> - Identifier of the course. This identifier can be either the Classroom-assigned identifier or an alias.</li>
-<li><code>userId</code> - Identifier of the student to return. The identifier can be one of the following: * the numeric identifier for the user * the email address of the user * the string literal <code>&quot;me&quot;</code>, indicating the requesting user</li>
+<li><code>courseWorkId</code> - Identifier of the course work.</li>
+<li><code>id</code> - Identifier of the student submission.</li>
 </ul>
-</div><h4 id='method.teachers_delete' class='method'><code>fn <a href='#method.teachers_delete' class='fnname'>teachers_delete</a>(&amp;self, course_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_classroom1/struct.CourseTeacherDeleteCall.html' title='google_classroom1::CourseTeacherDeleteCall'>CourseTeacherDeleteCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.aliases_create' class='method'><code>fn <a href='#method.aliases_create' class='fnname'>aliases_create</a>(&amp;self, request: <a class='struct' href='../google_classroom1/struct.CourseAlias.html' title='google_classroom1::CourseAlias'>CourseAlias</a>, course_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_classroom1/struct.CourseAliaseCreateCall.html' title='google_classroom1::CourseAliaseCreateCall'>CourseAliaseCreateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>Deletes a teacher of a course. This method returns the following error codes: * <code>PERMISSION_DENIED</code> if the requesting user is not permitted to delete teachers of this course or for access errors. * <code>NOT_FOUND</code> if no teacher of this course has the requested ID or if the course does not exist. * <code>FAILED_PRECONDITION</code> if the requested ID belongs to the primary teacher of this course.</p>
+<p>Creates an alias for a course. This method returns the following error codes: * <code>PERMISSION_DENIED</code> if the requesting user is not permitted to create the alias or for access errors. * <code>NOT_FOUND</code> if the course does not exist. * <code>ALREADY_EXISTS</code> if the alias already exists.</p>
 
 <h1 id='arguments-14' class='section-header'><a href='#arguments-14'>Arguments</a></h1>
 <ul>
-<li><code>courseId</code> - Identifier of the course. This identifier can be either the Classroom-assigned identifier or an alias.</li>
-<li><code>userId</code> - Identifier of the teacher to delete. The identifier can be one of the following: * the numeric identifier for the user * the email address of the user * the string literal <code>&quot;me&quot;</code>, indicating the requesting user</li>
+<li><code>request</code> - No description provided.</li>
+<li><code>courseId</code> - Identifier of the course to alias. This identifier can be either the Classroom-assigned identifier or an alias.</li>
 </ul>
-</div><h4 id='method.teachers_create' class='method'><code>fn <a href='#method.teachers_create' class='fnname'>teachers_create</a>(&amp;self, request: <a class='struct' href='../google_classroom1/struct.Teacher.html' title='google_classroom1::Teacher'>Teacher</a>, course_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_classroom1/struct.CourseTeacherCreateCall.html' title='google_classroom1::CourseTeacherCreateCall'>CourseTeacherCreateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.students_create' class='method'><code>fn <a href='#method.students_create' class='fnname'>students_create</a>(&amp;self, request: <a class='struct' href='../google_classroom1/struct.Student.html' title='google_classroom1::Student'>Student</a>, course_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_classroom1/struct.CourseStudentCreateCall.html' title='google_classroom1::CourseStudentCreateCall'>CourseStudentCreateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>Creates a teacher of a course. This method returns the following error codes: * <code>PERMISSION_DENIED</code> if the requesting user is not permitted to create teachers in this course or for access errors. * <code>NOT_FOUND</code> if the requested course ID does not exist. * <code>FAILED_PRECONDITION</code> if the requested user&#39;s account is disabled, for the following request errors: * CourseMemberLimitReached * CourseNotModifiable * CourseTeacherLimitReached * UserGroupsMembershipLimitReached * <code>ALREADY_EXISTS</code> if the user is already a teacher or student in the course.</p>
+<p>Adds a user as a student of a course. This method returns the following error codes: * <code>PERMISSION_DENIED</code> if the requesting user is not permitted to create students in this course or for access errors. * <code>NOT_FOUND</code> if the requested course ID does not exist. * <code>FAILED_PRECONDITION</code> if the requested user&#39;s account is disabled, for the following request errors: * CourseMemberLimitReached * CourseNotModifiable * UserGroupsMembershipLimitReached * <code>ALREADY_EXISTS</code> if the user is already a student or teacher in the course.</p>
 
 <h1 id='arguments-15' class='section-header'><a href='#arguments-15'>Arguments</a></h1>
 <ul>
 <li><code>request</code> - No description provided.</li>
+<li><code>courseId</code> - Identifier of the course to create the student in. This identifier can be either the Classroom-assigned identifier or an alias.</li>
+</ul>
+</div><h4 id='method.aliases_delete' class='method'><code>fn <a href='#method.aliases_delete' class='fnname'>aliases_delete</a>(&amp;self, course_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, alias: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_classroom1/struct.CourseAliaseDeleteCall.html' title='google_classroom1::CourseAliaseDeleteCall'>CourseAliaseDeleteCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Deletes an alias of a course. This method returns the following error codes: * <code>PERMISSION_DENIED</code> if the requesting user is not permitted to remove the alias or for access errors. * <code>NOT_FOUND</code> if the alias does not exist.</p>
+
+<h1 id='arguments-16' class='section-header'><a href='#arguments-16'>Arguments</a></h1>
+<ul>
+<li><code>courseId</code> - Identifier of the course whose alias should be deleted. This identifier can be either the Classroom-assigned identifier or an alias.</li>
+<li><code>alias</code> - Alias to delete. This may not be the Classroom-assigned identifier.</li>
+</ul>
+</div><h4 id='method.create' class='method'><code>fn <a href='#method.create' class='fnname'>create</a>(&amp;self, request: <a class='struct' href='../google_classroom1/struct.Course.html' title='google_classroom1::Course'>Course</a>) -&gt; <a class='struct' href='../google_classroom1/struct.CourseCreateCall.html' title='google_classroom1::CourseCreateCall'>CourseCreateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Creates a course. The user specified in <code>ownerId</code> is the owner of the created course and added as a teacher. This method returns the following error codes: * <code>PERMISSION_DENIED</code> if the requesting user is not permitted to create courses or for access errors. * <code>NOT_FOUND</code> if the primary teacher is not a valid user. * <code>FAILED_PRECONDITION</code> if the course owner&#39;s account is disabled or for the following request errors: * UserGroupsMembershipLimitReached * <code>ALREADY_EXISTS</code> if an alias was specified in the <code>id</code> and already exists.</p>
+
+<h1 id='arguments-17' class='section-header'><a href='#arguments-17'>Arguments</a></h1>
+<ul>
+<li><code>request</code> - No description provided.</li>
+</ul>
+</div><h4 id='method.students_list' class='method'><code>fn <a href='#method.students_list' class='fnname'>students_list</a>(&amp;self, course_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_classroom1/struct.CourseStudentListCall.html' title='google_classroom1::CourseStudentListCall'>CourseStudentListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Returns a list of students of this course that the requester is permitted to view. This method returns the following error codes: * <code>NOT_FOUND</code> if the course does not exist. * <code>PERMISSION_DENIED</code> for access errors.</p>
+
+<h1 id='arguments-18' class='section-header'><a href='#arguments-18'>Arguments</a></h1>
+<ul>
 <li><code>courseId</code> - Identifier of the course. This identifier can be either the Classroom-assigned identifier or an alias.</li>
 </ul>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_classroom1/trait.MethodsBuilder.html' title='google_classroom1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_classroom1/struct.CourseMethods.html' title='google_classroom1::CourseMethods'>CourseMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-3126' class='srclink' href='../src/google_classroom1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-classroom1-f999c1e8e0aae831/out/lib.rs.html#6634' title='goto source code'>[src]</a></span></h3>
+</div><h4 id='method.delete' class='method'><code>fn <a href='#method.delete' class='fnname'>delete</a>(&amp;self, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_classroom1/struct.CourseDeleteCall.html' title='google_classroom1::CourseDeleteCall'>CourseDeleteCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Deletes a course. This method returns the following error codes: * <code>PERMISSION_DENIED</code> if the requesting user is not permitted to delete the requested course or for access errors. * <code>NOT_FOUND</code> if no course exists with the requested ID.</p>
+
+<h1 id='arguments-19' class='section-header'><a href='#arguments-19'>Arguments</a></h1>
+<ul>
+<li><code>id</code> - Identifier of the course to delete. This identifier can be either the Classroom-assigned identifier or an alias.</li>
+</ul>
+</div><h4 id='method.patch' class='method'><code>fn <a href='#method.patch' class='fnname'>patch</a>(&amp;self, request: <a class='struct' href='../google_classroom1/struct.Course.html' title='google_classroom1::Course'>Course</a>, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_classroom1/struct.CoursePatchCall.html' title='google_classroom1::CoursePatchCall'>CoursePatchCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Updates one or more fields in a course. This method returns the following error codes: * <code>PERMISSION_DENIED</code> if the requesting user is not permitted to modify the requested course or for access errors. * <code>NOT_FOUND</code> if no course exists with the requested ID. * <code>INVALID_ARGUMENT</code> if invalid fields are specified in the update mask or if no update mask is supplied. * <code>FAILED_PRECONDITION</code> for the following request errors: * CourseNotModifiable</p>
+
+<h1 id='arguments-20' class='section-header'><a href='#arguments-20'>Arguments</a></h1>
+<ul>
+<li><code>request</code> - No description provided.</li>
+<li><code>id</code> - Identifier of the course to update. This identifier can be either the Classroom-assigned identifier or an alias.</li>
+</ul>
+</div><h4 id='method.aliases_list' class='method'><code>fn <a href='#method.aliases_list' class='fnname'>aliases_list</a>(&amp;self, course_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_classroom1/struct.CourseAliaseListCall.html' title='google_classroom1::CourseAliaseListCall'>CourseAliaseListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Returns a list of aliases for a course. This method returns the following error codes: * <code>PERMISSION_DENIED</code> if the requesting user is not permitted to access the course or for access errors. * <code>NOT_FOUND</code> if the course does not exist.</p>
+
+<h1 id='arguments-21' class='section-header'><a href='#arguments-21'>Arguments</a></h1>
+<ul>
+<li><code>courseId</code> - The identifier of the course. This identifier can be either the Classroom-assigned identifier or an alias.</li>
+</ul>
+</div><h4 id='method.teachers_delete' class='method'><code>fn <a href='#method.teachers_delete' class='fnname'>teachers_delete</a>(&amp;self, course_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_classroom1/struct.CourseTeacherDeleteCall.html' title='google_classroom1::CourseTeacherDeleteCall'>CourseTeacherDeleteCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Deletes a teacher of a course. This method returns the following error codes: * <code>PERMISSION_DENIED</code> if the requesting user is not permitted to delete teachers of this course or for access errors. * <code>NOT_FOUND</code> if no teacher of this course has the requested ID or if the course does not exist. * <code>FAILED_PRECONDITION</code> if the requested ID belongs to the primary teacher of this course.</p>
+
+<h1 id='arguments-22' class='section-header'><a href='#arguments-22'>Arguments</a></h1>
+<ul>
+<li><code>courseId</code> - Identifier of the course. This identifier can be either the Classroom-assigned identifier or an alias.</li>
+<li><code>userId</code> - Identifier of the teacher to delete. The identifier can be one of the following: * the numeric identifier for the user * the email address of the user * the string literal <code>&quot;me&quot;</code>, indicating the requesting user</li>
+</ul>
+</div><h4 id='method.teachers_create' class='method'><code>fn <a href='#method.teachers_create' class='fnname'>teachers_create</a>(&amp;self, request: <a class='struct' href='../google_classroom1/struct.Teacher.html' title='google_classroom1::Teacher'>Teacher</a>, course_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_classroom1/struct.CourseTeacherCreateCall.html' title='google_classroom1::CourseTeacherCreateCall'>CourseTeacherCreateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Creates a teacher of a course. This method returns the following error codes: * <code>PERMISSION_DENIED</code> if the requesting user is not permitted to create teachers in this course or for access errors. * <code>NOT_FOUND</code> if the requested course ID does not exist. * <code>FAILED_PRECONDITION</code> if the requested user&#39;s account is disabled, for the following request errors: * CourseMemberLimitReached * CourseNotModifiable * CourseTeacherLimitReached * UserGroupsMembershipLimitReached * <code>ALREADY_EXISTS</code> if the user is already a teacher or student in the course.</p>
+
+<h1 id='arguments-23' class='section-header'><a href='#arguments-23'>Arguments</a></h1>
+<ul>
+<li><code>request</code> - No description provided.</li>
+<li><code>courseId</code> - Identifier of the course. This identifier can be either the Classroom-assigned identifier or an alias.</li>
+</ul>
+</div><h4 id='method.course_work_student_submissions_get' class='method'><code>fn <a href='#method.course_work_student_submissions_get' class='fnname'>course_work_student_submissions_get</a>(&amp;self, course_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, course_work_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_classroom1/struct.CourseCourseWorkStudentSubmissionGetCall.html' title='google_classroom1::CourseCourseWorkStudentSubmissionGetCall'>CourseCourseWorkStudentSubmissionGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Returns a student submission. * <code>PERMISSION_DENIED</code> if the requesting user is not permitted to access the requested course, course work, or student submission or for access errors. * <code>INVALID_ARGUMENT</code> if the request is malformed. * <code>NOT_FOUND</code> if the requested course, course work, or student submission does not exist.</p>
+
+<h1 id='arguments-24' class='section-header'><a href='#arguments-24'>Arguments</a></h1>
+<ul>
+<li><code>courseId</code> - Identifier of the course. This identifier can be either the Classroom-assigned identifier or an alias.</li>
+<li><code>courseWorkId</code> - Identifier of the course work.</li>
+<li><code>id</code> - Identifier of the student submission.</li>
+</ul>
+</div><h4 id='method.students_get' class='method'><code>fn <a href='#method.students_get' class='fnname'>students_get</a>(&amp;self, course_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_classroom1/struct.CourseStudentGetCall.html' title='google_classroom1::CourseStudentGetCall'>CourseStudentGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Returns a student of a course. This method returns the following error codes: * <code>PERMISSION_DENIED</code> if the requesting user is not permitted to view students of this course or for access errors. * <code>NOT_FOUND</code> if no student of this course has the requested ID or if the course does not exist.</p>
+
+<h1 id='arguments-25' class='section-header'><a href='#arguments-25'>Arguments</a></h1>
+<ul>
+<li><code>courseId</code> - Identifier of the course. This identifier can be either the Classroom-assigned identifier or an alias.</li>
+<li><code>userId</code> - Identifier of the student to return. The identifier can be one of the following: * the numeric identifier for the user * the email address of the user * the string literal <code>&quot;me&quot;</code>, indicating the requesting user</li>
+</ul>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='trait' href='../google_classroom1/trait.MethodsBuilder.html' title='google_classroom1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_classroom1/struct.CourseMethods.html' title='google_classroom1::CourseMethods'>CourseMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-7021' class='srclink' href='../src/google_classroom1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-classroom1-1f991e06295dc64f/out/lib.rs.html#12763' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 

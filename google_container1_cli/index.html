@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>container v0.3.6+20160321</title>
+  <title>container v0.3.6+20160421</title>
   
 
   <link rel="shortcut icon" href="./img/favicon.ico">
@@ -32,7 +32,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href="." class="icon icon-home"> container v0.3.6+20160321</a>
+        <a href="." class="icon icon-home"> container v0.3.6+20160421</a>
         
       </div>
 
@@ -93,6 +93,26 @@
                 </li>
             
                 <li class="toctree-l2 ">
+                    <a class="" href="projects_zones-clusters-node-pools-create/">Zones Clusters Node Pools Create</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="projects_zones-clusters-node-pools-delete/">Zones Clusters Node Pools Delete</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="projects_zones-clusters-node-pools-get/">Zones Clusters Node Pools Get</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="projects_zones-clusters-node-pools-list/">Zones Clusters Node Pools List</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
                     <a class="" href="projects_zones-clusters-update/">Zones Clusters Update</a>
                     
                 </li>
@@ -126,7 +146,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href=".">container v0.3.6+20160321</a>
+        <a href=".">container v0.3.6+20160421</a>
       </nav>
 
       
@@ -169,13 +189,17 @@ capabilities. Errors will be printed to standard error, and cause the program's 
 </ul>
 <p>Find the source code <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/container1-cli">on github</a>.</p>
 <h1 id="usage">Usage</h1>
-<p>This documentation was generated from the <em>container</em> API at revision <em>20160321</em>. The CLI is at version <em>0.3.6</em>.</p>
+<p>This documentation was generated from the <em>container</em> API at revision <em>20160421</em>. The CLI is at version <em>0.3.6</em>.</p>
 <pre><code class="bash">container1 [options]
         projects
                 zones-clusters-create &lt;project-id&gt; &lt;zone&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 zones-clusters-delete &lt;project-id&gt; &lt;zone&gt; &lt;cluster-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 zones-clusters-get &lt;project-id&gt; &lt;zone&gt; &lt;cluster-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 zones-clusters-list &lt;project-id&gt; &lt;zone&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                zones-clusters-node-pools-create &lt;project-id&gt; &lt;zone&gt; &lt;cluster-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                zones-clusters-node-pools-delete &lt;project-id&gt; &lt;zone&gt; &lt;cluster-id&gt; &lt;node-pool-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                zones-clusters-node-pools-get &lt;project-id&gt; &lt;zone&gt; &lt;cluster-id&gt; &lt;node-pool-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                zones-clusters-node-pools-list &lt;project-id&gt; &lt;zone&gt; &lt;cluster-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 zones-clusters-update &lt;project-id&gt; &lt;zone&gt; &lt;cluster-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 zones-get-serverconfig &lt;project-id&gt; &lt;zone&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 zones-operations-get &lt;project-id&gt; &lt;zone&gt; &lt;operation-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
@@ -279,7 +303,7 @@ issue at hand.</p>
 
 <!--
 MkDocs version  : 0.12.2
-Docs Build Date : 2016-07-23 16:05:51.547824
+Docs Build Date : 2016-09-11 17:55:41.587245
 -->
 </body>
 </html>

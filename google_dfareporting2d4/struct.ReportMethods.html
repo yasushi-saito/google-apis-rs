@@ -47,8 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-43268' class='srclink' href='../src/google_dfareporting2d4/home/byron/dev/rust/google-apis-rs/target/debug/build/google-dfareporting2d4-f189d28a0c41e104/out/lib.rs.html#98442-98444' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct ReportMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
+               </span><a id='src-40322' class='srclink' href='../src/google_dfareporting2d4/home/byron/dev/rust/google-apis-rs/target/debug/build/google-dfareporting2d4-94fc568ee41013ba/out/lib.rs.html#76295-76297' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct ReportMethods&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>report</em> resources.
 It is not used directly, but through the <code>Dfareporting</code> hub.</p>
@@ -74,8 +74,8 @@ It is not used directly, but through the <code>Dfareporting</code> hub.</p>
 <span class='comment'>// like `compatible_fields_query(...)`, `delete(...)`, `files_get(...)`, `files_list(...)`, `get(...)`, `insert(...)`, `list(...)`, `patch(...)`, `run(...)` and `update(...)`</span>
 <span class='comment'>// to build up your call.</span>
 <span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>reports</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_dfareporting2d4/struct.ReportMethods.html' title='google_dfareporting2d4::ReportMethods'>ReportMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-43277' class='srclink' href='../src/google_dfareporting2d4/home/byron/dev/rust/google-apis-rs/target/debug/build/google-dfareporting2d4-f189d28a0c41e104/out/lib.rs.html#98446-98631' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.run' class='method'><code>fn <a href='#method.run' class='fnname'>run</a>(&amp;self, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, report_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_dfareporting2d4/struct.ReportRunCall.html' title='google_dfareporting2d4::ReportRunCall'>ReportRunCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='struct' href='../google_dfareporting2d4/struct.ReportMethods.html' title='google_dfareporting2d4::ReportMethods'>ReportMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-40331' class='srclink' href='../src/google_dfareporting2d4/home/byron/dev/rust/google-apis-rs/target/debug/build/google-dfareporting2d4-94fc568ee41013ba/out/lib.rs.html#76299-76484' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.run' class='method'><code>fn <a href='#method.run' class='fnname'>run</a>(&amp;self, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, report_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_dfareporting2d4/struct.ReportRunCall.html' title='google_dfareporting2d4::ReportRunCall'>ReportRunCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Runs a report.</p>
@@ -85,7 +85,7 @@ It is not used directly, but through the <code>Dfareporting</code> hub.</p>
 <li><code>profileId</code> - The DFA profile ID.</li>
 <li><code>reportId</code> - The ID of the report.</li>
 </ul>
-</div><h4 id='method.patch' class='method'><code>fn <a href='#method.patch' class='fnname'>patch</a>(&amp;self, request: <a class='struct' href='../google_dfareporting2d4/struct.Report.html' title='google_dfareporting2d4::Report'>Report</a>, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, report_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_dfareporting2d4/struct.ReportPatchCall.html' title='google_dfareporting2d4::ReportPatchCall'>ReportPatchCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.patch' class='method'><code>fn <a href='#method.patch' class='fnname'>patch</a>(&amp;self, request: <a class='struct' href='../google_dfareporting2d4/struct.Report.html' title='google_dfareporting2d4::Report'>Report</a>, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, report_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_dfareporting2d4/struct.ReportPatchCall.html' title='google_dfareporting2d4::ReportPatchCall'>ReportPatchCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Updates a report. This method supports patch semantics.</p>
@@ -96,7 +96,7 @@ It is not used directly, but through the <code>Dfareporting</code> hub.</p>
 <li><code>profileId</code> - The DFA user profile ID.</li>
 <li><code>reportId</code> - The ID of the report.</li>
 </ul>
-</div><h4 id='method.files_list' class='method'><code>fn <a href='#method.files_list' class='fnname'>files_list</a>(&amp;self, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, report_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_dfareporting2d4/struct.ReportFileListCall.html' title='google_dfareporting2d4::ReportFileListCall'>ReportFileListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.files_list' class='method'><code>fn <a href='#method.files_list' class='fnname'>files_list</a>(&amp;self, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, report_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_dfareporting2d4/struct.ReportFileListCall.html' title='google_dfareporting2d4::ReportFileListCall'>ReportFileListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Lists files for a report.</p>
@@ -106,7 +106,7 @@ It is not used directly, but through the <code>Dfareporting</code> hub.</p>
 <li><code>profileId</code> - The DFA profile ID.</li>
 <li><code>reportId</code> - The ID of the parent report.</li>
 </ul>
-</div><h4 id='method.insert' class='method'><code>fn <a href='#method.insert' class='fnname'>insert</a>(&amp;self, request: <a class='struct' href='../google_dfareporting2d4/struct.Report.html' title='google_dfareporting2d4::Report'>Report</a>, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_dfareporting2d4/struct.ReportInsertCall.html' title='google_dfareporting2d4::ReportInsertCall'>ReportInsertCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.insert' class='method'><code>fn <a href='#method.insert' class='fnname'>insert</a>(&amp;self, request: <a class='struct' href='../google_dfareporting2d4/struct.Report.html' title='google_dfareporting2d4::Report'>Report</a>, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_dfareporting2d4/struct.ReportInsertCall.html' title='google_dfareporting2d4::ReportInsertCall'>ReportInsertCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Creates a report.</p>
@@ -116,7 +116,7 @@ It is not used directly, but through the <code>Dfareporting</code> hub.</p>
 <li><code>request</code> - No description provided.</li>
 <li><code>profileId</code> - The DFA user profile ID.</li>
 </ul>
-</div><h4 id='method.update' class='method'><code>fn <a href='#method.update' class='fnname'>update</a>(&amp;self, request: <a class='struct' href='../google_dfareporting2d4/struct.Report.html' title='google_dfareporting2d4::Report'>Report</a>, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, report_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_dfareporting2d4/struct.ReportUpdateCall.html' title='google_dfareporting2d4::ReportUpdateCall'>ReportUpdateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.update' class='method'><code>fn <a href='#method.update' class='fnname'>update</a>(&amp;self, request: <a class='struct' href='../google_dfareporting2d4/struct.Report.html' title='google_dfareporting2d4::Report'>Report</a>, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, report_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_dfareporting2d4/struct.ReportUpdateCall.html' title='google_dfareporting2d4::ReportUpdateCall'>ReportUpdateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Updates a report.</p>
@@ -127,7 +127,7 @@ It is not used directly, but through the <code>Dfareporting</code> hub.</p>
 <li><code>profileId</code> - The DFA user profile ID.</li>
 <li><code>reportId</code> - The ID of the report.</li>
 </ul>
-</div><h4 id='method.compatible_fields_query' class='method'><code>fn <a href='#method.compatible_fields_query' class='fnname'>compatible_fields_query</a>(&amp;self, request: <a class='struct' href='../google_dfareporting2d4/struct.Report.html' title='google_dfareporting2d4::Report'>Report</a>, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_dfareporting2d4/struct.ReportCompatibleFieldQueryCall.html' title='google_dfareporting2d4::ReportCompatibleFieldQueryCall'>ReportCompatibleFieldQueryCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.compatible_fields_query' class='method'><code>fn <a href='#method.compatible_fields_query' class='fnname'>compatible_fields_query</a>(&amp;self, request: <a class='struct' href='../google_dfareporting2d4/struct.Report.html' title='google_dfareporting2d4::Report'>Report</a>, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_dfareporting2d4/struct.ReportCompatibleFieldQueryCall.html' title='google_dfareporting2d4::ReportCompatibleFieldQueryCall'>ReportCompatibleFieldQueryCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Returns the fields that are compatible to be selected in the respective sections of a report criteria, given the fields already selected in the input report and user permissions.</p>
@@ -137,7 +137,7 @@ It is not used directly, but through the <code>Dfareporting</code> hub.</p>
 <li><code>request</code> - No description provided.</li>
 <li><code>profileId</code> - The DFA user profile ID.</li>
 </ul>
-</div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, report_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_dfareporting2d4/struct.ReportGetCall.html' title='google_dfareporting2d4::ReportGetCall'>ReportGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, report_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_dfareporting2d4/struct.ReportGetCall.html' title='google_dfareporting2d4::ReportGetCall'>ReportGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Retrieves a report by its ID.</p>
@@ -147,7 +147,7 @@ It is not used directly, but through the <code>Dfareporting</code> hub.</p>
 <li><code>profileId</code> - The DFA user profile ID.</li>
 <li><code>reportId</code> - The ID of the report.</li>
 </ul>
-</div><h4 id='method.files_get' class='method'><code>fn <a href='#method.files_get' class='fnname'>files_get</a>(&amp;self, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, report_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, file_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_dfareporting2d4/struct.ReportFileGetCall.html' title='google_dfareporting2d4::ReportFileGetCall'>ReportFileGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.files_get' class='method'><code>fn <a href='#method.files_get' class='fnname'>files_get</a>(&amp;self, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, report_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, file_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_dfareporting2d4/struct.ReportFileGetCall.html' title='google_dfareporting2d4::ReportFileGetCall'>ReportFileGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Retrieves a report file.</p>
@@ -158,7 +158,7 @@ It is not used directly, but through the <code>Dfareporting</code> hub.</p>
 <li><code>reportId</code> - The ID of the report.</li>
 <li><code>fileId</code> - The ID of the report file.</li>
 </ul>
-</div><h4 id='method.delete' class='method'><code>fn <a href='#method.delete' class='fnname'>delete</a>(&amp;self, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, report_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_dfareporting2d4/struct.ReportDeleteCall.html' title='google_dfareporting2d4::ReportDeleteCall'>ReportDeleteCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.delete' class='method'><code>fn <a href='#method.delete' class='fnname'>delete</a>(&amp;self, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, report_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_dfareporting2d4/struct.ReportDeleteCall.html' title='google_dfareporting2d4::ReportDeleteCall'>ReportDeleteCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Deletes a report by its ID.</p>
@@ -168,7 +168,7 @@ It is not used directly, but through the <code>Dfareporting</code> hub.</p>
 <li><code>profileId</code> - The DFA user profile ID.</li>
 <li><code>reportId</code> - The ID of the report.</li>
 </ul>
-</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_dfareporting2d4/struct.ReportListCall.html' title='google_dfareporting2d4::ReportListCall'>ReportListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self, profile_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_dfareporting2d4/struct.ReportListCall.html' title='google_dfareporting2d4::ReportListCall'>ReportListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Retrieves list of reports.</p>
@@ -177,7 +177,7 @@ It is not used directly, but through the <code>Dfareporting</code> hub.</p>
 <ul>
 <li><code>profileId</code> - The DFA user profile ID.</li>
 </ul>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_dfareporting2d4/trait.MethodsBuilder.html' title='google_dfareporting2d4::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_dfareporting2d4/struct.ReportMethods.html' title='google_dfareporting2d4::ReportMethods'>ReportMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-43273' class='srclink' href='../src/google_dfareporting2d4/home/byron/dev/rust/google-apis-rs/target/debug/build/google-dfareporting2d4-f189d28a0c41e104/out/lib.rs.html#98445' title='goto source code'>[src]</a></span></h3>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='trait' href='../google_dfareporting2d4/trait.MethodsBuilder.html' title='google_dfareporting2d4::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_dfareporting2d4/struct.ReportMethods.html' title='google_dfareporting2d4::ReportMethods'>ReportMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-40327' class='srclink' href='../src/google_dfareporting2d4/home/byron/dev/rust/google-apis-rs/target/debug/build/google-dfareporting2d4-94fc568ee41013ba/out/lib.rs.html#76298' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 

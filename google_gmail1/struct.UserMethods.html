@@ -47,8 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-4616' class='srclink' href='../src/google_gmail1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-gmail1-066479ae8213c841/out/lib.rs.html#9872-9874' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct UserMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
+               </span><a id='src-6236' class='srclink' href='../src/google_gmail1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-gmail1-f01d0d2b210f51a5/out/lib.rs.html#11697-11699' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct UserMethods&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>user</em> resources.
 It is not used directly, but through the <code>Gmail</code> hub.</p>
@@ -71,340 +71,565 @@ It is not used directly, but through the <code>Gmail</code> hub.</p>
                               <span class='op'>&lt;</span><span class='ident'>MemoryStorage</span> <span class='kw'>as</span> <span class='ident'>Default</span><span class='op'>&gt;</span>::<span class='ident'>default</span>(), <span class='prelude-val'>None</span>);
 <span class='kw'>let</span> <span class='kw-2'>mut</span> <span class='ident'>hub</span> <span class='op'>=</span> <span class='ident'>Gmail</span>::<span class='ident'>new</span>(<span class='ident'>hyper</span>::<span class='ident'>Client</span>::<span class='ident'>new</span>(), <span class='ident'>auth</span>);
 <span class='comment'>// Usually you wouldn&#39;t bind this to a variable, but keep calling *CallBuilders*</span>
-<span class='comment'>// like `drafts_create(...)`, `drafts_delete(...)`, `drafts_get(...)`, `drafts_list(...)`, `drafts_send(...)`, `drafts_update(...)`, `get_profile(...)`, `history_list(...)`, `labels_create(...)`, `labels_delete(...)`, `labels_get(...)`, `labels_list(...)`, `labels_patch(...)`, `labels_update(...)`, `messages_attachments_get(...)`, `messages_batch_delete(...)`, `messages_delete(...)`, `messages_get(...)`, `messages_import(...)`, `messages_insert(...)`, `messages_list(...)`, `messages_modify(...)`, `messages_send(...)`, `messages_trash(...)`, `messages_untrash(...)`, `stop(...)`, `threads_delete(...)`, `threads_get(...)`, `threads_list(...)`, `threads_modify(...)`, `threads_trash(...)`, `threads_untrash(...)` and `watch(...)`</span>
+<span class='comment'>// like `drafts_create(...)`, `drafts_delete(...)`, `drafts_get(...)`, `drafts_list(...)`, `drafts_send(...)`, `drafts_update(...)`, `get_profile(...)`, `history_list(...)`, `labels_create(...)`, `labels_delete(...)`, `labels_get(...)`, `labels_list(...)`, `labels_patch(...)`, `labels_update(...)`, `messages_attachments_get(...)`, `messages_batch_delete(...)`, `messages_delete(...)`, `messages_get(...)`, `messages_import(...)`, `messages_insert(...)`, `messages_list(...)`, `messages_modify(...)`, `messages_send(...)`, `messages_trash(...)`, `messages_untrash(...)`, `settings_filters_create(...)`, `settings_filters_delete(...)`, `settings_filters_get(...)`, `settings_filters_list(...)`, `settings_forwarding_addresses_create(...)`, `settings_forwarding_addresses_delete(...)`, `settings_forwarding_addresses_get(...)`, `settings_forwarding_addresses_list(...)`, `settings_get_auto_forwarding(...)`, `settings_get_imap(...)`, `settings_get_pop(...)`, `settings_get_vacation(...)`, `settings_send_as_create(...)`, `settings_send_as_delete(...)`, `settings_send_as_get(...)`, `settings_send_as_list(...)`, `settings_send_as_patch(...)`, `settings_send_as_update(...)`, `settings_send_as_verify(...)`, `settings_update_auto_forwarding(...)`, `settings_update_imap(...)`, `settings_update_pop(...)`, `settings_update_vacation(...)`, `stop(...)`, `threads_delete(...)`, `threads_get(...)`, `threads_list(...)`, `threads_modify(...)`, `threads_trash(...)`, `threads_untrash(...)` and `watch(...)`</span>
 <span class='comment'>// to build up your call.</span>
 <span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>users</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_gmail1/struct.UserMethods.html' title='google_gmail1::UserMethods'>UserMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-4625' class='srclink' href='../src/google_gmail1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-gmail1-066479ae8213c841/out/lib.rs.html#9876-10463' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.stop' class='method'><code>fn <a href='#method.stop' class='fnname'>stop</a>(&amp;self, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gmail1/struct.UserStopCall.html' title='google_gmail1::UserStopCall'>UserStopCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='struct' href='../google_gmail1/struct.UserMethods.html' title='google_gmail1::UserMethods'>UserMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-6245' class='srclink' href='../src/google_gmail1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-gmail1-f01d0d2b210f51a5/out/lib.rs.html#11701-12686' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.settings_update_vacation' class='method'><code>fn <a href='#method.settings_update_vacation' class='fnname'>settings_update_vacation</a>(&amp;self, request: <a class='struct' href='../google_gmail1/struct.VacationSettings.html' title='google_gmail1::VacationSettings'>VacationSettings</a>, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gmail1/struct.UserSettingUpdateVacationCall.html' title='google_gmail1::UserSettingUpdateVacationCall'>UserSettingUpdateVacationCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>Stop receiving push notifications for the given user mailbox.</p>
+<p>Updates vacation responder settings.</p>
 
 <h1 id='arguments' class='section-header'><a href='#arguments'>Arguments</a></h1>
 <ul>
-<li><code>userId</code> - The user&#39;s email address. The special value me can be used to indicate the authenticated user.</li>
+<li><code>request</code> - No description provided.</li>
+<li><code>userId</code> - User&#39;s email address. The special value &quot;me&quot; can be used to indicate the authenticated user.</li>
 </ul>
-</div><h4 id='method.messages_import' class='method'><code>fn <a href='#method.messages_import' class='fnname'>messages_import</a>(&amp;self, request: <a class='struct' href='../google_gmail1/struct.Message.html' title='google_gmail1::Message'>Message</a>, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gmail1/struct.UserMessageImportCall.html' title='google_gmail1::UserMessageImportCall'>UserMessageImportCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.labels_create' class='method'><code>fn <a href='#method.labels_create' class='fnname'>labels_create</a>(&amp;self, request: <a class='struct' href='../google_gmail1/struct.Label.html' title='google_gmail1::Label'>Label</a>, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gmail1/struct.UserLabelCreateCall.html' title='google_gmail1::UserLabelCreateCall'>UserLabelCreateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>Imports a message into only this user&#39;s mailbox, with standard email delivery scanning and classification similar to receiving via SMTP. Does not send a message.</p>
+<p>Creates a new label.</p>
 
 <h1 id='arguments-1' class='section-header'><a href='#arguments-1'>Arguments</a></h1>
 <ul>
 <li><code>request</code> - No description provided.</li>
 <li><code>userId</code> - The user&#39;s email address. The special value me can be used to indicate the authenticated user.</li>
 </ul>
-</div><h4 id='method.history_list' class='method'><code>fn <a href='#method.history_list' class='fnname'>history_list</a>(&amp;self, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gmail1/struct.UserHistoryListCall.html' title='google_gmail1::UserHistoryListCall'>UserHistoryListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.settings_send_as_list' class='method'><code>fn <a href='#method.settings_send_as_list' class='fnname'>settings_send_as_list</a>(&amp;self, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gmail1/struct.UserSettingSendAListCall.html' title='google_gmail1::UserSettingSendAListCall'>UserSettingSendAListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>Lists the history of all changes to the given mailbox. History results are returned in chronological order (increasing historyId).</p>
+<p>Lists the send-as aliases for the specified account. The result includes the primary send-as address associated with the account as well as any custom &quot;from&quot; aliases.</p>
 
 <h1 id='arguments-2' class='section-header'><a href='#arguments-2'>Arguments</a></h1>
 <ul>
-<li><code>userId</code> - The user&#39;s email address. The special value me can be used to indicate the authenticated user.</li>
+<li><code>userId</code> - User&#39;s email address. The special value &quot;me&quot; can be used to indicate the authenticated user.</li>
 </ul>
-</div><h4 id='method.drafts_create' class='method'><code>fn <a href='#method.drafts_create' class='fnname'>drafts_create</a>(&amp;self, request: <a class='struct' href='../google_gmail1/struct.Draft.html' title='google_gmail1::Draft'>Draft</a>, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gmail1/struct.UserDraftCreateCall.html' title='google_gmail1::UserDraftCreateCall'>UserDraftCreateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.settings_get_imap' class='method'><code>fn <a href='#method.settings_get_imap' class='fnname'>settings_get_imap</a>(&amp;self, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gmail1/struct.UserSettingGetImapCall.html' title='google_gmail1::UserSettingGetImapCall'>UserSettingGetImapCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>Creates a new draft with the DRAFT label.</p>
+<p>Gets IMAP settings.</p>
 
 <h1 id='arguments-3' class='section-header'><a href='#arguments-3'>Arguments</a></h1>
 <ul>
-<li><code>request</code> - No description provided.</li>
-<li><code>userId</code> - The user&#39;s email address. The special value me can be used to indicate the authenticated user.</li>
+<li><code>userId</code> - User&#39;s email address. The special value &quot;me&quot; can be used to indicate the authenticated user.</li>
 </ul>
-</div><h4 id='method.labels_create' class='method'><code>fn <a href='#method.labels_create' class='fnname'>labels_create</a>(&amp;self, request: <a class='struct' href='../google_gmail1/struct.Label.html' title='google_gmail1::Label'>Label</a>, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gmail1/struct.UserLabelCreateCall.html' title='google_gmail1::UserLabelCreateCall'>UserLabelCreateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.messages_import' class='method'><code>fn <a href='#method.messages_import' class='fnname'>messages_import</a>(&amp;self, request: <a class='struct' href='../google_gmail1/struct.Message.html' title='google_gmail1::Message'>Message</a>, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gmail1/struct.UserMessageImportCall.html' title='google_gmail1::UserMessageImportCall'>UserMessageImportCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>Creates a new label.</p>
+<p>Imports a message into only this user&#39;s mailbox, with standard email delivery scanning and classification similar to receiving via SMTP. Does not send a message.</p>
 
 <h1 id='arguments-4' class='section-header'><a href='#arguments-4'>Arguments</a></h1>
 <ul>
 <li><code>request</code> - No description provided.</li>
 <li><code>userId</code> - The user&#39;s email address. The special value me can be used to indicate the authenticated user.</li>
 </ul>
-</div><h4 id='method.labels_delete' class='method'><code>fn <a href='#method.labels_delete' class='fnname'>labels_delete</a>(&amp;self, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gmail1/struct.UserLabelDeleteCall.html' title='google_gmail1::UserLabelDeleteCall'>UserLabelDeleteCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.settings_filters_list' class='method'><code>fn <a href='#method.settings_filters_list' class='fnname'>settings_filters_list</a>(&amp;self, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gmail1/struct.UserSettingFilterListCall.html' title='google_gmail1::UserSettingFilterListCall'>UserSettingFilterListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>Immediately and permanently deletes the specified label and removes it from any messages and threads that it is applied to.</p>
+<p>Lists the message filters of a Gmail user.</p>
 
 <h1 id='arguments-5' class='section-header'><a href='#arguments-5'>Arguments</a></h1>
 <ul>
-<li><code>userId</code> - The user&#39;s email address. The special value me can be used to indicate the authenticated user.</li>
-<li><code>id</code> - The ID of the label to delete.</li>
+<li><code>userId</code> - User&#39;s email address. The special value &quot;me&quot; can be used to indicate the authenticated user.</li>
 </ul>
-</div><h4 id='method.labels_get' class='method'><code>fn <a href='#method.labels_get' class='fnname'>labels_get</a>(&amp;self, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gmail1/struct.UserLabelGetCall.html' title='google_gmail1::UserLabelGetCall'>UserLabelGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.settings_forwarding_addresses_get' class='method'><code>fn <a href='#method.settings_forwarding_addresses_get' class='fnname'>settings_forwarding_addresses_get</a>(&amp;self, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, forwarding_email: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gmail1/struct.UserSettingForwardingAddresseGetCall.html' title='google_gmail1::UserSettingForwardingAddresseGetCall'>UserSettingForwardingAddresseGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>Gets the specified label.</p>
+<p>Gets the specified forwarding address.</p>
 
 <h1 id='arguments-6' class='section-header'><a href='#arguments-6'>Arguments</a></h1>
 <ul>
-<li><code>userId</code> - The user&#39;s email address. The special value me can be used to indicate the authenticated user.</li>
-<li><code>id</code> - The ID of the label to retrieve.</li>
+<li><code>userId</code> - User&#39;s email address. The special value &quot;me&quot; can be used to indicate the authenticated user.</li>
+<li><code>forwardingEmail</code> - The forwarding address to be retrieved.</li>
 </ul>
-</div><h4 id='method.messages_trash' class='method'><code>fn <a href='#method.messages_trash' class='fnname'>messages_trash</a>(&amp;self, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gmail1/struct.UserMessageTrashCall.html' title='google_gmail1::UserMessageTrashCall'>UserMessageTrashCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.history_list' class='method'><code>fn <a href='#method.history_list' class='fnname'>history_list</a>(&amp;self, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gmail1/struct.UserHistoryListCall.html' title='google_gmail1::UserHistoryListCall'>UserHistoryListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>Moves the specified message to the trash.</p>
+<p>Lists the history of all changes to the given mailbox. History results are returned in chronological order (increasing historyId).</p>
 
 <h1 id='arguments-7' class='section-header'><a href='#arguments-7'>Arguments</a></h1>
 <ul>
 <li><code>userId</code> - The user&#39;s email address. The special value me can be used to indicate the authenticated user.</li>
-<li><code>id</code> - The ID of the message to Trash.</li>
 </ul>
-</div><h4 id='method.drafts_send' class='method'><code>fn <a href='#method.drafts_send' class='fnname'>drafts_send</a>(&amp;self, request: <a class='struct' href='../google_gmail1/struct.Draft.html' title='google_gmail1::Draft'>Draft</a>, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gmail1/struct.UserDraftSendCall.html' title='google_gmail1::UserDraftSendCall'>UserDraftSendCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.drafts_create' class='method'><code>fn <a href='#method.drafts_create' class='fnname'>drafts_create</a>(&amp;self, request: <a class='struct' href='../google_gmail1/struct.Draft.html' title='google_gmail1::Draft'>Draft</a>, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gmail1/struct.UserDraftCreateCall.html' title='google_gmail1::UserDraftCreateCall'>UserDraftCreateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>Sends the specified, existing draft to the recipients in the To, Cc, and Bcc headers.</p>
+<p>Creates a new draft with the DRAFT label.</p>
 
 <h1 id='arguments-8' class='section-header'><a href='#arguments-8'>Arguments</a></h1>
 <ul>
 <li><code>request</code> - No description provided.</li>
 <li><code>userId</code> - The user&#39;s email address. The special value me can be used to indicate the authenticated user.</li>
 </ul>
-</div><h4 id='method.messages_untrash' class='method'><code>fn <a href='#method.messages_untrash' class='fnname'>messages_untrash</a>(&amp;self, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gmail1/struct.UserMessageUntrashCall.html' title='google_gmail1::UserMessageUntrashCall'>UserMessageUntrashCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.settings_send_as_get' class='method'><code>fn <a href='#method.settings_send_as_get' class='fnname'>settings_send_as_get</a>(&amp;self, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, send_as_email: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gmail1/struct.UserSettingSendAGetCall.html' title='google_gmail1::UserSettingSendAGetCall'>UserSettingSendAGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>Removes the specified message from the trash.</p>
+<p>Gets the specified send-as alias. Fails with an HTTP 404 error if the specified address is not a member of the collection.</p>
 
 <h1 id='arguments-9' class='section-header'><a href='#arguments-9'>Arguments</a></h1>
 <ul>
-<li><code>userId</code> - The user&#39;s email address. The special value me can be used to indicate the authenticated user.</li>
-<li><code>id</code> - The ID of the message to remove from Trash.</li>
+<li><code>userId</code> - User&#39;s email address. The special value &quot;me&quot; can be used to indicate the authenticated user.</li>
+<li><code>sendAsEmail</code> - The send-as alias to be retrieved.</li>
 </ul>
-</div><h4 id='method.messages_batch_delete' class='method'><code>fn <a href='#method.messages_batch_delete' class='fnname'>messages_batch_delete</a>(&amp;self, request: <a class='struct' href='../google_gmail1/struct.BatchDeleteMessagesRequest.html' title='google_gmail1::BatchDeleteMessagesRequest'>BatchDeleteMessagesRequest</a>, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gmail1/struct.UserMessageBatchDeleteCall.html' title='google_gmail1::UserMessageBatchDeleteCall'>UserMessageBatchDeleteCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.labels_delete' class='method'><code>fn <a href='#method.labels_delete' class='fnname'>labels_delete</a>(&amp;self, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gmail1/struct.UserLabelDeleteCall.html' title='google_gmail1::UserLabelDeleteCall'>UserLabelDeleteCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>Deletes many messages by message ID. Provides no guarantees that messages were not already deleted or even existed at all.</p>
+<p>Immediately and permanently deletes the specified label and removes it from any messages and threads that it is applied to.</p>
 
 <h1 id='arguments-10' class='section-header'><a href='#arguments-10'>Arguments</a></h1>
 <ul>
-<li><code>request</code> - No description provided.</li>
 <li><code>userId</code> - The user&#39;s email address. The special value me can be used to indicate the authenticated user.</li>
+<li><code>id</code> - The ID of the label to delete.</li>
 </ul>
-</div><h4 id='method.messages_delete' class='method'><code>fn <a href='#method.messages_delete' class='fnname'>messages_delete</a>(&amp;self, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gmail1/struct.UserMessageDeleteCall.html' title='google_gmail1::UserMessageDeleteCall'>UserMessageDeleteCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.labels_get' class='method'><code>fn <a href='#method.labels_get' class='fnname'>labels_get</a>(&amp;self, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gmail1/struct.UserLabelGetCall.html' title='google_gmail1::UserLabelGetCall'>UserLabelGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>Immediately and permanently deletes the specified message. This operation cannot be undone. Prefer messages.trash instead.</p>
+<p>Gets the specified label.</p>
 
 <h1 id='arguments-11' class='section-header'><a href='#arguments-11'>Arguments</a></h1>
 <ul>
 <li><code>userId</code> - The user&#39;s email address. The special value me can be used to indicate the authenticated user.</li>
+<li><code>id</code> - The ID of the label to retrieve.</li>
+</ul>
+</div><h4 id='method.labels_list' class='method'><code>fn <a href='#method.labels_list' class='fnname'>labels_list</a>(&amp;self, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gmail1/struct.UserLabelListCall.html' title='google_gmail1::UserLabelListCall'>UserLabelListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Lists all labels in the user&#39;s mailbox.</p>
+
+<h1 id='arguments-12' class='section-header'><a href='#arguments-12'>Arguments</a></h1>
+<ul>
+<li><code>userId</code> - The user&#39;s email address. The special value me can be used to indicate the authenticated user.</li>
+</ul>
+</div><h4 id='method.drafts_send' class='method'><code>fn <a href='#method.drafts_send' class='fnname'>drafts_send</a>(&amp;self, request: <a class='struct' href='../google_gmail1/struct.Draft.html' title='google_gmail1::Draft'>Draft</a>, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gmail1/struct.UserDraftSendCall.html' title='google_gmail1::UserDraftSendCall'>UserDraftSendCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Sends the specified, existing draft to the recipients in the To, Cc, and Bcc headers.</p>
+
+<h1 id='arguments-13' class='section-header'><a href='#arguments-13'>Arguments</a></h1>
+<ul>
+<li><code>request</code> - No description provided.</li>
+<li><code>userId</code> - The user&#39;s email address. The special value me can be used to indicate the authenticated user.</li>
+</ul>
+</div><h4 id='method.messages_untrash' class='method'><code>fn <a href='#method.messages_untrash' class='fnname'>messages_untrash</a>(&amp;self, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gmail1/struct.UserMessageUntrashCall.html' title='google_gmail1::UserMessageUntrashCall'>UserMessageUntrashCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Removes the specified message from the trash.</p>
+
+<h1 id='arguments-14' class='section-header'><a href='#arguments-14'>Arguments</a></h1>
+<ul>
+<li><code>userId</code> - The user&#39;s email address. The special value me can be used to indicate the authenticated user.</li>
+<li><code>id</code> - The ID of the message to remove from Trash.</li>
+</ul>
+</div><h4 id='method.settings_get_pop' class='method'><code>fn <a href='#method.settings_get_pop' class='fnname'>settings_get_pop</a>(&amp;self, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gmail1/struct.UserSettingGetPopCall.html' title='google_gmail1::UserSettingGetPopCall'>UserSettingGetPopCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Gets POP settings.</p>
+
+<h1 id='arguments-15' class='section-header'><a href='#arguments-15'>Arguments</a></h1>
+<ul>
+<li><code>userId</code> - User&#39;s email address. The special value &quot;me&quot; can be used to indicate the authenticated user.</li>
+</ul>
+</div><h4 id='method.settings_update_pop' class='method'><code>fn <a href='#method.settings_update_pop' class='fnname'>settings_update_pop</a>(&amp;self, request: <a class='struct' href='../google_gmail1/struct.PopSettings.html' title='google_gmail1::PopSettings'>PopSettings</a>, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gmail1/struct.UserSettingUpdatePopCall.html' title='google_gmail1::UserSettingUpdatePopCall'>UserSettingUpdatePopCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Updates POP settings.</p>
+
+<h1 id='arguments-16' class='section-header'><a href='#arguments-16'>Arguments</a></h1>
+<ul>
+<li><code>request</code> - No description provided.</li>
+<li><code>userId</code> - User&#39;s email address. The special value &quot;me&quot; can be used to indicate the authenticated user.</li>
+</ul>
+</div><h4 id='method.settings_get_vacation' class='method'><code>fn <a href='#method.settings_get_vacation' class='fnname'>settings_get_vacation</a>(&amp;self, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gmail1/struct.UserSettingGetVacationCall.html' title='google_gmail1::UserSettingGetVacationCall'>UserSettingGetVacationCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Gets vacation responder settings.</p>
+
+<h1 id='arguments-17' class='section-header'><a href='#arguments-17'>Arguments</a></h1>
+<ul>
+<li><code>userId</code> - User&#39;s email address. The special value &quot;me&quot; can be used to indicate the authenticated user.</li>
+</ul>
+</div><h4 id='method.messages_batch_delete' class='method'><code>fn <a href='#method.messages_batch_delete' class='fnname'>messages_batch_delete</a>(&amp;self, request: <a class='struct' href='../google_gmail1/struct.BatchDeleteMessagesRequest.html' title='google_gmail1::BatchDeleteMessagesRequest'>BatchDeleteMessagesRequest</a>, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gmail1/struct.UserMessageBatchDeleteCall.html' title='google_gmail1::UserMessageBatchDeleteCall'>UserMessageBatchDeleteCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Deletes many messages by message ID. Provides no guarantees that messages were not already deleted or even existed at all.</p>
+
+<h1 id='arguments-18' class='section-header'><a href='#arguments-18'>Arguments</a></h1>
+<ul>
+<li><code>request</code> - No description provided.</li>
+<li><code>userId</code> - The user&#39;s email address. The special value me can be used to indicate the authenticated user.</li>
+</ul>
+</div><h4 id='method.messages_delete' class='method'><code>fn <a href='#method.messages_delete' class='fnname'>messages_delete</a>(&amp;self, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gmail1/struct.UserMessageDeleteCall.html' title='google_gmail1::UserMessageDeleteCall'>UserMessageDeleteCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Immediately and permanently deletes the specified message. This operation cannot be undone. Prefer messages.trash instead.</p>
+
+<h1 id='arguments-19' class='section-header'><a href='#arguments-19'>Arguments</a></h1>
+<ul>
+<li><code>userId</code> - The user&#39;s email address. The special value me can be used to indicate the authenticated user.</li>
 <li><code>id</code> - The ID of the message to delete.</li>
 </ul>
-</div><h4 id='method.drafts_update' class='method'><code>fn <a href='#method.drafts_update' class='fnname'>drafts_update</a>(&amp;self, request: <a class='struct' href='../google_gmail1/struct.Draft.html' title='google_gmail1::Draft'>Draft</a>, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gmail1/struct.UserDraftUpdateCall.html' title='google_gmail1::UserDraftUpdateCall'>UserDraftUpdateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.drafts_get' class='method'><code>fn <a href='#method.drafts_get' class='fnname'>drafts_get</a>(&amp;self, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gmail1/struct.UserDraftGetCall.html' title='google_gmail1::UserDraftGetCall'>UserDraftGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Gets the specified draft.</p>
+
+<h1 id='arguments-20' class='section-header'><a href='#arguments-20'>Arguments</a></h1>
+<ul>
+<li><code>userId</code> - The user&#39;s email address. The special value me can be used to indicate the authenticated user.</li>
+<li><code>id</code> - The ID of the draft to retrieve.</li>
+</ul>
+</div><h4 id='method.drafts_update' class='method'><code>fn <a href='#method.drafts_update' class='fnname'>drafts_update</a>(&amp;self, request: <a class='struct' href='../google_gmail1/struct.Draft.html' title='google_gmail1::Draft'>Draft</a>, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gmail1/struct.UserDraftUpdateCall.html' title='google_gmail1::UserDraftUpdateCall'>UserDraftUpdateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Replaces a draft&#39;s content.</p>
 
-<h1 id='arguments-12' class='section-header'><a href='#arguments-12'>Arguments</a></h1>
+<h1 id='arguments-21' class='section-header'><a href='#arguments-21'>Arguments</a></h1>
 <ul>
 <li><code>request</code> - No description provided.</li>
 <li><code>userId</code> - The user&#39;s email address. The special value me can be used to indicate the authenticated user.</li>
 <li><code>id</code> - The ID of the draft to update.</li>
 </ul>
-</div><h4 id='method.drafts_get' class='method'><code>fn <a href='#method.drafts_get' class='fnname'>drafts_get</a>(&amp;self, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gmail1/struct.UserDraftGetCall.html' title='google_gmail1::UserDraftGetCall'>UserDraftGetCall</a>&lt;'a, C, A&gt;</code></h4>
-<div class='docblock'><p>Create a builder to help you perform the following task:</p>
-
-<p>Gets the specified draft.</p>
-
-<h1 id='arguments-13' class='section-header'><a href='#arguments-13'>Arguments</a></h1>
-<ul>
-<li><code>userId</code> - The user&#39;s email address. The special value me can be used to indicate the authenticated user.</li>
-<li><code>id</code> - The ID of the draft to retrieve.</li>
-</ul>
-</div><h4 id='method.labels_update' class='method'><code>fn <a href='#method.labels_update' class='fnname'>labels_update</a>(&amp;self, request: <a class='struct' href='../google_gmail1/struct.Label.html' title='google_gmail1::Label'>Label</a>, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gmail1/struct.UserLabelUpdateCall.html' title='google_gmail1::UserLabelUpdateCall'>UserLabelUpdateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.labels_update' class='method'><code>fn <a href='#method.labels_update' class='fnname'>labels_update</a>(&amp;self, request: <a class='struct' href='../google_gmail1/struct.Label.html' title='google_gmail1::Label'>Label</a>, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gmail1/struct.UserLabelUpdateCall.html' title='google_gmail1::UserLabelUpdateCall'>UserLabelUpdateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Updates the specified label.</p>
 
-<h1 id='arguments-14' class='section-header'><a href='#arguments-14'>Arguments</a></h1>
+<h1 id='arguments-22' class='section-header'><a href='#arguments-22'>Arguments</a></h1>
 <ul>
 <li><code>request</code> - No description provided.</li>
 <li><code>userId</code> - The user&#39;s email address. The special value me can be used to indicate the authenticated user.</li>
 <li><code>id</code> - The ID of the label to update.</li>
 </ul>
-</div><h4 id='method.messages_modify' class='method'><code>fn <a href='#method.messages_modify' class='fnname'>messages_modify</a>(&amp;self, request: <a class='struct' href='../google_gmail1/struct.ModifyMessageRequest.html' title='google_gmail1::ModifyMessageRequest'>ModifyMessageRequest</a>, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gmail1/struct.UserMessageModifyCall.html' title='google_gmail1::UserMessageModifyCall'>UserMessageModifyCall</a>&lt;'a, C, A&gt;</code></h4>
-<div class='docblock'><p>Create a builder to help you perform the following task:</p>
-
-<p>Modifies the labels on the specified message.</p>
-
-<h1 id='arguments-15' class='section-header'><a href='#arguments-15'>Arguments</a></h1>
-<ul>
-<li><code>request</code> - No description provided.</li>
-<li><code>userId</code> - The user&#39;s email address. The special value me can be used to indicate the authenticated user.</li>
-<li><code>id</code> - The ID of the message to modify.</li>
-</ul>
-</div><h4 id='method.labels_patch' class='method'><code>fn <a href='#method.labels_patch' class='fnname'>labels_patch</a>(&amp;self, request: <a class='struct' href='../google_gmail1/struct.Label.html' title='google_gmail1::Label'>Label</a>, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gmail1/struct.UserLabelPatchCall.html' title='google_gmail1::UserLabelPatchCall'>UserLabelPatchCall</a>&lt;'a, C, A&gt;</code></h4>
-<div class='docblock'><p>Create a builder to help you perform the following task:</p>
-
-<p>Updates the specified label. This method supports patch semantics.</p>
-
-<h1 id='arguments-16' class='section-header'><a href='#arguments-16'>Arguments</a></h1>
-<ul>
-<li><code>request</code> - No description provided.</li>
-<li><code>userId</code> - The user&#39;s email address. The special value me can be used to indicate the authenticated user.</li>
-<li><code>id</code> - The ID of the label to update.</li>
-</ul>
-</div><h4 id='method.drafts_delete' class='method'><code>fn <a href='#method.drafts_delete' class='fnname'>drafts_delete</a>(&amp;self, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gmail1/struct.UserDraftDeleteCall.html' title='google_gmail1::UserDraftDeleteCall'>UserDraftDeleteCall</a>&lt;'a, C, A&gt;</code></h4>
-<div class='docblock'><p>Create a builder to help you perform the following task:</p>
-
-<p>Immediately and permanently deletes the specified draft. Does not simply trash it.</p>
-
-<h1 id='arguments-17' class='section-header'><a href='#arguments-17'>Arguments</a></h1>
-<ul>
-<li><code>userId</code> - The user&#39;s email address. The special value me can be used to indicate the authenticated user.</li>
-<li><code>id</code> - The ID of the draft to delete.</li>
-</ul>
-</div><h4 id='method.threads_list' class='method'><code>fn <a href='#method.threads_list' class='fnname'>threads_list</a>(&amp;self, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gmail1/struct.UserThreadListCall.html' title='google_gmail1::UserThreadListCall'>UserThreadListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.threads_list' class='method'><code>fn <a href='#method.threads_list' class='fnname'>threads_list</a>(&amp;self, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gmail1/struct.UserThreadListCall.html' title='google_gmail1::UserThreadListCall'>UserThreadListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Lists the threads in the user&#39;s mailbox.</p>
 
-<h1 id='arguments-18' class='section-header'><a href='#arguments-18'>Arguments</a></h1>
-<ul>
-<li><code>userId</code> - The user&#39;s email address. The special value me can be used to indicate the authenticated user.</li>
-</ul>
-</div><h4 id='method.threads_modify' class='method'><code>fn <a href='#method.threads_modify' class='fnname'>threads_modify</a>(&amp;self, request: <a class='struct' href='../google_gmail1/struct.ModifyThreadRequest.html' title='google_gmail1::ModifyThreadRequest'>ModifyThreadRequest</a>, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gmail1/struct.UserThreadModifyCall.html' title='google_gmail1::UserThreadModifyCall'>UserThreadModifyCall</a>&lt;'a, C, A&gt;</code></h4>
-<div class='docblock'><p>Create a builder to help you perform the following task:</p>
-
-<p>Modifies the labels applied to the thread. This applies to all messages in the thread.</p>
-
-<h1 id='arguments-19' class='section-header'><a href='#arguments-19'>Arguments</a></h1>
-<ul>
-<li><code>request</code> - No description provided.</li>
-<li><code>userId</code> - The user&#39;s email address. The special value me can be used to indicate the authenticated user.</li>
-<li><code>id</code> - The ID of the thread to modify.</li>
-</ul>
-</div><h4 id='method.threads_delete' class='method'><code>fn <a href='#method.threads_delete' class='fnname'>threads_delete</a>(&amp;self, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gmail1/struct.UserThreadDeleteCall.html' title='google_gmail1::UserThreadDeleteCall'>UserThreadDeleteCall</a>&lt;'a, C, A&gt;</code></h4>
-<div class='docblock'><p>Create a builder to help you perform the following task:</p>
-
-<p>Immediately and permanently deletes the specified thread. This operation cannot be undone. Prefer threads.trash instead.</p>
-
-<h1 id='arguments-20' class='section-header'><a href='#arguments-20'>Arguments</a></h1>
-<ul>
-<li><code>userId</code> - The user&#39;s email address. The special value me can be used to indicate the authenticated user.</li>
-<li><code>id</code> - ID of the Thread to delete.</li>
-</ul>
-</div><h4 id='method.messages_attachments_get' class='method'><code>fn <a href='#method.messages_attachments_get' class='fnname'>messages_attachments_get</a>(&amp;self, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, message_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gmail1/struct.UserMessageAttachmentGetCall.html' title='google_gmail1::UserMessageAttachmentGetCall'>UserMessageAttachmentGetCall</a>&lt;'a, C, A&gt;</code></h4>
-<div class='docblock'><p>Create a builder to help you perform the following task:</p>
-
-<p>Gets the specified message attachment.</p>
-
-<h1 id='arguments-21' class='section-header'><a href='#arguments-21'>Arguments</a></h1>
-<ul>
-<li><code>userId</code> - The user&#39;s email address. The special value me can be used to indicate the authenticated user.</li>
-<li><code>messageId</code> - The ID of the message containing the attachment.</li>
-<li><code>id</code> - The ID of the attachment.</li>
-</ul>
-</div><h4 id='method.threads_trash' class='method'><code>fn <a href='#method.threads_trash' class='fnname'>threads_trash</a>(&amp;self, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gmail1/struct.UserThreadTrashCall.html' title='google_gmail1::UserThreadTrashCall'>UserThreadTrashCall</a>&lt;'a, C, A&gt;</code></h4>
-<div class='docblock'><p>Create a builder to help you perform the following task:</p>
-
-<p>Moves the specified thread to the trash.</p>
-
-<h1 id='arguments-22' class='section-header'><a href='#arguments-22'>Arguments</a></h1>
-<ul>
-<li><code>userId</code> - The user&#39;s email address. The special value me can be used to indicate the authenticated user.</li>
-<li><code>id</code> - The ID of the thread to Trash.</li>
-</ul>
-</div><h4 id='method.watch' class='method'><code>fn <a href='#method.watch' class='fnname'>watch</a>(&amp;self, request: <a class='struct' href='../google_gmail1/struct.WatchRequest.html' title='google_gmail1::WatchRequest'>WatchRequest</a>, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gmail1/struct.UserWatchCall.html' title='google_gmail1::UserWatchCall'>UserWatchCall</a>&lt;'a, C, A&gt;</code></h4>
-<div class='docblock'><p>Create a builder to help you perform the following task:</p>
-
-<p>Set up or update a push notification watch on the given user mailbox.</p>
-
 <h1 id='arguments-23' class='section-header'><a href='#arguments-23'>Arguments</a></h1>
 <ul>
-<li><code>request</code> - No description provided.</li>
 <li><code>userId</code> - The user&#39;s email address. The special value me can be used to indicate the authenticated user.</li>
 </ul>
-</div><h4 id='method.drafts_list' class='method'><code>fn <a href='#method.drafts_list' class='fnname'>drafts_list</a>(&amp;self, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gmail1/struct.UserDraftListCall.html' title='google_gmail1::UserDraftListCall'>UserDraftListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.settings_filters_get' class='method'><code>fn <a href='#method.settings_filters_get' class='fnname'>settings_filters_get</a>(&amp;self, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gmail1/struct.UserSettingFilterGetCall.html' title='google_gmail1::UserSettingFilterGetCall'>UserSettingFilterGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>Lists the drafts in the user&#39;s mailbox.</p>
+<p>Gets a filter.</p>
 
 <h1 id='arguments-24' class='section-header'><a href='#arguments-24'>Arguments</a></h1>
 <ul>
-<li><code>userId</code> - The user&#39;s email address. The special value me can be used to indicate the authenticated user.</li>
+<li><code>userId</code> - User&#39;s email address. The special value &quot;me&quot; can be used to indicate the authenticated user.</li>
+<li><code>id</code> - The ID of the filter to be fetched.</li>
 </ul>
-</div><h4 id='method.messages_send' class='method'><code>fn <a href='#method.messages_send' class='fnname'>messages_send</a>(&amp;self, request: <a class='struct' href='../google_gmail1/struct.Message.html' title='google_gmail1::Message'>Message</a>, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gmail1/struct.UserMessageSendCall.html' title='google_gmail1::UserMessageSendCall'>UserMessageSendCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.labels_patch' class='method'><code>fn <a href='#method.labels_patch' class='fnname'>labels_patch</a>(&amp;self, request: <a class='struct' href='../google_gmail1/struct.Label.html' title='google_gmail1::Label'>Label</a>, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gmail1/struct.UserLabelPatchCall.html' title='google_gmail1::UserLabelPatchCall'>UserLabelPatchCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>Sends the specified message to the recipients in the To, Cc, and Bcc headers.</p>
+<p>Updates the specified label. This method supports patch semantics.</p>
 
 <h1 id='arguments-25' class='section-header'><a href='#arguments-25'>Arguments</a></h1>
 <ul>
 <li><code>request</code> - No description provided.</li>
 <li><code>userId</code> - The user&#39;s email address. The special value me can be used to indicate the authenticated user.</li>
+<li><code>id</code> - The ID of the label to update.</li>
 </ul>
-</div><h4 id='method.messages_get' class='method'><code>fn <a href='#method.messages_get' class='fnname'>messages_get</a>(&amp;self, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gmail1/struct.UserMessageGetCall.html' title='google_gmail1::UserMessageGetCall'>UserMessageGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.drafts_delete' class='method'><code>fn <a href='#method.drafts_delete' class='fnname'>drafts_delete</a>(&amp;self, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gmail1/struct.UserDraftDeleteCall.html' title='google_gmail1::UserDraftDeleteCall'>UserDraftDeleteCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>Gets the specified message.</p>
+<p>Immediately and permanently deletes the specified draft. Does not simply trash it.</p>
 
 <h1 id='arguments-26' class='section-header'><a href='#arguments-26'>Arguments</a></h1>
 <ul>
 <li><code>userId</code> - The user&#39;s email address. The special value me can be used to indicate the authenticated user.</li>
-<li><code>id</code> - The ID of the message to retrieve.</li>
+<li><code>id</code> - The ID of the draft to delete.</li>
 </ul>
-</div><h4 id='method.messages_list' class='method'><code>fn <a href='#method.messages_list' class='fnname'>messages_list</a>(&amp;self, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gmail1/struct.UserMessageListCall.html' title='google_gmail1::UserMessageListCall'>UserMessageListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.settings_send_as_create' class='method'><code>fn <a href='#method.settings_send_as_create' class='fnname'>settings_send_as_create</a>(&amp;self, request: <a class='struct' href='../google_gmail1/struct.SendAs.html' title='google_gmail1::SendAs'>SendAs</a>, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gmail1/struct.UserSettingSendACreateCall.html' title='google_gmail1::UserSettingSendACreateCall'>UserSettingSendACreateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>Lists the messages in the user&#39;s mailbox.</p>
+<p>Creates a custom &quot;from&quot; send-as alias. If an SMTP MSA is specified, Gmail will attempt to connect to the SMTP service to validate the configuration before creating the alias. If ownership verification is required for the alias, a message will be sent to the email address and the resource&#39;s verification status will be set to pending; otherwise, the resource will be created with verification status set to accepted. If a signature is provided, Gmail will sanitize the HTML before saving it with the alias.</p>
 
 <h1 id='arguments-27' class='section-header'><a href='#arguments-27'>Arguments</a></h1>
 <ul>
-<li><code>userId</code> - The user&#39;s email address. The special value me can be used to indicate the authenticated user.</li>
+<li><code>request</code> - No description provided.</li>
+<li><code>userId</code> - User&#39;s email address. The special value &quot;me&quot; can be used to indicate the authenticated user.</li>
 </ul>
-</div><h4 id='method.threads_untrash' class='method'><code>fn <a href='#method.threads_untrash' class='fnname'>threads_untrash</a>(&amp;self, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gmail1/struct.UserThreadUntrashCall.html' title='google_gmail1::UserThreadUntrashCall'>UserThreadUntrashCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.settings_update_auto_forwarding' class='method'><code>fn <a href='#method.settings_update_auto_forwarding' class='fnname'>settings_update_auto_forwarding</a>(&amp;self, request: <a class='struct' href='../google_gmail1/struct.AutoForwarding.html' title='google_gmail1::AutoForwarding'>AutoForwarding</a>, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gmail1/struct.UserSettingUpdateAutoForwardingCall.html' title='google_gmail1::UserSettingUpdateAutoForwardingCall'>UserSettingUpdateAutoForwardingCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Updates the auto-forwarding setting for the specified account. A verified forwarding address must be specified when auto-forwarding is enabled.</p>
+
+<h1 id='arguments-28' class='section-header'><a href='#arguments-28'>Arguments</a></h1>
+<ul>
+<li><code>request</code> - No description provided.</li>
+<li><code>userId</code> - User&#39;s email address. The special value &quot;me&quot; can be used to indicate the authenticated user.</li>
+</ul>
+</div><h4 id='method.threads_untrash' class='method'><code>fn <a href='#method.threads_untrash' class='fnname'>threads_untrash</a>(&amp;self, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gmail1/struct.UserThreadUntrashCall.html' title='google_gmail1::UserThreadUntrashCall'>UserThreadUntrashCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Removes the specified thread from the trash.</p>
 
-<h1 id='arguments-28' class='section-header'><a href='#arguments-28'>Arguments</a></h1>
+<h1 id='arguments-29' class='section-header'><a href='#arguments-29'>Arguments</a></h1>
 <ul>
 <li><code>userId</code> - The user&#39;s email address. The special value me can be used to indicate the authenticated user.</li>
 <li><code>id</code> - The ID of the thread to remove from Trash.</li>
 </ul>
-</div><h4 id='method.get_profile' class='method'><code>fn <a href='#method.get_profile' class='fnname'>get_profile</a>(&amp;self, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gmail1/struct.UserGetProfileCall.html' title='google_gmail1::UserGetProfileCall'>UserGetProfileCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.settings_send_as_patch' class='method'><code>fn <a href='#method.settings_send_as_patch' class='fnname'>settings_send_as_patch</a>(&amp;self, request: <a class='struct' href='../google_gmail1/struct.SendAs.html' title='google_gmail1::SendAs'>SendAs</a>, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, send_as_email: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gmail1/struct.UserSettingSendAPatchCall.html' title='google_gmail1::UserSettingSendAPatchCall'>UserSettingSendAPatchCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>Gets the current user&#39;s Gmail profile.</p>
-
-<h1 id='arguments-29' class='section-header'><a href='#arguments-29'>Arguments</a></h1>
-<ul>
-<li><code>userId</code> - The user&#39;s email address. The special value me can be used to indicate the authenticated user.</li>
-</ul>
-</div><h4 id='method.threads_get' class='method'><code>fn <a href='#method.threads_get' class='fnname'>threads_get</a>(&amp;self, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gmail1/struct.UserThreadGetCall.html' title='google_gmail1::UserThreadGetCall'>UserThreadGetCall</a>&lt;'a, C, A&gt;</code></h4>
-<div class='docblock'><p>Create a builder to help you perform the following task:</p>
-
-<p>Gets the specified thread.</p>
+<p>Updates a send-as alias. If a signature is provided, Gmail will sanitize the HTML before saving it with the alias. This method supports patch semantics.</p>
 
 <h1 id='arguments-30' class='section-header'><a href='#arguments-30'>Arguments</a></h1>
 <ul>
-<li><code>userId</code> - The user&#39;s email address. The special value me can be used to indicate the authenticated user.</li>
-<li><code>id</code> - The ID of the thread to retrieve.</li>
+<li><code>request</code> - No description provided.</li>
+<li><code>userId</code> - User&#39;s email address. The special value &quot;me&quot; can be used to indicate the authenticated user.</li>
+<li><code>sendAsEmail</code> - The send-as alias to be updated.</li>
 </ul>
-</div><h4 id='method.messages_insert' class='method'><code>fn <a href='#method.messages_insert' class='fnname'>messages_insert</a>(&amp;self, request: <a class='struct' href='../google_gmail1/struct.Message.html' title='google_gmail1::Message'>Message</a>, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gmail1/struct.UserMessageInsertCall.html' title='google_gmail1::UserMessageInsertCall'>UserMessageInsertCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.threads_modify' class='method'><code>fn <a href='#method.threads_modify' class='fnname'>threads_modify</a>(&amp;self, request: <a class='struct' href='../google_gmail1/struct.ModifyThreadRequest.html' title='google_gmail1::ModifyThreadRequest'>ModifyThreadRequest</a>, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gmail1/struct.UserThreadModifyCall.html' title='google_gmail1::UserThreadModifyCall'>UserThreadModifyCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>Directly inserts a message into only this user&#39;s mailbox similar to IMAP APPEND, bypassing most scanning and classification. Does not send a message.</p>
+<p>Modifies the labels applied to the thread. This applies to all messages in the thread.</p>
 
 <h1 id='arguments-31' class='section-header'><a href='#arguments-31'>Arguments</a></h1>
 <ul>
 <li><code>request</code> - No description provided.</li>
 <li><code>userId</code> - The user&#39;s email address. The special value me can be used to indicate the authenticated user.</li>
+<li><code>id</code> - The ID of the thread to modify.</li>
 </ul>
-</div><h4 id='method.labels_list' class='method'><code>fn <a href='#method.labels_list' class='fnname'>labels_list</a>(&amp;self, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gmail1/struct.UserLabelListCall.html' title='google_gmail1::UserLabelListCall'>UserLabelListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.threads_delete' class='method'><code>fn <a href='#method.threads_delete' class='fnname'>threads_delete</a>(&amp;self, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gmail1/struct.UserThreadDeleteCall.html' title='google_gmail1::UserThreadDeleteCall'>UserThreadDeleteCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
-<p>Lists all labels in the user&#39;s mailbox.</p>
+<p>Immediately and permanently deletes the specified thread. This operation cannot be undone. Prefer threads.trash instead.</p>
 
 <h1 id='arguments-32' class='section-header'><a href='#arguments-32'>Arguments</a></h1>
 <ul>
 <li><code>userId</code> - The user&#39;s email address. The special value me can be used to indicate the authenticated user.</li>
+<li><code>id</code> - ID of the Thread to delete.</li>
 </ul>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_gmail1/trait.MethodsBuilder.html' title='google_gmail1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_gmail1/struct.UserMethods.html' title='google_gmail1::UserMethods'>UserMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-4621' class='srclink' href='../src/google_gmail1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-gmail1-066479ae8213c841/out/lib.rs.html#9875' title='goto source code'>[src]</a></span></h3>
+</div><h4 id='method.settings_forwarding_addresses_list' class='method'><code>fn <a href='#method.settings_forwarding_addresses_list' class='fnname'>settings_forwarding_addresses_list</a>(&amp;self, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gmail1/struct.UserSettingForwardingAddresseListCall.html' title='google_gmail1::UserSettingForwardingAddresseListCall'>UserSettingForwardingAddresseListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Lists the forwarding addresses for the specified account.</p>
+
+<h1 id='arguments-33' class='section-header'><a href='#arguments-33'>Arguments</a></h1>
+<ul>
+<li><code>userId</code> - User&#39;s email address. The special value &quot;me&quot; can be used to indicate the authenticated user.</li>
+</ul>
+</div><h4 id='method.messages_attachments_get' class='method'><code>fn <a href='#method.messages_attachments_get' class='fnname'>messages_attachments_get</a>(&amp;self, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, message_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gmail1/struct.UserMessageAttachmentGetCall.html' title='google_gmail1::UserMessageAttachmentGetCall'>UserMessageAttachmentGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Gets the specified message attachment.</p>
+
+<h1 id='arguments-34' class='section-header'><a href='#arguments-34'>Arguments</a></h1>
+<ul>
+<li><code>userId</code> - The user&#39;s email address. The special value me can be used to indicate the authenticated user.</li>
+<li><code>messageId</code> - The ID of the message containing the attachment.</li>
+<li><code>id</code> - The ID of the attachment.</li>
+</ul>
+</div><h4 id='method.messages_modify' class='method'><code>fn <a href='#method.messages_modify' class='fnname'>messages_modify</a>(&amp;self, request: <a class='struct' href='../google_gmail1/struct.ModifyMessageRequest.html' title='google_gmail1::ModifyMessageRequest'>ModifyMessageRequest</a>, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gmail1/struct.UserMessageModifyCall.html' title='google_gmail1::UserMessageModifyCall'>UserMessageModifyCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Modifies the labels on the specified message.</p>
+
+<h1 id='arguments-35' class='section-header'><a href='#arguments-35'>Arguments</a></h1>
+<ul>
+<li><code>request</code> - No description provided.</li>
+<li><code>userId</code> - The user&#39;s email address. The special value me can be used to indicate the authenticated user.</li>
+<li><code>id</code> - The ID of the message to modify.</li>
+</ul>
+</div><h4 id='method.messages_get' class='method'><code>fn <a href='#method.messages_get' class='fnname'>messages_get</a>(&amp;self, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gmail1/struct.UserMessageGetCall.html' title='google_gmail1::UserMessageGetCall'>UserMessageGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Gets the specified message.</p>
+
+<h1 id='arguments-36' class='section-header'><a href='#arguments-36'>Arguments</a></h1>
+<ul>
+<li><code>userId</code> - The user&#39;s email address. The special value me can be used to indicate the authenticated user.</li>
+<li><code>id</code> - The ID of the message to retrieve.</li>
+</ul>
+</div><h4 id='method.watch' class='method'><code>fn <a href='#method.watch' class='fnname'>watch</a>(&amp;self, request: <a class='struct' href='../google_gmail1/struct.WatchRequest.html' title='google_gmail1::WatchRequest'>WatchRequest</a>, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gmail1/struct.UserWatchCall.html' title='google_gmail1::UserWatchCall'>UserWatchCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Set up or update a push notification watch on the given user mailbox.</p>
+
+<h1 id='arguments-37' class='section-header'><a href='#arguments-37'>Arguments</a></h1>
+<ul>
+<li><code>request</code> - No description provided.</li>
+<li><code>userId</code> - The user&#39;s email address. The special value me can be used to indicate the authenticated user.</li>
+</ul>
+</div><h4 id='method.settings_filters_delete' class='method'><code>fn <a href='#method.settings_filters_delete' class='fnname'>settings_filters_delete</a>(&amp;self, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gmail1/struct.UserSettingFilterDeleteCall.html' title='google_gmail1::UserSettingFilterDeleteCall'>UserSettingFilterDeleteCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Deletes a filter.</p>
+
+<h1 id='arguments-38' class='section-header'><a href='#arguments-38'>Arguments</a></h1>
+<ul>
+<li><code>userId</code> - User&#39;s email address. The special value &quot;me&quot; can be used to indicate the authenticated user.</li>
+<li><code>id</code> - The ID of the filter to be deleted.</li>
+</ul>
+</div><h4 id='method.drafts_list' class='method'><code>fn <a href='#method.drafts_list' class='fnname'>drafts_list</a>(&amp;self, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gmail1/struct.UserDraftListCall.html' title='google_gmail1::UserDraftListCall'>UserDraftListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Lists the drafts in the user&#39;s mailbox.</p>
+
+<h1 id='arguments-39' class='section-header'><a href='#arguments-39'>Arguments</a></h1>
+<ul>
+<li><code>userId</code> - The user&#39;s email address. The special value me can be used to indicate the authenticated user.</li>
+</ul>
+</div><h4 id='method.settings_update_imap' class='method'><code>fn <a href='#method.settings_update_imap' class='fnname'>settings_update_imap</a>(&amp;self, request: <a class='struct' href='../google_gmail1/struct.ImapSettings.html' title='google_gmail1::ImapSettings'>ImapSettings</a>, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gmail1/struct.UserSettingUpdateImapCall.html' title='google_gmail1::UserSettingUpdateImapCall'>UserSettingUpdateImapCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Updates IMAP settings.</p>
+
+<h1 id='arguments-40' class='section-header'><a href='#arguments-40'>Arguments</a></h1>
+<ul>
+<li><code>request</code> - No description provided.</li>
+<li><code>userId</code> - User&#39;s email address. The special value &quot;me&quot; can be used to indicate the authenticated user.</li>
+</ul>
+</div><h4 id='method.messages_send' class='method'><code>fn <a href='#method.messages_send' class='fnname'>messages_send</a>(&amp;self, request: <a class='struct' href='../google_gmail1/struct.Message.html' title='google_gmail1::Message'>Message</a>, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gmail1/struct.UserMessageSendCall.html' title='google_gmail1::UserMessageSendCall'>UserMessageSendCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Sends the specified message to the recipients in the To, Cc, and Bcc headers.</p>
+
+<h1 id='arguments-41' class='section-header'><a href='#arguments-41'>Arguments</a></h1>
+<ul>
+<li><code>request</code> - No description provided.</li>
+<li><code>userId</code> - The user&#39;s email address. The special value me can be used to indicate the authenticated user.</li>
+</ul>
+</div><h4 id='method.threads_trash' class='method'><code>fn <a href='#method.threads_trash' class='fnname'>threads_trash</a>(&amp;self, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gmail1/struct.UserThreadTrashCall.html' title='google_gmail1::UserThreadTrashCall'>UserThreadTrashCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Moves the specified thread to the trash.</p>
+
+<h1 id='arguments-42' class='section-header'><a href='#arguments-42'>Arguments</a></h1>
+<ul>
+<li><code>userId</code> - The user&#39;s email address. The special value me can be used to indicate the authenticated user.</li>
+<li><code>id</code> - The ID of the thread to Trash.</li>
+</ul>
+</div><h4 id='method.stop' class='method'><code>fn <a href='#method.stop' class='fnname'>stop</a>(&amp;self, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gmail1/struct.UserStopCall.html' title='google_gmail1::UserStopCall'>UserStopCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Stop receiving push notifications for the given user mailbox.</p>
+
+<h1 id='arguments-43' class='section-header'><a href='#arguments-43'>Arguments</a></h1>
+<ul>
+<li><code>userId</code> - The user&#39;s email address. The special value me can be used to indicate the authenticated user.</li>
+</ul>
+</div><h4 id='method.settings_forwarding_addresses_create' class='method'><code>fn <a href='#method.settings_forwarding_addresses_create' class='fnname'>settings_forwarding_addresses_create</a>(&amp;self, request: <a class='struct' href='../google_gmail1/struct.ForwardingAddress.html' title='google_gmail1::ForwardingAddress'>ForwardingAddress</a>, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gmail1/struct.UserSettingForwardingAddresseCreateCall.html' title='google_gmail1::UserSettingForwardingAddresseCreateCall'>UserSettingForwardingAddresseCreateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Creates a forwarding address. If ownership verification is required, a message will be sent to the recipient and the resource&#39;s verification status will be set to pending; otherwise, the resource will be created with verification status set to accepted.</p>
+
+<h1 id='arguments-44' class='section-header'><a href='#arguments-44'>Arguments</a></h1>
+<ul>
+<li><code>request</code> - No description provided.</li>
+<li><code>userId</code> - User&#39;s email address. The special value &quot;me&quot; can be used to indicate the authenticated user.</li>
+</ul>
+</div><h4 id='method.messages_list' class='method'><code>fn <a href='#method.messages_list' class='fnname'>messages_list</a>(&amp;self, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gmail1/struct.UserMessageListCall.html' title='google_gmail1::UserMessageListCall'>UserMessageListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Lists the messages in the user&#39;s mailbox.</p>
+
+<h1 id='arguments-45' class='section-header'><a href='#arguments-45'>Arguments</a></h1>
+<ul>
+<li><code>userId</code> - The user&#39;s email address. The special value me can be used to indicate the authenticated user.</li>
+</ul>
+</div><h4 id='method.settings_send_as_update' class='method'><code>fn <a href='#method.settings_send_as_update' class='fnname'>settings_send_as_update</a>(&amp;self, request: <a class='struct' href='../google_gmail1/struct.SendAs.html' title='google_gmail1::SendAs'>SendAs</a>, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, send_as_email: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gmail1/struct.UserSettingSendAUpdateCall.html' title='google_gmail1::UserSettingSendAUpdateCall'>UserSettingSendAUpdateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Updates a send-as alias. If a signature is provided, Gmail will sanitize the HTML before saving it with the alias.</p>
+
+<h1 id='arguments-46' class='section-header'><a href='#arguments-46'>Arguments</a></h1>
+<ul>
+<li><code>request</code> - No description provided.</li>
+<li><code>userId</code> - User&#39;s email address. The special value &quot;me&quot; can be used to indicate the authenticated user.</li>
+<li><code>sendAsEmail</code> - The send-as alias to be updated.</li>
+</ul>
+</div><h4 id='method.settings_filters_create' class='method'><code>fn <a href='#method.settings_filters_create' class='fnname'>settings_filters_create</a>(&amp;self, request: <a class='struct' href='../google_gmail1/struct.Filter.html' title='google_gmail1::Filter'>Filter</a>, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gmail1/struct.UserSettingFilterCreateCall.html' title='google_gmail1::UserSettingFilterCreateCall'>UserSettingFilterCreateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Creates a filter.</p>
+
+<h1 id='arguments-47' class='section-header'><a href='#arguments-47'>Arguments</a></h1>
+<ul>
+<li><code>request</code> - No description provided.</li>
+<li><code>userId</code> - User&#39;s email address. The special value &quot;me&quot; can be used to indicate the authenticated user.</li>
+</ul>
+</div><h4 id='method.messages_trash' class='method'><code>fn <a href='#method.messages_trash' class='fnname'>messages_trash</a>(&amp;self, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gmail1/struct.UserMessageTrashCall.html' title='google_gmail1::UserMessageTrashCall'>UserMessageTrashCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Moves the specified message to the trash.</p>
+
+<h1 id='arguments-48' class='section-header'><a href='#arguments-48'>Arguments</a></h1>
+<ul>
+<li><code>userId</code> - The user&#39;s email address. The special value me can be used to indicate the authenticated user.</li>
+<li><code>id</code> - The ID of the message to Trash.</li>
+</ul>
+</div><h4 id='method.get_profile' class='method'><code>fn <a href='#method.get_profile' class='fnname'>get_profile</a>(&amp;self, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gmail1/struct.UserGetProfileCall.html' title='google_gmail1::UserGetProfileCall'>UserGetProfileCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Gets the current user&#39;s Gmail profile.</p>
+
+<h1 id='arguments-49' class='section-header'><a href='#arguments-49'>Arguments</a></h1>
+<ul>
+<li><code>userId</code> - The user&#39;s email address. The special value me can be used to indicate the authenticated user.</li>
+</ul>
+</div><h4 id='method.threads_get' class='method'><code>fn <a href='#method.threads_get' class='fnname'>threads_get</a>(&amp;self, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gmail1/struct.UserThreadGetCall.html' title='google_gmail1::UserThreadGetCall'>UserThreadGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Gets the specified thread.</p>
+
+<h1 id='arguments-50' class='section-header'><a href='#arguments-50'>Arguments</a></h1>
+<ul>
+<li><code>userId</code> - The user&#39;s email address. The special value me can be used to indicate the authenticated user.</li>
+<li><code>id</code> - The ID of the thread to retrieve.</li>
+</ul>
+</div><h4 id='method.settings_send_as_verify' class='method'><code>fn <a href='#method.settings_send_as_verify' class='fnname'>settings_send_as_verify</a>(&amp;self, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, send_as_email: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gmail1/struct.UserSettingSendAVerifyCall.html' title='google_gmail1::UserSettingSendAVerifyCall'>UserSettingSendAVerifyCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Sends a verification email to the specified send-as alias address. The verification status must be pending.</p>
+
+<h1 id='arguments-51' class='section-header'><a href='#arguments-51'>Arguments</a></h1>
+<ul>
+<li><code>userId</code> - User&#39;s email address. The special value &quot;me&quot; can be used to indicate the authenticated user.</li>
+<li><code>sendAsEmail</code> - The send-as alias to be verified.</li>
+</ul>
+</div><h4 id='method.messages_insert' class='method'><code>fn <a href='#method.messages_insert' class='fnname'>messages_insert</a>(&amp;self, request: <a class='struct' href='../google_gmail1/struct.Message.html' title='google_gmail1::Message'>Message</a>, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gmail1/struct.UserMessageInsertCall.html' title='google_gmail1::UserMessageInsertCall'>UserMessageInsertCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Directly inserts a message into only this user&#39;s mailbox similar to IMAP APPEND, bypassing most scanning and classification. Does not send a message.</p>
+
+<h1 id='arguments-52' class='section-header'><a href='#arguments-52'>Arguments</a></h1>
+<ul>
+<li><code>request</code> - No description provided.</li>
+<li><code>userId</code> - The user&#39;s email address. The special value me can be used to indicate the authenticated user.</li>
+</ul>
+</div><h4 id='method.settings_get_auto_forwarding' class='method'><code>fn <a href='#method.settings_get_auto_forwarding' class='fnname'>settings_get_auto_forwarding</a>(&amp;self, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gmail1/struct.UserSettingGetAutoForwardingCall.html' title='google_gmail1::UserSettingGetAutoForwardingCall'>UserSettingGetAutoForwardingCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Gets the auto-forwarding setting for the specified account.</p>
+
+<h1 id='arguments-53' class='section-header'><a href='#arguments-53'>Arguments</a></h1>
+<ul>
+<li><code>userId</code> - User&#39;s email address. The special value &quot;me&quot; can be used to indicate the authenticated user.</li>
+</ul>
+</div><h4 id='method.settings_send_as_delete' class='method'><code>fn <a href='#method.settings_send_as_delete' class='fnname'>settings_send_as_delete</a>(&amp;self, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, send_as_email: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gmail1/struct.UserSettingSendADeleteCall.html' title='google_gmail1::UserSettingSendADeleteCall'>UserSettingSendADeleteCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Deletes the specified send-as alias. Revokes any verification that may have been required for using it.</p>
+
+<h1 id='arguments-54' class='section-header'><a href='#arguments-54'>Arguments</a></h1>
+<ul>
+<li><code>userId</code> - User&#39;s email address. The special value &quot;me&quot; can be used to indicate the authenticated user.</li>
+<li><code>sendAsEmail</code> - The send-as alias to be deleted.</li>
+</ul>
+</div><h4 id='method.settings_forwarding_addresses_delete' class='method'><code>fn <a href='#method.settings_forwarding_addresses_delete' class='fnname'>settings_forwarding_addresses_delete</a>(&amp;self, user_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, forwarding_email: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_gmail1/struct.UserSettingForwardingAddresseDeleteCall.html' title='google_gmail1::UserSettingForwardingAddresseDeleteCall'>UserSettingForwardingAddresseDeleteCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+<div class='docblock'><p>Create a builder to help you perform the following task:</p>
+
+<p>Deletes the specified forwarding address and revokes any verification that may have been required.</p>
+
+<h1 id='arguments-55' class='section-header'><a href='#arguments-55'>Arguments</a></h1>
+<ul>
+<li><code>userId</code> - User&#39;s email address. The special value &quot;me&quot; can be used to indicate the authenticated user.</li>
+<li><code>forwardingEmail</code> - The forwarding address to be deleted.</li>
+</ul>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='trait' href='../google_gmail1/trait.MethodsBuilder.html' title='google_gmail1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_gmail1/struct.UserMethods.html' title='google_gmail1::UserMethods'>UserMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-6241' class='srclink' href='../src/google_gmail1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-gmail1-f01d0d2b210f51a5/out/lib.rs.html#11700' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 

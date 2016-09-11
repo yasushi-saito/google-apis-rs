@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Register - proximitybeacon v0.3.6+20150729</title>
+  <title>Register - proximitybeacon v0.3.6+20160429</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -32,7 +32,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> proximitybeacon v0.3.6+20150729</a>
+        <a href=".." class="icon icon-home"> proximitybeacon v0.3.6+20160429</a>
         
       </div>
 
@@ -116,12 +116,18 @@
                     
                         <ul>
                         
+                            <li class="toctree-l3"><a href="#scopes">Scopes</a></li>
+                            
+                        
                             <li class="toctree-l3"><a href="#required-request-value">Required Request Value</a></li>
                             
                                 <li><a class="toctree-l4" href="#about-cursors">About Cursors</a></li>
                             
                         
                             <li class="toctree-l3"><a href="#optional-output-flags">Optional Output Flags</a></li>
+                            
+                        
+                            <li class="toctree-l3"><a href="#optional-method-properties">Optional Method Properties</a></li>
                             
                         
                             <li class="toctree-l3"><a href="#optional-general-properties">Optional General Properties</a></li>
@@ -140,10 +146,26 @@
 
     
         
+            <span>Methods</span>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../methods_get-eidparams/">Get Eidparams</a>
+                    
+                </li>
+            
+        
+
+    
+        
             <span>Namespaces</span>
             
                 <li class="toctree-l2 ">
                     <a class="" href="../namespaces_list/">List</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="../namespaces_update/">Update</a>
                     
                 </li>
             
@@ -161,7 +183,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">proximitybeacon v0.3.6+20150729</a>
+        <a href="..">proximitybeacon v0.3.6+20160429</a>
       </nav>
 
       
@@ -188,7 +210,11 @@
 </div>
           <div role="main">
             <div class="section">
-              <p>Registers a previously unregistered beacon given its <code>advertisedId</code>. These IDs are unique within the system. An ID can be registered only once.</p>
+              <p>Registers a previously unregistered beacon given its <code>advertisedId</code>. These IDs are unique within the system. An ID can be registered only once. Authenticate using an <a href="https://developers.google.com/identity/protocols/OAuth2">OAuth access token</a> from a signed-in user with <strong>Is owner</strong> or <strong>Can edit</strong> permissions in the Google Developers Console project.</p>
+<h1 id="scopes">Scopes</h1>
+<p>You will need authorization for the <em>https://www.googleapis.com/auth/userlocation.beacon.registry</em> scope to make a valid call.</p>
+<p>If unset, the scope for this method defaults to <em>https://www.googleapis.com/auth/userlocation.beacon.registry</em>.
+You can set the scope for this method like this: <code>proximitybeacon1-beta1 --scope &lt;scope&gt; beacons register ...</code></p>
 <h1 id="required-request-value">Required Request Value</h1>
 <p>The request value is a data-structure with various fields. Each field may be a simple scalar or another data-structure.
 In the latter case it is advised to set the field-cursor to the data-structure's field to specify values more concisely.</p>
@@ -199,6 +225,13 @@ In the latter case it is advised to set the field-cursor to the data-structure's
     type: string
   beacon-name: string
   description: string
+  ephemeral-id-registration:
+    beacon-ecdh-public-key: string
+    beacon-identity-key: string
+    initial-clock-value: string
+    initial-eid: string
+    rotation-period-exponent: integer
+    service-ecdh-public-key: string
   expected-stability: string
   indoor-level:
     name: string
@@ -207,6 +240,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
     longitude: number
   place-id: string
   properties: { string: string }
+  provisioning-key: string
   status: string
 
 </code></pre>
@@ -233,40 +267,72 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>Free text used to identify and describe the beacon. Maximum length 140 characters. Optional.</li>
 </ul>
 </li>
-<li><code>expected-stability=takimata</code><ul>
+<li><code>ephemeral-id-registration    beacon-ecdh-public-key=takimata</code><ul>
+<li>The beacon&#39;s public key used for the Elliptic curve Diffie-Hellman key exchange. When this field is populated, <code>service_ecdh_public_key</code> must also be populated, and <code>beacon_identity_key</code> must not be.</li>
+</ul>
+</li>
+<li><code>beacon-identity-key=justo</code><ul>
+<li>The private key of the beacon. If this field is populated, <code>beacon_ecdh_public_key</code> and <code>service_ecdh_public_key</code> must not be populated.</li>
+</ul>
+</li>
+<li><code>initial-clock-value=amet.</code><ul>
+<li>The initial clock value of the beacon. The beacon&#39;s clock must have begun counting at this value immediately prior to transmitting this value to the resolving service. Significant delay in transmitting this value to the service risks registration or resolution failures. If a value is not provided, the default is zero.</li>
+</ul>
+</li>
+<li><code>initial-eid=erat</code><ul>
+<li>An initial ephemeral ID calculated using the clock value submitted as <code>initial_clock_value</code>, and the secret key generated by the Diffie-Hellman key exchange using <code>service_ecdh_public_key</code> and <code>service_ecdh_public_key</code>. This initial EID value will be used by the service to confirm that the key exchange process was successful.</li>
+</ul>
+</li>
+<li><code>rotation-period-exponent=66</code><ul>
+<li>Indicates the nominal period between each rotation of the beacon&#39;s ephemeral ID. &#34;Nominal&#34; because the beacon should randomize the actual interval. See <a href="https://github.com/google/eddystone/tree/master/eddystone-eid">the spec at github</a> for details. This value corresponds to a power-of-two scaler on the beacon&#39;s clock: when the scaler value is K, the beacon will begin broadcasting a new ephemeral ID on average every 2^K seconds.</li>
+</ul>
+</li>
+<li>
+<p><code>service-ecdh-public-key=sea</code></p>
+<ul>
+<li>The service&#39;s public key used for the Elliptic curve Diffie-Hellman key exchange. When this field is populated, <code>beacon_ecdh_public_key</code> must also be populated, and <code>beacon_identity_key</code> must not be.</li>
+</ul>
+</li>
+<li>
+<p><code>..    expected-stability=nonumy</code></p>
+<ul>
 <li>Expected location stability. This is set when the beacon is registered or updated, not automatically detected in any way. Optional.</li>
 </ul>
 </li>
 <li>
-<p><code>indoor-level    name=justo</code></p>
+<p><code>indoor-level    name=dolores</code></p>
 <ul>
 <li>The name of this level.</li>
 </ul>
 </li>
 <li>
-<p><code>..lat-lng    latitude=0.992247072586</code></p>
+<p><code>..lat-lng    latitude=0.398739054055</code></p>
 <ul>
 <li>The latitude in degrees. It must be in the range [-90.0, +90.0].</li>
 </ul>
 </li>
 <li>
-<p><code>longitude=0.204946002078</code></p>
+<p><code>longitude=0.0653431304201</code></p>
 <ul>
 <li>The longitude in degrees. It must be in the range [-180.0, +180.0].</li>
 </ul>
 </li>
 <li>
-<p><code>..    place-id=labore</code></p>
+<p><code>..    place-id=aliquyam</code></p>
 <ul>
 <li>The <a href="../places/place-id">Google Places API</a> Place ID of the place where the beacon is deployed. This is given when the beacon is registered or updated, not automatically detected in any way. Optional.</li>
 </ul>
 </li>
-<li><code>properties=key=sea</code><ul>
+<li><code>properties=key=ea</code><ul>
 <li>Properties of the beacon device, for example battery type or firmware version. Optional.</li>
 <li>the value will be associated with the given <code>key</code></li>
 </ul>
 </li>
-<li><code>status=nonumy</code><ul>
+<li><code>provisioning-key=no</code><ul>
+<li>Some beacons may require a user to provide an authorization key before changing any of its configuration (e.g. broadcast frames, transmit power). This field provides a place to store and control access to that key. This field is populated in responses to <code>GET /v1beta1/beacons/3!beaconId</code> from users with write access to the given beacon. That is to say: If the user is authorized to write the beacon&#39;s confidential data in the service, the service considers them authorized to configure the beacon. Note that this key grants nothing on the service, only on the beacon itself.</li>
+</ul>
+</li>
+<li><code>status=justo</code><ul>
 <li>Current status of the beacon. Required.</li>
 </ul>
 </li>
@@ -287,6 +353,16 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   It will be a JSON-encoded structure.
   The <em>destination</em> may be <code>-</code> to indicate standard output, or a filepath that is to contain the received bytes.
   If unset, it defaults to standard output.</li>
+</ul>
+</li>
+</ul>
+<h1 id="optional-method-properties">Optional Method Properties</h1>
+<p>You may set the following properties to further configure the call. Please note that <code>-p</code> is followed by one 
+or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> even though the listing below repeats the
+<code>-p</code> for completeness.</p>
+<ul>
+<li><strong>-p project-id=string</strong><ul>
+<li>The project id of the project the beacon will be registered to. If the project id is not specified then the project making the request is used. Optional.</li>
 </ul>
 </li>
 </ul>
@@ -416,7 +492,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <!--
 MkDocs version  : 0.12.2
-Docs Build Date : 2016-07-23 16:04:42.730694
+Docs Build Date : 2016-09-11 17:53:24.492083
 -->
 </body>
 </html>

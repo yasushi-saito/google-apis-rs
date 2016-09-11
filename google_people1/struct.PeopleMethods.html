@@ -47,8 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-7360' class='srclink' href='../src/google_people1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-people1-cd64f4dc56ae3d0e/out/lib.rs.html#14925-14927' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct PeopleMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
+               </span><a id='src-6784' class='srclink' href='../src/google_people1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-people1-2d27569e0384c67a/out/lib.rs.html#11373-11375' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct PeopleMethods&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>people</em> resources.
 It is not used directly, but through the <code>People</code> hub.</p>
@@ -74,8 +74,8 @@ It is not used directly, but through the <code>People</code> hub.</p>
 <span class='comment'>// like `connections_list(...)`, `get(...)` and `get_batch_get(...)`</span>
 <span class='comment'>// to build up your call.</span>
 <span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>people</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_people1/struct.PeopleMethods.html' title='google_people1::PeopleMethods'>PeopleMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-7369' class='srclink' href='../src/google_people1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-people1-cd64f4dc56ae3d0e/out/lib.rs.html#14929-14977' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, resource_name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_people1/struct.PeopleGetCall.html' title='google_people1::PeopleGetCall'>PeopleGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='struct' href='../google_people1/struct.PeopleMethods.html' title='google_people1::PeopleMethods'>PeopleMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-6793' class='srclink' href='../src/google_people1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-people1-2d27569e0384c67a/out/lib.rs.html#11377-11425' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, resource_name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_people1/struct.PeopleGetCall.html' title='google_people1::PeopleGetCall'>PeopleGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Provides information about a person resource for a resource name. Use <code>people/me</code> to indicate the authenticated user.</p>
@@ -84,7 +84,7 @@ It is not used directly, but through the <code>People</code> hub.</p>
 <ul>
 <li><code>resourceName</code> - The resource name of the person to provide information about. - To get information about the authenticated user, specify <code>people/me</code>. - To get information about any user, specify the resource name that identifies the user, such as the resource names returned by <a href="/people/api/rest/v1/people.connections/list"><code>people.connections.list</code></a>.</li>
 </ul>
-</div><h4 id='method.connections_list' class='method'><code>fn <a href='#method.connections_list' class='fnname'>connections_list</a>(&amp;self, resource_name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_people1/struct.PeopleConnectionListCall.html' title='google_people1::PeopleConnectionListCall'>PeopleConnectionListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.connections_list' class='method'><code>fn <a href='#method.connections_list' class='fnname'>connections_list</a>(&amp;self, resource_name: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_people1/struct.PeopleConnectionListCall.html' title='google_people1::PeopleConnectionListCall'>PeopleConnectionListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Provides a list of the authenticated user&#39;s contacts merged with any linked profiles.</p>
@@ -93,11 +93,11 @@ It is not used directly, but through the <code>People</code> hub.</p>
 <ul>
 <li><code>resourceName</code> - The resource name to return connections for. Only <code>people/me</code> is valid.</li>
 </ul>
-</div><h4 id='method.get_batch_get' class='method'><code>fn <a href='#method.get_batch_get' class='fnname'>get_batch_get</a>(&amp;self) -&gt; <a class='struct' href='../google_people1/struct.PeopleGetBatchGetCall.html' title='google_people1::PeopleGetBatchGetCall'>PeopleGetBatchGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.get_batch_get' class='method'><code>fn <a href='#method.get_batch_get' class='fnname'>get_batch_get</a>(&amp;self) -&gt; <a class='struct' href='../google_people1/struct.PeopleGetBatchGetCall.html' title='google_people1::PeopleGetBatchGetCall'>PeopleGetBatchGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Provides information about a list of specific people by specifying a list of requested resource names. Use <code>people/me</code> to indicate the authenticated user.</p>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_people1/trait.MethodsBuilder.html' title='google_people1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_people1/struct.PeopleMethods.html' title='google_people1::PeopleMethods'>PeopleMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-7365' class='srclink' href='../src/google_people1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-people1-cd64f4dc56ae3d0e/out/lib.rs.html#14928' title='goto source code'>[src]</a></span></h3>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='trait' href='../google_people1/trait.MethodsBuilder.html' title='google_people1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_people1/struct.PeopleMethods.html' title='google_people1::PeopleMethods'>PeopleMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-6789' class='srclink' href='../src/google_people1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-people1-2d27569e0384c67a/out/lib.rs.html#11376' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 

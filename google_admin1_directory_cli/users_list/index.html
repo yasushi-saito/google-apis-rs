@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>List - directory v0.3.6+20160323</title>
+  <title>List - directory v0.3.6+20160824</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -32,7 +32,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> directory v0.3.6+20160323</a>
+        <a href=".." class="icon icon-home"> directory v0.3.6+20160824</a>
         
       </div>
 
@@ -663,7 +663,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">directory v0.3.6+20160323</a>
+        <a href="..">directory v0.3.6+20160824</a>
       </nav>
 
       
@@ -716,9 +716,33 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p show-deleted=string</strong></p>
+<p><strong>-p domain=string</strong></p>
 <ul>
-<li>If set to true retrieves the list of deleted users. Default is false</li>
+<li>Name of the domain. Fill this field to get users from only this domain. To return all users in a multi-domain fill customer field instead.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p projection=string</strong></p>
+<ul>
+<li>What subset of fields to fetch for this user.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p page-token=string</strong></p>
+<ul>
+<li>Token to specify next page in the list</li>
+</ul>
+</li>
+<li>
+<p><strong>-p custom-field-mask=string</strong></p>
+<ul>
+<li>Comma-separated list of schema names. All fields from these schemas are fetched. This should only be set when projection=custom.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p view-type=string</strong></p>
+<ul>
+<li>Whether to fetch the ADMIN_VIEW or DOMAIN_PUBLIC view of the user.</li>
 </ul>
 </li>
 <li>
@@ -734,39 +758,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p view-type=string</strong></p>
-<ul>
-<li>Whether to fetch the ADMIN_VIEW or DOMAIN_PUBLIC view of the user.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p page-token=string</strong></p>
-<ul>
-<li>Token to specify next page in the list</li>
-</ul>
-</li>
-<li>
 <p><strong>-p customer=string</strong></p>
 <ul>
 <li>Immutable id of the Google Apps account. In case of multi-domain, to fetch all users for a customer, fill this field instead of domain.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p projection=string</strong></p>
-<ul>
-<li>What subset of fields to fetch for this user.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p sort-order=string</strong></p>
-<ul>
-<li>Whether to return results in ascending or descending order.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p domain=string</strong></p>
-<ul>
-<li>Name of the domain. Fill this field to get users from only this domain. To return all users in a multi-domain fill customer field instead.</li>
 </ul>
 </li>
 <li>
@@ -776,9 +770,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p custom-field-mask=string</strong></p>
+<p><strong>-p sort-order=string</strong></p>
 <ul>
-<li>Comma-separated list of schema names. All fields from these schemas are fetched. This should only be set when projection=custom.</li>
+<li>Whether to return results in ascending or descending order.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p show-deleted=string</strong></p>
+<ul>
+<li>If set to true retrieves the list of deleted users. Default is false</li>
 </ul>
 </li>
 <li>
@@ -878,7 +878,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 
 <!--
 MkDocs version  : 0.12.2
-Docs Build Date : 2016-07-23 16:06:10.387639
+Docs Build Date : 2016-09-11 17:55:08.859819
 -->
 </body>
 </html>

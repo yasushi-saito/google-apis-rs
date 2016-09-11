@@ -47,8 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-11193' class='srclink' href='../src/google_drive2/home/byron/dev/rust/google-apis-rs/target/debug/build/google-drive2-b86413e23e0e6702/out/lib.rs.html#25236-25238' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct FileMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
+               </span><a id='src-10548' class='srclink' href='../src/google_drive2/home/byron/dev/rust/google-apis-rs/target/debug/build/google-drive2-1ea2b6be115cdf81/out/lib.rs.html#19534-19536' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct FileMethods&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>file</em> resources.
 It is not used directly, but through the <code>Drive</code> hub.</p>
@@ -74,8 +74,8 @@ It is not used directly, but through the <code>Drive</code> hub.</p>
 <span class='comment'>// like `copy(...)`, `delete(...)`, `empty_trash(...)`, `export(...)`, `generate_ids(...)`, `get(...)`, `insert(...)`, `list(...)`, `patch(...)`, `touch(...)`, `trash(...)`, `untrash(...)`, `update(...)` and `watch(...)`</span>
 <span class='comment'>// to build up your call.</span>
 <span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>files</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_drive2/struct.FileMethods.html' title='google_drive2::FileMethods'>FileMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-11202' class='srclink' href='../src/google_drive2/home/byron/dev/rust/google-apis-rs/target/debug/build/google-drive2-b86413e23e0e6702/out/lib.rs.html#25240-25495' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.watch' class='method'><code>fn <a href='#method.watch' class='fnname'>watch</a>(&amp;self, request: <a class='struct' href='../google_drive2/struct.Channel.html' title='google_drive2::Channel'>Channel</a>, file_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_drive2/struct.FileWatchCall.html' title='google_drive2::FileWatchCall'>FileWatchCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='struct' href='../google_drive2/struct.FileMethods.html' title='google_drive2::FileMethods'>FileMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-10557' class='srclink' href='../src/google_drive2/home/byron/dev/rust/google-apis-rs/target/debug/build/google-drive2-1ea2b6be115cdf81/out/lib.rs.html#19538-19793' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.watch' class='method'><code>fn <a href='#method.watch' class='fnname'>watch</a>(&amp;self, request: <a class='struct' href='../google_drive2/struct.Channel.html' title='google_drive2::Channel'>Channel</a>, file_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_drive2/struct.FileWatchCall.html' title='google_drive2::FileWatchCall'>FileWatchCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Subscribe to changes on a file</p>
@@ -85,7 +85,7 @@ It is not used directly, but through the <code>Drive</code> hub.</p>
 <li><code>request</code> - No description provided.</li>
 <li><code>fileId</code> - The ID for the file in question.</li>
 </ul>
-</div><h4 id='method.insert' class='method'><code>fn <a href='#method.insert' class='fnname'>insert</a>(&amp;self, request: <a class='struct' href='../google_drive2/struct.File.html' title='google_drive2::File'>File</a>) -&gt; <a class='struct' href='../google_drive2/struct.FileInsertCall.html' title='google_drive2::FileInsertCall'>FileInsertCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.insert' class='method'><code>fn <a href='#method.insert' class='fnname'>insert</a>(&amp;self, request: <a class='struct' href='../google_drive2/struct.File.html' title='google_drive2::File'>File</a>) -&gt; <a class='struct' href='../google_drive2/struct.FileInsertCall.html' title='google_drive2::FileInsertCall'>FileInsertCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Insert a new file.</p>
@@ -94,7 +94,7 @@ It is not used directly, but through the <code>Drive</code> hub.</p>
 <ul>
 <li><code>request</code> - No description provided.</li>
 </ul>
-</div><h4 id='method.untrash' class='method'><code>fn <a href='#method.untrash' class='fnname'>untrash</a>(&amp;self, file_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_drive2/struct.FileUntrashCall.html' title='google_drive2::FileUntrashCall'>FileUntrashCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.untrash' class='method'><code>fn <a href='#method.untrash' class='fnname'>untrash</a>(&amp;self, file_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_drive2/struct.FileUntrashCall.html' title='google_drive2::FileUntrashCall'>FileUntrashCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Restores a file from the trash.</p>
@@ -103,7 +103,7 @@ It is not used directly, but through the <code>Drive</code> hub.</p>
 <ul>
 <li><code>fileId</code> - The ID of the file to untrash.</li>
 </ul>
-</div><h4 id='method.copy' class='method'><code>fn <a href='#method.copy' class='fnname'>copy</a>(&amp;self, request: <a class='struct' href='../google_drive2/struct.File.html' title='google_drive2::File'>File</a>, file_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_drive2/struct.FileCopyCall.html' title='google_drive2::FileCopyCall'>FileCopyCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.copy' class='method'><code>fn <a href='#method.copy' class='fnname'>copy</a>(&amp;self, request: <a class='struct' href='../google_drive2/struct.File.html' title='google_drive2::File'>File</a>, file_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_drive2/struct.FileCopyCall.html' title='google_drive2::FileCopyCall'>FileCopyCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Creates a copy of the specified file.</p>
@@ -113,7 +113,7 @@ It is not used directly, but through the <code>Drive</code> hub.</p>
 <li><code>request</code> - No description provided.</li>
 <li><code>fileId</code> - The ID of the file to copy.</li>
 </ul>
-</div><h4 id='method.trash' class='method'><code>fn <a href='#method.trash' class='fnname'>trash</a>(&amp;self, file_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_drive2/struct.FileTrashCall.html' title='google_drive2::FileTrashCall'>FileTrashCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.trash' class='method'><code>fn <a href='#method.trash' class='fnname'>trash</a>(&amp;self, file_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_drive2/struct.FileTrashCall.html' title='google_drive2::FileTrashCall'>FileTrashCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Moves a file to the trash. The currently authenticated user must own the file.</p>
@@ -122,7 +122,7 @@ It is not used directly, but through the <code>Drive</code> hub.</p>
 <ul>
 <li><code>fileId</code> - The ID of the file to trash.</li>
 </ul>
-</div><h4 id='method.export' class='method'><code>fn <a href='#method.export' class='fnname'>export</a>(&amp;self, file_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, mime_type: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_drive2/struct.FileExportCall.html' title='google_drive2::FileExportCall'>FileExportCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.export' class='method'><code>fn <a href='#method.export' class='fnname'>export</a>(&amp;self, file_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, mime_type: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_drive2/struct.FileExportCall.html' title='google_drive2::FileExportCall'>FileExportCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Exports a Google Doc to the requested MIME type and returns the exported content.</p>
@@ -132,15 +132,15 @@ It is not used directly, but through the <code>Drive</code> hub.</p>
 <li><code>fileId</code> - The ID of the file.</li>
 <li><code>mimeType</code> - The MIME type of the format requested for this export.</li>
 </ul>
-</div><h4 id='method.empty_trash' class='method'><code>fn <a href='#method.empty_trash' class='fnname'>empty_trash</a>(&amp;self) -&gt; <a class='struct' href='../google_drive2/struct.FileEmptyTrashCall.html' title='google_drive2::FileEmptyTrashCall'>FileEmptyTrashCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.empty_trash' class='method'><code>fn <a href='#method.empty_trash' class='fnname'>empty_trash</a>(&amp;self) -&gt; <a class='struct' href='../google_drive2/struct.FileEmptyTrashCall.html' title='google_drive2::FileEmptyTrashCall'>FileEmptyTrashCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Permanently deletes all of the user&#39;s trashed files.</p>
-</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self) -&gt; <a class='struct' href='../google_drive2/struct.FileListCall.html' title='google_drive2::FileListCall'>FileListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self) -&gt; <a class='struct' href='../google_drive2/struct.FileListCall.html' title='google_drive2::FileListCall'>FileListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Lists the user&#39;s files.</p>
-</div><h4 id='method.touch' class='method'><code>fn <a href='#method.touch' class='fnname'>touch</a>(&amp;self, file_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_drive2/struct.FileTouchCall.html' title='google_drive2::FileTouchCall'>FileTouchCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.touch' class='method'><code>fn <a href='#method.touch' class='fnname'>touch</a>(&amp;self, file_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_drive2/struct.FileTouchCall.html' title='google_drive2::FileTouchCall'>FileTouchCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Set the file&#39;s updated time to the current server time.</p>
@@ -149,11 +149,11 @@ It is not used directly, but through the <code>Drive</code> hub.</p>
 <ul>
 <li><code>fileId</code> - The ID of the file to update.</li>
 </ul>
-</div><h4 id='method.generate_ids' class='method'><code>fn <a href='#method.generate_ids' class='fnname'>generate_ids</a>(&amp;self) -&gt; <a class='struct' href='../google_drive2/struct.FileGenerateIdCall.html' title='google_drive2::FileGenerateIdCall'>FileGenerateIdCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.generate_ids' class='method'><code>fn <a href='#method.generate_ids' class='fnname'>generate_ids</a>(&amp;self) -&gt; <a class='struct' href='../google_drive2/struct.FileGenerateIdCall.html' title='google_drive2::FileGenerateIdCall'>FileGenerateIdCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Generates a set of file IDs which can be provided in insert requests.</p>
-</div><h4 id='method.update' class='method'><code>fn <a href='#method.update' class='fnname'>update</a>(&amp;self, request: <a class='struct' href='../google_drive2/struct.File.html' title='google_drive2::File'>File</a>, file_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_drive2/struct.FileUpdateCall.html' title='google_drive2::FileUpdateCall'>FileUpdateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.update' class='method'><code>fn <a href='#method.update' class='fnname'>update</a>(&amp;self, request: <a class='struct' href='../google_drive2/struct.File.html' title='google_drive2::File'>File</a>, file_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_drive2/struct.FileUpdateCall.html' title='google_drive2::FileUpdateCall'>FileUpdateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Updates file metadata and/or content.</p>
@@ -163,7 +163,7 @@ It is not used directly, but through the <code>Drive</code> hub.</p>
 <li><code>request</code> - No description provided.</li>
 <li><code>fileId</code> - The ID of the file to update.</li>
 </ul>
-</div><h4 id='method.delete' class='method'><code>fn <a href='#method.delete' class='fnname'>delete</a>(&amp;self, file_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_drive2/struct.FileDeleteCall.html' title='google_drive2::FileDeleteCall'>FileDeleteCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.delete' class='method'><code>fn <a href='#method.delete' class='fnname'>delete</a>(&amp;self, file_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_drive2/struct.FileDeleteCall.html' title='google_drive2::FileDeleteCall'>FileDeleteCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Permanently deletes a file by ID. Skips the trash. The currently authenticated user must own the file.</p>
@@ -172,7 +172,7 @@ It is not used directly, but through the <code>Drive</code> hub.</p>
 <ul>
 <li><code>fileId</code> - The ID of the file to delete.</li>
 </ul>
-</div><h4 id='method.patch' class='method'><code>fn <a href='#method.patch' class='fnname'>patch</a>(&amp;self, request: <a class='struct' href='../google_drive2/struct.File.html' title='google_drive2::File'>File</a>, file_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_drive2/struct.FilePatchCall.html' title='google_drive2::FilePatchCall'>FilePatchCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.patch' class='method'><code>fn <a href='#method.patch' class='fnname'>patch</a>(&amp;self, request: <a class='struct' href='../google_drive2/struct.File.html' title='google_drive2::File'>File</a>, file_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_drive2/struct.FilePatchCall.html' title='google_drive2::FilePatchCall'>FilePatchCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Updates file metadata and/or content. This method supports patch semantics.</p>
@@ -182,7 +182,7 @@ It is not used directly, but through the <code>Drive</code> hub.</p>
 <li><code>request</code> - No description provided.</li>
 <li><code>fileId</code> - The ID of the file to update.</li>
 </ul>
-</div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, file_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_drive2/struct.FileGetCall.html' title='google_drive2::FileGetCall'>FileGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, file_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_drive2/struct.FileGetCall.html' title='google_drive2::FileGetCall'>FileGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Gets a file&#39;s metadata by ID.</p>
@@ -191,7 +191,7 @@ It is not used directly, but through the <code>Drive</code> hub.</p>
 <ul>
 <li><code>fileId</code> - The ID for the file in question.</li>
 </ul>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_drive2/trait.MethodsBuilder.html' title='google_drive2::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_drive2/struct.FileMethods.html' title='google_drive2::FileMethods'>FileMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-11198' class='srclink' href='../src/google_drive2/home/byron/dev/rust/google-apis-rs/target/debug/build/google-drive2-b86413e23e0e6702/out/lib.rs.html#25239' title='goto source code'>[src]</a></span></h3>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='trait' href='../google_drive2/trait.MethodsBuilder.html' title='google_drive2::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_drive2/struct.FileMethods.html' title='google_drive2::FileMethods'>FileMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-10553' class='srclink' href='../src/google_drive2/home/byron/dev/rust/google-apis-rs/target/debug/build/google-drive2-1ea2b6be115cdf81/out/lib.rs.html#19537' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 

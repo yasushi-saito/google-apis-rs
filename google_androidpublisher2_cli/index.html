@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Android Publisher v0.3.6+20160324</title>
+  <title>Android Publisher v0.3.6+20160817</title>
   
 
   <link rel="shortcut icon" href="./img/favicon.ico">
@@ -32,7 +32,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href="." class="icon icon-home"> Android Publisher v0.3.6+20160324</a>
+        <a href="." class="icon icon-home"> Android Publisher v0.3.6+20160817</a>
         
       </div>
 
@@ -353,6 +353,27 @@
         
 
     
+        
+            <span>Reviews</span>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="reviews_get/">Get</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="reviews_list/">List</a>
+                    
+                </li>
+            
+                <li class="toctree-l2 ">
+                    <a class="" href="reviews_reply/">Reply</a>
+                    
+                </li>
+            
+        
+
+    
 </ul>
 
       </div>
@@ -364,7 +385,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href=".">Android Publisher v0.3.6+20160324</a>
+        <a href=".">Android Publisher v0.3.6+20160817</a>
       </nav>
 
       
@@ -407,7 +428,7 @@ capabilities. Errors will be printed to standard error, and cause the program's 
 </ul>
 <p>Find the source code <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/androidpublisher2-cli">on github</a>.</p>
 <h1 id="usage">Usage</h1>
-<p>This documentation was generated from the <em>Android Publisher</em> API at revision <em>20160324</em>. The CLI is at version <em>0.3.6</em>.</p>
+<p>This documentation was generated from the <em>Android Publisher</em> API at revision <em>20160817</em>. The CLI is at version <em>0.3.6</em>.</p>
 <pre><code class="bash">androidpublisher2 [options]
         edits
                 apklistings-delete &lt;package-name&gt; &lt;edit-id&gt; &lt;apk-version-code&gt; &lt;language&gt; [-p &lt;v&gt;]...
@@ -465,6 +486,10 @@ capabilities. Errors will be printed to standard error, and cause the program's 
                 subscriptions-get &lt;package-name&gt; &lt;subscription-id&gt; &lt;token&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 subscriptions-refund &lt;package-name&gt; &lt;subscription-id&gt; &lt;token&gt; [-p &lt;v&gt;]...
                 subscriptions-revoke &lt;package-name&gt; &lt;subscription-id&gt; &lt;token&gt; [-p &lt;v&gt;]...
+        reviews
+                get &lt;package-name&gt; &lt;review-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                list &lt;package-name&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                reply &lt;package-name&gt; &lt;review-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
   androidpublisher2 --help
 
 Configuration:
@@ -564,7 +589,7 @@ issue at hand.</p>
 
 <!--
 MkDocs version  : 0.12.2
-Docs Build Date : 2016-07-23 16:05:34.586108
+Docs Build Date : 2016-09-11 17:55:11.632755
 -->
 </body>
 </html>

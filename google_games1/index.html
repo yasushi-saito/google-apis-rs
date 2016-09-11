@@ -47,8 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-0' class='srclink' href='../src/google_games1/src/lib.rs.html#5-220' title='goto source code'>[src]</a></span></h1>
-<div class='docblock'><p>This documentation was generated from <em>Games</em> crate version <em>0.1.14+20160401</em>, where <em>20160401</em> is the exact revision of the <em>games:v1</em> schema built by the <a href="http://www.makotemplates.org/">mako</a> code generator <em>v0.1.14</em>.</p>
+               </span><a id='src-0' class='srclink' href='../src/google_games1/src/lib.rs.html#5-221' title='goto source code'>[src]</a></span></h1>
+<div class='docblock'><p>This documentation was generated from <em>Games</em> crate version <em>0.1.15+20160901</em>, where <em>20160901</em> is the exact revision of the <em>games:v1</em> schema built by the <a href="http://www.makotemplates.org/">mako</a> code generator <em>v0.1.15</em>.</p>
 
 <p>Everything else about the <em>Games</em> <em>v1</em> API can be found at the
 <a href="https://developers.google.com/games/services/">official documentation site</a>.
@@ -224,9 +224,10 @@ google-games1 = &quot;*&quot;
 <span class='comment'>// You can configure optional parameters by calling the respective setters at will, and</span>
 <span class='comment'>// execute the final call using `doit()`.</span>
 <span class='comment'>// Values shown here are possibly random and not representative !</span>
-<span class='kw'>let</span> <span class='ident'>result</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>turn_based_matches</span>().<span class='ident'>leave_turn</span>(<span class='string'>&quot;matchId&quot;</span>, <span class='op'>-</span><span class='number'>48</span>)
-             .<span class='ident'>pending_participant_id</span>(<span class='string'>&quot;diam&quot;</span>)
-             .<span class='ident'>language</span>(<span class='string'>&quot;kasd&quot;</span>)
+<span class='kw'>let</span> <span class='ident'>result</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>turn_based_matches</span>().<span class='ident'>leave_turn</span>(<span class='string'>&quot;matchId&quot;</span>, <span class='op'>-</span><span class='number'>46</span>)
+             .<span class='ident'>pending_participant_id</span>(<span class='string'>&quot;sea&quot;</span>)
+             .<span class='ident'>language</span>(<span class='string'>&quot;elitr&quot;</span>)
+             .<span class='ident'>consistency_token</span>(<span class='string'>&quot;At&quot;</span>)
              .<span class='ident'>doit</span>();
  
 <span class='kw'>match</span> <span class='ident'>result</span> {
@@ -940,6 +941,13 @@ It is not used directly, but through the <code>Games</code> hub.</p>
                                   title='google_games1::PlayerScoreSubmissionList'>PlayerScoreSubmissionList</a></td>
                            <td class='docblock short'>
                                 <p>This is a JSON template for a list of score submission requests</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ProfileSettings.html'
+                                  title='google_games1::ProfileSettings'>ProfileSettings</a></td>
+                           <td class='docblock short'>
+                                <p>This is a JSON template for profile settings</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>

@@ -47,8 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-34406' class='srclink' href='../src/google_youtube3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-youtube3-3a9e8c4a9ed85834/out/lib.rs.html#75719-75721' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct CommentMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
+               </span><a id='src-33065' class='srclink' href='../src/google_youtube3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-youtube3-122b93fad4a7fbcd/out/lib.rs.html#59849-59851' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct CommentMethods&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>comment</em> resources.
 It is not used directly, but through the <code>YouTube</code> hub.</p>
@@ -74,8 +74,8 @@ It is not used directly, but through the <code>YouTube</code> hub.</p>
 <span class='comment'>// like `delete(...)`, `insert(...)`, `list(...)`, `mark_as_spam(...)`, `set_moderation_status(...)` and `update(...)`</span>
 <span class='comment'>// to build up your call.</span>
 <span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>comments</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_youtube3/struct.CommentMethods.html' title='google_youtube3::CommentMethods'>CommentMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-34415' class='srclink' href='../src/google_youtube3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-youtube3-3a9e8c4a9ed85834/out/lib.rs.html#75723-75822' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.insert' class='method'><code>fn <a href='#method.insert' class='fnname'>insert</a>(&amp;self, request: <a class='struct' href='../google_youtube3/struct.Comment.html' title='google_youtube3::Comment'>Comment</a>) -&gt; <a class='struct' href='../google_youtube3/struct.CommentInsertCall.html' title='google_youtube3::CommentInsertCall'>CommentInsertCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='struct' href='../google_youtube3/struct.CommentMethods.html' title='google_youtube3::CommentMethods'>CommentMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-33074' class='srclink' href='../src/google_youtube3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-youtube3-122b93fad4a7fbcd/out/lib.rs.html#59853-59952' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.insert' class='method'><code>fn <a href='#method.insert' class='fnname'>insert</a>(&amp;self, request: <a class='struct' href='../google_youtube3/struct.Comment.html' title='google_youtube3::Comment'>Comment</a>) -&gt; <a class='struct' href='../google_youtube3/struct.CommentInsertCall.html' title='google_youtube3::CommentInsertCall'>CommentInsertCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Creates a reply to an existing comment. Note: To create a top-level comment, use the commentThreads.insert method.</p>
@@ -84,7 +84,7 @@ It is not used directly, but through the <code>YouTube</code> hub.</p>
 <ul>
 <li><code>request</code> - No description provided.</li>
 </ul>
-</div><h4 id='method.set_moderation_status' class='method'><code>fn <a href='#method.set_moderation_status' class='fnname'>set_moderation_status</a>(&amp;self, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, moderation_status: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_youtube3/struct.CommentSetModerationStatuCall.html' title='google_youtube3::CommentSetModerationStatuCall'>CommentSetModerationStatuCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.set_moderation_status' class='method'><code>fn <a href='#method.set_moderation_status' class='fnname'>set_moderation_status</a>(&amp;self, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, moderation_status: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_youtube3/struct.CommentSetModerationStatuCall.html' title='google_youtube3::CommentSetModerationStatuCall'>CommentSetModerationStatuCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Sets the moderation status of one or more comments. The API request must be authorized by the owner of the channel or video associated with the comments.</p>
@@ -94,7 +94,7 @@ It is not used directly, but through the <code>YouTube</code> hub.</p>
 <li><code>id</code> - The id parameter specifies a comma-separated list of IDs that identify the comments for which you are updating the moderation status.</li>
 <li><code>moderationStatus</code> - Identifies the new moderation status of the specified comments.</li>
 </ul>
-</div><h4 id='method.delete' class='method'><code>fn <a href='#method.delete' class='fnname'>delete</a>(&amp;self, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_youtube3/struct.CommentDeleteCall.html' title='google_youtube3::CommentDeleteCall'>CommentDeleteCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.delete' class='method'><code>fn <a href='#method.delete' class='fnname'>delete</a>(&amp;self, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_youtube3/struct.CommentDeleteCall.html' title='google_youtube3::CommentDeleteCall'>CommentDeleteCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Deletes a comment.</p>
@@ -103,7 +103,7 @@ It is not used directly, but through the <code>YouTube</code> hub.</p>
 <ul>
 <li><code>id</code> - The id parameter specifies the comment ID for the resource that is being deleted.</li>
 </ul>
-</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self, part: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_youtube3/struct.CommentListCall.html' title='google_youtube3::CommentListCall'>CommentListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self, part: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_youtube3/struct.CommentListCall.html' title='google_youtube3::CommentListCall'>CommentListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Returns a list of comments that match the API request parameters.</p>
@@ -112,7 +112,7 @@ It is not used directly, but through the <code>YouTube</code> hub.</p>
 <ul>
 <li><code>part</code> - The part parameter specifies a comma-separated list of one or more comment resource properties that the API response will include.</li>
 </ul>
-</div><h4 id='method.update' class='method'><code>fn <a href='#method.update' class='fnname'>update</a>(&amp;self, request: <a class='struct' href='../google_youtube3/struct.Comment.html' title='google_youtube3::Comment'>Comment</a>) -&gt; <a class='struct' href='../google_youtube3/struct.CommentUpdateCall.html' title='google_youtube3::CommentUpdateCall'>CommentUpdateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.update' class='method'><code>fn <a href='#method.update' class='fnname'>update</a>(&amp;self, request: <a class='struct' href='../google_youtube3/struct.Comment.html' title='google_youtube3::Comment'>Comment</a>) -&gt; <a class='struct' href='../google_youtube3/struct.CommentUpdateCall.html' title='google_youtube3::CommentUpdateCall'>CommentUpdateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Modifies a comment.</p>
@@ -121,7 +121,7 @@ It is not used directly, but through the <code>YouTube</code> hub.</p>
 <ul>
 <li><code>request</code> - No description provided.</li>
 </ul>
-</div><h4 id='method.mark_as_spam' class='method'><code>fn <a href='#method.mark_as_spam' class='fnname'>mark_as_spam</a>(&amp;self, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_youtube3/struct.CommentMarkAsSpamCall.html' title='google_youtube3::CommentMarkAsSpamCall'>CommentMarkAsSpamCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.mark_as_spam' class='method'><code>fn <a href='#method.mark_as_spam' class='fnname'>mark_as_spam</a>(&amp;self, id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_youtube3/struct.CommentMarkAsSpamCall.html' title='google_youtube3::CommentMarkAsSpamCall'>CommentMarkAsSpamCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Expresses the caller&#39;s opinion that one or more comments should be flagged as spam.</p>
@@ -130,7 +130,7 @@ It is not used directly, but through the <code>YouTube</code> hub.</p>
 <ul>
 <li><code>id</code> - The id parameter specifies a comma-separated list of IDs of comments that the caller believes should be classified as spam.</li>
 </ul>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_youtube3/trait.MethodsBuilder.html' title='google_youtube3::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_youtube3/struct.CommentMethods.html' title='google_youtube3::CommentMethods'>CommentMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-34411' class='srclink' href='../src/google_youtube3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-youtube3-3a9e8c4a9ed85834/out/lib.rs.html#75722' title='goto source code'>[src]</a></span></h3>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='trait' href='../google_youtube3/trait.MethodsBuilder.html' title='google_youtube3::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_youtube3/struct.CommentMethods.html' title='google_youtube3::CommentMethods'>CommentMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-33070' class='srclink' href='../src/google_youtube3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-youtube3-122b93fad4a7fbcd/out/lib.rs.html#59852' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 

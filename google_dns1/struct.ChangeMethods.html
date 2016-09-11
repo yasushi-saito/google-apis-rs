@@ -47,8 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-2581' class='srclink' href='../src/google_dns1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-dns1-610189d8ae1437d7/out/lib.rs.html#5344-5346' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct ChangeMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
+               </span><a id='src-2410' class='srclink' href='../src/google_dns1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-dns1-e1765ab165193d0a/out/lib.rs.html#4268-4270' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct ChangeMethods&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>change</em> resources.
 It is not used directly, but through the <code>Dns</code> hub.</p>
@@ -74,8 +74,8 @@ It is not used directly, but through the <code>Dns</code> hub.</p>
 <span class='comment'>// like `create(...)`, `get(...)` and `list(...)`</span>
 <span class='comment'>// to build up your call.</span>
 <span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>changes</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_dns1/struct.ChangeMethods.html' title='google_dns1::ChangeMethods'>ChangeMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-2590' class='srclink' href='../src/google_dns1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-dns1-610189d8ae1437d7/out/lib.rs.html#5348-5408' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.create' class='method'><code>fn <a href='#method.create' class='fnname'>create</a>(&amp;self, request: <a class='struct' href='../google_dns1/struct.Change.html' title='google_dns1::Change'>Change</a>, project: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, managed_zone: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_dns1/struct.ChangeCreateCall.html' title='google_dns1::ChangeCreateCall'>ChangeCreateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='struct' href='../google_dns1/struct.ChangeMethods.html' title='google_dns1::ChangeMethods'>ChangeMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-2419' class='srclink' href='../src/google_dns1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-dns1-e1765ab165193d0a/out/lib.rs.html#4272-4332' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.create' class='method'><code>fn <a href='#method.create' class='fnname'>create</a>(&amp;self, request: <a class='struct' href='../google_dns1/struct.Change.html' title='google_dns1::Change'>Change</a>, project: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, managed_zone: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_dns1/struct.ChangeCreateCall.html' title='google_dns1::ChangeCreateCall'>ChangeCreateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Atomically update the ResourceRecordSet collection.</p>
@@ -86,7 +86,7 @@ It is not used directly, but through the <code>Dns</code> hub.</p>
 <li><code>project</code> - Identifies the project addressed by this request.</li>
 <li><code>managedZone</code> - Identifies the managed zone addressed by this request. Can be the managed zone name or id.</li>
 </ul>
-</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self, project: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, managed_zone: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_dns1/struct.ChangeListCall.html' title='google_dns1::ChangeListCall'>ChangeListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self, project: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, managed_zone: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_dns1/struct.ChangeListCall.html' title='google_dns1::ChangeListCall'>ChangeListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Enumerate Changes to a ResourceRecordSet collection.</p>
@@ -96,7 +96,7 @@ It is not used directly, but through the <code>Dns</code> hub.</p>
 <li><code>project</code> - Identifies the project addressed by this request.</li>
 <li><code>managedZone</code> - Identifies the managed zone addressed by this request. Can be the managed zone name or id.</li>
 </ul>
-</div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, project: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, managed_zone: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, change_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_dns1/struct.ChangeGetCall.html' title='google_dns1::ChangeGetCall'>ChangeGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, project: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, managed_zone: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, change_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_dns1/struct.ChangeGetCall.html' title='google_dns1::ChangeGetCall'>ChangeGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Fetch the representation of an existing Change.</p>
@@ -107,7 +107,7 @@ It is not used directly, but through the <code>Dns</code> hub.</p>
 <li><code>managedZone</code> - Identifies the managed zone addressed by this request. Can be the managed zone name or id.</li>
 <li><code>changeId</code> - The identifier of the requested change, from a previous ResourceRecordSetsChangeResponse.</li>
 </ul>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_dns1/trait.MethodsBuilder.html' title='google_dns1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_dns1/struct.ChangeMethods.html' title='google_dns1::ChangeMethods'>ChangeMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-2586' class='srclink' href='../src/google_dns1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-dns1-610189d8ae1437d7/out/lib.rs.html#5347' title='goto source code'>[src]</a></span></h3>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='trait' href='../google_dns1/trait.MethodsBuilder.html' title='google_dns1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_dns1/struct.ChangeMethods.html' title='google_dns1::ChangeMethods'>ChangeMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-2415' class='srclink' href='../src/google_dns1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-dns1-e1765ab165193d0a/out/lib.rs.html#4271' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 

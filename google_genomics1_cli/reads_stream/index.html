@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Stream - genomics v0.3.6+20160407</title>
+  <title>Stream - genomics v0.3.6+20160905</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -32,7 +32,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> genomics v0.3.6+20160407</a>
+        <a href=".." class="icon icon-home"> genomics v0.3.6+20160905</a>
         
       </div>
 
@@ -422,7 +422,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">genomics v0.3.6+20160407</a>
+        <a href="..">genomics v0.3.6+20160905</a>
       </nav>
 
       
@@ -475,31 +475,31 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    end=gubergren</code><ul>
+<li><code>-r .    end=aliquyam</code><ul>
 <li>The end position of the range on the reference, 0-based exclusive. If specified, <code>referenceName</code> must also be specified.</li>
 </ul>
 </li>
-<li><code>project-id=aliquyam</code><ul>
-<li>The Google Developers Console project ID or number which will be billed for this access. The caller must have WRITE access to this project. Required.</li>
+<li><code>project-id=eos</code><ul>
+<li>The Google Cloud project ID which will be billed for this access. The caller must have WRITE access to this project. Required.</li>
 </ul>
 </li>
-<li><code>read-group-set-id=eos</code><ul>
+<li><code>read-group-set-id=tempor</code><ul>
 <li>The ID of the read group set from which to stream reads.</li>
 </ul>
 </li>
-<li><code>reference-name=tempor</code><ul>
+<li><code>reference-name=sea</code><ul>
 <li>The reference sequence name, for example <code>chr1</code>, <code>1</code>, or <code>chrX</code>. If set to *, only unmapped reads are returned.</li>
 </ul>
 </li>
-<li><code>shard=42</code><ul>
+<li><code>shard=16</code><ul>
 <li>Restricts results to a shard containing approximately <code>1/totalShards</code> of the normal response payload for this query. Results from a sharded request are disjoint from those returned by all queries which differ only in their shard parameter. A shard may yield 0 results; this is especially likely for large values of <code>totalShards</code>. Valid values are <code>[0, totalShards)</code>.</li>
 </ul>
 </li>
-<li><code>start=labore</code><ul>
+<li><code>start=ipsum</code><ul>
 <li>The start position of the range on the reference, 0-based inclusive. If specified, <code>referenceName</code> must also be specified.</li>
 </ul>
 </li>
-<li><code>total-shards=47</code><ul>
+<li><code>total-shards=70</code><ul>
 <li>Specifying <code>totalShards</code> causes a disjoint subset of the normal response payload to be returned for each query with a unique <code>shard</code> parameter specified. A best effort is made to yield equally sized shards. Sharding can be used to distribute processing amongst workers, where each worker is assigned a unique <code>shard</code> number and all workers specify the same <code>totalShards</code> number. The union of reads returned for all sharded queries <code>[0, totalShards)</code> is equal to those returned by a single unsharded query. Queries for different values of <code>totalShards</code> with common divisors will share shard boundaries. For example, streaming <code>shard</code> 2 of 5 <code>totalShards</code> yields the same results as streaming <code>shard</code>s 4 and 5 of 10 <code>totalShards</code>. This property can be leveraged for adaptive retries.</li>
 </ul>
 </li>
@@ -649,7 +649,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <!--
 MkDocs version  : 0.12.2
-Docs Build Date : 2016-07-23 16:06:00.723882
+Docs Build Date : 2016-09-11 17:55:58.599364
 -->
 </body>
 </html>

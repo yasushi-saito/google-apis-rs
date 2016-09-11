@@ -47,8 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-7106' class='srclink' href='../src/google_drive3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-drive3-f542a9c625180bc2/out/lib.rs.html#15896-15898' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct CommentMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> {
+               </span><a id='src-6701' class='srclink' href='../src/google_drive3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-drive3-992fddd710d08bbb/out/lib.rs.html#12452-12454' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct CommentMethods&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: 'a, A: 'a</span> {
     // some fields omitted
 }</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>comment</em> resources.
 It is not used directly, but through the <code>Drive</code> hub.</p>
@@ -74,8 +74,8 @@ It is not used directly, but through the <code>Drive</code> hub.</p>
 <span class='comment'>// like `create(...)`, `delete(...)`, `get(...)`, `list(...)` and `update(...)`</span>
 <span class='comment'>// to build up your call.</span>
 <span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>comments</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_drive3/struct.CommentMethods.html' title='google_drive3::CommentMethods'>CommentMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-7115' class='srclink' href='../src/google_drive3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-drive3-f542a9c625180bc2/out/lib.rs.html#15900-15990' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.delete' class='method'><code>fn <a href='#method.delete' class='fnname'>delete</a>(&amp;self, file_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, comment_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_drive3/struct.CommentDeleteCall.html' title='google_drive3::CommentDeleteCall'>CommentDeleteCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='struct' href='../google_drive3/struct.CommentMethods.html' title='google_drive3::CommentMethods'>CommentMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-6710' class='srclink' href='../src/google_drive3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-drive3-992fddd710d08bbb/out/lib.rs.html#12456-12546' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.delete' class='method'><code>fn <a href='#method.delete' class='fnname'>delete</a>(&amp;self, file_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, comment_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_drive3/struct.CommentDeleteCall.html' title='google_drive3::CommentDeleteCall'>CommentDeleteCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Deletes a comment.</p>
@@ -85,7 +85,7 @@ It is not used directly, but through the <code>Drive</code> hub.</p>
 <li><code>fileId</code> - The ID of the file.</li>
 <li><code>commentId</code> - The ID of the comment.</li>
 </ul>
-</div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, file_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, comment_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_drive3/struct.CommentGetCall.html' title='google_drive3::CommentGetCall'>CommentGetCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, file_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, comment_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_drive3/struct.CommentGetCall.html' title='google_drive3::CommentGetCall'>CommentGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Gets a comment by ID.</p>
@@ -95,7 +95,7 @@ It is not used directly, but through the <code>Drive</code> hub.</p>
 <li><code>fileId</code> - The ID of the file.</li>
 <li><code>commentId</code> - The ID of the comment.</li>
 </ul>
-</div><h4 id='method.update' class='method'><code>fn <a href='#method.update' class='fnname'>update</a>(&amp;self, request: <a class='struct' href='../google_drive3/struct.Comment.html' title='google_drive3::Comment'>Comment</a>, file_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, comment_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_drive3/struct.CommentUpdateCall.html' title='google_drive3::CommentUpdateCall'>CommentUpdateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.update' class='method'><code>fn <a href='#method.update' class='fnname'>update</a>(&amp;self, request: <a class='struct' href='../google_drive3/struct.Comment.html' title='google_drive3::Comment'>Comment</a>, file_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, comment_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_drive3/struct.CommentUpdateCall.html' title='google_drive3::CommentUpdateCall'>CommentUpdateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Updates a comment with patch semantics.</p>
@@ -106,7 +106,7 @@ It is not used directly, but through the <code>Drive</code> hub.</p>
 <li><code>fileId</code> - The ID of the file.</li>
 <li><code>commentId</code> - The ID of the comment.</li>
 </ul>
-</div><h4 id='method.create' class='method'><code>fn <a href='#method.create' class='fnname'>create</a>(&amp;self, request: <a class='struct' href='../google_drive3/struct.Comment.html' title='google_drive3::Comment'>Comment</a>, file_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_drive3/struct.CommentCreateCall.html' title='google_drive3::CommentCreateCall'>CommentCreateCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.create' class='method'><code>fn <a href='#method.create' class='fnname'>create</a>(&amp;self, request: <a class='struct' href='../google_drive3/struct.Comment.html' title='google_drive3::Comment'>Comment</a>, file_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_drive3/struct.CommentCreateCall.html' title='google_drive3::CommentCreateCall'>CommentCreateCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Creates a new comment on a file.</p>
@@ -116,7 +116,7 @@ It is not used directly, but through the <code>Drive</code> hub.</p>
 <li><code>request</code> - No description provided.</li>
 <li><code>fileId</code> - The ID of the file.</li>
 </ul>
-</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self, file_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_drive3/struct.CommentListCall.html' title='google_drive3::CommentListCall'>CommentListCall</a>&lt;'a, C, A&gt;</code></h4>
+</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self, file_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_drive3/struct.CommentListCall.html' title='google_drive3::CommentListCall'>CommentListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Lists a file&#39;s comments.</p>
@@ -125,7 +125,7 @@ It is not used directly, but through the <code>Drive</code> hub.</p>
 <ul>
 <li><code>fileId</code> - The ID of the file.</li>
 </ul>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_drive3/trait.MethodsBuilder.html' title='google_drive3::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_drive3/struct.CommentMethods.html' title='google_drive3::CommentMethods'>CommentMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-7111' class='srclink' href='../src/google_drive3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-drive3-f542a9c625180bc2/out/lib.rs.html#15899' title='goto source code'>[src]</a></span></h3>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='trait' href='../google_drive3/trait.MethodsBuilder.html' title='google_drive3::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_drive3/struct.CommentMethods.html' title='google_drive3::CommentMethods'>CommentMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-6706' class='srclink' href='../src/google_drive3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-drive3-992fddd710d08bbb/out/lib.rs.html#12455' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 
