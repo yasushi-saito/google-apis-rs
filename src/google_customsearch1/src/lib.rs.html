@@ -255,13 +255,12 @@
 <span id="211">211</span>
 <span id="212">212</span>
 <span id="213">213</span>
-<span id="214">214</span>
 </pre><pre class='rust '>
 <span class='comment'>// DO NOT EDIT !</span>
 <span class='comment'>// This file was generated automatically from &#39;src/mako/api/lib.rs.mako&#39;</span>
 <span class='comment'>// DO NOT EDIT !</span>
 
-<span class='doccomment'>//! This documentation was generated from *customsearch* crate version *0.1.15+20160411*, where *20160411* is the exact revision of the *customsearch:v1* schema built by the [mako](http://www.makotemplates.org/) code generator *v0.1.15*.</span>
+<span class='doccomment'>//! This documentation was generated from *customsearch* crate version *1.0.0+20160411*, where *20160411* is the exact revision of the *customsearch:v1* schema built by the [mako](http://www.makotemplates.org/) code generator *v1.0.0*.</span>
 <span class='doccomment'>//! </span>
 <span class='doccomment'>//! Everything else about the *customsearch* *v1* API can be found at the</span>
 <span class='doccomment'>//! [official documentation site](https://developers.google.com/custom-search/v1/using_rest).</span>
@@ -462,8 +461,7 @@
 <span class='comment'>// We don&#39;t warn about this, as depending on the API, some data structures or facilities are never used.</span>
 <span class='comment'>// Instead of pre-determining this, we just disable the lint. It&#39;s manually tuned to not have any </span>
 <span class='comment'>// unused imports in fully featured APIs. Same with unused_mut ... .</span>
-<span class='attribute'>#<span class='op'>!</span>[<span class='ident'>cfg_attr</span>(<span class='ident'>feature</span> <span class='op'>=</span> <span class='string'>&quot;nightly&quot;</span>, <span class='ident'>feature</span>(<span class='ident'>custom_derive</span>, <span class='ident'>custom_attribute</span>, <span class='ident'>plugin</span>))]</span>
-<span class='attribute'>#<span class='op'>!</span>[<span class='ident'>cfg_attr</span>(<span class='ident'>feature</span> <span class='op'>=</span> <span class='string'>&quot;nightly&quot;</span>, <span class='ident'>plugin</span>(<span class='ident'>serde_macros</span>))]</span>
+<span class='attribute'>#<span class='op'>!</span>[<span class='ident'>cfg_attr</span>(<span class='ident'>feature</span> <span class='op'>=</span> <span class='string'>&quot;nightly&quot;</span>, <span class='ident'>feature</span>(<span class='ident'>proc_macro</span>))]</span>
 <span class='attribute'>#<span class='op'>!</span>[<span class='ident'>allow</span>(<span class='ident'>unused_imports</span>, <span class='ident'>unused_mut</span>, <span class='ident'>dead_code</span>)]</span>
 
 <span class='attribute'>#[<span class='ident'>cfg</span>(<span class='ident'>feature</span> <span class='op'>=</span> <span class='string'>&quot;nightly&quot;</span>)]</span>

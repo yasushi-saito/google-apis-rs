@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="rustdoc">
-    <meta name="description" content="Source to the Rust file `/home/byron/.cargo/registry/src/github.com-1ecc6299db9ec823/yup-oauth2-0.6.3/src/lib.rs`.">
+    <meta name="description" content="Source to the Rust file `/home/byron/.cargo/registry/src/github.com-1ecc6299db9ec823/yup-oauth2-1.0.0/src/lib.rs`.">
     <meta name="keywords" content="rust, rustlang, rust-lang">
 
     <title>lib.rs.html -- source</title>
@@ -116,45 +116,42 @@
 <span id="72">72</span>
 <span id="73">73</span>
 <span id="74">74</span>
-<span id="75">75</span>
-<span id="76">76</span>
-<span id="77">77</span>
-<span id="78">78</span>
-<span id="79">79</span>
-<span id="80">80</span>
-<span id="81">81</span>
-<span id="82">82</span>
-<span id="83">83</span>
-<span id="84">84</span>
-<span id="85">85</span>
 </pre><pre class='rust '>
 <span class='doccomment'>//! This library can be used to acquire oauth2.0 authentication for services.</span>
-<span class='doccomment'>//! At the time of writing, only one way of doing so is implemented, the</span>
-<span class='doccomment'>//! [device flow](https://developers.google.com/youtube/v3/guides/authentication#devices), along</span>
-<span class='doccomment'>//! with a flow</span>
-<span class='doccomment'>//! for [refreshing tokens](https://developers.google.com/youtube/v3/guides/authentication#devices)</span>
 <span class='doccomment'>//!</span>
 <span class='doccomment'>//! For your application to use this library, you will have to obtain an application</span>
 <span class='doccomment'>//! id and secret by</span>
-<span class='doccomment'>//! [following this guide](https://developers.google.com/youtube/registering_an_application).</span>
+<span class='doccomment'>//! [following this guide](https://developers.google.com/youtube/registering_an_application) (for</span>
+<span class='doccomment'>//! Google services) respectively the documentation of the API provider you want to connect to.</span>
 <span class='doccomment'>//!</span>
 <span class='doccomment'>//! # Device Flow Usage</span>
 <span class='doccomment'>//! As the `DeviceFlow` involves polling, the `DeviceFlowHelper` should be used</span>
 <span class='doccomment'>//! as means to adhere to the protocol, and remain resilient to all kinds of errors</span>
 <span class='doccomment'>//! that can occour on the way.</span>
 <span class='doccomment'>//!</span>
+<span class='doccomment'>//! # Service account &quot;flow&quot;</span>
+<span class='doccomment'>//! When using service account credentials, no user interaction is required. The access token</span>
+<span class='doccomment'>//! can be obtained automatically using the private key of the client (which you can download</span>
+<span class='doccomment'>//! from the API provider). See `examples/service_account/` for an example on how to use service</span>
+<span class='doccomment'>//! account credentials. See</span>
+<span class='doccomment'>//! [developers.google.com](https://developers.google.com/identity/protocols/OAuth2ServiceAccount)</span>
+<span class='doccomment'>//! for a detailed description of the protocol. This crate implements OAuth for Service Accounts</span>
+<span class='doccomment'>//! based on the Google APIs; it may or may not work with other providers.</span>
+<span class='doccomment'>//!</span>
 <span class='doccomment'>//! # Installed Flow Usage</span>
 <span class='doccomment'>//! The `InstalledFlow` involves showing a URL to the user (or opening it in a browser)</span>
 <span class='doccomment'>//! and then either prompting the user to enter a displayed code, or make the authorizing</span>
-<span class='doccomment'>//! website redirect to a web server spun up by this library.</span>
+<span class='doccomment'>//! website redirect to a web server spun up by this library and running on localhost.</span>
+<span class='doccomment'>//!</span>
 <span class='doccomment'>//! In order to use the interactive method, use the `InstalledInteractive` `FlowType`;</span>
 <span class='doccomment'>//! for the redirect method, use `InstalledRedirect`, with the port number to let the</span>
 <span class='doccomment'>//! server listen on.</span>
+<span class='doccomment'>//!</span>
 <span class='doccomment'>//! You can implement your own `AuthenticatorDelegate` in order to customize the flow;</span>
 <span class='doccomment'>//! the `InstalledFlow` uses the `present_user_url` method.</span>
 <span class='doccomment'>//!</span>
-<span class='doccomment'>//! The returned `Token` is stored permanently to authorize future API requests in the</span>
-<span class='doccomment'>//! same scopes.</span>
+<span class='doccomment'>//! The returned `Token` is stored permanently in the given token storage in order to</span>
+<span class='doccomment'>//! authorize future API requests to the same scopes.</span>
 <span class='doccomment'>//!</span>
 <span class='doccomment'>//! ```test_harness,no_run</span>
 <span class='doccomment'>//! #![cfg_attr(feature = &quot;nightly&quot;, feature(custom_derive, custom_attribute, plugin))]</span>
@@ -178,33 +175,14 @@
 <span class='doccomment'>//! match res {</span>
 <span class='doccomment'>//!     Ok(t) =&gt; {</span>
 <span class='doccomment'>//!     // now you can use t.access_token to authenticate API calls within your</span>
-<span class='doccomment'>//!     // given scopes. It will not be valid forever, which is when you have to</span>
-<span class='doccomment'>//!     // refresh it using the `RefreshFlow`</span>
+<span class='doccomment'>//!     // given scopes. It will not be valid forever, but Authenticator will automatically</span>
+<span class='doccomment'>//!     // refresh the token for you.</span>
 <span class='doccomment'>//!     },</span>
 <span class='doccomment'>//!     Err(err) =&gt; println!(&quot;Failed to acquire token: {}&quot;, err),</span>
 <span class='doccomment'>//! }</span>
 <span class='doccomment'>//! # }</span>
 <span class='doccomment'>//! ```</span>
 <span class='doccomment'>//!</span>
-<span class='doccomment'>//! # Refresh Flow Usage</span>
-<span class='doccomment'>//! As the `Token` you retrieved previously will only be valid for a certain time, you will have</span>
-<span class='doccomment'>//! to use the information from the `Token.refresh_token` field to get a new `access_token`.</span>
-<span class='doccomment'>//!</span>
-<span class='doccomment'>//! ```test_harness,no_run</span>
-<span class='doccomment'>//! extern crate hyper;</span>
-<span class='doccomment'>//! extern crate yup_oauth2 as oauth2;</span>
-<span class='doccomment'>//! use oauth2::{RefreshFlow, FlowType, RefreshResult};</span>
-<span class='doccomment'>//!</span>
-<span class='doccomment'>//! # #[test] fn refresh() {</span>
-<span class='doccomment'>//! let mut f = RefreshFlow::new(hyper::Client::new());</span>
-<span class='doccomment'>//! let new_token = match *f.refresh_token(FlowType::Device,</span>
-<span class='doccomment'>//!                                        &quot;my_client_id&quot;, &quot;my_secret&quot;,</span>
-<span class='doccomment'>//!                                        &quot;my_refresh_token&quot;) {</span>
-<span class='doccomment'>//!                        RefreshResult::Success(ref t) =&gt; t,</span>
-<span class='doccomment'>//!                        _ =&gt; panic!(&quot;bad luck ;)&quot;)</span>
-<span class='doccomment'>//!                };</span>
-<span class='doccomment'>//! # }</span>
-<span class='doccomment'>//! ```</span>
 <span class='attribute'>#<span class='op'>!</span>[<span class='ident'>cfg_attr</span>(<span class='ident'>feature</span> <span class='op'>=</span> <span class='string'>&quot;nightly&quot;</span>, <span class='ident'>feature</span>(<span class='ident'>custom_derive</span>, <span class='ident'>custom_attribute</span>, <span class='ident'>plugin</span>))]</span>
 <span class='attribute'>#<span class='op'>!</span>[<span class='ident'>cfg_attr</span>(<span class='ident'>feature</span> <span class='op'>=</span> <span class='string'>&quot;nightly&quot;</span>, <span class='ident'>plugin</span>(<span class='ident'>serde_macros</span>))]</span>
 
