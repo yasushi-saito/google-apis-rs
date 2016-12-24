@@ -47,10 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-3764' class='srclink' href='../src/google_proximitybeacon1_beta1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-proximitybeacon1_beta1-0871ee6c3e04a747/out/lib.rs.html#6877-6879' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct MethodMethods&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: 'a, A: 'a</span> {
-    // some fields omitted
-}</pre><div class='docblock'><p>A builder providing access to all free methods, which are not associated with a particular resource.
+               </span><a id='src-2183' class='srclink' href='../src/google_proximitybeacon1_beta1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-proximitybeacon1_beta1-0871ee6c3e04a747/out/lib.rs.html#6877-6879' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct MethodMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> { /* fields omitted */ }</pre><div class='docblock'><p>A builder providing access to all free methods, which are not associated with a particular resource.
 It is not used directly, but through the <code>Proximitybeacon</code> hub.</p>
 
 <h1 id='example' class='section-header'><a href='#example'>Example</a></h1>
@@ -74,12 +72,12 @@ It is not used directly, but through the <code>Proximitybeacon</code> hub.</p>
 <span class='comment'>// like `get_eidparams(...)`</span>
 <span class='comment'>// to build up your call.</span>
 <span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>methods</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='struct' href='../google_proximitybeacon1_beta1/struct.MethodMethods.html' title='google_proximitybeacon1_beta1::MethodMethods'>MethodMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-3773' class='srclink' href='../src/google_proximitybeacon1_beta1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-proximitybeacon1_beta1-0871ee6c3e04a747/out/lib.rs.html#6881-6891' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.get_eidparams' class='method'><code>fn <a href='#method.get_eidparams' class='fnname'>get_eidparams</a>(&amp;self) -&gt; <a class='struct' href='../google_proximitybeacon1_beta1/struct.MethodGetEidparamCall.html' title='google_proximitybeacon1_beta1::MethodGetEidparamCall'>MethodGetEidparamCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_proximitybeacon1_beta1/struct.MethodMethods.html' title='google_proximitybeacon1_beta1::MethodMethods'>MethodMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-2192' class='srclink' href='../src/google_proximitybeacon1_beta1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-proximitybeacon1_beta1-0871ee6c3e04a747/out/lib.rs.html#6881-6891' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.get_eidparams' class='method'><span id='get_eidparams.v' class='invisible'><code>fn <a href='#method.get_eidparams' class='fnname'>get_eidparams</a>(&amp;self) -&gt; <a class='struct' href='../google_proximitybeacon1_beta1/struct.MethodGetEidparamCall.html' title='google_proximitybeacon1_beta1::MethodGetEidparamCall'>MethodGetEidparamCall</a>&lt;'a, C, A&gt;</code></span></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Gets the Proximity Beacon API&#39;s current public key and associated parameters used to initiate the Diffie-Hellman key exchange required to register a beacon that broadcasts the Eddystone-EID format. This key changes periodically; clients may cache it and re-use the same public key to provision and register multiple beacons. However, clients should be prepared to refresh this key when they encounter an error registering an Eddystone-EID beacon.</p>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='trait' href='../google_proximitybeacon1_beta1/trait.MethodsBuilder.html' title='google_proximitybeacon1_beta1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_proximitybeacon1_beta1/struct.MethodMethods.html' title='google_proximitybeacon1_beta1::MethodMethods'>MethodMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-3769' class='srclink' href='../src/google_proximitybeacon1_beta1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-proximitybeacon1_beta1-0871ee6c3e04a747/out/lib.rs.html#6880' title='goto source code'>[src]</a></span></h3>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_proximitybeacon1_beta1/trait.MethodsBuilder.html' title='google_proximitybeacon1_beta1::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_proximitybeacon1_beta1/struct.MethodMethods.html' title='google_proximitybeacon1_beta1::MethodMethods'>MethodMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-2188' class='srclink' href='../src/google_proximitybeacon1_beta1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-proximitybeacon1_beta1-0871ee6c3e04a747/out/lib.rs.html#6880' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 
@@ -136,11 +134,9 @@ It is not used directly, but through the <code>Proximitybeacon</code> hub.</p>
     <script>
         window.rootPath = "../";
         window.currentCrate = "google_proximitybeacon1_beta1";
-        window.playgroundUrl = "";
     </script>
     <script src="../jquery.js"></script>
     <script src="../main.js"></script>
-    
     <script defer src="../search-index.js"></script>
 </body>
 </html>

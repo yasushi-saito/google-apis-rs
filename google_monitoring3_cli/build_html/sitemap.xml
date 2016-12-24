@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-monitoring3-cli/</loc>
+     <lastmod>2016-12-24</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-monitoring3-cli/projects_collectd-time-series-create/</loc>
+     <lastmod>2016-12-24</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-monitoring3-cli/projects_groups-create/</loc>
+     <lastmod>2016-12-24</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-monitoring3-cli/projects_groups-delete/</loc>
+     <lastmod>2016-12-24</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-monitoring3-cli/projects_groups-get/</loc>
+     <lastmod>2016-12-24</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-monitoring3-cli/projects_groups-list/</loc>
+     <lastmod>2016-12-24</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-monitoring3-cli/projects_groups-members-list/</loc>
+     <lastmod>2016-12-24</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-monitoring3-cli/projects_groups-update/</loc>
+     <lastmod>2016-12-24</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-monitoring3-cli/projects_metric-descriptors-create/</loc>
+     <lastmod>2016-12-24</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-monitoring3-cli/projects_metric-descriptors-delete/</loc>
+     <lastmod>2016-12-24</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-monitoring3-cli/projects_metric-descriptors-get/</loc>
+     <lastmod>2016-12-24</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-monitoring3-cli/projects_metric-descriptors-list/</loc>
+     <lastmod>2016-12-24</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-monitoring3-cli/projects_monitored-resource-descriptors-get/</loc>
+     <lastmod>2016-12-24</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-monitoring3-cli/projects_monitored-resource-descriptors-list/</loc>
+     <lastmod>2016-12-24</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-monitoring3-cli/projects_time-series-create/</loc>
+     <lastmod>2016-12-24</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-monitoring3-cli/projects_time-series-list/</loc>
+     <lastmod>2016-12-24</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+</urlset>

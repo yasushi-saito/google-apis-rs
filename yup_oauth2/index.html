@@ -114,7 +114,7 @@ authorize future API requests to the same scopes.</p>
                        <tr class=' module-item'>
                            <td><a class='struct' href='struct.ApplicationSecret.html'
                                   title='yup_oauth2::ApplicationSecret'>ApplicationSecret</a></td>
-                           <td class='docblock short'>
+                           <td class='docblock-short'>
                                 <p>Represents either &#39;installed&#39; or &#39;web&#39; applications in a json secrets file.
 See <code>ConsoleApplicationSecret</code> for more information</p>
                            </td>
@@ -122,14 +122,14 @@ See <code>ConsoleApplicationSecret</code> for more information</p>
                        <tr class=' module-item'>
                            <td><a class='struct' href='struct.Authenticator.html'
                                   title='yup_oauth2::Authenticator'>Authenticator</a></td>
-                           <td class='docblock short'>
+                           <td class='docblock-short'>
                                 <p>A generalized authenticator which will keep tokens valid and store them.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
                            <td><a class='struct' href='struct.ConsoleApplicationSecret.html'
                                   title='yup_oauth2::ConsoleApplicationSecret'>ConsoleApplicationSecret</a></td>
-                           <td class='docblock short'>
+                           <td class='docblock-short'>
                                 <p>A type to facilitate reading and writing the json secret file
 as returned by the <a href="https://code.google.com/apis/console">google developer console</a></p>
                            </td>
@@ -137,7 +137,7 @@ as returned by the <a href="https://code.google.com/apis/console">google develop
                        <tr class=' module-item'>
                            <td><a class='struct' href='struct.DefaultAuthenticatorDelegate.html'
                                   title='yup_oauth2::DefaultAuthenticatorDelegate'>DefaultAuthenticatorDelegate</a></td>
-                           <td class='docblock short'>
+                           <td class='docblock-short'>
                                 <p>Uses all default implementations by AuthenticatorDelegate, and makes the trait&#39;s
 implementation usable in the first place.</p>
                            </td>
@@ -145,7 +145,7 @@ implementation usable in the first place.</p>
                        <tr class=' module-item'>
                            <td><a class='struct' href='struct.DeviceFlow.html'
                                   title='yup_oauth2::DeviceFlow'>DeviceFlow</a></td>
-                           <td class='docblock short'>
+                           <td class='docblock-short'>
                                 <p>Implements the <a href="https://developers.google.com/youtube/v3/guides/authentication#devices">Oauth2 Device Flow</a>
 It operates in two steps:
 * obtain a code to show to the user
@@ -155,56 +155,56 @@ It operates in two steps:
                        <tr class=' module-item'>
                            <td><a class='struct' href='struct.DiskTokenStorage.html'
                                   title='yup_oauth2::DiskTokenStorage'>DiskTokenStorage</a></td>
-                           <td class='docblock short'>
+                           <td class='docblock-short'>
                                 <p>Serializes tokens to a JSON file on disk.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
                            <td><a class='struct' href='struct.InstalledFlow.html'
                                   title='yup_oauth2::InstalledFlow'>InstalledFlow</a></td>
-                           <td class='docblock short'>
+                           <td class='docblock-short'>
                                 
                            </td>
                        </tr>
                        <tr class=' module-item'>
                            <td><a class='struct' href='struct.MemoryStorage.html'
                                   title='yup_oauth2::MemoryStorage'>MemoryStorage</a></td>
-                           <td class='docblock short'>
+                           <td class='docblock-short'>
                                 <p>A storage that remembers values for one session only.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
                            <td><a class='struct' href='struct.NullStorage.html'
                                   title='yup_oauth2::NullStorage'>NullStorage</a></td>
-                           <td class='docblock short'>
+                           <td class='docblock-short'>
                                 <p>A storage that remembers nothing.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
                            <td><a class='struct' href='struct.PollInformation.html'
                                   title='yup_oauth2::PollInformation'>PollInformation</a></td>
-                           <td class='docblock short'>
+                           <td class='docblock-short'>
                                 <p>Contains state of pending authentication requests</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
                            <td><a class='struct' href='struct.RefreshFlow.html'
                                   title='yup_oauth2::RefreshFlow'>RefreshFlow</a></td>
-                           <td class='docblock short'>
+                           <td class='docblock-short'>
                                 <p>Implements the <a href="https://developers.google.com/youtube/v3/guides/authentication#devices">Outh2 Refresh Token Flow</a>.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
                            <td><a class='struct' href='struct.Scheme.html'
                                   title='yup_oauth2::Scheme'>Scheme</a></td>
-                           <td class='docblock short'>
+                           <td class='docblock-short'>
                                 <p>A scheme for use in <code>hyper::header::Authorization</code></p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
                            <td><a class='struct' href='struct.ServiceAccountAccess.html'
                                   title='yup_oauth2::ServiceAccountAccess'>ServiceAccountAccess</a></td>
-                           <td class='docblock short'>
+                           <td class='docblock-short'>
                                 <p>A token source (<code>GetToken</code>) yielding OAuth tokens for services that use ServiceAccount authorization.
 This token source caches token and automatically renews expired ones.</p>
                            </td>
@@ -212,7 +212,7 @@ This token source caches token and automatically renews expired ones.</p>
                        <tr class=' module-item'>
                            <td><a class='struct' href='struct.ServiceAccountKey.html'
                                   title='yup_oauth2::ServiceAccountKey'>ServiceAccountKey</a></td>
-                           <td class='docblock short'>
+                           <td class='docblock-short'>
                                 <p>JSON schema of secret service account key. You can obtain the key from
 the Cloud Console at <a href="https://console.cloud.google.com/">https://console.cloud.google.com/</a>.</p>
                            </td>
@@ -220,7 +220,7 @@ the Cloud Console at <a href="https://console.cloud.google.com/">https://console
                        <tr class=' module-item'>
                            <td><a class='struct' href='struct.Token.html'
                                   title='yup_oauth2::Token'>Token</a></td>
-                           <td class='docblock short'>
+                           <td class='docblock-short'>
                                 <p>Represents a token as returned by OAuth2 servers.</p>
                            </td>
                        </tr></table><h2 id='enums' class='section-header'><a href="#enums">Enums</a></h2>
@@ -228,42 +228,42 @@ the Cloud Console at <a href="https://console.cloud.google.com/">https://console
                        <tr class=' module-item'>
                            <td><a class='enum' href='enum.FlowType.html'
                                   title='yup_oauth2::FlowType'>FlowType</a></td>
-                           <td class='docblock short'>
+                           <td class='docblock-short'>
                                 <p>All known authentication types, for suitable constants</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
                            <td><a class='enum' href='enum.InstalledFlowReturnMethod.html'
                                   title='yup_oauth2::InstalledFlowReturnMethod'>InstalledFlowReturnMethod</a></td>
-                           <td class='docblock short'>
+                           <td class='docblock-short'>
                                 <p>cf. <a href="https://developers.google.com/identity/protocols/OAuth2InstalledApp#choosingredirecturi">https://developers.google.com/identity/protocols/OAuth2InstalledApp#choosingredirecturi</a></p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
                            <td><a class='enum' href='enum.PollError.html'
                                   title='yup_oauth2::PollError'>PollError</a></td>
-                           <td class='docblock short'>
+                           <td class='docblock-short'>
                                 <p>Encapsulates all possible results of a <code>poll_token(...)</code> operation</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
                            <td><a class='enum' href='enum.RefreshResult.html'
                                   title='yup_oauth2::RefreshResult'>RefreshResult</a></td>
-                           <td class='docblock short'>
+                           <td class='docblock-short'>
                                 <p>All possible outcomes of the refresh flow</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
                            <td><a class='enum' href='enum.Retry.html'
                                   title='yup_oauth2::Retry'>Retry</a></td>
-                           <td class='docblock short'>
+                           <td class='docblock-short'>
                                 <p>A utility type to indicate how operations DeviceFlowHelper operations should be retried</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
                            <td><a class='enum' href='enum.TokenType.html'
                                   title='yup_oauth2::TokenType'>TokenType</a></td>
-                           <td class='docblock short'>
+                           <td class='docblock-short'>
                                 <p>Represents all implemented token types</p>
                            </td>
                        </tr></table><h2 id='constants' class='section-header'><a href="#constants">Constants</a></h2>
@@ -271,7 +271,7 @@ the Cloud Console at <a href="https://console.cloud.google.com/">https://console
                        <tr class=' module-item'>
                            <td><a class='constant' href='constant.GOOGLE_DEVICE_CODE_URL.html'
                                   title='yup_oauth2::GOOGLE_DEVICE_CODE_URL'>GOOGLE_DEVICE_CODE_URL</a></td>
-                           <td class='docblock short'>
+                           <td class='docblock-short'>
                                 
                            </td>
                        </tr></table><h2 id='traits' class='section-header'><a href="#traits">Traits</a></h2>
@@ -279,14 +279,14 @@ the Cloud Console at <a href="https://console.cloud.google.com/">https://console
                        <tr class=' module-item'>
                            <td><a class='trait' href='trait.AuthenticatorDelegate.html'
                                   title='yup_oauth2::AuthenticatorDelegate'>AuthenticatorDelegate</a></td>
-                           <td class='docblock short'>
+                           <td class='docblock-short'>
                                 <p>A partially implemented trait to interact with the <code>Authenticator</code></p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
                            <td><a class='trait' href='trait.GetToken.html'
                                   title='yup_oauth2::GetToken'>GetToken</a></td>
-                           <td class='docblock short'>
+                           <td class='docblock-short'>
                                 <p>A provider for authorization tokens, yielding tokens valid for a given scope.
 The <code>api_key()</code> method is an alternative in case there are no scopes or
 if no user is involved.</p>
@@ -295,7 +295,7 @@ if no user is involved.</p>
                        <tr class=' module-item'>
                            <td><a class='trait' href='trait.TokenStorage.html'
                                   title='yup_oauth2::TokenStorage'>TokenStorage</a></td>
-                           <td class='docblock short'>
+                           <td class='docblock-short'>
                                 <p>Implements a specialized storage to set and retrieve <code>Token</code> instances.
 The <code>scope_hash</code> represents the signature of the scopes for which the given token
 should be stored or retrieved.
@@ -307,21 +307,21 @@ useful for presentation to the user.</p>
                        <tr class=' module-item'>
                            <td><a class='fn' href='fn.parse_application_secret.html'
                                   title='yup_oauth2::parse_application_secret'>parse_application_secret</a></td>
-                           <td class='docblock short'>
+                           <td class='docblock-short'>
                                 <p>Read an application secret from a JSON string.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
                            <td><a class='fn' href='fn.read_application_secret.html'
                                   title='yup_oauth2::read_application_secret'>read_application_secret</a></td>
-                           <td class='docblock short'>
+                           <td class='docblock-short'>
                                 <p>Read an application secret from a file.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
                            <td><a class='fn' href='fn.service_account_key_from_file.html'
                                   title='yup_oauth2::service_account_key_from_file'>service_account_key_from_file</a></td>
-                           <td class='docblock short'>
+                           <td class='docblock-short'>
                                 <p>Read a service account key from a JSON file. You can download the JSON keys from the Google
 Cloud Console or the respective console of your service provider.</p>
                            </td>
@@ -381,11 +381,9 @@ Cloud Console or the respective console of your service provider.</p>
     <script>
         window.rootPath = "../";
         window.currentCrate = "yup_oauth2";
-        window.playgroundUrl = "";
     </script>
     <script src="../jquery.js"></script>
     <script src="../main.js"></script>
-    
     <script defer src="../search-index.js"></script>
 </body>
 </html>

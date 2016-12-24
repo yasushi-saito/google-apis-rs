@@ -47,10 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-976' class='srclink' href='../src/google_groupsmigration1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-groupsmigration1-f81e499ec65e78e8/out/lib.rs.html#1611-1615' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct GroupsMigration&lt;C,&nbsp;A&gt; {
-    // some fields omitted
-}</pre><div class='docblock'><p>Central instance to access all GroupsMigration related resource activities</p>
+               </span><a id='src-564' class='srclink' href='../src/google_groupsmigration1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-groupsmigration1-f81e499ec65e78e8/out/lib.rs.html#1611-1615' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct GroupsMigration&lt;C, A&gt; { /* fields omitted */ }</pre><div class='docblock'><p>Central instance to access all GroupsMigration related resource activities</p>
 
 <h1 id='examples' class='section-header'><a href='#examples'>Examples</a></h1>
 <p>Instantiate a new hub</p>
@@ -99,15 +97,15 @@
     },
     <span class='prelude-val'>Ok</span>(<span class='ident'>res</span>) <span class='op'>=&gt;</span> <span class='macro'>println</span><span class='macro'>!</span>(<span class='string'>&quot;Success: {:?}&quot;</span>, <span class='ident'>res</span>),
 }</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='struct' href='../google_groupsmigration1/struct.GroupsMigration.html' title='google_groupsmigration1::GroupsMigration'>GroupsMigration</a>&lt;C,&nbsp;A&gt; <span class='where'>where C: <a class='trait' href='https://doc.rust-lang.org/nightly/core/borrow/trait.BorrowMut.html' title='core::borrow::BorrowMut'>BorrowMut</a>&lt;<a class='struct' href='../hyper/client/struct.Client.html' title='hyper::client::Client'>Client</a>&gt;, A: <a class='trait' href='../yup_oauth2/authenticator/trait.GetToken.html' title='yup_oauth2::authenticator::GetToken'>GetToken</a></span></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-986' class='srclink' href='../src/google_groupsmigration1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-groupsmigration1-f81e499ec65e78e8/out/lib.rs.html#1617-1637' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.new' class='method'><code>fn <a href='#method.new' class='fnname'>new</a>(client: C, authenticator: A) -&gt; <a class='struct' href='../google_groupsmigration1/struct.GroupsMigration.html' title='google_groupsmigration1::GroupsMigration'>GroupsMigration</a>&lt;C,&nbsp;A&gt;</code></h4>
-<h4 id='method.archive' class='method'><code>fn <a href='#method.archive' class='fnname'>archive</a>(&amp;'a self) -&gt; <a class='struct' href='../google_groupsmigration1/struct.ArchiveMethods.html' title='google_groupsmigration1::ArchiveMethods'>ArchiveMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
-<h4 id='method.user_agent' class='method'><code>fn <a href='#method.user_agent' class='fnname'>user_agent</a>(&amp;mut self, agent_name: <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>) -&gt; <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a></code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_groupsmigration1/struct.GroupsMigration.html' title='google_groupsmigration1::GroupsMigration'>GroupsMigration</a>&lt;C, A&gt; <span class='where'>where C: <a class='trait' href='https://doc.rust-lang.org/nightly/core/borrow/trait.BorrowMut.html' title='core::borrow::BorrowMut'>BorrowMut</a>&lt;<a class='struct' href='../hyper/client/struct.Client.html' title='hyper::client::Client'>Client</a>&gt;, A: <a class='trait' href='../yup_oauth2/authenticator/trait.GetToken.html' title='yup_oauth2::authenticator::GetToken'>GetToken</a></span></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-574' class='srclink' href='../src/google_groupsmigration1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-groupsmigration1-f81e499ec65e78e8/out/lib.rs.html#1617-1637' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.new' class='method'><span id='new.v' class='invisible'><code>fn <a href='#method.new' class='fnname'>new</a>(client: C, authenticator: A) -&gt; <a class='struct' href='../google_groupsmigration1/struct.GroupsMigration.html' title='google_groupsmigration1::GroupsMigration'>GroupsMigration</a>&lt;C, A&gt;</code></span></h4>
+<h4 id='method.archive' class='method'><span id='archive.v' class='invisible'><code>fn <a href='#method.archive' class='fnname'>archive</a>(&amp;'a self) -&gt; <a class='struct' href='../google_groupsmigration1/struct.ArchiveMethods.html' title='google_groupsmigration1::ArchiveMethods'>ArchiveMethods</a>&lt;'a, C, A&gt;</code></span></h4>
+<h4 id='method.user_agent' class='method'><span id='user_agent.v' class='invisible'><code>fn <a href='#method.user_agent' class='fnname'>user_agent</a>(&amp;mut self, agent_name: <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>) -&gt; <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a></code></span></h4>
 <div class='docblock'><p>Set the user-agent header field to use in all requests to the server.
 It defaults to <code>google-api-rust-client/1.0.0</code>.</p>
 
 <p>Returns the previously set user-agent.</p>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='trait' href='../google_groupsmigration1/trait.Hub.html' title='google_groupsmigration1::Hub'>Hub</a> for <a class='struct' href='../google_groupsmigration1/struct.GroupsMigration.html' title='google_groupsmigration1::GroupsMigration'>GroupsMigration</a>&lt;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-982' class='srclink' href='../src/google_groupsmigration1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-groupsmigration1-f81e499ec65e78e8/out/lib.rs.html#1616' title='goto source code'>[src]</a></span></h3>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_groupsmigration1/trait.Hub.html' title='google_groupsmigration1::Hub'>Hub</a> for <a class='struct' href='../google_groupsmigration1/struct.GroupsMigration.html' title='google_groupsmigration1::GroupsMigration'>GroupsMigration</a>&lt;C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-570' class='srclink' href='../src/google_groupsmigration1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-groupsmigration1-f81e499ec65e78e8/out/lib.rs.html#1616' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 
@@ -164,11 +162,9 @@ It defaults to <code>google-api-rust-client/1.0.0</code>.</p>
     <script>
         window.rootPath = "../";
         window.currentCrate = "google_groupsmigration1";
-        window.playgroundUrl = "";
     </script>
     <script src="../jquery.js"></script>
     <script src="../main.js"></script>
-    
     <script defer src="../search-index.js"></script>
 </body>
 </html>

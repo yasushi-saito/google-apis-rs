@@ -47,10 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-6718' class='srclink' href='../src/google_blogger3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-blogger3-90082e04e114d228/out/lib.rs.html#12018-12020' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct CommentMethods&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: 'a, A: 'a</span> {
-    // some fields omitted
-}</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>comment</em> resources.
+               </span><a id='src-3683' class='srclink' href='../src/google_blogger3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-blogger3-90082e04e114d228/out/lib.rs.html#12018-12020' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct CommentMethods&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> { /* fields omitted */ }</pre><div class='docblock'><p>A builder providing access to all methods supported on <em>comment</em> resources.
 It is not used directly, but through the <code>Blogger</code> hub.</p>
 
 <h1 id='example' class='section-header'><a href='#example'>Example</a></h1>
@@ -74,8 +72,8 @@ It is not used directly, but through the <code>Blogger</code> hub.</p>
 <span class='comment'>// like `approve(...)`, `delete(...)`, `get(...)`, `list(...)`, `list_by_blog(...)`, `mark_as_spam(...)` and `remove_content(...)`</span>
 <span class='comment'>// to build up your call.</span>
 <span class='kw'>let</span> <span class='ident'>rb</span> <span class='op'>=</span> <span class='ident'>hub</span>.<span class='ident'>comments</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='struct' href='../google_blogger3/struct.CommentMethods.html' title='google_blogger3::CommentMethods'>CommentMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-6727' class='srclink' href='../src/google_blogger3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-blogger3-90082e04e114d228/out/lib.rs.html#12022-12165' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.get' class='method'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self, blog_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, post_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, comment_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_blogger3/struct.CommentGetCall.html' title='google_blogger3::CommentGetCall'>CommentGetCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_blogger3/struct.CommentMethods.html' title='google_blogger3::CommentMethods'>CommentMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-3692' class='srclink' href='../src/google_blogger3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-blogger3-90082e04e114d228/out/lib.rs.html#12022-12165' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.get' class='method'><span id='get.v' class='invisible'><code>fn <a href='#method.get' class='fnname'>get</a>(&amp;self,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; blog_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; post_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; comment_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -&gt; <a class='struct' href='../google_blogger3/struct.CommentGetCall.html' title='google_blogger3::CommentGetCall'>CommentGetCall</a>&lt;'a, C, A&gt;</code></span></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Gets one comment by ID.</p>
@@ -86,7 +84,7 @@ It is not used directly, but through the <code>Blogger</code> hub.</p>
 <li><code>postId</code> - ID of the post to fetch posts from.</li>
 <li><code>commentId</code> - The ID of the comment to get.</li>
 </ul>
-</div><h4 id='method.remove_content' class='method'><code>fn <a href='#method.remove_content' class='fnname'>remove_content</a>(&amp;self, blog_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, post_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, comment_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_blogger3/struct.CommentRemoveContentCall.html' title='google_blogger3::CommentRemoveContentCall'>CommentRemoveContentCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+</div><h4 id='method.remove_content' class='method'><span id='remove_content.v' class='invisible'><code>fn <a href='#method.remove_content' class='fnname'>remove_content</a>(&amp;self,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; blog_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; post_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; comment_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -&gt; <a class='struct' href='../google_blogger3/struct.CommentRemoveContentCall.html' title='google_blogger3::CommentRemoveContentCall'>CommentRemoveContentCall</a>&lt;'a, C, A&gt;</code></span></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Removes the content of a comment.</p>
@@ -97,7 +95,7 @@ It is not used directly, but through the <code>Blogger</code> hub.</p>
 <li><code>postId</code> - The ID of the Post.</li>
 <li><code>commentId</code> - The ID of the comment to delete content from.</li>
 </ul>
-</div><h4 id='method.list_by_blog' class='method'><code>fn <a href='#method.list_by_blog' class='fnname'>list_by_blog</a>(&amp;self, blog_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_blogger3/struct.CommentListByBlogCall.html' title='google_blogger3::CommentListByBlogCall'>CommentListByBlogCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+</div><h4 id='method.list_by_blog' class='method'><span id='list_by_blog.v' class='invisible'><code>fn <a href='#method.list_by_blog' class='fnname'>list_by_blog</a>(&amp;self, blog_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_blogger3/struct.CommentListByBlogCall.html' title='google_blogger3::CommentListByBlogCall'>CommentListByBlogCall</a>&lt;'a, C, A&gt;</code></span></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Retrieves the comments for a blog, across all posts, possibly filtered.</p>
@@ -106,7 +104,7 @@ It is not used directly, but through the <code>Blogger</code> hub.</p>
 <ul>
 <li><code>blogId</code> - ID of the blog to fetch comments from.</li>
 </ul>
-</div><h4 id='method.mark_as_spam' class='method'><code>fn <a href='#method.mark_as_spam' class='fnname'>mark_as_spam</a>(&amp;self, blog_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, post_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, comment_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_blogger3/struct.CommentMarkAsSpamCall.html' title='google_blogger3::CommentMarkAsSpamCall'>CommentMarkAsSpamCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+</div><h4 id='method.mark_as_spam' class='method'><span id='mark_as_spam.v' class='invisible'><code>fn <a href='#method.mark_as_spam' class='fnname'>mark_as_spam</a>(&amp;self,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; blog_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; post_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; comment_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -&gt; <a class='struct' href='../google_blogger3/struct.CommentMarkAsSpamCall.html' title='google_blogger3::CommentMarkAsSpamCall'>CommentMarkAsSpamCall</a>&lt;'a, C, A&gt;</code></span></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Marks a comment as spam.</p>
@@ -117,7 +115,7 @@ It is not used directly, but through the <code>Blogger</code> hub.</p>
 <li><code>postId</code> - The ID of the Post.</li>
 <li><code>commentId</code> - The ID of the comment to mark as spam.</li>
 </ul>
-</div><h4 id='method.list' class='method'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self, blog_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, post_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_blogger3/struct.CommentListCall.html' title='google_blogger3::CommentListCall'>CommentListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+</div><h4 id='method.list' class='method'><span id='list.v' class='invisible'><code>fn <a href='#method.list' class='fnname'>list</a>(&amp;self, blog_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, post_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_blogger3/struct.CommentListCall.html' title='google_blogger3::CommentListCall'>CommentListCall</a>&lt;'a, C, A&gt;</code></span></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Retrieves the comments for a post, possibly filtered.</p>
@@ -127,7 +125,7 @@ It is not used directly, but through the <code>Blogger</code> hub.</p>
 <li><code>blogId</code> - ID of the blog to fetch comments from.</li>
 <li><code>postId</code> - ID of the post to fetch posts from.</li>
 </ul>
-</div><h4 id='method.approve' class='method'><code>fn <a href='#method.approve' class='fnname'>approve</a>(&amp;self, blog_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, post_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, comment_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_blogger3/struct.CommentApproveCall.html' title='google_blogger3::CommentApproveCall'>CommentApproveCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+</div><h4 id='method.approve' class='method'><span id='approve.v' class='invisible'><code>fn <a href='#method.approve' class='fnname'>approve</a>(&amp;self,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; blog_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; post_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; comment_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -&gt; <a class='struct' href='../google_blogger3/struct.CommentApproveCall.html' title='google_blogger3::CommentApproveCall'>CommentApproveCall</a>&lt;'a, C, A&gt;</code></span></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Marks a comment as not spam.</p>
@@ -138,7 +136,7 @@ It is not used directly, but through the <code>Blogger</code> hub.</p>
 <li><code>postId</code> - The ID of the Post.</li>
 <li><code>commentId</code> - The ID of the comment to mark as not spam.</li>
 </ul>
-</div><h4 id='method.delete' class='method'><code>fn <a href='#method.delete' class='fnname'>delete</a>(&amp;self, blog_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, post_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, comment_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_blogger3/struct.CommentDeleteCall.html' title='google_blogger3::CommentDeleteCall'>CommentDeleteCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+</div><h4 id='method.delete' class='method'><span id='delete.v' class='invisible'><code>fn <a href='#method.delete' class='fnname'>delete</a>(&amp;self,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; blog_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; post_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; comment_id: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -&gt; <a class='struct' href='../google_blogger3/struct.CommentDeleteCall.html' title='google_blogger3::CommentDeleteCall'>CommentDeleteCall</a>&lt;'a, C, A&gt;</code></span></h4>
 <div class='docblock'><p>Create a builder to help you perform the following task:</p>
 
 <p>Delete a comment by ID.</p>
@@ -149,7 +147,7 @@ It is not used directly, but through the <code>Blogger</code> hub.</p>
 <li><code>postId</code> - The ID of the Post.</li>
 <li><code>commentId</code> - The ID of the comment to delete.</li>
 </ul>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='trait' href='../google_blogger3/trait.MethodsBuilder.html' title='google_blogger3::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_blogger3/struct.CommentMethods.html' title='google_blogger3::CommentMethods'>CommentMethods</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-6723' class='srclink' href='../src/google_blogger3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-blogger3-90082e04e114d228/out/lib.rs.html#12021' title='goto source code'>[src]</a></span></h3>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_blogger3/trait.MethodsBuilder.html' title='google_blogger3::MethodsBuilder'>MethodsBuilder</a> for <a class='struct' href='../google_blogger3/struct.CommentMethods.html' title='google_blogger3::CommentMethods'>CommentMethods</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-3688' class='srclink' href='../src/google_blogger3/home/byron/dev/rust/google-apis-rs/target/debug/build/google-blogger3-90082e04e114d228/out/lib.rs.html#12021' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 
@@ -206,11 +204,9 @@ It is not used directly, but through the <code>Blogger</code> hub.</p>
     <script>
         window.rootPath = "../";
         window.currentCrate = "google_blogger3";
-        window.playgroundUrl = "";
     </script>
     <script src="../jquery.js"></script>
     <script src="../main.js"></script>
-    
     <script defer src="../search-index.js"></script>
 </body>
 </html>

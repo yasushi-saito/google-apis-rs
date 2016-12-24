@@ -47,7 +47,7 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-527' class='srclink' href='../src/google_dfareporting2d1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-dfareporting2d1-4bc9d080d1899297/out/lib.rs.html#5888-5982' title='goto source code'>[src]</a></span></h1>
+               </span><a id='src-341' class='srclink' href='../src/google_dfareporting2d1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-dfareporting2d1-4bc9d080d1899297/out/lib.rs.html#5888-5982' title='goto source code'>[src]</a></span></h1>
 <pre class='rust trait'>pub trait Delegate {
     fn <a href='#method.begin' class='fnname'>begin</a>(&amp;mut self, <a class='struct' href='../google_dfareporting2d1/struct.MethodInfo.html' title='google_dfareporting2d1::MethodInfo'>MethodInfo</a>) { ... }
     fn <a href='#method.http_error' class='fnname'>http_error</a>(&amp;mut self, &amp;<a class='enum' href='../hyper/error/enum.Error.html' title='hyper::error::Error'>Error</a>) -&gt; <a class='enum' href='../yup_oauth2/authenticator/enum.Retry.html' title='yup_oauth2::authenticator::Retry'>Retry</a> { ... }
@@ -55,8 +55,8 @@
     fn <a href='#method.token' class='fnname'>token</a>(&amp;mut self, err: &amp;<a class='trait' href='https://doc.rust-lang.org/nightly/std/error/trait.Error.html' title='std::error::Error'>Error</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../yup_oauth2/types/struct.Token.html' title='yup_oauth2::types::Token'>Token</a>&gt; { ... }
     fn <a href='#method.upload_url' class='fnname'>upload_url</a>(&amp;mut self) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt; { ... }
     fn <a href='#method.store_upload_url' class='fnname'>store_upload_url</a>(&amp;mut self, url: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;&amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>&gt;) { ... }
-    fn <a href='#method.response_json_decode_error' class='fnname'>response_json_decode_error</a>(&amp;mut self, json_encoded_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, json_decode_error: &amp;<a class='enum' href='../serde_json/error/enum.Error.html' title='serde_json::error::Error'>Error</a>) { ... }
-    fn <a href='#method.http_failure' class='fnname'>http_failure</a>(&amp;mut self, _: &amp;<a class='struct' href='../hyper/client/response/struct.Response.html' title='hyper::client::response::Response'>Response</a>, <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;JsonServerError&gt;, _: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;ServerError&gt;) -&gt; <a class='enum' href='../yup_oauth2/authenticator/enum.Retry.html' title='yup_oauth2::authenticator::Retry'>Retry</a> { ... }
+    fn <a href='#method.response_json_decode_error' class='fnname'>response_json_decode_error</a>(&amp;mut self,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; json_encoded_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; json_decode_error: &amp;<a class='enum' href='../serde_json/error/enum.Error.html' title='serde_json::error::Error'>Error</a>) { ... }
+    fn <a href='#method.http_failure' class='fnname'>http_failure</a>(&amp;mut self,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _: &amp;<a class='struct' href='../hyper/client/response/struct.Response.html' title='hyper::client::response::Response'>Response</a>,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;JsonServerError&gt;,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;ServerError&gt;)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -&gt; <a class='enum' href='../yup_oauth2/authenticator/enum.Retry.html' title='yup_oauth2::authenticator::Retry'>Retry</a> { ... }
     fn <a href='#method.pre_request' class='fnname'>pre_request</a>(&amp;mut self) { ... }
     fn <a href='#method.chunk_size' class='fnname'>chunk_size</a>(&amp;mut self) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u64.html'>u64</a> { ... }
     fn <a href='#method.cancel_chunk_upload' class='fnname'>cancel_chunk_upload</a>(&amp;mut self, chunk: &amp;ContentRange) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a> { ... }
@@ -69,40 +69,40 @@ uploading media</p>
 </div>
             <h2 id='provided-methods'>Provided Methods</h2>
             <div class='methods'>
-        <h3 id='method.begin' class='method stab '><code>fn <a href='#method.begin' class='fnname'>begin</a>(&amp;mut self, <a class='struct' href='../google_dfareporting2d1/struct.MethodInfo.html' title='google_dfareporting2d1::MethodInfo'>MethodInfo</a>)</code></h3><div class='docblock'><p>Called at the beginning of any API request. The delegate should store the method
+        <h3 id='method.begin' class='method stab '><span id='begin.v' class='invisible'><code>fn <a href='#method.begin' class='fnname'>begin</a>(&amp;mut self, <a class='struct' href='../google_dfareporting2d1/struct.MethodInfo.html' title='google_dfareporting2d1::MethodInfo'>MethodInfo</a>)</code></span></h3><div class='docblock'><p>Called at the beginning of any API request. The delegate should store the method
 information if he is interesting in knowing more context when further calls to it
 are made.
 The matching <code>finished()</code> call will always be made, no matter whether or not the API
 request was successful. That way, the delegate may easily maintain a clean state
 between various API calls.</p>
-</div><h3 id='method.http_error' class='method stab '><code>fn <a href='#method.http_error' class='fnname'>http_error</a>(&amp;mut self, &amp;<a class='enum' href='../hyper/error/enum.Error.html' title='hyper::error::Error'>Error</a>) -&gt; <a class='enum' href='../yup_oauth2/authenticator/enum.Retry.html' title='yup_oauth2::authenticator::Retry'>Retry</a></code></h3><div class='docblock'><p>Called whenever there is an <a href="http://hyperium.github.io/hyper/hyper/error/enum.HttpError.html">HttpError</a>, usually if there are network problems.</p>
+</div><h3 id='method.http_error' class='method stab '><span id='http_error.v' class='invisible'><code>fn <a href='#method.http_error' class='fnname'>http_error</a>(&amp;mut self, &amp;<a class='enum' href='../hyper/error/enum.Error.html' title='hyper::error::Error'>Error</a>) -&gt; <a class='enum' href='../yup_oauth2/authenticator/enum.Retry.html' title='yup_oauth2::authenticator::Retry'>Retry</a></code></span></h3><div class='docblock'><p>Called whenever there is an <a href="http://hyperium.github.io/hyper/hyper/error/enum.HttpError.html">HttpError</a>, usually if there are network problems.</p>
 
 <p>If you choose to retry after a duration, the duration should be chosen using the
 <a href="http://en.wikipedia.org/wiki/Exponential_backoff">exponential backoff algorithm</a>.</p>
 
 <p>Return retry information.</p>
-</div><h3 id='method.api_key' class='method stab '><code>fn <a href='#method.api_key' class='fnname'>api_key</a>(&amp;mut self) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;</code></h3><div class='docblock'><p>Called whenever there is the need for your applications API key after
+</div><h3 id='method.api_key' class='method stab '><span id='api_key.v' class='invisible'><code>fn <a href='#method.api_key' class='fnname'>api_key</a>(&amp;mut self) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;</code></span></h3><div class='docblock'><p>Called whenever there is the need for your applications API key after
 the official authenticator implementation didn&#39;t provide one, for some reason.
 If this method returns None as well, the underlying operation will fail</p>
-</div><h3 id='method.token' class='method stab '><code>fn <a href='#method.token' class='fnname'>token</a>(&amp;mut self, err: &amp;<a class='trait' href='https://doc.rust-lang.org/nightly/std/error/trait.Error.html' title='std::error::Error'>Error</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../yup_oauth2/types/struct.Token.html' title='yup_oauth2::types::Token'>Token</a>&gt;</code></h3><div class='docblock'><p>Called whenever the Authenticator didn&#39;t yield a token. The delegate
+</div><h3 id='method.token' class='method stab '><span id='token.v' class='invisible'><code>fn <a href='#method.token' class='fnname'>token</a>(&amp;mut self, err: &amp;<a class='trait' href='https://doc.rust-lang.org/nightly/std/error/trait.Error.html' title='std::error::Error'>Error</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../yup_oauth2/types/struct.Token.html' title='yup_oauth2::types::Token'>Token</a>&gt;</code></span></h3><div class='docblock'><p>Called whenever the Authenticator didn&#39;t yield a token. The delegate
 may attempt to provide one, or just take it as a general information about the
 impending failure.
 The given Error provides information about why the token couldn&#39;t be acquired in the
 first place</p>
-</div><h3 id='method.upload_url' class='method stab '><code>fn <a href='#method.upload_url' class='fnname'>upload_url</a>(&amp;mut self) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;</code></h3><div class='docblock'><p>Called during resumable uploads to provide a URL for the impending upload.
+</div><h3 id='method.upload_url' class='method stab '><span id='upload_url.v' class='invisible'><code>fn <a href='#method.upload_url' class='fnname'>upload_url</a>(&amp;mut self) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;</code></span></h3><div class='docblock'><p>Called during resumable uploads to provide a URL for the impending upload.
 It was saved after a previous call to <code>store_upload_url(...)</code>, and if not None,
 will be used instead of asking the server for a new upload URL.
 This is useful in case a previous resumable upload was aborted/canceled, but should now
 be resumed.
 The returned URL will be used exactly once - if it fails again and the delegate allows
 to retry, we will ask the server for a new upload URL.</p>
-</div><h3 id='method.store_upload_url' class='method stab '><code>fn <a href='#method.store_upload_url' class='fnname'>store_upload_url</a>(&amp;mut self, url: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;&amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>&gt;)</code></h3><div class='docblock'><p>Called after we have retrieved a new upload URL for a resumable upload to store it
+</div><h3 id='method.store_upload_url' class='method stab '><span id='store_upload_url.v' class='invisible'><code>fn <a href='#method.store_upload_url' class='fnname'>store_upload_url</a>(&amp;mut self, url: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;&amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>&gt;)</code></span></h3><div class='docblock'><p>Called after we have retrieved a new upload URL for a resumable upload to store it
 in case we fail or cancel. That way, we can attempt to resume the upload later,
 see <code>upload_url()</code>.
 It will also be called with None after a successful upload, which allows the delegate
 to forget the URL. That way, we will not attempt to resume an upload that has already
 finished.</p>
-</div><h3 id='method.response_json_decode_error' class='method stab '><code>fn <a href='#method.response_json_decode_error' class='fnname'>response_json_decode_error</a>(&amp;mut self, json_encoded_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, json_decode_error: &amp;<a class='enum' href='../serde_json/error/enum.Error.html' title='serde_json::error::Error'>Error</a>)</code></h3><div class='docblock'><p>Called whenever a server response could not be decoded from json.
+</div><h3 id='method.response_json_decode_error' class='method stab '><span id='response_json_decode_error.v' class='invisible'><code>fn <a href='#method.response_json_decode_error' class='fnname'>response_json_decode_error</a>(&amp;mut self,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; json_encoded_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; json_decode_error: &amp;<a class='enum' href='../serde_json/error/enum.Error.html' title='serde_json::error::Error'>Error</a>)</code></span></h3><div class='docblock'><p>Called whenever a server response could not be decoded from json.
 It&#39;s for informational purposes only, the caller will return with an error
 accordingly.</p>
 
@@ -111,7 +111,7 @@ accordingly.</p>
 <li><code>json_encoded_value</code> - The json-encoded value which failed to decode.</li>
 <li><code>json_decode_error</code>  - The decoder error</li>
 </ul>
-</div><h3 id='method.http_failure' class='method stab '><code>fn <a href='#method.http_failure' class='fnname'>http_failure</a>(&amp;mut self, _: &amp;<a class='struct' href='../hyper/client/response/struct.Response.html' title='hyper::client::response::Response'>Response</a>, <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;JsonServerError&gt;, _: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;ServerError&gt;) -&gt; <a class='enum' href='../yup_oauth2/authenticator/enum.Retry.html' title='yup_oauth2::authenticator::Retry'>Retry</a></code></h3><div class='docblock'><p>Called whenever the http request returns with a non-success status code.
+</div><h3 id='method.http_failure' class='method stab '><span id='http_failure.v' class='invisible'><code>fn <a href='#method.http_failure' class='fnname'>http_failure</a>(&amp;mut self,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _: &amp;<a class='struct' href='../hyper/client/response/struct.Response.html' title='hyper::client::response::Response'>Response</a>,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;JsonServerError&gt;,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;ServerError&gt;)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -&gt; <a class='enum' href='../yup_oauth2/authenticator/enum.Retry.html' title='yup_oauth2::authenticator::Retry'>Retry</a></code></span></h3><div class='docblock'><p>Called whenever the http request returns with a non-success status code.
 This can involve authentication issues, or anything else that very much
 depends on the used API method.
 The delegate should check the status, header and decoded json error to decide
@@ -119,17 +119,17 @@ whether to retry or not. In the latter case, the underlying call will fail.</p>
 
 <p>If you choose to retry after a duration, the duration should be chosen using the
 <a href="http://en.wikipedia.org/wiki/Exponential_backoff">exponential backoff algorithm</a>.</p>
-</div><h3 id='method.pre_request' class='method stab '><code>fn <a href='#method.pre_request' class='fnname'>pre_request</a>(&amp;mut self)</code></h3><div class='docblock'><p>Called prior to sending the main request of the given method. It can be used to time
+</div><h3 id='method.pre_request' class='method stab '><span id='pre_request.v' class='invisible'><code>fn <a href='#method.pre_request' class='fnname'>pre_request</a>(&amp;mut self)</code></span></h3><div class='docblock'><p>Called prior to sending the main request of the given method. It can be used to time
 the call or to print progress information.
 It&#39;s also useful as you can be sure that a request will definitely be made.</p>
-</div><h3 id='method.chunk_size' class='method stab '><code>fn <a href='#method.chunk_size' class='fnname'>chunk_size</a>(&amp;mut self) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u64.html'>u64</a></code></h3><div class='docblock'><p>Return the size of each chunk of a resumable upload.
+</div><h3 id='method.chunk_size' class='method stab '><span id='chunk_size.v' class='invisible'><code>fn <a href='#method.chunk_size' class='fnname'>chunk_size</a>(&amp;mut self) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u64.html'>u64</a></code></span></h3><div class='docblock'><p>Return the size of each chunk of a resumable upload.
 Must be a power of two, with 1&lt;&lt;18 being the smallest allowed chunk size.
 Will be called once before starting any resumable upload.</p>
-</div><h3 id='method.cancel_chunk_upload' class='method stab '><code>fn <a href='#method.cancel_chunk_upload' class='fnname'>cancel_chunk_upload</a>(&amp;mut self, chunk: &amp;ContentRange) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></h3><div class='docblock'><p>Called before the given chunk is uploaded to the server.
+</div><h3 id='method.cancel_chunk_upload' class='method stab '><span id='cancel_chunk_upload.v' class='invisible'><code>fn <a href='#method.cancel_chunk_upload' class='fnname'>cancel_chunk_upload</a>(&amp;mut self, chunk: &amp;ContentRange) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></span></h3><div class='docblock'><p>Called before the given chunk is uploaded to the server.
 If true is returned, the upload will be interrupted.
 However, it may be resumable if you stored the upload URL in a previous call
 to <code>store_upload_url()</code></p>
-</div><h3 id='method.finished' class='method stab '><code>fn <a href='#method.finished' class='fnname'>finished</a>(&amp;mut self, is_success: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>)</code></h3><div class='docblock'><p>Called before the API request method returns, in every case. It can be used to clean up
+</div><h3 id='method.finished' class='method stab '><span id='finished.v' class='invisible'><code>fn <a href='#method.finished' class='fnname'>finished</a>(&amp;mut self, is_success: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>)</code></span></h3><div class='docblock'><p>Called before the API request method returns, in every case. It can be used to clean up
 internal state between calls to the API.
 This call always has a matching call to <code>begin(...)</code>.</p>
 
@@ -200,11 +200,9 @@ This call always has a matching call to <code>begin(...)</code>.</p>
     <script>
         window.rootPath = "../";
         window.currentCrate = "google_dfareporting2d1";
-        window.playgroundUrl = "";
     </script>
     <script src="../jquery.js"></script>
     <script src="../main.js"></script>
-    
     <script defer src="../search-index.js"></script>
 </body>
 </html>

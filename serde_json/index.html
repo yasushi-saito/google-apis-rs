@@ -47,7 +47,7 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-0' class='srclink' href='../src/serde_json/lib.rs.html#1-162' title='goto source code'>[src]</a></span></h1>
+               </span><a id='src-0' class='srclink' href='../src/serde_json/lib.rs.html#1-165' title='goto source code'>[src]</a></span></h1>
 <div class='docblock'><p>JSON and serialization</p>
 
 <h1 id='what-is-json' class='section-header'><a href='#what-is-json'>What is JSON?</a></h1>
@@ -59,7 +59,7 @@ and native compatibility with JavaScript have made it a widely used format.</p>
 details):</p>
 
 <ul>
-<li><code>Bool</code>: equivalent to rust&#39;s <code>bool</code></li>
+<li><code>Boolean</code>: equivalent to rust&#39;s <code>bool</code></li>
 <li><code>I64</code>: equivalent to rust&#39;s <code>i64</code></li>
 <li><code>U64</code>: equivalent to rust&#39;s <code>u64</code></li>
 <li><code>F64</code>: equivalent to rust&#39;s <code>f64</code></li>
@@ -127,6 +127,9 @@ functions described above.  You can also use the <code>json::Serializer</code> o
 <h1 id='examples-of-use' class='section-header'><a href='#examples-of-use'>Examples of use</a></h1>
 <h2 id='parsing-a-str-to-value-and-reading-the-result' class='section-header'><a href='#parsing-a-str-to-value-and-reading-the-result'>Parsing a <code>str</code> to <code>Value</code> and reading the result</a></h2>
 <pre class='rust rust-example-rendered'>
+<span class='comment'>//#![feature(custom_derive, plugin)]</span>
+<span class='comment'>//#![plugin(serde_macros)]</span>
+
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>serde_json</span>;
 
 <span class='kw'>use</span> <span class='ident'>serde_json</span>::<span class='ident'>Value</span>;
@@ -162,35 +165,35 @@ functions described above.  You can also use the <code>json::Serializer</code> o
                        <tr class=' module-item'>
                            <td><a class='mod' href='builder/index.html'
                                   title='serde_json::builder'>builder</a></td>
-                           <td class='docblock short'>
+                           <td class='docblock-short'>
                                 <p>JSON Builders</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
                            <td><a class='mod' href='de/index.html'
                                   title='serde_json::de'>de</a></td>
-                           <td class='docblock short'>
+                           <td class='docblock-short'>
                                 <p>JSON Deserialization</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
                            <td><a class='mod' href='error/index.html'
                                   title='serde_json::error'>error</a></td>
-                           <td class='docblock short'>
+                           <td class='docblock-short'>
                                 <p>JSON Errors</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
                            <td><a class='mod' href='ser/index.html'
                                   title='serde_json::ser'>ser</a></td>
-                           <td class='docblock short'>
+                           <td class='docblock-short'>
                                 <p>JSON Serialization</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
                            <td><a class='mod' href='value/index.html'
                                   title='serde_json::value'>value</a></td>
-                           <td class='docblock short'>
+                           <td class='docblock-short'>
                                 <p>JSON Value</p>
                            </td>
                        </tr></table></section>
@@ -249,11 +252,9 @@ functions described above.  You can also use the <code>json::Serializer</code> o
     <script>
         window.rootPath = "../";
         window.currentCrate = "serde_json";
-        window.playgroundUrl = "";
     </script>
     <script src="../jquery.js"></script>
     <script src="../main.js"></script>
-    
     <script defer src="../search-index.js"></script>
 </body>
 </html>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-safebrowsing4-cli/</loc>
+     <lastmod>2016-12-24</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-safebrowsing4-cli/full-hashes_find/</loc>
+     <lastmod>2016-12-24</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-safebrowsing4-cli/threat-list-updates_fetch/</loc>
+     <lastmod>2016-12-24</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-safebrowsing4-cli/threat-lists_list/</loc>
+     <lastmod>2016-12-24</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-safebrowsing4-cli/threat-matches_find/</loc>
+     <lastmod>2016-12-24</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+</urlset>

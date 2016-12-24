@@ -47,10 +47,8 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-47449' class='srclink' href='../src/google_dfareporting2d1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-dfareporting2d1-4bc9d080d1899297/out/lib.rs.html#99436-99466' title='goto source code'>[src]</a></span></h1>
-<pre class='rust struct'>pub struct AdListCall&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: 'a, A: 'a</span> {
-    // some fields omitted
-}</pre><div class='docblock'><p>Retrieves a list of ads, possibly filtered.</p>
+               </span><a id='src-27614' class='srclink' href='../src/google_dfareporting2d1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-dfareporting2d1-4bc9d080d1899297/out/lib.rs.html#99436-99466' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct AdListCall&lt;'a, C, A&gt; <span class='where'>where C: 'a, A: 'a</span> { /* fields omitted */ }</pre><div class='docblock'><p>Retrieves a list of ads, possibly filtered.</p>
 
 <p>A builder for the <em>list</em> method supported by a <em>ad</em> resource.
 It is not used directly, but through a <code>AdMethods</code> instance.</p>
@@ -89,130 +87,130 @@ It is not used directly, but through a <code>AdMethods</code> instance.</p>
              .<span class='ident'>advertiser_id</span>(<span class='string'>&quot;consetetur&quot;</span>)
              .<span class='ident'>active</span>(<span class='bool-val'>true</span>)
              .<span class='ident'>doit</span>();</pre>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='struct' href='../google_dfareporting2d1/struct.AdListCall.html' title='google_dfareporting2d1::AdListCall'>AdListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where C: <a class='trait' href='https://doc.rust-lang.org/nightly/core/borrow/trait.BorrowMut.html' title='core::borrow::BorrowMut'>BorrowMut</a>&lt;<a class='struct' href='../hyper/client/struct.Client.html' title='hyper::client::Client'>Client</a>&gt;, A: <a class='trait' href='../yup_oauth2/authenticator/trait.GetToken.html' title='yup_oauth2::authenticator::GetToken'>GetToken</a></span></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-47486' class='srclink' href='../src/google_dfareporting2d1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-dfareporting2d1-4bc9d080d1899297/out/lib.rs.html#99468-99943' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.doit' class='method'><code>fn <a href='#method.doit' class='fnname'>doit</a>(self) -&gt; <a class='type' href='../google_dfareporting2d1/type.Result.html' title='google_dfareporting2d1::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>(</a><a class='struct' href='../hyper/client/response/struct.Response.html' title='hyper::client::response::Response'>Response</a>, <a class='struct' href='../google_dfareporting2d1/struct.AdsListResponse.html' title='google_dfareporting2d1::AdsListResponse'>AdsListResponse</a><a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>)</a>&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='struct' href='../google_dfareporting2d1/struct.AdListCall.html' title='google_dfareporting2d1::AdListCall'>AdListCall</a>&lt;'a, C, A&gt; <span class='where'>where C: <a class='trait' href='https://doc.rust-lang.org/nightly/core/borrow/trait.BorrowMut.html' title='core::borrow::BorrowMut'>BorrowMut</a>&lt;<a class='struct' href='../hyper/client/struct.Client.html' title='hyper::client::Client'>Client</a>&gt;, A: <a class='trait' href='../yup_oauth2/authenticator/trait.GetToken.html' title='yup_oauth2::authenticator::GetToken'>GetToken</a></span></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-27651' class='srclink' href='../src/google_dfareporting2d1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-dfareporting2d1-4bc9d080d1899297/out/lib.rs.html#99468-99943' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.doit' class='method'><span id='doit.v' class='invisible'><code>fn <a href='#method.doit' class='fnname'>doit</a>(self) -&gt; <a class='type' href='../google_dfareporting2d1/type.Result.html' title='google_dfareporting2d1::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>(</a><a class='struct' href='../hyper/client/response/struct.Response.html' title='hyper::client::response::Response'>Response</a>, <a class='struct' href='../google_dfareporting2d1/struct.AdsListResponse.html' title='google_dfareporting2d1::AdsListResponse'>AdsListResponse</a><a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>)</a>&gt;</code></span></h4>
 <div class='docblock'><p>Perform the operation you have build so far.</p>
-</div><h4 id='method.profile_id' class='method'><code>fn <a href='#method.profile_id' class='fnname'>profile_id</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.AdListCall.html' title='google_dfareporting2d1::AdListCall'>AdListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+</div><h4 id='method.profile_id' class='method'><span id='profile_id.v' class='invisible'><code>fn <a href='#method.profile_id' class='fnname'>profile_id</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.AdListCall.html' title='google_dfareporting2d1::AdListCall'>AdListCall</a>&lt;'a, C, A&gt;</code></span></h4>
 <div class='docblock'><p>User profile ID associated with this request.</p>
 
 <p>Sets the <em>profile id</em> path property to the given value.</p>
 
 <p>Even though the property as already been set when instantiating this call,
 we provide this method for API completeness.</p>
-</div><h4 id='method.add_type' class='method'><code>fn <a href='#method.add_type' class='fnname'>add_type</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.AdListCall.html' title='google_dfareporting2d1::AdListCall'>AdListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+</div><h4 id='method.add_type' class='method'><span id='add_type.v' class='invisible'><code>fn <a href='#method.add_type' class='fnname'>add_type</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.AdListCall.html' title='google_dfareporting2d1::AdListCall'>AdListCall</a>&lt;'a, C, A&gt;</code></span></h4>
 <div class='docblock'><p>Select only ads with these types.</p>
 
 <p>Append the given value to the <em>type</em> query property.
 Each appended value will retain its original ordering and be &#39;/&#39;-separated in the URL&#39;s parameters.</p>
-</div><h4 id='method.ssl_required' class='method'><code>fn <a href='#method.ssl_required' class='fnname'>ssl_required</a>(self, new_value: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.AdListCall.html' title='google_dfareporting2d1::AdListCall'>AdListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+</div><h4 id='method.ssl_required' class='method'><span id='ssl_required.v' class='invisible'><code>fn <a href='#method.ssl_required' class='fnname'>ssl_required</a>(self, new_value: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.AdListCall.html' title='google_dfareporting2d1::AdListCall'>AdListCall</a>&lt;'a, C, A&gt;</code></span></h4>
 <div class='docblock'><p>Select only ads that require SSL.</p>
 
 <p>Sets the <em>ssl required</em> query property to the given value.</p>
-</div><h4 id='method.ssl_compliant' class='method'><code>fn <a href='#method.ssl_compliant' class='fnname'>ssl_compliant</a>(self, new_value: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.AdListCall.html' title='google_dfareporting2d1::AdListCall'>AdListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+</div><h4 id='method.ssl_compliant' class='method'><span id='ssl_compliant.v' class='invisible'><code>fn <a href='#method.ssl_compliant' class='fnname'>ssl_compliant</a>(self, new_value: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.AdListCall.html' title='google_dfareporting2d1::AdListCall'>AdListCall</a>&lt;'a, C, A&gt;</code></span></h4>
 <div class='docblock'><p>Select only ads that are SSL-compliant.</p>
 
 <p>Sets the <em>ssl compliant</em> query property to the given value.</p>
-</div><h4 id='method.sort_order' class='method'><code>fn <a href='#method.sort_order' class='fnname'>sort_order</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.AdListCall.html' title='google_dfareporting2d1::AdListCall'>AdListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+</div><h4 id='method.sort_order' class='method'><span id='sort_order.v' class='invisible'><code>fn <a href='#method.sort_order' class='fnname'>sort_order</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.AdListCall.html' title='google_dfareporting2d1::AdListCall'>AdListCall</a>&lt;'a, C, A&gt;</code></span></h4>
 <div class='docblock'><p>Order of sorted results, default is ASCENDING.</p>
 
 <p>Sets the <em>sort order</em> query property to the given value.</p>
-</div><h4 id='method.sort_field' class='method'><code>fn <a href='#method.sort_field' class='fnname'>sort_field</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.AdListCall.html' title='google_dfareporting2d1::AdListCall'>AdListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+</div><h4 id='method.sort_field' class='method'><span id='sort_field.v' class='invisible'><code>fn <a href='#method.sort_field' class='fnname'>sort_field</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.AdListCall.html' title='google_dfareporting2d1::AdListCall'>AdListCall</a>&lt;'a, C, A&gt;</code></span></h4>
 <div class='docblock'><p>Field by which to sort the list.</p>
 
 <p>Sets the <em>sort field</em> query property to the given value.</p>
-</div><h4 id='method.add_size_ids' class='method'><code>fn <a href='#method.add_size_ids' class='fnname'>add_size_ids</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.AdListCall.html' title='google_dfareporting2d1::AdListCall'>AdListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+</div><h4 id='method.add_size_ids' class='method'><span id='add_size_ids.v' class='invisible'><code>fn <a href='#method.add_size_ids' class='fnname'>add_size_ids</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.AdListCall.html' title='google_dfareporting2d1::AdListCall'>AdListCall</a>&lt;'a, C, A&gt;</code></span></h4>
 <div class='docblock'><p>Select only ads with these size IDs.</p>
 
 <p>Append the given value to the <em>size ids</em> query property.
 Each appended value will retain its original ordering and be &#39;/&#39;-separated in the URL&#39;s parameters.</p>
-</div><h4 id='method.search_string' class='method'><code>fn <a href='#method.search_string' class='fnname'>search_string</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.AdListCall.html' title='google_dfareporting2d1::AdListCall'>AdListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+</div><h4 id='method.search_string' class='method'><span id='search_string.v' class='invisible'><code>fn <a href='#method.search_string' class='fnname'>search_string</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.AdListCall.html' title='google_dfareporting2d1::AdListCall'>AdListCall</a>&lt;'a, C, A&gt;</code></span></h4>
 <div class='docblock'><p>Allows searching for objects by name or ID. Wildcards (*) are allowed. For example, &quot;ad*2015&quot; will return objects with names like &quot;ad June 2015&quot;, &quot;ad April 2015&quot;, or simply &quot;ad 2015&quot;. Most of the searches also add wildcards implicitly at the start and the end of the search string. For example, a search string of &quot;ad&quot; will match objects with name &quot;my ad&quot;, &quot;ad 2015&quot;, or simply &quot;ad&quot;.</p>
 
 <p>Sets the <em>search string</em> query property to the given value.</p>
-</div><h4 id='method.add_remarketing_list_ids' class='method'><code>fn <a href='#method.add_remarketing_list_ids' class='fnname'>add_remarketing_list_ids</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.AdListCall.html' title='google_dfareporting2d1::AdListCall'>AdListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+</div><h4 id='method.add_remarketing_list_ids' class='method'><span id='add_remarketing_list_ids.v' class='invisible'><code>fn <a href='#method.add_remarketing_list_ids' class='fnname'>add_remarketing_list_ids</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.AdListCall.html' title='google_dfareporting2d1::AdListCall'>AdListCall</a>&lt;'a, C, A&gt;</code></span></h4>
 <div class='docblock'><p>Select only ads whose list targeting expression use these remarketing list IDs.</p>
 
 <p>Append the given value to the <em>remarketing list ids</em> query property.
 Each appended value will retain its original ordering and be &#39;/&#39;-separated in the URL&#39;s parameters.</p>
-</div><h4 id='method.add_placement_ids' class='method'><code>fn <a href='#method.add_placement_ids' class='fnname'>add_placement_ids</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.AdListCall.html' title='google_dfareporting2d1::AdListCall'>AdListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+</div><h4 id='method.add_placement_ids' class='method'><span id='add_placement_ids.v' class='invisible'><code>fn <a href='#method.add_placement_ids' class='fnname'>add_placement_ids</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.AdListCall.html' title='google_dfareporting2d1::AdListCall'>AdListCall</a>&lt;'a, C, A&gt;</code></span></h4>
 <div class='docblock'><p>Select only ads with these placement IDs assigned.</p>
 
 <p>Append the given value to the <em>placement ids</em> query property.
 Each appended value will retain its original ordering and be &#39;/&#39;-separated in the URL&#39;s parameters.</p>
-</div><h4 id='method.page_token' class='method'><code>fn <a href='#method.page_token' class='fnname'>page_token</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.AdListCall.html' title='google_dfareporting2d1::AdListCall'>AdListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+</div><h4 id='method.page_token' class='method'><span id='page_token.v' class='invisible'><code>fn <a href='#method.page_token' class='fnname'>page_token</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.AdListCall.html' title='google_dfareporting2d1::AdListCall'>AdListCall</a>&lt;'a, C, A&gt;</code></span></h4>
 <div class='docblock'><p>Value of the nextPageToken from the previous result page.</p>
 
 <p>Sets the <em>page token</em> query property to the given value.</p>
-</div><h4 id='method.overridden_event_tag_id' class='method'><code>fn <a href='#method.overridden_event_tag_id' class='fnname'>overridden_event_tag_id</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.AdListCall.html' title='google_dfareporting2d1::AdListCall'>AdListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+</div><h4 id='method.overridden_event_tag_id' class='method'><span id='overridden_event_tag_id.v' class='invisible'><code>fn <a href='#method.overridden_event_tag_id' class='fnname'>overridden_event_tag_id</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.AdListCall.html' title='google_dfareporting2d1::AdListCall'>AdListCall</a>&lt;'a, C, A&gt;</code></span></h4>
 <div class='docblock'><p>Select only ads with this event tag override ID.</p>
 
 <p>Sets the <em>overridden event tag id</em> query property to the given value.</p>
-</div><h4 id='method.max_results' class='method'><code>fn <a href='#method.max_results' class='fnname'>max_results</a>(self, new_value: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.AdListCall.html' title='google_dfareporting2d1::AdListCall'>AdListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+</div><h4 id='method.max_results' class='method'><span id='max_results.v' class='invisible'><code>fn <a href='#method.max_results' class='fnname'>max_results</a>(self, new_value: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.AdListCall.html' title='google_dfareporting2d1::AdListCall'>AdListCall</a>&lt;'a, C, A&gt;</code></span></h4>
 <div class='docblock'><p>Maximum number of results to return.</p>
 
 <p>Sets the <em>max results</em> query property to the given value.</p>
-</div><h4 id='method.add_landing_page_ids' class='method'><code>fn <a href='#method.add_landing_page_ids' class='fnname'>add_landing_page_ids</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.AdListCall.html' title='google_dfareporting2d1::AdListCall'>AdListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+</div><h4 id='method.add_landing_page_ids' class='method'><span id='add_landing_page_ids.v' class='invisible'><code>fn <a href='#method.add_landing_page_ids' class='fnname'>add_landing_page_ids</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.AdListCall.html' title='google_dfareporting2d1::AdListCall'>AdListCall</a>&lt;'a, C, A&gt;</code></span></h4>
 <div class='docblock'><p>Select only ads with these landing page IDs.</p>
 
 <p>Append the given value to the <em>landing page ids</em> query property.
 Each appended value will retain its original ordering and be &#39;/&#39;-separated in the URL&#39;s parameters.</p>
-</div><h4 id='method.add_ids' class='method'><code>fn <a href='#method.add_ids' class='fnname'>add_ids</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.AdListCall.html' title='google_dfareporting2d1::AdListCall'>AdListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+</div><h4 id='method.add_ids' class='method'><span id='add_ids.v' class='invisible'><code>fn <a href='#method.add_ids' class='fnname'>add_ids</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.AdListCall.html' title='google_dfareporting2d1::AdListCall'>AdListCall</a>&lt;'a, C, A&gt;</code></span></h4>
 <div class='docblock'><p>Select only ads with these IDs.</p>
 
 <p>Append the given value to the <em>ids</em> query property.
 Each appended value will retain its original ordering and be &#39;/&#39;-separated in the URL&#39;s parameters.</p>
-</div><h4 id='method.dynamic_click_tracker' class='method'><code>fn <a href='#method.dynamic_click_tracker' class='fnname'>dynamic_click_tracker</a>(self, new_value: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.AdListCall.html' title='google_dfareporting2d1::AdListCall'>AdListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+</div><h4 id='method.dynamic_click_tracker' class='method'><span id='dynamic_click_tracker.v' class='invisible'><code>fn <a href='#method.dynamic_click_tracker' class='fnname'>dynamic_click_tracker</a>(self, new_value: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.AdListCall.html' title='google_dfareporting2d1::AdListCall'>AdListCall</a>&lt;'a, C, A&gt;</code></span></h4>
 <div class='docblock'><p>Select only dynamic click trackers. Applicable when type is AD_SERVING_CLICK_TRACKER. If true, select dynamic click trackers. If false, select static click trackers. Leave unset to select both.</p>
 
 <p>Sets the <em>dynamic click tracker</em> query property to the given value.</p>
-</div><h4 id='method.creative_type' class='method'><code>fn <a href='#method.creative_type' class='fnname'>creative_type</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.AdListCall.html' title='google_dfareporting2d1::AdListCall'>AdListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+</div><h4 id='method.creative_type' class='method'><span id='creative_type.v' class='invisible'><code>fn <a href='#method.creative_type' class='fnname'>creative_type</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.AdListCall.html' title='google_dfareporting2d1::AdListCall'>AdListCall</a>&lt;'a, C, A&gt;</code></span></h4>
 <div class='docblock'><p>Select only ads with the specified creativeType.</p>
 
 <p>Sets the <em>creative type</em> query property to the given value.</p>
-</div><h4 id='method.add_creative_optimization_configuration_ids' class='method'><code>fn <a href='#method.add_creative_optimization_configuration_ids' class='fnname'>add_creative_optimization_configuration_ids</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.AdListCall.html' title='google_dfareporting2d1::AdListCall'>AdListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+</div><h4 id='method.add_creative_optimization_configuration_ids' class='method'><span id='add_creative_optimization_configuration_ids.v' class='invisible'><code>fn <a href='#method.add_creative_optimization_configuration_ids' class='fnname'>add_creative_optimization_configuration_ids</a>(self,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -&gt; <a class='struct' href='../google_dfareporting2d1/struct.AdListCall.html' title='google_dfareporting2d1::AdListCall'>AdListCall</a>&lt;'a, C, A&gt;</code></span></h4>
 <div class='docblock'><p>Select only ads with these creative optimization configuration IDs.</p>
 
 <p>Append the given value to the <em>creative optimization configuration ids</em> query property.
 Each appended value will retain its original ordering and be &#39;/&#39;-separated in the URL&#39;s parameters.</p>
-</div><h4 id='method.add_creative_ids' class='method'><code>fn <a href='#method.add_creative_ids' class='fnname'>add_creative_ids</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.AdListCall.html' title='google_dfareporting2d1::AdListCall'>AdListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+</div><h4 id='method.add_creative_ids' class='method'><span id='add_creative_ids.v' class='invisible'><code>fn <a href='#method.add_creative_ids' class='fnname'>add_creative_ids</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.AdListCall.html' title='google_dfareporting2d1::AdListCall'>AdListCall</a>&lt;'a, C, A&gt;</code></span></h4>
 <div class='docblock'><p>Select only ads with these creative IDs assigned.</p>
 
 <p>Append the given value to the <em>creative ids</em> query property.
 Each appended value will retain its original ordering and be &#39;/&#39;-separated in the URL&#39;s parameters.</p>
-</div><h4 id='method.compatibility' class='method'><code>fn <a href='#method.compatibility' class='fnname'>compatibility</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.AdListCall.html' title='google_dfareporting2d1::AdListCall'>AdListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+</div><h4 id='method.compatibility' class='method'><span id='compatibility.v' class='invisible'><code>fn <a href='#method.compatibility' class='fnname'>compatibility</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.AdListCall.html' title='google_dfareporting2d1::AdListCall'>AdListCall</a>&lt;'a, C, A&gt;</code></span></h4>
 <div class='docblock'><p>Select default ads with the specified compatibility. Applicable when type is AD_SERVING_DEFAULT_AD. WEB and WEB_INTERSTITIAL refer to rendering either on desktop or on mobile devices for regular or interstitial ads, respectively. APP and APP_INTERSTITIAL are for rendering in mobile apps. IN_STREAM_VIDEO refers to rendering an in-stream video ads developed with the VAST standard.</p>
 
 <p>Sets the <em>compatibility</em> query property to the given value.</p>
-</div><h4 id='method.add_campaign_ids' class='method'><code>fn <a href='#method.add_campaign_ids' class='fnname'>add_campaign_ids</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.AdListCall.html' title='google_dfareporting2d1::AdListCall'>AdListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+</div><h4 id='method.add_campaign_ids' class='method'><span id='add_campaign_ids.v' class='invisible'><code>fn <a href='#method.add_campaign_ids' class='fnname'>add_campaign_ids</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.AdListCall.html' title='google_dfareporting2d1::AdListCall'>AdListCall</a>&lt;'a, C, A&gt;</code></span></h4>
 <div class='docblock'><p>Select only ads with these campaign IDs.</p>
 
 <p>Append the given value to the <em>campaign ids</em> query property.
 Each appended value will retain its original ordering and be &#39;/&#39;-separated in the URL&#39;s parameters.</p>
-</div><h4 id='method.add_audience_segment_ids' class='method'><code>fn <a href='#method.add_audience_segment_ids' class='fnname'>add_audience_segment_ids</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.AdListCall.html' title='google_dfareporting2d1::AdListCall'>AdListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+</div><h4 id='method.add_audience_segment_ids' class='method'><span id='add_audience_segment_ids.v' class='invisible'><code>fn <a href='#method.add_audience_segment_ids' class='fnname'>add_audience_segment_ids</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.AdListCall.html' title='google_dfareporting2d1::AdListCall'>AdListCall</a>&lt;'a, C, A&gt;</code></span></h4>
 <div class='docblock'><p>Select only ads with these audience segment IDs.</p>
 
 <p>Append the given value to the <em>audience segment ids</em> query property.
 Each appended value will retain its original ordering and be &#39;/&#39;-separated in the URL&#39;s parameters.</p>
-</div><h4 id='method.archived' class='method'><code>fn <a href='#method.archived' class='fnname'>archived</a>(self, new_value: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.AdListCall.html' title='google_dfareporting2d1::AdListCall'>AdListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+</div><h4 id='method.archived' class='method'><span id='archived.v' class='invisible'><code>fn <a href='#method.archived' class='fnname'>archived</a>(self, new_value: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.AdListCall.html' title='google_dfareporting2d1::AdListCall'>AdListCall</a>&lt;'a, C, A&gt;</code></span></h4>
 <div class='docblock'><p>Select only archived ads.</p>
 
 <p>Sets the <em>archived</em> query property to the given value.</p>
-</div><h4 id='method.advertiser_id' class='method'><code>fn <a href='#method.advertiser_id' class='fnname'>advertiser_id</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.AdListCall.html' title='google_dfareporting2d1::AdListCall'>AdListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+</div><h4 id='method.advertiser_id' class='method'><span id='advertiser_id.v' class='invisible'><code>fn <a href='#method.advertiser_id' class='fnname'>advertiser_id</a>(self, new_value: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.AdListCall.html' title='google_dfareporting2d1::AdListCall'>AdListCall</a>&lt;'a, C, A&gt;</code></span></h4>
 <div class='docblock'><p>Select only ads with this advertiser ID.</p>
 
 <p>Sets the <em>advertiser id</em> query property to the given value.</p>
-</div><h4 id='method.active' class='method'><code>fn <a href='#method.active' class='fnname'>active</a>(self, new_value: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.AdListCall.html' title='google_dfareporting2d1::AdListCall'>AdListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+</div><h4 id='method.active' class='method'><span id='active.v' class='invisible'><code>fn <a href='#method.active' class='fnname'>active</a>(self, new_value: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.AdListCall.html' title='google_dfareporting2d1::AdListCall'>AdListCall</a>&lt;'a, C, A&gt;</code></span></h4>
 <div class='docblock'><p>Select only active ads.</p>
 
 <p>Sets the <em>active</em> query property to the given value.</p>
-</div><h4 id='method.delegate' class='method'><code>fn <a href='#method.delegate' class='fnname'>delegate</a>(self, new_value: &amp;'a mut <a class='trait' href='../google_dfareporting2d1/trait.Delegate.html' title='google_dfareporting2d1::Delegate'>Delegate</a>) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.AdListCall.html' title='google_dfareporting2d1::AdListCall'>AdListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></h4>
+</div><h4 id='method.delegate' class='method'><span id='delegate.v' class='invisible'><code>fn <a href='#method.delegate' class='fnname'>delegate</a>(self, new_value: &amp;'a mut <a class='trait' href='../google_dfareporting2d1/trait.Delegate.html' title='google_dfareporting2d1::Delegate'>Delegate</a>) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.AdListCall.html' title='google_dfareporting2d1::AdListCall'>AdListCall</a>&lt;'a, C, A&gt;</code></span></h4>
 <div class='docblock'><p>The delegate implementation is consulted whenever there is an intermediate result, or if something goes wrong
 while executing the actual API request.</p>
 
 <p>It should be used to handle progress information, and to implement a certain level of resilience.</p>
 
 <p>Sets the <em>delegate</em> property to the given value.</p>
-</div><h4 id='method.param' class='method'><code>fn <a href='#method.param' class='fnname'>param</a>&lt;T&gt;(self, name: T, value: T) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.AdListCall.html' title='google_dfareporting2d1::AdListCall'>AdListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where T: <a class='trait' href='https://doc.rust-lang.org/nightly/core/convert/trait.AsRef.html' title='core::convert::AsRef'>AsRef</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>&gt;</span></code></h4>
+</div><h4 id='method.param' class='method'><span id='param.v' class='invisible'><code>fn <a href='#method.param' class='fnname'>param</a>&lt;T&gt;(self, name: T, value: T) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.AdListCall.html' title='google_dfareporting2d1::AdListCall'>AdListCall</a>&lt;'a, C, A&gt; <span class='where'>where T: <a class='trait' href='https://doc.rust-lang.org/nightly/core/convert/trait.AsRef.html' title='core::convert::AsRef'>AsRef</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>&gt;</span></code></span></h4>
 <div class='docblock'><p>Set any additional parameter of the query string used in the request.
 It should be used to set parameters which are not yet available through their own
 setters.</p>
@@ -230,7 +228,7 @@ which have their own setter method. If done anyway, the request will fail.</p>
 <li><em>fields</em> (query-string) - Selector specifying which fields to include in a partial response.</li>
 <li><em>alt</em> (query-string) - Data format for the response.</li>
 </ul>
-</div><h4 id='method.add_scope' class='method'><code>fn <a href='#method.add_scope' class='fnname'>add_scope</a>&lt;T&gt;(self, scope: T) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.AdListCall.html' title='google_dfareporting2d1::AdListCall'>AdListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt; <span class='where'>where T: <a class='trait' href='https://doc.rust-lang.org/nightly/core/convert/trait.AsRef.html' title='core::convert::AsRef'>AsRef</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>&gt;</span></code></h4>
+</div><h4 id='method.add_scope' class='method'><span id='add_scope.v' class='invisible'><code>fn <a href='#method.add_scope' class='fnname'>add_scope</a>&lt;T&gt;(self, scope: T) -&gt; <a class='struct' href='../google_dfareporting2d1/struct.AdListCall.html' title='google_dfareporting2d1::AdListCall'>AdListCall</a>&lt;'a, C, A&gt; <span class='where'>where T: <a class='trait' href='https://doc.rust-lang.org/nightly/core/convert/trait.AsRef.html' title='core::convert::AsRef'>AsRef</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>&gt;</span></code></span></h4>
 <div class='docblock'><p>Identifies the authorization scope for the method you are building.</p>
 
 <p>Use this method to actively specify which scope should be used, instead the default <code>Scope</code> variant
@@ -242,7 +240,7 @@ tokens for more than one scope.</p>
 <p>Usually there is more than one suitable scope to authorize an operation, some of which may
 encompass more rights than others. For example, for listing resources, a <em>read-only</em> scope will be
 sufficient, a read-write scope will do as well.</p>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a,&nbsp;C,&nbsp;A&gt; <a class='trait' href='../google_dfareporting2d1/trait.CallBuilder.html' title='google_dfareporting2d1::CallBuilder'>CallBuilder</a> for <a class='struct' href='../google_dfareporting2d1/struct.AdListCall.html' title='google_dfareporting2d1::AdListCall'>AdListCall</a>&lt;'a,&nbsp;C,&nbsp;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-47482' class='srclink' href='../src/google_dfareporting2d1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-dfareporting2d1-4bc9d080d1899297/out/lib.rs.html#99467' title='goto source code'>[src]</a></span></h3>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a, C, A&gt; <a class='trait' href='../google_dfareporting2d1/trait.CallBuilder.html' title='google_dfareporting2d1::CallBuilder'>CallBuilder</a> for <a class='struct' href='../google_dfareporting2d1/struct.AdListCall.html' title='google_dfareporting2d1::AdListCall'>AdListCall</a>&lt;'a, C, A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-27647' class='srclink' href='../src/google_dfareporting2d1/home/byron/dev/rust/google-apis-rs/target/debug/build/google-dfareporting2d1-4bc9d080d1899297/out/lib.rs.html#99467' title='goto source code'>[src]</a></span></h3>
 <div class='impl-items'></div></section>
     <section id='search' class="content hidden"></section>
 
@@ -299,11 +297,9 @@ sufficient, a read-write scope will do as well.</p>
     <script>
         window.rootPath = "../";
         window.currentCrate = "google_dfareporting2d1";
-        window.playgroundUrl = "";
     </script>
     <script src="../jquery.js"></script>
     <script src="../main.js"></script>
-    
     <script defer src="../search-index.js"></script>
 </body>
 </html>

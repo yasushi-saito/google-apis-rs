@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Insert - plusDomains v1.0.0+20161214</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Insert";
+    var mkdocs_page_input_path = "activities_insert.md";
+    var mkdocs_page_url = "/activities_insert/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> plusDomains v1.0.0+20161214</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="..">Home</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Activities</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../activities_get/">Get</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Insert</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#scopes">Scopes</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#required-scalar-argument">Required Scalar Argument</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#required-request-value">Required Request Value</a></li>
+                
+                    <li><a class="toctree-l4" href="#about-cursors">About Cursors</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#optional-output-flags">Optional Output Flags</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#optional-method-properties">Optional Method Properties</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#optional-general-properties">Optional General Properties</a></li>
+                
+            
+            </ul>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../activities_list/">List</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Audiences</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../audiences_list/">List</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Circles</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../circles_add-people/">Add People</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../circles_get/">Get</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../circles_insert/">Insert</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../circles_list/">List</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../circles_patch/">Patch</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../circles_remove/">Remove</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../circles_remove-people/">Remove People</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../circles_update/">Update</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Comments</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../comments_get/">Get</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../comments_insert/">Insert</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../comments_list/">List</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Media</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../media_insert/">Insert</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>People</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../people_get/">Get</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../people_list/">List</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../people_list-by-activity/">List By Activity</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../people_list-by-circle/">List By Circle</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">plusDomains v1.0.0+20161214</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Activities &raquo;</li>
+        
+      
+    
+    <li>Insert</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/plusdomains1-cli/edit/master/docs/activities_insert.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p>Create a new activity for the authenticated user.</p>
+<h1 id="scopes">Scopes</h1>
+<p>You will need authorization for at least one of the following scopes to make a valid call:</p>
+<ul>
+<li><em>https://www.googleapis.com/auth/plus.login</em></li>
+<li><em>https://www.googleapis.com/auth/plus.me</em></li>
+<li><em>https://www.googleapis.com/auth/plus.stream.write</em></li>
+</ul>
+<p>If unset, the scope for this method defaults to <em>https://www.googleapis.com/auth/plus.login</em>.
+You can set the scope for this method like this: <code>plusdomains1 --scope &lt;scope&gt; activities insert ...</code></p>
+<h1 id="required-scalar-argument">Required Scalar Argument</h1>
+<ul>
+<li><strong>&lt;user-id&gt;</strong> <em>(string)</em><ul>
+<li>The ID of the user to create the activity on behalf of. Its value should be &#34;me&#34;, to indicate the authenticated user.</li>
+</ul>
+</li>
+</ul>
+<h1 id="required-request-value">Required Request Value</h1>
+<p>The request value is a data-structure with various fields. Each field may be a simple scalar or another data-structure.
+In the latter case it is advised to set the field-cursor to the data-structure's field to specify values more concisely.</p>
+<p>For example, a structure like this:</p>
+<pre><code>Activity:
+  access:
+    description: string
+    domain-restricted: boolean
+    kind: string
+  actor:
+    client-specific-actor-info:
+      youtube-actor-info:
+        channel-id: string
+    display-name: string
+    id: string
+    image:
+      url: string
+    name:
+      family-name: string
+      given-name: string
+    url: string
+    verification:
+      ad-hoc-verified: string
+  address: string
+  annotation: string
+  crosspost-source: string
+  etag: string
+  geocode: string
+  id: string
+  kind: string
+  location:
+    address:
+      formatted: string
+    display-name: string
+    id: string
+    kind: string
+    position:
+      latitude: number
+      longitude: number
+  object:
+    actor:
+      client-specific-actor-info:
+        youtube-actor-info:
+          channel-id: string
+      display-name: string
+      id: string
+      image:
+        url: string
+      url: string
+      verification:
+        ad-hoc-verified: string
+    content: string
+    id: string
+    object-type: string
+    original-content: string
+    plusoners:
+      self-link: string
+      total-items: integer
+    replies:
+      self-link: string
+      total-items: integer
+    resharers:
+      self-link: string
+      total-items: integer
+    status-for-viewer:
+      can-comment: boolean
+      can-plusone: boolean
+      can-update: boolean
+      is-plus-oned: boolean
+      resharing-disabled: boolean
+    url: string
+  place-id: string
+  place-name: string
+  provider:
+    title: string
+  published: string
+  radius: string
+  title: string
+  updated: string
+  url: string
+  verb: string
+
+</code></pre>
+
+<p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
+<ul>
+<li><code>-r .access    description=eirmod</code><ul>
+<li>Description of the access granted, suitable for display.</li>
+</ul>
+</li>
+<li><code>domain-restricted=true</code><ul>
+<li>Whether access is restricted to the domain.</li>
+</ul>
+</li>
+<li>
+<p><code>kind=stet</code></p>
+<ul>
+<li>Identifies this resource as a collection of access controls. Value: &#34;plus#acl&#34;.</li>
+</ul>
+</li>
+<li>
+<p><code>..actor.client-specific-actor-info.youtube-actor-info    channel-id=sed</code></p>
+<ul>
+<li>ID of the YouTube channel owned by the Actor.</li>
+</ul>
+</li>
+<li>
+<p><code>...    display-name=et</code></p>
+<ul>
+<li>The name of the actor, suitable for display.</li>
+</ul>
+</li>
+<li><code>id=dolores</code><ul>
+<li>The ID of the actor&#39;s Person resource.</li>
+</ul>
+</li>
+<li>
+<p><code>image    url=kasd</code></p>
+<ul>
+<li>The URL of the actor&#39;s profile photo. To resize the image and crop it to a square, append the query string ?sz=x, where x is the dimension in pixels of each side.</li>
+</ul>
+</li>
+<li>
+<p><code>..name    family-name=accusam</code></p>
+<ul>
+<li>The family name (&#34;last name&#34;) of the actor.</li>
+</ul>
+</li>
+<li>
+<p><code>given-name=takimata</code></p>
+<ul>
+<li>The given name (&#34;first name&#34;) of the actor.</li>
+</ul>
+</li>
+<li>
+<p><code>..    url=justo</code></p>
+<ul>
+<li>The link to the actor&#39;s Google profile.</li>
+</ul>
+</li>
+<li>
+<p><code>verification    ad-hoc-verified=amet.</code></p>
+<ul>
+<li>Verification for one-time or manual processes.</li>
+</ul>
+</li>
+<li>
+<p><code>...    address=erat</code></p>
+<ul>
+<li>Street address where this activity occurred.</li>
+</ul>
+</li>
+<li><code>annotation=labore</code><ul>
+<li>Additional content added by the person who shared this activity, applicable only when resharing an activity.</li>
+</ul>
+</li>
+<li><code>crosspost-source=sea</code><ul>
+<li>If this activity is a crosspost from another system, this property specifies the ID of the original activity.</li>
+</ul>
+</li>
+<li><code>etag=nonumy</code><ul>
+<li>ETag of this response for caching purposes.</li>
+</ul>
+</li>
+<li><code>geocode=dolores</code><ul>
+<li>Latitude and longitude where this activity occurred. Format is latitude followed by longitude, space separated.</li>
+</ul>
+</li>
+<li><code>id=gubergren</code><ul>
+<li>The ID of this activity.</li>
+</ul>
+</li>
+<li><code>kind=sadipscing</code><ul>
+<li>Identifies this resource as an activity. Value: &#34;plus#activity&#34;.</li>
+</ul>
+</li>
+<li>
+<p><code>location.address    formatted=aliquyam</code></p>
+<ul>
+<li>The formatted address for display.</li>
+</ul>
+</li>
+<li>
+<p><code>..    display-name=ea</code></p>
+<ul>
+<li>The display name of the place.</li>
+</ul>
+</li>
+<li><code>id=no</code><ul>
+<li>The id of the place.</li>
+</ul>
+</li>
+<li><code>kind=justo</code><ul>
+<li>Identifies this resource as a place. Value: &#34;plus#place&#34;.</li>
+</ul>
+</li>
+<li><code>position    latitude=0.800065132311</code><ul>
+<li>The latitude of this position.</li>
+</ul>
+</li>
+<li>
+<p><code>longitude=0.663748882844</code></p>
+<ul>
+<li>The longitude of this position.</li>
+</ul>
+</li>
+<li>
+<p><code>...object.actor.client-specific-actor-info.youtube-actor-info    channel-id=et</code></p>
+<ul>
+<li>ID of the YouTube channel owned by the Actor.</li>
+</ul>
+</li>
+<li>
+<p><code>...    display-name=diam</code></p>
+<ul>
+<li>The original actor&#39;s name, which is suitable for display.</li>
+</ul>
+</li>
+<li><code>id=ipsum</code><ul>
+<li>ID of the original actor.</li>
+</ul>
+</li>
+<li>
+<p><code>image    url=lorem</code></p>
+<ul>
+<li>A URL that points to a thumbnail photo of the original actor.</li>
+</ul>
+</li>
+<li>
+<p><code>..    url=et</code></p>
+<ul>
+<li>A link to the original actor&#39;s Google profile.</li>
+</ul>
+</li>
+<li>
+<p><code>verification    ad-hoc-verified=duo</code></p>
+<ul>
+<li>Verification for one-time or manual processes.</li>
+</ul>
+</li>
+<li>
+<p><code>...    content=aliquyam</code></p>
+<ul>
+<li>The HTML-formatted content, which is suitable for display.</li>
+</ul>
+</li>
+<li><code>id=sea</code><ul>
+<li>The ID of the object. When resharing an activity, this is the ID of the activity that is being reshared.</li>
+</ul>
+</li>
+<li><code>object-type=lorem</code><ul>
+<li>The type of the object. Possible values include, but are not limited to, the following values:  <ul>
+<li>&#34;note&#34; - Textual content. </li>
+<li>&#34;activity&#34; - A Google+ activity.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>original-content=eos</code><ul>
+<li>The content (text) as provided by the author, which is stored without any HTML formatting. When creating or updating an activity, this value must be supplied as plain text in the request.</li>
+</ul>
+</li>
+<li><code>plusoners    self-link=erat</code><ul>
+<li>The URL for the collection of people who +1&#39;d this activity.</li>
+</ul>
+</li>
+<li>
+<p><code>total-items=6</code></p>
+<ul>
+<li>Total number of people who +1&#39;d this activity.</li>
+</ul>
+</li>
+<li>
+<p><code>..replies    self-link=dolor</code></p>
+<ul>
+<li>The URL for the collection of comments in reply to this activity.</li>
+</ul>
+</li>
+<li>
+<p><code>total-items=62</code></p>
+<ul>
+<li>Total number of comments on this activity.</li>
+</ul>
+</li>
+<li>
+<p><code>..resharers    self-link=elitr</code></p>
+<ul>
+<li>The URL for the collection of resharers.</li>
+</ul>
+</li>
+<li>
+<p><code>total-items=4</code></p>
+<ul>
+<li>Total number of people who reshared this activity.</li>
+</ul>
+</li>
+<li>
+<p><code>..status-for-viewer    can-comment=false</code></p>
+<ul>
+<li>Whether the viewer can comment on the activity.</li>
+</ul>
+</li>
+<li><code>can-plusone=true</code><ul>
+<li>Whether the viewer can +1 the activity.</li>
+</ul>
+</li>
+<li><code>can-update=true</code><ul>
+<li>Whether the viewer can edit or delete the activity.</li>
+</ul>
+</li>
+<li><code>is-plus-oned=true</code><ul>
+<li>Whether the viewer has +1&#39;d the activity.</li>
+</ul>
+</li>
+<li>
+<p><code>resharing-disabled=true</code></p>
+<ul>
+<li>Whether reshares are disabled for the activity.</li>
+</ul>
+</li>
+<li>
+<p><code>..    url=aliquyam</code></p>
+<ul>
+<li>The URL that points to the linked resource.</li>
+</ul>
+</li>
+<li>
+<p><code>..    place-id=accusam</code></p>
+<ul>
+<li>ID of the place where this activity occurred.</li>
+</ul>
+</li>
+<li><code>place-name=lorem</code><ul>
+<li>Name of the place where this activity occurred.</li>
+</ul>
+</li>
+<li>
+<p><code>provider    title=sea</code></p>
+<ul>
+<li>Name of the service provider.</li>
+</ul>
+</li>
+<li>
+<p><code>..    published=et</code></p>
+<ul>
+<li>The time at which this activity was initially published. Formatted as an RFC 3339 timestamp.</li>
+</ul>
+</li>
+<li><code>radius=duo</code><ul>
+<li>Radius, in meters, of the region where this activity occurred, centered at the latitude and longitude identified in geocode.</li>
+</ul>
+</li>
+<li><code>title=et</code><ul>
+<li>Title of this activity.</li>
+</ul>
+</li>
+<li><code>updated=eirmod</code><ul>
+<li>The time at which this activity was last updated. Formatted as an RFC 3339 timestamp.</li>
+</ul>
+</li>
+<li><code>url=sanctus</code><ul>
+<li>The link to this activity.</li>
+</ul>
+</li>
+<li><code>verb=et</code><ul>
+<li>This activity&#39;s verb, which indicates the action that was performed. Possible values include, but are not limited to, the following values:  <ul>
+<li>&#34;post&#34; - Publish content to the stream. </li>
+<li>&#34;share&#34; - Reshare an activity.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="about-cursors">About Cursors</h3>
+<p>The cursor position is key to comfortably set complex nested structures. The following rules apply:</p>
+<ul>
+<li>The cursor position is always set relative to the current one, unless the field name starts with the <code>.</code> character. Fields can be nested such as in <code>-r f.s.o</code> .</li>
+<li>The cursor position is set relative to the top-level structure if it starts with <code>.</code>, e.g. <code>-r .s.s</code></li>
+<li>You can also set nested fields without setting the cursor explicitly. For example, to set a value relative to the current cursor position, you would specify <code>-r struct.sub_struct=bar</code>.</li>
+<li>You can move the cursor one level up by using <code>..</code>. Each additional <code>.</code> moves it up one additional level. E.g. <code>...</code> would go three levels up.</li>
+</ul>
+<h1 id="optional-output-flags">Optional Output Flags</h1>
+<p>The method's return value a JSON encoded structure, which will be written to standard output by default.</p>
+<ul>
+<li><strong>-o out</strong><ul>
+<li><em>out</em> specifies the <em>destination</em> to which to write the server's result to.
+  It will be a JSON-encoded structure.
+  The <em>destination</em> may be <code>-</code> to indicate standard output, or a filepath that is to contain the received bytes.
+  If unset, it defaults to standard output.</li>
+</ul>
+</li>
+</ul>
+<h1 id="optional-method-properties">Optional Method Properties</h1>
+<p>You may set the following properties to further configure the call. Please note that <code>-p</code> is followed by one 
+or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> even though the listing below repeats the
+<code>-p</code> for completeness.</p>
+<ul>
+<li><strong>-p preview=boolean</strong><ul>
+<li>If &#34;true&#34;, extract the potential media attachments for a URL. The response will include all possible attachments for a URL, including video, photos, and articles based on the content of the page.</li>
+</ul>
+</li>
+</ul>
+<h1 id="optional-general-properties">Optional General Properties</h1>
+<p>The following properties can configure any call, and are not specific to this method.</p>
+<ul>
+<li>
+<p><strong>-p alt=string</strong></p>
+<ul>
+<li>Data format for the response.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p fields=string</strong></p>
+<ul>
+<li>Selector specifying which fields to include in a partial response.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p key=string</strong></p>
+<ul>
+<li>API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p oauth-token=string</strong></p>
+<ul>
+<li>OAuth 2.0 token for the current user.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p pretty-print=boolean</strong></p>
+<ul>
+<li>Returns response with indentations and line breaks.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p quota-user=string</strong></p>
+<ul>
+<li>Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. Overrides userIp if both are provided.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p user-ip=string</strong></p>
+<ul>
+<li>IP address of the site where the request originates. Use this if you want to enforce per-user limits.</li>
+</ul>
+</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../activities_list/" class="btn btn-neutral float-right" title="List">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../activities_get/" class="btn btn-neutral" title="Get"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+    
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/plusdomains1-cli" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../activities_get/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../activities_list/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script src="../js/theme.js"></script>
+
+</body>
+</html>
