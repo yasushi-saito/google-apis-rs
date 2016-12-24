@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Reports List - YouTube Reporting v1.0.0+20160719</title>
+  <title>Reports List - YouTube Reporting v1.0.1+20160719</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> YouTube Reporting v1.0.0+20160719</a>
+        <a href=".." class="icon icon-home"> YouTube Reporting v1.0.1+20160719</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -162,7 +162,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">YouTube Reporting v1.0.0+20160719</a>
+        <a href="..">YouTube Reporting v1.0.1+20160719</a>
       </nav>
 
       
@@ -224,9 +224,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p page-token=string</strong></p>
+<p><strong>-p start-time-before=string</strong></p>
 <ul>
-<li>A token identifying a page of results the server should return. Typically, this is the value of ListReportsResponse.next_page_token returned in response to the previous call to the <code>ListReports</code> method.</li>
+<li>If set, only reports whose start time is smaller than the specified date/time are returned.</li>
 </ul>
 </li>
 <li>
@@ -236,9 +236,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p start-time-at-or-after=string</strong></p>
+<p><strong>-p on-behalf-of-content-owner=string</strong></p>
 <ul>
-<li>If set, only reports whose start time is greater than or equal the specified date/time are returned.</li>
+<li>The content owner&#39;s external ID on which behalf the user is acting on. If not set, the user is acting for himself (his own channel).</li>
 </ul>
 </li>
 <li>
@@ -248,15 +248,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p start-time-before=string</strong></p>
+<p><strong>-p page-token=string</strong></p>
 <ul>
-<li>If set, only reports whose start time is smaller than the specified date/time are returned.</li>
+<li>A token identifying a page of results the server should return. Typically, this is the value of ListReportsResponse.next_page_token returned in response to the previous call to the <code>ListReports</code> method.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p on-behalf-of-content-owner=string</strong></p>
+<p><strong>-p start-time-at-or-after=string</strong></p>
 <ul>
-<li>The content owner&#39;s external ID on which behalf the user is acting on. If not set, the user is acting for himself (his own channel).</li>
+<li>If set, only reports whose start time is greater than or equal the specified date/time are returned.</li>
 </ul>
 </li>
 </ul>

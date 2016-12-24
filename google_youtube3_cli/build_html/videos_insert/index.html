@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Insert - YouTube v1.0.0+20161202</title>
+  <title>Insert - YouTube v1.0.1+20161202</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> YouTube v1.0.0+20161202</a>
+        <a href=".." class="icon icon-home"> YouTube v1.0.1+20161202</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -792,7 +792,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">YouTube v1.0.0+20161202</a>
+        <a href="..">YouTube v1.0.1+20161202</a>
       </nav>
 
       
@@ -1847,6 +1847,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
+<p><strong>-p on-behalf-of-content-owner=string</strong></p>
+<ul>
+<li>
+<p>Note: This parameter is intended exclusively for YouTube content partners.</p>
+<p>The onBehalfOfContentOwner parameter indicates that the request&#39;s authorization credentials identify a YouTube CMS user who is acting on behalf of the content owner specified in the parameter value. This parameter is intended for YouTube content partners that own and manage many different YouTube channels. It allows content owners to authenticate once and get access to all their video and channel data, without having to provide authentication credentials for each individual channel. The CMS account that the user authenticates with must be linked to the specified YouTube content owner.</p>
+</li>
+</ul>
+</li>
+<li>
 <p><strong>-p notify-subscribers=boolean</strong></p>
 <ul>
 <li>The notifySubscribers parameter indicates whether YouTube should send a notification about the new video to users who subscribe to the video&#39;s channel. A parameter value of True indicates that subscribers will be notified of newly uploaded videos. However, a channel owner who is uploading many videos might prefer to set the value to False to avoid sending a notification about each new video to the channel&#39;s subscribers.</li>
@@ -1856,12 +1865,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <p><strong>-p stabilize=boolean</strong></p>
 <ul>
 <li>The stabilize parameter indicates whether YouTube should adjust the video to remove shaky camera motions.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p auto-levels=boolean</strong></p>
-<ul>
-<li>The autoLevels parameter indicates whether YouTube should automatically enhance the video&#39;s lighting and color.</li>
 </ul>
 </li>
 <li>
@@ -1875,12 +1878,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p on-behalf-of-content-owner=string</strong></p>
+<p><strong>-p auto-levels=boolean</strong></p>
 <ul>
-<li>
-<p>Note: This parameter is intended exclusively for YouTube content partners.</p>
-<p>The onBehalfOfContentOwner parameter indicates that the request&#39;s authorization credentials identify a YouTube CMS user who is acting on behalf of the content owner specified in the parameter value. This parameter is intended for YouTube content partners that own and manage many different YouTube channels. It allows content owners to authenticate once and get access to all their video and channel data, without having to provide authentication credentials for each individual channel. The CMS account that the user authenticates with must be linked to the specified YouTube content owner.</p>
-</li>
+<li>The autoLevels parameter indicates whether YouTube should automatically enhance the video&#39;s lighting and color.</li>
 </ul>
 </li>
 </ul>

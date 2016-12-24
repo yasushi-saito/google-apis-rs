@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>List - dns v1.0.0+20161130</title>
+  <title>List - dns v1.0.1+20161130</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> dns v1.0.0+20161130</a>
+        <a href=".." class="icon icon-home"> dns v1.0.1+20161130</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -177,7 +177,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">dns v1.0.0+20161130</a>
+        <a href="..">dns v1.0.1+20161130</a>
       </nav>
 
       
@@ -245,9 +245,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p sort-by=string</strong></p>
+<p><strong>-p page-token=string</strong></p>
 <ul>
-<li>Sorting criterion. The only supported value is change sequence.</li>
+<li>Optional. A tag returned by a previous list request that was truncated. Use this parameter to continue a previous list request.</li>
 </ul>
 </li>
 <li>
@@ -257,15 +257,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p max-results=integer</strong></p>
+<p><strong>-p sort-by=string</strong></p>
 <ul>
-<li>Optional. Maximum number of results to be returned. If unspecified, the server will decide how many results to return.</li>
+<li>Sorting criterion. The only supported value is change sequence.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p page-token=string</strong></p>
+<p><strong>-p max-results=integer</strong></p>
 <ul>
-<li>Optional. A tag returned by a previous list request that was truncated. Use this parameter to continue a previous list request.</li>
+<li>Optional. Maximum number of results to be returned. If unspecified, the server will decide how many results to return.</li>
 </ul>
 </li>
 </ul>

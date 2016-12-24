@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Debuggees Breakpoints List - Cloud Debugger v1.0.0+20160810</title>
+  <title>Debuggees Breakpoints List - Cloud Debugger v1.0.1+20160810</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Cloud Debugger v1.0.0+20160810</a>
+        <a href=".." class="icon icon-home"> Cloud Debugger v1.0.1+20160810</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -154,7 +154,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Cloud Debugger v1.0.0+20160810</a>
+        <a href="..">Cloud Debugger v1.0.1+20160810</a>
       </nav>
 
       
@@ -216,15 +216,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p success-on-timeout=boolean</strong></p>
-<ul>
-<li>If set to <code>true</code>, returns <code>google.rpc.Code.OK</code> status and sets the <code>wait_expired</code> response field to <code>true</code> when the server-selected timeout has expired (recommended). If set to <code>false</code>, returns <code>google.rpc.Code.ABORTED</code> status when the server-selected timeout has expired (deprecated).</li>
-</ul>
-</li>
-<li>
 <p><strong>-p wait-token=string</strong></p>
 <ul>
 <li>A wait token that, if specified, blocks the method call until the list of active breakpoints has changed, or a server selected timeout has expired. The value should be set from the last returned response.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p success-on-timeout=boolean</strong></p>
+<ul>
+<li>If set to <code>true</code>, returns <code>google.rpc.Code.OK</code> status and sets the <code>wait_expired</code> response field to <code>true</code> when the server-selected timeout has expired (recommended). If set to <code>false</code>, returns <code>google.rpc.Code.ABORTED</code> status when the server-selected timeout has expired (deprecated).</li>
 </ul>
 </li>
 </ul>

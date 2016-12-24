@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Delete - storage v1.0.0+20161123</title>
+  <title>Delete - storage v1.0.1+20161123</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> storage v1.0.0+20161123</a>
+        <a href=".." class="icon icon-home"> storage v1.0.1+20161123</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -372,7 +372,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">storage v1.0.0+20161123</a>
+        <a href="..">storage v1.0.1+20161123</a>
       </nav>
 
       
@@ -428,12 +428,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p generation=string</strong></p>
-<ul>
-<li>If present, permanently deletes a specific revision of this object (as opposed to the latest version, the default).</li>
-</ul>
-</li>
-<li>
 <p><strong>-p if-metageneration-match=string</strong></p>
 <ul>
 <li>Makes the operation conditional on whether the object&#39;s current metageneration matches the given value.</li>
@@ -446,15 +440,21 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p if-generation-not-match=string</strong></p>
+<p><strong>-p generation=string</strong></p>
 <ul>
-<li>Makes the operation conditional on whether the object&#39;s current generation does not match the given value.</li>
+<li>If present, permanently deletes a specific revision of this object (as opposed to the latest version, the default).</li>
 </ul>
 </li>
 <li>
 <p><strong>-p if-generation-match=string</strong></p>
 <ul>
 <li>Makes the operation conditional on whether the object&#39;s current generation matches the given value.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p if-generation-not-match=string</strong></p>
+<ul>
+<li>Makes the operation conditional on whether the object&#39;s current generation does not match the given value.</li>
 </ul>
 </li>
 </ul>

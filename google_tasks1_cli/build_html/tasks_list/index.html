@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>List - tasks v1.0.0+20141121</title>
+  <title>List - tasks v1.0.1+20141121</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> tasks v1.0.0+20141121</a>
+        <a href=".." class="icon icon-home"> tasks v1.0.1+20141121</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -196,7 +196,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">tasks v1.0.0+20141121</a>
+        <a href="..">tasks v1.0.1+20141121</a>
       </nav>
 
       
@@ -258,6 +258,30 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
+<p><strong>-p show-hidden=boolean</strong></p>
+<ul>
+<li>Flag indicating whether hidden tasks are returned in the result. Optional. The default is False.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p due-min=string</strong></p>
+<ul>
+<li>Lower bound for a task&#39;s due date (as a RFC 3339 timestamp) to filter by. Optional. The default is not to filter by due date.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p max-results=string</strong></p>
+<ul>
+<li>Maximum number of task lists returned on one page. Optional. The default is 100.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p completed-min=string</strong></p>
+<ul>
+<li>Lower bound for a task&#39;s completion date (as a RFC 3339 timestamp) to filter by. Optional. The default is not to filter by completion date.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p page-token=string</strong></p>
 <ul>
 <li>Token specifying the result page to return. Optional.</li>
@@ -270,27 +294,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p completed-min=string</strong></p>
-<ul>
-<li>Lower bound for a task&#39;s completion date (as a RFC 3339 timestamp) to filter by. Optional. The default is not to filter by completion date.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p due-min=string</strong></p>
-<ul>
-<li>Lower bound for a task&#39;s due date (as a RFC 3339 timestamp) to filter by. Optional. The default is not to filter by due date.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p show-completed=boolean</strong></p>
-<ul>
-<li>Flag indicating whether completed tasks are returned in the result. Optional. The default is True.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p completed-max=string</strong></p>
 <ul>
 <li>Upper bound for a task&#39;s completion date (as a RFC 3339 timestamp) to filter by. Optional. The default is not to filter by completion date.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p due-max=string</strong></p>
+<ul>
+<li>Upper bound for a task&#39;s due date (as a RFC 3339 timestamp) to filter by. Optional. The default is not to filter by due date.</li>
 </ul>
 </li>
 <li>
@@ -300,21 +312,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p show-hidden=boolean</strong></p>
+<p><strong>-p show-completed=boolean</strong></p>
 <ul>
-<li>Flag indicating whether hidden tasks are returned in the result. Optional. The default is False.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p max-results=string</strong></p>
-<ul>
-<li>Maximum number of task lists returned on one page. Optional. The default is 100.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p due-max=string</strong></p>
-<ul>
-<li>Upper bound for a task&#39;s due date (as a RFC 3339 timestamp) to filter by. Optional. The default is not to filter by due date.</li>
+<li>Flag indicating whether completed tasks are returned in the result. Optional. The default is True.</li>
 </ul>
 </li>
 </ul>

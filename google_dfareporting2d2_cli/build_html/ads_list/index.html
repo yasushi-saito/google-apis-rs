@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>List - dfareporting v1.0.0+20160803</title>
+  <title>List - dfareporting v1.0.1+20160803</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> dfareporting v1.0.0+20160803</a>
+        <a href=".." class="icon icon-home"> dfareporting v1.0.1+20160803</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -1873,7 +1873,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">dfareporting v1.0.0+20160803</a>
+        <a href="..">dfareporting v1.0.1+20160803</a>
       </nav>
 
       
@@ -1931,39 +1931,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p archived=boolean</strong></p>
+<p><strong>-p audience-segment-ids=string</strong></p>
 <ul>
-<li>Select only archived ads.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p placement-ids=string</strong></p>
-<ul>
-<li>Select only ads with these placement IDs assigned.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p ssl-compliant=boolean</strong></p>
-<ul>
-<li>Select only ads that are SSL-compliant.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p sort-field=string</strong></p>
-<ul>
-<li>Field by which to sort the list.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p creative-type=string</strong></p>
-<ul>
-<li>Select only ads with the specified creativeType.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p compatibility=string</strong></p>
-<ul>
-<li>Select default ads with the specified compatibility. Applicable when type is AD_SERVING_DEFAULT_AD. WEB and WEB_INTERSTITIAL refer to rendering either on desktop or on mobile devices for regular or interstitial ads, respectively. APP and APP_INTERSTITIAL are for rendering in mobile apps. IN_STREAM_VIDEO refers to rendering an in-stream video ads developed with the VAST standard.</li>
+<li>Select only ads with these audience segment IDs.</li>
 </ul>
 </li>
 <li>
@@ -1973,27 +1943,21 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p landing-page-ids=string</strong></p>
+<p><strong>-p archived=boolean</strong></p>
 <ul>
-<li>Select only ads with these landing page IDs.</li>
+<li>Select only archived ads.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p page-token=string</strong></p>
+<p><strong>-p advertiser-id=string</strong></p>
 <ul>
-<li>Value of the nextPageToken from the previous result page.</li>
+<li>Select only ads with this advertiser ID.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p sort-order=string</strong></p>
+<p><strong>-p compatibility=string</strong></p>
 <ul>
-<li>Order of sorted results, default is ASCENDING.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p audience-segment-ids=string</strong></p>
-<ul>
-<li>Select only ads with these audience segment IDs.</li>
+<li>Select default ads with the specified compatibility. Applicable when type is AD_SERVING_DEFAULT_AD. WEB and WEB_INTERSTITIAL refer to rendering either on desktop or on mobile devices for regular or interstitial ads, respectively. APP and APP_INTERSTITIAL are for rendering in mobile apps. IN_STREAM_VIDEO refers to rendering an in-stream video ads developed with the VAST standard.</li>
 </ul>
 </li>
 <li>
@@ -2009,15 +1973,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p overridden-event-tag-id=string</strong></p>
+<p><strong>-p placement-ids=string</strong></p>
 <ul>
-<li>Select only ads with this event tag override ID.</li>
+<li>Select only ads with these placement IDs assigned.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p advertiser-id=string</strong></p>
+<p><strong>-p ssl-compliant=boolean</strong></p>
 <ul>
-<li>Select only ads with this advertiser ID.</li>
+<li>Select only ads that are SSL-compliant.</li>
 </ul>
 </li>
 <li>
@@ -2027,33 +1991,21 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p creative-optimization-configuration-ids=string</strong></p>
+<p><strong>-p sort-order=string</strong></p>
 <ul>
-<li>Select only ads with these creative optimization configuration IDs.</li>
+<li>Order of sorted results, default is ASCENDING.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p size-ids=string</strong></p>
+<p><strong>-p remarketing-list-ids=string</strong></p>
 <ul>
-<li>Select only ads with these size IDs.</li>
+<li>Select only ads whose list targeting expression use these remarketing list IDs.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p max-results=integer</strong></p>
+<p><strong>-p page-token=string</strong></p>
 <ul>
-<li>Maximum number of results to return.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p dynamic-click-tracker=boolean</strong></p>
-<ul>
-<li>Select only dynamic click trackers. Applicable when type is AD_SERVING_CLICK_TRACKER. If true, select dynamic click trackers. If false, select static click trackers. Leave unset to select both.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p type=string</strong></p>
-<ul>
-<li>Select only ads with these types.</li>
+<li>Value of the nextPageToken from the previous result page.</li>
 </ul>
 </li>
 <li>
@@ -2069,9 +2021,57 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p remarketing-list-ids=string</strong></p>
+<p><strong>-p sort-field=string</strong></p>
 <ul>
-<li>Select only ads whose list targeting expression use these remarketing list IDs.</li>
+<li>Field by which to sort the list.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p size-ids=string</strong></p>
+<ul>
+<li>Select only ads with these size IDs.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p creative-optimization-configuration-ids=string</strong></p>
+<ul>
+<li>Select only ads with these creative optimization configuration IDs.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p overridden-event-tag-id=string</strong></p>
+<ul>
+<li>Select only ads with this event tag override ID.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p max-results=integer</strong></p>
+<ul>
+<li>Maximum number of results to return.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p creative-type=string</strong></p>
+<ul>
+<li>Select only ads with the specified creativeType.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p type=string</strong></p>
+<ul>
+<li>Select only ads with these types.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p landing-page-ids=string</strong></p>
+<ul>
+<li>Select only ads with these landing page IDs.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p dynamic-click-tracker=boolean</strong></p>
+<ul>
+<li>Select only dynamic click trackers. Applicable when type is AD_SERVING_CLICK_TRACKER. If true, select dynamic click trackers. If false, select static click trackers. Leave unset to select both.</li>
 </ul>
 </li>
 </ul>

@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Update - drive v1.0.0+20161212</title>
+  <title>Update - drive v1.0.1+20161212</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> drive v1.0.0+20161212</a>
+        <a href=".." class="icon icon-home"> drive v1.0.1+20161212</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -621,7 +621,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">drive v1.0.0+20161212</a>
+        <a href="..">drive v1.0.1+20161212</a>
       </nav>
 
       
@@ -1337,21 +1337,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p timed-text-language=string</strong></p>
+<p><strong>-p add-parents=string</strong></p>
 <ul>
-<li>The language of the timed text.</li>
+<li>Comma-separated list of parent IDs to add.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p modified-date-behavior=string</strong></p>
+<p><strong>-p remove-parents=string</strong></p>
 <ul>
-<li>Determines the behavior in which modifiedDate is updated. This overrides setModifiedDate.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p timed-text-track-name=string</strong></p>
-<ul>
-<li>The timed text track name.</li>
+<li>Comma-separated list of parent IDs to remove.</li>
 </ul>
 </li>
 <li>
@@ -1361,9 +1355,21 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p remove-parents=string</strong></p>
+<p><strong>-p ocr-language=string</strong></p>
 <ul>
-<li>Comma-separated list of parent IDs to remove.</li>
+<li>If ocr is true, hints at the language to use. Valid values are BCP 47 codes.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p use-content-as-indexable-text=boolean</strong></p>
+<ul>
+<li>Whether to use the content as indexable text.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p set-modified-date=boolean</strong></p>
+<ul>
+<li>Whether to set the modified date with the supplied modified date.</li>
 </ul>
 </li>
 <li>
@@ -1379,21 +1385,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p add-parents=string</strong></p>
-<ul>
-<li>Comma-separated list of parent IDs to add.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p convert=boolean</strong></p>
 <ul>
 <li>This parameter is deprecated and has no function.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p ocr-language=string</strong></p>
-<ul>
-<li>If ocr is true, hints at the language to use. Valid values are BCP 47 codes.</li>
 </ul>
 </li>
 <li>
@@ -1403,15 +1397,21 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p set-modified-date=boolean</strong></p>
+<p><strong>-p timed-text-language=string</strong></p>
 <ul>
-<li>Whether to set the modified date with the supplied modified date.</li>
+<li>The language of the timed text.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p use-content-as-indexable-text=boolean</strong></p>
+<p><strong>-p modified-date-behavior=string</strong></p>
 <ul>
-<li>Whether to use the content as indexable text.</li>
+<li>Determines the behavior in which modifiedDate is updated. This overrides setModifiedDate.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p timed-text-track-name=string</strong></p>
+<ul>
+<li>The timed text track name.</li>
 </ul>
 </li>
 </ul>

@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>List - Cloud Monitoring v1.0.0+20161031</title>
+  <title>List - Cloud Monitoring v1.0.1+20161031</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Cloud Monitoring v1.0.0+20161031</a>
+        <a href=".." class="icon icon-home"> Cloud Monitoring v1.0.1+20161031</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -153,7 +153,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Cloud Monitoring v1.0.0+20161031</a>
+        <a href="..">Cloud Monitoring v1.0.1+20161031</a>
       </nav>
 
       
@@ -247,26 +247,18 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p page-token=string</strong></p>
+<p><strong>-p timespan=string</strong></p>
 <ul>
-<li>The pagination token, which is used to page through large result sets. Set this value to the value of the nextPageToken to retrieve the next page of results.</li>
-</ul>
-</li>
 <li>
-<p><strong>-p aggregator=string</strong></p>
+<p>Length of the time interval to query, which is an alternative way to declare the interval: (youngest - timespan, youngest]. The timespan and oldest parameters should not be used together. Units:  </p>
 <ul>
-<li>The aggregation function that will reduce the data points in each window to a single point. This parameter is only valid for non-cumulative metrics with a value type of INT64 or DOUBLE.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p window=string</strong></p>
-<ul>
-<li>The sampling window. At most one data point will be returned for each window in the requested time interval. This parameter is only valid for non-cumulative metric types. Units:  <ul>
+<li>s: second </li>
 <li>m: minute </li>
 <li>h: hour </li>
 <li>d: day </li>
-<li>w: week  Examples: 3m, 4w. Only one unit is allowed, for example: 2w3d is not allowed; you should use 17d instead.</li>
+<li>w: week  Examples: 2s, 3m, 4w. Only one unit is allowed, for example: 2w3d is not allowed; you should use 17d instead.</li>
 </ul>
+<p>If neither oldest nor timespan is specified, the default time interval will be (youngest - 4 hours, youngest].</p>
 </li>
 </ul>
 </li>
@@ -284,9 +276,27 @@ label=cloud.googleapis.com%2Flocation=~us-central1.*</li>
 </ul>
 </li>
 <li>
-<p><strong>-p oldest=string</strong></p>
+<p><strong>-p window=string</strong></p>
 <ul>
-<li>Start of the time interval (exclusive), which is expressed as an RFC 3339 timestamp. If neither oldest nor timespan is specified, the default time interval will be (youngest - 4 hours, youngest]</li>
+<li>The sampling window. At most one data point will be returned for each window in the requested time interval. This parameter is only valid for non-cumulative metric types. Units:  <ul>
+<li>m: minute </li>
+<li>h: hour </li>
+<li>d: day </li>
+<li>w: week  Examples: 3m, 4w. Only one unit is allowed, for example: 2w3d is not allowed; you should use 17d instead.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>-p aggregator=string</strong></p>
+<ul>
+<li>The aggregation function that will reduce the data points in each window to a single point. This parameter is only valid for non-cumulative metrics with a value type of INT64 or DOUBLE.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p page-token=string</strong></p>
+<ul>
+<li>The pagination token, which is used to page through large result sets. Set this value to the value of the nextPageToken to retrieve the next page of results.</li>
 </ul>
 </li>
 <li>
@@ -296,19 +306,9 @@ label=cloud.googleapis.com%2Flocation=~us-central1.*</li>
 </ul>
 </li>
 <li>
-<p><strong>-p timespan=string</strong></p>
+<p><strong>-p oldest=string</strong></p>
 <ul>
-<li>
-<p>Length of the time interval to query, which is an alternative way to declare the interval: (youngest - timespan, youngest]. The timespan and oldest parameters should not be used together. Units:  </p>
-<ul>
-<li>s: second </li>
-<li>m: minute </li>
-<li>h: hour </li>
-<li>d: day </li>
-<li>w: week  Examples: 2s, 3m, 4w. Only one unit is allowed, for example: 2w3d is not allowed; you should use 17d instead.</li>
-</ul>
-<p>If neither oldest nor timespan is specified, the default time interval will be (youngest - 4 hours, youngest].</p>
-</li>
+<li>Start of the time interval (exclusive), which is expressed as an RFC 3339 timestamp. If neither oldest nor timespan is specified, the default time interval will be (youngest - 4 hours, youngest]</li>
 </ul>
 </li>
 </ul>

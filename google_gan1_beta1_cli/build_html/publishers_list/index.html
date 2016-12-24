@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>List - gan v1.0.0+20130205</title>
+  <title>List - gan v1.0.1+20130205</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> gan v1.0.0+20130205</a>
+        <a href=".." class="icon icon-home"> gan v1.0.1+20130205</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -197,7 +197,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">gan v1.0.0+20130205</a>
+        <a href="..">gan v1.0.1+20130205</a>
       </nav>
 
       
@@ -255,9 +255,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p min-seven-day-epc=number</strong></p>
+<p><strong>-p max-results=integer</strong></p>
 <ul>
-<li>Filters out all publishers that have a seven day EPC average lower than the given value (inclusive). Min value 0.0. Optional.</li>
+<li>Max number of items to return in this page. Optional. Defaults to 20.</li>
 </ul>
 </li>
 <li>
@@ -267,21 +267,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p min-ninety-day-epc=number</strong></p>
-<ul>
-<li>Filters out all publishers that have a ninety day EPC average lower than the given value (inclusive). Min value: 0.0. Optional.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p publisher-category=string</strong></p>
 <ul>
 <li>Caret(^) delimted list of publisher categories. Valid categories: (unclassified|community_and_content|shopping_and_promotion|loyalty_and_rewards|network|search_specialist|comparison_shopping|email). Filters out all publishers not in one of the given advertiser categories. Optional.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p relationship-status=string</strong></p>
+<p><strong>-p min-ninety-day-epc=number</strong></p>
 <ul>
-<li>Filters out all publishers for which do not have the given relationship status with the requesting publisher.</li>
+<li>Filters out all publishers that have a ninety day EPC average lower than the given value (inclusive). Min value: 0.0. Optional.</li>
 </ul>
 </li>
 <li>
@@ -291,9 +285,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p max-results=integer</strong></p>
+<p><strong>-p min-seven-day-epc=number</strong></p>
 <ul>
-<li>Max number of items to return in this page. Optional. Defaults to 20.</li>
+<li>Filters out all publishers that have a seven day EPC average lower than the given value (inclusive). Min value 0.0. Optional.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p relationship-status=string</strong></p>
+<ul>
+<li>Filters out all publishers for which do not have the given relationship status with the requesting publisher.</li>
 </ul>
 </li>
 </ul>

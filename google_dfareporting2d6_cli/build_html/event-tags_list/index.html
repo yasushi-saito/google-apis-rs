@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>List - dfareporting v1.0.0+20161027</title>
+  <title>List - dfareporting v1.0.1+20161027</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> dfareporting v1.0.0+20161027</a>
+        <a href=".." class="icon icon-home"> dfareporting v1.0.1+20161027</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -1968,7 +1968,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">dfareporting v1.0.0+20161027</a>
+        <a href="..">dfareporting v1.0.1+20161027</a>
       </nav>
 
       
@@ -2026,15 +2026,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p event-tag-types=string</strong></p>
+<p><strong>-p enabled=boolean</strong></p>
 <ul>
-<li>Select only event tags with the specified event tag types. Event tag types can be used to specify whether to use a third-party pixel, a third-party JavaScript URL, or a third-party click-through URL for either impression or click tracking.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p advertiser-id=string</strong></p>
-<ul>
-<li>Select only event tags that belong to this advertiser.</li>
+<li>Select only enabled event tags. What is considered enabled or disabled depends on the definitionsOnly parameter. When definitionsOnly is set to true, only the specified advertiser or campaign&#39;s event tags&#39; enabledByDefault field is examined. When definitionsOnly is set to false, the specified ad or specified campaign&#39;s parent advertiser&#39;s or parent campaign&#39;s event tags&#39; enabledByDefault and status fields are examined as well.</li>
 </ul>
 </li>
 <li>
@@ -2044,9 +2038,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p definitions-only=boolean</strong></p>
+<p><strong>-p event-tag-types=string</strong></p>
 <ul>
-<li>Examine only the specified campaign or advertiser&#39;s event tags for matching selector criteria. When set to false, the parent advertiser and parent campaign of the specified ad or campaign is examined as well. In addition, when set to false, the status field is examined as well, along with the enabledByDefault field. This parameter can not be set to true when adId is specified as ads do not define their own even tags.</li>
+<li>Select only event tags with the specified event tag types. Event tag types can be used to specify whether to use a third-party pixel, a third-party JavaScript URL, or a third-party click-through URL for either impression or click tracking.</li>
 </ul>
 </li>
 <li>
@@ -2056,21 +2050,27 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p sort-field=string</strong></p>
-<ul>
-<li>Field by which to sort the list.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p ad-id=string</strong></p>
 <ul>
 <li>Select only event tags that belong to this ad.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p enabled=boolean</strong></p>
+<p><strong>-p definitions-only=boolean</strong></p>
 <ul>
-<li>Select only enabled event tags. What is considered enabled or disabled depends on the definitionsOnly parameter. When definitionsOnly is set to true, only the specified advertiser or campaign&#39;s event tags&#39; enabledByDefault field is examined. When definitionsOnly is set to false, the specified ad or specified campaign&#39;s parent advertiser&#39;s or parent campaign&#39;s event tags&#39; enabledByDefault and status fields are examined as well.</li>
+<li>Examine only the specified campaign or advertiser&#39;s event tags for matching selector criteria. When set to false, the parent advertiser and parent campaign of the specified ad or campaign is examined as well. In addition, when set to false, the status field is examined as well, along with the enabledByDefault field. This parameter can not be set to true when adId is specified as ads do not define their own even tags.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p advertiser-id=string</strong></p>
+<ul>
+<li>Select only event tags that belong to this advertiser.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p sort-field=string</strong></p>
+<ul>
+<li>Field by which to sort the list.</li>
 </ul>
 </li>
 <li>

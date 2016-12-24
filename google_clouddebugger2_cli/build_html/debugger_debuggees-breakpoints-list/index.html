@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Debuggees Breakpoints List - Cloud Debugger v1.0.0+20160810</title>
+  <title>Debuggees Breakpoints List - Cloud Debugger v1.0.1+20160810</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Cloud Debugger v1.0.0+20160810</a>
+        <a href=".." class="icon icon-home"> Cloud Debugger v1.0.1+20160810</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -154,7 +154,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Cloud Debugger v1.0.0+20160810</a>
+        <a href="..">Cloud Debugger v1.0.1+20160810</a>
       </nav>
 
       
@@ -216,27 +216,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p wait-token=string</strong></p>
-<ul>
-<li>A wait token that, if specified, blocks the call until the breakpoints list has changed, or a server selected timeout has expired. The value should be set from the last response. The error code <code>google.rpc.Code.ABORTED</code> (RPC) is returned on wait timeout, which should be called again with the same <code>wait_token</code>.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p include-all-users=boolean</strong></p>
-<ul>
-<li>When set to <code>true</code>, the response includes the list of breakpoints set by any user. Otherwise, it includes only breakpoints set by the caller.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p strip-results=boolean</strong></p>
-<ul>
-<li>When set to <code>true</code>, the response breakpoints are stripped of the results fields: <code>stack_frames</code>, <code>evaluated_expressions</code> and <code>variable_table</code>.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p action-value=string</strong></p>
 <ul>
 <li>Only breakpoints with the specified action will pass the filter.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p client-version=string</strong></p>
+<ul>
+<li>The client version making the call. Following: <code>domain/type/version</code> (e.g., <code>google.com/intellij/v1</code>).</li>
 </ul>
 </li>
 <li>
@@ -246,9 +234,21 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p client-version=string</strong></p>
+<p><strong>-p wait-token=string</strong></p>
 <ul>
-<li>The client version making the call. Following: <code>domain/type/version</code> (e.g., <code>google.com/intellij/v1</code>).</li>
+<li>A wait token that, if specified, blocks the call until the breakpoints list has changed, or a server selected timeout has expired. The value should be set from the last response. The error code <code>google.rpc.Code.ABORTED</code> (RPC) is returned on wait timeout, which should be called again with the same <code>wait_token</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p strip-results=boolean</strong></p>
+<ul>
+<li>When set to <code>true</code>, the response breakpoints are stripped of the results fields: <code>stack_frames</code>, <code>evaluated_expressions</code> and <code>variable_table</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p include-all-users=boolean</strong></p>
+<ul>
+<li>When set to <code>true</code>, the response includes the list of breakpoints set by any user. Otherwise, it includes only breakpoints set by the caller.</li>
 </ul>
 </li>
 </ul>

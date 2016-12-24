@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Regions Jobs List - dataproc v1.0.0+20161102</title>
+  <title>Regions Jobs List - dataproc v1.0.1+20161102</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> dataproc v1.0.0+20161102</a>
+        <a href=".." class="icon icon-home"> dataproc v1.0.1+20161102</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -195,7 +195,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">dataproc v1.0.0+20161102</a>
+        <a href="..">dataproc v1.0.1+20161102</a>
       </nav>
 
       
@@ -263,18 +263,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p job-state-matcher=string</strong></p>
-<ul>
-<li>[Optional] Specifies enumerated categories of jobs to list (default = match ALL jobs).</li>
-</ul>
-</li>
-<li>
-<p><strong>-p page-size=integer</strong></p>
-<ul>
-<li>[Optional] The number of results to return in each response.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p cluster-name=string</strong></p>
 <ul>
 <li>[Optional] If set, the returned jobs list includes only jobs that were submitted to the named cluster.</li>
@@ -284,6 +272,18 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <p><strong>-p filter=string</strong></p>
 <ul>
 <li>[Optional] A filter constraining the jobs to list. Filters are case-sensitive and have the following syntax: field:value] ... or [field = value] AND [field [= value]] ... where <strong>field</strong> is <code>status.state</code> or <code>labels.[KEY]</code>, and <code>[KEY]</code> is a label key. <strong>value</strong> can be <code>*</code> to match all values. <code>status.state</code> can be either <code>ACTIVE</code> or <code>INACTIVE</code>. Only the logical <code>AND</code> operator is supported; space-separated items are treated as having an implicit <code>AND</code> operator. Example valid filters are: status.state:ACTIVE labels.env:staging labels.starred:* and status.state = ACTIVE AND labels.env = staging AND labels.starred = *</li>
+</ul>
+</li>
+<li>
+<p><strong>-p page-size=integer</strong></p>
+<ul>
+<li>[Optional] The number of results to return in each response.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p job-state-matcher=string</strong></p>
+<ul>
+<li>[Optional] Specifies enumerated categories of jobs to list (default = match ALL jobs).</li>
 </ul>
 </li>
 </ul>

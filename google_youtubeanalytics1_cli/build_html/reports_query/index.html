@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Query - YouTube Analytics v1.0.0+20161213</title>
+  <title>Query - YouTube Analytics v1.0.1+20161213</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> YouTube Analytics v1.0.0+20161213</a>
+        <a href=".." class="icon icon-home"> YouTube Analytics v1.0.1+20161213</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -162,7 +162,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">YouTube Analytics v1.0.0+20161213</a>
+        <a href="..">YouTube Analytics v1.0.1+20161213</a>
       </nav>
 
       
@@ -248,9 +248,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p max-results=integer</strong></p>
+<p><strong>-p dimensions=string</strong></p>
 <ul>
-<li>The maximum number of rows to include in the response.</li>
+<li>A comma-separated list of YouTube Analytics dimensions, such as views or ageGroup,gender. See the Available Reports document for a list of the reports that you can retrieve and the dimensions used for those reports. Also see the Dimensions document for definitions of those dimensions.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p sort=string</strong></p>
+<ul>
+<li>A comma-separated list of dimensions or metrics that determine the sort order for YouTube Analytics data. By default the sort order is ascending. The &#39;-&#39; prefix causes descending sort order.</li>
 </ul>
 </li>
 <li>
@@ -260,21 +266,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p dimensions=string</strong></p>
-<ul>
-<li>A comma-separated list of YouTube Analytics dimensions, such as views or ageGroup,gender. See the Available Reports document for a list of the reports that you can retrieve and the dimensions used for those reports. Also see the Dimensions document for definitions of those dimensions.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p start-index=integer</strong></p>
 <ul>
 <li>An index of the first entity to retrieve. Use this parameter as a pagination mechanism along with the max-results parameter (one-based, inclusive).</li>
 </ul>
 </li>
 <li>
-<p><strong>-p sort=string</strong></p>
+<p><strong>-p max-results=integer</strong></p>
 <ul>
-<li>A comma-separated list of dimensions or metrics that determine the sort order for YouTube Analytics data. By default the sort order is ascending. The &#39;-&#39; prefix causes descending sort order.</li>
+<li>The maximum number of rows to include in the response.</li>
 </ul>
 </li>
 </ul>

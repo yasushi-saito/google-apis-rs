@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>List - mirror v1.0.0+20160616</title>
+  <title>List - mirror v1.0.1+20160616</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> mirror v1.0.0+20160616</a>
+        <a href=".." class="icon icon-home"> mirror v1.0.1+20160616</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -295,7 +295,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">mirror v1.0.0+20160616</a>
+        <a href="..">mirror v1.0.1+20160616</a>
       </nav>
 
       
@@ -350,9 +350,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p order-by=string</strong></p>
+<p><strong>-p max-results=integer</strong></p>
 <ul>
-<li>Controls the order in which timeline items are returned.</li>
+<li>The maximum number of items to include in the response, used for paging.</li>
 </ul>
 </li>
 <li>
@@ -362,21 +362,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p page-token=string</strong></p>
-<ul>
-<li>Token for the page of results to return.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p pinned-only=boolean</strong></p>
 <ul>
 <li>If true, only pinned items will be returned.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p include-deleted=boolean</strong></p>
+<p><strong>-p page-token=string</strong></p>
 <ul>
-<li>If true, tombstone records for deleted items will be returned.</li>
+<li>Token for the page of results to return.</li>
 </ul>
 </li>
 <li>
@@ -386,9 +380,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p max-results=integer</strong></p>
+<p><strong>-p order-by=string</strong></p>
 <ul>
-<li>The maximum number of items to include in the response, used for paging.</li>
+<li>Controls the order in which timeline items are returned.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p include-deleted=boolean</strong></p>
+<ul>
+<li>If true, tombstone records for deleted items will be returned.</li>
 </ul>
 </li>
 </ul>

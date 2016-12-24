@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>List - YouTube v1.0.0+20161202</title>
+  <title>List - YouTube v1.0.1+20161202</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> YouTube v1.0.0+20161202</a>
+        <a href=".." class="icon icon-home"> YouTube v1.0.1+20161202</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -787,7 +787,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">YouTube v1.0.0+20161202</a>
+        <a href="..">YouTube v1.0.1+20161202</a>
       </nav>
 
       
@@ -854,12 +854,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p chart=string</strong></p>
-<ul>
-<li>The chart parameter identifies the chart that you want to retrieve.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p region-code=string</strong></p>
 <ul>
 <li>The regionCode parameter instructs the API to select a video chart available in the specified region. This parameter can only be used in conjunction with the chart parameter. The parameter value is an ISO 3166-1 alpha-2 country code.</li>
@@ -896,6 +890,12 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
+<p><strong>-p locale=string</strong></p>
+<ul>
+<li>DEPRECATED</li>
+</ul>
+</li>
+<li>
 <p><strong>-p on-behalf-of-content-owner=string</strong></p>
 <ul>
 <li>
@@ -911,6 +911,12 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
+<p><strong>-p chart=string</strong></p>
+<ul>
+<li>The chart parameter identifies the chart that you want to retrieve.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p max-height=integer</strong></p>
 <ul>
 <li>The maxHeight parameter specifies a maximum height of the embedded player. If maxWidth is provided, maxHeight may not be reached in order to not violate the width request.</li>
@@ -920,12 +926,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <p><strong>-p video-category-id=string</strong></p>
 <ul>
 <li>The videoCategoryId parameter identifies the video category for which the chart should be retrieved. This parameter can only be used in conjunction with the chart parameter. By default, charts are not restricted to a particular category.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p locale=string</strong></p>
-<ul>
-<li>DEPRECATED</li>
 </ul>
 </li>
 <li>

@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Instances - calendar v1.0.0+20161211</title>
+  <title>Instances - calendar v1.0.1+20161211</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> calendar v1.0.0+20161211</a>
+        <a href=".." class="icon icon-home"> calendar v1.0.1+20161211</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -405,7 +405,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">calendar v1.0.0+20161211</a>
+        <a href="..">calendar v1.0.1+20161211</a>
       </nav>
 
       
@@ -471,21 +471,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p show-deleted=boolean</strong></p>
-<ul>
-<li>Whether to include deleted events (with status equals &#34;cancelled&#34;) in the result. Cancelled instances of recurring events will still be included if singleEvents is False. Optional. The default is False.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p time-zone=string</strong></p>
-<ul>
-<li>Time zone used in the response. Optional. The default is the time zone of the calendar.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p original-start=string</strong></p>
 <ul>
 <li>The original start time of the instance in the result. Optional.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p max-attendees=integer</strong></p>
+<ul>
+<li>The maximum number of attendees to include in the response. If there are more than the specified number of attendees, only the participant is returned. Optional.</li>
 </ul>
 </li>
 <li>
@@ -495,9 +489,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p max-attendees=integer</strong></p>
+<p><strong>-p time-zone=string</strong></p>
 <ul>
-<li>The maximum number of attendees to include in the response. If there are more than the specified number of attendees, only the participant is returned. Optional.</li>
+<li>Time zone used in the response. Optional. The default is the time zone of the calendar.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p show-deleted=boolean</strong></p>
+<ul>
+<li>Whether to include deleted events (with status equals &#34;cancelled&#34;) in the result. Cancelled instances of recurring events will still be included if singleEvents is False. Optional. The default is False.</li>
 </ul>
 </li>
 <li>
@@ -513,15 +513,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p always-include-email=boolean</strong></p>
-<ul>
-<li>Whether to always include a value in the email field for the organizer, creator and attendees, even if no real email is available (i.e. a generated, non-working value will be provided). The use of this option is discouraged and should only be used by clients which cannot handle the absence of an email address value in the mentioned places. Optional. The default is False.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p page-token=string</strong></p>
 <ul>
 <li>Token specifying which result page to return. Optional.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p always-include-email=boolean</strong></p>
+<ul>
+<li>Whether to always include a value in the email field for the organizer, creator and attendees, even if no real email is available (i.e. a generated, non-working value will be provided). The use of this option is discouraged and should only be used by clients which cannot handle the absence of an email address value in the mentioned places. Optional. The default is False.</li>
 </ul>
 </li>
 </ul>

@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Coveragebuckets List - genomics v1.0.0+20160928</title>
+  <title>Coveragebuckets List - genomics v1.0.1+20160928</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> genomics v1.0.0+20160928</a>
+        <a href=".." class="icon icon-home"> genomics v1.0.1+20160928</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -562,7 +562,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">genomics v1.0.0+20160928</a>
+        <a href="..">genomics v1.0.1+20160928</a>
       </nav>
 
       
@@ -625,15 +625,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p target-bucket-width=string</strong></p>
+<p><strong>-p reference-name=string</strong></p>
 <ul>
-<li>The desired width of each reported coverage bucket in base pairs. This will be rounded down to the nearest precomputed bucket width; the value of which is returned as <code>bucketWidth</code> in the response. Defaults to infinity (each bucket spans an entire reference sequence) or the length of the target range, if specified. The smallest precomputed <code>bucketWidth</code> is currently 2048 base pairs; this is subject to change.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p page-token=string</strong></p>
-<ul>
-<li>The continuation token, which is used to page through large result sets. To get the next page of results, set this parameter to the value of <code>nextPageToken</code> from the previous response.</li>
+<li>The name of the reference to query, within the reference set associated with this query. Optional.</li>
 </ul>
 </li>
 <li>
@@ -643,21 +637,27 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
+<p><strong>-p target-bucket-width=string</strong></p>
+<ul>
+<li>The desired width of each reported coverage bucket in base pairs. This will be rounded down to the nearest precomputed bucket width; the value of which is returned as <code>bucketWidth</code> in the response. Defaults to infinity (each bucket spans an entire reference sequence) or the length of the target range, if specified. The smallest precomputed <code>bucketWidth</code> is currently 2048 base pairs; this is subject to change.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p end=string</strong></p>
 <ul>
 <li>The end position of the range on the reference, 0-based exclusive. If specified, <code>referenceName</code> must also be specified. If unset or 0, defaults to the length of the reference.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p start=string</strong></p>
+<p><strong>-p page-token=string</strong></p>
 <ul>
-<li>The start position of the range on the reference, 0-based inclusive. If specified, <code>referenceName</code> must also be specified. Defaults to 0.</li>
+<li>The continuation token, which is used to page through large result sets. To get the next page of results, set this parameter to the value of <code>nextPageToken</code> from the previous response.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p reference-name=string</strong></p>
+<p><strong>-p start=string</strong></p>
 <ul>
-<li>The name of the reference to query, within the reference set associated with this query. Optional.</li>
+<li>The start position of the range on the reference, 0-based inclusive. If specified, <code>referenceName</code> must also be specified. Defaults to 0.</li>
 </ul>
 </li>
 </ul>

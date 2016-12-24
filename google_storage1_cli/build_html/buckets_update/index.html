@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Update - storage v1.0.0+20161123</title>
+  <title>Update - storage v1.0.1+20161123</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> storage v1.0.0+20161123</a>
+        <a href=".." class="icon icon-home"> storage v1.0.1+20161123</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -380,7 +380,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">storage v1.0.0+20161123</a>
+        <a href="..">storage v1.0.1+20161123</a>
       </nav>
 
       
@@ -579,12 +579,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p if-metageneration-not-match=string</strong></p>
-<ul>
-<li>Makes the return of the bucket metadata conditional on whether the bucket&#39;s current metageneration does not match the given value.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p predefined-acl=string</strong></p>
 <ul>
 <li>Apply a predefined set of access controls to this bucket.</li>
@@ -594,6 +588,12 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <p><strong>-p if-metageneration-match=string</strong></p>
 <ul>
 <li>Makes the return of the bucket metadata conditional on whether the bucket&#39;s current metageneration matches the given value.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p if-metageneration-not-match=string</strong></p>
+<ul>
+<li>Makes the return of the bucket metadata conditional on whether the bucket&#39;s current metageneration does not match the given value.</li>
 </ul>
 </li>
 </ul>
