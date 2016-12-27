@@ -3,25 +3,28 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A complete library to interact with SQL Admin (protocol v1beta4)">
   
-  <title>SQL Admin v1.0.0+20160907</title>
-  
-
   <link rel="shortcut icon" href="./img/favicon.ico">
-
-  
+  <title>Home - SQL Admin v1.0.2+20161213</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="./css/theme.css" type="text/css" />
   <link rel="stylesheet" href="./css/theme_extra.css" type="text/css" />
   <link rel="stylesheet" href="./css/highlight.css">
-
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Home";
+    var mkdocs_page_input_path = "index.md";
+    var mkdocs_page_url = "/";
+  </script>
+  
   <script src="./js/jquery-2.1.1.min.js"></script>
   <script src="./js/modernizr-2.8.3.min.js"></script>
-  <script type="text/javascript" src="./js/highlight.pack.js"></script>
-  <script src="./js/theme.js"></script> 
-
+  <script type="text/javascript" src="./js/highlight.pack.js"></script> 
   
 </head>
 
@@ -32,288 +35,391 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href="." class="icon icon-home"> SQL Admin v1.0.0+20160907</a>
-        
+        <a href="." class="icon icon-home"> SQL Admin v1.0.2+20161213</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-      <ul class="current">
-    
+	<ul class="current">
+          
+            <li>
+    <li class="toctree-l1 current">
+        <a class="current" href=".">Home</a>
         
-            <li class="toctree-l1 current">
-                <a class="current" href=".">Home</a>
+            <ul>
+            
+                <li class="toctree-l3"><a href="#installation-and-source-code">Installation and Source Code</a></li>
                 
-                    <ul>
-                    
-                        <li class="toctree-l3"><a href="#downloads">Downloads</a></li>
-                        
-                    
-                        <li class="toctree-l3"><a href="#usage">Usage</a></li>
-                        
-                    
-                        <li class="toctree-l3"><a href="#configuration">Configuration</a></li>
-                        
-                    
-                        <li class="toctree-l3"><a href="#authentication">Authentication</a></li>
-                        
-                    
-                        <li class="toctree-l3"><a href="#application-secrets">Application Secrets</a></li>
-                        
-                    
-                        <li class="toctree-l3"><a href="#debugging">Debugging</a></li>
-                        
-                    
-                    </ul>
+            
+                <li class="toctree-l3"><a href="#usage">Usage</a></li>
                 
-            </li>
+            
+                <li class="toctree-l3"><a href="#configuration">Configuration</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#authentication">Authentication</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#application-secrets">Application Secrets</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#debugging">Debugging</a></li>
+                
+            
+            </ul>
         
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Backup Runs</span></li>
 
-    
         
-            <span>Backup Runs</span>
             
-                <li class="toctree-l2 ">
-                    <a class="" href="backup-runs_delete/">Delete</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="backup-runs_get/">Get</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="backup-runs_insert/">Insert</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="backup-runs_list/">List</a>
-                    
-                </li>
-            
+    <li class="toctree-l1 ">
+        <a class="" href="backup-runs_delete/">Delete</a>
         
+    </li>
 
-    
         
-            <span>Databases</span>
             
-                <li class="toctree-l2 ">
-                    <a class="" href="databases_delete/">Delete</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="databases_get/">Get</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="databases_insert/">Insert</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="databases_list/">List</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="databases_patch/">Patch</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="databases_update/">Update</a>
-                    
-                </li>
-            
+    <li class="toctree-l1 ">
+        <a class="" href="backup-runs_get/">Get</a>
         
+    </li>
 
-    
         
-            <span>Flags</span>
             
-                <li class="toctree-l2 ">
-                    <a class="" href="flags_list/">List</a>
-                    
-                </li>
-            
+    <li class="toctree-l1 ">
+        <a class="" href="backup-runs_insert/">Insert</a>
         
+    </li>
 
-    
         
-            <span>Instances</span>
             
-                <li class="toctree-l2 ">
-                    <a class="" href="instances_clone/">Clone</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="instances_delete/">Delete</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="instances_export/">Export</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="instances_failover/">Failover</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="instances_get/">Get</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="instances_import/">Import</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="instances_insert/">Insert</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="instances_list/">List</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="instances_patch/">Patch</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="instances_promote-replica/">Promote Replica</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="instances_reset-ssl-config/">Reset Ssl Config</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="instances_restart/">Restart</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="instances_restore-backup/">Restore Backup</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="instances_start-replica/">Start Replica</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="instances_stop-replica/">Stop Replica</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="instances_update/">Update</a>
-                    
-                </li>
-            
+    <li class="toctree-l1 ">
+        <a class="" href="backup-runs_list/">List</a>
         
+    </li>
 
-    
         
-            <span>Operations</span>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="operations_get/">Get</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="operations_list/">List</a>
-                    
-                </li>
-            
-        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Databases</span></li>
 
-    
         
-            <span>Ssl Certs</span>
             
-                <li class="toctree-l2 ">
-                    <a class="" href="ssl-certs_create-ephemeral/">Create Ephemeral</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="ssl-certs_delete/">Delete</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="ssl-certs_get/">Get</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="ssl-certs_insert/">Insert</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="ssl-certs_list/">List</a>
-                    
-                </li>
-            
+    <li class="toctree-l1 ">
+        <a class="" href="databases_delete/">Delete</a>
         
+    </li>
 
-    
         
-            <span>Tiers</span>
             
-                <li class="toctree-l2 ">
-                    <a class="" href="tiers_list/">List</a>
-                    
-                </li>
-            
+    <li class="toctree-l1 ">
+        <a class="" href="databases_get/">Get</a>
         
+    </li>
 
-    
         
-            <span>Users</span>
             
-                <li class="toctree-l2 ">
-                    <a class="" href="users_delete/">Delete</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="users_insert/">Insert</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="users_list/">List</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="users_update/">Update</a>
-                    
-                </li>
-            
+    <li class="toctree-l1 ">
+        <a class="" href="databases_insert/">Insert</a>
         
+    </li>
 
-    
-</ul>
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="databases_list/">List</a>
+        
+    </li>
 
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="databases_patch/">Patch</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="databases_update/">Update</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Flags</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="flags_list/">List</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Instances</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="instances_clone/">Clone</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="instances_delete/">Delete</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="instances_export/">Export</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="instances_failover/">Failover</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="instances_get/">Get</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="instances_import/">Import</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="instances_insert/">Insert</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="instances_list/">List</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="instances_patch/">Patch</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="instances_promote-replica/">Promote Replica</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="instances_reset-ssl-config/">Reset Ssl Config</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="instances_restart/">Restart</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="instances_restore-backup/">Restore Backup</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="instances_start-replica/">Start Replica</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="instances_stop-replica/">Stop Replica</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="instances_truncate-log/">Truncate Log</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="instances_update/">Update</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Operations</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="operations_get/">Get</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="operations_list/">List</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Ssl Certs</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="ssl-certs_create-ephemeral/">Create Ephemeral</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="ssl-certs_delete/">Delete</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="ssl-certs_get/">Get</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="ssl-certs_insert/">Insert</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="ssl-certs_list/">List</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Tiers</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="tiers_list/">List</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Users</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="users_delete/">Delete</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="users_insert/">Insert</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="users_list/">List</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="users_update/">Update</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+        </ul>
       </div>
       &nbsp;
     </nav>
@@ -323,7 +429,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href=".">SQL Admin v1.0.0+20160907</a>
+        <a href=".">SQL Admin v1.0.2+20161213</a>
       </nav>
 
       
@@ -333,20 +439,22 @@
   <ul class="wy-breadcrumbs">
     <li><a href=".">Docs</a> &raquo;</li>
     
+      
+    
     <li>Home</li>
-      <li class="wy-breadcrumbs-aside">
-        
-          
-            <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/sqladmin1_beta4-cli" class="icon icon-github"> Edit on GitHub</a>
-          
-        
-      </li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/sqladmin1_beta4-cli/edit/master/docs/index.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
   </ul>
   <hr/>
 </div>
           <div role="main">
             <div class="section">
-              <!---
+              
+                <!---
 DO NOT EDIT !
 This file was generated automatically from 'src/mako/cli/README.md.mako'
 DO NOT EDIT !
@@ -358,15 +466,14 @@ capabilities. Errors will be printed to standard error, and cause the program's 
 <p>If data-structures are requested, these will be returned as pretty-printed JSON, to be useful as input to other tools.</p>
 <p>Everything else about the <em>SQL Admin</em> API can be found at the
 <a href="https://cloud.google.com/sql/docs/reference/latest">official documentation site</a>.</p>
-<h1 id="downloads">Downloads</h1>
-<p>You can download the pre-compiled 64bit binaries for the following platforms:</p>
-<ul>
-<li><img alt="icon" src="http://megaicons.net/static/img/icons_sizes/6/140/16/ubuntu-icon.png" /> <a href="http://dl.byronimo.de/google.rs/cli/1.0.0/ubuntu/sqladmin1-beta4.tar.gz">ubuntu</a></li>
-<li><img alt="icon" src="http://hydra-media.cursecdn.com/wow.gamepedia.com/a/a2/Apple-icon-16x16.png?version=25ddd67ac3dd3b634478e3978b76cb74" /> <a href="http://dl.byronimo.de/google.rs/cli/1.0.0/osx/sqladmin1-beta4.tar.gz">osx</a></li>
-</ul>
+<h1 id="installation-and-source-code">Installation and Source Code</h1>
+<p>Install the command-line interface with cargo using:</p>
+<pre><code class="bash">cargo install google-sqladmin1_beta4-cli
+</code></pre>
+
 <p>Find the source code <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/sqladmin1_beta4-cli">on github</a>.</p>
 <h1 id="usage">Usage</h1>
-<p>This documentation was generated from the <em>SQL Admin</em> API at revision <em>20160907</em>. The CLI is at version <em>1.0.0</em>.</p>
+<p>This documentation was generated from the <em>SQL Admin</em> API at revision <em>20161213</em>. The CLI is at version <em>1.0.2</em>.</p>
 <pre><code class="bash">sqladmin1-beta4 [options]
         backup-runs
                 delete &lt;project&gt; &lt;instance&gt; &lt;id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
@@ -398,6 +505,7 @@ capabilities. Errors will be printed to standard error, and cause the program's 
                 restore-backup &lt;project&gt; &lt;instance&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 start-replica &lt;project&gt; &lt;instance&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 stop-replica &lt;project&gt; &lt;instance&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                truncate-log &lt;project&gt; &lt;instance&gt; &lt;log-type&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 update &lt;project&gt; &lt;instance&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
         operations
                 get &lt;project&gt; &lt;operation&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
@@ -472,13 +580,14 @@ will cause all communication related to authentication to standard error.
 If the <code>--debug</code> flag is set, error-results will be debug-printed, possibly yielding more information about the 
 issue at hand.</p>
 <p>You may consider redirecting standard error into a file for ease of use, e.g. <code>sqladmin1-beta4 --debug &lt;resource&gt; &lt;method&gt; [options] 2&gt;debug.txt</code>.</p>
+              
             </div>
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="backup-runs_delete/" class="btn btn-neutral float-right" title="Delete"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="backup-runs_delete/" class="btn btn-neutral float-right" title="Delete">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
     </div>
@@ -487,9 +596,10 @@ issue at hand.</p>
   <hr/>
 
   <div role="contentinfo">
-    <p>
     <!-- Copyright etc -->
-    </p>
+    
+      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+    
   </div>
 
   Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
@@ -499,22 +609,26 @@ issue at hand.</p>
       </div>
 
     </section>
-
+    
   </div>
 
-<div class="rst-versions" role="note" style="cursor: pointer">
+  <div class="rst-versions" role="note" style="cursor: pointer">
     <span class="rst-current-version" data-toggle="rst-current-version">
-        
-            <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/sqladmin1_beta4-cli" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
-        
-      <span><a href="" style="color: #fcfcfc;">&laquo; Previous</a></span>
-      <span style="margin-left: 15px"><a href="backup-runs_delete/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+          <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/sqladmin1_beta4-cli" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+      
+        <span style="margin-left: 15px"><a href="backup-runs_delete/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
     </span>
 </div>
+    <script src="./js/theme.js"></script>
 
-<!--
-MkDocs version  : 0.12.2
-Docs Build Date : 2016-10-16 20:41:33.062849
--->
 </body>
 </html>
+
+<!--
+MkDocs version : 0.16.1
+Build Date UTC : 2016-12-27 06:55:20
+-->

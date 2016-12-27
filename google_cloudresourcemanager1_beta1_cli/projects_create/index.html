@@ -3,25 +3,28 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Create - Cloud Resource Manager v1.0.0+20160617</title>
   
-
   <link rel="shortcut icon" href="../img/favicon.ico">
-
-  
+  <title>Create - Cloud Resource Manager v1.0.2+20161212</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
   <link rel="stylesheet" href="../css/highlight.css">
-
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Create";
+    var mkdocs_page_input_path = "projects_create.md";
+    var mkdocs_page_url = "/projects_create/";
+  </script>
+  
   <script src="../js/jquery-2.1.1.min.js"></script>
   <script src="../js/modernizr-2.8.3.min.js"></script>
-  <script type="text/javascript" src="../js/highlight.pack.js"></script>
-  <script src="../js/theme.js"></script> 
-
+  <script type="text/javascript" src="../js/highlight.pack.js"></script> 
   
 </head>
 
@@ -32,133 +35,174 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Cloud Resource Manager v1.0.0+20160617</a>
-        
+        <a href=".." class="icon icon-home"> Cloud Resource Manager v1.0.2+20161212</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-      <ul class="current">
-    
+	<ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="..">Home</a>
         
-            <li class="toctree-l1 ">
-                <a class="" href="..">Home</a>
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Organizations</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../organizations_get/">Get</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../organizations_get-iam-policy/">Get Iam Policy</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../organizations_list/">List</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../organizations_set-iam-policy/">Set Iam Policy</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../organizations_test-iam-permissions/">Test Iam Permissions</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../organizations_update/">Update</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Projects</span></li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Create</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#scopes">Scopes</a></li>
                 
-            </li>
+            
+                <li class="toctree-l3"><a href="#required-request-value">Required Request Value</a></li>
+                
+                    <li><a class="toctree-l4" href="#about-cursors">About Cursors</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#optional-output-flags">Optional Output Flags</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#optional-method-properties">Optional Method Properties</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#optional-general-properties">Optional General Properties</a></li>
+                
+            
+            </ul>
         
+    </li>
 
-    
         
-            <span>Organizations</span>
             
-                <li class="toctree-l2 ">
-                    <a class="" href="../organizations_get/">Get</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../organizations_get-iam-policy/">Get Iam Policy</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../organizations_list/">List</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../organizations_set-iam-policy/">Set Iam Policy</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../organizations_test-iam-permissions/">Test Iam Permissions</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../organizations_update/">Update</a>
-                    
-                </li>
-            
+    <li class="toctree-l1 ">
+        <a class="" href="../projects_delete/">Delete</a>
         
+    </li>
 
-    
         
-            <span>Projects</span>
             
-                <li class="toctree-l2 current">
-                    <a class="current" href="./">Create</a>
-                    
-                        <ul>
-                        
-                            <li class="toctree-l3"><a href="#scopes">Scopes</a></li>
-                            
-                        
-                            <li class="toctree-l3"><a href="#required-request-value">Required Request Value</a></li>
-                            
-                                <li><a class="toctree-l4" href="#about-cursors">About Cursors</a></li>
-                            
-                        
-                            <li class="toctree-l3"><a href="#optional-output-flags">Optional Output Flags</a></li>
-                            
-                        
-                            <li class="toctree-l3"><a href="#optional-general-properties">Optional General Properties</a></li>
-                            
-                        
-                        </ul>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../projects_delete/">Delete</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../projects_get/">Get</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../projects_get-ancestry/">Get Ancestry</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../projects_get-iam-policy/">Get Iam Policy</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../projects_list/">List</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../projects_set-iam-policy/">Set Iam Policy</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../projects_test-iam-permissions/">Test Iam Permissions</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../projects_undelete/">Undelete</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../projects_update/">Update</a>
-                    
-                </li>
-            
+    <li class="toctree-l1 ">
+        <a class="" href="../projects_get/">Get</a>
         
+    </li>
 
-    
-</ul>
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../projects_get-ancestry/">Get Ancestry</a>
+        
+    </li>
 
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../projects_get-iam-policy/">Get Iam Policy</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../projects_list/">List</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../projects_set-iam-policy/">Set Iam Policy</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../projects_test-iam-permissions/">Test Iam Permissions</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../projects_undelete/">Undelete</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../projects_update/">Update</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+        </ul>
       </div>
       &nbsp;
     </nav>
@@ -168,7 +212,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Cloud Resource Manager v1.0.0+20160617</a>
+        <a href="..">Cloud Resource Manager v1.0.2+20161212</a>
       </nav>
 
       
@@ -179,23 +223,30 @@
     <li><a href="..">Docs</a> &raquo;</li>
     
       
-        <li>Projects &raquo;</li>
+        
+          <li>Projects &raquo;</li>
+        
       
     
     <li>Create</li>
-      <li class="wy-breadcrumbs-aside">
-        
-          
-            <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/cloudresourcemanager1_beta1-cli" class="icon icon-github"> Edit on GitHub</a>
-          
-        
-      </li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/cloudresourcemanager1_beta1-cli/edit/master/docs/projects_create.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
   </ul>
   <hr/>
 </div>
           <div role="main">
             <div class="section">
-              <p>Creates a Project resource. Initially, the Project resource is owned by its creator exclusively. The creator can later grant permission to others to read or update the Project. Several APIs are activated automatically for the Project, including Google Cloud Storage.</p>
+              
+                <p>Creates a Project resource.</p>
+<p>Initially, the Project resource is owned by its creator exclusively.
+The creator can later grant permission to others to read or update the
+Project.</p>
+<p>Several APIs are activated automatically for the Project, including
+Google Cloud Storage.</p>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for the <em>https://www.googleapis.com/auth/cloud-platform</em> scope to make a valid call.</p>
 <p>If unset, the scope for this method defaults to <em>https://www.googleapis.com/auth/cloud-platform</em>.
@@ -219,41 +270,58 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    create-time=justo</code><ul>
-<li>Creation time. Read-only.</li>
-</ul>
-</li>
-<li><code>labels=key=amet.</code><ul>
-<li>The labels associated with this Project. Label keys must be between 1 and 63 characters long and must conform to the following regular expression: [a-z]([-a-z0-9]<em>[a-z0-9])?. Label values must be between 0 and 63 characters long and must conform to the regular expression ([a-z]([-a-z0-9]</em>[a-z0-9])?)?. No more than 256 labels can be associated with a given resource. Clients should store labels in a representation such as JSON that does not depend on specific characters being disallowed. Example: &#34;environment&#34; : &#34;dev&#34; Read-write.</li>
-<li>the value will be associated with the given <code>key</code></li>
-</ul>
-</li>
-<li><code>lifecycle-state=erat</code><ul>
-<li>The Project lifecycle state. Read-only.</li>
-</ul>
-</li>
-<li><code>name=labore</code><ul>
-<li>The user-assigned display name of the Project. It must be 4 to 30 characters. Allowed characters are: lowercase and uppercase letters, numbers, hyphen, single-quote, double-quote, space, and exclamation point. Example: My Project Read-write.</li>
-</ul>
-</li>
-<li><code>parent    id=sea</code><ul>
-<li>Required field for the type-specific id. This should correspond to the id used in the type-specific API&#39;s.</li>
-</ul>
-</li>
 <li>
-<p><code>type=nonumy</code></p>
+<p><code>-r .    create-time=justo</code></p>
 <ul>
-<li>Required field representing the resource type this id is for. At present, the valid types are &#34;project&#34; and &#34;organization&#34;.</li>
+<li>
+<p>Creation time.</p>
+<p>Read-only.
+* <code>labels=key=amet.</code>
+    - The labels associated with this Project.</p>
+<p>Label keys must be between 1 and 63 characters long and must conform
+to the following regular expression: [a-z]([-a-z0-9]*[a-z0-9])?.</p>
+<p>Label values must be between 0 and 63 characters long and must conform
+to the regular expression ([a-z]([-a-z0-9]*[a-z0-9])?)?.</p>
+<p>No more than 256 labels can be associated with a given resource.</p>
+<p>Clients should store labels in a representation such as JSON that does not
+depend on specific characters being disallowed.</p>
+<p>Example: &lt;code&gt;&#34;environment&#34; : &#34;dev&#34;&lt;/code&gt;</p>
+<p>Read-write.
+    - the value will be associated with the given <code>key</code>
+* <code>lifecycle-state=erat</code>
+    - The Project lifecycle state.</p>
+<p>Read-only.
+* <code>name=labore</code>
+    - The user-assigned display name of the Project.
+It must be 4 to 30 characters.
+Allowed characters are: lowercase and uppercase letters, numbers,
+hyphen, single-quote, double-quote, space, and exclamation point.</p>
+<p>Example: &lt;code&gt;My Project&lt;/code&gt;</p>
+<p>Read-write.
+<em> <code>parent    id=sea</code>
+    - Required field for the type-specific id. This should correspond to the id
+used in the type-specific API&#39;s.
+</em> <code>type=nonumy</code>
+    - Required field representing the resource type this id is for.
+At present, the valid types are &#34;project&#34; and &#34;organization&#34;.</p>
+</li>
 </ul>
 </li>
 <li>
 <p><code>..    project-id=dolores</code></p>
 <ul>
-<li>The unique, user-assigned ID of the Project. It must be 6 to 30 lowercase letters, digits, or hyphens. It must start with a letter. Trailing hyphens are prohibited. Example: tokyo-rain-123 Read-only after creation.</li>
-</ul>
+<li>
+<p>The unique, user-assigned ID of the Project.
+    It must be 6 to 30 lowercase letters, digits, or hyphens.
+    It must start with a letter.
+    Trailing hyphens are prohibited.</p>
+<p>Example: &lt;code&gt;tokyo-rain-123&lt;/code&gt;</p>
+<p>Read-only after creation.
+* <code>project-number=gubergren</code>
+    - The number uniquely identifying the project.</p>
+<p>Example: &lt;code&gt;415104041262&lt;/code&gt;</p>
+<p>Read-only.</p>
 </li>
-<li><code>project-number=gubergren</code><ul>
-<li>The number uniquely identifying the project. Example: 415104041262 Read-only.</li>
 </ul>
 </li>
 </ul>
@@ -273,6 +341,16 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   It will be a JSON-encoded structure.
   The <em>destination</em> may be <code>-</code> to indicate standard output, or a filepath that is to contain the received bytes.
   If unset, it defaults to standard output.</li>
+</ul>
+</li>
+</ul>
+<h1 id="optional-method-properties">Optional Method Properties</h1>
+<p>You may set the following properties to further configure the call. Please note that <code>-p</code> is followed by one 
+or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> even though the listing below repeats the
+<code>-p</code> for completeness.</p>
+<ul>
+<li><strong>-p use-legacy-stack=boolean</strong><ul>
+<li>A safety hatch to opt out of the new reliable project creation process.</li>
 </ul>
 </li>
 </ul>
@@ -358,13 +436,14 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 </ul>
+              
             </div>
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../projects_delete/" class="btn btn-neutral float-right" title="Delete"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../projects_delete/" class="btn btn-neutral float-right" title="Delete">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="../organizations_update/" class="btn btn-neutral" title="Update"><span class="icon icon-circle-arrow-left"></span> Previous</a>
@@ -375,9 +454,10 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   <hr/>
 
   <div role="contentinfo">
-    <p>
     <!-- Copyright etc -->
-    </p>
+    
+      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+    
   </div>
 
   Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
@@ -387,22 +467,23 @@ In the latter case it is advised to set the field-cursor to the data-structure's
       </div>
 
     </section>
-
+    
   </div>
 
-<div class="rst-versions" role="note" style="cursor: pointer">
+  <div class="rst-versions" role="note" style="cursor: pointer">
     <span class="rst-current-version" data-toggle="rst-current-version">
-        
-            <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/cloudresourcemanager1_beta1-cli" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
-        
-      <span><a href="../organizations_update/" style="color: #fcfcfc;">&laquo; Previous</a></span>
-      <span style="margin-left: 15px"><a href="../projects_delete/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+          <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/cloudresourcemanager1_beta1-cli" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../organizations_update/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../projects_delete/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
     </span>
 </div>
+    <script src="../js/theme.js"></script>
 
-<!--
-MkDocs version  : 0.12.2
-Docs Build Date : 2016-10-16 20:42:12.815915
--->
 </body>
 </html>

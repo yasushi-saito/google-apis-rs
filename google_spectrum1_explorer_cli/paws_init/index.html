@@ -3,25 +3,28 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Init - spectrum v1.0.0+20160606</title>
   
-
   <link rel="shortcut icon" href="../img/favicon.ico">
-
-  
+  <title>Init - spectrum v1.0.2+20161116</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
   <link rel="stylesheet" href="../css/highlight.css">
-
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Init";
+    var mkdocs_page_input_path = "paws_init.md";
+    var mkdocs_page_url = "/paws_init/";
+  </script>
+  
   <script src="../js/jquery-2.1.1.min.js"></script>
   <script src="../js/modernizr-2.8.3.min.js"></script>
-  <script type="text/javascript" src="../js/highlight.pack.js"></script>
-  <script src="../js/theme.js"></script> 
-
+  <script type="text/javascript" src="../js/highlight.pack.js"></script> 
   
 </head>
 
@@ -32,74 +35,90 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> spectrum v1.0.0+20160606</a>
-        
+        <a href=".." class="icon icon-home"> spectrum v1.0.2+20161116</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-      <ul class="current">
-    
+	<ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="..">Home</a>
         
-            <li class="toctree-l1 ">
-                <a class="" href="..">Home</a>
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Paws</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../paws_get-spectrum/">Get Spectrum</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../paws_get-spectrum-batch/">Get Spectrum Batch</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Init</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#required-request-value">Required Request Value</a></li>
                 
-            </li>
+                    <li><a class="toctree-l4" href="#about-cursors">About Cursors</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#optional-output-flags">Optional Output Flags</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#optional-general-properties">Optional General Properties</a></li>
+                
+            
+            </ul>
         
+    </li>
 
-    
         
-            <span>Paws</span>
             
-                <li class="toctree-l2 ">
-                    <a class="" href="../paws_get-spectrum/">Get Spectrum</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../paws_get-spectrum-batch/">Get Spectrum Batch</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 current">
-                    <a class="current" href="./">Init</a>
-                    
-                        <ul>
-                        
-                            <li class="toctree-l3"><a href="#required-request-value">Required Request Value</a></li>
-                            
-                                <li><a class="toctree-l4" href="#about-cursors">About Cursors</a></li>
-                            
-                        
-                            <li class="toctree-l3"><a href="#optional-output-flags">Optional Output Flags</a></li>
-                            
-                        
-                            <li class="toctree-l3"><a href="#optional-general-properties">Optional General Properties</a></li>
-                            
-                        
-                        </ul>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../paws_notify-spectrum-use/">Notify Spectrum Use</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../paws_register/">Register</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../paws_verify-device/">Verify Device</a>
-                    
-                </li>
-            
+    <li class="toctree-l1 ">
+        <a class="" href="../paws_notify-spectrum-use/">Notify Spectrum Use</a>
         
+    </li>
 
-    
-</ul>
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../paws_register/">Register</a>
+        
+    </li>
 
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../paws_verify-device/">Verify Device</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+        </ul>
       </div>
       &nbsp;
     </nav>
@@ -109,7 +128,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">spectrum v1.0.0+20160606</a>
+        <a href="..">spectrum v1.0.2+20161116</a>
       </nav>
 
       
@@ -120,23 +139,25 @@
     <li><a href="..">Docs</a> &raquo;</li>
     
       
-        <li>Paws &raquo;</li>
+        
+          <li>Paws &raquo;</li>
+        
       
     
     <li>Init</li>
-      <li class="wy-breadcrumbs-aside">
-        
-          
-            <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/spectrum1_explorer-cli" class="icon icon-github"> Edit on GitHub</a>
-          
-        
-      </li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/spectrum1_explorer-cli/edit/master/docs/paws_init.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
   </ul>
   <hr/>
 </div>
           <div role="main">
             <div class="section">
-              <p>Initializes the connection between a white space device and the database.</p>
+              
+                <p>Initializes the connection between a white space device and the database.</p>
 <h1 id="required-request-value">Required Request Value</h1>
 <p>The request value is a data-structure with various fields. Each field may be a simple scalar or another data-structure.
 In the latter case it is advised to set the field-cursor to the data-structure's field to specify values more concisely.</p>
@@ -323,13 +344,14 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 </ul>
+              
             </div>
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../paws_notify-spectrum-use/" class="btn btn-neutral float-right" title="Notify Spectrum Use"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../paws_notify-spectrum-use/" class="btn btn-neutral float-right" title="Notify Spectrum Use">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="../paws_get-spectrum-batch/" class="btn btn-neutral" title="Get Spectrum Batch"><span class="icon icon-circle-arrow-left"></span> Previous</a>
@@ -340,9 +362,10 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   <hr/>
 
   <div role="contentinfo">
-    <p>
     <!-- Copyright etc -->
-    </p>
+    
+      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+    
   </div>
 
   Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
@@ -352,22 +375,23 @@ In the latter case it is advised to set the field-cursor to the data-structure's
       </div>
 
     </section>
-
+    
   </div>
 
-<div class="rst-versions" role="note" style="cursor: pointer">
+  <div class="rst-versions" role="note" style="cursor: pointer">
     <span class="rst-current-version" data-toggle="rst-current-version">
-        
-            <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/spectrum1_explorer-cli" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
-        
-      <span><a href="../paws_get-spectrum-batch/" style="color: #fcfcfc;">&laquo; Previous</a></span>
-      <span style="margin-left: 15px"><a href="../paws_notify-spectrum-use/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+          <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/spectrum1_explorer-cli" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../paws_get-spectrum-batch/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../paws_notify-spectrum-use/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
     </span>
 </div>
+    <script src="../js/theme.js"></script>
 
-<!--
-MkDocs version  : 0.12.2
-Docs Build Date : 2016-10-16 20:42:21.543296
--->
 </body>
 </html>

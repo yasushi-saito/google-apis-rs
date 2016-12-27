@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>List - dfareporting v1.0.0+20161027</title>
+  <title>List - dfareporting v1.0.2+20161027</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> dfareporting v1.0.0+20161027</a>
+        <a href=".." class="icon icon-home"> dfareporting v1.0.2+20161027</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -1990,7 +1990,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">dfareporting v1.0.0+20161027</a>
+        <a href="..">dfareporting v1.0.2+20161027</a>
       </nav>
 
       
@@ -2048,15 +2048,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p site-ids=string</strong></p>
-<ul>
-<li>Select only placement groups that are associated with these sites.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p placement-strategy-ids=string</strong></p>
 <ul>
 <li>Select only placement groups that are associated with these placement strategies.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p min-end-date=string</strong></p>
+<ul>
+<li>Select only placements or placement groups whose end date is on or after the specified minEndDate. The date should be formatted as &#34;yyyy-MM-dd&#34;.</li>
 </ul>
 </li>
 <li>
@@ -2066,9 +2066,45 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
+<p><strong>-p min-start-date=string</strong></p>
+<ul>
+<li>Select only placements or placement groups whose start date is on or after the specified minStartDate. The date should be formatted as &#34;yyyy-MM-dd&#34;.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p archived=boolean</strong></p>
+<ul>
+<li>Select only archived placements. Don&#39;t set this field to select both archived and non-archived placements.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p pricing-types=string</strong></p>
+<ul>
+<li>Select only placement groups with these pricing types.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p site-ids=string</strong></p>
+<ul>
+<li>Select only placement groups that are associated with these sites.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p max-end-date=string</strong></p>
+<ul>
+<li>Select only placements or placement groups whose end date is on or before the specified maxEndDate. The date should be formatted as &#34;yyyy-MM-dd&#34;.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p content-category-ids=string</strong></p>
 <ul>
 <li>Select only placement groups that are associated with these content categories.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p placement-group-type=string</strong></p>
+<ul>
+<li>Select only placement groups belonging with this group type. A package is a simple group of placements that acts as a single pricing point for a group of tags. A roadblock is a group of placements that not only acts as a single pricing point but also assumes that all the tags in it will be served at the same time. A roadblock requires one of its assigned placements to be marked as primary for reporting.</li>
 </ul>
 </li>
 <li>
@@ -2123,42 +2159,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <p><strong>-p campaign-ids=string</strong></p>
 <ul>
 <li>Select only placement groups that belong to these campaigns.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p placement-group-type=string</strong></p>
-<ul>
-<li>Select only placement groups belonging with this group type. A package is a simple group of placements that acts as a single pricing point for a group of tags. A roadblock is a group of placements that not only acts as a single pricing point but also assumes that all the tags in it will be served at the same time. A roadblock requires one of its assigned placements to be marked as primary for reporting.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p pricing-types=string</strong></p>
-<ul>
-<li>Select only placement groups with these pricing types.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p min-end-date=string</strong></p>
-<ul>
-<li>Select only placements or placement groups whose end date is on or after the specified minEndDate. The date should be formatted as &#34;yyyy-MM-dd&#34;.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p max-end-date=string</strong></p>
-<ul>
-<li>Select only placements or placement groups whose end date is on or before the specified maxEndDate. The date should be formatted as &#34;yyyy-MM-dd&#34;.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p archived=boolean</strong></p>
-<ul>
-<li>Select only archived placements. Don&#39;t set this field to select both archived and non-archived placements.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p min-start-date=string</strong></p>
-<ul>
-<li>Select only placements or placement groups whose start date is on or after the specified minStartDate. The date should be formatted as &#34;yyyy-MM-dd&#34;.</li>
 </ul>
 </li>
 </ul>

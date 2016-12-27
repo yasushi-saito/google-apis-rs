@@ -3,25 +3,28 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Get - drive v1.0.0+20160901</title>
   
-
   <link rel="shortcut icon" href="../img/favicon.ico">
-
-  
+  <title>Get - drive v1.0.2+20161212</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
   <link rel="stylesheet" href="../css/highlight.css">
-
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Get";
+    var mkdocs_page_input_path = "about_get.md";
+    var mkdocs_page_url = "/about_get/";
+  </script>
+  
   <script src="../js/jquery-2.1.1.min.js"></script>
   <script src="../js/modernizr-2.8.3.min.js"></script>
-  <script type="text/javascript" src="../js/highlight.pack.js"></script>
-  <script src="../js/theme.js"></script> 
-
+  <script type="text/javascript" src="../js/highlight.pack.js"></script> 
   
 </head>
 
@@ -32,254 +35,340 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> drive v1.0.0+20160901</a>
-        
+        <a href=".." class="icon icon-home"> drive v1.0.2+20161212</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-      <ul class="current">
-    
+	<ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="..">Home</a>
         
-            <li class="toctree-l1 ">
-                <a class="" href="..">Home</a>
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>About</span></li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Get</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#scopes">Scopes</a></li>
                 
-            </li>
+            
+                <li class="toctree-l3"><a href="#optional-output-flags">Optional Output Flags</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#optional-general-properties">Optional General Properties</a></li>
+                
+            
+            </ul>
         
+    </li>
 
-    
         
-            <span>About</span>
-            
-                <li class="toctree-l2 current">
-                    <a class="current" href="./">Get</a>
-                    
-                        <ul>
-                        
-                            <li class="toctree-l3"><a href="#scopes">Scopes</a></li>
-                            
-                        
-                            <li class="toctree-l3"><a href="#optional-output-flags">Optional Output Flags</a></li>
-                            
-                        
-                            <li class="toctree-l3"><a href="#optional-general-properties">Optional General Properties</a></li>
-                            
-                        
-                        </ul>
-                    
-                </li>
-            
-        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Changes</span></li>
 
-    
         
-            <span>Changes</span>
             
-                <li class="toctree-l2 ">
-                    <a class="" href="../changes_get-start-page-token/">Get Start Page Token</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../changes_list/">List</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../changes_watch/">Watch</a>
-                    
-                </li>
-            
+    <li class="toctree-l1 ">
+        <a class="" href="../changes_get-start-page-token/">Get Start Page Token</a>
         
+    </li>
 
-    
         
-            <span>Channels</span>
             
-                <li class="toctree-l2 ">
-                    <a class="" href="../channels_stop/">Stop</a>
-                    
-                </li>
-            
+    <li class="toctree-l1 ">
+        <a class="" href="../changes_list/">List</a>
         
+    </li>
 
-    
         
-            <span>Comments</span>
             
-                <li class="toctree-l2 ">
-                    <a class="" href="../comments_create/">Create</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../comments_delete/">Delete</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../comments_get/">Get</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../comments_list/">List</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../comments_update/">Update</a>
-                    
-                </li>
-            
+    <li class="toctree-l1 ">
+        <a class="" href="../changes_watch/">Watch</a>
         
+    </li>
 
-    
         
-            <span>Files</span>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../files_copy/">Copy</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../files_create/">Create</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../files_delete/">Delete</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../files_empty-trash/">Empty Trash</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../files_export/">Export</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../files_generate-ids/">Generate Ids</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../files_get/">Get</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../files_list/">List</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../files_update/">Update</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../files_watch/">Watch</a>
-                    
-                </li>
-            
-        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Channels</span></li>
 
-    
         
-            <span>Permissions</span>
             
-                <li class="toctree-l2 ">
-                    <a class="" href="../permissions_create/">Create</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../permissions_delete/">Delete</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../permissions_get/">Get</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../permissions_list/">List</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../permissions_update/">Update</a>
-                    
-                </li>
-            
+    <li class="toctree-l1 ">
+        <a class="" href="../channels_stop/">Stop</a>
         
+    </li>
 
-    
         
-            <span>Replies</span>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../replies_create/">Create</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../replies_delete/">Delete</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../replies_get/">Get</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../replies_list/">List</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../replies_update/">Update</a>
-                    
-                </li>
-            
-        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Comments</span></li>
 
-    
         
-            <span>Revisions</span>
             
-                <li class="toctree-l2 ">
-                    <a class="" href="../revisions_delete/">Delete</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../revisions_get/">Get</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../revisions_list/">List</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../revisions_update/">Update</a>
-                    
-                </li>
-            
+    <li class="toctree-l1 ">
+        <a class="" href="../comments_create/">Create</a>
         
+    </li>
 
-    
-</ul>
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../comments_delete/">Delete</a>
+        
+    </li>
 
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../comments_get/">Get</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../comments_list/">List</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../comments_update/">Update</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Files</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../files_copy/">Copy</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../files_create/">Create</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../files_delete/">Delete</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../files_empty-trash/">Empty Trash</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../files_export/">Export</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../files_generate-ids/">Generate Ids</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../files_get/">Get</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../files_list/">List</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../files_update/">Update</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../files_watch/">Watch</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Permissions</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../permissions_create/">Create</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../permissions_delete/">Delete</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../permissions_get/">Get</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../permissions_list/">List</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../permissions_update/">Update</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Replies</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../replies_create/">Create</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../replies_delete/">Delete</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../replies_get/">Get</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../replies_list/">List</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../replies_update/">Update</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Revisions</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../revisions_delete/">Delete</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../revisions_get/">Get</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../revisions_list/">List</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../revisions_update/">Update</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+        </ul>
       </div>
       &nbsp;
     </nav>
@@ -289,7 +378,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">drive v1.0.0+20160901</a>
+        <a href="..">drive v1.0.2+20161212</a>
       </nav>
 
       
@@ -300,23 +389,25 @@
     <li><a href="..">Docs</a> &raquo;</li>
     
       
-        <li>About &raquo;</li>
+        
+          <li>About &raquo;</li>
+        
       
     
     <li>Get</li>
-      <li class="wy-breadcrumbs-aside">
-        
-          
-            <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/drive3-cli" class="icon icon-github"> Edit on GitHub</a>
-          
-        
-      </li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/drive3-cli/edit/master/docs/about_get.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
   </ul>
   <hr/>
 </div>
           <div role="main">
             <div class="section">
-              <p>Gets information about the user, the user&#39;s Drive, and system capabilities.</p>
+              
+                <p>Gets information about the user, the user&#39;s Drive, and system capabilities.</p>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for at least one of the following scopes to make a valid call:</p>
 <ul>
@@ -387,13 +478,14 @@ You can set the scope for this method like this: <code>drive3 --scope &lt;scope&
 </ul>
 </li>
 </ul>
+              
             </div>
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../changes_get-start-page-token/" class="btn btn-neutral float-right" title="Get Start Page Token"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../changes_get-start-page-token/" class="btn btn-neutral float-right" title="Get Start Page Token">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href=".." class="btn btn-neutral" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
@@ -404,9 +496,10 @@ You can set the scope for this method like this: <code>drive3 --scope &lt;scope&
   <hr/>
 
   <div role="contentinfo">
-    <p>
     <!-- Copyright etc -->
-    </p>
+    
+      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+    
   </div>
 
   Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
@@ -416,22 +509,23 @@ You can set the scope for this method like this: <code>drive3 --scope &lt;scope&
       </div>
 
     </section>
-
+    
   </div>
 
-<div class="rst-versions" role="note" style="cursor: pointer">
+  <div class="rst-versions" role="note" style="cursor: pointer">
     <span class="rst-current-version" data-toggle="rst-current-version">
-        
-            <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/drive3-cli" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
-        
-      <span><a href=".." style="color: #fcfcfc;">&laquo; Previous</a></span>
-      <span style="margin-left: 15px"><a href="../changes_get-start-page-token/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+          <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/drive3-cli" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href=".." style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../changes_get-start-page-token/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
     </span>
 </div>
+    <script src="../js/theme.js"></script>
 
-<!--
-MkDocs version  : 0.12.2
-Docs Build Date : 2016-10-16 20:43:18.859349
--->
 </body>
 </html>

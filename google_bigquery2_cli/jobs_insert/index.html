@@ -3,25 +3,28 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Insert - bigquery v1.0.0+20160903</title>
   
-
   <link rel="shortcut icon" href="../img/favicon.ico">
-
-  
+  <title>Insert - bigquery v1.0.2+20161130</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
   <link rel="stylesheet" href="../css/highlight.css">
-
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Insert";
+    var mkdocs_page_input_path = "jobs_insert.md";
+    var mkdocs_page_url = "/jobs_insert/";
+  </script>
+  
   <script src="../js/jquery-2.1.1.min.js"></script>
   <script src="../js/modernizr-2.8.3.min.js"></script>
-  <script type="text/javascript" src="../js/highlight.pack.js"></script>
-  <script src="../js/theme.js"></script> 
-
+  <script type="text/javascript" src="../js/highlight.pack.js"></script> 
   
 </head>
 
@@ -32,182 +35,236 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> bigquery v1.0.0+20160903</a>
-        
+        <a href=".." class="icon icon-home"> bigquery v1.0.2+20161130</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-      <ul class="current">
-    
+	<ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="..">Home</a>
         
-            <li class="toctree-l1 ">
-                <a class="" href="..">Home</a>
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Datasets</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../datasets_delete/">Delete</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../datasets_get/">Get</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../datasets_insert/">Insert</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../datasets_list/">List</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../datasets_patch/">Patch</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../datasets_update/">Update</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Jobs</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../jobs_cancel/">Cancel</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../jobs_get/">Get</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../jobs_get-query-results/">Get Query Results</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Insert</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#scopes">Scopes</a></li>
                 
-            </li>
+            
+                <li class="toctree-l3"><a href="#required-scalar-argument">Required Scalar Argument</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#required-request-value">Required Request Value</a></li>
+                
+                    <li><a class="toctree-l4" href="#about-cursors">About Cursors</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#required-upload-flags">Required Upload Flags</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#optional-output-flags">Optional Output Flags</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#optional-general-properties">Optional General Properties</a></li>
+                
+            
+            </ul>
         
+    </li>
 
-    
         
-            <span>Datasets</span>
             
-                <li class="toctree-l2 ">
-                    <a class="" href="../datasets_delete/">Delete</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../datasets_get/">Get</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../datasets_insert/">Insert</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../datasets_list/">List</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../datasets_patch/">Patch</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../datasets_update/">Update</a>
-                    
-                </li>
-            
+    <li class="toctree-l1 ">
+        <a class="" href="../jobs_list/">List</a>
         
+    </li>
 
-    
         
-            <span>Jobs</span>
             
-                <li class="toctree-l2 ">
-                    <a class="" href="../jobs_cancel/">Cancel</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../jobs_get/">Get</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../jobs_get-query-results/">Get Query Results</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 current">
-                    <a class="current" href="./">Insert</a>
-                    
-                        <ul>
-                        
-                            <li class="toctree-l3"><a href="#scopes">Scopes</a></li>
-                            
-                        
-                            <li class="toctree-l3"><a href="#required-scalar-argument">Required Scalar Argument</a></li>
-                            
-                        
-                            <li class="toctree-l3"><a href="#required-request-value">Required Request Value</a></li>
-                            
-                                <li><a class="toctree-l4" href="#about-cursors">About Cursors</a></li>
-                            
-                        
-                            <li class="toctree-l3"><a href="#required-upload-flags">Required Upload Flags</a></li>
-                            
-                        
-                            <li class="toctree-l3"><a href="#optional-output-flags">Optional Output Flags</a></li>
-                            
-                        
-                            <li class="toctree-l3"><a href="#optional-general-properties">Optional General Properties</a></li>
-                            
-                        
-                        </ul>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../jobs_list/">List</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../jobs_query/">Query</a>
-                    
-                </li>
-            
+    <li class="toctree-l1 ">
+        <a class="" href="../jobs_query/">Query</a>
         
+    </li>
 
-    
         
-            <span>Projects</span>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../projects_list/">List</a>
-                    
-                </li>
-            
-        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Projects</span></li>
 
-    
         
-            <span>Tabledata</span>
             
-                <li class="toctree-l2 ">
-                    <a class="" href="../tabledata_insert-all/">Insert All</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../tabledata_list/">List</a>
-                    
-                </li>
-            
+    <li class="toctree-l1 ">
+        <a class="" href="../projects_list/">List</a>
         
+    </li>
 
-    
         
-            <span>Tables</span>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../tables_delete/">Delete</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../tables_get/">Get</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../tables_insert/">Insert</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../tables_list/">List</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../tables_patch/">Patch</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../tables_update/">Update</a>
-                    
-                </li>
-            
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Tabledata</span></li>
+
         
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../tabledata_insert-all/">Insert All</a>
+        
+    </li>
 
-    
-</ul>
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../tabledata_list/">List</a>
+        
+    </li>
 
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Tables</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../tables_delete/">Delete</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../tables_get/">Get</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../tables_insert/">Insert</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../tables_list/">List</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../tables_patch/">Patch</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../tables_update/">Update</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+        </ul>
       </div>
       &nbsp;
     </nav>
@@ -217,7 +274,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">bigquery v1.0.0+20160903</a>
+        <a href="..">bigquery v1.0.2+20161130</a>
       </nav>
 
       
@@ -228,23 +285,25 @@
     <li><a href="..">Docs</a> &raquo;</li>
     
       
-        <li>Jobs &raquo;</li>
+        
+          <li>Jobs &raquo;</li>
+        
       
     
     <li>Insert</li>
-      <li class="wy-breadcrumbs-aside">
-        
-          
-            <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/bigquery2-cli" class="icon icon-github"> Edit on GitHub</a>
-          
-        
-      </li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/bigquery2-cli/edit/master/docs/jobs_insert.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
   </ul>
   <hr/>
 </div>
           <div role="main">
             <div class="section">
-              <p>Starts a new asynchronous job. Requires the Can View project role.</p>
+              
+                <p>Starts a new asynchronous job. Requires the Can View project role.</p>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for at least one of the following scopes to make a valid call:</p>
 <ul>
@@ -292,6 +351,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
         dataset-id: string
         project-id: string
         table-id: string
+    labels: { string: string }
     load:
       allow-jagged-rows: boolean
       allow-quoted-newlines: boolean
@@ -305,6 +365,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
       field-delimiter: string
       ignore-unknown-values: boolean
       max-bad-records: integer
+      null-marker: string
       projection-fields: [string]
       quote: string
       schema-inline: string
@@ -356,6 +417,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
       billing-tier: integer
       cache-hit: boolean
       num-dml-affected-rows: string
+      statement-type: string
       total-bytes-billed: string
       total-bytes-processed: string
     start-time: string
@@ -459,8 +521,13 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
-<p><code>...load    allow-jagged-rows=true</code></p>
+<p><code>...    labels=key=consetetur</code></p>
 <ul>
+<li>[Experimental] The labels associated with this job. You can use these to organize and group your jobs. Label keys and values can be no longer than 63 characters, can only contain letters, numeric characters, underscores and dashes. International characters are allowed. Label values are optional. Label keys must start with a letter and must be unique within a dataset. Both keys and values are additionally constrained to be &lt;= 128 bytes in size.</li>
+<li>the value will be associated with the given <code>key</code></li>
+</ul>
+</li>
+<li><code>load    allow-jagged-rows=true</code><ul>
 <li>[Optional] Accept rows that are missing trailing optional columns. The missing values are treated as nulls. If false, records with missing trailing columns are treated as bad records, and if there are too many bad records, an invalid error is returned in the job result. The default value is false. Only applicable to CSV, ignored for other formats.</li>
 </ul>
 </li>
@@ -468,11 +535,11 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>Indicates if BigQuery should allow quoted data sections that contain newline characters in a CSV file. The default value is false.</li>
 </ul>
 </li>
-<li><code>autodetect=true</code><ul>
+<li><code>autodetect=false</code><ul>
 <li>[Experimental] Indicates if we should automatically infer the options and schema for CSV and JSON sources.</li>
 </ul>
 </li>
-<li><code>create-disposition=sed</code><ul>
+<li><code>create-disposition=dolor</code><ul>
 <li>[Optional] Specifies whether the job is allowed to create new tables. The following values are supported: CREATE_IF_NEEDED: If the table does not exist, BigQuery creates the table. CREATE_NEVER: The table must already exist. If it does not, a &#39;notFound&#39; error is returned in the job result. The default value is CREATE_IF_NEEDED. Creation, truncation and append actions occur as one atomic update upon job completion.</li>
 </ul>
 </li>
@@ -485,60 +552,64 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
-<p><code>table-id=dolor</code></p>
+<p><code>table-id=et</code></p>
 <ul>
 <li>[Required] The ID of the table. The ID must contain only letters (a-z, A-Z), numbers (0-9), or underscores (_). The maximum length is 1,024 characters.</li>
 </ul>
 </li>
 <li>
-<p><code>..    encoding=et</code></p>
+<p><code>..    encoding=consetetur</code></p>
 <ul>
 <li>[Optional] The character encoding of the data. The supported values are UTF-8 or ISO-8859-1. The default value is UTF-8. BigQuery decodes the data after the raw, binary data has been split using the values of the quote and fieldDelimiter properties.</li>
 </ul>
 </li>
-<li><code>field-delimiter=consetetur</code><ul>
+<li><code>field-delimiter=amet.</code><ul>
 <li>[Optional] The separator for fields in a CSV file. The separator can be any ISO-8859-1 single-byte character. To use a character in the range 128-255, you must encode the character as UTF8. BigQuery converts the string to ISO-8859-1 encoding, and then uses the first byte of the encoded string to split the data in its raw, binary state. BigQuery also supports the escape sequence &#34;\t&#34; to specify a tab separator. The default value is a comma (&#39;,&#39;).</li>
 </ul>
 </li>
-<li><code>ignore-unknown-values=false</code><ul>
+<li><code>ignore-unknown-values=true</code><ul>
 <li>[Optional] Indicates if BigQuery should allow extra values that are not represented in the table schema. If true, the extra values are ignored. If false, records with extra columns are treated as bad records, and if there are too many bad records, an invalid error is returned in the job result. The default value is false. The sourceFormat property determines what BigQuery treats as an extra value: CSV: Trailing columns JSON: Named values that don&#39;t match any column names</li>
 </ul>
 </li>
-<li><code>max-bad-records=74</code><ul>
+<li><code>max-bad-records=45</code><ul>
 <li>[Optional] The maximum number of bad records that BigQuery can ignore when running the job. If the number of bad records exceeds this value, an invalid error is returned in the job result. The default value is 0, which requires that all records are valid.</li>
 </ul>
 </li>
-<li><code>projection-fields=lorem</code><ul>
+<li><code>null-marker=gubergren</code><ul>
+<li>[Optional] This string will be interpreted as a null value when it appears in a CSV file. The default value is the empty string. Please refer to the documentation for further information.</li>
+</ul>
+</li>
+<li><code>projection-fields=justo</code><ul>
 <li>[Experimental] If sourceFormat is set to &#34;DATASTORE_BACKUP&#34;, indicates which entity properties to load into BigQuery from a Cloud Datastore backup. Property names are case sensitive and must be top-level properties. If no properties are specified, BigQuery loads all properties. If any named property isn&#39;t found in the Cloud Datastore backup, an invalid error is returned in the job result.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>quote=gubergren</code><ul>
+<li><code>quote=sit</code><ul>
 <li>[Optional] The value that is used to quote data sections in a CSV file. BigQuery converts the string to ISO-8859-1 encoding, and then uses the first byte of the encoded string to split the data in its raw, binary state. The default value is a double-quote (&#39;&#34;&#39;). If your data does not contain quoted sections, set the property value to an empty string. If your data contains quoted newline characters, you must also set the allowQuotedNewlines property to true.</li>
 </ul>
 </li>
-<li><code>schema-inline=justo</code><ul>
+<li><code>schema-inline=vero</code><ul>
 <li>[Deprecated] The inline schema. For CSV schemas, specify as &#34;Field1:Type1[,Field2:Type2]*&#34;. For example, &#34;foo:STRING, bar:INTEGER, baz:FLOAT&#34;.</li>
 </ul>
 </li>
-<li><code>schema-inline-format=sit</code><ul>
+<li><code>schema-inline-format=diam</code><ul>
 <li>[Deprecated] The format of the schemaInline property.</li>
 </ul>
 </li>
-<li><code>schema-update-options=vero</code><ul>
+<li><code>schema-update-options=rebum.</code><ul>
 <li>[Experimental] Allows the schema of the desitination table to be updated as a side effect of the load job. Schema update options are supported in two cases: when writeDisposition is WRITE_APPEND; when writeDisposition is WRITE_TRUNCATE and the destination table is a partition of a table, specified by partition decorators. For normal tables, WRITE_TRUNCATE will always overwrite the schema. One or more of the following values are specified: ALLOW_FIELD_ADDITION: allow adding a nullable field to the schema. ALLOW_FIELD_RELAXATION: allow relaxing a required field in the original schema to nullable.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>skip-leading-rows=73</code><ul>
+<li><code>skip-leading-rows=56</code><ul>
 <li>[Optional] The number of rows at the top of a CSV file that BigQuery will skip when loading the data. The default value is 0. This property is useful if you have header rows in the file that should be skipped.</li>
 </ul>
 </li>
-<li><code>source-format=rebum.</code><ul>
+<li><code>source-format=sadipscing</code><ul>
 <li>[Optional] The format of the data files. For CSV files, specify &#34;CSV&#34;. For datastore backups, specify &#34;DATASTORE_BACKUP&#34;. For newline-delimited JSON, specify &#34;NEWLINE_DELIMITED_JSON&#34;. For Avro, specify &#34;AVRO&#34;. The default value is CSV.</li>
 </ul>
 </li>
-<li><code>source-uris=consetetur</code><ul>
+<li><code>source-uris=vero</code><ul>
 <li>[Required] The fully-qualified URIs that point to your data in Google Cloud Storage. Each URI can contain one &#39;*&#39; wildcard character and it must come after the &#39;bucket&#39; name.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
@@ -555,32 +626,32 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>If true, allows the query to produce arbitrarily large result tables at a slight cost in performance. Requires destinationTable to be set.</li>
 </ul>
 </li>
-<li><code>create-disposition=sadipscing</code><ul>
+<li><code>create-disposition=consetetur</code><ul>
 <li>[Optional] Specifies whether the job is allowed to create new tables. The following values are supported: CREATE_IF_NEEDED: If the table does not exist, BigQuery creates the table. CREATE_NEVER: The table must already exist. If it does not, a &#39;notFound&#39; error is returned in the job result. The default value is CREATE_IF_NEEDED. Creation, truncation and append actions occur as one atomic update upon job completion.</li>
 </ul>
 </li>
-<li><code>default-dataset    dataset-id=invidunt</code><ul>
+<li><code>default-dataset    dataset-id=dolore</code><ul>
 <li>[Required] A unique ID for this dataset, without the project name. The ID must contain only letters (a-z, A-Z), numbers (0-9), or underscores (_). The maximum length is 1,024 characters.</li>
 </ul>
 </li>
 <li>
-<p><code>project-id=consetetur</code></p>
+<p><code>project-id=duo</code></p>
 <ul>
 <li>[Optional] The ID of the project containing this dataset.</li>
 </ul>
 </li>
 <li>
-<p><code>..destination-table    dataset-id=dolore</code></p>
+<p><code>..destination-table    dataset-id=aliquyam</code></p>
 <ul>
 <li>[Required] The ID of the dataset containing this table.</li>
 </ul>
 </li>
-<li><code>project-id=duo</code><ul>
+<li><code>project-id=lorem</code><ul>
 <li>[Required] The ID of the project containing this table.</li>
 </ul>
 </li>
 <li>
-<p><code>table-id=aliquyam</code></p>
+<p><code>table-id=et</code></p>
 <ul>
 <li>[Required] The ID of the table. The ID must contain only letters (a-z, A-Z), numbers (0-9), or underscores (_). The maximum length is 1,024 characters.</li>
 </ul>
@@ -591,37 +662,37 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>[Optional] Flattens all nested and repeated fields in the query results. The default value is true. allowLargeResults must be true if this is set to false.</li>
 </ul>
 </li>
-<li><code>maximum-billing-tier=84</code><ul>
+<li><code>maximum-billing-tier=56</code><ul>
 <li>[Optional] Limits the billing tier for this job. Queries that have resource usage beyond this tier will fail (without incurring a charge). If unspecified, this will be set to your project default.</li>
 </ul>
 </li>
-<li><code>maximum-bytes-billed=clita</code><ul>
+<li><code>maximum-bytes-billed=takimata</code><ul>
 <li>[Optional] Limits the bytes billed for this job. Queries that will have bytes billed beyond this limit will fail (without incurring a charge). If unspecified, this will be set to your project default.</li>
 </ul>
 </li>
-<li><code>parameter-mode=consetetur</code><ul>
+<li><code>parameter-mode=nonumy</code><ul>
 <li>[Experimental] Standard SQL only. Whether to use positional (?) or named (@myparam) query parameters in this query.</li>
 </ul>
 </li>
-<li><code>preserve-nulls=false</code><ul>
+<li><code>preserve-nulls=true</code><ul>
 <li>[Deprecated] This property is deprecated.</li>
 </ul>
 </li>
-<li><code>priority=nonumy</code><ul>
+<li><code>priority=sanctus</code><ul>
 <li>[Optional] Specifies a priority for the query. Possible values include INTERACTIVE and BATCH. The default value is INTERACTIVE.</li>
 </ul>
 </li>
-<li><code>query=kasd</code><ul>
+<li><code>query=takimata</code><ul>
 <li>[Required] BigQuery SQL query to execute.</li>
 </ul>
 </li>
-<li><code>schema-update-options=sanctus</code><ul>
-<li>[Experimental] Allows the schema of the desitination table to be updated as a side effect of the query job. Schema update options are supported in two cases: when writeDisposition is WRITE_APPEND; when writeDisposition is WRITE_TRUNCATE and the destination table is a partition of a table, specified by partition decorators. For normal tables, WRITE_TRUNCATE will always overwrite the schema. One or more of the following values are specified: ALLOW_FIELD_ADDITION: allow adding a nullable field to the schema. ALLOW_FIELD_RELAXATION: allow relaxing a required field in the original schema to nullable.</li>
+<li><code>schema-update-options=at</code><ul>
+<li>[Experimental] Allows the schema of the destination table to be updated as a side effect of the query job. Schema update options are supported in two cases: when writeDisposition is WRITE_APPEND; when writeDisposition is WRITE_TRUNCATE and the destination table is a partition of a table, specified by partition decorators. For normal tables, WRITE_TRUNCATE will always overwrite the schema. One or more of the following values are specified: ALLOW_FIELD_ADDITION: allow adding a nullable field to the schema. ALLOW_FIELD_RELAXATION: allow relaxing a required field in the original schema to nullable.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
 <li><code>use-legacy-sql=false</code><ul>
-<li>[Experimental] Specifies whether to use BigQuery&#39;s legacy SQL dialect for this query. The default value is true. If set to false, the query will use BigQuery&#39;s standard SQL: https://cloud.google.com/bigquery/sql-reference/ When useLegacySql is set to false, the values of allowLargeResults and flattenResults are ignored; query will be run as if allowLargeResults is true and flattenResults is false.</li>
+<li>Specifies whether to use BigQuery&#39;s legacy SQL dialect for this query. The default value is true. If set to false, the query will use BigQuery&#39;s standard SQL: https://cloud.google.com/bigquery/sql-reference/ When useLegacySql is set to false, the values of allowLargeResults and flattenResults are ignored; query will be run as if allowLargeResults is true and flattenResults is false.</li>
 </ul>
 </li>
 <li><code>use-query-cache=true</code><ul>
@@ -629,140 +700,144 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
-<p><code>write-disposition=labore</code></p>
+<p><code>write-disposition=ea</code></p>
 <ul>
 <li>[Optional] Specifies the action that occurs if the destination table already exists. The following values are supported: WRITE_TRUNCATE: If the table already exists, BigQuery overwrites the table data. WRITE_APPEND: If the table already exists, BigQuery appends the data to the table. WRITE_EMPTY: If the table already exists and contains data, a &#39;duplicate&#39; error is returned in the job result. The default value is WRITE_EMPTY. Each action is atomic and only occurs if BigQuery is able to complete the job successfully. Creation, truncation and append actions occur as one atomic update upon job completion.</li>
 </ul>
 </li>
 <li>
-<p><code>...    etag=invidunt</code></p>
+<p><code>...    etag=sadipscing</code></p>
 <ul>
 <li>[Output-only] A hash of this resource.</li>
 </ul>
 </li>
-<li><code>id=ea</code><ul>
+<li><code>id=rebum.</code><ul>
 <li>[Output-only] Opaque ID field of the job</li>
 </ul>
 </li>
-<li><code>job-reference    job-id=sadipscing</code><ul>
+<li><code>job-reference    job-id=dolore</code><ul>
 <li>[Required] The ID of the job. The ID must contain only letters (a-z, A-Z), numbers (0-9), underscores (_), or dashes (-). The maximum length is 1,024 characters.</li>
 </ul>
 </li>
 <li>
-<p><code>project-id=rebum.</code></p>
+<p><code>project-id=nonumy</code></p>
 <ul>
 <li>[Required] The ID of the project containing this job.</li>
 </ul>
 </li>
 <li>
-<p><code>..    kind=dolore</code></p>
+<p><code>..    kind=sed</code></p>
 <ul>
 <li>[Output-only] The type of the resource.</li>
 </ul>
 </li>
-<li><code>self-link=nonumy</code><ul>
+<li><code>self-link=aliquyam</code><ul>
 <li>[Output-only] A URL that can be used to access this resource again.</li>
 </ul>
 </li>
-<li><code>statistics    creation-time=sed</code><ul>
+<li><code>statistics    creation-time=sit</code><ul>
 <li>[Output-only] Creation time of this job, in milliseconds since the epoch. This field will be present on all jobs.</li>
 </ul>
 </li>
-<li><code>end-time=aliquyam</code><ul>
+<li><code>end-time=eirmod</code><ul>
 <li>[Output-only] End time of this job, in milliseconds since the epoch. This field will be present whenever a job is in the DONE state.</li>
 </ul>
 </li>
 <li>
-<p><code>extract    destination-uri-file-counts=sit</code></p>
+<p><code>extract    destination-uri-file-counts=consetetur</code></p>
 <ul>
 <li>[Output-only] Number of files per destination URI or URI pattern specified in the extract configuration. These values will be in the same order as the URIs specified in the &#39;destinationUris&#39; field.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
 <li>
-<p><code>..load    input-file-bytes=eirmod</code></p>
+<p><code>..load    input-file-bytes=labore</code></p>
 <ul>
 <li>[Output-only] Number of bytes of source data in a load job.</li>
 </ul>
 </li>
-<li><code>input-files=consetetur</code><ul>
+<li><code>input-files=sed</code><ul>
 <li>[Output-only] Number of source files in a load job.</li>
 </ul>
 </li>
-<li><code>output-bytes=labore</code><ul>
+<li><code>output-bytes=ea</code><ul>
 <li>[Output-only] Size of the loaded data in bytes. Note that while a load job is in the running state, this value may change.</li>
 </ul>
 </li>
 <li>
-<p><code>output-rows=sed</code></p>
+<p><code>output-rows=gubergren</code></p>
 <ul>
 <li>[Output-only] Number of rows imported in a load job. Note that while an import job is in the running state, this value may change.</li>
 </ul>
 </li>
 <li>
-<p><code>..query    billing-tier=85</code></p>
+<p><code>..query    billing-tier=19</code></p>
 <ul>
 <li>[Output-only] Billing tier for the job.</li>
 </ul>
 </li>
-<li><code>cache-hit=false</code><ul>
+<li><code>cache-hit=true</code><ul>
 <li>[Output-only] Whether the query result was fetched from the query cache.</li>
 </ul>
 </li>
-<li><code>num-dml-affected-rows=aliquyam</code><ul>
+<li><code>num-dml-affected-rows=tempor</code><ul>
 <li>[Output-only, Experimental] The number of rows affected by a DML statement. Present only for DML statements INSERT, UPDATE or DELETE.</li>
 </ul>
 </li>
-<li><code>total-bytes-billed=eos</code><ul>
+<li><code>statement-type=sea</code><ul>
+<li>[Output-only, Experimental] The type of query statement, if valid.</li>
+</ul>
+</li>
+<li><code>total-bytes-billed=labore</code><ul>
 <li>[Output-only] Total bytes billed for the job.</li>
 </ul>
 </li>
 <li>
-<p><code>total-bytes-processed=tempor</code></p>
+<p><code>total-bytes-processed=ipsum</code></p>
 <ul>
 <li>[Output-only] Total bytes processed for the job.</li>
 </ul>
 </li>
 <li>
-<p><code>..    start-time=sea</code></p>
+<p><code>..    start-time=aliquyam</code></p>
 <ul>
 <li>[Output-only] Start time of this job, in milliseconds since the epoch. This field will be present when the job transitions from the PENDING state to either RUNNING or DONE.</li>
 </ul>
 </li>
 <li>
-<p><code>total-bytes-processed=labore</code></p>
+<p><code>total-bytes-processed=dolores</code></p>
 <ul>
 <li>[Output-only] [Deprecated] Use the bytes processed in the query statistics instead.</li>
 </ul>
 </li>
 <li>
-<p><code>..status.error-result    debug-info=ipsum</code></p>
+<p><code>..status.error-result    debug-info=sit</code></p>
 <ul>
 <li>Debugging information. This property is internal to Google and should not be used.</li>
 </ul>
 </li>
-<li><code>location=aliquyam</code><ul>
+<li><code>location=diam</code><ul>
 <li>Specifies where the error occurred, if present.</li>
 </ul>
 </li>
-<li><code>message=dolores</code><ul>
+<li><code>message=ut</code><ul>
 <li>A human-readable description of the error.</li>
 </ul>
 </li>
 <li>
-<p><code>reason=sit</code></p>
+<p><code>reason=justo</code></p>
 <ul>
 <li>A short error code that summarizes the error.</li>
 </ul>
 </li>
 <li>
-<p><code>..    state=diam</code></p>
+<p><code>..    state=est</code></p>
 <ul>
 <li>[Output-only] Running state of the job.</li>
 </ul>
 </li>
 <li>
-<p><code>..    user-email=ut</code></p>
+<p><code>..    user-email=amet</code></p>
 <ul>
 <li>[Output-only] Email address of the user who ran the job.</li>
 </ul>
@@ -853,13 +928,14 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 </ul>
+              
             </div>
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../jobs_list/" class="btn btn-neutral float-right" title="List"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../jobs_list/" class="btn btn-neutral float-right" title="List">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="../jobs_get-query-results/" class="btn btn-neutral" title="Get Query Results"><span class="icon icon-circle-arrow-left"></span> Previous</a>
@@ -870,9 +946,10 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   <hr/>
 
   <div role="contentinfo">
-    <p>
     <!-- Copyright etc -->
-    </p>
+    
+      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+    
   </div>
 
   Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
@@ -882,22 +959,23 @@ In the latter case it is advised to set the field-cursor to the data-structure's
       </div>
 
     </section>
-
+    
   </div>
 
-<div class="rst-versions" role="note" style="cursor: pointer">
+  <div class="rst-versions" role="note" style="cursor: pointer">
     <span class="rst-current-version" data-toggle="rst-current-version">
-        
-            <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/bigquery2-cli" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
-        
-      <span><a href="../jobs_get-query-results/" style="color: #fcfcfc;">&laquo; Previous</a></span>
-      <span style="margin-left: 15px"><a href="../jobs_list/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+          <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/bigquery2-cli" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../jobs_get-query-results/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../jobs_list/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
     </span>
 </div>
+    <script src="../js/theme.js"></script>
 
-<!--
-MkDocs version  : 0.12.2
-Docs Build Date : 2016-10-16 20:42:58.650107
--->
 </body>
 </html>

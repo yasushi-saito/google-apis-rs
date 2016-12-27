@@ -3,25 +3,28 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Merge - genomics v1.0.0+20160905</title>
   
-
   <link rel="shortcut icon" href="../img/favicon.ico">
-
-  
+  <title>Merge - genomics v1.0.2+20160928</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
   <link rel="stylesheet" href="../css/highlight.css">
-
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Merge";
+    var mkdocs_page_input_path = "variants_merge.md";
+    var mkdocs_page_url = "/variants_merge/";
+  </script>
+  
   <script src="../js/jquery-2.1.1.min.js"></script>
   <script src="../js/modernizr-2.8.3.min.js"></script>
-  <script type="text/javascript" src="../js/highlight.pack.js"></script>
-  <script src="../js/theme.js"></script> 
-
+  <script type="text/javascript" src="../js/highlight.pack.js"></script> 
   
 </head>
 
@@ -32,387 +35,523 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> genomics v1.0.0+20160905</a>
-        
+        <a href=".." class="icon icon-home"> genomics v1.0.2+20160928</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-      <ul class="current">
-    
+	<ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="..">Home</a>
         
-            <li class="toctree-l1 ">
-                <a class="" href="..">Home</a>
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Annotations</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../annotations_batch-create/">Batch Create</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../annotations_create/">Create</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../annotations_delete/">Delete</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../annotations_get/">Get</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../annotations_search/">Search</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../annotations_update/">Update</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Annotationsets</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../annotationsets_create/">Create</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../annotationsets_delete/">Delete</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../annotationsets_get/">Get</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../annotationsets_search/">Search</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../annotationsets_update/">Update</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Callsets</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../callsets_create/">Create</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../callsets_delete/">Delete</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../callsets_get/">Get</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../callsets_patch/">Patch</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../callsets_search/">Search</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Datasets</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../datasets_create/">Create</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../datasets_delete/">Delete</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../datasets_get/">Get</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../datasets_get-iam-policy/">Get Iam Policy</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../datasets_list/">List</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../datasets_patch/">Patch</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../datasets_set-iam-policy/">Set Iam Policy</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../datasets_test-iam-permissions/">Test Iam Permissions</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../datasets_undelete/">Undelete</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Operations</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../operations_cancel/">Cancel</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../operations_get/">Get</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../operations_list/">List</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Readgroupsets</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../readgroupsets_coveragebuckets-list/">Coveragebuckets List</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../readgroupsets_delete/">Delete</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../readgroupsets_export/">Export</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../readgroupsets_get/">Get</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../readgroupsets_import/">Import</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../readgroupsets_patch/">Patch</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../readgroupsets_search/">Search</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Reads</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../reads_search/">Search</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../reads_stream/">Stream</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>References</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../references_bases-list/">Bases List</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../references_get/">Get</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../references_search/">Search</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Referencesets</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../referencesets_get/">Get</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../referencesets_search/">Search</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Variants</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../variants_create/">Create</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../variants_delete/">Delete</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../variants_get/">Get</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../variants_import/">Import</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Merge</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#scopes">Scopes</a></li>
                 
-            </li>
+            
+                <li class="toctree-l3"><a href="#required-request-value">Required Request Value</a></li>
+                
+                    <li><a class="toctree-l4" href="#about-cursors">About Cursors</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#optional-output-flags">Optional Output Flags</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#optional-general-properties">Optional General Properties</a></li>
+                
+            
+            </ul>
         
+    </li>
 
-    
         
-            <span>Annotations</span>
             
-                <li class="toctree-l2 ">
-                    <a class="" href="../annotations_batch-create/">Batch Create</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../annotations_create/">Create</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../annotations_delete/">Delete</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../annotations_get/">Get</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../annotations_search/">Search</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../annotations_update/">Update</a>
-                    
-                </li>
-            
+    <li class="toctree-l1 ">
+        <a class="" href="../variants_patch/">Patch</a>
         
+    </li>
 
-    
         
-            <span>Annotationsets</span>
             
-                <li class="toctree-l2 ">
-                    <a class="" href="../annotationsets_create/">Create</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../annotationsets_delete/">Delete</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../annotationsets_get/">Get</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../annotationsets_search/">Search</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../annotationsets_update/">Update</a>
-                    
-                </li>
-            
+    <li class="toctree-l1 ">
+        <a class="" href="../variants_search/">Search</a>
         
+    </li>
 
-    
         
-            <span>Callsets</span>
             
-                <li class="toctree-l2 ">
-                    <a class="" href="../callsets_create/">Create</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../callsets_delete/">Delete</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../callsets_get/">Get</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../callsets_patch/">Patch</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../callsets_search/">Search</a>
-                    
-                </li>
-            
+    <li class="toctree-l1 ">
+        <a class="" href="../variants_stream/">Stream</a>
         
+    </li>
 
-    
         
-            <span>Datasets</span>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../datasets_create/">Create</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../datasets_delete/">Delete</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../datasets_get/">Get</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../datasets_get-iam-policy/">Get Iam Policy</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../datasets_list/">List</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../datasets_patch/">Patch</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../datasets_set-iam-policy/">Set Iam Policy</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../datasets_test-iam-permissions/">Test Iam Permissions</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../datasets_undelete/">Undelete</a>
-                    
-                </li>
-            
-        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Variantsets</span></li>
 
-    
         
-            <span>Operations</span>
             
-                <li class="toctree-l2 ">
-                    <a class="" href="../operations_cancel/">Cancel</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../operations_get/">Get</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../operations_list/">List</a>
-                    
-                </li>
-            
+    <li class="toctree-l1 ">
+        <a class="" href="../variantsets_create/">Create</a>
         
+    </li>
 
-    
         
-            <span>Readgroupsets</span>
             
-                <li class="toctree-l2 ">
-                    <a class="" href="../readgroupsets_coveragebuckets-list/">Coveragebuckets List</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../readgroupsets_delete/">Delete</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../readgroupsets_export/">Export</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../readgroupsets_get/">Get</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../readgroupsets_import/">Import</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../readgroupsets_patch/">Patch</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../readgroupsets_search/">Search</a>
-                    
-                </li>
-            
+    <li class="toctree-l1 ">
+        <a class="" href="../variantsets_delete/">Delete</a>
         
+    </li>
 
-    
         
-            <span>Reads</span>
             
-                <li class="toctree-l2 ">
-                    <a class="" href="../reads_search/">Search</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../reads_stream/">Stream</a>
-                    
-                </li>
-            
+    <li class="toctree-l1 ">
+        <a class="" href="../variantsets_export/">Export</a>
         
+    </li>
 
-    
         
-            <span>References</span>
             
-                <li class="toctree-l2 ">
-                    <a class="" href="../references_bases-list/">Bases List</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../references_get/">Get</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../references_search/">Search</a>
-                    
-                </li>
-            
+    <li class="toctree-l1 ">
+        <a class="" href="../variantsets_get/">Get</a>
         
+    </li>
 
-    
         
-            <span>Referencesets</span>
             
-                <li class="toctree-l2 ">
-                    <a class="" href="../referencesets_get/">Get</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../referencesets_search/">Search</a>
-                    
-                </li>
-            
+    <li class="toctree-l1 ">
+        <a class="" href="../variantsets_patch/">Patch</a>
         
+    </li>
 
-    
         
-            <span>Variants</span>
             
-                <li class="toctree-l2 ">
-                    <a class="" href="../variants_create/">Create</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../variants_delete/">Delete</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../variants_get/">Get</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../variants_import/">Import</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 current">
-                    <a class="current" href="./">Merge</a>
-                    
-                        <ul>
-                        
-                            <li class="toctree-l3"><a href="#scopes">Scopes</a></li>
-                            
-                        
-                            <li class="toctree-l3"><a href="#required-request-value">Required Request Value</a></li>
-                            
-                                <li><a class="toctree-l4" href="#about-cursors">About Cursors</a></li>
-                            
-                        
-                            <li class="toctree-l3"><a href="#optional-output-flags">Optional Output Flags</a></li>
-                            
-                        
-                            <li class="toctree-l3"><a href="#optional-general-properties">Optional General Properties</a></li>
-                            
-                        
-                        </ul>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../variants_patch/">Patch</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../variants_search/">Search</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../variants_stream/">Stream</a>
-                    
-                </li>
-            
+    <li class="toctree-l1 ">
+        <a class="" href="../variantsets_search/">Search</a>
         
+    </li>
 
-    
         
-            <span>Variantsets</span>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../variantsets_create/">Create</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../variantsets_delete/">Delete</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../variantsets_export/">Export</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../variantsets_get/">Get</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../variantsets_patch/">Patch</a>
-                    
-                </li>
-            
-                <li class="toctree-l2 ">
-                    <a class="" href="../variantsets_search/">Search</a>
-                    
-                </li>
-            
-        
-
-    
-</ul>
-
+    </ul>
+<li>
+          
+        </ul>
       </div>
       &nbsp;
     </nav>
@@ -422,7 +561,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">genomics v1.0.0+20160905</a>
+        <a href="..">genomics v1.0.2+20160928</a>
       </nav>
 
       
@@ -433,23 +572,25 @@
     <li><a href="..">Docs</a> &raquo;</li>
     
       
-        <li>Variants &raquo;</li>
+        
+          <li>Variants &raquo;</li>
+        
       
     
     <li>Merge</li>
-      <li class="wy-breadcrumbs-aside">
-        
-          
-            <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/genomics1-cli" class="icon icon-github"> Edit on GitHub</a>
-          
-        
-      </li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/genomics1-cli/edit/master/docs/variants_merge.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
   </ul>
   <hr/>
 </div>
           <div role="main">
             <div class="section">
-              <p>Merges the given variants with existing variants. For the definitions of variants and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a> Each variant will be merged with an existing variant that matches its reference sequence, start, end, reference bases, and alternative bases. If no such variant exists, a new one will be created. When variants are merged, the call information from the new variant is added to the existing variant. Variant info fields are merged as specified in the infoMergeConfig field of the MergeVariantsRequest. Please exercise caution when using this method! It is easy to introduce mistakes in existing variants and difficult to back out of them. For example, suppose you were trying to merge a new variant with an existing one and both variants contain calls that belong to callsets with the same callset ID. // Existing variant - irrelevant fields trimmed for clarity { &#34;variantSetId&#34;: &#34;10473108253681171589&#34;, &#34;referenceName&#34;: &#34;1&#34;, &#34;start&#34;: &#34;10582&#34;, &#34;referenceBases&#34;: &#34;G&#34;, &#34;alternateBases&#34;: [ &#34;A&#34; ], &#34;calls&#34;: [ { &#34;callSetId&#34;: &#34;10473108253681171589-0&#34;, &#34;callSetName&#34;: &#34;CALLSET0&#34;, &#34;genotype&#34;: [ 0, 1 ], } ] } // New variant with conflicting call information { &#34;variantSetId&#34;: &#34;10473108253681171589&#34;, &#34;referenceName&#34;: &#34;1&#34;, &#34;start&#34;: &#34;10582&#34;, &#34;referenceBases&#34;: &#34;G&#34;, &#34;alternateBases&#34;: [ &#34;A&#34; ], &#34;calls&#34;: [ { &#34;callSetId&#34;: &#34;10473108253681171589-0&#34;, &#34;callSetName&#34;: &#34;CALLSET0&#34;, &#34;genotype&#34;: [ 1, 1 ], } ] } The resulting merged variant would overwrite the existing calls with those from the new variant: { &#34;variantSetId&#34;: &#34;10473108253681171589&#34;, &#34;referenceName&#34;: &#34;1&#34;, &#34;start&#34;: &#34;10582&#34;, &#34;referenceBases&#34;: &#34;G&#34;, &#34;alternateBases&#34;: [ &#34;A&#34; ], &#34;calls&#34;: [ { &#34;callSetId&#34;: &#34;10473108253681171589-0&#34;, &#34;callSetName&#34;: &#34;CALLSET0&#34;, &#34;genotype&#34;: [ 1, 1 ], } ] } This may be the desired outcome, but it is up to the user to determine if if that is indeed the case.</p>
+              
+                <p>Merges the given variants with existing variants. For the definitions of variants and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a> Each variant will be merged with an existing variant that matches its reference sequence, start, end, reference bases, and alternative bases. If no such variant exists, a new one will be created. When variants are merged, the call information from the new variant is added to the existing variant. Variant info fields are merged as specified in the infoMergeConfig field of the MergeVariantsRequest. Please exercise caution when using this method! It is easy to introduce mistakes in existing variants and difficult to back out of them. For example, suppose you were trying to merge a new variant with an existing one and both variants contain calls that belong to callsets with the same callset ID. // Existing variant - irrelevant fields trimmed for clarity { &#34;variantSetId&#34;: &#34;10473108253681171589&#34;, &#34;referenceName&#34;: &#34;1&#34;, &#34;start&#34;: &#34;10582&#34;, &#34;referenceBases&#34;: &#34;G&#34;, &#34;alternateBases&#34;: [ &#34;A&#34; ], &#34;calls&#34;: [ { &#34;callSetId&#34;: &#34;10473108253681171589-0&#34;, &#34;callSetName&#34;: &#34;CALLSET0&#34;, &#34;genotype&#34;: [ 0, 1 ], } ] } // New variant with conflicting call information { &#34;variantSetId&#34;: &#34;10473108253681171589&#34;, &#34;referenceName&#34;: &#34;1&#34;, &#34;start&#34;: &#34;10582&#34;, &#34;referenceBases&#34;: &#34;G&#34;, &#34;alternateBases&#34;: [ &#34;A&#34; ], &#34;calls&#34;: [ { &#34;callSetId&#34;: &#34;10473108253681171589-0&#34;, &#34;callSetName&#34;: &#34;CALLSET0&#34;, &#34;genotype&#34;: [ 1, 1 ], } ] } The resulting merged variant would overwrite the existing calls with those from the new variant: { &#34;variantSetId&#34;: &#34;10473108253681171589&#34;, &#34;referenceName&#34;: &#34;1&#34;, &#34;start&#34;: &#34;10582&#34;, &#34;referenceBases&#34;: &#34;G&#34;, &#34;alternateBases&#34;: [ &#34;A&#34; ], &#34;calls&#34;: [ { &#34;callSetId&#34;: &#34;10473108253681171589-0&#34;, &#34;callSetName&#34;: &#34;CALLSET0&#34;, &#34;genotype&#34;: [ 1, 1 ], } ] } This may be the desired outcome, but it is up to the user to determine if if that is indeed the case.</p>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for at least one of the following scopes to make a valid call:</p>
 <ul>
@@ -581,13 +722,14 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 </ul>
+              
             </div>
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../variants_patch/" class="btn btn-neutral float-right" title="Patch"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../variants_patch/" class="btn btn-neutral float-right" title="Patch">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="../variants_import/" class="btn btn-neutral" title="Import"><span class="icon icon-circle-arrow-left"></span> Previous</a>
@@ -598,9 +740,10 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   <hr/>
 
   <div role="contentinfo">
-    <p>
     <!-- Copyright etc -->
-    </p>
+    
+      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+    
   </div>
 
   Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
@@ -610,22 +753,23 @@ In the latter case it is advised to set the field-cursor to the data-structure's
       </div>
 
     </section>
-
+    
   </div>
 
-<div class="rst-versions" role="note" style="cursor: pointer">
+  <div class="rst-versions" role="note" style="cursor: pointer">
     <span class="rst-current-version" data-toggle="rst-current-version">
-        
-            <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/genomics1-cli" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
-        
-      <span><a href="../variants_import/" style="color: #fcfcfc;">&laquo; Previous</a></span>
-      <span style="margin-left: 15px"><a href="../variants_patch/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+          <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/genomics1-cli" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../variants_import/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../variants_patch/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
     </span>
 </div>
+    <script src="../js/theme.js"></script>
 
-<!--
-MkDocs version  : 0.12.2
-Docs Build Date : 2016-10-16 20:42:55.344968
--->
 </body>
 </html>
