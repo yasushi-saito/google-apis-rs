@@ -4,7 +4,7 @@
     
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -13,19 +13,19 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/asps_delete/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/asps_get/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/asps_list/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -35,7 +35,7 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/channels_stop/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -45,31 +45,31 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/chromeosdevices_action/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/chromeosdevices_get/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/chromeosdevices_list/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/chromeosdevices_patch/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/chromeosdevices_update/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -79,19 +79,19 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/customers_get/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/customers_patch/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/customers_update/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -101,25 +101,25 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/domain-aliases_delete/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/domain-aliases_get/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/domain-aliases_insert/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/domain-aliases_list/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -129,25 +129,25 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/domains_delete/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/domains_get/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/domains_insert/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/domains_list/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -157,55 +157,55 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/groups_aliases-delete/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/groups_aliases-insert/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/groups_aliases-list/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/groups_delete/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/groups_get/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/groups_insert/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/groups_list/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/groups_patch/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/groups_update/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -215,37 +215,37 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/members_delete/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/members_get/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/members_insert/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/members_list/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/members_patch/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/members_update/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -255,25 +255,25 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/mobiledevices_action/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/mobiledevices_delete/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/mobiledevices_get/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/mobiledevices_list/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -283,31 +283,31 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/notifications_delete/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/notifications_get/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/notifications_list/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/notifications_patch/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/notifications_update/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -317,37 +317,37 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/orgunits_delete/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/orgunits_get/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/orgunits_insert/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/orgunits_list/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/orgunits_patch/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/orgunits_update/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -357,7 +357,7 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/privileges_list/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -367,37 +367,37 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/resources_calendars-delete/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/resources_calendars-get/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/resources_calendars-insert/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/resources_calendars-list/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/resources_calendars-patch/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/resources_calendars-update/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -407,25 +407,25 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/role-assignments_delete/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/role-assignments_get/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/role-assignments_insert/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/role-assignments_list/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -435,37 +435,37 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/roles_delete/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/roles_get/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/roles_insert/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/roles_list/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/roles_patch/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/roles_update/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -475,37 +475,37 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/schemas_delete/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/schemas_get/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/schemas_insert/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/schemas_list/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/schemas_patch/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/schemas_update/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -515,19 +515,19 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/tokens_delete/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/tokens_get/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/tokens_list/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -537,103 +537,103 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/users_aliases-delete/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/users_aliases-insert/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/users_aliases-list/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/users_aliases-watch/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/users_delete/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/users_get/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/users_insert/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/users_list/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/users_make-admin/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/users_patch/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/users_photos-delete/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/users_photos-get/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/users_photos-patch/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/users_photos-update/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/users_undelete/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/users_update/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/users_watch/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -643,19 +643,19 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/verification-codes_generate/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/verification-codes_invalidate/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-admin1_directory-cli/verification-codes_list/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         

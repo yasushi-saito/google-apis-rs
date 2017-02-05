@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>List - proximitybeacon v1.0.2+20160429</title>
+  <title>List - proximitybeacon v1.0.4+20160429</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> proximitybeacon v1.0.2+20160429</a>
+        <a href=".." class="icon icon-home"> proximitybeacon v1.0.4+20160429</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -223,7 +223,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">proximitybeacon v1.0.2+20160429</a>
+        <a href="..">proximitybeacon v1.0.4+20160429</a>
       </nav>
 
       
@@ -274,15 +274,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p project-id=string</strong></p>
+<p><strong>-p page-size=integer</strong></p>
 <ul>
-<li>The project id to list beacons under. If not present then the project credential that made the request is used as the project. Optional.</li>
+<li>The maximum number of records to return for this request, up to a server-defined upper limit.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p q=string</strong></p>
+<p><strong>-p project-id=string</strong></p>
 <ul>
-<li>Filter query string that supports the following field filters: * <code>description:&amp;#34;&amp;#34;</code> For example: <code>description:&amp;#34;Room 3&amp;#34;</code> Returns beacons whose description matches tokens in the string &#34;Room 3&#34; (not necessarily that exact string). The string must be double-quoted. * <code>status:</code> For example: <code>status:active</code> Returns beacons whose status matches the given value. Values must be one of the Beacon.Status enum values (case insensitive). Accepts multiple filters which will be combined with OR logic. * <code>stability:</code> For example: <code>stability:mobile</code> Returns beacons whose expected stability matches the given value. Values must be one of the Beacon.Stability enum values (case insensitive). Accepts multiple filters which will be combined with OR logic. * <code>place_id:&amp;#34;&amp;#34;</code> For example: <code>place_id:&amp;#34;ChIJVSZzVR8FdkgRXGmmm6SslKw=&amp;#34;</code> Returns beacons explicitly registered at the given place, expressed as a Place ID obtained from <a href="../places/place-id">Google Places API</a>. Does not match places inside the given place. Does not consider the beacon&#39;s actual location (which may be different from its registered place). Accepts multiple filters that will be combined with OR logic. The place ID must be double-quoted. * <code>registration_time[|=]</code> For example: <code>registration_time&amp;gt;=1433116800</code> Returns beacons whose registration time matches the given filter. Supports the operators: , =. Timestamp must be expressed as an integer number of seconds since midnight January 1, 1970 UTC. Accepts at most two filters that will be combined with AND logic, to support &#34;between&#34; semantics. If more than two are supplied, the latter ones are ignored. * <code>lat: lng: radius:</code> For example: <code>lat:51.1232343 lng:-1.093852 radius:1000</code> Returns beacons whose registered location is within the given circle. When any of these fields are given, all are required. Latitude and longitude must be decimal degrees between -90.0 and 90.0 and between -180.0 and 180.0 respectively. Radius must be an integer number of meters between 10 and 1,000,000 (1000 km). * <code>property:&amp;#34;=&amp;#34;</code> For example: <code>property:&amp;#34;battery-type=CR2032&amp;#34;</code> Returns beacons which have a property of the given name and value. Supports multiple filters which will be combined with OR logic. The entire name=value string must be double-quoted as one string. * <code>attachment_type:&amp;#34;&amp;#34;</code> For example: <code>attachment_type:&amp;#34;my-namespace/my-type&amp;#34;</code> Returns beacons having at least one attachment of the given namespaced type. Supports &#34;any within this namespace&#34; via the partial wildcard syntax: &#34;my-namespace/*&#34;. Supports multiple filters which will be combined with OR logic. The string must be double-quoted. Multiple filters on the same field are combined with OR logic (except registration_time which is combined with AND logic). Multiple filters on different fields are combined with AND logic. Filters should be separated by spaces. As with any HTTP query string parameter, the whole filter expression must be URL-encoded. Example REST request: <code>GET /v1beta1/beacons?q=status:active%20lat:51.123%20lng:-1.095%20radius:1000</code></li>
+<li>The project id to list beacons under. If not present then the project credential that made the request is used as the project. Optional.</li>
 </ul>
 </li>
 <li>
@@ -292,9 +292,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p page-size=integer</strong></p>
+<p><strong>-p q=string</strong></p>
 <ul>
-<li>The maximum number of records to return for this request, up to a server-defined upper limit.</li>
+<li>Filter query string that supports the following field filters: * <code>description:&amp;#34;&amp;#34;</code> For example: <code>description:&amp;#34;Room 3&amp;#34;</code> Returns beacons whose description matches tokens in the string &#34;Room 3&#34; (not necessarily that exact string). The string must be double-quoted. * <code>status:</code> For example: <code>status:active</code> Returns beacons whose status matches the given value. Values must be one of the Beacon.Status enum values (case insensitive). Accepts multiple filters which will be combined with OR logic. * <code>stability:</code> For example: <code>stability:mobile</code> Returns beacons whose expected stability matches the given value. Values must be one of the Beacon.Stability enum values (case insensitive). Accepts multiple filters which will be combined with OR logic. * <code>place_id:&amp;#34;&amp;#34;</code> For example: <code>place_id:&amp;#34;ChIJVSZzVR8FdkgRXGmmm6SslKw=&amp;#34;</code> Returns beacons explicitly registered at the given place, expressed as a Place ID obtained from <a href="../places/place-id">Google Places API</a>. Does not match places inside the given place. Does not consider the beacon&#39;s actual location (which may be different from its registered place). Accepts multiple filters that will be combined with OR logic. The place ID must be double-quoted. * <code>registration_time[|=]</code> For example: <code>registration_time&amp;gt;=1433116800</code> Returns beacons whose registration time matches the given filter. Supports the operators: , =. Timestamp must be expressed as an integer number of seconds since midnight January 1, 1970 UTC. Accepts at most two filters that will be combined with AND logic, to support &#34;between&#34; semantics. If more than two are supplied, the latter ones are ignored. * <code>lat: lng: radius:</code> For example: <code>lat:51.1232343 lng:-1.093852 radius:1000</code> Returns beacons whose registered location is within the given circle. When any of these fields are given, all are required. Latitude and longitude must be decimal degrees between -90.0 and 90.0 and between -180.0 and 180.0 respectively. Radius must be an integer number of meters between 10 and 1,000,000 (1000 km). * <code>property:&amp;#34;=&amp;#34;</code> For example: <code>property:&amp;#34;battery-type=CR2032&amp;#34;</code> Returns beacons which have a property of the given name and value. Supports multiple filters which will be combined with OR logic. The entire name=value string must be double-quoted as one string. * <code>attachment_type:&amp;#34;&amp;#34;</code> For example: <code>attachment_type:&amp;#34;my-namespace/my-type&amp;#34;</code> Returns beacons having at least one attachment of the given namespaced type. Supports &#34;any within this namespace&#34; via the partial wildcard syntax: &#34;my-namespace/*&#34;. Supports multiple filters which will be combined with OR logic. The string must be double-quoted. Multiple filters on the same field are combined with OR logic (except registration_time which is combined with AND logic). Multiple filters on different fields are combined with AND logic. Filters should be separated by spaces. As with any HTTP query string parameter, the whole filter expression must be URL-encoded. Example REST request: <code>GET /v1beta1/beacons?q=status:active%20lat:51.123%20lng:-1.095%20radius:1000</code></li>
 </ul>
 </li>
 </ul>

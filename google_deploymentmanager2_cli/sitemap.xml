@@ -4,7 +4,7 @@
     
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-deploymentmanager2-cli/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -13,67 +13,67 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-deploymentmanager2-cli/deployments_cancel-preview/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-deploymentmanager2-cli/deployments_delete/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-deploymentmanager2-cli/deployments_get/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-deploymentmanager2-cli/deployments_get-iam-policy/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-deploymentmanager2-cli/deployments_insert/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-deploymentmanager2-cli/deployments_list/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-deploymentmanager2-cli/deployments_patch/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-deploymentmanager2-cli/deployments_set-iam-policy/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-deploymentmanager2-cli/deployments_stop/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-deploymentmanager2-cli/deployments_test-iam-permissions/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-deploymentmanager2-cli/deployments_update/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -83,13 +83,13 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-deploymentmanager2-cli/manifests_get/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-deploymentmanager2-cli/manifests_list/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -99,13 +99,13 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-deploymentmanager2-cli/operations_get/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-deploymentmanager2-cli/operations_list/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -115,13 +115,13 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-deploymentmanager2-cli/resources_get/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-deploymentmanager2-cli/resources_list/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -131,7 +131,7 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-deploymentmanager2-cli/types_list/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         

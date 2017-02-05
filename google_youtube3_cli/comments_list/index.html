@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>List - YouTube v1.0.2+20161202</title>
+  <title>List - YouTube v1.0.4+20161202</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> YouTube v1.0.2+20161202</a>
+        <a href=".." class="icon icon-home"> YouTube v1.0.4+20161202</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -787,7 +787,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">YouTube v1.0.2+20161202</a>
+        <a href="..">YouTube v1.0.4+20161202</a>
       </nav>
 
       
@@ -845,24 +845,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p text-format=string</strong></p>
-<ul>
-<li>This parameter indicates whether the API should return comments formatted as HTML or as plain text.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p id=string</strong></p>
 <ul>
 <li>The id parameter specifies a comma-separated list of comment IDs for the resources that are being retrieved. In a comment resource, the id property specifies the comment&#39;s ID.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p max-results=integer</strong></p>
-<ul>
-<li>
-<p>The maxResults parameter specifies the maximum number of items that should be returned in the result set.</p>
-<p>Note: This parameter is not supported for use in conjunction with the id parameter.</p>
-</li>
 </ul>
 </li>
 <li>
@@ -875,11 +860,26 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
+<p><strong>-p text-format=string</strong></p>
+<ul>
+<li>This parameter indicates whether the API should return comments formatted as HTML or as plain text.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p parent-id=string</strong></p>
 <ul>
 <li>
 <p>The parentId parameter specifies the ID of the comment for which replies should be retrieved.</p>
 <p>Note: YouTube currently supports replies only for top-level comments. However, replies to replies may be supported in the future.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>-p max-results=integer</strong></p>
+<ul>
+<li>
+<p>The maxResults parameter specifies the maximum number of items that should be returned in the result set.</p>
+<p>Note: This parameter is not supported for use in conjunction with the id parameter.</p>
 </li>
 </ul>
 </li>

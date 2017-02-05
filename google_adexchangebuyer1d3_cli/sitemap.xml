@@ -4,7 +4,7 @@
     
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-adexchangebuyer1d3-cli/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -13,25 +13,25 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-adexchangebuyer1d3-cli/accounts_get/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-adexchangebuyer1d3-cli/accounts_list/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-adexchangebuyer1d3-cli/accounts_patch/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-adexchangebuyer1d3-cli/accounts_update/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -41,13 +41,13 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-adexchangebuyer1d3-cli/billing-info_get/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-adexchangebuyer1d3-cli/billing-info_list/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -57,19 +57,19 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-adexchangebuyer1d3-cli/budget_get/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-adexchangebuyer1d3-cli/budget_patch/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-adexchangebuyer1d3-cli/budget_update/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -79,19 +79,19 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-adexchangebuyer1d3-cli/creatives_get/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-adexchangebuyer1d3-cli/creatives_insert/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-adexchangebuyer1d3-cli/creatives_list/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -101,13 +101,13 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-adexchangebuyer1d3-cli/direct-deals_get/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-adexchangebuyer1d3-cli/direct-deals_list/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -117,7 +117,7 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-adexchangebuyer1d3-cli/performance-report_list/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -127,37 +127,37 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-adexchangebuyer1d3-cli/pretargeting-config_delete/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-adexchangebuyer1d3-cli/pretargeting-config_get/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-adexchangebuyer1d3-cli/pretargeting-config_insert/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-adexchangebuyer1d3-cli/pretargeting-config_list/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-adexchangebuyer1d3-cli/pretargeting-config_patch/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-adexchangebuyer1d3-cli/pretargeting-config_update/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         

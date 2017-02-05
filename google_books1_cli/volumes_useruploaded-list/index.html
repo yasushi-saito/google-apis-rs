@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Useruploaded List - books v1.0.2+20161206</title>
+  <title>Useruploaded List - books v1.0.4+20161206</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> books v1.0.2+20161206</a>
+        <a href=".." class="icon icon-home"> books v1.0.4+20161206</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -511,7 +511,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">books v1.0.2+20161206</a>
+        <a href="..">books v1.0.4+20161206</a>
       </nav>
 
       
@@ -562,21 +562,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p start-index=integer</strong></p>
-<ul>
-<li>Index of the first result to return (starts at 0)</li>
-</ul>
-</li>
-<li>
 <p><strong>-p source=string</strong></p>
 <ul>
 <li>String to identify the originator of this request.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p volume-id=string</strong></p>
+<p><strong>-p start-index=integer</strong></p>
 <ul>
-<li>The ids of the volumes to be returned. If not specified all that match the processingState are returned.</li>
+<li>Index of the first result to return (starts at 0)</li>
 </ul>
 </li>
 <li>
@@ -586,15 +580,21 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p locale=string</strong></p>
+<p><strong>-p volume-id=string</strong></p>
 <ul>
-<li>ISO-639-1 language and ISO-3166-1 country code. Ex: &#39;en_US&#39;. Used for generating recommendations.</li>
+<li>The ids of the volumes to be returned. If not specified all that match the processingState are returned.</li>
 </ul>
 </li>
 <li>
 <p><strong>-p max-results=integer</strong></p>
 <ul>
 <li>Maximum number of results to return.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p locale=string</strong></p>
+<ul>
+<li>ISO-639-1 language and ISO-3166-1 country code. Ex: &#39;en_US&#39;. Used for generating recommendations.</li>
 </ul>
 </li>
 </ul>

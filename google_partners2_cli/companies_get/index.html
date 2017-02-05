@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Get - partners v1.0.2+20151009</title>
+  <title>Get - partners v1.0.4+20151009</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> partners v1.0.2+20151009</a>
+        <a href=".." class="icon icon-home"> partners v1.0.4+20151009</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -153,7 +153,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">partners v1.0.2+20151009</a>
+        <a href="..">partners v1.0.4+20151009</a>
       </nav>
 
       
@@ -207,15 +207,21 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p request-metadata-locale=string</strong></p>
+<p><strong>-p view=string</strong></p>
 <ul>
-<li>Locale to use for the current request.</li>
+<li>The view of <code>Company</code> resource to be returned. This must not be <code>COMPANY_VIEW_UNSPECIFIED</code>.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p order-by=string</strong></p>
+<p><strong>-p address=string</strong></p>
 <ul>
-<li>How to order addresses within the returned company. Currently, only <code>address</code> and <code>address desc</code> is supported which will sorted by closest to farthest in distance from given address and farthest to closest distance from given address respectively.</li>
+<li>The address to use for sorting the company&#39;s addresses by proximity. If not given, the geo-located address of the request is used. Used when order_by is set.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p request-metadata-locale=string</strong></p>
+<ul>
+<li>Locale to use for the current request.</li>
 </ul>
 </li>
 <li>
@@ -225,27 +231,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p request-metadata-partners-session-id=string</strong></p>
+<p><strong>-p currency-code=string</strong></p>
 <ul>
-<li>Google Partners session ID.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p request-metadata-traffic-source-traffic-source-id=string</strong></p>
-<ul>
-<li>Identifier to indicate where the traffic comes from. An identifier has multiple letters created by a team which redirected the traffic to us.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p view=string</strong></p>
-<ul>
-<li>The view of <code>Company</code> resource to be returned. This must not be <code>COMPANY_VIEW_UNSPECIFIED</code>.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p request-metadata-experiment-ids=string</strong></p>
-<ul>
-<li>Experiment IDs the current request belongs to.</li>
+<li>If the company&#39;s budget is in a different currency code than this one, then the converted budget is converted to this currency code.</li>
 </ul>
 </li>
 <li>
@@ -261,15 +249,27 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p address=string</strong></p>
+<p><strong>-p request-metadata-experiment-ids=string</strong></p>
 <ul>
-<li>The address to use for sorting the company&#39;s addresses by proximity. If not given, the geo-located address of the request is used. Used when order_by is set.</li>
+<li>Experiment IDs the current request belongs to.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p currency-code=string</strong></p>
+<p><strong>-p request-metadata-traffic-source-traffic-source-id=string</strong></p>
 <ul>
-<li>If the company&#39;s budget is in a different currency code than this one, then the converted budget is converted to this currency code.</li>
+<li>Identifier to indicate where the traffic comes from. An identifier has multiple letters created by a team which redirected the traffic to us.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p order-by=string</strong></p>
+<ul>
+<li>How to order addresses within the returned company. Currently, only <code>address</code> and <code>address desc</code> is supported which will sorted by closest to farthest in distance from given address and farthest to closest distance from given address respectively.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p request-metadata-partners-session-id=string</strong></p>
+<ul>
+<li>Google Partners session ID.</li>
 </ul>
 </li>
 </ul>

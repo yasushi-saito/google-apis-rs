@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Watch - directory v1.0.2+20161124</title>
+  <title>Watch - directory v1.0.4+20161124</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> directory v1.0.2+20161124</a>
+        <a href=".." class="icon icon-home"> directory v1.0.4+20161124</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -908,7 +908,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">directory v1.0.2+20161124</a>
+        <a href="..">directory v1.0.4+20161124</a>
       </nav>
 
       
@@ -1039,45 +1039,21 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p sort-order=string</strong></p>
-<ul>
-<li>Whether to return results in ascending or descending order.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p event=string</strong></p>
-<ul>
-<li>Event on which subscription is intended (if subscribing)</li>
-</ul>
-</li>
-<li>
-<p><strong>-p view-type=string</strong></p>
-<ul>
-<li>Whether to fetch the ADMIN_VIEW or DOMAIN_PUBLIC view of the user.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p query=string</strong></p>
-<ul>
-<li>Query string search. Should be of the form &#34;&#34;. Complete documentation is at https://developers.google.com/admin-sdk/directory/v1/guides/search-users</li>
-</ul>
-</li>
-<li>
-<p><strong>-p show-deleted=string</strong></p>
-<ul>
-<li>If set to true retrieves the list of deleted users. Default is false</li>
-</ul>
-</li>
-<li>
 <p><strong>-p domain=string</strong></p>
 <ul>
 <li>Name of the domain. Fill this field to get users from only this domain. To return all users in a multi-domain fill customer field instead.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p custom-field-mask=string</strong></p>
+<p><strong>-p order-by=string</strong></p>
 <ul>
-<li>Comma-separated list of schema names. All fields from these schemas are fetched. This should only be set when projection=custom.</li>
+<li>Column to use for sorting results</li>
+</ul>
+</li>
+<li>
+<p><strong>-p projection=string</strong></p>
+<ul>
+<li>What subset of fields to fetch for this user.</li>
 </ul>
 </li>
 <li>
@@ -1093,15 +1069,39 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p order-by=string</strong></p>
+<p><strong>-p custom-field-mask=string</strong></p>
 <ul>
-<li>Column to use for sorting results</li>
+<li>Comma-separated list of schema names. All fields from these schemas are fetched. This should only be set when projection=custom.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p projection=string</strong></p>
+<p><strong>-p show-deleted=string</strong></p>
 <ul>
-<li>What subset of fields to fetch for this user.</li>
+<li>If set to true retrieves the list of deleted users. Default is false</li>
+</ul>
+</li>
+<li>
+<p><strong>-p sort-order=string</strong></p>
+<ul>
+<li>Whether to return results in ascending or descending order.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p view-type=string</strong></p>
+<ul>
+<li>Whether to fetch the ADMIN_VIEW or DOMAIN_PUBLIC view of the user.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p query=string</strong></p>
+<ul>
+<li>Query string search. Should be of the form &#34;&#34;. Complete documentation is at https://developers.google.com/admin-sdk/directory/v1/guides/search-users</li>
+</ul>
+</li>
+<li>
+<p><strong>-p event=string</strong></p>
+<ul>
+<li>Event on which subscription is intended (if subscribing)</li>
 </ul>
 </li>
 </ul>

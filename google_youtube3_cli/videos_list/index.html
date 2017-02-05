@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>List - YouTube v1.0.2+20161202</title>
+  <title>List - YouTube v1.0.4+20161202</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> YouTube v1.0.2+20161202</a>
+        <a href=".." class="icon icon-home"> YouTube v1.0.4+20161202</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -787,7 +787,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">YouTube v1.0.2+20161202</a>
+        <a href="..">YouTube v1.0.4+20161202</a>
       </nav>
 
       
@@ -854,18 +854,21 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p chart=string</strong></p>
+<p><strong>-p my-rating=string</strong></p>
 <ul>
-<li>The chart parameter identifies the chart that you want to retrieve.</li>
+<li>Set this parameter&#39;s value to like or dislike to instruct the API to only return videos liked or disliked by the authenticated user.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p max-results=integer</strong></p>
+<p><strong>-p video-category-id=string</strong></p>
 <ul>
-<li>
-<p>The maxResults parameter specifies the maximum number of items that should be returned in the result set.</p>
-<p>Note: This parameter is supported for use in conjunction with the myRating and chart parameters, but it is not supported for use in conjunction with the id parameter.</p>
+<li>The videoCategoryId parameter identifies the video category for which the chart should be retrieved. This parameter can only be used in conjunction with the chart parameter. By default, charts are not restricted to a particular category.</li>
+</ul>
 </li>
+<li>
+<p><strong>-p max-height=integer</strong></p>
+<ul>
+<li>The maxHeight parameter specifies a maximum height of the embedded player. If maxWidth is provided, maxHeight may not be reached in order to not violate the width request.</li>
 </ul>
 </li>
 <li>
@@ -875,9 +878,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p my-rating=string</strong></p>
+<p><strong>-p chart=string</strong></p>
 <ul>
-<li>Set this parameter&#39;s value to like or dislike to instruct the API to only return videos liked or disliked by the authenticated user.</li>
+<li>The chart parameter identifies the chart that you want to retrieve.</li>
 </ul>
 </li>
 <li>
@@ -896,6 +899,30 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
+<p><strong>-p max-results=integer</strong></p>
+<ul>
+<li>
+<p>The maxResults parameter specifies the maximum number of items that should be returned in the result set.</p>
+<p>Note: This parameter is supported for use in conjunction with the myRating and chart parameters, but it is not supported for use in conjunction with the id parameter.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>-p page-token=string</strong></p>
+<ul>
+<li>
+<p>The pageToken parameter identifies a specific page in the result set that should be returned. In an API response, the nextPageToken and prevPageToken properties identify other pages that could be retrieved.</p>
+<p>Note: This parameter is supported for use in conjunction with the myRating and chart parameters, but it is not supported for use in conjunction with the id parameter.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>-p locale=string</strong></p>
+<ul>
+<li>DEPRECATED</li>
+</ul>
+</li>
+<li>
 <p><strong>-p on-behalf-of-content-owner=string</strong></p>
 <ul>
 <li>
@@ -908,33 +935,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <p><strong>-p max-width=integer</strong></p>
 <ul>
 <li>The maxWidth parameter specifies a maximum width of the embedded player. If maxHeight is provided, maxWidth may not be reached in order to not violate the height request.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p max-height=integer</strong></p>
-<ul>
-<li>The maxHeight parameter specifies a maximum height of the embedded player. If maxWidth is provided, maxHeight may not be reached in order to not violate the width request.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p video-category-id=string</strong></p>
-<ul>
-<li>The videoCategoryId parameter identifies the video category for which the chart should be retrieved. This parameter can only be used in conjunction with the chart parameter. By default, charts are not restricted to a particular category.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p locale=string</strong></p>
-<ul>
-<li>DEPRECATED</li>
-</ul>
-</li>
-<li>
-<p><strong>-p page-token=string</strong></p>
-<ul>
-<li>
-<p>The pageToken parameter identifies a specific page in the result set that should be returned. In an API response, the nextPageToken and prevPageToken properties identify other pages that could be retrieved.</p>
-<p>Note: This parameter is supported for use in conjunction with the myRating and chart parameters, but it is not supported for use in conjunction with the id parameter.</p>
-</li>
 </ul>
 </li>
 </ul>

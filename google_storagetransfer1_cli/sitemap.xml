@@ -4,7 +4,7 @@
     
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-storagetransfer1-cli/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -13,7 +13,7 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-storagetransfer1-cli/google-service-accounts_get/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -23,7 +23,7 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-storagetransfer1-cli/methods_get-google-service-account/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -33,25 +33,25 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-storagetransfer1-cli/transfer-jobs_create/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-storagetransfer1-cli/transfer-jobs_get/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-storagetransfer1-cli/transfer-jobs_list/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-storagetransfer1-cli/transfer-jobs_patch/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -61,37 +61,37 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-storagetransfer1-cli/transfer-operations_cancel/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-storagetransfer1-cli/transfer-operations_delete/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-storagetransfer1-cli/transfer-operations_get/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-storagetransfer1-cli/transfer-operations_list/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-storagetransfer1-cli/transfer-operations_pause/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-storagetransfer1-cli/transfer-operations_resume/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         

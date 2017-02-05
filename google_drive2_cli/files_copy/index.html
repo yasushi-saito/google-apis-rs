@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Copy - drive v1.0.2+20161212</title>
+  <title>Copy - drive v1.0.4+20161212</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> drive v1.0.2+20161212</a>
+        <a href=".." class="icon icon-home"> drive v1.0.4+20161212</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -618,7 +618,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">drive v1.0.2+20161212</a>
+        <a href="..">drive v1.0.4+20161212</a>
       </nav>
 
       
@@ -1313,9 +1313,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p timed-text-track-name=string</strong></p>
+<p><strong>-p pinned=boolean</strong></p>
 <ul>
-<li>The timed text track name.</li>
+<li>Whether to pin the head revision of the new copy. A file can have a maximum of 200 pinned revisions.</li>
 </ul>
 </li>
 <li>
@@ -1325,21 +1325,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p convert=boolean</strong></p>
+<p><strong>-p timed-text-track-name=string</strong></p>
 <ul>
-<li>Whether to convert this file to the corresponding Google Docs format.</li>
+<li>The timed text track name.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p pinned=boolean</strong></p>
+<p><strong>-p ocr=boolean</strong></p>
 <ul>
-<li>Whether to pin the head revision of the new copy. A file can have a maximum of 200 pinned revisions.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p ocr-language=string</strong></p>
-<ul>
-<li>If ocr is true, hints at the language to use. Valid values are BCP 47 codes.</li>
+<li>Whether to attempt OCR on .jpg, .png, .gif, or .pdf uploads.</li>
 </ul>
 </li>
 <li>
@@ -1349,9 +1343,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p ocr=boolean</strong></p>
+<p><strong>-p ocr-language=string</strong></p>
 <ul>
-<li>Whether to attempt OCR on .jpg, .png, .gif, or .pdf uploads.</li>
+<li>If ocr is true, hints at the language to use. Valid values are BCP 47 codes.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p convert=boolean</strong></p>
+<ul>
+<li>Whether to convert this file to the corresponding Google Docs format.</li>
 </ul>
 </li>
 </ul>

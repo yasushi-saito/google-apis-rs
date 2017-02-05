@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Get Query Results - bigquery v1.0.2+20161130</title>
+  <title>Get Query Results - bigquery v1.0.4+20161130</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> bigquery v1.0.2+20161130</a>
+        <a href=".." class="icon icon-home"> bigquery v1.0.4+20161130</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -269,7 +269,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">bigquery v1.0.2+20161130</a>
+        <a href="..">bigquery v1.0.4+20161130</a>
       </nav>
 
       
@@ -336,12 +336,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p start-index=string</strong></p>
-<ul>
-<li>Zero-based index of the starting row</li>
-</ul>
-</li>
-<li>
 <p><strong>-p timeout-ms=integer</strong></p>
 <ul>
 <li>How long to wait for the query to complete, in milliseconds, before returning. Default is 10 seconds. If the timeout passes before the job completes, the &#39;jobComplete&#39; field in the response will be false</li>
@@ -357,6 +351,12 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <p><strong>-p page-token=string</strong></p>
 <ul>
 <li>Page token, returned by a previous call, to request the next page of results</li>
+</ul>
+</li>
+<li>
+<p><strong>-p start-index=string</strong></p>
+<ul>
+<li>Zero-based index of the starting row</li>
 </ul>
 </li>
 </ul>

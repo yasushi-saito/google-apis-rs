@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Query - YouTube Analytics v1.0.2+20161213</title>
+  <title>Query - YouTube Analytics v1.0.4+20161213</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> YouTube Analytics v1.0.2+20161213</a>
+        <a href=".." class="icon icon-home"> YouTube Analytics v1.0.4+20161213</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -162,7 +162,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">YouTube Analytics v1.0.2+20161213</a>
+        <a href="..">YouTube Analytics v1.0.4+20161213</a>
       </nav>
 
       
@@ -242,27 +242,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p currency=string</strong></p>
+<p><strong>-p filters=string</strong></p>
 <ul>
-<li>The currency to which financial metrics should be converted. The default is US Dollar (USD). If the result contains no financial metrics, this flag will be ignored. Responds with an error if the specified currency is not recognized.</li>
+<li>A list of filters that should be applied when retrieving YouTube Analytics data. The Available Reports document identifies the dimensions that can be used to filter each report, and the Dimensions document defines those dimensions. If a request uses multiple filters, join them together with a semicolon (;), and the returned result table will satisfy both filters. For example, a filters parameter value of video==dMH0bHeiRNg;country==IT restricts the result set to include data for the given video in Italy.</li>
 </ul>
 </li>
 <li>
 <p><strong>-p dimensions=string</strong></p>
 <ul>
 <li>A comma-separated list of YouTube Analytics dimensions, such as views or ageGroup,gender. See the Available Reports document for a list of the reports that you can retrieve and the dimensions used for those reports. Also see the Dimensions document for definitions of those dimensions.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p sort=string</strong></p>
-<ul>
-<li>A comma-separated list of dimensions or metrics that determine the sort order for YouTube Analytics data. By default the sort order is ascending. The &#39;-&#39; prefix causes descending sort order.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p filters=string</strong></p>
-<ul>
-<li>A list of filters that should be applied when retrieving YouTube Analytics data. The Available Reports document identifies the dimensions that can be used to filter each report, and the Dimensions document defines those dimensions. If a request uses multiple filters, join them together with a semicolon (;), and the returned result table will satisfy both filters. For example, a filters parameter value of video==dMH0bHeiRNg;country==IT restricts the result set to include data for the given video in Italy.</li>
 </ul>
 </li>
 <li>
@@ -275,6 +263,18 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <p><strong>-p max-results=integer</strong></p>
 <ul>
 <li>The maximum number of rows to include in the response.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p sort=string</strong></p>
+<ul>
+<li>A comma-separated list of dimensions or metrics that determine the sort order for YouTube Analytics data. By default the sort order is ascending. The &#39;-&#39; prefix causes descending sort order.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p currency=string</strong></p>
+<ul>
+<li>The currency to which financial metrics should be converted. The default is US Dollar (USD). If the result contains no financial metrics, this flag will be ignored. Responds with an error if the specified currency is not recognized.</li>
 </ul>
 </li>
 </ul>

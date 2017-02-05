@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Experience Locales List - Play Movies v1.0.2+20160518</title>
+  <title>Experience Locales List - Play Movies v1.0.4+20160518</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Play Movies v1.0.2+20160518</a>
+        <a href=".." class="icon icon-home"> Play Movies v1.0.4+20160518</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -160,7 +160,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Play Movies v1.0.2+20160518</a>
+        <a href="..">Play Movies v1.0.4+20160518</a>
       </nav>
 
       
@@ -218,15 +218,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p title-level-eidr=string</strong></p>
+<p><strong>-p alt-cut-id=string</strong></p>
 <ul>
-<li>Filter ExperienceLocales that match a given title-level EIDR.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p pph-names=string</strong></p>
-<ul>
-<li>See <em>List methods rules</em> for info about this field.</li>
+<li>Filter ExperienceLocales that match a case-insensitive, partner-specific Alternative Cut ID.</li>
 </ul>
 </li>
 <li>
@@ -236,13 +230,13 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p custom-id=string</strong></p>
+<p><strong>-p edit-level-eidr=string</strong></p>
 <ul>
-<li>Filter ExperienceLocales that match a case-insensitive, partner-specific custom id.</li>
+<li>Filter ExperienceLocales that match a given edit-level EIDR.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p page-token=string</strong></p>
+<p><strong>-p studio-names=string</strong></p>
 <ul>
 <li>See <em>List methods rules</em> for info about this field.</li>
 </ul>
@@ -254,21 +248,27 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p studio-names=string</strong></p>
+<p><strong>-p page-token=string</strong></p>
 <ul>
 <li>See <em>List methods rules</em> for info about this field.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p edit-level-eidr=string</strong></p>
+<p><strong>-p title-level-eidr=string</strong></p>
 <ul>
-<li>Filter ExperienceLocales that match a given edit-level EIDR.</li>
+<li>Filter ExperienceLocales that match a given title-level EIDR.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p alt-cut-id=string</strong></p>
+<p><strong>-p custom-id=string</strong></p>
 <ul>
-<li>Filter ExperienceLocales that match a case-insensitive, partner-specific Alternative Cut ID.</li>
+<li>Filter ExperienceLocales that match a case-insensitive, partner-specific custom id.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p pph-names=string</strong></p>
+<ul>
+<li>See <em>List methods rules</em> for info about this field.</li>
 </ul>
 </li>
 </ul>

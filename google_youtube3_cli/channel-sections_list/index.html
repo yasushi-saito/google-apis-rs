@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>List - YouTube v1.0.2+20161202</title>
+  <title>List - YouTube v1.0.4+20161202</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> YouTube v1.0.2+20161202</a>
+        <a href=".." class="icon icon-home"> YouTube v1.0.4+20161202</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -787,7 +787,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">YouTube v1.0.2+20161202</a>
+        <a href="..">YouTube v1.0.4+20161202</a>
       </nav>
 
       
@@ -854,15 +854,24 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p mine=boolean</strong></p>
-<ul>
-<li>Set this parameter&#39;s value to true to retrieve a feed of the authenticated user&#39;s channelSections.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p channel-id=string</strong></p>
 <ul>
 <li>The channelId parameter specifies a YouTube channel ID. The API will only return that channel&#39;s channelSections.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p on-behalf-of-content-owner=string</strong></p>
+<ul>
+<li>
+<p>Note: This parameter is intended exclusively for YouTube content partners.</p>
+<p>The onBehalfOfContentOwner parameter indicates that the request&#39;s authorization credentials identify a YouTube CMS user who is acting on behalf of the content owner specified in the parameter value. This parameter is intended for YouTube content partners that own and manage many different YouTube channels. It allows content owners to authenticate once and get access to all their video and channel data, without having to provide authentication credentials for each individual channel. The CMS account that the user authenticates with must be linked to the specified YouTube content owner.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>-p mine=boolean</strong></p>
+<ul>
+<li>Set this parameter&#39;s value to true to retrieve a feed of the authenticated user&#39;s channelSections.</li>
 </ul>
 </li>
 <li>
@@ -875,15 +884,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <p><strong>-p id=string</strong></p>
 <ul>
 <li>The id parameter specifies a comma-separated list of the YouTube channelSection ID(s) for the resource(s) that are being retrieved. In a channelSection resource, the id property specifies the YouTube channelSection ID.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p on-behalf-of-content-owner=string</strong></p>
-<ul>
-<li>
-<p>Note: This parameter is intended exclusively for YouTube content partners.</p>
-<p>The onBehalfOfContentOwner parameter indicates that the request&#39;s authorization credentials identify a YouTube CMS user who is acting on behalf of the content owner specified in the parameter value. This parameter is intended for YouTube content partners that own and manage many different YouTube channels. It allows content owners to authenticate once and get access to all their video and channel data, without having to provide authentication credentials for each individual channel. The CMS account that the user authenticates with must be linked to the specified YouTube content owner.</p>
-</li>
 </ul>
 </li>
 </ul>

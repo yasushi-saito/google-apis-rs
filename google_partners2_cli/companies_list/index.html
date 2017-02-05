@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>List - partners v1.0.2+20151009</title>
+  <title>List - partners v1.0.4+20151009</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> partners v1.0.2+20151009</a>
+        <a href=".." class="icon icon-home"> partners v1.0.4+20151009</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -150,7 +150,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">partners v1.0.2+20151009</a>
+        <a href="..">partners v1.0.4+20151009</a>
       </nav>
 
       
@@ -197,33 +197,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p address=string</strong></p>
-<ul>
-<li>The address to use when searching for companies. If not given, the geo-located address of the request is used.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p order-by=string</strong></p>
 <ul>
 <li>How to order addresses within the returned companies. Currently, only <code>address</code> and <code>address desc</code> is supported which will sorted by closest to farthest in distance from given address and farthest to closest distance from given address respectively.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p page-size=integer</strong></p>
-<ul>
-<li>Requested page size. Server may return fewer companies than requested. If unspecified, server picks an appropriate default.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p request-metadata-experiment-ids=string</strong></p>
-<ul>
-<li>Experiment IDs the current request belongs to.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p request-metadata-user-overrides-user-id=string</strong></p>
-<ul>
-<li>Logged-in user ID to impersonate instead of the user&#39;s ID.</li>
 </ul>
 </li>
 <li>
@@ -233,15 +209,27 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p language-codes=string</strong></p>
+<p><strong>-p company-name=string</strong></p>
 <ul>
-<li>List of language codes that company can support. Only primary language subtags are accepted as defined by BCP 47 (IETF BCP 47, &#34;Tags for Identifying Languages&#34;).</li>
+<li>Company name to search for.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p max-monthly-budget-currency-code=string</strong></p>
+<p><strong>-p request-metadata-user-overrides-user-id=string</strong></p>
 <ul>
-<li>The 3-letter currency code defined in ISO 4217.</li>
+<li>Logged-in user ID to impersonate instead of the user&#39;s ID.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p page-size=integer</strong></p>
+<ul>
+<li>Requested page size. Server may return fewer companies than requested. If unspecified, server picks an appropriate default.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p view=string</strong></p>
+<ul>
+<li>The view of the <code>Company</code> resource to be returned. This must not be <code>COMPANY_VIEW_UNSPECIFIED</code>.</li>
 </ul>
 </li>
 <li>
@@ -251,9 +239,21 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p min-monthly-budget-currency-code=string</strong></p>
+<p><strong>-p website-url=string</strong></p>
 <ul>
-<li>The 3-letter currency code defined in ISO 4217.</li>
+<li>Website URL that will help to find a better matched company. .</li>
+</ul>
+</li>
+<li>
+<p><strong>-p max-monthly-budget-units=string</strong></p>
+<ul>
+<li>The whole units of the amount. For example if <code>currencyCode</code> is <code>&amp;#34;USD&amp;#34;</code>, then 1 unit is one US dollar.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p min-monthly-budget-units=string</strong></p>
+<ul>
+<li>The whole units of the amount. For example if <code>currencyCode</code> is <code>&amp;#34;USD&amp;#34;</code>, then 1 unit is one US dollar.</li>
 </ul>
 </li>
 <li>
@@ -263,15 +263,21 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
+<p><strong>-p gps-motivations=string</strong></p>
+<ul>
+<li>List of reasons for using Google Partner Search to get companies.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p request-metadata-locale=string</strong></p>
 <ul>
 <li>Locale to use for the current request.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p max-monthly-budget-nanos=integer</strong></p>
+<p><strong>-p language-codes=string</strong></p>
 <ul>
-<li>Number of nano (10^-9) units of the amount. The value must be between -999,999,999 and +999,999,999 inclusive. If <code>units</code> is positive, <code>nanos</code> must be positive or zero. If <code>units</code> is zero, <code>nanos</code> can be positive, zero, or negative. If <code>units</code> is negative, <code>nanos</code> must be negative or zero. For example $-1.75 is represented as <code>units</code>=-1 and <code>nanos</code>=-750,000,000.</li>
+<li>List of language codes that company can support. Only primary language subtags are accepted as defined by BCP 47 (IETF BCP 47, &#34;Tags for Identifying Languages&#34;).</li>
 </ul>
 </li>
 <li>
@@ -287,6 +293,12 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
+<p><strong>-p request-metadata-experiment-ids=string</strong></p>
+<ul>
+<li>Experiment IDs the current request belongs to.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p industries=string</strong></p>
 <ul>
 <li>List of industries the company can help with.</li>
@@ -299,45 +311,33 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
+<p><strong>-p min-monthly-budget-currency-code=string</strong></p>
+<ul>
+<li>The 3-letter currency code defined in ISO 4217.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p services=string</strong></p>
 <ul>
 <li>List of services the company can help with.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p min-monthly-budget-units=string</strong></p>
+<p><strong>-p address=string</strong></p>
 <ul>
-<li>The whole units of the amount. For example if <code>currencyCode</code> is <code>&amp;#34;USD&amp;#34;</code>, then 1 unit is one US dollar.</li>
+<li>The address to use when searching for companies. If not given, the geo-located address of the request is used.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p gps-motivations=string</strong></p>
+<p><strong>-p max-monthly-budget-nanos=integer</strong></p>
 <ul>
-<li>List of reasons for using Google Partner Search to get companies.</li>
+<li>Number of nano (10^-9) units of the amount. The value must be between -999,999,999 and +999,999,999 inclusive. If <code>units</code> is positive, <code>nanos</code> must be positive or zero. If <code>units</code> is zero, <code>nanos</code> can be positive, zero, or negative. If <code>units</code> is negative, <code>nanos</code> must be negative or zero. For example $-1.75 is represented as <code>units</code>=-1 and <code>nanos</code>=-750,000,000.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p website-url=string</strong></p>
+<p><strong>-p max-monthly-budget-currency-code=string</strong></p>
 <ul>
-<li>Website URL that will help to find a better matched company. .</li>
-</ul>
-</li>
-<li>
-<p><strong>-p company-name=string</strong></p>
-<ul>
-<li>Company name to search for.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p max-monthly-budget-units=string</strong></p>
-<ul>
-<li>The whole units of the amount. For example if <code>currencyCode</code> is <code>&amp;#34;USD&amp;#34;</code>, then 1 unit is one US dollar.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p view=string</strong></p>
-<ul>
-<li>The view of the <code>Company</code> resource to be returned. This must not be <code>COMPANY_VIEW_UNSPECIFIED</code>.</li>
+<li>The 3-letter currency code defined in ISO 4217.</li>
 </ul>
 </li>
 </ul>

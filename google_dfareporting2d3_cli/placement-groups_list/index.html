@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>List - dfareporting v1.0.2+20160803</title>
+  <title>List - dfareporting v1.0.4+20160803</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> dfareporting v1.0.2+20160803</a>
+        <a href=".." class="icon icon-home"> dfareporting v1.0.4+20160803</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -1866,7 +1866,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">dfareporting v1.0.2+20160803</a>
+        <a href="..">dfareporting v1.0.4+20160803</a>
       </nav>
 
       
@@ -1924,15 +1924,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p min-end-date=string</strong></p>
+<p><strong>-p search-string=string</strong></p>
 <ul>
-<li>Select only placements or placement groups whose end date is on or after the specified minEndDate. The date should be formatted as &#34;yyyy-MM-dd&#34;.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p max-results=integer</strong></p>
-<ul>
-<li>Maximum number of results to return.</li>
+<li>Allows searching for placement groups by name or ID. Wildcards (<em>) are allowed. For example, &#34;placement</em>2015&#34; will return placement groups with names like &#34;placement group June 2015&#34;, &#34;placement group May 2015&#34;, or simply &#34;placements 2015&#34;. Most of the searches also add wildcards implicitly at the start and the end of the search string. For example, a search string of &#34;placementgroup&#34; will match placement groups with name &#34;my placementgroup&#34;, &#34;placementgroup 2015&#34;, or simply &#34;placementgroup&#34;.</li>
 </ul>
 </li>
 <li>
@@ -1942,33 +1936,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p archived=boolean</strong></p>
-<ul>
-<li>Select only archived placements. Don&#39;t set this field to select both archived and non-archived placements.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p placement-group-type=string</strong></p>
-<ul>
-<li>Select only placement groups belonging with this group type. A package is a simple group of placements that acts as a single pricing point for a group of tags. A roadblock is a group of placements that not only acts as a single pricing point but also assumes that all the tags in it will be served at the same time. A roadblock requires one of its assigned placements to be marked as primary for reporting.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p pricing-types=string</strong></p>
 <ul>
 <li>Select only placement groups with these pricing types.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p placement-strategy-ids=string</strong></p>
-<ul>
-<li>Select only placement groups that are associated with these placement strategies.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p max-end-date=string</strong></p>
-<ul>
-<li>Select only placements or placement groups whose end date is on or before the specified maxEndDate. The date should be formatted as &#34;yyyy-MM-dd&#34;.</li>
 </ul>
 </li>
 <li>
@@ -1978,15 +1948,45 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
+<p><strong>-p placement-strategy-ids=string</strong></p>
+<ul>
+<li>Select only placement groups that are associated with these placement strategies.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p max-results=integer</strong></p>
+<ul>
+<li>Maximum number of results to return.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p placement-group-type=string</strong></p>
+<ul>
+<li>Select only placement groups belonging with this group type. A package is a simple group of placements that acts as a single pricing point for a group of tags. A roadblock is a group of placements that not only acts as a single pricing point but also assumes that all the tags in it will be served at the same time. A roadblock requires one of its assigned placements to be marked as primary for reporting.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p content-category-ids=string</strong></p>
 <ul>
 <li>Select only placement groups that are associated with these content categories.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p search-string=string</strong></p>
+<p><strong>-p archived=boolean</strong></p>
 <ul>
-<li>Allows searching for placement groups by name or ID. Wildcards (<em>) are allowed. For example, &#34;placement</em>2015&#34; will return placement groups with names like &#34;placement group June 2015&#34;, &#34;placement group May 2015&#34;, or simply &#34;placements 2015&#34;. Most of the searches also add wildcards implicitly at the start and the end of the search string. For example, a search string of &#34;placementgroup&#34; will match placement groups with name &#34;my placementgroup&#34;, &#34;placementgroup 2015&#34;, or simply &#34;placementgroup&#34;.</li>
+<li>Select only archived placements. Don&#39;t set this field to select both archived and non-archived placements.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p min-end-date=string</strong></p>
+<ul>
+<li>Select only placements or placement groups whose end date is on or after the specified minEndDate. The date should be formatted as &#34;yyyy-MM-dd&#34;.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p max-end-date=string</strong></p>
+<ul>
+<li>Select only placements or placement groups whose end date is on or before the specified maxEndDate. The date should be formatted as &#34;yyyy-MM-dd&#34;.</li>
 </ul>
 </li>
 <li>

@@ -4,7 +4,7 @@
     
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-plusdomains1-cli/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -13,19 +13,19 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-plusdomains1-cli/activities_get/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-plusdomains1-cli/activities_insert/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-plusdomains1-cli/activities_list/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -35,7 +35,7 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-plusdomains1-cli/audiences_list/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -45,49 +45,49 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-plusdomains1-cli/circles_add-people/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-plusdomains1-cli/circles_get/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-plusdomains1-cli/circles_insert/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-plusdomains1-cli/circles_list/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-plusdomains1-cli/circles_patch/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-plusdomains1-cli/circles_remove/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-plusdomains1-cli/circles_remove-people/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-plusdomains1-cli/circles_update/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -97,19 +97,19 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-plusdomains1-cli/comments_get/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-plusdomains1-cli/comments_insert/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-plusdomains1-cli/comments_list/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -119,7 +119,7 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-plusdomains1-cli/media_insert/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -129,25 +129,25 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-plusdomains1-cli/people_get/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-plusdomains1-cli/people_list/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-plusdomains1-cli/people_list-by-activity/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-plusdomains1-cli/people_list-by-circle/</loc>
-     <lastmod>2016-12-27</lastmod>
+     <lastmod>2017-02-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
         

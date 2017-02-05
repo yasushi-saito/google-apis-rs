@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Monitored Resource Descriptors List - Monitoring v1.0.2+20161212</title>
+  <title>Monitored Resource Descriptors List - Monitoring v1.0.4+20161212</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Monitoring v1.0.2+20161212</a>
+        <a href=".." class="icon icon-home"> Monitoring v1.0.4+20161212</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -195,7 +195,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Monitoring v1.0.2+20161212</a>
+        <a href="..">Monitoring v1.0.4+20161212</a>
       </nav>
 
       
@@ -265,16 +265,16 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p page-token=string</strong></p>
-<ul>
-<li>If this field is not empty then it must contain the nextPageToken value returned by a previous call to this method. Using this field causes the method to return additional results from the previous method call.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p filter=string</strong></p>
 <ul>
 <li>An optional filter describing the descriptors to be returned. The filter can reference the descriptor&#39;s type and labels. For example, the following filter returns only Google Compute Engine descriptors that have an id label:
     resource.type = starts_with(&#34;gce_&#34;) AND resource.label:id</li>
+</ul>
+</li>
+<li>
+<p><strong>-p page-token=string</strong></p>
+<ul>
+<li>If this field is not empty then it must contain the nextPageToken value returned by a previous call to this method. Using this field causes the method to return additional results from the previous method call.</li>
 </ul>
 </li>
 </ul>

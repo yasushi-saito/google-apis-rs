@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Orders List - Play Movies v1.0.2+20160518</title>
+  <title>Orders List - Play Movies v1.0.4+20160518</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Play Movies v1.0.2+20160518</a>
+        <a href=".." class="icon icon-home"> Play Movies v1.0.4+20160518</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -160,7 +160,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Play Movies v1.0.2+20160518</a>
+        <a href="..">Play Movies v1.0.4+20160518</a>
       </nav>
 
       
@@ -218,19 +218,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p status=string</strong></p>
-<ul>
-<li>Filter Orders that match one of the given status.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p name=string</strong></p>
-<ul>
-<li>Filter that matches Orders with a <code>name</code>, <code>show</code>, <code>season</code> or <code>episode</code> that contains the given case-insensitive name.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p page-size=integer</strong></p>
+<p><strong>-p pph-names=string</strong></p>
 <ul>
 <li>See <em>List methods rules</em> for info about this field.</li>
 </ul>
@@ -242,9 +230,21 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p pph-names=string</strong></p>
+<p><strong>-p page-size=integer</strong></p>
 <ul>
 <li>See <em>List methods rules</em> for info about this field.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p video-ids=string</strong></p>
+<ul>
+<li>Filter Orders that match any of the given <code>video_id</code>s.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p status=string</strong></p>
+<ul>
+<li>Filter Orders that match one of the given status.</li>
 </ul>
 </li>
 <li>
@@ -260,9 +260,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p video-ids=string</strong></p>
+<p><strong>-p name=string</strong></p>
 <ul>
-<li>Filter Orders that match any of the given <code>video_id</code>s.</li>
+<li>Filter that matches Orders with a <code>name</code>, <code>show</code>, <code>season</code> or <code>episode</code> that contains the given case-insensitive name.</li>
 </ul>
 </li>
 </ul>
