@@ -8,7 +8,7 @@
   <meta name="description" content="A complete library to interact with classroom (protocol v1)">
   
   <link rel="shortcut icon" href="./img/favicon.ico">
-  <title>Home - classroom v1.0.4+20161006</title>
+  <title>Home - classroom v1.0.5+20170510</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="./css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href="." class="icon icon-home"> classroom v1.0.4+20161006</a>
+        <a href="." class="icon icon-home"> classroom v1.0.5+20170510</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -110,6 +110,13 @@
         
             
     <li class="toctree-l1 ">
+        <a class="" href="courses_course-work-delete/">Course Work Delete</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
         <a class="" href="courses_course-work-get/">Course Work Get</a>
         
     </li>
@@ -118,6 +125,13 @@
             
     <li class="toctree-l1 ">
         <a class="" href="courses_course-work-list/">Course Work List</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="courses_course-work-patch/">Course Work Patch</a>
         
     </li>
 
@@ -389,7 +403,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href=".">classroom v1.0.4+20161006</a>
+        <a href=".">classroom v1.0.5+20170510</a>
       </nav>
 
       
@@ -433,15 +447,17 @@ capabilities. Errors will be printed to standard error, and cause the program's 
 
 <p>Find the source code <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/classroom1-cli">on github</a>.</p>
 <h1 id="usage">Usage</h1>
-<p>This documentation was generated from the <em>classroom</em> API at revision <em>20161006</em>. The CLI is at version <em>1.0.4</em>.</p>
+<p>This documentation was generated from the <em>classroom</em> API at revision <em>20170510</em>. The CLI is at version <em>1.0.5</em>.</p>
 <pre><code class="bash">classroom1 [options]
         courses
                 aliases-create &lt;course-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 aliases-delete &lt;course-id&gt; &lt;alias&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 aliases-list &lt;course-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 course-work-create &lt;course-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                course-work-delete &lt;course-id&gt; &lt;id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 course-work-get &lt;course-id&gt; &lt;id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 course-work-list &lt;course-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                course-work-patch &lt;course-id&gt; &lt;id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 course-work-student-submissions-get &lt;course-id&gt; &lt;course-work-id&gt; &lt;id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 course-work-student-submissions-list &lt;course-id&gt; &lt;course-work-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 course-work-student-submissions-modify-attachments &lt;course-id&gt; &lt;course-work-id&gt; &lt;id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
@@ -585,5 +601,5 @@ issue at hand.</p>
 
 <!--
 MkDocs version : 0.16.1
-Build Date UTC : 2017-02-05 04:46:06
+Build Date UTC : 2017-05-26 14:36:51
 -->

@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Get - partners v1.0.4+20151009</title>
+  <title>Get - Partners v1.0.5+20170503</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> partners v1.0.4+20151009</a>
+        <a href=".." class="icon icon-home"> Partners v1.0.5+20170503</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -51,6 +51,21 @@
         <a class="" href="..">Home</a>
         
     </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Analytics</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../analytics_list/">List</a>
+        
+    </li>
+
+        
+    </ul>
 <li>
           
             <li>
@@ -115,6 +130,87 @@
           
             <li>
     <ul class="subnav">
+    <li><span>Exams</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../exams_get-token/">Get Token</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Leads</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../leads_list/">List</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Methods</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../methods_get-partnersstatus/">Get Partnersstatus</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../methods_update-companies/">Update Companies</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../methods_update-leads/">Update Leads</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Offers</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../offers_history-list/">History List</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../offers_list/">List</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
     <li><span>User Events</span></li>
 
         
@@ -143,6 +239,42 @@
     </ul>
 <li>
           
+            <li>
+    <ul class="subnav">
+    <li><span>Users</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../users_create-company-relation/">Create Company Relation</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../users_delete-company-relation/">Delete Company Relation</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../users_get/">Get</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../users_update-profile/">Update Profile</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
         </ul>
       </div>
       &nbsp;
@@ -153,7 +285,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">partners v1.0.4+20151009</a>
+        <a href="..">Partners v1.0.5+20170503</a>
       </nav>
 
       
@@ -207,39 +339,12 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p view=string</strong></p>
+<p><strong>-p order-by=string</strong></p>
 <ul>
-<li>The view of <code>Company</code> resource to be returned. This must not be <code>COMPANY_VIEW_UNSPECIFIED</code>.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p address=string</strong></p>
-<ul>
-<li>The address to use for sorting the company&#39;s addresses by proximity. If not given, the geo-located address of the request is used. Used when order_by is set.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p request-metadata-locale=string</strong></p>
-<ul>
-<li>Locale to use for the current request.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p request-metadata-user-overrides-ip-address=string</strong></p>
-<ul>
-<li>IP address to use instead of the user&#39;s geo-located IP address.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p currency-code=string</strong></p>
-<ul>
-<li>If the company&#39;s budget is in a different currency code than this one, then the converted budget is converted to this currency code.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p request-metadata-traffic-source-traffic-sub-id=string</strong></p>
-<ul>
-<li>Second level identifier to indicate where the traffic comes from. An identifier has multiple letters created by a team which redirected the traffic to us.</li>
+<li>How to order addresses within the returned company. Currently, only
+    <code>address</code> and <code>address desc</code> is supported which will sorted by closest to
+    farthest in distance from given address and farthest to closest distance
+    from given address respectively.</li>
 </ul>
 </li>
 <li>
@@ -249,27 +354,65 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p request-metadata-experiment-ids=string</strong></p>
+<p><strong>-p request-metadata-user-overrides-ip-address=string</strong></p>
 <ul>
-<li>Experiment IDs the current request belongs to.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p request-metadata-traffic-source-traffic-source-id=string</strong></p>
-<ul>
-<li>Identifier to indicate where the traffic comes from. An identifier has multiple letters created by a team which redirected the traffic to us.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p order-by=string</strong></p>
-<ul>
-<li>How to order addresses within the returned company. Currently, only <code>address</code> and <code>address desc</code> is supported which will sorted by closest to farthest in distance from given address and farthest to closest distance from given address respectively.</li>
+<li>IP address to use instead of the user&#39;s geo-located IP address.</li>
 </ul>
 </li>
 <li>
 <p><strong>-p request-metadata-partners-session-id=string</strong></p>
 <ul>
 <li>Google Partners session ID.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p request-metadata-traffic-source-traffic-source-id=string</strong></p>
+<ul>
+<li>Identifier to indicate where the traffic comes from.
+    An identifier has multiple letters created by a team which redirected the
+    traffic to us.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p request-metadata-locale=string</strong></p>
+<ul>
+<li>Locale to use for the current request.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p address=string</strong></p>
+<ul>
+<li>The address to use for sorting the company&#39;s addresses by proximity.
+    If not given, the geo-located address of the request is used.
+    Used when order_by is set.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p currency-code=string</strong></p>
+<ul>
+<li>If the company&#39;s budget is in a different currency code than this one, then
+    the converted budget is converted to this currency code.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p request-metadata-experiment-ids=string</strong></p>
+<ul>
+<li>Experiment IDs the current request belongs to.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p request-metadata-traffic-source-traffic-sub-id=string</strong></p>
+<ul>
+<li>Second level identifier to indicate where the traffic comes from.
+    An identifier has multiple letters created by a team which redirected the
+    traffic to us.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p view=string</strong></p>
+<ul>
+<li>The view of <code>Company</code> resource to be returned. This must not be
+    <code>COMPANY_VIEW_UNSPECIFIED</code>.</li>
 </ul>
 </li>
 </ul>

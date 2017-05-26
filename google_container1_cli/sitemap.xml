@@ -4,7 +4,7 @@
     
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-container1-cli/</loc>
-     <lastmod>2017-02-05</lastmod>
+     <lastmod>2017-05-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -12,74 +12,122 @@
     
         
     <url>
+     <loc>http://byron.github.io/google-apis-rs/google-container1-cli/projects_zones-clusters-complete-ip-rotation/</loc>
+     <lastmod>2017-05-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
      <loc>http://byron.github.io/google-apis-rs/google-container1-cli/projects_zones-clusters-create/</loc>
-     <lastmod>2017-02-05</lastmod>
+     <lastmod>2017-05-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-container1-cli/projects_zones-clusters-delete/</loc>
-     <lastmod>2017-02-05</lastmod>
+     <lastmod>2017-05-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-container1-cli/projects_zones-clusters-get/</loc>
-     <lastmod>2017-02-05</lastmod>
+     <lastmod>2017-05-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-container1-cli/projects_zones-clusters-legacy-abac/</loc>
+     <lastmod>2017-05-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-container1-cli/projects_zones-clusters-list/</loc>
-     <lastmod>2017-02-05</lastmod>
+     <lastmod>2017-05-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-container1-cli/projects_zones-clusters-node-pools-create/</loc>
-     <lastmod>2017-02-05</lastmod>
+     <lastmod>2017-05-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-container1-cli/projects_zones-clusters-node-pools-delete/</loc>
-     <lastmod>2017-02-05</lastmod>
+     <lastmod>2017-05-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-container1-cli/projects_zones-clusters-node-pools-get/</loc>
-     <lastmod>2017-02-05</lastmod>
+     <lastmod>2017-05-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-container1-cli/projects_zones-clusters-node-pools-list/</loc>
-     <lastmod>2017-02-05</lastmod>
+     <lastmod>2017-05-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-container1-cli/projects_zones-clusters-node-pools-rollback/</loc>
+     <lastmod>2017-05-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-container1-cli/projects_zones-clusters-node-pools-set-management/</loc>
+     <lastmod>2017-05-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-container1-cli/projects_zones-clusters-resource-labels/</loc>
+     <lastmod>2017-05-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-container1-cli/projects_zones-clusters-set-master-auth/</loc>
+     <lastmod>2017-05-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-container1-cli/projects_zones-clusters-start-ip-rotation/</loc>
+     <lastmod>2017-05-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-container1-cli/projects_zones-clusters-update/</loc>
-     <lastmod>2017-02-05</lastmod>
+     <lastmod>2017-05-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-container1-cli/projects_zones-get-serverconfig/</loc>
-     <lastmod>2017-02-05</lastmod>
+     <lastmod>2017-05-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-container1-cli/projects_zones-operations-cancel/</loc>
+     <lastmod>2017-05-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-container1-cli/projects_zones-operations-get/</loc>
-     <lastmod>2017-02-05</lastmod>
+     <lastmod>2017-05-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-container1-cli/projects_zones-operations-list/</loc>
-     <lastmod>2017-02-05</lastmod>
+     <lastmod>2017-05-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
         

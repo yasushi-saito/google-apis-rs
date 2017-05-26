@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Collectd Time Series Create - Monitoring v1.0.4+20161212</title>
+  <title>Collectd Time Series Create - Monitoring v1.0.5+20170519</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Monitoring v1.0.4+20161212</a>
+        <a href=".." class="icon icon-home"> Monitoring v1.0.5+20170519</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -197,7 +197,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Monitoring v1.0.4+20161212</a>
+        <a href="..">Monitoring v1.0.5+20170519</a>
       </nav>
 
       
@@ -262,12 +262,12 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li><code>resource    labels=key=sit</code><ul>
-<li>Required. Values for all of the labels listed in the associated monitored resource descriptor. For example, Cloud SQL databases use the labels &#34;database_id&#34; and &#34;zone&#34;.</li>
+<li>Required. Values for all of the labels listed in the associated monitored resource descriptor. For example, Compute Engine VM instances use the labels &#34;project_id&#34;, &#34;instance_id&#34;, and &#34;zone&#34;.</li>
 <li>the value will be associated with the given <code>key</code></li>
 </ul>
 </li>
 <li><code>type=stet</code><ul>
-<li>Required. The monitored resource type. This field must match the type field of a MonitoredResourceDescriptor object. For example, the type of a Cloud SQL database is &#34;cloudsql_database&#34;.</li>
+<li>Required. The monitored resource type. This field must match the type field of a MonitoredResourceDescriptor object. For example, the type of a Compute Engine VM instance is gce_instance.</li>
 </ul>
 </li>
 </ul>

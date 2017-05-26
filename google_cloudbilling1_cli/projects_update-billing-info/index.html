@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Update Billing Info - cloudbilling v1.0.4+20151222</title>
+  <title>Update Billing Info - cloudbilling v1.0.5+20170504</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> cloudbilling v1.0.4+20151222</a>
+        <a href=".." class="icon icon-home"> cloudbilling v1.0.5+20170504</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -135,7 +135,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">cloudbilling v1.0.4+20151222</a>
+        <a href="..">cloudbilling v1.0.5+20170504</a>
       </nav>
 
       
@@ -164,7 +164,32 @@
           <div role="main">
             <div class="section">
               
-                <p>Sets or updates the billing account associated with a project. You specify the new billing account by setting the <code>billing_account_name</code> in the <code>ProjectBillingInfo</code> resource to the resource name of a billing account. Associating a project with an open billing account enables billing on the project and allows charges for resource usage. If the project already had a billing account, this method changes the billing account used for resource usage charges. <em>Note:</em> Incurred charges that have not yet been reported in the transaction history of the Google Developers Console may be billed to the new billing account, even if the charge occurred before the new billing account was assigned to the project. The current authenticated user must have ownership privileges for both the <a href="https://cloud.google.com/docs/permissions-overview#h.bgs0oxofvnoo">project</a> and the <a href="https://support.google.com/cloud/answer/4430947">billing account</a>. You can disable billing on the project by setting the <code>billing_account_name</code> field to empty. This action disassociates the current billing account from the project. Any billable activity of your in-use services will stop, and your application could stop functioning as expected. Any unbilled charges to date will be billed to the previously associated account. The current authenticated user must be either an owner of the project or an owner of the billing account for the project. Note that associating a project with a <em>closed</em> billing account will have much the same effect as disabling billing on the project: any paid resources used by the project will be shut down. Thus, unless you wish to disable billing, you should always call this method with the name of an <em>open</em> billing account.</p>
+                <p>Sets or updates the billing account associated with a project. You specify
+the new billing account by setting the <code>billing_account_name</code> in the
+<code>ProjectBillingInfo</code> resource to the resource name of a billing account.
+Associating a project with an open billing account enables billing on the
+project and allows charges for resource usage. If the project already had a
+billing account, this method changes the billing account used for resource
+usage charges.</p>
+<p><em>Note:</em> Incurred charges that have not yet been reported in the transaction
+history of the Google Cloud Console may be billed to the new billing
+account, even if the charge occurred before the new billing account was
+assigned to the project.</p>
+<p>The current authenticated user must have ownership privileges for both the
+<a href="https://cloud.google.com/docs/permissions-overview#h.bgs0oxofvnoo">project</a> and the <a href="https://support.google.com/cloud/answer/4430947">billing
+account</a>.</p>
+<p>You can disable billing on the project by setting the
+<code>billing_account_name</code> field to empty. This action disassociates the
+current billing account from the project. Any billable activity of your
+in-use services will stop, and your application could stop functioning as
+expected. Any unbilled charges to date will be billed to the previously
+associated account. The current authenticated user must be either an owner
+of the project or an owner of the billing account for the project.</p>
+<p>Note that associating a project with a <em>closed</em> billing account will have
+much the same effect as disabling billing on the project: any paid
+resources used by the project will be shut down. Thus, unless you wish to
+disable billing, you should always call this method with the name of an
+<em>open</em> billing account.</p>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for the <em>https://www.googleapis.com/auth/cloud-platform</em> scope to make a valid call.</p>
 <p>If unset, the scope for this method defaults to <em>https://www.googleapis.com/auth/cloud-platform</em>.
@@ -172,7 +197,8 @@ You can set the scope for this method like this: <code>cloudbilling1 --scope &lt
 <h1 id="required-scalar-argument">Required Scalar Argument</h1>
 <ul>
 <li><strong>&lt;name&gt;</strong> <em>(string)</em><ul>
-<li>The resource name of the project associated with the billing information that you want to update. For example, <code>projects/tokyo-rain-123</code>.</li>
+<li>The resource name of the project associated with the billing information
+    that you want to update. For example, <code>projects/tokyo-rain-123</code>.</li>
 </ul>
 </li>
 </ul>
@@ -191,19 +217,28 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
 <li><code>-r .    billing-account-name=eirmod</code><ul>
-<li>The resource name of the billing account associated with the project, if any. For example, <code>billingAccounts/012345-567890-ABCDEF</code>.</li>
+<li>The resource name of the billing account associated with the project, if
+    any. For example, <code>billingAccounts/012345-567890-ABCDEF</code>.</li>
 </ul>
 </li>
 <li><code>billing-enabled=true</code><ul>
-<li>True if the project is associated with an open billing account, to which usage on the project is charged. False if the project is associated with a closed billing account, or no billing account at all, and therefore cannot use paid services. This field is read-only.</li>
+<li>True if the project is associated with an open billing account, to which
+    usage on the project is charged. False if the project is associated with a
+    closed billing account, or no billing account at all, and therefore cannot
+    use paid services. This field is read-only.</li>
 </ul>
 </li>
 <li><code>name=stet</code><ul>
-<li>The resource name for the <code>ProjectBillingInfo</code>; has the form <code>projects/{project_id}/billingInfo</code>. For example, the resource name for the billing information for project <code>tokyo-rain-123</code> would be <code>projects/tokyo-rain-123/billingInfo</code>. This field is read-only.</li>
+<li>The resource name for the <code>ProjectBillingInfo</code>; has the form
+    <code>projects/{project_id}/billingInfo</code>. For example, the resource name for the
+    billing information for project <code>tokyo-rain-123</code> would be
+    <code>projects/tokyo-rain-123/billingInfo</code>. This field is read-only.</li>
 </ul>
 </li>
 <li><code>project-id=sed</code><ul>
-<li>The ID of the project that this <code>ProjectBillingInfo</code> represents, such as <code>tokyo-rain-123</code>. This is a convenience field so that you don&#39;t need to parse the <code>name</code> field to obtain a project ID. This field is read-only.</li>
+<li>The ID of the project that this <code>ProjectBillingInfo</code> represents, such as
+    <code>tokyo-rain-123</code>. This is a convenience field so that you don&#39;t need to
+    parse the <code>name</code> field to obtain a project ID. This field is read-only.</li>
 </ul>
 </li>
 </ul>

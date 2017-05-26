@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Patch - appengine v1.0.4+20161208</title>
+  <title>Patch - appengine v1.0.5+20170522</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> appengine v1.0.4+20161208</a>
+        <a href=".." class="icon icon-home"> appengine v1.0.5+20170522</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -235,7 +235,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">appengine v1.0.4+20161208</a>
+        <a href="..">appengine v1.0.5+20170522</a>
       </nav>
 
       
@@ -264,7 +264,9 @@
           <div role="main">
             <div class="section">
               
-                <p>Updates the specified Application resource. You can update the following fields: auth_domain (https://cloud.google.com/appengine/docs/admin-api/reference/rest/v1beta5/apps#Application.FIELDS.auth_domain) default_cookie_expiration (https://cloud.google.com/appengine/docs/admin-api/reference/rest/v1beta5/apps#Application.FIELDS.default_cookie_expiration)</p>
+                <p>Updates the specified Application resource. You can update the following fields:
+auth_domain (https://cloud.google.com/appengine/docs/admin-api/reference/rest/v1beta5/apps#Application.FIELDS.auth_domain)
+default_cookie_expiration (https://cloud.google.com/appengine/docs/admin-api/reference/rest/v1beta5/apps#Application.FIELDS.default_cookie_expiration)</p>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for the <em>https://www.googleapis.com/auth/cloud-platform</em> scope to make a valid call.</p>
 <p>If unset, the scope for this method defaults to <em>https://www.googleapis.com/auth/cloud-platform</em>.
@@ -286,6 +288,11 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   default-bucket: string
   default-cookie-expiration: string
   default-hostname: string
+  iap:
+    enabled: boolean
+    oauth2-client-id: string
+    oauth2-client-secret: string
+    oauth2-client-secret-sha256: string
   id: string
   location: string
   name: string
@@ -294,35 +301,55 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    auth-domain=takimata</code><ul>
+<li><code>-r .    auth-domain=labore</code><ul>
 <li>Google Apps authentication domain that controls which users can access this application.Defaults to open access for any Google Account.</li>
 </ul>
 </li>
-<li><code>code-bucket=justo</code><ul>
+<li><code>code-bucket=sea</code><ul>
 <li>A Google Cloud Storage bucket that can be used for storing files associated with this application. This bucket is associated with the application and can be used by the gcloud deployment commands.@OutputOnly</li>
 </ul>
 </li>
-<li><code>default-bucket=amet.</code><ul>
+<li><code>default-bucket=nonumy</code><ul>
 <li>A Google Cloud Storage bucket that can be used by the application to store content.@OutputOnly</li>
 </ul>
 </li>
-<li><code>default-cookie-expiration=erat</code><ul>
+<li><code>default-cookie-expiration=dolores</code><ul>
 <li>Cookie expiration policy for this application.</li>
 </ul>
 </li>
-<li><code>default-hostname=labore</code><ul>
+<li><code>default-hostname=gubergren</code><ul>
 <li>Hostname used to reach the application, as resolved by App Engine.@OutputOnly</li>
 </ul>
 </li>
-<li><code>id=sea</code><ul>
+<li><code>iap    enabled=false</code><ul>
+<li>Whether the serving infrastructure will authenticate and authorize all incoming requests.If true, the oauth2_client_id and oauth2_client_secret fields must be non-empty.</li>
+</ul>
+</li>
+<li><code>oauth2-client-id=aliquyam</code><ul>
+<li>OAuth2 client ID to use for the authentication flow.</li>
+</ul>
+</li>
+<li><code>oauth2-client-secret=ea</code><ul>
+<li>For security reasons, this value cannot be retrieved via the API. Instead, the SHA-256 hash of the value is returned in the oauth2_client_secret_sha256 field.@InputOnly</li>
+</ul>
+</li>
+<li>
+<p><code>oauth2-client-secret-sha256=no</code></p>
+<ul>
+<li>Hex-encoded SHA-256 hash of the client secret.@OutputOnly</li>
+</ul>
+</li>
+<li>
+<p><code>..    id=justo</code></p>
+<ul>
 <li>Identifier of the Application resource. This identifier is equivalent to the project ID of the Google Cloud Platform project where you want to deploy your application. Example: myapp.</li>
 </ul>
 </li>
-<li><code>location=nonumy</code><ul>
+<li><code>location=justo</code><ul>
 <li>Location from which this application will be run. Application instances will run out of data centers in the chosen location, which is also where all of the application&#39;s end user content is stored.Defaults to us-central.Options are:us-central - Central USeurope-west - Western Europeus-east1 - Eastern US</li>
 </ul>
 </li>
-<li><code>name=dolores</code><ul>
+<li><code>name=et</code><ul>
 <li>Full path to the Application resource in the API. Example: apps/myapp.@OutputOnly</li>
 </ul>
 </li>

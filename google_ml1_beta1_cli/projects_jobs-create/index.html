@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Jobs Create - Cloud Machine Learning v1.0.4+20161212</title>
+  <title>Jobs Create - Cloud Machine Learning Engine v1.0.5+20170515</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Cloud Machine Learning v1.0.4+20161212</a>
+        <a href=".." class="icon icon-home"> Cloud Machine Learning Engine v1.0.5+20170515</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -225,7 +225,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Cloud Machine Learning v1.0.4+20161212</a>
+        <a href="..">Cloud Machine Learning Engine v1.0.5+20170515</a>
       </nav>
 
       
@@ -285,9 +285,12 @@ In the latter case it is advised to set the field-cursor to the data-structure's
     model-name: string
     output-path: string
     region: string
+    runtime-version: string
+    uri: string
     version-name: string
   prediction-output:
     error-count: int64
+    node-hours: number
     output-path: string
     prediction-count: int64
   start-time: string
@@ -296,20 +299,24 @@ In the latter case it is advised to set the field-cursor to the data-structure's
     args: [string]
     hyperparameters:
       goal: string
+      hyperparameter-metric-tag: string
       max-parallel-trials: integer
       max-trials: integer
+    job-dir: string
     master-type: string
     package-uris: [string]
     parameter-server-count: int64
     parameter-server-type: string
     python-module: string
     region: string
+    runtime-version: string
     scale-tier: string
     worker-count: int64
     worker-type: string
   training-output:
     completed-trial-count: int64
     consumed-ml-units: number
+    is-hyperparameter-tuning-job: boolean
 
 </code></pre>
 
@@ -357,7 +364,16 @@ In the latter case it is advised to set the field-cursor to the data-structure's
     - Required. The output Google Cloud Storage location.
 </em> <code>region=justo</code>
     - Required. The Google Compute Engine region to run the prediction job in.
-* <code>version-name=amet.</code>
+<em> <code>runtime-version=amet.</code>
+    - Optional. The Google Cloud ML runtime version to use for this batch
+prediction. If not set, Google Cloud ML will pick the runtime version used
+during the CreateVersion request for this model version, or choose the
+latest stable version when model version information is not available
+such as when the model is specified by uri.
+</em> <code>uri=erat</code>
+    - Use this field if you want to specify a Google Cloud Storage path for
+the model to use.
+* <code>version-name=labore</code>
     - Use this field if you want to specify a version of the model to use. The
 string is formatted the same way as <code>model_version</code>, with the addition
 of the version information:</p>
@@ -366,44 +382,54 @@ of the version information:</p>
 </ul>
 </li>
 <li>
-<p><code>..prediction-output    error-count=-81</code></p>
+<p><code>..prediction-output    error-count=-9</code></p>
 <ul>
 <li>The number of data instances which resulted in errors.</li>
 </ul>
 </li>
-<li><code>output-path=labore</code><ul>
+<li><code>node-hours=0.109288397621</code><ul>
+<li>Node hours used by the batch prediction job.</li>
+</ul>
+</li>
+<li><code>output-path=dolores</code><ul>
 <li>The output Google Cloud Storage location provided at the job creation time.</li>
 </ul>
 </li>
 <li>
-<p><code>prediction-count=-9</code></p>
+<p><code>prediction-count=-61</code></p>
 <ul>
 <li>The number of generated predictions.</li>
 </ul>
 </li>
 <li>
-<p><code>..    start-time=nonumy</code></p>
+<p><code>..    start-time=sadipscing</code></p>
 <ul>
 <li>Output only. When the job processing was started.</li>
 </ul>
 </li>
-<li><code>state=dolores</code><ul>
+<li><code>state=aliquyam</code><ul>
 <li>Output only. The detailed state of a job.</li>
 </ul>
 </li>
-<li><code>training-input    args=gubergren</code><ul>
+<li><code>training-input    args=ea</code><ul>
 <li>Optional. Command line arguments to pass to the program.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
 <li>
-<p><code>hyperparameters    goal=sadipscing</code></p>
+<p><code>hyperparameters    goal=no</code></p>
 <ul>
 <li>
 <p>Required. The type of goal to use for tuning. Available types are
     <code>MAXIMIZE</code> and <code>MINIMIZE</code>.</p>
 <p>Defaults to <code>MAXIMIZE</code>.
-* <code>max-parallel-trials=70</code>
+<em> <code>hyperparameter-metric-tag=justo</code>
+    - Optional. The Tensorflow summary tag name to use for optimizing trials. For
+current versions of Tensorflow, this tag name should exactly match what is
+shown in Tensorboard, including all scopes.  For versions of Tensorflow
+prior to 0.12, this should be only the tag passed to tf.Summary.
+By default, &#34;training/hptuning/metric&#34; will be used.
+</em> <code>max-parallel-trials=80</code>
     - Optional. The number of training trials to run concurrently.
 You can reduce the time it takes to perform hyperparameter tuning by adding
 trials in parallel. However, each trail only benefits from the information
@@ -412,7 +438,7 @@ the results of trials running at the same time, which could reduce the
 quality of the overall optimization.</p>
 <p>Each trial will use the same scale tier and machine types.</p>
 <p>Defaults to one.
-* <code>max-trials=35</code>
+* <code>max-trials=67</code>
     - Optional. How many training trials should be attempted to optimize
 the specified hyperparameters.</p>
 <p>Defaults to one.</p>
@@ -420,7 +446,16 @@ the specified hyperparameters.</p>
 </ul>
 </li>
 <li>
-<p><code>..    master-type=no</code></p>
+<p><code>..    job-dir=et</code></p>
+<ul>
+<li>Optional. A Google Cloud Storage path in which to store training outputs
+    and other data needed for training. This path is passed to your TensorFlow
+    program as the &#39;job_dir&#39; command-line argument. The benefit of specifying
+    this field is that Cloud ML validates the path for use in training.</li>
+</ul>
+</li>
+<li>
+<p><code>master-type=diam</code></p>
 <ul>
 <li>
 <p>Optional. Specifies the type of virtual machine to use for your training
@@ -454,13 +489,27 @@ the specified hyperparameters.</p>
   A machine with roughly twice the number of cores and roughly double the
   memory of &lt;code suppresswarning=&#34;true&#34;&gt;complex_model_m&lt;/code&gt;.
   &lt;/dd&gt;
+  &lt;dt&gt;standard_gpu&lt;/dt&gt;
+  &lt;dd&gt;
+  A machine equivalent to &lt;code suppresswarning=&#34;true&#34;&gt;standard&lt;/code&gt; that
+  also includes a
+  &lt;a href=&#34;/ml-engine/docs/how-tos/using-gpus&#34;&gt;
+  GPU that you can use in your trainer&lt;/a&gt;.
+  &lt;/dd&gt;
+  &lt;dt&gt;complex_model_m_gpu&lt;/dt&gt;
+  &lt;dd&gt;
+  A machine equivalent to
+  &lt;code suppresswarning=&#34;true&#34;&gt;complex_model_m&lt;/code&gt; that also includes
+  four GPUs.
+  &lt;/dd&gt;
 &lt;/dl&gt;</p>
 <p>You must set this value when <code>scaleTier</code> is set to <code>CUSTOM</code>.
-<em> <code>package-uris=justo</code>
+<em> <code>package-uris=ipsum</code>
     - Required. The Google Cloud Storage location of the packages with
 the training program and any additional dependencies.
+The maximum number of package URIs is 100.
     - Each invocation of this argument appends the given value to the array.
-</em> <code>parameter-server-count=-21</code>
+</em> <code>parameter-server-count=-5</code>
     - Optional. The number of parameter server replicas to use for the training
 job. Each replica in the cluster will be of the type specified in
 <code>parameter_server_type</code>.</p>
@@ -473,19 +522,22 @@ job&#39;s parameter server.</p>
 <code>master_type</code>.</p>
 <p>This value must be present when <code>scaleTier</code> is set to <code>CUSTOM</code> and
 <code>parameter_server_count</code> is greater than zero.
-<em> <code>python-module=et</code>
+<em> <code>python-module=duo</code>
     - Required. The Python module name to run after installing the packages.
-</em> <code>region=diam</code>
+</em> <code>region=aliquyam</code>
     - Required. The Google Compute Engine region to run the training job in.
-<em> <code>scale-tier=ipsum</code>
+<em> <code>runtime-version=sea</code>
+    - Optional. The Google Cloud ML runtime version to use for training.  If not
+set, Google Cloud ML will choose the latest stable version.
+</em> <code>scale-tier=lorem</code>
     - Required. Specifies the machine types, the number of replicas for workers
 and parameter servers.
-</em> <code>worker-count=-5</code>
+* <code>worker-count=-75</code>
     - Optional. The number of worker replicas to use for the training job. Each
 replica in the cluster will be of the type specified in <code>worker_type</code>.</p>
 <p>This value can only be used when <code>scale_tier</code> is set to <code>CUSTOM</code>. If you
 set this value, you must also set <code>worker_type</code>.
-* <code>worker-type=et</code>
+* <code>worker-type=erat</code>
     - Optional. Specifies the type of virtual machine to use for your training
 job&#39;s worker nodes.</p>
 <p>The supported values are the same as those described in the entry for
@@ -496,13 +548,18 @@ job&#39;s worker nodes.</p>
 </ul>
 </li>
 <li>
-<p><code>..training-output    completed-trial-count=-70</code></p>
+<p><code>..training-output    completed-trial-count=-95</code></p>
 <ul>
-<li>The number of hyperparameter tuning trials that completed successfully.</li>
+<li>The number of hyperparameter tuning trials that completed successfully.
+    Only set for hyperparameter tuning jobs.</li>
 </ul>
 </li>
-<li><code>consumed-ml-units=0.69054137112</code><ul>
+<li><code>consumed-ml-units=0.525443427037</code><ul>
 <li>The amount of ML units consumed by the job.</li>
+</ul>
+</li>
+<li><code>is-hyperparameter-tuning-job=true</code><ul>
+<li>Whether this job is a hyperparameter tuning job.</li>
 </ul>
 </li>
 </ul>

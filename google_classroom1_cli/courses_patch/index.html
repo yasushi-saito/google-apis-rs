@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Patch - classroom v1.0.4+20161006</title>
+  <title>Patch - classroom v1.0.5+20170510</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> classroom v1.0.4+20161006</a>
+        <a href=".." class="icon icon-home"> classroom v1.0.5+20170510</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -88,6 +88,13 @@
         
             
     <li class="toctree-l1 ">
+        <a class="" href="../courses_course-work-delete/">Course Work Delete</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
         <a class="" href="../courses_course-work-get/">Course Work Get</a>
         
     </li>
@@ -96,6 +103,13 @@
             
     <li class="toctree-l1 ">
         <a class="" href="../courses_course-work-list/">Course Work List</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../courses_course-work-patch/">Course Work Patch</a>
         
     </li>
 
@@ -391,7 +405,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">classroom v1.0.4+20161006</a>
+        <a href="..">classroom v1.0.5+20170510</a>
       </nav>
 
       
@@ -420,7 +434,19 @@
           <div role="main">
             <div class="section">
               
-                <p>Updates one or more fields in a course. This method returns the following error codes: * <code>PERMISSION_DENIED</code> if the requesting user is not permitted to modify the requested course or for access errors. * <code>NOT_FOUND</code> if no course exists with the requested ID. * <code>INVALID_ARGUMENT</code> if invalid fields are specified in the update mask or if no update mask is supplied. * <code>FAILED_PRECONDITION</code> for the following request errors: * CourseNotModifiable</p>
+                <p>Updates one or more fields in a course.</p>
+<p>This method returns the following error codes:</p>
+<ul>
+<li><code>PERMISSION_DENIED</code> if the requesting user is not permitted to modify the
+requested course or for access errors.</li>
+<li><code>NOT_FOUND</code> if no course exists with the requested ID.</li>
+<li><code>INVALID_ARGUMENT</code> if invalid fields are specified in the update mask or
+if no update mask is supplied.</li>
+<li><code>FAILED_PRECONDITION</code> for the following request errors:<ul>
+<li>CourseNotModifiable</li>
+</ul>
+</li>
+</ul>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for the <em>https://www.googleapis.com/auth/classroom.courses</em> scope to make a valid call.</p>
 <p>If unset, the scope for this method defaults to <em>https://www.googleapis.com/auth/classroom.courses</em>.
@@ -428,7 +454,9 @@ You can set the scope for this method like this: <code>classroom1 --scope &lt;sc
 <h1 id="required-scalar-argument">Required Scalar Argument</h1>
 <ul>
 <li><strong>&lt;id&gt;</strong> <em>(string)</em><ul>
-<li>Identifier of the course to update. This identifier can be either the Classroom-assigned identifier or an alias.</li>
+<li>Identifier of the course to update.
+    This identifier can be either the Classroom-assigned identifier or an
+    alias.</li>
 </ul>
 </li>
 </ul>
@@ -461,80 +489,102 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    alternate-link=consetetur</code><ul>
-<li>Absolute link to this course in the Classroom web UI. Read-only.</li>
+<li>
+<p><code>-r .    alternate-link=consetetur</code></p>
+<ul>
+<li>
+<p>Absolute link to this course in the Classroom web UI.</p>
+<p>Read-only.
+* <code>course-group-email=dolore</code>
+    - The email address of a Google group containing all members of the course.
+This group does not accept email and can only be used for permissions.</p>
+<p>Read-only.
+<em> <code>course-state=duo</code>
+    - State of the course.
+If unspecified, the default state is <code>PROVISIONED</code>.
+</em> <code>creation-time=aliquyam</code>
+    - Creation time of the course.
+Specifying this field in a course update mask results in an error.</p>
+<p>Read-only.
+<em> <code>description=lorem</code>
+    - Optional description.
+For example, &#34;We&#39;ll be learning about the structure of living
+creatures from a combination of textbooks, guest lectures, and lab work.
+Expect to be excited!&#34;
+If set, this field must be a valid UTF-8 string and no longer than 30,000
+characters.
+</em> <code>description-heading=et</code>
+    - Optional heading for the description.
+For example, &#34;Welcome to 10th Grade Biology.&#34;
+If set, this field must be a valid UTF-8 string and no longer than 3600
+characters.
+* <code>enrollment-code=clita</code>
+    - Enrollment code to use when joining this course.
+Specifying this field in a course update mask results in an error.</p>
+<p>Read-only.
+* <code>guardians-enabled=true</code>
+    - Whether or not guardian notifications are enabled for this course.</p>
+<p>Read-only.
+* <code>id=takimata</code>
+    - Identifier for this course assigned by Classroom.</p>
+<p>When
+creating a course,
+you may optionally set this identifier to an
+alias string in the
+request to create a corresponding alias. The <code>id</code> is still assigned by
+Classroom and cannot be updated after the course is created.</p>
+<p>Specifying this field in a course update mask results in an error.
+<em> <code>name=nonumy</code>
+    - Name of the course.
+For example, &#34;10th Grade Biology&#34;.
+The name is required. It must be between 1 and 750 characters and a valid
+UTF-8 string.
+</em> <code>owner-id=kasd</code>
+    - The identifier of the owner of a course.</p>
+<p>When specified as a parameter of a
+create course request, this
+field is required.
+The identifier can be one of the following:</p>
+<ul>
+<li>the numeric identifier for the user</li>
+<li>the email address of the user</li>
+<li>the string literal <code>&amp;#34;me&amp;#34;</code>, indicating the requesting user</li>
 </ul>
+<p>This must be set in a create request. Specifying this field in a course
+update mask results in an <code>INVALID_ARGUMENT</code> error.
+<em> <code>room=sanctus</code>
+    - Optional room location.
+For example, &#34;301&#34;.
+If set, this field must be a valid UTF-8 string and no longer than 650
+characters.
+</em> <code>section=takimata</code>
+    - Section of the course.
+For example, &#34;Period 2&#34;.
+If set, this field must be a valid UTF-8 string and no longer than 2800
+characters.
+* <code>teacher-folder    alternate-link=at</code>
+    - URL that can be used to access the Drive folder.</p>
+<p>Read-only.
+<em> <code>id=labore</code>
+    - Drive API resource ID.
+</em> <code>title=invidunt</code>
+    - Title of the Drive folder.</p>
+<p>Read-only.</p>
 </li>
-<li><code>course-group-email=ut</code><ul>
-<li>The email address of a Google group containing all members of the course. This group does not accept email and can only be used for permissions. Read-only.</li>
-</ul>
-</li>
-<li><code>course-state=ea</code><ul>
-<li>State of the course. If unspecified, the default state is <code>PROVISIONED</code>.</li>
-</ul>
-</li>
-<li><code>creation-time=sed</code><ul>
-<li>Creation time of the course. Specifying this field in a course update mask results in an error. Read-only.</li>
-</ul>
-</li>
-<li><code>description=dolor</code><ul>
-<li>Optional description. For example, &#34;We&#39;ll be learning about the structure of living creatures from a combination of textbooks, guest lectures, and lab work. Expect to be excited!&#34; If set, this field must be a valid UTF-8 string and no longer than 30,000 characters.</li>
-</ul>
-</li>
-<li><code>description-heading=dolor</code><ul>
-<li>Optional heading for the description. For example, &#34;Welcome to 10th Grade Biology.&#34; If set, this field must be a valid UTF-8 string and no longer than 3600 characters.</li>
-</ul>
-</li>
-<li><code>enrollment-code=dolor</code><ul>
-<li>Enrollment code to use when joining this course. Specifying this field in a course update mask results in an error. Read-only.</li>
-</ul>
-</li>
-<li><code>guardians-enabled=true</code><ul>
-<li>Whether or not guardian notifications are enabled for this course. Read-only.</li>
-</ul>
-</li>
-<li><code>id=consetetur</code><ul>
-<li>Identifier for this course assigned by Classroom. When creating a course, you may optionally set this identifier to an alias string in the request to create a corresponding alias. The <code>id</code> is still assigned by Classroom and cannot be updated after the course is created. Specifying this field in a course update mask results in an error.</li>
-</ul>
-</li>
-<li><code>name=amet.</code><ul>
-<li>Name of the course. For example, &#34;10th Grade Biology&#34;. The name is required. It must be between 1 and 750 characters and a valid UTF-8 string.</li>
-</ul>
-</li>
-<li><code>owner-id=voluptua.</code><ul>
-<li>The identifier of the owner of a course. When specified as a parameter of a create course request, this field is required. The identifier can be one of the following: * the numeric identifier for the user * the email address of the user * the string literal <code>&amp;#34;me&amp;#34;</code>, indicating the requesting user This must be set in a create request. Specifying this field in a course update mask results in an <code>INVALID_ARGUMENT</code> error.</li>
-</ul>
-</li>
-<li><code>room=lorem</code><ul>
-<li>Optional room location. For example, &#34;301&#34;. If set, this field must be a valid UTF-8 string and no longer than 650 characters.</li>
-</ul>
-</li>
-<li><code>section=gubergren</code><ul>
-<li>Section of the course. For example, &#34;Period 2&#34;. If set, this field must be a valid UTF-8 string and no longer than 2800 characters.</li>
-</ul>
-</li>
-<li><code>teacher-folder    alternate-link=justo</code><ul>
-<li>URL that can be used to access the Drive folder. Read-only.</li>
-</ul>
-</li>
-<li><code>id=sit</code><ul>
-<li>Drive API resource ID.</li>
 </ul>
 </li>
 <li>
-<p><code>title=vero</code></p>
+<p><code>..    teacher-group-email=ea</code></p>
 <ul>
-<li>Title of the Drive folder. Read-only.</li>
-</ul>
-</li>
 <li>
-<p><code>..    teacher-group-email=diam</code></p>
-<ul>
-<li>The email address of a Google group containing all teachers of the course. This group does not accept email and can only be used for permissions. Read-only.</li>
-</ul>
+<p>The email address of a Google group containing all teachers of the course.
+    This group does not accept email and can only be used for permissions.</p>
+<p>Read-only.
+* <code>update-time=sadipscing</code>
+    - Time of the most recent update to this course.
+Specifying this field in a course update mask results in an error.</p>
+<p>Read-only.</p>
 </li>
-<li><code>update-time=rebum.</code><ul>
-<li>Time of the most recent update to this course. Specifying this field in a course update mask results in an error. Read-only.</li>
 </ul>
 </li>
 </ul>
@@ -563,7 +613,21 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li><strong>-p update-mask=string</strong><ul>
-<li>Mask that identifies which fields on the course to update. This field is required to do an update. The update will fail if invalid fields are specified. The following fields are valid: * <code>name</code> * <code>section</code> * <code>descriptionHeading</code> * <code>description</code> * <code>room</code> * <code>courseState</code> When set in a query parameter, this field should be specified as <code>updateMask=,,...</code></li>
+<li>
+<p>Mask that identifies which fields on the course to update.
+    This field is required to do an update. The update will fail if invalid
+    fields are specified. The following fields are valid:</p>
+<ul>
+<li><code>name</code></li>
+<li><code>section</code></li>
+<li><code>descriptionHeading</code></li>
+<li><code>description</code></li>
+<li><code>room</code></li>
+<li><code>courseState</code></li>
+</ul>
+<p>When set in a query parameter, this field should be specified as</p>
+<p><code>updateMask=&amp;lt;field1&amp;gt;,&amp;lt;field2&amp;gt;,...</code></p>
+</li>
 </ul>
 </li>
 </ul>

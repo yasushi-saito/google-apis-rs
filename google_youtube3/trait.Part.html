@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `Part` trait in crate `google_youtube3`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, Part">
+
+    <title>google_youtube3::Part - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../normalize.css">
+    <link rel="stylesheet" type="text/css" href="../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc trait">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='index.html'>google_youtube3</a></p><script>window.sidebarCurrent = {name: 'Part', ty: 'trait', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Trait <a href='index.html'>google_youtube3</a>::<wbr><a class="trait" href=''>Part</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a class='srclink' href='../src/google_youtube3/cmn.rs.html#49' title='goto source code'>[src]</a></span></h1>
+<pre class='rust trait'>pub trait Part { }</pre><div class='docblock'><p>Identifies types which are only used as part of other types, which
+usually are carrying the <code>Resource</code> trait.</p>
+</div>
+        <h2 id='implementors'>Implementors</h2>
+        <ul class='item-list' id='implementors-list'>
+    <li><code>impl Part for <a class="struct" href="../google_youtube3/struct.VideoFileDetails.html" title="struct google_youtube3::VideoFileDetails">VideoFileDetails</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.PlaylistSnippet.html" title="struct google_youtube3::PlaylistSnippet">PlaylistSnippet</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.ChannelAuditDetails.html" title="struct google_youtube3::ChannelAuditDetails">ChannelAuditDetails</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.SponsorSnippet.html" title="struct google_youtube3::SponsorSnippet">SponsorSnippet</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.ChannelSettings.html" title="struct google_youtube3::ChannelSettings">ChannelSettings</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.LiveChatPollEditedDetails.html" title="struct google_youtube3::LiveChatPollEditedDetails">LiveChatPollEditedDetails</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.CdnSettings.html" title="struct google_youtube3::CdnSettings">CdnSettings</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.LiveChatMessageDeletedDetails.html" title="struct google_youtube3::LiveChatMessageDeletedDetails">LiveChatMessageDeletedDetails</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.ActivityContentDetailsChannelItem.html" title="struct google_youtube3::ActivityContentDetailsChannelItem">ActivityContentDetailsChannelItem</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.I18nLanguageSnippet.html" title="struct google_youtube3::I18nLanguageSnippet">I18nLanguageSnippet</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.VideoRating.html" title="struct google_youtube3::VideoRating">VideoRating</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.LiveChatTextMessageDetails.html" title="struct google_youtube3::LiveChatTextMessageDetails">LiveChatTextMessageDetails</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.LiveChatSuperChatDetails.html" title="struct google_youtube3::LiveChatSuperChatDetails">LiveChatSuperChatDetails</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.ChannelConversionPing.html" title="struct google_youtube3::ChannelConversionPing">ChannelConversionPing</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.InvideoPromotion.html" title="struct google_youtube3::InvideoPromotion">InvideoPromotion</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.ChannelTopicDetails.html" title="struct google_youtube3::ChannelTopicDetails">ChannelTopicDetails</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.ThumbnailDetails.html" title="struct google_youtube3::ThumbnailDetails">ThumbnailDetails</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.VideoMonetizationDetails.html" title="struct google_youtube3::VideoMonetizationDetails">VideoMonetizationDetails</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.ChannelContentOwnerDetails.html" title="struct google_youtube3::ChannelContentOwnerDetails">ChannelContentOwnerDetails</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.ChannelContentDetailsRelatedPlaylists.html" title="struct google_youtube3::ChannelContentDetailsRelatedPlaylists">ChannelContentDetailsRelatedPlaylists</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.VideoAbuseReportReasonSnippet.html" title="struct google_youtube3::VideoAbuseReportReasonSnippet">VideoAbuseReportReasonSnippet</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.SuperChatEventSnippet.html" title="struct google_youtube3::SuperChatEventSnippet">SuperChatEventSnippet</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.ChannelConversionPings.html" title="struct google_youtube3::ChannelConversionPings">ChannelConversionPings</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.VideoAbuseReportSecondaryReason.html" title="struct google_youtube3::VideoAbuseReportSecondaryReason">VideoAbuseReportSecondaryReason</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.SubscriptionContentDetails.html" title="struct google_youtube3::SubscriptionContentDetails">SubscriptionContentDetails</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.CommentThreadReplies.html" title="struct google_youtube3::CommentThreadReplies">CommentThreadReplies</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.VideoContentDetailsRegionRestriction.html" title="struct google_youtube3::VideoContentDetailsRegionRestriction">VideoContentDetailsRegionRestriction</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.SubscriptionSnippet.html" title="struct google_youtube3::SubscriptionSnippet">SubscriptionSnippet</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.CaptionSnippet.html" title="struct google_youtube3::CaptionSnippet">CaptionSnippet</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.LiveChatMessageRetractedDetails.html" title="struct google_youtube3::LiveChatMessageRetractedDetails">LiveChatMessageRetractedDetails</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.I18nRegionSnippet.html" title="struct google_youtube3::I18nRegionSnippet">I18nRegionSnippet</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.ActivityContentDetailsSocial.html" title="struct google_youtube3::ActivityContentDetailsSocial">ActivityContentDetailsSocial</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.ActivityContentDetailsComment.html" title="struct google_youtube3::ActivityContentDetailsComment">ActivityContentDetailsComment</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.GuideCategorySnippet.html" title="struct google_youtube3::GuideCategorySnippet">GuideCategorySnippet</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.VideoSnippet.html" title="struct google_youtube3::VideoSnippet">VideoSnippet</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.LiveChatMessageSnippet.html" title="struct google_youtube3::LiveChatMessageSnippet">LiveChatMessageSnippet</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.LiveStreamContentDetails.html" title="struct google_youtube3::LiveStreamContentDetails">LiveStreamContentDetails</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.GuideCategory.html" title="struct google_youtube3::GuideCategory">GuideCategory</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.ChannelProfileDetails.html" title="struct google_youtube3::ChannelProfileDetails">ChannelProfileDetails</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.ActivityContentDetailsSubscription.html" title="struct google_youtube3::ActivityContentDetailsSubscription">ActivityContentDetailsSubscription</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.VideoFileDetailsVideoStream.html" title="struct google_youtube3::VideoFileDetailsVideoStream">VideoFileDetailsVideoStream</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.ChannelLocalization.html" title="struct google_youtube3::ChannelLocalization">ChannelLocalization</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.LiveBroadcastStatistics.html" title="struct google_youtube3::LiveBroadcastStatistics">LiveBroadcastStatistics</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.SearchResult.html" title="struct google_youtube3::SearchResult">SearchResult</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.VideoProcessingDetailsProcessingProgress.html" title="struct google_youtube3::VideoProcessingDetailsProcessingProgress">VideoProcessingDetailsProcessingProgress</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.LanguageTag.html" title="struct google_youtube3::LanguageTag">LanguageTag</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.LiveStreamSnippet.html" title="struct google_youtube3::LiveStreamSnippet">LiveStreamSnippet</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.ChannelStatus.html" title="struct google_youtube3::ChannelStatus">ChannelStatus</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.LiveChatFanFundingEventDetails.html" title="struct google_youtube3::LiveChatFanFundingEventDetails">LiveChatFanFundingEventDetails</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.LiveStreamStatus.html" title="struct google_youtube3::LiveStreamStatus">LiveStreamStatus</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.ContentRating.html" title="struct google_youtube3::ContentRating">ContentRating</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.ChannelSectionTargeting.html" title="struct google_youtube3::ChannelSectionTargeting">ChannelSectionTargeting</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.ImageSettings.html" title="struct google_youtube3::ImageSettings">ImageSettings</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.ActivityContentDetailsPromotedItem.html" title="struct google_youtube3::ActivityContentDetailsPromotedItem">ActivityContentDetailsPromotedItem</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.ActivityContentDetailsBulletin.html" title="struct google_youtube3::ActivityContentDetailsBulletin">ActivityContentDetailsBulletin</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.LocalizedString.html" title="struct google_youtube3::LocalizedString">LocalizedString</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.VideoFileDetailsAudioStream.html" title="struct google_youtube3::VideoFileDetailsAudioStream">VideoFileDetailsAudioStream</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.IngestionInfo.html" title="struct google_youtube3::IngestionInfo">IngestionInfo</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.LiveChatPollOpenedDetails.html" title="struct google_youtube3::LiveChatPollOpenedDetails">LiveChatPollOpenedDetails</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.VideoCategory.html" title="struct google_youtube3::VideoCategory">VideoCategory</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.PlaylistItemSnippet.html" title="struct google_youtube3::PlaylistItemSnippet">PlaylistItemSnippet</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.ActivityContentDetailsFavorite.html" title="struct google_youtube3::ActivityContentDetailsFavorite">ActivityContentDetailsFavorite</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.VideoSuggestionsTagSuggestion.html" title="struct google_youtube3::VideoSuggestionsTagSuggestion">VideoSuggestionsTagSuggestion</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.PlaylistContentDetails.html" title="struct google_youtube3::PlaylistContentDetails">PlaylistContentDetails</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.PageInfo.html" title="struct google_youtube3::PageInfo">PageInfo</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.ActivityContentDetailsLike.html" title="struct google_youtube3::ActivityContentDetailsLike">ActivityContentDetailsLike</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.LiveChatUserBannedMessageDetails.html" title="struct google_youtube3::LiveChatUserBannedMessageDetails">LiveChatUserBannedMessageDetails</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.PropertyValue.html" title="struct google_youtube3::PropertyValue">PropertyValue</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.InvideoTiming.html" title="struct google_youtube3::InvideoTiming">InvideoTiming</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.ChannelSectionLocalization.html" title="struct google_youtube3::ChannelSectionLocalization">ChannelSectionLocalization</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.ActivityContentDetailsPlaylistItem.html" title="struct google_youtube3::ActivityContentDetailsPlaylistItem">ActivityContentDetailsPlaylistItem</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.ActivitySnippet.html" title="struct google_youtube3::ActivitySnippet">ActivitySnippet</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.VideoProcessingDetails.html" title="struct google_youtube3::VideoProcessingDetails">VideoProcessingDetails</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.CommentSnippet.html" title="struct google_youtube3::CommentSnippet">CommentSnippet</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.VideoStatistics.html" title="struct google_youtube3::VideoStatistics">VideoStatistics</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.LiveChatMessageAuthorDetails.html" title="struct google_youtube3::LiveChatMessageAuthorDetails">LiveChatMessageAuthorDetails</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.ChannelSectionContentDetails.html" title="struct google_youtube3::ChannelSectionContentDetails">ChannelSectionContentDetails</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.PromotedItem.html" title="struct google_youtube3::PromotedItem">PromotedItem</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.ChannelBrandingSettings.html" title="struct google_youtube3::ChannelBrandingSettings">ChannelBrandingSettings</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.LiveChatPollClosedDetails.html" title="struct google_youtube3::LiveChatPollClosedDetails">LiveChatPollClosedDetails</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.LiveChatBanSnippet.html" title="struct google_youtube3::LiveChatBanSnippet">LiveChatBanSnippet</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.ChannelSectionSnippet.html" title="struct google_youtube3::ChannelSectionSnippet">ChannelSectionSnippet</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.ChannelContentDetails.html" title="struct google_youtube3::ChannelContentDetails">ChannelContentDetails</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.TokenPagination.html" title="struct google_youtube3::TokenPagination">TokenPagination</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.AccessPolicy.html" title="struct google_youtube3::AccessPolicy">AccessPolicy</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.ActivityContentDetailsRecommendation.html" title="struct google_youtube3::ActivityContentDetailsRecommendation">ActivityContentDetailsRecommendation</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.LiveChatModeratorSnippet.html" title="struct google_youtube3::LiveChatModeratorSnippet">LiveChatModeratorSnippet</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.LiveChatPollItem.html" title="struct google_youtube3::LiveChatPollItem">LiveChatPollItem</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.PlaylistItemContentDetails.html" title="struct google_youtube3::PlaylistItemContentDetails">PlaylistItemContentDetails</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.LiveBroadcastStatus.html" title="struct google_youtube3::LiveBroadcastStatus">LiveBroadcastStatus</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.GeoPoint.html" title="struct google_youtube3::GeoPoint">GeoPoint</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.VideoAgeGating.html" title="struct google_youtube3::VideoAgeGating">VideoAgeGating</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.VideoPlayer.html" title="struct google_youtube3::VideoPlayer">VideoPlayer</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.ChannelSnippet.html" title="struct google_youtube3::ChannelSnippet">ChannelSnippet</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.WatchSettings.html" title="struct google_youtube3::WatchSettings">WatchSettings</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.VideoContentDetails.html" title="struct google_youtube3::VideoContentDetails">VideoContentDetails</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.PromotedItemId.html" title="struct google_youtube3::PromotedItemId">PromotedItemId</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.PlaylistItemStatus.html" title="struct google_youtube3::PlaylistItemStatus">PlaylistItemStatus</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.InvideoPosition.html" title="struct google_youtube3::InvideoPosition">InvideoPosition</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.VideoProjectDetails.html" title="struct google_youtube3::VideoProjectDetails">VideoProjectDetails</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.VideoStatus.html" title="struct google_youtube3::VideoStatus">VideoStatus</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.VideoLocalization.html" title="struct google_youtube3::VideoLocalization">VideoLocalization</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.LocalizedProperty.html" title="struct google_youtube3::LocalizedProperty">LocalizedProperty</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.LiveStreamConfigurationIssue.html" title="struct google_youtube3::LiveStreamConfigurationIssue">LiveStreamConfigurationIssue</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.ChannelStatistics.html" title="struct google_youtube3::ChannelStatistics">ChannelStatistics</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.ResourceId.html" title="struct google_youtube3::ResourceId">ResourceId</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.ActivityContentDetailsUpload.html" title="struct google_youtube3::ActivityContentDetailsUpload">ActivityContentDetailsUpload</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.PlaylistPlayer.html" title="struct google_youtube3::PlaylistPlayer">PlaylistPlayer</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.VideoRecordingDetails.html" title="struct google_youtube3::VideoRecordingDetails">VideoRecordingDetails</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.PlaylistStatus.html" title="struct google_youtube3::PlaylistStatus">PlaylistStatus</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.LiveBroadcastTopicDetails.html" title="struct google_youtube3::LiveBroadcastTopicDetails">LiveBroadcastTopicDetails</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.MonitorStreamInfo.html" title="struct google_youtube3::MonitorStreamInfo">MonitorStreamInfo</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.VideoLiveStreamingDetails.html" title="struct google_youtube3::VideoLiveStreamingDetails">VideoLiveStreamingDetails</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.VideoTopicDetails.html" title="struct google_youtube3::VideoTopicDetails">VideoTopicDetails</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.LiveStreamHealthStatus.html" title="struct google_youtube3::LiveStreamHealthStatus">LiveStreamHealthStatus</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.SubscriptionSubscriberSnippet.html" title="struct google_youtube3::SubscriptionSubscriberSnippet">SubscriptionSubscriberSnippet</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.PlaylistLocalization.html" title="struct google_youtube3::PlaylistLocalization">PlaylistLocalization</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.LiveBroadcastSnippet.html" title="struct google_youtube3::LiveBroadcastSnippet">LiveBroadcastSnippet</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.ActivityContentDetails.html" title="struct google_youtube3::ActivityContentDetails">ActivityContentDetails</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.CommentThreadSnippet.html" title="struct google_youtube3::CommentThreadSnippet">CommentThreadSnippet</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.LiveBroadcastContentDetails.html" title="struct google_youtube3::LiveBroadcastContentDetails">LiveBroadcastContentDetails</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.VideoCategorySnippet.html" title="struct google_youtube3::VideoCategorySnippet">VideoCategorySnippet</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.VideoSuggestions.html" title="struct google_youtube3::VideoSuggestions">VideoSuggestions</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.SearchResultSnippet.html" title="struct google_youtube3::SearchResultSnippet">SearchResultSnippet</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.LiveBroadcastTopicSnippet.html" title="struct google_youtube3::LiveBroadcastTopicSnippet">LiveBroadcastTopicSnippet</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.FanFundingEventSnippet.html" title="struct google_youtube3::FanFundingEventSnippet">FanFundingEventSnippet</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.LiveBroadcastTopic.html" title="struct google_youtube3::LiveBroadcastTopic">LiveBroadcastTopic</a></code></li>
+<li><code>impl Part for <a class="struct" href="../google_youtube3/struct.LiveChatPollVotedDetails.html" title="struct google_youtube3::LiveChatPollVotedDetails">LiveChatPollVotedDetails</a></code></li>
+</ul><script type="text/javascript" async
+                         src="../implementors/google_youtube3/trait.Part.js">
+                 </script></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "google_youtube3";
+    </script>
+    <script src="../jquery.js"></script>
+    <script src="../main.js"></script>
+    <script defer src="../search-index.js"></script>
+</body>
+</html>

@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Deactivate - proximitybeacon v1.0.4+20160429</title>
+  <title>Deactivate - proximitybeacon v1.0.5+20170517</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> proximitybeacon v1.0.4+20160429</a>
+        <a href=".." class="icon icon-home"> proximitybeacon v1.0.5+20170517</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -143,6 +143,13 @@
         
             
     <li class="toctree-l1 ">
+        <a class="" href="../beacons_delete/">Delete</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
         <a class="" href="../beacons_diagnostics-list/">Diagnostics List</a>
         
     </li>
@@ -226,7 +233,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">proximitybeacon v1.0.4+20160429</a>
+        <a href="..">proximitybeacon v1.0.5+20170517</a>
       </nav>
 
       
@@ -255,7 +262,13 @@
           <div role="main">
             <div class="section">
               
-                <p>Deactivates a beacon. Once deactivated, the API will not return information nor attachment data for the beacon when queried via <code>beaconinfo.getforobserved</code>. Calling this method on an already inactive beacon will do nothing (but will return a successful response code). Authenticate using an <a href="https://developers.google.com/identity/protocols/OAuth2">OAuth access token</a> from a signed-in user with <strong>Is owner</strong> or <strong>Can edit</strong> permissions in the Google Developers Console project.</p>
+                <p>Deactivates a beacon. Once deactivated, the API will not return
+information nor attachment data for the beacon when queried via
+<code>beaconinfo.getforobserved</code>. Calling this method on an already inactive
+beacon will do nothing (but will return a successful response code).</p>
+<p>Authenticate using an <a href="https://developers.google.com/identity/protocols/OAuth2">OAuth access token</a>
+from a signed-in user with <strong>Is owner</strong> or <strong>Can edit</strong> permissions in the
+Google Developers Console project.</p>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for the <em>https://www.googleapis.com/auth/userlocation.beacon.registry</em> scope to make a valid call.</p>
 <p>If unset, the scope for this method defaults to <em>https://www.googleapis.com/auth/userlocation.beacon.registry</em>.
@@ -263,7 +276,13 @@ You can set the scope for this method like this: <code>proximitybeacon1-beta1 --
 <h1 id="required-scalar-argument">Required Scalar Argument</h1>
 <ul>
 <li><strong>&lt;beacon-name&gt;</strong> <em>(string)</em><ul>
-<li>Beacon that should be deactivated. A beacon name has the format &#34;beacons/N!beaconId&#34; where the beaconId is the base16 ID broadcast by the beacon and N is a code for the beacon&#39;s type. Possible values are <code>3</code> for Eddystone-UID, <code>4</code> for Eddystone-EID, <code>1</code> for iBeacon, or <code>5</code> for AltBeacon. For Eddystone-EID beacons, you may use either the current EID or the beacon&#39;s &#34;stable&#34; UID. Required.</li>
+<li>Beacon that should be deactivated. A beacon name has the format
+    &#34;beacons/N!beaconId&#34; where the beaconId is the base16 ID broadcast by
+    the beacon and N is a code for the beacon&#39;s type. Possible values are
+    <code>3</code> for Eddystone-UID, <code>4</code> for Eddystone-EID, <code>1</code> for iBeacon, or <code>5</code>
+    for AltBeacon. For Eddystone-EID beacons, you may use either the
+    current EID or the beacon&#39;s &#34;stable&#34; UID.
+    Required.</li>
 </ul>
 </li>
 </ul>
@@ -284,7 +303,10 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li><strong>-p project-id=string</strong><ul>
-<li>The project id of the beacon to deactivate. If the project id is not specified then the project making the request is used. The project id must match the project that owns the beacon. Optional.</li>
+<li>The project id of the beacon to deactivate. If the project id is not
+    specified then the project making the request is used. The project id must
+    match the project that owns the beacon.
+    Optional.</li>
 </ul>
 </li>
 </ul>

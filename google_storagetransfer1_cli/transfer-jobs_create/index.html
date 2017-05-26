@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Create - storagetransfer v1.0.4+20150811</title>
+  <title>Create - storagetransfer v1.0.5+20170515</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> storagetransfer v1.0.4+20150811</a>
+        <a href=".." class="icon icon-home"> storagetransfer v1.0.5+20170515</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -61,21 +61,6 @@
             
     <li class="toctree-l1 ">
         <a class="" href="../google-service-accounts_get/">Get</a>
-        
-    </li>
-
-        
-    </ul>
-<li>
-          
-            <li>
-    <ul class="subnav">
-    <li><span>Methods</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../methods_get-google-service-account/">Get Google Service Account</a>
         
     </li>
 
@@ -197,7 +182,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">storagetransfer v1.0.4+20150811</a>
+        <a href="..">storagetransfer v1.0.5+20170515</a>
       </nav>
 
       
@@ -292,7 +277,8 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li><code>description=stet</code><ul>
-<li>A description provided by the user for the job. Its max length is 1024 bytes when Unicode-encoded.</li>
+<li>A description provided by the user for the job. Its max length is 1024
+    bytes when Unicode-encoded.</li>
 </ul>
 </li>
 <li><code>last-modification-time=sed</code><ul>
@@ -300,47 +286,56 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li><code>name=et</code><ul>
-<li>A globally unique name assigned by Storage Transfer Service when the job is created. This field should be left empty in requests to create a new transfer job; otherwise, the requests result in an <code>INVALID_ARGUMENT</code> error.</li>
+<li>A globally unique name assigned by Storage Transfer Service when the
+    job is created. This field should be left empty in requests to create a new
+    transfer job; otherwise, the requests result in an <code>INVALID_ARGUMENT</code>
+    error.</li>
 </ul>
 </li>
 <li><code>project-id=dolores</code><ul>
-<li>The ID of the Google Developers Console project that owns the job. Required.</li>
+<li>The ID of the Google Cloud Platform Console project that owns the job.
+    Required.</li>
 </ul>
 </li>
 <li><code>schedule.schedule-end-date    day=38</code><ul>
-<li>Day of month. Must be from 1 to 31 and valid for the year and month, or 0 if specifying a year/month where the day is not sigificant.</li>
+<li>Day of month. Must be from 1 to 31 and valid for the year and month, or 0
+    if specifying a year/month where the day is not significant.</li>
 </ul>
 </li>
 <li><code>month=79</code><ul>
-<li>Month of year of date. Must be from 1 to 12.</li>
+<li>Month of year. Must be from 1 to 12.</li>
 </ul>
 </li>
 <li>
 <p><code>year=93</code></p>
 <ul>
-<li>Year of date. Must be from 1 to 9,999, or 0 if specifying a date without a year.</li>
+<li>Year of date. Must be from 1 to 9999, or 0 if specifying a date without
+    a year.</li>
 </ul>
 </li>
 <li>
 <p><code>..schedule-start-date    day=31</code></p>
 <ul>
-<li>Day of month. Must be from 1 to 31 and valid for the year and month, or 0 if specifying a year/month where the day is not sigificant.</li>
+<li>Day of month. Must be from 1 to 31 and valid for the year and month, or 0
+    if specifying a year/month where the day is not significant.</li>
 </ul>
 </li>
 <li><code>month=100</code><ul>
-<li>Month of year of date. Must be from 1 to 12.</li>
+<li>Month of year. Must be from 1 to 12.</li>
 </ul>
 </li>
 <li>
 <p><code>year=20</code></p>
 <ul>
-<li>Year of date. Must be from 1 to 9,999, or 0 if specifying a date without a year.</li>
+<li>Year of date. Must be from 1 to 9999, or 0 if specifying a date without
+    a year.</li>
 </ul>
 </li>
 <li>
 <p><code>..start-time-of-day    hours=66</code></p>
 <ul>
-<li>Hours of day in 24 hour format. Should be from 0 to 23. An API may choose to allow the value &#34;24:00:00&#34; for scenarios like business closing time.</li>
+<li>Hours of day in 24 hour format. Should be from 0 to 23. An API may choose
+    to allow the value &#34;24:00:00&#34; for scenarios like business closing time.</li>
 </ul>
 </li>
 <li><code>minutes=92</code><ul>
@@ -354,75 +349,130 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>
 <p><code>seconds=82</code></p>
 <ul>
-<li>Seconds of minutes of the time. Must normally be from 0 to 59. An API may allow the value 60 if it allows leap-seconds.</li>
+<li>Seconds of minutes of the time. Must normally be from 0 to 59. An API may
+    allow the value 60 if it allows leap-seconds.</li>
 </ul>
 </li>
 <li>
 <p><code>...    status=gubergren</code></p>
 <ul>
-<li>Status of the job. This value MUST be specified for <code>CreateTransferJobRequests</code>. NOTE: The effect of the new job status takes place during a subsequent job run. For example, if you change the job status from <code>ENABLED</code> to <code>DISABLED</code>, and an operation spawned by the transfer is running, the status change would not affect the current operation.</li>
-</ul>
-</li>
-<li><code>transfer-spec.aws-s3-data-source.aws-access-key    access-key-id=sadipscing</code><ul>
-<li>AWS access key ID. Required.</li>
-</ul>
-</li>
 <li>
-<p><code>secret-access-key=aliquyam</code></p>
-<ul>
-<li>AWS secret access key. This field is not returned in RPC responses. Required.</li>
+<p>Status of the job. This value MUST be specified for
+    <code>CreateTransferJobRequests</code>.</p>
+<p>NOTE: The effect of the new job status takes place during a subsequent job
+run. For example, if you change the job status from <code>ENABLED</code> to
+<code>DISABLED</code>, and an operation spawned by the transfer is running, the status
+change would not affect the current operation.
+<em> <code>transfer-spec.aws-s3-data-source.aws-access-key    access-key-id=sadipscing</code>
+    - AWS access key ID.
+Required.
+</em> <code>secret-access-key=aliquyam</code>
+    - AWS secret access key. This field is not returned in RPC responses.
+Required.</p>
+</li>
 </ul>
 </li>
 <li>
 <p><code>..    bucket-name=ea</code></p>
 <ul>
-<li>S3 Bucket name (see <a href="http://docs.aws.amazon.com/AmazonS3/latest/dev/create-bucket-get-location-example.html">Creating a bucket</a>). Required.</li>
+<li>S3 Bucket name (see
+    <a href="http://docs.aws.amazon.com/AmazonS3/latest/dev/create-bucket-get-location-example.html">Creating a bucket</a>).
+    Required.</li>
 </ul>
 </li>
 <li>
 <p><code>..gcs-data-sink    bucket-name=no</code></p>
 <ul>
-<li>Google Cloud Storage bucket name (see <a href="https://cloud.google.com/storage/docs/bucket-naming#requirements">Bucket Name Requirements</a>). Required.</li>
+<li>Google Cloud Storage bucket name (see
+    <a href="https://cloud.google.com/storage/docs/bucket-naming#requirements">Bucket Name Requirements</a>).
+    Required.</li>
 </ul>
 </li>
 <li>
 <p><code>..gcs-data-source    bucket-name=justo</code></p>
 <ul>
-<li>Google Cloud Storage bucket name (see <a href="https://cloud.google.com/storage/docs/bucket-naming#requirements">Bucket Name Requirements</a>). Required.</li>
+<li>Google Cloud Storage bucket name (see
+    <a href="https://cloud.google.com/storage/docs/bucket-naming#requirements">Bucket Name Requirements</a>).
+    Required.</li>
 </ul>
 </li>
 <li>
 <p><code>..http-data-source    list-url=justo</code></p>
 <ul>
-<li>The URL that points to the file that stores the object list entries. This file must allow public access. Currently, only URLs with HTTP and HTTPS schemes are supported. Required.</li>
+<li>The URL that points to the file that stores the object list entries.
+    This file must allow public access.  Currently, only URLs with HTTP and
+    HTTPS schemes are supported.
+    Required.</li>
 </ul>
 </li>
 <li>
 <p><code>..object-conditions    exclude-prefixes=et</code></p>
 <ul>
-<li><code>excludePrefixes</code> must follow the requirements described for <code>includePrefixes</code>. The max size of <code>excludePrefixes</code> is 20.</li>
-<li>Each invocation of this argument appends the given value to the array.</li>
-</ul>
-</li>
-<li><code>include-prefixes=et</code><ul>
-<li>If <code>includePrefixes</code> is specified, objects that satisfy the object conditions must have names that start with one of the <code>includePrefixes</code> and that do not start with any of the <code>excludePrefixes</code>. If <code>includePrefixes</code> is not specified, all objects except those that have names starting with one of the <code>excludePrefixes</code> must satisfy the object conditions. Requirements: * Each include-prefix and exclude-prefix can contain any sequence of Unicode characters, of max length 1024 bytes when UTF8-encoded, and must not contain Carriage Return or Line Feed characters. Wildcard matching and regular expression matching are not supported. * None of the include-prefix or the exclude-prefix values can be empty, if specified. * Each include-prefix must include a distinct portion of the object namespace, i.e., no include-prefix may be a prefix of another include-prefix. * Each exclude-prefix must exclude a distinct portion of the object namespace, i.e., no exclude-prefix may be a prefix of another exclude-prefix. * If <code>includePrefixes</code> is specified, then each exclude-prefix must start with the value of a path explicitly included by <code>includePrefixes</code>. The max size of <code>includePrefixes</code> is 20.</li>
-<li>Each invocation of this argument appends the given value to the array.</li>
-</ul>
-</li>
-<li><code>max-time-elapsed-since-last-modification=diam</code><ul>
-<li><code>maxTimeElapsedSinceLastModification</code> is the complement to <code>minTimeElapsedSinceLastModification</code>.</li>
-</ul>
+<li>
+<p><code>excludePrefixes</code> must follow the requirements described for
+    <code>includePrefixes</code>.</p>
+<p>The max size of <code>excludePrefixes</code> is 1000.
+    - Each invocation of this argument appends the given value to the array.
+* <code>include-prefixes=et</code>
+    - If <code>includePrefixes</code> is specified, objects that satisfy the object
+conditions must have names that start with one of the <code>includePrefixes</code>
+and that do not start with any of the <code>excludePrefixes</code>. If <code>includePrefixes</code>
+is not specified, all objects except those that have names starting with
+one of the <code>excludePrefixes</code> must satisfy the object conditions.</p>
+<p>Requirements:</p>
+<ul>
+<li>
+<p>Each include-prefix and exclude-prefix can contain any sequence of
+    Unicode characters, of max length 1024 bytes when UTF8-encoded, and
+    must not contain Carriage Return or Line Feed characters.  Wildcard
+    matching and regular expression matching are not supported.</p>
 </li>
 <li>
-<p><code>min-time-elapsed-since-last-modification=ipsum</code></p>
-<ul>
-<li>If unspecified, <code>minTimeElapsedSinceLastModification</code> takes a zero value and <code>maxTimeElapsedSinceLastModification</code> takes the maximum possible value of Duration. Objects that satisfy the object conditions must either have a <code>lastModificationTime</code> greater or equal to <code>NOW</code> - <code>maxTimeElapsedSinceLastModification</code> and less than <code>NOW</code> - <code>minTimeElapsedSinceLastModification</code>, or not have a <code>lastModificationTime</code>.</li>
+<p>Each include-prefix and exclude-prefix must omit the leading slash.
+    For example, to include the <code>requests.gz</code> object in a transfer from
+    <code>s3://my-aws-bucket/logs/y=2015/requests.gz</code>, specify the include
+    prefix as <code>logs/y=2015/requests.gz</code>.</p>
+</li>
+<li>
+<p>None of the include-prefix or the exclude-prefix values can be empty,
+    if specified.</p>
+</li>
+<li>
+<p>Each include-prefix must include a distinct portion of the object
+    namespace, i.e., no include-prefix may be a prefix of another
+    include-prefix.</p>
+</li>
+<li>
+<p>Each exclude-prefix must exclude a distinct portion of the object
+    namespace, i.e., no exclude-prefix may be a prefix of another
+    exclude-prefix.</p>
+</li>
+<li>
+<p>If <code>includePrefixes</code> is specified, then each exclude-prefix must start
+    with the value of a path explicitly included by <code>includePrefixes</code>.</p>
+</li>
+</ul>
+<p>The max size of <code>includePrefixes</code> is 1000.
+    - Each invocation of this argument appends the given value to the array.
+<em> <code>max-time-elapsed-since-last-modification=diam</code>
+    - <code>maxTimeElapsedSinceLastModification</code> is the complement to
+<code>minTimeElapsedSinceLastModification</code>.
+</em> <code>min-time-elapsed-since-last-modification=ipsum</code>
+    - If unspecified, <code>minTimeElapsedSinceLastModification</code> takes a zero value
+and <code>maxTimeElapsedSinceLastModification</code> takes the maximum possible
+value of Duration. Objects that satisfy the object conditions
+must either have a <code>lastModificationTime</code> greater or equal to
+<code>NOW</code> - <code>maxTimeElapsedSinceLastModification</code> and less than
+<code>NOW</code> - <code>minTimeElapsedSinceLastModification</code>, or not have a
+<code>lastModificationTime</code>.</p>
+</li>
 </ul>
 </li>
 <li>
 <p><code>..transfer-options    delete-objects-from-source-after-transfer=true</code></p>
 <ul>
-<li>Whether objects should be deleted from the source after they are transferred to the sink.</li>
+<li>Whether objects should be deleted from the source after they are
+    transferred to the sink.</li>
 </ul>
 </li>
 <li><code>delete-objects-unique-in-sink=true</code><ul>
@@ -545,7 +595,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
         <a href="../transfer-jobs_get/" class="btn btn-neutral float-right" title="Get">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../methods_get-google-service-account/" class="btn btn-neutral" title="Get Google Service Account"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../google-service-accounts_get/" class="btn btn-neutral" title="Get"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -575,7 +625,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
           <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/storagetransfer1-cli" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../methods_get-google-service-account/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../google-service-accounts_get/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
         <span style="margin-left: 15px"><a href="../transfer-jobs_get/" style="color: #fcfcfc">Next &raquo;</a></span>

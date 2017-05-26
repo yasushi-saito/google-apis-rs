@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Create - genomics v1.0.4+20160928</title>
+  <title>Create - genomics v1.0.5+20170520</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> genomics v1.0.4+20160928</a>
+        <a href=".." class="icon icon-home"> genomics v1.0.5+20170520</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -358,13 +358,6 @@
     </li>
 
         
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../reads_stream/">Stream</a>
-        
-    </li>
-
-        
     </ul>
 <li>
           
@@ -473,13 +466,6 @@
     </li>
 
         
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../variants_stream/">Stream</a>
-        
-    </li>
-
-        
     </ul>
 <li>
           
@@ -561,7 +547,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">genomics v1.0.4+20160928</a>
+        <a href="..">genomics v1.0.5+20170520</a>
       </nav>
 
       
@@ -590,7 +576,13 @@
           <div role="main">
             <div class="section">
               
-                <p>Creates a new variant set. For the definitions of variant sets and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a> The provided variant set must have a valid <code>datasetId</code> set - all other fields are optional. Note that the <code>id</code> field will be ignored, as this is assigned by the server.</p>
+                <p>Creates a new variant set.</p>
+<p>For the definitions of variant sets and other genomics resources, see
+<a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google
+Genomics</a></p>
+<p>The provided variant set must have a valid <code>datasetId</code> set - all other
+fields are optional. Note that the <code>id</code> field will be ignored, as this is
+assigned by the server.</p>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for at least one of the following scopes to make a valid call:</p>
 <ul>
@@ -614,24 +606,34 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    dataset-id=sanctus</code><ul>
+<li><code>-r .    dataset-id=rebum.</code><ul>
 <li>The dataset to which this variant set belongs.</li>
 </ul>
 </li>
-<li><code>description=voluptua.</code><ul>
+<li><code>description=lorem</code><ul>
 <li>A textual description of this variant set.</li>
 </ul>
 </li>
-<li><code>id=dolor</code><ul>
+<li><code>id=lorem</code><ul>
 <li>The server-generated variant set ID, unique across all variant sets.</li>
 </ul>
 </li>
-<li><code>name=et</code><ul>
+<li><code>name=diam</code><ul>
 <li>User-specified, mutable name.</li>
 </ul>
 </li>
-<li><code>reference-set-id=et</code><ul>
-<li>The reference set to which the variant set is mapped. The reference set describes the alignment provenance of the variant set, while the <code>referenceBounds</code> describe the shape of the actual variant data. The reference set&#39;s reference names are a superset of those found in the <code>referenceBounds</code>. For example, given a variant set that is mapped to the GRCh38 reference set and contains a single variant on reference &#39;X&#39;, <code>referenceBounds</code> would contain only an entry for &#39;X&#39;, while the associated reference set enumerates all possible references: &#39;1&#39;, &#39;2&#39;, &#39;X&#39;, &#39;Y&#39;, &#39;MT&#39;, etc.</li>
+<li><code>reference-set-id=ut</code><ul>
+<li>
+<p>The reference set to which the variant set is mapped. The reference set
+    describes the alignment provenance of the variant set, while the
+    <code>referenceBounds</code> describe the shape of the actual variant data. The
+    reference set&#39;s reference names are a superset of those found in the
+    <code>referenceBounds</code>.</p>
+<p>For example, given a variant set that is mapped to the GRCh38 reference set
+and contains a single variant on reference &#39;X&#39;, <code>referenceBounds</code> would
+contain only an entry for &#39;X&#39;, while the associated reference set
+enumerates all possible references: &#39;1&#39;, &#39;2&#39;, &#39;X&#39;, &#39;Y&#39;, &#39;MT&#39;, etc.</p>
+</li>
 </ul>
 </li>
 </ul>
@@ -746,7 +748,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
         <a href="../variantsets_delete/" class="btn btn-neutral float-right" title="Delete">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../variants_stream/" class="btn btn-neutral" title="Stream"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../variants_search/" class="btn btn-neutral" title="Search"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -776,7 +778,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
           <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/genomics1-cli" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../variants_stream/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../variants_search/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
         <span style="margin-left: 15px"><a href="../variantsets_delete/" style="color: #fcfcfc">Next &raquo;</a></span>

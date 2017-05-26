@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Search - genomics v1.0.4+20160928</title>
+  <title>Search - genomics v1.0.5+20170520</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> genomics v1.0.4+20160928</a>
+        <a href=".." class="icon icon-home"> genomics v1.0.5+20170520</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -376,13 +376,6 @@
     </li>
 
         
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../reads_stream/">Stream</a>
-        
-    </li>
-
-        
     </ul>
 <li>
           
@@ -491,13 +484,6 @@
     </li>
 
         
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../variants_stream/">Stream</a>
-        
-    </li>
-
-        
     </ul>
 <li>
           
@@ -561,7 +547,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">genomics v1.0.4+20160928</a>
+        <a href="..">genomics v1.0.5+20170520</a>
       </nav>
 
       
@@ -590,7 +576,11 @@
           <div role="main">
             <div class="section">
               
-                <p>Searches for annotation sets that match the given criteria. Annotation sets are returned in an unspecified order. This order is consistent, such that two queries for the same content (regardless of page size) yield annotation sets in the same order across their respective streams of paginated responses. Caller must have READ permission for the queried datasets.</p>
+                <p>Searches for annotation sets that match the given criteria. Annotation sets
+are returned in an unspecified order. This order is consistent, such that
+two queries for the same content (regardless of page size) yield annotation
+sets in the same order across their respective streams of paginated
+responses. Caller must have READ permission for the queried datasets.</p>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for at least one of the following scopes to make a valid call:</p>
 <ul>
@@ -617,28 +607,35 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
 <li><code>-r .    dataset-ids=duo</code><ul>
-<li>Required. The dataset IDs to search within. Caller must have <code>READ</code> access to these datasets.</li>
+<li>Required. The dataset IDs to search within. Caller must have <code>READ</code> access
+    to these datasets.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
 <li><code>name=et</code><ul>
-<li>Only return annotations sets for which a substring of the name matches this string (case insensitive).</li>
+<li>Only return annotations sets for which a substring of the name matches this
+    string (case insensitive).</li>
 </ul>
 </li>
 <li><code>page-size=61</code><ul>
-<li>The maximum number of results to return in a single page. If unspecified, defaults to 128. The maximum value is 1024.</li>
+<li>The maximum number of results to return in a single page. If unspecified,
+    defaults to 128. The maximum value is 1024.</li>
 </ul>
 </li>
 <li><code>page-token=sanctus</code><ul>
-<li>The continuation token, which is used to page through large result sets. To get the next page of results, set this parameter to the value of <code>nextPageToken</code> from the previous response.</li>
+<li>The continuation token, which is used to page through large result sets.
+    To get the next page of results, set this parameter to the value of
+    <code>nextPageToken</code> from the previous response.</li>
 </ul>
 </li>
 <li><code>reference-set-id=et</code><ul>
-<li>If specified, only annotation sets associated with the given reference set are returned.</li>
+<li>If specified, only annotation sets associated with the given reference set
+    are returned.</li>
 </ul>
 </li>
 <li><code>types=amet</code><ul>
-<li>If specified, only annotation sets that have any of these types are returned.</li>
+<li>If specified, only annotation sets that have any of these types are
+    returned.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>

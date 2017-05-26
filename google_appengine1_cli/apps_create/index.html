@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Create - appengine v1.0.4+20161208</title>
+  <title>Create - appengine v1.0.5+20170522</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> appengine v1.0.4+20161208</a>
+        <a href=".." class="icon icon-home"> appengine v1.0.5+20170522</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -236,7 +236,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">appengine v1.0.4+20161208</a>
+        <a href="..">appengine v1.0.5+20170522</a>
       </nav>
 
       
@@ -265,7 +265,9 @@
           <div role="main">
             <div class="section">
               
-                <p>Creates an App Engine application for a Google Cloud Platform project. This requires a project that excludes an App Engine application. For details about creating a project without an application, see the Google Cloud Resource Manager create project topic (https://cloud.google.com/resource-manager/docs/creating-project).</p>
+                <p>Creates an App Engine application for a Google Cloud Platform project. Required fields:
+id - The ID of the target Cloud Platform project.
+location - The region (https://cloud.google.com/appengine/docs/locations) where you want the App Engine application located.For more information about App Engine applications, see Managing Projects, Applications, and Billing (https://cloud.google.com/appengine/docs/python/console/).</p>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for the <em>https://www.googleapis.com/auth/cloud-platform</em> scope to make a valid call.</p>
 <p>If unset, the scope for this method defaults to <em>https://www.googleapis.com/auth/cloud-platform</em>.
@@ -280,9 +282,16 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   default-bucket: string
   default-cookie-expiration: string
   default-hostname: string
+  gcr-domain: string
+  iap:
+    enabled: boolean
+    oauth2-client-id: string
+    oauth2-client-secret: string
+    oauth2-client-secret-sha256: string
   id: string
   location-id: string
   name: string
+  serving-status: string
 
 </code></pre>
 
@@ -308,16 +317,44 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>Hostname used to reach this application, as resolved by App Engine.@OutputOnly</li>
 </ul>
 </li>
-<li><code>id=dolores</code><ul>
+<li><code>gcr-domain=dolores</code><ul>
+<li>The Google Container Registry domain used for storing managed build docker images for this application.</li>
+</ul>
+</li>
+<li><code>iap    enabled=false</code><ul>
+<li>Whether the serving infrastructure will authenticate and authorize all incoming requests.If true, the oauth2_client_id and oauth2_client_secret fields must be non-empty.</li>
+</ul>
+</li>
+<li><code>oauth2-client-id=accusam</code><ul>
+<li>OAuth2 client ID to use for the authentication flow.</li>
+</ul>
+</li>
+<li><code>oauth2-client-secret=takimata</code><ul>
+<li>OAuth2 client secret to use for the authentication flow.For security reasons, this value cannot be retrieved via the API. Instead, the SHA-256 hash of the value is returned in the oauth2_client_secret_sha256 field.@InputOnly</li>
+</ul>
+</li>
+<li>
+<p><code>oauth2-client-secret-sha256=justo</code></p>
+<ul>
+<li>Hex-encoded SHA-256 hash of the client secret.@OutputOnly</li>
+</ul>
+</li>
+<li>
+<p><code>..    id=amet.</code></p>
+<ul>
 <li>Identifier of the Application resource. This identifier is equivalent to the project ID of the Google Cloud Platform project where you want to deploy your application. Example: myapp.</li>
 </ul>
 </li>
-<li><code>location-id=kasd</code><ul>
+<li><code>location-id=erat</code><ul>
 <li>Location from which this application will be run. Application instances will run out of data centers in the chosen location, which is also where all of the application&#39;s end user content is stored.Defaults to us-central.Options are:us-central - Central USeurope-west - Western Europeus-east1 - Eastern US</li>
 </ul>
 </li>
-<li><code>name=accusam</code><ul>
+<li><code>name=labore</code><ul>
 <li>Full path to the Application resource in the API. Example: apps/myapp.@OutputOnly</li>
+</ul>
+</li>
+<li><code>serving-status=sea</code><ul>
+<li>Serving status of this application.</li>
 </ul>
 </li>
 </ul>

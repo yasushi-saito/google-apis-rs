@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>List - customsearch v1.0.4+20160411</title>
+  <title>List - customsearch v1.0.5+20160411</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> customsearch v1.0.4+20160411</a>
+        <a href=".." class="icon icon-home"> customsearch v1.0.5+20160411</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -94,7 +94,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">customsearch v1.0.4+20160411</a>
+        <a href="..">customsearch v1.0.5+20160411</a>
       </nav>
 
       
@@ -148,33 +148,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p rights=string</strong></p>
+<p><strong>-p file-type=string</strong></p>
 <ul>
-<li>Filters based on licensing. Supported values include: cc_publicdomain, cc_attribute, cc_sharealike, cc_noncommercial, cc_nonderived and combinations of these.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p search-type=string</strong></p>
-<ul>
-<li>Specifies the search type: image.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p hq=string</strong></p>
-<ul>
-<li>Appends the extra query terms to the query.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p c2coff=string</strong></p>
-<ul>
-<li>Turns off the translation between zh-CN and zh-TW.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p low-range=string</strong></p>
-<ul>
-<li>Creates a range in form as_nlo value..as_nhi value and attempts to append it to query</li>
+<li>Returns images of a specified type. Some of the allowed values are: bmp, gif, png, jpg, svg, pdf, ...</li>
 </ul>
 </li>
 <li>
@@ -184,45 +160,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p cref=string</strong></p>
+<p><strong>-p link-site=string</strong></p>
 <ul>
-<li>The URL of a linked custom search engine</li>
-</ul>
-</li>
-<li>
-<p><strong>-p img-size=string</strong></p>
-<ul>
-<li>Returns images of a specified size, where size can be one of: icon, small, medium, large, xlarge, xxlarge, and huge.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p lr=string</strong></p>
-<ul>
-<li>The language restriction for the search results</li>
-</ul>
-</li>
-<li>
-<p><strong>-p start=integer</strong></p>
-<ul>
-<li>The index of the first result to return</li>
-</ul>
-</li>
-<li>
-<p><strong>-p sort=string</strong></p>
-<ul>
-<li>The sort expression to apply to the results</li>
-</ul>
-</li>
-<li>
-<p><strong>-p img-dominant-color=string</strong></p>
-<ul>
-<li>Returns images of a specific dominant color: yellow, green, teal, blue, purple, pink, white, gray, black and brown.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p file-type=string</strong></p>
-<ul>
-<li>Returns images of a specified type. Some of the allowed values are: bmp, gif, png, jpg, svg, pdf, ...</li>
+<li>Specifies that all search results should contain a link to a particular URL</li>
 </ul>
 </li>
 <li>
@@ -232,9 +172,45 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p cx=string</strong></p>
+<p><strong>-p start=integer</strong></p>
 <ul>
-<li>The custom search engine ID to scope this search query</li>
+<li>The index of the first result to return</li>
+</ul>
+</li>
+<li>
+<p><strong>-p cref=string</strong></p>
+<ul>
+<li>The URL of a linked custom search engine</li>
+</ul>
+</li>
+<li>
+<p><strong>-p sort=string</strong></p>
+<ul>
+<li>The sort expression to apply to the results</li>
+</ul>
+</li>
+<li>
+<p><strong>-p hq=string</strong></p>
+<ul>
+<li>Appends the extra query terms to the query.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p lr=string</strong></p>
+<ul>
+<li>The language restriction for the search results</li>
+</ul>
+</li>
+<li>
+<p><strong>-p img-dominant-color=string</strong></p>
+<ul>
+<li>Returns images of a specific dominant color: yellow, green, teal, blue, purple, pink, white, gray, black and brown.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p img-color-type=string</strong></p>
+<ul>
+<li>Returns black and white, grayscale, or color images: mono, gray, and color.</li>
 </ul>
 </li>
 <li>
@@ -250,21 +226,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p exclude-terms=string</strong></p>
+<p><strong>-p exact-terms=string</strong></p>
 <ul>
-<li>Identifies a word or phrase that should not appear in any documents in the search results</li>
-</ul>
-</li>
-<li>
-<p><strong>-p link-site=string</strong></p>
-<ul>
-<li>Specifies that all search results should contain a link to a particular URL</li>
-</ul>
-</li>
-<li>
-<p><strong>-p filter=string</strong></p>
-<ul>
-<li>Controls turning on or off the duplicate content filter.</li>
+<li>Identifies a phrase that all documents in the search results must contain</li>
 </ul>
 </li>
 <li>
@@ -274,27 +238,57 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
+<p><strong>-p img-size=string</strong></p>
+<ul>
+<li>Returns images of a specified size, where size can be one of: icon, small, medium, large, xlarge, xxlarge, and huge.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p cx=string</strong></p>
+<ul>
+<li>The custom search engine ID to scope this search query</li>
+</ul>
+</li>
+<li>
+<p><strong>-p search-type=string</strong></p>
+<ul>
+<li>Specifies the search type: image.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p exclude-terms=string</strong></p>
+<ul>
+<li>Identifies a word or phrase that should not appear in any documents in the search results</li>
+</ul>
+</li>
+<li>
 <p><strong>-p safe=string</strong></p>
 <ul>
 <li>Search safety level</li>
 </ul>
 </li>
 <li>
-<p><strong>-p exact-terms=string</strong></p>
+<p><strong>-p rights=string</strong></p>
 <ul>
-<li>Identifies a phrase that all documents in the search results must contain</li>
+<li>Filters based on licensing. Supported values include: cc_publicdomain, cc_attribute, cc_sharealike, cc_noncommercial, cc_nonderived and combinations of these.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p img-color-type=string</strong></p>
+<p><strong>-p c2coff=string</strong></p>
 <ul>
-<li>Returns black and white, grayscale, or color images: mono, gray, and color.</li>
+<li>Turns off the translation between zh-CN and zh-TW.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p img-type=string</strong></p>
+<p><strong>-p low-range=string</strong></p>
 <ul>
-<li>Returns images of a type, which can be one of: clipart, face, lineart, news, and photo.</li>
+<li>Creates a range in form as_nlo value..as_nhi value and attempts to append it to query</li>
+</ul>
+</li>
+<li>
+<p><strong>-p filter=string</strong></p>
+<ul>
+<li>Controls turning on or off the duplicate content filter.</li>
 </ul>
 </li>
 <li>
@@ -304,9 +298,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p cr=string</strong></p>
+<p><strong>-p img-type=string</strong></p>
 <ul>
-<li>Country restrict(s).</li>
+<li>Returns images of a type, which can be one of: clipart, face, lineart, news, and photo.</li>
 </ul>
 </li>
 <li>
@@ -325,6 +319,12 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <p><strong>-p num=integer</strong></p>
 <ul>
 <li>Number of search results to return</li>
+</ul>
+</li>
+<li>
+<p><strong>-p cr=string</strong></p>
+<ul>
+<li>Country restrict(s).</li>
 </ul>
 </li>
 <li>

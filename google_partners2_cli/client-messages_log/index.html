@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Log - partners v1.0.4+20151009</title>
+  <title>Log - Partners v1.0.5+20170503</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> partners v1.0.4+20151009</a>
+        <a href=".." class="icon icon-home"> Partners v1.0.5+20170503</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -51,6 +51,21 @@
         <a class="" href="..">Home</a>
         
     </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Analytics</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../analytics_list/">List</a>
+        
+    </li>
+
+        
+    </ul>
 <li>
           
             <li>
@@ -114,6 +129,87 @@
           
             <li>
     <ul class="subnav">
+    <li><span>Exams</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../exams_get-token/">Get Token</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Leads</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../leads_list/">List</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Methods</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../methods_get-partnersstatus/">Get Partnersstatus</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../methods_update-companies/">Update Companies</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../methods_update-leads/">Update Leads</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Offers</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../offers_history-list/">History List</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../offers_list/">List</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
     <li><span>User Events</span></li>
 
         
@@ -142,6 +238,42 @@
     </ul>
 <li>
           
+            <li>
+    <ul class="subnav">
+    <li><span>Users</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../users_create-company-relation/">Create Company Relation</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../users_delete-company-relation/">Delete Company Relation</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../users_get/">Get</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../users_update-profile/">Update Profile</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
         </ul>
       </div>
       &nbsp;
@@ -152,7 +284,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">partners v1.0.4+20151009</a>
+        <a href="..">Partners v1.0.5+20170503</a>
       </nav>
 
       
@@ -181,7 +313,9 @@
           <div role="main">
             <div class="section">
               
-                <p>Logs a generic message from the client, such as <code>Failed to render component</code>, <code>Profile page is running slow</code>, <code>More than 500 users have accessed this result.</code>, etc.</p>
+                <p>Logs a generic message from the client, such as
+<code>Failed to render component</code>, <code>Profile page is running slow</code>,
+<code>More than 500 users have accessed this result.</code>, etc.</p>
 <h1 id="required-request-value">Required Request Value</h1>
 <p>The request value is a data-structure with various fields. Each field may be a simple scalar or another data-structure.
 In the latter case it is advised to set the field-cursor to the data-structure's field to specify values more concisely.</p>
@@ -232,13 +366,17 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li><code>traffic-source    traffic-source-id=kasd</code><ul>
-<li>Identifier to indicate where the traffic comes from. An identifier has multiple letters created by a team which redirected the traffic to us.</li>
+<li>Identifier to indicate where the traffic comes from.
+    An identifier has multiple letters created by a team which redirected the
+    traffic to us.</li>
 </ul>
 </li>
 <li>
 <p><code>traffic-sub-id=accusam</code></p>
 <ul>
-<li>Second level identifier to indicate where the traffic comes from. An identifier has multiple letters created by a team which redirected the traffic to us.</li>
+<li>Second level identifier to indicate where the traffic comes from.
+    An identifier has multiple letters created by a team which redirected the
+    traffic to us.</li>
 </ul>
 </li>
 <li>
@@ -363,7 +501,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
         <a href="../companies_get/" class="btn btn-neutral float-right" title="Get">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href=".." class="btn btn-neutral" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../analytics_list/" class="btn btn-neutral" title="List"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -393,7 +531,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
           <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/partners2-cli" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href=".." style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../analytics_list/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
         <span style="margin-left: 15px"><a href="../companies_get/" style="color: #fcfcfc">Next &raquo;</a></span>

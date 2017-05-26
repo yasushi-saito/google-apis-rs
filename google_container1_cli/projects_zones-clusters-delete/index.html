@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Zones Clusters Delete - container v1.0.4+20160421</title>
+  <title>Zones Clusters Delete - container v1.0.5+20170430</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> container v1.0.4+20160421</a>
+        <a href=".." class="icon icon-home"> container v1.0.5+20170430</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -56,6 +56,13 @@
             <li>
     <ul class="subnav">
     <li><span>Projects</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../projects_zones-clusters-complete-ip-rotation/">Zones Clusters Complete Ip Rotation</a>
+        
+    </li>
 
         
             
@@ -97,6 +104,13 @@
         
             
     <li class="toctree-l1 ">
+        <a class="" href="../projects_zones-clusters-legacy-abac/">Zones Clusters Legacy Abac</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
         <a class="" href="../projects_zones-clusters-list/">Zones Clusters List</a>
         
     </li>
@@ -132,6 +146,41 @@
         
             
     <li class="toctree-l1 ">
+        <a class="" href="../projects_zones-clusters-node-pools-rollback/">Zones Clusters Node Pools Rollback</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../projects_zones-clusters-node-pools-set-management/">Zones Clusters Node Pools Set Management</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../projects_zones-clusters-resource-labels/">Zones Clusters Resource Labels</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../projects_zones-clusters-set-master-auth/">Zones Clusters Set Master Auth</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../projects_zones-clusters-start-ip-rotation/">Zones Clusters Start Ip Rotation</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
         <a class="" href="../projects_zones-clusters-update/">Zones Clusters Update</a>
         
     </li>
@@ -140,6 +189,13 @@
             
     <li class="toctree-l1 ">
         <a class="" href="../projects_zones-get-serverconfig/">Zones Get Serverconfig</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../projects_zones-operations-cancel/">Zones Operations Cancel</a>
         
     </li>
 
@@ -171,7 +227,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">container v1.0.4+20160421</a>
+        <a href="..">container v1.0.5+20170430</a>
       </nav>
 
       
@@ -200,7 +256,13 @@
           <div role="main">
             <div class="section">
               
-                <p>Deletes the cluster, including the Kubernetes endpoint and all worker nodes. Firewalls and routes that were configured during cluster creation are also deleted. Other Google Compute Engine resources that might be in use by the cluster (e.g. load balancer resources) will not be deleted if they weren&#39;t present at the initial create time.</p>
+                <p>Deletes the cluster, including the Kubernetes endpoint and all worker
+nodes.</p>
+<p>Firewalls and routes that were configured during cluster creation
+are also deleted.</p>
+<p>Other Google Compute Engine resources that might be in use by the cluster
+(e.g. load balancer resources) will not be deleted if they weren&#39;t present
+at the initial create time.</p>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for the <em>https://www.googleapis.com/auth/cloud-platform</em> scope to make a valid call.</p>
 <p>If unset, the scope for this method defaults to <em>https://www.googleapis.com/auth/cloud-platform</em>.
@@ -208,11 +270,14 @@ You can set the scope for this method like this: <code>container1 --scope &lt;sc
 <h1 id="required-scalar-arguments">Required Scalar Arguments</h1>
 <ul>
 <li><strong>&lt;project-id&gt;</strong> <em>(string)</em><ul>
-<li>The Google Developers Console <a href="https://support.google.com/cloud/answer/6158840">project ID or project number</a>.</li>
+<li>The Google Developers Console <a href="https://support.google.com/cloud/answer/6158840">project ID or project
+    number</a>.</li>
 </ul>
 </li>
 <li><strong>&lt;zone&gt;</strong> <em>(string)</em><ul>
-<li>The name of the Google Compute Engine <a href="../compute/docs/zones#available">zone</a> in which the cluster resides.</li>
+<li>The name of the Google Compute Engine
+    <a href="../compute/docs/zones#available">zone</a> in which the cluster
+    resides.</li>
 </ul>
 </li>
 <li><strong>&lt;cluster-id&gt;</strong> <em>(string)</em><ul>

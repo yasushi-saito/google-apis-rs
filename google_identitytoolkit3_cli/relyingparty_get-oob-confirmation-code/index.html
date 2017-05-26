@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Get Oob Confirmation Code - Identity Toolkit v1.0.4+20161206</title>
+  <title>Get Oob Confirmation Code - Identity Toolkit v1.0.5+20170425</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Identity Toolkit v1.0.4+20161206</a>
+        <a href=".." class="icon icon-home"> Identity Toolkit v1.0.5+20170425</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -208,7 +208,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Identity Toolkit v1.0.4+20161206</a>
+        <a href="..">Identity Toolkit v1.0.5+20170425</a>
       </nav>
 
       
@@ -247,9 +247,16 @@ You can set the scope for this method like this: <code>identitytoolkit3 --scope 
 In the latter case it is advised to set the field-cursor to the data-structure's field to specify values more concisely.</p>
 <p>For example, a structure like this:</p>
 <pre><code>Relyingparty:
+  android-install-app: boolean
+  android-minimum-version: string
+  android-package-name: string
+  can-handle-code-in-app: boolean
   captcha-resp: string
   challenge: string
+  continue-url: string
   email: string
+  i-os-app-store-id: string
+  i-os-bundle-id: string
   id-token: string
   kind: string
   new-email: string
@@ -260,35 +267,63 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    captcha-resp=diam</code><ul>
+<li><code>-r .    android-install-app=true</code><ul>
+<li>whether or not to install the android app on the device where the link is opened</li>
+</ul>
+</li>
+<li><code>android-minimum-version=ipsum</code><ul>
+<li>minimum version of the app. if the version on the device is lower than this version then the user is taken to the play store to upgrade the app</li>
+</ul>
+</li>
+<li><code>android-package-name=lorem</code><ul>
+<li>android package name of the android app to handle the action code</li>
+</ul>
+</li>
+<li><code>can-handle-code-in-app=true</code><ul>
+<li>whether or not the app can handle the oob code without first going to web</li>
+</ul>
+</li>
+<li><code>captcha-resp=duo</code><ul>
 <li>The recaptcha response from the user.</li>
 </ul>
 </li>
-<li><code>challenge=ipsum</code><ul>
+<li><code>challenge=aliquyam</code><ul>
 <li>The recaptcha challenge presented to the user.</li>
+</ul>
+</li>
+<li><code>continue-url=sea</code><ul>
+<li>The url to continue to the Gitkit app</li>
 </ul>
 </li>
 <li><code>email=lorem</code><ul>
 <li>The email of the user.</li>
 </ul>
 </li>
-<li><code>id-token=et</code><ul>
+<li><code>i-os-app-store-id=eos</code><ul>
+<li>iOS app store id to download the app if it&#39;s not already installed</li>
+</ul>
+</li>
+<li><code>i-os-bundle-id=erat</code><ul>
+<li>the iOS bundle id of iOS app to handle the action code</li>
+</ul>
+</li>
+<li><code>id-token=sadipscing</code><ul>
 <li>The user&#39;s Gitkit login token for email change.</li>
 </ul>
 </li>
-<li><code>kind=duo</code><ul>
+<li><code>kind=dolor</code><ul>
 <li>The fixed string &#34;identitytoolkit#relyingparty&#34;.</li>
 </ul>
 </li>
-<li><code>new-email=aliquyam</code><ul>
+<li><code>new-email=eirmod</code><ul>
 <li>The new email if the code is for email change.</li>
 </ul>
 </li>
-<li><code>request-type=sea</code><ul>
+<li><code>request-type=elitr</code><ul>
 <li>The request type.</li>
 </ul>
 </li>
-<li><code>user-ip=lorem</code><ul>
+<li><code>user-ip=amet</code><ul>
 <li>The IP address of the user.</li>
 </ul>
 </li>

@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Course Work Create - classroom v1.0.4+20161006</title>
+  <title>Course Work Create - classroom v1.0.5+20170510</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> classroom v1.0.4+20161006</a>
+        <a href=".." class="icon icon-home"> classroom v1.0.5+20170510</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -109,6 +109,13 @@
         
             
     <li class="toctree-l1 ">
+        <a class="" href="../courses_course-work-delete/">Course Work Delete</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
         <a class="" href="../courses_course-work-get/">Course Work Get</a>
         
     </li>
@@ -117,6 +124,13 @@
             
     <li class="toctree-l1 ">
         <a class="" href="../courses_course-work-list/">Course Work List</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../courses_course-work-patch/">Course Work Patch</a>
         
     </li>
 
@@ -388,7 +402,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">classroom v1.0.4+20161006</a>
+        <a href="..">classroom v1.0.5+20170510</a>
       </nav>
 
       
@@ -417,7 +431,25 @@
           <div role="main">
             <div class="section">
               
-                <p>Creates course work. The resulting course work (and corresponding student submissions) are associated with the Developer Console project of the <a href="https://support.google.com/cloud/answer/6158849">OAuth client ID</a> used to make the request. Classroom API requests to modify course work and student submissions must be made with an OAuth client ID from the associated Developer Console project. This method returns the following error codes: * <code>PERMISSION_DENIED</code> if the requesting user is not permitted to access the requested course, create course work in the requested course, or for access errors. * <code>INVALID_ARGUMENT</code> if the request is malformed. * <code>NOT_FOUND</code> if the requested course does not exist.</p>
+                <p>Creates course work.</p>
+<p>The resulting course work (and corresponding student submissions) are
+associated with the Developer Console project of the
+<a href="https://support.google.com/cloud/answer/6158849">OAuth client ID</a> used to
+make the request. Classroom API requests to modify course work and student
+submissions must be made with an OAuth client ID from the associated
+Developer Console project.</p>
+<p>This method returns the following error codes:</p>
+<ul>
+<li><code>PERMISSION_DENIED</code> if the requesting user is not permitted to access the
+requested course, create course work in the requested course, share a
+Drive attachment, or for access errors.</li>
+<li><code>INVALID_ARGUMENT</code> if the request is malformed.</li>
+<li><code>NOT_FOUND</code> if the requested course does not exist.</li>
+<li><code>FAILED_PRECONDITION</code> for the following request error:<ul>
+<li>AttachmentNotVisible</li>
+</ul>
+</li>
+</ul>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for the <em>https://www.googleapis.com/auth/classroom.coursework.students</em> scope to make a valid call.</p>
 <p>If unset, the scope for this method defaults to <em>https://www.googleapis.com/auth/classroom.coursework.students</em>.
@@ -425,7 +457,9 @@ You can set the scope for this method like this: <code>classroom1 --scope &lt;sc
 <h1 id="required-scalar-argument">Required Scalar Argument</h1>
 <ul>
 <li><strong>&lt;course-id&gt;</strong> <em>(string)</em><ul>
-<li>Identifier of the course. This identifier can be either the Classroom-assigned identifier or an alias.</li>
+<li>Identifier of the course.
+    This identifier can be either the Classroom-assigned identifier or an
+    alias.</li>
 </ul>
 </li>
 </ul>
@@ -467,60 +501,59 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    alternate-link=sit</code><ul>
-<li>Absolute link to this course work in the Classroom web UI. This is only populated if <code>state</code> is <code>PUBLISHED</code>. Read-only.</li>
-</ul>
-</li>
-<li><code>assignment.student-work-folder    alternate-link=stet</code><ul>
-<li>URL that can be used to access the Drive folder. Read-only.</li>
-</ul>
-</li>
-<li><code>id=sed</code><ul>
-<li>Drive API resource ID.</li>
-</ul>
-</li>
 <li>
-<p><code>title=et</code></p>
+<p><code>-r .    alternate-link=sit</code></p>
 <ul>
-<li>Title of the Drive folder. Read-only.</li>
+<li>
+<p>Absolute link to this course work in the Classroom web UI.
+    This is only populated if <code>state</code> is <code>PUBLISHED</code>.</p>
+<p>Read-only.
+* <code>assignment.student-work-folder    alternate-link=stet</code>
+    - URL that can be used to access the Drive folder.</p>
+<p>Read-only.
+<em> <code>id=sed</code>
+    - Drive API resource ID.
+</em> <code>title=et</code>
+    - Title of the Drive folder.</p>
+<p>Read-only.</p>
+</li>
 </ul>
 </li>
 <li>
 <p><code>...    associated-with-developer=true</code></p>
 <ul>
-<li>Whether this course work item is associated with the Developer Console project making the request. See google.classroom.Work.CreateCourseWork for more details. Read-only.</li>
-</ul>
-</li>
-<li><code>course-id=kasd</code><ul>
-<li>Identifier of the course. Read-only.</li>
-</ul>
-</li>
-<li><code>creation-time=accusam</code><ul>
-<li>Timestamp when this course work was created. Read-only.</li>
-</ul>
-</li>
-<li><code>description=takimata</code><ul>
-<li>Optional description of this course work. If set, the description must be a valid UTF-8 string containing no more than 30,000 characters.</li>
-</ul>
-</li>
-<li><code>due-date    day=31</code><ul>
-<li>Day of month. Must be from 1 to 31 and valid for the year and month, or 0 if specifying a year/month where the day is not significant.</li>
-</ul>
-</li>
-<li><code>month=100</code><ul>
-<li>Month of year. Must be from 1 to 12.</li>
-</ul>
-</li>
 <li>
-<p><code>year=20</code></p>
-<ul>
-<li>Year of date. Must be from 1 to 9999, or 0 if specifying a date without a year.</li>
+<p>Whether this course work item is associated with the Developer Console
+    project making the request.</p>
+<p>See google.classroom.Work.CreateCourseWork for more
+details.</p>
+<p>Read-only.
+* <code>course-id=kasd</code>
+    - Identifier of the course.</p>
+<p>Read-only.
+* <code>creation-time=accusam</code>
+    - Timestamp when this course work was created.</p>
+<p>Read-only.
+<em> <code>description=takimata</code>
+    - Optional description of this course work.
+If set, the description must be a valid UTF-8 string containing no more
+than 30,000 characters.
+</em> <code>due-date    day=31</code>
+    - Day of month. Must be from 1 to 31 and valid for the year and month, or 0
+if specifying a year/month where the day is not significant.
+<em> <code>month=100</code>
+    - Month of year. Must be from 1 to 12.
+</em> <code>year=20</code>
+    - Year of date. Must be from 1 to 9999, or 0 if specifying a date without
+a year.</p>
+</li>
 </ul>
 </li>
 <li>
 <p><code>..due-time    hours=66</code></p>
 <ul>
-<li>Hours of day in 24 hour format. Should be from 0 to 23. An API may choose to allow the value &#34;24:00:00&#34; for scenarios like business closing time.</li>
+<li>Hours of day in 24 hour format. Should be from 0 to 23. An API may choose
+    to allow the value &#34;24:00:00&#34; for scenarios like business closing time.</li>
 </ul>
 </li>
 <li><code>minutes=92</code><ul>
@@ -534,46 +567,52 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>
 <p><code>seconds=82</code></p>
 <ul>
-<li>Seconds of minutes of the time. Must normally be from 0 to 59. An API may allow the value 60 if it allows leap-seconds.</li>
+<li>Seconds of minutes of the time. Must normally be from 0 to 59. An API may
+    allow the value 60 if it allows leap-seconds.</li>
 </ul>
 </li>
 <li>
 <p><code>..    id=gubergren</code></p>
 <ul>
-<li>Classroom-assigned identifier of this course work, unique per course. Read-only.</li>
-</ul>
-</li>
-<li><code>max-points=0.0653431304201</code><ul>
-<li>Maximum grade for this course work. If zero or unspecified, this assignment is considered ungraded. This must be a non-negative integer value.</li>
-</ul>
-</li>
 <li>
-<p><code>multiple-choice-question    choices=aliquyam</code></p>
-<ul>
-<li>Possible choices.</li>
-<li>Each invocation of this argument appends the given value to the array.</li>
+<p>Classroom-assigned identifier of this course work, unique per course.</p>
+<p>Read-only.
+<em> <code>max-points=0.0653431304201</code>
+    - Maximum grade for this course work.
+If zero or unspecified, this assignment is considered ungraded.
+This must be a non-negative integer value.
+</em> <code>multiple-choice-question    choices=aliquyam</code>
+    - Possible choices.
+    - Each invocation of this argument appends the given value to the array.</p>
+</li>
 </ul>
 </li>
 <li>
 <p><code>..    state=ea</code></p>
 <ul>
-<li>Status of this course work. If unspecified, the default state is <code>DRAFT</code>.</li>
+<li>Status of this course work.
+    If unspecified, the default state is <code>DRAFT</code>.</li>
 </ul>
 </li>
 <li><code>submission-modification-mode=no</code><ul>
-<li>Setting to determine when students are allowed to modify submissions. If unspecified, the default value is <code>MODIFIABLE_UNTIL_TURNED_IN</code>.</li>
+<li>Setting to determine when students are allowed to modify submissions.
+    If unspecified, the default value is <code>MODIFIABLE_UNTIL_TURNED_IN</code>.</li>
 </ul>
 </li>
 <li><code>title=justo</code><ul>
-<li>Title of this course work. The title must be a valid UTF-8 string containing between 1 and 3000 characters.</li>
+<li>Title of this course work.
+    The title must be a valid UTF-8 string containing between 1 and 3000
+    characters.</li>
 </ul>
 </li>
 <li><code>update-time=justo</code><ul>
-<li>Timestamp of the most recent change to this course work. Read-only.</li>
-</ul>
+<li>
+<p>Timestamp of the most recent change to this course work.</p>
+<p>Read-only.
+* <code>work-type=et</code>
+    - Type of this course work.</p>
+<p>The type is set when the course work is created and cannot be changed.</p>
 </li>
-<li><code>work-type=et</code><ul>
-<li>Type of this course work. The type is set when the course work is created and cannot be changed. When creating course work, this must be <code>ASSIGNMENT</code>.</li>
 </ul>
 </li>
 </ul>
@@ -685,7 +724,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../courses_course-work-get/" class="btn btn-neutral float-right" title="Course Work Get">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../courses_course-work-delete/" class="btn btn-neutral float-right" title="Course Work Delete">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="../courses_aliases-list/" class="btn btn-neutral" title="Aliases List"><span class="icon icon-circle-arrow-left"></span> Previous</a>
@@ -721,7 +760,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
         <span><a href="../courses_aliases-list/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../courses_course-work-get/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../courses_course-work-delete/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

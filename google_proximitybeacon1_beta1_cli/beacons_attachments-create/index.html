@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Attachments Create - proximitybeacon v1.0.4+20160429</title>
+  <title>Attachments Create - proximitybeacon v1.0.5+20170517</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> proximitybeacon v1.0.4+20160429</a>
+        <a href=".." class="icon icon-home"> proximitybeacon v1.0.5+20170517</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -148,6 +148,13 @@
         
             
     <li class="toctree-l1 ">
+        <a class="" href="../beacons_delete/">Delete</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
         <a class="" href="../beacons_diagnostics-list/">Diagnostics List</a>
         
     </li>
@@ -231,7 +238,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">proximitybeacon v1.0.4+20160429</a>
+        <a href="..">proximitybeacon v1.0.5+20170517</a>
       </nav>
 
       
@@ -260,9 +267,20 @@
           <div role="main">
             <div class="section">
               
-                <p>Associates the given data with the specified beacon. Attachment data must contain two parts:<br />
-- A namespaced type. 
-- The actual attachment data itself.  The namespaced type consists of two parts, the namespace and the type. The namespace must be one of the values returned by the <code>namespaces</code> endpoint, while the type can be a string of any characters except for the forward slash (<code>/</code>) up to 100 characters in length. Attachment data can be up to 1024 bytes long. Authenticate using an <a href="https://developers.google.com/identity/protocols/OAuth2">OAuth access token</a> from a signed-in user with <strong>Is owner</strong> or <strong>Can edit</strong> permissions in the Google Developers Console project.</p>
+                <p>Associates the given data with the specified beacon. Attachment data must
+contain two parts:
+&lt;ul&gt;
+&lt;li&gt;A namespaced type.&lt;/li&gt;
+&lt;li&gt;The actual attachment data itself.&lt;/li&gt;
+&lt;/ul&gt;
+The namespaced type consists of two parts, the namespace and the type.
+The namespace must be one of the values returned by the <code>namespaces</code>
+endpoint, while the type can be a string of any characters except for the
+forward slash (<code>/</code>) up to 100 characters in length.</p>
+<p>Attachment data can be up to 1024 bytes long.</p>
+<p>Authenticate using an <a href="https://developers.google.com/identity/protocols/OAuth2">OAuth access token</a>
+from a signed-in user with <strong>Is owner</strong> or <strong>Can edit</strong> permissions in the
+Google Developers Console project.</p>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for the <em>https://www.googleapis.com/auth/userlocation.beacon.registry</em> scope to make a valid call.</p>
 <p>If unset, the scope for this method defaults to <em>https://www.googleapis.com/auth/userlocation.beacon.registry</em>.
@@ -270,7 +288,13 @@ You can set the scope for this method like this: <code>proximitybeacon1-beta1 --
 <h1 id="required-scalar-argument">Required Scalar Argument</h1>
 <ul>
 <li><strong>&lt;beacon-name&gt;</strong> <em>(string)</em><ul>
-<li>Beacon on which the attachment should be created. A beacon name has the format &#34;beacons/N!beaconId&#34; where the beaconId is the base16 ID broadcast by the beacon and N is a code for the beacon&#39;s type. Possible values are <code>3</code> for Eddystone-UID, <code>4</code> for Eddystone-EID, <code>1</code> for iBeacon, or <code>5</code> for AltBeacon. For Eddystone-EID beacons, you may use either the current EID or the beacon&#39;s &#34;stable&#34; UID. Required.</li>
+<li>Beacon on which the attachment should be created. A beacon name has the
+    format &#34;beacons/N!beaconId&#34; where the beaconId is the base16 ID broadcast
+    by the beacon and N is a code for the beacon&#39;s type. Possible values are
+    <code>3</code> for Eddystone-UID, <code>4</code> for Eddystone-EID, <code>1</code> for iBeacon, or <code>5</code>
+    for AltBeacon. For Eddystone-EID beacons, you may use either the
+    current EID or the beacon&#39;s &#34;stable&#34; UID.
+    Required.</li>
 </ul>
 </li>
 </ul>
@@ -280,6 +304,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <p>For example, a structure like this:</p>
 <pre><code>BeaconAttachment:
   attachment-name: string
+  creation-time-ms: string
   data: string
   namespaced-type: string
 
@@ -288,15 +313,29 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
 <li><code>-r .    attachment-name=sit</code><ul>
-<li>Resource name of this attachment. Attachment names have the format: beacons/beacon_id/attachments/attachment_id. Leave this empty on creation.</li>
+<li>Resource name of this attachment. Attachment names have the format:
+    &lt;code&gt;beacons/&lt;var&gt;beacon_id&lt;/var&gt;/attachments/&lt;var&gt;attachment_id&lt;/var&gt;&lt;/code&gt;.
+    Leave this empty on creation.</li>
 </ul>
 </li>
-<li><code>data=stet</code><ul>
-<li>An opaque data container for client-provided data. Must be <a href="http://tools.ietf.org/html/rfc4648#section-4">base64</a> encoded in HTTP requests, and will be so encoded (with padding) in responses. Required.</li>
+<li><code>creation-time-ms=stet</code><ul>
+<li>The UTC time when this attachment was created, in milliseconds since the
+    UNIX epoch.</li>
 </ul>
 </li>
-<li><code>namespaced-type=sed</code><ul>
-<li>Specifies what kind of attachment this is. Tells a client how to interpret the <code>data</code> field. Format is namespace/type. Namespace provides type separation between clients. Type describes the type of <code>data</code>, for use by the client when parsing the <code>data</code> field. Required.</li>
+<li><code>data=sed</code><ul>
+<li>An opaque data container for client-provided data. Must be
+    <a href="http://tools.ietf.org/html/rfc4648#section-4">base64</a> encoded in HTTP
+    requests, and will be so encoded (with padding) in responses.
+    Required.</li>
+</ul>
+</li>
+<li><code>namespaced-type=et</code><ul>
+<li>Specifies what kind of attachment this is. Tells a client how to
+    interpret the <code>data</code> field. Format is &lt;var&gt;namespace/type&lt;/var&gt;. Namespace
+    provides type separation between clients. Type describes the type of
+    <code>data</code>, for use by the client when parsing the <code>data</code> field.
+    Required.</li>
 </ul>
 </li>
 </ul>
@@ -325,7 +364,10 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li><strong>-p project-id=string</strong><ul>
-<li>The project id of the project the attachment will belong to. If the project id is not specified then the project making the request is used. Optional.</li>
+<li>The project id of the project the attachment will belong to. If
+    the project id is not specified then the project making the request
+    is used.
+    Optional.</li>
 </ul>
 </li>
 </ul>

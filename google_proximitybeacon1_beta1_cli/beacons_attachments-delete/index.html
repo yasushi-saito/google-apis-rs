@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Attachments Delete - proximitybeacon v1.0.4+20160429</title>
+  <title>Attachments Delete - proximitybeacon v1.0.5+20170517</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> proximitybeacon v1.0.4+20160429</a>
+        <a href=".." class="icon icon-home"> proximitybeacon v1.0.5+20170517</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -143,6 +143,13 @@
         
             
     <li class="toctree-l1 ">
+        <a class="" href="../beacons_delete/">Delete</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
         <a class="" href="../beacons_diagnostics-list/">Diagnostics List</a>
         
     </li>
@@ -226,7 +233,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">proximitybeacon v1.0.4+20160429</a>
+        <a href="..">proximitybeacon v1.0.5+20170517</a>
       </nav>
 
       
@@ -255,7 +262,14 @@
           <div role="main">
             <div class="section">
               
-                <p>Deletes the specified attachment for the given beacon. Each attachment has a unique attachment name (<code>attachmentName</code>) which is returned when you fetch the attachment data via this API. You specify this with the delete request to control which attachment is removed. This operation cannot be undone. Authenticate using an <a href="https://developers.google.com/identity/protocols/OAuth2">OAuth access token</a> from a signed-in user with <strong>Is owner</strong> or <strong>Can edit</strong> permissions in the Google Developers Console project.</p>
+                <p>Deletes the specified attachment for the given beacon. Each attachment has
+a unique attachment name (<code>attachmentName</code>) which is returned when you
+fetch the attachment data via this API. You specify this with the delete
+request to control which attachment is removed. This operation cannot be
+undone.</p>
+<p>Authenticate using an <a href="https://developers.google.com/identity/protocols/OAuth2">OAuth access token</a>
+from a signed-in user with <strong>Is owner</strong> or <strong>Can edit</strong> permissions in the
+Google Developers Console project.</p>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for the <em>https://www.googleapis.com/auth/userlocation.beacon.registry</em> scope to make a valid call.</p>
 <p>If unset, the scope for this method defaults to <em>https://www.googleapis.com/auth/userlocation.beacon.registry</em>.
@@ -263,7 +277,12 @@ You can set the scope for this method like this: <code>proximitybeacon1-beta1 --
 <h1 id="required-scalar-argument">Required Scalar Argument</h1>
 <ul>
 <li><strong>&lt;attachment-name&gt;</strong> <em>(string)</em><ul>
-<li>The attachment name (<code>attachmentName</code>) of the attachment to remove. For example: <code>beacons/3!893737abc9/attachments/c5e937-af0-494-959-ec49d12738</code>. For Eddystone-EID beacons, the beacon ID portion (<code>3!893737abc9</code>) may be the beacon&#39;s current EID, or its &#34;stable&#34; Eddystone-UID. Required.</li>
+<li>The attachment name (<code>attachmentName</code>) of
+    the attachment to remove. For example:
+    <code>beacons/3!893737abc9/attachments/c5e937-af0-494-959-ec49d12738</code>. For
+    Eddystone-EID beacons, the beacon ID portion (<code>3!893737abc9</code>) may be the
+    beacon&#39;s current EID, or its &#34;stable&#34; Eddystone-UID.
+    Required.</li>
 </ul>
 </li>
 </ul>
@@ -284,7 +303,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li><strong>-p project-id=string</strong><ul>
-<li>The project id of the attachment to delete. If not provided, the project that is making the request is used. Optional.</li>
+<li>The project id of the attachment to delete. If not provided, the project
+    that is making the request is used.
+    Optional.</li>
 </ul>
 </li>
 </ul>

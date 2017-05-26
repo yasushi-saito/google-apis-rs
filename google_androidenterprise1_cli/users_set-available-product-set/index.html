@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Set Available Product Set - Android Enterprise v1.0.4+20161207</title>
+  <title>Set Available Product Set - Android Enterprise v1.0.5+20170516</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Android Enterprise v1.0.4+20161207</a>
+        <a href=".." class="icon icon-home"> Android Enterprise v1.0.5+20170516</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -51,99 +51,6 @@
         <a class="" href="..">Home</a>
         
     </li>
-<li>
-          
-            <li>
-    <ul class="subnav">
-    <li><span>Collections</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../collections_delete/">Delete</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../collections_get/">Get</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../collections_insert/">Insert</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../collections_list/">List</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../collections_patch/">Patch</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../collections_update/">Update</a>
-        
-    </li>
-
-        
-    </ul>
-<li>
-          
-            <li>
-    <ul class="subnav">
-    <li><span>Collectionviewers</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../collectionviewers_delete/">Delete</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../collectionviewers_get/">Get</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../collectionviewers_list/">List</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../collectionviewers_patch/">Patch</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../collectionviewers_update/">Update</a>
-        
-    </li>
-
-        
-    </ul>
 <li>
           
             <li>
@@ -580,13 +487,6 @@
     </li>
 
         
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../products_update-permissions/">Update Permissions</a>
-        
-    </li>
-
-        
     </ul>
 <li>
           
@@ -835,7 +735,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Android Enterprise v1.0.4+20161207</a>
+        <a href="..">Android Enterprise v1.0.5+20170516</a>
       </nav>
 
       
@@ -864,7 +764,7 @@
           <div role="main">
             <div class="section">
               
-                <p>Modifies the set of products a user is entitled to access.</p>
+                <p>Modifies the set of products that a user is entitled to access (referred to as whitelisted products). Only products that are approved or products that were previously approved (products with revoked approval) can be whitelisted.</p>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for the <em>https://www.googleapis.com/auth/androidenterprise</em> scope to make a valid call.</p>
 <p>If unset, the scope for this method defaults to <em>https://www.googleapis.com/auth/androidenterprise</em>.
@@ -893,17 +793,17 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    kind=sea</code><ul>
+<li><code>-r .    kind=aliquyam</code><ul>
 <li>Identifies what kind of resource this is. Value: the fixed string &#34;androidenterprise#productSet&#34;.</li>
 </ul>
 </li>
-<li><code>product-id=labore</code><ul>
+<li><code>product-id=lorem</code><ul>
 <li>The list of product IDs making up the set of products.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>product-set-behavior=ipsum</code><ul>
-<li>The interpretation of this product set. &#34;unknown&#34; should never be sent and ignored if received. &#34;whitelist&#34; means that this product set constitutes a whitelist. &#34;includeAll&#34; means that all products are accessible, including products that are approved, not approved, and even products where approval has been revoked. If the value is &#34;includeAll&#34;, the value of the productId field is therefore ignored. If a value is not supplied, it is interpreted to be &#34;whitelist&#34; for backwards compatibility.</li>
+<li><code>product-set-behavior=et</code><ul>
+<li>The interpretation of this product set. &#34;unknown&#34; should never be sent and is ignored if received. &#34;whitelist&#34; means that the user is entitled to access the product set. &#34;includeAll&#34; means that all products are accessible, including products that are approved, products with revoked approval, and products that have never been approved. &#34;allApproved&#34; means that the user is entitled to access all products that are approved for the enterprise. If the value is &#34;allApproved&#34; or &#34;includeAll&#34;, the productId field is ignored. If no value is provided, it is interpreted as &#34;whitelist&#34; for backwards compatibility.</li>
 </ul>
 </li>
 </ul>

@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Update - dfareporting v1.0.4+20161027</title>
+  <title>Update - dfareporting v1.0.5+20170428</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> dfareporting v1.0.4+20161027</a>
+        <a href=".." class="icon icon-home"> dfareporting v1.0.5+20170428</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -1970,7 +1970,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">dfareporting v1.0.4+20161027</a>
+        <a href="..">dfareporting v1.0.5+20170428</a>
       </nav>
 
       
@@ -2265,7 +2265,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 - &#34;SATURDAY&#34;
     - Each invocation of this argument appends the given value to the array.
 <em> <code>hours-of-day=99</code>
-    - Hours of the day when the ad will serve. Must be an integer between 0 and 23 (inclusive), where 0 is midnight to 1 AM, and 23 is 11 PM to midnight. Can be specified with days of week, in which case the ad would serve during these hours on the specified days. For example, if Monday, Wednesday, Friday are the days of week specified and 9-10am, 3-5pm (hours 9, 15, and 16) is specified, the ad would serve Monday, Wednesdays, and Fridays at 9-10am and 3-5pm.
+    - Hours of the day when the ad will serve, where 0 is midnight to 1 AM and 23 is 11 PM to midnight. Can be specified with days of week, in which case the ad would serve during these hours on the specified days. For example if Monday, Wednesday, Friday are the days of week specified and 9-10am, 3-5pm (hours 9, 15, and 16) is specified, the ad would serve Monday, Wednesdays, and Fridays at 9-10am and 3-5pm. Acceptable values are 0 to 23, inclusive.
     - Each invocation of this argument appends the given value to the array.
 </em> <code>user-local-time=false</code>
     - Whether or not to use the user&#39;s local time. If false, the America/New York time zone applies.</p>
@@ -2287,13 +2287,13 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>
 <p><code>..delivery-schedule.frequency-cap    duration=lorem</code></p>
 <ul>
-<li>Duration of time, in seconds, for this frequency cap. The maximum duration is 90 days in seconds, or 7,776,000.</li>
+<li>Duration of time, in seconds, for this frequency cap. The maximum duration is 90 days. Acceptable values are 1 to 7776000, inclusive.</li>
 </ul>
 </li>
 <li>
 <p><code>impressions=amet.</code></p>
 <ul>
-<li>Number of times an individual user can be served the ad within the specified duration. The maximum allowed is 15.</li>
+<li>Number of times an individual user can be served the ad within the specified duration. Acceptable values are 1 to 15, inclusive.</li>
 </ul>
 </li>
 <li>
@@ -2303,7 +2303,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li><code>impression-ratio=eirmod</code><ul>
-<li>Impression ratio for this ad. This ratio determines how often each ad is served relative to the others. For example, if ad A has an impression ratio of 1 and ad B has an impression ratio of 3, then DCM will serve ad B three times as often as ad A. Must be between 1 and 10.</li>
+<li>Impression ratio for this ad. This ratio determines how often each ad is served relative to the others. For example, if ad A has an impression ratio of 1 and ad B has an impression ratio of 3, then DCM will serve ad B three times as often as ad A. Acceptable values are 1 to 10, inclusive.</li>
 </ul>
 </li>
 <li>
@@ -2393,7 +2393,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>
 <p><code>..size    height=37</code></p>
 <ul>
-<li>Height of this size.</li>
+<li>Height of this size. Acceptable values are 0 to 32767, inclusive.</li>
 </ul>
 </li>
 <li><code>iab=false</code><ul>
@@ -2411,7 +2411,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>
 <p><code>width=27</code></p>
 <ul>
-<li>Width of this size.</li>
+<li>Width of this size. Acceptable values are 0 to 32767, inclusive.</li>
 </ul>
 </li>
 <li>

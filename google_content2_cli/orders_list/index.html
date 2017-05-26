@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>List - Shopping Content v1.0.4+20161205</title>
+  <title>List - Shopping Content v1.0.5+20170519</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Shopping Content v1.0.4+20161205</a>
+        <a href=".." class="icon icon-home"> Shopping Content v1.0.5+20170519</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -61,6 +61,13 @@
             
     <li class="toctree-l1 ">
         <a class="" href="../accounts_authinfo/">Authinfo</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../accounts_claimwebsite/">Claimwebsite</a>
         
     </li>
 
@@ -110,49 +117,6 @@
             
     <li class="toctree-l1 ">
         <a class="" href="../accounts_update/">Update</a>
-        
-    </li>
-
-        
-    </ul>
-<li>
-          
-            <li>
-    <ul class="subnav">
-    <li><span>Accountshipping</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../accountshipping_custombatch/">Custombatch</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../accountshipping_get/">Get</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../accountshipping_list/">List</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../accountshipping_patch/">Patch</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../accountshipping_update/">Update</a>
         
     </li>
 
@@ -604,7 +568,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Shopping Content v1.0.4+20161205</a>
+        <a href="..">Shopping Content v1.0.5+20170519</a>
       </nav>
 
       
@@ -662,9 +626,34 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
+<p><strong>-p order-by=string</strong></p>
+<ul>
+<li>The ordering of the returned list. The only supported value are placedDate desc and placedDate asc for now, which returns orders sorted by placement date. &#34;placedDate desc&#34; stands for listing orders by placement date, from oldest to most recent. &#34;placedDate asc&#34; stands for listing orders by placement date, from most recent to oldest. In future releases we&#39;ll support other sorting criteria.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p acknowledged=boolean</strong></p>
+<ul>
+<li>Obtains orders that match the acknowledgement status. When set to true, obtains orders that have been acknowledged. When false, obtains orders that have not been acknowledged.
+    We recommend using this filter set to false, in conjunction with the acknowledge call, such that only un-acknowledged orders are returned.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p statuses=string</strong></p>
 <ul>
 <li>Obtains orders that match any of the specified statuses. Multiple values can be specified with comma separation. Additionally, please note that active is a shortcut for pendingShipment and partiallyShipped, and completed is a shortcut for shipped , partiallyDelivered, delivered, partiallyReturned, returned, and canceled.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p page-token=string</strong></p>
+<ul>
+<li>The token returned by the previous request.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p placed-date-end=string</strong></p>
+<ul>
+<li>Obtains orders placed before this date (exclusively), in ISO 8601 format.</li>
 </ul>
 </li>
 <li>
@@ -678,31 +667,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <ul>
 <li>The maximum number of orders to return in the response, used for paging. The default value is 25 orders per page, and the maximum allowed value is 250 orders per page.
     Known issue: All List calls will return all Orders without limit regardless of the value of this field.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p page-token=string</strong></p>
-<ul>
-<li>The token returned by the previous request.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p acknowledged=boolean</strong></p>
-<ul>
-<li>Obtains orders that match the acknowledgement status. When set to true, obtains orders that have been acknowledged. When false, obtains orders that have not been acknowledged.
-    We recommend using this filter set to false, in conjunction with the acknowledge call, such that only un-acknowledged orders are returned.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p placed-date-end=string</strong></p>
-<ul>
-<li>Obtains orders placed before this date (exclusively), in ISO 8601 format.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p order-by=string</strong></p>
-<ul>
-<li>The ordering of the returned list. The only supported value are placedDate desc and placedDate asc for now, which returns orders sorted by placement date. &#34;placedDate desc&#34; stands for listing orders by placement date, from oldest to most recent. &#34;placedDate asc&#34; stands for listing orders by placement date, from most recent to oldest. In future releases we&#39;ll support other sorting criteria.</li>
 </ul>
 </li>
 </ul>

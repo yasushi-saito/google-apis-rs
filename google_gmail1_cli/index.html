@@ -8,7 +8,7 @@
   <meta name="description" content="A complete library to interact with gmail (protocol v1)">
   
   <link rel="shortcut icon" href="./img/favicon.ico">
-  <title>Home - gmail v1.0.4+20161206</title>
+  <title>Home - gmail v1.0.5+20170510</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="./css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href="." class="icon icon-home"> gmail v1.0.4+20161206</a>
+        <a href="." class="icon icon-home"> gmail v1.0.5+20170510</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -383,6 +383,41 @@
         
             
     <li class="toctree-l1 ">
+        <a class="" href="users_settings-send-as-smime-info-delete/">Settings Send As Smime Info Delete</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="users_settings-send-as-smime-info-get/">Settings Send As Smime Info Get</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="users_settings-send-as-smime-info-insert/">Settings Send As Smime Info Insert</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="users_settings-send-as-smime-info-list/">Settings Send As Smime Info List</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="users_settings-send-as-smime-info-set-default/">Settings Send As Smime Info Set Default</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
         <a class="" href="users_settings-send-as-update/">Settings Send As Update</a>
         
     </li>
@@ -492,7 +527,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href=".">gmail v1.0.4+20161206</a>
+        <a href=".">gmail v1.0.5+20170510</a>
       </nav>
 
       
@@ -536,7 +571,7 @@ capabilities. Errors will be printed to standard error, and cause the program's 
 
 <p>Find the source code <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/gmail1-cli">on github</a>.</p>
 <h1 id="usage">Usage</h1>
-<p>This documentation was generated from the <em>gmail</em> API at revision <em>20161206</em>. The CLI is at version <em>1.0.4</em>.</p>
+<p>This documentation was generated from the <em>gmail</em> API at revision <em>20170510</em>. The CLI is at version <em>1.0.5</em>.</p>
 <pre><code class="bash">gmail1 [options]
         users
                 drafts-create &lt;user-id&gt; (-r &lt;kv&gt;)... (-u (simple|resumable) -f &lt;file&gt; [-m &lt;mime&gt;]) [-p &lt;v&gt;]... [-o &lt;out&gt;]
@@ -582,6 +617,11 @@ capabilities. Errors will be printed to standard error, and cause the program's 
                 settings-send-as-get &lt;user-id&gt; &lt;send-as-email&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 settings-send-as-list &lt;user-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 settings-send-as-patch &lt;user-id&gt; &lt;send-as-email&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                settings-send-as-smime-info-delete &lt;user-id&gt; &lt;send-as-email&gt; &lt;id&gt; [-p &lt;v&gt;]...
+                settings-send-as-smime-info-get &lt;user-id&gt; &lt;send-as-email&gt; &lt;id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                settings-send-as-smime-info-insert &lt;user-id&gt; &lt;send-as-email&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                settings-send-as-smime-info-list &lt;user-id&gt; &lt;send-as-email&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                settings-send-as-smime-info-set-default &lt;user-id&gt; &lt;send-as-email&gt; &lt;id&gt; [-p &lt;v&gt;]...
                 settings-send-as-update &lt;user-id&gt; &lt;send-as-email&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 settings-send-as-verify &lt;user-id&gt; &lt;send-as-email&gt; [-p &lt;v&gt;]...
                 settings-update-auto-forwarding &lt;user-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
@@ -703,5 +743,5 @@ issue at hand.</p>
 
 <!--
 MkDocs version : 0.16.1
-Build Date UTC : 2017-02-05 04:45:59
+Build Date UTC : 2017-05-26 14:36:26
 -->

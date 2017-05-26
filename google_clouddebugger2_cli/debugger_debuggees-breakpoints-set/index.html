@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Debuggees Breakpoints Set - Cloud Debugger v1.0.4+20160810</title>
+  <title>Debuggees Breakpoints Set - Cloud Debugger v1.0.5+20170413</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Cloud Debugger v1.0.4+20160810</a>
+        <a href=".." class="icon icon-home"> Cloud Debugger v1.0.5+20170413</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -159,7 +159,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Cloud Debugger v1.0.4+20160810</a>
+        <a href="..">Cloud Debugger v1.0.5+20170413</a>
       </nav>
 
       
@@ -235,11 +235,14 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
 <li><code>-r .    action=duo</code><ul>
-<li>Action that the agent should perform when the code at the breakpoint location is hit.</li>
+<li>Action that the agent should perform when the code at the
+    breakpoint location is hit.</li>
 </ul>
 </li>
 <li><code>condition=aliquyam</code><ul>
-<li>Condition that triggers the breakpoint. The condition is a compound boolean expression composed using expressions in a programming language at the source location.</li>
+<li>Condition that triggers the breakpoint.
+    The condition is a compound boolean expression composed using expressions
+    in a programming language at the source location.</li>
 </ul>
 </li>
 <li><code>create-time=sea</code><ul>
@@ -247,12 +250,16 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li><code>expressions=lorem</code><ul>
-<li>List of read-only expressions to evaluate at the breakpoint location. The expressions are composed using expressions in the programming language at the source location. If the breakpoint action is <code>LOG</code>, the evaluated expressions are included in log statements.</li>
+<li>List of read-only expressions to evaluate at the breakpoint location.
+    The expressions are composed using expressions in the programming language
+    at the source location. If the breakpoint action is <code>LOG</code>, the evaluated
+    expressions are included in log statements.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
 <li><code>final-time=eos</code><ul>
-<li>Time this breakpoint was finalized as seen by the server in seconds resolution.</li>
+<li>Time this breakpoint was finalized as seen by the server in seconds
+    resolution.</li>
 </ul>
 </li>
 <li><code>id=erat</code><ul>
@@ -260,11 +267,13 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li><code>is-final-state=false</code><ul>
-<li>When true, indicates that this is a final result and the breakpoint state will not change from here on.</li>
+<li>When true, indicates that this is a final result and the
+    breakpoint state will not change from here on.</li>
 </ul>
 </li>
 <li><code>labels=key=dolor</code><ul>
-<li>A set of custom breakpoint properties, populated by the agent, to be displayed to the user.</li>
+<li>A set of custom breakpoint properties, populated by the agent, to be
+    displayed to the user.</li>
 <li>the value will be associated with the given <code>key</code></li>
 </ul>
 </li>
@@ -284,19 +293,33 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>Indicates the severity of the log. Only relevant when action is <code>LOG</code>.</li>
 </ul>
 </li>
-<li><code>log-message-format=no</code><ul>
-<li>Only relevant when action is <code>LOG</code>. Defines the message to log when the breakpoint hits. The message may include parameter placeholders <code>$0</code>, <code>$1</code>, etc. These placeholders are replaced with the evaluated value of the appropriate expression. Expressions not referenced in <code>log_message_format</code> are not logged. Example: <code>Message received, id = $0, count = $1</code> with <code>expressions</code> = <code>[ message.id, message.count ]</code>.</li>
-</ul>
-</li>
-<li><code>status.description    format=labore</code><ul>
-<li>Format template for the message. The <code>format</code> uses placeholders <code>$0</code>, <code>$1</code>, etc. to reference parameters. <code>$$</code> can be used to denote the <code>$</code> character. Examples: * <code>Failed to load &amp;#39;$0&amp;#39; which helps debug $1 the first time it is loaded. Again, $0 is very important.</code> * <code>Please pay $$10 to use $0 instead of $1.</code></li>
-</ul>
-</li>
 <li>
-<p><code>parameters=eirmod</code></p>
+<p><code>log-message-format=no</code></p>
 <ul>
+<li>
+<p>Only relevant when action is <code>LOG</code>. Defines the message to log when
+    the breakpoint hits. The message may include parameter placeholders <code>$0</code>,
+    <code>$1</code>, etc. These placeholders are replaced with the evaluated value
+    of the appropriate expression. Expressions not referenced in
+    <code>log_message_format</code> are not logged.</p>
+<p>Example: <code>Message received, id = $0, count = $1</code> with
+<code>expressions</code> = <code>[ message.id, message.count ]</code>.
+* <code>status.description    format=labore</code>
+    - Format template for the message. The <code>format</code> uses placeholders <code>$0</code>,
+<code>$1</code>, etc. to reference parameters. <code>$$</code> can be used to denote the <code>$</code>
+character.</p>
+<p>Examples:</p>
+<ul>
+<li><code>Failed to load &amp;#39;$0&amp;#39; which helps debug $1 the first time it
+    is loaded.  Again, $0 is very important.</code></li>
+<li><code>Please pay $$10 to use $0 instead of $1.</code></li>
+<li><code>parameters=eirmod</code><ul>
 <li>Optional parameters to be embedded into the message.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 <li>
@@ -343,7 +366,8 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li><strong>-p client-version=string</strong><ul>
-<li>The client version making the call. Following: <code>domain/type/version</code> (e.g., <code>google.com/intellij/v1</code>).</li>
+<li>The client version making the call.
+    Following: <code>domain/type/version</code> (e.g., <code>google.com/intellij/v1</code>).</li>
 </ul>
 </li>
 </ul>

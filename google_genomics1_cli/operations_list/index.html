@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>List - genomics v1.0.4+20160928</title>
+  <title>List - genomics v1.0.5+20170520</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> genomics v1.0.4+20160928</a>
+        <a href=".." class="icon icon-home"> genomics v1.0.5+20170520</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -377,13 +377,6 @@
     </li>
 
         
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../reads_stream/">Stream</a>
-        
-    </li>
-
-        
     </ul>
 <li>
           
@@ -492,13 +485,6 @@
     </li>
 
         
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../variants_stream/">Stream</a>
-        
-    </li>
-
-        
     </ul>
 <li>
           
@@ -562,7 +548,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">genomics v1.0.4+20160928</a>
+        <a href="..">genomics v1.0.5+20170520</a>
       </nav>
 
       
@@ -630,15 +616,38 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p filter=string</strong></p>
+<p><strong>-p page-size=integer</strong></p>
 <ul>
-<li>A string for filtering Operations. The following filter fields are supported: * projectId: Required. Corresponds to OperationMetadata.projectId. * createTime: The time this job was created, in seconds from the <a href="http://en.wikipedia.org/wiki/Unix_time">epoch</a>. Can use <code>&amp;gt;=</code> and/or <code>= 1432140000</code> * <code>projectId = my-project AND createTime &amp;gt;= 1432140000 AND createTime &amp;lt;= 1432150000 AND status = RUNNING</code> * <code>projectId = my-project AND labels.color = *</code> * <code>projectId = my-project AND labels.color = red</code></li>
+<li>The maximum number of results to return. If unspecified, defaults to<ol>
+<li>The maximum value is 2048.</li>
+</ol>
+</li>
 </ul>
 </li>
 <li>
-<p><strong>-p page-size=integer</strong></p>
+<p><strong>-p filter=string</strong></p>
 <ul>
-<li>The maximum number of results to return. If unspecified, defaults to 256. The maximum value is 2048.</li>
+<li>
+<p>A string for filtering Operations.
+    The following filter fields are supported&amp;#58;</p>
+<ul>
+<li>projectId&amp;#58; Required. Corresponds to
+  OperationMetadata.projectId.</li>
+<li>createTime&amp;#58; The time this job was created, in seconds from the
+  <a href="http://en.wikipedia.org/wiki/Unix_time">epoch</a>. Can use <code>&amp;gt;=</code> and/or <code>&amp;lt;=</code>
+  operators.</li>
+<li>status&amp;#58; Can be <code>RUNNING</code>, <code>SUCCESS</code>, <code>FAILURE</code>, or <code>CANCELED</code>. Only
+  one status may be specified.</li>
+<li>labels.key where key is a label key.</li>
+</ul>
+<p>Examples&amp;#58;</p>
+<ul>
+<li><code>projectId = my-project AND createTime &amp;gt;= 1432140000</code></li>
+<li><code>projectId = my-project AND createTime &amp;gt;= 1432140000 AND createTime &amp;lt;= 1432150000 AND status = RUNNING</code></li>
+<li><code>projectId = my-project AND labels.color = *</code></li>
+<li><code>projectId = my-project AND labels.color = red</code></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>

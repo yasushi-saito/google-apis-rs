@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>List - dfareporting v1.0.4+20161027</title>
+  <title>List - dfareporting v1.0.5+20170428</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> dfareporting v1.0.4+20161027</a>
+        <a href=".." class="icon icon-home"> dfareporting v1.0.5+20170428</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -1968,7 +1968,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">dfareporting v1.0.4+20161027</a>
+        <a href="..">dfareporting v1.0.5+20170428</a>
       </nav>
 
       
@@ -2026,27 +2026,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
+<p><strong>-p floodlight-activity-group-ids=string</strong></p>
+<ul>
+<li>Select only floodlight activities with the specified floodlight activity group IDs.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p max-results=integer</strong></p>
 <ul>
 <li>Maximum number of results to return.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p search-string=string</strong></p>
-<ul>
-<li>Allows searching for objects by name or ID. Wildcards (<em>) are allowed. For example, &#34;floodlightactivity</em>2015&#34; will return objects with names like &#34;floodlightactivity June 2015&#34;, &#34;floodlightactivity April 2015&#34;, or simply &#34;floodlightactivity 2015&#34;. Most of the searches also add wildcards implicitly at the start and the end of the search string. For example, a search string of &#34;floodlightactivity&#34; will match objects with name &#34;my floodlightactivity activity&#34;, &#34;floodlightactivity 2015&#34;, or simply &#34;floodlightactivity&#34;.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p page-token=string</strong></p>
-<ul>
-<li>Value of the nextPageToken from the previous result page.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p floodlight-activity-group-type=string</strong></p>
-<ul>
-<li>Select only floodlight activities with the specified floodlight activity group type.</li>
 </ul>
 </li>
 <li>
@@ -2056,15 +2044,33 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p advertiser-id=string</strong></p>
+<p><strong>-p floodlight-configuration-id=string</strong></p>
 <ul>
-<li>Select only floodlight activities for the specified advertiser ID. Must specify either ids, advertiserId, or floodlightConfigurationId for a non-empty result.</li>
+<li>Select only floodlight activities for the specified floodlight configuration ID. Must specify either ids, advertiserId, or floodlightConfigurationId for a non-empty result.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p floodlight-activity-group-name=string</strong></p>
+<p><strong>-p sort-order=string</strong></p>
 <ul>
-<li>Select only floodlight activities with the specified floodlight activity group name.</li>
+<li>Order of sorted results.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p page-token=string</strong></p>
+<ul>
+<li>Value of the nextPageToken from the previous result page.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p search-string=string</strong></p>
+<ul>
+<li>Allows searching for objects by name or ID. Wildcards (<em>) are allowed. For example, &#34;floodlightactivity</em>2015&#34; will return objects with names like &#34;floodlightactivity June 2015&#34;, &#34;floodlightactivity April 2015&#34;, or simply &#34;floodlightactivity 2015&#34;. Most of the searches also add wildcards implicitly at the start and the end of the search string. For example, a search string of &#34;floodlightactivity&#34; will match objects with name &#34;my floodlightactivity activity&#34;, &#34;floodlightactivity 2015&#34;, or simply &#34;floodlightactivity&#34;.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p advertiser-id=string</strong></p>
+<ul>
+<li>Select only floodlight activities for the specified advertiser ID. Must specify either ids, advertiserId, or floodlightConfigurationId for a non-empty result.</li>
 </ul>
 </li>
 <li>
@@ -2074,15 +2080,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p floodlight-configuration-id=string</strong></p>
+<p><strong>-p floodlight-activity-group-name=string</strong></p>
 <ul>
-<li>Select only floodlight activities for the specified floodlight configuration ID. Must specify either ids, advertiserId, or floodlightConfigurationId for a non-empty result.</li>
+<li>Select only floodlight activities with the specified floodlight activity group name.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p floodlight-activity-group-ids=string</strong></p>
+<p><strong>-p floodlight-activity-group-type=string</strong></p>
 <ul>
-<li>Select only floodlight activities with the specified floodlight activity group IDs.</li>
+<li>Select only floodlight activities with the specified floodlight activity group type.</li>
 </ul>
 </li>
 <li>
@@ -2095,12 +2101,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <p><strong>-p tag-string=string</strong></p>
 <ul>
 <li>Select only floodlight activities with the specified tag string.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p sort-order=string</strong></p>
-<ul>
-<li>Order of sorted results, default is ASCENDING.</li>
 </ul>
 </li>
 </ul>

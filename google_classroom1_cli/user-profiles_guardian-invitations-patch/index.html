@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Guardian Invitations Patch - classroom v1.0.4+20161006</title>
+  <title>Guardian Invitations Patch - classroom v1.0.5+20170510</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> classroom v1.0.4+20161006</a>
+        <a href=".." class="icon icon-home"> classroom v1.0.5+20170510</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -88,6 +88,13 @@
         
             
     <li class="toctree-l1 ">
+        <a class="" href="../courses_course-work-delete/">Course Work Delete</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
         <a class="" href="../courses_course-work-get/">Course Work Get</a>
         
     </li>
@@ -96,6 +103,13 @@
             
     <li class="toctree-l1 ">
         <a class="" href="../courses_course-work-list/">Course Work List</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../courses_course-work-patch/">Course Work Patch</a>
         
     </li>
 
@@ -388,7 +402,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">classroom v1.0.4+20161006</a>
+        <a href="..">classroom v1.0.5+20170510</a>
       </nav>
 
       
@@ -417,7 +431,23 @@
           <div role="main">
             <div class="section">
               
-                <p>Modifies a guardian invitation. Currently, the only valid modification is to change the <code>state</code> from <code>PENDING</code> to <code>COMPLETE</code>. This has the effect of withdrawing the invitation. This method returns the following error codes: * <code>PERMISSION_DENIED</code> if the current user does not have permission to manage guardians, if guardians are not enabled for the domain in question or for other access errors. * <code>FAILED_PRECONDITION</code> if the guardian link is not in the <code>PENDING</code> state. * <code>INVALID_ARGUMENT</code> if the format of the student ID provided cannot be recognized (it is not an email address, nor a <code>user_id</code> from this API), or if the passed <code>GuardianInvitation</code> has a <code>state</code> other than <code>COMPLETE</code>, or if it modifies fields other than <code>state</code>. * <code>NOT_FOUND</code> if the student ID provided is a valid student ID, but Classroom has no record of that student, or if the <code>id</code> field does not refer to a guardian invitation known to Classroom.</p>
+                <p>Modifies a guardian invitation.</p>
+<p>Currently, the only valid modification is to change the <code>state</code> from
+<code>PENDING</code> to <code>COMPLETE</code>. This has the effect of withdrawing the invitation.</p>
+<p>This method returns the following error codes:</p>
+<ul>
+<li><code>PERMISSION_DENIED</code> if the current user does not have permission to
+  manage guardians, if guardians are not enabled for the domain in question
+  or for other access errors.</li>
+<li><code>FAILED_PRECONDITION</code> if the guardian link is not in the <code>PENDING</code> state.</li>
+<li><code>INVALID_ARGUMENT</code> if the format of the student ID provided
+  cannot be recognized (it is not an email address, nor a <code>user_id</code> from
+  this API), or if the passed <code>GuardianInvitation</code> has a <code>state</code> other than
+  <code>COMPLETE</code>, or if it modifies fields other than <code>state</code>.</li>
+<li><code>NOT_FOUND</code> if the student ID provided is a valid student ID, but
+  Classroom has no record of that student, or if the <code>id</code> field does not
+  refer to a guardian invitation known to Classroom.</li>
+</ul>
 <h1 id="required-scalar-arguments">Required Scalar Arguments</h1>
 <ul>
 <li><strong>&lt;student-id&gt;</strong> <em>(string)</em><ul>
@@ -444,24 +474,21 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    creation-time=justo</code><ul>
-<li>The time that this invitation was created. Read-only.</li>
-</ul>
+<li><code>-r .    creation-time=invidunt</code><ul>
+<li>
+<p>The time that this invitation was created.</p>
+<p>Read-only.
+* <code>invitation-id=rebum.</code>
+    - Unique identifier for this invitation.</p>
+<p>Read-only.
+<em> <code>invited-email-address=lorem</code>
+    - Email address that the invitation was sent to.
+This field is only visible to domain administrators.
+</em> <code>state=clita</code>
+    - The state that this invitation is in.
+* <code>student-id=invidunt</code>
+    - ID of the student (in standard format)</p>
 </li>
-<li><code>invitation-id=est</code><ul>
-<li>Unique identifier for this invitation. Read-only.</li>
-</ul>
-</li>
-<li><code>invited-email-address=amet</code><ul>
-<li>Email address that the invitation was sent to. This field is only visible to domain administrators.</li>
-</ul>
-</li>
-<li><code>state=accusam</code><ul>
-<li>The state that this invitation is in.</li>
-</ul>
-</li>
-<li><code>student-id=clita</code><ul>
-<li>ID of the student (in standard format)</li>
 </ul>
 </li>
 </ul>
@@ -490,7 +517,16 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li><strong>-p update-mask=string</strong><ul>
-<li>Mask that identifies which fields on the course to update. This field is required to do an update. The update will fail if invalid fields are specified. The following fields are valid: * <code>state</code> When set in a query parameter, this field should be specified as <code>updateMask=,,...</code></li>
+<li>
+<p>Mask that identifies which fields on the course to update.
+    This field is required to do an update. The update will fail if invalid
+    fields are specified. The following fields are valid:</p>
+<ul>
+<li><code>state</code></li>
+</ul>
+<p>When set in a query parameter, this field should be specified as</p>
+<p><code>updateMask=&amp;lt;field1&amp;gt;,&amp;lt;field2&amp;gt;,...</code></p>
+</li>
 </ul>
 </li>
 </ul>

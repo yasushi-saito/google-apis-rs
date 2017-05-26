@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Aliases Create - classroom v1.0.4+20161006</title>
+  <title>Aliases Create - classroom v1.0.5+20170510</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> classroom v1.0.4+20161006</a>
+        <a href=".." class="icon icon-home"> classroom v1.0.5+20170510</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -109,6 +109,13 @@
         
             
     <li class="toctree-l1 ">
+        <a class="" href="../courses_course-work-delete/">Course Work Delete</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
         <a class="" href="../courses_course-work-get/">Course Work Get</a>
         
     </li>
@@ -117,6 +124,13 @@
             
     <li class="toctree-l1 ">
         <a class="" href="../courses_course-work-list/">Course Work List</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../courses_course-work-patch/">Course Work Patch</a>
         
     </li>
 
@@ -388,7 +402,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">classroom v1.0.4+20161006</a>
+        <a href="..">classroom v1.0.5+20170510</a>
       </nav>
 
       
@@ -417,7 +431,17 @@
           <div role="main">
             <div class="section">
               
-                <p>Creates an alias for a course. This method returns the following error codes: * <code>PERMISSION_DENIED</code> if the requesting user is not permitted to create the alias or for access errors. * <code>NOT_FOUND</code> if the course does not exist. * <code>ALREADY_EXISTS</code> if the alias already exists.</p>
+                <p>Creates an alias for a course.</p>
+<p>This method returns the following error codes:</p>
+<ul>
+<li><code>PERMISSION_DENIED</code> if the requesting user is not permitted to create the
+alias or for access errors.</li>
+<li><code>NOT_FOUND</code> if the course does not exist.</li>
+<li><code>ALREADY_EXISTS</code> if the alias already exists.</li>
+<li><code>FAILED_PRECONDITION</code> if the alias requested does not make sense for the
+  requesting user or course (for example, if a user not in a domain
+  attempts to access a domain-scoped alias).</li>
+</ul>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for the <em>https://www.googleapis.com/auth/classroom.courses</em> scope to make a valid call.</p>
 <p>If unset, the scope for this method defaults to <em>https://www.googleapis.com/auth/classroom.courses</em>.
@@ -425,7 +449,9 @@ You can set the scope for this method like this: <code>classroom1 --scope &lt;sc
 <h1 id="required-scalar-argument">Required Scalar Argument</h1>
 <ul>
 <li><strong>&lt;course-id&gt;</strong> <em>(string)</em><ul>
-<li>Identifier of the course to alias. This identifier can be either the Classroom-assigned identifier or an alias.</li>
+<li>Identifier of the course to alias.
+    This identifier can be either the Classroom-assigned identifier or an
+    alias.</li>
 </ul>
 </li>
 </ul>
@@ -441,7 +467,16 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
 <li><code>-r .    alias=eirmod</code><ul>
-<li>Alias string. The format of the string indicates the desired alias scoping. * <code>d:</code> indicates a domain-scoped alias. Example: <code>d:math_101</code> * <code>p:</code> indicates a project-scoped alias. Example: <code>p:abc123</code> This field has a maximum length of 256 characters.</li>
+<li>
+<p>Alias string. The format of the string indicates the desired alias scoping.</p>
+<ul>
+<li><code>d:&amp;lt;name&amp;gt;</code> indicates a domain-scoped alias.
+  Example: <code>d:math_101</code></li>
+<li><code>p:&amp;lt;name&amp;gt;</code> indicates a project-scoped alias.
+  Example: <code>p:abc123</code></li>
+</ul>
+<p>This field has a maximum length of 256 characters.</p>
+</li>
 </ul>
 </li>
 </ul>

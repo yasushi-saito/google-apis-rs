@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Update - storage v1.0.4+20161123</title>
+  <title>Update - storage v1.0.5+20170504</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> storage v1.0.4+20161123</a>
+        <a href=".." class="icon icon-home"> storage v1.0.5+20170504</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -124,6 +124,13 @@
         
             
     <li class="toctree-l1 ">
+        <a class="" href="../buckets_get-iam-policy/">Get Iam Policy</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
         <a class="" href="../buckets_insert/">Insert</a>
         
     </li>
@@ -139,6 +146,20 @@
             
     <li class="toctree-l1 ">
         <a class="" href="../buckets_patch/">Patch</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../buckets_set-iam-policy/">Set Iam Policy</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../buckets_test-iam-permissions/">Test Iam Permissions</a>
         
     </li>
 
@@ -244,6 +265,42 @@
           
             <li>
     <ul class="subnav">
+    <li><span>Notifications</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../notifications_delete/">Delete</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../notifications_get/">Get</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../notifications_insert/">Insert</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../notifications_list/">List</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
     <li><span>Object Access Controls</span></li>
 
         
@@ -327,6 +384,13 @@
         
             
     <li class="toctree-l1 ">
+        <a class="" href="../objects_get-iam-policy/">Get Iam Policy</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
         <a class="" href="../objects_insert/">Insert</a>
         
     </li>
@@ -355,6 +419,20 @@
         
             
     <li class="toctree-l1 ">
+        <a class="" href="../objects_set-iam-policy/">Set Iam Policy</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../objects_test-iam-permissions/">Test Iam Permissions</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
         <a class="" href="../objects_update/">Update</a>
         
     </li>
@@ -363,6 +441,21 @@
             
     <li class="toctree-l1 ">
         <a class="" href="../objects_watch-all/">Watch All</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Projects</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../projects_service-account-get/">Service Account Get</a>
         
     </li>
 
@@ -380,7 +473,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">storage v1.0.4+20161123</a>
+        <a href="..">storage v1.0.5+20170504</a>
       </nav>
 
       
@@ -430,9 +523,12 @@ You can set the scope for this method like this: <code>storage1 --scope &lt;scop
 In the latter case it is advised to set the field-cursor to the data-structure's field to specify values more concisely.</p>
 <p>For example, a structure like this:</p>
 <pre><code>Bucket:
+  billing:
+    requester-pays: boolean
   etag: string
   id: string
   kind: string
+  labels: { string: string }
   location: string
   logging:
     log-bucket: string
@@ -457,87 +553,100 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    etag=vero</code><ul>
+<li>
+<p><code>-r .billing    requester-pays=false</code></p>
+<ul>
+<li>When set to true, bucket is requester pays.</li>
+</ul>
+</li>
+<li>
+<p><code>..    etag=consetetur</code></p>
+<ul>
 <li>HTTP 1.1 Entity tag for the bucket.</li>
 </ul>
 </li>
-<li><code>id=diam</code><ul>
-<li>The ID of the bucket.</li>
+<li><code>id=dolore</code><ul>
+<li>The ID of the bucket. For buckets, the id and name properities are the same.</li>
 </ul>
 </li>
-<li><code>kind=rebum.</code><ul>
+<li><code>kind=duo</code><ul>
 <li>The kind of item this is. For buckets, this is always storage#bucket.</li>
 </ul>
 </li>
-<li><code>location=consetetur</code><ul>
+<li><code>labels=key=aliquyam</code><ul>
+<li>User-provided labels, in key/value pairs.</li>
+<li>the value will be associated with the given <code>key</code></li>
+</ul>
+</li>
+<li><code>location=lorem</code><ul>
 <li>The location of the bucket. Object data for objects in the bucket resides in physical storage within this region. Defaults to US. See the developer&#39;s guide for the authoritative list.</li>
 </ul>
 </li>
-<li><code>logging    log-bucket=sadipscing</code><ul>
+<li><code>logging    log-bucket=et</code><ul>
 <li>The destination bucket where the current bucket&#39;s logs should be placed.</li>
 </ul>
 </li>
 <li>
-<p><code>log-object-prefix=vero</code></p>
+<p><code>log-object-prefix=clita</code></p>
 <ul>
 <li>A prefix for log object names.</li>
 </ul>
 </li>
 <li>
-<p><code>..    metageneration=sadipscing</code></p>
+<p><code>..    metageneration=consetetur</code></p>
 <ul>
 <li>The metadata generation of this bucket.</li>
 </ul>
 </li>
-<li><code>name=invidunt</code><ul>
+<li><code>name=takimata</code><ul>
 <li>The name of the bucket.</li>
 </ul>
 </li>
-<li><code>owner    entity=consetetur</code><ul>
+<li><code>owner    entity=nonumy</code><ul>
 <li>The entity, in the form project-owner-projectId.</li>
 </ul>
 </li>
 <li>
-<p><code>entity-id=dolore</code></p>
+<p><code>entity-id=kasd</code></p>
 <ul>
 <li>The ID for the entity.</li>
 </ul>
 </li>
 <li>
-<p><code>..    project-number=duo</code></p>
+<p><code>..    project-number=sanctus</code></p>
 <ul>
 <li>The project number of the project the bucket belongs to.</li>
 </ul>
 </li>
-<li><code>self-link=aliquyam</code><ul>
+<li><code>self-link=takimata</code><ul>
 <li>The URI of this bucket.</li>
 </ul>
 </li>
-<li><code>storage-class=lorem</code><ul>
+<li><code>storage-class=at</code><ul>
 <li>The bucket&#39;s default storage class, used whenever no storageClass is specified for a newly-created object. This defines how objects in the bucket are stored and determines the SLA and the cost of storage. Values include MULTI_REGIONAL, REGIONAL, STANDARD, NEARLINE, COLDLINE, and DURABLE_REDUCED_AVAILABILITY. If this value is not specified when the bucket is created, it will default to STANDARD. For more information, see storage classes.</li>
 </ul>
 </li>
-<li><code>time-created=et</code><ul>
+<li><code>time-created=labore</code><ul>
 <li>The creation time of the bucket in RFC 3339 format.</li>
 </ul>
 </li>
-<li><code>updated=clita</code><ul>
+<li><code>updated=invidunt</code><ul>
 <li>The modification time of the bucket in RFC 3339 format.</li>
 </ul>
 </li>
 <li>
-<p><code>versioning    enabled=true</code></p>
+<p><code>versioning    enabled=false</code></p>
 <ul>
 <li>While set to true, versioning is fully enabled for this bucket.</li>
 </ul>
 </li>
 <li>
-<p><code>..website    main-page-suffix=takimata</code></p>
+<p><code>..website    main-page-suffix=sadipscing</code></p>
 <ul>
 <li>If the requested object path is missing, the service will ensure the path has a trailing &#39;/&#39;, append this suffix, and attempt to retrieve the resulting object. This allows the creation of index.html objects to represent directory pages.</li>
 </ul>
 </li>
-<li><code>not-found-page=nonumy</code><ul>
+<li><code>not-found-page=rebum.</code><ul>
 <li>If the requested object path is missing, and any mainPageSuffix object is missing, if applicable, the service will return the named object from this bucket as the content for a 404 Not Found result.</li>
 </ul>
 </li>
@@ -567,15 +676,21 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
+<p><strong>-p predefined-acl=string</strong></p>
+<ul>
+<li>Apply a predefined set of access controls to this bucket.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p predefined-default-object-acl=string</strong></p>
 <ul>
 <li>Apply a predefined set of default object access controls to this bucket.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p predefined-acl=string</strong></p>
+<p><strong>-p if-metageneration-not-match=string</strong></p>
 <ul>
-<li>Apply a predefined set of access controls to this bucket.</li>
+<li>Makes the return of the bucket metadata conditional on whether the bucket&#39;s current metageneration does not match the given value.</li>
 </ul>
 </li>
 <li>
@@ -585,15 +700,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p projection=string</strong></p>
+<p><strong>-p user-project=string</strong></p>
 <ul>
-<li>Set of properties to return. Defaults to full.</li>
+<li>The project number to be billed for this request, for Requester Pays buckets.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p if-metageneration-not-match=string</strong></p>
+<p><strong>-p projection=string</strong></p>
 <ul>
-<li>Makes the return of the bucket metadata conditional on whether the bucket&#39;s current metageneration does not match the given value.</li>
+<li>Set of properties to return. Defaults to full.</li>
 </ul>
 </li>
 </ul>
@@ -653,7 +768,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
         <a href="../channels_stop/" class="btn btn-neutral float-right" title="Stop">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../buckets_patch/" class="btn btn-neutral" title="Patch"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../buckets_test-iam-permissions/" class="btn btn-neutral" title="Test Iam Permissions"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -683,7 +798,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
           <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/storage1-cli" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../buckets_patch/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../buckets_test-iam-permissions/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
         <span style="margin-left: 15px"><a href="../channels_stop/" style="color: #fcfcfc">Next &raquo;</a></span>

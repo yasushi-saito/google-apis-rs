@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Subscriptions Create - pubsub v1.0.4+20161122</title>
+  <title>Subscriptions Create - Pubsub v1.0.5+20170502</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> pubsub v1.0.4+20161122</a>
+        <a href=".." class="icon icon-home"> Pubsub v1.0.5+20170502</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -253,7 +253,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">pubsub v1.0.4+20161122</a>
+        <a href="..">Pubsub v1.0.5+20170502</a>
       </nav>
 
       
@@ -359,11 +359,10 @@ in length, and it must not start with <code>&amp;#34;goog&amp;#34;</code>.
 <p>Every endpoint has a set of API supported attributes that can be used to
 control different aspects of the message delivery.</p>
 <p>The currently supported attribute is <code>x-goog-version</code>, which you can
-use to change the format of the push message. This attribute
+use to change the format of the pushed message. This attribute
 indicates the version of the data expected by the endpoint. This
-controls the shape of the envelope (i.e. its fields and metadata).
-The endpoint version is based on the version of the Pub/Sub
-API.</p>
+controls the shape of the pushed message (i.e., its fields and metadata).
+The endpoint version is based on the version of the Pub/Sub API.</p>
 <p>If not present during the <code>CreateSubscription</code> call, it will default to
 the version of the API used to make such call. If not present during a
 <code>ModifyPushConfig</code> call, its value will not be changed. <code>GetSubscription</code>

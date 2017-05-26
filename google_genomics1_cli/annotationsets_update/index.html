@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Update - genomics v1.0.4+20160928</title>
+  <title>Update - genomics v1.0.5+20170520</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> genomics v1.0.4+20160928</a>
+        <a href=".." class="icon icon-home"> genomics v1.0.5+20170520</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -382,13 +382,6 @@
     </li>
 
         
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../reads_stream/">Stream</a>
-        
-    </li>
-
-        
     </ul>
 <li>
           
@@ -497,13 +490,6 @@
     </li>
 
         
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../variants_stream/">Stream</a>
-        
-    </li>
-
-        
     </ul>
 <li>
           
@@ -567,7 +553,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">genomics v1.0.4+20160928</a>
+        <a href="..">genomics v1.0.5+20170520</a>
       </nav>
 
       
@@ -596,7 +582,9 @@
           <div role="main">
             <div class="section">
               
-                <p>Updates an annotation set. The update must respect all mutability restrictions and other invariants described on the annotation set resource. Caller must have WRITE permission for the associated dataset.</p>
+                <p>Updates an annotation set. The update must respect all mutability
+restrictions and other invariants described on the annotation set resource.
+Caller must have WRITE permission for the associated dataset.</p>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for at least one of the following scopes to make a valid call:</p>
 <ul>
@@ -641,11 +629,13 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li><code>reference-set-id=ea</code><ul>
-<li>The ID of the reference set that defines the coordinate space for this set&#39;s annotations.</li>
+<li>The ID of the reference set that defines the coordinate space for this
+    set&#39;s annotations.</li>
 </ul>
 </li>
 <li><code>source-uri=sed</code><ul>
-<li>The source URI describing the file from which this annotation set was generated, if any.</li>
+<li>The source URI describing the file from which this annotation set was
+    generated, if any.</li>
 </ul>
 </li>
 <li><code>type=dolor</code><ul>
@@ -678,7 +668,11 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li><strong>-p update-mask=string</strong><ul>
-<li>An optional mask specifying which fields to update. Mutable fields are name, source_uri, and info. If unspecified, all mutable fields will be updated.</li>
+<li>An optional mask specifying which fields to update. Mutable fields are
+    name,
+    source_uri, and
+    info. If unspecified, all
+    mutable fields will be updated.</li>
 </ul>
 </li>
 </ul>

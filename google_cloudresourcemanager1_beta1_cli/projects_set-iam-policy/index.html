@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Set Iam Policy - Cloud Resource Manager v1.0.4+20161212</title>
+  <title>Set Iam Policy - Cloud Resource Manager v1.0.5+20170517</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Cloud Resource Manager v1.0.4+20161212</a>
+        <a href=".." class="icon icon-home"> Cloud Resource Manager v1.0.5+20170517</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -212,7 +212,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Cloud Resource Manager v1.0.4+20161212</a>
+        <a href="..">Cloud Resource Manager v1.0.5+20170517</a>
       </nav>
 
       
@@ -263,8 +263,8 @@ must be granted the owner role using the Cloud Platform Console and must
 explicitly accept the invitation.</p>
 </li>
 <li>
-<p>Invitations to grant the owner role cannot be sent using <code>setIamPolicy()</code>;
-they must be sent only using the Cloud Platform Console.</p>
+<p>Invitations to grant the owner role cannot be sent using
+<code>setIamPolicy()</code>; they must be sent only using the Cloud Platform Console.</p>
 </li>
 <li>
 <p>Membership changes that leave the project without any owners that have
@@ -273,7 +273,7 @@ accepted the Terms of Service (ToS) will be rejected.</p>
 <li>
 <p>There must be at least one owner who has accepted the Terms of
 Service (ToS) agreement in the policy. Calling <code>setIamPolicy()</code> to
-to remove the last ToS-accepted owner from the policy will fail. This
+remove the last ToS-accepted owner from the policy will fail. This
 restriction also applies to legacy projects that no longer have owners
 who have accepted the ToS. Edits to IAM policies will be rejected until
 the lack of a ToS-accepting owner is rectified.</p>
@@ -284,7 +284,8 @@ the lack of a ToS-accepting owner is rectified.</p>
 </ul>
 <p>Note: Removing service accounts from policies or changing their roles
 can render services completely inoperable. It is important to understand
-how the service account is being used before removing or updating its roles.</p>
+how the service account is being used before removing or updating its
+roles.</p>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for the <em>https://www.googleapis.com/auth/cloud-platform</em> scope to make a valid call.</p>
 <p>If unset, the scope for this method defaults to <em>https://www.googleapis.com/auth/cloud-platform</em>.
@@ -293,8 +294,7 @@ You can set the scope for this method like this: <code>cloudresourcemanager1-bet
 <ul>
 <li><strong>&lt;resource&gt;</strong> <em>(string)</em><ul>
 <li>REQUIRED: The resource for which the policy is being specified.
-    <code>resource</code> is usually specified as a path. For example, a Project
-    resource is specified as <code>projects/{project}</code>.</li>
+    See the operation documentation for the appropriate value for this field.</li>
 </ul>
 </li>
 </ul>
@@ -306,12 +306,15 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   policy:
     etag: string
     version: integer
+  update-mask: string
 
 </code></pre>
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .policy    etag=sadipscing</code><ul>
+<li>
+<p><code>-r .policy    etag=aliquyam</code></p>
+<ul>
 <li>
 <p><code>etag</code> is used for optimistic concurrency control as a way to help
     prevent simultaneous updates of a policy from overwriting each other.
@@ -322,9 +325,19 @@ In the latter case it is advised to set the field-cursor to the data-structure's
     ensure that their change will be applied to the same version of the policy.</p>
 <p>If no <code>etag</code> is provided in the call to <code>setIamPolicy</code>, then the existing
 policy is overwritten blindly.
-* <code>version=70</code>
+* <code>version=35</code>
     - Version of the <code>Policy</code>. The default version is 0.</p>
 </li>
+</ul>
+</li>
+<li>
+<p><code>..    update-mask=no</code></p>
+<ul>
+<li>OPTIONAL: A FieldMask specifying which fields of the policy to modify. Only
+    the fields in the mask will be modified. If no mask is provided, the
+    following default mask is used:
+    paths: &#34;bindings, etag&#34;
+    This field is only used by Cloud IAM.</li>
 </ul>
 </li>
 </ul>

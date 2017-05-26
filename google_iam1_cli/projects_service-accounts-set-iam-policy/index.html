@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Service Accounts Set Iam Policy - iam v1.0.4+20160915</title>
+  <title>Service Accounts Set Iam Policy - iam v1.0.5+20170515</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> iam v1.0.4+20160915</a>
+        <a href=".." class="icon icon-home"> iam v1.0.5+20170515</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -158,6 +158,13 @@
         
             
     <li class="toctree-l1 ">
+        <a class="" href="../projects_service-accounts-sign-jwt/">Service Accounts Sign Jwt</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
         <a class="" href="../projects_service-accounts-test-iam-permissions/">Service Accounts Test Iam Permissions</a>
         
     </li>
@@ -198,7 +205,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">iam v1.0.4+20160915</a>
+        <a href="..">iam v1.0.5+20170515</a>
       </nav>
 
       
@@ -227,7 +234,8 @@
           <div role="main">
             <div class="section">
               
-                <p>Sets the IAM access control policy for a ServiceAccount.</p>
+                <p>Sets the IAM access control policy for a
+ServiceAccount.</p>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for the <em>https://www.googleapis.com/auth/cloud-platform</em> scope to make a valid call.</p>
 <p>If unset, the scope for this method defaults to <em>https://www.googleapis.com/auth/cloud-platform</em>.
@@ -235,7 +243,8 @@ You can set the scope for this method like this: <code>iam1 --scope &lt;scope&gt
 <h1 id="required-scalar-argument">Required Scalar Argument</h1>
 <ul>
 <li><strong>&lt;resource&gt;</strong> <em>(string)</em><ul>
-<li>REQUIRED: The resource for which the policy is being specified. <code>resource</code> is usually specified as a path. For example, a Project resource is specified as <code>projects/{project}</code>.</li>
+<li>REQUIRED: The resource for which the policy is being specified.
+    See the operation documentation for the appropriate value for this field.</li>
 </ul>
 </li>
 </ul>
@@ -252,12 +261,20 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .policy    etag=amet.</code><ul>
-<li><code>etag</code> is used for optimistic concurrency control as a way to help prevent simultaneous updates of a policy from overwriting each other. It is strongly suggested that systems make use of the <code>etag</code> in the read-modify-write cycle to perform policy updates in order to avoid race conditions: An <code>etag</code> is returned in the response to <code>getIamPolicy</code>, and systems are expected to put that etag in the request to <code>setIamPolicy</code> to ensure that their change will be applied to the same version of the policy. If no <code>etag</code> is provided in the call to <code>setIamPolicy</code>, then the existing policy is overwritten blindly.</li>
-</ul>
+<li><code>-r .policy    etag=erat</code><ul>
+<li>
+<p><code>etag</code> is used for optimistic concurrency control as a way to help
+    prevent simultaneous updates of a policy from overwriting each other.
+    It is strongly suggested that systems make use of the <code>etag</code> in the
+    read-modify-write cycle to perform policy updates in order to avoid race
+    conditions: An <code>etag</code> is returned in the response to <code>getIamPolicy</code>, and
+    systems are expected to put that etag in the request to <code>setIamPolicy</code> to
+    ensure that their change will be applied to the same version of the policy.</p>
+<p>If no <code>etag</code> is provided in the call to <code>setIamPolicy</code>, then the existing
+policy is overwritten blindly.
+* <code>version=66</code>
+    - Version of the <code>Policy</code>. The default version is 0.</p>
 </li>
-<li><code>version=20</code><ul>
-<li>Version of the <code>Policy</code>. The default version is 0.</li>
 </ul>
 </li>
 </ul>

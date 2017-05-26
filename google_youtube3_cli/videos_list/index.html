@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>List - YouTube v1.0.4+20161202</title>
+  <title>List - YouTube v1.0.5+20170130</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> YouTube v1.0.4+20161202</a>
+        <a href=".." class="icon icon-home"> YouTube v1.0.5+20170130</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -636,6 +636,21 @@
           
             <li>
     <ul class="subnav">
+    <li><span>Super Chat Events</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../super-chat-events_list/">List</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
     <li><span>Thumbnails</span></li>
 
         
@@ -787,7 +802,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">YouTube v1.0.4+20161202</a>
+        <a href="..">YouTube v1.0.5+20170130</a>
       </nav>
 
       
@@ -854,21 +869,24 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p my-rating=string</strong></p>
-<ul>
-<li>Set this parameter&#39;s value to like or dislike to instruct the API to only return videos liked or disliked by the authenticated user.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p video-category-id=string</strong></p>
-<ul>
-<li>The videoCategoryId parameter identifies the video category for which the chart should be retrieved. This parameter can only be used in conjunction with the chart parameter. By default, charts are not restricted to a particular category.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p max-height=integer</strong></p>
 <ul>
 <li>The maxHeight parameter specifies a maximum height of the embedded player. If maxWidth is provided, maxHeight may not be reached in order to not violate the width request.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p chart=string</strong></p>
+<ul>
+<li>The chart parameter identifies the chart that you want to retrieve.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p max-results=integer</strong></p>
+<ul>
+<li>
+<p>The maxResults parameter specifies the maximum number of items that should be returned in the result set.</p>
+<p>Note: This parameter is supported for use in conjunction with the myRating and chart parameters, but it is not supported for use in conjunction with the id parameter.</p>
+</li>
 </ul>
 </li>
 <li>
@@ -878,9 +896,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p chart=string</strong></p>
+<p><strong>-p my-rating=string</strong></p>
 <ul>
-<li>The chart parameter identifies the chart that you want to retrieve.</li>
+<li>Set this parameter&#39;s value to like or dislike to instruct the API to only return videos liked or disliked by the authenticated user.</li>
 </ul>
 </li>
 <li>
@@ -899,12 +917,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p max-results=integer</strong></p>
+<p><strong>-p max-width=integer</strong></p>
 <ul>
-<li>
-<p>The maxResults parameter specifies the maximum number of items that should be returned in the result set.</p>
-<p>Note: This parameter is supported for use in conjunction with the myRating and chart parameters, but it is not supported for use in conjunction with the id parameter.</p>
-</li>
+<li>The maxWidth parameter specifies a maximum width of the embedded player. If maxHeight is provided, maxWidth may not be reached in order to not violate the height request.</li>
 </ul>
 </li>
 <li>
@@ -914,6 +929,12 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <p>The pageToken parameter identifies a specific page in the result set that should be returned. In an API response, the nextPageToken and prevPageToken properties identify other pages that could be retrieved.</p>
 <p>Note: This parameter is supported for use in conjunction with the myRating and chart parameters, but it is not supported for use in conjunction with the id parameter.</p>
 </li>
+</ul>
+</li>
+<li>
+<p><strong>-p video-category-id=string</strong></p>
+<ul>
+<li>The videoCategoryId parameter identifies the video category for which the chart should be retrieved. This parameter can only be used in conjunction with the chart parameter. By default, charts are not restricted to a particular category.</li>
 </ul>
 </li>
 <li>
@@ -929,12 +950,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <p>Note: This parameter is intended exclusively for YouTube content partners.</p>
 <p>The onBehalfOfContentOwner parameter indicates that the request&#39;s authorization credentials identify a YouTube CMS user who is acting on behalf of the content owner specified in the parameter value. This parameter is intended for YouTube content partners that own and manage many different YouTube channels. It allows content owners to authenticate once and get access to all their video and channel data, without having to provide authentication credentials for each individual channel. The CMS account that the user authenticates with must be linked to the specified YouTube content owner.</p>
 </li>
-</ul>
-</li>
-<li>
-<p><strong>-p max-width=integer</strong></p>
-<ul>
-<li>The maxWidth parameter specifies a maximum width of the embedded player. If maxHeight is provided, maxWidth may not be reached in order to not violate the height request.</li>
 </ul>
 </li>
 </ul>

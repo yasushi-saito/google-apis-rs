@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Update - proximitybeacon v1.0.4+20160429</title>
+  <title>Update - proximitybeacon v1.0.5+20170517</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> proximitybeacon v1.0.4+20160429</a>
+        <a href=".." class="icon icon-home"> proximitybeacon v1.0.5+20170517</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -118,6 +118,13 @@
             
     <li class="toctree-l1 ">
         <a class="" href="../beacons_decommission/">Decommission</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../beacons_delete/">Delete</a>
         
     </li>
 
@@ -231,7 +238,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">proximitybeacon v1.0.4+20160429</a>
+        <a href="..">proximitybeacon v1.0.5+20170517</a>
       </nav>
 
       
@@ -260,7 +267,8 @@
           <div role="main">
             <div class="section">
               
-                <p>Updates the information about the specified namespace. Only the namespace visibility can be updated.</p>
+                <p>Updates the information about the specified namespace. Only the namespace
+visibility can be updated.</p>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for the <em>https://www.googleapis.com/auth/userlocation.beacon.registry</em> scope to make a valid call.</p>
 <p>If unset, the scope for this method defaults to <em>https://www.googleapis.com/auth/userlocation.beacon.registry</em>.
@@ -268,7 +276,8 @@ You can set the scope for this method like this: <code>proximitybeacon1-beta1 --
 <h1 id="required-scalar-argument">Required Scalar Argument</h1>
 <ul>
 <li><strong>&lt;namespace-name&gt;</strong> <em>(string)</em><ul>
-<li>Resource name of this namespace. Namespaces names have the format: namespaces/namespace.</li>
+<li>Resource name of this namespace. Namespaces names have the format:
+    &lt;code&gt;namespaces/&lt;var&gt;namespace&lt;/var&gt;&lt;/code&gt;.</li>
 </ul>
 </li>
 </ul>
@@ -284,12 +293,14 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    namespace-name=no</code><ul>
-<li>Resource name of this namespace. Namespaces names have the format: namespaces/namespace.</li>
+<li><code>-r .    namespace-name=labore</code><ul>
+<li>Resource name of this namespace. Namespaces names have the format:
+    &lt;code&gt;namespaces/&lt;var&gt;namespace&lt;/var&gt;&lt;/code&gt;.</li>
 </ul>
 </li>
-<li><code>serving-visibility=labore</code><ul>
-<li>Specifies what clients may receive attachments under this namespace via <code>beaconinfo.getforobserved</code>.</li>
+<li><code>serving-visibility=eirmod</code><ul>
+<li>Specifies what clients may receive attachments under this namespace
+    via <code>beaconinfo.getforobserved</code>.</li>
 </ul>
 </li>
 </ul>
@@ -318,7 +329,10 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li><strong>-p project-id=string</strong><ul>
-<li>The project id of the namespace to update. If the project id is not specified then the project making the request is used. The project id must match the project that owns the beacon. Optional.</li>
+<li>The project id of the namespace to update. If the project id is not
+    specified then the project making the request is used. The project id
+    must match the project that owns the beacon.
+    Optional.</li>
 </ul>
 </li>
 </ul>

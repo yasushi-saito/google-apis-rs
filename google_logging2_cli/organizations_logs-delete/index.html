@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Logs Delete - Logging v1.0.4+20161206</title>
+  <title>Logs Delete - Logging v1.0.5+20170516</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Logging v1.0.4+20161206</a>
+        <a href=".." class="icon icon-home"> Logging v1.0.5+20170516</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -379,7 +379,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Logging v1.0.4+20161206</a>
+        <a href="..">Logging v1.0.5+20170516</a>
       </nav>
 
       
@@ -408,7 +408,7 @@
           <div role="main">
             <div class="section">
               
-                <p>Deletes all the log entries in a log. The log reappears if it receives new entries.</p>
+                <p>Deletes all the log entries in a log. The log reappears if it receives new entries. Log entries written shortly before the delete operation might not be deleted.</p>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for at least one of the following scopes to make a valid call:</p>
 <ul>
@@ -423,6 +423,8 @@ You can set the scope for this method like this: <code>logging2 --scope &lt;scop
 <li>Required. The resource name of the log to delete:
     &#34;projects/[PROJECT_ID]/logs/[LOG_ID]&#34;
     &#34;organizations/[ORGANIZATION_ID]/logs/[LOG_ID]&#34;
+    &#34;billingAccounts/[BILLING_ACCOUNT_ID]/logs/[LOG_ID]&#34;
+    &#34;folders/[FOLDER_ID]/logs/[LOG_ID]&#34;
     [LOG_ID] must be URL-encoded. For example, &#34;projects/my-project-id/logs/syslog&#34;, &#34;organizations/1234567890/logs/cloudresourcemanager.googleapis.com%2Factivity&#34;. For more information about log names, see LogEntry.</li>
 </ul>
 </li>

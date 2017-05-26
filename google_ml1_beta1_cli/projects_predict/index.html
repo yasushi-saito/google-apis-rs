@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Predict - Cloud Machine Learning v1.0.4+20161212</title>
+  <title>Predict - Cloud Machine Learning Engine v1.0.5+20170515</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Cloud Machine Learning v1.0.4+20161212</a>
+        <a href=".." class="icon icon-home"> Cloud Machine Learning Engine v1.0.5+20170515</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -225,7 +225,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Cloud Machine Learning v1.0.4+20161212</a>
+        <a href="..">Cloud Machine Learning Engine v1.0.5+20170515</a>
       </nav>
 
       
@@ -255,46 +255,7 @@
             <div class="section">
               
                 <p>Performs prediction on the data in the request.</p>
-<p>Responses are very similar to requests. There are two top-level fields,
-each of which are JSON lists:</p>
-<p>&lt;dl&gt;
-  &lt;dt&gt;predictions&lt;/dt&gt;
-  &lt;dd&gt;The list of predictions, one per instance in the request.&lt;/dd&gt;
-  &lt;dt&gt;error&lt;/dt&gt;
-  &lt;dd&gt;An error message returned instead of a prediction list if any
-      instance produced an error.&lt;/dd&gt;
-&lt;/dl&gt;</p>
-<p>If the call is successful, the response body will contain one prediction
-entry per instance in the request body. If prediction fails for any
-instance, the response body will contain no predictions and will contian
-a single error entry instead.</p>
-<p>Even though there is one prediction per instance, the format of a
-prediction is not directly related to the format of an instance.
-Predictions take whatever format is specified in the outputs collection
-defined in the model. The collection of predictions is returned in a JSON
-list. Each member of the list can be a simple value, a list, or a JSON
-object of any complexity. If your model has more than one output tensor,
-each prediction will be a JSON object containing a name/value pair for each
-output. The names identify the output aliases in the graph.</p>
-<p>The following examples show some possible responses:</p>
-<p>A simple set of predictions for three input instances, where each
-prediction is an integer value:
-&lt;pre&gt;
-{&#34;predictions&#34;: [5, 4, 3]}
-&lt;/pre&gt;
-A more complex set of predictions, each containing two named values that
-correspond to output tensors, named <strong>label</strong> and <strong>scores</strong> respectively.
-The value of <strong>label</strong> is the predicted category (&#34;car&#34; or &#34;beach&#34;) and
-<strong>scores</strong> contains a list of probabilities for that instance across the
-possible categories.
-&lt;pre&gt;
-{&#34;predictions&#34;: [{&#34;label&#34;: &#34;beach&#34;, &#34;scores&#34;: [0.1, 0.9]},
-                 {&#34;label&#34;: &#34;car&#34;, &#34;scores&#34;: [0.75, 0.25]}]}
-&lt;/pre&gt;
-A response when there is an error processing an input instance:
-&lt;pre&gt;
-{&#34;error&#34;: &#34;Divide by zero&#34;}
-&lt;/pre&gt;</p>
+<p>**** REMOVE FROM GENERATED DOCUMENTATION</p>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for the <em>https://www.googleapis.com/auth/cloud-platform</em> scope to make a valid call.</p>
 <p>If unset, the scope for this method defaults to <em>https://www.googleapis.com/auth/cloud-platform</em>.
@@ -322,11 +283,11 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .http-body    content-type=aliquyam</code><ul>
+<li><code>-r .http-body    content-type=ut</code><ul>
 <li>The HTTP Content-Type string representing the content type of the body.</li>
 </ul>
 </li>
-<li><code>data=accusam</code><ul>
+<li><code>data=ea</code><ul>
 <li>HTTP body binary data.</li>
 </ul>
 </li>

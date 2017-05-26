@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Verify Assertion - Identity Toolkit v1.0.4+20161206</title>
+  <title>Verify Assertion - Identity Toolkit v1.0.5+20170425</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Identity Toolkit v1.0.4+20161206</a>
+        <a href=".." class="icon icon-home"> Identity Toolkit v1.0.5+20170425</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -208,7 +208,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Identity Toolkit v1.0.4+20161206</a>
+        <a href="..">Identity Toolkit v1.0.5+20170425</a>
       </nav>
 
       
@@ -247,6 +247,7 @@ You can set the scope for this method like this: <code>identitytoolkit3 --scope 
 In the latter case it is advised to set the field-cursor to the data-structure's field to specify values more concisely.</p>
 <p>For example, a structure like this:</p>
 <pre><code>IdentitytoolkitRelyingpartyVerifyAssertionRequest:
+  auto-create: boolean
   delegated-project-number: string
   id-token: string
   instance-id: string
@@ -262,31 +263,35 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    delegated-project-number=gubergren</code><ul>
+<li><code>-r .    auto-create=false</code><ul>
+<li>When it&#39;s true, automatically creates a new account if the user doesn&#39;t exist. When it&#39;s false, allows existing user to sign in normally and throws exception if the user doesn&#39;t exist.</li>
+</ul>
+</li>
+<li><code>delegated-project-number=sit</code><ul>
 <li>GCP project number of the requesting delegated app. Currently only intended for Firebase V1 migration.</li>
 </ul>
 </li>
-<li><code>id-token=aliquyam</code><ul>
+<li><code>id-token=diam</code><ul>
 <li>The GITKit token of the authenticated user.</li>
 </ul>
 </li>
-<li><code>instance-id=eos</code><ul>
+<li><code>instance-id=ut</code><ul>
 <li>Instance id token of the app.</li>
 </ul>
 </li>
-<li><code>pending-id-token=tempor</code><ul>
+<li><code>pending-id-token=justo</code><ul>
 <li>The GITKit token for the non-trusted IDP pending to be confirmed by the user.</li>
 </ul>
 </li>
-<li><code>post-body=sea</code><ul>
+<li><code>post-body=est</code><ul>
 <li>The post body if the request is a HTTP POST.</li>
 </ul>
 </li>
-<li><code>request-uri=labore</code><ul>
+<li><code>request-uri=amet</code><ul>
 <li>The URI to which the IDP redirects the user back. It may contain federated login result params added by the IDP.</li>
 </ul>
 </li>
-<li><code>return-idp-credential=false</code><ul>
+<li><code>return-idp-credential=true</code><ul>
 <li>Whether return 200 and IDP credential rather than throw exception when federated id is already linked.</li>
 </ul>
 </li>
@@ -298,7 +303,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>Whether return sts id token and refresh token instead of gitkit token.</li>
 </ul>
 </li>
-<li><code>session-id=sit</code><ul>
+<li><code>session-id=justo</code><ul>
 <li>Session ID, which should match the one in previous createAuthUri request.</li>
 </ul>
 </li>

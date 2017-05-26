@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Sinks Get - Logging v1.0.4+20161206</title>
+  <title>Sinks Get - Logging v1.0.5+20170516</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Logging v1.0.4+20161206</a>
+        <a href=".." class="icon icon-home"> Logging v1.0.5+20170516</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -252,7 +252,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Logging v1.0.4+20161206</a>
+        <a href="..">Logging v1.0.5+20170516</a>
       </nav>
 
       
@@ -295,9 +295,11 @@ You can set the scope for this method like this: <code>logging2-beta1 --scope &l
 <h1 id="required-scalar-argument">Required Scalar Argument</h1>
 <ul>
 <li><strong>&lt;sink-name&gt;</strong> <em>(string)</em><ul>
-<li>Required. The parent resource name of the sink:
+<li>Required. The resource name of the sink:
     &#34;projects/[PROJECT_ID]/sinks/[SINK_ID]&#34;
     &#34;organizations/[ORGANIZATION_ID]/sinks/[SINK_ID]&#34;
+    &#34;billingAccounts/[BILLING_ACCOUNT_ID]/sinks/[SINK_ID]&#34;
+    &#34;folders/[FOLDER_ID]/sinks/[SINK_ID]&#34;
     Example: &#34;projects/my-project-id/sinks/my-sink-id&#34;.</li>
 </ul>
 </li>

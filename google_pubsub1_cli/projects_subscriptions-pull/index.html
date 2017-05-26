@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Subscriptions Pull - pubsub v1.0.4+20161122</title>
+  <title>Subscriptions Pull - Pubsub v1.0.5+20170502</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> pubsub v1.0.4+20161122</a>
+        <a href=".." class="icon icon-home"> Pubsub v1.0.5+20170502</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -253,7 +253,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">pubsub v1.0.4+20161122</a>
+        <a href="..">Pubsub v1.0.5+20170502</a>
       </nav>
 
       
@@ -320,11 +320,12 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li><code>return-immediately=false</code><ul>
-<li>If this is specified as true the system will respond immediately even if
-    it is not able to return a message in the <code>Pull</code> response. Otherwise the
-    system is allowed to wait until at least one message is available rather
-    than returning no messages. The client may cancel the request if it does
-    not wish to wait any longer for the response.</li>
+<li>If this field set to true, the system will respond immediately even if
+    it there are no messages available to return in the <code>Pull</code> response.
+    Otherwise, the system may wait (for a bounded amount of time) until at
+    least one message is available, rather than returning no messages. The
+    client may cancel the request if it does not wish to wait any longer for
+    the response.</li>
 </ul>
 </li>
 </ul>

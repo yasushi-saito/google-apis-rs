@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Patch - genomics v1.0.4+20160928</title>
+  <title>Patch - genomics v1.0.5+20170520</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> genomics v1.0.4+20160928</a>
+        <a href=".." class="icon icon-home"> genomics v1.0.5+20170520</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -358,13 +358,6 @@
     </li>
 
         
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../reads_stream/">Stream</a>
-        
-    </li>
-
-        
     </ul>
 <li>
           
@@ -473,13 +466,6 @@
     </li>
 
         
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../variants_stream/">Stream</a>
-        
-    </li>
-
-        
     </ul>
 <li>
           
@@ -567,7 +553,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">genomics v1.0.4+20160928</a>
+        <a href="..">genomics v1.0.5+20170520</a>
       </nav>
 
       
@@ -596,7 +582,10 @@
           <div role="main">
             <div class="section">
               
-                <p>Updates a variant set using patch semantics. For the definitions of variant sets and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a></p>
+                <p>Updates a variant set using patch semantics.</p>
+<p>For the definitions of variant sets and other genomics resources, see
+<a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google
+Genomics</a></p>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for at least one of the following scopes to make a valid call:</p>
 <ul>
@@ -627,24 +616,34 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    dataset-id=justo</code><ul>
+<li><code>-r .    dataset-id=sea</code><ul>
 <li>The dataset to which this variant set belongs.</li>
 </ul>
 </li>
-<li><code>description=dolore</code><ul>
+<li><code>description=ut</code><ul>
 <li>A textual description of this variant set.</li>
 </ul>
 </li>
-<li><code>id=vero</code><ul>
+<li><code>id=eirmod</code><ul>
 <li>The server-generated variant set ID, unique across all variant sets.</li>
 </ul>
 </li>
-<li><code>name=dolor</code><ul>
+<li><code>name=sanctus</code><ul>
 <li>User-specified, mutable name.</li>
 </ul>
 </li>
-<li><code>reference-set-id=takimata</code><ul>
-<li>The reference set to which the variant set is mapped. The reference set describes the alignment provenance of the variant set, while the <code>referenceBounds</code> describe the shape of the actual variant data. The reference set&#39;s reference names are a superset of those found in the <code>referenceBounds</code>. For example, given a variant set that is mapped to the GRCh38 reference set and contains a single variant on reference &#39;X&#39;, <code>referenceBounds</code> would contain only an entry for &#39;X&#39;, while the associated reference set enumerates all possible references: &#39;1&#39;, &#39;2&#39;, &#39;X&#39;, &#39;Y&#39;, &#39;MT&#39;, etc.</li>
+<li><code>reference-set-id=voluptua.</code><ul>
+<li>
+<p>The reference set to which the variant set is mapped. The reference set
+    describes the alignment provenance of the variant set, while the
+    <code>referenceBounds</code> describe the shape of the actual variant data. The
+    reference set&#39;s reference names are a superset of those found in the
+    <code>referenceBounds</code>.</p>
+<p>For example, given a variant set that is mapped to the GRCh38 reference set
+and contains a single variant on reference &#39;X&#39;, <code>referenceBounds</code> would
+contain only an entry for &#39;X&#39;, while the associated reference set
+enumerates all possible references: &#39;1&#39;, &#39;2&#39;, &#39;X&#39;, &#39;Y&#39;, &#39;MT&#39;, etc.</p>
+</li>
 </ul>
 </li>
 </ul>
@@ -673,7 +672,16 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li><strong>-p update-mask=string</strong><ul>
-<li>An optional mask specifying which fields to update. Supported fields: * metadata. * name. * description. Leaving <code>updateMask</code> unset is equivalent to specifying all mutable fields.</li>
+<li>
+<p>An optional mask specifying which fields to update. Supported fields:</p>
+<ul>
+<li>metadata.</li>
+<li>name.</li>
+<li>description.</li>
+</ul>
+<p>Leaving <code>updateMask</code> unset is equivalent to specifying all mutable
+fields.</p>
+</li>
 </ul>
 </li>
 </ul>

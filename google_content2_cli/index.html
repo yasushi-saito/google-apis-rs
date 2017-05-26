@@ -8,7 +8,7 @@
   <meta name="description" content="A complete library to interact with Shopping Content (protocol v2)">
   
   <link rel="shortcut icon" href="./img/favicon.ico">
-  <title>Home - Shopping Content v1.0.4+20161205</title>
+  <title>Home - Shopping Content v1.0.5+20170519</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="./css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href="." class="icon icon-home"> Shopping Content v1.0.4+20161205</a>
+        <a href="." class="icon icon-home"> Shopping Content v1.0.5+20170519</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -89,6 +89,13 @@
         
             
     <li class="toctree-l1 ">
+        <a class="" href="accounts_claimwebsite/">Claimwebsite</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
         <a class="" href="accounts_custombatch/">Custombatch</a>
         
     </li>
@@ -132,49 +139,6 @@
             
     <li class="toctree-l1 ">
         <a class="" href="accounts_update/">Update</a>
-        
-    </li>
-
-        
-    </ul>
-<li>
-          
-            <li>
-    <ul class="subnav">
-    <li><span>Accountshipping</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="accountshipping_custombatch/">Custombatch</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="accountshipping_get/">Get</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="accountshipping_list/">List</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="accountshipping_patch/">Patch</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="accountshipping_update/">Update</a>
         
     </li>
 
@@ -607,7 +571,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href=".">Shopping Content v1.0.4+20161205</a>
+        <a href=".">Shopping Content v1.0.5+20170519</a>
       </nav>
 
       
@@ -651,20 +615,15 @@ capabilities. Errors will be printed to standard error, and cause the program's 
 
 <p>Find the source code <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/content2-cli">on github</a>.</p>
 <h1 id="usage">Usage</h1>
-<p>This documentation was generated from the <em>Shopping Content</em> API at revision <em>20161205</em>. The CLI is at version <em>1.0.4</em>.</p>
+<p>This documentation was generated from the <em>Shopping Content</em> API at revision <em>20170519</em>. The CLI is at version <em>1.0.5</em>.</p>
 <pre><code class="bash">content2 [options]
         accounts
                 authinfo [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                claimwebsite &lt;merchant-id&gt; &lt;account-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 custombatch (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 delete &lt;merchant-id&gt; &lt;account-id&gt; [-p &lt;v&gt;]...
                 get &lt;merchant-id&gt; &lt;account-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 insert &lt;merchant-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
-                list &lt;merchant-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
-                patch &lt;merchant-id&gt; &lt;account-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
-                update &lt;merchant-id&gt; &lt;account-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
-        accountshipping
-                custombatch (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
-                get &lt;merchant-id&gt; &lt;account-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 list &lt;merchant-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 patch &lt;merchant-id&gt; &lt;account-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 update &lt;merchant-id&gt; &lt;account-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
@@ -833,5 +792,5 @@ issue at hand.</p>
 
 <!--
 MkDocs version : 0.16.1
-Build Date UTC : 2017-02-05 04:46:01
+Build Date UTC : 2017-05-26 14:36:33
 -->

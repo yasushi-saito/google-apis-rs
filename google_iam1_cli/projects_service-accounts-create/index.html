@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Service Accounts Create - iam v1.0.4+20160915</title>
+  <title>Service Accounts Create - iam v1.0.5+20170515</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> iam v1.0.4+20160915</a>
+        <a href=".." class="icon icon-home"> iam v1.0.5+20170515</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -158,6 +158,13 @@
         
             
     <li class="toctree-l1 ">
+        <a class="" href="../projects_service-accounts-sign-jwt/">Service Accounts Sign Jwt</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
         <a class="" href="../projects_service-accounts-test-iam-permissions/">Service Accounts Test Iam Permissions</a>
         
     </li>
@@ -198,7 +205,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">iam v1.0.4+20160915</a>
+        <a href="..">iam v1.0.5+20170515</a>
       </nav>
 
       
@@ -227,7 +234,8 @@
           <div role="main">
             <div class="section">
               
-                <p>Creates a ServiceAccount and returns it.</p>
+                <p>Creates a ServiceAccount
+and returns it.</p>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for the <em>https://www.googleapis.com/auth/cloud-platform</em> scope to make a valid call.</p>
 <p>If unset, the scope for this method defaults to <em>https://www.googleapis.com/auth/cloud-platform</em>.
@@ -235,7 +243,8 @@ You can set the scope for this method like this: <code>iam1 --scope &lt;scope&gt
 <h1 id="required-scalar-argument">Required Scalar Argument</h1>
 <ul>
 <li><strong>&lt;name&gt;</strong> <em>(string)</em><ul>
-<li>Required. The resource name of the project associated with the service accounts, such as <code>projects/my-project-123</code>.</li>
+<li>Required. The resource name of the project associated with the service
+    accounts, such as <code>projects/my-project-123</code>.</li>
 </ul>
 </li>
 </ul>
@@ -259,11 +268,15 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
 <li><code>-r .    account-id=eirmod</code><ul>
-<li>Required. The account id that is used to generate the service account email address and a stable unique id. It is unique within a project, must be 6-30 characters long, and match the regular expression <code>[a-z]([-a-z0-9]*[a-z0-9])</code> to comply with RFC1035.</li>
+<li>Required. The account id that is used to generate the service account
+    email address and a stable unique id. It is unique within a project,
+    must be 6-30 characters long, and match the regular expression
+    <code>[a-z]([-a-z0-9]*[a-z0-9])</code> to comply with RFC1035.</li>
 </ul>
 </li>
 <li><code>service-account    display-name=sit</code><ul>
-<li>Optional. A user-specified description of the service account. Must be fewer than 100 UTF-8 bytes.</li>
+<li>Optional. A user-specified description of the service account.  Must be
+    fewer than 100 UTF-8 bytes.</li>
 </ul>
 </li>
 <li><code>email=stet</code><ul>
@@ -275,19 +288,23 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li><code>name=et</code><ul>
-<li>The resource name of the service account in the following format: <code>projects/{project}/serviceAccounts/{account}</code>. Requests using <code>-</code> as a wildcard for the project will infer the project from the <code>account</code> and the <code>account</code> value can be the <code>email</code> address or the <code>unique_id</code> of the service account. In responses the resource name will always be in the format <code>projects/{project}/serviceAccounts/{email}</code>.</li>
-</ul>
+<li>
+<p>The resource name of the service account in the following format:
+    <code>projects/{PROJECT_ID}/serviceAccounts/{SERVICE_ACCOUNT_EMAIL}</code>.</p>
+<p>Requests using <code>-</code> as a wildcard for the project will infer the project
+from the <code>account</code> and the <code>account</code> value can be the <code>email</code> address or
+the <code>unique_id</code> of the service account.</p>
+<p>In responses the resource name will always be in the format
+<code>projects/{PROJECT_ID}/serviceAccounts/{SERVICE_ACCOUNT_EMAIL}</code>.
+<em> <code>oauth2-client-id=dolores</code>
+    - @OutputOnly. The OAuth2 client id for the service account.
+This is used in conjunction with the OAuth2 clientconfig API to make
+three legged OAuth2 (3LO) flows to access the data of Google users.
+</em> <code>project-id=kasd</code>
+    - @OutputOnly The id of the project that owns the service account.
+* <code>unique-id=accusam</code>
+    - @OutputOnly The unique and stable id of the service account.</p>
 </li>
-<li><code>oauth2-client-id=dolores</code><ul>
-<li>@OutputOnly. The OAuth2 client id for the service account. This is used in conjunction with the OAuth2 clientconfig API to make three legged OAuth2 (3LO) flows to access the data of Google users.</li>
-</ul>
-</li>
-<li><code>project-id=kasd</code><ul>
-<li>@OutputOnly The id of the project that owns the service account.</li>
-</ul>
-</li>
-<li><code>unique-id=accusam</code><ul>
-<li>@OutputOnly The unique and stable id of the service account.</li>
 </ul>
 </li>
 </ul>

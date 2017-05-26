@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Avails List - Play Movies v1.0.4+20160518</title>
+  <title>Avails List - Play Movies v1.0.5+20170516</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Play Movies v1.0.4+20160518</a>
+        <a href=".." class="icon icon-home"> Play Movies v1.0.5+20170516</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -93,34 +93,6 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../accounts_components-list/">Components List</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../accounts_components-type-get/">Components Type Get</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../accounts_experience-locales-get/">Experience Locales Get</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../accounts_experience-locales-list/">Experience Locales List</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
         <a class="" href="../accounts_orders-get/">Orders Get</a>
         
     </li>
@@ -160,7 +132,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Play Movies v1.0.4+20160518</a>
+        <a href="..">Play Movies v1.0.5+20170516</a>
       </nav>
 
       
@@ -189,7 +161,9 @@
           <div role="main">
             <div class="section">
               
-                <p>List Avails owned or managed by the partner. See <em>Authentication and Authorization rules</em> and <em>List methods rules</em> for more information about this method.</p>
+                <p>List Avails owned or managed by the partner.</p>
+<p>See <em>Authentication and Authorization rules</em> and
+<em>List methods rules</em> for more information about this method.</p>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for the <em>https://www.googleapis.com/auth/playmovies_partner.readonly</em> scope to make a valid call.</p>
 <p>If unset, the scope for this method defaults to <em>https://www.googleapis.com/auth/playmovies_partner.readonly</em>.
@@ -218,15 +192,45 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
+<p><strong>-p alt-id=string</strong></p>
+<ul>
+<li>Filter Avails that match a case-insensitive, partner-specific custom id.
+    NOTE: this field is deprecated and will be removed on V2; <code>alt_ids</code>
+    should be used instead.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p title=string</strong></p>
+<ul>
+<li>Filter that matches Avails with a <code>title_internal_alias</code>,
+    <code>series_title_internal_alias</code>, <code>season_title_internal_alias</code>,
+    or <code>episode_title_internal_alias</code> that contains the given
+    case-insensitive title.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p territories=string</strong></p>
+<ul>
+<li>Filter Avails that match (case-insensitive) any of the given country codes,
+    using the &#34;ISO 3166-1 alpha-2&#34; format (examples: &#34;US&#34;, &#34;us&#34;, &#34;Us&#34;).</li>
+</ul>
+</li>
+<li>
+<p><strong>-p studio-names=string</strong></p>
+<ul>
+<li>See <em>List methods rules</em> for info about this field.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p page-token=string</strong></p>
 <ul>
 <li>See <em>List methods rules</em> for info about this field.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p pph-names=string</strong></p>
+<p><strong>-p alt-ids=string</strong></p>
 <ul>
-<li>See <em>List methods rules</em> for info about this field.</li>
+<li>Filter Avails that match (case-insensitive) any of the given partner-specific custom ids.</li>
 </ul>
 </li>
 <li>
@@ -242,33 +246,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p alt-ids=string</strong></p>
-<ul>
-<li>Filter Avails that match (case-insensitive) any of the given partner-specific custom ids.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p territories=string</strong></p>
-<ul>
-<li>Filter Avails that match (case-insensitive) any of the given country codes, using the &#34;ISO 3166-1 alpha-2&#34; format (examples: &#34;US&#34;, &#34;us&#34;, &#34;Us&#34;).</li>
-</ul>
-</li>
-<li>
-<p><strong>-p studio-names=string</strong></p>
+<p><strong>-p pph-names=string</strong></p>
 <ul>
 <li>See <em>List methods rules</em> for info about this field.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p alt-id=string</strong></p>
-<ul>
-<li>Filter Avails that match a case-insensitive, partner-specific custom id. NOTE: this field is deprecated and will be removed on V2; <code>alt_ids</code> should be used instead.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p title=string</strong></p>
-<ul>
-<li>Filter that matches Avails with a <code>title_internal_alias</code>, <code>series_title_internal_alias</code>, <code>season_title_internal_alias</code>, or <code>episode_title_internal_alias</code> that contains the given case-insensitive title.</li>
 </ul>
 </li>
 </ul>
@@ -361,7 +341,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../accounts_components-list/" class="btn btn-neutral float-right" title="Components List">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../accounts_orders-get/" class="btn btn-neutral float-right" title="Orders Get">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="../accounts_avails-get/" class="btn btn-neutral" title="Avails Get"><span class="icon icon-circle-arrow-left"></span> Previous</a>
@@ -397,7 +377,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
         <span><a href="../accounts_avails-get/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../accounts_components-list/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../accounts_orders-get/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

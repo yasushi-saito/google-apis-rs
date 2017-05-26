@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Export - genomics v1.0.4+20160928</title>
+  <title>Export - genomics v1.0.5+20170520</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> genomics v1.0.4+20160928</a>
+        <a href=".." class="icon icon-home"> genomics v1.0.5+20170520</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -358,13 +358,6 @@
     </li>
 
         
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../reads_stream/">Stream</a>
-        
-    </li>
-
-        
     </ul>
 <li>
           
@@ -473,13 +466,6 @@
     </li>
 
         
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../variants_stream/">Stream</a>
-        
-    </li>
-
-        
     </ul>
 <li>
           
@@ -564,7 +550,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">genomics v1.0.4+20160928</a>
+        <a href="..">genomics v1.0.5+20170520</a>
       </nav>
 
       
@@ -593,7 +579,10 @@
           <div role="main">
             <div class="section">
               
-                <p>Exports variant set data to an external destination. For the definitions of variant sets and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a></p>
+                <p>Exports variant set data to an external destination.</p>
+<p>For the definitions of variant sets and other genomics resources, see
+<a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google
+Genomics</a></p>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for at least one of the following scopes to make a valid call:</p>
 <ul>
@@ -606,7 +595,8 @@ You can set the scope for this method like this: <code>genomics1 --scope &lt;sco
 <h1 id="required-scalar-argument">Required Scalar Argument</h1>
 <ul>
 <li><strong>&lt;variant-set-id&gt;</strong> <em>(string)</em><ul>
-<li>Required. The ID of the variant set that contains variant data which should be exported. The caller must have READ access to this variant set.</li>
+<li>Required. The ID of the variant set that contains variant data which
+    should be exported. The caller must have READ access to this variant set.</li>
 </ul>
 </li>
 </ul>
@@ -625,25 +615,31 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    bigquery-dataset=vero</code><ul>
-<li>Required. The BigQuery dataset to export data to. This dataset must already exist. Note that this is distinct from the Genomics concept of &#34;dataset&#34;.</li>
+<li><code>-r .    bigquery-dataset=ut</code><ul>
+<li>Required. The BigQuery dataset to export data to. This dataset must already
+    exist. Note that this is distinct from the Genomics concept of &#34;dataset&#34;.</li>
 </ul>
 </li>
-<li><code>bigquery-table=ut</code><ul>
-<li>Required. The BigQuery table to export data to. If the table doesn&#39;t exist, it will be created. If it already exists, it will be overwritten.</li>
+<li><code>bigquery-table=amet.</code><ul>
+<li>Required. The BigQuery table to export data to.
+    If the table doesn&#39;t exist, it will be created. If it already exists, it
+    will be overwritten.</li>
 </ul>
 </li>
-<li><code>call-set-ids=sed</code><ul>
-<li>If provided, only variant call information from the specified call sets will be exported. By default all variant calls are exported.</li>
+<li><code>call-set-ids=ipsum</code><ul>
+<li>If provided, only variant call information from the specified call sets
+    will be exported. By default all variant calls are exported.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>format=et</code><ul>
+<li><code>format=ut</code><ul>
 <li>The format for the exported data.</li>
 </ul>
 </li>
-<li><code>project-id=ipsum</code><ul>
-<li>Required. The Google Cloud project ID that owns the destination BigQuery dataset. The caller must have WRITE access to this project. This project will also own the resulting export job.</li>
+<li><code>project-id=dolor</code><ul>
+<li>Required. The Google Cloud project ID that owns the destination
+    BigQuery dataset. The caller must have WRITE access to this project.  This
+    project will also own the resulting export job.</li>
 </ul>
 </li>
 </ul>

@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Voidedpurchases List - Android Publisher v1.0.4+20161212</title>
+  <title>Voidedpurchases List - Android Publisher v1.0.5+20170425</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Android Publisher v1.0.4+20161212</a>
+        <a href=".." class="icon icon-home"> Android Publisher v1.0.5+20170425</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -521,7 +521,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Android Publisher v1.0.4+20161212</a>
+        <a href="..">Android Publisher v1.0.5+20170425</a>
       </nav>
 
       
@@ -579,15 +579,21 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p max-results=integer</strong></p>
+<p><strong>-p start-time=string</strong></p>
 <ul>
-<li>No description provided.</li>
+<li>The time, in milliseconds since the Epoch, of the oldest voided in-app product purchase that you want to see in the response. The value of this parameter cannot be older than 30 days and is ignored if a pagination token is set. Default value is current time minus 30 days.</li>
 </ul>
 </li>
 <li>
 <p><strong>-p end-time=string</strong></p>
 <ul>
-<li>The end time of list window, in milliseconds since the epoch (Jan 1, 1970). If not specified, default to current time, which is also the latest accepted end time. This parameter will be ignored if pagination token is set.</li>
+<li>The time, in milliseconds since the Epoch, of the newest voided in-app product purchase that you want to see in the response. The value of this parameter cannot be greater than the current time and is ignored if a pagination token is set. Default value is current time.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p max-results=integer</strong></p>
+<ul>
+<li>No description provided.</li>
 </ul>
 </li>
 <li>
@@ -600,12 +606,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <p><strong>-p token=string</strong></p>
 <ul>
 <li>No description provided.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p start-time=string</strong></p>
-<ul>
-<li>The start time of list window, in milliseconds since the epoch (Jan 1, 1970). If not specified, default to current time - 30 days, which is also the earlies accepted start time. This parameter will be ignored if pagination token is set.</li>
 </ul>
 </li>
 </ul>

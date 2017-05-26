@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Create - genomics v1.0.4+20160928</title>
+  <title>Create - genomics v1.0.5+20170520</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> genomics v1.0.4+20160928</a>
+        <a href=".." class="icon icon-home"> genomics v1.0.5+20170520</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -70,6 +70,9 @@
         <a class="current" href="./">Create</a>
         
             <ul>
+            
+                <li class="toctree-l3"><a href="#transcripts">Transcripts</a></li>
+                
             
                 <li class="toctree-l3"><a href="#scopes">Scopes</a></li>
                 
@@ -376,13 +379,6 @@
     </li>
 
         
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../reads_stream/">Stream</a>
-        
-    </li>
-
-        
     </ul>
 <li>
           
@@ -491,13 +487,6 @@
     </li>
 
         
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../variants_stream/">Stream</a>
-        
-    </li>
-
-        
     </ul>
 <li>
           
@@ -561,7 +550,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">genomics v1.0.4+20160928</a>
+        <a href="..">genomics v1.0.5+20170520</a>
       </nav>
 
       
@@ -590,7 +579,26 @@
           <div role="main">
             <div class="section">
               
-                <p>Creates a new annotation. Caller must have WRITE permission for the associated annotation set. The following fields are required: * annotationSetId * referenceName or referenceId ### Transcripts For annotations of type TRANSCRIPT, the following fields of transcript must be provided: * exons.start * exons.end All other fields may be optionally specified, unless documented as being server-generated (for example, the <code>id</code> field). The annotated range must be no longer than 100Mbp (mega base pairs). See the Annotation resource for additional restrictions on each field.</p>
+                <p>Creates a new annotation. Caller must have WRITE permission
+for the associated annotation set.</p>
+<p>The following fields are required:</p>
+<ul>
+<li>annotationSetId</li>
+<li>referenceName or
+  referenceId</li>
+</ul>
+<h3 id="transcripts">Transcripts</h3>
+<p>For annotations of type TRANSCRIPT, the following fields of
+transcript must be provided:</p>
+<ul>
+<li>exons.start</li>
+<li>exons.end</li>
+</ul>
+<p>All other fields may be optionally specified, unless documented as being
+server-generated (for example, the <code>id</code> field). The annotated
+range must be no longer than 100Mbp (mega base pairs). See the
+Annotation resource
+for additional restrictions on each field.</p>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for at least one of the following scopes to make a valid call:</p>
 <ul>
@@ -651,11 +659,14 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li><code>reference-name=kasd</code><ul>
-<li>The display name corresponding to the reference specified by <code>referenceId</code>, for example <code>chr1</code>, <code>1</code>, or <code>chrX</code>.</li>
+<li>The display name corresponding to the reference specified by
+    <code>referenceId</code>, for example <code>chr1</code>, <code>1</code>, or <code>chrX</code>.</li>
 </ul>
 </li>
 <li><code>reverse-strand=true</code><ul>
-<li>Whether this range refers to the reverse strand, as opposed to the forward strand. Note that regardless of this field, the start/end position of the range always refer to the forward strand.</li>
+<li>Whether this range refers to the reverse strand, as opposed to the forward
+    strand. Note that regardless of this field, the start/end position of the
+    range always refer to the forward strand.</li>
 </ul>
 </li>
 <li><code>start=takimata</code><ul>
@@ -663,13 +674,17 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li><code>transcript.coding-sequence    end=justo</code><ul>
-<li>The end of the coding sequence on this annotation&#39;s reference sequence, 0-based exclusive. Note that this position is relative to the reference start, and <em>not</em> the containing annotation start.</li>
+<li>The end of the coding sequence on this annotation&#39;s reference sequence,
+    0-based exclusive. Note that this position is relative to the reference
+    start, and <em>not</em> the containing annotation start.</li>
 </ul>
 </li>
 <li>
 <p><code>start=amet.</code></p>
 <ul>
-<li>The start of the coding sequence on this annotation&#39;s reference sequence, 0-based inclusive. Note that this position is relative to the reference start, and <em>not</em> the containing annotation start.</li>
+<li>The start of the coding sequence on this annotation&#39;s reference sequence,
+    0-based inclusive. Note that this position is relative to the reference
+    start, and <em>not</em> the containing annotation start.</li>
 </ul>
 </li>
 <li>
@@ -681,15 +696,21 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>
 <p><code>..    type=labore</code></p>
 <ul>
-<li>The data type for this annotation. Must match the containing annotation set&#39;s type.</li>
+<li>The data type for this annotation. Must match the containing annotation
+    set&#39;s type.</li>
 </ul>
 </li>
 <li><code>variant    alternate-bases=sea</code><ul>
-<li>The alternate allele for this variant. If multiple alternate alleles exist at this location, create a separate variant for each one, as they may represent distinct conditions.</li>
+<li>The alternate allele for this variant. If multiple alternate alleles
+    exist at this location, create a separate variant for each one, as they
+    may represent distinct conditions.</li>
 </ul>
 </li>
 <li><code>clinical-significance=nonumy</code><ul>
-<li>Describes the clinical significance of a variant. It is adapted from the ClinVar controlled vocabulary for clinical significance described at: http://www.ncbi.nlm.nih.gov/clinvar/docs/clinsig/</li>
+<li>Describes the clinical significance of a variant.
+    It is adapted from the ClinVar controlled vocabulary for clinical
+    significance described at:
+    http://www.ncbi.nlm.nih.gov/clinvar/docs/clinsig/</li>
 </ul>
 </li>
 <li><code>effect=dolores</code><ul>
@@ -697,11 +718,13 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li><code>gene-id=gubergren</code><ul>
-<li>Google annotation ID of the gene affected by this variant. This should be provided when the variant is created.</li>
+<li>Google annotation ID of the gene affected by this variant. This should
+    be provided when the variant is created.</li>
 </ul>
 </li>
 <li><code>transcript-ids=sadipscing</code><ul>
-<li>Google annotation IDs of the transcripts affected by this variant. These should be provided when the variant is created.</li>
+<li>Google annotation IDs of the transcripts affected by this variant. These
+    should be provided when the variant is created.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>

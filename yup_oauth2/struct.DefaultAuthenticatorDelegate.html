@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `DefaultAuthenticatorDelegate` struct in crate `yup_oauth2`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, DefaultAuthenticatorDelegate">
+
+    <title>yup_oauth2::DefaultAuthenticatorDelegate - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../normalize.css">
+    <link rel="stylesheet" type="text/css" href="../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc struct">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='index.html'>yup_oauth2</a></p><script>window.sidebarCurrent = {name: 'DefaultAuthenticatorDelegate', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>yup_oauth2</a>::<wbr><a class="struct" href=''>DefaultAuthenticatorDelegate</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a class='srclink' href='../src/yup_oauth2/authenticator_delegate.rs.html#152' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct DefaultAuthenticatorDelegate;</pre><div class='docblock'><p>Uses all default implementations by AuthenticatorDelegate, and makes the trait&#39;s
+implementation usable in the first place.</p>
+</div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class="trait" href="../yup_oauth2/trait.AuthenticatorDelegate.html" title="trait yup_oauth2::AuthenticatorDelegate">AuthenticatorDelegate</a> for <a class="struct" href="../yup_oauth2/struct.DefaultAuthenticatorDelegate.html" title="struct yup_oauth2::DefaultAuthenticatorDelegate">DefaultAuthenticatorDelegate</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/yup_oauth2/authenticator_delegate.rs.html#153' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.connection_error' class="method"><span id='connection_error.v' class='invisible'><code>fn <a href='../yup_oauth2/trait.AuthenticatorDelegate.html#method.connection_error' class='fnname'>connection_error</a>(&amp;mut self, &amp;<a class="enum" href="../hyper/error/enum.Error.html" title="enum hyper::error::Error">Error</a>) -&gt; <a class="enum" href="../yup_oauth2/enum.Retry.html" title="enum yup_oauth2::Retry">Retry</a></code></span></h4>
+<div class='docblock'><p>Called whenever there is an HttpError, usually if there are network problems. <a href="../yup_oauth2/trait.AuthenticatorDelegate.html#method.connection_error">Read more</a></p>
+</div><h4 id='method.token_storage_failure' class="method"><span id='token_storage_failure.v' class='invisible'><code>fn <a href='../yup_oauth2/trait.AuthenticatorDelegate.html#method.token_storage_failure' class='fnname'>token_storage_failure</a>(&amp;mut self, is_set: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a>, _: &amp;<a class="trait" href="https://doc.rust-lang.org/nightly/std/error/trait.Error.html" title="trait std::error::Error">Error</a>) -&gt; <a class="enum" href="../yup_oauth2/enum.Retry.html" title="enum yup_oauth2::Retry">Retry</a></code></span></h4>
+<div class='docblock'><p>Called whenever we failed to retrieve a token or set a token due to a storage error. You may use it to either ignore the incident or retry. This can be useful if the underlying <code>TokenStorage</code> may fail occasionally. if <code>is_set</code> is true, the failure resulted from <code>TokenStorage.set(...)</code>. Otherwise, it was <code>TokenStorage.get(...)</code> <a href="../yup_oauth2/trait.AuthenticatorDelegate.html#method.token_storage_failure">Read more</a></p>
+</div><h4 id='method.request_failure' class="method"><span id='request_failure.v' class='invisible'><code>fn <a href='../yup_oauth2/trait.AuthenticatorDelegate.html#method.request_failure' class='fnname'>request_failure</a>(&amp;mut self, RequestError)</code></span></h4>
+<div class='docblock'><p>The server denied the attempt to obtain a request code</p>
+</div><h4 id='method.expired' class="method"><span id='expired.v' class='invisible'><code>fn <a href='../yup_oauth2/trait.AuthenticatorDelegate.html#method.expired' class='fnname'>expired</a>(&amp;mut self, &amp;<a class="struct" href="../chrono/datetime/struct.DateTime.html" title="struct chrono::datetime::DateTime">DateTime</a>&lt;<a class="struct" href="../chrono/offset/utc/struct.UTC.html" title="struct chrono::offset::utc::UTC">UTC</a>&gt;)</code></span></h4>
+<div class='docblock'><p>Called if the request code is expired. You will have to start over in this case. This will be the last call the delegate receives. Given <code>DateTime</code> is the expiration date <a href="../yup_oauth2/trait.AuthenticatorDelegate.html#method.expired">Read more</a></p>
+</div><h4 id='method.denied' class="method"><span id='denied.v' class='invisible'><code>fn <a href='../yup_oauth2/trait.AuthenticatorDelegate.html#method.denied' class='fnname'>denied</a>(&amp;mut self)</code></span></h4>
+<div class='docblock'><p>Called if the user denied access. You would have to start over. This will be the last call the delegate receives. <a href="../yup_oauth2/trait.AuthenticatorDelegate.html#method.denied">Read more</a></p>
+</div><h4 id='method.token_refresh_failed' class="method"><span id='token_refresh_failed.v' class='invisible'><code>fn <a href='../yup_oauth2/trait.AuthenticatorDelegate.html#method.token_refresh_failed' class='fnname'>token_refresh_failed</a>(&amp;mut self,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; error: &amp;<a class="struct" href="https://doc.rust-lang.org/nightly/collections/string/struct.String.html" title="struct collections::string::String">String</a>,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; error_description: &amp;<a class="enum" href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html" title="enum core::option::Option">Option</a>&lt;<a class="struct" href="https://doc.rust-lang.org/nightly/collections/string/struct.String.html" title="struct collections::string::String">String</a>&gt;)</code></span></h4>
+<div class='docblock'><p>Called if we could not acquire a refresh token for a reason possibly specified by the server. This call is made for the delegate&#39;s information only. <a href="../yup_oauth2/trait.AuthenticatorDelegate.html#method.token_refresh_failed">Read more</a></p>
+</div><h4 id='method.pending' class="method"><span id='pending.v' class='invisible'><code>fn <a href='../yup_oauth2/trait.AuthenticatorDelegate.html#method.pending' class='fnname'>pending</a>(&amp;mut self, &amp;<a class="struct" href="../yup_oauth2/struct.PollInformation.html" title="struct yup_oauth2::PollInformation">PollInformation</a>) -&gt; <a class="enum" href="../yup_oauth2/enum.Retry.html" title="enum yup_oauth2::Retry">Retry</a></code></span></h4>
+<div class='docblock'><p>Called as long as we are waiting for the user to authorize us. Can be used to print progress information, or decide to time-out. <a href="../yup_oauth2/trait.AuthenticatorDelegate.html#method.pending">Read more</a></p>
+</div><h4 id='method.present_user_code' class="method"><span id='present_user_code.v' class='invisible'><code>fn <a href='../yup_oauth2/trait.AuthenticatorDelegate.html#method.present_user_code' class='fnname'>present_user_code</a>(&amp;mut self, pi: &amp;<a class="struct" href="../yup_oauth2/struct.PollInformation.html" title="struct yup_oauth2::PollInformation">PollInformation</a>)</code></span></h4>
+<div class='docblock'><p>The server has returned a <code>user_code</code> which must be shown to the user, along with the <code>verification_url</code>. # Notes * Will be called exactly once, provided we didn&#39;t abort during <code>request_code</code> phase. * Will only be called if the Authenticator&#39;s flow_type is <code>FlowType::Device</code>. <a href="../yup_oauth2/trait.AuthenticatorDelegate.html#method.present_user_code">Read more</a></p>
+</div><h4 id='method.present_user_url' class="method"><span id='present_user_url.v' class='invisible'><code>fn <a href='../yup_oauth2/trait.AuthenticatorDelegate.html#method.present_user_url' class='fnname'>present_user_url</a>(&amp;mut self, url: &amp;<a class="struct" href="https://doc.rust-lang.org/nightly/collections/string/struct.String.html" title="struct collections::string::String">String</a>, need_code: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a>) -&gt; <a class="enum" href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html" title="enum core::option::Option">Option</a>&lt;<a class="struct" href="https://doc.rust-lang.org/nightly/collections/string/struct.String.html" title="struct collections::string::String">String</a>&gt;</code></span></h4>
+<div class='docblock'><p>Only method currently used by the InstalledFlow. We need the user to navigate to a URL using their browser and potentially paste back a code (or maybe not). Whether they have to enter a code depends on the InstalledFlowReturnMethod used. <a href="../yup_oauth2/trait.AuthenticatorDelegate.html#method.present_user_url">Read more</a></p>
+</div></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "yup_oauth2";
+    </script>
+    <script src="../jquery.js"></script>
+    <script src="../main.js"></script>
+    <script defer src="../search-index.js"></script>
+</body>
+</html>

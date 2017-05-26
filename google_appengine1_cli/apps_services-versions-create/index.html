@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Services Versions Create - appengine v1.0.4+20161208</title>
+  <title>Services Versions Create - appengine v1.0.5+20170522</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> appengine v1.0.4+20161208</a>
+        <a href=".." class="icon icon-home"> appengine v1.0.5+20170522</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -239,7 +239,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">appengine v1.0.4+20161208</a>
+        <a href="..">appengine v1.0.5+20170522</a>
       </nav>
 
       
@@ -350,6 +350,14 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   id: string
   inbound-services: [string]
   instance-class: string
+  liveness-check:
+    check-interval: string
+    failure-threshold: integer
+    host: string
+    initial-delay: string
+    path: string
+    success-threshold: integer
+    timeout: string
   manual-scaling:
     instances: integer
   name: string
@@ -359,6 +367,13 @@ In the latter case it is advised to set the field-cursor to the data-structure's
     name: string
     subnetwork-name: string
   nobuild-files-regex: string
+  readiness-check:
+    check-interval: string
+    failure-threshold: integer
+    host: string
+    path: string
+    success-threshold: integer
+    timeout: string
   resources:
     cpu: number
     disk-gb: number
@@ -373,298 +388,361 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .api-config    auth-fail-action=no</code><ul>
+<li><code>-r .api-config    auth-fail-action=lorem</code><ul>
 <li>Action to take when users access resources that require authentication. Defaults to redirect.</li>
 </ul>
 </li>
-<li><code>login=justo</code><ul>
+<li><code>login=eos</code><ul>
 <li>Level of login required to access this resource. Defaults to optional.</li>
 </ul>
 </li>
-<li><code>script=justo</code><ul>
+<li><code>script=erat</code><ul>
 <li>Path to the script from the application root directory.</li>
 </ul>
 </li>
-<li><code>security-level=et</code><ul>
+<li><code>security-level=sadipscing</code><ul>
 <li>Security (HTTPS) enforcement for this URL.</li>
 </ul>
 </li>
 <li>
-<p><code>url=et</code></p>
+<p><code>url=dolor</code></p>
 <ul>
 <li>URL to serve the endpoint at.</li>
 </ul>
 </li>
 <li>
-<p><code>..automatic-scaling    cool-down-period=diam</code></p>
+<p><code>..automatic-scaling    cool-down-period=eirmod</code></p>
 <ul>
 <li>Amount of time that the Autoscaler (https://cloud.google.com/compute/docs/autoscaler/) should wait between changes to the number of virtual machines. Only applicable for VM runtimes.</li>
 </ul>
 </li>
-<li><code>cpu-utilization    aggregation-window-length=ipsum</code><ul>
+<li><code>cpu-utilization    aggregation-window-length=elitr</code><ul>
 <li>Period of time over which CPU utilization is calculated.</li>
 </ul>
 </li>
 <li>
-<p><code>target-utilization=0.957563386643</code></p>
+<p><code>target-utilization=0.0438804035801</code></p>
 <ul>
 <li>Target CPU utilization ratio to maintain when scaling. Must be between 0 and 1.</li>
 </ul>
 </li>
 <li>
-<p><code>..disk-utilization    target-read-bytes-per-second=80</code></p>
+<p><code>..disk-utilization    target-read-bytes-per-second=41</code></p>
 <ul>
 <li>Target bytes read per second.</li>
 </ul>
 </li>
-<li><code>target-read-ops-per-second=31</code><ul>
+<li><code>target-read-ops-per-second=65</code><ul>
 <li>Target ops read per seconds.</li>
 </ul>
 </li>
-<li><code>target-write-bytes-per-second=69</code><ul>
+<li><code>target-write-bytes-per-second=62</code><ul>
 <li>Target bytes written per second.</li>
 </ul>
 </li>
 <li>
-<p><code>target-write-ops-per-second=92</code></p>
+<p><code>target-write-ops-per-second=68</code></p>
 <ul>
 <li>Target ops written per second.</li>
 </ul>
 </li>
 <li>
-<p><code>..    max-concurrent-requests=46</code></p>
+<p><code>..    max-concurrent-requests=64</code></p>
 <ul>
 <li>Number of concurrent requests an automatic scaling instance can accept before the scheduler spawns a new instance.Defaults to a runtime-specific value.</li>
 </ul>
 </li>
-<li><code>max-idle-instances=26</code><ul>
+<li><code>max-idle-instances=19</code><ul>
 <li>Maximum number of idle instances that should be maintained for this version.</li>
 </ul>
 </li>
-<li><code>max-pending-latency=erat</code><ul>
+<li><code>max-pending-latency=accusam</code><ul>
 <li>Maximum amount of time that a request should wait in the pending queue before starting a new instance to handle it.</li>
 </ul>
 </li>
-<li><code>max-total-instances=6</code><ul>
+<li><code>max-total-instances=45</code><ul>
 <li>Maximum number of instances that should be started to handle requests.</li>
 </ul>
 </li>
-<li><code>min-idle-instances=53</code><ul>
+<li><code>min-idle-instances=92</code><ul>
 <li>Minimum number of idle instances that should be maintained for this version. Only applicable for the default version of a service.</li>
 </ul>
 </li>
-<li><code>min-pending-latency=eirmod</code><ul>
+<li><code>min-pending-latency=et</code><ul>
 <li>Minimum amount of time a request should wait in the pending queue before starting a new instance to handle it.</li>
 </ul>
 </li>
-<li><code>min-total-instances=58</code><ul>
+<li><code>min-total-instances=31</code><ul>
 <li>Minimum number of instances that should be maintained for this version.</li>
 </ul>
 </li>
-<li><code>network-utilization    target-received-bytes-per-second=4</code><ul>
+<li><code>network-utilization    target-received-bytes-per-second=80</code><ul>
 <li>Target bytes received per second.</li>
 </ul>
 </li>
-<li><code>target-received-packets-per-second=41</code><ul>
+<li><code>target-received-packets-per-second=61</code><ul>
 <li>Target packets received per second.</li>
 </ul>
 </li>
-<li><code>target-sent-bytes-per-second=65</code><ul>
+<li><code>target-sent-bytes-per-second=43</code><ul>
 <li>Target bytes sent per second.</li>
 </ul>
 </li>
 <li>
-<p><code>target-sent-packets-per-second=62</code></p>
+<p><code>target-sent-packets-per-second=79</code></p>
 <ul>
 <li>Target packets sent per second.</li>
 </ul>
 </li>
 <li>
-<p><code>..request-utilization    target-concurrent-requests=68</code></p>
+<p><code>..request-utilization    target-concurrent-requests=55</code></p>
 <ul>
 <li>Target number of concurrent requests.</li>
 </ul>
 </li>
 <li>
-<p><code>target-request-count-per-second=64</code></p>
+<p><code>target-request-count-per-second=78</code></p>
 <ul>
 <li>Target requests per second.</li>
 </ul>
 </li>
 <li>
-<p><code>...basic-scaling    idle-timeout=aliquyam</code></p>
+<p><code>...basic-scaling    idle-timeout=consetetur</code></p>
 <ul>
 <li>Duration of time after the last request that an instance must wait before the instance is shut down.</li>
 </ul>
 </li>
 <li>
-<p><code>max-instances=28</code></p>
+<p><code>max-instances=65</code></p>
 <ul>
 <li>Maximum number of instances to create for this version.</li>
 </ul>
 </li>
 <li>
-<p><code>..    beta-settings=key=lorem</code></p>
+<p><code>..    beta-settings=key=ea</code></p>
 <ul>
 <li>Metadata settings that are supplied to this version to enable beta runtime features.</li>
 <li>the value will be associated with the given <code>key</code></li>
 </ul>
 </li>
-<li><code>create-time=sea</code><ul>
+<li><code>create-time=sed</code><ul>
 <li>Time that this version was created.@OutputOnly</li>
 </ul>
 </li>
-<li><code>created-by=et</code><ul>
+<li><code>created-by=dolor</code><ul>
 <li>Email address of the user who created this version.@OutputOnly</li>
 </ul>
 </li>
-<li><code>default-expiration=duo</code><ul>
+<li><code>default-expiration=dolor</code><ul>
 <li>Duration that static files should be cached by web proxies and browsers. Only applicable if the corresponding StaticFilesHandler (https://cloud.google.com/appengine/docs/admin-api/reference/rest/v1/apps.services.versions#staticfileshandler) does not specify its own expiration time.Only returned in GET requests if view=FULL is set.</li>
 </ul>
 </li>
 <li>
-<p><code>deployment.container    image=et</code></p>
+<p><code>deployment.container    image=dolor</code></p>
 <ul>
-<li>URI to the hosted container image in a Docker repository. The URI must be fully qualified and include a tag or digest. Examples: &#34;gcr.io/my-project/image:tag&#34; or &#34;gcr.io/my-project/image@digest&#34;</li>
+<li>URI to the hosted container image in Google Container Registry. The URI must be fully qualified and include a tag or digest. Examples: &#34;gcr.io/my-project/image:tag&#34; or &#34;gcr.io/my-project/image@digest&#34;</li>
 </ul>
 </li>
 <li>
-<p><code>..zip    files-count=61</code></p>
+<p><code>..zip    files-count=78</code></p>
 <ul>
 <li>An estimate of the number of files in a zip for a zip deployment. If set, must be greater than or equal to the actual number of files. Used for optimizing performance; if not provided, deployment may be slow.</li>
 </ul>
 </li>
 <li>
-<p><code>source-url=sanctus</code></p>
+<p><code>source-url=consetetur</code></p>
 <ul>
-<li>URL of the zip file to deploy from. Must be a URL to a resource in Google Cloud Storage in the form &#39;http(s)://storage.googleapis.com//&#39;.</li>
+<li>URL of the zip file to deploy from. Must be a URL to a resource in Google Cloud Storage in the form &#39;http(s)://storage.googleapis.com/&lt;bucket&gt;/&lt;object&gt;&#39;.</li>
 </ul>
 </li>
 <li>
-<p><code>...    disk-usage-bytes=et</code></p>
+<p><code>...    disk-usage-bytes=amet.</code></p>
 <ul>
 <li>Total size in bytes of all the files that are included in this version and curerntly hosted on the App Engine disk.@OutputOnly</li>
 </ul>
 </li>
-<li><code>endpoints-api-service    config-id=amet</code><ul>
+<li><code>endpoints-api-service    config-id=voluptua.</code><ul>
 <li>Endpoints service configuration id as specified by the Service Management API. For example &#34;2016-09-19r1&#34;</li>
 </ul>
 </li>
 <li>
-<p><code>name=et</code></p>
+<p><code>name=lorem</code></p>
 <ul>
 <li>Endpoints service name which is the name of the &#34;service&#34; resource in the Service Management API. For example &#34;myapi.endpoints.myproject.cloud.goog&#34;</li>
 </ul>
 </li>
 <li>
-<p><code>..    env=consetetur</code></p>
+<p><code>..    env=gubergren</code></p>
 <ul>
 <li>App Engine execution environment for this version.Defaults to standard.</li>
 </ul>
 </li>
-<li><code>env-variables=key=ut</code><ul>
+<li><code>env-variables=key=justo</code><ul>
 <li>Environment variables available to the application.Only returned in GET requests if view=FULL is set.</li>
 <li>the value will be associated with the given <code>key</code></li>
 </ul>
 </li>
-<li><code>health-check    check-interval=ea</code><ul>
+<li><code>health-check    check-interval=sit</code><ul>
 <li>Interval between health checks.</li>
 </ul>
 </li>
-<li><code>disable-health-check=false</code><ul>
+<li><code>disable-health-check=true</code><ul>
 <li>Whether to explicitly disable health checks for this instance.</li>
 </ul>
 </li>
-<li><code>healthy-threshold=98</code><ul>
+<li><code>healthy-threshold=73</code><ul>
 <li>Number of consecutive successful health checks required before receiving traffic.</li>
 </ul>
 </li>
-<li><code>host=dolor</code><ul>
+<li><code>host=rebum.</code><ul>
 <li>Host header to send when performing an HTTP health check. Example: &#34;myapp.appspot.com&#34;</li>
 </ul>
 </li>
-<li><code>restart-threshold=53</code><ul>
+<li><code>restart-threshold=56</code><ul>
 <li>Number of consecutive failed health checks required before an instance is restarted.</li>
 </ul>
 </li>
-<li><code>timeout=et</code><ul>
+<li><code>timeout=sadipscing</code><ul>
 <li>Time before the health check is considered failed.</li>
 </ul>
 </li>
 <li>
-<p><code>unhealthy-threshold=5</code></p>
+<p><code>unhealthy-threshold=25</code></p>
 <ul>
 <li>Number of consecutive failed health checks required before removing traffic.</li>
 </ul>
 </li>
 <li>
-<p><code>..    id=amet.</code></p>
+<p><code>..    id=sadipscing</code></p>
 <ul>
 <li>Relative name of the version within the service. Example: v1. Version names can contain only lowercase letters, numbers, or hyphens. Reserved names: &#34;default&#34;, &#34;latest&#34;, and any name with the prefix &#34;ah-&#34;.</li>
 </ul>
 </li>
-<li><code>inbound-services=voluptua.</code><ul>
+<li><code>inbound-services=invidunt</code><ul>
 <li>Before an application can receive email or XMPP messages, the application must be configured to enable the service.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>instance-class=lorem</code><ul>
-<li>Instance class that is used to run this version. Valid values are: AutomaticScaling: F1, F2, F4, F4_1G ManualScaling or BasicScaling: B1, B2, B4, B8, B4_1GDefaults to F1 for AutomaticScaling and B1 for ManualScaling or BasicScaling.</li>
+<li><code>instance-class=consetetur</code><ul>
+<li>Instance class that is used to run this version. Valid values are:
+    AutomaticScaling: F1, F2, F4, F4_1G
+    ManualScaling or BasicScaling: B1, B2, B4, B8, B4_1GDefaults to F1 for AutomaticScaling and B1 for ManualScaling or BasicScaling.</li>
+</ul>
+</li>
+<li><code>liveness-check    check-interval=dolore</code><ul>
+<li>Interval between health checks.</li>
+</ul>
+</li>
+<li><code>failure-threshold=82</code><ul>
+<li>Number of consecutive failed checks required before considering the VM unhealthy.</li>
+</ul>
+</li>
+<li><code>host=aliquyam</code><ul>
+<li>Host header to send when performing a HTTP Liveness check. Example: &#34;myapp.appspot.com&#34;</li>
+</ul>
+</li>
+<li><code>initial-delay=lorem</code><ul>
+<li>The initial delay before starting to execute the checks.</li>
+</ul>
+</li>
+<li><code>path=et</code><ul>
+<li>The request path.</li>
+</ul>
+</li>
+<li><code>success-threshold=88</code><ul>
+<li>Number of consecutive successful checks required before considering the VM healthy.</li>
 </ul>
 </li>
 <li>
-<p><code>manual-scaling    instances=90</code></p>
+<p><code>timeout=consetetur</code></p>
+<ul>
+<li>Time before the check is considered failed.</li>
+</ul>
+</li>
+<li>
+<p><code>..manual-scaling    instances=43</code></p>
 <ul>
 <li>Number of instances to assign to the service at the start. This number can later be altered by using the Modules API (https://cloud.google.com/appengine/docs/python/modules/functions) set_num_instances() function.</li>
 </ul>
 </li>
 <li>
-<p><code>..    name=justo</code></p>
+<p><code>..    name=nonumy</code></p>
 <ul>
 <li>Full path to the Version resource in the API. Example: apps/myapp/services/default/versions/v1.@OutputOnly</li>
 </ul>
 </li>
-<li><code>network    forwarded-ports=sit</code><ul>
+<li><code>network    forwarded-ports=kasd</code><ul>
 <li>List of ports, or port pairs, to forward from the virtual machine to the application container.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>instance-tag=vero</code><ul>
+<li><code>instance-tag=sanctus</code><ul>
 <li>Tag to apply to the VM instance during creation.</li>
 </ul>
 </li>
-<li><code>name=diam</code><ul>
+<li><code>name=takimata</code><ul>
 <li>Google Cloud Platform network where the virtual machines are created. Specify the short name, not the resource path.Defaults to default.</li>
 </ul>
 </li>
 <li>
-<p><code>subnetwork-name=rebum.</code></p>
+<p><code>subnetwork-name=at</code></p>
 <ul>
-<li>Google Cloud Platform sub-network where the virtual machines are created. Specify the short name, not the resource path.If a subnetwork name is specified, a network name will also be required unless it is for the default network. If the network the VM instance is being created in is a Legacy network, then the IP address is allocated from the IPv4Range. If the network the VM instance is being created in is an auto Subnet Mode Network, then only network name should be specified (not the subnetwork_name) and the IP address is created from the IPCidrRange of the subnetwork that exists in that zone for that network. If the network the VM instance is being created in is a custom Subnet Mode Network, then the subnetwork_name must be specified and the IP address is created from the IPCidrRange of the subnetwork.If specified, the subnetwork must exist in the same region as the Flex app.</li>
+<li>Google Cloud Platform sub-network where the virtual machines are created. Specify the short name, not the resource path.If a subnetwork name is specified, a network name will also be required unless it is for the default network.
+    If the network the VM instance is being created in is a Legacy network, then the IP address is allocated from the IPv4Range.
+    If the network the VM instance is being created in is an auto Subnet Mode Network, then only network name should be specified (not the subnetwork_name) and the IP address is created from the IPCidrRange of the subnetwork that exists in that zone for that network.
+    If the network the VM instance is being created in is a custom Subnet Mode Network, then the subnetwork_name must be specified and the IP address is created from the IPCidrRange of the subnetwork.If specified, the subnetwork must exist in the same region as the Flex app.</li>
 </ul>
 </li>
 <li>
-<p><code>..    nobuild-files-regex=consetetur</code></p>
+<p><code>..    nobuild-files-regex=labore</code></p>
 <ul>
 <li>Files that match this pattern will not be built into this version. Only applicable for Go runtimes.Only returned in GET requests if view=FULL is set.</li>
 </ul>
 </li>
-<li><code>resources    cpu=0.568975580071</code><ul>
+<li><code>readiness-check    check-interval=invidunt</code><ul>
+<li>Interval between health checks.</li>
+</ul>
+</li>
+<li><code>failure-threshold=35</code><ul>
+<li>Number of consecutive failed checks required before removing traffic.</li>
+</ul>
+</li>
+<li><code>host=sadipscing</code><ul>
+<li>Host header to send when performing a HTTP Readiness check. Example: &#34;myapp.appspot.com&#34;</li>
+</ul>
+</li>
+<li><code>path=rebum.</code><ul>
+<li>The request path.</li>
+</ul>
+</li>
+<li><code>success-threshold=68</code><ul>
+<li>Number of consecutive successful checks required before receiving traffic.</li>
+</ul>
+</li>
+<li>
+<p><code>timeout=nonumy</code></p>
+<ul>
+<li>Time before the check is considered failed.</li>
+</ul>
+</li>
+<li>
+<p><code>..resources    cpu=0.717377589745</code></p>
+<ul>
 <li>Number of CPU cores needed.</li>
 </ul>
 </li>
-<li><code>disk-gb=0.257287653251</code><ul>
+<li><code>disk-gb=0.191521742464</code><ul>
 <li>Disk size (GB) needed.</li>
 </ul>
 </li>
 <li>
-<p><code>memory-gb=0.0667882092949</code></p>
+<p><code>memory-gb=0.484066452025</code></p>
 <ul>
 <li>Memory (GB) needed.</li>
 </ul>
 </li>
 <li>
-<p><code>..    runtime=invidunt</code></p>
+<p><code>..    runtime=eirmod</code></p>
 <ul>
 <li>Desired runtime. Example: python27.</li>
 </ul>
@@ -677,11 +755,11 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>Whether multiple requests can be dispatched to this version at once.</li>
 </ul>
 </li>
-<li><code>version-url=duo</code><ul>
+<li><code>version-url=sed</code><ul>
 <li>Serving URL for this version. Example: &#34;https://myversion-dot-myservice-dot-myapp.appspot.com&#34;@OutputOnly</li>
 </ul>
 </li>
-<li><code>vm=false</code><ul>
+<li><code>vm=true</code><ul>
 <li>Whether to deploy this version in a container on a virtual machine.</li>
 </ul>
 </li>

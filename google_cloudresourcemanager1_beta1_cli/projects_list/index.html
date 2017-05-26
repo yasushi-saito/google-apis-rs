@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>List - Cloud Resource Manager v1.0.4+20161212</title>
+  <title>List - Cloud Resource Manager v1.0.5+20170517</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Cloud Resource Manager v1.0.4+20161212</a>
+        <a href=".." class="icon icon-home"> Cloud Resource Manager v1.0.5+20170517</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -207,7 +207,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Cloud Resource Manager v1.0.4+20161212</a>
+        <a href="..">Cloud Resource Manager v1.0.5+20170517</a>
       </nav>
 
       
@@ -274,6 +274,17 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
+<p><strong>-p page-size=integer</strong></p>
+<ul>
+<li>
+<p>The maximum number of Projects to return in the response.
+    The server can return fewer Projects than requested.
+    If unspecified, server picks an appropriate default.</p>
+<p>Optional.</p>
+</li>
+</ul>
+</li>
+<li>
 <p><strong>-p filter=string</strong></p>
 <ul>
 <li>
@@ -294,8 +305,8 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </thead>
 <tbody>
 <tr>
-<td>name:*</td>
-<td>The project has a name.</td>
+<td>name:how*</td>
+<td>The project&#39;s name starts with &#34;how&#34;.</td>
 </tr>
 <tr>
 <td>name:Howl</td>
@@ -318,22 +329,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <td>The project&#39;s label <code>color</code> has the value <code>red</code>.</td>
 </tr>
 <tr>
-<td>labels.color:red&amp;nbsp;label.size:big</td>
-<td>The project&#39;s label <code>color</code> has the value <code>red</code> and its label <code>size</code> has the value <code>big</code>.</td>
+<td>labels.color:red&amp;nbsp;labels.size:big</td>
+<td>The project&#39;s label <code>color</code> has the</td>
+</tr>
+<tr>
+<td>value <code>red</code> and its label <code>size</code> has the value <code>big</code>.</td>
+<td></td>
 </tr>
 </tbody>
 </table>
-<p>Optional.</p>
-</li>
-</ul>
-</li>
-<li>
-<p><strong>-p page-size=integer</strong></p>
-<ul>
-<li>
-<p>The maximum number of Projects to return in the response.
-    The server can return fewer Projects than requested.
-    If unspecified, server picks an appropriate default.</p>
 <p>Optional.</p>
 </li>
 </ul>

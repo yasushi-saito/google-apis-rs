@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>History List - gmail v1.0.4+20161206</title>
+  <title>History List - gmail v1.0.5+20170510</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> gmail v1.0.4+20161206</a>
+        <a href=".." class="icon icon-home"> gmail v1.0.5+20170510</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -380,6 +380,41 @@
         
             
     <li class="toctree-l1 ">
+        <a class="" href="../users_settings-send-as-smime-info-delete/">Settings Send As Smime Info Delete</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../users_settings-send-as-smime-info-get/">Settings Send As Smime Info Get</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../users_settings-send-as-smime-info-insert/">Settings Send As Smime Info Insert</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../users_settings-send-as-smime-info-list/">Settings Send As Smime Info List</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../users_settings-send-as-smime-info-set-default/">Settings Send As Smime Info Set Default</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
         <a class="" href="../users_settings-send-as-update/">Settings Send As Update</a>
         
     </li>
@@ -489,7 +524,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">gmail v1.0.4+20161206</a>
+        <a href="..">gmail v1.0.5+20170510</a>
       </nav>
 
       
@@ -553,9 +588,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p max-results=integer</strong></p>
+<p><strong>-p start-history-id=string</strong></p>
 <ul>
-<li>The maximum number of history records to return.</li>
+<li>Required. Returns history records after the specified startHistoryId. The supplied startHistoryId should be obtained from the historyId of a message, thread, or previous list response. History IDs increase chronologically but are not contiguous with random gaps in between valid IDs. Supplying an invalid or out of date startHistoryId typically returns an HTTP 404 error code. A historyId is typically valid for at least a week, but in some rare circumstances may be valid for only a few hours. If you receive an HTTP 404 error response, your application should perform a full sync. If you receive no nextPageToken in the response, there are no updates to retrieve and you can store the returned historyId for a future request.</li>
 </ul>
 </li>
 <li>
@@ -565,9 +600,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p start-history-id=string</strong></p>
+<p><strong>-p max-results=integer</strong></p>
 <ul>
-<li>Required. Returns history records after the specified startHistoryId. The supplied startHistoryId should be obtained from the historyId of a message, thread, or previous list response. History IDs increase chronologically but are not contiguous with random gaps in between valid IDs. Supplying an invalid or out of date startHistoryId typically returns an HTTP 404 error code. A historyId is typically valid for at least a week, but in some rare circumstances may be valid for only a few hours. If you receive an HTTP 404 error response, your application should perform a full sync. If you receive no nextPageToken in the response, there are no updates to retrieve and you can store the returned historyId for a future request.</li>
+<li>The maximum number of history records to return.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p history-types=string</strong></p>
+<ul>
+<li>History types to be returned by the function</li>
 </ul>
 </li>
 <li>

@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Update - genomics v1.0.4+20160928</title>
+  <title>Update - genomics v1.0.5+20170520</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> genomics v1.0.4+20160928</a>
+        <a href=".." class="icon icon-home"> genomics v1.0.5+20170520</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -382,13 +382,6 @@
     </li>
 
         
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../reads_stream/">Stream</a>
-        
-    </li>
-
-        
     </ul>
 <li>
           
@@ -497,13 +490,6 @@
     </li>
 
         
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../variants_stream/">Stream</a>
-        
-    </li>
-
-        
     </ul>
 <li>
           
@@ -567,7 +553,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">genomics v1.0.4+20160928</a>
+        <a href="..">genomics v1.0.5+20170520</a>
       </nav>
 
       
@@ -596,7 +582,8 @@
           <div role="main">
             <div class="section">
               
-                <p>Updates an annotation. Caller must have WRITE permission for the associated dataset.</p>
+                <p>Updates an annotation. Caller must have
+WRITE permission for the associated dataset.</p>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for at least one of the following scopes to make a valid call:</p>
 <ul>
@@ -664,11 +651,14 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li><code>reference-name=sea</code><ul>
-<li>The display name corresponding to the reference specified by <code>referenceId</code>, for example <code>chr1</code>, <code>1</code>, or <code>chrX</code>.</li>
+<li>The display name corresponding to the reference specified by
+    <code>referenceId</code>, for example <code>chr1</code>, <code>1</code>, or <code>chrX</code>.</li>
 </ul>
 </li>
 <li><code>reverse-strand=false</code><ul>
-<li>Whether this range refers to the reverse strand, as opposed to the forward strand. Note that regardless of this field, the start/end position of the range always refer to the forward strand.</li>
+<li>Whether this range refers to the reverse strand, as opposed to the forward
+    strand. Note that regardless of this field, the start/end position of the
+    range always refer to the forward strand.</li>
 </ul>
 </li>
 <li><code>start=eos</code><ul>
@@ -676,13 +666,17 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li><code>transcript.coding-sequence    end=erat</code><ul>
-<li>The end of the coding sequence on this annotation&#39;s reference sequence, 0-based exclusive. Note that this position is relative to the reference start, and <em>not</em> the containing annotation start.</li>
+<li>The end of the coding sequence on this annotation&#39;s reference sequence,
+    0-based exclusive. Note that this position is relative to the reference
+    start, and <em>not</em> the containing annotation start.</li>
 </ul>
 </li>
 <li>
 <p><code>start=sadipscing</code></p>
 <ul>
-<li>The start of the coding sequence on this annotation&#39;s reference sequence, 0-based inclusive. Note that this position is relative to the reference start, and <em>not</em> the containing annotation start.</li>
+<li>The start of the coding sequence on this annotation&#39;s reference sequence,
+    0-based inclusive. Note that this position is relative to the reference
+    start, and <em>not</em> the containing annotation start.</li>
 </ul>
 </li>
 <li>
@@ -694,15 +688,21 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>
 <p><code>..    type=eirmod</code></p>
 <ul>
-<li>The data type for this annotation. Must match the containing annotation set&#39;s type.</li>
+<li>The data type for this annotation. Must match the containing annotation
+    set&#39;s type.</li>
 </ul>
 </li>
 <li><code>variant    alternate-bases=elitr</code><ul>
-<li>The alternate allele for this variant. If multiple alternate alleles exist at this location, create a separate variant for each one, as they may represent distinct conditions.</li>
+<li>The alternate allele for this variant. If multiple alternate alleles
+    exist at this location, create a separate variant for each one, as they
+    may represent distinct conditions.</li>
 </ul>
 </li>
 <li><code>clinical-significance=amet</code><ul>
-<li>Describes the clinical significance of a variant. It is adapted from the ClinVar controlled vocabulary for clinical significance described at: http://www.ncbi.nlm.nih.gov/clinvar/docs/clinsig/</li>
+<li>Describes the clinical significance of a variant.
+    It is adapted from the ClinVar controlled vocabulary for clinical
+    significance described at:
+    http://www.ncbi.nlm.nih.gov/clinvar/docs/clinsig/</li>
 </ul>
 </li>
 <li><code>effect=no</code><ul>
@@ -710,11 +710,13 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li><code>gene-id=labore</code><ul>
-<li>Google annotation ID of the gene affected by this variant. This should be provided when the variant is created.</li>
+<li>Google annotation ID of the gene affected by this variant. This should
+    be provided when the variant is created.</li>
 </ul>
 </li>
 <li><code>transcript-ids=eirmod</code><ul>
-<li>Google annotation IDs of the transcripts affected by this variant. These should be provided when the variant is created.</li>
+<li>Google annotation IDs of the transcripts affected by this variant. These
+    should be provided when the variant is created.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
@@ -748,7 +750,12 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li><strong>-p update-mask=string</strong><ul>
-<li>An optional mask specifying which fields to update. Mutable fields are name, variant, transcript, and info. If unspecified, all mutable fields will be updated.</li>
+<li>An optional mask specifying which fields to update. Mutable fields are
+    name,
+    variant,
+    transcript, and
+    info. If unspecified, all mutable
+    fields will be updated.</li>
 </ul>
 </li>
 </ul>

@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Get Batch Get - people v1.0.4+20160210</title>
+  <title>Get Batch Get - People Service v1.0.5+20170518</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> people v1.0.4+20160210</a>
+        <a href=".." class="icon icon-home"> People Service v1.0.5+20170518</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -108,7 +108,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">people v1.0.4+20160210</a>
+        <a href="..">People Service v1.0.5+20170518</a>
       </nav>
 
       
@@ -137,7 +137,9 @@
           <div role="main">
             <div class="section">
               
-                <p>Provides information about a list of specific people by specifying a list of requested resource names. Use <code>people/me</code> to indicate the authenticated user.</p>
+                <p>Provides information about a list of specific people by specifying a list
+of requested resource names. Use <code>people/me</code> to indicate the authenticated
+user.</p>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for at least one of the following scopes to make a valid call:</p>
 <ul>
@@ -170,15 +172,23 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p request-mask-include-field=string</strong></p>
+<p><strong>-p resource-names=string</strong></p>
 <ul>
-<li>Comma-separated list of fields to be included in the response. Omitting this field will include all fields. Each path should start with <code>person.</code>: for example, <code>person.names</code> or <code>person.photos</code>.</li>
+<li>The resource name, such as one returned by
+    <a href="../people/api/rest/v1/people.connections/list"><code>people.connections.list</code></a>,
+    of one of the people to provide information about. You can include this
+    parameter up to 50 times in one request.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p resource-names=string</strong></p>
+<p><strong>-p request-mask-include-field=string</strong></p>
 <ul>
-<li>The resource name, such as one returned by <a href="../people/api/rest/v1/people.connections/list"><code>people.connections.list</code></a>, of one of the people to provide information about. You can include this parameter up to 50 times in one request.</li>
+<li>Comma-separated list of fields to be included in the response. Omitting
+    this field will include all fields except for connections.list requests,
+    which have a default mask that includes common fields like metadata, name,
+    photo, and profile url.
+    Each path should start with <code>person.</code>: for example, <code>person.names</code> or
+    <code>person.photos</code>.</li>
 </ul>
 </li>
 </ul>

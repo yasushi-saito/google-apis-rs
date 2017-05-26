@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Sinks Update - Logging v1.0.4+20161206</title>
+  <title>Sinks Update - Logging v1.0.5+20170516</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Logging v1.0.4+20161206</a>
+        <a href=".." class="icon icon-home"> Logging v1.0.5+20170516</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -387,7 +387,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Logging v1.0.4+20161206</a>
+        <a href="..">Logging v1.0.5+20170516</a>
       </nav>
 
       
@@ -431,6 +431,8 @@ You can set the scope for this method like this: <code>logging2 --scope &lt;scop
 <li>Required. The full resource name of the sink to update, including the parent resource and the sink identifier:
     &#34;projects/[PROJECT_ID]/sinks/[SINK_ID]&#34;
     &#34;organizations/[ORGANIZATION_ID]/sinks/[SINK_ID]&#34;
+    &#34;billingAccounts/[BILLING_ACCOUNT_ID]/sinks/[SINK_ID]&#34;
+    &#34;folders/[FOLDER_ID]/sinks/[SINK_ID]&#34;
     Example: &#34;projects/my-project-id/sinks/my-sink-id&#34;.</li>
 </ul>
 </li>
@@ -443,6 +445,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   destination: string
   end-time: string
   filter: string
+  include-children: boolean
   name: string
   output-version-format: string
   start-time: string
@@ -452,7 +455,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    destination=lorem</code><ul>
+<li><code>-r .    destination=sadipscing</code><ul>
 <li>Required. The export destination:
     &#34;storage.googleapis.com/[GCS_BUCKET]&#34;
     &#34;bigquery.googleapis.com/projects/[PROJECT_ID]/datasets/[DATASET]&#34;
@@ -460,32 +463,40 @@ In the latter case it is advised to set the field-cursor to the data-structure's
     The sink&#39;s writer_identity, set when the sink is created, must have permission to write to the destination or else the log entries are not exported. For more information, see Exporting Logs With Sinks.</li>
 </ul>
 </li>
-<li><code>end-time=eos</code><ul>
+<li><code>end-time=dolor</code><ul>
 <li>Optional. The time at which this sink will stop exporting log entries. Log entries are exported only if their timestamp is earlier than the end time. If this field is not supplied, there is no end time. If both a start time and an end time are provided, then the end time must be later than the start time.</li>
 </ul>
 </li>
 <li>
-<p><code>filter=erat</code></p>
+<p><code>filter=eirmod</code></p>
 <ul>
 <li>Optional. An advanced logs filter. The only exported log entries are those that are in the resource owning the sink and that match the filter. The filter must use the log entry format specified by the output_version_format parameter. For example, in the v2 format:
     logName=&#34;projects/[PROJECT_ID]/logs/[LOG_ID]&#34; AND severity&gt;=ERROR</li>
 </ul>
 </li>
 <li>
-<p><code>name=sadipscing</code></p>
+<p><code>include-children=true</code></p>
+<ul>
+<li>Optional. This field applies only to sinks owned by organizations and folders. If the field is false, the default, only the logs owned by the sink&#39;s parent resource are available for export. If the field is true, then logs from all the projects, folders, and billing accounts contained in the sink&#39;s parent resource are also available for export. Whether a particular log entry from the children is exported depends on the sink&#39;s filter expression. For example, if this field is true, then the filter resource.type=gce_instance would export all Compute Engine VM instance log entries from all projects in the sink&#39;s parent. To only export entries from certain child projects, filter on the project part of the log name:
+    logName:(&#34;projects/test-project1/&#34; OR &#34;projects/test-project2/&#34;) AND
+    resource.type=gce_instance</li>
+</ul>
+</li>
+<li>
+<p><code>name=amet</code></p>
 <ul>
 <li>Required. The client-assigned sink identifier, unique within the project. Example: &#34;my-syslog-errors-to-pubsub&#34;. Sink identifiers are limited to 100 characters and can include only the following characters: upper and lower-case alphanumeric characters, underscores, hyphens, and periods.</li>
 </ul>
 </li>
-<li><code>output-version-format=dolor</code><ul>
+<li><code>output-version-format=no</code><ul>
 <li>Optional. The log entry format to use for this sink&#39;s exported log entries. The v2 format is used by default. The v1 format is deprecated and should be used only as part of a migration effort to v2. See Migration to the v2 API.</li>
 </ul>
 </li>
-<li><code>start-time=eirmod</code><ul>
+<li><code>start-time=labore</code><ul>
 <li>Optional. The time at which this sink will begin exporting log entries. Log entries are exported only if their timestamp is not earlier than the start time. The default value of this field is the time the sink is created or updated.</li>
 </ul>
 </li>
-<li><code>writer-identity=elitr</code><ul>
+<li><code>writer-identity=eirmod</code><ul>
 <li>Output only. An IAM identity&amp;mdash;a service account or group&amp;mdash;under which Stackdriver Logging writes the exported log entries to the sink&#39;s destination. This field is set by sinks.create and sinks.update, based on the setting of unique_writer_identity in those methods.Until you grant this identity write-access to the destination, log entry exports from this sink will fail. For more information, see Granting access for a resource. Consult the destination service&#39;s documentation to determine the appropriate IAM roles to assign to the identity.</li>
 </ul>
 </li>
@@ -517,8 +528,8 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <li><strong>-p unique-writer-identity=boolean</strong><ul>
 <li>Optional. See sinks.create for a description of this field. When updating a sink, the effect of this field on the value of writer_identity in the updated sink depends on both the old and new values of this field:
     If the old and new values of this field are both false or both true, then there is no change to the sink&#39;s writer_identity.
-    If the old value was false and the new value is true, then writer_identity is changed to a unique service account.
-    It is an error if the old value was true and the new value is false.</li>
+    If the old value is false and the new value is true, then writer_identity is changed to a unique service account.
+    It is an error if the old value is true and the new value is false.</li>
 </ul>
 </li>
 </ul>

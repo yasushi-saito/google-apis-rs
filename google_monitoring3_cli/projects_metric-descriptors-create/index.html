@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Metric Descriptors Create - Monitoring v1.0.4+20161212</title>
+  <title>Metric Descriptors Create - Monitoring v1.0.5+20170519</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Monitoring v1.0.4+20161212</a>
+        <a href=".." class="icon icon-home"> Monitoring v1.0.5+20170519</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -197,7 +197,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Monitoring v1.0.4+20161212</a>
+        <a href="..">Monitoring v1.0.5+20170519</a>
       </nav>
 
       
@@ -275,14 +275,14 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>
 <p><code>name=gubergren</code></p>
 <ul>
-<li>The resource name of the metric descriptor. Depending on the implementation, the name typically includes: (1) the parent resource name that defines the scope of the metric type or of its data; and (2) the metric&#39;s URL-encoded type, which also appears in the type field of this descriptor. For example, following is the resource name of a custom metric within the GCP project 123456789:
-    &#34;projects/123456789/metricDescriptors/custom.googleapis.com%2Finvoice%2Fpaid%2Famount&#34;</li>
+<li>The resource name of the metric descriptor. Depending on the implementation, the name typically includes: (1) the parent resource name that defines the scope of the metric type or of its data; and (2) the metric&#39;s URL-encoded type, which also appears in the type field of this descriptor. For example, following is the resource name of a custom metric within the GCP project my-project-id:
+    &#34;projects/my-project-id/metricDescriptors/custom.googleapis.com%2Finvoice%2Fpaid%2Famount&#34;</li>
 </ul>
 </li>
 <li>
 <p><code>type=sadipscing</code></p>
 <ul>
-<li>The metric type, including its DNS name prefix. The type is not URL-encoded. All user-defined metric types have the DNS name custom.googleapis.com. Metric types should use a natural hierarchical grouping. For example:
+<li>The metric type, including its DNS name prefix. The type is not URL-encoded. All user-defined custom metric types have the DNS name custom.googleapis.com. Metric types should use a natural hierarchical grouping. For example:
     &#34;custom.googleapis.com/invoice/paid/amount&#34;
     &#34;appengine.googleapis.com/http/server/response_latencies&#34;</li>
 </ul>

@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>List - directory v1.0.4+20161124</title>
+  <title>List - directory v1.0.5+20170419</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> directory v1.0.4+20161124</a>
+        <a href=".." class="icon icon-home"> directory v1.0.5+20170419</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -906,7 +906,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">directory v1.0.4+20161124</a>
+        <a href="..">directory v1.0.5+20170419</a>
       </nav>
 
       
@@ -948,7 +948,7 @@ You can set the scope for this method like this: <code>admin1-directory --scope 
 <h1 id="required-scalar-argument">Required Scalar Argument</h1>
 <ul>
 <li><strong>&lt;customer-id&gt;</strong> <em>(string)</em><ul>
-<li>Immutable id of the Google Apps account</li>
+<li>Immutable ID of the G Suite account</li>
 </ul>
 </li>
 </ul>
@@ -969,21 +969,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p max-results=integer</strong></p>
+<p><strong>-p query=string</strong></p>
 <ul>
-<li>Maximum number of results to return. Default is 100</li>
-</ul>
-</li>
-<li>
-<p><strong>-p projection=string</strong></p>
-<ul>
-<li>Restrict information returned to a set of selected fields.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p order-by=string</strong></p>
-<ul>
-<li>Column to use for sorting results</li>
+<li>Search string in the format given at http://support.google.com/a/bin/answer.py?hl=en&amp;answer=1408863#search</li>
 </ul>
 </li>
 <li>
@@ -999,9 +987,21 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p query=string</strong></p>
+<p><strong>-p projection=string</strong></p>
 <ul>
-<li>Search string in the format given at http://support.google.com/a/bin/answer.py?hl=en&amp;answer=1408863#search</li>
+<li>Restrict information returned to a set of selected fields.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p order-by=string</strong></p>
+<ul>
+<li>Column to use for sorting results</li>
+</ul>
+</li>
+<li>
+<p><strong>-p max-results=integer</strong></p>
+<ul>
+<li>Maximum number of results to return. Default is 100</li>
 </ul>
 </li>
 </ul>

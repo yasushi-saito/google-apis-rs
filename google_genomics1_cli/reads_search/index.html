@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Search - genomics v1.0.4+20160928</title>
+  <title>Search - genomics v1.0.5+20170520</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> genomics v1.0.4+20160928</a>
+        <a href=".." class="icon icon-home"> genomics v1.0.5+20170520</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -376,13 +376,6 @@
     </li>
 
         
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../reads_stream/">Stream</a>
-        
-    </li>
-
-        
     </ul>
 <li>
           
@@ -491,13 +484,6 @@
     </li>
 
         
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../variants_stream/">Stream</a>
-        
-    </li>
-
-        
     </ul>
 <li>
           
@@ -561,7 +547,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">genomics v1.0.4+20160928</a>
+        <a href="..">genomics v1.0.5+20170520</a>
       </nav>
 
       
@@ -590,7 +576,25 @@
           <div role="main">
             <div class="section">
               
-                <p>Gets a list of reads for one or more read group sets. For the definitions of read group sets and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a> Reads search operates over a genomic coordinate space of reference sequence &amp; position defined over the reference sequences to which the requested read group sets are aligned. If a target positional range is specified, search returns all reads whose alignment to the reference genome overlap the range. A query which specifies only read group set IDs yields all reads in those read group sets, including unmapped reads. All reads returned (including reads on subsequent pages) are ordered by genomic coordinate (by reference sequence, then position). Reads with equivalent genomic coordinates are returned in an unspecified order. This order is consistent, such that two queries for the same content (regardless of page size) yield reads in the same order across their respective streams of paginated responses. Implements <a href="https://github.com/ga4gh/schemas/blob/v0.5.1/src/main/resources/avro/readmethods.avdl#L85">GlobalAllianceApi.searchReads</a>.</p>
+                <p>Gets a list of reads for one or more read group sets.</p>
+<p>For the definitions of read group sets and other genomics resources, see
+<a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google
+Genomics</a></p>
+<p>Reads search operates over a genomic coordinate space of reference sequence
+&amp; position defined over the reference sequences to which the requested
+read group sets are aligned.</p>
+<p>If a target positional range is specified, search returns all reads whose
+alignment to the reference genome overlap the range. A query which
+specifies only read group set IDs yields all reads in those read group
+sets, including unmapped reads.</p>
+<p>All reads returned (including reads on subsequent pages) are ordered by
+genomic coordinate (by reference sequence, then position). Reads with
+equivalent genomic coordinates are returned in an unspecified order. This
+order is consistent, such that two queries for the same content (regardless
+of page size) yield reads in the same order across their respective streams
+of paginated responses.</p>
+<p>Implements
+<a href="https://github.com/ga4gh/schemas/blob/v0.5.1/src/main/resources/avro/readmethods.avdl#L85">GlobalAllianceApi.searchReads</a>.</p>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for at least one of the following scopes to make a valid call:</p>
 <ul>
@@ -618,33 +622,45 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
 <li><code>-r .    end=sit</code><ul>
-<li>The end position of the range on the reference, 0-based exclusive. If specified, <code>referenceName</code> must also be specified.</li>
+<li>The end position of the range on the reference, 0-based exclusive. If
+    specified, <code>referenceName</code> must also be specified.</li>
 </ul>
 </li>
 <li><code>page-size=61</code><ul>
-<li>The maximum number of results to return in a single page. If unspecified, defaults to 256. The maximum value is 2048.</li>
+<li>The maximum number of results to return in a single page. If unspecified,
+    defaults to 256. The maximum value is 2048.</li>
 </ul>
 </li>
 <li><code>page-token=consetetur</code><ul>
-<li>The continuation token, which is used to page through large result sets. To get the next page of results, set this parameter to the value of <code>nextPageToken</code> from the previous response.</li>
+<li>The continuation token, which is used to page through large result sets.
+    To get the next page of results, set this parameter to the value of
+    <code>nextPageToken</code> from the previous response.</li>
 </ul>
 </li>
 <li><code>read-group-ids=labore</code><ul>
-<li>The IDs of the read groups within which to search for reads. All specified read groups must belong to the same read group sets. Must specify one of <code>readGroupSetIds</code> or <code>readGroupIds</code>.</li>
+<li>The IDs of the read groups within which to search for reads. All specified
+    read groups must belong to the same read group sets. Must specify one of
+    <code>readGroupSetIds</code> or <code>readGroupIds</code>.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
 <li><code>read-group-set-ids=sed</code><ul>
-<li>The IDs of the read groups sets within which to search for reads. All specified read group sets must be aligned against a common set of reference sequences; this defines the genomic coordinates for the query. Must specify one of <code>readGroupSetIds</code> or <code>readGroupIds</code>.</li>
+<li>The IDs of the read groups sets within which to search for reads. All
+    specified read group sets must be aligned against a common set of reference
+    sequences; this defines the genomic coordinates for the query. Must specify
+    one of <code>readGroupSetIds</code> or <code>readGroupIds</code>.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
 <li><code>reference-name=ea</code><ul>
-<li>The reference sequence name, for example <code>chr1</code>, <code>1</code>, or <code>chrX</code>. If set to <code>*</code>, only unmapped reads are returned. If unspecified, all reads (mapped and unmapped) are returned.</li>
+<li>The reference sequence name, for example <code>chr1</code>, <code>1</code>, or <code>chrX</code>. If set to
+    <code>*</code>, only unmapped reads are returned. If unspecified, all reads (mapped
+    and unmapped) are returned.</li>
 </ul>
 </li>
 <li><code>start=gubergren</code><ul>
-<li>The start position of the range on the reference, 0-based inclusive. If specified, <code>referenceName</code> must also be specified.</li>
+<li>The start position of the range on the reference, 0-based inclusive. If
+    specified, <code>referenceName</code> must also be specified.</li>
 </ul>
 </li>
 </ul>
@@ -756,7 +772,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../reads_stream/" class="btn btn-neutral float-right" title="Stream">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../references_bases-list/" class="btn btn-neutral float-right" title="Bases List">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="../readgroupsets_search/" class="btn btn-neutral" title="Search"><span class="icon icon-circle-arrow-left"></span> Previous</a>
@@ -792,7 +808,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
         <span><a href="../readgroupsets_search/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../reads_stream/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../references_bases-list/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

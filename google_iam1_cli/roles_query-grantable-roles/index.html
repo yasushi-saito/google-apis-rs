@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Query Grantable Roles - iam v1.0.4+20160915</title>
+  <title>Query Grantable Roles - iam v1.0.5+20170515</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> iam v1.0.4+20160915</a>
+        <a href=".." class="icon icon-home"> iam v1.0.5+20170515</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -137,6 +137,13 @@
         
             
     <li class="toctree-l1 ">
+        <a class="" href="../projects_service-accounts-sign-jwt/">Service Accounts Sign Jwt</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
         <a class="" href="../projects_service-accounts-test-iam-permissions/">Service Accounts Test Iam Permissions</a>
         
     </li>
@@ -195,7 +202,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">iam v1.0.4+20160915</a>
+        <a href="..">iam v1.0.5+20170515</a>
       </nav>
 
       
@@ -224,7 +231,9 @@
           <div role="main">
             <div class="section">
               
-                <p>Queries roles that can be granted on a particular resource. A role is grantable if it can be used as the role in a binding for a policy for that resource.</p>
+                <p>Queries roles that can be granted on a particular resource.
+A role is grantable if it can be used as the role in a binding for a policy
+for that resource.</p>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for the <em>https://www.googleapis.com/auth/cloud-platform</em> scope to make a valid call.</p>
 <p>If unset, the scope for this method defaults to <em>https://www.googleapis.com/auth/cloud-platform</em>.
@@ -235,13 +244,25 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <p>For example, a structure like this:</p>
 <pre><code>QueryGrantableRolesRequest:
   full-resource-name: string
+  page-size: integer
+  page-token: string
 
 </code></pre>
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    full-resource-name=justo</code><ul>
-<li>Required. The full resource name to query from the list of grantable roles. The name follows the Google Cloud Platform resource format. For example, a Cloud Platform project with id <code>my-project</code> will be named <code>//cloudresourcemanager.googleapis.com/projects/my-project</code>.</li>
+<li><code>-r .    full-resource-name=et</code><ul>
+<li>
+<p>Required. The full resource name to query from the list of grantable roles.</p>
+<p>The name follows the Google Cloud Platform resource format.
+For example, a Cloud Platform project with id <code>my-project</code> will be named
+<code>//cloudresourcemanager.googleapis.com/projects/my-project</code>.
+<em> <code>page-size=84</code>
+    - Optional limit on the number of roles to include in the response.
+</em> <code>page-token=diam</code>
+    - Optional pagination token returned in an earlier
+QueryGrantableRolesResponse.</p>
+</li>
 </ul>
 </li>
 </ul>

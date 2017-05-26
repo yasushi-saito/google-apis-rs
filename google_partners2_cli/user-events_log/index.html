@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Log - partners v1.0.4+20151009</title>
+  <title>Log - Partners v1.0.5+20170503</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> partners v1.0.4+20151009</a>
+        <a href=".." class="icon icon-home"> Partners v1.0.5+20170503</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -51,6 +51,21 @@
         <a class="" href="..">Home</a>
         
     </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Analytics</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../analytics_list/">List</a>
+        
+    </li>
+
+        
+    </ul>
 <li>
           
             <li>
@@ -90,6 +105,87 @@
             
     <li class="toctree-l1 ">
         <a class="" href="../companies_list/">List</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Exams</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../exams_get-token/">Get Token</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Leads</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../leads_list/">List</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Methods</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../methods_get-partnersstatus/">Get Partnersstatus</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../methods_update-companies/">Update Companies</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../methods_update-leads/">Update Leads</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Offers</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../offers_history-list/">History List</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../offers_list/">List</a>
         
     </li>
 
@@ -142,6 +238,42 @@
     </ul>
 <li>
           
+            <li>
+    <ul class="subnav">
+    <li><span>Users</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../users_create-company-relation/">Create Company Relation</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../users_delete-company-relation/">Delete Company Relation</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../users_get/">Get</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../users_update-profile/">Update Profile</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
         </ul>
       </div>
       &nbsp;
@@ -152,7 +284,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">partners v1.0.4+20151009</a>
+        <a href="..">Partners v1.0.5+20170503</a>
       </nav>
 
       
@@ -191,17 +323,22 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   event-category: string
   event-scope: string
   lead:
+    adwords-customer-id: string
     comments: string
+    create-time: string
     email: string
     family-name: string
     given-name: string
     gps-motivations: [string]
     id: string
+    language-code: string
+    marketing-opt-in: boolean
     min-monthly-budget:
       currency-code: string
       nanos: integer
       units: string
     phone-number: string
+    state: string
     type: string
     website-url: string
   request-metadata:
@@ -220,112 +357,144 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    event-action=sea</code><ul>
+<li><code>-r .    event-action=consetetur</code><ul>
 <li>The action that occurred.</li>
 </ul>
 </li>
-<li><code>event-category=lorem</code><ul>
+<li><code>event-category=takimata</code><ul>
 <li>The category the action belongs to.</li>
 </ul>
 </li>
-<li><code>event-scope=eos</code><ul>
+<li><code>event-scope=nonumy</code><ul>
 <li>The scope of the event.</li>
 </ul>
 </li>
-<li><code>lead    comments=erat</code><ul>
+<li><code>lead    adwords-customer-id=kasd</code><ul>
+<li>The AdWords Customer ID of the lead.</li>
+</ul>
+</li>
+<li><code>comments=sanctus</code><ul>
 <li>Comments lead source gave.</li>
 </ul>
 </li>
-<li><code>email=sadipscing</code><ul>
+<li><code>create-time=takimata</code><ul>
+<li>Timestamp of when this lead was created.</li>
+</ul>
+</li>
+<li><code>email=at</code><ul>
 <li>Email address of lead source.</li>
 </ul>
 </li>
-<li><code>family-name=dolor</code><ul>
+<li><code>family-name=labore</code><ul>
 <li>Last name of lead source.</li>
 </ul>
 </li>
-<li><code>given-name=eirmod</code><ul>
+<li><code>given-name=invidunt</code><ul>
 <li>First name of lead source.</li>
 </ul>
 </li>
-<li><code>gps-motivations=elitr</code><ul>
+<li><code>gps-motivations=ea</code><ul>
 <li>List of reasons for using Google Partner Search and creating a lead.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>id=amet</code><ul>
+<li><code>id=sadipscing</code><ul>
 <li>ID of the lead.</li>
 </ul>
 </li>
-<li><code>min-monthly-budget    currency-code=no</code><ul>
+<li><code>language-code=rebum.</code><ul>
+<li>Language code of the lead&#39;s language preference, as defined by
+    &lt;a href=&#34;https://tools.ietf.org/html/bcp47&#34;&gt;BCP 47&lt;/a&gt;
+    (IETF BCP 47, &#34;Tags for Identifying Languages&#34;).</li>
+</ul>
+</li>
+<li><code>marketing-opt-in=true</code><ul>
+<li>Whether or not the lead signed up for marketing emails</li>
+</ul>
+</li>
+<li><code>min-monthly-budget    currency-code=nonumy</code><ul>
 <li>The 3-letter currency code defined in ISO 4217.</li>
 </ul>
 </li>
-<li><code>nanos=65</code><ul>
-<li>Number of nano (10^-9) units of the amount. The value must be between -999,999,999 and +999,999,999 inclusive. If <code>units</code> is positive, <code>nanos</code> must be positive or zero. If <code>units</code> is zero, <code>nanos</code> can be positive, zero, or negative. If <code>units</code> is negative, <code>nanos</code> must be negative or zero. For example $-1.75 is represented as <code>units</code>=-1 and <code>nanos</code>=-750,000,000.</li>
+<li><code>nanos=72</code><ul>
+<li>Number of nano (10^-9) units of the amount.
+    The value must be between -999,999,999 and +999,999,999 inclusive.
+    If <code>units</code> is positive, <code>nanos</code> must be positive or zero.
+    If <code>units</code> is zero, <code>nanos</code> can be positive, zero, or negative.
+    If <code>units</code> is negative, <code>nanos</code> must be negative or zero.
+    For example $-1.75 is represented as <code>units</code>=-1 and <code>nanos</code>=-750,000,000.</li>
 </ul>
 </li>
 <li>
-<p><code>units=eirmod</code></p>
+<p><code>units=aliquyam</code></p>
 <ul>
-<li>The whole units of the amount. For example if <code>currencyCode</code> is <code>&amp;#34;USD&amp;#34;</code>, then 1 unit is one US dollar.</li>
+<li>The whole units of the amount.
+    For example if <code>currencyCode</code> is <code>&amp;#34;USD&amp;#34;</code>, then 1 unit is one US dollar.</li>
 </ul>
 </li>
 <li>
-<p><code>..    phone-number=dolore</code></p>
+<p><code>..    phone-number=sit</code></p>
 <ul>
 <li>Phone number of lead source.</li>
 </ul>
 </li>
-<li><code>type=invidunt</code><ul>
+<li><code>state=eirmod</code><ul>
+<li>The lead&#39;s state in relation to the company.</li>
+</ul>
+</li>
+<li><code>type=consetetur</code><ul>
 <li>Type of lead.</li>
 </ul>
 </li>
 <li>
-<p><code>website-url=aliquyam</code></p>
+<p><code>website-url=labore</code></p>
 <ul>
 <li>Website URL of lead source.</li>
 </ul>
 </li>
 <li>
-<p><code>..request-metadata    experiment-ids=accusam</code></p>
+<p><code>..request-metadata    experiment-ids=sed</code></p>
 <ul>
 <li>Experiment IDs the current request belongs to.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>locale=lorem</code><ul>
+<li><code>locale=ea</code><ul>
 <li>Locale to use for the current request.</li>
 </ul>
 </li>
-<li><code>partners-session-id=sea</code><ul>
+<li><code>partners-session-id=gubergren</code><ul>
 <li>Google Partners session ID.</li>
 </ul>
 </li>
-<li><code>traffic-source    traffic-source-id=et</code><ul>
-<li>Identifier to indicate where the traffic comes from. An identifier has multiple letters created by a team which redirected the traffic to us.</li>
+<li><code>traffic-source    traffic-source-id=aliquyam</code><ul>
+<li>Identifier to indicate where the traffic comes from.
+    An identifier has multiple letters created by a team which redirected the
+    traffic to us.</li>
 </ul>
 </li>
 <li>
-<p><code>traffic-sub-id=duo</code></p>
+<p><code>traffic-sub-id=eos</code></p>
 <ul>
-<li>Second level identifier to indicate where the traffic comes from. An identifier has multiple letters created by a team which redirected the traffic to us.</li>
+<li>Second level identifier to indicate where the traffic comes from.
+    An identifier has multiple letters created by a team which redirected the
+    traffic to us.</li>
 </ul>
 </li>
 <li>
-<p><code>..user-overrides    ip-address=et</code></p>
+<p><code>..user-overrides    ip-address=tempor</code></p>
 <ul>
 <li>IP address to use instead of the user&#39;s geo-located IP address.</li>
 </ul>
 </li>
 <li>
-<p><code>user-id=eirmod</code></p>
+<p><code>user-id=sea</code></p>
 <ul>
 <li>Logged-in user ID to impersonate instead of the user&#39;s ID.</li>
 </ul>
 </li>
 <li>
-<p><code>...    url=sanctus</code></p>
+<p><code>...    url=labore</code></p>
 <ul>
 <li>The URL where the event occurred.</li>
 </ul>
@@ -442,7 +611,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
         <a href="../user-states_list/" class="btn btn-neutral float-right" title="List">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../companies_list/" class="btn btn-neutral" title="List"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../offers_list/" class="btn btn-neutral" title="List"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -472,7 +641,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
           <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/partners2-cli" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../companies_list/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../offers_list/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
         <span style="margin-left: 15px"><a href="../user-states_list/" style="color: #fcfcfc">Next &raquo;</a></span>

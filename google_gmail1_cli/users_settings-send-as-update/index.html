@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Settings Send As Update - gmail v1.0.4+20161206</title>
+  <title>Settings Send As Update - gmail v1.0.5+20170510</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> gmail v1.0.4+20161206</a>
+        <a href=".." class="icon icon-home"> gmail v1.0.5+20170510</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -360,6 +360,41 @@
 
         
             
+    <li class="toctree-l1 ">
+        <a class="" href="../users_settings-send-as-smime-info-delete/">Settings Send As Smime Info Delete</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../users_settings-send-as-smime-info-get/">Settings Send As Smime Info Get</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../users_settings-send-as-smime-info-insert/">Settings Send As Smime Info Insert</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../users_settings-send-as-smime-info-list/">Settings Send As Smime Info List</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../users_settings-send-as-smime-info-set-default/">Settings Send As Smime Info Set Default</a>
+        
+    </li>
+
+        
+            
     <li class="toctree-l1 current">
         <a class="current" href="./">Settings Send As Update</a>
         
@@ -491,7 +526,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">gmail v1.0.4+20161206</a>
+        <a href="..">gmail v1.0.5+20170510</a>
       </nav>
 
       
@@ -521,6 +556,7 @@
             <div class="section">
               
                 <p>Updates a send-as alias. If a signature is provided, Gmail will sanitize the HTML before saving it with the alias.</p>
+<p>Addresses other than the primary address for the account can only be updated by service account clients that have been delegated domain-wide authority.</p>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for at least one of the following scopes to make a valid call:</p>
 <ul>
@@ -564,7 +600,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    display-name=diam</code><ul>
+<li><code>-r .    display-name=sea</code><ul>
 <li>A name that appears in the &#34;From:&#34; header for mail sent using this alias. For custom &#34;from&#34; addresses, when this is empty, Gmail will populate the &#34;From:&#34; header with the name that is used for the primary address associated with the account.</li>
 </ul>
 </li>
@@ -576,36 +612,36 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>Whether this address is the primary address used to login to the account. Every Gmail account has exactly one primary address, and it cannot be deleted from the collection of send-as aliases. This field is read-only.</li>
 </ul>
 </li>
-<li><code>reply-to-address=amet.</code><ul>
+<li><code>reply-to-address=sanctus</code><ul>
 <li>An optional email address that is included in a &#34;Reply-To:&#34; header for mail sent using this alias. If this is empty, Gmail will not generate a &#34;Reply-To:&#34; header.</li>
 </ul>
 </li>
-<li><code>send-as-email=ipsum</code><ul>
+<li><code>send-as-email=voluptua.</code><ul>
 <li>The email address that appears in the &#34;From:&#34; header for mail sent using this alias. This is read-only for all operations except create.</li>
 </ul>
 </li>
-<li><code>signature=ut</code><ul>
+<li><code>signature=dolor</code><ul>
 <li>An optional HTML signature that is included in messages composed with this alias in the Gmail web UI.</li>
 </ul>
 </li>
-<li><code>smtp-msa    host=dolor</code><ul>
+<li><code>smtp-msa    host=et</code><ul>
 <li>The hostname of the SMTP service. Required.</li>
 </ul>
 </li>
-<li><code>password=sea</code><ul>
+<li><code>password=et</code><ul>
 <li>The password that will be used for authentication with the SMTP service. This is a write-only field that can be specified in requests to create or update SendAs settings; it is never populated in responses.</li>
 </ul>
 </li>
-<li><code>port=65</code><ul>
+<li><code>port=75</code><ul>
 <li>The port of the SMTP service. Required.</li>
 </ul>
 </li>
-<li><code>security-mode=eirmod</code><ul>
+<li><code>security-mode=ut</code><ul>
 <li>The protocol that will be used to secure communication with the SMTP service. Required.</li>
 </ul>
 </li>
 <li>
-<p><code>username=sanctus</code></p>
+<p><code>username=sed</code></p>
 <ul>
 <li>The username that will be used for authentication with the SMTP service. This is a write-only field that can be specified in requests to create or update SendAs settings; it is never populated in responses.</li>
 </ul>
@@ -616,7 +652,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>Whether Gmail should  treat this address as an alias for the user&#39;s primary email address. This setting only applies to custom &#34;from&#34; aliases.</li>
 </ul>
 </li>
-<li><code>verification-status=dolor</code><ul>
+<li><code>verification-status=ipsum</code><ul>
 <li>Indicates whether this address has been verified for use as a send-as alias. Read-only. This setting only applies to custom &#34;from&#34; aliases.</li>
 </ul>
 </li>
@@ -696,7 +732,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
         <a href="../users_settings-send-as-verify/" class="btn btn-neutral float-right" title="Settings Send As Verify">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../users_settings-send-as-patch/" class="btn btn-neutral" title="Settings Send As Patch"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../users_settings-send-as-smime-info-set-default/" class="btn btn-neutral" title="Settings Send As Smime Info Set Default"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -726,7 +762,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
           <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/gmail1-cli" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../users_settings-send-as-patch/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../users_settings-send-as-smime-info-set-default/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
         <span style="margin-left: 15px"><a href="../users_settings-send-as-verify/" style="color: #fcfcfc">Next &raquo;</a></span>

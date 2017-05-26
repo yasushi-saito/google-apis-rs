@@ -4,7 +4,7 @@
     
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dns1-cli/</loc>
-     <lastmod>2017-02-05</lastmod>
+     <lastmod>2017-05-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -13,19 +13,19 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dns1-cli/changes_create/</loc>
-     <lastmod>2017-02-05</lastmod>
+     <lastmod>2017-05-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dns1-cli/changes_get/</loc>
-     <lastmod>2017-02-05</lastmod>
+     <lastmod>2017-05-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dns1-cli/changes_list/</loc>
-     <lastmod>2017-02-05</lastmod>
+     <lastmod>2017-05-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -35,25 +35,25 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dns1-cli/managed-zones_create/</loc>
-     <lastmod>2017-02-05</lastmod>
+     <lastmod>2017-05-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dns1-cli/managed-zones_delete/</loc>
-     <lastmod>2017-02-05</lastmod>
+     <lastmod>2017-05-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dns1-cli/managed-zones_get/</loc>
-     <lastmod>2017-02-05</lastmod>
+     <lastmod>2017-05-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dns1-cli/managed-zones_list/</loc>
-     <lastmod>2017-02-05</lastmod>
+     <lastmod>2017-05-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -63,7 +63,7 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dns1-cli/projects_get/</loc>
-     <lastmod>2017-02-05</lastmod>
+     <lastmod>2017-05-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -73,7 +73,7 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dns1-cli/resource-record-sets_list/</loc>
-     <lastmod>2017-02-05</lastmod>
+     <lastmod>2017-05-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
         

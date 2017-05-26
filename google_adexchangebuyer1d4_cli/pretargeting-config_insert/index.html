@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Insert - Ad Exchange Buyer v1.0.4+20161020</title>
+  <title>Insert - Ad Exchange Buyer v1.0.5+20170504</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Ad Exchange Buyer v1.0.4+20161020</a>
+        <a href=".." class="icon icon-home"> Ad Exchange Buyer v1.0.5+20170504</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -446,7 +446,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Ad Exchange Buyer v1.0.4+20161020</a>
+        <a href="..">Ad Exchange Buyer v1.0.5+20170504</a>
       </nav>
 
       
@@ -504,6 +504,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   is-active: boolean
   kind: string
   languages: [string]
+  minimum-viewability-decile: integer
   mobile-carriers: [string]
   mobile-devices: [string]
   mobile-operating-system-versions: [string]
@@ -573,47 +574,51 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>mobile-carriers=amet</code><ul>
+<li><code>minimum-viewability-decile=55</code><ul>
+<li>Requests where the predicted viewability is below the specified decile will not match. E.g. if the buyer sets this value to 5, requests from slots where the predicted viewability is below 50% will not match. If the predicted viewability is unknown this field will be ignored.</li>
+</ul>
+</li>
+<li><code>mobile-carriers=accusam</code><ul>
 <li>Requests containing any of these mobile carrier ids will match. Values are from mobile-carriers.csv in the downloadable files section.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>mobile-devices=accusam</code><ul>
+<li><code>mobile-devices=clita</code><ul>
 <li>Requests containing any of these mobile device ids will match. Values are from mobile-devices.csv in the downloadable files section.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>mobile-operating-system-versions=clita</code><ul>
+<li><code>mobile-operating-system-versions=diam</code><ul>
 <li>Requests containing any of these mobile operating system version ids will match. Values are from mobile-os.csv in the downloadable files section.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>platforms=diam</code><ul>
+<li><code>platforms=justo</code><ul>
 <li>Requests matching any of these platforms will match. Possible values are PRETARGETING_PLATFORM_MOBILE, PRETARGETING_PLATFORM_DESKTOP, and PRETARGETING_PLATFORM_TABLET.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>supported-creative-attributes=justo</code><ul>
+<li><code>supported-creative-attributes=est</code><ul>
 <li>Creative attributes should be declared here if all creatives corresponding to this pretargeting configuration have that creative attribute. Values are from pretargetable-creative-attributes.txt in the downloadable files section.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>user-identifier-data-required=est</code><ul>
+<li><code>user-identifier-data-required=clita</code><ul>
 <li>Requests containing the specified type of user data will match. Possible values are HOSTED_MATCH_DATA, which means the request is cookie-targetable and has a match in the buyer&#39;s hosted match table, and COOKIE_OR_IDFA, which means the request has either a targetable cookie or an iOS IDFA.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>user-lists=clita</code><ul>
+<li><code>user-lists=invidunt</code><ul>
 <li>Requests containing any of these user list ids will match.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>vendor-types=invidunt</code><ul>
+<li><code>vendor-types=ut</code><ul>
 <li>Requests that allow any of these vendor ids will match. Values are from vendors.txt in the downloadable files section.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>verticals=ut</code><ul>
+<li><code>verticals=dolores</code><ul>
 <li>Requests containing any of these vertical ids will match.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>

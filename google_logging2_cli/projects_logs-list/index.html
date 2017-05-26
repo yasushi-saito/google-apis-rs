@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Logs List - Logging v1.0.4+20161206</title>
+  <title>Logs List - Logging v1.0.5+20170516</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Logging v1.0.4+20161206</a>
+        <a href=".." class="icon icon-home"> Logging v1.0.5+20170516</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -382,7 +382,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Logging v1.0.4+20161206</a>
+        <a href="..">Logging v1.0.5+20170516</a>
       </nav>
 
       
@@ -411,7 +411,7 @@
           <div role="main">
             <div class="section">
               
-                <p>Lists the logs in projects or organizations. Only logs that have entries are listed.</p>
+                <p>Lists the logs in projects, organizations, folders, or billing accounts. Only logs that have entries are listed.</p>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for at least one of the following scopes to make a valid call:</p>
 <ul>
@@ -427,7 +427,9 @@ You can set the scope for this method like this: <code>logging2 --scope &lt;scop
 <li><strong>&lt;parent&gt;</strong> <em>(string)</em><ul>
 <li>Required. The resource name that owns the logs:
     &#34;projects/[PROJECT_ID]&#34;
-    &#34;organizations/[ORGANIZATION_ID]&#34;</li>
+    &#34;organizations/[ORGANIZATION_ID]&#34;
+    &#34;billingAccounts/[BILLING_ACCOUNT_ID]&#34;
+    &#34;folders/[FOLDER_ID]&#34;</li>
 </ul>
 </li>
 </ul>

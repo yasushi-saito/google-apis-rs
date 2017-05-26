@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Models Versions Create - Cloud Machine Learning v1.0.4+20161212</title>
+  <title>Models Versions Create - Cloud Machine Learning Engine v1.0.5+20170515</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Cloud Machine Learning v1.0.4+20161212</a>
+        <a href=".." class="icon icon-home"> Cloud Machine Learning Engine v1.0.5+20170515</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -225,7 +225,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Cloud Machine Learning v1.0.4+20161212</a>
+        <a href="..">Cloud Machine Learning Engine v1.0.5+20170515</a>
       </nav>
 
       
@@ -260,7 +260,7 @@ version of the specified model, it will be made the default version of the
 model. When you add a version to a model that already has one or more
 versions, the default version does not automatically change. If you want a
 new version to be the default, you must call
-<a href="../ml/reference/rest/v1beta1/projects.models.versions/setDefault">projects.models.versions.setDefault</a>.</p>
+<a href="../ml-engine/reference/rest/v1beta1/projects.models.versions/setDefault">projects.models.versions.setDefault</a>.</p>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for the <em>https://www.googleapis.com/auth/cloud-platform</em> scope to make a valid call.</p>
 <p>If unset, the scope for this method defaults to <em>https://www.googleapis.com/auth/cloud-platform</em>.
@@ -285,39 +285,60 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   description: string
   is-default: boolean
   last-use-time: string
+  manual-scaling:
+    nodes: integer
   name: string
+  runtime-version: string
 
 </code></pre>
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    create-time=amet</code><ul>
+<li><code>-r .    create-time=duo</code><ul>
 <li>Output only. The time the version was created.</li>
 </ul>
 </li>
-<li><code>deployment-uri=no</code><ul>
+<li>
+<p><code>deployment-uri=et</code></p>
+<ul>
 <li>
 <p>Required. The Google Cloud Storage location of the trained model used to
     create the version. See the
-    <a href="../ml/docs/concepts/deployment-overview">overview of model deployment</a> for
-    more informaiton.</p>
+    <a href="../ml-engine/docs/concepts/deployment-overview">overview of model
+    deployment</a> for more
+    informaiton.</p>
 <p>When passing Version to
-<a href="../ml/reference/rest/v1beta1/projects.models.versions/create">projects.models.versions.create</a>
+<a href="../ml-engine/reference/rest/v1beta1/projects.models.versions/create">projects.models.versions.create</a>
 the model service uses the specified location as the source of the model.
 Once deployed, the model version is hosted by the prediction service, so
 this location is useful only as a historical record.
-<em> <code>description=labore</code>
+The total number of model files can&#39;t exceed 1000.
+<em> <code>description=eirmod</code>
     - Optional. The description specified for the version when it was created.
-</em> <code>is-default=true</code>
+</em> <code>is-default=false</code>
     - Output only. If true, this version will be used to handle prediction
 requests that do not specify a version.</p>
 <p>You can change the default version by calling
-<a href="../ml/reference/rest/v1beta1/projects.models.versions/setDefault">projects.methods.versions.setDefault</a>.
-<em> <code>last-use-time=dolore</code>
+<a href="../ml-engine/reference/rest/v1beta1/projects.models.versions/setDefault">projects.methods.versions.setDefault</a>.
+<em> <code>last-use-time=et</code>
     - Output only. The time the version was last used for prediction.
-</em> <code>name=invidunt</code>
-    - Required.The name specified for the version when it was created.</p>
-<p>The version name must be unique within the model it is created in.</p>
+</em> <code>manual-scaling    nodes=55</code>
+    - The number of nodes to allocate for this model. These nodes are always up,
+starting from the time the model is deployed, so the cost of operating
+this model will be proportional to nodes * number of hours since
+deployment.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><code>..    name=et</code></p>
+<ul>
+<li>
+<p>Required.The name specified for the version when it was created.</p>
+<p>The version name must be unique within the model it is created in.
+* <code>runtime-version=consetetur</code>
+    - Optional. The Google Cloud ML runtime version to use for this deployment.
+If not set, Google Cloud ML will choose a version.</p>
 </li>
 </ul>
 </li>

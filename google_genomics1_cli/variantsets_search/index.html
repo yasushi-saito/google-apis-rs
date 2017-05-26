@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Search - genomics v1.0.4+20160928</title>
+  <title>Search - genomics v1.0.5+20170520</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> genomics v1.0.4+20160928</a>
+        <a href=".." class="icon icon-home"> genomics v1.0.5+20170520</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -358,13 +358,6 @@
     </li>
 
         
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../reads_stream/">Stream</a>
-        
-    </li>
-
-        
     </ul>
 <li>
           
@@ -473,13 +466,6 @@
     </li>
 
         
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../variants_stream/">Stream</a>
-        
-    </li>
-
-        
     </ul>
 <li>
           
@@ -561,7 +547,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">genomics v1.0.4+20160928</a>
+        <a href="..">genomics v1.0.5+20170520</a>
       </nav>
 
       
@@ -590,7 +576,12 @@
           <div role="main">
             <div class="section">
               
-                <p>Returns a list of all variant sets matching search criteria. For the definitions of variant sets and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a> Implements <a href="https://github.com/ga4gh/schemas/blob/v0.5.1/src/main/resources/avro/variantmethods.avdl#L49">GlobalAllianceApi.searchVariantSets</a>.</p>
+                <p>Returns a list of all variant sets matching search criteria.</p>
+<p>For the definitions of variant sets and other genomics resources, see
+<a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google
+Genomics</a></p>
+<p>Implements
+<a href="https://github.com/ga4gh/schemas/blob/v0.5.1/src/main/resources/avro/variantmethods.avdl#L49">GlobalAllianceApi.searchVariantSets</a>.</p>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for at least one of the following scopes to make a valid call:</p>
 <ul>
@@ -613,17 +604,21 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    dataset-ids=et</code><ul>
-<li>Exactly one dataset ID must be provided here. Only variant sets which belong to this dataset will be returned.</li>
+<li><code>-r .    dataset-ids=dolor</code><ul>
+<li>Exactly one dataset ID must be provided here. Only variant sets which
+    belong to this dataset will be returned.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>page-size=10</code><ul>
-<li>The maximum number of results to return in a single page. If unspecified, defaults to 1024.</li>
+<li><code>page-size=79</code><ul>
+<li>The maximum number of results to return in a single page. If unspecified,
+    defaults to 1024.</li>
 </ul>
 </li>
 <li><code>page-token=et</code><ul>
-<li>The continuation token, which is used to page through large result sets. To get the next page of results, set this parameter to the value of <code>nextPageToken</code> from the previous response.</li>
+<li>The continuation token, which is used to page through large result sets.
+    To get the next page of results, set this parameter to the value of
+    <code>nextPageToken</code> from the previous response.</li>
 </ul>
 </li>
 </ul>

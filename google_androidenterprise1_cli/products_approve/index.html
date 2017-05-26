@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Approve - Android Enterprise v1.0.4+20161207</title>
+  <title>Approve - Android Enterprise v1.0.5+20170516</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Android Enterprise v1.0.4+20161207</a>
+        <a href=".." class="icon icon-home"> Android Enterprise v1.0.5+20170516</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -51,99 +51,6 @@
         <a class="" href="..">Home</a>
         
     </li>
-<li>
-          
-            <li>
-    <ul class="subnav">
-    <li><span>Collections</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../collections_delete/">Delete</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../collections_get/">Get</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../collections_insert/">Insert</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../collections_list/">List</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../collections_patch/">Patch</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../collections_update/">Update</a>
-        
-    </li>
-
-        
-    </ul>
-<li>
-          
-            <li>
-    <ul class="subnav">
-    <li><span>Collectionviewers</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../collectionviewers_delete/">Delete</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../collectionviewers_get/">Get</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../collectionviewers_list/">List</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../collectionviewers_patch/">Patch</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../collectionviewers_update/">Update</a>
-        
-    </li>
-
-        
-    </ul>
 <li>
           
             <li>
@@ -598,13 +505,6 @@
     </li>
 
         
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../products_update-permissions/">Update Permissions</a>
-        
-    </li>
-
-        
     </ul>
 <li>
           
@@ -832,7 +732,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Android Enterprise v1.0.4+20161207</a>
+        <a href="..">Android Enterprise v1.0.5+20170516</a>
       </nav>
 
       
@@ -862,7 +762,7 @@
             <div class="section">
               
                 <p>Approves the specified product and the relevant app permissions, if any. The maximum number of products that you can approve per enterprise customer is 1,000.</p>
-<p>To learn how to use Google Play for Work to design and create a store layout to display approved products to your users, see Store Layout Design.</p>
+<p>To learn how to use managed Google Play to design and create a store layout to display approved products to your users, see Store Layout Design.</p>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for the <em>https://www.googleapis.com/auth/androidenterprise</em> scope to make a valid call.</p>
 <p>If unset, the scope for this method defaults to <em>https://www.googleapis.com/auth/androidenterprise</em>.
@@ -886,17 +786,26 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   approval-url-info:
     approval-url: string
     kind: string
+  approved-permissions: string
 
 </code></pre>
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .approval-url-info    approval-url=gubergren</code><ul>
+<li><code>-r .approval-url-info    approval-url=no</code><ul>
 <li>A URL that displays a product&#39;s permissions and that can also be used to approve the product with the Products.approve call.</li>
 </ul>
 </li>
-<li><code>kind=justo</code><ul>
+<li>
+<p><code>kind=labore</code></p>
+<ul>
 <li>Identifies what kind of resource this is. Value: the fixed string &#34;androidenterprise#approvalUrlInfo&#34;.</li>
+</ul>
+</li>
+<li>
+<p><code>..    approved-permissions=eirmod</code></p>
+<ul>
+<li>Sets how new permission requests for the product are handled. &#34;allPermissions&#34; automatically approves all current and future permissions for the product. &#34;currentPermissionsOnly&#34; approves the current set of permissions for the product, but any future permissions added through updates will require manual reapproval. If not specified, only the current set of permissions will be approved.</li>
 </ul>
 </li>
 </ul>

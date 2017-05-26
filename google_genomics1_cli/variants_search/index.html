@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Search - genomics v1.0.4+20160928</title>
+  <title>Search - genomics v1.0.5+20170520</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> genomics v1.0.4+20160928</a>
+        <a href=".." class="icon icon-home"> genomics v1.0.5+20170520</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -358,13 +358,6 @@
     </li>
 
         
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../reads_stream/">Stream</a>
-        
-    </li>
-
-        
     </ul>
 <li>
           
@@ -491,13 +484,6 @@
     </li>
 
         
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../variants_stream/">Stream</a>
-        
-    </li>
-
-        
     </ul>
 <li>
           
@@ -561,7 +547,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">genomics v1.0.4+20160928</a>
+        <a href="..">genomics v1.0.5+20170520</a>
       </nav>
 
       
@@ -590,7 +576,12 @@
           <div role="main">
             <div class="section">
               
-                <p>Gets a list of variants matching the criteria. For the definitions of variants and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a> Implements <a href="https://github.com/ga4gh/schemas/blob/v0.5.1/src/main/resources/avro/variantmethods.avdl#L126">GlobalAllianceApi.searchVariants</a>.</p>
+                <p>Gets a list of variants matching the criteria.</p>
+<p>For the definitions of variants and other genomics resources, see
+<a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google
+Genomics</a></p>
+<p>Implements
+<a href="https://github.com/ga4gh/schemas/blob/v0.5.1/src/main/resources/avro/variantmethods.avdl#L126">GlobalAllianceApi.searchVariants</a>.</p>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for at least one of the following scopes to make a valid call:</p>
 <ul>
@@ -619,41 +610,53 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    call-set-ids=elitr</code><ul>
-<li>Only return variant calls which belong to call sets with these ids. Leaving this blank returns all variant calls. If a variant has no calls belonging to any of these call sets, it won&#39;t be returned at all.</li>
+<li><code>-r .    call-set-ids=eirmod</code><ul>
+<li>Only return variant calls which belong to call sets with these ids.
+    Leaving this blank returns all variant calls. If a variant has no
+    calls belonging to any of these call sets, it won&#39;t be returned at all.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>end=nonumy</code><ul>
-<li>The end of the window, 0-based exclusive. If unspecified or 0, defaults to the length of the reference.</li>
+<li><code>end=at</code><ul>
+<li>The end of the window, 0-based exclusive. If unspecified or 0, defaults to
+    the length of the reference.</li>
 </ul>
 </li>
-<li><code>max-calls=86</code><ul>
-<li>The maximum number of calls to return in a single page. Note that this limit may be exceeded in the event that a matching variant contains more calls than the requested maximum. If unspecified, defaults to 5000. The maximum value is 10000.</li>
+<li><code>max-calls=5</code><ul>
+<li>The maximum number of calls to return in a single page. Note that this
+    limit may be exceeded in the event that a matching variant contains more
+    calls than the requested maximum. If unspecified, defaults to 5000. The
+    maximum value is 10000.</li>
 </ul>
 </li>
-<li><code>page-size=95</code><ul>
-<li>The maximum number of variants to return in a single page. If unspecified, defaults to 5000. The maximum value is 10000.</li>
+<li><code>page-size=79</code><ul>
+<li>The maximum number of variants to return in a single page. If unspecified,
+    defaults to 5000. The maximum value is 10000.</li>
 </ul>
 </li>
-<li><code>page-token=lorem</code><ul>
-<li>The continuation token, which is used to page through large result sets. To get the next page of results, set this parameter to the value of <code>nextPageToken</code> from the previous response.</li>
+<li><code>page-token=sed</code><ul>
+<li>The continuation token, which is used to page through large result sets.
+    To get the next page of results, set this parameter to the value of
+    <code>nextPageToken</code> from the previous response.</li>
 </ul>
 </li>
-<li><code>reference-name=diam</code><ul>
+<li><code>reference-name=sit</code><ul>
 <li>Required. Only return variants in this reference sequence.</li>
 </ul>
 </li>
-<li><code>start=ut</code><ul>
-<li>The beginning of the window (0-based, inclusive) for which overlapping variants should be returned. If unspecified, defaults to 0.</li>
+<li><code>start=takimata</code><ul>
+<li>The beginning of the window (0-based, inclusive) for which
+    overlapping variants should be returned. If unspecified, defaults to 0.</li>
 </ul>
 </li>
-<li><code>variant-name=ut</code><ul>
+<li><code>variant-name=elitr</code><ul>
 <li>Only return variants which have exactly this name.</li>
 </ul>
 </li>
-<li><code>variant-set-ids=amet.</code><ul>
-<li>At most one variant set ID must be provided. Only variants from this variant set will be returned. If omitted, a call set id must be included in the request.</li>
+<li><code>variant-set-ids=nonumy</code><ul>
+<li>At most one variant set ID must be provided. Only variants from this
+    variant set will be returned. If omitted, a call set id must be included in
+    the request.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
@@ -766,7 +769,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../variants_stream/" class="btn btn-neutral float-right" title="Stream">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../variantsets_create/" class="btn btn-neutral float-right" title="Create">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="../variants_patch/" class="btn btn-neutral" title="Patch"><span class="icon icon-circle-arrow-left"></span> Previous</a>
@@ -802,7 +805,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
         <span><a href="../variants_patch/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../variants_stream/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../variantsets_create/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

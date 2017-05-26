@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Topics Test Iam Permissions - pubsub v1.0.4+20161122</title>
+  <title>Topics Test Iam Permissions - Pubsub v1.0.5+20170502</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> pubsub v1.0.4+20161122</a>
+        <a href=".." class="icon icon-home"> Pubsub v1.0.5+20170502</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -232,7 +232,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">pubsub v1.0.4+20161122</a>
+        <a href="..">Pubsub v1.0.5+20170502</a>
       </nav>
 
       
@@ -261,7 +261,12 @@
           <div role="main">
             <div class="section">
               
-                <p>Returns permissions that a caller has on the specified resource.</p>
+                <p>Returns permissions that a caller has on the specified resource.
+If the resource does not exist, this will return an empty set of
+permissions, not a NOT_FOUND error.</p>
+<p>Note: This operation is designed to be used for building permission-aware
+UIs and command-line tools, not for authorization checking. This operation
+may &#34;fail open&#34; without warning.</p>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for at least one of the following scopes to make a valid call:</p>
 <ul>
@@ -274,8 +279,7 @@ You can set the scope for this method like this: <code>pubsub1-beta2 --scope &lt
 <ul>
 <li><strong>&lt;resource&gt;</strong> <em>(string)</em><ul>
 <li>REQUIRED: The resource for which the policy detail is being requested.
-    <code>resource</code> is usually specified as a path. For example, a Project
-    resource is specified as <code>projects/{project}</code>.</li>
+    See the operation documentation for the appropriate value for this field.</li>
 </ul>
 </li>
 </ul>

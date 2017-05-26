@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Service Accounts Keys Create - iam v1.0.4+20160915</title>
+  <title>Service Accounts Keys Create - iam v1.0.5+20170515</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> iam v1.0.4+20160915</a>
+        <a href=".." class="icon icon-home"> iam v1.0.5+20170515</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -158,6 +158,13 @@
         
             
     <li class="toctree-l1 ">
+        <a class="" href="../projects_service-accounts-sign-jwt/">Service Accounts Sign Jwt</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
         <a class="" href="../projects_service-accounts-test-iam-permissions/">Service Accounts Test Iam Permissions</a>
         
     </li>
@@ -198,7 +205,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">iam v1.0.4+20160915</a>
+        <a href="..">iam v1.0.5+20170515</a>
       </nav>
 
       
@@ -227,7 +234,8 @@
           <div role="main">
             <div class="section">
               
-                <p>Creates a ServiceAccountKey and returns it.</p>
+                <p>Creates a ServiceAccountKey
+and returns it.</p>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for the <em>https://www.googleapis.com/auth/cloud-platform</em> scope to make a valid call.</p>
 <p>If unset, the scope for this method defaults to <em>https://www.googleapis.com/auth/cloud-platform</em>.
@@ -235,7 +243,11 @@ You can set the scope for this method like this: <code>iam1 --scope &lt;scope&gt
 <h1 id="required-scalar-argument">Required Scalar Argument</h1>
 <ul>
 <li><strong>&lt;name&gt;</strong> <em>(string)</em><ul>
-<li>The resource name of the service account in the following format: <code>projects/{project}/serviceAccounts/{account}</code>. Using <code>-</code> as a wildcard for the project will infer the project from the account. The <code>account</code> value can be the <code>email</code> address or the <code>unique_id</code> of the service account.</li>
+<li>The resource name of the service account in the following format:
+    <code>projects/{PROJECT_ID}/serviceAccounts/{SERVICE_ACCOUNT_EMAIL}</code>.
+    Using <code>-</code> as a wildcard for the project will infer the project from
+    the account. The <code>account</code> value can be the <code>email</code> address or the
+    <code>unique_id</code> of the service account.</li>
 </ul>
 </li>
 </ul>
@@ -244,6 +256,7 @@ You can set the scope for this method like this: <code>iam1 --scope &lt;scope&gt
 In the latter case it is advised to set the field-cursor to the data-structure's field to specify values more concisely.</p>
 <p>For example, a structure like this:</p>
 <pre><code>CreateServiceAccountKeyRequest:
+  include-public-key-data: boolean
   key-algorithm: string
   private-key-type: string
 
@@ -251,12 +264,19 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    key-algorithm=takimata</code><ul>
-<li>Which type of key and algorithm to use for the key. The default is currently a 4K RSA key. However this may change in the future.</li>
+<li><code>-r .    include-public-key-data=true</code><ul>
+<li>No description provided.</li>
 </ul>
 </li>
-<li><code>private-key-type=justo</code><ul>
-<li>The output format of the private key. <code>GOOGLE_CREDENTIALS_FILE</code> is the default output format.</li>
+<li><code>key-algorithm=justo</code><ul>
+<li>Which type of key and algorithm to use for the key.
+    The default is currently a 2K RSA key.  However this may change in the
+    future.</li>
+</ul>
+</li>
+<li><code>private-key-type=amet.</code><ul>
+<li>The output format of the private key. <code>GOOGLE_CREDENTIALS_FILE</code> is the
+    default output format.</li>
 </ul>
 </li>
 </ul>

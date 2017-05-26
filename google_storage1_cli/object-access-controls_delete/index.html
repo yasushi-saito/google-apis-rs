@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Delete - storage v1.0.4+20161123</title>
+  <title>Delete - storage v1.0.5+20170504</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> storage v1.0.4+20161123</a>
+        <a href=".." class="icon icon-home"> storage v1.0.5+20170504</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -124,6 +124,13 @@
         
             
     <li class="toctree-l1 ">
+        <a class="" href="../buckets_get-iam-policy/">Get Iam Policy</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
         <a class="" href="../buckets_insert/">Insert</a>
         
     </li>
@@ -139,6 +146,20 @@
             
     <li class="toctree-l1 ">
         <a class="" href="../buckets_patch/">Patch</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../buckets_set-iam-policy/">Set Iam Policy</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../buckets_test-iam-permissions/">Test Iam Permissions</a>
         
     </li>
 
@@ -211,6 +232,42 @@
             
     <li class="toctree-l1 ">
         <a class="" href="../default-object-access-controls_update/">Update</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Notifications</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../notifications_delete/">Delete</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../notifications_get/">Get</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../notifications_insert/">Insert</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../notifications_list/">List</a>
         
     </li>
 
@@ -319,6 +376,13 @@
         
             
     <li class="toctree-l1 ">
+        <a class="" href="../objects_get-iam-policy/">Get Iam Policy</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
         <a class="" href="../objects_insert/">Insert</a>
         
     </li>
@@ -347,6 +411,20 @@
         
             
     <li class="toctree-l1 ">
+        <a class="" href="../objects_set-iam-policy/">Set Iam Policy</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../objects_test-iam-permissions/">Test Iam Permissions</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
         <a class="" href="../objects_update/">Update</a>
         
     </li>
@@ -355,6 +433,21 @@
             
     <li class="toctree-l1 ">
         <a class="" href="../objects_watch-all/">Watch All</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Projects</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../projects_service-account-get/">Service Account Get</a>
         
     </li>
 
@@ -372,7 +465,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">storage v1.0.4+20161123</a>
+        <a href="..">storage v1.0.5+20170504</a>
       </nav>
 
       
@@ -430,8 +523,16 @@ You can set the scope for this method like this: <code>storage1 --scope &lt;scop
 or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> even though the listing below repeats the
 <code>-p</code> for completeness.</p>
 <ul>
-<li><strong>-p generation=string</strong><ul>
+<li>
+<p><strong>-p generation=string</strong></p>
+<ul>
 <li>If present, selects a specific revision of this object (as opposed to the latest version, the default).</li>
+</ul>
+</li>
+<li>
+<p><strong>-p user-project=string</strong></p>
+<ul>
+<li>The project number to be billed for this request, for Requester Pays buckets.</li>
 </ul>
 </li>
 </ul>
@@ -491,7 +592,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
         <a href="../object-access-controls_get/" class="btn btn-neutral float-right" title="Get">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../default-object-access-controls_update/" class="btn btn-neutral" title="Update"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../notifications_list/" class="btn btn-neutral" title="List"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -521,7 +622,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
           <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/storage1-cli" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../default-object-access-controls_update/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../notifications_list/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
         <span style="margin-left: 15px"><a href="../object-access-controls_get/" style="color: #fcfcfc">Next &raquo;</a></span>

@@ -8,7 +8,7 @@
   <meta name="description" content="A complete library to interact with drive (protocol v2)">
   
   <link rel="shortcut icon" href="./img/favicon.ico">
-  <title>Home - drive v1.0.4+20161212</title>
+  <title>Home - drive v1.0.5+20170512</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="./css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href="." class="icon icon-home"> drive v1.0.4+20161212</a>
+        <a href="." class="icon icon-home"> drive v1.0.5+20170512</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -120,6 +120,13 @@
             
     <li class="toctree-l1 ">
         <a class="" href="changes_get/">Get</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="changes_get-start-page-token/">Get Start Page Token</a>
         
     </li>
 
@@ -606,6 +613,49 @@
     </ul>
 <li>
           
+            <li>
+    <ul class="subnav">
+    <li><span>Teamdrives</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="teamdrives_delete/">Delete</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="teamdrives_get/">Get</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="teamdrives_insert/">Insert</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="teamdrives_list/">List</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="teamdrives_update/">Update</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
         </ul>
       </div>
       &nbsp;
@@ -616,7 +666,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href=".">drive v1.0.4+20161212</a>
+        <a href=".">drive v1.0.5+20170512</a>
       </nav>
 
       
@@ -660,7 +710,7 @@ capabilities. Errors will be printed to standard error, and cause the program's 
 
 <p>Find the source code <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/drive2-cli">on github</a>.</p>
 <h1 id="usage">Usage</h1>
-<p>This documentation was generated from the <em>drive</em> API at revision <em>20161212</em>. The CLI is at version <em>1.0.4</em>.</p>
+<p>This documentation was generated from the <em>drive</em> API at revision <em>20170512</em>. The CLI is at version <em>1.0.5</em>.</p>
 <pre><code class="bash">drive2 [options]
         about
                 get [-p &lt;v&gt;]... [-o &lt;out&gt;]
@@ -669,6 +719,7 @@ capabilities. Errors will be printed to standard error, and cause the program's 
                 list [-p &lt;v&gt;]... [-o &lt;out&gt;]
         changes
                 get &lt;change-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                get-start-page-token [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 list [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 watch (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
         channels
@@ -736,6 +787,12 @@ capabilities. Errors will be printed to standard error, and cause the program's 
                 list &lt;file-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 patch &lt;file-id&gt; &lt;revision-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 update &lt;file-id&gt; &lt;revision-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+        teamdrives
+                delete &lt;team-drive-id&gt; [-p &lt;v&gt;]...
+                get &lt;team-drive-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                insert &lt;request-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                list [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                update &lt;team-drive-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
   drive2 --help
 
 Configuration:
@@ -843,5 +900,5 @@ issue at hand.</p>
 
 <!--
 MkDocs version : 0.16.1
-Build Date UTC : 2017-02-05 04:46:09
+Build Date UTC : 2017-05-26 14:36:59
 -->

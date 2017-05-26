@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Patch - dfareporting v1.0.4+20161027</title>
+  <title>Patch - dfareporting v1.0.5+20170428</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> dfareporting v1.0.4+20161027</a>
+        <a href=".." class="icon icon-home"> dfareporting v1.0.5+20170428</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -1970,7 +1970,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">dfareporting v1.0.4+20161027</a>
+        <a href="..">dfareporting v1.0.5+20170428</a>
       </nav>
 
       
@@ -2128,7 +2128,8 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>&#34;45&#34; for RUB </li>
 <li>&#34;46&#34; for AED </li>
 <li>&#34;47&#34; for BGN </li>
-<li>&#34;48&#34; for HRK</li>
+<li>&#34;48&#34; for HRK </li>
+<li>&#34;49&#34; for MXN</li>
 </ul>
 </li>
 </ul>
@@ -2173,7 +2174,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li><code>maximum-image-size=et</code><ul>
-<li>Maximum image size allowed for this account.</li>
+<li>Maximum image size allowed for this account, in kilobytes. Value must be greater than or equal to 1.</li>
 </ul>
 </li>
 <li><code>name=clita</code><ul>
@@ -2189,13 +2190,13 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li><code>lookback-configuration    click-duration=61</code><ul>
-<li>Lookback window, in days, from the last time a given user clicked on one of your ads. If you enter 0, clicks will not be considered as triggering events for floodlight tracking. If you leave this field blank, the default value for your account will be used.</li>
+<li>Lookback window, in days, from the last time a given user clicked on one of your ads. If you enter 0, clicks will not be considered as triggering events for floodlight tracking. If you leave this field blank, the default value for your account will be used. Acceptable values are 0 to 90, inclusive.</li>
 </ul>
 </li>
 <li>
 <p><code>post-impression-activities-duration=88</code></p>
 <ul>
-<li>Lookback window, in days, from the last time a given user viewed one of your ads. If you enter 0, impressions will not be considered as triggering events for floodlight tracking. If you leave this field blank, the default value for your account will be used.</li>
+<li>Lookback window, in days, from the last time a given user viewed one of your ads. If you enter 0, impressions will not be considered as triggering events for floodlight tracking. If you leave this field blank, the default value for your account will be used. Acceptable values are 0 to 90, inclusive.</li>
 </ul>
 </li>
 <li>
@@ -2229,7 +2230,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li><code>teaser-size-limit=at</code><ul>
-<li>File size limit in kilobytes of Rich Media teaser creatives. Must be between 1 and 10240.</li>
+<li>File size limit in kilobytes of Rich Media teaser creatives. Acceptable values are 1 to 10240, inclusive.</li>
 </ul>
 </li>
 </ul>

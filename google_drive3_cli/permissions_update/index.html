@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Update - drive v1.0.4+20161212</title>
+  <title>Update - drive v1.0.5+20170512</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> drive v1.0.4+20161212</a>
+        <a href=".." class="icon icon-home"> drive v1.0.5+20170512</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -379,6 +379,49 @@
     </ul>
 <li>
           
+            <li>
+    <ul class="subnav">
+    <li><span>Teamdrives</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../teamdrives_create/">Create</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../teamdrives_delete/">Delete</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../teamdrives_get/">Get</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../teamdrives_list/">List</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../teamdrives_update/">Update</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
         </ul>
       </div>
       &nbsp;
@@ -389,7 +432,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">drive v1.0.4+20161212</a>
+        <a href="..">drive v1.0.5+20170512</a>
       </nav>
 
       
@@ -430,7 +473,7 @@ You can set the scope for this method like this: <code>drive3 --scope &lt;scope&
 <h1 id="required-scalar-arguments">Required Scalar Arguments</h1>
 <ul>
 <li><strong>&lt;file-id&gt;</strong> <em>(string)</em><ul>
-<li>The ID of the file.</li>
+<li>The ID of the file or Team Drive.</li>
 </ul>
 </li>
 <li><strong>&lt;permission-id&gt;</strong> <em>(string)</em><ul>
@@ -444,6 +487,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <p>For example, a structure like this:</p>
 <pre><code>Permission:
   allow-file-discovery: boolean
+  deleted: boolean
   display-name: string
   domain: string
   email-address: string
@@ -458,40 +502,50 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    allow-file-discovery=false</code><ul>
+<li><code>-r .    allow-file-discovery=true</code><ul>
 <li>Whether the permission allows the file to be discovered through search. This is only applicable for permissions of type domain or anyone.</li>
 </ul>
 </li>
-<li><code>display-name=aliquyam</code><ul>
+<li><code>deleted=true</code><ul>
+<li>Whether the account associated with this permission has been deleted. This field only pertains to user and group permissions.</li>
+</ul>
+</li>
+<li><code>display-name=justo</code><ul>
 <li>A displayable name for users, groups or domains.</li>
 </ul>
 </li>
-<li><code>domain=magna</code><ul>
+<li><code>domain=kasd</code><ul>
 <li>The domain to which this permission refers.</li>
 </ul>
 </li>
-<li><code>email-address=et</code><ul>
+<li><code>email-address=kasd</code><ul>
 <li>The email address of the user or group to which this permission refers.</li>
 </ul>
 </li>
-<li><code>expiration-time=sed</code><ul>
-<li>The time at which this permission will expire (RFC 3339 date-time).</li>
+<li><code>expiration-time=ipsum</code><ul>
+<li>The time at which this permission will expire (RFC 3339 date-time). Expiration times have the following restrictions:  <ul>
+<li>They can only be set on user and group permissions </li>
+<li>The time must be in the future </li>
+<li>The time cannot be more than a year in the future</li>
 </ul>
 </li>
-<li><code>id=est</code><ul>
+</ul>
+</li>
+<li><code>id=eos</code><ul>
 <li>The ID of this permission. This is a unique identifier for the grantee, and is published in User resources as permissionId.</li>
 </ul>
 </li>
-<li><code>kind=sit</code><ul>
+<li><code>kind=nonumy</code><ul>
 <li>Identifies what kind of resource this is. Value: the fixed string &#34;drive#permission&#34;.</li>
 </ul>
 </li>
-<li><code>photo-link=et</code><ul>
+<li><code>photo-link=sanctus</code><ul>
 <li>A link to the user&#39;s profile photo, if available.</li>
 </ul>
 </li>
-<li><code>role=consetetur</code><ul>
-<li>The role granted by this permission. Valid values are:  <ul>
+<li><code>role=voluptua.</code><ul>
+<li>The role granted by this permission. While new values may be supported in the future, the following are currently allowed:  <ul>
+<li>organizer </li>
 <li>owner </li>
 <li>writer </li>
 <li>commenter </li>
@@ -500,7 +554,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </li>
 </ul>
 </li>
-<li><code>type=sea</code><ul>
+<li><code>type=labore</code><ul>
 <li>The type of the grantee. Valid values are:  <ul>
 <li>user </li>
 <li>group </li>
@@ -535,6 +589,12 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> even though the listing below repeats the
 <code>-p</code> for completeness.</p>
 <ul>
+<li>
+<p><strong>-p supports-team-drives=boolean</strong></p>
+<ul>
+<li>Whether the requesting application supports Team Drives.</li>
+</ul>
+</li>
 <li>
 <p><strong>-p transfer-ownership=boolean</strong></p>
 <ul>

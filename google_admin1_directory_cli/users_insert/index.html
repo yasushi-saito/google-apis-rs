@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Insert - directory v1.0.4+20161124</title>
+  <title>Insert - directory v1.0.5+20170419</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> directory v1.0.4+20161124</a>
+        <a href=".." class="icon icon-home"> directory v1.0.5+20170419</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -905,7 +905,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">directory v1.0.4+20161124</a>
+        <a href="..">directory v1.0.5+20170419</a>
       </nav>
 
       
@@ -957,6 +957,8 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   ip-whitelisted: boolean
   is-admin: boolean
   is-delegated-admin: boolean
+  is-enforced-in2-sv: boolean
+  is-enrolled-in2-sv: boolean
   is-mailbox-setup: boolean
   kind: string
   last-login-time: string
@@ -991,7 +993,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li><code>creation-time=lorem</code><ul>
-<li>User&#39;s Google account creation time. (Read-only)</li>
+<li>User&#39;s G Suite account creation time. (Read-only)</li>
 </ul>
 </li>
 <li><code>customer-id=amet.</code><ul>
@@ -1030,64 +1032,72 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>Boolean indicating if the user is delegated admin (Read-only)</li>
 </ul>
 </li>
-<li><code>is-mailbox-setup=true</code><ul>
+<li><code>is-enforced-in2-sv=true</code><ul>
+<li>Is 2-step verification enforced (Read-only)</li>
+</ul>
+</li>
+<li><code>is-enrolled-in2-sv=false</code><ul>
+<li>Is enrolled in 2-step verification (Read-only)</li>
+</ul>
+</li>
+<li><code>is-mailbox-setup=false</code><ul>
 <li>Is mailbox setup (Read-only)</li>
 </ul>
 </li>
-<li><code>kind=sit</code><ul>
+<li><code>kind=diam</code><ul>
 <li>Kind of resource this is.</li>
 </ul>
 </li>
-<li><code>last-login-time=ut</code><ul>
+<li><code>last-login-time=tempor</code><ul>
 <li>User&#39;s last login time. (Read-only)</li>
 </ul>
 </li>
-<li><code>name    family-name=diam</code><ul>
+<li><code>name    family-name=et</code><ul>
 <li>Last Name</li>
 </ul>
 </li>
-<li><code>full-name=tempor</code><ul>
+<li><code>full-name=erat</code><ul>
 <li>Full Name</li>
 </ul>
 </li>
 <li>
-<p><code>given-name=et</code></p>
+<p><code>given-name=dolores</code></p>
 <ul>
 <li>First Name</li>
 </ul>
 </li>
 <li>
-<p><code>..    non-editable-aliases=erat</code></p>
+<p><code>..    non-editable-aliases=kasd</code></p>
 <ul>
 <li>List of non editable aliases (Read-only)</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>org-unit-path=dolores</code><ul>
+<li><code>org-unit-path=et</code><ul>
 <li>OrgUnit of User</li>
 </ul>
 </li>
-<li><code>password=kasd</code><ul>
+<li><code>password=clita</code><ul>
 <li>User&#39;s password</li>
 </ul>
 </li>
-<li><code>primary-email=et</code><ul>
+<li><code>primary-email=sed</code><ul>
 <li>username of User</li>
 </ul>
 </li>
-<li><code>suspended=false</code><ul>
+<li><code>suspended=true</code><ul>
 <li>Indicates if user is suspended</li>
 </ul>
 </li>
-<li><code>suspension-reason=sed</code><ul>
+<li><code>suspension-reason=clita</code><ul>
 <li>Suspension reason if user is suspended (Read-only)</li>
 </ul>
 </li>
-<li><code>thumbnail-photo-etag=dolores</code><ul>
+<li><code>thumbnail-photo-etag=eos</code><ul>
 <li>ETag of the user&#39;s photo (Read-only)</li>
 </ul>
 </li>
-<li><code>thumbnail-photo-url=clita</code><ul>
+<li><code>thumbnail-photo-url=amet</code><ul>
 <li>Photo Url of the user (Read-only)</li>
 </ul>
 </li>

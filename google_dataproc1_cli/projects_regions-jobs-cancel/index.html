@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Regions Jobs Cancel - dataproc v1.0.4+20161102</title>
+  <title>Regions Jobs Cancel - dataproc v1.0.5+20170515</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> dataproc v1.0.4+20161102</a>
+        <a href=".." class="icon icon-home"> dataproc v1.0.5+20170515</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -151,6 +151,13 @@
         
             
     <li class="toctree-l1 ">
+        <a class="" href="../projects_regions-jobs-patch/">Regions Jobs Patch</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
         <a class="" href="../projects_regions-jobs-submit/">Regions Jobs Submit</a>
         
     </li>
@@ -197,7 +204,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">dataproc v1.0.4+20161102</a>
+        <a href="..">dataproc v1.0.5+20170515</a>
       </nav>
 
       
@@ -226,7 +233,7 @@
           <div role="main">
             <div class="section">
               
-                <p>Starts a job cancellation request. To access the job resource after cancellation, call <a href="../dataproc/reference/rest/v1/projects.regions.jobs/list">regions/{region}/jobs.list</a> or <a href="../dataproc/reference/rest/v1/projects.regions.jobs/get">regions/{region}/jobs.get</a>.</p>
+                <p>Starts a job cancellation request. To access the job resource after cancellation, call regions/{region}/jobs.list or regions/{region}/jobs.get.</p>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for the <em>https://www.googleapis.com/auth/cloud-platform</em> scope to make a valid call.</p>
 <p>If unset, the scope for this method defaults to <em>https://www.googleapis.com/auth/cloud-platform</em>.
@@ -234,15 +241,15 @@ You can set the scope for this method like this: <code>dataproc1 --scope &lt;sco
 <h1 id="required-scalar-arguments">Required Scalar Arguments</h1>
 <ul>
 <li><strong>&lt;project-id&gt;</strong> <em>(string)</em><ul>
-<li>[Required] The ID of the Google Cloud Platform project that the job belongs to.</li>
+<li>Required. The ID of the Google Cloud Platform project that the job belongs to.</li>
 </ul>
 </li>
 <li><strong>&lt;region&gt;</strong> <em>(string)</em><ul>
-<li>[Required] The Cloud Dataproc region in which to handle the request.</li>
+<li>Required. The Cloud Dataproc region in which to handle the request.</li>
 </ul>
 </li>
 <li><strong>&lt;job-id&gt;</strong> <em>(string)</em><ul>
-<li>[Required] The job ID.</li>
+<li>Required. The job ID.</li>
 </ul>
 </li>
 </ul>

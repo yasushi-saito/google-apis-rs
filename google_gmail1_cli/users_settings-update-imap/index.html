@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Settings Update Imap - gmail v1.0.4+20161206</title>
+  <title>Settings Update Imap - gmail v1.0.5+20170510</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> gmail v1.0.4+20161206</a>
+        <a href=".." class="icon icon-home"> gmail v1.0.5+20170510</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -361,6 +361,41 @@
         
             
     <li class="toctree-l1 ">
+        <a class="" href="../users_settings-send-as-smime-info-delete/">Settings Send As Smime Info Delete</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../users_settings-send-as-smime-info-get/">Settings Send As Smime Info Get</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../users_settings-send-as-smime-info-insert/">Settings Send As Smime Info Insert</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../users_settings-send-as-smime-info-list/">Settings Send As Smime Info List</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../users_settings-send-as-smime-info-set-default/">Settings Send As Smime Info Set Default</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
         <a class="" href="../users_settings-send-as-update/">Settings Send As Update</a>
         
     </li>
@@ -491,7 +526,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">gmail v1.0.4+20161206</a>
+        <a href="..">gmail v1.0.5+20170510</a>
       </nav>
 
       
@@ -546,11 +581,11 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    auto-expunge=true</code><ul>
+<li><code>-r .    auto-expunge=false</code><ul>
 <li>If this value is true, Gmail will immediately expunge a message when it is marked as deleted in IMAP. Otherwise, Gmail will wait for an update from the client before expunging messages marked as deleted.</li>
 </ul>
 </li>
-<li><code>enabled=true</code><ul>
+<li><code>enabled=false</code><ul>
 <li>Whether IMAP is enabled for the account.</li>
 </ul>
 </li>
@@ -558,7 +593,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>The action that will be executed on a message when it is marked as deleted and expunged from the last visible IMAP folder.</li>
 </ul>
 </li>
-<li><code>max-folder-size=46</code><ul>
+<li><code>max-folder-size=10</code><ul>
 <li>An optional limit on the number of messages that an IMAP folder may contain. Legal values are 0, 1000, 2000, 5000 or 10000. A value of zero is interpreted to mean that there is no limit.</li>
 </ul>
 </li>

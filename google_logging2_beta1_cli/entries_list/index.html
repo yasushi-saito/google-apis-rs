@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>List - Logging v1.0.4+20161206</title>
+  <title>List - Logging v1.0.5+20170516</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Logging v1.0.4+20161206</a>
+        <a href=".." class="icon icon-home"> Logging v1.0.5+20170516</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -254,7 +254,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Logging v1.0.4+20161206</a>
+        <a href="..">Logging v1.0.5+20170516</a>
       </nav>
 
       
@@ -315,15 +315,15 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li><code>order-by=sit</code><ul>
-<li>Optional. How the results should be sorted. Presently, the only permitted values are &#34;timestamp asc&#34; (default) and &#34;timestamp desc&#34;. The first option returns entries in order of increasing values of LogEntry.timestamp (oldest first), and the second option returns entries in order of decreasing timestamps (newest first). Entries with equal timestamps are returned in order of LogEntry.insertId.</li>
+<li>Optional. How the results should be sorted. Presently, the only permitted values are &#34;timestamp asc&#34; (default) and &#34;timestamp desc&#34;. The first option returns entries in order of increasing values of LogEntry.timestamp (oldest first), and the second option returns entries in order of decreasing timestamps (newest first). Entries with equal timestamps are returned in order of their insert_id values.</li>
 </ul>
 </li>
 <li><code>page-size=36</code><ul>
-<li>Optional. The maximum number of results to return from this request. Non-positive values are ignored. The presence of nextPageToken in the response indicates that more results might be available.</li>
+<li>Optional. The maximum number of results to return from this request. Non-positive values are ignored. The presence of next_page_token in the response indicates that more results might be available.</li>
 </ul>
 </li>
 <li><code>page-token=sed</code><ul>
-<li>Optional. If present, then retrieve the next batch of results from the preceding call to this method. pageToken must be the value of nextPageToken from the previous response. The values of other method parameters should be identical to those in the previous call.</li>
+<li>Optional. If present, then retrieve the next batch of results from the preceding call to this method. page_token must be the value of next_page_token from the previous response. The values of other method parameters should be identical to those in the previous call.</li>
 </ul>
 </li>
 <li><code>project-ids=et</code><ul>
@@ -332,9 +332,11 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li><code>resource-names=dolores</code><ul>
-<li>Required. Names of one or more resources from which to retrieve log entries:
+<li>Required. Names of one or more parent resources from which to retrieve log entries:
     &#34;projects/[PROJECT_ID]&#34;
     &#34;organizations/[ORGANIZATION_ID]&#34;
+    &#34;billingAccounts/[BILLING_ACCOUNT_ID]&#34;
+    &#34;folders/[FOLDER_ID]&#34;
     Projects listed in the project_ids field are added to this list.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>

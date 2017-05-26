@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Regions Clusters List - dataproc v1.0.4+20161102</title>
+  <title>Regions Clusters List - dataproc v1.0.5+20170515</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> dataproc v1.0.4+20161102</a>
+        <a href=".." class="icon icon-home"> dataproc v1.0.5+20170515</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -149,6 +149,13 @@
         
             
     <li class="toctree-l1 ">
+        <a class="" href="../projects_regions-jobs-patch/">Regions Jobs Patch</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
         <a class="" href="../projects_regions-jobs-submit/">Regions Jobs Submit</a>
         
     </li>
@@ -195,7 +202,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">dataproc v1.0.4+20161102</a>
+        <a href="..">dataproc v1.0.5+20170515</a>
       </nav>
 
       
@@ -232,11 +239,11 @@ You can set the scope for this method like this: <code>dataproc1 --scope &lt;sco
 <h1 id="required-scalar-arguments">Required Scalar Arguments</h1>
 <ul>
 <li><strong>&lt;project-id&gt;</strong> <em>(string)</em><ul>
-<li>[Required] The ID of the Google Cloud Platform project that the cluster belongs to.</li>
+<li>Required. The ID of the Google Cloud Platform project that the cluster belongs to.</li>
 </ul>
 </li>
 <li><strong>&lt;region&gt;</strong> <em>(string)</em><ul>
-<li>[Required] The Cloud Dataproc region in which to handle the request.</li>
+<li>Required. The Cloud Dataproc region in which to handle the request.</li>
 </ul>
 </li>
 </ul>
@@ -257,21 +264,21 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p page-token=string</strong></p>
+<p><strong>-p page-size=integer</strong></p>
 <ul>
-<li>[Optional] The standard List page token.</li>
+<li>Optional. The standard List page size.</li>
 </ul>
 </li>
 <li>
 <p><strong>-p filter=string</strong></p>
 <ul>
-<li>[Optional] A filter constraining the clusters to list. Filters are case-sensitive and have the following syntax: field:value [field:value] ... or field = value [AND [field = value]] ... where <strong>field</strong> is one of <code>status.state</code>, <code>clusterName</code>, or <code>labels.[KEY]</code>, and <code>[KEY]</code> is a label key. <strong>value</strong> can be <code>*</code> to match all values. <code>status.state</code> can be one of the following: <code>ACTIVE</code>, <code>INACTIVE</code>, <code>CREATING</code>, <code>RUNNING</code>, <code>ERROR</code>, <code>DELETING</code>, or <code>UPDATING</code>. <code>ACTIVE</code> contains the <code>CREATING</code>, <code>UPDATING</code>, and <code>RUNNING</code> states. <code>INACTIVE</code> contains the <code>DELETING</code> and <code>ERROR</code> states. <code>clusterName</code> is the name of the cluster provided at creation time. Only the logical <code>AND</code> operator is supported; space-separated items are treated as having an implicit <code>AND</code> operator. Example valid filters are: status.state:ACTIVE clusterName:mycluster labels.env:staging \ labels.starred:* and status.state = ACTIVE AND clusterName = mycluster \ AND labels.env = staging AND labels.starred = *</li>
+<li>Optional. A filter constraining the clusters to list. Filters are case-sensitive and have the following syntax:field = value AND field = value ...where field is one of status.state, clusterName, or labels.[KEY], and [KEY] is a label key. value can be * to match all values. status.state can be one of the following: ACTIVE, INACTIVE, CREATING, RUNNING, ERROR, DELETING, or UPDATING. ACTIVE contains the CREATING, UPDATING, and RUNNING states. INACTIVE contains the DELETING and ERROR states. clusterName is the name of the cluster provided at creation time. Only the logical AND operator is supported; space-separated items are treated as having an implicit AND operator.Example filter:status.state = ACTIVE AND clusterName = mycluster AND labels.env = staging AND labels.starred = *</li>
 </ul>
 </li>
 <li>
-<p><strong>-p page-size=integer</strong></p>
+<p><strong>-p page-token=string</strong></p>
 <ul>
-<li>[Optional] The standard List page size.</li>
+<li>Optional. The standard List page token.</li>
 </ul>
 </li>
 </ul>

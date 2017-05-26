@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Guardian Invitations Create - classroom v1.0.4+20161006</title>
+  <title>Guardian Invitations Create - classroom v1.0.5+20170510</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> classroom v1.0.4+20161006</a>
+        <a href=".." class="icon icon-home"> classroom v1.0.5+20170510</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -88,6 +88,13 @@
         
             
     <li class="toctree-l1 ">
+        <a class="" href="../courses_course-work-delete/">Course Work Delete</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
         <a class="" href="../courses_course-work-get/">Course Work Get</a>
         
     </li>
@@ -96,6 +103,13 @@
             
     <li class="toctree-l1 ">
         <a class="" href="../courses_course-work-list/">Course Work List</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../courses_course-work-patch/">Course Work Patch</a>
         
     </li>
 
@@ -385,7 +399,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">classroom v1.0.4+20161006</a>
+        <a href="..">classroom v1.0.5+20170510</a>
       </nav>
 
       
@@ -414,7 +428,34 @@
           <div role="main">
             <div class="section">
               
-                <p>Creates a guardian invitation, and sends an email to the guardian asking them to confirm that they are the student&#39;s guardian. Once the guardian accepts the invitation, their <code>state</code> will change to <code>COMPLETED</code> and they will start receiving guardian notifications. A <code>Guardian</code> resource will also be created to represent the active guardian. The request object must have the <code>student_id</code> and <code>invited_email_address</code> fields set. Failing to set these fields, or setting any other fields in the request, will result in an error. This method returns the following error codes: * <code>PERMISSION_DENIED</code> if the current user does not have permission to manage guardians, if the guardian in question has already rejected too many requests for that student, if guardians are not enabled for the domain in question, or for other access errors. * <code>RESOURCE_EXHAUSTED</code> if the student or guardian has exceeded the guardian link limit. * <code>INVALID_ARGUMENT</code> if the guardian email address is not valid (for example, if it is too long), or if the format of the student ID provided cannot be recognized (it is not an email address, nor a <code>user_id</code> from this API). This error will also be returned if read-only fields are set, or if the <code>state</code> field is set to to a value other than <code>PENDING</code>. * <code>NOT_FOUND</code> if the student ID provided is a valid student ID, but Classroom has no record of that student. * <code>ALREADY_EXISTS</code> if there is already a pending guardian invitation for the student and <code>invited_email_address</code> provided, or if the provided <code>invited_email_address</code> matches the Google account of an existing <code>Guardian</code> for this user.</p>
+                <p>Creates a guardian invitation, and sends an email to the guardian asking
+them to confirm that they are the student&#39;s guardian.</p>
+<p>Once the guardian accepts the invitation, their <code>state</code> will change to
+<code>COMPLETED</code> and they will start receiving guardian notifications. A
+<code>Guardian</code> resource will also be created to represent the active guardian.</p>
+<p>The request object must have the <code>student_id</code> and
+<code>invited_email_address</code> fields set. Failing to set these fields, or
+setting any other fields in the request, will result in an error.</p>
+<p>This method returns the following error codes:</p>
+<ul>
+<li><code>PERMISSION_DENIED</code> if the current user does not have permission to
+  manage guardians, if the guardian in question has already rejected
+  too many requests for that student, if guardians are not enabled for the
+  domain in question, or for other access errors.</li>
+<li><code>RESOURCE_EXHAUSTED</code> if the student or guardian has exceeded the guardian
+  link limit.</li>
+<li><code>INVALID_ARGUMENT</code> if the guardian email address is not valid (for
+  example, if it is too long), or if the format of the student ID provided
+  cannot be recognized (it is not an email address, nor a <code>user_id</code> from
+  this API). This error will also be returned if read-only fields are set,
+  or if the <code>state</code> field is set to to a value other than <code>PENDING</code>.</li>
+<li><code>NOT_FOUND</code> if the student ID provided is a valid student ID, but
+  Classroom has no record of that student.</li>
+<li><code>ALREADY_EXISTS</code> if there is already a pending guardian invitation for
+  the student and <code>invited_email_address</code> provided, or if the provided
+  <code>invited_email_address</code> matches the Google account of an existing
+  <code>Guardian</code> for this user.</li>
+</ul>
 <h1 id="required-scalar-argument">Required Scalar Argument</h1>
 <ul>
 <li><strong>&lt;student-id&gt;</strong> <em>(string)</em><ul>
@@ -437,24 +478,21 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    creation-time=aliquyam</code><ul>
-<li>The time that this invitation was created. Read-only.</li>
-</ul>
+<li><code>-r .    creation-time=ea</code><ul>
+<li>
+<p>The time that this invitation was created.</p>
+<p>Read-only.
+* <code>invitation-id=et</code>
+    - Unique identifier for this invitation.</p>
+<p>Read-only.
+<em> <code>invited-email-address=dolor</code>
+    - Email address that the invitation was sent to.
+This field is only visible to domain administrators.
+</em> <code>state=diam</code>
+    - The state that this invitation is in.
+* <code>student-id=kasd</code>
+    - ID of the student (in standard format)</p>
 </li>
-<li><code>invitation-id=dolores</code><ul>
-<li>Unique identifier for this invitation. Read-only.</li>
-</ul>
-</li>
-<li><code>invited-email-address=sit</code><ul>
-<li>Email address that the invitation was sent to. This field is only visible to domain administrators.</li>
-</ul>
-</li>
-<li><code>state=diam</code><ul>
-<li>The state that this invitation is in.</li>
-</ul>
-</li>
-<li><code>student-id=ut</code><ul>
-<li>ID of the student (in standard format)</li>
 </ul>
 </li>
 </ul>

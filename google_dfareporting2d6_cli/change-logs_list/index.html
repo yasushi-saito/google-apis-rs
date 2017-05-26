@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>List - dfareporting v1.0.4+20161027</title>
+  <title>List - dfareporting v1.0.5+20170428</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> dfareporting v1.0.4+20161027</a>
+        <a href=".." class="icon icon-home"> dfareporting v1.0.5+20170428</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -1968,7 +1968,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">dfareporting v1.0.4+20161027</a>
+        <a href="..">dfareporting v1.0.5+20170428</a>
       </nav>
 
       
@@ -2026,54 +2026,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p user-profile-ids=string</strong></p>
-<ul>
-<li>Select only change logs with these user profile IDs.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p ids=string</strong></p>
-<ul>
-<li>Select only change logs with these IDs.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p object-type=string</strong></p>
-<ul>
-<li>Select only change logs with the specified object type.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p max-results=integer</strong></p>
-<ul>
-<li>Maximum number of results to return.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p max-change-time=string</strong></p>
-<ul>
-<li>Select only change logs whose change time is before the specified maxChangeTime.The time should be formatted as an RFC3339 date/time string. For example, for 10:54 PM on July 18th, 2015, in the America/New York time zone, the format is &#34;2015-07-18T22:54:00-04:00&#34;. In other words, the year, month, day, the letter T, the hour (24-hour clock system), minute, second, and then the time zone offset.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p action=string</strong></p>
-<ul>
-<li>Select only change logs with the specified action.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p page-token=string</strong></p>
-<ul>
-<li>Value of the nextPageToken from the previous result page.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p object-ids=string</strong></p>
-<ul>
-<li>Select only change logs with these object IDs.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p search-string=string</strong></p>
 <ul>
 <li>Select only change logs whose object ID, user name, old or new values match the search string.</li>
@@ -2083,6 +2035,54 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <p><strong>-p min-change-time=string</strong></p>
 <ul>
 <li>Select only change logs whose change time is before the specified minChangeTime.The time should be formatted as an RFC3339 date/time string. For example, for 10:54 PM on July 18th, 2015, in the America/New York time zone, the format is &#34;2015-07-18T22:54:00-04:00&#34;. In other words, the year, month, day, the letter T, the hour (24-hour clock system), minute, second, and then the time zone offset.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p object-type=string</strong></p>
+<ul>
+<li>Select only change logs with the specified object type.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p page-token=string</strong></p>
+<ul>
+<li>Value of the nextPageToken from the previous result page.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p action=string</strong></p>
+<ul>
+<li>Select only change logs with the specified action.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p max-results=integer</strong></p>
+<ul>
+<li>Maximum number of results to return.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p object-ids=string</strong></p>
+<ul>
+<li>Select only change logs with these object IDs.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p ids=string</strong></p>
+<ul>
+<li>Select only change logs with these IDs.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p user-profile-ids=string</strong></p>
+<ul>
+<li>Select only change logs with these user profile IDs.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p max-change-time=string</strong></p>
+<ul>
+<li>Select only change logs whose change time is before the specified maxChangeTime.The time should be formatted as an RFC3339 date/time string. For example, for 10:54 PM on July 18th, 2015, in the America/New York time zone, the format is &#34;2015-07-18T22:54:00-04:00&#34;. In other words, the year, month, day, the letter T, the hour (24-hour clock system), minute, second, and then the time zone offset.</li>
 </ul>
 </li>
 </ul>

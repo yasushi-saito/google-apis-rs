@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Debuggees Register - Cloud Debugger v1.0.4+20160810</title>
+  <title>Debuggees Register - Cloud Debugger v1.0.5+20170413</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Cloud Debugger v1.0.4+20160810</a>
+        <a href=".." class="icon icon-home"> Cloud Debugger v1.0.5+20170413</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -153,7 +153,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Cloud Debugger v1.0.4+20160810</a>
+        <a href="..">Cloud Debugger v1.0.5+20170413</a>
       </nav>
 
       
@@ -182,7 +182,14 @@
           <div role="main">
             <div class="section">
               
-                <p>Registers the debuggee with the controller service. All agents attached to the same application should call this method with the same request content to get back the same stable <code>debuggee_id</code>. Agents should call this method again whenever <code>google.rpc.Code.NOT_FOUND</code> is returned from any controller method. This allows the controller service to disable the agent or recover from any data loss. If the debuggee is disabled by the server, the response will have <code>is_disabled</code> set to <code>true</code>.</p>
+                <p>Registers the debuggee with the controller service.</p>
+<p>All agents attached to the same application should call this method with
+the same request content to get back the same stable <code>debuggee_id</code>. Agents
+should call this method again whenever <code>google.rpc.Code.NOT_FOUND</code> is
+returned from any controller method.</p>
+<p>This allows the controller service to disable the agent or recover from any
+data loss. If the debuggee is disabled by the server, the response will
+have <code>is_disabled</code> set to <code>true</code>.</p>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for at least one of the following scopes to make a valid call:</p>
 <ul>
@@ -217,11 +224,15 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
 <li><code>-r .debuggee    agent-version=sadipscing</code><ul>
-<li>Version ID of the agent release. The version ID is structured as following: <code>domain/type/vmajor.minor</code> (for example <code>google.com/gcp-java/v1.1</code>).</li>
+<li>Version ID of the agent release. The version ID is structured as
+    following: <code>domain/type/vmajor.minor</code> (for example
+    <code>google.com/gcp-java/v1.1</code>).</li>
 </ul>
 </li>
 <li><code>description=aliquyam</code><ul>
-<li>Human readable description of the debuggee. Including a human-readable project name, environment name and version information is recommended.</li>
+<li>Human readable description of the debuggee.
+    Including a human-readable project name, environment name and version
+    information is recommended.</li>
 </ul>
 </li>
 <li><code>id=ea</code><ul>
@@ -229,31 +240,45 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li><code>is-disabled=false</code><ul>
-<li>If set to <code>true</code>, indicates that the agent should disable itself and detach from the debuggee.</li>
+<li>If set to <code>true</code>, indicates that the agent should disable itself and
+    detach from the debuggee.</li>
 </ul>
 </li>
 <li><code>is-inactive=true</code><ul>
-<li>If set to <code>true</code>, indicates that the debuggee is considered as inactive by the Controller service.</li>
+<li>If set to <code>true</code>, indicates that the debuggee is considered as inactive by
+    the Controller service.</li>
 </ul>
 </li>
 <li><code>labels=key=justo</code><ul>
-<li>A set of custom debuggee properties, populated by the agent, to be displayed to the user.</li>
+<li>A set of custom debuggee properties, populated by the agent, to be
+    displayed to the user.</li>
 <li>the value will be associated with the given <code>key</code></li>
 </ul>
 </li>
 <li><code>project=et</code><ul>
-<li>Project the debuggee is associated with. Use the project number when registering a Google Cloud Platform project.</li>
-</ul>
-</li>
-<li><code>status.description    format=et</code><ul>
-<li>Format template for the message. The <code>format</code> uses placeholders <code>$0</code>, <code>$1</code>, etc. to reference parameters. <code>$$</code> can be used to denote the <code>$</code> character. Examples: * <code>Failed to load &amp;#39;$0&amp;#39; which helps debug $1 the first time it is loaded. Again, $0 is very important.</code> * <code>Please pay $$10 to use $0 instead of $1.</code></li>
+<li>Project the debuggee is associated with.
+    Use the project number when registering a Google Cloud Platform project.</li>
 </ul>
 </li>
 <li>
-<p><code>parameters=diam</code></p>
+<p><code>status.description    format=et</code></p>
 <ul>
+<li>
+<p>Format template for the message. The <code>format</code> uses placeholders <code>$0</code>,
+    <code>$1</code>, etc. to reference parameters. <code>$$</code> can be used to denote the <code>$</code>
+    character.</p>
+<p>Examples:</p>
+<ul>
+<li><code>Failed to load &amp;#39;$0&amp;#39; which helps debug $1 the first time it
+    is loaded.  Again, $0 is very important.</code></li>
+<li><code>Please pay $$10 to use $0 instead of $1.</code></li>
+<li><code>parameters=diam</code><ul>
 <li>Optional parameters to be embedded into the message.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 <li>
@@ -271,7 +296,9 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>
 <p><code>..    uniquifier=et</code></p>
 <ul>
-<li>Debuggee uniquifier within the project. Any string that identifies the application within the project can be used. Including environment and version or build IDs is recommended.</li>
+<li>Debuggee uniquifier within the project.
+    Any string that identifies the application within the project can be used.
+    Including environment and version or build IDs is recommended.</li>
 </ul>
 </li>
 </ul>

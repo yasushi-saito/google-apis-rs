@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Get Eidparams - proximitybeacon v1.0.4+20160429</title>
+  <title>Get Eidparams - proximitybeacon v1.0.5+20170517</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> proximitybeacon v1.0.4+20160429</a>
+        <a href=".." class="icon icon-home"> proximitybeacon v1.0.5+20170517</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -118,6 +118,13 @@
             
     <li class="toctree-l1 ">
         <a class="" href="../beacons_decommission/">Decommission</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../beacons_delete/">Delete</a>
         
     </li>
 
@@ -220,7 +227,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">proximitybeacon v1.0.4+20160429</a>
+        <a href="..">proximitybeacon v1.0.5+20170517</a>
       </nav>
 
       
@@ -249,7 +256,13 @@
           <div role="main">
             <div class="section">
               
-                <p>Gets the Proximity Beacon API&#39;s current public key and associated parameters used to initiate the Diffie-Hellman key exchange required to register a beacon that broadcasts the Eddystone-EID format. This key changes periodically; clients may cache it and re-use the same public key to provision and register multiple beacons. However, clients should be prepared to refresh this key when they encounter an error registering an Eddystone-EID beacon.</p>
+                <p>Gets the Proximity Beacon API&#39;s current public key and associated
+parameters used to initiate the Diffie-Hellman key exchange required to
+register a beacon that broadcasts the Eddystone-EID format. This key
+changes periodically; clients may cache it and re-use the same public key
+to provision and register multiple beacons. However, clients should be
+prepared to refresh this key when they encounter an error registering an
+Eddystone-EID beacon.</p>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for the <em>https://www.googleapis.com/auth/userlocation.beacon.registry</em> scope to make a valid call.</p>
 <p>If unset, the scope for this method defaults to <em>https://www.googleapis.com/auth/userlocation.beacon.registry</em>.

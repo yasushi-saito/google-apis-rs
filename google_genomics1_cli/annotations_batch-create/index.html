@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Batch Create - genomics v1.0.4+20160928</title>
+  <title>Batch Create - genomics v1.0.5+20170520</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> genomics v1.0.4+20160928</a>
+        <a href=".." class="icon icon-home"> genomics v1.0.5+20170520</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -376,13 +376,6 @@
     </li>
 
         
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../reads_stream/">Stream</a>
-        
-    </li>
-
-        
     </ul>
 <li>
           
@@ -491,13 +484,6 @@
     </li>
 
         
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../variants_stream/">Stream</a>
-        
-    </li>
-
-        
     </ul>
 <li>
           
@@ -561,7 +547,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">genomics v1.0.4+20160928</a>
+        <a href="..">genomics v1.0.5+20170520</a>
       </nav>
 
       
@@ -590,7 +576,18 @@
           <div role="main">
             <div class="section">
               
-                <p>Creates one or more new annotations atomically. All annotations must belong to the same annotation set. Caller must have WRITE permission for this annotation set. For optimal performance, batch positionally adjacent annotations together. If the request has a systemic issue, such as an attempt to write to an inaccessible annotation set, the entire RPC will fail accordingly. For lesser data issues, when possible an error will be isolated to the corresponding batch entry in the response; the remaining well formed annotations will be created normally. For details on the requirements for each individual annotation resource, see CreateAnnotation.</p>
+                <p>Creates one or more new annotations atomically. All annotations must
+belong to the same annotation set. Caller must have WRITE
+permission for this annotation set. For optimal performance, batch
+positionally adjacent annotations together.</p>
+<p>If the request has a systemic issue, such as an attempt to write to
+an inaccessible annotation set, the entire RPC will fail accordingly. For
+lesser data issues, when possible an error will be isolated to the
+corresponding batch entry in the response; the remaining well formed
+annotations will be created normally.</p>
+<p>For details on the requirements for each individual annotation resource,
+see
+CreateAnnotation.</p>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for at least one of the following scopes to make a valid call:</p>
 <ul>
@@ -611,7 +608,13 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
 <li><code>-r .    request-id=eirmod</code><ul>
-<li>A unique request ID which enables the server to detect duplicated requests. If provided, duplicated requests will result in the same response; if not provided, duplicated requests may result in duplicated data. For a given annotation set, callers should not reuse <code>request_id</code>s when writing different batches of annotations - behavior in this case is undefined. A common approach is to use a UUID. For batch jobs where worker crashes are a possibility, consider using some unique variant of a worker or run ID.</li>
+<li>A unique request ID which enables the server to detect duplicated requests.
+    If provided, duplicated requests will result in the same response; if not
+    provided, duplicated requests may result in duplicated data. For a given
+    annotation set, callers should not reuse <code>request_id</code>s when writing
+    different batches of annotations - behavior in this case is undefined.
+    A common approach is to use a UUID. For batch jobs where worker crashes are
+    a possibility, consider using some unique variant of a worker or run ID.</li>
 </ul>
 </li>
 </ul>

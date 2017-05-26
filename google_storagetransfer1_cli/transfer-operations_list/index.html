@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>List - storagetransfer v1.0.4+20150811</title>
+  <title>List - storagetransfer v1.0.5+20170515</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> storagetransfer v1.0.4+20150811</a>
+        <a href=".." class="icon icon-home"> storagetransfer v1.0.5+20170515</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -61,21 +61,6 @@
             
     <li class="toctree-l1 ">
         <a class="" href="../google-service-accounts_get/">Get</a>
-        
-    </li>
-
-        
-    </ul>
-<li>
-          
-            <li>
-    <ul class="subnav">
-    <li><span>Methods</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../methods_get-google-service-account/">Get Google Service Account</a>
         
     </li>
 
@@ -198,7 +183,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">storagetransfer v1.0.4+20150811</a>
+        <a href="..">storagetransfer v1.0.5+20170515</a>
       </nav>
 
       
@@ -227,7 +212,10 @@
           <div role="main">
             <div class="section">
               
-                <p>Lists operations that match the specified filter in the request. If the server doesn&#39;t support this method, it returns <code>UNIMPLEMENTED</code>. NOTE: the <code>name</code> binding below allows API services to override the binding to use different resource name schemes, such as <code>users/*/operations</code>.</p>
+                <p>Lists operations that match the specified filter in the request. If the
+server doesn&#39;t support this method, it returns <code>UNIMPLEMENTED</code>.</p>
+<p>NOTE: the <code>name</code> binding below allows API services to override the binding
+to use different resource name schemes, such as <code>users/*/operations</code>.</p>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for the <em>https://www.googleapis.com/auth/cloud-platform</em> scope to make a valid call.</p>
 <p>If unset, the scope for this method defaults to <em>https://www.googleapis.com/auth/cloud-platform</em>.
@@ -256,21 +244,21 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p filter=string</strong></p>
+<p><strong>-p page-size=integer</strong></p>
 <ul>
-<li>The standard list filter.</li>
+<li>The list page size. The max allowed value is 256.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p page-size=integer</strong></p>
+<p><strong>-p filter=string</strong></p>
 <ul>
-<li>The standard list page size.</li>
+<li>A list of query parameters specified as JSON text in the form of {\&#34;project_id\&#34; : \&#34;my_project_id\&#34;, \&#34;job_names\&#34; : [\&#34;jobid1\&#34;, \&#34;jobid2\&#34;,...], \&#34;operation_names\&#34; : [\&#34;opid1\&#34;, \&#34;opid2\&#34;,...], \&#34;transfer_statuses\&#34;:[\&#34;status1\&#34;, \&#34;status2\&#34;,...]}. Since <code>job_names</code>, <code>operation_names</code>, and <code>transfer_statuses</code> support multiple values, they must be specified with array notation. <code>job_names</code>, <code>operation_names</code>, and <code>transfer_statuses</code> are optional.</li>
 </ul>
 </li>
 <li>
 <p><strong>-p page-token=string</strong></p>
 <ul>
-<li>The standard list page token.</li>
+<li>The list page token.</li>
 </ul>
 </li>
 </ul>

@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Create - genomics v1.0.4+20160928</title>
+  <title>Create - genomics v1.0.5+20170520</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> genomics v1.0.4+20160928</a>
+        <a href=".." class="icon icon-home"> genomics v1.0.5+20170520</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -358,13 +358,6 @@
     </li>
 
         
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../reads_stream/">Stream</a>
-        
-    </li>
-
-        
     </ul>
 <li>
           
@@ -491,13 +484,6 @@
     </li>
 
         
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../variants_stream/">Stream</a>
-        
-    </li>
-
-        
     </ul>
 <li>
           
@@ -561,7 +547,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">genomics v1.0.4+20160928</a>
+        <a href="..">genomics v1.0.5+20170520</a>
       </nav>
 
       
@@ -590,7 +576,10 @@
           <div role="main">
             <div class="section">
               
-                <p>Creates a new variant. For the definitions of variants and other genomics resources, see <a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google Genomics</a></p>
+                <p>Creates a new variant.</p>
+<p>For the definitions of variants and other genomics resources, see
+<a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google
+Genomics</a></p>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for at least one of the following scopes to make a valid call:</p>
 <ul>
@@ -620,50 +609,58 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    alternate-bases=justo</code><ul>
+<li><code>-r .    alternate-bases=ut</code><ul>
 <li>The bases that appear instead of the reference bases.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>created=est</code><ul>
+<li><code>created=justo</code><ul>
 <li>The date this variant was created, in milliseconds from the epoch.</li>
 </ul>
 </li>
-<li><code>end=clita</code><ul>
-<li>The end position (0-based) of this variant. This corresponds to the first base after the last base in the reference allele. So, the length of the reference allele is (end - start). This is useful for variants that don&#39;t explicitly give alternate bases, for example large deletions.</li>
+<li><code>end=est</code><ul>
+<li>The end position (0-based) of this variant. This corresponds to the first
+    base after the last base in the reference allele. So, the length of
+    the reference allele is (end - start). This is useful for variants
+    that don&#39;t explicitly give alternate bases, for example large deletions.</li>
 </ul>
 </li>
-<li><code>filter=invidunt</code><ul>
-<li>A list of filters (normally quality filters) this variant has failed. <code>PASS</code> indicates this variant has passed all filters.</li>
+<li><code>filter=amet</code><ul>
+<li>A list of filters (normally quality filters) this variant has failed.
+    <code>PASS</code> indicates this variant has passed all filters.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>id=ut</code><ul>
+<li><code>id=accusam</code><ul>
 <li>The server-generated variant ID, unique across all variants.</li>
 </ul>
 </li>
-<li><code>names=dolores</code><ul>
+<li><code>names=clita</code><ul>
 <li>Names for the variant, for example a RefSNP ID.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>quality=0.762594370144</code><ul>
-<li>A measure of how likely this variant is to be real. A higher value is better.</li>
+<li><code>quality=0.22509478716</code><ul>
+<li>A measure of how likely this variant is to be real.
+    A higher value is better.</li>
 </ul>
 </li>
-<li><code>reference-bases=voluptua.</code><ul>
-<li>The reference bases for this variant. They start at the given position.</li>
+<li><code>reference-bases=justo</code><ul>
+<li>The reference bases for this variant. They start at the given
+    position.</li>
 </ul>
 </li>
-<li><code>reference-name=duo</code><ul>
-<li>The reference on which this variant occurs. (such as <code>chr20</code> or <code>X</code>)</li>
+<li><code>reference-name=est</code><ul>
+<li>The reference on which this variant occurs.
+    (such as <code>chr20</code> or <code>X</code>)</li>
 </ul>
 </li>
-<li><code>start=sed</code><ul>
-<li>The position at which this variant occurs (0-based). This corresponds to the first base of the string of reference bases.</li>
+<li><code>start=clita</code><ul>
+<li>The position at which this variant occurs (0-based).
+    This corresponds to the first base of the string of reference bases.</li>
 </ul>
 </li>
-<li><code>variant-set-id=aliquyam</code><ul>
+<li><code>variant-set-id=invidunt</code><ul>
 <li>The ID of the variant set this variant belongs to.</li>
 </ul>
 </li>

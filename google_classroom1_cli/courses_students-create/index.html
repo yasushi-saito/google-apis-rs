@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Students Create - classroom v1.0.4+20161006</title>
+  <title>Students Create - classroom v1.0.5+20170510</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> classroom v1.0.4+20161006</a>
+        <a href=".." class="icon icon-home"> classroom v1.0.5+20170510</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -88,6 +88,13 @@
         
             
     <li class="toctree-l1 ">
+        <a class="" href="../courses_course-work-delete/">Course Work Delete</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
         <a class="" href="../courses_course-work-get/">Course Work Get</a>
         
     </li>
@@ -96,6 +103,13 @@
             
     <li class="toctree-l1 ">
         <a class="" href="../courses_course-work-list/">Course Work List</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../courses_course-work-patch/">Course Work Patch</a>
         
     </li>
 
@@ -391,7 +405,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">classroom v1.0.4+20161006</a>
+        <a href="..">classroom v1.0.5+20170510</a>
       </nav>
 
       
@@ -420,7 +434,22 @@
           <div role="main">
             <div class="section">
               
-                <p>Adds a user as a student of a course. This method returns the following error codes: * <code>PERMISSION_DENIED</code> if the requesting user is not permitted to create students in this course or for access errors. * <code>NOT_FOUND</code> if the requested course ID does not exist. * <code>FAILED_PRECONDITION</code> if the requested user&#39;s account is disabled, for the following request errors: * CourseMemberLimitReached * CourseNotModifiable * UserGroupsMembershipLimitReached * <code>ALREADY_EXISTS</code> if the user is already a student or teacher in the course.</p>
+                <p>Adds a user as a student of a course.</p>
+<p>This method returns the following error codes:</p>
+<ul>
+<li><code>PERMISSION_DENIED</code> if the requesting user is not permitted to create
+students in this course or for access errors.</li>
+<li><code>NOT_FOUND</code> if the requested course ID does not exist.</li>
+<li><code>FAILED_PRECONDITION</code> if the requested user&#39;s account is disabled,
+for the following request errors:<ul>
+<li>CourseMemberLimitReached</li>
+<li>CourseNotModifiable</li>
+<li>UserGroupsMembershipLimitReached</li>
+</ul>
+</li>
+<li><code>ALREADY_EXISTS</code> if the user is already a student or teacher in the
+course.</li>
+</ul>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for at least one of the following scopes to make a valid call:</p>
 <ul>
@@ -433,7 +462,9 @@ You can set the scope for this method like this: <code>classroom1 --scope &lt;sc
 <h1 id="required-scalar-argument">Required Scalar Argument</h1>
 <ul>
 <li><strong>&lt;course-id&gt;</strong> <em>(string)</em><ul>
-<li>Identifier of the course to create the student in. This identifier can be either the Classroom-assigned identifier or an alias.</li>
+<li>Identifier of the course to create the student in.
+    This identifier can be either the Classroom-assigned identifier or an
+    alias.</li>
 </ul>
 </li>
 </ul>
@@ -461,58 +492,67 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    course-id=consetetur</code><ul>
-<li>Identifier of the course. Read-only.</li>
-</ul>
+<li>
+<p><code>-r .    course-id=rebum.</code></p>
+<ul>
+<li>
+<p>Identifier of the course.</p>
+<p>Read-only.
+* <code>profile    email-address=dolore</code>
+    - Email address of the user.</p>
+<p>Read-only.
+* <code>id=nonumy</code>
+    - Identifier of the user.</p>
+<p>Read-only.
+* <code>name    family-name=sed</code>
+    - The user&#39;s last name.</p>
+<p>Read-only.
+* <code>full-name=aliquyam</code>
+    - The user&#39;s full name formed by concatenating the first and last name
+values.</p>
+<p>Read-only.
+* <code>given-name=sit</code>
+    - The user&#39;s first name.</p>
+<p>Read-only.</p>
 </li>
-<li><code>profile    email-address=sadipscing</code><ul>
-<li>Email address of the user. Read-only.</li>
-</ul>
-</li>
-<li><code>id=vero</code><ul>
-<li>Identifier of the user. Read-only.</li>
-</ul>
-</li>
-<li><code>name    family-name=sadipscing</code><ul>
-<li>The user&#39;s last name. Read-only.</li>
-</ul>
-</li>
-<li><code>full-name=invidunt</code><ul>
-<li>The user&#39;s full name formed by concatenating the first and last name values. Read-only.</li>
 </ul>
 </li>
 <li>
-<p><code>given-name=consetetur</code></p>
+<p><code>..    photo-url=eirmod</code></p>
 <ul>
-<li>The user&#39;s first name. Read-only.</li>
+<li>
+<p>URL of user&#39;s profile photo.</p>
+<p>Read-only.</p>
+</li>
 </ul>
 </li>
 <li>
-<p><code>..    photo-url=dolore</code></p>
+<p><code>..student-work-folder    alternate-link=consetetur</code></p>
 <ul>
-<li>URL of user&#39;s profile photo. Read-only.</li>
+<li>
+<p>URL that can be used to access the Drive folder.</p>
+<p>Read-only.
+<em> <code>id=labore</code>
+    - Drive API resource ID.
+</em> <code>title=sed</code>
+    - Title of the Drive folder.</p>
+<p>Read-only.</p>
+</li>
 </ul>
 </li>
 <li>
-<p><code>..student-work-folder    alternate-link=duo</code></p>
+<p><code>..    user-id=ea</code></p>
 <ul>
-<li>URL that can be used to access the Drive folder. Read-only.</li>
-</ul>
-</li>
-<li><code>id=aliquyam</code><ul>
-<li>Drive API resource ID.</li>
-</ul>
-</li>
 <li>
-<p><code>title=lorem</code></p>
+<p>Identifier of the user.</p>
+<p>When specified as a parameter of a request, this identifier can be one of
+the following:</p>
 <ul>
-<li>Title of the Drive folder. Read-only.</li>
+<li>the numeric identifier for the user</li>
+<li>the email address of the user</li>
+<li>the string literal <code>&amp;#34;me&amp;#34;</code>, indicating the requesting user</li>
 </ul>
 </li>
-<li>
-<p><code>..    user-id=et</code></p>
-<ul>
-<li>Identifier of the user. When specified as a parameter of a request, this identifier can be one of the following: * the numeric identifier for the user * the email address of the user * the string literal <code>&amp;#34;me&amp;#34;</code>, indicating the requesting user</li>
 </ul>
 </li>
 </ul>
@@ -541,7 +581,10 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li><strong>-p enrollment-code=string</strong><ul>
-<li>Enrollment code of the course to create the student in. This code is required if userId corresponds to the requesting user; it may be omitted if the requesting user has administrative permissions to create students for any user.</li>
+<li>Enrollment code of the course to create the student in.
+    This code is required if userId
+    corresponds to the requesting user; it may be omitted if the requesting
+    user has administrative permissions to create students for any user.</li>
 </ul>
 </li>
 </ul>

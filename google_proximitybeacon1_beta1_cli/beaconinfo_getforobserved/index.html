@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Getforobserved - proximitybeacon v1.0.4+20160429</title>
+  <title>Getforobserved - proximitybeacon v1.0.5+20170517</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> proximitybeacon v1.0.4+20160429</a>
+        <a href=".." class="icon icon-home"> proximitybeacon v1.0.5+20170517</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -139,6 +139,13 @@
         
             
     <li class="toctree-l1 ">
+        <a class="" href="../beacons_delete/">Delete</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
         <a class="" href="../beacons_diagnostics-list/">Diagnostics List</a>
         
     </li>
@@ -222,7 +229,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">proximitybeacon v1.0.4+20160429</a>
+        <a href="..">proximitybeacon v1.0.5+20170517</a>
       </nav>
 
       
@@ -251,7 +258,10 @@
           <div role="main">
             <div class="section">
               
-                <p>Given one or more beacon observations, returns any beacon information and attachments accessible to your application. Authorize by using the <a href="https://developers.google.com/beacons/proximity/how-tos/authorizing#APIKey">API key</a> for the application.</p>
+                <p>Given one or more beacon observations, returns any beacon information
+and attachments accessible to your application. Authorize by using the
+<a href="https://developers.google.com/beacons/proximity/get-started#request_a_browser_api_key">API key</a>
+for the application.</p>
 <h1 id="required-request-value">Required Request Value</h1>
 <p>The request value is a data-structure with various fields. Each field may be a simple scalar or another data-structure.
 In the latter case it is advised to set the field-cursor to the data-structure's field to specify values more concisely.</p>
@@ -264,7 +274,12 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
 <li><code>-r .    namespaced-types=eirmod</code><ul>
-<li>Specifies what kind of attachments to include in the response. When given, the response will include only attachments of the given types. When empty, no attachments will be returned. Must be in the format namespace/type. Accepts <code>*</code> to specify all types in all namespaces. Optional.</li>
+<li>Specifies what kind of attachments to include in the response.
+    When given, the response will include only attachments of the given types.
+    When empty, no attachments will be returned. Must be in the format
+    &lt;var&gt;namespace/type&lt;/var&gt;. Accepts <code>*</code> to specify all types in
+    all namespaces owned by the client.
+    Optional.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>

@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Groups List - Monitoring v1.0.4+20161212</title>
+  <title>Groups List - Monitoring v1.0.5+20170519</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Monitoring v1.0.4+20161212</a>
+        <a href=".." class="icon icon-home"> Monitoring v1.0.5+20170519</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -195,7 +195,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Monitoring v1.0.4+20161212</a>
+        <a href="..">Monitoring v1.0.5+20170519</a>
       </nav>
 
       
@@ -264,27 +264,27 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p descendants-of-group=string</strong></p>
-<ul>
-<li>A group name: &#34;projects/{project_id_or_number}/groups/{group_id}&#34;. Returns the descendants of the specified group. This is a superset of the results returned by the childrenOfGroup filter, and includes children-of-children, and so forth.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p ancestors-of-group=string</strong></p>
-<ul>
-<li>A group name: &#34;projects/{project_id_or_number}/groups/{group_id}&#34;. Returns groups that are ancestors of the specified group. The groups are returned in order, starting with the immediate parent and ending with the most distant ancestor. If the specified group has no immediate parent, the results are empty.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p page-size=integer</strong></p>
 <ul>
 <li>A positive number that is the maximum number of results to return.</li>
 </ul>
 </li>
 <li>
+<p><strong>-p descendants-of-group=string</strong></p>
+<ul>
+<li>A group name: &#34;projects/{project_id_or_number}/groups/{group_id}&#34;. Returns the descendants of the specified group. This is a superset of the results returned by the childrenOfGroup filter, and includes children-of-children, and so forth.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p children-of-group=string</strong></p>
 <ul>
 <li>A group name: &#34;projects/{project_id_or_number}/groups/{group_id}&#34;. Returns groups whose parentName field contains the group name. If no groups have this parent, the results are empty.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p ancestors-of-group=string</strong></p>
+<ul>
+<li>A group name: &#34;projects/{project_id_or_number}/groups/{group_id}&#34;. Returns groups that are ancestors of the specified group. The groups are returned in order, starting with the immediate parent and ending with the most distant ancestor. If the specified group has no immediate parent, the results are empty.</li>
 </ul>
 </li>
 </ul>

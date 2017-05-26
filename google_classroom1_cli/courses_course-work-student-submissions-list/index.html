@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Course Work Student Submissions List - classroom v1.0.4+20161006</title>
+  <title>Course Work Student Submissions List - classroom v1.0.5+20170510</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> classroom v1.0.4+20161006</a>
+        <a href=".." class="icon icon-home"> classroom v1.0.5+20170510</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -88,6 +88,13 @@
         
             
     <li class="toctree-l1 ">
+        <a class="" href="../courses_course-work-delete/">Course Work Delete</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
         <a class="" href="../courses_course-work-get/">Course Work Get</a>
         
     </li>
@@ -96,6 +103,13 @@
             
     <li class="toctree-l1 ">
         <a class="" href="../courses_course-work-list/">Course Work List</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../courses_course-work-patch/">Course Work Patch</a>
         
     </li>
 
@@ -386,7 +400,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">classroom v1.0.4+20161006</a>
+        <a href="..">classroom v1.0.5+20170510</a>
       </nav>
 
       
@@ -415,7 +429,19 @@
           <div role="main">
             <div class="section">
               
-                <p>Returns a list of student submissions that the requester is permitted to view, factoring in the OAuth scopes of the request. <code>-</code> may be specified as the <code>course_work_id</code> to include student submissions for multiple course work items. Course students may only view their own work. Course teachers and domain administrators may view all student submissions. This method returns the following error codes: * <code>PERMISSION_DENIED</code> if the requesting user is not permitted to access the requested course or course work, or for access errors. * <code>INVALID_ARGUMENT</code> if the request is malformed. * <code>NOT_FOUND</code> if the requested course does not exist.</p>
+                <p>Returns a list of student submissions that the requester is permitted to
+view, factoring in the OAuth scopes of the request.
+<code>-</code> may be specified as the <code>course_work_id</code> to include student
+submissions for multiple course work items.</p>
+<p>Course students may only view their own work. Course teachers
+and domain administrators may view all student submissions.</p>
+<p>This method returns the following error codes:</p>
+<ul>
+<li><code>PERMISSION_DENIED</code> if the requesting user is not permitted to access the
+requested course or course work, or for access errors.</li>
+<li><code>INVALID_ARGUMENT</code> if the request is malformed.</li>
+<li><code>NOT_FOUND</code> if the requested course does not exist.</li>
+</ul>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for at least one of the following scopes to make a valid call:</p>
 <ul>
@@ -431,11 +457,15 @@ You can set the scope for this method like this: <code>classroom1 --scope &lt;sc
 <h1 id="required-scalar-arguments">Required Scalar Arguments</h1>
 <ul>
 <li><strong>&lt;course-id&gt;</strong> <em>(string)</em><ul>
-<li>Identifier of the course. This identifier can be either the Classroom-assigned identifier or an alias.</li>
+<li>Identifier of the course.
+    This identifier can be either the Classroom-assigned identifier or an
+    alias.</li>
 </ul>
 </li>
 <li><strong>&lt;course-work-id&gt;</strong> <em>(string)</em><ul>
-<li>Identifer of the student work to request. This may be set to the string literal <code>&amp;#34;-&amp;#34;</code> to request student work for all course work in the specified course.</li>
+<li>Identifer of the student work to request.
+    This may be set to the string literal <code>&amp;#34;-&amp;#34;</code> to request student work for
+    all course work in the specified course.</li>
 </ul>
 </li>
 </ul>
@@ -458,31 +488,54 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <li>
 <p><strong>-p late=string</strong></p>
 <ul>
-<li>Requested lateness value. If specified, returned student submissions are restricted by the requested value. If unspecified, submissions are returned regardless of <code>late</code> value.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p page-token=string</strong></p>
-<ul>
-<li>nextPageToken value returned from a previous list call, indicating that the subsequent page of results should be returned. The list request must be otherwise identical to the one that resulted in this token.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p page-size=integer</strong></p>
-<ul>
-<li>Maximum number of items to return. Zero or unspecified indicates that the server may assign a maximum. The server may return fewer than the specified number of results.</li>
+<li>Requested lateness value. If specified, returned student submissions are
+    restricted by the requested value.
+    If unspecified, submissions are returned regardless of <code>late</code> value.</li>
 </ul>
 </li>
 <li>
 <p><strong>-p states=string</strong></p>
 <ul>
-<li>Requested submission states. If specified, returned student submissions match one of the specified submission states.</li>
+<li>Requested submission states. If specified, returned student submissions
+    match one of the specified submission states.</li>
 </ul>
 </li>
 <li>
 <p><strong>-p user-id=string</strong></p>
 <ul>
-<li>Optional argument to restrict returned student work to those owned by the student with the specified identifier. The identifier can be one of the following: * the numeric identifier for the user * the email address of the user * the string literal <code>&amp;#34;me&amp;#34;</code>, indicating the requesting user</li>
+<li>
+<p>Optional argument to restrict returned student work to those owned by the
+    student with the specified identifier. The identifier can be one of the
+    following:</p>
+<ul>
+<li>the numeric identifier for the user</li>
+<li>the email address of the user</li>
+<li>the string literal <code>&amp;#34;me&amp;#34;</code>, indicating the requesting user</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>-p page-size=integer</strong></p>
+<ul>
+<li>
+<p>Maximum number of items to return. Zero or unspecified indicates that the
+    server may assign a maximum.</p>
+<p>The server may return fewer than the specified number of results.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>-p page-token=string</strong></p>
+<ul>
+<li>
+<p>nextPageToken
+    value returned from a previous
+    list call,
+    indicating that the subsequent page of results should be returned.</p>
+<p>The list request
+must be otherwise identical to the one that resulted in this token.</p>
+</li>
 </ul>
 </li>
 </ul>

@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Diagnostics List - proximitybeacon v1.0.4+20160429</title>
+  <title>Diagnostics List - proximitybeacon v1.0.5+20170517</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> proximitybeacon v1.0.4+20160429</a>
+        <a href=".." class="icon icon-home"> proximitybeacon v1.0.5+20170517</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -118,6 +118,13 @@
             
     <li class="toctree-l1 ">
         <a class="" href="../beacons_decommission/">Decommission</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../beacons_delete/">Delete</a>
         
     </li>
 
@@ -226,7 +233,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">proximitybeacon v1.0.4+20160429</a>
+        <a href="..">proximitybeacon v1.0.5+20170517</a>
       </nav>
 
       
@@ -255,7 +262,12 @@
           <div role="main">
             <div class="section">
               
-                <p>List the diagnostics for a single beacon. You can also list diagnostics for all the beacons owned by your Google Developers Console project by using the beacon name <code>beacons/-</code>. Authenticate using an <a href="https://developers.google.com/identity/protocols/OAuth2">OAuth access token</a> from a signed-in user with <strong>viewer</strong>, <strong>Is owner</strong> or <strong>Can edit</strong> permissions in the Google Developers Console project.</p>
+                <p>List the diagnostics for a single beacon. You can also list diagnostics for
+all the beacons owned by your Google Developers Console project by using
+the beacon name <code>beacons/-</code>.</p>
+<p>Authenticate using an <a href="https://developers.google.com/identity/protocols/OAuth2">OAuth access token</a>
+from a signed-in user with <strong>viewer</strong>, <strong>Is owner</strong> or <strong>Can edit</strong>
+permissions in the Google Developers Console project.</p>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for the <em>https://www.googleapis.com/auth/userlocation.beacon.registry</em> scope to make a valid call.</p>
 <p>If unset, the scope for this method defaults to <em>https://www.googleapis.com/auth/userlocation.beacon.registry</em>.
@@ -286,25 +298,32 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <li>
 <p><strong>-p project-id=string</strong></p>
 <ul>
-<li>Requests only diagnostic records for the given project id. If not set, then the project making the request will be used for looking up diagnostic records. Optional.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p page-token=string</strong></p>
-<ul>
-<li>Requests results that occur after the <code>page_token</code>, obtained from the response to a previous request. Optional.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p alert-filter=string</strong></p>
-<ul>
-<li>Requests only beacons that have the given alert. For example, to find beacons that have low batteries use <code>alert_filter=LOW_BATTERY</code>.</li>
+<li>Requests only diagnostic records for the given project id. If not set,
+    then the project making the request will be used for looking up
+    diagnostic records. Optional.</li>
 </ul>
 </li>
 <li>
 <p><strong>-p page-size=integer</strong></p>
 <ul>
-<li>Specifies the maximum number of results to return. Defaults to 10. Maximum 1000. Optional.</li>
+<li>Specifies the maximum number of results to return. Defaults to<ol>
+<li>Maximum 1000. Optional.</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>-p page-token=string</strong></p>
+<ul>
+<li>Requests results that occur after the <code>page_token</code>, obtained from the
+    response to a previous request. Optional.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p alert-filter=string</strong></p>
+<ul>
+<li>Requests only beacons that have the given alert. For example, to find
+    beacons that have low batteries use <code>alert_filter=LOW_BATTERY</code>.</li>
 </ul>
 </li>
 </ul>
@@ -400,7 +419,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
         <a href="../beacons_get/" class="btn btn-neutral float-right" title="Get">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../beacons_decommission/" class="btn btn-neutral" title="Decommission"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../beacons_delete/" class="btn btn-neutral" title="Delete"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -430,7 +449,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
           <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/proximitybeacon1_beta1-cli" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../beacons_decommission/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../beacons_delete/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
         <span style="margin-left: 15px"><a href="../beacons_get/" style="color: #fcfcfc">Next &raquo;</a></span>

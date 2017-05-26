@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Update - proximitybeacon v1.0.4+20160429</title>
+  <title>Update - proximitybeacon v1.0.5+20170517</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> proximitybeacon v1.0.4+20160429</a>
+        <a href=".." class="icon icon-home"> proximitybeacon v1.0.5+20170517</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -118,6 +118,13 @@
             
     <li class="toctree-l1 ">
         <a class="" href="../beacons_decommission/">Decommission</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../beacons_delete/">Delete</a>
         
     </li>
 
@@ -231,7 +238,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">proximitybeacon v1.0.4+20160429</a>
+        <a href="..">proximitybeacon v1.0.5+20170517</a>
       </nav>
 
       
@@ -260,7 +267,16 @@
           <div role="main">
             <div class="section">
               
-                <p>Updates the information about the specified beacon. <strong>Any field that you do not populate in the submitted beacon will be permanently erased</strong>, so you should follow the &#34;read, modify, write&#34; pattern to avoid inadvertently destroying data. Changes to the beacon status via this method will be silently ignored. To update beacon status, use the separate methods on this API for activation, deactivation, and decommissioning. Authenticate using an <a href="https://developers.google.com/identity/protocols/OAuth2">OAuth access token</a> from a signed-in user with <strong>Is owner</strong> or <strong>Can edit</strong> permissions in the Google Developers Console project.</p>
+                <p>Updates the information about the specified beacon. <strong>Any field that you do
+not populate in the submitted beacon will be permanently erased</strong>, so you
+should follow the &#34;read, modify, write&#34; pattern to avoid inadvertently
+destroying data.</p>
+<p>Changes to the beacon status via this method will be  silently ignored.
+To update beacon status, use the separate methods on this API for
+activation, deactivation, and decommissioning.
+Authenticate using an <a href="https://developers.google.com/identity/protocols/OAuth2">OAuth access token</a>
+from a signed-in user with <strong>Is owner</strong> or <strong>Can edit</strong> permissions in the
+Google Developers Console project.</p>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for the <em>https://www.googleapis.com/auth/userlocation.beacon.registry</em> scope to make a valid call.</p>
 <p>If unset, the scope for this method defaults to <em>https://www.googleapis.com/auth/userlocation.beacon.registry</em>.
@@ -268,11 +284,18 @@ You can set the scope for this method like this: <code>proximitybeacon1-beta1 --
 <h1 id="required-scalar-argument">Required Scalar Argument</h1>
 <ul>
 <li><strong>&lt;beacon-name&gt;</strong> <em>(string)</em><ul>
-<li>Resource name of this beacon. A beacon name has the format &#34;beacons/N!beaconId&#34; where the beaconId is the base16 ID broadcast by the beacon and N is a code for the beacon&#39;s type. Possible values are <code>3</code> for Eddystone, <code>1</code> for iBeacon, or <code>5</code> for AltBeacon. This field must be left empty when registering. After reading a beacon, clients can use the name for future operations.</li>
+<li>
+<p>Resource name of this beacon. A beacon name has the format
+    &#34;beacons/N!beaconId&#34; where the beaconId is the base16 ID broadcast by
+    the beacon and N is a code for the beacon&#39;s type. Possible values are
+    <code>3</code> for Eddystone, <code>1</code> for iBeacon, or <code>5</code> for AltBeacon.</p>
+<p>This field must be left empty when registering. After reading a beacon,
+clients can use the name for future operations.</p>
+<h1 id="required-request-value">Required Request Value</h1>
+</li>
 </ul>
 </li>
 </ul>
-<h1 id="required-request-value">Required Request Value</h1>
 <p>The request value is a data-structure with various fields. Each field may be a simple scalar or another data-structure.
 In the latter case it is advised to set the field-cursor to the data-structure's field to specify values more concisely.</p>
 <p>For example, a structure like this:</p>
@@ -304,93 +327,126 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .advertised-id    id=justo</code><ul>
-<li>The actual beacon identifier, as broadcast by the beacon hardware. Must be <a href="http://tools.ietf.org/html/rfc4648#section-4">base64</a> encoded in HTTP requests, and will be so encoded (with padding) in responses. The base64 encoding should be of the binary byte-stream and not any textual (such as hex) representation thereof. Required.</li>
+<li><code>-r .advertised-id    id=et</code><ul>
+<li>The actual beacon identifier, as broadcast by the beacon hardware. Must be
+    <a href="http://tools.ietf.org/html/rfc4648#section-4">base64</a> encoded in HTTP
+    requests, and will be so encoded (with padding) in responses. The base64
+    encoding should be of the binary byte-stream and not any textual (such as
+    hex) representation thereof.
+    Required.</li>
 </ul>
 </li>
 <li>
 <p><code>type=et</code></p>
 <ul>
-<li>Specifies the identifier type. Required.</li>
+<li>Specifies the identifier type.
+    Required.</li>
 </ul>
 </li>
 <li>
-<p><code>..    beacon-name=et</code></p>
+<p><code>..    beacon-name=diam</code></p>
 <ul>
-<li>Resource name of this beacon. A beacon name has the format &#34;beacons/N!beaconId&#34; where the beaconId is the base16 ID broadcast by the beacon and N is a code for the beacon&#39;s type. Possible values are <code>3</code> for Eddystone, <code>1</code> for iBeacon, or <code>5</code> for AltBeacon. This field must be left empty when registering. After reading a beacon, clients can use the name for future operations.</li>
-</ul>
+<li>
+<p>Resource name of this beacon. A beacon name has the format
+    &#34;beacons/N!beaconId&#34; where the beaconId is the base16 ID broadcast by
+    the beacon and N is a code for the beacon&#39;s type. Possible values are
+    <code>3</code> for Eddystone, <code>1</code> for iBeacon, or <code>5</code> for AltBeacon.</p>
+<p>This field must be left empty when registering. After reading a beacon,
+clients can use the name for future operations.
+<em> <code>description=ipsum</code>
+    - Free text used to identify and describe the beacon. Maximum length 140
+characters.
+Optional.
+</em> <code>ephemeral-id-registration    beacon-ecdh-public-key=lorem</code>
+    - The beacon&#39;s public key used for the Elliptic curve Diffie-Hellman
+key exchange. When this field is populated, <code>service_ecdh_public_key</code>
+must also be populated, and <code>beacon_identity_key</code> must not be.
+<em> <code>beacon-identity-key=et</code>
+    - The private key of the beacon. If this field is populated,
+<code>beacon_ecdh_public_key</code> and <code>service_ecdh_public_key</code> must not be
+populated.
+</em> <code>initial-clock-value=duo</code>
+    - The initial clock value of the beacon. The beacon&#39;s clock must have
+begun counting at this value immediately prior to transmitting this
+value to the resolving service. Significant delay in transmitting this
+value to the service risks registration or resolution failures. If a
+value is not provided, the default is zero.
+<em> <code>initial-eid=aliquyam</code>
+    - An initial ephemeral ID calculated using the clock value submitted as
+<code>initial_clock_value</code>, and the secret key generated by the
+Diffie-Hellman key exchange using <code>service_ecdh_public_key</code> and
+<code>service_ecdh_public_key</code>. This initial EID value will be used by the
+service to confirm that the key exchange process was successful.
+</em> <code>rotation-period-exponent=92</code>
+    - Indicates the nominal period between each rotation of the beacon&#39;s
+ephemeral ID. &#34;Nominal&#34; because the beacon should randomize the
+actual interval. See <a href="https://github.com/google/eddystone/tree/master/eddystone-eid">the spec at github</a>
+for details. This value corresponds to a power-of-two scaler on the
+beacon&#39;s clock: when the scaler value is K, the beacon will begin
+broadcasting a new ephemeral ID on average every 2^K seconds.
+* <code>service-ecdh-public-key=lorem</code>
+    - The service&#39;s public key used for the Elliptic curve Diffie-Hellman
+key exchange. When this field is populated, <code>beacon_ecdh_public_key</code>
+must also be populated, and <code>beacon_identity_key</code> must not be.</p>
 </li>
-<li><code>description=diam</code><ul>
-<li>Free text used to identify and describe the beacon. Maximum length 140 characters. Optional.</li>
-</ul>
-</li>
-<li><code>ephemeral-id-registration    beacon-ecdh-public-key=ipsum</code><ul>
-<li>The beacon&#39;s public key used for the Elliptic curve Diffie-Hellman key exchange. When this field is populated, <code>service_ecdh_public_key</code> must also be populated, and <code>beacon_identity_key</code> must not be.</li>
-</ul>
-</li>
-<li><code>beacon-identity-key=lorem</code><ul>
-<li>The private key of the beacon. If this field is populated, <code>beacon_ecdh_public_key</code> and <code>service_ecdh_public_key</code> must not be populated.</li>
-</ul>
-</li>
-<li><code>initial-clock-value=et</code><ul>
-<li>The initial clock value of the beacon. The beacon&#39;s clock must have begun counting at this value immediately prior to transmitting this value to the resolving service. Significant delay in transmitting this value to the service risks registration or resolution failures. If a value is not provided, the default is zero.</li>
-</ul>
-</li>
-<li><code>initial-eid=duo</code><ul>
-<li>An initial ephemeral ID calculated using the clock value submitted as <code>initial_clock_value</code>, and the secret key generated by the Diffie-Hellman key exchange using <code>service_ecdh_public_key</code> and <code>service_ecdh_public_key</code>. This initial EID value will be used by the service to confirm that the key exchange process was successful.</li>
-</ul>
-</li>
-<li><code>rotation-period-exponent=69</code><ul>
-<li>Indicates the nominal period between each rotation of the beacon&#39;s ephemeral ID. &#34;Nominal&#34; because the beacon should randomize the actual interval. See <a href="https://github.com/google/eddystone/tree/master/eddystone-eid">the spec at github</a> for details. This value corresponds to a power-of-two scaler on the beacon&#39;s clock: when the scaler value is K, the beacon will begin broadcasting a new ephemeral ID on average every 2^K seconds.</li>
 </ul>
 </li>
 <li>
-<p><code>service-ecdh-public-key=sea</code></p>
+<p><code>..    expected-stability=eos</code></p>
 <ul>
-<li>The service&#39;s public key used for the Elliptic curve Diffie-Hellman key exchange. When this field is populated, <code>beacon_ecdh_public_key</code> must also be populated, and <code>beacon_identity_key</code> must not be.</li>
+<li>Expected location stability. This is set when the beacon is registered or
+    updated, not automatically detected in any way.
+    Optional.</li>
 </ul>
 </li>
 <li>
-<p><code>..    expected-stability=lorem</code></p>
-<ul>
-<li>Expected location stability. This is set when the beacon is registered or updated, not automatically detected in any way. Optional.</li>
-</ul>
-</li>
-<li>
-<p><code>indoor-level    name=eos</code></p>
+<p><code>indoor-level    name=erat</code></p>
 <ul>
 <li>The name of this level.</li>
 </ul>
 </li>
 <li>
-<p><code>..lat-lng    latitude=0.200981494395</code></p>
+<p><code>..lat-lng    latitude=0.0673002722736</code></p>
 <ul>
 <li>The latitude in degrees. It must be in the range [-90.0, +90.0].</li>
 </ul>
 </li>
 <li>
-<p><code>longitude=0.0673002722736</code></p>
+<p><code>longitude=0.525443427037</code></p>
 <ul>
 <li>The longitude in degrees. It must be in the range [-180.0, +180.0].</li>
 </ul>
 </li>
 <li>
-<p><code>..    place-id=dolor</code></p>
+<p><code>..    place-id=eirmod</code></p>
 <ul>
-<li>The <a href="../places/place-id">Google Places API</a> Place ID of the place where the beacon is deployed. This is given when the beacon is registered or updated, not automatically detected in any way. Optional.</li>
+<li>The <a href="../places/place-id">Google Places API</a> Place ID of the place where
+    the beacon is deployed. This is given when the beacon is registered or
+    updated, not automatically detected in any way.
+    Optional.</li>
 </ul>
 </li>
-<li><code>properties=key=eirmod</code><ul>
-<li>Properties of the beacon device, for example battery type or firmware version. Optional.</li>
+<li><code>properties=key=elitr</code><ul>
+<li>Properties of the beacon device, for example battery type or firmware
+    version.
+    Optional.</li>
 <li>the value will be associated with the given <code>key</code></li>
 </ul>
 </li>
-<li><code>provisioning-key=elitr</code><ul>
-<li>Some beacons may require a user to provide an authorization key before changing any of its configuration (e.g. broadcast frames, transmit power). This field provides a place to store and control access to that key. This field is populated in responses to <code>GET /v1beta1/beacons/3!beaconId</code> from users with write access to the given beacon. That is to say: If the user is authorized to write the beacon&#39;s confidential data in the service, the service considers them authorized to configure the beacon. Note that this key grants nothing on the service, only on the beacon itself.</li>
+<li><code>provisioning-key=amet</code><ul>
+<li>Some beacons may require a user to provide an authorization key before
+    changing any of its configuration (e.g. broadcast frames, transmit power).
+    This field provides a place to store and control access to that key.
+    This field is populated in responses to <code>GET /v1beta1/beacons/3!beaconId</code>
+    from users with write access to the given beacon. That is to say: If the
+    user is authorized to write the beacon&#39;s confidential data in the service,
+    the service considers them authorized to configure the beacon. Note
+    that this key grants nothing on the service, only on the beacon itself.</li>
 </ul>
 </li>
-<li><code>status=amet</code><ul>
-<li>Current status of the beacon. Required.</li>
+<li><code>status=no</code><ul>
+<li>Current status of the beacon.
+    Required.</li>
 </ul>
 </li>
 </ul>
@@ -419,7 +475,10 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li><strong>-p project-id=string</strong><ul>
-<li>The project id of the beacon to update. If the project id is not specified then the project making the request is used. The project id must match the project that owns the beacon. Optional.</li>
+<li>The project id of the beacon to update. If the project id is not
+    specified then the project making the request is used. The project id
+    must match the project that owns the beacon.
+    Optional.</li>
 </ul>
 </li>
 </ul>

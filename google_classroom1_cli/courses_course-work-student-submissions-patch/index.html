@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Course Work Student Submissions Patch - classroom v1.0.4+20161006</title>
+  <title>Course Work Student Submissions Patch - classroom v1.0.5+20170510</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> classroom v1.0.4+20161006</a>
+        <a href=".." class="icon icon-home"> classroom v1.0.5+20170510</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -88,6 +88,13 @@
         
             
     <li class="toctree-l1 ">
+        <a class="" href="../courses_course-work-delete/">Course Work Delete</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
         <a class="" href="../courses_course-work-get/">Course Work Get</a>
         
     </li>
@@ -96,6 +103,13 @@
             
     <li class="toctree-l1 ">
         <a class="" href="../courses_course-work-list/">Course Work List</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../courses_course-work-patch/">Course Work Patch</a>
         
     </li>
 
@@ -391,7 +405,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">classroom v1.0.4+20161006</a>
+        <a href="..">classroom v1.0.5+20170510</a>
       </nav>
 
       
@@ -420,7 +434,22 @@
           <div role="main">
             <div class="section">
               
-                <p>Updates one or more fields of a student submission. See google.classroom.v1.StudentSubmission for details of which fields may be updated and who may change them. This request must be made by the Developer Console project of the <a href="https://support.google.com/cloud/answer/6158849">OAuth client ID</a> used to create the corresponding course work item. This method returns the following error codes: * <code>PERMISSION_DENIED</code> if the requesting developer project did not create the corresponding course work, if the user is not permitted to make the requested modification to the student submission, or for access errors. * <code>INVALID_ARGUMENT</code> if the request is malformed. * <code>NOT_FOUND</code> if the requested course, course work, or student submission does not exist.</p>
+                <p>Updates one or more fields of a student submission.</p>
+<p>See google.classroom.v1.StudentSubmission for details
+of which fields may be updated and who may change them.</p>
+<p>This request must be made by the Developer Console project of the
+<a href="https://support.google.com/cloud/answer/6158849">OAuth client ID</a> used to
+create the corresponding course work item.</p>
+<p>This method returns the following error codes:</p>
+<ul>
+<li><code>PERMISSION_DENIED</code> if the requesting developer project did not create
+the corresponding course work, if the user is not permitted to make the
+requested modification to the student submission, or for
+access errors.</li>
+<li><code>INVALID_ARGUMENT</code> if the request is malformed.</li>
+<li><code>NOT_FOUND</code> if the requested course, course work, or student submission
+does not exist.</li>
+</ul>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for at least one of the following scopes to make a valid call:</p>
 <ul>
@@ -432,7 +461,9 @@ You can set the scope for this method like this: <code>classroom1 --scope &lt;sc
 <h1 id="required-scalar-arguments">Required Scalar Arguments</h1>
 <ul>
 <li><strong>&lt;course-id&gt;</strong> <em>(string)</em><ul>
-<li>Identifier of the course. This identifier can be either the Classroom-assigned identifier or an alias.</li>
+<li>Identifier of the course.
+    This identifier can be either the Classroom-assigned identifier or an
+    alias.</li>
 </ul>
 </li>
 <li><strong>&lt;course-work-id&gt;</strong> <em>(string)</em><ul>
@@ -471,70 +502,71 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    alternate-link=et</code><ul>
-<li>Absolute link to the submission in the Classroom web UI. Read-only.</li>
-</ul>
-</li>
-<li><code>assigned-grade=0.594456807662</code><ul>
-<li>Optional grade. If unset, no grade was set. This must be a non-negative integer value. This may be modified only by course teachers.</li>
-</ul>
-</li>
-<li><code>associated-with-developer=false</code><ul>
-<li>Whether this student submission is associated with the Developer Console project making the request. See google.classroom.Work.CreateCourseWork for more details. Read-only.</li>
-</ul>
-</li>
-<li><code>course-id=lorem</code><ul>
-<li>Identifier of the course. Read-only.</li>
-</ul>
-</li>
-<li><code>course-work-id=et</code><ul>
-<li>Identifier for the course work this corresponds to. Read-only.</li>
-</ul>
-</li>
-<li><code>course-work-type=duo</code><ul>
-<li>Type of course work this submission is for. Read-only.</li>
-</ul>
-</li>
-<li><code>creation-time=aliquyam</code><ul>
-<li>Creation time of this submission. This may be unset if the student has not accessed this item. Read-only.</li>
-</ul>
-</li>
-<li><code>draft-grade=0.915099997853</code><ul>
-<li>Optional pending grade. If unset, no grade was set. This must be a non-negative integer value. This is only visible to and modifiable by course teachers.</li>
-</ul>
-</li>
-<li><code>id=lorem</code><ul>
-<li>Classroom-assigned Identifier for the student submission. This is unique among submissions for the relevant course work. Read-only.</li>
-</ul>
-</li>
-<li><code>late=false</code><ul>
-<li>Whether this submission is late. Read-only.</li>
-</ul>
-</li>
 <li>
-<p><code>multiple-choice-submission    answer=erat</code></p>
+<p><code>-r .    alternate-link=lorem</code></p>
 <ul>
-<li>Student&#39;s select choice.</li>
+<li>
+<p>Absolute link to the submission in the Classroom web UI.</p>
+<p>Read-only.
+* <code>assigned-grade=0.916530817745</code>
+    - Optional grade. If unset, no grade was set.
+This must be a non-negative integer value.</p>
+<p>This may be modified only by course teachers.
+* <code>associated-with-developer=true</code>
+    - Whether this student submission is associated with the Developer Console
+project making the request.</p>
+<p>See google.classroom.Work.CreateCourseWork for more
+details.</p>
+<p>Read-only.
+* <code>course-id=duo</code>
+    - Identifier of the course.</p>
+<p>Read-only.
+* <code>course-work-id=et</code>
+    - Identifier for the course work this corresponds to.</p>
+<p>Read-only.
+* <code>course-work-type=eirmod</code>
+    - Type of course work this submission is for.</p>
+<p>Read-only.
+* <code>creation-time=sanctus</code>
+    - Creation time of this submission.
+This may be unset if the student has not accessed this item.</p>
+<p>Read-only.
+* <code>draft-grade=0.790427604532</code>
+    - Optional pending grade. If unset, no grade was set.
+This must be a non-negative integer value.</p>
+<p>This is only visible to and modifiable by course teachers.
+* <code>id=amet</code>
+    - Classroom-assigned Identifier for the student submission.
+This is unique among submissions for the relevant course work.</p>
+<p>Read-only.
+* <code>late=true</code>
+    - Whether this submission is late.</p>
+<p>Read-only.
+* <code>multiple-choice-submission    answer=consetetur</code>
+    - Student&#39;s select choice.</p>
+</li>
 </ul>
 </li>
 <li>
-<p><code>..short-answer-submission    answer=sadipscing</code></p>
+<p><code>..short-answer-submission    answer=ut</code></p>
 <ul>
 <li>Student response to a short-answer question.</li>
 </ul>
 </li>
 <li>
-<p><code>..    state=dolor</code></p>
+<p><code>..    state=ea</code></p>
 <ul>
-<li>State of this submission. Read-only.</li>
-</ul>
+<li>
+<p>State of this submission.</p>
+<p>Read-only.
+* <code>update-time=sed</code>
+    - Last update time of this submission.
+This may be unset if the student has not accessed this item.</p>
+<p>Read-only.
+* <code>user-id=dolor</code>
+    - Identifier for the student that owns this submission.</p>
+<p>Read-only.</p>
 </li>
-<li><code>update-time=eirmod</code><ul>
-<li>Last update time of this submission. This may be unset if the student has not accessed this item. Read-only.</li>
-</ul>
-</li>
-<li><code>user-id=elitr</code><ul>
-<li>Identifier for the student that owns this submission. Read-only.</li>
 </ul>
 </li>
 </ul>
@@ -563,7 +595,14 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li><strong>-p update-mask=string</strong><ul>
-<li>Mask that identifies which fields on the student submission to update. This field is required to do an update. The update fails if invalid fields are specified. The following fields may be specified by teachers: * <code>draft_grade</code> * <code>assigned_grade</code></li>
+<li>
+<p>Mask that identifies which fields on the student submission to update.
+    This field is required to do an update. The update fails if invalid
+    fields are specified.</p>
+<p>The following fields may be specified by teachers:
+<em> <code>draft_grade</code>
+</em> <code>assigned_grade</code></p>
+</li>
 </ul>
 </li>
 </ul>

@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>List - drive v1.0.4+20161212</title>
+  <title>List - drive v1.0.5+20170512</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> drive v1.0.4+20161212</a>
+        <a href=".." class="icon icon-home"> drive v1.0.5+20170512</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -98,6 +98,13 @@
             
     <li class="toctree-l1 ">
         <a class="" href="../changes_get/">Get</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../changes_get-start-page-token/">Get Start Page Token</a>
         
     </li>
 
@@ -600,6 +607,49 @@
     </ul>
 <li>
           
+            <li>
+    <ul class="subnav">
+    <li><span>Teamdrives</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../teamdrives_delete/">Delete</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../teamdrives_get/">Get</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../teamdrives_insert/">Insert</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../teamdrives_list/">List</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../teamdrives_update/">Update</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
         </ul>
       </div>
       &nbsp;
@@ -610,7 +660,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">drive v1.0.4+20161212</a>
+        <a href="..">drive v1.0.5+20170512</a>
       </nav>
 
       
@@ -639,7 +689,7 @@
           <div role="main">
             <div class="section">
               
-                <p>Lists the changes for a user.</p>
+                <p>Lists the changes for a user or Team Drive.</p>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for at least one of the following scopes to make a valid call:</p>
 <ul>
@@ -671,6 +721,42 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
+<p><strong>-p include-subscribed=boolean</strong></p>
+<ul>
+<li>Whether to include public files the user has opened and shared files. When set to false, the list only includes owned files plus any shared or public files the user has explicitly added to a folder they own.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p include-deleted=boolean</strong></p>
+<ul>
+<li>Whether to include changes indicating that items have been removed from the list of changes, for example by deletion or loss of access.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p include-team-drive-items=boolean</strong></p>
+<ul>
+<li>Whether Team Drive files or changes should be included in results.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p max-results=integer</strong></p>
+<ul>
+<li>Maximum number of changes to return.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p page-token=string</strong></p>
+<ul>
+<li>The token for continuing a previous list request on the next page. This should be set to the value of &#39;nextPageToken&#39; from the previous response or to the response from the getStartPageToken method.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p supports-team-drives=boolean</strong></p>
+<ul>
+<li>Whether the requesting application supports Team Drives.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p spaces=string</strong></p>
 <ul>
 <li>A comma-separated list of spaces to query. Supported values are &#39;drive&#39;, &#39;appDataFolder&#39; and &#39;photos&#39;.</li>
@@ -683,27 +769,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p include-subscribed=boolean</strong></p>
+<p><strong>-p team-drive-id=string</strong></p>
 <ul>
-<li>Whether to include public files the user has opened and shared files. When set to false, the list only includes owned files plus any shared or public files the user has explicitly added to a folder they own.</li>
+<li>The Team Drive from which changes will be returned. If specified the change IDs will be reflective of the Team Drive; use the combined Team Drive ID and change ID as an identifier.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p include-deleted=boolean</strong></p>
+<p><strong>-p include-corpus-removals=boolean</strong></p>
 <ul>
-<li>Whether to include deleted items.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p page-token=string</strong></p>
-<ul>
-<li>Page token for changes.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p max-results=integer</strong></p>
-<ul>
-<li>Maximum number of changes to return.</li>
+<li>Whether changes should include the file resource if the file is still accessible by the user at the time of the request, even when a file was removed from the list of changes and there will be no further change entries for this file.</li>
 </ul>
 </li>
 </ul>
@@ -763,7 +837,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
         <a href="../changes_watch/" class="btn btn-neutral float-right" title="Watch">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../changes_get/" class="btn btn-neutral" title="Get"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../changes_get-start-page-token/" class="btn btn-neutral" title="Get Start Page Token"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -793,7 +867,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
           <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/drive2-cli" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../changes_get/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../changes_get-start-page-token/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
         <span style="margin-left: 15px"><a href="../changes_watch/" style="color: #fcfcfc">Next &raquo;</a></span>

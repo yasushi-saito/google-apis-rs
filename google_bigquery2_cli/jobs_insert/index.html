@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Insert - bigquery v1.0.4+20161130</title>
+  <title>Insert - bigquery v1.0.5+20170511</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> bigquery v1.0.4+20161130</a>
+        <a href=".." class="icon icon-home"> bigquery v1.0.5+20170511</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -274,7 +274,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">bigquery v1.0.4+20161130</a>
+        <a href="..">bigquery v1.0.5+20170511</a>
       </nav>
 
       
@@ -523,7 +523,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>
 <p><code>...    labels=key=consetetur</code></p>
 <ul>
-<li>[Experimental] The labels associated with this job. You can use these to organize and group your jobs. Label keys and values can be no longer than 63 characters, can only contain letters, numeric characters, underscores and dashes. International characters are allowed. Label values are optional. Label keys must start with a letter and must be unique within a dataset. Both keys and values are additionally constrained to be &lt;= 128 bytes in size.</li>
+<li>[Experimental] The labels associated with this job. You can use these to organize and group your jobs. Label keys and values can be no longer than 63 characters, can only contain lowercase letters, numeric characters, underscores and dashes. International characters are allowed. Label values are optional. Label keys must start with a letter and each label in the list must have a different key.</li>
 <li>the value will be associated with the given <code>key</code></li>
 </ul>
 </li>
@@ -536,7 +536,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li><code>autodetect=false</code><ul>
-<li>[Experimental] Indicates if we should automatically infer the options and schema for CSV and JSON sources.</li>
+<li>Indicates if we should automatically infer the options and schema for CSV and JSON sources.</li>
 </ul>
 </li>
 <li><code>create-disposition=dolor</code><ul>
@@ -576,11 +576,11 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li><code>null-marker=gubergren</code><ul>
-<li>[Optional] This string will be interpreted as a null value when it appears in a CSV file. The default value is the empty string. Please refer to the documentation for further information.</li>
+<li>[Optional] Specifies a string that represents a null value in a CSV file. For example, if you specify &#34;\N&#34;, BigQuery interprets &#34;\N&#34; as a null value when loading a CSV file. The default value is the empty string. If you set this property to a custom value, BigQuery throws an error if an empty string is present for all data types except for STRING and BYTE. For STRING and BYTE columns, BigQuery interprets the empty string as an empty value.</li>
 </ul>
 </li>
 <li><code>projection-fields=justo</code><ul>
-<li>[Experimental] If sourceFormat is set to &#34;DATASTORE_BACKUP&#34;, indicates which entity properties to load into BigQuery from a Cloud Datastore backup. Property names are case sensitive and must be top-level properties. If no properties are specified, BigQuery loads all properties. If any named property isn&#39;t found in the Cloud Datastore backup, an invalid error is returned in the job result.</li>
+<li>If sourceFormat is set to &#34;DATASTORE_BACKUP&#34;, indicates which entity properties to load into BigQuery from a Cloud Datastore backup. Property names are case sensitive and must be top-level properties. If no properties are specified, BigQuery loads all properties. If any named property isn&#39;t found in the Cloud Datastore backup, an invalid error is returned in the job result.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
@@ -623,7 +623,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>
 <p><code>..query    allow-large-results=false</code></p>
 <ul>
-<li>If true, allows the query to produce arbitrarily large result tables at a slight cost in performance. Requires destinationTable to be set.</li>
+<li>[Optional] If true and query uses legacy SQL dialect, allows the query to produce arbitrarily large result tables at a slight cost in performance. Requires destinationTable to be set. For standard SQL queries, this flag is ignored and large results are always allowed.</li>
 </ul>
 </li>
 <li><code>create-disposition=consetetur</code><ul>
@@ -659,7 +659,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>
 <p><code>..    flatten-results=true</code></p>
 <ul>
-<li>[Optional] Flattens all nested and repeated fields in the query results. The default value is true. allowLargeResults must be true if this is set to false.</li>
+<li>[Optional] If true and query uses legacy SQL dialect, flattens all nested and repeated fields in the query results. allowLargeResults must be true if this is set to false. For standard SQL queries, this flag is ignored and results are never flattened.</li>
 </ul>
 </li>
 <li><code>maximum-billing-tier=56</code><ul>
@@ -671,7 +671,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li><code>parameter-mode=nonumy</code><ul>
-<li>[Experimental] Standard SQL only. Whether to use positional (?) or named (@myparam) query parameters in this query.</li>
+<li>Standard SQL only. Set to POSITIONAL to use positional (?) query parameters or to NAMED to use named (@myparam) query parameters in this query.</li>
 </ul>
 </li>
 <li><code>preserve-nulls=true</code><ul>
@@ -683,7 +683,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li><code>query=takimata</code><ul>
-<li>[Required] BigQuery SQL query to execute.</li>
+<li>[Required] SQL query text to execute. The useLegacySql field can be used to indicate whether the query uses legacy SQL or standard SQL.</li>
 </ul>
 </li>
 <li><code>schema-update-options=at</code><ul>
@@ -781,7 +781,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li><code>num-dml-affected-rows=tempor</code><ul>
-<li>[Output-only, Experimental] The number of rows affected by a DML statement. Present only for DML statements INSERT, UPDATE or DELETE.</li>
+<li>[Output-only] The number of rows affected by a DML statement. Present only for DML statements INSERT, UPDATE or DELETE.</li>
 </ul>
 </li>
 <li><code>statement-type=sea</code><ul>

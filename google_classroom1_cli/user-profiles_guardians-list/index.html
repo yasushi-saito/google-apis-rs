@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Guardians List - classroom v1.0.4+20161006</title>
+  <title>Guardians List - classroom v1.0.5+20170510</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> classroom v1.0.4+20161006</a>
+        <a href=".." class="icon icon-home"> classroom v1.0.5+20170510</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -88,6 +88,13 @@
         
             
     <li class="toctree-l1 ">
+        <a class="" href="../courses_course-work-delete/">Course Work Delete</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
         <a class="" href="../courses_course-work-get/">Course Work Get</a>
         
     </li>
@@ -96,6 +103,13 @@
             
     <li class="toctree-l1 ">
         <a class="" href="../courses_course-work-list/">Course Work List</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../courses_course-work-patch/">Course Work Patch</a>
         
     </li>
 
@@ -383,7 +397,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">classroom v1.0.4+20161006</a>
+        <a href="..">classroom v1.0.5+20170510</a>
       </nav>
 
       
@@ -412,11 +426,39 @@
           <div role="main">
             <div class="section">
               
-                <p>Returns a list of guardians that the requesting user is permitted to view, restricted to those that match the request. To list guardians for any student that the requesting user may view guardians for, use the literal character <code>-</code> for the student ID. This method returns the following error codes: * <code>PERMISSION_DENIED</code> if a <code>student_id</code> is specified, and the requesting user is not permitted to view guardian information for that student, if <code>&amp;#34;-&amp;#34;</code> is specified as the <code>student_id</code> and the user is not a domain administrator, if guardians are not enabled for the domain in question, if the <code>invited_email_address</code> filter is set by a user who is not a domain administrator, or for other access errors. * <code>INVALID_ARGUMENT</code> if a <code>student_id</code> is specified, but its format cannot be recognized (it is not an email address, nor a <code>student_id</code> from the API, nor the literal string <code>me</code>). May also be returned if an invalid <code>page_token</code> is provided. * <code>NOT_FOUND</code> if a <code>student_id</code> is specified, and its format can be recognized, but Classroom has no record of that student.</p>
+                <p>Returns a list of guardians that the requesting user is permitted to
+view, restricted to those that match the request.</p>
+<p>To list guardians for any student that the requesting user may view
+guardians for, use the literal character <code>-</code> for the student ID.</p>
+<p>This method returns the following error codes:</p>
+<ul>
+<li><code>PERMISSION_DENIED</code> if a <code>student_id</code> is specified, and the requesting
+  user is not permitted to view guardian information for that student, if
+  <code>&amp;#34;-&amp;#34;</code> is specified as the <code>student_id</code> and the user is not a domain
+  administrator, if guardians are not enabled for the domain in question,
+  if the <code>invited_email_address</code> filter is set by a user who is not a
+  domain administrator, or for other access errors.</li>
+<li><code>INVALID_ARGUMENT</code> if a <code>student_id</code> is specified, but its format cannot
+  be recognized (it is not an email address, nor a <code>student_id</code> from the
+  API, nor the literal string <code>me</code>). May also be returned if an invalid
+  <code>page_token</code> is provided.</li>
+<li><code>NOT_FOUND</code> if a <code>student_id</code> is specified, and its format can be
+  recognized, but Classroom has no record of that student.</li>
+</ul>
 <h1 id="required-scalar-argument">Required Scalar Argument</h1>
 <ul>
 <li><strong>&lt;student-id&gt;</strong> <em>(string)</em><ul>
-<li>Filter results by the student who the guardian is linked to. The identifier can be one of the following: * the numeric identifier for the user * the email address of the user * the string literal <code>&amp;#34;me&amp;#34;</code>, indicating the requesting user * the string literal <code>&amp;#34;-&amp;#34;</code>, indicating that results should be returned for all students that the requesting user has access to view.</li>
+<li>
+<p>Filter results by the student who the guardian is linked to.
+    The identifier can be one of the following:</p>
+<ul>
+<li>the numeric identifier for the user</li>
+<li>the email address of the user</li>
+<li>the string literal <code>&amp;#34;me&amp;#34;</code>, indicating the requesting user</li>
+<li>the string literal <code>&amp;#34;-&amp;#34;</code>, indicating that results should be returned for
+  all students that the requesting user has access to view.</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -439,19 +481,32 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <li>
 <p><strong>-p page-size=integer</strong></p>
 <ul>
-<li>Maximum number of items to return. Zero or unspecified indicates that the server may assign a maximum. The server may return fewer than the specified number of results.</li>
-</ul>
-</li>
 <li>
-<p><strong>-p invited-email-address=string</strong></p>
-<ul>
-<li>Filter results by the email address that the original invitation was sent to, resulting in this guardian link. This filter can only be used by domain administrators.</li>
+<p>Maximum number of items to return. Zero or unspecified indicates that the
+    server may assign a maximum.</p>
+<p>The server may return fewer than the specified number of results.</p>
+</li>
 </ul>
 </li>
 <li>
 <p><strong>-p page-token=string</strong></p>
 <ul>
-<li>nextPageToken value returned from a previous list call, indicating that the subsequent page of results should be returned. The list request must be otherwise identical to the one that resulted in this token.</li>
+<li>
+<p>nextPageToken
+    value returned from a previous
+    list call,
+    indicating that the subsequent page of results should be returned.</p>
+<p>The list request
+must be otherwise identical to the one that resulted in this token.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>-p invited-email-address=string</strong></p>
+<ul>
+<li>Filter results by the email address that the original invitation was sent
+    to, resulting in this guardian link.
+    This filter can only be used by domain administrators.</li>
 </ul>
 </li>
 </ul>

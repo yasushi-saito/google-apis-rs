@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Find - safebrowsing v1.0.4+20160520</title>
+  <title>Find - safebrowsing v1.0.5+20170509</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> safebrowsing v1.0.4+20160520</a>
+        <a href=".." class="icon icon-home"> safebrowsing v1.0.5+20170509</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -51,6 +51,36 @@
         <a class="" href="..">Home</a>
         
     </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Encoded Full Hashes</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../encoded-full-hashes_get/">Get</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Encoded Updates</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../encoded-updates_get/">Get</a>
+        
+    </li>
+
+        
+    </ul>
 <li>
           
             <li>
@@ -138,7 +168,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">safebrowsing v1.0.4+20160520</a>
+        <a href="..">safebrowsing v1.0.5+20170509</a>
       </nav>
 
       
@@ -173,6 +203,9 @@
 In the latter case it is advised to set the field-cursor to the data-structure's field to specify values more concisely.</p>
 <p>For example, a structure like this:</p>
 <pre><code>FindFullHashesRequest:
+  api-client:
+    client-id: string
+    client-version: string
   client:
     client-id: string
     client-version: string
@@ -186,8 +219,9 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .client    client-id=eirmod</code><ul>
-<li>A client ID that (hopefully) uniquely identifies the client implementation of the Safe Browsing API.</li>
+<li><code>-r .api-client    client-id=eirmod</code><ul>
+<li>A client ID that (hopefully) uniquely identifies the client implementation
+    of the Safe Browsing API.</li>
 </ul>
 </li>
 <li>
@@ -197,23 +231,36 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
-<p><code>..    client-states=stet</code></p>
+<p><code>..client    client-id=stet</code></p>
+<ul>
+<li>A client ID that (hopefully) uniquely identifies the client implementation
+    of the Safe Browsing API.</li>
+</ul>
+</li>
+<li>
+<p><code>client-version=sed</code></p>
+<ul>
+<li>The version of the client implementation.</li>
+</ul>
+</li>
+<li>
+<p><code>..    client-states=et</code></p>
 <ul>
 <li>The current client states for each of the client&#39;s local threat lists.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>threat-info    platform-types=sed</code><ul>
+<li><code>threat-info    platform-types=dolores</code><ul>
 <li>The platform types to be checked.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>threat-entry-types=et</code><ul>
+<li><code>threat-entry-types=kasd</code><ul>
 <li>The entry types to be checked.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>threat-types=dolores</code><ul>
+<li><code>threat-types=accusam</code><ul>
 <li>The threat types to be checked.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
@@ -330,7 +377,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
         <a href="../threat-list-updates_fetch/" class="btn btn-neutral float-right" title="Fetch">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href=".." class="btn btn-neutral" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../encoded-updates_get/" class="btn btn-neutral" title="Get"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -360,7 +407,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
           <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/safebrowsing4-cli" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href=".." style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../encoded-updates_get/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
         <span style="margin-left: 15px"><a href="../threat-list-updates_fetch/" style="color: #fcfcfc">Next &raquo;</a></span>

@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>List - classroom v1.0.4+20161006</title>
+  <title>List - classroom v1.0.5+20170510</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> classroom v1.0.4+20161006</a>
+        <a href=".." class="icon icon-home"> classroom v1.0.5+20170510</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -88,6 +88,13 @@
         
             
     <li class="toctree-l1 ">
+        <a class="" href="../courses_course-work-delete/">Course Work Delete</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
         <a class="" href="../courses_course-work-get/">Course Work Get</a>
         
     </li>
@@ -96,6 +103,13 @@
             
     <li class="toctree-l1 ">
         <a class="" href="../courses_course-work-list/">Course Work List</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../courses_course-work-patch/">Course Work Patch</a>
         
     </li>
 
@@ -383,7 +397,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">classroom v1.0.4+20161006</a>
+        <a href="..">classroom v1.0.5+20170510</a>
       </nav>
 
       
@@ -412,7 +426,14 @@
           <div role="main">
             <div class="section">
               
-                <p>Returns a list of courses that the requesting user is permitted to view, restricted to those that match the request. This method returns the following error codes: * <code>PERMISSION_DENIED</code> for access errors. * <code>INVALID_ARGUMENT</code> if the query argument is malformed. * <code>NOT_FOUND</code> if any users specified in the query arguments do not exist.</p>
+                <p>Returns a list of courses that the requesting user is permitted to view,
+restricted to those that match the request.</p>
+<p>This method returns the following error codes:</p>
+<ul>
+<li><code>PERMISSION_DENIED</code> for access errors.</li>
+<li><code>INVALID_ARGUMENT</code> if the query argument is malformed.</li>
+<li><code>NOT_FOUND</code> if any users specified in the query arguments do not exist.</li>
+</ul>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for at least one of the following scopes to make a valid call:</p>
 <ul>
@@ -438,33 +459,61 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p teacher-id=string</strong></p>
+<p><strong>-p page-token=string</strong></p>
 <ul>
-<li>Restricts returned courses to those having a teacher with the specified identifier. The identifier can be one of the following: * the numeric identifier for the user * the email address of the user * the string literal <code>&amp;#34;me&amp;#34;</code>, indicating the requesting user</li>
+<li>
+<p>nextPageToken
+    value returned from a previous
+    list call,
+    indicating that the subsequent page of results should be returned.</p>
+<p>The list request must be
+otherwise identical to the one that resulted in this token.</p>
+</li>
 </ul>
 </li>
 <li>
 <p><strong>-p student-id=string</strong></p>
 <ul>
-<li>Restricts returned courses to those having a student with the specified identifier. The identifier can be one of the following: * the numeric identifier for the user * the email address of the user * the string literal <code>&amp;#34;me&amp;#34;</code>, indicating the requesting user</li>
+<li>
+<p>Restricts returned courses to those having a student with the specified
+    identifier. The identifier can be one of the following:</p>
+<ul>
+<li>the numeric identifier for the user</li>
+<li>the email address of the user</li>
+<li>the string literal <code>&amp;#34;me&amp;#34;</code>, indicating the requesting user</li>
 </ul>
 </li>
-<li>
-<p><strong>-p course-states=string</strong></p>
-<ul>
-<li>Restricts returned courses to those in one of the specified states</li>
-</ul>
-</li>
-<li>
-<p><strong>-p page-token=string</strong></p>
-<ul>
-<li>nextPageToken value returned from a previous list call, indicating that the subsequent page of results should be returned. The list request must be otherwise identical to the one that resulted in this token.</li>
 </ul>
 </li>
 <li>
 <p><strong>-p page-size=integer</strong></p>
 <ul>
-<li>Maximum number of items to return. Zero or unspecified indicates that the server may assign a maximum. The server may return fewer than the specified number of results.</li>
+<li>
+<p>Maximum number of items to return. Zero or unspecified indicates that the
+    server may assign a maximum.</p>
+<p>The server may return fewer than the specified number of results.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>-p teacher-id=string</strong></p>
+<ul>
+<li>
+<p>Restricts returned courses to those having a teacher with the specified
+    identifier. The identifier can be one of the following:</p>
+<ul>
+<li>the numeric identifier for the user</li>
+<li>the email address of the user</li>
+<li>the string literal <code>&amp;#34;me&amp;#34;</code>, indicating the requesting user</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>-p course-states=string</strong></p>
+<ul>
+<li>Restricts returned courses to those in one of the specified states
+    The default value is ACTIVE, ARCHIVED, PROVISIONED, DECLINED.</li>
 </ul>
 </li>
 </ul>

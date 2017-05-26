@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Create - Firebase Dynamic Links v1.0.4+20161118</title>
+  <title>Create - Firebase Dynamic Links v1.0.5+20170517</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Firebase Dynamic Links v1.0.4+20161118</a>
+        <a href=".." class="icon icon-home"> Firebase Dynamic Links v1.0.5+20170517</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -96,7 +96,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Firebase Dynamic Links v1.0.4+20161118</a>
+        <a href="..">Firebase Dynamic Links v1.0.5+20170517</a>
       </nav>
 
       
@@ -169,6 +169,8 @@ In the latter case it is advised to set the field-cursor to the data-structure's
       ios-ipad-bundle-id: string
       ios-ipad-fallback-link: string
     link: string
+    navigation-info:
+      enable-forced-redirect: boolean
     social-meta-tag-info:
       social-description: string
       social-image-link: string
@@ -260,7 +262,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <ul>
 <li>
 <p>Dynamic Links domain that the project owns, e.g. abcd.app.goo.gl
-    <a href="https://firebase.google.com/docs/dynamic-links/android#set-up-firebase-and-the-dynamic-links-sdk">Learn more</a>
+    <a href="https://firebase.google.com/docs/dynamic-links/android/receive">Learn more</a>
     on how to set up Dynamic Link domain associated with your Firebase project.</p>
 <p>Required.
 <em> <code>ios-info    ios-app-store-id=dolores</code>
@@ -287,19 +289,32 @@ this param.
 <p>The link your app will open, You can specify any URL your app can handle.
     This link must be a well-formatted URL, be properly URL-encoded, and use
     the HTTP or HTTPS scheme. See &#39;link&#39; parameters in the
-    <a href="https://firebase.google.com/docs/dynamic-links/android#create-a-dynamic-link-programmatically">documentation</a>.</p>
+    <a href="https://firebase.google.com/docs/dynamic-links/create-manually">documentation</a>.</p>
 <p>Required.
-<em> <code>social-meta-tag-info    social-description=justo</code>
-    - A short description of the link. Optional.
-</em> <code>social-image-link=et</code>
-    - An image url string. Optional.
-* <code>social-title=et</code>
-    - Title to be displayed. Optional.</p>
+* <code>navigation-info    enable-forced-redirect=true</code>
+    - If this option is on, FDL click will be forced to redirect rather than
+show an interstitial page.</p>
 </li>
 </ul>
 </li>
 <li>
-<p><code>...    long-dynamic-link=diam</code></p>
+<p><code>..social-meta-tag-info    social-description=et</code></p>
+<ul>
+<li>A short description of the link. Optional.</li>
+</ul>
+</li>
+<li><code>social-image-link=et</code><ul>
+<li>An image url string. Optional.</li>
+</ul>
+</li>
+<li>
+<p><code>social-title=diam</code></p>
+<ul>
+<li>Title to be displayed. Optional.</li>
+</ul>
+</li>
+<li>
+<p><code>...    long-dynamic-link=ipsum</code></p>
 <ul>
 <li>Full long Dynamic Link URL with desired query parameters specified.
     For example,
@@ -307,7 +322,7 @@ this param.
     <a href="https://firebase.google.com/docs/dynamic-links/android#create-a-dynamic-link-programmatically">Learn more</a>.</li>
 </ul>
 </li>
-<li><code>suffix    option=ipsum</code><ul>
+<li><code>suffix    option=lorem</code><ul>
 <li>Suffix option.</li>
 </ul>
 </li>

@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Insert - Deployment Manager v1.0.4+20161209</title>
+  <title>Insert - Deployment Manager v1.0.5+20170501</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Deployment Manager v1.0.4+20161209</a>
+        <a href=".." class="icon icon-home"> Deployment Manager v1.0.5+20170501</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -253,7 +253,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Deployment Manager v1.0.4+20161209</a>
+        <a href="..">Deployment Manager v1.0.5+20170501</a>
       </nav>
 
       
@@ -336,6 +336,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
     config:
       content: string
   update:
+    description: string
     manifest: string
 
 </code></pre>
@@ -363,7 +364,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <em> <code>operation    client-operation-id=accusam</code>
     - [Output Only] Reserved for future use.
 </em> <code>creation-timestamp=takimata</code>
-    - [Output Only] Creation timestamp in RFC3339 text format.
+    - [Deprecated] This field is deprecated.
 <em> <code>description=justo</code>
     - [Output Only] A textual description of the operation, which is set when the operation is created.
 </em> <code>end-time=amet.</code>
@@ -418,8 +419,12 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
-<p><code>...update    manifest=aliquyam</code></p>
+<p><code>...update    description=aliquyam</code></p>
 <ul>
+<li>[Output Only] An optional user-provided description of the deployment after the current update has been applied.</li>
+</ul>
+</li>
+<li><code>manifest=sea</code><ul>
 <li>[Output Only] URL of the manifest representing the update configuration of this deployment.</li>
 </ul>
 </li>

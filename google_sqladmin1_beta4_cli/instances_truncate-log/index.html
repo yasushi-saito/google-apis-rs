@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Truncate Log - SQL Admin v1.0.4+20161213</title>
+  <title>Truncate Log - SQL Admin v1.0.5+20170502</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> SQL Admin v1.0.4+20161213</a>
+        <a href=".." class="icon icon-home"> SQL Admin v1.0.5+20170502</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -276,6 +276,11 @@
                 <li class="toctree-l3"><a href="#required-scalar-arguments">Required Scalar Arguments</a></li>
                 
             
+                <li class="toctree-l3"><a href="#required-request-value">Required Request Value</a></li>
+                
+                    <li><a class="toctree-l4" href="#about-cursors">About Cursors</a></li>
+                
+            
                 <li class="toctree-l3"><a href="#optional-output-flags">Optional Output Flags</a></li>
                 
             
@@ -423,7 +428,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">SQL Admin v1.0.4+20161213</a>
+        <a href="..">SQL Admin v1.0.5+20170502</a>
       </nav>
 
       
@@ -471,10 +476,36 @@ You can set the scope for this method like this: <code>sqladmin1-beta4 --scope &
 <li>Cloud SQL instance ID. This does not include the project ID.</li>
 </ul>
 </li>
-<li><strong>&lt;log-type&gt;</strong> <em>(string)</em><ul>
-<li>The type of Log Table to truncate. Valid values are MYSQL_GENERAL_TABLE and MYSQL_SLOW_TABLE</li>
+</ul>
+<h1 id="required-request-value">Required Request Value</h1>
+<p>The request value is a data-structure with various fields. Each field may be a simple scalar or another data-structure.
+In the latter case it is advised to set the field-cursor to the data-structure's field to specify values more concisely.</p>
+<p>For example, a structure like this:</p>
+<pre><code>InstancesTruncateLogRequest:
+  truncate-log-context:
+    kind: string
+    log-type: string
+
+</code></pre>
+
+<p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
+<ul>
+<li><code>-r .truncate-log-context    kind=accusam</code><ul>
+<li>This is always sql#truncateLogContext.</li>
 </ul>
 </li>
+<li><code>log-type=dolores</code><ul>
+<li>The type of log to truncate. Valid values are MYSQL_GENERAL_TABLE and MYSQL_SLOW_TABLE.</li>
+</ul>
+</li>
+</ul>
+<h3 id="about-cursors">About Cursors</h3>
+<p>The cursor position is key to comfortably set complex nested structures. The following rules apply:</p>
+<ul>
+<li>The cursor position is always set relative to the current one, unless the field name starts with the <code>.</code> character. Fields can be nested such as in <code>-r f.s.o</code> .</li>
+<li>The cursor position is set relative to the top-level structure if it starts with <code>.</code>, e.g. <code>-r .s.s</code></li>
+<li>You can also set nested fields without setting the cursor explicitly. For example, to set a value relative to the current cursor position, you would specify <code>-r struct.sub_struct=bar</code>.</li>
+<li>You can move the cursor one level up by using <code>..</code>. Each additional <code>.</code> moves it up one additional level. E.g. <code>...</code> would go three levels up.</li>
 </ul>
 <h1 id="optional-output-flags">Optional Output Flags</h1>
 <p>The method's return value a JSON encoded structure, which will be written to standard output by default.</p>

@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>List - Android Enterprise v1.0.4+20161207</title>
+  <title>List - Android Enterprise v1.0.5+20170516</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Android Enterprise v1.0.4+20161207</a>
+        <a href=".." class="icon icon-home"> Android Enterprise v1.0.5+20170516</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -51,99 +51,6 @@
         <a class="" href="..">Home</a>
         
     </li>
-<li>
-          
-            <li>
-    <ul class="subnav">
-    <li><span>Collections</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../collections_delete/">Delete</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../collections_get/">Get</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../collections_insert/">Insert</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../collections_list/">List</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../collections_patch/">Patch</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../collections_update/">Update</a>
-        
-    </li>
-
-        
-    </ul>
-<li>
-          
-            <li>
-    <ul class="subnav">
-    <li><span>Collectionviewers</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../collectionviewers_delete/">Delete</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../collectionviewers_get/">Get</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../collectionviewers_list/">List</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../collectionviewers_patch/">Patch</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../collectionviewers_update/">Update</a>
-        
-    </li>
-
-        
-    </ul>
 <li>
           
             <li>
@@ -599,13 +506,6 @@
     </li>
 
         
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../products_update-permissions/">Update Permissions</a>
-        
-    </li>
-
-        
     </ul>
 <li>
           
@@ -833,7 +733,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Android Enterprise v1.0.4+20161207</a>
+        <a href="..">Android Enterprise v1.0.5+20170516</a>
       </nav>
 
       
@@ -897,9 +797,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p approved=boolean</strong></p>
+<p><strong>-p token=string</strong></p>
 <ul>
-<li>Specifies whether to search among all products (false) or among only products that have been approved (true). Only &#34;true&#34; is supported, and should be specified.</li>
+<li>A pagination token is contained in a request&#39;&#39;s response when there are more products. The token can be used in a subsequent request to obtain more products, and so forth. This parameter cannot be used in the initial request.</li>
 </ul>
 </li>
 <li>
@@ -909,15 +809,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p query=string</strong></p>
+<p><strong>-p approved=boolean</strong></p>
 <ul>
-<li>The search query as typed in the Google Play Store search box. If omitted, all approved apps will be returned (using the pagination parameters), including apps that are not available in the store (e.g. unpublished apps).</li>
+<li>Specifies whether to search among all products (false) or among only products that have been approved (true). Only &#34;true&#34; is supported, and should be specified.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p token=string</strong></p>
+<p><strong>-p query=string</strong></p>
 <ul>
-<li>A pagination token is contained in a requests response when there are more products. The token can be used in a subsequent request to obtain more products, and so forth. This parameter cannot be used in the initial request.</li>
+<li>The search query as typed in the Google Play store search box. If omitted, all approved apps will be returned (using the pagination parameters), including apps that are not available in the store (e.g. unpublished apps).</li>
 </ul>
 </li>
 </ul>
