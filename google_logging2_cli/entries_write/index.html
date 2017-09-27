@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Write - Logging v1.0.5+20170516</title>
+  <title>Write - Logging v1.0.6+20170918</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Logging v1.0.5+20170516</a>
+        <a href=".." class="icon icon-home"> Logging v1.0.6+20170918</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -45,331 +45,315 @@
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
 	<ul class="current">
+	  
           
-            <li>
-    <li class="toctree-l1 ">
-        <a class="" href="..">Home</a>
-        
-    </li>
-<li>
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Home</a>
+	    </li>
           
-            <li>
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Billing Accounts</span>
     <ul class="subnav">
-    <li><span>Billing Accounts</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../billing-accounts_logs-delete/">Logs Delete</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../billing-accounts_logs-list/">Logs List</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../billing-accounts_sinks-create/">Sinks Create</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../billing-accounts_sinks-delete/">Sinks Delete</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../billing-accounts_sinks-get/">Sinks Get</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../billing-accounts_sinks-list/">Sinks List</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../billing-accounts_sinks-update/">Sinks Update</a>
-        
-    </li>
-
-        
+                <li class="">
+                    
+    <a class="" href="../billing-accounts_exclusions-create/">Exclusions Create</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../billing-accounts_exclusions-delete/">Exclusions Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../billing-accounts_exclusions-get/">Exclusions Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../billing-accounts_exclusions-list/">Exclusions List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../billing-accounts_exclusions-patch/">Exclusions Patch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../billing-accounts_logs-delete/">Logs Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../billing-accounts_logs-list/">Logs List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../billing-accounts_sinks-create/">Sinks Create</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../billing-accounts_sinks-delete/">Sinks Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../billing-accounts_sinks-get/">Sinks Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../billing-accounts_sinks-list/">Sinks List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../billing-accounts_sinks-patch/">Sinks Patch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../billing-accounts_sinks-update/">Sinks Update</a>
+                </li>
     </ul>
-<li>
+	    </li>
           
-            <li>
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Entries</span>
     <ul class="subnav">
-    <li><span>Entries</span></li>
+                <li class="">
+                    
+    <a class="" href="../entries_list/">List</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">Write</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#scopes">Scopes</a></li>
+    
 
+    <li class="toctree-l3"><a href="#required-request-value">Required Request Value</a></li>
+    
+        <ul>
         
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../entries_list/">List</a>
+            <li><a class="toctree-l4" href="#about-cursors">About Cursors</a></li>
         
-    </li>
+        </ul>
+    
 
-        
-            
-    <li class="toctree-l1 current">
-        <a class="current" href="./">Write</a>
-        
-            <ul>
-            
-                <li class="toctree-l3"><a href="#scopes">Scopes</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#required-request-value">Required Request Value</a></li>
-                
-                    <li><a class="toctree-l4" href="#about-cursors">About Cursors</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#optional-output-flags">Optional Output Flags</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#optional-general-properties">Optional General Properties</a></li>
-                
-            
-            </ul>
-        
-    </li>
+    <li class="toctree-l3"><a href="#optional-output-flags">Optional Output Flags</a></li>
+    
 
-        
+    <li class="toctree-l3"><a href="#optional-general-properties">Optional General Properties</a></li>
+    
+
     </ul>
-<li>
+                </li>
+    </ul>
+	    </li>
           
-            <li>
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Folders</span>
     <ul class="subnav">
-    <li><span>Folders</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../folders_logs-delete/">Logs Delete</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../folders_logs-list/">Logs List</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../folders_sinks-create/">Sinks Create</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../folders_sinks-delete/">Sinks Delete</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../folders_sinks-get/">Sinks Get</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../folders_sinks-list/">Sinks List</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../folders_sinks-update/">Sinks Update</a>
-        
-    </li>
-
-        
+                <li class="">
+                    
+    <a class="" href="../folders_exclusions-create/">Exclusions Create</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../folders_exclusions-delete/">Exclusions Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../folders_exclusions-get/">Exclusions Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../folders_exclusions-list/">Exclusions List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../folders_exclusions-patch/">Exclusions Patch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../folders_logs-delete/">Logs Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../folders_logs-list/">Logs List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../folders_sinks-create/">Sinks Create</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../folders_sinks-delete/">Sinks Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../folders_sinks-get/">Sinks Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../folders_sinks-list/">Sinks List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../folders_sinks-patch/">Sinks Patch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../folders_sinks-update/">Sinks Update</a>
+                </li>
     </ul>
-<li>
+	    </li>
           
-            <li>
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Monitored Resource Descriptors</span>
     <ul class="subnav">
-    <li><span>Monitored Resource Descriptors</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../monitored-resource-descriptors_list/">List</a>
-        
-    </li>
-
-        
+                <li class="">
+                    
+    <a class="" href="../monitored-resource-descriptors_list/">List</a>
+                </li>
     </ul>
-<li>
+	    </li>
           
-            <li>
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Organizations</span>
     <ul class="subnav">
-    <li><span>Organizations</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../organizations_logs-delete/">Logs Delete</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../organizations_logs-list/">Logs List</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../organizations_sinks-create/">Sinks Create</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../organizations_sinks-delete/">Sinks Delete</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../organizations_sinks-get/">Sinks Get</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../organizations_sinks-list/">Sinks List</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../organizations_sinks-update/">Sinks Update</a>
-        
-    </li>
-
-        
+                <li class="">
+                    
+    <a class="" href="../organizations_exclusions-create/">Exclusions Create</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../organizations_exclusions-delete/">Exclusions Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../organizations_exclusions-get/">Exclusions Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../organizations_exclusions-list/">Exclusions List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../organizations_exclusions-patch/">Exclusions Patch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../organizations_logs-delete/">Logs Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../organizations_logs-list/">Logs List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../organizations_sinks-create/">Sinks Create</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../organizations_sinks-delete/">Sinks Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../organizations_sinks-get/">Sinks Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../organizations_sinks-list/">Sinks List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../organizations_sinks-patch/">Sinks Patch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../organizations_sinks-update/">Sinks Update</a>
+                </li>
     </ul>
-<li>
+	    </li>
           
-            <li>
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Projects</span>
     <ul class="subnav">
-    <li><span>Projects</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../projects_logs-delete/">Logs Delete</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../projects_logs-list/">Logs List</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../projects_metrics-create/">Metrics Create</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../projects_metrics-delete/">Metrics Delete</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../projects_metrics-get/">Metrics Get</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../projects_metrics-list/">Metrics List</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../projects_metrics-update/">Metrics Update</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../projects_sinks-create/">Sinks Create</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../projects_sinks-delete/">Sinks Delete</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../projects_sinks-get/">Sinks Get</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../projects_sinks-list/">Sinks List</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../projects_sinks-update/">Sinks Update</a>
-        
-    </li>
-
-        
+                <li class="">
+                    
+    <a class="" href="../projects_exclusions-create/">Exclusions Create</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_exclusions-delete/">Exclusions Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_exclusions-get/">Exclusions Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_exclusions-list/">Exclusions List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_exclusions-patch/">Exclusions Patch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_logs-delete/">Logs Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_logs-list/">Logs List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_metrics-create/">Metrics Create</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_metrics-delete/">Metrics Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_metrics-get/">Metrics Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_metrics-list/">Metrics List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_metrics-update/">Metrics Update</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_sinks-create/">Sinks Create</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_sinks-delete/">Sinks Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_sinks-get/">Sinks Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_sinks-list/">Sinks List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_sinks-patch/">Sinks Patch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_sinks-update/">Sinks Update</a>
+                </li>
     </ul>
-<li>
+	    </li>
           
         </ul>
       </div>
@@ -381,7 +365,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Logging v1.0.5+20170516</a>
+        <a href="..">Logging v1.0.6+20170918</a>
       </nav>
 
       
@@ -410,7 +394,7 @@
           <div role="main">
             <div class="section">
               
-                <p>Writes log entries to Stackdriver Logging.</p>
+                <p>Log entry resourcesWrites log entries to Stackdriver Logging. This API method is the only way to send log entries to Stackdriver Logging. This method is used, directly or indirectly, by the Stackdriver Logging agent (fluentd) and all logging libraries configured to use Stackdriver Logging.</p>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for at least one of the following scopes to make a valid call:</p>
 <ul>
@@ -436,12 +420,12 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    labels=key=justo</code><ul>
+<li><code>-r .    labels=key=elitr</code><ul>
 <li>Optional. Default labels that are added to the labels field of all log entries in entries. If a log entry already has a label with the same key as a label in this parameter, then the log entry&#39;s label is not changed. See LogEntry.</li>
 <li>the value will be associated with the given <code>key</code></li>
 </ul>
 </li>
-<li><code>log-name=et</code><ul>
+<li><code>log-name=amet</code><ul>
 <li>Optional. A default log resource name that is assigned to all log entries in entries that do not specify a value for log_name:
     &#34;projects/[PROJECT_ID]/logs/[LOG_ID]&#34;
     &#34;organizations/[ORGANIZATION_ID]/logs/[LOG_ID]&#34;
@@ -450,16 +434,16 @@ In the latter case it is advised to set the field-cursor to the data-structure's
     [LOG_ID] must be URL-encoded. For example, &#34;projects/my-project-id/logs/syslog&#34; or &#34;organizations/1234567890/logs/cloudresourcemanager.googleapis.com%2Factivity&#34;. For more information about log names, see LogEntry.</li>
 </ul>
 </li>
-<li><code>partial-success=true</code><ul>
+<li><code>partial-success=false</code><ul>
 <li>Optional. Whether valid entries should be written even if some other entries fail due to INVALID_ARGUMENT or PERMISSION_DENIED errors. If any entry is not written, then the response status is the error associated with one of the failed entries and the response includes error details keyed by the entries&#39; zero-based index in the entries.write method.</li>
 </ul>
 </li>
-<li><code>resource    labels=key=diam</code><ul>
+<li><code>resource    labels=key=labore</code><ul>
 <li>Required. Values for all of the labels listed in the associated monitored resource descriptor. For example, Compute Engine VM instances use the labels &#34;project_id&#34;, &#34;instance_id&#34;, and &#34;zone&#34;.</li>
 <li>the value will be associated with the given <code>key</code></li>
 </ul>
 </li>
-<li><code>type=ipsum</code><ul>
+<li><code>type=eirmod</code><ul>
 <li>Required. The monitored resource type. This field must match the type field of a MonitoredResourceDescriptor object. For example, the type of a Compute Engine VM instance is gce_instance.</li>
 </ul>
 </li>
@@ -572,7 +556,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../folders_logs-delete/" class="btn btn-neutral float-right" title="Logs Delete">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../folders_exclusions-create/" class="btn btn-neutral float-right" title="Exclusions Create">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="../entries_list/" class="btn btn-neutral" title="List"><span class="icon icon-circle-arrow-left"></span> Previous</a>
@@ -602,13 +586,13 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   <div class="rst-versions" role="note" style="cursor: pointer">
     <span class="rst-current-version" data-toggle="rst-current-version">
       
-          <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/logging2-cli" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+          <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/logging2-cli" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
         <span><a href="../entries_list/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../folders_logs-delete/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../folders_exclusions-create/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

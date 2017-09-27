@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>List - reports v1.0.5+20170320</title>
+  <title>List - reports v1.0.6+20170622</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> reports v1.0.5+20170320</a>
+        <a href=".." class="icon icon-home"> reports v1.0.6+20170622</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -45,99 +45,78 @@
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
 	<ul class="current">
+	  
           
-            <li>
-    <li class="toctree-l1 ">
-        <a class="" href="..">Home</a>
-        
-    </li>
-<li>
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Home</a>
+	    </li>
           
-            <li>
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Activities</span>
     <ul class="subnav">
-    <li><span>Activities</span></li>
-
-        
-            
-    <li class="toctree-l1 current">
-        <a class="current" href="./">List</a>
-        
-            <ul>
-            
-                <li class="toctree-l3"><a href="#scopes">Scopes</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#required-scalar-arguments">Required Scalar Arguments</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#optional-output-flags">Optional Output Flags</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#optional-method-properties">Optional Method Properties</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#optional-general-properties">Optional General Properties</a></li>
-                
-            
-            </ul>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../activities_watch/">Watch</a>
-        
-    </li>
-
-        
-    </ul>
-<li>
-          
-            <li>
+                <li class=" current">
+                    
+    <a class="current" href="./">List</a>
     <ul class="subnav">
-    <li><span>Channels</span></li>
-
-        
             
-    <li class="toctree-l1 ">
-        <a class="" href="../channels_stop/">Stop</a>
-        
-    </li>
+    <li class="toctree-l3"><a href="#scopes">Scopes</a></li>
+    
 
-        
+    <li class="toctree-l3"><a href="#required-scalar-arguments">Required Scalar Arguments</a></li>
+    
+
+    <li class="toctree-l3"><a href="#optional-output-flags">Optional Output Flags</a></li>
+    
+
+    <li class="toctree-l3"><a href="#optional-method-properties">Optional Method Properties</a></li>
+    
+
+    <li class="toctree-l3"><a href="#optional-general-properties">Optional General Properties</a></li>
+    
+
     </ul>
-<li>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../activities_watch/">Watch</a>
+                </li>
+    </ul>
+	    </li>
           
-            <li>
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Channels</span>
     <ul class="subnav">
-    <li><span>Customer Usage Reports</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../customer-usage-reports_get/">Get</a>
-        
-    </li>
-
-        
+                <li class="">
+                    
+    <a class="" href="../channels_stop/">Stop</a>
+                </li>
     </ul>
-<li>
+	    </li>
           
-            <li>
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Customer Usage Reports</span>
     <ul class="subnav">
-    <li><span>User Usage Report</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../user-usage-report_get/">Get</a>
-        
-    </li>
-
-        
+                <li class="">
+                    
+    <a class="" href="../customer-usage-reports_get/">Get</a>
+                </li>
     </ul>
-<li>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">User Usage Report</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../user-usage-report_get/">Get</a>
+                </li>
+    </ul>
+	    </li>
           
         </ul>
       </div>
@@ -149,7 +128,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">reports v1.0.5+20170320</a>
+        <a href="..">reports v1.0.6+20170622</a>
       </nav>
 
       
@@ -211,6 +190,18 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
+<p><strong>-p actor-ip-address=string</strong></p>
+<ul>
+<li>IP Address of host where the event was performed. Supports both IPv4 and IPv6 addresses.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p page-token=string</strong></p>
+<ul>
+<li>Token to specify next page.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p customer-id=string</strong></p>
 <ul>
 <li>Represents the customer for which the data is to be fetched.</li>
@@ -223,9 +214,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p page-token=string</strong></p>
+<p><strong>-p event-name=string</strong></p>
 <ul>
-<li>Token to specify next page.</li>
+<li>Name of the event being queried.</li>
 </ul>
 </li>
 <li>
@@ -235,27 +226,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p event-name=string</strong></p>
+<p><strong>-p filters=string</strong></p>
 <ul>
-<li>Name of the event being queried.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p actor-ip-address=string</strong></p>
-<ul>
-<li>IP Address of host where the event was performed. Supports both IPv4 and IPv6 addresses.</li>
+<li>Event parameters in the form [parameter1 name][operator][parameter1 value],[parameter2 name][operator][parameter2 value],...</li>
 </ul>
 </li>
 <li>
 <p><strong>-p max-results=integer</strong></p>
 <ul>
 <li>Number of activity records to be shown in each page.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p filters=string</strong></p>
-<ul>
-<li>Event parameters in the form [parameter1 name][operator][parameter1 value],[parameter2 name][operator][parameter2 value],...</li>
 </ul>
 </li>
 </ul>
@@ -342,7 +321,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
   <div class="rst-versions" role="note" style="cursor: pointer">
     <span class="rst-current-version" data-toggle="rst-current-version">
       
-          <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/admin1_reports-cli" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+          <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/admin1_reports-cli" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
         <span><a href=".." style="color: #fcfcfc;">&laquo; Previous</a></span>

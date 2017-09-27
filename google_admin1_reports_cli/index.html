@@ -8,7 +8,7 @@
   <meta name="description" content="A complete library to interact with reports (protocol reports_v1)">
   
   <link rel="shortcut icon" href="./img/favicon.ico">
-  <title>Home - reports v1.0.5+20170320</title>
+  <title>Home - reports v1.0.6+20170622</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="./css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href="." class="icon icon-home"> reports v1.0.5+20170320</a>
+        <a href="." class="icon icon-home"> reports v1.0.6+20170622</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -45,102 +45,81 @@
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
 	<ul class="current">
+	  
           
-            <li>
-    <li class="toctree-l1 current">
-        <a class="current" href=".">Home</a>
-        
-            <ul>
-            
-                <li class="toctree-l3"><a href="#installation-and-source-code">Installation and Source Code</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#usage">Usage</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#configuration">Configuration</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#authentication">Authentication</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#application-secrets">Application Secrets</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#debugging">Debugging</a></li>
-                
-            
-            </ul>
-        
-    </li>
-<li>
-          
-            <li>
+            <li class="toctree-l1 current">
+		
+    <a class="current" href=".">Home</a>
     <ul class="subnav">
-    <li><span>Activities</span></li>
-
-        
             
-    <li class="toctree-l1 ">
-        <a class="" href="activities_list/">List</a>
-        
-    </li>
+    <li class="toctree-l2"><a href="#installation-and-source-code">Installation and Source Code</a></li>
+    
 
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="activities_watch/">Watch</a>
-        
-    </li>
+    <li class="toctree-l2"><a href="#usage">Usage</a></li>
+    
 
-        
+    <li class="toctree-l2"><a href="#configuration">Configuration</a></li>
+    
+
+    <li class="toctree-l2"><a href="#authentication">Authentication</a></li>
+    
+
+    <li class="toctree-l2"><a href="#application-secrets">Application Secrets</a></li>
+    
+
+    <li class="toctree-l2"><a href="#debugging">Debugging</a></li>
+    
+
     </ul>
-<li>
+	    </li>
           
-            <li>
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Activities</span>
     <ul class="subnav">
-    <li><span>Channels</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="channels_stop/">Stop</a>
-        
-    </li>
-
-        
+                <li class="">
+                    
+    <a class="" href="activities_list/">List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="activities_watch/">Watch</a>
+                </li>
     </ul>
-<li>
+	    </li>
           
-            <li>
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Channels</span>
     <ul class="subnav">
-    <li><span>Customer Usage Reports</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="customer-usage-reports_get/">Get</a>
-        
-    </li>
-
-        
+                <li class="">
+                    
+    <a class="" href="channels_stop/">Stop</a>
+                </li>
     </ul>
-<li>
+	    </li>
           
-            <li>
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Customer Usage Reports</span>
     <ul class="subnav">
-    <li><span>User Usage Report</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="user-usage-report_get/">Get</a>
-        
-    </li>
-
-        
+                <li class="">
+                    
+    <a class="" href="customer-usage-reports_get/">Get</a>
+                </li>
     </ul>
-<li>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">User Usage Report</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="user-usage-report_get/">Get</a>
+                </li>
+    </ul>
+	    </li>
           
         </ul>
       </div>
@@ -152,7 +131,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href=".">reports v1.0.5+20170320</a>
+        <a href=".">reports v1.0.6+20170622</a>
       </nav>
 
       
@@ -196,7 +175,7 @@ capabilities. Errors will be printed to standard error, and cause the program's 
 
 <p>Find the source code <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/admin1_reports-cli">on github</a>.</p>
 <h1 id="usage">Usage</h1>
-<p>This documentation was generated from the <em>reports</em> API at revision <em>20170320</em>. The CLI is at version <em>1.0.5</em>.</p>
+<p>This documentation was generated from the <em>reports</em> API at revision <em>20170622</em>. The CLI is at version <em>1.0.6</em>.</p>
 <pre><code class="bash">admin1-reports [options]
         activities
                 list &lt;user-key&gt; &lt;application-name&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
@@ -299,7 +278,7 @@ issue at hand.</p>
   <div class="rst-versions" role="note" style="cursor: pointer">
     <span class="rst-current-version" data-toggle="rst-current-version">
       
-          <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/admin1_reports-cli" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+          <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/admin1_reports-cli" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
       
@@ -313,6 +292,6 @@ issue at hand.</p>
 </html>
 
 <!--
-MkDocs version : 0.16.1
-Build Date UTC : 2017-05-26 14:36:05
+MkDocs version : 0.16.3
+Build Date UTC : 2017-09-27 12:58:53
 -->

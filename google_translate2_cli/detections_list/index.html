@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>List - translate v1.0.5+20160627</title>
+  <title>List - Translate v1.0.6+20170525</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> translate v1.0.5+20160627</a>
+        <a href=".." class="icon icon-home"> Translate v1.0.6+20170525</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -45,71 +45,68 @@
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
 	<ul class="current">
+	  
           
-            <li>
-    <li class="toctree-l1 ">
-        <a class="" href="..">Home</a>
-        
-    </li>
-<li>
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Home</a>
+	    </li>
           
-            <li>
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Detections</span>
     <ul class="subnav">
-    <li><span>Detections</span></li>
-
-        
-            
-    <li class="toctree-l1 current">
-        <a class="current" href="./">List</a>
-        
-            <ul>
-            
-                <li class="toctree-l3"><a href="#required-scalar-argument">Required Scalar Argument</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#optional-output-flags">Optional Output Flags</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#optional-general-properties">Optional General Properties</a></li>
-                
-            
-            </ul>
-        
-    </li>
-
-        
-    </ul>
-<li>
-          
-            <li>
+                <li class="">
+                    
+    <a class="" href="../detections_detect/">Detect</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">List</a>
     <ul class="subnav">
-    <li><span>Languages</span></li>
-
-        
             
-    <li class="toctree-l1 ">
-        <a class="" href="../languages_list/">List</a>
-        
-    </li>
+    <li class="toctree-l3"><a href="#scopes">Scopes</a></li>
+    
 
-        
+    <li class="toctree-l3"><a href="#required-scalar-argument">Required Scalar Argument</a></li>
+    
+
+    <li class="toctree-l3"><a href="#optional-output-flags">Optional Output Flags</a></li>
+    
+
+    <li class="toctree-l3"><a href="#optional-general-properties">Optional General Properties</a></li>
+    
+
     </ul>
-<li>
+                </li>
+    </ul>
+	    </li>
           
-            <li>
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Languages</span>
     <ul class="subnav">
-    <li><span>Translations</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../translations_list/">List</a>
-        
-    </li>
-
-        
+                <li class="">
+                    
+    <a class="" href="../languages_list/">List</a>
+                </li>
     </ul>
-<li>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Translations</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../translations_list/">List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../translations_translate/">Translate</a>
+                </li>
+    </ul>
+	    </li>
           
         </ul>
       </div>
@@ -121,7 +118,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">translate v1.0.5+20160627</a>
+        <a href="..">Translate v1.0.6+20170525</a>
       </nav>
 
       
@@ -150,11 +147,20 @@
           <div role="main">
             <div class="section">
               
-                <p>Detect the language of text.</p>
+                <p>Detects the language of text within a request.</p>
+<h1 id="scopes">Scopes</h1>
+<p>You will need authorization for at least one of the following scopes to make a valid call:</p>
+<ul>
+<li><em>https://www.googleapis.com/auth/cloud-translation</em></li>
+<li><em>https://www.googleapis.com/auth/cloud-platform</em></li>
+</ul>
+<p>If unset, the scope for this method defaults to <em>https://www.googleapis.com/auth/cloud-platform</em>.
+You can set the scope for this method like this: <code>translate2 --scope &lt;scope&gt; detections list ...</code></p>
 <h1 id="required-scalar-argument">Required Scalar Argument</h1>
 <ul>
 <li><strong>&lt;q&gt;...</strong> <em>(string)</em><ul>
-<li>The text to detect</li>
+<li>The input text upon which to perform language detection. Repeat this
+    parameter to perform language detection on multiple text inputs.</li>
 <li>This property can be specified one or more times</li>
 </ul>
 </li>
@@ -174,9 +180,33 @@
 <p>The following properties can configure any call, and are not specific to this method.</p>
 <ul>
 <li>
+<p><strong>-p $-xgafv=string</strong></p>
+<ul>
+<li>V1 error format.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p access-token=string</strong></p>
+<ul>
+<li>OAuth access token.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p alt=string</strong></p>
 <ul>
-<li>Data format for the response.</li>
+<li>Data format for response.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p bearer-token=string</strong></p>
+<ul>
+<li>OAuth bearer token.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p callback=string</strong></p>
+<ul>
+<li>JSONP</li>
 </ul>
 </li>
 <li>
@@ -198,6 +228,12 @@
 </ul>
 </li>
 <li>
+<p><strong>-p pp=boolean</strong></p>
+<ul>
+<li>Pretty-print response.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p pretty-print=boolean</strong></p>
 <ul>
 <li>Returns response with indentations and line breaks.</li>
@@ -210,9 +246,15 @@
 </ul>
 </li>
 <li>
-<p><strong>-p user-ip=string</strong></p>
+<p><strong>-p upload-type=string</strong></p>
 <ul>
-<li>IP address of the site where the request originates. Use this if you want to enforce per-user limits.</li>
+<li>Legacy upload protocol for media (e.g. &#34;media&#34;, &#34;multipart&#34;).</li>
+</ul>
+</li>
+<li>
+<p><strong>-p upload-protocol=string</strong></p>
+<ul>
+<li>Upload protocol for media (e.g. &#34;raw&#34;, &#34;multipart&#34;).</li>
 </ul>
 </li>
 </ul>
@@ -226,7 +268,7 @@
         <a href="../languages_list/" class="btn btn-neutral float-right" title="List">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href=".." class="btn btn-neutral" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../detections_detect/" class="btn btn-neutral" title="Detect"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -253,10 +295,10 @@
   <div class="rst-versions" role="note" style="cursor: pointer">
     <span class="rst-current-version" data-toggle="rst-current-version">
       
-          <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/translate2-cli" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+          <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/translate2-cli" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href=".." style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../detections_detect/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
         <span style="margin-left: 15px"><a href="../languages_list/" style="color: #fcfcfc">Next &raquo;</a></span>

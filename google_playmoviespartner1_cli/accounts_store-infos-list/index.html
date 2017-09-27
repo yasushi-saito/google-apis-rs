@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Store Infos List - Play Movies v1.0.5+20170516</title>
+  <title>Store Infos List - Play Movies v1.0.6+20170919</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Play Movies v1.0.5+20170516</a>
+        <a href=".." class="icon icon-home"> Play Movies v1.0.6+20170919</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -45,82 +45,61 @@
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
 	<ul class="current">
+	  
           
-            <li>
-    <li class="toctree-l1 ">
-        <a class="" href="..">Home</a>
-        
-    </li>
-<li>
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Home</a>
+	    </li>
           
-            <li>
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Accounts</span>
     <ul class="subnav">
-    <li><span>Accounts</span></li>
+                <li class="">
+                    
+    <a class="" href="../accounts_avails-get/">Avails Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../accounts_avails-list/">Avails List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../accounts_orders-get/">Orders Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../accounts_orders-list/">Orders List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../accounts_store-infos-country-get/">Store Infos Country Get</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">Store Infos List</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#scopes">Scopes</a></li>
+    
 
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../accounts_avails-get/">Avails Get</a>
-        
-    </li>
+    <li class="toctree-l3"><a href="#required-scalar-argument">Required Scalar Argument</a></li>
+    
 
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../accounts_avails-list/">Avails List</a>
-        
-    </li>
+    <li class="toctree-l3"><a href="#optional-output-flags">Optional Output Flags</a></li>
+    
 
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../accounts_orders-get/">Orders Get</a>
-        
-    </li>
+    <li class="toctree-l3"><a href="#optional-method-properties">Optional Method Properties</a></li>
+    
 
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../accounts_orders-list/">Orders List</a>
-        
-    </li>
+    <li class="toctree-l3"><a href="#optional-general-properties">Optional General Properties</a></li>
+    
 
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../accounts_store-infos-country-get/">Store Infos Country Get</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 current">
-        <a class="current" href="./">Store Infos List</a>
-        
-            <ul>
-            
-                <li class="toctree-l3"><a href="#scopes">Scopes</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#required-scalar-argument">Required Scalar Argument</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#optional-output-flags">Optional Output Flags</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#optional-method-properties">Optional Method Properties</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#optional-general-properties">Optional General Properties</a></li>
-                
-            
-            </ul>
-        
-    </li>
-
-        
     </ul>
-<li>
+                </li>
+    </ul>
+	    </li>
           
         </ul>
       </div>
@@ -132,7 +111,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Play Movies v1.0.5+20170516</a>
+        <a href="..">Play Movies v1.0.6+20170919</a>
       </nav>
 
       
@@ -192,15 +171,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p season-ids=string</strong></p>
-<ul>
-<li>Filter StoreInfos that match any of the given <code>season_id</code>s.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p pph-names=string</strong></p>
 <ul>
 <li>See <em>List methods rules</em> for info about this field.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p season-ids=string</strong></p>
+<ul>
+<li>Filter StoreInfos that match any of the given <code>season_id</code>s.</li>
 </ul>
 </li>
 <li>
@@ -212,16 +191,22 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
+<p><strong>-p video-ids=string</strong></p>
+<ul>
+<li>Filter StoreInfos that match any of the given <code>video_id</code>s.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p studio-names=string</strong></p>
+<ul>
+<li>See <em>List methods rules</em> for info about this field.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p name=string</strong></p>
 <ul>
 <li>Filter that matches StoreInfos with a <code>name</code> or <code>show_name</code>
     that contains the given case-insensitive name.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p video-ids=string</strong></p>
-<ul>
-<li>Filter StoreInfos that match any of the given <code>video_id</code>s.</li>
 </ul>
 </li>
 <li>
@@ -240,12 +225,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <p><strong>-p mids=string</strong></p>
 <ul>
 <li>Filter StoreInfos that match any of the given <code>mid</code>s.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p studio-names=string</strong></p>
-<ul>
-<li>See <em>List methods rules</em> for info about this field.</li>
 </ul>
 </li>
 <li>
@@ -373,7 +352,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
   <div class="rst-versions" role="note" style="cursor: pointer">
     <span class="rst-current-version" data-toggle="rst-current-version">
       
-          <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/playmoviespartner1-cli" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+          <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/playmoviespartner1-cli" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
         <span><a href="../accounts_store-infos-country-get/" style="color: #fcfcfc;">&laquo; Previous</a></span>

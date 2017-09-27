@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Locations Queues Patch - Cloud Tasks v1.0.6+20170926</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Locations Queues Patch";
+    var mkdocs_page_input_path = "projects_locations-queues-patch.md";
+    var mkdocs_page_url = "/projects_locations-queues-patch/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Cloud Tasks v1.0.6+20170926</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Projects</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../projects_locations-get/">Locations Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_locations-list/">Locations List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_locations-queues-create/">Locations Queues Create</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_locations-queues-delete/">Locations Queues Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_locations-queues-get/">Locations Queues Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_locations-queues-get-iam-policy/">Locations Queues Get Iam Policy</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_locations-queues-list/">Locations Queues List</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">Locations Queues Patch</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#scopes">Scopes</a></li>
+    
+
+    <li class="toctree-l3"><a href="#required-scalar-argument">Required Scalar Argument</a></li>
+    
+
+    <li class="toctree-l3"><a href="#required-request-value">Required Request Value</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#about-cursors">About Cursors</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l3"><a href="#optional-output-flags">Optional Output Flags</a></li>
+    
+
+    <li class="toctree-l3"><a href="#optional-method-properties">Optional Method Properties</a></li>
+    
+
+    <li class="toctree-l3"><a href="#optional-general-properties">Optional General Properties</a></li>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_locations-queues-pause/">Locations Queues Pause</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_locations-queues-purge/">Locations Queues Purge</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_locations-queues-resume/">Locations Queues Resume</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_locations-queues-set-iam-policy/">Locations Queues Set Iam Policy</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_locations-queues-tasks-acknowledge/">Locations Queues Tasks Acknowledge</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_locations-queues-tasks-cancel-lease/">Locations Queues Tasks Cancel Lease</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_locations-queues-tasks-create/">Locations Queues Tasks Create</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_locations-queues-tasks-delete/">Locations Queues Tasks Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_locations-queues-tasks-get/">Locations Queues Tasks Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_locations-queues-tasks-list/">Locations Queues Tasks List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_locations-queues-tasks-pull/">Locations Queues Tasks Pull</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_locations-queues-tasks-renew-lease/">Locations Queues Tasks Renew Lease</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_locations-queues-tasks-run/">Locations Queues Tasks Run</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_locations-queues-test-iam-permissions/">Locations Queues Test Iam Permissions</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Cloud Tasks v1.0.6+20170926</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Projects &raquo;</li>
+        
+      
+    
+    <li>Locations Queues Patch</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/cloudtasks2_beta2-cli/edit/master/docs/projects_locations-queues-patch.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p>Updates a queue.</p>
+<p>This method creates the queue if it does not exist and updates
+the queue if it does exist.</p>
+<p>WARNING: This method is only available to whitelisted
+users. Using this method carries some risk. Read
+<a href="../cloud-tasks/docs/queue-yaml">Overview of Queue Management and queue.yaml</a>
+carefully and then sign up for
+<a href="https://goo.gl/Fe5mUy">whitelist access to this method</a>.</p>
+<h1 id="scopes">Scopes</h1>
+<p>You will need authorization for the <em>https://www.googleapis.com/auth/cloud-platform</em> scope to make a valid call.</p>
+<p>If unset, the scope for this method defaults to <em>https://www.googleapis.com/auth/cloud-platform</em>.
+You can set the scope for this method like this: <code>cloudtasks2-beta2 --scope &lt;scope&gt; projects locations-queues-patch ...</code></p>
+<h1 id="required-scalar-argument">Required Scalar Argument</h1>
+<ul>
+<li><strong>&lt;name&gt;</strong> <em>(string)</em><ul>
+<li>
+<p>The queue name.</p>
+<p>The queue name must have the following format:
+<code>projects/PROJECT_ID/locations/LOCATION_ID/queues/QUEUE_ID</code></p>
+<ul>
+<li><code>PROJECT_ID</code> can contain uppercase and lowercase letters,
+  numbers, hyphens, colons, and periods; that is, it must match
+  the regular expression: <code>[a-zA-Z\\d-:\\.]+</code>.</li>
+<li><code>QUEUE_ID</code> can contain uppercase and lowercase letters,
+  numbers, and hyphens; that is, it must match the regular
+  expression: <code>[a-zA-Z\\d-]+</code>. The maximum length is 100
+  characters.</li>
+</ul>
+<p>Caller-specified and required in CreateQueueRequest, after which
+it becomes output only.</p>
+<h1 id="required-request-value">Required Request Value</h1>
+</li>
+</ul>
+</li>
+</ul>
+<p>The request value is a data-structure with various fields. Each field may be a simple scalar or another data-structure.
+In the latter case it is advised to set the field-cursor to the data-structure's field to specify values more concisely.</p>
+<p>For example, a structure like this:</p>
+<pre><code>Queue:
+  app-engine-http-target:
+    app-engine-routing-override:
+      host: string
+      instance: string
+      service: string
+      version: string
+  app-engine-queue-config:
+    app-engine-routing-override:
+      host: string
+      instance: string
+      service: string
+      version: string
+  name: string
+  purge-time: string
+  queue-state: string
+  retry-config:
+    max-attempts: integer
+    max-backoff: string
+    max-doublings: integer
+    min-backoff: string
+    task-age-limit: string
+    unlimited-attempts: boolean
+  throttle-config:
+    max-burst-size: integer
+    max-outstanding-tasks: integer
+    max-tasks-dispatched-per-second: number
+
+</code></pre>
+
+<p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
+<ul>
+<li>
+<p><code>-r .app-engine-http-target.app-engine-routing-override    host=no</code></p>
+<ul>
+<li>
+<p>Output only.</p>
+<p>The host that the task is sent to. For more information, see
+<a href="../appengine/docs/standard/python/how-requests-are-routed">How Requests are Routed</a>.</p>
+<p>The host is constructed as:</p>
+<ul>
+<li>
+<p><code>host = [application_domain_name]</code>&lt;/br&gt;
+  <code>| [service] + &amp;#39;.&amp;#39; + [application_domain_name]</code>&lt;/br&gt;
+  <code>| [version] + &amp;#39;.&amp;#39; + [application_domain_name]</code>&lt;/br&gt;
+  <code>| [version_dot_service]+ &amp;#39;.&amp;#39; + [application_domain_name]</code>&lt;/br&gt;
+  <code>| [instance] + &amp;#39;.&amp;#39; + [application_domain_name]</code>&lt;/br&gt;
+  <code>| [instance_dot_service] + &amp;#39;.&amp;#39; + [application_domain_name]</code>&lt;/br&gt;
+  <code>| [instance_dot_version] + &amp;#39;.&amp;#39; + [application_domain_name]</code>&lt;/br&gt;
+  <code>| [instance_dot_version_dot_service] + &amp;#39;.&amp;#39; + [application_domain_name]</code></p>
+</li>
+<li>
+<p><code>application_domain_name</code> = The domain name of the app, for
+  example &lt;app-id&gt;.appspot.com, which is associated with the
+  queue&#39;s project ID. Some tasks which were created using the App Engine
+  SDK use a custom domain name.</p>
+</li>
+<li>
+<p><code>service =</code> AppEngineRouting.service</p>
+</li>
+<li>
+<p><code>version =</code> AppEngineRouting.version</p>
+</li>
+<li>
+<p><code>version_dot_service =</code>
+  AppEngineRouting.version <code>+ &amp;#39;.&amp;#39; +</code> AppEngineRouting.service</p>
+</li>
+<li>
+<p><code>instance =</code> AppEngineRouting.instance</p>
+</li>
+<li>
+<p><code>instance_dot_service =</code>
+  AppEngineRouting.instance <code>+ &amp;#39;.&amp;#39; +</code> AppEngineRouting.service</p>
+</li>
+<li>
+<p><code>instance_dot_version =</code>
+  AppEngineRouting.instance <code>+ &amp;#39;.&amp;#39; +</code> AppEngineRouting.version</p>
+</li>
+<li>
+<p><code>instance_dot_version_dot_service =</code>
+  AppEngineRouting.instance <code>+ &amp;#39;.&amp;#39; +</code>
+  AppEngineRouting.version <code>+ &amp;#39;.&amp;#39; +</code> AppEngineRouting.service</p>
+</li>
+</ul>
+<p>If AppEngineRouting.service is empty, then the task will be sent
+to the service which is the default service when the task is attempted.</p>
+<p>If AppEngineRouting.version is empty, then the task will be sent
+to the version which is the default version when the task is attempted.</p>
+<p>If AppEngineRouting.instance is empty, then the task will be sent
+to an instance which is available when the task is attempted.</p>
+<p>When AppEngineRouting.service is &#34;default&#34;,
+AppEngineRouting.version is &#34;default&#34;, and
+AppEngineRouting.instance is empty, AppEngineRouting.host is
+shortened to just the <code>application_domain_name</code>.</p>
+<p>If AppEngineRouting.service, AppEngineRouting.version, or
+AppEngineRouting.instance is invalid, then the task will be sent
+to the default version of the default service when the task is attempted.
+* <code>instance=justo</code>
+    - App instance.</p>
+<p>By default, the task is sent to an instance which is available when
+the task is attempted.</p>
+<p>Requests can only be sent to a specific instance if
+<a href="../appengine/docs/python/an-overview-of-app-engine?hl=en_US#scaling_types_and_instance_classes">manual scaling is used in App Engine Standard</a>.
+App Engine Flex does not support instances. For more information, see
+<a href="../appengine/docs/standard/python/how-requests-are-routed">App Engine Standard request routing</a>
+and <a href="../appengine/docs/flexible/python/how-requests-are-routed">App Engine Flex request routing</a>.
+* <code>service=justo</code>
+    - App service.</p>
+<p>By default, the task is sent to the service which is the default
+service when the task is attempted (&#34;default&#34;).</p>
+<p>For some queues or tasks which were created using the App Engine Task Queue
+API, AppEngineRouting.host is not parsable into
+AppEngineRouting.service, AppEngineRouting.version, and
+AppEngineRouting.instance. For example, some tasks which were created
+using the App Engine SDK use a custom domain name; custom domains are not
+parsed by Cloud Tasks. If AppEngineRouting.host is not parsable, then
+AppEngineRouting.service, AppEngineRouting.version, and
+AppEngineRouting.instance are the empty string.
+* <code>version=et</code>
+    - App version.</p>
+<p>By default, the task is sent to the version which is the default
+version when the task is attempted (&#34;default&#34;).</p>
+<p>For some queues or tasks which were created using the App Engine Task Queue
+API, AppEngineRouting.host is not parsable into
+AppEngineRouting.service, AppEngineRouting.version, and
+AppEngineRouting.instance. For example, some tasks which were created
+using the App Engine SDK use a custom domain name; custom domains are not
+parsed by Cloud Tasks. If AppEngineRouting.host is not parsable, then
+AppEngineRouting.service, AppEngineRouting.version, and
+AppEngineRouting.instance are the empty string.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><code>...app-engine-queue-config.app-engine-routing-override    host=et</code></p>
+<ul>
+<li>
+<p>Output only.</p>
+<p>The host that the task is sent to. For more information, see
+<a href="../appengine/docs/standard/python/how-requests-are-routed">How Requests are Routed</a>.</p>
+<p>The host is constructed as:</p>
+<ul>
+<li>
+<p><code>host = [application_domain_name]</code>&lt;/br&gt;
+  <code>| [service] + &amp;#39;.&amp;#39; + [application_domain_name]</code>&lt;/br&gt;
+  <code>| [version] + &amp;#39;.&amp;#39; + [application_domain_name]</code>&lt;/br&gt;
+  <code>| [version_dot_service]+ &amp;#39;.&amp;#39; + [application_domain_name]</code>&lt;/br&gt;
+  <code>| [instance] + &amp;#39;.&amp;#39; + [application_domain_name]</code>&lt;/br&gt;
+  <code>| [instance_dot_service] + &amp;#39;.&amp;#39; + [application_domain_name]</code>&lt;/br&gt;
+  <code>| [instance_dot_version] + &amp;#39;.&amp;#39; + [application_domain_name]</code>&lt;/br&gt;
+  <code>| [instance_dot_version_dot_service] + &amp;#39;.&amp;#39; + [application_domain_name]</code></p>
+</li>
+<li>
+<p><code>application_domain_name</code> = The domain name of the app, for
+  example &lt;app-id&gt;.appspot.com, which is associated with the
+  queue&#39;s project ID. Some tasks which were created using the App Engine
+  SDK use a custom domain name.</p>
+</li>
+<li>
+<p><code>service =</code> AppEngineRouting.service</p>
+</li>
+<li>
+<p><code>version =</code> AppEngineRouting.version</p>
+</li>
+<li>
+<p><code>version_dot_service =</code>
+  AppEngineRouting.version <code>+ &amp;#39;.&amp;#39; +</code> AppEngineRouting.service</p>
+</li>
+<li>
+<p><code>instance =</code> AppEngineRouting.instance</p>
+</li>
+<li>
+<p><code>instance_dot_service =</code>
+  AppEngineRouting.instance <code>+ &amp;#39;.&amp;#39; +</code> AppEngineRouting.service</p>
+</li>
+<li>
+<p><code>instance_dot_version =</code>
+  AppEngineRouting.instance <code>+ &amp;#39;.&amp;#39; +</code> AppEngineRouting.version</p>
+</li>
+<li>
+<p><code>instance_dot_version_dot_service =</code>
+  AppEngineRouting.instance <code>+ &amp;#39;.&amp;#39; +</code>
+  AppEngineRouting.version <code>+ &amp;#39;.&amp;#39; +</code> AppEngineRouting.service</p>
+</li>
+</ul>
+<p>If AppEngineRouting.service is empty, then the task will be sent
+to the service which is the default service when the task is attempted.</p>
+<p>If AppEngineRouting.version is empty, then the task will be sent
+to the version which is the default version when the task is attempted.</p>
+<p>If AppEngineRouting.instance is empty, then the task will be sent
+to an instance which is available when the task is attempted.</p>
+<p>When AppEngineRouting.service is &#34;default&#34;,
+AppEngineRouting.version is &#34;default&#34;, and
+AppEngineRouting.instance is empty, AppEngineRouting.host is
+shortened to just the <code>application_domain_name</code>.</p>
+<p>If AppEngineRouting.service, AppEngineRouting.version, or
+AppEngineRouting.instance is invalid, then the task will be sent
+to the default version of the default service when the task is attempted.
+* <code>instance=diam</code>
+    - App instance.</p>
+<p>By default, the task is sent to an instance which is available when
+the task is attempted.</p>
+<p>Requests can only be sent to a specific instance if
+<a href="../appengine/docs/python/an-overview-of-app-engine?hl=en_US#scaling_types_and_instance_classes">manual scaling is used in App Engine Standard</a>.
+App Engine Flex does not support instances. For more information, see
+<a href="../appengine/docs/standard/python/how-requests-are-routed">App Engine Standard request routing</a>
+and <a href="../appengine/docs/flexible/python/how-requests-are-routed">App Engine Flex request routing</a>.
+* <code>service=ipsum</code>
+    - App service.</p>
+<p>By default, the task is sent to the service which is the default
+service when the task is attempted (&#34;default&#34;).</p>
+<p>For some queues or tasks which were created using the App Engine Task Queue
+API, AppEngineRouting.host is not parsable into
+AppEngineRouting.service, AppEngineRouting.version, and
+AppEngineRouting.instance. For example, some tasks which were created
+using the App Engine SDK use a custom domain name; custom domains are not
+parsed by Cloud Tasks. If AppEngineRouting.host is not parsable, then
+AppEngineRouting.service, AppEngineRouting.version, and
+AppEngineRouting.instance are the empty string.
+* <code>version=lorem</code>
+    - App version.</p>
+<p>By default, the task is sent to the version which is the default
+version when the task is attempted (&#34;default&#34;).</p>
+<p>For some queues or tasks which were created using the App Engine Task Queue
+API, AppEngineRouting.host is not parsable into
+AppEngineRouting.service, AppEngineRouting.version, and
+AppEngineRouting.instance. For example, some tasks which were created
+using the App Engine SDK use a custom domain name; custom domains are not
+parsed by Cloud Tasks. If AppEngineRouting.host is not parsable, then
+AppEngineRouting.service, AppEngineRouting.version, and
+AppEngineRouting.instance are the empty string.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><code>...    name=et</code></p>
+<ul>
+<li>
+<p>The queue name.</p>
+<p>The queue name must have the following format:
+<code>projects/PROJECT_ID/locations/LOCATION_ID/queues/QUEUE_ID</code></p>
+<ul>
+<li><code>PROJECT_ID</code> can contain uppercase and lowercase letters,
+  numbers, hyphens, colons, and periods; that is, it must match
+  the regular expression: <code>[a-zA-Z\\d-:\\.]+</code>.</li>
+<li><code>QUEUE_ID</code> can contain uppercase and lowercase letters,
+  numbers, and hyphens; that is, it must match the regular
+  expression: <code>[a-zA-Z\\d-]+</code>. The maximum length is 100
+  characters.</li>
+</ul>
+<p>Caller-specified and required in CreateQueueRequest, after which
+it becomes output only.
+* <code>purge-time=duo</code>
+    - Output only.</p>
+<p>The last time this queue was purged. All tasks that were
+created before this time were purged.</p>
+<p>A queue can be purged using CloudTasks.PurgeQueue, the
+<a href="../appengine/docs/standard/python/taskqueue/push/deleting-tasks-and-queues#purging_all_tasks_from_a_queue">App Engine Task Queue SDK, or the Cloud Console</a>.</p>
+<p>Purge time will be truncated to the nearest microsecond. Purge
+time will be zero if the queue has never been purged.
+* <code>queue-state=aliquyam</code>
+    - Output only.</p>
+<p>The state of the queue.</p>
+<p><code>queue_state</code> can only be changed by called
+CloudTasks.PauseQueue, CloudTasks.ResumeQueue, or uploading
+<a href="../appengine/docs/python/config/queueref">queue.yaml</a>.
+CloudTasks.UpdateQueue cannot be used to change <code>queue_state</code>.
+* <code>retry-config    max-attempts=92</code>
+    - The maximum number of attempts for a task.</p>
+<p>Cloud Tasks will attempt the task <code>max_attempts</code> times (that
+is, if the first attempt fails, then there will be
+<code>max_attempts - 1</code> retries).  Must be &gt; 0.
+* <code>max-backoff=lorem</code>
+    - The maximum amount of time to wait before retrying a task after
+it fails. The default is 1 hour.</p>
+<ul>
+<li>For <a href="../google.cloud.tasks.v2beta2.AppEngineHttpTarget">App Engine queues</a>,
+  this field is 1 hour by default.</li>
+<li>For <a href="../google.cloud.tasks.v2beta2.PullTarget">pull queues</a>, this field
+  is output only and always 0.</li>
+</ul>
+<p><code>max_backoff</code> will be truncated to the nearest second.
+<em> <code>max-doublings=26</code>
+    - The maximum number of times that the interval between failed task
+retries will be doubled before the increase becomes constant. The
+constant is: 2</em><em>(max_doublings - 1) </em>
+RetryConfig.min_backoff.</p>
+<ul>
+<li>For <a href="../google.cloud.tasks.v2beta2.AppEngineHttpTarget">App Engine queues</a>,
+  this field is 16 by default.</li>
+<li>For <a href="../google.cloud.tasks.v2beta2.PullTarget">pull queues</a>, this field
+  is output only and always 0.</li>
+<li>
+<p><code>min-backoff=erat</code></p>
+<ul>
+<li>The minimum amount of time to wait before retrying a task after
+it fails.</li>
+</ul>
+</li>
+<li>
+<p>For <a href="../google.cloud.tasks.v2beta2.AppEngineHttpTarget">App Engine queues</a>,
+  this field is 0.1 seconds by default.</p>
+</li>
+<li>For <a href="../google.cloud.tasks.v2beta2.PullTarget">pull queues</a>, this
+  field is output only and always 0.</li>
+</ul>
+<p><code>min_backoff</code> will be truncated to the nearest second.
+* <code>task-age-limit=sadipscing</code>
+    - If positive, task_age_limit specifies the time limit for retrying a failed
+task, measured from when the task was first run. If specified with
+RetryConfig.max_attempts, the task will be retried until both
+limits are reached.</p>
+<p>If zero, then the task age is unlimited. This field is zero by default.</p>
+<p><code>task_age_limit</code> will be truncated to the nearest second.
+* <code>unlimited-attempts=true</code>
+    - If true, then the number of attempts is unlimited.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><code>..throttle-config    max-burst-size=62</code></p>
+<ul>
+<li>
+<p>Output only.</p>
+<p>The max burst size limits how fast the queue is processed when
+many tasks are in the queue and the rate is high. This field
+allows the queue to have a high rate so processing starts shortly
+after a task is enqueued, but still limits resource usage when
+many tasks are enqueued in a short period of time.</p>
+<ul>
+<li>For App Engine queues, if
+  ThrottleConfig.max_tasks_dispatched_per_second is 1, this
+  field is 10; otherwise this field is
+  ThrottleConfig.max_tasks_dispatched_per_second / 5.</li>
+<li>For pull queues, this field is output only and always 10,000.</li>
+</ul>
+<p>Note: For App Engine queues that were created through
+<code>queue.yaml/xml</code>, <code>max_burst_size</code> might not have the same
+settings as specified above; CloudTasks.UpdateQueue can be
+used to set <code>max_burst_size</code> only to the values specified above.</p>
+<p>This field has the same meaning as
+<a href="../appengine/docs/standard/python/config/queueref#bucket_size">bucket_size in queue.yaml</a>.
+* <code>max-outstanding-tasks=58</code>
+    - The maximum number of outstanding tasks that Cloud Tasks allows
+to be dispatched for this queue. After this threshold has been
+reached, Cloud Tasks stops dispatching tasks until the number of
+outstanding requests decreases.</p>
+<p>The maximum allowed value is 5,000.</p>
+<ul>
+<li>For App Engine queues, this field is 10 by default.</li>
+<li>For pull queues, this field is output only and always -1, which
+  indicates no limit.</li>
+</ul>
+<p>This field has the same meaning as
+<a href="../appengine/docs/standard/python/config/queueref#max_concurrent_requests">max_concurrent_requests in queue.yaml</a>.
+* <code>max-tasks-dispatched-per-second=0.0438804035801</code>
+    - The maximum rate at which tasks are dispatched from this
+queue.</p>
+<p>The maximum allowed value is 500.</p>
+<ul>
+<li>For App Engine queues, this field is 1 by default.</li>
+<li>For pull queues, this field is output only and always 10,000.</li>
+</ul>
+<p>This field has the same meaning as
+<a href="../appengine/docs/standard/python/config/queueref#rate">rate in queue.yaml</a>.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="about-cursors">About Cursors</h3>
+<p>The cursor position is key to comfortably set complex nested structures. The following rules apply:</p>
+<ul>
+<li>The cursor position is always set relative to the current one, unless the field name starts with the <code>.</code> character. Fields can be nested such as in <code>-r f.s.o</code> .</li>
+<li>The cursor position is set relative to the top-level structure if it starts with <code>.</code>, e.g. <code>-r .s.s</code></li>
+<li>You can also set nested fields without setting the cursor explicitly. For example, to set a value relative to the current cursor position, you would specify <code>-r struct.sub_struct=bar</code>.</li>
+<li>You can move the cursor one level up by using <code>..</code>. Each additional <code>.</code> moves it up one additional level. E.g. <code>...</code> would go three levels up.</li>
+</ul>
+<h1 id="optional-output-flags">Optional Output Flags</h1>
+<p>The method's return value a JSON encoded structure, which will be written to standard output by default.</p>
+<ul>
+<li><strong>-o out</strong><ul>
+<li><em>out</em> specifies the <em>destination</em> to which to write the server's result to.
+  It will be a JSON-encoded structure.
+  The <em>destination</em> may be <code>-</code> to indicate standard output, or a filepath that is to contain the received bytes.
+  If unset, it defaults to standard output.</li>
+</ul>
+</li>
+</ul>
+<h1 id="optional-method-properties">Optional Method Properties</h1>
+<p>You may set the following properties to further configure the call. Please note that <code>-p</code> is followed by one 
+or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> even though the listing below repeats the
+<code>-p</code> for completeness.</p>
+<ul>
+<li><strong>-p update-mask=string</strong><ul>
+<li>
+<p>A mask used to specify which fields of the queue are being updated.</p>
+<p>If empty, then all fields will be updated.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="optional-general-properties">Optional General Properties</h1>
+<p>The following properties can configure any call, and are not specific to this method.</p>
+<ul>
+<li>
+<p><strong>-p $-xgafv=string</strong></p>
+<ul>
+<li>V1 error format.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p access-token=string</strong></p>
+<ul>
+<li>OAuth access token.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p alt=string</strong></p>
+<ul>
+<li>Data format for response.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p bearer-token=string</strong></p>
+<ul>
+<li>OAuth bearer token.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p callback=string</strong></p>
+<ul>
+<li>JSONP</li>
+</ul>
+</li>
+<li>
+<p><strong>-p fields=string</strong></p>
+<ul>
+<li>Selector specifying which fields to include in a partial response.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p key=string</strong></p>
+<ul>
+<li>API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p oauth-token=string</strong></p>
+<ul>
+<li>OAuth 2.0 token for the current user.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p pp=boolean</strong></p>
+<ul>
+<li>Pretty-print response.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p pretty-print=boolean</strong></p>
+<ul>
+<li>Returns response with indentations and line breaks.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p quota-user=string</strong></p>
+<ul>
+<li>Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p upload-type=string</strong></p>
+<ul>
+<li>Legacy upload protocol for media (e.g. &#34;media&#34;, &#34;multipart&#34;).</li>
+</ul>
+</li>
+<li>
+<p><strong>-p upload-protocol=string</strong></p>
+<ul>
+<li>Upload protocol for media (e.g. &#34;raw&#34;, &#34;multipart&#34;).</li>
+</ul>
+</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../projects_locations-queues-pause/" class="btn btn-neutral float-right" title="Locations Queues Pause">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../projects_locations-queues-list/" class="btn btn-neutral" title="Locations Queues List"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+    
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/cloudtasks2_beta2-cli" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../projects_locations-queues-list/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../projects_locations-queues-pause/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script src="../js/theme.js"></script>
+
+</body>
+</html>

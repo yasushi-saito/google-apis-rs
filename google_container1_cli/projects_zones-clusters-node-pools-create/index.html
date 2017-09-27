@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Zones Clusters Node Pools Create - container v1.0.5+20170430</title>
+  <title>Zones Clusters Node Pools Create - Container v1.0.6+20170915</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> container v1.0.5+20170430</a>
+        <a href=".." class="icon icon-home"> Container v1.0.6+20170915</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -45,182 +45,163 @@
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
 	<ul class="current">
+	  
           
-            <li>
-    <li class="toctree-l1 ">
-        <a class="" href="..">Home</a>
-        
-    </li>
-<li>
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Home</a>
+	    </li>
           
-            <li>
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Projects</span>
     <ul class="subnav">
-    <li><span>Projects</span></li>
+                <li class="">
+                    
+    <a class="" href="../projects_zones-clusters-addons/">Zones Clusters Addons</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_zones-clusters-complete-ip-rotation/">Zones Clusters Complete Ip Rotation</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_zones-clusters-create/">Zones Clusters Create</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_zones-clusters-delete/">Zones Clusters Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_zones-clusters-get/">Zones Clusters Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_zones-clusters-legacy-abac/">Zones Clusters Legacy Abac</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_zones-clusters-list/">Zones Clusters List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_zones-clusters-locations/">Zones Clusters Locations</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_zones-clusters-logging/">Zones Clusters Logging</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_zones-clusters-master/">Zones Clusters Master</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_zones-clusters-monitoring/">Zones Clusters Monitoring</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_zones-clusters-node-pools-autoscaling/">Zones Clusters Node Pools Autoscaling</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">Zones Clusters Node Pools Create</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#scopes">Scopes</a></li>
+    
 
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../projects_zones-clusters-complete-ip-rotation/">Zones Clusters Complete Ip Rotation</a>
-        
-    </li>
+    <li class="toctree-l3"><a href="#required-scalar-arguments">Required Scalar Arguments</a></li>
+    
 
+    <li class="toctree-l3"><a href="#required-request-value">Required Request Value</a></li>
+    
+        <ul>
         
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../projects_zones-clusters-create/">Zones Clusters Create</a>
+            <li><a class="toctree-l4" href="#about-cursors">About Cursors</a></li>
         
-    </li>
+        </ul>
+    
 
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../projects_zones-clusters-delete/">Zones Clusters Delete</a>
-        
-    </li>
+    <li class="toctree-l3"><a href="#optional-output-flags">Optional Output Flags</a></li>
+    
 
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../projects_zones-clusters-get/">Zones Clusters Get</a>
-        
-    </li>
+    <li class="toctree-l3"><a href="#optional-general-properties">Optional General Properties</a></li>
+    
 
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../projects_zones-clusters-legacy-abac/">Zones Clusters Legacy Abac</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../projects_zones-clusters-list/">Zones Clusters List</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 current">
-        <a class="current" href="./">Zones Clusters Node Pools Create</a>
-        
-            <ul>
-            
-                <li class="toctree-l3"><a href="#scopes">Scopes</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#required-scalar-arguments">Required Scalar Arguments</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#required-request-value">Required Request Value</a></li>
-                
-                    <li><a class="toctree-l4" href="#about-cursors">About Cursors</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#optional-output-flags">Optional Output Flags</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#optional-general-properties">Optional General Properties</a></li>
-                
-            
-            </ul>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../projects_zones-clusters-node-pools-delete/">Zones Clusters Node Pools Delete</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../projects_zones-clusters-node-pools-get/">Zones Clusters Node Pools Get</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../projects_zones-clusters-node-pools-list/">Zones Clusters Node Pools List</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../projects_zones-clusters-node-pools-rollback/">Zones Clusters Node Pools Rollback</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../projects_zones-clusters-node-pools-set-management/">Zones Clusters Node Pools Set Management</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../projects_zones-clusters-resource-labels/">Zones Clusters Resource Labels</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../projects_zones-clusters-set-master-auth/">Zones Clusters Set Master Auth</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../projects_zones-clusters-start-ip-rotation/">Zones Clusters Start Ip Rotation</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../projects_zones-clusters-update/">Zones Clusters Update</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../projects_zones-get-serverconfig/">Zones Get Serverconfig</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../projects_zones-operations-cancel/">Zones Operations Cancel</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../projects_zones-operations-get/">Zones Operations Get</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../projects_zones-operations-list/">Zones Operations List</a>
-        
-    </li>
-
-        
     </ul>
-<li>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_zones-clusters-node-pools-delete/">Zones Clusters Node Pools Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_zones-clusters-node-pools-get/">Zones Clusters Node Pools Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_zones-clusters-node-pools-list/">Zones Clusters Node Pools List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_zones-clusters-node-pools-rollback/">Zones Clusters Node Pools Rollback</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_zones-clusters-node-pools-set-management/">Zones Clusters Node Pools Set Management</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_zones-clusters-node-pools-set-size/">Zones Clusters Node Pools Set Size</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_zones-clusters-node-pools-update/">Zones Clusters Node Pools Update</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_zones-clusters-resource-labels/">Zones Clusters Resource Labels</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_zones-clusters-set-maintenance-policy/">Zones Clusters Set Maintenance Policy</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_zones-clusters-set-master-auth/">Zones Clusters Set Master Auth</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_zones-clusters-set-network-policy/">Zones Clusters Set Network Policy</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_zones-clusters-start-ip-rotation/">Zones Clusters Start Ip Rotation</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_zones-clusters-update/">Zones Clusters Update</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_zones-get-serverconfig/">Zones Get Serverconfig</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_zones-operations-cancel/">Zones Operations Cancel</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_zones-operations-get/">Zones Operations Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_zones-operations-list/">Zones Operations List</a>
+                </li>
+    </ul>
+	    </li>
           
         </ul>
       </div>
@@ -232,7 +213,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">container v1.0.5+20170430</a>
+        <a href="..">Container v1.0.6+20170915</a>
       </nav>
 
       
@@ -301,6 +282,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
       local-ssd-count: integer
       machine-type: string
       metadata: { string: string }
+      min-cpu-platform: string
       oauth-scopes: [string]
       preemptible: boolean
       service-account: string
@@ -323,33 +305,33 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .node-pool.autoscaling    enabled=false</code><ul>
+<li><code>-r .node-pool.autoscaling    enabled=true</code><ul>
 <li>Is autoscaling enabled for this node pool.</li>
 </ul>
 </li>
-<li><code>max-node-count=28</code><ul>
+<li><code>max-node-count=25</code><ul>
 <li>Maximum number of nodes in the NodePool. Must be &gt;= min_node_count. There
     has to enough quota to scale up the cluster.</li>
 </ul>
 </li>
 <li>
-<p><code>min-node-count=45</code></p>
+<p><code>min-node-count=6</code></p>
 <ul>
 <li>Minimum number of nodes in the NodePool. Must be &gt;= 1 and &lt;=
     max_node_count.</li>
 </ul>
 </li>
 <li>
-<p><code>..config    disk-size-gb=92</code></p>
+<p><code>..config    disk-size-gb=13</code></p>
 <ul>
 <li>
 <p>Size of the disk attached to each node, specified in GB.
     The smallest allowed disk size is 10GB.</p>
 <p>If unspecified, the default disk size is 100GB.
-<em> <code>image-type=et</code>
+<em> <code>image-type=consetetur</code>
     - The image type to use for this node. Note that for a given image type,
 the latest version of it will be used.
-</em> <code>labels=key=duo</code>
+</em> <code>labels=key=dolore</code>
     - The map of Kubernetes labels (key/value pairs) to be applied to each node.
 These will added in addition to any default label(s) that
 Kubernetes may apply to the node.
@@ -357,21 +339,21 @@ In case of conflict in label keys, the applied set may differ depending on
 the Kubernetes version -- it&#39;s best to assume the behavior is undefined
 and conflicts should be avoided.
 For more information, including usage and the valid values, see:
-http://kubernetes.io/v1.1/docs/user-guide/labels.html
+https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/
     - the value will be associated with the given <code>key</code>
-* <code>local-ssd-count=80</code>
+* <code>local-ssd-count=82</code>
     - The number of local SSD disks to be attached to the node.</p>
 <p>The limit for this value is dependant upon the maximum number of
 disks available on a machine per zone. See:
 https://cloud.google.com/compute/docs/disks/local-ssd#local_ssd_limits
 for more information.
-* <code>machine-type=eirmod</code>
+* <code>machine-type=aliquyam</code>
     - The name of a Google Compute Engine <a href="../compute/docs/machine-types">machine
 type</a> (e.g.
 <code>n1-standard-1</code>).</p>
 <p>If unspecified, the default machine type is
 <code>n1-standard-1</code>.
-* <code>metadata=key=sanctus</code>
+* <code>metadata=key=lorem</code>
     - The metadata key/value pairs assigned to instances in the cluster.</p>
 <p>Keys must conform to the regexp [a-zA-Z0-9-_]+ and be less than 128 bytes
 in length. These are reflected as part of a URL in the metadata server.
@@ -383,7 +365,14 @@ the image running in the instance. The only restriction placed on them is
 that each value&#39;s size must be less than or equal to 32 KB.</p>
 <p>The total size of all keys and values must be less than 512 KB.
     - the value will be associated with the given <code>key</code>
-* <code>oauth-scopes=et</code>
+<em> <code>min-cpu-platform=et</code>
+    - Minimum CPU platform to be used by this instance. The instance may be
+scheduled on the specified or newer CPU platform. Applicable values are the
+friendly names of CPU platforms, such as
+&lt;code&gt;minCpuPlatform: &amp;quot;Intel Haswell&amp;quot;&lt;/code&gt; or
+&lt;code&gt;minCpuPlatform: &amp;quot;Intel Sandy Bridge&amp;quot;&lt;/code&gt;. For more
+information, read <a href="https://cloud.google.com/compute/docs/instances/specify-min-cpu-platform">how to specify min CPU platform</a>
+</em> <code>oauth-scopes=clita</code>
     - The set of Google API scopes to be made available on all of the
 node VMs under the &#34;default&#34; service account.</p>
 <p>The following scopes are recommended, but not required, and by default are
@@ -401,11 +390,11 @@ Monitoring are enabled, in which case their required scopes will be added.
 <em> <code>preemptible=true</code>
     - Whether the nodes are created as preemptible VM instances. See:
 https://cloud.google.com/compute/docs/instances/preemptible for more
-inforamtion about preemptible VM instances.
-</em> <code>service-account=et</code>
+information about preemptible VM instances.
+</em> <code>service-account=takimata</code>
     - The Google Cloud Platform Service Account to be used by the node VMs. If
 no Service Account is specified, the &#34;default&#34; service account is used.
-* <code>tags=consetetur</code>
+* <code>tags=nonumy</code>
     - The list of instance tags applied to all nodes. Tags are used to identify
 valid sources or targets for network firewalls and are specified by
 the client during cluster or node pool creation. Each tag within the list
@@ -415,7 +404,7 @@ must comply with RFC1035.
 </ul>
 </li>
 <li>
-<p><code>..    initial-node-count=65</code></p>
+<p><code>..    initial-node-count=88</code></p>
 <ul>
 <li>The initial node count for the pool. You must ensure that your
     Compute Engine &lt;a href=&#34;/compute/docs/resource-quotas&#34;&gt;resource quota&lt;/a&gt;
@@ -423,7 +412,7 @@ must comply with RFC1035.
     firewall and routes quota.</li>
 </ul>
 </li>
-<li><code>instance-group-urls=ea</code><ul>
+<li><code>instance-group-urls=sanctus</code><ul>
 <li>[Output only] The resource URLs of <a href="../compute/docs/instance-groups/">instance
     groups</a> associated with this
     node pool.</li>
@@ -443,39 +432,39 @@ must comply with RFC1035.
     up to date with the latest release version of Kubernetes.</li>
 </ul>
 </li>
-<li><code>upgrade-options    auto-upgrade-start-time=dolor</code><ul>
+<li><code>upgrade-options    auto-upgrade-start-time=labore</code><ul>
 <li>[Output only] This field is set when upgrades are about to commence
     with the approximate start time for the upgrades, in
     <a href="https://www.ietf.org/rfc/rfc3339.txt">RFC3339</a> text format.</li>
 </ul>
 </li>
 <li>
-<p><code>description=dolor</code></p>
+<p><code>description=invidunt</code></p>
 <ul>
 <li>[Output only] This field is set when upgrades are about to commence
     with the description of the upgrade.</li>
 </ul>
 </li>
 <li>
-<p><code>...    name=et</code></p>
+<p><code>...    name=ea</code></p>
 <ul>
 <li>The name of the node pool.</li>
 </ul>
 </li>
-<li><code>self-link=consetetur</code><ul>
+<li><code>self-link=sadipscing</code><ul>
 <li>[Output only] Server-defined URL for the resource.</li>
 </ul>
 </li>
-<li><code>status=amet.</code><ul>
+<li><code>status=rebum.</code><ul>
 <li>[Output only] The status of the nodes in this pool instance.</li>
 </ul>
 </li>
-<li><code>status-message=voluptua.</code><ul>
+<li><code>status-message=dolore</code><ul>
 <li>[Output only] Additional information about the current status of this
     node pool instance, if available.</li>
 </ul>
 </li>
-<li><code>version=lorem</code><ul>
+<li><code>version=nonumy</code><ul>
 <li>[Output only] The version of the Kubernetes of this node.</li>
 </ul>
 </li>
@@ -591,7 +580,7 @@ must comply with RFC1035.
         <a href="../projects_zones-clusters-node-pools-delete/" class="btn btn-neutral float-right" title="Zones Clusters Node Pools Delete">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../projects_zones-clusters-list/" class="btn btn-neutral" title="Zones Clusters List"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../projects_zones-clusters-node-pools-autoscaling/" class="btn btn-neutral" title="Zones Clusters Node Pools Autoscaling"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -618,10 +607,10 @@ must comply with RFC1035.
   <div class="rst-versions" role="note" style="cursor: pointer">
     <span class="rst-current-version" data-toggle="rst-current-version">
       
-          <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/container1-cli" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+          <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/container1-cli" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../projects_zones-clusters-list/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../projects_zones-clusters-node-pools-autoscaling/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
         <span style="margin-left: 15px"><a href="../projects_zones-clusters-node-pools-delete/" style="color: #fcfcfc">Next &raquo;</a></span>

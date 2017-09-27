@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Test Matrices Create - testing v1.0.6+20170922</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Test Matrices Create";
+    var mkdocs_page_input_path = "projects_test-matrices-create.md";
+    var mkdocs_page_url = "/projects_test-matrices-create/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> testing v1.0.6+20170922</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Projects</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../projects_test-matrices-cancel/">Test Matrices Cancel</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">Test Matrices Create</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#scopes">Scopes</a></li>
+    
+
+    <li class="toctree-l3"><a href="#required-scalar-argument">Required Scalar Argument</a></li>
+    
+
+    <li class="toctree-l3"><a href="#required-request-value">Required Request Value</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#about-cursors">About Cursors</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l3"><a href="#optional-output-flags">Optional Output Flags</a></li>
+    
+
+    <li class="toctree-l3"><a href="#optional-method-properties">Optional Method Properties</a></li>
+    
+
+    <li class="toctree-l3"><a href="#optional-general-properties">Optional General Properties</a></li>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_test-matrices-get/">Test Matrices Get</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Test Environment Catalog</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../test-environment-catalog_get/">Get</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">testing v1.0.6+20170922</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Projects &raquo;</li>
+        
+      
+    
+    <li>Test Matrices Create</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/testing1-cli/edit/master/docs/projects_test-matrices-create.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p>Request to run a matrix of tests according to the given specifications.
+Unsupported environments will be returned in the state UNSUPPORTED.
+Matrices are limited to at most 200 supported executions.</p>
+<p>May return any of the following canonical error codes:</p>
+<ul>
+<li>PERMISSION_DENIED - if the user is not authorized to write to project</li>
+<li>INVALID_ARGUMENT - if the request is malformed or if the matrix expands
+                     to more than 200 supported executions</li>
+</ul>
+<h1 id="scopes">Scopes</h1>
+<p>You will need authorization for the <em>https://www.googleapis.com/auth/cloud-platform</em> scope to make a valid call.</p>
+<p>If unset, the scope for this method defaults to <em>https://www.googleapis.com/auth/cloud-platform</em>.
+You can set the scope for this method like this: <code>testing1 --scope &lt;scope&gt; projects test-matrices-create ...</code></p>
+<h1 id="required-scalar-argument">Required Scalar Argument</h1>
+<ul>
+<li><strong>&lt;project-id&gt;</strong> <em>(string)</em><ul>
+<li>The GCE project under which this job will run.</li>
+</ul>
+</li>
+</ul>
+<h1 id="required-request-value">Required Request Value</h1>
+<p>The request value is a data-structure with various fields. Each field may be a simple scalar or another data-structure.
+In the latter case it is advised to set the field-cursor to the data-structure's field to specify values more concisely.</p>
+<p>For example, a structure like this:</p>
+<pre><code>TestMatrix:
+  client-info:
+    name: string
+  environment-matrix:
+    android-matrix:
+      android-model-ids: [string]
+      android-version-ids: [string]
+      locales: [string]
+      orientations: [string]
+  invalid-matrix-details: string
+  project-id: string
+  result-storage:
+    google-cloud-storage:
+      gcs-path: string
+    tool-results-execution:
+      execution-id: string
+      history-id: string
+      project-id: string
+    tool-results-history:
+      history-id: string
+      project-id: string
+  state: string
+  test-matrix-id: string
+  test-specification:
+    android-instrumentation-test:
+      app-apk:
+        gcs-path: string
+      app-package-id: string
+      orchestrator-option: string
+      test-apk:
+        gcs-path: string
+      test-package-id: string
+      test-runner-class: string
+      test-targets: [string]
+    android-robo-test:
+      app-apk:
+        gcs-path: string
+      app-initial-activity: string
+      app-package-id: string
+      max-depth: integer
+      max-steps: integer
+    android-test-loop:
+      app-apk:
+        gcs-path: string
+      app-package-id: string
+      scenario-labels: [string]
+      scenarios: [integer]
+    auto-google-login: boolean
+    disable-performance-metrics: boolean
+    disable-video-recording: boolean
+    test-setup:
+      directories-to-pull: [string]
+      network-profile: string
+    test-timeout: string
+  timestamp: string
+
+</code></pre>
+
+<p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
+<ul>
+<li>
+<p><code>-r .client-info    name=eirmod</code></p>
+<ul>
+<li>Client name, such as gcloud.
+    Required</li>
+</ul>
+</li>
+<li>
+<p><code>..environment-matrix.android-matrix    android-model-ids=sit</code></p>
+<ul>
+<li>The ids of the set of Android device to be used.
+    Use the EnvironmentDiscoveryService to get supported options.
+    Required</li>
+<li>Each invocation of this argument appends the given value to the array.</li>
+</ul>
+</li>
+<li><code>android-version-ids=stet</code><ul>
+<li>The ids of the set of Android OS version to be used.
+    Use the EnvironmentDiscoveryService to get supported options.
+    Required</li>
+<li>Each invocation of this argument appends the given value to the array.</li>
+</ul>
+</li>
+<li><code>locales=sed</code><ul>
+<li>The set of locales the test device will enable for testing.
+    Use the EnvironmentDiscoveryService to get supported options.
+    Required</li>
+<li>Each invocation of this argument appends the given value to the array.</li>
+</ul>
+</li>
+<li>
+<p><code>orientations=et</code></p>
+<ul>
+<li>The set of orientations to test with.
+    Use the EnvironmentDiscoveryService to get supported options.
+    Required</li>
+<li>Each invocation of this argument appends the given value to the array.</li>
+</ul>
+</li>
+<li>
+<p><code>...    invalid-matrix-details=dolores</code></p>
+<ul>
+<li>Describes why the matrix is considered invalid.
+    Only useful for matrices in the INVALID state.
+    @OutputOnly</li>
+</ul>
+</li>
+<li><code>project-id=kasd</code><ul>
+<li>The cloud project that owns the test matrix.
+    @OutputOnly</li>
+</ul>
+</li>
+<li>
+<p><code>result-storage.google-cloud-storage    gcs-path=accusam</code></p>
+<ul>
+<li>The path to a directory in GCS that will
+    eventually contain the results for this test.
+    The requesting user must have write access on the bucket in the supplied
+    path.
+    Required</li>
+</ul>
+</li>
+<li>
+<p><code>..tool-results-execution    execution-id=takimata</code></p>
+<ul>
+<li>A tool results execution ID.
+    @OutputOnly</li>
+</ul>
+</li>
+<li><code>history-id=justo</code><ul>
+<li>A tool results history ID.
+    @OutputOnly</li>
+</ul>
+</li>
+<li>
+<p><code>project-id=amet.</code></p>
+<ul>
+<li>The cloud project that owns the tool results execution.
+    @OutputOnly</li>
+</ul>
+</li>
+<li>
+<p><code>..tool-results-history    history-id=erat</code></p>
+<ul>
+<li>A tool results history ID.
+    Required</li>
+</ul>
+</li>
+<li>
+<p><code>project-id=labore</code></p>
+<ul>
+<li>The cloud project that owns the tool results history.
+    Required</li>
+</ul>
+</li>
+<li>
+<p><code>...    state=sea</code></p>
+<ul>
+<li>Indicates the current progress of the test matrix (e.g., FINISHED)
+    @OutputOnly</li>
+</ul>
+</li>
+<li><code>test-matrix-id=nonumy</code><ul>
+<li>Unique id set by the service.
+    @OutputOnly</li>
+</ul>
+</li>
+<li>
+<p><code>test-specification.android-instrumentation-test.app-apk    gcs-path=dolores</code></p>
+<ul>
+<li>A path to a file in Google Cloud Storage.
+    Example: gs://build-app-1414623860166/app-debug-unaligned.apk</li>
+</ul>
+</li>
+<li>
+<p><code>..    app-package-id=gubergren</code></p>
+<ul>
+<li>The java package for the application under test.
+    Optional, default is determined by examining the application&#39;s manifest.</li>
+</ul>
+</li>
+<li>
+<p><code>orchestrator-option=sadipscing</code></p>
+<ul>
+<li>
+<p>The option of whether running each test within its own invocation of
+    instrumentation with Android Test Orchestrator or not.
+    <strong> Orchestrator is only compatible with AndroidJUnitRunner version 1.0 or
+    higher! </strong>
+    Orchestrator offers the following benefits:</p>
+<ul>
+<li>No shared state</li>
+<li>Crashes are isolated</li>
+<li>Logs are scoped per test</li>
+</ul>
+<p>See
+&lt;https://developer.android.com/training/testing/junit-runner.html#using-android-test-orchestrator&gt;
+for more information about Android Test Orchestrator.</p>
+<p>Optional, if empty, test will be run without orchestrator.
+* <code>test-apk    gcs-path=aliquyam</code>
+    - A path to a file in Google Cloud Storage.
+Example: gs://build-app-1414623860166/app-debug-unaligned.apk</p>
+</li>
+</ul>
+</li>
+<li>
+<p><code>..    test-package-id=ea</code></p>
+<ul>
+<li>The java package for the test to be executed.
+    Optional, default is determined by examining the application&#39;s manifest.</li>
+</ul>
+</li>
+<li><code>test-runner-class=no</code><ul>
+<li>The InstrumentationTestRunner class.
+    Optional, default is determined by examining the application&#39;s manifest.</li>
+</ul>
+</li>
+<li>
+<p><code>test-targets=justo</code></p>
+<ul>
+<li>
+<p>Each target must be fully qualified with the package name or class name,
+    in one of these formats:</p>
+<ul>
+<li>&#34;package package_name&#34;</li>
+<li>&#34;class package_name.class_name&#34;</li>
+<li>&#34;class package_name.class_name#method_name&#34;</li>
+</ul>
+<p>Optional, if empty, all targets in the module will be run.
+    - Each invocation of this argument appends the given value to the array.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><code>..android-robo-test.app-apk    gcs-path=justo</code></p>
+<ul>
+<li>A path to a file in Google Cloud Storage.
+    Example: gs://build-app-1414623860166/app-debug-unaligned.apk</li>
+</ul>
+</li>
+<li>
+<p><code>..    app-initial-activity=et</code></p>
+<ul>
+<li>The initial activity that should be used to start the app.
+    Optional</li>
+</ul>
+</li>
+<li><code>app-package-id=et</code><ul>
+<li>The java package for the application under test.
+    Optional, default is determined by examining the application&#39;s manifest.</li>
+</ul>
+</li>
+<li><code>max-depth=60</code><ul>
+<li>The max depth of the traversal stack Robo can explore. Needs to be at least
+    2 to make Robo explore the app beyond the first activity.
+    Default is 50.
+    Optional</li>
+</ul>
+</li>
+<li>
+<p><code>max-steps=46</code></p>
+<ul>
+<li>The max number of steps Robo can execute.
+    Default is no limit.
+    Optional</li>
+</ul>
+</li>
+<li>
+<p><code>..android-test-loop.app-apk    gcs-path=lorem</code></p>
+<ul>
+<li>A path to a file in Google Cloud Storage.
+    Example: gs://build-app-1414623860166/app-debug-unaligned.apk</li>
+</ul>
+</li>
+<li>
+<p><code>..    app-package-id=et</code></p>
+<ul>
+<li>The java package for the application under test.
+    Optional, default is determined by examining the application&#39;s manifest.</li>
+</ul>
+</li>
+<li><code>scenario-labels=duo</code><ul>
+<li>The list of scenario labels that should be run during the test.
+    The scenario labels should map to labels defined in the application&#39;s
+    manifest. For example, player_experience and
+    com.google.test.loops.player_experience add all of the loops labeled in the
+    manifest with the com.google.test.loops.player_experience name to the
+    execution.
+    Optional. Scenarios can also be specified in the scenarios field.</li>
+<li>Each invocation of this argument appends the given value to the array.</li>
+</ul>
+</li>
+<li>
+<p><code>scenarios=69</code></p>
+<ul>
+<li>The list of scenarios that should be run during the test.
+    Optional, default is all test loops, derived from the application&#39;s
+    manifest.</li>
+<li>Each invocation of this argument appends the given value to the array.</li>
+</ul>
+</li>
+<li>
+<p><code>..    auto-google-login=true</code></p>
+<ul>
+<li>Enables automatic Google account login.
+    If set, the service will automatically generate a Google test account and
+    add it to the device, before executing the test. Note that test accounts
+    might be reused.
+    Many applications show their full set of functionalities when an account is
+    present on the device. Logging into the device with these generated
+    accounts allows testing more functionalities.
+    Default is false.
+    Optional</li>
+</ul>
+</li>
+<li><code>disable-performance-metrics=false</code><ul>
+<li>Disables performance metrics recording; may reduce test latency.</li>
+</ul>
+</li>
+<li><code>disable-video-recording=false</code><ul>
+<li>Disables video recording; may reduce test latency.</li>
+</ul>
+</li>
+<li><code>test-setup    directories-to-pull=erat</code><ul>
+<li>The directories on the device to upload to GCS at the end of the test;
+    they must be absolute, whitelisted paths.
+    Refer to RegularFile for whitelisted paths.
+    Optional</li>
+<li>Each invocation of this argument appends the given value to the array.</li>
+</ul>
+</li>
+<li>
+<p><code>network-profile=sadipscing</code></p>
+<ul>
+<li>The network traffic profile used for running the test.
+    Optional</li>
+</ul>
+</li>
+<li>
+<p><code>..    test-timeout=dolor</code></p>
+<ul>
+<li>Max time a test execution is allowed to run before it is
+    automatically cancelled.
+    Optional, default is 5 min.</li>
+</ul>
+</li>
+<li>
+<p><code>..    timestamp=eirmod</code></p>
+<ul>
+<li>The time this test matrix was initially created.
+    @OutputOnly</li>
+</ul>
+</li>
+</ul>
+<h3 id="about-cursors">About Cursors</h3>
+<p>The cursor position is key to comfortably set complex nested structures. The following rules apply:</p>
+<ul>
+<li>The cursor position is always set relative to the current one, unless the field name starts with the <code>.</code> character. Fields can be nested such as in <code>-r f.s.o</code> .</li>
+<li>The cursor position is set relative to the top-level structure if it starts with <code>.</code>, e.g. <code>-r .s.s</code></li>
+<li>You can also set nested fields without setting the cursor explicitly. For example, to set a value relative to the current cursor position, you would specify <code>-r struct.sub_struct=bar</code>.</li>
+<li>You can move the cursor one level up by using <code>..</code>. Each additional <code>.</code> moves it up one additional level. E.g. <code>...</code> would go three levels up.</li>
+</ul>
+<h1 id="optional-output-flags">Optional Output Flags</h1>
+<p>The method's return value a JSON encoded structure, which will be written to standard output by default.</p>
+<ul>
+<li><strong>-o out</strong><ul>
+<li><em>out</em> specifies the <em>destination</em> to which to write the server's result to.
+  It will be a JSON-encoded structure.
+  The <em>destination</em> may be <code>-</code> to indicate standard output, or a filepath that is to contain the received bytes.
+  If unset, it defaults to standard output.</li>
+</ul>
+</li>
+</ul>
+<h1 id="optional-method-properties">Optional Method Properties</h1>
+<p>You may set the following properties to further configure the call. Please note that <code>-p</code> is followed by one 
+or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> even though the listing below repeats the
+<code>-p</code> for completeness.</p>
+<ul>
+<li><strong>-p request-id=string</strong><ul>
+<li>
+<p>A string id used to detect duplicated requests.
+    Ids are automatically scoped to a project, so
+    users should ensure the ID is unique per-project.
+    A UUID is recommended.</p>
+<p>Optional, but strongly recommended.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="optional-general-properties">Optional General Properties</h1>
+<p>The following properties can configure any call, and are not specific to this method.</p>
+<ul>
+<li>
+<p><strong>-p $-xgafv=string</strong></p>
+<ul>
+<li>V1 error format.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p access-token=string</strong></p>
+<ul>
+<li>OAuth access token.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p alt=string</strong></p>
+<ul>
+<li>Data format for response.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p bearer-token=string</strong></p>
+<ul>
+<li>OAuth bearer token.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p callback=string</strong></p>
+<ul>
+<li>JSONP</li>
+</ul>
+</li>
+<li>
+<p><strong>-p fields=string</strong></p>
+<ul>
+<li>Selector specifying which fields to include in a partial response.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p key=string</strong></p>
+<ul>
+<li>API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p oauth-token=string</strong></p>
+<ul>
+<li>OAuth 2.0 token for the current user.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p pp=boolean</strong></p>
+<ul>
+<li>Pretty-print response.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p pretty-print=boolean</strong></p>
+<ul>
+<li>Returns response with indentations and line breaks.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p quota-user=string</strong></p>
+<ul>
+<li>Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p upload-type=string</strong></p>
+<ul>
+<li>Legacy upload protocol for media (e.g. &#34;media&#34;, &#34;multipart&#34;).</li>
+</ul>
+</li>
+<li>
+<p><strong>-p upload-protocol=string</strong></p>
+<ul>
+<li>Upload protocol for media (e.g. &#34;raw&#34;, &#34;multipart&#34;).</li>
+</ul>
+</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../projects_test-matrices-get/" class="btn btn-neutral float-right" title="Test Matrices Get">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../projects_test-matrices-cancel/" class="btn btn-neutral" title="Test Matrices Cancel"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+    
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/testing1-cli" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../projects_test-matrices-cancel/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../projects_test-matrices-get/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script src="../js/theme.js"></script>
+
+</body>
+</html>

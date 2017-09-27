@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Patch - classroom v1.0.5+20170510</title>
+  <title>Patch - classroom v1.0.6+20170926</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> classroom v1.0.5+20170510</a>
+        <a href=".." class="icon icon-home"> classroom v1.0.6+20170926</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -45,355 +45,271 @@
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
 	<ul class="current">
+	  
           
-            <li>
-    <li class="toctree-l1 ">
-        <a class="" href="..">Home</a>
-        
-    </li>
-<li>
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Home</a>
+	    </li>
           
-            <li>
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Courses</span>
     <ul class="subnav">
-    <li><span>Courses</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../courses_aliases-create/">Aliases Create</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../courses_aliases-delete/">Aliases Delete</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../courses_aliases-list/">Aliases List</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../courses_course-work-create/">Course Work Create</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../courses_course-work-delete/">Course Work Delete</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../courses_course-work-get/">Course Work Get</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../courses_course-work-list/">Course Work List</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../courses_course-work-patch/">Course Work Patch</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../courses_course-work-student-submissions-get/">Course Work Student Submissions Get</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../courses_course-work-student-submissions-list/">Course Work Student Submissions List</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../courses_course-work-student-submissions-modify-attachments/">Course Work Student Submissions Modify Attachments</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../courses_course-work-student-submissions-patch/">Course Work Student Submissions Patch</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../courses_course-work-student-submissions-reclaim/">Course Work Student Submissions Reclaim</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../courses_course-work-student-submissions-return/">Course Work Student Submissions Return</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../courses_course-work-student-submissions-turn-in/">Course Work Student Submissions Turn In</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../courses_create/">Create</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../courses_delete/">Delete</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../courses_get/">Get</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../courses_list/">List</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 current">
-        <a class="current" href="./">Patch</a>
-        
-            <ul>
-            
-                <li class="toctree-l3"><a href="#scopes">Scopes</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#required-scalar-argument">Required Scalar Argument</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#required-request-value">Required Request Value</a></li>
-                
-                    <li><a class="toctree-l4" href="#about-cursors">About Cursors</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#optional-output-flags">Optional Output Flags</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#optional-method-properties">Optional Method Properties</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#optional-general-properties">Optional General Properties</a></li>
-                
-            
-            </ul>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../courses_students-create/">Students Create</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../courses_students-delete/">Students Delete</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../courses_students-get/">Students Get</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../courses_students-list/">Students List</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../courses_teachers-create/">Teachers Create</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../courses_teachers-delete/">Teachers Delete</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../courses_teachers-get/">Teachers Get</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../courses_teachers-list/">Teachers List</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../courses_update/">Update</a>
-        
-    </li>
-
-        
-    </ul>
-<li>
-          
-            <li>
+                <li class="">
+                    
+    <a class="" href="../courses_aliases-create/">Aliases Create</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../courses_aliases-delete/">Aliases Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../courses_aliases-list/">Aliases List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../courses_announcements-create/">Announcements Create</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../courses_announcements-delete/">Announcements Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../courses_announcements-get/">Announcements Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../courses_announcements-list/">Announcements List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../courses_announcements-modify-assignees/">Announcements Modify Assignees</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../courses_announcements-patch/">Announcements Patch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../courses_course-work-create/">Course Work Create</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../courses_course-work-delete/">Course Work Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../courses_course-work-get/">Course Work Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../courses_course-work-list/">Course Work List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../courses_course-work-modify-assignees/">Course Work Modify Assignees</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../courses_course-work-patch/">Course Work Patch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../courses_course-work-student-submissions-get/">Course Work Student Submissions Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../courses_course-work-student-submissions-list/">Course Work Student Submissions List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../courses_course-work-student-submissions-modify-attachments/">Course Work Student Submissions Modify Attachments</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../courses_course-work-student-submissions-patch/">Course Work Student Submissions Patch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../courses_course-work-student-submissions-reclaim/">Course Work Student Submissions Reclaim</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../courses_course-work-student-submissions-return/">Course Work Student Submissions Return</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../courses_course-work-student-submissions-turn-in/">Course Work Student Submissions Turn In</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../courses_create/">Create</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../courses_delete/">Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../courses_get/">Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../courses_list/">List</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">Patch</a>
     <ul class="subnav">
-    <li><span>Invitations</span></li>
-
-        
             
-    <li class="toctree-l1 ">
-        <a class="" href="../invitations_accept/">Accept</a>
-        
-    </li>
+    <li class="toctree-l3"><a href="#scopes">Scopes</a></li>
+    
 
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../invitations_create/">Create</a>
-        
-    </li>
+    <li class="toctree-l3"><a href="#required-scalar-argument">Required Scalar Argument</a></li>
+    
 
+    <li class="toctree-l3"><a href="#required-request-value">Required Request Value</a></li>
+    
+        <ul>
         
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../invitations_delete/">Delete</a>
+            <li><a class="toctree-l4" href="#about-cursors">About Cursors</a></li>
         
-    </li>
+        </ul>
+    
 
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../invitations_get/">Get</a>
-        
-    </li>
+    <li class="toctree-l3"><a href="#optional-output-flags">Optional Output Flags</a></li>
+    
 
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../invitations_list/">List</a>
-        
-    </li>
+    <li class="toctree-l3"><a href="#optional-method-properties">Optional Method Properties</a></li>
+    
 
-        
+    <li class="toctree-l3"><a href="#optional-general-properties">Optional General Properties</a></li>
+    
+
     </ul>
-<li>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../courses_students-create/">Students Create</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../courses_students-delete/">Students Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../courses_students-get/">Students Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../courses_students-list/">Students List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../courses_teachers-create/">Teachers Create</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../courses_teachers-delete/">Teachers Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../courses_teachers-get/">Teachers Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../courses_teachers-list/">Teachers List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../courses_update/">Update</a>
+                </li>
+    </ul>
+	    </li>
           
-            <li>
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Invitations</span>
     <ul class="subnav">
-    <li><span>User Profiles</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../user-profiles_get/">Get</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../user-profiles_guardian-invitations-create/">Guardian Invitations Create</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../user-profiles_guardian-invitations-get/">Guardian Invitations Get</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../user-profiles_guardian-invitations-list/">Guardian Invitations List</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../user-profiles_guardian-invitations-patch/">Guardian Invitations Patch</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../user-profiles_guardians-delete/">Guardians Delete</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../user-profiles_guardians-get/">Guardians Get</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../user-profiles_guardians-list/">Guardians List</a>
-        
-    </li>
-
-        
+                <li class="">
+                    
+    <a class="" href="../invitations_accept/">Accept</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../invitations_create/">Create</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../invitations_delete/">Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../invitations_get/">Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../invitations_list/">List</a>
+                </li>
     </ul>
-<li>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Registrations</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../registrations_create/">Create</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../registrations_delete/">Delete</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">User Profiles</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../user-profiles_get/">Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../user-profiles_guardian-invitations-create/">Guardian Invitations Create</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../user-profiles_guardian-invitations-get/">Guardian Invitations Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../user-profiles_guardian-invitations-list/">Guardian Invitations List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../user-profiles_guardian-invitations-patch/">Guardian Invitations Patch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../user-profiles_guardians-delete/">Guardians Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../user-profiles_guardians-get/">Guardians Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../user-profiles_guardians-list/">Guardians List</a>
+                </li>
+    </ul>
+	    </li>
           
         </ul>
       </div>
@@ -405,7 +321,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">classroom v1.0.5+20170510</a>
+        <a href="..">classroom v1.0.6+20170926</a>
       </nav>
 
       
@@ -466,6 +382,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <p>For example, a structure like this:</p>
 <pre><code>Course:
   alternate-link: string
+  calendar-id: string
   course-group-email: string
   course-state: string
   creation-time: string
@@ -490,42 +407,46 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
 <li>
-<p><code>-r .    alternate-link=consetetur</code></p>
+<p><code>-r .    alternate-link=dolores</code></p>
 <ul>
 <li>
 <p>Absolute link to this course in the Classroom web UI.</p>
 <p>Read-only.
-* <code>course-group-email=dolore</code>
+* <code>calendar-id=sit</code>
+    - The Calendar ID for a calendar that all course members can see, to which
+Classroom adds events for course work and announcements in the course.</p>
+<p>Read-only.
+* <code>course-group-email=diam</code>
     - The email address of a Google group containing all members of the course.
 This group does not accept email and can only be used for permissions.</p>
 <p>Read-only.
-<em> <code>course-state=duo</code>
+<em> <code>course-state=ut</code>
     - State of the course.
 If unspecified, the default state is <code>PROVISIONED</code>.
-</em> <code>creation-time=aliquyam</code>
+</em> <code>creation-time=justo</code>
     - Creation time of the course.
 Specifying this field in a course update mask results in an error.</p>
 <p>Read-only.
-<em> <code>description=lorem</code>
+<em> <code>description=est</code>
     - Optional description.
 For example, &#34;We&#39;ll be learning about the structure of living
 creatures from a combination of textbooks, guest lectures, and lab work.
 Expect to be excited!&#34;
 If set, this field must be a valid UTF-8 string and no longer than 30,000
 characters.
-</em> <code>description-heading=et</code>
+</em> <code>description-heading=amet</code>
     - Optional heading for the description.
 For example, &#34;Welcome to 10th Grade Biology.&#34;
 If set, this field must be a valid UTF-8 string and no longer than 3600
 characters.
-* <code>enrollment-code=clita</code>
+* <code>enrollment-code=accusam</code>
     - Enrollment code to use when joining this course.
 Specifying this field in a course update mask results in an error.</p>
 <p>Read-only.
 * <code>guardians-enabled=true</code>
     - Whether or not guardian notifications are enabled for this course.</p>
 <p>Read-only.
-* <code>id=takimata</code>
+* <code>id=diam</code>
     - Identifier for this course assigned by Classroom.</p>
 <p>When
 creating a course,
@@ -534,12 +455,12 @@ alias string in the
 request to create a corresponding alias. The <code>id</code> is still assigned by
 Classroom and cannot be updated after the course is created.</p>
 <p>Specifying this field in a course update mask results in an error.
-<em> <code>name=nonumy</code>
+<em> <code>name=justo</code>
     - Name of the course.
 For example, &#34;10th Grade Biology&#34;.
 The name is required. It must be between 1 and 750 characters and a valid
 UTF-8 string.
-</em> <code>owner-id=kasd</code>
+</em> <code>owner-id=est</code>
     - The identifier of the owner of a course.</p>
 <p>When specified as a parameter of a
 create course request, this
@@ -550,37 +471,38 @@ The identifier can be one of the following:</p>
 <li>the email address of the user</li>
 <li>the string literal <code>&amp;#34;me&amp;#34;</code>, indicating the requesting user</li>
 </ul>
-<p>This must be set in a create request. Specifying this field in a course
-update mask results in an <code>INVALID_ARGUMENT</code> error.
-<em> <code>room=sanctus</code>
+<p>This must be set in a create request. Admins can also specify this field
+in a patch course request to
+transfer ownership. In other contexts, it is read-only.
+<em> <code>room=clita</code>
     - Optional room location.
 For example, &#34;301&#34;.
 If set, this field must be a valid UTF-8 string and no longer than 650
 characters.
-</em> <code>section=takimata</code>
+</em> <code>section=invidunt</code>
     - Section of the course.
 For example, &#34;Period 2&#34;.
 If set, this field must be a valid UTF-8 string and no longer than 2800
 characters.
-* <code>teacher-folder    alternate-link=at</code>
+* <code>teacher-folder    alternate-link=ut</code>
     - URL that can be used to access the Drive folder.</p>
 <p>Read-only.
-<em> <code>id=labore</code>
+<em> <code>id=dolores</code>
     - Drive API resource ID.
-</em> <code>title=invidunt</code>
+</em> <code>title=eos</code>
     - Title of the Drive folder.</p>
 <p>Read-only.</p>
 </li>
 </ul>
 </li>
 <li>
-<p><code>..    teacher-group-email=ea</code></p>
+<p><code>..    teacher-group-email=voluptua.</code></p>
 <ul>
 <li>
 <p>The email address of a Google group containing all teachers of the course.
     This group does not accept email and can only be used for permissions.</p>
 <p>Read-only.
-* <code>update-time=sadipscing</code>
+* <code>update-time=duo</code>
     - Time of the most recent update to this course.
 Specifying this field in a course update mask results in an error.</p>
 <p>Read-only.</p>
@@ -624,7 +546,11 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <li><code>description</code></li>
 <li><code>room</code></li>
 <li><code>courseState</code></li>
+<li><code>ownerId</code></li>
 </ul>
+<p>Note: patches to ownerId are treated as being effective immediately, but in
+practice it may take some time for the ownership transfer of all affected
+resources to complete.</p>
 <p>When set in a query parameter, this field should be specified as</p>
 <p><code>updateMask=&amp;lt;field1&amp;gt;,&amp;lt;field2&amp;gt;,...</code></p>
 </li>
@@ -750,7 +676,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
   <div class="rst-versions" role="note" style="cursor: pointer">
     <span class="rst-current-version" data-toggle="rst-current-version">
       
-          <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/classroom1-cli" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+          <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/classroom1-cli" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
         <span><a href="../courses_list/" style="color: #fcfcfc;">&laquo; Previous</a></span>

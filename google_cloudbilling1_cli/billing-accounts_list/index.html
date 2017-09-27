@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>List - cloudbilling v1.0.5+20170504</title>
+  <title>List - Cloudbilling v1.0.6+20170813</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> cloudbilling v1.0.5+20170504</a>
+        <a href=".." class="icon icon-home"> Cloudbilling v1.0.6+20170813</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -45,80 +45,76 @@
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
 	<ul class="current">
+	  
           
-            <li>
-    <li class="toctree-l1 ">
-        <a class="" href="..">Home</a>
-        
-    </li>
-<li>
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Home</a>
+	    </li>
           
-            <li>
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Billing Accounts</span>
     <ul class="subnav">
-    <li><span>Billing Accounts</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../billing-accounts_get/">Get</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 current">
-        <a class="current" href="./">List</a>
-        
-            <ul>
-            
-                <li class="toctree-l3"><a href="#scopes">Scopes</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#optional-output-flags">Optional Output Flags</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#optional-method-properties">Optional Method Properties</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#optional-general-properties">Optional General Properties</a></li>
-                
-            
-            </ul>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../billing-accounts_projects-list/">Projects List</a>
-        
-    </li>
-
-        
-    </ul>
-<li>
-          
-            <li>
+                <li class="">
+                    
+    <a class="" href="../billing-accounts_get/">Get</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">List</a>
     <ul class="subnav">
-    <li><span>Projects</span></li>
-
-        
             
-    <li class="toctree-l1 ">
-        <a class="" href="../projects_get-billing-info/">Get Billing Info</a>
-        
-    </li>
+    <li class="toctree-l3"><a href="#scopes">Scopes</a></li>
+    
 
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../projects_update-billing-info/">Update Billing Info</a>
-        
-    </li>
+    <li class="toctree-l3"><a href="#optional-output-flags">Optional Output Flags</a></li>
+    
 
-        
+    <li class="toctree-l3"><a href="#optional-method-properties">Optional Method Properties</a></li>
+    
+
+    <li class="toctree-l3"><a href="#optional-general-properties">Optional General Properties</a></li>
+    
+
     </ul>
-<li>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../billing-accounts_projects-list/">Projects List</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Projects</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../projects_get-billing-info/">Get Billing Info</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_update-billing-info/">Update Billing Info</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Services</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../services_list/">List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../services_skus-list/">Skus List</a>
+                </li>
+    </ul>
+	    </li>
           
         </ul>
       </div>
@@ -130,7 +126,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">cloudbilling v1.0.5+20170504</a>
+        <a href="..">Cloudbilling v1.0.6+20170813</a>
       </nav>
 
       
@@ -182,18 +178,18 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p page-size=integer</strong></p>
-<ul>
-<li>Requested page size. The maximum page size is 100; this is also the
-    default.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p page-token=string</strong></p>
 <ul>
 <li>A token identifying a page of results to return. This should be a
     <code>next_page_token</code> value returned from a previous <code>ListBillingAccounts</code>
     call. If unspecified, the first page of results is returned.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p page-size=integer</strong></p>
+<ul>
+<li>Requested page size. The maximum page size is 100; this is also the
+    default.</li>
 </ul>
 </li>
 </ul>
@@ -316,7 +312,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
   <div class="rst-versions" role="note" style="cursor: pointer">
     <span class="rst-current-version" data-toggle="rst-current-version">
       
-          <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/cloudbilling1-cli" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+          <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/cloudbilling1-cli" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
         <span><a href="../billing-accounts_get/" style="color: #fcfcfc;">&laquo; Previous</a></span>

@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Zones Clusters Set Master Auth - container v1.0.5+20170430</title>
+  <title>Zones Clusters Set Master Auth - Container v1.0.6+20170915</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> container v1.0.5+20170430</a>
+        <a href=".." class="icon icon-home"> Container v1.0.6+20170915</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -45,182 +45,163 @@
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
 	<ul class="current">
+	  
           
-            <li>
-    <li class="toctree-l1 ">
-        <a class="" href="..">Home</a>
-        
-    </li>
-<li>
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Home</a>
+	    </li>
           
-            <li>
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Projects</span>
     <ul class="subnav">
-    <li><span>Projects</span></li>
+                <li class="">
+                    
+    <a class="" href="../projects_zones-clusters-addons/">Zones Clusters Addons</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_zones-clusters-complete-ip-rotation/">Zones Clusters Complete Ip Rotation</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_zones-clusters-create/">Zones Clusters Create</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_zones-clusters-delete/">Zones Clusters Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_zones-clusters-get/">Zones Clusters Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_zones-clusters-legacy-abac/">Zones Clusters Legacy Abac</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_zones-clusters-list/">Zones Clusters List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_zones-clusters-locations/">Zones Clusters Locations</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_zones-clusters-logging/">Zones Clusters Logging</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_zones-clusters-master/">Zones Clusters Master</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_zones-clusters-monitoring/">Zones Clusters Monitoring</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_zones-clusters-node-pools-autoscaling/">Zones Clusters Node Pools Autoscaling</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_zones-clusters-node-pools-create/">Zones Clusters Node Pools Create</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_zones-clusters-node-pools-delete/">Zones Clusters Node Pools Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_zones-clusters-node-pools-get/">Zones Clusters Node Pools Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_zones-clusters-node-pools-list/">Zones Clusters Node Pools List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_zones-clusters-node-pools-rollback/">Zones Clusters Node Pools Rollback</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_zones-clusters-node-pools-set-management/">Zones Clusters Node Pools Set Management</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_zones-clusters-node-pools-set-size/">Zones Clusters Node Pools Set Size</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_zones-clusters-node-pools-update/">Zones Clusters Node Pools Update</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_zones-clusters-resource-labels/">Zones Clusters Resource Labels</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_zones-clusters-set-maintenance-policy/">Zones Clusters Set Maintenance Policy</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">Zones Clusters Set Master Auth</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#scopes">Scopes</a></li>
+    
 
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../projects_zones-clusters-complete-ip-rotation/">Zones Clusters Complete Ip Rotation</a>
-        
-    </li>
+    <li class="toctree-l3"><a href="#required-scalar-arguments">Required Scalar Arguments</a></li>
+    
 
+    <li class="toctree-l3"><a href="#required-request-value">Required Request Value</a></li>
+    
+        <ul>
         
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../projects_zones-clusters-create/">Zones Clusters Create</a>
+            <li><a class="toctree-l4" href="#about-cursors">About Cursors</a></li>
         
-    </li>
+        </ul>
+    
 
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../projects_zones-clusters-delete/">Zones Clusters Delete</a>
-        
-    </li>
+    <li class="toctree-l3"><a href="#optional-output-flags">Optional Output Flags</a></li>
+    
 
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../projects_zones-clusters-get/">Zones Clusters Get</a>
-        
-    </li>
+    <li class="toctree-l3"><a href="#optional-general-properties">Optional General Properties</a></li>
+    
 
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../projects_zones-clusters-legacy-abac/">Zones Clusters Legacy Abac</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../projects_zones-clusters-list/">Zones Clusters List</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../projects_zones-clusters-node-pools-create/">Zones Clusters Node Pools Create</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../projects_zones-clusters-node-pools-delete/">Zones Clusters Node Pools Delete</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../projects_zones-clusters-node-pools-get/">Zones Clusters Node Pools Get</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../projects_zones-clusters-node-pools-list/">Zones Clusters Node Pools List</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../projects_zones-clusters-node-pools-rollback/">Zones Clusters Node Pools Rollback</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../projects_zones-clusters-node-pools-set-management/">Zones Clusters Node Pools Set Management</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../projects_zones-clusters-resource-labels/">Zones Clusters Resource Labels</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 current">
-        <a class="current" href="./">Zones Clusters Set Master Auth</a>
-        
-            <ul>
-            
-                <li class="toctree-l3"><a href="#scopes">Scopes</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#required-scalar-arguments">Required Scalar Arguments</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#required-request-value">Required Request Value</a></li>
-                
-                    <li><a class="toctree-l4" href="#about-cursors">About Cursors</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#optional-output-flags">Optional Output Flags</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#optional-general-properties">Optional General Properties</a></li>
-                
-            
-            </ul>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../projects_zones-clusters-start-ip-rotation/">Zones Clusters Start Ip Rotation</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../projects_zones-clusters-update/">Zones Clusters Update</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../projects_zones-get-serverconfig/">Zones Get Serverconfig</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../projects_zones-operations-cancel/">Zones Operations Cancel</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../projects_zones-operations-get/">Zones Operations Get</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../projects_zones-operations-list/">Zones Operations List</a>
-        
-    </li>
-
-        
     </ul>
-<li>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_zones-clusters-set-network-policy/">Zones Clusters Set Network Policy</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_zones-clusters-start-ip-rotation/">Zones Clusters Start Ip Rotation</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_zones-clusters-update/">Zones Clusters Update</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_zones-get-serverconfig/">Zones Get Serverconfig</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_zones-operations-cancel/">Zones Operations Cancel</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_zones-operations-get/">Zones Operations Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_zones-operations-list/">Zones Operations List</a>
+                </li>
+    </ul>
+	    </li>
           
         </ul>
       </div>
@@ -232,7 +213,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">container v1.0.5+20170430</a>
+        <a href="..">Container v1.0.6+20170915</a>
       </nav>
 
       
@@ -294,6 +275,8 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   action: string
   update:
     client-certificate: string
+    client-certificate-config:
+      issue-client-certificate: boolean
     client-key: string
     cluster-ca-certificate: string
     password: string
@@ -303,33 +286,41 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    action=consetetur</code><ul>
+<li><code>-r .    action=tempor</code><ul>
 <li>The exact form of action to be taken on the master auth</li>
 </ul>
 </li>
-<li><code>update    client-certificate=sadipscing</code><ul>
+<li><code>update    client-certificate=sea</code><ul>
 <li>[Output only] Base64-encoded public certificate used by clients to
     authenticate to the cluster endpoint.</li>
 </ul>
 </li>
-<li><code>client-key=vero</code><ul>
+<li>
+<p><code>client-certificate-config    issue-client-certificate=false</code></p>
+<ul>
+<li>Issue a client certificate.</li>
+</ul>
+</li>
+<li>
+<p><code>..    client-key=ipsum</code></p>
+<ul>
 <li>[Output only] Base64-encoded private key used by clients to authenticate
     to the cluster endpoint.</li>
 </ul>
 </li>
-<li><code>cluster-ca-certificate=sadipscing</code><ul>
+<li><code>cluster-ca-certificate=aliquyam</code><ul>
 <li>[Output only] Base64-encoded public certificate that is the root of
     trust for the cluster.</li>
 </ul>
 </li>
-<li><code>password=invidunt</code><ul>
+<li><code>password=dolores</code><ul>
 <li>The password to use for HTTP basic authentication to the master endpoint.
     Because the master endpoint is open to the Internet, you should create a
     strong password.  If a password is provided for cluster creation, username
     must be non-empty.</li>
 </ul>
 </li>
-<li><code>username=consetetur</code><ul>
+<li><code>username=sit</code><ul>
 <li>The username to use for HTTP basic authentication to the master endpoint.
     For clusters v1.6.0 and later, you can disable basic authentication by
     providing an empty username.</li>
@@ -444,10 +435,10 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../projects_zones-clusters-start-ip-rotation/" class="btn btn-neutral float-right" title="Zones Clusters Start Ip Rotation">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../projects_zones-clusters-set-network-policy/" class="btn btn-neutral float-right" title="Zones Clusters Set Network Policy">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../projects_zones-clusters-resource-labels/" class="btn btn-neutral" title="Zones Clusters Resource Labels"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../projects_zones-clusters-set-maintenance-policy/" class="btn btn-neutral" title="Zones Clusters Set Maintenance Policy"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -474,13 +465,13 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   <div class="rst-versions" role="note" style="cursor: pointer">
     <span class="rst-current-version" data-toggle="rst-current-version">
       
-          <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/container1-cli" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+          <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/container1-cli" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../projects_zones-clusters-resource-labels/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../projects_zones-clusters-set-maintenance-policy/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../projects_zones-clusters-start-ip-rotation/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../projects_zones-clusters-set-network-policy/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

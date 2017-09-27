@@ -8,7 +8,7 @@
   <meta name="description" content="A complete library to interact with Android Enterprise (protocol v1)">
   
   <link rel="shortcut icon" href="./img/favicon.ico">
-  <title>Home - Android Enterprise v1.0.5+20170516</title>
+  <title>Home - Android Enterprise v1.0.6+20170922</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="./css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href="." class="icon icon-home"> Android Enterprise v1.0.5+20170516</a>
+        <a href="." class="icon icon-home"> Android Enterprise v1.0.6+20170922</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -45,686 +45,447 @@
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
 	<ul class="current">
+	  
           
-            <li>
-    <li class="toctree-l1 current">
-        <a class="current" href=".">Home</a>
-        
-            <ul>
-            
-                <li class="toctree-l3"><a href="#installation-and-source-code">Installation and Source Code</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#usage">Usage</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#configuration">Configuration</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#authentication">Authentication</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#application-secrets">Application Secrets</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#debugging">Debugging</a></li>
-                
-            
-            </ul>
-        
-    </li>
-<li>
-          
-            <li>
+            <li class="toctree-l1 current">
+		
+    <a class="current" href=".">Home</a>
     <ul class="subnav">
-    <li><span>Devices</span></li>
-
-        
             
-    <li class="toctree-l1 ">
-        <a class="" href="devices_get/">Get</a>
-        
-    </li>
+    <li class="toctree-l2"><a href="#installation-and-source-code">Installation and Source Code</a></li>
+    
 
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="devices_get-state/">Get State</a>
-        
-    </li>
+    <li class="toctree-l2"><a href="#usage">Usage</a></li>
+    
 
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="devices_list/">List</a>
-        
-    </li>
+    <li class="toctree-l2"><a href="#configuration">Configuration</a></li>
+    
 
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="devices_set-state/">Set State</a>
-        
-    </li>
+    <li class="toctree-l2"><a href="#authentication">Authentication</a></li>
+    
 
-        
+    <li class="toctree-l2"><a href="#application-secrets">Application Secrets</a></li>
+    
+
+    <li class="toctree-l2"><a href="#debugging">Debugging</a></li>
+    
+
     </ul>
-<li>
+	    </li>
           
-            <li>
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Devices</span>
     <ul class="subnav">
-    <li><span>Enterprises</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="enterprises_acknowledge-notification-set/">Acknowledge Notification Set</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="enterprises_complete-signup/">Complete Signup</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="enterprises_create-web-token/">Create Web Token</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="enterprises_delete/">Delete</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="enterprises_enroll/">Enroll</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="enterprises_generate-signup-url/">Generate Signup Url</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="enterprises_get/">Get</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="enterprises_get-service-account/">Get Service Account</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="enterprises_get-store-layout/">Get Store Layout</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="enterprises_insert/">Insert</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="enterprises_list/">List</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="enterprises_pull-notification-set/">Pull Notification Set</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="enterprises_send-test-push-notification/">Send Test Push Notification</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="enterprises_set-account/">Set Account</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="enterprises_set-store-layout/">Set Store Layout</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="enterprises_unenroll/">Unenroll</a>
-        
-    </li>
-
-        
+                <li class="">
+                    
+    <a class="" href="devices_get/">Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="devices_get-state/">Get State</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="devices_list/">List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="devices_set-state/">Set State</a>
+                </li>
     </ul>
-<li>
+	    </li>
           
-            <li>
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Enterprises</span>
     <ul class="subnav">
-    <li><span>Entitlements</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="entitlements_delete/">Delete</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="entitlements_get/">Get</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="entitlements_list/">List</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="entitlements_patch/">Patch</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="entitlements_update/">Update</a>
-        
-    </li>
-
-        
+                <li class="">
+                    
+    <a class="" href="enterprises_acknowledge-notification-set/">Acknowledge Notification Set</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="enterprises_complete-signup/">Complete Signup</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="enterprises_create-web-token/">Create Web Token</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="enterprises_delete/">Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="enterprises_enroll/">Enroll</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="enterprises_generate-signup-url/">Generate Signup Url</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="enterprises_get/">Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="enterprises_get-android-device-policy-config/">Get Android Device Policy Config</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="enterprises_get-service-account/">Get Service Account</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="enterprises_get-store-layout/">Get Store Layout</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="enterprises_insert/">Insert</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="enterprises_list/">List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="enterprises_pull-notification-set/">Pull Notification Set</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="enterprises_send-test-push-notification/">Send Test Push Notification</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="enterprises_set-account/">Set Account</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="enterprises_set-android-device-policy-config/">Set Android Device Policy Config</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="enterprises_set-store-layout/">Set Store Layout</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="enterprises_unenroll/">Unenroll</a>
+                </li>
     </ul>
-<li>
+	    </li>
           
-            <li>
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Entitlements</span>
     <ul class="subnav">
-    <li><span>Grouplicenses</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="grouplicenses_get/">Get</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="grouplicenses_list/">List</a>
-        
-    </li>
-
-        
+                <li class="">
+                    
+    <a class="" href="entitlements_delete/">Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="entitlements_get/">Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="entitlements_list/">List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="entitlements_patch/">Patch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="entitlements_update/">Update</a>
+                </li>
     </ul>
-<li>
+	    </li>
           
-            <li>
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Grouplicenses</span>
     <ul class="subnav">
-    <li><span>Grouplicenseusers</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="grouplicenseusers_list/">List</a>
-        
-    </li>
-
-        
+                <li class="">
+                    
+    <a class="" href="grouplicenses_get/">Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="grouplicenses_list/">List</a>
+                </li>
     </ul>
-<li>
+	    </li>
           
-            <li>
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Grouplicenseusers</span>
     <ul class="subnav">
-    <li><span>Installs</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="installs_delete/">Delete</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="installs_get/">Get</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="installs_list/">List</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="installs_patch/">Patch</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="installs_update/">Update</a>
-        
-    </li>
-
-        
+                <li class="">
+                    
+    <a class="" href="grouplicenseusers_list/">List</a>
+                </li>
     </ul>
-<li>
+	    </li>
           
-            <li>
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Installs</span>
     <ul class="subnav">
-    <li><span>Managedconfigurationsfordevice</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="managedconfigurationsfordevice_delete/">Delete</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="managedconfigurationsfordevice_get/">Get</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="managedconfigurationsfordevice_list/">List</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="managedconfigurationsfordevice_patch/">Patch</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="managedconfigurationsfordevice_update/">Update</a>
-        
-    </li>
-
-        
+                <li class="">
+                    
+    <a class="" href="installs_delete/">Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="installs_get/">Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="installs_list/">List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="installs_patch/">Patch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="installs_update/">Update</a>
+                </li>
     </ul>
-<li>
+	    </li>
           
-            <li>
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Managedconfigurationsfordevice</span>
     <ul class="subnav">
-    <li><span>Managedconfigurationsforuser</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="managedconfigurationsforuser_delete/">Delete</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="managedconfigurationsforuser_get/">Get</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="managedconfigurationsforuser_list/">List</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="managedconfigurationsforuser_patch/">Patch</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="managedconfigurationsforuser_update/">Update</a>
-        
-    </li>
-
-        
+                <li class="">
+                    
+    <a class="" href="managedconfigurationsfordevice_delete/">Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="managedconfigurationsfordevice_get/">Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="managedconfigurationsfordevice_list/">List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="managedconfigurationsfordevice_patch/">Patch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="managedconfigurationsfordevice_update/">Update</a>
+                </li>
     </ul>
-<li>
+	    </li>
           
-            <li>
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Managedconfigurationsforuser</span>
     <ul class="subnav">
-    <li><span>Permissions</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="permissions_get/">Get</a>
-        
-    </li>
-
-        
+                <li class="">
+                    
+    <a class="" href="managedconfigurationsforuser_delete/">Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="managedconfigurationsforuser_get/">Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="managedconfigurationsforuser_list/">List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="managedconfigurationsforuser_patch/">Patch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="managedconfigurationsforuser_update/">Update</a>
+                </li>
     </ul>
-<li>
+	    </li>
           
-            <li>
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Permissions</span>
     <ul class="subnav">
-    <li><span>Products</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="products_approve/">Approve</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="products_generate-approval-url/">Generate Approval Url</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="products_get/">Get</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="products_get-app-restrictions-schema/">Get App Restrictions Schema</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="products_get-permissions/">Get Permissions</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="products_list/">List</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="products_unapprove/">Unapprove</a>
-        
-    </li>
-
-        
+                <li class="">
+                    
+    <a class="" href="permissions_get/">Get</a>
+                </li>
     </ul>
-<li>
+	    </li>
           
-            <li>
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Products</span>
     <ul class="subnav">
-    <li><span>Serviceaccountkeys</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="serviceaccountkeys_delete/">Delete</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="serviceaccountkeys_insert/">Insert</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="serviceaccountkeys_list/">List</a>
-        
-    </li>
-
-        
+                <li class="">
+                    
+    <a class="" href="products_approve/">Approve</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="products_generate-approval-url/">Generate Approval Url</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="products_get/">Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="products_get-app-restrictions-schema/">Get App Restrictions Schema</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="products_get-permissions/">Get Permissions</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="products_list/">List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="products_unapprove/">Unapprove</a>
+                </li>
     </ul>
-<li>
+	    </li>
           
-            <li>
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Serviceaccountkeys</span>
     <ul class="subnav">
-    <li><span>Storelayoutclusters</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="storelayoutclusters_delete/">Delete</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="storelayoutclusters_get/">Get</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="storelayoutclusters_insert/">Insert</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="storelayoutclusters_list/">List</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="storelayoutclusters_patch/">Patch</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="storelayoutclusters_update/">Update</a>
-        
-    </li>
-
-        
+                <li class="">
+                    
+    <a class="" href="serviceaccountkeys_delete/">Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="serviceaccountkeys_insert/">Insert</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="serviceaccountkeys_list/">List</a>
+                </li>
     </ul>
-<li>
+	    </li>
           
-            <li>
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Storelayoutclusters</span>
     <ul class="subnav">
-    <li><span>Storelayoutpages</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="storelayoutpages_delete/">Delete</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="storelayoutpages_get/">Get</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="storelayoutpages_insert/">Insert</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="storelayoutpages_list/">List</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="storelayoutpages_patch/">Patch</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="storelayoutpages_update/">Update</a>
-        
-    </li>
-
-        
+                <li class="">
+                    
+    <a class="" href="storelayoutclusters_delete/">Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="storelayoutclusters_get/">Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="storelayoutclusters_insert/">Insert</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="storelayoutclusters_list/">List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="storelayoutclusters_patch/">Patch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="storelayoutclusters_update/">Update</a>
+                </li>
     </ul>
-<li>
+	    </li>
           
-            <li>
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Storelayoutpages</span>
     <ul class="subnav">
-    <li><span>Users</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="users_delete/">Delete</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="users_generate-authentication-token/">Generate Authentication Token</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="users_generate-token/">Generate Token</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="users_get/">Get</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="users_get-available-product-set/">Get Available Product Set</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="users_insert/">Insert</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="users_list/">List</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="users_patch/">Patch</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="users_revoke-token/">Revoke Token</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="users_set-available-product-set/">Set Available Product Set</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="users_update/">Update</a>
-        
-    </li>
-
-        
+                <li class="">
+                    
+    <a class="" href="storelayoutpages_delete/">Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="storelayoutpages_get/">Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="storelayoutpages_insert/">Insert</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="storelayoutpages_list/">List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="storelayoutpages_patch/">Patch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="storelayoutpages_update/">Update</a>
+                </li>
     </ul>
-<li>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Users</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="users_delete/">Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="users_generate-authentication-token/">Generate Authentication Token</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="users_generate-token/">Generate Token</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="users_get/">Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="users_get-available-product-set/">Get Available Product Set</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="users_insert/">Insert</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="users_list/">List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="users_patch/">Patch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="users_revoke-token/">Revoke Token</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="users_set-available-product-set/">Set Available Product Set</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="users_update/">Update</a>
+                </li>
+    </ul>
+	    </li>
           
         </ul>
       </div>
@@ -736,7 +497,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href=".">Android Enterprise v1.0.5+20170516</a>
+        <a href=".">Android Enterprise v1.0.6+20170922</a>
       </nav>
 
       
@@ -780,7 +541,7 @@ capabilities. Errors will be printed to standard error, and cause the program's 
 
 <p>Find the source code <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/androidenterprise1-cli">on github</a>.</p>
 <h1 id="usage">Usage</h1>
-<p>This documentation was generated from the <em>Android Enterprise</em> API at revision <em>20170516</em>. The CLI is at version <em>1.0.5</em>.</p>
+<p>This documentation was generated from the <em>Android Enterprise</em> API at revision <em>20170922</em>. The CLI is at version <em>1.0.6</em>.</p>
 <pre><code class="bash">androidenterprise1 [options]
         devices
                 get &lt;enterprise-id&gt; &lt;user-id&gt; &lt;device-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
@@ -795,6 +556,7 @@ capabilities. Errors will be printed to standard error, and cause the program's 
                 enroll &lt;token&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 generate-signup-url [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 get &lt;enterprise-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                get-android-device-policy-config &lt;enterprise-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 get-service-account &lt;enterprise-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 get-store-layout &lt;enterprise-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 insert &lt;token&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
@@ -802,6 +564,7 @@ capabilities. Errors will be printed to standard error, and cause the program's 
                 pull-notification-set [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 send-test-push-notification &lt;enterprise-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 set-account &lt;enterprise-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                set-android-device-policy-config &lt;enterprise-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 set-store-layout &lt;enterprise-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 unenroll &lt;enterprise-id&gt; [-p &lt;v&gt;]...
         entitlements
@@ -965,7 +728,7 @@ issue at hand.</p>
   <div class="rst-versions" role="note" style="cursor: pointer">
     <span class="rst-current-version" data-toggle="rst-current-version">
       
-          <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/androidenterprise1-cli" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+          <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/androidenterprise1-cli" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
       
@@ -979,6 +742,6 @@ issue at hand.</p>
 </html>
 
 <!--
-MkDocs version : 0.16.1
-Build Date UTC : 2017-05-26 14:35:30
+MkDocs version : 0.16.3
+Build Date UTC : 2017-09-27 12:56:24
 -->

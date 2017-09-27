@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Modules Versions Patch - appengine v1.0.5+20170522</title>
+  <title>Modules Versions Patch - appengine v1.0.6+20170914</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> appengine v1.0.5+20170522</a>
+        <a href=".." class="icon icon-home"> appengine v1.0.6+20170914</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -45,185 +45,126 @@
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
 	<ul class="current">
+	  
           
-            <li>
-    <li class="toctree-l1 ">
-        <a class="" href="..">Home</a>
-        
-    </li>
-<li>
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Home</a>
+	    </li>
           
-            <li>
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Apps</span>
     <ul class="subnav">
-    <li><span>Apps</span></li>
+                <li class="">
+                    
+    <a class="" href="../apps_create/">Create</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../apps_get/">Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../apps_locations-get/">Locations Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../apps_locations-list/">Locations List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../apps_modules-delete/">Modules Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../apps_modules-get/">Modules Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../apps_modules-list/">Modules List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../apps_modules-patch/">Modules Patch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../apps_modules-versions-create/">Modules Versions Create</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../apps_modules-versions-delete/">Modules Versions Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../apps_modules-versions-get/">Modules Versions Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../apps_modules-versions-instances-debug/">Modules Versions Instances Debug</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../apps_modules-versions-instances-delete/">Modules Versions Instances Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../apps_modules-versions-instances-get/">Modules Versions Instances Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../apps_modules-versions-instances-list/">Modules Versions Instances List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../apps_modules-versions-list/">Modules Versions List</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">Modules Versions Patch</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#scopes">Scopes</a></li>
+    
 
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../apps_create/">Create</a>
-        
-    </li>
+    <li class="toctree-l3"><a href="#required-scalar-arguments">Required Scalar Arguments</a></li>
+    
 
+    <li class="toctree-l3"><a href="#required-request-value">Required Request Value</a></li>
+    
+        <ul>
         
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../apps_get/">Get</a>
+            <li><a class="toctree-l4" href="#about-cursors">About Cursors</a></li>
         
-    </li>
+        </ul>
+    
 
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../apps_locations-get/">Locations Get</a>
-        
-    </li>
+    <li class="toctree-l3"><a href="#optional-output-flags">Optional Output Flags</a></li>
+    
 
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../apps_locations-list/">Locations List</a>
-        
-    </li>
+    <li class="toctree-l3"><a href="#optional-method-properties">Optional Method Properties</a></li>
+    
 
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../apps_modules-delete/">Modules Delete</a>
-        
-    </li>
+    <li class="toctree-l3"><a href="#optional-general-properties">Optional General Properties</a></li>
+    
 
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../apps_modules-get/">Modules Get</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../apps_modules-list/">Modules List</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../apps_modules-patch/">Modules Patch</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../apps_modules-versions-create/">Modules Versions Create</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../apps_modules-versions-delete/">Modules Versions Delete</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../apps_modules-versions-get/">Modules Versions Get</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../apps_modules-versions-instances-debug/">Modules Versions Instances Debug</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../apps_modules-versions-instances-delete/">Modules Versions Instances Delete</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../apps_modules-versions-instances-get/">Modules Versions Instances Get</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../apps_modules-versions-instances-list/">Modules Versions Instances List</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../apps_modules-versions-list/">Modules Versions List</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 current">
-        <a class="current" href="./">Modules Versions Patch</a>
-        
-            <ul>
-            
-                <li class="toctree-l3"><a href="#scopes">Scopes</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#required-scalar-arguments">Required Scalar Arguments</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#required-request-value">Required Request Value</a></li>
-                
-                    <li><a class="toctree-l4" href="#about-cursors">About Cursors</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#optional-output-flags">Optional Output Flags</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#optional-method-properties">Optional Method Properties</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#optional-general-properties">Optional General Properties</a></li>
-                
-            
-            </ul>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../apps_operations-get/">Operations Get</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../apps_operations-list/">Operations List</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../apps_patch/">Patch</a>
-        
-    </li>
-
-        
     </ul>
-<li>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../apps_operations-get/">Operations Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../apps_operations-list/">Operations List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../apps_patch/">Patch</a>
+                </li>
+    </ul>
+	    </li>
           
         </ul>
       </div>
@@ -235,7 +176,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">appengine v1.0.5+20170522</a>
+        <a href="..">appengine v1.0.6+20170914</a>
       </nav>
 
       
@@ -360,6 +301,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
     disk-gb: number
     memory-gb: number
   runtime: string
+  runtime-api-version: string
   serving-status: string
   threadsafe: boolean
   vm: boolean
@@ -368,173 +310,173 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .api-config    auth-fail-action=rebum.</code><ul>
+<li><code>-r .api-config    auth-fail-action=consetetur</code><ul>
 <li>Action to take when users access resources that require authentication. Defaults to redirect.</li>
 </ul>
 </li>
-<li><code>login=consetetur</code><ul>
+<li><code>login=sadipscing</code><ul>
 <li>Level of login required to access this resource. Defaults to optional.</li>
 </ul>
 </li>
-<li><code>script=sadipscing</code><ul>
+<li><code>script=vero</code><ul>
 <li>Path to the script from the application root directory.</li>
 </ul>
 </li>
-<li><code>security-level=vero</code><ul>
+<li><code>security-level=sadipscing</code><ul>
 <li>Security (HTTPS) enforcement for this URL.</li>
 </ul>
 </li>
 <li>
-<p><code>url=sadipscing</code></p>
+<p><code>url=invidunt</code></p>
 <ul>
 <li>URL to serve the endpoint at.</li>
 </ul>
 </li>
 <li>
-<p><code>..automatic-scaling    cool-down-period=invidunt</code></p>
+<p><code>..automatic-scaling    cool-down-period=consetetur</code></p>
 <ul>
 <li>Amount of time that the Autoscaler (https://cloud.google.com/compute/docs/autoscaler/) should wait between changes to the number of virtual machines. Only applicable for VM runtimes.</li>
 </ul>
 </li>
-<li><code>cpu-utilization    aggregation-window-length=consetetur</code><ul>
+<li><code>cpu-utilization    aggregation-window-length=dolore</code><ul>
 <li>Period of time over which CPU utilization is calculated.</li>
 </ul>
 </li>
 <li>
-<p><code>target-utilization=0.170115264625</code></p>
+<p><code>target-utilization=0.819980137634</code></p>
 <ul>
 <li>Target CPU utilization ratio to maintain when scaling. Must be between 0 and 1.</li>
 </ul>
 </li>
 <li>
-<p><code>..disk-utilization    target-read-bytes-per-sec=82</code></p>
+<p><code>..disk-utilization    target-read-bytes-per-sec=19</code></p>
 <ul>
 <li>Target bytes read per second.</li>
 </ul>
 </li>
-<li><code>target-read-ops-per-sec=19</code><ul>
+<li><code>target-read-ops-per-sec=96</code><ul>
 <li>Target ops read per second.</li>
 </ul>
 </li>
-<li><code>target-write-bytes-per-sec=96</code><ul>
+<li><code>target-write-bytes-per-sec=84</code><ul>
 <li>Target bytes written per second.</li>
 </ul>
 </li>
 <li>
-<p><code>target-write-ops-per-sec=84</code></p>
+<p><code>target-write-ops-per-sec=88</code></p>
 <ul>
 <li>Target ops written per second.</li>
 </ul>
 </li>
 <li>
-<p><code>..    max-concurrent-requests=88</code></p>
+<p><code>..    max-concurrent-requests=56</code></p>
 <ul>
 <li>Number of concurrent requests an automatic scaling instance can accept before the scheduler spawns a new instance.Defaults to a runtime-specific value.</li>
 </ul>
 </li>
-<li><code>max-idle-instances=56</code><ul>
+<li><code>max-idle-instances=43</code><ul>
 <li>Maximum number of idle instances that should be maintained for this version.</li>
 </ul>
 </li>
-<li><code>max-pending-latency=takimata</code><ul>
+<li><code>max-pending-latency=nonumy</code><ul>
 <li>Maximum amount of time that a request should wait in the pending queue before starting a new instance to handle it.</li>
 </ul>
 </li>
-<li><code>max-total-instances=61</code><ul>
+<li><code>max-total-instances=88</code><ul>
 <li>Maximum number of instances that should be started to handle requests.</li>
 </ul>
 </li>
-<li><code>min-idle-instances=88</code><ul>
+<li><code>min-idle-instances=94</code><ul>
 <li>Minimum number of idle instances that should be maintained for this version. Only applicable for the default version of a module.</li>
 </ul>
 </li>
-<li><code>min-pending-latency=sanctus</code><ul>
+<li><code>min-pending-latency=takimata</code><ul>
 <li>Minimum amount of time a request should wait in the pending queue before starting a new instance to handle it.</li>
 </ul>
 </li>
-<li><code>min-total-instances=43</code><ul>
+<li><code>min-total-instances=74</code><ul>
 <li>Minimum number of instances that should be maintained for this version.</li>
 </ul>
 </li>
-<li><code>network-utilization    target-received-bytes-per-sec=74</code><ul>
+<li><code>network-utilization    target-received-bytes-per-sec=15</code><ul>
 <li>Target bytes received per second.</li>
 </ul>
 </li>
-<li><code>target-received-packets-per-sec=15</code><ul>
+<li><code>target-received-packets-per-sec=64</code><ul>
 <li>Target packets received per second.</li>
 </ul>
 </li>
-<li><code>target-sent-bytes-per-sec=64</code><ul>
+<li><code>target-sent-bytes-per-sec=35</code><ul>
 <li>Target bytes sent per second.</li>
 </ul>
 </li>
 <li>
-<p><code>target-sent-packets-per-sec=35</code></p>
+<p><code>target-sent-packets-per-sec=6</code></p>
 <ul>
 <li>Target packets sent per second.</li>
 </ul>
 </li>
 <li>
-<p><code>..request-utilization    target-concurrent-requests=6</code></p>
+<p><code>..request-utilization    target-concurrent-requests=35</code></p>
 <ul>
 <li>Target number of concurrent requests.</li>
 </ul>
 </li>
 <li>
-<p><code>target-request-count-per-sec=35</code></p>
+<p><code>target-request-count-per-sec=68</code></p>
 <ul>
 <li>Target requests per second.</li>
 </ul>
 </li>
 <li>
-<p><code>...basic-scaling    idle-timeout=dolore</code></p>
+<p><code>...basic-scaling    idle-timeout=nonumy</code></p>
 <ul>
 <li>Duration of time after the last request that an instance must wait before the instance is shut down.</li>
 </ul>
 </li>
 <li>
-<p><code>max-instances=60</code></p>
+<p><code>max-instances=72</code></p>
 <ul>
 <li>Maximum number of instances to create for this version.</li>
 </ul>
 </li>
 <li>
-<p><code>..    beta-settings=key=sed</code></p>
+<p><code>..    beta-settings=key=aliquyam</code></p>
 <ul>
 <li>Metadata settings that are supplied to this version to enable beta runtime features.</li>
 <li>the value will be associated with the given <code>key</code></li>
 </ul>
 </li>
-<li><code>creation-time=aliquyam</code><ul>
+<li><code>creation-time=sit</code><ul>
 <li>Time that this version was created.@OutputOnly</li>
 </ul>
 </li>
-<li><code>default-expiration=sit</code><ul>
+<li><code>default-expiration=eirmod</code><ul>
 <li>Duration that static files should be cached by web proxies and browsers. Only applicable if the corresponding StaticFilesHandler (https://cloud.google.com/appengine/docs/admin-api/reference/rest/v1/apps.services.versions#staticfileshandler) does not specify its own expiration time.Only returned in GET requests if view=FULL is set.</li>
 </ul>
 </li>
-<li><code>deployer=eirmod</code><ul>
+<li><code>deployer=consetetur</code><ul>
 <li>Email address of the user who created this version.@OutputOnly</li>
 </ul>
 </li>
 <li>
-<p><code>deployment.container    image=consetetur</code></p>
+<p><code>deployment.container    image=labore</code></p>
 <ul>
 <li>URI to the hosted container image in Google Container Registry. The URI must be fully qualified and include a tag or digest. Examples: &#34;gcr.io/my-project/image:tag&#34; or &#34;gcr.io/my-project/image@digest&#34;</li>
 </ul>
 </li>
 <li>
-<p><code>...    env=labore</code></p>
+<p><code>...    env=sed</code></p>
 <ul>
 <li>App Engine execution environment to use for this version.Defaults to 1.</li>
 </ul>
 </li>
-<li><code>env-variables=key=sed</code><ul>
+<li><code>env-variables=key=ea</code><ul>
 <li>Environment variables made available to the application.Only returned in GET requests if view=FULL is set.</li>
 <li>the value will be associated with the given <code>key</code></li>
 </ul>
 </li>
-<li><code>health-check    check-interval=ea</code><ul>
+<li><code>health-check    check-interval=gubergren</code><ul>
 <li>Interval between health checks.</li>
 </ul>
 </li>
@@ -542,99 +484,103 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>Whether to explicitly disable health checks for this instance.</li>
 </ul>
 </li>
-<li><code>healthy-threshold=19</code><ul>
+<li><code>healthy-threshold=77</code><ul>
 <li>Number of consecutive successful health checks required before receiving traffic.</li>
 </ul>
 </li>
-<li><code>host=eos</code><ul>
+<li><code>host=tempor</code><ul>
 <li>Host header to send when performing an HTTP health check. Example: &#34;myapp.appspot.com&#34;</li>
 </ul>
 </li>
-<li><code>restart-threshold=63</code><ul>
+<li><code>restart-threshold=42</code><ul>
 <li>Number of consecutive failed health checks required before an instance is restarted.</li>
 </ul>
 </li>
-<li><code>timeout=sea</code><ul>
+<li><code>timeout=labore</code><ul>
 <li>Time before the health check is considered failed.</li>
 </ul>
 </li>
 <li>
-<p><code>unhealthy-threshold=16</code></p>
+<p><code>unhealthy-threshold=47</code></p>
 <ul>
 <li>Number of consecutive failed health checks required before removing traffic.</li>
 </ul>
 </li>
 <li>
-<p><code>..    id=ipsum</code></p>
+<p><code>..    id=aliquyam</code></p>
 <ul>
 <li>Relative name of the version within the module. Example: v1. Version names can contain only lowercase letters, numbers, or hyphens. Reserved names: &#34;default&#34;, &#34;latest&#34;, and any name with the prefix &#34;ah-&#34;.</li>
 </ul>
 </li>
-<li><code>inbound-services=aliquyam</code><ul>
+<li><code>inbound-services=dolores</code><ul>
 <li>Before an application can receive email or XMPP messages, the application must be configured to enable the service.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>instance-class=dolores</code><ul>
+<li><code>instance-class=sit</code><ul>
 <li>Instance class that is used to run this version. Valid values are:
     AutomaticScaling: F1, F2, F4, F4_1G
     ManualScaling or BasicScaling: B1, B2, B4, B8, B4_1GDefaults to F1 for AutomaticScaling and B1 for ManualScaling or BasicScaling.</li>
 </ul>
 </li>
 <li>
-<p><code>manual-scaling    instances=3</code></p>
+<p><code>manual-scaling    instances=60</code></p>
 <ul>
 <li>Number of instances to assign to the module at the start. This number can later be altered by using the Modules API (https://cloud.google.com/appengine/docs/python/modules/functions) set_num_instances() function.</li>
 </ul>
 </li>
 <li>
-<p><code>..    name=diam</code></p>
+<p><code>..    name=ut</code></p>
 <ul>
 <li>Full path to the Version resource in the API. Example: apps/myapp/modules/default/versions/v1.@OutputOnly</li>
 </ul>
 </li>
-<li><code>network    forwarded-ports=ut</code><ul>
+<li><code>network    forwarded-ports=justo</code><ul>
 <li>List of ports, or port pairs, to forward from the virtual machine to the application container.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>instance-tag=justo</code><ul>
+<li><code>instance-tag=est</code><ul>
 <li>Tag to apply to the VM instance during creation.</li>
 </ul>
 </li>
 <li>
-<p><code>name=est</code></p>
+<p><code>name=amet</code></p>
 <ul>
 <li>Google Cloud Platform network where the virtual machines are created. Specify the short name, not the resource path.Defaults to default.</li>
 </ul>
 </li>
 <li>
-<p><code>..    nobuild-files-regex=amet</code></p>
+<p><code>..    nobuild-files-regex=accusam</code></p>
 <ul>
 <li>Files that match this pattern will not be built into this version. Only applicable for Go runtimes.Only returned in GET requests if view=FULL is set.</li>
 </ul>
 </li>
-<li><code>resources    cpu=0.780801418442</code><ul>
+<li><code>resources    cpu=0.87399646162</code><ul>
 <li>Number of CPU cores needed.</li>
 </ul>
 </li>
-<li><code>disk-gb=0.87399646162</code><ul>
+<li><code>disk-gb=0.22509478716</code><ul>
 <li>Disk size (GB) needed.</li>
 </ul>
 </li>
 <li>
-<p><code>memory-gb=0.22509478716</code></p>
+<p><code>memory-gb=0.3052778683</code></p>
 <ul>
 <li>Memory (GB) needed.</li>
 </ul>
 </li>
 <li>
-<p><code>..    runtime=justo</code></p>
+<p><code>..    runtime=est</code></p>
 <ul>
 <li>Desired runtime. Example: python27.</li>
 </ul>
 </li>
-<li><code>serving-status=est</code><ul>
+<li><code>runtime-api-version=clita</code><ul>
+<li>The version of the API in the given runtime environment. Please see the app.yaml reference for valid values at https://cloud.google.com/appengine/docs/standard/&lt;language&gt;/config/appref</li>
+</ul>
+</li>
+<li><code>serving-status=invidunt</code><ul>
 <li>Current serving status of this version. Only the versions with a SERVING status create instances and can be billed.SERVING_STATUS_UNSPECIFIED is an invalid value. Defaults to SERVING.</li>
 </ul>
 </li>
@@ -795,7 +741,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
   <div class="rst-versions" role="note" style="cursor: pointer">
     <span class="rst-current-version" data-toggle="rst-current-version">
       
-          <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/appengine1_beta4-cli" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+          <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/appengine1_beta4-cli" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
         <span><a href="../apps_modules-versions-list/" style="color: #fcfcfc;">&laquo; Previous</a></span>
