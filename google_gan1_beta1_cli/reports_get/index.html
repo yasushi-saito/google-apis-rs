@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Get - gan v1.0.6+20130205</title>
+  <title>Get - gan v1.0.7+20130205</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> gan v1.0.6+20130205</a>
+        <a href=".." class="icon icon-home"> gan v1.0.7+20130205</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -159,7 +159,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">gan v1.0.6+20130205</a>
+        <a href="..">gan v1.0.7+20130205</a>
       </nav>
 
       
@@ -221,9 +221,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p start-date=string</strong></p>
+<p><strong>-p end-date=string</strong></p>
 <ul>
-<li>The start date (inclusive), in RFC 3339 format, for the report data to be returned. Defaults to one day before endDate, if that is given, or yesterday. Optional.</li>
+<li>The end date (exclusive), in RFC 3339 format, for the report data to be returned. Defaults to one day after startDate, if that is given, or today. Optional.</li>
 </ul>
 </li>
 <li>
@@ -233,15 +233,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p end-date=string</strong></p>
+<p><strong>-p start-date=string</strong></p>
 <ul>
-<li>The end date (exclusive), in RFC 3339 format, for the report data to be returned. Defaults to one day after startDate, if that is given, or today. Optional.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p advertiser-id=string</strong></p>
-<ul>
-<li>The IDs of the advertisers to look up, if applicable.</li>
+<li>The start date (inclusive), in RFC 3339 format, for the report data to be returned. Defaults to one day before endDate, if that is given, or yesterday. Optional.</li>
 </ul>
 </li>
 <li>
@@ -266,6 +260,12 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <p><strong>-p status=string</strong></p>
 <ul>
 <li>Filters out all events that do not have the given status. Valid values: &#39;active&#39;, &#39;canceled&#39;, or &#39;invalid&#39;. Optional.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p advertiser-id=string</strong></p>
+<ul>
+<li>The IDs of the advertisers to look up, if applicable.</li>
 </ul>
 </li>
 <li>

@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Insert All - bigquery v1.0.6+20170917</title>
+  <title>Insert All - bigquery v1.0.7+20171202</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> bigquery v1.0.6+20170917</a>
+        <a href=".." class="icon icon-home"> bigquery v1.0.7+20171202</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -209,7 +209,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">bigquery v1.0.6+20170917</a>
+        <a href="..">bigquery v1.0.7+20171202</a>
       </nav>
 
       
@@ -277,19 +277,19 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    ignore-unknown-values=true</code><ul>
+<li><code>-r .    ignore-unknown-values=false</code><ul>
 <li>[Optional] Accept rows that contain values that do not match the schema. The unknown values are ignored. Default is false, which treats unknown values as errors.</li>
 </ul>
 </li>
-<li><code>kind=clita</code><ul>
+<li><code>kind=et</code><ul>
 <li>The resource type of the response.</li>
 </ul>
 </li>
-<li><code>skip-invalid-rows=true</code><ul>
+<li><code>skip-invalid-rows=false</code><ul>
 <li>[Optional] Insert all valid rows of a request, even if invalid rows exist. The default value is false, which causes the entire request to fail if any invalid rows exist.</li>
 </ul>
 </li>
-<li><code>template-suffix=eirmod</code><ul>
+<li><code>template-suffix=sit</code><ul>
 <li>[Experimental] If specified, treats the destination table as a base template, and inserts the rows into an instance table named &#34;{destination}{templateSuffix}&#34;. BigQuery will manage creation of the instance table, using the schema of the base template table. See https://cloud.google.com/bigquery/streaming-data-into-bigquery#template-tables for considerations when working with templates tables.</li>
 </ul>
 </li>

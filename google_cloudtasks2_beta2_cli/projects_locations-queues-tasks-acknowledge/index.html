@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Locations Queues Tasks Acknowledge - Cloud Tasks v1.0.6+20170926</title>
+  <title>Locations Queues Tasks Acknowledge - Cloud Tasks v1.0.7+20171208</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Cloud Tasks v1.0.6+20170926</a>
+        <a href=".." class="icon icon-home"> Cloud Tasks v1.0.7+20171208</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -181,7 +181,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Cloud Tasks v1.0.6+20170926</a>
+        <a href="..">Cloud Tasks v1.0.7+20171208</a>
       </nav>
 
       
@@ -220,6 +220,10 @@ the task will become ready to be returned in a different
 PullTasksResponse. After the task is acknowledged, it will
 not be returned by a later CloudTasks.PullTasks,
 CloudTasks.GetTask, or CloudTasks.ListTasks.</p>
+<p>To acknowledge multiple tasks at the same time, use
+<a href="../storage/docs/json_api/v1/how-tos/batch">HTTP batching</a>
+or the batching documentation for your client library, for example
+https://developers.google.com/api-client-library/python/guide/batch.</p>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for the <em>https://www.googleapis.com/auth/cloud-platform</em> scope to make a valid call.</p>
 <p>If unset, the scope for this method defaults to <em>https://www.googleapis.com/auth/cloud-platform</em>.
@@ -246,7 +250,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    schedule-time=eirmod</code><ul>
+<li><code>-r .    schedule-time=erat</code><ul>
 <li>
 <p>Required.</p>
 <p>The task&#39;s current schedule time, available in the Task.schedule_time

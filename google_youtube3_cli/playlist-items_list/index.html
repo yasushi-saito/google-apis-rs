@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>List - YouTube v1.0.6+20170918</title>
+  <title>List - YouTube v1.0.7+20171129</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> YouTube v1.0.6+20170918</a>
+        <a href=".." class="icon icon-home"> YouTube v1.0.7+20171129</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -557,7 +557,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">YouTube v1.0.6+20170918</a>
+        <a href="..">YouTube v1.0.7+20171129</a>
       </nav>
 
       
@@ -624,33 +624,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p page-token=string</strong></p>
-<ul>
-<li>The pageToken parameter identifies a specific page in the result set that should be returned. In an API response, the nextPageToken and prevPageToken properties identify other pages that could be retrieved.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p max-results=integer</strong></p>
 <ul>
 <li>The maxResults parameter specifies the maximum number of items that should be returned in the result set.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p video-id=string</strong></p>
-<ul>
-<li>The videoId parameter specifies that the request should return only the playlist items that contain the specified video.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p id=string</strong></p>
-<ul>
-<li>The id parameter specifies a comma-separated list of one or more unique playlist item IDs.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p playlist-id=string</strong></p>
-<ul>
-<li>The playlistId parameter specifies the unique ID of the playlist for which you want to retrieve playlist items. Note that even though this is an optional parameter, every request to retrieve playlist items must specify a value for either the id parameter or the playlistId parameter.</li>
 </ul>
 </li>
 <li>
@@ -660,6 +636,30 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <p>Note: This parameter is intended exclusively for YouTube content partners.</p>
 <p>The onBehalfOfContentOwner parameter indicates that the request&#39;s authorization credentials identify a YouTube CMS user who is acting on behalf of the content owner specified in the parameter value. This parameter is intended for YouTube content partners that own and manage many different YouTube channels. It allows content owners to authenticate once and get access to all their video and channel data, without having to provide authentication credentials for each individual channel. The CMS account that the user authenticates with must be linked to the specified YouTube content owner.</p>
 </li>
+</ul>
+</li>
+<li>
+<p><strong>-p id=string</strong></p>
+<ul>
+<li>The id parameter specifies a comma-separated list of one or more unique playlist item IDs.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p video-id=string</strong></p>
+<ul>
+<li>The videoId parameter specifies that the request should return only the playlist items that contain the specified video.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p playlist-id=string</strong></p>
+<ul>
+<li>The playlistId parameter specifies the unique ID of the playlist for which you want to retrieve playlist items. Note that even though this is an optional parameter, every request to retrieve playlist items must specify a value for either the id parameter or the playlistId parameter.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p page-token=string</strong></p>
+<ul>
+<li>The pageToken parameter identifies a specific page in the result set that should be returned. In an API response, the nextPageToken and prevPageToken properties identify other pages that could be retrieved.</li>
 </ul>
 </li>
 </ul>

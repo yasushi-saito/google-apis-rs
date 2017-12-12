@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Install Attribution - Firebase Dynamic Links v1.0.6+20170926</title>
+  <title>Install Attribution - Firebase Dynamic Links v1.0.7+20171205</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Firebase Dynamic Links v1.0.6+20170926</a>
+        <a href=".." class="icon icon-home"> Firebase Dynamic Links v1.0.7+20171205</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -109,7 +109,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Firebase Dynamic Links v1.0.6+20170926</a>
+        <a href="..">Firebase Dynamic Links v1.0.7+20171205</a>
       </nav>
 
       
@@ -153,6 +153,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   device:
     device-model-name: string
     language-code: string
+    language-code-raw: string
     screen-resolution-height: string
     screen-resolution-width: string
     timezone: string
@@ -183,44 +184,51 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>Device language code setting.</li>
 </ul>
 </li>
-<li><code>screen-resolution-height=et</code><ul>
+<li><code>language-code-raw=et</code><ul>
+<li>Device language code raw setting.
+    iOS does returns language code in different format than iOS WebView.
+    For example WebView returns en_US, but iOS returns en-US.
+    Field below will return raw value returned by iOS.</li>
+</ul>
+</li>
+<li><code>screen-resolution-height=dolores</code><ul>
 <li>Device display resolution height.</li>
 </ul>
 </li>
-<li><code>screen-resolution-width=dolores</code><ul>
+<li><code>screen-resolution-width=kasd</code><ul>
 <li>Device display resolution width.</li>
 </ul>
 </li>
 <li>
-<p><code>timezone=kasd</code></p>
+<p><code>timezone=accusam</code></p>
 <ul>
 <li>Device timezone setting.</li>
 </ul>
 </li>
 <li>
-<p><code>..    ios-version=accusam</code></p>
+<p><code>..    ios-version=takimata</code></p>
 <ul>
 <li>iOS version, ie: 9.3.5.
     Consider adding &#34;build&#34;.</li>
 </ul>
 </li>
-<li><code>retrieval-method=takimata</code><ul>
+<li><code>retrieval-method=justo</code><ul>
 <li>App post install attribution retrieval information. Disambiguates
     mechanism (iSDK or developer invoked) to retrieve payload from
     clicked link.</li>
 </ul>
 </li>
-<li><code>sdk-version=justo</code><ul>
+<li><code>sdk-version=amet.</code><ul>
 <li>Google SDK version.</li>
 </ul>
 </li>
-<li><code>unique-match-link-to-check=amet.</code><ul>
+<li><code>unique-match-link-to-check=erat</code><ul>
 <li>Possible unique matched link that server need to check before performing
     fingerprint match. If passed link is short server need to expand the link.
     If link is long server need to vslidate the link.</li>
 </ul>
 </li>
-<li><code>visual-style=erat</code><ul>
+<li><code>visual-style=labore</code><ul>
 <li>Strong match page information. Disambiguates between default UI and
     custom page to present when strong match succeeds/fails to find cookie.</li>
 </ul>

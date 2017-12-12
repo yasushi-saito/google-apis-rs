@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Connections List - People Service v1.0.6+20170925</title>
+  <title>Connections List - People Service v1.0.7+20171211</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> People Service v1.0.6+20170925</a>
+        <a href=".." class="icon icon-home"> People Service v1.0.7+20171211</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -146,7 +146,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">People Service v1.0.6+20170925</a>
+        <a href="..">People Service v1.0.7+20171211</a>
       </nav>
 
       
@@ -211,41 +211,10 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p person-fields=string</strong></p>
+<p><strong>-p sort-order=string</strong></p>
 <ul>
-<li>
-<p><strong>Required.</strong> A field mask to restrict which fields on each person are
-    returned. Valid values are:</p>
-<ul>
-<li>addresses</li>
-<li>ageRanges</li>
-<li>biographies</li>
-<li>birthdays</li>
-<li>braggingRights</li>
-<li>coverPhotos</li>
-<li>emailAddresses</li>
-<li>events</li>
-<li>genders</li>
-<li>imClients</li>
-<li>interests</li>
-<li>locales</li>
-<li>memberships</li>
-<li>metadata</li>
-<li>names</li>
-<li>nicknames</li>
-<li>occupations</li>
-<li>organizations</li>
-<li>phoneNumbers</li>
-<li>photos</li>
-<li>relations</li>
-<li>relationshipInterests</li>
-<li>relationshipStatuses</li>
-<li>residences</li>
-<li>skills</li>
-<li>taglines</li>
-<li>urls</li>
-</ul>
-</li>
+<li>The order in which the connections should be sorted. Defaults to
+    <code>LAST_MODIFIED_ASCENDING</code>.</li>
 </ul>
 </li>
 <li>
@@ -277,17 +246,47 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
+<p><strong>-p person-fields=string</strong></p>
+<ul>
+<li>
+<p><strong>Required.</strong> A field mask to restrict which fields on each person are
+    returned. Valid values are:</p>
+<ul>
+<li>addresses</li>
+<li>ageRanges</li>
+<li>biographies</li>
+<li>birthdays</li>
+<li>braggingRights</li>
+<li>coverPhotos</li>
+<li>emailAddresses</li>
+<li>events</li>
+<li>genders</li>
+<li>imClients</li>
+<li>locales</li>
+<li>memberships</li>
+<li>metadata</li>
+<li>names</li>
+<li>nicknames</li>
+<li>occupations</li>
+<li>organizations</li>
+<li>phoneNumbers</li>
+<li>photos</li>
+<li>relations</li>
+<li>relationshipInterests</li>
+<li>relationshipStatuses</li>
+<li>residences</li>
+<li>skills</li>
+<li>taglines</li>
+<li>urls</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
 <p><strong>-p sync-token=string</strong></p>
 <ul>
 <li>A sync token, returned by a previous call to <code>people.connections.list</code>.
     Only resources changed since the sync token was created will be returned.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p sort-order=string</strong></p>
-<ul>
-<li>The order in which the connections should be sorted. Defaults to
-    <code>LAST_MODIFIED_ASCENDING</code>.</li>
 </ul>
 </li>
 </ul>

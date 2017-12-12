@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Insert - drive v1.0.6+20170915</title>
+  <title>Insert - drive v1.0.7+20171201</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> drive v1.0.6+20170915</a>
+        <a href=".." class="icon icon-home"> drive v1.0.7+20171201</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -452,7 +452,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">drive v1.0.6+20170915</a>
+        <a href="..">drive v1.0.7+20171201</a>
       </nav>
 
       
@@ -520,6 +520,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
     can-rename-team-drive: boolean
     can-share: boolean
   color-rgb: string
+  created-date: string
   id: string
   kind: string
   name: string
@@ -617,19 +618,23 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>The color of this Team Drive as an RGB hex string. It can only be set on a drive.teamdrives.update request that does not set themeId.</li>
 </ul>
 </li>
-<li><code>id=clita</code><ul>
+<li><code>created-date=clita</code><ul>
+<li>The time at which the Team Drive was created (RFC 3339 date-time).</li>
+</ul>
+</li>
+<li><code>id=sed</code><ul>
 <li>The ID of this Team Drive which is also the ID of the top level folder for this Team Drive.</li>
 </ul>
 </li>
-<li><code>kind=sed</code><ul>
+<li><code>kind=nonumy</code><ul>
 <li>This is always drive#teamDrive</li>
 </ul>
 </li>
-<li><code>name=nonumy</code><ul>
+<li><code>name=sanctus</code><ul>
 <li>The name of this Team Drive.</li>
 </ul>
 </li>
-<li><code>theme-id=sanctus</code><ul>
+<li><code>theme-id=consetetur</code><ul>
 <li>The ID of the theme from which the background image and color will be set. The set of possible teamDriveThemes can be retrieved from a drive.about.get response. When not specified on a drive.teamdrives.insert request, a random theme is chosen from which the background image and color are set. This is a write-only field; it can only be set on requests that don&#39;t set colorRgb or backgroundImageFile.</li>
 </ul>
 </li>

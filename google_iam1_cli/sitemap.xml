@@ -4,7 +4,7 @@
     
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-iam1-cli/</loc>
-     <lastmod>2017-09-27</lastmod>
+     <lastmod>2017-12-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -13,37 +13,37 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-iam1-cli/organizations_roles-create/</loc>
-     <lastmod>2017-09-27</lastmod>
+     <lastmod>2017-12-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-iam1-cli/organizations_roles-delete/</loc>
-     <lastmod>2017-09-27</lastmod>
+     <lastmod>2017-12-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-iam1-cli/organizations_roles-get/</loc>
-     <lastmod>2017-09-27</lastmod>
+     <lastmod>2017-12-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-iam1-cli/organizations_roles-list/</loc>
-     <lastmod>2017-09-27</lastmod>
+     <lastmod>2017-12-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-iam1-cli/organizations_roles-patch/</loc>
-     <lastmod>2017-09-27</lastmod>
+     <lastmod>2017-12-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-iam1-cli/organizations_roles-undelete/</loc>
-     <lastmod>2017-09-27</lastmod>
+     <lastmod>2017-12-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -53,7 +53,7 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-iam1-cli/permissions_query-testable-permissions/</loc>
-     <lastmod>2017-09-27</lastmod>
+     <lastmod>2017-12-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -63,121 +63,121 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-iam1-cli/projects_roles-create/</loc>
-     <lastmod>2017-09-27</lastmod>
+     <lastmod>2017-12-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-iam1-cli/projects_roles-delete/</loc>
-     <lastmod>2017-09-27</lastmod>
+     <lastmod>2017-12-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-iam1-cli/projects_roles-get/</loc>
-     <lastmod>2017-09-27</lastmod>
+     <lastmod>2017-12-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-iam1-cli/projects_roles-list/</loc>
-     <lastmod>2017-09-27</lastmod>
+     <lastmod>2017-12-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-iam1-cli/projects_roles-patch/</loc>
-     <lastmod>2017-09-27</lastmod>
+     <lastmod>2017-12-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-iam1-cli/projects_roles-undelete/</loc>
-     <lastmod>2017-09-27</lastmod>
+     <lastmod>2017-12-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-iam1-cli/projects_service-accounts-create/</loc>
-     <lastmod>2017-09-27</lastmod>
+     <lastmod>2017-12-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-iam1-cli/projects_service-accounts-delete/</loc>
-     <lastmod>2017-09-27</lastmod>
+     <lastmod>2017-12-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-iam1-cli/projects_service-accounts-get/</loc>
-     <lastmod>2017-09-27</lastmod>
+     <lastmod>2017-12-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-iam1-cli/projects_service-accounts-get-iam-policy/</loc>
-     <lastmod>2017-09-27</lastmod>
+     <lastmod>2017-12-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-iam1-cli/projects_service-accounts-keys-create/</loc>
-     <lastmod>2017-09-27</lastmod>
+     <lastmod>2017-12-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-iam1-cli/projects_service-accounts-keys-delete/</loc>
-     <lastmod>2017-09-27</lastmod>
+     <lastmod>2017-12-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-iam1-cli/projects_service-accounts-keys-get/</loc>
-     <lastmod>2017-09-27</lastmod>
+     <lastmod>2017-12-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-iam1-cli/projects_service-accounts-keys-list/</loc>
-     <lastmod>2017-09-27</lastmod>
+     <lastmod>2017-12-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-iam1-cli/projects_service-accounts-list/</loc>
-     <lastmod>2017-09-27</lastmod>
+     <lastmod>2017-12-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-iam1-cli/projects_service-accounts-set-iam-policy/</loc>
-     <lastmod>2017-09-27</lastmod>
+     <lastmod>2017-12-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-iam1-cli/projects_service-accounts-sign-blob/</loc>
-     <lastmod>2017-09-27</lastmod>
+     <lastmod>2017-12-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-iam1-cli/projects_service-accounts-sign-jwt/</loc>
-     <lastmod>2017-09-27</lastmod>
+     <lastmod>2017-12-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-iam1-cli/projects_service-accounts-test-iam-permissions/</loc>
-     <lastmod>2017-09-27</lastmod>
+     <lastmod>2017-12-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-iam1-cli/projects_service-accounts-update/</loc>
-     <lastmod>2017-09-27</lastmod>
+     <lastmod>2017-12-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -187,19 +187,19 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-iam1-cli/roles_get/</loc>
-     <lastmod>2017-09-27</lastmod>
+     <lastmod>2017-12-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-iam1-cli/roles_list/</loc>
-     <lastmod>2017-09-27</lastmod>
+     <lastmod>2017-12-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-iam1-cli/roles_query-grantable-roles/</loc>
-     <lastmod>2017-09-27</lastmod>
+     <lastmod>2017-12-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
         

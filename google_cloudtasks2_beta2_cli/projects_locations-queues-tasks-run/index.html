@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Locations Queues Tasks Run - Cloud Tasks v1.0.6+20170926</title>
+  <title>Locations Queues Tasks Run - Cloud Tasks v1.0.7+20171208</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Cloud Tasks v1.0.6+20170926</a>
+        <a href=".." class="icon icon-home"> Cloud Tasks v1.0.7+20171208</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -181,7 +181,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Cloud Tasks v1.0.6+20170926</a>
+        <a href="..">Cloud Tasks v1.0.7+20171208</a>
       </nav>
 
       
@@ -216,7 +216,7 @@ example, CloudTasks.RunTask can be used to retry a failed
 task after a fix has been made or to manually force a task to be
 dispatched now.</p>
 <p>When this method is called, Cloud Tasks will dispatch the task to its
-target, even if the queue is Queue.QueueState.PAUSED.</p>
+target, even if the queue is Queue.State.PAUSED.</p>
 <p>The dispatched task is returned. That is, the task that is returned
 contains the Task.task_status after the task is dispatched but
 before the task is received by its target.</p>
@@ -230,6 +230,7 @@ it is called on a task that has already succeeded or permanently
 failed. google.rpc.Code.FAILED_PRECONDITION is returned when
 CloudTasks.RunTask is called on task that is dispatched or
 already running.</p>
+<p>CloudTasks.RunTask cannot be called on pull tasks.</p>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for the <em>https://www.googleapis.com/auth/cloud-platform</em> scope to make a valid call.</p>
 <p>If unset, the scope for this method defaults to <em>https://www.googleapis.com/auth/cloud-platform</em>.
@@ -256,7 +257,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    response-view=nonumy</code><ul>
+<li><code>-r .    response-view=sit</code><ul>
 <li>
 <p>The response_view specifies which subset of the Task will be
     returned.</p>

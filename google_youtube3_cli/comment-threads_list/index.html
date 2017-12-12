@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>List - YouTube v1.0.6+20170918</title>
+  <title>List - YouTube v1.0.7+20171129</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> YouTube v1.0.6+20170918</a>
+        <a href=".." class="icon icon-home"> YouTube v1.0.7+20171129</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -557,7 +557,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">YouTube v1.0.6+20170918</a>
+        <a href="..">YouTube v1.0.7+20171129</a>
       </nav>
 
       
@@ -615,6 +615,31 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
+<p><strong>-p moderation-status=string</strong></p>
+<ul>
+<li>
+<p>Set this parameter to limit the returned comment threads to a particular moderation state.</p>
+<p>Note: This parameter is not supported for use in conjunction with the id parameter.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>-p all-threads-related-to-channel-id=string</strong></p>
+<ul>
+<li>The allThreadsRelatedToChannelId parameter instructs the API to return all comment threads associated with the specified channel. The response can include comments about the channel or about the channel&#39;s videos.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p order=string</strong></p>
+<ul>
+<li>The order parameter specifies the order in which the API response should list comment threads. Valid values are: <ul>
+<li>time - Comment threads are ordered by time. This is the default behavior.</li>
+<li>relevance - Comment threads are ordered by relevance.Note: This parameter is not supported for use in conjunction with the id parameter.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
 <p><strong>-p video-id=string</strong></p>
 <ul>
 <li>The videoId parameter instructs the API to return comment threads associated with the specified video ID.</li>
@@ -636,24 +661,18 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p all-threads-related-to-channel-id=string</strong></p>
+<p><strong>-p page-token=string</strong></p>
 <ul>
-<li>The allThreadsRelatedToChannelId parameter instructs the API to return all comment threads associated with the specified channel. The response can include comments about the channel or about the channel&#39;s videos.</li>
+<li>
+<p>The pageToken parameter identifies a specific page in the result set that should be returned. In an API response, the nextPageToken property identifies the next page of the result that can be retrieved.</p>
+<p>Note: This parameter is not supported for use in conjunction with the id parameter.</p>
+</li>
 </ul>
 </li>
 <li>
 <p><strong>-p id=string</strong></p>
 <ul>
 <li>The id parameter specifies a comma-separated list of comment thread IDs for the resources that should be retrieved.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p moderation-status=string</strong></p>
-<ul>
-<li>
-<p>Set this parameter to limit the returned comment threads to a particular moderation state.</p>
-<p>Note: This parameter is not supported for use in conjunction with the id parameter.</p>
-</li>
 </ul>
 </li>
 <li>
@@ -669,25 +688,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <p><strong>-p text-format=string</strong></p>
 <ul>
 <li>Set this parameter&#39;s value to html or plainText to instruct the API to return the comments left by users in html formatted or in plain text.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p page-token=string</strong></p>
-<ul>
-<li>
-<p>The pageToken parameter identifies a specific page in the result set that should be returned. In an API response, the nextPageToken property identifies the next page of the result that can be retrieved.</p>
-<p>Note: This parameter is not supported for use in conjunction with the id parameter.</p>
-</li>
-</ul>
-</li>
-<li>
-<p><strong>-p order=string</strong></p>
-<ul>
-<li>The order parameter specifies the order in which the API response should list comment threads. Valid values are: <ul>
-<li>time - Comment threads are ordered by time. This is the default behavior.</li>
-<li>relevance - Comment threads are ordered by relevance.Note: This parameter is not supported for use in conjunction with the id parameter.</li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>

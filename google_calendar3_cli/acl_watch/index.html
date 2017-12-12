@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Watch - calendar v1.0.6+20170919</title>
+  <title>Watch - calendar v1.0.7+20171205</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> calendar v1.0.6+20170919</a>
+        <a href=".." class="icon icon-home"> calendar v1.0.7+20171205</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -293,7 +293,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">calendar v1.0.6+20170919</a>
+        <a href="..">calendar v1.0.7+20171205</a>
       </nav>
 
       
@@ -421,18 +421,18 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
+<p><strong>-p show-deleted=boolean</strong></p>
+<ul>
+<li>Whether to include deleted ACLs in the result. Deleted ACLs are represented by role equal to &#34;none&#34;. Deleted ACLs will always be included if syncToken is provided. Optional. The default is False.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p sync-token=string</strong></p>
 <ul>
 <li>Token obtained from the nextSyncToken field returned on the last page of results from the previous list request. It makes the result of this list request contain only entries that have changed since then. All entries deleted since the previous list request will always be in the result set and it is not allowed to set showDeleted to False.
     If the syncToken expires, the server will respond with a 410 GONE response code and the client should clear its storage and perform a full synchronization without any syncToken.
     Learn more about incremental synchronization.
     Optional. The default is to return all entries.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p show-deleted=boolean</strong></p>
-<ul>
-<li>Whether to include deleted ACLs in the result. Deleted ACLs are represented by role equal to &#34;none&#34;. Deleted ACLs will always be included if syncToken is provided. Optional. The default is False.</li>
 </ul>
 </li>
 <li>

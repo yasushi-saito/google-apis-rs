@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>List - dfareporting v1.0.6+20170818</title>
+  <title>List - dfareporting v1.0.7+20171109</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> dfareporting v1.0.6+20170818</a>
+        <a href=".." class="icon icon-home"> dfareporting v1.0.7+20171109</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -1320,7 +1320,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">dfareporting v1.0.6+20170818</a>
+        <a href="..">dfareporting v1.0.7+20171109</a>
       </nav>
 
       
@@ -1378,15 +1378,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p sort-field=string</strong></p>
+<p><strong>-p max-results=integer</strong></p>
 <ul>
-<li>The field by which to sort the list.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p sort-order=string</strong></p>
-<ul>
-<li>Order of sorted results.</li>
+<li>Maximum number of results to return.</li>
 </ul>
 </li>
 <li>
@@ -1396,15 +1390,21 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p max-results=integer</strong></p>
+<p><strong>-p sort-field=string</strong></p>
 <ul>
-<li>Maximum number of results to return.</li>
+<li>The field by which to sort the list.</li>
 </ul>
 </li>
 <li>
 <p><strong>-p page-token=string</strong></p>
 <ul>
 <li>The value of the nextToken from the previous result page.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p sort-order=string</strong></p>
+<ul>
+<li>Order of sorted results.</li>
 </ul>
 </li>
 </ul>

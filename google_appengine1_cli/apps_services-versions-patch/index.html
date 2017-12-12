@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Services Versions Patch - appengine v1.0.6+20170914</title>
+  <title>Services Versions Patch - appengine v1.0.7+20171208</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> appengine v1.0.6+20170914</a>
+        <a href=".." class="icon icon-home"> appengine v1.0.7+20171208</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -103,6 +103,30 @@
                 <li class="">
                     
     <a class="" href="../apps_domain-mappings-patch/">Domain Mappings Patch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../apps_firewall-ingress-rules-batch-update/">Firewall Ingress Rules Batch Update</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../apps_firewall-ingress-rules-create/">Firewall Ingress Rules Create</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../apps_firewall-ingress-rules-delete/">Firewall Ingress Rules Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../apps_firewall-ingress-rules-get/">Firewall Ingress Rules Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../apps_firewall-ingress-rules-list/">Firewall Ingress Rules List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../apps_firewall-ingress-rules-patch/">Firewall Ingress Rules Patch</a>
                 </li>
                 <li class="">
                     
@@ -224,7 +248,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">appengine v1.0.6+20170914</a>
+        <a href="..">appengine v1.0.7+20171208</a>
       </nav>
 
       
@@ -317,6 +341,11 @@ In the latter case it is advised to set the field-cursor to the data-structure's
     request-utilization:
       target-concurrent-requests: integer
       target-request-count-per-second: integer
+    standard-scheduler-settings:
+      max-instances: integer
+      min-instances: integer
+      target-cpu-utilization: number
+      target-throughput-utilization: number
   basic-scaling:
     idle-timeout: string
     max-instances: integer
@@ -387,11 +416,11 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .api-config    auth-fail-action=ea</code><ul>
+<li><code>-r .api-config    auth-fail-action=at</code><ul>
 <li>Action to take when users access resources that require authentication. Defaults to redirect.</li>
 </ul>
 </li>
-<li><code>login=ea</code><ul>
+<li><code>login=consetetur</code><ul>
 <li>Level of login required to access this resource. Defaults to optional.</li>
 </ul>
 </li>
@@ -399,292 +428,312 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>Path to the script from the application root directory.</li>
 </ul>
 </li>
-<li><code>security-level=dolor</code><ul>
+<li><code>security-level=sed</code><ul>
 <li>Security (HTTPS) enforcement for this URL.</li>
 </ul>
 </li>
 <li>
-<p><code>url=diam</code></p>
+<p><code>url=sit</code></p>
 <ul>
 <li>URL to serve the endpoint at.</li>
 </ul>
 </li>
 <li>
-<p><code>..automatic-scaling    cool-down-period=kasd</code></p>
+<p><code>..automatic-scaling    cool-down-period=takimata</code></p>
 <ul>
 <li>Amount of time that the Autoscaler (https://cloud.google.com/compute/docs/autoscaler/) should wait between changes to the number of virtual machines. Only applicable for VM runtimes.</li>
 </ul>
 </li>
-<li><code>cpu-utilization    aggregation-window-length=invidunt</code><ul>
+<li><code>cpu-utilization    aggregation-window-length=elitr</code><ul>
 <li>Period of time over which CPU utilization is calculated.</li>
 </ul>
 </li>
 <li>
-<p><code>target-utilization=0.858839541251</code></p>
+<p><code>target-utilization=0.102963705962</code></p>
 <ul>
 <li>Target CPU utilization ratio to maintain when scaling. Must be between 0 and 1.</li>
 </ul>
 </li>
 <li>
-<p><code>..disk-utilization    target-read-bytes-per-second=50</code></p>
+<p><code>..disk-utilization    target-read-bytes-per-second=86</code></p>
 <ul>
 <li>Target bytes read per second.</li>
 </ul>
 </li>
-<li><code>target-read-ops-per-second=38</code><ul>
+<li><code>target-read-ops-per-second=95</code><ul>
 <li>Target ops read per seconds.</li>
 </ul>
 </li>
-<li><code>target-write-bytes-per-second=64</code><ul>
+<li><code>target-write-bytes-per-second=51</code><ul>
 <li>Target bytes written per second.</li>
 </ul>
 </li>
 <li>
-<p><code>target-write-ops-per-second=11</code></p>
+<p><code>target-write-ops-per-second=59</code></p>
 <ul>
 <li>Target ops written per second.</li>
 </ul>
 </li>
 <li>
-<p><code>..    max-concurrent-requests=24</code></p>
+<p><code>..    max-concurrent-requests=65</code></p>
 <ul>
 <li>Number of concurrent requests an automatic scaling instance can accept before the scheduler spawns a new instance.Defaults to a runtime-specific value.</li>
 </ul>
 </li>
-<li><code>max-idle-instances=5</code><ul>
+<li><code>max-idle-instances=64</code><ul>
 <li>Maximum number of idle instances that should be maintained for this version.</li>
 </ul>
 </li>
-<li><code>max-pending-latency=et</code><ul>
+<li><code>max-pending-latency=amet.</code><ul>
 <li>Maximum amount of time that a request should wait in the pending queue before starting a new instance to handle it.</li>
 </ul>
 </li>
-<li><code>max-total-instances=21</code><ul>
+<li><code>max-total-instances=1</code><ul>
 <li>Maximum number of instances that should be started to handle requests.</li>
 </ul>
 </li>
-<li><code>min-idle-instances=54</code><ul>
+<li><code>min-idle-instances=14</code><ul>
 <li>Minimum number of idle instances that should be maintained for this version. Only applicable for the default version of a service.</li>
 </ul>
 </li>
-<li><code>min-pending-latency=takimata</code><ul>
+<li><code>min-pending-latency=dolor</code><ul>
 <li>Minimum amount of time a request should wait in the pending queue before starting a new instance to handle it.</li>
 </ul>
 </li>
-<li><code>min-total-instances=58</code><ul>
+<li><code>min-total-instances=92</code><ul>
 <li>Minimum number of instances that should be maintained for this version.</li>
 </ul>
 </li>
-<li><code>network-utilization    target-received-bytes-per-second=10</code><ul>
+<li><code>network-utilization    target-received-bytes-per-second=65</code><ul>
 <li>Target bytes received per second.</li>
 </ul>
 </li>
-<li><code>target-received-packets-per-second=86</code><ul>
+<li><code>target-received-packets-per-second=62</code><ul>
 <li>Target packets received per second.</li>
 </ul>
 </li>
-<li><code>target-sent-bytes-per-second=95</code><ul>
+<li><code>target-sent-bytes-per-second=93</code><ul>
 <li>Target bytes sent per second.</li>
 </ul>
 </li>
 <li>
-<p><code>target-sent-packets-per-second=51</code></p>
+<p><code>target-sent-packets-per-second=74</code></p>
 <ul>
 <li>Target packets sent per second.</li>
 </ul>
 </li>
 <li>
-<p><code>..request-utilization    target-concurrent-requests=59</code></p>
+<p><code>..request-utilization    target-concurrent-requests=2</code></p>
 <ul>
 <li>Target number of concurrent requests.</li>
 </ul>
 </li>
 <li>
-<p><code>target-request-count-per-second=65</code></p>
+<p><code>target-request-count-per-second=79</code></p>
 <ul>
 <li>Target requests per second.</li>
 </ul>
 </li>
 <li>
-<p><code>...basic-scaling    idle-timeout=ut</code></p>
+<p><code>..standard-scheduler-settings    max-instances=16</code></p>
+<ul>
+<li>Maximum number of instances for an app version. Set to a non-positive value (0 by convention) to disable max_instances configuration.</li>
+</ul>
+</li>
+<li><code>min-instances=75</code><ul>
+<li>Minimum number of instances for an app version. Set to a non-positive value (0 by convention) to disable min_instances configuration.</li>
+</ul>
+</li>
+<li><code>target-cpu-utilization=0.647784933763</code><ul>
+<li>Target CPU utilization ratio to maintain when scaling.</li>
+</ul>
+</li>
+<li>
+<p><code>target-throughput-utilization=0.710861464088</code></p>
+<ul>
+<li>Target throughput utilization ratio to maintain when scaling</li>
+</ul>
+</li>
+<li>
+<p><code>...basic-scaling    idle-timeout=et</code></p>
 <ul>
 <li>Duration of time after the last request that an instance must wait before the instance is shut down.</li>
 </ul>
 </li>
 <li>
-<p><code>max-instances=50</code></p>
+<p><code>max-instances=46</code></p>
 <ul>
 <li>Maximum number of instances to create for this version.</li>
 </ul>
 </li>
 <li>
-<p><code>..    beta-settings=key=ipsum</code></p>
+<p><code>..    beta-settings=key=justo</code></p>
 <ul>
 <li>Metadata settings that are supplied to this version to enable beta runtime features.</li>
 <li>the value will be associated with the given <code>key</code></li>
 </ul>
 </li>
-<li><code>create-time=ut</code><ul>
+<li><code>create-time=dolore</code><ul>
 <li>Time that this version was created.@OutputOnly</li>
 </ul>
 </li>
-<li><code>created-by=dolor</code><ul>
+<li><code>created-by=vero</code><ul>
 <li>Email address of the user who created this version.@OutputOnly</li>
 </ul>
 </li>
-<li><code>default-expiration=sea</code><ul>
+<li><code>default-expiration=dolor</code><ul>
 <li>Duration that static files should be cached by web proxies and browsers. Only applicable if the corresponding StaticFilesHandler (https://cloud.google.com/appengine/docs/admin-api/reference/rest/v1/apps.services.versions#staticfileshandler) does not specify its own expiration time.Only returned in GET requests if view=FULL is set.</li>
 </ul>
 </li>
 <li>
-<p><code>deployment.container    image=ut</code></p>
+<p><code>deployment.container    image=takimata</code></p>
 <ul>
 <li>URI to the hosted container image in Google Container Registry. The URI must be fully qualified and include a tag or digest. Examples: &#34;gcr.io/my-project/image:tag&#34; or &#34;gcr.io/my-project/image@digest&#34;</li>
 </ul>
 </li>
 <li>
-<p><code>..zip    files-count=62</code></p>
+<p><code>..zip    files-count=80</code></p>
 <ul>
 <li>An estimate of the number of files in a zip for a zip deployment. If set, must be greater than or equal to the actual number of files. Used for optimizing performance; if not provided, deployment may be slow.</li>
 </ul>
 </li>
 <li>
-<p><code>source-url=sanctus</code></p>
+<p><code>source-url=nonumy</code></p>
 <ul>
 <li>URL of the zip file to deploy from. Must be a URL to a resource in Google Cloud Storage in the form &#39;http(s)://storage.googleapis.com/&lt;bucket&gt;/&lt;object&gt;&#39;.</li>
 </ul>
 </li>
 <li>
-<p><code>...    disk-usage-bytes=voluptua.</code></p>
+<p><code>...    disk-usage-bytes=et</code></p>
 <ul>
 <li>Total size in bytes of all the files that are included in this version and curerntly hosted on the App Engine disk.@OutputOnly</li>
 </ul>
 </li>
-<li><code>endpoints-api-service    config-id=dolor</code><ul>
+<li><code>endpoints-api-service    config-id=sed</code><ul>
 <li>Endpoints service configuration id as specified by the Service Management API. For example &#34;2016-09-19r1&#34;</li>
 </ul>
 </li>
 <li>
-<p><code>name=et</code></p>
+<p><code>name=no</code></p>
 <ul>
 <li>Endpoints service name which is the name of the &#34;service&#34; resource in the Service Management API. For example &#34;myapi.endpoints.myproject.cloud.goog&#34;</li>
 </ul>
 </li>
 <li>
-<p><code>..    env=et</code></p>
+<p><code>..    env=invidunt</code></p>
 <ul>
 <li>App Engine execution environment for this version.Defaults to standard.</li>
 </ul>
 </li>
-<li><code>env-variables=key=vero</code><ul>
+<li><code>env-variables=key=rebum.</code><ul>
 <li>Environment variables available to the application.Only returned in GET requests if view=FULL is set.</li>
 <li>the value will be associated with the given <code>key</code></li>
 </ul>
 </li>
-<li><code>health-check    check-interval=ut</code><ul>
+<li><code>health-check    check-interval=labore</code><ul>
 <li>Interval between health checks.</li>
 </ul>
 </li>
-<li><code>disable-health-check=true</code><ul>
+<li><code>disable-health-check=false</code><ul>
 <li>Whether to explicitly disable health checks for this instance.</li>
 </ul>
 </li>
-<li><code>healthy-threshold=80</code><ul>
+<li><code>healthy-threshold=7</code><ul>
 <li>Number of consecutive successful health checks required before receiving traffic.</li>
 </ul>
 </li>
-<li><code>host=ipsum</code><ul>
+<li><code>host=consetetur</code><ul>
 <li>Host header to send when performing an HTTP health check. Example: &#34;myapp.appspot.com&#34;</li>
 </ul>
 </li>
-<li><code>restart-threshold=81</code><ul>
+<li><code>restart-threshold=92</code><ul>
 <li>Number of consecutive failed health checks required before an instance is restarted.</li>
 </ul>
 </li>
-<li><code>timeout=dolore</code><ul>
+<li><code>timeout=elitr</code><ul>
 <li>Time before the health check is considered failed.</li>
 </ul>
 </li>
 <li>
-<p><code>unhealthy-threshold=75</code></p>
+<p><code>unhealthy-threshold=24</code></p>
 <ul>
 <li>Number of consecutive failed health checks required before removing traffic.</li>
 </ul>
 </li>
 <li>
-<p><code>..    id=dolor</code></p>
+<p><code>..    id=sea</code></p>
 <ul>
 <li>Relative name of the version within the service. Example: v1. Version names can contain only lowercase letters, numbers, or hyphens. Reserved names: &#34;default&#34;, &#34;latest&#34;, and any name with the prefix &#34;ah-&#34;.</li>
 </ul>
 </li>
-<li><code>inbound-services=takimata</code><ul>
+<li><code>inbound-services=consetetur</code><ul>
 <li>Before an application can receive email or XMPP messages, the application must be configured to enable the service.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>instance-class=et</code><ul>
+<li><code>instance-class=diam</code><ul>
 <li>Instance class that is used to run this version. Valid values are:
     AutomaticScaling: F1, F2, F4, F4_1G
     ManualScaling or BasicScaling: B1, B2, B4, B8, B4_1GDefaults to F1 for AutomaticScaling and B1 for ManualScaling or BasicScaling.</li>
 </ul>
 </li>
-<li><code>liveness-check    check-interval=nonumy</code><ul>
+<li><code>liveness-check    check-interval=accusam</code><ul>
 <li>Interval between health checks.</li>
 </ul>
 </li>
-<li><code>failure-threshold=17</code><ul>
+<li><code>failure-threshold=33</code><ul>
 <li>Number of consecutive failed checks required before considering the VM unhealthy.</li>
 </ul>
 </li>
-<li><code>host=sed</code><ul>
+<li><code>host=consetetur</code><ul>
 <li>Host header to send when performing a HTTP Liveness check. Example: &#34;myapp.appspot.com&#34;</li>
 </ul>
 </li>
-<li><code>initial-delay=no</code><ul>
+<li><code>initial-delay=dolor</code><ul>
 <li>The initial delay before starting to execute the checks.</li>
 </ul>
 </li>
-<li><code>path=invidunt</code><ul>
+<li><code>path=aliquyam</code><ul>
 <li>The request path.</li>
 </ul>
 </li>
-<li><code>success-threshold=86</code><ul>
+<li><code>success-threshold=7</code><ul>
 <li>Number of consecutive successful checks required before considering the VM healthy.</li>
 </ul>
 </li>
 <li>
-<p><code>timeout=labore</code></p>
+<p><code>timeout=ea</code></p>
 <ul>
 <li>Time before the check is considered failed.</li>
 </ul>
 </li>
 <li>
-<p><code>..manual-scaling    instances=19</code></p>
+<p><code>..manual-scaling    instances=66</code></p>
 <ul>
 <li>Number of instances to assign to the service at the start. This number can later be altered by using the Modules API (https://cloud.google.com/appengine/docs/python/modules/functions) set_num_instances() function.</li>
 </ul>
 </li>
 <li>
-<p><code>..    name=elitr</code></p>
+<p><code>..    name=stet</code></p>
 <ul>
 <li>Full path to the Version resource in the API. Example: apps/myapp/services/default/versions/v1.@OutputOnly</li>
 </ul>
 </li>
-<li><code>network    forwarded-ports=consetetur</code><ul>
+<li><code>network    forwarded-ports=sed</code><ul>
 <li>List of ports, or port pairs, to forward from the virtual machine to the application container. Only applicable for App Engine flexible environment versions.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>instance-tag=sea</code><ul>
+<li><code>instance-tag=dolor</code><ul>
 <li>Tag to apply to the VM instance during creation. Only applicable for for App Engine flexible environment versions.</li>
 </ul>
 </li>
-<li><code>name=elitr</code><ul>
+<li><code>name=sanctus</code><ul>
 <li>Google Compute Engine network where the virtual machines are created. Specify the short name, not the resource path.Defaults to default.</li>
 </ul>
 </li>
 <li>
-<p><code>subnetwork-name=at</code></p>
+<p><code>subnetwork-name=dolore</code></p>
 <ul>
 <li>Google Cloud Platform sub-network where the virtual machines are created. Specify the short name, not the resource path.If a subnetwork name is specified, a network name will also be required unless it is for the default network.
     If the network the VM instance is being created in is a Legacy network, then the IP address is allocated from the IPv4Range.
@@ -693,7 +742,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
-<p><code>..    nobuild-files-regex=sea</code></p>
+<p><code>..    nobuild-files-regex=lorem</code></p>
 <ul>
 <li>Files that match this pattern will not be built into this version. Only applicable for Go runtimes.Only returned in GET requests if view=FULL is set.</li>
 </ul>
@@ -702,59 +751,59 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>A maximum time limit on application initialization, measured from moment the application successfully replies to a healthcheck until it is ready to serve traffic.</li>
 </ul>
 </li>
-<li><code>check-interval=diam</code><ul>
+<li><code>check-interval=consetetur</code><ul>
 <li>Interval between health checks.</li>
 </ul>
 </li>
-<li><code>failure-threshold=79</code><ul>
+<li><code>failure-threshold=11</code><ul>
 <li>Number of consecutive failed checks required before removing traffic.</li>
 </ul>
 </li>
-<li><code>host=dolores</code><ul>
+<li><code>host=labore</code><ul>
 <li>Host header to send when performing a HTTP Readiness check. Example: &#34;myapp.appspot.com&#34;</li>
 </ul>
 </li>
-<li><code>path=consetetur</code><ul>
+<li><code>path=gubergren</code><ul>
 <li>The request path.</li>
 </ul>
 </li>
-<li><code>success-threshold=47</code><ul>
+<li><code>success-threshold=28</code><ul>
 <li>Number of consecutive successful checks required before receiving traffic.</li>
 </ul>
 </li>
 <li>
-<p><code>timeout=aliquyam</code></p>
+<p><code>timeout=sadipscing</code></p>
 <ul>
 <li>Time before the check is considered failed.</li>
 </ul>
 </li>
 <li>
-<p><code>..resources    cpu=0.0737731908831</code></p>
+<p><code>..resources    cpu=0.28706354019</code></p>
 <ul>
 <li>Number of CPU cores needed.</li>
 </ul>
 </li>
-<li><code>disk-gb=0.848243271183</code><ul>
+<li><code>disk-gb=0.689518041302</code><ul>
 <li>Disk size (GB) needed.</li>
 </ul>
 </li>
 <li>
-<p><code>memory-gb=0.661344611169</code></p>
+<p><code>memory-gb=0.00702724490634</code></p>
 <ul>
 <li>Memory (GB) needed.</li>
 </ul>
 </li>
 <li>
-<p><code>..    runtime=stet</code></p>
+<p><code>..    runtime=rebum.</code></p>
 <ul>
 <li>Desired runtime. Example: python27.</li>
 </ul>
 </li>
-<li><code>runtime-api-version=sed</code><ul>
+<li><code>runtime-api-version=et</code><ul>
 <li>The version of the API in the given runtime environment. Please see the app.yaml reference for valid values at https://cloud.google.com/appengine/docs/standard/&lt;language&gt;/config/appref</li>
 </ul>
 </li>
-<li><code>serving-status=dolor</code><ul>
+<li><code>serving-status=clita</code><ul>
 <li>Current serving status of this version. Only the versions with a SERVING status create instances and can be billed.SERVING_STATUS_UNSPECIFIED is an invalid value. Defaults to SERVING.</li>
 </ul>
 </li>
@@ -762,7 +811,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>Whether multiple requests can be dispatched to this version at once.</li>
 </ul>
 </li>
-<li><code>version-url=dolore</code><ul>
+<li><code>version-url=dolores</code><ul>
 <li>Serving URL for this version. Example: &#34;https://myversion-dot-myservice-dot-myapp.appspot.com&#34;@OutputOnly</li>
 </ul>
 </li>

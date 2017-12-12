@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Policies Patch - Android Management v1.0.6+20170918</title>
+  <title>Policies Patch - Android Management v1.0.7+20171127</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Android Management v1.0.6+20170918</a>
+        <a href=".." class="icon icon-home"> Android Management v1.0.7+20171127</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -187,7 +187,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Android Management v1.0.6+20170918</a>
+        <a href="..">Android Management v1.0.7+20171127</a>
       </nav>
 
       
@@ -233,22 +233,44 @@ You can set the scope for this method like this: <code>androidmanagement1 --scop
 In the latter case it is advised to set the field-cursor to the data-structure's field to specify values more concisely.</p>
 <p>For example, a structure like this:</p>
 <pre><code>Policy:
+  account-types-with-management-disabled: [string]
   add-user-disabled: boolean
   adjust-volume-disabled: boolean
+  always-on-vpn-package:
+    lockdown-enabled: boolean
+    package-name: string
   auto-time-required: boolean
   block-applications-enabled: boolean
+  bluetooth-config-disabled: boolean
+  bluetooth-contact-sharing-disabled: boolean
+  bluetooth-disabled: boolean
   camera-disabled: boolean
+  cell-broadcasts-config-disabled: boolean
+  create-windows-disabled: boolean
+  credentials-config-disabled: boolean
+  data-roaming-disabled: boolean
   debugging-features-allowed: boolean
   default-permission-policy: string
+  ensure-verify-apps-enabled: boolean
   factory-reset-disabled: boolean
   frp-admin-emails: [string]
   fun-disabled: boolean
+  install-apps-disabled: boolean
   install-unknown-sources-allowed: boolean
   keyguard-disabled: boolean
+  keyguard-disabled-features: [string]
+  long-support-message:
+    default-message: string
+    localized-messages: { string: string }
   maximum-time-to-lock: string
+  mobile-networks-config-disabled: boolean
   modify-accounts-disabled: boolean
+  mount-physical-media-disabled: boolean
   name: string
   network-escape-hatch-enabled: boolean
+  network-reset-disabled: boolean
+  outgoing-beam-disabled: boolean
+  outgoing-calls-disabled: boolean
   password-requirements:
     maximum-failed-passwords-for-wipe: integer
     password-expiration-timeout: string
@@ -261,9 +283,22 @@ In the latter case it is advised to set the field-cursor to the data-structure's
     password-minimum-symbols: integer
     password-minimum-upper-case: integer
     password-quality: string
+  permitted-input-methods:
+    package-names: [string]
+  recommended-global-proxy:
+    excluded-hosts: [string]
+    host: string
+    pac-uri: string
+    port: integer
   remove-user-disabled: boolean
   safe-boot-disabled: boolean
   screen-capture-disabled: boolean
+  set-user-icon-disabled: boolean
+  set-wallpaper-disabled: boolean
+  short-support-message:
+    default-message: string
+    localized-messages: { string: string }
+  sms-disabled: boolean
   status-bar-disabled: boolean
   status-reporting-settings:
     display-info-enabled: boolean
@@ -277,8 +312,12 @@ In the latter case it is advised to set the field-cursor to the data-structure's
     end-minutes: integer
     start-minutes: integer
     type: string
+  tethering-config-disabled: boolean
+  uninstall-apps-disabled: boolean
   unmute-microphone-disabled: boolean
+  usb-file-transfer-disabled: boolean
   version: string
+  vpn-config-disabled: boolean
   wifi-config-disabled: boolean
   wifi-configs-lockdown-enabled: boolean
 
@@ -286,7 +325,12 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    add-user-disabled=false</code><ul>
+<li><code>-r .    account-types-with-management-disabled=sit</code><ul>
+<li>Account types that cannot be managed by the user. &lt;i&gt;Requires the beta version of the Android Device Policy app.&lt;/i&gt;</li>
+<li>Each invocation of this argument appends the given value to the array.</li>
+</ul>
+</li>
+<li><code>add-user-disabled=true</code><ul>
 <li>Whether adding new users and profiles is disabled.</li>
 </ul>
 </li>
@@ -294,7 +338,19 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>Whether adjusting the master volume is disabled.</li>
 </ul>
 </li>
-<li><code>auto-time-required=true</code><ul>
+<li><code>always-on-vpn-package    lockdown-enabled=false</code><ul>
+<li>Disallows networking when the VPN is not connected.</li>
+</ul>
+</li>
+<li>
+<p><code>package-name=consetetur</code></p>
+<ul>
+<li>The package name of the VPN app.</li>
+</ul>
+</li>
+<li>
+<p><code>..    auto-time-required=true</code></p>
+<ul>
 <li>Whether auto time is required, which prevents the user from manually setting the date and time.</li>
 </ul>
 </li>
@@ -302,103 +358,205 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>Whether applications other than the ones configured in applications are blocked from being installed. When set, applications that were installed under a previous policy but no longer appear in the policy are automatically uninstalled.</li>
 </ul>
 </li>
-<li><code>camera-disabled=true</code><ul>
+<li><code>bluetooth-config-disabled=false</code><ul>
+<li>Whether configuring bluetooth is disabled. &lt;i&gt;Requires the beta version of the Android Device Policy app.&lt;/i&gt;</li>
+</ul>
+</li>
+<li><code>bluetooth-contact-sharing-disabled=false</code><ul>
+<li>Whether bluetooth contact sharing is disabled. &lt;i&gt;Requires the beta version of the Android Device Policy app.&lt;/i&gt;</li>
+</ul>
+</li>
+<li><code>bluetooth-disabled=false</code><ul>
+<li>Whether bluetooth is disabled. Prefer this setting over bluetooth_config_disabled because bluetooth_config_disabled can be bypassed by the user. &lt;i&gt;Requires the beta version of the Android Device Policy app.&lt;/i&gt;</li>
+</ul>
+</li>
+<li><code>camera-disabled=false</code><ul>
 <li>Whether all cameras on the device are disabled.</li>
+</ul>
+</li>
+<li><code>cell-broadcasts-config-disabled=true</code><ul>
+<li>Whether configuring cell broadcast is disabled. &lt;i&gt;Requires the beta version of the Android Device Policy app.&lt;/i&gt;</li>
+</ul>
+</li>
+<li><code>create-windows-disabled=false</code><ul>
+<li>Whether creating windows besides app windows is disabled. &lt;i&gt;Requires the beta version of the Android Device Policy app.&lt;/i&gt;</li>
+</ul>
+</li>
+<li><code>credentials-config-disabled=true</code><ul>
+<li>Whether configuring user credentials is disabled. &lt;i&gt;Requires the beta version of the Android Device Policy app.&lt;/i&gt;</li>
+</ul>
+</li>
+<li><code>data-roaming-disabled=true</code><ul>
+<li>Whether roaming data services are disabled. &lt;i&gt;Requires the beta version of the Android Device Policy app.&lt;/i&gt;</li>
 </ul>
 </li>
 <li><code>debugging-features-allowed=true</code><ul>
 <li>Whether the user is allowed to enable debugging features.</li>
 </ul>
 </li>
-<li><code>default-permission-policy=vero</code><ul>
+<li><code>default-permission-policy=consetetur</code><ul>
 <li>The default permission policy for requests for runtime permissions.</li>
 </ul>
 </li>
-<li><code>factory-reset-disabled=false</code><ul>
+<li><code>ensure-verify-apps-enabled=false</code><ul>
+<li>Whether application verification is forced to be enabled. &lt;i&gt;Requires the beta version of the Android Device Policy app.&lt;/i&gt;</li>
+</ul>
+</li>
+<li><code>factory-reset-disabled=true</code><ul>
 <li>Whether factory resetting from settings is disabled.</li>
 </ul>
 </li>
-<li><code>frp-admin-emails=invidunt</code><ul>
+<li><code>frp-admin-emails=kasd</code><ul>
 <li>Email addresses of device administrators for factory reset protection. When the device is factory reset, it will require one of these admins to log in with the Google account email and password to unlock the device. If no admins are specified, the device will not provide factory reset protection.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>fun-disabled=false</code><ul>
+<li><code>fun-disabled=true</code><ul>
 <li>Whether the user is allowed to have fun. Controls whether the Easter egg game in Settings is disabled.</li>
 </ul>
 </li>
-<li><code>install-unknown-sources-allowed=false</code><ul>
+<li><code>install-apps-disabled=false</code><ul>
+<li>Whether user installation of apps is disabled. &lt;i&gt;Requires the beta version of the Android Device Policy app.&lt;/i&gt;</li>
+</ul>
+</li>
+<li><code>install-unknown-sources-allowed=true</code><ul>
 <li>Whether the user is allowed to enable the &#34;Unknown Sources&#34; setting, which allows installation of apps from unknown sources.</li>
 </ul>
 </li>
-<li><code>keyguard-disabled=true</code><ul>
+<li><code>keyguard-disabled=false</code><ul>
 <li>Whether the keyguard is disabled.</li>
 </ul>
 </li>
-<li><code>maximum-time-to-lock=aliquyam</code><ul>
+<li><code>keyguard-disabled-features=invidunt</code><ul>
+<li>Disabled keyguard customizations, such as widgets. &lt;i&gt;Requires the beta version of the Android Device Policy app.&lt;/i&gt;</li>
+<li>Each invocation of this argument appends the given value to the array.</li>
+</ul>
+</li>
+<li><code>long-support-message    default-message=ea</code><ul>
+<li>The default message that gets displayed if no localized message is specified, or the user&#39;s locale does not match with any of the localized messages. A default message must be provided if any localized messages are provided.</li>
+</ul>
+</li>
+<li>
+<p><code>localized-messages=key=sadipscing</code></p>
+<ul>
+<li>A map which contains &lt;locale, message&gt; pairs. The locale is a BCP 47 language code, e.g. en-US, es-ES, fr.</li>
+<li>the value will be associated with the given <code>key</code></li>
+</ul>
+</li>
+<li>
+<p><code>..    maximum-time-to-lock=rebum.</code></p>
+<ul>
 <li>Maximum time in milliseconds for user activity until the device will lock. A value of 0 means there is no restriction.</li>
+</ul>
+</li>
+<li><code>mobile-networks-config-disabled=true</code><ul>
+<li>Whether configuring mobile networks is disabled. &lt;i&gt;Requires the beta version of the Android Device Policy app.&lt;/i&gt;</li>
 </ul>
 </li>
 <li><code>modify-accounts-disabled=true</code><ul>
 <li>Whether adding or removing accounts is disabled.</li>
 </ul>
 </li>
-<li><code>name=et</code><ul>
+<li><code>mount-physical-media-disabled=true</code><ul>
+<li>Whether the user mounting physical external media is disabled. &lt;i&gt;Requires the beta version of the Android Device Policy app.&lt;/i&gt;</li>
+</ul>
+</li>
+<li><code>name=aliquyam</code><ul>
 <li>The name of the policy in the form enterprises/{enterpriseId}/policies/{policyId}</li>
 </ul>
 </li>
-<li><code>network-escape-hatch-enabled=true</code><ul>
+<li><code>network-escape-hatch-enabled=false</code><ul>
 <li>Whether the network escape hatch is enabled. If a network connection can&#39;t be made at boot time, the escape hatch prompts the user to temporarily connect to a network in order to refresh the device policy. After applying policy, the temporary network will be forgotten and the device will continue booting. This prevents being unable to connect to a network if there is no suitable network in the last policy and the device boots into an app in lock task mode, or the user is otherwise unable to reach device settings.</li>
 </ul>
 </li>
-<li><code>password-requirements    maximum-failed-passwords-for-wipe=56</code><ul>
+<li><code>network-reset-disabled=true</code><ul>
+<li>Whether resetting network settings is disabled. &lt;i&gt;Requires the beta version of the Android Device Policy app.&lt;/i&gt;</li>
+</ul>
+</li>
+<li><code>outgoing-beam-disabled=true</code><ul>
+<li>Whether using NFC to beam out data from apps is disabled. &lt;i&gt;Requires the beta version of the Android Device Policy app.&lt;/i&gt;</li>
+</ul>
+</li>
+<li><code>outgoing-calls-disabled=false</code><ul>
+<li>Whether outgoing calls are disabled. &lt;i&gt;Requires the beta version of the Android Device Policy app.&lt;/i&gt;</li>
+</ul>
+</li>
+<li><code>password-requirements    maximum-failed-passwords-for-wipe=71</code><ul>
 <li>A device will be wiped after too many incorrect device-unlock passwords have been entered. A value of 0 means there is no restriction.</li>
 </ul>
 </li>
-<li><code>password-expiration-timeout=takimata</code><ul>
+<li><code>password-expiration-timeout=ea</code><ul>
 <li>Password expiration timeout.</li>
 </ul>
 </li>
-<li><code>password-history-length=61</code><ul>
+<li><code>password-history-length=39</code><ul>
 <li>The length of the password history. After setting this, the user will not be able to enter a new password that is the same as any password in the history. A value of 0 means there is no restriction.</li>
 </ul>
 </li>
-<li><code>password-minimum-length=88</code><ul>
+<li><code>password-minimum-length=19</code><ul>
 <li>The minimum allowed password length. A value of 0 means there is no restriction. Only enforced when password_quality is NUMERIC, NUMERIC_COMPLEX, ALPHABETIC, ALPHANUMERIC, or COMPLEX.</li>
 </ul>
 </li>
-<li><code>password-minimum-letters=94</code><ul>
+<li><code>password-minimum-letters=77</code><ul>
 <li>Minimum number of letters required in the password. Only enforced when password_quality is COMPLEX.</li>
 </ul>
 </li>
-<li><code>password-minimum-lower-case=43</code><ul>
+<li><code>password-minimum-lower-case=63</code><ul>
 <li>Minimum number of lower case letters required in the password. Only enforced when password_quality is COMPLEX.</li>
 </ul>
 </li>
-<li><code>password-minimum-non-letter=74</code><ul>
+<li><code>password-minimum-non-letter=42</code><ul>
 <li>Minimum number of non-letter characters (numerical digits or symbols) required in the password. Only enforced when password_quality is COMPLEX.</li>
 </ul>
 </li>
-<li><code>password-minimum-numeric=15</code><ul>
+<li><code>password-minimum-numeric=16</code><ul>
 <li>Minimum number of numerical digits required in the password. Only enforced when password_quality is COMPLEX.</li>
 </ul>
 </li>
-<li><code>password-minimum-symbols=64</code><ul>
+<li><code>password-minimum-symbols=47</code><ul>
 <li>Minimum number of symbols required in the password. Only enforced when password_quality is COMPLEX.</li>
 </ul>
 </li>
-<li><code>password-minimum-upper-case=35</code><ul>
+<li><code>password-minimum-upper-case=70</code><ul>
 <li>Minimum number of upper case letters required in the password. Only enforced when password_quality is COMPLEX.</li>
 </ul>
 </li>
 <li>
-<p><code>password-quality=sadipscing</code></p>
+<p><code>password-quality=dolores</code></p>
 <ul>
 <li>The required password quality.</li>
 </ul>
 </li>
 <li>
-<p><code>..    remove-user-disabled=false</code></p>
+<p><code>..permitted-input-methods    package-names=sit</code></p>
+<ul>
+<li>A list of package names.</li>
+<li>Each invocation of this argument appends the given value to the array.</li>
+</ul>
+</li>
+<li>
+<p><code>..recommended-global-proxy    excluded-hosts=diam</code></p>
+<ul>
+<li>For a direct proxy, the hosts for which the proxy is bypassed. The host names may contain wildcards such as *.example.com.</li>
+<li>Each invocation of this argument appends the given value to the array.</li>
+</ul>
+</li>
+<li><code>host=ut</code><ul>
+<li>The host of the direct proxy.</li>
+</ul>
+</li>
+<li><code>pac-uri=justo</code><ul>
+<li>The URI of the PAC script used to configure the proxy.</li>
+</ul>
+</li>
+<li>
+<p><code>port=95</code></p>
+<ul>
+<li>The port of the direct proxy.</li>
+</ul>
+</li>
+<li>
+<p><code>..    remove-user-disabled=true</code></p>
 <ul>
 <li>Whether removing other users is disabled.</li>
 </ul>
@@ -411,19 +569,44 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>Whether screen capture is disabled.</li>
 </ul>
 </li>
-<li><code>status-bar-disabled=true</code><ul>
+<li><code>set-user-icon-disabled=false</code><ul>
+<li>Whether changing the user icon is disabled. &lt;i&gt;Requires the beta version of the Android Device Policy app.&lt;/i&gt;</li>
+</ul>
+</li>
+<li><code>set-wallpaper-disabled=false</code><ul>
+<li>Whether changing the wallpaper is disabled. &lt;i&gt;Requires the beta version of the Android Device Policy app.&lt;/i&gt;</li>
+</ul>
+</li>
+<li><code>short-support-message    default-message=est</code><ul>
+<li>The default message that gets displayed if no localized message is specified, or the user&#39;s locale does not match with any of the localized messages. A default message must be provided if any localized messages are provided.</li>
+</ul>
+</li>
+<li>
+<p><code>localized-messages=key=clita</code></p>
+<ul>
+<li>A map which contains &lt;locale, message&gt; pairs. The locale is a BCP 47 language code, e.g. en-US, es-ES, fr.</li>
+<li>the value will be associated with the given <code>key</code></li>
+</ul>
+</li>
+<li>
+<p><code>..    sms-disabled=true</code></p>
+<ul>
+<li>Whether sending or receiving SMS messages is disabled. &lt;i&gt;Requires the beta version of the Android Device Policy app.&lt;/i&gt;</li>
+</ul>
+</li>
+<li><code>status-bar-disabled=false</code><ul>
 <li>Whether the status bar is disabled. This disables notifications, quick settings and other screen overlays that allow escape from full-screen mode.</li>
 </ul>
 </li>
-<li><code>status-reporting-settings    display-info-enabled=false</code><ul>
+<li><code>status-reporting-settings    display-info-enabled=true</code><ul>
 <li>Whether displays reporting is enabled.</li>
 </ul>
 </li>
-<li><code>hardware-status-enabled=false</code><ul>
+<li><code>hardware-status-enabled=true</code><ul>
 <li>Whether hardware status reporting is enabled.</li>
 </ul>
 </li>
-<li><code>memory-info-enabled=true</code><ul>
+<li><code>memory-info-enabled=false</code><ul>
 <li>Whether memory info reporting is enabled.</li>
 </ul>
 </li>
@@ -448,31 +631,47 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>system-update    end-minutes=39</code><ul>
+<li><code>system-update    end-minutes=84</code><ul>
 <li>If the type is WINDOWED, the end of the maintenance window, measured as the number of minutes after midnight in device local time. This value must be between 0 and 1439, inclusive. If this value is less than start_minutes, then the maintenance window spans midnight. If the maintenance window specified is smaller than 30 minutes, the actual window is extended to 30 minutes beyond the start time.</li>
 </ul>
 </li>
-<li><code>start-minutes=19</code><ul>
+<li><code>start-minutes=27</code><ul>
 <li>If the type is WINDOWED, the start of the maintenance window, measured as the number of minutes after midnight in device local time. This value must be between 0 and 1439, inclusive.</li>
 </ul>
 </li>
 <li>
-<p><code>type=eos</code></p>
+<p><code>type=dolor</code></p>
 <ul>
 <li>The type of system update to configure.</li>
 </ul>
 </li>
 <li>
-<p><code>..    unmute-microphone-disabled=true</code></p>
+<p><code>..    tethering-config-disabled=true</code></p>
 <ul>
+<li>Whether configuring tethering and portable hotspots is disabled. &lt;i&gt;Requires the beta version of the Android Device Policy app.&lt;/i&gt;</li>
+</ul>
+</li>
+<li><code>uninstall-apps-disabled=false</code><ul>
+<li>Whether user uninstallation of applications is disabled. &lt;i&gt;Requires the beta version of the Android Device Policy app.&lt;/i&gt;</li>
+</ul>
+</li>
+<li><code>unmute-microphone-disabled=false</code><ul>
 <li>Whether the microphone is muted and adjusting microphone volume is disabled.</li>
 </ul>
 </li>
-<li><code>version=sea</code><ul>
+<li><code>usb-file-transfer-disabled=true</code><ul>
+<li>Whether transferring files over USB is disabled. &lt;i&gt;Requires the beta version of the Android Device Policy app.&lt;/i&gt;</li>
+</ul>
+</li>
+<li><code>version=lorem</code><ul>
 <li>The version of the policy. This is a read-only field. The version is incremented each time the policy is updated.</li>
 </ul>
 </li>
-<li><code>wifi-config-disabled=false</code><ul>
+<li><code>vpn-config-disabled=false</code><ul>
+<li>Whether configuring VPN is disabled. &lt;i&gt;Requires the beta version of the Android Device Policy app.&lt;/i&gt;</li>
+</ul>
+</li>
+<li><code>wifi-config-disabled=true</code><ul>
 <li>Whether configuring WiFi access points is disabled.</li>
 </ul>
 </li>

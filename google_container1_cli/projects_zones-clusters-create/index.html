@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Zones Clusters Create - Container v1.0.6+20170915</title>
+  <title>Zones Clusters Create - Container v1.0.7+20171111</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Container v1.0.6+20170915</a>
+        <a href=".." class="icon icon-home"> Container v1.0.7+20171111</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -213,7 +213,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Container v1.0.6+20170915</a>
+        <a href="..">Container v1.0.7+20171111</a>
       </nav>
 
       
@@ -456,9 +456,7 @@ For requests, this field should only be used in lieu of a
 &#34;node_config&#34;) will be used to create a &#34;NodePool&#34; object with an
 auto-generated name. Do not use this and a node_pool at the same time.
 </em> <code>instance-group-urls=ea</code>
-    - [Output only] The resource URLs of <a href="../compute/docs/instance-groups/">instance
-groups</a> associated with this
-cluster.
+    - Deprecated. Use node_pools.instance_group_urls.
     - Each invocation of this argument appends the given value to the array.
 <em> <code>ip-allocation-policy    cluster-ipv4-cidr=no</code>
     - This field is deprecated, use cluster_ipv4_cidr_block.

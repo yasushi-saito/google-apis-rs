@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Topics Set Iam Policy - Pubsub v1.0.6+20170829</title>
+  <title>Topics Set Iam Policy - Pubsub v1.0.7+20171129</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Pubsub v1.0.6+20170829</a>
+        <a href=".." class="icon icon-home"> Pubsub v1.0.7+20171129</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -58,7 +58,23 @@
     <ul class="subnav">
                 <li class="">
                     
+    <a class="" href="../projects_snapshots-create/">Snapshots Create</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_snapshots-delete/">Snapshots Delete</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../projects_snapshots-get-iam-policy/">Snapshots Get Iam Policy</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_snapshots-list/">Snapshots List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_snapshots-patch/">Snapshots Patch</a>
                 </li>
                 <li class="">
                     
@@ -102,7 +118,15 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="../projects_subscriptions-patch/">Subscriptions Patch</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../projects_subscriptions-pull/">Subscriptions Pull</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_subscriptions-seek/">Subscriptions Seek</a>
                 </li>
                 <li class="">
                     
@@ -166,6 +190,10 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="../projects_topics-snapshots-list/">Topics Snapshots List</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../projects_topics-subscriptions-list/">Topics Subscriptions List</a>
                 </li>
                 <li class="">
@@ -185,7 +213,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Pubsub v1.0.6+20170829</a>
+        <a href="..">Pubsub v1.0.7+20171129</a>
       </nav>
 
       
@@ -245,7 +273,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .policy    etag=ea</code><ul>
+<li><code>-r .policy    etag=dolor</code><ul>
 <li>
 <p><code>etag</code> is used for optimistic concurrency control as a way to help
     prevent simultaneous updates of a policy from overwriting each other.
@@ -256,7 +284,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
     ensure that their change will be applied to the same version of the policy.</p>
 <p>If no <code>etag</code> is provided in the call to <code>setIamPolicy</code>, then the existing
 policy is overwritten blindly.
-* <code>version=40</code>
+* <code>version=62</code>
     - Version of the <code>Policy</code>. The default version is 0.</p>
 </li>
 </ul>
@@ -370,7 +398,7 @@ policy is overwritten blindly.
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../projects_topics-subscriptions-list/" class="btn btn-neutral float-right" title="Topics Subscriptions List">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../projects_topics-snapshots-list/" class="btn btn-neutral float-right" title="Topics Snapshots List">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="../projects_topics-publish/" class="btn btn-neutral" title="Topics Publish"><span class="icon icon-circle-arrow-left"></span> Previous</a>
@@ -406,7 +434,7 @@ policy is overwritten blindly.
         <span><a href="../projects_topics-publish/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../projects_topics-subscriptions-list/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../projects_topics-snapshots-list/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

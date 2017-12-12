@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Instances Databases Sessions Streaming Read - Spanner v1.0.6+20170914</title>
+  <title>Instances Databases Sessions Streaming Read - Spanner v1.0.7+20171204</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Spanner v1.0.6+20170914</a>
+        <a href=".." class="icon icon-home"> Spanner v1.0.7+20171204</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -245,7 +245,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Spanner v1.0.6+20170914</a>
+        <a href="..">Spanner v1.0.7+20171204</a>
       </nav>
 
       
@@ -353,8 +353,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <p><code>..    limit=dolore</code></p>
 <ul>
 <li>If greater than zero, only the first <code>limit</code> rows are yielded. If <code>limit</code>
-    is zero, the default is no limit.
-    A limit cannot be specified if partition_token is set.</li>
+    is zero, the default is no limit.</li>
 </ul>
 </li>
 <li><code>resume-token=duo</code><ul>
@@ -400,7 +399,9 @@ transactions.
 <p>This is useful for requesting fresher data than some previous
 read, or data that is fresh enough to observe the effects of some
 previously committed transaction whose timestamp is known.</p>
-<p>Note that this option can only be used in single-use transactions.
+<p>Note that this option can only be used in single-use transactions.</p>
+<p>A timestamp in RFC3339 UTC \&#34;Zulu\&#34; format, accurate to nanoseconds.
+Example: <code>&amp;#34;2014-10-02T15:01:23.045123456Z&amp;#34;</code>.
 * <code>read-timestamp=consetetur</code>
     - Executes all reads at the given timestamp. Unlike other modes,
 reads at a specific timestamp are repeatable; the same read at
@@ -409,7 +410,9 @@ timestamp is in the future, the read will block until the
 specified timestamp, modulo the read&#39;s deadline.</p>
 <p>Useful for large scale consistent reads such as mapreduces, or
 for coordinating many reads against a consistent snapshot of the
-data.
+data.</p>
+<p>A timestamp in RFC3339 UTC \&#34;Zulu\&#34; format, accurate to nanoseconds.
+Example: <code>&amp;#34;2014-10-02T15:01:23.045123456Z&amp;#34;</code>.
 <em> <code>return-read-timestamp=false</code>
     - If true, the Cloud Spanner-selected read timestamp is included in
 the Transaction message that describes the transaction.
@@ -453,7 +456,9 @@ transactions.
 <p>This is useful for requesting fresher data than some previous
 read, or data that is fresh enough to observe the effects of some
 previously committed transaction whose timestamp is known.</p>
-<p>Note that this option can only be used in single-use transactions.
+<p>Note that this option can only be used in single-use transactions.</p>
+<p>A timestamp in RFC3339 UTC \&#34;Zulu\&#34; format, accurate to nanoseconds.
+Example: <code>&amp;#34;2014-10-02T15:01:23.045123456Z&amp;#34;</code>.
 * <code>read-timestamp=labore</code>
     - Executes all reads at the given timestamp. Unlike other modes,
 reads at a specific timestamp are repeatable; the same read at
@@ -462,7 +467,9 @@ timestamp is in the future, the read will block until the
 specified timestamp, modulo the read&#39;s deadline.</p>
 <p>Useful for large scale consistent reads such as mapreduces, or
 for coordinating many reads against a consistent snapshot of the
-data.
+data.</p>
+<p>A timestamp in RFC3339 UTC \&#34;Zulu\&#34; format, accurate to nanoseconds.
+Example: <code>&amp;#34;2014-10-02T15:01:23.045123456Z&amp;#34;</code>.
 <em> <code>return-read-timestamp=true</code>
     - If true, the Cloud Spanner-selected read timestamp is included in
 the Transaction message that describes the transaction.

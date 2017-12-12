@@ -8,7 +8,7 @@
   <meta name="description" content="A complete library to interact with directory (protocol directory_v1)">
   
   <link rel="shortcut icon" href="./img/favicon.ico">
-  <title>Home - directory v1.0.6+20170830</title>
+  <title>Home - directory v1.0.7+20171127</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="./css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href="." class="icon icon-home"> directory v1.0.6+20170830</a>
+        <a href="." class="icon icon-home"> directory v1.0.7+20171127</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -256,6 +256,10 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="members_has-member/">Has Member</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="members_insert/">Insert</a>
                 </li>
                 <li class="">
@@ -361,6 +365,21 @@
                 <li class="">
                     
     <a class="" href="privileges_list/">List</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Resolved App Access Settings</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="resolved-app-access-settings_get-settings/">Get Settings</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="resolved-app-access-settings_list-trusted-apps/">List Trusted Apps</a>
                 </li>
     </ul>
 	    </li>
@@ -604,7 +623,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href=".">directory v1.0.6+20170830</a>
+        <a href=".">directory v1.0.7+20171127</a>
       </nav>
 
       
@@ -648,7 +667,7 @@ capabilities. Errors will be printed to standard error, and cause the program's 
 
 <p>Find the source code <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/admin1_directory-cli">on github</a>.</p>
 <h1 id="usage">Usage</h1>
-<p>This documentation was generated from the <em>directory</em> API at revision <em>20170830</em>. The CLI is at version <em>1.0.6</em>.</p>
+<p>This documentation was generated from the <em>directory</em> API at revision <em>20171127</em>. The CLI is at version <em>1.0.7</em>.</p>
 <pre><code class="bash">admin1-directory [options]
         asps
                 delete &lt;user-key&gt; &lt;code-id&gt; [-p &lt;v&gt;]...
@@ -690,6 +709,7 @@ capabilities. Errors will be printed to standard error, and cause the program's 
         members
                 delete &lt;group-key&gt; &lt;member-key&gt; [-p &lt;v&gt;]...
                 get &lt;group-key&gt; &lt;member-key&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                has-member &lt;group-key&gt; &lt;member-key&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 insert &lt;group-key&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 list &lt;group-key&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 patch &lt;group-key&gt; &lt;member-key&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
@@ -714,6 +734,9 @@ capabilities. Errors will be printed to standard error, and cause the program's 
                 update &lt;customer-id&gt; &lt;org-unit-path&gt;... (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
         privileges
                 list &lt;customer&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+        resolved-app-access-settings
+                get-settings [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                list-trusted-apps [-p &lt;v&gt;]... [-o &lt;out&gt;]
         resources
                 calendars-delete &lt;customer&gt; &lt;calendar-resource-id&gt; [-p &lt;v&gt;]...
                 calendars-get &lt;customer&gt; &lt;calendar-resource-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
@@ -873,5 +896,5 @@ issue at hand.</p>
 
 <!--
 MkDocs version : 0.16.3
-Build Date UTC : 2017-09-27 12:58:49
+Build Date UTC : 2017-12-12 17:01:12
 -->

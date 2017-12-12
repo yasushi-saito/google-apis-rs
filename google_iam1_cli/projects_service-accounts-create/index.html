@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Service Accounts Create - iam v1.0.6+20170919</title>
+  <title>Service Accounts Create - iam v1.0.7+20171130</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> iam v1.0.6+20170919</a>
+        <a href=".." class="icon icon-home"> iam v1.0.7+20171130</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -234,7 +234,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">iam v1.0.6+20170919</a>
+        <a href="..">iam v1.0.7+20171130</a>
       </nav>
 
       
@@ -319,14 +319,14 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li><code>name=amet</code><ul>
 <li>
 <p>The resource name of the service account in the following format:
-    <code>projects/{PROJECT_ID}/serviceAccounts/{SERVICE_ACCOUNT_EMAIL}</code>.</p>
-<p>Requests using <code>-</code> as a wildcard for the project will infer the project
-from the <code>account</code> and the <code>account</code> value can be the <code>email</code> address or
-the <code>unique_id</code> of the service account.</p>
+    <code>projects/{PROJECT_ID}/serviceAccounts/{ACCOUNT}</code>.</p>
+<p>Requests using <code>-</code> as a wildcard for the <code>PROJECT_ID</code> will infer the
+project from the <code>account</code> and the <code>ACCOUNT</code> value can be the <code>email</code>
+address or the <code>unique_id</code> of the service account.</p>
 <p>In responses the resource name will always be in the format
-<code>projects/{PROJECT_ID}/serviceAccounts/{SERVICE_ACCOUNT_EMAIL}</code>.
+<code>projects/{PROJECT_ID}/serviceAccounts/{ACCOUNT}</code>.
 <em> <code>oauth2-client-id=no</code>
-    - @OutputOnly. The OAuth2 client id for the service account.
+    - @OutputOnly The OAuth2 client id for the service account.
 This is used in conjunction with the OAuth2 clientconfig API to make
 three legged OAuth2 (3LO) flows to access the data of Google users.
 </em> <code>project-id=labore</code>

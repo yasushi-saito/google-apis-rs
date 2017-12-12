@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Locations Transfer Configs Runs Transfer Logs List - BigQuery Data Transfer v1.0.6+20170921</title>
+  <title>Locations Transfer Configs Runs Transfer Logs List - BigQuery Data Transfer v1.0.7+20171208</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> BigQuery Data Transfer v1.0.6+20170921</a>
+        <a href=".." class="icon icon-home"> BigQuery Data Transfer v1.0.7+20171208</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -199,7 +199,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">BigQuery Data Transfer v1.0.6+20170921</a>
+        <a href="..">BigQuery Data Transfer v1.0.7+20171208</a>
       </nav>
 
       
@@ -263,13 +263,10 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p page-token=string</strong></p>
+<p><strong>-p message-types=string</strong></p>
 <ul>
-<li>Pagination token, which can be used to request a specific page
-    of <code>ListTransferLogsRequest</code> list results. For multiple-page
-    results, <code>ListTransferLogsResponse</code> outputs
-    a <code>next_page</code> token, which can be used as the
-    <code>page_token</code> value to request the next page of list results.</li>
+<li>Message types to return. If not populated - INFO, WARNING and ERROR
+    messages are returned.</li>
 </ul>
 </li>
 <li>
@@ -279,10 +276,13 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p message-types=string</strong></p>
+<p><strong>-p page-token=string</strong></p>
 <ul>
-<li>Message types to return. If not populated - INFO, WARNING and ERROR
-    messages are returned.</li>
+<li>Pagination token, which can be used to request a specific page
+    of <code>ListTransferLogsRequest</code> list results. For multiple-page
+    results, <code>ListTransferLogsResponse</code> outputs
+    a <code>next_page</code> token, which can be used as the
+    <code>page_token</code> value to request the next page of list results.</li>
 </ul>
 </li>
 </ul>

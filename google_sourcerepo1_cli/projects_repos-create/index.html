@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Repos Create - Cloud Source Repositories v1.0.6+20170908</title>
+  <title>Repos Create - Cloud Source Repositories v1.0.7+20171110</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Cloud Source Repositories v1.0.6+20170908</a>
+        <a href=".." class="icon icon-home"> Cloud Source Repositories v1.0.7+20171110</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -121,7 +121,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Cloud Source Repositories v1.0.6+20170908</a>
+        <a href="..">Cloud Source Repositories v1.0.7+20171110</a>
       </nav>
 
       
@@ -202,7 +202,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <p><code>webhook-id=stet</code></p>
 <ul>
 <li>ID of the webhook listening to updates to trigger mirroring.
-    Removing this webook from the other hosting service will stop
+    Removing this webhook from the other hosting service will stop
     Google Cloud Source Repositories from receiving notifications,
     and thereby disabling mirroring.</li>
 </ul>
@@ -216,12 +216,13 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li><code>size=et</code><ul>
-<li>The disk usage of the repo, in bytes.
-    Only returned by GetRepo.</li>
+<li>The disk usage of the repo, in bytes. Read-only field. Size is only
+    returned by GetRepo.</li>
 </ul>
 </li>
 <li><code>url=dolores</code><ul>
-<li>URL to clone the repository from Google Cloud Source Repositories.</li>
+<li>URL to clone the repository from Google Cloud Source Repositories.
+    Read-only field.</li>
 </ul>
 </li>
 </ul>

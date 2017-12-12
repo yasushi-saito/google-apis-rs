@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Refund - Shopping Content v1.0.6+20170926</title>
+  <title>Refund - Shopping Content v1.0.7+20171207</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Shopping Content v1.0.6+20170926</a>
+        <a href=".." class="icon icon-home"> Shopping Content v1.0.7+20171207</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -130,7 +130,15 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="../orders_setlineitemmetadata/">Setlineitemmetadata</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../orders_shiplineitems/">Shiplineitems</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../orders_updatelineitemshippingdetails/">Updatelineitemshippingdetails</a>
                 </li>
                 <li class="">
                     
@@ -153,7 +161,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Shopping Content v1.0.6+20170926</a>
+        <a href="..">Shopping Content v1.0.7+20171207</a>
       </nav>
 
       
@@ -182,7 +190,7 @@
           <div role="main">
             <div class="section">
               
-                <p>Refund a portion of the order, up to the full amount paid. This method can only be called for non-multi-client accounts.</p>
+                <p>Refund a portion of the order, up to the full amount paid.</p>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for the <em>https://www.googleapis.com/auth/content</em> scope to make a valid call.</p>
 <p>If unset, the scope for this method defaults to <em>https://www.googleapis.com/auth/content</em>.
@@ -190,7 +198,7 @@ You can set the scope for this method like this: <code>content2-sandbox --scope 
 <h1 id="required-scalar-arguments">Required Scalar Arguments</h1>
 <ul>
 <li><strong>&lt;merchant-id&gt;</strong> <em>(string)</em><ul>
-<li>The ID of the managing account.</li>
+<li>The ID of the account that manages the order. This cannot be a multi-client account.</li>
 </ul>
 </li>
 <li><strong>&lt;order-id&gt;</strong> <em>(string)</em><ul>
@@ -206,6 +214,12 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   amount:
     currency: string
     value: string
+  amount-pretax:
+    currency: string
+    value: string
+  amount-tax:
+    currency: string
+    value: string
   operation-id: string
   reason: string
   reason-text: string
@@ -214,27 +228,51 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .amount    currency=lorem</code><ul>
+<li><code>-r .amount    currency=eos</code><ul>
 <li>The currency of the price.</li>
 </ul>
 </li>
 <li>
-<p><code>value=et</code></p>
+<p><code>value=erat</code></p>
 <ul>
 <li>The price represented as a number.</li>
 </ul>
 </li>
 <li>
-<p><code>..    operation-id=duo</code></p>
+<p><code>..amount-pretax    currency=sadipscing</code></p>
+<ul>
+<li>The currency of the price.</li>
+</ul>
+</li>
+<li>
+<p><code>value=dolor</code></p>
+<ul>
+<li>The price represented as a number.</li>
+</ul>
+</li>
+<li>
+<p><code>..amount-tax    currency=eirmod</code></p>
+<ul>
+<li>The currency of the price.</li>
+</ul>
+</li>
+<li>
+<p><code>value=elitr</code></p>
+<ul>
+<li>The price represented as a number.</li>
+</ul>
+</li>
+<li>
+<p><code>..    operation-id=amet</code></p>
 <ul>
 <li>The ID of the operation. Unique across all operations for a given order.</li>
 </ul>
 </li>
-<li><code>reason=aliquyam</code><ul>
+<li><code>reason=no</code><ul>
 <li>The reason for the refund.</li>
 </ul>
 </li>
-<li><code>reason-text=sea</code><ul>
+<li><code>reason-text=labore</code><ul>
 <li>The explanation of the reason.</li>
 </ul>
 </li>

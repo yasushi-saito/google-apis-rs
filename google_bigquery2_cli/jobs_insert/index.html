@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Insert - bigquery v1.0.6+20170917</title>
+  <title>Insert - bigquery v1.0.7+20171202</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> bigquery v1.0.6+20170917</a>
+        <a href=".." class="icon icon-home"> bigquery v1.0.7+20171202</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -212,7 +212,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">bigquery v1.0.6+20170917</a>
+        <a href="..">bigquery v1.0.7+20171202</a>
       </nav>
 
       
@@ -369,6 +369,12 @@ In the latter case it is advised to set the field-cursor to the data-structure's
     query:
       billing-tier: integer
       cache-hit: boolean
+      ddl-operation-performed: string
+      ddl-target-table:
+        dataset-id: string
+        project-id: string
+        table-id: string
+      estimated-bytes-processed: string
       num-dml-affected-rows: string
       statement-type: string
       total-bytes-billed: string
@@ -567,7 +573,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li><code>schema-update-options=sadipscing</code><ul>
-<li>[Experimental] Allows the schema of the desitination table to be updated as a side effect of the load job if a schema is autodetected or supplied in the job configuration. Schema update options are supported in two cases: when writeDisposition is WRITE_APPEND; when writeDisposition is WRITE_TRUNCATE and the destination table is a partition of a table, specified by partition decorators. For normal tables, WRITE_TRUNCATE will always overwrite the schema. One or more of the following values are specified: ALLOW_FIELD_ADDITION: allow adding a nullable field to the schema. ALLOW_FIELD_RELAXATION: allow relaxing a required field in the original schema to nullable.</li>
+<li>Allows the schema of the destination table to be updated as a side effect of the load job if a schema is autodetected or supplied in the job configuration. Schema update options are supported in two cases: when writeDisposition is WRITE_APPEND; when writeDisposition is WRITE_TRUNCATE and the destination table is a partition of a table, specified by partition decorators. For normal tables, WRITE_TRUNCATE will always overwrite the schema. One or more of the following values are specified: ALLOW_FIELD_ADDITION: allow adding a nullable field to the schema. ALLOW_FIELD_RELAXATION: allow relaxing a required field in the original schema to nullable.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
@@ -677,7 +683,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li><code>schema-update-options=dolore</code><ul>
-<li>[Experimental] Allows the schema of the destination table to be updated as a side effect of the query job. Schema update options are supported in two cases: when writeDisposition is WRITE_APPEND; when writeDisposition is WRITE_TRUNCATE and the destination table is a partition of a table, specified by partition decorators. For normal tables, WRITE_TRUNCATE will always overwrite the schema. One or more of the following values are specified: ALLOW_FIELD_ADDITION: allow adding a nullable field to the schema. ALLOW_FIELD_RELAXATION: allow relaxing a required field in the original schema to nullable.</li>
+<li>Allows the schema of the destination table to be updated as a side effect of the query job. Schema update options are supported in two cases: when writeDisposition is WRITE_APPEND; when writeDisposition is WRITE_TRUNCATE and the destination table is a partition of a table, specified by partition decorators. For normal tables, WRITE_TRUNCATE will always overwrite the schema. One or more of the following values are specified: ALLOW_FIELD_ADDITION: allow adding a nullable field to the schema. ALLOW_FIELD_RELAXATION: allow relaxing a required field in the original schema to nullable.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
@@ -790,68 +796,92 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>[Output-only] Whether the query result was fetched from the query cache.</li>
 </ul>
 </li>
-<li><code>num-dml-affected-rows=est</code><ul>
+<li><code>ddl-operation-performed=est</code><ul>
+<li>[Output-only, Experimental] The DDL operation performed, possibly dependent on the pre-existence of the DDL target. Possible values (new values might be added in the future): &#34;CREATE&#34;: The query created the DDL target. &#34;SKIP&#34;: No-op. Example cases: the query is CREATE TABLE IF NOT EXISTS while the table already exists, or the query is DROP TABLE IF EXISTS while the table does not exist. &#34;REPLACE&#34;: The query replaced the DDL target. Example case: the query is CREATE OR REPLACE TABLE, and the table already exists. &#34;DROP&#34;: The query deleted the DDL target.</li>
+</ul>
+</li>
+<li><code>ddl-target-table    dataset-id=amet</code><ul>
+<li>[Required] The ID of the dataset containing this table.</li>
+</ul>
+</li>
+<li><code>project-id=accusam</code><ul>
+<li>[Required] The ID of the project containing this table.</li>
+</ul>
+</li>
+<li>
+<p><code>table-id=clita</code></p>
+<ul>
+<li>[Required] The ID of the table. The ID must contain only letters (a-z, A-Z), numbers (0-9), or underscores (_). The maximum length is 1,024 characters.</li>
+</ul>
+</li>
+<li>
+<p><code>..    estimated-bytes-processed=diam</code></p>
+<ul>
+<li>[Output-only] The original estimate of bytes processed for the job.</li>
+</ul>
+</li>
+<li><code>num-dml-affected-rows=justo</code><ul>
 <li>[Output-only] The number of rows affected by a DML statement. Present only for DML statements INSERT, UPDATE or DELETE.</li>
 </ul>
 </li>
-<li><code>statement-type=amet</code><ul>
-<li>[Output-only, Experimental] The type of query statement, if valid.</li>
+<li><code>statement-type=est</code><ul>
+<li>[Output-only, Experimental] The type of query statement, if valid. Possible values (new values might be added in the future): &#34;SELECT&#34;: SELECT query. &#34;INSERT&#34;: INSERT query; see https://cloud.google.com/bigquery/docs/reference/standard-sql/data-manipulation-language &#34;UPDATE&#34;: UPDATE query; see https://cloud.google.com/bigquery/docs/reference/standard-sql/data-manipulation-language &#34;DELETE&#34;: DELETE query; see https://cloud.google.com/bigquery/docs/reference/standard-sql/data-manipulation-language &#34;CREATE_TABLE&#34;: CREATE [OR REPLACE] TABLE without AS SELECT. &#34;CREATE_TABLE_AS_SELECT&#34;: CREATE [OR REPLACE] TABLE ... AS SELECT ... &#34;DROP_TABLE&#34;: DROP TABLE query. &#34;CREATE_VIEW&#34;: CREATE [OR REPLACE] VIEW ... AS SELECT ... &#34;DROP_VIEW&#34;: DROP VIEW query.</li>
 </ul>
 </li>
-<li><code>total-bytes-billed=accusam</code><ul>
+<li><code>total-bytes-billed=clita</code><ul>
 <li>[Output-only] Total bytes billed for the job.</li>
 </ul>
 </li>
-<li><code>total-bytes-processed=clita</code><ul>
+<li><code>total-bytes-processed=invidunt</code><ul>
 <li>[Output-only] Total bytes processed for the job.</li>
 </ul>
 </li>
 <li>
-<p><code>total-slot-ms=diam</code></p>
+<p><code>total-slot-ms=ut</code></p>
 <ul>
 <li>[Output-only] Slot-milliseconds for the job.</li>
 </ul>
 </li>
 <li>
-<p><code>..    start-time=justo</code></p>
+<p><code>..    start-time=dolores</code></p>
 <ul>
 <li>[Output-only] Start time of this job, in milliseconds since the epoch. This field will be present when the job transitions from the PENDING state to either RUNNING or DONE.</li>
 </ul>
 </li>
 <li>
-<p><code>total-bytes-processed=est</code></p>
+<p><code>total-bytes-processed=eos</code></p>
 <ul>
 <li>[Output-only] [Deprecated] Use the bytes processed in the query statistics instead.</li>
 </ul>
 </li>
 <li>
-<p><code>..status.error-result    debug-info=clita</code></p>
+<p><code>..status.error-result    debug-info=voluptua.</code></p>
 <ul>
 <li>Debugging information. This property is internal to Google and should not be used.</li>
 </ul>
 </li>
-<li><code>location=invidunt</code><ul>
+<li><code>location=duo</code><ul>
 <li>Specifies where the error occurred, if present.</li>
 </ul>
 </li>
-<li><code>message=ut</code><ul>
+<li><code>message=sed</code><ul>
 <li>A human-readable description of the error.</li>
 </ul>
 </li>
 <li>
-<p><code>reason=dolores</code></p>
+<p><code>reason=aliquyam</code></p>
 <ul>
 <li>A short error code that summarizes the error.</li>
 </ul>
 </li>
 <li>
-<p><code>..    state=eos</code></p>
+<p><code>..    state=ea</code></p>
 <ul>
 <li>[Output-only] Running state of the job.</li>
 </ul>
 </li>
 <li>
-<p><code>..    user-email=voluptua.</code></p>
+<p><code>..    user-email=ea</code></p>
 <ul>
 <li>[Output-only] Email address of the user who ran the job.</li>
 </ul>

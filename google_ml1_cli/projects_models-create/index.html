@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Models Create - Cloud Machine Learning Engine v1.0.6+20170926</title>
+  <title>Models Create - Cloud Machine Learning Engine v1.0.7+20171208</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Cloud Machine Learning Engine v1.0.6+20170926</a>
+        <a href=".." class="icon icon-home"> Cloud Machine Learning Engine v1.0.7+20171208</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -82,11 +82,23 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="../projects_jobs-patch/">Jobs Patch</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../projects_jobs-set-iam-policy/">Jobs Set Iam Policy</a>
                 </li>
                 <li class="">
                     
     <a class="" href="../projects_jobs-test-iam-permissions/">Jobs Test Iam Permissions</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_locations-get/">Locations Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_locations-list/">Locations List</a>
                 </li>
                 <li class=" current">
                     
@@ -134,6 +146,10 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="../projects_models-patch/">Models Patch</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../projects_models-set-iam-policy/">Models Set Iam Policy</a>
                 </li>
                 <li class="">
@@ -155,6 +171,10 @@
                 <li class="">
                     
     <a class="" href="../projects_models-versions-list/">Models Versions List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_models-versions-patch/">Models Versions Patch</a>
                 </li>
                 <li class="">
                     
@@ -193,7 +213,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Cloud Machine Learning Engine v1.0.6+20170926</a>
+        <a href="..">Cloud Machine Learning Engine v1.0.7+20171208</a>
       </nav>
 
       
@@ -249,7 +269,9 @@ In the latter case it is advised to set the field-cursor to the data-structure's
     deployment-uri: string
     description: string
     error-message: string
+    etag: string
     is-default: boolean
+    labels: { string: string }
     last-use-time: string
     manual-scaling:
       nodes: integer
@@ -257,6 +279,8 @@ In the latter case it is advised to set the field-cursor to the data-structure's
     runtime-version: string
     state: string
   description: string
+  etag: string
+  labels: { string: string }
   name: string
   online-prediction-logging: boolean
   regions: [string]
@@ -266,7 +290,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
 <li>
-<p><code>-r .default-version.auto-scaling    min-nodes=64</code></p>
+<p><code>-r .default-version.auto-scaling    min-nodes=94</code></p>
 <ul>
 <li>
 <p>Optional. The minimum number of nodes to allocate for this model. These
@@ -289,13 +313,13 @@ and no charges will be incurred until traffic to the model resumes.</p>
 </ul>
 </li>
 <li>
-<p><code>..    create-time=aliquyam</code></p>
+<p><code>..    create-time=takimata</code></p>
 <ul>
 <li>Output only. The time the version was created.</li>
 </ul>
 </li>
 <li>
-<p><code>deployment-uri=accusam</code></p>
+<p><code>deployment-uri=at</code></p>
 <ul>
 <li>
 <p>Required. The Google Cloud Storage location of the trained model used to
@@ -309,18 +333,33 @@ the model service uses the specified location as the source of the model.
 Once deployed, the model version is hosted by the prediction service, so
 this location is useful only as a historical record.
 The total number of model files can&#39;t exceed 1000.
-<em> <code>description=lorem</code>
+<em> <code>description=labore</code>
     - Optional. The description specified for the version when it was created.
-</em> <code>error-message=sea</code>
+</em> <code>error-message=invidunt</code>
     - Output only. The details of a failure or a cancellation.
-* <code>is-default=true</code>
+<em> <code>etag=ea</code>
+    - <code>etag</code> is used for optimistic concurrency control as a way to help
+prevent simultaneous updates of a model from overwriting each other.
+It is strongly suggested that systems make use of the <code>etag</code> in the
+read-modify-write cycle to perform model updates in order to avoid race
+conditions: An <code>etag</code> is returned in the response to <code>GetVersion</code>, and
+systems are expected to put that etag in the request to <code>UpdateVersion</code> to
+ensure that their change will be applied to the model as intended.
+</em> <code>is-default=false</code>
     - Output only. If true, this version will be used to handle prediction
 requests that do not specify a version.</p>
 <p>You can change the default version by calling
 <a href="../ml-engine/reference/rest/v1/projects.models.versions/setDefault">projects.methods.versions.setDefault</a>.
-<em> <code>last-use-time=duo</code>
+<em> <code>labels=key=rebum.</code>
+    - Optional. One or more labels that you can add, to organize your model
+versions. Each label is a key-value pair, where both the key and the value
+are arbitrary strings that you supply.
+For more information, see the documentation on
+&lt;a href=&#34;/ml-engine/docs/how-tos/resource-labels&#34;&gt;using labels&lt;/a&gt;.
+    - the value will be associated with the given <code>key</code>
+</em> <code>last-use-time=dolore</code>
     - Output only. The time the version was last used for prediction.
-</em> <code>manual-scaling    nodes=80</code>
+* <code>manual-scaling    nodes=60</code>
     - The number of nodes to allocate for this model. These nodes are always up,
 starting from the time the model is deployed, so the cost of operating
 this model will be proportional to <code>nodes</code> * number of hours since
@@ -329,33 +368,52 @@ last billing cycle plus the cost for each prediction performed.</p>
 </ul>
 </li>
 <li>
-<p><code>..    name=eirmod</code></p>
+<p><code>..    name=sed</code></p>
 <ul>
 <li>
 <p>Required.The name specified for the version when it was created.</p>
 <p>The version name must be unique within the model it is created in.
-<em> <code>runtime-version=sanctus</code>
+<em> <code>runtime-version=aliquyam</code>
     - Optional. The Google Cloud ML runtime version to use for this deployment.
 If not set, Google Cloud ML will choose a version.
-</em> <code>state=et</code>
+</em> <code>state=sit</code>
     - Output only. The state of a version.</p>
 </li>
 </ul>
 </li>
 <li>
-<p><code>..    description=amet</code></p>
+<p><code>..    description=eirmod</code></p>
 <ul>
 <li>Optional. The description specified for the model when it was created.</li>
 </ul>
 </li>
-<li><code>name=et</code><ul>
+<li><code>etag=consetetur</code><ul>
+<li><code>etag</code> is used for optimistic concurrency control as a way to help
+    prevent simultaneous updates of a model from overwriting each other.
+    It is strongly suggested that systems make use of the <code>etag</code> in the
+    read-modify-write cycle to perform model updates in order to avoid race
+    conditions: An <code>etag</code> is returned in the response to <code>GetModel</code>, and
+    systems are expected to put that etag in the request to <code>UpdateModel</code> to
+    ensure that their change will be applied to the model as intended.</li>
+</ul>
+</li>
+<li><code>labels=key=labore</code><ul>
+<li>Optional. One or more labels that you can add, to organize your models.
+    Each label is a key-value pair, where both the key and the value are
+    arbitrary strings that you supply.
+    For more information, see the documentation on
+    &lt;a href=&#34;/ml-engine/docs/how-tos/resource-labels&#34;&gt;using labels&lt;/a&gt;.</li>
+<li>the value will be associated with the given <code>key</code></li>
+</ul>
+</li>
+<li><code>name=sed</code><ul>
 <li>
 <p>Required. The name specified for the model when it was created.</p>
 <p>The model name must be unique within the project it is created in.
 <em> <code>online-prediction-logging=true</code>
     - Optional. If true, enables StackDriver Logging for online prediction.
 Default is false.
-</em> <code>regions=ut</code>
+</em> <code>regions=gubergren</code>
     - Optional. The list of regions where the model is going to be deployed.
 Currently only one region per model is supported.
 Defaults to &#39;us-central1&#39; if nothing is set.
@@ -481,7 +539,7 @@ Note:
         <a href="../projects_models-delete/" class="btn btn-neutral float-right" title="Models Delete">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../projects_jobs-test-iam-permissions/" class="btn btn-neutral" title="Jobs Test Iam Permissions"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../projects_locations-list/" class="btn btn-neutral" title="Locations List"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -511,7 +569,7 @@ Note:
           <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/ml1-cli" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../projects_jobs-test-iam-permissions/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../projects_locations-list/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
         <span style="margin-left: 15px"><a href="../projects_models-delete/" style="color: #fcfcfc">Next &raquo;</a></span>

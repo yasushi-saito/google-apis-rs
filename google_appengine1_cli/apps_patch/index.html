@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Patch - appengine v1.0.6+20170914</title>
+  <title>Patch - appengine v1.0.7+20171208</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> appengine v1.0.6+20170914</a>
+        <a href=".." class="icon icon-home"> appengine v1.0.7+20171208</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -103,6 +103,30 @@
                 <li class="">
                     
     <a class="" href="../apps_domain-mappings-patch/">Domain Mappings Patch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../apps_firewall-ingress-rules-batch-update/">Firewall Ingress Rules Batch Update</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../apps_firewall-ingress-rules-create/">Firewall Ingress Rules Create</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../apps_firewall-ingress-rules-delete/">Firewall Ingress Rules Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../apps_firewall-ingress-rules-get/">Firewall Ingress Rules Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../apps_firewall-ingress-rules-list/">Firewall Ingress Rules List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../apps_firewall-ingress-rules-patch/">Firewall Ingress Rules Patch</a>
                 </li>
                 <li class="">
                     
@@ -224,7 +248,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">appengine v1.0.6+20170914</a>
+        <a href="..">appengine v1.0.7+20171208</a>
       </nav>
 
       
@@ -294,23 +318,23 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    auth-domain=amet</code><ul>
+<li><code>-r .    auth-domain=lorem</code><ul>
 <li>Google Apps authentication domain that controls which users can access this application.Defaults to open access for any Google Account.</li>
 </ul>
 </li>
-<li><code>code-bucket=no</code><ul>
+<li><code>code-bucket=sea</code><ul>
 <li>Google Cloud Storage bucket that can be used for storing files associated with this application. This bucket is associated with the application and can be used by the gcloud deployment commands.@OutputOnly</li>
 </ul>
 </li>
-<li><code>default-bucket=labore</code><ul>
+<li><code>default-bucket=et</code><ul>
 <li>Google Cloud Storage bucket that can be used by this application to store content.@OutputOnly</li>
 </ul>
 </li>
-<li><code>default-cookie-expiration=eirmod</code><ul>
+<li><code>default-cookie-expiration=duo</code><ul>
 <li>Cookie expiration policy for this application.</li>
 </ul>
 </li>
-<li><code>default-hostname=dolore</code><ul>
+<li><code>default-hostname=et</code><ul>
 <li>Hostname used to reach this application, as resolved by App Engine.@OutputOnly</li>
 </ul>
 </li>
@@ -321,44 +345,44 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
-<p><code>..    gcr-domain=aliquyam</code></p>
+<p><code>..    gcr-domain=sanctus</code></p>
 <ul>
 <li>The Google Container Registry domain used for storing managed build docker images for this application.</li>
 </ul>
 </li>
-<li><code>iap    enabled=false</code><ul>
+<li><code>iap    enabled=true</code><ul>
 <li>Whether the serving infrastructure will authenticate and authorize all incoming requests.If true, the oauth2_client_id and oauth2_client_secret fields must be non-empty.</li>
 </ul>
 </li>
-<li><code>oauth2-client-id=lorem</code><ul>
+<li><code>oauth2-client-id=amet</code><ul>
 <li>OAuth2 client ID to use for the authentication flow.</li>
 </ul>
 </li>
-<li><code>oauth2-client-secret=sea</code><ul>
+<li><code>oauth2-client-secret=et</code><ul>
 <li>OAuth2 client secret to use for the authentication flow.For security reasons, this value cannot be retrieved via the API. Instead, the SHA-256 hash of the value is returned in the oauth2_client_secret_sha256 field.@InputOnly</li>
 </ul>
 </li>
 <li>
-<p><code>oauth2-client-secret-sha256=et</code></p>
+<p><code>oauth2-client-secret-sha256=consetetur</code></p>
 <ul>
 <li>Hex-encoded SHA-256 hash of the client secret.@OutputOnly</li>
 </ul>
 </li>
 <li>
-<p><code>..    id=duo</code></p>
+<p><code>..    id=ut</code></p>
 <ul>
 <li>Identifier of the Application resource. This identifier is equivalent to the project ID of the Google Cloud Platform project where you want to deploy your application. Example: myapp.</li>
 </ul>
 </li>
-<li><code>location-id=et</code><ul>
+<li><code>location-id=ea</code><ul>
 <li>Location from which this application will be run. Application instances will run out of data centers in the chosen location, which is also where all of the application&#39;s end user content is stored.Defaults to us-central.Options are:us-central - Central USeurope-west - Western Europeus-east1 - Eastern US</li>
 </ul>
 </li>
-<li><code>name=eirmod</code><ul>
+<li><code>name=sed</code><ul>
 <li>Full path to the Application resource in the API. Example: apps/myapp.@OutputOnly</li>
 </ul>
 </li>
-<li><code>serving-status=sanctus</code><ul>
+<li><code>serving-status=dolor</code><ul>
 <li>Serving status of this application.</li>
 </ul>
 </li>

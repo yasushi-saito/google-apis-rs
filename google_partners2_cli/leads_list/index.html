@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>List - Partners v1.0.6+20170912</title>
+  <title>List - Partners v1.0.7+20171206</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Partners v1.0.6+20170912</a>
+        <a href=".." class="icon icon-home"> Partners v1.0.7+20171206</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -216,7 +216,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Partners v1.0.6+20170912</a>
+        <a href="..">Partners v1.0.7+20171206</a>
       </nav>
 
       
@@ -278,17 +278,17 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p request-metadata-traffic-source-traffic-sub-id=string</strong></p>
+<p><strong>-p request-metadata-traffic-source-traffic-source-id=string</strong></p>
 <ul>
-<li>Second level identifier to indicate where the traffic comes from.
+<li>Identifier to indicate where the traffic comes from.
     An identifier has multiple letters created by a team which redirected the
     traffic to us.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p request-metadata-traffic-source-traffic-source-id=string</strong></p>
+<p><strong>-p request-metadata-traffic-source-traffic-sub-id=string</strong></p>
 <ul>
-<li>Identifier to indicate where the traffic comes from.
+<li>Second level identifier to indicate where the traffic comes from.
     An identifier has multiple letters created by a team which redirected the
     traffic to us.</li>
 </ul>
@@ -300,9 +300,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p request-metadata-user-overrides-ip-address=string</strong></p>
+<p><strong>-p request-metadata-user-overrides-user-id=string</strong></p>
 <ul>
-<li>IP address to use instead of the user&#39;s geo-located IP address.</li>
+<li>Logged-in user ID to impersonate instead of the user&#39;s ID.</li>
 </ul>
 </li>
 <li>
@@ -312,15 +312,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p request-metadata-user-overrides-user-id=string</strong></p>
-<ul>
-<li>Logged-in user ID to impersonate instead of the user&#39;s ID.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p request-metadata-locale=string</strong></p>
 <ul>
 <li>Locale to use for the current request.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p request-metadata-user-overrides-ip-address=string</strong></p>
+<ul>
+<li>IP address to use instead of the user&#39;s geo-located IP address.</li>
 </ul>
 </li>
 <li>

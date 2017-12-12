@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Locations Queues Create - Cloud Tasks v1.0.6+20170926</title>
+  <title>Locations Queues Create - Cloud Tasks v1.0.7+20171208</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Cloud Tasks v1.0.6+20170926</a>
+        <a href=".." class="icon icon-home"> Cloud Tasks v1.0.7+20171208</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -181,7 +181,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Cloud Tasks v1.0.6+20170926</a>
+        <a href="..">Cloud Tasks v1.0.7+20171208</a>
       </nav>
 
       
@@ -211,11 +211,11 @@
             <div class="section">
               
                 <p>Creates a queue.</p>
-<p>WARNING: This method is only available to whitelisted
-users. Using this method carries some risk. Read
+<p>WARNING: Using this method may have unintended side effects if you are
+using an App Engine <code>queue.yaml</code> or <code>queue.xml</code> file to manage your queues.
+Read
 <a href="../cloud-tasks/docs/queue-yaml">Overview of Queue Management and queue.yaml</a>
-carefully and then sign up for
-<a href="https://goo.gl/Fe5mUy">whitelist access to this method</a>.</p>
+carefully before using this method.</p>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for the <em>https://www.googleapis.com/auth/cloud-platform</em> scope to make a valid call.</p>
 <p>If unset, the scope for this method defaults to <em>https://www.googleapis.com/auth/cloud-platform</em>.
@@ -245,26 +245,20 @@ In the latter case it is advised to set the field-cursor to the data-structure's
       instance: string
       service: string
       version: string
-  app-engine-queue-config:
-    app-engine-routing-override:
-      host: string
-      instance: string
-      service: string
-      version: string
   name: string
   purge-time: string
-  queue-state: string
+  rate-limits:
+    max-burst-size: integer
+    max-concurrent-tasks: integer
+    max-tasks-dispatched-per-second: number
   retry-config:
     max-attempts: integer
     max-backoff: string
     max-doublings: integer
+    max-retry-duration: string
     min-backoff: string
-    task-age-limit: string
     unlimited-attempts: boolean
-  throttle-config:
-    max-burst-size: integer
-    max-outstanding-tasks: integer
-    max-tasks-dispatched-per-second: number
+  state: string
 
 </code></pre>
 
@@ -274,8 +268,8 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <p><code>-r .app-engine-http-target.app-engine-routing-override    host=eirmod</code></p>
 <ul>
 <li>
-<p>Output only.</p>
-<p>The host that the task is sent to. For more information, see
+<p>Output only. The host that the task is sent to.</p>
+<p>For more information, see
 <a href="../appengine/docs/standard/python/how-requests-are-routed">How Requests are Routed</a>.</p>
 <p>The host is constructed as:</p>
 <ul>
@@ -372,206 +366,46 @@ AppEngineRouting.instance are the empty string.</p>
 </ul>
 </li>
 <li>
-<p><code>...app-engine-queue-config.app-engine-routing-override    host=et</code></p>
-<ul>
-<li>
-<p>Output only.</p>
-<p>The host that the task is sent to. For more information, see
-<a href="../appengine/docs/standard/python/how-requests-are-routed">How Requests are Routed</a>.</p>
-<p>The host is constructed as:</p>
-<ul>
-<li>
-<p><code>host = [application_domain_name]</code>&lt;/br&gt;
-  <code>| [service] + &amp;#39;.&amp;#39; + [application_domain_name]</code>&lt;/br&gt;
-  <code>| [version] + &amp;#39;.&amp;#39; + [application_domain_name]</code>&lt;/br&gt;
-  <code>| [version_dot_service]+ &amp;#39;.&amp;#39; + [application_domain_name]</code>&lt;/br&gt;
-  <code>| [instance] + &amp;#39;.&amp;#39; + [application_domain_name]</code>&lt;/br&gt;
-  <code>| [instance_dot_service] + &amp;#39;.&amp;#39; + [application_domain_name]</code>&lt;/br&gt;
-  <code>| [instance_dot_version] + &amp;#39;.&amp;#39; + [application_domain_name]</code>&lt;/br&gt;
-  <code>| [instance_dot_version_dot_service] + &amp;#39;.&amp;#39; + [application_domain_name]</code></p>
-</li>
-<li>
-<p><code>application_domain_name</code> = The domain name of the app, for
-  example &lt;app-id&gt;.appspot.com, which is associated with the
-  queue&#39;s project ID. Some tasks which were created using the App Engine
-  SDK use a custom domain name.</p>
-</li>
-<li>
-<p><code>service =</code> AppEngineRouting.service</p>
-</li>
-<li>
-<p><code>version =</code> AppEngineRouting.version</p>
-</li>
-<li>
-<p><code>version_dot_service =</code>
-  AppEngineRouting.version <code>+ &amp;#39;.&amp;#39; +</code> AppEngineRouting.service</p>
-</li>
-<li>
-<p><code>instance =</code> AppEngineRouting.instance</p>
-</li>
-<li>
-<p><code>instance_dot_service =</code>
-  AppEngineRouting.instance <code>+ &amp;#39;.&amp;#39; +</code> AppEngineRouting.service</p>
-</li>
-<li>
-<p><code>instance_dot_version =</code>
-  AppEngineRouting.instance <code>+ &amp;#39;.&amp;#39; +</code> AppEngineRouting.version</p>
-</li>
-<li>
-<p><code>instance_dot_version_dot_service =</code>
-  AppEngineRouting.instance <code>+ &amp;#39;.&amp;#39; +</code>
-  AppEngineRouting.version <code>+ &amp;#39;.&amp;#39; +</code> AppEngineRouting.service</p>
-</li>
-</ul>
-<p>If AppEngineRouting.service is empty, then the task will be sent
-to the service which is the default service when the task is attempted.</p>
-<p>If AppEngineRouting.version is empty, then the task will be sent
-to the version which is the default version when the task is attempted.</p>
-<p>If AppEngineRouting.instance is empty, then the task will be sent
-to an instance which is available when the task is attempted.</p>
-<p>When AppEngineRouting.service is &#34;default&#34;,
-AppEngineRouting.version is &#34;default&#34;, and
-AppEngineRouting.instance is empty, AppEngineRouting.host is
-shortened to just the <code>application_domain_name</code>.</p>
-<p>If AppEngineRouting.service, AppEngineRouting.version, or
-AppEngineRouting.instance is invalid, then the task will be sent
-to the default version of the default service when the task is attempted.
-* <code>instance=dolores</code>
-    - App instance.</p>
-<p>By default, the task is sent to an instance which is available when
-the task is attempted.</p>
-<p>Requests can only be sent to a specific instance if
-<a href="../appengine/docs/python/an-overview-of-app-engine?hl=en_US#scaling_types_and_instance_classes">manual scaling is used in App Engine Standard</a>.
-App Engine Flex does not support instances. For more information, see
-<a href="../appengine/docs/standard/python/how-requests-are-routed">App Engine Standard request routing</a>
-and <a href="../appengine/docs/flexible/python/how-requests-are-routed">App Engine Flex request routing</a>.
-* <code>service=kasd</code>
-    - App service.</p>
-<p>By default, the task is sent to the service which is the default
-service when the task is attempted (&#34;default&#34;).</p>
-<p>For some queues or tasks which were created using the App Engine Task Queue
-API, AppEngineRouting.host is not parsable into
-AppEngineRouting.service, AppEngineRouting.version, and
-AppEngineRouting.instance. For example, some tasks which were created
-using the App Engine SDK use a custom domain name; custom domains are not
-parsed by Cloud Tasks. If AppEngineRouting.host is not parsable, then
-AppEngineRouting.service, AppEngineRouting.version, and
-AppEngineRouting.instance are the empty string.
-* <code>version=accusam</code>
-    - App version.</p>
-<p>By default, the task is sent to the version which is the default
-version when the task is attempted (&#34;default&#34;).</p>
-<p>For some queues or tasks which were created using the App Engine Task Queue
-API, AppEngineRouting.host is not parsable into
-AppEngineRouting.service, AppEngineRouting.version, and
-AppEngineRouting.instance. For example, some tasks which were created
-using the App Engine SDK use a custom domain name; custom domains are not
-parsed by Cloud Tasks. If AppEngineRouting.host is not parsable, then
-AppEngineRouting.service, AppEngineRouting.version, and
-AppEngineRouting.instance are the empty string.</p>
-</li>
-</ul>
-</li>
-<li>
-<p><code>...    name=takimata</code></p>
+<p><code>...    name=et</code></p>
 <ul>
 <li>
 <p>The queue name.</p>
 <p>The queue name must have the following format:
 <code>projects/PROJECT_ID/locations/LOCATION_ID/queues/QUEUE_ID</code></p>
 <ul>
-<li><code>PROJECT_ID</code> can contain uppercase and lowercase letters,
-  numbers, hyphens, colons, and periods; that is, it must match
-  the regular expression: <code>[a-zA-Z\\d-:\\.]+</code>.</li>
-<li><code>QUEUE_ID</code> can contain uppercase and lowercase letters,
-  numbers, and hyphens; that is, it must match the regular
-  expression: <code>[a-zA-Z\\d-]+</code>. The maximum length is 100
-  characters.</li>
+<li><code>PROJECT_ID</code> can contain letters ([A-Za-z]), numbers ([0-9]),
+   hyphens (-), colons (:), or periods (.).
+   For more information, see
+   <a href="../resource-manager/docs/creating-managing-projects#identifying_projects">Identifying projects</a></li>
+<li><code>LOCATION_ID</code> is the canonical ID for the queue&#39;s location.
+   The list of available locations can be obtained by calling
+   google.cloud.location.Locations.ListLocations.
+   For more information, see https://cloud.google.com/about/locations/.</li>
+<li><code>QUEUE_ID</code> can contain letters ([A-Za-z]), numbers ([0-9]), or
+  hyphens (-). The maximum length is 100 characters.</li>
 </ul>
 <p>Caller-specified and required in CreateQueueRequest, after which
 it becomes output only.
-* <code>purge-time=justo</code>
-    - Output only.</p>
-<p>The last time this queue was purged. All tasks that were
-created before this time were purged.</p>
+* <code>purge-time=dolores</code>
+    - Output only. The last time this queue was purged.</p>
+<p>All tasks that were created before this time
+were purged.</p>
 <p>A queue can be purged using CloudTasks.PurgeQueue, the
 <a href="../appengine/docs/standard/python/taskqueue/push/deleting-tasks-and-queues#purging_all_tasks_from_a_queue">App Engine Task Queue SDK, or the Cloud Console</a>.</p>
 <p>Purge time will be truncated to the nearest microsecond. Purge
 time will be zero if the queue has never been purged.
-* <code>queue-state=amet.</code>
-    - Output only.</p>
-<p>The state of the queue.</p>
-<p><code>queue_state</code> can only be changed by called
-CloudTasks.PauseQueue, CloudTasks.ResumeQueue, or uploading
-<a href="../appengine/docs/python/config/queueref">queue.yaml</a>.
-CloudTasks.UpdateQueue cannot be used to change <code>queue_state</code>.
-* <code>retry-config    max-attempts=20</code>
-    - The maximum number of attempts for a task.</p>
-<p>Cloud Tasks will attempt the task <code>max_attempts</code> times (that
-is, if the first attempt fails, then there will be
-<code>max_attempts - 1</code> retries).  Must be &gt; 0.
-* <code>max-backoff=labore</code>
-    - The maximum amount of time to wait before retrying a task after
-it fails. The default is 1 hour.</p>
-<ul>
-<li>For <a href="../google.cloud.tasks.v2beta2.AppEngineHttpTarget">App Engine queues</a>,
-  this field is 1 hour by default.</li>
-<li>For <a href="../google.cloud.tasks.v2beta2.PullTarget">pull queues</a>, this field
-  is output only and always 0.</li>
-</ul>
-<p><code>max_backoff</code> will be truncated to the nearest second.
-<em> <code>max-doublings=92</code>
-    - The maximum number of times that the interval between failed task
-retries will be doubled before the increase becomes constant. The
-constant is: 2</em><em>(max_doublings - 1) </em>
-RetryConfig.min_backoff.</p>
-<ul>
-<li>For <a href="../google.cloud.tasks.v2beta2.AppEngineHttpTarget">App Engine queues</a>,
-  this field is 16 by default.</li>
-<li>For <a href="../google.cloud.tasks.v2beta2.PullTarget">pull queues</a>, this field
-  is output only and always 0.</li>
-<li>
-<p><code>min-backoff=nonumy</code></p>
-<ul>
-<li>The minimum amount of time to wait before retrying a task after
-it fails.</li>
-</ul>
-</li>
-<li>
-<p>For <a href="../google.cloud.tasks.v2beta2.AppEngineHttpTarget">App Engine queues</a>,
-  this field is 0.1 seconds by default.</p>
-</li>
-<li>For <a href="../google.cloud.tasks.v2beta2.PullTarget">pull queues</a>, this
-  field is output only and always 0.</li>
-</ul>
-<p><code>min_backoff</code> will be truncated to the nearest second.
-* <code>task-age-limit=dolores</code>
-    - If positive, task_age_limit specifies the time limit for retrying a failed
-task, measured from when the task was first run. If specified with
-RetryConfig.max_attempts, the task will be retried until both
-limits are reached.</p>
-<p>If zero, then the task age is unlimited. This field is zero by default.</p>
-<p><code>task_age_limit</code> will be truncated to the nearest second.
-* <code>unlimited-attempts=false</code>
-    - If true, then the number of attempts is unlimited.</p>
-</li>
-</ul>
-</li>
-<li>
-<p><code>..throttle-config    max-burst-size=6</code></p>
-<ul>
-<li>
-<p>Output only.</p>
-<p>The max burst size limits how fast the queue is processed when
-many tasks are in the queue and the rate is high. This field
-allows the queue to have a high rate so processing starts shortly
-after a task is enqueued, but still limits resource usage when
-many tasks are enqueued in a short period of time.</p>
+* <code>rate-limits    max-burst-size=38</code>
+    - Output only. The max burst size.</p>
+<p>Max burst size limits how fast the queue is processed when many
+tasks are in the queue and the rate is high. This field allows
+the queue to have a high rate so processing starts shortly after
+a task is enqueued, but still limits resource usage when many
+tasks are enqueued in a short period of time.</p>
 <ul>
 <li>For App Engine queues, if
-  ThrottleConfig.max_tasks_dispatched_per_second is 1, this
+  RateLimits.max_tasks_dispatched_per_second is 1, this
   field is 10; otherwise this field is
-  ThrottleConfig.max_tasks_dispatched_per_second / 5.</li>
+  RateLimits.max_tasks_dispatched_per_second / 5.</li>
 <li>For pull queues, this field is output only and always 10,000.</li>
 </ul>
 <p>Note: For App Engine queues that were created through
@@ -580,11 +414,11 @@ settings as specified above; CloudTasks.UpdateQueue can be
 used to set <code>max_burst_size</code> only to the values specified above.</p>
 <p>This field has the same meaning as
 <a href="../appengine/docs/standard/python/config/queueref#bucket_size">bucket_size in queue.yaml</a>.
-* <code>max-outstanding-tasks=70</code>
-    - The maximum number of outstanding tasks that Cloud Tasks allows
+* <code>max-concurrent-tasks=79</code>
+    - The maximum number of concurrent tasks that Cloud Tasks allows
 to be dispatched for this queue. After this threshold has been
 reached, Cloud Tasks stops dispatching tasks until the number of
-outstanding requests decreases.</p>
+concurrent requests decreases.</p>
 <p>The maximum allowed value is 5,000.</p>
 <ul>
 <li>For App Engine queues, this field is 10 by default.</li>
@@ -593,16 +427,105 @@ outstanding requests decreases.</p>
 </ul>
 <p>This field has the same meaning as
 <a href="../appengine/docs/standard/python/config/queueref#max_concurrent_requests">max_concurrent_requests in queue.yaml</a>.
-* <code>max-tasks-dispatched-per-second=0.348101942899</code>
+* <code>max-tasks-dispatched-per-second=0.921726509896</code>
     - The maximum rate at which tasks are dispatched from this
 queue.</p>
 <p>The maximum allowed value is 500.</p>
 <ul>
 <li>For App Engine queues, this field is 1 by default.</li>
-<li>For pull queues, this field is output only and always 10,000.</li>
+<li>For pull queues, this field is output only and always 10,000.
+  In addition to the <code>max_tasks_dispatched_per_second</code> limit, a maximum of
+  10 QPS of CloudTasks.PullTasks requests are allowed per queue.</li>
 </ul>
 <p>This field has the same meaning as
 <a href="../appengine/docs/standard/python/config/queueref#rate">rate in queue.yaml</a>.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><code>..retry-config    max-attempts=31</code></p>
+<ul>
+<li>
+<p>The maximum number of attempts for a task.</p>
+<p>Cloud Tasks will attempt the task <code>max_attempts</code> times (that
+is, if the first attempt fails, then there will be
+<code>max_attempts - 1</code> retries).  Must be &gt; 0.
+* <code>max-backoff=amet.</code>
+    - The maximum amount of time to wait before retrying a task after
+it fails. The default is 1 hour.</p>
+<ul>
+<li>For <a href="../google.cloud.tasks.v2beta2.AppEngineHttpTarget">App Engine queues</a>,
+  this field is 1 hour by default.</li>
+<li>For <a href="../google.cloud.tasks.v2beta2.PullTarget">pull queues</a>, this field
+  is output only and always 0.</li>
+</ul>
+<p><code>max_backoff</code> will be truncated to the nearest second.</p>
+<p>This field has the same meaning as
+<a href="../appengine/docs/standard/python/config/queueref#retry_parameters">max_backoff_seconds in queue.yaml</a>.
+* <code>max-doublings=20</code>
+    - The time between retries will double <code>max_doublings</code> times.</p>
+<p>A task&#39;s retry interval starts at RetryConfig.min_backoff,
+then doubles <code>max_doublings</code> times, then increases linearly, and
+finally retries retries at intervals of
+RetryConfig.max_backoff up to max_attempts times.</p>
+<p>For example, if RetryConfig.min_backoff is 10s,
+RetryConfig.max_backoff is 300s, and <code>max_doublings</code> is 3,
+then the a task will first be retried in 10s. The retry interval
+will double three times, and then increase linearly by 2^3 * 10s.
+Finally, the task will retry at intervals of
+RetryConfig.max_backoff until the task has been attempted
+<code>max_attempts</code> times. Thus, the requests will retry at 10s, 20s,
+40s, 80s, 160s, 240s, 300s, 300s, ....</p>
+<ul>
+<li>For <a href="../google.cloud.tasks.v2beta2.AppEngineHttpTarget">App Engine queues</a>,
+  this field is 16 by default.</li>
+<li>For <a href="../google.cloud.tasks.v2beta2.PullTarget">pull queues</a>, this field
+  is output only and always 0.</li>
+</ul>
+<p>This field has the same meaning as
+<a href="../appengine/docs/standard/python/config/queueref#retry_parameters">max_doublings in queue.yaml</a>.
+<em> <code>max-retry-duration=labore</code>
+    - If positive, <code>max_retry_duration</code> specifies the time limit for retrying a
+failed task, measured from when the task was first attempted. Once
+<code>max_retry_duration</code> time has passed </em>and* the task has been attempted
+RetryConfig.max_attempts times, no further attempts will be made and
+the task will be deleted.</p>
+<p>If zero, then the task age is unlimited.</p>
+<ul>
+<li>For <a href="../google.cloud.tasks.v2beta2.AppEngineHttpTarget">App Engine queues</a>,
+  this field is 0 seconds by default.</li>
+<li>For <a href="../google.cloud.tasks.v2beta2.PullTarget">pull queues</a>, this
+  field is output only and always 0.</li>
+</ul>
+<p><code>max_retry_duration</code> will be truncated to the nearest second.</p>
+<p>This field has the same meaning as
+<a href="../appengine/docs/standard/python/config/queueref#retry_parameters">task_age_limit in queue.yaml</a>.
+* <code>min-backoff=sea</code>
+    - The minimum amount of time to wait before retrying a task after
+it fails.</p>
+<ul>
+<li>For <a href="../google.cloud.tasks.v2beta2.AppEngineHttpTarget">App Engine queues</a>,
+  this field is 0.1 seconds by default.</li>
+<li>For <a href="../google.cloud.tasks.v2beta2.PullTarget">pull queues</a>, this
+  field is output only and always 0.</li>
+</ul>
+<p><code>min_backoff</code> will be truncated to the nearest second.</p>
+<p>This field has the same meaning as
+<a href="../appengine/docs/standard/python/config/queueref#retry_parameters">min_backoff_seconds in queue.yaml</a>.
+* <code>unlimited-attempts=false</code>
+    - If true, then the number of attempts is unlimited.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><code>..    state=dolores</code></p>
+<ul>
+<li>
+<p>Output only. The state of the queue.</p>
+<p><code>state</code> can only be changed by called
+CloudTasks.PauseQueue, CloudTasks.ResumeQueue, or uploading
+<a href="../appengine/docs/python/config/queueref">queue.yaml</a>.
+CloudTasks.UpdateQueue cannot be used to change <code>state</code>.</p>
 </li>
 </ul>
 </li>

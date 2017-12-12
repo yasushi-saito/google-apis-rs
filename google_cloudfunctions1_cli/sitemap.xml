@@ -4,7 +4,7 @@
     
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-cloudfunctions1-cli/</loc>
-     <lastmod>2017-09-27</lastmod>
+     <lastmod>2017-12-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -13,13 +13,13 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-cloudfunctions1-cli/operations_get/</loc>
-     <lastmod>2017-09-27</lastmod>
+     <lastmod>2017-12-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-cloudfunctions1-cli/operations_list/</loc>
-     <lastmod>2017-09-27</lastmod>
+     <lastmod>2017-12-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -28,8 +28,56 @@
     
         
     <url>
+     <loc>http://byron.github.io/google-apis-rs/google-cloudfunctions1-cli/projects_locations-functions-call/</loc>
+     <lastmod>2017-12-12</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-cloudfunctions1-cli/projects_locations-functions-create/</loc>
+     <lastmod>2017-12-12</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-cloudfunctions1-cli/projects_locations-functions-delete/</loc>
+     <lastmod>2017-12-12</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-cloudfunctions1-cli/projects_locations-functions-generate-download-url/</loc>
+     <lastmod>2017-12-12</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-cloudfunctions1-cli/projects_locations-functions-generate-upload-url/</loc>
+     <lastmod>2017-12-12</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-cloudfunctions1-cli/projects_locations-functions-get/</loc>
+     <lastmod>2017-12-12</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-cloudfunctions1-cli/projects_locations-functions-list/</loc>
+     <lastmod>2017-12-12</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-cloudfunctions1-cli/projects_locations-functions-patch/</loc>
+     <lastmod>2017-12-12</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
      <loc>http://byron.github.io/google-apis-rs/google-cloudfunctions1-cli/projects_locations-list/</loc>
-     <lastmod>2017-09-27</lastmod>
+     <lastmod>2017-12-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
         

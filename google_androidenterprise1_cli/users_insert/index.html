@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Insert - Android Enterprise v1.0.6+20170922</title>
+  <title>Insert - Android Enterprise v1.0.7+20171206</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Android Enterprise v1.0.6+20170922</a>
+        <a href=".." class="icon icon-home"> Android Enterprise v1.0.7+20171206</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -70,7 +70,15 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="../devices_patch/">Patch</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../devices_set-state/">Set State</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../devices_update/">Update</a>
                 </li>
     </ul>
 	    </li>
@@ -290,6 +298,17 @@
           
             <li class="toctree-l1">
 		
+    <span class="caption-text">Managedconfigurationssettings</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../managedconfigurationssettings_list/">List</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
     <span class="caption-text">Permissions</span>
     <ul class="subnav">
                 <li class="">
@@ -477,6 +496,10 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="../users_revoke-device-access/">Revoke Device Access</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../users_revoke-token/">Revoke Token</a>
                 </li>
                 <li class="">
@@ -500,7 +523,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Android Enterprise v1.0.6+20170922</a>
+        <a href="..">Android Enterprise v1.0.7+20171206</a>
       </nav>
 
       
@@ -560,31 +583,31 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    account-identifier=sit</code><ul>
+<li><code>-r .    account-identifier=consetetur</code><ul>
 <li>A unique identifier you create for this user, such as &#34;user342&#34; or &#34;asset#44418&#34;. Do not use personally identifiable information (PII) for this property. Must always be set for EMM-managed users. Not set for Google-managed users.</li>
 </ul>
 </li>
-<li><code>account-type=vero</code><ul>
+<li><code>account-type=takimata</code><ul>
 <li>The type of account that this user represents. A userAccount can be installed on multiple devices, but a deviceAccount is specific to a single device. An EMM-managed user (emmManaged) can be either type (userAccount, deviceAccount), but a Google-managed user (googleManaged) is always a userAccount.</li>
 </ul>
 </li>
-<li><code>display-name=diam</code><ul>
+<li><code>display-name=nonumy</code><ul>
 <li>The name that will appear in user interfaces. Setting this property is optional when creating EMM-managed users. If you do set this property, use something generic about the organization (such as &#34;Example, Inc.&#34;) or your name (as EMM). Not used for Google-managed user accounts.</li>
 </ul>
 </li>
-<li><code>id=rebum.</code><ul>
+<li><code>id=kasd</code><ul>
 <li>The unique ID for the user.</li>
 </ul>
 </li>
-<li><code>kind=consetetur</code><ul>
+<li><code>kind=sanctus</code><ul>
 <li>Identifies what kind of resource this is. Value: the fixed string &#34;androidenterprise#user&#34;.</li>
 </ul>
 </li>
-<li><code>management-type=sadipscing</code><ul>
+<li><code>management-type=takimata</code><ul>
 <li>The entity that manages the user. With googleManaged users, the source of truth is Google so EMMs have to make sure a Google Account exists for the user. With emmManaged users, the EMM is in charge.</li>
 </ul>
 </li>
-<li><code>primary-email=vero</code><ul>
+<li><code>primary-email=at</code><ul>
 <li>The user&#39;s primary email address, for example, &#34;jsmith@example.com&#34;. Will always be set for Google managed users and not set for EMM managed users.</li>
 </ul>
 </li>

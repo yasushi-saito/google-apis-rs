@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>List - reports v1.0.6+20170622</title>
+  <title>List - reports v1.0.7+20171204</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> reports v1.0.6+20170622</a>
+        <a href=".." class="icon icon-home"> reports v1.0.7+20171204</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -109,6 +109,17 @@
           
             <li class="toctree-l1">
 		
+    <span class="caption-text">Entity Usage Reports</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../entity-usage-reports_get/">Get</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
     <span class="caption-text">User Usage Report</span>
     <ul class="subnav">
                 <li class="">
@@ -128,7 +139,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">reports v1.0.6+20170622</a>
+        <a href="..">reports v1.0.7+20171204</a>
       </nav>
 
       
@@ -190,6 +201,24 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
+<p><strong>-p customer-id=string</strong></p>
+<ul>
+<li>Represents the customer for which the data is to be fetched.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p filters=string</strong></p>
+<ul>
+<li>Event parameters in the form [parameter1 name][operator][parameter1 value],[parameter2 name][operator][parameter2 value],...</li>
+</ul>
+</li>
+<li>
+<p><strong>-p max-results=integer</strong></p>
+<ul>
+<li>Number of activity records to be shown in each page.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p actor-ip-address=string</strong></p>
 <ul>
 <li>IP Address of host where the event was performed. Supports both IPv4 and IPv6 addresses.</li>
@@ -199,18 +228,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <p><strong>-p page-token=string</strong></p>
 <ul>
 <li>Token to specify next page.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p customer-id=string</strong></p>
-<ul>
-<li>Represents the customer for which the data is to be fetched.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p end-time=string</strong></p>
-<ul>
-<li>Return events which occurred at or before this time.</li>
 </ul>
 </li>
 <li>
@@ -226,15 +243,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p filters=string</strong></p>
+<p><strong>-p end-time=string</strong></p>
 <ul>
-<li>Event parameters in the form [parameter1 name][operator][parameter1 value],[parameter2 name][operator][parameter2 value],...</li>
-</ul>
-</li>
-<li>
-<p><strong>-p max-results=integer</strong></p>
-<ul>
-<li>Number of activity records to be shown in each page.</li>
+<li>Return events which occurred at or before this time.</li>
 </ul>
 </li>
 </ul>

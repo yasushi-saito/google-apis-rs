@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Services Patch - appengine v1.0.6+20170914</title>
+  <title>Services Patch - appengine v1.0.7+20171208</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> appengine v1.0.6+20170914</a>
+        <a href=".." class="icon icon-home"> appengine v1.0.7+20171208</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -103,6 +103,30 @@
                 <li class="">
                     
     <a class="" href="../apps_domain-mappings-patch/">Domain Mappings Patch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../apps_firewall-ingress-rules-batch-update/">Firewall Ingress Rules Batch Update</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../apps_firewall-ingress-rules-create/">Firewall Ingress Rules Create</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../apps_firewall-ingress-rules-delete/">Firewall Ingress Rules Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../apps_firewall-ingress-rules-get/">Firewall Ingress Rules Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../apps_firewall-ingress-rules-list/">Firewall Ingress Rules List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../apps_firewall-ingress-rules-patch/">Firewall Ingress Rules Patch</a>
                 </li>
                 <li class="">
                     
@@ -224,7 +248,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">appengine v1.0.6+20170914</a>
+        <a href="..">appengine v1.0.7+20171208</a>
       </nav>
 
       
@@ -284,15 +308,15 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    id=et</code><ul>
+<li><code>-r .    id=dolor</code><ul>
 <li>Relative name of the service within the application. Example: default.@OutputOnly</li>
 </ul>
 </li>
-<li><code>name=amet</code><ul>
+<li><code>name=dolor</code><ul>
 <li>Full path to the Service resource in the API. Example: apps/myapp/services/default.@OutputOnly</li>
 </ul>
 </li>
-<li><code>split    allocations=key=0.77599682643</code><ul>
+<li><code>split    allocations=key=0.775321302285</code><ul>
 <li>Mapping from version IDs within the service to fractional (0.000, 1] allocations of traffic for that version. Each version can be specified only once, but some versions in the service may not have any traffic allocation. Services that have traffic allocated cannot be deleted until either the service is deleted or their traffic allocation is removed. Allocations must sum to 1. Up to two decimal place precision is supported for IP-based splits and up to three decimal places is supported for cookie-based splits.</li>
 <li>the value will be associated with the given <code>key</code></li>
 </ul>
@@ -327,15 +351,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p migrate-traffic=boolean</strong></p>
-<ul>
-<li>Set to true to gradually shift traffic to one or more versions that you specify. By default, traffic is shifted immediately. For gradual traffic migration, the target versions must be located within instances that are configured for both warmup requests (https://cloud.google.com/appengine/docs/admin-api/reference/rest/v1/apps.services.versions#inboundservicetype) and automatic scaling (https://cloud.google.com/appengine/docs/admin-api/reference/rest/v1/apps.services.versions#automaticscaling). You must specify the shardBy (https://cloud.google.com/appengine/docs/admin-api/reference/rest/v1/apps.services#shardby) field in the Service resource. Gradual traffic migration is not supported in the App Engine flexible environment. For examples, see Migrating and Splitting Traffic (https://cloud.google.com/appengine/docs/admin-api/migrating-splitting-traffic).</li>
-</ul>
-</li>
-<li>
 <p><strong>-p update-mask=string</strong></p>
 <ul>
 <li>Standard field mask for the set of fields to be updated.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p migrate-traffic=boolean</strong></p>
+<ul>
+<li>Set to true to gradually shift traffic to one or more versions that you specify. By default, traffic is shifted immediately. For gradual traffic migration, the target versions must be located within instances that are configured for both warmup requests (https://cloud.google.com/appengine/docs/admin-api/reference/rest/v1/apps.services.versions#inboundservicetype) and automatic scaling (https://cloud.google.com/appengine/docs/admin-api/reference/rest/v1/apps.services.versions#automaticscaling). You must specify the shardBy (https://cloud.google.com/appengine/docs/admin-api/reference/rest/v1/apps.services#shardby) field in the Service resource. Gradual traffic migration is not supported in the App Engine flexible environment. For examples, see Migrating and Splitting Traffic (https://cloud.google.com/appengine/docs/admin-api/migrating-splitting-traffic).</li>
 </ul>
 </li>
 </ul>

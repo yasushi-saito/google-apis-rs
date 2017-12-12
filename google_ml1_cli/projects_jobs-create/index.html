@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Jobs Create - Cloud Machine Learning Engine v1.0.6+20170926</title>
+  <title>Jobs Create - Cloud Machine Learning Engine v1.0.7+20171208</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Cloud Machine Learning Engine v1.0.6+20170926</a>
+        <a href=".." class="icon icon-home"> Cloud Machine Learning Engine v1.0.7+20171208</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -106,11 +106,23 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="../projects_jobs-patch/">Jobs Patch</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../projects_jobs-set-iam-policy/">Jobs Set Iam Policy</a>
                 </li>
                 <li class="">
                     
     <a class="" href="../projects_jobs-test-iam-permissions/">Jobs Test Iam Permissions</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_locations-get/">Locations Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_locations-list/">Locations List</a>
                 </li>
                 <li class="">
                     
@@ -131,6 +143,10 @@
                 <li class="">
                     
     <a class="" href="../projects_models-list/">Models List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_models-patch/">Models Patch</a>
                 </li>
                 <li class="">
                     
@@ -155,6 +171,10 @@
                 <li class="">
                     
     <a class="" href="../projects_models-versions-list/">Models Versions List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_models-versions-patch/">Models Versions Patch</a>
                 </li>
                 <li class="">
                     
@@ -193,7 +213,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Cloud Machine Learning Engine v1.0.6+20170926</a>
+        <a href="..">Cloud Machine Learning Engine v1.0.7+20171208</a>
       </nav>
 
       
@@ -242,7 +262,9 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   create-time: string
   end-time: string
   error-message: string
+  etag: string
   job-id: string
+  labels: { string: string }
   prediction-input:
     batch-size: string
     data-format: string
@@ -252,6 +274,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
     output-path: string
     region: string
     runtime-version: string
+    signature-name: string
     uri: string
     version-name: string
   prediction-output:
@@ -274,6 +297,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
     parameter-server-count: int64
     parameter-server-type: string
     python-module: string
+    python-version: string
     region: string
     runtime-version: string
     scale-tier: string
@@ -300,53 +324,80 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>Output only. The details of a failure or a cancellation.</li>
 </ul>
 </li>
-<li><code>job-id=sed</code><ul>
+<li><code>etag=sed</code><ul>
+<li><code>etag</code> is used for optimistic concurrency control as a way to help
+    prevent simultaneous updates of a job from overwriting each other.
+    It is strongly suggested that systems make use of the <code>etag</code> in the
+    read-modify-write cycle to perform job updates in order to avoid race
+    conditions: An <code>etag</code> is returned in the response to <code>GetJob</code>, and
+    systems are expected to put that etag in the request to <code>UpdateJob</code> to
+    ensure that their change will be applied to the same version of the job.</li>
+</ul>
+</li>
+<li><code>job-id=et</code><ul>
 <li>Required. The user-specified id of the job.</li>
 </ul>
 </li>
-<li><code>prediction-input    batch-size=et</code><ul>
+<li><code>labels=key=dolores</code><ul>
+<li>Optional. One or more labels that you can add, to organize your jobs.
+    Each label is a key-value pair, where both the key and the value are
+    arbitrary strings that you supply.
+    For more information, see the documentation on
+    &lt;a href=&#34;/ml-engine/docs/how-tos/resource-labels&#34;&gt;using labels&lt;/a&gt;.</li>
+<li>the value will be associated with the given <code>key</code></li>
+</ul>
+</li>
+<li><code>prediction-input    batch-size=kasd</code><ul>
 <li>Optional. Number of records per batch, defaults to 64.
     The service will buffer batch_size number of records in memory before
     invoking one Tensorflow prediction call internally. So take the record
     size and memory available into consideration when setting this parameter.</li>
 </ul>
 </li>
-<li><code>data-format=dolores</code><ul>
+<li><code>data-format=accusam</code><ul>
 <li>Required. The format of the input data files.</li>
 </ul>
 </li>
-<li><code>input-paths=kasd</code><ul>
+<li><code>input-paths=takimata</code><ul>
 <li>Required. The Google Cloud Storage location of the input data files.
     May contain wildcards.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>max-worker-count=-22</code><ul>
+<li><code>max-worker-count=-70</code><ul>
 <li>Optional. The maximum number of workers to be used for parallel processing.
     Defaults to 10 if not specified.</li>
 </ul>
 </li>
 <li>
-<p><code>model-name=takimata</code></p>
+<p><code>model-name=amet.</code></p>
 <ul>
 <li>
 <p>Use this field if you want to use the default version for the specified
     model. The string must use the following format:</p>
 <p><code>&amp;#34;projects/&amp;lt;var&amp;gt;[YOUR_PROJECT]&amp;lt;/var&amp;gt;/models/&amp;lt;var&amp;gt;[YOUR_MODEL]&amp;lt;/var&amp;gt;&amp;#34;</code>
-<em> <code>output-path=justo</code>
+<em> <code>output-path=erat</code>
     - Required. The output Google Cloud Storage location.
-</em> <code>region=amet.</code>
+</em> <code>region=labore</code>
     - Required. The Google Compute Engine region to run the prediction job in.
-<em> <code>runtime-version=erat</code>
+<em> <code>runtime-version=sea</code>
     - Optional. The Google Cloud ML runtime version to use for this batch
 prediction. If not set, Google Cloud ML will pick the runtime version used
 during the CreateVersion request for this model version, or choose the
 latest stable version when model version information is not available
 such as when the model is specified by uri.
-</em> <code>uri=labore</code>
+</em> <code>signature-name=nonumy</code>
+    - Optional. The name of the signature defined in the SavedModel to use for
+this job. Please refer to
+<a href="https://tensorflow.github.io/serving/serving_basic.html">SavedModel</a>
+for information about how to use signatures.</p>
+<p>Defaults to
+<a href="https://www.tensorflow.org/api_docs/python/tf/saved_model/signature_constants">DEFAULT_SERVING_SIGNATURE_DEF_KEY</a>
+, which is &#34;serving_default&#34;.
+<em> <code>uri=dolores</code>
     - Use this field if you want to specify a Google Cloud Storage path for
 the model to use.
-* <code>version-name=sea</code>
+</em> <code>version-name=gubergren</code>
     - Use this field if you want to specify a version of the model to use. The
 string is formatted the same way as <code>model_version</code>, with the addition
 of the version information:</p>
@@ -355,54 +406,54 @@ of the version information:</p>
 </ul>
 </li>
 <li>
-<p><code>..prediction-output    error-count=-90</code></p>
+<p><code>..prediction-output    error-count=-95</code></p>
 <ul>
 <li>The number of data instances which resulted in errors.</li>
 </ul>
 </li>
-<li><code>node-hours=0.820437629783</code><ul>
+<li><code>node-hours=0.699208331616</code><ul>
 <li>Node hours used by the batch prediction job.</li>
 </ul>
 </li>
-<li><code>output-path=gubergren</code><ul>
+<li><code>output-path=ea</code><ul>
 <li>The output Google Cloud Storage location provided at the job creation time.</li>
 </ul>
 </li>
 <li>
-<p><code>prediction-count=-95</code></p>
+<p><code>prediction-count=-61</code></p>
 <ul>
 <li>The number of generated predictions.</li>
 </ul>
 </li>
 <li>
-<p><code>..    start-time=aliquyam</code></p>
+<p><code>..    start-time=justo</code></p>
 <ul>
 <li>Output only. When the job processing was started.</li>
 </ul>
 </li>
-<li><code>state=ea</code><ul>
+<li><code>state=justo</code><ul>
 <li>Output only. The detailed state of a job.</li>
 </ul>
 </li>
-<li><code>training-input    args=no</code><ul>
+<li><code>training-input    args=et</code><ul>
 <li>Optional. Command line arguments to pass to the program.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
 <li>
-<p><code>hyperparameters    goal=justo</code></p>
+<p><code>hyperparameters    goal=et</code></p>
 <ul>
 <li>
 <p>Required. The type of goal to use for tuning. Available types are
     <code>MAXIMIZE</code> and <code>MINIMIZE</code>.</p>
 <p>Defaults to <code>MAXIMIZE</code>.
-<em> <code>hyperparameter-metric-tag=justo</code>
+<em> <code>hyperparameter-metric-tag=diam</code>
     - Optional. The Tensorflow summary tag name to use for optimizing trials. For
 current versions of Tensorflow, this tag name should exactly match what is
 shown in Tensorboard, including all scopes.  For versions of Tensorflow
 prior to 0.12, this should be only the tag passed to tf.Summary.
 By default, &#34;training/hptuning/metric&#34; will be used.
-</em> <code>max-parallel-trials=67</code>
+</em> <code>max-parallel-trials=46</code>
     - Optional. The number of training trials to run concurrently.
 You can reduce the time it takes to perform hyperparameter tuning by adding
 trials in parallel. However, each trail only benefits from the information
@@ -411,7 +462,7 @@ the results of trials running at the same time, which could reduce the
 quality of the overall optimization.</p>
 <p>Each trial will use the same scale tier and machine types.</p>
 <p>Defaults to one.
-* <code>max-trials=84</code>
+* <code>max-trials=96</code>
     - Optional. How many training trials should be attempted to optimize
 the specified hyperparameters.</p>
 <p>Defaults to one.</p>
@@ -419,7 +470,7 @@ the specified hyperparameters.</p>
 </ul>
 </li>
 <li>
-<p><code>..    job-dir=diam</code></p>
+<p><code>..    job-dir=et</code></p>
 <ul>
 <li>Optional. A Google Cloud Storage path in which to store training outputs
     and other data needed for training. This path is passed to your TensorFlow
@@ -428,7 +479,7 @@ the specified hyperparameters.</p>
 </ul>
 </li>
 <li>
-<p><code>master-type=ipsum</code></p>
+<p><code>master-type=duo</code></p>
 <ul>
 <li>
 <p>Optional. Specifies the type of virtual machine to use for your training
@@ -465,52 +516,74 @@ the specified hyperparameters.</p>
   &lt;dt&gt;standard_gpu&lt;/dt&gt;
   &lt;dd&gt;
   A machine equivalent to &lt;code suppresswarning=&#34;true&#34;&gt;standard&lt;/code&gt; that
-  also includes a
+  also includes a single NVIDIA Tesla K80 GPU. See more about
   &lt;a href=&#34;/ml-engine/docs/how-tos/using-gpus&#34;&gt;
-  GPU that you can use in your trainer&lt;/a&gt;.
+  using GPUs for training your model&lt;/a&gt;.
   &lt;/dd&gt;
   &lt;dt&gt;complex_model_m_gpu&lt;/dt&gt;
   &lt;dd&gt;
   A machine equivalent to
   &lt;code suppresswarning=&#34;true&#34;&gt;complex_model_m&lt;/code&gt; that also includes
-  four GPUs.
+  four NVIDIA Tesla K80 GPUs.
+  &lt;/dd&gt;
+  &lt;dt&gt;complex_model_l_gpu&lt;/dt&gt;
+  &lt;dd&gt;
+  A machine equivalent to
+  &lt;code suppresswarning=&#34;true&#34;&gt;complex_model_l&lt;/code&gt; that also includes
+  eight NVIDIA Tesla K80 GPUs.
+  &lt;/dd&gt;
+  &lt;dt&gt;standard_p100&lt;/dt&gt;
+  &lt;dd&gt;
+  A machine equivalent to &lt;code suppresswarning=&#34;true&#34;&gt;standard&lt;/code&gt; that
+  also includes a single NVIDIA Tesla P100 GPU. The availability of these
+  GPUs is in the Alpha launch stage.
+  &lt;/dd&gt;
+  &lt;dt&gt;complex_model_m_p100&lt;/dt&gt;
+  &lt;dd&gt;
+  A machine equivalent to
+  &lt;code suppresswarning=&#34;true&#34;&gt;complex_model_m&lt;/code&gt; that also includes
+  four NVIDIA Tesla P100 GPUs. The availability of these GPUs is in
+  the Alpha launch stage.
   &lt;/dd&gt;
 &lt;/dl&gt;</p>
 <p>You must set this value when <code>scaleTier</code> is set to <code>CUSTOM</code>.
-<em> <code>package-uris=lorem</code>
+<em> <code>package-uris=aliquyam</code>
     - Required. The Google Cloud Storage location of the packages with
 the training program and any additional dependencies.
 The maximum number of package URIs is 100.
     - Each invocation of this argument appends the given value to the array.
-</em> <code>parameter-server-count=-21</code>
+</em> <code>parameter-server-count=-9</code>
     - Optional. The number of parameter server replicas to use for the training
 job. Each replica in the cluster will be of the type specified in
 <code>parameter_server_type</code>.</p>
 <p>This value can only be used when <code>scale_tier</code> is set to <code>CUSTOM</code>.If you
 set this value, you must also set <code>parameter_server_type</code>.
-* <code>parameter-server-type=duo</code>
+* <code>parameter-server-type=lorem</code>
     - Optional. Specifies the type of virtual machine to use for your training
 job&#39;s parameter server.</p>
 <p>The supported values are the same as those described in the entry for
 <code>master_type</code>.</p>
 <p>This value must be present when <code>scaleTier</code> is set to <code>CUSTOM</code> and
 <code>parameter_server_count</code> is greater than zero.
-<em> <code>python-module=aliquyam</code>
+<em> <code>python-module=eos</code>
     - Required. The Python module name to run after installing the packages.
-</em> <code>region=sea</code>
+</em> <code>python-version=erat</code>
+    - Optional. The version of Python used in training. If not set, the default
+version is &#39;2.7&#39;.
+<em> <code>region=sadipscing</code>
     - Required. The Google Compute Engine region to run the training job in.
-<em> <code>runtime-version=lorem</code>
+</em> <code>runtime-version=dolor</code>
     - Optional. The Google Cloud ML runtime version to use for training.  If not
 set, Google Cloud ML will choose the latest stable version.
-</em> <code>scale-tier=eos</code>
+<em> <code>scale-tier=eirmod</code>
     - Required. Specifies the machine types, the number of replicas for workers
 and parameter servers.
-* <code>worker-count=-81</code>
+</em> <code>worker-count=-43</code>
     - Optional. The number of worker replicas to use for the training job. Each
 replica in the cluster will be of the type specified in <code>worker_type</code>.</p>
 <p>This value can only be used when <code>scale_tier</code> is set to <code>CUSTOM</code>. If you
 set this value, you must also set <code>worker_type</code>.
-* <code>worker-type=sadipscing</code>
+* <code>worker-type=amet</code>
     - Optional. Specifies the type of virtual machine to use for your training
 job&#39;s worker nodes.</p>
 <p>The supported values are the same as those described in the entry for
@@ -521,13 +594,13 @@ job&#39;s worker nodes.</p>
 </ul>
 </li>
 <li>
-<p><code>..training-output    completed-trial-count=-48</code></p>
+<p><code>..training-output    completed-trial-count=-60</code></p>
 <ul>
 <li>The number of hyperparameter tuning trials that completed successfully.
     Only set for hyperparameter tuning jobs.</li>
 </ul>
 </li>
-<li><code>consumed-ml-units=0.618673220052</code><ul>
+<li><code>consumed-ml-units=0.65292276369</code><ul>
 <li>The amount of ML units consumed by the job.</li>
 </ul>
 </li>

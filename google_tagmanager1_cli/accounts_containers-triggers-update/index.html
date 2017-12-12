@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Containers Triggers Update - Tag Manager v1.0.6+20160310</title>
+  <title>Containers Triggers Update - Tag Manager v1.0.7+20171108</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Tag Manager v1.0.6+20160310</a>
+        <a href=".." class="icon icon-home"> Tag Manager v1.0.7+20171108</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -296,7 +296,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Tag Manager v1.0.6+20160310</a>
+        <a href="..">Tag Manager v1.0.7+20171108</a>
       </nav>
 
       
@@ -356,7 +356,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
     type: string
     value: string
   container-id: string
-  enable-all-videos:
+  continuous-time-min-milliseconds:
     key: string
     type: string
     value: string
@@ -365,7 +365,15 @@ In the latter case it is advised to set the field-cursor to the data-structure's
     type: string
     value: string
   fingerprint: string
+  horizontal-scroll-percentage-list:
+    key: string
+    type: string
+    value: string
   interval:
+    key: string
+    type: string
+    value: string
+  interval-seconds:
     key: string
     type: string
     value: string
@@ -373,15 +381,39 @@ In the latter case it is advised to set the field-cursor to the data-structure's
     key: string
     type: string
     value: string
+  max-timer-length-seconds:
+    key: string
+    type: string
+    value: string
   name: string
   parent-folder-id: string
+  selector:
+    key: string
+    type: string
+    value: string
+  total-time-min-milliseconds:
+    key: string
+    type: string
+    value: string
   trigger-id: string
   type: string
   unique-trigger-id:
     key: string
     type: string
     value: string
-  video-percentage-list:
+  vertical-scroll-percentage-list:
+    key: string
+    type: string
+    value: string
+  visibility-selector:
+    key: string
+    type: string
+    value: string
+  visible-percentage-max:
+    key: string
+    type: string
+    value: string
+  visible-percentage-min:
     key: string
     type: string
     value: string
@@ -398,15 +430,15 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    account-id=lorem</code><ul>
+<li><code>-r .    account-id=voluptua.</code><ul>
 <li>GTM Account ID.</li>
 </ul>
 </li>
-<li><code>check-validation    key=clita</code><ul>
+<li><code>check-validation    key=dolor</code><ul>
 <li>The named key that uniquely identifies a parameter. Required for top-level parameters, as well as map values. Ignored for list values.</li>
 </ul>
 </li>
-<li><code>type=invidunt</code><ul>
+<li><code>type=et</code><ul>
 <li>The parameter type. Valid values are: <ul>
 <li>boolean: The value represents a boolean, represented as &#39;true&#39; or &#39;false&#39; </li>
 <li>integer: The value represents a 64-bit signed integer value, in base 10 </li>
@@ -418,18 +450,91 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
-<p><code>value=eirmod</code></p>
+<p><code>value=et</code></p>
 <ul>
 <li>A parameter&#39;s value (may contain variable references such as &#34;{{myVariable}}&#34;) as appropriate to the specified type.</li>
 </ul>
 </li>
 <li>
-<p><code>..    container-id=at</code></p>
+<p><code>..    container-id=vero</code></p>
 <ul>
 <li>GTM Container ID.</li>
 </ul>
 </li>
-<li><code>enable-all-videos    key=consetetur</code><ul>
+<li><code>continuous-time-min-milliseconds    key=ut</code><ul>
+<li>The named key that uniquely identifies a parameter. Required for top-level parameters, as well as map values. Ignored for list values.</li>
+</ul>
+</li>
+<li><code>type=sed</code><ul>
+<li>The parameter type. Valid values are: <ul>
+<li>boolean: The value represents a boolean, represented as &#39;true&#39; or &#39;false&#39; </li>
+<li>integer: The value represents a 64-bit signed integer value, in base 10 </li>
+<li>list: A list of parameters should be specified </li>
+<li>map: A map of parameters should be specified </li>
+<li>template: The value represents any text; this can include variable references (even variable references that might return non-string types)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><code>value=et</code></p>
+<ul>
+<li>A parameter&#39;s value (may contain variable references such as &#34;{{myVariable}}&#34;) as appropriate to the specified type.</li>
+</ul>
+</li>
+<li>
+<p><code>..event-name    key=ipsum</code></p>
+<ul>
+<li>The named key that uniquely identifies a parameter. Required for top-level parameters, as well as map values. Ignored for list values.</li>
+</ul>
+</li>
+<li><code>type=justo</code><ul>
+<li>The parameter type. Valid values are: <ul>
+<li>boolean: The value represents a boolean, represented as &#39;true&#39; or &#39;false&#39; </li>
+<li>integer: The value represents a 64-bit signed integer value, in base 10 </li>
+<li>list: A list of parameters should be specified </li>
+<li>map: A map of parameters should be specified </li>
+<li>template: The value represents any text; this can include variable references (even variable references that might return non-string types)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><code>value=dolore</code></p>
+<ul>
+<li>A parameter&#39;s value (may contain variable references such as &#34;{{myVariable}}&#34;) as appropriate to the specified type.</li>
+</ul>
+</li>
+<li>
+<p><code>..    fingerprint=vero</code></p>
+<ul>
+<li>The fingerprint of the GTM Trigger as computed at storage time. This value is recomputed whenever the trigger is modified.</li>
+</ul>
+</li>
+<li><code>horizontal-scroll-percentage-list    key=dolor</code><ul>
+<li>The named key that uniquely identifies a parameter. Required for top-level parameters, as well as map values. Ignored for list values.</li>
+</ul>
+</li>
+<li><code>type=takimata</code><ul>
+<li>The parameter type. Valid values are: <ul>
+<li>boolean: The value represents a boolean, represented as &#39;true&#39; or &#39;false&#39; </li>
+<li>integer: The value represents a 64-bit signed integer value, in base 10 </li>
+<li>list: A list of parameters should be specified </li>
+<li>map: A map of parameters should be specified </li>
+<li>template: The value represents any text; this can include variable references (even variable references that might return non-string types)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><code>value=et</code></p>
+<ul>
+<li>A parameter&#39;s value (may contain variable references such as &#34;{{myVariable}}&#34;) as appropriate to the specified type.</li>
+</ul>
+</li>
+<li>
+<p><code>..interval    key=nonumy</code></p>
+<ul>
 <li>The named key that uniquely identifies a parameter. Required for top-level parameters, as well as map values. Ignored for list values.</li>
 </ul>
 </li>
@@ -451,12 +556,35 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
-<p><code>..event-name    key=sit</code></p>
+<p><code>..interval-seconds    key=no</code></p>
 <ul>
 <li>The named key that uniquely identifies a parameter. Required for top-level parameters, as well as map values. Ignored for list values.</li>
 </ul>
 </li>
-<li><code>type=takimata</code><ul>
+<li><code>type=invidunt</code><ul>
+<li>The parameter type. Valid values are: <ul>
+<li>boolean: The value represents a boolean, represented as &#39;true&#39; or &#39;false&#39; </li>
+<li>integer: The value represents a 64-bit signed integer value, in base 10 </li>
+<li>list: A list of parameters should be specified </li>
+<li>map: A map of parameters should be specified </li>
+<li>template: The value represents any text; this can include variable references (even variable references that might return non-string types)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><code>value=rebum.</code></p>
+<ul>
+<li>A parameter&#39;s value (may contain variable references such as &#34;{{myVariable}}&#34;) as appropriate to the specified type.</li>
+</ul>
+</li>
+<li>
+<p><code>..limit    key=labore</code></p>
+<ul>
+<li>The named key that uniquely identifies a parameter. Required for top-level parameters, as well as map values. Ignored for list values.</li>
+</ul>
+</li>
+<li><code>type=aliquyam</code><ul>
 <li>The parameter type. Valid values are: <ul>
 <li>boolean: The value represents a boolean, represented as &#39;true&#39; or &#39;false&#39; </li>
 <li>integer: The value represents a 64-bit signed integer value, in base 10 </li>
@@ -474,16 +602,12 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
-<p><code>..    fingerprint=nonumy</code></p>
+<p><code>..max-timer-length-seconds    key=consetetur</code></p>
 <ul>
-<li>The fingerprint of the GTM Trigger as computed at storage time. This value is recomputed whenever the trigger is modified.</li>
-</ul>
-</li>
-<li><code>interval    key=rebum.</code><ul>
 <li>The named key that uniquely identifies a parameter. Required for top-level parameters, as well as map values. Ignored for list values.</li>
 </ul>
 </li>
-<li><code>type=lorem</code><ul>
+<li><code>type=sea</code><ul>
 <li>The parameter type. Valid values are: <ul>
 <li>boolean: The value represents a boolean, represented as &#39;true&#39; or &#39;false&#39; </li>
 <li>integer: The value represents a 64-bit signed integer value, in base 10 </li>
@@ -495,57 +619,26 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
-<p><code>value=lorem</code></p>
+<p><code>value=elitr</code></p>
 <ul>
 <li>A parameter&#39;s value (may contain variable references such as &#34;{{myVariable}}&#34;) as appropriate to the specified type.</li>
 </ul>
 </li>
 <li>
-<p><code>..limit    key=diam</code></p>
-<ul>
-<li>The named key that uniquely identifies a parameter. Required for top-level parameters, as well as map values. Ignored for list values.</li>
-</ul>
-</li>
-<li><code>type=ut</code><ul>
-<li>The parameter type. Valid values are: <ul>
-<li>boolean: The value represents a boolean, represented as &#39;true&#39; or &#39;false&#39; </li>
-<li>integer: The value represents a 64-bit signed integer value, in base 10 </li>
-<li>list: A list of parameters should be specified </li>
-<li>map: A map of parameters should be specified </li>
-<li>template: The value represents any text; this can include variable references (even variable references that might return non-string types)</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<p><code>value=ut</code></p>
-<ul>
-<li>A parameter&#39;s value (may contain variable references such as &#34;{{myVariable}}&#34;) as appropriate to the specified type.</li>
-</ul>
-</li>
-<li>
-<p><code>..    name=amet.</code></p>
+<p><code>..    name=at</code></p>
 <ul>
 <li>Trigger display name.</li>
 </ul>
 </li>
-<li><code>parent-folder-id=ipsum</code><ul>
+<li><code>parent-folder-id=sea</code><ul>
 <li>Parent folder id.</li>
 </ul>
 </li>
-<li><code>trigger-id=ut</code><ul>
-<li>The Trigger ID uniquely identifies the GTM Trigger.</li>
-</ul>
-</li>
-<li><code>type=dolor</code><ul>
-<li>Defines the data layer event that causes this trigger.</li>
-</ul>
-</li>
-<li><code>unique-trigger-id    key=sea</code><ul>
+<li><code>selector    key=consetetur</code><ul>
 <li>The named key that uniquely identifies a parameter. Required for top-level parameters, as well as map values. Ignored for list values.</li>
 </ul>
 </li>
-<li><code>type=ut</code><ul>
+<li><code>type=diam</code><ul>
 <li>The parameter type. Valid values are: <ul>
 <li>boolean: The value represents a boolean, represented as &#39;true&#39; or &#39;false&#39; </li>
 <li>integer: The value represents a 64-bit signed integer value, in base 10 </li>
@@ -557,18 +650,18 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
-<p><code>value=eirmod</code></p>
+<p><code>value=accusam</code></p>
 <ul>
 <li>A parameter&#39;s value (may contain variable references such as &#34;{{myVariable}}&#34;) as appropriate to the specified type.</li>
 </ul>
 </li>
 <li>
-<p><code>..video-percentage-list    key=sanctus</code></p>
+<p><code>..total-time-min-milliseconds    key=dolores</code></p>
 <ul>
 <li>The named key that uniquely identifies a parameter. Required for top-level parameters, as well as map values. Ignored for list values.</li>
 </ul>
 </li>
-<li><code>type=voluptua.</code><ul>
+<li><code>type=consetetur</code><ul>
 <li>The parameter type. Valid values are: <ul>
 <li>boolean: The value represents a boolean, represented as &#39;true&#39; or &#39;false&#39; </li>
 <li>integer: The value represents a 64-bit signed integer value, in base 10 </li>
@@ -586,7 +679,107 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
-<p><code>..wait-for-tags    key=et</code></p>
+<p><code>..    trigger-id=aliquyam</code></p>
+<ul>
+<li>The Trigger ID uniquely identifies the GTM Trigger.</li>
+</ul>
+</li>
+<li><code>type=elitr</code><ul>
+<li>Defines the data layer event that causes this trigger.</li>
+</ul>
+</li>
+<li><code>unique-trigger-id    key=ea</code><ul>
+<li>The named key that uniquely identifies a parameter. Required for top-level parameters, as well as map values. Ignored for list values.</li>
+</ul>
+</li>
+<li><code>type=et</code><ul>
+<li>The parameter type. Valid values are: <ul>
+<li>boolean: The value represents a boolean, represented as &#39;true&#39; or &#39;false&#39; </li>
+<li>integer: The value represents a 64-bit signed integer value, in base 10 </li>
+<li>list: A list of parameters should be specified </li>
+<li>map: A map of parameters should be specified </li>
+<li>template: The value represents any text; this can include variable references (even variable references that might return non-string types)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><code>value=stet</code></p>
+<ul>
+<li>A parameter&#39;s value (may contain variable references such as &#34;{{myVariable}}&#34;) as appropriate to the specified type.</li>
+</ul>
+</li>
+<li>
+<p><code>..vertical-scroll-percentage-list    key=sed</code></p>
+<ul>
+<li>The named key that uniquely identifies a parameter. Required for top-level parameters, as well as map values. Ignored for list values.</li>
+</ul>
+</li>
+<li><code>type=dolor</code><ul>
+<li>The parameter type. Valid values are: <ul>
+<li>boolean: The value represents a boolean, represented as &#39;true&#39; or &#39;false&#39; </li>
+<li>integer: The value represents a 64-bit signed integer value, in base 10 </li>
+<li>list: A list of parameters should be specified </li>
+<li>map: A map of parameters should be specified </li>
+<li>template: The value represents any text; this can include variable references (even variable references that might return non-string types)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><code>value=sanctus</code></p>
+<ul>
+<li>A parameter&#39;s value (may contain variable references such as &#34;{{myVariable}}&#34;) as appropriate to the specified type.</li>
+</ul>
+</li>
+<li>
+<p><code>..visibility-selector    key=dolore</code></p>
+<ul>
+<li>The named key that uniquely identifies a parameter. Required for top-level parameters, as well as map values. Ignored for list values.</li>
+</ul>
+</li>
+<li><code>type=lorem</code><ul>
+<li>The parameter type. Valid values are: <ul>
+<li>boolean: The value represents a boolean, represented as &#39;true&#39; or &#39;false&#39; </li>
+<li>integer: The value represents a 64-bit signed integer value, in base 10 </li>
+<li>list: A list of parameters should be specified </li>
+<li>map: A map of parameters should be specified </li>
+<li>template: The value represents any text; this can include variable references (even variable references that might return non-string types)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><code>value=consetetur</code></p>
+<ul>
+<li>A parameter&#39;s value (may contain variable references such as &#34;{{myVariable}}&#34;) as appropriate to the specified type.</li>
+</ul>
+</li>
+<li>
+<p><code>..visible-percentage-max    key=consetetur</code></p>
+<ul>
+<li>The named key that uniquely identifies a parameter. Required for top-level parameters, as well as map values. Ignored for list values.</li>
+</ul>
+</li>
+<li><code>type=eirmod</code><ul>
+<li>The parameter type. Valid values are: <ul>
+<li>boolean: The value represents a boolean, represented as &#39;true&#39; or &#39;false&#39; </li>
+<li>integer: The value represents a 64-bit signed integer value, in base 10 </li>
+<li>list: A list of parameters should be specified </li>
+<li>map: A map of parameters should be specified </li>
+<li>template: The value represents any text; this can include variable references (even variable references that might return non-string types)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><code>value=labore</code></p>
+<ul>
+<li>A parameter&#39;s value (may contain variable references such as &#34;{{myVariable}}&#34;) as appropriate to the specified type.</li>
+</ul>
+</li>
+<li>
+<p><code>..visible-percentage-min    key=gubergren</code></p>
 <ul>
 <li>The named key that uniquely identifies a parameter. Required for top-level parameters, as well as map values. Ignored for list values.</li>
 </ul>
@@ -603,18 +796,18 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
-<p><code>value=vero</code></p>
+<p><code>value=sadipscing</code></p>
 <ul>
 <li>A parameter&#39;s value (may contain variable references such as &#34;{{myVariable}}&#34;) as appropriate to the specified type.</li>
 </ul>
 </li>
 <li>
-<p><code>..wait-for-tags-timeout    key=ut</code></p>
+<p><code>..wait-for-tags    key=accusam</code></p>
 <ul>
 <li>The named key that uniquely identifies a parameter. Required for top-level parameters, as well as map values. Ignored for list values.</li>
 </ul>
 </li>
-<li><code>type=sed</code><ul>
+<li><code>type=magna</code><ul>
 <li>The parameter type. Valid values are: <ul>
 <li>boolean: The value represents a boolean, represented as &#39;true&#39; or &#39;false&#39; </li>
 <li>integer: The value represents a 64-bit signed integer value, in base 10 </li>
@@ -625,7 +818,30 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </li>
 </ul>
 </li>
-<li><code>value=et</code><ul>
+<li>
+<p><code>value=lorem</code></p>
+<ul>
+<li>A parameter&#39;s value (may contain variable references such as &#34;{{myVariable}}&#34;) as appropriate to the specified type.</li>
+</ul>
+</li>
+<li>
+<p><code>..wait-for-tags-timeout    key=rebum.</code></p>
+<ul>
+<li>The named key that uniquely identifies a parameter. Required for top-level parameters, as well as map values. Ignored for list values.</li>
+</ul>
+</li>
+<li><code>type=et</code><ul>
+<li>The parameter type. Valid values are: <ul>
+<li>boolean: The value represents a boolean, represented as &#39;true&#39; or &#39;false&#39; </li>
+<li>integer: The value represents a 64-bit signed integer value, in base 10 </li>
+<li>list: A list of parameters should be specified </li>
+<li>map: A map of parameters should be specified </li>
+<li>template: The value represents any text; this can include variable references (even variable references that might return non-string types)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>value=clita</code><ul>
 <li>A parameter&#39;s value (may contain variable references such as &#34;{{myVariable}}&#34;) as appropriate to the specified type.</li>
 </ul>
 </li>

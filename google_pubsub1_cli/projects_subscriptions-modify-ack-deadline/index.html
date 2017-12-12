@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Subscriptions Modify Ack Deadline - Pubsub v1.0.6+20170829</title>
+  <title>Subscriptions Modify Ack Deadline - Pubsub v1.0.7+20171129</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Pubsub v1.0.6+20170829</a>
+        <a href=".." class="icon icon-home"> Pubsub v1.0.7+20171129</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -58,7 +58,23 @@
     <ul class="subnav">
                 <li class="">
                     
+    <a class="" href="../projects_snapshots-create/">Snapshots Create</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_snapshots-delete/">Snapshots Delete</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../projects_snapshots-get-iam-policy/">Snapshots Get Iam Policy</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_snapshots-list/">Snapshots List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_snapshots-patch/">Snapshots Patch</a>
                 </li>
                 <li class="">
                     
@@ -126,7 +142,15 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="../projects_subscriptions-patch/">Subscriptions Patch</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../projects_subscriptions-pull/">Subscriptions Pull</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_subscriptions-seek/">Subscriptions Seek</a>
                 </li>
                 <li class="">
                     
@@ -166,6 +190,10 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="../projects_topics-snapshots-list/">Topics Snapshots List</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../projects_topics-subscriptions-list/">Topics Subscriptions List</a>
                 </li>
                 <li class="">
@@ -185,7 +213,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Pubsub v1.0.6+20170829</a>
+        <a href="..">Pubsub v1.0.7+20171129</a>
       </nav>
 
       
@@ -247,7 +275,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    ack-deadline-seconds=31</code><ul>
+<li><code>-r .    ack-deadline-seconds=40</code><ul>
 <li>The new ack deadline with respect to the time this request was sent to
     the Pub/Sub system. For example, if the value is 10, the new
     ack deadline will expire 10 seconds after the <code>ModifyAckDeadline</code> call
@@ -257,7 +285,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
     The maximum deadline you can specify is 600 seconds (10 minutes).</li>
 </ul>
 </li>
-<li><code>ack-ids=amet.</code><ul>
+<li><code>ack-ids=sadipscing</code><ul>
 <li>List of acknowledgment IDs.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>

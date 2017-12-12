@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Transfer Configs Patch - BigQuery Data Transfer v1.0.6+20170921</title>
+  <title>Transfer Configs Patch - BigQuery Data Transfer v1.0.7+20171208</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> BigQuery Data Transfer v1.0.6+20170921</a>
+        <a href=".." class="icon icon-home"> BigQuery Data Transfer v1.0.7+20171208</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -208,7 +208,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">BigQuery Data Transfer v1.0.6+20170921</a>
+        <a href="..">BigQuery Data Transfer v1.0.7+20171208</a>
       </nav>
 
       
@@ -295,9 +295,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li><code>dataset-region=no</code><ul>
-<li>Region in which BigQuery dataset is located. Currently possible values are:
-    &#34;US&#34; and &#34;EU&#34;.
-    Output only.</li>
+<li>Output only. Region in which BigQuery dataset is located.</li>
 </ul>
 </li>
 <li><code>destination-dataset-id=labore</code><ul>
@@ -323,8 +321,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li><code>next-run-time=aliquyam</code><ul>
-<li>Next time when data transfer will run.
-    Output only.</li>
+<li>Output only. Next time when data transfer will run.</li>
 </ul>
 </li>
 <li><code>schedule=accusam</code><ul>
@@ -343,20 +340,19 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li><code>state=lorem</code><ul>
-<li>State of the most recently updated transfer run.
-    Output only.</li>
+<li>Output only. State of the most recently updated transfer run.</li>
 </ul>
 </li>
 <li><code>update-time=sea</code><ul>
-<li>Data transfer modification time. Ignored by server on input.
-    Output only.</li>
+<li>Output only. Data transfer modification time. Ignored by server on input.</li>
 </ul>
 </li>
 <li><code>user-id=et</code><ul>
-<li>Unique ID of the user on whose behalf transfer is done. Applicable only
-    to data sources that do not support service accounts. When set to 0,
-    the data source service account credentials are used.
-    Output only.</li>
+<li>Output only. Unique ID of the user on whose behalf transfer is done.
+    Applicable only to data sources that do not support service accounts.
+    When set to 0, the data source service account credentials are used.
+    May be negative. Note, that this identifier is not stable.
+    It may change over time even for the same user.</li>
 </ul>
 </li>
 </ul>
@@ -385,18 +381,12 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p update-mask=string</strong></p>
-<ul>
-<li>Required list of fields to be updated in this request.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p authorization-code=string</strong></p>
 <ul>
 <li>
 <p>Optional OAuth2 authorization code to use with this transfer configuration.
     If it is provided, the transfer configuration will be associated with the
-    gaia id of the authorizing user.
+    authorizing user.
     In order to obtain authorization_code, please make a
     request to
     https://www.gstatic.com/bigquerydatatransfer/oauthz/auth?client_id=&lt;datatransferapiclientid&gt;&amp;scope=&lt;data_source_scopes&gt;&amp;redirect_uri=&lt;redirect_uri&gt;</p>
@@ -412,6 +402,12 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
   the user to copy the code and paste it in the application.</li>
 </ul>
 </li>
+</ul>
+</li>
+<li>
+<p><strong>-p update-mask=string</strong></p>
+<ul>
+<li>Required list of fields to be updated in this request.</li>
 </ul>
 </li>
 </ul>

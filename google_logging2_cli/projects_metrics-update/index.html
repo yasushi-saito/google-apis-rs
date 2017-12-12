@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Metrics Update - Logging v1.0.6+20170918</title>
+  <title>Metrics Update - Logging v1.0.7+20171204</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Logging v1.0.6+20170918</a>
+        <a href=".." class="icon icon-home"> Logging v1.0.7+20171204</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -128,6 +128,33 @@
           
             <li class="toctree-l1">
 		
+    <span class="caption-text">Exclusions</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../exclusions_create/">Create</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../exclusions_delete/">Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../exclusions_get/">Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../exclusions_list/">List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../exclusions_patch/">Patch</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
     <span class="caption-text">Folders</span>
     <ul class="subnav">
                 <li class="">
@@ -181,6 +208,21 @@
                 <li class="">
                     
     <a class="" href="../folders_sinks-update/">Sinks Update</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Logs</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../logs_delete/">Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../logs_list/">List</a>
                 </li>
     </ul>
 	    </li>
@@ -358,6 +400,33 @@
     </ul>
 	    </li>
           
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Sinks</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../sinks_create/">Create</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../sinks_delete/">Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../sinks_get/">Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../sinks_list/">List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../sinks_update/">Update</a>
+                </li>
+    </ul>
+	    </li>
+          
         </ul>
       </div>
       &nbsp;
@@ -368,7 +437,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Logging v1.0.6+20170918</a>
+        <a href="..">Logging v1.0.7+20171204</a>
       </nav>
 
       
@@ -452,82 +521,79 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
 <li>
-<p><code>-r .bucket-options.explicit-buckets    bounds=0.81311189166</code></p>
+<p><code>-r .bucket-options.explicit-buckets    bounds=0.388757623706</code></p>
 <ul>
 <li>The values must be monotonically increasing.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
 <li>
-<p><code>..exponential-buckets    growth-factor=0.0858312730549</code></p>
+<p><code>..exponential-buckets    growth-factor=0.139540612974</code></p>
 <ul>
 <li>Must be greater than 1.</li>
 </ul>
 </li>
-<li><code>num-finite-buckets=70</code><ul>
+<li><code>num-finite-buckets=86</code><ul>
 <li>Must be greater than 0.</li>
 </ul>
 </li>
 <li>
-<p><code>scale=0.342498288198</code></p>
+<p><code>scale=0.504277591267</code></p>
 <ul>
 <li>Must be greater than 0.</li>
 </ul>
 </li>
 <li>
-<p><code>..linear-buckets    num-finite-buckets=84</code></p>
+<p><code>..linear-buckets    num-finite-buckets=38</code></p>
 <ul>
 <li>Must be greater than 0.</li>
 </ul>
 </li>
-<li><code>offset=0.275209736017</code><ul>
+<li><code>offset=0.639492440554</code><ul>
 <li>Lower bound of the first bucket.</li>
 </ul>
 </li>
 <li>
-<p><code>width=0.527160784748</code></p>
+<p><code>width=0.113683921598</code></p>
 <ul>
 <li>Must be greater than 0.</li>
 </ul>
 </li>
 <li>
-<p><code>...    description=diam</code></p>
+<p><code>...    description=at</code></p>
 <ul>
 <li>Optional. A description of this metric, which is used in documentation.</li>
 </ul>
 </li>
-<li><code>filter=kasd</code><ul>
+<li><code>filter=consetetur</code><ul>
 <li>Required. An advanced logs filter which is used to match log entries. Example:
     &#34;resource.type=gae_app AND severity&gt;=ERROR&#34;
     The maximum length of the filter is 20000 characters.</li>
 </ul>
 </li>
-<li><code>label-extractors=key=invidunt</code><ul>
+<li><code>label-extractors=key=et</code><ul>
 <li>Optional. A map from a label key string to an extractor expression which is used to extract data from a log entry field and assign as the label value. Each label key specified in the LabelDescriptor must have an associated extractor expression in this map. The syntax of the extractor expression is the same as for the value_extractor field.The extracted value is converted to the type defined in the label descriptor. If the either the extraction or the type conversion fails, the label will have a default value. The default value for a string label is an empty string, for an integer label its 0, and for a boolean label its false.Note that there are upper bounds on the maximum number of labels and the number of active time series that are allowed in a project.</li>
 <li>the value will be associated with the given <code>key</code></li>
 </ul>
 </li>
-<li><code>metric-descriptor    description=rebum.</code><ul>
+<li><code>metric-descriptor    description=sed</code><ul>
 <li>A detailed description of the metric, which can be used in documentation.</li>
 </ul>
 </li>
-<li><code>display-name=lorem</code><ul>
-<li>A concise name for the metric, which can be displayed in user interfaces. Use sentence case without an ending period, for example &#34;Request count&#34;.</li>
+<li><code>display-name=sit</code><ul>
+<li>A concise name for the metric, which can be displayed in user interfaces. Use sentence case without an ending period, for example &#34;Request count&#34;. This field is optional but it is recommended to be set for any metrics associated with user-visible concepts, such as Quota.</li>
 </ul>
 </li>
-<li><code>metric-kind=clita</code><ul>
+<li><code>metric-kind=takimata</code><ul>
 <li>Whether the metric records instantaneous values, changes to a value, etc. Some combinations of metric_kind and value_type might not be supported.</li>
 </ul>
 </li>
-<li>
-<p><code>name=invidunt</code></p>
-<ul>
-<li>The resource name of the metric descriptor. Depending on the implementation, the name typically includes: (1) the parent resource name that defines the scope of the metric type or of its data; and (2) the metric&#39;s URL-encoded type, which also appears in the type field of this descriptor. For example, following is the resource name of a custom metric within the GCP project my-project-id:
-    &#34;projects/my-project-id/metricDescriptors/custom.googleapis.com%2Finvoice%2Fpaid%2Famount&#34;</li>
+<li><code>name=elitr</code><ul>
+<li>The resource name of the metric descriptor.</li>
 </ul>
 </li>
 <li>
-<p><code>type=eirmod</code></p>
+<p><code>type=nonumy</code></p>
 <ul>
 <li>The metric type, including its DNS name prefix. The type is not URL-encoded. All user-defined custom metric types have the DNS name custom.googleapis.com. Metric types should use a natural hierarchical grouping. For example:
     &#34;custom.googleapis.com/invoice/paid/amount&#34;
@@ -535,7 +601,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
-<p><code>unit=at</code></p>
+<p><code>unit=rebum.</code></p>
 <ul>
 <li>
 <p>The unit in which the metric value is reported. It is only applicable if the value_type is INT64, DOUBLE, or DISTRIBUTION. The supported units are a subset of The Unified Code for Units of Measure (http://unitsofmeasure.org/ucum.html) standard:Basic units (UNIT)
@@ -576,22 +642,22 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 Notes:
 Annotation is just a comment if it follows a UNIT and is  equivalent to 1 if it is used alone. For examples,  {requests}/s == 1/s, By{transmitted}/s == By/s.
 NAME is a sequence of non-blank printable ASCII characters not  containing &#39;{&#39; or &#39;}&#39;.
-* <code>value-type=consetetur</code>
+* <code>value-type=lorem</code>
     - Whether the measurement is an integer, a floating-point number, etc. Some combinations of metric_kind and value_type might not be supported.</p>
 </li>
 </ul>
 </li>
 <li>
-<p><code>..    name=et</code></p>
+<p><code>..    name=lorem</code></p>
 <ul>
 <li>Required. The client-assigned metric identifier. Examples: &#34;error_count&#34;, &#34;nginx/requests&#34;.Metric identifiers are limited to 100 characters and can include only the following characters: A-Z, a-z, 0-9, and the special characters _-.,+!*&#39;,()%/. The forward-slash character (/) denotes a hierarchy of name pieces, and it cannot be the first character of the name.The metric identifier in this field must not be URL-encoded (https://en.wikipedia.org/wiki/Percent-encoding). However, when the metric identifier appears as the [METRIC_ID] part of a metric_name API parameter, then the metric identifier must be URL-encoded. Example: &#34;projects/my-project/metrics/nginx%2Frequests&#34;.</li>
 </ul>
 </li>
-<li><code>value-extractor=sed</code><ul>
+<li><code>value-extractor=diam</code><ul>
 <li>Optional. A value_extractor is required when using a distribution logs-based metric to extract the values to record from a log entry. Two functions are supported for value extraction: EXTRACT(field) or REGEXP_EXTRACT(field, regex). The argument are:  1. field: The name of the log entry field from which the value is to be  extracted.  2. regex: A regular expression using the Google RE2 syntax  (https://github.com/google/re2/wiki/Syntax) with a single capture  group to extract data from the specified log entry field. The value  of the field is converted to a string before applying the regex.  It is an error to specify a regex that does not include exactly one  capture group.The result of the extraction must be convertible to a double type, as the distribution always records double values. If either the extraction or the conversion to double fails, then those values are not recorded in the distribution.Example: REGEXP_EXTRACT(jsonPayload.request, &#34;.<em>quantity=(\d+).</em>&#34;)</li>
 </ul>
 </li>
-<li><code>version=sit</code><ul>
+<li><code>version=ut</code><ul>
 <li>Deprecated. The API version that created or updated this metric. The v2 format is used by default and cannot be changed.</li>
 </ul>
 </li>

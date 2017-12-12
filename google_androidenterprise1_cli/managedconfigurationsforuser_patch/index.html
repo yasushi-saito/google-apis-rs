@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Patch - Android Enterprise v1.0.6+20170922</title>
+  <title>Patch - Android Enterprise v1.0.7+20171206</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Android Enterprise v1.0.6+20170922</a>
+        <a href=".." class="icon icon-home"> Android Enterprise v1.0.7+20171206</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -70,7 +70,15 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="../devices_patch/">Patch</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../devices_set-state/">Set State</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../devices_update/">Update</a>
                 </li>
     </ul>
 	    </li>
@@ -314,6 +322,17 @@
           
             <li class="toctree-l1">
 		
+    <span class="caption-text">Managedconfigurationssettings</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../managedconfigurationssettings_list/">List</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
     <span class="caption-text">Permissions</span>
     <ul class="subnav">
                 <li class="">
@@ -477,6 +496,10 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="../users_revoke-device-access/">Revoke Device Access</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../users_revoke-token/">Revoke Token</a>
                 </li>
                 <li class="">
@@ -500,7 +523,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Android Enterprise v1.0.6+20170922</a>
+        <a href="..">Android Enterprise v1.0.7+20171206</a>
       </nav>
 
       
@@ -529,7 +552,7 @@
           <div role="main">
             <div class="section">
               
-                <p>Adds or updates a per-user managed configuration for an app for the specified user. This method supports patch semantics.</p>
+                <p>Adds or updates the managed configuration settings for an app for the specified user. If you support the Managed configurations iframe, you can apply managed configurations to a user by specifying an mcmId and its associated configuration variables (if any) in the request. Alternatively, all EMMs can apply managed configurations by passing a list of managed properties. This method supports patch semantics.</p>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for the <em>https://www.googleapis.com/auth/androidenterprise</em> scope to make a valid call.</p>
 <p>If unset, the scope for this method defaults to <em>https://www.googleapis.com/auth/androidenterprise</em>.
@@ -554,6 +577,9 @@ You can set the scope for this method like this: <code>androidenterprise1 --scop
 In the latter case it is advised to set the field-cursor to the data-structure's field to specify values more concisely.</p>
 <p>For example, a structure like this:</p>
 <pre><code>ManagedConfiguration:
+  configuration-variables:
+    kind: string
+    mcm-id: string
   kind: string
   product-id: string
 
@@ -561,11 +587,23 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    kind=elitr</code><ul>
+<li><code>-r .configuration-variables    kind=duo</code><ul>
+<li>Identifies what kind of resource this is. Value: the fixed string &#34;androidenterprise#configurationVariables&#34;.</li>
+</ul>
+</li>
+<li>
+<p><code>mcm-id=et</code></p>
+<ul>
+<li>The ID of the managed configurations settings.</li>
+</ul>
+</li>
+<li>
+<p><code>..    kind=eirmod</code></p>
+<ul>
 <li>Identifies what kind of resource this is. Value: the fixed string &#34;androidenterprise#managedConfiguration&#34;.</li>
 </ul>
 </li>
-<li><code>product-id=amet</code><ul>
+<li><code>product-id=sanctus</code><ul>
 <li>The ID of the product that the managed configuration is for, e.g. &#34;app:com.google.android.gm&#34;.</li>
 </ul>
 </li>

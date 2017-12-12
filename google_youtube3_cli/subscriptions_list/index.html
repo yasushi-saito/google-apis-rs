@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>List - YouTube v1.0.6+20170918</title>
+  <title>List - YouTube v1.0.7+20171129</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> YouTube v1.0.6+20170918</a>
+        <a href=".." class="icon icon-home"> YouTube v1.0.7+20171129</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -557,7 +557,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">YouTube v1.0.6+20170918</a>
+        <a href="..">YouTube v1.0.7+20171129</a>
       </nav>
 
       
@@ -624,36 +624,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p order=string</strong></p>
-<ul>
-<li>The order parameter specifies the method that will be used to sort resources in the API response.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p my-recent-subscribers=boolean</strong></p>
-<ul>
-<li>Set this parameter&#39;s value to true to retrieve a feed of the subscribers of the authenticated user in reverse chronological order (newest first).</li>
-</ul>
-</li>
-<li>
-<p><strong>-p for-channel-id=string</strong></p>
-<ul>
-<li>The forChannelId parameter specifies a comma-separated list of channel IDs. The API response will then only contain subscriptions matching those channels.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p id=string</strong></p>
-<ul>
-<li>The id parameter specifies a comma-separated list of the YouTube subscription ID(s) for the resource(s) that are being retrieved. In a subscription resource, the id property specifies the YouTube subscription ID.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p mine=boolean</strong></p>
-<ul>
-<li>Set this parameter&#39;s value to true to retrieve a feed of the authenticated user&#39;s subscriptions.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p on-behalf-of-content-owner=string</strong></p>
 <ul>
 <li>
@@ -663,15 +633,45 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
+<p><strong>-p for-channel-id=string</strong></p>
+<ul>
+<li>The forChannelId parameter specifies a comma-separated list of channel IDs. The API response will then only contain subscriptions matching those channels.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p page-token=string</strong></p>
+<ul>
+<li>The pageToken parameter identifies a specific page in the result set that should be returned. In an API response, the nextPageToken and prevPageToken properties identify other pages that could be retrieved.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p my-subscribers=boolean</strong></p>
 <ul>
 <li>Set this parameter&#39;s value to true to retrieve a feed of the subscribers of the authenticated user in no particular order.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p max-results=integer</strong></p>
+<p><strong>-p mine=boolean</strong></p>
 <ul>
-<li>The maxResults parameter specifies the maximum number of items that should be returned in the result set.</li>
+<li>Set this parameter&#39;s value to true to retrieve a feed of the authenticated user&#39;s subscriptions.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p order=string</strong></p>
+<ul>
+<li>The order parameter specifies the method that will be used to sort resources in the API response.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p id=string</strong></p>
+<ul>
+<li>The id parameter specifies a comma-separated list of the YouTube subscription ID(s) for the resource(s) that are being retrieved. In a subscription resource, the id property specifies the YouTube subscription ID.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p my-recent-subscribers=boolean</strong></p>
+<ul>
+<li>Set this parameter&#39;s value to true to retrieve a feed of the subscribers of the authenticated user in reverse chronological order (newest first).</li>
 </ul>
 </li>
 <li>
@@ -681,9 +681,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p page-token=string</strong></p>
+<p><strong>-p max-results=integer</strong></p>
 <ul>
-<li>The pageToken parameter identifies a specific page in the result set that should be returned. In an API response, the nextPageToken and prevPageToken properties identify other pages that could be retrieved.</li>
+<li>The maxResults parameter specifies the maximum number of items that should be returned in the result set.</li>
 </ul>
 </li>
 <li>

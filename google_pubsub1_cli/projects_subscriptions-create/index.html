@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Subscriptions Create - Pubsub v1.0.6+20170829</title>
+  <title>Subscriptions Create - Pubsub v1.0.7+20171129</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Pubsub v1.0.6+20170829</a>
+        <a href=".." class="icon icon-home"> Pubsub v1.0.7+20171129</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -58,7 +58,23 @@
     <ul class="subnav">
                 <li class="">
                     
+    <a class="" href="../projects_snapshots-create/">Snapshots Create</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_snapshots-delete/">Snapshots Delete</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../projects_snapshots-get-iam-policy/">Snapshots Get Iam Policy</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_snapshots-list/">Snapshots List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_snapshots-patch/">Snapshots Patch</a>
                 </li>
                 <li class="">
                     
@@ -126,7 +142,15 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="../projects_subscriptions-patch/">Subscriptions Patch</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../projects_subscriptions-pull/">Subscriptions Pull</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_subscriptions-seek/">Subscriptions Seek</a>
                 </li>
                 <li class="">
                     
@@ -166,6 +190,10 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="../projects_topics-snapshots-list/">Topics Snapshots List</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../projects_topics-subscriptions-list/">Topics Subscriptions List</a>
                 </li>
                 <li class="">
@@ -185,7 +213,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Pubsub v1.0.6+20170829</a>
+        <a href="..">Pubsub v1.0.7+20171129</a>
       </nav>
 
       
@@ -249,10 +277,12 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <p>For example, a structure like this:</p>
 <pre><code>Subscription:
   ack-deadline-seconds: integer
+  message-retention-duration: string
   name: string
   push-config:
     attributes: { string: string }
     push-endpoint: string
+  retain-acked-messages: boolean
   topic: string
 
 </code></pre>
@@ -260,7 +290,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
 <li>
-<p><code>-r .    ack-deadline-seconds=16</code></p>
+<p><code>-r .    ack-deadline-seconds=31</code></p>
 <ul>
 <li>
 <p>This value is the maximum time after a subscriber receives a message
@@ -271,7 +301,8 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <p>For pull subscriptions, this value is used as the initial value for the ack
 deadline. To override this value for a given message, call
 <code>ModifyAckDeadline</code> with the corresponding <code>ack_id</code> if using
-pull.
+non-streaming pull or send the <code>ack_id</code> in a
+<code>StreamingModifyAckDeadlineRequest</code> if using streaming pull.
 The minimum custom deadline you can specify is 10 seconds.
 The maximum custom deadline you can specify is 600 seconds (10 minutes).
 If this parameter is 0, a default value of 10 seconds is used.</p>
@@ -279,14 +310,21 @@ If this parameter is 0, a default value of 10 seconds is used.</p>
 the call to the push endpoint.</p>
 <p>If the subscriber never acknowledges the message, the Pub/Sub
 system will eventually redeliver the message.
-<em> <code>name=dolores</code>
+<em> <code>message-retention-duration=amet.</code>
+    - How long to retain unacknowledged messages in the subscription&#39;s backlog,
+from the moment a message is published.
+If <code>retain_acked_messages</code> is true, then this also configures the retention
+of acknowledged messages, and thus configures how far back in time a <code>Seek</code>
+can be done. Defaults to 7 days. Cannot be more than 7 days or less than 10
+minutes.
+</em> <code>name=erat</code>
     - The name of the subscription. It must have the format
 <code>&amp;#34;projects/{project}/subscriptions/{subscription}&amp;#34;</code>. <code>{subscription}</code> must
 start with a letter, and contain only letters (<code>[A-Za-z]</code>), numbers
 (<code>[0-9]</code>), dashes (<code>-</code>), underscores (<code>_</code>), periods (<code>.</code>), tildes (<code>~</code>),
 plus (<code>+</code>) or percent signs (<code>%</code>). It must be between 3 and 255 characters
 in length, and it must not start with <code>&amp;#34;goog&amp;#34;</code>.
-</em> <code>push-config    attributes=key=kasd</code>
+* <code>push-config    attributes=key=labore</code>
     - Endpoint configuration attributes.</p>
 <p>Every endpoint has a set of API supported attributes that can be used to
 control different aspects of the message delivery.</p>
@@ -307,7 +345,7 @@ created without this attribute.</p>
 <li>the value will be associated with the given <code>key</code></li>
 </ul>
 </li>
-<li><code>push-endpoint=accusam</code><ul>
+<li><code>push-endpoint=sea</code><ul>
 <li>A URL locating the endpoint to which messages should be pushed.
 For example, a Webhook endpoint might use &#34;https://example.com/push&#34;.</li>
 </ul>
@@ -317,8 +355,15 @@ For example, a Webhook endpoint might use &#34;https://example.com/push&#34;.</l
 </ul>
 </li>
 <li>
-<p><code>..    topic=takimata</code></p>
+<p><code>..    retain-acked-messages=false</code></p>
 <ul>
+<li>Indicates whether to retain acknowledged messages. If true, then
+    messages are not expunged from the subscription&#39;s backlog, even if they are
+    acknowledged, until they fall out of the <code>message_retention_duration</code>
+    window.</li>
+</ul>
+</li>
+<li><code>topic=dolores</code><ul>
 <li>The name of the topic from which this subscription is receiving messages.
     Format is <code>projects/{project}/topics/{topic}</code>.
     The value of this field will be <code>_deleted-topic_</code> if the topic has been

@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Cancel - Shopping Content v1.0.6+20170926</title>
+  <title>Cancel - Shopping Content v1.0.7+20171207</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Shopping Content v1.0.6+20170926</a>
+        <a href=".." class="icon icon-home"> Shopping Content v1.0.7+20171207</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -130,7 +130,15 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="../orders_setlineitemmetadata/">Setlineitemmetadata</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../orders_shiplineitems/">Shiplineitems</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../orders_updatelineitemshippingdetails/">Updatelineitemshippingdetails</a>
                 </li>
                 <li class="">
                     
@@ -153,7 +161,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Shopping Content v1.0.6+20170926</a>
+        <a href="..">Shopping Content v1.0.7+20171207</a>
       </nav>
 
       
@@ -182,7 +190,7 @@
           <div role="main">
             <div class="section">
               
-                <p>Cancels all line items in an order, making a full refund. This method can only be called for non-multi-client accounts.</p>
+                <p>Cancels all line items in an order, making a full refund.</p>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for the <em>https://www.googleapis.com/auth/content</em> scope to make a valid call.</p>
 <p>If unset, the scope for this method defaults to <em>https://www.googleapis.com/auth/content</em>.
@@ -190,7 +198,7 @@ You can set the scope for this method like this: <code>content2-sandbox --scope 
 <h1 id="required-scalar-arguments">Required Scalar Arguments</h1>
 <ul>
 <li><strong>&lt;merchant-id&gt;</strong> <em>(string)</em><ul>
-<li>The ID of the managing account.</li>
+<li>The ID of the account that manages the order. This cannot be a multi-client account.</li>
 </ul>
 </li>
 <li><strong>&lt;order-id&gt;</strong> <em>(string)</em><ul>

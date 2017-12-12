@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Create - classroom v1.0.6+20170926</title>
+  <title>Create - classroom v1.0.7+20171211</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> classroom v1.0.6+20170926</a>
+        <a href=".." class="icon icon-home"> classroom v1.0.7+20171211</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -315,7 +315,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">classroom v1.0.6+20170926</a>
+        <a href="..">classroom v1.0.7+20171211</a>
       </nav>
 
       
@@ -356,29 +356,36 @@ effort basis, it is the caller&#39;s responsibility to ensure that it exists
 and that Classroom has permission to publish to it.</p>
 <p>This method may return the following error codes:</p>
 <ul>
-<li><code>PERMISSION_DENIED</code> if:</li>
+<li><code>PERMISSION_DENIED</code> if:<ul>
 <li>the authenticated user does not have permission to receive
-    notifications from the requested field; or</li>
+  notifications from the requested field; or</li>
 <li>the credential provided does not include the appropriate scope for the
-    requested feed.</li>
+  requested feed.</li>
 <li>another access error is encountered.</li>
-<li><code>INVALID_ARGUMENT</code> if:</li>
+</ul>
+</li>
+<li><code>INVALID_ARGUMENT</code> if:<ul>
 <li>no <code>destination</code> is specified, or the specified <code>destination</code> is not
-    valid; or</li>
+  valid; or</li>
 <li>no <code>feed</code> is specified, or the specified <code>feed</code> is not valid.</li>
-<li><code>NOT_FOUND</code> if:</li>
+</ul>
+</li>
+<li><code>NOT_FOUND</code> if:<ul>
 <li>the specified <code>feed</code> cannot be located, or the requesting user does not
-    have permission to determine whether or not it exists; or</li>
+  have permission to determine whether or not it exists; or</li>
 <li>the specified <code>destination</code> cannot be located, or Classroom has not
-    been granted permission to publish to it.</li>
+  been granted permission to publish to it.</li>
+</ul>
+</li>
 </ul>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for at least one of the following scopes to make a valid call:</p>
 <ul>
+<li><em>https://www.googleapis.com/auth/classroom.push-notifications</em></li>
 <li><em>https://www.googleapis.com/auth/classroom.rosters</em></li>
 <li><em>https://www.googleapis.com/auth/classroom.rosters.readonly</em></li>
 </ul>
-<p>If unset, the scope for this method defaults to <em>https://www.googleapis.com/auth/classroom.rosters</em>.
+<p>If unset, the scope for this method defaults to <em>https://www.googleapis.com/auth/classroom.push-notifications</em>.
 You can set the scope for this method like this: <code>classroom1 --scope &lt;scope&gt; registrations create ...</code></p>
 <h1 id="required-request-value">Required Request Value</h1>
 <p>The request value is a data-structure with various fields. Each field may be a simple scalar or another data-structure.

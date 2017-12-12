@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Copy - storage v1.0.6+20170915</title>
+  <title>Copy - storage v1.0.7+20171101</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> storage v1.0.6+20170915</a>
+        <a href=".." class="icon icon-home"> storage v1.0.7+20171101</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -329,7 +329,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">storage v1.0.6+20170915</a>
+        <a href="..">storage v1.0.7+20171101</a>
       </nav>
 
       
@@ -564,11 +564,10 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 <h1 id="optional-output-flags">Optional Output Flags</h1>
 <p>The method's return value a JSON encoded structure, which will be written to standard output by default.</p>
-<p>As this method supports <strong>media download</strong>, you may specify the <code>-p alt=media</code> flag to set the output to be an octet stream of the underlying media. In that case, you will not receive JSON output anymore.</p>
 <ul>
 <li><strong>-o out</strong><ul>
 <li><em>out</em> specifies the <em>destination</em> to which to write the server's result to.
-  It will either be a JSON-encoded structure, or the media file you are downloading.
+  It will be a JSON-encoded structure.
   The <em>destination</em> may be <code>-</code> to indicate standard output, or a filepath that is to contain the received bytes.
   If unset, it defaults to standard output.</li>
 </ul>
@@ -580,12 +579,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p if-source-generation-not-match=string</strong></p>
-<ul>
-<li>Makes the operation conditional on whether the source object&#39;s current generation does not match the given value.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p source-generation=string</strong></p>
 <ul>
 <li>If present, selects a specific revision of the source object (as opposed to the latest version, the default).</li>
@@ -595,42 +588,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <p><strong>-p projection=string</strong></p>
 <ul>
 <li>Set of properties to return. Defaults to noAcl, unless the object resource specifies the acl property, when it defaults to full.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p if-generation-match=string</strong></p>
-<ul>
-<li>Makes the operation conditional on whether the destination object&#39;s current generation matches the given value. Setting to 0 makes the operation succeed only if there are no live versions of the object.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p destination-predefined-acl=string</strong></p>
-<ul>
-<li>Apply a predefined set of access controls to the destination object.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p if-metageneration-not-match=string</strong></p>
-<ul>
-<li>Makes the operation conditional on whether the destination object&#39;s current metageneration does not match the given value.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p if-source-metageneration-not-match=string</strong></p>
-<ul>
-<li>Makes the operation conditional on whether the source object&#39;s current metageneration does not match the given value.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p if-source-generation-match=string</strong></p>
-<ul>
-<li>Makes the operation conditional on whether the source object&#39;s current generation matches the given value.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p if-source-metageneration-match=string</strong></p>
-<ul>
-<li>Makes the operation conditional on whether the source object&#39;s current metageneration matches the given value.</li>
 </ul>
 </li>
 <li>
@@ -646,9 +603,51 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
+<p><strong>-p if-source-metageneration-match=string</strong></p>
+<ul>
+<li>Makes the operation conditional on whether the source object&#39;s current metageneration matches the given value.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p user-project=string</strong></p>
 <ul>
-<li>The project to be billed for this request, for Requester Pays buckets.</li>
+<li>The project to be billed for this request. Required for Requester Pays buckets.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p if-source-generation-match=string</strong></p>
+<ul>
+<li>Makes the operation conditional on whether the source object&#39;s current generation matches the given value.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p destination-predefined-acl=string</strong></p>
+<ul>
+<li>Apply a predefined set of access controls to the destination object.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p if-source-generation-not-match=string</strong></p>
+<ul>
+<li>Makes the operation conditional on whether the source object&#39;s current generation does not match the given value.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p if-generation-match=string</strong></p>
+<ul>
+<li>Makes the operation conditional on whether the destination object&#39;s current generation matches the given value. Setting to 0 makes the operation succeed only if there are no live versions of the object.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p if-metageneration-not-match=string</strong></p>
+<ul>
+<li>Makes the operation conditional on whether the destination object&#39;s current metageneration does not match the given value.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p if-source-metageneration-not-match=string</strong></p>
+<ul>
+<li>Makes the operation conditional on whether the source object&#39;s current metageneration does not match the given value.</li>
 </ul>
 </li>
 </ul>

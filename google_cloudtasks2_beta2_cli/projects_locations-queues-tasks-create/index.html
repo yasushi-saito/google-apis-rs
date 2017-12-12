@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Locations Queues Tasks Create - Cloud Tasks v1.0.6+20170926</title>
+  <title>Locations Queues Tasks Create - Cloud Tasks v1.0.7+20171208</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Cloud Tasks v1.0.6+20170926</a>
+        <a href=".." class="icon icon-home"> Cloud Tasks v1.0.7+20171208</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -181,7 +181,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Cloud Tasks v1.0.6+20170926</a>
+        <a href="..">Cloud Tasks v1.0.7+20171208</a>
       </nav>
 
       
@@ -216,6 +216,12 @@
 or the batching documentation for your client library, for example
 https://developers.google.com/api-client-library/python/guide/batch.</p>
 <p>Tasks cannot be updated after creation; there is no UpdateTask command.</p>
+<ul>
+<li>For <a href="../google.cloud.tasks.v2beta2.AppEngineHttpTarget">App Engine queues</a>,
+  the maximum task size is 100KB.</li>
+<li>For <a href="../google.cloud.tasks.v2beta2.PullTarget">pull queues</a>, this
+  the maximum task size is 1MB.</li>
+</ul>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for the <em>https://www.googleapis.com/auth/cloud-platform</em> scope to make a valid call.</p>
 <p>If unset, the scope for this method defaults to <em>https://www.googleapis.com/auth/cloud-platform</em>.
@@ -249,22 +255,9 @@ In the latter case it is advised to set the field-cursor to the data-structure's
       http-method: string
       payload: string
       relative-url: string
-    app-engine-task-target:
-      app-engine-routing:
-        host: string
-        instance: string
-        service: string
-        version: string
-      headers: { string: string }
-      http-method: string
-      payload: string
-      relative-url: string
     create-time: string
     name: string
     pull-message:
-      payload: string
-      tag: string
-    pull-task-target:
       payload: string
       tag: string
     schedule-time: string
@@ -292,7 +285,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
 <li>
-<p><code>-r .    response-view=aliquyam</code></p>
+<p><code>-r .    response-view=eirmod</code></p>
 <ul>
 <li>
 <p>The response_view specifies which subset of the Task will be
@@ -305,174 +298,9 @@ contains.</p>
 <p>Authorization for Task.View.FULL requires <code>cloudtasks.tasks.fullView</code>
 <a href="../iam/">Google IAM</a> permission on the
 Task.name resource.
-* <code>task.app-engine-http-request.app-engine-routing    host=accusam</code>
-    - Output only.</p>
-<p>The host that the task is sent to. For more information, see
-<a href="../appengine/docs/standard/python/how-requests-are-routed">How Requests are Routed</a>.</p>
-<p>The host is constructed as:</p>
-<ul>
-<li>
-<p><code>host = [application_domain_name]</code>&lt;/br&gt;
-  <code>| [service] + &amp;#39;.&amp;#39; + [application_domain_name]</code>&lt;/br&gt;
-  <code>| [version] + &amp;#39;.&amp;#39; + [application_domain_name]</code>&lt;/br&gt;
-  <code>| [version_dot_service]+ &amp;#39;.&amp;#39; + [application_domain_name]</code>&lt;/br&gt;
-  <code>| [instance] + &amp;#39;.&amp;#39; + [application_domain_name]</code>&lt;/br&gt;
-  <code>| [instance_dot_service] + &amp;#39;.&amp;#39; + [application_domain_name]</code>&lt;/br&gt;
-  <code>| [instance_dot_version] + &amp;#39;.&amp;#39; + [application_domain_name]</code>&lt;/br&gt;
-  <code>| [instance_dot_version_dot_service] + &amp;#39;.&amp;#39; + [application_domain_name]</code></p>
-</li>
-<li>
-<p><code>application_domain_name</code> = The domain name of the app, for
-  example &lt;app-id&gt;.appspot.com, which is associated with the
-  queue&#39;s project ID. Some tasks which were created using the App Engine
-  SDK use a custom domain name.</p>
-</li>
-<li>
-<p><code>service =</code> AppEngineRouting.service</p>
-</li>
-<li>
-<p><code>version =</code> AppEngineRouting.version</p>
-</li>
-<li>
-<p><code>version_dot_service =</code>
-  AppEngineRouting.version <code>+ &amp;#39;.&amp;#39; +</code> AppEngineRouting.service</p>
-</li>
-<li>
-<p><code>instance =</code> AppEngineRouting.instance</p>
-</li>
-<li>
-<p><code>instance_dot_service =</code>
-  AppEngineRouting.instance <code>+ &amp;#39;.&amp;#39; +</code> AppEngineRouting.service</p>
-</li>
-<li>
-<p><code>instance_dot_version =</code>
-  AppEngineRouting.instance <code>+ &amp;#39;.&amp;#39; +</code> AppEngineRouting.version</p>
-</li>
-<li>
-<p><code>instance_dot_version_dot_service =</code>
-  AppEngineRouting.instance <code>+ &amp;#39;.&amp;#39; +</code>
-  AppEngineRouting.version <code>+ &amp;#39;.&amp;#39; +</code> AppEngineRouting.service</p>
-</li>
-</ul>
-<p>If AppEngineRouting.service is empty, then the task will be sent
-to the service which is the default service when the task is attempted.</p>
-<p>If AppEngineRouting.version is empty, then the task will be sent
-to the version which is the default version when the task is attempted.</p>
-<p>If AppEngineRouting.instance is empty, then the task will be sent
-to an instance which is available when the task is attempted.</p>
-<p>When AppEngineRouting.service is &#34;default&#34;,
-AppEngineRouting.version is &#34;default&#34;, and
-AppEngineRouting.instance is empty, AppEngineRouting.host is
-shortened to just the <code>application_domain_name</code>.</p>
-<p>If AppEngineRouting.service, AppEngineRouting.version, or
-AppEngineRouting.instance is invalid, then the task will be sent
-to the default version of the default service when the task is attempted.
-* <code>instance=lorem</code>
-    - App instance.</p>
-<p>By default, the task is sent to an instance which is available when
-the task is attempted.</p>
-<p>Requests can only be sent to a specific instance if
-<a href="../appengine/docs/python/an-overview-of-app-engine?hl=en_US#scaling_types_and_instance_classes">manual scaling is used in App Engine Standard</a>.
-App Engine Flex does not support instances. For more information, see
-<a href="../appengine/docs/standard/python/how-requests-are-routed">App Engine Standard request routing</a>
-and <a href="../appengine/docs/flexible/python/how-requests-are-routed">App Engine Flex request routing</a>.
-* <code>service=sea</code>
-    - App service.</p>
-<p>By default, the task is sent to the service which is the default
-service when the task is attempted (&#34;default&#34;).</p>
-<p>For some queues or tasks which were created using the App Engine Task Queue
-API, AppEngineRouting.host is not parsable into
-AppEngineRouting.service, AppEngineRouting.version, and
-AppEngineRouting.instance. For example, some tasks which were created
-using the App Engine SDK use a custom domain name; custom domains are not
-parsed by Cloud Tasks. If AppEngineRouting.host is not parsable, then
-AppEngineRouting.service, AppEngineRouting.version, and
-AppEngineRouting.instance are the empty string.
-* <code>version=et</code>
-    - App version.</p>
-<p>By default, the task is sent to the version which is the default
-version when the task is attempted (&#34;default&#34;).</p>
-<p>For some queues or tasks which were created using the App Engine Task Queue
-API, AppEngineRouting.host is not parsable into
-AppEngineRouting.service, AppEngineRouting.version, and
-AppEngineRouting.instance. For example, some tasks which were created
-using the App Engine SDK use a custom domain name; custom domains are not
-parsed by Cloud Tasks. If AppEngineRouting.host is not parsable, then
-AppEngineRouting.service, AppEngineRouting.version, and
-AppEngineRouting.instance are the empty string.</p>
-</li>
-</ul>
-</li>
-<li>
-<p><code>..    headers=key=duo</code></p>
-<ul>
-<li>
-<p>HTTP request headers.</p>
-<p>This map contains the header field names and values.
-Headers can be set when the
-<a href="../google.cloud.tasks.v2beta2.CloudTasks.CreateTask">task is created</a>.
-Repeated headers are not supported but a header value can contain commas.</p>
-<p>Cloud Tasks sets some headers to default values:</p>
-<ul>
-<li><code>User-Agent</code>: By default, this header is
-  <code>&amp;#34;AppEngine-Google; (+http://code.google.com/appengine)&amp;#34;</code>.
-  This header can be modified, but Cloud Tasks will append
-  <code>&amp;#34;AppEngine-Google; (+http://code.google.com/appengine)&amp;#34;</code> to the
-  modified <code>User-Agent</code>.</li>
-</ul>
-<p>If the task has an AppEngineHttpRequest.payload, Cloud Tasks sets the
-following headers:</p>
-<ul>
-<li><code>Content-Type</code>: By default, the <code>Content-Type</code> header is set to
-  <code>&amp;#34;application/octet-stream&amp;#34;</code>. The default can be overridden by explictly
-  setting <code>Content-Type</code> to a particular media type when the
-  <a href="../google.cloud.tasks.v2beta2.CloudTasks.CreateTask">task is created</a>.
-  For example, <code>Content-Type</code> can be set to <code>&amp;#34;application/json&amp;#34;</code>.</li>
-<li><code>Content-Length</code>: This is computed by Cloud Tasks. This value is
-  output only. It cannot be changed.</li>
-</ul>
-<p>The headers below cannot be set or overridden:</p>
-<ul>
-<li><code>Host</code></li>
-<li><code>X-Google-*</code></li>
-<li><code>X-AppEngine-*</code></li>
-</ul>
-<p>In addition, some App Engine headers, which contain
-task-specific information, are also be sent to the task handler; see
-<a href="../appengine/docs/python/taskqueue/push/creating-handlers#reading_request_headers">request headers</a>.
-    - the value will be associated with the given <code>key</code>
-* <code>http-method=et</code>
-    - The HTTP method to use for the request. The default is POST.</p>
-<p>The app&#39;s request handler for the task&#39;s target URL must be able to handle
-HTTP requests with this http_method, otherwise the task attempt will fail
-with error code 405 &#34;Method Not Allowed&#34; because &#34;the method specified in
-the Request-Line is not allowed for the resource identified by the
-Request-URI&#34;. See
-<a href="../appengine/docs/java/taskqueue/push/creating-handlers#writing_a_push_task_request_handler">Writing a push task request handler</a>
-and the documentation for the request handlers in the language your app is
-written in e.g.
-<a href="../appengine/docs/python/tools/webapp/requesthandlerclass">python RequestHandler</a>.
-* <code>payload=eirmod</code>
-    - Payload.</p>
-<p>The payload will be sent as the HTTP message body. A message
-body, and thus a payload, is allowed only if the HTTP method is
-POST or PUT. It is an error to set a data payload on a task with
-an incompatible HttpMethod.
-* <code>relative-url=sanctus</code>
-    - The relative URL.</p>
-<p>The relative URL must begin with &#34;/&#34; and must be a valid HTTP relative URL.
-It can contain a path, query string arguments, and <code>#</code> fragments.
-If the relative URL is empty, then the root path &#34;/&#34; will be used.
-No spaces are allowed, and the maximum length allowed is 2083 characters.</p>
-</li>
-</ul>
-</li>
-<li>
-<p><code>..app-engine-task-target.app-engine-routing    host=et</code></p>
-<ul>
-<li>
-<p>Output only.</p>
-<p>The host that the task is sent to. For more information, see
+* <code>task.app-engine-http-request.app-engine-routing    host=elitr</code>
+    - Output only. The host that the task is sent to.</p>
+<p>For more information, see
 <a href="../appengine/docs/standard/python/how-requests-are-routed">How Requests are Routed</a>.</p>
 <p>The host is constructed as:</p>
 <ul>
@@ -541,7 +369,7 @@ the task is attempted.</p>
 App Engine Flex does not support instances. For more information, see
 <a href="../appengine/docs/standard/python/how-requests-are-routed">App Engine Standard request routing</a>
 and <a href="../appengine/docs/flexible/python/how-requests-are-routed">App Engine Flex request routing</a>.
-* <code>service=et</code>
+* <code>service=no</code>
     - App service.</p>
 <p>By default, the task is sent to the service which is the default
 service when the task is attempted (&#34;default&#34;).</p>
@@ -553,7 +381,7 @@ using the App Engine SDK use a custom domain name; custom domains are not
 parsed by Cloud Tasks. If AppEngineRouting.host is not parsable, then
 AppEngineRouting.service, AppEngineRouting.version, and
 AppEngineRouting.instance are the empty string.
-* <code>version=consetetur</code>
+* <code>version=labore</code>
     - App version.</p>
 <p>By default, the task is sent to the version which is the default
 version when the task is attempted (&#34;default&#34;).</p>
@@ -569,75 +397,109 @@ AppEngineRouting.instance are the empty string.</p>
 </ul>
 </li>
 <li>
-<p><code>..    headers=key=ut</code></p>
+<p><code>..    headers=key=eirmod</code></p>
 <ul>
-<li>Deprecated. Use AppEngineHttpRequest.headers.</li>
-<li>the value will be associated with the given <code>key</code></li>
+<li>
+<p>HTTP request headers.</p>
+<p>This map contains the header field names and values.
+Headers can be set when the
+<a href="../google.cloud.tasks.v2beta2.CloudTasks.CreateTask">task is created</a>.
+Repeated headers are not supported but a header value can contain commas.</p>
+<p>Cloud Tasks sets some headers to default values:</p>
+<ul>
+<li><code>User-Agent</code>: By default, this header is
+  <code>&amp;#34;AppEngine-Google; (+http://code.google.com/appengine)&amp;#34;</code>.
+  This header can be modified, but Cloud Tasks will append
+  <code>&amp;#34;AppEngine-Google; (+http://code.google.com/appengine)&amp;#34;</code> to the
+  modified <code>User-Agent</code>.</li>
 </ul>
-</li>
-<li><code>http-method=ea</code><ul>
-<li>Deprecated. Use AppEngineHttpRequest.http_method.</li>
+<p>If the task has an AppEngineHttpRequest.payload, Cloud Tasks sets the
+following headers:</p>
+<ul>
+<li><code>Content-Type</code>: By default, the <code>Content-Type</code> header is set to
+  <code>&amp;#34;application/octet-stream&amp;#34;</code>. The default can be overridden by explictly
+  setting <code>Content-Type</code> to a particular media type when the
+  <a href="../google.cloud.tasks.v2beta2.CloudTasks.CreateTask">task is created</a>.
+  For example, <code>Content-Type</code> can be set to <code>&amp;#34;application/json&amp;#34;</code>.</li>
+<li><code>Content-Length</code>: This is computed by Cloud Tasks. This value is
+  output only. It cannot be changed.</li>
 </ul>
+<p>The headers below cannot be set or overridden:</p>
+<ul>
+<li><code>Host</code></li>
+<li><code>X-Google-*</code></li>
+<li><code>X-AppEngine-*</code></li>
+</ul>
+<p>In addition, some App Engine headers, which contain
+task-specific information, are also be sent to the task handler; see
+<a href="../appengine/docs/python/taskqueue/push/creating-handlers#reading_request_headers">request headers</a>.
+    - the value will be associated with the given <code>key</code>
+* <code>http-method=dolore</code>
+    - The HTTP method to use for the request. The default is POST.</p>
+<p>The app&#39;s request handler for the task&#39;s target URL must be able to handle
+HTTP requests with this http_method, otherwise the task attempt will fail
+with error code 405 (Method Not Allowed). See
+<a href="../appengine/docs/java/taskqueue/push/creating-handlers#writing_a_push_task_request_handler">Writing a push task request handler</a>
+and the documentation for the request handlers in the language your app is
+written in e.g.
+<a href="../appengine/docs/python/tools/webapp/requesthandlerclass">python RequestHandler</a>.
+* <code>payload=invidunt</code>
+    - Payload.</p>
+<p>The payload will be sent as the HTTP message body. A message
+body, and thus a payload, is allowed only if the HTTP method is
+POST or PUT. It is an error to set a data payload on a task with
+an incompatible HttpMethod.
+* <code>relative-url=aliquyam</code>
+    - The relative URL.</p>
+<p>The relative URL must begin with &#34;/&#34; and must be a valid HTTP relative URL.
+It can contain a path and query string arguments.
+If the relative URL is empty, then the root path &#34;/&#34; will be used.
+No spaces are allowed, and the maximum length allowed is 2083 characters.</p>
 </li>
-<li><code>payload=sed</code><ul>
-<li>Deprecated. Use AppEngineHttpRequest.payload.</li>
 </ul>
 </li>
 <li>
-<p><code>relative-url=dolor</code></p>
-<ul>
-<li>Deprecated. Use AppEngineHttpRequest.relative_url.</li>
-</ul>
-</li>
-<li>
-<p><code>..    create-time=dolor</code></p>
+<p><code>..    create-time=accusam</code></p>
 <ul>
 <li>
-<p>Output only.</p>
-<p>The time that the task was created.</p>
+<p>Output only. The time that the task was created.</p>
 <p><code>create_time</code> will be truncated to the nearest second.
-* <code>name=dolor</code>
+* <code>name=lorem</code>
     - The task name.</p>
 <p>The task name must have the following format:
 <code>projects/PROJECT_ID/locations/LOCATION_ID/queues/QUEUE_ID/tasks/TASK_ID</code></p>
 <ul>
-<li><code>PROJECT_ID</code> can contain uppercase and lowercase letters,
-  numbers, hyphens, colons, and periods; that is, it must match
-  the regular expression: <code>[a-zA-Z\\d-:\\.]+</code>.</li>
-<li><code>QUEUE_ID</code> can contain uppercase and lowercase letters,
-  numbers, and hyphens; that is, it must match the regular
-  expression: <code>[a-zA-Z\\d-]+</code>. The maximum length is 100
-  characters.</li>
-<li><code>TASK_ID</code> contain uppercase and lowercase letters, numbers,
-  underscores, and hyphens; that is, it must match the regular
-  expression: <code>[a-zA-Z\\d_-]+</code>. The maximum length is 500
-  characters.</li>
+<li><code>PROJECT_ID</code> can contain letters ([A-Za-z]), numbers ([0-9]),
+   hyphens (-), colons (:), or periods (.).
+   For more information, see
+   <a href="../resource-manager/docs/creating-managing-projects#identifying_projects">Identifying projects</a></li>
+<li><code>LOCATION_ID</code> is the canonical ID for the task&#39;s location.
+   The list of available locations can be obtained by calling
+   google.cloud.location.Locations.ListLocations.
+   For more information, see https://cloud.google.com/about/locations/.</li>
+<li><code>QUEUE_ID</code> can contain letters ([A-Za-z]), numbers ([0-9]), or
+  hyphens (-). The maximum length is 100 characters.</li>
+<li><code>TASK_ID</code> can contain only letters ([A-Za-z]), numbers ([0-9]),
+  hyphens (-), or underscores (_). The maximum length is 500 characters.</li>
 </ul>
 <p>Optionally caller-specified in CreateTaskRequest.
-<em> <code>pull-message    payload=et</code>
+<em> <code>pull-message    payload=sea</code>
     - A data payload consumed by the task worker to execute the task.
-</em> <code>tag=consetetur</code>
-    - A meta-data tag for this task.</p>
-<p>This value is used by CloudTasks.PullTasks calls when
-PullTasksRequest.filter is <code>tag=&amp;lt;tag&amp;gt;</code>.</p>
+</em> <code>tag=et</code>
+    - The task&#39;s tag.</p>
+<p>Tags allow similar tasks to be processed in a batch. If you label
+tasks with a tag, your task worker can pull tasks
+with the same tag using PullTasksRequest.filter. For example,
+if you want to aggregate the events associated with a specific
+user once a day, you could tag tasks with the user ID.</p>
+<p>The task&#39;s tag can only be set when the
+task is created.</p>
 <p>The tag must be less than 500 bytes.</p>
 </li>
 </ul>
 </li>
 <li>
-<p><code>..pull-task-target    payload=amet.</code></p>
-<ul>
-<li>Deprecated. Use PullMessage.payload.</li>
-</ul>
-</li>
-<li>
-<p><code>tag=voluptua.</code></p>
-<ul>
-<li>Deprecated. Use PullMessage.tag.</li>
-</ul>
-</li>
-<li>
-<p><code>..    schedule-time=lorem</code></p>
+<p><code>..    schedule-time=duo</code></p>
 <ul>
 <li>
 <p>The time when the task is scheduled to be attempted.</p>
@@ -647,22 +509,20 @@ the current lease expires, that is, the time that the task was
 leased plus the PullTasksRequest.lease_duration.</p>
 <p>For App Engine queues, this is when the task will be attempted or retried.</p>
 <p><code>schedule_time</code> will be truncated to the nearest microsecond.
-* <code>task-status    attempt-dispatch-count=-11</code>
-    - Output only.</p>
-<p>The number of attempts dispatched. This count includes tasks which have
-been dispatched but haven&#39;t received a response.
-* <code>attempt-response-count=-20</code>
-    - Output only.</p>
-<p>The number of attempts which have received a response.</p>
+* <code>task-status    attempt-dispatch-count=-21</code>
+    - Output only. The number of attempts dispatched.</p>
+<p>This count includes tasks which have been dispatched but haven&#39;t
+received a response.
+* <code>attempt-response-count=-40</code>
+    - Output only. The number of attempts which have received a response.</p>
 <p>This field is not calculated for
 <a href="../google.cloud.tasks.v2beta2.PullTaskTarget">pull tasks</a>.
-* <code>first-attempt-status    dispatch-time=sit</code>
-    - Output only.</p>
-<p>The time that this attempt was dispatched.</p>
+* <code>first-attempt-status    dispatch-time=sanctus</code>
+    - Output only. The time that this attempt was dispatched.</p>
 <p><code>dispatch_time</code> will be truncated to the nearest microsecond.
-<em> <code>response-status    code=75</code>
+<em> <code>response-status    code=79</code>
     - The status code, which should be an enum value of google.rpc.Code.
-</em> <code>message=diam</code>
+</em> <code>message=amet</code>
     - A developer-facing error message, which should be in English. Any
 user-facing error message should be localized and sent in the
 google.rpc.Status.details field, or localized by the client.</p>
@@ -670,29 +530,26 @@ google.rpc.Status.details field, or localized by the client.</p>
 </ul>
 </li>
 <li>
-<p><code>..    response-time=rebum.</code></p>
+<p><code>..    response-time=et</code></p>
 <ul>
 <li>
-<p>Output only.</p>
-<p>The time that this attempt response was received.</p>
+<p>Output only. The time that this attempt response was received.</p>
 <p><code>response_time</code> will be truncated to the nearest microsecond.
 * <code>schedule-time=consetetur</code>
-    - Output only.</p>
-<p>The time that this attempt was scheduled.</p>
+    - Output only. The time that this attempt was scheduled.</p>
 <p><code>schedule_time</code> will be truncated to the nearest microsecond.</p>
 </li>
 </ul>
 </li>
 <li>
-<p><code>..last-attempt-status    dispatch-time=sadipscing</code></p>
+<p><code>..last-attempt-status    dispatch-time=ut</code></p>
 <ul>
 <li>
-<p>Output only.</p>
-<p>The time that this attempt was dispatched.</p>
+<p>Output only. The time that this attempt was dispatched.</p>
 <p><code>dispatch_time</code> will be truncated to the nearest microsecond.
-<em> <code>response-status    code=25</code>
+<em> <code>response-status    code=85</code>
     - The status code, which should be an enum value of google.rpc.Code.
-</em> <code>message=sadipscing</code>
+</em> <code>message=sed</code>
     - A developer-facing error message, which should be in English. Any
 user-facing error message should be localized and sent in the
 google.rpc.Status.details field, or localized by the client.</p>
@@ -700,27 +557,22 @@ google.rpc.Status.details field, or localized by the client.</p>
 </ul>
 </li>
 <li>
-<p><code>..    response-time=invidunt</code></p>
+<p><code>..    response-time=dolor</code></p>
 <ul>
 <li>
-<p>Output only.</p>
-<p>The time that this attempt response was received.</p>
+<p>Output only. The time that this attempt response was received.</p>
 <p><code>response_time</code> will be truncated to the nearest microsecond.
-* <code>schedule-time=consetetur</code>
-    - Output only.</p>
-<p>The time that this attempt was scheduled.</p>
+* <code>schedule-time=dolor</code>
+    - Output only. The time that this attempt was scheduled.</p>
 <p><code>schedule_time</code> will be truncated to the nearest microsecond.</p>
 </li>
 </ul>
 </li>
 <li>
-<p><code>...    view=dolore</code></p>
+<p><code>...    view=dolor</code></p>
 <ul>
-<li>
-<p>Output only.</p>
-<p>The view specifies which subset of the Task has been
-returned.</p>
-</li>
+<li>Output only. The view specifies which subset of the Task has
+    been returned.</li>
 </ul>
 </li>
 </ul>

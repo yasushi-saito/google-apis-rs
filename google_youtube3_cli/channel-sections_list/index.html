@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>List - YouTube v1.0.6+20170918</title>
+  <title>List - YouTube v1.0.7+20171129</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> YouTube v1.0.6+20170918</a>
+        <a href=".." class="icon icon-home"> YouTube v1.0.7+20171129</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -557,7 +557,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">YouTube v1.0.6+20170918</a>
+        <a href="..">YouTube v1.0.7+20171129</a>
       </nav>
 
       
@@ -624,12 +624,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p mine=boolean</strong></p>
-<ul>
-<li>Set this parameter&#39;s value to true to retrieve a feed of the authenticated user&#39;s channelSections.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p channel-id=string</strong></p>
 <ul>
 <li>The channelId parameter specifies a YouTube channel ID. The API will only return that channel&#39;s channelSections.</li>
@@ -645,15 +639,21 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p id=string</strong></p>
+<p><strong>-p mine=boolean</strong></p>
 <ul>
-<li>The id parameter specifies a comma-separated list of the YouTube channelSection ID(s) for the resource(s) that are being retrieved. In a channelSection resource, the id property specifies the YouTube channelSection ID.</li>
+<li>Set this parameter&#39;s value to true to retrieve a feed of the authenticated user&#39;s channelSections.</li>
 </ul>
 </li>
 <li>
 <p><strong>-p hl=string</strong></p>
 <ul>
 <li>The hl parameter indicates that the snippet.localized property values in the returned channelSection resources should be in the specified language if localized values for that language are available. For example, if the API request specifies hl=de, the snippet.localized properties in the API response will contain German titles if German titles are available. Channel owners can provide localized channel section titles using either the channelSections.insert or channelSections.update method.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p id=string</strong></p>
+<ul>
+<li>The id parameter specifies a comma-separated list of the YouTube channelSection ID(s) for the resource(s) that are being retrieved. In a channelSection resource, the id property specifies the YouTube channelSection ID.</li>
 </ul>
 </li>
 </ul>

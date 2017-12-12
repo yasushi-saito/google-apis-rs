@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Metrics List - Logging v1.0.6+20170918</title>
+  <title>Metrics List - Logging v1.0.7+20171204</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Logging v1.0.6+20170918</a>
+        <a href=".." class="icon icon-home"> Logging v1.0.7+20171204</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -128,6 +128,33 @@
           
             <li class="toctree-l1">
 		
+    <span class="caption-text">Exclusions</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../exclusions_create/">Create</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../exclusions_delete/">Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../exclusions_get/">Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../exclusions_list/">List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../exclusions_patch/">Patch</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
     <span class="caption-text">Folders</span>
     <ul class="subnav">
                 <li class="">
@@ -181,6 +208,21 @@
                 <li class="">
                     
     <a class="" href="../folders_sinks-update/">Sinks Update</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Logs</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../logs_delete/">Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../logs_list/">List</a>
                 </li>
     </ul>
 	    </li>
@@ -352,6 +394,33 @@
     </ul>
 	    </li>
           
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Sinks</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../sinks_create/">Create</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../sinks_delete/">Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../sinks_get/">Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../sinks_list/">List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../sinks_update/">Update</a>
+                </li>
+    </ul>
+	    </li>
+          
         </ul>
       </div>
       &nbsp;
@@ -362,7 +431,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Logging v1.0.6+20170918</a>
+        <a href="..">Logging v1.0.7+20171204</a>
       </nav>
 
       
@@ -427,15 +496,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p page-token=string</strong></p>
-<ul>
-<li>Optional. If present, then retrieve the next batch of results from the preceding call to this method. pageToken must be the value of nextPageToken from the previous response. The values of other method parameters should be identical to those in the previous call.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p page-size=integer</strong></p>
 <ul>
 <li>Optional. The maximum number of results to return from this request. Non-positive values are ignored. The presence of nextPageToken in the response indicates that more results might be available.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p page-token=string</strong></p>
+<ul>
+<li>Optional. If present, then retrieve the next batch of results from the preceding call to this method. pageToken must be the value of nextPageToken from the previous response. The values of other method parameters should be identical to those in the previous call.</li>
 </ul>
 </li>
 </ul>

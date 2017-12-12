@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Verify Assertion - Identity Toolkit v1.0.6+20170828</title>
+  <title>Verify Assertion - Identity Toolkit v1.0.7+20171122</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Identity Toolkit v1.0.6+20170828</a>
+        <a href=".." class="icon icon-home"> Identity Toolkit v1.0.7+20171122</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -67,6 +67,10 @@
                 <li class="">
                     
     <a class="" href="../relyingparty_download-account/">Download Account</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../relyingparty_email-link-signin/">Email Link Signin</a>
                 </li>
                 <li class="">
                     
@@ -166,7 +170,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Identity Toolkit v1.0.6+20170828</a>
+        <a href="..">Identity Toolkit v1.0.7+20171122</a>
       </nav>
 
       
@@ -221,47 +225,47 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    auto-create=false</code><ul>
+<li><code>-r .    auto-create=true</code><ul>
 <li>When it&#39;s true, automatically creates a new account if the user doesn&#39;t exist. When it&#39;s false, allows existing user to sign in normally and throws exception if the user doesn&#39;t exist.</li>
 </ul>
 </li>
-<li><code>delegated-project-number=invidunt</code><ul>
+<li><code>delegated-project-number=eos</code><ul>
 <li>GCP project number of the requesting delegated app. Currently only intended for Firebase V1 migration.</li>
 </ul>
 </li>
-<li><code>id-token=ut</code><ul>
+<li><code>id-token=voluptua.</code><ul>
 <li>The GITKit token of the authenticated user.</li>
 </ul>
 </li>
-<li><code>instance-id=dolores</code><ul>
+<li><code>instance-id=duo</code><ul>
 <li>Instance id token of the app.</li>
 </ul>
 </li>
-<li><code>pending-id-token=eos</code><ul>
+<li><code>pending-id-token=sed</code><ul>
 <li>The GITKit token for the non-trusted IDP pending to be confirmed by the user.</li>
 </ul>
 </li>
-<li><code>post-body=voluptua.</code><ul>
+<li><code>post-body=aliquyam</code><ul>
 <li>The post body if the request is a HTTP POST.</li>
 </ul>
 </li>
-<li><code>request-uri=duo</code><ul>
+<li><code>request-uri=ea</code><ul>
 <li>The URI to which the IDP redirects the user back. It may contain federated login result params added by the IDP.</li>
 </ul>
 </li>
-<li><code>return-idp-credential=false</code><ul>
+<li><code>return-idp-credential=true</code><ul>
 <li>Whether return 200 and IDP credential rather than throw exception when federated id is already linked.</li>
 </ul>
 </li>
-<li><code>return-refresh-token=true</code><ul>
+<li><code>return-refresh-token=false</code><ul>
 <li>Whether to return refresh tokens.</li>
 </ul>
 </li>
-<li><code>return-secure-token=false</code><ul>
+<li><code>return-secure-token=true</code><ul>
 <li>Whether return sts id token and refresh token instead of gitkit token.</li>
 </ul>
 </li>
-<li><code>session-id=ea</code><ul>
+<li><code>session-id=diam</code><ul>
 <li>Session ID, which should match the one in previous createAuthUri request.</li>
 </ul>
 </li>

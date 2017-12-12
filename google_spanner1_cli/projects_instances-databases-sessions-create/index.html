@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Instances Databases Sessions Create - Spanner v1.0.6+20170914</title>
+  <title>Instances Databases Sessions Create - Spanner v1.0.7+20171204</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Spanner v1.0.6+20170914</a>
+        <a href=".." class="icon icon-home"> Spanner v1.0.7+20171204</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -245,7 +245,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Spanner v1.0.6+20170914</a>
+        <a href="..">Spanner v1.0.7+20171204</a>
       </nav>
 
       
@@ -337,15 +337,13 @@ In the latter case it is advised to set the field-cursor to the data-structure's
    the following regular expression: <code>[a-z]([-a-z0-9]*[a-z0-9])?</code>.</li>
 <li>Label values must be between 0 and 63 characters long and must conform
    to the regular expression <code>([a-z]([-a-z0-9]*[a-z0-9])?)?</code>.</li>
-<li>No more than 20 labels can be associated with a given session.<ul>
-<li>the value will be associated with the given <code>key</code></li>
+<li>No more than 64 labels can be associated with a given session.</li>
 </ul>
-</li>
-<li><code>name=diam</code><ul>
-<li>The name of the session.</li>
-</ul>
-</li>
-</ul>
+<p>See https://goo.gl/xmQnxf for more information on and examples of labels.
+    - the value will be associated with the given <code>key</code>
+* <code>name=diam</code>
+    - The name of the session. This is always system-assigned; values provided
+when creating a session are ignored.</p>
 </li>
 </ul>
 </li>

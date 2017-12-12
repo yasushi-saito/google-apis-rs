@@ -8,7 +8,7 @@
   <meta name="description" content="A complete library to interact with Pubsub (protocol v1)">
   
   <link rel="shortcut icon" href="./img/favicon.ico">
-  <title>Home - Pubsub v1.0.6+20170829</title>
+  <title>Home - Pubsub v1.0.7+20171129</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="./css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href="." class="icon icon-home"> Pubsub v1.0.6+20170829</a>
+        <a href="." class="icon icon-home"> Pubsub v1.0.7+20171129</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -79,7 +79,23 @@
     <ul class="subnav">
                 <li class="">
                     
+    <a class="" href="projects_snapshots-create/">Snapshots Create</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="projects_snapshots-delete/">Snapshots Delete</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="projects_snapshots-get-iam-policy/">Snapshots Get Iam Policy</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="projects_snapshots-list/">Snapshots List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="projects_snapshots-patch/">Snapshots Patch</a>
                 </li>
                 <li class="">
                     
@@ -123,7 +139,15 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="projects_subscriptions-patch/">Subscriptions Patch</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="projects_subscriptions-pull/">Subscriptions Pull</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="projects_subscriptions-seek/">Subscriptions Seek</a>
                 </li>
                 <li class="">
                     
@@ -163,6 +187,10 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="projects_topics-snapshots-list/">Topics Snapshots List</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="projects_topics-subscriptions-list/">Topics Subscriptions List</a>
                 </li>
                 <li class="">
@@ -182,7 +210,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href=".">Pubsub v1.0.6+20170829</a>
+        <a href=".">Pubsub v1.0.7+20171129</a>
       </nav>
 
       
@@ -226,10 +254,14 @@ capabilities. Errors will be printed to standard error, and cause the program's 
 
 <p>Find the source code <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/pubsub1-cli">on github</a>.</p>
 <h1 id="usage">Usage</h1>
-<p>This documentation was generated from the <em>Pubsub</em> API at revision <em>20170829</em>. The CLI is at version <em>1.0.6</em>.</p>
+<p>This documentation was generated from the <em>Pubsub</em> API at revision <em>20171129</em>. The CLI is at version <em>1.0.7</em>.</p>
 <pre><code class="bash">pubsub1 [options]
         projects
+                snapshots-create &lt;name&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                snapshots-delete &lt;snapshot&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 snapshots-get-iam-policy &lt;resource&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                snapshots-list &lt;project&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                snapshots-patch &lt;name&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 snapshots-set-iam-policy &lt;resource&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 snapshots-test-iam-permissions &lt;resource&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 subscriptions-acknowledge &lt;subscription&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
@@ -240,7 +272,9 @@ capabilities. Errors will be printed to standard error, and cause the program's 
                 subscriptions-list &lt;project&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 subscriptions-modify-ack-deadline &lt;subscription&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 subscriptions-modify-push-config &lt;subscription&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                subscriptions-patch &lt;name&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 subscriptions-pull &lt;subscription&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                subscriptions-seek &lt;subscription&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 subscriptions-set-iam-policy &lt;resource&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 subscriptions-test-iam-permissions &lt;resource&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 topics-create &lt;name&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
@@ -250,6 +284,7 @@ capabilities. Errors will be printed to standard error, and cause the program's 
                 topics-list &lt;project&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 topics-publish &lt;topic&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 topics-set-iam-policy &lt;resource&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                topics-snapshots-list &lt;topic&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 topics-subscriptions-list &lt;topic&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 topics-test-iam-permissions &lt;resource&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
   pubsub1 --help
@@ -316,7 +351,7 @@ issue at hand.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="projects_snapshots-get-iam-policy/" class="btn btn-neutral float-right" title="Snapshots Get Iam Policy">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="projects_snapshots-create/" class="btn btn-neutral float-right" title="Snapshots Create">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
     </div>
@@ -348,7 +383,7 @@ issue at hand.</p>
       
       
       
-        <span style="margin-left: 15px"><a href="projects_snapshots-get-iam-policy/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="projects_snapshots-create/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
@@ -359,5 +394,5 @@ issue at hand.</p>
 
 <!--
 MkDocs version : 0.16.3
-Build Date UTC : 2017-09-27 12:56:31
+Build Date UTC : 2017-12-12 16:59:53
 -->

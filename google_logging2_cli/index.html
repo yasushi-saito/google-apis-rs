@@ -8,7 +8,7 @@
   <meta name="description" content="A complete library to interact with Logging (protocol v2)">
   
   <link rel="shortcut icon" href="./img/favicon.ico">
-  <title>Home - Logging v1.0.6+20170918</title>
+  <title>Home - Logging v1.0.7+20171204</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="./css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href="." class="icon icon-home"> Logging v1.0.6+20170918</a>
+        <a href="." class="icon icon-home"> Logging v1.0.7+20171204</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -149,6 +149,33 @@
           
             <li class="toctree-l1">
 		
+    <span class="caption-text">Exclusions</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="exclusions_create/">Create</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="exclusions_delete/">Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="exclusions_get/">Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="exclusions_list/">List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="exclusions_patch/">Patch</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
     <span class="caption-text">Folders</span>
     <ul class="subnav">
                 <li class="">
@@ -202,6 +229,21 @@
                 <li class="">
                     
     <a class="" href="folders_sinks-update/">Sinks Update</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Logs</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="logs_delete/">Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="logs_list/">List</a>
                 </li>
     </ul>
 	    </li>
@@ -355,6 +397,33 @@
     </ul>
 	    </li>
           
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Sinks</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="sinks_create/">Create</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="sinks_delete/">Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="sinks_get/">Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="sinks_list/">List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="sinks_update/">Update</a>
+                </li>
+    </ul>
+	    </li>
+          
         </ul>
       </div>
       &nbsp;
@@ -365,7 +434,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href=".">Logging v1.0.6+20170918</a>
+        <a href=".">Logging v1.0.7+20171204</a>
       </nav>
 
       
@@ -409,7 +478,7 @@ capabilities. Errors will be printed to standard error, and cause the program's 
 
 <p>Find the source code <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/logging2-cli">on github</a>.</p>
 <h1 id="usage">Usage</h1>
-<p>This documentation was generated from the <em>Logging</em> API at revision <em>20170918</em>. The CLI is at version <em>1.0.6</em>.</p>
+<p>This documentation was generated from the <em>Logging</em> API at revision <em>20171204</em>. The CLI is at version <em>1.0.7</em>.</p>
 <pre><code class="bash">logging2 [options]
         billing-accounts
                 exclusions-create &lt;parent&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
@@ -428,6 +497,12 @@ capabilities. Errors will be printed to standard error, and cause the program's 
         entries
                 list (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 write (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+        exclusions
+                create &lt;parent&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                delete &lt;name&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                get &lt;name&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                list &lt;parent&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                patch &lt;name&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
         folders
                 exclusions-create &lt;parent&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 exclusions-delete &lt;name&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
@@ -442,6 +517,9 @@ capabilities. Errors will be printed to standard error, and cause the program's 
                 sinks-list &lt;parent&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 sinks-patch &lt;sink-name&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 sinks-update &lt;sink-name&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+        logs
+                delete &lt;log-name&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                list &lt;parent&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
         monitored-resource-descriptors
                 list [-p &lt;v&gt;]... [-o &lt;out&gt;]
         organizations
@@ -477,6 +555,12 @@ capabilities. Errors will be printed to standard error, and cause the program's 
                 sinks-list &lt;parent&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 sinks-patch &lt;sink-name&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 sinks-update &lt;sink-name&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+        sinks
+                create &lt;parent&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                delete &lt;sink-name&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                get &lt;sink-name&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                list &lt;parent&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                update &lt;sink-name&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
   logging2 --help
 
 Configuration:
@@ -584,5 +668,5 @@ issue at hand.</p>
 
 <!--
 MkDocs version : 0.16.3
-Build Date UTC : 2017-09-27 12:58:44
+Build Date UTC : 2017-12-12 17:01:07
 -->

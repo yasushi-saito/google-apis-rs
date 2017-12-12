@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Watch - directory v1.0.6+20170830</title>
+  <title>Watch - directory v1.0.7+20171127</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> directory v1.0.6+20170830</a>
+        <a href=".." class="icon icon-home"> directory v1.0.7+20171127</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -235,6 +235,10 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="../members_has-member/">Has Member</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../members_insert/">Insert</a>
                 </li>
                 <li class="">
@@ -340,6 +344,21 @@
                 <li class="">
                     
     <a class="" href="../privileges_list/">List</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Resolved App Access Settings</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../resolved-app-access-settings_get-settings/">Get Settings</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../resolved-app-access-settings_list-trusted-apps/">List Trusted Apps</a>
                 </li>
     </ul>
 	    </li>
@@ -607,7 +626,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">directory v1.0.6+20170830</a>
+        <a href="..">directory v1.0.7+20171127</a>
       </nav>
 
       
@@ -665,23 +684,23 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    address=lorem</code><ul>
+<li><code>-r .    address=est</code><ul>
 <li>The address where notifications are delivered for this channel.</li>
 </ul>
 </li>
-<li><code>expiration=aliquyam</code><ul>
+<li><code>expiration=consetetur</code><ul>
 <li>Date and time of notification channel expiration, expressed as a Unix timestamp, in milliseconds. Optional.</li>
 </ul>
 </li>
-<li><code>id=sanctus</code><ul>
+<li><code>id=tempor</code><ul>
 <li>A UUID or similar unique string that identifies this channel.</li>
 </ul>
 </li>
-<li><code>kind=et</code><ul>
+<li><code>kind=amet</code><ul>
 <li>Identifies this as a notification channel used to watch for changes to a resource. Value: the fixed string &#34;api#channel&#34;.</li>
 </ul>
 </li>
-<li><code>params=key=consetetur</code><ul>
+<li><code>params=key=lorem</code><ul>
 <li>Additional parameters controlling delivery channel behavior. Optional.</li>
 <li>the value will be associated with the given <code>key</code></li>
 </ul>
@@ -690,19 +709,19 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>A Boolean value to indicate whether payload is wanted. Optional.</li>
 </ul>
 </li>
-<li><code>resource-id=justo</code><ul>
+<li><code>resource-id=elitr</code><ul>
 <li>An opaque ID that identifies the resource being watched on this channel. Stable across different API versions.</li>
 </ul>
 </li>
-<li><code>resource-uri=kasd</code><ul>
+<li><code>resource-uri=clita</code><ul>
 <li>A version-specific identifier for the watched resource.</li>
 </ul>
 </li>
-<li><code>token=kasd</code><ul>
+<li><code>token=et</code><ul>
 <li>An arbitrary string delivered to the target address with each notification delivered over this channel. Optional.</li>
 </ul>
 </li>
-<li><code>type=ipsum</code><ul>
+<li><code>type=eirmod</code><ul>
 <li>The type of delivery mechanism used for this channel.</li>
 </ul>
 </li>
@@ -731,12 +750,6 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> even though the listing below repeats the
 <code>-p</code> for completeness.</p>
 <ul>
-<li>
-<p><strong>-p customer=string</strong></p>
-<ul>
-<li>Immutable ID of the G Suite account. In case of multi-domain, to fetch all users for a customer, fill this field instead of domain.</li>
-</ul>
-</li>
 <li>
 <p><strong>-p domain=string</strong></p>
 <ul>
@@ -771,6 +784,12 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <p><strong>-p custom-field-mask=string</strong></p>
 <ul>
 <li>Comma-separated list of schema names. All fields from these schemas are fetched. This should only be set when projection=custom.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p customer=string</strong></p>
+<ul>
+<li>Immutable ID of the G Suite account. In case of multi-domain, to fetch all users for a customer, fill this field instead of domain.</li>
 </ul>
 </li>
 <li>

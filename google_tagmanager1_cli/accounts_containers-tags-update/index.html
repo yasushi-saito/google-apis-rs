@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Containers Tags Update - Tag Manager v1.0.6+20160310</title>
+  <title>Containers Tags Update - Tag Manager v1.0.7+20171108</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Tag Manager v1.0.6+20160310</a>
+        <a href=".." class="icon icon-home"> Tag Manager v1.0.7+20171108</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -296,7 +296,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Tag Manager v1.0.6+20160310</a>
+        <a href="..">Tag Manager v1.0.7+20171108</a>
       </nav>
 
       
@@ -361,6 +361,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   name: string
   notes: string
   parent-folder-id: string
+  paused: boolean
   priority:
     key: string
     type: string
@@ -375,34 +376,34 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    account-id=at</code><ul>
+<li><code>-r .    account-id=labore</code><ul>
 <li>GTM Account ID.</li>
 </ul>
 </li>
-<li><code>blocking-rule-id=labore</code><ul>
+<li><code>blocking-rule-id=invidunt</code><ul>
 <li>Blocking rule IDs. If any of the listed rules evaluate to true, the tag will not fire.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>blocking-trigger-id=invidunt</code><ul>
+<li><code>blocking-trigger-id=ea</code><ul>
 <li>Blocking trigger IDs. If any of the listed triggers evaluate to true, the tag will not fire.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>container-id=ea</code><ul>
+<li><code>container-id=sadipscing</code><ul>
 <li>GTM Container ID.</li>
 </ul>
 </li>
-<li><code>fingerprint=sadipscing</code><ul>
+<li><code>fingerprint=rebum.</code><ul>
 <li>The fingerprint of the GTM Tag as computed at storage time. This value is recomputed whenever the tag is modified.</li>
 </ul>
 </li>
-<li><code>firing-rule-id=rebum.</code><ul>
+<li><code>firing-rule-id=dolore</code><ul>
 <li>Firing rule IDs. A tag will fire when any of the listed rules are true and all of its blockingRuleIds (if any specified) are false.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>firing-trigger-id=dolore</code><ul>
+<li><code>firing-trigger-id=nonumy</code><ul>
 <li>Firing trigger IDs. A tag will fire when any of the listed triggers are true and all of its blockingTriggerIds (if any specified) are false.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
@@ -411,23 +412,27 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>If set to true, this tag will only fire in the live environment (e.g. not in preview or debug mode).</li>
 </ul>
 </li>
-<li><code>name=sed</code><ul>
+<li><code>name=aliquyam</code><ul>
 <li>Tag display name.</li>
 </ul>
 </li>
-<li><code>notes=aliquyam</code><ul>
+<li><code>notes=sit</code><ul>
 <li>User notes on how to apply this tag in the container.</li>
 </ul>
 </li>
-<li><code>parent-folder-id=sit</code><ul>
+<li><code>parent-folder-id=eirmod</code><ul>
 <li>Parent folder id.</li>
 </ul>
 </li>
-<li><code>priority    key=eirmod</code><ul>
+<li><code>paused=true</code><ul>
+<li>True if the tag is paused.</li>
+</ul>
+</li>
+<li><code>priority    key=labore</code><ul>
 <li>The named key that uniquely identifies a parameter. Required for top-level parameters, as well as map values. Ignored for list values.</li>
 </ul>
 </li>
-<li><code>type=consetetur</code><ul>
+<li><code>type=sed</code><ul>
 <li>The parameter type. Valid values are: <ul>
 <li>boolean: The value represents a boolean, represented as &#39;true&#39; or &#39;false&#39; </li>
 <li>integer: The value represents a 64-bit signed integer value, in base 10 </li>
@@ -439,30 +444,30 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
-<p><code>value=labore</code></p>
+<p><code>value=ea</code></p>
 <ul>
 <li>A parameter&#39;s value (may contain variable references such as &#34;{{myVariable}}&#34;) as appropriate to the specified type.</li>
 </ul>
 </li>
 <li>
-<p><code>..    schedule-end-ms=sed</code></p>
+<p><code>..    schedule-end-ms=gubergren</code></p>
 <ul>
 <li>The end timestamp in milliseconds to schedule a tag.</li>
 </ul>
 </li>
-<li><code>schedule-start-ms=ea</code><ul>
+<li><code>schedule-start-ms=aliquyam</code><ul>
 <li>The start timestamp in milliseconds to schedule a tag.</li>
 </ul>
 </li>
-<li><code>tag-firing-option=gubergren</code><ul>
+<li><code>tag-firing-option=eos</code><ul>
 <li>Option to fire this tag.</li>
 </ul>
 </li>
-<li><code>tag-id=aliquyam</code><ul>
+<li><code>tag-id=tempor</code><ul>
 <li>The Tag ID uniquely identifies the GTM Tag.</li>
 </ul>
 </li>
-<li><code>type=eos</code><ul>
+<li><code>type=sea</code><ul>
 <li>GTM Tag Type.</li>
 </ul>
 </li>

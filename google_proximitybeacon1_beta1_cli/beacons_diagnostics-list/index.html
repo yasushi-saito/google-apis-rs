@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Diagnostics List - proximitybeacon v1.0.6+20170913</title>
+  <title>Diagnostics List - proximitybeacon v1.0.7+20171112</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> proximitybeacon v1.0.6+20170913</a>
+        <a href=".." class="icon icon-home"> proximitybeacon v1.0.7+20171112</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -176,7 +176,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">proximitybeacon v1.0.6+20170913</a>
+        <a href="..">proximitybeacon v1.0.7+20171112</a>
       </nav>
 
       
@@ -239,18 +239,18 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
+<p><strong>-p alert-filter=string</strong></p>
+<ul>
+<li>Requests only beacons that have the given alert. For example, to find
+    beacons that have low batteries use <code>alert_filter=LOW_BATTERY</code>.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p project-id=string</strong></p>
 <ul>
 <li>Requests only diagnostic records for the given project id. If not set,
     then the project making the request will be used for looking up
     diagnostic records. Optional.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p page-token=string</strong></p>
-<ul>
-<li>Requests results that occur after the <code>page_token</code>, obtained from the
-    response to a previous request. Optional.</li>
 </ul>
 </li>
 <li>
@@ -263,10 +263,10 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p alert-filter=string</strong></p>
+<p><strong>-p page-token=string</strong></p>
 <ul>
-<li>Requests only beacons that have the given alert. For example, to find
-    beacons that have low batteries use <code>alert_filter=LOW_BATTERY</code>.</li>
+<li>Requests results that occur after the <code>page_token</code>, obtained from the
+    response to a previous request. Optional.</li>
 </ul>
 </li>
 </ul>

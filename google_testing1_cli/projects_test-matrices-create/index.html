@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Test Matrices Create - testing v1.0.6+20170922</title>
+  <title>Test Matrices Create - testing v1.0.7+20171201</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> testing v1.0.6+20170922</a>
+        <a href=".." class="icon icon-home"> testing v1.0.7+20171201</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -119,7 +119,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">testing v1.0.6+20170922</a>
+        <a href="..">testing v1.0.7+20171201</a>
       </nav>
 
       
@@ -495,19 +495,23 @@ Example: gs://build-app-1414623860166/app-debug-unaligned.apk</p>
 <li>Disables video recording; may reduce test latency.</li>
 </ul>
 </li>
-<li><code>test-setup    directories-to-pull=erat</code><ul>
-<li>The directories on the device to upload to GCS at the end of the test;
-    they must be absolute, whitelisted paths.
-    Refer to RegularFile for whitelisted paths.
-    Optional</li>
-<li>Each invocation of this argument appends the given value to the array.</li>
-</ul>
-</li>
 <li>
-<p><code>network-profile=sadipscing</code></p>
+<p><code>test-setup    directories-to-pull=erat</code></p>
 <ul>
-<li>The network traffic profile used for running the test.
-    Optional</li>
+<li>
+<p>List of directories on the device to upload to GCS at the end of the test;
+    they must be absolute paths under /sdcard or /data/local/tmp.
+    Path names are restricted to characters a-z A-Z 0-9 _ - . + and /</p>
+<p>Note: The paths /sdcard and /data will be made available and treated as
+implicit path substitutions. E.g. if /sdcard on a particular device does
+not map to external storage, the system will replace it with the external
+storage path prefix for that device.</p>
+<p>Optional
+    - Each invocation of this argument appends the given value to the array.
+* <code>network-profile=sadipscing</code>
+    - The network traffic profile used for running the test.
+Optional</p>
+</li>
 </ul>
 </li>
 <li>

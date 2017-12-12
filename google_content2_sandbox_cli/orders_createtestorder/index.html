@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Createtestorder - Shopping Content v1.0.6+20170926</title>
+  <title>Createtestorder - Shopping Content v1.0.7+20171207</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Shopping Content v1.0.6+20170926</a>
+        <a href=".." class="icon icon-home"> Shopping Content v1.0.7+20171207</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -130,7 +130,15 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="../orders_setlineitemmetadata/">Setlineitemmetadata</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../orders_shiplineitems/">Shiplineitems</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../orders_updatelineitemshippingdetails/">Updatelineitemshippingdetails</a>
                 </li>
                 <li class="">
                     
@@ -153,7 +161,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Shopping Content v1.0.6+20170926</a>
+        <a href="..">Shopping Content v1.0.7+20171207</a>
       </nav>
 
       
@@ -182,7 +190,7 @@
           <div role="main">
             <div class="section">
               
-                <p>Sandbox only. Creates a test order. This method can only be called for non-multi-client accounts.</p>
+                <p>Sandbox only. Creates a test order.</p>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for the <em>https://www.googleapis.com/auth/content</em> scope to make a valid call.</p>
 <p>If unset, the scope for this method defaults to <em>https://www.googleapis.com/auth/content</em>.
@@ -190,7 +198,7 @@ You can set the scope for this method like this: <code>content2-sandbox --scope 
 <h1 id="required-scalar-argument">Required Scalar Argument</h1>
 <ul>
 <li><strong>&lt;merchant-id&gt;</strong> <em>(string)</em><ul>
-<li>The ID of the managing account.</li>
+<li>The ID of the account that should manage the order. This cannot be a multi-client account.</li>
 </ul>
 </li>
 </ul>
@@ -206,6 +214,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
       explicit-marketing-preference: boolean
       full-name: string
     kind: string
+    notification-mode: string
     payment-method:
       expiration-month: integer
       expiration-year: integer
@@ -225,11 +234,11 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    template-name=erat</code><ul>
+<li><code>-r .    template-name=gubergren</code><ul>
 <li>The test order template to use. Specify as an alternative to testOrder as a shortcut for retrieving a template and then creating an order using that template.</li>
 </ul>
 </li>
-<li><code>test-order.customer    email=labore</code><ul>
+<li><code>test-order.customer    email=sadipscing</code><ul>
 <li>Email address of the customer.</li>
 </ul>
 </li>
@@ -238,69 +247,73 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
-<p><code>full-name=nonumy</code></p>
+<p><code>full-name=ea</code></p>
 <ul>
 <li>Full name of the customer.</li>
 </ul>
 </li>
 <li>
-<p><code>..    kind=dolores</code></p>
+<p><code>..    kind=no</code></p>
 <ul>
 <li>Identifies what kind of resource this is. Value: the fixed string &#34;content#testOrder&#34;.</li>
 </ul>
 </li>
-<li><code>payment-method    expiration-month=40</code><ul>
+<li><code>notification-mode=justo</code><ul>
+<li>Determines if test order must be pulled by merchant or pushed to merchant via push integration.</li>
+</ul>
+</li>
+<li><code>payment-method    expiration-month=80</code><ul>
 <li>The card expiration month (January = 1, February = 2 etc.).</li>
 </ul>
 </li>
-<li><code>expiration-year=6</code><ul>
+<li><code>expiration-year=67</code><ul>
 <li>The card expiration year (4-digit, e.g. 2015).</li>
 </ul>
 </li>
-<li><code>last-four-digits=aliquyam</code><ul>
+<li><code>last-four-digits=et</code><ul>
 <li>The last four digits of the card number.</li>
 </ul>
 </li>
-<li><code>predefined-billing-address=ea</code><ul>
+<li><code>predefined-billing-address=diam</code><ul>
 <li>The billing address.</li>
 </ul>
 </li>
 <li>
-<p><code>type=no</code></p>
+<p><code>type=ipsum</code></p>
 <ul>
 <li>The type of instrument. Note that real orders might have different values than the four values accepted by createTestOrder.</li>
 </ul>
 </li>
 <li>
-<p><code>..    predefined-delivery-address=justo</code></p>
+<p><code>..    predefined-delivery-address=lorem</code></p>
 <ul>
 <li>Identifier of one of the predefined delivery addresses for the delivery.</li>
 </ul>
 </li>
-<li><code>shipping-cost    currency=justo</code><ul>
+<li><code>shipping-cost    currency=et</code><ul>
 <li>The currency of the price.</li>
 </ul>
 </li>
 <li>
-<p><code>value=et</code></p>
+<p><code>value=duo</code></p>
 <ul>
 <li>The price represented as a number.</li>
 </ul>
 </li>
 <li>
-<p><code>..shipping-cost-tax    currency=et</code></p>
+<p><code>..shipping-cost-tax    currency=aliquyam</code></p>
 <ul>
 <li>The currency of the price.</li>
 </ul>
 </li>
 <li>
-<p><code>value=diam</code></p>
+<p><code>value=sea</code></p>
 <ul>
 <li>The price represented as a number.</li>
 </ul>
 </li>
 <li>
-<p><code>..    shipping-option=ipsum</code></p>
+<p><code>..    shipping-option=lorem</code></p>
 <ul>
 <li>The requested shipping option.</li>
 </ul>

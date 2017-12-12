@@ -8,7 +8,7 @@
   <meta name="description" content="A complete library to interact with Android Enterprise (protocol v1)">
   
   <link rel="shortcut icon" href="./img/favicon.ico">
-  <title>Home - Android Enterprise v1.0.6+20170922</title>
+  <title>Home - Android Enterprise v1.0.7+20171206</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="./css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href="." class="icon icon-home"> Android Enterprise v1.0.6+20170922</a>
+        <a href="." class="icon icon-home"> Android Enterprise v1.0.7+20171206</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -91,7 +91,15 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="devices_patch/">Patch</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="devices_set-state/">Set State</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="devices_update/">Update</a>
                 </li>
     </ul>
 	    </li>
@@ -311,6 +319,17 @@
           
             <li class="toctree-l1">
 		
+    <span class="caption-text">Managedconfigurationssettings</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="managedconfigurationssettings_list/">List</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
     <span class="caption-text">Permissions</span>
     <ul class="subnav">
                 <li class="">
@@ -474,6 +493,10 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="users_revoke-device-access/">Revoke Device Access</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="users_revoke-token/">Revoke Token</a>
                 </li>
                 <li class="">
@@ -497,7 +520,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href=".">Android Enterprise v1.0.6+20170922</a>
+        <a href=".">Android Enterprise v1.0.7+20171206</a>
       </nav>
 
       
@@ -541,13 +564,15 @@ capabilities. Errors will be printed to standard error, and cause the program's 
 
 <p>Find the source code <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/androidenterprise1-cli">on github</a>.</p>
 <h1 id="usage">Usage</h1>
-<p>This documentation was generated from the <em>Android Enterprise</em> API at revision <em>20170922</em>. The CLI is at version <em>1.0.6</em>.</p>
+<p>This documentation was generated from the <em>Android Enterprise</em> API at revision <em>20171206</em>. The CLI is at version <em>1.0.7</em>.</p>
 <pre><code class="bash">androidenterprise1 [options]
         devices
                 get &lt;enterprise-id&gt; &lt;user-id&gt; &lt;device-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 get-state &lt;enterprise-id&gt; &lt;user-id&gt; &lt;device-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 list &lt;enterprise-id&gt; &lt;user-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                patch &lt;enterprise-id&gt; &lt;user-id&gt; &lt;device-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 set-state &lt;enterprise-id&gt; &lt;user-id&gt; &lt;device-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                update &lt;enterprise-id&gt; &lt;user-id&gt; &lt;device-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
         enterprises
                 acknowledge-notification-set [-p &lt;v&gt;]...
                 complete-signup [-p &lt;v&gt;]... [-o &lt;out&gt;]
@@ -596,6 +621,8 @@ capabilities. Errors will be printed to standard error, and cause the program's 
                 list &lt;enterprise-id&gt; &lt;user-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 patch &lt;enterprise-id&gt; &lt;user-id&gt; &lt;managed-configuration-for-user-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 update &lt;enterprise-id&gt; &lt;user-id&gt; &lt;managed-configuration-for-user-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+        managedconfigurationssettings
+                list &lt;enterprise-id&gt; &lt;product-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
         permissions
                 get &lt;permission-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
         products
@@ -633,6 +660,7 @@ capabilities. Errors will be printed to standard error, and cause the program's 
                 insert &lt;enterprise-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 list &lt;enterprise-id&gt; &lt;email&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 patch &lt;enterprise-id&gt; &lt;user-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                revoke-device-access &lt;enterprise-id&gt; &lt;user-id&gt; [-p &lt;v&gt;]...
                 revoke-token &lt;enterprise-id&gt; &lt;user-id&gt; [-p &lt;v&gt;]...
                 set-available-product-set &lt;enterprise-id&gt; &lt;user-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 update &lt;enterprise-id&gt; &lt;user-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
@@ -743,5 +771,5 @@ issue at hand.</p>
 
 <!--
 MkDocs version : 0.16.3
-Build Date UTC : 2017-09-27 12:56:24
+Build Date UTC : 2017-12-12 16:59:45
 -->

@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Set - Shopping Content v1.0.6+20170926</title>
+  <title>Set - Shopping Content v1.0.7+20171207</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Shopping Content v1.0.6+20170926</a>
+        <a href=".." class="icon icon-home"> Shopping Content v1.0.7+20171207</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -291,7 +291,15 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="../orders_setlineitemmetadata/">Setlineitemmetadata</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../orders_shiplineitems/">Shiplineitems</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../orders_updatelineitemshippingdetails/">Updatelineitemshippingdetails</a>
                 </li>
                 <li class="">
                     
@@ -391,7 +399,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Shopping Content v1.0.6+20170926</a>
+        <a href="..">Shopping Content v1.0.7+20171207</a>
       </nav>
 
       
@@ -420,7 +428,7 @@
           <div role="main">
             <div class="section">
               
-                <p>Updates price and availability of a product in your Merchant Center account. This operation does not update the expiration date of the product. This method can only be called for non-multi-client accounts.</p>
+                <p>Updates price and availability of a product in your Merchant Center account.</p>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for the <em>https://www.googleapis.com/auth/content</em> scope to make a valid call.</p>
 <p>If unset, the scope for this method defaults to <em>https://www.googleapis.com/auth/content</em>.
@@ -428,7 +436,7 @@ You can set the scope for this method like this: <code>content2 --scope &lt;scop
 <h1 id="required-scalar-arguments">Required Scalar Arguments</h1>
 <ul>
 <li><strong>&lt;merchant-id&gt;</strong> <em>(string)</em><ul>
-<li>The ID of the managing account.</li>
+<li>The ID of the account that contains the product. This account cannot be a multi-client account.</li>
 </ul>
 </li>
 <li><strong>&lt;store-code&gt;</strong> <em>(string)</em><ul>
@@ -436,7 +444,7 @@ You can set the scope for this method like this: <code>content2 --scope &lt;scop
 </ul>
 </li>
 <li><strong>&lt;product-id&gt;</strong> <em>(string)</em><ul>
-<li>The ID of the product for which to update price and availability.</li>
+<li>The REST id of the product for which to update price and availability.</li>
 </ul>
 </li>
 </ul>
@@ -472,73 +480,73 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    availability=takimata</code><ul>
+<li><code>-r .    availability=labore</code><ul>
 <li>The availability of the product.</li>
 </ul>
 </li>
-<li><code>installment.amount    currency=nonumy</code><ul>
+<li><code>installment.amount    currency=invidunt</code><ul>
 <li>The currency of the price.</li>
 </ul>
 </li>
 <li>
-<p><code>value=kasd</code></p>
+<p><code>value=ea</code></p>
 <ul>
 <li>The price represented as a number.</li>
 </ul>
 </li>
 <li>
-<p><code>..    months=sanctus</code></p>
+<p><code>..    months=sadipscing</code></p>
 <ul>
 <li>The number of installments the buyer has to pay.</li>
 </ul>
 </li>
 <li>
-<p><code>..loyalty-points    name=takimata</code></p>
+<p><code>..loyalty-points    name=rebum.</code></p>
 <ul>
 <li>Name of loyalty points program. It is recommended to limit the name to 12 full-width characters or 24 Roman characters.</li>
 </ul>
 </li>
-<li><code>points-value=at</code><ul>
+<li><code>points-value=dolore</code><ul>
 <li>The retailer&#39;s loyalty points in absolute value.</li>
 </ul>
 </li>
 <li>
-<p><code>ratio=0.155564420342</code></p>
+<p><code>ratio=0.600960509953</code></p>
 <ul>
 <li>The ratio of a point when converted to currency. Google assumes currency based on Merchant Center settings. If ratio is left out, it defaults to 1.0.</li>
 </ul>
 </li>
 <li>
-<p><code>..pickup    pickup-method=invidunt</code></p>
+<p><code>..pickup    pickup-method=sed</code></p>
 <ul>
 <li>Whether store pickup is available for this offer and whether the pickup option should be shown as buy, reserve, or not supported. Only supported for local inventory. Unless the value is &#34;not supported&#34;, must be submitted together with pickupSla.</li>
 </ul>
 </li>
 <li>
-<p><code>pickup-sla=ea</code></p>
+<p><code>pickup-sla=aliquyam</code></p>
 <ul>
 <li>The expected date that an order will be ready for pickup, relative to when the order is placed. Only supported for local inventory. Must be submitted together with pickupMethod.</li>
 </ul>
 </li>
 <li>
-<p><code>..price    currency=sadipscing</code></p>
+<p><code>..price    currency=sit</code></p>
 <ul>
 <li>The currency of the price.</li>
 </ul>
 </li>
 <li>
-<p><code>value=rebum.</code></p>
+<p><code>value=eirmod</code></p>
 <ul>
 <li>The price represented as a number.</li>
 </ul>
 </li>
 <li>
-<p><code>..    quantity=68</code></p>
+<p><code>..    quantity=55</code></p>
 <ul>
 <li>The quantity of the product. Must be equal to or greater than zero. Supported only for local products.</li>
 </ul>
 </li>
-<li><code>sale-price    currency=nonumy</code><ul>
+<li><code>sale-price    currency=labore</code><ul>
 <li>The currency of the price.</li>
 </ul>
 </li>
@@ -549,12 +557,12 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
-<p><code>..    sale-price-effective-date=aliquyam</code></p>
+<p><code>..    sale-price-effective-date=ea</code></p>
 <ul>
 <li>A date range represented by a pair of ISO 8601 dates separated by a space, comma, or slash. Both dates might be specified as &#39;null&#39; if undecided.</li>
 </ul>
 </li>
-<li><code>sell-on-google-quantity=48</code><ul>
+<li><code>sell-on-google-quantity=39</code><ul>
 <li>The quantity of the product that is reserved for sell-on-google ads. Supported only for online products.</li>
 </ul>
 </li>

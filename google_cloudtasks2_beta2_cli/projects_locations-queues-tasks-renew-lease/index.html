@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Locations Queues Tasks Renew Lease - Cloud Tasks v1.0.6+20170926</title>
+  <title>Locations Queues Tasks Renew Lease - Cloud Tasks v1.0.7+20171208</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Cloud Tasks v1.0.6+20170926</a>
+        <a href=".." class="icon icon-home"> Cloud Tasks v1.0.7+20171208</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -181,7 +181,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Cloud Tasks v1.0.6+20170926</a>
+        <a href="..">Cloud Tasks v1.0.7+20171208</a>
       </nav>
 
       
@@ -234,7 +234,7 @@ You can set the scope for this method like this: <code>cloudtasks2-beta2 --scope
 In the latter case it is advised to set the field-cursor to the data-structure's field to specify values more concisely.</p>
 <p>For example, a structure like this:</p>
 <pre><code>RenewLeaseRequest:
-  new-lease-duration: string
+  lease-duration: string
   response-view: string
   schedule-time: string
 
@@ -242,13 +242,13 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    new-lease-duration=clita</code><ul>
+<li><code>-r .    lease-duration=lorem</code><ul>
 <li>
 <p>Required.</p>
 <p>The desired new lease duration, starting from now.</p>
 <p>The maximum lease duration is 1 week.
-<code>new_lease_duration</code> will be truncated to the nearest second.
-* <code>response-view=consetetur</code>
+<code>lease_duration</code> will be truncated to the nearest second.
+* <code>response-view=gubergren</code>
     - The response_view specifies which subset of the Task will be
 returned.</p>
 <p>By default response_view is Task.View.BASIC; not all
@@ -259,7 +259,7 @@ contains.</p>
 <p>Authorization for Task.View.FULL requires <code>cloudtasks.tasks.fullView</code>
 <a href="../iam/">Google IAM</a> permission on the
 Task.name resource.
-* <code>schedule-time=takimata</code>
+* <code>schedule-time=justo</code>
     - Required.</p>
 <p>The task&#39;s current schedule time, available in the Task.schedule_time
 returned in PullTasksResponse.tasks or

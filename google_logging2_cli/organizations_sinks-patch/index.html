@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Sinks Patch - Logging v1.0.6+20170918</title>
+  <title>Sinks Patch - Logging v1.0.7+20171204</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Logging v1.0.6+20170918</a>
+        <a href=".." class="icon icon-home"> Logging v1.0.7+20171204</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -128,6 +128,33 @@
           
             <li class="toctree-l1">
 		
+    <span class="caption-text">Exclusions</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../exclusions_create/">Create</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../exclusions_delete/">Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../exclusions_get/">Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../exclusions_list/">List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../exclusions_patch/">Patch</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
     <span class="caption-text">Folders</span>
     <ul class="subnav">
                 <li class="">
@@ -181,6 +208,21 @@
                 <li class="">
                     
     <a class="" href="../folders_sinks-update/">Sinks Update</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Logs</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../logs_delete/">Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../logs_list/">List</a>
                 </li>
     </ul>
 	    </li>
@@ -361,6 +403,33 @@
     </ul>
 	    </li>
           
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Sinks</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../sinks_create/">Create</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../sinks_delete/">Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../sinks_get/">Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../sinks_list/">List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../sinks_update/">Update</a>
+                </li>
+    </ul>
+	    </li>
+          
         </ul>
       </div>
       &nbsp;
@@ -371,7 +440,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Logging v1.0.6+20170918</a>
+        <a href="..">Logging v1.0.7+20171204</a>
       </nav>
 
       
@@ -439,7 +508,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    destination=sanctus</code><ul>
+<li><code>-r .    destination=dolore</code><ul>
 <li>Required. The export destination:
     &#34;storage.googleapis.com/[GCS_BUCKET]&#34;
     &#34;bigquery.googleapis.com/projects/[PROJECT_ID]/datasets/[DATASET]&#34;
@@ -447,12 +516,12 @@ In the latter case it is advised to set the field-cursor to the data-structure's
     The sink&#39;s writer_identity, set when the sink is created, must have permission to write to the destination or else the log entries are not exported. For more information, see Exporting Logs With Sinks.</li>
 </ul>
 </li>
-<li><code>end-time=takimata</code><ul>
+<li><code>end-time=nonumy</code><ul>
 <li>Deprecated. This field is ignored when creating or updating sinks.</li>
 </ul>
 </li>
 <li>
-<p><code>filter=at</code></p>
+<p><code>filter=sed</code></p>
 <ul>
 <li>Optional. An advanced logs filter. The only exported log entries are those that are in the resource owning the sink and that match the filter. For example:
     logName=&#34;projects/[PROJECT_ID]/logs/[LOG_ID]&#34; AND severity&gt;=ERROR</li>
@@ -467,20 +536,20 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
-<p><code>name=invidunt</code></p>
+<p><code>name=sit</code></p>
 <ul>
 <li>Required. The client-assigned sink identifier, unique within the project. Example: &#34;my-syslog-errors-to-pubsub&#34;. Sink identifiers are limited to 100 characters and can include only the following characters: upper and lower-case alphanumeric characters, underscores, hyphens, and periods.</li>
 </ul>
 </li>
-<li><code>output-version-format=ea</code><ul>
+<li><code>output-version-format=eirmod</code><ul>
 <li>Deprecated. The log entry format to use for this sink&#39;s exported log entries. The v2 format is used by default and cannot be changed.</li>
 </ul>
 </li>
-<li><code>start-time=sadipscing</code><ul>
+<li><code>start-time=consetetur</code><ul>
 <li>Deprecated. This field is ignored when creating or updating sinks.</li>
 </ul>
 </li>
-<li><code>writer-identity=rebum.</code><ul>
+<li><code>writer-identity=labore</code><ul>
 <li>Output only. An IAM identity&amp;mdash;a service account or group&amp;mdash;under which Stackdriver Logging writes the exported log entries to the sink&#39;s destination. This field is set by sinks.create and sinks.update, based on the setting of unique_writer_identity in those methods.Until you grant this identity write-access to the destination, log entry exports from this sink will fail. For more information, see Granting access for a resource. Consult the destination service&#39;s documentation to determine the appropriate IAM roles to assign to the identity.</li>
 </ul>
 </li>
@@ -510,18 +579,18 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p update-mask=string</strong></p>
-<ul>
-<li>Optional. Field mask that specifies the fields in sink that need an update. A sink field will be overwritten if, and only if, it is in the update mask. name and output only fields cannot be updated.An empty updateMask is temporarily treated as using the following mask for backwards compatibility purposes:  destination,filter,includeChildren At some point in the future, behavior will be removed and specifying an empty updateMask will be an error.For a detailed FieldMask definition, see https://developers.google.com/protocol-buffers/docs/reference/google.protobuf#fieldmaskExample: updateMask=filter.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p unique-writer-identity=boolean</strong></p>
 <ul>
 <li>Optional. See sinks.create for a description of this field. When updating a sink, the effect of this field on the value of writer_identity in the updated sink depends on both the old and new values of this field:
     If the old and new values of this field are both false or both true, then there is no change to the sink&#39;s writer_identity.
     If the old value is false and the new value is true, then writer_identity is changed to a unique service account.
     It is an error if the old value is true and the new value is set to false or defaulted to false.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p update-mask=string</strong></p>
+<ul>
+<li>Optional. Field mask that specifies the fields in sink that need an update. A sink field will be overwritten if, and only if, it is in the update mask. name and output only fields cannot be updated.An empty updateMask is temporarily treated as using the following mask for backwards compatibility purposes:  destination,filter,includeChildren At some point in the future, behavior will be removed and specifying an empty updateMask will be an error.For a detailed FieldMask definition, see https://developers.google.com/protocol-buffers/docs/reference/google.protobuf#fieldmaskExample: updateMask=filter.</li>
 </ul>
 </li>
 </ul>

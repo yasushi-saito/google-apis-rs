@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Calendars Insert - directory v1.0.6+20170830</title>
+  <title>Calendars Insert - directory v1.0.7+20171127</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> directory v1.0.6+20170830</a>
+        <a href=".." class="icon icon-home"> directory v1.0.7+20171127</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -235,6 +235,10 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="../members_has-member/">Has Member</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../members_insert/">Insert</a>
                 </li>
                 <li class="">
@@ -340,6 +344,21 @@
                 <li class="">
                     
     <a class="" href="../privileges_list/">List</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Resolved App Access Settings</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../resolved-app-access-settings_get-settings/">Get Settings</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../resolved-app-access-settings_list-trusted-apps/">List Trusted Apps</a>
                 </li>
     </ul>
 	    </li>
@@ -607,7 +626,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">directory v1.0.6+20170830</a>
+        <a href="..">directory v1.0.7+20171127</a>
       </nav>
 
       
@@ -653,49 +672,79 @@ You can set the scope for this method like this: <code>admin1-directory --scope 
 In the latter case it is advised to set the field-cursor to the data-structure's field to specify values more concisely.</p>
 <p>For example, a structure like this:</p>
 <pre><code>CalendarResource:
+  building-id: string
+  capacity: integer
   etags: string
+  floor-name: string
+  floor-section: string
   generated-resource-name: string
   kind: string
+  resource-category: string
   resource-description: string
   resource-email: string
   resource-id: string
   resource-name: string
   resource-type: string
+  user-visible-description: string
 
 </code></pre>
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    etags=consetetur</code><ul>
+<li><code>-r .    building-id=consetetur</code><ul>
+<li>Unique ID for the building a resource is located in.</li>
+</ul>
+</li>
+<li><code>capacity=47</code><ul>
+<li>Capacity of a resource, number of seats in a room.</li>
+</ul>
+</li>
+<li><code>etags=aliquyam</code><ul>
 <li>ETag of the resource.</li>
 </ul>
 </li>
-<li><code>generated-resource-name=dolor</code><ul>
-<li>The auto-generated name of the calendar resource which includes metadata about the resource such as building name, floor, capacity, etc. For example, NYC-2-Training Room 1A (16)</li>
+<li><code>floor-name=elitr</code><ul>
+<li>Name of the floor a resource is located on.</li>
 </ul>
 </li>
-<li><code>kind=aliquyam</code><ul>
+<li><code>floor-section=ea</code><ul>
+<li>Name of the section within a floor a resource is located in.</li>
+</ul>
+</li>
+<li><code>generated-resource-name=et</code><ul>
+<li>The read-only auto-generated name of the calendar resource which includes metadata about the resource such as building name, floor, capacity, etc. For example, &#34;NYC-2-Training Room 1A (16)&#34;.</li>
+</ul>
+</li>
+<li><code>kind=stet</code><ul>
 <li>The type of the resource. For calendar resources, the value is admin#directory#resources#calendars#CalendarResource.</li>
 </ul>
 </li>
-<li><code>resource-description=elitr</code><ul>
-<li>The brief description of the calendar resource.</li>
+<li><code>resource-category=sed</code><ul>
+<li>The category of the calendar resource. Either CONFERENCE_ROOM or OTHER. Legacy data is set to CATEGORY_UNKNOWN.</li>
 </ul>
 </li>
-<li><code>resource-email=ea</code><ul>
-<li>The read-only email ID for the calendar resource. Generated as part of creating a new calendar resource.</li>
+<li><code>resource-description=dolor</code><ul>
+<li>Description of the resource, visible only to admins. The brief description of the calendar resource.</li>
 </ul>
 </li>
-<li><code>resource-id=et</code><ul>
+<li><code>resource-email=sanctus</code><ul>
+<li>The read-only email ID for the calendar resource. Generated as part of creating a new calendar resource. The read-only email for the calendar resource. Generated as part of creating a new calendar resource.</li>
+</ul>
+</li>
+<li><code>resource-id=dolore</code><ul>
 <li>The unique ID for the calendar resource.</li>
 </ul>
 </li>
-<li><code>resource-name=stet</code><ul>
-<li>The name of the calendar resource. For example, Training Room 1A</li>
+<li><code>resource-name=lorem</code><ul>
+<li>The name of the calendar resource. For example, &#34;Training Room 1A&#34;. The name of the calendar resource. For example, Training Room 1A</li>
 </ul>
 </li>
-<li><code>resource-type=sed</code><ul>
-<li>The type of the calendar resource. Used for grouping resources in the calendar user interface.</li>
+<li><code>resource-type=consetetur</code><ul>
+<li>The type of the calendar resource, intended for non-room resources. The type of the calendar resource. Used for grouping resources in the calendar user interface.</li>
+</ul>
+</li>
+<li><code>user-visible-description=consetetur</code><ul>
+<li>Description of the resource, visible to users and admins.</li>
 </ul>
 </li>
 </ul>

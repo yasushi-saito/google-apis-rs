@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Analyze - DLP v1.0.6+20170918</title>
+  <title>Analyze - DLP v1.0.7+20171205</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> DLP v1.0.6+20170918</a>
+        <a href=".." class="icon icon-home"> DLP v1.0.7+20171205</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -182,7 +182,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">DLP v1.0.6+20170918</a>
+        <a href="..">DLP v1.0.7+20171205</a>
       </nav>
 
       
@@ -230,6 +230,8 @@ In the latter case it is advised to set the field-cursor to the data-structure's
       entity-id:
         field:
           column-name: string
+    k-map-estimation-config:
+      region-code: string
     l-diversity-config:
       sensitive-attribute:
         column-name: string
@@ -258,29 +260,37 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
-<p><code>....l-diversity-config.sensitive-attribute    column-name=nonumy</code></p>
+<p><code>....k-map-estimation-config    region-code=nonumy</code></p>
+<ul>
+<li>ISO 3166-1 alpha-2 region code to use in the statistical modeling.
+    Required if no column is tagged with a region-specific InfoType (like
+    US_ZIP_5) or a region code.</li>
+</ul>
+</li>
+<li>
+<p><code>..l-diversity-config.sensitive-attribute    column-name=dolores</code></p>
 <ul>
 <li>Name describing the field.</li>
 </ul>
 </li>
 <li>
-<p><code>...numerical-stats-config.field    column-name=dolores</code></p>
+<p><code>...numerical-stats-config.field    column-name=gubergren</code></p>
 <ul>
 <li>Name describing the field.</li>
 </ul>
 </li>
 <li>
-<p><code>....source-table    dataset-id=gubergren</code></p>
+<p><code>....source-table    dataset-id=sadipscing</code></p>
 <ul>
 <li>Dataset ID of the table.</li>
 </ul>
 </li>
-<li><code>project-id=sadipscing</code><ul>
+<li><code>project-id=aliquyam</code><ul>
 <li>The Google Cloud Platform project ID of the project containing the table.
     If omitted, project ID is inferred from the API call.</li>
 </ul>
 </li>
-<li><code>table-id=aliquyam</code><ul>
+<li><code>table-id=ea</code><ul>
 <li>Name of the table.</li>
 </ul>
 </li>

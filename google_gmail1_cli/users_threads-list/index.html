@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Threads List - gmail v1.0.6+20170913</title>
+  <title>Threads List - gmail v1.0.7+20171128</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> gmail v1.0.6+20170913</a>
+        <a href=".." class="icon icon-home"> gmail v1.0.7+20171128</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -335,7 +335,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">gmail v1.0.6+20170913</a>
+        <a href="..">gmail v1.0.7+20171128</a>
       </nav>
 
       
@@ -399,9 +399,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p page-token=string</strong></p>
+<p><strong>-p max-results=integer</strong></p>
 <ul>
-<li>Page token to retrieve a specific page of results in the list.</li>
+<li>Maximum number of threads to return.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p include-spam-trash=boolean</strong></p>
+<ul>
+<li>Include threads from SPAM and TRASH in the results.</li>
 </ul>
 </li>
 <li>
@@ -411,21 +417,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p max-results=integer</strong></p>
-<ul>
-<li>Maximum number of threads to return.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p label-ids=string</strong></p>
 <ul>
 <li>Only return threads with labels that match all of the specified label IDs.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p include-spam-trash=boolean</strong></p>
+<p><strong>-p page-token=string</strong></p>
 <ul>
-<li>Include threads from SPAM and TRASH in the results.</li>
+<li>Page token to retrieve a specific page of results in the list.</li>
 </ul>
 </li>
 </ul>

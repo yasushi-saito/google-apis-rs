@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>List - Android Enterprise v1.0.6+20170922</title>
+  <title>List - Android Enterprise v1.0.7+20171206</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Android Enterprise v1.0.6+20170922</a>
+        <a href=".." class="icon icon-home"> Android Enterprise v1.0.7+20171206</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -70,7 +70,15 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="../devices_patch/">Patch</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../devices_set-state/">Set State</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../devices_update/">Update</a>
                 </li>
     </ul>
 	    </li>
@@ -290,6 +298,17 @@
           
             <li class="toctree-l1">
 		
+    <span class="caption-text">Managedconfigurationssettings</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../managedconfigurationssettings_list/">List</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
     <span class="caption-text">Permissions</span>
     <ul class="subnav">
                 <li class="">
@@ -471,6 +490,10 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="../users_revoke-device-access/">Revoke Device Access</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../users_revoke-token/">Revoke Token</a>
                 </li>
                 <li class="">
@@ -494,7 +517,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Android Enterprise v1.0.6+20170922</a>
+        <a href="..">Android Enterprise v1.0.7+20171206</a>
       </nav>
 
       
@@ -552,21 +575,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p language=string</strong></p>
-<ul>
-<li>The BCP47 tag for the user&#39;s preferred language (e.g. &#34;en-US&#34;, &#34;de&#34;). Results are returned in the language best matching the preferred language.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p approved=boolean</strong></p>
-<ul>
-<li>Specifies whether to search among all products (false) or among only products that have been approved (true). Only &#34;true&#34; is supported, and should be specified.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p query=string</strong></p>
 <ul>
 <li>The search query as typed in the Google Play store search box. If omitted, all approved apps will be returned (using the pagination parameters), including apps that are not available in the store (e.g. unpublished apps).</li>
+</ul>
+</li>
+<li>
+<p><strong>-p token=string</strong></p>
+<ul>
+<li>A pagination token is contained in a request&#39;&#39;s response when there are more products. The token can be used in a subsequent request to obtain more products, and so forth. This parameter cannot be used in the initial request.</li>
 </ul>
 </li>
 <li>
@@ -576,9 +593,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p token=string</strong></p>
+<p><strong>-p language=string</strong></p>
 <ul>
-<li>A pagination token is contained in a request&#39;&#39;s response when there are more products. The token can be used in a subsequent request to obtain more products, and so forth. This parameter cannot be used in the initial request.</li>
+<li>The BCP47 tag for the user&#39;s preferred language (e.g. &#34;en-US&#34;, &#34;de&#34;). Results are returned in the language best matching the preferred language.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p approved=boolean</strong></p>
+<ul>
+<li>Specifies whether to search among all products (false) or among only products that have been approved (true). Only &#34;true&#34; is supported, and should be specified.</li>
 </ul>
 </li>
 </ul>

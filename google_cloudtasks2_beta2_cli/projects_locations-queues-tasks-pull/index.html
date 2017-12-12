@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Locations Queues Tasks Pull - Cloud Tasks v1.0.6+20170926</title>
+  <title>Locations Queues Tasks Pull - Cloud Tasks v1.0.7+20171208</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Cloud Tasks v1.0.6+20170926</a>
+        <a href=".." class="icon icon-home"> Cloud Tasks v1.0.7+20171208</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -181,7 +181,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Cloud Tasks v1.0.6+20170926</a>
+        <a href="..">Cloud Tasks v1.0.7+20171208</a>
       </nav>
 
       
@@ -220,6 +220,10 @@ associated with the task.</p>
 to perform the work associated with the task. To return the
 payloads in the PullTasksResponse, set
 PullTasksRequest.response_view to Task.View.FULL.</p>
+<p>A maximum of 10 qps of CloudTasks.PullTasks requests are allowed per
+queue. google.rpc.Code.RESOURCE_EXHAUSTED is returned when this limit
+is exceeded. google.rpc.Code.RESOURCE_EXHAUSTED is also returned when
+RateLimits.max_tasks_dispatched_per_second is exceeded.</p>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for the <em>https://www.googleapis.com/auth/cloud-platform</em> scope to make a valid call.</p>
 <p>If unset, the scope for this method defaults to <em>https://www.googleapis.com/auth/cloud-platform</em>.
@@ -249,26 +253,19 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    filter=duo</code><ul>
+<li><code>-r .    filter=et</code><ul>
 <li>
 <p><code>filter</code> can be used to specify a subset of tasks to lease.</p>
 <p>When <code>filter</code> is set to <code>tag=&amp;lt;my-tag&amp;gt;</code> then the
 PullTasksResponse will contain only tasks whose
-PullMessage.tag is equal to <code>&amp;lt;my-tag&amp;gt;</code>. <code>&amp;lt;my-tag&amp;gt;</code> can be
-a bytes encoded as a string and must be less than 500 bytes.
-If <code>&amp;lt;my-tag&amp;gt;</code> includes whitespace or special characters (characters which
-aren&#39;t letters, numbers, or underscores), then it must be double-quoted.
-Double quotes and backslashes in quoted strings must be escaped by
-preceding it with a backslash (<code>\</code>).</p>
-<p>When <code>filter</code> is set to <code>tag=oldest_tag()</code>, only tasks which have the same
-tag as the task with the oldest schedule_time will be returned.</p>
+PullMessage.tag is equal to <code>&amp;lt;my-tag&amp;gt;</code>. <code>&amp;lt;my-tag&amp;gt;</code> must be less than
+500 bytes.</p>
+<p>When <code>filter</code> is set to <code>tag_function=oldest_tag()</code>, only tasks which have
+the same tag as the task with the oldest schedule_time will be returned.</p>
 <p>Grammar Syntax:</p>
 <ul>
 <li>
-<p><code>filter = &amp;#34;tag=&amp;#34; comparable</code></p>
-</li>
-<li>
-<p><code>comparable = tag | function</code></p>
+<p><code>filter = &amp;#34;tag=&amp;#34; tag | &amp;#34;tag_function=&amp;#34; function</code></p>
 </li>
 <li>
 <p><code>tag = string | bytes</code></p>
@@ -279,7 +276,7 @@ tag as the task with the oldest schedule_time will be returned.</p>
 </ul>
 <p>The <code>oldest_tag()</code> function returns tasks which have the same tag as the
 oldest task (ordered by schedule time).
-* <code>lease-duration=aliquyam</code>
+* <code>lease-duration=consetetur</code>
     - The duration of the lease.</p>
 <p>Each task returned in the PullTasksResponse will have its
 Task.schedule_time set to the current time plus the
@@ -296,10 +293,10 @@ PullTasksResponse so that another lease holder can process
 it.</p>
 <p>The maximum lease duration is 1 week.
 <code>lease_duration</code> will be truncated to the nearest second.
-<em> <code>max-tasks=96</code>
+<em> <code>max-tasks=49</code>
     - The maximum number of tasks to lease. The maximum that can be
 requested is 1000.
-</em> <code>response-view=et</code>
+</em> <code>response-view=voluptua.</code>
     - The response_view specifies which subset of the Task will be
 returned.</p>
 <p>By default response_view is Task.View.BASIC; not all

@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>List - Cloud Monitoring v1.0.6+20170501</title>
+  <title>List - Cloud Monitoring v1.0.7+20170501</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Cloud Monitoring v1.0.6+20170501</a>
+        <a href=".." class="icon icon-home"> Cloud Monitoring v1.0.7+20170501</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -134,7 +134,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Cloud Monitoring v1.0.6+20170501</a>
+        <a href="..">Cloud Monitoring v1.0.7+20170501</a>
       </nav>
 
       
@@ -228,21 +228,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p count=integer</strong></p>
-<ul>
-<li>Maximum number of time series descriptors per page. Used for pagination. If not specified, count = 100.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p aggregator=string</strong></p>
 <ul>
 <li>The aggregation function that will reduce the data points in each window to a single point. This parameter is only valid for non-cumulative metrics with a value type of INT64 or DOUBLE.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p page-token=string</strong></p>
-<ul>
-<li>The pagination token, which is used to page through large result sets. Set this value to the value of the nextPageToken to retrieve the next page of results.</li>
 </ul>
 </li>
 <li>
@@ -254,18 +242,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <li>key!=value: key does not equal the value </li>
 <li>key!~value: key regex does not match the value  For example, to list all of the time series descriptors for the region us-central1, you could specify:
 label=cloud.googleapis.com%2Flocation=~us-central1.*</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<p><strong>-p window=string</strong></p>
-<ul>
-<li>The sampling window. At most one data point will be returned for each window in the requested time interval. This parameter is only valid for non-cumulative metric types. Units:  <ul>
-<li>m: minute </li>
-<li>h: hour </li>
-<li>d: day </li>
-<li>w: week  Examples: 3m, 4w. Only one unit is allowed, for example: 2w3d is not allowed; you should use 17d instead.</li>
 </ul>
 </li>
 </ul>
@@ -284,6 +260,30 @@ label=cloud.googleapis.com%2Flocation=~us-central1.*</li>
 </ul>
 <p>If neither oldest nor timespan is specified, the default time interval will be (youngest - 4 hours, youngest].</p>
 </li>
+</ul>
+</li>
+<li>
+<p><strong>-p count=integer</strong></p>
+<ul>
+<li>Maximum number of time series descriptors per page. Used for pagination. If not specified, count = 100.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p window=string</strong></p>
+<ul>
+<li>The sampling window. At most one data point will be returned for each window in the requested time interval. This parameter is only valid for non-cumulative metric types. Units:  <ul>
+<li>m: minute </li>
+<li>h: hour </li>
+<li>d: day </li>
+<li>w: week  Examples: 3m, 4w. Only one unit is allowed, for example: 2w3d is not allowed; you should use 17d instead.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>-p page-token=string</strong></p>
+<ul>
+<li>The pagination token, which is used to page through large result sets. Set this value to the value of the nextPageToken to retrieve the next page of results.</li>
 </ul>
 </li>
 <li>

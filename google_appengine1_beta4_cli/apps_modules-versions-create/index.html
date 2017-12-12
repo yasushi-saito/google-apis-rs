@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Modules Versions Create - appengine v1.0.6+20170914</title>
+  <title>Modules Versions Create - appengine v1.0.7+20171208</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> appengine v1.0.6+20170914</a>
+        <a href=".." class="icon icon-home"> appengine v1.0.7+20171208</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -173,7 +173,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">appengine v1.0.6+20170914</a>
+        <a href="..">appengine v1.0.7+20171208</a>
       </nav>
 
       
@@ -264,6 +264,9 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   deployment:
     container:
       image: string
+  endpoints-api-service:
+    config-id: string
+    name: string
   env: string
   env-variables: { string: string }
   health-check:
@@ -455,7 +458,19 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
-<p><code>...    env=sea</code></p>
+<p><code>...endpoints-api-service    config-id=sea</code></p>
+<ul>
+<li>Endpoints service configuration id as specified by the Service Management API. For example &#34;2016-09-19r1&#34;By default, the Endpoints service configuration id is fixed and config_id must be specified. To keep the Endpoints service configuration id updated with each rollout, specify RolloutStrategy.MANAGED and omit config_id.</li>
+</ul>
+</li>
+<li>
+<p><code>name=et</code></p>
+<ul>
+<li>Endpoints service name which is the name of the &#34;service&#34; resource in the Service Management API. For example &#34;myapi.endpoints.myproject.cloud.goog&#34;</li>
+</ul>
+</li>
+<li>
+<p><code>..    env=duo</code></p>
 <ul>
 <li>App Engine execution environment to use for this version.Defaults to 1.</li>
 </ul>
@@ -465,55 +480,55 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>the value will be associated with the given <code>key</code></li>
 </ul>
 </li>
-<li><code>health-check    check-interval=duo</code><ul>
+<li><code>health-check    check-interval=eirmod</code><ul>
 <li>Interval between health checks.</li>
 </ul>
 </li>
-<li><code>disable-health-check=true</code><ul>
+<li><code>disable-health-check=false</code><ul>
 <li>Whether to explicitly disable health checks for this instance.</li>
 </ul>
 </li>
-<li><code>healthy-threshold=61</code><ul>
+<li><code>healthy-threshold=79</code><ul>
 <li>Number of consecutive successful health checks required before receiving traffic.</li>
 </ul>
 </li>
-<li><code>host=sanctus</code><ul>
+<li><code>host=amet</code><ul>
 <li>Host header to send when performing an HTTP health check. Example: &#34;myapp.appspot.com&#34;</li>
 </ul>
 </li>
-<li><code>restart-threshold=79</code><ul>
+<li><code>restart-threshold=78</code><ul>
 <li>Number of consecutive failed health checks required before an instance is restarted.</li>
 </ul>
 </li>
-<li><code>timeout=amet</code><ul>
+<li><code>timeout=consetetur</code><ul>
 <li>Time before the health check is considered failed.</li>
 </ul>
 </li>
 <li>
-<p><code>unhealthy-threshold=78</code></p>
+<p><code>unhealthy-threshold=65</code></p>
 <ul>
 <li>Number of consecutive failed health checks required before removing traffic.</li>
 </ul>
 </li>
 <li>
-<p><code>..    id=consetetur</code></p>
+<p><code>..    id=ea</code></p>
 <ul>
 <li>Relative name of the version within the module. Example: v1. Version names can contain only lowercase letters, numbers, or hyphens. Reserved names: &#34;default&#34;, &#34;latest&#34;, and any name with the prefix &#34;ah-&#34;.</li>
 </ul>
 </li>
-<li><code>inbound-services=ut</code><ul>
+<li><code>inbound-services=sed</code><ul>
 <li>Before an application can receive email or XMPP messages, the application must be configured to enable the service.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>instance-class=ea</code><ul>
+<li><code>instance-class=dolor</code><ul>
 <li>Instance class that is used to run this version. Valid values are:
     AutomaticScaling: F1, F2, F4, F4_1G
     ManualScaling or BasicScaling: B1, B2, B4, B8, B4_1GDefaults to F1 for AutomaticScaling and B1 for ManualScaling or BasicScaling.</li>
 </ul>
 </li>
 <li>
-<p><code>manual-scaling    instances=21</code></p>
+<p><code>manual-scaling    instances=53</code></p>
 <ul>
 <li>Number of instances to assign to the module at the start. This number can later be altered by using the Modules API (https://cloud.google.com/appengine/docs/python/modules/functions) set_num_instances() function.</li>
 </ul>
@@ -524,56 +539,56 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>Full path to the Version resource in the API. Example: apps/myapp/modules/default/versions/v1.@OutputOnly</li>
 </ul>
 </li>
-<li><code>network    forwarded-ports=dolor</code><ul>
+<li><code>network    forwarded-ports=et</code><ul>
 <li>List of ports, or port pairs, to forward from the virtual machine to the application container.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>instance-tag=dolor</code><ul>
+<li><code>instance-tag=consetetur</code><ul>
 <li>Tag to apply to the VM instance during creation.</li>
 </ul>
 </li>
 <li>
-<p><code>name=et</code></p>
+<p><code>name=amet.</code></p>
 <ul>
 <li>Google Cloud Platform network where the virtual machines are created. Specify the short name, not the resource path.Defaults to default.</li>
 </ul>
 </li>
 <li>
-<p><code>..    nobuild-files-regex=consetetur</code></p>
+<p><code>..    nobuild-files-regex=voluptua.</code></p>
 <ul>
 <li>Files that match this pattern will not be built into this version. Only applicable for Go runtimes.Only returned in GET requests if view=FULL is set.</li>
 </ul>
 </li>
-<li><code>resources    cpu=0.494659563181</code><ul>
+<li><code>resources    cpu=0.455185502569</code><ul>
 <li>Number of CPU cores needed.</li>
 </ul>
 </li>
-<li><code>disk-gb=0.736498859404</code><ul>
+<li><code>disk-gb=0.898789428358</code><ul>
 <li>Disk size (GB) needed.</li>
 </ul>
 </li>
 <li>
-<p><code>memory-gb=0.455185502569</code></p>
+<p><code>memory-gb=0.804989036339</code></p>
 <ul>
 <li>Memory (GB) needed.</li>
 </ul>
 </li>
 <li>
-<p><code>..    runtime=gubergren</code></p>
+<p><code>..    runtime=sit</code></p>
 <ul>
 <li>Desired runtime. Example: python27.</li>
 </ul>
 </li>
-<li><code>runtime-api-version=justo</code><ul>
+<li><code>runtime-api-version=vero</code><ul>
 <li>The version of the API in the given runtime environment. Please see the app.yaml reference for valid values at https://cloud.google.com/appengine/docs/standard/&lt;language&gt;/config/appref</li>
 </ul>
 </li>
-<li><code>serving-status=sit</code><ul>
+<li><code>serving-status=diam</code><ul>
 <li>Current serving status of this version. Only the versions with a SERVING status create instances and can be billed.SERVING_STATUS_UNSPECIFIED is an invalid value. Defaults to SERVING.</li>
 </ul>
 </li>
-<li><code>threadsafe=true</code><ul>
+<li><code>threadsafe=false</code><ul>
 <li>Whether multiple requests can be dispatched to this version at once.</li>
 </ul>
 </li>

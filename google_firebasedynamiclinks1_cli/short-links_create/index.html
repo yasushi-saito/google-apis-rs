@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Create - Firebase Dynamic Links v1.0.6+20170926</title>
+  <title>Create - Firebase Dynamic Links v1.0.7+20171205</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Firebase Dynamic Links v1.0.6+20170926</a>
+        <a href=".." class="icon icon-home"> Firebase Dynamic Links v1.0.7+20171205</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -109,7 +109,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Firebase Dynamic Links v1.0.6+20170926</a>
+        <a href="..">Firebase Dynamic Links v1.0.7+20171205</a>
       </nav>
 
       
@@ -173,6 +173,8 @@ In the latter case it is advised to set the field-cursor to the data-structure's
       android-link: string
       android-min-package-version-code: string
       android-package-name: string
+    desktop-info:
+      desktop-fallback-link: string
     dynamic-link-domain: string
     ios-info:
       ios-app-store-id: string
@@ -196,49 +198,49 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .dynamic-link-info.analytics-info.google-play-analytics    gclid=labore</code><ul>
+<li><code>-r .dynamic-link-info.analytics-info.google-play-analytics    gclid=sea</code><ul>
 <li><a href="https://support.google.com/analytics/answer/1033981?hl=en">AdWords autotagging parameter</a>;
     used to measure Google AdWords ads. This value is generated dynamically
     and should never be modified.</li>
 </ul>
 </li>
-<li><code>utm-campaign=sea</code><ul>
+<li><code>utm-campaign=nonumy</code><ul>
 <li>Campaign name; used for keyword analysis to identify a specific product
     promotion or strategic campaign.</li>
 </ul>
 </li>
-<li><code>utm-content=nonumy</code><ul>
+<li><code>utm-content=dolores</code><ul>
 <li>Campaign content; used for A/B testing and content-targeted ads to
     differentiate ads or links that point to the same URL.</li>
 </ul>
 </li>
-<li><code>utm-medium=dolores</code><ul>
+<li><code>utm-medium=gubergren</code><ul>
 <li>Campaign medium; used to identify a medium such as email or cost-per-click.</li>
 </ul>
 </li>
-<li><code>utm-source=gubergren</code><ul>
+<li><code>utm-source=sadipscing</code><ul>
 <li>Campaign source; used to identify a search engine, newsletter, or other
     source.</li>
 </ul>
 </li>
 <li>
-<p><code>utm-term=sadipscing</code></p>
+<p><code>utm-term=aliquyam</code></p>
 <ul>
 <li>Campaign term; used with paid search to supply the keywords for ads.</li>
 </ul>
 </li>
 <li>
-<p><code>..itunes-connect-analytics    at=aliquyam</code></p>
+<p><code>..itunes-connect-analytics    at=ea</code></p>
 <ul>
 <li>Affiliate token used to create affiliate-coded links.</li>
 </ul>
 </li>
-<li><code>ct=ea</code><ul>
+<li><code>ct=no</code><ul>
 <li>Campaign text that developers can optionally add to any link in order to
     track sales from a specific marketing campaign.</li>
 </ul>
 </li>
-<li><code>mt=no</code><ul>
+<li><code>mt=justo</code><ul>
 <li>iTune media types, including music, podcasts, audiobooks and so on.</li>
 </ul>
 </li>
@@ -250,7 +252,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
-<p><code>...android-info    android-fallback-link=justo</code></p>
+<p><code>...android-info    android-fallback-link=et</code></p>
 <ul>
 <li>Link to open on Android if the app is not installed.</li>
 </ul>
@@ -259,44 +261,50 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>If specified, this overrides the ‘link’ parameter on Android.</li>
 </ul>
 </li>
-<li><code>android-min-package-version-code=et</code><ul>
+<li><code>android-min-package-version-code=diam</code><ul>
 <li>Minimum version code for the Android app. If the installed app’s version
     code is lower, then the user is taken to the Play Store.</li>
 </ul>
 </li>
 <li>
-<p><code>android-package-name=diam</code></p>
+<p><code>android-package-name=ipsum</code></p>
 <ul>
 <li>Android package name of the app.</li>
 </ul>
 </li>
 <li>
-<p><code>..    dynamic-link-domain=ipsum</code></p>
+<p><code>..desktop-info    desktop-fallback-link=lorem</code></p>
+<ul>
+<li>Link to open on desktop.</li>
+</ul>
+</li>
+<li>
+<p><code>..    dynamic-link-domain=et</code></p>
 <ul>
 <li>
 <p>Dynamic Links domain that the project owns, e.g. abcd.app.goo.gl
     <a href="https://firebase.google.com/docs/dynamic-links/android/receive">Learn more</a>
     on how to set up Dynamic Link domain associated with your Firebase project.</p>
 <p>Required.
-<em> <code>ios-info    ios-app-store-id=lorem</code>
+<em> <code>ios-info    ios-app-store-id=duo</code>
     - iOS App Store ID.
-</em> <code>ios-bundle-id=et</code>
+</em> <code>ios-bundle-id=aliquyam</code>
     - iOS bundle ID of the app.
-<em> <code>ios-custom-scheme=duo</code>
+<em> <code>ios-custom-scheme=sea</code>
     - Custom (destination) scheme to use for iOS. By default, we’ll use the
 bundle ID as the custom scheme. Developer can override this behavior using
 this param.
-</em> <code>ios-fallback-link=aliquyam</code>
+</em> <code>ios-fallback-link=lorem</code>
     - Link to open on iOS if the app is not installed.
-<em> <code>ios-ipad-bundle-id=sea</code>
+<em> <code>ios-ipad-bundle-id=eos</code>
     - iPad bundle ID of the app.
-</em> <code>ios-ipad-fallback-link=lorem</code>
+</em> <code>ios-ipad-fallback-link=erat</code>
     - If specified, this overrides the ios_fallback_link value on iPads.</p>
 </li>
 </ul>
 </li>
 <li>
-<p><code>..    link=eos</code></p>
+<p><code>..    link=sadipscing</code></p>
 <ul>
 <li>
 <p>The link your app will open, You can specify any URL your app can handle.
@@ -304,30 +312,30 @@ this param.
     the HTTP or HTTPS scheme. See &#39;link&#39; parameters in the
     <a href="https://firebase.google.com/docs/dynamic-links/create-manually">documentation</a>.</p>
 <p>Required.
-* <code>navigation-info    enable-forced-redirect=false</code>
+* <code>navigation-info    enable-forced-redirect=true</code>
     - If this option is on, FDL click will be forced to redirect rather than
 show an interstitial page.</p>
 </li>
 </ul>
 </li>
 <li>
-<p><code>..social-meta-tag-info    social-description=sadipscing</code></p>
+<p><code>..social-meta-tag-info    social-description=eirmod</code></p>
 <ul>
 <li>A short description of the link. Optional.</li>
 </ul>
 </li>
-<li><code>social-image-link=dolor</code><ul>
+<li><code>social-image-link=elitr</code><ul>
 <li>An image url string. Optional.</li>
 </ul>
 </li>
 <li>
-<p><code>social-title=eirmod</code></p>
+<p><code>social-title=amet</code></p>
 <ul>
 <li>Title to be displayed. Optional.</li>
 </ul>
 </li>
 <li>
-<p><code>...    long-dynamic-link=elitr</code></p>
+<p><code>...    long-dynamic-link=no</code></p>
 <ul>
 <li>Full long Dynamic Link URL with desired query parameters specified.
     For example,
@@ -335,7 +343,7 @@ show an interstitial page.</p>
     <a href="https://firebase.google.com/docs/dynamic-links/android#create-a-dynamic-link-programmatically">Learn more</a>.</li>
 </ul>
 </li>
-<li><code>suffix    option=amet</code><ul>
+<li><code>suffix    option=labore</code><ul>
 <li>Suffix option.</li>
 </ul>
 </li>

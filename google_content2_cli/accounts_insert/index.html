@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Insert - Shopping Content v1.0.6+20170926</title>
+  <title>Insert - Shopping Content v1.0.7+20171207</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Shopping Content v1.0.6+20170926</a>
+        <a href=".." class="icon icon-home"> Shopping Content v1.0.7+20171207</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -291,7 +291,15 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="../orders_setlineitemmetadata/">Setlineitemmetadata</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../orders_shiplineitems/">Shiplineitems</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../orders_updatelineitemshippingdetails/">Updatelineitemshippingdetails</a>
                 </li>
                 <li class="">
                     
@@ -391,7 +399,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Shopping Content v1.0.6+20170926</a>
+        <a href="..">Shopping Content v1.0.7+20171207</a>
       </nav>
 
       
@@ -420,7 +428,7 @@
           <div role="main">
             <div class="section">
               
-                <p>Creates a Merchant Center sub-account. This method can only be called for multi-client accounts.</p>
+                <p>Creates a Merchant Center sub-account.</p>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for the <em>https://www.googleapis.com/auth/content</em> scope to make a valid call.</p>
 <p>If unset, the scope for this method defaults to <em>https://www.googleapis.com/auth/content</em>.
@@ -428,7 +436,7 @@ You can set the scope for this method like this: <code>content2 --scope &lt;scop
 <h1 id="required-scalar-argument">Required Scalar Argument</h1>
 <ul>
 <li><strong>&lt;merchant-id&gt;</strong> <em>(string)</em><ul>
-<li>The ID of the managing account.</li>
+<li>The ID of the managing account. This must be a multi-client account.</li>
 </ul>
 </li>
 </ul>
@@ -438,6 +446,9 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <p>For example, a structure like this:</p>
 <pre><code>Account:
   adult-content: boolean
+  google-my-business-link:
+    gmb-email: string
+    status: string
   id: string
   kind: string
   name: string
@@ -453,27 +464,39 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>Indicates whether the merchant sells adult content.</li>
 </ul>
 </li>
-<li><code>id=sit</code><ul>
+<li><code>google-my-business-link    gmb-email=sit</code><ul>
+<li>The GMB email address.</li>
+</ul>
+</li>
+<li>
+<p><code>status=stet</code></p>
+<ul>
+<li>Status of the link between this Merchant Center account and the GMB account.</li>
+</ul>
+</li>
+<li>
+<p><code>..    id=sed</code></p>
+<ul>
 <li>Merchant Center account ID.</li>
 </ul>
 </li>
-<li><code>kind=stet</code><ul>
+<li><code>kind=et</code><ul>
 <li>Identifies what kind of resource this is. Value: the fixed string &#34;content#account&#34;.</li>
 </ul>
 </li>
-<li><code>name=sed</code><ul>
+<li><code>name=dolores</code><ul>
 <li>Display name for the account.</li>
 </ul>
 </li>
-<li><code>reviews-url=et</code><ul>
+<li><code>reviews-url=kasd</code><ul>
 <li>URL for individual seller reviews, i.e., reviews for each child account.</li>
 </ul>
 </li>
-<li><code>seller-id=dolores</code><ul>
+<li><code>seller-id=accusam</code><ul>
 <li>Client-specific, locally-unique, internal ID for the child account.</li>
 </ul>
 </li>
-<li><code>website-url=kasd</code><ul>
+<li><code>website-url=takimata</code><ul>
 <li>The merchant&#39;s website.</li>
 </ul>
 </li>
