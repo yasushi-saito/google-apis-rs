@@ -213,21 +213,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p include-historical-channel-data=boolean</strong></p>
+<p><strong>-p filters=string</strong></p>
 <ul>
-<li>If set to true historical data (i.e. channel data from before the linking of the channel to the content owner) will be retrieved.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p max-results=integer</strong></p>
-<ul>
-<li>The maximum number of rows to include in the response.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p start-index=integer</strong></p>
-<ul>
-<li>An index of the first entity to retrieve. Use this parameter as a pagination mechanism along with the max-results parameter (one-based, inclusive).</li>
+<li>A list of filters that should be applied when retrieving YouTube Analytics data. The Available Reports document identifies the dimensions that can be used to filter each report, and the Dimensions document defines those dimensions. If a request uses multiple filters, join them together with a semicolon (;), and the returned result table will satisfy both filters. For example, a filters parameter value of video==dMH0bHeiRNg;country==IT restricts the result set to include data for the given video in Italy.</li>
 </ul>
 </li>
 <li>
@@ -237,21 +225,33 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p sort=string</strong></p>
-<ul>
-<li>A comma-separated list of dimensions or metrics that determine the sort order for YouTube Analytics data. By default the sort order is ascending. The &#39;-&#39; prefix causes descending sort order.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p currency=string</strong></p>
 <ul>
 <li>The currency to which financial metrics should be converted. The default is US Dollar (USD). If the result contains no financial metrics, this flag will be ignored. Responds with an error if the specified currency is not recognized.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p filters=string</strong></p>
+<p><strong>-p sort=string</strong></p>
 <ul>
-<li>A list of filters that should be applied when retrieving YouTube Analytics data. The Available Reports document identifies the dimensions that can be used to filter each report, and the Dimensions document defines those dimensions. If a request uses multiple filters, join them together with a semicolon (;), and the returned result table will satisfy both filters. For example, a filters parameter value of video==dMH0bHeiRNg;country==IT restricts the result set to include data for the given video in Italy.</li>
+<li>A comma-separated list of dimensions or metrics that determine the sort order for YouTube Analytics data. By default the sort order is ascending. The &#39;-&#39; prefix causes descending sort order.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p include-historical-channel-data=boolean</strong></p>
+<ul>
+<li>If set to true historical data (i.e. channel data from before the linking of the channel to the content owner) will be retrieved.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p start-index=integer</strong></p>
+<ul>
+<li>An index of the first entity to retrieve. Use this parameter as a pagination mechanism along with the max-results parameter (one-based, inclusive).</li>
+</ul>
+</li>
+<li>
+<p><strong>-p max-results=integer</strong></p>
+<ul>
+<li>The maximum number of rows to include in the response.</li>
 </ul>
 </li>
 </ul>

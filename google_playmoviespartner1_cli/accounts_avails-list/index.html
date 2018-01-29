@@ -171,9 +171,35 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
+<p><strong>-p pph-names=string</strong></p>
+<ul>
+<li>See <em>List methods rules</em> for info about this field.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p page-size=integer</strong></p>
+<ul>
+<li>See <em>List methods rules</em> for info about this field.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p page-token=string</strong></p>
+<ul>
+<li>See <em>List methods rules</em> for info about this field.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p studio-names=string</strong></p>
 <ul>
 <li>See <em>List methods rules</em> for info about this field.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p alt-id=string</strong></p>
+<ul>
+<li>Filter Avails that match a case-insensitive, partner-specific custom id.
+    NOTE: this field is deprecated and will be removed on V2; <code>alt_ids</code>
+    should be used instead.</li>
 </ul>
 </li>
 <li>
@@ -192,32 +218,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p page-token=string</strong></p>
-<ul>
-<li>See <em>List methods rules</em> for info about this field.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p video-ids=string</strong></p>
-<ul>
-<li>Filter Avails that match any of the given <code>video_id</code>s.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p page-size=integer</strong></p>
-<ul>
-<li>See <em>List methods rules</em> for info about this field.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p alt-id=string</strong></p>
-<ul>
-<li>Filter Avails that match a case-insensitive, partner-specific custom id.
-    NOTE: this field is deprecated and will be removed on V2; <code>alt_ids</code>
-    should be used instead.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p territories=string</strong></p>
 <ul>
 <li>Filter Avails that match (case-insensitive) any of the given country codes,
@@ -225,9 +225,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p pph-names=string</strong></p>
+<p><strong>-p video-ids=string</strong></p>
 <ul>
-<li>See <em>List methods rules</em> for info about this field.</li>
+<li>Filter Avails that match any of the given <code>video_id</code>s.</li>
 </ul>
 </li>
 </ul>

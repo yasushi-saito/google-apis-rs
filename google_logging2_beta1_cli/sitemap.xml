@@ -4,7 +4,7 @@
     
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2_beta1-cli/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -13,13 +13,13 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2_beta1-cli/billing-accounts_logs-delete/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2_beta1-cli/billing-accounts_logs-list/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -29,13 +29,13 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2_beta1-cli/entries_list/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2_beta1-cli/entries_write/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -45,7 +45,7 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2_beta1-cli/monitored-resource-descriptors_list/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -55,13 +55,13 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2_beta1-cli/organizations_logs-delete/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2_beta1-cli/organizations_logs-list/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -71,73 +71,73 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2_beta1-cli/projects_logs-delete/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2_beta1-cli/projects_logs-list/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2_beta1-cli/projects_metrics-create/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2_beta1-cli/projects_metrics-delete/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2_beta1-cli/projects_metrics-get/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2_beta1-cli/projects_metrics-list/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2_beta1-cli/projects_metrics-update/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2_beta1-cli/projects_sinks-create/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2_beta1-cli/projects_sinks-delete/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2_beta1-cli/projects_sinks-get/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2_beta1-cli/projects_sinks-list/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2_beta1-cli/projects_sinks-update/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         

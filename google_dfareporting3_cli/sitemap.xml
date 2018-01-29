@@ -4,7 +4,7 @@
     
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -13,7 +13,7 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/account-active-ad-summaries_get/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -23,13 +23,13 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/account-permission-groups_get/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/account-permission-groups_list/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -39,13 +39,13 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/account-permissions_get/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/account-permissions_list/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -55,31 +55,31 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/account-user-profiles_get/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/account-user-profiles_insert/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/account-user-profiles_list/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/account-user-profiles_patch/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/account-user-profiles_update/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -89,25 +89,25 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/accounts_get/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/accounts_list/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/accounts_patch/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/accounts_update/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -117,31 +117,31 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/ads_get/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/ads_insert/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/ads_list/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/ads_patch/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/ads_update/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -151,37 +151,37 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/advertiser-groups_delete/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/advertiser-groups_get/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/advertiser-groups_insert/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/advertiser-groups_list/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/advertiser-groups_patch/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/advertiser-groups_update/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -191,31 +191,31 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/advertiser-landing-pages_get/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/advertiser-landing-pages_insert/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/advertiser-landing-pages_list/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/advertiser-landing-pages_patch/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/advertiser-landing-pages_update/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -225,31 +225,31 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/advertisers_get/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/advertisers_insert/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/advertisers_list/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/advertisers_patch/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/advertisers_update/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -259,7 +259,7 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/browsers_list/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -269,13 +269,13 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/campaign-creative-associations_insert/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/campaign-creative-associations_list/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -285,31 +285,31 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/campaigns_get/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/campaigns_insert/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/campaigns_list/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/campaigns_patch/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/campaigns_update/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -319,13 +319,13 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/change-logs_get/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/change-logs_list/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -335,7 +335,7 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/cities_list/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -345,13 +345,13 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/connection-types_get/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/connection-types_list/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -361,37 +361,37 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/content-categories_delete/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/content-categories_get/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/content-categories_insert/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/content-categories_list/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/content-categories_patch/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/content-categories_update/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -401,13 +401,13 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/conversions_batchinsert/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/conversions_batchupdate/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -417,13 +417,13 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/countries_get/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/countries_list/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -433,7 +433,7 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/creative-assets_insert/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -443,37 +443,37 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/creative-field-values_delete/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/creative-field-values_get/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/creative-field-values_insert/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/creative-field-values_list/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/creative-field-values_patch/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/creative-field-values_update/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -483,37 +483,37 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/creative-fields_delete/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/creative-fields_get/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/creative-fields_insert/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/creative-fields_list/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/creative-fields_patch/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/creative-fields_update/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -523,31 +523,31 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/creative-groups_get/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/creative-groups_insert/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/creative-groups_list/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/creative-groups_patch/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/creative-groups_update/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -557,31 +557,31 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/creatives_get/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/creatives_insert/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/creatives_list/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/creatives_patch/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/creatives_update/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -591,7 +591,7 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/dimension-values_query/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -601,13 +601,13 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/directory-site-contacts_get/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/directory-site-contacts_list/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -617,19 +617,19 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/directory-sites_get/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/directory-sites_insert/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/directory-sites_list/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -639,19 +639,19 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/dynamic-targeting-keys_delete/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/dynamic-targeting-keys_insert/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/dynamic-targeting-keys_list/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -661,37 +661,37 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/event-tags_delete/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/event-tags_get/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/event-tags_insert/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/event-tags_list/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/event-tags_patch/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/event-tags_update/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -701,13 +701,13 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/files_get/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/files_list/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -717,43 +717,43 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/floodlight-activities_delete/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/floodlight-activities_generatetag/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/floodlight-activities_get/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/floodlight-activities_insert/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/floodlight-activities_list/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/floodlight-activities_patch/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/floodlight-activities_update/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -763,31 +763,31 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/floodlight-activity-groups_get/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/floodlight-activity-groups_insert/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/floodlight-activity-groups_list/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/floodlight-activity-groups_patch/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/floodlight-activity-groups_update/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -797,25 +797,25 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/floodlight-configurations_get/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/floodlight-configurations_list/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/floodlight-configurations_patch/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/floodlight-configurations_update/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -825,13 +825,13 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/inventory-items_get/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/inventory-items_list/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -841,7 +841,7 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/languages_list/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -851,7 +851,7 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/metros_list/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -861,13 +861,13 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/mobile-carriers_get/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/mobile-carriers_list/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -877,13 +877,13 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/operating-system-versions_get/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/operating-system-versions_list/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -893,13 +893,13 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/operating-systems_get/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/operating-systems_list/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -909,13 +909,13 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/order-documents_get/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/order-documents_list/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -925,13 +925,13 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/orders_get/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/orders_list/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -941,31 +941,31 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/placement-groups_get/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/placement-groups_insert/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/placement-groups_list/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/placement-groups_patch/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/placement-groups_update/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -975,37 +975,37 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/placement-strategies_delete/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/placement-strategies_get/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/placement-strategies_insert/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/placement-strategies_list/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/placement-strategies_patch/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/placement-strategies_update/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -1015,37 +1015,37 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/placements_generatetags/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/placements_get/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/placements_insert/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/placements_list/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/placements_patch/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/placements_update/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -1055,13 +1055,13 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/platform-types_get/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/platform-types_list/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -1071,13 +1071,13 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/postal-codes_get/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/postal-codes_list/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -1087,13 +1087,13 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/projects_get/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/projects_list/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -1103,7 +1103,7 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/regions_list/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -1113,19 +1113,19 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/remarketing-list-shares_get/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/remarketing-list-shares_patch/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/remarketing-list-shares_update/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -1135,31 +1135,31 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/remarketing-lists_get/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/remarketing-lists_insert/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/remarketing-lists_list/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/remarketing-lists_patch/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/remarketing-lists_update/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -1169,61 +1169,61 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/reports_compatible-fields-query/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/reports_delete/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/reports_files-get/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/reports_files-list/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/reports_get/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/reports_insert/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/reports_list/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/reports_patch/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/reports_run/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/reports_update/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -1233,31 +1233,31 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/sites_get/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/sites_insert/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/sites_list/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/sites_patch/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/sites_update/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -1267,19 +1267,19 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/sizes_get/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/sizes_insert/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/sizes_list/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -1289,31 +1289,31 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/subaccounts_get/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/subaccounts_insert/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/subaccounts_list/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/subaccounts_patch/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/subaccounts_update/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -1323,13 +1323,13 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/targetable-remarketing-lists_get/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/targetable-remarketing-lists_list/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -1339,31 +1339,31 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/targeting-templates_get/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/targeting-templates_insert/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/targeting-templates_list/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/targeting-templates_patch/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/targeting-templates_update/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -1373,13 +1373,13 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/user-profiles_get/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/user-profiles_list/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -1389,13 +1389,13 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/user-role-permission-groups_get/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/user-role-permission-groups_list/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -1405,13 +1405,13 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/user-role-permissions_get/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/user-role-permissions_list/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -1421,37 +1421,37 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/user-roles_delete/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/user-roles_get/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/user-roles_insert/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/user-roles_list/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/user-roles_patch/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/user-roles_update/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -1461,13 +1461,13 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/video-formats_get/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dfareporting3-cli/video-formats_list/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         

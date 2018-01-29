@@ -171,9 +171,41 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
+<p><strong>-p video-id=string</strong></p>
+<ul>
+<li>Filter StoreInfos that match a given <code>video_id</code>.
+    NOTE: this field is deprecated and will be removed on V2; <code>video_ids</code>
+    should be used instead.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p page-token=string</strong></p>
+<ul>
+<li>See <em>List methods rules</em> for info about this field.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p pph-names=string</strong></p>
+<ul>
+<li>See <em>List methods rules</em> for info about this field.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p page-size=integer</strong></p>
+<ul>
+<li>See <em>List methods rules</em> for info about this field.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p mids=string</strong></p>
 <ul>
 <li>Filter StoreInfos that match any of the given <code>mid</code>s.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p studio-names=string</strong></p>
+<ul>
+<li>See <em>List methods rules</em> for info about this field.</li>
 </ul>
 </li>
 <li>
@@ -184,42 +216,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p page-token=string</strong></p>
-<ul>
-<li>See <em>List methods rules</em> for info about this field.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p season-ids=string</strong></p>
 <ul>
 <li>Filter StoreInfos that match any of the given <code>season_id</code>s.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p page-size=integer</strong></p>
-<ul>
-<li>See <em>List methods rules</em> for info about this field.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p video-id=string</strong></p>
-<ul>
-<li>Filter StoreInfos that match a given <code>video_id</code>.
-    NOTE: this field is deprecated and will be removed on V2; <code>video_ids</code>
-    should be used instead.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p name=string</strong></p>
-<ul>
-<li>Filter that matches StoreInfos with a <code>name</code> or <code>show_name</code>
-    that contains the given case-insensitive name.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p studio-names=string</strong></p>
-<ul>
-<li>See <em>List methods rules</em> for info about this field.</li>
 </ul>
 </li>
 <li>
@@ -229,9 +228,10 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p pph-names=string</strong></p>
+<p><strong>-p name=string</strong></p>
 <ul>
-<li>See <em>List methods rules</em> for info about this field.</li>
+<li>Filter that matches StoreInfos with a <code>name</code> or <code>show_name</code>
+    that contains the given case-insensitive name.</li>
 </ul>
 </li>
 </ul>

@@ -4,7 +4,7 @@
     
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2-cli/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -13,79 +13,79 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2-cli/billing-accounts_exclusions-create/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2-cli/billing-accounts_exclusions-delete/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2-cli/billing-accounts_exclusions-get/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2-cli/billing-accounts_exclusions-list/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2-cli/billing-accounts_exclusions-patch/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2-cli/billing-accounts_logs-delete/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2-cli/billing-accounts_logs-list/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2-cli/billing-accounts_sinks-create/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2-cli/billing-accounts_sinks-delete/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2-cli/billing-accounts_sinks-get/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2-cli/billing-accounts_sinks-list/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2-cli/billing-accounts_sinks-patch/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2-cli/billing-accounts_sinks-update/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -95,13 +95,13 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2-cli/entries_list/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2-cli/entries_write/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -111,31 +111,31 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2-cli/exclusions_create/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2-cli/exclusions_delete/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2-cli/exclusions_get/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2-cli/exclusions_list/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2-cli/exclusions_patch/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -145,79 +145,79 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2-cli/folders_exclusions-create/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2-cli/folders_exclusions-delete/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2-cli/folders_exclusions-get/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2-cli/folders_exclusions-list/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2-cli/folders_exclusions-patch/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2-cli/folders_logs-delete/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2-cli/folders_logs-list/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2-cli/folders_sinks-create/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2-cli/folders_sinks-delete/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2-cli/folders_sinks-get/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2-cli/folders_sinks-list/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2-cli/folders_sinks-patch/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2-cli/folders_sinks-update/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -227,13 +227,13 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2-cli/logs_delete/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2-cli/logs_list/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -243,7 +243,7 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2-cli/monitored-resource-descriptors_list/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -253,79 +253,79 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2-cli/organizations_exclusions-create/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2-cli/organizations_exclusions-delete/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2-cli/organizations_exclusions-get/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2-cli/organizations_exclusions-list/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2-cli/organizations_exclusions-patch/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2-cli/organizations_logs-delete/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2-cli/organizations_logs-list/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2-cli/organizations_sinks-create/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2-cli/organizations_sinks-delete/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2-cli/organizations_sinks-get/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2-cli/organizations_sinks-list/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2-cli/organizations_sinks-patch/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2-cli/organizations_sinks-update/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -335,109 +335,109 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2-cli/projects_exclusions-create/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2-cli/projects_exclusions-delete/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2-cli/projects_exclusions-get/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2-cli/projects_exclusions-list/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2-cli/projects_exclusions-patch/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2-cli/projects_logs-delete/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2-cli/projects_logs-list/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2-cli/projects_metrics-create/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2-cli/projects_metrics-delete/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2-cli/projects_metrics-get/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2-cli/projects_metrics-list/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2-cli/projects_metrics-update/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2-cli/projects_sinks-create/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2-cli/projects_sinks-delete/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2-cli/projects_sinks-get/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2-cli/projects_sinks-list/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2-cli/projects_sinks-patch/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2-cli/projects_sinks-update/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -447,31 +447,31 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2-cli/sinks_create/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2-cli/sinks_delete/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2-cli/sinks_get/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2-cli/sinks_list/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-logging2-cli/sinks_update/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         

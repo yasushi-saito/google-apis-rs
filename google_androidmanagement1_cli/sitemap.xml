@@ -4,7 +4,7 @@
     
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-androidmanagement1-cli/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -13,121 +13,121 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-androidmanagement1-cli/enterprises_applications-get/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-androidmanagement1-cli/enterprises_create/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-androidmanagement1-cli/enterprises_devices-delete/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-androidmanagement1-cli/enterprises_devices-get/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-androidmanagement1-cli/enterprises_devices-issue-command/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-androidmanagement1-cli/enterprises_devices-list/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-androidmanagement1-cli/enterprises_devices-operations-cancel/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-androidmanagement1-cli/enterprises_devices-operations-delete/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-androidmanagement1-cli/enterprises_devices-operations-get/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-androidmanagement1-cli/enterprises_devices-operations-list/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-androidmanagement1-cli/enterprises_devices-patch/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-androidmanagement1-cli/enterprises_enrollment-tokens-create/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-androidmanagement1-cli/enterprises_enrollment-tokens-delete/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-androidmanagement1-cli/enterprises_get/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-androidmanagement1-cli/enterprises_patch/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-androidmanagement1-cli/enterprises_policies-delete/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-androidmanagement1-cli/enterprises_policies-get/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-androidmanagement1-cli/enterprises_policies-list/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-androidmanagement1-cli/enterprises_policies-patch/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-androidmanagement1-cli/enterprises_web-tokens-create/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -137,7 +137,7 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-androidmanagement1-cli/signup-urls_create/</loc>
-     <lastmod>2017-12-12</lastmod>
+     <lastmod>2018-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
