@@ -334,15 +334,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p page-token=string</strong></p>
+<p><strong>-p start-date=string</strong></p>
 <ul>
-<li>Continuation token if request is paged.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p status=string</strong></p>
-<ul>
-<li>No description provided.</li>
+<li>Earliest date of comment to fetch, a date-time with RFC 3339 formatting.</li>
 </ul>
 </li>
 <li>
@@ -352,9 +346,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p start-date=string</strong></p>
+<p><strong>-p status=string</strong></p>
 <ul>
-<li>Earliest date of comment to fetch, a date-time with RFC 3339 formatting.</li>
+<li>No description provided.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p page-token=string</strong></p>
+<ul>
+<li>Continuation token if request is paged.</li>
 </ul>
 </li>
 <li>

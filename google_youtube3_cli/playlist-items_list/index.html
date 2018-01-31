@@ -624,18 +624,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p max-results=integer</strong></p>
+<p><strong>-p page-token=string</strong></p>
 <ul>
-<li>The maxResults parameter specifies the maximum number of items that should be returned in the result set.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p on-behalf-of-content-owner=string</strong></p>
-<ul>
-<li>
-<p>Note: This parameter is intended exclusively for YouTube content partners.</p>
-<p>The onBehalfOfContentOwner parameter indicates that the request&#39;s authorization credentials identify a YouTube CMS user who is acting on behalf of the content owner specified in the parameter value. This parameter is intended for YouTube content partners that own and manage many different YouTube channels. It allows content owners to authenticate once and get access to all their video and channel data, without having to provide authentication credentials for each individual channel. The CMS account that the user authenticates with must be linked to the specified YouTube content owner.</p>
-</li>
+<li>The pageToken parameter identifies a specific page in the result set that should be returned. In an API response, the nextPageToken and prevPageToken properties identify other pages that could be retrieved.</li>
 </ul>
 </li>
 <li>
@@ -651,15 +642,24 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p playlist-id=string</strong></p>
+<p><strong>-p on-behalf-of-content-owner=string</strong></p>
 <ul>
-<li>The playlistId parameter specifies the unique ID of the playlist for which you want to retrieve playlist items. Note that even though this is an optional parameter, every request to retrieve playlist items must specify a value for either the id parameter or the playlistId parameter.</li>
+<li>
+<p>Note: This parameter is intended exclusively for YouTube content partners.</p>
+<p>The onBehalfOfContentOwner parameter indicates that the request&#39;s authorization credentials identify a YouTube CMS user who is acting on behalf of the content owner specified in the parameter value. This parameter is intended for YouTube content partners that own and manage many different YouTube channels. It allows content owners to authenticate once and get access to all their video and channel data, without having to provide authentication credentials for each individual channel. The CMS account that the user authenticates with must be linked to the specified YouTube content owner.</p>
+</li>
 </ul>
 </li>
 <li>
-<p><strong>-p page-token=string</strong></p>
+<p><strong>-p max-results=integer</strong></p>
 <ul>
-<li>The pageToken parameter identifies a specific page in the result set that should be returned. In an API response, the nextPageToken and prevPageToken properties identify other pages that could be retrieved.</li>
+<li>The maxResults parameter specifies the maximum number of items that should be returned in the result set.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p playlist-id=string</strong></p>
+<ul>
+<li>The playlistId parameter specifies the unique ID of the playlist for which you want to retrieve playlist items. Note that even though this is an optional parameter, every request to retrieve playlist items must specify a value for either the id parameter or the playlistId parameter.</li>
 </ul>
 </li>
 </ul>

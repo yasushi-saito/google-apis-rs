@@ -231,10 +231,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p max-results=integer</strong></p>
+<p><strong>-p placed-date-end=string</strong></p>
 <ul>
-<li>The maximum number of orders to return in the response, used for paging. The default value is 25 orders per page, and the maximum allowed value is 250 orders per page.
-    Known issue: All List calls will return all Orders without limit regardless of the value of this field.</li>
+<li>Obtains orders placed before this date (exclusively), in ISO 8601 format.</li>
 </ul>
 </li>
 <li>
@@ -244,16 +243,17 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
+<p><strong>-p max-results=integer</strong></p>
+<ul>
+<li>The maximum number of orders to return in the response, used for paging. The default value is 25 orders per page, and the maximum allowed value is 250 orders per page.
+    Known issue: All List calls will return all Orders without limit regardless of the value of this field.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p acknowledged=boolean</strong></p>
 <ul>
 <li>Obtains orders that match the acknowledgement status. When set to true, obtains orders that have been acknowledged. When false, obtains orders that have not been acknowledged.
     We recommend using this filter set to false, in conjunction with the acknowledge call, such that only un-acknowledged orders are returned.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p placed-date-end=string</strong></p>
-<ul>
-<li>Obtains orders placed before this date (exclusively), in ISO 8601 format.</li>
 </ul>
 </li>
 </ul>

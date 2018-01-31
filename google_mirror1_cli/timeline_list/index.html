@@ -270,21 +270,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p bundle-id=string</strong></p>
+<p><strong>-p max-results=integer</strong></p>
 <ul>
-<li>If provided, only items with the given bundleId will be returned.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p include-deleted=boolean</strong></p>
-<ul>
-<li>If true, tombstone records for deleted items will be returned.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p pinned-only=boolean</strong></p>
-<ul>
-<li>If true, only pinned items will be returned.</li>
+<li>The maximum number of items to include in the response, used for paging.</li>
 </ul>
 </li>
 <li>
@@ -300,15 +288,27 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p max-results=integer</strong></p>
+<p><strong>-p bundle-id=string</strong></p>
 <ul>
-<li>The maximum number of items to include in the response, used for paging.</li>
+<li>If provided, only items with the given bundleId will be returned.</li>
 </ul>
 </li>
 <li>
 <p><strong>-p source-item-id=string</strong></p>
 <ul>
 <li>If provided, only items with the given sourceItemId will be returned.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p include-deleted=boolean</strong></p>
+<ul>
+<li>If true, tombstone records for deleted items will be returned.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p pinned-only=boolean</strong></p>
+<ul>
+<li>If true, only pinned items will be returned.</li>
 </ul>
 </li>
 </ul>

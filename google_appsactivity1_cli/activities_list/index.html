@@ -146,27 +146,21 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p page-token=string</strong></p>
+<p><strong>-p drive-ancestor-id=string</strong></p>
 <ul>
-<li>A token to retrieve a specific page of results.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p grouping-strategy=string</strong></p>
-<ul>
-<li>Indicates the strategy to use when grouping singleEvents items in the associated combinedEvent object.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p user-id=string</strong></p>
-<ul>
-<li>Indicates the user to return activity for. Use the special value me to indicate the currently authenticated user.</li>
+<li>Identifies the Drive folder containing the items for which to return activities.</li>
 </ul>
 </li>
 <li>
 <p><strong>-p drive-file-id=string</strong></p>
 <ul>
 <li>Identifies the Drive item to return activities for.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p page-token=string</strong></p>
+<ul>
+<li>A token to retrieve a specific page of results.</li>
 </ul>
 </li>
 <li>
@@ -179,9 +173,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p drive-ancestor-id=string</strong></p>
+<p><strong>-p grouping-strategy=string</strong></p>
 <ul>
-<li>Identifies the Drive folder containing the items for which to return activities.</li>
+<li>Indicates the strategy to use when grouping singleEvents items in the associated combinedEvent object.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p user-id=string</strong></p>
+<ul>
+<li>Indicates the user to return activity for. Use the special value me to indicate the currently authenticated user.</li>
 </ul>
 </li>
 <li>

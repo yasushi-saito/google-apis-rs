@@ -751,6 +751,12 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
+<p><strong>-p customer=string</strong></p>
+<ul>
+<li>Immutable ID of the G Suite account. In case of multi-domain, to fetch all users for a customer, fill this field instead of domain.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p domain=string</strong></p>
 <ul>
 <li>Name of the domain. Fill this field to get users from only this domain. To return all users in a multi-domain fill customer field instead.</li>
@@ -784,12 +790,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <p><strong>-p custom-field-mask=string</strong></p>
 <ul>
 <li>Comma-separated list of schema names. All fields from these schemas are fetched. This should only be set when projection=custom.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p customer=string</strong></p>
-<ul>
-<li>Immutable ID of the G Suite account. In case of multi-domain, to fetch all users for a customer, fill this field instead of domain.</li>
 </ul>
 </li>
 <li>

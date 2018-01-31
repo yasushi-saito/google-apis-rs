@@ -1333,12 +1333,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p new-revision=boolean</strong></p>
-<ul>
-<li>Whether a blob upload should create a new revision. If false, the blob data in the current head revision is replaced. If true or not set, a new blob is created as head revision, and previous unpinned revisions are preserved for a short period of time. Pinned revisions are stored indefinitely, using additional storage quota, up to a maximum of 200 revisions. For details on how revisions are retained, see the Drive Help Center.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p timed-text-language=string</strong></p>
 <ul>
 <li>The language of the timed text.</li>
@@ -1357,18 +1351,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p ocr-language=string</strong></p>
-<ul>
-<li>If ocr is true, hints at the language to use. Valid values are BCP 47 codes.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p supports-team-drives=boolean</strong></p>
-<ul>
-<li>Whether the requesting application supports Team Drives.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p ocr=boolean</strong></p>
 <ul>
 <li>Whether to attempt OCR on .jpg, .png, .gif, or .pdf uploads.</li>
@@ -1384,6 +1366,24 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <p><strong>-p pinned=boolean</strong></p>
 <ul>
 <li>Whether to pin the new revision. A file can have a maximum of 200 pinned revisions.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p supports-team-drives=boolean</strong></p>
+<ul>
+<li>Whether the requesting application supports Team Drives.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p new-revision=boolean</strong></p>
+<ul>
+<li>Whether a blob upload should create a new revision. If false, the blob data in the current head revision is replaced. If true or not set, a new blob is created as head revision, and previous unpinned revisions are preserved for a short period of time. Pinned revisions are stored indefinitely, using additional storage quota, up to a maximum of 200 revisions. For details on how revisions are retained, see the Drive Help Center.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p ocr-language=string</strong></p>
+<ul>
+<li>If ocr is true, hints at the language to use. Valid values are BCP 47 codes.</li>
 </ul>
 </li>
 <li>

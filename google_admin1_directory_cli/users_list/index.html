@@ -678,33 +678,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p domain=string</strong></p>
+<p><strong>-p event=string</strong></p>
 <ul>
-<li>Name of the domain. Fill this field to get users from only this domain. To return all users in a multi-domain fill customer field instead.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p order-by=string</strong></p>
-<ul>
-<li>Column to use for sorting results</li>
-</ul>
-</li>
-<li>
-<p><strong>-p show-deleted=string</strong></p>
-<ul>
-<li>If set to true retrieves the list of deleted users. Default is false</li>
-</ul>
-</li>
-<li>
-<p><strong>-p projection=string</strong></p>
-<ul>
-<li>What subset of fields to fetch for this user.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p max-results=integer</strong></p>
-<ul>
-<li>Maximum number of results to return. Default is 100. Max allowed is 500</li>
+<li>Event on which subscription is intended (if subscribing)</li>
 </ul>
 </li>
 <li>
@@ -714,27 +690,51 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p view-type=string</strong></p>
-<ul>
-<li>Whether to fetch the ADMIN_VIEW or DOMAIN_PUBLIC view of the user.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p event=string</strong></p>
-<ul>
-<li>Event on which subscription is intended (if subscribing)</li>
-</ul>
-</li>
-<li>
 <p><strong>-p page-token=string</strong></p>
 <ul>
 <li>Token to specify next page in the list</li>
 </ul>
 </li>
 <li>
+<p><strong>-p order-by=string</strong></p>
+<ul>
+<li>Column to use for sorting results</li>
+</ul>
+</li>
+<li>
+<p><strong>-p projection=string</strong></p>
+<ul>
+<li>What subset of fields to fetch for this user.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p show-deleted=string</strong></p>
+<ul>
+<li>If set to true retrieves the list of deleted users. Default is false</li>
+</ul>
+</li>
+<li>
 <p><strong>-p query=string</strong></p>
 <ul>
 <li>Query string search. Should be of the form &#34;&#34;. Complete documentation is at https://developers.google.com/admin-sdk/directory/v1/guides/search-users</li>
+</ul>
+</li>
+<li>
+<p><strong>-p domain=string</strong></p>
+<ul>
+<li>Name of the domain. Fill this field to get users from only this domain. To return all users in a multi-domain fill customer field instead.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p view-type=string</strong></p>
+<ul>
+<li>Whether to fetch the ADMIN_VIEW or DOMAIN_PUBLIC view of the user.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p max-results=integer</strong></p>
+<ul>
+<li>Maximum number of results to return. Default is 100. Max allowed is 500</li>
 </ul>
 </li>
 <li>

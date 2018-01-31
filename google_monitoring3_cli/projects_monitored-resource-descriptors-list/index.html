@@ -242,16 +242,16 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p page-size=integer</strong></p>
-<ul>
-<li>A positive number that is the maximum number of results to return.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p filter=string</strong></p>
 <ul>
 <li>An optional filter describing the descriptors to be returned. The filter can reference the descriptor&#39;s type and labels. For example, the following filter returns only Google Compute Engine descriptors that have an id label:
     resource.type = starts_with(&#34;gce_&#34;) AND resource.label:id</li>
+</ul>
+</li>
+<li>
+<p><strong>-p page-size=integer</strong></p>
+<ul>
+<li>A positive number that is the maximum number of results to return.</li>
 </ul>
 </li>
 <li>

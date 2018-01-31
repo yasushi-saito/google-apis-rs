@@ -470,21 +470,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p page-token=string</strong></p>
-<ul>
-<li>A previously-returned page token representing part of the larger set of results to view.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p delimiter=string</strong></p>
-<ul>
-<li>Returns results in a directory-like mode. items will contain only objects whose names, aside from the prefix, do not contain delimiter. Objects whose names, aside from the prefix, contain delimiter will have their name, truncated after the delimiter, returned in prefixes. Duplicate prefixes are omitted.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p versions=boolean</strong></p>
 <ul>
 <li>If true, lists all versions of an object as distinct results. The default is false. For more information, see Object Versioning.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p page-token=string</strong></p>
+<ul>
+<li>A previously-returned page token representing part of the larger set of results to view.</li>
 </ul>
 </li>
 <li>
@@ -497,6 +491,12 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <p><strong>-p user-project=string</strong></p>
 <ul>
 <li>The project to be billed for this request. Required for Requester Pays buckets.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p delimiter=string</strong></p>
+<ul>
+<li>Returns results in a directory-like mode. items will contain only objects whose names, aside from the prefix, do not contain delimiter. Objects whose names, aside from the prefix, contain delimiter will have their name, truncated after the delimiter, returned in prefixes. Duplicate prefixes are omitted.</li>
 </ul>
 </li>
 <li>

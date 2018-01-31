@@ -504,15 +504,33 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p order-by=string</strong></p>
+<p><strong>-p projection=string</strong></p>
 <ul>
-<li>A comma-separated list of sort keys. Valid keys are &#39;createdDate&#39;, &#39;folder&#39;, &#39;lastViewedByMeDate&#39;, &#39;modifiedByMeDate&#39;, &#39;modifiedDate&#39;, &#39;quotaBytesUsed&#39;, &#39;recency&#39;, &#39;sharedWithMeDate&#39;, &#39;starred&#39;, &#39;title&#39;, and &#39;title_natural&#39;. Each key sorts ascending by default, but may be reversed with the &#39;desc&#39; modifier. Example usage: ?orderBy=folder,modifiedDate desc,title. Please note that there is a current limitation for users with approximately one million files in which the requested sort order is ignored.</li>
+<li>This parameter is deprecated and has no function.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p include-team-drive-items=boolean</strong></p>
+<ul>
+<li>Whether Team Drive items should be included in results.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p page-token=string</strong></p>
+<ul>
+<li>Page token for files.</li>
 </ul>
 </li>
 <li>
 <p><strong>-p q=string</strong></p>
 <ul>
 <li>Query string for searching files.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p order-by=string</strong></p>
+<ul>
+<li>A comma-separated list of sort keys. Valid keys are &#39;createdDate&#39;, &#39;folder&#39;, &#39;lastViewedByMeDate&#39;, &#39;modifiedByMeDate&#39;, &#39;modifiedDate&#39;, &#39;quotaBytesUsed&#39;, &#39;recency&#39;, &#39;sharedWithMeDate&#39;, &#39;starred&#39;, &#39;title&#39;, and &#39;title_natural&#39;. Each key sorts ascending by default, but may be reversed with the &#39;desc&#39; modifier. Example usage: ?orderBy=folder,modifiedDate desc,title. Please note that there is a current limitation for users with approximately one million files in which the requested sort order is ignored.</li>
 </ul>
 </li>
 <li>
@@ -528,24 +546,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p include-team-drive-items=boolean</strong></p>
-<ul>
-<li>Whether Team Drive items should be included in results.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p projection=string</strong></p>
-<ul>
-<li>This parameter is deprecated and has no function.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p page-token=string</strong></p>
-<ul>
-<li>Page token for files.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p supports-team-drives=boolean</strong></p>
 <ul>
 <li>Whether the requesting application supports Team Drives.</li>
@@ -558,15 +558,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p corpus=string</strong></p>
-<ul>
-<li>The body of items (files/documents) to which the query applies. Deprecated: use &#39;corpora&#39; instead.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p spaces=string</strong></p>
 <ul>
 <li>A comma-separated list of spaces to query. Supported values are &#39;drive&#39;, &#39;appDataFolder&#39; and &#39;photos&#39;.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p corpus=string</strong></p>
+<ul>
+<li>The body of items (files/documents) to which the query applies. Deprecated: use &#39;corpora&#39; instead.</li>
 </ul>
 </li>
 </ul>

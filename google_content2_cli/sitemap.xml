@@ -4,7 +4,7 @@
     
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-content2-cli/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -13,55 +13,55 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-content2-cli/accounts_authinfo/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-content2-cli/accounts_claimwebsite/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-content2-cli/accounts_custombatch/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-content2-cli/accounts_delete/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-content2-cli/accounts_get/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-content2-cli/accounts_insert/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-content2-cli/accounts_list/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-content2-cli/accounts_patch/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-content2-cli/accounts_update/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -71,19 +71,19 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-content2-cli/accountstatuses_custombatch/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-content2-cli/accountstatuses_get/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-content2-cli/accountstatuses_list/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -93,31 +93,31 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-content2-cli/accounttax_custombatch/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-content2-cli/accounttax_get/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-content2-cli/accounttax_list/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-content2-cli/accounttax_patch/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-content2-cli/accounttax_update/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -127,43 +127,43 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-content2-cli/datafeeds_custombatch/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-content2-cli/datafeeds_delete/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-content2-cli/datafeeds_get/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-content2-cli/datafeeds_insert/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-content2-cli/datafeeds_list/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-content2-cli/datafeeds_patch/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-content2-cli/datafeeds_update/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -173,19 +173,19 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-content2-cli/datafeedstatuses_custombatch/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-content2-cli/datafeedstatuses_get/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-content2-cli/datafeedstatuses_list/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -195,13 +195,13 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-content2-cli/inventory_custombatch/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-content2-cli/inventory_set/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -211,103 +211,103 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-content2-cli/orders_acknowledge/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-content2-cli/orders_advancetestorder/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-content2-cli/orders_cancel/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-content2-cli/orders_cancellineitem/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-content2-cli/orders_createtestorder/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-content2-cli/orders_custombatch/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-content2-cli/orders_get/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-content2-cli/orders_getbymerchantorderid/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-content2-cli/orders_gettestordertemplate/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-content2-cli/orders_list/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-content2-cli/orders_refund/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-content2-cli/orders_returnlineitem/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-content2-cli/orders_setlineitemmetadata/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-content2-cli/orders_shiplineitems/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-content2-cli/orders_updatelineitemshippingdetails/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-content2-cli/orders_updatemerchantorderid/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-content2-cli/orders_updateshipment/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -317,31 +317,31 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-content2-cli/products_custombatch/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-content2-cli/products_delete/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-content2-cli/products_get/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-content2-cli/products_insert/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-content2-cli/products_list/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -351,19 +351,19 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-content2-cli/productstatuses_custombatch/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-content2-cli/productstatuses_get/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-content2-cli/productstatuses_list/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -373,37 +373,37 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-content2-cli/shippingsettings_custombatch/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-content2-cli/shippingsettings_get/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-content2-cli/shippingsettings_getsupportedcarriers/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-content2-cli/shippingsettings_list/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-content2-cli/shippingsettings_patch/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-content2-cli/shippingsettings_update/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         

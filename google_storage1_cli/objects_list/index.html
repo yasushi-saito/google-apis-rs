@@ -385,27 +385,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p versions=boolean</strong></p>
-<ul>
-<li>If true, lists all versions of an object as distinct results. The default is false. For more information, see Object Versioning.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p prefix=string</strong></p>
-<ul>
-<li>Filter results to objects whose names begin with this prefix.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p delimiter=string</strong></p>
 <ul>
 <li>Returns results in a directory-like mode. items will contain only objects whose names, aside from the prefix, do not contain delimiter. Objects whose names, aside from the prefix, contain delimiter will have their name, truncated after the delimiter, returned in prefixes. Duplicate prefixes are omitted.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p max-results=integer</strong></p>
+<p><strong>-p versions=boolean</strong></p>
 <ul>
-<li>Maximum number of items plus prefixes to return in a single page of responses. As duplicate prefixes are omitted, fewer total results may be returned than requested. The service will use this parameter or 1,000 items, whichever is smaller.</li>
+<li>If true, lists all versions of an object as distinct results. The default is false. For more information, see Object Versioning.</li>
 </ul>
 </li>
 <li>
@@ -418,6 +406,18 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <p><strong>-p user-project=string</strong></p>
 <ul>
 <li>The project to be billed for this request. Required for Requester Pays buckets.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p prefix=string</strong></p>
+<ul>
+<li>Filter results to objects whose names begin with this prefix.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p max-results=integer</strong></p>
+<ul>
+<li>Maximum number of items plus prefixes to return in a single page of responses. As duplicate prefixes are omitted, fewer total results may be returned than requested. The service will use this parameter or 1,000 items, whichever is smaller.</li>
 </ul>
 </li>
 <li>

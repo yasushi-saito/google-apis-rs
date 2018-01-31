@@ -185,10 +185,12 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p page-size=integer</strong></p>
+<p><strong>-p page-token=string</strong></p>
 <ul>
-<li>Requested page size. Server may return fewer report types than requested.
-    If unspecified, server will pick an appropriate default.</li>
+<li>A token identifying a page of results the server should return. Typically,
+    this is the value of
+    ListReportTypesResponse.next_page_token
+    returned in response to the previous call to the <code>ListReportTypes</code> method.</li>
 </ul>
 </li>
 <li>
@@ -207,12 +209,10 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p page-token=string</strong></p>
+<p><strong>-p page-size=integer</strong></p>
 <ul>
-<li>A token identifying a page of results the server should return. Typically,
-    this is the value of
-    ListReportTypesResponse.next_page_token
-    returned in response to the previous call to the <code>ListReportTypes</code> method.</li>
+<li>Requested page size. Server may return fewer report types than requested.
+    If unspecified, server will pick an appropriate default.</li>
 </ul>
 </li>
 </ul>

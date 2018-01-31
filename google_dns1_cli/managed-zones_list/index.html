@@ -208,12 +208,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p dns-name=string</strong></p>
-<ul>
-<li>Restricts the list to return only zones with this domain name.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p max-results=integer</strong></p>
 <ul>
 <li>Optional. Maximum number of results to be returned. If unspecified, the server will decide how many results to return.</li>
@@ -223,6 +217,12 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <p><strong>-p page-token=string</strong></p>
 <ul>
 <li>Optional. A tag returned by a previous list request that was truncated. Use this parameter to continue a previous list request.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p dns-name=string</strong></p>
+<ul>
+<li>Restricts the list to return only zones with this domain name.</li>
 </ul>
 </li>
 </ul>

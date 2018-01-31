@@ -4,7 +4,7 @@
     
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-proximitybeacon1_beta1-cli/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -13,7 +13,7 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-proximitybeacon1_beta1-cli/beaconinfo_getforobserved/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -23,79 +23,79 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-proximitybeacon1_beta1-cli/beacons_activate/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-proximitybeacon1_beta1-cli/beacons_attachments-batch-delete/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-proximitybeacon1_beta1-cli/beacons_attachments-create/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-proximitybeacon1_beta1-cli/beacons_attachments-delete/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-proximitybeacon1_beta1-cli/beacons_attachments-list/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-proximitybeacon1_beta1-cli/beacons_deactivate/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-proximitybeacon1_beta1-cli/beacons_decommission/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-proximitybeacon1_beta1-cli/beacons_delete/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-proximitybeacon1_beta1-cli/beacons_diagnostics-list/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-proximitybeacon1_beta1-cli/beacons_get/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-proximitybeacon1_beta1-cli/beacons_list/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-proximitybeacon1_beta1-cli/beacons_register/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-proximitybeacon1_beta1-cli/beacons_update/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -105,7 +105,7 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-proximitybeacon1_beta1-cli/methods_get-eidparams/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -115,13 +115,13 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-proximitybeacon1_beta1-cli/namespaces_list/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-proximitybeacon1_beta1-cli/namespaces_update/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         

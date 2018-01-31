@@ -1384,18 +1384,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p page-token=string</strong></p>
-<ul>
-<li>Value of the nextPageToken from the previous result page.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p ids=string</strong></p>
-<ul>
-<li>Select only advertisers with these IDs.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p subaccount-id=string</strong></p>
 <ul>
 <li>Select only advertisers with these subaccount IDs.</li>
@@ -1414,15 +1402,27 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p sort-field=string</strong></p>
+<p><strong>-p ids=string</strong></p>
 <ul>
-<li>Field by which to sort the list.</li>
+<li>Select only advertisers with these IDs.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p page-token=string</strong></p>
+<ul>
+<li>Value of the nextPageToken from the previous result page.</li>
 </ul>
 </li>
 <li>
 <p><strong>-p search-string=string</strong></p>
 <ul>
 <li>Allows searching for objects by name or ID. Wildcards (<em>) are allowed. For example, &#34;advertiser</em>2015&#34; will return objects with names like &#34;advertiser June 2015&#34;, &#34;advertiser April 2015&#34;, or simply &#34;advertiser 2015&#34;. Most of the searches also add wildcards implicitly at the start and the end of the search string. For example, a search string of &#34;advertiser&#34; will match objects with name &#34;my advertiser&#34;, &#34;advertiser 2015&#34;, or simply &#34;advertiser&#34;.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p sort-field=string</strong></p>
+<ul>
+<li>Field by which to sort the list.</li>
 </ul>
 </li>
 <li>

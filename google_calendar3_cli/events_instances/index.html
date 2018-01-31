@@ -350,15 +350,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p max-attendees=integer</strong></p>
-<ul>
-<li>The maximum number of attendees to include in the response. If there are more than the specified number of attendees, only the participant is returned. Optional.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p time-zone=string</strong></p>
 <ul>
 <li>Time zone used in the response. Optional. The default is the time zone of the calendar.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p max-attendees=integer</strong></p>
+<ul>
+<li>The maximum number of attendees to include in the response. If there are more than the specified number of attendees, only the participant is returned. Optional.</li>
 </ul>
 </li>
 <li>
@@ -380,9 +380,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p page-token=string</strong></p>
+<p><strong>-p max-results=integer</strong></p>
 <ul>
-<li>Token specifying which result page to return. Optional.</li>
+<li>Maximum number of events returned on one result page. By default the value is 250 events. The page size can never be larger than 2500 events. Optional.</li>
 </ul>
 </li>
 <li>
@@ -392,9 +392,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p max-results=integer</strong></p>
+<p><strong>-p page-token=string</strong></p>
 <ul>
-<li>Maximum number of events returned on one result page. By default the value is 250 events. The page size can never be larger than 2500 events. Optional.</li>
+<li>Token specifying which result page to return. Optional.</li>
 </ul>
 </li>
 <li>

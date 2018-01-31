@@ -4,7 +4,7 @@
     
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-androiddeviceprovisioning1-cli/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -13,7 +13,7 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-androiddeviceprovisioning1-cli/operations_get/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -23,67 +23,67 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-androiddeviceprovisioning1-cli/partners_customers-create/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-androiddeviceprovisioning1-cli/partners_customers-list/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-androiddeviceprovisioning1-cli/partners_devices-claim/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-androiddeviceprovisioning1-cli/partners_devices-claim-async/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-androiddeviceprovisioning1-cli/partners_devices-find-by-identifier/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-androiddeviceprovisioning1-cli/partners_devices-find-by-owner/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-androiddeviceprovisioning1-cli/partners_devices-get/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-androiddeviceprovisioning1-cli/partners_devices-metadata/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-androiddeviceprovisioning1-cli/partners_devices-unclaim/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-androiddeviceprovisioning1-cli/partners_devices-unclaim-async/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-androiddeviceprovisioning1-cli/partners_devices-update-metadata-async/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         

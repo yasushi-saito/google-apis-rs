@@ -1378,27 +1378,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p remarketing-list-ids=string</strong></p>
-<ul>
-<li>Select only ads whose list targeting expression use these remarketing list IDs.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p max-results=integer</strong></p>
-<ul>
-<li>Maximum number of results to return.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p creative-ids=string</strong></p>
 <ul>
 <li>Select only ads with these creative IDs assigned.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p placement-ids=string</strong></p>
-<ul>
-<li>Select only ads with these placement IDs assigned.</li>
 </ul>
 </li>
 <li>
@@ -1408,9 +1390,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p active=boolean</strong></p>
+<p><strong>-p placement-ids=string</strong></p>
 <ul>
-<li>Select only active ads.</li>
+<li>Select only ads with these placement IDs assigned.</li>
 </ul>
 </li>
 <li>
@@ -1420,39 +1402,21 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
+<p><strong>-p overridden-event-tag-id=string</strong></p>
+<ul>
+<li>Select only ads with this event tag override ID.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p campaign-ids=string</strong></p>
 <ul>
 <li>Select only ads with these campaign IDs.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p search-string=string</strong></p>
+<p><strong>-p remarketing-list-ids=string</strong></p>
 <ul>
-<li>Allows searching for objects by name or ID. Wildcards (<em>) are allowed. For example, &#34;ad</em>2015&#34; will return objects with names like &#34;ad June 2015&#34;, &#34;ad April 2015&#34;, or simply &#34;ad 2015&#34;. Most of the searches also add wildcards implicitly at the start and the end of the search string. For example, a search string of &#34;ad&#34; will match objects with name &#34;my ad&#34;, &#34;ad 2015&#34;, or simply &#34;ad&#34;.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p type=string</strong></p>
-<ul>
-<li>Select only ads with these types.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p creative-optimization-configuration-ids=string</strong></p>
-<ul>
-<li>Select only ads with these creative optimization configuration IDs.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p compatibility=string</strong></p>
-<ul>
-<li>Select default ads with the specified compatibility. Applicable when type is AD_SERVING_DEFAULT_AD. DISPLAY and DISPLAY_INTERSTITIAL refer to rendering either on desktop or on mobile devices for regular or interstitial ads, respectively. APP and APP_INTERSTITIAL are for rendering in mobile apps. IN_STREAM_VIDEO refers to rendering an in-stream video ads developed with the VAST standard.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p overridden-event-tag-id=string</strong></p>
-<ul>
-<li>Select only ads with this event tag override ID.</li>
+<li>Select only ads whose list targeting expression use these remarketing list IDs.</li>
 </ul>
 </li>
 <li>
@@ -1462,27 +1426,51 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
+<p><strong>-p type=string</strong></p>
+<ul>
+<li>Select only ads with these types.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p search-string=string</strong></p>
+<ul>
+<li>Allows searching for objects by name or ID. Wildcards (<em>) are allowed. For example, &#34;ad</em>2015&#34; will return objects with names like &#34;ad June 2015&#34;, &#34;ad April 2015&#34;, or simply &#34;ad 2015&#34;. Most of the searches also add wildcards implicitly at the start and the end of the search string. For example, a search string of &#34;ad&#34; will match objects with name &#34;my ad&#34;, &#34;ad 2015&#34;, or simply &#34;ad&#34;.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p compatibility=string</strong></p>
+<ul>
+<li>Select default ads with the specified compatibility. Applicable when type is AD_SERVING_DEFAULT_AD. DISPLAY and DISPLAY_INTERSTITIAL refer to rendering either on desktop or on mobile devices for regular or interstitial ads, respectively. APP and APP_INTERSTITIAL are for rendering in mobile apps. IN_STREAM_VIDEO refers to rendering an in-stream video ads developed with the VAST standard.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p active=boolean</strong></p>
+<ul>
+<li>Select only active ads.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p max-results=integer</strong></p>
+<ul>
+<li>Maximum number of results to return.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p audience-segment-ids=string</strong></p>
 <ul>
 <li>Select only ads with these audience segment IDs.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p page-token=string</strong></p>
-<ul>
-<li>Value of the nextPageToken from the previous result page.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p size-ids=string</strong></p>
-<ul>
-<li>Select only ads with these size IDs.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p sort-order=string</strong></p>
 <ul>
 <li>Order of sorted results.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p page-token=string</strong></p>
+<ul>
+<li>Value of the nextPageToken from the previous result page.</li>
 </ul>
 </li>
 <li>
@@ -1495,6 +1483,18 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <p><strong>-p sort-field=string</strong></p>
 <ul>
 <li>Field by which to sort the list.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p size-ids=string</strong></p>
+<ul>
+<li>Select only ads with these size IDs.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p creative-optimization-configuration-ids=string</strong></p>
+<ul>
+<li>Select only ads with these creative optimization configuration IDs.</li>
 </ul>
 </li>
 <li>

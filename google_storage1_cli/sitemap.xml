@@ -4,7 +4,7 @@
     
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-storage1-cli/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -13,37 +13,37 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-storage1-cli/bucket-access-controls_delete/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-storage1-cli/bucket-access-controls_get/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-storage1-cli/bucket-access-controls_insert/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-storage1-cli/bucket-access-controls_list/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-storage1-cli/bucket-access-controls_patch/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-storage1-cli/bucket-access-controls_update/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -53,55 +53,55 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-storage1-cli/buckets_delete/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-storage1-cli/buckets_get/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-storage1-cli/buckets_get-iam-policy/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-storage1-cli/buckets_insert/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-storage1-cli/buckets_list/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-storage1-cli/buckets_patch/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-storage1-cli/buckets_set-iam-policy/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-storage1-cli/buckets_test-iam-permissions/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-storage1-cli/buckets_update/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -111,7 +111,7 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-storage1-cli/channels_stop/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -121,37 +121,37 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-storage1-cli/default-object-access-controls_delete/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-storage1-cli/default-object-access-controls_get/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-storage1-cli/default-object-access-controls_insert/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-storage1-cli/default-object-access-controls_list/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-storage1-cli/default-object-access-controls_patch/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-storage1-cli/default-object-access-controls_update/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -161,25 +161,25 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-storage1-cli/notifications_delete/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-storage1-cli/notifications_get/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-storage1-cli/notifications_insert/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-storage1-cli/notifications_list/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -189,37 +189,37 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-storage1-cli/object-access-controls_delete/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-storage1-cli/object-access-controls_get/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-storage1-cli/object-access-controls_insert/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-storage1-cli/object-access-controls_list/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-storage1-cli/object-access-controls_patch/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-storage1-cli/object-access-controls_update/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -229,79 +229,79 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-storage1-cli/objects_compose/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-storage1-cli/objects_copy/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-storage1-cli/objects_delete/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-storage1-cli/objects_get/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-storage1-cli/objects_get-iam-policy/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-storage1-cli/objects_insert/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-storage1-cli/objects_list/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-storage1-cli/objects_patch/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-storage1-cli/objects_rewrite/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-storage1-cli/objects_set-iam-policy/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-storage1-cli/objects_test-iam-permissions/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-storage1-cli/objects_update/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-storage1-cli/objects_watch-all/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -311,7 +311,7 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-storage1-cli/projects_service-account-get/</loc>
-     <lastmod>2018-01-29</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
         

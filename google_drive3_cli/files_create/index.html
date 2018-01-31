@@ -992,18 +992,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p ocr-language=string</strong></p>
-<ul>
-<li>A language hint for OCR processing during image import (ISO 639-1 code).</li>
-</ul>
-</li>
-<li>
-<p><strong>-p ignore-default-visibility=boolean</strong></p>
-<ul>
-<li>Whether to ignore the domain&#39;s default visibility settings for the created file. Domain administrators can choose to make all uploaded files visible to the domain by default; this parameter bypasses that behavior for the request. Permissions are still inherited from parent folders.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p keep-revision-forever=boolean</strong></p>
 <ul>
 <li>Whether to set the &#39;keepForever&#39; field in the new head revision. This is only applicable to files with binary content in Drive.</li>
@@ -1016,9 +1004,21 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
+<p><strong>-p ignore-default-visibility=boolean</strong></p>
+<ul>
+<li>Whether to ignore the domain&#39;s default visibility settings for the created file. Domain administrators can choose to make all uploaded files visible to the domain by default; this parameter bypasses that behavior for the request. Permissions are still inherited from parent folders.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p supports-team-drives=boolean</strong></p>
 <ul>
 <li>Whether the requesting application supports Team Drives.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p ocr-language=string</strong></p>
+<ul>
+<li>A language hint for OCR processing during image import (ISO 639-1 code).</li>
 </ul>
 </li>
 </ul>

@@ -415,12 +415,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p max-results=integer</strong></p>
-<ul>
-<li>Maximum number of entries returned on one result page. By default the value is 100 entries. The page size can never be larger than 250 entries. Optional.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p show-hidden=boolean</strong></p>
 <ul>
 <li>Whether to show hidden entries. Optional. The default is False.</li>
@@ -443,15 +437,21 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p page-token=string</strong></p>
-<ul>
-<li>Token specifying which result page to return. Optional.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p min-access-role=string</strong></p>
 <ul>
 <li>The minimum access role for the user in the returned entries. Optional. The default is no restriction.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p max-results=integer</strong></p>
+<ul>
+<li>Maximum number of entries returned on one result page. By default the value is 100 entries. The page size can never be larger than 250 entries. Optional.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p page-token=string</strong></p>
+<ul>
+<li>Token specifying which result page to return. Optional.</li>
 </ul>
 </li>
 </ul>

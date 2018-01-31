@@ -1380,12 +1380,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p advertiser-ids=string</strong></p>
-<ul>
-<li>Select only creative fields that belong to these advertisers.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p search-string=string</strong></p>
 <ul>
 <li>Allows searching for creative fields by name or ID. Wildcards (<em>) are allowed. For example, &#34;creativefield</em>2015&#34; will return creative fields with names like &#34;creativefield June 2015&#34;, &#34;creativefield April 2015&#34;, or simply &#34;creativefield 2015&#34;. Most of the searches also add wild-cards implicitly at the start and the end of the search string. For example, a search string of &#34;creativefield&#34; will match creative fields with the name &#34;my creativefield&#34;, &#34;creativefield 2015&#34;, or simply &#34;creativefield&#34;.</li>
@@ -1398,15 +1392,21 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p max-results=integer</strong></p>
-<ul>
-<li>Maximum number of results to return.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p page-token=string</strong></p>
 <ul>
 <li>Value of the nextPageToken from the previous result page.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p advertiser-ids=string</strong></p>
+<ul>
+<li>Select only creative fields that belong to these advertisers.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p max-results=integer</strong></p>
+<ul>
+<li>Maximum number of results to return.</li>
 </ul>
 </li>
 <li>

@@ -590,12 +590,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p name=string</strong></p>
-<ul>
-<li>Name of the object. Required when the object metadata is not otherwise provided. Overrides the object metadata&#39;s name value, if any. For information about how to URL encode object names to be path safe, see Encoding URI Path Parts.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p if-generation-match=string</strong></p>
 <ul>
 <li>Makes the operation conditional on whether the object&#39;s current generation matches the given value. Setting to 0 makes the operation succeed only if there are no live versions of the object.</li>
@@ -608,33 +602,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p if-metageneration-match=string</strong></p>
-<ul>
-<li>Makes the operation conditional on whether the object&#39;s current metageneration matches the given value.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p kms-key-name=string</strong></p>
-<ul>
-<li>Resource name of the Cloud KMS key, of the form projects/my-project/locations/global/keyRings/my-kr/cryptoKeys/my-key, that will be used to encrypt the object. Overrides the object metadata&#39;s kms_key_name value, if any.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p predefined-acl=string</strong></p>
-<ul>
-<li>Apply a predefined set of access controls to this object.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p user-project=string</strong></p>
 <ul>
 <li>The project to be billed for this request. Required for Requester Pays buckets.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p if-metageneration-not-match=string</strong></p>
+<p><strong>-p if-metageneration-match=string</strong></p>
 <ul>
-<li>Makes the operation conditional on whether the object&#39;s current metageneration does not match the given value.</li>
+<li>Makes the operation conditional on whether the object&#39;s current metageneration matches the given value.</li>
 </ul>
 </li>
 <li>
@@ -644,9 +620,33 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
+<p><strong>-p predefined-acl=string</strong></p>
+<ul>
+<li>Apply a predefined set of access controls to this object.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p name=string</strong></p>
+<ul>
+<li>Name of the object. Required when the object metadata is not otherwise provided. Overrides the object metadata&#39;s name value, if any. For information about how to URL encode object names to be path safe, see Encoding URI Path Parts.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p if-metageneration-not-match=string</strong></p>
+<ul>
+<li>Makes the operation conditional on whether the object&#39;s current metageneration does not match the given value.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p if-generation-not-match=string</strong></p>
 <ul>
 <li>Makes the operation conditional on whether the object&#39;s current generation does not match the given value. If no live object exists, the precondition fails. Setting to 0 makes the operation succeed only if there is a live version of the object.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p kms-key-name=string</strong></p>
+<ul>
+<li>Resource name of the Cloud KMS key, of the form projects/my-project/locations/global/keyRings/my-kr/cryptoKeys/my-key, that will be used to encrypt the object. Overrides the object metadata&#39;s kms_key_name value, if any.</li>
 </ul>
 </li>
 </ul>

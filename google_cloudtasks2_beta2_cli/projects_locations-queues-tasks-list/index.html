@@ -241,28 +241,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p order-by=string</strong></p>
-<ul>
-<li>Sort order used for the query. The only fields supported for sorting
-    are <code>schedule_time</code> and <code>pull_message.tag</code>. All results will be
-    returned in approximately ascending order. The default ordering is by
-    <code>schedule_time</code>.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p page-size=integer</strong></p>
-<ul>
-<li>
-<p>Requested page size. Fewer tasks than requested might be returned.</p>
-<p>The maximum page size is 1000. If unspecified, the page size will
-be the maximum. Fewer tasks than requested might be returned,
-even if more tasks exist; use
-ListTasksResponse.next_page_token to determine if more tasks
-exist.</p>
-</li>
-</ul>
-</li>
-<li>
 <p><strong>-p response-view=string</strong></p>
 <ul>
 <li>
@@ -280,6 +258,15 @@ Task.name resource.</p>
 </ul>
 </li>
 <li>
+<p><strong>-p order-by=string</strong></p>
+<ul>
+<li>Sort order used for the query. The only fields supported for sorting
+    are <code>schedule_time</code> and <code>pull_message.tag</code>. All results will be
+    returned in approximately ascending order. The default ordering is by
+    <code>schedule_time</code>.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p page-token=string</strong></p>
 <ul>
 <li>
@@ -289,6 +276,19 @@ request the next page of results, page_token must be the value of
 ListTasksResponse.next_page_token returned from the previous
 call to CloudTasks.ListTasks method.</p>
 <p>The page token is valid for only 2 hours.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>-p page-size=integer</strong></p>
+<ul>
+<li>
+<p>Requested page size. Fewer tasks than requested might be returned.</p>
+<p>The maximum page size is 1000. If unspecified, the page size will
+be the maximum. Fewer tasks than requested might be returned,
+even if more tasks exist; use
+ListTasksResponse.next_page_token to determine if more tasks
+exist.</p>
 </li>
 </ul>
 </li>

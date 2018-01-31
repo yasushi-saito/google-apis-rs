@@ -453,10 +453,23 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p page-size=integer</strong></p>
+<p><strong>-p target-bucket-width=string</strong></p>
 <ul>
-<li>The maximum number of results to return in a single page. If unspecified,
-    defaults to 1024. The maximum value is 2048.</li>
+<li>The desired width of each reported coverage bucket in base pairs. This
+    will be rounded down to the nearest precomputed bucket width; the value
+    of which is returned as <code>bucketWidth</code> in the response. Defaults
+    to infinity (each bucket spans an entire reference sequence) or the length
+    of the target range, if specified. The smallest precomputed
+    <code>bucketWidth</code> is currently 2048 base pairs; this is subject to
+    change.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p page-token=string</strong></p>
+<ul>
+<li>The continuation token, which is used to page through large result sets.
+    To get the next page of results, set this parameter to the value of
+    <code>nextPageToken</code> from the previous response.</li>
 </ul>
 </li>
 <li>
@@ -475,23 +488,10 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p page-token=string</strong></p>
+<p><strong>-p page-size=integer</strong></p>
 <ul>
-<li>The continuation token, which is used to page through large result sets.
-    To get the next page of results, set this parameter to the value of
-    <code>nextPageToken</code> from the previous response.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p target-bucket-width=string</strong></p>
-<ul>
-<li>The desired width of each reported coverage bucket in base pairs. This
-    will be rounded down to the nearest precomputed bucket width; the value
-    of which is returned as <code>bucketWidth</code> in the response. Defaults
-    to infinity (each bucket spans an entire reference sequence) or the length
-    of the target range, if specified. The smallest precomputed
-    <code>bucketWidth</code> is currently 2048 base pairs; this is subject to
-    change.</li>
+<li>The maximum number of results to return in a single page. If unspecified,
+    defaults to 1024. The maximum value is 2048.</li>
 </ul>
 </li>
 </ul>

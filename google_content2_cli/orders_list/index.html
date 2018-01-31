@@ -460,6 +460,12 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
+<p><strong>-p placed-date-start=string</strong></p>
+<ul>
+<li>Obtains orders placed after this date (inclusively), in ISO 8601 format.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p page-token=string</strong></p>
 <ul>
 <li>The token returned by the previous request.</li>
@@ -483,12 +489,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <ul>
 <li>The maximum number of orders to return in the response, used for paging. The default value is 25 orders per page, and the maximum allowed value is 250 orders per page.
     Known issue: All List calls will return all Orders without limit regardless of the value of this field.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p placed-date-start=string</strong></p>
-<ul>
-<li>Obtains orders placed after this date (inclusively), in ISO 8601 format.</li>
 </ul>
 </li>
 </ul>

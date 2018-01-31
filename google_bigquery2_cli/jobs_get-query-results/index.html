@@ -270,9 +270,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p page-token=string</strong></p>
+<p><strong>-p timeout-ms=integer</strong></p>
 <ul>
-<li>Page token, returned by a previous call, to request the next page of results</li>
+<li>How long to wait for the query to complete, in milliseconds, before returning. Default is 10 seconds. If the timeout passes before the job completes, the &#39;jobComplete&#39; field in the response will be false</li>
 </ul>
 </li>
 <li>
@@ -282,9 +282,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p timeout-ms=integer</strong></p>
+<p><strong>-p page-token=string</strong></p>
 <ul>
-<li>How long to wait for the query to complete, in milliseconds, before returning. Default is 10 seconds. If the timeout passes before the job completes, the &#39;jobComplete&#39; field in the response will be false</li>
+<li>Page token, returned by a previous call, to request the next page of results</li>
 </ul>
 </li>
 <li>

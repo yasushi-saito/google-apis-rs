@@ -188,16 +188,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p wait-token=string</strong></p>
-<ul>
-<li>A wait token that, if specified, blocks the call until the breakpoints
-    list has changed, or a server selected timeout has expired.  The value
-    should be set from the last response. The error code
-    <code>google.rpc.Code.ABORTED</code> (RPC) is returned on wait timeout, which
-    should be called again with the same <code>wait_token</code>.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p include-all-users=boolean</strong></p>
 <ul>
 <li>When set to <code>true</code>, the response includes the list of breakpoints set by
@@ -209,6 +199,13 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <ul>
 <li>This field is deprecated. The following fields are always stripped out of
     the result: <code>stack_frames</code>, <code>evaluated_expressions</code> and <code>variable_table</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p include-inactive=boolean</strong></p>
+<ul>
+<li>When set to <code>true</code>, the response includes active and inactive
+    breakpoints. Otherwise, it includes only active breakpoints.</li>
 </ul>
 </li>
 <li>
@@ -225,10 +222,13 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p include-inactive=boolean</strong></p>
+<p><strong>-p wait-token=string</strong></p>
 <ul>
-<li>When set to <code>true</code>, the response includes active and inactive
-    breakpoints. Otherwise, it includes only active breakpoints.</li>
+<li>A wait token that, if specified, blocks the call until the breakpoints
+    list has changed, or a server selected timeout has expired.  The value
+    should be set from the last response. The error code
+    <code>google.rpc.Code.ABORTED</code> (RPC) is returned on wait timeout, which
+    should be called again with the same <code>wait_token</code>.</li>
 </ul>
 </li>
 </ul>

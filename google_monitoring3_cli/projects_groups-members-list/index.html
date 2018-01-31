@@ -248,6 +248,12 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
+<p><strong>-p interval-end-time=string</strong></p>
+<ul>
+<li>Required. The end of the time interval.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p page-token=string</strong></p>
 <ul>
 <li>If this field is not empty then it must contain the nextPageToken value returned by a previous call to this method. Using this field causes the method to return additional results from the previous method call.</li>
@@ -257,12 +263,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <p><strong>-p interval-start-time=string</strong></p>
 <ul>
 <li>Optional. The beginning of the time interval. The default value for the start time is the end time. The start time must not be later than the end time.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p interval-end-time=string</strong></p>
-<ul>
-<li>Required. The end of the time interval.</li>
 </ul>
 </li>
 <li>

@@ -633,18 +633,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p display-slate=boolean</strong></p>
+<p><strong>-p walltime=string</strong></p>
 <ul>
-<li>The displaySlate parameter specifies whether the slate is being enabled or disabled.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p on-behalf-of-content-owner=string</strong></p>
-<ul>
-<li>
-<p>Note: This parameter is intended exclusively for YouTube content partners.</p>
-<p>The onBehalfOfContentOwner parameter indicates that the request&#39;s authorization credentials identify a YouTube CMS user who is acting on behalf of the content owner specified in the parameter value. This parameter is intended for YouTube content partners that own and manage many different YouTube channels. It allows content owners to authenticate once and get access to all their video and channel data, without having to provide authentication credentials for each individual channel. The CMS account that the user authenticates with must be linked to the specified YouTube content owner.</p>
-</li>
+<li>The walltime parameter specifies the wall clock time at which the specified slate change will occur. The value is specified in ISO 8601 (YYYY-MM-DDThh:mm:ss.sssZ) format.</li>
 </ul>
 </li>
 <li>
@@ -658,9 +649,18 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p walltime=string</strong></p>
+<p><strong>-p display-slate=boolean</strong></p>
 <ul>
-<li>The walltime parameter specifies the wall clock time at which the specified slate change will occur. The value is specified in ISO 8601 (YYYY-MM-DDThh:mm:ss.sssZ) format.</li>
+<li>The displaySlate parameter specifies whether the slate is being enabled or disabled.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p on-behalf-of-content-owner=string</strong></p>
+<ul>
+<li>
+<p>Note: This parameter is intended exclusively for YouTube content partners.</p>
+<p>The onBehalfOfContentOwner parameter indicates that the request&#39;s authorization credentials identify a YouTube CMS user who is acting on behalf of the content owner specified in the parameter value. This parameter is intended for YouTube content partners that own and manage many different YouTube channels. It allows content owners to authenticate once and get access to all their video and channel data, without having to provide authentication credentials for each individual channel. The CMS account that the user authenticates with must be linked to the specified YouTube content owner.</p>
+</li>
 </ul>
 </li>
 </ul>

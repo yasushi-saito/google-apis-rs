@@ -512,6 +512,12 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
+<p><strong>-p supports-team-drives=boolean</strong></p>
+<ul>
+<li>Whether the requesting application supports Team Drives.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p max-results=integer</strong></p>
 <ul>
 <li>The maximum number of permissions to return per page. When not set for files in a Team Drive, at most 100 results will be returned. When not set for files that are not in a Team Drive, the entire list will be returned.</li>
@@ -521,12 +527,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <p><strong>-p page-token=string</strong></p>
 <ul>
 <li>The token for continuing a previous list request on the next page. This should be set to the value of &#39;nextPageToken&#39; from the previous response.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p supports-team-drives=boolean</strong></p>
-<ul>
-<li>Whether the requesting application supports Team Drives.</li>
 </ul>
 </li>
 <li>

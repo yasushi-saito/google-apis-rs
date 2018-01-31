@@ -195,6 +195,14 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
+<p><strong>-p currency-code=string</strong></p>
+<ul>
+<li>The ISO 4217 currency code for the pricing info in the response proto.
+    Will use the conversion rate as of start_time.
+    Optional. If not specified USD will be used.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p end-time=string</strong></p>
 <ul>
 <li>Optional exclusive end time of the time range for which the pricing
@@ -212,14 +220,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
     Maximum allowable time range is 1 month (31 days). Time range as a whole
     is optional. If not specified, the latest pricing will be returned (up to
     12 hours old at most).</li>
-</ul>
-</li>
-<li>
-<p><strong>-p currency-code=string</strong></p>
-<ul>
-<li>The ISO 4217 currency code for the pricing info in the response proto.
-    Will use the conversion rate as of start_time.
-    Optional. If not specified USD will be used.</li>
 </ul>
 </li>
 </ul>

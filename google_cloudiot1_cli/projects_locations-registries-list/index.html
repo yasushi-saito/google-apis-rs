@@ -214,20 +214,20 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
+<p><strong>-p page-token=string</strong></p>
+<ul>
+<li>The value returned by the last <code>ListDeviceRegistriesResponse</code>; indicates
+    that this is a continuation of a prior <code>ListDeviceRegistries</code> call, and
+    that the system should return the next page of data.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p page-size=integer</strong></p>
 <ul>
 <li>The maximum number of registries to return in the response. If this value
     is zero, the service will select a default size. A call may return fewer
     objects than requested, but if there is a non-empty <code>page_token</code>, it
     indicates that more entries are available.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p page-token=string</strong></p>
-<ul>
-<li>The value returned by the last <code>ListDeviceRegistriesResponse</code>; indicates
-    that this is a continuation of a prior <code>ListDeviceRegistries</code> call, and
-    that the system should return the next page of data.</li>
 </ul>
 </li>
 </ul>

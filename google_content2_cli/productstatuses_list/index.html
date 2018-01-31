@@ -448,15 +448,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p page-token=string</strong></p>
+<p><strong>-p max-results=integer</strong></p>
 <ul>
-<li>The token returned by the previous request.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p include-invalid-inserted-items=boolean</strong></p>
-<ul>
-<li>Flag to include the invalid inserted items in the result of the list request. By default the invalid items are not shown (the default value is false).</li>
+<li>The maximum number of product statuses to return in the response, used for paging.</li>
 </ul>
 </li>
 <li>
@@ -466,9 +460,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p max-results=integer</strong></p>
+<p><strong>-p include-invalid-inserted-items=boolean</strong></p>
 <ul>
-<li>The maximum number of product statuses to return in the response, used for paging.</li>
+<li>Flag to include the invalid inserted items in the result of the list request. By default the invalid items are not shown (the default value is false).</li>
+</ul>
+</li>
+<li>
+<p><strong>-p page-token=string</strong></p>
+<ul>
+<li>The token returned by the previous request.</li>
 </ul>
 </li>
 </ul>

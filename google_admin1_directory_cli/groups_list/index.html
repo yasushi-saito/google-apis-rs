@@ -678,27 +678,27 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p customer=string</strong></p>
-<ul>
-<li>Immutable ID of the G Suite account. In case of multi-domain, to fetch all groups for a customer, fill this field instead of domain.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p max-results=integer</strong></p>
 <ul>
 <li>Maximum number of results to return. Default is 200</li>
 </ul>
 </li>
 <li>
-<p><strong>-p page-token=string</strong></p>
+<p><strong>-p customer=string</strong></p>
 <ul>
-<li>Token to specify next page in the list</li>
+<li>Immutable ID of the G Suite account. In case of multi-domain, to fetch all groups for a customer, fill this field instead of domain.</li>
 </ul>
 </li>
 <li>
 <p><strong>-p domain=string</strong></p>
 <ul>
 <li>Name of the domain. Fill this field to get groups from only this domain. To return all groups in a multi-domain fill customer field instead.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p page-token=string</strong></p>
+<ul>
+<li>Token to specify next page in the list</li>
 </ul>
 </li>
 </ul>

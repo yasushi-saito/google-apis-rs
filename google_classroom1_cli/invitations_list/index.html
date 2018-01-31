@@ -385,15 +385,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p page-size=integer</strong></p>
-<ul>
-<li>
-<p>Maximum number of items to return. Zero means no maximum.</p>
-<p>The server may return fewer than the specified number of results.</p>
-</li>
-</ul>
-</li>
-<li>
 <p><strong>-p course-id=string</strong></p>
 <ul>
 <li>Restricts returned invitations to those for a course with the specified
@@ -410,6 +401,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
     that the subsequent page of results should be returned.</p>
 <p>The list request must be
 otherwise identical to the one that resulted in this token.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>-p page-size=integer</strong></p>
+<ul>
+<li>
+<p>Maximum number of items to return. Zero means no maximum.</p>
+<p>The server may return fewer than the specified number of results.</p>
 </li>
 </ul>
 </li>

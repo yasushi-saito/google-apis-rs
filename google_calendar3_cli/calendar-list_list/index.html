@@ -342,21 +342,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p max-results=integer</strong></p>
-<ul>
-<li>Maximum number of entries returned on one result page. By default the value is 100 entries. The page size can never be larger than 250 entries. Optional.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p page-token=string</strong></p>
-<ul>
-<li>Token specifying which result page to return. Optional.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p show-deleted=boolean</strong></p>
 <ul>
 <li>Whether to include deleted calendar list entries in the result. Optional. The default is False.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p max-results=integer</strong></p>
+<ul>
+<li>Maximum number of entries returned on one result page. By default the value is 100 entries. The page size can never be larger than 250 entries. Optional.</li>
 </ul>
 </li>
 <li>
@@ -373,6 +367,12 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
     If the syncToken expires, the server will respond with a 410 GONE response code and the client should clear its storage and perform a full synchronization without any syncToken.
     Learn more about incremental synchronization.
     Optional. The default is to return all entries.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p page-token=string</strong></p>
+<ul>
+<li>Token specifying which result page to return. Optional.</li>
 </ul>
 </li>
 </ul>
