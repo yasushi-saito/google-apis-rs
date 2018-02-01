@@ -246,12 +246,10 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p page-size=integer</strong></p>
+<p><strong>-p page-token=string</strong></p>
 <ul>
-<li>Specifies the maximum number of results to return. Defaults to<ol>
-<li>Maximum 1000. Optional.</li>
-</ol>
-</li>
+<li>Requests results that occur after the <code>page_token</code>, obtained from the
+    response to a previous request. Optional.</li>
 </ul>
 </li>
 <li>
@@ -263,10 +261,12 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p page-token=string</strong></p>
+<p><strong>-p page-size=integer</strong></p>
 <ul>
-<li>Requests results that occur after the <code>page_token</code>, obtained from the
-    response to a previous request. Optional.</li>
+<li>Specifies the maximum number of results to return. Defaults to<ol>
+<li>Maximum 1000. Optional.</li>
+</ol>
+</li>
 </ul>
 </li>
 </ul>

@@ -1384,9 +1384,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p active=boolean</strong></p>
+<p><strong>-p sort-field=string</strong></p>
 <ul>
-<li>Select only active directory sites. Leave blank to retrieve both active and inactive directory sites.</li>
+<li>Field by which to sort the list.</li>
 </ul>
 </li>
 <li>
@@ -1396,33 +1396,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p sort-field=string</strong></p>
+<p><strong>-p active=boolean</strong></p>
 <ul>
-<li>Field by which to sort the list.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p accepts-publisher-paid-placements=boolean</strong></p>
-<ul>
-<li>Select only directory sites that accept publisher paid placements. This field can be left blank.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p dfp-network-code=string</strong></p>
-<ul>
-<li>Select only directory sites with this DFP network code.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p sort-order=string</strong></p>
-<ul>
-<li>Order of sorted results.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p max-results=integer</strong></p>
-<ul>
-<li>Maximum number of results to return.</li>
+<li>Select only active directory sites. Leave blank to retrieve both active and inactive directory sites.</li>
 </ul>
 </li>
 <li>
@@ -1432,15 +1408,27 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
+<p><strong>-p accepts-publisher-paid-placements=boolean</strong></p>
+<ul>
+<li>Select only directory sites that accept publisher paid placements. This field can be left blank.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p max-results=integer</strong></p>
+<ul>
+<li>Maximum number of results to return.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p country-id=string</strong></p>
 <ul>
 <li>Select only directory sites with this country ID.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p ids=string</strong></p>
+<p><strong>-p page-token=string</strong></p>
 <ul>
-<li>Select only directory sites with these IDs.</li>
+<li>Value of the nextPageToken from the previous result page.</li>
 </ul>
 </li>
 <li>
@@ -1450,9 +1438,21 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p page-token=string</strong></p>
+<p><strong>-p sort-order=string</strong></p>
 <ul>
-<li>Value of the nextPageToken from the previous result page.</li>
+<li>Order of sorted results.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p dfp-network-code=string</strong></p>
+<ul>
+<li>Select only directory sites with this DFP network code.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p ids=string</strong></p>
+<ul>
+<li>Select only directory sites with these IDs.</li>
 </ul>
 </li>
 </ul>

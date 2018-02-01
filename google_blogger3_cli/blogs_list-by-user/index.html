@@ -330,9 +330,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p fetch-user-info=boolean</strong></p>
+<p><strong>-p role=string</strong></p>
 <ul>
-<li>Whether the response is a list of blogs with per-user information instead of just blogs.</li>
+<li>User access types for blogs to include in the results, e.g. AUTHOR will return blogs where the user has author level access. If no roles are specified, defaults to ADMIN and AUTHOR roles.</li>
 </ul>
 </li>
 <li>
@@ -342,15 +342,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p role=string</strong></p>
-<ul>
-<li>User access types for blogs to include in the results, e.g. AUTHOR will return blogs where the user has author level access. If no roles are specified, defaults to ADMIN and AUTHOR roles.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p view=string</strong></p>
 <ul>
 <li>Access level with which to view the blogs. Note that some fields require elevated access.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p fetch-user-info=boolean</strong></p>
+<ul>
+<li>Whether the response is a list of blogs with per-user information instead of just blogs.</li>
 </ul>
 </li>
 </ul>

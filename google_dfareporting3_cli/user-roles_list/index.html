@@ -1374,21 +1374,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p ids=string</strong></p>
-<ul>
-<li>Select only user roles with the specified IDs.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p account-user-role-only=boolean</strong></p>
 <ul>
 <li>Select only account level user roles not associated with any specific subaccount.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p sort-field=string</strong></p>
+<p><strong>-p ids=string</strong></p>
 <ul>
-<li>Field by which to sort the list.</li>
+<li>Select only user roles with the specified IDs.</li>
 </ul>
 </li>
 <li>
@@ -1398,15 +1392,21 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p sort-order=string</strong></p>
+<p><strong>-p sort-field=string</strong></p>
 <ul>
-<li>Order of sorted results.</li>
+<li>Field by which to sort the list.</li>
 </ul>
 </li>
 <li>
 <p><strong>-p page-token=string</strong></p>
 <ul>
 <li>Value of the nextPageToken from the previous result page.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p sort-order=string</strong></p>
+<ul>
+<li>Order of sorted results.</li>
 </ul>
 </li>
 <li>

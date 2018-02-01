@@ -371,6 +371,19 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
+<p><strong>-p page-token=string</strong></p>
+<ul>
+<li>
+<p>nextPageToken
+    value returned from a previous
+    list call, indicating
+    that the subsequent page of results should be returned.</p>
+<p>The list request must be
+otherwise identical to the one that resulted in this token.</p>
+</li>
+</ul>
+</li>
+<li>
 <p><strong>-p user-id=string</strong></p>
 <ul>
 <li>
@@ -385,32 +398,19 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p course-id=string</strong></p>
-<ul>
-<li>Restricts returned invitations to those for a course with the specified
-    identifier.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p page-token=string</strong></p>
-<ul>
-<li>
-<p>nextPageToken
-    value returned from a previous
-    list call, indicating
-    that the subsequent page of results should be returned.</p>
-<p>The list request must be
-otherwise identical to the one that resulted in this token.</p>
-</li>
-</ul>
-</li>
-<li>
 <p><strong>-p page-size=integer</strong></p>
 <ul>
 <li>
 <p>Maximum number of items to return. Zero means no maximum.</p>
 <p>The server may return fewer than the specified number of results.</p>
 </li>
+</ul>
+</li>
+<li>
+<p><strong>-p course-id=string</strong></p>
+<ul>
+<li>Restricts returned invitations to those for a course with the specified
+    identifier.</li>
 </ul>
 </li>
 </ul>

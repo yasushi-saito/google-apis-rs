@@ -4,7 +4,7 @@
     
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-cloudbilling1-cli/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -13,19 +13,19 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-cloudbilling1-cli/billing-accounts_get/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-cloudbilling1-cli/billing-accounts_list/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-cloudbilling1-cli/billing-accounts_projects-list/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -35,13 +35,13 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-cloudbilling1-cli/projects_get-billing-info/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-cloudbilling1-cli/projects_update-billing-info/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -51,13 +51,13 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-cloudbilling1-cli/services_list/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-cloudbilling1-cli/services_skus-list/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         

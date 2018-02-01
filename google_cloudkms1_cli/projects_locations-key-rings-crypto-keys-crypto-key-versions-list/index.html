@@ -242,13 +242,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p page-token=string</strong></p>
-<ul>
-<li>Optional pagination token, returned earlier via
-    ListCryptoKeyVersionsResponse.next_page_token.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p page-size=integer</strong></p>
 <ul>
 <li>Optional limit on the number of CryptoKeyVersions to
@@ -256,6 +249,13 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
     subsequently be obtained by including the
     ListCryptoKeyVersionsResponse.next_page_token in a subsequent request.
     If unspecified, the server will pick an appropriate default.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p page-token=string</strong></p>
+<ul>
+<li>Optional pagination token, returned earlier via
+    ListCryptoKeyVersionsResponse.next_page_token.</li>
 </ul>
 </li>
 </ul>

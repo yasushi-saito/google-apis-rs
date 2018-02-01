@@ -1374,51 +1374,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p placement-group-type=string</strong></p>
-<ul>
-<li>Select only placement groups belonging with this group type. A package is a simple group of placements that acts as a single pricing point for a group of tags. A roadblock is a group of placements that not only acts as a single pricing point but also assumes that all the tags in it will be served at the same time. A roadblock requires one of its assigned placements to be marked as primary for reporting.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p max-results=integer</strong></p>
 <ul>
 <li>Maximum number of results to return.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p max-end-date=string</strong></p>
-<ul>
-<li>Select only placements or placement groups whose end date is on or before the specified maxEndDate. The date should be formatted as &#34;yyyy-MM-dd&#34;.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p advertiser-ids=string</strong></p>
-<ul>
-<li>Select only placement groups that belong to these advertisers.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p campaign-ids=string</strong></p>
-<ul>
-<li>Select only placement groups that belong to these campaigns.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p ids=string</strong></p>
-<ul>
-<li>Select only placement groups with these IDs.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p max-start-date=string</strong></p>
-<ul>
-<li>Select only placements or placement groups whose start date is on or before the specified maxStartDate. The date should be formatted as &#34;yyyy-MM-dd&#34;.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p directory-site-ids=string</strong></p>
-<ul>
-<li>Select only placement groups that are associated with these directory sites.</li>
 </ul>
 </li>
 <li>
@@ -1428,51 +1386,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p archived=boolean</strong></p>
-<ul>
-<li>Select only archived placements. Don&#39;t set this field to select both archived and non-archived placements.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p sort-order=string</strong></p>
-<ul>
-<li>Order of sorted results.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p sort-field=string</strong></p>
-<ul>
-<li>Field by which to sort the list.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p site-ids=string</strong></p>
-<ul>
-<li>Select only placement groups that are associated with these sites.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p placement-strategy-ids=string</strong></p>
-<ul>
-<li>Select only placement groups that are associated with these placement strategies.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p min-end-date=string</strong></p>
-<ul>
-<li>Select only placements or placement groups whose end date is on or after the specified minEndDate. The date should be formatted as &#34;yyyy-MM-dd&#34;.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p page-token=string</strong></p>
 <ul>
 <li>Value of the nextPageToken from the previous result page.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p search-string=string</strong></p>
+<p><strong>-p max-start-date=string</strong></p>
 <ul>
-<li>Allows searching for placement groups by name or ID. Wildcards (<em>) are allowed. For example, &#34;placement</em>2015&#34; will return placement groups with names like &#34;placement group June 2015&#34;, &#34;placement group May 2015&#34;, or simply &#34;placements 2015&#34;. Most of the searches also add wildcards implicitly at the start and the end of the search string. For example, a search string of &#34;placementgroup&#34; will match placement groups with name &#34;my placementgroup&#34;, &#34;placementgroup 2015&#34;, or simply &#34;placementgroup&#34;.</li>
+<li>Select only placements or placement groups whose start date is on or before the specified maxStartDate. The date should be formatted as &#34;yyyy-MM-dd&#34;.</li>
 </ul>
 </li>
 <li>
@@ -1482,9 +1404,87 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
+<p><strong>-p placement-strategy-ids=string</strong></p>
+<ul>
+<li>Select only placement groups that are associated with these placement strategies.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p max-end-date=string</strong></p>
+<ul>
+<li>Select only placements or placement groups whose end date is on or before the specified maxEndDate. The date should be formatted as &#34;yyyy-MM-dd&#34;.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p placement-group-type=string</strong></p>
+<ul>
+<li>Select only placement groups belonging with this group type. A package is a simple group of placements that acts as a single pricing point for a group of tags. A roadblock is a group of placements that not only acts as a single pricing point but also assumes that all the tags in it will be served at the same time. A roadblock requires one of its assigned placements to be marked as primary for reporting.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p archived=boolean</strong></p>
+<ul>
+<li>Select only archived placements. Don&#39;t set this field to select both archived and non-archived placements.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p sort-field=string</strong></p>
+<ul>
+<li>Field by which to sort the list.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p search-string=string</strong></p>
+<ul>
+<li>Allows searching for placement groups by name or ID. Wildcards (<em>) are allowed. For example, &#34;placement</em>2015&#34; will return placement groups with names like &#34;placement group June 2015&#34;, &#34;placement group May 2015&#34;, or simply &#34;placements 2015&#34;. Most of the searches also add wildcards implicitly at the start and the end of the search string. For example, a search string of &#34;placementgroup&#34; will match placement groups with name &#34;my placementgroup&#34;, &#34;placementgroup 2015&#34;, or simply &#34;placementgroup&#34;.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p advertiser-ids=string</strong></p>
+<ul>
+<li>Select only placement groups that belong to these advertisers.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p min-end-date=string</strong></p>
+<ul>
+<li>Select only placements or placement groups whose end date is on or after the specified minEndDate. The date should be formatted as &#34;yyyy-MM-dd&#34;.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p directory-site-ids=string</strong></p>
+<ul>
+<li>Select only placement groups that are associated with these directory sites.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p ids=string</strong></p>
+<ul>
+<li>Select only placement groups with these IDs.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p campaign-ids=string</strong></p>
+<ul>
+<li>Select only placement groups that belong to these campaigns.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p min-start-date=string</strong></p>
 <ul>
 <li>Select only placements or placement groups whose start date is on or after the specified minStartDate. The date should be formatted as &#34;yyyy-MM-dd&#34;.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p site-ids=string</strong></p>
+<ul>
+<li>Select only placement groups that are associated with these sites.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p sort-order=string</strong></p>
+<ul>
+<li>Order of sorted results.</li>
 </ul>
 </li>
 </ul>

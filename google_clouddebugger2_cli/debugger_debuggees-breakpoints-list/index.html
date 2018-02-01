@@ -188,6 +188,16 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
+<p><strong>-p wait-token=string</strong></p>
+<ul>
+<li>A wait token that, if specified, blocks the call until the breakpoints
+    list has changed, or a server selected timeout has expired.  The value
+    should be set from the last response. The error code
+    <code>google.rpc.Code.ABORTED</code> (RPC) is returned on wait timeout, which
+    should be called again with the same <code>wait_token</code>.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p include-all-users=boolean</strong></p>
 <ul>
 <li>When set to <code>true</code>, the response includes the list of breakpoints set by
@@ -209,12 +219,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p action-value=string</strong></p>
-<ul>
-<li>Only breakpoints with the specified action will pass the filter.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p client-version=string</strong></p>
 <ul>
 <li>The client version making the call.
@@ -222,13 +226,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p wait-token=string</strong></p>
+<p><strong>-p action-value=string</strong></p>
 <ul>
-<li>A wait token that, if specified, blocks the call until the breakpoints
-    list has changed, or a server selected timeout has expired.  The value
-    should be set from the last response. The error code
-    <code>google.rpc.Code.ABORTED</code> (RPC) is returned on wait timeout, which
-    should be called again with the same <code>wait_token</code>.</li>
+<li>Only breakpoints with the specified action will pass the filter.</li>
 </ul>
 </li>
 </ul>

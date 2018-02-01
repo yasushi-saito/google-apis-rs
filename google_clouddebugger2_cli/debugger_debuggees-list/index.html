@@ -178,10 +178,10 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p client-version=string</strong></p>
+<p><strong>-p include-inactive=boolean</strong></p>
 <ul>
-<li>The client version making the call.
-    Schema: <code>domain/type/version</code> (e.g., <code>google.com/intellij/v1</code>).</li>
+<li>When set to <code>true</code>, the result includes all debuggees. Otherwise, the
+    result includes only debuggees that are active.</li>
 </ul>
 </li>
 <li>
@@ -191,10 +191,10 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p include-inactive=boolean</strong></p>
+<p><strong>-p client-version=string</strong></p>
 <ul>
-<li>When set to <code>true</code>, the result includes all debuggees. Otherwise, the
-    result includes only debuggees that are active.</li>
+<li>The client version making the call.
+    Schema: <code>domain/type/version</code> (e.g., <code>google.com/intellij/v1</code>).</li>
 </ul>
 </li>
 </ul>

@@ -266,6 +266,16 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
+<p><strong>-p page-token=string</strong></p>
+<ul>
+<li>
+<p>Optional. A page token to request the next page of results.</p>
+<p>You get the token from the <code>next_page_token</code> field of the response from
+the previous call.</p>
+</li>
+</ul>
+</li>
+<li>
 <p><strong>-p page-size=integer</strong></p>
 <ul>
 <li>
@@ -273,16 +283,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
     are more remaining results than this number, the response message will
     contain a valid value in the <code>next_page_token</code> field.</p>
 <p>The default value is 20, and the maximum page size is 100.</p>
-</li>
-</ul>
-</li>
-<li>
-<p><strong>-p page-token=string</strong></p>
-<ul>
-<li>
-<p>Optional. A page token to request the next page of results.</p>
-<p>You get the token from the <code>next_page_token</code> field of the response from
-the previous call.</p>
 </li>
 </ul>
 </li>

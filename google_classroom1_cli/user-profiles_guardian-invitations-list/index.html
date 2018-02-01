@@ -400,6 +400,23 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
+<p><strong>-p page-size=integer</strong></p>
+<ul>
+<li>
+<p>Maximum number of items to return. Zero or unspecified indicates that the
+    server may assign a maximum.</p>
+<p>The server may return fewer than the specified number of results.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>-p invited-email-address=string</strong></p>
+<ul>
+<li>If specified, only results with the specified <code>invited_email_address</code>
+    will be returned.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p page-token=string</strong></p>
 <ul>
 <li>
@@ -417,23 +434,6 @@ must be otherwise identical to the one that resulted in this token.</p>
 <ul>
 <li>If specified, only results with the specified <code>state</code> values will be
     returned. Otherwise, results with a <code>state</code> of <code>PENDING</code> will be returned.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p invited-email-address=string</strong></p>
-<ul>
-<li>If specified, only results with the specified <code>invited_email_address</code>
-    will be returned.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p page-size=integer</strong></p>
-<ul>
-<li>
-<p>Maximum number of items to return. Zero or unspecified indicates that the
-    server may assign a maximum.</p>
-<p>The server may return fewer than the specified number of results.</p>
-</li>
 </ul>
 </li>
 </ul>

@@ -615,30 +615,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p page-token=string</strong></p>
-<ul>
-<li>
-<p>The pageToken parameter identifies a specific page in the result set that should be returned. In an API response, the nextPageToken property identifies the next page of the result that can be retrieved.</p>
-<p>Note: This parameter is not supported for use in conjunction with the id parameter.</p>
-</li>
-</ul>
-</li>
-<li>
-<p><strong>-p text-format=string</strong></p>
-<ul>
-<li>Set this parameter&#39;s value to html or plainText to instruct the API to return the comments left by users in html formatted or in plain text.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p max-results=integer</strong></p>
-<ul>
-<li>
-<p>The maxResults parameter specifies the maximum number of items that should be returned in the result set.</p>
-<p>Note: This parameter is not supported for use in conjunction with the id parameter.</p>
-</li>
-</ul>
-</li>
-<li>
 <p><strong>-p id=string</strong></p>
 <ul>
 <li>The id parameter specifies a comma-separated list of comment thread IDs for the resources that should be retrieved.</li>
@@ -688,6 +664,30 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <p><strong>-p channel-id=string</strong></p>
 <ul>
 <li>The channelId parameter instructs the API to return comment threads containing comments about the specified channel. (The response will not include comments left on videos that the channel uploaded.)</li>
+</ul>
+</li>
+<li>
+<p><strong>-p page-token=string</strong></p>
+<ul>
+<li>
+<p>The pageToken parameter identifies a specific page in the result set that should be returned. In an API response, the nextPageToken property identifies the next page of the result that can be retrieved.</p>
+<p>Note: This parameter is not supported for use in conjunction with the id parameter.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>-p max-results=integer</strong></p>
+<ul>
+<li>
+<p>The maxResults parameter specifies the maximum number of items that should be returned in the result set.</p>
+<p>Note: This parameter is not supported for use in conjunction with the id parameter.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>-p text-format=string</strong></p>
+<ul>
+<li>Set this parameter&#39;s value to html or plainText to instruct the API to return the comments left by users in html formatted or in plain text.</li>
 </ul>
 </li>
 </ul>

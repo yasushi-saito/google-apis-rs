@@ -4,7 +4,7 @@
     
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-cloudmonitoring2_beta2-cli/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -13,19 +13,19 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-cloudmonitoring2_beta2-cli/metric-descriptors_create/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-cloudmonitoring2_beta2-cli/metric-descriptors_delete/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-cloudmonitoring2_beta2-cli/metric-descriptors_list/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -35,13 +35,13 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-cloudmonitoring2_beta2-cli/timeseries_list/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-cloudmonitoring2_beta2-cli/timeseries_write/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -51,7 +51,7 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-cloudmonitoring2_beta2-cli/timeseries-descriptors_list/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         

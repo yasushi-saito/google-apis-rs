@@ -4,7 +4,7 @@
     
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-spanner1-cli/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -13,229 +13,229 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-spanner1-cli/projects_instance-configs-get/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-spanner1-cli/projects_instance-configs-list/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-spanner1-cli/projects_instances-create/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-spanner1-cli/projects_instances-databases-create/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-spanner1-cli/projects_instances-databases-drop-database/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-spanner1-cli/projects_instances-databases-get/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-spanner1-cli/projects_instances-databases-get-ddl/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-spanner1-cli/projects_instances-databases-get-iam-policy/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-spanner1-cli/projects_instances-databases-list/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-spanner1-cli/projects_instances-databases-operations-cancel/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-spanner1-cli/projects_instances-databases-operations-delete/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-spanner1-cli/projects_instances-databases-operations-get/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-spanner1-cli/projects_instances-databases-operations-list/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-spanner1-cli/projects_instances-databases-sessions-begin-transaction/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-spanner1-cli/projects_instances-databases-sessions-commit/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-spanner1-cli/projects_instances-databases-sessions-create/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-spanner1-cli/projects_instances-databases-sessions-delete/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-spanner1-cli/projects_instances-databases-sessions-execute-sql/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-spanner1-cli/projects_instances-databases-sessions-execute-streaming-sql/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-spanner1-cli/projects_instances-databases-sessions-get/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-spanner1-cli/projects_instances-databases-sessions-list/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-spanner1-cli/projects_instances-databases-sessions-read/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-spanner1-cli/projects_instances-databases-sessions-rollback/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-spanner1-cli/projects_instances-databases-sessions-streaming-read/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-spanner1-cli/projects_instances-databases-set-iam-policy/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-spanner1-cli/projects_instances-databases-test-iam-permissions/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-spanner1-cli/projects_instances-databases-update-ddl/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-spanner1-cli/projects_instances-delete/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-spanner1-cli/projects_instances-get/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-spanner1-cli/projects_instances-get-iam-policy/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-spanner1-cli/projects_instances-list/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-spanner1-cli/projects_instances-operations-cancel/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-spanner1-cli/projects_instances-operations-delete/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-spanner1-cli/projects_instances-operations-get/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-spanner1-cli/projects_instances-operations-list/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-spanner1-cli/projects_instances-patch/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-spanner1-cli/projects_instances-set-iam-policy/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-spanner1-cli/projects_instances-test-iam-permissions/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         

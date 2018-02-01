@@ -4,7 +4,7 @@
     
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-genomics1-cli/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -13,37 +13,37 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-genomics1-cli/annotations_batch-create/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-genomics1-cli/annotations_create/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-genomics1-cli/annotations_delete/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-genomics1-cli/annotations_get/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-genomics1-cli/annotations_search/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-genomics1-cli/annotations_update/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -53,31 +53,31 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-genomics1-cli/annotationsets_create/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-genomics1-cli/annotationsets_delete/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-genomics1-cli/annotationsets_get/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-genomics1-cli/annotationsets_search/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-genomics1-cli/annotationsets_update/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -87,31 +87,31 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-genomics1-cli/callsets_create/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-genomics1-cli/callsets_delete/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-genomics1-cli/callsets_get/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-genomics1-cli/callsets_patch/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-genomics1-cli/callsets_search/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -121,55 +121,55 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-genomics1-cli/datasets_create/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-genomics1-cli/datasets_delete/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-genomics1-cli/datasets_get/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-genomics1-cli/datasets_get-iam-policy/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-genomics1-cli/datasets_list/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-genomics1-cli/datasets_patch/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-genomics1-cli/datasets_set-iam-policy/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-genomics1-cli/datasets_test-iam-permissions/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-genomics1-cli/datasets_undelete/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -179,19 +179,19 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-genomics1-cli/operations_cancel/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-genomics1-cli/operations_get/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-genomics1-cli/operations_list/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -201,43 +201,43 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-genomics1-cli/readgroupsets_coveragebuckets-list/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-genomics1-cli/readgroupsets_delete/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-genomics1-cli/readgroupsets_export/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-genomics1-cli/readgroupsets_get/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-genomics1-cli/readgroupsets_import/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-genomics1-cli/readgroupsets_patch/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-genomics1-cli/readgroupsets_search/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -247,7 +247,7 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-genomics1-cli/reads_search/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -257,19 +257,19 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-genomics1-cli/references_bases-list/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-genomics1-cli/references_get/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-genomics1-cli/references_search/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -279,13 +279,13 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-genomics1-cli/referencesets_get/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-genomics1-cli/referencesets_search/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -295,43 +295,43 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-genomics1-cli/variants_create/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-genomics1-cli/variants_delete/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-genomics1-cli/variants_get/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-genomics1-cli/variants_import/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-genomics1-cli/variants_merge/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-genomics1-cli/variants_patch/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-genomics1-cli/variants_search/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -341,37 +341,37 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-genomics1-cli/variantsets_create/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-genomics1-cli/variantsets_delete/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-genomics1-cli/variantsets_export/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-genomics1-cli/variantsets_get/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-genomics1-cli/variantsets_patch/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-genomics1-cli/variantsets_search/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2018-02-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         

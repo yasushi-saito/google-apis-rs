@@ -504,9 +504,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p projection=string</strong></p>
+<p><strong>-p q=string</strong></p>
 <ul>
-<li>This parameter is deprecated and has no function.</li>
+<li>Query string for searching files.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p corpora=string</strong></p>
+<ul>
+<li>Comma-separated list of bodies of items (files/documents) to which the query applies. Supported bodies are &#39;default&#39;, &#39;domain&#39;, &#39;teamDrive&#39; and &#39;allTeamDrives&#39;. &#39;allTeamDrives&#39; must be combined with &#39;default&#39;; all other values must be used in isolation. Prefer &#39;default&#39; or &#39;teamDrive&#39; to &#39;allTeamDrives&#39; for efficiency.</li>
 </ul>
 </li>
 <li>
@@ -516,27 +522,21 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
+<p><strong>-p projection=string</strong></p>
+<ul>
+<li>This parameter is deprecated and has no function.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p page-token=string</strong></p>
 <ul>
 <li>Page token for files.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p q=string</strong></p>
-<ul>
-<li>Query string for searching files.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p order-by=string</strong></p>
 <ul>
 <li>A comma-separated list of sort keys. Valid keys are &#39;createdDate&#39;, &#39;folder&#39;, &#39;lastViewedByMeDate&#39;, &#39;modifiedByMeDate&#39;, &#39;modifiedDate&#39;, &#39;quotaBytesUsed&#39;, &#39;recency&#39;, &#39;sharedWithMeDate&#39;, &#39;starred&#39;, &#39;title&#39;, and &#39;title_natural&#39;. Each key sorts ascending by default, but may be reversed with the &#39;desc&#39; modifier. Example usage: ?orderBy=folder,modifiedDate desc,title. Please note that there is a current limitation for users with approximately one million files in which the requested sort order is ignored.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p corpora=string</strong></p>
-<ul>
-<li>Comma-separated list of bodies of items (files/documents) to which the query applies. Supported bodies are &#39;default&#39;, &#39;domain&#39;, &#39;teamDrive&#39; and &#39;allTeamDrives&#39;. &#39;allTeamDrives&#39; must be combined with &#39;default&#39;; all other values must be used in isolation. Prefer &#39;default&#39; or &#39;teamDrive&#39; to &#39;allTeamDrives&#39; for efficiency.</li>
 </ul>
 </li>
 <li>
@@ -558,15 +558,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p spaces=string</strong></p>
-<ul>
-<li>A comma-separated list of spaces to query. Supported values are &#39;drive&#39;, &#39;appDataFolder&#39; and &#39;photos&#39;.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p corpus=string</strong></p>
 <ul>
 <li>The body of items (files/documents) to which the query applies. Deprecated: use &#39;corpora&#39; instead.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p spaces=string</strong></p>
+<ul>
+<li>A comma-separated list of spaces to query. Supported values are &#39;drive&#39;, &#39;appDataFolder&#39; and &#39;photos&#39;.</li>
 </ul>
 </li>
 </ul>

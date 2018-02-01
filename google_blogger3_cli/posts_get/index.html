@@ -334,18 +334,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p view=string</strong></p>
-<ul>
-<li>Access level with which to view the returned result. Note that some fields require elevated access.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p max-comments=integer</strong></p>
-<ul>
-<li>Maximum number of comments to pull back on a post.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p fetch-images=boolean</strong></p>
 <ul>
 <li>Whether image URL metadata for each post is included (default: false).</li>
@@ -355,6 +343,18 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <p><strong>-p fetch-body=boolean</strong></p>
 <ul>
 <li>Whether the body content of the post is included (default: true). This should be set to false when the post bodies are not required, to help minimize traffic.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p view=string</strong></p>
+<ul>
+<li>Access level with which to view the returned result. Note that some fields require elevated access.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p max-comments=integer</strong></p>
+<ul>
+<li>Maximum number of comments to pull back on a post.</li>
 </ul>
 </li>
 </ul>

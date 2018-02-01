@@ -228,9 +228,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p oldest=string</strong></p>
+<p><strong>-p count=integer</strong></p>
 <ul>
-<li>Start of the time interval (exclusive), which is expressed as an RFC 3339 timestamp. If neither oldest nor timespan is specified, the default time interval will be (youngest - 4 hours, youngest]</li>
+<li>Maximum number of data points per page, which is used for pagination of results.</li>
 </ul>
 </li>
 <li>
@@ -250,9 +250,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p count=integer</strong></p>
+<p><strong>-p page-token=string</strong></p>
 <ul>
-<li>Maximum number of data points per page, which is used for pagination of results.</li>
+<li>The pagination token, which is used to page through large result sets. Set this value to the value of the nextPageToken to retrieve the next page of results.</li>
 </ul>
 </li>
 <li>
@@ -281,9 +281,9 @@ label=cloud.googleapis.com%2Flocation=~us-central1.*</li>
 </ul>
 </li>
 <li>
-<p><strong>-p page-token=string</strong></p>
+<p><strong>-p oldest=string</strong></p>
 <ul>
-<li>The pagination token, which is used to page through large result sets. Set this value to the value of the nextPageToken to retrieve the next page of results.</li>
+<li>Start of the time interval (exclusive), which is expressed as an RFC 3339 timestamp. If neither oldest nor timespan is specified, the default time interval will be (youngest - 4 hours, youngest]</li>
 </ul>
 </li>
 <li>

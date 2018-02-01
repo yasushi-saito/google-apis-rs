@@ -1378,27 +1378,21 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p campaign-id=string</strong></p>
-<ul>
-<li>Select only event tags that belong to this campaign.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p search-string=string</strong></p>
 <ul>
 <li>Allows searching for objects by name or ID. Wildcards (<em>) are allowed. For example, &#34;eventtag</em>2015&#34; will return objects with names like &#34;eventtag June 2015&#34;, &#34;eventtag April 2015&#34;, or simply &#34;eventtag 2015&#34;. Most of the searches also add wildcards implicitly at the start and the end of the search string. For example, a search string of &#34;eventtag&#34; will match objects with name &#34;my eventtag&#34;, &#34;eventtag 2015&#34;, or simply &#34;eventtag&#34;.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p ids=string</strong></p>
+<p><strong>-p campaign-id=string</strong></p>
 <ul>
-<li>Select only event tags with these IDs.</li>
+<li>Select only event tags that belong to this campaign.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p event-tag-types=string</strong></p>
+<p><strong>-p sort-field=string</strong></p>
 <ul>
-<li>Select only event tags with the specified event tag types. Event tag types can be used to specify whether to use a third-party pixel, a third-party JavaScript URL, or a third-party click-through URL for either impression or click tracking.</li>
+<li>Field by which to sort the list.</li>
 </ul>
 </li>
 <li>
@@ -1414,21 +1408,27 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p sort-field=string</strong></p>
+<p><strong>-p sort-order=string</strong></p>
 <ul>
-<li>Field by which to sort the list.</li>
+<li>Order of sorted results.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p ids=string</strong></p>
+<ul>
+<li>Select only event tags with these IDs.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p event-tag-types=string</strong></p>
+<ul>
+<li>Select only event tags with the specified event tag types. Event tag types can be used to specify whether to use a third-party pixel, a third-party JavaScript URL, or a third-party click-through URL for either impression or click tracking.</li>
 </ul>
 </li>
 <li>
 <p><strong>-p ad-id=string</strong></p>
 <ul>
 <li>Select only event tags that belong to this ad.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p sort-order=string</strong></p>
-<ul>
-<li>Order of sorted results.</li>
 </ul>
 </li>
 <li>

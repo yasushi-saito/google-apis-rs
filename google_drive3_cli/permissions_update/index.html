@@ -466,9 +466,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p transfer-ownership=boolean</strong></p>
+<p><strong>-p use-domain-admin-access=boolean</strong></p>
 <ul>
-<li>Whether to transfer ownership to the specified user and downgrade the current owner to a writer. This parameter is required as an acknowledgement of the side effect.</li>
+<li>Whether the request should be treated as if it was issued by a domain administrator; if set to true, then the requester will be granted access if they are an administrator of the domain to which the item belongs.</li>
 </ul>
 </li>
 <li>
@@ -478,9 +478,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p use-domain-admin-access=boolean</strong></p>
+<p><strong>-p transfer-ownership=boolean</strong></p>
 <ul>
-<li>Whether the request should be treated as if it was issued by a domain administrator; if set to true, then the requester will be granted access if they are an administrator of the domain to which the item belongs.</li>
+<li>Whether to transfer ownership to the specified user and downgrade the current owner to a writer. This parameter is required as an acknowledgement of the side effect.</li>
 </ul>
 </li>
 <li>

@@ -1374,24 +1374,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p max-results=integer</strong></p>
-<ul>
-<li>Maximum number of results to return.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p floodlight-configuration-ids=string</strong></p>
-<ul>
-<li>Select only advertisers with these floodlight configuration IDs.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p subaccount-id=string</strong></p>
-<ul>
-<li>Select only advertisers with these subaccount IDs.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p status=string</strong></p>
 <ul>
 <li>Select only advertisers with the specified status.</li>
@@ -1404,9 +1386,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p sort-order=string</strong></p>
+<p><strong>-p max-results=integer</strong></p>
 <ul>
-<li>Order of sorted results.</li>
+<li>Maximum number of results to return.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p floodlight-configuration-ids=string</strong></p>
+<ul>
+<li>Select only advertisers with these floodlight configuration IDs.</li>
 </ul>
 </li>
 <li>
@@ -1431,6 +1419,18 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <p><strong>-p include-advertisers-without-groups-only=boolean</strong></p>
 <ul>
 <li>Select only advertisers which do not belong to any advertiser group.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p subaccount-id=string</strong></p>
+<ul>
+<li>Select only advertisers with these subaccount IDs.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p sort-order=string</strong></p>
+<ul>
+<li>Order of sorted results.</li>
 </ul>
 </li>
 <li>

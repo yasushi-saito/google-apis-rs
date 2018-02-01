@@ -414,18 +414,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p start-index=integer</strong></p>
-<ul>
-<li>Index of the first result to return (starts at 0)</li>
-</ul>
-</li>
-<li>
-<p><strong>-p download=string</strong></p>
-<ul>
-<li>Restrict to volumes by download availability.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p source=string</strong></p>
 <ul>
 <li>String to identify the originator of this request.</li>
@@ -444,15 +432,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p max-allowed-maturity-rating=string</strong></p>
+<p><strong>-p library-restrict=string</strong></p>
 <ul>
-<li>The maximum allowed maturity rating of returned recommendations. Books with a higher maturity rating are filtered out.</li>
+<li>Restrict search to this user&#39;s library.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p print-type=string</strong></p>
+<p><strong>-p order-by=string</strong></p>
 <ul>
-<li>Restrict to books or magazines.</li>
+<li>Sort search results.</li>
 </ul>
 </li>
 <li>
@@ -462,9 +450,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p library-restrict=string</strong></p>
+<p><strong>-p max-allowed-maturity-rating=string</strong></p>
 <ul>
-<li>Restrict search to this user&#39;s library.</li>
+<li>The maximum allowed maturity rating of returned recommendations. Books with a higher maturity rating are filtered out.</li>
 </ul>
 </li>
 <li>
@@ -474,9 +462,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p partner=string</strong></p>
+<p><strong>-p print-type=string</strong></p>
 <ul>
-<li>Restrict and brand results for partner ID.</li>
+<li>Restrict to books or magazines.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p start-index=integer</strong></p>
+<ul>
+<li>Index of the first result to return (starts at 0)</li>
 </ul>
 </li>
 <li>
@@ -486,9 +480,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p order-by=string</strong></p>
+<p><strong>-p partner=string</strong></p>
 <ul>
-<li>Sort search results.</li>
+<li>Restrict and brand results for partner ID.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p download=string</strong></p>
+<ul>
+<li>Restrict to volumes by download availability.</li>
 </ul>
 </li>
 </ul>

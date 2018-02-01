@@ -203,9 +203,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p end-time=string</strong></p>
+<p><strong>-p start-time=string</strong></p>
 <ul>
-<li>Optional exclusive end time of the time range for which the pricing
+<li>Optional inclusive start time of the time range for which the pricing
     versions will be returned. Timestamps in the future are not allowed.
     Maximum allowable time range is 1 month (31 days). Time range as a whole
     is optional. If not specified, the latest pricing will be returned (up to
@@ -213,9 +213,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p start-time=string</strong></p>
+<p><strong>-p end-time=string</strong></p>
 <ul>
-<li>Optional inclusive start time of the time range for which the pricing
+<li>Optional exclusive end time of the time range for which the pricing
     versions will be returned. Timestamps in the future are not allowed.
     Maximum allowable time range is 1 month (31 days). Time range as a whole
     is optional. If not specified, the latest pricing will be returned (up to

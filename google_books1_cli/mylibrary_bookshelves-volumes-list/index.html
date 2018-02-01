@@ -414,21 +414,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p start-index=integer</strong></p>
+<p><strong>-p country=string</strong></p>
 <ul>
-<li>Index of the first element to return (starts at 0)</li>
-</ul>
-</li>
-<li>
-<p><strong>-p q=string</strong></p>
-<ul>
-<li>Full-text search query string in this bookshelf.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p source=string</strong></p>
-<ul>
-<li>String to identify the originator of this request.</li>
+<li>ISO-3166-1 code to override the IP-based location.</li>
 </ul>
 </li>
 <li>
@@ -438,21 +426,33 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p show-preorders=boolean</strong></p>
-<ul>
-<li>Set to true to show pre-ordered books. Defaults to false.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p country=string</strong></p>
-<ul>
-<li>ISO-3166-1 code to override the IP-based location.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p projection=string</strong></p>
 <ul>
 <li>Restrict information returned to a set of selected fields.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p start-index=integer</strong></p>
+<ul>
+<li>Index of the first element to return (starts at 0)</li>
+</ul>
+</li>
+<li>
+<p><strong>-p source=string</strong></p>
+<ul>
+<li>String to identify the originator of this request.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p q=string</strong></p>
+<ul>
+<li>Full-text search query string in this bookshelf.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p show-preorders=boolean</strong></p>
+<ul>
+<li>Set to true to show pre-ordered books. Defaults to false.</li>
 </ul>
 </li>
 </ul>

@@ -201,12 +201,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p customer-id=string</strong></p>
-<ul>
-<li>Represents the customer for which the data is to be fetched.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p filters=string</strong></p>
 <ul>
 <li>Event parameters in the form [parameter1 name][operator][parameter1 value],[parameter2 name][operator][parameter2 value],...</li>
@@ -216,6 +210,12 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <p><strong>-p max-results=integer</strong></p>
 <ul>
 <li>Number of activity records to be shown in each page.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p start-time=string</strong></p>
+<ul>
+<li>Return events which occurred at or after this time.</li>
 </ul>
 </li>
 <li>
@@ -237,9 +237,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p start-time=string</strong></p>
+<p><strong>-p customer-id=string</strong></p>
 <ul>
-<li>Return events which occurred at or after this time.</li>
+<li>Represents the customer for which the data is to be fetched.</li>
 </ul>
 </li>
 <li>

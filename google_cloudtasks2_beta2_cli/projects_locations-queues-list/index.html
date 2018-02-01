@@ -238,20 +238,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p page-token=string</strong></p>
-<ul>
-<li>
-<p>A token identifying the page of results to return.</p>
-<p>To request the first page results, page_token must be empty. To
-request the next page of results, page_token must be the value of
-ListQueuesResponse.next_page_token returned from the previous
-call to CloudTasks.ListQueues method. It is an error to
-switch the value of ListQueuesRequest.filter while iterating
-through pages.</p>
-</li>
-</ul>
-</li>
-<li>
 <p><strong>-p filter=string</strong></p>
 <ul>
 <li>
@@ -276,6 +262,20 @@ be the maximum. Fewer queues than requested might be returned,
 even if more queues exist; use
 ListQueuesResponse.next_page_token to determine if more
 queues exist.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>-p page-token=string</strong></p>
+<ul>
+<li>
+<p>A token identifying the page of results to return.</p>
+<p>To request the first page results, page_token must be empty. To
+request the next page of results, page_token must be the value of
+ListQueuesResponse.next_page_token returned from the previous
+call to CloudTasks.ListQueues method. It is an error to
+switch the value of ListQueuesRequest.filter while iterating
+through pages.</p>
 </li>
 </ul>
 </li>

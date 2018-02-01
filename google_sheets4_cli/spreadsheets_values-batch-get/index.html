@@ -221,12 +221,16 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p date-time-render-option=string</strong></p>
+<p><strong>-p major-dimension=string</strong></p>
 <ul>
-<li>How dates, times, and durations should be represented in the output.
-    This is ignored if value_render_option is
-    FORMATTED_VALUE.
-    The default dateTime render option is [DateTimeRenderOption.SERIAL_NUMBER].</li>
+<li>
+<p>The major dimension that results should use.</p>
+<p>For example, if the spreadsheet data is: <code>A1=1,B1=2,A2=3,B2=4</code>,
+then requesting <code>range=A1:B2,majorDimension=ROWS</code> will return
+<code>[[1,2],[3,4]]</code>,
+whereas requesting <code>range=A1:B2,majorDimension=COLUMNS</code> will return
+<code>[[1,3],[2,4]]</code>.</p>
+</li>
 </ul>
 </li>
 <li>
@@ -243,16 +247,12 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p major-dimension=string</strong></p>
+<p><strong>-p date-time-render-option=string</strong></p>
 <ul>
-<li>
-<p>The major dimension that results should use.</p>
-<p>For example, if the spreadsheet data is: <code>A1=1,B1=2,A2=3,B2=4</code>,
-then requesting <code>range=A1:B2,majorDimension=ROWS</code> will return
-<code>[[1,2],[3,4]]</code>,
-whereas requesting <code>range=A1:B2,majorDimension=COLUMNS</code> will return
-<code>[[1,3],[2,4]]</code>.</p>
-</li>
+<li>How dates, times, and durations should be represented in the output.
+    This is ignored if value_render_option is
+    FORMATTED_VALUE.
+    The default dateTime render option is [DateTimeRenderOption.SERIAL_NUMBER].</li>
 </ul>
 </li>
 </ul>

@@ -463,6 +463,12 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
+<p><strong>-p consistency-token=string</strong></p>
+<ul>
+<li>The last-seen mutation timestamp.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p score-tag=string</strong></p>
 <ul>
 <li>Additional information about the score you&#39;re submitting. Values must contain no more than 64 URI-safe characters as defined by section 2.3 of RFC 3986.</li>
@@ -472,12 +478,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <p><strong>-p language=string</strong></p>
 <ul>
 <li>The preferred language to use for strings returned by this method.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p consistency-token=string</strong></p>
-<ul>
-<li>The last-seen mutation timestamp.</li>
 </ul>
 </li>
 </ul>

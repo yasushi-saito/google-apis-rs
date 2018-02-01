@@ -1392,9 +1392,21 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
+<p><strong>-p campaign-id=string</strong></p>
+<ul>
+<li>Select only event tags that belong to this campaign.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p sort-order=string</strong></p>
 <ul>
 <li>Order of sorted results.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p enabled=boolean</strong></p>
+<ul>
+<li>Select only enabled event tags. What is considered enabled or disabled depends on the definitionsOnly parameter. When definitionsOnly is set to true, only the specified advertiser or campaign&#39;s event tags&#39; enabledByDefault field is examined. When definitionsOnly is set to false, the specified ad or specified campaign&#39;s parent advertiser&#39;s or parent campaign&#39;s event tags&#39; enabledByDefault and status fields are examined as well.</li>
 </ul>
 </li>
 <li>
@@ -1407,18 +1419,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <p><strong>-p sort-field=string</strong></p>
 <ul>
 <li>Field by which to sort the list.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p enabled=boolean</strong></p>
-<ul>
-<li>Select only enabled event tags. What is considered enabled or disabled depends on the definitionsOnly parameter. When definitionsOnly is set to true, only the specified advertiser or campaign&#39;s event tags&#39; enabledByDefault field is examined. When definitionsOnly is set to false, the specified ad or specified campaign&#39;s parent advertiser&#39;s or parent campaign&#39;s event tags&#39; enabledByDefault and status fields are examined as well.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p campaign-id=string</strong></p>
-<ul>
-<li>Select only event tags that belong to this campaign.</li>
 </ul>
 </li>
 <li>

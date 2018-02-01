@@ -455,9 +455,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p include-match-data=boolean</strong></p>
+<p><strong>-p max-completed-matches=integer</strong></p>
 <ul>
-<li>True if match data should be returned in the response. Note that not all data will necessarily be returned if include_match_data is true; the server may decide to only return data for some of the matches to limit download size for the client. The remainder of the data for these matches will be retrievable on request.</li>
+<li>The maximum number of completed or canceled matches to return in the response. If not set, all matches returned could be completed or canceled.</li>
 </ul>
 </li>
 <li>
@@ -467,15 +467,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p consistency-token=string</strong></p>
+<p><strong>-p include-match-data=boolean</strong></p>
 <ul>
-<li>The last-seen mutation timestamp.</li>
+<li>True if match data should be returned in the response. Note that not all data will necessarily be returned if include_match_data is true; the server may decide to only return data for some of the matches to limit download size for the client. The remainder of the data for these matches will be retrievable on request.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p max-completed-matches=integer</strong></p>
+<p><strong>-p consistency-token=string</strong></p>
 <ul>
-<li>The maximum number of completed or canceled matches to return in the response. If not set, all matches returned could be completed or canceled.</li>
+<li>The last-seen mutation timestamp.</li>
 </ul>
 </li>
 <li>

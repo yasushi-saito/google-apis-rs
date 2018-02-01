@@ -1709,6 +1709,16 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
+<p><strong>-p order-by=string</strong></p>
+<ul>
+<li>
+<p>Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.</p>
+<p>You can also sort results in descending order based on the creation timestamp using orderBy=&#34;creationTimestamp desc&#34;. This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.</p>
+<p>Currently, only sorting by name or creationTimestamp desc is supported.</p>
+</li>
+</ul>
+</li>
+<li>
 <p><strong>-p filter=string</strong></p>
 <ul>
 <li>
@@ -1721,25 +1731,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p order-by=string</strong></p>
+<p><strong>-p page-token=string</strong></p>
 <ul>
-<li>
-<p>Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.</p>
-<p>You can also sort results in descending order based on the creation timestamp using orderBy=&#34;creationTimestamp desc&#34;. This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.</p>
-<p>Currently, only sorting by name or creationTimestamp desc is supported.</p>
-</li>
+<li>Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.</li>
 </ul>
 </li>
 <li>
 <p><strong>-p max-results=integer</strong></p>
 <ul>
 <li>The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)</li>
-</ul>
-</li>
-<li>
-<p><strong>-p page-token=string</strong></p>
-<ul>
-<li>Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.</li>
 </ul>
 </li>
 </ul>

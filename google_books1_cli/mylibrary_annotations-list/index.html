@@ -410,39 +410,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p volume-id=string</strong></p>
-<ul>
-<li>The volume to restrict annotations to.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p page-token=string</strong></p>
-<ul>
-<li>The value of the nextToken from the previous page.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p source=string</strong></p>
 <ul>
 <li>String to identify the originator of this request.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p show-deleted=boolean</strong></p>
-<ul>
-<li>Set to true to return deleted annotations. updatedMin must be in the request to use this. Defaults to false.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p max-results=integer</strong></p>
-<ul>
-<li>Maximum number of results to return</li>
-</ul>
-</li>
-<li>
-<p><strong>-p updated-min=string</strong></p>
-<ul>
-<li>RFC 3339 timestamp to restrict to items updated since this timestamp (inclusive).</li>
 </ul>
 </li>
 <li>
@@ -452,9 +422,39 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
+<p><strong>-p updated-min=string</strong></p>
+<ul>
+<li>RFC 3339 timestamp to restrict to items updated since this timestamp (inclusive).</li>
+</ul>
+</li>
+<li>
+<p><strong>-p volume-id=string</strong></p>
+<ul>
+<li>The volume to restrict annotations to.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p max-results=integer</strong></p>
+<ul>
+<li>Maximum number of results to return</li>
+</ul>
+</li>
+<li>
 <p><strong>-p updated-max=string</strong></p>
 <ul>
 <li>RFC 3339 timestamp to restrict to items updated prior to this timestamp (exclusive).</li>
+</ul>
+</li>
+<li>
+<p><strong>-p page-token=string</strong></p>
+<ul>
+<li>The value of the nextToken from the previous page.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p show-deleted=boolean</strong></p>
+<ul>
+<li>Set to true to return deleted annotations. updatedMin must be in the request to use this. Defaults to false.</li>
 </ul>
 </li>
 <li>

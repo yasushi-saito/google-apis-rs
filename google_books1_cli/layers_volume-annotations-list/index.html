@@ -422,15 +422,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p start-position=string</strong></p>
+<p><strong>-p page-token=string</strong></p>
 <ul>
-<li>The start position to start retrieving data from.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p locale=string</strong></p>
-<ul>
-<li>The locale information for the data. ISO-639-1 language and ISO-3166-1 country code. Ex: &#39;en_US&#39;.</li>
+<li>The value of the nextToken from the previous page.</li>
 </ul>
 </li>
 <li>
@@ -440,15 +434,21 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p end-offset=string</strong></p>
+<p><strong>-p start-position=string</strong></p>
 <ul>
-<li>The end offset to end retrieving data from.</li>
+<li>The start position to start retrieving data from.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p page-token=string</strong></p>
+<p><strong>-p updated-min=string</strong></p>
 <ul>
-<li>The value of the nextToken from the previous page.</li>
+<li>RFC 3339 timestamp to restrict to items updated since this timestamp (inclusive).</li>
+</ul>
+</li>
+<li>
+<p><strong>-p end-position=string</strong></p>
+<ul>
+<li>The end position to end retrieving data from.</li>
 </ul>
 </li>
 <li>
@@ -470,9 +470,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p volume-annotations-version=string</strong></p>
+<p><strong>-p end-offset=string</strong></p>
 <ul>
-<li>The version of the volume annotations that you are requesting.</li>
+<li>The end offset to end retrieving data from.</li>
 </ul>
 </li>
 <li>
@@ -482,15 +482,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p end-position=string</strong></p>
+<p><strong>-p volume-annotations-version=string</strong></p>
 <ul>
-<li>The end position to end retrieving data from.</li>
+<li>The version of the volume annotations that you are requesting.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p updated-min=string</strong></p>
+<p><strong>-p locale=string</strong></p>
 <ul>
-<li>RFC 3339 timestamp to restrict to items updated since this timestamp (inclusive).</li>
+<li>The locale information for the data. ISO-639-1 language and ISO-3166-1 country code. Ex: &#39;en_US&#39;.</li>
 </ul>
 </li>
 </ul>

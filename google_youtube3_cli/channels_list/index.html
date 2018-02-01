@@ -649,11 +649,11 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p on-behalf-of-content-owner=string</strong></p>
+<p><strong>-p managed-by-me=boolean</strong></p>
 <ul>
 <li>
 <p>Note: This parameter is intended exclusively for YouTube content partners.</p>
-<p>The onBehalfOfContentOwner parameter indicates that the request&#39;s authorization credentials identify a YouTube CMS user who is acting on behalf of the content owner specified in the parameter value. This parameter is intended for YouTube content partners that own and manage many different YouTube channels. It allows content owners to authenticate once and get access to all their video and channel data, without having to provide authentication credentials for each individual channel. The CMS account that the user authenticates with must be linked to the specified YouTube content owner.</p>
+<p>Set this parameter&#39;s value to true to instruct the API to only return channels managed by the content owner that the onBehalfOfContentOwner parameter specifies. The user must be authenticated as a CMS account linked to the specified content owner and onBehalfOfContentOwner must be provided.</p>
 </li>
 </ul>
 </li>
@@ -664,30 +664,30 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
+<p><strong>-p on-behalf-of-content-owner=string</strong></p>
+<ul>
+<li>
+<p>Note: This parameter is intended exclusively for YouTube content partners.</p>
+<p>The onBehalfOfContentOwner parameter indicates that the request&#39;s authorization credentials identify a YouTube CMS user who is acting on behalf of the content owner specified in the parameter value. This parameter is intended for YouTube content partners that own and manage many different YouTube channels. It allows content owners to authenticate once and get access to all their video and channel data, without having to provide authentication credentials for each individual channel. The CMS account that the user authenticates with must be linked to the specified YouTube content owner.</p>
+</li>
+</ul>
+</li>
+<li>
 <p><strong>-p hl=string</strong></p>
 <ul>
 <li>The hl parameter should be used for filter out the properties that are not in the given language. Used for the brandingSettings part.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p id=string</strong></p>
-<ul>
-<li>The id parameter specifies a comma-separated list of the YouTube channel ID(s) for the resource(s) that are being retrieved. In a channel resource, the id property specifies the channel&#39;s YouTube channel ID.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p managed-by-me=boolean</strong></p>
-<ul>
-<li>
-<p>Note: This parameter is intended exclusively for YouTube content partners.</p>
-<p>Set this parameter&#39;s value to true to instruct the API to only return channels managed by the content owner that the onBehalfOfContentOwner parameter specifies. The user must be authenticated as a CMS account linked to the specified content owner and onBehalfOfContentOwner must be provided.</p>
-</li>
-</ul>
-</li>
-<li>
 <p><strong>-p my-subscribers=boolean</strong></p>
 <ul>
 <li>Use the subscriptions.list method and its mySubscribers parameter to retrieve a list of subscribers to the authenticated user&#39;s channel.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p id=string</strong></p>
+<ul>
+<li>The id parameter specifies a comma-separated list of the YouTube channel ID(s) for the resource(s) that are being retrieved. In a channel resource, the id property specifies the channel&#39;s YouTube channel ID.</li>
 </ul>
 </li>
 </ul>

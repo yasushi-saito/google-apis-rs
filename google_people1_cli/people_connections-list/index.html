@@ -211,13 +211,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p sort-order=string</strong></p>
-<ul>
-<li>The order in which the connections should be sorted. Defaults to
-    <code>LAST_MODIFIED_ASCENDING</code>.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p person-fields=string</strong></p>
 <ul>
 <li>
@@ -255,6 +248,13 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
+<p><strong>-p sort-order=string</strong></p>
+<ul>
+<li>The order in which the connections should be sorted. Defaults to
+    <code>LAST_MODIFIED_ASCENDING</code>.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p request-sync-token=boolean</strong></p>
 <ul>
 <li>Whether the response should include a sync token, which can be used to get
@@ -262,16 +262,16 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p page-token=string</strong></p>
-<ul>
-<li>The token of the page to be returned.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p sync-token=string</strong></p>
 <ul>
 <li>A sync token, returned by a previous call to <code>people.connections.list</code>.
     Only resources changed since the sync token was created will be returned.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p page-token=string</strong></p>
+<ul>
+<li>The token of the page to be returned.</li>
 </ul>
 </li>
 <li>

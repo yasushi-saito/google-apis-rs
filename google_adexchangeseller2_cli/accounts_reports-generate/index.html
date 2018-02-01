@@ -214,15 +214,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p start-index=integer</strong></p>
+<p><strong>-p metric=string</strong></p>
 <ul>
-<li>Index of the first row of report data to return.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p max-results=integer</strong></p>
-<ul>
-<li>The maximum number of rows of report data to return.</li>
+<li>Numeric columns to include in the report.</li>
 </ul>
 </li>
 <li>
@@ -232,9 +226,21 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p metric=string</strong></p>
+<p><strong>-p locale=string</strong></p>
 <ul>
-<li>Numeric columns to include in the report.</li>
+<li>Optional locale to use for translating report output to a local language. Defaults to &#34;en_US&#34; if not specified.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p max-results=integer</strong></p>
+<ul>
+<li>The maximum number of rows of report data to return.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p filter=string</strong></p>
+<ul>
+<li>Filters to be run on the report.</li>
 </ul>
 </li>
 <li>
@@ -244,15 +250,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p locale=string</strong></p>
+<p><strong>-p start-index=integer</strong></p>
 <ul>
-<li>Optional locale to use for translating report output to a local language. Defaults to &#34;en_US&#34; if not specified.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p filter=string</strong></p>
-<ul>
-<li>Filters to be run on the report.</li>
+<li>Index of the first row of report data to return.</li>
 </ul>
 </li>
 </ul>

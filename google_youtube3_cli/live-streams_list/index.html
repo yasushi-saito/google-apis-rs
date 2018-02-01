@@ -620,21 +620,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p max-results=integer</strong></p>
-<ul>
-<li>The maxResults parameter specifies the maximum number of items that should be returned in the result set.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p page-token=string</strong></p>
 <ul>
 <li>The pageToken parameter identifies a specific page in the result set that should be returned. In an API response, the nextPageToken and prevPageToken properties identify other pages that could be retrieved.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p mine=boolean</strong></p>
+<p><strong>-p id=string</strong></p>
 <ul>
-<li>The mine parameter can be used to instruct the API to only return streams owned by the authenticated user. Set the parameter value to true to only retrieve your own streams.</li>
+<li>The id parameter specifies a comma-separated list of YouTube stream IDs that identify the streams being retrieved. In a liveStream resource, the id property specifies the stream&#39;s ID.</li>
 </ul>
 </li>
 <li>
@@ -648,6 +642,12 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
+<p><strong>-p mine=boolean</strong></p>
+<ul>
+<li>The mine parameter can be used to instruct the API to only return streams owned by the authenticated user. Set the parameter value to true to only retrieve your own streams.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p on-behalf-of-content-owner=string</strong></p>
 <ul>
 <li>
@@ -657,9 +657,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p id=string</strong></p>
+<p><strong>-p max-results=integer</strong></p>
 <ul>
-<li>The id parameter specifies a comma-separated list of YouTube stream IDs that identify the streams being retrieved. In a liveStream resource, the id property specifies the stream&#39;s ID.</li>
+<li>The maxResults parameter specifies the maximum number of items that should be returned in the result set.</li>
 </ul>
 </li>
 </ul>

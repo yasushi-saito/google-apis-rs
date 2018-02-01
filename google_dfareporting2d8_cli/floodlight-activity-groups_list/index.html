@@ -1378,9 +1378,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p sort-order=string</strong></p>
+<p><strong>-p type=string</strong></p>
 <ul>
-<li>Order of sorted results.</li>
+<li>Select only floodlight activity groups with the specified floodlight activity group type.</li>
 </ul>
 </li>
 <li>
@@ -1390,27 +1390,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p search-string=string</strong></p>
-<ul>
-<li>Allows searching for objects by name or ID. Wildcards (<em>) are allowed. For example, &#34;floodlightactivitygroup</em>2015&#34; will return objects with names like &#34;floodlightactivitygroup June 2015&#34;, &#34;floodlightactivitygroup April 2015&#34;, or simply &#34;floodlightactivitygroup 2015&#34;. Most of the searches also add wildcards implicitly at the start and the end of the search string. For example, a search string of &#34;floodlightactivitygroup&#34; will match objects with name &#34;my floodlightactivitygroup activity&#34;, &#34;floodlightactivitygroup 2015&#34;, or simply &#34;floodlightactivitygroup&#34;.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p floodlight-configuration-id=string</strong></p>
 <ul>
 <li>Select only floodlight activity groups with the specified floodlight configuration ID. Must specify either advertiserId, or floodlightConfigurationId for a non-empty result.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p type=string</strong></p>
+<p><strong>-p search-string=string</strong></p>
 <ul>
-<li>Select only floodlight activity groups with the specified floodlight activity group type.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p ids=string</strong></p>
-<ul>
-<li>Select only floodlight activity groups with the specified IDs. Must specify either advertiserId or floodlightConfigurationId for a non-empty result.</li>
+<li>Allows searching for objects by name or ID. Wildcards (<em>) are allowed. For example, &#34;floodlightactivitygroup</em>2015&#34; will return objects with names like &#34;floodlightactivitygroup June 2015&#34;, &#34;floodlightactivitygroup April 2015&#34;, or simply &#34;floodlightactivitygroup 2015&#34;. Most of the searches also add wildcards implicitly at the start and the end of the search string. For example, a search string of &#34;floodlightactivitygroup&#34; will match objects with name &#34;my floodlightactivitygroup activity&#34;, &#34;floodlightactivitygroup 2015&#34;, or simply &#34;floodlightactivitygroup&#34;.</li>
 </ul>
 </li>
 <li>
@@ -1420,15 +1408,27 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
+<p><strong>-p advertiser-id=string</strong></p>
+<ul>
+<li>Select only floodlight activity groups with the specified advertiser ID. Must specify either advertiserId or floodlightConfigurationId for a non-empty result.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p page-token=string</strong></p>
 <ul>
 <li>Value of the nextPageToken from the previous result page.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p advertiser-id=string</strong></p>
+<p><strong>-p ids=string</strong></p>
 <ul>
-<li>Select only floodlight activity groups with the specified advertiser ID. Must specify either advertiserId or floodlightConfigurationId for a non-empty result.</li>
+<li>Select only floodlight activity groups with the specified IDs. Must specify either advertiserId or floodlightConfigurationId for a non-empty result.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p sort-order=string</strong></p>
+<ul>
+<li>Order of sorted results.</li>
 </ul>
 </li>
 </ul>
