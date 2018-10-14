@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Watch - calendar v1.0.7+20171205</title>
+  <title>Watch - calendar v1.0.8+20181009</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> calendar v1.0.7+20171205</a>
+        <a href=".." class="icon icon-home"> calendar v1.0.8+20181009</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -293,7 +293,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">calendar v1.0.7+20171205</a>
+        <a href="..">calendar v1.0.8+20181009</a>
       </nav>
 
       
@@ -327,6 +327,8 @@
 <p>You will need authorization for at least one of the following scopes to make a valid call:</p>
 <ul>
 <li><em>https://www.googleapis.com/auth/calendar</em></li>
+<li><em>https://www.googleapis.com/auth/calendar.events</em></li>
+<li><em>https://www.googleapis.com/auth/calendar.events.readonly</em></li>
 <li><em>https://www.googleapis.com/auth/calendar.readonly</em></li>
 </ul>
 <p>If unset, the scope for this method defaults to <em>https://www.googleapis.com/auth/calendar</em>.
@@ -358,23 +360,23 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    address=accusam</code><ul>
+<li><code>-r .    address=ipsum</code><ul>
 <li>The address where notifications are delivered for this channel.</li>
 </ul>
 </li>
-<li><code>expiration=clita</code><ul>
+<li><code>expiration=labore</code><ul>
 <li>Date and time of notification channel expiration, expressed as a Unix timestamp, in milliseconds. Optional.</li>
 </ul>
 </li>
-<li><code>id=sea</code><ul>
+<li><code>id=lorem</code><ul>
 <li>A UUID or similar unique string that identifies this channel.</li>
 </ul>
 </li>
-<li><code>kind=vero</code><ul>
+<li><code>kind=aliquyam</code><ul>
 <li>Identifies this as a notification channel used to watch for changes to a resource. Value: the fixed string &#34;api#channel&#34;.</li>
 </ul>
 </li>
-<li><code>params=key=dolores</code><ul>
+<li><code>params=key=sanctus</code><ul>
 <li>Additional parameters controlling delivery channel behavior. Optional.</li>
 <li>the value will be associated with the given <code>key</code></li>
 </ul>
@@ -383,19 +385,19 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>A Boolean value to indicate whether payload is wanted. Optional.</li>
 </ul>
 </li>
-<li><code>resource-id=ut</code><ul>
+<li><code>resource-id=consetetur</code><ul>
 <li>An opaque ID that identifies the resource being watched on this channel. Stable across different API versions.</li>
 </ul>
 </li>
-<li><code>resource-uri=amet</code><ul>
+<li><code>resource-uri=et</code><ul>
 <li>A version-specific identifier for the watched resource.</li>
 </ul>
 </li>
-<li><code>token=sed</code><ul>
+<li><code>token=justo</code><ul>
 <li>An arbitrary string delivered to the target address with each notification delivered over this channel. Optional.</li>
 </ul>
 </li>
-<li><code>type=sit</code><ul>
+<li><code>type=kasd</code><ul>
 <li>The type of delivery mechanism used for this channel.</li>
 </ul>
 </li>
@@ -425,6 +427,12 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
+<p><strong>-p show-hidden-invitations=boolean</strong></p>
+<ul>
+<li>Whether to include hidden invitations in the result. Optional. The default is False.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p sync-token=string</strong></p>
 <ul>
 <li>
@@ -451,63 +459,9 @@ Optional. The default is to return all entries.</p>
 </ul>
 </li>
 <li>
-<p><strong>-p always-include-email=boolean</strong></p>
+<p><strong>-p shared-extended-property=string</strong></p>
 <ul>
-<li>Whether to always include a value in the email field for the organizer, creator and attendees, even if no real email is available (i.e. a generated, non-working value will be provided). The use of this option is discouraged and should only be used by clients which cannot handle the absence of an email address value in the mentioned places. Optional. The default is False.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p i-cal-uid=string</strong></p>
-<ul>
-<li>Specifies event ID in the iCalendar format to be included in the response. Optional.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p time-min=string</strong></p>
-<ul>
-<li>Lower bound (inclusive) for an event&#39;s end time to filter by. Optional. The default is not to filter by end time. Must be an RFC3339 timestamp with mandatory time zone offset, e.g., 2011-06-03T10:00:00-07:00, 2011-06-03T10:00:00Z. Milliseconds may be provided but will be ignored. If timeMax is set, timeMin must be smaller than timeMax.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p time-max=string</strong></p>
-<ul>
-<li>Upper bound (exclusive) for an event&#39;s start time to filter by. Optional. The default is not to filter by start time. Must be an RFC3339 timestamp with mandatory time zone offset, e.g., 2011-06-03T10:00:00-07:00, 2011-06-03T10:00:00Z. Milliseconds may be provided but will be ignored. If timeMin is set, timeMax must be greater than timeMin.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p max-attendees=integer</strong></p>
-<ul>
-<li>The maximum number of attendees to include in the response. If there are more than the specified number of attendees, only the participant is returned. Optional.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p q=string</strong></p>
-<ul>
-<li>Free text search terms to find events that match these terms in any field, except for extended properties. Optional.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p private-extended-property=string</strong></p>
-<ul>
-<li>Extended properties constraint specified as propertyName=value. Matches only private properties. This parameter might be repeated multiple times to return events that match all given constraints.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p show-hidden-invitations=boolean</strong></p>
-<ul>
-<li>Whether to include hidden invitations in the result. Optional. The default is False.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p single-events=boolean</strong></p>
-<ul>
-<li>Whether to expand recurring events into instances and only return single one-off events and instances of recurring events, but not the underlying recurring events themselves. Optional. The default is False.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p page-token=string</strong></p>
-<ul>
-<li>Token specifying which result page to return. Optional.</li>
+<li>Extended properties constraint specified as propertyName=value. Matches only shared properties. This parameter might be repeated multiple times to return events that match all given constraints.</li>
 </ul>
 </li>
 <li>
@@ -523,21 +477,69 @@ Optional. The default is to return all entries.</p>
 </ul>
 </li>
 <li>
-<p><strong>-p max-results=integer</strong></p>
-<ul>
-<li>Maximum number of events returned on one result page. The number of events in the resulting page may be less than this value, or none at all, even if there are more events matching the query. Incomplete pages can be detected by a non-empty nextPageToken field in the response. By default the value is 250 events. The page size can never be larger than 2500 events. Optional.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p show-deleted=boolean</strong></p>
 <ul>
 <li>Whether to include deleted events (with status equals &#34;cancelled&#34;) in the result. Cancelled instances of recurring events (but not the underlying recurring event) will still be included if showDeleted and singleEvents are both False. If showDeleted and singleEvents are both True, only single instances of deleted events (but not the underlying recurring events) are returned. Optional. The default is False.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p shared-extended-property=string</strong></p>
+<p><strong>-p q=string</strong></p>
 <ul>
-<li>Extended properties constraint specified as propertyName=value. Matches only shared properties. This parameter might be repeated multiple times to return events that match all given constraints.</li>
+<li>Free text search terms to find events that match these terms in any field, except for extended properties. Optional.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p always-include-email=boolean</strong></p>
+<ul>
+<li>Whether to always include a value in the email field for the organizer, creator and attendees, even if no real email is available (i.e. a generated, non-working value will be provided). The use of this option is discouraged and should only be used by clients which cannot handle the absence of an email address value in the mentioned places. Optional. The default is False.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p private-extended-property=string</strong></p>
+<ul>
+<li>Extended properties constraint specified as propertyName=value. Matches only private properties. This parameter might be repeated multiple times to return events that match all given constraints.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p max-attendees=integer</strong></p>
+<ul>
+<li>The maximum number of attendees to include in the response. If there are more than the specified number of attendees, only the participant is returned. Optional.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p single-events=boolean</strong></p>
+<ul>
+<li>Whether to expand recurring events into instances and only return single one-off events and instances of recurring events, but not the underlying recurring events themselves. Optional. The default is False.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p time-max=string</strong></p>
+<ul>
+<li>Upper bound (exclusive) for an event&#39;s start time to filter by. Optional. The default is not to filter by start time. Must be an RFC3339 timestamp with mandatory time zone offset, e.g., 2011-06-03T10:00:00-07:00, 2011-06-03T10:00:00Z. Milliseconds may be provided but will be ignored. If timeMin is set, timeMax must be greater than timeMin.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p time-min=string</strong></p>
+<ul>
+<li>Lower bound (inclusive) for an event&#39;s end time to filter by. Optional. The default is not to filter by end time. Must be an RFC3339 timestamp with mandatory time zone offset, e.g., 2011-06-03T10:00:00-07:00, 2011-06-03T10:00:00Z. Milliseconds may be provided but will be ignored. If timeMax is set, timeMin must be smaller than timeMax.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p max-results=integer</strong></p>
+<ul>
+<li>Maximum number of events returned on one result page. The number of events in the resulting page may be less than this value, or none at all, even if there are more events matching the query. Incomplete pages can be detected by a non-empty nextPageToken field in the response. By default the value is 250 events. The page size can never be larger than 2500 events. Optional.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p i-cal-uid=string</strong></p>
+<ul>
+<li>Specifies event ID in the iCalendar format to be included in the response. Optional.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p page-token=string</strong></p>
+<ul>
+<li>Token specifying which result page to return. Optional.</li>
 </ul>
 </li>
 </ul>
@@ -577,13 +579,13 @@ Optional. The default is to return all entries.</p>
 <li>
 <p><strong>-p quota-user=string</strong></p>
 <ul>
-<li>Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. Overrides userIp if both are provided.</li>
+<li>An opaque string that represents a user for quota purposes. Must not exceed 40 characters.</li>
 </ul>
 </li>
 <li>
 <p><strong>-p user-ip=string</strong></p>
 <ul>
-<li>IP address of the site where the request originates. Use this if you want to enforce per-user limits.</li>
+<li>Deprecated. Please use quotaUser instead.</li>
 </ul>
 </li>
 </ul>

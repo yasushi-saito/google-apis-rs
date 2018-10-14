@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>List - calendar v1.0.7+20171205</title>
+  <title>List - calendar v1.0.8+20181009</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> calendar v1.0.7+20171205</a>
+        <a href=".." class="icon icon-home"> calendar v1.0.8+20181009</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -281,7 +281,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">calendar v1.0.7+20171205</a>
+        <a href="..">calendar v1.0.8+20181009</a>
       </nav>
 
       
@@ -310,7 +310,7 @@
           <div role="main">
             <div class="section">
               
-                <p>Returns entries on the user&#39;s calendar list.</p>
+                <p>Returns the calendars on the user&#39;s calendar list.</p>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for at least one of the following scopes to make a valid call:</p>
 <ul>
@@ -336,21 +336,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p page-token=string</strong></p>
+<p><strong>-p show-deleted=boolean</strong></p>
 <ul>
-<li>Token specifying which result page to return. Optional.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p show-hidden=boolean</strong></p>
-<ul>
-<li>Whether to show hidden entries. Optional. The default is False.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p min-access-role=string</strong></p>
-<ul>
-<li>The minimum access role for the user in the returned entries. Optional. The default is no restriction.</li>
+<li>Whether to include deleted calendar list entries in the result. Optional. The default is False.</li>
 </ul>
 </li>
 <li>
@@ -364,15 +352,27 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
+<p><strong>-p page-token=string</strong></p>
+<ul>
+<li>Token specifying which result page to return. Optional.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p show-hidden=boolean</strong></p>
+<ul>
+<li>Whether to show hidden entries. Optional. The default is False.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p max-results=integer</strong></p>
 <ul>
 <li>Maximum number of entries returned on one result page. By default the value is 100 entries. The page size can never be larger than 250 entries. Optional.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p show-deleted=boolean</strong></p>
+<p><strong>-p min-access-role=string</strong></p>
 <ul>
-<li>Whether to include deleted calendar list entries in the result. Optional. The default is False.</li>
+<li>The minimum access role for the user in the returned entries. Optional. The default is no restriction.</li>
 </ul>
 </li>
 </ul>
@@ -412,13 +412,13 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <li>
 <p><strong>-p quota-user=string</strong></p>
 <ul>
-<li>Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. Overrides userIp if both are provided.</li>
+<li>An opaque string that represents a user for quota purposes. Must not exceed 40 characters.</li>
 </ul>
 </li>
 <li>
 <p><strong>-p user-ip=string</strong></p>
 <ul>
-<li>IP address of the site where the request originates. Use this if you want to enforce per-user limits.</li>
+<li>Deprecated. Please use quotaUser instead.</li>
 </ul>
 </li>
 </ul>

@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>List - drive v1.0.7+20171201</title>
+  <title>List - drive v1.0.8+20181004</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> drive v1.0.7+20171201</a>
+        <a href=".." class="icon icon-home"> drive v1.0.8+20181004</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -299,7 +299,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">drive v1.0.7+20171201</a>
+        <a href="..">drive v1.0.8+20181004</a>
       </nav>
 
       
@@ -366,9 +366,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p include-team-drive-items=boolean</strong></p>
+<p><strong>-p include-removed=boolean</strong></p>
 <ul>
-<li>Whether Team Drive files or changes should be included in results.</li>
+<li>Whether to include changes indicating that items have been removed from the list of changes, for example by deletion or loss of access.</li>
 </ul>
 </li>
 <li>
@@ -378,9 +378,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p restrict-to-my-drive=boolean</strong></p>
+<p><strong>-p include-team-drive-items=boolean</strong></p>
 <ul>
-<li>Whether to restrict the results to changes inside the My Drive hierarchy. This omits changes to files such as those in the Application Data folder or shared files which have not been added to My Drive.</li>
+<li>Whether Team Drive files or changes should be included in results.</li>
 </ul>
 </li>
 <li>
@@ -390,27 +390,27 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p include-corpus-removals=boolean</strong></p>
-<ul>
-<li>Whether changes should include the file resource if the file is still accessible by the user at the time of the request, even when a file was removed from the list of changes and there will be no further change entries for this file.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p supports-team-drives=boolean</strong></p>
 <ul>
 <li>Whether the requesting application supports Team Drives.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p team-drive-id=string</strong></p>
+<p><strong>-p include-corpus-removals=boolean</strong></p>
 <ul>
-<li>The Team Drive from which changes will be returned. If specified the change IDs will be reflective of the Team Drive; use the combined Team Drive ID and change ID as an identifier.</li>
+<li>Whether changes should include the file resource if the file is still accessible by the user at the time of the request, even when a file was removed from the list of changes and there will be no further change entries for this file.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p include-removed=boolean</strong></p>
+<p><strong>-p restrict-to-my-drive=boolean</strong></p>
 <ul>
-<li>Whether to include changes indicating that items have been removed from the list of changes, for example by deletion or loss of access.</li>
+<li>Whether to restrict the results to changes inside the My Drive hierarchy. This omits changes to files such as those in the Application Data folder or shared files which have not been added to My Drive.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p team-drive-id=string</strong></p>
+<ul>
+<li>The Team Drive from which changes will be returned. If specified the change IDs will be reflective of the Team Drive; use the combined Team Drive ID and change ID as an identifier.</li>
 </ul>
 </li>
 </ul>
@@ -450,13 +450,13 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <li>
 <p><strong>-p quota-user=string</strong></p>
 <ul>
-<li>Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. Overrides userIp if both are provided.</li>
+<li>An opaque string that represents a user for quota purposes. Must not exceed 40 characters.</li>
 </ul>
 </li>
 <li>
 <p><strong>-p user-ip=string</strong></p>
 <ul>
-<li>IP address of the site where the request originates. Use this if you want to enforce per-user limits.</li>
+<li>Deprecated. Please use quotaUser instead.</li>
 </ul>
 </li>
 </ul>

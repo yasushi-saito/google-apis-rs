@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Instances - calendar v1.0.7+20171205</title>
+  <title>Instances - calendar v1.0.8+20181009</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> calendar v1.0.7+20171205</a>
+        <a href=".." class="icon icon-home"> calendar v1.0.8+20181009</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -284,7 +284,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">calendar v1.0.7+20171205</a>
+        <a href="..">calendar v1.0.8+20181009</a>
       </nav>
 
       
@@ -318,9 +318,11 @@
 <p>You will need authorization for at least one of the following scopes to make a valid call:</p>
 <ul>
 <li><em>https://www.googleapis.com/auth/calendar</em></li>
+<li><em>https://www.googleapis.com/auth/calendar.events</em></li>
+<li><em>https://www.googleapis.com/auth/calendar.events.readonly</em></li>
 <li><em>https://www.googleapis.com/auth/calendar.readonly</em></li>
 </ul>
-<p>If unset, the scope for this method defaults to <em>https://www.googleapis.com/auth/calendar.readonly</em>.
+<p>If unset, the scope for this method defaults to <em>https://www.googleapis.com/auth/calendar.events.readonly</em>.
 You can set the scope for this method like this: <code>calendar3 --scope &lt;scope&gt; events instances ...</code></p>
 <h1 id="required-scalar-arguments">Required Scalar Arguments</h1>
 <ul>
@@ -362,27 +364,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p original-start=string</strong></p>
+<p><strong>-p page-token=string</strong></p>
 <ul>
-<li>The original start time of the instance in the result. Optional.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p time-min=string</strong></p>
-<ul>
-<li>Lower bound (inclusive) for an event&#39;s end time to filter by. Optional. The default is not to filter by end time. Must be an RFC3339 timestamp with mandatory time zone offset.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p show-deleted=boolean</strong></p>
-<ul>
-<li>Whether to include deleted events (with status equals &#34;cancelled&#34;) in the result. Cancelled instances of recurring events will still be included if singleEvents is False. Optional. The default is False.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p max-results=integer</strong></p>
-<ul>
-<li>Maximum number of events returned on one result page. By default the value is 250 events. The page size can never be larger than 2500 events. Optional.</li>
+<li>Token specifying which result page to return. Optional.</li>
 </ul>
 </li>
 <li>
@@ -392,15 +376,33 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
+<p><strong>-p max-results=integer</strong></p>
+<ul>
+<li>Maximum number of events returned on one result page. By default the value is 250 events. The page size can never be larger than 2500 events. Optional.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p show-deleted=boolean</strong></p>
+<ul>
+<li>Whether to include deleted events (with status equals &#34;cancelled&#34;) in the result. Cancelled instances of recurring events will still be included if singleEvents is False. Optional. The default is False.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p time-max=string</strong></p>
 <ul>
 <li>Upper bound (exclusive) for an event&#39;s start time to filter by. Optional. The default is not to filter by start time. Must be an RFC3339 timestamp with mandatory time zone offset.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p page-token=string</strong></p>
+<p><strong>-p time-min=string</strong></p>
 <ul>
-<li>Token specifying which result page to return. Optional.</li>
+<li>Lower bound (inclusive) for an event&#39;s end time to filter by. Optional. The default is not to filter by end time. Must be an RFC3339 timestamp with mandatory time zone offset.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p original-start=string</strong></p>
+<ul>
+<li>The original start time of the instance in the result. Optional.</li>
 </ul>
 </li>
 </ul>
@@ -440,13 +442,13 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <li>
 <p><strong>-p quota-user=string</strong></p>
 <ul>
-<li>Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. Overrides userIp if both are provided.</li>
+<li>An opaque string that represents a user for quota purposes. Must not exceed 40 characters.</li>
 </ul>
 </li>
 <li>
 <p><strong>-p user-ip=string</strong></p>
 <ul>
-<li>IP address of the site where the request originates. Use this if you want to enforce per-user limits.</li>
+<li>Deprecated. Please use quotaUser instead.</li>
 </ul>
 </li>
 </ul>

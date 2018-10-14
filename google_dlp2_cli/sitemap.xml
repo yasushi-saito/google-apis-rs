@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-dlp2-cli/</loc>
+     <lastmod>2018-10-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-dlp2-cli/info-types_list/</loc>
+     <lastmod>2018-10-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-dlp2-cli/organizations_deidentify-templates-create/</loc>
+     <lastmod>2018-10-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-dlp2-cli/organizations_deidentify-templates-delete/</loc>
+     <lastmod>2018-10-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-dlp2-cli/organizations_deidentify-templates-get/</loc>
+     <lastmod>2018-10-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-dlp2-cli/organizations_deidentify-templates-list/</loc>
+     <lastmod>2018-10-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-dlp2-cli/organizations_deidentify-templates-patch/</loc>
+     <lastmod>2018-10-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-dlp2-cli/organizations_inspect-templates-create/</loc>
+     <lastmod>2018-10-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-dlp2-cli/organizations_inspect-templates-delete/</loc>
+     <lastmod>2018-10-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-dlp2-cli/organizations_inspect-templates-get/</loc>
+     <lastmod>2018-10-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-dlp2-cli/organizations_inspect-templates-list/</loc>
+     <lastmod>2018-10-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-dlp2-cli/organizations_inspect-templates-patch/</loc>
+     <lastmod>2018-10-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-dlp2-cli/organizations_stored-info-types-create/</loc>
+     <lastmod>2018-10-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-dlp2-cli/organizations_stored-info-types-delete/</loc>
+     <lastmod>2018-10-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-dlp2-cli/organizations_stored-info-types-get/</loc>
+     <lastmod>2018-10-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-dlp2-cli/organizations_stored-info-types-list/</loc>
+     <lastmod>2018-10-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-dlp2-cli/organizations_stored-info-types-patch/</loc>
+     <lastmod>2018-10-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-dlp2-cli/projects_content-deidentify/</loc>
+     <lastmod>2018-10-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-dlp2-cli/projects_content-inspect/</loc>
+     <lastmod>2018-10-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-dlp2-cli/projects_content-reidentify/</loc>
+     <lastmod>2018-10-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-dlp2-cli/projects_deidentify-templates-create/</loc>
+     <lastmod>2018-10-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-dlp2-cli/projects_deidentify-templates-delete/</loc>
+     <lastmod>2018-10-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-dlp2-cli/projects_deidentify-templates-get/</loc>
+     <lastmod>2018-10-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-dlp2-cli/projects_deidentify-templates-list/</loc>
+     <lastmod>2018-10-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-dlp2-cli/projects_deidentify-templates-patch/</loc>
+     <lastmod>2018-10-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-dlp2-cli/projects_dlp-jobs-cancel/</loc>
+     <lastmod>2018-10-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-dlp2-cli/projects_dlp-jobs-create/</loc>
+     <lastmod>2018-10-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-dlp2-cli/projects_dlp-jobs-delete/</loc>
+     <lastmod>2018-10-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-dlp2-cli/projects_dlp-jobs-get/</loc>
+     <lastmod>2018-10-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-dlp2-cli/projects_dlp-jobs-list/</loc>
+     <lastmod>2018-10-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-dlp2-cli/projects_image-redact/</loc>
+     <lastmod>2018-10-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-dlp2-cli/projects_inspect-templates-create/</loc>
+     <lastmod>2018-10-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-dlp2-cli/projects_inspect-templates-delete/</loc>
+     <lastmod>2018-10-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-dlp2-cli/projects_inspect-templates-get/</loc>
+     <lastmod>2018-10-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-dlp2-cli/projects_inspect-templates-list/</loc>
+     <lastmod>2018-10-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-dlp2-cli/projects_inspect-templates-patch/</loc>
+     <lastmod>2018-10-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-dlp2-cli/projects_job-triggers-create/</loc>
+     <lastmod>2018-10-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-dlp2-cli/projects_job-triggers-delete/</loc>
+     <lastmod>2018-10-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-dlp2-cli/projects_job-triggers-get/</loc>
+     <lastmod>2018-10-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-dlp2-cli/projects_job-triggers-list/</loc>
+     <lastmod>2018-10-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-dlp2-cli/projects_job-triggers-patch/</loc>
+     <lastmod>2018-10-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-dlp2-cli/projects_stored-info-types-create/</loc>
+     <lastmod>2018-10-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-dlp2-cli/projects_stored-info-types-delete/</loc>
+     <lastmod>2018-10-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-dlp2-cli/projects_stored-info-types-get/</loc>
+     <lastmod>2018-10-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-dlp2-cli/projects_stored-info-types-list/</loc>
+     <lastmod>2018-10-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://byron.github.io/google-apis-rs/google-dlp2-cli/projects_stored-info-types-patch/</loc>
+     <lastmod>2018-10-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+</urlset>

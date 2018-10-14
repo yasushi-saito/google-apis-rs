@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Time Series List - Monitoring v1.0.7+20171204</title>
+  <title>Time Series List - Monitoring v1.0.8+20181009</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Monitoring v1.0.7+20171204</a>
+        <a href=".." class="icon icon-home"> Monitoring v1.0.8+20181009</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -56,6 +56,26 @@
 		
     <span class="caption-text">Projects</span>
     <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../projects_alert-policies-create/">Alert Policies Create</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_alert-policies-delete/">Alert Policies Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_alert-policies-get/">Alert Policies Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_alert-policies-list/">Alert Policies List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_alert-policies-patch/">Alert Policies Patch</a>
+                </li>
                 <li class="">
                     
     <a class="" href="../projects_collectd-time-series-create/">Collectd Time Series Create</a>
@@ -107,6 +127,46 @@
                 <li class="">
                     
     <a class="" href="../projects_monitored-resource-descriptors-list/">Monitored Resource Descriptors List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_notification-channel-descriptors-get/">Notification Channel Descriptors Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_notification-channel-descriptors-list/">Notification Channel Descriptors List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_notification-channels-create/">Notification Channels Create</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_notification-channels-delete/">Notification Channels Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_notification-channels-get/">Notification Channels Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_notification-channels-get-verification-code/">Notification Channels Get Verification Code</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_notification-channels-list/">Notification Channels List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_notification-channels-patch/">Notification Channels Patch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_notification-channels-send-verification-code/">Notification Channels Send Verification Code</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_notification-channels-verify/">Notification Channels Verify</a>
                 </li>
                 <li class="">
                     
@@ -178,7 +238,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Monitoring v1.0.7+20171204</a>
+        <a href="..">Monitoring v1.0.8+20181009</a>
       </nav>
 
       
@@ -241,47 +301,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p interval-start-time=string</strong></p>
-<ul>
-<li>Optional. The beginning of the time interval. The default value for the start time is the end time. The start time must not be later than the end time.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p page-size=integer</strong></p>
-<ul>
-<li>A positive number that is the maximum number of results to return. When view field sets to FULL, it limits the number of Points server will return; if view field is HEADERS, it limits the number of TimeSeries server will return.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p order-by=string</strong></p>
 <ul>
-<li>Specifies the order in which the points of the time series should be returned. By default, results are not ordered. Currently, this field must be left blank.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p aggregation-per-series-aligner=string</strong></p>
-<ul>
-<li>The approach to be used to align individual time series. Not all alignment functions may be applied to all time series, depending on the metric type and value type of the original time series. Alignment may change the metric type or the value type of the time series.Time series data must be aligned in order to perform cross-time series reduction. If crossSeriesReducer is specified, then perSeriesAligner must be specified and not equal ALIGN_NONE and alignmentPeriod must be specified; otherwise, an error is returned.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p filter=string</strong></p>
-<ul>
-<li>A monitoring filter that specifies which time series should be returned. The filter must specify a single metric type, and can additionally specify metric labels and other information. For example:
-    metric.type = &#34;compute.googleapis.com/instance/cpu/usage_time&#34; AND
-        metric.label.instance_name = &#34;my-instance-name&#34;</li>
-</ul>
-</li>
-<li>
-<p><strong>-p aggregation-alignment-period=string</strong></p>
-<ul>
-<li>The alignment period for per-time series alignment. If present, alignmentPeriod must be at least 60 seconds. After per-time series alignment, each time series will contain data points only on the period boundaries. If perSeriesAligner is not specified or equals ALIGN_NONE, then this field is ignored. If perSeriesAligner is specified and does not equal ALIGN_NONE, then this field must be defined; otherwise an error is returned.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p interval-end-time=string</strong></p>
-<ul>
-<li>Required. The end of the time interval.</li>
+<li>Unsupported: must be left blank. The points in each time series are returned in reverse time order.</li>
 </ul>
 </li>
 <li>
@@ -297,15 +319,53 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p aggregation-cross-series-reducer=string</strong></p>
+<p><strong>-p aggregation-per-series-aligner=string</strong></p>
 <ul>
-<li>The approach to be used to combine time series. Not all reducer functions may be applied to all time series, depending on the metric type and the value type of the original time series. Reduction may change the metric type of value type of the time series.Time series data must be aligned in order to perform cross-time series reduction. If crossSeriesReducer is specified, then perSeriesAligner must be specified and not equal ALIGN_NONE and alignmentPeriod must be specified; otherwise, an error is returned.</li>
+<li>The approach to be used to align individual time series. Not all alignment functions may be applied to all time series, depending on the metric type and value type of the original time series. Alignment may change the metric type or the value type of the time series.Time series data must be aligned in order to perform cross-time series reduction. If crossSeriesReducer is specified, then perSeriesAligner must be specified and not equal ALIGN_NONE and alignmentPeriod must be specified; otherwise, an error is returned.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p interval-start-time=string</strong></p>
+<ul>
+<li>Optional. The beginning of the time interval. The default value for the start time is the end time. The start time must not be later than the end time.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p interval-end-time=string</strong></p>
+<ul>
+<li>Required. The end of the time interval.</li>
 </ul>
 </li>
 <li>
 <p><strong>-p page-token=string</strong></p>
 <ul>
 <li>If this field is not empty then it must contain the nextPageToken value returned by a previous call to this method. Using this field causes the method to return additional results from the previous method call.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p aggregation-cross-series-reducer=string</strong></p>
+<ul>
+<li>The approach to be used to combine time series. Not all reducer functions may be applied to all time series, depending on the metric type and the value type of the original time series. Reduction may change the metric type of value type of the time series.Time series data must be aligned in order to perform cross-time series reduction. If crossSeriesReducer is specified, then perSeriesAligner must be specified and not equal ALIGN_NONE and alignmentPeriod must be specified; otherwise, an error is returned.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p aggregation-alignment-period=string</strong></p>
+<ul>
+<li>The alignment period for per-time series alignment. If present, alignmentPeriod must be at least 60 seconds. After per-time series alignment, each time series will contain data points only on the period boundaries. If perSeriesAligner is not specified or equals ALIGN_NONE, then this field is ignored. If perSeriesAligner is specified and does not equal ALIGN_NONE, then this field must be defined; otherwise an error is returned.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p page-size=integer</strong></p>
+<ul>
+<li>A positive number that is the maximum number of results to return. If page_size is empty or more than 100,000 results, the effective page_size is 100,000 results. If view is set to FULL, this is the maximum number of Points returned. If view is set to HEADERS, this is the maximum number of TimeSeries returned.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p filter=string</strong></p>
+<ul>
+<li>A monitoring filter that specifies which time series should be returned. The filter must specify a single metric type, and can additionally specify metric labels and other information. For example:
+    metric.type = &#34;compute.googleapis.com/instance/cpu/usage_time&#34; AND
+        metric.label.instance_name = &#34;my-instance-name&#34;</li>
 </ul>
 </li>
 </ul>
@@ -331,12 +391,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p bearer-token=string</strong></p>
-<ul>
-<li>OAuth bearer token.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p callback=string</strong></p>
 <ul>
 <li>JSONP</li>
@@ -358,12 +412,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <p><strong>-p oauth-token=string</strong></p>
 <ul>
 <li>OAuth 2.0 token for the current user.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p pp=boolean</strong></p>
-<ul>
-<li>Pretty-print response.</li>
 </ul>
 </li>
 <li>

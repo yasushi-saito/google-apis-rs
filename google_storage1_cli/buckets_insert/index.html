@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Insert - storage v1.0.7+20171101</title>
+  <title>Insert - storage v1.0.8+20180905</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> storage v1.0.7+20171101</a>
+        <a href=".." class="icon icon-home"> storage v1.0.8+20180905</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -133,6 +133,10 @@
                 <li class="">
                     
     <a class="" href="../buckets_list/">List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../buckets_lock-retention-policy/">Lock Retention Policy</a>
                 </li>
                 <li class="">
                     
@@ -329,7 +333,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">storage v1.0.7+20171101</a>
+        <a href="..">storage v1.0.8+20180905</a>
       </nav>
 
       
@@ -382,6 +386,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <pre><code>Bucket:
   billing:
     requester-pays: boolean
+  default-event-based-hold: boolean
   encryption:
     default-kms-key-name: string
   etag: string
@@ -398,6 +403,10 @@ In the latter case it is advised to set the field-cursor to the data-structure's
     entity: string
     entity-id: string
   project-number: string
+  retention-policy:
+    effective-time: string
+    is-locked: boolean
+    retention-period: string
   self-link: string
   storage-class: string
   time-created: string
@@ -415,87 +424,109 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>
 <p><code>-r .billing    requester-pays=true</code></p>
 <ul>
-<li>When set to true, bucket is requester pays.</li>
+<li>When set to true, Requester Pays is enabled for this bucket.</li>
 </ul>
 </li>
 <li>
-<p><code>..encryption    default-kms-key-name=eirmod</code></p>
+<p><code>..    default-event-based-hold=true</code></p>
 <ul>
-<li>No description provided.</li>
+<li>The default value for event-based hold on newly created objects in this bucket. Event-based hold is a way to retain objects indefinitely until an event occurs, signified by the hold&#39;s release. After being released, such objects will be subject to bucket-level retention (if any). One sample use case of this flag is for banks to hold loan documents for at least 3 years after loan is paid in full. Here, bucket-level retention is 3 years and the event is loan being paid in full. In this example, these objects will be held intact for any number of years until the event has occurred (event-based hold on the object is released) and then 3 more years after that. That means retention duration of the objects begins from the moment event-based hold transitioned from true to false. Objects under event-based hold cannot be deleted, overwritten or archived until the hold is removed.</li>
 </ul>
 </li>
 <li>
-<p><code>..    etag=elitr</code></p>
+<p><code>encryption    default-kms-key-name=elitr</code></p>
+<ul>
+<li>A Cloud KMS key that will be used to encrypt objects inserted into this bucket, if no encryption method is specified.</li>
+</ul>
+</li>
+<li>
+<p><code>..    etag=amet</code></p>
 <ul>
 <li>HTTP 1.1 Entity tag for the bucket.</li>
 </ul>
 </li>
-<li><code>id=amet</code><ul>
-<li>The ID of the bucket. For buckets, the id and name properities are the same.</li>
+<li><code>id=no</code><ul>
+<li>The ID of the bucket. For buckets, the id and name properties are the same.</li>
 </ul>
 </li>
-<li><code>kind=no</code><ul>
+<li><code>kind=labore</code><ul>
 <li>The kind of item this is. For buckets, this is always storage#bucket.</li>
 </ul>
 </li>
-<li><code>labels=key=labore</code><ul>
+<li><code>labels=key=eirmod</code><ul>
 <li>User-provided labels, in key/value pairs.</li>
 <li>the value will be associated with the given <code>key</code></li>
 </ul>
 </li>
-<li><code>location=eirmod</code><ul>
+<li><code>location=dolore</code><ul>
 <li>The location of the bucket. Object data for objects in the bucket resides in physical storage within this region. Defaults to US. See the developer&#39;s guide for the authoritative list.</li>
 </ul>
 </li>
-<li><code>logging    log-bucket=dolore</code><ul>
+<li><code>logging    log-bucket=invidunt</code><ul>
 <li>The destination bucket where the current bucket&#39;s logs should be placed.</li>
 </ul>
 </li>
 <li>
-<p><code>log-object-prefix=invidunt</code></p>
+<p><code>log-object-prefix=aliquyam</code></p>
 <ul>
 <li>A prefix for log object names.</li>
 </ul>
 </li>
 <li>
-<p><code>..    metageneration=aliquyam</code></p>
+<p><code>..    metageneration=accusam</code></p>
 <ul>
 <li>The metadata generation of this bucket.</li>
 </ul>
 </li>
-<li><code>name=accusam</code><ul>
+<li><code>name=lorem</code><ul>
 <li>The name of the bucket.</li>
 </ul>
 </li>
-<li><code>owner    entity=lorem</code><ul>
+<li><code>owner    entity=sea</code><ul>
 <li>The entity, in the form project-owner-projectId.</li>
 </ul>
 </li>
 <li>
-<p><code>entity-id=sea</code></p>
+<p><code>entity-id=et</code></p>
 <ul>
 <li>The ID for the entity.</li>
 </ul>
 </li>
 <li>
-<p><code>..    project-number=et</code></p>
+<p><code>..    project-number=duo</code></p>
 <ul>
 <li>The project number of the project the bucket belongs to.</li>
 </ul>
 </li>
-<li><code>self-link=duo</code><ul>
+<li><code>retention-policy    effective-time=et</code><ul>
+<li>Server-determined value that indicates the time from which policy was enforced and effective. This value is in RFC 3339 format.</li>
+</ul>
+</li>
+<li><code>is-locked=true</code><ul>
+<li>Once locked, an object retention policy cannot be modified.</li>
+</ul>
+</li>
+<li>
+<p><code>retention-period=sanctus</code></p>
+<ul>
+<li>The duration in seconds that objects need to be retained. Retention duration must be greater than zero and less than 100 years. Note that enforcement of retention periods less than a day is not guaranteed. Such periods should only be used for testing purposes.</li>
+</ul>
+</li>
+<li>
+<p><code>..    self-link=et</code></p>
+<ul>
 <li>The URI of this bucket.</li>
 </ul>
 </li>
-<li><code>storage-class=et</code><ul>
+<li><code>storage-class=amet</code><ul>
 <li>The bucket&#39;s default storage class, used whenever no storageClass is specified for a newly-created object. This defines how objects in the bucket are stored and determines the SLA and the cost of storage. Values include MULTI_REGIONAL, REGIONAL, STANDARD, NEARLINE, COLDLINE, and DURABLE_REDUCED_AVAILABILITY. If this value is not specified when the bucket is created, it will default to STANDARD. For more information, see storage classes.</li>
 </ul>
 </li>
-<li><code>time-created=eirmod</code><ul>
+<li><code>time-created=et</code><ul>
 <li>The creation time of the bucket in RFC 3339 format.</li>
 </ul>
 </li>
-<li><code>updated=sanctus</code><ul>
+<li><code>updated=consetetur</code><ul>
 <li>The modification time of the bucket in RFC 3339 format.</li>
 </ul>
 </li>
@@ -506,12 +537,12 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
-<p><code>..website    main-page-suffix=amet</code></p>
+<p><code>..website    main-page-suffix=ea</code></p>
 <ul>
 <li>If the requested object path is missing, the service will ensure the path has a trailing &#39;/&#39;, append this suffix, and attempt to retrieve the resulting object. This allows the creation of index.html objects to represent directory pages.</li>
 </ul>
 </li>
-<li><code>not-found-page=et</code><ul>
+<li><code>not-found-page=sed</code><ul>
 <li>If the requested object path is missing, and any mainPageSuffix object is missing, if applicable, the service will return the named object from this bucket as the content for a 404 Not Found result.</li>
 </ul>
 </li>
@@ -541,12 +572,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p user-project=string</strong></p>
-<ul>
-<li>The project to be billed for this request.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p projection=string</strong></p>
 <ul>
 <li>Set of properties to return. Defaults to noAcl, unless the bucket resource specifies acl or defaultObjectAcl properties, when it defaults to full.</li>
@@ -562,6 +587,12 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <p><strong>-p predefined-default-object-acl=string</strong></p>
 <ul>
 <li>Apply a predefined set of default object access controls to this bucket.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p user-project=string</strong></p>
+<ul>
+<li>The project to be billed for this request.</li>
 </ul>
 </li>
 </ul>
@@ -601,13 +632,13 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <li>
 <p><strong>-p quota-user=string</strong></p>
 <ul>
-<li>Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. Overrides userIp if both are provided.</li>
+<li>An opaque string that represents a user for quota purposes. Must not exceed 40 characters.</li>
 </ul>
 </li>
 <li>
 <p><strong>-p user-ip=string</strong></p>
 <ul>
-<li>IP address of the site where the request originates. Use this if you want to enforce per-user limits.</li>
+<li>Deprecated. Please use quotaUser instead.</li>
 </ul>
 </li>
 </ul>

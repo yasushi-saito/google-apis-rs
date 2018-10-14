@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Locations Registries List - Cloud Iot v1.0.7+20171204</title>
+  <title>Locations Registries List - Cloud Iot v1.0.8+20181002</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Cloud Iot v1.0.7+20171204</a>
+        <a href=".." class="icon icon-home"> Cloud Iot v1.0.8+20181002</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -94,6 +94,10 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="../projects_locations-registries-devices-send-command-to-device/">Locations Registries Devices Send Command To Device</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../projects_locations-registries-devices-states-list/">Locations Registries Devices States List</a>
                 </li>
                 <li class="">
@@ -103,6 +107,46 @@
                 <li class="">
                     
     <a class="" href="../projects_locations-registries-get-iam-policy/">Locations Registries Get Iam Policy</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_locations-registries-groups-devices-config-versions-list/">Locations Registries Groups Devices Config Versions List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_locations-registries-groups-devices-get/">Locations Registries Groups Devices Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_locations-registries-groups-devices-list/">Locations Registries Groups Devices List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_locations-registries-groups-devices-modify-cloud-to-device-config/">Locations Registries Groups Devices Modify Cloud To Device Config</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_locations-registries-groups-devices-patch/">Locations Registries Groups Devices Patch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_locations-registries-groups-devices-send-command-to-device/">Locations Registries Groups Devices Send Command To Device</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_locations-registries-groups-devices-states-list/">Locations Registries Groups Devices States List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_locations-registries-groups-get-iam-policy/">Locations Registries Groups Get Iam Policy</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_locations-registries-groups-set-iam-policy/">Locations Registries Groups Set Iam Policy</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_locations-registries-groups-test-iam-permissions/">Locations Registries Groups Test Iam Permissions</a>
                 </li>
                 <li class=" current">
                     
@@ -151,7 +195,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Cloud Iot v1.0.7+20171204</a>
+        <a href="..">Cloud Iot v1.0.8+20181002</a>
       </nav>
 
       
@@ -217,8 +261,8 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <p><strong>-p page-token=string</strong></p>
 <ul>
 <li>The value returned by the last <code>ListDeviceRegistriesResponse</code>; indicates
-    that this is a continuation of a prior <code>ListDeviceRegistries</code> call, and
-    that the system should return the next page of data.</li>
+    that this is a continuation of a prior <code>ListDeviceRegistries</code> call and
+    the system should return the next page of data.</li>
 </ul>
 </li>
 <li>
@@ -226,8 +270,8 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <ul>
 <li>The maximum number of registries to return in the response. If this value
     is zero, the service will select a default size. A call may return fewer
-    objects than requested, but if there is a non-empty <code>page_token</code>, it
-    indicates that more entries are available.</li>
+    objects than requested. A non-empty <code>next_page_token</code> in the response
+    indicates that more data is available.</li>
 </ul>
 </li>
 </ul>
@@ -253,12 +297,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p bearer-token=string</strong></p>
-<ul>
-<li>OAuth bearer token.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p callback=string</strong></p>
 <ul>
 <li>JSONP</li>
@@ -280,12 +318,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <p><strong>-p oauth-token=string</strong></p>
 <ul>
 <li>OAuth 2.0 token for the current user.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p pp=boolean</strong></p>
-<ul>
-<li>Pretty-print response.</li>
 </ul>
 </li>
 <li>
@@ -323,7 +355,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
         <a href="../projects_locations-registries-patch/" class="btn btn-neutral float-right" title="Locations Registries Patch">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../projects_locations-registries-get-iam-policy/" class="btn btn-neutral" title="Locations Registries Get Iam Policy"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../projects_locations-registries-groups-test-iam-permissions/" class="btn btn-neutral" title="Locations Registries Groups Test Iam Permissions"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -353,7 +385,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
           <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/cloudiot1-cli" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../projects_locations-registries-get-iam-policy/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../projects_locations-registries-groups-test-iam-permissions/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
         <span style="margin-left: 15px"><a href="../projects_locations-registries-patch/" style="color: #fcfcfc">Next &raquo;</a></span>

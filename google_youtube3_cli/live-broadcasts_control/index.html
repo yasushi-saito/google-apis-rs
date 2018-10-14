@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Control - YouTube v1.0.7+20171129</title>
+  <title>Control - YouTube v1.0.8+20180511</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> YouTube v1.0.7+20171129</a>
+        <a href=".." class="icon icon-home"> YouTube v1.0.8+20180511</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -189,17 +189,6 @@
                 <li class="">
                     
     <a class="" href="../comments_update/">Update</a>
-                </li>
-    </ul>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <span class="caption-text">Fan Funding Events</span>
-    <ul class="subnav">
-                <li class="">
-                    
-    <a class="" href="../fan-funding-events_list/">List</a>
                 </li>
     </ul>
 	    </li>
@@ -557,7 +546,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">YouTube v1.0.7+20171129</a>
+        <a href="..">YouTube v1.0.8+20180511</a>
       </nav>
 
       
@@ -623,9 +612,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p walltime=string</strong></p>
+<p><strong>-p display-slate=boolean</strong></p>
 <ul>
-<li>The walltime parameter specifies the wall clock time at which the specified slate change will occur. The value is specified in ISO 8601 (YYYY-MM-DDThh:mm:ss.sssZ) format.</li>
+<li>The displaySlate parameter specifies whether the slate is being enabled or disabled.</li>
 </ul>
 </li>
 <li>
@@ -639,9 +628,19 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p display-slate=boolean</strong></p>
+<p><strong>-p offset-time-ms=string</strong></p>
 <ul>
-<li>The displaySlate parameter specifies whether the slate is being enabled or disabled.</li>
+<li>
+<p>The offsetTimeMs parameter specifies a positive time offset when the specified slate change will occur. The value is measured in milliseconds from the beginning of the broadcast&#39;s monitor stream, which is the time that the testing phase for the broadcast began. Even though it is specified in milliseconds, the value is actually an approximation, and YouTube completes the requested action as closely as possible to that time.</p>
+<p>If you do not specify a value for this parameter, then YouTube performs the action as soon as possible. See the Getting started guide for more details.</p>
+<p>Important: You should only specify a value for this parameter if your broadcast stream is delayed.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>-p walltime=string</strong></p>
+<ul>
+<li>The walltime parameter specifies the wall clock time at which the specified slate change will occur. The value is specified in ISO 8601 (YYYY-MM-DDThh:mm:ss.sssZ) format.</li>
 </ul>
 </li>
 <li>
@@ -650,16 +649,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <li>
 <p>Note: This parameter is intended exclusively for YouTube content partners.</p>
 <p>The onBehalfOfContentOwner parameter indicates that the request&#39;s authorization credentials identify a YouTube CMS user who is acting on behalf of the content owner specified in the parameter value. This parameter is intended for YouTube content partners that own and manage many different YouTube channels. It allows content owners to authenticate once and get access to all their video and channel data, without having to provide authentication credentials for each individual channel. The CMS account that the user authenticates with must be linked to the specified YouTube content owner.</p>
-</li>
-</ul>
-</li>
-<li>
-<p><strong>-p offset-time-ms=string</strong></p>
-<ul>
-<li>
-<p>The offsetTimeMs parameter specifies a positive time offset when the specified slate change will occur. The value is measured in milliseconds from the beginning of the broadcast&#39;s monitor stream, which is the time that the testing phase for the broadcast began. Even though it is specified in milliseconds, the value is actually an approximation, and YouTube completes the requested action as closely as possible to that time.</p>
-<p>If you do not specify a value for this parameter, then YouTube performs the action as soon as possible. See the Getting started guide for more details.</p>
-<p>Important: You should only specify a value for this parameter if your broadcast stream is delayed.</p>
 </li>
 </ul>
 </li>
@@ -700,13 +689,13 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <li>
 <p><strong>-p quota-user=string</strong></p>
 <ul>
-<li>Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. Overrides userIp if both are provided.</li>
+<li>An opaque string that represents a user for quota purposes. Must not exceed 40 characters.</li>
 </ul>
 </li>
 <li>
 <p><strong>-p user-ip=string</strong></p>
 <ul>
-<li>IP address of the site where the request originates. Use this if you want to enforce per-user limits.</li>
+<li>Deprecated. Please use quotaUser instead.</li>
 </ul>
 </li>
 </ul>

@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Instances Databases Sessions List - Spanner v1.0.7+20171204</title>
+  <title>Instances Databases Sessions List - Spanner v1.0.8+20180920</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Spanner v1.0.7+20171204</a>
+        <a href=".." class="icon icon-home"> Spanner v1.0.8+20180920</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -160,6 +160,14 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="../projects_instances-databases-sessions-partition-query/">Instances Databases Sessions Partition Query</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_instances-databases-sessions-partition-read/">Instances Databases Sessions Partition Read</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../projects_instances-databases-sessions-read/">Instances Databases Sessions Read</a>
                 </li>
                 <li class="">
@@ -239,7 +247,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Spanner v1.0.7+20171204</a>
+        <a href="..">Spanner v1.0.8+20180920</a>
       </nav>
 
       
@@ -319,18 +327,18 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
+<p><strong>-p page-size=integer</strong></p>
+<ul>
+<li>Number of sessions to be returned in the response. If 0 or less, defaults
+    to the server&#39;s maximum allowed page size.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p page-token=string</strong></p>
 <ul>
 <li>If non-empty, <code>page_token</code> should contain a
     next_page_token from a previous
     ListSessionsResponse.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p page-size=integer</strong></p>
-<ul>
-<li>Number of sessions to be returned in the response. If 0 or less, defaults
-    to the server&#39;s maximum allowed page size.</li>
 </ul>
 </li>
 </ul>
@@ -356,12 +364,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p bearer-token=string</strong></p>
-<ul>
-<li>OAuth bearer token.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p callback=string</strong></p>
 <ul>
 <li>JSONP</li>
@@ -383,12 +385,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <p><strong>-p oauth-token=string</strong></p>
 <ul>
 <li>OAuth 2.0 token for the current user.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p pp=boolean</strong></p>
-<ul>
-<li>Pretty-print response.</li>
 </ul>
 </li>
 <li>
@@ -423,7 +419,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../projects_instances-databases-sessions-read/" class="btn btn-neutral float-right" title="Instances Databases Sessions Read">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../projects_instances-databases-sessions-partition-query/" class="btn btn-neutral float-right" title="Instances Databases Sessions Partition Query">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="../projects_instances-databases-sessions-get/" class="btn btn-neutral" title="Instances Databases Sessions Get"><span class="icon icon-circle-arrow-left"></span> Previous</a>
@@ -459,7 +455,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
         <span><a href="../projects_instances-databases-sessions-get/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../projects_instances-databases-sessions-read/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../projects_instances-databases-sessions-partition-query/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

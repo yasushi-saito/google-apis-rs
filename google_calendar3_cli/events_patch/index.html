@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Patch - calendar v1.0.7+20171205</title>
+  <title>Patch - calendar v1.0.8+20181009</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> calendar v1.0.7+20171205</a>
+        <a href=".." class="icon icon-home"> calendar v1.0.8+20181009</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -293,7 +293,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">calendar v1.0.7+20171205</a>
+        <a href="..">calendar v1.0.8+20181009</a>
       </nav>
 
       
@@ -324,7 +324,11 @@
               
                 <p>Updates an event. This method supports patch semantics.</p>
 <h1 id="scopes">Scopes</h1>
-<p>You will need authorization for the <em>https://www.googleapis.com/auth/calendar</em> scope to make a valid call.</p>
+<p>You will need authorization for at least one of the following scopes to make a valid call:</p>
+<ul>
+<li><em>https://www.googleapis.com/auth/calendar</em></li>
+<li><em>https://www.googleapis.com/auth/calendar.events</em></li>
+</ul>
 <p>If unset, the scope for this method defaults to <em>https://www.googleapis.com/auth/calendar</em>.
 You can set the scope for this method like this: <code>calendar3 --scope &lt;scope&gt; events patch ...</code></p>
 <h1 id="required-scalar-arguments">Required Scalar Arguments</h1>
@@ -346,6 +350,24 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   anyone-can-add-self: boolean
   attendees-omitted: boolean
   color-id: string
+  conference-data:
+    conference-id: string
+    conference-solution:
+      icon-uri: string
+      key:
+        type: string
+      name: string
+    create-request:
+      conference-solution-key:
+        type: string
+      request-id: string
+      status:
+        status-code: string
+    notes: string
+    parameters:
+      add-on-parameters:
+        parameters: { string: string }
+    signature: string
   created: string
   creator:
     display-name: string
@@ -421,24 +443,114 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>Whether attendees may have been omitted from the event&#39;s representation. When retrieving an event, this may be due to a restriction specified by the maxAttendee query parameter. When updating an event, this can be used to only update the participant&#39;s response. Optional. The default is False.</li>
 </ul>
 </li>
-<li><code>color-id=dolores</code><ul>
+<li><code>color-id=dolor</code><ul>
 <li>The color of the event. This is an ID referring to an entry in the event section of the colors definition (see the  colors endpoint). Optional.</li>
 </ul>
 </li>
-<li><code>created=vero</code><ul>
+<li><code>conference-data    conference-id=vero</code><ul>
+<li>The ID of the conference.
+    Can be used by developers to keep track of conferences, should not be displayed to users.
+    Values for solution types:  <ul>
+<li>&#34;eventHangout&#34;: unset.</li>
+<li>&#34;eventNamedHangout&#34;: the name of the Hangout.</li>
+<li>&#34;hangoutsMeet&#34;: the 10-letter meeting code, for example &#34;aaa-bbbb-ccc&#34;.  Optional.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>conference-solution    icon-uri=nonumy</code><ul>
+<li>The user-visible icon for this solution.</li>
+</ul>
+</li>
+<li>
+<p><code>key    type=takimata</code></p>
+<ul>
+<li>The conference solution type.
+    If a client encounters an unfamiliar or empty type, it should still be able to display the entry points. However, it should disallow modifications.
+    The possible values are:  <ul>
+<li>&#34;eventHangout&#34; for Hangouts for consumers (http://hangouts.google.com)</li>
+<li>&#34;eventNamedHangout&#34; for classic Hangouts for G Suite users (http://hangouts.google.com)</li>
+<li>&#34;hangoutsMeet&#34; for Hangouts Meet (http://meet.google.com)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><code>..    name=dolores</code></p>
+<ul>
+<li>The user-visible name of this solution. Not localized.</li>
+</ul>
+</li>
+<li>
+<p><code>..create-request.conference-solution-key    type=consetetur</code></p>
+<ul>
+<li>The conference solution type.
+    If a client encounters an unfamiliar or empty type, it should still be able to display the entry points. However, it should disallow modifications.
+    The possible values are:  <ul>
+<li>&#34;eventHangout&#34; for Hangouts for consumers (http://hangouts.google.com)</li>
+<li>&#34;eventNamedHangout&#34; for classic Hangouts for G Suite users (http://hangouts.google.com)</li>
+<li>&#34;hangoutsMeet&#34; for Hangouts Meet (http://meet.google.com)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><code>..    request-id=erat</code></p>
+<ul>
+<li>The client-generated unique ID for this request.
+    Clients should regenerate this ID for every new request. If an ID provided is the same as for the previous request, the request is ignored.</li>
+</ul>
+</li>
+<li>
+<p><code>status    status-code=amet.</code></p>
+<ul>
+<li>The current status of the conference create request. Read-only.
+    The possible values are:  <ul>
+<li>&#34;pending&#34;: the conference create request is still being processed.</li>
+<li>&#34;success&#34;: the conference create request succeeded, the entry points are populated.</li>
+<li>&#34;failure&#34;: the conference create request failed, there are no entry points.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><code>...    notes=dolores</code></p>
+<ul>
+<li>Additional notes (such as instructions from the domain administrator, legal notices) to display to the user. Can contain HTML. The maximum length is 2048 characters. Optional.</li>
+</ul>
+</li>
+<li>
+<p><code>parameters.add-on-parameters    parameters=key=dolores</code></p>
+<ul>
+<li>No description provided.</li>
+<li>the value will be associated with the given <code>key</code></li>
+</ul>
+</li>
+<li>
+<p><code>...    signature=et</code></p>
+<ul>
+<li>The signature of the conference data.
+    Genereated on server side. Must be preserved while copying the conference data between events, otherwise the conference data will not be copied.
+    Unset for a conference with a failed create request.
+    Optional for a conference with a pending create request.</li>
+</ul>
+</li>
+<li>
+<p><code>..    created=sed</code></p>
+<ul>
 <li>Creation time of the event (as a RFC3339 timestamp). Read-only.</li>
 </ul>
 </li>
-<li><code>creator    display-name=consetetur</code><ul>
+<li><code>creator    display-name=et</code><ul>
 <li>The creator&#39;s name, if available.</li>
 </ul>
 </li>
-<li><code>email=vero</code><ul>
+<li><code>email=aliquyam</code><ul>
 <li>The creator&#39;s email address, if available.</li>
 </ul>
 </li>
-<li><code>id=consetetur</code><ul>
-<li>The creator&#39;s Profile ID, if available. It corresponds to theid field in the People collection of the Google+ API</li>
+<li><code>id=nonumy</code><ul>
+<li>The creator&#39;s Profile ID, if available. It corresponds to the id field in the People collection of the Google+ API</li>
 </ul>
 </li>
 <li>
@@ -448,21 +560,21 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </ul>
 </li>
 <li>
-<p><code>..    description=justo</code></p>
+<p><code>..    description=aliquyam</code></p>
 <ul>
 <li>Description of the event. Optional.</li>
 </ul>
 </li>
-<li><code>end    date=tempor</code><ul>
+<li><code>end    date=sadipscing</code><ul>
 <li>The date, in the format &#34;yyyy-mm-dd&#34;, if this is an all-day event.</li>
 </ul>
 </li>
-<li><code>date-time=gubergren</code><ul>
+<li><code>date-time=magna</code><ul>
 <li>The time, as a combined date-time value (formatted according to RFC3339). A time zone offset is required unless a time zone is explicitly specified in timeZone.</li>
 </ul>
 </li>
 <li>
-<p><code>time-zone=dolore</code></p>
+<p><code>time-zone=gubergren</code></p>
 <ul>
 <li>The time zone in which the time is specified. (Formatted as an IANA Time Zone Database name, e.g. &#34;Europe/Zurich&#34;.) For recurring events this field is required and specifies the time zone in which the recurrence is expanded. For single events this field is optional and indicates a custom time zone for the event start/end.</li>
 </ul>
@@ -473,24 +585,24 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>Whether the end time is actually unspecified. An end time is still provided for compatibility reasons, even if this attribute is set to True. The default is False.</li>
 </ul>
 </li>
-<li><code>etag=dolore</code><ul>
+<li><code>etag=gubergren</code><ul>
 <li>ETag of the resource.</li>
 </ul>
 </li>
-<li><code>extended-properties    private=key=magna</code><ul>
+<li><code>extended-properties    private=key=sit</code><ul>
 <li>Properties that are private to the copy of the event that appears on this calendar.</li>
 <li>the value will be associated with the given <code>key</code></li>
 </ul>
 </li>
 <li>
-<p><code>shared=key=elitr</code></p>
+<p><code>shared=key=amet</code></p>
 <ul>
 <li>Properties that are shared between copies of the event on other attendees&#39; calendars.</li>
 <li>the value will be associated with the given <code>key</code></li>
 </ul>
 </li>
 <li>
-<p><code>..gadget    display=magna</code></p>
+<p><code>..gadget    display=eirmod</code></p>
 <ul>
 <li>The gadget&#39;s display mode. Optional. Possible values are:  <ul>
 <li>&#34;icon&#34; - The gadget displays next to the event&#39;s title in the calendar view. </li>
@@ -499,33 +611,33 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </li>
 </ul>
 </li>
-<li><code>height=97</code><ul>
+<li><code>height=43</code><ul>
 <li>The gadget&#39;s height in pixels. The height must be an integer greater than 0. Optional.</li>
 </ul>
 </li>
-<li><code>icon-link=invidunt</code><ul>
+<li><code>icon-link=lorem</code><ul>
 <li>The gadget&#39;s icon URL. The URL scheme must be HTTPS.</li>
 </ul>
 </li>
-<li><code>link=accusam</code><ul>
+<li><code>link=amet.</code><ul>
 <li>The gadget&#39;s URL. The URL scheme must be HTTPS.</li>
 </ul>
 </li>
-<li><code>preferences=key=labore</code><ul>
+<li><code>preferences=key=diam</code><ul>
 <li>Preferences.</li>
 <li>the value will be associated with the given <code>key</code></li>
 </ul>
 </li>
-<li><code>title=diam</code><ul>
+<li><code>title=eirmod</code><ul>
 <li>The gadget&#39;s title.</li>
 </ul>
 </li>
-<li><code>type=nonumy</code><ul>
+<li><code>type=sadipscing</code><ul>
 <li>The gadget&#39;s type.</li>
 </ul>
 </li>
 <li>
-<p><code>width=8</code></p>
+<p><code>width=96</code></p>
 <ul>
 <li>The gadget&#39;s width in pixels. The width must be an integer greater than 0. Optional.</li>
 </ul>
@@ -536,28 +648,28 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 <li>Whether attendees other than the organizer can invite others to the event. Optional. The default is True.</li>
 </ul>
 </li>
-<li><code>guests-can-modify=false</code><ul>
+<li><code>guests-can-modify=true</code><ul>
 <li>Whether attendees other than the organizer can modify the event. Optional. The default is False.</li>
 </ul>
 </li>
-<li><code>guests-can-see-other-guests=false</code><ul>
+<li><code>guests-can-see-other-guests=true</code><ul>
 <li>Whether attendees other than the organizer can see who the event&#39;s attendees are. Optional. The default is True.</li>
 </ul>
 </li>
-<li><code>hangout-link=lorem</code><ul>
+<li><code>hangout-link=et</code><ul>
 <li>An absolute link to the Google+ hangout associated with this event. Read-only.</li>
 </ul>
 </li>
-<li><code>html-link=dolor</code><ul>
+<li><code>html-link=at</code><ul>
 <li>An absolute link to this event in the Google Calendar Web UI. Read-only.</li>
 </ul>
 </li>
-<li><code>i-cal-uid=vero</code><ul>
+<li><code>i-cal-uid=sit</code><ul>
 <li>Event unique identifier as defined in RFC5545. It is used to uniquely identify events accross calendaring systems and must be supplied when importing events via the import method.
     Note that the icalUID and the id are not identical and only one of them should be supplied at event creation time. One difference in their semantics is that in recurring events, all occurrences of one event have different ids while they all share the same icalUIDs.</li>
 </ul>
 </li>
-<li><code>id=nonumy</code><ul>
+<li><code>id=ut</code><ul>
 <li>Opaque identifier of the event. When creating new single or recurring events, you can specify their IDs. Provided IDs must follow these rules:  <ul>
 <li>characters allowed in the ID are those used in base32hex encoding, i.e. lowercase letters a-v and digits 0-9, see section 3.1.2 in RFC2938 </li>
 <li>the length of the ID must be between 5 and 1024 characters </li>
@@ -568,11 +680,11 @@ Note that the icalUID and the id are not identical and only one of them should b
 </li>
 </ul>
 </li>
-<li><code>kind=takimata</code><ul>
+<li><code>kind=diam</code><ul>
 <li>Type of the resource (&#34;calendar#event&#34;).</li>
 </ul>
 </li>
-<li><code>location=dolores</code><ul>
+<li><code>location=tempor</code><ul>
 <li>Geographic location of the event as free-form text. Optional.</li>
 </ul>
 </li>
@@ -584,12 +696,12 @@ Note that the icalUID and the id are not identical and only one of them should b
 <li>The organizer&#39;s name, if available.</li>
 </ul>
 </li>
-<li><code>email=amet.</code><ul>
+<li><code>email=dolores</code><ul>
 <li>The organizer&#39;s email address, if available. It must be a valid email address as per RFC5322.</li>
 </ul>
 </li>
-<li><code>id=dolores</code><ul>
-<li>The organizer&#39;s Profile ID, if available. It corresponds to theid field in the People collection of the Google+ API</li>
+<li><code>id=kasd</code><ul>
+<li>The organizer&#39;s Profile ID, if available. It corresponds to the id field in the People collection of the Google+ API</li>
 </ul>
 </li>
 <li>
@@ -599,7 +711,7 @@ Note that the icalUID and the id are not identical and only one of them should b
 </ul>
 </li>
 <li>
-<p><code>..original-start-time    date=et</code></p>
+<p><code>..original-start-time    date=clita</code></p>
 <ul>
 <li>The date, in the format &#34;yyyy-mm-dd&#34;, if this is an all-day event.</li>
 </ul>
@@ -609,7 +721,7 @@ Note that the icalUID and the id are not identical and only one of them should b
 </ul>
 </li>
 <li>
-<p><code>time-zone=et</code></p>
+<p><code>time-zone=dolores</code></p>
 <ul>
 <li>The time zone in which the time is specified. (Formatted as an IANA Time Zone Database name, e.g. &#34;Europe/Zurich&#34;.) For recurring events this field is required and specifies the time zone in which the recurrence is expanded. For single events this field is optional and indicates a custom time zone for the event start/end.</li>
 </ul>
@@ -620,69 +732,75 @@ Note that the icalUID and the id are not identical and only one of them should b
 <li>Whether this is a private event copy where changes are not shared with other copies on other calendars. Optional. Immutable. The default is False.</li>
 </ul>
 </li>
-<li><code>recurrence=nonumy</code><ul>
+<li><code>recurrence=eos</code><ul>
 <li>List of RRULE, EXRULE, RDATE and EXDATE lines for a recurring event, as specified in RFC5545. Note that DTSTART and DTEND lines are not allowed in this field; event start and end times are specified in the start and end fields. This field is omitted for single events or instances of recurring events.</li>
 <li>Each invocation of this argument appends the given value to the array.</li>
 </ul>
 </li>
-<li><code>recurring-event-id=sit</code><ul>
+<li><code>recurring-event-id=amet</code><ul>
 <li>For an instance of a recurring event, this is the id of the recurring event to which this instance belongs. Immutable.</li>
 </ul>
 </li>
 <li>
-<p><code>reminders    use-default=true</code></p>
+<p><code>reminders    use-default=false</code></p>
 <ul>
 <li>Whether the default reminders of the calendar apply to the event.</li>
 </ul>
 </li>
 <li>
-<p><code>..    sequence=6</code></p>
+<p><code>..    sequence=93</code></p>
 <ul>
 <li>Sequence number as per iCalendar.</li>
 </ul>
 </li>
-<li><code>source    title=magna</code><ul>
+<li><code>source    title=sit</code><ul>
 <li>Title of the source; for example a title of a web page or an email subject.</li>
 </ul>
 </li>
 <li>
-<p><code>url=gubergren</code></p>
+<p><code>url=labore</code></p>
 <ul>
 <li>URL of the source pointing to a resource. The URL scheme must be HTTP or HTTPS.</li>
 </ul>
 </li>
 <li>
-<p><code>..start    date=sit</code></p>
+<p><code>..start    date=nonumy</code></p>
 <ul>
 <li>The date, in the format &#34;yyyy-mm-dd&#34;, if this is an all-day event.</li>
 </ul>
 </li>
-<li><code>date-time=gubergren</code><ul>
+<li><code>date-time=erat</code><ul>
 <li>The time, as a combined date-time value (formatted according to RFC3339). A time zone offset is required unless a time zone is explicitly specified in timeZone.</li>
 </ul>
 </li>
 <li>
-<p><code>time-zone=sit</code></p>
+<p><code>time-zone=gubergren</code></p>
 <ul>
 <li>The time zone in which the time is specified. (Formatted as an IANA Time Zone Database name, e.g. &#34;Europe/Zurich&#34;.) For recurring events this field is required and specifies the time zone in which the recurrence is expanded. For single events this field is optional and indicates a custom time zone for the event start/end.</li>
 </ul>
 </li>
 <li>
-<p><code>..    status=amet</code></p>
+<p><code>..    status=erat</code></p>
 <ul>
 <li>Status of the event. Optional. Possible values are:  <ul>
 <li>&#34;confirmed&#34; - The event is confirmed. This is the default status. </li>
 <li>&#34;tentative&#34; - The event is tentatively confirmed. </li>
-<li>&#34;cancelled&#34; - The event is cancelled.</li>
+<li>&#34;cancelled&#34; - The event is cancelled (deleted). The list method returns cancelled events only on incremental sync (when syncToken or updatedMin are specified) or if the showDeleted flag is set to true. The get method always returns them.
+A cancelled status represents two different states depending on the event type:  </li>
+<li>Cancelled exceptions of an uncancelled recurring event indicate that this instance should no longer be presented to the user. Clients should store these events for the lifetime of the parent recurring event.
+Cancelled exceptions are only guaranteed to have values for the id, recurringEventId and originalStartTime fields populated. The other fields might be empty.  </li>
+<li>All other cancelled events represent deleted events. Clients should remove their locally synced copies. Such cancelled events will eventually disappear, so do not rely on them being available indefinitely.
+Deleted events are only guaranteed to have the id field populated.   On the organizer&#39;s calendar, cancelled events continue to expose event details (summary, location, etc.) so that they can be restored (undeleted). Similarly, the events to which the user was invited and that they manually removed continue to provide details. However, incremental sync requests with showDeleted set to false will not return these details.
+If an event changes its organizer (for example via the move operation) and the original organizer is not on the attendee list, it will leave behind a cancelled event where only the id field is guaranteed to be populated.</li>
 </ul>
 </li>
 </ul>
 </li>
-<li><code>summary=eirmod</code><ul>
+<li><code>summary=et</code><ul>
 <li>Title of the event.</li>
 </ul>
 </li>
-<li><code>transparency=sanctus</code><ul>
+<li><code>transparency=amet</code><ul>
 <li>Whether the event blocks time on the calendar. Optional. Possible values are:  <ul>
 <li>&#34;opaque&#34; - Default value. The event does block time on the calendar. This is equivalent to setting Show me as to Busy in the Calendar UI. </li>
 <li>&#34;transparent&#34; - The event does not block time on the calendar. This is equivalent to setting Show me as to Available in the Calendar UI.</li>
@@ -694,7 +812,7 @@ Note that the icalUID and the id are not identical and only one of them should b
 <li>Last modification time of the event (as a RFC3339 timestamp). Read-only.</li>
 </ul>
 </li>
-<li><code>visibility=amet.</code><ul>
+<li><code>visibility=voluptua.</code><ul>
 <li>Visibility of the event. Optional. Possible values are:  <ul>
 <li>&#34;default&#34; - Uses the default visibility for events on the calendar. This is the default value. </li>
 <li>&#34;public&#34; - The event is public and event details are visible to all readers of the calendar. </li>
@@ -730,15 +848,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p supports-attachments=boolean</strong></p>
+<p><strong>-p conference-data-version=integer</strong></p>
 <ul>
-<li>Whether API client performing operation supports event attachments. Optional. The default is False.</li>
+<li>Version number of conference data supported by the API client. Version 0 assumes no conference data support and ignores conference data in the event&#39;s body. Version 1 enables support for copying of ConferenceData as well as for creating new conferences using the createRequest field of conferenceData. The default is 0.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p max-attendees=integer</strong></p>
+<p><strong>-p supports-attachments=boolean</strong></p>
 <ul>
-<li>The maximum number of attendees to include in the response. If there are more than the specified number of attendees, only the participant is returned. Optional.</li>
+<li>Whether API client performing operation supports event attachments. Optional. The default is False.</li>
 </ul>
 </li>
 <li>
@@ -748,9 +866,24 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
+<p><strong>-p max-attendees=integer</strong></p>
+<ul>
+<li>The maximum number of attendees to include in the response. If there are more than the specified number of attendees, only the participant is returned. Optional.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p send-notifications=boolean</strong></p>
 <ul>
-<li>Whether to send notifications about the event update (e.g. attendee&#39;s responses, title changes, etc.). Optional. The default is False.</li>
+<li>
+<p>Deprecated. Please use sendUpdates instead.</p>
+<p>Whether to send notifications about the event update (for example, description changes, etc.). Note that some emails might still be sent even if you set the value to false. The default is false.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>-p send-updates=string</strong></p>
+<ul>
+<li>Guests who should receive notifications about the event update (for example, title changes, etc.).</li>
 </ul>
 </li>
 </ul>
@@ -790,13 +923,13 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <li>
 <p><strong>-p quota-user=string</strong></p>
 <ul>
-<li>Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. Overrides userIp if both are provided.</li>
+<li>An opaque string that represents a user for quota purposes. Must not exceed 40 characters.</li>
 </ul>
 </li>
 <li>
 <p><strong>-p user-ip=string</strong></p>
 <ul>
-<li>IP address of the site where the request originates. Use this if you want to enforce per-user limits.</li>
+<li>Deprecated. Please use quotaUser instead.</li>
 </ul>
 </li>
 </ul>

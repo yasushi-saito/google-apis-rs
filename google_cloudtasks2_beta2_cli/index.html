@@ -8,7 +8,7 @@
   <meta name="description" content="A complete library to interact with Cloud Tasks (protocol v2beta2)">
   
   <link rel="shortcut icon" href="./img/favicon.ico">
-  <title>Home - Cloud Tasks v1.0.7+20171208</title>
+  <title>Home - Cloud Tasks v1.0.8+20180913</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="./css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href="." class="icon icon-home"> Cloud Tasks v1.0.7+20171208</a>
+        <a href="." class="icon icon-home"> Cloud Tasks v1.0.8+20180913</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -147,11 +147,11 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="projects_locations-queues-tasks-list/">Locations Queues Tasks List</a>
+    <a class="" href="projects_locations-queues-tasks-lease/">Locations Queues Tasks Lease</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="projects_locations-queues-tasks-pull/">Locations Queues Tasks Pull</a>
+    <a class="" href="projects_locations-queues-tasks-list/">Locations Queues Tasks List</a>
                 </li>
                 <li class="">
                     
@@ -178,7 +178,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href=".">Cloud Tasks v1.0.7+20171208</a>
+        <a href=".">Cloud Tasks v1.0.8+20180913</a>
       </nav>
 
       
@@ -214,7 +214,7 @@ DO NOT EDIT !
 capabilities. Errors will be printed to standard error, and cause the program's exit code to be non-zero.</p>
 <p>If data-structures are requested, these will be returned as pretty-printed JSON, to be useful as input to other tools.</p>
 <p>Everything else about the <em>Cloud Tasks</em> API can be found at the
-<a href="https://cloud.google.com/cloud-tasks/">official documentation site</a>.</p>
+<a href="https://cloud.google.com/tasks/">official documentation site</a>.</p>
 <h1 id="installation-and-source-code">Installation and Source Code</h1>
 <p>Install the command-line interface with cargo using:</p>
 <pre><code class="bash">cargo install google-cloudtasks2_beta2-cli
@@ -222,7 +222,7 @@ capabilities. Errors will be printed to standard error, and cause the program's 
 
 <p>Find the source code <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/cloudtasks2_beta2-cli">on github</a>.</p>
 <h1 id="usage">Usage</h1>
-<p>This documentation was generated from the <em>Cloud Tasks</em> API at revision <em>20171208</em>. The CLI is at version <em>1.0.7</em>.</p>
+<p>This documentation was generated from the <em>Cloud Tasks</em> API at revision <em>20180913</em>. The CLI is at version <em>1.0.8</em>.</p>
 <pre><code class="bash">cloudtasks2-beta2 [options]
         projects
                 locations-get &lt;name&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
@@ -242,8 +242,8 @@ capabilities. Errors will be printed to standard error, and cause the program's 
                 locations-queues-tasks-create &lt;parent&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 locations-queues-tasks-delete &lt;name&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 locations-queues-tasks-get &lt;name&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                locations-queues-tasks-lease &lt;parent&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 locations-queues-tasks-list &lt;parent&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
-                locations-queues-tasks-pull &lt;name&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 locations-queues-tasks-renew-lease &lt;name&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 locations-queues-tasks-run &lt;name&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 locations-queues-test-iam-permissions &lt;resource&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
@@ -354,5 +354,5 @@ issue at hand.</p>
 
 <!--
 MkDocs version : 0.16.3
-Build Date UTC : 2018-02-01 19:24:25
+Build Date UTC : 2018-10-14 11:32:37
 -->

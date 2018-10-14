@@ -8,7 +8,7 @@
   <meta name="description" content="A complete library to interact with Vault (protocol v1)">
   
   <link rel="shortcut icon" href="./img/favicon.ico">
-  <title>Home - Vault v1.0.7+20171026</title>
+  <title>Home - Vault v1.0.8+20180827</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="./css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href="." class="icon icon-home"> Vault v1.0.7+20171026</a>
+        <a href="." class="icon icon-home"> Vault v1.0.8+20180827</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -95,6 +95,22 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="matters_exports-create/">Exports Create</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="matters_exports-delete/">Exports Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="matters_exports-get/">Exports Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="matters_exports-list/">Exports List</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="matters_get/">Get</a>
                 </li>
                 <li class="">
@@ -111,6 +127,10 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="matters_holds-add-held-accounts/">Holds Add Held Accounts</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="matters_holds-create/">Holds Create</a>
                 </li>
                 <li class="">
@@ -124,6 +144,10 @@
                 <li class="">
                     
     <a class="" href="matters_holds-list/">Holds List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="matters_holds-remove-held-accounts/">Holds Remove Held Accounts</a>
                 </li>
                 <li class="">
                     
@@ -162,7 +186,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href=".">Vault v1.0.7+20171026</a>
+        <a href=".">Vault v1.0.8+20180827</a>
       </nav>
 
       
@@ -206,21 +230,27 @@ capabilities. Errors will be printed to standard error, and cause the program's 
 
 <p>Find the source code <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/vault1-cli">on github</a>.</p>
 <h1 id="usage">Usage</h1>
-<p>This documentation was generated from the <em>Vault</em> API at revision <em>20171026</em>. The CLI is at version <em>1.0.7</em>.</p>
+<p>This documentation was generated from the <em>Vault</em> API at revision <em>20180827</em>. The CLI is at version <em>1.0.8</em>.</p>
 <pre><code class="bash">vault1 [options]
         matters
                 add-permissions &lt;matter-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 close &lt;matter-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 create (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 delete &lt;matter-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                exports-create &lt;matter-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                exports-delete &lt;matter-id&gt; &lt;export-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                exports-get &lt;matter-id&gt; &lt;export-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                exports-list &lt;matter-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 get &lt;matter-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 holds-accounts-create &lt;matter-id&gt; &lt;hold-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 holds-accounts-delete &lt;matter-id&gt; &lt;hold-id&gt; &lt;account-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 holds-accounts-list &lt;matter-id&gt; &lt;hold-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                holds-add-held-accounts &lt;matter-id&gt; &lt;hold-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 holds-create &lt;matter-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 holds-delete &lt;matter-id&gt; &lt;hold-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 holds-get &lt;matter-id&gt; &lt;hold-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 holds-list &lt;matter-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                holds-remove-held-accounts &lt;matter-id&gt; &lt;hold-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 holds-update &lt;matter-id&gt; &lt;hold-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 list [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 remove-permissions &lt;matter-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
@@ -334,5 +364,5 @@ issue at hand.</p>
 
 <!--
 MkDocs version : 0.16.3
-Build Date UTC : 2018-02-01 19:24:58
+Build Date UTC : 2018-10-14 11:33:30
 -->

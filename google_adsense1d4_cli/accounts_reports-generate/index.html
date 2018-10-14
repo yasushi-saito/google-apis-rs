@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Reports Generate - AdSense v1.0.7+20171211</title>
+  <title>Reports Generate - AdSense v1.0.8+20181010</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> AdSense v1.0.7+20171211</a>
+        <a href=".." class="icon icon-home"> AdSense v1.0.8+20181010</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -56,6 +56,10 @@
 		
     <span class="caption-text">Accounts</span>
     <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../accounts_adclients-get-ad-code/">Adclients Get Ad Code</a>
+                </li>
                 <li class="">
                     
     <a class="" href="../accounts_adclients-list/">Adclients List</a>
@@ -302,7 +306,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">AdSense v1.0.7+20171211</a>
+        <a href="..">AdSense v1.0.8+20181010</a>
       </nav>
 
       
@@ -373,6 +377,42 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
+<p><strong>-p max-results=integer</strong></p>
+<ul>
+<li>The maximum number of rows of report data to return.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p locale=string</strong></p>
+<ul>
+<li>Optional locale to use for translating report output to a local language. Defaults to &#34;en_US&#34; if not specified.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p filter=string</strong></p>
+<ul>
+<li>Filters to be run on the report.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p start-index=integer</strong></p>
+<ul>
+<li>Index of the first row of report data to return.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p currency=string</strong></p>
+<ul>
+<li>Optional currency to use when reporting on monetary metrics. Defaults to the account&#39;s currency if not set.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p use-timezone-reporting=boolean</strong></p>
+<ul>
+<li>Whether the report should be generated in the AdSense account&#39;s local timezone. If false default PST/PDT timezone will be used.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p dimension=string</strong></p>
 <ul>
 <li>Dimensions to base the report on.</li>
@@ -385,45 +425,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p max-results=integer</strong></p>
-<ul>
-<li>The maximum number of rows of report data to return.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p start-index=integer</strong></p>
-<ul>
-<li>Index of the first row of report data to return.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p metric=string</strong></p>
 <ul>
 <li>Numeric columns to include in the report.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p locale=string</strong></p>
-<ul>
-<li>Optional locale to use for translating report output to a local language. Defaults to &#34;en_US&#34; if not specified.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p use-timezone-reporting=boolean</strong></p>
-<ul>
-<li>Whether the report should be generated in the AdSense account&#39;s local timezone. If false default PST/PDT timezone will be used.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p currency=string</strong></p>
-<ul>
-<li>Optional currency to use when reporting on monetary metrics. Defaults to the account&#39;s currency if not set.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p filter=string</strong></p>
-<ul>
-<li>Filters to be run on the report.</li>
 </ul>
 </li>
 </ul>
@@ -463,13 +467,13 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <li>
 <p><strong>-p quota-user=string</strong></p>
 <ul>
-<li>Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. Overrides userIp if both are provided.</li>
+<li>An opaque string that represents a user for quota purposes. Must not exceed 40 characters.</li>
 </ul>
 </li>
 <li>
 <p><strong>-p user-ip=string</strong></p>
 <ul>
-<li>IP address of the site where the request originates. Use this if you want to enforce per-user limits.</li>
+<li>Deprecated. Please use quotaUser instead.</li>
 </ul>
 </li>
 </ul>

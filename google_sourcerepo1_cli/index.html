@@ -8,7 +8,7 @@
   <meta name="description" content="A complete library to interact with Cloud Source Repositories (protocol v1)">
   
   <link rel="shortcut icon" href="./img/favicon.ico">
-  <title>Home - Cloud Source Repositories v1.0.7+20171110</title>
+  <title>Home - Cloud Source Repositories v1.0.8+20180718</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="./css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href="." class="icon icon-home"> Cloud Source Repositories v1.0.7+20171110</a>
+        <a href="." class="icon icon-home"> Cloud Source Repositories v1.0.8+20180718</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -79,6 +79,10 @@
     <ul class="subnav">
                 <li class="">
                     
+    <a class="" href="projects_get-config/">Get Config</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="projects_repos-create/">Repos Create</a>
                 </li>
                 <li class="">
@@ -99,11 +103,19 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="projects_repos-patch/">Repos Patch</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="projects_repos-set-iam-policy/">Repos Set Iam Policy</a>
                 </li>
                 <li class="">
                     
     <a class="" href="projects_repos-test-iam-permissions/">Repos Test Iam Permissions</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="projects_update-config/">Update Config</a>
                 </li>
     </ul>
 	    </li>
@@ -118,7 +130,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href=".">Cloud Source Repositories v1.0.7+20171110</a>
+        <a href=".">Cloud Source Repositories v1.0.8+20180718</a>
       </nav>
 
       
@@ -162,16 +174,19 @@ capabilities. Errors will be printed to standard error, and cause the program's 
 
 <p>Find the source code <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/sourcerepo1-cli">on github</a>.</p>
 <h1 id="usage">Usage</h1>
-<p>This documentation was generated from the <em>Cloud Source Repositories</em> API at revision <em>20171110</em>. The CLI is at version <em>1.0.7</em>.</p>
+<p>This documentation was generated from the <em>Cloud Source Repositories</em> API at revision <em>20180718</em>. The CLI is at version <em>1.0.8</em>.</p>
 <pre><code class="bash">sourcerepo1 [options]
         projects
+                get-config &lt;name&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 repos-create &lt;parent&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 repos-delete &lt;name&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 repos-get &lt;name&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 repos-get-iam-policy &lt;resource&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 repos-list &lt;name&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                repos-patch &lt;name&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 repos-set-iam-policy &lt;resource&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 repos-test-iam-permissions &lt;resource&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                update-config &lt;name&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
   sourcerepo1 --help
 
 Configuration:
@@ -236,7 +251,7 @@ issue at hand.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="projects_repos-create/" class="btn btn-neutral float-right" title="Repos Create">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="projects_get-config/" class="btn btn-neutral float-right" title="Get Config">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
     </div>
@@ -268,7 +283,7 @@ issue at hand.</p>
       
       
       
-        <span style="margin-left: 15px"><a href="projects_repos-create/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="projects_get-config/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
@@ -279,5 +294,5 @@ issue at hand.</p>
 
 <!--
 MkDocs version : 0.16.3
-Build Date UTC : 2018-02-01 19:26:05
+Build Date UTC : 2018-10-14 11:35:11
 -->

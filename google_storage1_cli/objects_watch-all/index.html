@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Watch All - storage v1.0.7+20171101</title>
+  <title>Watch All - storage v1.0.8+20180905</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> storage v1.0.7+20171101</a>
+        <a href=".." class="icon icon-home"> storage v1.0.8+20180905</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -106,6 +106,10 @@
                 <li class="">
                     
     <a class="" href="../buckets_list/">List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../buckets_lock-retention-policy/">Lock Retention Policy</a>
                 </li>
                 <li class="">
                     
@@ -329,7 +333,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">storage v1.0.7+20171101</a>
+        <a href="..">storage v1.0.8+20180905</a>
       </nav>
 
       
@@ -397,44 +401,44 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    address=nonumy</code><ul>
+<li><code>-r .    address=elitr</code><ul>
 <li>The address where notifications are delivered for this channel.</li>
 </ul>
 </li>
-<li><code>expiration=magna</code><ul>
+<li><code>expiration=clita</code><ul>
 <li>Date and time of notification channel expiration, expressed as a Unix timestamp, in milliseconds. Optional.</li>
 </ul>
 </li>
-<li><code>id=ea</code><ul>
+<li><code>id=et</code><ul>
 <li>A UUID or similar unique string that identifies this channel.</li>
 </ul>
 </li>
-<li><code>kind=sea</code><ul>
+<li><code>kind=eirmod</code><ul>
 <li>Identifies this as a notification channel used to watch for changes to a resource. Value: the fixed string &#34;api#channel&#34;.</li>
 </ul>
 </li>
-<li><code>params=key=ipsum</code><ul>
+<li><code>params=key=ea</code><ul>
 <li>Additional parameters controlling delivery channel behavior. Optional.</li>
 <li>the value will be associated with the given <code>key</code></li>
 </ul>
 </li>
-<li><code>payload=true</code><ul>
+<li><code>payload=false</code><ul>
 <li>A Boolean value to indicate whether payload is wanted. Optional.</li>
 </ul>
 </li>
-<li><code>resource-id=lorem</code><ul>
+<li><code>resource-id=sed</code><ul>
 <li>An opaque ID that identifies the resource being watched on this channel. Stable across different API versions.</li>
 </ul>
 </li>
-<li><code>resource-uri=aliquyam</code><ul>
+<li><code>resource-uri=sanctus</code><ul>
 <li>A version-specific identifier for the watched resource.</li>
 </ul>
 </li>
-<li><code>token=sanctus</code><ul>
+<li><code>token=sea</code><ul>
 <li>An arbitrary string delivered to the target address with each notification delivered over this channel. Optional.</li>
 </ul>
 </li>
-<li><code>type=et</code><ul>
+<li><code>type=ipsum</code><ul>
 <li>The type of delivery mechanism used for this channel.</li>
 </ul>
 </li>
@@ -470,21 +474,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p versions=boolean</strong></p>
+<p><strong>-p include-trailing-delimiter=boolean</strong></p>
 <ul>
-<li>If true, lists all versions of an object as distinct results. The default is false. For more information, see Object Versioning.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p projection=string</strong></p>
-<ul>
-<li>Set of properties to return. Defaults to noAcl.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p user-project=string</strong></p>
-<ul>
-<li>The project to be billed for this request. Required for Requester Pays buckets.</li>
+<li>If true, objects that end in exactly one instance of delimiter will have their metadata included in items in addition to prefixes.</li>
 </ul>
 </li>
 <li>
@@ -494,15 +486,33 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
+<p><strong>-p delimiter=string</strong></p>
+<ul>
+<li>Returns results in a directory-like mode. items will contain only objects whose names, aside from the prefix, do not contain delimiter. Objects whose names, aside from the prefix, contain delimiter will have their name, truncated after the delimiter, returned in prefixes. Duplicate prefixes are omitted.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p prefix=string</strong></p>
 <ul>
 <li>Filter results to objects whose names begin with this prefix.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p delimiter=string</strong></p>
+<p><strong>-p projection=string</strong></p>
 <ul>
-<li>Returns results in a directory-like mode. items will contain only objects whose names, aside from the prefix, do not contain delimiter. Objects whose names, aside from the prefix, contain delimiter will have their name, truncated after the delimiter, returned in prefixes. Duplicate prefixes are omitted.</li>
+<li>Set of properties to return. Defaults to noAcl.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p versions=boolean</strong></p>
+<ul>
+<li>If true, lists all versions of an object as distinct results. The default is false. For more information, see Object Versioning.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p user-project=string</strong></p>
+<ul>
+<li>The project to be billed for this request. Required for Requester Pays buckets.</li>
 </ul>
 </li>
 </ul>
@@ -542,13 +552,13 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <li>
 <p><strong>-p quota-user=string</strong></p>
 <ul>
-<li>Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. Overrides userIp if both are provided.</li>
+<li>An opaque string that represents a user for quota purposes. Must not exceed 40 characters.</li>
 </ul>
 </li>
 <li>
 <p><strong>-p user-ip=string</strong></p>
 <ul>
-<li>IP address of the site where the request originates. Use this if you want to enforce per-user limits.</li>
+<li>Deprecated. Please use quotaUser instead.</li>
 </ul>
 </li>
 </ul>

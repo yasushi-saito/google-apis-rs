@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>List - storage v1.0.7+20171101</title>
+  <title>List - storage v1.0.8+20180905</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> storage v1.0.7+20171101</a>
+        <a href=".." class="icon icon-home"> storage v1.0.8+20180905</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -106,6 +106,10 @@
                 <li class="">
                     
     <a class="" href="../buckets_list/">List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../buckets_lock-retention-policy/">Lock Retention Policy</a>
                 </li>
                 <li class="">
                     
@@ -320,7 +324,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">storage v1.0.7+20171101</a>
+        <a href="..">storage v1.0.8+20180905</a>
       </nav>
 
       
@@ -385,9 +389,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p max-results=integer</strong></p>
+<p><strong>-p versions=boolean</strong></p>
 <ul>
-<li>Maximum number of items plus prefixes to return in a single page of responses. As duplicate prefixes are omitted, fewer total results may be returned than requested. The service will use this parameter or 1,000 items, whichever is smaller.</li>
+<li>If true, lists all versions of an object as distinct results. The default is false. For more information, see Object Versioning.</li>
 </ul>
 </li>
 <li>
@@ -397,9 +401,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p prefix=string</strong></p>
+<p><strong>-p delimiter=string</strong></p>
 <ul>
-<li>Filter results to objects whose names begin with this prefix.</li>
+<li>Returns results in a directory-like mode. items will contain only objects whose names, aside from the prefix, do not contain delimiter. Objects whose names, aside from the prefix, contain delimiter will have their name, truncated after the delimiter, returned in prefixes. Duplicate prefixes are omitted.</li>
 </ul>
 </li>
 <li>
@@ -409,9 +413,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p versions=boolean</strong></p>
+<p><strong>-p max-results=integer</strong></p>
 <ul>
-<li>If true, lists all versions of an object as distinct results. The default is false. For more information, see Object Versioning.</li>
+<li>Maximum number of items plus prefixes to return in a single page of responses. As duplicate prefixes are omitted, fewer total results may be returned than requested. The service will use this parameter or 1,000 items, whichever is smaller.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p prefix=string</strong></p>
+<ul>
+<li>Filter results to objects whose names begin with this prefix.</li>
 </ul>
 </li>
 <li>
@@ -421,9 +431,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p delimiter=string</strong></p>
+<p><strong>-p include-trailing-delimiter=boolean</strong></p>
 <ul>
-<li>Returns results in a directory-like mode. items will contain only objects whose names, aside from the prefix, do not contain delimiter. Objects whose names, aside from the prefix, contain delimiter will have their name, truncated after the delimiter, returned in prefixes. Duplicate prefixes are omitted.</li>
+<li>If true, objects that end in exactly one instance of delimiter will have their metadata included in items in addition to prefixes.</li>
 </ul>
 </li>
 </ul>
@@ -463,13 +473,13 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <li>
 <p><strong>-p quota-user=string</strong></p>
 <ul>
-<li>Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. Overrides userIp if both are provided.</li>
+<li>An opaque string that represents a user for quota purposes. Must not exceed 40 characters.</li>
 </ul>
 </li>
 <li>
 <p><strong>-p user-ip=string</strong></p>
 <ul>
-<li>IP address of the site where the request originates. Use this if you want to enforce per-user limits.</li>
+<li>Deprecated. Please use quotaUser instead.</li>
 </ul>
 </li>
 </ul>

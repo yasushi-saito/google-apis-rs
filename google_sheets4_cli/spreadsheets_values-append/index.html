@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Values Append - Sheets v1.0.7+20171208</title>
+  <title>Values Append - Sheets v1.0.8+20181010</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Sheets v1.0.7+20171208</a>
+        <a href=".." class="icon icon-home"> Sheets v1.0.8+20181010</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -164,7 +164,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Sheets v1.0.7+20171208</a>
+        <a href="..">Sheets v1.0.8+20181010</a>
       </nav>
 
       
@@ -286,17 +286,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p include-values-in-response=boolean</strong></p>
+<p><strong>-p value-input-option=string</strong></p>
 <ul>
-<li>Determines if the update response should include the values
-    of the cells that were appended. By default, responses
-    do not include the updated values.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p insert-data-option=string</strong></p>
-<ul>
-<li>How the input data should be inserted.</li>
+<li>How the input data should be interpreted.</li>
 </ul>
 </li>
 <li>
@@ -316,9 +308,17 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p value-input-option=string</strong></p>
+<p><strong>-p include-values-in-response=boolean</strong></p>
 <ul>
-<li>How the input data should be interpreted.</li>
+<li>Determines if the update response should include the values
+    of the cells that were appended. By default, responses
+    do not include the updated values.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p insert-data-option=string</strong></p>
+<ul>
+<li>How the input data should be inserted.</li>
 </ul>
 </li>
 </ul>
@@ -344,12 +344,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p bearer-token=string</strong></p>
-<ul>
-<li>OAuth bearer token.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p callback=string</strong></p>
 <ul>
 <li>JSONP</li>
@@ -371,12 +365,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <p><strong>-p oauth-token=string</strong></p>
 <ul>
 <li>OAuth 2.0 token for the current user.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p pp=boolean</strong></p>
-<ul>
-<li>Pretty-print response.</li>
 </ul>
 </li>
 <li>

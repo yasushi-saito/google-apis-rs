@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Coveragebuckets List - genomics v1.0.7+20171207</title>
+  <title>Coveragebuckets List - genomics v1.0.8+20181010</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> genomics v1.0.7+20171207</a>
+        <a href=".." class="icon icon-home"> genomics v1.0.8+20181010</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -373,7 +373,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">genomics v1.0.7+20171207</a>
+        <a href="..">genomics v1.0.8+20181010</a>
       </nav>
 
       
@@ -405,9 +405,6 @@
                 <p>Lists fixed width coverage buckets for a read group set, each of which
 correspond to a range of a reference sequence. Each bucket summarizes
 coverage information across its corresponding genomic range.</p>
-<p>For the definitions of read group sets and other genomics resources, see
-<a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google
-Genomics</a></p>
 <p>Coverage is defined as the number of reads which are aligned to a given
 base in the reference sequence. Coverage buckets are available at several
 precomputed bucket widths, enabling retrieval of various coverage &#39;zoom
@@ -446,26 +443,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p target-bucket-width=string</strong></p>
-<ul>
-<li>The desired width of each reported coverage bucket in base pairs. This
-    will be rounded down to the nearest precomputed bucket width; the value
-    of which is returned as <code>bucketWidth</code> in the response. Defaults
-    to infinity (each bucket spans an entire reference sequence) or the length
-    of the target range, if specified. The smallest precomputed
-    <code>bucketWidth</code> is currently 2048 base pairs; this is subject to
-    change.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p end=string</strong></p>
-<ul>
-<li>The end position of the range on the reference, 0-based exclusive. If
-    specified, <code>referenceName</code> must also be specified. If unset or 0, defaults
-    to the length of the reference.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p start=string</strong></p>
 <ul>
 <li>The start position of the range on the reference, 0-based inclusive. If
@@ -477,6 +454,18 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <ul>
 <li>The maximum number of results to return in a single page. If unspecified,
     defaults to 1024. The maximum value is 2048.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p target-bucket-width=string</strong></p>
+<ul>
+<li>The desired width of each reported coverage bucket in base pairs. This
+    will be rounded down to the nearest precomputed bucket width; the value
+    of which is returned as <code>bucketWidth</code> in the response. Defaults
+    to infinity (each bucket spans an entire reference sequence) or the length
+    of the target range, if specified. The smallest precomputed
+    <code>bucketWidth</code> is currently 2048 base pairs; this is subject to
+    change.</li>
 </ul>
 </li>
 <li>
@@ -492,6 +481,14 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <li>The continuation token, which is used to page through large result sets.
     To get the next page of results, set this parameter to the value of
     <code>nextPageToken</code> from the previous response.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p end=string</strong></p>
+<ul>
+<li>The end position of the range on the reference, 0-based exclusive. If
+    specified, <code>referenceName</code> must also be specified. If unset or 0, defaults
+    to the length of the reference.</li>
 </ul>
 </li>
 </ul>
@@ -517,12 +514,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p bearer-token=string</strong></p>
-<ul>
-<li>OAuth bearer token.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p callback=string</strong></p>
 <ul>
 <li>JSONP</li>
@@ -544,12 +535,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <p><strong>-p oauth-token=string</strong></p>
 <ul>
 <li>OAuth 2.0 token for the current user.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p pp=boolean</strong></p>
-<ul>
-<li>Pretty-print response.</li>
 </ul>
 </li>
 <li>

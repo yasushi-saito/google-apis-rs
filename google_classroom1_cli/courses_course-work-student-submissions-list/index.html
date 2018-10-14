@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Course Work Student Submissions List - classroom v1.0.7+20171211</title>
+  <title>Course Work Student Submissions List - classroom v1.0.8+20181009</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> classroom v1.0.7+20171211</a>
+        <a href=".." class="icon icon-home"> classroom v1.0.8+20181009</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -312,7 +312,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">classroom v1.0.7+20171211</a>
+        <a href="..">classroom v1.0.8+20181009</a>
       </nav>
 
       
@@ -408,6 +408,21 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
+<p><strong>-p late=string</strong></p>
+<ul>
+<li>Requested lateness value. If specified, returned student submissions are
+    restricted by the requested value.
+    If unspecified, submissions are returned regardless of <code>late</code> value.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p states=string</strong></p>
+<ul>
+<li>Requested submission states. If specified, returned student submissions
+    match one of the specified submission states.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p user-id=string</strong></p>
 <ul>
 <li>
@@ -423,14 +438,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p late=string</strong></p>
-<ul>
-<li>Requested lateness value. If specified, returned student submissions are
-    restricted by the requested value.
-    If unspecified, submissions are returned regardless of <code>late</code> value.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p page-token=string</strong></p>
 <ul>
 <li>
@@ -441,13 +448,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <p>The list request
 must be otherwise identical to the one that resulted in this token.</p>
 </li>
-</ul>
-</li>
-<li>
-<p><strong>-p states=string</strong></p>
-<ul>
-<li>Requested submission states. If specified, returned student submissions
-    match one of the specified submission states.</li>
 </ul>
 </li>
 </ul>
@@ -473,12 +473,6 @@ must be otherwise identical to the one that resulted in this token.</p>
 </ul>
 </li>
 <li>
-<p><strong>-p bearer-token=string</strong></p>
-<ul>
-<li>OAuth bearer token.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p callback=string</strong></p>
 <ul>
 <li>JSONP</li>
@@ -500,12 +494,6 @@ must be otherwise identical to the one that resulted in this token.</p>
 <p><strong>-p oauth-token=string</strong></p>
 <ul>
 <li>OAuth 2.0 token for the current user.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p pp=boolean</strong></p>
-<ul>
-<li>Pretty-print response.</li>
 </ul>
 </li>
 <li>

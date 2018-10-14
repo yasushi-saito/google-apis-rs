@@ -8,7 +8,7 @@
   <meta name="description" content="A complete library to interact with directory (protocol directory_v1)">
   
   <link rel="shortcut icon" href="./img/favicon.ico">
-  <title>Home - directory v1.0.7+20171127</title>
+  <title>Home - directory v1.0.8+20180917</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="./css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href="." class="icon icon-home"> directory v1.0.7+20171127</a>
+        <a href="." class="icon icon-home"> directory v1.0.8+20180917</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -390,6 +390,30 @@
     <ul class="subnav">
                 <li class="">
                     
+    <a class="" href="resources_buildings-delete/">Buildings Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="resources_buildings-get/">Buildings Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="resources_buildings-insert/">Buildings Insert</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="resources_buildings-list/">Buildings List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="resources_buildings-patch/">Buildings Patch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="resources_buildings-update/">Buildings Update</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="resources_calendars-delete/">Calendars Delete</a>
                 </li>
                 <li class="">
@@ -411,6 +435,34 @@
                 <li class="">
                     
     <a class="" href="resources_calendars-update/">Calendars Update</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="resources_features-delete/">Features Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="resources_features-get/">Features Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="resources_features-insert/">Features Insert</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="resources_features-list/">Features List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="resources_features-patch/">Features Patch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="resources_features-rename/">Features Rename</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="resources_features-update/">Features Update</a>
                 </li>
     </ul>
 	    </li>
@@ -623,7 +675,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href=".">directory v1.0.7+20171127</a>
+        <a href=".">directory v1.0.8+20180917</a>
       </nav>
 
       
@@ -667,7 +719,7 @@ capabilities. Errors will be printed to standard error, and cause the program's 
 
 <p>Find the source code <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/admin1_directory-cli">on github</a>.</p>
 <h1 id="usage">Usage</h1>
-<p>This documentation was generated from the <em>directory</em> API at revision <em>20171127</em>. The CLI is at version <em>1.0.7</em>.</p>
+<p>This documentation was generated from the <em>directory</em> API at revision <em>20180917</em>. The CLI is at version <em>1.0.8</em>.</p>
 <pre><code class="bash">admin1-directory [options]
         asps
                 delete &lt;user-key&gt; &lt;code-id&gt; [-p &lt;v&gt;]...
@@ -738,12 +790,25 @@ capabilities. Errors will be printed to standard error, and cause the program's 
                 get-settings [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 list-trusted-apps [-p &lt;v&gt;]... [-o &lt;out&gt;]
         resources
+                buildings-delete &lt;customer&gt; &lt;building-id&gt; [-p &lt;v&gt;]...
+                buildings-get &lt;customer&gt; &lt;building-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                buildings-insert &lt;customer&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                buildings-list &lt;customer&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                buildings-patch &lt;customer&gt; &lt;building-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                buildings-update &lt;customer&gt; &lt;building-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 calendars-delete &lt;customer&gt; &lt;calendar-resource-id&gt; [-p &lt;v&gt;]...
                 calendars-get &lt;customer&gt; &lt;calendar-resource-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 calendars-insert &lt;customer&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 calendars-list &lt;customer&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 calendars-patch &lt;customer&gt; &lt;calendar-resource-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 calendars-update &lt;customer&gt; &lt;calendar-resource-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                features-delete &lt;customer&gt; &lt;feature-key&gt; [-p &lt;v&gt;]...
+                features-get &lt;customer&gt; &lt;feature-key&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                features-insert &lt;customer&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                features-list &lt;customer&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                features-patch &lt;customer&gt; &lt;feature-key&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                features-rename &lt;customer&gt; &lt;old-name&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]...
+                features-update &lt;customer&gt; &lt;feature-key&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
         role-assignments
                 delete &lt;customer&gt; &lt;role-assignment-id&gt; [-p &lt;v&gt;]...
                 get &lt;customer&gt; &lt;role-assignment-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
@@ -896,5 +961,5 @@ issue at hand.</p>
 
 <!--
 MkDocs version : 0.16.3
-Build Date UTC : 2018-02-01 19:24:49
+Build Date UTC : 2018-10-14 11:33:21
 -->

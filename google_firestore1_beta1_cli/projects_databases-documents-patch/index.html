@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Databases Documents Patch - Firestore v1.0.7+20171205</title>
+  <title>Databases Documents Patch - Firestore v1.0.8+20181001</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Firestore v1.0.7+20171205</a>
+        <a href=".." class="icon icon-home"> Firestore v1.0.8+20181001</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -137,6 +137,14 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="../projects_databases-export-documents/">Databases Export Documents</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_databases-import-documents/">Databases Import Documents</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../projects_databases-indexes-create/">Databases Indexes Create</a>
                 </li>
                 <li class="">
@@ -164,7 +172,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Firestore v1.0.7+20171205</a>
+        <a href="..">Firestore v1.0.8+20181001</a>
       </nav>
 
       
@@ -234,7 +242,7 @@ the <code>read_time</code> of a query.
 <code>projects/{project_id}/databases/{database_id}/documents/{document_path}</code>.
 </em> <code>update-time=dolore</code>
     - Output only. The time at which the document was last changed.</p>
-<p>This value is initally set to the <code>create_time</code> then increases
+<p>This value is initially set to the <code>create_time</code> then increases
 monotonically with each change to the document. It can also be
 compared to values from other documents and the <code>read_time</code> of a query.</p>
 </li>
@@ -273,6 +281,13 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
+<p><strong>-p update-mask-field-paths=string</strong></p>
+<ul>
+<li>The list of field paths in the mask. See Document.fields for a field
+    path syntax reference.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p current-document-update-time=string</strong></p>
 <ul>
 <li>When set, the target document must exist and have been last updated at
@@ -284,13 +299,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <ul>
 <li>When set to <code>true</code>, the target document must exist.
     When set to <code>false</code>, the target document must not exist.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p update-mask-field-paths=string</strong></p>
-<ul>
-<li>The list of field paths in the mask. See Document.fields for a field
-    path syntax reference.</li>
 </ul>
 </li>
 </ul>
@@ -316,12 +324,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p bearer-token=string</strong></p>
-<ul>
-<li>OAuth bearer token.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p callback=string</strong></p>
 <ul>
 <li>JSONP</li>
@@ -343,12 +345,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <p><strong>-p oauth-token=string</strong></p>
 <ul>
 <li>OAuth 2.0 token for the current user.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p pp=boolean</strong></p>
-<ul>
-<li>Pretty-print response.</li>
 </ul>
 </li>
 <li>

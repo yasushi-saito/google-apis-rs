@@ -8,7 +8,7 @@
   <meta name="description" content="A complete library to interact with AdExchangeBuyerII (protocol v2beta1)">
   
   <link rel="shortcut icon" href="./img/favicon.ico">
-  <title>Home - AdExchangeBuyerII v1.0.7+20171208</title>
+  <title>Home - AdExchangeBuyerII v1.0.8+20181011</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="./css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href="." class="icon icon-home"> AdExchangeBuyerII v1.0.7+20171208</a>
+        <a href="." class="icon icon-home"> AdExchangeBuyerII v1.0.8+20181011</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -153,6 +153,66 @@
                     
     <a class="" href="accounts_creatives-watch/">Creatives Watch</a>
                 </li>
+                <li class="">
+                    
+    <a class="" href="accounts_finalized-proposals-list/">Finalized Proposals List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="accounts_products-get/">Products Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="accounts_products-list/">Products List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="accounts_proposals-accept/">Proposals Accept</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="accounts_proposals-add-note/">Proposals Add Note</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="accounts_proposals-cancel-negotiation/">Proposals Cancel Negotiation</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="accounts_proposals-complete-setup/">Proposals Complete Setup</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="accounts_proposals-create/">Proposals Create</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="accounts_proposals-get/">Proposals Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="accounts_proposals-list/">Proposals List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="accounts_proposals-pause/">Proposals Pause</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="accounts_proposals-resume/">Proposals Resume</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="accounts_proposals-update/">Proposals Update</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="accounts_publisher-profiles-get/">Publisher Profiles Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="accounts_publisher-profiles-list/">Publisher Profiles List</a>
+                </li>
     </ul>
 	    </li>
           
@@ -160,6 +220,10 @@
 		
     <span class="caption-text">Bidders</span>
     <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="bidders_accounts-creatives-delete/">Accounts Creatives Delete</a>
+                </li>
                 <li class="">
                     
     <a class="" href="bidders_accounts-filter-sets-bid-metrics-list/">Accounts Filter Sets Bid Metrics List</a>
@@ -285,7 +349,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href=".">AdExchangeBuyerII v1.0.7+20171208</a>
+        <a href=".">AdExchangeBuyerII v1.0.8+20181011</a>
       </nav>
 
       
@@ -321,7 +385,7 @@ DO NOT EDIT !
 capabilities. Errors will be printed to standard error, and cause the program's exit code to be non-zero.</p>
 <p>If data-structures are requested, these will be returned as pretty-printed JSON, to be useful as input to other tools.</p>
 <p>Everything else about the <em>AdExchangeBuyerII</em> API can be found at the
-<a href="https://developers.google.com/ad-exchange/buyer-rest/reference/rest/">official documentation site</a>.</p>
+<a href="https://developers.google.com/authorized-buyers/apis/reference/rest/">official documentation site</a>.</p>
 <h1 id="installation-and-source-code">Installation and Source Code</h1>
 <p>Install the command-line interface with cargo using:</p>
 <pre><code class="bash">cargo install google-adexchangebuyer2_v2_beta1-cli
@@ -329,7 +393,7 @@ capabilities. Errors will be printed to standard error, and cause the program's 
 
 <p>Find the source code <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/adexchangebuyer2_v2_beta1-cli">on github</a>.</p>
 <h1 id="usage">Usage</h1>
-<p>This documentation was generated from the <em>AdExchangeBuyerII</em> API at revision <em>20171208</em>. The CLI is at version <em>1.0.7</em>.</p>
+<p>This documentation was generated from the <em>AdExchangeBuyerII</em> API at revision <em>20181011</em>. The CLI is at version <em>1.0.8</em>.</p>
 <pre><code class="bash">adexchangebuyer2-v2-beta1 [options]
         accounts
                 clients-create &lt;account-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
@@ -351,7 +415,23 @@ capabilities. Errors will be printed to standard error, and cause the program's 
                 creatives-stop-watching &lt;account-id&gt; &lt;creative-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 creatives-update &lt;account-id&gt; &lt;creative-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 creatives-watch &lt;account-id&gt; &lt;creative-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                finalized-proposals-list &lt;account-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                products-get &lt;account-id&gt; &lt;product-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                products-list &lt;account-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                proposals-accept &lt;account-id&gt; &lt;proposal-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                proposals-add-note &lt;account-id&gt; &lt;proposal-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                proposals-cancel-negotiation &lt;account-id&gt; &lt;proposal-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                proposals-complete-setup &lt;account-id&gt; &lt;proposal-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                proposals-create &lt;account-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                proposals-get &lt;account-id&gt; &lt;proposal-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                proposals-list &lt;account-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                proposals-pause &lt;account-id&gt; &lt;proposal-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                proposals-resume &lt;account-id&gt; &lt;proposal-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                proposals-update &lt;account-id&gt; &lt;proposal-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                publisher-profiles-get &lt;account-id&gt; &lt;publisher-profile-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                publisher-profiles-list &lt;account-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
         bidders
+                accounts-creatives-delete &lt;owner-name&gt; &lt;creative-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 accounts-filter-sets-bid-metrics-list &lt;filter-set-name&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 accounts-filter-sets-bid-response-errors-list &lt;filter-set-name&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 accounts-filter-sets-bid-responses-without-bids-list &lt;filter-set-name&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
@@ -487,5 +567,5 @@ issue at hand.</p>
 
 <!--
 MkDocs version : 0.16.3
-Build Date UTC : 2018-02-01 19:25:56
+Build Date UTC : 2018-10-14 11:34:59
 -->

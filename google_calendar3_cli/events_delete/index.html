@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Delete - calendar v1.0.7+20171205</title>
+  <title>Delete - calendar v1.0.8+20181009</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> calendar v1.0.7+20171205</a>
+        <a href=".." class="icon icon-home"> calendar v1.0.8+20181009</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -281,7 +281,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">calendar v1.0.7+20171205</a>
+        <a href="..">calendar v1.0.8+20181009</a>
       </nav>
 
       
@@ -312,7 +312,11 @@
               
                 <p>Deletes an event.</p>
 <h1 id="scopes">Scopes</h1>
-<p>You will need authorization for the <em>https://www.googleapis.com/auth/calendar</em> scope to make a valid call.</p>
+<p>You will need authorization for at least one of the following scopes to make a valid call:</p>
+<ul>
+<li><em>https://www.googleapis.com/auth/calendar</em></li>
+<li><em>https://www.googleapis.com/auth/calendar.events</em></li>
+</ul>
 <p>If unset, the scope for this method defaults to <em>https://www.googleapis.com/auth/calendar</em>.
 You can set the scope for this method like this: <code>calendar3 --scope &lt;scope&gt; events delete ...</code></p>
 <h1 id="required-scalar-arguments">Required Scalar Arguments</h1>
@@ -331,8 +335,19 @@ You can set the scope for this method like this: <code>calendar3 --scope &lt;sco
 or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> even though the listing below repeats the
 <code>-p</code> for completeness.</p>
 <ul>
-<li><strong>-p send-notifications=boolean</strong><ul>
-<li>Whether to send notifications about the deletion of the event. Optional. The default is False.</li>
+<li>
+<p><strong>-p send-updates=string</strong></p>
+<ul>
+<li>Guests who should receive notifications about the deletion of the event.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p send-notifications=boolean</strong></p>
+<ul>
+<li>
+<p>Deprecated. Please use sendUpdates instead.</p>
+<p>Whether to send notifications about the deletion of the event. Note that some emails might still be sent even if you set the value to false. The default is false.</p>
+</li>
 </ul>
 </li>
 </ul>
@@ -372,13 +387,13 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <li>
 <p><strong>-p quota-user=string</strong></p>
 <ul>
-<li>Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. Overrides userIp if both are provided.</li>
+<li>An opaque string that represents a user for quota purposes. Must not exceed 40 characters.</li>
 </ul>
 </li>
 <li>
 <p><strong>-p user-ip=string</strong></p>
 <ul>
-<li>IP address of the site where the request originates. Use this if you want to enforce per-user limits.</li>
+<li>Deprecated. Please use quotaUser instead.</li>
 </ul>
 </li>
 </ul>

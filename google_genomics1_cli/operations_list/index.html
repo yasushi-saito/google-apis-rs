@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>List - genomics v1.0.7+20171207</title>
+  <title>List - genomics v1.0.8+20181010</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> genomics v1.0.7+20171207</a>
+        <a href=".." class="icon icon-home"> genomics v1.0.8+20181010</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -373,7 +373,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">genomics v1.0.7+20171207</a>
+        <a href="..">genomics v1.0.8+20181010</a>
       </nav>
 
       
@@ -402,7 +402,11 @@
           <div role="main">
             <div class="section">
               
-                <p>Lists operations that match the specified filter in the request.</p>
+                <p>Lists operations that match the specified filter in the request.
+Authorization requires the following <a href="https://cloud.google.com/iam">Google IAM</a> permission&amp;#58;</p>
+<ul>
+<li><code>genomics.operations.list</code></li>
+</ul>
 <h1 id="scopes">Scopes</h1>
 <p>You will need authorization for at least one of the following scopes to make a valid call:</p>
 <ul>
@@ -454,7 +458,19 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <ul>
 <li>
 <p>A string for filtering Operations.
-    The following filter fields are supported&amp;#58;</p>
+    In v2alpha1, the following filter fields are supported&amp;#58;</p>
+<ul>
+<li>createTime&amp;#58; The time this job was created</li>
+<li>events&amp;#58; The set of event (names) that have occurred while running
+  the pipeline.  The &amp;#58; operator can be used to determine if a
+  particular event has occurred.</li>
+<li>error&amp;#58; If the pipeline is running, this value is NULL.  Once the
+  pipeline finishes, the value is the standard Google error code.</li>
+<li>labels.key or labels.&#34;key with space&#34; where key is a label key.</li>
+<li>done&amp;#58; If the pipeline is running, this value is false. Once the
+  pipeline finishes, the value is true.</li>
+</ul>
+<p>In v1 and v1alpha2, the following filter fields are supported&amp;#58;</p>
 <ul>
 <li>projectId&amp;#58; Required. Corresponds to
   OperationMetadata.projectId.</li>
@@ -498,12 +514,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p bearer-token=string</strong></p>
-<ul>
-<li>OAuth bearer token.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p callback=string</strong></p>
 <ul>
 <li>JSONP</li>
@@ -525,12 +535,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <p><strong>-p oauth-token=string</strong></p>
 <ul>
 <li>OAuth 2.0 token for the current user.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p pp=boolean</strong></p>
-<ul>
-<li>Pretty-print response.</li>
 </ul>
 </li>
 <li>

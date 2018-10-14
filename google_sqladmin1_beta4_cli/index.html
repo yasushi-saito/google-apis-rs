@@ -8,7 +8,7 @@
   <meta name="description" content="A complete library to interact with SQL Admin (protocol v1beta4)">
   
   <link rel="shortcut icon" href="./img/favicon.ico">
-  <title>Home - SQL Admin v1.0.7+20171011</title>
+  <title>Home - SQL Admin v1.0.8+20180917</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="./css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href="." class="icon icon-home"> SQL Admin v1.0.7+20171011</a>
+        <a href="." class="icon icon-home"> SQL Admin v1.0.8+20180917</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -144,6 +144,10 @@
     <ul class="subnav">
                 <li class="">
                     
+    <a class="" href="instances_add-server-ca/">Add Server Ca</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="instances_clone/">Clone</a>
                 </li>
                 <li class="">
@@ -180,6 +184,10 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="instances_list-server-cas/">List Server Cas</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="instances_patch/">Patch</a>
                 </li>
                 <li class="">
@@ -197,6 +205,10 @@
                 <li class="">
                     
     <a class="" href="instances_restore-backup/">Restore Backup</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="instances_rotate-server-ca/">Rotate Server Ca</a>
                 </li>
                 <li class="">
                     
@@ -303,7 +315,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href=".">SQL Admin v1.0.7+20171011</a>
+        <a href=".">SQL Admin v1.0.8+20180917</a>
       </nav>
 
       
@@ -347,7 +359,7 @@ capabilities. Errors will be printed to standard error, and cause the program's 
 
 <p>Find the source code <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/sqladmin1_beta4-cli">on github</a>.</p>
 <h1 id="usage">Usage</h1>
-<p>This documentation was generated from the <em>SQL Admin</em> API at revision <em>20171011</em>. The CLI is at version <em>1.0.7</em>.</p>
+<p>This documentation was generated from the <em>SQL Admin</em> API at revision <em>20180917</em>. The CLI is at version <em>1.0.8</em>.</p>
 <pre><code class="bash">sqladmin1-beta4 [options]
         backup-runs
                 delete &lt;project&gt; &lt;instance&gt; &lt;id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
@@ -364,6 +376,7 @@ capabilities. Errors will be printed to standard error, and cause the program's 
         flags
                 list [-p &lt;v&gt;]... [-o &lt;out&gt;]
         instances
+                add-server-ca &lt;project&gt; &lt;instance&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 clone &lt;project&gt; &lt;instance&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 delete &lt;project&gt; &lt;instance&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 demote-master &lt;project&gt; &lt;instance&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
@@ -373,11 +386,13 @@ capabilities. Errors will be printed to standard error, and cause the program's 
                 import &lt;project&gt; &lt;instance&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 insert &lt;project&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 list &lt;project&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                list-server-cas &lt;project&gt; &lt;instance&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 patch &lt;project&gt; &lt;instance&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 promote-replica &lt;project&gt; &lt;instance&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 reset-ssl-config &lt;project&gt; &lt;instance&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 restart &lt;project&gt; &lt;instance&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 restore-backup &lt;project&gt; &lt;instance&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                rotate-server-ca &lt;project&gt; &lt;instance&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 start-replica &lt;project&gt; &lt;instance&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 stop-replica &lt;project&gt; &lt;instance&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 truncate-log &lt;project&gt; &lt;instance&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
@@ -397,7 +412,7 @@ capabilities. Errors will be printed to standard error, and cause the program's 
                 delete &lt;project&gt; &lt;instance&gt; &lt;host&gt; &lt;name&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 insert &lt;project&gt; &lt;instance&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 list &lt;project&gt; &lt;instance&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
-                update &lt;project&gt; &lt;instance&gt; &lt;host&gt; &lt;name&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                update &lt;project&gt; &lt;instance&gt; &lt;name&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
   sqladmin1-beta4 --help
 
 Configuration:
@@ -505,5 +520,5 @@ issue at hand.</p>
 
 <!--
 MkDocs version : 0.16.3
-Build Date UTC : 2018-02-01 19:25:32
+Build Date UTC : 2018-10-14 11:34:32
 -->

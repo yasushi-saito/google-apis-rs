@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>List - classroom v1.0.7+20171211</title>
+  <title>List - classroom v1.0.8+20181009</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> classroom v1.0.7+20171211</a>
+        <a href=".." class="icon icon-home"> classroom v1.0.8+20181009</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -309,7 +309,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">classroom v1.0.7+20171211</a>
+        <a href="..">classroom v1.0.8+20181009</a>
       </nav>
 
       
@@ -384,17 +384,10 @@ otherwise identical to the one that resulted in this token.</p>
 </ul>
 </li>
 <li>
-<p><strong>-p user-id=string</strong></p>
+<p><strong>-p course-id=string</strong></p>
 <ul>
-<li>
-<p>Restricts returned invitations to those for a specific user. The identifier
-    can be one of the following:</p>
-<ul>
-<li>the numeric identifier for the user</li>
-<li>the email address of the user</li>
-<li>the string literal <code>&amp;#34;me&amp;#34;</code>, indicating the requesting user</li>
-</ul>
-</li>
+<li>Restricts returned invitations to those for a course with the specified
+    identifier.</li>
 </ul>
 </li>
 <li>
@@ -407,10 +400,17 @@ otherwise identical to the one that resulted in this token.</p>
 </ul>
 </li>
 <li>
-<p><strong>-p course-id=string</strong></p>
+<p><strong>-p user-id=string</strong></p>
 <ul>
-<li>Restricts returned invitations to those for a course with the specified
-    identifier.</li>
+<li>
+<p>Restricts returned invitations to those for a specific user. The identifier
+    can be one of the following:</p>
+<ul>
+<li>the numeric identifier for the user</li>
+<li>the email address of the user</li>
+<li>the string literal <code>&amp;#34;me&amp;#34;</code>, indicating the requesting user</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -436,12 +436,6 @@ otherwise identical to the one that resulted in this token.</p>
 </ul>
 </li>
 <li>
-<p><strong>-p bearer-token=string</strong></p>
-<ul>
-<li>OAuth bearer token.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p callback=string</strong></p>
 <ul>
 <li>JSONP</li>
@@ -463,12 +457,6 @@ otherwise identical to the one that resulted in this token.</p>
 <p><strong>-p oauth-token=string</strong></p>
 <ul>
 <li>OAuth 2.0 token for the current user.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p pp=boolean</strong></p>
-<ul>
-<li>Pretty-print response.</li>
 </ul>
 </li>
 <li>

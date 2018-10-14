@@ -8,7 +8,7 @@
   <meta name="description" content="A complete library to interact with datastore (protocol v1)">
   
   <link rel="shortcut icon" href="./img/favicon.ico">
-  <title>Home - datastore v1.0.7+20171205</title>
+  <title>Home - datastore v1.0.8+20181002</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="./css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href="." class="icon icon-home"> datastore v1.0.7+20171205</a>
+        <a href="." class="icon icon-home"> datastore v1.0.8+20181002</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -91,6 +91,22 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="projects_export/">Export</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="projects_import/">Import</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="projects_indexes-get/">Indexes Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="projects_indexes-list/">Indexes List</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="projects_lookup/">Lookup</a>
                 </li>
                 <li class="">
@@ -134,7 +150,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href=".">datastore v1.0.7+20171205</a>
+        <a href=".">datastore v1.0.8+20181002</a>
       </nav>
 
       
@@ -178,12 +194,16 @@ capabilities. Errors will be printed to standard error, and cause the program's 
 
 <p>Find the source code <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/datastore1-cli">on github</a>.</p>
 <h1 id="usage">Usage</h1>
-<p>This documentation was generated from the <em>datastore</em> API at revision <em>20171205</em>. The CLI is at version <em>1.0.7</em>.</p>
+<p>This documentation was generated from the <em>datastore</em> API at revision <em>20181002</em>. The CLI is at version <em>1.0.8</em>.</p>
 <pre><code class="bash">datastore1 [options]
         projects
                 allocate-ids &lt;project-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 begin-transaction &lt;project-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 commit &lt;project-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                export &lt;project-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                import &lt;project-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                indexes-get &lt;project-id&gt; &lt;index-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                indexes-list &lt;project-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 lookup &lt;project-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 operations-cancel &lt;name&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 operations-delete &lt;name&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
@@ -299,5 +319,5 @@ issue at hand.</p>
 
 <!--
 MkDocs version : 0.16.3
-Build Date UTC : 2018-02-01 19:26:11
+Build Date UTC : 2018-10-14 11:35:24
 -->

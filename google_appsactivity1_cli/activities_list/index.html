@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>List - appsactivity v1.0.7+20171207</title>
+  <title>List - appsactivity v1.0.8+20181011</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> appsactivity v1.0.7+20171207</a>
+        <a href=".." class="icon icon-home"> appsactivity v1.0.8+20181011</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -88,7 +88,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">appsactivity v1.0.7+20171207</a>
+        <a href="..">appsactivity v1.0.8+20181011</a>
       </nav>
 
       
@@ -119,15 +119,8 @@
               
                 <p>Returns a list of activities visible to the current logged in user. Visible activities are determined by the visiblity settings of the object that was acted on, e.g. Drive files a user can see. An activity is a record of past events. Multiple events may be merged if they are similar. A request is scoped to activities from a given Google service using the source parameter.</p>
 <h1 id="scopes">Scopes</h1>
-<p>You will need authorization for at least one of the following scopes to make a valid call:</p>
-<ul>
-<li><em>https://www.googleapis.com/auth/activity</em></li>
-<li><em>https://www.googleapis.com/auth/drive</em></li>
-<li><em>https://www.googleapis.com/auth/drive.metadata</em></li>
-<li><em>https://www.googleapis.com/auth/drive.metadata.readonly</em></li>
-<li><em>https://www.googleapis.com/auth/drive.readonly</em></li>
-</ul>
-<p>If unset, the scope for this method defaults to <em>https://www.googleapis.com/auth/drive.metadata.readonly</em>.
+<p>You will need authorization for the <em>https://www.googleapis.com/auth/activity</em> scope to make a valid call.</p>
+<p>If unset, the scope for this method defaults to <em>https://www.googleapis.com/auth/activity</em>.
 You can set the scope for this method like this: <code>appsactivity1 --scope &lt;scope&gt; activities list ...</code></p>
 <h1 id="optional-output-flags">Optional Output Flags</h1>
 <p>The method's return value a JSON encoded structure, which will be written to standard output by default.</p>
@@ -146,21 +139,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
+<p><strong>-p drive-file-id=string</strong></p>
+<ul>
+<li>Identifies the Drive item to return activities for.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p drive-ancestor-id=string</strong></p>
 <ul>
 <li>Identifies the Drive folder containing the items for which to return activities.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p page-token=string</strong></p>
-<ul>
-<li>A token to retrieve a specific page of results.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p user-id=string</strong></p>
-<ul>
-<li>Indicates the user to return activity for. Use the special value me to indicate the currently authenticated user.</li>
 </ul>
 </li>
 <li>
@@ -170,9 +157,21 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p drive-file-id=string</strong></p>
+<p><strong>-p user-id=string</strong></p>
 <ul>
-<li>Identifies the Drive item to return activities for.</li>
+<li>Indicates the user to return activity for. Use the special value me to indicate the currently authenticated user.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p page-token=string</strong></p>
+<ul>
+<li>A token to retrieve a specific page of results.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p page-size=integer</strong></p>
+<ul>
+<li>The maximum number of events to return on a page. The response includes a continuation token if there are more events.</li>
 </ul>
 </li>
 <li>
@@ -182,12 +181,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <li>drive.google.com</li>
 </ul>
 </li>
-</ul>
-</li>
-<li>
-<p><strong>-p page-size=integer</strong></p>
-<ul>
-<li>The maximum number of events to return on a page. The response includes a continuation token if there are more events.</li>
 </ul>
 </li>
 </ul>
@@ -227,13 +220,13 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <li>
 <p><strong>-p quota-user=string</strong></p>
 <ul>
-<li>Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. Overrides userIp if both are provided.</li>
+<li>An opaque string that represents a user for quota purposes. Must not exceed 40 characters.</li>
 </ul>
 </li>
 <li>
 <p><strong>-p user-ip=string</strong></p>
 <ul>
-<li>IP address of the site where the request originates. Use this if you want to enforce per-user limits.</li>
+<li>Deprecated. Please use quotaUser instead.</li>
 </ul>
 </li>
 </ul>

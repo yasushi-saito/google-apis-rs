@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Rewrite - storage v1.0.7+20171101</title>
+  <title>Rewrite - storage v1.0.8+20180905</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> storage v1.0.7+20171101</a>
+        <a href=".." class="icon icon-home"> storage v1.0.8+20180905</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -106,6 +106,10 @@
                 <li class="">
                     
     <a class="" href="../buckets_list/">List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../buckets_lock-retention-policy/">Lock Retention Policy</a>
                 </li>
                 <li class="">
                     
@@ -329,7 +333,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">storage v1.0.7+20171101</a>
+        <a href="..">storage v1.0.8+20180905</a>
       </nav>
 
       
@@ -404,6 +408,7 @@ In the latter case it is advised to set the field-cursor to the data-structure's
     encryption-algorithm: string
     key-sha256: string
   etag: string
+  event-based-hold: boolean
   generation: string
   id: string
   kind: string
@@ -416,9 +421,11 @@ In the latter case it is advised to set the field-cursor to the data-structure's
   owner:
     entity: string
     entity-id: string
+  retention-expiration-time: string
   self-link: string
   size: string
   storage-class: string
+  temporary-hold: boolean
   time-created: string
   time-deleted: string
   time-storage-class-updated: string
@@ -428,128 +435,140 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 
 <p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
 <ul>
-<li><code>-r .    bucket=justo</code><ul>
+<li><code>-r .    bucket=magna</code><ul>
 <li>The name of the bucket containing this object.</li>
 </ul>
 </li>
-<li><code>cache-control=labore</code><ul>
+<li><code>cache-control=ut</code><ul>
 <li>Cache-Control directive for the object data. If omitted, and the object is accessible to all anonymous users, the default will be public, max-age=3600.</li>
 </ul>
 </li>
-<li><code>component-count=73</code><ul>
+<li><code>component-count=54</code><ul>
 <li>Number of underlying components that make up this object. Components are accumulated by compose operations.</li>
 </ul>
 </li>
-<li><code>content-disposition=takimata</code><ul>
+<li><code>content-disposition=sed</code><ul>
 <li>Content-Disposition of the object data.</li>
 </ul>
 </li>
-<li><code>content-encoding=dolor</code><ul>
+<li><code>content-encoding=sit</code><ul>
 <li>Content-Encoding of the object data.</li>
 </ul>
 </li>
-<li><code>content-language=takimata</code><ul>
+<li><code>content-language=sit</code><ul>
 <li>Content-Language of the object data.</li>
 </ul>
 </li>
-<li><code>content-type=voluptua.</code><ul>
+<li><code>content-type=dolores</code><ul>
 <li>Content-Type of the object data. If an object is stored without a Content-Type, it is served as application/octet-stream.</li>
 </ul>
 </li>
-<li><code>crc32c=no</code><ul>
+<li><code>crc32c=et</code><ul>
 <li>CRC32c checksum, as described in RFC 4960, Appendix B; encoded using base64 in big-endian byte order. For more information about using the CRC32c checksum, see Hashes and ETags: Best Practices.</li>
 </ul>
 </li>
-<li><code>customer-encryption    encryption-algorithm=aliquyam</code><ul>
+<li><code>customer-encryption    encryption-algorithm=sanctus</code><ul>
 <li>The encryption algorithm.</li>
 </ul>
 </li>
 <li>
-<p><code>key-sha256=magna</code></p>
+<p><code>key-sha256=takimata</code></p>
 <ul>
 <li>SHA256 hash value of the encryption key.</li>
 </ul>
 </li>
 <li>
-<p><code>..    etag=et</code></p>
+<p><code>..    etag=kasd</code></p>
 <ul>
 <li>HTTP 1.1 Entity tag for the object.</li>
 </ul>
 </li>
-<li><code>generation=sed</code><ul>
+<li><code>event-based-hold=true</code><ul>
+<li>Whether an object is under event-based hold. Event-based hold is a way to retain objects until an event occurs, which is signified by the hold&#39;s release (i.e. this value is set to false). After being released (set to false), such objects will be subject to bucket-level retention (if any). One sample use case of this flag is for banks to hold loan documents for at least 3 years after loan is paid in full. Here, bucket-level retention is 3 years and the event is the loan being paid in full. In this example, these objects will be held intact for any number of years until the event has occurred (event-based hold on the object is released) and then 3 more years after that. That means retention duration of the objects begins from the moment event-based hold transitioned from true to false.</li>
+</ul>
+</li>
+<li><code>generation=sadipscing</code><ul>
 <li>The content generation of this object. Used for object versioning.</li>
 </ul>
 </li>
-<li><code>id=est</code><ul>
+<li><code>id=et</code><ul>
 <li>The ID of the object, including the bucket name, object name, and generation number.</li>
 </ul>
 </li>
-<li><code>kind=sit</code><ul>
+<li><code>kind=clita</code><ul>
 <li>The kind of item this is. For objects, this is always storage#object.</li>
 </ul>
 </li>
-<li><code>kms-key-name=et</code><ul>
+<li><code>kms-key-name=ipsum</code><ul>
 <li>Cloud KMS Key used to encrypt this object, if the object is encrypted by such a key.</li>
 </ul>
 </li>
-<li><code>md5-hash=consetetur</code><ul>
+<li><code>md5-hash=dolor</code><ul>
 <li>MD5 hash of the data; encoded using base64. For more information about using the MD5 hash, see Hashes and ETags: Best Practices.</li>
 </ul>
 </li>
-<li><code>media-link=sea</code><ul>
+<li><code>media-link=elitr</code><ul>
 <li>Media download link.</li>
 </ul>
 </li>
-<li><code>metadata=key=nonumy</code><ul>
+<li><code>metadata=key=magna</code><ul>
 <li>User-provided metadata, in key/value pairs.</li>
 <li>the value will be associated with the given <code>key</code></li>
 </ul>
 </li>
-<li><code>metageneration=consetetur</code><ul>
+<li><code>metageneration=aliquyam</code><ul>
 <li>The version of the metadata for this object at this generation. Used for preconditions and for detecting changes in metadata. A metageneration number is only meaningful in the context of a particular generation of a particular object.</li>
 </ul>
 </li>
-<li><code>name=accusam</code><ul>
+<li><code>name=kasd</code><ul>
 <li>The name of the object. Required if not specified by URL parameter.</li>
 </ul>
 </li>
-<li><code>owner    entity=clita</code><ul>
+<li><code>owner    entity=duo</code><ul>
 <li>The entity, in the form user-userId.</li>
 </ul>
 </li>
 <li>
-<p><code>entity-id=sea</code></p>
+<p><code>entity-id=et</code></p>
 <ul>
 <li>The ID for the entity.</li>
 </ul>
 </li>
 <li>
-<p><code>..    self-link=vero</code></p>
+<p><code>..    retention-expiration-time=sit</code></p>
 <ul>
+<li>A server-determined value that specifies the earliest time that the object&#39;s retention period expires. This value is in RFC 3339 format. Note 1: This field is not provided for objects with an active event-based hold, since retention expiration is unknown until the hold is removed. Note 2: This value can be provided even when temporary hold is set (so that the user can reason about policy without having to first unset the temporary hold).</li>
+</ul>
+</li>
+<li><code>self-link=eirmod</code><ul>
 <li>The link to this object.</li>
 </ul>
 </li>
-<li><code>size=dolores</code><ul>
+<li><code>size=no</code><ul>
 <li>Content-Length of the data in bytes.</li>
 </ul>
 </li>
-<li><code>storage-class=magna</code><ul>
+<li><code>storage-class=lorem</code><ul>
 <li>Storage class of the object.</li>
 </ul>
 </li>
-<li><code>time-created=ut</code><ul>
+<li><code>temporary-hold=true</code><ul>
+<li>Whether an object is under temporary hold. While this flag is set to true, the object is protected against deletion and overwrites. A common use case of this flag is regulatory investigations where objects need to be retained while the investigation is ongoing. Note that unlike event-based hold, temporary hold does not impact retention expiration time of an object.</li>
+</ul>
+</li>
+<li><code>time-created=tempor</code><ul>
 <li>The creation time of the object in RFC 3339 format.</li>
 </ul>
 </li>
-<li><code>time-deleted=amet</code><ul>
+<li><code>time-deleted=clita</code><ul>
 <li>The deletion time of the object in RFC 3339 format. Will be returned if and only if this version of the object has been deleted.</li>
 </ul>
 </li>
-<li><code>time-storage-class-updated=sed</code><ul>
+<li><code>time-storage-class-updated=kasd</code><ul>
 <li>The time at which the object&#39;s storage class was last changed. When the object is initially created, it will be set to timeCreated.</li>
 </ul>
 </li>
-<li><code>updated=sit</code><ul>
+<li><code>updated=elitr</code><ul>
 <li>The modification time of the object metadata in RFC 3339 format.</li>
 </ul>
 </li>
@@ -579,15 +598,51 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p max-bytes-rewritten-per-call=string</strong></p>
+<p><strong>-p projection=string</strong></p>
 <ul>
-<li>The maximum number of bytes that will be rewritten per rewrite request. Most callers shouldn&#39;t need to specify this parameter - it is primarily in place to support testing. If specified the value must be an integral multiple of 1 MiB (1048576). Also, this only applies to requests where the source and destination span locations and/or storage classes. Finally, this value must not change across rewrite calls else you&#39;ll get an error that the rewriteToken is invalid.</li>
+<li>Set of properties to return. Defaults to noAcl, unless the object resource specifies the acl property, when it defaults to full.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p source-generation=string</strong></p>
+<p><strong>-p if-generation-match=string</strong></p>
 <ul>
-<li>If present, selects a specific revision of the source object (as opposed to the latest version, the default).</li>
+<li>Makes the operation conditional on whether the object&#39;s current generation matches the given value. Setting to 0 makes the operation succeed only if there are no live versions of the object.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p user-project=string</strong></p>
+<ul>
+<li>The project to be billed for this request. Required for Requester Pays buckets.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p if-generation-not-match=string</strong></p>
+<ul>
+<li>Makes the operation conditional on whether the object&#39;s current generation does not match the given value. If no live object exists, the precondition fails. Setting to 0 makes the operation succeed only if there is a live version of the object.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p if-metageneration-match=string</strong></p>
+<ul>
+<li>Makes the operation conditional on whether the destination object&#39;s current metageneration matches the given value.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p if-source-metageneration-match=string</strong></p>
+<ul>
+<li>Makes the operation conditional on whether the source object&#39;s current metageneration matches the given value.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p if-metageneration-not-match=string</strong></p>
+<ul>
+<li>Makes the operation conditional on whether the destination object&#39;s current metageneration does not match the given value.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p if-source-generation-match=string</strong></p>
+<ul>
+<li>Makes the operation conditional on whether the source object&#39;s current generation matches the given value.</li>
 </ul>
 </li>
 <li>
@@ -603,45 +658,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p if-generation-not-match=string</strong></p>
+<p><strong>-p max-bytes-rewritten-per-call=string</strong></p>
 <ul>
-<li>Makes the operation conditional on whether the object&#39;s current generation does not match the given value. If no live object exists, the precondition fails. Setting to 0 makes the operation succeed only if there is a live version of the object.</li>
+<li>The maximum number of bytes that will be rewritten per rewrite request. Most callers shouldn&#39;t need to specify this parameter - it is primarily in place to support testing. If specified the value must be an integral multiple of 1 MiB (1048576). Also, this only applies to requests where the source and destination span locations and/or storage classes. Finally, this value must not change across rewrite calls else you&#39;ll get an error that the rewriteToken is invalid.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p if-generation-match=string</strong></p>
+<p><strong>-p source-generation=string</strong></p>
 <ul>
-<li>Makes the operation conditional on whether the object&#39;s current generation matches the given value. Setting to 0 makes the operation succeed only if there are no live versions of the object.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p if-metageneration-match=string</strong></p>
-<ul>
-<li>Makes the operation conditional on whether the destination object&#39;s current metageneration matches the given value.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p if-metageneration-not-match=string</strong></p>
-<ul>
-<li>Makes the operation conditional on whether the destination object&#39;s current metageneration does not match the given value.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p projection=string</strong></p>
-<ul>
-<li>Set of properties to return. Defaults to noAcl, unless the object resource specifies the acl property, when it defaults to full.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p if-source-generation-match=string</strong></p>
-<ul>
-<li>Makes the operation conditional on whether the source object&#39;s current generation matches the given value.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p if-source-metageneration-not-match=string</strong></p>
-<ul>
-<li>Makes the operation conditional on whether the source object&#39;s current metageneration does not match the given value.</li>
+<li>If present, selects a specific revision of the source object (as opposed to the latest version, the default).</li>
 </ul>
 </li>
 <li>
@@ -651,15 +676,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p user-project=string</strong></p>
+<p><strong>-p if-source-metageneration-not-match=string</strong></p>
 <ul>
-<li>The project to be billed for this request. Required for Requester Pays buckets.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p if-source-metageneration-match=string</strong></p>
-<ul>
-<li>Makes the operation conditional on whether the source object&#39;s current metageneration matches the given value.</li>
+<li>Makes the operation conditional on whether the source object&#39;s current metageneration does not match the given value.</li>
 </ul>
 </li>
 <li>
@@ -705,13 +724,13 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <li>
 <p><strong>-p quota-user=string</strong></p>
 <ul>
-<li>Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. Overrides userIp if both are provided.</li>
+<li>An opaque string that represents a user for quota purposes. Must not exceed 40 characters.</li>
 </ul>
 </li>
 <li>
 <p><strong>-p user-ip=string</strong></p>
 <ul>
-<li>IP address of the site where the request originates. Use this if you want to enforce per-user limits.</li>
+<li>Deprecated. Please use quotaUser instead.</li>
 </ul>
 </li>
 </ul>

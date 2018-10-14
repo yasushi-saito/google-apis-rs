@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Databases Documents List - Firestore v1.0.7+20171205</title>
+  <title>Databases Documents List - Firestore v1.0.8+20181001</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Firestore v1.0.7+20171205</a>
+        <a href=".." class="icon icon-home"> Firestore v1.0.8+20181001</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -128,6 +128,14 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="../projects_databases-export-documents/">Databases Export Documents</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_databases-import-documents/">Databases Import Documents</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../projects_databases-indexes-create/">Databases Indexes Create</a>
                 </li>
                 <li class="">
@@ -155,7 +163,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Firestore v1.0.7+20171205</a>
+        <a href="..">Firestore v1.0.8+20181001</a>
       </nav>
 
       
@@ -227,28 +235,16 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p transaction=string</strong></p>
+<p><strong>-p page-size=integer</strong></p>
 <ul>
-<li>Reads documents in a transaction.</li>
+<li>The maximum number of documents to return.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p order-by=string</strong></p>
+<p><strong>-p read-time=string</strong></p>
 <ul>
-<li>The order to sort results by. For example: <code>priority desc, name</code>.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p show-missing=boolean</strong></p>
-<ul>
-<li>
-<p>If the list should show missing documents. A missing document is a
-    document that does not exist but has sub-documents. These documents will
-    be returned with a key but will not have fields, Document.create_time,
-    or Document.update_time set.</p>
-<p>Requests with <code>show_missing</code> may not specify <code>where</code> or
-<code>order_by</code>.</p>
-</li>
+<li>Reads documents as they were at the given time.
+    This may not be older than 60 seconds.</li>
 </ul>
 </li>
 <li>
@@ -265,16 +261,28 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p read-time=string</strong></p>
+<p><strong>-p show-missing=boolean</strong></p>
 <ul>
-<li>Reads documents as they were at the given time.
-    This may not be older than 60 seconds.</li>
+<li>
+<p>If the list should show missing documents. A missing document is a
+    document that does not exist but has sub-documents. These documents will
+    be returned with a key but will not have fields, Document.create_time,
+    or Document.update_time set.</p>
+<p>Requests with <code>show_missing</code> may not specify <code>where</code> or
+<code>order_by</code>.</p>
+</li>
 </ul>
 </li>
 <li>
-<p><strong>-p page-size=integer</strong></p>
+<p><strong>-p order-by=string</strong></p>
 <ul>
-<li>The maximum number of documents to return.</li>
+<li>The order to sort results by. For example: <code>priority desc, name</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p transaction=string</strong></p>
+<ul>
+<li>Reads documents in a transaction.</li>
 </ul>
 </li>
 </ul>
@@ -300,12 +308,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p bearer-token=string</strong></p>
-<ul>
-<li>OAuth bearer token.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p callback=string</strong></p>
 <ul>
 <li>JSONP</li>
@@ -327,12 +329,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <p><strong>-p oauth-token=string</strong></p>
 <ul>
 <li>OAuth 2.0 token for the current user.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p pp=boolean</strong></p>
-<ul>
-<li>Pretty-print response.</li>
 </ul>
 </li>
 <li>

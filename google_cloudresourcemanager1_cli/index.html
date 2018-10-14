@@ -8,7 +8,7 @@
   <meta name="description" content="A complete library to interact with Cloud Resource Manager (protocol v1)">
   
   <link rel="shortcut icon" href="./img/favicon.ico">
-  <title>Home - Cloud Resource Manager v1.0.7+20171206</title>
+  <title>Home - Cloud Resource Manager v1.0.8+20181008</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="./css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href="." class="icon icon-home"> Cloud Resource Manager v1.0.7+20171206</a>
+        <a href="." class="icon icon-home"> Cloud Resource Manager v1.0.8+20181008</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -115,6 +115,10 @@
                 <li class="">
                     
     <a class="" href="liens_delete/">Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="liens_get/">Get</a>
                 </li>
                 <li class="">
                     
@@ -266,7 +270,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href=".">Cloud Resource Manager v1.0.7+20171206</a>
+        <a href=".">Cloud Resource Manager v1.0.8+20181008</a>
       </nav>
 
       
@@ -310,7 +314,7 @@ capabilities. Errors will be printed to standard error, and cause the program's 
 
 <p>Find the source code <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/cloudresourcemanager1-cli">on github</a>.</p>
 <h1 id="usage">Usage</h1>
-<p>This documentation was generated from the <em>Cloud Resource Manager</em> API at revision <em>20171206</em>. The CLI is at version <em>1.0.7</em>.</p>
+<p>This documentation was generated from the <em>Cloud Resource Manager</em> API at revision <em>20181008</em>. The CLI is at version <em>1.0.8</em>.</p>
 <pre><code class="bash">cloudresourcemanager1 [options]
         folders
                 clear-org-policy &lt;resource&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
@@ -322,6 +326,7 @@ capabilities. Errors will be printed to standard error, and cause the program's 
         liens
                 create (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 delete &lt;name&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                get &lt;name&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 list [-p &lt;v&gt;]... [-o &lt;out&gt;]
         operations
                 get &lt;name&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
@@ -461,5 +466,5 @@ issue at hand.</p>
 
 <!--
 MkDocs version : 0.16.3
-Build Date UTC : 2018-02-01 19:24:21
+Build Date UTC : 2018-10-14 11:32:31
 -->

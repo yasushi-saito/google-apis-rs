@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Instances List - Spanner v1.0.7+20171204</title>
+  <title>Instances List - Spanner v1.0.8+20180920</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Spanner v1.0.7+20171204</a>
+        <a href=".." class="icon icon-home"> Spanner v1.0.8+20180920</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -142,6 +142,14 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="../projects_instances-databases-sessions-partition-query/">Instances Databases Sessions Partition Query</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_instances-databases-sessions-partition-read/">Instances Databases Sessions Partition Read</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../projects_instances-databases-sessions-read/">Instances Databases Sessions Read</a>
                 </li>
                 <li class="">
@@ -239,7 +247,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Spanner v1.0.7+20171204</a>
+        <a href="..">Spanner v1.0.8+20180920</a>
       </nav>
 
       
@@ -302,6 +310,14 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
+<p><strong>-p page-token=string</strong></p>
+<ul>
+<li>If non-empty, <code>page_token</code> should contain a
+    next_page_token from a
+    previous ListInstancesResponse.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p page-size=integer</strong></p>
 <ul>
 <li>Number of instances to be returned in the response. If 0 or less, defaults
@@ -335,14 +351,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </li>
 </ul>
 </li>
-<li>
-<p><strong>-p page-token=string</strong></p>
-<ul>
-<li>If non-empty, <code>page_token</code> should contain a
-    next_page_token from a
-    previous ListInstancesResponse.</li>
-</ul>
-</li>
 </ul>
 <h1 id="optional-general-properties">Optional General Properties</h1>
 <p>The following properties can configure any call, and are not specific to this method.</p>
@@ -363,12 +371,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <p><strong>-p alt=string</strong></p>
 <ul>
 <li>Data format for response.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p bearer-token=string</strong></p>
-<ul>
-<li>OAuth bearer token.</li>
 </ul>
 </li>
 <li>
@@ -393,12 +395,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <p><strong>-p oauth-token=string</strong></p>
 <ul>
 <li>OAuth 2.0 token for the current user.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p pp=boolean</strong></p>
-<ul>
-<li>Pretty-print response.</li>
 </ul>
 </li>
 <li>

@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>List - Speech v1.0.7+20171205</title>
+  <title>List - Speech v1.0.8+20181005</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Speech v1.0.7+20171205</a>
+        <a href=".." class="icon icon-home"> Speech v1.0.8+20181005</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -56,14 +56,6 @@
 		
     <span class="caption-text">Operations</span>
     <ul class="subnav">
-                <li class="">
-                    
-    <a class="" href="../operations_cancel/">Cancel</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../operations_delete/">Delete</a>
-                </li>
                 <li class="">
                     
     <a class="" href="../operations_get/">Get</a>
@@ -115,7 +107,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Speech v1.0.7+20171205</a>
+        <a href="..">Speech v1.0.8+20181005</a>
       </nav>
 
       
@@ -154,11 +146,7 @@ For backwards compatibility, the default name includes the operations
 collection id, however overriding users must ensure the name binding
 is the parent resource, without the operations collection id.</p>
 <h1 id="scopes">Scopes</h1>
-<p>You will need authorization for at least one of the following scopes to make a valid call:</p>
-<ul>
-<li><em>https://www.googleapis.com/auth/cloud-platform</em></li>
-<li><em>https://www.googleapis.com/auth/cloud-speech</em></li>
-</ul>
+<p>You will need authorization for the <em>https://www.googleapis.com/auth/cloud-platform</em> scope to make a valid call.</p>
 <p>If unset, the scope for this method defaults to <em>https://www.googleapis.com/auth/cloud-platform</em>.
 You can set the scope for this method like this: <code>speech1 --scope &lt;scope&gt; operations list ...</code></p>
 <h1 id="optional-output-flags">Optional Output Flags</h1>
@@ -178,15 +166,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p page-size=integer</strong></p>
+<p><strong>-p name=string</strong></p>
 <ul>
-<li>The standard list page size.</li>
+<li>The name of the operation&#39;s parent resource.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p page-token=string</strong></p>
+<p><strong>-p page-size=integer</strong></p>
 <ul>
-<li>The standard list page token.</li>
+<li>The standard list page size.</li>
 </ul>
 </li>
 <li>
@@ -196,9 +184,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p name=string</strong></p>
+<p><strong>-p page-token=string</strong></p>
 <ul>
-<li>The name of the operation&#39;s parent resource.</li>
+<li>The standard list page token.</li>
 </ul>
 </li>
 </ul>
@@ -224,12 +212,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p bearer-token=string</strong></p>
-<ul>
-<li>OAuth bearer token.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p callback=string</strong></p>
 <ul>
 <li>JSONP</li>
@@ -251,12 +233,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <p><strong>-p oauth-token=string</strong></p>
 <ul>
 <li>OAuth 2.0 token for the current user.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p pp=boolean</strong></p>
-<ul>
-<li>Pretty-print response.</li>
 </ul>
 </li>
 <li>

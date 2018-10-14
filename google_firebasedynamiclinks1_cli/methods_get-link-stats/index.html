@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Get Link Stats - Firebase Dynamic Links v1.0.7+20171205</title>
+  <title>Get Link Stats - Firebase Dynamic Links v1.0.8+20181008</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Firebase Dynamic Links v1.0.7+20171205</a>
+        <a href=".." class="icon icon-home"> Firebase Dynamic Links v1.0.8+20181008</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -50,6 +50,17 @@
             <li class="toctree-l1">
 		
     <a class="" href="..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Managed Short Links</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../managed-short-links_create/">Create</a>
+                </li>
+    </ul>
 	    </li>
           
             <li class="toctree-l1">
@@ -82,6 +93,10 @@
                     
     <a class="" href="../methods_install-attribution/">Install Attribution</a>
                 </li>
+                <li class="">
+                    
+    <a class="" href="../methods_reopen-attribution/">Reopen Attribution</a>
+                </li>
     </ul>
 	    </li>
           
@@ -106,7 +121,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Firebase Dynamic Links v1.0.7+20171205</a>
+        <a href="..">Firebase Dynamic Links v1.0.8+20181008</a>
       </nav>
 
       
@@ -165,8 +180,16 @@ You can set the scope for this method like this: <code>firebasedynamiclinks1 --s
 or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> even though the listing below repeats the
 <code>-p</code> for completeness.</p>
 <ul>
-<li><strong>-p duration-days=string</strong><ul>
+<li>
+<p><strong>-p duration-days=string</strong></p>
+<ul>
 <li>The span of time requested in days.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p sdk-version=string</strong></p>
+<ul>
+<li>Google SDK version. Version takes the form &#34;$major.$minor.$patch&#34;</li>
 </ul>
 </li>
 </ul>
@@ -192,12 +215,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p bearer-token=string</strong></p>
-<ul>
-<li>OAuth bearer token.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p callback=string</strong></p>
 <ul>
 <li>JSONP</li>
@@ -219,12 +236,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <p><strong>-p oauth-token=string</strong></p>
 <ul>
 <li>OAuth 2.0 token for the current user.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p pp=boolean</strong></p>
-<ul>
-<li>Pretty-print response.</li>
 </ul>
 </li>
 <li>
@@ -262,7 +273,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
         <a href="../methods_install-attribution/" class="btn btn-neutral float-right" title="Install Attribution">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href=".." class="btn btn-neutral" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../managed-short-links_create/" class="btn btn-neutral" title="Create"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -292,7 +303,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
           <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/firebasedynamiclinks1-cli" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href=".." style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../managed-short-links_create/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
         <span style="margin-left: 15px"><a href="../methods_install-attribution/" style="color: #fcfcfc">Next &raquo;</a></span>

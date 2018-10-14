@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>List - dns v1.0.7+20171204</title>
+  <title>List - dns v1.0.8+20180826</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> dns v1.0.7+20171204</a>
+        <a href=".." class="icon icon-home"> dns v1.0.8+20180826</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -67,6 +67,36 @@
                 <li class="">
                     
     <a class="" href="../changes_list/">List</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Dns Keys</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../dns-keys_get/">Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../dns-keys_list/">List</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Managed Zone Operations</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../managed-zone-operations_get/">Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../managed-zone-operations_list/">List</a>
                 </li>
     </ul>
 	    </li>
@@ -109,6 +139,14 @@
 
     </ul>
                 </li>
+                <li class="">
+                    
+    <a class="" href="../managed-zones_patch/">Patch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../managed-zones_update/">Update</a>
+                </li>
     </ul>
 	    </li>
           
@@ -144,7 +182,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">dns v1.0.7+20171204</a>
+        <a href="..">dns v1.0.8+20180826</a>
       </nav>
 
       
@@ -262,13 +300,13 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <li>
 <p><strong>-p quota-user=string</strong></p>
 <ul>
-<li>Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. Overrides userIp if both are provided.</li>
+<li>An opaque string that represents a user for quota purposes. Must not exceed 40 characters.</li>
 </ul>
 </li>
 <li>
 <p><strong>-p user-ip=string</strong></p>
 <ul>
-<li>IP address of the site where the request originates. Use this if you want to enforce per-user limits.</li>
+<li>Deprecated. Please use quotaUser instead.</li>
 </ul>
 </li>
 </ul>
@@ -279,7 +317,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../projects_get/" class="btn btn-neutral float-right" title="Get">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../managed-zones_patch/" class="btn btn-neutral float-right" title="Patch">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="../managed-zones_get/" class="btn btn-neutral" title="Get"><span class="icon icon-circle-arrow-left"></span> Previous</a>
@@ -315,7 +353,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
         <span><a href="../managed-zones_get/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../projects_get/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../managed-zones_patch/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

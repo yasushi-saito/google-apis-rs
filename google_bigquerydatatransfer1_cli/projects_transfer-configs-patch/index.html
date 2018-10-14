@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Transfer Configs Patch - BigQuery Data Transfer v1.0.7+20171208</title>
+  <title>Transfer Configs Patch - BigQuery Data Transfer v1.0.8+20181008</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> BigQuery Data Transfer v1.0.7+20171208</a>
+        <a href=".." class="icon icon-home"> BigQuery Data Transfer v1.0.8+20181008</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -208,7 +208,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">BigQuery Data Transfer v1.0.7+20171208</a>
+        <a href="..">BigQuery Data Transfer v1.0.8+20181008</a>
       </nav>
 
       
@@ -240,22 +240,19 @@
                 <p>Updates a data transfer configuration.
 All fields must be set, even if they are not updated.</p>
 <h1 id="scopes">Scopes</h1>
-<p>You will need authorization for at least one of the following scopes to make a valid call:</p>
-<ul>
-<li><em>https://www.googleapis.com/auth/bigquery</em></li>
-<li><em>https://www.googleapis.com/auth/cloud-platform</em></li>
-</ul>
-<p>If unset, the scope for this method defaults to <em>https://www.googleapis.com/auth/bigquery</em>.
+<p>You will need authorization for the <em>https://www.googleapis.com/auth/cloud-platform</em> scope to make a valid call.</p>
+<p>If unset, the scope for this method defaults to <em>https://www.googleapis.com/auth/cloud-platform</em>.
 You can set the scope for this method like this: <code>bigquerydatatransfer1 --scope &lt;scope&gt; projects transfer-configs-patch ...</code></p>
 <h1 id="required-scalar-argument">Required Scalar Argument</h1>
 <ul>
 <li><strong>&lt;name&gt;</strong> <em>(string)</em><ul>
 <li>The resource name of the transfer config.
-    Transfer config names have the form
-    <code>projects/{project_id}/transferConfigs/{config_id}</code>.
-    Where <code>config_id</code> is usually a uuid, even though it is not
-    guaranteed or required. The name is ignored when creating a transfer
-    config.</li>
+    Transfer config names have the form of
+    <code>projects/{project_id}/location/{region}/transferConfigs/{config_id}</code>.
+    The name is automatically generated based on the config_id specified in
+    CreateTransferConfigRequest along with project_id and region. If config_id
+    is not provided, usually a uuid, even though it is not guaranteed or
+    required, will be generated for config_id.</li>
 </ul>
 </li>
 </ul>
@@ -313,11 +310,12 @@ In the latter case it is advised to set the field-cursor to the data-structure's
 </li>
 <li><code>name=invidunt</code><ul>
 <li>The resource name of the transfer config.
-    Transfer config names have the form
-    <code>projects/{project_id}/transferConfigs/{config_id}</code>.
-    Where <code>config_id</code> is usually a uuid, even though it is not
-    guaranteed or required. The name is ignored when creating a transfer
-    config.</li>
+    Transfer config names have the form of
+    <code>projects/{project_id}/location/{region}/transferConfigs/{config_id}</code>.
+    The name is automatically generated based on the config_id specified in
+    CreateTransferConfigRequest along with project_id and region. If config_id
+    is not provided, usually a uuid, even though it is not guaranteed or
+    required, will be generated for config_id.</li>
 </ul>
 </li>
 <li><code>next-run-time=aliquyam</code><ul>
@@ -381,6 +379,12 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
+<p><strong>-p update-mask=string</strong></p>
+<ul>
+<li>Required list of fields to be updated in this request.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p authorization-code=string</strong></p>
 <ul>
 <li>
@@ -402,12 +406,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
   the user to copy the code and paste it in the application.</li>
 </ul>
 </li>
-</ul>
-</li>
-<li>
-<p><strong>-p update-mask=string</strong></p>
-<ul>
-<li>Required list of fields to be updated in this request.</li>
 </ul>
 </li>
 </ul>
@@ -433,12 +431,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p bearer-token=string</strong></p>
-<ul>
-<li>OAuth bearer token.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p callback=string</strong></p>
 <ul>
 <li>JSONP</li>
@@ -460,12 +452,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <p><strong>-p oauth-token=string</strong></p>
 <ul>
 <li>OAuth 2.0 token for the current user.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p pp=boolean</strong></p>
-<ul>
-<li>Pretty-print response.</li>
 </ul>
 </li>
 <li>

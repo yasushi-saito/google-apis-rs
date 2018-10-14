@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Bases List - genomics v1.0.7+20171207</title>
+  <title>Bases List - genomics v1.0.8+20181010</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> genomics v1.0.7+20171207</a>
+        <a href=".." class="icon icon-home"> genomics v1.0.8+20181010</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -373,7 +373,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">genomics v1.0.7+20171207</a>
+        <a href="..">genomics v1.0.8+20181010</a>
       </nav>
 
       
@@ -403,9 +403,6 @@
             <div class="section">
               
                 <p>Lists the bases in a reference, optionally restricted to a range.</p>
-<p>For the definitions of references and other genomics resources, see
-<a href="https://cloud.google.com/genomics/fundamentals-of-google-genomics">Fundamentals of Google
-Genomics</a></p>
 <p>Implements
 <a href="https://github.com/ga4gh/schemas/blob/v0.5.1/src/main/resources/avro/referencemethods.avdl#L221">GlobalAllianceApi.getReferenceBases</a>.</p>
 <h1 id="scopes">Scopes</h1>
@@ -441,6 +438,12 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
+<p><strong>-p start=string</strong></p>
+<ul>
+<li>The start position (0-based) of this query. Defaults to 0.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p page-size=integer</strong></p>
 <ul>
 <li>The maximum number of bases to return in a single page. If unspecified,
@@ -449,24 +452,18 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p end=string</strong></p>
-<ul>
-<li>The end position (0-based, exclusive) of this query. Defaults to the length
-    of this reference.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p start=string</strong></p>
-<ul>
-<li>The start position (0-based) of this query. Defaults to 0.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p page-token=string</strong></p>
 <ul>
 <li>The continuation token, which is used to page through large result sets.
     To get the next page of results, set this parameter to the value of
     <code>nextPageToken</code> from the previous response.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p end=string</strong></p>
+<ul>
+<li>The end position (0-based, exclusive) of this query. Defaults to the length
+    of this reference.</li>
 </ul>
 </li>
 </ul>
@@ -492,12 +489,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p bearer-token=string</strong></p>
-<ul>
-<li>OAuth bearer token.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p callback=string</strong></p>
 <ul>
 <li>JSONP</li>
@@ -519,12 +510,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <p><strong>-p oauth-token=string</strong></p>
 <ul>
 <li>OAuth 2.0 token for the current user.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p pp=boolean</strong></p>
-<ul>
-<li>Pretty-print response.</li>
 </ul>
 </li>
 <li>

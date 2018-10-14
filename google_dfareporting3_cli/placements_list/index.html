@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>List - dfareporting v1.0.7+20171109</title>
+  <title>List - dfareporting v1.0.8+20180830</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> dfareporting v1.0.7+20171109</a>
+        <a href=".." class="icon icon-home"> dfareporting v1.0.8+20180830</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -1316,7 +1316,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">dfareporting v1.0.7+20171109</a>
+        <a href="..">dfareporting v1.0.8+20180830</a>
       </nav>
 
       
@@ -1373,6 +1373,48 @@ You can set the scope for this method like this: <code>dfareporting3 --scope &lt
 or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> even though the listing below repeats the
 <code>-p</code> for completeness.</p>
 <ul>
+<li>
+<p><strong>-p max-results=integer</strong></p>
+<ul>
+<li>Maximum number of results to return.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p content-category-ids=string</strong></p>
+<ul>
+<li>Select only placements that are associated with these content categories.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p site-ids=string</strong></p>
+<ul>
+<li>Select only placements that are associated with these sites.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p min-start-date=string</strong></p>
+<ul>
+<li>Select only placements or placement groups whose start date is on or after the specified minStartDate. The date should be formatted as &#34;yyyy-MM-dd&#34;.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p payment-source=string</strong></p>
+<ul>
+<li>Select only placements with this payment source.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p placement-strategy-ids=string</strong></p>
+<ul>
+<li>Select only placements that are associated with these placement strategies.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p compatibilities=string</strong></p>
+<ul>
+<li>Select only placements that are associated with these compatibilities. DISPLAY and DISPLAY_INTERSTITIAL refer to rendering either on desktop or on mobile devices for regular or interstitial ads respectively. APP and APP_INTERSTITIAL are for rendering in mobile apps. IN_STREAM_VIDEO refers to rendering in in-stream video ads developed with the VAST standard.</li>
+</ul>
+</li>
 <li>
 <p><strong>-p pricing-types=string</strong></p>
 <ul>
@@ -1458,48 +1500,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p max-results=integer</strong></p>
-<ul>
-<li>Maximum number of results to return.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p site-ids=string</strong></p>
-<ul>
-<li>Select only placements that are associated with these sites.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p payment-source=string</strong></p>
-<ul>
-<li>Select only placements with this payment source.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p min-start-date=string</strong></p>
-<ul>
-<li>Select only placements or placement groups whose start date is on or after the specified minStartDate. The date should be formatted as &#34;yyyy-MM-dd&#34;.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p compatibilities=string</strong></p>
-<ul>
-<li>Select only placements that are associated with these compatibilities. DISPLAY and DISPLAY_INTERSTITIAL refer to rendering either on desktop or on mobile devices for regular or interstitial ads respectively. APP and APP_INTERSTITIAL are for rendering in mobile apps. IN_STREAM_VIDEO refers to rendering in in-stream video ads developed with the VAST standard.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p content-category-ids=string</strong></p>
-<ul>
-<li>Select only placements that are associated with these content categories.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p placement-strategy-ids=string</strong></p>
-<ul>
-<li>Select only placements that are associated with these placement strategies.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p campaign-ids=string</strong></p>
 <ul>
 <li>Select only placements that belong to these campaigns.</li>
@@ -1542,13 +1542,13 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <li>
 <p><strong>-p quota-user=string</strong></p>
 <ul>
-<li>Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. Overrides userIp if both are provided.</li>
+<li>An opaque string that represents a user for quota purposes. Must not exceed 40 characters.</li>
 </ul>
 </li>
 <li>
 <p><strong>-p user-ip=string</strong></p>
 <ul>
-<li>IP address of the site where the request originates. Use this if you want to enforce per-user limits.</li>
+<li>Deprecated. Please use quotaUser instead.</li>
 </ul>
 </li>
 </ul>

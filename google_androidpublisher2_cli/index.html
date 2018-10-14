@@ -8,7 +8,7 @@
   <meta name="description" content="A complete library to interact with Android Publisher (protocol v2)">
   
   <link rel="shortcut icon" href="./img/favicon.ico">
-  <title>Home - Android Publisher v1.0.7+20171030</title>
+  <title>Home - Android Publisher v1.0.8+20181009</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="./css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href="." class="icon icon-home"> Android Publisher v1.0.7+20171030</a>
+        <a href="." class="icon icon-home"> Android Publisher v1.0.8+20181009</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -112,6 +112,14 @@
                 <li class="">
                     
     <a class="" href="edits_apks-upload/">Apks Upload</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="edits_bundles-list/">Bundles List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="edits_bundles-upload/">Bundles Upload</a>
                 </li>
                 <li class="">
                     
@@ -238,17 +246,6 @@
           
             <li class="toctree-l1">
 		
-    <span class="caption-text">Entitlements</span>
-    <ul class="subnav">
-                <li class="">
-                    
-    <a class="" href="entitlements_list/">List</a>
-                </li>
-    </ul>
-	    </li>
-          
-            <li class="toctree-l1">
-		
     <span class="caption-text">Inappproducts</span>
     <ul class="subnav">
                 <li class="">
@@ -274,6 +271,17 @@
                 <li class="">
                     
     <a class="" href="inappproducts_update/">Update</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Orders</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="orders_refund/">Refund</a>
                 </li>
     </ul>
 	    </li>
@@ -342,7 +350,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href=".">Android Publisher v1.0.7+20171030</a>
+        <a href=".">Android Publisher v1.0.8+20181009</a>
       </nav>
 
       
@@ -386,7 +394,7 @@ capabilities. Errors will be printed to standard error, and cause the program's 
 
 <p>Find the source code <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/androidpublisher2-cli">on github</a>.</p>
 <h1 id="usage">Usage</h1>
-<p>This documentation was generated from the <em>Android Publisher</em> API at revision <em>20171030</em>. The CLI is at version <em>1.0.7</em>.</p>
+<p>This documentation was generated from the <em>Android Publisher</em> API at revision <em>20181009</em>. The CLI is at version <em>1.0.8</em>.</p>
 <pre><code class="bash">androidpublisher2 [options]
         edits
                 apklistings-delete &lt;package-name&gt; &lt;edit-id&gt; &lt;apk-version-code&gt; &lt;language&gt; [-p &lt;v&gt;]...
@@ -398,6 +406,8 @@ capabilities. Errors will be printed to standard error, and cause the program's 
                 apks-addexternallyhosted &lt;package-name&gt; &lt;edit-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 apks-list &lt;package-name&gt; &lt;edit-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 apks-upload &lt;package-name&gt; &lt;edit-id&gt; (-u (simple|resumable) -f &lt;file&gt; [-m &lt;mime&gt;]) [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                bundles-list &lt;package-name&gt; &lt;edit-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                bundles-upload &lt;package-name&gt; &lt;edit-id&gt; (-u (simple|resumable) -f &lt;file&gt; [-m &lt;mime&gt;]) [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 commit &lt;package-name&gt; &lt;edit-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 delete &lt;package-name&gt; &lt;edit-id&gt; [-p &lt;v&gt;]...
                 deobfuscationfiles-upload &lt;package-name&gt; &lt;edit-id&gt; &lt;apk-version-code&gt; &lt;deobfuscation-file-type&gt; (-u (simple|resumable) -f &lt;file&gt; [-m &lt;mime&gt;]) [-p &lt;v&gt;]... [-o &lt;out&gt;]
@@ -428,8 +438,6 @@ capabilities. Errors will be printed to standard error, and cause the program's 
                 tracks-patch &lt;package-name&gt; &lt;edit-id&gt; &lt;track&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 tracks-update &lt;package-name&gt; &lt;edit-id&gt; &lt;track&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 validate &lt;package-name&gt; &lt;edit-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
-        entitlements
-                list &lt;package-name&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
         inappproducts
                 delete &lt;package-name&gt; &lt;sku&gt; [-p &lt;v&gt;]...
                 get &lt;package-name&gt; &lt;sku&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
@@ -437,6 +445,8 @@ capabilities. Errors will be printed to standard error, and cause the program's 
                 list &lt;package-name&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 patch &lt;package-name&gt; &lt;sku&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 update &lt;package-name&gt; &lt;sku&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+        orders
+                refund &lt;package-name&gt; &lt;order-id&gt; [-p &lt;v&gt;]...
         purchases
                 products-get &lt;package-name&gt; &lt;product-id&gt; &lt;token&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 subscriptions-cancel &lt;package-name&gt; &lt;subscription-id&gt; &lt;token&gt; [-p &lt;v&gt;]...
@@ -556,5 +566,5 @@ issue at hand.</p>
 
 <!--
 MkDocs version : 0.16.3
-Build Date UTC : 2018-02-01 19:25:03
+Build Date UTC : 2018-10-14 11:33:44
 -->

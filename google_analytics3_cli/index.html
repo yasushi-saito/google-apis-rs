@@ -8,7 +8,7 @@
   <meta name="description" content="A complete library to interact with analytics (protocol v3)">
   
   <link rel="shortcut icon" href="./img/favicon.ico">
-  <title>Home - analytics v1.0.7+20170807</title>
+  <title>Home - analytics v1.0.8+20180622</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="./css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href="." class="icon icon-home"> analytics v1.0.7+20170807</a>
+        <a href="." class="icon icon-home"> analytics v1.0.8+20180622</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -119,6 +119,10 @@
                 <li class="">
                     
     <a class="" href="management_accounts-list/">Accounts List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="management_client-id-hash-client-id/">Client Id Hash Client Id</a>
                 </li>
                 <li class="">
                     
@@ -438,6 +442,21 @@
                     
     <a class="" href="provisioning_create-account-ticket/">Create Account Ticket</a>
                 </li>
+                <li class="">
+                    
+    <a class="" href="provisioning_create-account-tree/">Create Account Tree</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">User Deletion</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="user-deletion_user-deletion-request-upsert/">User Deletion Request Upsert</a>
+                </li>
     </ul>
 	    </li>
           
@@ -451,7 +470,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href=".">analytics v1.0.7+20170807</a>
+        <a href=".">analytics v1.0.8+20180622</a>
       </nav>
 
       
@@ -495,7 +514,7 @@ capabilities. Errors will be printed to standard error, and cause the program's 
 
 <p>Find the source code <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/analytics3-cli">on github</a>.</p>
 <h1 id="usage">Usage</h1>
-<p>This documentation was generated from the <em>analytics</em> API at revision <em>20170807</em>. The CLI is at version <em>1.0.7</em>.</p>
+<p>This documentation was generated from the <em>analytics</em> API at revision <em>20180622</em>. The CLI is at version <em>1.0.8</em>.</p>
 <pre><code class="bash">analytics3 [options]
         data
                 ga-get &lt;ids&gt; &lt;start-date&gt; &lt;end-date&gt; &lt;metrics&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
@@ -508,6 +527,7 @@ capabilities. Errors will be printed to standard error, and cause the program's 
                 account-user-links-list &lt;account-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 account-user-links-update &lt;account-id&gt; &lt;link-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 accounts-list [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                client-id-hash-client-id (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 custom-data-sources-list &lt;account-id&gt; &lt;web-property-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 custom-dimensions-get &lt;account-id&gt; &lt;web-property-id&gt; &lt;custom-dimension-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 custom-dimensions-insert &lt;account-id&gt; &lt;web-property-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
@@ -586,6 +606,9 @@ capabilities. Errors will be printed to standard error, and cause the program's 
                 columns-list &lt;report-type&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
         provisioning
                 create-account-ticket (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                create-account-tree (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+        user-deletion
+                user-deletion-request-upsert (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
   analytics3 --help
 
 Configuration:
@@ -693,5 +716,5 @@ issue at hand.</p>
 
 <!--
 MkDocs version : 0.16.3
-Build Date UTC : 2018-02-01 19:24:16
+Build Date UTC : 2018-10-14 11:32:25
 -->

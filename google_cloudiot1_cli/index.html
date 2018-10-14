@@ -8,7 +8,7 @@
   <meta name="description" content="A complete library to interact with Cloud Iot (protocol v1)">
   
   <link rel="shortcut icon" href="./img/favicon.ico">
-  <title>Home - Cloud Iot v1.0.7+20171204</title>
+  <title>Home - Cloud Iot v1.0.8+20181002</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="./css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href="." class="icon icon-home"> Cloud Iot v1.0.7+20171204</a>
+        <a href="." class="icon icon-home"> Cloud Iot v1.0.8+20181002</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -115,6 +115,10 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="projects_locations-registries-devices-send-command-to-device/">Locations Registries Devices Send Command To Device</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="projects_locations-registries-devices-states-list/">Locations Registries Devices States List</a>
                 </li>
                 <li class="">
@@ -124,6 +128,46 @@
                 <li class="">
                     
     <a class="" href="projects_locations-registries-get-iam-policy/">Locations Registries Get Iam Policy</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="projects_locations-registries-groups-devices-config-versions-list/">Locations Registries Groups Devices Config Versions List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="projects_locations-registries-groups-devices-get/">Locations Registries Groups Devices Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="projects_locations-registries-groups-devices-list/">Locations Registries Groups Devices List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="projects_locations-registries-groups-devices-modify-cloud-to-device-config/">Locations Registries Groups Devices Modify Cloud To Device Config</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="projects_locations-registries-groups-devices-patch/">Locations Registries Groups Devices Patch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="projects_locations-registries-groups-devices-send-command-to-device/">Locations Registries Groups Devices Send Command To Device</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="projects_locations-registries-groups-devices-states-list/">Locations Registries Groups Devices States List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="projects_locations-registries-groups-get-iam-policy/">Locations Registries Groups Get Iam Policy</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="projects_locations-registries-groups-set-iam-policy/">Locations Registries Groups Set Iam Policy</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="projects_locations-registries-groups-test-iam-permissions/">Locations Registries Groups Test Iam Permissions</a>
                 </li>
                 <li class="">
                     
@@ -154,7 +198,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href=".">Cloud Iot v1.0.7+20171204</a>
+        <a href=".">Cloud Iot v1.0.8+20181002</a>
       </nav>
 
       
@@ -198,7 +242,7 @@ capabilities. Errors will be printed to standard error, and cause the program's 
 
 <p>Find the source code <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/cloudiot1-cli">on github</a>.</p>
 <h1 id="usage">Usage</h1>
-<p>This documentation was generated from the <em>Cloud Iot</em> API at revision <em>20171204</em>. The CLI is at version <em>1.0.7</em>.</p>
+<p>This documentation was generated from the <em>Cloud Iot</em> API at revision <em>20181002</em>. The CLI is at version <em>1.0.8</em>.</p>
 <pre><code class="bash">cloudiot1 [options]
         projects
                 locations-registries-create &lt;parent&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
@@ -210,9 +254,20 @@ capabilities. Errors will be printed to standard error, and cause the program's 
                 locations-registries-devices-list &lt;parent&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 locations-registries-devices-modify-cloud-to-device-config &lt;name&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 locations-registries-devices-patch &lt;name&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                locations-registries-devices-send-command-to-device &lt;name&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 locations-registries-devices-states-list &lt;name&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 locations-registries-get &lt;name&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 locations-registries-get-iam-policy &lt;resource&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                locations-registries-groups-devices-config-versions-list &lt;name&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                locations-registries-groups-devices-get &lt;name&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                locations-registries-groups-devices-list &lt;parent&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                locations-registries-groups-devices-modify-cloud-to-device-config &lt;name&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                locations-registries-groups-devices-patch &lt;name&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                locations-registries-groups-devices-send-command-to-device &lt;name&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                locations-registries-groups-devices-states-list &lt;name&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                locations-registries-groups-get-iam-policy &lt;resource&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                locations-registries-groups-set-iam-policy &lt;resource&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                locations-registries-groups-test-iam-permissions &lt;resource&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 locations-registries-list &lt;parent&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 locations-registries-patch &lt;name&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 locations-registries-set-iam-policy &lt;resource&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
@@ -324,5 +379,5 @@ issue at hand.</p>
 
 <!--
 MkDocs version : 0.16.3
-Build Date UTC : 2018-02-01 19:24:33
+Build Date UTC : 2018-10-14 11:32:45
 -->

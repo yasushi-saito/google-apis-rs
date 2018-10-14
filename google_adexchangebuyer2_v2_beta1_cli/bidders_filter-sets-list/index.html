@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Filter Sets List - AdExchangeBuyerII v1.0.7+20171208</title>
+  <title>Filter Sets List - AdExchangeBuyerII v1.0.8+20181011</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> AdExchangeBuyerII v1.0.7+20171208</a>
+        <a href=".." class="icon icon-home"> AdExchangeBuyerII v1.0.8+20181011</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -132,6 +132,66 @@
                     
     <a class="" href="../accounts_creatives-watch/">Creatives Watch</a>
                 </li>
+                <li class="">
+                    
+    <a class="" href="../accounts_finalized-proposals-list/">Finalized Proposals List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../accounts_products-get/">Products Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../accounts_products-list/">Products List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../accounts_proposals-accept/">Proposals Accept</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../accounts_proposals-add-note/">Proposals Add Note</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../accounts_proposals-cancel-negotiation/">Proposals Cancel Negotiation</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../accounts_proposals-complete-setup/">Proposals Complete Setup</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../accounts_proposals-create/">Proposals Create</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../accounts_proposals-get/">Proposals Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../accounts_proposals-list/">Proposals List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../accounts_proposals-pause/">Proposals Pause</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../accounts_proposals-resume/">Proposals Resume</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../accounts_proposals-update/">Proposals Update</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../accounts_publisher-profiles-get/">Publisher Profiles Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../accounts_publisher-profiles-list/">Publisher Profiles List</a>
+                </li>
     </ul>
 	    </li>
           
@@ -139,6 +199,10 @@
 		
     <span class="caption-text">Bidders</span>
     <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../bidders_accounts-creatives-delete/">Accounts Creatives Delete</a>
+                </li>
                 <li class="">
                     
     <a class="" href="../bidders_accounts-filter-sets-bid-metrics-list/">Accounts Filter Sets Bid Metrics List</a>
@@ -282,7 +346,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">AdExchangeBuyerII v1.0.7+20171208</a>
+        <a href="..">AdExchangeBuyerII v1.0.8+20181011</a>
       </nav>
 
       
@@ -356,13 +420,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p page-size=integer</strong></p>
-<ul>
-<li>Requested page size. The server may return fewer results than requested.
-    If unspecified, the server will pick an appropriate default.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p page-token=string</strong></p>
 <ul>
 <li>A token identifying a page of results the server should return.
@@ -371,6 +428,13 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
     returned from the previous call to the
     accounts.filterSets.list
     method.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p page-size=integer</strong></p>
+<ul>
+<li>Requested page size. The server may return fewer results than requested.
+    If unspecified, the server will pick an appropriate default.</li>
 </ul>
 </li>
 </ul>
@@ -396,12 +460,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p bearer-token=string</strong></p>
-<ul>
-<li>OAuth bearer token.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p callback=string</strong></p>
 <ul>
 <li>JSONP</li>
@@ -423,12 +481,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <p><strong>-p oauth-token=string</strong></p>
 <ul>
 <li>OAuth 2.0 token for the current user.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p pp=boolean</strong></p>
-<ul>
-<li>Pretty-print response.</li>
 </ul>
 </li>
 <li>

@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Conversations Participants Streaming Analyze Content - Dialogflow v1.0.8+20181009</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Conversations Participants Streaming Analyze Content";
+    var mkdocs_page_input_path = "projects_conversations-participants-streaming-analyze-content.md";
+    var mkdocs_page_url = "/projects_conversations-participants-streaming-analyze-content/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Dialogflow v1.0.8+20181009</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Projects</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../projects_agent-entity-types-batch-delete/">Agent Entity Types Batch Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_agent-entity-types-batch-update/">Agent Entity Types Batch Update</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_agent-entity-types-create/">Agent Entity Types Create</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_agent-entity-types-delete/">Agent Entity Types Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_agent-entity-types-entities-batch-create/">Agent Entity Types Entities Batch Create</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_agent-entity-types-entities-batch-delete/">Agent Entity Types Entities Batch Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_agent-entity-types-entities-batch-update/">Agent Entity Types Entities Batch Update</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_agent-entity-types-get/">Agent Entity Types Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_agent-entity-types-list/">Agent Entity Types List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_agent-entity-types-patch/">Agent Entity Types Patch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_agent-environments-users-sessions-contexts-create/">Agent Environments Users Sessions Contexts Create</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_agent-environments-users-sessions-contexts-delete/">Agent Environments Users Sessions Contexts Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_agent-environments-users-sessions-contexts-get/">Agent Environments Users Sessions Contexts Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_agent-environments-users-sessions-contexts-list/">Agent Environments Users Sessions Contexts List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_agent-environments-users-sessions-contexts-patch/">Agent Environments Users Sessions Contexts Patch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_agent-environments-users-sessions-delete-contexts/">Agent Environments Users Sessions Delete Contexts</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_agent-environments-users-sessions-detect-intent/">Agent Environments Users Sessions Detect Intent</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_agent-environments-users-sessions-entity-types-create/">Agent Environments Users Sessions Entity Types Create</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_agent-environments-users-sessions-entity-types-delete/">Agent Environments Users Sessions Entity Types Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_agent-environments-users-sessions-entity-types-get/">Agent Environments Users Sessions Entity Types Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_agent-environments-users-sessions-entity-types-list/">Agent Environments Users Sessions Entity Types List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_agent-environments-users-sessions-entity-types-patch/">Agent Environments Users Sessions Entity Types Patch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_agent-export/">Agent Export</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_agent-import/">Agent Import</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_agent-intents-batch-delete/">Agent Intents Batch Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_agent-intents-batch-update/">Agent Intents Batch Update</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_agent-intents-create/">Agent Intents Create</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_agent-intents-delete/">Agent Intents Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_agent-intents-get/">Agent Intents Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_agent-intents-list/">Agent Intents List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_agent-intents-patch/">Agent Intents Patch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_agent-knowledge-bases-create/">Agent Knowledge Bases Create</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_agent-knowledge-bases-delete/">Agent Knowledge Bases Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_agent-knowledge-bases-documents-create/">Agent Knowledge Bases Documents Create</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_agent-knowledge-bases-documents-delete/">Agent Knowledge Bases Documents Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_agent-knowledge-bases-documents-get/">Agent Knowledge Bases Documents Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_agent-knowledge-bases-documents-list/">Agent Knowledge Bases Documents List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_agent-knowledge-bases-get/">Agent Knowledge Bases Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_agent-knowledge-bases-list/">Agent Knowledge Bases List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_agent-restore/">Agent Restore</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_agent-search/">Agent Search</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_agent-sessions-contexts-create/">Agent Sessions Contexts Create</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_agent-sessions-contexts-delete/">Agent Sessions Contexts Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_agent-sessions-contexts-get/">Agent Sessions Contexts Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_agent-sessions-contexts-list/">Agent Sessions Contexts List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_agent-sessions-contexts-patch/">Agent Sessions Contexts Patch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_agent-sessions-delete-contexts/">Agent Sessions Delete Contexts</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_agent-sessions-detect-intent/">Agent Sessions Detect Intent</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_agent-sessions-entity-types-create/">Agent Sessions Entity Types Create</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_agent-sessions-entity-types-delete/">Agent Sessions Entity Types Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_agent-sessions-entity-types-get/">Agent Sessions Entity Types Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_agent-sessions-entity-types-list/">Agent Sessions Entity Types List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_agent-sessions-entity-types-patch/">Agent Sessions Entity Types Patch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_agent-train/">Agent Train</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_conversation-profiles-create/">Conversation Profiles Create</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_conversation-profiles-delete/">Conversation Profiles Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_conversation-profiles-get/">Conversation Profiles Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_conversation-profiles-list/">Conversation Profiles List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_conversation-profiles-patch/">Conversation Profiles Patch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_conversations-add-conversation-phone-number/">Conversations Add Conversation Phone Number</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_conversations-complete/">Conversations Complete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_conversations-create/">Conversations Create</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_conversations-get/">Conversations Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_conversations-list/">Conversations List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_conversations-messages-list/">Conversations Messages List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_conversations-participants-analyze-content/">Conversations Participants Analyze Content</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_conversations-participants-create/">Conversations Participants Create</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_conversations-participants-get/">Conversations Participants Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_conversations-participants-list/">Conversations Participants List</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">Conversations Participants Streaming Analyze Content</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#scopes">Scopes</a></li>
+    
+
+    <li class="toctree-l3"><a href="#required-scalar-argument">Required Scalar Argument</a></li>
+    
+
+    <li class="toctree-l3"><a href="#required-request-value">Required Request Value</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#about-cursors">About Cursors</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l3"><a href="#optional-output-flags">Optional Output Flags</a></li>
+    
+
+    <li class="toctree-l3"><a href="#optional-general-properties">Optional General Properties</a></li>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_conversations-participants-suggestions-list/">Conversations Participants Suggestions List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_environments-users-conversations-contexts-create/">Environments Users Conversations Contexts Create</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_environments-users-conversations-contexts-delete/">Environments Users Conversations Contexts Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_environments-users-conversations-contexts-get/">Environments Users Conversations Contexts Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_environments-users-conversations-contexts-list/">Environments Users Conversations Contexts List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_environments-users-conversations-contexts-patch/">Environments Users Conversations Contexts Patch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_environments-users-conversations-delete-contexts/">Environments Users Conversations Delete Contexts</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_get-agent/">Get Agent</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_human-agent-assistants-compile-suggestions/">Human Agent Assistants Compile Suggestions</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_human-agent-assistants-create/">Human Agent Assistants Create</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_human-agent-assistants-delete/">Human Agent Assistants Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_human-agent-assistants-get/">Human Agent Assistants Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_human-agent-assistants-list/">Human Agent Assistants List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_human-agent-assistants-patch/">Human Agent Assistants Patch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_knowledge-bases-create/">Knowledge Bases Create</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_knowledge-bases-delete/">Knowledge Bases Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_knowledge-bases-documents-create/">Knowledge Bases Documents Create</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_knowledge-bases-documents-delete/">Knowledge Bases Documents Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_knowledge-bases-documents-get/">Knowledge Bases Documents Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_knowledge-bases-documents-list/">Knowledge Bases Documents List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_knowledge-bases-get/">Knowledge Bases Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_knowledge-bases-list/">Knowledge Bases List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_operations-get/">Operations Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_phone-number-orders-cancel/">Phone Number Orders Cancel</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_phone-number-orders-create/">Phone Number Orders Create</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_phone-number-orders-get/">Phone Number Orders Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_phone-number-orders-list/">Phone Number Orders List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_phone-number-orders-patch/">Phone Number Orders Patch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_phone-numbers-delete/">Phone Numbers Delete</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_phone-numbers-list/">Phone Numbers List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_phone-numbers-patch/">Phone Numbers Patch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../projects_phone-numbers-undelete/">Phone Numbers Undelete</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Dialogflow v1.0.8+20181009</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Projects &raquo;</li>
+        
+      
+    
+    <li>Conversations Participants Streaming Analyze Content</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/dialogflow2_beta1-cli/edit/master/docs/projects_conversations-participants-streaming-analyze-content.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p>Adds a text (chat, for example), or audio (phone recording, for example)
+message from a participan  into the conversation.
+Note: This method is only available through the gRPC API (not REST).</p>
+<p>The top-level message sent to the client by the server is
+<code>StreamingAnalyzeContentResponse</code>. Multiple response messages can be
+returned in order. The first one or more messages contain the
+<code>recognition_result</code> field. Each result represents a more complete
+transcript of what the user said. The next message contains the
+<code>reply_text</code> field and potentially the <code>reply_audio</code> field. The message can
+also contain the <code>automated_agent_reply</code> field.</p>
+<h1 id="scopes">Scopes</h1>
+<p>You will need authorization for the <em>https://www.googleapis.com/auth/cloud-platform</em> scope to make a valid call.</p>
+<p>If unset, the scope for this method defaults to <em>https://www.googleapis.com/auth/cloud-platform</em>.
+You can set the scope for this method like this: <code>dialogflow2-beta1 --scope &lt;scope&gt; projects conversations-participants-streaming-analyze-content ...</code></p>
+<h1 id="required-scalar-argument">Required Scalar Argument</h1>
+<ul>
+<li><strong>&lt;participant&gt;</strong> <em>(string)</em><ul>
+<li>Required. The name of the participant this text comes from.
+    Format: <code>projects/&amp;lt;Project ID&amp;gt;/conversations/&amp;lt;Conversation
+    ID&amp;gt;/participants/&amp;lt;Participant ID&amp;gt;</code>.</li>
+</ul>
+</li>
+</ul>
+<h1 id="required-request-value">Required Request Value</h1>
+<p>The request value is a data-structure with various fields. Each field may be a simple scalar or another data-structure.
+In the latter case it is advised to set the field-cursor to the data-structure's field to specify values more concisely.</p>
+<p>For example, a structure like this:</p>
+<pre><code>GoogleCloudDialogflowV2beta1StreamingAnalyzeContentRequest:
+  audio-config:
+    audio-encoding: string
+    language-code: string
+    model: string
+    phrase-hints: [string]
+    sample-rate-hertz: integer
+  input-audio: string
+  input-text: string
+  reply-audio-config:
+    audio-encoding: string
+    sample-rate-hertz: integer
+    synthesize-speech-config:
+      effects-profile-id: [string]
+      pitch: number
+      speaking-rate: number
+      voice:
+        name: string
+        ssml-gender: string
+      volume-gain-db: number
+  text-config:
+    language-code: string
+
+</code></pre>
+
+<p>can be set completely with the following arguments which are assumed to be executed in the given order. Note how the cursor position is adjusted to the respective structures, allowing simple field names to be used most of the time.</p>
+<ul>
+<li><code>-r .audio-config    audio-encoding=ipsum</code><ul>
+<li>Required. Audio encoding of the audio content to process.</li>
+</ul>
+</li>
+<li><code>language-code=ut</code><ul>
+<li>Required. The language of the supplied audio. Dialogflow does not do
+    translations. See <a href="https://dialogflow.com/docs/languages">Language
+    Support</a> for a list of the
+    currently supported language codes. Note that queries in the same session
+    do not necessarily need to specify the same language.</li>
+</ul>
+</li>
+<li><code>model=dolor</code><ul>
+<li>Optional. Which Speech model to select for the given request. Select the
+    model best suited to your domain to get best results. If a model is not
+    explicitly specified, then we auto-select a model based on the parameters
+    in the InputAudioConfig.
+    If enhanced speech model is enabled for the agent and an enhanced
+    version of the specified model for the language does not exist, then the
+    speech is recognized using the standard version of the specified model.
+    Refer to
+    <a href="https://cloud.google.com/speech-to-text/docs/basics#select-model">Cloud Speech API
+    documentation</a>
+    for more details.</li>
+</ul>
+</li>
+<li><code>phrase-hints=sea</code><ul>
+<li>Optional. The collection of phrase hints which are used to boost accuracy
+    of speech recognition.
+    Refer to
+    <a href="https://cloud.google.com/speech-to-text/docs/basics#phrase-hints">Cloud Speech API
+    documentation</a>
+    for more details.</li>
+<li>Each invocation of this argument appends the given value to the array.</li>
+</ul>
+</li>
+<li>
+<p><code>sample-rate-hertz=65</code></p>
+<ul>
+<li>Required. Sample rate (in Hertz) of the audio content sent in the query.
+    Refer to
+    <a href="https://cloud.google.com/speech-to-text/docs/basics">Cloud Speech API
+    documentation</a> for
+    more details.</li>
+</ul>
+</li>
+<li>
+<p><code>..    input-audio=eirmod</code></p>
+<ul>
+<li>The input audio content to be recognized. Must be sent if <code>audio_config</code>
+    is set in the first message. The complete audio over all streaming
+    messages must not exceed 1 minute.</li>
+</ul>
+</li>
+<li><code>input-text=sanctus</code><ul>
+<li>The UTF-8 encoded natural language text to be processed. Must be sent if
+    <code>text_config</code> is set in the first message. Text length must not exceed
+    256 bytes. The <code>input_text</code> field can be only sent once.</li>
+</ul>
+</li>
+<li><code>reply-audio-config    audio-encoding=voluptua.</code><ul>
+<li>Required. Audio encoding of the synthesized audio content.</li>
+</ul>
+</li>
+<li><code>sample-rate-hertz=2</code><ul>
+<li>Optional. The synthesis sample rate (in hertz) for this audio. If not
+    provided, then the synthesizer will use the default sample rate based on
+    the audio encoding. If this is different from the voice&#39;s natural sample
+    rate, then the synthesizer will honor this request by converting to the
+    desired sample rate (which might result in worse audio quality).</li>
+</ul>
+</li>
+<li><code>synthesize-speech-config    effects-profile-id=et</code><ul>
+<li>Optional. An identifier which selects &#39;audio effects&#39; profiles that are
+    applied on (post synthesized) text to speech. Effects are applied on top of
+    each other in the order they are given.</li>
+<li>Each invocation of this argument appends the given value to the array.</li>
+</ul>
+</li>
+<li><code>pitch=0.162324877359</code><ul>
+<li>Optional. Speaking pitch, in the range [-20.0, 20.0]. 20 means increase 20
+    semitones from the original pitch. -20 means decrease 20 semitones from the
+    original pitch.</li>
+</ul>
+</li>
+<li><code>speaking-rate=0.751822175256</code><ul>
+<li>Optional. Speaking rate/speed, in the range [0.25, 4.0]. 1.0 is the normal
+    native speed supported by the specific voice. 2.0 is twice as fast, and
+    0.5 is half as fast. If unset(0.0), defaults to the native 1.0 speed. Any
+    other values &lt; 0.25 or &gt; 4.0 will return an error.</li>
+</ul>
+</li>
+<li><code>voice    name=ut</code><ul>
+<li>Optional. The name of the voice. If not set, the service will choose a
+    voice based on the other parameters such as language_code and gender.</li>
+</ul>
+</li>
+<li>
+<p><code>ssml-gender=sed</code></p>
+<ul>
+<li>Optional. The preferred gender of the voice. If not set, the service will
+    choose a voice based on the other parameters such as language_code and
+    name. Note that this is only a preference, not requirement. If a
+    voice of the appropriate gender is not available, the synthesizer should
+    substitute a voice with a different gender rather than failing the request.</li>
+</ul>
+</li>
+<li>
+<p><code>..    volume-gain-db=0.799223605101</code></p>
+<ul>
+<li>Optional. Volume gain (in dB) of the normal native volume supported by the
+    specific voice, in the range [-96.0, 16.0]. If unset, or set to a value of
+    0.0 (dB), will play at normal native signal amplitude. A value of -6.0 (dB)
+    will play at approximately half the amplitude of the normal native signal
+    amplitude. A value of +6.0 (dB) will play at approximately twice the
+    amplitude of the normal native signal amplitude. We strongly recommend not
+    to exceed +10 (dB) as there&#39;s usually no effective increase in loudness for
+    any value greater than that.</li>
+</ul>
+</li>
+<li>
+<p><code>...text-config    language-code=ipsum</code></p>
+<ul>
+<li>Required. The language of this conversational query. See <a href="https://dialogflow.com/docs/languages">Language
+    Support</a> for a list of the
+    currently supported language codes.</li>
+</ul>
+</li>
+</ul>
+<h3 id="about-cursors">About Cursors</h3>
+<p>The cursor position is key to comfortably set complex nested structures. The following rules apply:</p>
+<ul>
+<li>The cursor position is always set relative to the current one, unless the field name starts with the <code>.</code> character. Fields can be nested such as in <code>-r f.s.o</code> .</li>
+<li>The cursor position is set relative to the top-level structure if it starts with <code>.</code>, e.g. <code>-r .s.s</code></li>
+<li>You can also set nested fields without setting the cursor explicitly. For example, to set a value relative to the current cursor position, you would specify <code>-r struct.sub_struct=bar</code>.</li>
+<li>You can move the cursor one level up by using <code>..</code>. Each additional <code>.</code> moves it up one additional level. E.g. <code>...</code> would go three levels up.</li>
+</ul>
+<h1 id="optional-output-flags">Optional Output Flags</h1>
+<p>The method's return value a JSON encoded structure, which will be written to standard output by default.</p>
+<ul>
+<li><strong>-o out</strong><ul>
+<li><em>out</em> specifies the <em>destination</em> to which to write the server's result to.
+  It will be a JSON-encoded structure.
+  The <em>destination</em> may be <code>-</code> to indicate standard output, or a filepath that is to contain the received bytes.
+  If unset, it defaults to standard output.</li>
+</ul>
+</li>
+</ul>
+<h1 id="optional-general-properties">Optional General Properties</h1>
+<p>The following properties can configure any call, and are not specific to this method.</p>
+<ul>
+<li>
+<p><strong>-p $-xgafv=string</strong></p>
+<ul>
+<li>V1 error format.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p access-token=string</strong></p>
+<ul>
+<li>OAuth access token.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p alt=string</strong></p>
+<ul>
+<li>Data format for response.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p callback=string</strong></p>
+<ul>
+<li>JSONP</li>
+</ul>
+</li>
+<li>
+<p><strong>-p fields=string</strong></p>
+<ul>
+<li>Selector specifying which fields to include in a partial response.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p key=string</strong></p>
+<ul>
+<li>API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p oauth-token=string</strong></p>
+<ul>
+<li>OAuth 2.0 token for the current user.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p pretty-print=boolean</strong></p>
+<ul>
+<li>Returns response with indentations and line breaks.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p quota-user=string</strong></p>
+<ul>
+<li>Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p upload-type=string</strong></p>
+<ul>
+<li>Legacy upload protocol for media (e.g. &#34;media&#34;, &#34;multipart&#34;).</li>
+</ul>
+</li>
+<li>
+<p><strong>-p upload-protocol=string</strong></p>
+<ul>
+<li>Upload protocol for media (e.g. &#34;raw&#34;, &#34;multipart&#34;).</li>
+</ul>
+</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../projects_conversations-participants-suggestions-list/" class="btn btn-neutral float-right" title="Conversations Participants Suggestions List">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../projects_conversations-participants-list/" class="btn btn-neutral" title="Conversations Participants List"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Copyright &copy; 2015-2016, `Sebastian Thiel`</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+    
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/dialogflow2_beta1-cli" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../projects_conversations-participants-list/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../projects_conversations-participants-suggestions-list/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script src="../js/theme.js"></script>
+
+</body>
+</html>

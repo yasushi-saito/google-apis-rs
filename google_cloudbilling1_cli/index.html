@@ -8,7 +8,7 @@
   <meta name="description" content="A complete library to interact with Cloudbilling (protocol v1)">
   
   <link rel="shortcut icon" href="./img/favicon.ico">
-  <title>Home - Cloudbilling v1.0.7+20170813</title>
+  <title>Home - Cloudbilling v1.0.8+20180919</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="./css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href="." class="icon icon-home"> Cloudbilling v1.0.7+20170813</a>
+        <a href="." class="icon icon-home"> Cloudbilling v1.0.8+20180919</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -79,7 +79,15 @@
     <ul class="subnav">
                 <li class="">
                     
+    <a class="" href="billing-accounts_create/">Create</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="billing-accounts_get/">Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="billing-accounts_get-iam-policy/">Get Iam Policy</a>
                 </li>
                 <li class="">
                     
@@ -87,7 +95,19 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="billing-accounts_patch/">Patch</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="billing-accounts_projects-list/">Projects List</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="billing-accounts_set-iam-policy/">Set Iam Policy</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="billing-accounts_test-iam-permissions/">Test Iam Permissions</a>
                 </li>
     </ul>
 	    </li>
@@ -132,7 +152,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href=".">Cloudbilling v1.0.7+20170813</a>
+        <a href=".">Cloudbilling v1.0.8+20180919</a>
       </nav>
 
       
@@ -176,12 +196,17 @@ capabilities. Errors will be printed to standard error, and cause the program's 
 
 <p>Find the source code <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/cloudbilling1-cli">on github</a>.</p>
 <h1 id="usage">Usage</h1>
-<p>This documentation was generated from the <em>Cloudbilling</em> API at revision <em>20170813</em>. The CLI is at version <em>1.0.7</em>.</p>
+<p>This documentation was generated from the <em>Cloudbilling</em> API at revision <em>20180919</em>. The CLI is at version <em>1.0.8</em>.</p>
 <pre><code class="bash">cloudbilling1 [options]
         billing-accounts
+                create (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 get &lt;name&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                get-iam-policy &lt;resource&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 list [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                patch &lt;name&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 projects-list &lt;name&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                set-iam-policy &lt;resource&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                test-iam-permissions &lt;resource&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
         projects
                 get-billing-info &lt;name&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 update-billing-info &lt;name&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
@@ -252,7 +277,7 @@ issue at hand.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="billing-accounts_get/" class="btn btn-neutral float-right" title="Get">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="billing-accounts_create/" class="btn btn-neutral float-right" title="Create">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
     </div>
@@ -284,7 +309,7 @@ issue at hand.</p>
       
       
       
-        <span style="margin-left: 15px"><a href="billing-accounts_get/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="billing-accounts_create/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
@@ -295,5 +320,5 @@ issue at hand.</p>
 
 <!--
 MkDocs version : 0.16.3
-Build Date UTC : 2018-02-01 19:24:14
+Build Date UTC : 2018-10-14 11:32:21
 -->

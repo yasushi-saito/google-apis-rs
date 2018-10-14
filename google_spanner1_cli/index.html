@@ -8,7 +8,7 @@
   <meta name="description" content="A complete library to interact with Spanner (protocol v1)">
   
   <link rel="shortcut icon" href="./img/favicon.ico">
-  <title>Home - Spanner v1.0.7+20171204</title>
+  <title>Home - Spanner v1.0.8+20180920</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="./css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href="." class="icon icon-home"> Spanner v1.0.7+20171204</a>
+        <a href="." class="icon icon-home"> Spanner v1.0.8+20180920</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -163,6 +163,14 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="projects_instances-databases-sessions-partition-query/">Instances Databases Sessions Partition Query</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="projects_instances-databases-sessions-partition-read/">Instances Databases Sessions Partition Read</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="projects_instances-databases-sessions-read/">Instances Databases Sessions Read</a>
                 </li>
                 <li class="">
@@ -242,7 +250,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href=".">Spanner v1.0.7+20171204</a>
+        <a href=".">Spanner v1.0.8+20180920</a>
       </nav>
 
       
@@ -286,7 +294,7 @@ capabilities. Errors will be printed to standard error, and cause the program's 
 
 <p>Find the source code <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/spanner1-cli">on github</a>.</p>
 <h1 id="usage">Usage</h1>
-<p>This documentation was generated from the <em>Spanner</em> API at revision <em>20171204</em>. The CLI is at version <em>1.0.7</em>.</p>
+<p>This documentation was generated from the <em>Spanner</em> API at revision <em>20180920</em>. The CLI is at version <em>1.0.8</em>.</p>
 <pre><code class="bash">spanner1 [options]
         projects
                 instance-configs-get &lt;name&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
@@ -310,6 +318,8 @@ capabilities. Errors will be printed to standard error, and cause the program's 
                 instances-databases-sessions-execute-streaming-sql &lt;session&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 instances-databases-sessions-get &lt;name&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 instances-databases-sessions-list &lt;database&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                instances-databases-sessions-partition-query &lt;session&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                instances-databases-sessions-partition-read &lt;session&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 instances-databases-sessions-read &lt;session&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 instances-databases-sessions-rollback &lt;session&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 instances-databases-sessions-streaming-read &lt;session&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
@@ -434,5 +444,5 @@ issue at hand.</p>
 
 <!--
 MkDocs version : 0.16.3
-Build Date UTC : 2018-02-01 19:23:43
+Build Date UTC : 2018-10-14 11:31:36
 -->

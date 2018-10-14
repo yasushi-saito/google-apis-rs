@@ -8,7 +8,7 @@
   <meta name="description" content="A complete library to interact with Shopping Content (protocol v2sandbox)">
   
   <link rel="shortcut icon" href="./img/favicon.ico">
-  <title>Home - Shopping Content v1.0.7+20171207</title>
+  <title>Home - Shopping Content v1.0.8+20181009</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="./css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href="." class="icon icon-home"> Shopping Content v1.0.7+20171207</a>
+        <a href="." class="icon icon-home"> Shopping Content v1.0.8+20181009</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -75,6 +75,59 @@
           
             <li class="toctree-l1">
 		
+    <span class="caption-text">Orderinvoices</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="orderinvoices_createchargeinvoice/">Createchargeinvoice</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="orderinvoices_createrefundinvoice/">Createrefundinvoice</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Orderpayments</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="orderpayments_notifyauthapproved/">Notifyauthapproved</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="orderpayments_notifyauthdeclined/">Notifyauthdeclined</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="orderpayments_notifycharge/">Notifycharge</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="orderpayments_notifyrefund/">Notifyrefund</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Orderreturns</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="orderreturns_get/">Get</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="orderreturns_list/">List</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
     <span class="caption-text">Orders</span>
     <ul class="subnav">
                 <li class="">
@@ -95,7 +148,15 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="orders_canceltestorderbycustomer/">Canceltestorderbycustomer</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="orders_createtestorder/">Createtestorder</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="orders_createtestreturn/">Createtestreturn</a>
                 </li>
                 <li class="">
                     
@@ -115,6 +176,10 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="orders_instorerefundlineitem/">Instorerefundlineitem</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="orders_list/">List</a>
                 </li>
                 <li class="">
@@ -123,7 +188,15 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="orders_rejectreturnlineitem/">Rejectreturnlineitem</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="orders_returnlineitem/">Returnlineitem</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="orders_returnrefundlineitem/">Returnrefundlineitem</a>
                 </li>
                 <li class="">
                     
@@ -158,7 +231,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href=".">Shopping Content v1.0.7+20171207</a>
+        <a href=".">Shopping Content v1.0.8+20181009</a>
       </nav>
 
       
@@ -202,21 +275,37 @@ capabilities. Errors will be printed to standard error, and cause the program's 
 
 <p>Find the source code <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/content2_sandbox-cli">on github</a>.</p>
 <h1 id="usage">Usage</h1>
-<p>This documentation was generated from the <em>Shopping Content</em> API at revision <em>20171207</em>. The CLI is at version <em>1.0.7</em>.</p>
+<p>This documentation was generated from the <em>Shopping Content</em> API at revision <em>20181009</em>. The CLI is at version <em>1.0.8</em>.</p>
 <pre><code class="bash">content2-sandbox [options]
+        orderinvoices
+                createchargeinvoice &lt;merchant-id&gt; &lt;order-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                createrefundinvoice &lt;merchant-id&gt; &lt;order-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+        orderpayments
+                notifyauthapproved &lt;merchant-id&gt; &lt;order-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                notifyauthdeclined &lt;merchant-id&gt; &lt;order-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                notifycharge &lt;merchant-id&gt; &lt;order-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                notifyrefund &lt;merchant-id&gt; &lt;order-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+        orderreturns
+                get &lt;merchant-id&gt; &lt;return-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                list &lt;merchant-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
         orders
                 acknowledge &lt;merchant-id&gt; &lt;order-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 advancetestorder &lt;merchant-id&gt; &lt;order-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 cancel &lt;merchant-id&gt; &lt;order-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 cancellineitem &lt;merchant-id&gt; &lt;order-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                canceltestorderbycustomer &lt;merchant-id&gt; &lt;order-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 createtestorder &lt;merchant-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                createtestreturn &lt;merchant-id&gt; &lt;order-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 custombatch (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 get &lt;merchant-id&gt; &lt;order-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 getbymerchantorderid &lt;merchant-id&gt; &lt;merchant-order-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 gettestordertemplate &lt;merchant-id&gt; &lt;template-name&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                instorerefundlineitem &lt;merchant-id&gt; &lt;order-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 list &lt;merchant-id&gt; [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 refund &lt;merchant-id&gt; &lt;order-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                rejectreturnlineitem &lt;merchant-id&gt; &lt;order-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 returnlineitem &lt;merchant-id&gt; &lt;order-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
+                returnrefundlineitem &lt;merchant-id&gt; &lt;order-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 setlineitemmetadata &lt;merchant-id&gt; &lt;order-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 shiplineitems &lt;merchant-id&gt; &lt;order-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
                 updatelineitemshippingdetails &lt;merchant-id&gt; &lt;order-id&gt; (-r &lt;kv&gt;)... [-p &lt;v&gt;]... [-o &lt;out&gt;]
@@ -286,7 +375,7 @@ issue at hand.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="orders_acknowledge/" class="btn btn-neutral float-right" title="Acknowledge">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="orderinvoices_createchargeinvoice/" class="btn btn-neutral float-right" title="Createchargeinvoice">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
     </div>
@@ -318,7 +407,7 @@ issue at hand.</p>
       
       
       
-        <span style="margin-left: 15px"><a href="orders_acknowledge/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="orderinvoices_createchargeinvoice/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
@@ -329,5 +418,5 @@ issue at hand.</p>
 
 <!--
 MkDocs version : 0.16.3
-Build Date UTC : 2018-02-01 19:24:36
+Build Date UTC : 2018-10-14 11:32:52
 -->

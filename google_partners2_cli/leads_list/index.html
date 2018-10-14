@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>List - Partners v1.0.7+20171206</title>
+  <title>List - Partners v1.0.8+20180925</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Partners v1.0.7+20171206</a>
+        <a href=".." class="icon icon-home"> Partners v1.0.8+20180925</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -89,17 +89,6 @@
                 <li class="">
                     
     <a class="" href="../companies_list/">List</a>
-                </li>
-    </ul>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <span class="caption-text">Exams</span>
-    <ul class="subnav">
-                <li class="">
-                    
-    <a class="" href="../exams_get-token/">Get Token</a>
                 </li>
     </ul>
 	    </li>
@@ -216,7 +205,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Partners v1.0.7+20171206</a>
+        <a href="..">Partners v1.0.8+20180925</a>
       </nav>
 
       
@@ -264,10 +253,24 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p order-by=string</strong></p>
+<p><strong>-p request-metadata-locale=string</strong></p>
 <ul>
-<li>How to order Leads. Currently, only <code>create_time</code>
-    and <code>create_time desc</code> are supported</li>
+<li>Locale to use for the current request.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p page-token=string</strong></p>
+<ul>
+<li>A token identifying a page of results that the server returns.
+    Typically, this is the value of <code>ListLeadsResponse.next_page_token</code>
+    returned from the previous call to
+    ListLeads.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p request-metadata-user-overrides-user-id=string</strong></p>
+<ul>
+<li>Logged-in user ID to impersonate instead of the user&#39;s ID.</li>
 </ul>
 </li>
 <li>
@@ -275,6 +278,18 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <ul>
 <li>Requested page size. Server may return fewer leads than requested.
     If unspecified, server picks an appropriate default.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p request-metadata-user-overrides-ip-address=string</strong></p>
+<ul>
+<li>IP address to use instead of the user&#39;s geo-located IP address.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p request-metadata-partners-session-id=string</strong></p>
+<ul>
+<li>Google Partners session ID.</li>
 </ul>
 </li>
 <li>
@@ -286,23 +301,10 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p request-metadata-traffic-source-traffic-sub-id=string</strong></p>
+<p><strong>-p order-by=string</strong></p>
 <ul>
-<li>Second level identifier to indicate where the traffic comes from.
-    An identifier has multiple letters created by a team which redirected the
-    traffic to us.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p request-metadata-partners-session-id=string</strong></p>
-<ul>
-<li>Google Partners session ID.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p request-metadata-user-overrides-user-id=string</strong></p>
-<ul>
-<li>Logged-in user ID to impersonate instead of the user&#39;s ID.</li>
+<li>How to order Leads. Currently, only <code>create_time</code>
+    and <code>create_time desc</code> are supported</li>
 </ul>
 </li>
 <li>
@@ -312,24 +314,11 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p request-metadata-locale=string</strong></p>
+<p><strong>-p request-metadata-traffic-source-traffic-sub-id=string</strong></p>
 <ul>
-<li>Locale to use for the current request.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p request-metadata-user-overrides-ip-address=string</strong></p>
-<ul>
-<li>IP address to use instead of the user&#39;s geo-located IP address.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p page-token=string</strong></p>
-<ul>
-<li>A token identifying a page of results that the server returns.
-    Typically, this is the value of <code>ListLeadsResponse.next_page_token</code>
-    returned from the previous call to
-    ListLeads.</li>
+<li>Second level identifier to indicate where the traffic comes from.
+    An identifier has multiple letters created by a team which redirected the
+    traffic to us.</li>
 </ul>
 </li>
 </ul>
@@ -355,12 +344,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p bearer-token=string</strong></p>
-<ul>
-<li>OAuth bearer token.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p callback=string</strong></p>
 <ul>
 <li>JSONP</li>
@@ -382,12 +365,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <p><strong>-p oauth-token=string</strong></p>
 <ul>
 <li>OAuth 2.0 token for the current user.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p pp=boolean</strong></p>
-<ul>
-<li>Pretty-print response.</li>
 </ul>
 </li>
 <li>
@@ -425,7 +402,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
         <a href="../methods_get-partnersstatus/" class="btn btn-neutral float-right" title="Get Partnersstatus">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../exams_get-token/" class="btn btn-neutral" title="Get Token"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../companies_list/" class="btn btn-neutral" title="List"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -455,7 +432,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
           <a href="https://github.com/Byron/google-apis-rs/tree/master/gen/partners2-cli" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../exams_get-token/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../companies_list/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
         <span style="margin-left: 15px"><a href="../methods_get-partnersstatus/" style="color: #fcfcfc">Next &raquo;</a></span>

@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Sync - Games v1.0.7+20171207</title>
+  <title>Sync - Games v1.0.8+20181004</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Games v1.0.7+20171207</a>
+        <a href=".." class="icon icon-home"> Games v1.0.8+20181004</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -394,7 +394,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Games v1.0.7+20171207</a>
+        <a href="..">Games v1.0.8+20181004</a>
       </nav>
 
       
@@ -455,15 +455,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p language=string</strong></p>
+<p><strong>-p max-results=integer</strong></p>
 <ul>
-<li>The preferred language to use for strings returned by this method.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p page-token=string</strong></p>
-<ul>
-<li>The token returned by the previous request.</li>
+<li>The maximum number of matches to return in the response, used for paging. For any response, the actual number of matches to return may be less than the specified maxResults.</li>
 </ul>
 </li>
 <li>
@@ -473,15 +467,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p consistency-token=string</strong></p>
+<p><strong>-p page-token=string</strong></p>
 <ul>
-<li>The last-seen mutation timestamp.</li>
+<li>The token returned by the previous request.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p max-results=integer</strong></p>
+<p><strong>-p language=string</strong></p>
 <ul>
-<li>The maximum number of matches to return in the response, used for paging. For any response, the actual number of matches to return may be less than the specified maxResults.</li>
+<li>The preferred language to use for strings returned by this method.</li>
 </ul>
 </li>
 </ul>
@@ -521,13 +515,13 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <li>
 <p><strong>-p quota-user=string</strong></p>
 <ul>
-<li>Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. Overrides userIp if both are provided.</li>
+<li>An opaque string that represents a user for quota purposes. Must not exceed 40 characters.</li>
 </ul>
 </li>
 <li>
 <p><strong>-p user-ip=string</strong></p>
 <ul>
-<li>IP address of the site where the request originates. Use this if you want to enforce per-user limits.</li>
+<li>Deprecated. Please use quotaUser instead.</li>
 </ul>
 </li>
 </ul>
