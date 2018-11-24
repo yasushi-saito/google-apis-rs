@@ -404,16 +404,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p language-code=string</strong></p>
-<ul>
-<li>Optional. The language of training phrases, parameters and rich messages
-    defined in <code>intent</code>. If not specified, the agent&#39;s default language is
-    used. <a href="https://dialogflow.com/docs/reference/language">More than a dozen
-    languages</a> are supported.
-    Note: languages must be enabled in the agent, before they can be used.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p intent-view=string</strong></p>
 <ul>
 <li>Optional. The resource view to apply to the returned intent.</li>
@@ -423,6 +413,16 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <p><strong>-p update-mask=string</strong></p>
 <ul>
 <li>Optional. The mask to control which fields get updated.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p language-code=string</strong></p>
+<ul>
+<li>Optional. The language of training phrases, parameters and rich messages
+    defined in <code>intent</code>. If not specified, the agent&#39;s default language is
+    used. <a href="https://dialogflow.com/docs/reference/language">More than a dozen
+    languages</a> are supported.
+    Note: languages must be enabled in the agent, before they can be used.</li>
 </ul>
 </li>
 </ul>

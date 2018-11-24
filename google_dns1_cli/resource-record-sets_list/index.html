@@ -250,12 +250,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p type=string</strong></p>
-<ul>
-<li>Restricts the list to return only records of this type. If present, the &#34;name&#34; parameter must also be present.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p max-results=integer</strong></p>
 <ul>
 <li>Optional. Maximum number of results to be returned. If unspecified, the server will decide how many results to return.</li>
@@ -265,6 +259,12 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <p><strong>-p name=string</strong></p>
 <ul>
 <li>Restricts the list to return only records with this fully qualified domain name.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p type=string</strong></p>
+<ul>
+<li>Restricts the list to return only records of this type. If present, the &#34;name&#34; parameter must also be present.</li>
 </ul>
 </li>
 <li>

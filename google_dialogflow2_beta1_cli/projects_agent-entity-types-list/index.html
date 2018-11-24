@@ -554,6 +554,16 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
+<p><strong>-p language-code=string</strong></p>
+<ul>
+<li>Optional. The language to list entity synonyms for. If not specified,
+    the agent&#39;s default language is used.
+    <a href="https://dialogflow.com/docs/reference/language">More than a dozen
+    languages</a> are supported.
+    Note: languages must be enabled in the agent, before they can be used.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p page-token=string</strong></p>
 <ul>
 <li>Optional. The next_page_token value returned from a previous list request.</li>
@@ -564,16 +574,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <ul>
 <li>Optional. The maximum number of items to return in a single page. By
     default 100 and at most 1000.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p language-code=string</strong></p>
-<ul>
-<li>Optional. The language to list entity synonyms for. If not specified,
-    the agent&#39;s default language is used.
-    <a href="https://dialogflow.com/docs/reference/language">More than a dozen
-    languages</a> are supported.
-    Note: languages must be enabled in the agent, before they can be used.</li>
 </ul>
 </li>
 </ul>

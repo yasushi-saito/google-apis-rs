@@ -252,19 +252,6 @@ filter while iterating through pages.</p>
 </ul>
 </li>
 <li>
-<p><strong>-p page-size=integer</strong></p>
-<ul>
-<li>
-<p>Requested page size.</p>
-<p>The maximum page size is 9800. If unspecified, the page size will
-be the maximum. Fewer queues than requested might be returned,
-even if more queues exist; use the
-next_page_token in the
-response to determine if more queues exist.</p>
-</li>
-</ul>
-</li>
-<li>
 <p><strong>-p filter=string</strong></p>
 <ul>
 <li>
@@ -276,6 +263,19 @@ response to determine if more queues exist.</p>
 <p>Sample filter &#34;app_engine_http_target: *&#34;.</p>
 <p>Note that using filters might cause fewer queues than the
 requested_page size to be returned.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>-p page-size=integer</strong></p>
+<ul>
+<li>
+<p>Requested page size.</p>
+<p>The maximum page size is 9800. If unspecified, the page size will
+be the maximum. Fewer queues than requested might be returned,
+even if more queues exist; use the
+next_page_token in the
+response to determine if more queues exist.</p>
 </li>
 </ul>
 </li>

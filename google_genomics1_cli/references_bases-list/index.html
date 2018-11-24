@@ -438,20 +438,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p start=string</strong></p>
-<ul>
-<li>The start position (0-based) of this query. Defaults to 0.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p page-size=integer</strong></p>
-<ul>
-<li>The maximum number of bases to return in a single page. If unspecified,
-    defaults to 200Kbp (kilo base pairs). The maximum value is 10Mbp (mega base
-    pairs).</li>
-</ul>
-</li>
-<li>
 <p><strong>-p page-token=string</strong></p>
 <ul>
 <li>The continuation token, which is used to page through large result sets.
@@ -464,6 +450,20 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <ul>
 <li>The end position (0-based, exclusive) of this query. Defaults to the length
     of this reference.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p page-size=integer</strong></p>
+<ul>
+<li>The maximum number of bases to return in a single page. If unspecified,
+    defaults to 200Kbp (kilo base pairs). The maximum value is 10Mbp (mega base
+    pairs).</li>
+</ul>
+</li>
+<li>
+<p><strong>-p start=string</strong></p>
+<ul>
+<li>The start position (0-based) of this query. Defaults to 0.</li>
 </ul>
 </li>
 </ul>

@@ -290,6 +290,12 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
+<p><strong>-p intent-view=string</strong></p>
+<ul>
+<li>Optional. The resource view to apply to the returned intent.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p page-size=integer</strong></p>
 <ul>
 <li>Optional. The maximum number of items to return in a single page. By
@@ -297,9 +303,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p intent-view=string</strong></p>
+<p><strong>-p page-token=string</strong></p>
 <ul>
-<li>Optional. The resource view to apply to the returned intent.</li>
+<li>Optional. The next_page_token value returned from a previous list request.</li>
 </ul>
 </li>
 <li>
@@ -310,12 +316,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
     <a href="https://dialogflow.com/docs/reference/language">More than a dozen
     languages</a> are supported.
     Note: languages must be enabled in the agent before they can be used.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p page-token=string</strong></p>
-<ul>
-<li>Optional. The next_page_token value returned from a previous list request.</li>
 </ul>
 </li>
 </ul>

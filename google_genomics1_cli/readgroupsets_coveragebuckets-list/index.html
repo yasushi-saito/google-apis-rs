@@ -443,17 +443,11 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p start=string</strong></p>
+<p><strong>-p page-token=string</strong></p>
 <ul>
-<li>The start position of the range on the reference, 0-based inclusive. If
-    specified, <code>referenceName</code> must also be specified. Defaults to 0.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p page-size=integer</strong></p>
-<ul>
-<li>The maximum number of results to return in a single page. If unspecified,
-    defaults to 1024. The maximum value is 2048.</li>
+<li>The continuation token, which is used to page through large result sets.
+    To get the next page of results, set this parameter to the value of
+    <code>nextPageToken</code> from the previous response.</li>
 </ul>
 </li>
 <li>
@@ -476,19 +470,25 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p page-token=string</strong></p>
-<ul>
-<li>The continuation token, which is used to page through large result sets.
-    To get the next page of results, set this parameter to the value of
-    <code>nextPageToken</code> from the previous response.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p end=string</strong></p>
 <ul>
 <li>The end position of the range on the reference, 0-based exclusive. If
     specified, <code>referenceName</code> must also be specified. If unset or 0, defaults
     to the length of the reference.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p start=string</strong></p>
+<ul>
+<li>The start position of the range on the reference, 0-based inclusive. If
+    specified, <code>referenceName</code> must also be specified. Defaults to 0.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p page-size=integer</strong></p>
+<ul>
+<li>The maximum number of results to return in a single page. If unspecified,
+    defaults to 1024. The maximum value is 2048.</li>
 </ul>
 </li>
 </ul>

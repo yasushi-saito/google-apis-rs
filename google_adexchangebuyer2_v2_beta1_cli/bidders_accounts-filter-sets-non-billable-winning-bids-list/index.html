@@ -422,13 +422,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p page-size=integer</strong></p>
-<ul>
-<li>Requested page size. The server may return fewer results than requested.
-    If unspecified, the server will pick an appropriate default.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p page-token=string</strong></p>
 <ul>
 <li>A token identifying a page of results the server should return.
@@ -436,6 +429,13 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
     ListNonBillableWinningBidsResponse.nextPageToken
     returned from the previous call to the nonBillableWinningBids.list
     method.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p page-size=integer</strong></p>
+<ul>
+<li>Requested page size. The server may return fewer results than requested.
+    If unspecified, the server will pick an appropriate default.</li>
 </ul>
 </li>
 </ul>

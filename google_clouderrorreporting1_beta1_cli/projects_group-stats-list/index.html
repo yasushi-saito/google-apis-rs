@@ -175,6 +175,13 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
+<p><strong>-p page-size=integer</strong></p>
+<ul>
+<li>[Optional] The maximum number of results to return per response.
+    Default is 20.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p timed-count-duration=string</strong></p>
 <ul>
 <li>[Optional] The preferred duration for a single returned <code>TimedCount</code>.
@@ -182,30 +189,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p service-filter-service=string</strong></p>
+<p><strong>-p time-range-period=string</strong></p>
 <ul>
-<li>[Optional] The exact value to match against
-    <a href="../error-reporting/reference/rest/v1beta1/ServiceContext#FIELDS.service"><code>ServiceContext.service</code></a>.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p group-id=string</strong></p>
-<ul>
-<li>[Optional] List all &lt;code&gt;ErrorGroupStats&lt;/code&gt; with these IDs.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p order=string</strong></p>
-<ul>
-<li>[Optional] The sort order in which the results are returned.
-    Default is <code>COUNT_DESC</code>.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p page-size=integer</strong></p>
-<ul>
-<li>[Optional] The maximum number of results to return per response.
-    Default is 20.</li>
+<li>Restricts the query to the specified time range.</li>
 </ul>
 </li>
 <li>
@@ -216,17 +202,10 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p page-token=string</strong></p>
+<p><strong>-p service-filter-service=string</strong></p>
 <ul>
-<li>[Optional] A <code>next_page_token</code> provided by a previous response. To view
-    additional results, pass this token along with the identical query
-    parameters as the first request.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p time-range-period=string</strong></p>
-<ul>
-<li>Restricts the query to the specified time range.</li>
+<li>[Optional] The exact value to match against
+    <a href="../error-reporting/reference/rest/v1beta1/ServiceContext#FIELDS.service"><code>ServiceContext.service</code></a>.</li>
 </ul>
 </li>
 <li>
@@ -237,10 +216,16 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p service-filter-version=string</strong></p>
+<p><strong>-p order=string</strong></p>
 <ul>
-<li>[Optional] The exact value to match against
-    <a href="../error-reporting/reference/rest/v1beta1/ServiceContext#FIELDS.version"><code>ServiceContext.version</code></a>.</li>
+<li>[Optional] The sort order in which the results are returned.
+    Default is <code>COUNT_DESC</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p group-id=string</strong></p>
+<ul>
+<li>[Optional] List all &lt;code&gt;ErrorGroupStats&lt;/code&gt; with these IDs.</li>
 </ul>
 </li>
 <li>
@@ -248,6 +233,21 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <ul>
 <li>[Optional] The alignment of the timed counts to be returned.
     Default is <code>ALIGNMENT_EQUAL_AT_END</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p service-filter-version=string</strong></p>
+<ul>
+<li>[Optional] The exact value to match against
+    <a href="../error-reporting/reference/rest/v1beta1/ServiceContext#FIELDS.version"><code>ServiceContext.version</code></a>.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p page-token=string</strong></p>
+<ul>
+<li>[Optional] A <code>next_page_token</code> provided by a previous response. To view
+    additional results, pass this token along with the identical query
+    parameters as the first request.</li>
 </ul>
 </li>
 </ul>

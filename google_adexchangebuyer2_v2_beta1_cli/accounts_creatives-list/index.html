@@ -405,6 +405,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
+<p><strong>-p page-token=string</strong></p>
+<ul>
+<li>A token identifying a page of results the server should return.
+    Typically, this is the value of
+    ListCreativesResponse.next_page_token
+    returned from the previous call to &#39;ListCreatives&#39; method.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p query=string</strong></p>
 <ul>
 <li>An optional query string to filter creatives. If no filter is specified,
@@ -423,15 +432,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
     &lt;/ul&gt;
     Example: &#39;accountId=12345 AND (dealsStatus:disapproved AND
     disapprovalReason:unacceptable_content) OR attribute:47&#39;</li>
-</ul>
-</li>
-<li>
-<p><strong>-p page-token=string</strong></p>
-<ul>
-<li>A token identifying a page of results the server should return.
-    Typically, this is the value of
-    ListCreativesResponse.next_page_token
-    returned from the previous call to &#39;ListCreatives&#39; method.</li>
 </ul>
 </li>
 <li>

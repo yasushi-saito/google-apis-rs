@@ -211,9 +211,10 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p page-token=string</strong></p>
+<p><strong>-p page-size=integer</strong></p>
 <ul>
-<li>The next_page_token value returned from a previous List request, if any.</li>
+<li>The maximum number of items to return.  If zero, then all results will be
+    returned.</li>
 </ul>
 </li>
 <li>
@@ -223,10 +224,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p page-size=integer</strong></p>
+<p><strong>-p page-token=string</strong></p>
 <ul>
-<li>The maximum number of items to return.  If zero, then all results will be
-    returned.</li>
+<li>The next_page_token value returned from a previous List request, if any.</li>
 </ul>
 </li>
 </ul>

@@ -243,6 +243,20 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
+<p><strong>-p page-token=string</strong></p>
+<ul>
+<li>
+<p>A token identifying the page of results to return.</p>
+<p>To request the first page results, page_token must be empty. To
+request the next page of results, page_token must be the value of
+next_page_token returned
+from the previous call to ListTasks
+method.</p>
+<p>The page token is valid for only 2 hours.</p>
+</li>
+</ul>
+</li>
+<li>
 <p><strong>-p response-view=string</strong></p>
 <ul>
 <li>
@@ -269,20 +283,6 @@ be the maximum. Fewer tasks than requested might be returned,
 even if more tasks exist; use
 next_page_token in the
 response to determine if more tasks exist.</p>
-</li>
-</ul>
-</li>
-<li>
-<p><strong>-p page-token=string</strong></p>
-<ul>
-<li>
-<p>A token identifying the page of results to return.</p>
-<p>To request the first page results, page_token must be empty. To
-request the next page of results, page_token must be the value of
-next_page_token returned
-from the previous call to ListTasks
-method.</p>
-<p>The page token is valid for only 2 hours.</p>
 </li>
 </ul>
 </li>

@@ -180,21 +180,28 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p page-size=integer</strong></p>
-<ul>
-<li>[Optional] The maximum number of results to return per response.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p time-range-period=string</strong></p>
 <ul>
 <li>Restricts the query to the specified time range.</li>
 </ul>
 </li>
 <li>
+<p><strong>-p page-size=integer</strong></p>
+<ul>
+<li>[Optional] The maximum number of results to return per response.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p page-token=string</strong></p>
 <ul>
 <li>[Optional] A <code>next_page_token</code> provided by a previous response.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p service-filter-service=string</strong></p>
+<ul>
+<li>[Optional] The exact value to match against
+    <a href="../error-reporting/reference/rest/v1beta1/ServiceContext#FIELDS.service"><code>ServiceContext.service</code></a>.</li>
 </ul>
 </li>
 <li>
@@ -208,13 +215,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <ul>
 <li>[Optional] The exact value to match against
     <a href="../error-reporting/reference/rest/v1beta1/ServiceContext#FIELDS.version"><code>ServiceContext.version</code></a>.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p service-filter-service=string</strong></p>
-<ul>
-<li>[Optional] The exact value to match against
-    <a href="../error-reporting/reference/rest/v1beta1/ServiceContext#FIELDS.service"><code>ServiceContext.service</code></a>.</li>
 </ul>
 </li>
 </ul>

@@ -724,27 +724,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p sort-order=string</strong></p>
-<ul>
-<li>Whether to return results in ascending or descending order. Only of use when orderBy is also used</li>
-</ul>
-</li>
-<li>
-<p><strong>-p page-token=string</strong></p>
-<ul>
-<li>Token to specify next page in the list</li>
-</ul>
-</li>
-<li>
 <p><strong>-p user-key=string</strong></p>
 <ul>
 <li>Email or immutable Id of the user if only those groups are to be listed, the given user is a member of. If Id, it should match with id of user object</li>
 </ul>
 </li>
 <li>
-<p><strong>-p order-by=string</strong></p>
+<p><strong>-p page-token=string</strong></p>
 <ul>
-<li>Column to use for sorting results</li>
+<li>Token to specify next page in the list</li>
 </ul>
 </li>
 <li>
@@ -757,6 +745,18 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <p><strong>-p domain=string</strong></p>
 <ul>
 <li>Name of the domain. Fill this field to get groups from only this domain. To return all groups in a multi-domain fill customer field instead.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p order-by=string</strong></p>
+<ul>
+<li>Column to use for sorting results</li>
+</ul>
+</li>
+<li>
+<p><strong>-p sort-order=string</strong></p>
+<ul>
+<li>Whether to return results in ascending or descending order. Only of use when orderBy is also used</li>
 </ul>
 </li>
 <li>

@@ -4,7 +4,7 @@
     
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-speech1_beta1-cli/</loc>
-     <lastmod>2018-10-14</lastmod>
+     <lastmod>2018-11-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -13,13 +13,13 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-speech1_beta1-cli/operations_get/</loc>
-     <lastmod>2018-10-14</lastmod>
+     <lastmod>2018-11-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-speech1_beta1-cli/operations_list/</loc>
-     <lastmod>2018-10-14</lastmod>
+     <lastmod>2018-11-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -29,13 +29,13 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-speech1_beta1-cli/speech_asyncrecognize/</loc>
-     <lastmod>2018-10-14</lastmod>
+     <lastmod>2018-11-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-speech1_beta1-cli/speech_syncrecognize/</loc>
-     <lastmod>2018-10-14</lastmod>
+     <lastmod>2018-11-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
         

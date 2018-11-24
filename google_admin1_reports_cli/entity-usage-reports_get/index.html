@@ -205,9 +205,21 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
+<p><strong>-p parameters=string</strong></p>
+<ul>
+<li>Represents the application name, parameter name pairs to fetch in csv as app_name1:param_name1, app_name2:param_name2.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p filters=string</strong></p>
 <ul>
 <li>Represents the set of filters including parameter operator value.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p max-results=integer</strong></p>
+<ul>
+<li>Maximum number of results to return. Maximum allowed is 1000</li>
 </ul>
 </li>
 <li>
@@ -220,18 +232,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <p><strong>-p page-token=string</strong></p>
 <ul>
 <li>Token to specify next page.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p parameters=string</strong></p>
-<ul>
-<li>Represents the application name, parameter name pairs to fetch in csv as app_name1:param_name1, app_name2:param_name2.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p max-results=integer</strong></p>
-<ul>
-<li>Maximum number of results to return. Maximum allowed is 1000</li>
 </ul>
 </li>
 </ul>

@@ -190,6 +190,27 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
+<p><strong>-p id=string</strong></p>
+<ul>
+<li>
+<p>The <code>id</code> parameter specifies a comma-separated list of the YouTube group
+    ID(s) for the resource(s) that are being retrieved. Each group must be
+    owned by the authenticated user. In a <code>group</code> resource, the <code>id</code> property
+    specifies the group&#39;s YouTube group ID.</p>
+<p>Note that if you do not specify a value for the <code>id</code> parameter, then you
+must set the <code>mine</code> parameter to <code>true</code>.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>-p page-token=string</strong></p>
+<ul>
+<li>The <code>pageToken</code> parameter identifies a specific page in the result set that
+    should be returned. In an API response, the <code>nextPageToken</code> property
+    identifies the next page that can be retrieved.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p on-behalf-of-content-owner=string</strong></p>
 <ul>
 <li>
@@ -212,27 +233,6 @@ linked to the specified YouTube content owner.</p>
 <li>This parameter can only be used in a properly authorized request. Set this
     parameter&#39;s value to true to retrieve all groups owned by the authenticated
     user.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p page-token=string</strong></p>
-<ul>
-<li>The <code>pageToken</code> parameter identifies a specific page in the result set that
-    should be returned. In an API response, the <code>nextPageToken</code> property
-    identifies the next page that can be retrieved.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p id=string</strong></p>
-<ul>
-<li>
-<p>The <code>id</code> parameter specifies a comma-separated list of the YouTube group
-    ID(s) for the resource(s) that are being retrieved. Each group must be
-    owned by the authenticated user. In a <code>group</code> resource, the <code>id</code> property
-    specifies the group&#39;s YouTube group ID.</p>
-<p>Note that if you do not specify a value for the <code>id</code> parameter, then you
-must set the <code>mine</code> parameter to <code>true</code>.</p>
-</li>
 </ul>
 </li>
 </ul>

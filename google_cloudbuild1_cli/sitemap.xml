@@ -4,7 +4,7 @@
     
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-cloudbuild1-cli/</loc>
-     <lastmod>2018-10-14</lastmod>
+     <lastmod>2018-11-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -13,19 +13,19 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-cloudbuild1-cli/operations_cancel/</loc>
-     <lastmod>2018-10-14</lastmod>
+     <lastmod>2018-11-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-cloudbuild1-cli/operations_get/</loc>
-     <lastmod>2018-10-14</lastmod>
+     <lastmod>2018-11-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-cloudbuild1-cli/operations_list/</loc>
-     <lastmod>2018-10-14</lastmod>
+     <lastmod>2018-11-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -35,67 +35,67 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-cloudbuild1-cli/projects_builds-cancel/</loc>
-     <lastmod>2018-10-14</lastmod>
+     <lastmod>2018-11-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-cloudbuild1-cli/projects_builds-create/</loc>
-     <lastmod>2018-10-14</lastmod>
+     <lastmod>2018-11-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-cloudbuild1-cli/projects_builds-get/</loc>
-     <lastmod>2018-10-14</lastmod>
+     <lastmod>2018-11-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-cloudbuild1-cli/projects_builds-list/</loc>
-     <lastmod>2018-10-14</lastmod>
+     <lastmod>2018-11-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-cloudbuild1-cli/projects_builds-retry/</loc>
-     <lastmod>2018-10-14</lastmod>
+     <lastmod>2018-11-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-cloudbuild1-cli/projects_triggers-create/</loc>
-     <lastmod>2018-10-14</lastmod>
+     <lastmod>2018-11-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-cloudbuild1-cli/projects_triggers-delete/</loc>
-     <lastmod>2018-10-14</lastmod>
+     <lastmod>2018-11-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-cloudbuild1-cli/projects_triggers-get/</loc>
-     <lastmod>2018-10-14</lastmod>
+     <lastmod>2018-11-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-cloudbuild1-cli/projects_triggers-list/</loc>
-     <lastmod>2018-10-14</lastmod>
+     <lastmod>2018-11-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-cloudbuild1-cli/projects_triggers-patch/</loc>
-     <lastmod>2018-10-14</lastmod>
+     <lastmod>2018-11-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-cloudbuild1-cli/projects_triggers-run/</loc>
-     <lastmod>2018-10-14</lastmod>
+     <lastmod>2018-11-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
         

@@ -4,7 +4,7 @@
     
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dataproc1-cli/</loc>
-     <lastmod>2018-10-14</lastmod>
+     <lastmod>2018-11-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -13,271 +13,271 @@
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dataproc1-cli/projects_locations-workflow-templates-create/</loc>
-     <lastmod>2018-10-14</lastmod>
+     <lastmod>2018-11-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dataproc1-cli/projects_locations-workflow-templates-delete/</loc>
-     <lastmod>2018-10-14</lastmod>
+     <lastmod>2018-11-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dataproc1-cli/projects_locations-workflow-templates-get/</loc>
-     <lastmod>2018-10-14</lastmod>
+     <lastmod>2018-11-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dataproc1-cli/projects_locations-workflow-templates-get-iam-policy/</loc>
-     <lastmod>2018-10-14</lastmod>
+     <lastmod>2018-11-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dataproc1-cli/projects_locations-workflow-templates-instantiate/</loc>
-     <lastmod>2018-10-14</lastmod>
+     <lastmod>2018-11-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dataproc1-cli/projects_locations-workflow-templates-instantiate-inline/</loc>
-     <lastmod>2018-10-14</lastmod>
+     <lastmod>2018-11-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dataproc1-cli/projects_locations-workflow-templates-list/</loc>
-     <lastmod>2018-10-14</lastmod>
+     <lastmod>2018-11-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dataproc1-cli/projects_locations-workflow-templates-set-iam-policy/</loc>
-     <lastmod>2018-10-14</lastmod>
+     <lastmod>2018-11-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dataproc1-cli/projects_locations-workflow-templates-test-iam-permissions/</loc>
-     <lastmod>2018-10-14</lastmod>
+     <lastmod>2018-11-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dataproc1-cli/projects_locations-workflow-templates-update/</loc>
-     <lastmod>2018-10-14</lastmod>
+     <lastmod>2018-11-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dataproc1-cli/projects_regions-clusters-create/</loc>
-     <lastmod>2018-10-14</lastmod>
+     <lastmod>2018-11-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dataproc1-cli/projects_regions-clusters-delete/</loc>
-     <lastmod>2018-10-14</lastmod>
+     <lastmod>2018-11-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dataproc1-cli/projects_regions-clusters-diagnose/</loc>
-     <lastmod>2018-10-14</lastmod>
+     <lastmod>2018-11-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dataproc1-cli/projects_regions-clusters-get/</loc>
-     <lastmod>2018-10-14</lastmod>
+     <lastmod>2018-11-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dataproc1-cli/projects_regions-clusters-get-iam-policy/</loc>
-     <lastmod>2018-10-14</lastmod>
+     <lastmod>2018-11-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dataproc1-cli/projects_regions-clusters-list/</loc>
-     <lastmod>2018-10-14</lastmod>
+     <lastmod>2018-11-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dataproc1-cli/projects_regions-clusters-patch/</loc>
-     <lastmod>2018-10-14</lastmod>
+     <lastmod>2018-11-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dataproc1-cli/projects_regions-clusters-set-iam-policy/</loc>
-     <lastmod>2018-10-14</lastmod>
+     <lastmod>2018-11-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dataproc1-cli/projects_regions-clusters-test-iam-permissions/</loc>
-     <lastmod>2018-10-14</lastmod>
+     <lastmod>2018-11-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dataproc1-cli/projects_regions-jobs-cancel/</loc>
-     <lastmod>2018-10-14</lastmod>
+     <lastmod>2018-11-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dataproc1-cli/projects_regions-jobs-delete/</loc>
-     <lastmod>2018-10-14</lastmod>
+     <lastmod>2018-11-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dataproc1-cli/projects_regions-jobs-get/</loc>
-     <lastmod>2018-10-14</lastmod>
+     <lastmod>2018-11-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dataproc1-cli/projects_regions-jobs-get-iam-policy/</loc>
-     <lastmod>2018-10-14</lastmod>
+     <lastmod>2018-11-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dataproc1-cli/projects_regions-jobs-list/</loc>
-     <lastmod>2018-10-14</lastmod>
+     <lastmod>2018-11-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dataproc1-cli/projects_regions-jobs-patch/</loc>
-     <lastmod>2018-10-14</lastmod>
+     <lastmod>2018-11-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dataproc1-cli/projects_regions-jobs-set-iam-policy/</loc>
-     <lastmod>2018-10-14</lastmod>
+     <lastmod>2018-11-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dataproc1-cli/projects_regions-jobs-submit/</loc>
-     <lastmod>2018-10-14</lastmod>
+     <lastmod>2018-11-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dataproc1-cli/projects_regions-jobs-test-iam-permissions/</loc>
-     <lastmod>2018-10-14</lastmod>
+     <lastmod>2018-11-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dataproc1-cli/projects_regions-operations-cancel/</loc>
-     <lastmod>2018-10-14</lastmod>
+     <lastmod>2018-11-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dataproc1-cli/projects_regions-operations-delete/</loc>
-     <lastmod>2018-10-14</lastmod>
+     <lastmod>2018-11-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dataproc1-cli/projects_regions-operations-get/</loc>
-     <lastmod>2018-10-14</lastmod>
+     <lastmod>2018-11-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dataproc1-cli/projects_regions-operations-get-iam-policy/</loc>
-     <lastmod>2018-10-14</lastmod>
+     <lastmod>2018-11-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dataproc1-cli/projects_regions-operations-list/</loc>
-     <lastmod>2018-10-14</lastmod>
+     <lastmod>2018-11-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dataproc1-cli/projects_regions-operations-set-iam-policy/</loc>
-     <lastmod>2018-10-14</lastmod>
+     <lastmod>2018-11-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dataproc1-cli/projects_regions-operations-test-iam-permissions/</loc>
-     <lastmod>2018-10-14</lastmod>
+     <lastmod>2018-11-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dataproc1-cli/projects_regions-workflow-templates-create/</loc>
-     <lastmod>2018-10-14</lastmod>
+     <lastmod>2018-11-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dataproc1-cli/projects_regions-workflow-templates-delete/</loc>
-     <lastmod>2018-10-14</lastmod>
+     <lastmod>2018-11-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dataproc1-cli/projects_regions-workflow-templates-get/</loc>
-     <lastmod>2018-10-14</lastmod>
+     <lastmod>2018-11-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dataproc1-cli/projects_regions-workflow-templates-get-iam-policy/</loc>
-     <lastmod>2018-10-14</lastmod>
+     <lastmod>2018-11-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dataproc1-cli/projects_regions-workflow-templates-instantiate/</loc>
-     <lastmod>2018-10-14</lastmod>
+     <lastmod>2018-11-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dataproc1-cli/projects_regions-workflow-templates-instantiate-inline/</loc>
-     <lastmod>2018-10-14</lastmod>
+     <lastmod>2018-11-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dataproc1-cli/projects_regions-workflow-templates-list/</loc>
-     <lastmod>2018-10-14</lastmod>
+     <lastmod>2018-11-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dataproc1-cli/projects_regions-workflow-templates-set-iam-policy/</loc>
-     <lastmod>2018-10-14</lastmod>
+     <lastmod>2018-11-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dataproc1-cli/projects_regions-workflow-templates-test-iam-permissions/</loc>
-     <lastmod>2018-10-14</lastmod>
+     <lastmod>2018-11-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://byron.github.io/google-apis-rs/google-dataproc1-cli/projects_regions-workflow-templates-update/</loc>
-     <lastmod>2018-10-14</lastmod>
+     <lastmod>2018-11-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
         

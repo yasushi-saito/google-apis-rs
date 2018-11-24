@@ -182,13 +182,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p read-time-window-end-time=string</strong></p>
-<ul>
-<li>End time of the time window (exclusive).
-    Current timestamp if not specified.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p asset-names=string</strong></p>
 <ul>
 <li>
@@ -202,15 +195,22 @@ size of the asset name list is 100 in one request.</p>
 </ul>
 </li>
 <li>
-<p><strong>-p read-time-window-start-time=string</strong></p>
-<ul>
-<li>Start time of the time window (inclusive).</li>
-</ul>
-</li>
-<li>
 <p><strong>-p content-type=string</strong></p>
 <ul>
 <li>Required. The content type.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p read-time-window-end-time=string</strong></p>
+<ul>
+<li>End time of the time window (exclusive).
+    Current timestamp if not specified.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p read-time-window-start-time=string</strong></p>
+<ul>
+<li>Start time of the time window (inclusive).</li>
 </ul>
 </li>
 </ul>

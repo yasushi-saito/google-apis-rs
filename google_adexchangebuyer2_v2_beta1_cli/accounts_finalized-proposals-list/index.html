@@ -406,16 +406,23 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p page-size=integer</strong></p>
+<p><strong>-p filter-syntax=string</strong></p>
 <ul>
-<li>Requested page size. The server may return fewer results than requested.
-    If unspecified, the server will pick an appropriate default.</li>
+<li>Syntax the filter is written in. Current implementation defaults to PQL
+    but in the future it will be LIST_FILTER.</li>
 </ul>
 </li>
 <li>
 <p><strong>-p page-token=string</strong></p>
 <ul>
 <li>The page token as returned from ListProposalsResponse.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p page-size=integer</strong></p>
+<ul>
+<li>Requested page size. The server may return fewer results than requested.
+    If unspecified, the server will pick an appropriate default.</li>
 </ul>
 </li>
 <li>
@@ -426,13 +433,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <p>Nested repeated fields, such as proposal.deals.targetingCriterion,
 cannot be filtered.</p>
 </li>
-</ul>
-</li>
-<li>
-<p><strong>-p filter-syntax=string</strong></p>
-<ul>
-<li>Syntax the filter is written in. Current implementation defaults to PQL
-    but in the future it will be LIST_FILTER.</li>
 </ul>
 </li>
 </ul>

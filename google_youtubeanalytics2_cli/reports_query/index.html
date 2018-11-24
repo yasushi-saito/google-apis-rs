@@ -188,6 +188,29 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
+<p><strong>-p sort=string</strong></p>
+<ul>
+<li>A comma-separated list of dimensions or metrics that determine the sort
+    order for YouTube Analytics data. By default the sort order is ascending.
+    The &#39;<code>-</code>&#39; prefix causes descending sort order.&#34;,
+    pattern: [-0-9a-zA-Z,]+</li>
+</ul>
+</li>
+<li>
+<p><strong>-p filters=string</strong></p>
+<ul>
+<li>A list of filters that should be applied when retrieving YouTube Analytics
+    data. The <a href="../youtube/analytics/v2/available_reports">Available Reports</a>
+    document identifies the dimensions that can be used to filter each report,
+    and the <a href="../youtube/analytics/v2/dimsmets/dims">Dimensions</a>  document defines
+    those dimensions. If a request uses multiple filters, join them together
+    with a semicolon (<code>;</code>), and the returned result table will satisfy both
+    filters. For example, a filters parameter value of
+    <code>video==dMH0bHeiRNg;country==IT</code> restricts the result set to include data
+    for the given video in Italy.&#34;,</li>
+</ul>
+</li>
+<li>
 <p><strong>-p dimensions=string</strong></p>
 <ul>
 <li>A comma-separated list of YouTube Analytics dimensions, such as <code>views</code> or
@@ -197,31 +220,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
     reports. Also see the <a href="../youtube/analytics/v2/dimsmets/dims">Dimensions</a>
     document for definitions of those dimensions.&#34;
     pattern: [0-9a-zA-Z,]+</li>
-</ul>
-</li>
-<li>
-<p><strong>-p start-date=string</strong></p>
-<ul>
-<li>The start date for fetching YouTube Analytics data. The value should be in
-    <code>YYYY-MM-DD</code> format.
-    required: true, pattern: &#34;[0-9]{4}-[0-9]{2}-[0-9]{2}</li>
-</ul>
-</li>
-<li>
-<p><strong>-p end-date=string</strong></p>
-<ul>
-<li>The end date for fetching YouTube Analytics data. The value should be in
-    <code>YYYY-MM-DD</code> format.
-    required: true, pattern: [0-9]{4}-[0-9]{2}-[0-9]{2}</li>
-</ul>
-</li>
-<li>
-<p><strong>-p sort=string</strong></p>
-<ul>
-<li>A comma-separated list of dimensions or metrics that determine the sort
-    order for YouTube Analytics data. By default the sort order is ascending.
-    The &#39;<code>-</code>&#39; prefix causes descending sort order.&#34;,
-    pattern: [-0-9a-zA-Z,]+</li>
 </ul>
 </li>
 <li>
@@ -245,12 +243,13 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p start-index=integer</strong></p>
+<p><strong>-p currency=string</strong></p>
 <ul>
-<li>An index of the first entity to retrieve. Use this parameter as a
-    pagination mechanism along with the max-results parameter (one-based,
-    inclusive).&#34;,
-    minValue: 1</li>
+<li>The currency to which financial metrics should be converted. The default is
+    US Dollar (USD). If the result contains no financial metrics, this flag
+    will be ignored. Responds with an error if the specified currency is not
+    recognized.&#34;,
+    pattern: [A-Z]{3}</li>
 </ul>
 </li>
 <li>
@@ -261,17 +260,20 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p filters=string</strong></p>
+<p><strong>-p start-index=integer</strong></p>
 <ul>
-<li>A list of filters that should be applied when retrieving YouTube Analytics
-    data. The <a href="../youtube/analytics/v2/available_reports">Available Reports</a>
-    document identifies the dimensions that can be used to filter each report,
-    and the <a href="../youtube/analytics/v2/dimsmets/dims">Dimensions</a>  document defines
-    those dimensions. If a request uses multiple filters, join them together
-    with a semicolon (<code>;</code>), and the returned result table will satisfy both
-    filters. For example, a filters parameter value of
-    <code>video==dMH0bHeiRNg;country==IT</code> restricts the result set to include data
-    for the given video in Italy.&#34;,</li>
+<li>An index of the first entity to retrieve. Use this parameter as a
+    pagination mechanism along with the max-results parameter (one-based,
+    inclusive).&#34;,
+    minValue: 1</li>
+</ul>
+</li>
+<li>
+<p><strong>-p end-date=string</strong></p>
+<ul>
+<li>The end date for fetching YouTube Analytics data. The value should be in
+    <code>YYYY-MM-DD</code> format.
+    required: true, pattern: [0-9]{4}-[0-9]{2}-[0-9]{2}</li>
 </ul>
 </li>
 <li>
@@ -293,13 +295,11 @@ required: true, pattern: [a-zA-Z]+==[a-zA-Z0-9_+-]+</li>
 </ul>
 </li>
 <li>
-<p><strong>-p currency=string</strong></p>
+<p><strong>-p start-date=string</strong></p>
 <ul>
-<li>The currency to which financial metrics should be converted. The default is
-    US Dollar (USD). If the result contains no financial metrics, this flag
-    will be ignored. Responds with an error if the specified currency is not
-    recognized.&#34;,
-    pattern: [A-Z]{3}</li>
+<li>The start date for fetching YouTube Analytics data. The value should be in
+    <code>YYYY-MM-DD</code> format.
+    required: true, pattern: &#34;[0-9]{4}-[0-9]{2}-[0-9]{2}</li>
 </ul>
 </li>
 </ul>

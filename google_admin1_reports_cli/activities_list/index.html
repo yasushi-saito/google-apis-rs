@@ -201,9 +201,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p max-results=integer</strong></p>
+<p><strong>-p page-token=string</strong></p>
 <ul>
-<li>Number of activity records to be shown in each page.</li>
+<li>Token to specify next page.</li>
 </ul>
 </li>
 <li>
@@ -219,21 +219,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p filters=string</strong></p>
+<p><strong>-p end-time=string</strong></p>
 <ul>
-<li>Event parameters in the form [parameter1 name][operator][parameter1 value],[parameter2 name][operator][parameter2 value],...</li>
-</ul>
-</li>
-<li>
-<p><strong>-p actor-ip-address=string</strong></p>
-<ul>
-<li>IP Address of host where the event was performed. Supports both IPv4 and IPv6 addresses.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p page-token=string</strong></p>
-<ul>
-<li>Token to specify next page.</li>
+<li>Return events which occurred at or before this time.</li>
 </ul>
 </li>
 <li>
@@ -243,9 +231,21 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p end-time=string</strong></p>
+<p><strong>-p max-results=integer</strong></p>
 <ul>
-<li>Return events which occurred at or before this time.</li>
+<li>Number of activity records to be shown in each page.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p actor-ip-address=string</strong></p>
+<ul>
+<li>IP Address of host where the event was performed. Supports both IPv4 and IPv6 addresses.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p filters=string</strong></p>
+<ul>
+<li>Event parameters in the form [parameter1 name][operator][parameter1 value],[parameter2 name][operator][parameter2 value],...</li>
 </ul>
 </li>
 </ul>
